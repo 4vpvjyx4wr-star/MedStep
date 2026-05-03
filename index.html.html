@@ -492,6 +492,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
       <!-- Sign-in state (shown when logged out) -->
       <div id="signin-state">
         <p style="font-size:.85rem;opacity:.7;margin:0 0 14px">Sign in with your school Microsoft account to send your lecture directly to Copilot and auto-load the quiz — no copy-pasting required.</p>
+        <p style="font-size:.72rem;opacity:.45;margin:0 0 12px;font-family:var(--font-mono);word-break:break-all" id="redirect-uri-hint"></p>
         <button class="ms-signin-btn" id="signin-btn" onclick="msSignIn()">
           <svg width="18" height="18" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="9" height="9" fill="#f25022"/><rect x="11" y="1" width="9" height="9" fill="#7fba00"/><rect x="1" y="11" width="9" height="9" fill="#00a4ef"/><rect x="11" y="11" width="9" height="9" fill="#ffb900"/></svg>
           Sign in with Microsoft
@@ -1739,9 +1740,9 @@ const MSAL_CONFIG = {
   auth: {
     clientId: '134c1490-0c86-456e-91e5-7e2ff73f1745',
     authority: 'https://login.microsoftonline.com/common',
-    redirectUri: window.location.href.split('?')[0].split('#')[0],
+    redirectUri: 'https://4vpvjyx4wr-star.github.io/MedStep/',
   },
-  cache: { cacheLocation: 'sessionStorage' }
+  cache: { cacheLocation: 'localStorage' }
 };
 
 const msalInstance = new msal.PublicClientApplication(MSAL_CONFIG);
@@ -1752,40 +1753,47 @@ let msAccount = null;
 let selectedFileText = null;
 let selectedFileName = null;
 
-// Handle redirect response on page load
+// Handle redirect response on page load — this fires after Microsoft
+// redirects back to the page following login
 msalInstance.handleRedirectPromise().then(resp => {
   if (resp && resp.account) {
     msAccount = resp.account;
     showLoggedInState();
+  } else {
+    // Check if already signed in from a previous session
+    const accounts = msalInstance.getAllAccounts();
+    if (accounts.length > 0) {
+      msAccount = accounts[0];
+      showLoggedInState();
+    }
   }
-}).catch(e => console.error('MSAL redirect error:', e));
+}).catch(e => {
+  console.error('MSAL redirect error:', e);
+  showToast('❌ Auth error: ' + e.message);
+});
 
 async function msSignIn() {
   try {
-    document.getElementById('signin-btn').disabled = true;
-    document.getElementById('signin-btn').textContent = 'Signing in…';
-    const resp = await msalInstance.loginPopup({ scopes: SCOPES });
-    msAccount = resp.account;
-    showLoggedInState();
+    const btn = document.getElementById('signin-btn');
+    btn.disabled = true;
+    btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="9" height="9" fill="#f25022"/><rect x="11" y="1" width="9" height="9" fill="#7fba00"/><rect x="1" y="11" width="9" height="9" fill="#00a4ef"/><rect x="11" y="11" width="9" height="9" fill="#ffb900"/></svg> Redirecting to Microsoft…`;
+    // Use redirect instead of popup — far more reliable for local HTML files
+    await msalInstance.loginRedirect({ scopes: SCOPES });
+    // Page will navigate away and come back — handleRedirectPromise above handles the response
   } catch (e) {
     console.error('Sign-in error:', e);
-    showToast('❌ Sign-in failed — check popup blocker');
-    document.getElementById('signin-btn').disabled = false;
-    document.getElementById('signin-btn').innerHTML = `<svg width="18" height="18" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="9" height="9" fill="#f25022"/><rect x="11" y="1" width="9" height="9" fill="#7fba00"/><rect x="1" y="11" width="9" height="9" fill="#00a4ef"/><rect x="11" y="11" width="9" height="9" fill="#ffb900"/></svg> Sign in with Microsoft`;
+    showToast('❌ Sign-in error: ' + e.message);
+    const btn = document.getElementById('signin-btn');
+    btn.disabled = false;
+    btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="9" height="9" fill="#f25022"/><rect x="11" y="1" width="9" height="9" fill="#7fba00"/><rect x="1" y="11" width="9" height="9" fill="#00a4ef"/><rect x="11" y="11" width="9" height="9" fill="#ffb900"/></svg> Sign in with Microsoft`;
   }
 }
 
 function msSignOut() {
-  msalInstance.logoutPopup({ account: msAccount });
+  msalInstance.logoutRedirect({ account: msAccount });
   msAccount = null;
   selectedFileText = null;
   selectedFileName = null;
-  document.getElementById('loggedin-state').style.display = 'none';
-  document.getElementById('signin-state').style.display = 'block';
-  document.getElementById('signin-btn').disabled = false;
-  document.getElementById('copilot-gen-btn').disabled = true;
-  document.getElementById('file-pill-wrap').innerHTML = '';
-  showToast('👋 Signed out');
 }
 
 function showLoggedInState() {
@@ -1801,8 +1809,10 @@ async function getAccessToken() {
     const resp = await msalInstance.acquireTokenSilent({ scopes: SCOPES, account: msAccount });
     return resp.accessToken;
   } catch (e) {
-    const resp = await msalInstance.acquireTokenPopup({ scopes: SCOPES });
-    return resp.accessToken;
+    // Silent refresh failed — redirect to Microsoft to re-authenticate
+    await msalInstance.acquireTokenRedirect({ scopes: SCOPES, account: msAccount });
+    // Page will redirect — execution stops here and resumes after redirect
+    throw new Error('Redirecting for token refresh…');
   }
 }
 
@@ -2014,15 +2024,14 @@ function buildCopilotPrompt(qCount) {
   return MASTER_PROMPT.replace('Now generate 25 questions', `Now generate ${qCount} questions`) + lectureSection;
 }
 
-// ── Drag & drop on file pill wrap shouldn't bubble ─────
+// Show the redirect URI so user can verify it matches Azure registration
 document.addEventListener('DOMContentLoaded', () => {
-  // Check if already signed in from a previous session
-  const accounts = msalInstance.getAllAccounts();
-  if (accounts.length > 0) {
-    msAccount = accounts[0];
-    showLoggedInState();
-  }
+  const uri = window.location.href.split('?')[0].split('#')[0];
+  const hint = document.getElementById('redirect-uri-hint');
+  if (hint) hint.textContent = '🔗 Redirect URI for Azure: ' + uri;
 });
+
+// ── Drag & drop on file pill wrap shouldn't bubble ─────
 
 // ══ KEYBOARD ═════════════════════════════════════════════
 document.addEventListener('keydown',e=>{
