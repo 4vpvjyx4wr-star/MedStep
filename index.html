@@ -435,6 +435,52 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   padding: 20px 18px 14px; border-bottom: 1px solid var(--border);
   display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;
 }
+.lib-toolbar {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.lib-toolbar select {
+  width: 100%;
+}
+.lib-block-dropdown {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.lib-block-summary {
+  padding: 8px 10px;
+  font-size: .74rem;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  opacity: .8;
+}
+.lib-block-items {
+  padding: 0 8px 8px;
+  display: none;
+}
+.lib-block-dropdown.open .lib-block-items { display: block; }
+.lib-bulk-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+.lib-bulk-btn {
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.03);
+  color: var(--text);
+  border-radius: 8px;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.lib-bulk-btn:hover { border-color: var(--primary); }
 .lib-title {
   font-family: var(--font-mono); font-size: .6rem; letter-spacing: 3px;
   text-transform: uppercase; opacity: .5;
@@ -487,6 +533,19 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   margin-bottom: 14px; transition: border .2s;
 }
 .modal-input:focus { outline: none; border-color: var(--primary); }
+.modal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.modal-grid .modal-input { margin-bottom: 0; }
+.modal-tag-note {
+  font-size: .7rem;
+  font-family: var(--font-mono);
+  opacity: .55;
+  margin: 6px 0 12px;
+}
 .modal-textarea {
   width: 100%; background: var(--bg); color: var(--text);
   border: 1px solid var(--border); border-radius: 10px;
@@ -623,6 +682,19 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <span class="lib-title">📚 Quiz Library</span>
     <span class="lib-close" onclick="toggleLibrary()">✕</span>
   </div>
+  <div class="lib-toolbar">
+    <select id="lib-block-filter" onchange="renderLibrary()">
+      <option value="all">All Blocks</option>
+      <option value="1">Block 1</option><option value="2">Block 2</option>
+      <option value="3">Block 3</option><option value="4">Block 4</option>
+      <option value="5">Block 5</option><option value="6">Block 6</option>
+      <option value="7">Block 7</option><option value="8">Block 8</option>
+    </select>
+    <div class="lib-block-dropdown" id="lib-block-dropdown">
+      <div class="lib-block-summary" onclick="toggleBlockDropdown()">▼ Block Quick View</div>
+      <div class="lib-block-items" id="lib-block-items"></div>
+    </div>
+  </div>
   <div class="lib-list" id="lib-list">
     <div class="lib-status" id="lib-status">Loading quizzes…</div>
   </div>
@@ -649,24 +721,65 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <label class="modal-label">Quiz Title</label>
     <input class="modal-input" id="new-quiz-title" placeholder="e.g. Cardiology — Heart Failure" type="text">
 
-    <label class="modal-label">Quiz JSON</label>
+    <div class="modal-grid">
+      <div>
+        <label class="modal-label">Block</label>
+        <select class="modal-input" id="new-quiz-block" onchange="updateClassOptions()">
+          <option value="">No block tag</option>
+          <option value="1">Block 1</option><option value="2">Block 2</option>
+          <option value="3">Block 3</option><option value="4">Block 4</option>
+          <option value="5">Block 5</option><option value="6">Block 6</option>
+          <option value="7">Block 7</option><option value="8">Block 8</option>
+        </select>
+      </div>
+      <div>
+        <label class="modal-label">Class Tag</label>
+        <select class="modal-input" id="new-quiz-class">
+          <option value="">No class tag</option>
+        </select>
+      </div>
+      <div>
+        <label class="modal-label">Exam</label>
+        <select class="modal-input" id="new-quiz-exam">
+          <option value="">No exam tag</option>
+          <option value="1">Exam 1</option>
+          <option value="2">Exam 2</option>
+          <option value="3">Exam 3</option>
+        </select>
+      </div>
+      <div>
+        <label class="modal-label">Week</label>
+        <select class="modal-input" id="new-quiz-week">
+          <option value="">No week tag</option>
+          <option value="1">Week 1</option>
+          <option value="2">Week 2</option>
+          <option value="3">Week 3</option>
+        </select>
+      </div>
+    </div>
+    <div class="modal-tag-note">Tag format in library: BXEYWZ (e.g. B2E1W3). Tags are optional but recommended for organization.</div>
+    <div style="display:flex;gap:10px;margin-bottom:14px;align-items:center">
+      <button id="clear-tags-btn" class="btn btn-secondary" style="flex:1;display:none" onclick="clearTagFields()">Clear Tags</button>
+    </div>
+
+    <label class="modal-label" id="quiz-json-label">Quiz JSON</label>
     <textarea class="modal-textarea" id="new-quiz-json" placeholder='Paste the full JSON array here (starts with [)…'></textarea>
     <div style="font-size:.7rem;opacity:.35;font-family:var(--font-mono);margin-bottom:14px" id="json-validate-msg"></div>
 
     <div style="display:flex;gap:10px;margin-bottom:18px">
       <button class="btn btn-secondary" style="flex:0 0 auto" onclick="closeAddQuizModal()">Cancel</button>
-      <button class="btn btn-primary" style="flex:1" onclick="prepareQuizForGitHub()">Generate GitHub File ↗</button>
+      <button id="modal-primary-action" class="btn btn-primary" style="flex:1" onclick="prepareQuizForGitHub()">Generate GitHub File ↗</button>
     </div>
 
       <div class="github-instructions" id="github-instructions" style="display:none">
       <strong style="font-size:.82rem">📌 Two steps to publish this quiz:</strong>
       <ol style="margin:10px 0 10px 18px;padding:0;opacity:.85;line-height:2">
-        <li><strong>Step A — Quiz file:</strong> Go to <a href="https://github.com/4vpvjyx4wr-star/MedStep/tree/main/quizzes" target="_blank" style="color:var(--primary);font-weight:700">your quizzes folder</a> → <em>Add file → Create new file</em> → name it <code id="suggested-filename">quizzes/your-quiz.json</code> → paste the Quiz JSON → Commit.</li>
-        <li><strong>Step B — Update manifest:</strong> Open <a href="https://github.com/4vpvjyx4wr-star/MedStep/blob/main/quizzes/manifest.json" target="_blank" style="color:var(--primary);font-weight:700">manifest.json</a> → click the ✏️ pencil icon → <strong>select all text and delete it</strong> → paste the Full Manifest → Commit.</li>
+        <li id="github-step-a"><strong>Step A — Quiz file:</strong> Go to <a href="https://github.com/4vpvjyx4wr-star/MedStep/tree/main/quizzes" target="_blank" style="color:var(--primary);font-weight:700">your quizzes folder</a> → <em>Add file → Create new file</em> → name it <code id="suggested-filename">quizzes/your-quiz.json</code> → paste the Quiz JSON → Commit.</li>
+        <li id="github-step-b"><strong>Step B — Update manifest:</strong> Open <a href="https://github.com/4vpvjyx4wr-star/MedStep/blob/main/quizzes/manifest.json" target="_blank" style="color:var(--primary);font-weight:700">manifest.json</a> → click the ✏️ pencil icon → <strong>select all text and delete it</strong> → paste the Full Manifest → Commit.</li>
       </ol>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
-        <button class="copy-snippet-btn" onclick="copyGeneratedJSON()">📋 Copy Quiz JSON (Step A)</button>
-        <button class="copy-snippet-btn" onclick="copyManifestEntry()">📋 Copy Full Manifest (Step B)</button>
+        <button id="copy-quiz-json-btn" class="copy-snippet-btn" onclick="copyGeneratedJSON()">📋 Copy Quiz JSON (Step A)</button>
+        <button id="copy-manifest-entry-btn" class="copy-snippet-btn" onclick="copyManifestEntry()">📋 Copy Full Manifest (Step B)</button>
       </div>
       <div style="margin-top:10px;font-size:.7rem;opacity:.5;font-family:var(--font-mono)">
         Step B replaces the entire manifest.json content — that's intentional.
@@ -2410,6 +2523,16 @@ document.addEventListener('keydown',e=>{
 const GITHUB_USER   = '4vpvjyx4wr-star';
 const GITHUB_REPO   = 'MedStep';
 const GITHUB_BRANCH_FALLBACKS = ['main', 'master'];
+const BLOCK_CLASSES = {
+  1: ['Cell Biology/Biochemistry', 'Microbiology/Immunology', 'Anatomy'],
+  2: ['Pharmacology', 'Physiology', 'Pathology', 'Anatomy'],
+  3: ['Musculoskeletal System', 'Anatomy'],
+  4: ['Neuroscience', 'Psychiatry', 'Anatomy'],
+  5: ['Cardiovascular System', 'Respiratory System'],
+  6: ['Hematology', 'Renal System', 'Dermatology'],
+  7: ['Endocrine System', 'Gastrointestinal System'],
+  8: ['Reproductive System']
+};
 
 // Build a raw URL — single quizzes/ prefix, no double nesting
 function rawUrl(filename) {
@@ -2455,6 +2578,17 @@ async function githubFetch(filename) {
     }
   }
 
+  // Fallback: unauthenticated GitHub API requests can hit rate limits.
+  // Try raw.githubusercontent.com directly so refresh still works.
+  for (const branch of branches) {
+    const stamp = Date.now();
+    const raw = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${branch}/quizzes/${clean}?v=${stamp}`;
+    try {
+      const res = await fetch(raw, { cache: 'no-store' });
+      if (res.ok) return res;
+    } catch(e) { /* continue */ }
+  }
+
   // Nothing worked — build a clear diagnostic message
   const triedUrls = branches.map(b =>
     `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/quizzes/${clean}?ref=${b}`
@@ -2474,11 +2608,65 @@ async function proxiedFetch(url) {
   const filename = url.split('/quizzes/').pop().split('?')[0];
   return githubFetch(filename);
 }
+
+// Local dev fetch (preferred while running from local preview server)
+async function localFetch(filename) {
+  const clean = filename.replace(/^quizzes\//, '');
+  const url = `quizzes/${clean}?v=${Date.now()}`;
+  return fetch(url, { cache: 'no-store' });
+}
 let libraryOpen = false;
 let libraryManifest = [];
 let generatedQuizJSON = null;
 let generatedManifestEntry = null;
+let quizModalMode = 'add'; // 'add' | 'editTags'
+let quizEditFile = null;
 let stagedQuizzes = []; // { file, title, questions, json[] }
+
+function updateClassOptions() {
+  const block = Number(document.getElementById('new-quiz-block')?.value || 0);
+  const classSel = document.getElementById('new-quiz-class');
+  if (!classSel) return;
+  const oldValue = classSel.value;
+  classSel.innerHTML = '<option value="">No class tag</option>';
+  const classes = BLOCK_CLASSES[block] || [];
+  classes.forEach(c => {
+    const o = document.createElement('option');
+    o.value = c;
+    o.textContent = c;
+    classSel.appendChild(o);
+  });
+  if (classes.includes(oldValue)) classSel.value = oldValue;
+}
+
+function getTagCode(entry) {
+  if (!entry || !entry.block || !entry.exam || !entry.week) return '';
+  return `B${entry.block}E${entry.exam}W${entry.week}`;
+}
+
+function toggleBlockDropdown() {
+  document.getElementById('lib-block-dropdown').classList.toggle('open');
+}
+
+function renderBlockQuickView(entries) {
+  const wrap = document.getElementById('lib-block-items');
+  if (!wrap) return;
+  const byBlock = {};
+  entries.forEach(e => {
+    const b = Number(e.block || 0);
+    if (!b) return;
+    byBlock[b] = (byBlock[b] || 0) + 1;
+  });
+  const keys = Object.keys(byBlock).sort((a, b) => Number(a) - Number(b));
+  if (!keys.length) {
+    wrap.innerHTML = '<div class="lib-status" style="padding:8px 0">No block tags yet.</div>';
+    return;
+  }
+  wrap.innerHTML = keys.map(k =>
+    `<button class="btn btn-secondary" style="width:100%;margin-bottom:6px;font-size:.72rem;padding:7px"
+      onclick="document.getElementById('lib-block-filter').value='${k}'; renderLibrary();">Block ${k} (${byBlock[k]})</button>`
+  ).join('');
+}
 
 function toggleLibrary() {
   libraryOpen = !libraryOpen;
@@ -2491,7 +2679,9 @@ async function refreshLibrary() {
   list.innerHTML = '<div class="lib-status">⏳ Fetching quizzes…</div>';
 
   try {
-    const res = await githubFetch("manifest.json");
+    // Prefer local manifest first so active local changes appear immediately.
+    let res = await localFetch("manifest.json");
+    if (!res.ok) res = await githubFetch("manifest.json");
     const text = await res.text();
     // Guard against empty or non-JSON responses
     if (!text || !text.trim().startsWith('[')) {
@@ -2574,7 +2764,8 @@ async function toggleStageQuiz(entry, btn) {
   showToast('⏳ Loading ' + entry.title + '…');
 
   try {
-    const res  = await githubFetch(entry.file);
+    let res = await localFetch(entry.file);
+    if (!res.ok) res = await githubFetch(entry.file);
     const text = await res.text();
     if (!text || !text.trim().startsWith('[')) {
       throw new Error('File found but content is not a JSON array.');
@@ -2599,6 +2790,49 @@ async function toggleStageQuiz(entry, btn) {
     btn.style.opacity = '';
     showToast('❌ Failed to load: ' + (e.message || e));
   }
+}
+
+async function stageByScope(seed, scope) {
+  const matches = libraryManifest.filter(e => {
+    if (String(e.block || '') !== String(seed.block || '')) return false;
+    if (scope === 'week') {
+      return String(e.exam || '') === String(seed.exam || '') &&
+             String(e.week || '') === String(seed.week || '');
+    }
+    return String(e.exam || '') === String(seed.exam || '');
+  });
+  if (!matches.length) {
+    showToast(`❌ No quizzes found for same ${scope}`);
+    return;
+  }
+  let added = 0;
+  for (const entry of matches) {
+    if (stagedQuizzes.some(s => s.file === entry.file)) continue;
+    try {
+      let res = await localFetch(entry.file);
+      if (!res.ok) res = await githubFetch(entry.file);
+      const text = await res.text();
+      const json = JSON.parse(text);
+      if (!Array.isArray(json) || !json.length) continue;
+      stagedQuizzes.push({ file: entry.file, title: entry.title, json });
+      added++;
+    } catch(e) { /* skip bad one */ }
+  }
+  updateMegaInputFromStaged();
+  renderStagingArea();
+  renderLibrary();
+  if (added > 0) {
+    switchTab('manual');
+    showToast(`✅ Added ${added} quiz${added !== 1 ? 'zes' : ''} from same ${scope}`);
+  } else {
+    showToast('ℹ️ All quizzes in that group were already added');
+  }
+}
+
+function stageByScopeFromEntryFile(file, scope) {
+  const seed = libraryManifest.find(e => e.file === file);
+  if (!seed) { showToast('❌ Could not find quiz entry for scope add'); return; }
+  return stageByScope(seed, scope);
 }
 
 // Remove a single quiz from staged list (called from staging area ✕)
@@ -2633,9 +2867,19 @@ function renderLibrary() {
     list.innerHTML = '<div class="lib-status">No quizzes in library yet.<br><span style="font-size:.7rem;opacity:.5">Use ＋ Add Quiz below to get started.</span></div>';
     return;
   }
+  const blockFilter = document.getElementById('lib-block-filter')?.value || 'all';
   list.innerHTML = '';
-  libraryManifest.forEach(entry => {
+  const visible = libraryManifest.filter(entry => blockFilter === 'all' || String(entry.block || '') === blockFilter);
+  renderBlockQuickView(libraryManifest);
+  if (!visible.length) {
+    list.innerHTML = '<div class="lib-status">No quizzes for this block filter yet.</div>';
+    return;
+  }
+  visible.forEach(entry => {
     const isStaged = stagedQuizzes.some(s => s.file === entry.file);
+    const tagCode = getTagCode(entry);
+    const hasExamTag = entry.block && entry.exam;
+    const hasWeekTag = entry.block && entry.exam && entry.week;
     const btn = document.createElement('button');
     btn.className = 'lib-quiz-btn' + (isStaged ? ' staged' : '');
     btn.id = 'lib-btn-' + entry.file;
@@ -2643,8 +2887,18 @@ function renderLibrary() {
       <span class="lib-icon" style="${isStaged ? 'color:var(--success)' : ''}">${isStaged ? '✓' : (entry.icon || '📋')}</span>
       <div style="flex:1;min-width:0">
         <div>${entry.title}</div>
-        <div class="lib-quiz-meta">${entry.questions ? entry.questions + ' Qs' : ''} ${entry.topic ? '· ' + entry.topic : ''}</div>
+        <div class="lib-quiz-meta">
+          ${entry.questions ? entry.questions + ' Qs' : ''}
+          ${entry.topic ? '· ' + entry.topic : ''}
+          ${entry.classTag ? '· ' + entry.classTag : ''}
+          ${tagCode ? '· ' + tagCode : ''}
+        </div>
       </div>
+      <span class="lib-bulk-row">
+        ${hasExamTag ? `<span class="lib-bulk-btn" title="Add all from same exam" role="button" tabindex="0" onclick="event.stopPropagation(); stageByScopeFromEntryFile('${entry.file}','exam')">＋E</span>` : ''}
+        ${hasWeekTag ? `<span class="lib-bulk-btn" title="Add all from same week" role="button" tabindex="0" onclick="event.stopPropagation(); stageByScopeFromEntryFile('${entry.file}','week')">＋W</span>` : ''}
+        <span class="lib-bulk-btn" title="Edit tags" role="button" tabindex="0" onclick="event.stopPropagation(); openEditQuizTagsModalForFile('${entry.file}')">✏️</span>
+      </span>
       <span style="font-size:.68rem;opacity:.5;flex-shrink:0;color:${isStaged ? 'var(--success)' : 'inherit'}">${isStaged ? 'Added ✓' : '＋ Add'}</span>`;
     btn.onclick = () => toggleStageQuiz(entry, btn);
     list.appendChild(btn);
@@ -2654,7 +2908,8 @@ function renderLibrary() {
 async function loadLibraryQuiz(entry) {
   showToast('⏳ Loading ' + entry.title + '…');
   try {
-    const res = await githubFetch(entry.file);
+    let res = await localFetch(entry.file);
+    if (!res.ok) res = await githubFetch(entry.file);
     const text = await res.text();
     if (!text || !text.trim().startsWith('[')) {
       throw new Error('File found but content is not a JSON array. Got: ' + text.slice(0, 60));
@@ -2684,10 +2939,28 @@ async function loadLibraryQuiz(entry) {
 }
 
 function openAddQuizModal() {
+  quizModalMode = 'add';
+  quizEditFile = null;
   document.getElementById('add-quiz-modal').classList.add('open');
   document.getElementById('github-instructions').style.display = 'none';
+  document.getElementById('github-step-a').style.display = '';
+  document.getElementById('github-step-b').style.display = '';
+  document.getElementById('copy-quiz-json-btn').style.display = '';
+  document.getElementById('copy-manifest-entry-btn').style.display = '';
+
+  document.getElementById('clear-tags-btn').style.display = 'none';
+  document.getElementById('modal-primary-action').textContent = 'Generate GitHub File ↗';
+
+  document.getElementById('quiz-json-label').style.display = '';
+  document.getElementById('new-quiz-json').style.display = '';
+  document.getElementById('json-validate-msg').style.display = '';
+  document.getElementById('new-quiz-json').disabled = false;
   document.getElementById('new-quiz-title').value = '';
   document.getElementById('new-quiz-json').value = '';
+  document.getElementById('new-quiz-block').value = '';
+  document.getElementById('new-quiz-exam').value = '';
+  document.getElementById('new-quiz-week').value = '';
+  updateClassOptions();
   document.getElementById('json-validate-msg').textContent = '';
   generatedQuizJSON = null;
   generatedManifestEntry = null;
@@ -2695,6 +2968,61 @@ function openAddQuizModal() {
 
 function closeAddQuizModal() {
   document.getElementById('add-quiz-modal').classList.remove('open');
+  quizModalMode = 'add';
+  quizEditFile = null;
+  document.getElementById('github-instructions').style.display = 'none';
+}
+
+function openEditQuizTagsModalForFile(file) {
+  const entry = libraryManifest.find(e => e.file === file);
+  if (!entry) { showToast('❌ Could not find quiz entry to edit'); return; }
+  openEditQuizTagsModal(entry);
+}
+
+function openEditQuizTagsModal(entry) {
+  quizModalMode = 'editTags';
+  quizEditFile = entry.file;
+
+  document.getElementById('add-quiz-modal').classList.add('open');
+
+  // Hide manifest instructions until user clicks the primary action
+  document.getElementById('github-instructions').style.display = 'none';
+  document.getElementById('github-step-a').style.display = 'none';
+  document.getElementById('github-step-b').style.display = '';
+  document.getElementById('copy-quiz-json-btn').style.display = 'none';
+  document.getElementById('copy-manifest-entry-btn').style.display = '';
+
+  document.getElementById('modal-primary-action').textContent = 'Copy Updated Manifest ↗';
+
+  document.getElementById('clear-tags-btn').style.display = '';
+
+  // Prefill title + tags
+  document.getElementById('new-quiz-title').value = entry.title || '';
+  document.getElementById('new-quiz-block').value = entry.block ? String(entry.block) : '';
+  updateClassOptions();
+  document.getElementById('new-quiz-class').value = entry.classTag || '';
+  document.getElementById('new-quiz-exam').value = entry.exam ? String(entry.exam) : '';
+  document.getElementById('new-quiz-week').value = entry.week ? String(entry.week) : '';
+
+  // In tag-edit mode, quiz JSON isn't needed
+  document.getElementById('quiz-json-label').style.display = 'none';
+  document.getElementById('new-quiz-json').style.display = 'none';
+  document.getElementById('json-validate-msg').style.display = 'none';
+  document.getElementById('new-quiz-json').disabled = true;
+
+  generatedQuizJSON = null;
+  generatedManifestEntry = null;
+}
+
+function clearTagFields() {
+  document.getElementById('new-quiz-block').value = '';
+  document.getElementById('new-quiz-exam').value = '';
+  document.getElementById('new-quiz-week').value = '';
+  updateClassOptions();
+  document.getElementById('new-quiz-class').value = '';
+  generatedManifestEntry = null;
+  document.getElementById('github-instructions').style.display = 'none';
+  showToast('🧹 Tags cleared (not saved yet)');
 }
 
 document.getElementById('new-quiz-json').addEventListener('input', function() {
@@ -2713,6 +3041,10 @@ document.getElementById('new-quiz-json').addEventListener('input', function() {
 });
 
 function prepareQuizForGitHub() {
+  if (quizModalMode === 'editTags') {
+    _prepareManifestEditAsync();
+    return;
+  }
   // Immediately delegate to async version
   _prepareQuizAsync();
 }
@@ -2720,6 +3052,10 @@ function prepareQuizForGitHub() {
 async function _prepareQuizAsync() {
   const title = document.getElementById('new-quiz-title').value.trim();
   const jsonRaw = document.getElementById('new-quiz-json').value.trim();
+  const block = document.getElementById('new-quiz-block').value;
+  const exam = document.getElementById('new-quiz-exam').value;
+  const week = document.getElementById('new-quiz-week').value;
+  const classTag = document.getElementById('new-quiz-class').value;
 
   if (!title) { showToast('❌ Enter a quiz title first'); return; }
   if (!jsonRaw) { showToast('❌ Paste your quiz JSON first'); return; }
@@ -2735,14 +3071,22 @@ async function _prepareQuizAsync() {
 
   const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   const filename = slug + '.json';
-  const newEntry = { title, file: filename, questions: parsed.length, icon: '📋', topic: '' };
+  const newEntry = {
+    title, file: filename, questions: parsed.length, icon: '📋', topic: '',
+    block: block ? Number(block) : undefined,
+    exam: exam ? Number(exam) : undefined,
+    week: week ? Number(week) : undefined,
+    classTag: classTag || undefined
+  };
+  Object.keys(newEntry).forEach(k => newEntry[k] === undefined && delete newEntry[k]);
 
   generatedQuizJSON = JSON.stringify(parsed, null, 2);
 
   // Fetch current manifest so we can show the COMPLETE updated manifest (not just the new entry)
   let currentManifest = [];
   try {
-    const res = await githubFetch("manifest.json");
+    let res = await localFetch("manifest.json");
+    if (!res.ok) res = await githubFetch("manifest.json");
     const text = await res.text();
     if (text.trim().startsWith('[')) currentManifest = JSON.parse(text);
   } catch(e) { /* manifest might not exist yet — start fresh */ }
@@ -2761,6 +3105,81 @@ async function _prepareQuizAsync() {
   navigator.clipboard.writeText(generatedQuizJSON).then(() => {
     showToast('📋 Quiz JSON copied — follow steps below!');
   }).catch(() => {});
+}
+
+async function _prepareManifestEditAsync() {
+  if (!quizEditFile) { showToast('❌ No quiz selected for tag edit'); return; }
+
+  const title = document.getElementById('new-quiz-title').value.trim();
+  const blockVal = document.getElementById('new-quiz-block').value;
+  const examVal  = document.getElementById('new-quiz-exam').value;
+  const weekVal  = document.getElementById('new-quiz-week').value;
+  const classTag = document.getElementById('new-quiz-class').value;
+
+  let currentManifest = [];
+  try {
+    let res = await localFetch('manifest.json');
+    if (!res.ok) res = await githubFetch('manifest.json');
+    const text = await res.text();
+    if (text && text.trim().startsWith('[')) currentManifest = JSON.parse(text);
+  } catch(e) { currentManifest = libraryManifest.slice(); }
+
+  if (!Array.isArray(currentManifest)) currentManifest = [];
+
+  const idx = currentManifest.findIndex(e => e.file === quizEditFile);
+  const base = idx !== -1 ? currentManifest[idx] : { title: title || quizEditFile, file: quizEditFile, questions: 0, icon: '📋', topic: '' };
+
+  // Update title + tags; undefined means remove tag keys.
+  const updated = { ...base };
+  if (title) updated.title = title;
+
+  const block = blockVal ? Number(blockVal) : undefined;
+  const exam  = examVal  ? Number(examVal)  : undefined;
+  const week  = weekVal  ? Number(weekVal)  : undefined;
+  const cls    = classTag ? classTag : undefined;
+
+  if (block) {
+    updated.block = block;
+    if (exam) {
+      updated.exam = exam;
+      if (week) updated.week = week;
+      else delete updated.week;
+    } else {
+      delete updated.exam;
+      delete updated.week;
+    }
+    if (cls) updated.classTag = cls;
+    else delete updated.classTag;
+  } else {
+    delete updated.block;
+    delete updated.exam;
+    delete updated.week;
+    delete updated.classTag;
+  }
+
+  // Clean undefined keys
+  Object.keys(updated).forEach(k => updated[k] === undefined && delete updated[k]);
+
+  if (idx !== -1) currentManifest[idx] = updated;
+  else currentManifest.push(updated);
+
+  libraryManifest = currentManifest;
+  renderLibrary();
+
+  generatedManifestEntry = JSON.stringify(currentManifest, null, 2);
+
+  document.getElementById('github-instructions').style.display = 'block';
+  document.getElementById('github-step-a').style.display = 'none';
+  document.getElementById('github-step-b').style.display = '';
+  document.getElementById('copy-quiz-json-btn').style.display = 'none';
+  document.getElementById('copy-manifest-entry-btn').style.display = '';
+
+  // Copy updated manifest immediately
+  navigator.clipboard.writeText(generatedManifestEntry).then(() => {
+    showToast('📋 Updated manifest copied (tag edits)');
+  }).catch(() => {
+    showToast('📋 Updated manifest generated — use copy button');
+  });
 }
 
 function copyGeneratedJSON() {
