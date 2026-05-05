@@ -415,7 +415,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 
 /* ── Quiz Library Sidebar ─────────────────────────────── */
 #library-sidebar {
-  position: fixed; left: 0; top: 0; bottom: 0; width: 270px;
+  position: fixed; left: 0; top: 0; bottom: 0; width: 390px;
   background: var(--card); border-right: 1px solid var(--border);
   z-index: 900; display: flex; flex-direction: column;
   transform: translateX(-100%); transition: transform .3s cubic-bezier(.25,.8,.25,1);
@@ -423,7 +423,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 }
 #library-sidebar.open { transform: translateX(0); }
 #library-toggle {
-  position: fixed; right: 18px; bottom: 22px;
+  position: fixed; left: 18px; top: 18px;
   background: var(--primary); color: #fff; border: none;
   border-radius: 50px; padding: 11px 18px; font-family: var(--font-display);
   font-weight: 700; font-size: .82rem; cursor: pointer; z-index: 901;
@@ -442,8 +442,14 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   flex-direction: column;
   gap: 8px;
 }
+.lib-filter-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
 .lib-toolbar select {
   width: 100%;
+  margin-bottom: 0;
 }
 .lib-block-dropdown {
   border: 1px solid var(--border);
@@ -462,6 +468,23 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   display: none;
 }
 .lib-block-dropdown.open .lib-block-items { display: block; }
+.lib-tree-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.03);
+  border-radius: 8px;
+  color: var(--text);
+  padding: 6px 8px;
+  font-size: .72rem;
+  cursor: pointer;
+}
+.lib-tree-item:hover { border-color: var(--primary); }
+.lib-tree-item.exam { margin-left: 10px; width: calc(100% - 10px); }
+.lib-tree-item.week { margin-left: 20px; width: calc(100% - 20px); opacity: .92; }
+.lib-tree-item.class { margin-left: 30px; width: calc(100% - 30px); opacity: .9; }
 .lib-bulk-row {
   display: flex;
   align-items: center;
@@ -498,16 +521,16 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 }
 .lib-quiz-btn {
   width: 100%; text-align: left; background: rgba(255,255,255,.03);
-  border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px;
-  margin-bottom: 8px; cursor: pointer; font-family: var(--font-display);
-  font-weight: 700; font-size: .82rem; color: var(--text);
+  border: 1px solid var(--border); border-radius: 10px; padding: 8px 10px;
+  margin-bottom: 6px; cursor: pointer; font-family: var(--font-display);
+  font-weight: 700; font-size: .78rem; color: var(--text);
   transition: .18s; display: flex; align-items: center; gap: 10px;
 }
 .lib-quiz-btn:hover { border-color: var(--primary); background: rgba(255,255,255,.06); transform: translateX(3px); }
 .lib-quiz-btn.staged { border-color: var(--success); background: rgba(46,204,113,.07); }
 .lib-quiz-btn.staged:hover { border-color: var(--success); filter: brightness(1.1); }
 .lib-quiz-btn .lib-icon { font-size: 1.1rem; flex-shrink: 0; }
-.lib-quiz-meta { font-size: .68rem; font-family: var(--font-mono); opacity: .4; font-weight: 400; margin-top: 2px; }
+.lib-quiz-meta { font-size: .62rem; font-family: var(--font-mono); opacity: .4; font-weight: 400; margin-top: 1px; }
 .lib-footer { padding: 12px; border-top: 1px solid var(--border); flex-shrink: 0; }
 
 /* Add Quiz Modal */
@@ -683,13 +706,24 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <span class="lib-close" onclick="toggleLibrary()">✕</span>
   </div>
   <div class="lib-toolbar">
-    <select id="lib-block-filter" onchange="renderLibrary()">
-      <option value="all">All Blocks</option>
-      <option value="1">Block 1</option><option value="2">Block 2</option>
-      <option value="3">Block 3</option><option value="4">Block 4</option>
-      <option value="5">Block 5</option><option value="6">Block 6</option>
-      <option value="7">Block 7</option><option value="8">Block 8</option>
-    </select>
+    <div class="lib-filter-row">
+      <select id="lib-block-filter" onchange="onLibraryFilterChange('block')">
+        <option value="all">All Blocks</option>
+        <option value="1">Block 1</option><option value="2">Block 2</option>
+        <option value="3">Block 3</option><option value="4">Block 4</option>
+        <option value="5">Block 5</option><option value="6">Block 6</option>
+        <option value="7">Block 7</option><option value="8">Block 8</option>
+      </select>
+      <select id="lib-exam-filter" onchange="onLibraryFilterChange('exam')">
+        <option value="all">All Exams</option>
+      </select>
+      <select id="lib-week-filter" onchange="onLibraryFilterChange('week')">
+        <option value="all">All Weeks</option>
+      </select>
+      <select id="lib-class-filter" onchange="renderLibrary()">
+        <option value="all">All Classes</option>
+      </select>
+    </div>
     <div class="lib-block-dropdown" id="lib-block-dropdown">
       <div class="lib-block-summary" onclick="toggleBlockDropdown()">▼ Block Quick View</div>
       <div class="lib-block-items" id="lib-block-items"></div>
@@ -2648,24 +2682,152 @@ function toggleBlockDropdown() {
   document.getElementById('lib-block-dropdown').classList.toggle('open');
 }
 
+function setLibraryFilters(block = 'all', exam = 'all', week = 'all', classTag = 'all') {
+  const b = document.getElementById('lib-block-filter');
+  const e = document.getElementById('lib-exam-filter');
+  const w = document.getElementById('lib-week-filter');
+  const c = document.getElementById('lib-class-filter');
+  if (!b || !e || !w || !c) return;
+  b.value = String(block);
+  updateLibraryExamOptions();
+  e.value = String(exam);
+  updateLibraryWeekOptions();
+  updateLibraryClassOptions();
+  w.value = String(week);
+  c.value = String(classTag);
+  renderLibrary();
+}
+
+function onLibraryFilterChange(level) {
+  if (level === 'block') {
+    updateLibraryExamOptions();
+    updateLibraryWeekOptions();
+    updateLibraryClassOptions();
+  } else if (level === 'exam') {
+    updateLibraryWeekOptions();
+    updateLibraryClassOptions();
+  } else if (level === 'week') {
+    updateLibraryClassOptions();
+  }
+  renderLibrary();
+}
+
+function updateLibraryExamOptions() {
+  const block = document.getElementById('lib-block-filter')?.value || 'all';
+  const examSel = document.getElementById('lib-exam-filter');
+  if (!examSel) return;
+  const old = examSel.value;
+  const exams = new Set();
+  libraryManifest.forEach(e => {
+    if (!e.block || !e.exam) return;
+    if (block !== 'all' && String(e.block) !== block) return;
+    exams.add(String(e.exam));
+  });
+  examSel.innerHTML = '<option value="all">All Exams</option>';
+  [...exams].sort((a,b)=>Number(a)-Number(b)).forEach(v => {
+    const opt = document.createElement('option');
+    opt.value = v;
+    opt.textContent = `Exam ${v}`;
+    examSel.appendChild(opt);
+  });
+  examSel.value = [...examSel.options].some(o => o.value === old) ? old : 'all';
+}
+
+function updateLibraryWeekOptions() {
+  const block = document.getElementById('lib-block-filter')?.value || 'all';
+  const exam = document.getElementById('lib-exam-filter')?.value || 'all';
+  const weekSel = document.getElementById('lib-week-filter');
+  if (!weekSel) return;
+  const old = weekSel.value;
+  const weeks = new Set();
+  libraryManifest.forEach(e => {
+    if (!e.block || !e.exam || !e.week) return;
+    if (block !== 'all' && String(e.block) !== block) return;
+    if (exam !== 'all' && String(e.exam) !== exam) return;
+    weeks.add(String(e.week));
+  });
+  weekSel.innerHTML = '<option value="all">All Weeks</option>';
+  [...weeks].sort((a,b)=>Number(a)-Number(b)).forEach(v => {
+    const opt = document.createElement('option');
+    opt.value = v;
+    opt.textContent = `Week ${v}`;
+    weekSel.appendChild(opt);
+  });
+  weekSel.value = [...weekSel.options].some(o => o.value === old) ? old : 'all';
+}
+
+function updateLibraryClassOptions() {
+  const block = document.getElementById('lib-block-filter')?.value || 'all';
+  const exam = document.getElementById('lib-exam-filter')?.value || 'all';
+  const week = document.getElementById('lib-week-filter')?.value || 'all';
+  const classSel = document.getElementById('lib-class-filter');
+  if (!classSel) return;
+  const old = classSel.value;
+  const classes = new Set();
+  libraryManifest.forEach(e => {
+    if (!e.classTag) return;
+    if (block !== 'all' && String(e.block || '') !== block) return;
+    if (exam !== 'all' && String(e.exam || '') !== exam) return;
+    if (week !== 'all' && String(e.week || '') !== week) return;
+    classes.add(String(e.classTag));
+  });
+  classSel.innerHTML = '<option value="all">All Classes</option>';
+  [...classes].sort((a,b)=>a.localeCompare(b)).forEach(v => {
+    const opt = document.createElement('option');
+    opt.value = v;
+    opt.textContent = v;
+    classSel.appendChild(opt);
+  });
+  classSel.value = [...classSel.options].some(o => o.value === old) ? old : 'all';
+}
+
 function renderBlockQuickView(entries) {
   const wrap = document.getElementById('lib-block-items');
   if (!wrap) return;
-  const byBlock = {};
+  const tree = {};
   entries.forEach(e => {
     const b = Number(e.block || 0);
     if (!b) return;
-    byBlock[b] = (byBlock[b] || 0) + 1;
+    const ex = Number(e.exam || 0);
+    const wk = Number(e.week || 0);
+    const cls = e.classTag || '';
+    if (!tree[b]) tree[b] = { count: 0, exams: {} };
+    tree[b].count++;
+    if (ex) {
+      if (!tree[b].exams[ex]) tree[b].exams[ex] = { count: 0, weeks: {} };
+      tree[b].exams[ex].count++;
+      if (wk) {
+        if (!tree[b].exams[ex].weeks[wk]) tree[b].exams[ex].weeks[wk] = { count: 0, classes: {} };
+        tree[b].exams[ex].weeks[wk].count++;
+        if (cls) tree[b].exams[ex].weeks[wk].classes[cls] = (tree[b].exams[ex].weeks[wk].classes[cls] || 0) + 1;
+      }
+    }
   });
-  const keys = Object.keys(byBlock).sort((a, b) => Number(a) - Number(b));
+  const keys = Object.keys(tree).sort((a, b) => Number(a) - Number(b));
   if (!keys.length) {
     wrap.innerHTML = '<div class="lib-status" style="padding:8px 0">No block tags yet.</div>';
     return;
   }
-  wrap.innerHTML = keys.map(k =>
-    `<button class="btn btn-secondary" style="width:100%;margin-bottom:6px;font-size:.72rem;padding:7px"
-      onclick="document.getElementById('lib-block-filter').value='${k}'; renderLibrary();">Block ${k} (${byBlock[k]})</button>`
-  ).join('');
+  let html = '';
+  keys.forEach(k => {
+    const blockNode = tree[k];
+    html += `<button class="lib-tree-item block" onclick="setLibraryFilters('${k}','all','all','all')">Block ${k} (${blockNode.count})</button>`;
+    const exams = Object.keys(blockNode.exams).sort((a,b)=>Number(a)-Number(b));
+    exams.forEach(ex => {
+      const examNode = blockNode.exams[ex];
+      html += `<button class="lib-tree-item exam" onclick="setLibraryFilters('${k}','${ex}','all','all')">Exam ${ex} (${examNode.count})</button>`;
+      const weeks = Object.keys(examNode.weeks).sort((a,b)=>Number(a)-Number(b));
+      weeks.forEach(wk => {
+        const weekNode = examNode.weeks[wk];
+        html += `<button class="lib-tree-item week" onclick="setLibraryFilters('${k}','${ex}','${wk}','all')">Week ${wk} (${weekNode.count})</button>`;
+        const classes = Object.keys(weekNode.classes).sort((a,b)=>a.localeCompare(b));
+        classes.forEach(cls => {
+          html += `<button class="lib-tree-item class" onclick="setLibraryFilters('${k}','${ex}','${wk}','${cls.replace(/'/g, "\\'")}')">${cls} (${weekNode.classes[cls]})</button>`;
+        });
+      });
+    });
+  });
+  wrap.innerHTML = html;
 }
 
 function toggleLibrary() {
@@ -2868,8 +3030,17 @@ function renderLibrary() {
     return;
   }
   const blockFilter = document.getElementById('lib-block-filter')?.value || 'all';
+  const examFilter = document.getElementById('lib-exam-filter')?.value || 'all';
+  const weekFilter = document.getElementById('lib-week-filter')?.value || 'all';
+  const classFilter = document.getElementById('lib-class-filter')?.value || 'all';
   list.innerHTML = '';
-  const visible = libraryManifest.filter(entry => blockFilter === 'all' || String(entry.block || '') === blockFilter);
+  const visible = libraryManifest.filter(entry => {
+    if (blockFilter !== 'all' && String(entry.block || '') !== blockFilter) return false;
+    if (examFilter !== 'all' && String(entry.exam || '') !== examFilter) return false;
+    if (weekFilter !== 'all' && String(entry.week || '') !== weekFilter) return false;
+    if (classFilter !== 'all' && String(entry.classTag || '') !== classFilter) return false;
+    return true;
+  });
   renderBlockQuickView(libraryManifest);
   if (!visible.length) {
     list.innerHTML = '<div class="lib-status">No quizzes for this block filter yet.</div>';
@@ -3206,5 +3377,8 @@ document.getElementById('add-quiz-modal').addEventListener('click', function(e) 
 window.addEventListener('load', () => {
   refreshLibrary();
   updatePromptSummary(); // set initial button label
+  updateLibraryExamOptions();
+  updateLibraryWeekOptions();
+  updateLibraryClassOptions();
 });
 </script>
