@@ -806,7 +806,19 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     </div>
 
       <div class="github-instructions" id="github-instructions" style="display:none">
-      <strong style="font-size:.82rem">📌 Two steps to publish this quiz:</strong>
+      <strong style="font-size:.82rem">🚀 Auto-publish (recommended):</strong>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+        <input id="github-token-input" class="modal-input" type="password" placeholder="GitHub token (repo contents write)" style="flex:1;min-width:220px">
+        <input id="github-commit-message" class="modal-input" type="text" placeholder="Commit message (optional)" style="flex:1;min-width:220px">
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+        <button id="auto-publish-btn" class="copy-snippet-btn" onclick="autoCommitToGitHub()">🚀 Auto Commit to GitHub</button>
+      </div>
+      <div style="margin-top:10px;font-size:.7rem;opacity:.65;font-family:var(--font-mono)">
+        Token stays on this browser only (localStorage). First save needs token; after that, Generate can auto-publish.
+      </div>
+      <hr style="border:none;border-top:1px solid var(--border);margin:12px 0">
+      <strong style="font-size:.82rem">📌 Manual fallback:</strong>
       <ol style="margin:10px 0 10px 18px;padding:0;opacity:.85;line-height:2">
         <li id="github-step-a"><strong>Step A — Quiz file:</strong> Go to <a href="https://github.com/4vpvjyx4wr-star/MedStep/tree/main/quizzes" target="_blank" style="color:var(--primary);font-weight:700">your quizzes folder</a> → <em>Add file → Create new file</em> → name it <code id="suggested-filename">quizzes/your-quiz.json</code> → paste the Quiz JSON → Commit.</li>
         <li id="github-step-b"><strong>Step B — Update manifest:</strong> Open <a href="https://github.com/4vpvjyx4wr-star/MedStep/blob/main/quizzes/manifest.json" target="_blank" style="color:var(--primary);font-weight:700">manifest.json</a> → click the ✏️ pencil icon → <strong>select all text and delete it</strong> → paste the Full Manifest → Commit.</li>
@@ -2653,6 +2665,7 @@ let libraryOpen = false;
 let libraryManifest = [];
 let generatedQuizJSON = null;
 let generatedManifestEntry = null;
+let generatedQuizFilename = null;
 let quizModalMode = 'add'; // 'add' | 'editTags'
 let quizEditFile = null;
 let stagedQuizzes = []; // { file, title, questions, json[] }
@@ -3135,6 +3148,11 @@ function openAddQuizModal() {
   document.getElementById('json-validate-msg').textContent = '';
   generatedQuizJSON = null;
   generatedManifestEntry = null;
+  generatedQuizFilename = null;
+  const tokenInput = document.getElementById('github-token-input');
+  if (tokenInput) tokenInput.value = localStorage.getItem('medstep_github_token') || '';
+  const msgInput = document.getElementById('github-commit-message');
+  if (msgInput) msgInput.value = '';
 }
 
 function closeAddQuizModal() {
@@ -3142,6 +3160,128 @@ function closeAddQuizModal() {
   quizModalMode = 'add';
   quizEditFile = null;
   document.getElementById('github-instructions').style.display = 'none';
+}
+
+function base64EncodeUnicode(str) {
+  return btoa(unescape(encodeURIComponent(str)));
+}
+
+async function getGitHubSha(path, token, branch) {
+  const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${path}?ref=${branch}`;
+  const res = await fetch(url, {
+    headers: {
+      'Accept': 'application/vnd.github+json',
+      'Authorization': `Bearer ${token}`
+    }
+  });
+  if (res.status === 404) return null;
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`GitHub SHA lookup failed (${res.status}): ${text}`);
+  }
+  const json = await res.json();
+  return json.sha || null;
+}
+
+async function detectWritableBranch(token) {
+  for (const branch of GITHUB_BRANCH_FALLBACKS) {
+    const probeUrl = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/quizzes/manifest.json?ref=${branch}`;
+    const res = await fetch(probeUrl, {
+      headers: {
+        'Accept': 'application/vnd.github+json',
+        'Authorization': `Bearer ${token}`
+      }
+    });
+    if (res.ok) return branch;
+  }
+  return GITHUB_BRANCH_FALLBACKS[0] || 'main';
+}
+
+async function upsertGitHubFile(path, content, commitMessage, token, branch) {
+  const sha = await getGitHubSha(path, token, branch);
+  const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${path}`;
+  const body = {
+    message: commitMessage,
+    content: base64EncodeUnicode(content),
+    branch
+  };
+  if (sha) body.sha = sha;
+  const res = await fetch(url, {
+    method: 'PUT',
+    headers: {
+      'Accept': 'application/vnd.github+json',
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(body)
+  });
+  if (!res.ok) {
+    let detail = '';
+    try {
+      const json = await res.json();
+      detail = json?.message || JSON.stringify(json);
+    } catch(e) {
+      detail = await res.text();
+    }
+    throw new Error(`GitHub update failed for ${path} (${res.status}): ${detail}`);
+  }
+}
+
+async function autoCommitToGitHub(options = {}) {
+  const { silentIfNoToken = false, closeOnSuccess = false } = options;
+  if (!generatedManifestEntry) {
+    showToast('❌ Generate content first');
+    return false;
+  }
+  const token = (document.getElementById('github-token-input')?.value || '').trim();
+  if (!token) {
+    if (!silentIfNoToken) showToast('❌ Enter GitHub token first');
+    return false;
+  }
+
+  localStorage.setItem('medstep_github_token', token);
+  const customMsg = (document.getElementById('github-commit-message')?.value || '').trim();
+  const branch = await detectWritableBranch(token);
+
+  try {
+    if (quizModalMode === 'add') {
+      if (!generatedQuizJSON || !generatedQuizFilename) {
+        showToast('❌ Generate quiz file first');
+        return false;
+      }
+      const quizPath = `quizzes/${generatedQuizFilename}`;
+      await upsertGitHubFile(
+        quizPath,
+        generatedQuizJSON,
+        customMsg || `Add quiz: ${generatedQuizFilename}`,
+        token,
+        branch
+      );
+      await upsertGitHubFile(
+        'quizzes/manifest.json',
+        generatedManifestEntry,
+        customMsg || `Update manifest for ${generatedQuizFilename}`,
+        token,
+        branch
+      );
+      showToast('✅ Auto-published quiz + manifest to GitHub');
+    } else {
+      await upsertGitHubFile(
+        'quizzes/manifest.json',
+        generatedManifestEntry,
+        customMsg || `Update manifest tags for ${quizEditFile || 'quiz'}`,
+        token,
+        branch
+      );
+      showToast('✅ Auto-published manifest changes to GitHub');
+    }
+    await refreshLibrary();
+    if (closeOnSuccess) closeAddQuizModal();
+    return true;
+  } catch(e) {
+    showToast('❌ ' + (e.message || String(e)).slice(0, 140));
+    return false;
+  }
 }
 
 function openEditQuizTagsModalForFile(file) {
@@ -3183,6 +3323,7 @@ function openEditQuizTagsModal(entry) {
 
   generatedQuizJSON = null;
   generatedManifestEntry = null;
+  generatedQuizFilename = null;
 }
 
 function clearTagFields() {
@@ -3252,6 +3393,7 @@ async function _prepareQuizAsync() {
   Object.keys(newEntry).forEach(k => newEntry[k] === undefined && delete newEntry[k]);
 
   generatedQuizJSON = JSON.stringify(parsed, null, 2);
+  generatedQuizFilename = filename;
 
   // Fetch current manifest so we can show the COMPLETE updated manifest (not just the new entry)
   let currentManifest = [];
@@ -3276,6 +3418,7 @@ async function _prepareQuizAsync() {
   navigator.clipboard.writeText(generatedQuizJSON).then(() => {
     showToast('📋 Quiz JSON copied — follow steps below!');
   }).catch(() => {});
+  await autoCommitToGitHub({ silentIfNoToken: true, closeOnSuccess: true });
 }
 
 async function _prepareManifestEditAsync() {
@@ -3351,6 +3494,7 @@ async function _prepareManifestEditAsync() {
   }).catch(() => {
     showToast('📋 Updated manifest generated — use copy button');
   });
+  await autoCommitToGitHub({ silentIfNoToken: true, closeOnSuccess: true });
 }
 
 function copyGeneratedJSON() {
