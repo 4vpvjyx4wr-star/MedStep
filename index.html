@@ -57,14 +57,14 @@ body{
 
 /* ── Settings ─────────────────────────────────────────── */
 .settings-btn{
-  position:fixed;top:18px;left:18px;font-size:40px;
+  position:fixed;top:18px;right:18px;font-size:34px;
   cursor:pointer;z-index:1001;opacity:.65;line-height:1;
   transition:all .25s cubic-bezier(.175,.885,.32,1.275);
 }
-.settings-btn:hover{opacity:1;transform:rotate(50deg) scale(1.05)}
+.settings-btn:hover{opacity:1;transform:scale(1.08)}
 
 .settings-menu{
-  position:fixed;top:75px;left:18px;
+  position:fixed;top:75px;right:18px;
   background:var(--card);border:1px solid var(--border);
   padding:22px;border-radius:18px;z-index:1000;display:none;
   min-width:290px;box-shadow:0 12px 40px rgba(0,0,0,.5);
@@ -423,7 +423,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 }
 #library-sidebar.open { transform: translateX(0); }
 #library-toggle {
-  position: fixed; left: 18px; bottom: 22px;
+  position: fixed; right: 18px; bottom: 22px;
   background: var(--primary); color: #fff; border: none;
   border-radius: 50px; padding: 11px 18px; font-family: var(--font-display);
   font-weight: 700; font-size: .82rem; cursor: pointer; z-index: 901;
@@ -676,7 +676,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 </div>
 
 <!-- ══ SETTINGS ══════════════════════════════════════════ -->
-<div class="settings-btn" id="settings-trigger">⚙️</div>
+<div class="settings-btn" id="settings-trigger" title="Settings Menu">☰</div>
 <div class="settings-menu" id="settings-menu">
 
   <div class="setting-row">
@@ -2409,11 +2409,11 @@ document.addEventListener('keydown',e=>{
 // ══ QUIZ LIBRARY ══════════════════════════════════════════
 const GITHUB_USER   = '4vpvjyx4wr-star';
 const GITHUB_REPO   = 'MedStep';
-let   GITHUB_BRANCH = 'main'; // will be confirmed on first load
+const GITHUB_BRANCH_FALLBACKS = ['main', 'master'];
 
 // Build a raw URL — single quizzes/ prefix, no double nesting
 function rawUrl(filename) {
-  return `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/quizzes/${filename}`;
+  return `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/quizzes/${filename}`;
 }
 
 // Fetch a file from raw.githubusercontent.com via the GitHub Contents API
@@ -2422,8 +2422,10 @@ async function githubFetch(filename) {
   // Strip any accidental quizzes/ prefix so we never double-nest
   const clean = filename.replace(/^quizzes\//, '');
 
-  // Try both branches so we don't need the user to know which one
-  const branches = GITHUB_BRANCH === 'main' ? ['main', 'master'] : ['master', 'main'];
+  // Always prefer main, then fallback to master.
+  // Do not "lock" to whichever branch happened to answer first, because
+  // some repos keep an outdated secondary branch that can hide new quizzes.
+  const branches = GITHUB_BRANCH_FALLBACKS;
 
   for (const branch of branches) {
     const apiUrl = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/quizzes/${clean}?ref=${branch}`;
@@ -2441,7 +2443,6 @@ async function githubFetch(filename) {
 
     // Decode base64 content directly — most reliable, no secondary fetch needed
     if (meta.content && meta.encoding === 'base64') {
-      GITHUB_BRANCH = branch; // lock in the working branch
       const decoded = atob(meta.content.replace(/\n/g, ''));
       // Return a fake Response so callers can just do .text()
       return { ok: true, text: async () => decoded };
@@ -2449,7 +2450,6 @@ async function githubFetch(filename) {
 
     // Fallback: if download_url exists, fetch it directly
     if (meta.download_url) {
-      GITHUB_BRANCH = branch;
       const direct = await fetch(meta.download_url, { cache: 'no-store' });
       if (direct.ok) return direct;
     }
