@@ -179,6 +179,9 @@ textarea:focus{outline:none;border-color:var(--primary)}
 .nav-box.correct{background:var(--success);color:#fff}
 .nav-box.incorrect{background:var(--danger);color:#fff}
 .nav-box.answered-gray{background:#475569}
+.nav-box.flagged{outline:2px solid rgba(245, 158, 11, 0.85); outline-offset:-2px}
+.nav-box.flagged-disabled{opacity:.35;pointer-events:none;cursor:default}
+.header-btn.flagged{border-color:rgba(245, 158, 11, 0.9);background:rgba(245,158,11,0.08)}
 
 .option-wrap{margin-bottom:6px}
 .option-row{display:flex;align-items:flex-start;gap:12px;cursor:pointer;border:1px solid var(--border);border-radius:10px;padding:11px 14px;transition:border .15s,background .15s;background:rgba(255,255,255,.01)}
@@ -887,6 +890,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <div class="kbd-row"><span class="kbd-key">H</span><span class="kbd-desc">Highlighter</span></div>
     <div class="kbd-row"><span class="kbd-key">D</span><span class="kbd-desc">Clear All Highlighting</span></div>
     <div class="kbd-row"><span class="kbd-key">C</span><span class="kbd-desc">Calculator</span></div>
+    <div class="kbd-row"><span class="kbd-key">F</span><span class="kbd-desc">Flag Question</span></div>
   </div>
 
 </div>
@@ -1139,6 +1143,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
           <button class="header-btn scramble-btn" id="scramble-btn" onclick="scrambleAll()" title="Scramble (S)">
             <span class="spin-icon">🔀</span> Scramble
           </button>
+          <button class="header-btn" id="flag-btn" onclick="toggleFlagForCurrentQuestion()" title="Flag (F)" style="opacity:0.65">☆ Flag</button>
           <button class="header-btn" id="undo-btn" onclick="undoAnswer()" title="Undo answer (R)" style="display:none">↩️ Undo</button>
         </div>
         <div class="timer-wrap">
@@ -1176,6 +1181,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <div style="display:flex;gap:14px;justify-content:center;margin-top:28px;margin-bottom:50px">
       <button class="btn btn-secondary" onclick="goHome()">🏠 New Quiz</button>
       <button class="btn btn-primary" onclick="reviewAnswers()">Review Answers</button>
+      <button class="btn btn-primary" id="review-flagged-btn" style="display:none" onclick="reviewFlaggedAnswers()">Review Flagged</button>
     </div>
   </div>
 
@@ -1185,7 +1191,8 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 'use strict';
 
 // ── State ─────────────────────────────────────────────
-let questions=[], currentIdx=0, timerInt=null, isPaused=false, isReviewMode=false, highlighterMode=false;
+let questions=[], currentIdx=0, timerInt=null, isPaused=false, isReviewMode=false, highlighterMode=false,
+  isFlaggedReviewMode=false, flaggedReviewIndices=[], flaggedReviewPos=0, flaggedReviewPosByIdx=new Map();
 const LETTERS=['A','B','C','D','E'];
 const ALL_THEMES=[
   'theme-slate-orange','theme-cyber','theme-autumn','theme-mesa','theme-evergreen',
@@ -2103,7 +2110,8 @@ function initQuiz(){
 }
 function buildQuiz(raw){
   isReviewMode=false;
-  questions=shuffle(raw).map(q=>({...q,options:shuffle([...q.options]),userAnswer:null,time:0}));
+  isFlaggedReviewMode=false; flaggedReviewIndices=[]; flaggedReviewPos=0; flaggedReviewPosByIdx=new Map();
+  questions=shuffle(raw).map(q=>({...q,options:shuffle([...q.options]),userAnswer:null,time:0,flagged:false}));
   document.getElementById('total-q-count').innerText=questions.length;
   document.getElementById('finish-btn').style.display='none';
   document.getElementById('next-btn').innerText='Next Question →';
@@ -2111,6 +2119,33 @@ function buildQuiz(raw){
   document.getElementById('quiz-screen').classList.remove('hidden');
   document.getElementById('quiz-nav-settings').classList.remove('hidden');
   toggleSidebar();currentIdx=0;renderGrid();loadQuestion(0);startTimer();
+}
+
+// ══ FLAGGING (important questions) ═════════════════════
+function updateFlagButton(){
+  const btn=document.getElementById('flag-btn');
+  if(!btn) return;
+  if(isReviewMode){
+    btn.style.opacity='0.45';
+    btn.style.pointerEvents='none';
+  } else {
+    btn.style.opacity='0.65';
+    btn.style.pointerEvents='all';
+  }
+  const q=questions[currentIdx];
+  const flagged=!!q?.flagged;
+  btn.classList.toggle('flagged',flagged);
+  btn.innerText=flagged?'⭐ Flagged':'☆ Flag';
+}
+
+function toggleFlagForCurrentQuestion(){
+  if(isReviewMode) return;
+  const q=questions[currentIdx];
+  if(!q) return;
+  q.flagged=!q.flagged;
+  renderGrid();
+  updateFlagButton();
+  showToast(q.flagged?'⭐ Flagged for review':'☆ Removed flag');
 }
 
 // ══ TIMER ════════════════════════════════════════════════
@@ -2137,12 +2172,17 @@ function syncPauseUI(){
 function loadQuestion(idx){
   currentIdx=idx;
   const q=questions[idx];
-  document.getElementById('cur-q-idx').innerText=idx+1;
+  if(isFlaggedReviewMode && flaggedReviewPosByIdx?.size){
+    const pos=flaggedReviewPosByIdx.get(idx);
+    if(typeof pos==='number') flaggedReviewPos=pos;
+  }
+  document.getElementById('cur-q-idx').innerText=isFlaggedReviewMode?(flaggedReviewPos+1):(idx+1);
+  document.getElementById('total-q-count').innerText=isFlaggedReviewMode?flaggedReviewIndices.length:questions.length;
   document.getElementById('lo-citation').innerText=q.cited_learning_objective||'';
   document.getElementById('q-text').innerText=q.question;
   document.getElementById('undo-btn').style.display=(q.userAnswer&&!isReviewMode)?'inline-flex':'none';
 
-  const isLast=idx===questions.length-1;
+  const isLast=isFlaggedReviewMode?(flaggedReviewPos===flaggedReviewIndices.length-1):(idx===questions.length-1);
   const finBtn=document.getElementById('finish-btn');
   const nextBtn=document.getElementById('next-btn');
   if(isReviewMode){
@@ -2185,6 +2225,7 @@ list.appendChild(wrap);
   });
   document.getElementById('question-container').scrollTop=0;
   renderGrid();
+  updateFlagButton();
 }
 
 // ══ ANSWER / UNDO ════════════════════════════════════════
@@ -2204,6 +2245,15 @@ function undoAnswer(){
 
 // ══ NAV ══════════════════════════════════════════════════
 function changeQ(dir){
+  if(isFlaggedReviewMode){
+    const nextPos=flaggedReviewPos+dir;
+    if(nextPos>=flaggedReviewIndices.length){reviewAnswers_exit();return;}
+    if(nextPos>=0){
+      flaggedReviewPos=nextPos;
+      loadQuestion(flaggedReviewIndices[flaggedReviewPos]);
+    }
+    return;
+  }
   const next=currentIdx+dir;
   if(isReviewMode&&next>=questions.length){reviewAnswers_exit();return;}
   if(next>=0&&next<questions.length)loadQuestion(next);
@@ -2241,19 +2291,47 @@ function showResults(){
     const col=p>=80?'var(--success)':p>=60?'var(--primary)':'var(--danger)';
     list.innerHTML+=`<div class="obj-card"><div style="display:flex;justify-content:space-between;font-size:.88rem;font-weight:700"><span style="opacity:.9">${k}</span><span style="color:${col};font-family:var(--font-mono)">${p}%</span></div><div class="progress-bg"><div class="progress-fill" style="width:${p}%;background:${col}"></div></div><div style="font-size:.68rem;opacity:.45;margin-top:7px;font-family:var(--font-mono)">${v.c} of ${v.t} correct</div></div>`;
   });
+  const flaggedCount=questions.filter(q=>q.flagged).length;
+  const flaggedBtn=document.getElementById('review-flagged-btn');
+  if(flaggedBtn){
+    flaggedBtn.style.display=flaggedCount?'inline-flex':'none';
+    flaggedBtn.innerText=flaggedCount?`Review Flagged (${flaggedCount})`:'Review Flagged';
+  }
   document.getElementById('quiz-screen').classList.add('hidden');
   document.getElementById('results-screen').classList.remove('hidden');
 }
 function reviewAnswers(){
   isReviewMode=true;
+  isFlaggedReviewMode=false;
+  flaggedReviewIndices=[]; flaggedReviewPos=0; flaggedReviewPosByIdx=new Map();
+  document.getElementById('total-q-count').innerText=questions.length;
   document.getElementById('results-screen').classList.add('hidden');
   document.getElementById('quiz-screen').classList.remove('hidden');
   currentIdx=0;loadQuestion(0);renderGrid();
 }
 function reviewAnswers_exit(){
   isReviewMode=false;
+  isFlaggedReviewMode=false;
+  flaggedReviewIndices=[]; flaggedReviewPos=0; flaggedReviewPosByIdx=new Map();
+  document.getElementById('total-q-count').innerText=questions.length;
   document.getElementById('quiz-screen').classList.add('hidden');
   document.getElementById('results-screen').classList.remove('hidden');
+}
+
+function reviewFlaggedAnswers(){
+  const indices=[];
+  questions.forEach((q,i)=>{ if(q.flagged) indices.push(i); });
+  if(indices.length===0){ showToast('No flagged questions to review'); return; }
+  isReviewMode=true;
+  isFlaggedReviewMode=true;
+  flaggedReviewIndices=indices;
+  flaggedReviewPos=0;
+  flaggedReviewPosByIdx=new Map(indices.map((idx,pos)=>[idx,pos]));
+
+  document.getElementById('results-screen').classList.add('hidden');
+  document.getElementById('quiz-screen').classList.remove('hidden');
+  loadQuestion(indices[0]);
+  renderGrid();
 }
 
 // ══ GRID ═════════════════════════════════════════════════
@@ -2264,14 +2342,30 @@ function renderGrid(){
   questions.forEach((q,i)=>{
     const b=document.createElement('div');b.className='nav-box';
     if(i===currentIdx)b.classList.add('current');
+    if(q.flagged) b.classList.add('flagged');
     if(q.userAnswer){if(fb)b.classList.add(q.userAnswer.isCorrect?'correct':'incorrect');else b.classList.add('answered-gray');}
-    b.innerText=i+1;b.onclick=()=>loadQuestion(i);grid.appendChild(b);
+    b.innerText=i+1;
+    if(isFlaggedReviewMode){
+      if(!q.flagged){
+        b.classList.add('flagged-disabled');
+      } else {
+        b.onclick=()=>{
+          const pos=flaggedReviewPosByIdx.get(i);
+          flaggedReviewPos=typeof pos==='number'?pos:0;
+          loadQuestion(i);
+        };
+      }
+    } else {
+      b.onclick=()=>loadQuestion(i);
+    }
+    grid.appendChild(b);
   });
 }
 
 // ══ HOME ═════════════════════════════════════════════════
 function goHome(){
   clearInterval(timerInt);questions=[];isPaused=false;isReviewMode=false;
+  isFlaggedReviewMode=false; flaggedReviewIndices=[]; flaggedReviewPos=0; flaggedReviewPosByIdx=new Map();
   stopAllAnims();clearDecor();
   document.getElementById('quiz-screen').classList.add('hidden');
   document.getElementById('results-screen').classList.add('hidden');
@@ -2559,6 +2653,7 @@ document.addEventListener('keydown',e=>{
   if(e.key.toLowerCase()==='h') toggleHighlighter();
   if(e.key.toLowerCase()==='d') clearHighlights();
   if(e.key.toLowerCase()==='c') toggleCalc();
+  if(e.key.toLowerCase()==='f') toggleFlagForCurrentQuestion();
   if(e.key===' '){e.preventDefault();changeQ(1);}
   if(['1','2','3','4','5'].includes(e.key)){
     const opt=questions[currentIdx]?.options[Number(e.key)-1];
@@ -3197,6 +3292,51 @@ async function detectWritableBranch(token) {
   return GITHUB_BRANCH_FALLBACKS[0] || 'main';
 }
 
+async function fetchManifestFromGitHub(token, branch) {
+  const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/quizzes/manifest.json?ref=${branch}`;
+  const res = await fetch(url, {
+    headers: {
+      'Accept': 'application/vnd.github+json',
+      'Authorization': `Bearer ${token}`
+    }
+  });
+  if (res.status === 404) return [];
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`Failed to fetch latest manifest (${res.status}): ${text}`);
+  }
+  const json = await res.json();
+  if (!json?.content || json.encoding !== 'base64') return [];
+  const decoded = decodeURIComponent(escape(atob(json.content.replace(/\n/g, ''))));
+  const parsed = JSON.parse(decoded);
+  return Array.isArray(parsed) ? parsed : [];
+}
+
+function getPendingManifestEntry() {
+  if (!generatedManifestEntry) return null;
+  let parsed;
+  try {
+    parsed = JSON.parse(generatedManifestEntry);
+  } catch(e) {
+    return null;
+  }
+  if (!Array.isArray(parsed)) return null;
+  const targetFile = quizModalMode === 'add' ? generatedQuizFilename : quizEditFile;
+  if (!targetFile) return null;
+  return parsed.find(e => e.file === targetFile) || null;
+}
+
+async function buildManifestForUpload(token, branch) {
+  const latest = await fetchManifestFromGitHub(token, branch);
+  const pending = getPendingManifestEntry();
+  if (!pending) {
+    throw new Error('Could not build manifest update payload');
+  }
+  const merged = latest.filter(e => e.file !== pending.file);
+  merged.push(pending);
+  return JSON.stringify(merged, null, 2);
+}
+
 async function upsertGitHubFile(path, content, commitMessage, token, branch) {
   const sha = await getGitHubSha(path, token, branch);
   const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${path}`;
@@ -3257,18 +3397,20 @@ async function autoCommitToGitHub(options = {}) {
         token,
         branch
       );
+      const latestManifest = await buildManifestForUpload(token, branch);
       await upsertGitHubFile(
         'quizzes/manifest.json',
-        generatedManifestEntry,
+        latestManifest,
         customMsg || `Update manifest for ${generatedQuizFilename}`,
         token,
         branch
       );
       showToast('✅ Auto-published quiz + manifest to GitHub');
     } else {
+      const latestManifest = await buildManifestForUpload(token, branch);
       await upsertGitHubFile(
         'quizzes/manifest.json',
-        generatedManifestEntry,
+        latestManifest,
         customMsg || `Update manifest tags for ${quizEditFile || 'quiz'}`,
         token,
         branch
