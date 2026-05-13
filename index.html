@@ -531,6 +531,14 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   box-shadow: 0 4px 18px rgba(0,0,0,.35); transition: .2s;
 }
 #library-toggle:hover { filter: brightness(1.12); transform: translateY(-2px); }
+#back-to-quiz-btn {
+  background: var(--success, #2ecc71); color: #fff; border: none;
+  border-radius: 50px; padding: 11px 18px; font-family: var(--font-display);
+  font-weight: 700; font-size: .82rem; cursor: pointer;
+  display: none; align-items: center; gap: 8px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.35); transition: .2s;
+}
+#back-to-quiz-btn:hover { filter: brightness(1.12); transform: translateY(-2px); }
 .lib-header {
   padding: 20px 18px 14px; border-bottom: 1px solid var(--border);
   display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;
@@ -911,7 +919,10 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 
 <!-- ══ TOP BAR ════════════════════════════════════════════ -->
 <div class="top-bar">
-  <button id="library-toggle" onclick="toggleLibrary()">📚 Quiz Library</button>
+  <div style="display:flex;align-items:center;gap:10px">
+    <button id="library-toggle" onclick="toggleLibrary()">📚 Quiz Library</button>
+    <button id="back-to-quiz-btn" onclick="resumeSavedQuiz()" style="display:none">📝 Back to Quiz</button>
+  </div>
   <div class="settings-btn" id="settings-trigger" title="Settings Menu">☰</div>
 </div>
 
@@ -938,7 +949,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
       <select id="lib-week-filter" onchange="onLibraryFilterChange('week')">
         <option value="all">All Weeks</option>
       </select>
-      <select id="lib-class-filter" onchange="renderLibrary()">
+      <select id="lib-class-filter" onchange="renderLibrary();saveLibraryFilters()">
         <option value="all">All Classes</option>
       </select>
     </div>
@@ -1432,7 +1443,8 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 
 // ── State ─────────────────────────────────────────────
 let questions=[], currentIdx=0, timerInt=null, isPaused=false, isReviewMode=false, highlighterMode=false,
-  isFlaggedReviewMode=false, flaggedReviewIndices=[], flaggedReviewPos=0, flaggedReviewPosByIdx=new Map();
+  isFlaggedReviewMode=false, flaggedReviewIndices=[], flaggedReviewPos=0, flaggedReviewPosByIdx=new Map(),
+  savedQuizState=null;
 const LETTERS=['A','B','C','D','E'];
 const ALL_THEMES=[
   'theme-slate-orange','theme-cyber','theme-autumn','theme-mesa','theme-evergreen',
@@ -2394,6 +2406,8 @@ function initQuiz(){
   }catch(e){alert('Invalid JSON. Make sure you copied the full Copilot output.');}
 }
 function buildQuiz(raw){
+  savedQuizState = null;
+  document.getElementById('back-to-quiz-btn').style.display = 'none';
   isReviewMode=false;
   isFlaggedReviewMode=false; flaggedReviewIndices=[]; flaggedReviewPos=0; flaggedReviewPosByIdx=new Map();
   questions=shuffle(raw).map(q=>({...q,options:shuffle([...q.options]),userAnswer:null,time:0,flagged:false}));
@@ -2733,6 +2747,20 @@ function renderGrid(){
 
 // ══ HOME ═════════════════════════════════════════════════
 function goHome(){
+  // Save quiz progress if a quiz is active so the user can resume
+  if (questions.length > 0) {
+    const quizOnResults = !document.getElementById('results-screen').classList.contains('hidden');
+    savedQuizState = {
+      questions: JSON.parse(JSON.stringify(questions)),
+      currentIdx,
+      isReviewMode,
+      isFlaggedReviewMode,
+      flaggedReviewIndices: [...flaggedReviewIndices],
+      flaggedReviewPos,
+      onResults: quizOnResults
+    };
+    document.getElementById('back-to-quiz-btn').style.display = 'flex';
+  }
   clearInterval(timerInt);questions=[];isPaused=false;isReviewMode=false;
   isFlaggedReviewMode=false; flaggedReviewIndices=[]; flaggedReviewPos=0; flaggedReviewPosByIdx=new Map();
   stopAllAnims();clearDecor();
@@ -2742,6 +2770,39 @@ function goHome(){
   document.getElementById('back-to-results-btn').style.display='none';
   document.getElementById('quiz-nav-settings').classList.add('hidden');
   document.getElementById('settings-menu').style.display='none';
+}
+
+function resumeSavedQuiz() {
+  if (!savedQuizState) return;
+  const s = savedQuizState;
+  questions = s.questions;
+  currentIdx = s.currentIdx;
+  isReviewMode = s.isReviewMode;
+  isFlaggedReviewMode = s.isFlaggedReviewMode;
+  flaggedReviewIndices = s.flaggedReviewIndices;
+  flaggedReviewPos = s.flaggedReviewPos;
+  flaggedReviewPosByIdx = new Map();
+  flaggedReviewIndices.forEach((qi, pos) => flaggedReviewPosByIdx.set(qi, pos));
+
+  document.getElementById('input-screen').classList.add('hidden');
+  document.getElementById('total-q-count').innerText = questions.length;
+
+  if (s.onResults) {
+    document.getElementById('quiz-screen').classList.add('hidden');
+    document.getElementById('results-screen').classList.remove('hidden');
+    showResults();
+  } else {
+    document.getElementById('results-screen').classList.add('hidden');
+    document.getElementById('quiz-screen').classList.remove('hidden');
+    document.getElementById('quiz-nav-settings').classList.remove('hidden');
+    toggleSidebar();
+    renderGrid();
+    loadQuestion(currentIdx);
+    startTimer();
+  }
+
+  savedQuizState = null;
+  document.getElementById('back-to-quiz-btn').style.display = 'none';
 }
 // ══ NEW FEATURES ══════════════════════════════════════════
 function toggleLabValues() {
@@ -3021,6 +3082,26 @@ function onLibraryFilterChange(level) {
     updateLibraryClassOptions();
   }
   renderLibrary();
+  saveLibraryFilters();
+}
+
+function saveLibraryFilters() {
+  const filters = {
+    block: document.getElementById('lib-block-filter')?.value || 'all',
+    exam:  document.getElementById('lib-exam-filter')?.value || 'all',
+    week:  document.getElementById('lib-week-filter')?.value || 'all',
+    class: document.getElementById('lib-class-filter')?.value || 'all'
+  };
+  localStorage.setItem('medstep_lib_filters', JSON.stringify(filters));
+}
+
+function restoreLibraryFilters() {
+  const raw = localStorage.getItem('medstep_lib_filters');
+  if (!raw) return;
+  try {
+    const f = JSON.parse(raw);
+    setLibraryFilters(f.block || 'all', f.exam || 'all', f.week || 'all', f.class || 'all');
+  } catch(e) {}
 }
 
 function updateLibraryExamOptions() {
@@ -4092,11 +4173,9 @@ document.getElementById('add-quiz-modal').addEventListener('click', function(e) 
 });
 
 // Load library on page load (silent — just primes the cache)
-window.addEventListener('load', () => {
-  refreshLibrary();
-  updatePromptSummary(); // set initial button label
-  updateLibraryExamOptions();
-  updateLibraryWeekOptions();
-  updateLibraryClassOptions();
+window.addEventListener('load', async () => {
+  await refreshLibrary();
+  restoreLibraryFilters();
+  updatePromptSummary();
 });
 </script>
