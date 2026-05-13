@@ -523,6 +523,11 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   box-shadow: 4px 0 30px rgba(0,0,0,.4);
 }
 #library-sidebar.open { transform: translateX(0); }
+#library-overlay {
+  position: fixed; inset: 0; z-index: 899; background: rgba(0,0,0,.35);
+  backdrop-filter: blur(2px); display: none; cursor: pointer;
+}
+#library-overlay.open { display: block; }
 #library-toggle {
   background: var(--primary); color: #fff; border: none;
   border-radius: 50px; padding: 11px 18px; font-family: var(--font-display);
@@ -927,7 +932,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 </div>
 
 <!-- ══ QUIZ LIBRARY SIDEBAR ═══════════════════════════════ -->
-
+<div id="library-overlay" onclick="toggleLibrary()"></div>
 <div id="library-sidebar">
   <div class="lib-header">
     <button class="lib-title" onclick="toggleLibrary()">📚 Quiz Library</button>
@@ -3225,6 +3230,7 @@ function renderBlockQuickView(entries) {
 function toggleLibrary() {
   libraryOpen = !libraryOpen;
   document.getElementById('library-sidebar').classList.toggle('open', libraryOpen);
+  document.getElementById('library-overlay').classList.toggle('open', libraryOpen);
   document.getElementById('library-toggle').style.display = libraryOpen ? 'none' : '';
   if (libraryOpen && libraryManifest.length === 0) refreshLibrary();
 }
