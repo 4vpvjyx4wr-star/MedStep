@@ -37,7 +37,7 @@
 body{
   font-family:var(--font-display);
   background-color:var(--bg);color:var(--text);
-  margin:0;height:100vh;overflow:hidden;
+  margin:0;min-height:100vh;overflow-x:hidden;overflow-y:auto;
   display:flex;flex-direction:column;
   transition:background .4s,color .4s;
   position:relative;
@@ -50,25 +50,34 @@ body{
 
 .app-container{
   position:relative;z-index:1;
-  height:100%;width:100%;max-width:1620px;
+  min-height:100%;width:100%;max-width:1620px;
   margin:auto;display:flex;flex-direction:column;
-  overflow:hidden;padding:18px;box-sizing:border-box;
+  padding:62px 18px 18px;box-sizing:border-box;
 }
+
+/* ── Top Bar ──────────────────────────────────────────── */
+.top-bar{
+  position:fixed;top:0;left:0;right:0;height:56px;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 18px;z-index:1001;box-sizing:border-box;
+  background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,transparent 100%);
+  pointer-events:none;
+}
+.top-bar>*{pointer-events:auto}
 
 /* ── Settings ─────────────────────────────────────────── */
 .settings-btn{
-  position:fixed;top:18px;right:18px;font-size:34px;
-  cursor:pointer;z-index:1001;opacity:.65;line-height:1;
+  font-size:34px;cursor:pointer;opacity:.65;line-height:1;
   transition:all .25s cubic-bezier(.175,.885,.32,1.275);
 }
 .settings-btn:hover{opacity:1;transform:scale(1.08)}
 
 .settings-menu{
-  position:fixed;top:75px;right:18px;
+  position:fixed;top:60px;right:18px;
   background:var(--card);border:1px solid var(--border);
   padding:22px;border-radius:18px;z-index:1000;display:none;
   min-width:290px;box-shadow:0 12px 40px rgba(0,0,0,.5);
-  max-height:calc(100vh - 95px);overflow-y:auto;
+  max-height:calc(100vh - 75px);overflow-y:auto;
 }
 .setting-row{
   display:flex;align-items:center;justify-content:space-between;
@@ -107,9 +116,9 @@ input:checked+.slider:before{transform:translateX(20px)}
 
 /* ── Input screen ─────────────────────────────────────── */
 #input-screen{
-  height:100vh;width:100%;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;text-align:center;
-  box-sizing:border-box;padding:24px;overflow-y:auto;
+  width:100%;display:flex;flex-direction:column;
+  align-items:center;text-align:center;
+  box-sizing:border-box;padding:12px 24px 24px;
 }
 .hero-title{font-size:clamp(2rem,5vw,3.2rem);font-weight:900;letter-spacing:-2px;margin:10px 0 6px;line-height:1}
 .hero-sub{font-family:var(--font-mono);font-size:.75rem;color:var(--primary);letter-spacing:3px;text-transform:uppercase;opacity:.8;margin-bottom:28px}
@@ -140,15 +149,18 @@ textarea:focus{outline:none;border-color:var(--primary)}
 .btn-row .btn{flex:1}
 
 /* ── Quiz layout ─────────────────────────────────────── */
-.quiz-layout{display:grid;grid-template-columns:270px 1fr;gap:22px;height:100%;overflow:hidden}
+.quiz-layout{display:grid;grid-template-columns:270px 1fr;gap:22px;height:calc(100vh - 80px);overflow:hidden}
 .no-sidebar{grid-template-columns:1fr!important}
 .no-sidebar .sidebar{display:none!important}
 
-.sidebar{background:var(--card);border-radius:18px;padding:18px;border:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden}
-.sidebar-header{font-family:var(--font-mono);font-size:.6rem;letter-spacing:3px;opacity:.35;text-transform:uppercase;text-align:center;margin-bottom:14px;flex-shrink:0}
-.nav-grid-wrap{overflow-y:auto;flex:1}
+.sidebar{position:relative;border-radius:18px;padding:18px;display:flex;flex-direction:column;overflow:hidden}
+.sidebar-header{font-family:var(--font-mono);font-size:.6rem;letter-spacing:3px;opacity:.35;text-transform:uppercase;text-align:center;margin-bottom:14px;flex-shrink:0;position:relative;z-index:1}
+.nav-grid-wrap{overflow-y:auto;flex:1;position:relative;z-index:1;padding:4px}
 
-.main-content{background:var(--card);border-radius:18px;padding:28px;border:1px solid var(--border);display:flex;flex-direction:column;height:100%;overflow:hidden;position:relative}
+.main-content{position:relative;border-radius:18px;padding:28px;display:flex;flex-direction:column;height:100%;overflow:hidden}
+.main-content>*{position:relative;z-index:1}
+
+.sidebar::before,.main-content::before{content:'';position:absolute;inset:0;background:var(--card);border:1px solid var(--border);border-radius:18px;opacity:var(--panel-opacity,1);z-index:0;pointer-events:none}
 
 .quiz-header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border);padding-bottom:14px;margin-bottom:18px;flex-shrink:0;gap:8px}
 .q-counter{font-family:var(--font-mono);font-weight:700;font-size:.8rem;opacity:.7;white-space:nowrap}
@@ -426,10 +438,9 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 }
 #library-sidebar.open { transform: translateX(0); }
 #library-toggle {
-  position: fixed; left: 18px; top: 18px;
   background: var(--primary); color: #fff; border: none;
   border-radius: 50px; padding: 11px 18px; font-family: var(--font-display);
-  font-weight: 700; font-size: .82rem; cursor: pointer; z-index: 901;
+  font-weight: 700; font-size: .82rem; cursor: pointer;
   display: flex; align-items: center; gap: 8px;
   box-shadow: 0 4px 18px rgba(0,0,0,.35); transition: .2s;
 }
@@ -508,9 +519,14 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 }
 .lib-bulk-btn:hover { border-color: var(--primary); }
 .lib-title {
-  font-family: var(--font-mono); font-size: .6rem; letter-spacing: 3px;
-  text-transform: uppercase; opacity: .5;
+  background: var(--primary); color: #fff; border: none;
+  border-radius: 50px; padding: 9px 16px; font-family: var(--font-display);
+  font-weight: 700; font-size: .82rem; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 8px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.35); transition: .2s;
+  letter-spacing: 0; text-transform: none; opacity: 1;
 }
+.lib-title:hover { filter: brightness(1.12); }
 .lib-close {
   cursor: pointer; opacity: .4; font-size: 1.1rem; transition: .15s; line-height: 1;
 }
@@ -700,12 +716,17 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 <div id="theme-decor"></div>
 <div class="toast" id="toast"></div>
 
+<!-- ══ TOP BAR ════════════════════════════════════════════ -->
+<div class="top-bar">
+  <button id="library-toggle" onclick="toggleLibrary()">📚 Quiz Library</button>
+  <div class="settings-btn" id="settings-trigger" title="Settings Menu">☰</div>
+</div>
+
 <!-- ══ QUIZ LIBRARY SIDEBAR ═══════════════════════════════ -->
-<button id="library-toggle" onclick="toggleLibrary()">📚 Quiz Library</button>
 
 <div id="library-sidebar">
   <div class="lib-header">
-    <span class="lib-title">📚 Quiz Library</span>
+    <span class="lib-title" onclick="toggleLibrary()">📚 Quiz Library</span>
     <span class="lib-close" onclick="toggleLibrary()">✕</span>
   </div>
   <div class="lib-toolbar">
@@ -838,7 +859,6 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 </div>
 
 <!-- ══ SETTINGS ══════════════════════════════════════════ -->
-<div class="settings-btn" id="settings-trigger" title="Settings Menu">☰</div>
 <div class="settings-menu" id="settings-menu">
 
   <div class="setting-row">
@@ -870,6 +890,14 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   <button class="btn btn-secondary" style="width:100%;margin-bottom:4px;font-size:.8rem;padding:9px" onclick="randomTheme()">
     🎲 Random Theme
   </button>
+
+  <div class="setting-row" style="flex-direction:column;align-items:stretch;gap:6px;margin-top:10px">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <span>🪟 Panel Opacity</span>
+      <span id="opacity-val" style="font-family:var(--font-mono);font-size:.75rem;opacity:.6">100%</span>
+    </div>
+    <input type="range" id="panel-opacity-slider" min="10" max="100" value="100" oninput="setPanelOpacity(this.value)" style="width:100%;accent-color:var(--primary);cursor:pointer">
+  </div>
 
   <hr class="settings-divider">
 
@@ -1074,6 +1102,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <div style="margin-top:16px;font-size:.75rem;opacity:.35;font-family:var(--font-mono)">
       <a href="https://docs.google.com/document/d/1ptfG3U9--wZwrpz7UjNbRa_ov6feldPuKK2M609Jy0E/edit?usp=sharing" target="_blank" style="color:inherit">📄 Latest version &amp; pre-made quizzes</a>
     </div>
+
   </div>
 
   <!-- QUIZ SCREEN -->
@@ -1277,10 +1306,22 @@ document.addEventListener('DOMContentLoaded',()=>{
   const menu=document.getElementById('settings-menu');
   btn.addEventListener('click',e=>{e.stopPropagation();menu.style.display=menu.style.display==='block'?'none':'block';});
   document.addEventListener('click',e=>{if(!menu.contains(e.target))menu.style.display='none';});
+
+  const savedOpacity = localStorage.getItem('medstep_panel_opacity');
+  if(savedOpacity) setPanelOpacity(savedOpacity);
 });
 
 function toggleSidebar(){
   document.getElementById('quiz-screen').classList.toggle('no-sidebar',!document.getElementById('grid-toggle').checked);
+}
+
+// ══ PANEL OPACITY ════════════════════════════════════════
+function setPanelOpacity(val){
+  const v = parseInt(val,10);
+  document.documentElement.style.setProperty('--panel-opacity', v/100);
+  document.getElementById('opacity-val').textContent = v + '%';
+  document.getElementById('panel-opacity-slider').value = v;
+  localStorage.setItem('medstep_panel_opacity', v);
 }
 
 // ══ THEME ENGINE ══════════════════════════════════════════
@@ -2963,6 +3004,7 @@ function renderBlockQuickView(entries) {
 function toggleLibrary() {
   libraryOpen = !libraryOpen;
   document.getElementById('library-sidebar').classList.toggle('open', libraryOpen);
+  document.getElementById('library-toggle').style.visibility = libraryOpen ? 'hidden' : '';
   if (libraryOpen && libraryManifest.length === 0) refreshLibrary();
 }
 
