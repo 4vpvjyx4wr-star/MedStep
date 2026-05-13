@@ -124,13 +124,64 @@ input:checked+.slider:before{transform:translateX(20px)}
 .hero-title{font-size:clamp(2rem,5vw,3.2rem);font-weight:900;letter-spacing:-2px;margin:10px 0 6px;line-height:1}
 .hero-sub{font-family:var(--font-mono);font-size:.75rem;color:var(--primary);letter-spacing:3px;text-transform:uppercase;opacity:.8;margin-bottom:28px}
 
+/* ── Two-panel instructions + controls layout ── */
+.landing-panels{
+  display:flex;gap:16px;width:100%;max-width:960px;align-items:stretch;
+}
 .instruction-card{
   background:rgba(255,255,255,.03);border:1px solid var(--border);
-  padding:22px 26px;border-radius:16px;text-align:left;
-  max-width:740px;margin-bottom:22px;font-size:.9rem;line-height:1.65;
+  padding:24px 28px 20px;border-radius:16px;text-align:left;
+  font-size:.9rem;line-height:1.65;flex:1;min-width:0;
 }
 .instruction-card a{color:var(--primary);text-decoration:underline;font-weight:700}
 .instruction-card strong{color:var(--primary)}
+.panel-header{
+  font-family:var(--font-mono);font-size:1.365rem;letter-spacing:3px;
+  text-transform:uppercase;color:var(--primary);opacity:.85;font-weight:800;
+  margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:10px;
+}
+.panel-header-lg{font-size:1.95rem}
+.panel-header-icon{font-size:1rem;letter-spacing:0}
+.step-item{
+  display:flex;align-items:flex-start;gap:14px;
+  margin-bottom:14px;padding:12px 14px;
+  background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.04);
+  border-radius:12px;transition:background .2s,border-color .2s;
+}
+.step-item:hover{background:rgba(255,255,255,.055);border-color:var(--border)}
+.step-item:last-child{margin-bottom:0}
+.step-num{
+  flex-shrink:0;width:30px;height:30px;border-radius:50%;
+  background:var(--primary);color:#fff;font-weight:800;font-size:.8rem;
+  display:flex;align-items:center;justify-content:center;
+  margin-top:1px;box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+.step-text{margin:0;font-size:1rem;line-height:1.6;font-weight:700}
+
+.controls-card{
+  background:rgba(255,255,255,.03);border:1px solid var(--border);
+  padding:24px 18px 20px;border-radius:16px;text-align:left;
+  width:220px;flex-shrink:0;
+}
+.controls-card .kbd-row{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:8px;font-size:.78rem;
+}
+.controls-card .kbd-row:last-child{margin-bottom:0}
+.controls-card .kbd-key{
+  background:var(--border);border:1px solid rgba(255,255,255,.12);
+  padding:3px 8px;border-radius:6px;font-family:var(--font-mono);
+  font-size:.7rem;font-weight:700;box-shadow:0 2px 0 rgba(0,0,0,.3);
+  white-space:nowrap;
+}
+.controls-card .kbd-desc{opacity:.6;font-size:.82rem;font-weight:700}
+
+@media(max-width:720px){
+  .landing-panels{flex-direction:column}
+  .controls-card{width:100%}
+}
+
 .kbd-pill{background:var(--border);padding:2px 7px;border-radius:5px;font-family:var(--font-mono);font-size:.72rem}
 
 textarea{
@@ -942,25 +993,42 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <p class="hero-sub">Precision-Built for Gunners</p>
 
     <!-- ── MAIN PANEL ── -->
-    <div id="panel-manual" style="width:100%;max-width:740px">
-      <div class="instruction-card" style="border-radius:16px;margin-bottom:16px">
-        <p style="margin-top:0"><strong>Step 1:</strong> Click the settings gear on the left of the copy prompt button to adjust your prompt. Then click <em>Copy Master Prompt</em> to copy it to your clipboard.</p>
-        <p><strong>Step 2:</strong> Click the <a href="https://copilot.microsoft.com" target="_blank" style="color:#0078d4;font-weight:700;text-decoration:none">Microsoft ↗</a> button to open Copilot. Paste the prompt alongside your lecture slides.</p>
-        <p><strong>Step 3:</strong> <strong>MAKE SURE</strong> that you click <strong>"Smart"</strong> on the bottom next to the plus button in Copilot, and change it to <strong>"Think Deeper."</strong> If you do not do this, the quiz will <strong>NOT</strong> generate correctly.</p>
-        <p><strong>Step 4:</strong> Once Copilot generates the quiz (the format it uses is called JSON), copy all of that text and paste it into the box below this one.</p>
-        <p style="margin-bottom:0">
-          <strong>Controls:</strong>
-          <span class="kbd-pill">←</span><span class="kbd-pill">→</span> Navigate &nbsp;|&nbsp;
-          <span class="kbd-pill">1–5</span> Answer &nbsp;|&nbsp;
-          <span class="kbd-pill">S</span> Scramble &nbsp;|&nbsp;
-          <span class="kbd-pill">R</span> Undo &nbsp;|&nbsp;
-          <span class="kbd-pill">P</span> Pause &nbsp;|&nbsp;
-          <span class="kbd-pill">Space</span> Next &nbsp;|&nbsp;
-          <span class="kbd-pill">H</span> Highlighter &nbsp;|&nbsp;
-          <span class="kbd-pill">D</span> Clear Highlighting &nbsp;|&nbsp;
-          <span class="kbd-pill">C</span> Calculator &nbsp;|&nbsp;
-          <span class="kbd-pill">F</span> Flag Question
-        </p>
+    <div id="panel-manual" style="width:100%;max-width:960px">
+      <div class="landing-panels" style="margin-bottom:16px">
+        <!-- Instructions Panel -->
+        <div class="instruction-card">
+          <div class="panel-header panel-header-lg"><span class="panel-header-icon">📋</span> Instructions</div>
+          <div class="step-item">
+            <span class="step-num">1</span>
+            <p class="step-text">Click the settings gear on the left of the copy prompt button to adjust your prompt. Then click <em>Copy Master Prompt</em> to copy it to your clipboard.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-num">2</span>
+            <p class="step-text">Click the <a href="https://copilot.microsoft.com" target="_blank" style="color:#0078d4;font-weight:700;text-decoration:none">Microsoft ↗</a> button to open Copilot. Paste the prompt alongside your lecture slides.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-num">3</span>
+            <p class="step-text"><strong>MAKE SURE</strong> that you click <strong>"Smart"</strong> on the bottom next to the plus button in Copilot, and change it to <strong>"Think Deeper."</strong> If you do not do this, the quiz will <strong>NOT</strong> generate correctly.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-num">4</span>
+            <p class="step-text">Once Copilot generates the quiz (the format it uses is called JSON), copy all of that text and paste it into the box below this one.</p>
+          </div>
+        </div>
+        <!-- Controls Panel -->
+        <div class="controls-card">
+          <div class="panel-header"><span class="panel-header-icon">⌨️</span> Controls</div>
+          <div class="kbd-row"><span class="kbd-key">← →</span><span class="kbd-desc">Navigate</span></div>
+          <div class="kbd-row"><span class="kbd-key">1 – 5</span><span class="kbd-desc">Select Answer</span></div>
+          <div class="kbd-row"><span class="kbd-key">Space</span><span class="kbd-desc">Next Question</span></div>
+          <div class="kbd-row"><span class="kbd-key">R</span><span class="kbd-desc">Undo Answer</span></div>
+          <div class="kbd-row"><span class="kbd-key">S</span><span class="kbd-desc">Scramble All</span></div>
+          <div class="kbd-row"><span class="kbd-key">P</span><span class="kbd-desc">Pause / Resume</span></div>
+          <div class="kbd-row"><span class="kbd-key">H</span><span class="kbd-desc">Highlighter</span></div>
+          <div class="kbd-row"><span class="kbd-key">D</span><span class="kbd-desc">Clear Highlighting</span></div>
+          <div class="kbd-row"><span class="kbd-key">C</span><span class="kbd-desc">Calculator</span></div>
+          <div class="kbd-row"><span class="kbd-key">F</span><span class="kbd-desc">Flag Question</span></div>
+        </div>
       </div>
       <div class="btn-row" style="align-items:center">
 
@@ -1242,6 +1310,9 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   const savedOpacity = localStorage.getItem('medstep_panel_opacity');
   if(savedOpacity) setPanelOpacity(savedOpacity);
+
+  const savedTheme = localStorage.getItem('medstep_theme');
+  if(savedTheme) changeTheme(savedTheme);
 });
 
 function toggleSidebar(){
@@ -1267,6 +1338,7 @@ function changeTheme(themeVal){
     document.getElementById('theme-select').value=themeVal;
   }
   document.body.className=t;
+  localStorage.setItem('medstep_theme', t);
   stopAllAnims();
   clearDecor();
 
@@ -2159,7 +2231,7 @@ function startTimer(){
 }
 function togglePause(){isPaused=!isPaused;syncPauseUI();}
 function syncPauseUI(){
-  document.getElementById('timer-eye').innerText=isPaused?'🙈':'👁️';
+  document.getElementById('timer-eye').innerText=isPaused?'▶️':'⏸️';
   document.getElementById('timer-display').classList.toggle('paused',isPaused);
   document.getElementById('pause-overlay').classList.toggle('visible',isPaused);
 }
