@@ -147,7 +147,6 @@ textarea:focus{outline:none;border-color:var(--primary)}
 .btn-secondary:hover{filter:brightness(1.1)}
 
 .btn-row{display:flex;gap:10px;width:100%;max-width:740px;margin-bottom:12px}
-.btn-row .btn{flex:1}
 
 /* ── Quiz layout ─────────────────────────────────────── */
 .quiz-layout{display:grid;grid-template-columns:270px 1fr;gap:22px;height:calc(100vh - 80px);overflow:hidden}
@@ -626,7 +625,15 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 .prompt-settings-toggle:hover { filter: brightness(1.15); }
 .prompt-settings-toggle .arrow { font-size: .6rem; transition: transform .2s; display: inline-block; }
 .prompt-settings-toggle.open .arrow { transform: rotate(180deg); }
-#copy-prompt-btn { border-radius: 0 50px 50px 0 !important; }
+#copy-prompt-btn { border-radius: 0 !important; }
+.copilot-open-split-btn {
+  background: #0078d4; color: #fff; border: none;
+  border-radius: 0 50px 50px 0; padding: 0 16px;
+  cursor: pointer; font-size: .85rem; display: flex; align-items: center;
+  gap: 5px; border-left: 1px solid rgba(255,255,255,.2);
+  transition: filter .15s; flex-shrink: 0; font-weight: 700;
+}
+.copilot-open-split-btn:hover { filter: brightness(1.15); }
 .prompt-settings-panel {
   position: absolute; bottom: calc(100% + 10px); left: 0;
   background: var(--card); border: 1px solid var(--border);
@@ -934,97 +941,11 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <h1 class="hero-title">MedStep Quiz Generator</h1>
     <p class="hero-sub">Precision-Built for Gunners</p>
 
-    <!-- ── TAB SWITCHER ── -->
-    <div style="display:flex;gap:0;max-width:740px;width:100%;margin-bottom:0;border-radius:14px 14px 0 0;overflow:hidden;border:1px solid var(--border);border-bottom:none">
-      <button id="tab-auto" onclick="switchTab('auto')"
-        style="flex:1;padding:13px;font-family:var(--font-display);font-weight:700;font-size:.85rem;border:none;cursor:pointer;transition:.2s;background:var(--border);color:var(--text);opacity:.7">
-        ⚡ Auto via Copilot
-      </button>
-      <button id="tab-manual" onclick="switchTab('manual')"
-        style="flex:1;padding:13px;font-family:var(--font-display);font-weight:700;font-size:.85rem;border:none;cursor:pointer;transition:.2s;background:var(--primary);color:#fff">
-        📋 Manual Method
-      </button>
-    </div>
-
-    <!-- ── AUTO TAB ── -->
-    <div id="panel-auto" class="copilot-card" style="display:none;border-radius:0 0 16px 16px;border-top:none;margin-bottom:0">
-
-      <!-- Step 1: Upload & Launch -->
-      <div id="auto-step-1">
-        <p style="font-size:.85rem;opacity:.7;margin:0 0 14px">
-          Upload your lecture, then click <strong>Open in Copilot</strong>.
-          The full prompt will be copied to your clipboard — paste it into Copilot,
-          then come back and paste the JSON response below to build your quiz.
-        </p>
-
-        <div class="upload-drop-zone" id="drop-zone"
-             onclick="document.getElementById('lecture-file').click()"
-             ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
-          <input type="file" id="lecture-file" accept=".pdf,.pptx,.txt,.docx" onchange="handleFileSelect(event)">
-          <div style="font-size:1.8rem;margin-bottom:6px">📎</div>
-          <div style="font-weight:700;margin-bottom:4px">Drop your lecture file here</div>
-          <div style="font-size:.75rem;opacity:.5">PDF, PPTX, DOCX, or TXT — or click to browse</div>
-          <div id="file-pill-wrap"></div>
-        </div>
-
-        <div class="qcount-row">
-          <label>Questions:</label>
-          <input type="number" class="qcount-input" id="q-count" value="25" min="5" max="50">
-          <span style="opacity:.45;font-size:.75rem;font-family:var(--font-mono)">(5–50)</span>
-        </div>
-
-        <div class="status-bar" id="status-bar">
-          <div class="status-dot"></div>
-          <span id="status-text">Reading file…</span>
-        </div>
-
-        <button class="copilot-generate-btn" id="copilot-open-btn" onclick="openInCopilot()" disabled>
-          <svg width="18" height="18" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-            <rect x="1" y="1" width="9" height="9" fill="#f25022"/>
-            <rect x="11" y="1" width="9" height="9" fill="#7fba00"/>
-            <rect x="1" y="11" width="9" height="9" fill="#00a4ef"/>
-            <rect x="11" y="11" width="9" height="9" fill="#ffb900"/>
-          </svg>
-          Copy Prompt &amp; Open Copilot ↗
-        </button>
-      </div>
-
-      <!-- Step 2: Paste Copilot's JSON response -->
-      <div id="auto-step-2" style="display:none">
-        <div style="background:rgba(46,204,113,.1);border:1px solid rgba(46,204,113,.3);border-radius:12px;padding:14px 16px;margin-bottom:16px;font-size:.84rem;line-height:1.65">
-          ✅ <strong>Prompt copied &amp; Copilot opened!</strong><br>
-          <span style="opacity:.78">In the Copilot tab, press
-            <kbd style="background:var(--border);padding:2px 7px;border-radius:5px;font-family:var(--font-mono);font-size:.72rem">Ctrl+V</kbd>
-            (or <kbd style="background:var(--border);padding:2px 7px;border-radius:5px;font-family:var(--font-mono);font-size:.72rem">⌘V</kbd>)
-            to paste the prompt. Once Copilot finishes, copy its entire JSON response and paste it below.</span>
-        </div>
-
-        <textarea id="copilot-response-area"
-          style="background:var(--card);color:var(--text);border:1px solid var(--border);width:100%;height:115px;padding:14px;border-radius:14px;font-family:var(--font-mono);font-size:.8rem;resize:none;margin-bottom:12px;transition:border-color .2s;display:block"
-          placeholder='Paste Copilot'"'"'s JSON response here (starts with [)…'
-          oninput="this.style.borderColor=this.value.trim().startsWith('[')&&this.value.trim().endsWith(']')?'var(--success)':'var(--border)'">
-        </textarea>
-
-        <div style="display:flex;gap:10px">
-          <button class="btn btn-secondary" style="flex:0 0 auto;padding:14px 18px" onclick="resetAutoFlow()">← Back</button>
-          <button class="btn btn-primary"
-            style="flex:1;padding:14px;border-radius:50px;font-size:.95rem"
-            onclick="generateFromCopilotResponse()">
-            Generate Quiz →
-          </button>
-        </div>
-        <p style="font-size:.71rem;opacity:.32;font-family:var(--font-mono);margin:10px 0 0;text-align:center">
-          Tip: Switch Copilot to <strong>Think Deeper</strong> mode for best question quality.
-        </p>
-      </div>
-
-    </div>
-
-    <!-- ── MANUAL TAB ── -->
+    <!-- ── MAIN PANEL ── -->
     <div id="panel-manual" style="width:100%;max-width:740px">
-      <div class="instruction-card" style="border-radius:0 0 16px 16px;border-top:none;margin-bottom:16px">
-        <p style="margin-top:0"><strong>Step 1:</strong> Click <em>Copy Master Prompt</em>, then open
-          <a href="https://copilot.microsoft.com" target="_blank">Copilot</a> and paste it alongside your lecture slides.</p>
+      <div class="instruction-card" style="border-radius:16px;margin-bottom:16px">
+        <p style="margin-top:0"><strong>Step 1:</strong> Click <em>Copy Master Prompt</em>, then click the
+          <strong style="color:#0078d4">Microsoft ↗</strong> button to open Copilot. Paste the prompt alongside your lecture slides.</p>
         <p><strong>Step 2:</strong> Switch Copilot to <strong>"Think Deeper"</strong> mode for best quality.</p>
         <p><strong>Step 3:</strong> Make sure Copilot is in <strong>"Think Deep"</strong> mode — generation will not work correctly otherwise. Copy the JSON Copilot returns, paste it below, and click <em>Generate Quiz</em>.</p>
         <p style="margin-bottom:0">
@@ -1042,8 +963,8 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
       </div>
       <div class="btn-row" style="align-items:center">
 
-        <!-- Split button: settings toggle + copy -->
-        <div class="prompt-btn-wrap" id="prompt-btn-wrap">
+        <!-- Split button: settings toggle + copy + open copilot -->
+        <div class="prompt-btn-wrap" id="prompt-btn-wrap" style="flex:1">
 
           <!-- Settings panel (opens upward) -->
           <div class="prompt-settings-panel" id="prompt-settings-panel">
@@ -1089,11 +1010,22 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
             ⚙ <span class="arrow">▼</span>
           </button>
 
-          <!-- Right: copy button -->
-          <button class="btn btn-primary" id="copy-prompt-btn" onclick="copyMasterPrompt()">📋 Copy Master Prompt</button>
+          <!-- Middle: copy button -->
+          <button class="btn btn-primary" id="copy-prompt-btn" onclick="copyMasterPrompt()" style="flex:1;border-radius:0 !important">📋 Copy Master Prompt</button>
+
+          <!-- Right: open Copilot popup -->
+          <button class="copilot-open-split-btn" onclick="openCopilotPopup()" title="Open Copilot">
+            <svg width="16" height="16" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="9" height="9" fill="#f25022"/>
+              <rect x="11" y="1" width="9" height="9" fill="#7fba00"/>
+              <rect x="1" y="11" width="9" height="9" fill="#00a4ef"/>
+              <rect x="11" y="11" width="9" height="9" fill="#ffb900"/>
+            </svg>
+            ↗
+          </button>
         </div>
 
-        <button class="btn btn-secondary" onclick="loadDemo()">▶ Load Demo</button>
+        <button class="btn btn-secondary" style="flex:none;padding:10px 14px;font-size:.78rem" onclick="loadDemo()">▶ Load Demo</button>
       </div>
       <textarea id="mega-input" placeholder="Paste Copilot JSON output here…"></textarea>
       <button class="btn btn-primary" style="width:100%;padding:15px;border-radius:50px;font-size:1rem" onclick="initQuiz()">Generate Quiz →</button>
@@ -2515,192 +2447,25 @@ function toggleHideChoice(event, optIdx) {
   q.options[optIdx]._hidden = !q.options[optIdx]._hidden;
   loadQuestion(currentIdx);
 }
-// ── Tab Switcher ───────────────────────────────────────
-function switchTab(tab) {
-  const isAuto = tab === 'auto';
-  document.getElementById('panel-auto').style.display   = isAuto ? 'block' : 'none';
-  document.getElementById('panel-manual').style.display = isAuto ? 'none'  : 'block';
-  document.getElementById('tab-auto').style.background   = isAuto ? 'var(--primary)' : 'var(--border)';
-  document.getElementById('tab-auto').style.opacity      = isAuto ? '1' : '0.7';
-  document.getElementById('tab-manual').style.background = isAuto ? 'var(--border)' : 'var(--primary)';
-  document.getElementById('tab-manual').style.opacity    = isAuto ? '0.7' : '1';
-  document.getElementById('tab-auto').style.color        = '#fff';
-  document.getElementById('tab-manual').style.color      = '#fff';
+// ══ Open Copilot Popup ══════════════════════════════════
+function openCopilotPopup() {
+  const popW = 540, popH = 720;
+  const left = window.screenX + window.outerWidth - 60;
+  const top  = window.screenY + 80;
+  window.open(
+    'https://copilot.microsoft.com',
+    'copilot-popup',
+    `width=${popW},height=${popH},left=${left},top=${top},resizable=yes,scrollbars=yes`
+  );
+  showToast('🪟 Copilot opened — paste your prompt there');
 }
-
-// ══ AUTO TAB — Clipboard Bridge ══════════════════════════
-
-function openInCopilot() {
-  if (!selectedFileText) { showToast('❌ Please upload a lecture file first'); return; }
-
-  const qCount  = parseInt(document.getElementById('q-count').value) || 25;
-  const prompt  = buildCopilotPrompt(qCount);
-
-  // Copy full prompt to clipboard
-  const doCopy = () => {
-    if (navigator.clipboard?.writeText) {
-      navigator.clipboard.writeText(prompt)
-        .then(()  => showToast('📋 Prompt copied!'))
-        .catch(()  => fallbackCopy(prompt));
-    } else {
-      fallbackCopy(prompt);
-    }
-  };
-  doCopy();
-
-  // Open Copilot in a new tab
-  window.open('https://copilot.microsoft.com', '_blank');
-
-  // Advance UI to step 2
-  document.getElementById('auto-step-1').style.display = 'none';
-  document.getElementById('auto-step-2').style.display = 'block';
-}
-
-function fallbackCopy(text) {
-  const ta = document.createElement('textarea');
-  ta.value = text;
-  ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0;pointer-events:none';
-  document.body.appendChild(ta);
-  ta.select();
-  try   { document.execCommand('copy'); showToast('📋 Prompt copied!'); }
-  catch { showToast('⚠️ Auto-copy failed — use the Manual tab to copy the prompt manually.'); }
-  document.body.removeChild(ta);
-}
-
-function generateFromCopilotResponse() {
-  const raw = (document.getElementById('copilot-response-area')?.value || '').trim();
-  if (!raw) { showToast('❌ Paste Copilot\'s response first'); return; }
-
-  const json = extractJSON(raw);
-  if (!json || !Array.isArray(json) || json.length === 0) {
-    showToast('❌ No valid JSON found — make sure you copied the full response from Copilot');
-    return;
-  }
-
-  resetAutoFlow();
-  buildQuiz(json);
-  showToast('🎉 Quiz generated!');
-}
-
-function resetAutoFlow() {
-  document.getElementById('auto-step-1').style.display = 'block';
-  document.getElementById('auto-step-2').style.display = 'none';
-  const area = document.getElementById('copilot-response-area');
-  if (area) { area.value = ''; area.style.borderColor = ''; }
-}
-
-// ── State placeholders (kept for legacy compatibility) ──
-let msAccount = null;
-let accessToken = null;
-let selectedFileText = null;
-let selectedFileName = null;
-
-// ── File Handling ──────────────────────────────────────
-function handleDragOver(e) {
-  e.preventDefault();
-  document.getElementById('drop-zone').classList.add('dragover');
-}
-function handleDragLeave(e) {
-  document.getElementById('drop-zone').classList.remove('dragover');
-}
-function handleDrop(e) {
-  e.preventDefault();
-  document.getElementById('drop-zone').classList.remove('dragover');
-  const file = e.dataTransfer.files[0];
-  if (file) processFile(file);
-}
-function handleFileSelect(e) {
-  const file = e.target.files[0];
-  if (file) processFile(file);
-}
-
-async function processFile(file) {
-  const allowed = ['application/pdf','application/vnd.openxmlformats-officedocument.presentationml.presentation',
-                   'application/vnd.openxmlformats-officedocument.wordprocessingml.document','text/plain'];
-  const ext = file.name.split('.').pop().toLowerCase();
-  if (!['pdf','pptx','docx','txt'].includes(ext)) {
-    showToast('❌ Unsupported file type. Use PDF, PPTX, DOCX, or TXT.');
-    return;
-  }
-
-  selectedFileName = file.name;
-  setStatus('Reading file…');
-
-  try {
-    if (ext === 'txt') {
-      selectedFileText = await file.text();
-    } else {
-      // For binary files, we'll upload to OneDrive then extract via Graph
-      selectedFileText = await readFileAsBase64(file);
-      selectedFileText = `[FILE:${ext}:${file.name}:${selectedFileText}]`;
-    }
-    showFilePill(file.name);
-    document.getElementById('copilot-open-btn').disabled = false;
-    setStatus('');
-    showToast('📎 ' + file.name + ' ready');
-  } catch(e) {
-    showToast('❌ Could not read file');
-    setStatus('');
-  }
-}
-
-function readFileAsBase64(file) {
-  return new Promise((res, rej) => {
-    const r = new FileReader();
-    r.onload = () => res(r.result.split(',')[1]);
-    r.onerror = rej;
-    r.readAsDataURL(file);
-  });
-}
-
-function showFilePill(name) {
-  document.getElementById('file-pill-wrap').innerHTML = `
-    <div class="file-pill">
-      📄 ${name}
-      <span class="file-pill-remove" onclick="removeFile()">✕</span>
-    </div>`;
-}
-
-function removeFile() {
-  selectedFileText = null;
-  selectedFileName = null;
-  document.getElementById('file-pill-wrap').innerHTML = '';
-  document.getElementById('lecture-file').value = '';
-  document.getElementById('copilot-open-btn').disabled = true;
-}
-
-function setStatus(msg) {
-  const bar = document.getElementById('status-bar');
-  const txt = document.getElementById('status-text');
-  if (msg) { bar.classList.add('visible'); txt.textContent = msg; }
-  else      { bar.classList.remove('visible'); }
-}
-
-// ── Copilot API Call ───────────────────────────────────
-// (Auto tab now uses clipboard bridge — see openInCopilot above)
 
 function extractJSON(text) {
-  // Strip HTML tags from Graph API message content
   const stripped = text.replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>');
-  // Find JSON array
   const match = stripped.match(/\[[\s\S]*\]/);
   if (!match) return null;
   try { return JSON.parse(match[0]); } catch(e) { return null; }
 }
-
-function buildCopilotPrompt(qCount) {
-  // Build the full prompt including lecture content
-  const lectureSection = selectedFileText
-    ? `\n\n--- LECTURE CONTENT ---\n${selectedFileText.startsWith('[FILE:') ? '[Attached file: ' + selectedFileName + ' — please read the attached content above]' : selectedFileText}\n--- END LECTURE CONTENT ---`
-    : '';
-
-  return MASTER_PROMPT.replace('Now generate 30 questions', `Now generate ${qCount} questions`) + lectureSection;
-}
-
-// Show the redirect URI so user can verify it matches Azure registration
-document.addEventListener('DOMContentLoaded', () => {
-  // Tab starts on Auto by default — panel-manual is hidden via inline style already
-});
 
 // ── Drag & drop on file pill wrap shouldn't bubble ─────
 
@@ -3113,10 +2878,7 @@ async function toggleStageQuiz(entry, btn) {
     updateMegaInputFromStaged();
 
     renderStagingArea();
-    renderLibrary(); // re-render so checkmark appears
-
-    // Switch to the Manual tab so the user can see the textarea filling up
-    switchTab('manual');
+    renderLibrary();
 
     showToast('✅ Added: ' + entry.title + ' (' + json.length + 'Q)');
   } catch(e) {
@@ -3156,7 +2918,6 @@ async function stageByScope(seed, scope) {
   renderStagingArea();
   renderLibrary();
   if (added > 0) {
-    switchTab('manual');
     showToast(`✅ Added ${added} quiz${added !== 1 ? 'zes' : ''} from same ${scope}`);
   } else {
     showToast('ℹ️ All quizzes in that group were already added');
@@ -3181,9 +2942,8 @@ function unstageQuiz(file) {
 function launchStagedQuizzes() {
   if (!stagedQuizzes.length) { showToast('❌ No quizzes staged'); return; }
   updateMegaInputFromStaged();
-  toggleLibrary();           // close sidebar
-  switchTab('manual');       // make sure Manual tab is visible
-  initQuiz();                // read from #mega-input and start quiz
+  toggleLibrary();
+  initQuiz();
 }
 
 // Clear all staged quizzes
