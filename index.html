@@ -1022,10 +1022,10 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
             <div class="ps-section-title">Number of Questions</div>
             <div class="ps-q-pills" id="ps-q-pills">
               <button class="ps-q-pill" onclick="setQPill(10)">10</button>
-              <button class="ps-q-pill active" onclick="setQPill(15)">15</button>
+              <button class="ps-q-pill" onclick="setQPill(15)">15</button>
               <button class="ps-q-pill" onclick="setQPill(20)">20</button>
               <button class="ps-q-pill" onclick="setQPill(25)">25</button>
-              <button class="ps-q-pill" onclick="setQPill(30)">30</button>
+              <button class="ps-q-pill active" onclick="setQPill(30)">30</button>
             </div>
 
             <hr class="ps-divider">
@@ -1053,7 +1053,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
               <div class="ps-checkbox checked" id="ps-chk-third">✓</div>
             </div>
 
-            <div class="ps-summary" id="ps-summary">15 questions · 1st + 2nd + 3rd order</div>
+            <div class="ps-summary" id="ps-summary">30 questions · 1st + 2nd + 3rd order</div>
           </div>
 
           <!-- Left: settings toggle -->
@@ -1200,54 +1200,64 @@ const ALL_THEMES=[
 ];
 
 // ── Master Prompt ──────────────────────────────────────
-const MASTER_PROMPT=`You are a senior USMLE Step 1 item writer and medical education consultant with 15+ years of board exam construction experience. Your task is to generate a high-fidelity 25-question multiple-choice exam block as a valid JSON array, strictly based ONLY on the lecture materials I am providing.
+const MASTER_PROMPT=`Role: You are a Senior USMLE Step 1 Item Writer and Psychometric Editor with 15+ years of experience in board exam construction. Your goal is to generate a high-fidelity, multiple-choice exam block based strictly on the provided lecture materials.
 
 ABSOLUTE RULES — violations are disqualifying:
 
-1. CONTENT SOURCE: Every question, answer, and distractor must be grounded in the provided lecture materials. Do not introduce outside facts. Each question must directly assess a named Learning Objective (LO) from the lecture.
+1. THE CONTENT SOURCE & PEDAGOGY
+a. Material Adherence: Every question, answer, and distractor must be grounded in the provided lecture. Do not introduce outside medical facts.
+b. Learning Objectives (LO): Each question must directly assess a specific, named LO from the materials.
 
-2. STEM BLINDING — CRITICAL: The question stem must NOT contain any unique keywords, phrases, abbreviations, or terminology that appear verbatim in the correct answer. A student reading only the stem should have no linguistic shortcut to the correct choice. Rephrase clinical presentations using synonyms and standard vignette language.
+2. Difficulty Distribution:
 
-3. OPTION LENGTH AND STRUCTURE — CRITICAL, READ CAREFULLY:
-   a. All five options MUST be within ±2 words of each other in total word count. Count every word before writing.
-   b. The correct answer must NEVER be the longest option. If it is, rewrite it to be shorter and pad the distractors.
-   c. Every option must use the SAME grammatical structure (all noun phrases, or all verb phrases, or all complete sentences — never mixed).
-   d. Forbidden in any option: parenthetical clarifications like "X (because Y)", hedging phrases like "likely due to", any phrase that makes one option feel more complete or authoritative than others.
-   e. After writing all five options, perform a word-count audit. If any option exceeds the shortest by more than 2 words, rewrite it.
-   f. ACTIVELY MAKE DISTRACTORS LONG: Pad distractors with medically accurate but clinically irrelevant qualifiers so they are never shorter than the correct answer.
+Add "difficulty_order": "1st/2nd/3rd" to the JSON pertaining to each question.
 
-4. DIFFICULTY DISTRIBUTION — MANDATORY:
-   - 3 first-order items (12%): Single-step direct recall. Still requires full length parity and blinded stems.
-   - 9 second-order items (36%): Apply or connect two lecture concepts. No give-away stems.
-   - 13 third-order items (52%): Multi-step clinical vignettes. Require at least 2 reasoning steps. Use "next best step," "most likely mechanism," or "expected lab finding" format. These must be genuinely difficult — a student who has not studied the lecture should score at or below 25% on these items.
+4/30 questions: First-order (Direct recall).
 
-5. DISTRACTOR QUALITY — ALL FOUR WRONG ANSWERS MUST:
-   a. Be plausible enough that a student with partial knowledge would seriously consider them.
-   b. Represent common misconceptions, adjacent diagnoses, or related-but-wrong pathophysiology directly from the lecture.
-   c. Never be obviously absurd or dismissible without medical knowledge.
-   d. Forbidden: "All of the above," "None of the above," "Both A and B," or any meta-option.
-   e. For every question, make the single most dangerous distractor especially compelling — nearly identical in length and clinical detail to the correct answer, differing only in one subtle but decisive fact from the lecture.
+11/30 questions: Second-order (Connecting two concepts).
 
-6. ANTI-EXPLOIT RULES — MANDATORY AND AUDITED:
-   a. LONGEST-ANSWER EXPLOIT PREVENTION: In at least 6 out of 25 questions, a wrong answer must be the single longest option in that question. Track this count and do not finalize until confirmed.
-   b. ANSWER POSITION BALANCE: Distribute correct answers across positions A, B, C, D, and E. Each letter should be correct approximately 5 times across the 25 questions. No letter may be correct more than 7 times. Randomize positions actively.
-   c. CONFIDENCE TRAP QUESTIONS: At least 4 questions must contain a distractor that sounds more authoritative, more detailed, or more "textbook" than the correct answer — but is wrong in one specific, teachable way.
-   d. NEVER place the correct answer in the same position for more than 2 consecutive questions.
+15/30 questions: Third-order (Clinical vignettes requiring >=2 reasoning steps). A student who has not studied should score <=25% on these. For these questions: NEVER ask "What is X?" directly. Always present a patient scenario or experimental result that requires applying lecture knowledge through at least one intermediate reasoning step. The answer must not be inferable from the stem alone without having studied the material. For 3rd-order vignettes, include several questions that ask for the 'next best step in management' or the 'cellular mechanism of the first-line treatment' for the condition described.
 
-7. SECOND/THIRD-ORDER CONSTRUCTION: Never ask "What is X?" directly. Always present a patient scenario or experimental result that requires applying lecture knowledge through at least one intermediate reasoning step. The answer must not be inferable from the stem alone without having studied the material.
+3. Stem Blinding:
+a. The question stem must NOT contain unique keywords, abbreviations, phrases, or terminology that appear verbatim in the correct answer.
+b. A student reading only the stem should have no linguistic shortcut to the correct choice.
+c. Rephrase clinical presentations using synonyms and standard vignette language with pertinent negatives to describe conditions.
+d. The stem must conclude with a clear, single-sentence lead-in question that specifies the required task (e.g., 'Which of the following is the most likely mechanism?').
+e. When presenting laboratory data, provide specific values followed by reference ranges in brackets (e.g., Blood glucose: 140 mg/dL [70-100 mg/dL]).
 
-8. RATIONALE REQUIRED: Every option must have a rationale that:
-   a. For the correct option: explains the mechanism in 1-2 sentences citing the specific lecture concept.
-   b. For each incorrect option: explains specifically why it is wrong — not just that it is wrong — and what specific finding or fact would have to change for it to be correct instead.
+4. THE OPTION PARITY RULE (CRITICAL)
+a. The +-2 Word Audit: All five options in a single question MUST be within +-2 words of each other in total word count. Count every word before writing. Before finalizing an option, literally count the words one-by-one. If Option A is 10 words, Options B-E must be between 8 and 12 words. Do not guess; perform a literal count.
+b. Longest-Answer Exploit Prevention: The correct answer must RARELY be the longest option (less than 30% of the time). In at least 10 out of 30 questions, a distractor must be the single longest option. If an option is too short, pad it with medically accurate but clinically irrelevant qualifiers so they are RARELY shorter than the correct answer.
+c. The correct answer should be the shortest option in roughly 20-30% of the questions as well. This creates true length-neutrality.
 
-9. NO FORMATTING CUES: Do not bold, italicize, or otherwise visually distinguish any option. Do not use phrases like "According to the slides" or "As stated in the lecture."
+5. DISTRACTOR INTEGRITY & ANTI-EXPLOIT
+Plausibility: ALL FOUR WRONG ANSWERS MUST:
+a. Be plausible enough that a student with partial knowledge would seriously consider them.
+b. Represent common misconceptions, adjacent diagnoses, or related-but-wrong pathophysiology directly from the lecture. Distractors must represent common clinical mimics, adjacent pathophysiology, or "near-miss" misconceptions from the lecture.
+c. Never be obviously absurd or dismissible without medical knowledge.
+d. For every question, make the single most dangerous distractor especially compelling — nearly identical in length and clinical detail to the correct answer, differing only in one subtle but decisive fact from the lecture.
+e. Use confidence Traps: At least 7 questions must contain a distractor that sounds more authoritative, more detailed, or more "textbook" than the correct answer — but is wrong in one specific, teachable way.
+f. Structure: Every option must use the same grammatical structure (e.g., all noun phrases, all complete sentences).
+g. Forbidden Content: No parentheticals like "(X because Y)", no hedging ("likely due to"), and any phrase that makes one option feel more complete or authoritative than others. Explicitly forbidden: 'All of the above,' 'None of the above,' 'Both A and B,' or any reference to other options.
+h. Options must be homogeneous (e.g., all are enzymes, all are clinical diagnoses). If the question asks for a "diagnosis," all 5 options must be diagnoses. If it asks for a "site of action," all 5 must be anatomical locations. Mixed-type options (e.g., three drugs and two side effects) are "dead" options that students ignore instantly.
 
-10. JSON FORMAT ONLY — no preamble, no markdown fences, no commentary. Output must begin with [ and end with ].
+6. ANSWER POSITION BALANCE:
+Distribute correct answers across positions A, B, C, D, and E. Each letter should be correct approximately 6 times across 30 questions. No letter may be correct more than 7 times. Randomize positions actively. NEVER place the correct answer in the same position for more than 2 consecutive questions.
+
+7. RATIONALE REQUIREMENTS - Every option must have a rationale that:
+a. For the correct option: explains the mechanism in 1-2 sentences citing the specific lecture concept.
+b. For each incorrect option: explains specifically why it is wrong — not just that it is wrong — and what specific finding or fact would have to change for it to be correct instead.
+
+8. NO FORMATTING CUES: Do not bold, italicize, or otherwise visually distinguish any option. Do not use phrases like "According to the slides" or "As stated in the lecture" or "per the slides."
+
+9. OUTPUT FORMAT
+Strict JSON: Return ONLY a valid JSON array. No preamble, no markdown fences, no commentary.
 
 JSON structure:
 [
   {
     "question": "Clinical vignette or stem here.",
+    "difficulty_order": "1st/2nd/3rd",
     "cited_learning_objective": "The exact LO being tested.",
     "options": [
       { "text": "Option text here.", "isCorrect": true,  "rationale": "Why correct, citing the lecture mechanism." },
@@ -1259,7 +1269,7 @@ JSON structure:
   }
 ]
 
-Now generate 25 questions based on the lecture materials attached.`;
+Now generate 30 questions based on the lecture materials attached.`;
 
 // ══ SETTINGS ═════════════════════════════════════════════
 document.addEventListener('DOMContentLoaded',()=>{
@@ -1975,7 +1985,7 @@ function shuffle(arr){
   return arr;
 }
 // ══ PROMPT SETTINGS ══════════════════════════════════════
-const promptSettings = { questions: 15, first: true, second: true, third: true };
+const promptSettings = { questions: 30, first: true, second: true, third: true };
 
 function togglePromptSettings(e) {
   e.stopPropagation();
@@ -2034,40 +2044,52 @@ function updatePromptSummary() {
 function buildSettingsPrompt() {
   const { questions, first, second, third } = promptSettings;
   const enabled = [first && 'first', second && 'second', third && 'third'].filter(Boolean);
-
-  // Build the difficulty distribution section dynamically
-  let distrib = '';
   const total = questions;
 
+  const orderLabel = o => o === 'first' ? '1st' : o === 'second' ? '2nd' : '3rd';
+  const orderValues = enabled.map(orderLabel).join('/');
+  const thirdOrderExtra = ` For these questions: NEVER ask "What is X?" directly. Always present a patient scenario or experimental result that requires applying lecture knowledge through at least one intermediate reasoning step. The answer must not be inferable from the stem alone without having studied the material. For 3rd-order vignettes, include several questions that ask for the 'next best step in management' or the 'cellular mechanism of the first-line treatment' for the condition described.`;
+
+  let distrib = '';
+
   if (enabled.length === 3) {
-    const firstN  = Math.round(total * 0.12);
-    const secondN = Math.round(total * 0.36);
+    const firstN  = Math.round(total * 4 / 30);
+    const secondN = Math.round(total * 11 / 30);
     const thirdN  = total - firstN - secondN;
-    distrib = `4. DIFFICULTY DISTRIBUTION — MANDATORY:
-   - ${firstN} first-order items: Single-step direct recall.
-   - ${secondN} second-order items: Apply or connect two lecture concepts.
-   - ${thirdN} third-order items: Multi-step clinical vignettes requiring ≥2 reasoning steps. A student who has not studied should score ≤25% on these.`;
+    distrib = `2. Difficulty Distribution:\n\nAdd "difficulty_order": "${orderValues}" to the JSON pertaining to each question.\n\n${firstN}/${total} questions: First-order (Direct recall).\n\n${secondN}/${total} questions: Second-order (Connecting two concepts).\n\n${thirdN}/${total} questions: Third-order (Clinical vignettes requiring >=2 reasoning steps). A student who has not studied should score <=25% on these.${thirdOrderExtra}`;
   } else if (enabled.length === 2) {
     const half = Math.round(total / 2);
     const rest = total - half;
-    const labels = enabled.map(o =>
-      o === 'first'  ? `${half} first-order items (direct single-step recall)` :
-      o === 'second' ? `${half} second-order items (apply or connect two concepts)` :
-                       `${half} third-order items (multi-step clinical vignettes, ≥25% difficulty floor)`
-    );
-    distrib = `4. DIFFICULTY DISTRIBUTION — MANDATORY:\n   - ${labels[0]}\n   - ${rest} ${enabled[1]}-order items`;
+    const orderDesc = o => {
+      if (o === 'first') return 'First-order (Direct recall)';
+      if (o === 'second') return 'Second-order (Connecting two concepts)';
+      return 'Third-order (Clinical vignettes requiring >=2 reasoning steps, <=25% difficulty floor)';
+    };
+    let text = `2. Difficulty Distribution:\n\nAdd "difficulty_order": "${orderValues}" to the JSON pertaining to each question.\n\n${half}/${total} questions: ${orderDesc(enabled[0])}.\n\n${rest}/${total} questions: ${orderDesc(enabled[1])}.`;
+    if (enabled.includes('third')) text += thirdOrderExtra;
+    distrib = text;
   } else {
     const orderName = enabled[0];
-    const desc = orderName === 'first'  ? 'direct single-step recall of a lecture fact' :
-                 orderName === 'second' ? 'application or connection of two lecture concepts' :
-                 'multi-step clinical vignettes requiring ≥2 reasoning steps — all items must be genuinely difficult';
-    distrib = `4. DIFFICULTY DISTRIBUTION — MANDATORY:\n   All ${total} items are ${orderName}-order: ${desc}.`;
+    const desc = orderName === 'first'  ? 'First-order (Direct recall)' :
+                 orderName === 'second' ? 'Second-order (Connecting two concepts)' :
+                 'Third-order (Clinical vignettes requiring >=2 reasoning steps) — all items must be genuinely difficult';
+    let text = `2. Difficulty Distribution:\n\nAdd "difficulty_order": "${orderLabel(orderName)}" to the JSON pertaining to each question.\n\nAll ${total} questions are ${desc}.`;
+    if (orderName === 'third') text += thirdOrderExtra;
+    distrib = text;
   }
 
-  // Splice into the master prompt — replace the distribution section
+  const longestDistractorMin = Math.max(1, Math.round(total * 10 / 30));
+  const confidenceTrapMin = Math.max(1, Math.round(total * 7 / 30));
+  const positionBalance = Math.round(total / 5);
+  const positionMax = positionBalance + 1;
+
   return MASTER_PROMPT
-    .replace(/4\. DIFFICULTY DISTRIBUTION[\s\S]*?(?=\n\n5\.)/, distrib)
-    .replace('Now generate 25 questions', `Now generate ${questions} questions`);
+    .replace(/2\. Difficulty Distribution:[\s\S]*?(?=\n\n3\. Stem Blinding)/, distrib)
+    .replace(/In at least \d+ out of \d+ questions/, `In at least ${longestDistractorMin} out of ${total} questions`)
+    .replace(/At least \d+ questions must contain a distractor/, `At least ${confidenceTrapMin} questions must contain a distractor`)
+    .replace(/approximately \d+ times across \d+ questions/, `approximately ${positionBalance} times across ${total} questions`)
+    .replace(/No letter may be correct more than \d+ times/, `No letter may be correct more than ${positionMax} times`)
+    .replace('Now generate 30 questions', `Now generate ${total} questions`);
 }
 
 function copyMasterPrompt() {
@@ -2631,7 +2653,7 @@ function buildCopilotPrompt(qCount) {
     ? `\n\n--- LECTURE CONTENT ---\n${selectedFileText.startsWith('[FILE:') ? '[Attached file: ' + selectedFileName + ' — please read the attached content above]' : selectedFileText}\n--- END LECTURE CONTENT ---`
     : '';
 
-  return MASTER_PROMPT.replace('Now generate 25 questions', `Now generate ${qCount} questions`) + lectureSection;
+  return MASTER_PROMPT.replace('Now generate 30 questions', `Now generate ${qCount} questions`) + lectureSection;
 }
 
 // Show the redirect URI so user can verify it matches Azure registration
