@@ -69,6 +69,7 @@ body{
 .settings-btn{
   font-size:34px;cursor:pointer;opacity:.65;line-height:1;
   transition:all .25s cubic-bezier(.175,.885,.32,1.275);
+  margin-left:auto;
 }
 .settings-btn:hover{opacity:1;transform:scale(1.08)}
 
@@ -520,13 +521,12 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 .lib-bulk-btn:hover { border-color: var(--primary); }
 .lib-title {
   background: var(--primary); color: #fff; border: none;
-  border-radius: 50px; padding: 9px 16px; font-family: var(--font-display);
+  border-radius: 50px; padding: 11px 18px; font-family: var(--font-display);
   font-weight: 700; font-size: .82rem; cursor: pointer;
-  display: inline-flex; align-items: center; gap: 8px;
+  display: flex; align-items: center; gap: 8px;
   box-shadow: 0 4px 18px rgba(0,0,0,.35); transition: .2s;
-  letter-spacing: 0; text-transform: none; opacity: 1;
 }
-.lib-title:hover { filter: brightness(1.12); }
+.lib-title:hover { filter: brightness(1.12); transform: translateY(-2px); }
 .lib-close {
   cursor: pointer; opacity: .4; font-size: 1.1rem; transition: .15s; line-height: 1;
 }
@@ -726,7 +726,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 
 <div id="library-sidebar">
   <div class="lib-header">
-    <span class="lib-title" onclick="toggleLibrary()">📚 Quiz Library</span>
+    <button class="lib-title" onclick="toggleLibrary()">📚 Quiz Library</button>
     <span class="lib-close" onclick="toggleLibrary()">✕</span>
   </div>
   <div class="lib-toolbar">
@@ -3004,7 +3004,7 @@ function renderBlockQuickView(entries) {
 function toggleLibrary() {
   libraryOpen = !libraryOpen;
   document.getElementById('library-sidebar').classList.toggle('open', libraryOpen);
-  document.getElementById('library-toggle').style.visibility = libraryOpen ? 'hidden' : '';
+  document.getElementById('library-toggle').style.display = libraryOpen ? 'none' : '';
   if (libraryOpen && libraryManifest.length === 0) refreshLibrary();
 }
 
