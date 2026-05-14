@@ -1150,6 +1150,12 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <hr class="settings-divider">
   </div>
 
+  <button class="btn btn-secondary" id="fullscreen-btn" style="width:100%;margin-bottom:4px;font-size:.8rem;padding:9px" onclick="toggleFullscreen()">
+    ⛶ Enter Fullscreen
+  </button>
+
+  <hr class="settings-divider">
+
   <!-- Keyboard reference panel -->
   <div class="kbd-panel">
     <div class="kbd-panel-title">⌨️ Keyboard Controls</div>
@@ -1597,6 +1603,23 @@ function randomTheme(){
   changeTheme(pick);
   showToast('🎲 Theme: ' + document.getElementById('theme-select').options[document.getElementById('theme-select').selectedIndex].text);
 }
+
+function toggleFullscreen(){
+  const btn=document.getElementById('fullscreen-btn');
+  if(!document.fullscreenElement){
+    document.documentElement.requestFullscreen().then(()=>{
+      btn.textContent='⛶ Exit Fullscreen';
+    }).catch(()=>{showToast('⚠️ Fullscreen not supported');});
+  }else{
+    document.exitFullscreen().then(()=>{
+      btn.textContent='⛶ Enter Fullscreen';
+    });
+  }
+}
+document.addEventListener('fullscreenchange',()=>{
+  const btn=document.getElementById('fullscreen-btn');
+  if(btn) btn.textContent=document.fullscreenElement?'⛶ Exit Fullscreen':'⛶ Enter Fullscreen';
+});
 
 function stopAllAnims(){
   if(animId){cancelAnimationFrame(animId);animId=null;}
