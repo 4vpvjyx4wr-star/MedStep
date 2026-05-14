@@ -516,7 +516,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 
 /* ── Quiz Library Sidebar ─────────────────────────────── */
 #library-sidebar {
-  position: fixed; left: 0; top: 0; bottom: 0; width: 390px;
+  position: fixed; left: 0; top: 0; bottom: 0; width: 480px; max-width: 92vw;
   background: var(--card); border-right: 1px solid var(--border);
   z-index: 900; display: flex; flex-direction: column;
   transform: translateX(-100%); transition: transform .3s cubic-bezier(.25,.8,.25,1);
@@ -558,21 +558,133 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 }
 .lib-home-btn:hover { opacity: 1; border-color: var(--primary); color: var(--primary); }
 .lib-toolbar {
-  padding: 10px 12px;
+  padding: 14px 16px;
   border-bottom: 1px solid var(--border);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
+  background: rgba(255,255,255,.015);
 }
 .lib-filter-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 6px;
+  gap: 8px;
 }
-.lib-toolbar select {
+.lib-toolbar select { display: none; }
+.lib-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+.lib-filter-label {
+  font-size: .62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  opacity: .4;
+  font-family: var(--font-display);
+  padding-left: 6px;
+}
+.lib-dropdown-trigger {
   width: 100%;
-  margin-bottom: 0;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 9px 32px 9px 12px;
+  font-family: var(--font-display);
+  font-size: .78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border .2s, box-shadow .2s, background .2s, transform .1s;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  user-select: none;
 }
+.lib-dropdown-trigger::after {
+  content: '';
+  position: absolute;
+  right: 11px;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  width: 0; height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  opacity: .45;
+  transition: transform .2s;
+}
+.lib-filter-group.open .lib-dropdown-trigger::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+.lib-dropdown-trigger:hover {
+  border-color: var(--primary);
+  background: rgba(255,255,255,.04);
+}
+.lib-filter-group.open .lib-dropdown-trigger {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(99,102,241,.12);
+}
+.lib-dropdown-trigger:active {
+  transform: scale(.97);
+}
+.lib-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0; right: 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 5px;
+  z-index: 950;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 10px 36px rgba(0,0,0,.45);
+  opacity: 0;
+  transform: translateY(-6px) scale(.96);
+  pointer-events: none;
+  transition: opacity .18s, transform .18s cubic-bezier(.25,.8,.25,1);
+}
+.lib-filter-group.open .lib-dropdown-menu {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+.lib-dropdown-option {
+  display: block;
+  width: 100%;
+  padding: 8px 11px;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: .76rem;
+  font-weight: 500;
+  text-align: left;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background .12s, color .12s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lib-dropdown-option:hover {
+  background: rgba(99,102,241,.12);
+  color: var(--primary);
+}
+.lib-dropdown-option.active {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+}
+.lib-dropdown-menu::-webkit-scrollbar { width: 5px; }
+.lib-dropdown-menu::-webkit-scrollbar-track { background: transparent; }
+.lib-dropdown-menu::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+.lib-dropdown-menu::-webkit-scrollbar-thumb:hover { background: var(--primary); }
 .lib-block-dropdown {
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -942,23 +1054,43 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <span class="lib-close" onclick="toggleLibrary()">✕</span>
   </div>
   <div class="lib-toolbar">
+    <select id="lib-block-filter" onchange="onLibraryFilterChange('block')">
+      <option value="all">All Blocks</option>
+      <option value="1">Block 1</option><option value="2">Block 2</option>
+      <option value="3">Block 3</option><option value="4">Block 4</option>
+      <option value="5">Block 5</option><option value="6">Block 6</option>
+      <option value="7">Block 7</option><option value="8">Block 8</option>
+    </select>
+    <select id="lib-exam-filter" onchange="onLibraryFilterChange('exam')">
+      <option value="all">All Exams</option>
+    </select>
+    <select id="lib-week-filter" onchange="onLibraryFilterChange('week')">
+      <option value="all">All Weeks</option>
+    </select>
+    <select id="lib-class-filter" onchange="renderLibrary();saveLibraryFilters()">
+      <option value="all">All Classes</option>
+    </select>
     <div class="lib-filter-row">
-      <select id="lib-block-filter" onchange="onLibraryFilterChange('block')">
-        <option value="all">All Blocks</option>
-        <option value="1">Block 1</option><option value="2">Block 2</option>
-        <option value="3">Block 3</option><option value="4">Block 4</option>
-        <option value="5">Block 5</option><option value="6">Block 6</option>
-        <option value="7">Block 7</option><option value="8">Block 8</option>
-      </select>
-      <select id="lib-exam-filter" onchange="onLibraryFilterChange('exam')">
-        <option value="all">All Exams</option>
-      </select>
-      <select id="lib-week-filter" onchange="onLibraryFilterChange('week')">
-        <option value="all">All Weeks</option>
-      </select>
-      <select id="lib-class-filter" onchange="renderLibrary();saveLibraryFilters()">
-        <option value="all">All Classes</option>
-      </select>
+      <div class="lib-filter-group" id="lib-dd-block">
+        <span class="lib-filter-label">Block</span>
+        <button class="lib-dropdown-trigger" onclick="toggleLibDropdown('lib-dd-block')">All Blocks</button>
+        <div class="lib-dropdown-menu"></div>
+      </div>
+      <div class="lib-filter-group" id="lib-dd-exam">
+        <span class="lib-filter-label">Exam</span>
+        <button class="lib-dropdown-trigger" onclick="toggleLibDropdown('lib-dd-exam')">All Exams</button>
+        <div class="lib-dropdown-menu"></div>
+      </div>
+      <div class="lib-filter-group" id="lib-dd-week">
+        <span class="lib-filter-label">Week</span>
+        <button class="lib-dropdown-trigger" onclick="toggleLibDropdown('lib-dd-week')">All Weeks</button>
+        <div class="lib-dropdown-menu"></div>
+      </div>
+      <div class="lib-filter-group" id="lib-dd-class">
+        <span class="lib-filter-label">Class</span>
+        <button class="lib-dropdown-trigger" onclick="toggleLibDropdown('lib-dd-class')">All Classes</button>
+        <div class="lib-dropdown-menu"></div>
+      </div>
     </div>
     <div class="lib-block-dropdown" id="lib-block-dropdown">
       <div class="lib-block-summary" onclick="toggleBlockDropdown()">▼ Block Quick View</div>
@@ -2968,6 +3100,30 @@ const BLOCK_CLASSES = {
   7: ['Endocrine System', 'Gastrointestinal System'],
   8: ['Reproductive System']
 };
+const CLASS_ICONS = {
+  'Neuroscience': '🧠',
+  'Psychiatry': '🪞',
+  'Anatomy': '🦴',
+  'Cell Biology/Biochemistry': '🧬',
+  'Microbiology/Immunology': '🦠',
+  'Pharmacology': '💊',
+  'Physiology': '⚙️',
+  'Pathology': '🔬',
+  'Musculoskeletal System': '💪',
+  'Cardiovascular System': '❤️',
+  'Respiratory System': '🫁',
+  'Hematology': '🩸',
+  'Renal System': '🫘',
+  'Dermatology': '🧴',
+  'Endocrine System': '🧪',
+  'Gastrointestinal System': '🫃',
+  'Reproductive System': '🤰'
+};
+function getClassIcon(entry) {
+  if (entry.classTag && CLASS_ICONS[entry.classTag]) return CLASS_ICONS[entry.classTag];
+  if (entry.icon) return entry.icon;
+  return '📋';
+}
 
 // Build a raw URL — single quizzes/ prefix, no double nesting
 function rawUrl(filename) {
@@ -3097,6 +3253,7 @@ function setLibraryFilters(block = 'all', exam = 'all', week = 'all', classTag =
   updateLibraryClassOptions();
   w.value = String(week);
   c.value = String(classTag);
+  syncCustomDropdowns();
   renderLibrary();
 }
 
@@ -3153,6 +3310,7 @@ function updateLibraryExamOptions() {
     examSel.appendChild(opt);
   });
   examSel.value = [...examSel.options].some(o => o.value === old) ? old : 'all';
+  if (typeof syncCustomDropdowns === 'function') syncCustomDropdowns();
 }
 
 function updateLibraryWeekOptions() {
@@ -3176,6 +3334,7 @@ function updateLibraryWeekOptions() {
     weekSel.appendChild(opt);
   });
   weekSel.value = [...weekSel.options].some(o => o.value === old) ? old : 'all';
+  if (typeof syncCustomDropdowns === 'function') syncCustomDropdowns();
 }
 
 function updateLibraryClassOptions() {
@@ -3201,7 +3360,72 @@ function updateLibraryClassOptions() {
     classSel.appendChild(opt);
   });
   classSel.value = [...classSel.options].some(o => o.value === old) ? old : 'all';
+  syncCustomDropdowns();
 }
+
+// ── Custom Dropdown System ─────────────────────────────────
+const LIB_DD_MAP = {
+  'lib-dd-block': 'lib-block-filter',
+  'lib-dd-exam':  'lib-exam-filter',
+  'lib-dd-week':  'lib-week-filter',
+  'lib-dd-class': 'lib-class-filter'
+};
+
+function toggleLibDropdown(groupId) {
+  const group = document.getElementById(groupId);
+  if (!group) return;
+  const wasOpen = group.classList.contains('open');
+  closeAllLibDropdowns();
+  if (!wasOpen) {
+    group.classList.add('open');
+    syncDropdownOptions(groupId);
+  }
+}
+
+function closeAllLibDropdowns() {
+  document.querySelectorAll('.lib-filter-group.open').forEach(g => g.classList.remove('open'));
+}
+
+function syncDropdownOptions(groupId) {
+  const group = document.getElementById(groupId);
+  const selectId = LIB_DD_MAP[groupId];
+  if (!group || !selectId) return;
+  const sel = document.getElementById(selectId);
+  if (!sel) return;
+  const menu = group.querySelector('.lib-dropdown-menu');
+  if (!menu) return;
+  menu.innerHTML = '';
+  [...sel.options].forEach(opt => {
+    const btn = document.createElement('button');
+    btn.className = 'lib-dropdown-option' + (opt.value === sel.value ? ' active' : '');
+    btn.textContent = opt.textContent;
+    btn.type = 'button';
+    btn.onclick = (e) => {
+      e.stopPropagation();
+      sel.value = opt.value;
+      sel.dispatchEvent(new Event('change'));
+      group.querySelector('.lib-dropdown-trigger').textContent = opt.textContent;
+      closeAllLibDropdowns();
+    };
+    menu.appendChild(btn);
+  });
+}
+
+function syncCustomDropdowns() {
+  Object.entries(LIB_DD_MAP).forEach(([groupId, selectId]) => {
+    const group = document.getElementById(groupId);
+    const sel = document.getElementById(selectId);
+    if (!group || !sel) return;
+    const trigger = group.querySelector('.lib-dropdown-trigger');
+    if (!trigger) return;
+    const selected = sel.options[sel.selectedIndex];
+    trigger.textContent = selected ? selected.textContent : 'All';
+  });
+}
+
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.lib-filter-group')) closeAllLibDropdowns();
+});
 
 function renderBlockQuickView(entries) {
   const wrap = document.getElementById('lib-block-items');
@@ -3705,7 +3929,7 @@ function renderLibrary() {
     btn.className = 'lib-quiz-btn' + (isStaged ? ' staged' : '');
     btn.id = 'lib-btn-' + entry.file;
     btn.innerHTML = `
-      <span class="lib-icon" style="${isStaged ? 'color:var(--success)' : ''}">${isStaged ? '✓' : (entry.icon || '📋')}</span>
+      <span class="lib-icon" style="${isStaged ? 'color:var(--success)' : ''}">${isStaged ? '✓' : getClassIcon(entry)}</span>
       <div style="flex:1;min-width:0">
         <div>${entry.title}</div>
         <div class="lib-quiz-meta">
@@ -4207,6 +4431,7 @@ document.getElementById('add-quiz-modal').addEventListener('click', function(e) 
 window.addEventListener('load', async () => {
   await refreshLibrary();
   restoreLibraryFilters();
+  syncCustomDropdowns();
   updatePromptSummary();
 });
 </script>
