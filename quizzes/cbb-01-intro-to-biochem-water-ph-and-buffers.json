@@ -1,0 +1,1314 @@
+[
+  {
+    "question": "A 28-year-old woman presents after vomiting for 48 hours. Arterial blood gas shows pH 7.55 [7.35-7.45], PaCO2 48 mmHg [35-45], HCO3- 44 mEq/L [22-28]. Which acid-base disorder is present?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "LO1 Identify primary acid-base disturbances from arterial blood gas values",
+    "options": [
+      {
+        "text": "Metabolic alkalosis with partial respiratory compensation",
+        "isCorrect": true,
+        "rationale": "Vomiting causes loss of gastric acid producing metabolic alkalosis; elevated HCO3- with increased PaCO2 reflects respiratory compensation, matching the lecture's compensation patterns."
+      },
+      {
+        "text": "Respiratory alkalosis with renal bicarbonate retention",
+        "isCorrect": false,
+        "rationale": "Respiratory alkalosis would show low PaCO2; here PaCO2 is elevated. It would be correct if PaCO2 were low and HCO3- decreased due to renal compensation."
+      },
+      {
+        "text": "Metabolic acidosis with respiratory compensation present",
+        "isCorrect": false,
+        "rationale": "Metabolic acidosis would show low HCO3- and low pH; here HCO3- is high. It would be correct if HCO3- were decreased with low pH."
+      },
+      {
+        "text": "Respiratory acidosis with metabolic alkalotic compensation present",
+        "isCorrect": false,
+        "rationale": "Respiratory acidosis would present with high PaCO2 and low pH; here pH is alkalemic. It would be correct if pH were low with elevated PaCO2 and increased HCO3-."
+      },
+      {
+        "text": "Mixed respiratory and metabolic alkalosis without compensation",
+        "isCorrect": false,
+        "rationale": "Mixed alkalosis would show both low PaCO2 and high HCO3- without expected compensation; here PaCO2 is elevated, inconsistent. It would be correct if PaCO2 were low and HCO3- high without expected compensatory changes."
+      }
+    ]
+  },
+  {
+    "question": "A patient has pH 7.30 [7.35-7.45], PaCO2 60 mmHg [35-45], HCO3- 28 mEq/L [22-28]. Which primary disturbance best explains these values?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "LO1 Identify primary acid-base disturbances from arterial blood gas values",
+    "options": [
+      {
+        "text": "Acute respiratory acidosis without metabolic compensation",
+        "isCorrect": true,
+        "rationale": "Elevated PaCO2 with low pH and near-normal HCO3- indicates acute respiratory acidosis; lecture notes that HCO3- rises slowly so acute cases lack metabolic compensation."
+      },
+      {
+        "text": "Chronic respiratory acidosis with renal compensation present",
+        "isCorrect": false,
+        "rationale": "Chronic respiratory acidosis would show higher HCO3- due to renal compensation; here HCO3- is near normal. It would be correct if HCO3- were markedly elevated."
+      },
+      {
+        "text": "Metabolic acidosis with respiratory compensation present",
+        "isCorrect": false,
+        "rationale": "Metabolic acidosis would have low HCO3- and low PaCO2 from hyperventilation; here PaCO2 is high. It would be correct if PaCO2 were low and HCO3- decreased."
+      },
+      {
+        "text": "Mixed metabolic alkalosis and respiratory acidosis present",
+        "isCorrect": false,
+        "rationale": "Mixed disorder would show conflicting pH effects; here pattern fits isolated respiratory acidosis. It would be correct if HCO3- were elevated beyond expected acute values."
+      },
+      {
+        "text": "Normal acid-base status with lab measurement error suspected",
+        "isCorrect": false,
+        "rationale": "Values are abnormal and consistent with respiratory acidosis; invoking lab error is incorrect. It would be correct only if repeat testing normalized values."
+      }
+    ]
+  },
+  {
+    "question": "Which calculation from an arterial blood gas is used to determine the primary metabolic acid-base disorder according to the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "LO2 Apply anion gap calculation to classify metabolic acid-base disorders",
+    "options": [
+      {
+        "text": "Serum anion gap calculated as Na minus Cl minus HCO3",
+        "isCorrect": true,
+        "rationale": "The lecture defines the anion gap as Na - (Cl + HCO3-) to detect unmeasured anions in metabolic acidosis, making this the correct calculation."
+      },
+      {
+        "text": "Serum osmolality calculated as 2Na plus glucose plus BUN",
+        "isCorrect": false,
+        "rationale": "Serum osmolality uses 2Na + glucose/18 + BUN/2.8; it is not the anion gap. It would be correct if the question asked about osmolality calculation."
+      },
+      {
+        "text": "Delta gap calculated as HCO3 minus PaCO2 divided by two",
+        "isCorrect": false,
+        "rationale": "Delta gap is not defined this way; this formula is incorrect. It would be correct if the lecture provided that specific delta formula, which it does not."
+      },
+      {
+        "text": "Respiratory compensation predicted by Winter formula for metabolic acidosis",
+        "isCorrect": false,
+        "rationale": "Winter's formula predicts PaCO2, not the anion gap. It would be correct if the question asked how to estimate expected respiratory compensation."
+      },
+      {
+        "text": "Corrected sodium calculated by adding glucose correction factor",
+        "isCorrect": false,
+        "rationale": "Corrected sodium accounts for hyperglycemia, not anion gap. It would be correct if the lecture asked about sodium correction in hyperglycemia."
+      }
+    ]
+  },
+  {
+    "question": "A 55-year-old man with diabetic ketoacidosis has Na 140 mEq/L [135-145], Cl 100 mEq/L [98-106], HCO3- 8 mEq/L [22-28]. What is the anion gap and its interpretation?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "LO2 Apply anion gap calculation to classify metabolic acid-base disorders",
+    "options": [
+      {
+        "text": "Anion gap 32 mEq per liter indicating high anion gap metabolic acidosis",
+        "isCorrect": true,
+        "rationale": "Anion gap = Na - (Cl + HCO3) = 140 - (100 + 8) = 32, consistent with high anion gap metabolic acidosis as taught in the lecture for ketoacidosis."
+      },
+      {
+        "text": "Anion gap 12 mEq per liter indicating normal anion gap metabolic acidosis",
+        "isCorrect": false,
+        "rationale": "Calculated gap is 32, not 12. A gap of 12 would indicate normal gap; it would be correct if Cl or HCO3- values were different to yield 12."
+      },
+      {
+        "text": "Anion gap 48 mEq per liter indicating mixed metabolic disorders present",
+        "isCorrect": false,
+        "rationale": "Gap of 48 is inconsistent with given values. It would be correct if Na were much higher or Cl and HCO3- much lower to produce 48."
+      },
+      {
+        "text": "Anion gap 22 mEq per liter indicating mild high anion gap acidosis",
+        "isCorrect": false,
+        "rationale": "Gap is 32 by calculation; 22 would be lower. It would be correct if HCO3- were 18 instead of 8."
+      },
+      {
+        "text": "Anion gap 0 mEq per liter indicating measurement artifact",
+        "isCorrect": false,
+        "rationale": "A zero gap is physiologically implausible with these values. It would be correct only if Na equaled sum of Cl and HCO3-, which is not the case."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic obstructive pulmonary disease has PaCO2 chronically elevated. According to the lecture, which renal adaptation occurs over days to weeks?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO3 Describe renal compensation mechanisms for chronic respiratory acidosis and alkalosis",
+    "options": [
+      {
+        "text": "Increased renal bicarbonate reabsorption raising serum HCO3 concentration",
+        "isCorrect": true,
+        "rationale": "Lecture explains that chronic respiratory acidosis leads to renal retention of HCO3- via increased reabsorption, elevating serum bicarbonate over days to weeks."
+      },
+      {
+        "text": "Decreased renal bicarbonate reabsorption lowering serum HCO3 concentration",
+        "isCorrect": false,
+        "rationale": "This describes compensation for chronic respiratory alkalosis, not acidosis. It would be correct if PaCO2 were chronically low prompting bicarbonate loss."
+      },
+      {
+        "text": "Increased renal ammonium excretion lowering net acid excretion",
+        "isCorrect": false,
+        "rationale": "Renal ammonium excretion actually increases to excrete acid; stating it lowers net acid excretion is incorrect. It would be correct if phrased as increased ammonium excretion increasing acid excretion."
+      },
+      {
+        "text": "Immediate bicarbonate secretion within minutes by renal tubules",
+        "isCorrect": false,
+        "rationale": "Renal compensation is slow, not immediate. It would be correct only if the lecture described an acute renal response occurring within minutes, which it does not."
+      },
+      {
+        "text": "Increased urinary bicarbonate loss causing metabolic acidosis",
+        "isCorrect": false,
+        "rationale": "This would worsen acidosis and is not the adaptive response to chronic respiratory acidosis. It would be correct if renal tubular dysfunction prevented bicarbonate reabsorption."
+      }
+    ]
+  },
+  {
+    "question": "A 40-year-old woman presents with confusion and rapid breathing. ABG: pH 7.25 [7.35-7.45], PaCO2 28 mmHg [35-45], HCO3- 12 mEq/L [22-28]. Which process best explains the low PaCO2?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO4 Explain respiratory compensation mechanisms for metabolic acidosis",
+    "options": [
+      {
+        "text": "Hyperventilation lowering PaCO2 to compensate for metabolic acidosis",
+        "isCorrect": true,
+        "rationale": "Lecture states that metabolic acidosis triggers hyperventilation (Kussmaul breathing) to reduce PaCO2 and partially compensate, matching this mechanism."
+      },
+      {
+        "text": "Hypoventilation raising PaCO2 to compensate for metabolic acidosis",
+        "isCorrect": false,
+        "rationale": "Hypoventilation would increase PaCO2 and worsen acidosis; it would be correct only if respiratory depression were present, which is not the case."
+      },
+      {
+        "text": "Renal bicarbonate generation causing immediate PaCO2 reduction",
+        "isCorrect": false,
+        "rationale": "Renal compensation affects HCO3- over days; it does not acutely lower PaCO2. It would be correct if asking about long-term compensation affecting bicarbonate."
+      },
+      {
+        "text": "Increased metabolic CO2 production lowering measured PaCO2",
+        "isCorrect": false,
+        "rationale": "Increased CO2 production raises PaCO2, not lower it. It would be correct only if CO2 production decreased, which is not described."
+      },
+      {
+        "text": "Laboratory artifact causing spuriously low PaCO2 measurement",
+        "isCorrect": false,
+        "rationale": "Values are consistent with expected respiratory compensation; invoking artifact is unlikely. It would be correct if repeat ABG normalized PaCO2."
+      }
+    ]
+  },
+  {
+    "question": "A patient with diarrhea has pH 7.33 [7.35-7.45], PaCO2 38 mmHg [35-45], HCO3- 18 mEq/L [22-28]. Using the anion gap approach, which classification fits this metabolic disturbance?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO2 Apply anion gap calculation to classify metabolic acid-base disorders",
+    "options": [
+      {
+        "text": "Normal anion gap metabolic acidosis due to bicarbonate loss",
+        "isCorrect": true,
+        "rationale": "Diarrhea causes loss of bicarbonate producing normal anion gap (hyperchloremic) metabolic acidosis; lecture emphasizes GI bicarbonate loss as a classic cause."
+      },
+      {
+        "text": "High anion gap metabolic acidosis due to unmeasured anions",
+        "isCorrect": false,
+        "rationale": "High anion gap arises from added acids like ketoacids; diarrhea causes bicarbonate loss without increasing unmeasured anions. It would be correct if there were accumulation of organic acids."
+      },
+      {
+        "text": "Respiratory alkalosis with metabolic compensation present",
+        "isCorrect": false,
+        "rationale": "Respiratory alkalosis would show low PaCO2 and elevated pH; here pH is low and HCO3- decreased. It would be correct if PaCO2 were low and HCO3- decreased appropriately."
+      },
+      {
+        "text": "Mixed metabolic acidosis and respiratory acidosis present",
+        "isCorrect": false,
+        "rationale": "PaCO2 is normal, not elevated; mixed respiratory acidosis is unlikely. It would be correct if PaCO2 were elevated beyond expected compensation."
+      },
+      {
+        "text": "Metabolic alkalosis from volume contraction and chloride loss",
+        "isCorrect": false,
+        "rationale": "Diarrhea typically causes metabolic acidosis from bicarbonate loss; alkalosis would occur with vomiting. It would be correct if the patient had profuse vomiting instead."
+      }
+    ]
+  },
+  {
+    "question": "A 65-year-old man with sepsis has lactate elevated and anion gap increased. According to the lecture, which mechanism primarily increases the anion gap in lactic acidosis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO5 Describe causes and mechanisms of high anion gap metabolic acidosis",
+    "options": [
+      {
+        "text": "Accumulation of unmeasured organic anions increasing gap",
+        "isCorrect": true,
+        "rationale": "Lecture explains that lactic acidosis increases unmeasured anions (lactate), raising the anion gap by adding negative charges not accounted for by Cl or HCO3-."
+      },
+      {
+        "text": "Loss of bicarbonate through gastrointestinal tract increasing gap",
+        "isCorrect": false,
+        "rationale": "GI bicarbonate loss causes normal anion gap acidosis due to chloride increase, not high gap. It would be correct if unmeasured anions were accumulating."
+      },
+      {
+        "text": "Renal retention of chloride producing hyperchloremia and gap increase",
+        "isCorrect": false,
+        "rationale": "Hyperchloremia lowers the anion gap by increasing Cl; it does not increase the gap. It would be correct if Cl decreased while unmeasured anions increased."
+      },
+      {
+        "text": "Increased serum albumin causing falsely elevated anion gap",
+        "isCorrect": false,
+        "rationale": "Low albumin lowers the anion gap; increased albumin would not explain lactic acidosis. It would be correct only if albumin changes were the primary driver."
+      },
+      {
+        "text": "Excess sodium administration directly increasing anion gap",
+        "isCorrect": false,
+        "rationale": "Sodium changes affect gap calculation but excess Na alone does not create unmeasured anions; it would be correct only if unmeasured anions accompanied sodium changes."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic vomiting is volume depleted and has metabolic alkalosis. Which of the following best describes the expected urinary chloride in this state per the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO6 Use urinary chloride to distinguish causes of metabolic alkalosis",
+    "options": [
+      {
+        "text": "Low urinary chloride consistent with chloride-responsive alkalosis",
+        "isCorrect": true,
+        "rationale": "Lecture states that vomiting causes chloride-responsive metabolic alkalosis with low urinary chloride due to volume depletion and chloride retention."
+      },
+      {
+        "text": "High urinary chloride consistent with chloride-resistant alkalosis",
+        "isCorrect": false,
+        "rationale": "High urinary chloride occurs in chloride-resistant causes like mineralocorticoid excess; vomiting typically yields low urinary chloride. It would be correct if mineralocorticoid excess were present."
+      },
+      {
+        "text": "Normal urinary chloride indicating mixed acid-base disorder",
+        "isCorrect": false,
+        "rationale": "Normal urinary chloride does not fit classic vomiting-induced alkalosis. It would be correct if competing processes normalized urinary chloride."
+      },
+      {
+        "text": "Undetectable urinary chloride due to laboratory error",
+        "isCorrect": false,
+        "rationale": "Undetectable chloride is unlikely; the lecture emphasizes low but measurable urinary chloride in volume depletion. It would be correct only if assay failed."
+      },
+      {
+        "text": "Variable urinary chloride unrelated to alkalosis mechanism",
+        "isCorrect": false,
+        "rationale": "Urinary chloride is a key discriminator per the lecture; stating it is unrelated contradicts the material. It would be correct only if urinary chloride were not measured."
+      }
+    ]
+  },
+  {
+    "question": "A 30-year-old with aspirin overdose presents with mixed acid-base disturbance. ABG: pH 7.45 [7.35-7.45], PaCO2 20 mmHg [35-45], HCO3- 14 mEq/L [22-28]. Which pattern best fits the lecture's description of salicylate toxicity?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "LO7 Recognize mixed acid-base disorders and their causes including salicylate toxicity",
+    "options": [
+      {
+        "text": "Primary metabolic acidosis with primary respiratory alkalosis mixed together",
+        "isCorrect": true,
+        "rationale": "Lecture notes salicylate toxicity causes simultaneous metabolic acidosis (low HCO3-) and respiratory alkalosis (low PaCO2) due to stimulation of respiratory center and accumulation of acids, matching this mixed pattern."
+      },
+      {
+        "text": "Pure metabolic acidosis without respiratory compensation present",
+        "isCorrect": false,
+        "rationale": "Pure metabolic acidosis would have low PaCO2 from compensation; here PaCO2 is very low beyond expected compensation. It would be correct if PaCO2 were appropriately elevated or normal."
+      },
+      {
+        "text": "Primary respiratory alkalosis with secondary metabolic alkalosis present",
+        "isCorrect": false,
+        "rationale": "Secondary metabolic alkalosis would raise HCO3-, but HCO3- is low here. It would be correct if HCO3- were elevated following chronic hyperventilation."
+      },
+      {
+        "text": "Respiratory acidosis with metabolic compensation masking alkalosis",
+        "isCorrect": false,
+        "rationale": "Respiratory acidosis would show high PaCO2 and low pH; this vignette shows low PaCO2 and alkalemic pH, inconsistent. It would be correct if PaCO2 were elevated."
+      },
+      {
+        "text": "Normal acid-base status with lab sampling error during hyperventilation",
+        "isCorrect": false,
+        "rationale": "Values indicate true mixed disorder consistent with salicylate toxicity; lab error is unlikely. It would be correct only if repeat ABG normalized values."
+      }
+    ]
+  },
+  {
+    "question": "A 70-year-old with heart failure is on loop diuretics and develops metabolic alkalosis. According to the lecture, which mechanism explains diuretic-induced alkalosis?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "LO6 Use urinary chloride to distinguish causes of metabolic alkalosis",
+    "options": [
+      {
+        "text": "Enhanced distal sodium delivery increasing bicarbonate reabsorption and H secretion",
+        "isCorrect": true,
+        "rationale": "Lecture explains loop diuretics increase distal sodium delivery, promoting H+ secretion and bicarbonate reabsorption, producing metabolic alkalosis often with low urinary chloride while diuretic effect persists."
+      },
+      {
+        "text": "Direct inhibition of carbonic anhydrase in proximal tubule causing alkalosis",
+        "isCorrect": false,
+        "rationale": "Carbonic anhydrase inhibition (e.g., acetazolamide) causes metabolic acidosis, not alkalosis. It would be correct if the drug were a CA inhibitor causing bicarbonate loss."
+      },
+      {
+        "text": "Increased aldosterone secretion causing renal bicarbonate wasting",
+        "isCorrect": false,
+        "rationale": "Aldosterone excess causes bicarbonate retention and H+ secretion leading to alkalosis, not bicarbonate wasting. It would be correct if aldosterone decreased causing bicarbonate loss."
+      },
+      {
+        "text": "Volume expansion reducing proximal bicarbonate reabsorption causing alkalosis",
+        "isCorrect": false,
+        "rationale": "Volume expansion typically reduces bicarbonate reabsorption causing acidosis; alkalosis arises from volume contraction. It would be correct if volume status were expanded and bicarbonate reabsorption decreased."
+      },
+      {
+        "text": "Increased respiratory drive lowering PaCO2 and raising serum bicarbonate",
+        "isCorrect": false,
+        "rationale": "Respiratory changes affect PaCO2 acutely; they do not raise bicarbonate to cause metabolic alkalosis. It would be correct only if chronic respiratory alkalosis induced renal bicarbonate loss."
+      }
+    ]
+  },
+  {
+    "question": "A 45-year-old alcoholic presents with confusion. Labs: Na 138 [135-145], Cl 90 [98-106], HCO3- 16 [22-28]. Anion gap is elevated. The delta gap (change in AG divided by change in HCO3-) is approximately 2. According to the lecture, what does a delta ratio around 2 suggest?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "LO8 Interpret delta gap to detect mixed metabolic acid-base disorders",
+    "options": [
+      {
+        "text": "Concurrent metabolic alkalosis superimposed on high anion gap acidosis",
+        "isCorrect": true,
+        "rationale": "Lecture describes delta ratio ~2 indicating a mixed disorder: high anion gap acidosis with a concurrent metabolic alkalosis, as HCO3- falls less than expected relative to AG increase."
+      },
+      {
+        "text": "Pure high anion gap metabolic acidosis without additional disorders",
+        "isCorrect": false,
+        "rationale": "Pure high AG acidosis typically yields delta ratio between 1 and 2 depending on cause; a ratio exactly 2 suggests additional alkalosis. It would be correct if ratio were within expected single-disorder range per lecture."
+      },
+      {
+        "text": "Normal anion gap metabolic acidosis due to bicarbonate loss",
+        "isCorrect": false,
+        "rationale": "Normal AG acidosis would not produce elevated AG; it would be correct if AG were normal and HCO3- low from GI loss."
+      },
+      {
+        "text": "Respiratory acidosis with metabolic compensation causing elevated AG",
+        "isCorrect": false,
+        "rationale": "Respiratory acidosis does not raise AG; this option confuses respiratory and metabolic processes. It would be correct only if unmeasured anions accumulated independently."
+      },
+      {
+        "text": "Laboratory miscalculation of anion gap producing spurious delta ratio",
+        "isCorrect": false,
+        "rationale": "While lab error can alter calculations, the lecture emphasizes delta ratio interpretation when values are accurate. It would be correct if repeat labs contradicted initial values."
+      }
+    ]
+  },
+  {
+    "question": "A 22-year-old with panic disorder hyperventilates and develops respiratory alkalosis. Which intracellular shift described in the lecture explains the associated decrease in ionized calcium symptoms?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO9 Explain electrolyte shifts associated with acute respiratory alkalosis",
+    "options": [
+      {
+        "text": "Increased albumin binding of calcium due to alkalemia lowering ionized calcium",
+        "isCorrect": true,
+        "rationale": "Lecture notes that alkalemia increases albumin's negative charge, enhancing calcium binding and reducing ionized calcium, causing paresthesias and tetany-like symptoms."
+      },
+      {
+        "text": "Renal phosphate retention causing decreased ionized calcium",
+        "isCorrect": false,
+        "rationale": "Phosphate retention affects calcium over longer term; acute respiratory alkalosis primarily alters protein binding. It would be correct if chronic phosphate changes occurred."
+      },
+      {
+        "text": "Increased bone resorption releasing calcium into circulation",
+        "isCorrect": false,
+        "rationale": "Bone resorption would increase ionized calcium, not decrease it. It would be correct if chronic bone turnover were the dominant process."
+      },
+      {
+        "text": "Decreased parathyroid hormone secretion causing hypocalcemia",
+        "isCorrect": false,
+        "rationale": "PTH changes are not the immediate mechanism in acute respiratory alkalosis; it would be correct if PTH were suppressed chronically."
+      },
+      {
+        "text": "Intracellular shift of calcium into muscle cells lowering serum ionized calcium",
+        "isCorrect": false,
+        "rationale": "Acute alkalosis affects protein binding rather than intracellular calcium shifts. It would be correct if cellular uptake mechanisms were acutely activated, which the lecture does not describe."
+      }
+    ]
+  },
+  {
+    "question": "A postoperative patient is hypoventilating with rising PaCO2. The lecture emphasizes which immediate clinical risk of acute respiratory acidosis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO3 Describe renal compensation mechanisms for chronic respiratory acidosis and alkalosis",
+    "options": [
+      {
+        "text": "Decreased cerebral perfusion pressure from cerebral vasodilation and increased intracranial pressure",
+        "isCorrect": false,
+        "rationale": "Acute hypercapnia causes cerebral vasodilation increasing intracranial pressure; decreased cerebral perfusion pressure is not the immediate effect. It would be correct if intracranial hypertension reduced perfusion in specific contexts."
+      },
+      {
+        "text": "Cardiac arrhythmias due to hyperkalemia from extracellular potassium shift",
+        "isCorrect": true,
+        "rationale": "Lecture notes that acute respiratory acidosis can cause extracellular potassium shifts leading to hyperkalemia and increased risk of arrhythmias, an immediate clinical concern."
+      },
+      {
+        "text": "Metabolic alkalosis from renal bicarbonate retention within minutes",
+        "isCorrect": false,
+        "rationale": "Renal compensation is slow; immediate metabolic alkalosis does not occur within minutes. It would be correct only over days with chronic respiratory acidosis."
+      },
+      {
+        "text": "Hypocalcemia from increased albumin binding causing tetany",
+        "isCorrect": false,
+        "rationale": "Acute respiratory acidosis tends to increase ionized calcium by decreasing albumin binding; hypocalcemia from increased binding occurs with alkalosis. It would be correct if alkalemia were present."
+      },
+      {
+        "text": "Pulmonary vasodilation improving right ventricular afterload",
+        "isCorrect": false,
+        "rationale": "Hypercapnia causes pulmonary vasoconstriction, worsening RV afterload. It would be correct only if hypercapnia induced vasodilation, which contradicts the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A 50-year-old with renal failure has metabolic acidosis. The lecture states that in renal tubular acidosis type 4, which electrolyte abnormality is characteristic?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO10 Differentiate types of renal tubular acidosis and associated electrolyte abnormalities",
+    "options": [
+      {
+        "text": "Hyperkalemia due to hypoaldosteronism or aldosterone resistance",
+        "isCorrect": true,
+        "rationale": "Lecture describes RTA type 4 as associated with hyperkalemia from hypoaldosteronism or aldosterone resistance impairing K+ secretion, distinguishing it from other RTA types."
+      },
+      {
+        "text": "Hypokalemia due to increased distal hydrogen secretion",
+        "isCorrect": false,
+        "rationale": "Hypokalemia is typical of RTA types 1 and 2 due to increased K+ loss, not type 4. It would be correct if the patient had RTA type 1 or 2."
+      },
+      {
+        "text": "Hypernatremia due to impaired sodium reabsorption",
+        "isCorrect": false,
+        "rationale": "RTA primarily affects acid-base and potassium handling; hypernatremia is not characteristic. It would be correct only if concurrent sodium disorders were present."
+      },
+      {
+        "text": "Hypocalcemia due to urinary calcium wasting",
+        "isCorrect": false,
+        "rationale": "Urinary calcium wasting can occur in some RTA types but hypocalcemia is not the defining feature of type 4. It would be correct if significant calcium loss led to low serum calcium."
+      },
+      {
+        "text": "Hyponatremia due to volume expansion from aldosterone excess",
+        "isCorrect": false,
+        "rationale": "Aldosterone excess causes sodium retention and hypertension, not hyponatremia; type 4 involves aldosterone deficiency/resistance. It would be correct only with different endocrine changes."
+      }
+    ]
+  },
+  {
+    "question": "A 35-year-old with chronic vomiting has metabolic alkalosis. The lecture recommends measuring urinary chloride to guide therapy. If urinary chloride is low, what is the next best step in management per the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "LO6 Use urinary chloride to distinguish causes of metabolic alkalosis",
+    "options": [
+      {
+        "text": "Administer isotonic saline to restore volume and chloride",
+        "isCorrect": true,
+        "rationale": "Lecture advises that chloride-responsive metabolic alkalosis (low urinary chloride) responds to isotonic saline to correct volume depletion and chloride deficit, reversing alkalosis."
+      },
+      {
+        "text": "Start acetazolamide to promote bicarbonate loss immediately",
+        "isCorrect": false,
+        "rationale": "Acetazolamide can be used for chloride-resistant alkalosis or when saline contraindicated; in chloride-responsive alkalosis, saline is first-line. It would be correct if urinary chloride were high or saline contraindicated."
+      },
+      {
+        "text": "Begin mineralocorticoid receptor antagonist therapy",
+        "isCorrect": false,
+        "rationale": "MR antagonists treat mineralocorticoid excess causing chloride-resistant alkalosis; they are not first-line for chloride-responsive alkalosis. It would be correct if aldosterone excess were documented."
+      },
+      {
+        "text": "Restrict dietary chloride and observe for spontaneous correction",
+        "isCorrect": false,
+        "rationale": "Restricting chloride would worsen chloride-responsive alkalosis. It would be correct only if chloride excess were causing a different disorder, which is not the case."
+      },
+      {
+        "text": "Immediate hemodialysis to remove excess bicarbonate",
+        "isCorrect": false,
+        "rationale": "Dialysis is reserved for severe refractory cases or renal failure; isotonic saline is preferred initially. It would be correct if patient had life-threatening alkalosis unresponsive to medical therapy."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic diarrhea has normal anion gap metabolic acidosis. The lecture indicates which compensatory respiratory response is expected and why?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO4 Explain respiratory compensation mechanisms for metabolic acidosis",
+    "options": [
+      {
+        "text": "Hyperventilation lowering PaCO2 to partially correct pH",
+        "isCorrect": true,
+        "rationale": "Lecture explains that metabolic acidosis triggers hyperventilation to reduce PaCO2, thereby partially compensating and raising pH toward normal."
+      },
+      {
+        "text": "Hypoventilation raising PaCO2 to buffer bicarbonate loss",
+        "isCorrect": false,
+        "rationale": "Hypoventilation would increase PaCO2 and worsen acidosis; it is not a compensatory response. It would be correct only if respiratory depression occurred pathologically."
+      },
+      {
+        "text": "No respiratory change because compensation is purely renal",
+        "isCorrect": false,
+        "rationale": "Respiratory compensation is immediate and important; renal compensation is slower. It would be correct only if respiratory drive were absent."
+      },
+      {
+        "text": "Periodic apnea alternating with hyperventilation causing variable PaCO2",
+        "isCorrect": false,
+        "rationale": "This pattern is not the expected compensatory response; it would be correct only if central respiratory pattern disturbances were present."
+      },
+      {
+        "text": "Increased dead space ventilation raising measured PaCO2",
+        "isCorrect": false,
+        "rationale": "Increased dead space raises PaCO2 and does not compensate for metabolic acidosis. It would be correct only if pulmonary pathology increased dead space ventilation."
+      }
+    ]
+  },
+  {
+    "question": "A 60-year-old with cirrhosis has hyponatremia and metabolic alkalosis. The lecture links hypoalbuminemia to changes in anion gap. How does low albumin affect the anion gap interpretation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO5 Describe causes and mechanisms of high anion gap metabolic acidosis",
+    "options": [
+      {
+        "text": "Low albumin lowers measured anion gap requiring correction",
+        "isCorrect": true,
+        "rationale": "Lecture states hypoalbuminemia reduces unmeasured anions, lowering the AG; clinicians should correct AG for albumin to avoid missing high AG acidosis."
+      },
+      {
+        "text": "Low albumin raises measured anion gap falsely",
+        "isCorrect": false,
+        "rationale": "Low albumin decreases AG because albumin is a major unmeasured anion. It would be correct only if albumin increased, not decreased."
+      },
+      {
+        "text": "Albumin has no effect on anion gap interpretation",
+        "isCorrect": false,
+        "rationale": "Lecture emphasizes albumin significantly affects AG; claiming no effect contradicts material. It would be correct only if albumin were irrelevant, which the lecture denies."
+      },
+      {
+        "text": "Low albumin converts normal AG to hyperchloremic acidosis",
+        "isCorrect": false,
+        "rationale": "Hypoalbuminemia alters AG magnitude but does not convert acidosis types. It would be correct only if chloride changes accompanied albumin changes."
+      },
+      {
+        "text": "Low albumin increases urinary anion gap making interpretation easier",
+        "isCorrect": false,
+        "rationale": "Urinary anion gap is separate and not directly increased by low serum albumin. It would be correct only if urinary electrolytes changed accordingly."
+      }
+    ]
+  },
+  {
+    "question": "A patient with diabetic ketoacidosis is treated with IV insulin. According to the lecture, which immediate electrolyte change must be anticipated and monitored?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO9 Explain electrolyte shifts associated with treatment of metabolic acidosis",
+    "options": [
+      {
+        "text": "Serum potassium decreases due to insulin-driven intracellular shift",
+        "isCorrect": true,
+        "rationale": "Lecture highlights that insulin drives K+ into cells, risking hypokalemia during DKA treatment; monitoring and replacement are essential."
+      },
+      {
+        "text": "Serum sodium rapidly increases due to osmotic diuresis correction",
+        "isCorrect": false,
+        "rationale": "Sodium changes are complex and not the immediate primary concern; potassium shift is emphasized. It would be correct only if osmotic shifts dominated acutely."
+      },
+      {
+        "text": "Serum calcium rises due to correction of acidosis",
+        "isCorrect": false,
+        "rationale": "Correction of acidosis can alter calcium binding, but immediate hypokalemia is the critical monitored change per lecture. It would be correct if calcium changes were the primary clinical issue."
+      },
+      {
+        "text": "Serum phosphate remains unchanged during insulin therapy",
+        "isCorrect": false,
+        "rationale": "Insulin can drive phosphate intracellularly causing hypophosphatemia; stating no change contradicts lecture. It would be correct only if phosphate were supplemented concurrently."
+      },
+      {
+        "text": "Serum magnesium increases due to intracellular shifts",
+        "isCorrect": false,
+        "rationale": "Magnesium often decreases with insulin therapy and diuresis; an increase is unlikely. It would be correct only if exogenous magnesium were given."
+      }
+    ]
+  },
+  {
+    "question": "A 48-year-old with vomiting and diuretic use has metabolic alkalosis. The lecture describes two categories: chloride-responsive and chloride-resistant. Which clinical feature suggests chloride-resistant alkalosis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO6 Use urinary chloride to distinguish causes of metabolic alkalosis",
+    "options": [
+      {
+        "text": "Hypertension with hypokalemia suggesting mineralocorticoid excess",
+        "isCorrect": true,
+        "rationale": "Lecture indicates chloride-resistant alkalosis is associated with mineralocorticoid excess causing hypertension and hypokalemia, distinguishing it from chloride-responsive causes."
+      },
+      {
+        "text": "History of prolonged vomiting with low urinary chloride",
+        "isCorrect": false,
+        "rationale": "Prolonged vomiting typically causes chloride-responsive alkalosis with low urinary chloride, not chloride-resistant. It would be correct if urinary chloride were low."
+      },
+      {
+        "text": "Improvement after isotonic saline infusion",
+        "isCorrect": false,
+        "rationale": "Improvement with saline indicates chloride-responsive alkalosis; chloride-resistant alkalosis does not correct with saline. It would be correct if saline corrected the alkalosis."
+      },
+      {
+        "text": "Normal blood pressure with volume depletion signs",
+        "isCorrect": false,
+        "rationale": "Volume depletion and normal BP suggest chloride-responsive causes like vomiting. It would be correct if mineralocorticoid excess were absent."
+      },
+      {
+        "text": "Low urinary potassium with high urinary chloride",
+        "isCorrect": false,
+        "rationale": "High urinary chloride may occur in chloride-resistant states, but the key clinical clue is hypertension and hypokalemia from aldosterone effect. It would be correct if urinary chloride and clinical context matched mineralocorticoid excess."
+      }
+    ]
+  },
+  {
+    "question": "A 25-year-old with acute salicylate ingestion is tachypneic and confused. The lecture recommends which immediate management step as most important initially?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "LO7 Recognize mixed acid-base disorders and their causes including salicylate toxicity",
+    "options": [
+      {
+        "text": "Administer activated charcoal if within ingestion window and airway protected",
+        "isCorrect": true,
+        "rationale": "Lecture emphasizes early decontamination with activated charcoal for recent salicylate ingestion if airway is protected, reducing absorption and improving outcomes."
+      },
+      {
+        "text": "Immediate intravenous sodium bicarbonate infusion to alkalinize serum",
+        "isCorrect": false,
+        "rationale": "Bicarbonate can be used to alkalinize urine and serum in severe toxicity, but initial priority is decontamination when within window. It would be correct if ingestion was remote and decontamination not possible."
+      },
+      {
+        "text": "Urgent hemodialysis as first-line regardless of clinical status",
+        "isCorrect": false,
+        "rationale": "Hemodialysis is reserved for severe or refractory cases; it is not always first-line. It would be correct if patient had life-threatening levels or renal failure per lecture criteria."
+      },
+      {
+        "text": "Give naloxone to reverse central respiratory depression",
+        "isCorrect": false,
+        "rationale": "Naloxone treats opioid overdose, not salicylate toxicity. It would be correct only if opioid co-ingestion were suspected and confirmed."
+      },
+      {
+        "text": "Administer intravenous calcium to correct hypocalcemia",
+        "isCorrect": false,
+        "rationale": "Calcium is not the immediate treatment for salicylate toxicity; it would be correct only if documented symptomatic hypocalcemia were present."
+      }
+    ]
+  },
+  {
+    "question": "A 70-year-old with chronic kidney disease has metabolic acidosis with low bicarbonate. The lecture suggests which long-term therapy to correct metabolic acidosis and slow progression of kidney disease?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "LO11 Describe therapeutic approaches to chronic metabolic acidosis in renal disease",
+    "options": [
+      {
+        "text": "Oral bicarbonate supplementation to normalize serum bicarbonate levels",
+        "isCorrect": true,
+        "rationale": "Lecture recommends oral bicarbonate therapy to correct chronic metabolic acidosis in CKD, which can reduce progression and improve nutritional status."
+      },
+      {
+        "text": "High protein diet to increase endogenous acid buffering capacity",
+        "isCorrect": false,
+        "rationale": "High protein increases acid load and worsens acidosis; it would be correct only if protein restriction were harmful, which contradicts lecture guidance."
+      },
+      {
+        "text": "Loop diuretic therapy to enhance bicarbonate reabsorption",
+        "isCorrect": false,
+        "rationale": "Loop diuretics do not enhance bicarbonate reabsorption and may worsen electrolyte balance. It would be correct only if a specific diuretic effect improved bicarbonate, which lecture does not state."
+      },
+      {
+        "text": "Immediate initiation of dialysis for all patients with low bicarbonate",
+        "isCorrect": false,
+        "rationale": "Dialysis is reserved for severe or refractory acidosis or advanced renal failure; not all patients require immediate dialysis. It would be correct only if criteria for dialysis were met."
+      },
+      {
+        "text": "Oral acetazolamide to increase renal bicarbonate retention chronically",
+        "isCorrect": false,
+        "rationale": "Acetazolamide causes bicarbonate wasting and metabolic acidosis; it would be correct only if the goal were to correct alkalosis, not acidosis."
+      }
+    ]
+  },
+  {
+    "question": "A 34-year-old with vomiting and muscle cramps has metabolic alkalosis. The lecture explains that contraction alkalosis occurs due to which primary physiologic change?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO6 Use urinary chloride to distinguish causes of metabolic alkalosis",
+    "options": [
+      {
+        "text": "Volume loss concentrating bicarbonate raising serum bicarbonate concentration",
+        "isCorrect": true,
+        "rationale": "Lecture describes contraction alkalosis as volume depletion concentrating bicarbonate and increasing HCO3- per liter, producing metabolic alkalosis."
+      },
+      {
+        "text": "Excess bicarbonate ingestion increasing total body bicarbonate stores",
+        "isCorrect": false,
+        "rationale": "Exogenous bicarbonate increases total stores but contraction alkalosis specifically involves volume loss concentrating bicarbonate. It would be correct if the patient had ingested large bicarbonate amounts."
+      },
+      {
+        "text": "Renal failure causing inability to excrete bicarbonate",
+        "isCorrect": false,
+        "rationale": "Renal failure typically causes metabolic acidosis due to reduced acid excretion; it would be correct only if renal bicarbonate handling were abnormal in a way that retained bicarbonate."
+      },
+      {
+        "text": "Respiratory alkalosis causing renal bicarbonate retention",
+        "isCorrect": false,
+        "rationale": "Respiratory alkalosis leads to renal bicarbonate loss, not retention. It would be correct only if chronic respiratory alkalosis induced paradoxical renal responses described differently."
+      },
+      {
+        "text": "Hyperaldosteronism causing urinary bicarbonate wasting",
+        "isCorrect": false,
+        "rationale": "Hyperaldosteronism causes bicarbonate retention and H+ secretion leading to alkalosis, not bicarbonate wasting. It would be correct only if aldosterone were deficient."
+      }
+    ]
+  },
+  {
+    "question": "A 29-year-old with severe diarrhea has low HCO3- and normal PaCO2 for expected compensation. The lecture teaches using the urine anion gap to assess renal ammonium excretion. A negative urine anion gap suggests what?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "LO12 Use urine anion gap to assess renal ammonium excretion in metabolic acidosis",
+    "options": [
+      {
+        "text": "Appropriate renal ammonium excretion indicating extrarenal bicarbonate loss",
+        "isCorrect": true,
+        "rationale": "Lecture states a negative urine anion gap implies high urinary NH4+ excretion, consistent with extrarenal bicarbonate loss (e.g., diarrhea) rather than renal tubular acidosis."
+      },
+      {
+        "text": "Impaired renal ammonium excretion indicating renal tubular acidosis",
+        "isCorrect": false,
+        "rationale": "Impaired NH4+ excretion yields a positive urine anion gap, not negative. It would be correct if the urine anion gap were positive."
+      },
+      {
+        "text": "Laboratory artifact due to unmeasured urinary ions causing false negativity",
+        "isCorrect": false,
+        "rationale": "While artifacts can occur, lecture emphasizes negative UAG as physiologic evidence of appropriate NH4+ excretion. It would be correct only if assay errors were documented."
+      },
+      {
+        "text": "Excess urinary bicarbonate loss causing negative urine anion gap",
+        "isCorrect": false,
+        "rationale": "Urinary bicarbonate loss affects urine pH and electrolytes but negative UAG specifically reflects NH4+ excretion. It would be correct only if bicarbonate loss dominated urinary electrolyte pattern."
+      },
+      {
+        "text": "High urinary chloride from diuretic use producing negative gap",
+        "isCorrect": false,
+        "rationale": "High urinary chloride can influence UAG but negative UAG in metabolic acidosis is interpreted as high NH4+ excretion per lecture. It would be correct only if diuretics altered urinary electrolytes significantly."
+      }
+    ]
+  },
+  {
+    "question": "A 52-year-old with chronic obstructive pulmonary disease has PaCO2 70 mmHg and HCO3- 36 mEq/L. The lecture provides expected compensation formulas. Which interpretation aligns with chronic respiratory acidosis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO3 Describe renal compensation mechanisms for chronic respiratory acidosis and alkalosis",
+    "options": [
+      {
+        "text": "Elevated HCO3- consistent with renal compensation in chronic respiratory acidosis",
+        "isCorrect": true,
+        "rationale": "Lecture indicates chronic respiratory acidosis leads to renal retention of bicarbonate raising HCO3-; elevated HCO3- with high PaCO2 fits chronic compensation."
+      },
+      {
+        "text": "Low HCO3- indicating acute respiratory acidosis without compensation",
+        "isCorrect": false,
+        "rationale": "Acute respiratory acidosis shows little HCO3- elevation; here HCO3- is elevated, indicating chronic compensation. It would be correct if HCO3- were near normal."
+      },
+      {
+        "text": "Normal HCO3- indicating mixed respiratory alkalosis and metabolic acidosis",
+        "isCorrect": false,
+        "rationale": "Normal HCO3- with high PaCO2 is inconsistent; mixed disorders would show different patterns. It would be correct only if additional metabolic processes balanced HCO3-."
+      },
+      {
+        "text": "Elevated HCO3- due to exogenous bicarbonate administration",
+        "isCorrect": false,
+        "rationale": "While exogenous bicarbonate can raise HCO3-, lecture attributes elevated HCO3- here to renal compensation in chronic respiratory acidosis. It would be correct if history confirmed bicarbonate therapy."
+      },
+      {
+        "text": "Low HCO3- due to concurrent high anion gap metabolic acidosis",
+        "isCorrect": false,
+        "rationale": "Concurrent high AG acidosis would lower HCO3- despite respiratory acidosis; here HCO3- is elevated, making that unlikely. It would be correct if AG were elevated and HCO3- low."
+      }
+    ]
+  },
+  {
+    "question": "A 19-year-old with cystic fibrosis has chronic respiratory alkalosis from hyperventilation. The lecture notes which renal adaptation occurs over time in chronic respiratory alkalosis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO3 Describe renal compensation mechanisms for chronic respiratory acidosis and alkalosis",
+    "options": [
+      {
+        "text": "Decreased renal bicarbonate reabsorption lowering serum bicarbonate concentration",
+        "isCorrect": true,
+        "rationale": "Lecture explains chronic respiratory alkalosis leads to renal bicarbonate wasting (decreased reabsorption) lowering serum HCO3- as compensation."
+      },
+      {
+        "text": "Increased renal bicarbonate reabsorption raising serum bicarbonate concentration",
+        "isCorrect": false,
+        "rationale": "This describes compensation for chronic respiratory acidosis, not alkalosis. It would be correct if PaCO2 were chronically elevated."
+      },
+      {
+        "text": "Immediate urinary ammonium increase within minutes",
+        "isCorrect": false,
+        "rationale": "Renal compensation is gradual; immediate changes within minutes are not expected. It would be correct only if acute renal mechanisms were mischaracterized."
+      },
+      {
+        "text": "Increased proximal hydrogen secretion causing metabolic alkalosis",
+        "isCorrect": false,
+        "rationale": "Increased H+ secretion would promote alkalosis, not compensation for alkalosis. It would be correct only if a paradoxical renal response occurred."
+      },
+      {
+        "text": "No renal adaptation occurs and pH remains unchanged chronically",
+        "isCorrect": false,
+        "rationale": "Lecture emphasizes renal adaptation over days to weeks; claiming no adaptation contradicts material. It would be correct only if renal function were absent."
+      }
+    ]
+  },
+  {
+    "question": "A 46-year-old with severe sepsis has lactic acidosis and hypotension. The lecture emphasizes prioritizing which immediate intervention to address the underlying cause of high anion gap metabolic acidosis?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "LO5 Describe causes and mechanisms of high anion gap metabolic acidosis",
+    "options": [
+      {
+        "text": "Restore tissue perfusion with intravenous fluids and vasopressors as needed",
+        "isCorrect": true,
+        "rationale": "Lecture stresses that lactic acidosis from hypoperfusion requires restoring perfusion via fluids and vasopressors to reduce lactate production and correct high AG acidosis."
+      },
+      {
+        "text": "Administer intravenous sodium bicarbonate routinely to normalize pH",
+        "isCorrect": false,
+        "rationale": "Bicarbonate may be used selectively but is not the primary intervention; correcting perfusion is prioritized. It would be correct only in severe refractory acidosis per lecture criteria."
+      },
+      {
+        "text": "Immediate hemodialysis to remove lactate and correct acidosis",
+        "isCorrect": false,
+        "rationale": "Dialysis does not remove lactate effectively and is not first-line for lactic acidosis; it would be correct only if renal failure or refractory acidosis met dialysis criteria."
+      },
+      {
+        "text": "Give high-dose insulin to shift lactate intracellularly",
+        "isCorrect": false,
+        "rationale": "Insulin is not a treatment for lactic acidosis; this distractor confuses mechanisms. It would be correct only if hyperglycemia required insulin and lactate changes were secondary."
+      },
+      {
+        "text": "Administer loop diuretics to reduce extracellular fluid and lactate",
+        "isCorrect": false,
+        "rationale": "Diuretics do not treat lactic acidosis and may worsen perfusion; it would be correct only if fluid overload with adequate perfusion required diuresis."
+      }
+    ]
+  },
+  {
+    "question": "A 31-year-old with vomiting and muscle cramps has metabolic alkalosis. The lecture indicates that measuring urinary chloride helps classify alkalosis. If urinary chloride is high despite vomiting, what does this suggest and what is the likely cause?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "LO6 Use urinary chloride to distinguish causes of metabolic alkalosis",
+    "options": [
+      {
+        "text": "Chloride-resistant alkalosis suggesting mineralocorticoid excess or diuretic effect",
+        "isCorrect": true,
+        "rationale": "Lecture notes high urinary chloride in chloride-resistant alkalosis points to mineralocorticoid excess or ongoing diuretic use rather than simple vomiting, guiding specific therapy."
+      },
+      {
+        "text": "Chloride-responsive alkalosis due to volume depletion from vomiting",
+        "isCorrect": false,
+        "rationale": "Chloride-responsive alkalosis typically shows low urinary chloride; high urinary chloride contradicts this. It would be correct if urinary chloride were low."
+      },
+      {
+        "text": "Laboratory contamination causing spuriously elevated urinary chloride",
+        "isCorrect": false,
+        "rationale": "While contamination can alter results, lecture emphasizes clinical correlation; high urinary chloride usually reflects physiology. It would be correct only if contamination were proven."
+      },
+      {
+        "text": "Renal tubular acidosis causing urinary chloride wasting",
+        "isCorrect": false,
+        "rationale": "RTA typically causes metabolic acidosis, not alkalosis. It would be correct only if RTA coexisted with other processes producing alkalosis."
+      },
+      {
+        "text": "Primary respiratory alkalosis causing secondary urinary chloride increase",
+        "isCorrect": false,
+        "rationale": "Respiratory alkalosis does not directly cause high urinary chloride in metabolic alkalosis classification. It would be correct only if respiratory changes altered renal chloride handling significantly."
+      }
+    ]
+  },
+  {
+    "question": "A 58-year-old with advanced liver disease has low albumin and an anion gap of 8 mEq/L. The lecture suggests correcting the anion gap for albumin. Which statement reflects that correction principle?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO5 Describe causes and mechanisms of high anion gap metabolic acidosis",
+    "options": [
+      {
+        "text": "Low albumin lowers measured anion gap so correction increases gap estimate",
+        "isCorrect": true,
+        "rationale": "Lecture explains hypoalbuminemia reduces AG magnitude; clinicians correct AG upward for low albumin to avoid missing high AG acidosis."
+      },
+      {
+        "text": "Low albumin raises measured anion gap so correction decreases gap estimate",
+        "isCorrect": false,
+        "rationale": "This inverts the relationship; low albumin lowers AG, not raises it. It would be correct only if albumin increased AG, which contradicts lecture."
+      },
+      {
+        "text": "Albumin correction is unnecessary for clinical interpretation of anion gap",
+        "isCorrect": false,
+        "rationale": "Lecture emphasizes albumin correction is important; claiming it's unnecessary contradicts material. It would be correct only if albumin were normal."
+      },
+      {
+        "text": "Corrected anion gap equals measured gap minus two times albumin deficit",
+        "isCorrect": false,
+        "rationale": "Specific correction formulas vary; lecture states correction increases AG for low albumin but does not endorse this exact formula. It would be correct only if the lecture provided this precise multiplier."
+      },
+      {
+        "text": "Anion gap should be ignored in hypoalbuminemia and urinary tests used instead",
+        "isCorrect": false,
+        "rationale": "Lecture advises correcting AG rather than ignoring it; urinary tests are complementary. It would be correct only if AG correction were impossible and urinary indices were available."
+      }
+    ]
+  },
+  {
+    "question": "A 40-year-old with chronic vomiting has metabolic alkalosis and low urinary chloride. The lecture describes the expected change in aldosterone activity in this setting. What change occurs and why?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO6 Use urinary chloride to distinguish causes of metabolic alkalosis",
+    "options": [
+      {
+        "text": "Increased aldosterone activity due to volume depletion stimulating renin-angiotensin system",
+        "isCorrect": true,
+        "rationale": "Lecture explains volume depletion from vomiting activates RAAS increasing aldosterone, promoting H+ secretion and K+ loss, sustaining metabolic alkalosis."
+      },
+      {
+        "text": "Decreased aldosterone activity due to chloride loss suppressing RAAS",
+        "isCorrect": false,
+        "rationale": "Chloride loss does not suppress RAAS; volume depletion stimulates it. It would be correct only if volume status were expanded and RAAS suppressed."
+      },
+      {
+        "text": "Unchanged aldosterone activity unrelated to vomiting",
+        "isCorrect": false,
+        "rationale": "Vomiting-induced volume depletion typically alters aldosterone; claiming no change contradicts lecture. It would be correct only if RAAS were impaired."
+      },
+      {
+        "text": "Increased aldosterone activity causing immediate bicarbonate excretion",
+        "isCorrect": false,
+        "rationale": "Aldosterone increases H+ secretion and bicarbonate retention, not excretion. It would be correct only if a different hormone caused bicarbonate excretion."
+      },
+      {
+        "text": "Decreased aldosterone activity causing hyperkalemia and acidosis",
+        "isCorrect": false,
+        "rationale": "Decreased aldosterone would cause hyperkalemia and acidosis, opposite of expected effects in vomiting-induced alkalosis. It would be correct only if adrenal insufficiency were present."
+      }
+    ]
+  },
+  {
+    "question": "A 67-year-old with sepsis has lactic acidosis and low bicarbonate. The lecture outlines when bicarbonate therapy is indicated. Which scenario from the lecture justifies intravenous bicarbonate administration?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "LO11 Describe therapeutic approaches to acute metabolic acidosis including indications for bicarbonate therapy",
+    "options": [
+      {
+        "text": "Severe acidemia with pH below 7.1 despite resuscitation efforts",
+        "isCorrect": true,
+        "rationale": "Lecture recommends considering IV bicarbonate for severe acidemia (pH <7.1) when other measures fail, as a temporizing measure while addressing underlying cause."
+      },
+      {
+        "text": "Any lactic acidosis regardless of pH to rapidly normalize bicarbonate",
+        "isCorrect": false,
+        "rationale": "Routine bicarbonate for all lactic acidosis is not recommended; lecture limits use to severe refractory acidemia. It would be correct only if guidelines mandated universal bicarbonate use."
+      },
+      {
+        "text": "Mild metabolic acidosis with pH 7.30 to prevent progression",
+        "isCorrect": false,
+        "rationale": "Mild acidosis is typically managed by treating underlying cause; bicarbonate is not routinely indicated. It would be correct only if patient had contraindications to other therapies."
+      },
+      {
+        "text": "Chronic metabolic acidosis in ambulatory patients as first-line therapy",
+        "isCorrect": false,
+        "rationale": "Chronic outpatient acidosis may be treated with oral bicarbonate, but IV bicarbonate is not first-line for stable ambulatory patients. It would be correct only if oral therapy were impossible."
+      },
+      {
+        "text": "Respiratory acidosis with elevated PaCO2 to correct ventilation",
+        "isCorrect": false,
+        "rationale": "Bicarbonate does not treat respiratory acidosis; ventilation management is required. It would be correct only if mixed metabolic acidosis coexisted."
+      }
+    ]
+  },
+  {
+    "question": "A 24-year-old with severe diarrhea has metabolic acidosis. The lecture suggests which bedside test helps distinguish renal from extrarenal causes by estimating urinary ammonium?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO12 Use urine anion gap to assess renal ammonium excretion in metabolic acidosis",
+    "options": [
+      {
+        "text": "Urine anion gap calculated from urine sodium minus chloride plus potassium",
+        "isCorrect": true,
+        "rationale": "Lecture teaches the urine anion gap (UAG = Na + K - Cl) estimates urinary NH4+ excretion; a negative UAG suggests extrarenal bicarbonate loss."
+      },
+      {
+        "text": "Urine osmolality measurement to directly quantify ammonium excretion",
+        "isCorrect": false,
+        "rationale": "Urine osmolality does not directly estimate NH4+ excretion; UAG is the recommended bedside test. It would be correct only if osmolality correlated with NH4+ in a specific context."
+      },
+      {
+        "text": "Fractional excretion of sodium to assess renal ammonium handling",
+        "isCorrect": false,
+        "rationale": "FENa assesses sodium handling, not NH4+ excretion. It would be correct only if sodium handling directly reflected ammonium excretion in a given disorder."
+      },
+      {
+        "text": "Urine pH alone to determine renal versus extrarenal acidosis",
+        "isCorrect": false,
+        "rationale": "Urine pH can be misleading; UAG provides better estimation of NH4+. It would be correct only if urine pH were extremely low or high and interpreted with other data."
+      },
+      {
+        "text": "Serum chloride measurement to infer urinary ammonium excretion",
+        "isCorrect": false,
+        "rationale": "Serum chloride does not directly estimate urinary NH4+; UAG uses urine electrolytes. It would be correct only if serum chloride changes were linked to urinary patterns in context."
+      }
+    ]
+  },
+  {
+    "question": "A 39-year-old with vomiting has metabolic alkalosis. The lecture emphasizes potassium handling in alkalosis. Which serum potassium change is expected and why?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO9 Explain electrolyte shifts associated with metabolic alkalosis",
+    "options": [
+      {
+        "text": "Hypokalemia due to increased renal potassium excretion with H secretion",
+        "isCorrect": true,
+        "rationale": "Lecture explains metabolic alkalosis promotes H+ secretion and K+ excretion in the distal nephron, leading to hypokalemia commonly seen with vomiting-induced alkalosis."
+      },
+      {
+        "text": "Hyperkalemia due to intracellular shift of potassium",
+        "isCorrect": false,
+        "rationale": "Alkalosis typically causes K+ to shift into cells causing hypokalemia, not hyperkalemia. It would be correct only if acidosis or cell lysis caused extracellular K+ increase."
+      },
+      {
+        "text": "No change in serum potassium because renal handling is unaffected",
+        "isCorrect": false,
+        "rationale": "Renal handling is affected in alkalosis leading to K+ loss; claiming no change contradicts lecture. It would be correct only if renal function were absent."
+      },
+      {
+        "text": "Variable potassium depending solely on dietary intake",
+        "isCorrect": false,
+        "rationale": "Diet influences K+ but alkalosis-driven renal losses are primary in this context. It would be correct only if dietary extremes dominated electrolyte status."
+      },
+      {
+        "text": "Transient hyperkalemia followed by persistent hypernatremia",
+        "isCorrect": false,
+        "rationale": "This option mixes unrelated electrolyte changes; lecture emphasizes hypokalemia in alkalosis. It would be correct only with specific coexisting disorders."
+      }
+    ]
+  },
+  {
+    "question": "A 55-year-old with chronic vomiting and diuretic use has metabolic alkalosis. The lecture suggests which targeted pharmacologic therapy when chloride-responsive measures fail or are contraindicated?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "LO11 Describe therapeutic approaches to metabolic alkalosis including pharmacologic options",
+    "options": [
+      {
+        "text": "Acetazolamide to promote renal bicarbonate excretion and correct alkalosis",
+        "isCorrect": true,
+        "rationale": "Lecture recommends acetazolamide, a carbonic anhydrase inhibitor, to increase bicarbonate excretion when saline is contraindicated or chloride-responsive measures fail."
+      },
+      {
+        "text": "Spironolactone to increase aldosterone activity and retain bicarbonate",
+        "isCorrect": false,
+        "rationale": "Spironolactone is an aldosterone antagonist that would reduce H+ secretion and help correct alkalosis in mineralocorticoid excess, but it does not increase aldosterone activity. It would be correct only if mineralocorticoid excess required blockade."
+      },
+      {
+        "text": "High-dose loop diuretics to enhance bicarbonate reabsorption",
+        "isCorrect": false,
+        "rationale": "Loop diuretics increase distal sodium delivery and can worsen alkalosis; they do not enhance bicarbonate reabsorption. It would be correct only if a specific diuretic effect paradoxically improved alkalosis."
+      },
+      {
+        "text": "Oral sodium bicarbonate to buffer acid and raise pH further",
+        "isCorrect": false,
+        "rationale": "Giving bicarbonate would worsen metabolic alkalosis. It would be correct only if metabolic acidosis were present."
+      },
+      {
+        "text": "Intravenous calcium to stabilize membranes during alkalosis",
+        "isCorrect": false,
+        "rationale": "Calcium is not a treatment for metabolic alkalosis itself; it addresses symptomatic hypocalcemia. It would be correct only if symptomatic hypocalcemia occurred."
+      }
+    ]
+  },
+  {
+    "question": "A 62-year-old with chronic kidney disease has metabolic acidosis. The lecture outlines that metabolic acidosis can worsen bone disease. Which mechanism links acidosis to bone demineralization?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO13 Explain systemic effects of chronic metabolic acidosis including bone buffering",
+    "options": [
+      {
+        "text": "Bone buffers hydrogen by releasing calcium and phosphate into circulation",
+        "isCorrect": true,
+        "rationale": "Lecture explains chronic acidosis leads bone to buffer excess H+ by releasing calcium and phosphate, contributing to bone demineralization and osteoporosis risk."
+      },
+      {
+        "text": "Bone formation increases to sequester excess bicarbonate",
+        "isCorrect": false,
+        "rationale": "Bone formation does not increase to sequester bicarbonate; acidosis promotes resorption. It would be correct only if anabolic bone responses occurred, which lecture does not state."
+      },
+      {
+        "text": "Acidosis directly stimulates osteoblast activity increasing bone mass",
+        "isCorrect": false,
+        "rationale": "Acidosis inhibits osteoblasts and stimulates resorption; it does not increase bone mass. It would be correct only if contradictory mechanisms were present."
+      },
+      {
+        "text": "Renal phosphate retention strengthens bone preventing demineralization",
+        "isCorrect": false,
+        "rationale": "Phosphate retention in CKD can worsen bone disease; it does not prevent demineralization. It would be correct only if phosphate handling improved bone health."
+      },
+      {
+        "text": "Increased vitamin D activation in acidosis protects bone",
+        "isCorrect": false,
+        "rationale": "Acidosis impairs bone health and may alter vitamin D metabolism negatively. It would be correct only if vitamin D activation increased, which lecture does not indicate."
+      }
+    ]
+  },
+  {
+    "question": "A 47-year-old with vomiting has metabolic alkalosis and low urinary chloride. The lecture indicates that potassium repletion is important. Which explanation best matches the lecture rationale for potassium replacement?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO9 Explain electrolyte shifts associated with metabolic alkalosis",
+    "options": [
+      {
+        "text": "Potassium repletion reduces renal H secretion and helps correct alkalosis",
+        "isCorrect": true,
+        "rationale": "Lecture states hypokalemia promotes H+ secretion and bicarbonate retention; correcting K+ reduces renal H+ secretion, aiding correction of metabolic alkalosis."
+      },
+      {
+        "text": "Potassium repletion directly increases serum bicarbonate concentration",
+        "isCorrect": false,
+        "rationale": "K+ replacement does not directly raise bicarbonate; it reduces renal mechanisms that sustain alkalosis. It would be correct only if K+ had a direct bicarbonate-raising effect."
+      },
+      {
+        "text": "Potassium repletion is contraindicated because it worsens alkalosis",
+        "isCorrect": false,
+        "rationale": "Replacing K+ helps correct alkalosis; claiming contraindication contradicts lecture. It would be correct only if hyperkalemia were present."
+      },
+      {
+        "text": "Potassium repletion increases urinary chloride excretion worsening alkalosis",
+        "isCorrect": false,
+        "rationale": "K+ repletion tends to reduce renal H+ secretion and correct alkalosis; it does not worsen it via chloride excretion. It would be correct only if specific renal handling produced that effect."
+      },
+      {
+        "text": "Potassium repletion is unnecessary if isotonic saline is given",
+        "isCorrect": false,
+        "rationale": "While saline helps, K+ repletion is often necessary to correct hypokalemia and sustain alkalosis correction. It would be correct only if K+ were normal."
+      }
+    ]
+  },
+  {
+    "question": "A 50-year-old with diabetic ketoacidosis is treated with insulin and fluids. The lecture warns about monitoring phosphate. Which clinical consequence of severe hypophosphatemia after treatment is emphasized?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "LO9 Explain electrolyte shifts associated with treatment of metabolic acidosis",
+    "options": [
+      {
+        "text": "Respiratory muscle weakness leading to ventilatory failure risk",
+        "isCorrect": true,
+        "rationale": "Lecture highlights that insulin-driven intracellular phosphate shifts can cause severe hypophosphatemia, leading to muscle weakness including respiratory muscles and risk of ventilatory failure."
+      },
+      {
+        "text": "Cardiac arrhythmias from hyperphosphatemia increasing conduction",
+        "isCorrect": false,
+        "rationale": "Hyperphosphatemia is not the expected consequence; hypophosphatemia causes muscle weakness and arrhythmias less commonly. It would be correct only if phosphate rose excessively."
+      },
+      {
+        "text": "Seizures due to acute hypercalcemia after phosphate shift",
+        "isCorrect": false,
+        "rationale": "Seizures are more associated with severe electrolyte disturbances but acute hypercalcemia is not the typical result of phosphate shifts post-insulin. It would be correct only if calcium rose markedly."
+      },
+      {
+        "text": "Worsening metabolic acidosis from phosphate buffering loss",
+        "isCorrect": false,
+        "rationale": "Loss of phosphate buffers can affect acid-base but the immediate clinical concern per lecture is muscle weakness and respiratory compromise. It would be correct only if buffering loss dominated clinical picture."
+      },
+      {
+        "text": "Renal stone formation due to increased urinary phosphate excretion",
+        "isCorrect": false,
+        "rationale": "Acute hypophosphatemia from intracellular shift does not immediately cause stones; this is a chronic process. It would be correct only with prolonged urinary phosphate losses."
+      }
+    ]
+  },
+  {
+    "question": "A 28-year-old with salicylate overdose has mixed acid-base disturbance. The lecture outlines that alkalinizing the urine aids salicylate elimination. What is the cellular mechanism by which urine alkalinization increases salicylate excretion?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "LO7 Recognize mixed acid-base disorders and their causes including salicylate toxicity",
+    "options": [
+      {
+        "text": "Ion trapping by increasing salicylate ionization reducing tubular reabsorption",
+        "isCorrect": true,
+        "rationale": "Lecture explains that alkalinizing urine increases salicylate ionization (more charged form), reducing passive reabsorption and promoting renal excretion via ion trapping."
+      },
+      {
+        "text": "Enhanced active secretion of salicylate via organic anion transporters",
+        "isCorrect": false,
+        "rationale": "While transporters exist, the primary mechanism emphasized is passive ion trapping with urine alkalinization. It would be correct only if transporter-mediated secretion were the dominant pathway."
+      },
+      {
+        "text": "Increased glomerular filtration rate washing out salicylate from tubules",
+        "isCorrect": false,
+        "rationale": "Increasing GFR may increase excretion but urine alkalinization specifically increases ionization and reduces reabsorption; it would be correct only if GFR were the manipulated variable."
+      },
+      {
+        "text": "Competitive inhibition of salicylate reabsorption by bicarbonate molecules",
+        "isCorrect": false,
+        "rationale": "Bicarbonate does not competitively inhibit salicylate reabsorption; it changes urine pH to ionize salicylate. It would be correct only if a direct competitive mechanism existed."
+      },
+      {
+        "text": "Formation of salicylate-bicarbonate complexes excreted in urine",
+        "isCorrect": false,
+        "rationale": "No stable salicylate-bicarbonate complexes are the mechanism; ionization and reduced reabsorption explain increased excretion. It would be correct only if such complexes formed and were excreted."
+      }
+    ]
+  },
+  {
+    "question": "A 43-year-old with chronic metabolic acidosis is counseled about systemic effects. The lecture links chronic acidosis to muscle wasting. Which mechanism best explains this association?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "LO13 Explain systemic effects of chronic metabolic acidosis including muscle catabolism",
+    "options": [
+      {
+        "text": "Acidosis stimulates proteolysis releasing amino acids for renal ammoniagenesis",
+        "isCorrect": true,
+        "rationale": "Lecture states chronic acidosis increases muscle proteolysis to provide glutamine for renal ammoniagenesis, contributing to muscle wasting."
+      },
+      {
+        "text": "Acidosis enhances insulin sensitivity promoting muscle anabolism",
+        "isCorrect": false,
+        "rationale": "Acidosis impairs insulin signaling and promotes catabolism, not anabolism. It would be correct only if acidosis paradoxically increased anabolic pathways."
+      },
+      {
+        "text": "Acidosis directly increases muscle glycogen storage reducing protein breakdown",
+        "isCorrect": false,
+        "rationale": "Acidosis promotes proteolysis rather than glycogen storage; this option contradicts lecture. It would be correct only if metabolic shifts favored glycogen accumulation."
+      },
+      {
+        "text": "Acidosis causes increased growth hormone secretion preserving muscle mass",
+        "isCorrect": false,
+        "rationale": "Growth hormone effects do not counteract acidosis-driven proteolysis per lecture. It would be correct only if GH secretion increased sufficiently to prevent wasting."
+      },
+      {
+        "text": "Acidosis reduces cortisol levels thereby increasing muscle catabolism",
+        "isCorrect": false,
+        "rationale": "Reduced cortisol would not increase catabolism; cortisol typically promotes catabolism. It would be correct only if cortisol dynamics were altered in a specific way."
+      }
+    ]
+  },
+  {
+    "question": "A 36-year-old with vomiting has metabolic alkalosis. The lecture suggests that measuring urine chloride distinguishes causes. Which urine chloride value pattern supports chloride-responsive alkalosis?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "LO6 Use urinary chloride to distinguish causes of metabolic alkalosis",
+    "options": [
+      {
+        "text": "Urine chloride less than 20 millimoles per liter indicating responsiveness",
+        "isCorrect": true,
+        "rationale": "Lecture defines chloride-responsive metabolic alkalosis as urine Cl- <20 mmol/L, indicating volume depletion and likely response to saline therapy."
+      },
+      {
+        "text": "Urine chloride greater than 40 millimoles per liter indicating responsiveness",
+        "isCorrect": false,
+        "rationale": "Urine Cl- >40 mmol/L suggests chloride-resistant alkalosis; it would be correct only if the question asked about resistant causes."
+      },
+      {
+        "text": "Urine chloride equal to serum chloride indicating mixed disorder",
+        "isCorrect": false,
+        "rationale": "Urine chloride equal to serum chloride is not a diagnostic threshold per lecture. It would be correct only if specific comparative criteria were taught."
+      },
+      {
+        "text": "Urine chloride undetectable due to laboratory error",
+        "isCorrect": false,
+        "rationale": "Undetectable chloride is unlikely; lecture uses measurable thresholds. It would be correct only if assay failure were documented."
+      },
+      {
+        "text": "Urine chloride between 20 and 40 millimoles per liter indicating responsiveness",
+        "isCorrect": false,
+        "rationale": "Intermediate values require clinical correlation; lecture uses <20 as responsive and >40 as resistant. It would be correct only with additional context."
+      }
+    ]
+  },
+  {
+    "question": "A 54-year-old with chronic kidney disease has metabolic acidosis. The lecture lists systemic consequences. Which of the following is a recognized effect of chronic metabolic acidosis on nutrition?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "LO13 Explain systemic effects of chronic metabolic acidosis including nutritional consequences",
+    "options": [
+      {
+        "text": "Protein-energy wasting due to increased proteolysis and decreased appetite",
+        "isCorrect": true,
+        "rationale": "Lecture notes chronic acidosis leads to protein-energy wasting via increased proteolysis and reduced appetite, worsening nutritional status."
+      },
+      {
+        "text": "Improved muscle mass due to anabolic stimulation by acidosis",
+        "isCorrect": false,
+        "rationale": "Acidosis promotes catabolism, not anabolism. It would be correct only if acidosis paradoxically stimulated anabolic pathways, which lecture does not state."
+      },
+      {
+        "text": "Increased fat deposition due to enhanced lipogenesis",
+        "isCorrect": false,
+        "rationale": "Acidosis favors proteolysis and does not promote fat deposition per lecture. It would be correct only if metabolic shifts favored lipogenesis."
+      },
+      {
+        "text": "No nutritional impact as acid-base status is unrelated to metabolism",
+        "isCorrect": false,
+        "rationale": "Lecture emphasizes metabolic acidosis affects nutrition; claiming no impact contradicts material. It would be correct only if acidosis were clinically insignificant."
+      },
+      {
+        "text": "Selective carbohydrate malabsorption causing weight loss",
+        "isCorrect": false,
+        "rationale": "Carbohydrate malabsorption is not the mechanism described; protein catabolism is. It would be correct only if GI malabsorption were present."
+      }
+    ]
+  }
+]
