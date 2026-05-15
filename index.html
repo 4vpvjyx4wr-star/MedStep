@@ -559,25 +559,84 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 
 /* Calculator Panel */
 .calc-panel {
-  position: absolute; top: 70px; right: 28px; width: 220px;
-  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-  z-index: 101; display: none; flex-direction: column; box-shadow: -5px 5px 20px rgba(0,0,0,0.4);
-  padding: 10px;
+  position: fixed; top: 70px; right: 28px; width: 300px; min-width: 240px; max-width: min(96vw, 520px);
+  min-height: 380px; max-height: 92vh;
+  background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+  z-index: 1200; display: none; flex-direction: column;
+  box-shadow: 0 12px 40px color-mix(in srgb, var(--bg) 55%, transparent), 0 0 0 1px color-mix(in srgb, var(--text) 8%, transparent);
+  overflow: hidden; resize: both;
+  --calc-btn-bg: color-mix(in srgb, var(--text) 11%, var(--card));
+  --calc-btn-fg: var(--text);
+  --calc-btn-border: color-mix(in srgb, var(--text) 24%, var(--border));
+  --calc-op-bg: color-mix(in srgb, var(--primary) 16%, var(--card));
+  --calc-op-fg: var(--primary);
+  --calc-fn-bg: color-mix(in srgb, var(--text) 7%, var(--card));
+  --calc-fn-fg: var(--text);
+  --calc-eq-fg: var(--bg);
 }
+.calc-panel.open { display: flex; }
+.calc-header {
+  display: flex; align-items: center; gap: 8px; padding: 10px 12px 8px;
+  border-bottom: 1px solid var(--border); cursor: grab; user-select: none; flex-shrink: 0;
+  background: color-mix(in srgb, var(--text) 5%, var(--card));
+}
+.calc-header:active { cursor: grabbing; }
+.calc-grip { opacity: .45; font-size: .85rem; letter-spacing: -2px; line-height: 1; color: var(--text); }
+.calc-title { flex: 1; font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--text); opacity: .85; }
+.calc-close-btn {
+  width: 28px; height: 28px; border-radius: 8px; border: 1px solid var(--calc-btn-border);
+  background: var(--calc-btn-bg); color: var(--calc-btn-fg); cursor: pointer; font-size: .95rem; line-height: 1;
+  display: flex; align-items: center; justify-content: center; transition: background .15s, color .15s, border-color .15s;
+}
+.calc-close-btn:hover { background: color-mix(in srgb, var(--danger) 22%, var(--card)); color: var(--danger); border-color: color-mix(in srgb, var(--danger) 40%, var(--border)); }
+.calc-display-wrap { padding: 8px 12px 0; flex-shrink: 0; }
 .calc-display {
-  width: 100%; height: 40px; background: #111; color: var(--primary);
-  border: 1px solid var(--border); border-radius: 6px; margin-bottom: 10px;
-  text-align: right; padding: 10px; font-family: var(--font-mono); font-size: 1.1rem;
+  width: 100%; height: 52px; box-sizing: border-box;
+  background: color-mix(in srgb, var(--bg) 65%, var(--card));
+  color: var(--text); border: 1px solid var(--border); border-radius: 10px;
+  text-align: right; padding: 10px 12px; font-family: var(--font-mono); font-size: 1.15rem;
+  outline: none; transition: border-color .2s, box-shadow .2s;
 }
-.calc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; }
+.calc-display:focus { border-color: var(--primary); box-shadow: 0 0 0 2px color-mix(in srgb, var(--primary) 28%, transparent); }
+.calc-keys-wrap { flex: 1; min-height: 0; overflow: auto; padding: 8px 12px 10px; }
+.calc-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
 .calc-btn {
-  padding: 10px; border: 1px solid var(--border); border-radius: 4px;
-  background: rgba(255,255,255,0.05); cursor: pointer; font-size: 0.9rem;
-  transition: background 0.2s;
+  min-height: 36px; padding: 8px 4px; border: 1px solid var(--calc-btn-border); border-radius: 8px;
+  background: var(--calc-btn-bg); color: var(--calc-btn-fg); cursor: pointer; font-size: .82rem;
+  font-family: var(--font-mono); font-weight: 600; transition: background .15s, transform .1s, border-color .15s;
+  line-height: 1.1;
 }
-.calc-btn:hover { background: rgba(255,255,255,0.1); }
-.calc-btn.op { color: var(--primary); font-weight: bold; }
-.calc-btn.eq { background: var(--primary); color: #000; }
+.calc-btn:hover { background: color-mix(in srgb, var(--text) 18%, var(--card)); border-color: color-mix(in srgb, var(--text) 35%, var(--border)); }
+.calc-btn:active { transform: scale(.96); }
+.calc-btn.op { background: var(--calc-op-bg); color: var(--calc-op-fg); border-color: color-mix(in srgb, var(--primary) 38%, var(--border)); font-weight: 700; }
+.calc-btn.fn { background: var(--calc-fn-bg); color: var(--calc-fn-fg); font-size: .68rem; font-weight: 700; letter-spacing: -.02em; }
+.calc-btn.eq {
+  background: var(--primary); color: var(--calc-eq-fg); border-color: var(--primary);
+  font-weight: 800;
+}
+.calc-btn.wide { grid-column: span 2; }
+.calc-advanced-keys {
+  display: none; grid-column: 1 / -1;
+  grid-template-columns: repeat(5, 1fr); gap: 6px;
+}
+.calc-panel.advanced-open .calc-advanced-keys { display: grid; }
+.calc-advanced-toggle {
+  background: color-mix(in srgb, var(--primary) 12%, var(--card));
+  color: var(--primary); border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+  font-size: .7rem; font-weight: 800; letter-spacing: .04em;
+}
+.calc-advanced-toggle[aria-expanded="true"] {
+  background: color-mix(in srgb, var(--primary) 24%, var(--card));
+}
+.calc-display::placeholder { color: color-mix(in srgb, var(--text) 40%, transparent); opacity: 1; }
+.calc-resize-handle {
+  position: absolute; right: 0; bottom: 0; width: 18px; height: 18px; cursor: nwse-resize;
+  opacity: .45; z-index: 3;
+}
+.calc-resize-handle::before {
+  content: ''; position: absolute; right: 3px; bottom: 3px; width: 10px; height: 10px;
+  border-right: 2px solid var(--text); border-bottom: 2px solid var(--text); border-radius: 0 0 2px 0;
+}
 
 /* ── Copilot Integration Styles ───────────────────────── */
 .copilot-card {
@@ -1479,6 +1538,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <div class="kbd-row"><span class="kbd-key">C</span><span class="kbd-desc">Calculator</span></div>
     <div class="kbd-row"><span class="kbd-key">F</span><span class="kbd-desc">Flag Question</span></div>
     <div class="kbd-row"><span class="kbd-key">T</span><span class="kbd-desc">Random Theme</span></div>
+    <div class="kbd-row"><span class="kbd-key">=</span><span class="kbd-desc">Toggle Fullscreen</span></div>
   </div>
 
   </div>
@@ -1536,6 +1596,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
           <div class="kbd-row"><span class="kbd-key">C</span><span class="kbd-desc">Calculator</span></div>
           <div class="kbd-row"><span class="kbd-key">F</span><span class="kbd-desc">Flag Question</span></div>
           <div class="kbd-row"><span class="kbd-key">T</span><span class="kbd-desc">Random Theme</span></div>
+          <div class="kbd-row"><span class="kbd-key">=</span><span class="kbd-desc">Toggle Fullscreen</span></div>
         </div>
       </div>
       <div class="btn-row" style="align-items:center">
@@ -1647,28 +1708,55 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     </table>
   </div>
 </div>
-<div class="calc-panel" id="calc-panel">
-  <input type="text" class="calc-display" id="calc-screen" disabled value="0">
-  <div class="calc-grid">
-    <button class="calc-btn op" onclick="clearCalc()">C</button>
-    <button class="calc-btn op" onclick="pressCalc('/')">/</button>
-    <button class="calc-btn op" onclick="pressCalc('*')">×</button>
-    <button class="calc-btn op" onclick="backspaceCalc()">⌫</button>
-    <button class="calc-btn" onclick="pressCalc('7')">7</button>
-    <button class="calc-btn" onclick="pressCalc('8')">8</button>
-    <button class="calc-btn" onclick="pressCalc('9')">9</button>
-    <button class="calc-btn op" onclick="pressCalc('-')">-</button>
-    <button class="calc-btn" onclick="pressCalc('4')">4</button>
-    <button class="calc-btn" onclick="pressCalc('5')">5</button>
-    <button class="calc-btn" onclick="pressCalc('6')">6</button>
-    <button class="calc-btn op" onclick="pressCalc('+')">+</button>
-    <button class="calc-btn" onclick="pressCalc('1')">1</button>
-    <button class="calc-btn" onclick="pressCalc('2')">2</button>
-    <button class="calc-btn" onclick="pressCalc('3')">3</button>
-    <button class="calc-btn eq" onclick="solveCalc()">=</button>
-    <button class="calc-btn" onclick="pressCalc('0')" style="grid-column: span 2;">0</button>
-    <button class="calc-btn" onclick="pressCalc('.')">.</button>
+<div class="calc-panel" id="calc-panel" role="dialog" aria-label="Calculator">
+  <div class="calc-header" id="calc-drag-handle">
+    <span class="calc-grip" aria-hidden="true">⋮⋮</span>
+    <span class="calc-title">Calculator</span>
+    <button type="button" class="calc-close-btn" onclick="toggleCalc()" title="Close calculator" aria-label="Close calculator">✕</button>
   </div>
+  <div class="calc-display-wrap">
+    <input type="text" class="calc-display" id="calc-screen" value="" placeholder="0" autocomplete="off" spellcheck="false" inputmode="decimal" aria-label="Calculation">
+  </div>
+  <div class="calc-keys-wrap">
+    <div class="calc-grid">
+      <button type="button" class="calc-btn op" onclick="clearCalc()">AC</button>
+      <button type="button" class="calc-btn op" onclick="backspaceCalc()">⌫</button>
+      <button type="button" class="calc-btn op" onclick="insertCalc('(')">(</button>
+      <button type="button" class="calc-btn op" onclick="insertCalc(')')">)</button>
+      <button type="button" class="calc-btn op" onclick="insertCalc('%')">%</button>
+      <div class="calc-advanced-keys" id="calc-advanced-keys">
+        <button type="button" class="calc-btn fn" onclick="insertCalc('sin(')">sin</button>
+        <button type="button" class="calc-btn fn" onclick="insertCalc('cos(')">cos</button>
+        <button type="button" class="calc-btn fn" onclick="insertCalc('tan(')">tan</button>
+        <button type="button" class="calc-btn fn" onclick="insertCalc('log(')">log</button>
+        <button type="button" class="calc-btn fn" onclick="insertCalc('ln(')">ln</button>
+        <button type="button" class="calc-btn fn" onclick="insertCalc('e')">e</button>
+      </div>
+      <button type="button" class="calc-btn fn calc-advanced-toggle" id="calc-advanced-toggle" onclick="toggleCalcAdvanced()" aria-expanded="false" title="Scientific functions">f(x) ▾</button>
+      <button type="button" class="calc-btn fn" onclick="insertCalc('^2')">x²</button>
+      <button type="button" class="calc-btn fn" onclick="insertCalc('sqrt(')">√</button>
+      <button type="button" class="calc-btn fn" onclick="insertCalc('^')">xʸ</button>
+      <button type="button" class="calc-btn fn" onclick="insertCalc('π')">π</button>
+      <button type="button" class="calc-btn" onclick="insertCalc('7')">7</button>
+      <button type="button" class="calc-btn" onclick="insertCalc('8')">8</button>
+      <button type="button" class="calc-btn" onclick="insertCalc('9')">9</button>
+      <button type="button" class="calc-btn op" onclick="insertCalc('÷')">÷</button>
+      <button type="button" class="calc-btn op" onclick="insertCalc('×')">×</button>
+      <button type="button" class="calc-btn" onclick="insertCalc('4')">4</button>
+      <button type="button" class="calc-btn" onclick="insertCalc('5')">5</button>
+      <button type="button" class="calc-btn" onclick="insertCalc('6')">6</button>
+      <button type="button" class="calc-btn op" onclick="insertCalc('-')">−</button>
+      <button type="button" class="calc-btn op" onclick="insertCalc('+')">+</button>
+      <button type="button" class="calc-btn" onclick="insertCalc('1')">1</button>
+      <button type="button" class="calc-btn" onclick="insertCalc('2')">2</button>
+      <button type="button" class="calc-btn" onclick="insertCalc('3')">3</button>
+      <button type="button" class="calc-btn wide" onclick="insertCalc('0')">0</button>
+      <button type="button" class="calc-btn" onclick="insertCalc('.')">.</button>
+      <button type="button" class="calc-btn op" onclick="toggleCalcSign()">±</button>
+      <button type="button" class="calc-btn eq" onclick="solveCalc()">=</button>
+    </div>
+  </div>
+  <div class="calc-resize-handle" aria-hidden="true"></div>
 </div>
       <div class="pause-overlay" id="pause-overlay">
         <div style="text-align:center">
@@ -4011,32 +4099,248 @@ function toggleLabValues() {
 }
 function toggleCalc() {
   const panel = document.getElementById('calc-panel');
-  panel.style.display = (panel.style.display === 'flex') ? 'none' : 'flex';
+  const opening = !panel.classList.contains('open');
+  panel.classList.toggle('open', opening);
+  if (opening) {
+    setTimeout(() => getCalcScreen().focus(), 0);
+  } else {
+    panel.classList.remove('advanced-open');
+    const advBtn = document.getElementById('calc-advanced-toggle');
+    if (advBtn) {
+      advBtn.textContent = 'f(x) ▾';
+      advBtn.setAttribute('aria-expanded', 'false');
+    }
+  }
 }
 
-function pressCalc(val) {
-  const screen = document.getElementById('calc-screen');
-  if (screen.value === '0') screen.value = val;
-  else screen.value += val;
+function toggleCalcAdvanced() {
+  const panel = document.getElementById('calc-panel');
+  const btn = document.getElementById('calc-advanced-toggle');
+  if (!panel || !btn) return;
+  const open = panel.classList.toggle('advanced-open');
+  btn.textContent = open ? 'f(x) ▴' : 'f(x) ▾';
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
 }
 
-function clearCalc() { document.getElementById('calc-screen').value = '0'; }
+function getCalcScreen() { return document.getElementById('calc-screen'); }
+
+function isCalcBlank(v) { return v === '' || v === '0'; }
+
+function shouldReplaceCalcValue(val, start, end) {
+  if (val === '') return true;
+  if (start === 0 && end === val.length) return true;
+  if (val === '0' && start === end) return true;
+  return false;
+}
+
+function insertCalc(token) {
+  const screen = getCalcScreen();
+  const start = screen.selectionStart ?? screen.value.length;
+  const end = screen.selectionEnd ?? screen.value.length;
+  const val = screen.value;
+  const before = val.slice(0, start);
+  const after = val.slice(end);
+  const replaceAll = shouldReplaceCalcValue(val, start, end);
+  const isDigit = /^[0-9]$/.test(token);
+  const isOp = '+-×÷−*/%^'.includes(token);
+  const isFunc = /^[a-z]/.test(token) || token === 'π' || token === 'e' || token === '√';
+  let next;
+  let pos;
+  if (replaceAll) {
+    if (isDigit || token === '.' || token === '(' || isFunc) {
+      next = token;
+    } else if (isOp) {
+      next = token === '−' ? '-' : token;
+    } else {
+      next = token;
+    }
+    pos = next.length;
+  } else {
+    next = before + token + after;
+    pos = before.length + token.length;
+  }
+  screen.value = next;
+  screen.setSelectionRange(pos, pos);
+  screen.focus();
+}
+
+function clearCalc() {
+  const screen = getCalcScreen();
+  screen.value = '';
+  screen.setSelectionRange(0, 0);
+  screen.focus();
+}
 
 function backspaceCalc() {
-  const screen = document.getElementById('calc-screen');
-  screen.value = screen.value.slice(0, -1) || '0';
+  const screen = getCalcScreen();
+  const start = screen.selectionStart ?? screen.value.length;
+  const end = screen.selectionEnd ?? screen.value.length;
+  if (start !== end) {
+    screen.value = screen.value.slice(0, start) + screen.value.slice(end);
+    screen.setSelectionRange(start, start);
+  } else if (start > 0) {
+    screen.value = screen.value.slice(0, start - 1) + screen.value.slice(start);
+    screen.setSelectionRange(start - 1, start - 1);
+  } else {
+    screen.value = '';
+    screen.setSelectionRange(0, 0);
+  }
+  screen.focus();
+}
+
+function toggleCalcSign() {
+  const screen = getCalcScreen();
+  const v = screen.value.trim();
+  if (!v || isCalcBlank(v)) return;
+  if (v.startsWith('-')) screen.value = v.slice(1) || '';
+  else screen.value = '-' + v;
+  screen.focus();
+}
+
+function sanitizeCalcExpression(raw) {
+  let e = String(raw).trim();
+  if (!e) return '';
+  e = e.replace(/(^|[+\-*/(%\s])0+([1-9])/g, '$1$2');
+  return e;
+}
+
+function prepareCalcExpression(raw) {
+  let e = sanitizeCalcExpression(raw);
+  if (!e) return '0';
+  e = e.replace(/×/g, '*').replace(/÷/g, '/');
+  e = e.replace(/(\d+(?:\.\d+)?)\s*%/g, '($1/100)');
+  e = e.replace(/π/g, 'PI');
+  e = e.replace(/(?<![a-zA-Z0-9.])e(?![a-zA-Z0-9(])/g, 'E');
+  e = e.replace(/\^/g, '**');
+  return e;
+}
+
+function evaluateCalcExpression(expr) {
+  const prepared = prepareCalcExpression(expr);
+  const stripped = prepared
+    .replace(/\b(sin|cos|tan|log|ln|sqrt)\b/g, '')
+    .replace(/\bPI\b/g, '')
+    .replace(/\bE\b/g, '')
+    .replace(/\*\*/g, '*');
+  if (!/^[\d+\-*/().\s*eE]+$/.test(stripped)) throw new Error('Invalid characters');
+  const sin = (d) => Math.sin(d * Math.PI / 180);
+  const cos = (d) => Math.cos(d * Math.PI / 180);
+  const tan = (d) => Math.tan(d * Math.PI / 180);
+  const log = (x) => Math.log10(x);
+  const ln = (x) => Math.log(x);
+  const sqrt = (x) => Math.sqrt(x);
+  const PI = Math.PI;
+  const E = Math.E;
+  const result = Function('sin', 'cos', 'tan', 'log', 'ln', 'sqrt', 'PI', 'E', `"use strict"; return (${prepared});`)(sin, cos, tan, log, ln, sqrt, PI, E);
+  if (typeof result !== 'number' || !Number.isFinite(result)) throw new Error('Invalid result');
+  return String(Math.round(result * 1e12) / 1e12);
 }
 
 function solveCalc() {
-  const screen = document.getElementById('calc-screen');
+  const screen = getCalcScreen();
+  const expr = screen.value.trim();
+  if (!expr) return;
   try {
-    // Note: eval is used here for simplicity in a local tool context
-    screen.value = eval(screen.value.replace('×', '*'));
+    screen.value = evaluateCalcExpression(expr);
+    screen.setSelectionRange(screen.value.length, screen.value.length);
   } catch (e) {
-    screen.value = "Error";
-    setTimeout(clearCalc, 1000);
+    screen.value = 'Error';
+    setTimeout(clearCalc, 1200);
   }
+  screen.focus();
 }
+
+(function initCalcPanel() {
+  const panel = document.getElementById('calc-panel');
+  const handle = document.getElementById('calc-drag-handle');
+  const screen = document.getElementById('calc-screen');
+  if (!panel || !handle || !screen) return;
+
+  let dragging = false;
+  let dragX = 0, dragY = 0, startLeft = 0, startTop = 0;
+
+  function clampPanelPosition() {
+    const rect = panel.getBoundingClientRect();
+    const maxL = Math.max(8, window.innerWidth - rect.width - 8);
+    const maxT = Math.max(8, window.innerHeight - rect.height - 8);
+    const left = Math.min(maxL, Math.max(8, parseFloat(panel.style.left) || rect.left));
+    const top = Math.min(maxT, Math.max(8, parseFloat(panel.style.top) || rect.top));
+    panel.style.left = left + 'px';
+    panel.style.top = top + 'px';
+  }
+
+  handle.addEventListener('mousedown', (e) => {
+    if (e.button !== 0 || e.target.closest('.calc-close-btn')) return;
+    dragging = true;
+    const rect = panel.getBoundingClientRect();
+    panel.style.right = 'auto';
+    panel.style.left = rect.left + 'px';
+    panel.style.top = rect.top + 'px';
+    dragX = e.clientX;
+    dragY = e.clientY;
+    startLeft = rect.left;
+    startTop = rect.top;
+    e.preventDefault();
+  });
+
+  const resizeHandle = panel.querySelector('.calc-resize-handle');
+  let resizing = false;
+  let resizeW = 0, resizeH = 0, resizeX = 0, resizeY = 0;
+
+  if (resizeHandle) {
+    resizeHandle.addEventListener('mousedown', (e) => {
+      if (e.button !== 0) return;
+      resizing = true;
+      const rect = panel.getBoundingClientRect();
+      resizeW = rect.width;
+      resizeH = rect.height;
+      resizeX = e.clientX;
+      resizeY = e.clientY;
+      panel.style.right = 'auto';
+      panel.style.left = rect.left + 'px';
+      panel.style.top = rect.top + 'px';
+      e.preventDefault();
+      e.stopPropagation();
+    });
+  }
+
+  document.addEventListener('mousemove', (e) => {
+    if (dragging) {
+      panel.style.left = (startLeft + e.clientX - dragX) + 'px';
+      panel.style.top = (startTop + e.clientY - dragY) + 'px';
+    }
+    if (resizing) {
+      const w = Math.max(240, Math.min(window.innerWidth - 16, resizeW + e.clientX - resizeX));
+      const h = Math.max(320, Math.min(window.innerHeight - 16, resizeH + e.clientY - resizeY));
+      panel.style.width = w + 'px';
+      panel.style.height = h + 'px';
+      panel.style.resize = 'none';
+    }
+  });
+
+  document.addEventListener('mouseup', () => {
+    const wasActive = dragging || resizing;
+    dragging = false;
+    resizing = false;
+    if (wasActive) clampPanelPosition();
+  });
+
+  panel.addEventListener('mousedown', (e) => e.stopPropagation());
+
+  screen.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); solveCalc(); }
+    if (e.key === 'Escape') { e.preventDefault(); toggleCalc(); }
+    e.stopPropagation();
+  });
+
+  screen.addEventListener('click', (e) => e.stopPropagation());
+
+  panel.querySelectorAll('.calc-btn').forEach((btn) => {
+    btn.addEventListener('mousedown', (e) => e.preventDefault());
+  });
+
+  window.addEventListener('resize', clampPanelPosition);
+})();
 function toggleHighlighter() {
   highlighterMode = !highlighterMode;
   document.body.classList.toggle('highlighter-active', highlighterMode);
@@ -4109,6 +4413,7 @@ function extractJSON(text) {
 document.addEventListener('keydown',e=>{
   if(document.getElementById('quiz-screen').classList.contains('hidden'))return;
   if(e.target.tagName==='TEXTAREA'||e.target.tagName==='INPUT')return;
+  if(e.target.id==='calc-screen'||e.target.closest('#calc-panel'))return;
   if(e.key==='ArrowRight')changeQ(1);
   if(e.key==='ArrowLeft') changeQ(-1);
   if(e.key.toLowerCase()==='r')undoAnswer();
@@ -4132,6 +4437,15 @@ document.addEventListener('keydown',e=>{
   if(tag==='TEXTAREA'||tag==='INPUT'||tag==='SELECT')return;
   e.preventDefault();
   randomTheme();
+});
+
+document.addEventListener('keydown',e=>{
+  if(e.key!=='='||e.repeat)return;
+  if(e.ctrlKey||e.metaKey||e.altKey)return;
+  const tag=e.target&&e.target.tagName;
+  if(tag==='TEXTAREA'||tag==='INPUT'||tag==='SELECT')return;
+  e.preventDefault();
+  toggleFullscreen();
 });
 // ══ QUIZ LIBRARY ══════════════════════════════════════════
 const GITHUB_USER   = '4vpvjyx4wr-star';
