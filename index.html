@@ -379,6 +379,41 @@ textarea:focus{outline:none;border-color:var(--primary)}
 .nav-box.flagged{outline:2px solid rgba(245, 158, 11, 0.85); outline-offset:-2px}
 .nav-box.flagged-disabled{opacity:.35;pointer-events:none;cursor:default}
 .header-btn.flagged{border-color:rgba(245, 158, 11, 0.9);background:rgba(245,158,11,0.08)}
+.header-btn.report-btn{
+  color:#ff6b6b;border-color:rgba(231,76,60,0.55);background:rgba(231,76,60,0.1);
+  padding:5px 8px;font-size:.95rem;line-height:1;min-width:0;gap:0;
+}
+.header-btn.report-btn:hover{border-color:#e74c3c;background:rgba(231,76,60,0.18)}
+.header-btn.report-btn.reported{opacity:0.45;pointer-events:none;color:var(--subtle);border-color:var(--border);background:rgba(255,255,255,.04)}
+
+#report-question-modal{
+  position:fixed;inset:0;background:rgba(0,0,0,.65);
+  z-index:2150;display:none;align-items:center;justify-content:center;
+  backdrop-filter:blur(4px);
+}
+#report-question-modal.open{display:flex}
+#email-quiz-confirm-modal{
+  position:fixed;inset:0;background:rgba(0,0,0,.7);
+  z-index:2250;display:none;align-items:center;justify-content:center;
+  backdrop-filter:blur(4px);
+}
+#email-quiz-confirm-modal.open{display:flex}
+.report-modal-card{
+  background:var(--card);border:1px solid var(--border);border-radius:20px;
+  padding:28px;width:100%;max-width:480px;max-height:90vh;overflow-y:auto;
+  box-shadow:0 24px 60px rgba(0,0,0,.6);animation:modalIn .25s cubic-bezier(.25,.8,.25,1);
+}
+.report-modal-title{font-size:1.05rem;font-weight:800;margin-bottom:6px}
+.report-modal-sub{font-size:.72rem;opacity:.55;margin-bottom:12px;line-height:1.55}
+.report-modal-note{
+  font-size:.72rem;line-height:1.55;margin-bottom:14px;padding:10px 12px;
+  border-radius:10px;border:1px solid rgba(231,76,60,0.25);background:rgba(231,76,60,0.06);
+}
+.report-modal-note strong{font-weight:800}
+.report-validation-error{
+  font-size:.72rem;color:var(--danger);margin:-6px 0 12px;line-height:1.45;min-height:1.2em;
+}
+.report-details-hint{font-size:.68rem;opacity:.5;margin:-8px 0 10px;line-height:1.45}
 
 .option-wrap{margin-bottom:6px}
 .option-row{display:flex;align-items:flex-start;gap:12px;cursor:pointer;border:1px solid var(--border);border-radius:10px;padding:11px 14px;transition:border .15s,background .15s;background:rgba(255,255,255,.01)}
@@ -1370,6 +1405,36 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   </div>
 </div>
 
+<!-- ══ REPORT QUESTION MODAL ═══════════════════════════════ -->
+<div id="report-question-modal" onclick="if(event.target===this)closeReportModal()">
+  <div class="report-modal-card">
+    <div class="report-modal-title">Report Question</div>
+    <div class="report-modal-note">
+      Your report goes <strong>directly to the MedStep developer</strong>. I review reports and work to fix issues <strong>the same day</strong> when possible.
+      Make sure this quiz came from the quiz library, and it is <strong>NOT</strong> one that you generated yourself. I cannot fix those.
+    </div>
+    <div class="report-modal-sub">To submit, choose a reason below <strong>and</strong> write a rationale (at least <strong>5 words</strong>).</div>
+
+    <label class="modal-label" for="report-rationale">Reason (required)</label>
+    <select class="modal-input" id="report-rationale" onchange="updateReportDetailsHint()">
+      <option value="" disabled selected>Select a reason…</option>
+      <option value="Inaccurate information">Inaccurate information</option>
+      <option value="Nonsensical question">Nonsensical question</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label class="modal-label" for="report-details">Your rationale (required)</label>
+    <div class="report-details-hint" id="report-details-hint">Explain the problem clearly. Minimum 5 words.</div>
+    <textarea class="modal-textarea" id="report-details" placeholder="Describe what is wrong and why…" style="height:120px;margin-bottom:6px" oninput="updateReportDetailsHint()"></textarea>
+    <div class="report-validation-error" id="report-validation-error" aria-live="polite"></div>
+
+    <div style="display:flex;gap:10px">
+      <button class="btn btn-secondary" style="flex:0 0 auto" onclick="closeReportModal()">Cancel</button>
+      <button class="btn btn-primary" id="report-submit-btn" style="flex:1" onclick="submitQuestionReport()">Submit Report</button>
+    </div>
+  </div>
+</div>
+
 <!-- ══ ADD QUIZ MODAL ══════════════════════════════════════ -->
 <div id="add-quiz-modal">
   <div class="modal-card">
@@ -1454,6 +1519,37 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
         Step B replaces the entire manifest.json content — that's intentional.
       </div>
     </div>
+
+    <div id="email-quiz-submit-section">
+      <hr style="border:none;border-top:1px solid var(--border);margin:20px 0 14px">
+      <div style="font-size:.72rem;opacity:.55;line-height:1.5;margin-bottom:10px">
+        No GitHub access? Email your quiz to the developer for manual upload. <strong>Quiz title</strong> is required; tags are optional.
+      </div>
+      <button type="button" id="email-quiz-submit-btn" class="btn btn-secondary" style="width:100%;font-size:.8rem;padding:10px" onclick="submitQuizToDeveloperByEmail()">
+        ✉️ Email Quiz to Developer for Library Upload
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ EMAIL QUIZ CONFIRM MODAL ═══════════════════════════ -->
+<div id="email-quiz-confirm-modal" onclick="if(event.target===this)closeEmailQuizConfirmModal()">
+  <div class="report-modal-card">
+    <div class="report-modal-title">Confirm quiz submission</div>
+    <div class="report-modal-sub" id="email-quiz-confirm-summary"></div>
+    <div class="report-modal-note" style="margin-bottom:14px">
+      Are you sure you want to send this quiz to the developer? It will be reviewed for upload to the library.
+    </div>
+
+    <label class="modal-label" for="email-quiz-description">Quiz description (required)</label>
+    <div class="report-details-hint">Briefly describe this quiz (topic, source lecture, block/exam, etc.).</div>
+    <textarea class="modal-textarea" id="email-quiz-description" placeholder="e.g. Block 2 Exam 1 Week 3 — Pharmacology autonomic drugs, from lecture slides…" style="height:110px;margin-bottom:6px"></textarea>
+    <div class="report-validation-error" id="email-quiz-confirm-error" aria-live="polite"></div>
+
+    <div style="display:flex;gap:10px">
+      <button class="btn btn-secondary" style="flex:0 0 auto" onclick="closeEmailQuizConfirmModal()">Go back</button>
+      <button class="btn btn-primary" id="email-quiz-final-send-btn" style="flex:1" onclick="confirmQuizEmailSubmission()">Send to developer</button>
+    </div>
   </div>
 </div>
 
@@ -1509,6 +1605,15 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
       <span id="opacity-val" style="font-family:var(--font-mono);font-size:.75rem;opacity:.6">100%</span>
     </div>
     <input type="range" id="panel-opacity-slider" min="10" max="100" value="100" oninput="setPanelOpacity(this.value)" style="width:100%;accent-color:var(--primary);cursor:pointer">
+  </div>
+
+  <hr class="settings-divider">
+
+  <div class="setting-row" style="flex-direction:column;align-items:stretch;gap:6px">
+    <span style="font-size:.78rem;font-weight:700">📬 Question report notifications</span>
+    <span style="font-size:.68rem;opacity:.5;line-height:1.45">Reports are emailed to <strong>medstepdev@gmail.com</strong>.</span>
+    <input class="modal-input" id="report-notify-email" type="email" value="medstepdev@gmail.com" readonly style="margin-bottom:6px;opacity:.7" tabindex="-1">
+    <button class="btn btn-secondary" style="width:100%;font-size:.75rem;padding:8px;margin-bottom:4px" onclick="copyPendingReports()">Copy pending reports (local backup)</button>
   </div>
 
   <hr class="settings-divider">
@@ -1770,6 +1875,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
           <button class="header-btn scramble-btn" id="scramble-btn" onclick="scrambleAll()" title="Scramble (S)">
             <span class="spin-icon">🔀</span> Scramble
           </button>
+          <button class="header-btn report-btn" id="report-btn" onclick="openReportModal()" title="Report question" aria-label="Report question">❗</button>
           <button class="header-btn" id="flag-btn" onclick="toggleFlagForCurrentQuestion()" title="Flag (F)" style="opacity:0.65">☆ Flag</button>
           <button class="header-btn" id="undo-btn" onclick="undoAnswer()" title="Undo answer (R)" style="display:none">↩️ Undo</button>
         </div>
@@ -1863,7 +1969,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 // ── State ─────────────────────────────────────────────
 let questions=[], currentIdx=0, timerInt=null, isPaused=false, isReviewMode=false, highlighterMode=false,
   isFlaggedReviewMode=false, flaggedReviewIndices=[], flaggedReviewPos=0, flaggedReviewPosByIdx=new Map(),
-  savedQuizState=null;
+  savedQuizState=null, activeQuizMeta=null;
 const LETTERS=['A','B','C','D','E'];
 const ALL_THEMES=[
   'theme-slate-orange','theme-cyber','theme-autumn','theme-mesa','theme-evergreen',
@@ -1947,6 +2053,12 @@ Now generate 30 questions based on the lecture materials attached.`;
 const LS_PREF_FEEDBACK='medstep_pref_feedback';
 const LS_PREF_EXAM_GRID='medstep_pref_exam_grid';
 const LS_PREF_TIMER_VISIBLE='medstep_pref_timer_visible';
+const LS_REPORT_NOTIFY_EMAIL='medstep_report_notify_email';
+const LS_REPORT_QUEUE='medstep_question_reports';
+const REPORT_EMAIL_DEFAULT='medstepdev@gmail.com';
+const REPORT_GITHUB_USER='4vpvjyx4wr-star';
+const REPORT_GITHUB_REPO='MedStep';
+const REPORT_GITHUB_BRANCH='main';
 
 function saveFeedbackPref(){
   localStorage.setItem(LS_PREF_FEEDBACK, document.getElementById('feedback-toggle').checked?'1':'0');
@@ -2009,7 +2121,13 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
   });
   if(menuScroll) menuScroll.addEventListener('scroll',()=>closeThemeSelectPanel(),{passive:true});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape') closeThemeSelectPanel();});
+  document.addEventListener('keydown',e=>{
+    if(e.key==='Escape'){
+      closeThemeSelectPanel();
+      if(document.getElementById('report-question-modal')?.classList.contains('open')) closeReportModal();
+      if(document.getElementById('email-quiz-confirm-modal')?.classList.contains('open')) closeEmailQuizConfirmModal();
+    }
+  });
 
   const savedOpacity = localStorage.getItem('medstep_panel_opacity');
   if(savedOpacity) setPanelOpacity(savedOpacity);
@@ -2017,6 +2135,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   initThemeSelectUI();
   const savedTheme = localStorage.getItem('medstep_theme');
   if(savedTheme) changeTheme(savedTheme);
+  loadReportNotifyEmail();
 });
 
 function toggleLO(){
@@ -3686,15 +3805,16 @@ function loadDemo(){
 function initQuiz(){
   try{
     const raw=JSON.parse(document.getElementById('mega-input').value.trim());
-    buildQuiz(raw);
+    buildQuiz(raw, { source: 'manual', title: 'Pasted Quiz' });
   }catch(e){alert('Invalid JSON. Make sure you copied the full Copilot output.');}
 }
-function buildQuiz(raw){
+function buildQuiz(raw, meta){
   savedQuizState = null;
+  activeQuizMeta = meta || { source: 'manual', title: 'Custom Quiz' };
   document.getElementById('back-to-quiz-btn').style.display = 'none';
   isReviewMode=false;
   isFlaggedReviewMode=false; flaggedReviewIndices=[]; flaggedReviewPos=0; flaggedReviewPosByIdx=new Map();
-  questions=shuffle(raw).map(q=>({...q,options:shuffle([...q.options]),userAnswer:null,time:0,flagged:false}));
+  questions=shuffle(raw).map(q=>({...q,options:shuffle([...q.options]),userAnswer:null,time:0,flagged:false,reported:false}));
   document.getElementById('total-q-count').innerText=questions.length;
   document.getElementById('finish-btn').style.display='none';
   document.getElementById('next-btn').innerText='Next Question →';
@@ -3730,6 +3850,235 @@ function toggleFlagForCurrentQuestion(){
   renderGrid();
   updateFlagButton();
   showToast(q.flagged?'⭐ Flagged for review':'☆ Removed flag');
+}
+
+// ══ QUESTION REPORTS ════════════════════════════════════
+function getReportNotifyEmail(){
+  return REPORT_EMAIL_DEFAULT;
+}
+function loadReportNotifyEmail(){
+  const el = document.getElementById('report-notify-email');
+  if (el) el.value = REPORT_EMAIL_DEFAULT;
+}
+function saveReportNotifyEmail(){ /* fixed developer inbox */ }
+function countReportWords(text){
+  return (text || '').trim().split(/\s+/).filter(Boolean).length;
+}
+function githubQuizEditUrl(file){
+  if (!file) return '';
+  const clean = String(file).replace(/^quizzes\//, '');
+  return 'https://github.com/' + REPORT_GITHUB_USER + '/' + REPORT_GITHUB_REPO +
+    '/edit/' + REPORT_GITHUB_BRANCH + '/quizzes/' + encodeURIComponent(clean);
+}
+function updateReportDetailsHint(){
+  const category = document.getElementById('report-rationale')?.value || '';
+  const hint = document.getElementById('report-details-hint');
+  if (!hint) return;
+  if (category === 'Inaccurate information') {
+    hint.innerHTML = 'Explain what is wrong. If you can, <strong>cite the slide</strong> (or page/lecture) with the correct information. Minimum 5 words.';
+  } else if (category === 'Nonsensical question') {
+    hint.textContent = 'Explain why the question does not make sense. Minimum 5 words.';
+  } else if (category === 'Other') {
+    hint.textContent = 'Describe the issue clearly. Minimum 5 words.';
+  } else {
+    hint.textContent = 'Explain the problem clearly. Minimum 5 words.';
+  }
+}
+function validateReportForm(){
+  const category = document.getElementById('report-rationale')?.value || '';
+  const rationale = document.getElementById('report-details')?.value.trim() || '';
+  if (!category) {
+    return { ok: false, msg: 'Please select a reason from the dropdown.' };
+  }
+  if (countReportWords(rationale) < 5) {
+    return { ok: false, msg: 'Your rationale must be at least 5 words.' };
+  }
+  return { ok: true };
+}
+function showReportValidationError(msg){
+  const el = document.getElementById('report-validation-error');
+  if (el) el.textContent = msg || '';
+}
+function buildQPickerMeta(){
+  const sources = _qpickerBuildingChunks.length
+    ? _qpickerBuildingChunks.map(c => c.label)
+    : [_qpickerCurrentLabel];
+  return {
+    source: 'library',
+    title: _qpickerCurrentLabel || 'Library Quiz',
+    file: _qpickerEntry?.file || null,
+    sources
+  };
+}
+function updateReportButton(){
+  const btn = document.getElementById('report-btn');
+  if (!btn) return;
+  if (isReviewMode) {
+    btn.style.display = 'none';
+    return;
+  }
+  btn.style.display = 'inline-flex';
+  const q = questions[currentIdx];
+  const reported = !!q?.reported;
+  btn.classList.toggle('reported', reported);
+  btn.innerText = reported ? '✓' : '❗';
+  btn.title = reported ? 'You already reported this question' : 'Report question';
+  btn.setAttribute('aria-label', reported ? 'Question reported' : 'Report question');
+}
+function openReportModal(){
+  if (isReviewMode) return;
+  const q = questions[currentIdx];
+  if (!q) return;
+  if (q.reported) { showToast('This question was already reported'); return; }
+  const sel = document.getElementById('report-rationale');
+  sel.selectedIndex = 0;
+  document.getElementById('report-details').value = '';
+  showReportValidationError('');
+  updateReportDetailsHint();
+  document.getElementById('report-submit-btn').disabled = false;
+  document.getElementById('report-submit-btn').innerText = 'Submit Report';
+  document.getElementById('report-question-modal').classList.add('open');
+  document.getElementById('report-rationale').focus();
+}
+function closeReportModal(){
+  document.getElementById('report-question-modal').classList.remove('open');
+}
+function questionReportPayload(q, idx, category, rationale){
+  const meta = activeQuizMeta || { source: 'unknown', title: 'Unknown' };
+  const quizFile = meta.file || null;
+  const githubEditUrl = githubQuizEditUrl(quizFile);
+  return {
+    reportedAt: new Date().toISOString(),
+    category,
+    rationale: rationale || '',
+    githubEditUrl,
+    quiz: {
+      source: meta.source,
+      title: meta.title,
+      file: quizFile,
+      sources: meta.sources || null
+    },
+    questionIndex: idx + 1,
+    questionTotal: questions.length,
+    question: q.question,
+    difficulty_order: q.difficulty_order || '',
+    cited_learning_objective: q.cited_learning_objective || '',
+    options: (q.options || []).map((o, i) => ({
+      letter: LETTERS[i] || String(i + 1),
+      text: o.text,
+      isCorrect: !!o.isCorrect,
+      rationale: o.rationale || ''
+    })),
+    userAnswer: q.userAnswer ? q.userAnswer.text : null,
+    flagged: !!q.flagged,
+    appUrl: location.href.split('#')[0]
+  };
+}
+function formatReportForEmail(payload){
+  const lines = [
+    'MedStep Question Report',
+    '──────────────────────',
+    'Time: ' + payload.reportedAt,
+    'Reason: ' + payload.category,
+    '',
+    'Quiz: ' + payload.quiz.title,
+    payload.quiz.file ? 'File: quizzes/' + payload.quiz.file : '',
+    payload.quiz.sources ? 'Sources: ' + payload.quiz.sources.join(', ') : '',
+    'Question: ' + payload.questionIndex + ' of ' + payload.questionTotal,
+    '',
+    payload.githubEditUrl ? 'Edit on GitHub:\n' + payload.githubEditUrl : 'Edit on GitHub: (quiz file unknown — pasted or custom quiz)',
+    '',
+    'Learning objective:',
+    payload.cited_learning_objective || '(none)',
+    '',
+    'Stem:',
+    payload.question,
+    '',
+    'Options:',
+    ...payload.options.map(o =>
+      (o.letter || '?') + '. ' + o.text + (o.isCorrect ? ' [CORRECT]' : '') +
+      (o.rationale ? '\n   Rationale: ' + o.rationale : '')
+    ),
+    '',
+    'Student rationale:',
+    payload.rationale || '(none)',
+    '',
+    'User answer: ' + (payload.userAnswer || '(unanswered)'),
+    'Flagged: ' + (payload.flagged ? 'yes' : 'no'),
+    'App: ' + payload.appUrl
+  ];
+  return lines.filter(Boolean).join('\n');
+}
+function queueReportLocally(payload){
+  let queue = [];
+  try { queue = JSON.parse(localStorage.getItem(LS_REPORT_QUEUE) || '[]'); } catch(e) { queue = []; }
+  queue.push(payload);
+  if (queue.length > 50) queue = queue.slice(-50);
+  localStorage.setItem(LS_REPORT_QUEUE, JSON.stringify(queue));
+}
+async function sendReportEmail(payload){
+  const email = getReportNotifyEmail();
+  if (!email) return false;
+  const body = formatReportForEmail(payload);
+  const res = await fetch('https://formsubmit.co/ajax/' + encodeURIComponent(email), {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({
+      _subject: 'MedStep report: ' + payload.category + ' — ' + (payload.quiz.title || 'Quiz'),
+      _template: 'table',
+      reason: payload.category,
+      student_rationale: payload.rationale || '(none)',
+      edit_on_github: payload.githubEditUrl || '(no quiz file — manual/pasted quiz)',
+      quiz: payload.quiz.title,
+      quiz_file: payload.quiz.file || '',
+      question_number: String(payload.questionIndex) + ' / ' + String(payload.questionTotal),
+      question_stem: payload.question,
+      learning_objective: payload.cited_learning_objective || '',
+      full_report: body
+    })
+  });
+  return res.ok;
+}
+async function submitQuestionReport(){
+  const q = questions[currentIdx];
+  if (!q || q.reported) return;
+  const check = validateReportForm();
+  if (!check.ok) {
+    showReportValidationError(check.msg);
+    showToast(check.msg);
+    return;
+  }
+  showReportValidationError('');
+  const category = document.getElementById('report-rationale').value;
+  const rationale = document.getElementById('report-details').value.trim();
+  const submitBtn = document.getElementById('report-submit-btn');
+  submitBtn.disabled = true;
+  submitBtn.innerText = 'Sending…';
+  const payload = questionReportPayload(q, currentIdx, category, rationale);
+  queueReportLocally(payload);
+  let emailed = false;
+  try { emailed = await sendReportEmail(payload); } catch(e) { emailed = false; }
+  q.reported = true;
+  closeReportModal();
+  updateReportButton();
+  if (emailed) {
+    showToast('✅ Report sent — thank you!');
+  } else if (getReportNotifyEmail()) {
+    showToast('⚠️ Report saved locally; email delivery failed');
+  } else {
+    showToast('✅ Report saved — developer email not configured yet');
+  }
+  submitBtn.disabled = false;
+  submitBtn.innerText = 'Submit Report';
+}
+function copyPendingReports(){
+  let queue = [];
+  try { queue = JSON.parse(localStorage.getItem(LS_REPORT_QUEUE) || '[]'); } catch(e) { queue = []; }
+  if (!queue.length) { showToast('No pending reports in local backup'); return; }
+  const txt = JSON.stringify(queue, null, 2);
+  navigator.clipboard.writeText(txt).then(() =>
+    showToast('Copied ' + queue.length + ' report' + (queue.length > 1 ? 's' : '') + ' to clipboard')
+  );
 }
 
 // ══ TIMER ════════════════════════════════════════════════
@@ -3818,6 +4167,7 @@ list.appendChild(wrap);
   document.getElementById('question-container').scrollTop=0;
   renderGrid();
   updateFlagButton();
+  updateReportButton();
   refreshTimerDisplay();
 }
 
@@ -4045,7 +4395,8 @@ function goHome(){
       isFlaggedReviewMode,
       flaggedReviewIndices: [...flaggedReviewIndices],
       flaggedReviewPos,
-      onResults: quizOnResults
+      onResults: quizOnResults,
+      activeQuizMeta: activeQuizMeta ? { ...activeQuizMeta } : null
     };
     document.getElementById('back-to-quiz-btn').style.display = 'flex';
   }
@@ -4064,6 +4415,7 @@ function resumeSavedQuiz() {
   if (!savedQuizState) return;
   const s = savedQuizState;
   questions = s.questions;
+  activeQuizMeta = s.activeQuizMeta || null;
   currentIdx = s.currentIdx;
   isReviewMode = s.isReviewMode;
   isFlaggedReviewMode = s.isFlaggedReviewMode;
@@ -4573,6 +4925,7 @@ let generatedQuizJSON = null;
 let generatedManifestEntry = null;
 let generatedQuizFilename = null;
 let quizModalMode = 'add'; // 'add' | 'editTags'
+let pendingQuizEmailForm = null;
 let quizEditFile = null;
 let stagedQuizzes = []; // { file, title, questions, json[] }
 
@@ -5050,6 +5403,7 @@ function launchStagedQuizzes() {
 
 // ── Question-count picker ────────────────────────────────
 let _qpickerPool = [];
+let _qpickerEntry = null;
 /** Each entry is one "Add" from the question picker: { label, questions[] } */
 let _qpickerBuildingChunks = [];
 let _qpickerCurrentLabel = '';
@@ -5129,6 +5483,7 @@ async function fetchQuizJSON(file) {
 
 // Single quiz click
 async function openQPickerForEntry(entry, btn) {
+  _qpickerEntry = entry;
   if (btn) { btn.disabled = true; btn.style.opacity = '0.5'; }
   showToast('⏳ Loading ' + entry.title + '…');
   try {
@@ -5257,10 +5612,11 @@ function confirmQPicker() {
   const count = Number(document.getElementById('qpicker-slider').value);
   const selected = randomSelect(_qpickerPool, count);
   const all = [...qpickerBuildingFlat(), ...selected];
+  const meta = buildQPickerMeta();
   _qpickerBuildingChunks = [];
   closeQPicker();
   toggleLibrary();
-  buildQuiz(all);
+  buildQuiz(all, meta);
 }
 
 function clearBuildingQuiz() {
@@ -5273,10 +5629,11 @@ function launchBuildingQuiz() {
   const flat = qpickerBuildingFlat();
   if (!flat.length) { showToast('❌ No questions added yet'); return; }
   const all = [...flat];
+  const meta = buildQPickerMeta();
   _qpickerBuildingChunks = [];
   renderStagingArea();
   toggleLibrary();
-  buildQuiz(all);
+  buildQuiz(all, meta);
 }
 
 // Clear all staged quizzes
@@ -5357,7 +5714,7 @@ async function loadLibraryQuiz(entry) {
     catch(pe) { throw new Error('JSON parse error: ' + pe.message); }
     if (!Array.isArray(json) || json.length === 0) throw new Error('JSON parsed but is empty or not an array');
     toggleLibrary();
-    buildQuiz(json);
+    buildQuiz(json, { source: 'library', title: entry.title, file: entry.file });
     showToast('✅ ' + entry.title + ' loaded!');
   } catch(e) {
     const msg = e.message || String(e);
@@ -5388,6 +5745,10 @@ function openAddQuizModal() {
 
   document.getElementById('clear-tags-btn').style.display = 'none';
   document.getElementById('modal-primary-action').textContent = 'Generate GitHub File ↗';
+  const emailSection = document.getElementById('email-quiz-submit-section');
+  if (emailSection) emailSection.style.display = '';
+  const emailBtn = document.getElementById('email-quiz-submit-btn');
+  if (emailBtn) { emailBtn.disabled = false; emailBtn.innerText = '✉️ Email Quiz to Developer for Library Upload'; }
 
   document.getElementById('quiz-json-label').style.display = '';
   document.getElementById('new-quiz-json').style.display = '';
@@ -5411,6 +5772,7 @@ function openAddQuizModal() {
 
 function closeAddQuizModal() {
   document.getElementById('add-quiz-modal').classList.remove('open');
+  closeEmailQuizConfirmModal();
   quizModalMode = 'add';
   quizEditFile = null;
   document.getElementById('github-instructions').style.display = 'none';
@@ -5605,6 +5967,8 @@ function openEditQuizTagsModal(entry) {
   document.getElementById('copy-manifest-entry-btn').style.display = '';
 
   document.getElementById('modal-primary-action').textContent = 'Copy Updated Manifest ↗';
+  const emailSection = document.getElementById('email-quiz-submit-section');
+  if (emailSection) emailSection.style.display = 'none';
 
   document.getElementById('clear-tags-btn').style.display = '';
 
@@ -5652,6 +6016,134 @@ document.getElementById('new-quiz-json').addEventListener('input', function() {
     msg.style.color = 'var(--danger)';
   }
 });
+
+async function sendFormSubmitToDeveloper(fields, subject){
+  const email = getReportNotifyEmail();
+  if (!email) return false;
+  const res = await fetch('https://formsubmit.co/ajax/' + encodeURIComponent(email), {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify(Object.assign({ _subject: subject, _template: 'table' }, fields))
+  });
+  return res.ok;
+}
+function readAddQuizFormForEmail(){
+  const title = document.getElementById('new-quiz-title').value.trim();
+  const jsonRaw = document.getElementById('new-quiz-json').value.trim();
+  if (!title) return { error: 'Enter a quiz title first.' };
+  if (!jsonRaw) return { error: 'Paste your quiz JSON first.' };
+  let parsed;
+  try {
+    parsed = JSON.parse(jsonRaw);
+    if (!Array.isArray(parsed) || !parsed.length) throw new Error();
+  } catch(e) {
+    return { error: 'Invalid JSON — paste a non-empty array of questions.' };
+  }
+  const block = document.getElementById('new-quiz-block').value;
+  const exam = document.getElementById('new-quiz-exam').value;
+  const week = document.getElementById('new-quiz-week').value;
+  const classTag = document.getElementById('new-quiz-class').value;
+  const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  return {
+    title,
+    parsed,
+    filename: slug + '.json',
+    block,
+    exam,
+    week,
+    classTag
+  };
+}
+function openEmailQuizConfirmModal(form){
+  pendingQuizEmailForm = form;
+  const summary = document.getElementById('email-quiz-confirm-summary');
+  if (summary) {
+    summary.innerHTML = 'Submitting <strong>' + escapeHtmlLib(form.title) + '</strong> (' +
+      form.parsed.length + ' question' + (form.parsed.length !== 1 ? 's' : '') + ').';
+  }
+  document.getElementById('email-quiz-description').value = '';
+  const err = document.getElementById('email-quiz-confirm-error');
+  if (err) err.textContent = '';
+  const sendBtn = document.getElementById('email-quiz-final-send-btn');
+  if (sendBtn) { sendBtn.disabled = false; sendBtn.innerText = 'Send to developer'; }
+  document.getElementById('email-quiz-confirm-modal').classList.add('open');
+  document.getElementById('email-quiz-description').focus();
+}
+function closeEmailQuizConfirmModal(){
+  document.getElementById('email-quiz-confirm-modal').classList.remove('open');
+  pendingQuizEmailForm = null;
+}
+function submitQuizToDeveloperByEmail(){
+  if (quizModalMode === 'editTags') return;
+  const form = readAddQuizFormForEmail();
+  if (form.error) { showToast('❌ ' + form.error); return; }
+  openEmailQuizConfirmModal(form);
+}
+async function confirmQuizEmailSubmission(){
+  if (!pendingQuizEmailForm) return;
+  const description = document.getElementById('email-quiz-description').value.trim();
+  const errEl = document.getElementById('email-quiz-confirm-error');
+  if (!description) {
+    const msg = 'Please add a description before sending.';
+    if (errEl) errEl.textContent = msg;
+    showToast('❌ ' + msg);
+    return;
+  }
+  if (errEl) errEl.textContent = '';
+
+  const form = pendingQuizEmailForm;
+  const btn = document.getElementById('email-quiz-final-send-btn');
+  const prevText = btn.innerText;
+  btn.disabled = true;
+  btn.innerText = 'Sending…';
+
+  const tagParts = [];
+  if (form.block) tagParts.push('Block ' + form.block);
+  if (form.exam) tagParts.push('Exam ' + form.exam);
+  if (form.week) tagParts.push('Week ' + form.week);
+  if (form.classTag) tagParts.push(form.classTag);
+  const tagsLine = tagParts.length ? tagParts.join(' · ') : '(none)';
+  const prettyJson = JSON.stringify(form.parsed, null, 2);
+  const body = [
+    'MedStep Library Quiz Submission',
+    '──────────────────────────────',
+    'Submitted: ' + new Date().toISOString(),
+    'Title: ' + form.title,
+    'Suggested filename: quizzes/' + form.filename,
+    'Questions: ' + form.parsed.length,
+    'Tags: ' + tagsLine,
+    '',
+    'Description:',
+    description,
+    '',
+    '--- Quiz JSON (paste into GitHub) ---',
+    prettyJson
+  ].join('\n');
+
+  try {
+    const ok = await sendFormSubmitToDeveloper({
+      quiz_title: form.title,
+      suggested_filename: 'quizzes/' + form.filename,
+      question_count: String(form.parsed.length),
+      tags: tagsLine,
+      description: description,
+      quiz_json: prettyJson,
+      full_submission: body
+    }, 'MedStep library quiz: ' + form.title);
+    if (ok) {
+      showToast('✅ Quiz emailed — the developer will upload it to the library.');
+      closeEmailQuizConfirmModal();
+      closeAddQuizModal();
+    } else {
+      showToast('⚠️ Email failed — try again or use Generate GitHub File');
+    }
+  } catch(e) {
+    showToast('⚠️ Email failed — check your connection');
+  } finally {
+    btn.disabled = false;
+    btn.innerText = prevText;
+  }
+}
 
 function prepareQuizForGitHub() {
   if (quizModalMode === 'editTags') {
