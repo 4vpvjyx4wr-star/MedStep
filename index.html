@@ -239,6 +239,19 @@ input:checked+.slider:before{transform:translateX(20px)}
 }
 .hero-title{font-size:clamp(2rem,5vw,3.2rem);font-weight:900;letter-spacing:-2px;margin:10px 0 6px;line-height:1}
 .hero-sub{font-family:var(--font-mono);font-size:.75rem;color:var(--primary);letter-spacing:3px;text-transform:uppercase;opacity:.8;margin-bottom:28px}
+.landing-disclaimer{
+  width:100%;max-width:960px;margin-top:28px;padding:0 8px 8px;
+  font-size:.74rem;line-height:1.6;color:var(--text);opacity:.52;
+  text-align:center;font-weight:400;
+}
+.landing-disclaimer strong{font-weight:600;opacity:.85}
+.landing-disclaimer-actions{
+  display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px;
+}
+.landing-feedback-btn{
+  font-size:.72rem;padding:8px 16px;border-radius:999px;opacity:.8;
+}
+.landing-feedback-btn:hover{opacity:1}
 
 /* ── Two-panel instructions + controls layout ── */
 .landing-panels{
@@ -398,6 +411,12 @@ textarea:focus{outline:none;border-color:var(--primary)}
   backdrop-filter:blur(4px);
 }
 #email-quiz-confirm-modal.open{display:flex}
+#feedback-modal{
+  position:fixed;inset:0;background:rgba(0,0,0,.65);
+  z-index:2150;display:none;align-items:center;justify-content:center;
+  backdrop-filter:blur(4px);
+}
+#feedback-modal.open{display:flex}
 .report-modal-card{
   background:var(--card);border:1px solid var(--border);border-radius:20px;
   padding:28px;width:100%;max-width:480px;max-height:90vh;overflow-y:auto;
@@ -1532,6 +1551,27 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   </div>
 </div>
 
+<!-- ══ LANDING FEEDBACK MODAL (bugs / suggestions) ═════════ -->
+<div id="feedback-modal" onclick="if(event.target===this)closeFeedbackModal()">
+  <div class="report-modal-card">
+    <div class="report-modal-title" id="feedback-modal-title">Report a bug</div>
+    <div class="report-modal-sub" id="feedback-modal-sub"></div>
+    <div class="report-modal-note" style="margin-bottom:14px">
+      You can also reach the developers directly at <a href="mailto:medstepdev@gmail.com" style="color:var(--primary);font-weight:700">medstepdev@gmail.com</a>.
+    </div>
+
+    <label class="modal-label" for="feedback-modal-text" id="feedback-modal-label">Description</label>
+    <div class="report-details-hint" id="feedback-modal-hint">Minimum 5 words.</div>
+    <textarea class="modal-textarea" id="feedback-modal-text" style="height:120px;margin-bottom:6px"></textarea>
+    <div class="report-validation-error" id="feedback-modal-error" aria-live="polite"></div>
+
+    <div style="display:flex;gap:10px">
+      <button class="btn btn-secondary" style="flex:0 0 auto" onclick="closeFeedbackModal()">Cancel</button>
+      <button class="btn btn-primary" id="feedback-modal-submit-btn" style="flex:1" onclick="submitFeedbackModal()">Send</button>
+    </div>
+  </div>
+</div>
+
 <!-- ══ EMAIL QUIZ CONFIRM MODAL ═══════════════════════════ -->
 <div id="email-quiz-confirm-modal" onclick="if(event.target===this)closeEmailQuizConfirmModal()">
   <div class="report-modal-card">
@@ -1775,7 +1815,17 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     </div>
 
     <div style="margin-top:16px;font-size:.75rem;opacity:.35;font-family:var(--font-mono)">
-      <a href="https://docs.google.com/document/d/1ptfG3U9--wZwrpz7UjNbRa_ov6feldPuKK2M609Jy0E/edit?usp=sharing" target="_blank" style="color:inherit">📄 Latest version &amp; pre-made quizzes</a>
+      <a href="https://docs.google.com/document/d/1ptfG3U9--wZwrpz7UjNbRa_ov6feldPuKK2M609Jy0E/edit?usp=sharing" target="_blank" style="color:inherit">📄 Latest Offline Version and Previous Prompts</a>
+    </div>
+
+    <p class="landing-disclaimer">
+      MedStep uses <strong>artificial intelligence</strong> in the design of this engine and in the generation of library questions. Content is occasionally subject to errors.
+      Information in these quizzes does <strong>not constitute medical advice</strong>.
+      If you find misinformation or a bug, please use the <strong>report button</strong> (❗) during a quiz so developers can review and fix it.
+    </p>
+    <div class="landing-disclaimer-actions">
+      <button type="button" class="btn btn-secondary landing-feedback-btn" onclick="openFeedbackModal('bug')">Report a bug</button>
+      <button type="button" class="btn btn-secondary landing-feedback-btn" onclick="openFeedbackModal('suggestion')">Questions / Suggestions</button>
     </div>
 
   </div>
@@ -2126,6 +2176,7 @@ document.addEventListener('DOMContentLoaded',()=>{
       closeThemeSelectPanel();
       if(document.getElementById('report-question-modal')?.classList.contains('open')) closeReportModal();
       if(document.getElementById('email-quiz-confirm-modal')?.classList.contains('open')) closeEmailQuizConfirmModal();
+      if(document.getElementById('feedback-modal')?.classList.contains('open')) closeFeedbackModal();
     }
   });
 
@@ -6016,6 +6067,97 @@ document.getElementById('new-quiz-json').addEventListener('input', function() {
     msg.style.color = 'var(--danger)';
   }
 });
+
+let feedbackModalType = null;
+
+const FEEDBACK_MODAL_COPY = {
+  bug: {
+    title: 'Report a bug',
+    sub: 'Describe what went wrong so we can fix it.',
+    label: 'Bug description (required)',
+    hint: 'What happened? What were you trying to do? Minimum 5 words.',
+    placeholder: 'e.g. Timer froze after pausing during a library quiz…',
+    subject: 'MedStep bug report'
+  },
+  suggestion: {
+    title: 'Questions / Suggestions',
+    sub: 'Share a question, idea, or feature request.',
+    label: 'Your message (required)',
+    hint: 'Minimum 5 words.',
+    placeholder: 'e.g. Could you add a dark mode toggle on the results screen?',
+    subject: 'MedStep question/suggestion'
+  }
+};
+
+function openFeedbackModal(type){
+  feedbackModalType = type;
+  const copy = FEEDBACK_MODAL_COPY[type] || FEEDBACK_MODAL_COPY.bug;
+  document.getElementById('feedback-modal-title').innerText = copy.title;
+  document.getElementById('feedback-modal-sub').innerText = copy.sub;
+  document.getElementById('feedback-modal-label').innerText = copy.label;
+  document.getElementById('feedback-modal-hint').innerText = copy.hint;
+  const ta = document.getElementById('feedback-modal-text');
+  ta.value = '';
+  ta.placeholder = copy.placeholder;
+  document.getElementById('feedback-modal-error').textContent = '';
+  const btn = document.getElementById('feedback-modal-submit-btn');
+  btn.disabled = false;
+  btn.innerText = 'Send';
+  document.getElementById('feedback-modal').classList.add('open');
+  ta.focus();
+}
+function closeFeedbackModal(){
+  document.getElementById('feedback-modal').classList.remove('open');
+  feedbackModalType = null;
+}
+async function submitFeedbackModal(){
+  if (!feedbackModalType) return;
+  const copy = FEEDBACK_MODAL_COPY[feedbackModalType];
+  const message = document.getElementById('feedback-modal-text').value.trim();
+  const errEl = document.getElementById('feedback-modal-error');
+  if (countReportWords(message) < 5) {
+    const msg = 'Please write at least 5 words.';
+    if (errEl) errEl.textContent = msg;
+    showToast('❌ ' + msg);
+    return;
+  }
+  if (errEl) errEl.textContent = '';
+
+  const btn = document.getElementById('feedback-modal-submit-btn');
+  const prevText = btn.innerText;
+  btn.disabled = true;
+  btn.innerText = 'Sending…';
+
+  const body = [
+    copy.title,
+    '──────────────────────',
+    'Submitted: ' + new Date().toISOString(),
+    'Type: ' + feedbackModalType,
+    '',
+    message,
+    '',
+    'App: ' + location.href.split('#')[0]
+  ].join('\n');
+
+  try {
+    const ok = await sendFormSubmitToDeveloper({
+      feedback_type: feedbackModalType,
+      message: message,
+      full_submission: body
+    }, copy.subject);
+    if (ok) {
+      showToast('✅ Sent — thank you!');
+      closeFeedbackModal();
+    } else {
+      showToast('⚠️ Could not send — try again or email medstepdev@gmail.com');
+    }
+  } catch(e) {
+    showToast('⚠️ Could not send — check your connection');
+  } finally {
+    btn.disabled = false;
+    btn.innerText = prevText;
+  }
+}
 
 async function sendFormSubmitToDeveloper(fields, subject){
   const email = getReportNotifyEmail();
