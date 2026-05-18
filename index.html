@@ -80,7 +80,8 @@ body{
   position:fixed;top:60px;right:18px;
   background:var(--card);border:1px solid var(--border);
   padding:0;border-radius:18px;z-index:1000;display:none;
-  min-width:290px;box-shadow:0 12px 40px rgba(0,0,0,.5);
+  width:min(320px, calc(100vw - 36px));box-sizing:border-box;
+  box-shadow:0 12px 40px rgba(0,0,0,.5);
   max-height:calc(100vh - 75px);overflow:hidden;
 }
 .settings-menu-scroll{
@@ -107,6 +108,13 @@ body{
   margin-bottom:16px;font-size:.82rem;font-weight:700;letter-spacing:.3px;
 }
 .settings-divider{border:none;border-top:1px solid var(--border);margin:14px 0}
+.settings-menu-actions{display:flex;flex-direction:column;gap:6px;margin-bottom:4px}
+.settings-menu-action-btn{width:100%;font-size:.75rem;padding:8px}
+.settings-report-question-btn{
+  background:none;border:1px solid var(--border);color:var(--subtle);
+  font-weight:500;opacity:.65;
+}
+.settings-report-question-btn:hover{opacity:.85;color:var(--text)}
 
 /* Theme picker — custom listbox + trigger (native select kept for state) */
 .theme-select-wrap{
@@ -230,6 +238,13 @@ input:checked+.slider:before{transform:translateX(20px)}
   white-space:nowrap;
 }
 .kbd-desc{opacity:.65;font-size:.73rem}
+.backup-panel-desc{
+  font-size:.7rem;line-height:1.45;opacity:.55;margin:0 0 10px;
+}
+.backup-panel-actions{
+  display:flex;flex-direction:column;gap:6px;
+}
+.backup-panel-actions .btn{font-size:.75rem;padding:8px}
 
 /* ── Input screen ─────────────────────────────────────── */
 #input-screen{
@@ -392,12 +407,18 @@ textarea:focus{outline:none;border-color:var(--primary)}
 .nav-box.flagged{outline:2px solid rgba(245, 158, 11, 0.85); outline-offset:-2px}
 .nav-box.flagged-disabled{opacity:.35;pointer-events:none;cursor:default}
 .header-btn.flagged{border-color:rgba(245, 158, 11, 0.9);background:rgba(245,158,11,0.08)}
-.header-btn.report-btn{
-  color:#ff6b6b;border-color:rgba(231,76,60,0.55);background:rgba(231,76,60,0.1);
-  padding:5px 8px;font-size:.95rem;line-height:1;min-width:0;gap:0;
+.quiz-report-link{
+  background:none;border:none;cursor:pointer;
+  color:var(--subtle);font-size:.67rem;font-weight:500;
+  font-family:var(--font-display);letter-spacing:.02em;
+  opacity:.42;padding:2px 6px;margin:0;
+  text-decoration:underline;text-underline-offset:2px;
+  transition:opacity .15s,color .15s;white-space:nowrap;
 }
-.header-btn.report-btn:hover{border-color:#e74c3c;background:rgba(231,76,60,0.18)}
-.header-btn.report-btn.reported{opacity:0.45;pointer-events:none;color:var(--subtle);border-color:var(--border);background:rgba(255,255,255,.04)}
+.quiz-report-link:hover{opacity:.62;color:var(--text)}
+.quiz-report-link.reported{
+  opacity:.32;pointer-events:none;text-decoration:none;cursor:default;
+}
 
 #report-question-modal{
   position:fixed;inset:0;background:rgba(0,0,0,.65);
@@ -481,7 +502,13 @@ mark.medstep-highlight { background-color: rgba(230, 126, 34, 0.4); color: inher
 .option-text{flex-grow:1;font-size:.88rem;line-height:1.4;overflow-wrap:break-word;word-wrap:break-word}
 .rationale-bubble{margin:3px 0 10px 48px;padding:9px 14px;background:rgba(0,0,0,.15);border-radius:8px;border-left:3px solid var(--primary);font-size:.82rem;line-height:1.45;color:var(--subtle)}
 
-.quiz-footer{display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px solid var(--border);flex-shrink:0;gap:10px}
+.quiz-footer{
+  display:grid;grid-template-columns:1fr auto 1fr;align-items:end;
+  padding-top:12px;padding-bottom:2px;border-top:1px solid var(--border);
+  flex-shrink:0;gap:8px 12px;margin-top:auto;
+}
+.quiz-footer-prev{justify-self:start}
+.quiz-footer-nav{justify-self:end;display:flex;gap:10px;align-items:center}
 
 /* Results */
 #results-screen{overflow-y:auto;padding:40px 24px;text-align:center}
@@ -785,12 +812,30 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 
 /* ── Quiz Library Sidebar ─────────────────────────────── */
 #library-sidebar {
-  position: fixed; left: 0; top: 0; bottom: 0; width: 480px; max-width: 92vw;
+  position: fixed; left: 0; top: 0; bottom: 0; width: 700px; max-width: 96vw;
   background: var(--card); border-right: 1px solid var(--border);
   z-index: 900; display: flex; flex-direction: column;
   transform: translateX(-100%); transition: transform .3s cubic-bezier(.25,.8,.25,1);
   box-shadow: 4px 0 30px rgba(0,0,0,.4);
   overscroll-behavior: contain;
+  overflow: hidden;
+}
+.lib-scroll{
+  flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;
+  overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;
+  scrollbar-color:color-mix(in srgb,var(--primary) 50%,transparent) transparent;
+}
+.lib-scroll::-webkit-scrollbar{width:8px}
+.lib-scroll::-webkit-scrollbar-track{
+  margin-block:4px;background:transparent;
+}
+.lib-scroll::-webkit-scrollbar-thumb{
+  background:color-mix(in srgb,var(--primary) 45%,transparent);
+  border-radius:8px;border:2px solid transparent;background-clip:padding-box;
+}
+.lib-scroll::-webkit-scrollbar-thumb:hover{
+  background:color-mix(in srgb,var(--primary) 65%,transparent);
 }
 #library-sidebar.open { transform: translateX(0); }
 #library-overlay {
@@ -815,14 +860,93 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 }
 #back-to-quiz-btn:hover { filter: brightness(1.12); transform: translateY(-2px); }
 .lib-header {
-  padding: 20px 18px 14px; border-bottom: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;
-  gap: 8px;
+  padding: 16px 12px 14px 16px; border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; flex-wrap: nowrap; flex-shrink: 0;
+  gap: 8px; min-width: 0; overflow: hidden;
+  overscroll-behavior: none;
 }
+.lib-header .lib-title,
+.lib-header .lib-close {
+  flex-shrink: 0;
+}
+.lib-header-scroll-outer {
+  flex: 1; min-width: 0; overflow: hidden;
+  overscroll-behavior: contain;
+  touch-action: pan-x;
+}
+.lib-header-scroll {
+  display: block; overflow-x: auto; overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.lib-header-scroll::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.lib-header-actions {
+  display: inline-flex; align-items: center; gap: 8px;
+  flex-wrap: nowrap; width: max-content; padding: 2px 0;
+}
+.lib-header .lib-close {
+  padding: 6px 8px; margin: -6px -4px -6px 0;
+}
+.lib-header-btn {
+  border: none; border-radius: 50px; padding: 10px 16px;
+  font-family: var(--font-display); font-weight: 700; font-size: .8rem;
+  cursor: pointer; white-space: nowrap; transition: .2s;
+}
+.lib-header-btn-primary {
+  background: var(--primary); color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,.25);
+}
+.lib-header-btn-primary:hover { filter: brightness(1.1); transform: translateY(-1px); }
+.lib-header-btn-secondary {
+  background: transparent; border: 1px solid var(--border); color: var(--text); opacity: .75;
+}
+.lib-header-btn-secondary:hover { opacity: 1; border-color: var(--primary); color: var(--primary); }
+.lib-source-toggle {
+  display: flex; align-items: stretch; width: 100%;
+  border: 1.5px solid var(--border); border-radius: 50px; overflow: hidden;
+  background: rgba(255,255,255,.03);
+}
+.lib-source-toggle button {
+  flex: 1;
+  border: none; background: transparent; color: var(--text);
+  padding: 10px 14px; font-family: var(--font-display); font-weight: 700;
+  font-size: .78rem; cursor: pointer; transition: background .15s, color .15s;
+  white-space: nowrap; line-height: 1.2;
+}
+.lib-source-toggle button:hover { background: rgba(99,102,241,.1); }
+.lib-source-toggle button.active {
+  background: var(--primary); color: #fff;
+}
+.lib-building-mix-hint {
+  font-size: .66rem; opacity: .5; line-height: 1.45; margin: -4px 0 8px;
+  font-family: var(--font-mono); flex-shrink: 0;
+}
+.lib-building .lib-staging-title,
+.lib-building .lib-launch-btn,
+.lib-building .lib-clear-btn { flex-shrink: 0; }
+.personal-library-actions {
+  display: none; flex-direction: column; gap: 8px; margin-bottom: 14px;
+}
+.personal-library-actions.visible { display: flex; }
+#premade-publish-section { display: none; }
+#premade-publish-section.visible { display: block; }
+.lib-quiz-btn .lib-delete-btn {
+  font-size: .68rem; opacity: .45; padding: 4px 6px; border-radius: 6px;
+  cursor: pointer; flex-shrink: 0;
+}
+.lib-quiz-btn .lib-delete-btn:hover { opacity: 1; color: var(--danger); }
 .lib-home-btn {
   background: transparent; border: 1px solid var(--border);
-  color: var(--text); border-radius: 50px; padding: 6px 14px;
-  font-family: var(--font-display); font-weight: 700; font-size: .72rem;
+  color: var(--text); border-radius: 50px; padding: 10px 16px;
+  font-family: var(--font-display); font-weight: 700; font-size: .8rem;
   cursor: pointer; transition: .2s; opacity: .7; white-space: nowrap;
 }
 .lib-home-btn:hover { opacity: 1; border-color: var(--primary); color: var(--primary); }
@@ -835,28 +959,84 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   background: rgba(255,255,255,.015);
 }
 .lib-filter-row {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .lib-toolbar select { display: none; }
 .lib-filter-group {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
+  position: relative;
+}
+.lib-filter-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   position: relative;
 }
 .lib-filter-label {
-  font-size: .62rem;
+  font-size: .68rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .7px;
-  opacity: .4;
+  opacity: .55;
   font-family: var(--font-display);
-  padding-left: 6px;
+  flex-shrink: 0;
+  min-width: 42px;
+}
+.lib-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.lib-filter-pill {
+  background: rgba(255,255,255,.04);
+  border: 1.5px solid var(--border);
+  border-radius: 50px;
+  padding: 5px 12px;
+  font-size: .72rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color .15s, background .15s, color .15s, transform .1s;
+  color: var(--text);
+  line-height: 1.2;
+}
+.lib-filter-pill.class-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 100%;
+  padding: 5px 11px 5px 8px;
+}
+.lib-filter-pill .lib-pill-icon {
+  font-size: .9rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.lib-filter-pill .lib-pill-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 220px;
+}
+.lib-filter-pill:hover {
+  border-color: var(--primary);
+  background: rgba(99,102,241,.08);
+}
+.lib-filter-pill.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+.lib-filter-pill:active {
+  transform: scale(.96);
 }
 .lib-dropdown-trigger {
-  width: 100%;
+  flex: 1;
+  min-width: 0;
   background: var(--bg);
   color: var(--text);
   border: 1px solid var(--border);
@@ -904,7 +1084,9 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 .lib-dropdown-menu {
   position: absolute;
   top: calc(100% + 4px);
-  left: 0; right: 0;
+  left: 0;
+  right: 0;
+  min-width: 160px;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -924,7 +1106,9 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   pointer-events: auto;
 }
 .lib-dropdown-option {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   width: 100%;
   padding: 8px 11px;
   border: none;
@@ -957,7 +1141,6 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 .lib-block-dropdown {
   border: 1px solid var(--border);
   border-radius: 10px;
-  overflow: hidden;
 }
 .lib-block-summary {
   padding: 8px 10px;
@@ -1027,8 +1210,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 }
 .lib-close:hover { opacity: 1; }
 .lib-list {
-  flex: 1; overflow-y: auto; padding: 12px 12px 0;
-  overscroll-behavior: contain;
+  padding: 12px 12px 0;
 }
 .lib-status {
   font-size: .75rem; font-family: var(--font-mono); opacity: .4;
@@ -1046,8 +1228,6 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 .lib-quiz-btn.staged:hover { border-color: var(--success); filter: brightness(1.1); }
 .lib-quiz-btn .lib-icon { font-size: 1.1rem; flex-shrink: 0; }
 .lib-quiz-meta { font-size: .62rem; font-family: var(--font-mono); opacity: .4; font-weight: 400; margin-top: 1px; }
-.lib-footer { padding: 12px; border-top: 1px solid var(--border); flex-shrink: 0; }
-
 /* Add Quiz Modal */
 #add-quiz-modal {
   position: fixed; inset: 0; background: rgba(0,0,0,.65);
@@ -1175,20 +1355,30 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   font-size: .72rem; font-family: var(--font-mono); opacity: .7; line-height: 1.6;
 }
 
-/* ── Building Quiz Panel ──────────────────────────────── */
+/* ── Building Quiz Panel (pinned to sidebar bottom) ───── */
 .lib-building {
-  border-top: 1px solid var(--border); padding: 10px 12px 0; flex-shrink: 0;
+  border-top: 1px solid var(--border);
+  padding: 12px 16px 16px;
+  flex-shrink: 0;
   display: none;
+  flex-direction: column;
+  background: var(--card);
+  box-shadow: 0 -10px 28px rgba(0,0,0,.22);
+  max-height: min(42vh, 300px);
+  min-height: 0;
 }
-.lib-building.has-items { display: block; }
+.lib-building.has-items { display: flex; }
 .lib-building-count {
   font-size: .82rem; font-weight: 800; color: var(--success, #22c55e);
-  margin-bottom: 8px; text-align: center;
+  margin-bottom: 8px; text-align: center; flex-shrink: 0;
 }
 .lib-building-sources {
+  flex: 1;
+  min-height: 0;
   margin-bottom: 8px;
-  max-height: 165px;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 .lib-building-source-item {
   display: flex; align-items: center; justify-content: space-between;
@@ -1326,10 +1516,19 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 <div id="library-overlay" onclick="toggleLibrary()"></div>
 <div id="library-sidebar">
   <div class="lib-header">
-    <button class="lib-title" onclick="toggleLibrary()">📚 Quiz Library</button>
-    <button class="lib-home-btn" onclick="goHome();toggleLibrary();">🏠 Return to Home</button>
-    <span class="lib-close" onclick="toggleLibrary()">✕</span>
+    <button type="button" class="lib-title" onclick="toggleLibrary()">📚 Quiz Library</button>
+    <div class="lib-header-scroll-outer">
+      <div class="lib-header-scroll" id="lib-header-scroll" role="region" aria-label="Library actions" tabindex="0">
+        <div class="lib-header-actions">
+          <button type="button" class="lib-header-btn lib-header-btn-primary" onclick="openAddQuizModal()">+ Upload New Quiz</button>
+          <button type="button" class="lib-header-btn lib-header-btn-secondary" onclick="refreshLibrary()">🔄 Refresh</button>
+          <button type="button" class="lib-home-btn" onclick="goHome();toggleLibrary();">🏠 Return to Home</button>
+        </div>
+      </div>
+    </div>
+    <span class="lib-close" role="button" tabindex="0" aria-label="Close library" onclick="toggleLibrary()">✕</span>
   </div>
+  <div class="lib-scroll" id="lib-scroll">
   <div class="lib-toolbar">
     <select id="lib-block-filter" onchange="onLibraryFilterChange('block')">
       <option value="all">All Blocks</option>
@@ -1337,36 +1536,60 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
       <option value="3">Block 3</option><option value="4">Block 4</option>
       <option value="5">Block 5</option><option value="6">Block 6</option>
       <option value="7">Block 7</option><option value="8">Block 8</option>
+      <option value="other">Other</option>
     </select>
     <select id="lib-exam-filter" onchange="onLibraryFilterChange('exam')">
       <option value="all">All Exams</option>
+      <option value="1">Exam 1</option><option value="2">Exam 2</option>
+      <option value="3">Exam 3</option>
+      <option value="other">Other</option>
     </select>
     <select id="lib-week-filter" onchange="onLibraryFilterChange('week')">
       <option value="all">All Weeks</option>
+      <option value="1">Week 1</option><option value="2">Week 2</option>
+      <option value="3">Week 3</option>
+      <option value="other">Other</option>
     </select>
     <select id="lib-class-filter" onchange="renderLibrary();saveLibraryFilters()">
       <option value="all">All Classes</option>
+      <option value="other">Other</option>
     </select>
+    <div class="lib-source-toggle" id="lib-source-toggle" role="group" aria-label="Quiz library source">
+      <button type="button" data-source="premade" class="active" onclick="setLibrarySource('premade')">MedStep</button>
+      <button type="button" data-source="personal" onclick="setLibrarySource('personal')">My Quizzes</button>
+    </div>
     <div class="lib-filter-row">
       <div class="lib-filter-group" id="lib-dd-block">
-        <span class="lib-filter-label">Block</span>
-        <button class="lib-dropdown-trigger" onclick="toggleLibDropdown('lib-dd-block')">All Blocks</button>
-        <div class="lib-dropdown-menu"></div>
+        <div class="lib-filter-head">
+          <span class="lib-filter-label">Block</span>
+          <button type="button" class="lib-dropdown-trigger" onclick="toggleLibDropdown('lib-dd-block')">All Blocks</button>
+          <div class="lib-dropdown-menu"></div>
+        </div>
+        <div class="lib-filter-pills" id="lib-pills-block"></div>
       </div>
       <div class="lib-filter-group" id="lib-dd-exam">
-        <span class="lib-filter-label">Exam</span>
-        <button class="lib-dropdown-trigger" onclick="toggleLibDropdown('lib-dd-exam')">All Exams</button>
-        <div class="lib-dropdown-menu"></div>
+        <div class="lib-filter-head">
+          <span class="lib-filter-label">Exam</span>
+          <button type="button" class="lib-dropdown-trigger" onclick="toggleLibDropdown('lib-dd-exam')">All Exams</button>
+          <div class="lib-dropdown-menu"></div>
+        </div>
+        <div class="lib-filter-pills" id="lib-pills-exam"></div>
       </div>
       <div class="lib-filter-group" id="lib-dd-week">
-        <span class="lib-filter-label">Week</span>
-        <button class="lib-dropdown-trigger" onclick="toggleLibDropdown('lib-dd-week')">All Weeks</button>
-        <div class="lib-dropdown-menu"></div>
+        <div class="lib-filter-head">
+          <span class="lib-filter-label">Week</span>
+          <button type="button" class="lib-dropdown-trigger" onclick="toggleLibDropdown('lib-dd-week')">All Weeks</button>
+          <div class="lib-dropdown-menu"></div>
+        </div>
+        <div class="lib-filter-pills" id="lib-pills-week"></div>
       </div>
       <div class="lib-filter-group" id="lib-dd-class">
-        <span class="lib-filter-label">Class</span>
-        <button class="lib-dropdown-trigger" onclick="toggleLibDropdown('lib-dd-class')">All Classes</button>
-        <div class="lib-dropdown-menu"></div>
+        <div class="lib-filter-head">
+          <span class="lib-filter-label">Class</span>
+          <button type="button" class="lib-dropdown-trigger" onclick="toggleLibDropdown('lib-dd-class')">All Classes</button>
+          <div class="lib-dropdown-menu"></div>
+        </div>
+        <div class="lib-filter-pills" id="lib-pills-class"></div>
       </div>
     </div>
     <div class="lib-block-dropdown" id="lib-block-dropdown">
@@ -1379,14 +1602,6 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <div class="lib-status" id="lib-status">Loading quizzes…</div>
   </div>
 
-  <!-- Building quiz panel (shown when user uses "Add to Quiz") -->
-  <div class="lib-building" id="lib-building">
-    <div class="lib-staging-title">📝 Building Quiz</div>
-    <div class="lib-building-count" id="lib-building-count"></div>
-    <div class="lib-building-sources" id="lib-building-sources"></div>
-    <button class="lib-launch-btn" onclick="launchBuildingQuiz()">▶ Start Built Quiz</button>
-    <button class="lib-clear-btn" onclick="clearBuildingQuiz()">✕ Clear</button>
-  </div>
 
   <!-- Staging area: queued quizzes -->
   <div class="lib-staging" id="lib-staging">
@@ -1396,9 +1611,17 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <button class="lib-launch-btn" onclick="launchStagedQuizzes()">▶ Load into Quiz Engine</button>
     <button class="lib-clear-btn" onclick="clearStaged()">✕ Clear All</button>
   </div>
-  <div class="lib-footer">
-    <button class="btn btn-primary" style="width:100%;font-size:.8rem;padding:10px" onclick="openAddQuizModal()">＋ Add Quiz to Library</button>
-    <button class="btn btn-secondary" style="width:100%;font-size:.75rem;padding:8px;margin-top:6px;opacity:.7" onclick="refreshLibrary()">🔄 Refresh</button>
+
+  </div>
+
+  <!-- Building quiz panel — pinned to bottom of library (outside scroll) -->
+  <div class="lib-building" id="lib-building">
+    <div class="lib-staging-title">📝 Building Quiz</div>
+    <div class="lib-building-mix-hint" id="lib-building-mix-hint">Switch between MedStep and My Quizzes to mix questions in one built quiz.</div>
+    <div class="lib-building-count" id="lib-building-count"></div>
+    <div class="lib-building-sources" id="lib-building-sources"></div>
+    <button class="lib-launch-btn" onclick="launchBuildingQuiz()">▶ Start Built Quiz</button>
+    <button class="lib-clear-btn" onclick="clearBuildingQuiz()">✕ Clear</button>
   </div>
 </div>
 
@@ -1457,7 +1680,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 <!-- ══ ADD QUIZ MODAL ══════════════════════════════════════ -->
 <div id="add-quiz-modal">
   <div class="modal-card">
-    <div class="modal-title">＋ Add Quiz to Library</div>
+    <div class="modal-title" id="add-quiz-modal-title">+ Upload New Quiz</div>
 
     <label class="modal-label">Quiz Title</label>
     <input class="modal-input" id="new-quiz-title" placeholder="e.g. Cardiology — Heart Failure" type="text">
@@ -1505,13 +1728,25 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 
     <label class="modal-label" id="quiz-json-label">Quiz JSON</label>
     <textarea class="modal-textarea" id="new-quiz-json" placeholder='Paste the full JSON array here (starts with [)…'></textarea>
+    <div class="personal-library-actions" id="personal-library-actions">
+      <button type="button" class="btn btn-primary" style="width:100%;font-size:.8rem;padding:10px" onclick="savePersonalQuizFromModal()">💾 Save to My Library (this browser)</button>
+      <button type="button" class="btn btn-secondary" style="width:100%;font-size:.78rem;padding:9px" onclick="downloadPersonalQuizFromModal()">⬇️ Download Quiz File (.json)</button>
+      <label class="btn btn-secondary" style="width:100%;font-size:.78rem;padding:9px;text-align:center;cursor:pointer;margin:0">
+        📂 Import from File
+        <input type="file" id="personal-quiz-file-input" accept=".json,.txt,application/json,text/plain" hidden onchange="importPersonalQuizFile(event)">
+      </label>
+    </div>
     <div style="font-size:.7rem;opacity:.35;font-family:var(--font-mono);margin-bottom:14px" id="json-validate-msg"></div>
 
-    <div style="display:flex;gap:10px;margin-bottom:18px">
+    <div style="display:flex;gap:10px;margin-bottom:18px" id="add-quiz-modal-actions">
       <button class="btn btn-secondary" style="flex:0 0 auto" onclick="closeAddQuizModal()">Cancel</button>
       <button id="modal-primary-action" class="btn btn-primary" style="flex:1" onclick="prepareQuizForGitHub()">Generate GitHub File ↗</button>
     </div>
 
+    <div id="premade-publish-section">
+      <div style="font-size:.72rem;opacity:.55;line-height:1.5;margin-bottom:10px">
+        <strong>Developer:</strong> publish a quiz to the official MedStep library (GitHub).
+      </div>
       <div class="github-instructions" id="github-instructions" style="display:none">
       <strong style="font-size:.82rem">🚀 Auto-publish (recommended):</strong>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
@@ -1547,6 +1782,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
       <button type="button" id="email-quiz-submit-btn" class="btn btn-secondary" style="width:100%;font-size:.8rem;padding:10px" onclick="submitQuizToDeveloperByEmail()">
         ✉️ Email Quiz to Developer for Library Upload
       </button>
+    </div>
     </div>
   </div>
 </div>
@@ -1649,15 +1885,6 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 
   <hr class="settings-divider">
 
-  <div class="setting-row" style="flex-direction:column;align-items:stretch;gap:6px">
-    <span style="font-size:.78rem;font-weight:700">📬 Question report notifications</span>
-    <span style="font-size:.68rem;opacity:.5;line-height:1.45">Reports are emailed to <strong>medstepdev@gmail.com</strong>.</span>
-    <input class="modal-input" id="report-notify-email" type="email" value="medstepdev@gmail.com" readonly style="margin-bottom:6px;opacity:.7" tabindex="-1">
-    <button class="btn btn-secondary" style="width:100%;font-size:.75rem;padding:8px;margin-bottom:4px" onclick="copyPendingReports()">Copy pending reports (local backup)</button>
-  </div>
-
-  <hr class="settings-divider">
-
   <div id="quiz-nav-settings" class="hidden">
     <button class="btn btn-secondary" style="width:100%;margin-bottom:8px" onclick="goHome()">🏠 Return to Home</button>
     <hr class="settings-divider">
@@ -1684,6 +1911,33 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <div class="kbd-row"><span class="kbd-key">F</span><span class="kbd-desc">Flag Question</span></div>
     <div class="kbd-row"><span class="kbd-key">T</span><span class="kbd-desc">Random Theme</span></div>
     <div class="kbd-row"><span class="kbd-key">=</span><span class="kbd-desc">Toggle Fullscreen</span></div>
+  </div>
+
+  <hr class="settings-divider">
+
+  <div class="kbd-panel backup-panel">
+    <div class="kbd-panel-title">💾 Local Data Backup</div>
+    <p class="backup-panel-desc">My Quizzes, settings, and pending reports live in this browser only. Export a backup file so you can restore them after clearing cookies or switching devices — older backup files remain compatible after app updates.</p>
+    <div class="backup-panel-actions">
+      <button type="button" class="btn btn-secondary" onclick="exportMedstepLocalData()">⬇️ Export local data</button>
+      <button type="button" class="btn btn-secondary" onclick="triggerMedstepLocalDataImport()">⬆️ Import local data</button>
+    </div>
+    <input type="file" id="medstep-backup-import" accept=".json,application/json" hidden onchange="importMedstepLocalData(event)">
+  </div>
+
+  <hr class="settings-divider">
+
+  <div class="settings-menu-actions">
+    <button type="button" class="btn btn-secondary settings-menu-action-btn" onclick="openFeedbackModalFromMenu('bug')">Report a bug</button>
+    <button type="button" class="btn btn-secondary settings-menu-action-btn" onclick="openFeedbackModalFromMenu('suggestion')">Questions / Suggestions</button>
+    <button type="button" class="btn btn-secondary settings-menu-action-btn settings-report-question-btn" onclick="openReportModalFromMenu()">Report Question</button>
+  </div>
+
+  <div class="setting-row" style="flex-direction:column;align-items:stretch;gap:6px;margin-top:10px">
+    <span style="font-size:.78rem;font-weight:700">📬 Question report notifications</span>
+    <span style="font-size:.68rem;opacity:.5;line-height:1.45">Reports are emailed to <strong>medstepdev@gmail.com</strong>.</span>
+    <input class="modal-input" id="report-notify-email" type="email" value="medstepdev@gmail.com" readonly style="margin-bottom:6px;opacity:.7" tabindex="-1">
+    <button class="btn btn-secondary" style="width:100%;font-size:.75rem;padding:8px;margin-bottom:4px" onclick="copyPendingReports()">Copy pending reports (local backup)</button>
   </div>
 
   </div>
@@ -1821,7 +2075,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <p class="landing-disclaimer">
       MedStep uses <strong>artificial intelligence</strong> in the design of this engine and in the generation of library questions. Content is occasionally subject to errors.
       Information in these quizzes does <strong>not constitute medical advice</strong>.
-      If you find misinformation or a bug, please use the <strong>report button</strong> (❗) during a quiz so developers can review and fix it.
+      If you find misinformation or a bug, please use <strong>report question</strong> at the bottom of the quiz screen so developers can review and fix it.
     </p>
     <div class="landing-disclaimer-actions">
       <button type="button" class="btn btn-secondary landing-feedback-btn" onclick="openFeedbackModal('bug')">Report a bug</button>
@@ -1925,7 +2179,6 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
           <button class="header-btn scramble-btn" id="scramble-btn" onclick="scrambleAll()" title="Scramble (S)">
             <span class="spin-icon">🔀</span> Scramble
           </button>
-          <button class="header-btn report-btn" id="report-btn" onclick="openReportModal()" title="Report question" aria-label="Report question">❗</button>
           <button class="header-btn" id="flag-btn" onclick="toggleFlagForCurrentQuestion()" title="Flag (F)" style="opacity:0.65">☆ Flag</button>
           <button class="header-btn" id="undo-btn" onclick="undoAnswer()" title="Undo answer (R)" style="display:none">↩️ Undo</button>
         </div>
@@ -1947,9 +2200,12 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
         <div id="options-list"></div>
       </div>
       <div class="quiz-footer">
-        <button class="btn btn-secondary" onclick="changeQ(-1)">← Previous</button>
-        <button class="btn btn-primary" id="finish-btn" onclick="showResults()" style="display:none">Finish Exam ✓</button>
-        <button class="btn btn-primary" id="next-btn" onclick="changeQ(1)">Next Question →</button>
+        <button class="btn btn-secondary quiz-footer-prev" onclick="changeQ(-1)">← Previous</button>
+        <button type="button" class="quiz-report-link" id="report-btn" onclick="openReportModal()" title="Report Question" aria-label="Report Question">Report Question</button>
+        <div class="quiz-footer-nav">
+          <button class="btn btn-primary" id="finish-btn" onclick="showResults()" style="display:none">Finish Exam ✓</button>
+          <button class="btn btn-primary" id="next-btn" onclick="changeQ(1)">Next Question →</button>
+        </div>
       </div>
     </main>
   </div>
@@ -2153,8 +2409,32 @@ function refreshTimerDisplay(){
 }
 
 // ══ SETTINGS ═════════════════════════════════════════════
+function closeSettingsMenu(){
+  const menu = document.getElementById('settings-menu');
+  if (menu) menu.style.display = 'none';
+  closeThemeSelectPanel();
+}
+function openFeedbackModalFromMenu(type){
+  closeSettingsMenu();
+  openFeedbackModal(type);
+}
+function openReportModalFromMenu(){
+  closeSettingsMenu();
+  if (isReviewMode) {
+    showToast('Reporting is not available in review mode.');
+    return;
+  }
+  const onQuiz = !document.getElementById('quiz-screen').classList.contains('hidden');
+  if (!onQuiz || !questions.length) {
+    showToast('Start or resume a quiz to report a question.');
+    return;
+  }
+  openReportModal();
+}
+
 document.addEventListener('DOMContentLoaded',()=>{
   loadEnginePrefs();
+  initLibHeaderScroll();
   const btn=document.getElementById('settings-trigger');
   const menu=document.getElementById('settings-menu');
   const menuScroll=document.getElementById('settings-menu-scroll');
@@ -3968,13 +4248,13 @@ function updateReportButton(){
     btn.style.display = 'none';
     return;
   }
-  btn.style.display = 'inline-flex';
+  btn.style.display = 'inline';
   const q = questions[currentIdx];
   const reported = !!q?.reported;
   btn.classList.toggle('reported', reported);
-  btn.innerText = reported ? '✓' : '❗';
-  btn.title = reported ? 'You already reported this question' : 'Report question';
-  btn.setAttribute('aria-label', reported ? 'Question reported' : 'Report question');
+  btn.innerText = reported ? 'Reported' : 'Report Question';
+  btn.title = reported ? 'You already reported this question' : 'Report Question';
+  btn.setAttribute('aria-label', reported ? 'Question reported' : 'Report Question');
 }
 function openReportModal(){
   if (isReviewMode) return;
@@ -4130,6 +4410,355 @@ function copyPendingReports(){
   navigator.clipboard.writeText(txt).then(() =>
     showToast('Copied ' + queue.length + ' report' + (queue.length > 1 ? 's' : '') + ' to clipboard')
   );
+}
+
+const LS_BACKUP_VERSION = 1;
+const LS_PERSONAL_LIBRARY_KEY = 'medstep_personal_library';
+/** Legacy / alternate keys seen in older or hand-edited backups */
+const BACKUP_LIBRARY_ALIASES = [
+  'medstep_personal_library',
+  'medstep_my_quizzes',
+  'medstep_personal_quizzes',
+  'personalLibrary',
+  'personal_library',
+  'myQuizzes',
+  'my_quizzes'
+];
+const BACKUP_NESTED_WRAPPERS = ['storage', 'localStorage', 'data', 'prefs', 'preferences', 'settings', 'state'];
+const BACKUP_PREF_ALIASES = {
+  theme: 'medstep_theme',
+  panel_opacity: 'medstep_panel_opacity',
+  panelopacity: 'medstep_panel_opacity',
+  pref_feedback: 'medstep_pref_feedback',
+  feedback: 'medstep_pref_feedback',
+  pref_exam_grid: 'medstep_pref_exam_grid',
+  exam_grid: 'medstep_pref_exam_grid',
+  grid: 'medstep_pref_exam_grid',
+  pref_timer_visible: 'medstep_pref_timer_visible',
+  timer_visible: 'medstep_pref_timer_visible',
+  lib_filters: 'medstep_lib_filters',
+  library_filters: 'medstep_lib_filters',
+  library_source: 'medstep_library_source',
+  lib_source: 'medstep_library_source',
+  github_token: 'medstep_github_token',
+  question_reports: 'medstep_question_reports',
+  report_queue: 'medstep_question_reports',
+  report_notify_email: 'medstep_report_notify_email'
+};
+
+function collectMedstepLocalStorage() {
+  const storage = {};
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key && key.startsWith('medstep_')) storage[key] = localStorage.getItem(key);
+  }
+  return storage;
+}
+
+function coerceBackupLsValue(val) {
+  if (val == null) return null;
+  if (typeof val === 'string') return val;
+  if (typeof val === 'number' || typeof val === 'boolean') return String(val);
+  try { return JSON.stringify(val); } catch(e) { return String(val); }
+}
+
+function canonicalMedstepKey(key) {
+  if (!key || typeof key !== 'string') return null;
+  if (key.startsWith('medstep_')) return key;
+  const bare = key.replace(/^medstep_/, '');
+  const lower = bare.toLowerCase();
+  if (BACKUP_PREF_ALIASES[lower]) return BACKUP_PREF_ALIASES[lower];
+  if (BACKUP_PREF_ALIASES[bare]) return BACKUP_PREF_ALIASES[bare];
+  if (/^(pref_|panel_|theme|lib_|personal_|question_|report_|github_)/.test(bare) || bare.includes('_')) {
+    return 'medstep_' + bare;
+  }
+  return null;
+}
+
+function isQuestionObject(obj) {
+  return obj && typeof obj === 'object' && !Array.isArray(obj)
+    && (obj.stem != null || obj.question != null || obj.prompt != null)
+    && (obj.choices != null || obj.options != null || obj.answers != null);
+}
+
+function looksLikePersonalLibraryEntries(arr) {
+  if (!Array.isArray(arr) || !arr.length) return false;
+  return arr.some(item => item && typeof item === 'object' && !Array.isArray(item)
+    && (item.file || item.title || item.name || item.json || item.questionsData
+      || (Array.isArray(item.questions) && item.questions.length && isQuestionObject(item.questions[0]))));
+}
+
+function looksLikeQuestionArray(arr) {
+  return Array.isArray(arr) && arr.length > 0 && arr.every(item => !item || typeof item !== 'object' || isQuestionObject(item));
+}
+
+function migrateSinglePersonalEntry(item, index) {
+  if (!item || typeof item !== 'object' || Array.isArray(item)) return null;
+
+  let parsed = item.json ?? item.questionsData ?? item.questionData ?? item.data;
+  if (typeof parsed === 'string') {
+    try { parsed = JSON.parse(parsed); } catch(e) { parsed = null; }
+  }
+  if (!Array.isArray(parsed) && Array.isArray(item.questions) && looksLikeQuestionArray(item.questions)) {
+    parsed = item.questions;
+  }
+
+  if (!Array.isArray(parsed) || !parsed.length) return null;
+
+  let id = item.id;
+  if (id == null && item.file) id = String(item.file).replace(/^personal:/, '');
+  if (id == null) id = (typeof newPersonalQuizId === 'function') ? newPersonalQuizId() : ('import-' + index);
+  id = String(id).replace(/^personal:/, '');
+
+  const file = (item.file && String(item.file).startsWith('personal:'))
+    ? String(item.file)
+    : ('personal:' + id);
+
+  const entry = {
+    file,
+    id,
+    title: String(item.title || item.name || item.label || ('Imported quiz ' + (index + 1))).trim(),
+    source: 'personal',
+    questions: parsed.length,
+    json: parsed,
+    addedAt: item.addedAt || item.createdAt || item.updatedAt || new Date().toISOString()
+  };
+  if (item.block != null && item.block !== '') entry.block = Number(item.block);
+  if (item.exam != null && item.exam !== '') entry.exam = Number(item.exam);
+  if (item.week != null && item.week !== '') entry.week = Number(item.week);
+  if (item.classTag) entry.classTag = item.classTag;
+  return entry;
+}
+
+function migratePersonalLibraryEntries(entries) {
+  const out = [];
+  const seen = new Set();
+  (entries || []).forEach((item, index) => {
+    const entry = migrateSinglePersonalEntry(item, index);
+    if (!entry || seen.has(entry.file)) return;
+    seen.add(entry.file);
+    out.push(entry);
+  });
+  return out;
+}
+
+function normalizePersonalLibraryRaw(raw) {
+  let entries = raw;
+  if (typeof raw === 'string') {
+    try { entries = JSON.parse(raw); } catch(e) { return []; }
+  }
+  if (Array.isArray(entries)) {
+    if (looksLikePersonalLibraryEntries(entries)) return migratePersonalLibraryEntries(entries);
+    if (looksLikeQuestionArray(entries)) {
+      const entry = migrateSinglePersonalEntry({
+        title: 'Imported quiz',
+        json: entries,
+        file: 'personal:import-' + Date.now().toString(36)
+      }, 0);
+      return entry ? [entry] : [];
+    }
+    return migratePersonalLibraryEntries(entries);
+  }
+  if (entries && typeof entries === 'object') {
+    if (Array.isArray(entries.quizzes)) return migratePersonalLibraryEntries(entries.quizzes);
+    if (Array.isArray(entries.library)) return migratePersonalLibraryEntries(entries.library);
+    if (Array.isArray(entries.personal)) return migratePersonalLibraryEntries(entries.personal);
+    if (Array.isArray(entries.items)) return migratePersonalLibraryEntries(entries.items);
+  }
+  return [];
+}
+
+function mergePersonalLibraryRaws(...raws) {
+  const byFile = new Map();
+  raws.forEach(raw => {
+    normalizePersonalLibraryRaw(raw).forEach(entry => byFile.set(entry.file, entry));
+  });
+  return [...byFile.values()];
+}
+
+function absorbMedstepKeyValue(into, key, val) {
+  const canon = canonicalMedstepKey(key);
+  if (!canon || val == null) return;
+  into[canon] = coerceBackupLsValue(val);
+}
+
+function extractMedstepStorageFromBackupNode(node, into, depth) {
+  if (node == null || depth > 8) return;
+
+  if (typeof node === 'string') {
+    const trimmed = node.trim();
+    if (trimmed.startsWith('{') || trimmed.startsWith('[')) {
+      try { extractMedstepStorageFromBackupNode(JSON.parse(trimmed), into, depth + 1); } catch(e) {}
+    }
+    return;
+  }
+
+  if (Array.isArray(node)) {
+    if (looksLikePersonalLibraryEntries(node)) {
+      const merged = mergePersonalLibraryRaws(into[LS_PERSONAL_LIBRARY_KEY], node);
+      if (merged.length) into[LS_PERSONAL_LIBRARY_KEY] = JSON.stringify(merged);
+    } else if (looksLikeQuestionArray(node)) {
+      const merged = mergePersonalLibraryRaws(into[LS_PERSONAL_LIBRARY_KEY], node);
+      if (merged.length) into[LS_PERSONAL_LIBRARY_KEY] = JSON.stringify(merged);
+    }
+    return;
+  }
+
+  if (typeof node !== 'object') return;
+
+  BACKUP_NESTED_WRAPPERS.forEach(wrapper => {
+    if (node[wrapper] != null && typeof node[wrapper] === 'object') {
+      extractMedstepStorageFromBackupNode(node[wrapper], into, depth + 1);
+    }
+  });
+
+  Object.keys(node).forEach(key => {
+    if (key.startsWith('medstep_')) absorbMedstepKeyValue(into, key, node[key]);
+    else {
+      const canon = canonicalMedstepKey(key);
+      if (canon) absorbMedstepKeyValue(into, key, node[key]);
+    }
+  });
+
+  BACKUP_LIBRARY_ALIASES.forEach(alias => {
+    if (node[alias] != null) {
+      const merged = mergePersonalLibraryRaws(into[LS_PERSONAL_LIBRARY_KEY], node[alias]);
+      if (merged.length) into[LS_PERSONAL_LIBRARY_KEY] = JSON.stringify(merged);
+    }
+  });
+}
+
+function normalizeMedstepBackupStorage(storage) {
+  const normalized = {};
+  const libraryRaws = [];
+
+  Object.keys(storage || {}).forEach(key => {
+    if (key === LS_PERSONAL_LIBRARY_KEY || BACKUP_LIBRARY_ALIASES.includes(key)) {
+      libraryRaws.push(storage[key]);
+      return;
+    }
+    absorbMedstepKeyValue(normalized, key, storage[key]);
+  });
+
+  const mergedLibrary = mergePersonalLibraryRaws(...libraryRaws);
+  if (mergedLibrary.length) {
+    normalized[LS_PERSONAL_LIBRARY_KEY] = JSON.stringify(mergedLibrary);
+  }
+
+  return normalized;
+}
+
+function parseMedstepBackupPayload(raw) {
+  const text = String(raw || '').trim();
+  if (!text) return null;
+
+  let data;
+  try { data = JSON.parse(text); } catch(e) { return null; }
+
+  const extracted = {};
+  extractMedstepStorageFromBackupNode(data, extracted, 0);
+  return normalizeMedstepBackupStorage(extracted);
+}
+
+function countPersonalQuizzesInBackupStorage(storage) {
+  try {
+    return normalizePersonalLibraryRaw(storage[LS_PERSONAL_LIBRARY_KEY]).length;
+  } catch(e) { return 0; }
+}
+
+function describeMedstepBackupImport(storage) {
+  const quizCount = countPersonalQuizzesInBackupStorage(storage);
+  const prefKeys = Object.keys(storage).filter(k => k !== LS_PERSONAL_LIBRARY_KEY).length;
+  const parts = [];
+  if (quizCount) parts.push(quizCount + ' quiz' + (quizCount !== 1 ? 'zes' : '') + ' in My Library');
+  if (prefKeys) parts.push(prefKeys + ' preference' + (prefKeys !== 1 ? 's' : '') + ' & settings');
+  if (!parts.length) parts.push(Object.keys(storage).length + ' saved item' + (Object.keys(storage).length !== 1 ? 's' : ''));
+  return parts.join(', ');
+}
+
+function exportMedstepLocalData() {
+  const storage = collectMedstepLocalStorage();
+  const quizCount = countPersonalQuizzesInBackupStorage(storage);
+  const payload = {
+    version: LS_BACKUP_VERSION,
+    app: 'MedStep',
+    exportedAt: new Date().toISOString(),
+    storage
+  };
+  const stamp = new Date().toISOString().slice(0, 10);
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'medstep-backup-' + stamp + '.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+  const parts = [Object.keys(storage).length + ' saved item' + (Object.keys(storage).length !== 1 ? 's' : '')];
+  if (quizCount) parts.push(quizCount + ' quiz' + (quizCount !== 1 ? 'zes' : '') + ' in My Library');
+  showToast('⬇️ Backup downloaded (' + parts.join(', ') + ')');
+}
+
+function triggerMedstepLocalDataImport() {
+  document.getElementById('medstep-backup-import')?.click();
+}
+
+function applyMedstepBackupToLocalStorage(storage) {
+  const keysToRemove = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key && key.startsWith('medstep_')) keysToRemove.push(key);
+  }
+  keysToRemove.forEach(k => localStorage.removeItem(k));
+  Object.keys(storage || {}).forEach(key => {
+    if (!key.startsWith('medstep_')) return;
+    const val = storage[key];
+    if (val != null) localStorage.setItem(key, String(val));
+  });
+}
+
+function applyMedstepBackupRestore() {
+  loadPersonalLibrary();
+  restoreLibrarySource();
+  restoreLibraryFilters();
+  loadEnginePrefs();
+  const savedOpacity = localStorage.getItem('medstep_panel_opacity');
+  if (savedOpacity != null && savedOpacity !== '') setPanelOpacity(savedOpacity);
+  const savedTheme = localStorage.getItem('medstep_theme');
+  if (savedTheme) changeTheme(savedTheme);
+  loadReportNotifyEmail();
+  const tokenInput = document.getElementById('github-token-input');
+  if (tokenInput) tokenInput.value = localStorage.getItem('medstep_github_token') || '';
+  updateLibraryClassOptions();
+  if (typeof renderLibrary === 'function') renderLibrary();
+  if (typeof renderStagingArea === 'function') renderStagingArea();
+  syncCustomDropdowns();
+}
+
+function importMedstepLocalData(ev) {
+  const file = ev.target.files && ev.target.files[0];
+  ev.target.value = '';
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    let storage;
+    try {
+      storage = parseMedstepBackupPayload(String(reader.result || ''));
+    } catch(e) {
+      showToast('❌ Invalid backup file');
+      return;
+    }
+    if (!storage || !Object.keys(storage).length) {
+      showToast('❌ No MedStep data found in file');
+      return;
+    }
+    const summary = describeMedstepBackupImport(storage);
+    if (!confirm('Import this backup? It will replace all MedStep data stored in this browser (' + summary + ').')) return;
+    applyMedstepBackupToLocalStorage(storage);
+    applyMedstepBackupRestore();
+    closeSettingsMenu();
+    showToast('✅ Local data restored — ' + summary);
+  };
+  reader.onerror = () => showToast('❌ Could not read backup file');
+  reader.readAsText(file);
 }
 
 // ══ TIMER ════════════════════════════════════════════════
@@ -4979,6 +5608,191 @@ let quizModalMode = 'add'; // 'add' | 'editTags'
 let pendingQuizEmailForm = null;
 let quizEditFile = null;
 let stagedQuizzes = []; // { file, title, questions, json[] }
+const LS_PERSONAL_LIBRARY = 'medstep_personal_library';
+const LS_LIBRARY_SOURCE = 'medstep_library_source';
+let librarySource = 'premade'; // 'premade' | 'personal'
+let personalLibrary = [];
+
+function loadPersonalLibrary() {
+  try {
+    const raw = localStorage.getItem(LS_PERSONAL_LIBRARY);
+    personalLibrary = raw ? JSON.parse(raw) : [];
+    if (!Array.isArray(personalLibrary)) personalLibrary = [];
+  } catch (e) {
+    personalLibrary = [];
+  }
+}
+
+function savePersonalLibrary() {
+  localStorage.setItem(LS_PERSONAL_LIBRARY, JSON.stringify(personalLibrary));
+}
+
+function isPersonalFile(file) {
+  return String(file || '').startsWith('personal:');
+}
+
+function isPersonalEntry(entry) {
+  return entry && (entry.source === 'personal' || isPersonalFile(entry.file));
+}
+
+function findLibraryEntry(file) {
+  if (!file) return null;
+  return libraryManifest.find(e => e.file === file)
+    || personalLibrary.find(e => e.file === file)
+    || null;
+}
+
+function getActiveLibraryEntries() {
+  return librarySource === 'personal' ? personalLibrary : libraryManifest;
+}
+
+function restoreLibrarySource() {
+  const saved = localStorage.getItem(LS_LIBRARY_SOURCE);
+  if (saved === 'personal' || saved === 'premade') librarySource = saved;
+  updateLibrarySourceUI();
+}
+
+function setLibrarySource(source) {
+  if (source !== 'premade' && source !== 'personal') return;
+  librarySource = source;
+  localStorage.setItem(LS_LIBRARY_SOURCE, source);
+  updateLibrarySourceUI();
+  updateLibraryClassOptions();
+  renderLibrary();
+}
+
+function updateLibrarySourceUI() {
+  document.querySelectorAll('#lib-source-toggle button').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.source === librarySource);
+  });
+  const refreshBtn = document.querySelector('.lib-header-btn-secondary');
+  if (refreshBtn) refreshBtn.style.display = librarySource === 'premade' ? '' : 'none';
+  const blockQuick = document.getElementById('lib-block-dropdown');
+  if (blockQuick) blockQuick.style.display = librarySource === 'premade' ? '' : 'none';
+}
+
+function newPersonalQuizId() {
+  return Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+}
+
+function readPersonalQuizForm() {
+  const title = document.getElementById('new-quiz-title').value.trim();
+  const jsonRaw = document.getElementById('new-quiz-json').value.trim();
+  if (!title) return { error: 'Enter a quiz title first.' };
+  if (!jsonRaw) return { error: 'Paste or import your quiz JSON first.' };
+  let parsed;
+  try {
+    parsed = JSON.parse(jsonRaw);
+    if (!Array.isArray(parsed) || !parsed.length) throw new Error('empty');
+  } catch (e) {
+    return { error: 'Invalid JSON — paste a non-empty array of questions.' };
+  }
+  const block = document.getElementById('new-quiz-block').value;
+  const exam = document.getElementById('new-quiz-exam').value;
+  const week = document.getElementById('new-quiz-week').value;
+  const classTag = document.getElementById('new-quiz-class').value;
+  return { title, parsed, block, exam, week, classTag };
+}
+
+function buildPersonalManifestEntry(form, existingFile) {
+  const id = existingFile ? existingFile.replace(/^personal:/, '') : newPersonalQuizId();
+  const file = 'personal:' + id;
+  const entry = {
+    file,
+    id,
+    title: form.title,
+    source: 'personal',
+    questions: form.parsed.length,
+    json: form.parsed,
+    addedAt: new Date().toISOString()
+  };
+  if (form.block) entry.block = Number(form.block);
+  if (form.exam) entry.exam = Number(form.exam);
+  if (form.week) entry.week = Number(form.week);
+  if (form.classTag) entry.classTag = form.classTag;
+  return entry;
+}
+
+function configureAddQuizModalUI() {
+  const personalActions = document.getElementById('personal-library-actions');
+  const premadeSection = document.getElementById('premade-publish-section');
+  const modalActions = document.getElementById('add-quiz-modal-actions');
+  const primaryBtn = document.getElementById('modal-primary-action');
+  const titleEl = document.getElementById('add-quiz-modal-title');
+  const showPersonal = quizModalMode === 'add' || quizModalMode === 'editPersonal';
+
+  if (titleEl && quizModalMode === 'add') titleEl.textContent = '+ Upload New Quiz';
+  if (personalActions) personalActions.classList.toggle('visible', showPersonal);
+  if (premadeSection) premadeSection.classList.toggle('visible', quizModalMode === 'add' && librarySource === 'premade');
+  if (modalActions) modalActions.style.display = (quizModalMode === 'add' && librarySource === 'premade') ? 'flex' : 'none';
+  if (primaryBtn) primaryBtn.style.display = (quizModalMode === 'add' && librarySource === 'premade') ? '' : 'none';
+}
+
+function savePersonalQuizFromModal() {
+  const form = readPersonalQuizForm();
+  if (form.error) { showToast('❌ ' + form.error); return; }
+  const existingFile = quizModalMode === 'editPersonal' ? quizEditFile : null;
+  const entry = buildPersonalManifestEntry(form, existingFile);
+  const idx = personalLibrary.findIndex(e => e.file === entry.file);
+  const isNew = idx < 0;
+  if (idx >= 0) personalLibrary[idx] = entry;
+  else personalLibrary.push(entry);
+  savePersonalLibrary();
+  closeAddQuizModal();
+  if (librarySource !== 'personal') setLibrarySource('personal');
+  else {
+    updateLibraryClassOptions();
+    renderLibrary();
+  }
+  if (isNew) {
+    showToast('✅ Saved to My Library: ' + entry.title + ' — export a backup in ☰ settings');
+  } else {
+    showToast('✅ Saved to My Library: ' + entry.title);
+  }
+}
+
+function downloadPersonalQuizFromModal() {
+  const form = readPersonalQuizForm();
+  if (form.error) { showToast('❌ ' + form.error); return; }
+  const slug = form.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'quiz';
+  const blob = new Blob([JSON.stringify(form.parsed, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = slug + '.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+  showToast('⬇️ Downloaded ' + slug + '.json — re-import anytime into My Quizzes');
+}
+
+function importPersonalQuizFile(ev) {
+  const file = ev.target.files && ev.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    document.getElementById('new-quiz-json').value = String(reader.result || '');
+    document.getElementById('new-quiz-json').dispatchEvent(new Event('input'));
+    if (!document.getElementById('new-quiz-title').value.trim()) {
+      document.getElementById('new-quiz-title').value = file.name.replace(/\.(json|txt)$/i, '');
+    }
+    showToast('📂 File loaded — review and save to My Library');
+  };
+  reader.onerror = () => showToast('❌ Could not read file');
+  reader.readAsText(file);
+  ev.target.value = '';
+}
+
+function deletePersonalQuiz(file) {
+  if (!isPersonalFile(file)) return;
+  const entry = findLibraryEntry(file);
+  if (!entry) return;
+  if (!confirm('Delete "' + entry.title + '" from My Quizzes on this device?')) return;
+  personalLibrary = personalLibrary.filter(e => e.file !== file);
+  savePersonalLibrary();
+  stagedQuizzes = stagedQuizzes.filter(s => s.file !== file);
+  renderStagingArea();
+  renderLibrary();
+  showToast('🗑️ Removed from My Library');
+}
 
 function updateClassOptions() {
   const block = Number(document.getElementById('new-quiz-block')?.value || 0);
@@ -5001,6 +5815,40 @@ function getTagCode(entry) {
   return `B${entry.block}E${entry.exam}W${entry.week}`;
 }
 
+const LIB_FILTER_MAX = { block: 8, exam: 3, week: 3 };
+
+function isStandardLibTag(level, value) {
+  const n = Number(value);
+  if (!n || n < 1) return false;
+  const max = LIB_FILTER_MAX[level];
+  return max ? n <= max : false;
+}
+
+function entryMatchesLibFilter(entry, level, filterVal) {
+  if (filterVal === 'all') return true;
+  if (filterVal === 'other') {
+    if (level === 'class') return !entry.classTag;
+    const field = level === 'block' ? 'block' : level === 'exam' ? 'exam' : 'week';
+    return !isStandardLibTag(level, entry[field]);
+  }
+  if (level === 'class') return String(entry.classTag || '') === filterVal;
+  const field = level === 'block' ? 'block' : level === 'exam' ? 'exam' : 'week';
+  return String(entry[field] || '') === filterVal;
+}
+
+function libraryFilterDisplayLabel(level, value) {
+  if (value === 'all') return null;
+  if (value === 'other') {
+    if (level === 'class') return 'Other (no class)';
+    const names = { block: 'Other (block)', exam: 'Other (exam)', week: 'Other (week)' };
+    return names[level] || 'Other';
+  }
+  if (level === 'block') return 'Block ' + value;
+  if (level === 'exam') return 'Exam ' + value;
+  if (level === 'week') return 'Week ' + value;
+  return value;
+}
+
 function toggleBlockDropdown() {
   document.getElementById('lib-block-dropdown').classList.toggle('open');
 }
@@ -5012,29 +5860,21 @@ function setLibraryFilters(block = 'all', exam = 'all', week = 'all', classTag =
   const c = document.getElementById('lib-class-filter');
   if (!b || !e || !w || !c) return;
   b.value = String(block);
-  updateLibraryExamOptions();
   e.value = String(exam);
-  updateLibraryWeekOptions();
-  updateLibraryClassOptions();
   w.value = String(week);
-  c.value = String(classTag);
+  updateLibraryClassOptions();
+  c.value = [...c.options].some(o => o.value === String(classTag)) ? String(classTag) : 'all';
   syncCustomDropdowns();
   renderLibrary();
 }
 
 function onLibraryFilterChange(level) {
-  if (level === 'block') {
-    updateLibraryExamOptions();
-    updateLibraryWeekOptions();
-    updateLibraryClassOptions();
-  } else if (level === 'exam') {
-    updateLibraryWeekOptions();
-    updateLibraryClassOptions();
-  } else if (level === 'week') {
+  if (level === 'block' || level === 'exam' || level === 'week') {
     updateLibraryClassOptions();
   }
   renderLibrary();
   saveLibraryFilters();
+  syncCustomDropdowns();
 }
 
 function saveLibraryFilters() {
@@ -5056,69 +5896,28 @@ function restoreLibraryFilters() {
   } catch(e) {}
 }
 
-function updateLibraryExamOptions() {
-  const block = document.getElementById('lib-block-filter')?.value || 'all';
-  const examSel = document.getElementById('lib-exam-filter');
-  if (!examSel) return;
-  const old = examSel.value;
-  const exams = new Set();
-  libraryManifest.forEach(e => {
-    if (!e.block || !e.exam) return;
-    if (block !== 'all' && String(e.block) !== block) return;
-    exams.add(String(e.exam));
-  });
-  examSel.innerHTML = '<option value="all">All Exams</option>';
-  [...exams].sort((a,b)=>Number(a)-Number(b)).forEach(v => {
-    const opt = document.createElement('option');
-    opt.value = v;
-    opt.textContent = `Exam ${v}`;
-    examSel.appendChild(opt);
-  });
-  examSel.value = [...examSel.options].some(o => o.value === old) ? old : 'all';
-  if (typeof syncCustomDropdowns === 'function') syncCustomDropdowns();
-}
-
-function updateLibraryWeekOptions() {
-  const block = document.getElementById('lib-block-filter')?.value || 'all';
-  const exam = document.getElementById('lib-exam-filter')?.value || 'all';
-  const weekSel = document.getElementById('lib-week-filter');
-  if (!weekSel) return;
-  const old = weekSel.value;
-  const weeks = new Set();
-  libraryManifest.forEach(e => {
-    if (!e.block || !e.exam || !e.week) return;
-    if (block !== 'all' && String(e.block) !== block) return;
-    if (exam !== 'all' && String(e.exam) !== exam) return;
-    weeks.add(String(e.week));
-  });
-  weekSel.innerHTML = '<option value="all">All Weeks</option>';
-  [...weeks].sort((a,b)=>Number(a)-Number(b)).forEach(v => {
-    const opt = document.createElement('option');
-    opt.value = v;
-    opt.textContent = `Week ${v}`;
-    weekSel.appendChild(opt);
-  });
-  weekSel.value = [...weekSel.options].some(o => o.value === old) ? old : 'all';
-  if (typeof syncCustomDropdowns === 'function') syncCustomDropdowns();
-}
-
-function updateLibraryClassOptions() {
+function getLibraryManifestClasses() {
   const block = document.getElementById('lib-block-filter')?.value || 'all';
   const exam = document.getElementById('lib-exam-filter')?.value || 'all';
   const week = document.getElementById('lib-week-filter')?.value || 'all';
+  const classes = new Set();
+  getActiveLibraryEntries().forEach(e => {
+    if (!e.classTag) return;
+    if (!entryMatchesLibFilter(e, 'block', block)) return;
+    if (!entryMatchesLibFilter(e, 'exam', exam)) return;
+    if (!entryMatchesLibFilter(e, 'week', week)) return;
+    classes.add(String(e.classTag));
+  });
+  return [...classes].sort((a, b) => a.localeCompare(b));
+}
+
+function updateLibraryClassOptions() {
   const classSel = document.getElementById('lib-class-filter');
   if (!classSel) return;
   const old = classSel.value;
-  const classes = new Set();
-  libraryManifest.forEach(e => {
-    if (!e.classTag) return;
-    if (block !== 'all' && String(e.block || '') !== block) return;
-    if (exam !== 'all' && String(e.exam || '') !== exam) return;
-    if (week !== 'all' && String(e.week || '') !== week) return;
-    classes.add(String(e.classTag));
-  });
-  classSel.innerHTML = '<option value="all">All Classes</option>';
-  [...classes].sort((a,b)=>a.localeCompare(b)).forEach(v => {
+  const classes = getLibraryManifestClasses();
+  classSel.innerHTML = '<option value="all">All Classes</option><option value="other">Other</option>';
+  classes.forEach(v => {
     const opt = document.createElement('option');
     opt.value = v;
     opt.textContent = v;
@@ -5126,6 +5925,76 @@ function updateLibraryClassOptions() {
   });
   classSel.value = [...classSel.options].some(o => o.value === old) ? old : 'all';
   syncCustomDropdowns();
+}
+
+function applyLibraryFilterValue(selectId, value, level) {
+  const sel = document.getElementById(selectId);
+  if (!sel || sel.value === value) return;
+  sel.value = value;
+  if (level === 'class') {
+    renderLibrary();
+    saveLibraryFilters();
+    syncCustomDropdowns();
+  } else {
+    onLibraryFilterChange(level);
+  }
+}
+
+function renderNumericFilterPills(containerId, selectId, maxCount, level) {
+  const wrap = document.getElementById(containerId);
+  const sel = document.getElementById(selectId);
+  if (!wrap || !sel) return;
+  const current = sel.value;
+  const values = ['all', ...Array.from({ length: maxCount }, (_, i) => String(i + 1)), 'other'];
+  wrap.innerHTML = '';
+  values.forEach(v => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'lib-filter-pill' + (v === current ? ' active' : '');
+    const titlePrefix = level === 'block' ? 'Block' : level === 'exam' ? 'Exam' : 'Week';
+    btn.textContent = v === 'all' ? 'All' : v === 'other' ? 'Other' : v;
+    btn.title = v === 'all' ? 'All' : v === 'other' ? `Other (${titlePrefix.toLowerCase()} untagged or non-standard)` : `${titlePrefix} ${v}`;
+    btn.onclick = () => applyLibraryFilterValue(selectId, v, level);
+    wrap.appendChild(btn);
+  });
+}
+
+function renderClassFilterPills() {
+  const wrap = document.getElementById('lib-pills-class');
+  const sel = document.getElementById('lib-class-filter');
+  if (!wrap || !sel) return;
+  const current = sel.value;
+  const classes = getLibraryManifestClasses();
+  wrap.innerHTML = '';
+  const allBtn = document.createElement('button');
+  allBtn.type = 'button';
+  allBtn.className = 'lib-filter-pill class-pill' + (current === 'all' ? ' active' : '');
+  allBtn.textContent = 'All';
+  allBtn.onclick = () => applyLibraryFilterValue('lib-class-filter', 'all', 'class');
+  wrap.appendChild(allBtn);
+  const otherBtn = document.createElement('button');
+  otherBtn.type = 'button';
+  otherBtn.className = 'lib-filter-pill class-pill' + (current === 'other' ? ' active' : '');
+  otherBtn.textContent = 'Other';
+  otherBtn.title = 'No class tag';
+  otherBtn.onclick = () => applyLibraryFilterValue('lib-class-filter', 'other', 'class');
+  wrap.appendChild(otherBtn);
+  classes.forEach(v => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'lib-filter-pill class-pill' + (v === current ? ' active' : '');
+    btn.innerHTML = `<span class="lib-pill-icon">${getClassIcon({ classTag: v })}</span><span class="lib-pill-text">${v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</span>`;
+    btn.title = v;
+    btn.onclick = () => applyLibraryFilterValue('lib-class-filter', v, 'class');
+    wrap.appendChild(btn);
+  });
+}
+
+function renderLibraryFilterPills() {
+  renderNumericFilterPills('lib-pills-block', 'lib-block-filter', 8, 'block');
+  renderNumericFilterPills('lib-pills-exam', 'lib-exam-filter', 3, 'exam');
+  renderNumericFilterPills('lib-pills-week', 'lib-week-filter', 3, 'week');
+  renderClassFilterPills();
 }
 
 // ── Custom Dropdown System ─────────────────────────────────
@@ -5163,17 +6032,32 @@ function syncDropdownOptions(groupId) {
   [...sel.options].forEach(opt => {
     const btn = document.createElement('button');
     btn.className = 'lib-dropdown-option' + (opt.value === sel.value ? ' active' : '');
-    btn.textContent = opt.textContent;
     btn.type = 'button';
+    if (selectId === 'lib-class-filter' && opt.value !== 'all' && opt.value !== 'other') {
+      btn.innerHTML = `<span class="lib-pill-icon">${getClassIcon({ classTag: opt.value })}</span> ${opt.textContent.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}`;
+    } else {
+      btn.textContent = opt.textContent;
+    }
     btn.onclick = (e) => {
       e.stopPropagation();
       sel.value = opt.value;
       sel.dispatchEvent(new Event('change'));
-      group.querySelector('.lib-dropdown-trigger').textContent = opt.textContent;
+      syncCustomDropdowns();
       closeAllLibDropdowns();
     };
     menu.appendChild(btn);
   });
+}
+
+function syncLibDropdownTrigger(selectId, trigger) {
+  const sel = document.getElementById(selectId);
+  if (!sel || !trigger) return;
+  const selected = sel.options[sel.selectedIndex];
+  if (selectId === 'lib-class-filter' && sel.value !== 'all' && sel.value !== 'other') {
+    trigger.innerHTML = `<span style="display:inline-flex;align-items:center;gap:6px;max-width:100%;overflow:hidden"><span>${getClassIcon({ classTag: sel.value })}</span><span style="overflow:hidden;text-overflow:ellipsis">${sel.value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</span></span>`;
+  } else {
+    trigger.textContent = selected ? selected.textContent : 'All';
+  }
 }
 
 function syncCustomDropdowns() {
@@ -5182,10 +6066,9 @@ function syncCustomDropdowns() {
     const sel = document.getElementById(selectId);
     if (!group || !sel) return;
     const trigger = group.querySelector('.lib-dropdown-trigger');
-    if (!trigger) return;
-    const selected = sel.options[sel.selectedIndex];
-    trigger.textContent = selected ? selected.textContent : 'All';
+    syncLibDropdownTrigger(selectId, trigger);
   });
+  renderLibraryFilterPills();
 }
 
 document.addEventListener('click', (e) => {
@@ -5241,11 +6124,33 @@ function renderBlockQuickView(entries) {
   wrap.innerHTML = html;
 }
 
+function initLibHeaderScroll() {
+  const el = document.getElementById('lib-header-scroll');
+  if (!el || el.dataset.scrollInit) return;
+  el.dataset.scrollInit = '1';
+  el.addEventListener('wheel', (e) => {
+    if (el.scrollWidth <= el.clientWidth + 2) return;
+    e.preventDefault();
+    e.stopPropagation();
+    el.scrollLeft += e.deltaY !== 0 ? e.deltaY : e.deltaX;
+  }, { passive: false });
+  const closeBtn = document.querySelector('.lib-header .lib-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleLibrary();
+      }
+    });
+  }
+}
+
 function toggleLibrary() {
   libraryOpen = !libraryOpen;
   document.getElementById('library-sidebar').classList.toggle('open', libraryOpen);
   document.getElementById('library-overlay').classList.toggle('open', libraryOpen);
   document.getElementById('library-toggle').style.display = libraryOpen ? 'none' : '';
+  document.body.style.overflow = libraryOpen ? 'hidden' : '';
   if (libraryOpen && libraryManifest.length === 0) refreshLibrary();
 }
 
@@ -5263,6 +6168,7 @@ async function refreshLibrary() {
       throw new Error('manifest.json exists but is not a valid JSON array. Content received: ' + text.slice(0, 80));
     }
     libraryManifest = JSON.parse(text);
+    updateLibraryClassOptions();
     renderLibrary();
   } catch(e) {
     const msg = e.message || String(e);
@@ -5349,6 +6255,12 @@ function renderStagingArea() {
   total.textContent = `${totalQ} total question${totalQ !== 1 ? 's' : ''} across ${stagedQuizzes.length} quiz${stagedQuizzes.length !== 1 ? 'zes' : ''}`;
 }
 
+async function toggleStageQuizByFile(file, btn) {
+  const entry = findLibraryEntry(file);
+  if (!entry) { showToast('❌ Quiz not found'); return; }
+  return toggleStageQuiz(entry, btn);
+}
+
 // Toggle staging state of a quiz (add or remove)
 async function toggleStageQuiz(entry, btn) {
   const idx = stagedQuizzes.findIndex(s => s.file === entry.file);
@@ -5369,15 +6281,7 @@ async function toggleStageQuiz(entry, btn) {
   showToast('⏳ Loading ' + entry.title + '…');
 
   try {
-    let res = await localFetch(entry.file);
-    if (!res.ok) res = await githubFetch(entry.file);
-    const text = await res.text();
-    if (!text || !text.trim().startsWith('[')) {
-      throw new Error('File found but content is not a JSON array.');
-    }
-    const json = JSON.parse(text);
-    if (!Array.isArray(json) || !json.length) throw new Error('Parsed JSON is empty or not an array.');
-
+    const json = await fetchQuizJSON(entry);
     stagedQuizzes.push({ file: entry.file, title: entry.title, json });
 
     // Paste merged JSON into the Manual tab textarea right away
@@ -5395,7 +6299,7 @@ async function toggleStageQuiz(entry, btn) {
 }
 
 async function stageByScope(seed, scope) {
-  const matches = libraryManifest.filter(e => {
+  const matches = getActiveLibraryEntries().filter(e => {
     if (String(e.block || '') !== String(seed.block || '')) return false;
     if (scope === 'week') {
       return String(e.exam || '') === String(seed.exam || '') &&
@@ -5411,11 +6315,7 @@ async function stageByScope(seed, scope) {
   for (const entry of matches) {
     if (stagedQuizzes.some(s => s.file === entry.file)) continue;
     try {
-      let res = await localFetch(entry.file);
-      if (!res.ok) res = await githubFetch(entry.file);
-      const text = await res.text();
-      const json = JSON.parse(text);
-      if (!Array.isArray(json) || !json.length) continue;
+      const json = await fetchQuizJSON(entry);
       stagedQuizzes.push({ file: entry.file, title: entry.title, json });
       added++;
     } catch(e) { /* skip bad one */ }
@@ -5431,7 +6331,7 @@ async function stageByScope(seed, scope) {
 }
 
 function stageByScopeFromEntryFile(file, scope) {
-  const seed = libraryManifest.find(e => e.file === file);
+  const seed = findLibraryEntry(file);
   if (!seed) { showToast('❌ Could not find quiz entry for scope add'); return; }
   return stageByScope(seed, scope);
 }
@@ -5520,7 +6420,14 @@ function updateQPickerBuildStatus() {
   }
 }
 
-async function fetchQuizJSON(file) {
+async function fetchQuizJSON(fileOrEntry) {
+  const entry = typeof fileOrEntry === 'object' ? fileOrEntry : findLibraryEntry(fileOrEntry);
+  const file = entry ? entry.file : fileOrEntry;
+  if (entry && isPersonalEntry(entry)) {
+    if (!entry.json || !Array.isArray(entry.json) || !entry.json.length)
+      throw new Error('Personal quiz data missing or empty.');
+    return entry.json;
+  }
   let res = await localFetch(file);
   if (!res.ok) res = await githubFetch(file);
   const text = await res.text();
@@ -5538,7 +6445,7 @@ async function openQPickerForEntry(entry, btn) {
   if (btn) { btn.disabled = true; btn.style.opacity = '0.5'; }
   showToast('⏳ Loading ' + entry.title + '…');
   try {
-    const json = await fetchQuizJSON(entry.file);
+    const json = await fetchQuizJSON(entry);
     showQPicker(json, entry.title);
   } catch(e) {
     showToast('❌ Failed to load: ' + (e.message || e));
@@ -5549,9 +6456,10 @@ async function openQPickerForEntry(entry, btn) {
 
 // +E / +W scope click
 async function openQPickerForScope(file, scope) {
-  const seed = libraryManifest.find(e => e.file === file);
+  const seed = findLibraryEntry(file);
   if (!seed) { showToast('❌ Quiz entry not found'); return; }
-  const matches = libraryManifest.filter(e => {
+  const pool = getActiveLibraryEntries();
+  const matches = pool.filter(e => {
     if (String(e.block || '') !== String(seed.block || '')) return false;
     if (scope === 'week') {
       return String(e.exam || '') === String(seed.exam || '') &&
@@ -5568,7 +6476,7 @@ async function openQPickerForScope(file, scope) {
   showToast('⏳ Loading ' + matches.length + ' quiz' + (matches.length !== 1 ? 'zes' : '') + '…');
   const combined = [];
   for (const entry of matches) {
-    try { combined.push(...await fetchQuizJSON(entry.file)); }
+    try { combined.push(...await fetchQuizJSON(entry)); }
     catch(e) { /* skip bad */ }
   }
   if (!combined.length) { showToast('❌ No questions loaded'); return; }
@@ -5581,26 +6489,29 @@ async function openQPickerForFiltered() {
   const examFilter  = document.getElementById('lib-exam-filter')?.value || 'all';
   const weekFilter  = document.getElementById('lib-week-filter')?.value || 'all';
   const classFilter = document.getElementById('lib-class-filter')?.value || 'all';
-  const matches = libraryManifest.filter(entry => {
-    if (blockFilter !== 'all' && String(entry.block || '') !== blockFilter) return false;
-    if (examFilter  !== 'all' && String(entry.exam  || '') !== examFilter)  return false;
-    if (weekFilter  !== 'all' && String(entry.week  || '') !== weekFilter)  return false;
-    if (classFilter !== 'all' && String(entry.classTag || '') !== classFilter) return false;
-    return true;
-  });
+  const matches = getActiveLibraryEntries().filter(entry =>
+    entryMatchesLibFilter(entry, 'block', blockFilter) &&
+    entryMatchesLibFilter(entry, 'exam', examFilter) &&
+    entryMatchesLibFilter(entry, 'week', weekFilter) &&
+    entryMatchesLibFilter(entry, 'class', classFilter)
+  );
   if (!matches.length) { showToast('❌ No quizzes match current filters'); return; }
 
   const parts = [];
-  if (blockFilter !== 'all') parts.push('Block ' + blockFilter);
-  if (examFilter  !== 'all') parts.push('Exam '  + examFilter);
-  if (weekFilter  !== 'all') parts.push('Week '  + weekFilter);
-  if (classFilter !== 'all') parts.push(classFilter);
+  const blockLbl = libraryFilterDisplayLabel('block', blockFilter);
+  const examLbl = libraryFilterDisplayLabel('exam', examFilter);
+  const weekLbl = libraryFilterDisplayLabel('week', weekFilter);
+  const classLbl = libraryFilterDisplayLabel('class', classFilter);
+  if (blockLbl) parts.push(blockLbl);
+  if (examLbl) parts.push(examLbl);
+  if (weekLbl) parts.push(weekLbl);
+  if (classLbl) parts.push(classLbl);
   const label = parts.length ? parts.join(' / ') : 'All Quizzes';
 
   showToast('⏳ Loading ' + matches.length + ' quiz' + (matches.length !== 1 ? 'zes' : '') + '…');
   const combined = [];
   for (const entry of matches) {
-    try { combined.push(...await fetchQuizJSON(entry.file)); }
+    try { combined.push(...await fetchQuizJSON(entry)); }
     catch(e) { /* skip bad */ }
   }
   if (!combined.length) { showToast('❌ No questions loaded'); return; }
@@ -5698,8 +6609,13 @@ function clearStaged() {
 
 function renderLibrary() {
   const list = document.getElementById('lib-list');
-  if (!libraryManifest.length) {
-    list.innerHTML = '<div class="lib-status">No quizzes in library yet.<br><span style="font-size:.7rem;opacity:.5">Use ＋ Add Quiz below to get started.</span></div>';
+  const entries = getActiveLibraryEntries();
+  if (!entries.length) {
+    const emptyMsg = librarySource === 'personal'
+      ? 'No personal quizzes yet.<br><span style="font-size:.7rem;opacity:.5">Use + Upload New Quiz to save one on this device, or import a downloaded file.</span>'
+      : 'No quizzes in library yet.<br><span style="font-size:.7rem;opacity:.5">Try Refresh, or switch to My Quizzes.</span>';
+    list.innerHTML = '<div class="lib-status">' + emptyMsg + '</div>';
+    if (librarySource === 'premade') renderBlockQuickView(libraryManifest);
     return;
   }
   const blockFilter = document.getElementById('lib-block-filter')?.value || 'all';
@@ -5707,16 +6623,15 @@ function renderLibrary() {
   const weekFilter = document.getElementById('lib-week-filter')?.value || 'all';
   const classFilter = document.getElementById('lib-class-filter')?.value || 'all';
   list.innerHTML = '';
-  const visible = libraryManifest.filter(entry => {
-    if (blockFilter !== 'all' && String(entry.block || '') !== blockFilter) return false;
-    if (examFilter !== 'all' && String(entry.exam || '') !== examFilter) return false;
-    if (weekFilter !== 'all' && String(entry.week || '') !== weekFilter) return false;
-    if (classFilter !== 'all' && String(entry.classTag || '') !== classFilter) return false;
-    return true;
-  });
-  renderBlockQuickView(libraryManifest);
+  const visible = entries.filter(entry =>
+    entryMatchesLibFilter(entry, 'block', blockFilter) &&
+    entryMatchesLibFilter(entry, 'exam', examFilter) &&
+    entryMatchesLibFilter(entry, 'week', weekFilter) &&
+    entryMatchesLibFilter(entry, 'class', classFilter)
+  );
+  if (librarySource === 'premade') renderBlockQuickView(libraryManifest);
   if (!visible.length) {
-    list.innerHTML = '<div class="lib-status">No quizzes for this block filter yet.</div>';
+    list.innerHTML = '<div class="lib-status">No quizzes match these filters.</div>';
     return;
   }
   visible.forEach(entry => {
@@ -5724,11 +6639,13 @@ function renderLibrary() {
     const tagCode = getTagCode(entry);
     const hasExamTag = entry.block && entry.exam;
     const hasWeekTag = entry.block && entry.exam && entry.week;
+    const personal = isPersonalEntry(entry);
+    const fileAttr = String(entry.file).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
     const btn = document.createElement('button');
     btn.className = 'lib-quiz-btn' + (isStaged ? ' staged' : '');
-    btn.id = 'lib-btn-' + entry.file;
+    btn.id = 'lib-btn-' + entry.file.replace(/[^a-zA-Z0-9_-]/g, '_');
     btn.innerHTML = `
-      <span class="lib-icon" style="${isStaged ? 'color:var(--success)' : ''}">${isStaged ? '✓' : getClassIcon(entry)}</span>
+      <span class="lib-icon" style="${isStaged ? 'color:var(--success)' : ''}">${isStaged ? '✓' : (personal ? '📓' : getClassIcon(entry))}</span>
       <div style="flex:1;min-width:0">
         <div>${entry.title}</div>
         <div class="lib-quiz-meta">
@@ -5741,10 +6658,11 @@ function renderLibrary() {
       <span class="lib-bulk-row">
         ${hasExamTag ? `<span class="lib-bulk-btn" title="Quiz all from same exam" role="button" tabindex="0" onclick="event.stopPropagation(); openQPickerForScope('${entry.file}','exam')">＋E</span>` : ''}
         ${hasWeekTag ? `<span class="lib-bulk-btn" title="Quiz all from same week" role="button" tabindex="0" onclick="event.stopPropagation(); openQPickerForScope('${entry.file}','week')">＋W</span>` : ''}
-        <span class="lib-bulk-btn" title="Edit tags" role="button" tabindex="0" onclick="event.stopPropagation(); openEditQuizTagsModalForFile('${entry.file}')">✏️</span>
+        <span class="lib-bulk-btn" title="Edit tags" role="button" tabindex="0" onclick="event.stopPropagation(); openEditQuizTagsModalForFile('${fileAttr}')">✏️</span>
+        ${personal ? `<span class="lib-delete-btn" title="Delete from My Quizzes" role="button" tabindex="0" onclick="event.stopPropagation(); deletePersonalQuiz('${fileAttr}')">🗑</span>` : ''}
       </span>
       <span class="lib-stage-toggle" title="${isStaged ? 'Remove from set' : 'Add to set'}" role="button" tabindex="0"
-            onclick="event.stopPropagation(); toggleStageQuiz(libraryManifest.find(e=>e.file==='${entry.file}'), this.closest('.lib-quiz-btn'))"
+            onclick="event.stopPropagation(); toggleStageQuizByFile('${fileAttr}', this.closest('.lib-quiz-btn'))"
             style="font-size:.68rem;opacity:.5;flex-shrink:0;color:${isStaged ? 'var(--success)' : 'inherit'};padding:4px 6px;border-radius:6px;cursor:pointer">${isStaged ? 'Added ✓' : '＋ Add'}</span>`;
     btn.onclick = () => openQPickerForEntry(entry, btn);
     list.appendChild(btn);
@@ -5754,16 +6672,8 @@ function renderLibrary() {
 async function loadLibraryQuiz(entry) {
   showToast('⏳ Loading ' + entry.title + '…');
   try {
-    let res = await localFetch(entry.file);
-    if (!res.ok) res = await githubFetch(entry.file);
-    const text = await res.text();
-    if (!text || !text.trim().startsWith('[')) {
-      throw new Error('File found but content is not a JSON array. Got: ' + text.slice(0, 60));
-    }
-    let json;
-    try { json = JSON.parse(text); }
-    catch(pe) { throw new Error('JSON parse error: ' + pe.message); }
-    if (!Array.isArray(json) || json.length === 0) throw new Error('JSON parsed but is empty or not an array');
+    const json = await fetchQuizJSON(entry);
+    if (!Array.isArray(json) || json.length === 0) throw new Error('Quiz has no questions');
     toggleLibrary();
     buildQuiz(json, { source: 'library', title: entry.title, file: entry.file });
     showToast('✅ ' + entry.title + ' loaded!');
@@ -5797,7 +6707,7 @@ function openAddQuizModal() {
   document.getElementById('clear-tags-btn').style.display = 'none';
   document.getElementById('modal-primary-action').textContent = 'Generate GitHub File ↗';
   const emailSection = document.getElementById('email-quiz-submit-section');
-  if (emailSection) emailSection.style.display = '';
+  if (emailSection) emailSection.style.display = librarySource === 'premade' ? '' : 'none';
   const emailBtn = document.getElementById('email-quiz-submit-btn');
   if (emailBtn) { emailBtn.disabled = false; emailBtn.innerText = '✉️ Email Quiz to Developer for Library Upload'; }
 
@@ -5819,6 +6729,7 @@ function openAddQuizModal() {
   if (tokenInput) tokenInput.value = localStorage.getItem('medstep_github_token') || '';
   const msgInput = document.getElementById('github-commit-message');
   if (msgInput) msgInput.value = '';
+  configureAddQuizModalUI();
 }
 
 function closeAddQuizModal() {
@@ -5999,9 +6910,37 @@ async function autoCommitToGitHub(options = {}) {
 }
 
 function openEditQuizTagsModalForFile(file) {
-  const entry = libraryManifest.find(e => e.file === file);
+  const entry = findLibraryEntry(file);
   if (!entry) { showToast('❌ Could not find quiz entry to edit'); return; }
+  if (isPersonalEntry(entry)) {
+    openPersonalEditModal(entry);
+    return;
+  }
   openEditQuizTagsModal(entry);
+}
+
+function openPersonalEditModal(entry) {
+  quizModalMode = 'editPersonal';
+  quizEditFile = entry.file;
+  document.getElementById('add-quiz-modal').classList.add('open');
+  document.getElementById('github-instructions').style.display = 'none';
+  document.getElementById('premade-publish-section')?.classList.remove('visible');
+  document.getElementById('clear-tags-btn').style.display = '';
+  document.getElementById('new-quiz-title').value = entry.title || '';
+  document.getElementById('new-quiz-block').value = entry.block ? String(entry.block) : '';
+  updateClassOptions();
+  document.getElementById('new-quiz-class').value = entry.classTag || '';
+  document.getElementById('new-quiz-exam').value = entry.exam ? String(entry.exam) : '';
+  document.getElementById('new-quiz-week').value = entry.week ? String(entry.week) : '';
+  document.getElementById('quiz-json-label').style.display = '';
+  document.getElementById('new-quiz-json').style.display = '';
+  document.getElementById('new-quiz-json').disabled = false;
+  document.getElementById('new-quiz-json').value = entry.json ? JSON.stringify(entry.json, null, 2) : '';
+  document.getElementById('json-validate-msg').style.display = '';
+  document.getElementById('json-validate-msg').textContent = '';
+  const titleEl = document.getElementById('add-quiz-modal-title');
+  if (titleEl) titleEl.textContent = 'Edit My Quiz';
+  configureAddQuizModalUI();
 }
 
 function openEditQuizTagsModal(entry) {
@@ -6288,6 +7227,10 @@ async function confirmQuizEmailSubmission(){
 }
 
 function prepareQuizForGitHub() {
+  if (quizModalMode === 'editPersonal') {
+    savePersonalQuizFromModal();
+    return;
+  }
   if (quizModalMode === 'editTags') {
     _prepareManifestEditAsync();
     return;
@@ -6454,6 +7397,8 @@ document.getElementById('add-quiz-modal').addEventListener('click', function(e) 
 
 // Load library on page load (silent — just primes the cache)
 window.addEventListener('load', async () => {
+  loadPersonalLibrary();
+  restoreLibrarySource();
   await refreshLibrary();
   restoreLibraryFilters();
   syncCustomDropdowns();
