@@ -1,0 +1,1410 @@
+[
+  {
+    "question": "A 45-year-old man falls from a ladder and has a Glasgow score of 7. Which immediate intervention best prevents secondary brain injury?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the significance of a GCS ≤ 8 and the intervention that should be considered.",
+    "options": [
+      {
+        "text": "Secure airway with endotracheal tube and mechanical ventilation",
+        "isCorrect": true,
+        "rationale": "A GCS ≤ 8 indicates coma and the lecture states airway protection (endotracheal intubation) should be considered to prevent hypoxia and secondary injury."
+      },
+      {
+        "text": "Administer high dose intravenous corticosteroids immediately for swelling",
+        "isCorrect": false,
+        "rationale": "Steroids are not recommended as the immediate intervention; this would be correct only if the lecture recommended steroids for acute TBI edema, which it does not."
+      },
+      {
+        "text": "Obtain urgent MRI of the brain before any airway intervention",
+        "isCorrect": false,
+        "rationale": "Imaging is important but airway protection takes priority; this option would be correct only if the patient were neurologically stable without airway risk."
+      },
+      {
+        "text": "Give hypertonic saline bolus before securing the airway",
+        "isCorrect": false,
+        "rationale": "Osmotic therapy is for suspected raised intracranial pressure; it is not the first step over airway protection unless airway is secure."
+      },
+      {
+        "text": "Place the patient prone to improve oxygenation and perfusion",
+        "isCorrect": false,
+        "rationale": "Prone positioning is not an immediate TBI airway management step; it would be correct only in specific respiratory failure contexts not described here."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best distinguishes immediate mechanical injury from later insults after head trauma?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Differentiate primary vs. secondary brain injury.",
+    "options": [
+      {
+        "text": "Primary injury is mechanical and occurs at time of impact",
+        "isCorrect": true,
+        "rationale": "The lecture defines primary brain injury as mechanical, irreversible damage occurring at the time of trauma."
+      },
+      {
+        "text": "Primary injury is delayed and caused by hypotension and hypoxia",
+        "isCorrect": false,
+        "rationale": "This describes secondary injury; it would be correct only if the lecture redefined primary injury to include delayed physiologic insults, which it does not."
+      },
+      {
+        "text": "Secondary injury is always reversible without intervention",
+        "isCorrect": false,
+        "rationale": "Secondary injury can be mitigated but is not always reversible; this would be correct only if the lecture claimed universal reversibility, which it did not."
+      },
+      {
+        "text": "Secondary injury refers exclusively to skull fractures and lacerations",
+        "isCorrect": false,
+        "rationale": "Secondary injury refers to physiologic insults like hypoxia and hypotension, not structural fractures; this option would be correct only with a different definition."
+      },
+      {
+        "text": "Primary injury is caused by infection developing days after trauma",
+        "isCorrect": false,
+        "rationale": "Infection is a delayed complication and would be secondary; this option would be correct only if infection were immediate at impact, which is not the lecture's definition."
+      }
+    ]
+  },
+  {
+    "question": "Which three insults are listed as the most common contributors to later brain damage after initial trauma?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the 3 most common causes of 2o brain injury and describe the effects and treatment of each. (highlighted items only )",
+    "options": [
+      {
+        "text": "Hypotension, hypoxia, and increased intracranial pressure",
+        "isCorrect": true,
+        "rationale": "The lecture highlights hypotension, hypoxia, and ↑ICP as the most common secondary insults and links each to decreased cerebral perfusion and specific treatments."
+      },
+      {
+        "text": "Seizures, infection, and delayed hemorrhagic conversion",
+        "isCorrect": false,
+        "rationale": "These are possible complications but not the three highlighted primary secondary insults; would be correct only if the lecture prioritized them instead."
+      },
+      {
+        "text": "Hyperglycemia, electrolyte imbalance, and fever management issues",
+        "isCorrect": false,
+        "rationale": "Metabolic derangements matter but are not the three most common secondary causes per the lecture; this would be correct only with different emphasis."
+      },
+      {
+        "text": "Cerebral vasospasm, hydrocephalus, and meningitis development",
+        "isCorrect": false,
+        "rationale": "These are specific complications (e.g., vasospasm after SAH) but not the three most common secondary insults listed in the lecture."
+      },
+      {
+        "text": "Hypothermia, coagulopathy, and delayed ischemic stroke occurrence",
+        "isCorrect": false,
+        "rationale": "These are potential contributors but not the three highlighted causes of secondary brain injury in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A patient with expanding intracranial volume will initially compensate. Which principle explains this limited compensation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the principle of the Monroe-Kelli Doctrine. Discuss effect on ICP when compensatory mechanisms are overwhelmed.",
+    "options": [
+      {
+        "text": "Sum of brain, CSF, and blood volumes remains constant",
+        "isCorrect": true,
+        "rationale": "The Monroe-Kellie doctrine states that intracranial volume is fixed and the sum of brain, CSF, and blood volumes must remain constant, explaining limited compensation."
+      },
+      {
+        "text": "Cerebral autoregulation maintains constant flow regardless of pressure",
+        "isCorrect": false,
+        "rationale": "Autoregulation concerns CBF relative to MAP, not the fixed intracranial volume; this would be correct only if the question asked about flow regulation."
+      },
+      {
+        "text": "CSF production increases to buffer any added intracranial volume",
+        "isCorrect": false,
+        "rationale": "CSF production does not increase to compensate for added volume; this would be correct only if CSF dynamics were altered as a compensatory increase, which the lecture does not state."
+      },
+      {
+        "text": "Skull expands to accommodate increased intracranial contents",
+        "isCorrect": false,
+        "rationale": "Adult skull is rigid and does not expand; this would be correct only in infants with open sutures, which is not the general principle described."
+      },
+      {
+        "text": "Venous outflow is permanently increased to lower intracranial pressure",
+        "isCorrect": false,
+        "rationale": "Venous drainage can transiently increase but is not a permanent solution; this would be correct only if sustained venous compensation were possible, which the lecture does not claim."
+      }
+    ]
+  },
+  {
+    "question": "Using the lecture formula, calculate cerebral perfusion pressure for a patient with MAP 90 mmHg and ICP 25 mmHg. What is the CPP?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the major determinant of Cerebral Blood Flow (CBF). Provide the formula for calculating CPP.",
+    "options": [
+      {
+        "text": "65 mmHg calculated as mean arterial pressure minus intracranial pressure",
+        "isCorrect": true,
+        "rationale": "CPP = MAP − ICP; with MAP 90 and ICP 25, CPP = 65 mmHg, matching the lecture formula and concept that CPP determines CBF."
+      },
+      {
+        "text": "115 mmHg calculated as mean arterial pressure plus intracranial pressure",
+        "isCorrect": false,
+        "rationale": "Adding MAP and ICP is incorrect; this would be correct only if the formula were MAP + ICP, which contradicts the lecture."
+      },
+      {
+        "text": "25 mmHg calculated as intracranial pressure alone determining perfusion",
+        "isCorrect": false,
+        "rationale": "ICP alone does not equal CPP; this would be correct only if MAP were negligible, which is not the case here."
+      },
+      {
+        "text": "90 mmHg calculated as mean arterial pressure without adjustment",
+        "isCorrect": false,
+        "rationale": "Ignoring ICP overestimates CPP; this would be correct only if ICP were zero, which it is not."
+      },
+      {
+        "text": "115 mmHg calculated as twice the intracranial pressure plus MAP",
+        "isCorrect": false,
+        "rationale": "This is a fabricated formula; it would be correct only if the lecture used that incorrect relationship, which it does not."
+      }
+    ]
+  },
+  {
+    "question": "A patient with rising intracranial pressure and falling MAP will have what combined effect on cerebral blood flow?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the effects of changes in ICP & MAP on CPP & CBF. ID two major treatment principles related to ICP & MAP.",
+    "options": [
+      {
+        "text": "Both increased ICP and decreased MAP reduce cerebral perfusion",
+        "isCorrect": true,
+        "rationale": "The lecture explains that ↑ICP and ↓MAP both lower CPP and thus reduce CBF; treatment principles are to reduce ICP and correct hypotension."
+      },
+      {
+        "text": "Increased ICP raises CBF while decreased MAP raises perfusion",
+        "isCorrect": false,
+        "rationale": "This reverses the true effects; it would be correct only if ICP caused vasodilation increasing flow, which contradicts the lecture."
+      },
+      {
+        "text": "Only MAP changes affect CBF; ICP has no effect on perfusion",
+        "isCorrect": false,
+        "rationale": "ICP directly affects CPP and CBF per the lecture; this would be correct only if intracranial pressure were irrelevant, which it is not."
+      },
+      {
+        "text": "Cerebral blood flow remains constant due to perfect autoregulation",
+        "isCorrect": false,
+        "rationale": "Autoregulation has limits and can fail with severe ICP or MAP changes; this would be correct only within autoregulatory range, not in this scenario."
+      },
+      {
+        "text": "Increased ICP increases MAP to preserve cerebral blood flow",
+        "isCorrect": false,
+        "rationale": "While Cushing’s reflex can raise MAP, this is a late compensatory response and does not preserve CBF indefinitely; the lecture emphasizes prevention of ICP rise instead."
+      }
+    ]
+  },
+  {
+    "question": "Which is a major immediate consequence of sustained elevation in intracranial pressure?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify a major consequence of ↑ ICP.",
+    "options": [
+      {
+        "text": "Reduced cerebral perfusion leading to ischemia and infarction",
+        "isCorrect": true,
+        "rationale": "The lecture states that ↑ICP decreases cerebral perfusion, increasing ischemia and infarction risk."
+      },
+      {
+        "text": "Immediate systemic coagulopathy causing diffuse bleeding elsewhere",
+        "isCorrect": false,
+        "rationale": "ICP elevation does not directly cause systemic coagulopathy; this would be correct only if systemic bleeding were triggered by another mechanism."
+      },
+      {
+        "text": "Rapid bone remodeling of the skull to accommodate swelling",
+        "isCorrect": false,
+        "rationale": "Skull remodeling does not occur acutely in adults; this would be correct only in chronic pediatric conditions with open sutures."
+      },
+      {
+        "text": "Permanent increase in CSF production to normalize pressure",
+        "isCorrect": false,
+        "rationale": "CSF production does not acutely increase to normalize pressure; this would be correct only if CSF dynamics were pathologically altered as described."
+      },
+      {
+        "text": "Immediate improvement in consciousness due to pressure redistribution",
+        "isCorrect": false,
+        "rationale": "Increased ICP worsens consciousness; this would be correct only if pressure redistribution paradoxically improved perfusion, which the lecture does not support."
+      }
+    ]
+  },
+  {
+    "question": "A patient develops unilateral dilated pupil and contralateral weakness after head trauma. Which herniation type best matches this presentation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the most common type of cerebral herniation and the classic clinical presentation with this type of herniation.",
+    "options": [
+      {
+        "text": "Medial temporal lobe displacement through tentorial notch",
+        "isCorrect": true,
+        "rationale": "This describes uncal (medial temporal) herniation, the lecture's most common transtentorial herniation causing ipsilateral pupil dilation and contralateral hemiparesis."
+      },
+      {
+        "text": "Cerebellar tonsils descending through foramen magnum",
+        "isCorrect": false,
+        "rationale": "Tonsillar herniation causes brainstem compression and respiratory compromise; this would be correct only if the presentation included those brainstem signs."
+      },
+      {
+        "text": "Frontal lobe shift across midline causing bilateral symptoms",
+        "isCorrect": false,
+        "rationale": "Subfalcine herniation involves cingulate shift under falx and may cause leg weakness; this would be correct only with midline shift findings."
+      },
+      {
+        "text": "Upward cerebellar displacement compressing midbrain structures",
+        "isCorrect": false,
+        "rationale": "Upward transtentorial herniation is less common and presents differently; this would be correct only with imaging showing upward displacement."
+      },
+      {
+        "text": "Diffuse cerebral swelling without focal directional displacement",
+        "isCorrect": false,
+        "rationale": "Diffuse swelling can raise ICP but does not produce the focal ipsilateral pupil and contralateral weakness classic for uncal herniation."
+      }
+    ]
+  },
+  {
+    "question": "Which triad of vital sign changes indicates a late, life-threatening intracranial process?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List the 3 components of Cushing’s Triad. Discuss the clinical significance of Cushing’s triad.",
+    "options": [
+      {
+        "text": "Bradycardia, hypertension, and irregular respirations together",
+        "isCorrect": true,
+        "rationale": "Cushing’s triad consists of bradycardia, hypertension, and irregular breathing and signifies raised ICP and impending herniation per the lecture."
+      },
+      {
+        "text": "Tachycardia, hypotension, and hyperventilation occurring simultaneously",
+        "isCorrect": false,
+        "rationale": "This is not Cushing’s triad; it would be correct only if the lecture defined the triad differently, which it does not."
+      },
+      {
+        "text": "Fever, tachypnea, and leukocytosis indicating systemic infection",
+        "isCorrect": false,
+        "rationale": "These signs suggest infection, not Cushing’s reflex; would be correct only in an infectious context rather than raised ICP."
+      },
+      {
+        "text": "Hypertension, tachycardia, and regular rapid respirations together",
+        "isCorrect": false,
+        "rationale": "Tachycardia is opposite of bradycardia in Cushing’s triad; this would be correct only if sympathetic overactivity predominated, which is not the classic triad."
+      },
+      {
+        "text": "Hypotension, bradypnea, and hyperthermia after head injury",
+        "isCorrect": false,
+        "rationale": "This combination does not match Cushing’s triad; it would be correct only if the lecture described a different late physiologic response."
+      }
+    ]
+  },
+  {
+    "question": "In trauma patients with head injury, which principle about hypotension is emphasized for preventing secondary injury?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify 2 important principles regarding hypotension and hemorrhagic shock in patients with TBI.",
+    "options": [
+      {
+        "text": "Treat hypotension promptly because it worsens cerebral ischemia",
+        "isCorrect": true,
+        "rationale": "The lecture emphasizes that hypotension reduces CPP and must be prevented or corrected to avoid secondary ischemic injury."
+      },
+      {
+        "text": "Assume hypotension is caused by intracranial bleeding until proven otherwise",
+        "isCorrect": false,
+        "rationale": "The lecture states hypotension is not due to brain injury until very late and primary sources like external bleeding should be sought; this option would be correct only if intracranial hemorrhage commonly caused early shock."
+      },
+      {
+        "text": "Delay fluid resuscitation to avoid increasing intracranial pressure",
+        "isCorrect": false,
+        "rationale": "Immediate resuscitation is recommended to preserve CPP; this would be correct only if fluids were proven to worsen outcomes in all TBI, which the lecture does not state."
+      },
+      {
+        "text": "Use permissive hypotension strategy in all head injured patients",
+        "isCorrect": false,
+        "rationale": "Permissive hypotension is contraindicated in TBI because it reduces CPP; this would be correct only in non-TBI hemorrhagic shock contexts."
+      },
+      {
+        "text": "Treat hypotension only after intracranial pressure monitoring is placed",
+        "isCorrect": false,
+        "rationale": "Treating hypotension is urgent and should not wait for ICP monitoring; this would be correct only if monitoring were immediately available and resuscitation could safely be deferred."
+      }
+    ]
+  },
+  {
+    "question": "Which imaging study is identified as the most important initial test for moderate to severe head trauma?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the most important imaging study utilized in pts with moderate/severe TBI.",
+    "options": [
+      {
+        "text": "Non-contrast computed tomography scan of the head immediately",
+        "isCorrect": true,
+        "rationale": "The lecture states non-contrast head CT is the most important initial imaging for moderate/severe TBI to identify surgical lesions."
+      },
+      {
+        "text": "Magnetic resonance imaging of the brain as the first study",
+        "isCorrect": false,
+        "rationale": "MRI is more sensitive for some injuries but is not the initial test per the lecture; it would be correct only if CT were unavailable or for delayed evaluation."
+      },
+      {
+        "text": "Plain skull radiographs to screen for all intracranial hemorrhages",
+        "isCorrect": false,
+        "rationale": "Skull x-rays are not adequate to detect intracranial hemorrhage; this would be correct only if CT were unavailable and only for skull fracture screening."
+      },
+      {
+        "text": "Bedside ocular ultrasound to definitively diagnose intracranial bleeding",
+        "isCorrect": false,
+        "rationale": "Ocular ultrasound can suggest raised ICP but cannot replace CT for structural diagnosis; this would be correct only as an adjunct, not the primary imaging."
+      },
+      {
+        "text": "CT angiography of the head as routine initial imaging",
+        "isCorrect": false,
+        "rationale": "CTA is used selectively (e.g., vascular injury) but is not the routine first-line imaging for all moderate/severe TBI per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A comatose patient with signs of herniation receives an osmotic agent. Which mechanism best explains how this therapy lowers intracranial pressure?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the mechanism and indication for the use of mannitol or hypertonic saline in the treatment of TBI.",
+    "options": [
+      {
+        "text": "Creates an osmotic gradient drawing water out of brain tissue",
+        "isCorrect": true,
+        "rationale": "Mannitol and hypertonic saline reduce ICP by creating an osmotic gradient that shifts water from brain parenchyma into the intravascular space, as described in the lecture."
+      },
+      {
+        "text": "Directly constricts cerebral arteries to increase perfusion pressure",
+        "isCorrect": false,
+        "rationale": "Osmotic agents do not primarily constrict arteries; this would be correct only if the agent had vasoconstrictive properties, which the lecture does not attribute to them."
+      },
+      {
+        "text": "Increases CSF production to dilute intracranial blood products",
+        "isCorrect": false,
+        "rationale": "These agents do not increase CSF production; this would be correct only if CSF dilution were a therapeutic goal, which it is not."
+      },
+      {
+        "text": "Enhances blood-brain barrier permeability to remove edema",
+        "isCorrect": false,
+        "rationale": "They do not enhance BBB permeability; this would be correct only if the therapy worked by altering BBB integrity, contrary to the lecture."
+      },
+      {
+        "text": "Stimulates lymphatic drainage of the cranial vault to reduce volume",
+        "isCorrect": false,
+        "rationale": "Cranial lymphatic drainage is not the mechanism described; this would be correct only if osmotic therapy primarily increased lymphatic outflow, which the lecture does not state."
+      }
+    ]
+  },
+  {
+    "question": "What PaCO2 target range is recommended for a head-injured patient without suspected raised intracranial pressure?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the PaCO2 goals in patients without ↑ ICP vs. in pts with ↑ ICP requiring hyperventilation.",
+    "options": [
+      {
+        "text": "35 to 45 mmHg to preserve cerebral blood flow and perfusion",
+        "isCorrect": true,
+        "rationale": "The lecture recommends PaCO2 35–45 mmHg when ↑ICP is not suspected to maintain normal CBF."
+      },
+      {
+        "text": "25 to 30 mmHg to aggressively reduce intracranial pressure routinely",
+        "isCorrect": false,
+        "rationale": "Aggressive hypocapnia (25–30) is not recommended routinely; it would be correct only when brief hyperventilation is required for acute herniation."
+      },
+      {
+        "text": "50 to 60 mmHg to promote cerebral vasodilation and oxygen delivery",
+        "isCorrect": false,
+        "rationale": "Hypercapnia increases ICP via vasodilation and is not recommended; this would be correct only if increased CBF were desired despite ICP risk."
+      },
+      {
+        "text": "Maintain PaCO2 at exactly 30 mmHg in all head injured patients",
+        "isCorrect": false,
+        "rationale": "A PaCO2 of 30 mmHg is only for short-term hyperventilation in acute deterioration, not for all patients; this would be correct only under those specific circumstances."
+      },
+      {
+        "text": "Allow PaCO2 to vary widely without monitoring in stable patients",
+        "isCorrect": false,
+        "rationale": "Unmonitored PaCO2 is unsafe; this would be correct only if continuous monitoring were unnecessary, which contradicts the lecture guidance."
+      }
+    ]
+  },
+  {
+    "question": "During acute neurologic decline from suspected intracranial hypertension, what is the indicated role of controlled hyperventilation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "ID the indication for hyperventilation in pts. with TBI. Discuss the physiologic effect of hyperventilation and the potential danger.",
+    "options": [
+      {
+        "text": "Temporizing measure to lower PaCO2 and reduce intracranial pressure",
+        "isCorrect": true,
+        "rationale": "The lecture states hyperventilation is indicated for acute deterioration to lower PaCO2 (≈30–35 mmHg) and transiently reduce ICP, but it risks cerebral ischemia."
+      },
+      {
+        "text": "Long-term strategy to maintain low intracranial pressure indefinitely",
+        "isCorrect": false,
+        "rationale": "Prolonged hyperventilation risks ischemia and is not recommended long-term; this would be correct only if prolonged vasoconstriction were safe."
+      },
+      {
+        "text": "Primary therapy to replace osmotic agents for all patients",
+        "isCorrect": false,
+        "rationale": "Hyperventilation is a temporizing adjunct, not a replacement for osmotic therapy or surgery; this would be correct only if osmotic agents were contraindicated universally."
+      },
+      {
+        "text": "Used routinely in all head injured patients regardless of status",
+        "isCorrect": false,
+        "rationale": "Routine hyperventilation is discouraged unless acute ↑ICP is present; this would be correct only if the lecture recommended routine use, which it does not."
+      },
+      {
+        "text": "Indicated to increase cerebral blood flow by vasodilation",
+        "isCorrect": false,
+        "rationale": "Hyperventilation causes vasoconstriction and reduces CBF; this option would be correct only if hyperventilation caused vasodilation, which is incorrect."
+      }
+    ]
+  },
+  {
+    "question": "Which surgical benefit is emphasized for patients with expanding intracranial mass lesions?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the principal benefit of surgical intervention in pts with TBI.",
+    "options": [
+      {
+        "text": "Evacuate mass lesion to relieve pressure and restore perfusion",
+        "isCorrect": true,
+        "rationale": "The lecture states surgery removes expanding hematomas to lower ICP and restore cerebral perfusion, the principal benefit of operative intervention."
+      },
+      {
+        "text": "Repair systemic vascular injuries causing extracranial hemorrhage",
+        "isCorrect": false,
+        "rationale": "While important, extracranial vascular repair is not the principal neurosurgical benefit for intracranial mass lesions; this would be correct only if extracranial bleeding were the primary issue."
+      },
+      {
+        "text": "Increase skull rigidity to prevent further brain swelling",
+        "isCorrect": false,
+        "rationale": "Surgery does not increase skull rigidity; craniectomy actually removes bone to allow swelling. This would be correct only with a different surgical aim."
+      },
+      {
+        "text": "Permanently normalize intracranial pressure without further monitoring",
+        "isCorrect": false,
+        "rationale": "Surgery is definitive for mass effect but does not obviate monitoring; this would be correct only if no postoperative ICP risk existed."
+      },
+      {
+        "text": "Eliminate need for medical therapies such as osmotic agents",
+        "isCorrect": false,
+        "rationale": "Medical therapies may still be needed perioperatively; this would be correct only if surgery always fully resolved ICP issues immediately."
+      }
+    ]
+  },
+  {
+    "question": "A patient presents with a large scalp laceration after a fall. What acute danger is emphasized in the lecture for such wounds?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the acute danger in scalp lacerations.",
+    "options": [
+      {
+        "text": "Significant blood loss from scalp causing hypovolemic shock",
+        "isCorrect": true,
+        "rationale": "The lecture highlights that scalp wounds can bleed profusely and cause acute blood loss leading to shock."
+      },
+      {
+        "text": "Immediate intracranial infection within minutes of injury",
+        "isCorrect": false,
+        "rationale": "Infection is a later risk, not an immediate danger; this would be correct only if contamination caused instant intracranial infection, which is not typical."
+      },
+      {
+        "text": "Spontaneous skull bone regeneration preventing further injury",
+        "isCorrect": false,
+        "rationale": "Bone regeneration is not an acute concern; this would be correct only in chronic healing contexts, not acute management."
+      },
+      {
+        "text": "Guaranteed development of seizure disorder within hours",
+        "isCorrect": false,
+        "rationale": "Seizures can occur but are not guaranteed immediately; this would be correct only if the lecture stated immediate seizures always occur."
+      },
+      {
+        "text": "Immediate cerebral herniation from superficial scalp bleeding",
+        "isCorrect": false,
+        "rationale": "Scalp bleeding does not directly cause herniation; this would be correct only if bleeding extended intracranially causing mass effect, which is not the usual scenario."
+      }
+    ]
+  },
+  {
+    "question": "Which skull fracture type is defined by bone driven below the skull plane and often requires surgery?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define depressed skull fracture and identify the major complications.",
+    "options": [
+      {
+        "text": "Depressed fracture with bone fragments displaced inward below skull plane",
+        "isCorrect": true,
+        "rationale": "The lecture defines depressed skull fractures as bone driven below the skull plane and notes they often need operative repair due to underlying brain injury and infection risk."
+      },
+      {
+        "text": "Linear fracture as a single nondisplaced crack across skull vault",
+        "isCorrect": false,
+        "rationale": "Linear fractures traverse the skull but are not depressed; this would be correct only if the fracture were nondisplaced rather than depressed."
+      },
+      {
+        "text": "Basilar fracture involving the skull base without bone depression",
+        "isCorrect": false,
+        "rationale": "Basilar fractures affect the skull base and have different signs; this would be correct only if the question asked about skull base injuries."
+      },
+      {
+        "text": "Comminuted fracture with multiple fragments but no inward displacement",
+        "isCorrect": false,
+        "rationale": "Comminuted fractures have multiple fragments and may be depressed; this option would be correct only if there were no inward displacement, which contradicts the depressed definition."
+      },
+      {
+        "text": "Greenstick fracture typical in adults with skull pliability",
+        "isCorrect": false,
+        "rationale": "Greenstick fractures occur in children and are not typical adult skull injuries; this would be correct only in pediatric contexts with pliable bone."
+      }
+    ]
+  },
+  {
+    "question": "A linear skull fracture crosses the middle meningeal groove. Why is this location clinically important?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define linear skull fracture & identify the anatomical location for fractures that may result in an epidural hematoma",
+    "options": [
+      {
+        "text": "Risk of arterial tear producing an epidural hematoma rapidly",
+        "isCorrect": true,
+        "rationale": "The lecture notes linear fractures crossing the middle meningeal groove can lacerate the middle meningeal artery, causing EDH."
+      },
+      {
+        "text": "Increased chance of venous sinus thrombosis causing chronic headache",
+        "isCorrect": false,
+        "rationale": "Venous sinus injury relates more to fractures over dural sinuses; this would be correct only if the fracture crossed a venous sinus rather than the MMA groove."
+      },
+      {
+        "text": "Guaranteed development of diffuse axonal injury at fracture site",
+        "isCorrect": false,
+        "rationale": "DAI is due to shearing forces, not specifically linear fractures; this would be correct only if high-velocity deceleration with shearing were present."
+      },
+      {
+        "text": "Immediate CSF overproduction leading to hydrocephalus formation",
+        "isCorrect": false,
+        "rationale": "Fractures do not cause CSF overproduction; this would be correct only with specific ventricular injury altering CSF dynamics."
+      },
+      {
+        "text": "Protection against intracranial hemorrhage by diverting force outward",
+        "isCorrect": false,
+        "rationale": "Crossing the MMA groove increases hemorrhage risk rather than protecting; this would be correct only if the fracture dissipated energy without vascular injury."
+      }
+    ]
+  },
+  {
+    "question": "How should an embedded foreign object in an open skull wound be managed initially in the emergency setting?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define open skull fracture. Discuss the management of embedded foreign bodies and open fractures.",
+    "options": [
+      {
+        "text": "Stabilize object in place and arrange urgent neurosurgical intervention",
+        "isCorrect": true,
+        "rationale": "The lecture advises not to remove embedded objects, instead stabilize them and proceed to operative management with antibiotics and tetanus update."
+      },
+      {
+        "text": "Remove object immediately to prevent further intracranial contamination",
+        "isCorrect": false,
+        "rationale": "Immediate removal risks worsening hemorrhage and is contraindicated; this would be correct only if the object were superficial and safe to extract."
+      },
+      {
+        "text": "Leave object and discharge patient with oral antibiotics only",
+        "isCorrect": false,
+        "rationale": "Discharge without surgical evaluation is unsafe; this would be correct only if the object were trivial and no intracranial involvement suspected."
+      },
+      {
+        "text": "Irrigate wound vigorously and pack with dry gauze before transfer",
+        "isCorrect": false,
+        "rationale": "While cleaning is important, vigorous irrigation and packing without stabilization and surgical planning is not the recommended initial step; this would be correct only in controlled operative settings."
+      },
+      {
+        "text": "Apply topical hemostatic agent and observe for 24 hours",
+        "isCorrect": false,
+        "rationale": "Observation alone is inadequate for penetrating cranial injuries; this would be correct only for minor scalp lacerations without skull involvement."
+      }
+    ]
+  },
+  {
+    "question": "Which physical findings suggest a fracture at the skull base requiring CT evaluation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the exam findings of basilar skull fracture and identify the appropriate imaging needed.",
+    "options": [
+      {
+        "text": "Periorbital ecchymosis, retroauricular hematoma, and CSF leak",
+        "isCorrect": true,
+        "rationale": "The lecture lists raccoon eyes, Battle sign, and CSF rhinorrhea/otorrhea as basilar skull fracture signs and recommends CT with bone windows."
+      },
+      {
+        "text": "Isolated scalp tenderness without ecchymosis or fluid drainage",
+        "isCorrect": false,
+        "rationale": "Isolated scalp tenderness is nonspecific; this would be correct only if other basilar signs were absent and CT not indicated."
+      },
+      {
+        "text": "Bilateral leg weakness with preserved cranial nerve function",
+        "isCorrect": false,
+        "rationale": "Leg weakness suggests spinal or cortical injury, not basilar skull fracture; this would be correct only if imaging localized injury to those regions."
+      },
+      {
+        "text": "Immediate onset of high fever and neck stiffness within minutes",
+        "isCorrect": false,
+        "rationale": "Fever and neck stiffness suggest meningitis or SAH but are not classic immediate basilar fracture signs; this would be correct only with infectious or meningeal irritation evidence."
+      },
+      {
+        "text": "Transient visual aura without external head trauma signs",
+        "isCorrect": false,
+        "rationale": "Visual aura without trauma does not indicate basilar skull fracture; this would be correct only in nontraumatic neurologic conditions."
+      }
+    ]
+  },
+  {
+    "question": "Which mechanism best describes diffuse axonal injury after high-velocity deceleration?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the pathophysiologic mechanism of Diffuse Axonal Injury (DAI).",
+    "options": [
+      {
+        "text": "Shearing forces stretch and tear axons at gray-white junction",
+        "isCorrect": true,
+        "rationale": "The lecture explains DAI results from shearing during rapid deceleration causing axonal stretching and separation, especially at the gray-white interface."
+      },
+      {
+        "text": "Focal arterial rupture producing a single large intracerebral hematoma",
+        "isCorrect": false,
+        "rationale": "This describes focal hemorrhage like EDH/ICH, not DAI; it would be correct only if the injury were focal arterial bleeding."
+      },
+      {
+        "text": "Autoimmune demyelination triggered by head trauma days later",
+        "isCorrect": false,
+        "rationale": "DAI is mechanical, not autoimmune; this would be correct only if post-traumatic autoimmune processes were the primary mechanism."
+      },
+      {
+        "text": "Ischemic infarction from chronic small vessel disease unrelated to trauma",
+        "isCorrect": false,
+        "rationale": "Chronic small vessel ischemia is not DAI; this would be correct only in nontraumatic cerebrovascular disease."
+      },
+      {
+        "text": "Localized cortical contusion from direct skull penetration",
+        "isCorrect": false,
+        "rationale": "Contusion is focal tissue bruising, not diffuse axonal shearing; this would be correct only with direct impact causing focal injury."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical scenario should raise suspicion for diffuse axonal injury despite a nonfocal initial CT?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify which patients should be suspected of having DAI.",
+    "options": [
+      {
+        "text": "Prolonged coma after high-velocity deceleration with minimal CT findings",
+        "isCorrect": true,
+        "rationale": "The lecture advises suspecting DAI in patients with prolonged coma after high-velocity injury when CT lacks focal mass lesions."
+      },
+      {
+        "text": "Brief loss of consciousness with immediate full recovery and normal exam",
+        "isCorrect": false,
+        "rationale": "Brief transient LOC with rapid recovery is less suggestive of DAI; this would be correct only if prolonged unconsciousness developed later."
+      },
+      {
+        "text": "Focal cranial nerve palsy with large epidural hematoma on CT",
+        "isCorrect": false,
+        "rationale": "Focal deficits with a mass lesion point to focal hemorrhage rather than DAI; this would be correct only if diffuse shearing were also present."
+      },
+      {
+        "text": "Isolated scalp laceration without altered mental status",
+        "isCorrect": false,
+        "rationale": "Scalp laceration alone without neurologic impairment is unlikely DAI; this would be correct only if neurologic decline occurred subsequently."
+      },
+      {
+        "text": "Delayed onset of fever and leukocytosis several days post injury",
+        "isCorrect": false,
+        "rationale": "Delayed fever suggests infection or inflammatory response, not acute DAI; this would be correct only if DAI produced systemic inflammatory signs, which is atypical."
+      }
+    ]
+  },
+  {
+    "question": "A patient with head trauma has a biconvex, lenticular hyperdense collection on CT that does not cross suture lines. Which diagnosis fits this imaging?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define epidural hematoma (EDH). Identify the most common cause, location and artery involved.",
+    "options": [
+      {
+        "text": "Arterial collection between skull and dura consistent with epidural hematoma",
+        "isCorrect": true,
+        "rationale": "The lecture describes EDH as a biconvex hyperdense collection between skull and dura, often from middle meningeal artery injury after skull fracture."
+      },
+      {
+        "text": "Venous subdural collection conforming to brain surface and sulci",
+        "isCorrect": false,
+        "rationale": "Subdural hematomas are crescent-shaped and conform to brain contours; this would be correct only if CT showed crescent morphology."
+      },
+      {
+        "text": "Intraventricular hemorrhage filling the ventricular system on imaging",
+        "isCorrect": false,
+        "rationale": "Intraventricular hemorrhage appears within ventricles, not as a lentiform extra-axial mass; this would be correct only with ventricular blood present."
+      },
+      {
+        "text": "Parenchymal contusion appearing as irregular intraparenchymal hyperdensity",
+        "isCorrect": false,
+        "rationale": "Contusions are intraparenchymal and irregular; this would be correct only if the hyperdensity were within brain tissue rather than extra-axial."
+      },
+      {
+        "text": "Subarachnoid blood layering in sulci and basal cisterns",
+        "isCorrect": false,
+        "rationale": "SAH shows blood in sulci and cisterns, not a lentiform extra-axial mass; this would be correct only with diffuse sulcal hyperdensity."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical presentation is classically associated with an epidural arterial bleed before rapid deterioration?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the classic presentation of an EDH. Identify and describe the CT findings in EDH and the treatment.",
+    "options": [
+      {
+        "text": "Brief loss of consciousness, lucid interval, then rapid decline",
+        "isCorrect": true,
+        "rationale": "The lecture notes the classic EDH presentation includes a lucid interval after initial LOC followed by rapid neurologic deterioration due to arterial bleeding."
+      },
+      {
+        "text": "Gradual cognitive decline over weeks without acute neurologic signs",
+        "isCorrect": false,
+        "rationale": "Chronic subdural hematomas present gradually; this would be correct only for chronic venous bleeding, not acute EDH."
+      },
+      {
+        "text": "Immediate coma with no preceding transient improvement period",
+        "isCorrect": false,
+        "rationale": "While EDH can present with immediate coma, the classic pattern includes a lucid interval; this option would be correct only if massive immediate hemorrhage occurred."
+      },
+      {
+        "text": "Isolated headache without any change in mental status or pupils",
+        "isCorrect": false,
+        "rationale": "Isolated headache is nonspecific and not the classic EDH pattern; this would be correct only in very small, nonexpanding bleeds."
+      },
+      {
+        "text": "Progressive memory loss and personality change months later",
+        "isCorrect": false,
+        "rationale": "This describes chronic processes, not the acute EDH presentation; it would be correct only for chronic subdural or neurodegenerative conditions."
+      }
+    ]
+  },
+  {
+    "question": "Which bleeding source is most commonly responsible for acute subdural hematoma after shearing injury?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define subdural hematoma (SDH). Identify the etiology of bleeding. Identify which pts. are at greater risk for SDH & why.",
+    "options": [
+      {
+        "text": "Tearing of bridging veins between cortex and dural sinuses",
+        "isCorrect": true,
+        "rationale": "The lecture states SDH results from shearing of cortical bridging veins, especially in patients with brain atrophy who are at higher risk."
+      },
+      {
+        "text": "Rupture of middle meningeal artery beneath skull fracture",
+        "isCorrect": false,
+        "rationale": "MMA rupture causes epidural hematoma, not SDH; this would be correct only if the bleed were epidural rather than subdural."
+      },
+      {
+        "text": "Bleeding from deep intraparenchymal small arterioles",
+        "isCorrect": false,
+        "rationale": "Intraparenchymal hemorrhage arises from parenchymal vessels, not bridging veins; this would be correct only with intraparenchymal CT findings."
+      },
+      {
+        "text": "Tear of dural venous sinuses producing immediate massive hemorrhage",
+        "isCorrect": false,
+        "rationale": "Dural sinus injury can cause bleeding but SDH is classically from bridging veins; this would be correct only if sinus injury were documented."
+      },
+      {
+        "text": "Spontaneous subarachnoid vessel rupture unrelated to trauma",
+        "isCorrect": false,
+        "rationale": "SAH from aneurysm rupture is nontraumatic; this would be correct only in spontaneous SAH contexts, not traumatic SDH."
+      }
+    ]
+  },
+  {
+    "question": "On CT, how does an acute subdural hematoma typically appear compared with an epidural hematoma?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss CT findings in acute SDH. (as opposed to EDH),",
+    "options": [
+      {
+        "text": "Crescent-shaped hyperdensity that conforms to brain surface and sulci",
+        "isCorrect": true,
+        "rationale": "The lecture describes acute SDH as crescentic, conforming to brain contours and often crossing suture lines, unlike EDH."
+      },
+      {
+        "text": "Lentiform biconvex hyperdensity limited by suture attachments",
+        "isCorrect": false,
+        "rationale": "This describes EDH, not SDH; it would be correct only if the hematoma were epidural."
+      },
+      {
+        "text": "Diffuse sulcal hyperdensity without extra-axial mass effect",
+        "isCorrect": false,
+        "rationale": "Diffuse sulcal blood suggests SAH rather than SDH; this would be correct only with SAH imaging."
+      },
+      {
+        "text": "Well-circumscribed intraparenchymal hyperdense focus with edema",
+        "isCorrect": false,
+        "rationale": "This describes intraparenchymal hemorrhage, not SDH; it would be correct only if the bleed were within brain tissue."
+      },
+      {
+        "text": "Ventricular system filled with hyperdense material on imaging",
+        "isCorrect": false,
+        "rationale": "This indicates intraventricular hemorrhage, not SDH; it would be correct only with ventricular blood present."
+      }
+    ]
+  },
+  {
+    "question": "Which vessels are typically the source of bleeding in traumatic subarachnoid hemorrhage?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define subarachnoid hemorrhage (SAH) and identify the etiology of bleeding.",
+    "options": [
+      {
+        "text": "Small subarachnoid vessels torn within the meningeal layers",
+        "isCorrect": true,
+        "rationale": "The lecture states traumatic SAH arises from tears of small subarachnoid vessels leading to blood in CSF and cisterns."
+      },
+      {
+        "text": "Middle meningeal artery laceration beneath temporal bone fracture",
+        "isCorrect": false,
+        "rationale": "MMA laceration causes epidural hematoma, not SAH; this would be correct only if arterial bleeding tracked into subarachnoid space."
+      },
+      {
+        "text": "Bridging cortical veins sheared at the dural interface",
+        "isCorrect": false,
+        "rationale": "Bridging veins cause SDH; this would be correct only if venous blood entered the subarachnoid space, which is less typical."
+      },
+      {
+        "text": "Deep intraparenchymal arterioles rupturing into ventricles",
+        "isCorrect": false,
+        "rationale": "This describes intraparenchymal or intraventricular hemorrhage, not SAH; it would be correct only with those imaging findings."
+      },
+      {
+        "text": "Dural venous sinus thrombosis causing retrograde subarachnoid bleeding",
+        "isCorrect": false,
+        "rationale": "Sinus thrombosis is not the usual traumatic SAH source; this would be correct only in rare venous pathology cases."
+      }
+    ]
+  },
+  {
+    "question": "What CT pattern indicates traumatic subarachnoid hemorrhage and what major delayed complication must be monitored?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the CT findings of SAH, the major complication, and the medication utilized to prevent this complication.",
+    "options": [
+      {
+        "text": "Blood in cisterns and sulci with risk of vasospasm",
+        "isCorrect": true,
+        "rationale": "The lecture notes SAH appears as blood in basilar cisterns and sulci and that cerebral vasospasm is a major complication to monitor for."
+      },
+      {
+        "text": "Lentiform extra-axial collection with risk of epidural infection",
+        "isCorrect": false,
+        "rationale": "Lentiform collection describes EDH, not SAH; infection risk is not the primary delayed complication of SAH per the lecture."
+      },
+      {
+        "text": "Diffuse intraparenchymal hyperdensities with immediate hydrocephalus",
+        "isCorrect": false,
+        "rationale": "Intraparenchymal hemorrhage appears within brain tissue; hydrocephalus can occur but is not the classic SAH CT pattern."
+      },
+      {
+        "text": "Ventricular enlargement without blood suggesting chronic hydrocephalus",
+        "isCorrect": false,
+        "rationale": "Ventricular enlargement without blood indicates chronic hydrocephalus, not acute SAH; this would be correct only in chronic settings."
+      },
+      {
+        "text": "Skull base fracture line with no intracranial blood present",
+        "isCorrect": false,
+        "rationale": "Skull base fracture may accompany SAH but absence of intracranial blood means SAH is not present; this would be correct only if CT lacked hemorrhage."
+      }
+    ]
+  },
+  {
+    "question": "Which medication is recommended to reduce the risk of vasospasm after traumatic subarachnoid bleeding?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the CT findings of SAH, the major complication, and the medication utilized to prevent this complication.",
+    "options": [
+      {
+        "text": "Nimodipine administered to reduce risk of cerebral vasospasm",
+        "isCorrect": true,
+        "rationale": "The lecture states nimodipine, a calcium channel blocker, is used to prevent vasospasm after SAH."
+      },
+      {
+        "text": "High-dose intravenous mannitol given to prevent delayed vasospasm",
+        "isCorrect": false,
+        "rationale": "Mannitol reduces ICP but does not prevent vasospasm; this would be correct only if osmotic therapy were shown to prevent vasospasm, which the lecture does not state."
+      },
+      {
+        "text": "Empiric broad-spectrum antibiotics to prevent vasospasm development",
+        "isCorrect": false,
+        "rationale": "Antibiotics prevent infection, not vasospasm; this would be correct only if vasospasm were infectious in origin, which it is not."
+      },
+      {
+        "text": "Systemic corticosteroids to reduce inflammatory vasospasm risk",
+        "isCorrect": false,
+        "rationale": "Steroids are not recommended for vasospasm prevention in SAH per the lecture; this would be correct only with evidence supporting steroid efficacy."
+      },
+      {
+        "text": "Therapeutic hypothermia to directly prevent arterial spasm",
+        "isCorrect": false,
+        "rationale": "Hypothermia is not the standard vasospasm prophylaxis discussed; this would be correct only if the lecture recommended it, which it does not."
+      }
+    ]
+  },
+  {
+    "question": "Which description best defines intracerebral hemorrhage as discussed in the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define Intracerebral Hemorrhage (ICH).",
+    "options": [
+      {
+        "text": "Bleeding within brain parenchyma often from contusions coalescing",
+        "isCorrect": true,
+        "rationale": "The lecture defines ICH as bleeding deep within brain tissue, often from contusions or petechial hemorrhages that coalesce."
+      },
+      {
+        "text": "Extra-axial arterial bleed between skull and dura mater",
+        "isCorrect": false,
+        "rationale": "This describes epidural hematoma, not ICH; it would be correct only if the bleed were extra-axial."
+      },
+      {
+        "text": "Blood confined to subarachnoid space and basal cisterns",
+        "isCorrect": false,
+        "rationale": "This describes SAH, not ICH; it would be correct only with sulcal and cisternal blood on imaging."
+      },
+      {
+        "text": "Venous collection along dura conforming to brain surface",
+        "isCorrect": false,
+        "rationale": "This describes subdural hematoma, not ICH; it would be correct only if the bleed were extra-axial and venous."
+      },
+      {
+        "text": "Isolated skull vault fracture without intracranial bleeding present",
+        "isCorrect": false,
+        "rationale": "A skull fracture without bleeding is not ICH; this would be correct only if imaging showed no parenchymal hemorrhage."
+      }
+    ]
+  },
+  {
+    "question": "Which CT appearance and immediate management are appropriate for a well-defined intraparenchymal hyperdense lesion causing mass effect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the CT findings of ICH and treatment.",
+    "options": [
+      {
+        "text": "Hyperdense intraparenchymal mass with neurosurgical evacuation indicated",
+        "isCorrect": true,
+        "rationale": "The lecture indicates ICH appears as a well-defined hyperdense intraparenchymal lesion and treatment may include surgical evacuation and ICP management when mass effect is present."
+      },
+      {
+        "text": "Crescentic extra-axial density managed conservatively without surgery",
+        "isCorrect": false,
+        "rationale": "A crescentic extra-axial density suggests SDH; conservative management depends on size and shift, so this would be correct only if thickness and shift criteria for nonoperative care were met."
+      },
+      {
+        "text": "Lentiform extra-axial collection requiring immediate antibiotic therapy",
+        "isCorrect": false,
+        "rationale": "Lentiform collection suggests EDH which typically requires surgical evacuation, not antibiotics as primary therapy; antibiotics would be correct only for open/contaminated wounds."
+      },
+      {
+        "text": "Diffuse sulcal hyperdensity treated with emergent anticoagulation reversal",
+        "isCorrect": false,
+        "rationale": "Sulcal hyperdensity indicates SAH; anticoagulation reversal may be needed if present, but this is not the standard immediate management for ICH with mass effect."
+      },
+      {
+        "text": "Ventricular hyperdensity observed with lumbar puncture to confirm diagnosis",
+        "isCorrect": false,
+        "rationale": "Lumbar puncture is contraindicated with mass effect and is not used to confirm intraventricular hemorrhage; this would be correct only if imaging were inconclusive and no mass effect existed."
+      }
+    ]
+  },
+  {
+    "question": "A 78-year-old woman with a large scalp wound is hypotensive (BP 80/48) and has GCS components E2 V2 M4. According to the lecture, what is the most appropriate immediate action?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the most appropriate initial step in her evaluation and management?",
+    "options": [
+      {
+        "text": "Administer isotonic crystalloid bolus to restore circulating volume",
+        "isCorrect": true,
+        "rationale": "The lecture emphasizes treating hypotension promptly as it worsens cerebral perfusion; initial management of hypotension from scalp bleeding is fluid resuscitation to preserve CPP."
+      },
+      {
+        "text": "Obtain immediate MRI of the head before any resuscitation efforts",
+        "isCorrect": false,
+        "rationale": "MRI is not the initial step in an unstable hypotensive patient; this would be correct only if the patient were hemodynamically stable and imaging prioritized."
+      },
+      {
+        "text": "Give mannitol immediately to reduce intracranial pressure",
+        "isCorrect": false,
+        "rationale": "Mannitol is indicated for suspected ↑ICP or herniation, not as first-line for hypotension from external bleeding; it would be correct only if signs of raised ICP were present."
+      },
+      {
+        "text": "Administer prophylactic antiepileptic medication without resuscitation",
+        "isCorrect": false,
+        "rationale": "Seizure prophylaxis is not the immediate priority over resuscitation; this would be correct only if seizure risk were imminent and hemodynamics stable."
+      },
+      {
+        "text": "Obtain stat head CT while withholding fluids until imaging complete",
+        "isCorrect": false,
+        "rationale": "Imaging should not delay resuscitation in hypotensive patients; this would be correct only if the patient were stable and imaging urgent for neurosurgical planning."
+      }
+    ]
+  },
+  {
+    "question": "A head CT shows a crescent-shaped extra-axial collection after a fall in an elderly patient. Which source of bleeding is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Based on the patient’s injuries, what is the most likely source of bleeding?",
+    "options": [
+      {
+        "text": "Tearing of cortical bridging veins from shearing forces",
+        "isCorrect": true,
+        "rationale": "The lecture indicates acute SDH in elderly patients commonly arises from bridging vein shearing, producing crescent-shaped collections on CT."
+      },
+      {
+        "text": "Rupture of middle meningeal artery beneath skull fracture",
+        "isCorrect": false,
+        "rationale": "MMA rupture causes EDH with lentiform shape; this would be correct only if CT showed a biconvex lentiform extra-axial mass."
+      },
+      {
+        "text": "Small subarachnoid vessel tear producing sulcal blood layering",
+        "isCorrect": false,
+        "rationale": "SAH presents with sulcal and cisternal blood, not a crescentic extra-axial mass; this would be correct only with sulcal hyperdensity."
+      },
+      {
+        "text": "Deep intraparenchymal arteriole rupture forming a focal hematoma",
+        "isCorrect": false,
+        "rationale": "Intraparenchymal hemorrhage is within brain tissue and appears differently on CT; this would be correct only with intraparenchymal hyperdensity."
+      },
+      {
+        "text": "Temporal artery laceration producing subgaleal hematoma only",
+        "isCorrect": false,
+        "rationale": "Temporal artery bleeding causes extracranial subgaleal hematoma, not an intracranial crescentic SDH; this would be correct only with extracranial collection on imaging."
+      }
+    ]
+  },
+  {
+    "question": "An elderly fall patient with scalp wound is hypotensive. Which additional imaging study should be considered per the lecture to evaluate for associated injuries?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Based on the patient’s injuries, what other study should be considered?",
+    "options": [
+      {
+        "text": "Computed tomography of the cervical spine to assess for injury",
+        "isCorrect": true,
+        "rationale": "The lecture recommends CT cervical spine when head injury is present because up to 10% of severe TBI patients have concomitant C-spine injury."
+      },
+      {
+        "text": "Skull radiograph as the definitive test for intracranial hemorrhage",
+        "isCorrect": false,
+        "rationale": "Skull x-ray is not definitive for intracranial hemorrhage; CT head is preferred. This would be correct only if CT were unavailable and fracture screening was the sole goal."
+      },
+      {
+        "text": "Electroencephalogram to detect immediate posttraumatic seizures",
+        "isCorrect": false,
+        "rationale": "EEG may detect seizures but is not the immediate imaging for trauma evaluation; this would be correct only if seizure activity were suspected clinically."
+      },
+      {
+        "text": "Maxillofacial CT as the only necessary study for all head trauma",
+        "isCorrect": false,
+        "rationale": "Maxillofacial CT is indicated for facial fractures, not universally for head trauma; this would be correct only with facial injury signs."
+      },
+      {
+        "text": "CT angiogram of the brain as routine for every scalp laceration",
+        "isCorrect": false,
+        "rationale": "CTA is not routine for all scalp lacerations; it is used selectively for vascular injury suspicion. This would be correct only with signs of vascular compromise."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected herniation shows bradycardia, hypertension, and irregular respirations. According to the lecture, what is the clinical significance?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the clinical significance of Cushing’s triad.",
+    "options": [
+      {
+        "text": "Indicates late sign of raised intracranial pressure requiring urgent intervention",
+        "isCorrect": true,
+        "rationale": "The lecture describes Cushing’s triad as a late finding signaling acute ↑ICP and impending herniation, necessitating emergent measures to lower ICP."
+      },
+      {
+        "text": "Represents stable autoregulatory compensation that requires no action",
+        "isCorrect": false,
+        "rationale": "Cushing’s triad is not benign compensation; this would be correct only if it were an effective long-term compensatory mechanism, which the lecture warns against."
+      },
+      {
+        "text": "Suggests primary cardiac pathology unrelated to intracranial status",
+        "isCorrect": false,
+        "rationale": "While bradycardia and hypertension can be cardiac, in the trauma context they indicate raised ICP per the lecture; this would be correct only with independent cardiac evidence."
+      },
+      {
+        "text": "Indicates need for immediate lumbar puncture to relieve pressure",
+        "isCorrect": false,
+        "rationale": "Lumbar puncture is contraindicated with suspected herniation; this would be correct only if imaging excluded mass effect and herniation risk."
+      },
+      {
+        "text": "Shows effective cerebral perfusion pressure maintenance without concern",
+        "isCorrect": false,
+        "rationale": "Cushing’s triad reflects failing perfusion and impending herniation, not effective maintenance; this would be correct only if CPP were demonstrably adequate."
+      }
+    ]
+  },
+  {
+    "question": "Which immediate temporizing measures are listed in the lecture for acute herniation while awaiting surgery?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the principal benefit of surgical intervention in pts with TBI.",
+    "options": [
+      {
+        "text": "Elevate head, hyperventilate briefly, and give osmotic therapy",
+        "isCorrect": true,
+        "rationale": "The lecture lists increased head-of-bed, short-term hyperventilation, and osmotic agents (mannitol/hypertonic saline) as temporizing measures for suspected herniation."
+      },
+      {
+        "text": "Immediate full anticoagulation to prevent thrombotic complications",
+        "isCorrect": false,
+        "rationale": "Anticoagulation would worsen bleeding and is contraindicated; this would be correct only in nonbleeding thrombotic conditions."
+      },
+      {
+        "text": "Administer high-dose steroids as definitive therapy for herniation",
+        "isCorrect": false,
+        "rationale": "Steroids are not the temporizing therapy for herniation per the lecture; this would be correct only if steroids were proven effective for acute ICP reduction."
+      },
+      {
+        "text": "Perform lumbar puncture to immediately lower intracranial pressure",
+        "isCorrect": false,
+        "rationale": "LP is contraindicated with mass effect/herniation risk; this would be correct only if imaging excluded mass lesions and herniation."
+      },
+      {
+        "text": "Place patient supine and lower head to increase cerebral perfusion",
+        "isCorrect": false,
+        "rationale": "Lowering the head impedes venous drainage and can worsen ICP; this would be correct only in rare scenarios where cerebral perfusion must be prioritized over ICP."
+      }
+    ]
+  },
+  {
+    "question": "A patient with severe TBI has ICP monitoring placed. What ICP threshold does the lecture recommend as a treatment goal to maintain below?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Evaluation of TBI - ICP Monitoring (Invasive)",
+    "options": [
+      {
+        "text": "Maintain intracranial pressure below twenty to twenty-two millimeters mercury",
+        "isCorrect": true,
+        "rationale": "The lecture cites a goal to maintain ICP <20–22 mmHg when using invasive monitoring."
+      },
+      {
+        "text": "Allow intracranial pressure to rise above forty millimeters mercury before treating",
+        "isCorrect": false,
+        "rationale": "Allowing ICP to exceed 40 mmHg is dangerous; this would be correct only if new evidence supported higher thresholds, which the lecture does not present."
+      },
+      {
+        "text": "Target intracranial pressure at exactly zero millimeters mercury continuously",
+        "isCorrect": false,
+        "rationale": "ICP cannot be zero physiologically; this would be correct only in a hypothetical nonphysiologic scenario."
+      },
+      {
+        "text": "Maintain intracranial pressure between thirty and thirty-five millimeters mercury",
+        "isCorrect": false,
+        "rationale": "This range is higher than recommended and would risk ischemia; it would be correct only if the lecture recommended permissive elevated ICP, which it does not."
+      },
+      {
+        "text": "Ignore intracranial pressure and focus solely on oxygenation targets",
+        "isCorrect": false,
+        "rationale": "ICP is critical to manage alongside oxygenation; this would be correct only if ICP monitoring were unavailable and other priorities dominated care."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following can cause cerebral vasoconstriction and is therefore used briefly to lower intracranial pressure?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Which of the following can cause cerebral vasoconstriction? How does this relate to possible treatments for ↑ ICP?",
+    "options": [
+      {
+        "text": "Hyperventilation lowering PaCO2 causes cerebral vasoconstriction",
+        "isCorrect": true,
+        "rationale": "The lecture explains that hyperventilation reduces PaCO2, causing cerebral vasoconstriction and transiently lowering ICP, but risks ischemia."
+      },
+      {
+        "text": "Hypoxia causing vasoconstriction and thus reducing intracranial pressure",
+        "isCorrect": false,
+        "rationale": "Hypoxia causes vasodilation to increase CBF, not vasoconstriction; this would be correct only if hypoxia paradoxically caused constriction, which it does not."
+      },
+      {
+        "text": "Acidosis from CO2 retention producing cerebral vasoconstriction",
+        "isCorrect": false,
+        "rationale": "Acidosis (hypercapnia) causes vasodilation, not constriction; this would be correct only if the physiologic response were reversed."
+      },
+      {
+        "text": "Hypotension directly causing cerebral arterial constriction",
+        "isCorrect": false,
+        "rationale": "Hypotension reduces CPP but does not directly cause vasoconstriction to lower ICP; this would be correct only in specific autoregulatory states."
+      },
+      {
+        "text": "Administration of intravenous fluids causing immediate vasoconstriction",
+        "isCorrect": false,
+        "rationale": "IV fluids do not cause cerebral vasoconstriction; this would be correct only if a specific vasoconstrictive agent were administered with the fluids."
+      }
+    ]
+  },
+  {
+    "question": "Which patients are at greater risk for subdural hematoma and why, according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify which pts. are at greater risk for SDH & why.",
+    "options": [
+      {
+        "text": "Elderly patients with brain atrophy increasing bridging vein vulnerability",
+        "isCorrect": true,
+        "rationale": "The lecture notes that brain atrophy in elderly increases tension on bridging veins, making SDH more likely after minor trauma."
+      },
+      {
+        "text": "Young athletes with thick cortical gray matter protecting bridging veins",
+        "isCorrect": false,
+        "rationale": "Young brains are less atrophic and less prone to SDH from minor trauma; this would be correct only if cortical thickness increased SDH risk, which it does not."
+      },
+      {
+        "text": "Patients with basilar skull fractures exclusively at risk for SDH",
+        "isCorrect": false,
+        "rationale": "Basilar fractures have different risks; SDH risk is not exclusive to basilar fractures and would be correct only with bridging vein injury."
+      },
+      {
+        "text": "Individuals with chronic hypertension but no head trauma history",
+        "isCorrect": false,
+        "rationale": "Hypertension predisposes to spontaneous ICH, not specifically traumatic SDH; this would be correct only if trauma were also present."
+      },
+      {
+        "text": "Children with open sutures who cannot develop subdural collections",
+        "isCorrect": false,
+        "rationale": "Children can develop SDH and are at risk in abusive head trauma; this option is incorrect and would be correct only if children were immune to SDH, which they are not."
+      }
+    ]
+  },
+  {
+    "question": "Which immediate exam finding after head trauma should prompt urgent neurosurgical consultation per the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Immediate interventions required (medical & surgical) if evidence of ↑ ICP or herniation",
+    "options": [
+      {
+        "text": "New unilateral dilated pupil with decreasing level of consciousness",
+        "isCorrect": true,
+        "rationale": "The lecture highlights ipsilateral pupillary dilation with declining consciousness as classic for uncal herniation and requires immediate neurosurgical input."
+      },
+      {
+        "text": "Isolated mild headache without neurologic deficit or mental status change",
+        "isCorrect": false,
+        "rationale": "Mild headache alone does not necessitate urgent neurosurgical consultation; this would be correct only if other concerning signs developed."
+      },
+      {
+        "text": "Stable GCS with isolated superficial scalp abrasion only",
+        "isCorrect": false,
+        "rationale": "Superficial scalp wounds without neurologic change do not require urgent neurosurgical consultation; this would be correct only with additional intracranial findings."
+      },
+      {
+        "text": "Transient dizziness that resolves completely before evaluation",
+        "isCorrect": false,
+        "rationale": "Resolved transient dizziness is less concerning than progressive neurologic decline; this would be correct only if new deficits emerged."
+      },
+      {
+        "text": "Mild nausea and one episode of nonprojectile vomiting",
+        "isCorrect": false,
+        "rationale": "Nausea/vomiting can occur but are not alone an indication for immediate neurosurgical consultation; this would be correct only with other red flags."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected increased intracranial pressure is given mannitol. Which cellular-level effect explains its benefit as described in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the mechanism and indication for the use of mannitol or hypertonic saline in the treatment of TBI.",
+    "options": [
+      {
+        "text": "Creates intravascular hyperosmolarity drawing water from brain cells",
+        "isCorrect": true,
+        "rationale": "Mannitol increases plasma osmolarity, creating an osmotic gradient that pulls water out of swollen brain cells into the vasculature, lowering ICP as per the lecture."
+      },
+      {
+        "text": "Directly blocks sodium channels in neurons to reduce swelling",
+        "isCorrect": false,
+        "rationale": "Mannitol does not act by sodium channel blockade; this would be correct only if its mechanism were pharmacologic ion channel inhibition, which the lecture does not state."
+      },
+      {
+        "text": "Stimulates aquaporin expression to increase cellular water uptake",
+        "isCorrect": false,
+        "rationale": "Increasing aquaporin-mediated uptake would worsen edema; this would be correct only if mannitol paradoxically increased cellular water clearance via aquaporins, which is not described."
+      },
+      {
+        "text": "Causes cerebral arterial vasodilation to improve perfusion pressure",
+        "isCorrect": false,
+        "rationale": "Mannitol reduces ICP via osmotic effect, not by vasodilation; this would be correct only if it had vasodilatory properties improving CBF."
+      },
+      {
+        "text": "Inhibits CSF production at the choroid plexus to lower volume",
+        "isCorrect": false,
+        "rationale": "Mannitol does not primarily inhibit CSF production; this would be correct only if CSF suppression were its main mechanism, which the lecture does not indicate."
+      }
+    ]
+  },
+  {
+    "question": "Which patient scenario best exemplifies when hyperventilation should be used as a temporizing measure rather than routine therapy?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "ID the indication for hyperventilation in pts. with TBI. Discuss the physiologic effect of hyperventilation and the potential danger.",
+    "options": [
+      {
+        "text": "Acute neurologic deterioration with signs suggesting impending herniation",
+        "isCorrect": true,
+        "rationale": "The lecture recommends brief hyperventilation for acute deterioration suggesting ↑ICP/herniation to lower PaCO2 and transiently reduce ICP, while warning of ischemia risk."
+      },
+      {
+        "text": "Stable head injured patient without focal deficits or ICP concerns",
+        "isCorrect": false,
+        "rationale": "Routine hyperventilation in stable patients is discouraged; this would be correct only if the patient developed acute ICP signs."
+      },
+      {
+        "text": "All patients with mild concussion to prevent delayed swelling",
+        "isCorrect": false,
+        "rationale": "Hyperventilation is not indicated for mild concussion prophylactically; this would be correct only if evidence supported routine prophylactic hyperventilation, which the lecture does not."
+      },
+      {
+        "text": "Patients with chronic headaches unrelated to recent trauma",
+        "isCorrect": false,
+        "rationale": "Chronic nontraumatic headaches are not an indication for hyperventilation; this would be correct only if acute ICP elevation were suspected."
+      },
+      {
+        "text": "Any intubated patient to maintain PaCO2 below twenty-five millimeters mercury",
+        "isCorrect": false,
+        "rationale": "Aggressive hypocapnia (PaCO2 <25) is unsafe and not recommended; this would be correct only in rare, extreme, and time-limited scenarios not endorsed as routine."
+      }
+    ]
+  },
+  {
+    "question": "A patient with severe TBI and suspected mass lesion is being managed. Which two overarching treatment principles regarding ICP and MAP are emphasized in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the effects of changes in ICP & MAP on CPP & CBF. ID two major treatment principles related to ICP & MAP.",
+    "options": [
+      {
+        "text": "Prevent or reduce intracranial pressure and correct hypotension promptly",
+        "isCorrect": true,
+        "rationale": "The lecture emphasizes two main principles: reduce ↑ICP and prevent/correct hypotension to preserve CPP and CBF."
+      },
+      {
+        "text": "Allow permissive hypotension and avoid any measures to lower ICP",
+        "isCorrect": false,
+        "rationale": "Permissive hypotension is contraindicated in TBI because it lowers CPP; this would be correct only in non-TBI hemorrhagic shock contexts."
+      },
+      {
+        "text": "Focus solely on oxygenation while ignoring blood pressure and pressure",
+        "isCorrect": false,
+        "rationale": "While oxygenation is critical, ignoring MAP and ICP contradicts lecture guidance; this would be correct only if other parameters were normal and stable."
+      },
+      {
+        "text": "Increase intracranial pressure intentionally to improve cerebral perfusion",
+        "isCorrect": false,
+        "rationale": "Increasing ICP worsens perfusion; this would be correct only in a hypothetical scenario where raised ICP paradoxically improved CPP, which is not supported."
+      },
+      {
+        "text": "Use hyperventilation chronically to maintain low intracranial pressure",
+        "isCorrect": false,
+        "rationale": "Chronic hyperventilation risks ischemia and is not recommended; this would be correct only for brief temporizing use in acute deterioration."
+      }
+    ]
+  },
+  {
+    "question": "Which immediate step is recommended for a patient with suspected epidural hematoma and rapid neurologic decline per the lecture cases?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the acute management and surgical indications for EDH as discussed in the case examples.",
+    "options": [
+      {
+        "text": "Urgent neurosurgical evacuation via craniotomy or burr hole decompression",
+        "isCorrect": true,
+        "rationale": "The lecture case demonstrates that EDH with rapid deterioration requires emergent surgical evacuation (craniotomy or trephination) to relieve mass effect."
+      },
+      {
+        "text": "Conservative observation with serial exams and delayed imaging only",
+        "isCorrect": false,
+        "rationale": "Observation is inappropriate for rapidly deteriorating EDH; this would be correct only for small, stable hematomas without mass effect."
+      },
+      {
+        "text": "Immediate lumbar puncture to decompress intracranial compartment",
+        "isCorrect": false,
+        "rationale": "LP is contraindicated with mass lesions and herniation risk; this would be correct only if imaging excluded mass effect."
+      },
+      {
+        "text": "Administer oral nimodipine and discharge with outpatient follow up",
+        "isCorrect": false,
+        "rationale": "Nimodipine is for SAH vasospasm prevention, not acute EDH management; this would be correct only in SAH contexts."
+      },
+      {
+        "text": "Start high-dose anticoagulation to prevent thrombotic complications",
+        "isCorrect": false,
+        "rationale": "Anticoagulation would worsen hemorrhage and is contraindicated; this would be correct only if thrombosis were the primary concern without bleeding."
+      }
+    ]
+  }
+]
