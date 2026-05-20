@@ -107,6 +107,23 @@ body{
   display:flex;align-items:center;justify-content:space-between;
   margin-bottom:16px;font-size:.82rem;font-weight:700;letter-spacing:.3px;
 }
+.setting-row-stack{flex-direction:column;align-items:stretch;gap:8px}
+.setting-row-head{display:flex;align-items:center;justify-content:space-between;width:100%}
+.setting-desc{
+  font-size:.68rem;font-weight:500;opacity:.55;line-height:1.45;margin:0;
+}
+.pace-seconds-wrap.hidden{display:none}
+.pace-countdown{
+  display:flex;align-items:center;gap:6px;flex-shrink:0;
+  padding:6px 12px;border-radius:999px;
+  background:rgba(231,76,60,.12);border:1px solid var(--danger);
+  font-family:var(--font-mono);font-weight:700;
+}
+.pace-countdown.hidden{display:none}
+.pace-countdown-label{font-size:.68rem;font-weight:600;opacity:.85;white-space:nowrap}
+.pace-countdown-val{font-size:1.05rem;color:var(--danger);min-width:1.25ch;text-align:center}
+.pace-countdown.urgent{animation:pacePulse 1s ease-in-out infinite}
+@keyframes pacePulse{0%,100%{opacity:1}50%{opacity:.72}}
 .settings-divider{border:none;border-top:1px solid var(--border);margin:14px 0}
 .settings-menu-actions{display:flex;flex-direction:column;gap:6px;margin-bottom:4px}
 .settings-menu-action-btn{width:100%;font-size:.75rem;padding:8px}
@@ -1858,6 +1875,20 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
     <span>Timer Visible</span>
     <label class="switch"><input type="checkbox" id="timer-visible-toggle" checked onchange="saveTimerVisiblePref()"><span class="slider"></span></label>
   </div>
+  <div class="setting-row setting-row-stack" id="pace-timer-setting">
+    <div class="setting-row-head">
+      <span>Question Pace Timer</span>
+      <label class="switch"><input type="checkbox" id="pace-timer-toggle" onchange="savePaceTimerPref()"><span class="slider"></span></label>
+    </div>
+    <p class="setting-desc">Limits how long you have per question. When time runs out, the correct answer is selected automatically and the quiz advances to the next question. A 10-second warning appears before auto-answer.</p>
+    <div id="pace-timer-seconds-wrap" class="pace-seconds-wrap hidden">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+        <span style="font-size:.78rem;font-weight:600">Seconds per question</span>
+        <span id="pace-seconds-val" style="font-family:var(--font-mono);font-size:.75rem;opacity:.6">60s</span>
+      </div>
+      <input type="number" class="modal-input" id="pace-seconds-input" min="15" max="300" step="1" value="60" oninput="savePaceSecondsPref()" style="margin-bottom:0" aria-label="Seconds per question before auto-answer">
+    </div>
+  </div>
 
   <hr class="settings-divider">
 
@@ -2052,6 +2083,25 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
               <div class="ps-checkbox checked" id="ps-chk-third">✓</div>
             </div>
 
+            <hr class="ps-divider">
+            <div class="ps-section-title">Exam Style</div>
+
+            <div class="ps-toggle-row" onclick="toggleBoardsMode()">
+              <div>
+                <div class="ps-toggle-label">Boards Mode</div>
+                <div class="ps-toggle-sub">Lengthens vignettes for board-exam realism—dense NBME paragraphs and exhaustive lab value tables.</div>
+              </div>
+              <div class="ps-checkbox" id="ps-chk-boards"></div>
+            </div>
+
+            <div class="ps-toggle-row" onclick="toggleEzMode()">
+              <div>
+                <div class="ps-toggle-label">EZ Mode</div>
+                <div class="ps-toggle-sub">Shorter, buzzword-heavy first-order recall—fewer vignettes and faster stems.</div>
+              </div>
+              <div class="ps-checkbox" id="ps-chk-ez"></div>
+            </div>
+
             <div class="ps-summary" id="ps-summary">30 questions · 1st + 2nd + 3rd order</div>
           </div>
 
@@ -2201,6 +2251,10 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   <span class="timer-eye" id="highlighter-btn" onclick="toggleHighlighter()" title="Highlighter Mode (H)" style="margin-right:8px; font-size:1.1rem; cursor:pointer; opacity:0.6;">🖍️</span>
 <span class="timer-eye" id="clear-highlights-btn" onclick="clearHighlights()" title="Clear All Highlights" style="margin-right:8px; font-size:1.1rem; cursor:pointer; opacity:0.6;">🧼</span>
 <span class="timer-eye" onclick="toggleCalc()" title="Calculator" style="margin-right:8px; font-size:1.1rem; cursor:pointer; opacity:0.6;">🧮</span>
+  <div id="pace-countdown" class="pace-countdown hidden" aria-live="polite" title="Auto-answer countdown">
+    <span class="pace-countdown-label">Auto-answer in</span>
+    <span class="pace-countdown-val" id="pace-countdown-val">10</span>
+  </div>
   <span class="quiz-timer-count-ui">
   <span class="timer-eye" id="timer-eye" onclick="togglePause()" title="Pause / resume (P)">⏸️</span>
   <div class="timer-display" id="timer-display">00:00</div>
@@ -2287,7 +2341,8 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 'use strict';
 
 // ── State ─────────────────────────────────────────────
-let questions=[], currentIdx=0, timerInt=null, isPaused=false, isReviewMode=false, highlighterMode=false,
+let questions=[], currentIdx=0, timerInt=null, paceTimerInt=null, paceAutoAdvanceTimeout=null, paceRemaining=0,
+    isPaused=false, isReviewMode=false, highlighterMode=false,
   isFlaggedReviewMode=false, flaggedReviewIndices=[], flaggedReviewPos=0, flaggedReviewPosByIdx=new Map(),
   savedQuizState=null, activeQuizMeta=null;
 const LETTERS=['A','B','C','D','E'];
@@ -2373,6 +2428,10 @@ Now generate 30 questions based on the lecture materials attached.`;
 const LS_PREF_FEEDBACK='medstep_pref_feedback';
 const LS_PREF_EXAM_GRID='medstep_pref_exam_grid';
 const LS_PREF_TIMER_VISIBLE='medstep_pref_timer_visible';
+const LS_PREF_PACE_TIMER='medstep_pref_pace_timer';
+const LS_PREF_PACE_SECONDS='medstep_pref_pace_seconds';
+const PACE_COUNTDOWN_WARN=10;
+const DEFAULT_PACE_SECONDS=60;
 const LS_REPORT_NOTIFY_EMAIL='medstep_report_notify_email';
 const LS_REPORT_QUEUE='medstep_question_reports';
 const REPORT_EMAIL_DEFAULT='medstepdev@gmail.com';
@@ -2391,10 +2450,100 @@ function saveTimerVisiblePref(){
   applyTimerVisibilityUI();
   refreshTimerDisplay();
 }
+function isPaceTimerEnabled(){
+  const el=document.getElementById('pace-timer-toggle');
+  return !!(el&&el.checked&&!isReviewMode&&!isFlaggedReviewMode);
+}
+function getPaceSecondsLimit(){
+  const input=document.getElementById('pace-seconds-input');
+  const n=parseInt(input?.value,10);
+  if(!Number.isFinite(n)||n<15) return DEFAULT_PACE_SECONDS;
+  return Math.min(300,n);
+}
+function updatePaceSecondsWrapVisibility(){
+  const wrap=document.getElementById('pace-timer-seconds-wrap');
+  const on=document.getElementById('pace-timer-toggle')?.checked;
+  if(wrap) wrap.classList.toggle('hidden',!on);
+}
+function savePaceTimerPref(){
+  localStorage.setItem(LS_PREF_PACE_TIMER, document.getElementById('pace-timer-toggle').checked?'1':'0');
+  updatePaceSecondsWrapVisibility();
+  if(!document.getElementById('quiz-screen').classList.contains('hidden')) restartPaceTimerForCurrentQuestion();
+}
+function savePaceSecondsPref(){
+  const sec=getPaceSecondsLimit();
+  const input=document.getElementById('pace-seconds-input');
+  if(input) input.value=sec;
+  localStorage.setItem(LS_PREF_PACE_SECONDS, String(sec));
+  const val=document.getElementById('pace-seconds-val');
+  if(val) val.textContent=sec+'s';
+  if(isPaceTimerEnabled()) restartPaceTimerForCurrentQuestion();
+}
+function hidePaceCountdown(){
+  const el=document.getElementById('pace-countdown');
+  if(el){el.classList.add('hidden');el.classList.remove('urgent');}
+}
+function updatePaceCountdownUI(remaining){
+  const wrap=document.getElementById('pace-countdown');
+  const val=document.getElementById('pace-countdown-val');
+  if(!wrap||!val)return;
+  if(remaining<=0||remaining>PACE_COUNTDOWN_WARN){hidePaceCountdown();return;}
+  wrap.classList.remove('hidden');
+  wrap.classList.add('urgent');
+  val.textContent=String(remaining);
+}
+function clearPaceTimer(){
+  clearInterval(paceTimerInt);
+  paceTimerInt=null;
+  clearTimeout(paceAutoAdvanceTimeout);
+  paceAutoAdvanceTimeout=null;
+  hidePaceCountdown();
+}
+function autoAnswerPaceTimeout(){
+  clearInterval(paceTimerInt);
+  paceTimerInt=null;
+  hidePaceCountdown();
+  if(isReviewMode||isFlaggedReviewMode)return;
+  const q=questions[currentIdx];
+  if(!q||q.userAnswer)return;
+  const correct=q.options.find(o=>o.isCorrect);
+  if(!correct)return;
+  selectAnswer(correct);
+  const isLast=isFlaggedReviewMode
+    ? flaggedReviewPos===flaggedReviewIndices.length-1
+    : currentIdx===questions.length-1;
+  if(isLast)return;
+  clearTimeout(paceAutoAdvanceTimeout);
+  paceAutoAdvanceTimeout=setTimeout(()=>{
+    paceAutoAdvanceTimeout=null;
+    if(questions[currentIdx]?.userAnswer) changeQ(1);
+  },1800);
+}
+function restartPaceTimerForCurrentQuestion(){
+  clearPaceTimer();
+  if(!isPaceTimerEnabled())return;
+  const q=questions[currentIdx];
+  if(!q||q.userAnswer)return;
+  paceRemaining=getPaceSecondsLimit();
+  if(paceRemaining<=PACE_COUNTDOWN_WARN) updatePaceCountdownUI(paceRemaining);
+  else hidePaceCountdown();
+  paceTimerInt=setInterval(()=>{
+    if(isPaused)return;
+    if(!isPaceTimerEnabled()){clearPaceTimer();return;}
+    const qq=questions[currentIdx];
+    if(!qq||qq.userAnswer){clearPaceTimer();return;}
+    paceRemaining--;
+    if(paceRemaining<=PACE_COUNTDOWN_WARN) updatePaceCountdownUI(paceRemaining);
+    else hidePaceCountdown();
+    if(paceRemaining<=0) autoAnswerPaceTimeout();
+  },1000);
+}
 function loadEnginePrefs(){
   const ft=document.getElementById('feedback-toggle');
   const gt=document.getElementById('grid-toggle');
   const tv=document.getElementById('timer-visible-toggle');
+  const pt=document.getElementById('pace-timer-toggle');
+  const psi=document.getElementById('pace-seconds-input');
   if(!ft||!gt||!tv)return;
   const f=localStorage.getItem(LS_PREF_FEEDBACK);
   if(f!==null) ft.checked=f==='1';
@@ -2402,6 +2551,17 @@ function loadEnginePrefs(){
   if(g!==null) gt.checked=g==='1';
   const t=localStorage.getItem(LS_PREF_TIMER_VISIBLE);
   if(t!==null) tv.checked=t==='1';
+  if(pt){
+    const pace=localStorage.getItem(LS_PREF_PACE_TIMER);
+    if(pace!==null) pt.checked=pace==='1';
+  }
+  if(psi){
+    const ps=localStorage.getItem(LS_PREF_PACE_SECONDS);
+    if(ps!==null) psi.value=ps;
+  }
+  const paceVal=document.getElementById('pace-seconds-val');
+  if(paceVal) paceVal.textContent=getPaceSecondsLimit()+'s';
+  updatePaceSecondsWrapVisibility();
   toggleSidebar();
   applyTimerVisibilityUI();
   renderGrid();
@@ -4008,7 +4168,7 @@ function shuffle(arr){
   return arr;
 }
 // ══ PROMPT SETTINGS ══════════════════════════════════════
-const promptSettings = { questions: 30, first: true, second: true, third: true };
+const promptSettings = { questions: 30, first: true, second: true, third: true, boardsMode: false, ezMode: false };
 
 function togglePromptSettings(e) {
   e.stopPropagation();
@@ -4049,13 +4209,42 @@ function toggleOrderType(order) {
   updatePromptSummary();
 }
 
+function syncBoardsEzCheckboxes() {
+  const boardsChk = document.getElementById('ps-chk-boards');
+  const ezChk = document.getElementById('ps-chk-ez');
+  if (boardsChk) {
+    boardsChk.classList.toggle('checked', promptSettings.boardsMode);
+    boardsChk.textContent = promptSettings.boardsMode ? '✓' : '';
+  }
+  if (ezChk) {
+    ezChk.classList.toggle('checked', promptSettings.ezMode);
+    ezChk.textContent = promptSettings.ezMode ? '✓' : '';
+  }
+}
+
+function toggleBoardsMode() {
+  promptSettings.boardsMode = !promptSettings.boardsMode;
+  if (promptSettings.boardsMode) promptSettings.ezMode = false;
+  syncBoardsEzCheckboxes();
+  updatePromptSummary();
+}
+
+function toggleEzMode() {
+  promptSettings.ezMode = !promptSettings.ezMode;
+  if (promptSettings.ezMode) promptSettings.boardsMode = false;
+  syncBoardsEzCheckboxes();
+  updatePromptSummary();
+}
+
 function updatePromptSummary() {
   const orders = ['first','second','third']
     .filter(o => promptSettings[o])
     .map(o => o === 'first' ? '1st' : o === 'second' ? '2nd' : '3rd');
   const label = orders.join(' + ') + ' order';
-  document.getElementById('ps-summary').textContent =
-    `${promptSettings.questions} questions · ${label}`;
+  let summary = `${promptSettings.questions} questions · ${label}`;
+  if (promptSettings.boardsMode) summary += ' · Boards';
+  if (promptSettings.ezMode) summary += ' · EZ';
+  document.getElementById('ps-summary').textContent = summary;
 
   // Update the copy button label to reflect question count
   const btn = document.getElementById('copy-prompt-btn');
@@ -4064,8 +4253,26 @@ function updatePromptSummary() {
   }
 }
 
+const BOARDS_MODE_PROMPT_BLOCK = `3b. BOARDS MODE — VIGNETTE DENSITY:
+a. Expand every clinical vignette and every second- or third-order stem into a full, dense NBME-style paragraph: at least 8 sentences of uninterrupted clinical narrative (present illness, pertinent history, exam, imaging summaries, and evolving course) before the single-sentence lead-in question.
+b. Embed exhaustive laboratory value tables within the stem—include broad panels (CBC with differential, CMP, ABG, urinalysis, coagulation, endocrine, lipids, infection markers, etc.) with specific values and reference ranges in brackets, even when not all values are decision-critical, to simulate real board-exam data overload.
+c. Design stems to test reading stamina and stamina-induced fatigue: students must extract the decisive clue from a long, information-dense passage rather than from a short cue-rich stem.
+
+`;
+
+function buildEzModePromptBlock(thirdVignetteMax) {
+  return `3c. EZ MODE — RAPID RECALL (supersedes conflicting rules in Section 3):
+a. Buzzword-forward stems: Deliberately use high-yield buzzwords, classic phrase associations, and lecture terminology that cue the tested concept—this mode intentionally relaxes stem blinding (Section 3a–3b) for faster pattern recognition.
+b. Brevity: Keep every stem to 1–3 short sentences. No dense paragraphs, no exhaustive lab tables, and no multi-paragraph vignettes.
+c. Minimize clinical vignettes: Limit third-order patient scenarios to no more than ${thirdVignetteMax} question(s) in this block; remaining items should be standalone recall or single-sentence stems.
+d. Direct questions encouraged: First- and second-order items may use straightforward "What is…?", "Which enzyme…?", or "Which of the following best describes…?" phrasing without embedded scenarios.
+e. Laboratory data: Include labs only when essential to the single fact being tested; otherwise omit.
+
+`;
+}
+
 function buildSettingsPrompt() {
-  const { questions, first, second, third } = promptSettings;
+  const { questions, first, second, third, boardsMode, ezMode } = promptSettings;
   const enabled = [first && 'first', second && 'second', third && 'third'].filter(Boolean);
   const total = questions;
 
@@ -4074,8 +4281,16 @@ function buildSettingsPrompt() {
   const thirdOrderExtra = ` For these questions: NEVER ask "What is X?" directly. Always present a patient scenario or experimental result that requires applying lecture knowledge through at least one intermediate reasoning step. The answer must not be inferable from the stem alone without having studied the material. For 3rd-order vignettes, include several questions that ask for the 'next best step in management' or the 'cellular mechanism of the first-line treatment' for the condition described.`;
 
   let distrib = '';
+  let ezThirdMax = 0;
 
-  if (enabled.length === 3) {
+  if (ezMode) {
+    const firstN = Math.round(total * 0.85);
+    ezThirdMax = Math.max(0, Math.floor(total * 0.05));
+    const secondN = Math.max(0, total - firstN - ezThirdMax);
+    const thirdN = total - firstN - secondN;
+    ezThirdMax = thirdN;
+    distrib = `2. Difficulty Distribution:\n\nAdd "difficulty_order": "1st/2nd/3rd" to the JSON pertaining to each question.\n\n${firstN}/${total} questions: First-order (Direct recall using high-yield buzzwords and classic phrase cues from the lecture).\n\n${secondN}/${total} questions: Second-order (Brief two-step connections—keep stems to 1–3 sentences, no vignettes).\n\n${thirdN}/${total} questions: Third-order (Short clinical vignettes only when unavoidable—cap vignette-style stems at ${thirdN} total; all other items remain direct recall).`;
+  } else if (enabled.length === 3) {
     const firstN  = Math.round(total * 4 / 30);
     const secondN = Math.round(total * 11 / 30);
     const thirdN  = total - firstN - secondN;
@@ -4106,13 +4321,21 @@ function buildSettingsPrompt() {
   const positionBalance = Math.round(total / 5);
   const positionMax = positionBalance + 1;
 
-  return MASTER_PROMPT
+  let prompt = MASTER_PROMPT
     .replace(/2\. Difficulty Distribution:[\s\S]*?(?=\n\n3\. Stem Blinding)/, distrib)
     .replace(/In at least \d+ out of \d+ questions/, `In at least ${longestDistractorMin} out of ${total} questions`)
     .replace(/At least \d+ questions must contain a distractor/, `At least ${confidenceTrapMin} questions must contain a distractor`)
     .replace(/approximately \d+ times across \d+ questions/, `approximately ${positionBalance} times across ${total} questions`)
     .replace(/No letter may be correct more than \d+ times/, `No letter may be correct more than ${positionMax} times`)
     .replace('Now generate 30 questions', `Now generate ${total} questions`);
+
+  if (boardsMode) {
+    prompt = prompt.replace(/(\n\n4\. THE OPTION PARITY RULE \(CRITICAL\))/, '\n\n' + BOARDS_MODE_PROMPT_BLOCK + '4. THE OPTION PARITY RULE (CRITICAL)');
+  } else if (ezMode) {
+    prompt = prompt.replace(/(\n\n4\. THE OPTION PARITY RULE \(CRITICAL\))/, '\n\n' + buildEzModePromptBlock(ezThirdMax) + '4. THE OPTION PARITY RULE (CRITICAL)');
+  }
+
+  return prompt;
 }
 
 function copyMasterPrompt() {
@@ -4450,6 +4673,10 @@ const BACKUP_PREF_ALIASES = {
   grid: 'medstep_pref_exam_grid',
   pref_timer_visible: 'medstep_pref_timer_visible',
   timer_visible: 'medstep_pref_timer_visible',
+  pref_pace_timer: 'medstep_pref_pace_timer',
+  pace_timer: 'medstep_pref_pace_timer',
+  pref_pace_seconds: 'medstep_pref_pace_seconds',
+  pace_seconds: 'medstep_pref_pace_seconds',
   lib_filters: 'medstep_lib_filters',
   library_filters: 'medstep_lib_filters',
   library_source: 'medstep_library_source',
@@ -4863,6 +5090,7 @@ list.appendChild(wrap);
   updateFlagButton();
   updateReportButton();
   refreshTimerDisplay();
+  restartPaceTimerForCurrentQuestion();
 }
 
 // ══ ANSWER / UNDO ════════════════════════════════════════
@@ -4908,7 +5136,7 @@ function scrambleAll(){
 
 // ══ RESULTS ══════════════════════════════════════════════
 function showResults(){
-  clearInterval(timerInt);isPaused=false;syncPauseUI();
+  clearInterval(timerInt);clearPaceTimer();isPaused=false;syncPauseUI();
   let correct=0,totalTime=0,correctTime=0,incorrectTime=0,cC=0,iC=0;
   questions.forEach(q=>{
     totalTime+=q.time;
@@ -5094,7 +5322,7 @@ function goHome(){
     };
     document.getElementById('back-to-quiz-btn').style.display = 'flex';
   }
-  clearInterval(timerInt);questions=[];isPaused=false;isReviewMode=false;
+  clearInterval(timerInt);clearPaceTimer();questions=[];isPaused=false;isReviewMode=false;
   isFlaggedReviewMode=false; flaggedReviewIndices=[]; flaggedReviewPos=0; flaggedReviewPosByIdx=new Map();
   reapplyThemeEffects();
   document.getElementById('quiz-screen').classList.add('hidden');
