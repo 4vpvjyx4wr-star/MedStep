@@ -1498,6 +1498,14 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   font-family: var(--font-mono); font-size: 1.5rem; font-weight: 900;
   color: var(--primary); min-width: 50px; text-align: center;
 }
+input.qpicker-value {
+  border: none; background: transparent; outline: none; padding: 0; margin: 0;
+  width: 3.5em; box-sizing: content-box; cursor: text;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+input.qpicker-value::-webkit-outer-spin-button,
+input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 .qpicker-presets {
   display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
   margin: 16px 0 22px;
@@ -1666,7 +1674,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
              oninput="updateQPickerValue(this.value)">
       <span style="font-size:.7rem;opacity:.5;font-family:var(--font-mono)" id="qpicker-max-label">100</span>
     </div>
-    <div class="qpicker-value" id="qpicker-value">10</div>
+    <div class="qpicker-value" id="qpicker-value" title="Click to type a number" onclick="beginQPickerValueEdit()">10</div>
     <div class="qpicker-presets" id="qpicker-presets"></div>
     <div id="qpicker-build-status"></div>
     <div class="qpicker-actions">
@@ -6782,10 +6790,70 @@ function buildQPickerPresets(total) {
 
 function updateQPickerValue(val) {
   val = Number(val);
-  document.getElementById('qpicker-value').textContent = val;
+  const el = document.getElementById('qpicker-value');
+  if (el) {
+    if (el.tagName === 'INPUT') el.value = val;
+    else el.textContent = val;
+  }
   document.querySelectorAll('.qpicker-preset').forEach(b => {
     b.classList.toggle('active', Number(b.dataset.val) === val);
   });
+}
+
+function beginQPickerValueEdit() {
+  const el = document.getElementById('qpicker-value');
+  if (!el || el.tagName === 'INPUT') return;
+  const slider = document.getElementById('qpicker-slider');
+  const min = Number(slider.min);
+  const max = Number(slider.max);
+  const prev = el.textContent;
+  const input = document.createElement('input');
+  input.type = 'number';
+  input.className = 'qpicker-value';
+  input.id = 'qpicker-value';
+  input.min = min;
+  input.max = max;
+  input.value = prev;
+  input.setAttribute('inputmode', 'numeric');
+  input.setAttribute('aria-label', 'Number of questions');
+  const commit = () => commitQPickerValueEdit(input, prev);
+  input.addEventListener('blur', commit);
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter') { e.preventDefault(); input.blur(); }
+    if (e.key === 'Escape') { e.preventDefault(); cancelQPickerValueEdit(input, prev); }
+  });
+  input.addEventListener('click', e => e.stopPropagation());
+  el.replaceWith(input);
+  input.focus();
+  input.select();
+}
+
+function commitQPickerValueEdit(input, fallback) {
+  const slider = document.getElementById('qpicker-slider');
+  const min = Number(slider.min);
+  const max = Number(slider.max);
+  let val = Math.round(Number(input.value));
+  if (!Number.isFinite(val)) val = Math.round(Number(fallback)) || min;
+  val = Math.max(min, Math.min(max, val));
+  slider.value = val;
+  updateQPickerValue(val);
+  const span = document.createElement('div');
+  span.className = 'qpicker-value';
+  span.id = 'qpicker-value';
+  span.title = 'Click to type a number';
+  span.textContent = val;
+  span.onclick = beginQPickerValueEdit;
+  input.replaceWith(span);
+}
+
+function cancelQPickerValueEdit(input, prev) {
+  const span = document.createElement('div');
+  span.className = 'qpicker-value';
+  span.id = 'qpicker-value';
+  span.title = 'Click to type a number';
+  span.textContent = prev;
+  span.onclick = beginQPickerValueEdit;
+  input.replaceWith(span);
 }
 
 function closeQPicker() {
