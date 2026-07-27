@@ -1,0 +1,1346 @@
+[
+  {
+    "question": "A bacterial chromosome begins replication at a site rich in adenine and thymine. Which protein most directly initiates strand separation at this origin in prokaryotes?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define the following terms as they relate to DNA replication: origin melting and DnaA protein",
+    "options": [
+      {
+        "text": "DnaA protein oligomer binding to the origin sequence",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states that origin melting is accomplished by 20–50 monomers of DnaA protein which bind AT-rich origin sequences and initiate strand separation."
+      },
+      {
+        "text": "Single-stranded binding proteins coating the separated strands",
+        "isCorrect": false,
+        "rationale": "Incorrect because SSBs bind and stabilize single strands after separation; they do not initiate origin melting. If SSBs had origin-specific melting activity, this would be correct."
+      },
+      {
+        "text": "DNA gyrase introducing negative supercoils ahead of the fork",
+        "isCorrect": false,
+        "rationale": "Incorrect because DNA gyrase (a type II topoisomerase) modulates supercoiling during replication but does not directly melt the origin. If gyrase had strand-separating helicase activity, it would be correct."
+      },
+      {
+        "text": "Primase synthesizing an RNA primer at the origin",
+        "isCorrect": false,
+        "rationale": "Incorrect because primase lays down RNA primers after strands are separated; it cannot initiate origin melting. If primase could bind double-stranded origin and unwind it, this would be correct."
+      },
+      {
+        "text": "DNA ligase sealing nicks at the origin to allow strand opening",
+        "isCorrect": false,
+        "rationale": "Incorrect because DNA ligase functions to seal nicks after synthesis and does not participate in origin melting. If ligase had nuclease activity to nick and open the origin, it would be correct."
+      }
+    ]
+  },
+  {
+    "question": "During replication, an enzyme relieves torsional strain by creating a single-strand nick, allowing rotation and then resealing the break. Which enzyme performs this action?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define the activity of the following enzymes: type I topoisomerase",
+    "options": [
+      {
+        "text": "Type I topoisomerase that nicks one strand and reseals it",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture describes type I topoisomerase as creating a nick in one strand to allow swiveling and then sealing the nick to relieve supercoiling."
+      },
+      {
+        "text": "Type II topoisomerase that cuts both strands and religates them",
+        "isCorrect": false,
+        "rationale": "Incorrect because type II topoisomerase cuts both strands; it does not act by single-strand nicking. If the enzyme only nicked one strand, this option would be correct."
+      },
+      {
+        "text": "DNA helicase that separates strands at the replication fork",
+        "isCorrect": false,
+        "rationale": "Incorrect because helicase unwinds the helix by separating strands rather than nicking and resealing to relieve torsion. If helicase had nicking-resealing activity, it would be correct."
+      },
+      {
+        "text": "DNA polymerase I that removes RNA primers and replaces them",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol I has exonuclease and polymerase activities for primer removal and replacement, not nick-swiveling to relieve supercoils. If Pol I introduced single-strand nicks to relieve torsion, it would be correct."
+      },
+      {
+        "text": "DNA ligase that seals nicks after Okazaki fragment processing",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase seals nicks but does not create the initial nick to relieve supercoiling. If ligase could transiently nick and reseal to relieve torsion, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best describes how the lagging strand is synthesized at a replication fork?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define continuous and discontinuous DNA synthesis, primer, leading and lagging strands, Okazaki fragments",
+    "options": [
+      {
+        "text": "Short fragments synthesized away from the fork later joined into a continuous strand",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains the lagging strand is synthesized discontinuously as Okazaki fragments 5'→3' away from the fork and later joined to form a continuous strand."
+      },
+      {
+        "text": "A single continuous strand synthesized toward the fork without primers",
+        "isCorrect": false,
+        "rationale": "Incorrect because only the leading strand is synthesized continuously; lagging strand synthesis requires primers and discontinuous fragments. If the lagging strand were synthesized continuously, this would be correct."
+      },
+      {
+        "text": "RNA fragments synthesized and left permanently in the DNA backbone",
+        "isCorrect": false,
+        "rationale": "Incorrect because RNA primers are removed and replaced with DNA; they are not left permanently. If RNA primers were not removed, this option would be correct."
+      },
+      {
+        "text": "Fragments synthesized toward the fork and ligated without primer removal",
+        "isCorrect": false,
+        "rationale": "Incorrect because Okazaki fragments are synthesized away from the fork and require primer removal before ligation. If primers did not need removal, this would be correct."
+      },
+      {
+        "text": "Continuous RNA synthesis that is later reverse transcribed into DNA",
+        "isCorrect": false,
+        "rationale": "Incorrect because lagging strand synthesis uses DNA polymerases primed by short RNA primers, not continuous RNA later reverse transcribed. If reverse transcription were the normal mechanism, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A prokaryotic DNA polymerase removes RNA primers using 5'→3' exonuclease activity and fills the gap with DNA. Which polymerase fits this description?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define the activity of the following enzymes: DNA polymerase I",
+    "options": [
+      {
+        "text": "DNA polymerase I with 5'→3' exonuclease and polymerase activities",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states Pol I has 5'→3' exonuclease to remove RNA primers, 5'→3' polymerase to replace nucleotides, and 3'→5' proofreading activity."
+      },
+      {
+        "text": "DNA polymerase III that elongates both leading and lagging strands",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol III lacks 5'→3' exonuclease activity and cannot remove primers; it primarily elongates strands. If Pol III had 5'→3' exonuclease activity, this would be correct."
+      },
+      {
+        "text": "Primase that synthesizes short RNA primers for initiation",
+        "isCorrect": false,
+        "rationale": "Incorrect because primase is an RNA polymerase that makes primers but does not remove them or replace them with DNA. If primase had exonuclease and DNA polymerase activities, this would be correct."
+      },
+      {
+        "text": "DNA ligase that seals nicks after primer replacement",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase seals nicks but does not remove primers or synthesize replacement DNA. If ligase could synthesize DNA, this would be correct."
+      },
+      {
+        "text": "Type I topoisomerase that nicks and reseals single strands",
+        "isCorrect": false,
+        "rationale": "Incorrect because type I topoisomerase relieves supercoiling by nicking and resealing, not by removing primers or filling gaps. If it had polymerase activity, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "Which eukaryotic polymerase is primarily responsible for elongating the leading strand with proofreading capability?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the activity of eukaryotic DNA polymerases: Pol ε and Pol δ roles",
+    "options": [
+      {
+        "text": "DNA polymerase epsilon elongates the leading strand with proofreading",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture lists Pol ε as the polymerase with proofreading that elongates leading strands in eukaryotes."
+      },
+      {
+        "text": "DNA polymerase alpha that contains primase and begins synthesis",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol α initiates synthesis and contains primase but does not perform bulk leading-strand elongation with proofreading. If Pol α had extensive proofreading and elongation roles, this would be correct."
+      },
+      {
+        "text": "DNA polymerase beta that replicates mitochondrial DNA",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol β is a repair enzyme and Pol γ replicates mitochondrial DNA. If Pol β were the mitochondrial polymerase, this would be correct."
+      },
+      {
+        "text": "DNA polymerase gamma that elongates nuclear leading strands",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol γ functions in mitochondrial DNA replication, not nuclear leading-strand elongation. If Pol γ localized to the nucleus for replication, this would be correct."
+      },
+      {
+        "text": "DNA polymerase delta that initiates replication and primes strands",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol δ primarily elongates lagging strands with proofreading; it does not initiate or prime. If Pol δ primarily elongated leading strands, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s tumor cells show reactivation of an enzyme that extends repetitive sequences at chromosome ends, enabling continued proliferation. Which enzyme is most likely reactivated?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe telomerase in terms of its necessity, enzymatic functions, and role in cancer and aging",
+    "options": [
+      {
+        "text": "Telomerase containing an RNA template and reverse transcriptase activity",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains telomerase contains an RNA template and reverse transcriptase that extends telomeric repeats, enabling cells to bypass replicative shortening and contributing to cancer."
+      },
+      {
+        "text": "DNA gyrase introducing supercoils to stabilize chromosome ends",
+        "isCorrect": false,
+        "rationale": "Incorrect because DNA gyrase modulates supercoiling in prokaryotes and does not extend telomeric repeats. If gyrase had an RNA template and reverse transcriptase, this would be correct."
+      },
+      {
+        "text": "DNA ligase sealing nicks to prevent telomere shortening",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase seals nicks but cannot add telomeric repeats; telomere extension requires telomerase. If ligase could synthesize telomeric DNA, this would be correct."
+      },
+      {
+        "text": "Primase repeatedly synthesizing RNA repeats at chromosome ends",
+        "isCorrect": false,
+        "rationale": "Incorrect because primase makes short RNA primers but does not extend telomeric DNA using an RNA template. If primase had reverse transcriptase activity, this would be correct."
+      },
+      {
+        "text": "Type II topoisomerase religating double-strand breaks at ends",
+        "isCorrect": false,
+        "rationale": "Incorrect because type II topoisomerase relieves supercoils by cutting and religating DNA, not by adding telomeric repeats. If it carried an RNA template for telomere synthesis, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A nucleoside analog lacking a 3' hydroxyl is incorporated into viral DNA during therapy. What immediate effect does incorporation have on chain elongation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe how nucleoside analogs could interfere with DNA replication",
+    "options": [
+      {
+        "text": "Termination of strand elongation due to absence of a 3' hydroxyl",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states analogs like AZT and didanosine lack the 3' OH required for further nucleotide addition, causing chain termination when incorporated."
+      },
+      {
+        "text": "Increased proofreading removal by 3'→5' exonuclease activity",
+        "isCorrect": false,
+        "rationale": "Incorrect because lack of 3' OH prevents further elongation but does not inherently increase exonuclease removal; exonuclease activity may remove mismatches but cannot extend past a chain-terminating analog. If the analog were recognized as a mismatch and excised efficiently, this would be correct."
+      },
+      {
+        "text": "Enhanced ligation of Okazaki fragments at the incorporation site",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase seals nicks but cannot bypass a missing 3' OH; ligation requires proper backbone chemistry. If the analog preserved a 3' OH, ligation could proceed and this would be correct."
+      },
+      {
+        "text": "Conversion into a ribonucleotide that allows continued synthesis",
+        "isCorrect": false,
+        "rationale": "Incorrect because these analogs are deoxynucleoside analogs lacking 3' OH and do not convert into ribonucleotides that permit elongation. If conversion restored a 3' OH, this would be correct."
+      },
+      {
+        "text": "Induction of double-strand breaks at the replication fork",
+        "isCorrect": false,
+        "rationale": "Incorrect because immediate effect is chain termination, not direct induction of double-strand breaks. If incorporation caused endonuclease cleavage producing DSBs, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "Which antibiotic class inhibits a bacterial enzyme that introduces negative supercoils and is essential during replication?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast the following drugs: fluoroquinolones and DNA gyrase targeting",
+    "options": [
+      {
+        "text": "Fluoroquinolones that target DNA gyrase in prokaryotes",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture notes that fluoroquinolones (e.g., ciprofloxacin) target DNA gyrase, a prokaryotic type II topoisomerase that introduces supercoils important during replication."
+      },
+      {
+        "text": "Camptothecins that inhibit eukaryotic type I topoisomerases",
+        "isCorrect": false,
+        "rationale": "Incorrect because camptothecins target eukaryotic type I topoisomerases for cancer therapy, not bacterial DNA gyrase. If camptothecins targeted gyrase, this would be correct."
+      },
+      {
+        "text": "Etoposide that inhibits prokaryotic DNA gyrase activity",
+        "isCorrect": false,
+        "rationale": "Incorrect because etoposide targets eukaryotic type II topoisomerases, not prokaryotic gyrase. If etoposide inhibited gyrase, this would be correct."
+      },
+      {
+        "text": "Type I topoisomerase inhibitors used as broad-spectrum antibiotics",
+        "isCorrect": false,
+        "rationale": "Incorrect because type I topoisomerase inhibitors described in the lecture are used for eukaryotic targets in cancer, not as broad-spectrum antibiotics against gyrase. If such inhibitors targeted bacterial gyrase, this would be correct."
+      },
+      {
+        "text": "Reverse transcriptase inhibitors that prevent supercoil introduction",
+        "isCorrect": false,
+        "rationale": "Incorrect because reverse transcriptase inhibitors act on RNA-dependent DNA polymerases and do not affect gyrase-mediated supercoiling. If reverse transcriptase inhibitors blocked gyrase, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A researcher observes that a DNA polymerase stalls when attempting to add a nucleotide because the incoming nucleotide lacks a 3' hydroxyl. Which drug class from the lecture best explains this observation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe how nucleoside analogs could interfere with DNA replication",
+    "options": [
+      {
+        "text": "Nucleoside analogs such as AZT and didanosine used in HIV therapy",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture specifically cites AZT and didanosine as nucleoside analogs missing the 3' OH, which when incorporated prevent further strand elongation."
+      },
+      {
+        "text": "Camptothecins that trap topoisomerase I cleavage complexes",
+        "isCorrect": false,
+        "rationale": "Incorrect because camptothecins target eukaryotic topoisomerase I and do not act by lacking a 3' OH in nucleotides. If camptothecins were nucleotide analogs, this would be correct."
+      },
+      {
+        "text": "Fluoroquinolones that inhibit bacterial DNA gyrase activity",
+        "isCorrect": false,
+        "rationale": "Incorrect because fluoroquinolones inhibit gyrase and do not cause chain termination by missing 3' OH incorporation. If fluoroquinolones were chain-terminating nucleoside analogs, this would be correct."
+      },
+      {
+        "text": "DNA ligase inhibitors that prevent nick sealing after primer removal",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase inhibition prevents nick sealing but does not cause polymerase stalling due to missing 3' OH. If ligase inhibitors removed the 3' OH requirement, this would be correct."
+      },
+      {
+        "text": "Topoisomerase II poisons that induce double-strand breaks",
+        "isCorrect": false,
+        "rationale": "Incorrect because topoisomerase II poisons (e.g., etoposide) cause DSBs but do not act as chain-terminating nucleotides. If they functioned as nucleotide analogs lacking 3' OH, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "Which repair pathway specifically recognizes and removes UV-induced covalent linkages between adjacent pyrimidines?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast nucleotide excision repair and its role in repairing UV-induced pyrimidine dimers",
+    "options": [
+      {
+        "text": "Nucleotide excision repair that excises UV-induced pyrimidine dimers",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture describes NER using excision endonucleases (uvrABC in prokaryotes) to cut on both sides of pyrimidine dimers and remove the damaged segment for repair."
+      },
+      {
+        "text": "Base excision repair that removes abnormal single bases by glycosylases",
+        "isCorrect": false,
+        "rationale": "Incorrect because BER targets abnormal single bases via glycosylases, not bulky pyrimidine dimers. If BER enzymes recognized and excised dimers, this would be correct."
+      },
+      {
+        "text": "Mismatch repair that corrects replication misincorporation errors",
+        "isCorrect": false,
+        "rationale": "Incorrect because mismatch repair corrects replication errors and distinguishes parental strands, not UV-induced dimers. If mismatch repair recognized UV dimers, this would be correct."
+      },
+      {
+        "text": "Nonhomologous end joining that ligates double-strand breaks",
+        "isCorrect": false,
+        "rationale": "Incorrect because NHEJ repairs DSBs and is error-prone; it does not remove pyrimidine dimers. If UV exposure produced DSBs repaired by NHEJ, this would be correct."
+      },
+      {
+        "text": "Homologous recombination that uses sister chromatids as templates",
+        "isCorrect": false,
+        "rationale": "Incorrect because HR repairs DSBs using homologous templates, not pyrimidine dimers. If dimers caused DSBs requiring HR, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a defect in a pathway that removes bulky helix-distorting lesions presents with extreme sensitivity to sunlight and early skin cancers. Which inherited condition from the lecture best matches this presentation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast hereditary conditions causing cancer: xeroderma pigmentosum and NER defects",
+    "options": [
+      {
+        "text": "Xeroderma pigmentosum due to defects in nucleotide excision repair proteins",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture links XP to inability to repair UV-induced pyrimidine dimers via NER, causing early skin cancers and UV sensitivity."
+      },
+      {
+        "text": "Lynch syndrome caused by mismatch repair defects leading to colon cancer",
+        "isCorrect": false,
+        "rationale": "Incorrect because Lynch syndrome involves mismatch repair defects and predisposes to colorectal and other cancers, not primary UV sensitivity and skin cancers. If Lynch caused defective NER, this would be correct."
+      },
+      {
+        "text": "BRCA1 mutation causing defective homologous recombination and breast cancer",
+        "isCorrect": false,
+        "rationale": "Incorrect because BRCA1 defects impair HR and increase breast/ovarian cancer risk, not UV sensitivity. If BRCA1 mutations impaired NER, this would be correct."
+      },
+      {
+        "text": "Fanconi anemia due to interstrand crosslink repair defects causing sun sensitivity",
+        "isCorrect": false,
+        "rationale": "Incorrect because Fanconi anemia involves crosslink repair and bone marrow failure, not classic UV-induced pyrimidine dimer repair defects. If Fanconi anemia primarily impaired NER, this would be correct."
+      },
+      {
+        "text": "Ataxia telangiectasia from ATM deficiency causing photosensitivity",
+        "isCorrect": false,
+        "rationale": "Incorrect because ataxia telangiectasia involves DNA damage signaling defects and neurologic features, not isolated UV sensitivity and early skin cancers. If ATM deficiency caused NER failure, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "Which repair mechanism uses the parental strand methylation pattern in bacteria to identify and correct replication errors on the newly synthesized strand?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast strand directed mismatch repair",
+    "options": [
+      {
+        "text": "Strand-directed mismatch repair that distinguishes parental strand by methylation",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains mismatch repair in E. coli uses methylation of the parental strand to differentiate it from the newly synthesized strand for correction."
+      },
+      {
+        "text": "Nucleotide excision repair that removes bulky lesions like dimers",
+        "isCorrect": false,
+        "rationale": "Incorrect because NER recognizes bulky helix-distorting lesions rather than using methylation to identify newly synthesized strands. If NER used methylation to find mismatches, this would be correct."
+      },
+      {
+        "text": "Base excision repair that removes single abnormal bases via glycosylases",
+        "isCorrect": false,
+        "rationale": "Incorrect because BER targets single-base lesions and does not rely on parental strand methylation for strand discrimination. If BER used methylation to identify the new strand, this would be correct."
+      },
+      {
+        "text": "Nonhomologous end joining that ligates double-strand breaks without template",
+        "isCorrect": false,
+        "rationale": "Incorrect because NHEJ repairs DSBs and does not use methylation-based strand discrimination. If NHEJ used methylation to identify strands, this would be correct."
+      },
+      {
+        "text": "Homologous recombination that uses sister chromatids as templates for repair",
+        "isCorrect": false,
+        "rationale": "Incorrect because HR repairs DSBs using homologous sequences and does not use methylation to identify the newly synthesized strand. If HR relied on methylation for strand choice, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A researcher studying prokaryotic replication notes that the enzyme responsible for bulk chain elongation has 3'→5' exonuclease activity for proofreading but lacks 5'→3' exonuclease activity. Which enzyme is this?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define the activity of the following enzymes: DNA polymerase III and its proofreading",
+    "options": [
+      {
+        "text": "DNA polymerase III that elongates strands and proofreads 3'→5'",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture identifies Pol III as the main elongating enzyme with 3'→5' exonuclease proofreading but lacking 5'→3' exonuclease activity for primer removal."
+      },
+      {
+        "text": "DNA polymerase I that removes primers with 5'→3' exonuclease activity",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol I has 5'→3' exonuclease activity for primer removal in addition to polymerase and proofreading activities. If Pol I lacked 5'→3' exonuclease, this would be correct."
+      },
+      {
+        "text": "Primase that synthesizes RNA primers without exonuclease activity",
+        "isCorrect": false,
+        "rationale": "Incorrect because primase is an RNA polymerase that lacks exonuclease proofreading and does not perform bulk DNA elongation. If primase had 3'→5' exonuclease and elongated DNA, this would be correct."
+      },
+      {
+        "text": "DNA ligase that seals nicks and has exonuclease proofreading",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase seals nicks and does not have exonuclease or polymerase activities. If ligase had polymerase and exonuclease functions, this would be correct."
+      },
+      {
+        "text": "Type II topoisomerase that cleaves both strands and proofreads synthesis",
+        "isCorrect": false,
+        "rationale": "Incorrect because type II topoisomerase modulates supercoiling and does not proofread or elongate DNA. If it had polymerase and exonuclease activities, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A cell exposed to ionizing radiation sustains double-strand breaks. One repair pathway ligates ends directly but often loses nucleotides at the junction. Which pathway is this?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast nonhomologous end joining and homologous recombination",
+    "options": [
+      {
+        "text": "Nonhomologous end joining that ligates ends with loss of DNA",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture describes NHEJ as recognizing, processing, and ligating DSB ends but being error-prone and mutagenic due to loss of DNA at the site."
+      },
+      {
+        "text": "Homologous recombination that uses a homologous template to restore sequence",
+        "isCorrect": false,
+        "rationale": "Incorrect because HR uses homologous DNA as a template and is less error-prone, preserving sequence rather than losing nucleotides. If HR lacked a template, it would behave like NHEJ and this would be correct."
+      },
+      {
+        "text": "Base excision repair that removes single abnormal bases and fills gaps",
+        "isCorrect": false,
+        "rationale": "Incorrect because BER repairs single-base lesions and does not ligate DSBs. If BER could ligate DSBs directly, this would be correct."
+      },
+      {
+        "text": "Nucleotide excision repair that excises bulky lesions and fills gaps",
+        "isCorrect": false,
+        "rationale": "Incorrect because NER removes bulky lesions like pyrimidine dimers, not DSBs. If NER repaired DSBs, this would be correct."
+      },
+      {
+        "text": "Mismatch repair that corrects replication misincorporations using methylation",
+        "isCorrect": false,
+        "rationale": "Incorrect because mismatch repair corrects replication errors and does not ligate DSBs. If mismatch repair processed DSBs, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A woman with a family history of early-onset breast and ovarian cancer is found to have a germline defect impairing repair that uses a sister chromatid as template. Which genes from the lecture are most likely involved?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast hereditary conditions causing cancer: BRCA1 and BRCA2 mutations and HR involvement",
+    "options": [
+      {
+        "text": "BRCA1 or BRCA2 defects impairing homologous recombination repair",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states BRCA1 and BRCA2 are involved in HR; defects increase breast and ovarian cancer risk by impairing template-based DSB repair."
+      },
+      {
+        "text": "Mismatch repair gene defects causing Lynch syndrome colorectal cancer",
+        "isCorrect": false,
+        "rationale": "Incorrect because mismatch repair defects cause Lynch syndrome and colorectal cancer risk, not primarily breast/ovarian cancer via HR impairment. If MMR genes also disrupted HR, this would be correct."
+      },
+      {
+        "text": "Nucleotide excision repair gene defects causing xeroderma pigmentosum",
+        "isCorrect": false,
+        "rationale": "Incorrect because XP involves NER defects leading to UV sensitivity and skin cancers, not hereditary breast/ovarian cancer via HR. If NER genes caused HR failure, this would be correct."
+      },
+      {
+        "text": "DNA polymerase gamma mutations causing mitochondrial genome instability",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol γ functions in mitochondrial DNA replication and is not linked to hereditary breast/ovarian cancer via HR. If Pol γ mutations impaired nuclear HR, this would be correct."
+      },
+      {
+        "text": "Type II topoisomerase mutations leading to defective supercoil resolution",
+        "isCorrect": false,
+        "rationale": "Incorrect because topoisomerase II defects affect supercoiling and are not the canonical cause of hereditary breast/ovarian cancer via HR. If topoisomerase II were essential for HR, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A bacterial replication fork progresses and the leading strand is synthesized continuously while the other strand is synthesized as short fragments. Which statement best explains why primase activity is required repeatedly on the lagging strand?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process of DNA replication using primase and Okazaki fragment formation",
+    "options": [
+      {
+        "text": "Primase repeatedly provides new 3' OH ends by synthesizing RNA primers",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains DNA polymerases require a free 3' OH to begin synthesis; primase, an RNA polymerase, lays down ~10 nt primers for each Okazaki fragment."
+      },
+      {
+        "text": "Primase removes RNA primers and replaces them with DNA",
+        "isCorrect": false,
+        "rationale": "Incorrect because primer removal and replacement is performed by Pol I, not primase. If primase had 5'→3' exonuclease and polymerase activities, this would be correct."
+      },
+      {
+        "text": "Primase unwinds the helix ahead of the fork to allow synthesis",
+        "isCorrect": false,
+        "rationale": "Incorrect because helicase unwinds DNA; primase synthesizes RNA primers. If primase had helicase activity, this would be correct."
+      },
+      {
+        "text": "Primase ligates Okazaki fragments after DNA replacement",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase seals nicks after primer replacement; primase does not ligate. If primase had ligase activity, this would be correct."
+      },
+      {
+        "text": "Primase introduces nicks that are later filled by DNA gyrase",
+        "isCorrect": false,
+        "rationale": "Incorrect because gyrase modulates supercoiling and does not fill nicks; primase does not introduce nicks for gyrase to fill. If gyrase had polymerase activity, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A mutation abolishes the 3'→5' exonuclease activity of a replicative polymerase but leaves its polymerase function intact. What immediate replication defect would you expect?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define proofreading activity and its role in replication fidelity",
+    "options": [
+      {
+        "text": "Increased incorporation of mismatched nucleotides due to loss of proofreading",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture notes that polymerases like Pol III have 3'→5' exonuclease proofreading; loss of this activity reduces correction of misincorporated nucleotides, increasing errors."
+      },
+      {
+        "text": "Failure to remove RNA primers from Okazaki fragments",
+        "isCorrect": false,
+        "rationale": "Incorrect because primer removal is mediated by Pol I's 5'→3' exonuclease, not 3'→5' proofreading. If the mutated polymerase were Pol I with 5'→3' exonuclease loss, this would be correct."
+      },
+      {
+        "text": "Inability to synthesize DNA in the 5'→3' direction",
+        "isCorrect": false,
+        "rationale": "Incorrect because polymerase directionality (5'→3') is separate from proofreading; loss of 3'→5' exonuclease does not prevent synthesis. If the polymerase lost its polymerase active site, this would be correct."
+      },
+      {
+        "text": "Excessive supercoiling ahead of the replication fork",
+        "isCorrect": false,
+        "rationale": "Incorrect because supercoiling is managed by topoisomerases, not polymerase proofreading. If the polymerase regulated topoisomerase activity, this would be correct."
+      },
+      {
+        "text": "Immediate telomere shortening due to failed end extension",
+        "isCorrect": false,
+        "rationale": "Incorrect because telomere maintenance involves telomerase, not polymerase proofreading. If the polymerase were telomerase, loss of its exonuclease would affect telomeres and this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A chemotherapeutic agent stabilizes a eukaryotic topoisomerase I–DNA cleavage complex, leading to single-strand breaks that convert to double-strand breaks during replication. Which drug class from the lecture fits this mechanism?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the following drugs: camptothecins and their mechanism targeting eukaryotic topoisomerase I",
+    "options": [
+      {
+        "text": "Camptothecins that target eukaryotic type I topoisomerases",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states camptothecins target eukaryotic type I topoisomerases used in cancer therapy, stabilizing cleavage complexes and causing DNA breaks during replication."
+      },
+      {
+        "text": "Etoposide that inhibits eukaryotic type II topoisomerases",
+        "isCorrect": false,
+        "rationale": "Incorrect because etoposide targets type II topoisomerases; although it also causes DNA breaks, it acts on a different topoisomerase class. If etoposide targeted type I topoisomerase, this would be correct."
+      },
+      {
+        "text": "Fluoroquinolones that inhibit bacterial DNA gyrase",
+        "isCorrect": false,
+        "rationale": "Incorrect because fluoroquinolones target prokaryotic gyrase and are antibiotics, not eukaryotic topoisomerase I poisons. If fluoroquinolones targeted eukaryotic topoisomerase I, this would be correct."
+      },
+      {
+        "text": "Nucleoside analogs that lack a 3' hydroxyl and terminate chains",
+        "isCorrect": false,
+        "rationale": "Incorrect because nucleoside analogs cause chain termination rather than stabilizing topoisomerase cleavage complexes. If nucleoside analogs stabilized topoisomerase I–DNA complexes, this would be correct."
+      },
+      {
+        "text": "Type I topoisomerase inhibitors used as antibacterial agents",
+        "isCorrect": false,
+        "rationale": "Incorrect because the lecture indicates type I topoisomerase inhibitors discussed (camptothecins) are used for cancer, not as antibacterial agents. If such inhibitors targeted bacterial enzymes, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A bacterial strain lacking DNA methylation at the origin shows increased replication errors that persist. Which repair pathway described in the lecture would be directly impaired by loss of methylation-based strand discrimination?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast strand directed mismatch repair and methylation-based parental strand identification",
+    "options": [
+      {
+        "text": "Strand-directed mismatch repair that uses methylation to identify parental strand",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains E. coli mismatch repair differentiates parental from new strands via methylation; loss of methylation impairs strand discrimination and mismatch correction."
+      },
+      {
+        "text": "Nucleotide excision repair that removes bulky lesions like thymine dimers",
+        "isCorrect": false,
+        "rationale": "Incorrect because NER recognizes bulky lesions and does not rely on methylation for strand discrimination. If NER used methylation to find the correct strand, this would be correct."
+      },
+      {
+        "text": "Base excision repair that removes single abnormal bases via glycosylases",
+        "isCorrect": false,
+        "rationale": "Incorrect because BER uses glycosylases and AP endonuclease, not methylation, to repair single-base lesions. If BER required methylation for strand choice, this would be correct."
+      },
+      {
+        "text": "Nonhomologous end joining that ligates double-strand breaks without template",
+        "isCorrect": false,
+        "rationale": "Incorrect because NHEJ repairs DSBs and does not use methylation-based strand discrimination. If NHEJ used methylation to select ends, this would be correct."
+      },
+      {
+        "text": "Homologous recombination that uses sister chromatids as templates for accurate repair",
+        "isCorrect": false,
+        "rationale": "Incorrect because HR uses homologous templates and is independent of methylation-based parental strand identification. If HR required methylation to find templates, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s tumor shows loss of a protein required for template-directed repair of double-strand breaks, leading to genomic instability. Which cellular process from the lecture is most directly compromised?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast double-strand break repair: homologous recombination and BRCA involvement",
+    "options": [
+      {
+        "text": "Homologous recombination that uses homologous DNA as a repair template",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states HR uses homologous DNA as a template to repair missing DNA and is less error-prone; BRCA1/2 are involved in HR, so loss leads to genomic instability."
+      },
+      {
+        "text": "Nonhomologous end joining that ligates ends without a template",
+        "isCorrect": false,
+        "rationale": "Incorrect because NHEJ ligates ends without a template and is error-prone; loss of HR proteins specifically compromises template-directed repair. If NHEJ proteins were lost, NHEJ would be compromised instead."
+      },
+      {
+        "text": "Base excision repair that removes single abnormal bases and fills gaps",
+        "isCorrect": false,
+        "rationale": "Incorrect because BER repairs single-base lesions and is not the primary template-directed DSB repair pathway. If BER proteins mediated DSB repair using templates, this would be correct."
+      },
+      {
+        "text": "Mismatch repair that corrects replication misincorporations using methylation",
+        "isCorrect": false,
+        "rationale": "Incorrect because mismatch repair corrects replication errors and is distinct from HR-mediated DSB repair. If MMR proteins performed HR, this would be correct."
+      },
+      {
+        "text": "Nucleotide excision repair that excises bulky helix-distorting lesions",
+        "isCorrect": false,
+        "rationale": "Incorrect because NER removes bulky lesions like pyrimidine dimers, not DSBs requiring homologous templates. If NER used sister chromatids for DSB repair, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A lab assay shows an enzyme that copies an RNA template into DNA and lacks proofreading, producing high mutation rates. Which enzyme class from the lecture best matches this description?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe reverse transcriptase and its properties including lack of proofreading",
+    "options": [
+      {
+        "text": "Reverse transcriptase that is RNA-dependent DNA polymerase lacking proofreading",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture defines reverse transcriptase as an RNA-dependent DNA polymerase that copies RNA into DNA and lacks proofreading, leading to high mutation rates in viruses."
+      },
+      {
+        "text": "DNA polymerase III that elongates DNA with 3'→5' proofreading",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol III is a DNA-dependent DNA polymerase with 3'→5' exonuclease proofreading and does not copy RNA into DNA. If Pol III lacked proofreading and copied RNA, this would be correct."
+      },
+      {
+        "text": "Primase that synthesizes short RNA primers for DNA replication",
+        "isCorrect": false,
+        "rationale": "Incorrect because primase is an RNA polymerase that synthesizes primers and does not reverse transcribe RNA into DNA. If primase had reverse transcriptase activity, this would be correct."
+      },
+      {
+        "text": "DNA ligase that seals nicks in the phosphodiester backbone",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase seals nicks and does not synthesize DNA from RNA templates. If ligase had polymerase activity, this would be correct."
+      },
+      {
+        "text": "DNA polymerase I that removes primers and replaces them with DNA",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol I is a DNA-dependent DNA polymerase with exonuclease activities for primer removal and repair, not an RNA-dependent DNA polymerase. If Pol I could copy RNA into DNA, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A bacterial replication fork is stalled by excessive positive supercoiling ahead of the fork. Which enzyme class from the lecture should be targeted to relieve this torsional stress?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define the activity of topoisomerases and DNA gyrase in relieving supercoiling",
+    "options": [
+      {
+        "text": "Type II topoisomerases such as DNA gyrase that cut both strands",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains type II topoisomerases cut both strands to relieve supercoiling; DNA gyrase (a prokaryotic type II enzyme) can introduce or remove supercoils during replication."
+      },
+      {
+        "text": "Type I topoisomerases that nick a single strand and reseal it",
+        "isCorrect": false,
+        "rationale": "Incorrect because type I topoisomerases nick one strand and relieve some torsion but DNA gyrase (type II) is specifically important in prokaryotic replication for supercoil management. If single-strand nicking were sufficient here, type I would be correct."
+      },
+      {
+        "text": "DNA helicase that separates strands at the replication fork",
+        "isCorrect": false,
+        "rationale": "Incorrect because helicase unwinds strands but does not directly relieve torsional strain ahead of the fork; topoisomerases perform that role. If helicase also removed supercoils, this would be correct."
+      },
+      {
+        "text": "DNA ligase that seals nicks after Okazaki fragment processing",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase seals nicks and does not relieve supercoiling. If ligase could transiently cut and reseal to remove supercoils, this would be correct."
+      },
+      {
+        "text": "Primase that synthesizes RNA primers to allow strand synthesis",
+        "isCorrect": false,
+        "rationale": "Incorrect because primase provides primers for synthesis and does not manage supercoiling. If primase had topoisomerase activity, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A researcher observes that after removal of an RNA primer, a nick remains between adjacent DNA fragments. Which enzyme from the lecture is responsible for sealing this nick to restore the phosphodiester backbone?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define the activity of DNA ligase in sealing nicks after primer removal",
+    "options": [
+      {
+        "text": "DNA ligase that seals nicks to restore the phosphodiester backbone",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states DNA ligase seals the nick remaining after RNA primer removal and replacement, restoring the phosphodiester backbone."
+      },
+      {
+        "text": "DNA polymerase I that removes primers and replaces them with DNA",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol I removes RNA primers and fills gaps but does not seal the final nick; ligase performs sealing. If Pol I had ligase activity, this would be correct."
+      },
+      {
+        "text": "Primase that synthesizes RNA primers for Okazaki fragments",
+        "isCorrect": false,
+        "rationale": "Incorrect because primase synthesizes primers and does not seal nicks. If primase had ligase activity, this would be correct."
+      },
+      {
+        "text": "Type II topoisomerase that cuts and religates double strands",
+        "isCorrect": false,
+        "rationale": "Incorrect because type II topoisomerase modulates supercoiling by cutting and religating DNA but does not seal Okazaki fragment nicks. If it specialized in nick sealing post-replication, this would be correct."
+      },
+      {
+        "text": "Single-stranded binding proteins that prevent reannealing",
+        "isCorrect": false,
+        "rationale": "Incorrect because SSBs stabilize single strands and do not seal nicks. If SSBs had ligase activity, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s cells show frequent loss of nucleotides at sites of double-strand break repair, suggesting reliance on an error-prone pathway. Which pathway from the lecture is most likely responsible?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast nonhomologous end joining and its error-prone nature",
+    "options": [
+      {
+        "text": "Nonhomologous end joining that ligates ends with nucleotide loss",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture describes NHEJ as error-prone and mutagenic, often resulting in loss of DNA at the repair site when ligating DSB ends."
+      },
+      {
+        "text": "Homologous recombination that accurately restores sequence using a template",
+        "isCorrect": false,
+        "rationale": "Incorrect because HR uses a homologous template and is less error-prone, preserving sequence rather than causing nucleotide loss. If HR were unavailable, NHEJ would predominate and cause the observed loss."
+      },
+      {
+        "text": "Base excision repair that removes single abnormal bases and fills gaps",
+        "isCorrect": false,
+        "rationale": "Incorrect because BER repairs single-base lesions and does not typically cause nucleotide loss at DSBs. If BER processed DSBs, this would be correct."
+      },
+      {
+        "text": "Nucleotide excision repair that excises bulky lesions and fills gaps",
+        "isCorrect": false,
+        "rationale": "Incorrect because NER removes bulky lesions like pyrimidine dimers, not DSBs with nucleotide loss. If NER ligated DSBs without templates, this would be correct."
+      },
+      {
+        "text": "Mismatch repair that corrects replication misincorporations using methylation",
+        "isCorrect": false,
+        "rationale": "Incorrect because mismatch repair corrects replication errors and does not ligate DSBs; it would not explain nucleotide loss at DSB repair sites. If MMR proteins mediated end joining, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient with HIV is treated with a drug that, once phosphorylated, is incorporated into viral DNA and prevents further chain extension. Which property of the drug described in the lecture explains this effect?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe how nucleoside analogs (e.g., AZT) interfere with DNA replication in HIV therapy",
+    "options": [
+      {
+        "text": "Absence of a 3' hydroxyl on the nucleoside analog causing chain termination",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains AZT and didanosine lack the 3' OH required for strand elongation; incorporation into DNA prevents further nucleotide addition, terminating the chain."
+      },
+      {
+        "text": "Inhibition of topoisomerase I leading to replication fork collapse",
+        "isCorrect": false,
+        "rationale": "Incorrect because topoisomerase inhibition is not the mechanism of AZT; AZT acts as a chain terminator. If AZT inhibited topoisomerase I, this would be correct."
+      },
+      {
+        "text": "Activation of mismatch repair that removes viral DNA segments",
+        "isCorrect": false,
+        "rationale": "Incorrect because AZT functions by chain termination, not by activating mismatch repair. If AZT triggered MMR to excise viral DNA, this would be correct."
+      },
+      {
+        "text": "Direct cleavage of viral RNA by RNase H activity",
+        "isCorrect": false,
+        "rationale": "Incorrect because AZT is a nucleoside analog incorporated into DNA, not an RNase H activator. If AZT induced RNase H–mediated cleavage, this would be correct."
+      },
+      {
+        "text": "Stabilization of DNA gyrase cleavage complexes in viral genomes",
+        "isCorrect": false,
+        "rationale": "Incorrect because DNA gyrase is a bacterial enzyme and not the target of AZT; stabilization of gyrase cleavage complexes is the mechanism of fluoroquinolones in bacteria. If AZT targeted gyrase, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A student asks which enzyme in prokaryotes provides the free 3' OH required for DNA polymerases to begin synthesis on the lagging strand. Which enzyme from the lecture is the correct answer?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define the role of primase in providing RNA primers with free 3' OH groups",
+    "options": [
+      {
+        "text": "Primase synthesizing short RNA primers that provide 3' OH ends",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states primase is an RNA polymerase that copies ~10 nucleotides to prime synthesis, providing the free 3' OH required by DNA polymerases."
+      },
+      {
+        "text": "DNA polymerase I that removes primers and replaces them with DNA",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol I removes RNA primers and fills gaps but does not provide the initial 3' OH primer for synthesis. If Pol I synthesized RNA primers, this would be correct."
+      },
+      {
+        "text": "DNA helicase that unwinds the double helix at the fork",
+        "isCorrect": false,
+        "rationale": "Incorrect because helicase unwinds DNA but does not synthesize primers. If helicase synthesized RNA primers, this would be correct."
+      },
+      {
+        "text": "DNA ligase that seals nicks between Okazaki fragments",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase seals nicks and does not provide 3' OH primer ends. If ligase synthesized primers, this would be correct."
+      },
+      {
+        "text": "Single-stranded binding proteins that stabilize unwound DNA",
+        "isCorrect": false,
+        "rationale": "Incorrect because SSBs bind single strands to prevent reannealing and do not synthesize primers. If SSBs had polymerase activity, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A researcher studying eukaryotic replication notes that no single enzyme exactly matches prokaryotic Pol I functions. Which statement from the lecture best explains this observation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe differences between prokaryotic and eukaryotic polymerases and gaps in knowledge",
+    "options": [
+      {
+        "text": "Eukaryotes use multiple polymerases to accomplish Pol I–like activities",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture notes there is no exact eukaryotic equivalent of Pol I, so its activities may be distributed among several enzymes in eukaryotes."
+      },
+      {
+        "text": "Eukaryotic Pol α alone performs all primer removal and repair functions",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol α contains primase and begins synthesis but does not perform all Pol I–like primer removal and repair functions. If Pol α had 5'→3' exonuclease activity, this would be correct."
+      },
+      {
+        "text": "Eukaryotic Pol γ replicates nuclear DNA and replaces Pol I",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol γ is mitochondrial and does not replace Pol I in nuclear replication. If Pol γ localized to the nucleus for replication, this would be correct."
+      },
+      {
+        "text": "Eukaryotic DNA ligase substitutes for Pol I in primer removal",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase seals nicks but does not remove primers or synthesize replacement DNA. If ligase had exonuclease and polymerase activities, this would be correct."
+      },
+      {
+        "text": "Eukaryotic topoisomerases perform primer removal and replacement",
+        "isCorrect": false,
+        "rationale": "Incorrect because topoisomerases manage supercoiling and do not remove primers or synthesize DNA. If topoisomerases had polymerase and exonuclease functions, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a hereditary defect in mismatch repair genes develops colorectal cancer at a young age. Which syndrome described in the lecture best fits this clinical picture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast hereditary conditions causing cancer: Lynch Syndrome (HNPCC) due to mismatch repair defects",
+    "options": [
+      {
+        "text": "Lynch syndrome (HNPCC) due to defective mismatch repair proteins",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states that defects in mismatch repair cause hereditary nonpolyposis colorectal cancer (Lynch syndrome), responsible for about 5% of colon cancers."
+      },
+      {
+        "text": "Xeroderma pigmentosum due to defective nucleotide excision repair",
+        "isCorrect": false,
+        "rationale": "Incorrect because XP involves NER defects leading to UV sensitivity and skin cancers, not primarily early-onset colorectal cancer. If XP genes caused MMR failure, this would be correct."
+      },
+      {
+        "text": "BRCA1 mutation causing hereditary breast and ovarian cancer",
+        "isCorrect": false,
+        "rationale": "Incorrect because BRCA1/2 defects impair HR and predispose to breast/ovarian cancer, not Lynch-associated colorectal cancer. If BRCA mutations primarily caused MMR defects, this would be correct."
+      },
+      {
+        "text": "Fanconi anemia causing bone marrow failure and cancer predisposition",
+        "isCorrect": false,
+        "rationale": "Incorrect because Fanconi anemia involves interstrand crosslink repair defects and bone marrow failure, not classic Lynch colorectal cancer. If Fanconi genes caused MMR defects, this would be correct."
+      },
+      {
+        "text": "Ataxia telangiectasia causing neurologic degeneration and cancer risk",
+        "isCorrect": false,
+        "rationale": "Incorrect because ataxia telangiectasia involves DNA damage signaling defects and neurologic features, not specifically Lynch-type colorectal cancer. If ATM mutations caused MMR failure, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A cell line shows accumulation of apurinic/apyrimidinic sites after spontaneous base loss. Which repair pathway and initial enzyme class from the lecture would recognize and remove the abnormal base?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast base excision repair and the role of DNA glycosylases",
+    "options": [
+      {
+        "text": "Base excision repair initiated by DNA glycosylases removing abnormal bases",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains BER is initiated by specific DNA glycosylases that cleave the base from the nucleotide, followed by AP endonuclease and lyase action."
+      },
+      {
+        "text": "Nucleotide excision repair initiated by uvrABC excinuclease cutting around lesions",
+        "isCorrect": false,
+        "rationale": "Incorrect because NER removes bulky helix-distorting lesions like pyrimidine dimers using excinucleases, not single-base loss. If the lesion were bulky, NER would be correct."
+      },
+      {
+        "text": "Mismatch repair that recognizes replication misincorporations via methylation",
+        "isCorrect": false,
+        "rationale": "Incorrect because MMR corrects replication errors and does not initiate repair at AP sites; it relies on strand discrimination. If AP sites resulted from replication mismatches, MMR might be involved."
+      },
+      {
+        "text": "Nonhomologous end joining that ligates double-strand breaks without template",
+        "isCorrect": false,
+        "rationale": "Incorrect because NHEJ repairs DSBs and is not the pathway for AP site repair. If AP sites produced DSBs, NHEJ would be relevant."
+      },
+      {
+        "text": "Homologous recombination that uses sister chromatids to repair lesions",
+        "isCorrect": false,
+        "rationale": "Incorrect because HR repairs DSBs using homologous templates and is not the primary mechanism for AP site repair. If AP sites led to DSBs requiring template-based repair, HR would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s tumor is treated with etoposide, which targets a topoisomerase class described in the lecture. Which topoisomerase does etoposide inhibit?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast the following drugs: etoposide and its target of eukaryotic type II topoisomerases",
+    "options": [
+      {
+        "text": "Etoposide that targets eukaryotic type II topoisomerases",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states etoposide targets eukaryotic type II topoisomerases used in cancer therapy."
+      },
+      {
+        "text": "Camptothecins that target eukaryotic type I topoisomerases",
+        "isCorrect": false,
+        "rationale": "Incorrect because camptothecins target type I topoisomerases, not the type II enzymes inhibited by etoposide. If etoposide targeted type I, this would be correct."
+      },
+      {
+        "text": "Fluoroquinolones that inhibit bacterial DNA gyrase",
+        "isCorrect": false,
+        "rationale": "Incorrect because fluoroquinolones target prokaryotic gyrase (type II) as antibiotics, not eukaryotic topoisomerase II targeted by etoposide. If fluoroquinolones targeted eukaryotic topoisomerase II, this would be correct."
+      },
+      {
+        "text": "Type I topoisomerase inhibitors used as antibacterial agents",
+        "isCorrect": false,
+        "rationale": "Incorrect because type I inhibitors discussed (camptothecins) are used for cancer and not as antibacterial agents; they are not the target of etoposide. If etoposide inhibited type I, this would be correct."
+      },
+      {
+        "text": "Reverse transcriptase inhibitors that block RNA-dependent DNA polymerase",
+        "isCorrect": false,
+        "rationale": "Incorrect because reverse transcriptase inhibitors act on RNA-dependent DNA polymerases and are unrelated to etoposide’s topoisomerase II target. If etoposide inhibited reverse transcriptase, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A mutation in a eukaryotic cell prevents formation of the protective 3' overhang structure at chromosome ends after replication. Which enzyme’s absence or inactivity described in the lecture most directly explains this defect?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe telomerase function in extending 3' overhangs and protecting chromosome ends",
+    "options": [
+      {
+        "text": "Telomerase that extends telomeric repeats using an RNA template",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains telomerase extends the 3' overhang by copying its RNA template into DNA, enabling formation of the protective overhang and associated structures."
+      },
+      {
+        "text": "DNA ligase that seals nicks after Okazaki fragment processing",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase seals nicks but does not extend telomeric repeats or create the 3' overhang. If ligase could add telomeric repeats, this would be correct."
+      },
+      {
+        "text": "DNA polymerase gamma that replicates mitochondrial DNA",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol γ functions in mitochondria and is not responsible for nuclear telomere extension. If Pol γ extended nuclear telomeres, this would be correct."
+      },
+      {
+        "text": "Primase that synthesizes RNA primers at chromosome ends",
+        "isCorrect": false,
+        "rationale": "Incorrect because primase provides primers but does not extend telomeric repeats using an RNA template and reverse transcriptase activity. If primase had reverse transcriptase function, this would be correct."
+      },
+      {
+        "text": "Type II topoisomerase that relieves supercoiling during replication",
+        "isCorrect": false,
+        "rationale": "Incorrect because topoisomerase II relieves supercoiling and does not synthesize telomeric DNA. If it carried an RNA template for telomere synthesis, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A bacterial replication experiment shows that DNA synthesis proceeds in the 5'→3' direction while the template is read 3'→5'. Which fundamental property of polymerases from the lecture explains this orientation?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define nucleic acid synthesis directionality and template reading during replication",
+    "options": [
+      {
+        "text": "Polymerases catalyze chain growth only in the 5'→3' direction using incoming 5' triphosphates",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states all polymerases synthesize nucleic acids 5'→3' by forming a bond between the 3' OH of the growing strand and the 5' triphosphate of the incoming nucleotide, while reading the template 3'→5'."
+      },
+      {
+        "text": "Polymerases synthesize 3'→5' chains by adding nucleotides to 5' ends",
+        "isCorrect": false,
+        "rationale": "Incorrect because polymerases do not synthesize in the 3'→5' direction; synthesis is 5'→3'. If polymerases added nucleotides to 5' ends, this would be correct."
+      },
+      {
+        "text": "Polymerases read templates 5'→3' and synthesize complementary strands 3'→5'",
+        "isCorrect": false,
+        "rationale": "Incorrect because template reading is 3'→5' to allow 5'→3' synthesis. If templates were read 5'→3', synthesis would be 3'→5' and this option would be correct."
+      },
+      {
+        "text": "Polymerases require a free 5' phosphate to initiate synthesis",
+        "isCorrect": false,
+        "rationale": "Incorrect because polymerases require a free 3' OH on the primer to extend the chain, not a free 5' phosphate. If initiation required a 5' phosphate, this would be correct."
+      },
+      {
+        "text": "Polymerases use pyrophosphate addition to reverse chain elongation",
+        "isCorrect": false,
+        "rationale": "Incorrect because pyrophosphate is released during nucleotide addition and its cleavage drives the reaction forward; it does not reverse elongation. If pyrophosphate addition drove elongation, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A researcher finds that a prokaryotic enzyme can introduce negative supercoils into DNA, a function important during replication. Which enzyme from the lecture performs this unique activity?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define DNA gyrase and its unique ability to introduce supercoils in prokaryotes",
+    "options": [
+      {
+        "text": "DNA gyrase, a prokaryotic type II topoisomerase that introduces supercoils",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture highlights DNA gyrase as a prokaryotic type II topoisomerase with the unusual ability to introduce supercoils, important during replication."
+      },
+      {
+        "text": "Type I topoisomerase that nicks one strand and reseals it",
+        "isCorrect": false,
+        "rationale": "Incorrect because type I topoisomerase nicks a single strand to relieve torsion but does not introduce negative supercoils like gyrase. If type I could introduce supercoils, this would be correct."
+      },
+      {
+        "text": "DNA helicase that unwinds the double helix at the fork",
+        "isCorrect": false,
+        "rationale": "Incorrect because helicase separates strands but does not introduce supercoils. If helicase introduced negative supercoils, this would be correct."
+      },
+      {
+        "text": "DNA ligase that seals nicks between Okazaki fragments",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase seals nicks and does not modulate supercoiling. If ligase could introduce supercoils, this would be correct."
+      },
+      {
+        "text": "Primase that synthesizes RNA primers for lagging strand synthesis",
+        "isCorrect": false,
+        "rationale": "Incorrect because primase synthesizes primers and does not introduce supercoils. If primase had topoisomerase activity, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s cells show inability to remove thymine dimers formed after sun exposure. Which specific enzymatic activity described in the lecture is missing or defective?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe nucleotide excision repair and the role of excision endonucleases (uvrABC) in removing pyrimidine dimers",
+    "options": [
+      {
+        "text": "Excision endonuclease activity that cuts on both sides of the dimer",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains UV-specific excision endonucleases (uvrABC) cut DNA on both sides of pyrimidine dimers to remove the damaged segment for repair."
+      },
+      {
+        "text": "DNA glycosylase activity that removes single abnormal bases",
+        "isCorrect": false,
+        "rationale": "Incorrect because glycosylases initiate BER for single-base lesions, not bulky pyrimidine dimers. If glycosylases recognized dimers, this would be correct."
+      },
+      {
+        "text": "3'→5' exonuclease proofreading activity of replicative polymerases",
+        "isCorrect": false,
+        "rationale": "Incorrect because proofreading corrects misincorporated nucleotides during replication and does not excise thymine dimers. If proofreading enzymes recognized dimers, this would be correct."
+      },
+      {
+        "text": "DNA ligase activity that seals nicks after repair synthesis",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase seals nicks but does not excise dimers; excision endonucleases perform the cut. If ligase could excise damaged bases, this would be correct."
+      },
+      {
+        "text": "Reverse transcriptase copying RNA templates into DNA",
+        "isCorrect": false,
+        "rationale": "Incorrect because reverse transcriptase synthesizes DNA from RNA and is unrelated to excising thymine dimers. If reverse transcriptase removed dimers, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A clinical vignette: A 35-year-old woman with a strong family history of breast cancer undergoes genetic testing and is found to have a mutation impairing homologous recombination. Which therapeutic strategy from the lecture would most directly exploit this defect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe telomerase and DNA repair concepts and apply HR deficiency to therapy selection",
+    "options": [
+      {
+        "text": "Use agents that induce double-strand breaks relying on HR for accurate repair",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains HR repairs DSBs using homologous templates; tumors deficient in HR (e.g., BRCA mutations) are more vulnerable to therapies that induce DSBs, exploiting inability to accurately repair them."
+      },
+      {
+        "text": "Administer nucleoside analogs that terminate DNA chains by lacking 3' OH",
+        "isCorrect": false,
+        "rationale": "Incorrect because nucleoside analogs cause chain termination but do not specifically exploit HR deficiency; they target polymerase activity. If HR deficiency increased sensitivity to chain terminators specifically, this would be correct."
+      },
+      {
+        "text": "Treat with fluoroquinolones that inhibit bacterial DNA gyrase",
+        "isCorrect": false,
+        "rationale": "Incorrect because fluoroquinolones target bacterial gyrase and are not cancer therapies exploiting HR defects. If fluoroquinolones induced DSBs in human cells, this would be correct."
+      },
+      {
+        "text": "Use camptothecins that stabilize topoisomerase I cleavage complexes without causing DSBs",
+        "isCorrect": false,
+        "rationale": "Incorrect because camptothecins stabilize topoisomerase I cleavage complexes that can convert to DSBs during replication and could exploit HR deficiency, but the option incorrectly states they do not cause DSBs; if they were known not to cause DSBs, this would be correct. For this to be correct, the statement must reflect that camptothecins produce DSBs during replication."
+      },
+      {
+        "text": "Apply DNA ligase inhibitors to prevent nick sealing and telomere extension",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase inhibition affects nick sealing but is not the primary strategy to exploit HR defects; targeting DSB-inducing agents is more direct. If ligase inhibition specifically increased DSBs in HR-deficient tumors, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A 28-year-old man presents with multiple early skin cancers and extreme sensitivity to sunlight. Genetic testing reveals defects in proteins that recognize and excise bulky DNA lesions. Which molecular defect described in the lecture most likely explains his phenotype?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast nucleotide excision repair and xeroderma pigmentosum clinical consequences",
+    "options": [
+      {
+        "text": "Defective nucleotide excision repair proteins preventing removal of pyrimidine dimers",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture links XP to defects in NER proteins that cannot repair UV-induced pyrimidine dimers, leading to early and numerous skin cancers and UV sensitivity."
+      },
+      {
+        "text": "Loss of mismatch repair proteins causing failure to correct replication errors",
+        "isCorrect": false,
+        "rationale": "Incorrect because MMR defects (Lynch syndrome) predispose to colorectal cancers and do not primarily cause UV sensitivity and skin cancers. If MMR proteins recognized and excised pyrimidine dimers, this would be correct."
+      },
+      {
+        "text": "BRCA1 mutation impairing homologous recombination and causing skin cancers",
+        "isCorrect": false,
+        "rationale": "Incorrect because BRCA1 defects increase breast/ovarian cancer risk via HR impairment, not UV-induced skin cancers. If BRCA1 mutations specifically impaired NER, this would be correct."
+      },
+      {
+        "text": "Defective base excision repair glycosylases leading to AP site accumulation",
+        "isCorrect": false,
+        "rationale": "Incorrect because BER defects cause accumulation of AP sites and base lesions, not the classic UV sensitivity and skin cancers seen in XP. If BER glycosylases removed pyrimidine dimers, this would be correct."
+      },
+      {
+        "text": "Inactivation of telomerase causing premature telomere shortening and skin fragility",
+        "isCorrect": false,
+        "rationale": "Incorrect because telomerase inactivity leads to replicative shortening and aging-related limits on division, not the UV-specific cancer predisposition of XP. If telomerase loss caused failure to repair UV lesions, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s tumor is treated with a drug that stabilizes topoisomerase II–DNA complexes, producing double-strand breaks during replication. Based on the lecture, which drug is most consistent with this mechanism?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast camptothecins and etoposide mechanisms targeting topoisomerases",
+    "options": [
+      {
+        "text": "Etoposide that targets eukaryotic type II topoisomerases producing DSBs",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states etoposide targets eukaryotic type II topoisomerases; stabilizing cleavage complexes leads to DSBs during replication, which is exploited in cancer therapy."
+      },
+      {
+        "text": "Camptothecin that targets type I topoisomerases producing single-strand breaks",
+        "isCorrect": false,
+        "rationale": "Incorrect because camptothecins target type I topoisomerases and primarily produce single-strand breaks that can convert to DSBs during replication; etoposide specifically targets type II. If camptothecin targeted type II, this would be correct."
+      },
+      {
+        "text": "Fluoroquinolone that inhibits bacterial DNA gyrase and causes bacterial DSBs",
+        "isCorrect": false,
+        "rationale": "Incorrect because fluoroquinolones target bacterial gyrase and are antibiotics, not eukaryotic cancer drugs; they do not directly explain tumor treatment in humans. If fluoroquinolones were used as anticancer agents targeting human topoisomerase II, this would be correct."
+      },
+      {
+        "text": "Nucleoside analog that lacks 3' OH and terminates DNA synthesis",
+        "isCorrect": false,
+        "rationale": "Incorrect because chain-terminating nucleoside analogs act by lacking a 3' OH and do not primarily stabilize topoisomerase II–DNA complexes. If the drug both lacked 3' OH and stabilized topoisomerase II, this would be correct."
+      },
+      {
+        "text": "DNA ligase inhibitor preventing nick sealing and indirectly causing DSBs",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase inhibition prevents nick sealing but is not the canonical mechanism of etoposide; etoposide directly targets topoisomerase II. If ligase inhibition were the drug’s mechanism, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A graduate student designs an experiment: after UV exposure, cells lacking uvrABC proteins fail to excise damaged DNA segments. Which repair step described in the lecture is directly lost in these mutant cells?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the role of uvrABC excinuclease in nucleotide excision repair",
+    "options": [
+      {
+        "text": "Excision of the damaged segment by cutting on both sides of the lesion",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture indicates uvrABC excinuclease cuts DNA on both sides of UV-induced pyrimidine dimers to remove the damaged segment for repair."
+      },
+      {
+        "text": "Removal of single abnormal bases by DNA glycosylases",
+        "isCorrect": false,
+        "rationale": "Incorrect because glycosylases initiate BER for single-base lesions, not the uvrABC-mediated excision of bulky lesions. If uvrABC acted as glycosylases, this would be correct."
+      },
+      {
+        "text": "Proofreading by 3'→5' exonuclease during replication",
+        "isCorrect": false,
+        "rationale": "Incorrect because proofreading is a polymerase function during replication and is not performed by uvrABC. If uvrABC had exonuclease proofreading, this would be correct."
+      },
+      {
+        "text": "Ligation of Okazaki fragments after primer replacement",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligation is performed by DNA ligase and is downstream of excision and repair synthesis. If uvrABC performed ligation, this would be correct."
+      },
+      {
+        "text": "Telomerase-mediated extension of chromosome ends",
+        "isCorrect": false,
+        "rationale": "Incorrect because telomerase extends telomeres and is unrelated to uvrABC excision of UV lesions. If uvrABC extended telomeres, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A complex vignette: A 42-year-old man with recurrent bacterial infections is treated with ciprofloxacin but develops severe tendonitis. The drug inhibits an enzyme required for bacterial replication. Which enzyme targeted by ciprofloxacin is described in the lecture, and why does inhibition impair bacterial DNA replication?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast fluoroquinolones mechanism targeting DNA gyrase and its role in replication",
+    "options": [
+      {
+        "text": "DNA gyrase inhibition prevents supercoil management and halts replication fork progression",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states fluoroquinolones target DNA gyrase, a prokaryotic type II topoisomerase that introduces or relieves supercoils; inhibiting gyrase prevents proper supercoil resolution and impairs replication."
+      },
+      {
+        "text": "Topoisomerase I inhibition that prevents single-strand nicking and resealing",
+        "isCorrect": false,
+        "rationale": "Incorrect because ciprofloxacin targets gyrase (type II), not type I topoisomerase; type I nicks one strand. If ciprofloxacin primarily inhibited type I in bacteria, this would be correct."
+      },
+      {
+        "text": "DNA polymerase III inhibition that removes primers and replaces them",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol III elongates strands and does not remove primers; Pol I removes primers. Ciprofloxacin does not inhibit Pol III. If ciprofloxacin inhibited Pol III’s polymerase activity, this would be correct."
+      },
+      {
+        "text": "Primase inhibition preventing RNA primer synthesis for Okazaki fragments",
+        "isCorrect": false,
+        "rationale": "Incorrect because ciprofloxacin does not inhibit primase; primase synthesizes RNA primers. If ciprofloxacin blocked primase, this would be correct."
+      },
+      {
+        "text": "DNA ligase inhibition preventing nick sealing after replication",
+        "isCorrect": false,
+        "rationale": "Incorrect because ciprofloxacin targets gyrase and not ligase; ligase seals nicks but its inhibition would not explain gyrase-specific effects. If ciprofloxacin inhibited ligase, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s tumor cells are deficient in homologous recombination due to BRCA2 loss. Which repair outcome described in the lecture will be increased in these cells after ionizing radiation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast NHEJ and HR and apply HR deficiency consequences to DSB repair outcomes",
+    "options": [
+      {
+        "text": "Increased reliance on nonhomologous end joining with more mutagenic repairs",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains HR is less error-prone and uses homologous templates; loss of HR (BRCA defects) forces cells to use NHEJ, which is error-prone and leads to nucleotide loss and mutations."
+      },
+      {
+        "text": "Enhanced homologous recombination restoring sequence accurately",
+        "isCorrect": false,
+        "rationale": "Incorrect because HR is compromised by BRCA2 loss, so accurate template-based repair would not be enhanced. If BRCA2 were functional, HR would be increased."
+      },
+      {
+        "text": "Increased base excision repair of single-base lesions",
+        "isCorrect": false,
+        "rationale": "Incorrect because BER addresses single-base lesions and is not the primary pathway for DSBs; BRCA2 loss specifically affects HR. If DSBs were converted to single-base lesions, BER might be relevant."
+      },
+      {
+        "text": "Greater nucleotide excision repair of bulky lesions",
+        "isCorrect": false,
+        "rationale": "Incorrect because NER repairs bulky helix-distorting lesions and is not the main DSB pathway; BRCA2 loss does not increase NER. If DSBs produced bulky lesions, NER would be relevant."
+      },
+      {
+        "text": "Increased mismatch repair correcting replication errors",
+        "isCorrect": false,
+        "rationale": "Incorrect because MMR corrects replication mismatches and is not the compensatory pathway for DSBs when HR is lost. If MMR proteins could repair DSBs, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A lab model: E. coli cells with defective Pol I show impaired DNA repair and primer removal. Which specific Pol I activity described in the lecture explains both functions?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe DNA polymerase I activities including 5'→3' exonuclease, 5'→3' polymerase, and role in repair",
+    "options": [
+      {
+        "text": "Pol I's 5'→3' exonuclease activity that removes RNA primers and participates in repair",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture highlights Pol I’s 5'→3' exonuclease removes RNA primers and its polymerase activity replaces nucleotides, enabling primer removal and DNA repair functions."
+      },
+      {
+        "text": "Pol I's 3'→5' exonuclease proofreading that removes misincorporated nucleotides",
+        "isCorrect": false,
+        "rationale": "Incorrect because while Pol I has 3'→5' proofreading, the primer removal and repair role specifically depends on its 5'→3' exonuclease activity. If primer removal relied solely on 3'→5' activity, this would be correct."
+      },
+      {
+        "text": "Pol III's 5'→3' exonuclease activity that removes primers during replication",
+        "isCorrect": false,
+        "rationale": "Incorrect because Pol III lacks 5'→3' exonuclease activity and cannot remove primers; Pol I performs this role. If Pol III had 5'→3' exonuclease, this would be correct."
+      },
+      {
+        "text": "Primase's RNA polymerase activity that synthesizes primers for Okazaki fragments",
+        "isCorrect": false,
+        "rationale": "Incorrect because primase synthesizes RNA primers and does not remove them or perform repair. If primase had 5'→3' exonuclease activity, this would be correct."
+      },
+      {
+        "text": "DNA ligase's sealing activity that completes repair after primer removal",
+        "isCorrect": false,
+        "rationale": "Incorrect because ligase seals nicks but does not remove primers; Pol I’s exonuclease and polymerase activities are required before ligase acts. If ligase removed primers, this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A clinical reasoning vignette: A 50-year-old man with a family history of colorectal cancer undergoes tumor testing showing microsatellite instability due to defective post-replicative correction. Which pathway and molecular defect from the lecture best explain his tumor’s phenotype and familial syndrome?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast strand-directed mismatch repair and Lynch Syndrome (HNPCC) clinical correlation",
+    "options": [
+      {
+        "text": "Defective mismatch repair leading to Lynch syndrome with microsatellite instability",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture links defects in mismatch repair to hereditary nonpolyposis colorectal cancer (Lynch syndrome) and explains MMR corrects replication errors; loss leads to microsatellite instability."
+      },
+      {
+        "text": "Defective nucleotide excision repair causing xeroderma pigmentosum phenotype",
+        "isCorrect": false,
+        "rationale": "Incorrect because NER defects cause XP with UV sensitivity and skin cancers, not microsatellite instability in colorectal tumors. If NER defects produced MSI, this would be correct."
+      },
+      {
+        "text": "BRCA1 mutation causing homologous recombination failure and colorectal cancer",
+        "isCorrect": false,
+        "rationale": "Incorrect because BRCA1 defects primarily predispose to breast/ovarian cancer via HR impairment, not Lynch-type colorectal cancer with MSI. If BRCA1 loss caused MMR failure, this would be correct."
+      },
+      {
+        "text": "Base excision repair deficiency leading to accumulation of AP sites and MSI",
+        "isCorrect": false,
+        "rationale": "Incorrect because BER defects cause base lesion accumulation and are not the canonical cause of MSI; MMR defects cause MSI. If BER defects directly caused MSI, this would be correct."
+      },
+      {
+        "text": "Nonhomologous end joining hyperactivity causing chromosomal translocations and MSI",
+        "isCorrect": false,
+        "rationale": "Incorrect because NHEJ hyperactivity leads to mutagenic DSB repair and translocations, not microsatellite instability characteristic of MMR defects. If NHEJ produced MSI, this would be correct."
+      }
+    ]
+  }
+]
