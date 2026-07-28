@@ -1,0 +1,1282 @@
+[
+  {
+    "question": "A 17-year-old athlete with a family history of early sudden cardiac death has marked left ventricular thickening on autopsy. Genetic testing shows an autosomal dominant mutation that alters the ATPase activity of the sarcomeric motor head. Which protein is most likely mutated?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Provide examples of the genetics of cardiomyopathies",
+    "options": [
+      {
+        "text": "Actin thin filament",
+        "isCorrect": false,
+        "rationale": "Wrong: Actin mutations are linked to dilated cardiomyopathy per the lecture; for this to be correct the mutation would need to disrupt thin filament structure (e.g., ACTC1 R312H) rather than the motor ATPase."
+      },
+      {
+        "text": "Myosin heavy motor",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states the R403Q mutation in the beta myosin heavy chain alters the ATPase/mechanical properties of the myosin head and is linked to familial hypertrophic cardiomyopathy."
+      },
+      {
+        "text": "Myosin light chain",
+        "isCorrect": false,
+        "rationale": "Wrong: Light chains modulate myosin head function but the lecture links the classic HCM mutation to the heavy chain ATPase region; this would be correct only if the mutation were in an essential or regulatory light chain causing similar ATPase dysfunction."
+      },
+      {
+        "text": "Tropomyosin regulatory protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Tropomyosin is a thin-filament regulatory protein that blocks myosin binding; a tropomyosin mutation would primarily affect thin-filament regulation rather than motor ATPase activity."
+      },
+      {
+        "text": "Troponin complex protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Troponin mutations alter Ca2+-sensing and thin-filament activation; they are not the classic cause of ATPase-region motor defects described for familial HCM in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which sarcomeric component provides passive elasticity by spanning from the Z line to the M line and is implicated in familial dilated cardiomyopathy when truncated?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the structure and function of the sarcomere",
+    "options": [
+      {
+        "text": "Titin giant protein",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture identifies Titin (TTN) as a large molecular spring connecting Z to M lines; truncating mutations in TTN are linked to familial dilated cardiomyopathy."
+      },
+      {
+        "text": "Actin thin filament",
+        "isCorrect": false,
+        "rationale": "Wrong: Actin forms thin filaments and contributes to contraction; it does not span Z to M as a passive spring—only a mutation causing thin-filament disruption would make this correct."
+      },
+      {
+        "text": "Myosin heavy motor",
+        "isCorrect": false,
+        "rationale": "Wrong: Myosin heavy chains form thick filaments and generate force; they are not the passive elastic connector between Z and M lines described for Titin."
+      },
+      {
+        "text": "Tropomyosin regulatory protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Tropomyosin lies along actin to block binding sites; it does not provide passive sarcomere elasticity or structural linkage from Z to M."
+      },
+      {
+        "text": "Troponin complex protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Troponin regulates Ca2+-dependent activation of contraction and is not the structural spring connecting Z and M lines; only a protein spanning those regions (Titin) fits."
+      }
+    ]
+  },
+  {
+    "question": "During excitation–contraction coupling in cardiomyocytes, a small influx of calcium through voltage-gated channels triggers a larger release from an internal store. Which pair of channels mediates this process?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how Ca2+ drives Excitation–Contraction Coupling",
+    "options": [
+      {
+        "text": "L type channel and RyR",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes L-type (DHPR) channels on T-tubules allowing initial Ca2+ entry that triggers ryanodine receptor (RyR) release from the SR (CICR)."
+      },
+      {
+        "text": "SERCA pump and Titin",
+        "isCorrect": false,
+        "rationale": "Wrong: SERCA pumps Ca2+ back into the SR for relaxation and Titin is structural; this pair does not mediate the initial Ca2+-induced Ca2+ release step."
+      },
+      {
+        "text": "Na K ATPase and PLB",
+        "isCorrect": false,
+        "rationale": "Wrong: Na+/K+ ATPase maintains Na+ gradients and phospholamban (PLB) regulates SERCA; neither directly mediates the trigger Ca2+ influx and SR release described."
+      },
+      {
+        "text": "Troponin C and Tropomyosin",
+        "isCorrect": false,
+        "rationale": "Wrong: Troponin C and tropomyosin mediate thin-filament activation after Ca2+ rises; they are downstream effectors, not the membrane channels that trigger SR release."
+      },
+      {
+        "text": "Voltage gated K channel and Actin",
+        "isCorrect": false,
+        "rationale": "Wrong: Voltage-gated K+ channels repolarize the membrane and actin is a thin-filament protein; neither pair explains the Ca2+-triggered SR release mechanism."
+      }
+    ]
+  },
+  {
+    "question": "A patient develops malignant hyperthermia after exposure to an inhaled anesthetic. Which sarcoplasmic reticulum channel defect best explains the uncontrolled muscle rigidity and hyperthermia?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how Ca2+ drives Excitation–Contraction Coupling",
+    "options": [
+      {
+        "text": "Ryanodine receptor channel",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture links malignant hyperthermia to defects in the SR Ca2+ release channel (RYR), causing uncontrolled Ca2+ release, rigidity, and hyperthermia."
+      },
+      {
+        "text": "L type calcium channel",
+        "isCorrect": false,
+        "rationale": "Wrong: L-type channels mediate initial Ca2+ entry at T-tubules; malignant hyperthermia is classically due to RyR dysfunction—only if the primary defect were in DHPR-mediated coupling would this be correct."
+      },
+      {
+        "text": "SERCA calcium ATPase",
+        "isCorrect": false,
+        "rationale": "Wrong: SERCA pumps Ca2+ back into SR and impaired SERCA causes delayed relaxation, not the acute uncontrolled release seen in malignant hyperthermia."
+      },
+      {
+        "text": "Phospholamban regulatory protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Phospholamban modulates SERCA activity; its dysfunction causes chronic Ca2+ reuptake problems rather than the acute SR leak triggered by anesthetics."
+      },
+      {
+        "text": "Titin elastic protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Titin is a structural spring in sarcomeres and unrelated to SR Ca2+ release; it would only be relevant if passive elasticity caused rigidity, which is not the mechanism here."
+      }
+    ]
+  },
+  {
+    "question": "Which sarcomeric protein directly blocks myosin binding sites on actin until calcium binding causes its displacement?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the structure/function of the major proteins in cardiomyocytes",
+    "options": [
+      {
+        "text": "Tropomyosin regulatory protein",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains that tropomyosin lies along actin and blocks myosin binding sites until Ca2+-bound troponin causes its displacement."
+      },
+      {
+        "text": "Myosin heavy motor",
+        "isCorrect": false,
+        "rationale": "Wrong: Myosin heavy chains form the motor heads that bind actin; they do not block binding sites—only if myosin were sterically preventing binding would this be correct."
+      },
+      {
+        "text": "Troponin complex protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Troponin senses Ca2+ and triggers tropomyosin movement but does not itself block the binding sites; it would be correct only if asked which complex senses Ca2+."
+      },
+      {
+        "text": "Actin thin filament",
+        "isCorrect": false,
+        "rationale": "Wrong: Actin provides the binding sites for myosin; it does not block them—tropomyosin does. This would be correct only if the question asked which filament contains the sites."
+      },
+      {
+        "text": "Titin giant protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Titin provides passive elasticity and structural support, not regulation of myosin binding; it would be relevant only for sarcomere stability questions."
+      }
+    ]
+  },
+  {
+    "question": "A mutation in the cardiac actin gene slightly disrupts thin filament structure and is associated with which cardiomyopathy phenotype described in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Provide examples of the genetics of cardiomyopathies",
+    "options": [
+      {
+        "text": "Dilated cardiomyopathy phenotype",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes ACTC1 mutations (e.g., R312H, E361G) are linked to dilated cardiomyopathy due to thin-filament structural disruption."
+      },
+      {
+        "text": "Hypertrophic cardiomyopathy phenotype",
+        "isCorrect": false,
+        "rationale": "Wrong: Hypertrophic cardiomyopathy is classically linked to myosin heavy chain mutations (e.g., R403Q); actin mutations in the lecture are tied to dilation rather than hypertrophy."
+      },
+      {
+        "text": "Arrhythmogenic right ventricular dysplasia",
+        "isCorrect": false,
+        "rationale": "Wrong: ARVD involves desmosomal and structural proteins of the right ventricle; actin thin-filament mutations would only cause ARVD if they specifically disrupted desmosomal integrity."
+      },
+      {
+        "text": "Restrictive cardiomyopathy phenotype",
+        "isCorrect": false,
+        "rationale": "Wrong: Restrictive cardiomyopathy is not the phenotype linked to the actin mutations discussed; only if actin mutations caused stiff ventricles with preserved size would this be correct."
+      },
+      {
+        "text": "Peripartum cardiomyopathy phenotype",
+        "isCorrect": false,
+        "rationale": "Wrong: Peripartum cardiomyopathy is a clinical syndrome with multifactorial causes; the lecture specifically associates ACTC1 mutations with dilated cardiomyopathy."
+      }
+    ]
+  },
+  {
+    "question": "Which protein is the primary cardiac isoform responsible for pumping cytosolic calcium back into the sarcoplasmic reticulum to promote relaxation?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how Ca2+ drives Excitation–Contraction Coupling",
+    "options": [
+      {
+        "text": "SERCA2a calcium ATPase",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture identifies SERCA2a as the main cardiac SR Ca2+ ATPase that reuptakes Ca2+ into the SR, enabling relaxation."
+      },
+      {
+        "text": "Ryanodine receptor channel",
+        "isCorrect": false,
+        "rationale": "Wrong: RyR releases Ca2+ from the SR to trigger contraction; only if the question asked about SR Ca2+ release would RyR be correct."
+      },
+      {
+        "text": "L type calcium channel",
+        "isCorrect": false,
+        "rationale": "Wrong: L-type channels mediate Ca2+ entry across the T-tubule membrane to trigger SR release; they do not pump Ca2+ back into the SR."
+      },
+      {
+        "text": "Phospholamban regulatory protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Phospholamban regulates SERCA activity but is not the pump itself; it would be correct only if asked which protein modulates SERCA."
+      },
+      {
+        "text": "Na Ca exchanger",
+        "isCorrect": false,
+        "rationale": "Wrong: The Na+/Ca2+ exchanger extrudes Ca2+ across the sarcolemma, not into the SR; it would be correct only if the question asked about sarcolemmal Ca2+ removal."
+      }
+    ]
+  },
+  {
+    "question": "A mutation (Arg9Cys) in a regulatory protein prevents its phosphorylation by PKA, causing persistent inhibition of SERCA2a and leading to early-onset cardiomyopathy. Which regulatory protein is affected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify energy dynamics, associated enzymes and regulatory proteins, and describe biochemical changes associated with heart failure",
+    "options": [
+      {
+        "text": "Phospholamban regulatory protein",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes Arg9Cys PLB mutation that inhibits PKA phosphorylation, causing constant SERCA2a inhibition and dilated cardiomyopathy."
+      },
+      {
+        "text": "Troponin complex protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Troponin phosphorylation affects relaxation but the Arg9Cys mutation described in the lecture specifically involves phospholamban; troponin would be correct only if the mutation altered TnI phosphorylation."
+      },
+      {
+        "text": "Titin giant protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Titin mutations cause structural dilated cardiomyopathy via truncation, not via PKA phosphorylation of a SERCA regulator; only a PLB-like regulatory change would fit."
+      },
+      {
+        "text": "Myosin light chain",
+        "isCorrect": false,
+        "rationale": "Wrong: Myosin light chain mutations affect contractile mechanics; they do not explain persistent SERCA inhibition unless the light chain directly altered PLB-SERCA interactions."
+      },
+      {
+        "text": "L type calcium channel",
+        "isCorrect": false,
+        "rationale": "Wrong: L-type channel phosphorylation increases Ca2+ entry; it does not directly prevent SERCA phosphorylation—only a PLB mutation prevents PKA-mediated relief of SERCA inhibition."
+      }
+    ]
+  },
+  {
+    "question": "Which change in cardiomyocyte metabolism is most likely to occur during advanced congestive heart failure according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify energy dynamics, associated enzymes and regulatory proteins, and describe biochemical changes associated with heart failure",
+    "options": [
+      {
+        "text": "Reduced fatty acid oxidation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states failing hearts show reduced fatty acid oxidation and impaired ETC activity with a shift toward glycolysis in advanced CHF."
+      },
+      {
+        "text": "Increased fatty acid oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong: Healthy hearts rely on fatty acids, but CHF is associated with reduced FA oxidation; this option would be correct only in a nonfailing, healthy myocardium."
+      },
+      {
+        "text": "Unchanged electron transport chain activity",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture notes reduced ETC activity in advanced CHF; this would be correct only if mitochondrial function remained intact."
+      },
+      {
+        "text": "Decreased glycolytic flux",
+        "isCorrect": false,
+        "rationale": "Wrong: CHF often increases glycolysis due to hypoxia and impaired oxidative phosphorylation; decreased glycolysis would be seen only with preserved oxygenation and substrate supply."
+      },
+      {
+        "text": "Increased ketone utilization",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture mentions ketone use during starvation, not as a hallmark of CHF; increased ketone use would be correct only under prolonged fasting conditions."
+      }
+    ]
+  },
+  {
+    "question": "A scientist watching cultured cardiomyocytes notes that relaxation follows a decline in cytosolic calcium. Which immediate ionic movement is most directly necessary for relaxation?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how Ca2+ drives Excitation–Contraction Coupling",
+    "options": [
+      {
+        "text": "Efflux of calcium ions",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture emphasizes that relaxation requires removal of cytosolic Ca2+, via SERCA reuptake into SR and extrusion across the sarcolemma (efflux)."
+      },
+      {
+        "text": "Influx of calcium ions",
+        "isCorrect": false,
+        "rationale": "Wrong: Influx of Ca2+ triggers contraction, not relaxation; this would be correct only if the question asked about initiation of contraction."
+      },
+      {
+        "text": "Influx of sodium ions",
+        "isCorrect": false,
+        "rationale": "Wrong: Na+ influx contributes to depolarization but is not the direct driver of relaxation; only if Na+/Ca2+ exchanger reversed would Na+ movement directly affect Ca2+ handling."
+      },
+      {
+        "text": "Efflux of potassium ions",
+        "isCorrect": false,
+        "rationale": "Wrong: K+ efflux repolarizes the membrane but does not directly lower cytosolic Ca2+; it would be relevant only to action potential termination, not Ca2+ removal."
+      },
+      {
+        "text": "Influx of calcium from SR",
+        "isCorrect": false,
+        "rationale": "Wrong: Influx of Ca2+ from the SR (release) causes contraction; relaxation requires the opposite—removal of Ca2+ from the cytosol."
+      }
+    ]
+  },
+  {
+    "question": "A patient with myocardial infarction undergoes reperfusion and develops oxidative injury from reactive oxygen species. Which immediate cellular consequence described in the lecture contributes to irreversible cell death after prolonged anoxia?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain pathogenesis and biochemical changes associated with Myocardial Infarction",
+    "options": [
+      {
+        "text": "Depletion of ATP stores",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains that anoxia depletes ATP, halting ATP-dependent processes (e.g., ion pumps), disrupting gradients and leading to cell death."
+      },
+      {
+        "text": "Excessive SERCA activity",
+        "isCorrect": false,
+        "rationale": "Wrong: Excessive SERCA would lower cytosolic Ca2+, not cause death; only if SERCA were irreversibly inhibited would Ca2+ overload and death be promoted."
+      },
+      {
+        "text": "Increased electron transport chain flux",
+        "isCorrect": false,
+        "rationale": "Wrong: Anoxia inhibits oxidative phosphorylation and reduces ETC flux; increased ETC flux would occur only with restored oxygen and intact mitochondria."
+      },
+      {
+        "text": "Enhanced fatty acid oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong: Ischemia reduces FA oxidation due to limited oxygen; enhanced FA oxidation would be seen in well-oxygenated myocardium, not during infarction."
+      },
+      {
+        "text": "Upregulated protein synthesis",
+        "isCorrect": false,
+        "rationale": "Wrong: ATP depletion halts protein synthesis; upregulated synthesis would require abundant ATP and substrates, which are lacking in anoxic cells."
+      }
+    ]
+  },
+  {
+    "question": "Which serum marker rises within 4 hours after myocardial injury and remains elevated for up to 7–10 days, making it the most specific marker discussed in the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain pathogenesis and biochemical changes associated with Myocardial Infarction",
+    "options": [
+      {
+        "text": "Cardiac troponin I",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states cardiac troponin I rises after ~4 hours, peaks 12–24 hours, and remains elevated for 7–10 days and is highly specific for MI."
+      },
+      {
+        "text": "CK MB isoenzyme",
+        "isCorrect": false,
+        "rationale": "Wrong: CK-MB rises later (6–12 hours) and is less specific than troponin; it would be correct only for detecting reinfarction when troponin is already elevated."
+      },
+      {
+        "text": "Myoglobin muscle protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Myoglobin rises early but lacks specificity for cardiac muscle; it would be correct only if specificity were not required."
+      },
+      {
+        "text": "Lactate dehydrogenase isoform",
+        "isCorrect": false,
+        "rationale": "Wrong: LDH is less specific and peaks later; it would be correct only if troponin assays were unavailable and timing favored LDH measurement."
+      },
+      {
+        "text": "Creatine kinase total",
+        "isCorrect": false,
+        "rationale": "Wrong: Total CK is not cardiac-specific and can be elevated with skeletal muscle injury; only CK-MB or troponin would be more specific for MI."
+      }
+    ]
+  },
+  {
+    "question": "A pharmacologic agent that increases cAMP in cardiomyocytes will activate PKA. According to the lecture, which of the following is a direct effect of PKA phosphorylation that increases contractility and speeds relaxation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Autonomic regulation of cardiomyocytes",
+    "options": [
+      {
+        "text": "Phosphorylation of phospholamban",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains PKA phosphorylates PLB, preventing its inhibition of SERCA2a, thereby enhancing Ca2+ reuptake and improving relaxation and contractility."
+      },
+      {
+        "text": "Dephosphorylation of troponin I",
+        "isCorrect": false,
+        "rationale": "Wrong: PKA phosphorylates TnI (not dephosphorylates), which reduces actin–myosin interaction to aid relaxation; dephosphorylation would have the opposite effect."
+      },
+      {
+        "text": "Inhibition of L type channels",
+        "isCorrect": false,
+        "rationale": "Wrong: PKA phosphorylation enhances L-type channel activity to increase Ca2+ entry; inhibition would decrease contractility and contradict the lecture."
+      },
+      {
+        "text": "Activation of titin elasticity",
+        "isCorrect": false,
+        "rationale": "Wrong: Titin provides passive elasticity and is not a direct PKA target in the lecture; only phosphorylation of PLB, L-type channels, and RyR are described as PKA targets."
+      },
+      {
+        "text": "Blockade of ryanodine receptors",
+        "isCorrect": false,
+        "rationale": "Wrong: PKA phosphorylation increases RyR activity (not blocks it) to augment Ca2+ release; blockade would reduce contractility and contradict the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A researcher measures cardiac energy substrate use and finds a heart relying predominantly on fatty acid oxidation with high citrate and NADH levels. According to the lecture, what effect will this metabolic state have on pyruvate dehydrogenase (PDH) activity?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify energy dynamics, associated enzymes and regulatory proteins, and describe biochemical changes associated with heart failure",
+    "options": [
+      {
+        "text": "PDH will be inhibited by PDH kinase",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains high acetyl-CoA and NADH stimulate PDH kinase, which phosphorylates and inactivates PDH, blocking pyruvate oxidation."
+      },
+      {
+        "text": "PDH will be activated by increased citrate",
+        "isCorrect": false,
+        "rationale": "Wrong: Citrate inhibits glycolysis and signals abundant energy; it does not activate PDH—activation would occur with low acetyl-CoA and NADH."
+      },
+      {
+        "text": "PDH activity will be unchanged",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture indicates PDH is regulated by energy state and will be inhibited under high FA oxidation; unchanged activity would require balanced substrate levels."
+      },
+      {
+        "text": "PDH will be degraded by proteases",
+        "isCorrect": false,
+        "rationale": "Wrong: PDH regulation in the lecture is via phosphorylation by PDH kinase, not proteolytic degradation; degradation would be correct only in a different pathological context."
+      },
+      {
+        "text": "PDH will be activated by high NADH",
+        "isCorrect": false,
+        "rationale": "Wrong: High NADH signals reduced need for pyruvate oxidation and inhibits PDH via PDH kinase activation; activation would occur with high NAD+ and ADP."
+      }
+    ]
+  },
+  {
+    "question": "Which sarcomeric protein contains an actin-binding site and ATPase activity in its head domain and forms the thick filament tail and hinge regions described in the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the structure/function of the major proteins in cardiomyocytes",
+    "options": [
+      {
+        "text": "Myosin heavy motor",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes myosin heavy chains as having head domains with actin-binding and ATPase activity and tail/hinge regions forming thick filaments."
+      },
+      {
+        "text": "Actin thin filament",
+        "isCorrect": false,
+        "rationale": "Wrong: Actin forms thin filaments and provides binding sites for myosin; it does not have ATPase activity in a head domain—only myosin does."
+      },
+      {
+        "text": "Myosin light chain",
+        "isCorrect": false,
+        "rationale": "Wrong: Light chains associate with myosin heads and modulate function but do not contain the primary ATPase or tail domains; only heavy chains have those features."
+      },
+      {
+        "text": "Tropomyosin regulatory protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Tropomyosin lies along actin to block binding sites and lacks ATPase/head/tail structural features; it would be correct only if the question asked about thin-filament regulation."
+      },
+      {
+        "text": "Troponin complex protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Troponin senses Ca2+ and regulates tropomyosin position; it does not have an ATPase head or form thick filament structure."
+      }
+    ]
+  },
+  {
+    "question": "A patient with catecholaminergic polymorphic ventricular tachycardia (CPVT) is found to have a mutation in a calcium-release channel isoform specific to cardiomyocytes. Which gene product from the lecture is implicated?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how Ca2+ drives Excitation–Contraction Coupling",
+    "options": [
+      {
+        "text": "Ryanodine receptor channel",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes RyR2 (cardiac ryanodine receptor) mutations are linked to CPVT and other cardiac arrhythmias due to abnormal SR Ca2+ release."
+      },
+      {
+        "text": "L type calcium channel",
+        "isCorrect": false,
+        "rationale": "Wrong: L-type channels are voltage sensors on T-tubules; CPVT is classically linked to RyR2 mutations—L-type channel mutations would cause different excitation defects."
+      },
+      {
+        "text": "SERCA2a calcium ATPase",
+        "isCorrect": false,
+        "rationale": "Wrong: SERCA2a handles Ca2+ reuptake; CPVT arises from abnormal release rather than reuptake—only if SERCA dysfunction caused SR Ca2+ leak would it mimic CPVT."
+      },
+      {
+        "text": "Phospholamban regulatory protein",
+        "isCorrect": false,
+        "rationale": "Wrong: PLB mutations affect SERCA regulation and can cause cardiomyopathy, but CPVT is specifically associated with RyR2 channel defects per the lecture."
+      },
+      {
+        "text": "Troponin complex protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Troponin mutations affect contractile regulation and Ca2+ sensitivity, not the SR Ca2+ release channel implicated in CPVT."
+      }
+    ]
+  },
+  {
+    "question": "A patient with heart failure has prolonged relaxation due to delayed calcium reuptake into the SR. Which molecular defect described in the lecture best explains this physiologic finding?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify energy dynamics, associated enzymes and regulatory proteins, and describe biochemical changes associated with heart failure",
+    "options": [
+      {
+        "text": "Reduced SERCA2a function",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture links deficient SERCA2a activity to delayed Ca2+ reuptake into the SR and prolonged relaxation in heart failure."
+      },
+      {
+        "text": "Enhanced RyR2 release",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased RyR-mediated release would raise cytosolic Ca2+ and could worsen contractility but does not directly explain delayed reuptake; only SERCA impairment fits."
+      },
+      {
+        "text": "Increased PLB phosphorylation",
+        "isCorrect": false,
+        "rationale": "Wrong: Phosphorylated PLB relieves SERCA inhibition and speeds reuptake; increased PLB phosphorylation would shorten relaxation, not prolong it."
+      },
+      {
+        "text": "Upregulated L type channels",
+        "isCorrect": false,
+        "rationale": "Wrong: More L-type channel activity increases Ca2+ entry and contractility but does not directly cause delayed SR reuptake; SERCA dysfunction is required for delayed relaxation."
+      },
+      {
+        "text": "Titin truncation mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Titin truncation causes structural dilated cardiomyopathy and passive stiffness changes, not primary defects in Ca2+ reuptake; only SERCA-related defects explain the delayed relaxation."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the immediate molecular event that exposes myosin-binding sites on actin during cardiomyocyte contraction?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the sliding filament model",
+    "options": [
+      {
+        "text": "Calcium binding to troponin C",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states Ca2+ binds Tn-C, causing conformational changes that displace tropomyosin and expose myosin-binding sites on actin."
+      },
+      {
+        "text": "Phosphorylation of titin",
+        "isCorrect": false,
+        "rationale": "Wrong: Titin phosphorylation affects passive properties but does not directly expose myosin-binding sites; only Ca2+-troponin interaction does so."
+      },
+      {
+        "text": "ATP hydrolysis by SERCA",
+        "isCorrect": false,
+        "rationale": "Wrong: SERCA hydrolyzes ATP to pump Ca2+ into SR for relaxation; ATP hydrolysis by myosin (not SERCA) is involved in cross-bridge cycling and force generation."
+      },
+      {
+        "text": "Na K ATPase activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Na+/K+ ATPase maintains ionic gradients but does not directly cause tropomyosin displacement; only Ca2+-troponin binding triggers that event."
+      },
+      {
+        "text": "Phospholamban binding to SERCA",
+        "isCorrect": false,
+        "rationale": "Wrong: PLB binding inhibits SERCA and affects relaxation; it does not expose myosin-binding sites—Ca2+-troponin binding does."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic ischemia has increased lactic acid in affected myocardium. Which biochemical explanation from the lecture best accounts for this finding?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain pathogenesis and biochemical changes associated with Myocardial Infarction",
+    "options": [
+      {
+        "text": "Anaerobic glycolysis with pyruvate to lactate",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains that hypoxia shifts metabolism to anaerobic glycolysis, converting pyruvate to lactate and causing lactic acidosis in ischemic tissue."
+      },
+      {
+        "text": "Increased fatty acid oxidation producing lactate",
+        "isCorrect": false,
+        "rationale": "Wrong: Fatty acid oxidation yields acetyl-CoA and NADH, not lactate; lactate increases when pyruvate is reduced under anaerobic conditions."
+      },
+      {
+        "text": "Enhanced electron transport chain activity",
+        "isCorrect": false,
+        "rationale": "Wrong: ETC activity falls during ischemia due to lack of oxygen; increased ETC flux would not produce lactate and would require restored oxygen."
+      },
+      {
+        "text": "Upregulated PDH activity converting lactate",
+        "isCorrect": false,
+        "rationale": "Wrong: PDH converts pyruvate to acetyl-CoA; upregulated PDH would reduce lactate formation, not increase it—only PDH inhibition favors lactate accumulation."
+      },
+      {
+        "text": "Increased ketone body utilization producing lactate",
+        "isCorrect": false,
+        "rationale": "Wrong: Ketone oxidation does not generate lactate; lactate accumulation is specific to anaerobic glycolysis from pyruvate."
+      }
+    ]
+  },
+  {
+    "question": "A 43-year-old postoperative patient develops muscle rigidity, hyperthermia, and tachycardia after receiving succinylcholine. According to the lecture, which immediate pharmacologic target is the best treatment for this condition?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how Ca2+ drives Excitation–Contraction Coupling",
+    "options": [
+      {
+        "text": "Ryanodine receptor blocker",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture links malignant hyperthermia to uncontrolled RyR-mediated SR Ca2+ release; blocking RyR (e.g., dantrolene) halts Ca2+ leak and treats the condition."
+      },
+      {
+        "text": "L type calcium channel blocker",
+        "isCorrect": false,
+        "rationale": "Wrong: L-type blockers reduce Ca2+ entry but malignant hyperthermia is driven by SR RyR leak; only direct RyR inhibition effectively stops the uncontrolled SR release."
+      },
+      {
+        "text": "SERCA activator drug",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhancing SERCA would increase Ca2+ reuptake but may be insufficient acutely to counter massive RyR-mediated release; direct RyR blockade is the immediate therapy."
+      },
+      {
+        "text": "Phospholamban inhibitor",
+        "isCorrect": false,
+        "rationale": "Wrong: Inhibiting PLB would relieve SERCA inhibition chronically; it is not the acute antidote for RyR-triggered malignant hyperthermia."
+      },
+      {
+        "text": "Titin stabilizing agent",
+        "isCorrect": false,
+        "rationale": "Wrong: Titin modulation affects passive elasticity and is unrelated to acute SR Ca2+ release; it would not treat malignant hyperthermia."
+      }
+    ]
+  },
+  {
+    "question": "Which sarcomeric protein mutation is most commonly associated with familial hypertrophic cardiomyopathy and a high risk of sudden death before age 40 as described in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Provide examples of the genetics of cardiomyopathies",
+    "options": [
+      {
+        "text": "Myosin heavy motor",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture highlights the MHC-β R403Q mutation in MYH7 as a common cause of familial hypertrophic cardiomyopathy with high early mortality."
+      },
+      {
+        "text": "Actin thin filament",
+        "isCorrect": false,
+        "rationale": "Wrong: Actin mutations are linked to dilated cardiomyopathy in the lecture; they are not the classic cause of familial HCM with R403Q features."
+      },
+      {
+        "text": "Titin giant protein",
+        "isCorrect": false,
+        "rationale": "Wrong: TTN truncations are associated with dilated cardiomyopathy (~20% of cases), not the hypertrophic phenotype described for MYH7 mutations."
+      },
+      {
+        "text": "Troponin complex protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Troponin mutations can cause cardiomyopathies but the lecture emphasizes MYH7 heavy-chain mutations as the most common HCM cause with early sudden death risk."
+      },
+      {
+        "text": "Myosin light chain",
+        "isCorrect": false,
+        "rationale": "Wrong: Light chain mutations can affect contractility but are less commonly the primary cause of familial HCM described in the lecture; heavy-chain mutations are classic."
+      }
+    ]
+  },
+  {
+    "question": "A cardiomyocyte exposed to β-adrenergic stimulation shows increased cAMP and PKA activation. Which of the following combined effects described in the lecture increases both contractile strength and speeds relaxation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Autonomic regulation of cardiomyocytes",
+    "options": [
+      {
+        "text": "Phosphorylation of L type channels and PLB",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states PKA phosphorylates L-type channels (increasing Ca2+ entry) and PLB (relieving SERCA inhibition), together increasing contractility and accelerating relaxation."
+      },
+      {
+        "text": "Phosphorylation of titin and troponin C",
+        "isCorrect": false,
+        "rationale": "Wrong: PKA phosphorylates TnI (not TnC) and titin is not the primary PKA target described; only L-type channel and PLB phosphorylation produce the combined effect noted."
+      },
+      {
+        "text": "Inhibition of RyR2 and activation of SERCA2a",
+        "isCorrect": false,
+        "rationale": "Wrong: PKA tends to increase RyR2 activity and SERCA2a activity via PLB phosphorylation; inhibition of RyR2 would reduce contractility and contradict the lecture's described sympathetic effects."
+      },
+      {
+        "text": "Dephosphorylation of L type channels and PLB",
+        "isCorrect": false,
+        "rationale": "Wrong: Dephosphorylation would reduce Ca2+ entry and slow reuptake; the lecture describes phosphorylation by PKA as the mechanism increasing contractility and relaxation speed."
+      },
+      {
+        "text": "Activation of Na K ATPase and troponin I",
+        "isCorrect": false,
+        "rationale": "Wrong: While PKA affects TnI phosphorylation, Na+/K+ ATPase activation is not the central mechanism described; the combined L-type and PLB phosphorylation best explains the observed effects."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme is the regulated, rate-limiting step for long-chain fatty acid entry into mitochondria for β-oxidation as noted in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify energy dynamics, associated enzymes and regulatory proteins, and describe biochemical changes associated with heart failure",
+    "options": [
+      {
+        "text": "Carnitine palmitoyl transferase I",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture identifies CPT-I as the regulated enzyme converting long-chain acyl-CoA to acyl-carnitine for mitochondrial import and β-oxidation."
+      },
+      {
+        "text": "Pyruvate dehydrogenase complex",
+        "isCorrect": false,
+        "rationale": "Wrong: PDH links glycolysis to the TCA cycle by converting pyruvate to acetyl-CoA; it is not the rate-limiting enzyme for mitochondrial fatty acid entry."
+      },
+      {
+        "text": "Phosphofructokinase 1 enzyme",
+        "isCorrect": false,
+        "rationale": "Wrong: PFK-1 is a key glycolytic regulator, not involved in mitochondrial fatty acid transport; only CPT-I controls long-chain FA entry."
+      },
+      {
+        "text": "Acetyl CoA carboxylase enzyme",
+        "isCorrect": false,
+        "rationale": "Wrong: ACC produces malonyl-CoA which inhibits CPT-I but is not the transport enzyme itself; CPT-I remains the direct rate-limiting transporter."
+      },
+      {
+        "text": "Electron transport chain complex I",
+        "isCorrect": false,
+        "rationale": "Wrong: ETC complex I oxidizes NADH but does not mediate fatty acid transport into mitochondria; only CPT-I performs that transport step."
+      }
+    ]
+  },
+  {
+    "question": "A patient with partial coronary occlusion experiences mild ischemia. According to the lecture, which metabolic shift is most likely in the myocardium distal to the obstruction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain pathogenesis and biochemical changes associated with Myocardial Infarction",
+    "options": [
+      {
+        "text": "Increased lactic acid formation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains that reduced oxygen delivery leads to anaerobic glycolysis and increased lactate production in ischemic myocardium."
+      },
+      {
+        "text": "Increased fatty acid oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong: Fatty acid oxidation requires oxygen and decreases during ischemia; increased FA oxidation would occur only with adequate oxygen supply."
+      },
+      {
+        "text": "Enhanced electron transport chain activity",
+        "isCorrect": false,
+        "rationale": "Wrong: ETC activity falls with reduced oxygen; enhanced ETC flux would require restored perfusion and oxygenation."
+      },
+      {
+        "text": "Upregulated PDH activity",
+        "isCorrect": false,
+        "rationale": "Wrong: PDH is inhibited when high NADH/acetyl-CoA accumulate and during ischemia; upregulation would reduce lactate formation, not increase it."
+      },
+      {
+        "text": "Increased ketone body synthesis",
+        "isCorrect": false,
+        "rationale": "Wrong: Ketone synthesis is a hepatic response to fasting, not an immediate myocardial response to ischemia; lactate accumulation is the expected change."
+      }
+    ]
+  },
+  {
+    "question": "Which structural sarcomere line marks the boundary between adjacent sarcomeres and anchors thin filaments, as described in the lecture diagrams?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the structure and function of the sarcomere",
+    "options": [
+      {
+        "text": "Z line sarcomere boundary",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture diagrams show the Z line as the sarcomere boundary that anchors thin (actin) filaments."
+      },
+      {
+        "text": "M line central axis",
+        "isCorrect": false,
+        "rationale": "Wrong: The M line is the central region of the sarcomere anchoring thick filaments; it is not the boundary between sarcomeres."
+      },
+      {
+        "text": "H zone light band",
+        "isCorrect": false,
+        "rationale": "Wrong: The H zone is the central region of thick filaments visible in contraction states; it does not anchor thin filaments or mark sarcomere boundaries."
+      },
+      {
+        "text": "A band dark region",
+        "isCorrect": false,
+        "rationale": "Wrong: The A band corresponds to the length of thick filaments and is not the sarcomere boundary; only the Z line marks boundaries."
+      },
+      {
+        "text": "I band thin region",
+        "isCorrect": false,
+        "rationale": "Wrong: The I band contains thin filaments and spans the Z line but the Z line itself is the structural boundary anchoring actin."
+      }
+    ]
+  },
+  {
+    "question": "A lab mutation reduces the affinity of troponin C for calcium. Based on the lecture, what immediate effect on thin-filament regulation would you expect?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the sliding filament model",
+    "options": [
+      {
+        "text": "Reduced exposure of myosin binding sites",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains Ca2+ binding to Tn-C causes tropomyosin displacement; lower Ca2+ affinity reduces this displacement and thus exposure of myosin sites."
+      },
+      {
+        "text": "Increased SERCA mediated reuptake",
+        "isCorrect": false,
+        "rationale": "Wrong: SERCA handles Ca2+ reuptake into SR and is not directly affected by Tn-C affinity; only changes in PLB/SERCA regulation would alter reuptake."
+      },
+      {
+        "text": "Enhanced RyR2 channel opening",
+        "isCorrect": false,
+        "rationale": "Wrong: RyR2 release is upstream of troponin binding; reduced Tn-C affinity would not increase RyR2 opening unless feedback altered SR Ca2+ handling."
+      },
+      {
+        "text": "Greater tropomyosin displacement",
+        "isCorrect": false,
+        "rationale": "Wrong: Lower Tn-C Ca2+ affinity would decrease, not increase, tropomyosin displacement; increased displacement would require higher Ca2+ binding."
+      },
+      {
+        "text": "Increased actin polymerization",
+        "isCorrect": false,
+        "rationale": "Wrong: Actin polymerization is not the immediate regulatory step for cross-bridge exposure; troponin-tropomyosin movement controls exposure."
+      }
+    ]
+  },
+  {
+    "question": "Which cardiac glucose transporter accounts for approximately 90% of glucose uptake into myocytes and is regulated by insulin and workload per the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify energy dynamics, associated enzymes and regulatory proteins, and describe biochemical changes associated with heart failure",
+    "options": [
+      {
+        "text": "GLUT4 insulin responsive transporter",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states GLUT4 transports ~90% of glucose into myocytes and is regulated by insulin and work rate."
+      },
+      {
+        "text": "GLUT1 constitutive transporter",
+        "isCorrect": false,
+        "rationale": "Wrong: GLUT1 accounts for ~10% of cardiac glucose uptake per the lecture; GLUT4 is the major insulin-responsive transporter."
+      },
+      {
+        "text": "SGLT1 sodium glucose cotransporter",
+        "isCorrect": false,
+        "rationale": "Wrong: SGLT1 is a sodium-dependent transporter not described as the primary cardiac glucose transporter in the lecture; only GLUT4 fits the described role."
+      },
+      {
+        "text": "GLUT2 hepatic transporter",
+        "isCorrect": false,
+        "rationale": "Wrong: GLUT2 is primarily hepatic/pancreatic and not the main cardiac transporter; only GLUT4 handles most myocardial glucose uptake."
+      },
+      {
+        "text": "GLUT3 neuronal transporter",
+        "isCorrect": false,
+        "rationale": "Wrong: GLUT3 is neuronal and not the primary cardiac transporter; the lecture specifies GLUT4 as the dominant cardiac glucose transporter."
+      }
+    ]
+  },
+  {
+    "question": "A patient with familial dilated cardiomyopathy is found to have a truncating mutation in a giant sarcomeric protein that also participates in signaling and sarcomere assembly. Which protein is implicated per the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the structure and function of the sarcomere",
+    "options": [
+      {
+        "text": "Titin giant protein",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes Titin (TTN) as a large molecular spring connecting Z to M lines, involved in signaling and sarcomere assembly; truncations are linked to familial DCM."
+      },
+      {
+        "text": "Myosin heavy motor",
+        "isCorrect": false,
+        "rationale": "Wrong: Myosin heavy chains are motor proteins; truncating mutations in titin—not myosin heavy chain—are classically linked to familial dilated cardiomyopathy per the lecture."
+      },
+      {
+        "text": "Actin thin filament",
+        "isCorrect": false,
+        "rationale": "Wrong: Actin mutations can cause cardiomyopathy but the lecture specifically links TTN truncations to familial DCM and signaling roles."
+      },
+      {
+        "text": "Tropomyosin regulatory protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Tropomyosin regulates thin-filament access but is not the giant structural signaling protein described; only Titin fits that description."
+      },
+      {
+        "text": "Troponin complex protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Troponin modulates Ca2+ sensitivity and contraction but is not the large structural protein spanning Z to M lines implicated in DCM."
+      }
+    ]
+  },
+  {
+    "question": "A patient with heart failure shows reduced capacity to generate ATP and develops lactic acidosis. Which lecture-described sequence best explains this progression during severe ischemia?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain pathogenesis and biochemical changes associated with Myocardial Infarction",
+    "options": [
+      {
+        "text": "Oxidative phosphorylation failure then anaerobic glycolysis",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains that anoxia inhibits oxidative phosphorylation, depletes ATP, and shifts metabolism to anaerobic glycolysis producing lactate and acidosis."
+      },
+      {
+        "text": "Increased ETC flux then ATP surplus",
+        "isCorrect": false,
+        "rationale": "Wrong: ETC flux falls with lack of oxygen; increased ETC flux and ATP surplus would occur only with restored oxygenation, not during ischemia."
+      },
+      {
+        "text": "Enhanced protein synthesis then ATP depletion",
+        "isCorrect": false,
+        "rationale": "Wrong: ATP depletion halts protein synthesis; enhanced synthesis preceding depletion is not the sequence described in ischemic injury."
+      },
+      {
+        "text": "Upregulated PDH activity then lactate accumulation",
+        "isCorrect": false,
+        "rationale": "Wrong: PDH activity is inhibited during high NADH/acetyl-CoA and ischemia; upregulated PDH would reduce lactate, not increase it."
+      },
+      {
+        "text": "Increased fatty acid oxidation then reduced citrate",
+        "isCorrect": false,
+        "rationale": "Wrong: Ischemia reduces FA oxidation and increases citrate accumulation when FA oxidation predominates; the sequence described contradicts the lecture's ischemic pathway."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following is the most specific serum marker for myocardial injury and is preferred for diagnosing reinfarction per the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain pathogenesis and biochemical changes associated with Myocardial Infarction",
+    "options": [
+      {
+        "text": "Cardiac troponin I",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes troponin I is more specific than CK-MB and remains elevated for days, making it useful for MI diagnosis; CK-MB is useful for reinfarction detection but troponin is most specific."
+      },
+      {
+        "text": "CK MB isoenzyme",
+        "isCorrect": false,
+        "rationale": "Wrong: CK-MB is useful for detecting reinfarction due to its shorter elevation window, but it is less specific than troponin I; CK-MB would be correct only when troponin kinetics complicate interpretation."
+      },
+      {
+        "text": "Myoglobin muscle protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Myoglobin rises early but lacks specificity for cardiac muscle; it would be correct only for very early detection when specificity is not required."
+      },
+      {
+        "text": "Lactate dehydrogenase isoform",
+        "isCorrect": false,
+        "rationale": "Wrong: LDH is less specific and peaks later; it is not the preferred specific marker per the lecture."
+      },
+      {
+        "text": "Total creatine kinase",
+        "isCorrect": false,
+        "rationale": "Wrong: Total CK is nonspecific and can be elevated with skeletal muscle injury; only CK-MB or troponin are cardiac-specific markers discussed."
+      }
+    ]
+  },
+  {
+    "question": "A lab experiment shows phosphorylation of phospholamban in cardiomyocytes. According to the lecture, what immediate effect on SERCA2a activity and relaxation would you expect?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how Ca2+ drives Excitation–Contraction Coupling",
+    "options": [
+      {
+        "text": "Increased SERCA activity and faster relaxation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains that phosphorylated PLB cannot bind SERCA2a, relieving inhibition and stimulating Ca2+ reuptake, shortening relaxation time."
+      },
+      {
+        "text": "Decreased SERCA activity and slower relaxation",
+        "isCorrect": false,
+        "rationale": "Wrong: Unphosphorylated PLB inhibits SERCA causing slower relaxation; phosphorylation has the opposite effect, so decreased activity would be incorrect."
+      },
+      {
+        "text": "No change in SERCA activity",
+        "isCorrect": false,
+        "rationale": "Wrong: PLB phosphorylation directly modulates SERCA activity per the lecture; no change would be unexpected unless PLB were absent."
+      },
+      {
+        "text": "Increased RyR mediated release",
+        "isCorrect": false,
+        "rationale": "Wrong: PLB phosphorylation affects SERCA, not directly RyR release; increased RyR release would require RyR phosphorylation or other modulators."
+      },
+      {
+        "text": "Enhanced troponin C affinity for calcium",
+        "isCorrect": false,
+        "rationale": "Wrong: PLB phosphorylation affects Ca2+ reuptake, not troponin C affinity; TnI phosphorylation by PKA affects thin-filament sensitivity, not PLB."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why failing hearts may show a shift from fatty acid oxidation toward glycolysis as described in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify energy dynamics, associated enzymes and regulatory proteins, and describe biochemical changes associated with heart failure",
+    "options": [
+      {
+        "text": "Impaired mitochondrial oxidative phosphorylation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture indicates advanced CHF is associated with reduced ETC activity and impaired oxidative phosphorylation, forcing reliance on glycolysis for ATP."
+      },
+      {
+        "text": "Upregulated CPT I activity increasing FA import",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased CPT-I would favor FA oxidation; CHF shows reduced FA oxidation and CPT-I inhibition by malonyl-CoA would be more consistent with the lecture."
+      },
+      {
+        "text": "Enhanced PDH activation promoting glucose oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong: PDH is often inhibited in high acetyl-CoA/NADH states; enhanced PDH would increase glucose oxidation, not explain the shift due to mitochondrial impairment."
+      },
+      {
+        "text": "Increased electron transport chain capacity",
+        "isCorrect": false,
+        "rationale": "Wrong: CHF is associated with reduced ETC capacity; increased ETC would support oxidative metabolism and contradict the lecture's description."
+      },
+      {
+        "text": "Greater ketone body production by myocardium",
+        "isCorrect": false,
+        "rationale": "Wrong: Ketone production is hepatic and not the myocardial adaptation described; the lecture attributes the shift to impaired mitochondrial oxidative capacity."
+      }
+    ]
+  },
+  {
+    "question": "Which sarcomeric regulatory complex contains the calcium-binding subunit that initiates conformational changes to allow contraction?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the structure/function of the major proteins in cardiomyocytes",
+    "options": [
+      {
+        "text": "Troponin complex protein",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes the troponin complex (Tn-C, Tn-T, Tn-I) with Tn-C binding Ca2+ to trigger tropomyosin movement and contraction."
+      },
+      {
+        "text": "Tropomyosin regulatory protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Tropomyosin blocks binding sites but does not itself bind Ca2+; troponin C is the Ca2+-binding subunit that initiates conformational change."
+      },
+      {
+        "text": "Myosin light chain",
+        "isCorrect": false,
+        "rationale": "Wrong: Myosin light chains modulate myosin head activity but are not the Ca2+-binding regulatory complex that displaces tropomyosin."
+      },
+      {
+        "text": "Phospholamban regulatory protein",
+        "isCorrect": false,
+        "rationale": "Wrong: PLB regulates SERCA and Ca2+ reuptake, not the thin-filament Ca2+-sensing complex that initiates contraction."
+      },
+      {
+        "text": "Titin giant protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Titin provides passive elasticity and structural roles, not Ca2+-dependent thin-filament regulation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with recurrent chest pain has transient ischemia without infarction. According to the lecture, which metabolic change in the ischemic region is most likely reversible and occurs early?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain pathogenesis and biochemical changes associated with Myocardial Infarction",
+    "options": [
+      {
+        "text": "Increased glycolysis with lactate accumulation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes that mild ischemia leads to increased glycolysis and lactate production, a reversible early change before irreversible infarction."
+      },
+      {
+        "text": "Permanent ATP depletion and cell death",
+        "isCorrect": false,
+        "rationale": "Wrong: Permanent ATP depletion and cell death occur after prolonged anoxia; early transient ischemia causes reversible metabolic shifts like increased glycolysis."
+      },
+      {
+        "text": "Extensive ROS mediated necrosis",
+        "isCorrect": false,
+        "rationale": "Wrong: ROS-mediated injury occurs on reperfusion and with prolonged ischemia; early transient ischemia primarily causes anaerobic metabolism and lactate accumulation."
+      },
+      {
+        "text": "Complete inhibition of glycolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Glycolysis is typically upregulated during ischemia to compensate for reduced oxidative phosphorylation; complete inhibition would require substrate depletion."
+      },
+      {
+        "text": "Massive fatty acid oxidation increase",
+        "isCorrect": false,
+        "rationale": "Wrong: Fatty acid oxidation requires oxygen and decreases during ischemia; an increase would contradict the lecture's description of ischemic metabolism."
+      }
+    ]
+  },
+  {
+    "question": "Which sarcolemmal transporter exchanges intracellular calcium for extracellular sodium and contributes to calcium removal from the cytosol as described in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how Ca2+ drives Excitation–Contraction Coupling",
+    "options": [
+      {
+        "text": "Na Ca exchanger",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture mentions Ca2+ is exchanged for Na+ across the sarcolemma via the Na+/Ca2+ exchanger as one mechanism of cytosolic Ca2+ removal."
+      },
+      {
+        "text": "Na K ATPase pump",
+        "isCorrect": false,
+        "rationale": "Wrong: Na+/K+ ATPase maintains Na+ gradients but does not directly exchange Ca2+ for Na+; NCX uses the Na+ gradient maintained by Na+/K+ ATPase to extrude Ca2+."
+      },
+      {
+        "text": "SERCA2a calcium ATPase",
+        "isCorrect": false,
+        "rationale": "Wrong: SERCA pumps Ca2+ into the SR, not across the sarcolemma; only the Na+/Ca2+ exchanger moves Ca2+ out in exchange for Na+."
+      },
+      {
+        "text": "L type calcium channel",
+        "isCorrect": false,
+        "rationale": "Wrong: L-type channels mediate Ca2+ influx, not extrusion; they contribute to entry that triggers SR release rather than removal."
+      },
+      {
+        "text": "Plasma membrane Ca ATPase",
+        "isCorrect": false,
+        "rationale": "Wrong: PMCA can extrude Ca2+ but the lecture specifically highlights Na+/Ca2+ exchange as a major sarcolemmal mechanism; PMCA would be correct only if emphasized in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A patient with familial cardiomyopathy has a mutation that prevents PKA phosphorylation of a regulatory protein, causing chronic SERCA inhibition and dilated cardiomyopathy in adolescence. Which mutation described in the lecture fits this scenario?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Provide examples of the genetics of cardiomyopathies",
+    "options": [
+      {
+        "text": "Phospholamban Arg9Cys mutation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes the Arg9Cys PLB mutation that inhibits PKA-mediated phosphorylation, leading to persistent SERCA inhibition and early dilated cardiomyopathy."
+      },
+      {
+        "text": "MYH7 R403Q heavy chain mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: MYH7 R403Q causes hypertrophic cardiomyopathy via myosin ATPase alteration; it would be correct only if the phenotype were HCM rather than PLB-related DCM."
+      },
+      {
+        "text": "TTN truncating mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: TTN truncations cause familial dilated cardiomyopathy but via structural titin defects rather than impaired PKA phosphorylation of PLB; only a PLB Arg9Cys fits the phosphorylation mechanism."
+      },
+      {
+        "text": "ACTC1 R312H actin mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: ACTC1 mutations affect thin-filament structure and are linked to dilated cardiomyopathy, but they do not specifically prevent PLB phosphorylation by PKA."
+      },
+      {
+        "text": "RYR2 gain of function mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: RYR2 mutations cause arrhythmias like CPVT via SR Ca2+ leak; they do not explain chronic SERCA inhibition due to impaired PLB phosphorylation."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best characterizes the role of the Dihydropyridine Receptor (DHPR) in cardiac excitation–contraction coupling as described in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how Ca2+ drives Excitation–Contraction Coupling",
+    "options": [
+      {
+        "text": "Voltage sensor L type calcium channel",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture identifies DHPR as the L-type voltage-gated Ca2+ channel on T-tubules that senses depolarization and allows initial Ca2+ entry."
+      },
+      {
+        "text": "Sarcoplasmic reticulum Ca2+ pump",
+        "isCorrect": false,
+        "rationale": "Wrong: SERCA is the SR Ca2+ ATPase; DHPR is a sarcolemmal L-type channel, not the SR pump—only SERCA would fit the pump description."
+      },
+      {
+        "text": "Ryanodine receptor isoform",
+        "isCorrect": false,
+        "rationale": "Wrong: RyR is the SR Ca2+ release channel; DHPR is distinct as the T-tubule voltage sensor and L-type channel that triggers RyR."
+      },
+      {
+        "text": "Na Ca exchanger protein",
+        "isCorrect": false,
+        "rationale": "Wrong: NCX exchanges Na+ and Ca2+ across the sarcolemma; DHPR mediates Ca2+ entry in response to depolarization, not ion exchange."
+      },
+      {
+        "text": "Phospholamban binding partner",
+        "isCorrect": false,
+        "rationale": "Wrong: PLB binds SERCA to regulate reuptake; DHPR does not bind PLB and is a membrane channel, not a SERCA regulator."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic heart failure has decreased capacity to transduce energy into ATP and develops lactic acidosis. Which lecture-described organelle dysfunction most directly underlies this energy failure?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify energy dynamics, associated enzymes and regulatory proteins, and describe biochemical changes associated with heart failure",
+    "options": [
+      {
+        "text": "Mitochondrial electron transport chain",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture links CHF to reduced ETC activity and impaired oxidative phosphorylation in mitochondria, causing ATP deficiency and lactic acidosis."
+      },
+      {
+        "text": "Sarcoplasmic reticulum calcium store",
+        "isCorrect": false,
+        "rationale": "Wrong: SR dysfunction affects Ca2+ handling and contractility but the primary energy transduction failure is mitochondrial; SR issues alone do not explain ATP depletion."
+      },
+      {
+        "text": "Golgi apparatus protein trafficking",
+        "isCorrect": false,
+        "rationale": "Wrong: Golgi dysfunction affects protein processing but is not the main cause of ATP generation failure in CHF; mitochondrial ETC impairment is central."
+      },
+      {
+        "text": "Peroxisomal fatty acid oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong: Peroxisomes handle very-long-chain FA oxidation but mitochondrial β-oxidation and ETC are the primary ATP sources in heart; peroxisomal dysfunction would not fully explain the energy failure."
+      },
+      {
+        "text": "Nuclear transcriptional machinery",
+        "isCorrect": false,
+        "rationale": "Wrong: Transcriptional changes can contribute to chronic remodeling but immediate ATP generation failure in CHF is due to mitochondrial ETC impairment per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why CK-MB is useful for detecting reinfarction, according to the lecture's marker kinetics?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain pathogenesis and biochemical changes associated with Myocardial Infarction",
+    "options": [
+      {
+        "text": "CK MB rises and falls faster than troponin",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes CK-MB rises 6–12 hours and peaks earlier than troponin, making it useful to detect reinfarction when troponin remains elevated."
+      },
+      {
+        "text": "CK MB is more specific than troponin",
+        "isCorrect": false,
+        "rationale": "Wrong: Troponin is more specific than CK-MB; CK-MB is useful for reinfarction due to kinetics, not superior specificity."
+      },
+      {
+        "text": "CK MB remains elevated for weeks",
+        "isCorrect": false,
+        "rationale": "Wrong: CK-MB peaks and returns to baseline faster than troponin; prolonged elevation for weeks is characteristic of troponin, not CK-MB."
+      },
+      {
+        "text": "CK MB is unaffected by skeletal muscle injury",
+        "isCorrect": false,
+        "rationale": "Wrong: CK-MB can be released from skeletal muscle; it is not entirely cardiac-specific, which is why troponin is preferred for specificity."
+      },
+      {
+        "text": "CK MB is only present in myocardium",
+        "isCorrect": false,
+        "rationale": "Wrong: CK-MB is predominantly myocardial but can be present in skeletal muscle; the lecture emphasizes its kinetic utility, not absolute exclusivity to myocardium."
+      }
+    ]
+  },
+  {
+    "question": "A cardiomyocyte experiment shows increased ADP, AMP, and inorganic phosphate levels. According to the lecture, which glycolytic enzyme would be activated under these conditions to increase glycolytic flux?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify energy dynamics, associated enzymes and regulatory proteins, and describe biochemical changes associated with heart failure",
+    "options": [
+      {
+        "text": "Phosphofructokinase 1 enzyme",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states PFK-1 is activated by ADP and AMP, increasing glycolytic flux under energy-depleted conditions."
+      },
+      {
+        "text": "Pyruvate kinase enzyme",
+        "isCorrect": false,
+        "rationale": "Wrong: Pyruvate kinase catalyzes a later glycolytic step and is regulated differently; PFK-1 is the primary rate-limiting enzyme responsive to ADP/AMP."
+      },
+      {
+        "text": "Hexokinase enzyme",
+        "isCorrect": false,
+        "rationale": "Wrong: Hexokinase phosphorylates glucose but is not the main allosteric sensor activated by ADP/AMP; PFK-1 is the key regulatory enzyme described."
+      },
+      {
+        "text": "Glucose 6 phosphate dehydrogenase",
+        "isCorrect": false,
+        "rationale": "Wrong: G6PD is part of the pentose phosphate pathway and not the glycolytic rate-limiting enzyme activated by ADP/AMP."
+      },
+      {
+        "text": "Lactate dehydrogenase enzyme",
+        "isCorrect": false,
+        "rationale": "Wrong: LDH converts pyruvate to lactate but is not the primary glycolytic control point activated by ADP/AMP; PFK-1 controls glycolytic flux."
+      }
+    ]
+  }
+]
