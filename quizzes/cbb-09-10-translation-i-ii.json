@@ -1,0 +1,1186 @@
+[
+  {
+    "question": "Which codon serves as the universal start codon for translation?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define and memorize the start and stop codons",
+    "options": [
+      {
+        "text": "AUG",
+        "isCorrect": true,
+        "rationale": "Correct: AUG is the start codon and encodes methionine, which defines the reading frame."
+      },
+      {
+        "text": "UAA",
+        "isCorrect": false,
+        "rationale": "Wrong: UAA is a stop codon; it would terminate translation rather than initiate it."
+      },
+      {
+        "text": "UGA",
+        "isCorrect": false,
+        "rationale": "Wrong: UGA is a termination codon and does not encode an initiating amino acid."
+      },
+      {
+        "text": "UAG",
+        "isCorrect": false,
+        "rationale": "Wrong: UAG is a stop codon and cannot serve as the initiating codon."
+      },
+      {
+        "text": "GUG",
+        "isCorrect": false,
+        "rationale": "Wrong: GUG can rarely act as start in bacteria but lecture defines AUG as the universal start codon; GUG would be correct only if lecture stated exceptions."
+      }
+    ]
+  },
+  {
+    "question": "A student translates an mRNA and encounters the first in-frame UGA. What does this signal?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define and memorize the start and stop codons",
+    "options": [
+      {
+        "text": "Termination of translation at that codon",
+        "isCorrect": true,
+        "rationale": "Correct: UGA is one of three stop codons and signals release of the polypeptide."
+      },
+      {
+        "text": "Insertion of methionine at that position",
+        "isCorrect": false,
+        "rationale": "Wrong: Methionine is encoded by AUG; UGA does not encode an amino acid."
+      },
+      {
+        "text": "Frameshift of the reading frame downstream",
+        "isCorrect": false,
+        "rationale": "Wrong: A stop codon does not cause frameshift; frameshifts arise from insertions or deletions not multiples of three."
+      },
+      {
+        "text": "Wobble pairing causing ambiguous translation",
+        "isCorrect": false,
+        "rationale": "Wrong: Wobble affects third-base pairing but does not convert a stop codon into an amino-acid codon."
+      },
+      {
+        "text": "Initiation of a new polypeptide chain there",
+        "isCorrect": false,
+        "rationale": "Wrong: Initiation requires a start codon (AUG); a stop codon cannot initiate translation."
+      }
+    ]
+  },
+  {
+    "question": "Which phrase best describes the genetic code property that many amino acids have multiple codons?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe what is meant by the following terms with respect to the genetic code: specific, universal, redundant, nonoverlapping and commaless",
+    "options": [
+      {
+        "text": "Redundant",
+        "isCorrect": true,
+        "rationale": "Correct: Redundant means multiple codons can encode the same amino acid, as noted in the lecture."
+      },
+      {
+        "text": "Specific",
+        "isCorrect": false,
+        "rationale": "Wrong: Specific means each codon corresponds to a particular amino acid, not that multiple codons exist for one amino acid."
+      },
+      {
+        "text": "Universal",
+        "isCorrect": false,
+        "rationale": "Wrong: Universal refers to conservation across organisms, not multiplicity of codons per amino acid."
+      },
+      {
+        "text": "Nonoverlapping",
+        "isCorrect": false,
+        "rationale": "Wrong: Nonoverlapping means codons are read sequentially without sharing bases, not multiple codons per amino acid."
+      },
+      {
+        "text": "Commaless",
+        "isCorrect": false,
+        "rationale": "Wrong: Commaless indicates no punctuation between codons; it does not describe multiple codons per amino acid."
+      }
+    ]
+  },
+  {
+    "question": "Given mRNA 5'-GGGUAGGCCUAUGGACUUAAUAGUAUGUUGAGGCAAAAAA-3', how many amino acids are encoded before the first stop codon?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Given a mRNA sequence, determine the start and stop codons and the number of amino acids encoded; if also provided the genetic code, translate the RNA sequence into a peptide sequence",
+    "options": [
+      {
+        "text": "Six amino acids",
+        "isCorrect": true,
+        "rationale": "Correct: The first AUG defines the reading frame and translation yields six amino acids before UGA stop, per the example."
+      },
+      {
+        "text": "Five amino acids",
+        "isCorrect": false,
+        "rationale": "Wrong: Counting from the first AUG yields six codons before the stop; five would be incorrect unless an AUG was missed."
+      },
+      {
+        "text": "Seven amino acids",
+        "isCorrect": false,
+        "rationale": "Wrong: Seven would require an extra in-frame codon before the stop; the provided sequence yields six."
+      },
+      {
+        "text": "Zero amino acids",
+        "isCorrect": false,
+        "rationale": "Wrong: There is an AUG start codon in the sequence, so translation does not yield zero amino acids."
+      },
+      {
+        "text": "Cannot determine without codon table",
+        "isCorrect": false,
+        "rationale": "Wrong: The number of amino acids can be determined by counting codons between start and stop without needing the full codon table."
+      }
+    ]
+  },
+  {
+    "question": "Translate the coding region AUG GAC UUA AUA GUA UGU into the amino acid sequence.",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Given a mRNA sequence, determine the start and stop codons and the number of amino acids encoded; if also provided the genetic code, translate the RNA sequence into a peptide sequence",
+    "options": [
+      {
+        "text": "Met-Asp-Leu-Ile-Val-Cys",
+        "isCorrect": true,
+        "rationale": "Correct: Using the genetic code, AUG=Methionine, GAC=Aspartate, UUA=Leucine, AUA=Isoleucine, GUA=Valine, UGU=Cysteine."
+      },
+      {
+        "text": "Met-Asp-Leu-Ile-Val-Stop",
+        "isCorrect": false,
+        "rationale": "Wrong: UGU encodes cysteine, not a stop; this would be correct only if UGU were a termination codon."
+      },
+      {
+        "text": "Met-Asp-Ser-Ile-Val-Cys",
+        "isCorrect": false,
+        "rationale": "Wrong: UUA encodes leucine not serine; this would be correct only if UUA coded serine."
+      },
+      {
+        "text": "Met-Glu-Leu-Ile-Val-Cys",
+        "isCorrect": false,
+        "rationale": "Wrong: GAC encodes aspartate not glutamate; this would be correct only if GAC coded glutamate."
+      },
+      {
+        "text": "Met-Asp-Leu-Val-Val-Cys",
+        "isCorrect": false,
+        "rationale": "Wrong: AUA encodes isoleucine not valine; this would be correct only if AUA coded valine."
+      }
+    ]
+  },
+  {
+    "question": "A point mutation changes UCA to UCU. What is the expected effect on the protein?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define the following mutation types: silent, missense, nonsense, insertion, deletion, frameshift, splice site, and conservative",
+    "options": [
+      {
+        "text": "Silent mutation with no amino acid change",
+        "isCorrect": true,
+        "rationale": "Correct: Both UCA and UCU encode serine, so the amino acid sequence is unchanged (silent)."
+      },
+      {
+        "text": "Missense mutation changing serine to proline",
+        "isCorrect": false,
+        "rationale": "Wrong: That describes UCA to CCA; here the codon still encodes serine, so missense is incorrect."
+      },
+      {
+        "text": "Nonsense mutation creating a stop codon",
+        "isCorrect": false,
+        "rationale": "Wrong: Nonsense would require conversion to UAA/UGA/UAG; UCU encodes serine, not a stop."
+      },
+      {
+        "text": "Frameshift mutation altering downstream reading frame",
+        "isCorrect": false,
+        "rationale": "Wrong: Frameshifts result from insertions/deletions not single-base substitutions that preserve triplet length."
+      },
+      {
+        "text": "Splice site mutation affecting exon inclusion",
+        "isCorrect": false,
+        "rationale": "Wrong: Splice site mutations affect intron/exon boundaries; a codon change within an exon is not a splice site mutation."
+      }
+    ]
+  },
+  {
+    "question": "Which mutation type converts an amino-acid codon into a termination codon?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define the following mutation types: silent, missense, nonsense, insertion, deletion, frameshift, splice site, and conservative",
+    "options": [
+      {
+        "text": "Nonsense mutation",
+        "isCorrect": true,
+        "rationale": "Correct: A nonsense mutation changes a codon to a stop codon, terminating translation prematurely."
+      },
+      {
+        "text": "Silent mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Silent mutations do not change the encoded amino acid and do not create stop codons."
+      },
+      {
+        "text": "Missense mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Missense changes one amino acid to another, not to a stop codon."
+      },
+      {
+        "text": "Frameshift mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Frameshifts alter reading frame and often create premature stops indirectly, but the direct conversion to stop is called nonsense."
+      },
+      {
+        "text": "Splice site mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Splice site mutations affect RNA processing and may lead to truncated proteins but are not the direct codon-to-stop change defined as nonsense."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme class attaches amino acids to their cognate tRNAs?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the enzymatic function of the tRNA synthetases",
+    "options": [
+      {
+        "text": "Aminoacyl tRNA synthetases",
+        "isCorrect": true,
+        "rationale": "Correct: Aminoacyl-tRNA synthetases catalyze ATP-dependent attachment of amino acids to tRNA 3' ends."
+      },
+      {
+        "text": "Peptidyltransferase enzymes",
+        "isCorrect": false,
+        "rationale": "Wrong: Peptidyltransferase forms peptide bonds on the ribosome, not tRNA charging."
+      },
+      {
+        "text": "Release factor proteins",
+        "isCorrect": false,
+        "rationale": "Wrong: Release factors mediate termination, not amino acid attachment to tRNA."
+      },
+      {
+        "text": "Aminoacyl tRNA hydrolases",
+        "isCorrect": false,
+        "rationale": "Wrong: No such enzyme class performs charging; hydrolases would remove amino acids rather than attach them."
+      },
+      {
+        "text": "Elongation factor proteins",
+        "isCorrect": false,
+        "rationale": "Wrong: Elongation factors assist delivery and translocation of charged tRNAs, not the charging reaction itself."
+      }
+    ]
+  },
+  {
+    "question": "A tRNA with anticodon CAU pairs with which mRNA codon?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Given an anticodon or codon, determine the other; given an anticodon determine the codon and use the genetic code table and determine the amino acid",
+    "options": [
+      {
+        "text": "AUG",
+        "isCorrect": true,
+        "rationale": "Correct: Anticodon 5'-CAU-3' pairs antiparallel with codon 5'-AUG-3', which encodes methionine."
+      },
+      {
+        "text": "UAC",
+        "isCorrect": false,
+        "rationale": "Wrong: UAC is the reverse complement of AUG but not the codon read 5' to 3'; the codon is AUG."
+      },
+      {
+        "text": "GUA",
+        "isCorrect": false,
+        "rationale": "Wrong: GUA is not complementary to CAU; it would pair with CAU only if orientation were misread."
+      },
+      {
+        "text": "CAU",
+        "isCorrect": false,
+        "rationale": "Wrong: CAU is the anticodon itself, not the mRNA codon; the codon is AUG."
+      },
+      {
+        "text": "UAG",
+        "isCorrect": false,
+        "rationale": "Wrong: UAG is a stop codon and is not complementary to CAU; this would be correct only if anticodon were CUA."
+      }
+    ]
+  },
+  {
+    "question": "Which concept explains why one tRNA can recognize multiple codons differing at the third base?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the Wobble Hypothesis",
+    "options": [
+      {
+        "text": "Wobble hypothesis allowing flexible third base pairing",
+        "isCorrect": true,
+        "rationale": "Correct: Wobble permits nonstandard base pairing at the codon third position, reducing required tRNA species."
+      },
+      {
+        "text": "Redundancy of the genetic code alone",
+        "isCorrect": false,
+        "rationale": "Wrong: Redundancy describes multiple codons per amino acid but does not explain how one tRNA reads several codons."
+      },
+      {
+        "text": "Commaless reading frame without punctuation",
+        "isCorrect": false,
+        "rationale": "Wrong: Commaless refers to continuous triplet reading, not flexible base pairing at the third position."
+      },
+      {
+        "text": "Nonoverlapping codon usage preventing overlap",
+        "isCorrect": false,
+        "rationale": "Wrong: Nonoverlapping means codons are read sequentially; it does not permit one tRNA to read multiple codons."
+      },
+      {
+        "text": "Universal code conservation across species",
+        "isCorrect": false,
+        "rationale": "Wrong: Universality refers to conservation, not the molecular basis for multiple codon recognition by one tRNA."
+      }
+    ]
+  },
+  {
+    "question": "Which ribosomal subunit sizes correspond to eukaryotic ribosomes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast eukaryotic and prokaryotic ribosomes in terms of sizes and rRNAs",
+    "options": [
+      {
+        "text": "60S large subunit and 40S small subunit",
+        "isCorrect": true,
+        "rationale": "Correct: Eukaryotic ribosomes are 80S composed of 60S and 40S subunits as stated in the lecture."
+      },
+      {
+        "text": "50S large subunit and 30S small subunit",
+        "isCorrect": false,
+        "rationale": "Wrong: Those sizes correspond to prokaryotic 70S ribosomes, not eukaryotic ribosomes."
+      },
+      {
+        "text": "70S single intact ribosomal particle",
+        "isCorrect": false,
+        "rationale": "Wrong: 70S describes prokaryotic ribosomes; eukaryotic ribosomes are 80S composed of 60S and 40S."
+      },
+      {
+        "text": "80S large subunit and 40S small subunit",
+        "isCorrect": false,
+        "rationale": "Wrong: 80S is the combined eukaryotic ribosome size; subunits are 60S and 40S, not 80S and 40S."
+      },
+      {
+        "text": "30S large subunit and 50S small subunit",
+        "isCorrect": false,
+        "rationale": "Wrong: This reverses prokaryotic subunit sizes and is inconsistent with lecture descriptions."
+      }
+    ]
+  },
+  {
+    "question": "Which sequence element in prokaryotic mRNA helps align the ribosome with the start codon?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast translation initiation in prokaryotes and eukaryotes",
+    "options": [
+      {
+        "text": "Shine Dalgarno sequence upstream of start codon",
+        "isCorrect": true,
+        "rationale": "Correct: The Shine-Dalgarno sequence pairs with 16S rRNA to position the small subunit at the AUG start codon."
+      },
+      {
+        "text": "5 prime cap structure at the mRNA 5 end",
+        "isCorrect": false,
+        "rationale": "Wrong: The 5' cap is used in eukaryotic initiation, not prokaryotic Shine-Dalgarno mediated alignment."
+      },
+      {
+        "text": "Poly A tail at the mRNA 3 end",
+        "isCorrect": false,
+        "rationale": "Wrong: Poly-A tails are eukaryotic features affecting stability and translation but do not align prokaryotic ribosomes."
+      },
+      {
+        "text": "Internal ribosome entry site within coding region",
+        "isCorrect": false,
+        "rationale": "Wrong: IRES elements are eukaryotic viral or specialized elements and are not the Shine-Dalgarno sequence."
+      },
+      {
+        "text": "Kozak consensus sequence surrounding AUG",
+        "isCorrect": false,
+        "rationale": "Wrong: Kozak sequence is a eukaryotic context for initiation; prokaryotes use Shine-Dalgarno instead."
+      }
+    ]
+  },
+  {
+    "question": "Which initiator tRNA carries a modified methionine in bacteria during initiation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast translation initiation in prokaryotes and eukaryotes",
+    "options": [
+      {
+        "text": "Formylmethionine charged initiator tRNA",
+        "isCorrect": true,
+        "rationale": "Correct: Prokaryotic initiator tRNA carries N-formylmethionine as described in the lecture."
+      },
+      {
+        "text": "Unmodified methionine charged initiator tRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Eukaryotic initiator tRNA carries unmodified methionine; bacteria use formylated methionine."
+      },
+      {
+        "text": "Selenomethionine charged initiator tRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Selenomethionine is not used as the initiator; this would be correct only if lecture stated its use."
+      },
+      {
+        "text": "Acetylated methionine charged initiator tRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Acetylation is a posttranslational modification, not the bacterial initiator tRNA modification described."
+      },
+      {
+        "text": "Pyrrolysine charged initiator tRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Pyrrolysine is a rare amino acid and not the standard initiator in bacteria; this would be correct only in specific archaea."
+      }
+    ]
+  },
+  {
+    "question": "During elongation, which site on the ribosome binds the incoming charged tRNA?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast eukaryotic and prokaryotic ribosomes in terms of sizes and rRNAs",
+    "options": [
+      {
+        "text": "A site binds incoming aminoacyl tRNA",
+        "isCorrect": true,
+        "rationale": "Correct: The A site accepts the next aminoacyl-tRNA during elongation as described in the lecture."
+      },
+      {
+        "text": "P site binds incoming aminoacyl tRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: The P site holds peptidyl-tRNA carrying the growing chain, not the incoming charged tRNA."
+      },
+      {
+        "text": "E site binds incoming aminoacyl tRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: The E site is the exit site for uncharged tRNA, not for incoming charged tRNA."
+      },
+      {
+        "text": "S site binds incoming aminoacyl tRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: There is no S site in the ribosomal nomenclature used in the lecture; this would be correct only if defined otherwise."
+      },
+      {
+        "text": "R site binds incoming aminoacyl tRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: R site is not a standard ribosomal site; the correct site is the A site."
+      }
+    ]
+  },
+  {
+    "question": "Which enzymatic activity on the large ribosomal subunit catalyzes peptide bond formation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process of adding an amino acid to a growing polypeptide chain",
+    "options": [
+      {
+        "text": "Peptidyl transferase activity of the large subunit",
+        "isCorrect": true,
+        "rationale": "Correct: Peptidyltransferase, part of the large subunit rRNA, forms peptide bonds using energy from charged tRNA."
+      },
+      {
+        "text": "Aminoacyl tRNA synthetase activity on the ribosome",
+        "isCorrect": false,
+        "rationale": "Wrong: Aminoacyl-tRNA synthetases charge tRNAs in the cytosol, not catalyze peptide bond formation on the ribosome."
+      },
+      {
+        "text": "Release factor mediated peptide hydrolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Release factors terminate translation by promoting hydrolysis, not catalyze peptide bond formation during elongation."
+      },
+      {
+        "text": "Elongation factor G mediated peptide transfer",
+        "isCorrect": false,
+        "rationale": "Wrong: EF-G mediates translocation, not the chemical formation of the peptide bond."
+      },
+      {
+        "text": "Ribosomal kinase mediated peptide phosphorylation",
+        "isCorrect": false,
+        "rationale": "Wrong: Kinases phosphorylate proteins; peptide bond formation is catalyzed by peptidyltransferase, not kinases."
+      }
+    ]
+  },
+  {
+    "question": "How many high-energy bonds are consumed per amino acid added to a growing polypeptide?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Energy requirements",
+    "options": [
+      {
+        "text": "Four high energy bonds per amino acid added",
+        "isCorrect": true,
+        "rationale": "Correct: Two ATP equivalents for charging and two GTPs for elongation steps total four high-energy bonds per residue."
+      },
+      {
+        "text": "Two high energy bonds per amino acid added",
+        "isCorrect": false,
+        "rationale": "Wrong: Charging alone uses two high-energy bonds plus GTPs for elongation; two would undercount energy needs."
+      },
+      {
+        "text": "Six high energy bonds per amino acid added",
+        "isCorrect": false,
+        "rationale": "Wrong: Six overestimates the lecture-stated requirement; only four high-energy bonds are required per residue."
+      },
+      {
+        "text": "One high energy bond per amino acid added",
+        "isCorrect": false,
+        "rationale": "Wrong: One bond is insufficient; charging and elongation steps consume multiple high-energy bonds."
+      },
+      {
+        "text": "No high energy bonds are required for elongation",
+        "isCorrect": false,
+        "rationale": "Wrong: Energy is required for charging and translocation; the lecture specifies four high-energy bonds per amino acid."
+      }
+    ]
+  },
+  {
+    "question": "Which antibiotic class from the lecture inhibits the 50S peptidyltransferase activity?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the four major antibiotics that work as translational inhibitors and contrast them with the mechanism of action of quinolones and rifampin",
+    "options": [
+      {
+        "text": "Chloramphenicol inhibiting peptidyltransferase on 50S",
+        "isCorrect": true,
+        "rationale": "Correct: Chloramphenicol blocks peptidyltransferase on the 50S subunit, inhibiting peptide bond formation as taught."
+      },
+      {
+        "text": "Tetracycline blocking peptidyltransferase on 50S",
+        "isCorrect": false,
+        "rationale": "Wrong: Tetracycline blocks A site tRNA binding on the 30S, not peptidyltransferase on 50S."
+      },
+      {
+        "text": "Erythromycin blocking A site tRNA binding on 30S",
+        "isCorrect": false,
+        "rationale": "Wrong: Erythromycin (a macrolide) blocks the 50S exit tunnel, not A site binding on 30S; this option misstates the mechanism."
+      },
+      {
+        "text": "Streptomycin inhibiting peptidyltransferase on 50S",
+        "isCorrect": false,
+        "rationale": "Wrong: Streptomycin (an aminoglycoside) affects initiation and causes misreading at the 30S, not 50S peptidyltransferase."
+      },
+      {
+        "text": "Quinolone inhibiting peptidyltransferase on 50S",
+        "isCorrect": false,
+        "rationale": "Wrong: Quinolones inhibit DNA gyrase/topoisomerase, not ribosomal peptidyltransferase; this would be correct only if lecture stated otherwise."
+      }
+    ]
+  },
+  {
+    "question": "A patient receives a toxin that ADP-ribosylates elongation factor 2. What step is blocked?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Contrast the antibiotic translational inhibitors with the diphtheria toxin",
+    "options": [
+      {
+        "text": "Translocation of the ribosome along mRNA",
+        "isCorrect": true,
+        "rationale": "Correct: Inactivation of eEF-2 prevents translocation, blocking movement of the ribosome to the next codon as described."
+      },
+      {
+        "text": "Peptide bond formation by peptidyltransferase",
+        "isCorrect": false,
+        "rationale": "Wrong: Peptidyltransferase catalyzes peptide bonds; eEF-2 inactivation specifically blocks translocation, not bond formation."
+      },
+      {
+        "text": "Charging of tRNA with amino acids",
+        "isCorrect": false,
+        "rationale": "Wrong: tRNA charging is performed by aminoacyl-tRNA synthetases and is not directly affected by eEF-2 ADP-ribosylation."
+      },
+      {
+        "text": "Initiation complex assembly at the start codon",
+        "isCorrect": false,
+        "rationale": "Wrong: eEF-2 acts during elongation; initiation complex assembly occurs earlier and involves initiation factors."
+      },
+      {
+        "text": "Termination factor mediated peptide release",
+        "isCorrect": false,
+        "rationale": "Wrong: Termination is mediated by release factors at stop codons; eEF-2 inactivation prevents translocation before termination."
+      }
+    ]
+  },
+  {
+    "question": "A bacterial mRNA contains multiple open reading frames each with its own ribosome binding site. What term best describes this mRNA?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Protein synthesis – the code contained in a mRNA is translated into a particular series of amino acids to form a protein",
+    "options": [
+      {
+        "text": "Polycistronic mRNA encoding multiple proteins",
+        "isCorrect": true,
+        "rationale": "Correct: Prokaryotic mRNAs can be polycistronic with multiple coding regions and Shine-Dalgarno sites."
+      },
+      {
+        "text": "Monocistronic mRNA encoding a single protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Monocistronic mRNA encodes one protein as in eukaryotes; the described mRNA has multiple ORFs."
+      },
+      {
+        "text": "Circular mRNA lacking start codons",
+        "isCorrect": false,
+        "rationale": "Wrong: Circularity and lack of start codons are not described; the presence of multiple ORFs indicates polycistronic mRNA."
+      },
+      {
+        "text": "Noncoding RNA regulating translation",
+        "isCorrect": false,
+        "rationale": "Wrong: Noncoding RNAs do not contain multiple ORFs for protein coding; this option contradicts the presence of coding regions."
+      },
+      {
+        "text": "Polyribosomal mRNA with single coding region",
+        "isCorrect": false,
+        "rationale": "Wrong: Polyribosomes refer to multiple ribosomes on one mRNA; the key feature here is multiple coding regions (polycistronic)."
+      }
+    ]
+  },
+  {
+    "question": "Which feature explains why eukaryotic mRNAs are typically monocistronic?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast translation initiation in prokaryotes and eukaryotes",
+    "options": [
+      {
+        "text": "5 prime cap recognition and scanning to first AUG",
+        "isCorrect": true,
+        "rationale": "Correct: Eukaryotic small subunit binds the 5' cap and scans to the first AUG, enforcing monocistronic translation."
+      },
+      {
+        "text": "Multiple Shine Dalgarno sequences per transcript",
+        "isCorrect": false,
+        "rationale": "Wrong: Shine-Dalgarno sequences are prokaryotic features that allow internal initiation and polycistronic messages."
+      },
+      {
+        "text": "Internal ribosome entry at multiple AUGs",
+        "isCorrect": false,
+        "rationale": "Wrong: Internal entry sites are exceptions; the standard eukaryotic mechanism is cap-dependent scanning to the first AUG."
+      },
+      {
+        "text": "Poly A tail directing multiple initiations",
+        "isCorrect": false,
+        "rationale": "Wrong: Poly-A tails affect stability and translation efficiency but do not cause multiple independent initiations along one mRNA."
+      },
+      {
+        "text": "Lack of start codons in eukaryotic mRNAs",
+        "isCorrect": false,
+        "rationale": "Wrong: Eukaryotic mRNAs contain start codons; monocistronic nature arises from cap-dependent scanning, not absence of starts."
+      }
+    ]
+  },
+  {
+    "question": "A frameshift mutation early in an ORF most likely causes which outcome?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the following mutation types: silent, missense, nonsense, insertion, deletion, frameshift, splice site, and conservative",
+    "options": [
+      {
+        "text": "Premature stop codon and truncated protein",
+        "isCorrect": true,
+        "rationale": "Correct: Frameshifts change reading frame and often introduce premature stop codons, producing truncated proteins."
+      },
+      {
+        "text": "Silent substitution with no protein change",
+        "isCorrect": false,
+        "rationale": "Wrong: Silent substitutions do not alter reading frame; frameshifts alter codon grouping and are not silent."
+      },
+      {
+        "text": "Conservative amino acid substitution only",
+        "isCorrect": false,
+        "rationale": "Wrong: Conservative substitutions are single amino-acid changes preserving properties; frameshifts change many downstream residues."
+      },
+      {
+        "text": "Increased translation efficiency and longer protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Frameshifts typically disrupt translation and shorten proteins via premature stops, not increase efficiency."
+      },
+      {
+        "text": "Splice site creation leading to exon skipping",
+        "isCorrect": false,
+        "rationale": "Wrong: Frameshifts are caused by indels in coding sequence; splice site mutations affect RNA processing and are distinct mechanisms."
+      }
+    ]
+  },
+  {
+    "question": "Which ribosomal location contains the peptidyl-tRNA during elongation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Components Required for Translation",
+    "options": [
+      {
+        "text": "P site contains the peptidyl tRNA",
+        "isCorrect": true,
+        "rationale": "Correct: The P site holds the peptidyl-tRNA carrying the growing polypeptide chain as described in the lecture."
+      },
+      {
+        "text": "A site contains the peptidyl tRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: The A site binds incoming aminoacyl-tRNA; peptidyl-tRNA resides in the P site."
+      },
+      {
+        "text": "E site contains the peptidyl tRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: The E site holds exiting uncharged tRNA, not peptidyl-tRNA with the growing chain."
+      },
+      {
+        "text": "S site contains the peptidyl tRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: S site is not a standard ribosomal site; the correct site for peptidyl-tRNA is P."
+      },
+      {
+        "text": "R site contains the peptidyl tRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: R site is not part of canonical ribosomal nomenclature; P site is correct."
+      }
+    ]
+  },
+  {
+    "question": "Which factor is required to release the completed polypeptide at a stop codon in eukaryotes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process of adding an amino acid to a growing polypeptide chain",
+    "options": [
+      {
+        "text": "A single release factor mediates peptide release",
+        "isCorrect": true,
+        "rationale": "Correct: Eukaryotes use one release factor to promote peptide release at stop codons, per the lecture."
+      },
+      {
+        "text": "Three release factors mediate peptide release",
+        "isCorrect": false,
+        "rationale": "Wrong: Three release factors are used in prokaryotes; eukaryotes use a single release factor."
+      },
+      {
+        "text": "No release factors are required for termination",
+        "isCorrect": false,
+        "rationale": "Wrong: Termination requires release factors and GTP; it does not occur spontaneously without factors."
+      },
+      {
+        "text": "Aminoacyl tRNA synthetase mediates peptide release",
+        "isCorrect": false,
+        "rationale": "Wrong: Aminoacyl-tRNA synthetases charge tRNAs; they do not mediate peptide release at stop codons."
+      },
+      {
+        "text": "Elongation factor EF G mediates peptide release",
+        "isCorrect": false,
+        "rationale": "Wrong: EF-G mediates translocation, not peptide release; release factors perform termination."
+      }
+    ]
+  },
+  {
+    "question": "Which antibiotic class primarily prevents A site tRNA binding on the 30S subunit?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the four major antibiotics that work as translational inhibitors and contrast them with the mechanism of action of quinolones and rifampin",
+    "options": [
+      {
+        "text": "Tetracyclines blocking A site on 30S subunit",
+        "isCorrect": true,
+        "rationale": "Correct: Tetracyclines prevent aminoacyl-tRNA entry into the A site of the 30S, inhibiting elongation as taught."
+      },
+      {
+        "text": "Chloramphenicol blocking A site on 30S subunit",
+        "isCorrect": false,
+        "rationale": "Wrong: Chloramphenicol inhibits peptidyltransferase on the 50S, not A site binding on the 30S."
+      },
+      {
+        "text": "Erythromycin blocking A site on 30S subunit",
+        "isCorrect": false,
+        "rationale": "Wrong: Erythromycin acts on the 50S exit tunnel; it does not block A site binding on the 30S."
+      },
+      {
+        "text": "Streptomycin blocking A site on 30S subunit",
+        "isCorrect": false,
+        "rationale": "Wrong: Streptomycin causes misreading and affects initiation at the 30S, but tetracyclines specifically block A site binding."
+      },
+      {
+        "text": "Quinolones blocking A site on 30S subunit",
+        "isCorrect": false,
+        "rationale": "Wrong: Quinolones inhibit DNA gyrase/topoisomerase, not ribosomal A site binding; this option contradicts lecture mechanisms."
+      }
+    ]
+  },
+  {
+    "question": "A mutation in a splice donor site causes retention of intronic sequence in mRNA. Which outcome is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the following mutation types: silent, missense, nonsense, insertion, deletion, frameshift, splice site, and conservative",
+    "options": [
+      {
+        "text": "Aberrant protein with extra amino acids from intron",
+        "isCorrect": true,
+        "rationale": "Correct: Splice site mutations can leave intronic nucleotides in mRNA, adding aberrant amino acids or causing frameshifts."
+      },
+      {
+        "text": "Silent mutation with no change in protein sequence",
+        "isCorrect": false,
+        "rationale": "Wrong: Retained intronic sequence typically alters coding sequence and is not silent."
+      },
+      {
+        "text": "Conservative amino acid substitution only",
+        "isCorrect": false,
+        "rationale": "Wrong: Splice defects usually cause larger disruptions than a single conservative substitution."
+      },
+      {
+        "text": "Increased translation efficiency and normal protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Retained intron usually disrupts translation and protein function rather than improving efficiency."
+      },
+      {
+        "text": "Loss of start codon preventing any translation",
+        "isCorrect": false,
+        "rationale": "Wrong: Splice donor mutations affect exon–intron boundaries; they do not typically remove the start codon unless splicing removes the start-containing exon."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best contrasts antibiotic translational inhibitors with rifampin and quinolones?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the four major antibiotics that work as translational inhibitors and contrast them with the mechanism of action of quinolones and rifampin",
+    "options": [
+      {
+        "text": "Translational inhibitors target ribosomes; rifampin and quinolones target nucleic acid enzymes",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states translational inhibitors act on ribosomes while rifampin and quinolones inhibit RNA polymerase and DNA gyrase respectively."
+      },
+      {
+        "text": "Translational inhibitors target DNA replication enzymes",
+        "isCorrect": false,
+        "rationale": "Wrong: Translational inhibitors act on ribosomes, not DNA replication; quinolones target DNA gyrase instead."
+      },
+      {
+        "text": "Rifampin and quinolones block peptide bond formation directly",
+        "isCorrect": false,
+        "rationale": "Wrong: Rifampin inhibits RNA polymerase and quinolones inhibit DNA gyrase; they do not directly block peptide bond formation."
+      },
+      {
+        "text": "Both classes exclusively inhibit mitochondrial ribosomes",
+        "isCorrect": false,
+        "rationale": "Wrong: Some translational inhibitors can affect mitochondrial ribosomes, but rifampin and quinolones act on nucleic acid enzymes, not mitochondria exclusively."
+      },
+      {
+        "text": "Translational inhibitors enhance transcriptional elongation rates",
+        "isCorrect": false,
+        "rationale": "Wrong: Translational inhibitors impede protein synthesis; they do not enhance transcriptional elongation."
+      }
+    ]
+  },
+  {
+    "question": "Which molecular feature allows aminoacyl tRNA synthetases to ensure correct amino acid attachment?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the enzymatic function of the tRNA synthetases",
+    "options": [
+      {
+        "text": "Recognition of both tRNA identity elements and amino acid",
+        "isCorrect": true,
+        "rationale": "Correct: Synthetases recognize specific tRNA sequences and the correct amino acid and perform ATP-dependent charging with proofreading."
+      },
+      {
+        "text": "Random attachment followed by ribosomal editing",
+        "isCorrect": false,
+        "rationale": "Wrong: Attachment is specific and synthetases have proofreading; ribosomes do not edit charged tRNAs."
+      },
+      {
+        "text": "Base pairing between anticodon and amino acid",
+        "isCorrect": false,
+        "rationale": "Wrong: Anticodon pairs with codon on mRNA; aminoacylation depends on synthetase recognition, not anticodon–amino acid pairing."
+      },
+      {
+        "text": "Release factor mediated amino acid selection",
+        "isCorrect": false,
+        "rationale": "Wrong: Release factors act at termination; they do not select amino acids for tRNA charging."
+      },
+      {
+        "text": "Kozak sequence directing synthetase specificity",
+        "isCorrect": false,
+        "rationale": "Wrong: Kozak sequence is an mRNA context for initiation, unrelated to synthetase specificity."
+      }
+    ]
+  },
+  {
+    "question": "Which event directly uses the energy stored in the ester bond of a charged tRNA?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process of adding an amino acid to a growing polypeptide chain",
+    "options": [
+      {
+        "text": "Peptide bond formation during elongation",
+        "isCorrect": true,
+        "rationale": "Correct: The energy for peptide bond formation comes from the charged tRNA ester linkage as described in the lecture."
+      },
+      {
+        "text": "Charging tRNA with its amino acid",
+        "isCorrect": false,
+        "rationale": "Wrong: Charging consumes ATP to form the ester bond; the ester bond energy is later used for peptide bond formation."
+      },
+      {
+        "text": "Translocation of the ribosome along mRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Translocation requires GTP hydrolysis by elongation factors, not the ester bond energy of charged tRNA."
+      },
+      {
+        "text": "Initiation complex assembly at the start codon",
+        "isCorrect": false,
+        "rationale": "Wrong: Initiation requires GTP and initiation factors; ester bond energy is used during peptide bond formation."
+      },
+      {
+        "text": "Release factor mediated peptide hydrolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Release factor–mediated hydrolysis uses GTP and protein factors; ester bond energy is used earlier for peptide bond formation."
+      }
+    ]
+  },
+  {
+    "question": "A mutation removes the Shine-Dalgarno sequence upstream of a bacterial start codon. What is the most likely effect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast translation initiation in prokaryotes and eukaryotes",
+    "options": [
+      {
+        "text": "Reduced ribosome alignment and decreased initiation efficiency",
+        "isCorrect": true,
+        "rationale": "Correct: Loss of Shine-Dalgarno prevents 16S rRNA pairing and proper small subunit alignment, reducing initiation efficiency."
+      },
+      {
+        "text": "Increased cap dependent scanning to first AUG",
+        "isCorrect": false,
+        "rationale": "Wrong: Cap-dependent scanning is a eukaryotic mechanism and cannot compensate for Shine-Dalgarno loss in bacteria."
+      },
+      {
+        "text": "Immediate termination at the start codon",
+        "isCorrect": false,
+        "rationale": "Wrong: Removing Shine-Dalgarno affects initiation, not causing immediate termination at the start codon."
+      },
+      {
+        "text": "Frameshift mutation downstream of start codon",
+        "isCorrect": false,
+        "rationale": "Wrong: Shine-Dalgarno removal affects initiation alignment, not directly causing frameshifts in coding sequence."
+      },
+      {
+        "text": "Enhanced translation of downstream ORFs",
+        "isCorrect": false,
+        "rationale": "Wrong: Loss of ribosome binding site would not enhance translation; it would reduce initiation at that ORF."
+      }
+    ]
+  },
+  {
+    "question": "Which statement about polysomes is accurate based on the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Translation",
+    "options": [
+      {
+        "text": "Multiple ribosomes translate a single mRNA simultaneously",
+        "isCorrect": true,
+        "rationale": "Correct: Polysomes consist of multiple ribosomes on one mRNA, each synthesizing protein concurrently as described."
+      },
+      {
+        "text": "A single ribosome translates multiple mRNAs simultaneously",
+        "isCorrect": false,
+        "rationale": "Wrong: One ribosome translates one mRNA at a time; polysomes involve many ribosomes on the same mRNA."
+      },
+      {
+        "text": "Polysomes are exclusive to eukaryotic rough ER",
+        "isCorrect": false,
+        "rationale": "Wrong: Polysomes occur in both prokaryotes and eukaryotes and can be free or ER-bound in eukaryotes."
+      },
+      {
+        "text": "Polysomes prevent translation initiation on mRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Polysomes result from repeated initiation events; they do not prevent initiation."
+      },
+      {
+        "text": "Polysomes are ribosomal aggregates that inhibit elongation",
+        "isCorrect": false,
+        "rationale": "Wrong: Polysomes facilitate efficient translation, not inhibit elongation; they are functional assemblies."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes a conservative missense mutation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define the following mutation types: silent, missense, nonsense, insertion, deletion, frameshift, splice site, and conservative",
+    "options": [
+      {
+        "text": "Amino acid replaced by one with similar properties",
+        "isCorrect": true,
+        "rationale": "Correct: A conservative missense substitutes an amino acid with similar chemical properties, often preserving function."
+      },
+      {
+        "text": "Amino acid replaced by one with opposite properties",
+        "isCorrect": false,
+        "rationale": "Wrong: That describes a nonconservative missense; conservative implies similar properties, not opposite."
+      },
+      {
+        "text": "Codon changed to a stop codon truncating protein",
+        "isCorrect": false,
+        "rationale": "Wrong: That is a nonsense mutation, not a conservative missense."
+      },
+      {
+        "text": "Insertion of three nucleotides causing frameshift",
+        "isCorrect": false,
+        "rationale": "Wrong: Insertion of three nucleotides does not cause a frameshift; it inserts an amino acid without shifting frame."
+      },
+      {
+        "text": "Synonymous codon change with no amino acid change",
+        "isCorrect": false,
+        "rationale": "Wrong: Synonymous changes are silent mutations; conservative missense changes the amino acid to a similar one."
+      }
+    ]
+  },
+  {
+    "question": "Which ribosomal subunit binds the mRNA 5 prime cap in eukaryotic initiation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast translation initiation in prokaryotes and eukaryotes",
+    "options": [
+      {
+        "text": "Small ribosomal subunit recognizes the 5 prime cap",
+        "isCorrect": true,
+        "rationale": "Correct: The small subunit binds the 5' cap and scans to the first AUG in eukaryotic initiation."
+      },
+      {
+        "text": "Large ribosomal subunit recognizes the 5 prime cap",
+        "isCorrect": false,
+        "rationale": "Wrong: The large subunit joins after initiation; the small subunit recognizes the cap and scans."
+      },
+      {
+        "text": "Both subunits simultaneously bind the 5 prime cap",
+        "isCorrect": false,
+        "rationale": "Wrong: Subunits assemble sequentially; the small subunit binds first, then the large subunit joins."
+      },
+      {
+        "text": "No ribosomal subunit recognizes the 5 prime cap",
+        "isCorrect": false,
+        "rationale": "Wrong: Eukaryotic initiation is cap-dependent, requiring small subunit recognition of the 5' cap."
+      },
+      {
+        "text": "tRNA recognizes the 5 prime cap directly",
+        "isCorrect": false,
+        "rationale": "Wrong: tRNA does not bind the cap; the ribosomal small subunit and initiation factors mediate cap recognition."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why mitochondrial protein synthesis can be affected by some antibiotics?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the four major antibiotics that work as translational inhibitors and contrast them with the mechanism of action of quinolones and rifampin",
+    "options": [
+      {
+        "text": "Mitochondrial ribosomes resemble prokaryotic ribosomes",
+        "isCorrect": true,
+        "rationale": "Correct: Mitochondrial ribosomes are similar to prokaryotic ribosomes, so some antibiotics that target bacterial ribosomes can affect mitochondria."
+      },
+      {
+        "text": "Mitochondria use nuclear DNA for ribosomal proteins only",
+        "isCorrect": false,
+        "rationale": "Wrong: While many mitochondrial proteins are nuclear-encoded, mitochondria have their own ribosomes resembling prokaryotic ones, explaining antibiotic sensitivity."
+      },
+      {
+        "text": "Antibiotics universally inhibit eukaryotic cytosolic ribosomes",
+        "isCorrect": false,
+        "rationale": "Wrong: Most antibiotics selectively target bacterial-like ribosomes; they do not universally inhibit eukaryotic cytosolic ribosomes."
+      },
+      {
+        "text": "Mitochondria lack ribosomes and rely on cytosolic translation",
+        "isCorrect": false,
+        "rationale": "Wrong: Mitochondria have their own ribosomes; this option contradicts the lecture and would be correct only if mitochondria lacked ribosomes."
+      },
+      {
+        "text": "Antibiotics increase mitochondrial transcription rates",
+        "isCorrect": false,
+        "rationale": "Wrong: Antibiotics targeting translation do not increase mitochondrial transcription; they inhibit protein synthesis by acting on ribosomes."
+      }
+    ]
+  },
+  {
+    "question": "Which process requires GTP hydrolysis during translation elongation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Components Required for Translation",
+    "options": [
+      {
+        "text": "Translocation of the ribosome to the next codon",
+        "isCorrect": true,
+        "rationale": "Correct: Translocation requires elongation factors and GTP hydrolysis to move the ribosome three nucleotides."
+      },
+      {
+        "text": "Charging tRNA with its amino acid",
+        "isCorrect": false,
+        "rationale": "Wrong: Charging uses ATP, not GTP; GTP is used during elongation steps like translocation."
+      },
+      {
+        "text": "Peptide bond formation by peptidyltransferase",
+        "isCorrect": false,
+        "rationale": "Wrong: Peptide bond formation is catalyzed by peptidyltransferase and uses energy from charged tRNA, not direct GTP hydrolysis."
+      },
+      {
+        "text": "mRNA 5 prime capping in the nucleus",
+        "isCorrect": false,
+        "rationale": "Wrong: 5' capping is a nuclear processing event unrelated to GTP-dependent translocation during elongation."
+      },
+      {
+        "text": "Release factor recognition of stop codon",
+        "isCorrect": false,
+        "rationale": "Wrong: Release factor activity may use GTP in termination, but the specific elongation translocation step is the canonical GTP-dependent process."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental observation would indicate a wobble interaction at the third codon position?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the Wobble Hypothesis",
+    "options": [
+      {
+        "text": "One tRNA recognizes multiple codons differing at third base",
+        "isCorrect": true,
+        "rationale": "Correct: Wobble allows nonstandard pairing at the third codon base so a single tRNA can pair with several codons."
+      },
+      {
+        "text": "Each tRNA recognizes only a single unique codon",
+        "isCorrect": false,
+        "rationale": "Wrong: That would contradict wobble; wobble predicts one tRNA can read multiple codons differing at the third base."
+      },
+      {
+        "text": "Third base changes always produce nonsense codons",
+        "isCorrect": false,
+        "rationale": "Wrong: Third-base changes often are synonymous due to wobble, not always nonsense codons."
+      },
+      {
+        "text": "Anticodon first base pairs strictly Watson Crick",
+        "isCorrect": false,
+        "rationale": "Wrong: Wobble involves nonstandard pairing at the anticodon first base (codon third base), not strict Watson-Crick pairing."
+      },
+      {
+        "text": "No tRNA can pair with codons differing at third base",
+        "isCorrect": false,
+        "rationale": "Wrong: This denies wobble; lecture states wobble allows pairing flexibility at the third position."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the role of initiation factors during translation initiation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Components Required for Translation",
+    "options": [
+      {
+        "text": "Assist assembly of ribosomal subunits and initiator tRNA",
+        "isCorrect": true,
+        "rationale": "Correct: Initiation factors help assemble the initiation complex and position initiator tRNA at the start codon, requiring GTP."
+      },
+      {
+        "text": "Directly catalyze peptide bond formation between amino acids",
+        "isCorrect": false,
+        "rationale": "Wrong: Peptide bond formation is catalyzed by peptidyltransferase in the large subunit, not initiation factors."
+      },
+      {
+        "text": "Charge tRNAs with their cognate amino acids",
+        "isCorrect": false,
+        "rationale": "Wrong: Charging is performed by aminoacyl-tRNA synthetases, not initiation factors."
+      },
+      {
+        "text": "Hydrolyze mRNA to regulate translation rates",
+        "isCorrect": false,
+        "rationale": "Wrong: Initiation factors do not hydrolyze mRNA; they facilitate initiation complex formation."
+      },
+      {
+        "text": "Bind stop codons to terminate translation",
+        "isCorrect": false,
+        "rationale": "Wrong: Release factors, not initiation factors, recognize stop codons to terminate translation."
+      }
+    ]
+  },
+  {
+    "question": "A patient has a mutation that prevents formation of the CCA 3 prime terminus on tRNAs. What is the expected effect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Components Required for Translation",
+    "options": [
+      {
+        "text": "tRNAs cannot be charged and translation halts",
+        "isCorrect": true,
+        "rationale": "Correct: The CCA 3' terminus is the amino acid attachment site; without it tRNAs cannot be charged and translation stops."
+      },
+      {
+        "text": "Ribosomes will misread codons causing misincorporation",
+        "isCorrect": false,
+        "rationale": "Wrong: Misreading relates to anticodon–codon pairing; lack of CCA prevents charging rather than causing misreading."
+      },
+      {
+        "text": "Initiation will proceed normally but elongation accelerates",
+        "isCorrect": false,
+        "rationale": "Wrong: Without charged tRNAs elongation cannot proceed; acceleration is not expected."
+      },
+      {
+        "text": "Release factors will bind prematurely at start codon",
+        "isCorrect": false,
+        "rationale": "Wrong: Release factors act at stop codons; lack of CCA affects charging, not premature release at start codon."
+      },
+      {
+        "text": "Aminoacyl tRNA synthetases will attach amino acids elsewhere",
+        "isCorrect": false,
+        "rationale": "Wrong: Synthetases require the CCA terminus to form the ester bond; they cannot attach amino acids elsewhere on tRNA."
+      }
+    ]
+  }
+]
