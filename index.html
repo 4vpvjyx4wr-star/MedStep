@@ -5811,6 +5811,92 @@ function getClassIcon(entry) {
   return '📋';
 }
 
+/** Class key used when enforcing per-class lecture order (classTag preferred). */
+function getManifestClassKey(entry) {
+  if (entry?.classTag) return String(entry.classTag).trim();
+  const file = String(entry?.file || '').replace(/^personal:/, '').replace(/\.json$/i, '');
+  const m = file.match(/^([a-z][a-z0-9]*)/i);
+  return m ? m[1].toLowerCase() : '';
+}
+
+/** Extract lecture number(s) from title/filename — e.g. MIM 07 → [7], Neuro 46/47 → [46,47]. */
+function parseLectureNumbers(entry) {
+  const title = String(entry?.title || '');
+  const file = String(entry?.file || '').replace(/^personal:/, '').replace(/\.json$/i, '');
+  const fromToken = (token) => [...String(token).matchAll(/\d{1,3}/g)].map(m => Number(m[0])).filter(n => !Number.isNaN(n));
+
+  // Title patterns: "MIM 07 - …", "Neuro 46/47 - …", "psych 17 personality…"
+  let m = title.match(/[A-Za-z][A-Za-z./]*\s+(\d{1,3}(?:\s*[\/\-–—&]\s*\d{1,3})?)/);
+  if (m) {
+    const nums = fromToken(m[1]);
+    if (nums.length) return nums;
+  }
+
+  // Filename patterns: mim-07-…, neuro-46-47-…, cbb-06-07-…
+  m = file.match(/^[a-z][a-z0-9]*-(\d{1,3}(?:-\d{1,3})?)/i);
+  if (m) {
+    const nums = fromToken(m[1]);
+    if (nums.length) return nums;
+  }
+
+  return [];
+}
+
+function getLectureSortKeys(entry) {
+  const nums = parseLectureNumbers(entry);
+  if (!nums.length) return null;
+  return { primary: nums[0], secondary: nums[nums.length - 1], nums };
+}
+
+/**
+ * Ensure lectures within each class appear in numerical order in the manifest.
+ * Interleaving with other classes is preserved (only same-class slots are reordered).
+ * Returns { manifest, fixed, issues } where issues lists class names that were out of order.
+ */
+function ensureClassLectureOrder(manifest) {
+  if (!Array.isArray(manifest) || manifest.length < 2) {
+    return { manifest: Array.isArray(manifest) ? manifest : [], fixed: false, issues: [] };
+  }
+
+  const groups = new Map();
+  manifest.forEach((entry, idx) => {
+    const classKey = getManifestClassKey(entry);
+    const keys = getLectureSortKeys(entry);
+    if (!classKey || !keys) return;
+    if (!groups.has(classKey)) groups.set(classKey, []);
+    groups.get(classKey).push({ idx, entry, primary: keys.primary, secondary: keys.secondary });
+  });
+
+  const result = manifest.slice();
+  const issues = [];
+
+  groups.forEach((items, classKey) => {
+    if (items.length < 2) return;
+    const sorted = items.slice().sort((a, b) =>
+      a.primary - b.primary ||
+      a.secondary - b.secondary ||
+      String(a.entry.title || '').localeCompare(String(b.entry.title || '')) ||
+      String(a.entry.file || '').localeCompare(String(b.entry.file || ''))
+    );
+    const outOfOrder = items.some((item, i) => item.entry.file !== sorted[i].entry.file);
+    if (!outOfOrder) return;
+    issues.push(classKey);
+    const slots = items.map(item => item.idx).sort((a, b) => a - b);
+    sorted.forEach((item, i) => { result[slots[i]] = item.entry; });
+  });
+
+  return { manifest: result, fixed: issues.length > 0, issues };
+}
+
+function applyClassLectureOrder(manifest, { toast = false } = {}) {
+  const { manifest: ordered, fixed, issues } = ensureClassLectureOrder(manifest);
+  if (toast && fixed) {
+    const label = issues.length <= 3 ? issues.join(', ') : `${issues.length} classes`;
+    showToast(`📚 Fixed lecture order within ${label}`);
+  }
+  return ordered;
+}
+
 // Build a raw URL — single quizzes/ prefix, no double nesting
 function rawUrl(filename) {
   return `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/quizzes/${filename}`;
@@ -6030,6 +6116,7 @@ function savePersonalQuizFromModal() {
   const isNew = idx < 0;
   if (idx >= 0) personalLibrary[idx] = entry;
   else personalLibrary.push(entry);
+  personalLibrary = applyClassLectureOrder(personalLibrary);
   savePersonalLibrary();
   closeAddQuizModal();
   if (librarySource !== 'personal') setLibrarySource('personal');
@@ -7170,7 +7257,7 @@ async function buildManifestForUpload(token, branch) {
   }
   const merged = latest.filter(e => e.file !== pending.file);
   merged.push(pending);
-  return JSON.stringify(merged, null, 2);
+  return JSON.stringify(applyClassLectureOrder(merged), null, 2);
 }
 
 async function upsertGitHubFile(path, content, commitMessage, token, branch) {
@@ -7638,6 +7725,7 @@ async function _prepareQuizAsync() {
   // Remove any existing entry with the same filename to avoid duplicates
   currentManifest = currentManifest.filter(e => e.file !== filename);
   currentManifest.push(newEntry);
+  currentManifest = applyClassLectureOrder(currentManifest, { toast: true });
 
   // generatedManifestEntry now holds the COMPLETE updated manifest, not just one entry
   generatedManifestEntry = JSON.stringify(currentManifest, null, 2);
@@ -7708,6 +7796,7 @@ async function _prepareManifestEditAsync() {
   if (idx !== -1) currentManifest[idx] = updated;
   else currentManifest.push(updated);
 
+  currentManifest = applyClassLectureOrder(currentManifest, { toast: true });
   libraryManifest = currentManifest;
   renderLibrary();
 
