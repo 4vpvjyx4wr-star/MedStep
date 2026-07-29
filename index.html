@@ -538,6 +538,17 @@ mark.medstep-highlight { background-color: rgba(230, 126, 34, 0.4); color: inher
 .obj-card{background:rgba(255,255,255,.02);border:1px solid var(--border);padding:18px;border-radius:13px;margin-bottom:10px}
 .progress-bg{height:7px;background:var(--border);border-radius:10px;margin-top:9px;overflow:hidden}
 .progress-fill{height:100%;background:var(--primary);transition:width .6s ease-out;border-radius:10px}
+.obj-q-links{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.obj-q-link{
+  padding:5px 10px;border-radius:8px;border:1px solid var(--border);
+  background:var(--card);color:var(--text);cursor:pointer;
+  font-family:var(--font-mono);font-size:.7rem;font-weight:700;
+  transition:.15s;
+}
+.obj-q-link:hover{border-color:var(--primary);background:rgba(255,255,255,.05);transform:translateY(-1px)}
+.obj-q-link.correct{border-color:var(--success);color:var(--success)}
+.obj-q-link.incorrect{border-color:var(--danger);color:var(--danger)}
+.obj-q-link.unanswered{opacity:.55}
 
 .export-panel{
   max-width:780px;margin:32px auto;text-align:left;
@@ -2303,8 +2314,13 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
       <div class="stat-card"><div class="stat-val" id="stat-avg-inc">0s</div><div class="stat-label">Incorrect Avg</div></div>
     </div>
 
-    <!-- Export Window -->
     <div class="export-panel">
+      <div class="export-panel-header">📚 Performance by Learning Objective</div>
+      <div id="objective-list" style="text-align:left"></div>
+    </div>
+
+    <!-- Export Window -->
+    <div class="export-panel" style="margin-top:36px">
       <div class="export-panel-header">📤 Export</div>
       <div class="export-btn-grid">
         <button class="export-btn" onclick="exportFlagged()">
@@ -2335,11 +2351,6 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
           <span class="export-sub" id="export-incorrect-json-count"></span>
         </button>
       </div>
-    </div>
-
-    <div class="export-panel" style="margin-top:36px">
-      <div class="export-panel-header">📚 Performance by Learning Objective</div>
-      <div id="objective-list" style="text-align:left"></div>
     </div>
   </div>
 
@@ -4257,7 +4268,7 @@ function updatePromptSummary() {
   // Update the copy button label to reflect question count
   const btn = document.getElementById('copy-prompt-btn');
   if (btn && !btn.textContent.startsWith('✓')) {
-    btn.textContent = `📋 Copy Prompt (${promptSettings.questions}Q)`;
+    btn.textContent = `📋 Copy Master Prompt (${promptSettings.questions}Q)`;
   }
 }
 
@@ -4350,7 +4361,7 @@ function copyMasterPrompt() {
   const prompt = buildSettingsPrompt();
   navigator.clipboard.writeText(prompt).then(() => {
     const btn = document.getElementById('copy-prompt-btn');
-    const orig = `📋 Copy Prompt (${promptSettings.questions}Q)`;
+    const orig = `📋 Copy Master Prompt (${promptSettings.questions}Q)`;
     btn.textContent = '✓ Copied!';
     showToast('📋 Master prompt copied!');
     setTimeout(() => { btn.textContent = orig; }, 2500);
@@ -5156,14 +5167,26 @@ function showResults(){
   document.getElementById('stat-avg-cor').innerText=cC?Math.round(correctTime/cC)+'s':'—';
   document.getElementById('stat-avg-inc').innerText=iC?Math.round(incorrectTime/iC)+'s':'—';
   const objMap={};
-  questions.forEach(q=>{const k=q.cited_learning_objective||'General';if(!objMap[k])objMap[k]={c:0,t:0};objMap[k].t++;if(q.userAnswer?.isCorrect)objMap[k].c++;});
+  questions.forEach((q,i)=>{
+    const k=q.cited_learning_objective||'General';
+    if(!objMap[k])objMap[k]={c:0,t:0,indices:[]};
+    objMap[k].t++;
+    objMap[k].indices.push(i);
+    if(q.userAnswer?.isCorrect)objMap[k].c++;
+  });
   const sorted=Object.entries(objMap).sort((a,b)=>(a[1].c/a[1].t)-(b[1].c/b[1].t));
   const list=document.getElementById('objective-list');
   list.innerHTML='';
   sorted.forEach(([k,v])=>{
     const p=Math.round((v.c/v.t)*100);
     const col=p>=80?'var(--success)':p>=60?'var(--primary)':'var(--danger)';
-    list.innerHTML+=`<div class="obj-card"><div style="display:flex;justify-content:space-between;font-size:.88rem;font-weight:700"><span style="opacity:.9">${k}</span><span style="color:${col};font-family:var(--font-mono)">${p}%</span></div><div class="progress-bg"><div class="progress-fill" style="width:${p}%;background:${col}"></div></div><div style="font-size:.68rem;opacity:.45;margin-top:7px;font-family:var(--font-mono)">${v.c} of ${v.t} correct</div></div>`;
+    const links=v.indices.map(i=>{
+      const q=questions[i];
+      const status=!q.userAnswer?'unanswered':q.userAnswer.isCorrect?'correct':'incorrect';
+      const mark=!q.userAnswer?'—':q.userAnswer.isCorrect?'✓':'✗';
+      return `<button type="button" class="obj-q-link ${status}" onclick="reviewObjectiveQuestion(decodeURIComponent('${encodeURIComponent(k)}'),${i})" title="Review Q${i+1}">Q${i+1} ${mark}</button>`;
+    }).join('');
+    list.innerHTML+=`<div class="obj-card"><div style="display:flex;justify-content:space-between;font-size:.88rem;font-weight:700"><span style="opacity:.9">${k}</span><span style="color:${col};font-family:var(--font-mono)">${p}%</span></div><div class="progress-bg"><div class="progress-fill" style="width:${p}%;background:${col}"></div></div><div style="font-size:.68rem;opacity:.45;margin-top:7px;font-family:var(--font-mono)">${v.c} of ${v.t} correct</div><div class="obj-q-links">${links}</div></div>`;
   });
   const flaggedCount=questions.filter(q=>q.flagged).length;
   const flaggedBtn=document.getElementById('review-flagged-btn');
@@ -5282,6 +5305,26 @@ function reviewFlaggedAnswers(){
   document.getElementById('quiz-screen').classList.remove('hidden');
   document.getElementById('back-to-results-btn').style.display='block';
   loadQuestion(indices[0]);
+  renderGrid();
+}
+
+function reviewObjectiveQuestion(loKey, startIdx){
+  const indices=[];
+  questions.forEach((q,i)=>{
+    if((q.cited_learning_objective||'General')===loKey) indices.push(i);
+  });
+  if(!indices.length){ showToast('No questions for this objective'); return; }
+  const start=indices.includes(startIdx)?startIdx:indices[0];
+  isReviewMode=true;
+  isFlaggedReviewMode=true;
+  flaggedReviewIndices=indices;
+  flaggedReviewPosByIdx=new Map(indices.map((idx,pos)=>[idx,pos]));
+  flaggedReviewPos=flaggedReviewPosByIdx.get(start)??0;
+
+  document.getElementById('results-screen').classList.add('hidden');
+  document.getElementById('quiz-screen').classList.remove('hidden');
+  document.getElementById('back-to-results-btn').style.display='block';
+  loadQuestion(start);
   renderGrid();
 }
 
