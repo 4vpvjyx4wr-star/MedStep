@@ -1,0 +1,1250 @@
+[
+  {
+    "question": "A 25-year-old medical student is asked to define the relationship between end-diastolic volume and stroke volume during a physiology lab. Which statement best describes that relationship?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define the parameters related to cardiac function: stroke volume, heart rate, ejection fraction and cardiac output.",
+    "options": [
+      {
+        "text": "Stroke volume increases as end-diastolic volume increases",
+        "isCorrect": true,
+        "rationale": "Correct because the Frank-Starling law states that stroke volume is proportional to end-diastolic volume; increased preload increases contraction force and stroke volume."
+      },
+      {
+        "text": "Stroke volume decreases as end-diastolic volume increases",
+        "isCorrect": false,
+        "rationale": "Wrong; this reverses the Frank-Starling relationship. It would be correct only if ventricular contractility were severely impaired so increased EDV could not augment stroke volume."
+      },
+      {
+        "text": "Stroke volume is independent of end-diastolic volume",
+        "isCorrect": false,
+        "rationale": "Wrong; stroke volume depends on preload (EDV) per Frank-Starling. It would be correct only in a hypothetical model where sarcomere length has no effect on force generation."
+      },
+      {
+        "text": "Stroke volume equals end-diastolic volume divided by heart rate",
+        "isCorrect": false,
+        "rationale": "Wrong; stroke volume equals EDV minus ESV. The given formula confuses volume and rate; it would be correct only if ESV were zero and units matched."
+      },
+      {
+        "text": "Stroke volume is determined solely by heart rate",
+        "isCorrect": false,
+        "rationale": "Wrong; stroke volume is influenced by preload, afterload, and contractility in addition to heart rate. It would be correct only in an oversimplified model ignoring preload and afterload."
+      }
+    ]
+  },
+  {
+    "question": "Which numerical expression correctly defines ejection fraction for a left ventricle with an end-diastolic volume of 120 mL and an end-systolic volume of 50 mL?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define the parameters related to cardiac function: stroke volume, heart rate, ejection fraction and cardiac output.",
+    "options": [
+      {
+        "text": "Ejection fraction equals 58 percent",
+        "isCorrect": true,
+        "rationale": "Correct: EF = (EDV - ESV)/EDV = (120 - 50)/120 = 70/120 ≈ 0.583 or 58% as defined in the lecture."
+      },
+      {
+        "text": "Ejection fraction equals 42 percent",
+        "isCorrect": false,
+        "rationale": "Wrong: 42% would be 50/120; that is ESV/EDV, not EF. It would be correct only if EF were miscalculated as ESV/EDV."
+      },
+      {
+        "text": "Ejection fraction equals 120 percent",
+        "isCorrect": false,
+        "rationale": "Wrong: EF cannot exceed 100%. This would be correct only if ESV were negative, which is physiologically impossible."
+      },
+      {
+        "text": "Ejection fraction equals 70 percent",
+        "isCorrect": false,
+        "rationale": "Wrong: 70 mL is the stroke volume, not the fraction. This would be correct only if EDV were 100 mL instead of 120 mL."
+      },
+      {
+        "text": "Ejection fraction equals 35 percent",
+        "isCorrect": false,
+        "rationale": "Wrong: 35% does not match the given volumes. It would be correct only if stroke volume were 42 mL for the given EDV."
+      }
+    ]
+  },
+  {
+    "question": "A student calculates cardiac output using a measured stroke volume of 70 mL and a heart rate of 75 beats per minute. Which value matches the correct cardiac output?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define the parameters related to cardiac function: stroke volume, heart rate, ejection fraction and cardiac output.",
+    "options": [
+      {
+        "text": "Cardiac output equals 5.25 liters per minute",
+        "isCorrect": true,
+        "rationale": "Correct: CO = SV × HR = 70 mL × 75 bpm = 5250 mL/min ≈ 5.25 L/min, consistent with the lecture equation."
+      },
+      {
+        "text": "Cardiac output equals 0.93 liters per minute",
+        "isCorrect": false,
+        "rationale": "Wrong: This would be the result of dividing rather than multiplying SV and HR. It would be correct only if units or calculation were misapplied."
+      },
+      {
+        "text": "Cardiac output equals 525 liters per minute",
+        "isCorrect": false,
+        "rationale": "Wrong: Off by two orders of magnitude; would be correct only if mL were misinterpreted as L without conversion."
+      },
+      {
+        "text": "Cardiac output equals 1.4 liters per minute",
+        "isCorrect": false,
+        "rationale": "Wrong: This value does not follow CO = SV × HR. It would be correct only if SV were 18.7 mL at that heart rate."
+      },
+      {
+        "text": "Cardiac output equals 70 liters per minute",
+        "isCorrect": false,
+        "rationale": "Wrong: Implausibly high; would be correct only if heart rate were 1000 bpm or SV massively larger."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the Poiseuille relationship between vessel radius and resistance to flow?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Basics of Hemodynamics and major equations",
+    "options": [
+      {
+        "text": "Resistance is inversely proportional to the fourth power of radius",
+        "isCorrect": true,
+        "rationale": "Correct: Poiseuille equation in the lecture states R = (8ηL)/(πr^4), so resistance ∝ 1/r^4."
+      },
+      {
+        "text": "Resistance is directly proportional to the fourth power of radius",
+        "isCorrect": false,
+        "rationale": "Wrong: This inverts the relationship. It would be correct only if the numerator and denominator were swapped in Poiseuille's law."
+      },
+      {
+        "text": "Resistance is independent of vessel radius",
+        "isCorrect": false,
+        "rationale": "Wrong: Radius is the dominant determinant per Poiseuille. It would be correct only in a model where viscosity and length dominate and radius is constant."
+      },
+      {
+        "text": "Resistance is inversely proportional to the square of radius",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture specifies the fourth power; square would underestimate the effect of radius changes. It would be correct only for a different flow regime not described here."
+      },
+      {
+        "text": "Resistance is directly proportional to vessel length squared",
+        "isCorrect": false,
+        "rationale": "Wrong: Poiseuille shows linear proportionality to length, not squared. It would be correct only if length dependence were nonlinear in a different model."
+      }
+    ]
+  },
+  {
+    "question": "A patient has a blood vessel whose radius is halved by atherosclerotic narrowing. According to the lecture's Poiseuille relationship, how does resistance change?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Basics of Hemodynamics and major equations",
+    "options": [
+      {
+        "text": "Resistance increases sixteenfold",
+        "isCorrect": true,
+        "rationale": "Correct: Because resistance ∝ 1/r^4, halving radius (r→r/2) increases resistance by 2^4 = 16, as stated in the lecture example."
+      },
+      {
+        "text": "Resistance increases fourfold",
+        "isCorrect": false,
+        "rationale": "Wrong: Fourfold corresponds to a square relationship. It would be correct only if resistance scaled with 1/r^2 instead of 1/r^4."
+      },
+      {
+        "text": "Resistance doubles",
+        "isCorrect": false,
+        "rationale": "Wrong: Doubling would be 1/r dependence. It would be correct only if resistance were linearly dependent on radius."
+      },
+      {
+        "text": "Resistance decreases by half",
+        "isCorrect": false,
+        "rationale": "Wrong: Narrowing cannot decrease resistance. It would be correct only if radius increased rather than decreased."
+      },
+      {
+        "text": "Resistance remains unchanged",
+        "isCorrect": false,
+        "rationale": "Wrong: Radius change alters resistance per Poiseuille. It would be correct only if viscosity and length changed to offset radius effect exactly."
+      }
+    ]
+  },
+  {
+    "question": "Which formula from the lecture gives wall stress (tension) in a thin-walled cylindrical chamber?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Basics of Hemodynamics and major equations",
+    "options": [
+      {
+        "text": "Wall stress equals pressure times radius divided by two wall thickness",
+        "isCorrect": true,
+        "rationale": "Correct: Laplace law in the lecture: T = P·r / (2·n), where n is wall thickness, matching this phrasing."
+      },
+      {
+        "text": "Wall stress equals pressure divided by radius times wall thickness",
+        "isCorrect": false,
+        "rationale": "Wrong: This misplaces variables. It would be correct only if the formula were rearranged incorrectly and thickness were in numerator."
+      },
+      {
+        "text": "Wall stress equals pressure times radius squared",
+        "isCorrect": false,
+        "rationale": "Wrong: Radius squared is not part of Laplace law for thin-walled cylinders. It would be correct only in a different geometric model."
+      },
+      {
+        "text": "Wall stress equals pressure times wall thickness divided by radius",
+        "isCorrect": false,
+        "rationale": "Wrong: This inverts the dependence on thickness. It would be correct only if thicker walls increased stress, which is opposite of Laplace law."
+      },
+      {
+        "text": "Wall stress equals pressure divided by two times radius",
+        "isCorrect": false,
+        "rationale": "Wrong: Missing wall thickness in denominator. It would be correct only if thickness were unity and omitted."
+      }
+    ]
+  },
+  {
+    "question": "A clinician measures left ventricular dP/dt during isovolumetric contraction. Which interpretation aligns with the lecture's description of dP/dt?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Revisit and better understand the concept of contractility ---- is it possible to quantify contractility? Is there a quantitative measurement that can accurately reflect contractility? Is dP/dt equal to contractility?",
+    "options": [
+      {
+        "text": "dP/dt reflects real-time changes in contractile performance",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states dP/dt is a quantitative indicator that can reflect real-time changes in contractility and can be measured invasively or estimated noninvasively."
+      },
+      {
+        "text": "dP/dt is unaffected by preload or afterload",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture notes dP/dt can be affected by preload and/or afterload; it is not an isolated measure of contractility."
+      },
+      {
+        "text": "dP/dt measures diastolic relaxation only",
+        "isCorrect": false,
+        "rationale": "Wrong: dP/dt during isovolumetric contraction measures systolic pressure rise, not diastolic relaxation. It would be correct only if measuring a different dP/dt phase."
+      },
+      {
+        "text": "dP/dt is always greater than 5000 mmHg per second",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture gives normal LV dP/dt > 1200 mmHg/s; 5000 is not the stated normal. It would be correct only in an extreme hyperdynamic state."
+      },
+      {
+        "text": "dP/dt equals the slope of ESPVR",
+        "isCorrect": false,
+        "rationale": "Wrong: ESPVR slope represents contractility independent of preload/afterload; dP/dt is a separate measure influenced by loading conditions. It would be correct only if both measures coincidentally matched."
+      }
+    ]
+  },
+  {
+    "question": "Which change in the Frank-Starling curve corresponds to an increase in afterload as described in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe Frank-Starling law. Elaborate how changes in preload, afterload and ventricular contractility affect cardiac output using Frank-Starling curve.",
+    "options": [
+      {
+        "text": "A downward shift of the curve at a given preload",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states increased afterload shifts the Frank-Starling curve downward, decreasing stroke volume at a given preload."
+      },
+      {
+        "text": "An upward shift of the curve at a given preload",
+        "isCorrect": false,
+        "rationale": "Wrong: Upward shift corresponds to increased contractility or decreased afterload. It would be correct only if inotropy increased instead."
+      },
+      {
+        "text": "A rightward shift with no change in stroke volume",
+        "isCorrect": false,
+        "rationale": "Wrong: Rightward shifts are not the described effect of afterload. It would be correct only if preload changed without affecting SV, which is not the afterload effect."
+      },
+      {
+        "text": "A steeper slope indicating increased compliance",
+        "isCorrect": false,
+        "rationale": "Wrong: Slope changes reflect contractility or compliance in other contexts; afterload causes a vertical displacement, not slope steepening. It would be correct only if compliance changed."
+      },
+      {
+        "text": "No change in the curve despite increased arterial pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture indicates afterload changes do alter the curve. It would be correct only if compensatory mechanisms perfectly offset afterload."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute vasodilation receives a vasodilator. According to the pressure-volume loop effects in the lecture, which immediate change is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze how changes in preload, afterload and ventricular contractility affect LV pressure-volume loop (changes in EDV, ESV, stroke volume, ESPVR, EDPVR), including primary and secondary effects.",
+    "options": [
+      {
+        "text": "Decreased end-systolic volume and increased stroke volume",
+        "isCorrect": true,
+        "rationale": "Correct: Decreased afterload lowers ESP and ESV, producing a shorter and wider PV loop with increased SV as described in the lecture."
+      },
+      {
+        "text": "Increased end-systolic volume and decreased stroke volume",
+        "isCorrect": false,
+        "rationale": "Wrong: That pattern occurs with increased afterload, not vasodilation. It would be correct only if afterload had increased."
+      },
+      {
+        "text": "No change in end-systolic volume but decreased end-diastolic volume",
+        "isCorrect": false,
+        "rationale": "Wrong: Vasodilation primarily affects afterload and ESV; EDV change is secondary. It would be correct only if preload simultaneously decreased."
+      },
+      {
+        "text": "Increased slope of ESPVR without volume changes",
+        "isCorrect": false,
+        "rationale": "Wrong: ESPVR slope reflects contractility, not afterload. It would be correct only if inotropy changed."
+      },
+      {
+        "text": "Widening of PV loop due to increased afterload",
+        "isCorrect": false,
+        "rationale": "Wrong: Widening due to increased afterload is incorrect; increased afterload narrows the loop. It would be correct only if wording reversed afterload effect."
+      }
+    ]
+  },
+  {
+    "question": "Which ventricular pressure-volume loop feature represents stroke work as taught in the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Draw and label ventricular pressure-volume loop derived from ventricular pressure and volume changes during the cardiac cycle.",
+    "options": [
+      {
+        "text": "The area enclosed by the loop",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states stroke work equals the area within the PV loop, representing mechanical work per beat."
+      },
+      {
+        "text": "The width of the loop",
+        "isCorrect": false,
+        "rationale": "Wrong: Width equals stroke volume, not stroke work. It would be correct only if work were defined solely by volume change."
+      },
+      {
+        "text": "The peak pressure at the top of the loop",
+        "isCorrect": false,
+        "rationale": "Wrong: Peak pressure is systolic pressure; it does not quantify work alone. It would be correct only if pressure were the only determinant of work."
+      },
+      {
+        "text": "The slope of the EDPVR",
+        "isCorrect": false,
+        "rationale": "Wrong: EDPVR slope reflects diastolic compliance, not stroke work. It would be correct only if diastolic properties determined work."
+      },
+      {
+        "text": "The distance between ESP and EDP curves",
+        "isCorrect": false,
+        "rationale": "Wrong: That distance is not a standard measure of work. It would be correct only in a nonstandard definition not used in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic systemic hypertension develops concentric left ventricular hypertrophy. Based on the lecture, which change in ventricular compliance and filling would you expect?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define ventricular preload, afterload and contractility and describe the factors that determine or modify them.",
+    "options": [
+      {
+        "text": "Decreased ventricular compliance with reduced end-diastolic volume",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes hypertrophy reduces compliance, causing larger pressure increases during filling and reduced EDV, contributing to diastolic dysfunction."
+      },
+      {
+        "text": "Increased ventricular compliance with increased end-diastolic volume",
+        "isCorrect": false,
+        "rationale": "Wrong: Hypertrophy lowers compliance. It would be correct only in eccentric remodeling with chamber dilation rather than concentric hypertrophy."
+      },
+      {
+        "text": "No change in compliance but increased stroke volume",
+        "isCorrect": false,
+        "rationale": "Wrong: Hypertrophy alters compliance; stroke volume may not increase. It would be correct only if compensatory mechanisms preserved filling."
+      },
+      {
+        "text": "Decreased compliance with increased ejection fraction",
+        "isCorrect": false,
+        "rationale": "Wrong: EF may be preserved or reduced; the key lecture point is reduced compliance and EDV. It would be correct only if systolic function were hyperdynamic."
+      },
+      {
+        "text": "Increased compliance with decreased end-systolic volume",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased compliance is opposite of expected. It would be correct only if remodeling produced dilation rather than hypertrophy."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best characterizes the ESPVR (end-systolic pressure-volume relationship) according to the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Draw and label ventricular pressure-volume loop derived from ventricular pressure and volume changes during the cardiac cycle.",
+    "options": [
+      {
+        "text": "A line whose slope reflects ventricular contractility",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states ESPVR slope represents ventricular contractility and is not affected by preload or afterload."
+      },
+      {
+        "text": "A curve reflecting diastolic filling properties",
+        "isCorrect": false,
+        "rationale": "Wrong: Diastolic filling is represented by EDPVR, not ESPVR. It would be correct only if diastolic and systolic relations were conflated."
+      },
+      {
+        "text": "A measure that increases with preload but not contractility",
+        "isCorrect": false,
+        "rationale": "Wrong: ESPVR slope is independent of preload; it changes with contractility. It would be correct only if preload altered contractile state acutely."
+      },
+      {
+        "text": "A relationship that flattens with increased inotropy",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased inotropy steepens (left-shifts) ESPVR. It would be correct only if contractility decreased instead."
+      },
+      {
+        "text": "A curve that represents passive ventricular stiffness",
+        "isCorrect": false,
+        "rationale": "Wrong: Passive stiffness is EDPVR. It would be correct only if ESPVR were misidentified."
+      }
+    ]
+  },
+  {
+    "question": "A 60-year-old with acute aortic stenosis has a pressure gradient between the left ventricle and aorta. According to the lecture's PV loop analysis, which primary PV loop changes are expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the LV pressure-volume loop changes under the following pathophysiological conditions and match the abnormal pressure-volume loops with these conditions: aortic stenosis.",
+    "options": [
+      {
+        "text": "Increased end-systolic volume and increased peak systolic pressure",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains stenosis increases outflow resistance causing higher ESP and ESV due to impaired emptying; this produces a taller, narrower loop."
+      },
+      {
+        "text": "Decreased end-systolic volume and decreased peak systolic pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: That pattern occurs with decreased afterload or increased contractility. It would be correct only if outflow resistance fell."
+      },
+      {
+        "text": "No change in volumes but loss of isovolumic phases",
+        "isCorrect": false,
+        "rationale": "Wrong: Loss of isovolumic phases is characteristic of regurgitant lesions, not stenosis. It would be correct only if valve incompetence were present."
+      },
+      {
+        "text": "Markedly increased end-diastolic volume with low systolic pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: AR causes increased EDV; low systolic pressure is not typical of AS. It would be correct only if combined severe systolic failure coexisted."
+      },
+      {
+        "text": "Narrowed loop with decreased end-diastolic pressure only",
+        "isCorrect": false,
+        "rationale": "Wrong: AS increases ESP and ESV; ED pressure may rise chronically. It would be correct only if preload fell without afterload change."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic aortic regurgitation demonstrates a wide PV loop with no true isovolumic phases. Which immediate hemodynamic explanation from the lecture accounts for this pattern?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the LV pressure-volume loop changes under the following pathophysiological conditions and match the abnormal pressure-volume loops with these conditions: aortic regurgitation.",
+    "options": [
+      {
+        "text": "Retrograde flow into the ventricle during relaxation and contraction phases",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states AR causes blood to flow back into the LV during isovolumic relaxation and contraction, eliminating true isovolumic phases and increasing EDV and ESV."
+      },
+      {
+        "text": "Obstruction to inflow across the mitral valve during diastole",
+        "isCorrect": false,
+        "rationale": "Wrong: Mitral inflow obstruction (mitral stenosis) narrows the loop; it would be correct only if MS were present instead of AR."
+      },
+      {
+        "text": "Complete absence of regurgitant flow with preserved valve closure",
+        "isCorrect": false,
+        "rationale": "Wrong: Absence of regurgitation would preserve isovolumic phases. It would be correct only if the aortic valve were competent."
+      },
+      {
+        "text": "Primary reduction in contractility without valvular involvement",
+        "isCorrect": false,
+        "rationale": "Wrong: Reduced contractility narrows the loop and lowers ESPVR slope; it would be correct only if systolic dysfunction were isolated."
+      },
+      {
+        "text": "Increased afterload due to systemic hypertension alone",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased afterload raises ESP and ESV but does not eliminate isovolumic phases. It would be correct only if AR were absent."
+      }
+    ]
+  },
+  {
+    "question": "A patient with mitral stenosis has reduced left ventricular filling. Based on the lecture, which net PV loop change is most consistent with this lesion?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze the LV pressure-volume loop changes under the following pathophysiological conditions and match the abnormal pressure-volume loops with these conditions: mitral stenosis.",
+    "options": [
+      {
+        "text": "Narrower loop with decreased end-diastolic volume and slightly decreased end-systolic volume",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains MS increases inflow resistance causing lower EDV and SV; ESV may fall secondary to reduced afterload, producing a narrower loop."
+      },
+      {
+        "text": "Wider loop with increased end-diastolic volume and decreased end-systolic volume",
+        "isCorrect": false,
+        "rationale": "Wrong: That pattern fits mitral regurgitation, not stenosis. It would be correct only if regurgitant flow were present."
+      },
+      {
+        "text": "Tall narrow loop with markedly increased peak systolic pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: Tall narrow loop with high ESP is typical of aortic stenosis. It would be correct only if outflow obstruction existed."
+      },
+      {
+        "text": "No change in loop dimensions but loss of isovolumic phases",
+        "isCorrect": false,
+        "rationale": "Wrong: Loss of isovolumic phases occurs with regurgitation. It would be correct only if valve incompetence were present."
+      },
+      {
+        "text": "Markedly increased end-diastolic pressure with unchanged volumes",
+        "isCorrect": false,
+        "rationale": "Wrong: MS reduces EDV; EDP may rise in LA but LV EDV typically decreases. It would be correct only with severe diastolic dysfunction independent of MS."
+      }
+    ]
+  },
+  {
+    "question": "A patient with severe mitral regurgitation has a tall v wave on left atrial pressure tracing. Which PV loop features and net effects described in the lecture explain this finding?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the LV pressure-volume loop changes under the following pathophysiological conditions and match the abnormal pressure-volume loops with these conditions: mitral regurgitation.",
+    "options": [
+      {
+        "text": "Backflow into the atrium during isovolumic contraction with increased LVEDV and decreased LVESV",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states MR causes regurgitation to LA during isovolumic phases producing a tall v wave, increased LVEDV from augmented filling, and decreased LVESV due to low outflow resistance."
+      },
+      {
+        "text": "Obstruction to LV outflow causing increased LVESV and decreased LVEDV",
+        "isCorrect": false,
+        "rationale": "Wrong: Outflow obstruction (AS) increases ESV and may reduce EDV; it would be correct only if MR were absent and AS present."
+      },
+      {
+        "text": "Reduced atrial contraction causing decreased LVEDV and increased LVESV",
+        "isCorrect": false,
+        "rationale": "Wrong: Reduced atrial contraction lowers EDV; it would be correct only if atrial systole were impaired, not in MR."
+      },
+      {
+        "text": "Loss of systolic ejection into the aorta with preserved isovolumic phases",
+        "isCorrect": false,
+        "rationale": "Wrong: MR preserves ejection but diverts some to LA and eliminates true isovolumic phases. It would be correct only in complete outflow obstruction."
+      },
+      {
+        "text": "Primary increase in ventricular compliance with unchanged atrial pressures",
+        "isCorrect": false,
+        "rationale": "Wrong: MR elevates LA pressure (v wave). Increased compliance alone would not produce a tall v wave; it would be correct only if atrial pressures remained normal."
+      }
+    ]
+  },
+  {
+    "question": "During an acute increase in preload from rapid fluid infusion, which immediate primary PV loop change does the lecture predict before secondary compensations occur?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze how changes in preload, afterload and ventricular contractility affect LV pressure-volume loop (changes in EDV, ESV, stroke volume, ESPVR, EDPVR), including primary and secondary effects.",
+    "options": [
+      {
+        "text": "Rightward shift of isovolumic contraction with increased stroke volume",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes increased preload shifting the PV loop rightward (higher EDV) and widening the loop due to increased SV per Frank-Starling as a primary effect."
+      },
+      {
+        "text": "Leftward shift of isovolumic contraction with decreased stroke volume",
+        "isCorrect": false,
+        "rationale": "Wrong: That pattern corresponds to decreased preload (e.g., hemorrhage). It would be correct only if preload fell."
+      },
+      {
+        "text": "Steepening of ESPVR slope without volume change",
+        "isCorrect": false,
+        "rationale": "Wrong: ESPVR slope reflects contractility, not preload. It would be correct only if inotropy changed."
+      },
+      {
+        "text": "Immediate decrease in end-systolic pressure with no volume change",
+        "isCorrect": false,
+        "rationale": "Wrong: Preload increase primarily affects EDV and SV; ESP and ESV are unchanged initially. It would be correct only if afterload suddenly decreased."
+      },
+      {
+        "text": "Loss of isovolumic phases due to regurgitation",
+        "isCorrect": false,
+        "rationale": "Wrong: Loss of isovolumic phases is characteristic of valvular regurgitation, not preload increase. It would be correct only if valve incompetence occurred."
+      }
+    ]
+  },
+  {
+    "question": "A pharmacology question: A drug that increases intracellular calcium availability in cardiomyocytes is administered. According to the lecture, which PV loop change is most directly expected as a primary effect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe Frank-Starling law. Elaborate how changes in preload, afterload and ventricular contractility affect cardiac output using Frank-Starling curve.",
+    "options": [
+      {
+        "text": "Leftward shift and steeper slope of ESPVR with decreased end-systolic volume",
+        "isCorrect": true,
+        "rationale": "Correct: Increased contractility (positive inotropy) steepens ESPVR and reduces ESV, widening the PV loop, as the lecture links inotropy to ESPVR slope changes."
+      },
+      {
+        "text": "Rightward shift of EDPVR with increased end-diastolic pressure only",
+        "isCorrect": false,
+        "rationale": "Wrong: EDPVR reflects diastolic compliance; increased Ca2+ primarily affects systolic contractility. It would be correct only if diastolic stiffness changed."
+      },
+      {
+        "text": "Loss of isovolumic phases with increased end-diastolic volume",
+        "isCorrect": false,
+        "rationale": "Wrong: Loss of isovolumic phases indicates valvular regurgitation, not increased intracellular calcium. It would be correct only if a valve became incompetent."
+      },
+      {
+        "text": "Increased end-systolic volume with decreased stroke volume",
+        "isCorrect": false,
+        "rationale": "Wrong: That pattern occurs with decreased contractility or increased afterload. It would be correct only if the drug were negative inotropic."
+      },
+      {
+        "text": "No change in ESPVR slope but increased heart rate only",
+        "isCorrect": false,
+        "rationale": "Wrong: A positive inotrope changes ESPVR slope. It would be correct only if the drug were a pure chronotrope without inotropic effect."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following factors listed in the lecture most directly increases venous return and thereby preload?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define ventricular preload, afterload and contractility and describe the factors that determine or modify them.",
+    "options": [
+      {
+        "text": "Decreased venous compliance from venoconstriction",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states decreased venous compliance (e.g., venoconstriction) raises venous pressure and venous return, increasing preload."
+      },
+      {
+        "text": "Increased arterial compliance from atherosclerosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Arterial compliance changes affect arterial pressure and afterload more than venous return. It would be correct only if venous compliance changed."
+      },
+      {
+        "text": "Reduced heart rate causing shorter filling time",
+        "isCorrect": false,
+        "rationale": "Wrong: Reduced HR lengthens filling time and tends to increase EDV, not shorten it. It would be correct only if HR increased."
+      },
+      {
+        "text": "Increased outflow resistance at the aortic valve",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased outflow resistance raises afterload and can secondarily increase EDV, but it does not directly increase venous return. It would be correct only as a secondary effect over several beats."
+      },
+      {
+        "text": "Decreased circulating blood volume from hemorrhage",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemorrhage reduces venous return and preload. It would be correct only if volume increased instead."
+      }
+    ]
+  },
+  {
+    "question": "A trainee asks which variable is the primary determinant of arterial pulse pressure according to the lecture equations. Which response is most consistent with the slides?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Basics of Hemodynamics and major equations",
+    "options": [
+      {
+        "text": "Pulse pressure equals systolic minus diastolic arterial pressure",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture defines pulse pressure as PP = SBP - DBP; pulse pressure magnitude is influenced by stroke volume and arterial compliance."
+      },
+      {
+        "text": "Pulse pressure equals mean arterial pressure divided by heart rate",
+        "isCorrect": false,
+        "rationale": "Wrong: MAP = DBP + 1/3 PP per the lecture; PP is not MAP/HR. It would be correct only in a nonstandard derivation."
+      },
+      {
+        "text": "Pulse pressure equals cardiac output times total peripheral resistance",
+        "isCorrect": false,
+        "rationale": "Wrong: MAP = CO × TPR; PP is SBP-DBP, not CO×TPR. It would be correct only if PP were equated to MAP."
+      },
+      {
+        "text": "Pulse pressure equals diastolic pressure minus systolic pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: This reverses the subtraction order. It would be correct only if negative values were intended."
+      },
+      {
+        "text": "Pulse pressure equals stroke volume divided by heart rate",
+        "isCorrect": false,
+        "rationale": "Wrong: PP relates to SV and arterial compliance but is not SV/HR. It would be correct only in a misapplied formula."
+      }
+    ]
+  },
+  {
+    "question": "Which statement from the lecture best explains why veins can hold more blood at a given pressure than arteries?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define ventricular preload, afterload and contractility and describe the factors that determine or modify them.",
+    "options": [
+      {
+        "text": "Veins have higher compliance than arteries",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains veins hold larger volume at a given pressure due to higher compliance (capacitance) compared with arteries."
+      },
+      {
+        "text": "Veins have thicker walls than arteries",
+        "isCorrect": false,
+        "rationale": "Wrong: Veins have thinner walls; thicker walls would reduce compliance. It would be correct only if vein histology were reversed."
+      },
+      {
+        "text": "Veins have higher resistance than arteries",
+        "isCorrect": false,
+        "rationale": "Wrong: Veins generally have lower resistance; higher resistance would not explain greater volume storage. It would be correct only in pathological venous obstruction."
+      },
+      {
+        "text": "Veins have higher pulse pressure than arteries",
+        "isCorrect": false,
+        "rationale": "Wrong: Pulse pressure is greater in arteries. It would be correct only if venous pressures were arterialized."
+      },
+      {
+        "text": "Veins have greater elastic recoil than arteries",
+        "isCorrect": false,
+        "rationale": "Wrong: Greater elastic recoil would lower compliance. It would be correct only if veins behaved like stiff arteries."
+      }
+    ]
+  },
+  {
+    "question": "A patient with systolic heart failure has reduced contractility. According to the lecture's PV loop analysis, which primary change is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze how changes in preload, afterload and ventricular contractility affect LV pressure-volume loop (changes in EDV, ESV, stroke volume, ESPVR, EDPVR), including primary and secondary effects.",
+    "options": [
+      {
+        "text": "Decreased slope of ESPVR with increased end-systolic volume",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture indicates decreased inotropy lowers ESPVR slope (right shift) and increases ESV, narrowing the PV loop and reducing SV."
+      },
+      {
+        "text": "Increased slope of ESPVR with decreased end-systolic volume",
+        "isCorrect": false,
+        "rationale": "Wrong: That pattern reflects increased contractility. It would be correct only if a positive inotrope were given."
+      },
+      {
+        "text": "No change in ESPVR slope but immediate loss of isovolumic phases",
+        "isCorrect": false,
+        "rationale": "Wrong: Loss of isovolumic phases indicates valvular regurgitation, not isolated systolic failure. It would be correct only if a valve lesion coexisted."
+      },
+      {
+        "text": "Decreased end-diastolic volume with increased stroke volume",
+        "isCorrect": false,
+        "rationale": "Wrong: Reduced contractility typically increases EDV due to impaired ejection; SV falls. It would be correct only if preload fell simultaneously."
+      },
+      {
+        "text": "Increased ESPVR slope with unchanged volumes",
+        "isCorrect": false,
+        "rationale": "Wrong: ESPVR slope increases with inotropy, not with systolic failure. It would be correct only if contractility paradoxically rose."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the interdependence of preload, afterload, and contractility as emphasized in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze how changes in preload, afterload and ventricular contractility affect LV pressure-volume loop (changes in EDV, ESV, stroke volume, ESPVR, EDPVR), including primary and secondary effects.",
+    "options": [
+      {
+        "text": "Primary changes provoke secondary adjustments that attenuate the initial effect",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains primary effects on PV loop are modified by secondary changes (e.g., increased SV raises arterial pressure, increasing afterload), which attenuate the initial change."
+      },
+      {
+        "text": "Preload, afterload, and contractility change independently without interaction",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture emphasizes interdependence; they do interact. It would be correct only in an isolated experimental model preventing feedback."
+      },
+      {
+        "text": "Secondary effects always amplify the primary effect",
+        "isCorrect": false,
+        "rationale": "Wrong: Secondary effects tend to attenuate, not amplify, the primary effect per the lecture. It would be correct only if feedback were positive rather than negative."
+      },
+      {
+        "text": "Only contractility changes produce secondary effects",
+        "isCorrect": false,
+        "rationale": "Wrong: All three parameters can produce secondary effects. It would be correct only if preload and afterload were fixed."
+      },
+      {
+        "text": "Secondary effects occur instantaneously and are larger than primary effects",
+        "isCorrect": false,
+        "rationale": "Wrong: Secondary effects occur over several beats and are smaller than primary effects. It would be correct only if compensatory mechanisms were immediate and exaggerated."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute hemorrhage has decreased preload. According to the lecture, what is the immediate primary PV loop change before compensatory mechanisms?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze how changes in preload, afterload and ventricular contractility affect LV pressure-volume loop (changes in EDV, ESV, stroke volume, ESPVR, EDPVR), including primary and secondary effects.",
+    "options": [
+      {
+        "text": "Leftward shift of isovolumic contraction with decreased stroke volume",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states decreased preload shifts the PV loop leftward (lower EDV) and narrows the loop due to reduced SV as a primary effect."
+      },
+      {
+        "text": "Rightward shift of isovolumic contraction with increased stroke volume",
+        "isCorrect": false,
+        "rationale": "Wrong: That pattern corresponds to increased preload. It would be correct only if volume increased."
+      },
+      {
+        "text": "Immediate increase in end-systolic volume with no EDV change",
+        "isCorrect": false,
+        "rationale": "Wrong: ESV typically does not change immediately with preload; EDV falls first. It would be correct only if afterload rose acutely."
+      },
+      {
+        "text": "Steepening of ESPVR slope with increased contractility",
+        "isCorrect": false,
+        "rationale": "Wrong: ESPVR slope changes reflect contractility, not preload. It would be correct only if sympathetic activation occurred simultaneously."
+      },
+      {
+        "text": "Loss of isovolumic phases due to valve incompetence",
+        "isCorrect": false,
+        "rationale": "Wrong: Valve incompetence is unrelated to acute hemorrhage. It would be correct only if a valvular lesion were present."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following lecture-derived statements correctly links venous compliance and preload?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define ventricular preload, afterload and contractility and describe the factors that determine or modify them.",
+    "options": [
+      {
+        "text": "Lower venous compliance increases venous pressure and raises preload",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains decreased venous compliance (venoconstriction) generates higher venous pressure at a given volume, increasing preload."
+      },
+      {
+        "text": "Higher venous compliance increases venous pressure and lowers preload",
+        "isCorrect": false,
+        "rationale": "Wrong: Higher compliance reduces pressure for a given volume, lowering venous pressure; it would be correct only if compliance decreased."
+      },
+      {
+        "text": "Venous compliance does not affect preload",
+        "isCorrect": false,
+        "rationale": "Wrong: Venous compliance is a major determinant of venous pressure and preload per the lecture. It would be correct only if veins were rigid."
+      },
+      {
+        "text": "Venous compliance only affects afterload, not preload",
+        "isCorrect": false,
+        "rationale": "Wrong: Venous compliance affects preload directly. It would be correct only if venous properties influenced arterial resistance exclusively."
+      },
+      {
+        "text": "Venous compliance increases with sympathetic stimulation raising preload",
+        "isCorrect": false,
+        "rationale": "Wrong: Sympathetic stimulation causes venoconstriction, decreasing compliance and raising preload. It would be correct only if sympathetic tone caused venodilation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute pulmonary valve stenosis primarily affects which ventricular parameter according to the lecture's definitions?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define ventricular preload, afterload and contractility and describe the factors that determine or modify them.",
+    "options": [
+      {
+        "text": "Afterload of the right ventricle increases",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture defines afterload as the resistance the ventricle must overcome to eject; pulmonary valve stenosis raises RV outflow resistance, increasing RV afterload."
+      },
+      {
+        "text": "Preload of the left ventricle increases",
+        "isCorrect": false,
+        "rationale": "Wrong: Pulmonary valve stenosis primarily affects RV afterload; LV preload is not the primary parameter. It would be correct only if systemic venous return changed."
+      },
+      {
+        "text": "Contractility of the left ventricle decreases immediately",
+        "isCorrect": false,
+        "rationale": "Wrong: Valve stenosis affects afterload; contractility changes are secondary. It would be correct only if myocardial ischemia occurred."
+      },
+      {
+        "text": "Systemic arterial compliance increases",
+        "isCorrect": false,
+        "rationale": "Wrong: Pulmonary valve disease does not directly change systemic arterial compliance. It would be correct only in a systemic vascular disorder."
+      },
+      {
+        "text": "Venous compliance increases causing higher preload",
+        "isCorrect": false,
+        "rationale": "Wrong: Pulmonary stenosis does not directly increase venous compliance. It would be correct only if venous tone changed independently."
+      }
+    ]
+  },
+  {
+    "question": "Which lecture equation links mean arterial pressure to cardiac output and systemic resistance?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Basics of Hemodynamics and major equations",
+    "options": [
+      {
+        "text": "Mean arterial pressure equals cardiac output times total peripheral resistance",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture provides MAP = CO × TPR as the relationship between arterial pressure, cardiac output, and systemic resistance."
+      },
+      {
+        "text": "Mean arterial pressure equals stroke volume times heart rate",
+        "isCorrect": false,
+        "rationale": "Wrong: SV × HR equals CO, not MAP. It would be correct only if TPR were unity and units matched."
+      },
+      {
+        "text": "Mean arterial pressure equals systolic minus diastolic pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: MAP is not simply SBP-DBP; that is pulse pressure. It would be correct only in a misstatement."
+      },
+      {
+        "text": "Mean arterial pressure equals diastolic pressure divided by pulse pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: MAP = DBP + 1/3 PP per the lecture. The given formula is incorrect and would be correct only in a nonstandard derivation."
+      },
+      {
+        "text": "Mean arterial pressure equals end-diastolic volume times ejection fraction",
+        "isCorrect": false,
+        "rationale": "Wrong: MAP is determined by CO and TPR, not directly by EDV and EF. It would be correct only if CO were substituted and TPR assumed constant."
+      }
+    ]
+  },
+  {
+    "question": "A patient with increased systemic vascular resistance is given an afterload-reducing agent. According to the lecture, which immediate Frank-Starling curve shift is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe Frank-Starling law. Elaborate how changes in preload, afterload and ventricular contractility affect cardiac output using Frank-Starling curve.",
+    "options": [
+      {
+        "text": "Upward shift producing greater stroke volume at the same preload",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states decreased afterload shifts the Frank-Starling curve upward, increasing SV at a given preload."
+      },
+      {
+        "text": "Downward shift producing lower stroke volume at the same preload",
+        "isCorrect": false,
+        "rationale": "Wrong: Downward shift corresponds to increased afterload. It would be correct only if afterload rose."
+      },
+      {
+        "text": "Rightward shift with no change in stroke volume",
+        "isCorrect": false,
+        "rationale": "Wrong: Rightward shifts are preload effects. It would be correct only if preload changed without affecting SV."
+      },
+      {
+        "text": "Steepening of the curve due to reduced ventricular compliance",
+        "isCorrect": false,
+        "rationale": "Wrong: Compliance affects diastolic curve; Frank-Starling slope changes reflect contractility, not afterload. It would be correct only if contractility changed."
+      },
+      {
+        "text": "No change in the curve despite reduced arterial resistance",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture indicates afterload reduction alters the curve. It would be correct only if compensatory mechanisms exactly offset the drug effect."
+      }
+    ]
+  },
+  {
+    "question": "A student is asked which clinical sign is most likely audible when turbulent flow develops in a cardiac valve, per the lecture's laminar versus turbulent flow discussion. Which sign is most consistent?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Basics of Hemodynamics and major equations",
+    "options": [
+      {
+        "text": "A heart murmur produced by turbulent flow",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes laminar flow is silent while turbulent flow is audible, exemplified by heart murmurs."
+      },
+      {
+        "text": "A decrease in pulse pressure without sound",
+        "isCorrect": false,
+        "rationale": "Wrong: Pulse pressure changes are not the primary audible sign of turbulence. It would be correct only if turbulence affected stroke volume without producing sound."
+      },
+      {
+        "text": "A continuous silent bruit in the aorta",
+        "isCorrect": false,
+        "rationale": "Wrong: Bruits are audible turbulent sounds; calling them silent contradicts the concept. It would be correct only if auscultation were not performed."
+      },
+      {
+        "text": "An increase in laminar flow velocity without noise",
+        "isCorrect": false,
+        "rationale": "Wrong: Laminar flow is silent per the lecture. It would be correct only if flow remained laminar despite velocity change."
+      },
+      {
+        "text": "A reduction in hematocrit causing audible flow",
+        "isCorrect": false,
+        "rationale": "Wrong: Hematocrit affects viscosity and Reynolds number but reduced hematocrit tends to lower viscosity and may promote turbulence; the lecture links turbulence to audible murmurs, not to reduced hematocrit alone."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best summarizes how ventricular compliance is represented on the PV diagram per the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze how changes in preload, afterload and ventricular contractility affect LV pressure-volume loop (changes in EDV, ESV, stroke volume, ESPVR, EDPVR), including primary and secondary effects.",
+    "options": [
+      {
+        "text": "The slope of the end-diastolic pressure-volume relationship equals the reciprocal of compliance",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states the EDPVR slope represents the reciprocal of ventricular compliance; a larger slope indicates lower compliance."
+      },
+      {
+        "text": "The slope of ESPVR equals the reciprocal of compliance",
+        "isCorrect": false,
+        "rationale": "Wrong: ESPVR reflects systolic function/contractility, not diastolic compliance. It would be correct only if systolic and diastolic relations were conflated."
+      },
+      {
+        "text": "Compliance is shown by the width of the PV loop",
+        "isCorrect": false,
+        "rationale": "Wrong: Width equals stroke volume; compliance is reflected by EDPVR slope. It would be correct only if SV were used as a proxy for compliance."
+      },
+      {
+        "text": "A flatter EDPVR slope indicates lower compliance",
+        "isCorrect": false,
+        "rationale": "Wrong: A flatter slope indicates higher compliance. It would be correct only if slope interpretation were reversed."
+      },
+      {
+        "text": "EDPVR position is independent of ventricular stiffness",
+        "isCorrect": false,
+        "rationale": "Wrong: EDPVR directly reflects stiffness/compliance. It would be correct only in a model where stiffness did not affect pressure-volume relation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with increased sympathetic tone during exercise experiences multiple hemodynamic changes. According to the lecture, which combination best reflects primary effects of sympathetic activation on the heart?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe Frank-Starling law. Elaborate how changes in preload, afterload and ventricular contractility affect cardiac output using Frank-Starling curve.",
+    "options": [
+      {
+        "text": "Increased contractility with upward Frank-Starling shift and increased stroke volume",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists sympathetic activation as a major positive inotropic influence that shifts the Frank-Starling curve upward and increases SV."
+      },
+      {
+        "text": "Decreased contractility with downward Frank-Starling shift and decreased stroke volume",
+        "isCorrect": false,
+        "rationale": "Wrong: Sympathetic activation increases, not decreases, contractility. It would be correct only with β-blocker administration."
+      },
+      {
+        "text": "No change in contractility but decreased preload",
+        "isCorrect": false,
+        "rationale": "Wrong: Sympathetic tone increases contractility and often venous return; it would be correct only if sympathetic effects were blocked."
+      },
+      {
+        "text": "Loss of isovolumic phases with increased end-diastolic volume",
+        "isCorrect": false,
+        "rationale": "Wrong: Loss of isovolumic phases indicates valvular regurgitation, not sympathetic activation. It would be correct only if a valve lesion coincided."
+      },
+      {
+        "text": "Increased afterload with decreased ejection fraction only",
+        "isCorrect": false,
+        "rationale": "Wrong: Sympathetic activation typically increases contractility and may increase arterial pressure, but the primary lecture point is increased inotropy and SV. It would be correct only if vasoconstriction dominated without inotropic effect."
+      }
+    ]
+  },
+  {
+    "question": "A clinical vignette: A 70-year-old with long-standing aortic stenosis develops concentric LV hypertrophy and later diastolic dysfunction. Using the lecture's PV loop and compliance concepts, which sequence best explains the progression?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the LV pressure-volume loop changes under the following pathophysiological conditions and match the abnormal pressure-volume loops with these conditions: aortic stenosis.",
+    "options": [
+      {
+        "text": "Chronic outflow resistance leads to hypertrophy, reduced compliance, and decreased EDV",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains chronic AS increases afterload causing LV hypertrophy, which lowers compliance and can reduce EDV leading to diastolic dysfunction."
+      },
+      {
+        "text": "Acute volume overload causes chamber dilation and increased compliance",
+        "isCorrect": false,
+        "rationale": "Wrong: Acute volume overload (e.g., AR) causes dilation and increased EDV; it would be correct only if regurgitation, not AS, were the primary lesion."
+      },
+      {
+        "text": "Primary loss of contractility precedes hypertrophy and reduces afterload",
+        "isCorrect": false,
+        "rationale": "Wrong: In AS, increased afterload precedes hypertrophy; contractility loss is secondary. It would be correct only in primary cardiomyopathy."
+      },
+      {
+        "text": "Mitral inflow obstruction causes hypertrophy and increased EDV",
+        "isCorrect": false,
+        "rationale": "Wrong: Mitral stenosis reduces EDV and does not cause LV hypertrophy from outflow resistance. It would be correct only if MS were misdiagnosed."
+      },
+      {
+        "text": "Venous dilation increases preload causing concentric hypertrophy",
+        "isCorrect": false,
+        "rationale": "Wrong: Venous dilation lowers preload; concentric hypertrophy arises from pressure overload, not increased preload. It would be correct only if chronic volume overload were present."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute severe aortic regurgitation presents with a wide pulse pressure. Based on the lecture, which PV loop and arterial pressure explanation accounts for this finding?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the LV pressure-volume loop changes under the following pathophysiological conditions and match the abnormal pressure-volume loops with these conditions: aortic regurgitation.",
+    "options": [
+      {
+        "text": "Increased LVEDV with regurgitant flow reduces net forward stroke volume and increases pulse pressure",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes AR increases LVEDV and LVESV with large SV but reduced net forward output and larger aortic pulse pressure due to rapid runoff and increased stroke volume into the arterial tree."
+      },
+      {
+        "text": "Decreased LVEDV with increased forward stroke volume narrowing pulse pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: Decreased EDV and increased forward SV do not describe AR. It would be correct only if preload fell and contractility rose."
+      },
+      {
+        "text": "Loss of isovolumic contraction with decreased arterial pulse pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: AR eliminates isovolumic phases but typically increases pulse pressure. It would be correct only if systemic vascular resistance rose dramatically."
+      },
+      {
+        "text": "Increased afterload causing tall narrow PV loop and wide pulse pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased afterload (AS) produces tall narrow loops but not wide pulse pressure. It would be correct only if AS coexisted with AR."
+      },
+      {
+        "text": "Primary diastolic dysfunction causing low stroke volume and wide pulse pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: Diastolic dysfunction usually reduces stroke volume and may narrow pulse pressure. It would be correct only with other compensatory changes."
+      }
+    ]
+  },
+  {
+    "question": "A 55-year-old with chronic mitral regurgitation is asymptomatic but has an enlarged left ventricle on imaging. According to the lecture, which PV loop and net forward output pattern explains preserved total stroke volume but reduced net forward flow?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the LV pressure-volume loop changes under the following pathophysiological conditions and match the abnormal pressure-volume loops with these conditions: mitral regurgitation.",
+    "options": [
+      {
+        "text": "Increased LVEDV and decreased LVESV producing a wider loop with part of stroke volume regurgitant to the atrium",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes MR as increasing LVEDV and decreasing LVESV, widening the loop; although total SV rises, net forward SV to the aorta is reduced because some ejected volume regurgitates to the LA."
+      },
+      {
+        "text": "Decreased LVEDV and increased LVESV producing a narrower loop with increased forward output",
+        "isCorrect": false,
+        "rationale": "Wrong: That pattern is opposite MR; it would be correct only if inflow obstruction or systolic failure predominated."
+      },
+      {
+        "text": "Tall narrow loop with increased peak pressure and unchanged volumes",
+        "isCorrect": false,
+        "rationale": "Wrong: Tall narrow loop is typical of AS, not MR. It would be correct only if outflow obstruction were present."
+      },
+      {
+        "text": "Loss of isovolumic phases with decreased LVEDV and increased net forward stroke volume",
+        "isCorrect": false,
+        "rationale": "Wrong: MR causes loss of isovolumic phases but increases EDV; net forward SV typically decreases. It would be correct only if regurgitant fraction were negligible."
+      },
+      {
+        "text": "Flattened ESPVR slope with increased ESV and decreased EDV",
+        "isCorrect": false,
+        "rationale": "Wrong: Flattened ESPVR indicates reduced contractility; MR usually shows increased EDV and decreased ESV. It would be correct only with concurrent systolic dysfunction."
+      }
+    ]
+  },
+  {
+    "question": "A physiology lab asks students to predict how an isolated increase in ventricular inotropy affects end-diastolic pressure-volume relationship (EDPVR) and end-systolic pressure-volume relationship (ESPVR). Which prediction matches the lecture's independent effects?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze how changes in preload, afterload and ventricular contractility affect LV pressure-volume loop (changes in EDV, ESV, stroke volume, ESPVR, EDPVR), including primary and secondary effects.",
+    "options": [
+      {
+        "text": "ESPVR slope increases while EDPVR remains unchanged initially",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states increased inotropy steepens ESPVR (left shift) reflecting systolic function; EDPVR (diastolic curve) is not directly altered by contractility initially."
+      },
+      {
+        "text": "EDPVR slope increases while ESPVR remains unchanged",
+        "isCorrect": false,
+        "rationale": "Wrong: EDPVR reflects diastolic compliance; contractility primarily affects ESPVR. It would be correct only if diastolic stiffness changed."
+      },
+      {
+        "text": "Both ESPVR and EDPVR slopes decrease simultaneously",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased inotropy increases ESPVR slope; simultaneous decrease would indicate global myocardial depression. It would be correct only in pathology."
+      },
+      {
+        "text": "No change in either ESPVR or EDPVR despite increased contractility",
+        "isCorrect": false,
+        "rationale": "Wrong: Contractility changes ESPVR per the lecture. It would be correct only if measurement sensitivity were insufficient."
+      },
+      {
+        "text": "Loss of isovolumic phases with increased EDV",
+        "isCorrect": false,
+        "rationale": "Wrong: Loss of isovolumic phases indicates valvular regurgitation, not isolated inotropy change. It would be correct only if a valve lesion were present."
+      }
+    ]
+  },
+  {
+    "question": "A student asks whether dP/dt and ESPVR slope are interchangeable measures of contractility based on the lecture. Which nuanced statement best reflects the lecture's teaching?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Revisit and better understand the concept of contractility ---- is it possible to quantify contractility? Is there a quantitative measurement that can accurately reflect contractility? Is dP/dt equal to contractility?",
+    "options": [
+      {
+        "text": "ESPVR slope is a load-independent index of contractility while dP/dt can be influenced by loading conditions",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture indicates ESPVR slope reflects contractility independent of preload/afterload, whereas dP/dt, though useful, can be affected by preload and afterload."
+      },
+      {
+        "text": "dP/dt is completely load-independent and equals ESPVR slope",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture explicitly states dP/dt can be affected by preload and/or afterload; it is not strictly load-independent like ESPVR slope. It would be correct only if dP/dt were measured under constant loading conditions."
+      },
+      {
+        "text": "Both dP/dt and ESPVR slope are equally unreliable for contractility",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture presents ESPVR slope as a reliable index; dP/dt is useful but influenced by loading. It would be correct only if measurement techniques were flawed."
+      },
+      {
+        "text": "ESPVR slope measures diastolic function while dP/dt measures systolic function",
+        "isCorrect": false,
+        "rationale": "Wrong: ESPVR reflects systolic contractility; EDPVR reflects diastolic function. dP/dt measures systolic pressure rise. It would be correct only if terms were swapped."
+      },
+      {
+        "text": "Neither measure can be obtained noninvasively per the lecture",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture notes dP/dt can be estimated noninvasively and noninvasive methods reduce need for catheterization for PV data. It would be correct only if noninvasive techniques were unavailable."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute vasoconstriction increases total peripheral resistance. According to the lecture, which immediate effect on mean arterial pressure and cardiac output is expected if cardiac output remains unchanged initially?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Basics of Hemodynamics and major equations",
+    "options": [
+      {
+        "text": "Mean arterial pressure increases because MAP = CO × TPR",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture provides MAP = CO × TPR; if TPR rises and CO is unchanged initially, MAP will increase."
+      },
+      {
+        "text": "Mean arterial pressure decreases because MAP inversely relates to TPR",
+        "isCorrect": false,
+        "rationale": "Wrong: MAP is directly proportional to TPR per the lecture. It would be correct only if CO fell proportionally more than TPR rose."
+      },
+      {
+        "text": "Cardiac output increases because MAP equals CO divided by TPR",
+        "isCorrect": false,
+        "rationale": "Wrong: MAP = CO × TPR, not CO/TPR. It would be correct only if the formula were inverted."
+      },
+      {
+        "text": "Pulse pressure becomes zero while MAP is unchanged",
+        "isCorrect": false,
+        "rationale": "Wrong: Pulse pressure is SBP-DBP and would not necessarily become zero. It would be correct only in a theoretical collapse of systolic-diastolic difference."
+      },
+      {
+        "text": "Mean arterial pressure remains unchanged because of immediate reflexes",
+        "isCorrect": false,
+        "rationale": "Wrong: Immediate effect per the equation is MAP increase; reflexes may later modify CO and MAP but not instantaneously. It would be correct only after compensatory responses."
+      }
+    ]
+  },
+  {
+    "question": "A 45-year-old with hypertrophic cardiomyopathy has decreased ventricular compliance. Based on the lecture's compliance equation C = ΔV/ΔP, which change in the EDPVR curve is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze how changes in preload, afterload and ventricular contractility affect LV pressure-volume loop (changes in EDV, ESV, stroke volume, ESPVR, EDPVR), including primary and secondary effects.",
+    "options": [
+      {
+        "text": "A steeper EDPVR slope indicating lower compliance",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains that a larger EDPVR slope corresponds to lower compliance (C = ΔV/ΔP), so hypertrophy-induced stiffness steepens the diastolic curve."
+      },
+      {
+        "text": "A flatter EDPVR slope indicating lower compliance",
+        "isCorrect": false,
+        "rationale": "Wrong: Flatter slope indicates higher compliance. It would be correct only if compliance increased."
+      },
+      {
+        "text": "No change in EDPVR slope despite decreased compliance",
+        "isCorrect": false,
+        "rationale": "Wrong: EDPVR reflects compliance and should change. It would be correct only if measurement were insensitive."
+      },
+      {
+        "text": "A leftward shift of ESPVR slope indicating decreased contractility",
+        "isCorrect": false,
+        "rationale": "Wrong: ESPVR relates to contractility, not diastolic compliance. It would be correct only if systolic function changed."
+      },
+      {
+        "text": "Loss of isovolumic phases on the PV loop",
+        "isCorrect": false,
+        "rationale": "Wrong: Loss of isovolumic phases indicates valvular regurgitation, not decreased compliance. It would be correct only if a valve lesion were present."
+      }
+    ]
+  },
+  {
+    "question": "A 30-year-old athlete has a resting heart rate of 40 bpm and normal ventricular compliance. According to the lecture, how does the low heart rate affect end-diastolic volume and preload?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define ventricular preload, afterload and contractility and describe the factors that determine or modify them.",
+    "options": [
+      {
+        "text": "Lower heart rate increases filling time and raises end-diastolic volume",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes heart rate is inversely related to EDV; lower HR lengthens diastolic filling time, increasing EDV and preload."
+      },
+      {
+        "text": "Lower heart rate decreases filling time and lowers end-diastolic volume",
+        "isCorrect": false,
+        "rationale": "Wrong: This reverses the relationship. It would be correct only if diastolic filling time shortened, which occurs with tachycardia."
+      },
+      {
+        "text": "Heart rate has no effect on end-diastolic volume",
+        "isCorrect": false,
+        "rationale": "Wrong: HR affects filling time and EDV per the lecture. It would be correct only if stroke volume adjusted perfectly to maintain EDV."
+      },
+      {
+        "text": "Lower heart rate reduces venous return independent of filling time",
+        "isCorrect": false,
+        "rationale": "Wrong: Venous return depends on venous pressure and compliance; HR primarily alters filling time. It would be correct only if venous tone changed."
+      },
+      {
+        "text": "Lower heart rate increases afterload by raising arterial pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: HR does not directly increase afterload; afterload relates to arterial resistance. It would be correct only if reflexes altered vascular tone."
+      }
+    ]
+  }
+]
