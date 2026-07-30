@@ -1,0 +1,1250 @@
+[
+  {
+    "question": "A student is asked to explain why small changes in serum potassium markedly affect cardiac cell excitability. Which of the following best describes the immediate effect of an increased extracellular potassium concentration on ventricular myocyte membrane potential?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Understand basic electrophysiology vocabulary, definitions, and commensurate clinical correlations, which explain the effects of hypo- and hyperkalemia on the heart, and physiological basis of the treatment of hyperkalemia. (AACOM II.1.f).",
+    "options": [
+      {
+        "text": "Membrane potential becomes less negative (depolarizes).",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states resting potential is close to K+ equilibrium, so raising extracellular K+ makes the membrane potential less negative (depolarization). For this to be incorrect, extracellular K+ would need to decrease instead."
+      },
+      {
+        "text": "Membrane potential becomes more negative (hyperpolarizes).",
+        "isCorrect": false,
+        "rationale": "Wrong: That describes hypokalemia. It would be correct only if extracellular K+ fell, not rose."
+      },
+      {
+        "text": "No change in membrane potential despite K shift.",
+        "isCorrect": false,
+        "rationale": "Wrong: Lecture emphasizes small serum K+ changes have large effects; no change would require K+ impermeability, which is not the case."
+      },
+      {
+        "text": "Immediate increase in inward Na current amplitude.",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased extracellular K+ primarily alters resting potential via K equilibrium, not directly increasing INa; INa upstroke depends on membrane potential and channel availability."
+      },
+      {
+        "text": "Prolongation of plateau phase without membrane shift.",
+        "isCorrect": false,
+        "rationale": "Wrong: Plateau duration is influenced by Ca and K currents, but the immediate effect of hyperkalemia is membrane depolarization; plateau prolongation alone would not explain the acute change."
+      }
+    ]
+  },
+  {
+    "question": "Which ionic current primarily carries the upstroke of the action potential in ventricular myocytes?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Distinguish between action potentials and ion channels in atria and ventricles vs. nodal cells, describe sodium, calcium, and potassium ion currents and ion channels that differ between those cells, and correlate their roles with the main classes of antiarrhythmic drugs. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Fast sodium current (I Na) mediating rapid upstroke.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states phase 0 in atrial/ventricular muscle is mediated by fast Na+ current; this is the basis for class I drugs. It would be incorrect if nodal cells were being described instead."
+      },
+      {
+        "text": "L-type calcium current (I Ca) mediating rapid upstroke.",
+        "isCorrect": false,
+        "rationale": "Wrong: L-type Ca2+ mediates nodal upstroke and contributes to plateau in myocytes; it is not the primary fast upstroke current in ventricular myocytes."
+      },
+      {
+        "text": "Delayed rectifier potassium current (I K) causing upstroke.",
+        "isCorrect": false,
+        "rationale": "Wrong: IK mediates repolarization (phase 3), not the upstroke. It would be correct only if repolarization were mistaken for depolarization."
+      },
+      {
+        "text": "Funny current (I f) causing rapid ventricular upstroke.",
+        "isCorrect": false,
+        "rationale": "Wrong: If contributes to pacemaker phase 4 in nodal tissues, not to ventricular phase 0 upstroke; it would be correct only for pacemaker cells."
+      },
+      {
+        "text": "Inward rectifier potassium current maintaining upstroke.",
+        "isCorrect": false,
+        "rationale": "Wrong: Inward rectifier (IK1) stabilizes resting potential and does not mediate the upstroke; it would be correct only if describing resting membrane maintenance."
+      }
+    ]
+  },
+  {
+    "question": "A pharmacology table lists a drug that blocks L-type calcium channels. Based on the lecture, which cardiac structure's phase 0 would be most directly slowed by this drug?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Distinguish between action potentials and ion channels in atria and ventricles vs. nodal cells, describe sodium, calcium, and potassium ion currents and ion channels that differ between those cells, and correlate their roles with the main classes of antiarrhythmic drugs. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Sinoatrial node phase 0 upstroke would be slowed.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture indicates SA and AV nodal phase 0 is mediated by L-type Ca2+ channels, so blocking them slows nodal upstroke. It would be incorrect if ventricular myocytes were targeted instead."
+      },
+      {
+        "text": "Ventricular myocyte phase 0 upstroke would be slowed.",
+        "isCorrect": false,
+        "rationale": "Wrong: Ventricular phase 0 is mediated by fast Na+ channels; L-type Ca2+ blockade affects nodal cells more. It would be correct only if nodal cells used Na+ for phase 0."
+      },
+      {
+        "text": "Plateau phase in Purkinje fibers would be prolonged.",
+        "isCorrect": false,
+        "rationale": "Wrong: L-type Ca2+ contributes to plateau in myocytes, but Purkinje fibers have different dynamics; blockade typically shortens plateau rather than prolonging it."
+      },
+      {
+        "text": "Resting membrane potential of atrial cells would depolarize.",
+        "isCorrect": false,
+        "rationale": "Wrong: L-type Ca2+ blockade does not directly depolarize resting potential; changes in resting potential would require altered K+ gradients."
+      },
+      {
+        "text": "Phase 3 repolarization in AV node would be accelerated.",
+        "isCorrect": false,
+        "rationale": "Wrong: Phase 3 is mediated by K+ currents; Ca2+ channel blockade affects depolarization and plateau, not directly accelerating K+-mediated repolarization."
+      }
+    ]
+  },
+  {
+    "question": "According to the lecture, which intervention is used acutely to lower serum potassium by stimulating the Na+/K+ ATPase?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Understand basic electrophysiology vocabulary, definitions, and commensurate clinical correlations, which explain the effects of hypo- and hyperkalemia on the heart, and physiological basis of the treatment of hyperkalemia. (AACOM II.1.f).",
+    "options": [
+      {
+        "text": "Insulin administration to drive potassium into cells.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture notes that insulin stimulates the Na+/K+ pump, driving K+ into cells and lowering serum K+. It would be incorrect if insulin were absent or ineffective."
+      },
+      {
+        "text": "Atropine to block muscarinic receptors and lower potassium.",
+        "isCorrect": false,
+        "rationale": "Wrong: Atropine blocks M2 receptors and increases heart rate; it does not lower serum potassium. It would be correct only if atropine directly stimulated Na+/K+ ATPase."
+      },
+      {
+        "text": "Beta blocker infusion to increase cellular potassium uptake.",
+        "isCorrect": false,
+        "rationale": "Wrong: Beta blockers reduce sympathetic tone and do not acutely drive K+ into cells; a beta agonist, not blocker, would increase cellular uptake."
+      },
+      {
+        "text": "Calcium gluconate to activate Na+/K+ ATPase directly.",
+        "isCorrect": false,
+        "rationale": "Wrong: Calcium stabilizes cardiac membranes but does not lower serum K+ by activating Na+/K+ ATPase; it would be correct only if calcium stimulated the pump."
+      },
+      {
+        "text": "Sodium bicarbonate infusion to inhibit Na+/K+ ATPase.",
+        "isCorrect": false,
+        "rationale": "Wrong: Bicarbonate can shift K+ intracellularly in acidosis but does not act by inhibiting Na+/K+ ATPase; inhibition would raise serum K+, not lower it."
+      }
+    ]
+  },
+  {
+    "question": "Which channel type is primarily responsible for repolarization (phase 3) in ventricular cardiomyocytes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Distinguish between action potentials and ion channels in atria and ventricles vs. nodal cells, describe sodium, calcium, and potassium ion currents and ion channels that differ between those cells, and correlate their roles with the main classes of antiarrhythmic drugs. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Delayed rectifier potassium channels mediating outward K current.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states phase 3 repolarization is mediated by delayed rectifier K+ currents (IKr, IKs). It would be incorrect if these channels were absent or nonfunctional."
+      },
+      {
+        "text": "Fast sodium channels mediating inward Na current.",
+        "isCorrect": false,
+        "rationale": "Wrong: Fast Na+ channels mediate phase 0 upstroke, not repolarization. They would be relevant only if repolarization were due to Na+ efflux."
+      },
+      {
+        "text": "L-type calcium channels mediating sustained inward Ca current.",
+        "isCorrect": false,
+        "rationale": "Wrong: L-type Ca2+ contributes to plateau (phase 2); repolarization requires K+ efflux. It would be correct only if Ca2+ influx dominated repolarization."
+      },
+      {
+        "text": "Funny channels mediating mixed Na and K inward current.",
+        "isCorrect": false,
+        "rationale": "Wrong: If contributes to phase 4 pacemaker depolarization, not phase 3 repolarization. It would be correct only in nodal pacemaker context."
+      },
+      {
+        "text": "Inward rectifier potassium channels maintaining plateau phase.",
+        "isCorrect": false,
+        "rationale": "Wrong: Inward rectifiers stabilize resting potential and close at positive potentials; they do not mediate phase 3 repolarization. It would be correct only if inward rectifiers opened during repolarization."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a genetic defect in IKr channels presents with prolonged ventricular repolarization on ECG. Which clinical syndrome from the lecture does this most closely represent?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Distinguish between action potentials and ion channels in atria and ventricles vs. nodal cells, describe sodium, calcium, and potassium ion currents and ion channels that differ between those cells, and correlate their roles with the main classes of antiarrhythmic drugs. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Congenital long QT syndrome due to delayed repolarization.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture links mutations in K+ channels mediating plateau/IKr to long QT syndrome (LQTS) due to prolonged repolarization. It would be incorrect if IKr were normal."
+      },
+      {
+        "text": "Sick sinus syndrome from slowed nodal depolarization.",
+        "isCorrect": false,
+        "rationale": "Wrong: SND involves SA node automaticity and phase 4 slope, not ventricular repolarization; it would be correct only if nodal channels were mutated."
+      },
+      {
+        "text": "Ventricular fibrillation from increased phase 0 slope.",
+        "isCorrect": false,
+        "rationale": "Wrong: VF is an arrhythmia but increased phase 0 slope (INa) is not the mechanism described; it would be correct only if INa abnormalities caused VF."
+      },
+      {
+        "text": "Brugada syndrome from sodium channel loss of function.",
+        "isCorrect": false,
+        "rationale": "Wrong: Brugada is linked to Na+ channel defects and ST elevation, not IKr-mediated prolonged QT; it would be correct only if Na+ channels were mutated."
+      },
+      {
+        "text": "Torsades de pointes from shortened repolarization.",
+        "isCorrect": false,
+        "rationale": "Wrong: Torsades is associated with prolonged, not shortened, repolarization; this option contradicts the lecture mechanism."
+      }
+    ]
+  },
+  {
+    "question": "Which antiarrhythmic drug class, per the lecture, primarily targets the current responsible for phase 3 repolarization?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "This lecture is designed to help you understand the physiological basis for the action of antiarrhythmic drugs.",
+    "options": [
+      {
+        "text": "Class III agents that block potassium channels.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture lists class III drugs (e.g., amiodarone) as potassium channel blockers modifying IK and phase 3 repolarization. It would be incorrect if the drug blocked Na+ instead."
+      },
+      {
+        "text": "Class I agents that block fast sodium channels.",
+        "isCorrect": false,
+        "rationale": "Wrong: Class I drugs target INa and phase 0, not phase 3; it would be correct only if they also blocked K+ channels."
+      },
+      {
+        "text": "Class II agents that directly block potassium channels.",
+        "isCorrect": false,
+        "rationale": "Wrong: Class II are beta blockers affecting autonomic modulation and If/Ca currents, not direct K+ channel blockers; it would be correct only if a beta blocker had K+ channel activity."
+      },
+      {
+        "text": "Class IV agents that selectively block delayed rectifier K channels.",
+        "isCorrect": false,
+        "rationale": "Wrong: Class IV are calcium channel blockers affecting L-type Ca2+; they do not selectively block delayed rectifier K+ channels. It would be correct only if verapamil/diltiazem blocked K+ channels."
+      },
+      {
+        "text": "Class V agents that enhance inward rectifier potassium current.",
+        "isCorrect": false,
+        "rationale": "Wrong: There is no class V in the lecture; enhancing inward rectifier would not be the class III mechanism. It would be correct only if such a class were defined and acted on IK."
+      }
+    ]
+  },
+  {
+    "question": "A researcher records action potentials from SA nodal cells. Which feature will they observe that differs from ventricular myocytes according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Distinguish between action potentials and ion channels in atria and ventricles vs. nodal cells, describe sodium, calcium, and potassium ion currents and ion channels that differ between those cells, and correlate their roles with the main classes of antiarrhythmic drugs. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Slow upstroke mediated mainly by L-type calcium channels.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states nodal phase 0 is slow and mediated by Ca2+ channels, unlike fast Na+-mediated upstroke in ventricles. It would be incorrect if nodal cells used fast Na+."
+      },
+      {
+        "text": "Rapid upstroke mediated mainly by fast sodium channels.",
+        "isCorrect": false,
+        "rationale": "Wrong: Rapid Na+-mediated upstroke characterizes atrial/ventricular myocytes, not nodal cells; it would be correct only for non-nodal tissue."
+      },
+      {
+        "text": "Prominent phase 1 spike followed by plateau phase.",
+        "isCorrect": false,
+        "rationale": "Wrong: Nodal cells lack phase 1 and phase 2 plateau; this would be correct only for ventricular myocytes."
+      },
+      {
+        "text": "Stable resting membrane potential near -90 mV.",
+        "isCorrect": false,
+        "rationale": "Wrong: Nodal cells have unstable diastolic potential with phase 4 depolarization; a stable -90 mV resting potential describes ventricular myocytes."
+      },
+      {
+        "text": "Absence of spontaneous phase 4 depolarization.",
+        "isCorrect": false,
+        "rationale": "Wrong: Nodal cells exhibit spontaneous phase 4 depolarization (automaticity); absence would be true only for ventricular myocytes."
+      }
+    ]
+  },
+  {
+    "question": "A patient with increased parasympathetic tone receives a muscarinic agonist. Based on the lecture, which ionic mechanism in the SA node explains the resulting slower heart rate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain regulation of heart rate by the autonomic nervous system and effects of stimulation of the b1 adrenergic and M2 muscarinic receptors on the calcium and potassium currents in the nodal cells. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Activation of GIRK channels causing K+ efflux and hyperpolarization.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture explains ACh via M2 releases Gβγ that opens GIRK, increasing K+ efflux, decreasing phase 4 slope and heart rate. It would be incorrect if GIRK were not activated."
+      },
+      {
+        "text": "Increased L-type Ca2+ current raising phase 4 slope.",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased L-type Ca2+ (SNS effect) raises slope and heart rate; it would be correct only with sympathetic stimulation."
+      },
+      {
+        "text": "Enhanced funny current increasing inward Na+ flow.",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhanced If increases phase 4 slope and heart rate; parasympathetic activation decreases If. It would be correct only with If upregulation."
+      },
+      {
+        "text": "Blockade of delayed rectifier K+ channels prolonging repolarization.",
+        "isCorrect": false,
+        "rationale": "Wrong: Blocking IK prolongs AP duration; this does not explain acute slowing from parasympathetic activation. It would be correct only if M2 blocked IK."
+      },
+      {
+        "text": "Inhibition of Na+/K+ ATPase causing membrane depolarization.",
+        "isCorrect": false,
+        "rationale": "Wrong: Inhibiting Na+/K+ ATPase would depolarize cells and could increase excitability; parasympathetic slowing works via GIRK activation, not pump inhibition."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best explains why the AV node protects the ventricles from excessively rapid atrial rhythms, per the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Infer the basis of refractory period from the properties of action potentials in cardiomyocytes and explain its importance in preventing arrhythmias and tetany. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "AV node has long refractory period and slow conduction delay.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture notes AV node's low conduction speed and refractory properties delay impulses, protecting ventricles from fast atrial rates. It would be incorrect if AV conduction were fast."
+      },
+      {
+        "text": "AV node increases ventricular contractility to resist fast rates.",
+        "isCorrect": false,
+        "rationale": "Wrong: AV node does not increase contractility; it modulates conduction. This would be correct only if AV node had inotropic effects."
+      },
+      {
+        "text": "AV node shortens action potential duration to block impulses.",
+        "isCorrect": false,
+        "rationale": "Wrong: Shortening AP would reduce refractory protection; AV node protection relies on delay and refractory period, not AP shortening."
+      },
+      {
+        "text": "AV node enhances funny current to slow atrial impulses.",
+        "isCorrect": false,
+        "rationale": "Wrong: If increases pacemaker rate; enhancing If would not slow conduction. It would be correct only if If reduced conduction velocity."
+      },
+      {
+        "text": "AV node opens additional gap junctions to dissipate impulses.",
+        "isCorrect": false,
+        "rationale": "Wrong: Opening gap junctions would facilitate conduction, not protect against rapid atrial rhythms. It would be correct only if gap junctions decreased conduction."
+      }
+    ]
+  },
+  {
+    "question": "A patient with sinus node dysfunction is found to have a gain-of-function mutation in GIRK4. Which electrophysiologic effect described in the lecture best explains their bradycardia?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain regulation of heart rate by the autonomic nervous system and effects of stimulation of the b1 adrenergic and M2 muscarinic receptors on the calcium and potassium currents in the nodal cells. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Increased K+ efflux hyperpolarizing nodal cells and slowing rate.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture links GIRK activation to increased K+ efflux, hyperpolarization, decreased phase 4 slope, and slower SA firing; a gain-of-function would exaggerate this effect. It would be incorrect if GIRK activity were reduced."
+      },
+      {
+        "text": "Enhanced L-type Ca2+ influx increasing phase 4 slope.",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhanced L-type Ca2+ increases slope and heart rate; this would be correct only with b1 adrenergic upregulation, not GIRK gain-of-function."
+      },
+      {
+        "text": "Loss of funny current preventing spontaneous depolarization.",
+        "isCorrect": false,
+        "rationale": "Wrong: Loss of If could slow rate, but GIRK gain-of-function specifically increases K+ efflux; this option would be correct only if HCN4 were mutated."
+      },
+      {
+        "text": "Increased delayed rectifier K+ current shortening action potentials.",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased IK shortens AP and refractory period, not typically causing bradycardia; it would be correct only if shortened AP paradoxically reduced pacemaker firing."
+      },
+      {
+        "text": "Upregulation of Na+/K+ ATPase hyperpolarizing cells.",
+        "isCorrect": false,
+        "rationale": "Wrong: While pump activity affects gradients, the lecture attributes bradycardia to GIRK-mediated K+ efflux; pump upregulation is not the described mechanism."
+      }
+    ]
+  },
+  {
+    "question": "A 65-year-old on high-dose verapamil develops symptomatic sinus bradycardia. Using lecture concepts, which mechanism best accounts for this adverse effect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain regulation of heart rate by the autonomic nervous system and effects of stimulation of the b1 adrenergic and M2 muscarinic receptors on the calcium and potassium currents in the nodal cells. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Inhibition of L-type Ca2+ channels reducing nodal phase 0 slope.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states L-type Ca2+ mediates nodal upstroke and contributes to phase 4 slope; calcium channel blockers (class IV) can impair SA node automaticity causing bradycardia. It would be incorrect if verapamil increased Ca2+ current."
+      },
+      {
+        "text": "Blockade of delayed rectifier K+ channels prolonging repolarization.",
+        "isCorrect": false,
+        "rationale": "Wrong: K+ channel blockade prolongs repolarization and QT, not the primary cause of verapamil-induced bradycardia; it would be correct only if verapamil blocked IK."
+      },
+      {
+        "text": "Stimulation of GIRK channels increasing K+ efflux.",
+        "isCorrect": false,
+        "rationale": "Wrong: GIRK activation is mediated by M2 muscarinic receptors and parasympathetic activity, not by verapamil; it would be correct only if verapamil directly activated GIRK."
+      },
+      {
+        "text": "Enhanced funny current increasing phase 4 depolarization.",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhanced If would increase heart rate; verapamil reduces nodal excitability. This option would be correct only with If upregulation."
+      },
+      {
+        "text": "Increased Na+ channel availability causing conduction block.",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased Na+ availability would not cause bradycardia; conduction block is more likely from decreased Ca2+ current in nodal tissue, not increased INa."
+      }
+    ]
+  },
+  {
+    "question": "A patient with hyperkalemia has peaked T waves and widened QRS. According to the lecture, which immediate cellular change explains these ECG findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand basic electrophysiology vocabulary, definitions, and commensurate clinical correlations, which explain the effects of hypo- and hyperkalemia on the heart, and physiological basis of the treatment of hyperkalemia. (AACOM II.1.f).",
+    "options": [
+      {
+        "text": "Membrane depolarization reducing Na+ channel availability.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture explains hyperkalemia depolarizes resting potential, inactivating fast Na+ channels and slowing conduction, producing peaked T waves and widened QRS. It would be incorrect if Na+ channels remained fully available."
+      },
+      {
+        "text": "Membrane hyperpolarization increasing Na+ channel availability.",
+        "isCorrect": false,
+        "rationale": "Wrong: Hyperpolarization occurs in hypokalemia, not hyperkalemia; increased Na+ availability would speed conduction, not widen QRS."
+      },
+      {
+        "text": "Increased L-type Ca2+ influx causing peaked T waves.",
+        "isCorrect": false,
+        "rationale": "Wrong: Peaked T waves reflect repolarization changes from K+, not increased Ca2+ influx; it would be correct only if Ca2+ dominated T-wave morphology."
+      },
+      {
+        "text": "Enhanced delayed rectifier K+ current shortening QRS.",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhanced IK would shorten repolarization and possibly narrow QRS; the lecture links hyperkalemia to depolarization and conduction slowing, not IK enhancement."
+      },
+      {
+        "text": "Activation of funny current producing widened QRS complexes.",
+        "isCorrect": false,
+        "rationale": "Wrong: If affects pacemaker phase 4 and heart rate, not QRS width; this would be correct only if conduction through ventricles were altered by If, which is not the case."
+      }
+    ]
+  },
+  {
+    "question": "During an experiment, a drug shortens ventricular action potential duration by increasing a repolarizing current. Based on lecture content, which change in refractory period would you expect?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Infer the basis of refractory period from the properties of action potentials in cardiomyocytes and explain its importance in preventing arrhythmias and tetany. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Shortened refractory period due to briefer action potential.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states longer AP yields longer refractory period; increasing repolarizing current shortens AP and thus shortens refractory period. It would be incorrect if AP duration increased instead."
+      },
+      {
+        "text": "Prolonged refractory period despite shorter action potential.",
+        "isCorrect": false,
+        "rationale": "Wrong: A shorter AP typically shortens refractory period; prolongation would require delayed recovery of Na+ channels or other mechanisms."
+      },
+      {
+        "text": "No change in refractory period with altered AP duration.",
+        "isCorrect": false,
+        "rationale": "Wrong: Refractory period is linked to AP duration per lecture; no change would be unexpected unless compensatory channel kinetics occurred."
+      },
+      {
+        "text": "Immediate transition to supranormal refractory period only.",
+        "isCorrect": false,
+        "rationale": "Wrong: Supranormal period is a brief vulnerable phase; increasing repolarizing current does not produce only supranormal period without affecting ARP/RRP."
+      },
+      {
+        "text": "Conversion of absolute to relative refractory period exclusively.",
+        "isCorrect": false,
+        "rationale": "Wrong: Absolute and relative periods are phases within recovery; shortening AP would reduce absolute period duration but not convert it exclusively to relative period without changing channel states."
+      }
+    ]
+  },
+  {
+    "question": "A patient with atrial fibrillation is given a drug that prolongs phase 2 by blocking a repolarizing current. According to the lecture, which class does this drug belong to?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "This lecture is designed to help you understand the physiological basis for the action of antiarrhythmic drugs.",
+    "options": [
+      {
+        "text": "Class III antiarrhythmic agents blocking potassium channels.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture indicates class III drugs block K+ currents responsible for repolarization/plateau (phase 2/3), prolonging AP duration. It would be incorrect if the drug blocked Na+ instead."
+      },
+      {
+        "text": "Class I antiarrhythmic agents blocking fast sodium channels.",
+        "isCorrect": false,
+        "rationale": "Wrong: Class I target INa and phase 0, not primarily phase 2 prolongation; it would be correct only if the drug also blocked K+ channels."
+      },
+      {
+        "text": "Class II agents that antagonize beta adrenergic receptors.",
+        "isCorrect": false,
+        "rationale": "Wrong: Class II (beta blockers) modulate autonomic inputs and Ca2+/If, not directly prolong phase 2 via K+ blockade. It would be correct only if beta blockade indirectly prolonged phase 2 significantly."
+      },
+      {
+        "text": "Class IV agents that selectively block funny current channels.",
+        "isCorrect": false,
+        "rationale": "Wrong: Class IV are L-type Ca2+ blockers; they do not selectively block If. This option would be correct only if class IV targeted If."
+      },
+      {
+        "text": "Class V agents that increase Na+/K+ ATPase activity.",
+        "isCorrect": false,
+        "rationale": "Wrong: No class V described in lecture; increasing pump activity shifts K+ but does not directly prolong phase 2 via K+ channel blockade."
+      }
+    ]
+  },
+  {
+    "question": "A trainee asks which ionic currents determine the slope of phase 4 in SA nodal cells. Which combination from the lecture is most accurate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain regulation of heart rate by the autonomic nervous system and effects of stimulation of the b1 adrenergic and M2 muscarinic receptors on the calcium and potassium currents in the nodal cells. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Funny current, L-type Ca2+ current, and GIRK K+ current.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states phase 4 slope depends on If (funny), L-type Ca2+, and GIRK-mediated IKach; modulation of these alters heart rate. It would be incorrect if any of these were absent."
+      },
+      {
+        "text": "Fast sodium current, transient K+ current, and IKs.",
+        "isCorrect": false,
+        "rationale": "Wrong: Fast INa mediates phase 0 in myocytes; transient K+ and IKs are repolarizing currents, not primary determinants of nodal phase 4. It would be correct only in non-nodal tissue."
+      },
+      {
+        "text": "Delayed rectifier K+ current, inward rectifier, and INa.",
+        "isCorrect": false,
+        "rationale": "Wrong: These currents relate to repolarization and resting potential in myocytes; nodal phase 4 is driven by If and Ca2+, not these currents."
+      },
+      {
+        "text": "HCN4-mediated Cl- current and L-type Ca2+ current.",
+        "isCorrect": false,
+        "rationale": "Wrong: HCN4 mediates If (mixed Na+/K+), not Cl-; Cl- currents are not emphasized in lecture as determinants of phase 4. It would be correct only if HCN4 conducted Cl-."
+      },
+      {
+        "text": "Na+/K+ ATPase current and transient inward Ca2+ current.",
+        "isCorrect": false,
+        "rationale": "Wrong: While the pump maintains gradients, lecture highlights If, L-type Ca2+, and GIRK as phase 4 determinants; pump activity alone does not set phase 4 slope."
+      }
+    ]
+  },
+  {
+    "question": "A patient with severe hypokalemia is at risk for arrhythmias. Based on the lecture, what immediate change in membrane potential occurs with low extracellular potassium?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Understand basic electrophysiology vocabulary, definitions, and commensurate clinical correlations, which explain the effects of hypo- and hyperkalemia on the heart, and physiological basis of the treatment of hyperkalemia. (AACOM II.1.f).",
+    "options": [
+      {
+        "text": "Membrane potential becomes more negative (hyperpolarizes).",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states hypokalemia leads to membrane hyperpolarization because resting potential is close to K+ equilibrium; decreased extracellular K+ makes it more negative. It would be incorrect if extracellular K+ increased."
+      },
+      {
+        "text": "Membrane potential becomes less negative (depolarizes).",
+        "isCorrect": false,
+        "rationale": "Wrong: Depolarization is associated with hyperkalemia, not hypokalemia; this would be correct only if extracellular K+ rose."
+      },
+      {
+        "text": "No change in membrane potential despite K decrease.",
+        "isCorrect": false,
+        "rationale": "Wrong: Lecture emphasizes small K+ changes have big effects; no change would require K+ channels to be nonfunctional."
+      },
+      {
+        "text": "Immediate activation of L-type Ca2+ channels at rest.",
+        "isCorrect": false,
+        "rationale": "Wrong: L-type Ca2+ channels open with depolarization and are not directly activated by hypokalemia; this would be correct only if hypokalemia caused depolarization."
+      },
+      {
+        "text": "Increased inward rectifier K+ conductance causing depolarization.",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased inward rectifier conductance would stabilize a negative resting potential, not depolarize; depolarization would require decreased K+ conductance."
+      }
+    ]
+  },
+  {
+    "question": "Which feature of cardiomyocyte action potentials primarily allows a long refractory period that prevents tetany, according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Infer the basis of refractory period from the properties of action potentials in cardiomyocytes and explain its importance in preventing arrhythmias and tetany. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "The prolonged plateau phase mediated by L-type Ca2+ and K+ balance.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture emphasizes the plateau (phase 2) prolongs AP and refractory period, preventing tetany; it depends on L-type Ca2+ influx balanced by K+ efflux. It would be incorrect if plateau were absent."
+      },
+      {
+        "text": "A very brief phase 0 due to fast sodium channels alone.",
+        "isCorrect": false,
+        "rationale": "Wrong: Short phase 0 does not account for long refractory period; the plateau is the key. This would be correct only if phase 0 somehow prolonged refractoriness."
+      },
+      {
+        "text": "Continuous activation of funny current during systole.",
+        "isCorrect": false,
+        "rationale": "Wrong: If operates during diastole (phase 4) in nodal cells, not responsible for ventricular refractory period; it would be correct only if If persisted through systole."
+      },
+      {
+        "text": "Persistent inward rectifier K+ current during depolarization.",
+        "isCorrect": false,
+        "rationale": "Wrong: Inward rectifiers stabilize resting potential and close at positive potentials; they do not create the prolonged plateau that yields long refractory period."
+      },
+      {
+        "text": "Rapid recovery of Na+ channels immediately after phase 0.",
+        "isCorrect": false,
+        "rationale": "Wrong: Rapid Na+ recovery would shorten refractory period; the lecture links long refractory period to prolonged plateau, not rapid Na+ recovery."
+      }
+    ]
+  },
+  {
+    "question": "A clinician considers carotid sinus massage for a patient with paroxysmal supraventricular tachycardia. Based on the lecture, what is the primary physiologic effect of this maneuver on AV nodal conduction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain regulation of heart rate by the autonomic nervous system and effects of stimulation of the b1 adrenergic and M2 muscarinic receptors on the calcium and potassium currents in the nodal cells. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Increased parasympathetic activity opening GIRK and slowing AV conduction.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture notes carotid sinus massage activates PNS, ACh binds M2, opens GIRK, increases K+ efflux, and slows AV nodal conduction. It would be incorrect if the maneuver increased sympathetic tone."
+      },
+      {
+        "text": "Direct blockade of L-type Ca2+ channels in AV node.",
+        "isCorrect": false,
+        "rationale": "Wrong: Massage increases vagal tone rather than directly blocking Ca2+ channels; it would be correct only if the maneuver pharmacologically blocked Ca2+ channels."
+      },
+      {
+        "text": "Enhanced funny current increasing AV nodal firing rate.",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhanced If increases rate; carotid massage increases vagal tone which decreases If. This option would be correct only with sympathetic stimulation."
+      },
+      {
+        "text": "Increased Na+/K+ ATPase activity accelerating conduction.",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased pump activity does not acutely slow AV conduction; vagal activation via GIRK is the mechanism described in lecture."
+      },
+      {
+        "text": "Activation of delayed rectifier K+ channels shortening AV action potentials.",
+        "isCorrect": false,
+        "rationale": "Wrong: Activation of IK would shorten AP but is not the primary effect of carotid massage; the lecture emphasizes GIRK-mediated hyperpolarization."
+      }
+    ]
+  },
+  {
+    "question": "A patient with an overdose of a drug that blocks fast sodium channels presents with widened QRS and slowed conduction. Which class of antiarrhythmic from the lecture is most likely responsible?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "This lecture is designed to help you understand the physiological basis for the action of antiarrhythmic drugs.",
+    "options": [
+      {
+        "text": "Class I antiarrhythmic agents that block fast sodium channels.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states class I drugs (e.g., procainamide) block INa responsible for phase 0, slowing conduction and widening QRS. It would be incorrect if the drug targeted Ca2+ instead."
+      },
+      {
+        "text": "Class II agents that antagonize beta adrenergic receptors.",
+        "isCorrect": false,
+        "rationale": "Wrong: Beta blockers modulate autonomic tone and If/Ca currents, not primarily INa; they would not typically widen QRS via Na+ blockade."
+      },
+      {
+        "text": "Class III agents that block potassium channels prolonging QT.",
+        "isCorrect": false,
+        "rationale": "Wrong: Class III prolong repolarization and QT interval, not primarily widen QRS via Na+ blockade; it would be correct only if the drug also blocked INa."
+      },
+      {
+        "text": "Class IV agents that block L-type calcium channels slowing AV node.",
+        "isCorrect": false,
+        "rationale": "Wrong: Class IV slow nodal conduction via Ca2+ blockade and do not primarily widen QRS; it would be correct only if they also blocked INa."
+      },
+      {
+        "text": "Class V agents that increase funny current and speed conduction.",
+        "isCorrect": false,
+        "rationale": "Wrong: No class V described; increasing If would increase rate, not cause Na+ blockade and widened QRS."
+      }
+    ]
+  },
+  {
+    "question": "A lab measures recovery from inactivation of Na+ channels during ventricular repolarization. According to the lecture, during which refractory period are Na+ channels largely inactivated so no new action potential can be triggered?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Infer the basis of refractory period from the properties of action potentials in cardiomyocytes and explain its importance in preventing arrhythmias and tetany. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Absolute refractory period when Na+ channels are inactivated.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture defines absolute refractory period as when Na+ (and Ca2+) channels are inactivated and no stimulus can elicit another AP. It would be incorrect if channels had recovered from inactivation."
+      },
+      {
+        "text": "Relative refractory period when Na+ channels are fully inactivated.",
+        "isCorrect": false,
+        "rationale": "Wrong: In the relative refractory period some Na+ channels have recovered and a strong stimulus can elicit an AP; full inactivation describes the absolute period."
+      },
+      {
+        "text": "Supranormal period when Na+ channels are completely unavailable.",
+        "isCorrect": false,
+        "rationale": "Wrong: Supranormal period is brief and paradoxically more excitable; Na+ channels are not completely unavailable then. It would be correct only if channels were fully inactivated."
+      },
+      {
+        "text": "Effective refractory period when all channels are recovered.",
+        "isCorrect": false,
+        "rationale": "Wrong: Effective refractory period overlaps with absolute but is not when all channels are recovered; full recovery occurs later."
+      },
+      {
+        "text": "Post-repolarization period when Na+ channels are permanently inactive.",
+        "isCorrect": false,
+        "rationale": "Wrong: Na+ channel inactivation is reversible; permanent inactivation does not occur physiologically. This option contradicts lecture channel kinetics."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a mutation that reduces IKs current shows prolonged ventricular action potentials. Which electrophysiologic consequence from the lecture best follows this defect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Distinguish between action potentials and ion channels in atria and ventricles vs. nodal cells, describe sodium, calcium, and potassium ion currents and ion channels that differ between those cells, and correlate their roles with the main classes of antiarrhythmic drugs. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Prolonged QT interval increasing risk of torsades de pointes.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture links mutations in K+ channels (IKr/IKs) to long QT syndrome; reduced IKs prolongs repolarization and increases torsades risk. It would be incorrect if IKs were increased."
+      },
+      {
+        "text": "Shortened refractory period protecting against arrhythmias.",
+        "isCorrect": false,
+        "rationale": "Wrong: Reduced IKs prolongs AP and refractory period, not shorten it; shortening would require increased repolarizing current."
+      },
+      {
+        "text": "Faster conduction velocity through ventricles causing tachycardia.",
+        "isCorrect": false,
+        "rationale": "Wrong: Prolonged AP typically slows conduction recovery and predisposes to arrhythmia, not faster conduction; faster conduction would require increased INa availability."
+      },
+      {
+        "text": "Loss of pacemaker automaticity in SA node causing bradycardia.",
+        "isCorrect": false,
+        "rationale": "Wrong: IKs mutation affects ventricular repolarization; SA node automaticity depends on If and Ca2+, so this would be correct only if nodal channels were mutated."
+      },
+      {
+        "text": "Increased plateau Ca2+ influx preventing contraction.",
+        "isCorrect": false,
+        "rationale": "Wrong: While plateau may be prolonged, increased Ca2+ influx does not prevent contraction; this option misstates the mechanical consequence and would be correct only with Ca2+ channel blockade."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute hyperkalemia is treated with insulin and glucose. According to the lecture, what is the cellular mechanism by which insulin lowers serum potassium?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand basic electrophysiology vocabulary, definitions, and commensurate clinical correlations, which explain the effects of hypo- and hyperkalemia on the heart, and physiological basis of the treatment of hyperkalemia. (AACOM II.1.f).",
+    "options": [
+      {
+        "text": "Insulin stimulates Na+/K+ ATPase driving K+ into cells.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture explicitly states insulin stimulates the Na+/K+ pump, moving K+ intracellularly and lowering serum K+. It would be incorrect if insulin inhibited the pump."
+      },
+      {
+        "text": "Insulin blocks GIRK channels preventing K+ efflux.",
+        "isCorrect": false,
+        "rationale": "Wrong: GIRK is modulated by parasympathetic signaling, not insulin; insulin lowers serum K+ via the pump, not GIRK blockade."
+      },
+      {
+        "text": "Insulin opens delayed rectifier K+ channels increasing K+ loss.",
+        "isCorrect": false,
+        "rationale": "Wrong: Opening IK would increase K+ efflux, raising serum K+; insulin works by cellular uptake, not by opening K+ channels."
+      },
+      {
+        "text": "Insulin inhibits L-type Ca2+ channels reducing extracellular K+.",
+        "isCorrect": false,
+        "rationale": "Wrong: Ca2+ channel inhibition does not lower serum K+; this option confuses ionic mechanisms. It would be correct only if Ca2+ blockade somehow increased cellular K+ uptake."
+      },
+      {
+        "text": "Insulin increases funny current to sequester potassium intracellularly.",
+        "isCorrect": false,
+        "rationale": "Wrong: Funny current affects pacemaker depolarization, not K+ distribution; insulin's effect is via Na+/K+ ATPase."
+      }
+    ]
+  },
+  {
+    "question": "A patient with AV nodal reentrant tachycardia is given adenosine, which transiently blocks AV nodal conduction. Using lecture principles, which nodal property makes AV node particularly susceptible to such transient conduction block?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Infer the basis of refractory period from the properties of action potentials in cardiomyocytes and explain its importance in preventing arrhythmias and tetany. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "AV node relies on Ca2+-mediated upstroke with slow conduction velocity.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture explains AV node upstroke is Ca2+-mediated and conduction is slow, making it sensitive to agents that transiently block nodal currents and prolong refractory period. It would be incorrect if AV node used fast Na+ for phase 0."
+      },
+      {
+        "text": "AV node has abundant fast Na+ channels enabling rapid conduction.",
+        "isCorrect": false,
+        "rationale": "Wrong: AV node has few fast Na+ channels and slow conduction; this option would be correct only for Purkinje or ventricular tissue."
+      },
+      {
+        "text": "AV node lacks any refractory period allowing easy block.",
+        "isCorrect": false,
+        "rationale": "Wrong: AV node has a refractory period that protects ventricles; lacking it would not explain susceptibility to transient pharmacologic block."
+      },
+      {
+        "text": "AV node depends on inward rectifier K+ current for upstroke.",
+        "isCorrect": false,
+        "rationale": "Wrong: Inward rectifier stabilizes resting potential; it does not mediate upstroke. This would be correct only if IK1 drove depolarization, which it does not."
+      },
+      {
+        "text": "AV node uses funny current exclusively for conduction between atria and ventricles.",
+        "isCorrect": false,
+        "rationale": "Wrong: If contributes to pacemaker automaticity, not conduction through AV node; conduction depends on Ca2+ currents and gap junctions."
+      }
+    ]
+  },
+  {
+    "question": "A patient with hyperkalemia is given calcium gluconate to stabilize the myocardium. Based on the lecture, which immediate electrophysiologic effect does calcium provide?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand basic electrophysiology vocabulary, definitions, and commensurate clinical correlations, which explain the effects of hypo- and hyperkalemia on the heart, and physiological basis of the treatment of hyperkalemia. (AACOM II.1.f).",
+    "options": [
+      {
+        "text": "Stabilizes cardiac membrane by raising threshold for depolarization.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture notes calcium stabilizes membranes in hyperkalemia by increasing threshold and reducing excitability, protecting against arrhythmia; it does not lower serum K+. It would be incorrect if calcium lowered serum K+ directly."
+      },
+      {
+        "text": "Directly activates Na+/K+ ATPase to lower serum potassium.",
+        "isCorrect": false,
+        "rationale": "Wrong: Calcium does not stimulate the pump to lower serum K+; insulin does. This option would be correct only if calcium increased pump activity."
+      },
+      {
+        "text": "Opens GIRK channels to hyperpolarize nodal cells.",
+        "isCorrect": false,
+        "rationale": "Wrong: GIRK is opened by ACh via M2 receptors, not by calcium; this would be correct only with parasympathetic activation."
+      },
+      {
+        "text": "Blocks delayed rectifier K+ channels to shorten QT interval.",
+        "isCorrect": false,
+        "rationale": "Wrong: Blocking K+ channels prolongs QT; calcium stabilizes membrane potential without directly blocking IK. This option would be correct only if calcium blocked IK."
+      },
+      {
+        "text": "Enhances funny current to increase heart rate and lower K+.",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhancing If increases heart rate but does not lower serum K+; calcium's role is membrane stabilization, not If modulation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with atrial flutter is treated with a drug that slows AV nodal conduction by decreasing L-type Ca2+ current. According to the lecture, which class does this drug belong to and what is the expected ECG effect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "This lecture is designed to help you understand the physiological basis for the action of antiarrhythmic drugs.",
+    "options": [
+      {
+        "text": "Class IV agent; slowed AV conduction and longer PR interval.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states class IV (calcium channel blockers like verapamil) reduce L-type Ca2+ current in nodal tissue, slowing AV conduction and prolonging PR interval. It would be incorrect if the drug increased Ca2+ current."
+      },
+      {
+        "text": "Class I agent; widened QRS and shortened PR interval.",
+        "isCorrect": false,
+        "rationale": "Wrong: Class I block INa and widen QRS; they do not primarily prolong PR via AV nodal Ca2+ blockade. This would be correct only if INa blockade affected AV conduction similarly."
+      },
+      {
+        "text": "Class II agent; immediate QT prolongation and widened QRS.",
+        "isCorrect": false,
+        "rationale": "Wrong: Beta blockers (class II) modulate autonomic tone and do not directly prolong QT or widen QRS; this would be correct only with additional K+ channel blockade."
+      },
+      {
+        "text": "Class III agent; decreased AV conduction with shortened PR.",
+        "isCorrect": false,
+        "rationale": "Wrong: Class III prolong repolarization and QT; they do not typically shorten PR. This would be correct only if class III had paradoxical AV nodal effects."
+      },
+      {
+        "text": "Class V agent; increased funny current and decreased PR interval.",
+        "isCorrect": false,
+        "rationale": "Wrong: No class V in lecture; increasing If would increase rate and likely shorten PR, but this is not the described therapy for AV nodal slowing."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a mutation causing loss of HCN4 channel function presents with bradycardia. Based on the lecture, which nodal current is directly affected and how does that alter phase 4?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain regulation of heart rate by the autonomic nervous system and effects of stimulation of the b1 adrenergic and M2 muscarinic receptors on the calcium and potassium currents in the nodal cells. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Reduced funny current decreasing phase 4 slope and heart rate.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture identifies HCN4 as mediating If; loss reduces inward depolarizing current during phase 4, lowering slope and heart rate. It would be incorrect if HCN4 function increased."
+      },
+      {
+        "text": "Increased delayed rectifier K+ current increasing phase 4 slope.",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased IK would hyperpolarize and decrease slope; it would not increase phase 4 slope. This option misstates the effect of IK changes."
+      },
+      {
+        "text": "Enhanced L-type Ca2+ current accelerating phase 4 depolarization.",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhanced L-type Ca2+ increases slope and rate; HCN4 loss reduces If, not increases Ca2+ current. This would be correct only with Ca2+ upregulation."
+      },
+      {
+        "text": "Activation of GIRK channels increasing inward Na+ during phase 4.",
+        "isCorrect": false,
+        "rationale": "Wrong: GIRK increases outward K+ current, not inward Na+; activation would decrease phase 4 slope. This option reverses GIRK polarity."
+      },
+      {
+        "text": "Upregulation of Na+/K+ ATPase producing faster spontaneous depolarization.",
+        "isCorrect": false,
+        "rationale": "Wrong: Pump activity maintains gradients but does not directly increase phase 4 depolarization; this would be correct only if pump changes altered net inward current during phase 4."
+      }
+    ]
+  },
+  {
+    "question": "A patient with ventricular tachycardia is given amiodarone. Using lecture concepts, which ionic current modification explains its antiarrhythmic effect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "This lecture is designed to help you understand the physiological basis for the action of antiarrhythmic drugs.",
+    "options": [
+      {
+        "text": "Blockade of potassium channels prolonging repolarization and refractory period.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture classifies amiodarone as a class III agent that blocks K+ currents, prolonging AP and refractory period to suppress reentrant arrhythmias. It would be incorrect if amiodarone primarily increased K+ current."
+      },
+      {
+        "text": "Selective enhancement of funny current to slow ventricular rate.",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhancing If increases pacemaker rate; amiodarone works mainly via K+ blockade and other channel effects, not If enhancement. This would be correct only if the drug increased If."
+      },
+      {
+        "text": "Pure blockade of L-type Ca2+ channels shortening action potentials.",
+        "isCorrect": false,
+        "rationale": "Wrong: Ca2+ blockade tends to shorten plateau in some contexts but amiodarone prolongs AP; pure Ca2+ blockade would not explain its class III effects."
+      },
+      {
+        "text": "Activation of delayed rectifier K+ channels to stabilize repolarization.",
+        "isCorrect": false,
+        "rationale": "Wrong: Activating IK would shorten AP and refractory period, potentially worsening arrhythmia; amiodarone blocks K+ channels instead."
+      },
+      {
+        "text": "Exclusive inhibition of Na+/K+ ATPase to reduce excitability.",
+        "isCorrect": false,
+        "rationale": "Wrong: Na+/K+ ATPase inhibition would depolarize cells and increase excitability; amiodarone does not act primarily via pump inhibition."
+      }
+    ]
+  },
+  {
+    "question": "A patient with hyperkalemia is given insulin and glucose. Shortly after, serum potassium falls but ECG changes persist. According to the lecture, which additional immediate therapy stabilizes the myocardium without lowering serum potassium?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand basic electrophysiology vocabulary, definitions, and commensurate clinical correlations, which explain the effects of hypo- and hyperkalemia on the heart, and physiological basis of the treatment of hyperkalemia. (AACOM II.1.f).",
+    "options": [
+      {
+        "text": "Intravenous calcium to raise threshold and stabilize membranes.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture notes calcium stabilizes cardiac membranes by increasing threshold for depolarization, protecting against arrhythmias without lowering serum K+. It would be incorrect if calcium lowered serum K+ directly."
+      },
+      {
+        "text": "Nebulized albuterol to directly block GIRK channels.",
+        "isCorrect": false,
+        "rationale": "Wrong: Beta agonists like albuterol drive K+ into cells via beta stimulation, not by blocking GIRK; nebulized albuterol can lower serum K+, but it does not act by GIRK blockade."
+      },
+      {
+        "text": "Oral sodium polystyrene sulfonate to immediately remove potassium.",
+        "isCorrect": false,
+        "rationale": "Wrong: SPS exchanges K+ in the gut but acts slowly; it does not immediately stabilize myocardium. It would be correct only for delayed K+ removal."
+      },
+      {
+        "text": "IV magnesium to directly activate Na+/K+ ATPase.",
+        "isCorrect": false,
+        "rationale": "Wrong: Magnesium may help in torsades but does not directly activate the Na+/K+ pump to lower serum K+; this would be correct only if Mg2+ stimulated the pump."
+      },
+      {
+        "text": "Loop diuretic to rapidly increase urinary potassium excretion.",
+        "isCorrect": false,
+        "rationale": "Wrong: Diuretics increase renal K+ loss but act over hours; they do not immediately stabilize myocardium. This would be correct only for longer-term K+ removal."
+      }
+    ]
+  },
+  {
+    "question": "A patient with atrial fibrillation is cardioverted and then started on a drug that prolongs ventricular action potential duration. Based on lecture material, which adverse effect should the clinician monitor for?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "This lecture is designed to help you understand the physiological basis for the action of antiarrhythmic drugs.",
+    "options": [
+      {
+        "text": "Prolonged QT interval with risk of torsades de pointes.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture links K+ channel blockade (class III) and prolonged AP to long QT and torsades risk; clinicians should monitor QT. It would be incorrect if the drug shortened AP."
+      },
+      {
+        "text": "Immediate bradycardia from enhanced funny current.",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhanced If increases rate; class III drugs prolong repolarization and do not enhance If. Bradycardia would be expected with nodal Ca2+ blockade or vagal stimulation."
+      },
+      {
+        "text": "Widened QRS due to increased L-type Ca2+ current.",
+        "isCorrect": false,
+        "rationale": "Wrong: Widened QRS is associated with INa blockade; increased Ca2+ current does not widen QRS. This would be correct only with concomitant Na+ channel blockade."
+      },
+      {
+        "text": "Acute hyperkalemia from intracellular K+ shift.",
+        "isCorrect": false,
+        "rationale": "Wrong: Prolonging AP does not cause hyperkalemia; serum K+ changes are unrelated to class III action. This would be correct only if the drug impaired cellular K+ uptake."
+      },
+      {
+        "text": "Loss of AV nodal delay causing decreased ventricular filling.",
+        "isCorrect": false,
+        "rationale": "Wrong: Class III drugs do not typically abolish AV nodal delay; AV nodal slowing is more associated with Ca2+ blockers or vagal effects."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a high vagal tone has resting heart rate ~70 bpm despite intrinsic SA rate ~100 bpm. According to the lecture, which receptor and channel interaction explains this difference?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain regulation of heart rate by the autonomic nervous system and effects of stimulation of the b1 adrenergic and M2 muscarinic receptors on the calcium and potassium currents in the nodal cells. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "M2 receptor activation opens GIRK causing K+ efflux and rate reduction.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture explains baseline PNS reduces SA rate from ~100 to ~70 via ACh acting on M2, opening GIRK and hyperpolarizing nodal cells. It would be incorrect if sympathetic tone dominated."
+      },
+      {
+        "text": "b1 receptor activation opens GIRK causing K+ influx and rate reduction.",
+        "isCorrect": false,
+        "rationale": "Wrong: b1 activation increases cAMP and Ca2+ currents to raise rate; GIRK opening is mediated by M2, not b1. This option reverses receptor-channel relationships."
+      },
+      {
+        "text": "HCN4 activation by acetylcholine increases phase 4 slope.",
+        "isCorrect": false,
+        "rationale": "Wrong: ACh decreases If and opens GIRK; HCN4 activation increases phase 4 slope and heart rate, not decrease it. This would be correct only with sympathetic modulation of HCN4."
+      },
+      {
+        "text": "L-type Ca2+ channel blockade by ACh increases heart rate.",
+        "isCorrect": false,
+        "rationale": "Wrong: ACh inhibits adenylyl cyclase and reduces Ca2+ currents, decreasing rate; blockade increasing rate contradicts lecture physiology."
+      },
+      {
+        "text": "Na+/K+ ATPase stimulation by M2 increases intracellular Na+ raising rate.",
+        "isCorrect": false,
+        "rationale": "Wrong: M2 does not stimulate the pump to raise rate; the lecture attributes rate reduction to GIRK-mediated K+ efflux."
+      }
+    ]
+  },
+  {
+    "question": "A patient with an inherited defect in fast Na+ channels has slowed conduction in Purkinje fibers. Based on the lecture, which phase of the Purkinje action potential is directly affected and what ECG change might result?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Distinguish between action potentials and ion channels in atria and ventricles vs. nodal cells, describe sodium, calcium, and potassium ion currents and ion channels that differ between those cells, and correlate their roles with the main classes of antiarrhythmic drugs. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Phase 0 upstroke slowed; widened QRS complex on ECG.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states Purkinje and ventricular phase 0 is mediated by fast INa; loss of function slows upstroke and conduction, widening QRS. It would be incorrect if Purkinje used Ca2+ for phase 0."
+      },
+      {
+        "text": "Phase 2 plateau prolonged; shortened QT interval on ECG.",
+        "isCorrect": false,
+        "rationale": "Wrong: Prolonged plateau would lengthen QT, not shorten it; Purkinje phase 0 INa defect does not primarily prolong plateau. This would be correct only with K+ channel gain-of-function."
+      },
+      {
+        "text": "Phase 4 automaticity increased; peaked T waves on ECG.",
+        "isCorrect": false,
+        "rationale": "Wrong: Phase 4 automaticity pertains to nodal tissues; peaked T waves reflect repolarization changes from K+, not Purkinje INa defects."
+      },
+      {
+        "text": "Phase 3 repolarization delayed; decreased PR interval.",
+        "isCorrect": false,
+        "rationale": "Wrong: Delayed repolarization affects QT, not PR; PR interval reflects AV conduction, not Purkinje repolarization. This would be correct only if AV conduction were altered."
+      },
+      {
+        "text": "Resting membrane potential depolarized; shortened QRS duration.",
+        "isCorrect": false,
+        "rationale": "Wrong: Depolarized resting potential often reduces INa availability and slows conduction, widening QRS, not shortening it. This option contradicts expected electrophysiology."
+      }
+    ]
+  },
+  {
+    "question": "A patient with severe hyperkalemia is treated with insulin and calcium. After partial correction, which residual electrophysiologic vulnerability described in the lecture still requires monitoring?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand basic electrophysiology vocabulary, definitions, and commensurate clinical correlations, which explain the effects of hypo- and hyperkalemia on the heart, and physiological basis of the treatment of hyperkalemia. (AACOM II.1.f).",
+    "options": [
+      {
+        "text": "Persistent conduction slowing from reduced Na+ channel availability.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture explains hyperkalemia depolarizes resting potential and inactivates INa, slowing conduction; even after partial correction, Na+ channel availability may remain reduced, so monitoring is needed. It would be incorrect if Na+ channels fully recovered immediately."
+      },
+      {
+        "text": "Immediate normalization of QT interval eliminating arrhythmia risk.",
+        "isCorrect": false,
+        "rationale": "Wrong: QT may not normalize immediately and arrhythmia risk can persist; immediate normalization would be expected only with full correction of ionic gradients."
+      },
+      {
+        "text": "Guaranteed prevention of torsades de pointes after calcium infusion.",
+        "isCorrect": false,
+        "rationale": "Wrong: Calcium stabilizes membranes but does not guarantee prevention of torsades; torsades risk depends on repolarization abnormalities and K+ levels. This would be correct only if repolarization normalized."
+      },
+      {
+        "text": "Permanent restoration of SA node automaticity after insulin.",
+        "isCorrect": false,
+        "rationale": "Wrong: Insulin shifts K+ intracellularly transiently; SA node function may remain impaired until full ionic homeostasis is restored. Permanent restoration would require durable correction."
+      },
+      {
+        "text": "Immediate reversal of peaked T waves with no further monitoring.",
+        "isCorrect": false,
+        "rationale": "Wrong: Peaked T waves may persist until serum K+ normalizes; ongoing monitoring is required. This would be correct only if ECG normalized and K+ remained stable."
+      }
+    ]
+  },
+  {
+    "question": "A patient with sinus node dysfunction is evaluated for pacemaker placement. According to the lecture, which reversible causes should be sought before proceeding?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Clinical correlation: SND (sinoatrial dysfunction) is the inability of the SA node to generate a heart rate that meets physiologic needs.",
+    "options": [
+      {
+        "text": "Drugs like beta blockers, calcium channel blockers, and digoxin.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture recommends searching for remediable causes such as drugs (beta blockers, CCBs, digoxin) and metabolic disease before pacemaker implantation. It would be incorrect if no reversible causes existed."
+      },
+      {
+        "text": "Inherited K+ channel mutations only requiring immediate pacemaker.",
+        "isCorrect": false,
+        "rationale": "Wrong: Familial SND (e.g., GIRK4 gain-of-function) is a cause but not the only reversible one; immediate pacemaker is not always required. This would be correct only if reversible causes were excluded and symptoms severe."
+      },
+      {
+        "text": "Acute hyperkalemia as the sole reversible cause to correct.",
+        "isCorrect": false,
+        "rationale": "Wrong: Hyperkalemia can depress SA node but lecture lists drugs and metabolic diseases broadly; hyperkalemia is one of several reversible causes. This option is too narrow."
+      },
+      {
+        "text": "Permanent structural SA node scarring that is reversible.",
+        "isCorrect": false,
+        "rationale": "Wrong: Structural scarring is not reversible; pacemaker may be indicated. This would be correct only if scarring could be reversed."
+      },
+      {
+        "text": "Short-term use of atropine to permanently restore SA function.",
+        "isCorrect": false,
+        "rationale": "Wrong: Atropine transiently increases heart rate by blocking M2 but does not permanently reverse SND; permanent restoration would require addressing underlying cause."
+      }
+    ]
+  },
+  {
+    "question": "A pharmacology student asks which current is the main target of beta-1 adrenergic stimulation in nodal cells that increases heart rate. Based on the lecture, which current is upregulated?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain regulation of heart rate by the autonomic nervous system and effects of stimulation of the b1 adrenergic and M2 muscarinic receptors on the calcium and potassium currents in the nodal cells. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "L-type calcium current increased via PKA phosphorylation.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture explains b1 activation increases cAMP and PKA-mediated phosphorylation of L-type Ca2+ channels, upregulating ICa and increasing phase 4 slope and heart rate. It would be incorrect if b1 decreased Ca2+ current."
+      },
+      {
+        "text": "GIRK-mediated potassium current increased to raise rate.",
+        "isCorrect": false,
+        "rationale": "Wrong: GIRK activation (by M2) increases K+ efflux and slows rate; b1 stimulation increases Ca2+ and If, not GIRK. This would be correct only with parasympathetic activation."
+      },
+      {
+        "text": "Delayed rectifier potassium current increased to raise rate.",
+        "isCorrect": false,
+        "rationale": "Wrong: Increasing IK shortens AP but is not the primary mechanism by which b1 increases nodal firing; b1 primarily increases ICa and If."
+      },
+      {
+        "text": "Inward rectifier potassium current increased to accelerate depolarization.",
+        "isCorrect": false,
+        "rationale": "Wrong: Inward rectifier stabilizes resting potential and does not accelerate phase 4; b1 effects are via Ca2+ and If. This would be correct only if IK1 were modulated to favor depolarization."
+      },
+      {
+        "text": "Funny current decreased by PKA to increase heart rate.",
+        "isCorrect": false,
+        "rationale": "Wrong: PKA increases If, not decreases it; decreasing If would slow rate. This option reverses the lecture-described effect."
+      }
+    ]
+  },
+  {
+    "question": "A patient with an AV nodal conduction delay is given atropine. Based on the lecture, what is the expected immediate effect on heart rate and why?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain regulation of heart rate by the autonomic nervous system and effects of stimulation of the b1 adrenergic and M2 muscarinic receptors on the calcium and potassium currents in the nodal cells. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Heart rate increases by blocking M2 and reducing GIRK-mediated K+ efflux.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states atropine blocks M2 receptors, preventing GIRK opening and K+ efflux, increasing phase 4 slope and heart rate. It would be incorrect if atropine activated M2 instead."
+      },
+      {
+        "text": "Heart rate decreases by enhancing GIRK channel opening.",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhancing GIRK would hyperpolarize nodal cells and slow rate; atropine blocks M2 and reduces GIRK activity, so this option is opposite of expected."
+      },
+      {
+        "text": "No change in heart rate because atropine affects only ventricles.",
+        "isCorrect": false,
+        "rationale": "Wrong: Atropine affects nodal M2 receptors and increases heart rate; it does not act only on ventricles. This would be correct only if M2 receptors were absent in nodal tissue."
+      },
+      {
+        "text": "Immediate QT prolongation due to L-type Ca2+ blockade.",
+        "isCorrect": false,
+        "rationale": "Wrong: Atropine does not block L-type Ca2+ channels and does not directly prolong QT; this would be correct only if atropine had Ca2+ blocking properties."
+      },
+      {
+        "text": "Conversion to atrial fibrillation by increasing IK currents.",
+        "isCorrect": false,
+        "rationale": "Wrong: Atropine increases heart rate by blocking vagal tone; it does not directly increase IK to cause AF. This would be correct only with additional proarrhythmic effects."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a drug that selectively increases IKs experiences shortened ventricular action potentials. According to the lecture, how would this affect the refractory period and arrhythmia susceptibility?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Infer the basis of refractory period from the properties of action potentials in cardiomyocytes and explain its importance in preventing arrhythmias and tetany. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Shortened refractory period and increased risk of reentrant arrhythmias.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture explains that shortening AP shortens refractory period; a shorter refractory period can permit reentrant circuits and increase arrhythmia risk. It would be incorrect if refractory period lengthened."
+      },
+      {
+        "text": "Prolonged refractory period protecting against arrhythmias.",
+        "isCorrect": false,
+        "rationale": "Wrong: Increasing IKs shortens AP and refractory period, not prolong it; protection would occur with K+ blockade prolonging AP."
+      },
+      {
+        "text": "No change in refractory period but decreased contractility.",
+        "isCorrect": false,
+        "rationale": "Wrong: AP duration influences refractory period per lecture; decreasing AP would change refractory period. Contractility changes depend on Ca2+ handling, not solely IKs."
+      },
+      {
+        "text": "Immediate tetany prevention by lengthening action potentials.",
+        "isCorrect": false,
+        "rationale": "Wrong: Tetany prevention is linked to long refractory periods; increasing IKs shortens AP, not lengthen it. This option contradicts lecture physiology."
+      },
+      {
+        "text": "Conversion of nodal pacemaker to ventricular automaticity dominance.",
+        "isCorrect": false,
+        "rationale": "Wrong: IKs modulation affects ventricular repolarization; it does not convert pacemaker hierarchy. This would be correct only with major nodal dysfunction."
+      }
+    ]
+  },
+  {
+    "question": "A student asks which cardiac cells exhibit a plateau phase and why this is physiologically important, per the lecture. Which answer best matches the lecture content?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Infer the basis of refractory period from the properties of action potentials in cardiomyocytes and explain its importance in preventing arrhythmias and tetany. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Atrial and ventricular cardiomyocytes have plateau enabling long refractory period.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states atrial and ventricular myocytes have a plateau (phase 2) mediated by Ca2+ influx and K+ efflux, which prolongs AP and refractory period, preventing tetany. It would be incorrect if nodal cells were claimed to have plateau."
+      },
+      {
+        "text": "SA and AV nodal cells have plateau enabling long refractory period.",
+        "isCorrect": false,
+        "rationale": "Wrong: Nodal cells lack a sustained plateau; their AP is Ca2+-mediated and shorter. This would be correct only if nodal cells exhibited a plateau phase."
+      },
+      {
+        "text": "Purkinje fibers lack plateau and therefore have long refractory period.",
+        "isCorrect": false,
+        "rationale": "Wrong: Purkinje fibers have long AP duration including plateau; claiming they lack plateau contradicts lecture. This would be correct only if Purkinje fibers were atypical."
+      },
+      {
+        "text": "Only atrial cells lack plateau making them refractory longer.",
+        "isCorrect": false,
+        "rationale": "Wrong: Atrial cells do have a plateau; lacking plateau would shorten refractory period, not lengthen it. This option reverses lecture facts."
+      },
+      {
+        "text": "All cardiac cells have identical plateau and refractory durations.",
+        "isCorrect": false,
+        "rationale": "Wrong: Lecture emphasizes differences among cell types; AP and refractory durations vary (atria, ventricles, Purkinje). This option is incorrect unless all cell electrophysiology were identical."
+      }
+    ]
+  },
+  {
+    "question": "A patient with an overdose of a drug that increases GIRK channel opening presents with profound bradycardia. Based on the lecture, which receptor activation mimics this effect physiologically?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain regulation of heart rate by the autonomic nervous system and effects of stimulation of the b1 adrenergic and M2 muscarinic receptors on the calcium and potassium currents in the nodal cells. (AACOM II.1.f)",
+    "options": [
+      {
+        "text": "Muscarinic M2 receptor activation by acetylcholine.",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture explains ACh acting on M2 releases Gβγ that opens GIRK, increasing K+ efflux and slowing heart rate; this mimics GIRK-opening drug effects. It would be incorrect if a beta agonist were responsible."
+      },
+      {
+        "text": "Beta-1 adrenergic receptor activation by norepinephrine.",
+        "isCorrect": false,
+        "rationale": "Wrong: b1 activation increases cAMP and Ca2+ currents, increasing heart rate; it does not open GIRK. This would be correct only if b1 activated GIRK, which it does not."
+      },
+      {
+        "text": "Direct activation of L-type Ca2+ channels by acetylcholine.",
+        "isCorrect": false,
+        "rationale": "Wrong: ACh via M2 inhibits adenylyl cyclase and reduces Ca2+ currents; it does not directly activate L-type channels. This would be correct only with different receptor signaling."
+      },
+      {
+        "text": "Stimulation of funny current by vagal discharge.",
+        "isCorrect": false,
+        "rationale": "Wrong: Vagal discharge decreases If and opens GIRK; stimulating If would increase rate, not mimic GIRK opening. This option reverses vagal effects."
+      },
+      {
+        "text": "Activation of delayed rectifier K+ channels by sympathetic tone.",
+        "isCorrect": false,
+        "rationale": "Wrong: Sympathetic tone increases Ca2+ and If; activation of delayed rectifier by sympathetic tone is not the mechanism for bradycardia. This would be correct only if sympathetic activity paradoxically opened IK."
+      }
+    ]
+  }
+]
