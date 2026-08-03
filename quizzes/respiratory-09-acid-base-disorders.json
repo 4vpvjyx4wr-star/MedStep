@@ -1,0 +1,1186 @@
+[
+  {
+    "question": "Which equation relates pH to bicarbonate and dissolved carbon dioxide concentrations?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Understand the physiology of carbonate buffer",
+    "options": [
+      {
+        "text": "Henderson Hasselbalch equation linking pH and buffers",
+        "isCorrect": true,
+        "rationale": "Correct: The Henderson Hasselbalch equation expresses pH as pK plus log of bicarbonate over carbonic acid, describing the carbonate buffer relationship in the lecture."
+      },
+      {
+        "text": "Michaelis Menten equation for enzyme reaction rates",
+        "isCorrect": false,
+        "rationale": "Wrong: Michaelis Menten describes enzyme kinetics, not acid base balance; it would be correct only if the question asked about enzyme velocity instead."
+      },
+      {
+        "text": "Nernst equation for membrane potential calculations",
+        "isCorrect": false,
+        "rationale": "Wrong: Nernst relates ion gradients to membrane potential; it would be correct only if the stem asked about electrochemical potentials rather than pH."
+      },
+      {
+        "text": "Goldman Hodgkin Katz equation for ion permeability",
+        "isCorrect": false,
+        "rationale": "Wrong: Goldman Hodgkin Katz predicts membrane potential from permeabilities; it would be correct only for membrane transport contexts, not buffer chemistry."
+      },
+      {
+        "text": "Henderson Henry law for gas solubility in liquids",
+        "isCorrect": false,
+        "rationale": "Wrong: Henry's law concerns gas solubility (CO2 in blood) but not the pH–bicarbonate relationship; it would be correct only if the question asked about dissolved gas concentration alone."
+      }
+    ]
+  },
+  {
+    "question": "Which two components form the primary extracellular buffer system described in the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Understand the physiology of carbonate buffer",
+    "options": [
+      {
+        "text": "Carbonic acid and bicarbonate constitute the main buffer",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states the carbonate buffer is a mixture of H2CO3 (carbonic acid) and HCO3- (bicarbonate), the primary extracellular buffer."
+      },
+      {
+        "text": "Hemoglobin and phosphate act as the main extracellular buffer",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemoglobin and phosphate buffer intracellular compartments; this would be correct only if the question targeted intracellular buffering rather than extracellular carbonate buffer."
+      },
+      {
+        "text": "Albumin and sulfate are the primary plasma buffering pair",
+        "isCorrect": false,
+        "rationale": "Wrong: Albumin and sulfate are unmeasured anions contributing to anion gap but are not the primary carbonate buffer; would be correct only in a discussion of unmeasured anions."
+      },
+      {
+        "text": "Ammonia and ammonium form the dominant extracellular buffer system",
+        "isCorrect": false,
+        "rationale": "Wrong: Ammonia/ammonium are important renal buffers for acid excretion but are not the main extracellular carbonate buffer; would be correct only for renal tubular handling contexts."
+      },
+      {
+        "text": "Phosphate and bicarbonate together form the main buffer pair",
+        "isCorrect": false,
+        "rationale": "Wrong: Phosphate contributes to buffering but the lecture emphasizes carbonic acid and bicarbonate as the primary extracellular buffer; this would be correct only if phosphate were the focus."
+      }
+    ]
+  },
+  {
+    "question": "Which normal arterial values were listed as baseline in the lecture for pH, bicarbonate, and PaCO2?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "pH 7.4, HCO3 24 mEq L, PaCO2 40 mmHg",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists normal systemic arterial values as pH 7.4, HCO3- 24 mEq/L, and PaCO2 40 mm Hg as baseline for analysis."
+      },
+      {
+        "text": "pH 7.2, HCO3 18 mEq L, PaCO2 50 mmHg",
+        "isCorrect": false,
+        "rationale": "Wrong: These values indicate acidosis and elevated CO2; they would be correct only if the patient had respiratory acidosis rather than normal baseline values."
+      },
+      {
+        "text": "pH 7.45, HCO3 28 mEq L, PaCO2 30 mmHg",
+        "isCorrect": false,
+        "rationale": "Wrong: These values reflect alkalosis with low PaCO2 and elevated bicarbonate; would be correct only for a compensated metabolic alkalosis scenario."
+      },
+      {
+        "text": "pH 7.35, HCO3 20 mEq L, PaCO2 45 mmHg",
+        "isCorrect": false,
+        "rationale": "Wrong: These values are slightly acidotic and not the lecture's stated normals; would be correct only if the lecture had used different reference ranges."
+      },
+      {
+        "text": "pH 7.5, HCO3 30 mEq L, PaCO2 25 mmHg",
+        "isCorrect": false,
+        "rationale": "Wrong: These indicate alkalemia with low PaCO2; would be correct only in a respiratory alkalosis context, not as the normal baseline."
+      }
+    ]
+  },
+  {
+    "question": "Which formula from the lecture estimates expected PaCO2 in primary metabolic acidosis?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Winter s formula PaCO2 equals 1.5 HCO3 plus 8",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture presents Winter's formula: PaCO2 = (1.5 × HCO3-) + 8 to predict respiratory compensation in metabolic acidosis."
+      },
+      {
+        "text": "Henderson Hasselbalch pH equals pK plus log ratio",
+        "isCorrect": false,
+        "rationale": "Wrong: Henderson Hasselbalch relates pH to buffer ratios, not the expected PaCO2 in metabolic acidosis; it would be correct only for pH calculations."
+      },
+      {
+        "text": "PaCO2 equals 40 minus 1.5 times HCO3 change",
+        "isCorrect": false,
+        "rationale": "Wrong: This is not the lecture formula; it would be correct only if the lecture had provided that specific linear approximation, which it did not."
+      },
+      {
+        "text": "Anion gap equals sodium minus chloride plus bicarbonate",
+        "isCorrect": false,
+        "rationale": "Wrong: The anion gap formula is Na - (Cl + HCO3) and is unrelated to predicting PaCO2; it would be correct only for AG calculation."
+      },
+      {
+        "text": "Delta PaCO2 equals 0.7 times change in HCO3 value",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture mentions a relation but Winter s formula is the specific predictor for metabolic acidosis; this option would be correct only if the question asked about a different compensation approximation."
+      }
+    ]
+  },
+  {
+    "question": "A patient has pH 7.30 [7.35-7.45], HCO3- 14 mEq L [24], PaCO2 30 mmHg [40]. Which primary disturbance best fits these values?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Primary metabolic acidosis with respiratory compensation present",
+        "isCorrect": true,
+        "rationale": "Correct: pH and HCO3- move in same direction (both low), and PaCO2 approximates Winter s predicted value, indicating metabolic acidosis with respiratory compensation as in the example."
+      },
+      {
+        "text": "Primary respiratory acidosis with metabolic compensation present",
+        "isCorrect": false,
+        "rationale": "Wrong: Respiratory acidosis would show elevated PaCO2 with increased HCO3-; here HCO3- is low. It would be correct only if PaCO2 were high and HCO3- elevated."
+      },
+      {
+        "text": "Primary metabolic alkalosis with respiratory compensation present",
+        "isCorrect": false,
+        "rationale": "Wrong: Metabolic alkalosis would have elevated HCO3- and alkalemic pH; this would be correct only if HCO3- were increased and pH >7.45."
+      },
+      {
+        "text": "Primary respiratory alkalosis with metabolic compensation present",
+        "isCorrect": false,
+        "rationale": "Wrong: Respiratory alkalosis shows low PaCO2 with low HCO3- as compensation but pH would be high; this would be correct only if pH were >7.45."
+      },
+      {
+        "text": "Mixed metabolic acidosis and respiratory acidosis combined",
+        "isCorrect": false,
+        "rationale": "Wrong: Mixed acidosis would have both low pH and abnormal compensations inconsistent with Winter s formula; this would be correct only if PaCO2 were higher than predicted for compensation."
+      }
+    ]
+  },
+  {
+    "question": "Which change in measured ions produces a normal anion gap metabolic acidosis as taught?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Loss of bicarbonate with reciprocal chloride increase",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains NAGMA (hyperchloremic) results from HCO3- loss replaced by measured Cl-, keeping the anion gap normal."
+      },
+      {
+        "text": "Addition of unmeasured organic acids raising anion gap",
+        "isCorrect": false,
+        "rationale": "Wrong: Addition of unmeasured acids increases the anion gap (HAGMA), not NAGMA; it would be correct only for high anion gap metabolic acidosis."
+      },
+      {
+        "text": "Primary respiratory retention of CO2 without bicarbonate change",
+        "isCorrect": false,
+        "rationale": "Wrong: Respiratory CO2 retention causes respiratory acidosis with compensatory HCO3- changes over time; it would be correct only if the disorder were respiratory in origin."
+      },
+      {
+        "text": "Excess bicarbonate generation with chloride reduction",
+        "isCorrect": false,
+        "rationale": "Wrong: Excess bicarbonate would cause metabolic alkalosis, not NAGMA; it would be correct only if HCO3- were increased."
+      },
+      {
+        "text": "Increase in unmeasured cations causing gap reduction",
+        "isCorrect": false,
+        "rationale": "Wrong: Unmeasured cations are not the mechanism for NAGMA; this would be correct only if laboratory artifacts altered measured cation values."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected toxin ingestion has high anion gap metabolic acidosis. Which cause listed in the lecture most likely explains this presentation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Ethylene glycol ingestion producing organic acid metabolites",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists ethylene glycol ingestion producing glycolic and oxalic acids as a cause of high anion gap metabolic acidosis."
+      },
+      {
+        "text": "Chronic diarrhea causing bicarbonate loss and chloride gain",
+        "isCorrect": false,
+        "rationale": "Wrong: Diarrhea causes normal anion gap (hyperchloremic) metabolic acidosis, not HAGMA; it would be correct only if the anion gap remained normal."
+      },
+      {
+        "text": "Renal tubular bicarbonate reabsorption defect causing alkalosis",
+        "isCorrect": false,
+        "rationale": "Wrong: A proximal RTA causing bicarbonate loss leads to acidosis but typically NAGMA; this option also incorrectly states alkalosis and would be correct only with different lab findings."
+      },
+      {
+        "text": "Excessive vomiting leading to loss of gastric acid",
+        "isCorrect": false,
+        "rationale": "Wrong: Vomiting causes metabolic alkalosis due to acid loss, not high anion gap acidosis; it would be correct only if the patient had alkalemia."
+      },
+      {
+        "text": "Hyperventilation causing primary respiratory alkalosis state",
+        "isCorrect": false,
+        "rationale": "Wrong: Hyperventilation causes respiratory alkalosis with low PaCO2, not HAGMA; it would be correct only if PaCO2 were decreased and pH elevated."
+      }
+    ]
+  },
+  {
+    "question": "Using the Davenport framework, which graphical shift indicates an acute respiratory acidosis before renal compensation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the graphic presentation of different acid base disorders",
+    "options": [
+      {
+        "text": "Movement along buffer line to higher PaCO2 with low pH",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes acute respiratory acidosis as movement to higher PaCO2 on the buffer line with decreased pH before metabolic compensation."
+      },
+      {
+        "text": "Horizontal shift to higher HCO3 with unchanged PaCO2",
+        "isCorrect": false,
+        "rationale": "Wrong: Horizontal shifts reflect metabolic disturbances with immediate respiratory compensation; this would be correct only for primary metabolic disorders."
+      },
+      {
+        "text": "Movement to lower PaCO2 with increased pH on buffer line",
+        "isCorrect": false,
+        "rationale": "Wrong: Lower PaCO2 with increased pH represents acute respiratory alkalosis, not acute respiratory acidosis; it would be correct only if PaCO2 were decreased."
+      },
+      {
+        "text": "Diagonal shift toward normal pH with increased HCO3",
+        "isCorrect": false,
+        "rationale": "Wrong: Diagonal shifts toward normal pH with increased HCO3 reflect chronic respiratory acidosis with renal compensation; this would be correct only after time for compensation."
+      },
+      {
+        "text": "Vertical rise in HCO3 with unchanged pH value",
+        "isCorrect": false,
+        "rationale": "Wrong: A vertical rise in HCO3 without pH change is not a typical Davenport pattern; it would be correct only if an external buffer were added without CO2 change."
+      }
+    ]
+  },
+  {
+    "question": "A patient has pH 7.60 [7.35-7.45], HCO3- 18 mEq L [24], PaCO2 19 mmHg [40]. Which diagnosis and timing best match the lecture example?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Acute respiratory alkalosis without chronic renal compensation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture example with high pH, low HCO3-, and low PaCO2 matched acute (uncompensated) respiratory alkalosis where HCO3- drop fits acute compensation formulas."
+      },
+      {
+        "text": "Chronic respiratory alkalosis with full renal compensation",
+        "isCorrect": false,
+        "rationale": "Wrong: Chronic respiratory alkalosis would show a larger HCO3- decrease; this would be correct only if HCO3- were closer to the chronic predicted value."
+      },
+      {
+        "text": "Primary metabolic alkalosis with respiratory compensation",
+        "isCorrect": false,
+        "rationale": "Wrong: Metabolic alkalosis would have elevated HCO3- and high pH; this would be correct only if HCO3- were increased rather than decreased."
+      },
+      {
+        "text": "Mixed metabolic acidosis and respiratory alkalosis combined",
+        "isCorrect": false,
+        "rationale": "Wrong: Mixed disorders would show discordant compensations; this would be correct only if measured values deviated from predicted acute compensation ranges."
+      },
+      {
+        "text": "Primary respiratory acidosis with paradoxical alkalemia present",
+        "isCorrect": false,
+        "rationale": "Wrong: Respiratory acidosis produces low pH with high PaCO2; this option contradicts the high pH and low PaCO2 and would be correct only with different ABG values."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical scenario from the lecture best explains lactic high anion gap metabolic acidosis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Tissue hypoperfusion from shock causing anaerobic metabolism",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists impaired tissue oxygenation (circulatory failure, sepsis) causing lactic acid accumulation and high anion gap metabolic acidosis."
+      },
+      {
+        "text": "Excessive gastric fluid loss producing bicarbonate depletion",
+        "isCorrect": false,
+        "rationale": "Wrong: Gastric fluid loss causes metabolic alkalosis due to acid loss, not lactic acidosis; it would be correct only if the patient had vomiting and alkalemia."
+      },
+      {
+        "text": "Diarrheal bicarbonate loss producing hyperchloremic acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Diarrhea causes normal anion gap (hyperchloremic) metabolic acidosis, not lactic HAGMA; it would be correct only if the anion gap remained normal."
+      },
+      {
+        "text": "Chronic respiratory hypoventilation causing CO2 retention",
+        "isCorrect": false,
+        "rationale": "Wrong: Hypoventilation causes respiratory acidosis with elevated PaCO2, not lactic HAGMA; it would be correct only if ABG showed high PaCO2."
+      },
+      {
+        "text": "Excess bicarbonate ingestion causing metabolic alkalosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Bicarbonate ingestion causes metabolic alkalosis, not lactic acidosis; it would be correct only if HCO3- were elevated and pH increased."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory calculation from the lecture helps distinguish high versus normal anion gap metabolic acidosis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Anion gap equals sodium minus chloride minus bicarbonate",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture defines AG as Na+ – (Cl– + HCO3–) to identify unmeasured anions and distinguish HAGMA from NAGMA."
+      },
+      {
+        "text": "Osmolar gap equals measured minus calculated osmolarity",
+        "isCorrect": false,
+        "rationale": "Wrong: Osmolar gap helps detect toxic alcohols but is not the primary AG calculation; it would be correct only if the question asked about osmolality discrepancies."
+      },
+      {
+        "text": "Delta ratio equals change in gap over bicarbonate change",
+        "isCorrect": false,
+        "rationale": "Wrong: Delta ratio is useful for mixed disorders but the lecture emphasized the basic AG formula; this option would be correct only if the lecture had focused on delta calculations."
+      },
+      {
+        "text": "Winter s formula predicting PaCO2 from bicarbonate",
+        "isCorrect": false,
+        "rationale": "Wrong: Winter s formula predicts respiratory compensation, not the anion gap; it would be correct only for assessing expected PaCO2 in metabolic acidosis."
+      },
+      {
+        "text": "Henderson Hasselbalch equation for pH buffer relationship",
+        "isCorrect": false,
+        "rationale": "Wrong: Henderson Hasselbalch relates pH to buffer ratios but does not calculate the anion gap; it would be correct only for pH calculations."
+      }
+    ]
+  },
+  {
+    "question": "A 14 year old with glucose 380 mg dL [70-100], Na 132 mEq L [140], K 5.1 mEq L [3.5-5.0], Cl 92 mEq L [104], HCO3 18 mEq L [24], pH 7.10 [7.35-7.45], RR 27 per min. Which statement from the lecture best describes this case?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "High anion gap metabolic acidosis due to ketoacidosis",
+        "isCorrect": true,
+        "rationale": "Correct: Hyperglycemia with low HCO3- and low pH indicates diabetic ketoacidosis, a HAGMA cause listed in the lecture; respiratory rate is elevated as compensation."
+      },
+      {
+        "text": "Normal anion gap metabolic acidosis from diarrheal losses",
+        "isCorrect": false,
+        "rationale": "Wrong: Diarrhea causes NAGMA but this patient has hyperglycemia and likely ketones; it would be correct only if glucose and ketone data were absent and chloride elevated to match HCO3- loss."
+      },
+      {
+        "text": "Primary respiratory acidosis from hypoventilation causing hypercapnia",
+        "isCorrect": false,
+        "rationale": "Wrong: Respiratory acidosis shows elevated PaCO2, but this patient is hyperventilating (RR 27) and has low HCO3-, consistent with metabolic acidosis; it would be correct only with high PaCO2."
+      },
+      {
+        "text": "Metabolic alkalosis from vomiting with compensatory hypoventilation",
+        "isCorrect": false,
+        "rationale": "Wrong: Vomiting causes metabolic alkalosis with elevated HCO3-; this would be correct only if HCO3- were increased and pH alkalemic."
+      },
+      {
+        "text": "Mixed respiratory alkalosis and metabolic alkalosis combined",
+        "isCorrect": false,
+        "rationale": "Wrong: The labs show acidosis not alkalosis; this option would be correct only if both pH and HCO3- were elevated or PaCO2 decreased with alkalemia."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected methanol ingestion presents obtunded and blind. According to the lecture, which specific treatment is indicated as first line?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Fomepizole to inhibit alcohol dehydrogenase metabolism",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states fomepizole is used in methanol poisoning to block alcohol dehydrogenase and prevent formation of toxic metabolites."
+      },
+      {
+        "text": "Sodium bicarbonate infusion as sole definitive therapy",
+        "isCorrect": false,
+        "rationale": "Wrong: Sodium bicarbonate may be used for severe acidosis but is not the specific antidote; it would be correct only as adjunctive therapy when pH is critically low."
+      },
+      {
+        "text": "Ethanol administration to accelerate toxic metabolite formation",
+        "isCorrect": false,
+        "rationale": "Wrong: Ethanol competes with methanol metabolism and can be used historically, but it does not accelerate toxic metabolite formation; this would be correct only if fomepizole were unavailable and ethanol used as alternative."
+      },
+      {
+        "text": "Hemodialysis only after waiting for spontaneous clearance",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemodialysis is indicated to remove methanol and metabolites but is not the first pharmacologic antidote; it would be correct only if antidote unavailable or severe toxicity present."
+      },
+      {
+        "text": "Pyridoxine administration to reverse formic acid toxicity",
+        "isCorrect": false,
+        "rationale": "Wrong: Pyridoxine is not the antidote for methanol; it is used for isoniazid toxicity. This would be correct only in the context of INH overdose."
+      }
+    ]
+  },
+  {
+    "question": "A patient with severe sepsis has pH 7.20 [7.35-7.45], HCO3- 10 mEq L [24], PaCO2 28 mmHg [40]. According to the lecture, which mechanism best explains these ABG findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Lactic acid accumulation from impaired tissue oxygenation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists lactic acidosis from impaired tissue oxygenation (sepsis) causing HAGMA with respiratory compensation lowering PaCO2."
+      },
+      {
+        "text": "Renal bicarbonate retention causing metabolic alkalosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Renal bicarbonate retention would raise HCO3- and pH; this would be correct only if HCO3- were elevated and pH alkalemic."
+      },
+      {
+        "text": "Primary hypoventilation causing CO2 retention and acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Hypoventilation raises PaCO2, but here PaCO2 is low due to hyperventilation compensation; it would be correct only with elevated PaCO2."
+      },
+      {
+        "text": "Diarrheal bicarbonate loss producing hyperchloremic acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Diarrhea causes NAGMA; while both produce low HCO3-, sepsis-associated lactic acidosis is more consistent with HAGMA and the clinical context."
+      },
+      {
+        "text": "Excessive bicarbonate administration causing alkalemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Bicarbonate administration causes alkalemia, not acidosis; this would be correct only if HCO3- and pH were increased."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the expected renal response over time to a primary respiratory acidosis, per the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Kidneys increase bicarbonate reabsorption to compensate slowly",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains that when lungs cause acidosis, kidneys slowly retain HCO3- to compensate over time."
+      },
+      {
+        "text": "Kidneys immediately excrete bicarbonate to correct pH rapidly",
+        "isCorrect": false,
+        "rationale": "Wrong: Renal compensation is slow, not immediate; this would be correct only if renal mechanisms acted acutely, which they do not."
+      },
+      {
+        "text": "Renal ammoniagenesis decreases to lower bicarbonate production",
+        "isCorrect": false,
+        "rationale": "Wrong: In acidosis, renal ammoniagenesis increases to excrete acid and generate bicarbonate; this would be correct only if the physiology were reversed."
+      },
+      {
+        "text": "Kidneys reduce acid excretion causing worsening acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Kidneys increase acid excretion in response to respiratory acidosis; this option would be correct only in renal failure impairing compensation."
+      },
+      {
+        "text": "Renal compensation is complete within minutes after onset",
+        "isCorrect": false,
+        "rationale": "Wrong: Renal compensation takes days to develop; it would be correct only if the question described chronic rather than acute timing."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute opioid overdose has ABG pH 7.19 [7.35-7.45], PaCO2 70 mmHg [40], HCO3- 25 mEq L [24]. Which mechanism from the lecture explains this pattern?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Hypoventilation causing CO2 retention and primary respiratory acidosis",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture uses morphine overdose as an example where respiratory depression causes CO2 retention and acute respiratory acidosis with minimal metabolic compensation."
+      },
+      {
+        "text": "Hyperventilation causing respiratory alkalosis with low CO2",
+        "isCorrect": false,
+        "rationale": "Wrong: Hyperventilation lowers PaCO2 and raises pH; this would be correct only if PaCO2 were decreased and pH elevated."
+      },
+      {
+        "text": "Lactic acid production causing high anion gap metabolic acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Lactic acidosis lowers HCO3- and pH but typically shows low PaCO2 from compensation; this would be correct only if HCO3- were decreased."
+      },
+      {
+        "text": "Renal bicarbonate loss producing hyperchloremic acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Renal bicarbonate loss causes NAGMA with low HCO3-; this would be correct only if HCO3- were low and chloride elevated."
+      },
+      {
+        "text": "Excess base administration causing metabolic alkalosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Base administration increases HCO3- and pH; this would be correct only if HCO3- and pH were elevated."
+      }
+    ]
+  },
+  {
+    "question": "Which treatment principle from the lecture is recommended for severe diabetic ketoacidosis when pH is below 7.2?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Intravenous fluids, insulin, and potassium correction promptly",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture recommends IV fluids, insulin, and K+ correction as primary treatment for DKA; bicarbonate is not routinely beneficial."
+      },
+      {
+        "text": "Immediate sodium bicarbonate infusion as first line therapy",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture states sodium bicarbonate has no benefit for DKA generally and is not first line; it would be correct only in select severe cases with very low pH and specific indications."
+      },
+      {
+        "text": "Hemodialysis as the initial management for all DKA patients",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemodialysis is not standard for DKA; it would be correct only for renal failure or toxin removal scenarios, not routine DKA."
+      },
+      {
+        "text": "Oral bicarbonate tablets and outpatient observation only",
+        "isCorrect": false,
+        "rationale": "Wrong: Oral bicarbonate and outpatient care are inappropriate for severe DKA with pH  7.45."
+      },
+      {
+        "text": "Mixed metabolic alkalosis and respiratory acidosis combined",
+        "isCorrect": false,
+        "rationale": "Wrong: Mixed disorders would show conflicting compensations; this would be correct only if lab values matched both alkalosis and acidosis patterns."
+      }
+    ]
+  },
+  {
+    "question": "Which bedside sign from the lecture would you expect in a patient with metabolic acidosis attempting respiratory compensation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Increased respiratory rate with deep rapid breaths observed clinically",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes respiratory compensation for metabolic acidosis involves hyperventilation (Kussmaul breathing) to lower PaCO2."
+      },
+      {
+        "text": "Slow shallow breathing to retain carbon dioxide intentionally",
+        "isCorrect": false,
+        "rationale": "Wrong: Slow shallow breathing would worsen acidosis by retaining CO2; it would be correct only in metabolic alkalosis where hypoventilation compensates."
+      },
+      {
+        "text": "Bradycardia and hypoventilation as primary compensatory response",
+        "isCorrect": false,
+        "rationale": "Wrong: Bradycardia and hypoventilation are not compensatory for metabolic acidosis; this would be correct only in specific autonomic dysfunction cases."
+      },
+      {
+        "text": "Marked cyanosis despite normal oxygenation and ventilation",
+        "isCorrect": false,
+        "rationale": "Wrong: Cyanosis is not a typical compensatory sign for metabolic acidosis; it would be correct only with severe hypoxemia unrelated to acid base compensation."
+      },
+      {
+        "text": "Decreased respiratory rate with shallow breaths during compensation",
+        "isCorrect": false,
+        "rationale": "Wrong: Compensation requires increased ventilation; decreased rate is opposite and would be correct only in respiratory acidosis compensation scenarios."
+      }
+    ]
+  },
+  {
+    "question": "A patient with cardiopulmonary arrest has ABG PaCO2 50 mmHg [40], pH 7.18 [7.35-7.45], HCO3- 18 mEq L [24]. Which best describes this acid base disturbance per the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Mixed acidosis with both respiratory and metabolic components present",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains that low pH with both elevated PaCO2 and low HCO3- indicates combined respiratory (CO2 retention) and metabolic (lactic) acidosis."
+      },
+      {
+        "text": "Uncompensated acute respiratory acidosis only without metabolic change",
+        "isCorrect": false,
+        "rationale": "Wrong: Pure respiratory acidosis would have elevated HCO3- only after chronic compensation; here HCO3- is low, indicating a metabolic component as well."
+      },
+      {
+        "text": "Primary metabolic alkalosis with respiratory compensation present",
+        "isCorrect": false,
+        "rationale": "Wrong: Metabolic alkalosis would show elevated HCO3- and alkalemic pH; this would be correct only with increased HCO3-."
+      },
+      {
+        "text": "Metabolic acidosis with appropriate respiratory compensation only",
+        "isCorrect": false,
+        "rationale": "Wrong: In metabolic acidosis compensation lowers PaCO2; here PaCO2 is elevated, not lowered, so this would be correct only if PaCO2 were decreased."
+      },
+      {
+        "text": "Primary respiratory alkalosis with paradoxical metabolic acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Respiratory alkalosis has low PaCO2 and high pH; this option contradicts the ABG and would be correct only with decreased PaCO2."
+      }
+    ]
+  },
+  {
+    "question": "Which slide concept explains why the body never overcompensates for a primary acid base disturbance?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the graphic presentation of different acid base disorders",
+    "options": [
+      {
+        "text": "Physiologic compensation moves toward but not beyond normal pH",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture emphasizes that compensatory mechanisms aim to reduce pH disturbance but do not overcorrect past normal values."
+      },
+      {
+        "text": "Compensation always overshoots causing secondary disorders frequently",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture explicitly states the system never overcompensates; overshoot would be correct only in pathological dysregulation not described in the slides."
+      },
+      {
+        "text": "Compensation is instantaneous and complete immediately after insult",
+        "isCorrect": false,
+        "rationale": "Wrong: Compensation has different time courses (lungs fast, kidneys slow); instantaneous complete compensation is incorrect except for immediate respiratory changes."
+      },
+      {
+        "text": "Compensation always reverses the primary disturbance fully",
+        "isCorrect": false,
+        "rationale": "Wrong: Compensation reduces but does not fully reverse the primary disturbance; full reversal would be correct only with treatment of the underlying cause."
+      },
+      {
+        "text": "Compensation is independent of the primary organ causing disturbance",
+        "isCorrect": false,
+        "rationale": "Wrong: Compensation depends on which organ is primary (lungs vs kidneys); this would be correct only if compensation were organ-agnostic, which the lecture contradicts."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following is the most appropriate immediate management step for ethylene glycol poisoning as per the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Administer fomepizole and arrange urgent hemodialysis",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture recommends fomepizole to inhibit alcohol dehydrogenase and hemodialysis to remove ethylene glycol and metabolites in severe poisoning."
+      },
+      {
+        "text": "Give oral activated charcoal and observe outpatient",
+        "isCorrect": false,
+        "rationale": "Wrong: Activated charcoal is ineffective for ethylene glycol and outpatient observation is unsafe; this would be correct only for certain ingestions amenable to charcoal and minimal toxicity."
+      },
+      {
+        "text": "Immediate sodium bicarbonate as sole definitive antidote",
+        "isCorrect": false,
+        "rationale": "Wrong: Bicarbonate may correct acidosis but is not the specific antidote; this would be correct only as adjunctive therapy, not sole definitive treatment."
+      },
+      {
+        "text": "Administer naloxone to reverse central nervous system depression",
+        "isCorrect": false,
+        "rationale": "Wrong: Naloxone treats opioid overdose, not toxic alcohol ingestion; it would be correct only if opioid toxicity were the cause."
+      },
+      {
+        "text": "Provide intravenous insulin and dextrose for toxin metabolism",
+        "isCorrect": false,
+        "rationale": "Wrong: Insulin and dextrose treat DKA, not ethylene glycol poisoning; this would be correct only in hyperglycemic ketoacidosis contexts."
+      }
+    ]
+  },
+  {
+    "question": "A patient has pH 7.18 [7.35-7.45], PaCO2 62 mmHg [40], HCO3- 23 mEq L [24]. Which organ is primarily responsible for this disturbance according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Lung dysfunction causing primary respiratory acidosis",
+        "isCorrect": true,
+        "rationale": "Correct: Elevated PaCO2 with near-normal HCO3- and low pH indicates primary respiratory acidosis due to pulmonary hypoventilation as taught."
+      },
+      {
+        "text": "Renal failure causing primary metabolic acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Metabolic acidosis would show low HCO3-; here HCO3- is near normal, so renal primary cause is unlikely unless labs differed."
+      },
+      {
+        "text": "Pancreatic insufficiency causing bicarbonate loss",
+        "isCorrect": false,
+        "rationale": "Wrong: Pancreatic bicarbonate loss causes metabolic acidosis with low HCO3-; this would be correct only with decreased HCO3-."
+      },
+      {
+        "text": "Liver failure causing impaired lactate clearance",
+        "isCorrect": false,
+        "rationale": "Wrong: Liver failure can contribute to lactic acidosis but would present with low HCO3- and HAGMA; this would be correct only with those lab changes."
+      },
+      {
+        "text": "Cardiac dysfunction causing primary metabolic alkalosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Cardiac dysfunction does not directly cause metabolic alkalosis; this would be correct only in very specific secondary scenarios not described in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which diagnostic step from the lecture should be performed when metabolic acidosis is identified to narrow the differential?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Calculate the anion gap to distinguish HAGMA from NAGMA",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture instructs calculating the anion gap (Na - [Cl + HCO3]) when metabolic acidosis is present to narrow causes."
+      },
+      {
+        "text": "Immediately administer sodium bicarbonate without further testing",
+        "isCorrect": false,
+        "rationale": "Wrong: Immediate bicarbonate is not universally indicated; this would be correct only in specific severe acidemia scenarios per lecture guidance."
+      },
+      {
+        "text": "Order only a chest x ray to evaluate respiratory causes",
+        "isCorrect": false,
+        "rationale": "Wrong: Chest x ray may help but the lecture emphasizes AG calculation first; this would be correct only if respiratory cause suspected and AG already assessed."
+      },
+      {
+        "text": "Measure serum calcium to confirm metabolic alkalosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Serum calcium is not the primary test to distinguish types of metabolic acidosis; this would be correct only in specific electrolyte disturbance evaluations."
+      },
+      {
+        "text": "Perform immediate hemodialysis for all metabolic acidosis cases",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemodialysis is reserved for specific causes (renal failure, toxins); it would be correct only when indicated by etiology and severity."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical feature from the lecture distinguishes high anion gap metabolic acidosis from hyperchloremic metabolic acidosis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Presence of unmeasured anions increasing the anion gap",
+        "isCorrect": true,
+        "rationale": "Correct: HAGMA is characterized by added unmeasured anions (lactate, ketones) increasing the AG, whereas NAGMA shows chloride replacement."
+      },
+      {
+        "text": "Elevated measured chloride replacing bicarbonate without gap change",
+        "isCorrect": false,
+        "rationale": "Wrong: This describes NAGMA (hyperchloremic) rather than HAGMA; it would be correct only for normal anion gap acidosis scenarios."
+      },
+      {
+        "text": "Marked hyperglycemia as the defining feature of NAGMA",
+        "isCorrect": false,
+        "rationale": "Wrong: Hyperglycemia is associated with ketoacidosis (HAGMA), not NAGMA; this would be correct only if hyperglycemia were absent and chloride elevated."
+      },
+      {
+        "text": "Respiratory depression causing CO2 retention and gap increase",
+        "isCorrect": false,
+        "rationale": "Wrong: Respiratory depression affects PaCO2, not the anion gap; this would be correct only if CO2 retention produced secondary metabolic changes."
+      },
+      {
+        "text": "Excessive vomiting causing accumulation of organic acids",
+        "isCorrect": false,
+        "rationale": "Wrong: Vomiting causes metabolic alkalosis, not accumulation of organic acids; it would be correct only in a different clinical context."
+      }
+    ]
+  },
+  {
+    "question": "Which Davenport plot point from the lecture corresponds to chronic compensated respiratory alkalosis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the graphic presentation of different acid base disorders",
+    "options": [
+      {
+        "text": "Point F representing chronic compensated respiratory alkalosis",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture labels point F as chronic (compensated) respiratory alkalosis on the Davenport plot after renal compensation."
+      },
+      {
+        "text": "Point A representing acute uncompensated respiratory acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Point A denotes acute respiratory acidosis, not chronic respiratory alkalosis; it would be correct only if the question asked about acute acidosis."
+      },
+      {
+        "text": "Point D representing metabolic acidosis with respiratory compensation",
+        "isCorrect": false,
+        "rationale": "Wrong: Point D corresponds to metabolic acidosis with respiratory compensation, not chronic respiratory alkalosis; it would be correct only for metabolic acidosis scenarios."
+      },
+      {
+        "text": "Point C representing metabolic alkalosis with respiratory compensation",
+        "isCorrect": false,
+        "rationale": "Wrong: Point C denotes metabolic alkalosis with respiratory compensation; this would be correct only if the disorder were metabolic alkalosis."
+      },
+      {
+        "text": "Point E representing acute uncompensated respiratory alkalosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Point E is acute respiratory alkalosis, not chronic compensated; it would be correct only for an acute, uncompensated presentation."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following is a lecture-listed toxic ingestion that produces formic acid and can cause blindness?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Methanol ingestion producing formic acid and visual loss",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture identifies methanol ingestion leading to formic acid formation, altered mental status, and potential blindness."
+      },
+      {
+        "text": "Acetaminophen overdose causing immediate formic acid production",
+        "isCorrect": false,
+        "rationale": "Wrong: Acetaminophen causes mitochondrial damage and lactic acidosis, not formic acid; it would be correct only if the toxin produced formate."
+      },
+      {
+        "text": "Ethanol intoxication directly producing oxalic acid crystals",
+        "isCorrect": false,
+        "rationale": "Wrong: Ethylene glycol, not ethanol, produces oxalic acid; this would be correct only if ethylene glycol were specified."
+      },
+      {
+        "text": "Aspirin overdose causing formic acid mediated blindness",
+        "isCorrect": false,
+        "rationale": "Wrong: Aspirin causes mixed respiratory alkalosis and metabolic acidosis but not formic acid–related blindness; it would be correct only if aspirin produced formate."
+      },
+      {
+        "text": "Isoniazid toxicity producing formic acid accumulation",
+        "isCorrect": false,
+        "rationale": "Wrong: Isoniazid causes lactic acidosis via mitochondrial effects and seizures, not formic acid; it would be correct only if INH produced formate."
+      }
+    ]
+  },
+  {
+    "question": "Which compensation rule from the lecture applies when kidneys cause the primary acid base disturbance?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Lungs respond quickly by altering ventilation to compensate",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states that when kidneys cause the problem (metabolic), the lungs compensate rapidly by changing ventilation."
+      },
+      {
+        "text": "Kidneys immediately correct the disturbance within minutes",
+        "isCorrect": false,
+        "rationale": "Wrong: Renal compensation is slow; immediate correction within minutes is incorrect and would be true only for pulmonary compensation."
+      },
+      {
+        "text": "No compensation occurs because systems never compensate physiologically",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture emphasizes compensation occurs but does not overcorrect; stating no compensation contradicts the slides and would be correct only in total organ failure."
+      },
+      {
+        "text": "Lungs increase bicarbonate production to normalize pH",
+        "isCorrect": false,
+        "rationale": "Wrong: Lungs cannot produce bicarbonate; they alter CO2 via ventilation. This would be correct only if pulmonary tissues generated bicarbonate, which they do not."
+      },
+      {
+        "text": "Renal compensation is faster than respiratory compensation in all cases",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture notes lungs compensate quickly and kidneys slowly; this option reverses the timing and would be correct only if renal mechanisms were faster."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory pattern from the lecture suggests a combined respiratory and metabolic acidosis rather than a single disorder?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Low pH with both elevated PaCO2 and low bicarbonate present",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture indicates mixed respiratory and metabolic acidosis when pH is low and both PaCO2 is high and HCO3- is low, inconsistent with single compensation."
+      },
+      {
+        "text": "Low pH with low PaCO2 and low bicarbonate consistent with single disorder",
+        "isCorrect": false,
+        "rationale": "Wrong: Low PaCO2 with low HCO3- typically reflects respiratory alkalosis with metabolic acidosis compensation; this pattern alone does not define combined acidosis and would be correct only with different clinical context."
+      },
+      {
+        "text": "High pH with high bicarbonate and low PaCO2 indicating acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: High pH indicates alkalosis, not acidosis; this would be correct only if the question asked about alkalemic disorders."
+      },
+      {
+        "text": "Normal pH with abnormal PaCO2 and bicarbonate indicating no disturbance",
+        "isCorrect": false,
+        "rationale": "Wrong: Normal pH with abnormal components can indicate mixed disorders but not specifically combined acidosis; this would be correct only with precise delta calculations."
+      },
+      {
+        "text": "Low pH with normal PaCO2 and normal bicarbonate indicating lab error",
+        "isCorrect": false,
+        "rationale": "Wrong: Lab error is possible but the lecture focuses on physiologic causes; this would be correct only if repeat testing confirmed inconsistent values."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following lecture-listed causes produces oxalate crystals and hypocalcemia in poisoning?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Ethylene glycol ingestion causing oxalate crystal formation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes ethylene glycol (antifreeze) ingestion leading to oxalic acid, oxalate crystals in urine, and hypocalcemia."
+      },
+      {
+        "text": "Methanol ingestion causing oxalate crystal deposition",
+        "isCorrect": false,
+        "rationale": "Wrong: Methanol causes formic acid and visual disturbances, not oxalate crystals; this would be correct only if methanol produced oxalate metabolites."
+      },
+      {
+        "text": "Aspirin overdose causing oxalate crystal formation",
+        "isCorrect": false,
+        "rationale": "Wrong: Aspirin causes mixed acid base disturbances but not oxalate crystals; it would be correct only if aspirin metabolism produced oxalate."
+      },
+      {
+        "text": "Acetaminophen toxicity causing oxalate nephropathy",
+        "isCorrect": false,
+        "rationale": "Wrong: Acetaminophen causes mitochondrial injury and lactic acidosis, not oxalate crystals; this would be correct only in rare secondary processes."
+      },
+      {
+        "text": "Ethanol intoxication causing oxalate crystal deposition",
+        "isCorrect": false,
+        "rationale": "Wrong: Ethanol itself does not produce oxalate crystals; ethylene glycol (a different alcohol) does. This would be correct only if ethylene glycol were specified."
+      }
+    ]
+  },
+  {
+    "question": "Which management recommendation from the lecture applies to lactic acidosis treatment?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Treat underlying cause such as improving tissue perfusion promptly",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture advises treating underlying conditions (e.g., restore perfusion in lactic acidosis) rather than routine bicarbonate use."
+      },
+      {
+        "text": "Routine sodium bicarbonate administration for all lactic acidosis cases",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture states bicarbonate has no benefit for lactic acidosis generally; it would be correct only in select severe acidemia with specific indications."
+      },
+      {
+        "text": "Immediate insulin infusion as primary therapy for lactic acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Insulin treats DKA, not lactic acidosis; this would be correct only if hyperglycemic ketoacidosis were the cause."
+      },
+      {
+        "text": "Hemodialysis as first line for all lactic acidosis patients",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemodialysis is not standard for lactic acidosis unless renal failure or toxin removal is indicated; it would be correct only in those specific circumstances."
+      },
+      {
+        "text": "Administer fomepizole to block lactate production enzymatically",
+        "isCorrect": false,
+        "rationale": "Wrong: Fomepizole blocks alcohol dehydrogenase for toxic alcohols, not lactate production; it would be correct only in toxic alcohol–related lactic acidosis."
+      }
+    ]
+  },
+  {
+    "question": "Which slide concept explains why metabolic disorders have only one set of expected compensation values on the Davenport plot?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the graphic presentation of different acid base disorders",
+    "options": [
+      {
+        "text": "Respiratory compensation is immediate so metabolic disorders have single set",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes respiratory compensation is immediate for metabolic disturbances, producing a single expected compensation trajectory on the Davenport plot."
+      },
+      {
+        "text": "Renal compensation is immediate so respiratory disorders have single set",
+        "isCorrect": false,
+        "rationale": "Wrong: Renal compensation is slow; respiratory disorders have acute and chronic sets. This option would be correct only if renal compensation were rapid."
+      },
+      {
+        "text": "Metabolic disorders never provoke any respiratory compensation",
+        "isCorrect": false,
+        "rationale": "Wrong: Metabolic disorders do provoke respiratory compensation immediately; this would be correct only if respiratory drive were absent."
+      },
+      {
+        "text": "Davenport plot cannot represent metabolic disturbances accurately",
+        "isCorrect": false,
+        "rationale": "Wrong: The Davenport plot is specifically used to represent metabolic and respiratory disturbances; this would be correct only if the plot were invalid."
+      },
+      {
+        "text": "Metabolic disorders always produce chronic renal changes visible on plot",
+        "isCorrect": false,
+        "rationale": "Wrong: Metabolic disorders provoke immediate respiratory compensation, not necessarily chronic renal changes; this would be correct only in prolonged metabolic conditions."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following lecture examples demonstrates an acute uncompensated respiratory alkalosis?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the graphic presentation of different acid base disorders",
+    "options": [
+      {
+        "text": "pH 7.6, PaCO2 19 mmHg, HCO3 18 mEq L indicating acute change",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture example with pH 7.6, low PaCO2, and HCO3- near the acute predicted value was labeled acute uncompensated respiratory alkalosis."
+      },
+      {
+        "text": "pH 7.3, PaCO2 30 mmHg, HCO3 14 mEq L indicating metabolic acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: These values match metabolic acidosis with respiratory compensation as in another lecture example; it would be correct only for that metabolic scenario."
+      },
+      {
+        "text": "pH 7.18, PaCO2 62 mmHg, HCO3 26 mEq L indicating chronic respiratory acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Chronic respiratory acidosis shows elevated HCO3- but pH would be low; this option describes respiratory acidosis, not acute respiratory alkalosis."
+      },
+      {
+        "text": "pH 7.45, PaCO2 40 mmHg, HCO3 24 mEq L indicating normal status",
+        "isCorrect": false,
+        "rationale": "Wrong: These are normal baseline values and do not represent acute respiratory alkalosis; it would be correct only as a normal reference."
+      },
+      {
+        "text": "pH 7.25, PaCO2 50 mmHg, HCO3 18 mEq L indicating mixed disorder",
+        "isCorrect": false,
+        "rationale": "Wrong: This pattern suggests mixed acidosis or respiratory acidosis with metabolic component, not acute respiratory alkalosis; it would be correct only with different ABG values."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following lecture-listed laboratory findings would you expect in ethylene glycol poisoning besides metabolic acidosis?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Hypocalcemia with oxalate crystals visible in urine sediment",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes ethylene glycol causes hypocalcemia and oxalate crystals in urine due to oxalic acid metabolites."
+      },
+      {
+        "text": "Hyperkalemia with elevated ketone bodies in serum",
+        "isCorrect": false,
+        "rationale": "Wrong: Hyperkalemia and ketones are more typical of DKA; this would be correct only if diabetic ketoacidosis were the underlying cause."
+      },
+      {
+        "text": "Marked hyperglycemia with increased serum acetone levels",
+        "isCorrect": false,
+        "rationale": "Wrong: Hyperglycemia and acetone suggest ketoacidosis, not ethylene glycol poisoning; it would be correct only in DKA contexts."
+      },
+      {
+        "text": "Elevated formic acid causing visual disturbances and blindness",
+        "isCorrect": false,
+        "rationale": "Wrong: Formic acid is associated with methanol poisoning, not ethylene glycol; this would be correct only for methanol ingestion."
+      },
+      {
+        "text": "High serum osmolality with low anion gap measurement",
+        "isCorrect": false,
+        "rationale": "Wrong: Toxic alcohols can increase osmolar gap, but ethylene glycol causes high anion gap; low AG is inconsistent and would be correct only with lab artifact."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following lecture statements about sodium bicarbonate use is accurate for acid base emergencies?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Sodium bicarbonate may be used for severe acidosis but not in DKA routinely",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states sodium bicarbonate can be given to raise HCO3- and pH in severe cases (pH<7.2) but has no benefit routinely in DKA or lactic acidosis."
+      },
+      {
+        "text": "Sodium bicarbonate is the first line for all metabolic acidosis cases",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture cautions against routine bicarbonate use; it would be correct only in specific severe acidemia scenarios."
+      },
+      {
+        "text": "Sodium bicarbonate always corrects underlying cause without other therapy",
+        "isCorrect": false,
+        "rationale": "Wrong: Bicarbonate corrects pH transiently but does not treat underlying causes; it would be correct only if the acidemia were solely due to bicarbonate loss and reversible by replacement."
+      },
+      {
+        "text": "Sodium bicarbonate is contraindicated in ethylene glycol poisoning",
+        "isCorrect": false,
+        "rationale": "Wrong: Bicarbonate is not the specific antidote for ethylene glycol; it is not strictly contraindicated but is not the primary therapy. This would be correct only if evidence showed harm in that context."
+      },
+      {
+        "text": "Sodium bicarbonate should be given orally for rapid correction",
+        "isCorrect": false,
+        "rationale": "Wrong: Oral bicarbonate is too slow for emergencies; IV administration is used when indicated. This would be correct only for nonemergent, outpatient correction."
+      }
+    ]
+  },
+  {
+    "question": "Which lecture-listed formula estimates acute renal bicarbonate change in response to a PaCO2 shift?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Acute change in HCO3 equals 0.1 times change in PaCO2",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture provides acute respiratory compensation approximations: acute ΔHCO3- ≈ 0.1 × ΔPaCO2 for immediate changes."
+      },
+      {
+        "text": "Chronic change in HCO3 equals 0.01 times change in PaCO2",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture gives larger chronic coefficients (e.g., 0.35 or 0.5), not 0.01; this would be correct only if a much smaller chronic response were documented."
+      },
+      {
+        "text": "Acute change in HCO3 equals 1.5 times bicarbonate plus eight",
+        "isCorrect": false,
+        "rationale": "Wrong: That is Winter s formula for predicted PaCO2, not acute ΔHCO3; this would be correct only if the question asked for PaCO2 prediction."
+      },
+      {
+        "text": "Chronic change in HCO3 equals 2.0 times change in PaCO2",
+        "isCorrect": false,
+        "rationale": "Wrong: Chronic renal compensation coefficients are smaller (0.35–0.5), not 2.0; this would be correct only with a different compensation model."
+      },
+      {
+        "text": "Acute change in HCO3 equals 0.7 times change in PaCO2",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture mentions ΔPaCO2 ≈ 0.7 × ΔHCO3- in one relation, but acute ΔHCO3- ≈ 0.1 × ΔPaCO2; this option reverses the relation and would be correct only if the variables were inverted."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following lecture-listed causes is characteristic of normal anion gap hyperchloremic metabolic acidosis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "Diarrhea causing loss of bicarbonate with chloride replacement",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists GI bicarbonate losses such as diarrhea as causes of NAGMA where Cl- increases to maintain electroneutrality."
+      },
+      {
+        "text": "Lactic acidosis from tissue hypoxia increasing unmeasured anions",
+        "isCorrect": false,
+        "rationale": "Wrong: Lactic acidosis increases the anion gap (HAGMA), not NAGMA; this would be correct only for HAGMA scenarios."
+      },
+      {
+        "text": "Methanol ingestion producing formic acid and visual loss",
+        "isCorrect": false,
+        "rationale": "Wrong: Methanol causes HAGMA via formic acid; it would be correct only for high anion gap toxic ingestions."
+      },
+      {
+        "text": "Diabetic ketoacidosis with elevated ketone anions",
+        "isCorrect": false,
+        "rationale": "Wrong: DKA produces HAGMA due to ketone anions; this would be correct only if the anion gap were elevated."
+      },
+      {
+        "text": "Renal failure causing accumulation of sulfate and phosphate anions",
+        "isCorrect": false,
+        "rationale": "Wrong: Renal failure typically causes HAGMA from retained unmeasured anions; this would be correct only if the anion gap were increased."
+      }
+    ]
+  },
+  {
+    "question": "Which lecture example best illustrates acute opioid overdose leading to acid base disturbance on ABG?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the etiologies, blood tests, and clinical features of metabolic and respiratory acidosis and alkaloses",
+    "options": [
+      {
+        "text": "pH 7.19, PaCO2 70 mmHg, HCO3 25 mEq L indicating hypoventilation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture example of morphine overdose shows hypoventilation with high PaCO2 and low pH, consistent with acute respiratory acidosis."
+      },
+      {
+        "text": "pH 7.24, PaCO2 30 mmHg, HCO3 13 mEq L indicating lactic acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: These values match metabolic lactic acidosis with respiratory compensation, not opioid-induced hypoventilation; it would be correct only in exertional collapse."
+      },
+      {
+        "text": "pH 7.6, PaCO2 19 mmHg, HCO3 18 mEq L indicating acute alkalosis",
+        "isCorrect": false,
+        "rationale": "Wrong: This is acute respiratory alkalosis, not opioid overdose; it would be correct only for hyperventilation scenarios."
+      },
+      {
+        "text": "pH 7.3, PaCO2 30 mmHg, HCO3 14 mEq L indicating metabolic acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: This is metabolic acidosis with compensation, not respiratory depression; it would be correct only in metabolic causes."
+      },
+      {
+        "text": "pH 7.45, PaCO2 40 mmHg, HCO3 24 mEq L indicating normal ABG",
+        "isCorrect": false,
+        "rationale": "Wrong: These are normal values and do not illustrate opioid overdose; this would be correct only as baseline reference."
+      }
+    ]
+  }
+]
