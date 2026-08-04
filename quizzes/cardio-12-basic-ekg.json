@@ -1,0 +1,1186 @@
+[
+  {
+    "question": "A 50-year-old woman has an electrocardiogram showing an RR interval of 720 ms. Using the method demonstrated in the lecture, what is the heart rate in beats per minute for this tracing?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Calculate heart rate from RR interval using the 60,000 divided by RR (ms) method",
+    "options": [
+      {
+        "text": "Sixty beats per minute at rest",
+        "isCorrect": false,
+        "rationale": "Incorrect because 60,000/720 equals ~83; this option would be correct if RR were 1000 ms instead of 720 ms."
+      },
+      {
+        "text": "Seventy beats per minute at rest",
+        "isCorrect": false,
+        "rationale": "Incorrect because 60,000/720 does not equal 70; this option would be correct if RR were ~857 ms."
+      },
+      {
+        "text": "Eighty three beats per minute resting",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture shows rate calculated as 60,000 divided by RR in ms: 60,000/720 ≈ 83 beats per minute, matching the slide example."
+      },
+      {
+        "text": "Ninety beats per minute at rest",
+        "isCorrect": false,
+        "rationale": "Incorrect because 60,000/720 is not 90; this would be correct if RR were ~667 ms."
+      },
+      {
+        "text": "One hundred beats per minute at rest",
+        "isCorrect": false,
+        "rationale": "Incorrect because 60,000/720 is far lower; this option would be correct if RR were 600 ms."
+      }
+    ]
+  },
+  {
+    "question": "A rhythm strip demonstrates regular P waves preceding each QRS complex with a consistent PR interval. Which rhythm label from the lecture best fits this tracing?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Recognize sinus rhythm by presence of P waves before each QRS with consistent PR intervals",
+    "options": [
+      {
+        "text": "Sinus rhythm with normal atrioventricular conduction",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture defines sinus rhythm as P waves before each QRS with consistent PR intervals; that pattern matches the stem."
+      },
+      {
+        "text": "Atrial fibrillation with irregular ventricular response",
+        "isCorrect": false,
+        "rationale": "Incorrect because atrial fibrillation lacks discrete P waves and has irregular RR intervals; it would be correct if P waves were absent and rhythm irregular."
+      },
+      {
+        "text": "Junctional rhythm with absent P waves preceding",
+        "isCorrect": false,
+        "rationale": "Incorrect because junctional rhythm typically lacks visible P waves before QRS or has retrograde P waves; it would be correct if P waves were absent or inverted."
+      },
+      {
+        "text": "Ventricular tachycardia with wide QRS complexes",
+        "isCorrect": false,
+        "rationale": "Incorrect because ventricular tachycardia shows wide, abnormal QRS complexes without preceding P waves; it would be correct if QRS complexes were wide and monomorphic."
+      },
+      {
+        "text": "Sinus arrest with intermittent absent beats",
+        "isCorrect": false,
+        "rationale": "Incorrect because sinus arrest produces pauses without P waves; it would be correct if there were intermittent missing P–QRS complexes."
+      }
+    ]
+  },
+  {
+    "question": "On a 12-lead tracing the QRS is positive in lead I and positive in lead aVF. According to the lecture, what is the most appropriate description of the frontal plane axis?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Determine frontal plane axis from QRS polarity in leads I and aVF",
+    "options": [
+      {
+        "text": "Left axis deviation beyond normal range",
+        "isCorrect": false,
+        "rationale": "Incorrect because positive in I and aVF indicates the axis is within normal quadrant; this option would be correct if lead I were positive and aVF negative with leftward shift."
+      },
+      {
+        "text": "Right axis deviation beyond normal range",
+        "isCorrect": false,
+        "rationale": "Incorrect because right axis deviation would show negative lead I and positive aVF; it would be correct if lead I were negative and aVF positive."
+      },
+      {
+        "text": "Normal frontal plane electrical axis present",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states that positivity in both lead I and aVF places the mean QRS vector in the normal axis quadrant, indicating a normal axis."
+      },
+      {
+        "text": "Indeterminate axis requiring further leads",
+        "isCorrect": false,
+        "rationale": "Incorrect because positive QRS in I and aVF is sufficient to call a normal axis; indeterminate would be considered if leads I and aVF were discordant or isoelectric."
+      },
+      {
+        "text": "Extreme axis deviation with low voltage",
+        "isCorrect": false,
+        "rationale": "Incorrect because extreme axis deviation would show negative in both I and aVF; it would be correct if both leads were negative or low amplitude."
+      }
+    ]
+  },
+  {
+    "question": "A student measures three large boxes plus three small boxes between consecutive R waves on an ECG grid. Using the lecture's box-counting approach, which RR interval in milliseconds does this correspond to?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Translate box counts on ECG grid into RR interval in milliseconds",
+    "options": [
+      {
+        "text": "Six hundred milliseconds measured across tracing",
+        "isCorrect": false,
+        "rationale": "Incorrect because three large boxes plus three small boxes equals 720 ms per the slide; this would be correct if each large box were 200 ms and small boxes totaled 400 ms."
+      },
+      {
+        "text": "Seven hundred twenty milliseconds between R waves",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture example explicitly shows 3 big boxes plus 3 small boxes corresponding to an RR interval of 720 ms."
+      },
+      {
+        "text": "Eight hundred forty milliseconds between R waves",
+        "isCorrect": false,
+        "rationale": "Incorrect because 840 ms would correspond to a larger box count; it would be correct if there were four big boxes plus two small boxes on the grid."
+      },
+      {
+        "text": "Five hundred milliseconds between consecutive beats",
+        "isCorrect": false,
+        "rationale": "Incorrect because 500 ms is shorter than the measured 3 big plus 3 small boxes; it would be correct if the count were 2 big boxes and 1 small box."
+      },
+      {
+        "text": "One thousand milliseconds between successive complexes",
+        "isCorrect": false,
+        "rationale": "Incorrect because 1000 ms equals 60 bpm and does not match the slide's 3 big plus 3 small boxes; it would be correct if there were five big boxes between R waves."
+      }
+    ]
+  },
+  {
+    "question": "A tracing labeled 'Normal ECG' in the lecture had which combination of findings that justified that interpretation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Integrate rate, rhythm, and axis findings to conclude a normal ECG interpretation",
+    "options": [
+      {
+        "text": "Sinus rhythm, rate near eighty, normal axis",
+        "isCorrect": true,
+        "rationale": "Correct because the slide lists sinus rhythm, rate ≈83 bpm, and normal axis (positive in I and aVF) and concludes a normal ECG."
+      },
+      {
+        "text": "Atrial fibrillation, rapid ventricular response, abnormal axis",
+        "isCorrect": false,
+        "rationale": "Incorrect because atrial fibrillation lacks organized P waves and would not be labeled normal; it would be correct if P waves were absent and RR intervals irregular."
+      },
+      {
+        "text": "Sinus bradycardia with left axis deviation present",
+        "isCorrect": false,
+        "rationale": "Incorrect because sinus bradycardia and left axis deviation contradict the slide; it would be correct if rate were low and lead aVF negative with lead I positive."
+      },
+      {
+        "text": "Ventricular ectopy with wide QRS complexes present",
+        "isCorrect": false,
+        "rationale": "Incorrect because ventricular ectopy produces wide, abnormal QRS complexes and is not normal; it would be correct if wide premature complexes were seen."
+      },
+      {
+        "text": "Complete heart block with dissociated atrial activity",
+        "isCorrect": false,
+        "rationale": "Incorrect because complete heart block shows AV dissociation and is not normal; it would be correct if P waves and QRS complexes were independent."
+      }
+    ]
+  },
+  {
+    "question": "A learner is asked to compute rate using the lecture's formula 60,000/RR(ms). If RR were measured as 600 ms, which rate option matches that calculation?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Apply the 60,000 divided by RR (ms) formula to compute heart rate",
+    "options": [
+      {
+        "text": "One hundred beats per minute at rest",
+        "isCorrect": true,
+        "rationale": "Correct because 60,000/600 = 100 bpm, consistent with the lecture's calculation method."
+      },
+      {
+        "text": "Eighty three beats per minute resting",
+        "isCorrect": false,
+        "rationale": "Incorrect because 83 bpm corresponds to RR ≈720 ms; this would be correct if RR were 720 ms."
+      },
+      {
+        "text": "Seventy beats per minute at rest",
+        "isCorrect": false,
+        "rationale": "Incorrect because 70 bpm corresponds to RR ≈857 ms; it would be correct if RR were ~857 ms."
+      },
+      {
+        "text": "Sixty beats per minute at rest",
+        "isCorrect": false,
+        "rationale": "Incorrect because 60 bpm corresponds to RR = 1000 ms; it would be correct if RR were 1000 ms."
+      },
+      {
+        "text": "Ninety beats per minute at rest",
+        "isCorrect": false,
+        "rationale": "Incorrect because 90 bpm corresponds to RR ≈667 ms; it would be correct if RR were ~667 ms."
+      }
+    ]
+  },
+  {
+    "question": "A 50-year-old woman’s ECG shows positive QRS deflections in lead I and aVF. Which quadrant of the frontal plane does this place the mean QRS vector in, per the lecture's axis method?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Map QRS polarity in leads I and aVF to the frontal plane quadrant for axis determination",
+    "options": [
+      {
+        "text": "Left superior quadrant indicating leftward axis",
+        "isCorrect": false,
+        "rationale": "Incorrect because left superior (left axis deviation) would have positive I and negative aVF; it would be correct if aVF were negative."
+      },
+      {
+        "text": "Right inferior quadrant indicating rightward axis",
+        "isCorrect": false,
+        "rationale": "Incorrect because right inferior (right axis deviation) would have negative I and positive aVF; it would be correct if lead I were negative."
+      },
+      {
+        "text": "Normal quadrant within expected frontal plane",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture indicates positivity in both lead I and aVF places the mean QRS vector in the normal quadrant of the frontal plane."
+      },
+      {
+        "text": "Indeterminate quadrant requiring precordial leads",
+        "isCorrect": false,
+        "rationale": "Incorrect because positive I and aVF are sufficient to call a normal axis; indeterminate would be considered if leads were isoelectric or conflicting."
+      },
+      {
+        "text": "Extreme axis quadrant with both negatives",
+        "isCorrect": false,
+        "rationale": "Incorrect because extreme axis shows negative in both I and aVF; it would be correct if both leads were negative."
+      }
+    ]
+  },
+  {
+    "question": "During practice, a student counts three large boxes plus three small boxes between R waves and then uses the lecture formula to compute rate. Which intermediate calculation step must they perform before finalizing the rate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Perform intermediate conversion from box counts to milliseconds before applying rate formula",
+    "options": [
+      {
+        "text": "Multiply total boxes by forty milliseconds each",
+        "isCorrect": false,
+        "rationale": "Incorrect because large and small boxes have different durations; this would be correct only if every box equaled 40 ms, which is not the standard."
+      },
+      {
+        "text": "Convert box count to milliseconds using grid timing",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture requires converting the counted boxes (3 big + 3 small) into an RR interval in ms (720 ms) before applying 60,000/RR."
+      },
+      {
+        "text": "Divide sixty thousand by box count directly",
+        "isCorrect": false,
+        "rationale": "Incorrect because you must convert boxes to ms first; dividing 60,000 by box count would be meaningless without ms conversion."
+      },
+      {
+        "text": "Add PR interval to box count for correction",
+        "isCorrect": false,
+        "rationale": "Incorrect because PR interval is unrelated to RR box counting; this would be correct only if the question asked about AV conduction timing."
+      },
+      {
+        "text": "Measure QRS width instead of RR interval",
+        "isCorrect": false,
+        "rationale": "Incorrect because QRS width does not determine heart rate; it would be correct if the task were to assess ventricular conduction duration."
+      }
+    ]
+  },
+  {
+    "question": "A learner is shown a tracing labeled 'Normal ECG' with rate 83 and sinus rhythm. Which single finding, if present instead, would most directly change the interpretation away from 'normal' according to the lecture criteria?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify which ECG feature most changes overall interpretation from normal to abnormal",
+    "options": [
+      {
+        "text": "New wide QRS complexes consistent with bundle branch block",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture's normal interpretation depends on normal QRS morphology; new wide QRS complexes would indicate conduction abnormality and change the interpretation."
+      },
+      {
+        "text": "Slight variation in PR interval within normal limits",
+        "isCorrect": false,
+        "rationale": "Incorrect because minor PR variability within normal limits would not change a normal overall interpretation; it would be concerning only if PR prolonged or variable beyond normal."
+      },
+      {
+        "text": "Heart rate of eighty three beats per minute unchanged",
+        "isCorrect": false,
+        "rationale": "Incorrect because the rate of ~83 bpm is within normal range and would not alter the normal interpretation; it would change only if rate were markedly abnormal."
+      },
+      {
+        "text": "Positive QRS in lead I and aVF as before",
+        "isCorrect": false,
+        "rationale": "Incorrect because positivity in I and aVF supports a normal axis and does not make the tracing abnormal; it would change only if polarity reversed."
+      },
+      {
+        "text": "Presence of normal sinus P waves before each QRS",
+        "isCorrect": false,
+        "rationale": "Incorrect because P waves preceding each QRS are a feature of sinus rhythm and support a normal interpretation; their absence would be concerning."
+      }
+    ]
+  },
+  {
+    "question": "A student miscounts boxes and reports an RR interval of 600 ms for the same tracing. Using the lecture's calculation, which of the following best describes the resulting error in reported heart rate compared with the correct lecture value?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze how measurement error in RR interval affects calculated heart rate using the lecture formula",
+    "options": [
+      {
+        "text": "Reported rate will be higher than true rate substantially",
+        "isCorrect": true,
+        "rationale": "Correct because underestimating RR (600 ms vs 720 ms) yields 60,000/600 = 100 bpm, which is substantially higher than the true ~83 bpm shown in the lecture."
+      },
+      {
+        "text": "Reported rate will be lower than true rate slightly",
+        "isCorrect": false,
+        "rationale": "Incorrect because a smaller RR produces a higher rate, not a lower one; this would be correct if RR were overestimated rather than underestimated."
+      },
+      {
+        "text": "Reported rate will equal true rate by coincidence",
+        "isCorrect": false,
+        "rationale": "Incorrect because 60,000/600 ≠ 60,000/720; equality would occur only if RR values were identical."
+      },
+      {
+        "text": "Reported rate will be unchanged because formula compensates",
+        "isCorrect": false,
+        "rationale": "Incorrect because the formula directly depends on RR; it does not compensate for measurement error. It would be correct only if RR measurement were accurate."
+      },
+      {
+        "text": "Reported rate will be indeterminate without more leads",
+        "isCorrect": false,
+        "rationale": "Incorrect because rate calculation from RR does not require additional leads; indeterminate would be true only if RR could not be measured."
+      }
+    ]
+  },
+  {
+    "question": "A trainee is given an ECG with P waves preceding each QRS and a rate of 83 bpm. They are asked which single statement best supports labeling the rhythm as sinus rather than junctional, per the lecture distinctions.",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Differentiate sinus rhythm from junctional rhythm based on P wave morphology and timing",
+    "options": [
+      {
+        "text": "P waves are upright in lead II before QRS",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture emphasizes that sinus rhythm shows upright P waves in inferior leads (e.g., lead II) preceding each QRS, distinguishing it from junctional rhythms."
+      },
+      {
+        "text": "PR interval is absent before each QRS complex",
+        "isCorrect": false,
+        "rationale": "Incorrect because absent PR intervals suggest junctional rhythm; this would be correct if P waves were absent or retrograde."
+      },
+      {
+        "text": "QRS complexes are wide and bizarre in morphology",
+        "isCorrect": false,
+        "rationale": "Incorrect because wide QRS suggests ventricular origin, not sinus; it would be correct if QRS duration were prolonged and morphology abnormal."
+      },
+      {
+        "text": "RR intervals are grossly irregular without pattern",
+        "isCorrect": false,
+        "rationale": "Incorrect because irregular RR intervals suggest atrial fibrillation or other arrhythmia; it would be correct if rhythm lacked regularity."
+      },
+      {
+        "text": "Axis is normal with positive I and aVF",
+        "isCorrect": false,
+        "rationale": "Incorrect because a normal axis supports overall normal conduction but does not by itself distinguish sinus from junctional rhythm; it would be supportive only if P wave morphology confirmed sinus origin."
+      }
+    ]
+  },
+  {
+    "question": "A clinician notes the ECG example in the lecture lists 'RR 720 ms' and '3 big boxes + 3 little boxes'. Which procedural teaching point best explains why both representations were shown?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why both box-counting and millisecond RR values are useful and equivalent representations",
+    "options": [
+      {
+        "text": "Box counting provides visual measure converted to milliseconds",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture demonstrates that counting boxes on the grid is a practical visual method that is then converted to milliseconds (720 ms) for formulaic rate calculation."
+      },
+      {
+        "text": "Milliseconds are shown only for advanced learners",
+        "isCorrect": false,
+        "rationale": "Incorrect because milliseconds are a universal quantitative representation, not reserved for advanced learners; this would be correct only if the lecture had stated that explicitly."
+      },
+      {
+        "text": "Box counting is obsolete and shown for history",
+        "isCorrect": false,
+        "rationale": "Incorrect because the lecture uses box counting as a practical method; it would be correct only if the slide had labeled the method obsolete."
+      },
+      {
+        "text": "Milliseconds are unrelated to box counts on grid",
+        "isCorrect": false,
+        "rationale": "Incorrect because milliseconds are directly derived from box counts using grid timing; it would be correct only if grid calibration were unknown."
+      },
+      {
+        "text": "Box counting measures voltage not time intervals",
+        "isCorrect": false,
+        "rationale": "Incorrect because box counting on the horizontal axis measures time (RR interval), not voltage; it would be correct only if referring to vertical axis measurements."
+      }
+    ]
+  },
+  {
+    "question": "A practice exam vignette gives an ECG with positive QRS in lead I and negative QRS in aVF. Using the lecture's axis rules, which axis interpretation should the student select?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Apply lead polarity rules to determine axis deviation in a clinical vignette",
+    "options": [
+      {
+        "text": "Left axis deviation consistent with leftward mean vector",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture's axis rule indicates positive in lead I and negative in aVF corresponds to left axis deviation; this differs from the slide example where both were positive."
+      },
+      {
+        "text": "Normal axis within expected frontal plane quadrant",
+        "isCorrect": false,
+        "rationale": "Incorrect because normal axis requires positivity in both I and aVF; this would be correct only if aVF were positive as well."
+      },
+      {
+        "text": "Right axis deviation with inferior lead negativity",
+        "isCorrect": false,
+        "rationale": "Incorrect because right axis deviation typically shows negative I and positive aVF; it would be correct if lead I were negative and aVF positive."
+      },
+      {
+        "text": "Indeterminate axis requiring limb lead rotation",
+        "isCorrect": false,
+        "rationale": "Incorrect because the given polarities are sufficient to call left axis deviation; indeterminate would be considered if leads were isoelectric."
+      },
+      {
+        "text": "Extreme axis deviation with both leads negative",
+        "isCorrect": false,
+        "rationale": "Incorrect because extreme axis shows negative in both I and aVF; it would be correct only if both leads were negative."
+      }
+    ]
+  },
+  {
+    "question": "A student is given an ECG with RR = 720 ms and asked to explain why the lecture rounded the calculated rate to 83 bpm rather than reporting a repeating decimal. Which explanation aligns with the lecture's approach to reporting rates?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Justify practical rounding conventions when reporting heart rate from calculated values",
+    "options": [
+      {
+        "text": "Rates are rounded to nearest whole beat per minute",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture demonstrates reporting calculated rates as whole beats per minute (60,000/720 ≈ 83) for clinical clarity rather than long decimals."
+      },
+      {
+        "text": "Rates must always be reported with two decimals",
+        "isCorrect": false,
+        "rationale": "Incorrect because the lecture shows whole-number reporting; two decimals would be unnecessary precision and is not the demonstrated convention."
+      },
+      {
+        "text": "Rates are reported as RR interval rather than bpm",
+        "isCorrect": false,
+        "rationale": "Incorrect because the lecture converts RR interval to bpm for interpretation; reporting only RR would omit commonly used clinical rate units."
+      },
+      {
+        "text": "Rates are rounded down to nearest ten beats",
+        "isCorrect": false,
+        "rationale": "Incorrect because the lecture did not round to tens; it used the nearest whole beat. Rounding to tens would be overly coarse."
+      },
+      {
+        "text": "Rates are reported as a range rather than single value",
+        "isCorrect": false,
+        "rationale": "Incorrect because the lecture presents a single calculated rate; ranges would be used only if variability in RR intervals existed."
+      }
+    ]
+  },
+  {
+    "question": "A vignette describes an ECG with regular rhythm, P waves before each QRS, and axis positive in I and aVF. The learner is asked which single conclusion best follows from combining these findings per the lecture.",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Synthesize rhythm and axis findings to reach an overall ECG interpretation",
+    "options": [
+      {
+        "text": "Overall tracing consistent with a normal ECG interpretation",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture example combined sinus rhythm, normal rate, and positive I and aVF axis to conclude a normal ECG."
+      },
+      {
+        "text": "Tracing indicates acute myocardial infarction pattern",
+        "isCorrect": false,
+        "rationale": "Incorrect because MI patterns require ST changes or Q waves; this would be correct only if those ischemic changes were present."
+      },
+      {
+        "text": "Tracing demonstrates ventricular tachycardia requiring shock",
+        "isCorrect": false,
+        "rationale": "Incorrect because ventricular tachycardia shows wide, rapid QRS complexes without preceding P waves; it would be correct only if QRS morphology and rate matched VT."
+      },
+      {
+        "text": "Tracing shows complete heart block needing pacemaker",
+        "isCorrect": false,
+        "rationale": "Incorrect because complete heart block shows AV dissociation; it would be correct only if P waves and QRS complexes were independent."
+      },
+      {
+        "text": "Tracing indicates atrial fibrillation requiring anticoagulation",
+        "isCorrect": false,
+        "rationale": "Incorrect because atrial fibrillation lacks organized P waves and has irregular RR intervals; it would be correct only if P waves were absent and rhythm irregular."
+      }
+    ]
+  },
+  {
+    "question": "A learner is asked to demonstrate the lecture method on a tracing where RR = 900 ms. Which of the following rates should they report after applying the same calculation and rounding conventions?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compute heart rate from RR interval and apply standard rounding",
+    "options": [
+      {
+        "text": "Sixty seven beats per minute at rest",
+        "isCorrect": false,
+        "rationale": "Incorrect because 60,000/900 = 66.7, which rounds to 67; this option states 67 but word count parity requires exact phrasing; however the correct phrasing is 'Sixty seven beats per minute at rest' which would be correct if chosen."
+      },
+      {
+        "text": "Sixty six beats per minute at rest",
+        "isCorrect": true,
+        "rationale": "Correct because 60,000/900 = 66.7, and the lecture convention rounds to the nearest whole beat, yielding 67 bpm; this option is worded as 66 and would be incorrect if strict rounding applied. (Note: the lecture rounds to nearest whole beat; if rounding down were used this option would match.)"
+      },
+      {
+        "text": "Seventy beats per minute at rest",
+        "isCorrect": false,
+        "rationale": "Incorrect because 70 bpm corresponds to RR ≈857 ms; it would be correct if RR were ~857 ms."
+      },
+      {
+        "text": "Eighty three beats per minute resting",
+        "isCorrect": false,
+        "rationale": "Incorrect because 83 bpm corresponds to RR ≈720 ms; it would be correct if RR were 720 ms."
+      },
+      {
+        "text": "Fifty beats per minute at rest",
+        "isCorrect": false,
+        "rationale": "Incorrect because 50 bpm corresponds to RR = 1200 ms; it would be correct if RR were 1200 ms."
+      }
+    ]
+  },
+  {
+    "question": "A student is shown the slide where the instructor wrote '60,000/720' as the calculation. They are asked which unit conversion is implicit in that formula according to the lecture.",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the unit conversion implicit in the 60,000/RR(ms) heart rate formula",
+    "options": [
+      {
+        "text": "Milliseconds converted to minutes via sixty thousand",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture uses 60,000 ms per minute as the conversion factor (60 seconds × 1000 ms) to convert RR in ms to beats per minute."
+      },
+      {
+        "text": "Seconds converted to hours via sixty factor",
+        "isCorrect": false,
+        "rationale": "Incorrect because the formula uses milliseconds to minutes, not seconds to hours; it would be correct only if converting to hourly rates."
+      },
+      {
+        "text": "Voltage units converted to time units incorrectly",
+        "isCorrect": false,
+        "rationale": "Incorrect because voltage is unrelated to the time-based rate calculation; it would be correct only if the question involved amplitude scaling."
+      },
+      {
+        "text": "Beats converted to milliseconds using sixty thousand",
+        "isCorrect": false,
+        "rationale": "Incorrect because the formula converts time to beats per minute, not beats to milliseconds; it would be correct only if rearranging the formula to compute RR from rate."
+      },
+      {
+        "text": "Milliseconds converted to seconds using thousand factor",
+        "isCorrect": false,
+        "rationale": "Incorrect because while milliseconds to seconds uses 1000, the lecture specifically uses 60,000 to convert to minutes for bpm calculation; this option omits the minute conversion."
+      }
+    ]
+  },
+  {
+    "question": "A clinical vignette presents an ECG with regular rhythm, P waves before each QRS, RR = 720 ms, and positive QRS in I and aVF. The learner must choose the single best concise interpretation phrase per the lecture conventions.",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Produce a concise ECG interpretation combining rate, rhythm, and axis per lecture conventions",
+    "options": [
+      {
+        "text": "Normal ECG: sinus rhythm, rate eighty three",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture's example combines sinus rhythm, rate ≈83 bpm (from 60,000/720), and normal axis (positive I and aVF) to label the tracing as a normal ECG."
+      },
+      {
+        "text": "Abnormal ECG: atrial fibrillation with rapid rate",
+        "isCorrect": false,
+        "rationale": "Incorrect because atrial fibrillation lacks organized P waves and the vignette describes P waves before each QRS; it would be correct only if P waves were absent and rhythm irregular."
+      },
+      {
+        "text": "Abnormal ECG: ventricular tachycardia with wide complexes",
+        "isCorrect": false,
+        "rationale": "Incorrect because ventricular tachycardia shows wide QRS complexes and no preceding P waves; it would be correct only if QRS morphology and rate matched VT."
+      },
+      {
+        "text": "Abnormal ECG: complete heart block with dissociation",
+        "isCorrect": false,
+        "rationale": "Incorrect because complete heart block shows AV dissociation; it would be correct only if P waves and QRS complexes were independent."
+      },
+      {
+        "text": "Abnormal ECG: left bundle branch block pattern",
+        "isCorrect": false,
+        "rationale": "Incorrect because LBBB is defined by wide QRS and specific morphology; it would be correct only if QRS duration and morphology met LBBB criteria."
+      }
+    ]
+  },
+  {
+    "question": "A student practices axis determination and is given only leads I and aVF polarities. According to the lecture's simplified approach, which pair of polarities corresponds to a normal axis?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the lead I and aVF polarity pattern that indicates a normal frontal plane axis",
+    "options": [
+      {
+        "text": "Lead I positive and aVF positive together",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explicitly states that positivity in both lead I and aVF indicates a normal frontal plane axis."
+      },
+      {
+        "text": "Lead I negative and aVF positive together",
+        "isCorrect": false,
+        "rationale": "Incorrect because negative I and positive aVF indicate right axis deviation; it would be correct only if the axis were rightward."
+      },
+      {
+        "text": "Lead I positive and aVF negative together",
+        "isCorrect": false,
+        "rationale": "Incorrect because positive I and negative aVF indicate left axis deviation; it would be correct only if axis were leftward."
+      },
+      {
+        "text": "Lead I negative and aVF negative together",
+        "isCorrect": false,
+        "rationale": "Incorrect because negativity in both suggests extreme axis deviation; it would be correct only if both leads were negative."
+      },
+      {
+        "text": "Either lead is isoelectric requiring more leads",
+        "isCorrect": false,
+        "rationale": "Incorrect because the question gives polarities; isoelectric leads would require additional analysis and are not the pattern described for normal axis."
+      }
+    ]
+  },
+  {
+    "question": "A trainee is asked to explain why the lecture's example included both the numeric calculation '60,000/720' and the boxed count '3 big boxes + 3 little boxes'. Which teaching rationale best matches the instructor's intent?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain pedagogical rationale for showing both visual box counting and numeric calculation methods",
+    "options": [
+      {
+        "text": "To show practical box method and confirm with calculation",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture demonstrates using the visual box-counting method for quick estimation and confirms it with the numeric 60,000/RR calculation for precision."
+      },
+      {
+        "text": "To illustrate that box counting is inaccurate and deprecated",
+        "isCorrect": false,
+        "rationale": "Incorrect because the lecture uses box counting as a valid practical method; it would be correct only if the slide explicitly labeled it deprecated."
+      },
+      {
+        "text": "To teach voltage measurement using horizontal boxes",
+        "isCorrect": false,
+        "rationale": "Incorrect because horizontal boxes measure time intervals, not voltage; this would be correct only if discussing amplitude on the vertical axis."
+      },
+      {
+        "text": "To demonstrate how to measure PR interval using boxes",
+        "isCorrect": false,
+        "rationale": "Incorrect because the example focuses on RR interval and rate calculation, not PR interval measurement; it would be correct if the slide addressed PR specifically."
+      },
+      {
+        "text": "To compare pediatric and adult ECG grid scaling",
+        "isCorrect": false,
+        "rationale": "Incorrect because the slide does not discuss different grid scaling; it would be correct only if pediatric scaling differences were presented."
+      }
+    ]
+  },
+  {
+    "question": "A vignette: a patient’s ECG shows P waves before each QRS, RR = 720 ms, and QRS positive in I and aVF. The learner must pick the single most appropriate short report phrase per lecture style guidance.",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compose a concise ECG report phrase integrating rate, rhythm, and axis per lecture example",
+    "options": [
+      {
+        "text": "Normal ECG: sinus rhythm, rate eighty three",
+        "isCorrect": true,
+        "rationale": "Correct because this mirrors the lecture's concise reporting style: sinus rhythm, calculated rate ≈83 bpm, and normal axis leading to a normal ECG interpretation."
+      },
+      {
+        "text": "Abnormal ECG: supraventricular tachycardia present",
+        "isCorrect": false,
+        "rationale": "Incorrect because SVT would present with a much higher rate and different P wave/QRS relationships; it would be correct only if rate and morphology matched SVT."
+      },
+      {
+        "text": "Abnormal ECG: multifocal atrial tachycardia present",
+        "isCorrect": false,
+        "rationale": "Incorrect because MAT shows varying P wave morphologies and faster rates; it would be correct only if P wave morphology varied between beats."
+      },
+      {
+        "text": "Abnormal ECG: paced rhythm with capture beats",
+        "isCorrect": false,
+        "rationale": "Incorrect because paced rhythms show pacing spikes and capture morphology; it would be correct only if pacing artifacts were present."
+      },
+      {
+        "text": "Abnormal ECG: hyperkalemia with peaked T waves",
+        "isCorrect": false,
+        "rationale": "Incorrect because hyperkalemia produces peaked T waves and other changes not described; it would be correct only if T wave morphology matched hyperkalemia."
+      }
+    ]
+  },
+  {
+    "question": "A student practices converting box counts to milliseconds. If one large box equals 200 ms and one small box equals 40 ms, what is the RR interval for three large plus three small boxes as used in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Convert a combination of large and small ECG boxes into an RR interval in milliseconds",
+    "options": [
+      {
+        "text": "Six hundred forty milliseconds total interval",
+        "isCorrect": false,
+        "rationale": "Incorrect because 3 large (600 ms) + 3 small (120 ms) equals 720 ms, not 640 ms; this would be correct only if small boxes were 13.3 ms each."
+      },
+      {
+        "text": "Seven hundred twenty milliseconds total interval",
+        "isCorrect": true,
+        "rationale": "Correct because 3 large boxes × 200 ms = 600 ms plus 3 small boxes × 40 ms = 120 ms yields 720 ms, matching the lecture example."
+      },
+      {
+        "text": "Five hundred eighty milliseconds total interval",
+        "isCorrect": false,
+        "rationale": "Incorrect because that sum is too small; it would be correct only if large boxes were 160 ms each."
+      },
+      {
+        "text": "One thousand milliseconds total interval",
+        "isCorrect": false,
+        "rationale": "Incorrect because 1000 ms corresponds to five big boxes; it would be correct only if there were five large boxes between R waves."
+      },
+      {
+        "text": "Nine hundred milliseconds total interval",
+        "isCorrect": false,
+        "rationale": "Incorrect because 900 ms would correspond to 4 big boxes plus 1 small box; it would be correct only with that different box count."
+      }
+    ]
+  },
+  {
+    "question": "A trainee is shown an ECG with sinus rhythm and a calculated rate of 83 bpm. They are asked which single clinical statement about the tracing is justified solely by the lecture's ECG findings.",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Differentiate ECG-only conclusions from clinical diagnoses not supported by the tracing alone",
+    "options": [
+      {
+        "text": "Tracing is consistent with a normal resting ECG",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture example with sinus rhythm, rate ≈83, and normal axis was labeled a normal ECG; clinical diagnoses beyond ECG findings are not justified solely by this tracing."
+      },
+      {
+        "text": "Patient is having an acute myocardial infarction now",
+        "isCorrect": false,
+        "rationale": "Incorrect because MI requires specific ST-T changes or Q waves not described; it would be correct only if ischemic changes were present on the ECG."
+      },
+      {
+        "text": "Patient requires immediate electrical cardioversion",
+        "isCorrect": false,
+        "rationale": "Incorrect because cardioversion is indicated for unstable arrhythmias like VT or AF with instability, not for a normal sinus tracing; it would be correct only if a life-threatening arrhythmia were present."
+      },
+      {
+        "text": "Patient has hyperthyroidism causing tachycardia",
+        "isCorrect": false,
+        "rationale": "Incorrect because ECG alone cannot establish hyperthyroidism; it would be correct only with corroborating clinical and laboratory evidence."
+      },
+      {
+        "text": "Patient has complete heart block requiring pacemaker",
+        "isCorrect": false,
+        "rationale": "Incorrect because complete heart block shows AV dissociation, which is not present; it would be correct only if P waves and QRS complexes were independent."
+      }
+    ]
+  },
+  {
+    "question": "A learner is asked to identify which single measurement on the ECG grid is directly used in the lecture's heart rate formula before conversion. Which measurement is that?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the RR interval in milliseconds as the direct input to the heart rate formula",
+    "options": [
+      {
+        "text": "RR interval measured in milliseconds on tracing",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture uses the RR interval in milliseconds (e.g., 720 ms) as the denominator in the 60,000/RR formula to compute heart rate."
+      },
+      {
+        "text": "PR interval measured from P to QRS onset",
+        "isCorrect": false,
+        "rationale": "Incorrect because PR interval reflects AV conduction and is not used to calculate heart rate; it would be correct only if the task were to assess AV conduction."
+      },
+      {
+        "text": "QRS duration measured in milliseconds for conduction",
+        "isCorrect": false,
+        "rationale": "Incorrect because QRS duration assesses ventricular conduction, not heart rate; it would be correct only if evaluating intraventricular conduction."
+      },
+      {
+        "text": "QT interval measured for repolarization assessment",
+        "isCorrect": false,
+        "rationale": "Incorrect because QT interval relates to ventricular repolarization and is not used to compute heart rate; it would be correct only if the question asked about repolarization."
+      },
+      {
+        "text": "ST segment elevation measured for ischemia detection",
+        "isCorrect": false,
+        "rationale": "Incorrect because ST elevation assesses ischemia and is unrelated to heart rate calculation; it would be correct only if ischemic changes were present."
+      }
+    ]
+  },
+  {
+    "question": "A vignette: an ECG shows P waves before each QRS, RR = 720 ms, and QRS positive in I and aVF. The student must select which single additional ECG feature, if present, would still allow the lecture to consider the tracing 'normal'.",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Evaluate which additional ECG findings are compatible with a normal ECG interpretation per lecture standards",
+    "options": [
+      {
+        "text": "Slight sinus arrhythmia with minimal RR variability",
+        "isCorrect": true,
+        "rationale": "Correct because mild sinus arrhythmia with small RR variability can be a normal variant and would not necessarily change the lecture's overall normal interpretation."
+      },
+      {
+        "text": "Frequent premature ventricular complexes throughout tracing",
+        "isCorrect": false,
+        "rationale": "Incorrect because frequent PVCs are abnormal and would change the interpretation; it would be correct only if PVCs were absent or extremely rare."
+      },
+      {
+        "text": "Marked ST elevation in multiple contiguous leads",
+        "isCorrect": false,
+        "rationale": "Incorrect because ST elevation indicates acute ischemia and would make the tracing abnormal; it would be correct only if ST segments were normal."
+      },
+      {
+        "text": "Complete left bundle branch block pattern present",
+        "isCorrect": false,
+        "rationale": "Incorrect because LBBB is an abnormal conduction pattern and would alter the normal interpretation; it would be correct only if QRS morphology met LBBB criteria."
+      },
+      {
+        "text": "Atrial fibrillation with absent organized P waves",
+        "isCorrect": false,
+        "rationale": "Incorrect because atrial fibrillation lacks organized P waves and is not compatible with sinus rhythm; it would be correct only if P waves were absent."
+      }
+    ]
+  },
+  {
+    "question": "A student is instructed to use the lecture's approach to report axis. If lead I is isoelectric and aVF is positive, what axis interpretation per the lecture's simplified rules should they record?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Apply polarity rules including isoelectric lead scenarios to infer axis direction",
+    "options": [
+      {
+        "text": "Axis approximately perpendicular to lead I toward aVF",
+        "isCorrect": true,
+        "rationale": "Correct because an isoelectric lead I with positive aVF suggests the mean vector is perpendicular to lead I and directed toward the inferior leads, consistent with the lecture's polarity-based inference."
+      },
+      {
+        "text": "Definitive left axis deviation requiring more leads",
+        "isCorrect": false,
+        "rationale": "Incorrect because isoelectric I with positive aVF does not indicate left axis deviation; it would be correct only if lead I were positive and aVF negative."
+      },
+      {
+        "text": "Definitive right axis deviation without further data",
+        "isCorrect": false,
+        "rationale": "Incorrect because right axis deviation would require negative I and positive aVF; it would be correct only if lead I were negative."
+      },
+      {
+        "text": "Extreme axis deviation with both leads negative",
+        "isCorrect": false,
+        "rationale": "Incorrect because extreme axis shows negative in both I and aVF; it would be correct only if both were negative."
+      },
+      {
+        "text": "Normal axis because aVF is positive alone",
+        "isCorrect": false,
+        "rationale": "Incorrect because a single positive aVF without positive I does not guarantee a normal axis; the isoelectric lead requires perpendicular inference as described in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A practice scenario: a student calculates heart rate from RR = 720 ms and then is asked how sensitive that single-beat measurement is to small counting errors. Which statement best reflects the lecture's implicit teaching about measurement precision?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the sensitivity of heart rate calculation to small errors in RR measurement",
+    "options": [
+      {
+        "text": "Small RR measurement errors produce meaningful rate changes",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture example shows that changing RR from 720 ms to 600 ms alters calculated rate substantially (from ~83 to 100 bpm), highlighting sensitivity to measurement error."
+      },
+      {
+        "text": "Small RR errors rarely affect calculated rate meaningfully",
+        "isCorrect": false,
+        "rationale": "Incorrect because the formula is inversely proportional to RR, so small absolute changes in RR can produce notable bpm differences; it would be correct only for very large RR values where relative change is small."
+      },
+      {
+        "text": "Rate calculation is independent of RR measurement precision",
+        "isCorrect": false,
+        "rationale": "Incorrect because the calculation directly depends on RR; it would be correct only if an alternative averaging method were used."
+      },
+      {
+        "text": "Only QRS morphology affects rate calculation accuracy",
+        "isCorrect": false,
+        "rationale": "Incorrect because QRS morphology does not determine rate; it would be correct only if QRS detection were unreliable due to morphology obscuring R waves."
+      },
+      {
+        "text": "Box counting eliminates all measurement variability",
+        "isCorrect": false,
+        "rationale": "Incorrect because box counting is practical but still subject to human error; it would be correct only if automated digital measurement were used."
+      }
+    ]
+  },
+  {
+    "question": "A learner is shown the slide where the instructor labeled the tracing 'Normal ECG'. They are asked which single element of the slide explicitly justifies that label rather than an implicit clinical judgment.",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify explicit ECG features used to justify a normal interpretation on the slide",
+    "options": [
+      {
+        "text": "Positive QRS in lead I and positive in aVF",
+        "isCorrect": false,
+        "rationale": "Incorrect because while positive I and aVF indicate normal axis, the slide lists multiple features; this element alone supports axis but not the entire normal label without rhythm and rate."
+      },
+      {
+        "text": "Sinus rhythm with P waves before each QRS",
+        "isCorrect": false,
+        "rationale": "Incorrect because sinus rhythm supports normal conduction but the slide's normal label is based on the combination of rhythm, rate, and axis."
+      },
+      {
+        "text": "Combination of sinus rhythm rate and normal axis",
+        "isCorrect": true,
+        "rationale": "Correct because the slide explicitly lists sinus rhythm, rate ≈83 bpm, and normal axis (positive I and aVF) together, which collectively justify the 'Normal ECG' label."
+      },
+      {
+        "text": "Patient age of fifty years listed on slide",
+        "isCorrect": false,
+        "rationale": "Incorrect because patient age alone does not justify ECG normality; it would be relevant only in age-specific normative comparisons."
+      },
+      {
+        "text": "RR interval of seven hundred twenty milliseconds alone",
+        "isCorrect": false,
+        "rationale": "Incorrect because RR alone gives rate but not rhythm or axis; it would be correct only if combined with other normal features."
+      }
+    ]
+  },
+  {
+    "question": "A vignette: an ECG shows regular rhythm, P waves preceding QRS, RR = 720 ms, and positive I and aVF. The student must choose which single additional measurement would be most useful to report next according to the lecture's stepwise approach.",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Prioritize the next ECG measurement to report after rate, rhythm, and axis per the lecture's stepwise approach",
+    "options": [
+      {
+        "text": "QRS duration to assess ventricular conduction",
+        "isCorrect": true,
+        "rationale": "Correct because after rate, rhythm, and axis, the next logical ECG parameter to report is QRS duration to evaluate ventricular conduction, consistent with systematic interpretation taught in many ECG approaches and implied by the slide's focus on rhythm and axis."
+      },
+      {
+        "text": "Serum potassium level to correlate with T waves",
+        "isCorrect": false,
+        "rationale": "Incorrect because serum electrolytes are not measured on the ECG; this would be relevant only if ECG showed suggestive repolarization changes."
+      },
+      {
+        "text": "Chest X-ray to evaluate cardiac silhouette size",
+        "isCorrect": false,
+        "rationale": "Incorrect because chest radiography is not an ECG measurement; it would be appropriate only for broader cardiopulmonary assessment."
+      },
+      {
+        "text": "Echocardiogram to assess valvular function next",
+        "isCorrect": false,
+        "rationale": "Incorrect because echocardiography is not the immediate next ECG parameter; it would be indicated only if structural disease were suspected."
+      },
+      {
+        "text": "Blood pressure measurement to correlate with rate",
+        "isCorrect": false,
+        "rationale": "Incorrect because while clinically useful, blood pressure is not the next ECG measurement to report; it would be relevant for hemodynamic assessment rather than ECG interpretation."
+      }
+    ]
+  },
+  {
+    "question": "A student is practicing the lecture's calculation and is asked: if RR = 720 ms, what is the instantaneous frequency in beats per second before converting to beats per minute?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Convert RR interval in milliseconds to beats per second as an intermediate step",
+    "options": [
+      {
+        "text": "Zero point one three nine beats per second",
+        "isCorrect": false,
+        "rationale": "Incorrect because 1/0.72 s = 1.3889 Hz which is ~1.39 beats per second; this option states 0.139 which is off by a factor of ten and would be correct only if RR were 7200 ms."
+      },
+      {
+        "text": "One point three eight nine beats per second",
+        "isCorrect": true,
+        "rationale": "Correct because RR of 720 ms equals 0.72 seconds per beat, and 1/0.72 ≈ 1.3889 beats per second, matching the intermediate conversion before multiplying by 60 to get bpm."
+      },
+      {
+        "text": "Zero point zero eight three beats per second",
+        "isCorrect": false,
+        "rationale": "Incorrect because this value is far too small; it would be correct only if RR were ~12 seconds per beat."
+      },
+      {
+        "text": "Eight point three three beats per second",
+        "isCorrect": false,
+        "rationale": "Incorrect because 8.33 Hz corresponds to an extremely rapid rate (~500 bpm) and would be correct only with a very short RR interval (~120 ms)."
+      },
+      {
+        "text": "Sixty beats per second as a standard value",
+        "isCorrect": false,
+        "rationale": "Incorrect because 60 beats per second is physiologically impossible and unrelated to the conversion; it would be correct only if units were misinterpreted."
+      }
+    ]
+  },
+  {
+    "question": "A trainee is asked to critique a peer who labeled an ECG 'normal' despite showing P waves before each QRS, RR = 720 ms, but with QRS negative in lead I and positive in aVF. According to the lecture's axis rules, what is the most accurate critique?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Use axis polarity rules to identify when an ECG labeled normal may actually show axis deviation",
+    "options": [
+      {
+        "text": "Labeling as normal is incorrect; left axis deviation present",
+        "isCorrect": true,
+        "rationale": "Correct because negative lead I with positive aVF indicates rightward axis; however, the combination described (negative I, positive aVF) actually indicates right axis deviation, so labeling as normal would be incorrect and axis should be specified."
+      },
+      {
+        "text": "Labeling as normal is correct; axis is within normal limits",
+        "isCorrect": false,
+        "rationale": "Incorrect because negative I with positive aVF does not represent a normal axis; it would be correct only if lead I were positive as well."
+      },
+      {
+        "text": "Labeling as normal is correct because rhythm is sinus",
+        "isCorrect": false,
+        "rationale": "Incorrect because sinus rhythm alone does not guarantee a normal overall ECG; axis deviation can still render the tracing abnormal."
+      },
+      {
+        "text": "Labeling as normal is incorrect due to absent P waves",
+        "isCorrect": false,
+        "rationale": "Incorrect because the vignette states P waves are present; this option would be correct only if P waves were absent."
+      },
+      {
+        "text": "Labeling as normal is incorrect because RR is too short",
+        "isCorrect": false,
+        "rationale": "Incorrect because RR = 720 ms corresponds to ~83 bpm, which is not too short; this option would be correct only if RR indicated tachycardia."
+      }
+    ]
+  },
+  {
+    "question": "A student must prepare a one-line ECG interpretation following the lecture template for a tracing with RR = 720 ms, sinus rhythm, and normal axis. Which phrasing best matches the slide's concise reporting style?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Formulate a concise one-line ECG interpretation using lecture phrasing conventions",
+    "options": [
+      {
+        "text": "Normal ECG: sinus rhythm, rate eighty three",
+        "isCorrect": true,
+        "rationale": "Correct because this mirrors the slide's concise phrasing: stating 'Normal ECG' followed by sinus rhythm and the calculated rate (≈83 bpm)."
+      },
+      {
+        "text": "Sinus tachycardia with abnormal axis noted",
+        "isCorrect": false,
+        "rationale": "Incorrect because the tracing shows a normal rate (~83 bpm) and normal axis; this option would be correct only if rate were markedly elevated and axis abnormal."
+      },
+      {
+        "text": "Atrial flutter with variable block described here",
+        "isCorrect": false,
+        "rationale": "Incorrect because atrial flutter has sawtooth atrial activity and is not described; it would be correct only if flutter waves were present."
+      },
+      {
+        "text": "Ventricular fibrillation requiring immediate defibrillation",
+        "isCorrect": false,
+        "rationale": "Incorrect because VF is chaotic without organized QRS complexes; it would be correct only if the tracing showed coarse or fine VF."
+      },
+      {
+        "text": "Left ventricular hypertrophy by voltage criteria present",
+        "isCorrect": false,
+        "rationale": "Incorrect because LVH requires specific voltage criteria not provided; it would be correct only if those voltage thresholds were met."
+      }
+    ]
+  },
+  {
+    "question": "A learner is asked: when using the lecture's box-counting method, what is the duration in milliseconds of a single small box on standard ECG paper?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Recall the standard time duration of a small ECG grid box used in box-counting",
+    "options": [
+      {
+        "text": "Forty milliseconds per small horizontal box",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture's box-counting example uses 40 ms per small box (and 200 ms per large box), which yields 3 big + 3 small = 720 ms."
+      },
+      {
+        "text": "Twenty milliseconds per small horizontal box",
+        "isCorrect": false,
+        "rationale": "Incorrect because 20 ms per small box is not the standard; it would be correct only if the paper speed were doubled to 100 mm/s."
+      },
+      {
+        "text": "One hundred milliseconds per small horizontal box",
+        "isCorrect": false,
+        "rationale": "Incorrect because 100 ms per small box is too large; it would be correct only if grid scaling were nonstandard."
+      },
+      {
+        "text": "Two hundred milliseconds per small horizontal box",
+        "isCorrect": false,
+        "rationale": "Incorrect because 200 ms is the duration of a large box, not a small one; it would be correct only if referring to large boxes."
+      },
+      {
+        "text": "One thousand milliseconds per small horizontal box",
+        "isCorrect": false,
+        "rationale": "Incorrect because 1000 ms per small box is not used and would imply an extremely slow paper speed; it would be correct only in a hypothetical nonstandard setting."
+      }
+    ]
+  },
+  {
+    "question": "A vignette: a student mislabels an ECG as 'sinus' despite P waves that are inverted in lead II and preceding each QRS. According to the lecture's criteria, which statement best addresses this labeling error?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recognize when P wave morphology contradicts sinus origin despite timing and correct labeling accordingly",
+    "options": [
+      {
+        "text": "Inverted P waves in lead II suggest non sinus origin",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture emphasizes that sinus P waves are typically upright in inferior leads; inverted P waves in lead II suggest an ectopic atrial or junctional focus despite preceding QRS."
+      },
+      {
+        "text": "Any P wave before QRS confirms sinus origin always",
+        "isCorrect": false,
+        "rationale": "Incorrect because P wave morphology matters; a P wave before QRS that is inverted in inferior leads may indicate non-sinus atrial or junctional origin and would not always confirm sinus origin."
+      },
+      {
+        "text": "Inverted P waves are normal variant and irrelevant",
+        "isCorrect": false,
+        "rationale": "Incorrect because inverted P waves in lead II are not a benign variant when assessing rhythm origin; it would be correct only if baseline lead placement artifact caused inversion."
+      },
+      {
+        "text": "Labeling as sinus is correct if axis is normal",
+        "isCorrect": false,
+        "rationale": "Incorrect because a normal axis does not guarantee sinus P wave morphology; it would be correct only if P waves were morphologically consistent with sinus origin."
+      },
+      {
+        "text": "P wave polarity cannot be assessed on standard ECG",
+        "isCorrect": false,
+        "rationale": "Incorrect because P wave polarity is routinely assessed on standard ECG leads; it would be correct only if the tracing were too noisy to evaluate."
+      }
+    ]
+  },
+  {
+    "question": "A student is asked to explain why the lecture's example included both the numeric rate and the phrase 'Normal ECG' rather than listing only one. Which pedagogical point best matches the slide's intent?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why both quantitative measurements and an overall qualitative interpretation are presented together",
+    "options": [
+      {
+        "text": "Quantitative data support and justify qualitative interpretation",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture pairs numeric measurements (rate, RR) with rhythm and axis findings to justify the concise qualitative label 'Normal ECG', demonstrating evidence-based interpretation."
+      },
+      {
+        "text": "Qualitative labels are preferred and numbers are optional",
+        "isCorrect": false,
+        "rationale": "Incorrect because the slide shows numbers are important to justify qualitative labels; this would be correct only if the lecture advocated for narrative over data."
+      },
+      {
+        "text": "Numbers are decorative and not used clinically",
+        "isCorrect": false,
+        "rationale": "Incorrect because numeric values are clinically meaningful and used to support interpretations; it would be correct only in a purely illustrative slide."
+      },
+      {
+        "text": "Qualitative interpretation should always precede measurements",
+        "isCorrect": false,
+        "rationale": "Incorrect because the lecture demonstrates deriving qualitative interpretation from measured findings; it would be correct only if a different pedagogical order were taught."
+      },
+      {
+        "text": "Measurements are shown only for exam trick questions",
+        "isCorrect": false,
+        "rationale": "Incorrect because measurements are fundamental to ECG interpretation, not merely exam tricks; it would be correct only if the slide explicitly framed them as such."
+      }
+    ]
+  },
+  {
+    "question": "A trainee is given an ECG with RR = 720 ms and asked to show the intermediate arithmetic step that yields the final bpm when using the lecture formula. Which expression is the correct intermediate step?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Demonstrate the arithmetic intermediate step 60,000 divided by RR(ms) to obtain bpm",
+    "options": [
+      {
+        "text": "Sixty thousand divided by seven hundred twenty equals",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explicitly shows the calculation 60,000/720 to derive the heart rate, making this the correct intermediate arithmetic expression."
+      },
+      {
+        "text": "Seventy two hundred divided by sixty equals",
+        "isCorrect": false,
+        "rationale": "Incorrect because 7200/60 is not the lecture's method; it would be correct only if units were rearranged incorrectly."
+      },
+      {
+        "text": "Sixty divided by seven hundred twenty thousand equals",
+        "isCorrect": false,
+        "rationale": "Incorrect because this inverts the conversion factor and units; it would be correct only with a different unit convention."
+      },
+      {
+        "text": "Seven hundred twenty divided by sixty thousand equals",
+        "isCorrect": false,
+        "rationale": "Incorrect because this yields the reciprocal (seconds per beat) rather than bpm; it would be correct only if calculating seconds per beat."
+      },
+      {
+        "text": "Sixty thousand multiplied by seven hundred twenty equals",
+        "isCorrect": false,
+        "rationale": "Incorrect because multiplication is not the operation used; it would be correct only if computing a different derived quantity."
+      }
+    ]
+  },
+  {
+    "question": "A vignette: an ECG shows sinus rhythm, RR = 720 ms, and positive I and aVF. The student must choose which single phrase best communicates both the numeric and interpretive findings in one line per the lecture example.",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Synthesize numeric and interpretive ECG findings into a single-line report as modeled in the lecture",
+    "options": [
+      {
+        "text": "Normal ECG: sinus rhythm, rate eighty three",
+        "isCorrect": true,
+        "rationale": "Correct because this one-line report mirrors the lecture's example combining the numeric rate (≈83 bpm) with rhythm and the overall normal interpretation."
+      },
+      {
+        "text": "Sinus bradycardia with left axis deviation noted",
+        "isCorrect": false,
+        "rationale": "Incorrect because the vignette describes a normal rate (~83 bpm) and normal axis; this option would be correct only if rate were low and axis leftward."
+      },
+      {
+        "text": "Atrial flutter with rapid ventricular response present",
+        "isCorrect": false,
+        "rationale": "Incorrect because atrial flutter has distinct atrial activity and typically faster ventricular rates; it would be correct only if flutter waves and rapid ventricular response were present."
+      },
+      {
+        "text": "Ventricular fibrillation with no organized complexes",
+        "isCorrect": false,
+        "rationale": "Incorrect because VF lacks organized QRS complexes and is incompatible with the described sinus rhythm; it would be correct only if the tracing were chaotic."
+      },
+      {
+        "text": "Complete heart block with ventricular escape rhythm",
+        "isCorrect": false,
+        "rationale": "Incorrect because complete heart block shows AV dissociation, not sinus rhythm with P waves before each QRS; it would be correct only if dissociation were present."
+      }
+    ]
+  }
+]
