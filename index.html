@@ -1799,14 +1799,14 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
       <div class="github-instructions" id="github-instructions" style="display:none">
       <strong style="font-size:.82rem">🚀 Auto-publish (recommended):</strong>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
-        <input id="github-token-input" class="modal-input" type="password" placeholder="GitHub token (repo contents write)" style="flex:1;min-width:220px">
+        <input id="github-token-input" class="modal-input" type="password" placeholder="GitHub token (repo contents write)" style="flex:1;min-width:220px" onchange="onGitHubTokenChanged()" onblur="onGitHubTokenChanged()">
         <input id="github-commit-message" class="modal-input" type="text" placeholder="Commit message (optional)" style="flex:1;min-width:220px">
       </div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
         <button id="auto-publish-btn" class="copy-snippet-btn" onclick="autoCommitToGitHub()">🚀 Auto Commit to GitHub</button>
       </div>
       <div style="margin-top:10px;font-size:.7rem;opacity:.65;font-family:var(--font-mono)">
-        Token stays on this browser only (localStorage). First save needs token; after that, Generate can auto-publish.
+        Token stays on this browser only (localStorage). First save needs token; after that, Generate can auto-publish. An allowlisted developer token also unlocks 🗑 delete on official library quizzes.
       </div>
       <hr style="border:none;border-top:1px solid var(--border);margin:12px 0">
       <strong style="font-size:.82rem">📌 Manual fallback:</strong>
@@ -4987,6 +4987,9 @@ function applyMedstepBackupRestore() {
   loadReportNotifyEmail();
   const tokenInput = document.getElementById('github-token-input');
   if (tokenInput) tokenInput.value = localStorage.getItem('medstep_github_token') || '';
+  refreshDeveloperMode().then(() => {
+    if (typeof renderLibrary === 'function') renderLibrary();
+  });
   updateLibraryClassOptions();
   if (typeof renderLibrary === 'function') renderLibrary();
   if (typeof renderStagingArea === 'function') renderStagingArea();
@@ -5776,6 +5779,11 @@ document.addEventListener('keydown',e=>{
 const GITHUB_USER   = '4vpvjyx4wr-star';
 const GITHUB_REPO   = 'MedStep';
 const GITHUB_BRANCH_FALLBACKS = ['main', 'master'];
+/** GitHub logins allowed to delete official MedStep library quizzes. */
+const DEVELOPER_GITHUB_LOGINS = [GITHUB_USER];
+const LS_GITHUB_TOKEN = 'medstep_github_token';
+const LS_IS_DEVELOPER = 'medstep_is_developer';
+const LS_DEVELOPER_LOGIN = 'medstep_developer_login';
 const BLOCK_CLASSES = {
   1: ['Cell Biology/Biochemistry', 'Microbiology/Immunology', 'Anatomy'],
   2: ['Pharmacology', 'Physiology', 'Pathology', 'Anatomy'],
@@ -6172,6 +6180,75 @@ function deletePersonalQuiz(file) {
   renderStagingArea();
   renderLibrary();
   showToast('🗑️ Removed from My Library');
+}
+
+let developerMode = false;
+let premadeDeleteInFlight = false;
+
+function isDeveloperMode() {
+  return developerMode === true || localStorage.getItem(LS_IS_DEVELOPER) === '1';
+}
+
+function setDeveloperMode(enabled, login) {
+  developerMode = !!enabled;
+  if (enabled) {
+    localStorage.setItem(LS_IS_DEVELOPER, '1');
+    if (login) localStorage.setItem(LS_DEVELOPER_LOGIN, String(login));
+  } else {
+    localStorage.removeItem(LS_IS_DEVELOPER);
+    localStorage.removeItem(LS_DEVELOPER_LOGIN);
+  }
+}
+
+function getStoredGitHubToken() {
+  const fromInput = (document.getElementById('github-token-input')?.value || '').trim();
+  if (fromInput) return fromInput;
+  return (localStorage.getItem(LS_GITHUB_TOKEN) || '').trim();
+}
+
+async function verifyDeveloperToken(token) {
+  if (!token) {
+    setDeveloperMode(false);
+    return false;
+  }
+  try {
+    const res = await fetch('https://api.github.com/user', {
+      headers: {
+        'Accept': 'application/vnd.github+json',
+        'Authorization': `Bearer ${token}`
+      }
+    });
+    if (!res.ok) {
+      setDeveloperMode(false);
+      return false;
+    }
+    const user = await res.json();
+    const login = String(user.login || '').toLowerCase();
+    const allowed = DEVELOPER_GITHUB_LOGINS.some(l => String(l).toLowerCase() === login);
+    setDeveloperMode(allowed, user.login || '');
+    return allowed;
+  } catch (e) {
+    setDeveloperMode(false);
+    return false;
+  }
+}
+
+async function onGitHubTokenChanged() {
+  const token = (document.getElementById('github-token-input')?.value || '').trim();
+  if (token) localStorage.setItem(LS_GITHUB_TOKEN, token);
+  else localStorage.removeItem(LS_GITHUB_TOKEN);
+  await verifyDeveloperToken(token);
+  if (typeof renderLibrary === 'function') renderLibrary();
+}
+
+async function refreshDeveloperMode() {
+  developerMode = localStorage.getItem(LS_IS_DEVELOPER) === '1';
+  const token = getStoredGitHubToken();
+  if (!token) {
+    setDeveloperMode(false);
+    return false;
+  }
+  return verifyDeveloperToken(token);
 }
 
 function updateClassOptions() {
@@ -7099,7 +7176,7 @@ function renderLibrary() {
         ${hasExamTag ? `<span class="lib-bulk-btn" title="Quiz all from same exam" role="button" tabindex="0" onclick="event.stopPropagation(); openQPickerForScope('${entry.file}','exam')">＋E</span>` : ''}
         ${hasWeekTag ? `<span class="lib-bulk-btn" title="Quiz all from same week" role="button" tabindex="0" onclick="event.stopPropagation(); openQPickerForScope('${entry.file}','week')">＋W</span>` : ''}
         <span class="lib-bulk-btn" title="Edit tags" role="button" tabindex="0" onclick="event.stopPropagation(); openEditQuizTagsModalForFile('${fileAttr}')">✏️</span>
-        ${personal ? `<span class="lib-delete-btn" title="Delete from My Quizzes" role="button" tabindex="0" onclick="event.stopPropagation(); deletePersonalQuiz('${fileAttr}')">🗑</span>` : ''}
+        ${(personal || isDeveloperMode()) ? `<span class="lib-delete-btn" title="${personal ? 'Delete from My Quizzes' : 'Delete from MedStep library (developer)'}" role="button" tabindex="0" onclick="event.stopPropagation(); ${personal ? `deletePersonalQuiz('${fileAttr}')` : `deletePremadeQuiz('${fileAttr}')`}">🗑</span>` : ''}
       </span>
       <span class="lib-stage-toggle" title="${isStaged ? 'Remove from set' : 'Add to set'}" role="button" tabindex="0"
             onclick="event.stopPropagation(); toggleStageQuizByFile('${fileAttr}', this.closest('.lib-quiz-btn'))"
@@ -7290,6 +7367,97 @@ async function upsertGitHubFile(path, content, commitMessage, token, branch) {
   }
 }
 
+async function deleteGitHubFile(path, commitMessage, token, branch) {
+  const sha = await getGitHubSha(path, token, branch);
+  if (!sha) throw new Error(`File not found on GitHub: ${path}`);
+  const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${path}`;
+  const res = await fetch(url, {
+    method: 'DELETE',
+    headers: {
+      'Accept': 'application/vnd.github+json',
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      message: commitMessage,
+      sha,
+      branch
+    })
+  });
+  if (!res.ok) {
+    let detail = '';
+    try {
+      const json = await res.json();
+      detail = json?.message || JSON.stringify(json);
+    } catch(e) {
+      detail = await res.text();
+    }
+    throw new Error(`GitHub delete failed for ${path} (${res.status}): ${detail}`);
+  }
+}
+
+async function deletePremadeQuiz(file) {
+  if (isPersonalFile(file)) return;
+  if (premadeDeleteInFlight) {
+    showToast('⏳ Delete already in progress…');
+    return;
+  }
+  const entry = findLibraryEntry(file);
+  if (!entry) {
+    showToast('❌ Quiz not found in library');
+    return;
+  }
+
+  const token = getStoredGitHubToken();
+  if (!token) {
+    showToast('❌ Enter your GitHub token in Add Quiz → Developer publish first');
+    return;
+  }
+
+  const allowed = await verifyDeveloperToken(token);
+  renderLibrary();
+  if (!allowed) {
+    showToast('❌ Developer access required to delete official quizzes');
+    return;
+  }
+
+  const title = entry.title || file;
+  if (!confirm('Permanently delete "' + title + '" from the official MedStep library on GitHub?\n\nThis removes quizzes/' + file + ' and updates manifest.json. It cannot be undone from the app.')) {
+    return;
+  }
+
+  premadeDeleteInFlight = true;
+  showToast('⏳ Deleting ' + title + '…');
+  try {
+    localStorage.setItem(LS_GITHUB_TOKEN, token);
+    const branch = await detectWritableBranch(token);
+    const quizPath = `quizzes/${file}`;
+    await deleteGitHubFile(
+      quizPath,
+      `Delete quiz: ${file}`,
+      token,
+      branch
+    );
+    const latest = await fetchManifestFromGitHub(token, branch);
+    const filtered = latest.filter(e => e.file !== file);
+    await upsertGitHubFile(
+      'quizzes/manifest.json',
+      JSON.stringify(applyClassLectureOrder(filtered), null, 2),
+      `Remove ${file} from manifest`,
+      token,
+      branch
+    );
+    stagedQuizzes = stagedQuizzes.filter(s => s.file !== file);
+    renderStagingArea();
+    await refreshLibrary();
+    showToast('🗑️ Deleted "' + title + '" from MedStep library');
+  } catch (e) {
+    showToast('❌ ' + (e.message || String(e)).slice(0, 140));
+  } finally {
+    premadeDeleteInFlight = false;
+  }
+}
+
 async function autoCommitToGitHub(options = {}) {
   const { silentIfNoToken = false, closeOnSuccess = false } = options;
   if (!generatedManifestEntry) {
@@ -7302,7 +7470,9 @@ async function autoCommitToGitHub(options = {}) {
     return false;
   }
 
-  localStorage.setItem('medstep_github_token', token);
+  localStorage.setItem(LS_GITHUB_TOKEN, token);
+  await verifyDeveloperToken(token);
+  if (typeof renderLibrary === 'function') renderLibrary();
   const customMsg = (document.getElementById('github-commit-message')?.value || '').trim();
   const branch = await detectWritableBranch(token);
 
@@ -7841,9 +8011,14 @@ document.getElementById('add-quiz-modal').addEventListener('click', function(e) 
 window.addEventListener('load', async () => {
   loadPersonalLibrary();
   restoreLibrarySource();
+  developerMode = localStorage.getItem(LS_IS_DEVELOPER) === '1';
   await refreshLibrary();
   restoreLibraryFilters();
   syncCustomDropdowns();
   updatePromptSummary();
+  const tokenInput = document.getElementById('github-token-input');
+  if (tokenInput) tokenInput.value = localStorage.getItem(LS_GITHUB_TOKEN) || '';
+  await refreshDeveloperMode();
+  renderLibrary();
 });
 </script>
