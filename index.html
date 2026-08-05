@@ -1799,7 +1799,7 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
       <div class="github-instructions" id="github-instructions" style="display:none">
       <strong style="font-size:.82rem">🚀 Auto-publish (recommended):</strong>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
-        <input id="github-token-input" class="modal-input" type="password" placeholder="GitHub token (repo contents write)" style="flex:1;min-width:220px" onchange="onGitHubTokenChanged()" onblur="onGitHubTokenChanged()">
+        <input id="github-token-input" class="modal-input" type="password" placeholder="GitHub token (repo contents write)" style="flex:1;min-width:220px" autocomplete="off" spellcheck="false" onchange="onGitHubTokenChanged()" onblur="onGitHubTokenChanged()">
         <input id="github-commit-message" class="modal-input" type="text" placeholder="Commit message (optional)" style="flex:1;min-width:220px">
       </div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
@@ -6202,8 +6202,10 @@ function setDeveloperMode(enabled, login) {
 
 function getStoredGitHubToken() {
   const fromInput = (document.getElementById('github-token-input')?.value || '').trim();
-  if (fromInput) return fromInput;
-  return (localStorage.getItem(LS_GITHUB_TOKEN) || '').trim();
+  const fromStore = (localStorage.getItem(LS_GITHUB_TOKEN) || '').trim();
+  // Ignore autofilled junk (too short to be a PAT); fall back to stored token.
+  if (fromInput && fromInput.length >= 20) return fromInput;
+  return fromStore || fromInput;
 }
 
 async function verifyDeveloperToken(token) {
@@ -6234,9 +6236,23 @@ async function verifyDeveloperToken(token) {
 }
 
 async function onGitHubTokenChanged() {
-  const token = (document.getElementById('github-token-input')?.value || '').trim();
-  if (token) localStorage.setItem(LS_GITHUB_TOKEN, token);
-  else localStorage.removeItem(LS_GITHUB_TOKEN);
+  const input = document.getElementById('github-token-input');
+  let token = (input?.value || '').trim();
+  // Password fields are often cleared by the browser on focus/blur.
+  // Never wipe a known-good stored token when the visible field is empty/junk.
+  if (!token || token.length < 20) {
+    const stored = (localStorage.getItem(LS_GITHUB_TOKEN) || '').trim();
+    if (stored) {
+      token = stored;
+      if (input && (!input.value || input.value.trim().length < 20)) input.value = stored;
+    } else if (!token) {
+      setDeveloperMode(false);
+      if (typeof renderLibrary === 'function') renderLibrary();
+      return;
+    }
+  } else {
+    localStorage.setItem(LS_GITHUB_TOKEN, token);
+  }
   await verifyDeveloperToken(token);
   if (typeof renderLibrary === 'function') renderLibrary();
 }
@@ -7261,18 +7277,34 @@ function base64EncodeUnicode(str) {
   return btoa(unescape(encodeURIComponent(str)));
 }
 
+function githubAuthHeaders(token) {
+  const headers = { 'Accept': 'application/vnd.github+json' };
+  if (token) headers.Authorization = `Bearer ${token}`;
+  return headers;
+}
+
+function formatGitHubAuthError(status, detail) {
+  if (status === 401) {
+    return 'GitHub token invalid or expired. Paste a fresh PAT with Contents read/write, then try again.';
+  }
+  if (status === 403) {
+    return 'GitHub denied access (403). Check token scopes / fine-grained Contents permission for this repo.';
+  }
+  return detail || `GitHub request failed (${status})`;
+}
+
 async function getGitHubSha(path, token, branch) {
   const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${path}?ref=${branch}`;
-  const res = await fetch(url, {
-    headers: {
-      'Accept': 'application/vnd.github+json',
-      'Authorization': `Bearer ${token}`
-    }
-  });
+  let res = await fetch(url, { headers: githubAuthHeaders(token) });
+  // An invalid token turns public-repo GETs into 401. Fall back to anonymous
+  // so new-file uploads can still discover "file missing" (sha=null).
+  if ((res.status === 401 || res.status === 403) && token) {
+    res = await fetch(url, { headers: githubAuthHeaders(null) });
+  }
   if (res.status === 404) return null;
   if (!res.ok) {
     const text = await res.text();
-    throw new Error(`GitHub SHA lookup failed (${res.status}): ${text}`);
+    throw new Error(`GitHub SHA lookup failed (${res.status}): ${formatGitHubAuthError(res.status, text)}`);
   }
   const json = await res.json();
   return json.sha || null;
@@ -7281,12 +7313,10 @@ async function getGitHubSha(path, token, branch) {
 async function detectWritableBranch(token) {
   for (const branch of GITHUB_BRANCH_FALLBACKS) {
     const probeUrl = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/quizzes/manifest.json?ref=${branch}`;
-    const res = await fetch(probeUrl, {
-      headers: {
-        'Accept': 'application/vnd.github+json',
-        'Authorization': `Bearer ${token}`
-      }
-    });
+    let res = await fetch(probeUrl, { headers: githubAuthHeaders(token) });
+    if ((res.status === 401 || res.status === 403) && token) {
+      res = await fetch(probeUrl, { headers: githubAuthHeaders(null) });
+    }
     if (res.ok) return branch;
   }
   return GITHUB_BRANCH_FALLBACKS[0] || 'main';
@@ -7294,16 +7324,14 @@ async function detectWritableBranch(token) {
 
 async function fetchManifestFromGitHub(token, branch) {
   const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/quizzes/manifest.json?ref=${branch}`;
-  const res = await fetch(url, {
-    headers: {
-      'Accept': 'application/vnd.github+json',
-      'Authorization': `Bearer ${token}`
-    }
-  });
+  let res = await fetch(url, { headers: githubAuthHeaders(token) });
+  if ((res.status === 401 || res.status === 403) && token) {
+    res = await fetch(url, { headers: githubAuthHeaders(null) });
+  }
   if (res.status === 404) return [];
   if (!res.ok) {
     const text = await res.text();
-    throw new Error(`Failed to fetch latest manifest (${res.status}): ${text}`);
+    throw new Error(`Failed to fetch latest manifest (${res.status}): ${formatGitHubAuthError(res.status, text)}`);
   }
   const json = await res.json();
   if (!json?.content || json.encoding !== 'base64') return [];
@@ -7349,8 +7377,7 @@ async function upsertGitHubFile(path, content, commitMessage, token, branch) {
   const res = await fetch(url, {
     method: 'PUT',
     headers: {
-      'Accept': 'application/vnd.github+json',
-      'Authorization': `Bearer ${token}`,
+      ...githubAuthHeaders(token),
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(body)
@@ -7363,7 +7390,7 @@ async function upsertGitHubFile(path, content, commitMessage, token, branch) {
     } catch(e) {
       detail = await res.text();
     }
-    throw new Error(`GitHub update failed for ${path} (${res.status}): ${detail}`);
+    throw new Error(`GitHub update failed for ${path} (${res.status}): ${formatGitHubAuthError(res.status, detail)}`);
   }
 }
 
@@ -7374,8 +7401,7 @@ async function deleteGitHubFile(path, commitMessage, token, branch) {
   const res = await fetch(url, {
     method: 'DELETE',
     headers: {
-      'Accept': 'application/vnd.github+json',
-      'Authorization': `Bearer ${token}`,
+      ...githubAuthHeaders(token),
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
@@ -7392,7 +7418,7 @@ async function deleteGitHubFile(path, commitMessage, token, branch) {
     } catch(e) {
       detail = await res.text();
     }
-    throw new Error(`GitHub delete failed for ${path} (${res.status}): ${detail}`);
+    throw new Error(`GitHub delete failed for ${path} (${res.status}): ${formatGitHubAuthError(res.status, detail)}`);
   }
 }
 
@@ -7464,13 +7490,17 @@ async function autoCommitToGitHub(options = {}) {
     showToast('❌ Generate content first');
     return false;
   }
-  const token = (document.getElementById('github-token-input')?.value || '').trim();
+  const token = getStoredGitHubToken();
   if (!token) {
     if (!silentIfNoToken) showToast('❌ Enter GitHub token first');
     return false;
   }
 
+  const tokenInput = document.getElementById('github-token-input');
+  if (tokenInput && !tokenInput.value.trim()) tokenInput.value = token;
   localStorage.setItem(LS_GITHUB_TOKEN, token);
+  // Verify for developer UI, but do not block publish when allowlist check fails —
+  // repo write is enforced by GitHub on the PUT itself.
   await verifyDeveloperToken(token);
   if (typeof renderLibrary === 'function') renderLibrary();
   const customMsg = (document.getElementById('github-commit-message')?.value || '').trim();
