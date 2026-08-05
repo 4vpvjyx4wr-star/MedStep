@@ -1570,7 +1570,7 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
       <div class="lib-header-scroll" id="lib-header-scroll" role="region" aria-label="Library actions" tabindex="0">
         <div class="lib-header-actions">
           <button type="button" class="lib-header-btn lib-header-btn-primary" onclick="openAddQuizModal()">+ Upload New Quiz</button>
-          <button type="button" class="lib-header-btn lib-header-btn-secondary" onclick="refreshLibrary()">🔄 Refresh</button>
+          <button type="button" class="lib-header-btn lib-header-btn-secondary" onclick="refreshLibrary(isDeveloperMode() ? { preferGitHub: true } : {})">🔄 Refresh</button>
           <button type="button" class="lib-home-btn" onclick="goHome();toggleLibrary();">🏠 Return to Home</button>
         </div>
       </div>
@@ -1806,7 +1806,7 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
         <button id="auto-publish-btn" class="copy-snippet-btn" onclick="autoCommitToGitHub()">🚀 Auto Commit to GitHub</button>
       </div>
       <div style="margin-top:10px;font-size:.7rem;opacity:.65;font-family:var(--font-mono)">
-        Token stays on this browser only (localStorage). First save needs token; after that, Generate can auto-publish. An allowlisted developer token also unlocks 🗑 delete on official library quizzes.
+        Token stays on this browser only (localStorage). Needs write access to <code>4vpvjyx4wr-star/MedStep</code>: classic PAT with <code>repo</code> (or <code>public_repo</code>), or fine-grained PAT → Contents: Read and write. An allowlisted developer token also unlocks 🗑 delete on official quizzes.
       </div>
       <hr style="border:none;border-top:1px solid var(--border);margin:12px 0">
       <strong style="font-size:.82rem">📌 Manual fallback:</strong>
@@ -6201,24 +6201,30 @@ function setDeveloperMode(enabled, login) {
 }
 
 function getStoredGitHubToken() {
-  const fromInput = (document.getElementById('github-token-input')?.value || '').trim();
-  const fromStore = (localStorage.getItem(LS_GITHUB_TOKEN) || '').trim();
+  const fromInput = normalizeGitHubToken(document.getElementById('github-token-input')?.value || '');
+  const fromStore = normalizeGitHubToken(localStorage.getItem(LS_GITHUB_TOKEN) || '');
   // Ignore autofilled junk (too short to be a PAT); fall back to stored token.
   if (fromInput && fromInput.length >= 20) return fromInput;
   return fromStore || fromInput;
 }
 
+/** Strip accidental "Bearer "/"token " prefixes and whitespace from pasted PATs. */
+function normalizeGitHubToken(raw) {
+  return String(raw || '')
+    .trim()
+    .replace(/^(Bearer|token)\s+/i, '')
+    .trim();
+}
+
 async function verifyDeveloperToken(token) {
+  token = normalizeGitHubToken(token);
   if (!token) {
     setDeveloperMode(false);
     return false;
   }
   try {
     const res = await fetch('https://api.github.com/user', {
-      headers: {
-        'Accept': 'application/vnd.github+json',
-        'Authorization': `Bearer ${token}`
-      }
+      headers: githubAuthHeaders(token)
     });
     if (!res.ok) {
       setDeveloperMode(false);
@@ -6237,14 +6243,14 @@ async function verifyDeveloperToken(token) {
 
 async function onGitHubTokenChanged() {
   const input = document.getElementById('github-token-input');
-  let token = (input?.value || '').trim();
+  let token = normalizeGitHubToken(input?.value || '');
   // Password fields are often cleared by the browser on focus/blur.
   // Never wipe a known-good stored token when the visible field is empty/junk.
   if (!token || token.length < 20) {
-    const stored = (localStorage.getItem(LS_GITHUB_TOKEN) || '').trim();
+    const stored = normalizeGitHubToken(localStorage.getItem(LS_GITHUB_TOKEN) || '');
     if (stored) {
       token = stored;
-      if (input && (!input.value || input.value.trim().length < 20)) input.value = stored;
+      if (input && normalizeGitHubToken(input.value).length < 20) input.value = stored;
     } else if (!token) {
       setDeveloperMode(false);
       if (typeof renderLibrary === 'function') renderLibrary();
@@ -6252,6 +6258,7 @@ async function onGitHubTokenChanged() {
     }
   } else {
     localStorage.setItem(LS_GITHUB_TOKEN, token);
+    if (input && input.value !== token) input.value = token;
   }
   await verifyDeveloperToken(token);
   if (typeof renderLibrary === 'function') renderLibrary();
@@ -6627,14 +6634,22 @@ function toggleLibrary() {
   if (libraryOpen && libraryManifest.length === 0) refreshLibrary();
 }
 
-async function refreshLibrary() {
+async function refreshLibrary(options = {}) {
+  const { preferGitHub = false } = options;
   const list = document.getElementById('lib-list');
   list.innerHTML = '<div class="lib-status">⏳ Fetching quizzes…</div>';
 
   try {
-    // Prefer local manifest first so active local changes appear immediately.
-    let res = await localFetch("manifest.json");
-    if (!res.ok) res = await githubFetch("manifest.json");
+    // Prefer local manifest first so active local changes appear immediately,
+    // unless we just mutated GitHub (delete/publish) and need the remote truth.
+    let res;
+    if (preferGitHub) {
+      res = await githubFetch("manifest.json");
+      if (!res.ok) res = await localFetch("manifest.json");
+    } else {
+      res = await localFetch("manifest.json");
+      if (!res.ok) res = await githubFetch("manifest.json");
+    }
     const text = await res.text();
     // Guard against empty or non-JSON responses
     if (!text || !text.trim().startsWith('[')) {
@@ -7279,26 +7294,98 @@ function base64EncodeUnicode(str) {
 
 function githubAuthHeaders(token) {
   const headers = { 'Accept': 'application/vnd.github+json' };
-  if (token) headers.Authorization = `Bearer ${token}`;
+  const clean = normalizeGitHubToken(token);
+  if (clean) headers.Authorization = `Bearer ${clean}`;
   return headers;
 }
 
+function parseGitHubErrorDetail(raw) {
+  if (!raw) return '';
+  if (typeof raw === 'object') return raw.message || JSON.stringify(raw);
+  try {
+    const json = JSON.parse(raw);
+    let msg = json?.message || String(raw);
+    if (json?.errors?.length) {
+      const extras = json.errors.map(e => e.message || JSON.stringify(e)).join('; ');
+      if (extras) msg += ' — ' + extras;
+    }
+    return msg;
+  } catch (e) {
+    return String(raw);
+  }
+}
+
 function formatGitHubAuthError(status, detail) {
+  const parsed = parseGitHubErrorDetail(detail);
+  const lower = parsed.toLowerCase();
   if (status === 401) {
-    return 'GitHub token invalid or expired. Paste a fresh PAT with Contents read/write, then try again.';
+    return 'GitHub token invalid or expired. Paste a fresh PAT, then try again.' + (parsed ? ` (${parsed})` : '');
   }
   if (status === 403) {
-    return 'GitHub denied access (403). Check token scopes / fine-grained Contents permission for this repo.';
+    if (lower.includes('rate limit')) {
+      return 'GitHub API rate limit hit. Wait a bit, then retry.' + (parsed ? ` (${parsed})` : '');
+    }
+    if (lower.includes('resource not accessible') || lower.includes('must have') || lower.includes('permission')) {
+      return 'Token lacks Contents write on MedStep. Use a classic PAT with `repo` (or `public_repo`), or a fine-grained PAT with Repository access → MedStep → Contents: Read and write.' + (parsed ? ` (${parsed})` : '');
+    }
+    return 'GitHub denied write access (403). Confirm this account can push to 4vpvjyx4wr-star/MedStep and the token has Contents write.' + (parsed ? ` (${parsed})` : '');
   }
-  return detail || `GitHub request failed (${status})`;
+  return parsed || `GitHub request failed (${status})`;
+}
+
+/**
+ * Confirm the token can push to this repo before attempting Contents writes.
+ * Surfaces scope / collaborator issues as clear errors instead of opaque 403s later.
+ */
+async function assertGitHubWriteAccess(token) {
+  token = normalizeGitHubToken(token);
+  if (!token) throw new Error('GitHub token missing');
+
+  const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}`;
+  const res = await fetch(url, { headers: githubAuthHeaders(token) });
+  const scopes = (res.headers.get('X-OAuth-Scopes') || '').toLowerCase();
+  let bodyText = '';
+  try { bodyText = await res.text(); } catch (e) { bodyText = ''; }
+
+  if (res.status === 401) {
+    throw new Error(formatGitHubAuthError(401, bodyText));
+  }
+  if (res.status === 404) {
+    throw new Error(`Token cannot see ${GITHUB_USER}/${GITHUB_REPO}. Grant this token access to that repository.`);
+  }
+  if (!res.ok) {
+    throw new Error(formatGitHubAuthError(res.status, bodyText));
+  }
+
+  let repo;
+  try { repo = JSON.parse(bodyText); } catch (e) {
+    throw new Error('Could not parse GitHub repo metadata');
+  }
+
+  const perms = repo.permissions || {};
+  if (perms.push === true || perms.admin === true || perms.maintain === true) {
+    return true;
+  }
+
+  // Classic PATs sometimes omit permissions in the payload; check scopes header.
+  if (scopes.includes('repo') || scopes.includes('public_repo')) {
+    return true;
+  }
+
+  throw new Error(
+    'This GitHub token can read but not push to MedStep. ' +
+    'Create a classic PAT with the `repo` scope, or a fine-grained PAT with Contents: Read and write on 4vpvjyx4wr-star/MedStep.' +
+    (scopes ? ` (token scopes: ${scopes})` : '')
+  );
 }
 
 async function getGitHubSha(path, token, branch) {
   const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${path}?ref=${branch}`;
   let res = await fetch(url, { headers: githubAuthHeaders(token) });
-  // An invalid token turns public-repo GETs into 401. Fall back to anonymous
+  // Invalid tokens make public-repo GETs return 401. Fall back to anonymous
   // so new-file uploads can still discover "file missing" (sha=null).
-  if ((res.status === 401 || res.status === 403) && token) {
+  // Do NOT treat 403 the same — that usually means a scope/permission problem.
+  if (res.status === 401 && token) {
     res = await fetch(url, { headers: githubAuthHeaders(null) });
   }
   if (res.status === 404) return null;
@@ -7314,7 +7401,7 @@ async function detectWritableBranch(token) {
   for (const branch of GITHUB_BRANCH_FALLBACKS) {
     const probeUrl = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/quizzes/manifest.json?ref=${branch}`;
     let res = await fetch(probeUrl, { headers: githubAuthHeaders(token) });
-    if ((res.status === 401 || res.status === 403) && token) {
+    if (res.status === 401 && token) {
       res = await fetch(probeUrl, { headers: githubAuthHeaders(null) });
     }
     if (res.ok) return branch;
@@ -7322,10 +7409,72 @@ async function detectWritableBranch(token) {
   return GITHUB_BRANCH_FALLBACKS[0] || 'main';
 }
 
+function normalizeQuizFilename(file) {
+  return String(file || '').replace(/^quizzes\//i, '').trim().toLowerCase();
+}
+
+function manifestWithoutQuiz(manifest, file) {
+  const target = normalizeQuizFilename(file);
+  return (Array.isArray(manifest) ? manifest : []).filter(
+    e => normalizeQuizFilename(e.file) !== target
+  );
+}
+
+/** List branch names for multi-branch deletes/updates. Falls back to known defaults. */
+async function listRepoBranches(token) {
+  const names = [];
+  let page = 1;
+  while (page <= 5) {
+    const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/branches?per_page=100&page=${page}`;
+    const res = await fetch(url, { headers: githubAuthHeaders(token) });
+    if (!res.ok) break;
+    const batch = await res.json();
+    if (!Array.isArray(batch) || !batch.length) break;
+    batch.forEach(b => {
+      if (b && b.name) names.push(b.name);
+    });
+    if (batch.length < 100) break;
+    page += 1;
+  }
+  if (names.length) return [...new Set(names)];
+  return GITHUB_BRANCH_FALLBACKS.slice();
+}
+
+/**
+ * On one branch: delete quizzes/<file> if present, and strip it from manifest.json if listed.
+ * Returns a short status object for toast reporting.
+ */
+async function deletePremadeQuizOnBranch(file, token, branch) {
+  const quizPath = `quizzes/${file}`;
+  let deletedFile = false;
+  const fileSha = await getGitHubSha(quizPath, token, branch);
+  if (fileSha) {
+    await deleteGitHubFile(quizPath, `Delete quiz: ${file}`, token, branch);
+    deletedFile = true;
+  }
+
+  const latest = await fetchManifestFromGitHub(token, branch);
+  if (!Array.isArray(latest) || !latest.length) {
+    return { branch, deletedFile, removedFromManifest: false, touched: deletedFile };
+  }
+  const filtered = manifestWithoutQuiz(latest, file);
+  const removedFromManifest = filtered.length !== latest.length;
+  if (removedFromManifest) {
+    await upsertGitHubFile(
+      'quizzes/manifest.json',
+      JSON.stringify(applyClassLectureOrder(filtered), null, 2),
+      `Remove ${file} from manifest`,
+      token,
+      branch
+    );
+  }
+  return { branch, deletedFile, removedFromManifest, touched: deletedFile || removedFromManifest };
+}
+
 async function fetchManifestFromGitHub(token, branch) {
   const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/quizzes/manifest.json?ref=${branch}`;
   let res = await fetch(url, { headers: githubAuthHeaders(token) });
-  if ((res.status === 401 || res.status === 403) && token) {
+  if (res.status === 401 && token) {
     res = await fetch(url, { headers: githubAuthHeaders(null) });
   }
   if (res.status === 404) return [];
@@ -7434,7 +7583,7 @@ async function deletePremadeQuiz(file) {
     return;
   }
 
-  const token = getStoredGitHubToken();
+  const token = normalizeGitHubToken(getStoredGitHubToken());
   if (!token) {
     showToast('❌ Enter your GitHub token in Add Quiz → Developer publish first');
     return;
@@ -7448,37 +7597,54 @@ async function deletePremadeQuiz(file) {
   }
 
   const title = entry.title || file;
-  if (!confirm('Permanently delete "' + title + '" from the official MedStep library on GitHub?\n\nThis removes quizzes/' + file + ' and updates manifest.json. It cannot be undone from the app.')) {
+  if (!confirm('Permanently delete "' + title + '" from the official MedStep library on GitHub?\n\nThis removes quizzes/' + file + ' and updates manifest.json on every branch that still has it. It cannot be undone from the app.')) {
     return;
   }
 
   premadeDeleteInFlight = true;
-  showToast('⏳ Deleting ' + title + '…');
+  showToast('⏳ Deleting ' + title + ' from all branches…');
   try {
     localStorage.setItem(LS_GITHUB_TOKEN, token);
-    const branch = await detectWritableBranch(token);
-    const quizPath = `quizzes/${file}`;
-    await deleteGitHubFile(
-      quizPath,
-      `Delete quiz: ${file}`,
-      token,
-      branch
-    );
-    const latest = await fetchManifestFromGitHub(token, branch);
-    const filtered = latest.filter(e => e.file !== file);
-    await upsertGitHubFile(
-      'quizzes/manifest.json',
-      JSON.stringify(applyClassLectureOrder(filtered), null, 2),
-      `Remove ${file} from manifest`,
-      token,
-      branch
-    );
-    stagedQuizzes = stagedQuizzes.filter(s => s.file !== file);
+    await assertGitHubWriteAccess(token);
+    const branches = await listRepoBranches(token);
+    const results = [];
+    for (const branch of branches) {
+      try {
+        const result = await deletePremadeQuizOnBranch(file, token, branch);
+        results.push(result);
+      } catch (branchErr) {
+        results.push({
+          branch,
+          touched: false,
+          error: branchErr.message || String(branchErr)
+        });
+      }
+    }
+
+    const touched = results.filter(r => r.touched);
+    const failed = results.filter(r => r.error);
+    if (!touched.length && failed.length) {
+      throw new Error(failed[0].error || 'Delete failed on all branches');
+    }
+    if (!touched.length) {
+      throw new Error('Quiz not found in quiz files or manifests on any branch');
+    }
+
+    // Drop from in-memory + staged immediately, then reload from GitHub
+    // (local quizzes/manifest.json may still be stale until you git pull).
+    libraryManifest = manifestWithoutQuiz(libraryManifest, file);
+    stagedQuizzes = stagedQuizzes.filter(s => normalizeQuizFilename(s.file) !== normalizeQuizFilename(file));
     renderStagingArea();
-    await refreshLibrary();
-    showToast('🗑️ Deleted "' + title + '" from MedStep library');
+    await refreshLibrary({ preferGitHub: true });
+
+    const branchNames = touched.map(r => r.branch).join(', ');
+    const manifestBranches = touched.filter(r => r.removedFromManifest).map(r => r.branch);
+    let msg = '🗑️ Deleted "' + title + '" on ' + branchNames;
+    if (manifestBranches.length) msg += ' (manifest updated)';
+    if (failed.length) msg += ' — some branches failed';
+    showToast(msg.slice(0, 160));
   } catch (e) {
-    showToast('❌ ' + (e.message || String(e)).slice(0, 140));
+    showToast('❌ ' + (e.message || String(e)).slice(0, 160));
   } finally {
     premadeDeleteInFlight = false;
   }
@@ -7490,19 +7656,27 @@ async function autoCommitToGitHub(options = {}) {
     showToast('❌ Generate content first');
     return false;
   }
-  const token = getStoredGitHubToken();
+  const token = normalizeGitHubToken(getStoredGitHubToken());
   if (!token) {
     if (!silentIfNoToken) showToast('❌ Enter GitHub token first');
     return false;
   }
 
   const tokenInput = document.getElementById('github-token-input');
-  if (tokenInput && !tokenInput.value.trim()) tokenInput.value = token;
+  if (tokenInput) tokenInput.value = token;
   localStorage.setItem(LS_GITHUB_TOKEN, token);
   // Verify for developer UI, but do not block publish when allowlist check fails —
   // repo write is enforced by GitHub on the PUT itself.
   await verifyDeveloperToken(token);
   if (typeof renderLibrary === 'function') renderLibrary();
+
+  try {
+    await assertGitHubWriteAccess(token);
+  } catch (e) {
+    showToast('❌ ' + (e.message || String(e)).slice(0, 180));
+    return false;
+  }
+
   const customMsg = (document.getElementById('github-commit-message')?.value || '').trim();
   const branch = await detectWritableBranch(token);
 
@@ -7540,7 +7714,7 @@ async function autoCommitToGitHub(options = {}) {
       );
       showToast('✅ Auto-published manifest changes to GitHub');
     }
-    await refreshLibrary();
+    await refreshLibrary({ preferGitHub: true });
     if (closeOnSuccess) closeAddQuizModal();
     return true;
   } catch(e) {
