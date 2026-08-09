@@ -1,0 +1,1282 @@
+[
+  {
+    "question": "A researcher isolates three antigen presenting cell types and measures their ability to activate naïve CD4 and CD8 T cells in a lymph node assay. One cell type robustly activates both naïve CD4 and CD8 T cells without being infected. Which cell type most likely produced these results?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast the 3 major type of APCs as it relates to T cell activation and immune responses.",
+    "options": [
+      {
+        "text": "Classical dendritic cell migrating into lymph node",
+        "isCorrect": true,
+        "rationale": "Dendritic cells are the most potent activators of naïve CD4 and CD8 T cells and can activate naïve CD8 cells without being infected via cross-presentation."
+      },
+      {
+        "text": "Activated macrophage resident in peripheral tissues",
+        "isCorrect": false,
+        "rationale": "Macrophages interact mainly with effector and memory CD4 T cells; they are less effective at priming naïve T cells. If the macrophage were migrating and expressing high costimulators it could prime naïve cells."
+      },
+      {
+        "text": "Activated B cell presenting antigen to helper T cells",
+        "isCorrect": false,
+        "rationale": "B cells present antigen to CD4 T cells after activation and are not the primary initiators of naïve CD8 responses. If B cells were engineered to express high costimulatory molecules and migrate to lymph node, they might prime naïve CD4 cells."
+      },
+      {
+        "text": "Epithelial cell expressing MHC class I molecules",
+        "isCorrect": false,
+        "rationale": "All nucleated cells express MHC I and can present to CD8 T cells but are poor activators of naïve T cells due to low costimulatory signals. If epithelial cells upregulated costimulators and migrated to lymph node, they could better activate naïve T cells."
+      },
+      {
+        "text": "Neutrophil loaded with antigen in peripheral blood",
+        "isCorrect": false,
+        "rationale": "Neutrophils are not classical APCs for naïve T cell activation. If neutrophils differentiated into dendritic-like cells with MHC II and costimulation, they could present antigen to T cells."
+      }
+    ]
+  },
+  {
+    "question": "Which structural feature distinguishes the molecules that present peptides derived from cytosolic proteins to CD8 T cells from those that present extracellular peptides to CD4 T cells?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Draw and compare the basic structures (only to the level of the chains—not domains) of MHC I vs MHC II.",
+    "options": [
+      {
+        "text": "Single polymorphic alpha chain plus nonpolymorphic beta2m",
+        "isCorrect": true,
+        "rationale": "MHC I consists of a large polymorphic α chain and a nonpolymorphic β2-microglobulin; it presents ~8–9 amino acid peptides to CD8 T cells."
+      },
+      {
+        "text": "Two polymorphic chains both spanning the membrane",
+        "isCorrect": false,
+        "rationale": "This describes MHC II which has two polymorphic transmembrane chains (α and β) presenting larger peptides to CD4 T cells; if both chains were nonpolymorphic this would be incorrect."
+      },
+      {
+        "text": "Nonpolymorphic alpha chain paired with beta chain",
+        "isCorrect": false,
+        "rationale": "MHC I alpha chain is polymorphic, not nonpolymorphic; if the alpha chain were nonpolymorphic this option would be correct for a different molecule."
+      },
+      {
+        "text": "GPI anchored single chain lacking transmembrane region",
+        "isCorrect": false,
+        "rationale": "MHC molecules are transmembrane proteins; a GPI-anchored single chain is not characteristic of MHC I or II. If an MHC were engineered with GPI anchor it would alter localization and function."
+      },
+      {
+        "text": "Secreted soluble heterodimer released from cell surface",
+        "isCorrect": false,
+        "rationale": "MHC molecules are membrane-bound when presenting peptides; secreted soluble heterodimers do not present peptides to T cells. If secreted forms bound TCRs in vivo they might modulate responses but not present antigen classically."
+      }
+    ]
+  },
+  {
+    "question": "A peptide of 9 amino acids derived from a cytosolic viral protein is detected bound to a host cell surface molecule that interacts with CD8. Which property of peptide binding to that host molecule is most consistent with the lecture description?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List & describe the characteristics of peptide binding to MHC molecules. Explain how this differs from the TCR interaction with the peptide and MHC.",
+    "options": [
+      {
+        "text": "Peptide contains anchor residues fitting into MHC pockets",
+        "isCorrect": true,
+        "rationale": "Peptides bound to MHC have anchor residues that fit into pockets of the MHC, enabling broad specificity; TCRs recognize both peptide and MHC but only one specific peptide:MHC complex."
+      },
+      {
+        "text": "Peptide is recognized only by TCR without MHC contact",
+        "isCorrect": false,
+        "rationale": "TCR recognition requires both peptide and MHC; if TCR could bind peptide alone without MHC it would contradict MHC restriction."
+      },
+      {
+        "text": "Peptide binding requires covalent linkage to MHC molecule",
+        "isCorrect": false,
+        "rationale": "Peptide binding to MHC is noncovalent; covalent linkage would be required to make this statement true."
+      },
+      {
+        "text": "Peptide must be glycosylated to fit into MHC groove",
+        "isCorrect": false,
+        "rationale": "Peptides presented by MHC are not required to be glycosylated; glycosylation would prevent fitting into the binding cleft unless specifically accommodated."
+      },
+      {
+        "text": "Peptide length is unrestricted and varies widely",
+        "isCorrect": false,
+        "rationale": "MHC I binds ~8–9 AA peptides and MHC II binds larger peptides (~10–30 AA); unrestricted length would be incorrect unless the MHC type allowed it."
+      }
+    ]
+  },
+  {
+    "question": "Which intracellular pathway is primarily responsible for loading peptides derived from newly synthesized cytosolic proteins onto the molecules that present to CD8 T cells?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast the processes for Ag presentation on MHC I versus MHC II.",
+    "options": [
+      {
+        "text": "Endogenous proteasome degradation with TAP transport to ER",
+        "isCorrect": true,
+        "rationale": "The endogenous pathway involves ubiquitination, proteasomal degradation, peptide transport by TAP into the ER, and loading onto MHC I for CD8 presentation."
+      },
+      {
+        "text": "Endosomal proteolysis with invariant chain and CLIP exchange",
+        "isCorrect": false,
+        "rationale": "This describes the exogenous MHC II pathway where invariant chain prevents peptide binding until CLIP is exchanged; if peptides originated extracellularly this would be correct."
+      },
+      {
+        "text": "Autophagy delivering cytosol directly to cell surface MHC",
+        "isCorrect": false,
+        "rationale": "Autophagy can contribute to antigen presentation but the canonical endogenous MHC I pathway uses proteasome and TAP; autophagy would need to route peptides into the ER to be correct."
+      },
+      {
+        "text": "Secretion of peptides then reuptake by neighboring cells",
+        "isCorrect": false,
+        "rationale": "Peptides are generally loaded intracellularly; secretion and reuptake is not the primary MHC I loading mechanism. If extracellular peptides were cross-presented by DCs this could be relevant."
+      },
+      {
+        "text": "Direct peptide loading at plasma membrane without ER transit",
+        "isCorrect": false,
+        "rationale": "MHC I peptide loading occurs in the ER linked to TAP and tapasin; direct plasma membrane loading would be incorrect unless an alternative pathway were demonstrated."
+      }
+    ]
+  },
+  {
+    "question": "A professional antigen presenting cell internalizes extracellular bacteria and loads derived peptides onto molecules that interact with CD4. Which intracellular chaperone prevents premature peptide binding during biosynthesis of these presenting molecules?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the processes for Ag presentation on MHC I versus MHC II.",
+    "options": [
+      {
+        "text": "Invariant chain occupying the peptide binding cleft during assembly",
+        "isCorrect": true,
+        "rationale": "The invariant chain (Ii) binds MHC II in the ER to block peptide binding until the complex reaches endosomal compartments where Ii is cleaved and CLIP exchanged."
+      },
+      {
+        "text": "Tapasin linking MHC II to TAP in the endoplasmic reticulum",
+        "isCorrect": false,
+        "rationale": "Tapasin links MHC I to TAP in the ER for peptide loading; it does not chaperone MHC II. If tapasin associated with MHC II experimentally, this option could be correct."
+      },
+      {
+        "text": "HLA-DM preventing peptide exchange in the Golgi apparatus",
+        "isCorrect": false,
+        "rationale": "HLA-DM facilitates exchange of CLIP for peptide in endosomal compartments, not preventing exchange in the Golgi. If HLA-DM acted in the Golgi this statement would be true."
+      },
+      {
+        "text": "β2-microglobulin stabilizing MHC II in the endosome",
+        "isCorrect": false,
+        "rationale": "β2-microglobulin is a nonpolymorphic component of MHC I, not MHC II. If β2m associated with MHC II it would make this option correct."
+      },
+      {
+        "text": "Proteasome trimming peptides before MHC II loading",
+        "isCorrect": false,
+        "rationale": "Proteasomes generate peptides for MHC I; MHC II peptides are generated in endosomal/lysosomal compartments. If proteasomal peptides were routed into endosomes this could be relevant."
+      }
+    ]
+  },
+  {
+    "question": "A dendritic cell engulfs apoptotic infected epithelial cells and subsequently activates naïve CD8 T cells in the draining lymph node. Which specialized process described in the lecture explains how extracellular antigens become presented on molecules that stimulate CD8 cells?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the basic process and significance of cross-presentation.",
+    "options": [
+      {
+        "text": "Cross-presentation transferring peptides from endosome to cytosol",
+        "isCorrect": true,
+        "rationale": "Cross-presentation allows DCs to move peptides from endolysosomal compartments into the cytosol where they enter the endogenous MHC I pathway, enabling activation of naïve CD8 T cells."
+      },
+      {
+        "text": "Classical exogenous pathway loading peptides in endosomes",
+        "isCorrect": false,
+        "rationale": "The classical exogenous pathway loads peptides onto MHC II for CD4 T cells; it does not explain presentation to CD8 cells unless cross-presentation occurs."
+      },
+      {
+        "text": "Autocrine secretion of antigenic peptides to neighboring DCs",
+        "isCorrect": false,
+        "rationale": "Secretion to neighboring DCs is not the canonical mechanism; cross-presentation specifically transfers peptides into the cytosol of the same DC. If peptides were secreted and taken up by another DC then that could indirectly prime CD8 cells."
+      },
+      {
+        "text": "Direct fusion of phagosome with plasma membrane exposing peptides",
+        "isCorrect": false,
+        "rationale": "Phagosome-plasma membrane fusion does not load peptides onto MHC I; cross-presentation requires cytosolic access and proteasomal processing. If such fusion delivered peptides to the ER, it might enable MHC I loading."
+      },
+      {
+        "text": "Endosomal peptide trimming by TAP before MHC II loading",
+        "isCorrect": false,
+        "rationale": "TAP transports peptides into the ER for MHC I; endosomal trimming before MHC II loading is not TAP-dependent. If TAP acted in endosomes this option could be correct."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best describes the genetic expression pattern that results in an individual expressing both maternal and paternal variants of MHC molecules on their cells?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the codominant expression of MHC genes in humans and the clinical significance of MHC polymorphism.",
+    "options": [
+      {
+        "text": "Co-dominant expression of both parental MHC alleles on cells",
+        "isCorrect": true,
+        "rationale": "Humans express both maternal and paternal MHC alleles (codominance), resulting in multiple HLA molecules on cells and contributing to transplant rejection and population-level diversity."
+      },
+      {
+        "text": "Monoallelic expression with random parental allele selection",
+        "isCorrect": false,
+        "rationale": "MHC genes are not monoallelically expressed; they are codominant. If MHC were monoallelically expressed, each cell would show only one parental allele."
+      },
+      {
+        "text": "Only maternal MHC alleles expressed due to imprinting",
+        "isCorrect": false,
+        "rationale": "MHC loci are not imprinted in this manner; both parental alleles are expressed. If imprinting occurred, only one parent's alleles would be present."
+      },
+      {
+        "text": "Paternal alleles silenced by methylation in all tissues",
+        "isCorrect": false,
+        "rationale": "There is no global paternal allele silencing for MHC; both alleles are expressed. If methylation silenced paternal alleles, codominance would not occur."
+      },
+      {
+        "text": "Expression limited to either class I or class II depending on parent",
+        "isCorrect": false,
+        "rationale": "Both parents contribute alleles for class I and class II; expression is not parent-specific. If inheritance were parent-specific, haplotype expression would differ."
+      }
+    ]
+  },
+  {
+    "question": "A transplant team is matching donor and recipient HLA alleles. Which property of MHC genes described in the lecture most directly explains why finding a perfect match is difficult?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define polymorphic gene and MHC haplotype.",
+    "options": [
+      {
+        "text": "Extensive polymorphism with thousands of different alleles",
+        "isCorrect": true,
+        "rationale": "MHC genes are highly polymorphic (thousands of alleles), making exact matches between unrelated individuals rare and complicating transplantation."
+      },
+      {
+        "text": "Low variability with only a few common alleles worldwide",
+        "isCorrect": false,
+        "rationale": "This contradicts the lecture; MHC genes are highly variable. If variability were low, matching would be easier."
+      },
+      {
+        "text": "Single gene encoding both class I and class II molecules",
+        "isCorrect": false,
+        "rationale": "Class I and II are encoded by multiple genes (HLA-A/B/C and HLA-DP/DQ/DR); a single gene would simplify matching. If such a gene existed, matching would be different."
+      },
+      {
+        "text": "MHC genes are located on different chromosomes in each person",
+        "isCorrect": false,
+        "rationale": "MHC genes are clustered on the same chromosome as a haplotype; if they were on different chromosomes inheritance patterns would differ."
+      },
+      {
+        "text": "Polymorphism limited to noncoding regions only",
+        "isCorrect": false,
+        "rationale": "Polymorphism affects coding regions altering peptide-binding properties; if polymorphism were only noncoding, functional diversity would be reduced."
+      }
+    ]
+  },
+  {
+    "question": "Which set lists the three major human class I molecules and the three major class II molecules encoded by the MHC loci as described in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the three major MHC class I molecules and three major MHC class II molecules in humans and the MHC genes that encode these proteins.",
+    "options": [
+      {
+        "text": "HLA-A, HLA-B, HLA-C; HLA-DP, HLA-DQ, HLA-DR",
+        "isCorrect": true,
+        "rationale": "Class I major molecules are HLA-A, -B, -C; class II major molecules are HLA-DP, -DQ, -DR as stated in the lecture."
+      },
+      {
+        "text": "HLA-DP, HLA-DQ, HLA-DR; HLA-A, HLA-B, HLA-C",
+        "isCorrect": false,
+        "rationale": "This reverses class I and II lists; if the question asked for class II first this ordering could be acceptable but the content must match class assignments."
+      },
+      {
+        "text": "HLA-A, HLA-B, HLA-DR; HLA-C, HLA-DP, HLA-DQ",
+        "isCorrect": false,
+        "rationale": "This mixes class I and II molecules incorrectly; correct grouping requires HLA-A/B/C as class I and HLA-DP/DQ/DR as class II."
+      },
+      {
+        "text": "HLA-DR, HLA-DQ, HLA-C; HLA-A, HLA-B, HLA-DP",
+        "isCorrect": false,
+        "rationale": "This option misassigns molecules to classes; correct assignments are fixed in the lecture. Changing class assignments would make it correct."
+      },
+      {
+        "text": "HLA-B, HLA-C, HLA-DP; HLA-A, HLA-DQ, HLA-DR",
+        "isCorrect": false,
+        "rationale": "This incorrectly mixes class I and II members; correct grouping is required for accuracy."
+      }
+    ]
+  },
+  {
+    "question": "A flow cytometry panel shows stable surface expression only when peptide is bound to MHC molecules. Which lecture statement explains why empty MHC molecules are not observed on the cell surface?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List & describe the characteristics of peptide binding to MHC molecules. Explain how this differs from the TCR interaction with the peptide and MHC.",
+    "options": [
+      {
+        "text": "Only peptide-loaded MHC complexes are stably expressed on surface",
+        "isCorrect": true,
+        "rationale": "MHC molecules require peptide binding for stable surface expression; empty MHC are unstable and not displayed, as described in the lecture."
+      },
+      {
+        "text": "Empty MHC molecules are secreted rather than surface expressed",
+        "isCorrect": false,
+        "rationale": "Empty MHC are unstable and degraded, not secreted; if empty MHC were secreted this option would be correct."
+      },
+      {
+        "text": "Peptide loading occurs only after MHC reaches plasma membrane",
+        "isCorrect": false,
+        "rationale": "Peptide loading occurs intracellularly (ER for MHC I, endosome for MHC II); if loading occurred at the membrane this statement would be true."
+      },
+      {
+        "text": "MHC molecules do not require peptides for stable expression",
+        "isCorrect": false,
+        "rationale": "This contradicts the lecture; peptide binding is required for stability. If MHC were intrinsically stable without peptide, this would be correct."
+      },
+      {
+        "text": "Surface MHC are continuously replaced regardless of peptide binding",
+        "isCorrect": false,
+        "rationale": "Surface MHC turnover occurs but stable expression depends on peptide binding; if turnover were independent of peptide this option would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a viral infection has increased proteasome activity in infected cells due to inflammatory cytokines. How does this change most directly affect antigen presentation to CD8 T cells according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the processes for Ag presentation on MHC I versus MHC II.",
+    "options": [
+      {
+        "text": "Increased generation of peptides for MHC I loading via TAP",
+        "isCorrect": true,
+        "rationale": "Pro-inflammatory cytokines enhance proteasome activity, increasing peptide generation for TAP transport into the ER and subsequent MHC I loading for CD8 presentation."
+      },
+      {
+        "text": "Enhanced invariant chain cleavage improving MHC II peptide exchange",
+        "isCorrect": false,
+        "rationale": "Invariant chain cleavage and HLA-DM-mediated exchange are part of MHC II processing and are not directly increased by proteasome activity; if endosomal proteases were upregulated this would be relevant."
+      },
+      {
+        "text": "Reduced peptide availability for MHC I due to proteasome inhibition",
+        "isCorrect": false,
+        "rationale": "Proteasome inhibition would reduce peptide generation; the stem states proteasome activity increases, so this option contradicts the scenario."
+      },
+      {
+        "text": "Direct loading of peptides onto MHC II in the ER",
+        "isCorrect": false,
+        "rationale": "MHC II peptides are loaded in endosomal compartments, not the ER; if MHC II were rerouted to the ER this could change loading location."
+      },
+      {
+        "text": "Secretion of antigenic peptides into extracellular space for B cells",
+        "isCorrect": false,
+        "rationale": "Proteasome activity generates intracellular peptides for MHC I; secretion into extracellular space is not the primary consequence. If peptides were secreted and captured by B cells this could be relevant."
+      }
+    ]
+  },
+  {
+    "question": "A vaccine developer wants to ensure robust CD4 T cell help by targeting the correct antigen processing pathway. Which antigen source and pathway pairing from the lecture will most directly load peptides onto molecules that stimulate CD4 cells?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the processes for Ag presentation on MHC I versus MHC II.",
+    "options": [
+      {
+        "text": "Extracellular protein internalized and processed in endosomal vesicles",
+        "isCorrect": true,
+        "rationale": "Exogenous antigens internalized into endosomes are processed and loaded onto MHC II for presentation to CD4 T cells, as described in the lecture."
+      },
+      {
+        "text": "Cytosolic viral protein degraded by proteasome then TAP transported",
+        "isCorrect": false,
+        "rationale": "This is the endogenous MHC I pathway for CD8 presentation; if the antigen were cross-presented it could stimulate CD8 cells via DCs."
+      },
+      {
+        "text": "Secreted peptide directly binding to TCR without MHC involvement",
+        "isCorrect": false,
+        "rationale": "TCR recognition requires peptide presented by MHC; direct binding without MHC is not the canonical mechanism. If superantigen-like binding occurred, this would differ."
+      },
+      {
+        "text": "Surface-bound antigen presented intact without internalization",
+        "isCorrect": false,
+        "rationale": "MHC II presentation requires internalization and processing; intact surface antigen without processing would not be loaded. If antigen fragments were shed and internalized, presentation could occur."
+      },
+      {
+        "text": "Nuclear protein exported and loaded onto MHC II in ER",
+        "isCorrect": false,
+        "rationale": "MHC II peptides are loaded in endosomal compartments, not the ER; nuclear proteins would need to be externalized and endocytosed to enter MHC II pathway."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s tumor expresses neoantigens derived from intracellular proteins but the tumor cells do not migrate to lymph nodes. According to lecture mechanisms, which cell type and process most likely enable priming of naïve CD8 T cells against these tumor antigens?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the basic process and significance of cross-presentation.",
+    "options": [
+      {
+        "text": "Dendritic cell cross-presenting tumor antigens to naïve CD8 T cells",
+        "isCorrect": true,
+        "rationale": "DCs can engulf tumor debris and cross-present peptides by transferring them from endosomes to the cytosol, enabling MHC I loading and priming of naïve CD8 T cells."
+      },
+      {
+        "text": "Activated macrophage presenting intact tumor proteins on MHC II",
+        "isCorrect": false,
+        "rationale": "Macrophages present mainly to CD4 T cells via MHC II; they are less effective at priming naïve CD8 cells. If macrophages cross-presented efficiently and migrated to lymph node, they could prime CD8 cells."
+      },
+      {
+        "text": "B cell internalization of tumor antigen and direct CD8 activation",
+        "isCorrect": false,
+        "rationale": "B cells present antigen to CD4 T cells and are poor activators of naïve CD8 cells. If B cells cross-presented and expressed high costimulation, they might activate CD8 cells."
+      },
+      {
+        "text": "Tumor cell migration to lymph node activating naïve CD8 directly",
+        "isCorrect": false,
+        "rationale": "Tumor cells rarely migrate to lymph nodes to prime naïve T cells; if they did and expressed costimulatory molecules, they could activate naïve CD8 cells."
+      },
+      {
+        "text": "Free extracellular peptides passively diffusing to thymus for priming",
+        "isCorrect": false,
+        "rationale": "Thymus is for T cell development, not peripheral priming; passive diffusion to thymus would not prime naïve peripheral CD8 T cells. If peptides reached lymph node APCs this could prime responses."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a genetic defect in TAP proteins shows impaired presentation of certain peptides. Based on lecture pathways, which class of MHC presentation is most directly affected and why?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast the processes for Ag presentation on MHC I versus MHC II.",
+    "options": [
+      {
+        "text": "MHC I presentation impaired due to reduced peptide transport into ER",
+        "isCorrect": true,
+        "rationale": "TAP transports cytosolic peptides into the ER for MHC I loading; TAP defects reduce peptide availability for MHC I, impairing CD8 T cell recognition."
+      },
+      {
+        "text": "MHC II presentation impaired due to endosomal peptide shortage",
+        "isCorrect": false,
+        "rationale": "MHC II peptides are generated in endosomes and do not rely on TAP; if endosomal proteases were defective this option would be correct."
+      },
+      {
+        "text": "Both MHC I and II equally impaired by TAP deficiency",
+        "isCorrect": false,
+        "rationale": "TAP specifically affects MHC I; MHC II uses invariant chain and HLA-DM in endosomes. If TAP also transported peptides into endosomes, both could be affected."
+      },
+      {
+        "text": "No effect on antigen presentation because proteasome compensates",
+        "isCorrect": false,
+        "rationale": "Proteasome generates peptides but TAP is required to move them into the ER; proteasome upregulation cannot bypass TAP. If alternative transporters compensated, this could be true."
+      },
+      {
+        "text": "Only cross-presentation is affected while classical pathways intact",
+        "isCorrect": false,
+        "rationale": "Cross-presentation can use TAP-dependent steps; however classical endogenous MHC I presentation is primarily TAP-dependent. If cross-presentation used TAP-independent routes exclusively, this option could be correct."
+      }
+    ]
+  },
+  {
+    "question": "A lab assay shows that HLA-DM activity is blocked in antigen presenting cells. Which step in the exogenous pathway will be directly disrupted and what is the expected consequence for CD4 T cell activation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast the processes for Ag presentation on MHC I versus MHC II.",
+    "options": [
+      {
+        "text": "Failure to exchange CLIP for peptide leading to reduced CD4 activation",
+        "isCorrect": true,
+        "rationale": "HLA-DM catalyzes exchange of CLIP for high-affinity peptides in MHC II compartments; blocking HLA-DM prevents peptide loading and reduces stable MHC II:peptide complexes for CD4 activation."
+      },
+      {
+        "text": "Impaired TAP transport reducing peptides for MHC I presentation",
+        "isCorrect": false,
+        "rationale": "TAP functions in MHC I peptide transport; HLA-DM blockade affects MHC II peptide exchange. If TAP were inhibited, MHC I presentation would be reduced."
+      },
+      {
+        "text": "Increased invariant chain synthesis enhancing MHC II surface display",
+        "isCorrect": false,
+        "rationale": "Invariant chain prevents premature peptide binding but is cleaved to CLIP; HLA-DM blockade would not increase invariant chain synthesis. If invariant chain were overexpressed, CLIP accumulation would worsen."
+      },
+      {
+        "text": "Proteasome hyperactivity causing excess MHC II peptides",
+        "isCorrect": false,
+        "rationale": "Proteasome activity relates to MHC I peptide generation; it does not directly increase MHC II peptides. If endosomal proteases increased, more peptides might be available for MHC II."
+      },
+      {
+        "text": "Enhanced cross-presentation compensating for MHC II failure",
+        "isCorrect": false,
+        "rationale": "Cross-presentation affects MHC I presentation of exogenous antigens; it does not compensate for defective MHC II peptide exchange. If cross-presentation induced CD8 help that indirectly aided CD4 responses, partial compensation might occur."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s HLA typing shows they express six class I molecules and six class II molecules. Which inheritance principle from the lecture explains this observation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the codominant expression of MHC genes in humans and the clinical significance of MHC polymorphism.",
+    "options": [
+      {
+        "text": "Co-dominant inheritance of maternal and paternal MHC haplotypes",
+        "isCorrect": true,
+        "rationale": "Each parent contributes a set of class I and II alleles (codominant expression), so individuals typically express six class I and six class II molecules from both haplotypes."
+      },
+      {
+        "text": "X-linked inheritance causing expression of six alleles",
+        "isCorrect": false,
+        "rationale": "MHC genes are on chromosome 6 and not X-linked; if they were X-linked inheritance patterns would differ."
+      },
+      {
+        "text": "Mitochondrial inheritance from mother only explaining six molecules",
+        "isCorrect": false,
+        "rationale": "Mitochondrial inheritance does not encode MHC; if MHC were mitochondrial this option would be relevant."
+      },
+      {
+        "text": "Somatic recombination generating six unique MHC molecules",
+        "isCorrect": false,
+        "rationale": "Somatic recombination occurs for antigen receptors, not MHC genes; if somatic recombination altered MHC expression this could change counts."
+      },
+      {
+        "text": "Random monoallelic expression producing six molecules total",
+        "isCorrect": false,
+        "rationale": "MHC genes are codominantly expressed, not monoallelically; if monoallelic expression occurred, fewer molecules would be present."
+      }
+    ]
+  },
+  {
+    "question": "A vaccine uses long peptides (20 amino acids) to elicit helper T cell responses. Based on lecture peptide length characteristics, which MHC class is most likely to present these peptides and to which T cell subset will they primarily bind?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List & describe the characteristics of peptide binding to MHC molecules. Explain how this differs from the TCR interaction with the peptide and MHC.",
+    "options": [
+      {
+        "text": "MHC II presenting to CD4 T cells due to larger peptide length",
+        "isCorrect": true,
+        "rationale": "MHC II binds larger peptides (~10–30 AA) derived from extracellular proteins and presents them to CD4 T cells, consistent with the lecture."
+      },
+      {
+        "text": "MHC I presenting to CD8 T cells because length is irrelevant",
+        "isCorrect": false,
+        "rationale": "MHC I typically binds ~8–9 AA peptides; peptide length matters. If MHC I accommodated longer peptides in a specific allele, this could be possible."
+      },
+      {
+        "text": "Peptides presented without MHC directly to B cells",
+        "isCorrect": false,
+        "rationale": "B cells recognize native antigen via BCR, not peptides presented without MHC to T cells. If peptides formed conformational epitopes recognized by BCRs, B cell activation could occur."
+      },
+      {
+        "text": "MHC I presenting to CD4 T cells via cross-dressing mechanism",
+        "isCorrect": false,
+        "rationale": "MHC I interacts with CD8, not CD4; cross-dressing transfers peptide:MHC complexes between cells but does not change coreceptor specificity. If CD4 expressed CD8-like molecules, interactions could differ."
+      },
+      {
+        "text": "No presentation occurs because peptides are too long for any MHC",
+        "isCorrect": false,
+        "rationale": "MHC II accommodates longer peptides; the statement is incorrect. If peptides exceeded MHC II binding capacity, trimming would be required for presentation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with autoimmune disease is found to carry HLA-DR3. According to lecture content, how can specific HLA alleles influence disease susceptibility?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the codominant expression of MHC genes in humans and the clinical significance of MHC polymorphism.",
+    "options": [
+      {
+        "text": "Certain alleles present self-peptides increasing autoimmune risk",
+        "isCorrect": true,
+        "rationale": "Specific HLA alleles can bind and present self-peptides more effectively, associating with increased susceptibility to autoimmune diseases like those linked to HLA-DR3."
+      },
+      {
+        "text": "Alleles prevent all antigen presentation reducing immune activity",
+        "isCorrect": false,
+        "rationale": "Alleles do not universally prevent presentation; they alter peptide-binding repertoires. If an allele abolished presentation broadly, immune deficits would result."
+      },
+      {
+        "text": "HLA alleles determine blood group antigens causing autoimmunity",
+        "isCorrect": false,
+        "rationale": "HLA alleles are distinct from blood group antigens; if blood group antigens were encoded by HLA loci this could link them."
+      },
+      {
+        "text": "Polymorphism only affects noncoding regions without functional impact",
+        "isCorrect": false,
+        "rationale": "Polymorphism affects peptide-binding regions and function; if polymorphism were only noncoding, disease associations would be unlikely."
+      },
+      {
+        "text": "HLA alleles are protective against autoimmunity in all cases",
+        "isCorrect": false,
+        "rationale": "Some alleles are protective while others increase risk; blanket protection is incorrect. If an allele consistently reduced self-peptide presentation, it could be protective."
+      }
+    ]
+  },
+  {
+    "question": "A scientist measures peptide lengths bound to MHC molecules on APCs and finds a distribution centered at 9 amino acids for one class and broader lengths up to 25 amino acids for another. Which pairing of MHC class to peptide length matches the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Draw and compare the basic structures (only to the level of the chains—not domains) of MHC I vs MHC II.",
+    "options": [
+      {
+        "text": "MHC I binds ~8–9 AA; MHC II binds ~10–30 AA peptides",
+        "isCorrect": true,
+        "rationale": "MHC I presents shorter peptides (~8–9 AA) to CD8 T cells while MHC II presents larger peptides (~10–30 AA) to CD4 T cells, as stated in the lecture."
+      },
+      {
+        "text": "MHC II binds ~8–9 AA; MHC I binds ~10–30 AA peptides",
+        "isCorrect": false,
+        "rationale": "This reverses the peptide length assignments; lecture specifies MHC I binds shorter peptides and MHC II binds longer peptides."
+      },
+      {
+        "text": "Both MHC I and II bind exclusively 8–9 AA peptides",
+        "isCorrect": false,
+        "rationale": "MHC II accommodates longer peptides; exclusive 8–9 AA binding contradicts lecture. If MHC II were truncated to bind short peptides, this could be true."
+      },
+      {
+        "text": "Neither MHC class binds peptides; they bind lipids instead",
+        "isCorrect": false,
+        "rationale": "Classical MHC I and II bind peptides; CD1 molecules present lipids. If the molecules were CD1 family members, lipid binding would be correct."
+      },
+      {
+        "text": "Peptide length is random and unrelated to MHC class",
+        "isCorrect": false,
+        "rationale": "Peptide length correlates with MHC class binding preferences; randomness would contradict lecture. If MHC binding pockets were identical, length might be less constrained."
+      }
+    ]
+  },
+  {
+    "question": "A lab finds that only peptide-loaded MHC molecules remain on the cell surface for days. Which lecture principle explains why peptide loading is required for stable surface expression?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List & describe the characteristics of peptide binding to MHC molecules. Explain how this differs from the TCR interaction with the peptide and MHC.",
+    "options": [
+      {
+        "text": "Peptide binding stabilizes MHC conformation for surface expression",
+        "isCorrect": true,
+        "rationale": "Only peptide-loaded MHC are stably expressed because peptide binding stabilizes the MHC structure; empty MHC are unstable and not displayed, per the lecture."
+      },
+      {
+        "text": "Peptide binding triggers immediate internalization of MHC molecules",
+        "isCorrect": false,
+        "rationale": "Peptide binding stabilizes and promotes surface expression rather than internalization. If binding signaled endocytosis, this option would be correct."
+      },
+      {
+        "text": "MHC molecules are constitutively stable regardless of peptide",
+        "isCorrect": false,
+        "rationale": "This contradicts the lecture; stability depends on peptide loading. If MHC had intrinsic stability without peptide, this would be true."
+      },
+      {
+        "text": "Surface expression depends solely on transcriptional upregulation",
+        "isCorrect": false,
+        "rationale": "While transcription affects MHC levels, peptide loading is required for stable surface display. If transcriptional control were the only factor, peptide loading would be irrelevant."
+      },
+      {
+        "text": "Peptide binding causes MHC to be secreted rather than surface bound",
+        "isCorrect": false,
+        "rationale": "Peptide-loaded MHC are presented on the surface, not secreted. If peptide binding triggered secretion, this option would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s dendritic cells show constitutive expression of MHC II and costimulatory proteins. According to the lecture, why does this phenotype make dendritic cells especially potent at activating naïve T cells?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the 3 major type of APCs as it relates to T cell activation and immune responses.",
+    "options": [
+      {
+        "text": "High MHC II and costimulators enable strong naïve T cell activation",
+        "isCorrect": true,
+        "rationale": "DCs constitutively express MHC II and costimulatory molecules, making them potent stimulators of naïve T cells by providing both signal 1 and signal 2."
+      },
+      {
+        "text": "Constitutive expression prevents antigen uptake and processing",
+        "isCorrect": false,
+        "rationale": "Constitutive expression does not prevent uptake; DCs both capture antigen and express costimulators. If expression blocked endocytosis, this would be true."
+      },
+      {
+        "text": "Only macrophages with inducible costimulators activate naïve T cells",
+        "isCorrect": false,
+        "rationale": "Macrophages can activate effector and memory T cells but are less effective for naïve T cells; if macrophages constitutively expressed high costimulators and migrated to lymph nodes, they could activate naïve T cells."
+      },
+      {
+        "text": "B cells are superior because they present native antigen to T cells",
+        "isCorrect": false,
+        "rationale": "B cells present antigen to CD4 T cells but are not the primary initiators of naïve T cell responses; if B cells were abundant in paracortex with high costimulation, they might be more effective."
+      },
+      {
+        "text": "Neutrophils expressing MHC II would be the most potent APCs",
+        "isCorrect": false,
+        "rationale": "Neutrophils are not classical APCs for naïve T cells; if neutrophils expressed MHC II and costimulators and migrated to lymph nodes, they could potentially activate naïve T cells."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s antigen presenting cells show accumulation of CLIP in MHC II grooves due to a mutation in HLA-DM. Which downstream effect on CD4 T cell responses is most consistent with the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast the processes for Ag presentation on MHC I versus MHC II.",
+    "options": [
+      {
+        "text": "Reduced CD4 T cell activation due to failure to load high affinity peptides",
+        "isCorrect": true,
+        "rationale": "HLA-DM facilitates exchange of CLIP for high-affinity peptides; its dysfunction leads to CLIP retention and fewer stable peptide:MHC II complexes, reducing CD4 activation."
+      },
+      {
+        "text": "Enhanced CD8 T cell activation from increased MHC I peptide loading",
+        "isCorrect": false,
+        "rationale": "HLA-DM affects MHC II peptide exchange, not MHC I loading; increased MHC I activation would require changes in proteasome or TAP function."
+      },
+      {
+        "text": "Unchanged T cell responses because CLIP is immunogenic itself",
+        "isCorrect": false,
+        "rationale": "CLIP occupies the groove and is not typically immunogenic; if CLIP were presented and recognized by TCRs, it could elicit responses."
+      },
+      {
+        "text": "Global loss of MHC expression on all nucleated cells",
+        "isCorrect": false,
+        "rationale": "HLA-DM mutation affects MHC II peptide exchange, not global MHC expression. If a mutation disrupted MHC biosynthesis, global loss could occur."
+      },
+      {
+        "text": "Increased antibody production independent of T cell help",
+        "isCorrect": false,
+        "rationale": "Reduced CD4 help would typically decrease T-dependent antibody responses; if B cells received alternative help, antibody production might persist."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s tumor cells express nonpolymorphic β2-microglobulin but show variable α chain alleles. Which lecture statement explains the polymorphic nature of MHC I genes and the role of β2-microglobulin?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define polymorphic gene and MHC haplotype.",
+    "options": [
+      {
+        "text": "MHC I alpha chains are polymorphic; β2-microglobulin is nonpolymorphic",
+        "isCorrect": true,
+        "rationale": "Human MHC I polymorphism resides in the α chain (HLA-A/B/C), while β2-microglobulin is nonpolymorphic and associates with the α chain for stability."
+      },
+      {
+        "text": "Both alpha and β2-microglobulin chains are highly polymorphic",
+        "isCorrect": false,
+        "rationale": "β2-microglobulin is nonpolymorphic; if β2m were polymorphic it would contribute to peptide-binding diversity."
+      },
+      {
+        "text": "Polymorphism only affects noncoding regulatory regions of MHC I",
+        "isCorrect": false,
+        "rationale": "Polymorphism affects coding regions of the α chain altering peptide binding; if polymorphism were only regulatory, peptide-binding differences would be minimal."
+      },
+      {
+        "text": "MHC I polymorphism is irrelevant for transplant compatibility",
+        "isCorrect": false,
+        "rationale": "Polymorphism is a major factor in transplant rejection; if polymorphism did not affect peptide presentation or TCR recognition, compatibility would be easier."
+      },
+      {
+        "text": "β2-microglobulin determines peptide specificity of MHC I",
+        "isCorrect": false,
+        "rationale": "Peptide specificity is determined by the polymorphic α chain pockets; β2m stabilizes the complex. If β2m altered pockets, it would affect specificity."
+      }
+    ]
+  },
+  {
+    "question": "A researcher compares antigen presentation in paracortex versus cortex of a lymph node. Based on lecture anatomy and function, where are naïve T cells most likely to encounter antigen presented by APCs?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Map the major components of the immune response and how they interact and influence each other.",
+    "options": [
+      {
+        "text": "Paracortex is T cell rich zone where APCs present antigen",
+        "isCorrect": true,
+        "rationale": "The paracortex of lymph nodes is T cell–rich and is the site where APCs present antigen to naïve T cells, as described in the lecture."
+      },
+      {
+        "text": "Cortex is primarily T cell zone for antigen presentation",
+        "isCorrect": false,
+        "rationale": "The cortex is B cell–rich (follicles); T cell interactions occur mainly in the paracortex. If cortical architecture were reversed, this would be true."
+      },
+      {
+        "text": "Medulla exclusively contains naïve T cells encountering antigen",
+        "isCorrect": false,
+        "rationale": "Medulla contains mixed cells including plasma cells and macrophages; naïve T cell priming occurs in paracortex. If medulla were T cell–rich, this could be correct."
+      },
+      {
+        "text": "Subcapsular sinus is primary site for naïve T cell activation",
+        "isCorrect": false,
+        "rationale": "Subcapsular sinus captures antigen and delivers it to follicles and paracortex but is not the main site of naïve T cell priming. If naïve T cells localized there, it might be relevant."
+      },
+      {
+        "text": "Germinal center is where naïve T cells are activated by APCs",
+        "isCorrect": false,
+        "rationale": "Germinal centers are B cell proliferation sites with Tfh help; naïve T cell priming occurs in paracortex. If germinal centers contained naïve T cells, this option could be true."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a viral infection has epithelial cells presenting viral peptides on MHC I but no costimulatory molecules. According to lecture principles, why are these infected epithelial cells unlikely to prime naïve CD8 T cells in lymph nodes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the 3 major type of APCs as it relates to T cell activation and immune responses.",
+    "options": [
+      {
+        "text": "Nucleated cells present MHC I but lack costimulation for naïve T cells",
+        "isCorrect": true,
+        "rationale": "While all nucleated cells present peptides on MHC I, they generally lack the costimulatory molecules required to activate naïve CD8 T cells; DCs provide necessary costimulation."
+      },
+      {
+        "text": "Epithelial cells cannot express MHC I molecules at all",
+        "isCorrect": false,
+        "rationale": "Epithelial cells do express MHC I; if they lacked MHC I expression entirely this option would be correct."
+      },
+      {
+        "text": "Only B cells can prime naïve CD8 T cells in lymph nodes",
+        "isCorrect": false,
+        "rationale": "B cells primarily present to CD4 T cells and are not the main priming cells for naïve CD8 T cells; if B cells cross-presented efficiently this could change."
+      },
+      {
+        "text": "Naïve CD8 T cells are activated in bone marrow not lymph nodes",
+        "isCorrect": false,
+        "rationale": "Naïve T cells are activated in secondary lymphoid organs like lymph nodes; if bone marrow served this role, the statement would be true."
+      },
+      {
+        "text": "Epithelial cells actively suppress T cell activation via cytokines",
+        "isCorrect": false,
+        "rationale": "Epithelial cells can produce cytokines but do not universally suppress T cell activation; if they secreted strong inhibitory signals, suppression could occur."
+      }
+    ]
+  },
+  {
+    "question": "A vaccine trial shows rapid secondary immune responses upon re-exposure to antigen. Based on lecture concepts, which cellular population primarily accounts for the faster and larger secondary response?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Map the major components of the immune response and how they interact and influence each other.",
+    "options": [
+      {
+        "text": "Memory B and T cells that persist after initial exposure",
+        "isCorrect": true,
+        "rationale": "Memory B and T cells persist after primary exposure and mediate faster, larger secondary immune responses upon re-encounter with antigen."
+      },
+      {
+        "text": "Naïve lymphocytes that have not previously encountered antigen",
+        "isCorrect": false,
+        "rationale": "Naïve lymphocytes mediate primary responses which are slower; if naïve cells were preactivated, they could respond faster."
+      },
+      {
+        "text": "Plasma cells producing low affinity antibodies only",
+        "isCorrect": false,
+        "rationale": "Plasma cells produce antibodies but memory cells drive rapid secondary responses; if plasma cells persisted at high levels, they could contribute to rapid responses."
+      },
+      {
+        "text": "Innate neutrophils providing antigen-specific memory",
+        "isCorrect": false,
+        "rationale": "Neutrophils are innate and not antigen-specific memory cells; if innate cells acquired adaptive-like memory, they might influence secondary responses."
+      },
+      {
+        "text": "Dendritic cells alone without lymphocyte involvement",
+        "isCorrect": false,
+        "rationale": "DCs present antigen but adaptive memory cells are required for rapid secondary responses; if DCs carried preformed antibodies, they could affect response kinetics."
+      }
+    ]
+  },
+  {
+    "question": "A scientist observes that certain amino acids within a peptide are critical for stable binding to an MHC molecule. According to the lecture, what term best describes these key residues and their role?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List & describe the characteristics of peptide binding to MHC molecules. Explain how this differs from the TCR interaction with the peptide and MHC.",
+    "options": [
+      {
+        "text": "Anchor residues that fit into pockets of the MHC binding cleft",
+        "isCorrect": true,
+        "rationale": "Anchor residues are specific peptide amino acids that fit into MHC pockets and stabilize peptide binding, a key feature of MHC peptide interactions described in the lecture."
+      },
+      {
+        "text": "Signal peptides directing MHC to the plasma membrane",
+        "isCorrect": false,
+        "rationale": "Signal peptides direct protein trafficking, not peptide anchoring in MHC grooves; if these residues mediated binding they would be anchors."
+      },
+      {
+        "text": "Hypervariable loops of TCR contacting peptide directly",
+        "isCorrect": false,
+        "rationale": "TCR hypervariable loops contact peptide and MHC but are not peptide residues; if peptide residues were hypervariable this would be a different concept."
+      },
+      {
+        "text": "Proteasomal cleavage sites determining peptide length",
+        "isCorrect": false,
+        "rationale": "Proteasomal cleavage influences peptide generation but anchor residues specifically stabilize MHC binding. If cleavage sites coincided with anchors, they might influence presentation."
+      },
+      {
+        "text": "Glycosylation sites required for MHC binding",
+        "isCorrect": false,
+        "rationale": "Glycosylation is not required for peptide binding to MHC; if glycosylation created anchor-like interactions, it could affect binding."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s dendritic cells are exposed to inflammatory cytokines during infection. According to the lecture, which antigen presentation features are most likely to be enhanced by this inflammatory milieu?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the 3 major type of APCs as it relates to T cell activation and immune responses.",
+    "options": [
+      {
+        "text": "Increased proteasome activity and upregulated costimulatory proteins",
+        "isCorrect": true,
+        "rationale": "Pro-inflammatory cytokines increase proteasome activity (more peptides for MHC I) and enhance expression of costimulatory molecules on DCs, improving T cell activation."
+      },
+      {
+        "text": "Decreased MHC expression and reduced antigen presentation",
+        "isCorrect": false,
+        "rationale": "Inflammation typically increases antigen presentation and costimulation; decreased MHC expression would reduce immune activation. If anti-inflammatory signals dominated, this could occur."
+      },
+      {
+        "text": "Exclusive presentation on MHC II with loss of MHC I function",
+        "isCorrect": false,
+        "rationale": "Inflammation enhances both MHC I and II pathways; exclusive MHC II presentation would require specific pathway inhibition. If MHC I were downregulated, this option might be true."
+      },
+      {
+        "text": "Immediate apoptosis of dendritic cells preventing T cell priming",
+        "isCorrect": false,
+        "rationale": "Inflammation generally activates DCs rather than inducing immediate apoptosis; if apoptosis occurred, priming would be impaired."
+      },
+      {
+        "text": "Secretion of CLIP into extracellular space to stimulate T cells",
+        "isCorrect": false,
+        "rationale": "CLIP occupies MHC II grooves intracellularly and is not secreted to stimulate T cells; if CLIP were presented extracellularly and recognized, it could alter responses."
+      }
+    ]
+  },
+  {
+    "question": "A clinician asks which APC type is most abundant in tissues and primarily interacts with effector and memory CD4 T cells to enhance killing of intracellular pathogens. Which APC from the lecture fits this description?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast the 3 major type of APCs as it relates to T cell activation and immune responses.",
+    "options": [
+      {
+        "text": "Activated macrophage abundant in tissues interacting with CD4 cells",
+        "isCorrect": true,
+        "rationale": "Activated macrophages are abundant in tissues and interact with effector and memory CD4 T cells, which in turn enhance macrophage killing of intracellular pathogens."
+      },
+      {
+        "text": "Classical dendritic cell primarily activating naïve T cells",
+        "isCorrect": false,
+        "rationale": "DCs are potent activators of naïve T cells and migrate to lymph nodes; if DCs were tissue-resident and abundant they might fit, but macrophages are the primary tissue APCs."
+      },
+      {
+        "text": "Resting B cell in follicles presenting antigen to CD8 cells",
+        "isCorrect": false,
+        "rationale": "B cells present antigen mainly to CD4 T cells and are not the primary tissue-resident APCs for effector interactions. If B cells were activated and in peripheral tissues, they could present antigen."
+      },
+      {
+        "text": "Neutrophil rapidly presenting antigen to naïve CD4 T cells",
+        "isCorrect": false,
+        "rationale": "Neutrophils are not classical APCs for naïve T cells; if neutrophils expressed MHC II and costimulators, they might present antigen."
+      },
+      {
+        "text": "Eosinophil presenting parasitic antigens to memory T cells",
+        "isCorrect": false,
+        "rationale": "Eosinophils have roles in parasitic responses but are not the abundant tissue APCs described; if eosinophils upregulated MHC II and costimulation, they could interact with T cells."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s antigen presenting cells show that peptides loaded onto MHC II never access the cytosol. Which lecture statement explains why MHC II peptides remain enclosed within vesicles?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the processes for Ag presentation on MHC I versus MHC II.",
+    "options": [
+      {
+        "text": "MHC II peptides are generated in endosomes and do not see cytosol",
+        "isCorrect": true,
+        "rationale": "Exogenous antigens are processed in endosomal/lysosomal vesicles and loaded onto MHC II within those compartments, so peptides do not access the cytosol."
+      },
+      {
+        "text": "MHC II peptides are transported through TAP from cytosol",
+        "isCorrect": false,
+        "rationale": "TAP transports peptides into the ER for MHC I, not MHC II. If TAP transported peptides into endosomes, this option could be relevant."
+      },
+      {
+        "text": "All peptides must transit the nucleus before MHC II loading",
+        "isCorrect": false,
+        "rationale": "Peptides do not transit the nucleus for MHC II loading; endosomal processing is key. If nuclear processing occurred, this would change the pathway."
+      },
+      {
+        "text": "MHC II loading occurs on the plasma membrane after secretion",
+        "isCorrect": false,
+        "rationale": "MHC II loading occurs intracellularly in endosomes; plasma membrane loading is not the canonical mechanism. If extracellular peptide exchange occurred, this might be possible."
+      },
+      {
+        "text": "Peptides for MHC II are synthesized only in mitochondria",
+        "isCorrect": false,
+        "rationale": "MHC II peptides derive from internalized extracellular proteins processed in endosomes, not mitochondrial synthesis. If mitochondrial peptides were exported and endocytosed, they could be presented."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a tumor receives a therapy that enhances dendritic cell cross-presentation. According to lecture mechanisms, which downstream effect on CD8 T cell responses is most likely and why?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the basic process and significance of cross-presentation.",
+    "options": [
+      {
+        "text": "Improved priming of naïve CD8 T cells against tumor antigens",
+        "isCorrect": true,
+        "rationale": "Enhancing DC cross-presentation increases transfer of exogenous tumor peptides into the cytosol for MHC I loading, improving priming of naïve CD8 T cells and CTL responses."
+      },
+      {
+        "text": "Selective activation of CD4 T cells without CD8 involvement",
+        "isCorrect": false,
+        "rationale": "Cross-presentation specifically enables MHC I presentation to CD8 T cells; if only MHC II pathways were enhanced, CD4 activation would predominate."
+      },
+      {
+        "text": "Global suppression of adaptive immunity due to DC exhaustion",
+        "isCorrect": false,
+        "rationale": "While excessive stimulation can exhaust DCs, targeted enhancement of cross-presentation aims to boost CD8 priming. If DCs became exhausted, responses could be suppressed."
+      },
+      {
+        "text": "Increased antibody production independent of T cell help",
+        "isCorrect": false,
+        "rationale": "Cross-presentation primarily affects CD8 T cell priming; antibody increases typically require CD4 help. If CD8 cells provided help indirectly, antibodies might rise."
+      },
+      {
+        "text": "Reduced MHC I expression on tumor cells causing immune evasion",
+        "isCorrect": false,
+        "rationale": "Enhancing DC cross-presentation does not reduce tumor MHC I expression; if tumor cells downregulated MHC I as an escape, CD8 recognition would be impaired."
+      }
+    ]
+  },
+  {
+    "question": "A geneticist describes an MHC haplotype as the set of MHC genes inherited together on one chromosome. Which lecture concept explains why haplotypes are inherited as sets rather than individual alleles independently?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define polymorphic gene and MHC haplotype.",
+    "options": [
+      {
+        "text": "MHC genes are closely linked on the same chromosome forming haplotypes",
+        "isCorrect": true,
+        "rationale": "MHC genes are clustered on chromosome 6 and are inherited together as haplotypes, explaining why sets of alleles are transmitted as a unit."
+      },
+      {
+        "text": "MHC genes assort independently due to distant chromosomal locations",
+        "isCorrect": false,
+        "rationale": "MHC genes are closely linked, not distant; if they were on different chromosomes they would assort independently."
+      },
+      {
+        "text": "Haplotypes arise from mitochondrial inheritance patterns",
+        "isCorrect": false,
+        "rationale": "Haplotypes refer to linked nuclear genes; mitochondrial inheritance does not create MHC haplotypes. If MHC were mitochondrial, this would differ."
+      },
+      {
+        "text": "Each MHC gene is on a separate chromosome causing independent inheritance",
+        "isCorrect": false,
+        "rationale": "MHC genes are clustered, not on separate chromosomes; if they were separate, haplotypes would not form."
+      },
+      {
+        "text": "Haplotypes result from somatic recombination in lymphocytes",
+        "isCorrect": false,
+        "rationale": "Somatic recombination affects antigen receptor genes, not germline MHC haplotypes. If somatic changes were heritable, haplotypes could vary."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s APCs present only one peptide per MHC molecule at a time. Which lecture statement best explains this observation and its implication for T cell recognition?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List & describe the characteristics of peptide binding to MHC molecules. Explain how this differs from the TCR interaction with the peptide and MHC.",
+    "options": [
+      {
+        "text": "Each MHC molecule binds a single peptide at a time for TCR specificity",
+        "isCorrect": true,
+        "rationale": "MHC molecules present one peptide per binding cleft at a time, and TCRs recognize specific peptide:MHC complexes, underlying MHC restriction."
+      },
+      {
+        "text": "MHC molecules present multiple peptides simultaneously to TCRs",
+        "isCorrect": false,
+        "rationale": "A single MHC cleft binds one peptide at a time; if MHC had multiple clefts, simultaneous presentation could occur."
+      },
+      {
+        "text": "TCRs recognize peptides independently of MHC molecules",
+        "isCorrect": false,
+        "rationale": "TCR recognition requires both peptide and MHC; peptide-alone recognition without MHC contradicts MHC restriction. If TCRs bound free peptides, this would be true."
+      },
+      {
+        "text": "Peptide binding to MHC is irreversible once formed",
+        "isCorrect": false,
+        "rationale": "Peptide:MHC interactions are noncovalent and can be exchanged; irreversible binding would prevent peptide turnover. If covalent bonds formed, irreversibility could occur."
+      },
+      {
+        "text": "MHC molecules present lipids rather than peptides to T cells",
+        "isCorrect": false,
+        "rationale": "Classical MHC I and II present peptides; CD1 molecules present lipids. If CD1 were measured, lipid presentation would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s dendritic cells present antigen to both naïve CD4 and CD8 T cells using traditional and special pathways. Which combination of pathways described in the lecture allows DCs to present both extracellular and intracellular antigens to appropriate T cell subsets?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the processes for Ag presentation on MHC I versus MHC II.",
+    "options": [
+      {
+        "text": "Exogenous pathway for MHC II and endogenous plus cross-presentation for MHC I",
+        "isCorrect": true,
+        "rationale": "DCs use the exogenous pathway to load MHC II for CD4 T cells and the endogenous pathway for MHC I; they also perform cross-presentation to load exogenous antigens onto MHC I."
+      },
+      {
+        "text": "Only exogenous pathway used for both MHC I and II presentation",
+        "isCorrect": false,
+        "rationale": "Exogenous pathway primarily loads MHC II; MHC I uses endogenous processing. If exogenous peptides were exclusively cross-presented into MHC I, this could be partially true."
+      },
+      {
+        "text": "Endogenous pathway exclusively handles all extracellular antigens",
+        "isCorrect": false,
+        "rationale": "Endogenous pathway processes cytosolic proteins for MHC I; extracellular antigens require endosomal processing unless cross-presented. If extracellular antigens entered cytosol directly, endogenous processing could apply."
+      },
+      {
+        "text": "MHC II uses TAP and tapasin for peptide loading in ER",
+        "isCorrect": false,
+        "rationale": "TAP and tapasin are involved in MHC I loading in the ER; MHC II uses invariant chain and HLA-DM in endosomes. If MHC II were rerouted to ER, TAP involvement might occur."
+      },
+      {
+        "text": "Peptides are loaded onto MHC at plasma membrane for both classes",
+        "isCorrect": false,
+        "rationale": "Peptide loading occurs intracellularly (ER for MHC I, endosomes for MHC II); plasma membrane loading is not canonical. If extracellular peptide exchange at membrane occurred, this could be relevant."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s HLA typing reveals extra DR beta chain alleles on one chromosome. According to the lecture, how can this genetic arrangement affect MHC II expression and peptide presentation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the codominant expression of MHC genes in humans and the clinical significance of MHC polymorphism.",
+    "options": [
+      {
+        "text": "Extra DR beta alleles can increase diversity of peptide presentation",
+        "isCorrect": true,
+        "rationale": "Some individuals have extra DR β chain alleles allowing additional α–β pairings and increased repertoire of peptides presented by MHC II, affecting immune responses."
+      },
+      {
+        "text": "Extra DR beta alleles always cause loss of MHC II surface expression",
+        "isCorrect": false,
+        "rationale": "Extra alleles do not inherently abolish expression; they may expand diversity. If extra alleles disrupted assembly, surface expression could be lost."
+      },
+      {
+        "text": "DR beta alleles determine class I peptide specificity directly",
+        "isCorrect": false,
+        "rationale": "DR β chains are part of MHC II and affect CD4 presentation; they do not determine MHC I specificity. If DR β influenced MHC I assembly, cross-talk would be required."
+      },
+      {
+        "text": "Extra alleles convert MHC II into nonpolymorphic molecules",
+        "isCorrect": false,
+        "rationale": "Extra alleles increase polymorphism rather than reduce it; conversion to nonpolymorphic molecules would require loss of variability."
+      },
+      {
+        "text": "Presence of extra alleles prevents codominant expression from both parents",
+        "isCorrect": false,
+        "rationale": "Codominant expression still occurs; extra alleles add to the set. If extra alleles suppressed one parental haplotype, codominance could be altered."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s dendritic cells capture free antigen entering the lymph node and present it to naïve B cells and T cells. According to the lecture, how can free antigen reach the spleen and which APCs capture it there?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Map the major components of the immune response and how they interact and influence each other.",
+    "options": [
+      {
+        "text": "Free antigen enters blood and is captured by splenic APCs",
+        "isCorrect": true,
+        "rationale": "Free antigen that enters the bloodstream can be captured by APCs in the spleen, enabling immune responses to blood-borne antigens as described in the lecture."
+      },
+      {
+        "text": "Free antigen is excluded from blood and remains only in lymphatics",
+        "isCorrect": false,
+        "rationale": "Some free antigen can enter blood and reach spleen; exclusion from blood is not absolute. If lymphatic drainage prevented blood entry, this would be true."
+      },
+      {
+        "text": "Only dendritic cells can capture antigen in the spleen",
+        "isCorrect": false,
+        "rationale": "Various splenic APCs including macrophages and DCs capture antigen; if only DCs were present, this option would be correct."
+      },
+      {
+        "text": "Antigen must be presented in bone marrow before splenic capture",
+        "isCorrect": false,
+        "rationale": "Bone marrow is not the primary site for peripheral antigen presentation; if antigen trafficking required bone marrow transit, this could be true."
+      },
+      {
+        "text": "Splenic capture occurs only for lipid antigens via CD1",
+        "isCorrect": false,
+        "rationale": "Splenic APCs capture diverse antigen types; CD1 presents lipids but is not the sole pathway. If only lipids entered circulation, CD1-mediated capture would dominate."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s T cell receptor recognizes a peptide only when presented by the patient’s own MHC allele. Which lecture concept describes this phenomenon and its implication for T cell specificity?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define “MHC restriction”.",
+    "options": [
+      {
+        "text": "MHC restriction: TCR recognizes peptide only with self MHC molecule",
+        "isCorrect": true,
+        "rationale": "MHC restriction means a TCR recognizes a specific peptide only when presented by that individual's MHC allele, reflecting TCR specificity for peptide:MHC complexes."
+      },
+      {
+        "text": "Cross-reactivity: TCR recognizes peptides across many MHC alleles",
+        "isCorrect": false,
+        "rationale": "Cross-reactivity refers to TCRs recognizing related peptides or peptide variants, not the strict self-MHC restriction described. If TCR bound multiple MHC alleles equally, cross-reactivity would apply."
+      },
+      {
+        "text": "Superantigen binding independent of peptide and MHC",
+        "isCorrect": false,
+        "rationale": "Superantigens bind TCR and MHC outside the peptide groove causing broad activation; this is distinct from MHC restriction. If superantigen were present, broad activation would occur."
+      },
+      {
+        "text": "Alloreactivity: TCR recognizes only donor MHC molecules",
+        "isCorrect": false,
+        "rationale": "Alloreactivity is T cell recognition of nonself MHC, often in transplant rejection; MHC restriction refers to self-MHC requirement. If TCR recognized donor MHC preferentially, alloreactivity would be relevant."
+      },
+      {
+        "text": "Antigenic drift causing loss of TCR recognition over time",
+        "isCorrect": false,
+        "rationale": "Antigenic drift alters peptide sequences and can reduce TCR recognition but is not the definition of MHC restriction. If peptide mutated, recognition might be lost."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s APCs show that only peptide-loaded MHC molecules are stably expressed and can present to multiple different TCRs. Which lecture characteristic explains how one MHC molecule can present peptides to multiple TCRs?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List & describe the characteristics of peptide binding to MHC molecules. Explain how this differs from the TCR interaction with the peptide and MHC.",
+    "options": [
+      {
+        "text": "Broad specificity allows MHC to bind diverse peptides for many TCRs",
+        "isCorrect": true,
+        "rationale": "MHC molecules have broad specificity enabling them to bind multiple different peptides, which can be recognized by different TCRs; TCRs themselves are peptide:MHC specific."
+      },
+      {
+        "text": "MHC molecules change sequence to match each TCR encountered",
+        "isCorrect": false,
+        "rationale": "MHC sequences are genetically encoded and do not change to match TCRs; if somatic mutation altered MHC, this could theoretically change specificity."
+      },
+      {
+        "text": "Each MHC binds only a single unique peptide for life",
+        "isCorrect": false,
+        "rationale": "MHC can bind multiple peptides over time; single-peptide binding would limit antigen presentation. If MHC were locked to one peptide, diversity would be reduced."
+      },
+      {
+        "text": "TCRs are broadly cross-reactive and ignore peptide differences",
+        "isCorrect": false,
+        "rationale": "TCRs can be cross-reactive but still require specific peptide:MHC interactions; if TCRs ignored peptide differences entirely, specificity would be lost."
+      },
+      {
+        "text": "Peptide binding to MHC is covalent enabling multiple TCR contacts",
+        "isCorrect": false,
+        "rationale": "Peptide:MHC binding is noncovalent; covalent binding would alter dynamics. If covalent bonds formed, peptide exchange would be prevented."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s APCs are engineered to lack invariant chain. According to the lecture, which immediate effect on MHC II peptide loading would you predict and why?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast the processes for Ag presentation on MHC I versus MHC II.",
+    "options": [
+      {
+        "text": "Premature binding of endogenous peptides to MHC II in ER disrupting presentation",
+        "isCorrect": true,
+        "rationale": "Invariant chain prevents peptides in the ER from binding MHC II; without it, endogenous peptides could occupy MHC II clefts, disrupting proper exogenous peptide loading and CD4 responses."
+      },
+      {
+        "text": "Enhanced CLIP exchange by HLA-DM improving peptide diversity",
+        "isCorrect": false,
+        "rationale": "Invariant chain absence reduces CLIP formation; HLA-DM acts to exchange CLIP for peptide, so enhanced exchange is not the expected immediate effect. If CLIP accumulated, HLA-DM activity would be more relevant."
+      },
+      {
+        "text": "Complete loss of MHC I expression on cell surface",
+        "isCorrect": false,
+        "rationale": "Invariant chain pertains to MHC II; MHC I expression depends on β2-microglobulin and peptide loading via TAP. If invariant chain loss indirectly affected MHC I assembly, this could occur."
+      },
+      {
+        "text": "Increased secretion of intact MHC II molecules into extracellular space",
+        "isCorrect": false,
+        "rationale": "Invariant chain absence affects intracellular trafficking and peptide loading, not secretion; if misfolded MHC II were secreted, this might be observed."
+      },
+      {
+        "text": "No change because invariant chain is redundant in APCs",
+        "isCorrect": false,
+        "rationale": "Invariant chain is essential for proper MHC II peptide loading; redundancy is not supported. If alternative chaperones compensated, no change might be seen."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s APCs present viral peptides on MHC I derived from cytosolic proteins. Which sequence of intracellular events from the lecture best describes this endogenous pathway from protein to surface presentation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the processes for Ag presentation on MHC I versus MHC II.",
+    "options": [
+      {
+        "text": "Ubiquitination, proteasomal degradation, TAP transport, ER loading",
+        "isCorrect": true,
+        "rationale": "Endogenous MHC I pathway involves ubiquitination of cytosolic proteins, proteasomal degradation to peptides, TAP-mediated transport into ER, and loading onto MHC I for surface expression."
+      },
+      {
+        "text": "Endocytosis, lysosomal degradation, invariant chain exchange, surface export",
+        "isCorrect": false,
+        "rationale": "This sequence describes the exogenous MHC II pathway; if peptides originated extracellularly this would be correct."
+      },
+      {
+        "text": "Direct secretion of peptides then passive diffusion into ER lumen",
+        "isCorrect": false,
+        "rationale": "Peptides are transported into the ER by TAP rather than by passive diffusion; if peptides were secreted and reimported, alternative transporters would be needed."
+      },
+      {
+        "text": "Nuclear processing followed by Golgi-dependent peptide loading",
+        "isCorrect": false,
+        "rationale": "MHC I peptide loading occurs in the ER, not via nuclear processing and Golgi loading. If nuclear peptides were exported to ER, this could be relevant."
+      },
+      {
+        "text": "Proteasomal degradation followed by endosomal peptide exchange",
+        "isCorrect": false,
+        "rationale": "Proteasomal peptides typically enter ER for MHC I; endosomal exchange pertains to MHC II. If proteasomal peptides were routed to endosomes, cross-presentation mechanisms might apply."
+      }
+    ]
+  }
+]
