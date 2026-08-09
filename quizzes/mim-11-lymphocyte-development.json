@@ -1,0 +1,1250 @@
+[
+  {
+    "question": "A developing B lymphocyte in the bone marrow first undergoes rearrangement of which gene segments to create a functional heavy chain variable region?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the mechanisms involved in generating receptor diversity for T & B cells and the genes involved in these processes.",
+    "options": [
+      {
+        "text": "V, D, and J segments recombine together",
+        "isCorrect": true,
+        "rationale": "Correct: Heavy chain variable regions are formed by V(D)J recombination combining V, D, and J segments as described in the lecture."
+      },
+      {
+        "text": "Only V and J segments recombine together",
+        "isCorrect": false,
+        "rationale": "Wrong: V and J recombination applies to light chains and TCR alpha; heavy chains require D segments as well."
+      },
+      {
+        "text": "Constant region gene segments recombine first",
+        "isCorrect": false,
+        "rationale": "Wrong: Constant regions are not recombined to form variable regions; they are downstream and not part of V(D)J recombination."
+      },
+      {
+        "text": "Somatic hypermutation creates initial diversity",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation occurs after antigen exposure in germinal centers, not during initial heavy chain rearrangement in development."
+      },
+      {
+        "text": "Class switch recombination forms variable region",
+        "isCorrect": false,
+        "rationale": "Wrong: Class switching changes constant regions of antibodies after activation and does not create the variable region; V(D)J recombination does."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme pair is directly responsible for initiating V(D)J recombination in developing lymphocytes?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the mechanisms involved in generating receptor diversity for T & B cells and the genes involved in these processes.",
+    "options": [
+      {
+        "text": "RAG-1 and RAG-2 proteins initiate recombination",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states that RAG-1 and RAG-2 (encoded by rag1 and rag2) form the VDJ recombinase initiating recombination."
+      },
+      {
+        "text": "TdT and exonucleases initiate recombination",
+        "isCorrect": false,
+        "rationale": "Wrong: TdT and exonucleases modify junctions (junctional diversity) but do not initiate the cleavage and recombination step."
+      },
+      {
+        "text": "DNA polymerase and ligase initiate recombination",
+        "isCorrect": false,
+        "rationale": "Wrong: DNA polymerases fill in overhangs during junctional processing; they do not perform the initial RAG-mediated cleavage."
+      },
+      {
+        "text": "AIRE and thymic epithelial cells initiate recombination",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE is involved in thymic expression of tissue antigens for tolerance, not V(D)J recombination."
+      },
+      {
+        "text": "Activation-induced cytidine deaminase initiates recombination",
+        "isCorrect": false,
+        "rationale": "Wrong: AID mediates somatic hypermutation and class switching in activated B cells, not initial V(D)J recombination."
+      }
+    ]
+  },
+  {
+    "question": "During B cell development, which surface immunoglobulin is expressed on immature B cells as the primary membrane-bound receptor tested for self-reactivity?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the different stages of development for T cells & B cells and the associated surface proteins expressed.",
+    "options": [
+      {
+        "text": "Membrane-bound IgM is expressed on immature B cells",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture indicates immature B cells express membrane IgM (BCR) and are tested for self-reactivity during negative selection."
+      },
+      {
+        "text": "Membrane-bound IgD is expressed on immature B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: IgD appears on mature naive B cells along with IgM; immature B cells primarily express membrane IgM."
+      },
+      {
+        "text": "Secreted IgG is expressed on immature B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Secreted IgG is produced by activated plasma cells after antigen exposure, not by immature B cells in bone marrow."
+      },
+      {
+        "text": "Pre-BCR heavy chain only is expressed on immature B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: The pre-BCR (heavy chain with surrogate light chain) is expressed at the pre-B cell stage, not the immature B cell stage."
+      },
+      {
+        "text": "Membrane-bound IgA is expressed on immature B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: IgA isotype expression occurs after class switching in mucosal responses, not on immature bone marrow B cells."
+      }
+    ]
+  },
+  {
+    "question": "Which process during V(D)J recombination adds non-templated nucleotides at junctions to increase diversity?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the mechanisms involved in generating receptor diversity for T & B cells and the genes involved in these processes.",
+    "options": [
+      {
+        "text": "Terminal deoxynucleotidyl transferase adds nucleotides",
+        "isCorrect": true,
+        "rationale": "Correct: TdT adds non-templated nucleotides at junctions (junctional diversity) as described in the lecture."
+      },
+      {
+        "text": "Exonuclease trimming adds nucleotides at junctions",
+        "isCorrect": false,
+        "rationale": "Wrong: Exonucleases remove nucleotides; they do not add nucleotides at junctions."
+      },
+      {
+        "text": "DNA ligase adds nucleotides at junctions",
+        "isCorrect": false,
+        "rationale": "Wrong: DNA ligase joins DNA ends but does not add non-templated nucleotides; TdT performs addition."
+      },
+      {
+        "text": "Somatic hypermutation adds nucleotides at junctions",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation introduces point mutations after activation, not non-templated nucleotide addition during recombination."
+      },
+      {
+        "text": "Class switch recombination adds nucleotides at junctions",
+        "isCorrect": false,
+        "rationale": "Wrong: Class switching changes constant regions and involves recombination, but TdT-mediated N-additions are specific to V(D)J junctions."
+      }
+    ]
+  },
+  {
+    "question": "A thymocyte that fails to bind any self-MHC molecules on cortical epithelial cells will most likely undergo which fate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define positive & negative selection and explain the significance of these processes on immune function.",
+    "options": [
+      {
+        "text": "Apoptosis from failure of positive selection",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains DP thymocytes that do not recognize self-MHC undergo death by neglect (apoptosis) due to failed positive selection."
+      },
+      {
+        "text": "Differentiation into regulatory T cells instead",
+        "isCorrect": false,
+        "rationale": "Wrong: nTreg development requires low-affinity recognition of self-MHC:self-peptide, not absence of MHC recognition."
+      },
+      {
+        "text": "Immediate export to peripheral lymphoid tissues",
+        "isCorrect": false,
+        "rationale": "Wrong: Only thymocytes that pass positive and negative selection exit as naive T cells; failures are not exported."
+      },
+      {
+        "text": "Undergo receptor editing to change TCR specificity",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing is described for B cells; T cells do not typically undergo receptor editing in the thymus."
+      },
+      {
+        "text": "Become double negative thymocytes again",
+        "isCorrect": false,
+        "rationale": "Wrong: Thymocytes do not revert to earlier DN stages after failing positive selection; they undergo apoptosis."
+      }
+    ]
+  },
+  {
+    "question": "Which thymic cell type expresses tissue-restricted antigens to enable deletion of self-reactive T cells from diverse tissues?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the function of aire and how it contributes to central tolerance during T cell development.",
+    "options": [
+      {
+        "text": "Medullary thymic epithelial cells express AIRE-driven antigens",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states medullary thymic epithelial cells express AIRE, turning on tissue-specific genes to present peripheral antigens for negative selection."
+      },
+      {
+        "text": "Cortical thymic epithelial cells express AIRE-driven antigens",
+        "isCorrect": false,
+        "rationale": "Wrong: Cortical epithelial cells mediate positive selection and do not express AIRE-driven tissue-restricted antigens for negative selection."
+      },
+      {
+        "text": "Thymic macrophages express AIRE-driven antigens",
+        "isCorrect": false,
+        "rationale": "Wrong: Macrophages present antigens but AIRE expression is specific to medullary thymic epithelial cells."
+      },
+      {
+        "text": "Dendritic cells express AIRE-driven antigens",
+        "isCorrect": false,
+        "rationale": "Wrong: Dendritic cells present antigens in the medulla but AIRE is a transcription factor expressed by mTECs, not DCs."
+      },
+      {
+        "text": "Bone marrow stromal cells express AIRE-driven antigens",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE expression is a thymic medullary epithelial cell feature; bone marrow stromal cells do not perform this role."
+      }
+    ]
+  },
+  {
+    "question": "A patient with mutations in rag1 and rag2 presents with absent B and T cells. Which diagnosis from the lecture best matches this presentation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the function of the rag1 and rag2 genes and the clinical significance of these genes.",
+    "options": [
+      {
+        "text": "Severe combined immunodeficiency due to RAG deficiency",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes that rag1/rag2 mutations can cause SCID with deficiency of both B and T cells."
+      },
+      {
+        "text": "Autoimmune polyendocrinopathy from AIRE mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE mutations cause APECED with autoimmunity, not combined absence of B and T cells."
+      },
+      {
+        "text": "Omenn syndrome from somatic hypermutation defect",
+        "isCorrect": false,
+        "rationale": "Wrong: Omenn syndrome is linked to RAG defects but is not caused by somatic hypermutation defects; the option misattributes mechanism."
+      },
+      {
+        "text": "Selective IgA deficiency from class switching defect",
+        "isCorrect": false,
+        "rationale": "Wrong: Selective IgA deficiency affects IgA production only and does not cause absent B and T cells as seen with RAG mutations."
+      },
+      {
+        "text": "DiGeorge syndrome from thymic aplasia",
+        "isCorrect": false,
+        "rationale": "Wrong: DiGeorge causes T cell deficiency due to thymic aplasia but typically not combined absence of both B and T cells from RAG mutations."
+      }
+    ]
+  },
+  {
+    "question": "Which mechanism during B cell negative selection allows an autoreactive immature B cell a chance to change its specificity before deletion?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define positive & negative selection and explain the significance of these processes on immune function.",
+    "options": [
+      {
+        "text": "Receptor editing permits light chain rearrangement redo",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes receptor editing as a do-over where autoreactive immature B cells rearrange light chains to alter specificity."
+      },
+      {
+        "text": "Anergy permanently activates autoreactive B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Anergy renders autoreactive B cells unresponsive rather than providing a chance to change specificity."
+      },
+      {
+        "text": "Class switching removes autoreactivity from receptors",
+        "isCorrect": false,
+        "rationale": "Wrong: Class switching changes constant regions and does not alter antigen specificity or rescue autoreactive immature B cells."
+      },
+      {
+        "text": "Somatic hypermutation corrects autoreactive receptors",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation occurs after activation in germinal centers and is not a mechanism during central negative selection in bone marrow."
+      },
+      {
+        "text": "Allelic exclusion allows expression of alternate heavy chain",
+        "isCorrect": false,
+        "rationale": "Wrong: Allelic exclusion ensures single receptor specificity; it does not provide a mechanism to edit autoreactive receptors during negative selection."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best defines allelic exclusion in developing lymphocytes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define allelic exclusion and explain its significance.",
+    "options": [
+      {
+        "text": "Only one allele produces functional antigen receptor per cell",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains allelic exclusion ensures a single BCR or TCR specificity by expressing only one allele's product in each lymphocyte."
+      },
+      {
+        "text": "Both alleles are expressed equally in each lymphocyte",
+        "isCorrect": false,
+        "rationale": "Wrong: This contradicts allelic exclusion; both alleles are not expressed equally for antigen receptor genes."
+      },
+      {
+        "text": "Allelic exclusion refers to exclusion of self-reactive alleles",
+        "isCorrect": false,
+        "rationale": "Wrong: Allelic exclusion concerns expression of one allele per cell, not selective exclusion based on self-reactivity."
+      },
+      {
+        "text": "Allelic exclusion allows multiple receptor types per cell",
+        "isCorrect": false,
+        "rationale": "Wrong: It prevents multiple receptor types by ensuring only one allele's receptor is expressed."
+      },
+      {
+        "text": "Allelic exclusion occurs only after antigen exposure",
+        "isCorrect": false,
+        "rationale": "Wrong: Allelic exclusion is established during development before antigen exposure, not after activation."
+      }
+    ]
+  },
+  {
+    "question": "A double-positive thymocyte that binds strongly to self-peptide presented on medullary APCs will most likely undergo which outcome?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define positive & negative selection and explain the significance of these processes on immune function.",
+    "options": [
+      {
+        "text": "Apoptosis from negative selection due to high affinity",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states strong TCR recognition of self-peptide:MHC in the medulla triggers negative selection and apoptosis."
+      },
+      {
+        "text": "Differentiation into naive peripheral T cell instead",
+        "isCorrect": false,
+        "rationale": "Wrong: Strong self-reactivity leads to deletion, not maturation into naive T cells which require low-affinity recognition."
+      },
+      {
+        "text": "Conversion into a B cell lineage in thymus",
+        "isCorrect": false,
+        "rationale": "Wrong: Thymocytes do not convert into B cells; lineage commitment is established earlier and not reversed by strong self-recognition."
+      },
+      {
+        "text": "Export as regulatory T cell with high affinity",
+        "isCorrect": false,
+        "rationale": "Wrong: Regulatory T cell development is associated with intermediate/low-affinity recognition, not the highest affinity that induces deletion."
+      },
+      {
+        "text": "Undergo receptor editing to change TCR specificity",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing is a B cell mechanism; T cells rarely undergo receptor editing in the thymus."
+      }
+    ]
+  },
+  {
+    "question": "Which developmental stage in the thymus is characterized by expression of both CD4 and CD8 and active TCR alpha chain rearrangement?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the different stages of development for T cells & B cells and the associated surface proteins expressed.",
+    "options": [
+      {
+        "text": "Double positive thymocyte expresses CD4 and CD8",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture identifies DP thymocytes as CD4+CD8+ and undergoing TCR alpha (VJ) rearrangement."
+      },
+      {
+        "text": "Double negative thymocyte expresses CD4 and CD8",
+        "isCorrect": false,
+        "rationale": "Wrong: DN thymocytes lack CD4 and CD8; they rearrange the beta chain first, not the alpha chain."
+      },
+      {
+        "text": "Single positive thymocyte expresses neither coreceptor",
+        "isCorrect": false,
+        "rationale": "Wrong: SP thymocytes express either CD4 or CD8, not neither; DP stage is the CD4+CD8+ stage."
+      },
+      {
+        "text": "Progenitor T cell in blood expresses CD4 and CD8",
+        "isCorrect": false,
+        "rationale": "Wrong: Progenitor T cells entering the thymus are not CD4+CD8+; they become DN before rearrangement."
+      },
+      {
+        "text": "Mature naive T cell in periphery expresses both coreceptors",
+        "isCorrect": false,
+        "rationale": "Wrong: Mature naive T cells express either CD4 or CD8 (single positive), not both."
+      }
+    ]
+  },
+  {
+    "question": "Which combination of processes produces the greatest theoretical diversity of antigen receptors according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the mechanisms involved in generating receptor diversity for T & B cells and the genes involved in these processes.",
+    "options": [
+      {
+        "text": "Combinatorial plus junctional diversity together",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture emphasizes both combinatorial (V(D)J segment choices) and junctional (nucleotide addition/subtraction) diversity generate vast receptor repertoires."
+      },
+      {
+        "text": "Somatic hypermutation alone after activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation increases diversity post-activation but is not the primary source of initial receptor diversity during development."
+      },
+      {
+        "text": "Class switching alone changes antigen specificity",
+        "isCorrect": false,
+        "rationale": "Wrong: Class switching alters constant regions without changing antigen-binding specificity and thus does not create receptor diversity."
+      },
+      {
+        "text": "Allelic exclusion alone creates receptor diversity",
+        "isCorrect": false,
+        "rationale": "Wrong: Allelic exclusion restricts diversity by ensuring single receptor expression per cell; it does not generate diversity."
+      },
+      {
+        "text": "AIRE-driven tissue antigen expression alone",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE exposes self-antigens for tolerance, not a mechanism to create receptor diversity."
+      }
+    ]
+  },
+  {
+    "question": "A bone marrow stromal cell provides which essential support to developing B cells that allows progression through developmental stages?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the different stages of development for T cells & B cells and the associated surface proteins expressed.",
+    "options": [
+      {
+        "text": "Cytokines and growth factors that provide survival signals",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes stromal cells nurture developing B cells via cytokines and growth factors, permitting progression if signals are received."
+      },
+      {
+        "text": "Presentation of foreign antigen for positive selection",
+        "isCorrect": false,
+        "rationale": "Wrong: Bone marrow stromal cells do not present foreign antigen for positive selection; positive selection is a thymic process for T cells."
+      },
+      {
+        "text": "Expression of AIRE to induce central tolerance",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE expression occurs in medullary thymic epithelial cells, not bone marrow stromal cells."
+      },
+      {
+        "text": "Secretion of immunoglobulin to test BCR function",
+        "isCorrect": false,
+        "rationale": "Wrong: Developing B cells express membrane BCRs for testing; stromal cells do not secrete immunoglobulin to test function."
+      },
+      {
+        "text": "Induction of class switch recombination in immature B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Class switching occurs after activation in peripheral lymphoid tissues, not in bone marrow during development."
+      }
+    ]
+  },
+  {
+    "question": "Which event distinguishes the pre-B cell stage from the pro-B cell stage in bone marrow development?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the different stages of development for T cells & B cells and the associated surface proteins expressed.",
+    "options": [
+      {
+        "text": "Expression of pre-BCR with rearranged heavy chain",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture indicates pre-B cells express a pre-BCR (heavy chain with surrogate light chain) after successful heavy chain rearrangement."
+      },
+      {
+        "text": "Initiation of heavy chain V(D)J recombination",
+        "isCorrect": false,
+        "rationale": "Wrong: Heavy chain rearrangement occurs in pro-B cells; pre-B cells have completed heavy chain rearrangement and begin light chain rearrangement."
+      },
+      {
+        "text": "Surface expression of mature IgD and IgM",
+        "isCorrect": false,
+        "rationale": "Wrong: IgD appears on mature naive B cells; immature/pre-B cells do not express IgD on the surface."
+      },
+      {
+        "text": "Negative selection against self-reactivity begins",
+        "isCorrect": false,
+        "rationale": "Wrong: Negative selection/testing for self-reactivity occurs at the immature B cell stage after light chain rearrangement and BCR expression."
+      },
+      {
+        "text": "Loss of CD19 and CD20 expression from cell surface",
+        "isCorrect": false,
+        "rationale": "Wrong: CD19 and CD20 are markers maintained through pro-B to naive B stages; loss is not the distinguishing event between pro-B and pre-B."
+      }
+    ]
+  },
+  {
+    "question": "A researcher isolates thymocytes and finds a population expressing CD3 and CD8 but not CD4. Which developmental stage do these cells represent?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the different stages of development for T cells & B cells and the associated surface proteins expressed.",
+    "options": [
+      {
+        "text": "Single positive CD8 thymocytes after selection",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes SP thymocytes as CD3+ and either CD4+ or CD8+; CD3+CD8+CD4- indicates SP CD8 cells post-selection."
+      },
+      {
+        "text": "Double positive thymocytes before selection",
+        "isCorrect": false,
+        "rationale": "Wrong: DP thymocytes express both CD4 and CD8; the isolated cells lack CD4 and are therefore SP, not DP."
+      },
+      {
+        "text": "Double negative thymocytes prior to rearrangement",
+        "isCorrect": false,
+        "rationale": "Wrong: DN thymocytes lack both CD4 and CD8; the cells in question express CD8, so they are not DN."
+      },
+      {
+        "text": "Peripheral naive CD4 T cells in circulation",
+        "isCorrect": false,
+        "rationale": "Wrong: Peripheral naive CD4 T cells express CD4, not CD8; the isolated cells are CD8+ and thymic in origin."
+      },
+      {
+        "text": "Pre-T cells expressing surrogate pre-TCR complex",
+        "isCorrect": false,
+        "rationale": "Wrong: Pre-T cells are typically DN or early DP and express pre-TCR during beta selection; they do not present as CD3+CD8+CD4- SP cells."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why most double-positive thymocytes die during development?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define positive & negative selection and explain the significance of these processes on immune function.",
+    "options": [
+      {
+        "text": "Failure to recognize self-MHC leads to apoptosis",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains many DP thymocytes fail positive selection because they cannot interact with self-MHC and die by neglect."
+      },
+      {
+        "text": "Excessive receptor editing causes cell death",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing is a B cell mechanism; DP thymocyte death is primarily due to failed positive selection, not editing."
+      },
+      {
+        "text": "AIRE expression in cortex induces apoptosis",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE is expressed in medullary epithelial cells and is involved in negative selection, not the cortical DP death from failed positive selection."
+      },
+      {
+        "text": "Somatic hypermutation in thymus creates nonfunctional TCRs",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation does not occur in thymic development; DP death is due to lack of MHC recognition."
+      },
+      {
+        "text": "Class switch recombination disrupts TCR expression",
+        "isCorrect": false,
+        "rationale": "Wrong: Class switching is a B cell process and does not affect TCR expression or DP thymocyte survival."
+      }
+    ]
+  },
+  {
+    "question": "A patient with AIRE gene mutation develops multiple autoimmune endocrinopathies. Which central tolerance failure described in the lecture explains this phenotype?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the function of aire and how it contributes to central tolerance during T cell development.",
+    "options": [
+      {
+        "text": "Failure to present peripheral antigens in thymus",
+        "isCorrect": true,
+        "rationale": "Correct: AIRE enables medullary thymic epithelial cells to express tissue-specific antigens; loss prevents deletion of T cells reactive to peripheral tissues, causing autoimmunity."
+      },
+      {
+        "text": "Defective V(D)J recombination in thymocytes",
+        "isCorrect": false,
+        "rationale": "Wrong: V(D)J recombination defects affect receptor generation broadly; AIRE mutation specifically impairs thymic expression of peripheral antigens, not recombination."
+      },
+      {
+        "text": "Impaired positive selection in thymic cortex",
+        "isCorrect": false,
+        "rationale": "Wrong: Positive selection ensures MHC restriction; AIRE mutations affect negative selection in the medulla by limiting tissue antigen presentation."
+      },
+      {
+        "text": "Excessive receptor editing of autoreactive T cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing is a B cell mechanism; AIRE mutation leads to failed deletion, not increased editing."
+      },
+      {
+        "text": "Failure of bone marrow stromal cells to support B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Bone marrow stromal support pertains to B cell development; AIRE mutation affects thymic central tolerance and T cells."
+      }
+    ]
+  },
+  {
+    "question": "A neonate presents with recurrent infections and laboratory testing shows absent B and T lymphocytes but normal NK cells. Genetic testing reveals a nonfunctional RAG1. Which therapeutic approach targets the underlying developmental defect described in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the function of the rag1 and rag2 genes and the clinical significance of these genes.",
+    "options": [
+      {
+        "text": "Hematopoietic stem cell transplantation to restore recombination",
+        "isCorrect": true,
+        "rationale": "Correct: HSCT can replace defective hematopoietic progenitors, restoring RAG-mediated V(D)J recombination and reconstituting B and T cell development."
+      },
+      {
+        "text": "Administration of intravenous immunoglobulin to correct RAG defect",
+        "isCorrect": false,
+        "rationale": "Wrong: IVIG provides passive antibodies but does not correct the genetic recombination defect; HSCT addresses the root cause."
+      },
+      {
+        "text": "Thymic transplant to provide AIRE-expressing epithelium",
+        "isCorrect": false,
+        "rationale": "Wrong: Thymic transplant would not restore RAG function in hematopoietic progenitors; the primary defect is in lymphocyte recombination machinery."
+      },
+      {
+        "text": "Gene therapy to increase TdT expression in progenitors",
+        "isCorrect": false,
+        "rationale": "Wrong: TdT adds junctional diversity but cannot substitute for RAG-mediated cleavage; increasing TdT would not restore V(D)J recombination."
+      },
+      {
+        "text": "Long-term prophylactic antibiotics to induce receptor rearrangement",
+        "isCorrect": false,
+        "rationale": "Wrong: Antibiotics prevent infections but do not correct the developmental recombination defect causing absent B and T cells."
+      }
+    ]
+  },
+  {
+    "question": "A laboratory assay shows a developing B cell with successful heavy chain VDJ rearrangement but no light chain rearrangement yet. Which surface receptor would you expect this cell to express according to the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the different stages of development for T cells & B cells and the associated surface proteins expressed.",
+    "options": [
+      {
+        "text": "Pre-BCR complex with heavy chain and surrogate light chain",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes pre-B cells expressing a pre-BCR composed of rearranged heavy chain paired with surrogate light chain (pre-BCR) before light chain rearrangement."
+      },
+      {
+        "text": "Mature BCR with IgM and IgD on membrane",
+        "isCorrect": false,
+        "rationale": "Wrong: Mature BCR with IgM and IgD appears after successful light chain rearrangement and maturation; pre-B cells express pre-BCR only."
+      },
+      {
+        "text": "No receptor expression until light chain forms",
+        "isCorrect": false,
+        "rationale": "Wrong: Pre-B cells do express a pre-BCR (heavy chain with surrogate light chain) before light chain rearrangement, so 'no receptor' is incorrect."
+      },
+      {
+        "text": "Secreted IgM antibody released into marrow",
+        "isCorrect": false,
+        "rationale": "Wrong: Secretion of IgM occurs after activation and differentiation into plasma cells, not at the pre-B cell stage in bone marrow."
+      },
+      {
+        "text": "Surface IgA as the first expressed receptor",
+        "isCorrect": false,
+        "rationale": "Wrong: IgA is produced after class switching in mucosal responses, not expressed during early B cell development in bone marrow."
+      }
+    ]
+  },
+  {
+    "question": "A thymocyte with low-affinity recognition of self-peptide:MHC in the cortex is most likely to follow which developmental pathway described in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define positive & negative selection and explain the significance of these processes on immune function.",
+    "options": [
+      {
+        "text": "Survival and maturation into single positive T cell",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture indicates low-affinity recognition during positive selection allows DP thymocytes to survive and mature into SP CD4 or CD8 T cells."
+      },
+      {
+        "text": "Immediate deletion by negative selection in cortex",
+        "isCorrect": false,
+        "rationale": "Wrong: Negative selection primarily occurs in the medulla and targets high-affinity self-reactive thymocytes, not low-affinity cortical interactions."
+      },
+      {
+        "text": "Conversion into B lineage cells within thymus",
+        "isCorrect": false,
+        "rationale": "Wrong: Lineage conversion to B cells does not occur in the thymus; T cell progenitors remain T lineage."
+      },
+      {
+        "text": "Induction of somatic hypermutation in thymocyte TCR",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation is a B cell process after activation and does not occur in thymic T cell development."
+      },
+      {
+        "text": "Receptor editing of TCR alpha chain to increase affinity",
+        "isCorrect": false,
+        "rationale": "Wrong: While limited TCR editing can occur, the lecture emphasizes survival and maturation for low-affinity interactions rather than editing."
+      }
+    ]
+  },
+  {
+    "question": "A patient sample shows immature B cells that bind ubiquitous soluble self-antigen with high affinity. According to the lecture, which outcome is most likely without intervention?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define positive & negative selection and explain the significance of these processes on immune function.",
+    "options": [
+      {
+        "text": "Deletion of autoreactive immature B cells by apoptosis",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists deletion (death) as an outcome for autoreactive immature B cells that recognize ubiquitous self antigens with high affinity."
+      },
+      {
+        "text": "Differentiation into plasma cells secreting autoantibody",
+        "isCorrect": false,
+        "rationale": "Wrong: Autoreactive immature B cells are typically deleted, anergic, or edited during central tolerance rather than differentiating into plasma cells."
+      },
+      {
+        "text": "Immediate class switching to IgG to reduce autoreactivity",
+        "isCorrect": false,
+        "rationale": "Wrong: Class switching does not reduce autoreactivity and occurs after activation in peripheral tissues, not as a central tolerance mechanism."
+      },
+      {
+        "text": "Export to periphery as naive B cell despite autoreactivity",
+        "isCorrect": false,
+        "rationale": "Wrong: Autoreactive immature B cells that strongly bind self are usually eliminated or edited, not exported as naive B cells."
+      },
+      {
+        "text": "Conversion into regulatory B cell that suppresses immunity",
+        "isCorrect": false,
+        "rationale": "Wrong: Regulatory B cell differentiation is not the described central tolerance outcome for high-affinity autoreactive immature B cells in bone marrow."
+      }
+    ]
+  },
+  {
+    "question": "Which molecular process during V(D)J recombination can remove nucleotides at segment junctions and thereby alter the reading frame?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the roles of VDJ recombinase, TdT, exonucleases, and DNA polymerases and under what circumstances these are expressed by cells.",
+    "options": [
+      {
+        "text": "Exonuclease trimming removes nucleotides at junctions",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists exonucleases as removing nucleotides from segment junctions, contributing to junctional diversity and potential frameshifts."
+      },
+      {
+        "text": "TdT removes nucleotides at junctions during recombination",
+        "isCorrect": false,
+        "rationale": "Wrong: TdT adds non-templated nucleotides; it does not remove nucleotides."
+      },
+      {
+        "text": "DNA polymerase removes nucleotides from overhangs",
+        "isCorrect": false,
+        "rationale": "Wrong: DNA polymerases add nucleotides to fill gaps or extend overhangs rather than remove nucleotides."
+      },
+      {
+        "text": "RAG proteins remove nucleotides at junctions",
+        "isCorrect": false,
+        "rationale": "Wrong: RAG-1/2 mediate cleavage and hairpin formation; exonucleases perform nucleotide removal during processing."
+      },
+      {
+        "text": "AID removes nucleotides during initial recombination",
+        "isCorrect": false,
+        "rationale": "Wrong: AID acts in somatic hypermutation and class switching in activated B cells, not in nucleotide removal during V(D)J recombination."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the role of TdT expression timing during lymphocyte development as presented in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the roles of VDJ recombinase, TdT, exonucleases, and DNA polymerases and under what circumstances these are expressed by cells.",
+    "options": [
+      {
+        "text": "TdT is expressed during heavy and light chain rearrangement",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture indicates TdT is expressed during V(D)J recombination in developing B and T cells, contributing to junctional diversity during chain rearrangements."
+      },
+      {
+        "text": "TdT is only expressed after antigen exposure in germinal centers",
+        "isCorrect": false,
+        "rationale": "Wrong: TdT functions during development in bone marrow and thymus, not during germinal center responses after antigen exposure."
+      },
+      {
+        "text": "TdT expression is restricted to mature plasma cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Mature plasma cells do not express TdT; TdT is a developmental enzyme in progenitor lymphocytes."
+      },
+      {
+        "text": "TdT expression occurs exclusively in thymic epithelial cells",
+        "isCorrect": false,
+        "rationale": "Wrong: TdT is expressed in developing lymphocytes (thymocytes and pro-B/pre-B cells), not thymic epithelial cells."
+      },
+      {
+        "text": "TdT expression prevents V(D)J recombination entirely",
+        "isCorrect": false,
+        "rationale": "Wrong: TdT enhances junctional diversity by adding nucleotides; it does not prevent recombination."
+      }
+    ]
+  },
+  {
+    "question": "A student asks which loci undergo VJ recombination rather than VDJ recombination during lymphocyte development. Which response aligns with the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the mechanisms involved in generating receptor diversity for T & B cells and the genes involved in these processes.",
+    "options": [
+      {
+        "text": "Light chain and TCR alpha loci undergo VJ recombination",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states light chains (BCR) and TCR alpha chains rearrange via VJ recombination without D segments."
+      },
+      {
+        "text": "Heavy chain and TCR beta loci undergo VJ recombination",
+        "isCorrect": false,
+        "rationale": "Wrong: Heavy chains and TCR beta chains use VDJ recombination including D segments; VJ applies to light chains and TCR alpha."
+      },
+      {
+        "text": "All antigen receptor loci undergo VJ recombination only",
+        "isCorrect": false,
+        "rationale": "Wrong: Not all loci use VJ; heavy chains and TCR beta use VDJ recombination with D segments."
+      },
+      {
+        "text": "Constant region genes undergo VJ recombination",
+        "isCorrect": false,
+        "rationale": "Wrong: Constant regions are not rearranged by VJ recombination; variable regions are formed by V(D)J or VJ recombination."
+      },
+      {
+        "text": "AIRE-regulated genes undergo VJ recombination",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE controls thymic expression of tissue antigens for tolerance, unrelated to VJ recombination of receptor genes."
+      }
+    ]
+  },
+  {
+    "question": "Which surface markers are characteristic of a naive B cell that has exited the bone marrow according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the different stages of development for T cells & B cells and the associated surface proteins expressed.",
+    "options": [
+      {
+        "text": "CD19, CD20, CD21 with membrane IgM and IgD",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists naive B cells as CD19+ CD20+ CD21+ and expressing membrane IgM and IgD."
+      },
+      {
+        "text": "CD3, CD4, CD8 with TCR complex on surface",
+        "isCorrect": false,
+        "rationale": "Wrong: CD3, CD4, CD8 are T cell markers; naive B cells express CD19/CD20/CD21 and BCRs, not T cell markers."
+      },
+      {
+        "text": "CD19, CD20 only with secreted IgM in serum",
+        "isCorrect": false,
+        "rationale": "Wrong: Naive B cells express membrane-bound IgM and IgD, not secreted IgM; CD21 is also a naive B cell marker."
+      },
+      {
+        "text": "CD34 and CD19 with pre-BCR expression",
+        "isCorrect": false,
+        "rationale": "Wrong: CD34 is a stem/progenitor marker and pre-BCR is expressed at pre-B stage; naive B cells are CD34- and express mature BCRs."
+      },
+      {
+        "text": "CD21 only with class-switched IgG on membrane",
+        "isCorrect": false,
+        "rationale": "Wrong: Naive B cells express IgM and IgD, not class-switched IgG on the membrane; CD21 is present but not alone."
+      }
+    ]
+  },
+  {
+    "question": "A thymocyte that recognizes self-peptide:MHC with intermediate affinity and activates FOXP3 is most likely to become which cell type per the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define positive & negative selection and explain the significance of these processes on immune function.",
+    "options": [
+      {
+        "text": "Natural regulatory T cell developing from DP thymocyte",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes that DP thymocytes with low/intermediate affinity interactions can survive and activate FOXP3, entering the nTreg pathway."
+      },
+      {
+        "text": "Naive CD8 T cell exported to periphery",
+        "isCorrect": false,
+        "rationale": "Wrong: High-affinity interactions favor deletion; low-affinity class I recognition leads to CD8 SP cells, not FOXP3+ nTreg differentiation."
+      },
+      {
+        "text": "Anergic peripheral T cell that cannot respond",
+        "isCorrect": false,
+        "rationale": "Wrong: Anergy is a peripheral tolerance mechanism; FOXP3+ nTregs are thymically derived regulatory cells from intermediate-affinity interactions."
+      },
+      {
+        "text": "Bystander B cell activation in thymic medulla",
+        "isCorrect": false,
+        "rationale": "Wrong: B cell activation does not occur in the thymic medulla; the described outcome pertains to T cell lineage and FOXP3 induction."
+      },
+      {
+        "text": "Conversion into double negative thymocyte again",
+        "isCorrect": false,
+        "rationale": "Wrong: Thymocytes do not revert to DN stage; intermediate-affinity interactions lead to regulatory T cell differentiation, not reversion."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why junctional diversity contributes more to receptor variability than combinatorial diversity alone, per the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the mechanisms involved in generating receptor diversity for T & B cells and the genes involved in these processes.",
+    "options": [
+      {
+        "text": "Nucleotide addition/subtraction at junctions is nearly unlimited",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture emphasizes junctional diversity from nucleotide addition/subtraction (TdT, exonucleases) yields nearly unlimited variability beyond segment combinatorics."
+      },
+      {
+        "text": "Only a few V, D, J segments exist limiting diversity",
+        "isCorrect": false,
+        "rationale": "Wrong: While segment numbers are finite (combinatorial diversity limited), the key point is junctional modifications expand diversity greatly."
+      },
+      {
+        "text": "Combinatorial diversity alone creates infinite receptor types",
+        "isCorrect": false,
+        "rationale": "Wrong: Combinatorial diversity is limited by the finite number of gene segments; it does not create nearly unlimited diversity alone."
+      },
+      {
+        "text": "AIRE increases junctional diversity in thymus",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE affects antigen presentation for tolerance, not the molecular junctional processes that create receptor diversity."
+      },
+      {
+        "text": "Allelic exclusion multiplies junctional diversity",
+        "isCorrect": false,
+        "rationale": "Wrong: Allelic exclusion restricts expression to one allele per cell and does not increase junctional diversity."
+      }
+    ]
+  },
+  {
+    "question": "A patient sample shows B cells expressing membrane IgM but not IgD. According to the lecture, which developmental stage do these cells most likely represent?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the different stages of development for T cells & B cells and the associated surface proteins expressed.",
+    "options": [
+      {
+        "text": "Immature B cells undergoing negative selection in marrow",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture indicates immature B cells express membrane IgM only and are tested for self-reactivity (negative selection) in bone marrow."
+      },
+      {
+        "text": "Naive peripheral B cells that have completed maturation",
+        "isCorrect": false,
+        "rationale": "Wrong: Naive B cells express both IgM and IgD on the membrane; IgM-only expression indicates immature stage."
+      },
+      {
+        "text": "Pre-B cells expressing pre-BCR heavy chain only",
+        "isCorrect": false,
+        "rationale": "Wrong: Pre-B cells express pre-BCR (heavy chain with surrogate light chain) and do not display mature membrane IgM."
+      },
+      {
+        "text": "Activated plasma cells secreting IgM antibodies",
+        "isCorrect": false,
+        "rationale": "Wrong: Plasma cells secrete antibodies and typically downregulate surface BCR; membrane IgM-only expression is characteristic of immature B cells."
+      },
+      {
+        "text": "Memory B cells expressing class-switched receptors",
+        "isCorrect": false,
+        "rationale": "Wrong: Memory B cells often express class-switched isotypes (e.g., IgG) and not membrane IgM-only typical of immature cells."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following is the most appropriate next step for a clinician who suspects a newborn has SCID due to RAG deficiency, based on lecture implications for diagnosis and management?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the function of the rag1 and rag2 genes and the clinical significance of these genes.",
+    "options": [
+      {
+        "text": "Refer for hematopoietic stem cell transplantation evaluation",
+        "isCorrect": true,
+        "rationale": "Correct: Given RAG-related SCID causes absent B and T cells, HSCT is the definitive therapy to restore functional lymphopoiesis as discussed in lecture clinical implications."
+      },
+      {
+        "text": "Start long-term oral antibiotics as definitive therapy",
+        "isCorrect": false,
+        "rationale": "Wrong: Antibiotics may prevent infections temporarily but do not correct the underlying lymphocyte development defect; HSCT addresses the root cause."
+      },
+      {
+        "text": "Administer high-dose corticosteroids to boost immunity",
+        "isCorrect": false,
+        "rationale": "Wrong: Corticosteroids are immunosuppressive and would worsen SCID; they are not an appropriate therapy for RAG deficiency."
+      },
+      {
+        "text": "Provide thymic epithelial cell transplant to restore T cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Thymic transplant does not correct hematopoietic RAG defects; HSCT replaces defective progenitors to restore both B and T cells."
+      },
+      {
+        "text": "Begin immediate live attenuated vaccinations to stimulate immunity",
+        "isCorrect": false,
+        "rationale": "Wrong: Live vaccines are contraindicated in SCID and would be dangerous; they do not treat the developmental recombination defect."
+      }
+    ]
+  },
+  {
+    "question": "Which lecture-described marker combination identifies a pro-B cell actively rearranging heavy chain genes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the different stages of development for T cells & B cells and the associated surface proteins expressed.",
+    "options": [
+      {
+        "text": "CD19 positive, CD20 positive, CD34 variable expression",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists pro-B cells as CD19+ CD20+ with CD34 present on early progenitors and undergoing heavy chain rearrangement with RAG expression."
+      },
+      {
+        "text": "CD3 positive, CD4 positive, CD8 negative expression",
+        "isCorrect": false,
+        "rationale": "Wrong: CD3/CD4/CD8 are T cell markers; pro-B cells express B lineage markers like CD19/CD20, not T cell markers."
+      },
+      {
+        "text": "CD21 positive with membrane IgM and IgD expression",
+        "isCorrect": false,
+        "rationale": "Wrong: CD21 and IgD are markers of mature naive B cells; pro-B cells do not express IgM/IgD."
+      },
+      {
+        "text": "CD34 negative with secreted IgM production",
+        "isCorrect": false,
+        "rationale": "Wrong: Progenitor cells often express CD34; secreted IgM is produced by plasma cells, not pro-B cells."
+      },
+      {
+        "text": "AIRE expression with medullary epithelial phenotype",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE is expressed by medullary thymic epithelial cells, unrelated to pro-B cell surface markers."
+      }
+    ]
+  },
+  {
+    "question": "A researcher measures TCR gene rearrangements and finds many nonfunctional reading frames. According to the lecture, what is the most likely fate of thymocytes with nonfunctional TCRs?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the mechanisms involved in generating receptor diversity for T & B cells and the genes involved in these processes.",
+    "options": [
+      {
+        "text": "Cell death because nonfunctional receptors fail selection",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes many rearrangements produce nonfunctional proteins and such developing lymphocytes die if they cannot produce a functional receptor."
+      },
+      {
+        "text": "Immediate differentiation into regulatory T cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Regulatory T cell differentiation requires specific low-affinity recognition, not nonfunctional receptors which lead to death."
+      },
+      {
+        "text": "Reversion to stem cell state and reattempt rearrangement",
+        "isCorrect": false,
+        "rationale": "Wrong: Cells do not revert to stem state; they may attempt additional rearrangements if alleles remain, but nonfunctional cells often die."
+      },
+      {
+        "text": "Export to periphery as anergic T cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Anergy is a peripheral tolerance mechanism; thymocytes with nonfunctional TCRs typically undergo apoptosis during development."
+      },
+      {
+        "text": "Undergo somatic hypermutation to fix reading frame",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation occurs in activated B cells, not thymocytes, and cannot correct nonfunctional TCRs during development."
+      }
+    ]
+  },
+  {
+    "question": "Which lecture-described process ensures that a single B cell expresses only one light chain and one heavy chain allele product at the cell surface?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define allelic exclusion and explain its significance.",
+    "options": [
+      {
+        "text": "Allelic exclusion enforces single receptor specificity per cell",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture defines allelic exclusion as ensuring only one allele's receptor is expressed, giving each B cell a single specificity."
+      },
+      {
+        "text": "Receptor editing enforces single receptor specificity per cell",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing alters specificity in autoreactive B cells but does not define the general rule of expressing only one allele per cell."
+      },
+      {
+        "text": "Class switch recombination enforces single receptor specificity",
+        "isCorrect": false,
+        "rationale": "Wrong: Class switching changes constant regions and does not determine allelic expression of variable region genes."
+      },
+      {
+        "text": "Somatic hypermutation enforces single receptor specificity",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation diversifies receptors after activation and does not enforce allelic exclusion during development."
+      },
+      {
+        "text": "AIRE expression enforces single receptor specificity",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE mediates thymic expression of tissue antigens for tolerance, unrelated to allelic exclusion in B cells."
+      }
+    ]
+  },
+  {
+    "question": "A thymocyte that recognizes class II MHC with low affinity will most likely differentiate into which lineage according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the different stages of development for T cells & B cells and the associated surface proteins expressed.",
+    "options": [
+      {
+        "text": "Single positive CD4 T cell after positive selection",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains that recognition of class II MHC during positive selection leads DP thymocytes to become SP CD4+ T cells."
+      },
+      {
+        "text": "Single positive CD8 T cell after positive selection",
+        "isCorrect": false,
+        "rationale": "Wrong: Class I MHC recognition leads to CD8 lineage; class II recognition leads to CD4 lineage."
+      },
+      {
+        "text": "Natural killer cell lineage from thymic progenitor",
+        "isCorrect": false,
+        "rationale": "Wrong: NK cells derive from separate lineages and are not the outcome of class II MHC recognition in thymocytes."
+      },
+      {
+        "text": "B cell lineage via receptor editing in thymus",
+        "isCorrect": false,
+        "rationale": "Wrong: Thymocytes do not convert to B cells; class II recognition directs CD4 T cell differentiation."
+      },
+      {
+        "text": "Anergic T cell exported to periphery without coreceptors",
+        "isCorrect": false,
+        "rationale": "Wrong: Anergy is peripheral and not the expected outcome of low-affinity class II recognition, which promotes CD4 SP maturation."
+      }
+    ]
+  },
+  {
+    "question": "Which lecture-described test must immature B cells pass before exiting the bone marrow to ensure they will not attack ubiquitous self antigens?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the different stages of development for T cells & B cells and the associated surface proteins expressed.",
+    "options": [
+      {
+        "text": "Negative selection against self-reactivity in bone marrow",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states immature B cells undergo negative selection in bone marrow to eliminate cells reactive to ubiquitous self antigens."
+      },
+      {
+        "text": "Positive selection for MHC recognition in marrow",
+        "isCorrect": false,
+        "rationale": "Wrong: Positive selection for MHC recognition is a thymic process for T cells, not a bone marrow test for B cells."
+      },
+      {
+        "text": "Class switch recombination test in marrow",
+        "isCorrect": false,
+        "rationale": "Wrong: Class switching occurs after activation in peripheral tissues and is not a developmental test in bone marrow."
+      },
+      {
+        "text": "Somatic hypermutation screening in marrow",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation occurs in germinal centers after antigen exposure, not during bone marrow development."
+      },
+      {
+        "text": "AIRE-mediated peripheral antigen display in marrow",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE functions in thymic medullary epithelial cells for T cell tolerance, not in bone marrow B cell selection."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a thymic cortical epithelial cell defect would most likely have which specific developmental impairment described in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the different stages of development for T cells & B cells and the associated surface proteins expressed.",
+    "options": [
+      {
+        "text": "Impaired positive selection leading to reduced naive T cells",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture indicates cortical epithelial cells mediate positive selection; defects would cause failure of DP thymocytes to recognize MHC and reduced export of naive T cells."
+      },
+      {
+        "text": "Failure of negative selection causing widespread autoimmunity",
+        "isCorrect": false,
+        "rationale": "Wrong: Negative selection primarily occurs in the medulla with AIRE-expressing mTECs; cortical defects mainly impair positive selection, not medullary negative selection."
+      },
+      {
+        "text": "Loss of B cell receptor editing in bone marrow",
+        "isCorrect": false,
+        "rationale": "Wrong: B cell receptor editing occurs in bone marrow and is unrelated to thymic cortical epithelial cell function."
+      },
+      {
+        "text": "Excessive junctional diversity from TdT overexpression",
+        "isCorrect": false,
+        "rationale": "Wrong: TdT expression and junctional diversity are intrinsic to developing lymphocytes and not caused by cortical epithelial cell defects."
+      },
+      {
+        "text": "Increased AIRE expression causing central tolerance failure",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE is expressed in medullary epithelial cells; cortical epithelial cell defects would not increase AIRE expression or directly cause tolerance failure."
+      }
+    ]
+  },
+  {
+    "question": "Which lecture-described outcome occurs when an immature B cell binds soluble self-antigen with low affinity in the bone marrow?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define positive & negative selection and explain the significance of these processes on immune function.",
+    "options": [
+      {
+        "text": "Anergy induction making cell difficult to activate later",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists anergy as an outcome for autoreactive immature B cells, rendering them functionally unresponsive and difficult to activate."
+      },
+      {
+        "text": "Immediate clonal expansion into plasma cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Immature B cells encountering self-antigen in marrow are tolerized (anergy, deletion, or editing), not activated to expand into plasma cells."
+      },
+      {
+        "text": "Receptor editing of heavy chain to change specificity",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing typically involves light chain rearrangement, not heavy chain editing, and is a do-over for autoreactive B cells."
+      },
+      {
+        "text": "Export as naive B cell with normal responsiveness",
+        "isCorrect": false,
+        "rationale": "Wrong: Autoreactive immature B cells with low-affinity soluble antigen binding are often anergized rather than exported as fully responsive naive B cells."
+      },
+      {
+        "text": "Conversion into thymic epithelial cell phenotype",
+        "isCorrect": false,
+        "rationale": "Wrong: B cells do not convert into thymic epithelial cells; this option is biologically implausible and not described in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which lecture-described feature distinguishes central tolerance mechanisms in primary lymphoid organs from peripheral tolerance mechanisms?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Map the major components of the immune response and how they interact and influence each other.",
+    "options": [
+      {
+        "text": "Central tolerance eliminates self-reactive lymphocytes during development",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture defines central tolerance as establishment of lymphocytes that will not attack self, occurring in primary organs (bone marrow, thymus) during development."
+      },
+      {
+        "text": "Peripheral tolerance occurs only in bone marrow during development",
+        "isCorrect": false,
+        "rationale": "Wrong: Peripheral tolerance occurs after lymphocytes exit primary organs, not in bone marrow; central tolerance is the developmental process."
+      },
+      {
+        "text": "Central tolerance depends on somatic hypermutation in germinal centers",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation is a peripheral process in germinal centers and not the mechanism of central tolerance in primary organs."
+      },
+      {
+        "text": "Peripheral tolerance eliminates all autoreactive cells before maturation",
+        "isCorrect": false,
+        "rationale": "Wrong: Peripheral tolerance acts after maturation and does not eliminate all autoreactive cells; central tolerance removes many during development."
+      },
+      {
+        "text": "Central tolerance is mediated exclusively by circulating antibodies",
+        "isCorrect": false,
+        "rationale": "Wrong: Central tolerance is mediated by developmental selection in primary organs, not by circulating antibodies."
+      }
+    ]
+  },
+  {
+    "question": "Which lecture-described test would a double-positive thymocyte undergo first upon entering the thymic cortex?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define positive & negative selection and explain the significance of these processes on immune function.",
+    "options": [
+      {
+        "text": "Positive selection testing for MHC recognition in cortex",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains positive selection occurs mostly in the cortex to test whether TCRs can interact with self-MHC molecules."
+      },
+      {
+        "text": "Negative selection testing for high-affinity self-reactivity",
+        "isCorrect": false,
+        "rationale": "Wrong: Negative selection primarily occurs later in the medulla to eliminate strongly self-reactive thymocytes."
+      },
+      {
+        "text": "AIRE-mediated tissue antigen presentation in cortex",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE expression and tissue antigen presentation occur in medullary epithelial cells, not cortical cells."
+      },
+      {
+        "text": "Receptor editing of TCR beta chain in cortex",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing is mainly a B cell mechanism; TCR beta editing is not the primary cortical test described."
+      },
+      {
+        "text": "Class switch recombination in cortical thymocytes",
+        "isCorrect": false,
+        "rationale": "Wrong: Class switching is a B cell peripheral process and does not occur in cortical thymocytes during positive selection."
+      }
+    ]
+  },
+  {
+    "question": "Which lecture-described molecular defect most directly prevents generation of junctional diversity during V(D)J recombination?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the roles of VDJ recombinase, TdT, exonucleases, and DNA polymerases and under what circumstances these are expressed by cells.",
+    "options": [
+      {
+        "text": "Loss of TdT expression abolishes N nucleotide additions",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture identifies TdT as the enzyme that adds non-templated nucleotides at junctions; loss of TdT reduces junctional (N) diversity."
+      },
+      {
+        "text": "RAG-1 loss prevents exonuclease trimming at junctions",
+        "isCorrect": false,
+        "rationale": "Wrong: RAG-1/2 mediate cleavage for recombination; exonuclease trimming is performed by exonucleases, not RAG proteins."
+      },
+      {
+        "text": "AIRE mutation prevents DNA polymerase activity at junctions",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE affects thymic antigen expression for tolerance and does not control DNA polymerase activity during junction processing."
+      },
+      {
+        "text": "Class switch recombination defect prevents junctional diversity",
+        "isCorrect": false,
+        "rationale": "Wrong: Class switching affects constant regions and does not directly impact junctional nucleotide additions during V(D)J recombination."
+      },
+      {
+        "text": "Allelic exclusion loss increases junctional diversity directly",
+        "isCorrect": false,
+        "rationale": "Wrong: Allelic exclusion affects expression of alleles, not the enzymatic processes that create junctional diversity."
+      }
+    ]
+  }
+]
