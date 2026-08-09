@@ -1,0 +1,1218 @@
+[
+  {
+    "question": "A medical student is asked to compare two oxygen-binding proteins: one is a monomeric cytosolic protein in muscle that serves as an oxygen reservoir, and the other is a tetrameric protein in erythrocytes that transports oxygen and also carries CO2 and H+. Which of the following pairs correctly identifies these proteins?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast the structure and function of hemoglobin and myoglobin in terms of: cell type, functional activity, number of subunits, binding and release of oxygen, binding and release of other molecules (CO2, CO, H+)",
+    "options": [
+      {
+        "text": "Muscle monomeric oxygen reservoir; erythrocyte tetrameric oxygen transporter",
+        "isCorrect": true,
+        "rationale": "Correct because myoglobin is a single polypeptide in muscle serving as an oxygen reservoir and hemoglobin is a tetramer in RBCs that transports O2 and also carries CO2 and H+."
+      },
+      {
+        "text": "Muscle tetrameric oxygen transporter; erythrocyte monomeric oxygen reservoir",
+        "isCorrect": false,
+        "rationale": "Wrong because muscle oxygen reservoir is monomeric (myoglobin); this would be correct only if the muscle protein were tetrameric and the RBC protein monomeric, which contradicts the lecture."
+      },
+      {
+        "text": "Muscle monomeric electron carrier; erythrocyte tetrameric oxygen transporter",
+        "isCorrect": false,
+        "rationale": "Wrong because the muscle monomer described is myoglobin (an O2 binder), not an electron carrier like cytochromes; it would be correct only if the muscle protein were a cytochrome."
+      },
+      {
+        "text": "Muscle monomeric oxygen transporter; erythrocyte tetrameric enzyme for H2O2 breakdown",
+        "isCorrect": false,
+        "rationale": "Wrong because the erythrocyte tetramer is hemoglobin (an O2 transporter), not catalase (an H2O2-degrading enzyme); this would be correct only if catalase were tetrameric and located in RBCs, which it is not."
+      },
+      {
+        "text": "Muscle tetrameric oxygen reservoir; erythrocyte monomeric CO2 carrier",
+        "isCorrect": false,
+        "rationale": "Wrong because myoglobin is monomeric and hemoglobin is tetrameric; this option would be correct only if their oligomeric states were reversed, which contradicts the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which structural feature of heme allows reversible oxygen binding in globin proteins?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the structure of heme and how it binds oxygen in myoglobin and hemoglobin",
+    "options": [
+      {
+        "text": "Iron in ferrous state coordinated by four porphyrin nitrogens",
+        "isCorrect": true,
+        "rationale": "Correct because heme contains Fe2+ held by four nitrogens of the porphyrin ring, with additional coordination sites for a histidine and oxygen, enabling reversible O2 binding."
+      },
+      {
+        "text": "Copper ion coordinated by four porphyrin nitrogens",
+        "isCorrect": false,
+        "rationale": "Wrong because heme uses iron (Fe2+), not copper; it would be correct only if the prosthetic group contained copper instead of iron."
+      },
+      {
+        "text": "Iron in ferric state coordinated by four porphyrin nitrogens",
+        "isCorrect": false,
+        "rationale": "Wrong because reversible O2 binding requires Fe2+; Fe3+ (ferric) does not bind O2 reversibly, so this would be correct only if the iron were ferrous."
+      },
+      {
+        "text": "Magnesium ion coordinated by four porphyrin nitrogens",
+        "isCorrect": false,
+        "rationale": "Wrong because heme uses iron, not magnesium; this would be correct only if the prosthetic group were a chlorophyll-like molecule with Mg."
+      },
+      {
+        "text": "Iron coordinated only by two porphyrin nitrogens and two histidines",
+        "isCorrect": false,
+        "rationale": "Wrong because the iron is coordinated by four porphyrin nitrogens; this would be correct only if the porphyrin ring provided fewer ligands, which is not the case."
+      }
+    ]
+  },
+  {
+    "question": "A researcher measures oxygen binding of a muscle oxygen-binding protein and obtains a hyperbolic saturation curve with a very low P50. Which protein and functional property best match these findings?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Interpret the oxygen dissociation curve for hemoglobin and myoglobin and the functional significance of a left or right shift in the curve",
+    "options": [
+      {
+        "text": "Myoglobin with high oxygen affinity and hyperbolic curve",
+        "isCorrect": true,
+        "rationale": "Correct because myoglobin shows a hyperbolic oxygen dissociation curve and a low P50 indicating very high O2 affinity, suitable for muscle O2 storage."
+      },
+      {
+        "text": "Hemoglobin with cooperative binding and hyperbolic curve",
+        "isCorrect": false,
+        "rationale": "Wrong because hemoglobin displays a sigmoidal curve due to cooperative binding; this would be correct only if hemoglobin lacked cooperativity."
+      },
+      {
+        "text": "Myoglobin with low oxygen affinity and sigmoidal curve",
+        "isCorrect": false,
+        "rationale": "Wrong because myoglobin has high affinity and a hyperbolic curve; this would be correct only if myoglobin exhibited cooperativity and low affinity."
+      },
+      {
+        "text": "Hemoglobin with high oxygen affinity and hyperbolic curve",
+        "isCorrect": false,
+        "rationale": "Wrong because hemoglobin normally shows a sigmoidal curve; this would be correct only if hemoglobin behaved like a noncooperative monomer."
+      },
+      {
+        "text": "Hemoglobin with low oxygen affinity and hyperbolic curve",
+        "isCorrect": false,
+        "rationale": "Wrong because hemoglobin's low affinity states still produce a sigmoidal curve; this would be correct only if hemoglobin were monomeric and noncooperative."
+      }
+    ]
+  },
+  {
+    "question": "Which description best explains the molecular basis for the sigmoidal oxygen binding curve of the erythrocyte oxygen carrier?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the functional significance of the sigmoidal shape of the oxygen dissociation curve for hemoglobin and the effect of heme-heme interactions on the loading and unloading of oxygen",
+    "options": [
+      {
+        "text": "Sequential increase in affinity after each oxygen binds to other heme sites",
+        "isCorrect": true,
+        "rationale": "Correct because heme-heme interactions cause binding of one O2 to increase affinity of remaining heme groups, producing cooperative (sigmoidal) binding."
+      },
+      {
+        "text": "Independent identical binding sites with no intersubunit communication",
+        "isCorrect": false,
+        "rationale": "Wrong because independent sites produce a hyperbolic curve; this would be correct only if there were no heme-heme interactions."
+      },
+      {
+        "text": "Irreversible binding of oxygen to the first heme preventing further binding",
+        "isCorrect": false,
+        "rationale": "Wrong because binding is reversible and increases affinity for subsequent O2; this would be correct only if the first binding were irreversible."
+      },
+      {
+        "text": "Allosteric inhibition by oxygen that reduces affinity of remaining sites",
+        "isCorrect": false,
+        "rationale": "Wrong because oxygen binding increases, not decreases, affinity of other sites; this would be correct only if oxygen acted as a negative allosteric effector."
+      },
+      {
+        "text": "pH-dependent protonation of heme iron causing cooperative binding",
+        "isCorrect": false,
+        "rationale": "Wrong because cooperativity arises from quaternary structural changes, not direct protonation of heme iron; this would be correct only if protonation of iron mediated cooperativity."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic hypoxia is expected to have altered levels of an RBC glycolytic side-product that binds deoxy tetrameric hemoglobin and stabilizes its low-affinity state. Which change is most consistent with the lecture material?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the role of 2,3-BPG in hemoglobin in terms of how it functions to affect oxygen binding and how it affects the oxygen dissociation curve",
+    "options": [
+      {
+        "text": "Increased 2,3-BPG concentration shifting curve to the right",
+        "isCorrect": true,
+        "rationale": "Correct because 2,3-BPG binds deoxyhemoglobin, stabilizes the T-form, lowers O2 affinity, and shifts the dissociation curve rightward; levels rise in chronic hypoxia."
+      },
+      {
+        "text": "Decreased 2,3-BPG concentration shifting curve to the right",
+        "isCorrect": false,
+        "rationale": "Wrong because decreased 2,3-BPG would increase affinity and shift the curve left; this would be correct only if 2,3-BPG fell while other right-shifting factors increased."
+      },
+      {
+        "text": "Increased 2,3-BPG concentration shifting curve to the left",
+        "isCorrect": false,
+        "rationale": "Wrong because increased 2,3-BPG lowers affinity and shifts right; this would be correct only if 2,3-BPG paradoxically increased affinity, which contradicts the lecture."
+      },
+      {
+        "text": "No change in 2,3-BPG concentration with increased hemoglobin affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because chronic hypoxia typically raises 2,3-BPG to decrease affinity; this would be correct only if compensatory mechanisms prevented 2,3-BPG change."
+      },
+      {
+        "text": "Decreased 2,3-BPG concentration shifting curve to the left",
+        "isCorrect": false,
+        "rationale": "Wrong because chronic hypoxia causes increased, not decreased, 2,3-BPG; this would be correct only in stored blood where 2,3-BPG falls over time."
+      }
+    ]
+  },
+  {
+    "question": "Which mechanism explains how increased tissue CO2 production promotes oxygen unloading from the erythrocyte oxygen carrier?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the Bohr effect and how it affects the oxygen dissociation curve",
+    "options": [
+      {
+        "text": "CO2 forms bicarbonate and H+ lowering pH and stabilizing low-affinity form",
+        "isCorrect": true,
+        "rationale": "Correct because CO2 is converted to carbonic acid then H+ and HCO3-, lowering pH; protons stabilize deoxyhemoglobin (T-form), reducing O2 affinity (Bohr effect)."
+      },
+      {
+        "text": "CO2 directly oxidizes heme iron increasing oxygen affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because CO2 does not oxidize heme iron to increase affinity; this would be correct only if CO2 caused Fe2+ to Fe3+ oxidation, which is not described in the lecture."
+      },
+      {
+        "text": "CO2 binds heme iron and blocks oxygen binding sites",
+        "isCorrect": false,
+        "rationale": "Wrong because CO2 primarily forms bicarbonate or carbamates on amino termini, not direct heme binding; this would be correct only if CO2 bound heme directly."
+      },
+      {
+        "text": "CO2 increases 2,3-BPG synthesis directly raising oxygen affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because increased 2,3-BPG lowers affinity; CO2 does not directly increase 2,3-BPG to raise affinity; this would be correct only if 2,3-BPG had the opposite effect."
+      },
+      {
+        "text": "CO2 converts oxyhemoglobin to methemoglobin increasing unloading",
+        "isCorrect": false,
+        "rationale": "Wrong because CO2 does not convert oxyhemoglobin to methemoglobin; this would be correct only if CO2 oxidized Fe2+ to Fe3+, which is not in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A lab measures that binding of the first oxygen to an erythrocyte tetramer increases the affinity of the remaining heme sites by a large factor. Which lecture statement best quantifies this cooperative effect?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the effect of heme-heme interactions on the loading and unloading of oxygen",
+    "options": [
+      {
+        "text": "Affinity of last oxygen is about 300 times greater than first",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states each oxygen bound increases affinity such that the last oxygen's affinity is ~300-fold higher than the first due to heme-heme interactions."
+      },
+      {
+        "text": "Affinity of last oxygen is about 3 times greater than first",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture specifies ~300-fold, not 3-fold; this would be correct only if cooperativity were minimal."
+      },
+      {
+        "text": "Affinity of last oxygen is about 30 times greater than first",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture gives ~300-fold; this would be correct only if the magnitude of cooperativity were an order of magnitude smaller."
+      },
+      {
+        "text": "Affinity of last oxygen is about equal to the first",
+        "isCorrect": false,
+        "rationale": "Wrong because cooperativity causes increasing affinity; equality would be correct only if there were no heme-heme interactions."
+      },
+      {
+        "text": "Affinity of last oxygen is about 0.3 times that of the first",
+        "isCorrect": false,
+        "rationale": "Wrong because affinity increases, not decreases; this would be correct only if oxygen binding were negatively cooperative."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best describes the binding site environment for heme within myoglobin?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the structure and function of myoglobin including the heme environment",
+    "options": [
+      {
+        "text": "Heme sits in a nonpolar crevice with two histidines nearby",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture notes that the heme sits in a crevice lined with nonpolar residues and two histidines—one binds iron and the other stabilizes O2 binding."
+      },
+      {
+        "text": "Heme is fully exposed on the protein surface with many polar residues",
+        "isCorrect": false,
+        "rationale": "Wrong because heme is buried in a nonpolar pocket; this would be correct only if the heme were surface-exposed and solvent-accessible."
+      },
+      {
+        "text": "Heme is covalently attached to the polypeptide chain via cysteine",
+        "isCorrect": false,
+        "rationale": "Wrong because heme is a prosthetic group noncovalently bound; covalent cysteine linkage would be correct only for different heme proteins."
+      },
+      {
+        "text": "Heme binds two oxygen molecules simultaneously in myoglobin",
+        "isCorrect": false,
+        "rationale": "Wrong because myoglobin binds only one O2; this would be correct only if myoglobin were multimeric with multiple heme sites."
+      },
+      {
+        "text": "Heme sits in a polar pocket stabilized by charged residues",
+        "isCorrect": false,
+        "rationale": "Wrong because the pocket is mostly nonpolar; this would be correct only if polar residues predominated in the binding crevice."
+      }
+    ]
+  },
+  {
+    "question": "A patient receives multiple units of stored blood that have been refrigerated for several weeks. Which immediate effect on oxygen delivery is most consistent with the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the result of long-term storage of donated blood on 2,3-BPG levels and the possible consequences of transfusing old blood",
+    "options": [
+      {
+        "text": "Transfused hemoglobin binds oxygen tightly and unloads poorly until 2,3-BPG is restored",
+        "isCorrect": true,
+        "rationale": "Correct because stored blood loses 2,3-BPG, shifting the dissociation curve left so hemoglobin has higher O2 affinity and reduced unloading until 2,3-BPG returns over hours."
+      },
+      {
+        "text": "Transfused hemoglobin has reduced oxygen affinity and unloads excessively",
+        "isCorrect": false,
+        "rationale": "Wrong because loss of 2,3-BPG increases affinity (left shift), not reduces it; this would be correct only if 2,3-BPG increased during storage."
+      },
+      {
+        "text": "Transfused hemoglobin cannot bind oxygen at the lungs due to methemoglobin formation",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture attributes storage effects to 2,3-BPG loss, not methemoglobin; this would be correct only if storage caused widespread Fe2+ oxidation."
+      },
+      {
+        "text": "Transfused hemoglobin immediately releases CO2 but not oxygen",
+        "isCorrect": false,
+        "rationale": "Wrong because storage primarily affects O2 unloading via 2,3-BPG loss; this would be correct only if CO2-binding sites were selectively altered."
+      },
+      {
+        "text": "Transfused hemoglobin increases tissue oxygen delivery by raising P50",
+        "isCorrect": false,
+        "rationale": "Wrong because loss of 2,3-BPG lowers P50 (left shift), decreasing tissue O2 delivery; this would be correct only if P50 increased after storage."
+      }
+    ]
+  },
+  {
+    "question": "A patient with COPD living at high altitude has chronic hypoxemia. According to the lecture, which adaptive change in RBC metabolites would you expect and why?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe how 2,3-BPG levels could vary in individuals because of environment or disease",
+    "options": [
+      {
+        "text": "Elevated 2,3-BPG to facilitate oxygen unloading at tissues",
+        "isCorrect": true,
+        "rationale": "Correct because chronic hypoxia (e.g., COPD or high altitude) raises 2,3-BPG levels, stabilizing the T-form and lowering O2 affinity to improve tissue unloading."
+      },
+      {
+        "text": "Decreased 2,3-BPG to increase oxygen uptake in lungs",
+        "isCorrect": false,
+        "rationale": "Wrong because decreased 2,3-BPG would increase affinity and impair unloading; this would be correct only if the body prioritized pulmonary loading over tissue delivery."
+      },
+      {
+        "text": "Unchanged 2,3-BPG with increased hemoglobin affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because chronic hypoxia typically alters 2,3-BPG; this would be correct only if compensatory mechanisms prevented 2,3-BPG change."
+      },
+      {
+        "text": "Elevated 2,3-BPG causing left shift of dissociation curve",
+        "isCorrect": false,
+        "rationale": "Wrong because elevated 2,3-BPG causes a right shift (lower affinity); this would be correct only if 2,3-BPG paradoxically increased affinity."
+      },
+      {
+        "text": "Decreased 2,3-BPG causing increased CO2 carriage",
+        "isCorrect": false,
+        "rationale": "Wrong because 2,3-BPG changes affect O2 affinity, not directly CO2 carriage; this would be correct only if 2,3-BPG regulated CO2 binding."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the Bohr effect mechanism at the amino-acid level in the erythrocyte oxygen transporter?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the Bohr effect and the how it effects the oxygen dissociation curve",
+    "options": [
+      {
+        "text": "Protonation of histidine residues stabilizes the deoxy quaternary structure",
+        "isCorrect": true,
+        "rationale": "Correct because deoxyhemoglobin has histidine R-groups with higher pKa that become protonated, forming ionic interactions that stabilize the T-form and lower O2 affinity."
+      },
+      {
+        "text": "Deprotonation of histidine residues stabilizes the relaxed structure",
+        "isCorrect": false,
+        "rationale": "Wrong because protonation (not deprotonation) stabilizes the T-form; this would be correct only if deprotonation favored the T-form."
+      },
+      {
+        "text": "Protonation of cysteine residues forms disulfide bonds stabilizing oxy form",
+        "isCorrect": false,
+        "rationale": "Wrong because cysteine protonation does not form disulfides and the Bohr effect involves histidine protonation; this would be correct only if cysteines mediated pH sensitivity."
+      },
+      {
+        "text": "Protonation of heme iron increases oxygen affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because the Bohr effect involves protonation of amino acid side chains, not heme iron; this would be correct only if iron protonation altered affinity."
+      },
+      {
+        "text": "Deprotonation of N-terminal amino groups stabilizes carbamate formation",
+        "isCorrect": false,
+        "rationale": "Wrong because carbamate formation involves CO2 binding to unprotonated amino groups and proton release; deprotonation does not stabilize carbamates in the Bohr mechanism described."
+      }
+    ]
+  },
+  {
+    "question": "A patient inhales carbon monoxide (CO). Based on the lecture, which combined effect on hemoglobin function explains the resulting tissue hypoxia?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the binding of carbon dioxide and carbon monoxide to hemoglobin",
+    "options": [
+      {
+        "text": "CO binds tightly and increases oxygen affinity of remaining sites causing poor unloading",
+        "isCorrect": true,
+        "rationale": "Correct because CO has ~200-fold higher affinity than O2, occupies binding sites, and shifts hemoglobin to the relaxed form increasing O2 affinity and impairing tissue unloading."
+      },
+      {
+        "text": "CO binds weakly and decreases oxygen affinity causing excessive unloading",
+        "isCorrect": false,
+        "rationale": "Wrong because CO binds tightly and increases affinity; this would be correct only if CO were a weak negative effector."
+      },
+      {
+        "text": "CO binds to N-terminal amino groups forming carbamates and stabilizing T-form",
+        "isCorrect": false,
+        "rationale": "Wrong because CO does not form carbamates; CO2 forms carbamates on N-termini. This would be correct only if CO chemically behaved like CO2."
+      },
+      {
+        "text": "CO increases 2,3-BPG binding causing right shift and improved unloading",
+        "isCorrect": false,
+        "rationale": "Wrong because CO increases O2 affinity and does not promote 2,3-BPG binding; this would be correct only if CO stabilized the T-form."
+      },
+      {
+        "text": "CO oxidizes heme iron to Fe3+ preventing oxygen binding",
+        "isCorrect": false,
+        "rationale": "Wrong because CO binds to Fe2+ with high affinity rather than oxidizing it; this would be correct only if CO caused methemoglobin formation."
+      }
+    ]
+  },
+  {
+    "question": "Which statement about the quaternary interactions within the erythrocyte oxygen transporter is most accurate?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the functional significance of the T and R forms of hemoglobin",
+    "options": [
+      {
+        "text": "Dimers are held by hydrophobic forces; inter-dimer polar bonds vary with oxygenation",
+        "isCorrect": true,
+        "rationale": "Correct because each alphabeta dimer is held mainly by hydrophobic interactions, while weaker ionic and hydrogen bonds between dimers change depending on oxygen binding (T versus R)."
+      },
+      {
+        "text": "Tetramer is covalently linked by disulfide bonds between subunits",
+        "isCorrect": false,
+        "rationale": "Wrong because hemoglobin subunits are associated noncovalently, not by disulfide bonds; this would be correct only if covalent crosslinks existed."
+      },
+      {
+        "text": "All subunit interfaces are stabilized only by ionic bonds regardless of oxygenation",
+        "isCorrect": false,
+        "rationale": "Wrong because hydrophobic interactions dominate within dimers and polar bonds between dimers vary with oxygenation; this would be correct only if ionic bonds were the sole stabilizers."
+      },
+      {
+        "text": "Quaternary structure is fixed and does not change with ligand binding",
+        "isCorrect": false,
+        "rationale": "Wrong because oxygen binding alters polar bonds and shifts T to R; this would be correct only if hemoglobin were rigid and nonallosteric."
+      },
+      {
+        "text": "Subunits dissociate into monomers upon oxygen binding",
+        "isCorrect": false,
+        "rationale": "Wrong because oxygen binding changes inter-dimer bonds but does not cause dissociation into monomers; this would be correct only if binding destabilized all subunit interactions."
+      }
+    ]
+  },
+  {
+    "question": "A student is interpreting an oxygen dissociation curve and notes a rightward shift. Which of the following changes would most likely produce that shift according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Interpret the oxygen dissociation curve for hemoglobin and the functional significance of a left or right shift in the curve",
+    "options": [
+      {
+        "text": "Lower pH or increased 2,3-BPG concentration",
+        "isCorrect": true,
+        "rationale": "Correct because both decreased pH (Bohr effect) and increased 2,3-BPG stabilize the T-form and decrease O2 affinity, shifting the curve right."
+      },
+      {
+        "text": "Higher pH and decreased 2,3-BPG concentration",
+        "isCorrect": false,
+        "rationale": "Wrong because higher pH and lower 2,3-BPG increase affinity and shift left; this would be correct only if conditions favored increased affinity."
+      },
+      {
+        "text": "Decreased CO2 and decreased proton concentration",
+        "isCorrect": false,
+        "rationale": "Wrong because decreased CO2 and protons increase affinity (left shift); this would be correct only if CO2 and H+ were elevated."
+      },
+      {
+        "text": "Increased fetal hemoglobin replacing adult hemoglobin",
+        "isCorrect": false,
+        "rationale": "Wrong because fetal hemoglobin has higher affinity and shifts curve left; this would be correct only if fetal Hb predominated and lowered P50."
+      },
+      {
+        "text": "Binding of carbon monoxide to some heme sites",
+        "isCorrect": false,
+        "rationale": "Wrong because CO binding increases affinity of remaining sites and shifts curve left; this would be correct only if CO acted as a right-shifting effector."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why myoglobin is effective as an intramuscular oxygen store but poor at delivering oxygen across the physiological pO2 range between lungs and tissues?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the functional significance of the sigmoidal shape of the oxygen dissociation curve for hemoglobin and the effect of heme-heme interactions on the loading and unloading of oxygen",
+    "options": [
+      {
+        "text": "Myoglobin has very high affinity and a narrow release range at low pO2",
+        "isCorrect": true,
+        "rationale": "Correct because myoglobin's hyperbolic curve and low P50 mean it remains highly saturated across the lung-to-tissue pO2 range and only releases O2 at very low pO2."
+      },
+      {
+        "text": "Myoglobin is cooperative and unloads oxygen across a wide pO2 range",
+        "isCorrect": false,
+        "rationale": "Wrong because myoglobin is monomeric and noncooperative; this would be correct only if myoglobin exhibited heme-heme interactions."
+      },
+      {
+        "text": "Myoglobin binds CO2 preferentially and exchanges it for oxygen",
+        "isCorrect": false,
+        "rationale": "Wrong because myoglobin's primary role is O2 storage and transport within muscle, not CO2 carriage; this would be correct only if myoglobin carried CO2 significantly."
+      },
+      {
+        "text": "Myoglobin has low affinity and releases oxygen easily at normal tissue pO2",
+        "isCorrect": false,
+        "rationale": "Wrong because myoglobin has high affinity; this would be correct only if myoglobin had a high P50."
+      },
+      {
+        "text": "Myoglobin is membrane-bound and cannot diffuse oxygen",
+        "isCorrect": false,
+        "rationale": "Wrong because myoglobin is cytosolic and facilitates O2 diffusion within muscle; this would be correct only if it were membrane-anchored."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute lactic acidosis from vigorous exercise will have local changes that affect hemoglobin oxygen binding. Which immediate local change and its effect on hemoglobin are most consistent with the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the Bohr effect and how it affects the oxygen dissociation curve",
+    "options": [
+      {
+        "text": "Lower pH in tissues stabilizes deoxy form and promotes oxygen unloading",
+        "isCorrect": true,
+        "rationale": "Correct because lactic acid lowers pH; protonation stabilizes the T-form (deoxyhemoglobin), reducing O2 affinity and enhancing unloading in active muscle."
+      },
+      {
+        "text": "Lower pH in tissues stabilizes oxy form and reduces oxygen unloading",
+        "isCorrect": false,
+        "rationale": "Wrong because lower pH stabilizes the deoxy (T) form and increases unloading; this would be correct only if acidity increased affinity."
+      },
+      {
+        "text": "Higher pH in tissues stabilizes deoxy form and promotes unloading",
+        "isCorrect": false,
+        "rationale": "Wrong because higher pH favors oxy (R) form and reduces unloading; this would be correct only if alkalosis promoted T-form stability."
+      },
+      {
+        "text": "Increased tissue CO2 converts hemoglobin to methemoglobin increasing unloading",
+        "isCorrect": false,
+        "rationale": "Wrong because CO2 forms bicarbonate and H+ affecting affinity via Bohr effect; methemoglobin formation is not the mechanism described."
+      },
+      {
+        "text": "Increased 2,3-BPG in minutes causes immediate left shift and reduced unloading",
+        "isCorrect": false,
+        "rationale": "Wrong because 2,3-BPG changes occur over longer periods and cause right shifts; immediate effects of exercise are mediated by pH and CO2."
+      }
+    ]
+  },
+  {
+    "question": "Which binding interaction specifically stabilizes the deoxygenated quaternary structure of the erythrocyte oxygen transporter and is targeted by a negatively charged glycolytic side-product?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the role of 2,3-BPG in hemoglobin in terms of how it functions to affect oxygen binding and how it affects the oxygen dissociation curve",
+    "options": [
+      {
+        "text": "2,3-BPG binding between beta chains stabilizes the T-form",
+        "isCorrect": true,
+        "rationale": "Correct because 2,3-BPG binds in a pocket between beta-globin chains via interactions with positively charged residues, stabilizing the deoxy (T) form and lowering O2 affinity."
+      },
+      {
+        "text": "2,3-BPG binds to heme iron preventing oxygen binding",
+        "isCorrect": false,
+        "rationale": "Wrong because 2,3-BPG binds between beta chains, not to heme iron; this would be correct only if 2,3-BPG directly coordinated iron."
+      },
+      {
+        "text": "2,3-BPG binds to alpha chains and stabilizes the R-form",
+        "isCorrect": false,
+        "rationale": "Wrong because 2,3-BPG binds between beta chains and stabilizes T-form; this would be correct only if its binding site were on alpha chains and favored R-form."
+      },
+      {
+        "text": "2,3-BPG covalently modifies histidines to lock the tetramer",
+        "isCorrect": false,
+        "rationale": "Wrong because 2,3-BPG binds noncovalently; covalent modification would be correct only if it formed permanent bonds with residues."
+      },
+      {
+        "text": "2,3-BPG binds to N-terminal amino groups forming carbamates",
+        "isCorrect": false,
+        "rationale": "Wrong because carbamate formation is a CO2-related modification at N-termini; 2,3-BPG binds in the central cavity between beta chains."
+      }
+    ]
+  },
+  {
+    "question": "A lab assay shows that carbamate formation on hemoglobin contributes to CO2 transport. Which molecular site is primarily involved in forming carbamates and what is the functional consequence?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the binding and release of CO2 to hemoglobin",
+    "options": [
+      {
+        "text": "N-terminal amino groups form carbamates and stabilize T-form lowering O2 affinity",
+        "isCorrect": true,
+        "rationale": "Correct because CO2 binds to N-terminal amino groups forming carbaminohemoglobin, which stabilizes the T-form and reduces O2 affinity, aiding CO2 transport."
+      },
+      {
+        "text": "Heme iron forms carbamates and increases oxygen affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because carbamates form on amino termini, not heme iron; this would be correct only if CO2 chemically modified iron."
+      },
+      {
+        "text": "2,3-BPG forms carbamates on beta chains increasing affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because 2,3-BPG is a separate ligand and does not form carbamates; this would be correct only if 2,3-BPG chemically reacted with CO2."
+      },
+      {
+        "text": "Histidine side chains form carbamates and shift curve left",
+        "isCorrect": false,
+        "rationale": "Wrong because carbamates are on N-termini and stabilize T-form (right shift); this would be correct only if histidines formed carbamates causing left shift."
+      },
+      {
+        "text": "C-terminal carboxyl groups form carbamates and increase oxygen binding",
+        "isCorrect": false,
+        "rationale": "Wrong because carbamate formation is described at N-termini and decreases O2 affinity; this would be correct only if C-termini were the primary sites and increased affinity."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute carbon monoxide poisoning has a pulse oximeter reading that appears near normal despite tissue hypoxia. Based on lecture concepts, which explanation best accounts for this discrepancy?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast the binding of carbon monoxide and carbon monoxide's effect on oxygen binding to hemoglobin",
+    "options": [
+      {
+        "text": "CO occupancy and increased O2 affinity reduce unloading despite apparent saturation",
+        "isCorrect": true,
+        "rationale": "Correct because CO binds tightly to heme and shifts hemoglobin toward the relaxed form, increasing apparent O2 saturation while preventing effective O2 unloading to tissues."
+      },
+      {
+        "text": "CO increases 2,3-BPG causing decreased oxygen affinity and tissue hypoxia",
+        "isCorrect": false,
+        "rationale": "Wrong because CO increases apparent affinity and does not increase 2,3-BPG; this would be correct only if CO promoted 2,3-BPG synthesis causing right shift."
+      },
+      {
+        "text": "CO converts hemoglobin to methemoglobin which reads as low saturation",
+        "isCorrect": false,
+        "rationale": "Wrong because CO forms carboxyhemoglobin, not methemoglobin; this would be correct only if Fe2+ were oxidized to Fe3+."
+      },
+      {
+        "text": "CO displaces bicarbonate increasing measured oxygen content",
+        "isCorrect": false,
+        "rationale": "Wrong because CO does not displace bicarbonate; this would be correct only if CO altered CO2 carriage to affect oximetry readings."
+      },
+      {
+        "text": "CO binds to N-terminal amino groups producing carbaminohemoglobin",
+        "isCorrect": false,
+        "rationale": "Wrong because carbamino formation is due to CO2, not CO; this would be correct only if CO chemically formed carbamates."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best characterizes the prosthetic group concept as applied to heme in globin proteins?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define prosthetic group and describe heme as a prosthetic group in hemeproteins",
+    "options": [
+      {
+        "text": "A permanently associated nonprotein group essential for protein function",
+        "isCorrect": true,
+        "rationale": "Correct because a prosthetic group is permanently associated with a protein (e.g., heme) and is returned to its original form during function."
+      },
+      {
+        "text": "A loosely associated cofactor that dissociates after each reaction",
+        "isCorrect": false,
+        "rationale": "Wrong because prosthetic groups are tightly bound and not loosely dissociable; this would be correct only for simple cofactors."
+      },
+      {
+        "text": "A protein subunit that provides catalytic activity",
+        "isCorrect": false,
+        "rationale": "Wrong because prosthetic groups are nonprotein moieties; this would be correct only if the cofactor were a polypeptide."
+      },
+      {
+        "text": "A transient substrate that is consumed during catalysis",
+        "isCorrect": false,
+        "rationale": "Wrong because prosthetic groups are not consumed; this would be correct only if the group were a stoichiometric substrate."
+      },
+      {
+        "text": "A lipid anchor that tethers proteins to membranes",
+        "isCorrect": false,
+        "rationale": "Wrong because prosthetic groups like heme are not membrane anchors; this would be correct only for lipid modifications."
+      }
+    ]
+  },
+  {
+    "question": "A biochemistry student is asked why hemoglobin can carry both oxygen and protons from tissues to lungs. Which property of hemoglobin described in the lecture explains this dual role?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the binding and release of oxygen and H+ by hemoglobin",
+    "options": [
+      {
+        "text": "Allosteric binding sites allow reversible binding of O2 and H+",
+        "isCorrect": true,
+        "rationale": "Correct because hemoglobin's allosteric properties permit interactions with O2 and H+ (and CO2), enabling transport of oxygen and protons between tissues and lungs."
+      },
+      {
+        "text": "Heme iron directly binds protons instead of oxygen",
+        "isCorrect": false,
+        "rationale": "Wrong because protons bind to amino acid side chains, not heme iron; this would be correct only if Fe2+ were a proton acceptor."
+      },
+      {
+        "text": "Hemoglobin irreversibly binds protons during oxygenation",
+        "isCorrect": false,
+        "rationale": "Wrong because proton binding is reversible and part of Bohr effect; this would be correct only if protonation were permanent."
+      },
+      {
+        "text": "Hemoglobin transports protons by covalent modification",
+        "isCorrect": false,
+        "rationale": "Wrong because proton transport involves reversible ionic interactions, not covalent changes; this would be correct only if chemical modification occurred."
+      },
+      {
+        "text": "Hemoglobin uses a separate protein to carry protons independently",
+        "isCorrect": false,
+        "rationale": "Wrong because hemoglobin itself carries H+ via protonatable residues; this would be correct only if another carrier performed proton transport."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental observation would indicate that 2,3-BPG is expelled from the central cavity of hemoglobin?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe how oxygen binding affects 2,3-BPG binding and hemoglobin conformation",
+    "options": [
+      {
+        "text": "Oxygenation causes loss of 2,3-BPG binding and shift to R-form",
+        "isCorrect": true,
+        "rationale": "Correct because oxygen binding expels 2,3-BPG, destabilizing its binding pocket and promoting the R-form with higher O2 affinity."
+      },
+      {
+        "text": "Oxygenation increases 2,3-BPG binding and stabilizes T-form",
+        "isCorrect": false,
+        "rationale": "Wrong because oxygenation expels 2,3-BPG and favors R-form; this would be correct only if 2,3-BPG preferentially bound oxyhemoglobin."
+      },
+      {
+        "text": "Deoxygenation expels 2,3-BPG and shifts to R-form",
+        "isCorrect": false,
+        "rationale": "Wrong because deoxyhemoglobin binds 2,3-BPG and stabilizes T-form; this would be correct only if deoxygenation reduced 2,3-BPG affinity."
+      },
+      {
+        "text": "Oxygenation causes covalent attachment of 2,3-BPG to beta chains",
+        "isCorrect": false,
+        "rationale": "Wrong because 2,3-BPG binds noncovalently and is expelled on oxygenation; this would be correct only if covalent modification occurred."
+      },
+      {
+        "text": "Oxygenation has no effect on 2,3-BPG binding or quaternary state",
+        "isCorrect": false,
+        "rationale": "Wrong because oxygen binding alters 2,3-BPG binding and quaternary structure; this would be correct only if hemoglobin were nonallosteric."
+      }
+    ]
+  },
+  {
+    "question": "A patient with anemia has fewer hemoglobin molecules per blood volume. According to the lecture, how might 2,3-BPG levels respond and why?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the response of 2,3-BPG levels to chronic hypoxia or anemia",
+    "options": [
+      {
+        "text": "2,3-BPG increases to lower affinity and improve tissue unloading",
+        "isCorrect": true,
+        "rationale": "Correct because in anemia 2,3-BPG levels rise to decrease hemoglobin O2 affinity, facilitating oxygen unloading despite reduced hemoglobin concentration."
+      },
+      {
+        "text": "2,3-BPG decreases to increase oxygen affinity and preserve saturation",
+        "isCorrect": false,
+        "rationale": "Wrong because decreased 2,3-BPG would raise affinity and impair tissue delivery; this would be correct only if the body prioritized arterial saturation over tissue unloading."
+      },
+      {
+        "text": "2,3-BPG remains unchanged because it is unrelated to hemoglobin amount",
+        "isCorrect": false,
+        "rationale": "Wrong because 2,3-BPG levels adapt to oxygen delivery needs; this would be correct only if regulatory mechanisms were absent."
+      },
+      {
+        "text": "2,3-BPG increases causing left shift and reduced unloading",
+        "isCorrect": false,
+        "rationale": "Wrong because increased 2,3-BPG causes right shift and increased unloading; left shift would be correct only if 2,3-BPG had opposite effect."
+      },
+      {
+        "text": "2,3-BPG decreases causing increased CO2 carriage",
+        "isCorrect": false,
+        "rationale": "Wrong because 2,3-BPG changes affect O2 affinity, not directly CO2 carriage; this would be correct only if 2,3-BPG regulated CO2 binding."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best summarizes why hemoglobin's oxygen affinity differs between lungs and peripheral tissues?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the binding and release of oxygen by hemoglobin in lungs versus tissues",
+    "options": [
+      {
+        "text": "Higher pO2 and higher pH in lungs favor R-form and oxygen loading",
+        "isCorrect": true,
+        "rationale": "Correct because lungs have higher pO2 and higher pH, promoting the R-form with high O2 affinity for loading, while tissues have lower pO2 and pH favoring unloading."
+      },
+      {
+        "text": "Lower pO2 and lower pH in lungs favor T-form and oxygen loading",
+        "isCorrect": false,
+        "rationale": "Wrong because lungs have higher pO2 and pH; this would be correct only if lung environment were acidic and hypoxic."
+      },
+      {
+        "text": "Higher CO2 in lungs stabilizes T-form increasing oxygen uptake",
+        "isCorrect": false,
+        "rationale": "Wrong because high CO2 stabilizes T-form and reduces affinity; lungs have lower CO2 which favors unloading of CO2 and loading of O2."
+      },
+      {
+        "text": "2,3-BPG concentration is higher in lungs causing increased loading",
+        "isCorrect": false,
+        "rationale": "Wrong because 2,3-BPG binds deoxyhemoglobin and lowers affinity; this would be correct only if 2,3-BPG increased affinity in lungs."
+      },
+      {
+        "text": "Myoglobin in blood increases oxygen affinity in lungs",
+        "isCorrect": false,
+        "rationale": "Wrong because myoglobin is intracellular in muscle, not in blood; this would be correct only if myoglobin circulated and affected arterial affinity."
+      }
+    ]
+  },
+  {
+    "question": "A researcher mutates a histidine residue that normally coordinates the heme iron in a muscle oxygen-binding protein. Which immediate functional consequence is most consistent with the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the structure of heme and how histidine residues interact with heme in myoglobin",
+    "options": [
+      {
+        "text": "Loss of iron coordination reduces reversible oxygen binding capacity",
+        "isCorrect": true,
+        "rationale": "Correct because one histidine binds the heme iron; mutation disrupting this coordination would impair reversible O2 binding and destabilize the heme environment."
+      },
+      {
+        "text": "Increased 2,3-BPG binding to myoglobin increases oxygen unloading",
+        "isCorrect": false,
+        "rationale": "Wrong because 2,3-BPG acts on hemoglobin, not myoglobin; this would be correct only if myoglobin had a 2,3-BPG binding pocket."
+      },
+      {
+        "text": "Enhanced carbamate formation on N-termini increases oxygen affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because carbamate formation pertains to hemoglobin and lowers affinity; this would be correct only if myoglobin carried CO2 similarly."
+      },
+      {
+        "text": "Mutation converts myoglobin into a tetrameric cooperative protein",
+        "isCorrect": false,
+        "rationale": "Wrong because a single residue change would not create tetrameric quaternary structure and cooperativity; this would be correct only with extensive structural changes."
+      },
+      {
+        "text": "Mutation increases heme exposure causing higher oxygen affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because loss of coordinating histidine typically reduces proper binding and affinity; this would be correct only if exposure paradoxically stabilized O2 binding."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following experimental manipulations would most directly stabilize the T-form of hemoglobin in vitro?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe allosteric effectors that stabilize the T-form of hemoglobin",
+    "options": [
+      {
+        "text": "Add 2,3-BPG to deoxygenated hemoglobin solution",
+        "isCorrect": true,
+        "rationale": "Correct because 2,3-BPG binds deoxyhemoglobin and stabilizes the T-form, decreasing O2 affinity."
+      },
+      {
+        "text": "Increase pH to alkaline values in the hemoglobin solution",
+        "isCorrect": false,
+        "rationale": "Wrong because higher pH favors the R-form and increases affinity; this would be correct only if alkalinity stabilized T-form."
+      },
+      {
+        "text": "Add carbon monoxide to the hemoglobin solution",
+        "isCorrect": false,
+        "rationale": "Wrong because CO binds tightly and shifts hemoglobin toward the R-form increasing affinity; this would be correct only if CO favored T-form."
+      },
+      {
+        "text": "Remove protons by buffering to very high pH",
+        "isCorrect": false,
+        "rationale": "Wrong because removing protons destabilizes T-form and favors R-form; this would be correct only if proton removal stabilized T-form."
+      },
+      {
+        "text": "Add an agent that covalently crosslinks alpha and beta chains",
+        "isCorrect": false,
+        "rationale": "Wrong because covalent crosslinking is not described as a physiological stabilizer of T-form; this would be correct only if crosslinking mimicked T-form polar bonds."
+      }
+    ]
+  },
+  {
+    "question": "A clinician considers transfusing multiple units of blood stored for 4 weeks into a patient with active tissue ischemia. Based on the lecture, what immediate physiologic concern should guide management?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the result of long-term storage of donated blood on 2,3-BPG levels and the possible consequences of transfusing old blood",
+    "options": [
+      {
+        "text": "Stored blood has low 2,3-BPG causing impaired oxygen unloading to ischemic tissues",
+        "isCorrect": true,
+        "rationale": "Correct because stored blood loses 2,3-BPG over time, shifting hemoglobin left and reducing O2 unloading until 2,3-BPG is restored, which may worsen ischemia."
+      },
+      {
+        "text": "Stored blood has increased 2,3-BPG improving oxygen delivery immediately",
+        "isCorrect": false,
+        "rationale": "Wrong because storage decreases 2,3-BPG; this would be correct only if storage induced 2,3-BPG accumulation."
+      },
+      {
+        "text": "Stored blood contains high CO levels that displace oxygen at lungs",
+        "isCorrect": false,
+        "rationale": "Wrong because storage effects discussed are 2,3-BPG loss, not CO contamination; this would be correct only if blood were contaminated with CO."
+      },
+      {
+        "text": "Stored blood increases methemoglobin causing inability to bind oxygen",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture emphasizes 2,3-BPG loss rather than methemoglobin formation; this would be correct only if oxidation occurred during storage."
+      },
+      {
+        "text": "Stored blood has increased bicarbonate that prevents oxygen unloading",
+        "isCorrect": false,
+        "rationale": "Wrong because bicarbonate changes are not the primary storage concern described; this would be correct only if bicarbonate accumulation altered pH significantly."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why hemoglobin can transport CO2 even though most CO2 is carried as bicarbonate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the binding of carbon dioxide to hemoglobin and its transport as bicarbonate",
+    "options": [
+      {
+        "text": "Some CO2 forms carbamates on N-termini, stabilizing T-form and aiding transport",
+        "isCorrect": true,
+        "rationale": "Correct because a portion of CO2 binds as carbamate to N-terminal amino groups of hemoglobin, stabilizing the T-form and contributing to CO2 transport."
+      },
+      {
+        "text": "CO2 binds to heme iron forming carboxyhemoglobin for transport",
+        "isCorrect": false,
+        "rationale": "Wrong because CO2 does not bind heme iron; CO forms carboxyhemoglobin. This would be correct only if CO2 behaved like CO."
+      },
+      {
+        "text": "CO2 is covalently attached to 2,3-BPG for RBC transport",
+        "isCorrect": false,
+        "rationale": "Wrong because CO2 transport involves bicarbonate and carbamates, not covalent attachment to 2,3-BPG; this would be correct only if 2,3-BPG chemically bound CO2."
+      },
+      {
+        "text": "CO2 dissolves in plasma only and hemoglobin is not involved",
+        "isCorrect": false,
+        "rationale": "Wrong because hemoglobin contributes via carbamate formation; this would be correct only if hemoglobin had no role in CO2 carriage."
+      },
+      {
+        "text": "CO2 is converted to methane in RBCs for transport",
+        "isCorrect": false,
+        "rationale": "Wrong because CO2 is converted to bicarbonate, not methane; this would be correct only if an alternative metabolic pathway existed."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a mutation that prevents formation of ionic bonds between hemoglobin dimers would most likely show which functional abnormality?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the functional significance of the T and R forms of hemoglobin and how inter-dimer bonds change with oxygenation",
+    "options": [
+      {
+        "text": "Impaired cooperative transition between low and high affinity states",
+        "isCorrect": true,
+        "rationale": "Correct because weaker or absent polar bonds between dimers would disrupt the T-to-R transition and reduce cooperativity, altering the sigmoidal binding behavior."
+      },
+      {
+        "text": "Increased 2,3-BPG binding causing excessive unloading",
+        "isCorrect": false,
+        "rationale": "Wrong because 2,3-BPG binds between beta chains and its effect depends on T-form stability; this would be correct only if mutation increased the 2,3-BPG pocket affinity."
+      },
+      {
+        "text": "Complete inability to bind oxygen at any pO2",
+        "isCorrect": false,
+        "rationale": "Wrong because loss of inter-dimer ionic bonds would affect cooperativity but not necessarily abolish all O2 binding; this would be correct only if heme sites were destroyed."
+      },
+      {
+        "text": "Conversion of hemoglobin into a monomeric myoglobin-like protein",
+        "isCorrect": false,
+        "rationale": "Wrong because preventing ionic bonds between dimers may alter quaternary dynamics but would not convert subunits into a stable monomeric protein; this would be correct only with extensive structural changes."
+      },
+      {
+        "text": "Increased affinity for CO2 due to exposed N-termini",
+        "isCorrect": false,
+        "rationale": "Wrong because ionic bond loss affects cooperativity more than CO2 binding; this would be correct only if N-termini exposure specifically enhanced carbamate formation."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes why hemoglobin's affinity for oxygen is lower than myoglobin's at tissue pO2 values?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the oxygen binding properties of hemoglobin and myoglobin",
+    "options": [
+      {
+        "text": "Allosteric effectors and cooperativity lower hemoglobin affinity in tissues",
+        "isCorrect": true,
+        "rationale": "Correct because hemoglobin's affinity is modulated by heme-heme interactions and effectors (pH, CO2, 2,3-BPG), producing lower affinity in tissues compared with myoglobin."
+      },
+      {
+        "text": "Hemoglobin lacks heme groups and cannot bind oxygen strongly",
+        "isCorrect": false,
+        "rationale": "Wrong because hemoglobin contains heme groups; this would be correct only if hemoglobin lacked heme entirely."
+      },
+      {
+        "text": "Myoglobin is extracellular and therefore binds oxygen more weakly",
+        "isCorrect": false,
+        "rationale": "Wrong because myoglobin is intracellular and binds O2 with higher affinity; this would be correct only if myoglobin were extracellular and low affinity."
+      },
+      {
+        "text": "Hemoglobin is monomeric causing lower affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because hemoglobin is tetrameric; monomeric proteins like myoglobin typically have higher affinity without cooperativity."
+      },
+      {
+        "text": "Hemoglobin binds oxygen irreversibly reducing apparent affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because hemoglobin binds reversibly; irreversible binding would not support physiological O2 transport."
+      }
+    ]
+  },
+  {
+    "question": "A patient with elevated tissue CO2 will have increased carbamate formation on hemoglobin. Which immediate effect on oxygen binding does the lecture predict?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the effect of CO2 binding on hemoglobin and its impact on oxygen affinity",
+    "options": [
+      {
+        "text": "Stabilization of T-form and decreased oxygen affinity",
+        "isCorrect": true,
+        "rationale": "Correct because carbamate formation stabilizes the deoxy (T) form, producing a right shift and lowering O2 affinity to promote unloading."
+      },
+      {
+        "text": "Stabilization of R-form and increased oxygen affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because carbamates stabilize T-form; this would be correct only if carbamate formation favored R-form."
+      },
+      {
+        "text": "No effect on oxygen affinity but increased 2,3-BPG binding",
+        "isCorrect": false,
+        "rationale": "Wrong because carbamate formation directly affects affinity; this would be correct only if carbamates were functionally neutral."
+      },
+      {
+        "text": "Conversion of hemoglobin to methemoglobin increasing oxygen affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because carbamate formation does not produce methemoglobin; this would be correct only if oxidation occurred."
+      },
+      {
+        "text": "Immediate expulsion of 2,3-BPG increasing oxygen affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because carbamate formation stabilizes T-form and does not expel 2,3-BPG; this would be correct only if carbamates destabilized 2,3-BPG binding."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why fetal hemoglobin (not detailed in lecture) would, if present, alter oxygen transfer between mother and fetus? (Use only lecture principles about affinity and effectors.)",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Interpret the oxygen dissociation curve for hemoglobin and the functional significance of a left or right shift in the curve",
+    "options": [
+      {
+        "text": "Higher fetal hemoglobin affinity would shift curve left facilitating placental oxygen uptake",
+        "isCorrect": true,
+        "rationale": "Correct by applying lecture principles: a left-shifted hemoglobin has higher affinity, enabling fetal blood to extract O2 from maternal blood across the placenta."
+      },
+      {
+        "text": "Higher fetal hemoglobin affinity would shift curve right reducing placental uptake",
+        "isCorrect": false,
+        "rationale": "Wrong because higher affinity corresponds to left shift and improved uptake; this would be correct only if higher affinity paradoxically caused right shift."
+      },
+      {
+        "text": "Lower fetal hemoglobin affinity would increase placental oxygen extraction",
+        "isCorrect": false,
+        "rationale": "Wrong because lower affinity (right shift) would impair extraction from maternal blood; this would be correct only if maternal pO2 were extremely high."
+      },
+      {
+        "text": "Fetal hemoglobin increases 2,3-BPG binding causing maternal unloading",
+        "isCorrect": false,
+        "rationale": "Wrong because 2,3-BPG lowers affinity; fetal hemoglobin typically has higher affinity and less 2,3-BPG effect. This would be correct only if fetal Hb bound 2,3-BPG more strongly."
+      },
+      {
+        "text": "Fetal hemoglobin forms carbamates increasing maternal oxygen affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because carbamate formation lowers affinity; this would be correct only if carbamates increased affinity in maternal blood."
+      }
+    ]
+  },
+  {
+    "question": "A lab measures oxygen binding to hemoglobin in the presence of increasing CO concentrations. Which combined effects on hemoglobin function are predicted by the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast the binding of carbon monoxide to hemoglobin and its functional consequences",
+    "options": [
+      {
+        "text": "CO occupies sites and increases remaining sites' affinity, reducing tissue unloading",
+        "isCorrect": true,
+        "rationale": "Correct because CO binds with much higher affinity, occupies heme sites, and shifts hemoglobin toward the R-form, increasing O2 affinity of remaining sites and impairing unloading."
+      },
+      {
+        "text": "CO displaces 2,3-BPG causing right shift and improved unloading",
+        "isCorrect": false,
+        "rationale": "Wrong because CO increases affinity and causes left shift; displacement of 2,3-BPG leading to right shift contradicts the lecture."
+      },
+      {
+        "text": "CO increases carbamate formation enhancing CO2 transport",
+        "isCorrect": false,
+        "rationale": "Wrong because carbamate formation is due to CO2, not CO; this would be correct only if CO promoted carbamate chemistry."
+      },
+      {
+        "text": "CO reduces heme iron to Fe3+ preventing oxygen binding",
+        "isCorrect": false,
+        "rationale": "Wrong because CO binds Fe2+ tightly rather than oxidizing it; this would be correct only if CO caused methemoglobin formation."
+      },
+      {
+        "text": "CO increases hemoglobin cooperativity causing greater unloading",
+        "isCorrect": false,
+        "rationale": "Wrong because CO increases affinity and reduces unloading despite any cooperativity changes; this would be correct only if CO enhanced negative cooperativity."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the role of hydrophobic and polar interactions within the hemoglobin tetramer as oxygen binds?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe quaternary interactions and how oxygen binding alters intersubunit bonds",
+    "options": [
+      {
+        "text": "Hydrophobic interactions stabilize dimers; polar bonds between dimers change with oxygenation",
+        "isCorrect": true,
+        "rationale": "Correct because hydrophobic forces hold alphabeta dimers together while weaker ionic and hydrogen bonds between dimers vary depending on oxygen binding (T vs R)."
+      },
+      {
+        "text": "Polar bonds stabilize dimers while hydrophobic bonds change with oxygenation",
+        "isCorrect": false,
+        "rationale": "Wrong because hydrophobic interactions primarily stabilize each dimer; this would be correct only if polar bonds dominated intra-dimer stability."
+      },
+      {
+        "text": "All interactions are covalent and unaffected by oxygen binding",
+        "isCorrect": false,
+        "rationale": "Wrong because subunit associations are noncovalent and oxygenation alters polar bonds; this would be correct only if covalent crosslinks existed."
+      },
+      {
+        "text": "Hydrophobic interactions are lost upon oxygen binding causing dissociation",
+        "isCorrect": false,
+        "rationale": "Wrong because oxygenation alters polar bonds between dimers but does not abolish hydrophobic intra-dimer interactions or cause dissociation; this would be correct only if binding caused dissociation."
+      },
+      {
+        "text": "Ionic bonds form only after oxygen binding creating the R-form",
+        "isCorrect": false,
+        "rationale": "Wrong because ionic bonds between dimers exist in the T-form and are partially ruptured upon oxygen binding; this would be correct only if ionic bonds formed upon oxygenation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a rare hemoglobin variant has positively charged residues replaced in the central cavity between beta chains. Based on lecture principles, which effect on 2,3-BPG binding and oxygen affinity is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the 2,3-BPG binding site and how charge interactions affect hemoglobin affinity",
+    "options": [
+      {
+        "text": "Reduced 2,3-BPG binding leading to higher oxygen affinity and left shift",
+        "isCorrect": true,
+        "rationale": "Correct because 2,3-BPG binds via interactions with positively charged residues between beta chains; loss of these residues would reduce binding, increasing O2 affinity (left shift)."
+      },
+      {
+        "text": "Increased 2,3-BPG binding leading to lower oxygen affinity and right shift",
+        "isCorrect": false,
+        "rationale": "Wrong because removing positive charges would not increase 2,3-BPG binding; this would be correct only if negative charges were introduced to enhance binding."
+      },
+      {
+        "text": "No change in 2,3-BPG binding but increased carbamate formation",
+        "isCorrect": false,
+        "rationale": "Wrong because central cavity charges directly affect 2,3-BPG binding; this would be correct only if mutation spared the binding pocket."
+      },
+      {
+        "text": "Conversion of hemoglobin to myoglobin-like monomers with unchanged affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because point changes in cavity residues affect ligand binding, not gross quaternary conversion; this would be correct only with massive structural alterations."
+      },
+      {
+        "text": "Increased CO binding due to exposed heme sites",
+        "isCorrect": false,
+        "rationale": "Wrong because central cavity charge changes affect 2,3-BPG, not directly CO binding at heme; this would be correct only if heme exposure were altered."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best summarizes why hemoglobin's oxygen dissociation curve has a steep slope over physiological pO2 ranges?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the functional significance of the sigmoidal oxygen dissociation curve for hemoglobin",
+    "options": [
+      {
+        "text": "Cooperative binding allows large changes in saturation with small pO2 changes",
+        "isCorrect": true,
+        "rationale": "Correct because the sigmoidal curve reflects cooperativity, enabling hemoglobin to load in lungs and unload in tissues with relatively small pO2 differences."
+      },
+      {
+        "text": "Independent binding sites produce steep saturation changes",
+        "isCorrect": false,
+        "rationale": "Wrong because independent sites yield hyperbolic curves with less steepness; this would be correct only if sites were noncooperative."
+      },
+      {
+        "text": "High myoglobin concentration in blood causes steep slope",
+        "isCorrect": false,
+        "rationale": "Wrong because myoglobin is intracellular and not responsible for hemoglobin's curve; this would be correct only if myoglobin dominated blood O2 binding."
+      },
+      {
+        "text": "2,3-BPG binding flattens the curve making it hyperbolic",
+        "isCorrect": false,
+        "rationale": "Wrong because 2,3-BPG shifts the curve right but does not remove cooperativity; this would be correct only if 2,3-BPG abolished cooperativity."
+      },
+      {
+        "text": "Carbamate formation causes a left shift producing steep slope",
+        "isCorrect": false,
+        "rationale": "Wrong because carbamate formation stabilizes T-form and shifts right; left shift is not caused by carbamates."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute respiratory failure has rising arterial CO2 and falling pH. According to lecture mechanisms, which immediate effect on hemoglobin oxygen binding will occur and why?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the Bohr effect and how CO2 and H+ affect hemoglobin oxygen affinity",
+    "options": [
+      {
+        "text": "Decreased oxygen affinity due to protonation and carbamate formation promoting unloading",
+        "isCorrect": true,
+        "rationale": "Correct because increased CO2 leads to bicarbonate and H+ production and carbamate formation; protonation stabilizes T-form and lowers O2 affinity, enhancing unloading."
+      },
+      {
+        "text": "Increased oxygen affinity due to CO2 binding to heme iron",
+        "isCorrect": false,
+        "rationale": "Wrong because CO2 does not bind heme iron to increase affinity; this would be correct only if CO2 acted like CO."
+      },
+      {
+        "text": "No change in oxygen affinity because 2,3-BPG is the only regulator",
+        "isCorrect": false,
+        "rationale": "Wrong because pH and CO2 (Bohr effect) also regulate affinity; this would be correct only if pH and CO2 had no effect."
+      },
+      {
+        "text": "Immediate increase in 2,3-BPG causing left shift and reduced unloading",
+        "isCorrect": false,
+        "rationale": "Wrong because 2,3-BPG changes are slower and increased 2,3-BPG causes right shift; left shift is inconsistent with lecture."
+      },
+      {
+        "text": "Conversion of hemoglobin to methemoglobin increasing oxygen delivery",
+        "isCorrect": false,
+        "rationale": "Wrong because methemoglobin formation reduces O2 binding and is not the mechanism described; this would be correct only if oxidation occurred."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best represents a dangerous distractor regarding hemoglobin function that might mislead a student who confuses CO and CO2 effects?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast the binding of carbon dioxide and carbon monoxide to hemoglobin",
+    "options": [
+      {
+        "text": "CO binds to heme and stabilizes R-form increasing oxygen affinity",
+        "isCorrect": true,
+        "rationale": "Correct because CO binds heme with high affinity and shifts hemoglobin toward the relaxed form, increasing O2 affinity and impairing unloading."
+      },
+      {
+        "text": "CO2 binds to heme iron forming carboxyhemoglobin increasing affinity",
+        "isCorrect": false,
+        "rationale": "Wrong because CO2 forms carbamates on N-termini, not carboxyhemoglobin; this would be correct only if CO2 bound heme like CO."
+      },
+      {
+        "text": "CO forms carbamates on N-termini stabilizing T-form",
+        "isCorrect": false,
+        "rationale": "Wrong because carbamates are formed by CO2, not CO; this would be correct only if CO chemically formed carbamates."
+      },
+      {
+        "text": "CO2 increases 2,3-BPG binding causing left shift",
+        "isCorrect": false,
+        "rationale": "Wrong because increased 2,3-BPG causes right shift; this would be correct only if 2,3-BPG had opposite effect."
+      },
+      {
+        "text": "CO oxidizes iron to Fe3+ preventing oxygen binding",
+        "isCorrect": false,
+        "rationale": "Wrong because CO binds Fe2+ tightly rather than oxidizing it; this would be correct only if CO caused methemoglobin formation."
+      }
+    ]
+  }
+]
