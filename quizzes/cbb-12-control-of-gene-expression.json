@@ -1,0 +1,1218 @@
+[
+  {
+    "question": "A bacterial culture is shifted from high glucose to no glucose with lactose available; which molecular event most directly increases transcription of the lactose-utilization genes?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how glucose and/or lactose affect gene expression from the lac operon",
+    "options": [
+      {
+        "text": "Formation of cAMP–CAP complex",
+        "isCorrect": true,
+        "rationale": "Correct: In the absence of glucose, adenylyl cyclase produces cAMP which binds CAP; the cAMP–CAP complex binds the CAP site and enhances transcription initiation."
+      },
+      {
+        "text": "Increased repressor binding to operator",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased repressor binding would block transcription; this would be correct only if allolactose were absent and repressor remained active."
+      },
+      {
+        "text": "Methylation of promoter DNA",
+        "isCorrect": false,
+        "rationale": "Wrong: DNA methylation is a eukaryotic regulatory mechanism discussed separately; it would only increase repression if promoter methylation occurred."
+      },
+      {
+        "text": "Alternative splicing of lac mRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Alternative splicing is a eukaryotic posttranscriptional mechanism and does not apply to bacterial lac operon; it would be relevant only in eukaryotic transcripts."
+      },
+      {
+        "text": "Proteolytic activation of RNA polymerase",
+        "isCorrect": false,
+        "rationale": "Wrong: Proteolytic activation of RNA polymerase is not described in the lecture as a lac operon control; transcriptional activation is mediated by CAP–cAMP and repressor removal."
+      }
+    ]
+  },
+  {
+    "question": "Which small molecule produced when lactose is taken up binds the repressor and permits transcription of the lactose genes?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how glucose and/or lactose affect gene expression from the lac operon",
+    "options": [
+      {
+        "text": "Allolactose produced from lactose",
+        "isCorrect": true,
+        "rationale": "Correct: A small amount of lactose is converted to allolactose which binds the lac repressor, causing a conformational change that prevents operator binding and allows transcription."
+      },
+      {
+        "text": "cAMP produced by adenylyl cyclase",
+        "isCorrect": false,
+        "rationale": "Wrong: cAMP binds CAP to enhance transcription but does not bind the repressor; this would be correct only for catabolite activation, not repressor inactivation."
+      },
+      {
+        "text": "Glucose directly inactivating repressor",
+        "isCorrect": false,
+        "rationale": "Wrong: Glucose inhibits adenylyl cyclase and reduces cAMP; it does not directly inactivate the lac repressor. Direct repressor inactivation requires allolactose."
+      },
+      {
+        "text": "Lactose methylated to signal",
+        "isCorrect": false,
+        "rationale": "Wrong: Lactose methylation is not a mechanism described; conversion to allolactose, not methylation, is the relevant event."
+      },
+      {
+        "text": "Operator DNA acetylated to release repressor",
+        "isCorrect": false,
+        "rationale": "Wrong: Histone acetylation is a eukaryotic chromatin mechanism; acetylation of operator DNA is not described in prokaryotic lac regulation."
+      }
+    ]
+  },
+  {
+    "question": "A mutant E. coli strain cannot produce cAMP. Given lactose present and glucose absent, which outcome best describes lac operon expression?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how glucose and/or lactose affect gene expression from the lac operon",
+    "options": [
+      {
+        "text": "Low transcription despite repressor removal",
+        "isCorrect": true,
+        "rationale": "Correct: Without cAMP, CAP cannot bind the CAP site, so even if allolactose inactivates the repressor, RNA polymerase initiation is inefficient and transcription remains low."
+      },
+      {
+        "text": "High transcription due to repressor absence",
+        "isCorrect": false,
+        "rationale": "Wrong: Repressor removal alone is insufficient for high expression; CAP–cAMP binding is also required for efficient initiation, so this would be correct only if cAMP were present."
+      },
+      {
+        "text": "Complete repression by CAP binding",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP binding activates transcription rather than repressing it; this option would be correct only if CAP acted as a repressor, which it does not."
+      },
+      {
+        "text": "mRNA editing producing truncated enzymes",
+        "isCorrect": false,
+        "rationale": "Wrong: mRNA editing is a eukaryotic posttranscriptional mechanism and not relevant to lac operon transcriptional control in bacteria."
+      },
+      {
+        "text": "Increased DNA methylation silencing operon",
+        "isCorrect": false,
+        "rationale": "Wrong: DNA methylation as described in the lecture is a eukaryotic regulatory mechanism; it does not explain the bacterial phenotype here."
+      }
+    ]
+  },
+  {
+    "question": "Which DNA element in eukaryotic genes can act at large distances and in a tissue-specific manner to increase transcription?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how promoters, enhancers, and transcription factors work to influence gene expression",
+    "options": [
+      {
+        "text": "Enhancer or cis regulatory element",
+        "isCorrect": true,
+        "rationale": "Correct: Enhancers (cis-acting regulatory elements) can be located thousands of base pairs away, upstream or downstream, and act tissue-specifically via transcription factor binding."
+      },
+      {
+        "text": "Operator sequence adjacent to promoter",
+        "isCorrect": false,
+        "rationale": "Wrong: Operators are prokaryotic regulatory sites that bind repressors; they do not explain long-distance, tissue-specific activation in eukaryotes."
+      },
+      {
+        "text": "Polyadenylation signal in 3 prime UTR",
+        "isCorrect": false,
+        "rationale": "Wrong: Polyadenylation signals affect mRNA processing and stability, not long-distance transcriptional activation by tissue-specific factors."
+      },
+      {
+        "text": "TATA box within coding region",
+        "isCorrect": false,
+        "rationale": "Wrong: The TATA box is a core promoter element near the transcription start site, not a distal tissue-specific enhancer; it would be relevant only if located at the promoter."
+      },
+      {
+        "text": "PEST sequence in protein coding region",
+        "isCorrect": false,
+        "rationale": "Wrong: PEST sequences target proteins for degradation and do not function as DNA regulatory elements; this would be correct only if discussing protein half-life."
+      }
+    ]
+  },
+  {
+    "question": "A transcription factor contains a DNA-binding domain and an activation domain; what is the primary role of the activation domain?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how promoters, enhancers, and transcription factors work to influence gene expression",
+    "options": [
+      {
+        "text": "Recruit coactivators and RNA polymerase",
+        "isCorrect": true,
+        "rationale": "Correct: The activation domain interacts with other transcription factors, RNA polymerase II, and coactivators (including chromatin modifiers) to stabilize initiation complex formation."
+      },
+      {
+        "text": "Directly bind operator DNA sequences",
+        "isCorrect": false,
+        "rationale": "Wrong: DNA binding is the role of the DNA-binding domain, not the activation domain; this would be correct only if the domain also contained DNA-binding motifs."
+      },
+      {
+        "text": "Catalyze acetylation of histones",
+        "isCorrect": false,
+        "rationale": "Wrong: Activation domains recruit chromatin modifiers but do not themselves enzymatically acetylate histones; this would be correct only if the factor had intrinsic enzymatic activity."
+      },
+      {
+        "text": "Signal for mRNA polyadenylation",
+        "isCorrect": false,
+        "rationale": "Wrong: Polyadenylation is a posttranscriptional event unrelated to activation domain function; it would be relevant only to mRNA processing."
+      },
+      {
+        "text": "Promote alternative splicing decisions",
+        "isCorrect": false,
+        "rationale": "Wrong: Alternative splicing is regulated during mRNA processing and is not the direct role of a transcription factor activation domain; it would be correct only if the factor influenced splicing machinery."
+      }
+    ]
+  },
+  {
+    "question": "Which chromatin modification described reduces histone positive charge and increases DNA accessibility?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "Histone acetylation by acetyltransferases",
+        "isCorrect": true,
+        "rationale": "Correct: Adding acetyl groups neutralizes positive charges on histones, reducing affinity for DNA and increasing accessibility for transcription."
+      },
+      {
+        "text": "DNA hypermethylation of promoter CpGs",
+        "isCorrect": false,
+        "rationale": "Wrong: DNA methylation typically silences genes by reducing accessibility; this would be correct only if the question asked about gene silencing."
+      },
+      {
+        "text": "PEST motif addition to histone tails",
+        "isCorrect": false,
+        "rationale": "Wrong: PEST sequences target proteins for degradation and are not histone modifications that alter charge; this would be correct only if histone degradation were the mechanism."
+      },
+      {
+        "text": "mRNA editing converting C to U",
+        "isCorrect": false,
+        "rationale": "Wrong: mRNA editing alters transcript sequence posttranscriptionally and does not change histone charge; it would be relevant only to Apo B editing."
+      },
+      {
+        "text": "Removal of poly A tail from nascent RNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Poly-A tail length affects mRNA stability, not histone–DNA interactions; this would be correct only for posttranscriptional regulation."
+      }
+    ]
+  },
+  {
+    "question": "A hepatocyte exposed to glucagon shows increased cAMP and activated PKA; which transcription factor is phosphorylated and promotes expression of gluconeogenic genes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the control of PEPCK transcription by glucagon and cortisol",
+    "options": [
+      {
+        "text": "CREB phosphorylated and activated",
+        "isCorrect": true,
+        "rationale": "Correct: Glucagon raises cAMP, activates PKA, which phosphorylates CREB; phosphorylated CREB binds CRE and induces PEPCK transcription."
+      },
+      {
+        "text": "Glucocorticoid receptor dimerization",
+        "isCorrect": false,
+        "rationale": "Wrong: Glucocorticoid receptor activation is the cortisol pathway; this would be correct only if cortisol, not glucagon, were the stimulus."
+      },
+      {
+        "text": "NF kappa B nuclear translocation",
+        "isCorrect": false,
+        "rationale": "Wrong: NF-κB is not the primary mediator of glucagon-induced PEPCK expression; it would be relevant only in inflammatory signaling contexts."
+      },
+      {
+        "text": "SP1 binding to TATA box",
+        "isCorrect": false,
+        "rationale": "Wrong: SP1 is a general transcription factor but not the specific CREB-mediated response to glucagon; this would be correct only if SP1 were phosphorylated and CRE absent."
+      },
+      {
+        "text": "Histone deacetylase recruitment",
+        "isCorrect": false,
+        "rationale": "Wrong: HDAC recruitment generally represses transcription; this would be correct only if chromatin condensation, not activation, were occurring."
+      }
+    ]
+  },
+  {
+    "question": "A patient receives high-dose corticosteroids; which nuclear event directly increases transcription of PEPCK in hepatocytes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the control of PEPCK transcription by glucagon and cortisol",
+    "options": [
+      {
+        "text": "Steroid receptor binds GRE sequences",
+        "isCorrect": true,
+        "rationale": "Correct: Cortisol diffuses into cells, binds its intracellular receptor; the hormone–receptor complex dimerizes, enters the nucleus, and binds GREs to induce PEPCK transcription."
+      },
+      {
+        "text": "cAMP accumulation and CREB activation",
+        "isCorrect": false,
+        "rationale": "Wrong: cAMP–CREB is the glucagon pathway; this would be correct only if glucagon signaling, not cortisol, were the dominant stimulus."
+      },
+      {
+        "text": "miRNA-mediated PEPCK mRNA degradation",
+        "isCorrect": false,
+        "rationale": "Wrong: miRNA-mediated degradation reduces expression; this would be correct only if a specific miRNA targeting PEPCK were upregulated."
+      },
+      {
+        "text": "Alternative splicing producing active isoform",
+        "isCorrect": false,
+        "rationale": "Wrong: Alternative splicing affects mRNA isoforms and is not the immediate mechanism by which cortisol induces transcription; it would be relevant only if splicing regulated PEPCK activity."
+      },
+      {
+        "text": "CAP–cAMP complex binding promoter",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP is a bacterial activator and not involved in eukaryotic cortisol signaling; this would be correct only in prokaryotic contexts."
+      }
+    ]
+  },
+  {
+    "question": "Which posttranscriptional process allows a single pre-mRNA to produce tissue-specific protein isoforms?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "Alternative splicing of pre mRNA",
+        "isCorrect": true,
+        "rationale": "Correct: Alternative splice site usage generates multiple mRNA isoforms from one pre-mRNA, producing tissue-specific protein variants as described for tropomyosin."
+      },
+      {
+        "text": "miRNA guided mRNA cleavage",
+        "isCorrect": false,
+        "rationale": "Wrong: miRNA-mediated RNA interference reduces expression by cleavage or translational repression, not by creating isoforms; it would be correct only if isoform abundance were altered indirectly."
+      },
+      {
+        "text": "DNA methylation altering exon sequence",
+        "isCorrect": false,
+        "rationale": "Wrong: DNA methylation affects transcriptional activity, not exon composition; this would be correct only if methylation changed splice site recognition indirectly."
+      },
+      {
+        "text": "Histone acetylation changing codons",
+        "isCorrect": false,
+        "rationale": "Wrong: Histone acetylation affects chromatin accessibility, not the nucleotide sequence of exons; it would be correct only if transcription start sites shifted."
+      },
+      {
+        "text": "Poly A tail shortening creating isoforms",
+        "isCorrect": false,
+        "rationale": "Wrong: Poly-A tail length influences mRNA stability and translation, not exon inclusion; this would be correct only if alternative polyadenylation produced different 3' exons."
+      }
+    ]
+  },
+  {
+    "question": "An investigator introduces a synthetic short double-stranded RNA complementary to a target mRNA into cultured cells; which outcome best matches the mechanism described in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "RISC-mediated target mRNA degradation",
+        "isCorrect": true,
+        "rationale": "Correct: Synthetic siRNA is processed and the guide strand associates with RISC, which hybridizes to target mRNA and promotes degradation or translational repression."
+      },
+      {
+        "text": "Increased translation via cap binding",
+        "isCorrect": false,
+        "rationale": "Wrong: RNAi reduces translation or increases degradation; increased cap-dependent translation would be correct only if an activator RNA were introduced."
+      },
+      {
+        "text": "C to U editing of target codons",
+        "isCorrect": false,
+        "rationale": "Wrong: mRNA editing (C to U) alters bases but is not the mechanism of siRNA-induced silencing; this would be correct only if an editing enzyme were targeted to the transcript."
+      },
+      {
+        "text": "Histone methylation at target gene promoter",
+        "isCorrect": false,
+        "rationale": "Wrong: RNAi acts posttranscriptionally on mRNA, not by directly methylating promoter DNA; this would be correct only if secondary chromatin effects occurred."
+      },
+      {
+        "text": "Alternative splicing of the targeted pre mRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: siRNA targets mature mRNA for degradation or translational repression; alternative splicing would be relevant only if splicing factors were altered."
+      }
+    ]
+  },
+  {
+    "question": "Which specific mRNA editing event in intestinal cells converts the Apo-B transcript to produce a shorter protein used in chylomicron assembly?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how mRNA editing is used to produce the Apo B-48 protein from the Apo-B-100 mRNA",
+    "options": [
+      {
+        "text": "C to U deamination creating stop codon",
+        "isCorrect": true,
+        "rationale": "Correct: In intestinal cells, editing converts a CAA codon to UAA (C→U), changing a glutamine codon to a stop codon and producing Apo B-48 instead of Apo B-100."
+      },
+      {
+        "text": "A to I editing producing missense codon",
+        "isCorrect": false,
+        "rationale": "Wrong: A→I editing alters adenosine to inosine but is not the mechanism described for Apo B; this would be correct only if A→I changed the reading frame to create a stop."
+      },
+      {
+        "text": "Insertion of premature poly A signal",
+        "isCorrect": false,
+        "rationale": "Wrong: Polyadenylation site insertion affects transcript length but the lecture specifies base deamination (C→U) as the Apo B editing mechanism."
+      },
+      {
+        "text": "Alternative splicing removing downstream exons",
+        "isCorrect": false,
+        "rationale": "Wrong: Alternative splicing can shorten proteins but Apo B-48 formation is due to mRNA base editing creating a stop codon, not exon removal."
+      },
+      {
+        "text": "miRNA cleavage at downstream coding region",
+        "isCorrect": false,
+        "rationale": "Wrong: miRNA-mediated cleavage degrades mRNA and would not produce a stable truncated protein isoform as described for Apo B-48."
+      }
+    ]
+  },
+  {
+    "question": "Which DNA modification pattern is associated with transcriptionally inactive gene regions in eukaryotes?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "Hypermethylation of promoter CpG islands",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states that inactive or silenced genes are more methylated (hypermethylated), which correlates with reduced transcription."
+      },
+      {
+        "text": "Global histone acetylation across locus",
+        "isCorrect": false,
+        "rationale": "Wrong: Histone acetylation increases accessibility and is associated with active genes; this would be correct only if the locus were transcriptionally active."
+      },
+      {
+        "text": "Increased poly A tail length on nascent RNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Poly-A tail length affects mRNA stability, not DNA methylation status; it would be relevant only posttranscriptionally."
+      },
+      {
+        "text": "CAP–cAMP binding to upstream site",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP is a bacterial activator and not a eukaryotic DNA modification; this would be correct only in prokaryotic contexts."
+      },
+      {
+        "text": "PEPCK promoter demethylation causing repression",
+        "isCorrect": false,
+        "rationale": "Wrong: Demethylation generally correlates with activation; demethylation causing repression contradicts the lecture and would be correct only with additional repressive factors."
+      }
+    ]
+  },
+  {
+    "question": "A researcher finds a gene with a GC box, CAAT box, and TATA box near its start site; what are these elements primarily involved in?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how promoters, enhancers, and transcription factors work to influence gene expression",
+    "options": [
+      {
+        "text": "Basal promoter recognition and initiation",
+        "isCorrect": true,
+        "rationale": "Correct: These consensus sequences are promoter elements where general transcription factors and RNA polymerase II assemble to initiate transcription."
+      },
+      {
+        "text": "Long distance enhancer mediated activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhancers act at a distance and are distinct from core promoter elements; this would be correct only if the elements were enhancer motifs."
+      },
+      {
+        "text": "miRNA binding in 3 prime UTR",
+        "isCorrect": false,
+        "rationale": "Wrong: miRNA binding sites are in UTRs and regulate translation/stability, not basal promoter recognition; this would be correct only for posttranscriptional control."
+      },
+      {
+        "text": "Operator binding for repressor proteins",
+        "isCorrect": false,
+        "rationale": "Wrong: Operators are prokaryotic regulatory sites; promoter boxes in eukaryotes serve different roles and would be correct only in bacterial genes."
+      },
+      {
+        "text": "Alternative splicing regulatory sequences",
+        "isCorrect": false,
+        "rationale": "Wrong: Splicing regulatory sequences are within introns/exons and affect splice site choice, not core promoter-driven initiation."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best contrasts general transcription factors with specific transcription factors?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "General factors assemble basal complex",
+        "isCorrect": true,
+        "rationale": "Correct: General transcription factors (e.g., TFIID) are required for assembly of the basal transcription complex at promoters, while specific factors bind enhancers to regulate tissue-specific expression."
+      },
+      {
+        "text": "Specific factors form basal polymerase complex",
+        "isCorrect": false,
+        "rationale": "Wrong: Specific factors regulate gene-specific activation via enhancers; they do not generally form the basal polymerase complex, which is the role of general factors."
+      },
+      {
+        "text": "General factors edit mRNA sequences",
+        "isCorrect": false,
+        "rationale": "Wrong: mRNA editing is a posttranscriptional process distinct from general transcription factor function; this would be correct only if a factor had dual roles."
+      },
+      {
+        "text": "Specific factors methylate promoter DNA",
+        "isCorrect": false,
+        "rationale": "Wrong: DNA methylation is performed by methyltransferases, not typical transcription factors; this would be correct only if a factor recruited methyltransferases."
+      },
+      {
+        "text": "General factors mediate RNA interference",
+        "isCorrect": false,
+        "rationale": "Wrong: RNA interference is mediated by small RNAs and RISC, not general transcription factors; this would be correct only in an indirect regulatory scenario."
+      }
+    ]
+  },
+  {
+    "question": "A patient with fasting hypoglycemia has elevated glucagon and cortisol; which combined effect on hepatocyte gene expression would most increase gluconeogenesis?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast the control of PEPCK transcription by glucagon and cortisol",
+    "options": [
+      {
+        "text": "CREB activation plus glucocorticoid receptor binding",
+        "isCorrect": true,
+        "rationale": "Correct: Glucagon activates cAMP–PKA–CREB while cortisol activates the glucocorticoid receptor binding GREs; both pathways synergistically induce PEPCK transcription and gluconeogenesis."
+      },
+      {
+        "text": "Increased miRNA targeting PEPCK mRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: miRNA targeting would decrease PEPCK expression; this would be correct only if specific miRNAs were downregulated to relieve repression."
+      },
+      {
+        "text": "Histone deacetylation at PEPCK promoter",
+        "isCorrect": false,
+        "rationale": "Wrong: Histone deacetylation generally represses transcription; this would be correct only if chromatin became more condensed, reducing PEPCK expression."
+      },
+      {
+        "text": "CAP–cAMP binding to PEPCK promoter",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP is a bacterial activator and not involved in eukaryotic PEPCK regulation; this would be correct only in prokaryotic gene control."
+      },
+      {
+        "text": "Alternative splicing producing active PEPCK isoform",
+        "isCorrect": false,
+        "rationale": "Wrong: PEPCK regulation in the lecture is transcriptional via CRE and GRE; alternative splicing is not described as the primary mechanism for PEPCK activation."
+      }
+    ]
+  },
+  {
+    "question": "A lab assay shows a liver cell line with high PEPCK mRNA but low PEPCK protein; which posttranscriptional mechanism from the lecture could explain reduced protein despite abundant transcript?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "miRNA mediated translational repression",
+        "isCorrect": true,
+        "rationale": "Correct: RNA interference via miRNAs can repress translation or promote mRNA degradation; translational repression would yield high mRNA with low protein levels."
+      },
+      {
+        "text": "C to U editing creating premature stop",
+        "isCorrect": false,
+        "rationale": "Wrong: C→U editing can create stop codons (as in Apo B) and would reduce protein length or abundance, but the lecture emphasizes miRNA for translational repression; this would be correct only if editing occurred in PEPCK mRNA."
+      },
+      {
+        "text": "Histone acetylation increasing transcription",
+        "isCorrect": false,
+        "rationale": "Wrong: Histone acetylation increases transcription and would not explain low protein relative to mRNA; this would be correct only if transcription were low despite acetylation."
+      },
+      {
+        "text": "Alternative promoter usage producing noncoding RNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Alternative promoter usage could alter transcripts but the lecture highlights miRNA as a posttranscriptional regulator; this would be correct only if the transcript were noncoding."
+      },
+      {
+        "text": "CAP–cAMP absence preventing translation",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP affects transcription in bacteria and does not directly regulate eukaryotic translation; this would be correct only in prokaryotic contexts."
+      }
+    ]
+  },
+  {
+    "question": "A mutation prevents formation of the lac repressor protein; which phenotype best matches this change in E. coli grown without glucose and without lactose?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how glucose and/or lactose affect gene expression from the lac operon",
+    "options": [
+      {
+        "text": "Low operon expression due to no inducer",
+        "isCorrect": true,
+        "rationale": "Correct: Without repressor, the operator is unblocked, but in the absence of lactose (no allolactose) and with glucose absent, CAP–cAMP is required; however, without inducer the system may still have low basal expression as described in the lecture."
+      },
+      {
+        "text": "High operon expression regardless of sugars",
+        "isCorrect": false,
+        "rationale": "Wrong: Constitutive expression can occur with repressor loss, but efficient transcription also requires CAP–cAMP; this would be correct only if CAP–cAMP were present and glucose absent."
+      },
+      {
+        "text": "Operon silenced by DNA methylation",
+        "isCorrect": false,
+        "rationale": "Wrong: DNA methylation is a eukaryotic silencing mechanism and not the immediate cause in bacteria; this would be correct only if methylation machinery targeted the operon."
+      },
+      {
+        "text": "Increased mRNA editing producing stop codons",
+        "isCorrect": false,
+        "rationale": "Wrong: mRNA editing is not a bacterial lac operon mechanism; this would be correct only if editing enzymes altered lac transcripts."
+      },
+      {
+        "text": "CAP–cAMP complex constitutively bound",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP binding depends on cAMP levels and is not caused by repressor absence; this would be correct only if adenylyl cyclase were constitutively active."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental manipulation would most directly test whether a distal DNA region increases transcription by looping to the promoter?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how promoters, enhancers, and transcription factors work to influence gene expression",
+    "options": [
+      {
+        "text": "Delete distal element and measure transcription",
+        "isCorrect": true,
+        "rationale": "Correct: Removing the putative enhancer and assessing transcription tests whether that distal region contributes to promoter activity, consistent with enhancer function and DNA bending described in the lecture."
+      },
+      {
+        "text": "Mutate TATA box and measure splicing",
+        "isCorrect": false,
+        "rationale": "Wrong: TATA box mutation affects basal initiation, not directly testing distal enhancer looping; measuring splicing would be irrelevant unless splicing were hypothesized to change."
+      },
+      {
+        "text": "Increase DNA methylation at coding region",
+        "isCorrect": false,
+        "rationale": "Wrong: Methylating the coding region may affect expression indirectly but does not specifically test enhancer–promoter looping; this would be correct only if methylation disrupted enhancer binding."
+      },
+      {
+        "text": "Introduce siRNA against promoter sequence",
+        "isCorrect": false,
+        "rationale": "Wrong: siRNA targets RNA, not DNA looping; this would be correct only if promoter-derived RNA mediated looping."
+      },
+      {
+        "text": "Overexpress PEST containing protein",
+        "isCorrect": false,
+        "rationale": "Wrong: PEST sequences affect protein degradation and do not test DNA looping; this would be correct only if a PEST protein regulated enhancer activity indirectly."
+      }
+    ]
+  },
+  {
+    "question": "Which feature of enhancers explains how they can act from thousands of base pairs away from the gene they regulate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how promoters, enhancers, and transcription factors work to influence gene expression",
+    "options": [
+      {
+        "text": "DNA bending brings enhancer close",
+        "isCorrect": true,
+        "rationale": "Correct: DNA bending allows distal enhancer-bound transcription factors to interact with the basal transcription machinery at the promoter, enabling long-range regulation."
+      },
+      {
+        "text": "Enhancer sequences recruit ribosomes",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhancers recruit transcription factors and coactivators, not ribosomes; this would be correct only if the element were an internal ribosome entry site."
+      },
+      {
+        "text": "Enhancers methylate promoter CpG islands",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhancers do not directly methylate DNA; they recruit activators that can influence chromatin state, but direct methylation is performed by methyltransferases."
+      },
+      {
+        "text": "Enhancer binding causes alternative splicing",
+        "isCorrect": false,
+        "rationale": "Wrong: While transcription factors can influence splicing indirectly, enhancers primarily affect transcription initiation via DNA looping; this would be correct only with additional splicing-coupled mechanisms."
+      },
+      {
+        "text": "Enhancers encode small regulatory peptides",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhancers are noncoding DNA regulatory elements and do not encode peptides; this would be correct only if the region contained an unrecognized ORF."
+      }
+    ]
+  },
+  {
+    "question": "A mutation in a transcriptional activator prevents it from recruiting histone acetyltransferase; which immediate chromatin change would you expect at its target gene?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "Reduced histone acetylation and accessibility",
+        "isCorrect": true,
+        "rationale": "Correct: Activation domains recruit chromatin modifiers like histone acetyltransferases; loss of recruitment reduces acetylation, increasing histone–DNA affinity and lowering accessibility."
+      },
+      {
+        "text": "Increased DNA C to U editing frequency",
+        "isCorrect": false,
+        "rationale": "Wrong: mRNA editing (C→U) is posttranscriptional and unrelated to histone acetylation; this would be correct only if editing enzymes were misregulated by the activator."
+      },
+      {
+        "text": "Enhanced CAP–cAMP binding at promoter",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP is a bacterial activator and not relevant to eukaryotic histone acetylation; this would be correct only in prokaryotic systems."
+      },
+      {
+        "text": "Immediate increase in poly A tail length",
+        "isCorrect": false,
+        "rationale": "Wrong: Poly-A tail length is a posttranscriptional modification and would not immediately follow loss of HAT recruitment; this would be correct only with downstream effects on mRNA stability."
+      },
+      {
+        "text": "Constitutive activation of RNA interference",
+        "isCorrect": false,
+        "rationale": "Wrong: RNAi is mediated by small RNAs and RISC and is not directly activated by loss of HAT recruitment; this would be correct only if compensatory pathways were engaged."
+      }
+    ]
+  },
+  {
+    "question": "Which mechanism described explains why housekeeping genes are expressed constitutively across cell types?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "Constitutive promoter activity and chromatin state",
+        "isCorrect": true,
+        "rationale": "Correct: Housekeeping genes have promoters and chromatin configurations that favor constant expression and are not subject to tissue-specific enhancer control."
+      },
+      {
+        "text": "Tissue specific enhancer activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Tissue-specific enhancers confer regulated expression, not constitutive expression; this would be correct only for regulated genes."
+      },
+      {
+        "text": "miRNA mediated constant repression",
+        "isCorrect": false,
+        "rationale": "Wrong: Constant miRNA repression would reduce expression, not maintain constitutive expression; this would be correct only if repression were absent."
+      },
+      {
+        "text": "Frequent mRNA editing producing active isoforms",
+        "isCorrect": false,
+        "rationale": "Wrong: mRNA editing alters transcripts but is not the primary reason for constitutive expression; this would be correct only if editing were required for activity."
+      },
+      {
+        "text": "Operator mediated repressor binding",
+        "isCorrect": false,
+        "rationale": "Wrong: Operator–repressor systems are prokaryotic and typically regulate inducible genes; this would be correct only in bacterial housekeeping contexts."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental observation would most strongly indicate that a small RNA is functioning through RISC to silence a target transcript?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "Guide strand association with Argonaute and cleavage",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes that the guide strand of miRNA associates with RISC (including Argonaute) and hybridizes to target mRNA leading to cleavage or translational repression, which would be direct evidence."
+      },
+      {
+        "text": "Increased histone acetylation at target locus",
+        "isCorrect": false,
+        "rationale": "Wrong: Histone acetylation is chromatin-level activation and not direct evidence of RISC-mediated silencing; this would be correct only if secondary chromatin changes occurred."
+      },
+      {
+        "text": "C to U editing of the target mRNA codon",
+        "isCorrect": false,
+        "rationale": "Wrong: mRNA editing changes bases and is distinct from RISC-mediated cleavage; this would be correct only if editing enzymes were recruited by the small RNA."
+      },
+      {
+        "text": "Alternative splicing pattern shifts in pre mRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Splicing changes are not direct evidence of RISC activity; this would be correct only if the small RNA affected splicing regulators."
+      },
+      {
+        "text": "CAP–cAMP complex formation at promoter",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP is a bacterial transcription activator and unrelated to RISC; this would be correct only in prokaryotic gene regulation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a genetic defect in adenylyl cyclase cannot raise intracellular cAMP in hepatocytes during fasting; which hormonal pathway for PEPCK induction will be impaired?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast the control of PEPCK transcription by glucagon and cortisol",
+    "options": [
+      {
+        "text": "Glucagon mediated cAMP–PKA–CREB pathway",
+        "isCorrect": true,
+        "rationale": "Correct: Glucagon signals via adenylyl cyclase to raise cAMP and activate PKA and CREB; a defect in adenylyl cyclase impairs this glucagon-induced PEPCK induction."
+      },
+      {
+        "text": "Cortisol receptor mediated GRE activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Cortisol acts via intracellular receptors and GRE binding independent of cAMP; this pathway would remain intact despite adenylyl cyclase defect."
+      },
+      {
+        "text": "miRNA dependent PEPCK degradation",
+        "isCorrect": false,
+        "rationale": "Wrong: miRNA-mediated degradation is posttranscriptional and not directly dependent on adenylyl cyclase; this would be correct only if miRNA regulation were altered."
+      },
+      {
+        "text": "CAP–cAMP dependent promoter activation",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP is a bacterial mechanism and not relevant to hepatocyte PEPCK regulation; this would be correct only in prokaryotic contexts."
+      },
+      {
+        "text": "Histone acetylation driven PEPCK induction",
+        "isCorrect": false,
+        "rationale": "Wrong: Histone acetylation can modulate transcription but the immediate impairment from adenylyl cyclase loss specifically affects the glucagon–cAMP–CREB pathway."
+      }
+    ]
+  },
+  {
+    "question": "Which molecular change in intestinal cells converts Apo B-100 mRNA into a transcript that yields Apo B-48 protein?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how mRNA editing is used to produce the Apo B-48 protein from the Apo-B-100 mRNA",
+    "options": [
+      {
+        "text": "Cytidine deamination producing U stop codon",
+        "isCorrect": true,
+        "rationale": "Correct: Editing deaminates a cytidine to uridine (C→U), converting a glutamine codon (CAA) to a stop codon (UAA), producing the truncated Apo B-48 protein in intestinal cells."
+      },
+      {
+        "text": "Adenosine deamination producing inosine",
+        "isCorrect": false,
+        "rationale": "Wrong: A→I editing alters adenosine to inosine but is not the mechanism for Apo B editing; this would be correct only if A→I created a stop codon at the relevant site."
+      },
+      {
+        "text": "Alternative promoter usage creating shorter mRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture specifies base editing (C→U) as the mechanism for Apo B-48 formation, not alternative promoter usage; this would be correct only if a shorter transcript were produced."
+      },
+      {
+        "text": "miRNA cleavage removing downstream coding region",
+        "isCorrect": false,
+        "rationale": "Wrong: miRNA cleavage degrades mRNA and would not produce a stable truncated protein isoform as described for Apo B-48."
+      },
+      {
+        "text": "Histone methylation causing exon skipping",
+        "isCorrect": false,
+        "rationale": "Wrong: Histone methylation affects chromatin and can influence splicing indirectly, but Apo B-48 formation is due to direct mRNA base editing."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes why eukaryotic gene regulation is generally more complex than prokaryotic regulation, according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how promoters, enhancers, and transcription factors work to influence gene expression",
+    "options": [
+      {
+        "text": "Chromatin structure and multiple control layers",
+        "isCorrect": true,
+        "rationale": "Correct: Eukaryotic DNA is packaged into chromatin, making the default state relatively off and requiring chromatin modifiers, enhancers, and multiple regulatory layers for precise control."
+      },
+      {
+        "text": "Absence of transcription factors in eukaryotes",
+        "isCorrect": false,
+        "rationale": "Wrong: Eukaryotes have many transcription factors; absence would not explain complexity. This would be correct only if transcription factors were lacking."
+      },
+      {
+        "text": "Single promoter controlling entire genome",
+        "isCorrect": false,
+        "rationale": "Wrong: Eukaryotic genes have individual promoters and regulatory elements; a single promoter would simplify regulation, not complicate it."
+      },
+      {
+        "text": "CAP–cAMP dependent operon architecture",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP operons are prokaryotic features; they do not account for eukaryotic regulatory complexity described in the lecture."
+      },
+      {
+        "text": "Universal mRNA editing across all genes",
+        "isCorrect": false,
+        "rationale": "Wrong: mRNA editing occurs for specific transcripts (e.g., Apo B) and is not universal; this would be correct only if editing were pervasive."
+      }
+    ]
+  },
+  {
+    "question": "A researcher observes that a gene is active only in muscle cells because a DNA region binds factors present only in muscle; which lecture concept explains this tissue specificity?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how promoters, enhancers, and transcription factors work to influence gene expression",
+    "options": [
+      {
+        "text": "Tissue specific enhancer binding proteins",
+        "isCorrect": true,
+        "rationale": "Correct: Enhancers can act in a tissue-specific manner if the DNA-binding proteins (transcription factors) are present only in certain tissues, enabling selective gene activation."
+      },
+      {
+        "text": "Global histone acetylation in all tissues",
+        "isCorrect": false,
+        "rationale": "Wrong: Global acetylation would promote expression in many tissues, not tissue-specific activation; this would be correct only if acetylation were muscle-specific."
+      },
+      {
+        "text": "CAP–cAMP presence only in muscle",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP is a bacterial activator and not relevant to eukaryotic tissue specificity; this would be correct only in prokaryotic analogs."
+      },
+      {
+        "text": "miRNA expression exclusively in liver",
+        "isCorrect": false,
+        "rationale": "Wrong: miRNA expression in liver would repress targets there, not explain muscle-specific activation; this would be correct only if miRNAs repressed the gene elsewhere."
+      },
+      {
+        "text": "Alternative splicing producing muscle isoform",
+        "isCorrect": false,
+        "rationale": "Wrong: Alternative splicing can produce tissue-specific isoforms but does not by itself explain transcriptional activation restricted to muscle; this would be correct only if transcription occurred broadly but splicing restricted protein function."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental result would indicate that histone acetyltransferase activity increases transcription at a locus?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "Increased histone acetylation and mRNA levels",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains that histone acetylation reduces histone positive charge, loosening DNA–histone interactions and increasing accessibility, which should correlate with higher mRNA levels."
+      },
+      {
+        "text": "Decreased DNA methylation with lower transcription",
+        "isCorrect": false,
+        "rationale": "Wrong: Decreased methylation typically correlates with increased transcription; lower transcription despite demethylation would contradict expected relationships."
+      },
+      {
+        "text": "Elevated miRNA levels and increased protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased miRNA usually reduces protein expression; this would be correct only if miRNA targeted a repressor of the gene."
+      },
+      {
+        "text": "CAP–cAMP binding correlating with acetylation",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP is bacterial and not directly linked to eukaryotic HAT activity; this would be correct only in prokaryotic contexts."
+      },
+      {
+        "text": "Alternative splicing changes without transcriptional change",
+        "isCorrect": false,
+        "rationale": "Wrong: Splicing changes do not directly indicate increased transcription; this would be correct only if splicing alterations coincided with transcriptional activation."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why some genes are regulated rather than constitutively expressed?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "Expression only when needed by cell type",
+        "isCorrect": true,
+        "rationale": "Correct: Regulated genes are required only in certain cell types or conditions and are subject to control mechanisms that determine when they are expressed."
+      },
+      {
+        "text": "Random promoter activation across genome",
+        "isCorrect": false,
+        "rationale": "Wrong: Gene regulation is not random; it is controlled by specific elements and factors. Random activation would not account for precise tissue- and condition-specific expression."
+      },
+      {
+        "text": "Universal miRNA repression in all tissues",
+        "isCorrect": false,
+        "rationale": "Wrong: Universal miRNA repression would silence genes broadly rather than allow regulated, condition-dependent expression; this would be correct only if repression were relieved in specific contexts."
+      },
+      {
+        "text": "CAP–cAMP dependent constitutive activation",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP is a bacterial activator and does not explain eukaryotic regulated gene expression; this would be correct only in prokaryotic systems."
+      },
+      {
+        "text": "Permanent DNA methylation of all regulated genes",
+        "isCorrect": false,
+        "rationale": "Wrong: Permanent methylation would permanently silence genes; regulated genes are often reversibly controlled, not permanently methylated."
+      }
+    ]
+  },
+  {
+    "question": "A clinician considers using siRNA therapy to reduce expression of a pathogenic protein; based on lecture mechanisms, what is the most likely immediate molecular action of the therapeutic siRNA?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "Guide strand directs RISC to cleave mRNA",
+        "isCorrect": true,
+        "rationale": "Correct: Therapeutic siRNA functions like endogenous miRNA: the guide strand associates with RISC and hybridizes to target mRNA, leading to cleavage or translational repression and reduced protein."
+      },
+      {
+        "text": "siRNA recruits histone acetyltransferase complex",
+        "isCorrect": false,
+        "rationale": "Wrong: siRNA acts posttranscriptionally via RISC, not by recruiting HATs; this would be correct only if siRNA induced secondary chromatin changes indirectly."
+      },
+      {
+        "text": "siRNA edits C to U in target transcript",
+        "isCorrect": false,
+        "rationale": "Wrong: siRNA does not perform base editing; C→U editing is mediated by deaminases and is a different mechanism described for Apo B."
+      },
+      {
+        "text": "siRNA increases poly A tail length enhancing stability",
+        "isCorrect": false,
+        "rationale": "Wrong: siRNA reduces stability or translation; increasing poly-A tail length would increase stability and contradict the intended silencing effect."
+      },
+      {
+        "text": "siRNA binds promoter preventing transcription",
+        "isCorrect": false,
+        "rationale": "Wrong: siRNA targets mRNA in the cytoplasm via RISC rather than binding DNA promoters; this would be correct only in rare transcriptional gene-silencing contexts not emphasized in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the role of the lacI gene product in lac operon regulation?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how glucose and/or lactose affect gene expression from the lac operon",
+    "options": [
+      {
+        "text": "Constitutively produced repressor protein",
+        "isCorrect": true,
+        "rationale": "Correct: The lacI gene is constitutively expressed and encodes the repressor that binds the operator to block RNA polymerase unless allolactose inactivates it."
+      },
+      {
+        "text": "CAP binding protein activated by cAMP",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP is a separate activator protein that binds cAMP; lacI encodes the repressor, not CAP. This would be correct only if lacI encoded CAP, which it does not."
+      },
+      {
+        "text": "Enzyme converting lactose to allolactose",
+        "isCorrect": false,
+        "rationale": "Wrong: Enzymes like β-galactosidase convert lactose to allolactose; lacI encodes the repressor, not the enzyme. This would be correct only if lacI encoded that enzyme."
+      },
+      {
+        "text": "Operator DNA sequence adjacent to promoter",
+        "isCorrect": false,
+        "rationale": "Wrong: The operator is a DNA sequence, not a gene product; lacI encodes a protein that binds the operator. This would be correct only if lacI were a DNA element."
+      },
+      {
+        "text": "Adenylyl cyclase regulatory subunit",
+        "isCorrect": false,
+        "rationale": "Wrong: Adenylyl cyclase produces cAMP and is not encoded by lacI; this would be correct only in a hypothetical mutant context."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following is a direct consequence of histone deacetylase activity at a gene locus?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "Increased histone positive charge and repression",
+        "isCorrect": true,
+        "rationale": "Correct: Histone deacetylases remove acetyl groups, restoring positive charges on histones, increasing affinity for DNA, and reducing transcriptional accessibility."
+      },
+      {
+        "text": "Conversion of C to U in mRNA codons",
+        "isCorrect": false,
+        "rationale": "Wrong: mRNA C→U editing is a posttranscriptional event and not a direct effect of HDAC activity; this would be correct only if HDAC indirectly influenced editing enzymes."
+      },
+      {
+        "text": "Recruitment of CAP–cAMP to promoter",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP is a bacterial activator unrelated to eukaryotic HDACs; this would be correct only in prokaryotic analogies."
+      },
+      {
+        "text": "Immediate increase in alternative splicing",
+        "isCorrect": false,
+        "rationale": "Wrong: While chromatin state can influence splicing, HDAC activity primarily affects chromatin compaction and transcriptional repression; splicing changes would be indirect."
+      },
+      {
+        "text": "Enhanced polyadenylation of nascent transcripts",
+        "isCorrect": false,
+        "rationale": "Wrong: Polyadenylation is a posttranscriptional processing event and not a direct consequence of histone deacetylation."
+      }
+    ]
+  },
+  {
+    "question": "Which lecture-described mechanism would most likely be targeted to shorten the half-life of a specific protein in the cell?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "Presence of PEST sequence targeting degradation",
+        "isCorrect": true,
+        "rationale": "Correct: PEST sequences in proteins target them for degradation, shortening protein half-life as described in the lecture."
+      },
+      {
+        "text": "DNA hypermethylation of coding region",
+        "isCorrect": false,
+        "rationale": "Wrong: DNA methylation affects transcriptional activity, not direct protein half-life; this would be correct only if methylation reduced synthesis leading to lower steady-state protein."
+      },
+      {
+        "text": "Increased histone acetylation at promoter",
+        "isCorrect": false,
+        "rationale": "Wrong: Histone acetylation increases transcription and would not shorten protein half-life; this would be correct only if acetylation induced unstable isoforms."
+      },
+      {
+        "text": "miRNA mediated enhancement of translation",
+        "isCorrect": false,
+        "rationale": "Wrong: miRNAs typically repress translation or promote degradation, not enhance translation; this would be correct only in rare contexts where miRNA stabilizes transcripts."
+      },
+      {
+        "text": "Alternative splicing producing longer protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Producing a longer protein does not necessarily shorten half-life; PEST sequences specifically target proteins for degradation as described."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a mutation that prevents CREB phosphorylation is given glucagon; which immediate transcriptional response regarding PEPCK is expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast the control of PEPCK transcription by glucagon and cortisol",
+    "options": [
+      {
+        "text": "Impaired glucagon induced PEPCK transcription",
+        "isCorrect": true,
+        "rationale": "Correct: Glucagon increases cAMP and activates PKA, which phosphorylates CREB; phosphorylated CREB binds CRE to induce PEPCK, so inability to phosphorylate CREB impairs this induction."
+      },
+      {
+        "text": "Enhanced cortisol mediated PEPCK induction",
+        "isCorrect": false,
+        "rationale": "Wrong: Cortisol acts via the glucocorticoid receptor and GREs independently of CREB phosphorylation; enhanced cortisol response would require increased receptor signaling, not CREB mutation."
+      },
+      {
+        "text": "Increased miRNA degradation of PEPCK mRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: miRNA-mediated degradation is a separate posttranscriptional mechanism and would not be the immediate consequence of defective CREB phosphorylation."
+      },
+      {
+        "text": "Constitutive CAP–cAMP activation of PEPCK",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP is bacterial and not applicable to eukaryotic PEPCK regulation; this would be correct only in prokaryotic analogies."
+      },
+      {
+        "text": "Alternative splicing producing active CREB isoform",
+        "isCorrect": false,
+        "rationale": "Wrong: Alternative splicing could theoretically produce different CREB isoforms, but the lecture emphasizes phosphorylation as the activation mechanism; this would be correct only if splicing restored phosphorylation capability."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following experimental findings would best support that a gene is silenced by DNA methylation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "Promoter CpG hypermethylation with low mRNA",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes that inactive or silenced genes are more methylated (hypermethylated); promoter CpG hypermethylation correlating with low transcript levels supports methylation-mediated silencing."
+      },
+      {
+        "text": "High histone acetylation with low transcription",
+        "isCorrect": false,
+        "rationale": "Wrong: High histone acetylation usually correlates with active transcription; low transcription despite acetylation would contradict expected relationships."
+      },
+      {
+        "text": "Increased miRNA levels with increased mRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased miRNA typically reduces mRNA or translation; increased mRNA with higher miRNA would be inconsistent and not evidence of methylation silencing."
+      },
+      {
+        "text": "CAP–cAMP binding correlating with gene silencing",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP activates transcription in bacteria and is unrelated to eukaryotic DNA methylation; this would be correct only in prokaryotic contexts."
+      },
+      {
+        "text": "C to U editing frequency increased with silencing",
+        "isCorrect": false,
+        "rationale": "Wrong: mRNA C→U editing affects transcript sequence and is not a primary marker of DNA methylation-mediated silencing."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains how enhancers can act when located within introns of other genes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how promoters, enhancers, and transcription factors work to influence gene expression",
+    "options": [
+      {
+        "text": "Enhancer binding factors loop to promoter",
+        "isCorrect": true,
+        "rationale": "Correct: Enhancers can be located within introns and still regulate distant promoters because DNA bending brings enhancer-bound factors into contact with the transcription-initiation complex."
+      },
+      {
+        "text": "Intronic enhancers are translated into peptides",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhancers are noncoding regulatory DNA and are not translated; this would be correct only if the intron contained an ORF producing a regulatory peptide."
+      },
+      {
+        "text": "Intronic enhancers methylate promoter CpGs",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhancers recruit activators rather than directly methylating DNA; methylation is performed by methyltransferases and would typically repress, not activate."
+      },
+      {
+        "text": "Enhancers cause alternative splicing of host gene",
+        "isCorrect": false,
+        "rationale": "Wrong: While regulatory elements can influence splicing indirectly, the primary mechanism for intronic enhancers is looping to promoters to activate transcription."
+      },
+      {
+        "text": "Enhancers function only when upstream of promoter",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhancers can act upstream, downstream, or within introns; the statement that they function only upstream contradicts the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following is the most plausible reason that over 90% of human genes undergo alternative splicing, as noted in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe, compare, and contrast the following mechanisms of gene expression regulation: general and specific transcription factors, alternative splicing, RNA interference, mRNA editing, and modification of DNA",
+    "options": [
+      {
+        "text": "Generate tissue specific protein diversity",
+        "isCorrect": true,
+        "rationale": "Correct: Alternative splicing allows a single gene to produce multiple protein isoforms tailored to different tissues, increasing proteomic diversity from a limited gene number."
+      },
+      {
+        "text": "Prevent transcription by removing promoters",
+        "isCorrect": false,
+        "rationale": "Wrong: Splicing affects mRNA exon composition, not promoter presence; preventing transcription by removing promoters is not a splicing function."
+      },
+      {
+        "text": "Directly methylate DNA to silence genes",
+        "isCorrect": false,
+        "rationale": "Wrong: DNA methylation is a separate mechanism; alternative splicing does not directly methylate DNA."
+      },
+      {
+        "text": "Produce miRNAs from coding exons",
+        "isCorrect": false,
+        "rationale": "Wrong: While some miRNAs derive from introns, alternative splicing's primary role is isoform generation, not miRNA production."
+      },
+      {
+        "text": "Encode CAP–cAMP responsive elements",
+        "isCorrect": false,
+        "rationale": "Wrong: CAP–cAMP elements are bacterial and unrelated to human alternative splicing; this would be correct only in prokaryotic contexts."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best represents a teachable near-miss distractor for the mechanism producing Apo B-48 that could mislead a student?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how mRNA editing is used to produce the Apo B-48 protein from the Apo-B-100 mRNA",
+    "options": [
+      {
+        "text": "Alternative splicing removing downstream exons",
+        "isCorrect": false,
+        "rationale": "Wrong: This is a plausible near-miss because exon removal can shorten proteins, but Apo B-48 formation is due to C→U editing creating a stop codon; exon removal would be correct only if splicing removed the downstream coding sequence."
+      },
+      {
+        "text": "C to U editing creating stop codon",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture specifies that editing converts CAA to UAA (C→U), changing a glutamine codon to a stop codon and producing Apo B-48 in intestinal cells."
+      },
+      {
+        "text": "miRNA mediated cleavage of Apo B mRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: miRNA cleavage would degrade the transcript rather than produce a stable truncated protein; this would be correct only if cleavage produced a stable truncated mRNA that was translated."
+      },
+      {
+        "text": "Premature polyadenylation truncating transcript",
+        "isCorrect": false,
+        "rationale": "Wrong: Premature polyadenylation can truncate transcripts but the lecture highlights base editing as the mechanism for Apo B-48; polyadenylation would be correct only if it created the same stop position."
+      },
+      {
+        "text": "A to I editing converting sense codon",
+        "isCorrect": false,
+        "rationale": "Wrong: A→I editing changes adenosine to inosine and can alter codons, but Apo B-48 formation is specifically C→U deamination; A→I would be correct only if it produced an equivalent stop codon."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best summarizes the two requirements for efficient transcription of the lac operon described in the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how glucose and/or lactose affect gene expression from the lac operon",
+    "options": [
+      {
+        "text": "CAP–cAMP binding and repressor removal",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states that transcription requires CAP–cAMP complex bound to the CAP site and removal of the repressor from the operator (e.g., by allolactose)."
+      },
+      {
+        "text": "DNA methylation and histone acetylation",
+        "isCorrect": false,
+        "rationale": "Wrong: These are eukaryotic chromatin modifications and not the primary requirements for lac operon transcription in bacteria."
+      },
+      {
+        "text": "Alternative splicing and polyadenylation",
+        "isCorrect": false,
+        "rationale": "Wrong: Alternative splicing and polyadenylation are posttranscriptional eukaryotic processes and do not determine lac operon transcription."
+      },
+      {
+        "text": "miRNA binding and RISC recruitment",
+        "isCorrect": false,
+        "rationale": "Wrong: miRNA–RISC mediated silencing reduces expression and is not required for lac operon activation; this would be correct only if silencing were relieved."
+      },
+      {
+        "text": "PEST sequence mediated protein degradation",
+        "isCorrect": false,
+        "rationale": "Wrong: PEST sequences affect protein half-life and are unrelated to transcriptional activation of the lac operon."
+      }
+    ]
+  }
+]
