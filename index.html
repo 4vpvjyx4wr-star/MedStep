@@ -6008,6 +6008,7 @@ function loadPersonalLibrary() {
   } catch (e) {
     personalLibrary = [];
   }
+  personalLibrary = applyClassLectureOrder(personalLibrary);
 }
 
 function savePersonalLibrary() {
@@ -6655,7 +6656,7 @@ async function refreshLibrary(options = {}) {
     if (!text || !text.trim().startsWith('[')) {
       throw new Error('manifest.json exists but is not a valid JSON array. Content received: ' + text.slice(0, 80));
     }
-    libraryManifest = JSON.parse(text);
+    libraryManifest = applyClassLectureOrder(JSON.parse(text));
     updateLibraryClassOptions();
     renderLibrary();
   } catch(e) {
@@ -6771,6 +6772,7 @@ async function toggleStageQuiz(entry, btn) {
   try {
     const json = await fetchQuizJSON(entry);
     stagedQuizzes.push({ file: entry.file, title: entry.title, json });
+    stagedQuizzes = applyClassLectureOrder(stagedQuizzes);
 
     // Paste merged JSON into the Manual tab textarea right away
     updateMegaInputFromStaged();
@@ -6787,7 +6789,7 @@ async function toggleStageQuiz(entry, btn) {
 }
 
 async function stageByScope(seed, scope) {
-  const matches = getActiveLibraryEntries().filter(e => {
+  let matches = getActiveLibraryEntries().filter(e => {
     if (String(e.block || '') !== String(seed.block || '')) return false;
     if (scope === 'week') {
       return String(e.exam || '') === String(seed.exam || '') &&
@@ -6795,6 +6797,7 @@ async function stageByScope(seed, scope) {
     }
     return String(e.exam || '') === String(seed.exam || '');
   });
+  matches = applyClassLectureOrder(matches);
   if (!matches.length) {
     showToast(`❌ No quizzes found for same ${scope}`);
     return;
@@ -6808,6 +6811,7 @@ async function stageByScope(seed, scope) {
       added++;
     } catch(e) { /* skip bad one */ }
   }
+  stagedQuizzes = applyClassLectureOrder(stagedQuizzes);
   updateMegaInputFromStaged();
   renderStagingArea();
   renderLibrary();
@@ -6835,6 +6839,7 @@ function unstageQuiz(file) {
 // Launch all staged quizzes as one combined quiz (no picker — direct launch)
 function launchStagedQuizzes() {
   if (!stagedQuizzes.length) { showToast('❌ No quizzes staged'); return; }
+  stagedQuizzes = applyClassLectureOrder(stagedQuizzes);
   updateMegaInputFromStaged();
   toggleLibrary();
   initQuiz();
@@ -6947,7 +6952,7 @@ async function openQPickerForScope(file, scope) {
   const seed = findLibraryEntry(file);
   if (!seed) { showToast('❌ Quiz entry not found'); return; }
   const pool = getActiveLibraryEntries();
-  const matches = pool.filter(e => {
+  let matches = pool.filter(e => {
     if (String(e.block || '') !== String(seed.block || '')) return false;
     if (scope === 'week') {
       return String(e.exam || '') === String(seed.exam || '') &&
@@ -6955,6 +6960,7 @@ async function openQPickerForScope(file, scope) {
     }
     return String(e.exam || '') === String(seed.exam || '');
   });
+  matches = applyClassLectureOrder(matches);
   if (!matches.length) { showToast('❌ No quizzes found for same ' + scope); return; }
 
   const label = scope === 'week'
@@ -6977,12 +6983,12 @@ async function openQPickerForFiltered() {
   const examFilter  = document.getElementById('lib-exam-filter')?.value || 'all';
   const weekFilter  = document.getElementById('lib-week-filter')?.value || 'all';
   const classFilter = document.getElementById('lib-class-filter')?.value || 'all';
-  const matches = getActiveLibraryEntries().filter(entry =>
+  const matches = applyClassLectureOrder(getActiveLibraryEntries().filter(entry =>
     entryMatchesLibFilter(entry, 'block', blockFilter) &&
     entryMatchesLibFilter(entry, 'exam', examFilter) &&
     entryMatchesLibFilter(entry, 'week', weekFilter) &&
     entryMatchesLibFilter(entry, 'class', classFilter)
-  );
+  ));
   if (!matches.length) { showToast('❌ No quizzes match current filters'); return; }
 
   const parts = [];
@@ -7138,7 +7144,11 @@ function clearBuildingQuiz() {
 function launchBuildingQuiz() {
   const flat = qpickerBuildingFlat();
   if (!flat.length) { showToast('❌ No questions added yet'); return; }
-  const all = [...flat];
+  // Order lecture chunks by class lecture number when labels are quiz titles
+  _qpickerBuildingChunks = applyClassLectureOrder(
+    _qpickerBuildingChunks.map(c => ({ title: c.label, file: c.label, label: c.label, questions: c.questions }))
+  ).map(c => ({ label: c.label, questions: c.questions }));
+  const all = [...qpickerBuildingFlat()];
   const meta = buildQPickerMeta();
   _qpickerBuildingChunks = [];
   renderStagingArea();
@@ -7171,12 +7181,12 @@ function renderLibrary() {
   const weekFilter = document.getElementById('lib-week-filter')?.value || 'all';
   const classFilter = document.getElementById('lib-class-filter')?.value || 'all';
   list.innerHTML = '';
-  const visible = entries.filter(entry =>
+  const visible = applyClassLectureOrder(entries.filter(entry =>
     entryMatchesLibFilter(entry, 'block', blockFilter) &&
     entryMatchesLibFilter(entry, 'exam', examFilter) &&
     entryMatchesLibFilter(entry, 'week', weekFilter) &&
     entryMatchesLibFilter(entry, 'class', classFilter)
-  );
+  ));
   if (librarySource === 'premade') renderBlockQuickView(libraryManifest);
   if (!visible.length) {
     list.innerHTML = '<div class="lib-status">No quizzes match these filters.</div>';
