@@ -1,0 +1,1378 @@
+[
+  {
+    "question": "A laboratory needs to detect a unique DNA fragment from a patient sample using a labeled complementary molecule. Which technique best accomplishes this task?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the principles and the applications of molecular biology techniques used in clinical laboratories for diagnostics and treatment decision making: Restriction enzymes, Electrophoresis, Blotting, ELISA, Microarray, standard PCR, qRT-PCR, Nucleotide sequencing, Flow cytometry, Fluorescence in situ hybridization, Recombinant DNA/Cloning, GWAS, CRISPR, Gene therapy, RNA vaccines",
+    "options": [
+      {
+        "text": "Transfer separated nucleic acids to membrane",
+        "isCorrect": true,
+        "rationale": "Correct because blotting transfers electrophoresed nucleic acids to a membrane for probe hybridization, matching the lecture description of Southern/Northern blot use."
+      },
+      {
+        "text": "Amplify target sequence using thermal cycling",
+        "isCorrect": false,
+        "rationale": "Wrong because PCR amplifies DNA but does not by itself use a labeled complementary probe on a membrane; it would be correct if the goal were to increase copy number prior to detection."
+      },
+      {
+        "text": "Label antibodies to detect protein antigens",
+        "isCorrect": false,
+        "rationale": "Wrong because antibody labeling detects proteins (ELISA/Western) rather than nucleic acid sequences; it would be correct if the target were a protein antigen."
+      },
+      {
+        "text": "Hybridize fluorescent probes to intact chromosomes",
+        "isCorrect": false,
+        "rationale": "Wrong because FISH labels chromosomal loci in situ rather than detecting separated fragments on a membrane; it would be correct for chromosomal copy number or location assessment."
+      },
+      {
+        "text": "Sequence the entire genome for variant identification",
+        "isCorrect": false,
+        "rationale": "Wrong because whole-genome sequencing provides sequence data but is not the described probe-based membrane detection; it would be correct if the objective were base-level sequence determination."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory method uses enzyme-linked secondary reagents to produce a color change proportional to target abundance in a serum sample?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the principles and the applications of molecular biology techniques used in clinical laboratories for diagnostics and treatment decision making: Restriction enzymes, Electrophoresis, Blotting, ELISA, Microarray, standard PCR, qRT-PCR, Nucleotide sequencing, Flow cytometry, Fluorescence in situ hybridization, Recombinant DNA/Cloning, GWAS, CRISPR, Gene therapy, RNA vaccines",
+    "options": [
+      {
+        "text": "Enzyme linked immunosorbent assay for antibodies",
+        "isCorrect": true,
+        "rationale": "Correct because ELISA uses enzyme-conjugated secondary antibodies and substrate to produce a measurable color change, as described in the lecture."
+      },
+      {
+        "text": "Gel electrophoresis separation of serum proteins",
+        "isCorrect": false,
+        "rationale": "Wrong because electrophoresis separates proteins by size and charge but does not use enzyme-linked detection; it would be correct if the goal were to separate protein fractions."
+      },
+      {
+        "text": "Western blot detection of specific protein bands",
+        "isCorrect": false,
+        "rationale": "Wrong because Western blot uses antibodies and membranes for protein detection but typically uses chemiluminescent or colorimetric substrates after transfer, not the plate-based ELISA format; it would be correct for membrane-based protein confirmation."
+      },
+      {
+        "text": "Flow cytometry counting of labeled cell populations",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry detects labeled cells in suspension rather than enzyme-linked colorimetric signals in wells; it would be correct for cell-surface marker quantitation."
+      },
+      {
+        "text": "qRT PCR quantitation of RNA transcripts",
+        "isCorrect": false,
+        "rationale": "Wrong because qRT-PCR quantifies nucleic acids via fluorescence during amplification, not enzyme-linked color change in wells; it would be correct for measuring transcript abundance."
+      }
+    ]
+  },
+  {
+    "question": "A clinician wants a rapid, semi-quantitative assessment of a protein's presence and approximate molecular weight from patient tissue. Which combined laboratory approach should be used?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the principles and the applications of molecular biology techniques used in clinical laboratories for diagnostics and treatment decision making: Restriction enzymes, Electrophoresis, Blotting, ELISA, Microarray, standard PCR, qRT-PCR, Nucleotide sequencing, Flow cytometry, Fluorescence in situ hybridization, Recombinant DNA/Cloning, GWAS, CRISPR, Gene therapy, RNA vaccines",
+    "options": [
+      {
+        "text": "Separate proteins then probe with specific antibody",
+        "isCorrect": true,
+        "rationale": "Correct because Western blot combines electrophoretic separation with antibody probing to identify protein size and approximate amount, as explained in the lecture."
+      },
+      {
+        "text": "Hybridize labeled DNA probes to RNA samples",
+        "isCorrect": false,
+        "rationale": "Wrong because that describes Northern blotting for RNA, not protein detection; it would be correct if the target were transcript size and expression."
+      },
+      {
+        "text": "Use ELISA plate assay for precise molecular weight",
+        "isCorrect": false,
+        "rationale": "Wrong because ELISA measures antigen presence and quantity but does not provide molecular weight information; it would be correct for quantitation without size determination."
+      },
+      {
+        "text": "Perform flow cytometry to determine protein size",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry measures cell-associated markers and physical properties, not protein molecular weight; it would be correct for cell population analysis."
+      },
+      {
+        "text": "Run restriction digest to map protein cleavage sites",
+        "isCorrect": false,
+        "rationale": "Wrong because restriction digests act on DNA sequences, not proteins; it would be correct if the question asked about DNA fragment mapping."
+      }
+    ]
+  },
+  {
+    "question": "Which method provides single-cell fluorescent labeling to enumerate cell subpopulations in a blood specimen?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the principles and the applications of molecular biology techniques used in clinical laboratories for diagnostics and treatment decision making: Restriction enzymes, Electrophoresis, Blotting, ELISA, Microarray, standard PCR, qRT-PCR, Nucleotide sequencing, Flow cytometry, Fluorescence in situ hybridization, Recombinant DNA/Cloning, GWAS, CRISPR, Gene therapy, RNA vaccines",
+    "options": [
+      {
+        "text": "Flow cytometry using fluorescently labeled antibodies",
+        "isCorrect": true,
+        "rationale": "Correct because flow cytometry detects fluorescence on individual cells in suspension, counting labeled subpopulations as described in the lecture."
+      },
+      {
+        "text": "Microarray hybridization of labeled cDNA probes",
+        "isCorrect": false,
+        "rationale": "Wrong because microarrays compare bulk gene expression across samples, not enumerate single cells; it would be correct for high-throughput expression profiling."
+      },
+      {
+        "text": "Southern blot detection of genomic DNA fragments",
+        "isCorrect": false,
+        "rationale": "Wrong because Southern blot identifies DNA fragments on membranes, not fluorescent single-cell counts; it would be correct for gene copy number detection."
+      },
+      {
+        "text": "ELISA plate assay measuring soluble proteins",
+        "isCorrect": false,
+        "rationale": "Wrong because ELISA measures soluble antigen or antibody in bulk, not single-cell fluorescence; it would be correct for serum protein quantitation."
+      },
+      {
+        "text": "FISH labeling of chromosomal loci in fixed cells",
+        "isCorrect": false,
+        "rationale": "Wrong because FISH visualizes DNA loci within intact cells and can show copy number but is not a high-throughput single-cell enumeration method like flow cytometry; it would be correct for chromosomal localization."
+      }
+    ]
+  },
+  {
+    "question": "A researcher needs to exponentially increase copies of a known DNA segment from a small clinical specimen. Which laboratory reagent set is essential for this thermal cycling process?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the principles and the applications of molecular biology techniques used in clinical laboratories for diagnostics and treatment decision making: Restriction enzymes, Electrophoresis, Blotting, ELISA, Microarray, standard PCR, qRT-PCR, Nucleotide sequencing, Flow cytometry, Fluorescence in situ hybridization, Recombinant DNA/Cloning, GWAS, CRISPR, Gene therapy, RNA vaccines",
+    "options": [
+      {
+        "text": "Heat stable DNA polymerase and sequence specific primers",
+        "isCorrect": true,
+        "rationale": "Correct because PCR requires a thermostable polymerase (Taq) and primers complementary to target sequences to drive exponential amplification, per the lecture."
+      },
+      {
+        "text": "Enzyme conjugated secondary antibody and substrate",
+        "isCorrect": false,
+        "rationale": "Wrong because enzyme-conjugated antibodies are used in ELISA/Western detection, not in thermal amplification; it would be correct for colorimetric immunoassays."
+      },
+      {
+        "text": "Fluorescently labeled oligonucleotide probes for chromosomes",
+        "isCorrect": false,
+        "rationale": "Wrong because fluorescent probes for chromosomes describe FISH, not PCR amplification; it would be correct for in situ chromosomal detection."
+      },
+      {
+        "text": "Restriction endonucleases to cleave target DNA",
+        "isCorrect": false,
+        "rationale": "Wrong because restriction enzymes cut DNA at specific sites but do not amplify sequences; it would be correct for fragment mapping or cloning preparation."
+      },
+      {
+        "text": "Ligase and circular plasmid for bacterial expression",
+        "isCorrect": false,
+        "rationale": "Wrong because ligase and plasmids are used for cloning and expression in bacteria, not for PCR amplification; it would be correct for recombinant protein production."
+      }
+    ]
+  },
+  {
+    "question": "Which assay is most appropriate to measure relative mRNA abundance from a tissue sample with high sensitivity and real-time quantitation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the principles and the applications of molecular biology techniques used in clinical laboratories for diagnostics and treatment decision making: Restriction enzymes, Electrophoresis, Blotting, ELISA, Microarray, standard PCR, qRT-PCR, Nucleotide sequencing, Flow cytometry, Fluorescence in situ hybridization, Recombinant DNA/Cloning, GWAS, CRISPR, Gene therapy, RNA vaccines",
+    "options": [
+      {
+        "text": "Reverse transcription followed by quantitative PCR",
+        "isCorrect": true,
+        "rationale": "Correct because qRT-PCR converts mRNA to cDNA and quantifies transcripts in real time, offering sensitive and accurate expression measurement as noted in the lecture."
+      },
+      {
+        "text": "Sanger sequencing of cDNA fragments for abundance",
+        "isCorrect": false,
+        "rationale": "Wrong because Sanger sequencing determines sequence but is not a quantitative real-time method for transcript abundance; it would be correct for sequence confirmation of a transcript."
+      },
+      {
+        "text": "Microarray hybridization comparing labeled cDNAs",
+        "isCorrect": false,
+        "rationale": "Wrong because microarrays compare many transcripts simultaneously but are less quantitative and not real-time; it would be correct for broad expression profiling between samples."
+      },
+      {
+        "text": "Western blot detection of translated protein products",
+        "isCorrect": false,
+        "rationale": "Wrong because Western blot measures protein levels, not mRNA abundance; it would be correct for assessing protein expression rather than transcripts."
+      },
+      {
+        "text": "Flow cytometry counting of cells expressing marker proteins",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry assesses cell-surface or intracellular proteins, not mRNA levels; it would be correct for cellular protein marker quantitation."
+      }
+    ]
+  },
+  {
+    "question": "A cytogeneticist observes three fluorescent signals for a particular chromosome probe in interphase nuclei. Which chromosomal abnormality does this pattern most directly indicate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the principles and the applications of molecular biology techniques used in clinical laboratories for diagnostics and treatment decision making: Restriction enzymes, Electrophoresis, Blotting, ELISA, Microarray, standard PCR, qRT-PCR, Nucleotide sequencing, Flow cytometry, Fluorescence in situ hybridization, Recombinant DNA/Cloning, GWAS, CRISPR, Gene therapy, RNA vaccines",
+    "options": [
+      {
+        "text": "Presence of an extra copy of that chromosome",
+        "isCorrect": true,
+        "rationale": "Correct because FISH signal counts correspond to copy number; three signals indicate trisomy for that chromosome as shown in the lecture example for chromosome 21."
+      },
+      {
+        "text": "Balanced reciprocal translocation without copy change",
+        "isCorrect": false,
+        "rationale": "Wrong because a balanced translocation typically preserves copy number and would not produce an extra signal; it would be correct if probe location were split across chromosomes without net gain."
+      },
+      {
+        "text": "Loss of one chromosome producing monosomy",
+        "isCorrect": false,
+        "rationale": "Wrong because monosomy would show a single signal, not three; it would be correct if only one signal were observed per nucleus."
+      },
+      {
+        "text": "Mosaicism with variable signal counts across cells",
+        "isCorrect": false,
+        "rationale": "Wrong because mosaicism implies mixed cell populations and variable counts; it would be correct if some cells showed two signals and others three."
+      },
+      {
+        "text": "Probe cross hybridization to unrelated loci",
+        "isCorrect": false,
+        "rationale": "Wrong because cross-hybridization could produce extra signals but is less likely than true trisomy; it would be correct if probe specificity were known to be poor."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory approach is most suitable for comparing expression levels of thousands of genes between a tumor and normal tissue quickly?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the principles and the applications of molecular biology techniques used in clinical laboratories for diagnostics and treatment decision making: Restriction enzymes, Electrophoresis, Blotting, ELISA, Microarray, standard PCR, qRT-PCR, Nucleotide sequencing, Flow cytometry, Fluorescence in situ hybridization, Recombinant DNA/Cloning, GWAS, CRISPR, Gene therapy, RNA vaccines",
+    "options": [
+      {
+        "text": "Hybridize labeled cDNAs to oligo array spots",
+        "isCorrect": true,
+        "rationale": "Correct because microarrays hybridize labeled cDNA to many oligonucleotide probes to compare gene expression across thousands of genes rapidly, as described in the lecture."
+      },
+      {
+        "text": "Perform qRT PCR for each gene individually",
+        "isCorrect": false,
+        "rationale": "Wrong because qRT-PCR is accurate but impractical for thousands of genes due to throughput limits; it would be correct for targeted gene panels."
+      },
+      {
+        "text": "Use Western blot to profile all protein products",
+        "isCorrect": false,
+        "rationale": "Wrong because Western blot is low-throughput and assesses proteins, not thousands of transcripts simultaneously; it would be correct for specific protein targets."
+      },
+      {
+        "text": "Run Southern blot to detect genomic variants",
+        "isCorrect": false,
+        "rationale": "Wrong because Southern blot detects DNA fragments and copy number, not broad transcript expression; it would be correct for gene copy number analysis."
+      },
+      {
+        "text": "Apply flow cytometry to measure gene expression",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry measures cell-surface or intracellular proteins, not transcriptome-wide expression; it would be correct for cell marker quantitation."
+      }
+    ]
+  },
+  {
+    "question": "A lab technician digests genomic DNA with restriction enzymes and ligates fragments into a circular vector before transforming bacteria. What is the primary purpose of these steps?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the principles and the applications of molecular biology techniques used in clinical laboratories for diagnostics and treatment decision making: Restriction enzymes, Electrophoresis, Blotting, ELISA, Microarray, standard PCR, qRT-PCR, Nucleotide sequencing, Flow cytometry, Fluorescence in situ hybridization, Recombinant DNA/Cloning, GWAS, CRISPR, Gene therapy, RNA vaccines",
+    "options": [
+      {
+        "text": "Create recombinant plasmid for gene expression",
+        "isCorrect": true,
+        "rationale": "Correct because restriction digestion and ligation into plasmids followed by bacterial transformation are classic cloning steps to produce recombinant DNA for protein expression, as in the lecture's insulin example."
+      },
+      {
+        "text": "Directly quantify mRNA abundance from tissue",
+        "isCorrect": false,
+        "rationale": "Wrong because cloning DNA into plasmids does not quantify mRNA; it would be correct if the workflow included reverse transcription and qPCR for transcripts."
+      },
+      {
+        "text": "Measure chromosomal copy number in patient cells",
+        "isCorrect": false,
+        "rationale": "Wrong because chromosomal copy number is assessed by cytogenetics or FISH, not by cloning into bacteria; it would be correct if probes or FISH were used."
+      },
+      {
+        "text": "Detect protein molecular weight by electrophoresis",
+        "isCorrect": false,
+        "rationale": "Wrong because electrophoresis and Western blot assess protein size, not cloning steps; it would be correct for protein confirmation workflows."
+      },
+      {
+        "text": "Perform high throughput sequencing of whole genome",
+        "isCorrect": false,
+        "rationale": "Wrong because cloning into plasmids and bacterial propagation is not the standard NGS library prep for whole-genome sequencing; it would be correct if plasmid libraries were specifically required."
+      }
+    ]
+  },
+  {
+    "question": "Which sequencing method is most appropriate for confirming the exact nucleotide order of a single PCR-amplified fragment under 1000 base pairs?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the principles and the applications of molecular biology techniques used in clinical laboratories for diagnostics and treatment decision making: Restriction enzymes, Electrophoresis, Blotting, ELISA, Microarray, standard PCR, qRT-PCR, Nucleotide sequencing, Flow cytometry, Fluorescence in situ hybridization, Recombinant DNA/Cloning, GWAS, CRISPR, Gene therapy, RNA vaccines",
+    "options": [
+      {
+        "text": "Sanger sequencing using chain terminating nucleotides",
+        "isCorrect": true,
+        "rationale": "Correct because Sanger sequencing uses fluorescently labeled dideoxynucleotides to determine sequence of targets typically under 1000 bp, as described in the lecture."
+      },
+      {
+        "text": "Illumina next generation sequencing for whole genome",
+        "isCorrect": false,
+        "rationale": "Wrong because NGS platforms are suited for high-throughput sequencing and require bioinformatics stitching, not the simple confirmation of a single short fragment; it would be correct for large-scale projects."
+      },
+      {
+        "text": "Nanopore real time single strand electrical readout",
+        "isCorrect": false,
+        "rationale": "Wrong because nanopore sequencing reads long strands in real time and is not the classic low-cost method for short fragment confirmation; it would be correct for long-read sequencing needs."
+      },
+      {
+        "text": "Restriction fragment length polymorphism mapping",
+        "isCorrect": false,
+        "rationale": "Wrong because RFLP maps fragment sizes after enzyme digestion and does not provide base-by-base sequence; it would be correct for detecting known restriction site changes."
+      },
+      {
+        "text": "qRT PCR quantitation of transcript abundance",
+        "isCorrect": false,
+        "rationale": "Wrong because qRT-PCR quantifies nucleic acid amounts rather than providing exact nucleotide sequence; it would be correct for measuring expression levels."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected chronic myelogenous leukemia has a translocation creating a fusion gene between two chromosomes. Which diagnostic technique can visualize the fusion at the chromosomal level in patient cells?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the principles and the applications of molecular biology techniques used in clinical laboratories for diagnostics and treatment decision making: Restriction enzymes, Electrophoresis, Blotting, ELISA, Microarray, standard PCR, qRT-PCR, Nucleotide sequencing, Flow cytometry, Fluorescence in situ hybridization, Recombinant DNA/Cloning, GWAS, CRISPR, Gene therapy, RNA vaccines",
+    "options": [
+      {
+        "text": "Fluorescent in situ hybridization using locus specific probes",
+        "isCorrect": true,
+        "rationale": "Correct because FISH uses fluorescent probes to detect chromosomal rearrangements like BCR-ABL translocation at the chromosomal level, as shown in the lecture."
+      },
+      {
+        "text": "Western blot detection of fusion protein in serum",
+        "isCorrect": false,
+        "rationale": "Wrong because Western blot detects proteins and might detect fusion proteins if present, but it does not visualize chromosomal rearrangements in nuclei; it would be correct if the fusion protein were abundant and the goal were protein confirmation."
+      },
+      {
+        "text": "ELISA measurement of circulating antibodies against fusion",
+        "isCorrect": false,
+        "rationale": "Wrong because ELISA detects antibodies or antigens in bulk serum and is not used to visualize chromosomal fusions; it would be correct for serologic responses."
+      },
+      {
+        "text": "PCR amplification of breakpoint junction followed by sequencing",
+        "isCorrect": false,
+        "rationale": "Wrong because PCR and sequencing can detect fusion junctions at the DNA level but do not provide chromosomal localization in intact cells; it would be correct for molecular confirmation of the fusion sequence."
+      },
+      {
+        "text": "Flow cytometry analysis of peripheral blood cell markers",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry assesses cell-surface markers and cell populations, not chromosomal translocations; it would be correct for immunophenotyping leukemia."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory technique uses base pairing rules to detect a specific RNA transcript on a membrane after electrophoresis?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the principles and the applications of molecular biology techniques used in clinical laboratories for diagnostics and treatment decision making: Restriction enzymes, Electrophoresis, Blotting, ELISA, Microarray, standard PCR, qRT-PCR, Nucleotide sequencing, Flow cytometry, Fluorescence in situ hybridization, Recombinant DNA/Cloning, GWAS, CRISPR, Gene therapy, RNA vaccines",
+    "options": [
+      {
+        "text": "Northern blot hybridization with labeled nucleic acid probe",
+        "isCorrect": true,
+        "rationale": "Correct because Northern blot transfers RNA to a membrane and uses complementary probes for hybridization based on Watson–Crick pairing, as described in the lecture."
+      },
+      {
+        "text": "Southern blot hybridization for genomic DNA fragments",
+        "isCorrect": false,
+        "rationale": "Wrong because Southern blot targets DNA rather than RNA; it would be correct for detecting genomic sequences or copy number."
+      },
+      {
+        "text": "Western blot probing for protein antigens",
+        "isCorrect": false,
+        "rationale": "Wrong because Western blot detects proteins using antibodies, not nucleic acid base pairing; it would be correct for protein identification."
+      },
+      {
+        "text": "qRT PCR quantitation of cDNA in real time",
+        "isCorrect": false,
+        "rationale": "Wrong because qRT-PCR quantifies transcripts via amplification and fluorescence rather than membrane hybridization; it would be correct for sensitive quantitation of mRNA."
+      },
+      {
+        "text": "Microarray hybridization to thousands of oligos",
+        "isCorrect": false,
+        "rationale": "Wrong because microarrays hybridize labeled cDNA to many probes on a chip rather than to a membrane after electrophoresis; it would be correct for broad expression profiling."
+      }
+    ]
+  },
+  {
+    "question": "A lab wants to determine whether a vaccine prevented infection by checking for multiple pathogen-specific protein bands in serum over time. Which confirmatory test is most appropriate after an initial plate-based screen?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the differences between screening and confirmation",
+    "options": [
+      {
+        "text": "Membrane based antibody detection resolving protein sizes",
+        "isCorrect": true,
+        "rationale": "Correct because Western blot is used as a confirmatory test after ELISA screening to resolve specific protein bands and confirm antibody specificity, aligning with the lecture's screening versus confirmation workflow."
+      },
+      {
+        "text": "Repeat the same plate assay with higher dilution controls",
+        "isCorrect": false,
+        "rationale": "Wrong because repeating the screening ELISA does not provide the orthogonal confirmation of protein identity and size; it would be correct if the goal were to improve assay precision rather than confirm specificity."
+      },
+      {
+        "text": "Perform flow cytometry to enumerate antibody producing cells",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry assesses cell populations and would not confirm specific serum protein bands; it would be correct for cellular immune profiling."
+      },
+      {
+        "text": "Use Southern blot to detect pathogen genomic fragments",
+        "isCorrect": false,
+        "rationale": "Wrong because Southern blot detects DNA fragments and is not a protein-level confirmatory test; it would be correct if confirming genomic presence of the pathogen."
+      },
+      {
+        "text": "Apply microarray to compare global gene expression changes",
+        "isCorrect": false,
+        "rationale": "Wrong because microarrays profile transcriptomes and do not confirm specific serum antibody bands; it would be correct for studying host transcriptional responses to vaccination."
+      }
+    ]
+  },
+  {
+    "question": "A patient sample yields a faint ELISA signal for a viral antigen. To improve specificity and confirm true infection, which next laboratory step aligns with the lecture's recommended confirmation hierarchy?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the differences between screening and confirmation",
+    "options": [
+      {
+        "text": "Perform membrane transfer and antibody probing for proteins",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture recommends using Western blot to confirm ELISA results by identifying specific protein bands and improving specificity."
+      },
+      {
+        "text": "Increase sample volume in the same ELISA plate assay",
+        "isCorrect": false,
+        "rationale": "Wrong because increasing sample volume in the same assay may amplify nonspecific signal and does not provide orthogonal confirmation; it would be correct if the issue were sensitivity rather than specificity."
+      },
+      {
+        "text": "Run qRT PCR to quantify viral RNA load immediately",
+        "isCorrect": false,
+        "rationale": "Wrong because PCR detects nucleic acid and can serve as a different confirmation layer, but the lecture specifically notes Western blot as a protein-level confirmatory step after ELISA; PCR would be correct if nucleic acid detection were the chosen orthogonal method."
+      },
+      {
+        "text": "Use flow cytometry to detect infected circulating cells",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry assesses cell markers and may not detect soluble viral antigens in serum; it would be correct if infection produced a distinct labeled cell population."
+      },
+      {
+        "text": "Submit sample for microarray expression profiling",
+        "isCorrect": false,
+        "rationale": "Wrong because microarray is for broad gene expression comparisons and is not a targeted confirmatory test for a specific viral antigen; it would be correct for research into host response patterns."
+      }
+    ]
+  },
+  {
+    "question": "A geneticist performs a GWAS comparing affected individuals to controls and finds a variant more frequent in cases. According to the lecture, what is the primary interpretation of this finding?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Genome Wide Association Studies (GWAS)",
+    "options": [
+      {
+        "text": "Variant is correlated with disease but not proven causal",
+        "isCorrect": true,
+        "rationale": "Correct because GWAS identifies statistical associations that are correlational and require downstream functional studies to establish causality, as stated in the lecture."
+      },
+      {
+        "text": "Variant definitively causes the disease phenotype",
+        "isCorrect": false,
+        "rationale": "Wrong because GWAS alone does not prove causation; it would be correct only if functional experiments demonstrated a causal mechanism."
+      },
+      {
+        "text": "Variant indicates immediate therapeutic target without validation",
+        "isCorrect": false,
+        "rationale": "Wrong because GWAS findings are starting points for drug discovery but require validation; it would be correct if subsequent functional validation supported targetability."
+      },
+      {
+        "text": "Variant frequency difference is irrelevant to downstream research",
+        "isCorrect": false,
+        "rationale": "Wrong because GWAS findings guide further research; it would be correct only if the association failed replication or was due to population stratification."
+      },
+      {
+        "text": "Variant proves monogenic inheritance in affected families",
+        "isCorrect": false,
+        "rationale": "Wrong because GWAS typically identifies common variants associated with complex traits, not single-gene Mendelian causes; it would be correct if linkage analysis in families showed segregation of a single gene."
+      }
+    ]
+  },
+  {
+    "question": "A clinician considers using CRISPR to correct a single nucleotide mutation in hematopoietic stem cells ex vivo before reinfusion. Based on the lecture, what is a major practical limitation of this approach?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "CRISPR (gene editing tool)",
+    "options": [
+      {
+        "text": "Efficient and safe delivery into patient cells remains challenging",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture notes delivery to patient cells is problematic and inefficient, limiting clinical application despite CRISPR's precision."
+      },
+      {
+        "text": "CRISPR cannot target single nucleotide changes",
+        "isCorrect": false,
+        "rationale": "Wrong because CRISPR and base editors can target single nucleotide variants; it would be correct only if the technology lacked base-editing capability."
+      },
+      {
+        "text": "Edited cells cannot engraft into bone marrow",
+        "isCorrect": false,
+        "rationale": "Wrong because edited hematopoietic stem cells can engraft in clinical trials; it would be correct if engraftment failure were observed in a specific protocol."
+      },
+      {
+        "text": "CRISPR always causes widespread off target cancerous mutations",
+        "isCorrect": false,
+        "rationale": "Wrong because while off-target effects are a concern, the lecture does not state that CRISPR invariably causes widespread oncogenic mutations; it would be correct if validated studies showed pervasive harmful off-target edits."
+      },
+      {
+        "text": "Regulatory agencies universally prohibit ex vivo editing",
+        "isCorrect": false,
+        "rationale": "Wrong because regulatory frameworks allow clinical trials for ex vivo editing in some contexts; it would be correct only if a jurisdiction had an absolute ban."
+      }
+    ]
+  },
+  {
+    "question": "A patient with sickle cell disease undergoes ex vivo editing of bone marrow progenitors to correct the ß-globin gene, then receives reinfusion. Which therapeutic category best describes this intervention?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "CRISPR and gene therapy",
+    "options": [
+      {
+        "text": "Somatic cell gene therapy via genome editing ex vivo",
+        "isCorrect": true,
+        "rationale": "Correct because editing patient-derived hematopoietic stem cells ex vivo and reinfusing them is somatic gene therapy, as illustrated in the lecture's sickle cell example."
+      },
+      {
+        "text": "Germline gene editing transmitted to offspring",
+        "isCorrect": false,
+        "rationale": "Wrong because germline editing affects gametes and future generations, not somatic ex vivo therapy; it would be correct only if reproductive cells were edited."
+      },
+      {
+        "text": "RNA vaccine administration to induce immune response",
+        "isCorrect": false,
+        "rationale": "Wrong because RNA vaccines deliver mRNA to elicit immunity, not to correct genomic mutations in stem cells; it would be correct for prophylactic vaccination."
+      },
+      {
+        "text": "Protein replacement therapy with recombinant protein",
+        "isCorrect": false,
+        "rationale": "Wrong because protein replacement supplies functional protein rather than editing genes in stem cells; it would be correct if the therapy involved exogenous protein administration."
+      },
+      {
+        "text": "Small molecule pharmacologic modulation of hemoglobin",
+        "isCorrect": false,
+        "rationale": "Wrong because small molecules modulate protein function but do not involve ex vivo genome editing; it would be correct if the treatment were a drug altering hemoglobin properties."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory technique from the lecture uses labeled antibodies to detect specific proteins on a membrane after electrophoretic transfer?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Blotting techniques combine electrophoresis and probes/antibodies",
+    "options": [
+      {
+        "text": "Western blot for protein identification and semi quantitation",
+        "isCorrect": true,
+        "rationale": "Correct because Western blot transfers proteins to a membrane and uses primary and secondary antibodies for detection, providing semi-quantitative protein identification as described."
+      },
+      {
+        "text": "Northern blot for RNA detection using nucleic acid probes",
+        "isCorrect": false,
+        "rationale": "Wrong because Northern blot targets RNA with nucleic acid probes, not antibodies; it would be correct for transcript detection."
+      },
+      {
+        "text": "Southern blot for DNA fragment detection on membranes",
+        "isCorrect": false,
+        "rationale": "Wrong because Southern blot detects DNA fragments with nucleic acid probes, not proteins; it would be correct for genomic DNA analysis."
+      },
+      {
+        "text": "ELISA plate assay using enzyme linked antibodies",
+        "isCorrect": false,
+        "rationale": "Wrong because ELISA uses antibodies in a plate format rather than membrane transfer after electrophoresis; it would be correct for bulk antigen or antibody measurement."
+      },
+      {
+        "text": "Flow cytometry detecting fluorescently labeled cells",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry analyzes cells in suspension with fluorescent labels, not membrane-transferred proteins; it would be correct for cell population analysis."
+      }
+    ]
+  },
+  {
+    "question": "A lab intends to detect a specific nucleotide sequence within intact cells to assess copy number and location. Which method from the lecture is most appropriate?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Fluorescence in situ hybridization (FISH)",
+    "options": [
+      {
+        "text": "In situ hybridization with fluorescently labeled probes",
+        "isCorrect": true,
+        "rationale": "Correct because FISH uses fluorescent probes hybridized to DNA in intact cells to show presence, copy number, and chromosomal location, as explained in the lecture."
+      },
+      {
+        "text": "Southern blot of digested genomic DNA fragments",
+        "isCorrect": false,
+        "rationale": "Wrong because Southern blot analyzes separated DNA fragments on membranes and does not preserve cellular context; it would be correct for copy number in bulk DNA."
+      },
+      {
+        "text": "qRT PCR quantitation of transcript abundance",
+        "isCorrect": false,
+        "rationale": "Wrong because qRT-PCR quantifies RNA transcripts and does not localize sequences within intact cells; it would be correct for expression quantitation."
+      },
+      {
+        "text": "Microarray hybridization to oligonucleotide probes",
+        "isCorrect": false,
+        "rationale": "Wrong because microarrays profile many sequences from extracted nucleic acids, not their cellular location; it would be correct for comparative expression studies."
+      },
+      {
+        "text": "Western blot detection of chromatin associated proteins",
+        "isCorrect": false,
+        "rationale": "Wrong because Western blot detects proteins and cannot localize DNA sequences within cells; it would be correct for protein identification."
+      }
+    ]
+  },
+  {
+    "question": "A diagnostic lab uses restriction enzymes that produce staggered single stranded overhangs to facilitate ligation of a gene insert into a plasmid. Which enzyme property is being exploited?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Restriction digest",
+    "options": [
+      {
+        "text": "Generation of complementary sticky ends for base pairing",
+        "isCorrect": true,
+        "rationale": "Correct because enzymes like EcoRI produce sticky ends that base-pair with complementary overhangs to facilitate ligation, as described in the lecture."
+      },
+      {
+        "text": "Creation of blunt ended fragments without overhangs",
+        "isCorrect": false,
+        "rationale": "Wrong because blunt-end cutters (e.g., AluI) do not create overhangs; it would be correct if the enzyme produced blunt ends."
+      },
+      {
+        "text": "Non specific cleavage at random genomic locations",
+        "isCorrect": false,
+        "rationale": "Wrong because restriction enzymes cut at specific recognition sequences, not randomly; it would be correct for nonspecific nucleases."
+      },
+      {
+        "text": "Methylation of DNA to protect from cleavage",
+        "isCorrect": false,
+        "rationale": "Wrong because methylation protects DNA from restriction enzymes but is not the property exploited for ligation; it would be correct if discussing host restriction-modification systems."
+      },
+      {
+        "text": "Polymerization of nucleotides to extend fragments",
+        "isCorrect": false,
+        "rationale": "Wrong because polymerases extend DNA strands, not restriction enzymes; it would be correct in the context of PCR extension steps."
+      }
+    ]
+  },
+  {
+    "question": "A lab compares protein expression in vaccinated versus unvaccinated animals and observes a single persistent band in vaccinated animals but multiple new bands in unvaccinated challenged animals. What does this pattern most directly demonstrate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Blotting techniques combine electrophoresis and probes/antibodies",
+    "options": [
+      {
+        "text": "Vaccine induced antibody recognizes single vaccine antigen band",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture's Lyme vaccine example showed vaccinated animals displaying a single vaccinal band while unvaccinated animals developed multiple infection-related bands, demonstrating vaccine-specific antibody response."
+      },
+      {
+        "text": "Vaccinated animals developed broader infection related antibodies",
+        "isCorrect": false,
+        "rationale": "Wrong because vaccinated animals showed only the vaccinal band and lacked additional infection bands; it would be correct if vaccinated animals had multiple new bands after challenge."
+      },
+      {
+        "text": "Unvaccinated animals lacked any antibody response entirely",
+        "isCorrect": false,
+        "rationale": "Wrong because unvaccinated challenged animals developed multiple protein bands indicating antibody response to infection; it would be correct only if no bands were observed."
+      },
+      {
+        "text": "ELISA plate assay cannot detect vaccine induced antibodies",
+        "isCorrect": false,
+        "rationale": "Wrong because ELISA can detect vaccine-induced antibodies but may require confirmation by Western blot; it would be correct only if ELISA failed to detect the response."
+      },
+      {
+        "text": "Flow cytometry is required to visualize serum protein bands",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry analyzes cells and cannot visualize serum protein bands on membranes; it would be correct for cellular marker analysis."
+      }
+    ]
+  },
+  {
+    "question": "A lab intends to read long contiguous DNA sequences in real time without polymerase chain reactions by measuring electrical disruptions as single strands pass through a pore. Which platform from the lecture fits this description?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Sequencing (DNA, cDNA)",
+    "options": [
+      {
+        "text": "Nanopore sequencing using protein pores and current changes",
+        "isCorrect": true,
+        "rationale": "Correct because nanopore technology reads single DNA strands in real time by detecting characteristic disruptions in electrical current as bases pass through a pore, as described in the lecture."
+      },
+      {
+        "text": "Sanger sequencing with fluorescent chain terminators",
+        "isCorrect": false,
+        "rationale": "Wrong because Sanger sequencing uses polymerase and labeled dideoxynucleotides to terminate synthesis, not electrical current through pores; it would be correct for short-read confirmation sequencing."
+      },
+      {
+        "text": "Illumina sequencing by synthesis with reversible terminators",
+        "isCorrect": false,
+        "rationale": "Wrong because Illumina uses sequencing-by-synthesis chemistry and imaging, not nanopore electrical readout; it would be correct for high-throughput short-read sequencing."
+      },
+      {
+        "text": "Mass spectrometry based protein sequencing approach",
+        "isCorrect": false,
+        "rationale": "Wrong because mass spectrometry sequences proteins rather than reading DNA electrical signals; it would be correct for proteomic analyses."
+      },
+      {
+        "text": "Southern blot detection of restriction fragment sizes",
+        "isCorrect": false,
+        "rationale": "Wrong because Southern blot visualizes DNA fragment sizes on membranes, not real-time single-strand electrical sequencing; it would be correct for fragment mapping."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory technique from the lecture is best described as using complementary base pairing rules to design labeled probes that bind specific nucleic acid targets?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Antibodies and probes",
+    "options": [
+      {
+        "text": "Nucleic acid hybridization using complementary probe sequences",
+        "isCorrect": true,
+        "rationale": "Correct because probe-based detection relies on Watson–Crick base pairing to bind specific DNA or RNA targets, as emphasized in the lecture when discussing probes and antibodies."
+      },
+      {
+        "text": "Antibody antigen binding based on stereochemical fit",
+        "isCorrect": false,
+        "rationale": "Wrong because antibodies bind proteins via stereochemical complementarity rather than nucleic acid base pairing; it would be correct for protein detection methods."
+      },
+      {
+        "text": "Restriction enzyme cleavage at palindromic sequences",
+        "isCorrect": false,
+        "rationale": "Wrong because restriction enzymes recognize specific DNA sequences and cleave them, not hybridize via base pairing; it would be correct for DNA digestion workflows."
+      },
+      {
+        "text": "Flow cytometry detection of fluorescently labeled antibodies",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry detects labeled antibodies on cells, not nucleic acid probe hybridization; it would be correct for cell-surface marker analysis."
+      },
+      {
+        "text": "Ligase mediated joining of DNA fragments with sticky ends",
+        "isCorrect": false,
+        "rationale": "Wrong because ligase joins DNA fragments, not probe hybridization; it would be correct for cloning and recombinant DNA assembly."
+      }
+    ]
+  },
+  {
+    "question": "A lab uses labeled oligonucleotide probes to compare gene expression between normal and cancer cells on a solid support. Which advantage of this method was highlighted in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Microarray",
+    "options": [
+      {
+        "text": "Rapid comparison of thousands of gene expression levels",
+        "isCorrect": true,
+        "rationale": "Correct because microarrays allow quick comparison of expression across thousands of genes between samples, a high utility noted in the lecture for oncology applications."
+      },
+      {
+        "text": "Absolute quantitation of every transcript without bias",
+        "isCorrect": false,
+        "rationale": "Wrong because microarrays are comparative and not absolutely quantitative like RNA-seq; it would be correct only if a method provided absolute counts without normalization."
+      },
+      {
+        "text": "Single molecule real time sequencing of full transcripts",
+        "isCorrect": false,
+        "rationale": "Wrong because single-molecule sequencing refers to nanopore or PacBio technologies, not microarrays; it would be correct for long-read transcript sequencing."
+      },
+      {
+        "text": "Direct visualization of chromosomal rearrangements in nuclei",
+        "isCorrect": false,
+        "rationale": "Wrong because chromosomal visualization is achieved by FISH, not microarrays; it would be correct for assessing locus position and copy number."
+      },
+      {
+        "text": "Protein level confirmation of antigen molecular weight",
+        "isCorrect": false,
+        "rationale": "Wrong because protein molecular weight is assessed by Western blot, not microarray; it would be correct for protein confirmation workflows."
+      }
+    ]
+  },
+  {
+    "question": "A clinical trial uses viral vectors to insert a receptor gene into patient T cells ex vivo to target tumor cells. According to the lecture, what is the primary mechanism by which these modified cells act against cancer?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Gene therapy",
+    "options": [
+      {
+        "text": "Engineered T cells express chimeric receptors that kill tumor cells",
+        "isCorrect": true,
+        "rationale": "Correct because CAR-T therapy involves inserting genes encoding antigen receptors into T cells so they recognize and kill cancer cells, as described in the lecture."
+      },
+      {
+        "text": "Viral vectors directly lyse tumor cells upon infusion",
+        "isCorrect": false,
+        "rationale": "Wrong because viral vectors deliver genes to cells but do not typically directly lyse tumors; it would be correct for oncolytic viral therapies specifically designed to lyse tumor cells."
+      },
+      {
+        "text": "RNA vaccines induce antibody mediated tumor clearance",
+        "isCorrect": false,
+        "rationale": "Wrong because RNA vaccines stimulate immune responses but CAR-T cells act via engineered cellular cytotoxicity; it would be correct if the therapy were an RNA vaccine targeting tumor antigens."
+      },
+      {
+        "text": "CRISPR editing of tumor cells in vivo to reduce growth",
+        "isCorrect": false,
+        "rationale": "Wrong because the described approach modifies patient T cells ex vivo rather than editing tumor genomes in vivo; it would be correct if CRISPR were used directly on tumor cells."
+      },
+      {
+        "text": "Protein replacement restores deficient tumor suppressors",
+        "isCorrect": false,
+        "rationale": "Wrong because protein replacement supplies proteins rather than engineering immune cells to target tumors; it would be correct for therapies replacing missing tumor suppressor proteins."
+      }
+    ]
+  },
+  {
+    "question": "A researcher designs a short double stranded RNA molecule that, when delivered into cells, is incorporated into RISC and leads to degradation of a target mRNA. Which therapeutic approach from the lecture does this describe?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "RNAi",
+    "options": [
+      {
+        "text": "RNA interference using siRNA to silence target transcripts",
+        "isCorrect": true,
+        "rationale": "Correct because RNAi employs siRNA incorporated into RISC to guide cleavage of complementary mRNA, reducing gene expression as outlined in the lecture."
+      },
+      {
+        "text": "mRNA vaccine delivering coding RNA for antigen production",
+        "isCorrect": false,
+        "rationale": "Wrong because mRNA vaccines deliver mRNA to produce proteins, not to degrade endogenous transcripts; it would be correct for immunization strategies."
+      },
+      {
+        "text": "CRISPR Cas9 nuclease creating double strand DNA breaks",
+        "isCorrect": false,
+        "rationale": "Wrong because CRISPR-Cas9 edits DNA rather than degrading mRNA via RISC; it would be correct for genome editing tasks."
+      },
+      {
+        "text": "Antisense oligonucleotide blocking translation by steric hindrance",
+        "isCorrect": false,
+        "rationale": "Wrong because antisense oligonucleotides can block translation but act via different mechanisms than siRNA-mediated RISC cleavage; it would be correct if the mechanism were steric blockade."
+      },
+      {
+        "text": "Ribozymes catalyzing self cleavage of target genomic DNA",
+        "isCorrect": false,
+        "rationale": "Wrong because ribozymes act on RNA and do not catalyze genomic DNA cleavage; it would be correct if the catalytic RNA targeted transcripts rather than DNA."
+      }
+    ]
+  },
+  {
+    "question": "A lab needs to detect low abundance viral RNA and monitor changes in viral load during therapy. Which method from the lecture provides sensitive quantitation over time?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "qRT-PCR",
+    "options": [
+      {
+        "text": "Reverse transcription quantitative PCR measuring cycle thresholds",
+        "isCorrect": true,
+        "rationale": "Correct because qRT-PCR converts RNA to cDNA and quantifies target abundance in real time using cycle threshold values, suitable for monitoring viral load as described."
+      },
+      {
+        "text": "Sanger sequencing to confirm viral genome sequence",
+        "isCorrect": false,
+        "rationale": "Wrong because Sanger sequencing provides sequence information but is not ideal for sensitive longitudinal quantitation of viral load; it would be correct for sequence confirmation."
+      },
+      {
+        "text": "ELISA detection of viral proteins in serum",
+        "isCorrect": false,
+        "rationale": "Wrong because ELISA measures proteins and may be less sensitive for RNA viral load monitoring; it would be correct for serologic antigen detection."
+      },
+      {
+        "text": "Flow cytometry enumeration of infected circulating cells",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry measures cell populations and is not the standard for quantifying free viral RNA load; it would be correct for assessing infected cell frequency."
+      },
+      {
+        "text": "Microarray profiling of host gene expression changes",
+        "isCorrect": false,
+        "rationale": "Wrong because microarrays profile host transcripts broadly and are not optimized for sensitive viral RNA quantitation over time; it would be correct for host response studies."
+      }
+    ]
+  },
+  {
+    "question": "A diagnostic lab uses antibodies as 'lock and key' reagents to find a protein target. According to the lecture, what molecular principle underlies this specificity?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Categorize appropriate methodologies within clinical contexts, noting importance of \"lock and key\" tools like probes and antibodies",
+    "options": [
+      {
+        "text": "Stereochemical complementarity between antibody and antigen",
+        "isCorrect": true,
+        "rationale": "Correct because antibody specificity arises from stereochemical fit between antigen and antigen-binding site, the 'lock and key' concept emphasized in the lecture."
+      },
+      {
+        "text": "Base pairing rules between complementary nucleotides",
+        "isCorrect": false,
+        "rationale": "Wrong because base pairing governs nucleic acid probe hybridization, not antibody–antigen stereochemistry; it would be correct for probe-based nucleic acid detection."
+      },
+      {
+        "text": "Random electrostatic attraction between molecules",
+        "isCorrect": false,
+        "rationale": "Wrong because antibody–antigen binding is specific and not merely random electrostatic attraction; it would be correct only for nonspecific binding scenarios."
+      },
+      {
+        "text": "Restriction enzyme recognition of palindromic sites",
+        "isCorrect": false,
+        "rationale": "Wrong because restriction enzymes recognize specific DNA sequences, not protein epitopes; it would be correct for DNA cleavage specificity."
+      },
+      {
+        "text": "Polymerase fidelity during DNA replication",
+        "isCorrect": false,
+        "rationale": "Wrong because polymerase fidelity pertains to nucleotide incorporation accuracy, not antibody–antigen binding; it would be correct in the context of replication accuracy."
+      }
+    ]
+  },
+  {
+    "question": "A lab wants to confirm a suspected gene deletion in a patient sample by detecting absence of a genomic fragment. Which blotting technique from the lecture is most appropriate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Southern blot",
+    "options": [
+      {
+        "text": "Southern blot to detect presence or absence of DNA fragments",
+        "isCorrect": true,
+        "rationale": "Correct because Southern blot identifies DNA fragments and can reveal deletions or copy number changes by hybridizing probes to genomic DNA, as described in the lecture."
+      },
+      {
+        "text": "Northern blot to measure transcript expression levels",
+        "isCorrect": false,
+        "rationale": "Wrong because Northern blot targets RNA and measures expression, not genomic deletions; it would be correct for transcript-level changes."
+      },
+      {
+        "text": "Western blot to visualize protein size and abundance",
+        "isCorrect": false,
+        "rationale": "Wrong because Western blot detects proteins and cannot directly show genomic deletions; it would be correct for protein-level confirmation."
+      },
+      {
+        "text": "FISH to visualize chromosomal location and copy number",
+        "isCorrect": false,
+        "rationale": "Wrong because FISH can detect deletions at the chromosomal level and might be used, but Southern blot is the direct membrane-based DNA fragment detection method referenced in the lecture; FISH would be correct if intact cell localization were required."
+      },
+      {
+        "text": "qRT PCR quantitation of mRNA transcripts",
+        "isCorrect": false,
+        "rationale": "Wrong because qRT-PCR measures RNA abundance and may not detect genomic deletions directly; it would be correct if deletion affected transcript levels and primers spanned the deleted region."
+      }
+    ]
+  },
+  {
+    "question": "A scientist prepares a plasmid containing a human gene under a bacterial promoter, transforms bacteria, and harvests the expressed protein. Which lecture example does this workflow mirror?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Cloning",
+    "options": [
+      {
+        "text": "Recombinant insulin production using bacterial expression systems",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture used human insulin cloned into bacterial plasmids with promoters to produce recombinant insulin as a clinical example of cloning."
+      },
+      {
+        "text": "CRISPR editing of hematopoietic stem cells in vivo",
+        "isCorrect": false,
+        "rationale": "Wrong because CRISPR editing modifies genomes in cells rather than using bacterial expression of recombinant proteins; it would be correct for gene editing therapies."
+      },
+      {
+        "text": "Microarray comparison of tumor and normal gene expression",
+        "isCorrect": false,
+        "rationale": "Wrong because microarrays profile gene expression differences and do not involve bacterial expression of human proteins; it would be correct for expression profiling."
+      },
+      {
+        "text": "Nanopore sequencing of long genomic fragments",
+        "isCorrect": false,
+        "rationale": "Wrong because nanopore sequencing reads DNA sequences and is unrelated to protein production in bacteria; it would be correct for long-read sequencing tasks."
+      },
+      {
+        "text": "ELISA detection of antibodies against recombinant proteins",
+        "isCorrect": false,
+        "rationale": "Wrong because ELISA detects antibodies and could use recombinant proteins as antigens, but the described workflow specifically mirrors recombinant protein production rather than antibody detection; it would be correct if the focus were serologic testing."
+      }
+    ]
+  },
+  {
+    "question": "A lab uses fluorescently labeled antibodies against CD3 and CD8 to analyze peripheral blood. The resulting dot plot shows a distinct population positive for both markers. What does this population most likely represent?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Flow cytometry",
+    "options": [
+      {
+        "text": "Cytotoxic T lymphocytes expressing both surface markers",
+        "isCorrect": true,
+        "rationale": "Correct because CD3+CD8+ cells are cytotoxic T cells, and flow cytometry detects such dual-labeled populations as described in the lecture."
+      },
+      {
+        "text": "B lymphocytes producing antigen specific antibodies",
+        "isCorrect": false,
+        "rationale": "Wrong because B cells express markers like CD19/CD20 rather than CD3/CD8; it would be correct if the markers targeted B cell antigens."
+      },
+      {
+        "text": "Natural killer cells lacking T cell receptor markers",
+        "isCorrect": false,
+        "rationale": "Wrong because NK cells typically lack CD3 and may express CD56; it would be correct if the population were CD3 negative and CD56 positive."
+      },
+      {
+        "text": "Monocytes with high side scatter and phagocytic activity",
+        "isCorrect": false,
+        "rationale": "Wrong because monocytes have different scatter properties and markers (e.g., CD14), not CD3/CD8; it would be correct if monocyte markers were used."
+      },
+      {
+        "text": "Erythrocytes detected due to autofluorescence artifacts",
+        "isCorrect": false,
+        "rationale": "Wrong because erythrocytes lack CD3/CD8 and are not typically fluorescently labeled; it would be correct only if severe autofluorescence produced false positives."
+      }
+    ]
+  },
+  {
+    "question": "A lab intends to identify a single nucleotide variant in a patient's tumor sample and then determine whether that variant is present at low allele frequency across many reads. Which sequencing approach from the lecture is most suitable for sensitive, high-throughput detection?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Sequencing (DNA, cDNA)",
+    "options": [
+      {
+        "text": "Next generation sequencing with deep read coverage",
+        "isCorrect": true,
+        "rationale": "Correct because NGS platforms sequence many fragments in parallel and, with deep coverage, can detect low-frequency variants, as the lecture notes NGS utility for screening."
+      },
+      {
+        "text": "Sanger sequencing of single cloned fragments",
+        "isCorrect": false,
+        "rationale": "Wrong because Sanger sequencing is low-throughput and less sensitive for low-frequency variants in heterogeneous samples; it would be correct for confirming a dominant allele sequence."
+      },
+      {
+        "text": "Southern blot to visualize restriction fragment sizes",
+        "isCorrect": false,
+        "rationale": "Wrong because Southern blot detects fragment sizes and is not sensitive for single nucleotide variants; it would be correct for large deletions or rearrangements."
+      },
+      {
+        "text": "Flow cytometry to enumerate variant expressing cells",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry measures protein markers on cells and cannot directly detect nucleotide variants; it would be correct if the variant produced a detectable protein marker."
+      },
+      {
+        "text": "ELISA to quantify mutant protein concentration in serum",
+        "isCorrect": false,
+        "rationale": "Wrong because ELISA measures protein abundance and may not distinguish single amino acid changes unless specific antibodies exist; it would be correct if mutation-specific antibodies were available."
+      }
+    ]
+  },
+  {
+    "question": "A patient sample is suspected to contain a pathogen whose genome is unknown. Which lecture-described sequencing strategy would be most useful to broadly screen and identify unknown microbial sequences?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Sequencing (DNA, cDNA)",
+    "options": [
+      {
+        "text": "Next generation sequencing for broad unbiased screening",
+        "isCorrect": true,
+        "rationale": "Correct because NGS can sequence many fragments from a sample without prior knowledge and bioinformatically identify unknown organisms, as the lecture indicates for screening utility."
+      },
+      {
+        "text": "Sanger sequencing targeted by specific primers only",
+        "isCorrect": false,
+        "rationale": "Wrong because Sanger requires known primer sites and is not suitable for unknown genomes; it would be correct for targeted confirmation when sequence is known."
+      },
+      {
+        "text": "ELISA detection of conserved pathogen antigens",
+        "isCorrect": false,
+        "rationale": "Wrong because ELISA requires known antigens and cannot identify unknown genomes; it would be correct for detecting known pathogens."
+      },
+      {
+        "text": "Southern blot using random genomic probes",
+        "isCorrect": false,
+        "rationale": "Wrong because Southern blot requires specific probes and is not practical for unknown pathogen discovery; it would be correct if probes matched pathogen sequences."
+      },
+      {
+        "text": "Flow cytometry to sort and culture unknown microbes",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry sorts cells but does not identify unknown microbial genomes directly; it would be correct if combined with downstream sequencing of sorted populations."
+      }
+    ]
+  },
+  {
+    "question": "A lab uses base editors fused to catalytically dead nucleases to change single bases without creating double strand breaks. Which CRISPR variation described in the lecture does this represent?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "CRISPR variations",
+    "options": [
+      {
+        "text": "Base editing using deaminase fused to dCas9 or Cas9 nickase",
+        "isCorrect": true,
+        "rationale": "Correct because base editors combine deaminases with Cas proteins to convert specific bases (e.g., C to T) without double-strand breaks, as described in the lecture's CRISPR variations."
+      },
+      {
+        "text": "CRISPR interference using dCas9 to repress transcription",
+        "isCorrect": false,
+        "rationale": "Wrong because CRISPRi uses dCas9 to block transcription rather than chemically editing bases; it would be correct for transcriptional repression applications."
+      },
+      {
+        "text": "CRISPR activation using dCas9 fused to activator domains",
+        "isCorrect": false,
+        "rationale": "Wrong because CRISPRa enhances transcription via activator fusions, not base conversion; it would be correct for upregulating gene expression."
+      },
+      {
+        "text": "Cas9 nuclease creating double strand breaks for knockouts",
+        "isCorrect": false,
+        "rationale": "Wrong because standard Cas9 nuclease induces double-strand breaks, unlike base editors that avoid such breaks; it would be correct for gene disruption strategies."
+      },
+      {
+        "text": "Epigenome editing using dCas9 fused to methyltransferases",
+        "isCorrect": false,
+        "rationale": "Wrong because epigenome editors alter DNA methylation or histone marks rather than changing base identity; it would be correct for modifying gene regulation epigenetically."
+      }
+    ]
+  },
+  {
+    "question": "A clinician orders a test to detect M proteins in serum as a screen for plasma cell dyscrasia. Which electrophoretic technique discussed in the lecture is commonly used for this screening?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Gel Electrophoresis",
+    "options": [
+      {
+        "text": "Immunofixation electrophoresis to identify monoclonal proteins",
+        "isCorrect": true,
+        "rationale": "Correct because immunofixation electrophoresis (IFE) separates serum proteins and uses antibodies to identify monoclonal M proteins, as the lecture notes for multiple myeloma screening."
+      },
+      {
+        "text": "Southern blot to detect immunoglobulin gene rearrangements",
+        "isCorrect": false,
+        "rationale": "Wrong because Southern blot analyzes DNA fragments and is not the standard serum protein screen; it would be correct for genomic rearrangement studies."
+      },
+      {
+        "text": "qRT PCR quantitation of immunoglobulin mRNA transcripts",
+        "isCorrect": false,
+        "rationale": "Wrong because qRT-PCR measures transcripts and is not the routine method for detecting circulating M proteins; it would be correct for transcript-level research."
+      },
+      {
+        "text": "Flow cytometry enumeration of plasma cell populations",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry assesses cell populations and may help in marrow evaluation but does not directly detect serum M proteins; it would be correct for cellular immunophenotyping."
+      },
+      {
+        "text": "Microarray profiling of B cell gene expression signatures",
+        "isCorrect": false,
+        "rationale": "Wrong because microarrays profile gene expression and are not used for routine serum M protein detection; it would be correct for research into B cell transcriptional changes."
+      }
+    ]
+  },
+  {
+    "question": "A lab technician needs to separate nucleic acid fragments by size using an agarose matrix and an electric field. Which parameter primarily determines migration distance through the gel?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Gel Electrophoresis",
+    "options": [
+      {
+        "text": "Molecular size of fragments influences migration distance",
+        "isCorrect": true,
+        "rationale": "Correct because gel electrophoresis separates molecules primarily by size (and shape/charge), with smaller fragments migrating farther through the porous matrix, as explained in the lecture."
+      },
+      {
+        "text": "Antibody affinity for antigen determines migration",
+        "isCorrect": false,
+        "rationale": "Wrong because antibody affinity affects binding assays, not electrophoretic migration; it would be correct for immunoassays like Western blot detection."
+      },
+      {
+        "text": "Restriction enzyme recognition sequence dictates mobility",
+        "isCorrect": false,
+        "rationale": "Wrong because restriction sites determine fragment generation but not intrinsic migration distance beyond resulting fragment size; it would be correct if discussing fragment sizes produced by specific digests."
+      },
+      {
+        "text": "Fluorescent label color controls electrophoretic speed",
+        "isCorrect": false,
+        "rationale": "Wrong because fluorescent labels affect detection, not electrophoretic mobility significantly; it would be correct only if labels altered charge or mass substantially."
+      },
+      {
+        "text": "Sheath fluid composition in flow cytometry affects migration",
+        "isCorrect": false,
+        "rationale": "Wrong because sheath fluid pertains to flow cytometry, not gel electrophoresis; it would be correct in the context of cytometric sample flow dynamics."
+      }
+    ]
+  },
+  {
+    "question": "A patient sample shows a suspected chromosomal translocation creating a fusion oncogene. Which two complementary laboratory approaches from the lecture could be used sequentially to localize and then confirm the fusion at sequence level?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Fluorescence in situ hybridization (FISH)",
+    "options": [
+      {
+        "text": "FISH to localize fusion then PCR and sequencing to confirm",
+        "isCorrect": true,
+        "rationale": "Correct because FISH can localize chromosomal rearrangements in cells and PCR followed by sequencing can confirm the exact fusion junction, matching the lecture's complementary use of cytogenetic and molecular methods."
+      },
+      {
+        "text": "Western blot to localize then ELISA to quantify fusion protein",
+        "isCorrect": false,
+        "rationale": "Wrong because Western blot and ELISA assess proteins and do not localize chromosomal rearrangements; it would be correct if the goal were protein-level detection and quantitation."
+      },
+      {
+        "text": "Microarray to detect fusion then Southern blot to confirm",
+        "isCorrect": false,
+        "rationale": "Wrong because microarrays are for expression profiling and Southern blot detects DNA fragments but may not precisely identify fusion junctions; it would be correct only if probes spanned the fusion region."
+      },
+      {
+        "text": "Flow cytometry to sort cells then nanopore sequencing directly",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry can sort cells but does not localize chromosomal fusions; nanopore sequencing could detect fusions but without prior cytogenetic localization it may be less targeted."
+      },
+      {
+        "text": "qRT PCR to quantify transcripts then microarray to validate",
+        "isCorrect": false,
+        "rationale": "Wrong because qRT-PCR quantifies transcripts and microarrays profile expression broadly; neither provides direct chromosomal localization like FISH, though PCR can confirm fusion transcripts if designed appropriately."
+      }
+    ]
+  },
+  {
+    "question": "A lab uses labeled cDNA from tumor and normal tissue, hybridizes them to an array, and observes many red spots unique to tumor. According to the lecture, what does a red-only spot most likely indicate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Microarray",
+    "options": [
+      {
+        "text": "Gene expressed in tumor but not in normal tissue",
+        "isCorrect": true,
+        "rationale": "Correct because differential labeling (e.g., red for tumor, green for normal) yields red-only spots indicating genes present or upregulated in tumor cells, as described in the microarray workflow."
+      },
+      {
+        "text": "Gene expressed in normal tissue but absent in tumor",
+        "isCorrect": false,
+        "rationale": "Wrong because that pattern would produce green-only spots, not red; it would be correct if the color assignments were reversed."
+      },
+      {
+        "text": "Probe hybridization failure producing no signal",
+        "isCorrect": false,
+        "rationale": "Wrong because hybridization failure yields no signal rather than a red-only signal; it would be correct if the spot were blank due to technical failure."
+      },
+      {
+        "text": "Protein level increase detected by antibody staining",
+        "isCorrect": false,
+        "rationale": "Wrong because microarrays detect nucleic acid hybridization, not protein levels; it would be correct for immunohistochemistry or Western blot."
+      },
+      {
+        "text": "Chromosomal trisomy producing extra genomic copies",
+        "isCorrect": false,
+        "rationale": "Wrong because microarray expression differences reflect transcript abundance, not directly chromosomal copy number, though copy number changes can influence expression; it would be correct if the array were a comparative genomic hybridization platform."
+      }
+    ]
+  },
+  {
+    "question": "A lab engineer needs to design primers for PCR amplification. According to the lecture, what critical requirement must these primers satisfy to ensure specific amplification?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "PCR",
+    "options": [
+      {
+        "text": "Primers must be complementary to target sequence ends",
+        "isCorrect": true,
+        "rationale": "Correct because PCR primers must anneal specifically to sequences flanking the region of interest to direct polymerase extension, as emphasized in the lecture."
+      },
+      {
+        "text": "Primers should be random sequences to avoid bias",
+        "isCorrect": false,
+        "rationale": "Wrong because random primers would not provide specific amplification of the intended target; it would be correct only for random priming applications like some cDNA synthesis methods."
+      },
+      {
+        "text": "Primers must contain restriction sites for cloning always",
+        "isCorrect": false,
+        "rationale": "Wrong because restriction sites are optional for downstream cloning and not required for PCR specificity; it would be correct if cloning into vectors required compatible ends."
+      },
+      {
+        "text": "Primers should be complementary to each other to form dimers",
+        "isCorrect": false,
+        "rationale": "Wrong because primer-dimer formation reduces PCR efficiency and is undesirable; it would be correct only in protocols intentionally generating dimers for specific assays."
+      },
+      {
+        "text": "Primers must be fluorescently labeled for amplification",
+        "isCorrect": false,
+        "rationale": "Wrong because fluorescent labels are used for detection in qPCR or sequencing but are not required for basic PCR amplification; it would be correct if real-time detection were needed."
+      }
+    ]
+  },
+  {
+    "question": "A patient sample is processed to isolate plasma, buffy coat, and red cell fractions by spinning blood in a centrifuge. Which fraction contains most leukocytes and platelets according to the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Centrifugation",
+    "options": [
+      {
+        "text": "Buffy coat layer contains white blood cells and platelets",
+        "isCorrect": true,
+        "rationale": "Correct because centrifugation separates blood into plasma, buffy coat (white cells and platelets), and red cells, as shown in the lecture's blood fraction diagram."
+      },
+      {
+        "text": "Plasma fraction contains the majority of leukocytes",
+        "isCorrect": false,
+        "rationale": "Wrong because plasma is the acellular liquid portion containing proteins and solutes, not leukocytes; it would be correct if discussing soluble factors."
+      },
+      {
+        "text": "Red cell pellet contains platelets and leukocytes primarily",
+        "isCorrect": false,
+        "rationale": "Wrong because the red cell layer is primarily erythrocytes; it would be correct only if separation failed and cells pelleted together."
+      },
+      {
+        "text": "Serum after clotting contains intact leukocyte populations",
+        "isCorrect": false,
+        "rationale": "Wrong because serum is cell-free and does not contain intact leukocytes; it would be correct only if cells were inadvertently present."
+      },
+      {
+        "text": "Whole blood without centrifugation enriches for platelets",
+        "isCorrect": false,
+        "rationale": "Wrong because whole blood contains all components without fractionation; it would be correct only if no separation were performed."
+      }
+    ]
+  },
+  {
+    "question": "A lab intends to confirm the presence of a viral protein in patient serum after a positive ELISA. Which sequence of tests reflects the lecture's recommended screening and confirmation pathway?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the differences between screening and confirmation",
+    "options": [
+      {
+        "text": "Initial plate based immunoassay followed by Western blot confirmation",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture recommends ELISA as a sensitive screening tool and Western blot as a more specific confirmatory test to verify protein identity."
+      },
+      {
+        "text": "Direct sequencing of viral genome followed by microarray profiling",
+        "isCorrect": false,
+        "rationale": "Wrong because sequencing is not the typical immediate confirmatory step after ELISA for protein detection; it would be correct if nucleic acid confirmation were desired."
+      },
+      {
+        "text": "Flow cytometry analysis then repeat the same ELISA assay",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry assesses cells and repeating ELISA does not provide orthogonal confirmation; it would be correct if cellular markers were relevant."
+      },
+      {
+        "text": "Perform Southern blot then use qRT PCR for quantitation",
+        "isCorrect": false,
+        "rationale": "Wrong because Southern blot targets DNA and qRT-PCR targets RNA; neither is the standard protein confirmation pathway after ELISA; it would be correct for nucleic acid-based workflows."
+      },
+      {
+        "text": "Use microarray to detect antibody signatures across many antigens",
+        "isCorrect": false,
+        "rationale": "Wrong because microarrays can profile many antigens but are not the standard confirmatory test for a single ELISA-positive antigen; it would be correct for broad seroprofiling research."
+      }
+    ]
+  },
+  {
+    "question": "A lab uses fluorescently labeled probes to detect trisomy 21 in prenatal cells. The probe yields three signals per nucleus. Which sample type, mentioned in the lecture objectives, is commonly required for this in situ test?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify specific biological samples required for each method discussed",
+    "options": [
+      {
+        "text": "Amniotic fluid cells or chorionic villus sampling cells",
+        "isCorrect": true,
+        "rationale": "Correct because FISH for chromosomal aneuploidy is commonly performed on cells obtained from amniotic fluid or chorionic villus sampling, which provide intact nuclei for in situ hybridization."
+      },
+      {
+        "text": "Serum plasma cell free DNA only without cells",
+        "isCorrect": false,
+        "rationale": "Wrong because cell-free DNA can be used for noninvasive prenatal testing but FISH requires intact cells; it would be correct for cfDNA-based screening methods."
+      },
+      {
+        "text": "Purified genomic DNA from peripheral blood leukocytes",
+        "isCorrect": false,
+        "rationale": "Wrong because purified DNA can be used for molecular assays but FISH requires intact nuclei in cells; it would be correct for Southern blot or PCR-based analyses."
+      },
+      {
+        "text": "Protein lysate from cultured fibroblasts for Western blot",
+        "isCorrect": false,
+        "rationale": "Wrong because protein lysates are used for Western blot and not for chromosomal FISH; it would be correct for protein detection workflows."
+      },
+      {
+        "text": "Fixed tissue paraffin blocks for microarray hybridization",
+        "isCorrect": false,
+        "rationale": "Wrong because paraffin-embedded tissues can be used for some in situ assays but the lecture specifically highlights amniotic fluid or CVS cells for prenatal FISH; it would be correct if tissue sections were the sample of interest."
+      }
+    ]
+  },
+  {
+    "question": "A lab performing cloning wants to ensure only bacteria that took up the recombinant plasmid grow. Which plasmid feature described in the lecture enables selection of transformed bacteria?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Cloning",
+    "options": [
+      {
+        "text": "Antibiotic resistance gene allowing selection on antibiotic plates",
+        "isCorrect": true,
+        "rationale": "Correct because plasmids commonly include an antibiotic resistance marker so only transformed bacteria survive on selective media, as shown in the lecture's cloning diagrams."
+      },
+      {
+        "text": "Fluorescent reporter that kills non transformed cells",
+        "isCorrect": false,
+        "rationale": "Wrong because fluorescent reporters mark transformed cells but do not kill nontransformed ones; it would be correct if a toxin gene under selection were used."
+      },
+      {
+        "text": "Restriction site that prevents plasmid replication",
+        "isCorrect": false,
+        "rationale": "Wrong because restriction sites are used for cloning but do not enable selection by themselves; it would be correct if a negative selection marker were present."
+      },
+      {
+        "text": "Promoterless gene that expresses only in bacteria",
+        "isCorrect": false,
+        "rationale": "Wrong because promoterless genes do not express and thus cannot confer selectable traits; it would be correct if a bacterial promoter drove a selectable marker."
+      },
+      {
+        "text": "Origin of replication that prevents plasmid maintenance",
+        "isCorrect": false,
+        "rationale": "Wrong because origins of replication enable plasmid maintenance rather than prevent it; it would be correct only if the origin were defective."
+      }
+    ]
+  }
+]
