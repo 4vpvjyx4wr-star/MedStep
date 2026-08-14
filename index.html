@@ -133,6 +133,33 @@ body{
 }
 .settings-report-question-btn:hover{opacity:.85;color:var(--text)}
 
+.settings-support{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+}
+.settings-support-copy{display:flex;flex-direction:column;gap:6px;min-width:0}
+.settings-support-label{
+  font-size:.72rem;font-weight:700;opacity:.62;letter-spacing:.55px;
+  text-transform:uppercase;margin:0;
+}
+.settings-support-link{
+  color:var(--primary);font-size:.78rem;font-weight:700;
+  text-decoration:none;line-height:1.35;word-break:break-word;
+}
+.settings-support-link:hover{text-decoration:underline}
+.settings-support-hint{
+  font-size:.68rem;font-weight:500;opacity:.55;line-height:1.4;margin:0;
+}
+.settings-support-qr{
+  flex-shrink:0;width:96px;height:96px;padding:6px;
+  background:#fff;border-radius:14px;
+  box-shadow:0 0 0 1px rgba(0,0,0,.08);
+  transition:transform .2s cubic-bezier(.175,.885,.32,1.275);
+}
+.settings-support-qr:hover{transform:scale(1.06)}
+.settings-support-qr img{
+  width:100%;height:100%;display:block;border-radius:8px;
+}
+
 /* Theme picker — custom listbox + trigger (native select kept for state) */
 .theme-select-wrap{
   position:relative;margin-bottom:10px;z-index:2;
@@ -1881,6 +1908,19 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
 <!-- ══ SETTINGS ══════════════════════════════════════════ -->
 <div class="settings-menu" id="settings-menu">
   <div class="settings-menu-scroll" id="settings-menu-scroll">
+
+  <div class="settings-support">
+    <div class="settings-support-copy">
+      <p class="settings-support-label">☕ Buy me a coffee</p>
+      <a class="settings-support-link" href="https://www.buymeacoffee.com/JTDO" target="_blank" rel="noopener noreferrer">buymeacoffee.com/JTDO</a>
+      <p class="settings-support-hint">Scan the QR or tap the link to support MedStep.</p>
+    </div>
+    <a class="settings-support-qr" href="https://www.buymeacoffee.com/JTDO" target="_blank" rel="noopener noreferrer" title="Open Buy Me a Coffee">
+      <img src="buymeacoffee-qr.png" alt="QR code for buymeacoffee.com/JTDO">
+    </a>
+  </div>
+
+  <hr class="settings-divider">
 
   <div class="setting-row">
     <span>Real-time Feedback</span>
