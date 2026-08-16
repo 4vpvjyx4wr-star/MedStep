@@ -397,6 +397,37 @@ textarea:focus{outline:none;border-color:var(--primary)}
 .quiz-layout{display:grid;grid-template-columns:175px 1fr;gap:22px;height:calc(100vh - 80px);min-height:0;overflow:hidden}
 .no-sidebar{grid-template-columns:1fr!important}
 .no-sidebar .sidebar{display:none!important}
+.quiz-layout.multibuzz-on{grid-template-columns:175px 1fr 320px}
+.quiz-layout.no-sidebar.multibuzz-on{grid-template-columns:1fr 320px!important}
+
+.multibuzz-panel{position:relative;border-radius:18px;padding:14px;display:flex;flex-direction:column;overflow:hidden;min-height:0;min-width:0}
+.multibuzz-panel::before{content:'';position:absolute;inset:0;background:var(--card);border:1px solid var(--border);border-radius:18px;opacity:var(--panel-opacity,1);z-index:0;pointer-events:none}
+.multibuzz-chrome{position:relative;z-index:1;flex-shrink:0;margin-bottom:10px}
+.multibuzz-title{font-family:var(--font-mono);font-size:.6rem;letter-spacing:3px;opacity:.35;text-transform:uppercase;text-align:center;margin-bottom:8px}
+.multibuzz-hint{font-size:.68rem;font-weight:500;opacity:.55;line-height:1.45;margin:0 0 8px}
+.multibuzz-reset-nudge{
+  font-size:.72rem;font-weight:600;line-height:1.4;margin:0 0 8px;
+  padding:8px 10px;border-radius:9px;
+  background:color-mix(in srgb,var(--primary) 18%,transparent);
+  border:1px solid var(--primary);color:var(--text);
+}
+.multibuzz-panel.nudge-reset::before{
+  border-color:var(--primary);
+  box-shadow:0 0 0 2px color-mix(in srgb,var(--primary) 40%,transparent);
+}
+.multibuzz-open-btn{width:100%;font-size:.72rem;padding:8px 10px}
+.multibuzz-frame-wrap{position:relative;z-index:1;flex:1;min-height:0;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:var(--bg)}
+.multibuzz-frame-wrap iframe{width:100%;height:100%;border:0;display:block;background:var(--bg)}
+.multibuzz-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:16px;text-align:center;background:var(--card);z-index:2}
+.multibuzz-fallback p{font-size:.78rem;font-weight:500;opacity:.7;margin:0;line-height:1.45}
+
+@media(max-width:720px){
+  .quiz-layout.multibuzz-on,
+  .quiz-layout.no-sidebar.multibuzz-on{
+    grid-template-columns:1fr!important;
+    grid-template-rows:minmax(0,1fr) minmax(180px,40vh);
+  }
+}
 
 .sidebar{position:relative;border-radius:18px;padding:18px;display:flex;flex-direction:column;overflow:hidden}
 .sidebar-header{font-family:var(--font-mono);font-size:.6rem;letter-spacing:3px;opacity:.35;text-transform:uppercase;text-align:center;margin-bottom:14px;flex-shrink:0;position:relative;z-index:1}
@@ -1515,7 +1546,8 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 #qcount-picker-modal.open { display: flex; }
 .qpicker-card {
   background: var(--card); border: 1px solid var(--border); border-radius: 20px;
-  padding: 32px 28px 24px; width: 100%; max-width: 420px;
+  padding: 32px 28px 24px; width: 100%; max-width: 460px;
+  max-height: min(90vh, 760px); overflow-y: auto;
   box-shadow: 0 24px 60px rgba(0,0,0,.6); text-align: center;
 }
 .qpicker-title {
@@ -1556,9 +1588,51 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
 .qpicker-preset:hover { border-color: var(--primary); }
 .qpicker-preset.active { background: var(--primary); color: #fff; }
 .qpicker-actions {
-  display: flex; gap: 10px; justify-content: center;
+  display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;
 }
 .qpicker-actions .btn { min-width: 100px; }
+.qpicker-mix-bar {
+  display: flex; gap: 6px; justify-content: center;
+  background: rgba(255,255,255,.04); border: 1px solid var(--border);
+  border-radius: 999px; padding: 4px; margin: 4px 0 12px;
+}
+.qpicker-mix-btn {
+  flex: 1; border: none; background: transparent; color: var(--text);
+  font-family: var(--font-display); font-weight: 700; font-size: .76rem;
+  padding: 7px 12px; border-radius: 999px; cursor: pointer; opacity: .55;
+  transition: .15s;
+}
+.qpicker-mix-btn:hover:not(:disabled) { opacity: .85; }
+.qpicker-mix-btn.active { background: var(--primary); color: #fff; opacity: 1; }
+.qpicker-mix-btn:disabled { opacity: .28; cursor: default; }
+.qpicker-order-panel { text-align: left; margin-bottom: 8px; }
+.qpicker-order-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  background: rgba(255,255,255,.035); border: 1px solid var(--border);
+  border-radius: 12px; padding: 8px 10px; margin-bottom: 6px;
+}
+.qpicker-order-row.disabled { opacity: .42; }
+.qpicker-order-copy { min-width: 0; }
+.qpicker-order-label { font-size: .82rem; font-weight: 800; }
+.qpicker-order-sub {
+  font-size: .64rem; font-family: var(--font-mono); opacity: .48; margin-top: 1px;
+}
+.qpicker-order-stepper { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.qpicker-step {
+  width: 28px; height: 28px; border-radius: 8px; border: none;
+  background: var(--border); color: var(--text); font-weight: 800;
+  font-size: 1rem; line-height: 1; cursor: pointer; font-family: var(--font-display);
+}
+.qpicker-step:hover:not(:disabled) { border: 1px solid var(--primary); }
+.qpicker-step:disabled { opacity: .35; cursor: default; }
+.qpicker-order-n {
+  font-family: var(--font-mono); font-weight: 900; font-size: 1.05rem;
+  color: var(--primary); min-width: 1.6em; text-align: center;
+}
+.qpicker-order-hint {
+  font-family: var(--font-mono); font-size: .66rem; color: var(--subtle);
+  text-align: center; margin: 8px 0 4px; line-height: 1.4;
+}
 .btn-build {
   background: var(--success, #22c55e); color: #fff; border: none;
   font-weight: 700; font-family: var(--font-display);
@@ -1714,6 +1788,14 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
     </div>
     <div class="qpicker-value" id="qpicker-value" title="Click to type a number" onclick="beginQPickerValueEdit()">10</div>
     <div class="qpicker-presets" id="qpicker-presets"></div>
+    <div class="qpicker-mix-bar">
+      <button type="button" class="qpicker-mix-btn active" id="qpicker-mix-any" onclick="setQPickerMixMode('any')">Any order</button>
+      <button type="button" class="qpicker-mix-btn" id="qpicker-mix-custom" onclick="setQPickerMixMode('custom')">By order</button>
+    </div>
+    <div class="qpicker-order-panel" id="qpicker-order-panel" hidden>
+      <div id="qpicker-order-rows"></div>
+      <div class="qpicker-order-hint" id="qpicker-order-hint"></div>
+    </div>
     <div id="qpicker-build-status"></div>
     <div class="qpicker-actions">
       <button class="btn btn-secondary" onclick="closeQPicker()">Cancel</button>
@@ -1947,6 +2029,13 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
       </div>
       <input type="number" class="modal-input" id="pace-seconds-input" min="15" max="300" step="1" value="60" oninput="savePaceSecondsPref()" style="margin-bottom:0" aria-label="Seconds per question before auto-answer">
     </div>
+  </div>
+  <div class="setting-row setting-row-stack" id="multibuzz-setting">
+    <div class="setting-row-head">
+      <span>Multiplayer Buzzer</span>
+      <label class="switch"><input type="checkbox" id="multibuzz-toggle" onchange="saveMultibuzzPref()"><span class="slider"></span></label>
+    </div>
+    <p class="setting-desc">Classmates join at multibuzz.app with the room code; use the host’s Reset buzzers between questions; Spacebar buzzes only if the panel is focused (otherwise Space still goes to Next Question).</p>
   </div>
 
   <hr class="settings-divider">
@@ -2335,6 +2424,21 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
         </div>
       </div>
     </main>
+    <aside id="multibuzz-panel" class="multibuzz-panel hidden">
+      <div class="multibuzz-chrome">
+        <div class="multibuzz-title">Multiplayer Buzzer</div>
+        <p class="multibuzz-hint">Create a room and share the code. Reset buzzers between questions.</p>
+        <div id="multibuzz-reset-nudge" class="multibuzz-reset-nudge hidden" role="status" aria-live="polite">Click <strong>Reset all buzzers</strong> in the room for this question.</div>
+        <button type="button" class="btn btn-secondary multibuzz-open-btn" onclick="openMultibuzzTab()">Open in new tab</button>
+      </div>
+      <div class="multibuzz-frame-wrap">
+        <iframe id="multibuzz-iframe" title="Multiplayer Buzzer"></iframe>
+        <div id="multibuzz-fallback" class="multibuzz-fallback hidden">
+          <p>Multibuzz could not be embedded here. Open it in a new tab to create a room.</p>
+          <button type="button" class="btn btn-primary multibuzz-open-btn" onclick="openMultibuzzTab()">Open multibuzz.app</button>
+        </div>
+      </div>
+    </aside>
   </div>
 
   <!-- RESULTS SCREEN -->
@@ -2403,7 +2507,7 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
 let questions=[], currentIdx=0, timerInt=null, paceTimerInt=null, paceAutoAdvanceTimeout=null, paceRemaining=0,
     isPaused=false, isReviewMode=false, highlighterMode=false,
   isFlaggedReviewMode=false, flaggedReviewIndices=[], flaggedReviewPos=0, flaggedReviewPosByIdx=new Map(),
-  savedQuizState=null, activeQuizMeta=null;
+  savedQuizState=null, activeQuizMeta=null, multibuzzLoadTimer=null, multibuzzFrameLoaded=false, multibuzzNudgeTimer=null;
 const LETTERS=['A','B','C','D','E'];
 const ALL_THEMES=[
   'theme-slate-orange','theme-cyber','theme-autumn','theme-mesa','theme-evergreen',
@@ -2489,6 +2593,9 @@ const LS_PREF_EXAM_GRID='medstep_pref_exam_grid';
 const LS_PREF_TIMER_VISIBLE='medstep_pref_timer_visible';
 const LS_PREF_PACE_TIMER='medstep_pref_pace_timer';
 const LS_PREF_PACE_SECONDS='medstep_pref_pace_seconds';
+const LS_PREF_MULTIBUZZ='medstep_pref_multibuzz';
+const MULTIBUZZ_EMBED_URL='https://www.multibuzz.app/';
+const MULTIBUZZ_LOAD_MS=4000;
 const PACE_COUNTDOWN_WARN=10;
 const DEFAULT_PACE_SECONDS=60;
 const LS_REPORT_NOTIFY_EMAIL='medstep_report_notify_email';
@@ -2537,6 +2644,73 @@ function savePaceSecondsPref(){
   const val=document.getElementById('pace-seconds-val');
   if(val) val.textContent=sec+'s';
   if(isPaceTimerEnabled()) restartPaceTimerForCurrentQuestion();
+}
+function openMultibuzzTab(){
+  window.open(MULTIBUZZ_EMBED_URL,'_blank','noopener,noreferrer');
+}
+function saveMultibuzzPref(){
+  localStorage.setItem(LS_PREF_MULTIBUZZ, document.getElementById('multibuzz-toggle').checked?'1':'0');
+  applyMultibuzzUI();
+}
+function applyMultibuzzUI(){
+  const on=!!document.getElementById('multibuzz-toggle')?.checked;
+  const qs=document.getElementById('quiz-screen');
+  const panel=document.getElementById('multibuzz-panel');
+  const iframe=document.getElementById('multibuzz-iframe');
+  const fallback=document.getElementById('multibuzz-fallback');
+  if(qs) qs.classList.toggle('multibuzz-on',on);
+  if(panel) panel.classList.toggle('hidden',!on);
+  clearTimeout(multibuzzLoadTimer);
+  if(!iframe)return;
+  if(on){
+    iframe.onload=function(){
+      multibuzzFrameLoaded=true;
+      clearTimeout(multibuzzLoadTimer);
+      if(fallback) fallback.classList.add('hidden');
+    };
+    iframe.onerror=function(){
+      multibuzzFrameLoaded=false;
+      clearTimeout(multibuzzLoadTimer);
+      if(fallback) fallback.classList.remove('hidden');
+    };
+    if(iframe.getAttribute('src')!==MULTIBUZZ_EMBED_URL){
+      multibuzzFrameLoaded=false;
+      if(fallback) fallback.classList.add('hidden');
+      iframe.src=MULTIBUZZ_EMBED_URL;
+    }
+    if(!multibuzzFrameLoaded){
+      multibuzzLoadTimer=setTimeout(function(){
+        if(!multibuzzFrameLoaded&&fallback) fallback.classList.remove('hidden');
+      },MULTIBUZZ_LOAD_MS);
+    }
+  }else{
+    multibuzzFrameLoaded=false;
+    iframe.onload=null;
+    iframe.onerror=null;
+    iframe.src='about:blank';
+    iframe.removeAttribute('src');
+    if(fallback) fallback.classList.add('hidden');
+    hideMultibuzzResetNudge();
+  }
+}
+function hideMultibuzzResetNudge(){
+  clearTimeout(multibuzzNudgeTimer);
+  multibuzzNudgeTimer=null;
+  const panel=document.getElementById('multibuzz-panel');
+  const nudge=document.getElementById('multibuzz-reset-nudge');
+  if(panel) panel.classList.remove('nudge-reset');
+  if(nudge) nudge.classList.add('hidden');
+}
+function nudgeMultibuzzReset(){
+  if(!document.getElementById('multibuzz-toggle')?.checked)return;
+  const qs=document.getElementById('quiz-screen');
+  const panel=document.getElementById('multibuzz-panel');
+  const nudge=document.getElementById('multibuzz-reset-nudge');
+  if(!qs||qs.classList.contains('hidden')||!panel||panel.classList.contains('hidden')||!nudge)return;
+  nudge.classList.remove('hidden');
+  panel.classList.add('nudge-reset');
+  clearTimeout(multibuzzNudgeTimer);
+  multibuzzNudgeTimer=setTimeout(hideMultibuzzResetNudge,3500);
 }
 function hidePaceCountdown(){
   const el=document.getElementById('pace-countdown');
@@ -2603,6 +2777,7 @@ function loadEnginePrefs(){
   const tv=document.getElementById('timer-visible-toggle');
   const pt=document.getElementById('pace-timer-toggle');
   const psi=document.getElementById('pace-seconds-input');
+  const mb=document.getElementById('multibuzz-toggle');
   if(!ft||!gt||!tv)return;
   const f=localStorage.getItem(LS_PREF_FEEDBACK);
   if(f!==null) ft.checked=f==='1';
@@ -2618,11 +2793,16 @@ function loadEnginePrefs(){
     const ps=localStorage.getItem(LS_PREF_PACE_SECONDS);
     if(ps!==null) psi.value=ps;
   }
+  if(mb){
+    const m=localStorage.getItem(LS_PREF_MULTIBUZZ);
+    if(m!==null) mb.checked=m==='1';
+  }
   const paceVal=document.getElementById('pace-seconds-val');
   if(paceVal) paceVal.textContent=getPaceSecondsLimit()+'s';
   updatePaceSecondsWrapVisibility();
   toggleSidebar();
   applyTimerVisibilityUI();
+  applyMultibuzzUI();
   renderGrid();
 }
 function applyTimerVisibilityUI(){
@@ -4736,6 +4916,8 @@ const BACKUP_PREF_ALIASES = {
   pace_timer: 'medstep_pref_pace_timer',
   pref_pace_seconds: 'medstep_pref_pace_seconds',
   pace_seconds: 'medstep_pref_pace_seconds',
+  pref_multibuzz: 'medstep_pref_multibuzz',
+  multibuzz: 'medstep_pref_multibuzz',
   lib_filters: 'medstep_lib_filters',
   library_filters: 'medstep_lib_filters',
   library_source: 'medstep_library_source',
@@ -5184,7 +5366,10 @@ function changeQ(dir){
   }
   const next=currentIdx+dir;
   if(isReviewMode&&next>=questions.length){reviewAnswers_exit();return;}
-  if(next>=0&&next<questions.length)loadQuestion(next);
+  if(next>=0&&next<questions.length){
+    loadQuestion(next);
+    if(dir>0&&!isReviewMode) nudgeMultibuzzReset();
+  }
 }
 function scrambleAll(){
   if(isReviewMode)return;
@@ -5791,7 +5976,11 @@ document.addEventListener('keydown',e=>{
   if(e.key.toLowerCase()==='d') clearHighlights();
   if(e.key.toLowerCase()==='c') toggleCalc();
   if(e.key.toLowerCase()==='f') toggleFlagForCurrentQuestion();
-  if(e.key===' '){e.preventDefault();changeQ(1);}
+  if(e.key===' '){
+    if(e.target.closest&&e.target.closest('#multibuzz-panel'))return;
+    if(document.activeElement&&document.activeElement.id==='multibuzz-iframe')return;
+    e.preventDefault();changeQ(1);
+  }
   if(['1','2','3','4','5'].includes(e.key)){
     const opt=questions[currentIdx]?.options[Number(e.key)-1];
     if(opt)selectAnswer(opt);
@@ -6891,6 +7080,11 @@ let _qpickerEntry = null;
 /** Each entry is one "Add" from the question picker: { label, questions[] } */
 let _qpickerBuildingChunks = [];
 let _qpickerCurrentLabel = '';
+let _qpickerBuckets = { '1st': [], '2nd': [], '3rd': [], other: [] };
+let _qpickerOrderAvail = { '1st': 0, '2nd': 0, '3rd': 0, other: 0 };
+let _qpickerOrderCounts = { '1st': 0, '2nd': 0, '3rd': 0 };
+let _qpickerMixMode = 'any'; // 'any' | 'custom'
+let _qpickerSyncing = false;
 
 function escapeHtmlLib(s) {
   if (s == null) return '';
@@ -6919,21 +7113,214 @@ function removeBuildingChunk(idx) {
   showToast('➖ Removed: ' + (removed.label || 'Lecture') + ' (' + removed.questions.length + 'Q)');
 }
 
+function qpickerOrderOf(q) {
+  const raw = String(q?.difficulty_order || '').trim().toLowerCase();
+  if (/^1|first/.test(raw)) return '1st';
+  if (/^2|second/.test(raw)) return '2nd';
+  if (/^3|third/.test(raw)) return '3rd';
+  return 'other';
+}
+
+function qpickerBuildBuckets(pool) {
+  const buckets = { '1st': [], '2nd': [], '3rd': [], other: [] };
+  for (let i = 0; i < pool.length; i++) buckets[qpickerOrderOf(pool[i])].push(pool[i]);
+  return buckets;
+}
+
+function qpickerTaggedTotal() {
+  return (_qpickerOrderAvail['1st'] || 0) + (_qpickerOrderAvail['2nd'] || 0) + (_qpickerOrderAvail['3rd'] || 0);
+}
+
+function qpickerOrderSum() {
+  return (_qpickerOrderCounts['1st'] || 0) + (_qpickerOrderCounts['2nd'] || 0) + (_qpickerOrderCounts['3rd'] || 0);
+}
+
+function qpickerSelectableMax() {
+  if (_qpickerMixMode === 'custom') return qpickerTaggedTotal();
+  return _qpickerPool.length;
+}
+
+function qpickerPoolBreakdownText() {
+  const parts = [];
+  ['1st', '2nd', '3rd'].forEach(k => {
+    if (_qpickerOrderAvail[k]) parts.push(_qpickerOrderAvail[k] + ' ' + k);
+  });
+  if (_qpickerOrderAvail.other) parts.push(_qpickerOrderAvail.other + ' untagged');
+  return parts.join(' · ');
+}
+
 function showQPicker(pool, label) {
   _qpickerPool = pool;
   _qpickerCurrentLabel = label || 'Unknown';
+  _qpickerBuckets = qpickerBuildBuckets(pool);
+  _qpickerOrderAvail = {
+    '1st': _qpickerBuckets['1st'].length,
+    '2nd': _qpickerBuckets['2nd'].length,
+    '3rd': _qpickerBuckets['3rd'].length,
+    other: _qpickerBuckets.other.length
+  };
+  _qpickerOrderCounts = { '1st': 0, '2nd': 0, '3rd': 0 };
+  _qpickerMixMode = 'any';
   const total = pool.length;
   const slider = document.getElementById('qpicker-slider');
   slider.min = 1;
-  slider.max = total;
+  slider.max = Math.max(1, total);
   slider.value = Math.min(total, 10);
   document.getElementById('qpicker-max-label').textContent = total;
-  document.getElementById('qpicker-pool-info').textContent =
-    total + ' question' + (total !== 1 ? 's' : '') + ' — ' + label;
+  const breakdown = qpickerPoolBreakdownText();
+  document.getElementById('qpicker-pool-info').innerHTML =
+    total + ' question' + (total !== 1 ? 's' : '') + ' — ' + escapeHtmlLib(label) +
+    (breakdown ? '<br>' + escapeHtmlLib(breakdown) : '');
+  updateQPickerMixButtons();
+  document.getElementById('qpicker-order-panel').hidden = true;
   updateQPickerBuildStatus();
   buildQPickerPresets(total);
   updateQPickerValue(slider.value);
   document.getElementById('qcount-picker-modal').classList.add('open');
+}
+
+function updateQPickerMixButtons() {
+  const tagged = qpickerTaggedTotal();
+  const anyBtn = document.getElementById('qpicker-mix-any');
+  const customBtn = document.getElementById('qpicker-mix-custom');
+  if (anyBtn) anyBtn.classList.toggle('active', _qpickerMixMode === 'any');
+  if (customBtn) {
+    customBtn.classList.toggle('active', _qpickerMixMode === 'custom');
+    customBtn.disabled = tagged === 0;
+    customBtn.title = tagged === 0
+      ? 'No 1st/2nd/3rd-order tags in this set'
+      : 'Choose how many 1st, 2nd, and 3rd-order questions to include';
+  }
+}
+
+function setQPickerMixMode(mode) {
+  if (mode === 'custom' && qpickerTaggedTotal() === 0) {
+    showToast('❌ These questions are not tagged by order');
+    return;
+  }
+  const prevCounts = { ..._qpickerOrderCounts };
+  _qpickerMixMode = mode === 'custom' ? 'custom' : 'any';
+  updateQPickerMixButtons();
+  const panel = document.getElementById('qpicker-order-panel');
+  if (panel) panel.hidden = _qpickerMixMode !== 'custom';
+  const slider = document.getElementById('qpicker-slider');
+  const max = Math.max(1, qpickerSelectableMax());
+  slider.max = max;
+  document.getElementById('qpicker-max-label').textContent = qpickerSelectableMax();
+  let val = Number(slider.value);
+  val = Math.max(1, Math.min(max, val || 1));
+  if (_qpickerMixMode === 'custom') {
+    _qpickerOrderCounts = prevCounts;
+    _qpickerSyncing = true;
+    redistributeQPickerOrders(val, prevCounts);
+    const sum = qpickerOrderSum();
+    slider.value = sum || val;
+    renderQPickerOrderRows();
+    _qpickerSyncing = false;
+    val = Number(slider.value);
+  }
+  buildQPickerPresets(qpickerSelectableMax());
+  updateQPickerValue(val);
+}
+
+function redistributeQPickerOrders(total, prevCounts) {
+  const orders = ['1st', '2nd', '3rd'];
+  const prev = prevCounts || { ..._qpickerOrderCounts };
+  const active = orders.filter(o => (prev[o] || 0) > 0);
+  const targets = active.length ? active : orders.filter(o => (_qpickerOrderAvail[o] || 0) > 0);
+  orders.forEach(o => { _qpickerOrderCounts[o] = 0; });
+  const cap = targets.reduce((s, o) => s + (_qpickerOrderAvail[o] || 0), 0);
+  total = Math.max(0, Math.min(Number(total) || 0, cap));
+  if (!targets.length || total <= 0) return;
+
+  const weights = {};
+  let weightSum = 0;
+  targets.forEach(o => {
+    weights[o] = active.length ? (prev[o] || 0) : (_qpickerOrderAvail[o] || 0);
+    if (weights[o] <= 0) weights[o] = _qpickerOrderAvail[o] || 0;
+    weightSum += weights[o];
+  });
+  if (weightSum <= 0) return;
+
+  const raw = {};
+  let assigned = 0;
+  targets.forEach(o => {
+    raw[o] = total * weights[o] / weightSum;
+    _qpickerOrderCounts[o] = Math.min(_qpickerOrderAvail[o] || 0, Math.floor(raw[o]));
+    assigned += _qpickerOrderCounts[o];
+  });
+  const remainders = targets
+    .map(o => ({
+      o,
+      frac: raw[o] - Math.floor(raw[o]),
+      room: (_qpickerOrderAvail[o] || 0) - _qpickerOrderCounts[o]
+    }))
+    .filter(x => x.room > 0)
+    .sort((a, b) => b.frac - a.frac);
+  let leftover = total - assigned;
+  for (let i = 0; i < remainders.length && leftover > 0; i++) {
+    _qpickerOrderCounts[remainders[i].o]++;
+    leftover--;
+  }
+  if (leftover > 0) {
+    for (let i = 0; i < orders.length && leftover > 0; i++) {
+      const o = orders[i];
+      const room = (_qpickerOrderAvail[o] || 0) - (_qpickerOrderCounts[o] || 0);
+      const add = Math.min(room, leftover);
+      _qpickerOrderCounts[o] = (_qpickerOrderCounts[o] || 0) + add;
+      leftover -= add;
+    }
+  }
+}
+
+function renderQPickerOrderRows() {
+  const wrap = document.getElementById('qpicker-order-rows');
+  if (!wrap) return;
+  const meta = [
+    { key: '1st', label: '1st order', sub: 'Direct recall' },
+    { key: '2nd', label: '2nd order', sub: 'Two-step connection' },
+    { key: '3rd', label: '3rd order', sub: 'Clinical vignette' }
+  ];
+  wrap.innerHTML = meta.map(({ key, label, sub }) => {
+    const avail = _qpickerOrderAvail[key] || 0;
+    const val = _qpickerOrderCounts[key] || 0;
+    const disabled = avail === 0;
+    return '<div class="qpicker-order-row' + (disabled ? ' disabled' : '') + '">' +
+      '<div class="qpicker-order-copy">' +
+        '<div class="qpicker-order-label">' + label + '</div>' +
+        '<div class="qpicker-order-sub">' + avail + ' available · ' + sub + '</div>' +
+      '</div>' +
+      '<div class="qpicker-order-stepper">' +
+        '<button type="button" class="qpicker-step" ' + (val <= 0 || disabled ? 'disabled' : '') +
+          ' aria-label="Fewer ' + label + ' questions" onclick="bumpQPickerOrder(\'' + key + '\',-1)">−</button>' +
+        '<span class="qpicker-order-n">' + val + '</span>' +
+        '<button type="button" class="qpicker-step" ' + (val >= avail || disabled ? 'disabled' : '') +
+          ' aria-label="More ' + label + ' questions" onclick="bumpQPickerOrder(\'' + key + '\',1)">+</button>' +
+      '</div></div>';
+  }).join('');
+  const hint = document.getElementById('qpicker-order-hint');
+  if (!hint) return;
+  const sum = qpickerOrderSum();
+  const other = _qpickerOrderAvail.other || 0;
+  let text = sum + ' question' + (sum !== 1 ? 's' : '') + ' selected by order';
+  if (other) text += ' · ' + other + ' untagged only used in Any order';
+  hint.textContent = text;
+}
+
+function bumpQPickerOrder(order, delta) {
+  const max = _qpickerOrderAvail[order] || 0;
+  _qpickerOrderCounts[order] = Math.max(0, Math.min(max, (_qpickerOrderCounts[order] || 0) + Number(delta)));
+  const sum = qpickerOrderSum();
+  const slider = document.getElementById('qpicker-slider');
+  _qpickerSyncing = true;
+  if (sum > 0) {
+    slider.min = 1;
+    slider.max = Math.max(1, qpickerTaggedTotal());
+    slider.value = sum;
+    updateQPickerValue(sum);
+  }
+  _qpickerSyncing = false;
+  renderQPickerOrderRows();
 }
 
 function updateQPickerBuildStatus() {
