@@ -6930,7 +6930,7 @@ function renderStagingArea() {
         `<div class="lib-building-source-item">
           <span class="lib-building-source-name">${escapeHtmlLib(s.label)}</span>
           <span class="lib-building-source-right">
-            <span class="lib-building-source-count">${s.questions.length}Q</span>
+            <span class="lib-building-source-count">${s.questions.length}Q${s.mix ? ' · ' + escapeHtmlLib(s.mix) : ''}</span>
             <span class="lib-building-source-remove" title="Remove this lecture from the quiz" role="button" tabindex="0"
               onclick="event.stopPropagation();removeBuildingChunk(${i})">✕</span>
           </span>
@@ -7115,9 +7115,9 @@ function removeBuildingChunk(idx) {
 
 function qpickerOrderOf(q) {
   const raw = String(q?.difficulty_order || '').trim().toLowerCase();
-  if (/^1|first/.test(raw)) return '1st';
-  if (/^2|second/.test(raw)) return '2nd';
-  if (/^3|third/.test(raw)) return '3rd';
+  if (/^(1st|1|first)\b/.test(raw)) return '1st';
+  if (/^(2nd|2|second)\b/.test(raw)) return '2nd';
+  if (/^(3rd|3|third)\b/.test(raw)) return '3rd';
   return 'other';
 }
 
@@ -7205,22 +7205,22 @@ function setQPickerMixMode(mode) {
   if (panel) panel.hidden = _qpickerMixMode !== 'custom';
   const slider = document.getElementById('qpicker-slider');
   const max = Math.max(1, qpickerSelectableMax());
+  slider.min = 1;
   slider.max = max;
   document.getElementById('qpicker-max-label').textContent = qpickerSelectableMax();
   let val = Number(slider.value);
   val = Math.max(1, Math.min(max, val || 1));
+  slider.value = val;
+  _qpickerSyncing = true;
   if (_qpickerMixMode === 'custom') {
-    _qpickerOrderCounts = prevCounts;
-    _qpickerSyncing = true;
     redistributeQPickerOrders(val, prevCounts);
-    const sum = qpickerOrderSum();
-    slider.value = sum || val;
+    val = qpickerOrderSum() || val;
+    slider.value = val;
     renderQPickerOrderRows();
-    _qpickerSyncing = false;
-    val = Number(slider.value);
   }
   buildQPickerPresets(qpickerSelectableMax());
   updateQPickerValue(val);
+  _qpickerSyncing = false;
 }
 
 function redistributeQPickerOrders(total, prevCounts) {
@@ -7263,8 +7263,8 @@ function redistributeQPickerOrders(total, prevCounts) {
     leftover--;
   }
   if (leftover > 0) {
-    for (let i = 0; i < orders.length && leftover > 0; i++) {
-      const o = orders[i];
+    for (let i = 0; i < targets.length && leftover > 0; i++) {
+      const o = targets[i];
       const room = (_qpickerOrderAvail[o] || 0) - (_qpickerOrderCounts[o] || 0);
       const add = Math.min(room, leftover);
       _qpickerOrderCounts[o] = (_qpickerOrderCounts[o] || 0) + add;
@@ -7302,8 +7302,8 @@ function renderQPickerOrderRows() {
   if (!hint) return;
   const sum = qpickerOrderSum();
   const other = _qpickerOrderAvail.other || 0;
-  let text = sum + ' question' + (sum !== 1 ? 's' : '') + ' selected by order';
-  if (other) text += ' · ' + other + ' untagged only used in Any order';
+  let text = sum + ' question' + (sum !== 1 ? 's' : '') + ' selected by order. Zero an order to exclude it.';
+  if (other) text += ' ' + other + ' untagged question' + (other !== 1 ? 's' : '') + ' are only used in Any order.';
   hint.textContent = text;
 }
 
@@ -7318,6 +7318,10 @@ function bumpQPickerOrder(order, delta) {
     slider.max = Math.max(1, qpickerTaggedTotal());
     slider.value = sum;
     updateQPickerValue(sum);
+  } else {
+    const el = document.getElementById('qpicker-value');
+    if (el && el.tagName !== 'INPUT') el.textContent = '0';
+    document.querySelectorAll('.qpicker-preset').forEach(b => b.classList.remove('active'));
   }
   _qpickerSyncing = false;
   renderQPickerOrderRows();
@@ -7331,7 +7335,8 @@ function updateQPickerBuildStatus() {
       ' question' + (total !== 1 ? 's' : '');
     if (_qpickerBuildingChunks.length) {
       html += '<br>' + _qpickerBuildingChunks.map(s =>
-        '<span style="opacity:.7">' + escapeHtmlLib(s.label) + ': ' + s.questions.length + 'Q</span>'
+        '<span style="opacity:.7">' + escapeHtmlLib(s.label) + ': ' + s.questions.length + 'Q' +
+        (s.mix ? ' (' + escapeHtmlLib(s.mix) + ')' : '') + '</span>'
       ).join(', ');
     }
     el.innerHTML = html;
@@ -7461,6 +7466,13 @@ function buildQPickerPresets(total) {
 
 function updateQPickerValue(val) {
   val = Number(val);
+  if (_qpickerMixMode === 'custom' && !_qpickerSyncing) {
+    redistributeQPickerOrders(val);
+    val = qpickerOrderSum() || val;
+    const slider = document.getElementById('qpicker-slider');
+    if (slider) slider.value = val;
+    renderQPickerOrderRows();
+  }
   const el = document.getElementById('qpicker-value');
   if (el) {
     if (el.tagName === 'INPUT') el.value = val;
@@ -7530,6 +7542,7 @@ function cancelQPickerValueEdit(input, prev) {
 function closeQPicker() {
   document.getElementById('qcount-picker-modal').classList.remove('open');
   _qpickerPool = [];
+  _qpickerMixMode = 'any';
 }
 
 function randomSelect(pool, count) {
@@ -7541,19 +7554,54 @@ function randomSelect(pool, count) {
   return copy.slice(0, count);
 }
 
-function addToQuizFromQPicker() {
+function qpickerSelectedMixSummary() {
+  if (_qpickerMixMode !== 'custom') return '';
+  return ['1st', '2nd', '3rd']
+    .filter(k => (_qpickerOrderCounts[k] || 0) > 0)
+    .map(k => _qpickerOrderCounts[k] + ' ' + k)
+    .join(', ');
+}
+
+function selectQPickerQuestions() {
+  if (_qpickerMixMode === 'custom') {
+    const sum = qpickerOrderSum();
+    if (sum <= 0) return [];
+    const picked = [];
+    ['1st', '2nd', '3rd'].forEach(k => {
+      const n = _qpickerOrderCounts[k] || 0;
+      if (n > 0) picked.push(...randomSelect(_qpickerBuckets[k] || [], n));
+    });
+    return randomSelect(picked, picked.length);
+  }
   const count = Number(document.getElementById('qpicker-slider').value);
-  const selected = randomSelect(_qpickerPool, count);
-  _qpickerBuildingChunks.push({ label: _qpickerCurrentLabel, questions: selected });
+  return randomSelect(_qpickerPool, count);
+}
+
+function addToQuizFromQPicker() {
+  const selected = selectQPickerQuestions();
+  if (!selected.length) {
+    showToast(_qpickerMixMode === 'custom'
+      ? '❌ Choose how many 1st, 2nd, or 3rd-order questions to include'
+      : '❌ Select at least 1 question');
+    return;
+  }
+  const mix = qpickerSelectedMixSummary();
+  _qpickerBuildingChunks.push({ label: _qpickerCurrentLabel, questions: selected, mix });
   closeQPicker();
   renderStagingArea();
-  showToast('✅ Added ' + selected.length + 'Q — quiz now has ' + qpickerBuildingTotal() + ' questions');
+  showToast('✅ Added ' + selected.length + 'Q' + (mix ? ' (' + mix + ')' : '') +
+    ' — quiz now has ' + qpickerBuildingTotal() + ' questions');
   if (!libraryOpen) toggleLibrary();
 }
 
 function confirmQPicker() {
-  const count = Number(document.getElementById('qpicker-slider').value);
-  const selected = randomSelect(_qpickerPool, count);
+  const selected = selectQPickerQuestions();
+  if (!selected.length) {
+    showToast(_qpickerMixMode === 'custom'
+      ? '❌ Choose how many 1st, 2nd, or 3rd-order questions to include'
+      : '❌ Select at least 1 question');
+    return;
+  }
   const all = [...qpickerBuildingFlat(), ...selected];
   const meta = buildQPickerMeta();
   _qpickerBuildingChunks = [];
