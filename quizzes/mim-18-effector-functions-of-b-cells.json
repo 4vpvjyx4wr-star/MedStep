@@ -1,0 +1,1198 @@
+[
+  {
+    "question": "A patient’s lymph node biopsy shows resting B cells clustered in a cortical region without germinal centers. Which anatomical site most likely contains these resting B cells?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the phases of the humoral immune response and where each of these occurring and which cell types are involved.",
+    "options": [
+      {
+        "text": "Primary follicle in lymph node cortex containing resting B cells",
+        "isCorrect": true,
+        "rationale": "Correct: Primary follicles in the cortex house resting B cells before antigen encounter; this matches the lecture description of follicle anatomy."
+      },
+      {
+        "text": "Paracortex region of lymph node dominated by T cell zones",
+        "isCorrect": false,
+        "rationale": "Wrong: Paracortex is T cell rich; it would be correct only if the question asked about activated T lymphocytes rather than resting B cells."
+      },
+      {
+        "text": "Medullary cords containing plasma cells and macrophage aggregates",
+        "isCorrect": false,
+        "rationale": "Wrong: Medullary cords contain plasma cells and macrophages; this would be correct only if the sample showed antibody-secreting cells rather than resting B cells."
+      },
+      {
+        "text": "Marginal zone at splenic white pulp border with innate B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Marginal zone is a splenic structure with marginal-zone B cells; it would be correct only for spleen tissue rather than a lymph node cortex."
+      },
+      {
+        "text": "Germinal center within secondary follicle showing proliferating B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Germinal centers indicate active B cell proliferation and specialization; this would be correct only if the biopsy showed an active humoral response rather than resting follicles."
+      }
+    ]
+  },
+  {
+    "question": "Which B cell subset can mount an antibody response to repetitive carbohydrate antigens without requiring helper lymphocyte signals?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast T-dependent vs. T-independent antibody responses and the different subsets of B cells.",
+    "options": [
+      {
+        "text": "Marginal-zone B cells respond to repetitive nonprotein antigens independently",
+        "isCorrect": true,
+        "rationale": "Correct: Marginal-zone B cells respond to repetitive carbohydrate or lipid antigens without T cell help, as described for T-independent responses."
+      },
+      {
+        "text": "Follicular B cells require peptide antigen presentation and T cell help",
+        "isCorrect": false,
+        "rationale": "Wrong: Follicular B cells are T-dependent responders; this would be correct only if the antigen were protein and required Tfh assistance."
+      },
+      {
+        "text": "B-1 cells are restricted to thymus-dependent protein antigen responses",
+        "isCorrect": false,
+        "rationale": "Wrong: B-1 cells actually produce natural antibodies and can respond to nonprotein antigens; this option would be correct only if B-1 cells were limited to T-dependent responses."
+      },
+      {
+        "text": "Plasma cells immediately secrete high affinity class-switched antibodies",
+        "isCorrect": false,
+        "rationale": "Wrong: Plasma cells secrete antibodies but high-affinity class-switched antibodies typically arise after T-dependent germinal center reactions; this would be correct only post affinity maturation."
+      },
+      {
+        "text": "Naïve B cells in bone marrow mediate rapid T-independent responses",
+        "isCorrect": false,
+        "rationale": "Wrong: Naïve bone marrow B cells are not the primary mediators of peripheral T-independent responses; this would be correct only if those cells trafficked and functioned like marginal-zone or B-1 cells."
+      }
+    ]
+  },
+  {
+    "question": "An experimental mouse lacks CD40L expression on CD4 cells. Which humoral process will be most impaired in this animal?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how CD4 T cells \"help\" B cells. Identify the predominant Th subset involved in the humoral response.",
+    "options": [
+      {
+        "text": "Isotype switching from IgM to IgG IgA or IgE will be impaired",
+        "isCorrect": true,
+        "rationale": "Correct: CD40:CD40L interaction is required to activate AID and drive class switch recombination, so absence of CD40L blocks isotype switching."
+      },
+      {
+        "text": "Initial BCR cross-linking and naive B cell antigen recognition will be impaired",
+        "isCorrect": false,
+        "rationale": "Wrong: BCR-mediated antigen recognition and cross-linking are independent of T cell CD40L; this would be correct only if BCR signaling molecules were absent."
+      },
+      {
+        "text": "Complement classical pathway activation by antibody complexes will be absent",
+        "isCorrect": false,
+        "rationale": "Wrong: Complement activation depends on antibody isotypes like IgM and IgG binding antigen; it would be absent only if antibodies were not produced at all, not solely due to CD40L deficiency."
+      },
+      {
+        "text": "Follicular dendritic cell antigen display to B cells will be abolished",
+        "isCorrect": false,
+        "rationale": "Wrong: FDC antigen display is independent of CD40L; this option would be correct only if FDCs were depleted or unable to bind antigen."
+      },
+      {
+        "text": "Somatic hypermutation in variable regions will be completely prevented",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation requires AID activation via T cell help; while CD40L deficiency reduces this process, it may not completely prevent all mutation without additional defects."
+      }
+    ]
+  },
+  {
+    "question": "Which molecular event directly relocates the VDJ exon to a downstream constant region during antibody specialization?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process in detail and biological significance of: ii. Isotype Switching",
+    "options": [
+      {
+        "text": "Switch recombination excises intervening DNA between switch regions",
+        "isCorrect": true,
+        "rationale": "Correct: Class switch recombination removes DNA between switch regions, moving the VDJ cassette adjacent to a new constant region as described in the lecture."
+      },
+      {
+        "text": "Somatic hypermutation introduces point mutations into constant region exons",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation targets variable regions, not constant regions; this would be correct only if mutations altered Fc function directly."
+      },
+      {
+        "text": "V(D)J recombination reorders constant region genes during activation",
+        "isCorrect": false,
+        "rationale": "Wrong: V(D)J recombination assembles variable region exons during B cell development, not constant region switching; it would be correct only in early B cell maturation context."
+      },
+      {
+        "text": "Class switching copies constant region from helper T cell genome",
+        "isCorrect": false,
+        "rationale": "Wrong: Class switching is an intrachromosomal recombination event within the B cell; this option would be correct only if horizontal gene transfer occurred, which it does not."
+      },
+      {
+        "text": "Alternative splicing of heavy chain transcripts changes Fc region identity",
+        "isCorrect": false,
+        "rationale": "Wrong: Alternative splicing can affect membrane versus secreted forms but does not relocate VDJ to a different constant region; this would be correct only for membrane/secreted isoform changes."
+      }
+    ]
+  },
+  {
+    "question": "During a prolonged infection, B cells in follicles acquire point mutations in antigen-binding regions. Which enzyme initiates these mutations?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the process in detail and biological significance of: i. Affinity Maturation",
+    "options": [
+      {
+        "text": "Activation induced cytidine deaminase introduces mutations in immunoglobulin genes",
+        "isCorrect": true,
+        "rationale": "Correct: AID introduces point mutations in variable regions during somatic hypermutation, enabling affinity maturation as described in the lecture."
+      },
+      {
+        "text": "RAG recombinase mediates somatic hypermutation in germinal centers",
+        "isCorrect": false,
+        "rationale": "Wrong: RAG enzymes mediate V(D)J recombination during development, not somatic hypermutation; it would be correct only if RAG acted post-activation, which it does not."
+      },
+      {
+        "text": "DNA polymerase delta error rate increases to mutate BCR variable regions",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation is initiated by AID, not general polymerase error; this would be correct only if polymerase errors were targeted specifically to variable regions."
+      },
+      {
+        "text": "Uracil DNA glycosylase directly creates point mutations in V regions",
+        "isCorrect": false,
+        "rationale": "Wrong: Uracil DNA glycosylase participates in processing AID-induced lesions but AID is the initiating enzyme; this would be correct only if UDg initiated deamination itself."
+      },
+      {
+        "text": "Topoisomerase II generates double strand breaks to mutate antigen receptors",
+        "isCorrect": false,
+        "rationale": "Wrong: Topoisomerase II is not the initiating mutator in somatic hypermutation; it would be correct only if it specifically targeted V regions to create mutations."
+      }
+    ]
+  },
+  {
+    "question": "A patient with recurrent encapsulated bacterial infections shows poor antibody affinity despite normal IgM levels. Which germinal center process is most likely defective?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the process in detail and biological significance of: i. Affinity Maturation",
+    "options": [
+      {
+        "text": "Selection of high affinity B cells by follicular dendritic cell displayed antigen",
+        "isCorrect": true,
+        "rationale": "Correct: Affinity maturation requires FDC-displayed antigen and Tfh-mediated selection of high-affinity clones; defective selection explains poor affinity despite antibody presence."
+      },
+      {
+        "text": "Initial BCR cross-linking by repetitive polysaccharide antigens in spleen",
+        "isCorrect": false,
+        "rationale": "Wrong: Initial BCR cross-linking can activate T-independent responses but does not produce affinity-matured antibodies; this would be correct only if activation itself were impaired."
+      },
+      {
+        "text": "Bone marrow V(D)J recombination failure producing nonfunctional naive BCRs",
+        "isCorrect": false,
+        "rationale": "Wrong: V(D)J recombination defects affect naive repertoire and IgM levels; here IgM is normal, so this would be correct only if naive BCR generation were abnormal."
+      },
+      {
+        "text": "Complement receptor deficiency preventing classical pathway activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Complement defects can impair opsonization and antigen trapping but do not directly prevent affinity maturation; this would be correct only if complement were essential for FDC antigen display in this case."
+      },
+      {
+        "text": "Plasma cell inability to secrete any immunoglobulin despite normal B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: If plasma cells could not secrete antibodies, serum IgM would be low; normal IgM argues against a secretion defect, so this option is unlikely unless secretion were selectively impaired for high-affinity isotypes."
+      }
+    ]
+  },
+  {
+    "question": "Which serum antibody pattern best distinguishes a primary response from a secondary response early after re-exposure?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast a primary antibody response vs. a secondary antibody response.",
+    "options": [
+      {
+        "text": "Primary response shows early IgM predominance with low IgG initially",
+        "isCorrect": true,
+        "rationale": "Correct: Primary responses produce IgM first with IgG rising later; the lecture notes IgM detected first and IgG:IgM ratio  2 early; this would be correct only if class switching and memory were absent."
+      },
+      {
+        "text": "Primary response shows sustained high IgG levels for prolonged periods",
+        "isCorrect": false,
+        "rationale": "Wrong: Sustained high IgG is typical of secondary responses and long-lived plasma cells; this would be correct only after memory-driven re-exposure."
+      }
+    ]
+  },
+  {
+    "question": "A vaccine aims to induce long-lived plasma cells and high-affinity antibodies. Which lymphoid microenvironment should the vaccine target to maximize these outcomes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the phases of the humoral immune response and where each of these occurring and which cell types are involved.",
+    "options": [
+      {
+        "text": "Germinal center within secondary follicle where B cells specialize",
+        "isCorrect": true,
+        "rationale": "Correct: Germinal centers in secondary follicles are where isotype switching, affinity maturation, and long-lived plasma cell generation occur, per the lecture."
+      },
+      {
+        "text": "Primary follicle containing resting B cells before antigen encounter",
+        "isCorrect": false,
+        "rationale": "Wrong: Primary follicles contain resting B cells and lack the specialized processes of germinal centers; this would be correct only for naive B cell localization."
+      },
+      {
+        "text": "Paracortex where naive T cells are activated by antigen presenting cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Paracortex is T cell zone; while Tfh originate there, the B cell specialization occurs in follicles, so this would be correct only if T cell priming alone were sufficient."
+      },
+      {
+        "text": "Medullary sinus where macrophages filter lymph and trap debris",
+        "isCorrect": false,
+        "rationale": "Wrong: Medullary sinuses are for filtration and plasma cell residence but not the primary site of affinity maturation; this would be correct only for terminal plasma cell localization."
+      },
+      {
+        "text": "Marginal zone of spleen specialized for T cell dependent germinal centers",
+        "isCorrect": false,
+        "rationale": "Wrong: Marginal zone B cells mediate T-independent responses; germinal centers are not formed primarily in marginal zones, so this would be correct only in specific splenic follicle contexts."
+      }
+    ]
+  },
+  {
+    "question": "Which receptor on phagocytes binds the Fc portion of IgG to enhance ingestion of opsonized microbes?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Review: Describe the function of the FcRs discussed and the cells that express these receptors.",
+    "options": [
+      {
+        "text": "Fc gamma receptor CD64 on macrophages and neutrophils mediates opsonization",
+        "isCorrect": true,
+        "rationale": "Correct: FcγR (CD64) on macrophages and neutrophils binds IgG Fc to promote phagocytosis, as noted in the lecture."
+      },
+      {
+        "text": "Fc epsilon receptor on eosinophils binds IgG to promote phagocytosis",
+        "isCorrect": false,
+        "rationale": "Wrong: FcεR binds IgE on eosinophils; it would be correct only if the question asked about IgE-mediated responses."
+      },
+      {
+        "text": "Complement receptor CR1 on neutrophils directly binds IgG Fc region",
+        "isCorrect": false,
+        "rationale": "Wrong: CR1 binds complement fragments like C3b, not IgG Fc; this would be correct only if complement opsonization were the focus."
+      },
+      {
+        "text": "Fc alpha receptor on NK cells binds IgG to trigger ADCC",
+        "isCorrect": false,
+        "rationale": "Wrong: FcαR binds IgA and NK cells primarily use FcγR (CD16) for IgG-mediated ADCC; this would be correct only if IgA-mediated cytotoxicity by NK cells occurred."
+      },
+      {
+        "text": "Fc mu receptor on B cells binds IgG to enhance phagocytosis",
+        "isCorrect": false,
+        "rationale": "Wrong: FcμR binds IgM and is expressed on B cells; it would be correct only if IgM-mediated phagocytosis by B cells were the mechanism."
+      }
+    ]
+  },
+  {
+    "question": "A patient with high serum IgE and recurrent parasitic infections relies on which antibody-mediated effector cell interaction for parasite clearance?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Review: Compare and contrast the effector functions of the various types of antibody isotypes.",
+    "options": [
+      {
+        "text": "Eosinophil Fc epsilon receptor engagement of IgE coated parasites mediates ADCC",
+        "isCorrect": true,
+        "rationale": "Correct: IgE bound to parasites engages FcεR on eosinophils to mediate ADCC, as described in the lecture."
+      },
+      {
+        "text": "NK cell Fc gamma receptor engagement of IgM coated parasites mediates ADCC",
+        "isCorrect": false,
+        "rationale": "Wrong: NK cells use FcγR to bind IgG, not IgM; this would be correct only if parasites were coated with IgG instead of IgM."
+      },
+      {
+        "text": "Macrophage complement receptor binding of IgA immune complexes clears parasites",
+        "isCorrect": false,
+        "rationale": "Wrong: Complement receptors bind complement fragments, and IgA is not the main complement activator; this would be correct only if IgA activated complement in that context."
+      },
+      {
+        "text": "Neutrophil Fc alpha receptor engagement of IgG triggers parasite phagocytosis",
+        "isCorrect": false,
+        "rationale": "Wrong: FcαR binds IgA and neutrophils use FcγR for IgG; this would be correct only if IgA were the opsonin and FcαR mediated phagocytosis."
+      },
+      {
+        "text": "B cell Fc receptor binding of IgE directly lyses parasites extracellularly",
+        "isCorrect": false,
+        "rationale": "Wrong: B cells do not mediate IgE-dependent cytotoxicity; this would be correct only if B cells expressed cytotoxic machinery and FcεR-mediated killing."
+      }
+    ]
+  },
+  {
+    "question": "Which antibody isotype is most effective at activating the classical complement pathway when bound to multivalent antigen?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Functions of the Humoral Immune Response",
+    "options": [
+      {
+        "text": "Pentameric IgM efficiently activates classical complement when antigen bound",
+        "isCorrect": true,
+        "rationale": "Correct: IgM is highly effective at activating the classical complement pathway when bound to antigen due to its pentameric structure, per the lecture."
+      },
+      {
+        "text": "Monomeric IgA in mucosa robustly activates classical complement pathway",
+        "isCorrect": false,
+        "rationale": "Wrong: IgA is not a strong activator of the classical pathway; this would be correct only if IgA could bind C1q effectively like IgM or IgG."
+      },
+      {
+        "text": "Secretory IgA in secretions primarily triggers systemic complement activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Secretory IgA functions mainly in mucosal neutralization and does not strongly activate systemic complement; this would be correct only if secretory IgA had complement-activating Fc regions."
+      },
+      {
+        "text": "IgE bound to helminths activates classical complement cascade efficiently",
+        "isCorrect": false,
+        "rationale": "Wrong: IgE is not a primary activator of the classical complement pathway; this would be correct only if IgE could bind C1q similarly to IgM."
+      },
+      {
+        "text": "IgG subclasses never participate in classical complement activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Some IgG subclasses (e.g., IgG1, IgG3) can activate complement; this option would be correct only if all IgG subclasses lacked C1q binding."
+      }
+    ]
+  },
+  {
+    "question": "Which two signals are required for full activation of a naive follicular B cell encountering protein antigen?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Phases of Humoral Immunity",
+    "options": [
+      {
+        "text": "BCR engagement plus TLR or complement receptor costimulatory signals",
+        "isCorrect": true,
+        "rationale": "Correct: First signal is BCR binding; second signals include innate inputs like complement receptor CD21 or TLRs, as described in activation steps."
+      },
+      {
+        "text": "Only BCR cross-linking without any additional costimulatory input",
+        "isCorrect": false,
+        "rationale": "Wrong: Some B cells (B-1, marginal-zone) can be activated by cross-linking alone, but follicular B cells typically require a second signal; this would be correct only for T-independent subsets."
+      },
+      {
+        "text": "CD8 T cell cytotoxic contact plus BCR internalization signal",
+        "isCorrect": false,
+        "rationale": "Wrong: CD8 T cells do not provide helper signals for B cells; this would be correct only if cytotoxic T cells expressed CD40L and provided help, which they do not."
+      },
+      {
+        "text": "Complement activation alone without BCR engagement suffices for activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Complement can provide costimulation but cannot replace antigen-specific BCR engagement; this would be correct only if complement triggered BCR-independent activation pathways."
+      },
+      {
+        "text": "FDC antigen presentation alone without BCR recognition activates B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: FDCs display antigen for BCR recognition but cannot activate B cells without BCR engagement; this would be correct only if B cells could be activated solely by FDC signals."
+      }
+    ]
+  },
+  {
+    "question": "A researcher blocks CD40:CD40L interactions during an immune response. Which germinal center outcome will be most reduced?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process in detail and biological significance of: ii. Isotype Switching",
+    "options": [
+      {
+        "text": "Affinity maturation and class switching will be markedly decreased without CD40L",
+        "isCorrect": true,
+        "rationale": "Correct: CD40:CD40L engagement is required for AID activation, isotype switching, and affinity maturation in germinal centers, per the lecture."
+      },
+      {
+        "text": "Initial antigen recognition by naive B cells will be completely abolished",
+        "isCorrect": false,
+        "rationale": "Wrong: Initial antigen recognition via BCR does not require CD40:CD40L; this would be correct only if BCR signaling components were inhibited."
+      },
+      {
+        "text": "FDC ability to trap antigen on their surface will be eliminated",
+        "isCorrect": false,
+        "rationale": "Wrong: FDC antigen trapping is independent of CD40:CD40L; this would be correct only if CD40 signaling controlled FDC antigen retention."
+      },
+      {
+        "text": "T cell priming in paracortex will be enhanced by blocking CD40L",
+        "isCorrect": false,
+        "rationale": "Wrong: Blocking CD40L impairs T-B interactions rather than enhancing T cell priming; this would be correct only if CD40L blockade paradoxically increased T cell activation."
+      },
+      {
+        "text": "Somatic hypermutation frequency will increase without CD40 signaling",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation requires AID activation via T cell help; CD40L blockade would reduce, not increase, mutation frequency unless alternative AID activation occurred."
+      }
+    ]
+  },
+  {
+    "question": "Which B cell-derived product neutralizes toxins and prevents pathogen entry into host cells in the extracellular space?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Functions of the Humoral Immune Response",
+    "options": [
+      {
+        "text": "Antibody is secreted by plasma cells to neutralize microbes and toxins",
+        "isCorrect": true,
+        "rationale": "Correct: Secreted antibodies neutralize microbes, viruses, and toxins in extracellular spaces, as stated in the lecture functions."
+      },
+      {
+        "text": "Complement proteins produced by B cells directly neutralize extracellular pathogens",
+        "isCorrect": false,
+        "rationale": "Wrong: Complement proteins are produced mainly by the liver, not B cells; this would be correct only if B cells secreted complement components."
+      },
+      {
+        "text": "Cytokines from plasma cells recruit neutrophils to neutralize toxins",
+        "isCorrect": false,
+        "rationale": "Wrong: Plasma cells primarily secrete antibodies, not cytokines for neutrophil recruitment; this would be correct only if plasma cells secreted those specific chemokines."
+      },
+      {
+        "text": "Membrane-bound BCRs on naive B cells neutralize extracellular toxins",
+        "isCorrect": false,
+        "rationale": "Wrong: Membrane BCRs bind antigen for activation but do not neutralize toxins extracellularly; this would be correct only if BCRs were shed as neutralizing molecules."
+      },
+      {
+        "text": "Fc receptors on macrophages neutralize pathogens before antibody binding",
+        "isCorrect": false,
+        "rationale": "Wrong: Fc receptors bind antibody-opsonized targets and mediate phagocytosis, but they do not neutralize pathogens independently; this would be correct only if FcRs acted without antibodies."
+      }
+    ]
+  },
+  {
+    "question": "A patient with defective AID activity would most likely show which laboratory finding after immunization with a protein antigen?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the process in detail and biological significance of: i. Affinity Maturation",
+    "options": [
+      {
+        "text": "High IgM titers with low affinity and minimal class switched IgG",
+        "isCorrect": true,
+        "rationale": "Correct: AID is required for somatic hypermutation and class switching; deficiency yields persistent IgM with poor affinity and reduced IgG, matching lecture mechanisms."
+      },
+      {
+        "text": "High affinity IgG with normal class switching and memory formation",
+        "isCorrect": false,
+        "rationale": "Wrong: AID deficiency prevents affinity maturation and class switching; this would be correct only if AID function were intact."
+      },
+      {
+        "text": "Absent IgM but abundant high affinity IgA in serum",
+        "isCorrect": false,
+        "rationale": "Wrong: AID deficiency would not produce abundant class-switched isotypes like IgA; this would be correct only if alternative switching pathways compensated fully."
+      },
+      {
+        "text": "Excessive germinal center formation with hypermutated variable regions",
+        "isCorrect": false,
+        "rationale": "Wrong: Without AID, somatic hypermutation and effective germinal center selection are impaired; this would be correct only if hypermutation occurred via another enzyme."
+      },
+      {
+        "text": "Normal secondary response kinetics with rapid IgG rise after boost",
+        "isCorrect": false,
+        "rationale": "Wrong: AID deficiency impairs secondary high-affinity IgG responses; this would be correct only if memory B cells and switching were unaffected."
+      }
+    ]
+  },
+  {
+    "question": "Which cell type displays antigen on Fc or complement receptors to facilitate selection of high affinity B cells in follicles?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the process in detail and biological significance of: i. Affinity Maturation",
+    "options": [
+      {
+        "text": "Follicular dendritic cells trap antigen for B cell selection in germinal centers",
+        "isCorrect": true,
+        "rationale": "Correct: FDCs display antigen via Fc or complement receptors to activated B cells, enabling selection of high-affinity clones as described in the lecture."
+      },
+      {
+        "text": "Conventional dendritic cells present antigen via MHC I to B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Conventional DCs present to T cells via MHC, not to B cells via Fc/complement receptors; this would be correct only if DCs displayed antigen in FDC-like fashion."
+      },
+      {
+        "text": "Macrophages present antigen on MHC II to select high affinity B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Macrophages present antigen to T cells and clear debris but FDCs specifically display intact antigen to B cells; this would be correct only if macrophages acted like FDCs."
+      },
+      {
+        "text": "T follicular helper cells present intact antigen on surface to B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Tfh cells provide help via CD40L and cytokines and recognize processed peptide-MHC II, not display intact antigen via Fc/complement receptors; this would be correct only if Tfh displayed antigen similarly to FDCs."
+      },
+      {
+        "text": "Naive B cells themselves display antigen to neighboring B cells for selection",
+        "isCorrect": false,
+        "rationale": "Wrong: Naive B cells internalize and present processed antigen to T cells but do not trap intact antigen for selection; this would be correct only if B cells functioned as antigen-retaining stromal cells."
+      }
+    ]
+  },
+  {
+    "question": "A child vaccinated with a polysaccharide capsule conjugate vaccine develops robust IgG and memory. Which mechanism explains improved response compared with unconjugated polysaccharide vaccine?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast T-dependent vs. T-independent antibody responses and the different subsets of B cells.",
+    "options": [
+      {
+        "text": "Protein conjugation enables peptide presentation to helper T cells and class switching",
+        "isCorrect": true,
+        "rationale": "Correct: Conjugating polysaccharide to protein allows B cells to present peptide to Tfh cells, enabling T-dependent isotype switching and memory formation, per lecture contrasts."
+      },
+      {
+        "text": "Conjugation increases polysaccharide cross-linking of BCRs for T independent activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Cross-linking drives T-independent responses but does not explain enhanced IgG and memory; this would be correct only if conjugation increased repetitive epitope density without T cell help."
+      },
+      {
+        "text": "Conjugate vaccines directly activate complement to produce IgG without T cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Complement activation alone does not generate class-switched IgG and memory; this would be correct only if complement induced T-dependent features."
+      },
+      {
+        "text": "Protein carrier prevents antigen uptake by follicular dendritic cells limiting response",
+        "isCorrect": false,
+        "rationale": "Wrong: Carrier proteins enhance antigen presentation and FDC display rather than preventing uptake; this would be correct only if carrier blocked FDC antigen retention."
+      },
+      {
+        "text": "Conjugation converts marginal-zone B cell responses into bone marrow plasma cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Marginal-zone B cells mediate T-independent responses; conjugation promotes follicular B cell T-dependent responses and memory, not direct marginal-zone conversion."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best describes the fate of B cells that acquire lower affinity BCRs during germinal center competition?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process in detail and biological significance of: i. Affinity Maturation",
+    "options": [
+      {
+        "text": "Lower affinity B cells undergo apoptosis due to lack of Tfh survival signals",
+        "isCorrect": true,
+        "rationale": "Correct: B cells with lower affinity fail to compete for antigen and Tfh help and die by neglect, as outlined in the lecture."
+      },
+      {
+        "text": "Lower affinity B cells are preferentially selected to become long lived plasma cells",
+        "isCorrect": false,
+        "rationale": "Wrong: High affinity clones are preferentially selected for plasma cell differentiation; this would be correct only if selection favored diversity over affinity."
+      },
+      {
+        "text": "Lower affinity B cells switch isotype to IgE to increase binding strength",
+        "isCorrect": false,
+        "rationale": "Wrong: Isotype switching changes Fc function, not antigen-binding affinity; this would be correct only if switching directly increased variable region affinity."
+      },
+      {
+        "text": "Lower affinity B cells migrate to paracortex to present antigen to naive T cells",
+        "isCorrect": false,
+        "rationale": "Wrong: B cells present antigen to Tfh in follicles; migration to paracortex is not the typical fate for low-affinity clones unless they re-enter T cell zones for other interactions."
+      },
+      {
+        "text": "Lower affinity B cells upregulate AID to rapidly increase mutation rate",
+        "isCorrect": false,
+        "rationale": "Wrong: AID activity is present in germinal centers but upregulation alone does not guarantee survival; this would be correct only if increased mutation reliably produced higher affinity variants."
+      }
+    ]
+  },
+  {
+    "question": "Which immunoglobulin isotype predominates early in a primary humoral response and is produced by naive B cells before class switching?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Phases of Humoral Immunity",
+    "options": [
+      {
+        "text": "IgM is produced first by naive B cells before isotype switching occurs",
+        "isCorrect": true,
+        "rationale": "Correct: Naive B cells initially secrete IgM upon activation; class switching to IgG, IgA, or IgE occurs later with T cell help, as the lecture states."
+      },
+      {
+        "text": "IgG is the earliest isotype produced immediately by naive B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: IgG production requires class switching and T cell help; this would be correct only in a secondary response with memory B cells."
+      },
+      {
+        "text": "IgA predominates early in systemic primary responses before switching",
+        "isCorrect": false,
+        "rationale": "Wrong: IgA is typically produced after class switching, especially at mucosal sites; this would be correct only if mucosal switching occurred immediately."
+      },
+      {
+        "text": "IgE is secreted first in primary responses to most protein antigens",
+        "isCorrect": false,
+        "rationale": "Wrong: IgE arises after class switching influenced by cytokines like IL-4; this would be correct only in allergic-type responses with appropriate cytokine milieu."
+      },
+      {
+        "text": "Secretory IgA from plasma cells is the initial systemic antibody produced",
+        "isCorrect": false,
+        "rationale": "Wrong: Secretory IgA is a mucosal antibody and not the initial systemic antibody; this would be correct only for mucosal primary exposures with rapid class switching."
+      }
+    ]
+  },
+  {
+    "question": "A patient with defective CD21 (complement receptor) on B cells shows impaired responses to microbes. Which activation step is directly affected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Phases of Humoral Immunity",
+    "options": [
+      {
+        "text": "Second signal amplification via complement receptor costimulation will be reduced",
+        "isCorrect": true,
+        "rationale": "Correct: CD21 (complement receptor) provides a second signal enhancing B cell activation; its deficiency reduces costimulatory signaling as noted in activation steps."
+      },
+      {
+        "text": "Primary antigen recognition by BCR will be completely abolished without CD21",
+        "isCorrect": false,
+        "rationale": "Wrong: BCR antigen recognition is independent of CD21; this would be correct only if BCR expression or function were lost."
+      },
+      {
+        "text": "Tfh cell cytokine secretion will be increased to compensate for CD21 loss",
+        "isCorrect": false,
+        "rationale": "Wrong: CD21 deficiency does not inherently increase Tfh cytokines; this would be correct only if compensatory T cell responses were experimentally induced."
+      },
+      {
+        "text": "Somatic hypermutation will proceed normally without any impact",
+        "isCorrect": false,
+        "rationale": "Wrong: While somatic hypermutation requires AID and Tfh help, CD21-mediated antigen trapping can influence germinal center reactions; this would be correct only if alternative antigen presentation fully compensated."
+      },
+      {
+        "text": "Complement classical pathway activation by IgM will be enhanced by CD21 loss",
+        "isCorrect": false,
+        "rationale": "Wrong: CD21 loss does not enhance complement activation; this would be correct only if CD21 normally inhibited complement, which it does not."
+      }
+    ]
+  },
+  {
+    "question": "Which helper T cell subset predominantly provides the signals (CD40L and cytokines) that drive germinal center B cell proliferation and differentiation?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how CD4 T cells \"help\" B cells. Identify the predominant Th subset involved in the humoral response.",
+    "options": [
+      {
+        "text": "T follicular helper cells provide CD40L and cytokines to support B cells",
+        "isCorrect": true,
+        "rationale": "Correct: Tfh cells migrate into follicles and provide CD40L and cytokines that promote isotype switching, affinity maturation, and plasma cell differentiation, per the lecture."
+      },
+      {
+        "text": "Th17 cells primarily provide CD40L signals for germinal center reactions",
+        "isCorrect": false,
+        "rationale": "Wrong: Th17 cells are not the main providers of CD40L in germinal centers; this would be correct only if Th17 cells adopted Tfh functions."
+      },
+      {
+        "text": "Regulatory T cells enhance B cell proliferation via CD40L expression",
+        "isCorrect": false,
+        "rationale": "Wrong: Tregs suppress immune responses and do not typically provide CD40L help; this would be correct only if Tregs were reprogrammed to helper phenotype."
+      },
+      {
+        "text": "Cytotoxic CD8 T cells supply cytokines and CD40L to B cells in follicles",
+        "isCorrect": false,
+        "rationale": "Wrong: CD8 T cells do not normally provide CD40L-mediated help to B cells; this would be correct only in an unusual experimental context."
+      },
+      {
+        "text": "Naive CD4 T cells in paracortex directly drive germinal center B cell selection",
+        "isCorrect": false,
+        "rationale": "Wrong: Naive CD4 T cells must differentiate into Tfh to assist germinal center B cells; this would be correct only if naive cells immediately expressed Tfh markers."
+      }
+    ]
+  },
+  {
+    "question": "Which outcome is expected when B cells present processed peptide on MHC II to activated CD4 T cells at the T–B border?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "T Helper Cells and their Role in Humoral Responses",
+    "options": [
+      {
+        "text": "Initial extrafollicular plasmablast generation with low affinity antibody production",
+        "isCorrect": true,
+        "rationale": "Correct: Early T–B interactions at extrafollicular foci produce short-lived plasma cells and lower affinity antibodies before germinal center formation, as described in the lecture."
+      },
+      {
+        "text": "Immediate formation of long lived plasma cells and high affinity IgG production",
+        "isCorrect": false,
+        "rationale": "Wrong: Long-lived plasma cells and high-affinity IgG arise mainly from germinal center reactions, not initial extrafollicular interactions; this would be correct only after GC maturation."
+      },
+      {
+        "text": "Suppression of B cell proliferation and prevention of isotype switching",
+        "isCorrect": false,
+        "rationale": "Wrong: T–B cognate interactions promote proliferation and switching; suppression would occur only if regulatory signals dominated the interaction."
+      },
+      {
+        "text": "Activation of CD8 T cells to mediate antibody dependent cellular cytotoxicity",
+        "isCorrect": false,
+        "rationale": "Wrong: CD4 T cell help to B cells does not directly activate CD8-mediated ADCC; this would be correct only if cross-priming to CD8 occurred concurrently."
+      },
+      {
+        "text": "Immediate migration of B cells to bone marrow to become plasma cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Some plasmablasts may migrate, but long-lived bone marrow plasma cells are typically generated after germinal center maturation; this would be correct only for a subset of early plasmablasts."
+      }
+    ]
+  },
+  {
+    "question": "Which feature distinguishes T-independent antigens from T-dependent antigens in terms of B cell activation requirements?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast T-dependent vs. T-independent antibody responses and the different subsets of B cells.",
+    "options": [
+      {
+        "text": "T independent antigens cross link many BCRs and do not need T cell help",
+        "isCorrect": true,
+        "rationale": "Correct: T-independent antigens are repetitive and can cross-link BCRs to activate B-1 or marginal-zone B cells without T cell help, as the lecture explains."
+      },
+      {
+        "text": "T dependent antigens are nonprotein repetitive epitopes activating B cells alone",
+        "isCorrect": false,
+        "rationale": "Wrong: T-dependent antigens are typically proteins requiring T cell help; this would be correct only if nonprotein antigens required T cells, which they generally do not."
+      },
+      {
+        "text": "T independent responses generate robust affinity maturation and memory B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: T-independent responses show little affinity maturation and poor memory; this would be correct only if T-independent pathways supported germinal center reactions."
+      },
+      {
+        "text": "T dependent antigens never undergo isotype switching to IgG or IgA",
+        "isCorrect": false,
+        "rationale": "Wrong: T-dependent responses commonly undergo isotype switching; this would be correct only if class switching were impossible in T-dependent contexts."
+      },
+      {
+        "text": "T independent antigens always require complement receptor engagement for activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Complement can provide a second signal but is not always required for T-independent activation; this would be correct only if complement were universally necessary."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental finding would best indicate successful affinity maturation after repeated antigen exposure?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process in detail and biological significance of: i. Affinity Maturation",
+    "options": [
+      {
+        "text": "Serum antibodies show increased binding strength and somatic mutations in V regions",
+        "isCorrect": true,
+        "rationale": "Correct: Affinity maturation is characterized by somatic hypermutation in variable regions and selection of higher-affinity antibodies, leading to increased binding strength."
+      },
+      {
+        "text": "Serum IgM levels rise while IgG remains undetectable after boosting",
+        "isCorrect": false,
+        "rationale": "Wrong: Boosting typically increases class-switched IgG with higher affinity; this would be correct only if class switching failed."
+      },
+      {
+        "text": "Germinal centers disappear and no B cell proliferation is observed",
+        "isCorrect": false,
+        "rationale": "Wrong: Affinity maturation occurs within active germinal centers; disappearance of GCs would indicate lack of maturation, not success."
+      },
+      {
+        "text": "Fewer somatic mutations in variable regions with broader low affinity binding",
+        "isCorrect": false,
+        "rationale": "Wrong: Successful affinity maturation yields more, not fewer, beneficial mutations and narrower higher-affinity specificity; this would be correct only if selection favored breadth over affinity."
+      },
+      {
+        "text": "Increased IgE titers without changes in variable region sequences",
+        "isCorrect": false,
+        "rationale": "Wrong: IgE increase does not equate to affinity maturation; this would be correct only if isotype switching to IgE coincided with hypermutation, which is not the primary marker."
+      }
+    ]
+  },
+  {
+    "question": "A patient with splenectomy is particularly susceptible to encapsulated bacteria. Which B cell compartment normally contributes to early responses against such organisms?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast T-dependent vs. T-independent antibody responses and the different subsets of B cells.",
+    "options": [
+      {
+        "text": "Marginal-zone B cells at splenic white pulp border mediate early responses",
+        "isCorrect": true,
+        "rationale": "Correct: Marginal-zone B cells in the spleen respond rapidly to blood-borne encapsulated bacteria, providing T-independent responses as noted in the lecture."
+      },
+      {
+        "text": "Follicular B cells in lymph node cortex mediate immediate splenic defense",
+        "isCorrect": false,
+        "rationale": "Wrong: Follicular B cells are T-dependent and circulate through lymphoid tissues; this would be correct only if follicular B cells were the primary splenic responders."
+      },
+      {
+        "text": "Bone marrow plasma cells provide the first line defense against encapsulated bacteria",
+        "isCorrect": false,
+        "rationale": "Wrong: Bone marrow plasma cells are long-lived antibody producers but not the immediate responders to new blood-borne encapsulated bacteria; this would be correct only if preexisting antibodies were present."
+      },
+      {
+        "text": "B-1 cells in thymus produce high affinity IgG against capsules rapidly",
+        "isCorrect": false,
+        "rationale": "Wrong: B-1 cells are in peritoneum and mucosa and produce natural antibodies, not necessarily high-affinity IgG; this would be correct only if B-1 cells produced class-switched high-affinity IgG."
+      },
+      {
+        "text": "T follicular helper cells in spleen directly phagocytose encapsulated organisms",
+        "isCorrect": false,
+        "rationale": "Wrong: Tfh cells provide help to B cells but do not phagocytose bacteria; this would be correct only if Tfh had phagocytic function."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory ratio would you expect early in a symptomatic primary infection according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Primary vs. Secondary Humoral Responses: Serum Levels of IgM vs. IgG",
+    "options": [
+      {
+        "text": "IgG to IgM ratio less than one during early symptomatic primary infection",
+        "isCorrect": true,
+        "rationale": "Correct: In primary responses IgM appears first and IgG:IgM ratio is  2 is characteristic of secondary responses; this would be correct only after re-exposure with memory B cells."
+      },
+      {
+        "text": "IgM absent with only IgG detectable in early primary infection",
+        "isCorrect": false,
+        "rationale": "Wrong: IgM is typically present early in primary infection; this would be correct only if IgM production were selectively impaired."
+      },
+      {
+        "text": "Equal IgG and IgM levels with ratio exactly one during early infection",
+        "isCorrect": false,
+        "rationale": "Wrong: Early primary infection usually shows IgM predominance; equality would be correct only at a transitional time point later in the response."
+      },
+      {
+        "text": "IgA predominance in serum with negligible IgM during primary systemic infection",
+        "isCorrect": false,
+        "rationale": "Wrong: Serum IgA is not typically predominant in systemic primary infections; this would be correct only for mucosal exposures with rapid IgA switching."
+      }
+    ]
+  },
+  {
+    "question": "Which mechanism explains why secondary humoral responses produce higher antibody titers more rapidly than primary responses?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast a primary antibody response vs. a secondary antibody response.",
+    "options": [
+      {
+        "text": "Memory B cells rapidly expand and produce class switched high affinity antibodies",
+        "isCorrect": true,
+        "rationale": "Correct: Memory B cells generated after primary exposure respond quickly upon re-exposure, producing high-titer, class-switched, affinity-matured antibodies as described in the lecture."
+      },
+      {
+        "text": "Naive B cells undergo faster V(D)J recombination during secondary exposure",
+        "isCorrect": false,
+        "rationale": "Wrong: V(D)J recombination occurs during development, not during secondary responses; this would be correct only if naive recombination accelerated upon re-exposure."
+      },
+      {
+        "text": "Complement activation alone drives rapid IgG production without B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Complement does not replace B cell memory; rapid IgG production requires memory B cells, so this would be correct only if complement induced class switching directly."
+      },
+      {
+        "text": "T independent B cell subsets convert to memory B cells after first exposure",
+        "isCorrect": false,
+        "rationale": "Wrong: T-independent responses generate little memory; this would be correct only if T-independent pathways produced robust memory formation."
+      },
+      {
+        "text": "FDCs alone secrete antibodies rapidly upon antigen reappearance",
+        "isCorrect": false,
+        "rationale": "Wrong: FDCs display antigen but do not secrete antibodies; this would be correct only if FDCs had antibody-secreting capacity."
+      }
+    ]
+  },
+  {
+    "question": "Which Fc receptor is primarily used by NK cells to mediate antibody-dependent cellular cytotoxicity against IgG-coated targets?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Functions of the Humoral Immune Response",
+    "options": [
+      {
+        "text": "Fc gamma receptor CD16 on NK cells binds IgG to trigger ADCC",
+        "isCorrect": true,
+        "rationale": "Correct: NK cells express FcγRIII (CD16) which binds IgG-coated targets to mediate ADCC, as noted in the lecture."
+      },
+      {
+        "text": "Fc epsilon receptor on NK cells binds IgG to mediate ADCC",
+        "isCorrect": false,
+        "rationale": "Wrong: FcεR binds IgE and is expressed on eosinophils and mast cells, not NK cells; this would be correct only if NK cells expressed FcεR and IgE mediated ADCC."
+      },
+      {
+        "text": "Fc alpha receptor on NK cells binds IgM to induce cytotoxicity",
+        "isCorrect": false,
+        "rationale": "Wrong: FcαR binds IgA and NK cells primarily use FcγR for IgG; this would be correct only if NK cells used FcαR for IgM, which is incorrect."
+      },
+      {
+        "text": "Complement receptor CR3 on NK cells binds IgG to trigger ADCC",
+        "isCorrect": false,
+        "rationale": "Wrong: CR3 binds complement fragments, not IgG Fc; this would be correct only if complement mediated NK activation directly."
+      },
+      {
+        "text": "Fc mu receptor on NK cells binds IgM to mediate ADCC",
+        "isCorrect": false,
+        "rationale": "Wrong: FcμR binds IgM and is not the primary mediator of NK cell ADCC; this would be correct only if NK cells used FcμR for cytotoxicity."
+      }
+    ]
+  },
+  {
+    "question": "Which process explains how a B cell maintains antigen specificity while changing effector function of its antibody?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Isotype Switching: Switching from IgM to IgA, IgG, or IgE",
+    "options": [
+      {
+        "text": "Switch recombination replaces heavy chain constant region while preserving VDJ specificity",
+        "isCorrect": true,
+        "rationale": "Correct: Class switch recombination excises intervening constant region DNA, moving the same VDJ cassette to a new constant region, preserving antigen specificity while changing Fc function."
+      },
+      {
+        "text": "Somatic hypermutation alters constant region to change effector functions",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation targets variable regions for affinity changes, not constant regions; this would be correct only if constant regions were mutated to alter Fc."
+      },
+      {
+        "text": "Alternative V(D)J recombination swaps variable regions between B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: V(D)J recombination occurs during development and does not swap V regions between mature B cells; this would be correct only in engineered experimental systems."
+      },
+      {
+        "text": "Proteolytic cleavage of IgM Fc converts it into IgG functional form",
+        "isCorrect": false,
+        "rationale": "Wrong: Proteolysis does not convert isotypes; class switching is a genomic recombination event, so this would be correct only if proteolysis changed constant region identity."
+      },
+      {
+        "text": "Somatic recombination of light chain constant region changes isotype",
+        "isCorrect": false,
+        "rationale": "Wrong: Isotype switching involves heavy chain constant regions, not light chain constant regions; this would be correct only if light chain constants determined isotype."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental manipulation would most directly prevent both isotype switching and somatic hypermutation in activated B cells?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the process in detail and biological significance of: i. Affinity Maturation; ii. Isotype Switching",
+    "options": [
+      {
+        "text": "Genetic deletion of activation induced cytidine deaminase abolishes both processes",
+        "isCorrect": true,
+        "rationale": "Correct: AID is required for both somatic hypermutation and class switch recombination; deleting AID prevents these germinal center processes as the lecture explains."
+      },
+      {
+        "text": "Blocking CD21 complement receptor on B cells prevents AID expression directly",
+        "isCorrect": false,
+        "rationale": "Wrong: CD21 provides costimulation but does not directly induce AID; this would be correct only if CD21 signaling were the sole AID inducer."
+      },
+      {
+        "text": "Inhibiting RAG recombinase during activation blocks somatic hypermutation",
+        "isCorrect": false,
+        "rationale": "Wrong: RAG mediates V(D)J recombination during development, not somatic hypermutation; this would be correct only if RAG were repurposed in germinal centers."
+      },
+      {
+        "text": "Neutralizing complement C3 prevents point mutations in variable regions",
+        "isCorrect": false,
+        "rationale": "Wrong: Complement influences antigen trapping but AID initiates mutations; this would be correct only if complement were essential for AID activation."
+      },
+      {
+        "text": "Deleting CD8 T cells eliminates class switching and hypermutation in B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: CD8 T cells are not the helper subset for B cells; this would be correct only if CD8 cells provided CD40L and cytokines in vivo."
+      }
+    ]
+  },
+  {
+    "question": "Which description best captures the role of follicular dendritic cells in germinal centers?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process in detail and biological significance of: i. Affinity Maturation",
+    "options": [
+      {
+        "text": "FDCs retain intact antigen via Fc and complement receptors for B cell selection",
+        "isCorrect": true,
+        "rationale": "Correct: FDCs trap and display intact antigen using Fc and complement receptors to enable selection of high-affinity B cells, as emphasized in the lecture."
+      },
+      {
+        "text": "FDCs present processed peptide on MHC II to activate naive CD8 T cells",
+        "isCorrect": false,
+        "rationale": "Wrong: FDCs do not present antigen on MHC II to T cells; they display intact antigen to B cells, so this would be correct only if FDCs functioned as classical APCs."
+      },
+      {
+        "text": "FDCs secrete antibodies to neutralize pathogens within germinal centers",
+        "isCorrect": false,
+        "rationale": "Wrong: FDCs are stromal cells that trap antigen but do not secrete antibodies; this would be correct only if FDCs had plasma cell functions."
+      },
+      {
+        "text": "FDCs are bone marrow derived macrophages clearing apoptotic B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: FDCs are stromal and not bone marrow-derived macrophages; this would be correct only if FDCs originated from hematopoietic lineage."
+      },
+      {
+        "text": "FDCs provide CD40L signals to drive B cell isotype switching directly",
+        "isCorrect": false,
+        "rationale": "Wrong: CD40L is provided by Tfh cells, not FDCs; this would be correct only if FDCs expressed CD40L and functioned as T cell surrogates."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical strategy leverages T-dependent mechanisms to improve immunogenicity of a polysaccharide antigen in infants?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast T-dependent vs. T-independent antibody responses and the different subsets of B cells.",
+    "options": [
+      {
+        "text": "Conjugating polysaccharide to protein carrier to recruit helper T cell responses",
+        "isCorrect": true,
+        "rationale": "Correct: Conjugate vaccines convert T-independent polysaccharides into T-dependent antigens by providing peptide for T cell help, enabling class switching and memory as discussed in the lecture."
+      },
+      {
+        "text": "Administering polysaccharide alone to maximize BCR cross linking in infants",
+        "isCorrect": false,
+        "rationale": "Wrong: Polysaccharide alone elicits weak responses in infants due to immature T-independent responses; this would be correct only if infants had mature marginal-zone B cell function."
+      },
+      {
+        "text": "Using high dose polysaccharide to induce somatic hypermutation without T cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation requires AID and Tfh help; high antigen dose alone does not substitute for T-dependent mechanisms, so this would be correct only in an artificial system."
+      },
+      {
+        "text": "Co-administering complement inhibitors to enhance B cell activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Complement provides costimulatory signals; inhibiting complement would reduce, not enhance, B cell activation, so this would be correct only if complement were suppressive."
+      },
+      {
+        "text": "Delivering antigen directly into bone marrow to stimulate plasma cell niches",
+        "isCorrect": false,
+        "rationale": "Wrong: Bone marrow plasma cell niches support long-lived cells but do not replace the need for T-dependent germinal center reactions in infants; this would be correct only if bone marrow delivery induced Tfh-independent memory."
+      }
+    ]
+  },
+  {
+    "question": "Which observation would indicate a predominantly T-independent antibody response after exposure to a bacterial polysaccharide?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Two Major Types of Antibody Responses: T-Dependent and T-independent",
+    "options": [
+      {
+        "text": "Predominant IgM production with minimal affinity maturation and poor memory formation",
+        "isCorrect": true,
+        "rationale": "Correct: T-independent responses typically yield mainly IgM, little affinity maturation, and poor memory, matching the lecture description."
+      },
+      {
+        "text": "Rapid high affinity IgG response with robust memory B cell generation",
+        "isCorrect": false,
+        "rationale": "Wrong: Rapid high-affinity IgG and memory are hallmarks of T-dependent responses; this would be correct only if T cell help were present."
+      },
+      {
+        "text": "Extensive germinal center formation with class switching to IgA",
+        "isCorrect": false,
+        "rationale": "Wrong: Germinal centers and class switching are features of T-dependent responses; this would be correct only if Tfh-mediated GC reactions occurred."
+      },
+      {
+        "text": "Sustained high IgG titers with IgG to IgM ratio greater than two early",
+        "isCorrect": false,
+        "rationale": "Wrong: Early IgG predominance (IgG:IgM >2) indicates secondary or T-dependent responses; this would be correct only after memory formation."
+      },
+      {
+        "text": "Exclusive production of IgE antibodies with eosinophil mediated ADCC",
+        "isCorrect": false,
+        "rationale": "Wrong: IgE production is typically T-dependent and associated with Th2 cytokines; this would be correct only in allergic or helminth contexts with T cell help."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental evidence would directly demonstrate that CD40 engagement activates AID in B cells?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Isotype Switching: Switching from IgM to IgA, IgG, or IgE",
+    "options": [
+      {
+        "text": "In vitro CD40 stimulation increases AID mRNA and induces class switch recombination",
+        "isCorrect": true,
+        "rationale": "Correct: CD40 engagement activates AID expression leading to switch recombination; observing increased AID transcripts and switching after CD40 stimulation directly supports this mechanism."
+      },
+      {
+        "text": "Blocking CD40 increases somatic hypermutation frequency in variable regions",
+        "isCorrect": false,
+        "rationale": "Wrong: Blocking CD40 would reduce AID activity and hypermutation; this would be correct only if CD40 blockade paradoxically activated alternative mutational pathways."
+      },
+      {
+        "text": "CD40 stimulation alone causes immediate secretion of high affinity IgG without AID",
+        "isCorrect": false,
+        "rationale": "Wrong: High-affinity IgG secretion requires AID-mediated hypermutation and switching; this would be correct only if AID were unnecessary for class switching."
+      },
+      {
+        "text": "AID expression is constitutive in naive B cells independent of CD40 signals",
+        "isCorrect": false,
+        "rationale": "Wrong: AID is induced upon activation and CD40 engagement; constitutive expression would be correct only if AID were always active in naive cells."
+      },
+      {
+        "text": "CD40 engagement prevents DNA breaks in switch regions and reduces recombination",
+        "isCorrect": false,
+        "rationale": "Wrong: CD40 engagement promotes AID activity and DNA breaks in switch regions; this would be correct only if CD40 signaling inhibited AID-induced breaks."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best explains why marginal-zone and B-1 B cells produce 'natural antibodies' that clear apoptotic cells and debris?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Two Major Types of Antibody Responses: T-Dependent and T-independent",
+    "options": [
+      {
+        "text": "These innate-like B cells produce low affinity broad specificity IgM without T help",
+        "isCorrect": true,
+        "rationale": "Correct: B-1 and marginal-zone B cells produce natural IgM with broad specificity to clear debris and apoptotic cells without T cell help, as the lecture notes."
+      },
+      {
+        "text": "They undergo extensive affinity maturation to generate high specificity antibodies",
+        "isCorrect": false,
+        "rationale": "Wrong: Natural antibodies are typically low affinity and germline-encoded; this would be correct only if these cells underwent germinal center hypermutation."
+      },
+      {
+        "text": "They require Tfh cell interactions to secrete natural IgM constitutively",
+        "isCorrect": false,
+        "rationale": "Wrong: Natural antibody production by B-1 cells is largely T-independent; this would be correct only if Tfh were necessary for baseline secretion."
+      },
+      {
+        "text": "They primarily secrete class-switched IgG for apoptotic cell clearance",
+        "isCorrect": false,
+        "rationale": "Wrong: Natural antibodies are mainly IgM; this would be correct only if class switching occurred constitutively in these subsets."
+      },
+      {
+        "text": "They express high levels of AID to constantly mutate variable regions",
+        "isCorrect": false,
+        "rationale": "Wrong: Constant AID expression would lead to hypermutation, not characteristic of natural antibody producers; this would be correct only in pathological conditions."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical intervention would most directly enhance opsonization of bacteria for macrophage phagocytosis?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Functions of the Humoral Immune Response",
+    "options": [
+      {
+        "text": "Administering pathogen specific IgG to increase Fc mediated opsonization",
+        "isCorrect": true,
+        "rationale": "Correct: Providing specific IgG increases Fc-mediated opsonization via Fcγ receptors on macrophages, enhancing phagocytosis as described in the lecture."
+      },
+      {
+        "text": "Giving intravenous IgM to directly activate macrophage Fc receptors",
+        "isCorrect": false,
+        "rationale": "Wrong: Macrophage Fc receptors primarily bind IgG; IV IgM does not directly engage FcγR to enhance phagocytosis, so this would be correct only if macrophages used FcμR for opsonization."
+      },
+      {
+        "text": "Blocking complement to prevent immune complex deposition and improve phagocytosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Complement enhances opsonization; blocking it would reduce phagocytosis, so this would be correct only if complement-mediated pathology impeded clearance."
+      },
+      {
+        "text": "Administering anti IgE antibodies to increase neutrophil mediated ingestion",
+        "isCorrect": false,
+        "rationale": "Wrong: Anti-IgE reduces IgE-mediated responses and would not enhance macrophage opsonization by IgG; this would be correct only in IgE-driven pathology."
+      },
+      {
+        "text": "Infusing Tfh cells to directly phagocytose bacteria in bloodstream",
+        "isCorrect": false,
+        "rationale": "Wrong: Tfh cells provide B cell help but do not phagocytose bacteria; this would be correct only if Tfh had acquired phagocytic function."
+      }
+    ]
+  },
+  {
+    "question": "Which pattern of antibody isotype switching would you expect if a B cell receives IL-4 dominated cytokine signals from helper T cells?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "T Helper Cells and their Role in Humoral Responses",
+    "options": [
+      {
+        "text": "Switching toward IgE and certain IgG subclasses promoted by IL-4 signals",
+        "isCorrect": true,
+        "rationale": "Correct: IL-4 from helper T cells guides isotype switching toward IgE and some IgG subclasses, consistent with cytokine-directed switching described in the lecture."
+      },
+      {
+        "text": "Switching exclusively to IgA in systemic compartments driven by IL-4",
+        "isCorrect": false,
+        "rationale": "Wrong: IL-4 favors IgE and some IgG, not exclusively IgA; IgA switching is more associated with mucosal cytokines like TGF-β, so this would be correct only with different cytokine milieu."
+      },
+      {
+        "text": "IL-4 prevents any class switching and maintains IgM secretion indefinitely",
+        "isCorrect": false,
+        "rationale": "Wrong: IL-4 promotes switching rather than preventing it; this would be correct only if IL-4 inhibited AID, which it does not."
+      },
+      {
+        "text": "IL-4 drives somatic hypermutation but blocks isotype switching entirely",
+        "isCorrect": false,
+        "rationale": "Wrong: IL-4 influences isotype switching and can support germinal center reactions; blocking switching while promoting hypermutation would be inconsistent with known cytokine roles."
+      },
+      {
+        "text": "IL-4 converts marginal-zone B cells into Tfh cells producing cytokines",
+        "isCorrect": false,
+        "rationale": "Wrong: IL-4 does not transdifferentiate B cells into Tfh cells; this would be correct only in an artificial experimental reprogramming scenario."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory finding would best indicate a successful secondary humoral response within days of re-exposure?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Primary vs. Secondary Humoral Responses: Serum Levels of IgM vs. IgG",
+    "options": [
+      {
+        "text": "Rapid high serum IgG levels with IgG to IgM ratio greater than two early",
+        "isCorrect": true,
+        "rationale": "Correct: Secondary responses produce rapid, high IgG titers and an IgG:IgM ratio >2 early, reflecting memory B cell activation as the lecture states."
+      },
+      {
+        "text": "Delayed IgG rise with prolonged IgM predominance over weeks",
+        "isCorrect": false,
+        "rationale": "Wrong: Delayed IgG and prolonged IgM characterize primary responses; this would be correct only if memory formation failed."
+      },
+      {
+        "text": "Exclusive IgA response in serum without any IgG or IgM increase",
+        "isCorrect": false,
+        "rationale": "Wrong: Secondary systemic responses typically involve IgG; exclusive IgA would be correct only for mucosal re-exposure with localized switching."
+      },
+      {
+        "text": "No antibody increase due to immediate complement mediated clearance",
+        "isCorrect": false,
+        "rationale": "Wrong: Complement clearance does not prevent memory B cell activation and antibody production; this would be correct only if antigen were removed before B cell recognition."
+      },
+      {
+        "text": "Gradual low titer IgG increase over several months after re-exposure",
+        "isCorrect": false,
+        "rationale": "Wrong: Secondary responses are rapid and high-titer; gradual low titer increase would be correct only in immunocompromised individuals with impaired memory responses."
+      }
+    ]
+  }
+]
