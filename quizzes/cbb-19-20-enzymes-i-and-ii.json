@@ -1,0 +1,977 @@
+[
+  {
+    "question": "A student is asked to name an enzyme that catalyzes transfer of a methyl group between amino acids. Which common enzyme name best fits this activity?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Understand the basics of enzyme nomenclature and the significance of reaction figure arrows",
+    "options": [
+      {
+        "text": "Serine hydroxymethyl transferase",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists transferases as enzymes that transfer C-, N-, or P-containing groups and gives serine hydroxymethyl transferase as an example; the common name matches the transferase class."
+      },
+      {
+        "text": "Lactate dehydrogenase enzyme",
+        "isCorrect": false,
+        "rationale": "Wrong: Lactate dehydrogenase is an oxidoreductase transferring electrons, not a methyl transferase; it would be correct only if the reaction involved oxidation–reduction rather than group transfer."
+      },
+      {
+        "text": "Urease catalytic hydrolase",
+        "isCorrect": false,
+        "rationale": "Wrong: Urease is a hydrolase that cleaves urea by water addition; it would be correct only if the reaction were hydrolytic rather than a methyl transfer."
+      },
+      {
+        "text": "Pyruvate decarboxylase enzyme",
+        "isCorrect": false,
+        "rationale": "Wrong: Pyruvate decarboxylase is a lyase that removes CO2 from pyruvate; it would be correct only if the reaction involved decarboxylation rather than methyl transfer."
+      },
+      {
+        "text": "Methylmalonyl CoA mutase",
+        "isCorrect": false,
+        "rationale": "Wrong: Methylmalonyl CoA mutase is an isomerase that rearranges carbon skeletons; it would be correct only if the reaction were an isomerization rather than group transfer."
+      }
+    ]
+  },
+  {
+    "question": "Which structural feature of an enzyme most directly determines its substrate specificity?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the basic properties of enzymes, especially active sites, substrates and products, catalytic efficiency, specificity, holoenzymes, apoenzymes, cofactors, and coenzymes",
+    "options": [
+      {
+        "text": "Three dimensional arrangement of active site residues",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states that the 3-D surface of the active site positions amino acids to interact chemically with the substrate, determining specificity."
+      },
+      {
+        "text": "Overall molecular weight of the enzyme protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Molecular weight does not directly set specificity; specificity depends on active site geometry and residues, not total mass."
+      },
+      {
+        "text": "Number of disulfide bonds in the polypeptide",
+        "isCorrect": false,
+        "rationale": "Wrong: Disulfide bonds affect stability and folding but do not directly define the chemical interactions of the active site; they would be relevant only if they altered active site conformation."
+      },
+      {
+        "text": "Presence of a signal peptide sequence",
+        "isCorrect": false,
+        "rationale": "Wrong: Signal peptides direct localization but do not determine substrate binding; it would be correct only if localization changed substrate availability."
+      },
+      {
+        "text": "Length of the N terminal tail region",
+        "isCorrect": false,
+        "rationale": "Wrong: Tail length may modulate regulation but does not directly create the active site chemistry; it would be correct only if it altered active site structure."
+      }
+    ]
+  },
+  {
+    "question": "A reaction proceeds much faster when an enzyme is present because the enzyme lowers which energetic barrier?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the mechanism of action of enzymes as it relates to reaction energetics and chemistry",
+    "options": [
+      {
+        "text": "Activation energy required to reach transition state",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains enzymes stabilize the transition state and decrease activation energy, increasing reaction rate without changing overall free energy."
+      },
+      {
+        "text": "Overall free energy difference between reactants and products",
+        "isCorrect": false,
+        "rationale": "Wrong: Enzymes do not change the free energy of reactants versus products; they only lower activation energy; it would be correct only if the equilibrium itself changed."
+      },
+      {
+        "text": "Entropy of the final product mixture",
+        "isCorrect": false,
+        "rationale": "Wrong: Entropy changes are not the primary barrier enzymes lower; this would be correct only if entropy were the rate-limiting factor, which the lecture does not state."
+      },
+      {
+        "text": "Heat capacity of the reaction medium",
+        "isCorrect": false,
+        "rationale": "Wrong: Heat capacity is a bulk property unrelated to catalytic stabilization of the transition state; it would be correct only if temperature effects dominated kinetics."
+      },
+      {
+        "text": "Standard enthalpy of formation of substrates",
+        "isCorrect": false,
+        "rationale": "Wrong: Enthalpy of formation determines thermodynamics, not the activation barrier enzymes lower; it would be correct only if bond energies were directly altered by the enzyme."
+      }
+    ]
+  },
+  {
+    "question": "Which plot transforms Michaelis-Menten hyperbolic data into a straight line to estimate Km and Vmax?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define Km and Vmax and interpret how they change using Michaelis-Menten plots",
+    "options": [
+      {
+        "text": "Lineweaver Burk double reciprocal plot",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes the Lineweaver-Burk plot as 1/Vo versus 1/[S], producing a straight line with intercepts giving Km and Vmax."
+      },
+      {
+        "text": "Eadie Hofstee velocity versus ratio plot",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture specifically highlights Lineweaver-Burk; Eadie–Hofstee is an alternative but was not presented and would be correct only if that plot were discussed."
+      },
+      {
+        "text": "Michaelis Menten hyperbolic substrate plot",
+        "isCorrect": false,
+        "rationale": "Wrong: The Michaelis-Menten plot is hyperbolic, not linear; it would be correct only if the question asked for the original hyperbolic representation."
+      },
+      {
+        "text": "Scatchard binding linearization plot",
+        "isCorrect": false,
+        "rationale": "Wrong: Scatchard plots are for binding data, not the Michaelis-Menten transformation; it would be correct only if binding rather than enzyme kinetics were the focus."
+      },
+      {
+        "text": "Arrhenius temperature dependence plot",
+        "isCorrect": false,
+        "rationale": "Wrong: Arrhenius plots relate rate constants to temperature, not Km and Vmax; it would be correct only if temperature dependence were being analyzed."
+      }
+    ]
+  },
+  {
+    "question": "A researcher measures initial velocity at increasing substrate concentrations and finds Vo approaches a constant maximum. According to the lecture, what does this plateau represent?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe how substrate concentration, temperature, and pH affect reaction velocity and interpret graphs displaying these effects",
+    "options": [
+      {
+        "text": "Saturation of enzyme active sites at Vmax",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains Vmax occurs when all enzyme binding sites are saturated and reaction cannot proceed faster despite more substrate."
+      },
+      {
+        "text": "Denaturation of enzyme at high substrate",
+        "isCorrect": false,
+        "rationale": "Wrong: Denaturation reduces activity and is temperature or pH related, not caused by high substrate; it would be correct only if denaturation conditions were present."
+      },
+      {
+        "text": "Substrate inhibition reducing turnover rate",
+        "isCorrect": false,
+        "rationale": "Wrong: Substrate inhibition can lower velocity at very high [S], but the lecture describes a plateau due to saturation; it would be correct only if a decline rather than plateau were observed."
+      },
+      {
+        "text": "Decrease in enzyme concentration over time",
+        "isCorrect": false,
+        "rationale": "Wrong: A decreasing enzyme concentration would lower Vmax, not produce a plateau at a constant Vmax; it would be correct only if enzyme were being consumed."
+      },
+      {
+        "text": "Shift to first order kinetics at high substrate",
+        "isCorrect": false,
+        "rationale": "Wrong: At high [S] kinetics become zero order (velocity independent of [S]); first order occurs at low [S]; it would be correct only if [S]  > Km; it would be correct only if substrate were saturating."
+      },
+      {
+        "text": "Second order kinetics; velocity proportional to square of substrate",
+        "isCorrect": false,
+        "rationale": "Wrong: Second order is not the described regime for Michaelis-Menten single-substrate kinetics; it would be correct only in bimolecular rate-limited reactions."
+      },
+      {
+        "text": "Pseudo zero order kinetics; velocity decreases with substrate",
+        "isCorrect": false,
+        "rationale": "Wrong: Pseudo zero order implies independence from [S], not a decrease; it would be correct only if enzyme were saturated and substrate removed."
+      },
+      {
+        "text": "Mixed order kinetics; velocity unpredictable with substrate",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture defines clear first- and zero-order regimes; mixed order is not the standard description and would be correct only with complex mechanisms."
+      }
+    ]
+  },
+  {
+    "question": "A pharmacology question: a drug structurally mimics a substrate and binds the enzyme active site reversibly. Which property from the lecture best describes this drug's inhibitory behavior?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the mechanism of action of enzymes as it relates to reaction energetics and chemistry",
+    "options": [
+      {
+        "text": "Competitive reversible inhibitor at substrate site",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains competitive inhibitors are structural analogs that bind the substrate site reversibly and compete with substrate."
+      },
+      {
+        "text": "Noncompetitive inhibitor binding allosteric site",
+        "isCorrect": false,
+        "rationale": "Wrong: Noncompetitive inhibitors bind elsewhere and do not compete at the active site; it would be correct only if the drug bound an allosteric site."
+      },
+      {
+        "text": "Irreversible inhibitor forming covalent bonds",
+        "isCorrect": false,
+        "rationale": "Wrong: Irreversible inhibitors covalently modify enzymes; this drug is reversible and would be correct only if covalent modification occurred."
+      },
+      {
+        "text": "Cofactor mimic activating holoenzyme function",
+        "isCorrect": false,
+        "rationale": "Wrong: Mimicking a cofactor would typically restore or enable activity, not competitively inhibit; it would be correct only if the molecule enhanced catalysis."
+      },
+      {
+        "text": "Allosteric activator increasing Vmax",
+        "isCorrect": false,
+        "rationale": "Wrong: An activator increases activity; the described drug inhibits by occupying the active site and would be correct only if it increased turnover."
+      }
+    ]
+  },
+  {
+    "question": "A patient is started on a statin to lower cholesterol. Based on the lecture, which immediate kinetic effect on HMG-CoA reductase is expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the mechanism of action of enzymes as it relates to reaction energetics and chemistry",
+    "options": [
+      {
+        "text": "Apparent Km increases while Vmax remains unchanged",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture uses statins as competitive inhibitors of HMG-CoA reductase, which increases apparent Km (lower apparent affinity) without changing Vmax."
+      },
+      {
+        "text": "Vmax decreases while Km remains unchanged",
+        "isCorrect": false,
+        "rationale": "Wrong: That pattern indicates noncompetitive inhibition; it would be correct only if the statin bound an allosteric site irreversibly affecting turnover."
+      },
+      {
+        "text": "Irreversible enzyme acetylation reducing activity",
+        "isCorrect": false,
+        "rationale": "Wrong: Statins are reversible competitive inhibitors, not irreversible acetylators; this would be correct only for drugs like aspirin acting covalently."
+      },
+      {
+        "text": "Enzyme denaturation due to lipid lowering",
+        "isCorrect": false,
+        "rationale": "Wrong: Lipid lowering does not denature the enzyme; denaturation is temperature or chemical dependent and would be correct only if the drug caused unfolding."
+      },
+      {
+        "text": "Allosteric activation increasing catalytic efficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: Statins inhibit rather than activate; this would be correct only if the drug were an activator increasing Vmax or kcat."
+      }
+    ]
+  },
+  {
+    "question": "Which lecture-described factor would most likely shift an enzyme's pH optimum away from physiologic pH?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe how substrate concentration, temperature, and pH affect reaction velocity and interpret graphs displaying these effects",
+    "options": [
+      {
+        "text": "Different organelle microenvironment altering protonation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes enzymes are compartmentalized and organelles have different pH (e.g., lysosome), changing protonation states and optimal pH."
+      },
+      {
+        "text": "Increased substrate concentration changing active site charge",
+        "isCorrect": false,
+        "rationale": "Wrong: Substrate concentration affects velocity but not intrinsic pH optimum; it would be correct only if substrate altered local protonation significantly."
+      },
+      {
+        "text": "Higher temperature shifting pH dependence directly",
+        "isCorrect": false,
+        "rationale": "Wrong: Temperature affects activity and denaturation but does not primarily shift pH optimum; it would be correct only if temperature changed ionization equilibria markedly."
+      },
+      {
+        "text": "Presence of a competitive inhibitor at active site",
+        "isCorrect": false,
+        "rationale": "Wrong: Competitive inhibitors affect apparent Km, not the enzyme's intrinsic pH optimum; it would be correct only if inhibitor altered protonation of catalytic residues."
+      },
+      {
+        "text": "Increased enzyme concentration altering pH curve",
+        "isCorrect": false,
+        "rationale": "Wrong: Enzyme concentration scales Vmax but does not change pH optimum; it would be correct only if concentration affected microenvironmental buffering."
+      }
+    ]
+  },
+  {
+    "question": "A lab finds two enzymes with identical catalytic activities but different tissue distributions. According to the lecture, what term best describes these variants?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the use of enzymes and isoenzymes to diagnose cardiac tissue damage",
+    "options": [
+      {
+        "text": "Isoenzymes tissue specific enzyme variants",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture mentions isoenzymes as different forms of an enzyme used clinically (e.g., to diagnose tissue damage) that vary by tissue distribution."
+      },
+      {
+        "text": "Allosteric enzymes regulated by effectors",
+        "isCorrect": false,
+        "rationale": "Wrong: Allosteric enzymes are regulated by effectors and show sigmoidal kinetics, not simply tissue-specific variants; it would be correct only if regulation rather than distribution were the focus."
+      },
+      {
+        "text": "Holoenzymes requiring cofactors for activity",
+        "isCorrect": false,
+        "rationale": "Wrong: Holoenzymes refer to enzyme plus cofactor, not tissue-specific isoforms; it would be correct only if cofactor dependence differed between tissues."
+      },
+      {
+        "text": "Zymogens inactive enzyme precursors",
+        "isCorrect": false,
+        "rationale": "Wrong: Zymogens are inactive precursors activated by proteolysis, not tissue-distributed active variants; it would be correct only if activation state differed."
+      },
+      {
+        "text": "Multimeric enzymes with identical subunits",
+        "isCorrect": false,
+        "rationale": "Wrong: Multimeric refers to quaternary structure, not tissue-specific isoforms; it would be correct only if subunit composition explained tissue differences."
+      }
+    ]
+  },
+  {
+    "question": "A student observes a sigmoidal velocity versus substrate curve for an enzyme. Based on the lecture, what regulatory property does this suggest?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe how substrate concentration, temperature, and pH affect reaction velocity and interpret graphs displaying these effects",
+    "options": [
+      {
+        "text": "Allosteric regulation with cooperative substrate binding",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture contrasts Michaelis-Menten hyperbolic curves with allosteric enzymes that show sigmoid curves due to cooperative binding and regulation."
+      },
+      {
+        "text": "Simple Michaelis Menten single active site behavior",
+        "isCorrect": false,
+        "rationale": "Wrong: Michaelis-Menten kinetics produce hyperbolic curves; sigmoid behavior indicates multiple interacting sites or allostery, not simple single-site kinetics."
+      },
+      {
+        "text": "Competitive inhibition by a substrate analog",
+        "isCorrect": false,
+        "rationale": "Wrong: Competitive inhibition alters apparent Km but does not produce a sigmoidal curve; it would be correct only if inhibitor caused cooperative effects."
+      },
+      {
+        "text": "Enzyme denaturation at low substrate concentrations",
+        "isCorrect": false,
+        "rationale": "Wrong: Denaturation reduces activity but does not create sigmoidal kinetics; it would be correct only if denaturation selectively affected certain substrate ranges."
+      },
+      {
+        "text": "Irreversible covalent activation increasing turnover",
+        "isCorrect": false,
+        "rationale": "Wrong: Irreversible activation would change activity but not necessarily produce sigmoid kinetics; it would be correct only if activation introduced cooperativity."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic low substrate availability relies on an enzyme with very low Km. According to the lecture, why is this advantageous?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define Km and Vmax and interpret how they change using Michaelis-Menten plots",
+    "options": [
+      {
+        "text": "High affinity allows effective catalysis at low substrate",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains a small Km reflects high affinity so the enzyme reaches half Vmax at lower [S], advantageous when substrate is scarce."
+      },
+      {
+        "text": "Low Km increases Vmax to maintain flux",
+        "isCorrect": false,
+        "rationale": "Wrong: Km does not determine Vmax; Vmax depends on enzyme concentration and kcat, so this would be correct only if Vmax were experimentally increased."
+      },
+      {
+        "text": "Low Km prevents competitive inhibition by drugs",
+        "isCorrect": false,
+        "rationale": "Wrong: Low Km does not prevent competitive inhibition; a high-affinity substrate can outcompete inhibitor only if present at sufficient concentration, so this would be correct only in specific contexts."
+      },
+      {
+        "text": "High affinity reduces enzyme denaturation risk",
+        "isCorrect": false,
+        "rationale": "Wrong: Affinity does not protect against denaturation; denaturation depends on temperature and pH, so this would be correct only if affinity correlated with stability."
+      },
+      {
+        "text": "Low Km converts enzyme to allosteric regulator",
+        "isCorrect": false,
+        "rationale": "Wrong: Km value does not by itself make an enzyme allosteric; allostery involves cooperative binding and regulatory sites, so this would be correct only if structural features supported cooperativity."
+      }
+    ]
+  },
+  {
+    "question": "A student adds a reversible inhibitor that binds equally well to free enzyme and ES complex. According to the lecture, what is the expected kinetic classification?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define competitive and noncompetitive inhibition and interpret these based on Lineweaver-Burk plots",
+    "options": [
+      {
+        "text": "Noncompetitive reversible inhibitor binding both forms",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes noncompetitive inhibitors as binding to a site other than the active site and able to bind free enzyme or ES complex, decreasing Vmax without changing Km."
+      },
+      {
+        "text": "Competitive inhibitor binding only active site",
+        "isCorrect": false,
+        "rationale": "Wrong: Competitive inhibitors bind only the active site and compete with substrate; it would be correct only if inhibitor could not bind ES complex."
+      },
+      {
+        "text": "Irreversible inhibitor forming covalent adducts",
+        "isCorrect": false,
+        "rationale": "Wrong: Irreversible inhibitors covalently modify enzymes and are not reversible; it would be correct only if covalent bonding occurred."
+      },
+      {
+        "text": "Uncompetitive inhibitor binding only ES complex",
+        "isCorrect": false,
+        "rationale": "Wrong: Uncompetitive inhibitors bind only the ES complex and lower both Km and Vmax; it would be correct only if binding to free enzyme were impossible."
+      },
+      {
+        "text": "Mixed inhibitor altering Km and Vmax variably",
+        "isCorrect": false,
+        "rationale": "Wrong: Mixed inhibition affects both Km and Vmax depending on binding affinities; the lecture specifically defines noncompetitive binding both forms equally."
+      }
+    ]
+  },
+  {
+    "question": "A patient sample shows elevated lactate dehydrogenase isoenzymes after myocardial injury. Based on lecture content, why are isoenzymes clinically useful?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the use of enzymes and isoenzymes to diagnose cardiac tissue damage",
+    "options": [
+      {
+        "text": "Tissue specific isoenzyme patterns indicate damaged organ",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes isoenzymes vary by tissue and can be used diagnostically to localize tissue damage, such as cardiac-specific LDH isoforms."
+      },
+      {
+        "text": "Isoenzymes always have higher catalytic efficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: Isoenzymes differ in distribution and sometimes kinetics but are not universally more efficient; it would be correct only if measured kcat/Km showed higher efficiency."
+      },
+      {
+        "text": "Isoenzymes are irreversible enzyme precursors",
+        "isCorrect": false,
+        "rationale": "Wrong: Isoenzymes are variant active enzymes, not inactive precursors; it would be correct only if they required activation by proteolysis."
+      },
+      {
+        "text": "Isoenzymes indicate genetic enzyme deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: While isoenzyme patterns can reflect genetic variants, their primary clinical use described is tissue localization; it would be correct only if a hereditary isoenzyme abnormality were present."
+      },
+      {
+        "text": "Isoenzymes are produced only during inflammation",
+        "isCorrect": false,
+        "rationale": "Wrong: Isoenzymes are normal tissue-specific forms, not produced solely during inflammation; it would be correct only if expression were induced by inflammatory signals."
+      }
+    ]
+  },
+  {
+    "question": "A researcher mutates an active site residue that normally donates a proton during catalysis. According to the lecture, which catalytic mechanism category does this residue most likely participate in?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the mechanism of action of enzymes as it relates to reaction energetics and chemistry",
+    "options": [
+      {
+        "text": "Acid base catalysis by active site amino acid",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists acid–base reactions among mechanisms enzymes use, with active site residues donating or accepting protons to facilitate transition state formation."
+      },
+      {
+        "text": "Metal ion catalysis by bound divalent cation",
+        "isCorrect": false,
+        "rationale": "Wrong: Metal ion catalysis involves metal cofactors, not proton donation by amino acids; it would be correct only if a metal ion were the catalytic donor."
+      },
+      {
+        "text": "Covalent catalysis forming enzyme substrate bond",
+        "isCorrect": false,
+        "rationale": "Wrong: Covalent catalysis involves transient covalent bonds between enzyme and substrate, not simple proton transfer; it would be correct only if a covalent intermediate formed."
+      },
+      {
+        "text": "Entropy trapping by substrate confinement",
+        "isCorrect": false,
+        "rationale": "Wrong: While enzymes increase transition state concentration, the specific proton donation mechanism is acid–base catalysis; it would be correct only if confinement alone explained catalysis."
+      },
+      {
+        "text": "Hydrophobic catalysis excluding water from site",
+        "isCorrect": false,
+        "rationale": "Wrong: Hydrophobic effects can contribute to binding but do not explain proton donation; it would be correct only if hydrophobic environment altered pKa significantly."
+      }
+    ]
+  },
+  {
+    "question": "A patient is given aspirin which acetylates cyclooxygenase irreversibly. Based on the lecture, what is the consequence for enzyme activity and recovery?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe how enzymes are regulated through allosteric effectors, covalent modification (including enzymes involved), and gene expression",
+    "options": [
+      {
+        "text": "Permanent inhibition until new enzyme synthesized",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states irreversible inhibitors bind covalently and permanently inhibit the enzyme, requiring new enzyme synthesis to restore function."
+      },
+      {
+        "text": "Reversible inhibition overcome by high substrate",
+        "isCorrect": false,
+        "rationale": "Wrong: Reversible competitive inhibitors can be outcompeted by substrate; irreversible acetylation by aspirin cannot be reversed by substrate and would be correct only if inhibition were noncovalent."
+      },
+      {
+        "text": "Allosteric activation increasing Vmax transiently",
+        "isCorrect": false,
+        "rationale": "Wrong: Aspirin causes irreversible inhibition, not activation; this would be correct only if aspirin acted as an activator."
+      },
+      {
+        "text": "Noncompetitive inhibition lowering Km only",
+        "isCorrect": false,
+        "rationale": "Wrong: Noncompetitive inhibition lowers Vmax without changing Km; lowering Km alone is not the expected effect and would be correct only in a specific mixed inhibition case."
+      },
+      {
+        "text": "Enzyme relocation to different organelle",
+        "isCorrect": false,
+        "rationale": "Wrong: Covalent modification by aspirin does not relocate enzymes; it would be correct only if cellular trafficking were induced by modification."
+      }
+    ]
+  },
+  {
+    "question": "A lab measures enzyme velocity at various [S] and plots 1/Vo vs 1/[S]. After adding a competitive inhibitor, which intercept changes and in what direction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define competitive and noncompetitive inhibition and interpret these based on Lineweaver-Burk plots",
+    "options": [
+      {
+        "text": "X intercept moves closer to zero indicating higher Km",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains competitive inhibition increases apparent Km, so the Lineweaver-Burk x-intercept (-1/Km) moves closer to zero."
+      },
+      {
+        "text": "Y intercept moves away from zero indicating lower Vmax",
+        "isCorrect": false,
+        "rationale": "Wrong: Y-intercept (1/Vmax) remains unchanged in competitive inhibition; it would be correct only for noncompetitive inhibition that lowers Vmax."
+      },
+      {
+        "text": "Both intercepts move toward zero equally",
+        "isCorrect": false,
+        "rationale": "Wrong: Competitive inhibition affects Km but not Vmax; both intercepts moving would indicate a different inhibition type and would be correct only if both parameters changed."
+      },
+      {
+        "text": "X intercept moves away from zero indicating lower Km",
+        "isCorrect": false,
+        "rationale": "Wrong: Competitive inhibition increases apparent Km (x-intercept closer to zero), not decreases; this would be correct only if affinity increased."
+      },
+      {
+        "text": "No intercept changes because inhibitor is reversible",
+        "isCorrect": false,
+        "rationale": "Wrong: Reversibility does not preclude kinetic changes; reversible competitive inhibitors still alter apparent Km and thus the x-intercept."
+      }
+    ]
+  },
+  {
+    "question": "A patient with vitamin B3 deficiency has impaired reactions that require NAD+. Based on the lecture, NAD+ is classified as which type of enzyme-associated molecule?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the basic properties of enzymes, especially active sites, substrates and products, catalytic efficiency, specificity, holoenzymes, apoenzymes, cofactors, and coenzymes",
+    "options": [
+      {
+        "text": "Coenzyme organic molecule derived from vitamins",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states coenzymes are organic molecules often derived from vitamins, with NAD+ derived from niacin (B3)."
+      },
+      {
+        "text": "Cofactor inorganic metal ion like Fe2+",
+        "isCorrect": false,
+        "rationale": "Wrong: Cofactors can be metal ions, but NAD+ is an organic coenzyme; it would be correct only if the molecule were a metal ion."
+      },
+      {
+        "text": "Apoenzyme inactive protein without cofactor",
+        "isCorrect": false,
+        "rationale": "Wrong: Apoenzyme refers to the protein alone lacking its cofactor; NAD+ is the missing component, not the apoenzyme itself."
+      },
+      {
+        "text": "Holoenzyme inactive without substrate bound",
+        "isCorrect": false,
+        "rationale": "Wrong: Holoenzyme is the active enzyme plus cofactor; it would be correct only if the enzyme plus NAD+ were being described."
+      },
+      {
+        "text": "Zymogen precursor activated by proteolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Zymogens are inactive precursors activated by cleavage, unrelated to vitamin-derived cofactors; it would be correct only if activation required proteolysis."
+      }
+    ]
+  },
+  {
+    "question": "A clinician interprets an enzyme assay where increasing substrate concentration restores activity inhibited by a drug. Which inhibition type from the lecture does this behavior indicate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define competitive and noncompetitive inhibition and interpret these based on Lineweaver-Burk plots",
+    "options": [
+      {
+        "text": "Competitive inhibition overcome by high substrate",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains competitive inhibitors compete with substrate and can be outcompeted by high [S], restoring Vmax."
+      },
+      {
+        "text": "Noncompetitive inhibition unaffected by substrate",
+        "isCorrect": false,
+        "rationale": "Wrong: Noncompetitive inhibitors cannot be displaced by substrate and lower Vmax; it would be correct only if activity remained reduced despite high [S]."
+      },
+      {
+        "text": "Irreversible inhibition reversible with substrate",
+        "isCorrect": false,
+        "rationale": "Wrong: Irreversible inhibitors form covalent bonds and are not reversed by substrate; it would be correct only if the inhibitor were actually reversible."
+      },
+      {
+        "text": "Uncompetitive inhibition enhanced by substrate",
+        "isCorrect": false,
+        "rationale": "Wrong: Uncompetitive inhibitors bind only ES complex and are more effective at high [S], not reversed by substrate; it would be correct only if inhibition increased with [S]."
+      },
+      {
+        "text": "Allosteric inhibition relieved by substrate binding",
+        "isCorrect": false,
+        "rationale": "Wrong: Allosteric inhibition may or may not be relieved by substrate; the lecture specifically describes competitive inhibition as overcome by high [S]."
+      }
+    ]
+  },
+  {
+    "question": "A mutation reduces k1 (association rate) for substrate binding but leaves k2 unchanged. According to the Michaelis-Menten expression in the lecture, how does Km change qualitatively?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define Km and Vmax and interpret how they change using Michaelis-Menten plots",
+    "options": [
+      {
+        "text": "Km increases indicating lower apparent affinity",
+        "isCorrect": true,
+        "rationale": "Correct: Km = (k-1 + k2)/k1, so decreasing k1 increases Km, reflecting lower apparent affinity as described in the lecture."
+      },
+      {
+        "text": "Km decreases indicating higher apparent affinity",
+        "isCorrect": false,
+        "rationale": "Wrong: Decreasing k1 cannot lower Km; it would be correct only if k1 increased or k2 decreased sufficiently."
+      },
+      {
+        "text": "Vmax decreases because k2 is unchanged",
+        "isCorrect": false,
+        "rationale": "Wrong: Vmax depends on k2 and enzyme concentration; with k2 unchanged Vmax remains the same unless enzyme amount changes."
+      },
+      {
+        "text": "Both Km and Vmax remain unchanged",
+        "isCorrect": false,
+        "rationale": "Wrong: Km depends on k1 so it changes with k1; it would be correct only if k1 were unchanged."
+      },
+      {
+        "text": "Km becomes zero reflecting infinite affinity",
+        "isCorrect": false,
+        "rationale": "Wrong: Km cannot become zero from a decreased k1; infinite affinity would require k1 → ∞, not decrease."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a genetic defect produces an enzyme lacking a metal ion cofactor binding site. Based on the lecture, which term best describes the inactive protein produced?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the basic properties of enzymes, especially active sites, substrates and products, catalytic efficiency, specificity, holoenzymes, apoenzymes, cofactors, and coenzymes",
+    "options": [
+      {
+        "text": "Apoenzyme inactive without its metal cofactor",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture defines an apoenzyme as the enzyme protein alone, inactive without its nonprotein cofactor (e.g., metal ion)."
+      },
+      {
+        "text": "Holoenzyme active with bound cofactor present",
+        "isCorrect": false,
+        "rationale": "Wrong: Holoenzyme is the active form with cofactor bound; it would be correct only if the metal ion were present and bound."
+      },
+      {
+        "text": "Isoenzyme variant with altered tissue distribution",
+        "isCorrect": false,
+        "rationale": "Wrong: Isoenzymes are different forms across tissues, not simply apoenzymes lacking cofactors; it would be correct only if a tissue-specific isoform were produced."
+      },
+      {
+        "text": "Zymogen requiring proteolytic activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Zymogens are inactive precursors activated by cleavage, not by cofactor binding; it would be correct only if activation required proteolysis."
+      },
+      {
+        "text": "Allosteric enzyme inhibited by effector binding",
+        "isCorrect": false,
+        "rationale": "Wrong: Allosteric regulation involves effectors at separate sites; lacking a cofactor binding site makes the protein an apoenzyme, not an allosteric inhibitor."
+      }
+    ]
+  },
+  {
+    "question": "A clinician asks which experimental change would allow a competitive inhibitor to be outcompeted in vitro. According to the lecture, which manipulation achieves this?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define competitive and noncompetitive inhibition and interpret these based on Lineweaver-Burk plots",
+    "options": [
+      {
+        "text": "Increase substrate concentration to high levels",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states competitive inhibition can be overcome by high [S], allowing substrate to outcompete the inhibitor for the active site."
+      },
+      {
+        "text": "Decrease temperature to slow binding kinetics",
+        "isCorrect": false,
+        "rationale": "Wrong: Lowering temperature reduces overall rates but does not preferentially displace a competitive inhibitor; it would be correct only if temperature selectively affected inhibitor binding."
+      },
+      {
+        "text": "Add a noncompetitive inhibitor simultaneously",
+        "isCorrect": false,
+        "rationale": "Wrong: Adding a noncompetitive inhibitor would further reduce Vmax and not relieve competitive inhibition; it would be correct only if the noncompetitive agent somehow displaced the competitive inhibitor."
+      },
+      {
+        "text": "Remove enzyme cofactors to reduce activity",
+        "isCorrect": false,
+        "rationale": "Wrong: Removing cofactors decreases enzyme activity and would not outcompete the inhibitor; it would be correct only if cofactor removal prevented inhibitor binding."
+      },
+      {
+        "text": "Lower pH to denature the inhibitor molecule",
+        "isCorrect": false,
+        "rationale": "Wrong: Altering pH may denature proteins but is nonspecific and could denature enzyme as well; it would be correct only if the inhibitor were uniquely pH-sensitive without harming the enzyme."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute lead exposure shows elevated protoporphyrin and low heme. Based on the lecture, which enzymatic step is blocked and how does that explain anemia?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the mechanism of action of enzymes as it relates to reaction energetics and chemistry",
+    "options": [
+      {
+        "text": "Insertion of iron into protoporphyrin inhibited reducing heme",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states lead noncompetitively inhibits ferrochelatase, which inserts Fe2+ into protoporphyrin IX to form heme; inhibition reduces heme synthesis causing anemia."
+      },
+      {
+        "text": "Conversion of glycine to ALA increased causing porphyria",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture does not describe glycine to ALA conversion being increased by lead; this would be correct only if upstream enzyme activity were altered producing porphyrin accumulation."
+      },
+      {
+        "text": "Heme degradation accelerated by lead increasing bilirubin",
+        "isCorrect": false,
+        "rationale": "Wrong: Lead inhibits heme synthesis rather than accelerating degradation; increased bilirubin would be correct only if hemolysis or degradation were occurring."
+      },
+      {
+        "text": "Iron transport into mitochondria blocked lowering iron availability",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture attributes anemia to ferrochelatase inhibition, not iron transport blockade; it would be correct only if transport proteins were impaired."
+      },
+      {
+        "text": "ALA dehydratase activated increasing porphyrin precursors",
+        "isCorrect": false,
+        "rationale": "Wrong: Lead actually inhibits ALA dehydratase as well, but the lecture emphasizes ferrochelatase noncompetitive inhibition; activation would be opposite and correct only if ALA dehydratase activity increased."
+      }
+    ]
+  },
+  {
+    "question": "A student is asked which enzyme class catalyzes formation of bonds coupled to ATP hydrolysis, such as pyruvate carboxylase. Which class from the lecture is correct?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Understand the basics of enzyme nomenclature and the significance of reaction figure arrows",
+    "options": [
+      {
+        "text": "Ligases forming bonds coupled to ATP hydrolysis",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists ligases as enzymes that form bonds between C and O, S, N coupled to hydrolysis of high-energy phosphates, with pyruvate carboxylase as an example."
+      },
+      {
+        "text": "Lyases cleaving bonds without water addition",
+        "isCorrect": false,
+        "rationale": "Wrong: Lyases cleave C-C, C-S, or certain C-N bonds often releasing small molecules; they do not form bonds coupled to ATP hydrolysis and would be correct only if the reaction were a cleavage."
+      },
+      {
+        "text": "Hydrolases cleaving bonds by water addition",
+        "isCorrect": false,
+        "rationale": "Wrong: Hydrolases catalyze bond cleavage with water (e.g., urease), not bond formation coupled to ATP; it would be correct only if hydrolysis were the primary step."
+      },
+      {
+        "text": "Isomerases rearranging molecular structure internally",
+        "isCorrect": false,
+        "rationale": "Wrong: Isomerases catalyze intramolecular rearrangements (e.g., methylmalonyl CoA mutase), not ATP-coupled bond formation; it would be correct only if the reaction were an isomerization."
+      },
+      {
+        "text": "Transferases moving functional groups between molecules",
+        "isCorrect": false,
+        "rationale": "Wrong: Transferases transfer groups (e.g., methyl, phosphate) between molecules, not necessarily forming bonds coupled to ATP hydrolysis; it would be correct only if ATP coupling were absent."
+      }
+    ]
+  },
+  {
+    "question": "A researcher observes that adding a metal ion restores activity to an apoenzyme. According to the lecture, what role did the metal ion play?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the basic properties of enzymes, especially active sites, substrates and products, catalytic efficiency, specificity, holoenzymes, apoenzymes, cofactors, and coenzymes",
+    "options": [
+      {
+        "text": "Cofactor required for catalytic activity as metal ion",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes metal ions (e.g., Fe2+, Zn2+) as cofactors that are nonprotein components necessary for enzyme activity; adding the ion converts apoenzyme to holoenzyme."
+      },
+      {
+        "text": "Competitive inhibitor displaced by metal binding",
+        "isCorrect": false,
+        "rationale": "Wrong: A metal ion restoring activity acts as a cofactor, not as a displaced inhibitor; it would be correct only if the metal removed an inhibitor rather than supplying catalytic function."
+      },
+      {
+        "text": "Allosteric effector increasing substrate affinity",
+        "isCorrect": false,
+        "rationale": "Wrong: While some metals can act allosterically, the lecture frames metal ions as cofactors required for catalysis; it would be correct only if the ion bound an allosteric site."
+      },
+      {
+        "text": "Irreversible modifier forming covalent bond",
+        "isCorrect": false,
+        "rationale": "Wrong: Metal cofactors typically bind noncovalently or coordinate with residues, not irreversibly modify the enzyme; it would be correct only if covalent modification occurred."
+      },
+      {
+        "text": "Zymogen cleavage product restoring activity",
+        "isCorrect": false,
+        "rationale": "Wrong: Zymogen activation involves proteolysis, not metal ion addition; it would be correct only if proteolytic activation were the mechanism."
+      }
+    ]
+  },
+  {
+    "question": "A clinical vignette: a patient with hypercholesterolemia is prescribed a drug that is a structural analog of HMG-CoA. Which immediate enzymatic effect and kinetic pattern from the lecture best explain the drug's action?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the mechanism of action of enzymes as it relates to reaction energetics and chemistry",
+    "options": [
+      {
+        "text": "Competes at active site raising apparent Km unchanged Vmax",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes statins as structural analogs of HMG-CoA that competitively inhibit HMG-CoA reductase, increasing apparent Km while Vmax remains unchanged."
+      },
+      {
+        "text": "Binds allosteric site lowering Vmax unchanged Km",
+        "isCorrect": false,
+        "rationale": "Wrong: Allosteric or noncompetitive binding lowers Vmax without changing Km; statins act competitively at the active site, not allosterically."
+      },
+      {
+        "text": "Irreversibly acetylates enzyme reducing activity permanently",
+        "isCorrect": false,
+        "rationale": "Wrong: Irreversible acetylation (e.g., aspirin on COX) is not how statins work; this would be correct only if the drug formed covalent bonds."
+      },
+      {
+        "text": "Sequesters substrate decreasing enzyme concentration",
+        "isCorrect": false,
+        "rationale": "Wrong: Sequestration of substrate is not the mechanism described; it would be correct only if the drug removed substrate from solution rather than binding enzyme."
+      },
+      {
+        "text": "Enhances enzyme expression increasing Vmax over time",
+        "isCorrect": false,
+        "rationale": "Wrong: Statins inhibit enzyme activity rather than enhance expression; increased expression would raise Vmax, opposite the intended effect."
+      }
+    ]
+  },
+  {
+    "question": "A lab demonstrates that an inhibitor lowers Vmax but leaves Km unchanged. According to the lecture, which binding behavior explains this observation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define competitive and noncompetitive inhibition and interpret these based on Lineweaver-Burk plots",
+    "options": [
+      {
+        "text": "Inhibitor binds allosteric site noncompetitively",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states noncompetitive inhibitors bind a site other than the active site and decrease Vmax while Km remains unchanged."
+      },
+      {
+        "text": "Inhibitor competes with substrate at active site",
+        "isCorrect": false,
+        "rationale": "Wrong: Competitive inhibitors increase apparent Km but do not change Vmax; this would be correct only if Km changed."
+      },
+      {
+        "text": "Inhibitor binds only ES complex uncompetitively",
+        "isCorrect": false,
+        "rationale": "Wrong: Uncompetitive inhibitors bind only ES complex and change both Km and Vmax; it would be correct only if both parameters shifted."
+      },
+      {
+        "text": "Inhibitor irreversibly destroys enzyme active sites",
+        "isCorrect": false,
+        "rationale": "Wrong: Irreversible inhibitors reduce active enzyme concentration and lower Vmax, but the lecture distinguishes noncompetitive reversible binding as the described pattern; irreversible binding would be correct only if covalent modification occurred."
+      },
+      {
+        "text": "Inhibitor increases substrate Km while raising Vmax",
+        "isCorrect": false,
+        "rationale": "Wrong: Increasing Km with raised Vmax is not a standard inhibition pattern; it would be correct only in atypical mixed kinetic scenarios not described in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A patient sample shows decreased activity of an enzyme that requires biotin. Based on the lecture, biotin functions as which type of molecule and what consequence follows?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the basic properties of enzymes, especially active sites, substrates and products, catalytic efficiency, specificity, holoenzymes, apoenzymes, cofactors, and coenzymes",
+    "options": [
+      {
+        "text": "Biotin is a coenzyme prosthetic group required for activity",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists biotin as an organic molecule (coenzyme) often derived from vitamins and required for activity of certain carboxylases; lacking it yields inactive apoenzyme."
+      },
+      {
+        "text": "Biotin is a metal ion cofactor like Zn2+",
+        "isCorrect": false,
+        "rationale": "Wrong: Biotin is organic, not an inorganic metal cofactor; it would be correct only if the required cofactor were a metal ion."
+      },
+      {
+        "text": "Biotin irreversibly inhibits carboxylases by acetylation",
+        "isCorrect": false,
+        "rationale": "Wrong: Biotin is required for carboxylase function, not an irreversible inhibitor; this would be correct only if biotin covalently inactivated enzymes."
+      },
+      {
+        "text": "Biotin acts as an allosteric inhibitor reducing Vmax",
+        "isCorrect": false,
+        "rationale": "Wrong: Biotin serves as a prosthetic group enabling catalysis, not as an allosteric inhibitor; it would be correct only if biotin bound a regulatory site to inhibit activity."
+      },
+      {
+        "text": "Biotin converts holoenzyme to inactive apoenzyme",
+        "isCorrect": false,
+        "rationale": "Wrong: Addition of biotin converts apoenzyme to active holoenzyme; it would be correct only if biotin removal occurred."
+      }
+    ]
+  },
+  {
+    "question": "A clinician asks which experimental observation would indicate an enzyme follows Michaelis-Menten kinetics rather than allosteric regulation. Which result matches the lecture description?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe how substrate concentration, temperature, and pH affect reaction velocity and interpret graphs displaying these effects",
+    "options": [
+      {
+        "text": "Hyperbolic Vo versus [S] curve reaching Vmax",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states enzymes following Michaelis-Menten kinetics show a hyperbolic Vo vs [S] curve with a defined Vmax, whereas allosteric enzymes show sigmoid curves."
+      },
+      {
+        "text": "Sigmoidal Vo versus [S] curve indicating cooperativity",
+        "isCorrect": false,
+        "rationale": "Wrong: Sigmoidal curves indicate allosteric cooperative behavior, not Michaelis-Menten single-site kinetics; it would be correct only if cooperativity were present."
+      },
+      {
+        "text": "Linear Vo increase with no saturation observed",
+        "isCorrect": false,
+        "rationale": "Wrong: Linear increase without saturation suggests [S] << Km across the range, not classic Michaelis-Menten behavior approaching Vmax; it would be correct only at low [S]."
+      },
+      {
+        "text": "Vo independent of [S] at all concentrations",
+        "isCorrect": false,
+        "rationale": "Wrong: Independence across all [S] is not typical; zero-order kinetics occur only at saturating [S], not across the entire range, so this would be correct only under saturating conditions."
+      },
+      {
+        "text": "Vo decreases as [S] increases due to inhibition",
+        "isCorrect": false,
+        "rationale": "Wrong: Decreasing Vo with increasing [S] indicates substrate inhibition or assay artifact, not Michaelis-Menten kinetics; it would be correct only if substrate inhibition were present."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a mutation in an enzyme's active site shows reduced transition state stabilization. Based on the lecture, what is the expected effect on activation energy and reaction rate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the mechanism of action of enzymes as it relates to reaction energetics and chemistry",
+    "options": [
+      {
+        "text": "Higher activation energy and slower reaction rate",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains enzymes stabilize the transition state lowering activation energy; loss of stabilization raises activation energy and slows the reaction."
+      },
+      {
+        "text": "Lower activation energy and faster reaction rate",
+        "isCorrect": false,
+        "rationale": "Wrong: Reduced stabilization cannot lower activation energy; this would be correct only if the mutation somehow enhanced catalytic interactions."
+      },
+      {
+        "text": "No change in activation energy but increased Vmax",
+        "isCorrect": false,
+        "rationale": "Wrong: Vmax depends on kcat and enzyme amount; loss of transition state stabilization would not increase Vmax and would be correct only if kcat increased."
+      },
+      {
+        "text": "Equilibrium shifts to favor products without rate change",
+        "isCorrect": false,
+        "rationale": "Wrong: Enzymes do not change equilibrium positions; a change in transition state stabilization affects rate, not equilibrium, so this would be correct only if thermodynamics changed."
+      },
+      {
+        "text": "Apparent Km decreases while Vmax unchanged",
+        "isCorrect": false,
+        "rationale": "Wrong: Loss of stabilization typically reduces catalytic efficiency and may alter Km unpredictably; decreased Km would indicate higher affinity, not expected here."
+      }
+    ]
+  },
+  {
+    "question": "A student must choose the best next step: a patient with very high LDL is started on a competitive HMG-CoA reductase inhibitor. According to the lecture, what immediate biochemical effect should the clinician expect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe how enzymes are regulated through allosteric effectors, covalent modification (including enzymes involved), and gene expression",
+    "options": [
+      {
+        "text": "Reduced cholesterol synthesis via competitive enzyme blockade",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states statins competitively inhibit HMG-CoA reductase, the rate-limiting step in cholesterol synthesis, thereby lowering cholesterol production."
+      },
+      {
+        "text": "Increased cholesterol synthesis due to feedback activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Immediate effect of competitive inhibition is reduced synthesis; feedback upregulation of enzyme expression may occur later but does not acutely increase synthesis."
+      },
+      {
+        "text": "Irreversible enzyme inactivation requiring new synthesis",
+        "isCorrect": false,
+        "rationale": "Wrong: Statins are reversible competitive inhibitors, not irreversible inactivators; irreversible inactivation would require covalent modification."
+      },
+      {
+        "text": "Enhanced Vmax of HMG CoA reductase increasing flux",
+        "isCorrect": false,
+        "rationale": "Wrong: Inhibition reduces effective flux; increased Vmax would be opposite and correct only if an activator were given."
+      },
+      {
+        "text": "Immediate increase in HDL concentration raising clearance",
+        "isCorrect": false,
+        "rationale": "Wrong: Statin therapy lowers LDL synthesis; HDL changes are not the immediate biochemical effect and would be correct only after longer-term metabolic adjustments."
+      }
+    ]
+  }
+]
