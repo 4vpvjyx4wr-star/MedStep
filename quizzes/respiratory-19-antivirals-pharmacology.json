@@ -1,1217 +1,1313 @@
 [
   {
-    "question": "A student is asked to name the learning objective that requires describing how antiviral drug classes act at the molecular level for respiratory infections. Which learning objective matches this task?",
+    "question": "A 7-year-old child presents within 24 hours of fever and cough onset during influenza season. Which mechanism best explains how an oral medication reduces release of newly formed influenza virions from infected respiratory epithelial cells?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
+        "text": "Inhibition of viral neuraminidase cleavage of sialic acid linkers",
         "isCorrect": true,
-        "rationale": "This option exactly matches the lecture learning objective asking for molecular mechanisms of antiviral drug classes for respiratory infections."
+        "rationale": "Correct: Neuraminidase inhibitors block the enzyme that cleaves neuraminic (sialic) acid linkers, preventing release of progeny virions as described for oseltamivir in the lecture."
       },
       {
-        "text": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+        "text": "Blockade of viral RNA endonuclease required for transcription",
         "isCorrect": false,
-        "rationale": "This option is a different learning objective focused on adverse effects and interactions; it would be correct if the task asked about safety rather than molecular mechanisms."
+        "rationale": "Wrong: That describes PA endonuclease inhibition (baloxavir); it would be correct if the drug targeted the polymerase acidic endonuclease instead of neuraminidase."
       },
       {
-        "text": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
+        "text": "Inhibition of viral main protease preventing polyprotein cleavage",
         "isCorrect": false,
-        "rationale": "This option addresses therapeutic uses rather than molecular mechanisms; it would be correct if the question asked about clinical indications."
+        "rationale": "Wrong: This is the mechanism of SARS-CoV-2 protease inhibitors (nirmatrelvir); it would be correct for a protease inhibitor, not an influenza neuraminidase inhibitor."
       },
       {
-        "text": "Describe the current GDMT for viral respiratory infections (Competencies III.4; OMED620.6)",
+        "text": "Incorporation of nucleoside analog causing chain termination",
         "isCorrect": false,
-        "rationale": "This option concerns guideline-directed medical therapy rather than molecular mechanisms; it would be correct if the task asked about current treatment recommendations."
+        "rationale": "Wrong: Chain termination by nucleoside analogs (remdesivir) affects RNA synthesis, not neuraminidase-mediated virion release; it would be correct if the drug were remdesivir."
       },
       {
-        "text": "Describe the pharmacological effects of each drug class (Competencies II.1; OMED620.6)",
+        "text": "Neutralization of soluble complement component C5a",
         "isCorrect": false,
-        "rationale": "This option focuses on pharmacologic effects rather than molecular mechanisms; it would be correct if the task asked about physiological effects of the drugs."
+        "rationale": "Wrong: Neutralizing C5a (vilobelimab) modulates immune response in severe COVID-19 and does not directly block viral release; it would be correct only for that monoclonal antibody indication."
       }
     ]
   },
   {
-    "question": "Which learning objective asks students to list major adverse effects, interactions, and contraindications for antiviral drug classes used in respiratory infections?",
+    "question": "Which adverse effect is most commonly associated with oral oseltamivir therapy in pediatric patients according to the lecture material?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+        "text": "Transient gastrointestinal upset including nausea and vomiting",
         "isCorrect": true,
-        "rationale": "This option exactly matches the lecture learning objective about adverse effects, interactions, and contraindications for antiviral classes."
+        "rationale": "Correct: The lecture lists GI symptoms, especially transient nausea and vomiting, as common adverse effects of oseltamivir."
       },
       {
-        "text": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
+        "text": "Bronchoconstriction with wheeze and bronchospasm",
         "isCorrect": false,
-        "rationale": "This option is about molecular mechanisms rather than adverse effects; it would be correct if the question asked about mechanisms instead."
+        "rationale": "Wrong: Bronchoconstriction is associated with inhaled zanamivir, not oral oseltamivir; it would be correct if the inhaled route were used."
       },
       {
-        "text": "Describe the pharmacological effects of each drug class (Competencies II.1; OMED620.6)",
+        "text": "Dose dependent hemolytic anemia with hyperuricemia",
         "isCorrect": false,
-        "rationale": "This option addresses pharmacologic effects rather than safety profiles; it would be correct if the task asked about drug effects."
+        "rationale": "Wrong: Hemolytic anemia and hyperuricemia are adverse effects of ribavirin, not oseltamivir; it would be correct for ribavirin exposure."
       },
       {
-        "text": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
+        "text": "Bradycardia and infusion related hypotension",
         "isCorrect": false,
-        "rationale": "This option concerns therapeutic uses rather than adverse effects; it would be correct if the question asked about indications."
+        "rationale": "Wrong: Bradycardia and infusion reactions are described for remdesivir; this would be correct for IV remdesivir rather than oral oseltamivir."
       },
       {
-        "text": "Describe the current GDMT for viral respiratory infections (Competencies III.4; OMED620.6)",
+        "text": "Teratogenicity and embryotoxicity risk in animals",
         "isCorrect": false,
-        "rationale": "This option focuses on guideline-directed therapy rather than adverse effects; it would be correct if the question asked about treatment guidelines."
+        "rationale": "Wrong: Teratogenicity is emphasized for ribavirin; this would be correct only for ribavirin exposure concerns."
       }
     ]
   },
   {
-    "question": "Which learning objective requires students to state the main clinical uses of antiviral drugs for respiratory infections?",
+    "question": "A hospitalized adult with severe COVID-19 requiring supplemental oxygen is considered for an immunomodulatory agent that blocks multiple cytokine signals by inhibiting intracellular JAK-STAT signaling. Which drug from the lecture fits this description?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
+    "options": [
+      {
+        "text": "Baricitinib, a Janus kinase inhibitor that blocks JAK-STAT signaling",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states baricitinib is a JAK inhibitor that blocks JAK-STAT signaling and dampens multiple cytokines in severe COVID-19."
+      },
+      {
+        "text": "Tocilizumab, an IL-6 receptor antagonist blocking IL-6 signaling",
+        "isCorrect": false,
+        "rationale": "Wrong: Tocilizumab targets the IL-6 receptor specifically; it would be correct if the question asked for an IL-6 blocker rather than a JAK inhibitor."
+      },
+      {
+        "text": "Vilobelimab, a monoclonal antibody neutralizing complement C5a",
+        "isCorrect": false,
+        "rationale": "Wrong: Vilobelimab neutralizes C5a and does not inhibit JAK-STAT signaling; it would be correct for complement C5a blockade."
+      },
+      {
+        "text": "Dexamethasone, a corticosteroid reducing global cytokine production",
+        "isCorrect": false,
+        "rationale": "Wrong: Dexamethasone broadly reduces cytokine production but does not act via JAK-STAT inhibition; it would be correct if the mechanism asked was global cytokine suppression."
+      },
+      {
+        "text": "Anakinra, an IL-1 receptor antagonist preventing IL-1 signaling",
+        "isCorrect": false,
+        "rationale": "Wrong: Anakinra blocks IL-1 receptor specifically and is not a JAK inhibitor; it would be correct for IL-1 receptor antagonism."
+      }
+    ]
+  },
+  {
+    "question": "Which prophylactic strategy for respiratory syncytial virus (RSV) in high-risk newborns is described in the lecture as a monoclonal antibody given intravenously to prevent severe disease?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
     "options": [
       {
-        "text": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
+        "text": "Palivizumab administered intravenously to high risk infants",
         "isCorrect": true,
-        "rationale": "This option directly matches the lecture objective asking for therapeutic uses of antiviral drug classes."
+        "rationale": "Correct: The lecture lists palivizumab (IV) as prophylaxis for premature or high-risk newborns to prevent severe RSV."
       },
       {
-        "text": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
+        "text": "Nirsevimab given intramuscularly to all newborns",
         "isCorrect": false,
-        "rationale": "This option is about mechanisms rather than clinical uses; it would be correct if the task asked about molecular action."
+        "rationale": "Wrong: Nirsevimab is an IV monoclonal antibody per the lecture; it would be correct if the route and target population matched the lecture description."
       },
       {
-        "text": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+        "text": "Ribavirin inhalation for routine newborn prophylaxis",
         "isCorrect": false,
-        "rationale": "This option addresses safety rather than therapeutic uses; it would be correct if the question asked about adverse effects."
+        "rationale": "Wrong: Ribavirin inhaled is used for treatment in severe pediatric RSV, not routine prophylaxis; it would be correct only for therapeutic use in severe cases."
       },
       {
-        "text": "Describe the pharmacological effects of each drug class (Competencies II.1; OMED620.6)",
+        "text": "Live attenuated RSV vaccine intranasally for neonates",
         "isCorrect": false,
-        "rationale": "This option focuses on pharmacologic effects rather than clinical indications; it would be correct if the question asked about drug effects."
+        "rationale": "Wrong: The lecture does not list a live intranasal RSV vaccine for neonates; this would be correct only if such a vaccine were specified in the material."
       },
       {
-        "text": "Describe the current GDMT for viral respiratory infections (Competencies III.4; OMED620.6)",
+        "text": "Remdesivir intravenous prophylaxis for RSV exposed infants",
         "isCorrect": false,
-        "rationale": "This option concerns guideline-directed therapy rather than listing therapeutic uses; it would be correct if the task asked about recommended regimens."
+        "rationale": "Wrong: Remdesivir is an antiviral for COVID-19 (IV) and is not indicated for RSV prophylaxis in the lecture; it would be correct only if remdesivir were approved for RSV."
       }
     ]
   },
   {
-    "question": "Which learning objective asks for the current guideline-directed medical therapy for viral respiratory infections?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "Describe the current GDMT for viral respiratory infections (Competencies III.4; OMED620.6)",
-    "options": [
-      {
-        "text": "Describe the current GDMT for viral respiratory infections (Competencies III.4; OMED620.6)",
-        "isCorrect": true,
-        "rationale": "This option exactly names the lecture objective about guideline-directed medical therapy for viral respiratory infections."
-      },
-      {
-        "text": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
-        "isCorrect": false,
-        "rationale": "This option is about therapeutic uses rather than GDMT; it would be correct if the question asked about indications rather than guidelines."
-      },
-      {
-        "text": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
-        "isCorrect": false,
-        "rationale": "This option concerns mechanisms rather than guideline recommendations; it would be correct if the task asked about molecular action."
-      },
-      {
-        "text": "Describe the pharmacological effects of each drug class (Competencies II.1; OMED620.6)",
-        "isCorrect": false,
-        "rationale": "This option focuses on pharmacologic effects rather than GDMT; it would be correct if the question asked about drug effects."
-      },
-      {
-        "text": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
-        "isCorrect": false,
-        "rationale": "This option addresses safety profiles rather than guideline-directed therapy; it would be correct if the question asked about adverse effects."
-      }
-    ]
-  },
-  {
-    "question": "A patient with influenza presents within 24 hours of symptom onset. Which class of agents from the lecture reduces viral release by blocking a viral surface enzyme?",
+    "question": "A patient with influenza A is started on an oral agent that binds the viral polymerase acidic (PA) endonuclease, inhibiting viral mRNA transcription. Which drug from the lecture matches this mechanism?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Neuraminidase inhibitors such as oral or inhaled agents",
+        "text": "Baloxavir marboxil, an inhibitor of the PA endonuclease",
         "isCorrect": true,
-        "rationale": "Neuraminidase inhibitors block the viral neuraminidase enzyme that cleaves sialic acid linkers to release new virions, as described in the lecture."
+        "rationale": "Correct: The lecture describes baloxavir as binding the influenza PA endonuclease and inhibiting viral RNA transcription."
       },
       {
-        "text": "Viral polymerase acidic endonuclease inhibitors used orally",
+        "text": "Oseltamivir, an oral neuraminidase inhibitor preventing virion release",
         "isCorrect": false,
-        "rationale": "PA endonuclease inhibitors block viral transcription rather than virion release; this would be correct if the question asked about inhibiting viral RNA production."
+        "rationale": "Wrong: Oseltamivir inhibits neuraminidase to prevent virion release; it would be correct only if the mechanism involved neuraminidase inhibition."
       },
       {
-        "text": "M2 ion channel blockers that prevent viral uncoating",
+        "text": "Peramivir, an intravenous neuraminidase inhibitor for influenza",
         "isCorrect": false,
-        "rationale": "Adamantanes target the M2 ion channel to inhibit uncoating, not neuraminidase-mediated release; it would be correct if the stem asked about uncoating inhibition."
+        "rationale": "Wrong: Peramivir is an IV neuraminidase inhibitor and does not target the PA endonuclease; it would be correct for neuraminidase inhibition."
       },
       {
-        "text": "Nucleoside analogs that cause chain termination",
+        "text": "Molnupiravir, an oral mutagenic nucleoside analog causing mismatch",
         "isCorrect": false,
-        "rationale": "Nucleoside analogs act on polymerase to cause chain termination or mutagenesis, not on surface enzymes for release; it would be correct if the question asked about polymerase inhibition."
+        "rationale": "Wrong: Molnupiravir induces mutagenesis via base-pair mismatches in SARS-CoV-2 RNA polymerase, not PA endonuclease inhibition; it would be correct for that mechanism."
       },
       {
-        "text": "Monoclonal antibodies that neutralize viral surface proteins",
+        "text": "Ribavirin, an inhaled nucleoside analog inhibiting viral polymerase",
         "isCorrect": false,
-        "rationale": "MAbs bind external proteins to prevent attachment or fusion rather than enzymatic release; this would be correct if the question asked about blocking entry or fusion."
+        "rationale": "Wrong: Ribavirin interferes with viral RdRp and IMPDH but is not a PA endonuclease inhibitor; it would be correct for nucleoside analog mechanisms."
       }
     ]
   },
   {
-    "question": "Which influenza drug class listed in the lecture is contraindicated for routine use due to widespread resistance?",
+    "question": "A 68-year-old nursing home resident with chronic pulmonary disease presents within 36 hours of influenza symptom onset. According to the lecture's guideline summary, which group should be prioritized for antiviral therapy?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
     "options": [
       {
-        "text": "Adamantanes such as amantadine and rimantadine",
+        "text": "Persons over age 65 with chronic pulmonary disease should receive antiviral therapy",
         "isCorrect": true,
-        "rationale": "The lecture states adamantanes are no longer used because of resistance; they were M2 ion channel blockers formerly used for influenza A."
+        "rationale": "Correct: The lecture lists persons over age 65 and those with chronic pulmonary disease as high risk who should receive antivirals like oseltamivir."
       },
       {
-        "text": "Neuraminidase inhibitors like oral and inhaled agents",
+        "text": "Only vaccinated residents without comorbidities should receive antivirals",
         "isCorrect": false,
-        "rationale": "Neuraminidase inhibitors remain recommended for treatment and prophylaxis; this would be correct only if resistance made them ineffective."
+        "rationale": "Wrong: Vaccination status alone does not exclude high-risk patients from antiviral therapy; this would be correct only if guidelines limited therapy to low-risk vaccinated individuals."
       },
       {
-        "text": "Viral polymerase acidic endonuclease inhibitors used orally",
+        "text": "Antivirals are reserved solely for children aged 12 to 24 months",
         "isCorrect": false,
-        "rationale": "Baloxavir (PA endonuclease inhibitor) is still used for influenza; it is not broadly contraindicated for resistance in the lecture."
+        "rationale": "Wrong: While young children are high risk, antivirals are not reserved solely for that age group; it would be correct only if policy restricted therapy to that cohort."
       },
       {
-        "text": "Nucleoside analogs used for RNA chain termination",
+        "text": "Antivirals should be withheld in nursing home residents to avoid resistance",
         "isCorrect": false,
-        "rationale": "Nucleoside analogs like remdesivir are used for other viruses; they are not described as universally contraindicated for influenza due to resistance."
+        "rationale": "Wrong: The lecture recommends antivirals for high-risk groups including nursing home residents; withholding would be incorrect unless resistance concerns outweighed benefits."
       },
       {
-        "text": "Monoclonal antibodies used for prophylaxis in infants",
+        "text": "Only inhaled neuraminidase inhibitors are recommended for elderly patients",
         "isCorrect": false,
-        "rationale": "MAbs are used for RSV prophylaxis, not contraindicated due to resistance per the lecture; this would be correct only if resistance were documented."
+        "rationale": "Wrong: Multiple neuraminidase inhibitors (oral, inhaled, IV) are options; recommending only inhaled forms would be correct only if inhaled route were specifically mandated."
       }
     ]
   },
   {
-    "question": "A hospitalized adult with severe COVID-19 requiring oxygen is considered for an immunomodulatory agent that blocks multiple cytokine signals via JAK-STAT inhibition. Which drug from the lecture fits this description?",
+    "question": "Which COVID-19 antiviral combination uses a protease inhibitor whose metabolism is intentionally inhibited by a second drug to increase its plasma concentration?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Baricitinib, an oral Janus kinase inhibitor",
+        "text": "Nirmatrelvir plus ritonavir, where ritonavir inhibits CYP3A4 to boost nirmatrelvir",
         "isCorrect": true,
-        "rationale": "Baricitinib inhibits JAK-STAT signaling to dampen multiple cytokines, as described in the lecture for severe COVID-19."
+        "rationale": "Correct: The lecture states nirmatrelvir inhibits the viral main protease and ritonavir inhibits CYP3A4 to reduce nirmatrelvir metabolism."
       },
       {
-        "text": "Dexamethasone, a systemic corticosteroid agent",
+        "text": "Remdesivir plus dexamethasone, where steroid increases remdesivir levels",
         "isCorrect": false,
-        "rationale": "Dexamethasone broadly reduces cytokine production but does not act via JAK-STAT inhibition; it would be correct if the mechanism were global cytokine suppression."
+        "rationale": "Wrong: Dexamethasone is an immunosuppressant and does not boost remdesivir metabolism; this would be correct only if dexamethasone inhibited remdesivir clearance."
       },
       {
-        "text": "Tocilizumab, an interleukin six receptor antagonist",
+        "text": "Molnupiravir plus baricitinib, where baricitinib inhibits molnupiravir activation",
         "isCorrect": false,
-        "rationale": "Tocilizumab blocks IL-6 receptor specifically rather than JAK-STAT broadly; it would be correct if the question asked about IL-6 blockade."
+        "rationale": "Wrong: Baricitinib is a JAK inhibitor and does not inhibit molnupiravir metabolism; it would be correct only if baricitinib affected molnupiravir pharmacokinetics."
       },
       {
-        "text": "Vilobelimab, a monoclonal antibody against complement C5a",
+        "text": "Oseltamivir plus peramivir, where peramivir inhibits oseltamivir metabolism",
         "isCorrect": false,
-        "rationale": "Vilobelimab neutralizes C5a, not JAK-STAT signaling; it would be correct if the target were complement-mediated inflammation."
+        "rationale": "Wrong: Both are neuraminidase inhibitors with different routes; peramivir does not boost oseltamivir levels and this would be correct only if such interaction existed."
       },
       {
-        "text": "Anakinra, an interleukin one receptor antagonist",
+        "text": "Baloxavir plus ritonavir, where ritonavir increases baloxavir exposure",
         "isCorrect": false,
-        "rationale": "Anakinra blocks IL-1 receptor specifically and does not inhibit JAK-STAT; it would be correct if the question asked about IL-1 blockade."
+        "rationale": "Wrong: Baloxavir is metabolized by CYP3A4 per the lecture but ritonavir boosting is not described; this would be correct only if ritonavir were used to boost baloxavir."
       }
     ]
   },
   {
-    "question": "Which COVID-19 antiviral from the lecture is a protease inhibitor coadministered with a CYP3A4 inhibitor to boost its levels?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
-    "options": [
-      {
-        "text": "Nirmatrelvir combined with ritonavir as oral therapy",
-        "isCorrect": true,
-        "rationale": "Nirmatrelvir inhibits the viral main protease and is given with ritonavir to inhibit CYP3A4 and boost nirmatrelvir levels, per the lecture."
-      },
-      {
-        "text": "Remdesivir given intravenously as a chain terminator",
-        "isCorrect": false,
-        "rationale": "Remdesivir is an IV nucleoside analog causing chain termination, not a protease inhibitor boosted by ritonavir."
-      },
-      {
-        "text": "Molnupiravir given orally as a mutagenic nucleoside analog",
-        "isCorrect": false,
-        "rationale": "Molnupiravir induces mutagenesis and is not a protease inhibitor nor boosted by ritonavir."
-      },
-      {
-        "text": "Dexamethasone given systemically as an anti-inflammatory",
-        "isCorrect": false,
-        "rationale": "Dexamethasone is an immunosuppressive corticosteroid, not an antiviral protease inhibitor."
-      },
-      {
-        "text": "Baricitinib given orally as a JAK inhibitor",
-        "isCorrect": false,
-        "rationale": "Baricitinib is a JAK inhibitor with potential antiviral entry effects, not a protease inhibitor boosted by ritonavir."
-      }
-    ]
-  },
-  {
-    "question": "A clinician considers molnupiravir for an outpatient with early COVID-19. Which mechanism best describes how this agent reduces viral viability according to the lecture?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
-    "options": [
-      {
-        "text": "Incorporation into viral RNA causing base pair mismatches",
-        "isCorrect": true,
-        "rationale": "Molnupiravir is converted to a CTP analog incorporated by RdRp, causing base pair mismatches and lethal mutagenesis, per the lecture."
-      },
-      {
-        "text": "Chain termination after incorporation into viral RNA",
-        "isCorrect": false,
-        "rationale": "Chain termination describes remdesivir's mechanism, not molnupiravir; it would be correct if the drug caused premature termination."
-      },
-      {
-        "text": "Inhibition of viral protease preventing polyprotein cleavage",
-        "isCorrect": false,
-        "rationale": "Protease inhibition is the mechanism of nirmatrelvir, not molnupiravir; it would be correct if the drug targeted MPRO."
-      },
-      {
-        "text": "Blocking viral neuraminidase to prevent virion release",
-        "isCorrect": false,
-        "rationale": "Neuraminidase inhibition is an influenza mechanism, not molnupiravir's; it would be correct if the drug targeted influenza neuraminidase."
-      },
-      {
-        "text": "Neutralizing complement component to reduce inflammation",
-        "isCorrect": false,
-        "rationale": "Complement neutralization (vilobelimab) reduces inflammation, not viral mutagenesis; it would be correct if the drug targeted C5a."
-      }
-    ]
-  },
-  {
-    "question": "Which adverse effect is specifically associated with inhaled neuraminidase inhibitor therapy in patients with reactive airway disease per the lecture?",
+    "question": "A 30-year-old pregnant woman with mild COVID-19 asks about an oral antiviral that induces viral mutagenesis by incorporation as a cytidine analog. Based on the lecture, which safety concern is most relevant?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Bronchoconstriction and worsening airway reactivity",
+        "text": "Potential adverse effects on bone and cartilage growth; contraindicated in pregnancy",
         "isCorrect": true,
-        "rationale": "The lecture notes that inhaled zanamivir can cause cough and bronchoconstriction, so caution is advised in asthma or COPD."
+        "rationale": "Correct: The lecture notes molnupiravir causes mutagenesis and has potential adverse effects on bone and cartilage growth, contraindicating use in pregnancy."
       },
       {
-        "text": "Dose dependent hemolytic anemia with chronic use",
+        "text": "Risk of hemolytic anemia and teratogenicity in animals",
         "isCorrect": false,
-        "rationale": "Hemolytic anemia is associated with ribavirin, not inhaled neuraminidase inhibitors; it would be correct if the drug were ribavirin."
+        "rationale": "Wrong: Hemolytic anemia and teratogenicity are associated with ribavirin; this would be correct only if the drug were ribavirin."
       },
       {
-        "text": "Severe hepatotoxicity with elevated aminotransferases",
+        "text": "Bronchospasm risk in patients with asthma using inhaled formulation",
         "isCorrect": false,
-        "rationale": "Hepatotoxicity is a risk with remdesivir and some immunomodulators, not specifically inhaled neuraminidase inhibitors; it would be correct if the drug caused liver injury."
+        "rationale": "Wrong: Bronchospasm is a concern with inhaled zanamivir, not with oral mutagenic antivirals; it would be correct for inhaled neuraminidase inhibitors."
+      },
+      {
+        "text": "Infusion related hypotension and bradycardia with IV dosing",
+        "isCorrect": false,
+        "rationale": "Wrong: Infusion reactions and bradycardia are described for remdesivir IV; this would be correct for IV remdesivir rather than oral molnupiravir."
+      },
+      {
+        "text": "Severe neuropsychiatric events including hallucinations in adolescents",
+        "isCorrect": false,
+        "rationale": "Wrong: Neuropsychiatric events are rarely reported with oseltamivir in children/adolescents; this would be correct only for that neuraminidase inhibitor."
+      }
+    ]
+  },
+  {
+    "question": "A researcher measures viral RNA synthesis after exposing influenza-infected cells to a drug that prevents cleavage of host-derived capped RNA fragments needed for viral mRNA synthesis. Which drug class from the lecture is being tested?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
+    "options": [
+      {
+        "text": "Viral polymerase acidic endonuclease inhibitors such as baloxavir",
+        "isCorrect": true,
+        "rationale": "Correct: Baloxavir inhibits the PA endonuclease that cleaves host capped RNA fragments required for viral mRNA transcription, reducing viral RNA synthesis."
+      },
+      {
+        "text": "Neuraminidase inhibitors such as oseltamivir preventing virion release",
+        "isCorrect": false,
+        "rationale": "Wrong: Neuraminidase inhibitors block virion release and do not prevent cap-snatching; this would be correct only if the drug targeted neuraminidase."
+      },
+      {
+        "text": "Protease inhibitors preventing polyprotein cleavage in coronaviruses",
+        "isCorrect": false,
+        "rationale": "Wrong: Protease inhibitors (nirmatrelvir) block polyprotein cleavage in SARS-CoV-2 and do not affect cap-snatching in influenza; it would be correct for protease inhibition contexts."
+      },
+      {
+        "text": "Nucleoside analogs causing chain termination of viral RNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Nucleoside analogs like remdesivir cause chain termination and do not inhibit the PA endonuclease; it would be correct for chain termination mechanisms."
+      },
+      {
+        "text": "Complement C5a neutralizers reducing inflammatory damage",
+        "isCorrect": false,
+        "rationale": "Wrong: C5a neutralizers (vilobelimab) modulate immune response and do not directly inhibit viral mRNA synthesis; it would be correct only for immunomodulatory effects."
+      }
+    ]
+  },
+  {
+    "question": "A patient with severe COVID-19 on mechanical ventilation is enrolled in a trial of a monoclonal antibody that neutralizes soluble C5a to reduce complement-mediated injury. According to the lecture, which adverse event should clinicians monitor for with this agent?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+    "options": [
+      {
+        "text": "Increased risk of venous thrombosis and elevated aminotransferases",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists venous thrombosis and increased serum aminotransferases among adverse effects of vilobelimab."
+      },
+      {
+        "text": "Severe bronchospasm and wheeze after inhalation",
+        "isCorrect": false,
+        "rationale": "Wrong: Bronchospasm is associated with inhaled zanamivir, not C5a neutralizers; it would be correct only for inhaled neuraminidase inhibitors."
+      },
+      {
+        "text": "Dose dependent hemolytic anemia and hyperuricemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemolytic anemia and hyperuricemia are adverse effects of ribavirin; this would be correct for ribavirin exposure."
+      },
+      {
+        "text": "Metallic taste and dysgeusia with oral dosing",
+        "isCorrect": false,
+        "rationale": "Wrong: Dysgeusia is noted with nirmatrelvir/ritonavir (Paxlovid); it would be correct for that oral antiviral rather than vilobelimab."
+      },
+      {
+        "text": "Adrenal suppression and proximal myopathy with chronic use",
+        "isCorrect": false,
+        "rationale": "Wrong: Adrenal suppression and myopathy are corticosteroid adverse effects (dexamethasone), not monoclonal C5a neutralizers; it would be correct for prolonged steroid therapy."
+      }
+    ]
+  },
+  {
+    "question": "A 55-year-old man with severe COVID-19 is treated with remdesivir. Which molecular action described in the lecture explains remdesivir's antiviral effect?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
+    "options": [
+      {
+        "text": "Conversion to an adenosine analog incorporated into viral RNA causing chain termination",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states remdesivir is converted to an ATP analog that is incorporated by RdRp and causes premature chain termination."
+      },
+      {
+        "text": "Conversion to a cytidine analog causing base pair mismatches and mutagenesis",
+        "isCorrect": false,
+        "rationale": "Wrong: That describes molnupiravir's mechanism of inducing base-pair mismatches; it would be correct for molnupiravir, not remdesivir."
+      },
+      {
+        "text": "Inhibition of viral neuraminidase preventing virion release",
+        "isCorrect": false,
+        "rationale": "Wrong: Neuraminidase inhibition (oseltamivir) prevents virion release and is unrelated to remdesivir's chain termination mechanism."
+      },
+      {
+        "text": "Blockade of viral main protease preventing polyprotein cleavage",
+        "isCorrect": false,
+        "rationale": "Wrong: Protease inhibition (nirmatrelvir) prevents polyprotein cleavage; this would be correct for protease inhibitors, not remdesivir."
+      },
+      {
+        "text": "Neutralization of IL-6 receptor to reduce cytokine signaling",
+        "isCorrect": false,
+        "rationale": "Wrong: IL-6 receptor blockade (tocilizumab) is immunomodulatory and not an antiviral chain terminator; it would be correct only for that immunotherapy."
+      }
+    ]
+  },
+  {
+    "question": "A clinician considers inhaled zanamivir for an adult with influenza who has a history of moderate asthma. Based on the lecture, what is the primary safety concern with this route of administration?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+    "options": [
+      {
+        "text": "Risk of bronchoconstriction and worsening airway reactivity",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture warns that inhaled zanamivir can cause bronchoconstriction and should be used cautiously in asthma or COPD."
+      },
+      {
+        "text": "High risk of hemolytic anemia and hyperuricemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemolytic anemia and hyperuricemia are associated with ribavirin, not inhaled zanamivir; it would be correct for ribavirin exposure."
+      },
+      {
+        "text": "Severe infusion related hypotension with inhaled dosing",
+        "isCorrect": false,
+        "rationale": "Wrong: Infusion-related hypotension is a concern with IV remdesivir, not inhaled zanamivir; it would be correct for IV therapies."
       },
       {
         "text": "Teratogenicity requiring contraception for six months",
         "isCorrect": false,
-        "rationale": "Teratogenicity and prolonged contraception are cautions for ribavirin, not inhaled neuraminidase inhibitors; it would be correct if the drug were ribavirin."
+        "rationale": "Wrong: Teratogenicity and contraception counseling are emphasized for ribavirin; this would be correct only for ribavirin exposure."
+      },
+      {
+        "text": "Metallic taste and dysgeusia after inhalation",
+        "isCorrect": false,
+        "rationale": "Wrong: Dysgeusia is reported with nirmatrelvir/ritonavir; it would be correct for that oral antiviral rather than inhaled zanamivir."
+      }
+    ]
+  },
+  {
+    "question": "A 4-year-old with severe bronchiolitis due to RSV is considered for inhaled antiviral therapy. Which drug from the lecture acts as a nucleoside analog interfering with viral RdRp and also depletes GTP pools via IMPDH inhibition?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
+    "options": [
+      {
+        "text": "Ribavirin, a nucleoside analog that inhibits RdRp and IMPDH",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes ribavirin as a nucleoside analog that inhibits RNA-dependent RNA polymerase and IMPDH, depleting GTP pools."
+      },
+      {
+        "text": "Palivizumab, a monoclonal antibody against RSV F protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Palivizumab is an anti-F protein monoclonal antibody used for prophylaxis, not a nucleoside analog; it would be correct only for passive immunization."
+      },
+      {
+        "text": "Molnupiravir, an oral cytidine analog causing mutagenesis",
+        "isCorrect": false,
+        "rationale": "Wrong: Molnupiravir induces mutagenesis via cytidine analog incorporation in SARS-CoV-2, not IMPDH inhibition; it would be correct for mutagenesis mechanisms."
+      },
+      {
+        "text": "Oseltamivir, an oral neuraminidase inhibitor preventing release",
+        "isCorrect": false,
+        "rationale": "Wrong: Oseltamivir inhibits neuraminidase and does not deplete GTP pools; it would be correct only for neuraminidase inhibition."
+      },
+      {
+        "text": "Remdesivir, an IV adenosine analog causing chain termination",
+        "isCorrect": false,
+        "rationale": "Wrong: Remdesivir causes chain termination as an adenosine analog and does not inhibit IMPDH; it would be correct for chain termination mechanisms."
+      }
+    ]
+  },
+  {
+    "question": "A hospitalized COVID-19 patient on multiple medications is prescribed nirmatrelvir/ritonavir. Which drug interaction concern from the lecture is most relevant due to ritonavir's pharmacologic action?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+    "options": [
+      {
+        "text": "Ritonavir inhibition of CYP3A4 leading to interactions with many coadministered drugs",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes ritonavir inhibits CYP3A4 to boost nirmatrelvir, creating potential interactions with other CYP3A4 substrates."
+      },
+      {
+        "text": "Ritonavir causing bronchospasm in patients with asthma",
+        "isCorrect": false,
+        "rationale": "Wrong: Bronchospasm is linked to inhaled zanamivir, not ritonavir; this would be correct only if ritonavir caused airway reactivity."
+      },
+      {
+        "text": "Ritonavir inducing IMPDH leading to GTP depletion",
+        "isCorrect": false,
+        "rationale": "Wrong: IMPDH inhibition and GTP depletion are effects of ribavirin, not ritonavir; it would be correct for ribavirin mechanisms."
+      },
+      {
+        "text": "Ritonavir causing chain termination when incorporated into viral RNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Chain termination is the mechanism of remdesivir; ritonavir is a pharmacokinetic booster and does not incorporate into viral RNA."
+      },
+      {
+        "text": "Ritonavir neutralizing complement C5a and reducing thrombosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Neutralizing C5a is the action of vilobelimab, not ritonavir; this would be correct only for that monoclonal antibody."
+      }
+    ]
+  },
+  {
+    "question": "A patient with severe COVID-19 and rapidly rising inflammatory markers is considered for an IL-6 receptor antagonist. Which agent from the lecture fits this role and what is a notable hematologic adverse effect to monitor?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+    "options": [
+      {
+        "text": "Tocilizumab, monitor for neutropenia and thrombocytopenia",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture identifies tocilizumab as an IL-6 receptor antagonist used in severe COVID-19 and lists neutropenia and thrombocytopenia as adverse effects to monitor."
+      },
+      {
+        "text": "Baricitinib, monitor for neutropenia and thrombocytopenia",
+        "isCorrect": false,
+        "rationale": "Wrong: Baricitinib is a JAK inhibitor that can cause cytopenias, but it is not an IL-6 receptor antagonist; it would be correct only if the question asked for a JAK inhibitor."
+      },
+      {
+        "text": "Vilobelimab, monitor for neutropenia and thrombocytopenia",
+        "isCorrect": false,
+        "rationale": "Wrong: Vilobelimab neutralizes C5a and can cause thrombocytopenia, but it is not an IL-6 receptor blocker; it would be correct for complement-targeted therapy."
+      },
+      {
+        "text": "Anakinra, monitor for neutropenia and thrombocytopenia",
+        "isCorrect": false,
+        "rationale": "Wrong: Anakinra blocks IL-1 receptor and can cause transient neutropenia, but it is not an IL-6 receptor antagonist; it would be correct for IL-1 blockade."
+      },
+      {
+        "text": "Dexamethasone, monitor for neutropenia and thrombocytopenia",
+        "isCorrect": false,
+        "rationale": "Wrong: Dexamethasone is a corticosteroid causing hyperglycemia and infection risk rather than neutropenia/thrombocytopenia as primary concerns; it would be correct only if steroid-specific effects were asked."
+      }
+    ]
+  },
+  {
+    "question": "A 70-year-old with chronic liver disease is being considered for Paxlovid (nirmatrelvir/ritonavir). Based on the lecture contraindications, which organ impairment is a key concern when prescribing this regimen?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+    "options": [
+      {
+        "text": "Severe hepatic impairment is a contraindication to nirmatrelvir/ritonavir",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists severe hepatic impairment as a contraindication for nirmatrelvir plus ritonavir."
+      },
+      {
+        "text": "Mild renal impairment is an absolute contraindication to nirmatrelvir/ritonavir",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture specifies severe renal or hepatic impairment as contraindications; mild renal impairment would not necessarily be absolute contraindication."
+      },
+      {
+        "text": "History of asthma with bronchospasm is a contraindication to nirmatrelvir/ritonavir",
+        "isCorrect": false,
+        "rationale": "Wrong: Bronchospasm is a concern with inhaled zanamivir, not nirmatrelvir/ritonavir; it would be correct only for inhaled neuraminidase inhibitors."
+      },
+      {
+        "text": "Prior exposure to live attenuated influenza vaccine is a contraindication",
+        "isCorrect": false,
+        "rationale": "Wrong: Interaction with live attenuated influenza vaccine is noted for neuraminidase inhibitors, not as a contraindication for Paxlovid; it would be correct only for neuraminidase inhibitor timing concerns."
+      },
+      {
+        "text": "Pregnancy is an absolute contraindication to nirmatrelvir/ritonavir",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture highlights pregnancy contraindications for molnupiravir and ribavirin, not specifically for nirmatrelvir/ritonavir; it would be correct only if the lecture had stated pregnancy as contraindication for Paxlovid."
+      }
+    ]
+  },
+  {
+    "question": "A 2-year-old infant born at 32 weeks gestation is due for RSV prophylaxis before the winter season. According to the lecture's CDC guideline summary, which agent is recommended for premature infants at high risk?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
+    "options": [
+      {
+        "text": "Palivizumab immunization for premature infants at high risk",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states palivizumab is recommended for premature infants and newborns at high risk for severe RSV."
+      },
+      {
+        "text": "Nirsevimab immunization for all newborns regardless of risk",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture recommends nirsevimab for all newborns but reserves palivizumab specifically for high-risk premature infants; this option would be correct only for universal newborn prophylaxis."
+      },
+      {
+        "text": "Ribavirin inhalation as routine prophylaxis for premature infants",
+        "isCorrect": false,
+        "rationale": "Wrong: Ribavirin inhalation is used for treatment of severe RSV, not routine prophylaxis; it would be correct only for therapeutic use in severe disease."
+      },
+      {
+        "text": "Remdesivir IV prophylaxis for RSV exposed premature infants",
+        "isCorrect": false,
+        "rationale": "Wrong: Remdesivir is an antiviral for COVID-19 and is not indicated for RSV prophylaxis per the lecture; it would be correct only if remdesivir were approved for RSV."
+      },
+      {
+        "text": "Live attenuated RSV vaccine intranasally for premature infants",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture does not list a live intranasal RSV vaccine for premature infants; this would be correct only if such a vaccine were specified."
+      }
+    ]
+  },
+  {
+    "question": "A patient with influenza B is treated with baloxavir within 48 hours of symptom onset. Which interaction noted in the lecture could reduce baloxavir absorption if taken concurrently?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+    "options": [
+      {
+        "text": "Concurrent calcium containing products like dairy or antacids reducing absorption",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes that Ca2+ in the GI tract (dairy products, antacids, laxatives) can interact with baloxavir and reduce absorption."
+      },
+      {
+        "text": "Concurrent CYP3A4 inhibitors increasing baloxavir metabolism",
+        "isCorrect": false,
+        "rationale": "Wrong: CYP3A4 inhibitors would increase exposure if baloxavir were metabolized by CYP3A4; the lecture mentions P450 3A4 metabolism but the specific interaction described is with calcium-containing products."
+      },
+      {
+        "text": "Concurrent neuraminidase inhibitors causing competitive inhibition",
+        "isCorrect": false,
+        "rationale": "Wrong: Neuraminidase inhibitors act on a different viral target and do not competitively inhibit PA endonuclease; this would be correct only if two drugs targeted the same enzyme."
+      },
+      {
+        "text": "Concurrent ribavirin causing additive hemolytic anemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Ribavirin can cause hemolytic anemia, but the lecture does not describe a specific interaction with baloxavir causing additive anemia; it would be correct only if such an interaction were documented."
+      },
+      {
+        "text": "Concurrent remdesivir causing chain termination synergy",
+        "isCorrect": false,
+        "rationale": "Wrong: Remdesivir causes chain termination in coronaviruses and is not described as synergistic with baloxavir for influenza; this would be correct only if combined antiviral synergy were established."
+      }
+    ]
+  },
+  {
+    "question": "A 45-year-old with severe COVID-19 is hypoxic and receiving systemic corticosteroids. The team considers adding tocilizumab. According to the lecture, in which clinical scenario is tocilizumab indicated?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
+    "options": [
+      {
+        "text": "Hospitalized adults on systemic corticosteroids who require supplemental oxygen",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture indicates tocilizumab is used in hospitalized adults receiving systemic corticosteroids who require supplemental oxygen or more intensive support."
+      },
+      {
+        "text": "Outpatients with mild COVID-19 not requiring oxygen",
+        "isCorrect": false,
+        "rationale": "Wrong: Tocilizumab is reserved for hospitalized patients with significant respiratory compromise, not mild outpatient disease; it would be correct only if outpatient severe inflammation were present."
+      },
+      {
+        "text": "All hospitalized COVID-19 patients regardless of oxygen need",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture specifies use in those requiring supplemental oxygen and on corticosteroids, not universally for all hospitalized patients; it would be correct only if guidelines recommended universal use."
+      },
+      {
+        "text": "Patients with only gastrointestinal COVID-19 symptoms without hypoxia",
+        "isCorrect": false,
+        "rationale": "Wrong: Tocilizumab targets severe respiratory decline and cytokine-mediated lung injury, not isolated GI symptoms; it would be correct only if systemic hyperinflammation were present."
+      },
+      {
+        "text": "Children under 12 with mild respiratory symptoms",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture describes tocilizumab use in adults with severe disease; pediatric mild cases are not an indication and this would be correct only if pediatric severe disease criteria were met."
+      }
+    ]
+  },
+  {
+    "question": "A patient with influenza A (H5N1) exposure is considered for antiviral prophylaxis. Which agent from the lecture is specifically noted as an option for avian influenza prophylaxis or treatment?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
+    "options": [
+      {
+        "text": "Oseltamivir is indicated for avian influenza A (H5N1) prophylaxis or treatment",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture specifically mentions oseltamivir as an option for avian influenza A (H5N1) prophylaxis or treatment."
+      },
+      {
+        "text": "Baloxavir is the preferred agent for H5N1 avian influenza",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture does not single out baloxavir for H5N1; oseltamivir is the agent specifically noted for avian influenza in the material."
+      },
+      {
+        "text": "Ribavirin inhalation is first line for avian influenza prophylaxis",
+        "isCorrect": false,
+        "rationale": "Wrong: Ribavirin is discussed for RSV, not avian influenza; it would be correct only if ribavirin were indicated for influenza in the lecture."
+      },
+      {
+        "text": "Peramivir oral dosing is recommended for H5N1 exposure",
+        "isCorrect": false,
+        "rationale": "Wrong: Peramivir is an IV neuraminidase inhibitor; the lecture highlights oseltamivir for H5N1 rather than peramivir oral dosing."
+      },
+      {
+        "text": "Molnupiravir is the antiviral of choice for avian influenza",
+        "isCorrect": false,
+        "rationale": "Wrong: Molnupiravir is described for COVID-19 mutagenesis, not avian influenza; it would be correct only if the lecture had indicated its use for influenza."
+      }
+    ]
+  },
+  {
+    "question": "A patient with severe COVID-19 is treated with dexamethasone. Which of the following adverse effects listed in the lecture should the team monitor during corticosteroid therapy?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+    "options": [
+      {
+        "text": "Hyperglycemia and increased risk of secondary infections",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists hyperglycemia and secondary infections among dexamethasone adverse effects in severe COVID-19."
+      },
+      {
+        "text": "Bronchoconstriction and airway hyperreactivity",
+        "isCorrect": false,
+        "rationale": "Wrong: Bronchoconstriction is associated with inhaled zanamivir, not systemic corticosteroids; it would be correct only for inhaled agents causing airway effects."
+      },
+      {
+        "text": "Dose dependent hemolytic anemia and hyperuricemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemolytic anemia and hyperuricemia are ribavirin adverse effects; this would be correct for ribavirin exposure."
       },
       {
         "text": "Metallic taste and dysgeusia after oral dosing",
         "isCorrect": false,
-        "rationale": "Dysgeusia is reported with nirmatrelvir/ritonavir, not inhaled neuraminidase inhibitors; it would be correct if the drug caused taste disturbance."
+        "rationale": "Wrong: Dysgeusia is noted with nirmatrelvir/ritonavir; it would be correct for that oral antiviral rather than dexamethasone."
+      },
+      {
+        "text": "Teratogenicity and embryotoxicity requiring contraception",
+        "isCorrect": false,
+        "rationale": "Wrong: Teratogenicity concerns are emphasized for ribavirin and molnupiravir, not dexamethasone; it would be correct only for those agents."
       }
     ]
   },
   {
-    "question": "A neonate at high risk for severe RSV is to receive passive immunization. Which agent from the lecture is a monoclonal antibody targeting the RSV fusion protein used for prophylaxis?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
-    "options": [
-      {
-        "text": "Palivizumab given intravenously for high risk infants",
-        "isCorrect": true,
-        "rationale": "Palivizumab is an IV monoclonal antibody against the RSV F protein used for prophylaxis in high-risk infants, per the lecture."
-      },
-      {
-        "text": "Ribavirin inhaled as a broad antiviral aerosol therapy",
-        "isCorrect": false,
-        "rationale": "Ribavirin is an inhaled antiviral used for treatment in severe RSV, not primarily for prophylactic passive immunization."
-      },
-      {
-        "text": "Nirsevimab given intravenously as a fusion protein antibody",
-        "isCorrect": false,
-        "rationale": "Nirsevimab is also an RSV monoclonal used for immunization but the lecture specifies palivizumab for high-risk infants; this option would be correct if the protocol favored nirsevimab."
-      },
-      {
-        "text": "Molnupiravir oral mutagenic antiviral for RSV prophylaxis",
-        "isCorrect": false,
-        "rationale": "Molnupiravir is an oral COVID-19 antiviral causing mutagenesis, not an RSV prophylactic monoclonal antibody."
-      },
-      {
-        "text": "Dexamethasone systemic corticosteroid for RSV prevention",
-        "isCorrect": false,
-        "rationale": "Dexamethasone is an anti-inflammatory used in severe COVID-19, not an RSV prophylactic monoclonal antibody."
-      }
-    ]
-  },
-  {
-    "question": "A patient with severe COVID-19 on mechanical ventilation is randomized to receive a monoclonal antibody that neutralizes complement C5a. According to the lecture, which agent is this and what clinical benefit was noted?",
+    "question": "A 3rd-order vignette: A 62-year-old man with COPD and new influenza is admitted. He cannot tolerate oral medications and has progressive hypoxia. Which antiviral from the lecture is an appropriate intravenous neuraminidase inhibitor option for this patient?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
     "options": [
       {
-        "text": "Vilobelimab; reduces mortality in ventilated patients",
+        "text": "Peramivir intravenous neuraminidase inhibitor for hospitalized patients",
         "isCorrect": true,
-        "rationale": "Vilobelimab binds soluble C5a and the lecture reports reduced mortality in ventilated patients when initiated early after mechanical ventilation."
+        "rationale": "Correct: The lecture lists peramivir as an IV neuraminidase inhibitor option for influenza, suitable when oral therapy is not feasible."
       },
       {
-        "text": "Tocilizumab; reduces mortality by blocking IL six receptor",
+        "text": "Oseltamivir oral neuraminidase inhibitor suitable for IV replacement",
         "isCorrect": false,
-        "rationale": "Tocilizumab blocks IL-6 receptor and is used for rapid respiratory decline, but the lecture attributes reduced mortality in ventilated patients specifically to vilobelimab; this would be correct if trials showed similar mortality benefit for tocilizumab in that subgroup."
+        "rationale": "Wrong: Oseltamivir is oral and not an IV option; it would be correct only if an IV formulation were available or the patient could take oral meds."
       },
       {
-        "text": "Anakinra; prevents complement activation by blocking IL one",
+        "text": "Zanamivir inhaled neuraminidase inhibitor ideal for COPD exacerbation",
         "isCorrect": false,
-        "rationale": "Anakinra blocks IL-1 receptor and does not neutralize C5a; it would be correct only if it targeted complement C5a."
+        "rationale": "Wrong: Inhaled zanamivir can cause bronchoconstriction and is cautioned in COPD; it would be correct only if airway reactivity were not a concern."
       },
       {
-        "text": "Baricitinib; neutralizes C5a through JAK inhibition",
+        "text": "Baloxavir oral PA endonuclease inhibitor for immediate IV use",
         "isCorrect": false,
-        "rationale": "Baricitinib inhibits JAK-STAT signaling and may affect cytokines but does not neutralize C5a; it would be correct if baricitinib directly bound C5a."
+        "rationale": "Wrong: Baloxavir is oral and not an IV neuraminidase inhibitor; it would be correct only if oral administration were acceptable."
       },
       {
-        "text": "Dexamethasone; neutralizes complement to reduce coagulopathy",
+        "text": "Ribavirin inhaled nucleoside analog for influenza A treatment",
         "isCorrect": false,
-        "rationale": "Dexamethasone reduces global cytokine production but does not neutralize C5a; it would be correct only if it directly targeted complement."
+        "rationale": "Wrong: Ribavirin is used for RSV and is not the recommended IV neuraminidase inhibitor for influenza; it would be correct only if ribavirin were indicated for influenza in the lecture."
       }
     ]
   },
   {
-    "question": "A 70-year-old unvaccinated patient with influenza is at high risk for complications. According to the lecture guidelines, which antiviral class should be considered for treatment or prophylaxis in high-risk patients?",
+    "question": "A patient with severe COVID-19 is started on baricitinib. Which laboratory abnormality listed in the lecture should be monitored during therapy?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+    "options": [
+      {
+        "text": "Neutropenia and anemia requiring hematologic monitoring",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists neutropenia and anemia among baricitinib adverse effects, so hematologic monitoring is indicated."
+      },
+      {
+        "text": "Marked hyperglycemia requiring insulin therapy",
+        "isCorrect": false,
+        "rationale": "Wrong: Hyperglycemia is a corticosteroid adverse effect (dexamethasone), not a primary baricitinib effect; it would be correct for steroid therapy."
+      },
+      {
+        "text": "Bronchospasm and acute airway obstruction",
+        "isCorrect": false,
+        "rationale": "Wrong: Bronchospasm is associated with inhaled zanamivir, not baricitinib; it would be correct only for inhaled agents."
+      },
+      {
+        "text": "Dose dependent hemolytic anemia and hyperuricemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemolytic anemia and hyperuricemia are ribavirin adverse effects; this would be correct for ribavirin exposure."
+      },
+      {
+        "text": "Teratogenicity and embryotoxicity in animal studies",
+        "isCorrect": false,
+        "rationale": "Wrong: Teratogenicity concerns are emphasized for ribavirin and molnupiravir, not baricitinib per the lecture; it would be correct only for those agents."
+      }
+    ]
+  },
+  {
+    "question": "A 3rd-order vignette: A 28-year-old woman of childbearing potential with mild COVID-19 requests an oral antiviral. She is breastfeeding and plans pregnancy soon. Based on the lecture contraindications, which oral antiviral should be avoided due to potential effects on bone and cartilage and pregnancy/lactation concerns?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the current GDMT for viral respiratory infections (Competencies III.4; OMED620.6)",
-    "options": [
-      {
-        "text": "Neuraminidase inhibitors such as oral or inhaled agents",
-        "isCorrect": true,
-        "rationale": "The lecture's IDSA guidelines recommend neuraminidase inhibitors (oseltamivir, zanamivir, peramivir) for high-risk influenza patients for treatment or prophylaxis."
-      },
-      {
-        "text": "Adamantane M2 blockers for routine influenza prophylaxis",
-        "isCorrect": false,
-        "rationale": "Adamantanes are no longer used due to resistance per the lecture; they would be correct only if resistance were not present."
-      },
-      {
-        "text": "Baloxavir as the only recommended agent for all high risk patients",
-        "isCorrect": false,
-        "rationale": "Baloxavir is an option within 48 hours but guidelines list neuraminidase inhibitors as standard; this would be correct only if guidelines prioritized baloxavir exclusively."
-      },
-      {
-        "text": "Ribavirin inhalation for routine influenza treatment",
-        "isCorrect": false,
-        "rationale": "Ribavirin is used for RSV, not routine influenza treatment; it would be correct only if the virus were RSV."
-      },
-      {
-        "text": "Palivizumab prophylaxis for elderly influenza prevention",
-        "isCorrect": false,
-        "rationale": "Palivizumab is an RSV monoclonal for infants, not influenza prophylaxis in the elderly; it would be correct only if targeting RSV."
-      }
-    ]
-  },
-  {
-    "question": "A patient with COVID-19 has severe hepatic impairment. Which antiviral from the lecture is contraindicated in severe hepatic or renal impairment and requires caution?",
-    "difficulty_order": "3rd",
     "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Nirmatrelvir plus ritonavir is contraindicated in severe impairment",
+        "text": "Molnupiravir should be avoided because of potential effects on bone and cartilage and pregnancy",
         "isCorrect": true,
-        "rationale": "The lecture lists severe renal or hepatic impairment as a contraindication for nirmatrelvir/ritonavir (Paxlovid)."
+        "rationale": "Correct: The lecture states molnupiravir has potential adverse effects on bone and cartilage growth and is contraindicated in patients under 18, pregnancy, and lactation."
       },
       {
-        "text": "Remdesivir is contraindicated in severe hepatic or renal impairment",
+        "text": "Nirmatrelvir plus ritonavir should be avoided for pregnancy and lactation",
         "isCorrect": false,
-        "rationale": "Remdesivir has hepatotoxicity risks but the lecture specifically cites nirmatrelvir/ritonavir contraindication for severe impairment; remdesivir would be correct only if guidelines listed absolute contraindication."
+        "rationale": "Wrong: The lecture highlights molnupiravir for pregnancy/lactation contraindication; nirmatrelvir/ritonavir contraindications focus on severe renal/hepatic impairment rather than explicit pregnancy/lactation prohibition in the lecture."
       },
       {
-        "text": "Molnupiravir is contraindicated in severe hepatic or renal impairment",
+        "text": "Remdesivir oral therapy should be avoided in breastfeeding",
         "isCorrect": false,
-        "rationale": "Molnupiravir is contraindicated in pregnancy and young patients per the lecture, not specifically severe hepatic or renal impairment; it would be correct only if such contraindication existed."
+        "rationale": "Wrong: Remdesivir is IV and the lecture does not list pregnancy/lactation as the primary contraindication described for molnupiravir; this would be correct only if remdesivir were contraindicated in lactation per the lecture."
       },
       {
-        "text": "Dexamethasone is contraindicated in severe hepatic or renal impairment",
+        "text": "Oseltamivir is contraindicated in women planning pregnancy",
         "isCorrect": false,
-        "rationale": "Dexamethasone has metabolic adverse effects but is not listed as contraindicated for severe hepatic or renal impairment in the lecture; it would be correct only if steroid use were specifically contraindicated."
+        "rationale": "Wrong: The lecture does not state oseltamivir is contraindicated for pregnancy planning; this would be correct only if the lecture had specified such a contraindication."
       },
       {
-        "text": "Baricitinib is contraindicated in severe hepatic or renal impairment",
+        "text": "Ribavirin inhalation is safe during pregnancy and lactation",
         "isCorrect": false,
-        "rationale": "Baricitinib has hematologic and infection risks but the lecture does not list severe hepatic or renal impairment as an absolute contraindication; it would be correct only if specified in the lecture."
+        "rationale": "Wrong: Ribavirin is teratogenic and embryotoxic and is contraindicated in pregnancy; claiming it is safe contradicts the lecture and would be correct only if evidence supported safety."
       }
     ]
   },
   {
-    "question": "A researcher measures viral RNA after treating influenza-infected cells with a drug that binds the PA endonuclease and blocks viral mRNA transcription. Which drug class from the lecture matches this mechanism?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
-    "options": [
-      {
-        "text": "PA endonuclease inhibitors such as baloxavir marboxil",
-        "isCorrect": true,
-        "rationale": "Baloxavir binds the influenza PA endonuclease, inhibiting viral gene transcription and RNA production, as described in the lecture."
-      },
-      {
-        "text": "Neuraminidase inhibitors that prevent virion release",
-        "isCorrect": false,
-        "rationale": "Neuraminidase inhibitors block virion release, not PA endonuclease-mediated transcription; it would be correct only if the drug targeted neuraminidase."
-      },
-      {
-        "text": "M2 ion channel blockers that inhibit viral uncoating",
-        "isCorrect": false,
-        "rationale": "M2 blockers affect uncoating, not endonuclease activity; it would be correct only if the drug inhibited M2 channels."
-      },
-      {
-        "text": "Nucleoside analogs causing chain termination of RNA",
-        "isCorrect": false,
-        "rationale": "Nucleoside analogs act on polymerase to cause chain termination or mutagenesis, not on PA endonuclease; it would be correct only if the drug were a nucleoside analog."
-      },
-      {
-        "text": "Monoclonal antibodies preventing viral attachment to cells",
-        "isCorrect": false,
-        "rationale": "MAbs block attachment or fusion, not viral transcription; it would be correct only if the drug were an antibody."
-      }
-    ]
-  },
-  {
-    "question": "A child develops neuropsychiatric symptoms after starting an oral antiviral for influenza. Which agent from the lecture is associated with rare neuropsychiatric events, especially in younger patients?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
-    "options": [
-      {
-        "text": "Oseltamivir associated with rare neuropsychiatric events",
-        "isCorrect": true,
-        "rationale": "The lecture notes oseltamivir can cause GI effects and rarely confusion, delirium, or hallucinations in children and adolescents."
-      },
-      {
-        "text": "Zanamivir inhaled causing neuropsychiatric events in children",
-        "isCorrect": false,
-        "rationale": "Zanamivir's adverse effects are respiratory (cough, bronchoconstriction), not neuropsychiatric; it would be correct only if neuro events were reported for zanamivir."
-      },
-      {
-        "text": "Peramivir intravenous causing neuropsychiatric events commonly",
-        "isCorrect": false,
-        "rationale": "Peramivir adverse effects include diarrhea and hypersensitivity, not commonly neuropsychiatric events; it would be correct only if such events were documented."
-      },
-      {
-        "text": "Baloxavir causing neuropsychiatric events in pediatric patients",
-        "isCorrect": false,
-        "rationale": "Baloxavir adverse effects include GI symptoms in children, not neuropsychiatric events per the lecture; it would be correct only if neuro events were reported."
-      },
-      {
-        "text": "Ribavirin inhaled causing neuropsychiatric events in children",
-        "isCorrect": false,
-        "rationale": "Ribavirin adverse effects include hemolytic anemia and teratogenicity, not primarily neuropsychiatric events; it would be correct only if neuro events were linked to ribavirin."
-      }
-    ]
-  },
-  {
-    "question": "A pregnant patient with COVID-19 asks about molnupiravir. Based on the lecture, which contraindication should be discussed?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
-    "options": [
-      {
-        "text": "Avoid use in pregnancy due to potential teratogenic risk",
-        "isCorrect": true,
-        "rationale": "The lecture states molnupiravir has potential adverse effects on bone and cartilage growth and is contraindicated in pregnancy and lactation."
-      },
-      {
-        "text": "Safe in pregnancy with no known teratogenicity",
-        "isCorrect": false,
-        "rationale": "This contradicts the lecture; molnupiravir is contraindicated in pregnancy due to mutagenic/teratogenic concerns and would be correct only if evidence showed safety."
-      },
-      {
-        "text": "Contraindicated only in patients under age eighteen",
-        "isCorrect": false,
-        "rationale": "While molnupiravir should not be used in patients under 18 per growth concerns, the lecture also lists pregnancy as a contraindication; this option omits pregnancy."
-      },
-      {
-        "text": "Recommended as first line therapy during pregnancy",
-        "isCorrect": false,
-        "rationale": "The lecture explicitly contraindicates molnupiravir in pregnancy; it would be correct only if guidelines recommended it."
-      },
-      {
-        "text": "Use with ritonavir to reduce teratogenic risk",
-        "isCorrect": false,
-        "rationale": "Ritonavir boosting is used with nirmatrelvir, not to mitigate molnupiravir teratogenicity; this would be correct only if ritonavir altered teratogenic risk."
-      }
-    ]
-  },
-  {
-    "question": "A patient with RSV bronchiolitis is considered for inhaled antiviral therapy that inhibits viral RNA polymerase and depletes GTP pools. Which agent from the lecture fits this profile?",
+    "question": "A 3rd-order vignette: An ICU patient with COVID-19 on mechanical ventilation is randomized to receive an agent that neutralizes C5a within 48 hours of intubation. The team notes a reduction in mortality in the trial. Which drug from the lecture matches this description and what is its target?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Ribavirin inhaled, a nucleoside analogue affecting RNA polymerase",
+        "text": "Vilobelimab, a monoclonal antibody that neutralizes soluble complement C5a",
         "isCorrect": true,
-        "rationale": "Ribavirin inhibits RNA-dependent RNA polymerase, depletes GTP via IMPDH inhibition, and induces mutagenesis, as described in the lecture for RSV."
+        "rationale": "Correct: The lecture describes vilobelimab as binding soluble C5a to prevent interaction with C5aR and notes reduced mortality in ventilated patients."
       },
       {
-        "text": "Palivizumab intravenous monoclonal antibody against F protein",
+        "text": "Tocilizumab, a monoclonal antibody that neutralizes soluble complement C5a",
         "isCorrect": false,
-        "rationale": "Palivizumab is a prophylactic monoclonal antibody preventing fusion, not an inhaled polymerase inhibitor; it would be correct only if the drug were an antibody."
+        "rationale": "Wrong: Tocilizumab targets the IL-6 receptor, not C5a; it would be correct only if the drug targeted complement C5a."
       },
       {
-        "text": "Molnupiravir oral mutagenic antiviral used for RSV treatment",
+        "text": "Anakinra, a monoclonal antibody that neutralizes soluble complement C5a",
         "isCorrect": false,
-        "rationale": "Molnupiravir is an oral COVID-19 antiviral causing mutagenesis, not the inhaled RSV polymerase inhibitor ribavirin; it would be correct only if used for RSV."
+        "rationale": "Wrong: Anakinra is an IL-1 receptor antagonist and does not neutralize C5a; it would be correct only for IL-1 blockade contexts."
       },
       {
-        "text": "Neuraminidase inhibitor inhaled to prevent RSV release",
+        "text": "Baricitinib, a small molecule that neutralizes soluble complement C5a",
         "isCorrect": false,
-        "rationale": "Neuraminidase inhibitors target influenza neuraminidase, not RSV polymerase; it would be correct only if RSV used neuraminidase for release."
+        "rationale": "Wrong: Baricitinib is a JAK inhibitor and does not neutralize C5a; this would be correct only if baricitinib had complement-neutralizing activity."
       },
       {
-        "text": "Dexamethasone systemic steroid to inhibit viral replication",
+        "text": "Dexamethasone, a corticosteroid that neutralizes soluble complement C5a",
         "isCorrect": false,
-        "rationale": "Dexamethasone is an anti-inflammatory corticosteroid, not an antiviral polymerase inhibitor; it would be correct only if steroids inhibited replication directly."
+        "rationale": "Wrong: Dexamethasone reduces cytokine production broadly and does not neutralize C5a; it would be correct only if corticosteroids directly neutralized complement components."
       }
     ]
   },
   {
-    "question": "A clinician plans COVID-19 therapy for a high-risk outpatient within 5 days of symptom onset. According to the lecture NIH/NIAID guidance, which oral antiviral is preferred for patients age 12 and older?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the current GDMT for viral respiratory infections (Competencies III.4; OMED620.6)",
-    "options": [
-      {
-        "text": "Ritonavir boosted nirmatrelvir (Paxlovid) for eligible patients",
-        "isCorrect": true,
-        "rationale": "The lecture states that for high-risk patients age 12 and older, ritonavir-boosted nirmatrelvir (Paxlovid) is recommended by NIH/NIAID."
-      },
-      {
-        "text": "Remdesivir intravenous as the first outpatient oral option",
-        "isCorrect": false,
-        "rationale": "Remdesivir is IV and used in certain age/weight groups; it is not the preferred oral outpatient option for age 12+ per the lecture."
-      },
-      {
-        "text": "Molnupiravir oral as the preferred first line for all patients",
-        "isCorrect": false,
-        "rationale": "Molnupiravir is an alternative when Paxlovid or remdesivir are not usable, not the preferred first-line agent for eligible patients."
-      },
-      {
-        "text": "Dexamethasone oral for early outpatient antiviral therapy",
-        "isCorrect": false,
-        "rationale": "Dexamethasone is used in severe/critical hospitalized COVID-19, not as early outpatient antiviral therapy; it would be correct only if treating inflammation in severe disease."
-      },
-      {
-        "text": "Baricitinib oral as the primary outpatient antiviral therapy",
-        "isCorrect": false,
-        "rationale": "Baricitinib is an immunomodulator for hospitalized patients, not the primary outpatient antiviral; it would be correct only if used as outpatient antiviral per guidelines."
-      }
-    ]
-  },
-  {
-    "question": "A patient receiving remdesivir develops bradycardia and elevated liver enzymes. Which mechanism described in the lecture explains remdesivir's antiviral action?",
-    "difficulty_order": "2nd",
+    "question": "Which antiviral mechanism described in the lecture leads to lethal mutagenesis by incorporation of a nucleoside analog that causes base-pair mismatches during viral RNA replication?",
+    "difficulty_order": "1st",
     "cited_learning_objective": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Adenosine analog incorporated into RNA causing chain termination",
+        "text": "Molnupiravir causing base pair mismatches and lethal mutagenesis",
         "isCorrect": true,
-        "rationale": "Remdesivir is converted to an ATP analog incorporated by RdRp, causing premature chain termination, as noted in the lecture."
+        "rationale": "Correct: The lecture explains molnupiravir is converted to a cytidine triphosphate analog incorporated into viral RNA causing base-pair mismatches and lethal mutagenesis."
       },
       {
-        "text": "CTP analog causing base pair mismatches and mutagenesis",
+        "text": "Remdesivir causing premature chain termination after incorporation",
         "isCorrect": false,
-        "rationale": "CTP analog causing mutagenesis describes molnupiravir, not remdesivir; it would be correct only for molnupiravir."
+        "rationale": "Wrong: Remdesivir causes chain termination rather than base-pair mismatches; it would be correct only for chain termination mechanisms."
       },
       {
-        "text": "Protease inhibition preventing polyprotein cleavage",
+        "text": "Ribavirin causing neuraminidase inhibition and virion release block",
         "isCorrect": false,
-        "rationale": "Protease inhibition is the mechanism of nirmatrelvir, not remdesivir; it would be correct only if the drug targeted MPRO."
+        "rationale": "Wrong: Ribavirin is a nucleoside analog affecting RdRp and IMPDH, not neuraminidase inhibition; this would be correct only for neuraminidase inhibitors."
       },
       {
-        "text": "Neuraminidase inhibition preventing virion release",
+        "text": "Baloxavir inhibiting viral protease cleavage of polyproteins",
         "isCorrect": false,
-        "rationale": "Neuraminidase inhibition is an influenza mechanism, not remdesivir's; it would be correct only for neuraminidase inhibitors."
+        "rationale": "Wrong: Baloxavir inhibits PA endonuclease, not protease cleavage; it would be correct only for protease inhibitors."
       },
       {
-        "text": "Endonuclease inhibition blocking viral mRNA transcription",
+        "text": "Oseltamivir causing chain termination of viral RNA",
         "isCorrect": false,
-        "rationale": "Endonuclease inhibition describes baloxavir, not remdesivir; it would be correct only if the drug targeted PA endonuclease."
+        "rationale": "Wrong: Oseltamivir inhibits neuraminidase and does not cause chain termination; it would be correct only for nucleoside analog chain terminators."
       }
     ]
   },
   {
-    "question": "A hospitalized COVID-19 patient on systemic corticosteroids is deteriorating and requires supplemental oxygen. Which monoclonal antibody targeting IL-6 receptor does the lecture recommend adding in this scenario?",
+    "question": "A 3rd-order vignette: A hospitalized adult with COVID-19 has rapidly worsening respiratory failure despite corticosteroids. The team considers adding an IL-1 receptor antagonist. Based on the lecture, which agent fits this role and what is a common adverse effect?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
+    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Tocilizumab intravenous for patients on corticosteroids needing oxygen",
+        "text": "Anakinra, which can cause transient neutropenia and injection site reactions",
         "isCorrect": true,
-        "rationale": "The lecture indicates tocilizumab (IL-6 receptor antagonist) is used in hospitalized adults receiving systemic corticosteroids who require supplemental oxygen or more intensive support."
+        "rationale": "Correct: The lecture describes anakinra as an IL-1 receptor antagonist with adverse effects including injection site reactions and transient neutropenia."
       },
       {
-        "text": "Anakinra intravenous for patients on corticosteroids needing oxygen",
+        "text": "Tocilizumab, which commonly causes injection site reactions and neutropenia",
         "isCorrect": false,
-        "rationale": "Anakinra blocks IL-1 and has limited benefit; the lecture recommends tocilizumab specifically in patients on corticosteroids requiring oxygen."
+        "rationale": "Wrong: Tocilizumab targets IL-6 receptor and can cause neutropenia, but it is not an IL-1 receptor antagonist; it would be correct only for IL-6 blockade."
       },
       {
-        "text": "Vilobelimab intravenous for all patients on corticosteroids needing oxygen",
+        "text": "Vilobelimab, which commonly causes injection site reactions and neutropenia",
         "isCorrect": false,
-        "rationale": "Vilobelimab targets C5a and is used in ventilated patients; it is not the standard add-on for patients simply requiring supplemental oxygen on corticosteroids."
+        "rationale": "Wrong: Vilobelimab neutralizes C5a and adverse effects differ (thrombosis, aminotransferase elevation); it would be correct only if those were the primary effects."
       },
       {
-        "text": "Baricitinib oral instead of tocilizumab for oxygen requirement",
+        "text": "Baricitinib, which commonly causes injection site reactions and neutropenia",
         "isCorrect": false,
-        "rationale": "Baricitinib may be used in hospitalized patients but the lecture specifies tocilizumab for those on systemic corticosteroids requiring oxygen; baricitinib would be correct if tocilizumab were contraindicated."
+        "rationale": "Wrong: Baricitinib is an oral JAK inhibitor and does not cause injection site reactions; it would be correct only if the drug were injectable."
       },
       {
-        "text": "Dexamethasone intravenous added to tocilizumab for oxygen requirement",
+        "text": "Dexamethasone, which commonly causes injection site reactions and neutropenia",
         "isCorrect": false,
-        "rationale": "Dexamethasone is already part of care for severe disease; the question asks which monoclonal antibody to add, not to add more steroid."
+        "rationale": "Wrong: Dexamethasone is systemic corticosteroid with different adverse effects (hyperglycemia, infection risk) and is not an IL-1 antagonist; it would be correct only if steroid adverse effects matched."
       }
     ]
   },
   {
-    "question": "A patient with influenza exposure within 48 hours asks about a single-dose oral agent that inhibits influenza PA endonuclease. Which drug from the lecture fits this description?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
+    "question": "Which drug class in the lecture is identified by the naming convention that small-molecule antivirals often contain 'vir' in their name?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the pharmacological effects of each drug class (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Baloxavir marboxil given orally for treatment or prophylaxis",
+        "text": "Small molecule antivirals commonly include 'vir' in their names",
         "isCorrect": true,
-        "rationale": "Baloxavir binds the influenza PA endonuclease and can be used for treatment within 48 hours and prophylaxis within 48 hours of exposure, per the lecture."
+        "rationale": "Correct: The lecture notes that drug names for small-molecule antivirals often end in or contain 'vir' (e.g., zanamivir, ribavirin)."
       },
       {
-        "text": "Oseltamivir oral neuraminidase inhibitor for prophylaxis",
+        "text": "Monoclonal antibodies targeting viruses always include 'vir' in their names",
         "isCorrect": false,
-        "rationale": "Oseltamivir is a neuraminidase inhibitor used for treatment and prophylaxis but the stem specifies a PA endonuclease inhibitor, which is baloxavir."
+        "rationale": "Wrong: Monoclonal antibodies targeting viruses typically include 'mab' and may contain 'vi' but not necessarily 'vir'; this would be correct only if naming conventions were different."
       },
       {
-        "text": "Peramivir intravenous single dose for outpatient prophylaxis",
+        "text": "JAK inhibitors always include 'mab' in their names",
         "isCorrect": false,
-        "rationale": "Peramivir is IV neuraminidase inhibitor, not an oral PA endonuclease inhibitor; it would be correct only if the drug were IV neuraminidase inhibitor."
+        "rationale": "Wrong: JAK inhibitors end in 'ib' or 'tinib' per the lecture, not 'mab'; this would be correct only if JAK inhibitors were monoclonal antibodies."
       },
       {
-        "text": "Rimantadine oral M2 blocker for prophylaxis within 48 hours",
+        "text": "Corticosteroids are named with 'vir' suffix in respiratory antivirals",
         "isCorrect": false,
-        "rationale": "Adamantanes like rimantadine are no longer used due to resistance and do not target PA endonuclease; it would be correct only if resistance were absent and the mechanism matched."
+        "rationale": "Wrong: Corticosteroids like dexamethasone do not follow 'vir' naming; this would be correct only if steroid nomenclature matched antiviral small molecules."
       },
       {
-        "text": "Zanamivir inhaled for prophylaxis by PA endonuclease inhibition",
+        "text": "Protease inhibitors are named with 'mab' suffix in the lecture",
         "isCorrect": false,
-        "rationale": "Zanamivir is an inhaled neuraminidase inhibitor, not a PA endonuclease inhibitor; it would be correct only if it inhibited PA endonuclease."
+        "rationale": "Wrong: Protease inhibitors are small molecules and do not use 'mab' suffix; this would be correct only if protease inhibitors were monoclonal antibodies."
       }
     ]
   },
   {
-    "question": "A clinician is concerned about drug interactions when prescribing nirmatrelvir/ritonavir. Which interaction mechanism from the lecture explains why ritonavir is coadministered?",
+    "question": "A 3rd-order vignette: A patient with influenza treated with oseltamivir develops confusion and hallucinations. According to the lecture, which population is most at risk for these neuropsychiatric events with this drug?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+    "options": [
+      {
+        "text": "Children and adolescents are at higher risk for neuropsychiatric events",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes rare neuro events like confusion, delirium, and hallucinations mostly in children or adolescents taking oseltamivir."
+      },
+      {
+        "text": "Elderly patients over age 65 are most at risk for these events",
+        "isCorrect": false,
+        "rationale": "Wrong: While elderly may have adverse effects, the lecture specifically highlights children and adolescents for neuropsychiatric events with oseltamivir; it would be correct only if elderly were emphasized."
+      },
+      {
+        "text": "Patients with COPD are uniquely predisposed to hallucinations on oseltamivir",
+        "isCorrect": false,
+        "rationale": "Wrong: COPD is a risk for influenza complications but not specifically linked to oseltamivir neuropsychiatric events in the lecture; it would be correct only if COPD were implicated."
+      },
+      {
+        "text": "Pregnant women are at highest risk for oseltamivir induced hallucinations",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture does not single out pregnancy for neuropsychiatric events with oseltamivir; this would be correct only if pregnancy were identified as a risk factor."
+      },
+      {
+        "text": "Patients on concurrent corticosteroids are most likely to hallucinate on oseltamivir",
+        "isCorrect": false,
+        "rationale": "Wrong: Corticosteroids have neuropsychiatric side effects but the lecture attributes oseltamivir hallucinations mainly to pediatric patients; it would be correct only if combined steroid effects were documented."
+      }
+    ]
+  },
+  {
+    "question": "Which antiviral listed in the lecture is administered intravenously and is associated with bradycardia and hepatotoxicity as adverse effects?",
     "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+    "options": [
+      {
+        "text": "Remdesivir IV is associated with bradycardia and hepatotoxicity",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists remdesivir (IV) adverse effects including bradycardia, hypotension, and hepatotoxicity."
+      },
+      {
+        "text": "Peramivir IV is associated with bradycardia and hepatotoxicity",
+        "isCorrect": false,
+        "rationale": "Wrong: Peramivir adverse effects include diarrhea and hypersensitivity reactions per the lecture; bradycardia and hepatotoxicity are not emphasized for peramivir."
+      },
+      {
+        "text": "Zanamivir IV is associated with bradycardia and hepatotoxicity",
+        "isCorrect": false,
+        "rationale": "Wrong: Zanamivir adverse effects include cough and bronchospasm with inhaled use; bradycardia and hepatotoxicity are not the primary concerns listed for zanamivir."
+      },
+      {
+        "text": "Ribavirin IV is associated with bradycardia and hepatotoxicity",
+        "isCorrect": false,
+        "rationale": "Wrong: Ribavirin adverse effects include hemolytic anemia and teratogenicity; bradycardia and hepatotoxicity are not the main effects described in the lecture."
+      },
+      {
+        "text": "Molnupiravir IV is associated with bradycardia and hepatotoxicity",
+        "isCorrect": false,
+        "rationale": "Wrong: Molnupiravir is oral and adverse effects listed include hypersensitivity and dizziness; bradycardia and hepatotoxicity are not emphasized for molnupiravir."
+      }
+    ]
+  },
+  {
+    "question": "A 3rd-order vignette: A patient with severe RSV infection is pregnant and requires therapy. Based on the lecture's safety notes, which antiviral is contraindicated due to teratogenicity and embryotoxicity in animal studies?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+    "options": [
+      {
+        "text": "Ribavirin is contraindicated because it is teratogenic and embryotoxic",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explicitly states ribavirin is teratogenic and embryotoxic in animals and patients exposed should avoid conception for at least six months."
+      },
+      {
+        "text": "Palivizumab is contraindicated because it is teratogenic in animals",
+        "isCorrect": false,
+        "rationale": "Wrong: Palivizumab is a monoclonal antibody used for prophylaxis and the lecture does not list teratogenicity for it; this would be correct only if palivizumab had teratogenic data."
+      },
+      {
+        "text": "Nirsevimab is contraindicated because it causes embryotoxicity",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture does not describe nirsevimab as teratogenic; this would be correct only if such embryotoxicity were documented."
+      },
+      {
+        "text": "Remdesivir is contraindicated because it causes teratogenicity",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture does not list remdesivir as teratogenic in the same way as ribavirin; it would be correct only if remdesivir had similar animal teratogenic findings."
+      },
+      {
+        "text": "Molnupiravir is safe in pregnancy and recommended",
+        "isCorrect": false,
+        "rationale": "Wrong: Molnupiravir is contraindicated in pregnancy per the lecture due to mutagenesis concerns; claiming it is safe contradicts the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which agent from the lecture is described as a monoclonal antibody that prevents RSV fusion protein mediated attachment to host cells?",
+    "difficulty_order": "1st",
     "cited_learning_objective": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Ritonavir inhibits CYP3A4 to boost nirmatrelvir levels",
+        "text": "Palivizumab, a monoclonal antibody against RSV F protein preventing attachment",
         "isCorrect": true,
-        "rationale": "The lecture states ritonavir inhibits CYP3A4, reducing nirmatrelvir metabolism and thereby boosting its plasma levels."
+        "rationale": "Correct: The lecture states palivizumab is a monoclonal antibody against the RSV F protein that prevents attachment/fusion to host cells."
       },
       {
-        "text": "Ritonavir directly inhibits the viral main protease",
+        "text": "Ribavirin, a nucleoside analog preventing RSV attachment",
         "isCorrect": false,
-        "rationale": "Ritonavir's role here is pharmacokinetic boosting via CYP3A4 inhibition, not direct MPRO inhibition; it would be correct only if ritonavir had direct antiviral MPRO activity."
+        "rationale": "Wrong: Ribavirin is a nucleoside analog affecting RdRp and does not prevent viral attachment; it would be correct only if ribavirin blocked fusion."
       },
       {
-        "text": "Ritonavir induces CYP3A4 to increase nirmatrelvir clearance",
+        "text": "Nirmatrelvir, a protease inhibitor preventing RSV attachment",
         "isCorrect": false,
-        "rationale": "Ritonavir is a CYP3A4 inhibitor, not an inducer; this would be correct only if ritonavir induced CYP3A4."
+        "rationale": "Wrong: Nirmatrelvir inhibits SARS-CoV-2 main protease and is not an RSV F protein monoclonal antibody; it would be correct only if it targeted RSV attachment."
       },
       {
-        "text": "Ritonavir blocks viral entry by inhibiting ACE2",
+        "text": "Molnupiravir, a mutagenic nucleoside analog preventing RSV attachment",
         "isCorrect": false,
-        "rationale": "Ritonavir does not block viral entry or ACE2; it is used as a pharmacokinetic booster, not an entry inhibitor."
+        "rationale": "Wrong: Molnupiravir causes mutagenesis in SARS-CoV-2 and does not prevent RSV attachment; it would be correct only if it were an anti-F protein antibody."
       },
       {
-        "text": "Ritonavir neutralizes complement to reduce inflammation",
+        "text": "Baloxavir, a PA endonuclease inhibitor preventing RSV attachment",
         "isCorrect": false,
-        "rationale": "Ritonavir has no role in complement neutralization; this would be correct only if ritonavir targeted complement pathways."
+        "rationale": "Wrong: Baloxavir inhibits influenza PA endonuclease and does not prevent RSV attachment; it would be correct only if baloxavir targeted RSV fusion."
       }
     ]
   },
   {
-    "question": "A patient with RSV exposure is offered a long-acting monoclonal antibody that prevents disassembly of the prefusion conformation needed for fusion. Which agent from the lecture is this?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
-    "options": [
-      {
-        "text": "Nirsevimab intravenous monoclonal antibody for RSV prevention",
-        "isCorrect": true,
-        "rationale": "Nirsevimab prevents disassembly of the RSV prefusion conformation required for fusion and is used for immunization, per the lecture."
-      },
-      {
-        "text": "Palivizumab intravenous monoclonal antibody preventing attachment",
-        "isCorrect": false,
-        "rationale": "Palivizumab prevents RSV fusion by targeting F protein but the lecture distinguishes nirsevimab's mechanism of preventing prefusion disassembly; this would be correct if palivizumab had the same prefusion mechanism."
-      },
-      {
-        "text": "Ribavirin inhaled antiviral preventing prefusion disassembly",
-        "isCorrect": false,
-        "rationale": "Ribavirin inhibits polymerase and causes mutagenesis, not prefusion disassembly prevention; it would be correct only if ribavirin targeted fusion."
-      },
-      {
-        "text": "Molnupiravir oral antiviral preventing RSV fusion",
-        "isCorrect": false,
-        "rationale": "Molnupiravir causes mutagenesis in SARS-CoV-2 and is not an RSV fusion inhibitor; it would be correct only if it targeted RSV fusion."
-      },
-      {
-        "text": "Dexamethasone systemic steroid preventing viral fusion",
-        "isCorrect": false,
-        "rationale": "Dexamethasone reduces inflammation but does not prevent viral fusion; it would be correct only if steroids blocked fusion."
-      }
-    ]
-  },
-  {
-    "question": "A patient with severe COVID-19 is started on baricitinib. Which adverse effect listed in the lecture should the clinician monitor for?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
-    "options": [
-      {
-        "text": "Increased risk of infection including pneumonia",
-        "isCorrect": true,
-        "rationale": "The lecture lists increased infection risk, including pneumonia, as a key adverse effect of baricitinib due to immunosuppression."
-      },
-      {
-        "text": "Dose dependent hemolytic anemia within weeks of therapy",
-        "isCorrect": false,
-        "rationale": "Hemolytic anemia is associated with ribavirin, not baricitinib; it would be correct only if baricitinib caused hemolysis."
-      },
-      {
-        "text": "Bronchoconstriction and cough after inhalation",
-        "isCorrect": false,
-        "rationale": "Bronchoconstriction is linked to inhaled zanamivir, not baricitinib; it would be correct only if baricitinib were inhaled and caused airway reactivity."
-      },
-      {
-        "text": "Teratogenicity requiring contraception for six months",
-        "isCorrect": false,
-        "rationale": "Teratogenicity and prolonged contraception are cautions for ribavirin or molnupiravir, not baricitinib per the lecture; it would be correct only if baricitinib were teratogenic."
-      },
-      {
-        "text": "Metallic taste and dysgeusia after oral dosing",
-        "isCorrect": false,
-        "rationale": "Dysgeusia is reported with nirmatrelvir/ritonavir, not baricitinib; it would be correct only if baricitinib caused taste disturbance."
-      }
-    ]
-  },
-  {
-    "question": "A patient with influenza is given peramivir intravenously and develops a severe skin reaction consistent with Stevens-Johnson syndrome. Which class does peramivir belong to according to the lecture?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
-    "options": [
-      {
-        "text": "Peramivir is an intravenous neuraminidase inhibitor",
-        "isCorrect": true,
-        "rationale": "Peramivir is an IV neuraminidase inhibitor and the lecture notes serious skin or hypersensitivity reactions as possible adverse effects."
-      },
-      {
-        "text": "Peramivir is an oral PA endonuclease inhibitor",
-        "isCorrect": false,
-        "rationale": "PA endonuclease inhibitors like baloxavir are oral and act on transcription, not peramivir; this would be correct only if peramivir targeted PA endonuclease."
-      },
-      {
-        "text": "Peramivir is an M2 ion channel blocker formerly used",
-        "isCorrect": false,
-        "rationale": "Adamantanes are M2 blockers; peramivir is not an M2 blocker and would be that only if it targeted uncoating."
-      },
-      {
-        "text": "Peramivir is an inhaled neuraminidase inhibitor",
-        "isCorrect": false,
-        "rationale": "Zanamivir is the inhaled neuraminidase inhibitor; peramivir is IV, not inhaled, so this would be correct only if peramivir were administered by inhalation."
-      },
-      {
-        "text": "Peramivir is a monoclonal antibody against influenza hemagglutinin",
-        "isCorrect": false,
-        "rationale": "Peramivir is a small-molecule neuraminidase inhibitor, not a monoclonal antibody; it would be correct only if it were an antibody."
-      }
-    ]
-  },
-  {
-    "question": "A patient with severe RSV infection is a woman of childbearing potential. Which lecture warning about ribavirin should be emphasized during counseling?",
+    "question": "A 3rd-order vignette: A patient with severe COVID-19 on mechanical ventilation is started on an immunomodulator that blocks multiple cytokines by inhibiting intracellular kinases and may also reduce viral entry via AAK1 inhibition. Which oral agent from the lecture fits this profile?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
-    "options": [
-      {
-        "text": "Ribavirin is teratogenic and patients should avoid conception for six months",
-        "isCorrect": true,
-        "rationale": "The lecture states ribavirin is teratogenic and patients exposed should not conceive for at least six months thereafter."
-      },
-      {
-        "text": "Ribavirin is safe in pregnancy with no contraception needed",
-        "isCorrect": false,
-        "rationale": "This contradicts the lecture; ribavirin is teratogenic and contraception is required, so this would be correct only if safety data supported no teratogenicity."
-      },
-      {
-        "text": "Ribavirin causes bronchoconstriction and is contraindicated in asthma",
-        "isCorrect": false,
-        "rationale": "Bronchoconstriction is associated with inhaled zanamivir, not ribavirin; it would be correct only if ribavirin caused airway reactivity."
-      },
-      {
-        "text": "Ribavirin is primarily associated with neuropsychiatric events in children",
-        "isCorrect": false,
-        "rationale": "Neuropsychiatric events were linked to oseltamivir in the lecture, not ribavirin; it would be correct only if ribavirin caused such events."
-      },
-      {
-        "text": "Ribavirin has no hematologic adverse effects to monitor",
-        "isCorrect": false,
-        "rationale": "Ribavirin causes dose-dependent hemolytic anemia per the lecture; this option would be correct only if ribavirin lacked hematologic toxicity."
-      }
-    ]
-  },
-  {
-    "question": "A patient with severe COVID-19 is randomized to receive dexamethasone. Which clinical role for dexamethasone is described in the lecture?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
-    "options": [
-      {
-        "text": "First line anti-inflammatory therapy in severe or critical COVID-19",
-        "isCorrect": true,
-        "rationale": "The lecture states dexamethasone is first-line in severe/critical COVID-19 to dampen the cytokine storm and reduce lung inflammation."
-      },
-      {
-        "text": "Primary antiviral agent for early outpatient COVID-19",
-        "isCorrect": false,
-        "rationale": "Dexamethasone is an immunosuppressant used in severe disease, not an antiviral for early outpatient treatment; it would be correct only if it had direct antiviral effects."
-      },
-      {
-        "text": "Monoclonal antibody used to neutralize viral spike protein",
-        "isCorrect": false,
-        "rationale": "Dexamethasone is a corticosteroid, not a monoclonal antibody; it would be correct only if it were an antibody."
-      },
-      {
-        "text": "JAK inhibitor used to block multiple cytokines",
-        "isCorrect": false,
-        "rationale": "Baricitinib is the JAK inhibitor; dexamethasone is a corticosteroid and would be correct only if it acted via JAK inhibition."
-      },
-      {
-        "text": "Complement C5a neutralizer used in ventilated patients",
-        "isCorrect": false,
-        "rationale": "Vilobelimab neutralizes C5a; dexamethasone does not target complement and would be correct only if it neutralized C5a."
-      }
-    ]
-  },
-  {
-    "question": "A patient with COVID-19 is treated with tocilizumab and develops neutropenia. Which mechanism explains tocilizumab's therapeutic effect in the lecture?",
-    "difficulty_order": "2nd",
     "cited_learning_objective": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Tocilizumab blocks the interleukin six receptor to inhibit IL six signaling",
+        "text": "Baricitinib, a JAK inhibitor that may also interfere with AAK1 and viral entry",
         "isCorrect": true,
-        "rationale": "The lecture describes tocilizumab as an IL-6 receptor antagonist that inhibits IL-6 mediated T-cell activation and inflammation."
+        "rationale": "Correct: The lecture describes baricitinib as a JAK inhibitor that blocks JAK-STAT signaling and may have antiviral effects by interfering with AAK1 to reduce viral entry."
       },
       {
-        "text": "Tocilizumab inhibits JAK-STAT signaling directly",
+        "text": "Tocilizumab, an IL-6 receptor antagonist that interferes with AAK1",
         "isCorrect": false,
-        "rationale": "JAK inhibitors like baricitinib block JAK-STAT; tocilizumab blocks IL-6 receptor upstream, so this would be correct only if tocilizumab inhibited JAK directly."
+        "rationale": "Wrong: Tocilizumab blocks IL-6 receptor and is not described as interfering with AAK1; it would be correct only if it had AAK1 activity."
       },
       {
-        "text": "Tocilizumab neutralizes complement component C5a",
+        "text": "Vilobelimab, a C5a neutralizer that inhibits JAK-STAT signaling",
         "isCorrect": false,
-        "rationale": "Vilobelimab neutralizes C5a; tocilizumab does not target complement and would be correct only if it bound C5a."
+        "rationale": "Wrong: Vilobelimab neutralizes C5a and does not inhibit JAK-STAT signaling; it would be correct only if it were a JAK inhibitor."
       },
       {
-        "text": "Tocilizumab is a corticosteroid reducing global cytokine production",
+        "text": "Anakinra, an IL-1 receptor antagonist that inhibits AAK1",
         "isCorrect": false,
-        "rationale": "Dexamethasone is the corticosteroid; tocilizumab is a targeted IL-6 receptor antagonist and would be correct only if it were a steroid."
+        "rationale": "Wrong: Anakinra blocks IL-1 receptor and is not described as inhibiting AAK1; it would be correct only if anakinra had that off-target effect."
       },
       {
-        "text": "Tocilizumab is an antiviral protease inhibitor",
+        "text": "Dexamethasone, a corticosteroid that directly inhibits viral protease",
         "isCorrect": false,
-        "rationale": "Tocilizumab is an immunomodulatory monoclonal antibody, not an antiviral protease inhibitor; it would be correct only if it inhibited viral proteases."
+        "rationale": "Wrong: Dexamethasone reduces cytokine production but does not directly inhibit viral proteases or AAK1; it would be correct only if corticosteroids had direct antiviral protease activity."
       }
     ]
   },
   {
-    "question": "A patient with influenza is given zanamivir via inhalation and develops throat irritation and cough. Which precaution from the lecture should have been considered before prescribing?",
-    "difficulty_order": "2nd",
+    "question": "Which influenza antiviral in the lecture is contraindicated or used with caution in patients with reactive airway disease due to risk of bronchospasm when inhaled?",
+    "difficulty_order": "1st",
     "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Use caution in patients with asthma or chronic obstructive pulmonary disease",
+        "text": "Inhaled zanamivir should be used cautiously in asthma or COPD due to bronchospasm risk",
         "isCorrect": true,
-        "rationale": "The lecture warns that inhaled zanamivir can cause bronchoconstriction and cough, so caution is needed in asthma/COPD patients."
+        "rationale": "Correct: The lecture warns that inhaled zanamivir can cause sore throat, cough, and bronchoconstriction, so caution is advised in asthma/COPD."
       },
       {
-        "text": "Avoid in pregnancy due to teratogenicity risk",
+        "text": "Oral oseltamivir commonly causes bronchospasm in reactive airway disease",
         "isCorrect": false,
-        "rationale": "Teratogenicity is a concern for ribavirin and molnupiravir, not inhaled zanamivir per the lecture; it would be correct only if zanamivir were teratogenic."
+        "rationale": "Wrong: Oseltamivir's primary adverse effects are GI and rare neuro events; bronchospasm is linked to inhaled zanamivir, not oral oseltamivir."
       },
       {
-        "text": "Do not coadminister with corticosteroids due to interaction",
+        "text": "IV peramivir is contraindicated in asthma due to airway reactivity",
         "isCorrect": false,
-        "rationale": "The lecture does not list a specific interaction between zanamivir and corticosteroids; this would be correct only if such an interaction existed."
+        "rationale": "Wrong: Peramivir adverse effects include diarrhea and hypersensitivity, not bronchospasm; it would be correct only if peramivir caused airway reactivity."
       },
       {
-        "text": "Avoid in patients with severe hepatic impairment",
+        "text": "Baloxavir inhalation causes bronchospasm and is contraindicated in COPD",
         "isCorrect": false,
-        "rationale": "Zanamivir's main precautions are respiratory; severe hepatic impairment is not listed as a primary contraindication in the lecture."
+        "rationale": "Wrong: Baloxavir is oral and the lecture does not list bronchospasm as a primary adverse effect; this would be correct only if baloxavir were inhaled and caused airway effects."
       },
       {
-        "text": "Require contraception for six months after exposure",
+        "text": "Ribavirin oral therapy is associated with bronchospasm in asthma",
         "isCorrect": false,
-        "rationale": "Contraception for six months is advised for ribavirin exposure, not zanamivir; it would be correct only if zanamivir were teratogenic."
+        "rationale": "Wrong: Ribavirin adverse effects include hemolytic anemia and teratogenicity; bronchospasm is not emphasized for oral ribavirin in the lecture."
       }
     ]
   },
   {
-    "question": "A patient with COVID-19 is eligible for remdesivir but has a history of infusion hypersensitivity. Which adverse events listed in the lecture should the team monitor during administration?",
+    "question": "A 3rd-order vignette: A hospitalized adult with COVID-19 is eligible for remdesivir but has elevated liver enzymes (ALT 250 U/L [7-56 U/L]). Based on the lecture adverse effect profile, what is the most relevant safety concern that might influence the decision to use remdesivir?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Monitor for bradycardia, hypotension, hepatotoxicity, and infusion reactions",
+        "text": "Remdesivir is associated with hepatotoxicity and elevated aminotransferases",
         "isCorrect": true,
-        "rationale": "The lecture lists bradycardia, hypotension, hepatotoxicity, and hypersensitivity/infusion reactions as remdesivir adverse effects to monitor."
+        "rationale": "Correct: The lecture lists hepatotoxicity and elevated aminotransferases among remdesivir adverse effects, making baseline liver enzymes relevant to its use."
       },
       {
-        "text": "Monitor for bronchoconstriction and cough during infusion",
+        "text": "Remdesivir commonly causes bronchospasm and airway obstruction",
         "isCorrect": false,
-        "rationale": "Bronchoconstriction is associated with inhaled zanamivir, not remdesivir; it would be correct only if remdesivir caused airway reactivity."
+        "rationale": "Wrong: Bronchospasm is linked to inhaled zanamivir, not remdesivir; this would be correct only if remdesivir caused airway reactivity."
       },
       {
-        "text": "Monitor for dose dependent hemolytic anemia immediately after infusion",
+        "text": "Remdesivir causes dose dependent hemolytic anemia and hyperuricemia",
         "isCorrect": false,
-        "rationale": "Hemolytic anemia is linked to ribavirin and is not an immediate infusion reaction for remdesivir; it would be correct only if remdesivir caused hemolysis."
+        "rationale": "Wrong: Hemolytic anemia and hyperuricemia are ribavirin adverse effects; this would be correct only for ribavirin exposure."
       },
       {
-        "text": "Monitor for teratogenic effects requiring contraception counseling",
+        "text": "Remdesivir is contraindicated due to teratogenicity in animal studies",
         "isCorrect": false,
-        "rationale": "Teratogenicity is a concern for ribavirin and molnupiravir, not remdesivir per the lecture; it would be correct only if remdesivir were teratogenic."
+        "rationale": "Wrong: Teratogenicity concerns are emphasized for ribavirin and molnupiravir, not remdesivir per the lecture; this would be correct only if remdesivir had similar findings."
       },
       {
-        "text": "Monitor for metallic taste and dysgeusia during infusion",
+        "text": "Remdesivir causes metallic taste and dysgeusia in most patients",
         "isCorrect": false,
-        "rationale": "Dysgeusia is reported with nirmatrelvir/ritonavir, not remdesivir; it would be correct only if remdesivir caused taste disturbance."
+        "rationale": "Wrong: Dysgeusia is noted with nirmatrelvir/ritonavir; it is not the primary concern for remdesivir per the lecture."
       }
     ]
   },
   {
-    "question": "A patient with severe COVID-19 is considered for baricitinib but has a history of recent malignancy. Which rare adverse event mentioned in the lecture should influence risk assessment?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+    "question": "Which antiviral class from the lecture is primarily used for seasonal influenza prophylaxis and treatment by preventing cleavage of sialic acid residues on host receptors?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the pharmacological effects of each drug class (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Rare association with lung and breast cancer reported with baricitinib",
+        "text": "Neuraminidase inhibitors such as oseltamivir prevent cleavage of sialic acid residues",
         "isCorrect": true,
-        "rationale": "The lecture lists lung and breast cancer as rare adverse events associated with baricitinib, which should influence use in patients with malignancy history."
+        "rationale": "Correct: The lecture explains neuraminidase inhibitors block influenza neuraminidase that cleaves neuraminic (sialic) acid linkers, reducing viral release."
       },
       {
-        "text": "High risk of teratogenicity requiring contraception for six months",
+        "text": "PA endonuclease inhibitors such as baloxavir prevent cleavage of sialic acid residues",
         "isCorrect": false,
-        "rationale": "Teratogenicity is a concern for ribavirin and molnupiravir, not baricitinib per the lecture; it would be correct only if baricitinib were teratogenic."
+        "rationale": "Wrong: PA endonuclease inhibitors block viral endonuclease for transcription, not sialic acid cleavage; it would be correct only for neuraminidase inhibitors."
       },
       {
-        "text": "Common severe hepatotoxicity leading to liver failure",
+        "text": "Protease inhibitors such as nirmatrelvir prevent cleavage of sialic acid residues",
         "isCorrect": false,
-        "rationale": "Baricitinib's main risks include infection and cytopenias; severe hepatotoxicity is not listed as common in the lecture and would be correct only if documented."
+        "rationale": "Wrong: Protease inhibitors prevent polyprotein cleavage in coronaviruses and do not act on sialic acid residues; it would be correct only if proteases cleaved sialic acid."
       },
       {
-        "text": "Immediate bronchospasm after oral dosing",
+        "text": "Nucleoside analogs such as remdesivir prevent cleavage of sialic acid residues",
         "isCorrect": false,
-        "rationale": "Bronchospasm is linked to inhaled zanamivir, not oral baricitinib; it would be correct only if baricitinib caused airway reactivity."
+        "rationale": "Wrong: Nucleoside analogs interfere with RNA synthesis and do not prevent sialic acid cleavage; it would be correct only for neuraminidase inhibitors."
       },
       {
-        "text": "Dose dependent hemolytic anemia within days of therapy",
+        "text": "Monoclonal antibodies such as palivizumab prevent cleavage of sialic acid residues",
         "isCorrect": false,
-        "rationale": "Hemolytic anemia is associated with ribavirin, not baricitinib; it would be correct only if baricitinib caused hemolysis."
+        "rationale": "Wrong: Palivizumab targets RSV F protein to prevent fusion, not sialic acid cleavage; it would be correct only if it targeted neuraminidase."
       }
     ]
   },
   {
-    "question": "A patient with influenza A (H5N1) exposure asks which antiviral from the lecture can be used for prophylaxis or treatment of avian influenza strains. Which agent should be chosen?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
-    "options": [
-      {
-        "text": "Oseltamivir oral neuraminidase inhibitor for avian influenza",
-        "isCorrect": true,
-        "rationale": "The lecture notes oseltamivir can be used for prophylaxis or treatment of avian influenza A (H5N1)."
-      },
-      {
-        "text": "Baloxavir oral PA endonuclease inhibitor for avian influenza only",
-        "isCorrect": false,
-        "rationale": "Baloxavir treats seasonal influenza A or B but the lecture specifically mentions oseltamivir for avian H5N1; this would be correct only if baloxavir were indicated for H5N1 per guidelines."
-      },
-      {
-        "text": "Rimantadine oral M2 blocker for avian influenza prophylaxis",
-        "isCorrect": false,
-        "rationale": "Adamantanes like rimantadine are not recommended due to resistance; it would be correct only if resistance were absent."
-      },
-      {
-        "text": "Peramivir intravenous neuraminidase inhibitor for routine outpatient prophylaxis",
-        "isCorrect": false,
-        "rationale": "Peramivir is IV and used for treatment, not routine outpatient prophylaxis; it would be correct only if IV prophylaxis were appropriate."
-      },
-      {
-        "text": "Zanamivir inhaled for avian influenza in patients with asthma",
-        "isCorrect": false,
-        "rationale": "Zanamivir is inhaled and cautioned in asthma/COPD; it would be correct only if the patient had no reactive airway disease and inhaled therapy were preferred."
-      }
-    ]
-  },
-  {
-    "question": "A patient with RSV is being considered for immunization per CDC guidance. Which agent from the lecture is recommended for all newborns to prevent severe RSV illness?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the current GDMT for viral respiratory infections (Competencies III.4; OMED620.6)",
-    "options": [
-      {
-        "text": "Nirsevimab immunization for all newborns to prevent severe RSV",
-        "isCorrect": true,
-        "rationale": "The lecture states that all newborns should receive immunization with nirsevimab to prevent severe RSV illness per CDC guidance."
-      },
-      {
-        "text": "Palivizumab immunization for all newborns universally",
-        "isCorrect": false,
-        "rationale": "Palivizumab is recommended for high-risk premature infants, not universally for all newborns; it would be correct only if guidelines recommended universal use."
-      },
-      {
-        "text": "Ribavirin inhaled immunization for newborn RSV prevention",
-        "isCorrect": false,
-        "rationale": "Ribavirin is a treatment for severe RSV, not a prophylactic immunization; it would be correct only if ribavirin were used for prevention."
-      },
-      {
-        "text": "Molnupiravir oral immunization for newborn RSV prevention",
-        "isCorrect": false,
-        "rationale": "Molnupiravir is an antiviral for COVID-19 and not an RSV immunization; it would be correct only if it were an RSV vaccine."
-      },
-      {
-        "text": "Dexamethasone systemic immunization for newborn RSV prevention",
-        "isCorrect": false,
-        "rationale": "Dexamethasone is not an immunization and would be correct only if it were a vaccine, which it is not."
-      }
-    ]
-  },
-  {
-    "question": "A patient with COVID-19 is eligible for remdesivir but has elevated aminotransferases. According to the lecture, which adverse effect of remdesivir is most relevant to this finding?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
-    "options": [
-      {
-        "text": "Hepatotoxicity with elevated serum aminotransferases",
-        "isCorrect": true,
-        "rationale": "The lecture lists hepatotoxicity and elevated aminotransferases as known adverse effects of remdesivir, relevant to preexisting liver enzyme elevation."
-      },
-      {
-        "text": "Dose dependent hemolytic anemia causing elevated aminotransferases",
-        "isCorrect": false,
-        "rationale": "Hemolytic anemia is associated with ribavirin and does not directly explain elevated aminotransferases; it would be correct only if hemolysis caused liver enzyme elevation."
-      },
-      {
-        "text": "Bronchoconstriction causing secondary liver enzyme elevation",
-        "isCorrect": false,
-        "rationale": "Bronchoconstriction is a respiratory adverse effect of inhaled zanamivir and does not explain hepatotoxicity; it would be correct only if respiratory events caused liver injury."
-      },
-      {
-        "text": "Teratogenicity leading to elevated aminotransferases",
-        "isCorrect": false,
-        "rationale": "Teratogenicity (ribavirin/molnupiravir) is unrelated to aminotransferase elevation; it would be correct only if teratogenicity caused liver enzyme changes."
-      },
-      {
-        "text": "Metallic taste causing elevated aminotransferases",
-        "isCorrect": false,
-        "rationale": "Dysgeusia is a sensory adverse effect and does not cause hepatotoxicity; it would be correct only if taste disturbance correlated with liver injury."
-      }
-    ]
-  },
-  {
-    "question": "A clinician must choose between palivizumab and nirsevimab for a premature infant. According to the lecture, which statement best differentiates their primary prophylactic roles?",
+    "question": "A 3rd-order vignette: A patient with COVID-19 who is 14 years old and otherwise healthy asks about outpatient antiviral options. According to the lecture's guideline summary, which antiviral is recommended for patients age 12 and older at high risk?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
     "options": [
       {
-        "text": "Palivizumab for high risk premature infants; nirsevimab for universal newborn immunization",
+        "text": "Ritonavir-boosted nirmatrelvir (Paxlovid) is recommended for age 12 and older at high risk",
         "isCorrect": true,
-        "rationale": "The lecture indicates palivizumab is used for premature infants at high risk, while nirsevimab is recommended for all newborns for RSV prevention."
+        "rationale": "Correct: The lecture's NIH/NIAID guideline summary recommends ritonavir-boosted nirmatrelvir for patients age 12 and older at high risk of severe COVID-19."
       },
       {
-        "text": "Nirsevimab only for high risk infants; palivizumab for universal use",
+        "text": "Molnupiravir is the first-line option for patients age 12 and older",
         "isCorrect": false,
-        "rationale": "This reverses the lecture guidance; it would be correct only if guidelines recommended palivizumab universally and nirsevimab selectively."
+        "rationale": "Wrong: The lecture lists molnupiravir as an alternative if other agents are not usable, not the first-line for age 12 and older."
       },
       {
-        "text": "Both palivizumab and nirsevimab are contraindicated in newborns",
+        "text": "Remdesivir oral therapy is recommended for all outpatients age 12 and older",
         "isCorrect": false,
-        "rationale": "The lecture recommends immunization with nirsevimab for all newborns and palivizumab for high-risk infants; this option contradicts that guidance."
+        "rationale": "Wrong: Remdesivir is IV and the lecture recommends it for certain age/weight thresholds but not as universal outpatient oral therapy; it would be correct only if IV remdesivir were the outpatient standard."
       },
       {
-        "text": "Palivizumab is an oral vaccine; nirsevimab is inhaled prophylaxis",
+        "text": "Dexamethasone is recommended for mild outpatient COVID-19 in adolescents",
         "isCorrect": false,
-        "rationale": "Both agents are monoclonal antibodies given parenterally (IV); this option would be correct only if their routes matched the statement."
+        "rationale": "Wrong: Dexamethasone is used in severe/critical hospitalized patients requiring oxygen, not for mild outpatient disease; it would be correct only for severe cases."
       },
       {
-        "text": "Neither agent targets the RSV F protein for fusion prevention",
+        "text": "Baricitinib monotherapy is recommended for adolescents with mild disease",
         "isCorrect": false,
-        "rationale": "Both palivizumab and nirsevimab target the RSV F protein; this would be correct only if they targeted different viral proteins."
+        "rationale": "Wrong: Baricitinib is used in hospitalized adults and is not recommended as monotherapy for mild adolescent outpatient disease per the lecture; it would be correct only if guidelines supported that use."
       }
     ]
   },
   {
-    "question": "A patient with COVID-19 is treated with nirmatrelvir/ritonavir and reports a metallic taste. Which adverse effect listed in the lecture corresponds to this complaint?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
+    "question": "Which antiviral mechanism in the lecture is described as preventing cleavage of viral polyproteins into functional proteins, thereby blocking viral replication and assembly in SARS-CoV-2?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the molecular mechanisms of action of each drug class of the antivirals for treating respiratory infections (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Dysgeusia or metallic taste associated with nirmatrelvir/ritonavir",
+        "text": "Main protease inhibition by nirmatrelvir prevents polyprotein cleavage",
         "isCorrect": true,
-        "rationale": "The lecture lists dysgeusia or metallic taste as an adverse effect of nirmatrelvir plus ritonavir (Paxlovid)."
+        "rationale": "Correct: The lecture states nirmatrelvir inhibits the SARS-CoV-2 main protease (Mpro), preventing cleavage of viral polyprotein into functional proteins."
       },
       {
-        "text": "Bronchoconstriction and cough associated with nirmatrelvir",
+        "text": "Neuraminidase inhibition prevents polyprotein cleavage",
         "isCorrect": false,
-        "rationale": "Bronchoconstriction is linked to inhaled zanamivir, not nirmatrelvir; it would be correct only if nirmatrelvir caused airway reactivity."
+        "rationale": "Wrong: Neuraminidase inhibitors prevent virion release and do not affect polyprotein cleavage; this would be correct only for protease inhibitors."
       },
       {
-        "text": "Dose dependent hemolytic anemia associated with nirmatrelvir",
+        "text": "PA endonuclease inhibition prevents polyprotein cleavage",
         "isCorrect": false,
-        "rationale": "Hemolytic anemia is associated with ribavirin, not nirmatrelvir; it would be correct only if nirmatrelvir caused hemolysis."
+        "rationale": "Wrong: PA endonuclease inhibitors block viral transcription, not polyprotein cleavage; it would be correct only for protease inhibitors."
       },
       {
-        "text": "Teratogenicity requiring contraception after nirmatrelvir exposure",
+        "text": "Nucleoside analog induced mutagenesis prevents polyprotein cleavage",
         "isCorrect": false,
-        "rationale": "Teratogenicity is a concern for molnupiravir and ribavirin, not nirmatrelvir per the lecture; it would be correct only if nirmatrelvir were teratogenic."
+        "rationale": "Wrong: Nucleoside analogs cause mutagenesis or chain termination affecting RNA replication, not direct polyprotein cleavage; it would be correct only if polyprotein processing were impaired by mutations."
       },
       {
-        "text": "Severe hepatotoxicity unique to nirmatrelvir causing metallic taste",
+        "text": "C5a neutralization prevents polyprotein cleavage",
         "isCorrect": false,
-        "rationale": "Metallic taste is a sensory adverse effect, not a sign of hepatotoxicity; this would be correct only if hepatotoxicity caused dysgeusia."
+        "rationale": "Wrong: C5a neutralization modulates immune response and does not directly inhibit viral polyprotein processing; it would be correct only if complement blockade affected viral proteases."
       }
     ]
   },
   {
-    "question": "A patient with severe COVID-19 is randomized to receive vilobelimab within 48 hours of initiating mechanical ventilation. Which adverse event from the lecture should the team monitor for after administration?",
+    "question": "A 3rd-order vignette: A child with severe RSV bronchiolitis is being considered for ribavirin inhalation. The family asks about long-term fertility risks after exposure. Based on the lecture, what counseling point should be given regarding conception after exposure?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Describe the major adverse effects, drug interactions, and contraindications of each drug class (Competencies II.1; OMED620.6)",
     "options": [
       {
-        "text": "Venous thrombosis and increased aminotransferases after therapy",
+        "text": "Patients exposed should avoid conceiving children for at least six months after exposure",
         "isCorrect": true,
-        "rationale": "The lecture lists venous thrombosis and increased serum aminotransferases among vilobelimab adverse events to monitor in ventilated patients."
+        "rationale": "Correct: The lecture states ribavirin is teratogenic and patients exposed should not conceive for at least six months thereafter."
       },
       {
-        "text": "Immediate bronchospasm and airway obstruction after infusion",
+        "text": "No special contraception is needed after ribavirin exposure",
         "isCorrect": false,
-        "rationale": "Bronchospasm is associated with inhaled zanamivir, not vilobelimab; it would be correct only if vilobelimab caused airway reactivity."
+        "rationale": "Wrong: This contradicts the lecture which emphasizes contraception due to teratogenicity; it would be correct only if ribavirin were non-teratogenic."
       },
       {
-        "text": "Dose dependent hemolytic anemia within days of infusion",
+        "text": "Conception can proceed immediately after completing ribavirin therapy",
         "isCorrect": false,
-        "rationale": "Hemolytic anemia is linked to ribavirin, not vilobelimab; it would be correct only if vilobelimab caused hemolysis."
+        "rationale": "Wrong: Immediate conception is contraindicated per the lecture; waiting six months is recommended."
       },
       {
-        "text": "Teratogenicity requiring contraception counseling after infusion",
+        "text": "Only male partners need to avoid conception for six months",
         "isCorrect": false,
-        "rationale": "Teratogenicity is a concern for ribavirin and molnupiravir, not vilobelimab per the lecture; it would be correct only if vilobelimab were teratogenic."
+        "rationale": "Wrong: The lecture advises patients exposed (both sexes) should avoid conception; singling out males would be correct only if evidence limited risk to sperm."
       },
       {
-        "text": "Metallic taste and dysgeusia immediately after infusion",
+        "text": "Ribavirin exposure requires lifetime infertility counseling",
         "isCorrect": false,
-        "rationale": "Dysgeusia is associated with nirmatrelvir/ritonavir, not vilobelimab; it would be correct only if vilobelimab caused taste disturbance."
+        "rationale": "Wrong: The lecture specifies a six-month conception avoidance period, not lifetime infertility; this would be correct only if permanent sterility were documented."
+      }
+    ]
+  },
+  {
+    "question": "Which agent from the lecture is an oral PA endonuclease inhibitor that is recommended for influenza treatment if started within 48 hours of symptom onset?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
+    "options": [
+      {
+        "text": "Baloxavir marboxil is an oral PA endonuclease inhibitor for influenza within 48 hours",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states baloxavir marboxil binds the influenza PA endonuclease and is used for seasonal influenza treatment within 48 hours of symptoms."
+      },
+      {
+        "text": "Oseltamivir is an oral PA endonuclease inhibitor for influenza within 48 hours",
+        "isCorrect": false,
+        "rationale": "Wrong: Oseltamivir is a neuraminidase inhibitor, not a PA endonuclease inhibitor; it would be correct only if oseltamivir targeted PA endonuclease."
+      },
+      {
+        "text": "Peramivir is an oral PA endonuclease inhibitor for influenza within 48 hours",
+        "isCorrect": false,
+        "rationale": "Wrong: Peramivir is an IV neuraminidase inhibitor and not an oral PA endonuclease inhibitor; it would be correct only if peramivir had that mechanism."
+      },
+      {
+        "text": "Ribavirin is an oral PA endonuclease inhibitor for influenza within 48 hours",
+        "isCorrect": false,
+        "rationale": "Wrong: Ribavirin is a nucleoside analog used for RSV and does not inhibit PA endonuclease; it would be correct only if ribavirin targeted PA endonuclease."
+      },
+      {
+        "text": "Nirmatrelvir is an oral PA endonuclease inhibitor for influenza within 48 hours",
+        "isCorrect": false,
+        "rationale": "Wrong: Nirmatrelvir is a SARS-CoV-2 protease inhibitor and does not inhibit influenza PA endonuclease; it would be correct only if it had cross-activity."
+      }
+    ]
+  },
+  {
+    "question": "A 3rd-order vignette: A hospitalized adult with COVID-19 has contraindications to remdesivir and Paxlovid. According to the lecture's guideline summary, which oral antiviral is an alternative option in this scenario?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the major therapeutic uses of the drugs in each class (Competencies III.4; OMED620.6)",
+    "options": [
+      {
+        "text": "Molnupiravir is an alternative oral option if remdesivir and Paxlovid are not usable",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture's guideline summary lists molnupiravir as an alternative when remdesivir or nirmatrelvir/ritonavir are not usable or available."
+      },
+      {
+        "text": "Oseltamivir is an alternative oral option for COVID-19 when others are unusable",
+        "isCorrect": false,
+        "rationale": "Wrong: Oseltamivir is for influenza, not COVID-19; it would be correct only if oseltamivir were effective against SARS-CoV-2 per the lecture."
+      },
+      {
+        "text": "Peramivir oral therapy is an alternative for COVID-19",
+        "isCorrect": false,
+        "rationale": "Wrong: Peramivir is an IV neuraminidase inhibitor for influenza and not an oral COVID-19 antiviral; it would be correct only if peramivir were active against SARS-CoV-2."
+      },
+      {
+        "text": "Baloxavir oral therapy is an alternative for COVID-19",
+        "isCorrect": false,
+        "rationale": "Wrong: Baloxavir targets influenza PA endonuclease and is not listed as a COVID-19 option in the lecture; it would be correct only if baloxavir were effective against SARS-CoV-2."
+      },
+      {
+        "text": "Ribavirin oral therapy is an alternative for COVID-19",
+        "isCorrect": false,
+        "rationale": "Wrong: Ribavirin is discussed for RSV and is not presented as a COVID-19 alternative in the lecture; it would be correct only if evidence supported its use for SARS-CoV-2."
       }
     ]
   }
