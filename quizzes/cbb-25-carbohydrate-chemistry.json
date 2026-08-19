@@ -1,0 +1,1282 @@
+[
+  {
+    "question": "A 22-year-old medical student reviews carbohydrate structures and is asked to identify which monosaccharide is a ketose rather than an aldose. Which of the following best fits that classification?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define aldose and ketose and list important examples of each",
+    "options": [
+      {
+        "text": "Fructose",
+        "isCorrect": true,
+        "rationale": "Fructose is listed in the lecture as an important ketose; ketoses have a carbonyl at an internal carbon rather than an aldehyde at C1."
+      },
+      {
+        "text": "Glucose",
+        "isCorrect": false,
+        "rationale": "Glucose is an aldose with an aldehyde at the carbonyl carbon; it would be correct only if the carbonyl were at an internal carbon as in a ketose."
+      },
+      {
+        "text": "Galactose",
+        "isCorrect": false,
+        "rationale": "Galactose is an aldose and an epimer of glucose at C-4; it would be correct only if its carbonyl were a ketone rather than an aldehyde."
+      },
+      {
+        "text": "Glyceraldehyde",
+        "isCorrect": false,
+        "rationale": "Glyceraldehyde is an aldose (an aldotriose); it would be correct only if it were dihydroxyacetone, the ketotriose."
+      },
+      {
+        "text": "Mannose",
+        "isCorrect": false,
+        "rationale": "Mannose is an aldose and a C-2 epimer of glucose; it would be correct only if its carbonyl were a ketone."
+      }
+    ]
+  },
+  {
+    "question": "Which structural relationship describes two hexoses that differ only by the orientation of the hydroxyl group at carbon 4?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define enantiomers, epimers, and isomers in the context of carbohydrates and give an example of each",
+    "options": [
+      {
+        "text": "C-4 epimers",
+        "isCorrect": true,
+        "rationale": "The lecture defines epimers as sugars differing at only one chiral carbon and gives glucose and galactose as C-4 epimers."
+      },
+      {
+        "text": "Enantiomers",
+        "isCorrect": false,
+        "rationale": "Enantiomers are mirror-image stereoisomers differing at all chiral centers; this would be correct only if the molecules were non-superimposable mirror images."
+      },
+      {
+        "text": "Constitutional isomers",
+        "isCorrect": false,
+        "rationale": "Constitutional isomers differ in connectivity of atoms; this would be correct only if the two hexoses had different bond connectivities, not just one chiral center."
+      },
+      {
+        "text": "Anomers",
+        "isCorrect": false,
+        "rationale": "Anomers differ at the anomeric carbon (α vs β) formed during cyclization; this would be correct only if the difference were at C-1 after ring closure."
+      },
+      {
+        "text": "Diastereomers",
+        "isCorrect": false,
+        "rationale": "Diastereomers differ at one or more but not all chiral centers; while epimers are a subset of diastereomers, the specific term for a single-carbon difference at C-4 is 'C-4 epimers.'"
+      }
+    ]
+  },
+  {
+    "question": "A student draws D- and L-forms of a triose and asks how the D/L designation is determined. Which rule from the lecture correctly identifies the basis for D versus L nomenclature?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the basic structure of carbohydrates and D vs L enantiomers",
+    "options": [
+      {
+        "text": "Orientation of the hydroxyl on the chiral carbon farthest from the carbonyl",
+        "isCorrect": true,
+        "rationale": "Lecture states D/L is assigned by the position of the OH on the chiral carbon farthest from the carbonyl; D has the OH to the right in Fischer projection."
+      },
+      {
+        "text": "Configuration at the anomeric carbon after cyclization",
+        "isCorrect": false,
+        "rationale": "Anomeric configuration (α/β) is determined after ring formation at C-1; it would be correct only if asking about anomers rather than D/L stereochemistry."
+      },
+      {
+        "text": "Absolute R/S stereochemical assignment at every chiral center",
+        "isCorrect": false,
+        "rationale": "R/S is a different stereochemical system; D/L specifically uses the reference carbon farthest from the carbonyl and would be correct only if R/S matched that orientation."
+      },
+      {
+        "text": "Position of the carbonyl group in the linear chain",
+        "isCorrect": false,
+        "rationale": "Position of the carbonyl distinguishes aldose versus ketose, not D versus L; this would be correct only if the question asked aldose/ketose classification."
+      },
+      {
+        "text": "Number of carbons in the backbone",
+        "isCorrect": false,
+        "rationale": "Carbon count defines triose/tetrose/pentose/hexose categories; it would be correct only if D/L designation depended on chain length, which it does not."
+      }
+    ]
+  },
+  {
+    "question": "Which glycosidic linkage connects the two monosaccharides in lactose and which intestinal enzyme hydrolyzes it?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List the monosaccharides and glycosidic bonds involved for each of the physiologically important disaccharides as well as where they can be found",
+    "options": [
+      {
+        "text": "β(1→4) linkage hydrolyzed by lactase",
+        "isCorrect": true,
+        "rationale": "Lecture specifies lactose is galactose–glucose linked by a β(1→4) bond and is cleaved by lactase on small intestinal cells."
+      },
+      {
+        "text": "α(1→2) linkage hydrolyzed by sucrase",
+        "isCorrect": false,
+        "rationale": "α(1→2) is the sucrose linkage (glucose–fructose) cleaved by sucrase; it would be correct only if the disaccharide were sucrose."
+      },
+      {
+        "text": "α(1→4) linkage hydrolyzed by maltase",
+        "isCorrect": false,
+        "rationale": "α(1→4) is the maltose linkage (glucose–glucose) cleaved by maltase; it would be correct only if the disaccharide were maltose."
+      },
+      {
+        "text": "β(1→3) linkage hydrolyzed by cellulase",
+        "isCorrect": false,
+        "rationale": "Cellulase cleaves β(1→4) cellulose linkages, not β(1→3); this would be correct only if cellulose had β(1→3) bonds and humans produced cellulase."
+      },
+      {
+        "text": "α(1→6) linkage hydrolyzed by isomaltase",
+        "isCorrect": false,
+        "rationale": "α(1→6) is a branch point linkage in glycogen and starch; isomaltase can act on some α(1→6) linkages, but this is not the lactose bond."
+      }
+    ]
+  },
+  {
+    "question": "A patient with lactase deficiency consumes milk and develops watery diarrhea and bloating. According to the lecture, which mechanism best explains the diarrhea?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the enzyme deficiency and findings in lactose intolerance",
+    "options": [
+      {
+        "text": "Unabsorbed disaccharide increases luminal osmolarity drawing water into the colon",
+        "isCorrect": true,
+        "rationale": "Lecture explains excess lactose exerts an osmotic effect, drawing water into the large intestine and causing watery diarrhea."
+      },
+      {
+        "text": "Bacterial overgrowth consumes lactose and reduces luminal osmolarity",
+        "isCorrect": false,
+        "rationale": "Bacterial fermentation produces gas and acids but does not reduce osmolarity; this would be correct only if fermentation lowered osmotic load, which it does not."
+      },
+      {
+        "text": "Lactase deficiency increases bile acid secretion causing secretory diarrhea",
+        "isCorrect": false,
+        "rationale": "Bile acid–mediated secretory diarrhea is unrelated to lactase deficiency; it would be correct only if bile acid malabsorption were present."
+      },
+      {
+        "text": "Pancreatic enzyme insufficiency prevents lactose digestion leading to steatorrhea",
+        "isCorrect": false,
+        "rationale": "Pancreatic insufficiency affects fat digestion, not lactose; this would be correct only if pancreatic enzymes were deficient and fats were malabsorbed."
+      },
+      {
+        "text": "Autoimmune destruction of enterocytes reduces water absorption causing osmotic diarrhea",
+        "isCorrect": false,
+        "rationale": "Autoimmune enterocyte loss can cause malabsorption but is not the mechanism described for lactase deficiency; it would be correct only if enterocyte destruction were documented."
+      }
+    ]
+  },
+  {
+    "question": "Which polysaccharide is the primary storage form of glucose in animals and how is it structurally different from plant amylopectin according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast glycogen, starch, and cellulose, and discuss the glycosidic bonds involved",
+    "options": [
+      {
+        "text": "Glycogen; more frequent α(1→6) branching every 8–10 residues",
+        "isCorrect": true,
+        "rationale": "Lecture states glycogen is animal storage with α(1→4) chains and α(1→6) branches occurring every 8–10 residues, more frequent than amylopectin."
+      },
+      {
+        "text": "Amylose; linear α(1→4) chains with no branching",
+        "isCorrect": false,
+        "rationale": "Amylose is plant starch with linear α(1→4) linkages and no branches; it would be correct only if asking about unbranched plant starch, not animal storage."
+      },
+      {
+        "text": "Cellulose; β(1→4) linkages forming unbranched structural fibers",
+        "isCorrect": false,
+        "rationale": "Cellulose is structural with β(1→4) bonds and no branching; it would be correct only if the question asked about structural plant polysaccharides rather than storage."
+      },
+      {
+        "text": "Amylopectin; α(1→6) branching every 8–10 residues similar to glycogen",
+        "isCorrect": false,
+        "rationale": "Amylopectin branches every 20–30 residues per the lecture; it would be correct only if its branching frequency matched glycogen's."
+      },
+      {
+        "text": "Chitin; N-acetylglucosamine polymers with β(1→4) bonds",
+        "isCorrect": false,
+        "rationale": "Chitin is a structural polymer of N-acetylglucosamine with β(1→4) bonds in fungi and arthropods; it would be correct only if the question asked about structural polysaccharides outside plants/animals."
+      }
+    ]
+  },
+  {
+    "question": "A researcher incubates a sample of plant cell wall material with an enzyme that specifically cleaves β(1→4) glucose linkages. Which enzyme from the lecture would perform this reaction and what would be the expected product?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast glycogen, starch, and cellulose, and discuss the glycosidic bonds involved",
+    "options": [
+      {
+        "text": "Cellulase; glucose monomers from cellulose",
+        "isCorrect": true,
+        "rationale": "Lecture notes that cellulase breaks β(1→4) linkages in cellulose; cleavage yields glucose units from the cellulose polymer."
+      },
+      {
+        "text": "Amylase; maltose from amylose",
+        "isCorrect": false,
+        "rationale": "Amylase cleaves α(1→4) bonds in starch producing maltose and maltotriose; it would be correct only if the substrate were starch, not cellulose."
+      },
+      {
+        "text": "Lysozyme; N-acetylmuramic acid fragments from peptidoglycan",
+        "isCorrect": false,
+        "rationale": "Lysozyme cleaves β(1→4) bonds between N-acetylglucosamine and N-acetylmuramic acid in bacterial cell walls; it would be correct only for peptidoglycan, not plant cellulose."
+      },
+      {
+        "text": "Lactase; galactose and glucose from lactose",
+        "isCorrect": false,
+        "rationale": "Lactase hydrolyzes β(1→4) lactose into galactose and glucose; it would be correct only if the substrate were lactose, not cellulose."
+      },
+      {
+        "text": "Isomaltase; glucose from α(1→6) branch points",
+        "isCorrect": false,
+        "rationale": "Isomaltase acts on α(1→6) linkages at branch points in glycogen/starch; it would be correct only if the enzyme targeted α(1→6) bonds rather than β(1→4)."
+      }
+    ]
+  },
+  {
+    "question": "A clinician explains why dietary fiber improves stool bulk and regularity. Based on the lecture, which statement best describes the biochemical reason fiber resists human digestion?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the role that cellulose plays in the health benefits of dietary fiber",
+    "options": [
+      {
+        "text": "Humans lack cellulase and cannot hydrolyze β(1→4) cellulose bonds",
+        "isCorrect": true,
+        "rationale": "Lecture explicitly states humans lack cellulase, so cellulose with β(1→4) linkages is indigestible and acts as bulking fiber."
+      },
+      {
+        "text": "Humans lack amylase and cannot hydrolyze α(1→4) starch bonds",
+        "isCorrect": false,
+        "rationale": "Humans produce amylase and can digest α(1→4) bonds in starch; this would be correct only if amylase were absent."
+      },
+      {
+        "text": "Cellulose is composed of fructose polymers resistant to intestinal enzymes",
+        "isCorrect": false,
+        "rationale": "Cellulose is glucose-based, not fructose; this would be correct only if cellulose were a fructan resistant to digestion."
+      },
+      {
+        "text": "Dietary fiber is rapidly absorbed in the small intestine preventing fermentation",
+        "isCorrect": false,
+        "rationale": "Fiber is not absorbed and often reaches the colon where fermentation occurs; this would be correct only if fiber were absorbable."
+      },
+      {
+        "text": "Lactase deficiency causes accumulation of cellulose in the gut",
+        "isCorrect": false,
+        "rationale": "Lactase acts on lactose, not cellulose; this would be correct only if lactase hydrolyzed β(1→4) cellulose bonds, which it does not."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a suspected mucopolysaccharide storage disorder has accumulation of heparan sulfate and dermatan sulfate. According to the lecture, which pair of enzymes when deficient correspond to Hurler and Hunter syndromes respectively?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the enzyme deficiency and findings in mucopolysaccharidoses",
+    "options": [
+      {
+        "text": "α-L-iduronidase deficiency and iduronate-2-sulfatase deficiency",
+        "isCorrect": true,
+        "rationale": "Lecture lists Hurler as α-L-iduronidase deficiency and Hunter as iduronate-2-sulfatase deficiency, both causing heparan and dermatan sulfate accumulation."
+      },
+      {
+        "text": "β-glucuronidase deficiency and arylsulfatase B deficiency",
+        "isCorrect": false,
+        "rationale": "These enzymes are involved in other mucopolysaccharidoses; this would be correct only if the syndromes in question were those specific disorders."
+      },
+      {
+        "text": "Hexosaminidase A deficiency and sphingomyelinase deficiency",
+        "isCorrect": false,
+        "rationale": "Hexosaminidase A and sphingomyelinase deficiencies cause Tay–Sachs and Niemann–Pick respectively, not Hurler/Hunter; it would be correct only if the storage products matched those diseases."
+      },
+      {
+        "text": "Iduronate-2-sulfatase deficiency and α-L-iduronidase deficiency",
+        "isCorrect": false,
+        "rationale": "This reverses the enzyme–syndrome pairing; it would be correct only if the syndromes were swapped between enzymes."
+      },
+      {
+        "text": "Arylsulfatase A deficiency and galactocerebrosidase deficiency",
+        "isCorrect": false,
+        "rationale": "These deficiencies cause metachromatic leukodystrophy and Krabbe disease respectively, not Hurler/Hunter; it would be correct only if the clinical features matched those leukodystrophies."
+      }
+    ]
+  },
+  {
+    "question": "A pathology slide shows bacterial cell wall peptidoglycan. Which repeating disaccharide pair and linkage described in the lecture composes this structure and is a target for lysozyme?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe amino sugars and bacterial cell wall composition",
+    "options": [
+      {
+        "text": "N-acetylglucosamine and N-acetylmuramic acid linked by β(1→4)",
+        "isCorrect": true,
+        "rationale": "Lecture states peptidoglycan is alternating GlcNAc and MurNAc linked by β(1→4), and lysozyme cleaves this bond."
+      },
+      {
+        "text": "Glucose and galactose linked by α(1→4)",
+        "isCorrect": false,
+        "rationale": "Glucose–galactose α(1→4) is not peptidoglycan; it would be correct only if bacterial walls used those monosaccharides and α linkages."
+      },
+      {
+        "text": "N-acetylglucosamine and glucuronic acid linked by β(1→3)",
+        "isCorrect": false,
+        "rationale": "This describes some glycosaminoglycan linkages, not peptidoglycan; it would be correct only if peptidoglycan used glucuronic acid and β(1→3) bonds."
+      },
+      {
+        "text": "N-acetylgalactosamine and galactose linked by β(1→4)",
+        "isCorrect": false,
+        "rationale": "This combination appears in other glycoconjugates; it would be correct only if bacterial peptidoglycan used GalNAc instead of GlcNAc."
+      },
+      {
+        "text": "Fructose polymers linked by β(2→1)",
+        "isCorrect": false,
+        "rationale": "Fructan β(2→1) linkages are not components of peptidoglycan; it would be correct only if bacterial walls were composed of fructose polymers."
+      }
+    ]
+  },
+  {
+    "question": "A clinician asks which mucopolysaccharide is abundant in synovial fluid and serves as a lubricant in joint cavities. Which molecule from the lecture fits this description?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List the functions of mucopolysaccharides and identify hyaluronic acid",
+    "options": [
+      {
+        "text": "Hyaluronate (hyaluronic acid)",
+        "isCorrect": true,
+        "rationale": "Lecture states hyaluronic acid is found in connective tissues and synovial fluid and serves as a lubricant in joint cavities."
+      },
+      {
+        "text": "Heparin",
+        "isCorrect": false,
+        "rationale": "Heparin is an anticoagulant component of ECM and cell surfaces; it would be correct only if the question asked about anticoagulant glycosaminoglycans."
+      },
+      {
+        "text": "Chondroitin sulfate",
+        "isCorrect": false,
+        "rationale": "Chondroitin sulfate is a cartilage component but hyaluronate is the primary synovial lubricant; it would be correct only if the focus were cartilage structure."
+      },
+      {
+        "text": "Keratan sulfate",
+        "isCorrect": false,
+        "rationale": "Keratan sulfate is found in cornea and tendons; it would be correct only if the question targeted corneal extracellular matrix."
+      },
+      {
+        "text": "Dermatan sulfate",
+        "isCorrect": false,
+        "rationale": "Dermatan sulfate is present in skin and blood vessels; it would be correct only if the question asked about skin ECM components."
+      }
+    ]
+  },
+  {
+    "question": "A lab report shows a glycoprotein with carbohydrate attached to an asparagine residue. According to the lecture, which type of linkage is this and which amino acid side chain is involved?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Discuss proteoglycan linkages and N-glycosidic bonds",
+    "options": [
+      {
+        "text": "N-glycosidic linkage to asparagine side chain amide nitrogen",
+        "isCorrect": true,
+        "rationale": "Lecture explains N-glycosidic bonds attach carbohydrates to the amide nitrogen of asparagine side chains."
+      },
+      {
+        "text": "O-glycosidic linkage to serine side chain hydroxyl oxygen",
+        "isCorrect": false,
+        "rationale": "O-glycosidic bonds attach to serine/threonine hydroxyls; this would be correct only if the sugar were linked to Ser/Thr rather than Asn."
+      },
+      {
+        "text": "N-glycosidic linkage to lysine side chain amine nitrogen",
+        "isCorrect": false,
+        "rationale": "Lysine has a primary amine but N-glycosylation in proteins occurs on asparagine; it would be correct only if lysine were the canonical N-linked site."
+      },
+      {
+        "text": "O-glycosidic linkage to tyrosine phenolic oxygen",
+        "isCorrect": false,
+        "rationale": "Tyrosine O-glycosylation is rare; lecture specifies Ser/Thr for O-glycosidic bonds, so this would be correct only in exceptional cases."
+      },
+      {
+        "text": "Thioether linkage to cysteine sulfur atom",
+        "isCorrect": false,
+        "rationale": "Thioether glycosylation is not described in the lecture; it would be correct only if an uncommon sulfur-linked glycosylation were present."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s red blood cell membrane is analyzed and shows the H substance oligosaccharide but lacks an additional terminal sugar. Based on the lecture, which blood type does this pattern represent?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the structure of substance H and the A, B, and O blood types",
+    "options": [
+      {
+        "text": "Type O blood",
+        "isCorrect": true,
+        "rationale": "Lecture states type O contains only the H substance without additional terminal sugars, producing no A or B antigens."
+      },
+      {
+        "text": "Type A blood",
+        "isCorrect": false,
+        "rationale": "Type A has N-acetylgalactosamine added to the H substance; it would be correct only if that terminal sugar were present."
+      },
+      {
+        "text": "Type B blood",
+        "isCorrect": false,
+        "rationale": "Type B has galactose added to the H substance; it would be correct only if galactose were attached."
+      },
+      {
+        "text": "Bombay phenotype",
+        "isCorrect": false,
+        "rationale": "Bombay phenotype lacks H substance entirely and cannot express A or B; it would be correct only if H substance were absent, not present alone."
+      },
+      {
+        "text": "Type AB blood",
+        "isCorrect": false,
+        "rationale": "Type AB expresses both A and B terminal sugars on H substance; it would be correct only if both N-acetylgalactosamine and galactose were attached."
+      }
+    ]
+  },
+  {
+    "question": "A patient with influenza infection has viral hemagglutinin that binds a specific sugar on host cells. Which carbohydrate mentioned in the lecture serves as that viral receptor?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the role of sialic acid in viral entry and immunology",
+    "options": [
+      {
+        "text": "Sialic acid (N-acetylneuraminic acid)",
+        "isCorrect": true,
+        "rationale": "Lecture notes influenza hemagglutinin binds sialic acid residues on target tissues, facilitating viral entry."
+      },
+      {
+        "text": "N-acetylglucosamine",
+        "isCorrect": false,
+        "rationale": "GlcNAc is a common glycan component but influenza HA specifically recognizes sialic acid; it would be correct only if HA targeted GlcNAc."
+      },
+      {
+        "text": "Galactose",
+        "isCorrect": false,
+        "rationale": "Galactose is part of many glycans but HA binding is mediated by sialic acid; it would be correct only if the virus bound terminal galactose instead."
+      },
+      {
+        "text": "Fructose",
+        "isCorrect": false,
+        "rationale": "Fructose is not a typical terminal receptor for influenza HA; it would be correct only if HA had affinity for fructose residues."
+      },
+      {
+        "text": "N-acetylmuramic acid",
+        "isCorrect": false,
+        "rationale": "Muramic acid is a bacterial cell wall component, not a host cell surface receptor for influenza; it would be correct only in a bacterial context."
+      }
+    ]
+  },
+  {
+    "question": "A student is quizzed on disaccharide composition: which pair of monosaccharides composes sucrose and what is the glycosidic linkage between them as taught in the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List the monosaccharides and glycosidic bonds involved for each of the physiologically important disaccharides",
+    "options": [
+      {
+        "text": "Glucose and fructose joined by an α(1→2) bond",
+        "isCorrect": true,
+        "rationale": "Lecture states sucrose is glucose–fructose linked by an α(1→2) glycosidic bond."
+      },
+      {
+        "text": "Glucose and galactose joined by a β(1→4) bond",
+        "isCorrect": false,
+        "rationale": "This describes lactose (galactose–glucose β(1→4)); it would be correct only if the disaccharide were lactose."
+      },
+      {
+        "text": "Two glucose molecules joined by an α(1→4) bond",
+        "isCorrect": false,
+        "rationale": "This describes maltose (glucose–glucose α(1→4)); it would be correct only if the disaccharide were maltose."
+      },
+      {
+        "text": "Glucose and fructose joined by a β(1→4) bond",
+        "isCorrect": false,
+        "rationale": "Sucrose has an α(1→2) linkage, not β(1→4); it would be correct only if the anomeric configurations and carbons matched that bond."
+      },
+      {
+        "text": "Galactose and fructose joined by an α(1→6) bond",
+        "isCorrect": false,
+        "rationale": "This combination and linkage are not the physiological sucrose structure; it would be correct only if sucrose composition were different."
+      }
+    ]
+  },
+  {
+    "question": "A patient presents with chronic constipation and is counseled to increase intake of plant-based fiber. Which lecture-based statement best explains how this intervention affects bowel function?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the role that cellulose plays in the health benefits of dietary fiber",
+    "options": [
+      {
+        "text": "Insoluble cellulose increases stool bulk because humans cannot digest β(1→4) bonds",
+        "isCorrect": true,
+        "rationale": "Lecture indicates indigestible cellulose (β(1→4) linkages) acts as a bulking agent, normalizing bowel movements."
+      },
+      {
+        "text": "Soluble cellulose is absorbed and increases colonic water reabsorption",
+        "isCorrect": false,
+        "rationale": "Cellulose is insoluble and not absorbed; this would be correct only if the fiber were a soluble, absorbable carbohydrate that increased water reabsorption."
+      },
+      {
+        "text": "Dietary cellulose is hydrolyzed by human amylase producing short-chain fatty acids",
+        "isCorrect": false,
+        "rationale": "Amylase acts on α(1→4) starch, not cellulose; fermentation by colonic bacteria can produce SCFAs, but human enzymes do not hydrolyze cellulose."
+      },
+      {
+        "text": "Cellulose reduces stool bulk by binding bile acids and preventing water retention",
+        "isCorrect": false,
+        "rationale": "Binding bile acids may affect cholesterol but does not reduce stool bulk; this would be correct only if cellulose decreased luminal water content."
+      },
+      {
+        "text": "Increased cellulose intake stimulates pancreatic enzyme secretion improving digestion",
+        "isCorrect": false,
+        "rationale": "Cellulose does not stimulate pancreatic enzymes to improve digestion; it would be correct only if fiber directly increased pancreatic exocrine activity."
+      }
+    ]
+  },
+  {
+    "question": "A clinician asks which enzyme activity would be absent in a patient who cannot cleave cellulose in their diet. Based on the lecture, which enzyme is missing?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Discuss the role that cellulose plays in the health benefits of dietary fiber",
+    "options": [
+      {
+        "text": "Cellulase",
+        "isCorrect": true,
+        "rationale": "Lecture explicitly states humans lack cellulase, the enzyme that breaks β(1→4) linkages in cellulose."
+      },
+      {
+        "text": "Amylase",
+        "isCorrect": false,
+        "rationale": "Amylase digests α(1→4) starch bonds; absence of amylase would impair starch digestion, not cellulose cleavage."
+      },
+      {
+        "text": "Lactase",
+        "isCorrect": false,
+        "rationale": "Lactase hydrolyzes lactose β(1→4) bonds between galactose and glucose; its absence causes lactose intolerance, not inability to digest cellulose."
+      },
+      {
+        "text": "Sucrase",
+        "isCorrect": false,
+        "rationale": "Sucrase cleaves sucrose α(1→2) bonds; lack of sucrase affects sucrose digestion, not cellulose."
+      },
+      {
+        "text": "Lysozyme",
+        "isCorrect": false,
+        "rationale": "Lysozyme cleaves peptidoglycan β(1→4) bonds in bacterial cell walls, not plant cellulose; it would be correct only if peptidoglycan were the substrate."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s stool sample shows increased bacterial fermentation products after lactose ingestion. Which lecture-described process explains the gas and cramping experienced by this patient?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the enzyme deficiency and findings in lactose intolerance",
+    "options": [
+      {
+        "text": "Unabsorbed lactose is fermented by colonic bacteria producing gas and acids",
+        "isCorrect": true,
+        "rationale": "Lecture explains lactase deficiency leads to excess lactose in the gut, which bacteria ferment to gas and acids causing bloating and cramping."
+      },
+      {
+        "text": "Lactose is converted to bile salts increasing intestinal motility",
+        "isCorrect": false,
+        "rationale": "Lactose does not convert to bile salts; this would be correct only if lactose metabolism produced bile acids affecting motility."
+      },
+      {
+        "text": "Pancreatic lipase digests lactose producing free fatty acids that irritate colon",
+        "isCorrect": false,
+        "rationale": "Pancreatic lipase acts on fats, not lactose; this would be correct only if lipase hydrolyzed disaccharides."
+      },
+      {
+        "text": "Intestinal brush-border peptidases degrade lactose causing osmotic diarrhea",
+        "isCorrect": false,
+        "rationale": "Peptidases act on peptides, not lactose; this would be correct only if brush-border peptidases hydrolyzed disaccharides."
+      },
+      {
+        "text": "Excess lactose increases colonic absorption of water leading to constipation",
+        "isCorrect": false,
+        "rationale": "Excess lactose increases luminal osmolarity and draws water into the colon causing diarrhea, not constipation; this would be correct only if lactose promoted water absorption."
+      }
+    ]
+  },
+  {
+    "question": "A biochemistry lab demonstrates phosphorylation of glucose upon cellular entry. According to the lecture, what is the primary purpose of intracellular phosphorylation of free monosaccharides like glucose?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss phosphorylation of sugars and its cellular consequences",
+    "options": [
+      {
+        "text": "Trap sugar inside the cell by preventing transporter re-export",
+        "isCorrect": true,
+        "rationale": "Lecture explains phosphorylation (e.g., glucose → G6P) locks sugar inside the cell because transporters cannot bind phosphorylated glucose, maintaining the gradient."
+      },
+      {
+        "text": "Make the sugar membrane-permeable for mitochondrial uptake",
+        "isCorrect": false,
+        "rationale": "Phosphorylation actually prevents membrane transport rather than facilitating it; it would be correct only if phosphorylation increased membrane permeability."
+      },
+      {
+        "text": "Convert glucose into a storage polymer directly",
+        "isCorrect": false,
+        "rationale": "Phosphorylation is the first step in glycolysis and metabolism, not direct polymerization; it would be correct only if G6P were immediately polymerized into glycogen without further steps."
+      },
+      {
+        "text": "Neutralize the sugar's charge to allow diffusion",
+        "isCorrect": false,
+        "rationale": "Phosphate adds negative charge rather than neutralizing it; this would be correct only if phosphorylation reduced charge to permit diffusion."
+      },
+      {
+        "text": "Signal for immediate export from the cell via vesicles",
+        "isCorrect": false,
+        "rationale": "Phosphorylation prevents export by transporters; it would be correct only if phosphorylation targeted sugars for vesicular export, which the lecture does not state."
+      }
+    ]
+  },
+  {
+    "question": "A pharmacology student asks which class of glycosides includes digitalis and what cardiac effect is produced by these compounds as described in the lecture.",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe glycosides and cardiac glycoside effects",
+    "options": [
+      {
+        "text": "Cardiac glycosides; inhibit Na+/K+ ATPase increasing contractility",
+        "isCorrect": true,
+        "rationale": "Lecture describes digitalis (a cardiac glycoside) inhibiting Na+/K+ pumps, which increases contractility and decreases heart rate."
+      },
+      {
+        "text": "Anthraquinone glycosides; stimulate Na+/K+ ATPase decreasing contractility",
+        "isCorrect": false,
+        "rationale": "Anthraquinone glycosides are laxatives and do not stimulate Na+/K+ ATPase; this would be correct only if they had the opposite cardiac effect."
+      },
+      {
+        "text": "Saponin glycosides; block calcium channels reducing contractility",
+        "isCorrect": false,
+        "rationale": "Saponins have different biological effects and are not described as Na+/K+ ATPase inhibitors; it would be correct only if they blocked calcium channels as stated."
+      },
+      {
+        "text": "Flavonoid glycosides; increase heart rate by β-adrenergic stimulation",
+        "isCorrect": false,
+        "rationale": "Flavonoids are not cardiac glycosides acting on Na+/K+ ATPase; this would be correct only if they acted as β-agonists, which the lecture does not indicate."
+      },
+      {
+        "text": "Steroid glycosides; activate Na+/K+ ATPase increasing heart rate",
+        "isCorrect": false,
+        "rationale": "Digitalis is a steroid-like cardiac glycoside but it inhibits, not activates, Na+/K+ ATPase and increases contractility while decreasing heart rate; this option is incorrect in mechanism and effect."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a mucin-rich secretion is sampled. The carbohydrate portion is predominantly N-acetylgalactosamine attached to serine residues. According to the lecture, which linkage type and proteoglycan classification does this represent?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Differentiate proteoglycan types and O-glycosidic linkages in mucins",
+    "options": [
+      {
+        "text": "O-glycosidic linkage; mucoprotein (mucin)",
+        "isCorrect": true,
+        "rationale": "Lecture states mucins have >10% carbohydrate, often N-acetylgalactosamine, attached via O-glycosidic bonds to Ser/Thr, classifying them as mucoproteins."
+      },
+      {
+        "text": "N-glycosidic linkage; glycoprotein",
+        "isCorrect": false,
+        "rationale": "N-glycosidic bonds attach to asparagine and are typical of glycoproteins with <10% carbohydrate; this would be correct only if the sugar were on Asn."
+      },
+      {
+        "text": "Thioether linkage; proteoglycan core protein",
+        "isCorrect": false,
+        "rationale": "Thioether linkages to cysteine are not described for proteoglycans; it would be correct only if an uncommon sulfur linkage were present."
+      },
+      {
+        "text": "O-glycosidic linkage; glycosaminoglycan",
+        "isCorrect": false,
+        "rationale": "Glycosaminoglycans are long repeating disaccharides often attached to proteins as proteoglycans, but mucins specifically are mucoproteins with O-linked GalNAc; this would be correct only if the carbohydrate were a GAG."
+      },
+      {
+        "text": "N-glycosidic linkage; mucopolysaccharide",
+        "isCorrect": false,
+        "rationale": "Mucopolysaccharides (GAGs) are not typically N-linked to Asn in mucins; this would be correct only if the GAG were N-linked, which is not the lecture description."
+      }
+    ]
+  },
+  {
+    "question": "A student is asked which monosaccharide is a common component of the H substance oligosaccharide on red blood cells and is present in the lecture’s depiction of blood group antigens. Which monosaccharide is part of the H core?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Discuss the structure of substance H and the A, B, and O blood types",
+    "options": [
+      {
+        "text": "N-acetylglucosamine",
+        "isCorrect": true,
+        "rationale": "Lecture indicates the H substance contains N-acetylglucosamine, galactose, and fucose as its core three-sugar oligosaccharide."
+      },
+      {
+        "text": "N-acetylgalactosamine",
+        "isCorrect": false,
+        "rationale": "N-acetylgalactosamine is the terminal sugar added to form the A antigen, not part of the minimal H core; it would be correct only if the H substance already had the A modification."
+      },
+      {
+        "text": "Fructose",
+        "isCorrect": false,
+        "rationale": "Fructose is not part of the H substance core as depicted in the lecture; it would be correct only if the oligosaccharide composition included fructose, which it does not."
+      },
+      {
+        "text": "Glucose",
+        "isCorrect": false,
+        "rationale": "Glucose is not listed as a component of the H substance core in the lecture; it would be correct only if the core sugars were different."
+      },
+      {
+        "text": "N-acetylneuraminic acid",
+        "isCorrect": false,
+        "rationale": "Sialic acid (NANA) is a terminal residue in some glycans but is not the core H substance sugar listed; it would be correct only if sialylation defined the H core."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected Hunter syndrome lacks corneal clouding but shows hepatosplenomegaly and behavioral changes. Based on the lecture, which inheritance pattern and enzyme deficiency best match this presentation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify clinical features and inheritance of Hunter syndrome",
+    "options": [
+      {
+        "text": "X-linked recessive iduronate-2-sulfatase deficiency",
+        "isCorrect": true,
+        "rationale": "Lecture describes Hunter syndrome as X-linked due to iduronate-2-sulfatase deficiency, with milder Hurler features and no corneal clouding."
+      },
+      {
+        "text": "Autosomal recessive α-L-iduronidase deficiency",
+        "isCorrect": false,
+        "rationale": "α-L-iduronidase deficiency causes Hurler syndrome (AR) with corneal clouding; it would be correct only if the patient had Hurler features."
+      },
+      {
+        "text": "Autosomal dominant heparanase deficiency",
+        "isCorrect": false,
+        "rationale": "Heparanase deficiency and AD inheritance are not described in the lecture; it would be correct only if a different enzyme and inheritance matched Hunter."
+      },
+      {
+        "text": "X-linked recessive α-L-iduronidase deficiency",
+        "isCorrect": false,
+        "rationale": "α-L-iduronidase deficiency is AR Hurler, not X-linked Hunter; this would be correct only if inheritance were misassigned."
+      },
+      {
+        "text": "Autosomal recessive iduronate-2-sulfatase deficiency",
+        "isCorrect": false,
+        "rationale": "Iduronate-2-sulfatase deficiency is X-linked Hunter, not AR; it would be correct only if inheritance were autosomal recessive."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s bacterial infection is treated with a drug that enhances lysozyme activity. According to the lecture, lysozyme cleaves which bond in bacterial cell walls and between which two sugar residues?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe peptidoglycan structure and lysozyme cleavage site",
+    "options": [
+      {
+        "text": "β(1→4) bond between N-acetylglucosamine and N-acetylmuramic acid",
+        "isCorrect": true,
+        "rationale": "Lecture indicates lysozyme cleaves the β(1→4) linkage between GlcNAc and MurNAc in peptidoglycan."
+      },
+      {
+        "text": "α(1→4) bond between glucose and glucose in starch",
+        "isCorrect": false,
+        "rationale": "α(1→4) bonds are in starch and cleaved by amylase, not lysozyme; it would be correct only if lysozyme targeted starch."
+      },
+      {
+        "text": "β(1→3) bond between glucuronic acid and N-acetylglucosamine",
+        "isCorrect": false,
+        "rationale": "β(1→3) bonds occur in some GAGs, not peptidoglycan; it would be correct only if lysozyme targeted GAGs."
+      },
+      {
+        "text": "α(1→6) bond at glycogen branch points",
+        "isCorrect": false,
+        "rationale": "α(1→6) branch points are cleaved by debranching enzymes/isomaltase, not lysozyme; it would be correct only if lysozyme acted on glycogen."
+      },
+      {
+        "text": "β(1→4) bond between glucose and galactose in lactose",
+        "isCorrect": false,
+        "rationale": "Lactose β(1→4) is cleaved by lactase, not lysozyme; it would be correct only if lysozyme hydrolyzed lactose."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a genetic inability to add N-acetylgalactosamine to the H substance would lack which blood group antigen according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how terminal sugar additions determine A and B antigens",
+    "options": [
+      {
+        "text": "A antigen",
+        "isCorrect": true,
+        "rationale": "Lecture states the A antigen is formed by adding N-acetylgalactosamine to the H substance; inability to add it prevents A antigen expression."
+      },
+      {
+        "text": "B antigen",
+        "isCorrect": false,
+        "rationale": "B antigen requires addition of galactose, not N-acetylgalactosamine; it would be correct only if galactose addition were impaired."
+      },
+      {
+        "text": "H antigen",
+        "isCorrect": false,
+        "rationale": "H substance is the core oligosaccharide present before A/B modifications; inability to add GalNAc does not remove the H substance itself."
+      },
+      {
+        "text": "Bombay phenotype",
+        "isCorrect": false,
+        "rationale": "Bombay phenotype lacks H substance entirely; inability to add GalNAc produces type O phenotype if H is present, not Bombay."
+      },
+      {
+        "text": "AB antigen",
+        "isCorrect": false,
+        "rationale": "AB requires both A and B terminal sugars; inability to add GalNAc would prevent A but could still allow B if galactose transferase is functional."
+      }
+    ]
+  },
+  {
+    "question": "A researcher isolates a glycosaminoglycan composed of repeating disaccharide units of glucuronic acid and N-acetylglucosamine linked β(1→3). Which mucopolysaccharide from the lecture matches this composition?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify mucopolysaccharide structures and repeating disaccharide units",
+    "options": [
+      {
+        "text": "Hyaluronate (hyaluronic acid)",
+        "isCorrect": true,
+        "rationale": "Lecture shows hyaluronate consists of repeating glucuronic acid and N-acetylglucosamine linked β(1→3) and β(1→4) alternately; the β(1→3) linkage between these units is characteristic."
+      },
+      {
+        "text": "Heparin",
+        "isCorrect": false,
+        "rationale": "Heparin contains iduronic acid and glucosamine with sulfation patterns; it would be correct only if the repeating units matched heparin's composition."
+      },
+      {
+        "text": "Chondroitin sulfate",
+        "isCorrect": false,
+        "rationale": "Chondroitin sulfate is composed of glucuronic acid and N-acetylgalactosamine, not GlcNAc; it would be correct only if GalNAc were present instead of GlcNAc."
+      },
+      {
+        "text": "Dermatan sulfate",
+        "isCorrect": false,
+        "rationale": "Dermatan sulfate contains iduronic acid and GalNAc variants; it would be correct only if iduronic acid replaced glucuronic acid."
+      },
+      {
+        "text": "Keratan sulfate",
+        "isCorrect": false,
+        "rationale": "Keratan sulfate is composed of galactose and GlcNAc, not glucuronic acid; it would be correct only if galactose were the uronic sugar."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected glycogen storage disease has impaired debranching enzyme activity. Based on the lecture’s description of glycogen structure, which glycosidic bond would accumulate at branch points?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe glycogen branching and α(1→6) linkages",
+    "options": [
+      {
+        "text": "α(1→6) glycosidic bonds at branch points",
+        "isCorrect": true,
+        "rationale": "Lecture explains glycogen branching occurs via α(1→6) linkages; defective debranching would lead to accumulation of these branch point bonds."
+      },
+      {
+        "text": "α(1→4) glycosidic bonds in linear chains",
+        "isCorrect": false,
+        "rationale": "α(1→4) bonds form the linear backbone and would accumulate only if chain elongation or cleavage of linear segments were impaired."
+      },
+      {
+        "text": "β(1→4) glycosidic bonds in structural fibers",
+        "isCorrect": false,
+        "rationale": "β(1→4) bonds are characteristic of cellulose, not glycogen; it would be correct only if structural β linkages were involved."
+      },
+      {
+        "text": "β(1→3) glycosidic bonds in mucopolysaccharides",
+        "isCorrect": false,
+        "rationale": "β(1→3) bonds occur in some GAGs; this would be correct only if glycogen used β linkages, which it does not."
+      },
+      {
+        "text": "α(1→2) glycosidic bonds between glucose and fructose",
+        "isCorrect": false,
+        "rationale": "α(1→2) bonds are in sucrose (glucose–fructose), not glycogen; it would be correct only if sucrose-like linkages were present in glycogen."
+      }
+    ]
+  },
+  {
+    "question": "A clinician considers enzyme replacement for a mucopolysaccharidosis caused by α-L-iduronidase deficiency. Which syndrome and primary accumulated substrates from the lecture would this therapy target?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss lysosomal storage disorders mucopolysaccharidoses and enzyme deficiencies",
+    "options": [
+      {
+        "text": "Hurler syndrome with heparan sulfate and dermatan sulfate accumulation",
+        "isCorrect": true,
+        "rationale": "Lecture identifies Hurler syndrome as α-L-iduronidase deficiency leading to accumulation of heparan and dermatan sulfates; enzyme replacement would target these substrates."
+      },
+      {
+        "text": "Hunter syndrome with heparan sulfate and dermatan sulfate accumulation",
+        "isCorrect": false,
+        "rationale": "Hunter syndrome involves iduronate-2-sulfatase deficiency (X-linked); enzyme replacement for α-L-iduronidase would not correct Hunter unless α-L-iduronidase were deficient."
+      },
+      {
+        "text": "Tay–Sachs disease with GM2 ganglioside accumulation",
+        "isCorrect": false,
+        "rationale": "Tay–Sachs is due to hexosaminidase A deficiency causing GM2 accumulation; it would be correct only if the enzyme deficiency and substrates matched Tay–Sachs."
+      },
+      {
+        "text": "Niemann–Pick disease with sphingomyelin accumulation",
+        "isCorrect": false,
+        "rationale": "Niemann–Pick involves sphingomyelinase deficiency and sphingomyelin accumulation; it would be correct only if the disorder and substrates matched."
+      },
+      {
+        "text": "Gaucher disease with glucocerebroside accumulation",
+        "isCorrect": false,
+        "rationale": "Gaucher disease is due to glucocerebrosidase deficiency causing glucocerebroside buildup; it would be correct only if that enzyme were deficient."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic diarrhea is found to have bacterial overgrowth producing short-chain fatty acids from undigested carbohydrates. Which lecture-described carbohydrate modification would most directly prevent a monosaccharide from leaving the cell and thus reduce its availability for bacterial fermentation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss phosphorylation of sugars and how it locks sugars inside the cell",
+    "options": [
+      {
+        "text": "Phosphorylation of glucose to glucose-6-phosphate",
+        "isCorrect": true,
+        "rationale": "Lecture explains phosphorylation (e.g., glucose → G6P) prevents transporters from binding phosphorylated glucose, trapping it intracellularly and reducing luminal substrate for bacteria."
+      },
+      {
+        "text": "Acetylation of glucose to form N-acetylglucosamine",
+        "isCorrect": false,
+        "rationale": "Acetylation produces amino sugars used in structural polymers, not a mechanism to trap free glucose intracellularly; it would be correct only if acetylation prevented export similarly to phosphorylation."
+      },
+      {
+        "text": "Glycosylation of proteins with O-linked GalNAc",
+        "isCorrect": false,
+        "rationale": "O-glycosylation attaches sugars to proteins, not free monosaccharides; it would be correct only if glycosylation removed free sugars from the lumen."
+      },
+      {
+        "text": "Sulfation of glycosaminoglycans increasing their negative charge",
+        "isCorrect": false,
+        "rationale": "Sulfation modifies GAGs for ECM function and does not trap free monosaccharides inside cells; it would be correct only if sulfation affected monosaccharide transport."
+      },
+      {
+        "text": "Branching of glycogen via α(1→6) linkages",
+        "isCorrect": false,
+        "rationale": "Branching stores glucose as polymer but requires intracellular enzymatic steps; phosphorylation is the immediate trap—branching would be correct only if polymerization were the primary trapping step."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a rare mutation prevents formation of the anomeric carbon during sugar cyclization. Which property described in the lecture would be directly lost in the mutant monosaccharide?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain cyclization of carbohydrates and the formation of anomeric carbons and anomers",
+    "options": [
+      {
+        "text": "Ability to form α and β anomers",
+        "isCorrect": true,
+        "rationale": "Lecture explains cyclization creates a new asymmetric anomeric carbon that can exist as α or β; without cyclization, anomer formation is impossible."
+      },
+      {
+        "text": "Presence of a carbonyl group in the linear form",
+        "isCorrect": false,
+        "rationale": "The carbonyl exists in the open-chain form prior to cyclization; loss of anomeric carbon formation would not remove the original carbonyl unless the molecule were altered."
+      },
+      {
+        "text": "Chirality at all original stereocenters",
+        "isCorrect": false,
+        "rationale": "Cyclization creates an additional stereocenter but does not eliminate existing chiral centers; this would be correct only if original stereocenters were racemized."
+      },
+      {
+        "text": "Ability to be classified as an aldose or ketose",
+        "isCorrect": false,
+        "rationale": "Aldose/ketose classification depends on the carbonyl position in the linear form and remains definable even without cyclization; it would be correct only if the carbonyl were absent."
+      },
+      {
+        "text": "Formation of epimers at C-4",
+        "isCorrect": false,
+        "rationale": "Epimerization at C-4 is independent of anomer formation; loss of anomeric carbon would not prevent epimer differences at other carbons."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected congenital disorder of glycosylation has defective N-linked glycosylation. According to the lecture, which amino acid residue on proteins would most likely lack carbohydrate attachment?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss proteoglycan linkages and N-glycosidic bonds",
+    "options": [
+      {
+        "text": "Asparagine",
+        "isCorrect": true,
+        "rationale": "Lecture states N-glycosidic bonds attach carbohydrates to the amide nitrogen of asparagine side chains; defective N-glycosylation would affect Asn-linked glycans."
+      },
+      {
+        "text": "Serine",
+        "isCorrect": false,
+        "rationale": "Serine is the site of O-linked glycosylation; it would be correct only if O-glycosylation were defective rather than N-linked."
+      },
+      {
+        "text": "Threonine",
+        "isCorrect": false,
+        "rationale": "Threonine is also an O-linked glycosylation site; it would be correct only if O-glycosylation were the affected pathway."
+      },
+      {
+        "text": "Lysine",
+        "isCorrect": false,
+        "rationale": "Lysine is not the canonical N-linked glycosylation site; it would be correct only if an atypical glycosylation on lysine occurred."
+      },
+      {
+        "text": "Tyrosine",
+        "isCorrect": false,
+        "rationale": "Tyrosine glycosylation is rare and not the primary N-linked site; it would be correct only in exceptional cases."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic hypercholesterolemia is advised that dietary fiber can help control cholesterol. Based on the lecture, which fiber property most directly contributes to cholesterol control?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss dietary fiber functions including cholesterol control",
+    "options": [
+      {
+        "text": "Indigestible fiber binds bile acids and reduces cholesterol reabsorption",
+        "isCorrect": true,
+        "rationale": "Lecture lists fiber functions including control of cholesterol; insoluble and soluble fibers can bind bile acids, promoting excretion and lowering cholesterol."
+      },
+      {
+        "text": "Fiber increases pancreatic lipase activity enhancing cholesterol synthesis",
+        "isCorrect": false,
+        "rationale": "Fiber does not increase pancreatic lipase to raise cholesterol; it would be correct only if fiber stimulated lipase and cholesterol production."
+      },
+      {
+        "text": "Fiber is absorbed and converted into HDL in the liver",
+        "isCorrect": false,
+        "rationale": "Fiber is not absorbed and does not convert into HDL; this would be correct only if fiber were metabolized into lipoproteins."
+      },
+      {
+        "text": "Fiber directly inhibits HMG-CoA reductase in hepatocytes",
+        "isCorrect": false,
+        "rationale": "Lecture does not state fiber inhibits HMG-CoA reductase; it would be correct only if fiber had a direct enzymatic inhibitory effect on cholesterol synthesis."
+      },
+      {
+        "text": "Fiber increases intestinal cholesterol synthesis increasing fecal cholesterol",
+        "isCorrect": false,
+        "rationale": "Fiber reduces cholesterol absorption and increases excretion rather than increasing intestinal cholesterol synthesis; it would be correct only if synthesis were upregulated."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected deficiency of enzymes that remove sulfate groups from glycosaminoglycans presents with features overlapping Hurler syndrome. Which lecture-described enzyme deficiency would produce a similar mucopolysaccharide accumulation if sulfatase activity were lost?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Relate specific enzyme defects to mucopolysaccharide accumulation and clinical syndromes",
+    "options": [
+      {
+        "text": "Iduronate-2-sulfatase deficiency producing dermatan and heparan sulfate accumulation",
+        "isCorrect": true,
+        "rationale": "Lecture identifies iduronate-2-sulfatase deficiency as Hunter syndrome, leading to accumulation of heparan and dermatan sulfates; loss of sulfatase activity causes similar substrate buildup."
+      },
+      {
+        "text": "α-L-iduronidase deficiency producing keratan sulfate accumulation",
+        "isCorrect": false,
+        "rationale": "α-L-iduronidase deficiency (Hurler) leads to heparan and dermatan sulfate accumulation, not keratan sulfate; it would be correct only if keratan sulfate were the primary substrate."
+      },
+      {
+        "text": "Arylsulfatase B deficiency producing glycosaminoglycan accumulation in cornea",
+        "isCorrect": false,
+        "rationale": "Arylsulfatase B deficiency causes other mucopolysaccharidoses with different GAGs; it would be correct only if the clinical and substrate profile matched that enzyme's disease."
+      },
+      {
+        "text": "Hexosaminidase A deficiency producing heparan sulfate accumulation",
+        "isCorrect": false,
+        "rationale": "Hexosaminidase A deficiency causes GM2 ganglioside accumulation (Tay–Sachs), not heparan sulfate; it would be correct only if hexosaminidase targeted GAGs."
+      },
+      {
+        "text": "Glucocerebrosidase deficiency producing dermatan sulfate accumulation",
+        "isCorrect": false,
+        "rationale": "Glucocerebrosidase deficiency (Gaucher) leads to glucocerebroside accumulation, not dermatan sulfate; it would be correct only if the enzyme acted on GAGs."
+      }
+    ]
+  },
+  {
+    "question": "A newborn screen shows absent activity of an enzyme that normally cleaves β(1→4) linkages in bacterial peptidoglycan. Which innate immune enzyme from the lecture is likely deficient and what clinical consequence might follow?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain lysozyme function and its role in innate immunity",
+    "options": [
+      {
+        "text": "Lysozyme deficiency; increased susceptibility to bacterial infections",
+        "isCorrect": true,
+        "rationale": "Lecture describes lysozyme cleaving β(1→4) bonds in peptidoglycan; deficiency would impair this innate defense and increase infection risk."
+      },
+      {
+        "text": "Lactase deficiency; increased neonatal diarrhea from lactose malabsorption",
+        "isCorrect": false,
+        "rationale": "Lactase acts on lactose in the gut, not peptidoglycan; this would be correct only if the enzyme measured were lactase and the clinical picture matched lactose intolerance."
+      },
+      {
+        "text": "Cellulase deficiency; failure to digest plant fiber leading to constipation",
+        "isCorrect": false,
+        "rationale": "Cellulase digests cellulose and humans lack it normally; deficiency would not explain susceptibility to bacterial infection and would be correct only if fiber digestion were the issue."
+      },
+      {
+        "text": "Amylase deficiency; impaired starch digestion causing hypoglycemia",
+        "isCorrect": false,
+        "rationale": "Amylase digests starch; its deficiency affects carbohydrate digestion, not innate bacterial cell wall cleavage; it would be correct only if starch digestion were implicated."
+      },
+      {
+        "text": "Iduronate-2-sulfatase deficiency; accumulation of dermatan sulfate causing organomegaly",
+        "isCorrect": false,
+        "rationale": "Iduronate-2-sulfatase deficiency causes Hunter syndrome with organomegaly, not innate immune impairment; it would be correct only if mucopolysaccharide storage were the primary concern."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected congenital absence of the enzyme that converts glucose to glucose-6-phosphate is studied. According to the lecture, which immediate cellular effect would most likely be observed?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe phosphorylation of sugars and consequences for cellular glucose handling",
+    "options": [
+      {
+        "text": "Inability to trap glucose intracellularly leading to impaired glycolysis",
+        "isCorrect": true,
+        "rationale": "Lecture explains phosphorylation (to G6P) locks glucose inside the cell and is the first step of glycolysis; absence would prevent trapping and impair glycolysis."
+      },
+      {
+        "text": "Excess glycogen branching due to unregulated α(1→6) linkages",
+        "isCorrect": false,
+        "rationale": "Glycogen branching depends on branching enzymes and available G6P; without phosphorylation, glycogen synthesis would be reduced, not increased."
+      },
+      {
+        "text": "Accumulation of free phosphorylated sugars in the cytosol",
+        "isCorrect": false,
+        "rationale": "If phosphorylation is absent, phosphorylated sugars would not accumulate; this would be correct only if downstream dephosphorylation were blocked."
+      },
+      {
+        "text": "Increased export of glucose due to enhanced transporter affinity for G6P",
+        "isCorrect": false,
+        "rationale": "Transporters do not bind phosphorylated glucose; absence of phosphorylation would increase export, not enhanced affinity for G6P; this would be correct only if transporters recognized G6P."
+      },
+      {
+        "text": "Enhanced formation of N-acetylglucosamine from glucose increasing structural polymers",
+        "isCorrect": false,
+        "rationale": "Conversion to GlcNAc requires specific pathways and acetylation; lack of phosphorylation would not directly enhance GlcNAc formation and polymerization."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic constipation is counseled about fiber types. According to the lecture, which of the following is a correct pairing of fiber property and physiologic benefit?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the functions of dietary fiber including bowel health and weight control",
+    "options": [
+      {
+        "text": "Indigestible fiber increases stool bulk and helps maintain bowel regularity",
+        "isCorrect": true,
+        "rationale": "Lecture lists dietary fiber (indigestible cellulose) as normalizing bowel movements and maintaining bowel health by acting as a bulking agent."
+      },
+      {
+        "text": "Indigestible fiber is absorbed and increases blood glucose rapidly",
+        "isCorrect": false,
+        "rationale": "Indigestible fiber is not absorbed and does not raise blood glucose; this would be correct only if the fiber were digestible carbohydrate."
+      },
+      {
+        "text": "Soluble fiber is converted to cholesterol in the liver increasing LDL",
+        "isCorrect": false,
+        "rationale": "Soluble fiber tends to lower cholesterol by binding bile acids; it would be correct only if fiber increased hepatic cholesterol synthesis leading to higher LDL."
+      },
+      {
+        "text": "Insoluble fiber decreases stool bulk and causes constipation",
+        "isCorrect": false,
+        "rationale": "Insoluble fiber increases stool bulk and relieves constipation; this would be correct only if fiber reduced bulk, which contradicts the lecture."
+      },
+      {
+        "text": "Dietary fiber directly supplies ATP to colonocytes via absorption",
+        "isCorrect": false,
+        "rationale": "Fiber itself is not absorbed to supply ATP; fermentation products (SCFAs) can be used by colonocytes, but fiber is not directly absorbed as ATP source."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a mutation preventing formation of N-acetylneuraminic acid on leukocyte glycoproteins is studied. Based on the lecture, which leukocyte function would be impaired?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the role of sialic acid in leukocyte rolling and selectin binding",
+    "options": [
+      {
+        "text": "Leukocyte rolling mediated by selectin binding",
+        "isCorrect": true,
+        "rationale": "Lecture states selectins bind sialic acid residues on glycoproteins to mediate leukocyte rolling; absence of sialic acid would impair this interaction."
+      },
+      {
+        "text": "Phagocytosis via Fc receptor recognition",
+        "isCorrect": false,
+        "rationale": "Fc receptor–mediated phagocytosis depends on antibody opsonization, not sialic acid; it would be correct only if sialylation directly affected Fc binding."
+      },
+      {
+        "text": "Oxidative burst due to NADPH oxidase activation",
+        "isCorrect": false,
+        "rationale": "Oxidative burst is intracellular and not directly dependent on surface sialic acid; it would be correct only if sialic acid regulated NADPH oxidase."
+      },
+      {
+        "text": "Complement C3b deposition on bacterial surfaces",
+        "isCorrect": false,
+        "rationale": "Complement deposition is a separate pathway and not directly mediated by leukocyte sialic acid; it would be correct only if sialic acid influenced complement activation."
+      },
+      {
+        "text": "Chemotaxis toward IL-8 gradients",
+        "isCorrect": false,
+        "rationale": "Chemotaxis relies on chemokine receptors and intracellular signaling, not sialic acid–selectin interactions; it would be correct only if sialic acid affected chemokine receptor function."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected deficiency of brush-border disaccharidases cannot digest sucrose. According to the lecture, which enzyme is most likely deficient and what bond does it cleave?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List disaccharide-specific enzymes and the bonds they hydrolyze",
+    "options": [
+      {
+        "text": "Sucrase; cleaves α(1→2) bond in sucrose",
+        "isCorrect": true,
+        "rationale": "Lecture states sucrose (glucose–fructose) is hydrolyzed by sucrase at the α(1→2) linkage."
+      },
+      {
+        "text": "Lactase; cleaves β(1→4) bond in lactose",
+        "isCorrect": false,
+        "rationale": "Lactase cleaves lactose β(1→4) bonds; it would be correct only if the disaccharide were lactose."
+      },
+      {
+        "text": "Maltase; cleaves β(1→4) bond in maltose",
+        "isCorrect": false,
+        "rationale": "Maltase cleaves α(1→4) bonds in maltose, not β(1→4); this would be correct only if maltose had β linkages."
+      },
+      {
+        "text": "Isomaltase; cleaves β(1→6) branch points in glycogen",
+        "isCorrect": false,
+        "rationale": "Isomaltase acts on α(1→6) branch points, not β(1→6); it would be correct only if branch point linkages were β and in glycogen."
+      },
+      {
+        "text": "Cellulase; cleaves β(1→4) bonds in cellulose",
+        "isCorrect": false,
+        "rationale": "Cellulase cleaves β(1→4) cellulose bonds and humans lack it; it would be correct only if sucrose contained β(1→4) cellulose-like bonds."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a rare mutation prevents addition of fucose to the H substance. According to the lecture, which blood group antigen would be absent or altered in this patient?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the H substance composition and its role in blood group antigen formation",
+    "options": [
+      {
+        "text": "All ABO antigens would be absent (Bombay phenotype)",
+        "isCorrect": true,
+        "rationale": "Lecture indicates the H substance includes fucose; absence of fucosylation prevents formation of H substance and thus A/B antigens, producing the Bombay phenotype."
+      },
+      {
+        "text": "Only A antigen would be absent while B remains",
+        "isCorrect": false,
+        "rationale": "A antigen requires GalNAc addition to H substance; if H is absent due to lack of fucose, both A and B cannot form, so this would be correct only if fucose were required only for A."
+      },
+      {
+        "text": "Only B antigen would be absent while A remains",
+        "isCorrect": false,
+        "rationale": "B antigen requires galactose addition to H substance; absence of fucose prevents H formation for both A and B, so this would be correct only if B formation were independent of fucose."
+      },
+      {
+        "text": "Type O blood would be converted to type A",
+        "isCorrect": false,
+        "rationale": "Type O has H substance but lacks A/B terminal sugars; without fucose, H is absent and the phenotype is Bombay, not conversion to A."
+      },
+      {
+        "text": "Type AB would become type B due to loss of GalNAc transferase",
+        "isCorrect": false,
+        "rationale": "Loss of fucose affects H substance, not GalNAc transferase; this would be correct only if the A transferase were specifically lost."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic sinus infections is found to have defective sialylation of mucins in airway secretions. Based on the lecture, which mucin property and function would be most directly affected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain mucin composition and the role of sialic acid in mucosal glycoproteins",
+    "options": [
+      {
+        "text": "Negative charge and binding interactions of mucins reducing pathogen clearance",
+        "isCorrect": true,
+        "rationale": "Lecture notes mucins often contain sialic acid; loss of sialylation reduces negative charge and selectin/sialic acid–mediated interactions, impairing mucosal defense and clearance."
+      },
+      {
+        "text": "Proteolytic stability of mucin peptide backbone increasing degradation",
+        "isCorrect": false,
+        "rationale": "Sialylation primarily affects glycan charge and recognition, not direct proteolytic stability of the peptide backbone; this would be correct only if sialic acid protected against proteases."
+      },
+      {
+        "text": "Ability of mucins to form N-glycosidic bonds to asparagine",
+        "isCorrect": false,
+        "rationale": "Mucin O-glycosylation involves Ser/Thr and GalNAc; sialylation does not determine N-glycosylation to Asn, so this would be correct only if N-glycosylation were dependent on sialic acid."
+      },
+      {
+        "text": "Conversion of mucins into glycosaminoglycans increasing viscosity",
+        "isCorrect": false,
+        "rationale": "Mucins and GAGs are distinct classes; loss of sialylation does not convert mucins into GAGs, so this would be correct only if biochemical pathways were altered."
+      },
+      {
+        "text": "Direct inhibition of Na+/K+ ATPase in airway epithelial cells",
+        "isCorrect": false,
+        "rationale": "Sialylation of mucins does not directly inhibit Na+/K+ ATPase; this would be correct only if sialic acid acted as an ATPase inhibitor."
+      }
+    ]
+  }
+]
