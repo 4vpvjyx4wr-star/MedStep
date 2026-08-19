@@ -1,0 +1,1154 @@
+[
+  {
+    "question": "A researcher observes a cytokine that acts back on the same lymphocyte that secreted it. Which term best describes this mode of action?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define autocrine, paracrine and endocrine in the context of cytokine activity.",
+    "options": [
+      {
+        "text": "Autocrine signaling by the secreting cell",
+        "isCorrect": true,
+        "rationale": "Autocrine signaling refers to a cytokine acting on the same cell that produced it; the lecture defines autocrine as self-targeting cytokine activity."
+      },
+      {
+        "text": "Paracrine signaling to nearby cells",
+        "isCorrect": false,
+        "rationale": "Paracrine refers to action on neighboring cells, not the secreting cell; it would be correct if the cytokine affected adjacent cells instead."
+      },
+      {
+        "text": "Endocrine signaling at distant sites",
+        "isCorrect": false,
+        "rationale": "Endocrine implies distant action via circulation; this would be correct only if the cytokine traveled systemically to distant tissues."
+      },
+      {
+        "text": "Juxtacrine signaling via membrane contact",
+        "isCorrect": false,
+        "rationale": "Juxtacrine involves direct cell–cell membrane contact, not soluble cytokine acting on the same cell; it would be correct if membrane-bound ligands were involved."
+      },
+      {
+        "text": "Autonomous intracellular receptor activation",
+        "isCorrect": false,
+        "rationale": "This implies intracellular self-activation rather than secreted cytokine action; it would be correct only if the signaling were entirely intracellular without secretion."
+      }
+    ]
+  },
+  {
+    "question": "Which cell type is the principal source of IL-2 during a primary adaptive response?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the role IL-2 for T cells and identify which cells primarily secrete IL-2.",
+    "options": [
+      {
+        "text": "Activated CD4 T cells primarily secrete",
+        "isCorrect": true,
+        "rationale": "Lecture states CD4 T cells are major producers of IL-2, which supports proliferation and survival of T and NK cells."
+      },
+      {
+        "text": "Resting B lymphocytes at baseline",
+        "isCorrect": false,
+        "rationale": "Resting B cells do not majorly produce IL-2; this would be correct only if B cells were experimentally stimulated to secrete IL-2."
+      },
+      {
+        "text": "Mature neutrophils during acute inflammation",
+        "isCorrect": false,
+        "rationale": "Neutrophils are not primary IL-2 sources; this would be correct only if neutrophils were shown to produce IL-2 in that specific context."
+      },
+      {
+        "text": "Epithelial cells after viral infection",
+        "isCorrect": false,
+        "rationale": "Epithelial cells can produce type I IFNs but are not main IL-2 producers; it would be correct only with atypical epithelial IL-2 expression evidence."
+      },
+      {
+        "text": "Plasmacytoid dendritic cells constitutively",
+        "isCorrect": false,
+        "rationale": "Plasmacytoid DCs are potent type I IFN producers, not IL-2; this would be correct only if they were shown to secrete IL-2 experimentally."
+      }
+    ]
+  },
+  {
+    "question": "A viral-infected cell secretes IFN-α and IFN-β. According to the lecture, what is the primary role of these molecules?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identity the type I interferons, what cells secrete these cytokines, and the role these cytokines play in antiviral responses. (Is this innate or adaptive?)",
+    "options": [
+      {
+        "text": "Induce antiviral state in neighboring cells",
+        "isCorrect": true,
+        "rationale": "Type I IFNs (IFN-α/β) induce antiviral states, upregulate MHC I, and inhibit viral replication; the lecture emphasizes their innate antiviral role."
+      },
+      {
+        "text": "Directly lyse infected host cells",
+        "isCorrect": false,
+        "rationale": "Type I IFNs do not directly lyse cells; they induce antiviral programs. Direct lysis would be correct only for cytotoxic effector cells like CTLs or NKs."
+      },
+      {
+        "text": "Promote IgE class switching in B cells",
+        "isCorrect": false,
+        "rationale": "IgE switching is driven by IL-4/IL-13, not type I IFNs; this option would be correct only if IL-4/IL-13 were present."
+      },
+      {
+        "text": "Differentiate naive CD4 cells into Th17",
+        "isCorrect": false,
+        "rationale": "Th17 differentiation requires IL-1, IL-6, IL-23, and TGF-β; type I IFNs do not drive Th17 fate and would need those cytokines to be correct."
+      },
+      {
+        "text": "Inhibit macrophage classical activation",
+        "isCorrect": false,
+        "rationale": "Type I IFNs support antiviral responses and Th1 activity; inhibition of classical activation would be correct only if anti-inflammatory cytokines like IL-10 dominated."
+      }
+    ]
+  },
+  {
+    "question": "Which combination of cytokines is necessary to drive a naive CD4 cell toward a Th1 phenotype?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the cytokines important for the differentiation to each T helper subset. (What cytokines are needed for Th0 Th1; Th0 Th2; Th0 Th17)",
+    "options": [
+      {
+        "text": "IL-12 together with interferon gamma",
+        "isCorrect": true,
+        "rationale": "Lecture specifies IL-12 from DCs/macrophages and IFN-γ (initially from NK cells) drive Th1 differentiation."
+      },
+      {
+        "text": "IL-4 together with transforming growth factor",
+        "isCorrect": false,
+        "rationale": "IL-4 drives Th2 differentiation; TGF-β is involved in Th17/Treg pathways. This would be correct only for Th2/Th17 contexts, not Th1."
+      },
+      {
+        "text": "IL-1 together with IL-6 and IL-23",
+        "isCorrect": false,
+        "rationale": "IL-1, IL-6, and IL-23 (plus TGF-β) promote Th17 differentiation; this would be correct only for Th17 lineage commitment."
+      },
+      {
+        "text": "Type I interferons alone without IL-12",
+        "isCorrect": false,
+        "rationale": "Type I IFNs support Th1 responses but IL-12 is required for Th1 differentiation; this option would be correct only if IL-12 were present."
+      },
+      {
+        "text": "IL-10 combined with IL-13 signaling",
+        "isCorrect": false,
+        "rationale": "IL-10 and IL-13 are associated with Th2/anti-inflammatory responses; they do not induce Th1 differentiation and would need IL-12/IFN-γ to be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient with recurrent fungal infections shows impaired neutrophil recruitment. Which helper subset deficiency best explains this finding?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the effector functions of Th1, Th2, Th17, and TFH cells.",
+    "options": [
+      {
+        "text": "Deficiency of Th17 cell mediated responses",
+        "isCorrect": true,
+        "rationale": "Th17 cells produce IL-17 which induces chemokines (e.g., IL-8) and G-CSF to recruit neutrophils; loss of Th17 impairs neutrophil recruitment."
+      },
+      {
+        "text": "Deficiency of Th2 cell mediated responses",
+        "isCorrect": false,
+        "rationale": "Th2 cells drive eosinophil and IgE responses against helminths; neutrophil recruitment is not their primary role and would require Th17 cytokines to be correct."
+      },
+      {
+        "text": "Deficiency of TFH cell mediated responses",
+        "isCorrect": false,
+        "rationale": "Tfh cells support B cell antibody responses; neutrophil recruitment would be correct only if antibody-mediated opsonization were the primary defect."
+      },
+      {
+        "text": "Deficiency of Th1 cell mediated responses",
+        "isCorrect": false,
+        "rationale": "Th1 cells recruit macrophages and activate classical macrophage killing; neutrophil recruitment is mainly Th17-driven and would need IL-17 deficiency to be correct."
+      },
+      {
+        "text": "Deficiency of regulatory T cell responses",
+        "isCorrect": false,
+        "rationale": "Treg deficiency leads to excessive inflammation rather than impaired neutrophil recruitment; this would be correct only if Treg overactivity suppressed neutrophil signals."
+      }
+    ]
+  },
+  {
+    "question": "Which cytokine secreted by Th2 cells directly promotes eosinophil growth and activation?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify and describe the function of cytokines produced by each type of helper T cell. (What cytokines are produced by Th1, Th2, and Th17?)",
+    "options": [
+      {
+        "text": "Interleukin five promotes eosinophil activation",
+        "isCorrect": true,
+        "rationale": "Lecture states IL-5 from Th2 cells drives production, maintenance, and activation of eosinophils."
+      },
+      {
+        "text": "Interleukin two promotes eosinophil activation",
+        "isCorrect": false,
+        "rationale": "IL-2 supports T and NK cell proliferation, not eosinophils; this would be correct only if IL-2 were shown to act on eosinophils experimentally."
+      },
+      {
+        "text": "Interleukin seventeen promotes eosinophil activation",
+        "isCorrect": false,
+        "rationale": "IL-17 recruits neutrophils and induces G-CSF; it does not primarily activate eosinophils and would be correct only in atypical contexts."
+      },
+      {
+        "text": "Interferon gamma promotes eosinophil activation",
+        "isCorrect": false,
+        "rationale": "IFN-γ activates macrophages and supports Th1 responses; eosinophil activation is Th2/IL-5 dependent and would require IL-5 to be correct."
+      },
+      {
+        "text": "Interleukin ten promotes eosinophil activation",
+        "isCorrect": false,
+        "rationale": "IL-10 is anti-inflammatory and inhibits Th1 responses; it does not promote eosinophils and would be correct only if IL-10 had pro-eosinophil effects."
+      }
+    ]
+  },
+  {
+    "question": "Which pair of signals is required for classical (M1) macrophage activation by Th1 cells?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast classical vs alternative macrophage activation processes and the effector functions of macrophages activated by each process.",
+    "options": [
+      {
+        "text": "Interferon gamma plus CD40L costimulation",
+        "isCorrect": true,
+        "rationale": "Lecture explains classical activation requires IFN-γ and costimulatory engagement (CD40L on Th1 binding CD40 on macrophage) to induce microbicidal functions."
+      },
+      {
+        "text": "Interleukin four plus interleukin thirteen",
+        "isCorrect": false,
+        "rationale": "IL-4 and IL-13 drive alternative (M2) activation for tissue repair; this would be correct only for M2 activation, not classical M1."
+      },
+      {
+        "text": "Interleukin ten plus transforming growth factor",
+        "isCorrect": false,
+        "rationale": "IL-10 and TGF-β are anti-inflammatory and associated with M2/Treg responses; they would be correct only for suppressive macrophage phenotypes."
+      },
+      {
+        "text": "Type I interferons without costimulation",
+        "isCorrect": false,
+        "rationale": "Type I IFNs support antiviral states but classical macrophage activation requires IFN-γ plus costimulation; this option would need IFN-γ and CD40L to be correct."
+      },
+      {
+        "text": "Interleukin five plus immunoglobulin E",
+        "isCorrect": false,
+        "rationale": "IL-5 and IgE relate to eosinophil and allergic responses, not classical macrophage activation; it would be correct only in an allergic tissue repair context."
+      }
+    ]
+  },
+  {
+    "question": "A cytotoxic lymphocyte forms a tight junction with a target cell, reorients granules, and releases perforin and granzymes. Which mechanism best describes the subsequent target cell death?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the two mechanisms of how CTLs and NK cells kill their target cells.",
+    "options": [
+      {
+        "text": "Granule mediated apoptosis via caspases",
+        "isCorrect": true,
+        "rationale": "Directional delivery of perforin and granzymes activates caspases in the target cell, inducing apoptosis as described in the lecture."
+      },
+      {
+        "text": "Necrotic lysis from membrane rupture",
+        "isCorrect": false,
+        "rationale": "Perforin/granzyme pathway induces apoptosis rather than uncontrolled necrosis; necrotic lysis would be correct only with massive membrane damage without caspase activation."
+      },
+      {
+        "text": "Antibody mediated complement lysis",
+        "isCorrect": false,
+        "rationale": "Complement-mediated lysis is antibody-dependent and extracellular; CTL granule delivery causes apoptosis and would require complement activation to be correct."
+      },
+      {
+        "text": "Phagocytosis by neighboring macrophages",
+        "isCorrect": false,
+        "rationale": "Phagocytosis clears debris after death but is not the immediate mechanism of CTL killing; this would be correct only as a secondary cleanup process."
+      },
+      {
+        "text": "Autophagic cell death from starvation",
+        "isCorrect": false,
+        "rationale": "Autophagy-related death is unrelated to granule-mediated cytotoxicity; it would be correct only if intracellular nutrient deprivation triggered autophagy."
+      }
+    ]
+  },
+  {
+    "question": "Which surface interaction between a helper lymphocyte and a macrophage provides a key costimulatory signal that enhances macrophage microbicidal activity?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the function of CD40, CD40L, Fas/CD95, and FasL/CD95L and which cells express these molecules.",
+    "options": [
+      {
+        "text": "CD40L on T cell binding CD40",
+        "isCorrect": true,
+        "rationale": "Lecture states CD40L on helper T cells engages CD40 on macrophages or B cells, enhancing activation and microbicidal functions."
+      },
+      {
+        "text": "Fas ligand on T cell binding Fas",
+        "isCorrect": false,
+        "rationale": "FasL:Fas interactions induce apoptosis in target cells and are used by CTLs; this would be correct only for inducing cell death, not macrophage activation."
+      },
+      {
+        "text": "CD28 on T cell binding B7 ligands",
+        "isCorrect": false,
+        "rationale": "CD28:B7 costimulation activates naive T cells, not macrophages; this would be correct only if the question asked about T cell activation."
+      },
+      {
+        "text": "CTLA4 on T cell binding B7 ligands",
+        "isCorrect": false,
+        "rationale": "CTLA-4 engagement inhibits T cell activation; it does not provide macrophage-activating signals and would be correct only in an inhibitory context."
+      },
+      {
+        "text": "LFA1 on T cell binding ICAM1",
+        "isCorrect": false,
+        "rationale": "LFA-1:ICAM-1 stabilizes cell contacts but does not deliver the activating CD40 signal; it would be correct only for adhesion, not costimulatory activation."
+      }
+    ]
+  },
+  {
+    "question": "A vaccine aims to enhance antibody affinity maturation in germinal centers. Which helper subset is most directly targeted to support this process?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the effector functions of Th1, Th2, Th17, and TFH cells.",
+    "options": [
+      {
+        "text": "Follicular helper T cells support B cells",
+        "isCorrect": true,
+        "rationale": "Tfh cells reside in follicles and promote isotype switching, affinity maturation, and B cell survival as described in the lecture."
+      },
+      {
+        "text": "Th1 cells support macrophage microbicidal activity",
+        "isCorrect": false,
+        "rationale": "Th1 cells enhance macrophage killing and cell-mediated immunity; this would be correct only for cellular immunity, not germinal center B cell help."
+      },
+      {
+        "text": "Th2 cells primarily recruit neutrophils",
+        "isCorrect": false,
+        "rationale": "Th2 cells drive eosinophils and IgE responses, not neutrophil recruitment; neutrophil recruitment is Th17-driven and would be correct only then."
+      },
+      {
+        "text": "Th17 cells induce antibody class switching",
+        "isCorrect": false,
+        "rationale": "Th17 cells promote neutrophil recruitment and epithelial defenses; they are not the main drivers of affinity maturation and would need Tfh-like functions to be correct."
+      },
+      {
+        "text": "Regulatory T cells enhance germinal centers",
+        "isCorrect": false,
+        "rationale": "Tregs suppress immune responses and do not promote affinity maturation; this would be correct only if specialized Tregs supported B cell tolerance."
+      }
+    ]
+  },
+  {
+    "question": "Which cytokine produced by Th1 cells inhibits differentiation of Th2 and Th17 lineages?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify and describe the function of cytokines produced by each type of helper T cell. (What cytokines are produced by Th1, Th2, and Th17?)",
+    "options": [
+      {
+        "text": "Interferon gamma inhibits Th2 and Th17",
+        "isCorrect": true,
+        "rationale": "Lecture notes that IFN-γ produced by Th1 cells inhibits Th2 and Th17 differentiation while promoting classical macrophage activation."
+      },
+      {
+        "text": "Interleukin four inhibits Th2 and Th17",
+        "isCorrect": false,
+        "rationale": "IL-4 promotes Th2 differentiation and inhibits Th1, not Th2; this would be correct only if IL-4 suppressed Th17 specifically, which it does not primarily do."
+      },
+      {
+        "text": "Interleukin ten inhibits Th2 and Th17",
+        "isCorrect": false,
+        "rationale": "IL-10 is anti-inflammatory and inhibits Th1 responses; it does not primarily inhibit Th2 and Th17 and would be correct only in a different regulatory context."
+      },
+      {
+        "text": "Interleukin seventeen inhibits Th2 and Th17",
+        "isCorrect": false,
+        "rationale": "IL-17 is produced by Th17 and promotes inflammation; it does not inhibit Th2/Th17 and would be correct only if IL-17 had suppressive roles."
+      },
+      {
+        "text": "Tumor necrosis factor inhibits Th2 and Th17",
+        "isCorrect": false,
+        "rationale": "TNF is proinflammatory and supports Th1 functions but is not the primary inhibitor of Th2/Th17 differentiation; IFN-γ is required for that inhibitory effect."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a parasitic helminth infection would most benefit from which dominant helper T cell response?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss how each helper T cell subset directs the immune response in protection against disease and how they can also contribute to disease.",
+    "options": [
+      {
+        "text": "Th2 dominated response with IL-4 and IL-5",
+        "isCorrect": true,
+        "rationale": "Th2 responses (IL-4, IL-5, IL-13) promote IgE, eosinophils, and mechanisms effective against helminths as described in the lecture."
+      },
+      {
+        "text": "Th1 dominated response with IFN gamma",
+        "isCorrect": false,
+        "rationale": "Th1 responses target intracellular pathogens and activate macrophages; this would be correct only for intracellular infections, not helminths."
+      },
+      {
+        "text": "Th17 dominated response with IL-17",
+        "isCorrect": false,
+        "rationale": "Th17 responses recruit neutrophils against extracellular bacteria and fungi; they are not optimal for helminth clearance and would be correct only in mixed infections."
+      },
+      {
+        "text": "Tfh dominated response promoting IgG",
+        "isCorrect": false,
+        "rationale": "Tfh cells support antibody responses broadly, but helminth defense specifically relies on Th2-driven IgE and eosinophils; Tfh would need to induce IgE to be correct."
+      },
+      {
+        "text": "Regulatory T cell dominated suppression",
+        "isCorrect": false,
+        "rationale": "Tregs suppress immune responses and would worsen helminth clearance; this would be correct only if limiting pathology were the primary goal."
+      }
+    ]
+  },
+  {
+    "question": "Which cytokine milieu is required for Th17 differentiation from naive CD4 cells?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the cytokines important for the differentiation to each T helper subset. (What cytokines are needed for Th0 Th1; Th0 Th2; Th0 Th17)",
+    "options": [
+      {
+        "text": "IL-1, IL-6, IL-23 and TGF beta",
+        "isCorrect": true,
+        "rationale": "Lecture lists IL-1, IL-6, IL-23 and TGF-β from DCs/macrophages as drivers of Th17 differentiation."
+      },
+      {
+        "text": "IL-12 and interferon gamma together",
+        "isCorrect": false,
+        "rationale": "IL-12 and IFN-γ drive Th1 differentiation; this would be correct only for Th1 lineage commitment, not Th17."
+      },
+      {
+        "text": "IL-4 alone without other cytokines",
+        "isCorrect": false,
+        "rationale": "IL-4 drives Th2 differentiation; Th17 requires a combination including IL-1/IL-6/IL-23 and TGF-β to be correct."
+      },
+      {
+        "text": "Type I interferons with IL-12",
+        "isCorrect": false,
+        "rationale": "Type I IFNs support antiviral Th1 responses; they do not induce Th17 and would need Th17 cytokines to be correct."
+      },
+      {
+        "text": "IL-10 and IL-13 together",
+        "isCorrect": false,
+        "rationale": "IL-10 and IL-13 are anti-inflammatory/Th2-associated and do not promote Th17 differentiation; they would be correct only in alternative activation contexts."
+      }
+    ]
+  },
+  {
+    "question": "Which Th subset primarily stimulates production of antimicrobial peptides and epithelial barrier repair via IL-22?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify and describe the function of cytokines produced by each type of helper T cell. (What cytokines are produced by Th1, Th2, and Th17?)",
+    "options": [
+      {
+        "text": "Th17 cells secrete IL-22 for epithelium",
+        "isCorrect": true,
+        "rationale": "Lecture indicates Th17 cells produce IL-22 which promotes epithelial barrier maintenance and antimicrobial peptide production."
+      },
+      {
+        "text": "Th1 cells secrete IL-22 for epithelium",
+        "isCorrect": false,
+        "rationale": "Th1 cells produce IFN-γ, IL-2, and TNF; IL-22 is characteristic of Th17 and would be correct only if Th1 cells were shown to produce IL-22."
+      },
+      {
+        "text": "Th2 cells secrete IL-22 for epithelium",
+        "isCorrect": false,
+        "rationale": "Th2 cells produce IL-4, IL-5, IL-13; IL-22 is not their primary cytokine and would be correct only in atypical Th2 plasticity."
+      },
+      {
+        "text": "Tfh cells secrete IL-22 for epithelium",
+        "isCorrect": false,
+        "rationale": "Tfh cells support B cells and can secrete various cytokines, but IL-22 is mainly Th17-derived and would be correct only with specific Tfh subsets producing IL-22."
+      },
+      {
+        "text": "Regulatory T cells secrete IL-22 for epithelium",
+        "isCorrect": false,
+        "rationale": "Tregs secrete TGF-β and IL-10 for suppression; IL-22 production is not typical and would be correct only under unusual differentiation conditions."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best contrasts effector and memory T cells in terms of longevity and activation speed?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast effector vs. memory T cells.",
+    "options": [
+      {
+        "text": "Effectors short lived; memory long lived",
+        "isCorrect": true,
+        "rationale": "Lecture states effector T cells are activated and short-lived, while memory T cells are quiescent, long-lived, and respond faster upon re-exposure."
+      },
+      {
+        "text": "Effectors long lived; memory short lived",
+        "isCorrect": false,
+        "rationale": "This inverts the lecture facts; it would be correct only if effector cells persisted and memory cells were transient, contrary to the described biology."
+      },
+      {
+        "text": "Both are equally long lived and quiescent",
+        "isCorrect": false,
+        "rationale": "Effectors are active and short-lived, not quiescent; this would be correct only if effector cells entered long-term quiescence like memory cells."
+      },
+      {
+        "text": "Memory cells cannot reenter effector state",
+        "isCorrect": false,
+        "rationale": "Memory cells rapidly activate into effectors upon antigen re-encounter; this option would be correct only if memory cells were terminally differentiated."
+      },
+      {
+        "text": "Effectors circulate only in lymphoid organs",
+        "isCorrect": false,
+        "rationale": "Effectors traffic to infection sites as well as lymphoid organs; this would be correct only if effectors were restricted to lymphoid tissues."
+      }
+    ]
+  },
+  {
+    "question": "A tumor expresses low MHC I and is coated with IgG. Which innate cell type and mechanism described in the lecture would most likely eliminate it?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the two mechanisms of how CTLs and NK cells kill their target cells.",
+    "options": [
+      {
+        "text": "NK cell mediated ADCC via CD16 receptor",
+        "isCorrect": true,
+        "rationale": "NK cells express CD16 and mediate ADCC when targets are IgG-coated; lecture notes NKs kill via ADCC and by sensing reduced MHC I."
+      },
+      {
+        "text": "Macrophage phagocytosis via Fc gamma receptor",
+        "isCorrect": false,
+        "rationale": "Macrophages can phagocytose IgG-opsonized cells, but the lecture emphasizes NK ADCC for IgG-coated tumor cells; this would be correct only if macrophage-mediated clearance were dominant."
+      },
+      {
+        "text": "CD8 T cell perforin release via TCR recognition",
+        "isCorrect": false,
+        "rationale": "CD8 T cells require antigen presentation on MHC I for TCR recognition; with low MHC I, CTL recognition is impaired and this would be correct only if sufficient MHC I remained."
+      },
+      {
+        "text": "Complement membrane attack complex formation",
+        "isCorrect": false,
+        "rationale": "Complement can lyse antibody-coated cells, but lecture highlights NK ADCC for IgG-coated tumor cells; complement would be correct only if classical pathway activation occurred robustly."
+      },
+      {
+        "text": "Neutrophil NETosis trapping tumor cells",
+        "isCorrect": false,
+        "rationale": "Neutrophil extracellular traps are not the primary mechanism for IgG-coated tumor elimination described in the lecture; this would be correct only in specific inflammatory contexts."
+      }
+    ]
+  },
+  {
+    "question": "A patient with an autoimmune delayed-type hypersensitivity shows excessive macrophage activation and tissue damage. Which helper subset is most likely driving this pathology?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss how each helper T cell subset directs the immune response in protection against disease and how they can also contribute to disease.",
+    "options": [
+      {
+        "text": "Th1 cells driving classical macrophage activation",
+        "isCorrect": true,
+        "rationale": "Th1 cells produce IFN-γ and CD40L engagement, promoting classical (M1) macrophage activation and DTH pathology as noted in the lecture."
+      },
+      {
+        "text": "Th2 cells driving eosinophil mediated damage",
+        "isCorrect": false,
+        "rationale": "Th2 cells cause allergic and eosinophil-mediated pathology; this would be correct only if eosinophils and IgE-mediated mechanisms predominated."
+      },
+      {
+        "text": "Th17 cells causing antibody mediated injury",
+        "isCorrect": false,
+        "rationale": "Th17 cells promote neutrophilic inflammation and autoimmunity, not primarily antibody-mediated injury; this would be correct only if autoantibodies were central."
+      },
+      {
+        "text": "Tfh cells causing macrophage hyperactivation",
+        "isCorrect": false,
+        "rationale": "Tfh cells support B cells and antibodies; they do not directly hyperactivate macrophages and would be correct only if antibody-dependent macrophage activation occurred."
+      },
+      {
+        "text": "Regulatory T cells failing to suppress inflammation",
+        "isCorrect": false,
+        "rationale": "Treg failure can permit excessive inflammation, but the lecture links DTH and macrophage activation specifically to Th1; this option would be correct only if Treg deficiency were proven."
+      }
+    ]
+  },
+  {
+    "question": "An experimental blockade of IL-13 reduces mucus hypersecretion in a mouse model of intestinal helminth infection. Which lecture point does this result most directly support?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify and describe the function of cytokines produced by each type of helper T cell. (What cytokines are produced by Th1, Th2, and Th17?)",
+    "options": [
+      {
+        "text": "IL-13 stimulates intestinal mucus and peristalsis",
+        "isCorrect": true,
+        "rationale": "Lecture notes IL-13 (from Th2) stimulates mucus production and intestinal peristalsis; blocking IL-13 reduces these Th2-mediated effects."
+      },
+      {
+        "text": "IL-4 alone stimulates intestinal mucus production",
+        "isCorrect": false,
+        "rationale": "Lecture corrects that IL-13, not IL-4 alone, induces mucus/peristalsis; this option would be correct only if IL-4 were experimentally shown to have that effect."
+      },
+      {
+        "text": "IL-17 primarily drives intestinal mucus secretion",
+        "isCorrect": false,
+        "rationale": "IL-17 promotes neutrophil recruitment and antimicrobial peptides, not mucus secretion; this would be correct only if IL-17 were shown to induce goblet cell activity."
+      },
+      {
+        "text": "IFN gamma increases intestinal mucus production",
+        "isCorrect": false,
+        "rationale": "IFN-γ is associated with Th1 and classical macrophage activation, not mucus production; it would be correct only in atypical inflammatory contexts."
+      },
+      {
+        "text": "TNF blockade increases mucus secretion",
+        "isCorrect": false,
+        "rationale": "TNF promotes inflammation and fever; blockade typically reduces inflammation and would not be expected to increase mucus, so this would be correct only with paradoxical effects."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic mucocutaneous candidiasis has impaired IL-17 signaling. Which downstream effect described in the lecture would be most diminished?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the effector functions of Th1, Th2, Th17, and TFH cells.",
+    "options": [
+      {
+        "text": "Neutrophil recruitment and antimicrobial peptide production",
+        "isCorrect": true,
+        "rationale": "IL-17 from Th17 stimulates chemokines (e.g., IL-8) and antimicrobial peptides; impaired IL-17 reduces neutrophil recruitment and defensin production as per the lecture."
+      },
+      {
+        "text": "IgE mediated eosinophil activation and degranulation",
+        "isCorrect": false,
+        "rationale": "IgE and eosinophil activation are Th2-driven via IL-4/IL-5; this would be correct only if Th2 pathways were defective."
+      },
+      {
+        "text": "Classical macrophage activation and ROS production",
+        "isCorrect": false,
+        "rationale": "Classical activation is Th1/IFN-γ-driven; IL-17 deficiency would not primarily impair ROS production unless Th1 responses were also affected."
+      },
+      {
+        "text": "Affinity maturation of B cells in follicles",
+        "isCorrect": false,
+        "rationale": "Affinity maturation is Tfh-mediated; IL-17 deficiency would not directly reduce germinal center processes unless Tfh function were compromised."
+      },
+      {
+        "text": "Type I interferon mediated antiviral state",
+        "isCorrect": false,
+        "rationale": "Type I IFNs mediate antiviral states; IL-17 deficiency would not directly affect IFN-α/β pathways and would be correct only with broader immune defects."
+      }
+    ]
+  },
+  {
+    "question": "Which CD marker is part of the TCR signaling complex and provides the first activation signal for naive T cells?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Review and identify CD nomenclature—see table in lecture guide.",
+    "options": [
+      {
+        "text": "CD3 is part of the TCR signaling complex",
+        "isCorrect": true,
+        "rationale": "Lecture states CD3 is associated with the TCR and mediates signal transduction upon antigen recognition, providing the first activation signal."
+      },
+      {
+        "text": "CD28 is part of the TCR signaling complex",
+        "isCorrect": false,
+        "rationale": "CD28 provides costimulatory (second) signals by binding B7 ligands; it is not the TCR signaling complex and would be correct only for costimulation."
+      },
+      {
+        "text": "CD19 is part of the TCR signaling complex",
+        "isCorrect": false,
+        "rationale": "CD19 is a B cell marker, not part of TCR signaling; this would be correct only if the question asked about B cell receptor complexes."
+      },
+      {
+        "text": "CD40 is part of the TCR signaling complex",
+        "isCorrect": false,
+        "rationale": "CD40 is expressed on B cells and macrophages for CD40L interactions; it is not part of TCR signaling and would be correct only in APC activation contexts."
+      },
+      {
+        "text": "CD56 is part of the TCR signaling complex",
+        "isCorrect": false,
+        "rationale": "CD56 marks NK cells and is not part of TCR signaling; this would be correct only if NK cell receptors were being discussed."
+      }
+    ]
+  },
+  {
+    "question": "A patient with impaired IFN-γ production shows poor control of intracellular bacteria. Which Th subset deficiency aligns with this clinical picture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the effector functions of Th1, Th2, Th17, and TFH cells.",
+    "options": [
+      {
+        "text": "Th1 deficiency leading to reduced IFN gamma",
+        "isCorrect": true,
+        "rationale": "Th1 cells secrete IFN-γ which activates macrophages for intracellular pathogen killing; deficiency impairs control of intracellular bacteria as per the lecture."
+      },
+      {
+        "text": "Th2 deficiency leading to reduced IL-4",
+        "isCorrect": false,
+        "rationale": "Th2 deficiency affects helminth and IgE responses; it would be correct only if extracellular parasite defense were failing, not intracellular bacteria."
+      },
+      {
+        "text": "Th17 deficiency leading to reduced IL-17",
+        "isCorrect": false,
+        "rationale": "Th17 deficiency impairs neutrophil recruitment against extracellular bacteria/fungi; it would be correct only for mucocutaneous infections, not intracellular control."
+      },
+      {
+        "text": "Tfh deficiency leading to reduced antibody affinity",
+        "isCorrect": false,
+        "rationale": "Tfh defects impair humoral responses; intracellular bacterial control relies on Th1/macrophage activation and would require IFN-γ to be correct."
+      },
+      {
+        "text": "Regulatory T cell deficiency causing hyperinflammation",
+        "isCorrect": false,
+        "rationale": "Treg deficiency causes excessive inflammation but not specifically impaired IFN-γ production; this would be correct only if Treg loss indirectly reduced Th1 responses."
+      }
+    ]
+  },
+  {
+    "question": "Which cytokine from Th1 cells enhances expression of MHC II and costimulatory molecules on antigen-presenting cells?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify and describe the function of cytokines produced by each type of helper T cell. (What cytokines are produced by Th1, Th2, and Th17?)",
+    "options": [
+      {
+        "text": "Interferon gamma increases MHC II expression",
+        "isCorrect": true,
+        "rationale": "Lecture notes IFN-γ increases MHC II and costimulatory molecule expression on APCs, enhancing antigen presentation and Th1 responses."
+      },
+      {
+        "text": "Interleukin four increases MHC II expression",
+        "isCorrect": false,
+        "rationale": "IL-4 promotes humoral immunity and alternative macrophage activation, not primarily MHC II upregulation; this would be correct only if IL-4 were shown to upregulate MHC II."
+      },
+      {
+        "text": "Interleukin ten increases MHC II expression",
+        "isCorrect": false,
+        "rationale": "IL-10 is anti-inflammatory and can reduce APC activation; it would be correct only if IL-10 paradoxically increased MHC II in a specific context."
+      },
+      {
+        "text": "Interleukin seventeen increases MHC II expression",
+        "isCorrect": false,
+        "rationale": "IL-17 drives neutrophil recruitment and antimicrobial peptides, not MHC II upregulation; this would be correct only with atypical signaling."
+      },
+      {
+        "text": "Tumor necrosis factor increases MHC II expression",
+        "isCorrect": false,
+        "rationale": "TNF promotes inflammation and endothelial activation but IFN-γ is the primary cytokine for MHC II upregulation; TNF alone would need IFN-γ to be correct."
+      }
+    ]
+  },
+  {
+    "question": "Which mechanism allows CTLs to kill multiple target cells sequentially as described in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the two mechanisms of how CTLs and NK cells kill their target cells.",
+    "options": [
+      {
+        "text": "Directional granule release then CTL dissociation",
+        "isCorrect": true,
+        "rationale": "Lecture describes conjugate formation, directional release of perforin/granzymes, and CTL dissociation allowing serial killing of targets."
+      },
+      {
+        "text": "Permanent fusion with target cell membrane",
+        "isCorrect": false,
+        "rationale": "Permanent fusion would prevent CTL dissociation and serial killing; this would be correct only if CTLs sacrificed themselves to kill a single target."
+      },
+      {
+        "text": "Complement deposition causing immediate lysis",
+        "isCorrect": false,
+        "rationale": "Complement-mediated lysis is extracellular and not the CTL serial killing mechanism; it would be correct only if complement were the dominant effector."
+      },
+      {
+        "text": "Phagocytic engulfment by the CTL itself",
+        "isCorrect": false,
+        "rationale": "CTLs do not phagocytose targets; this would be correct only if a phagocytic cell performed the killing instead."
+      },
+      {
+        "text": "Secretion of neutralizing antibodies by CTL",
+        "isCorrect": false,
+        "rationale": "CTLs do not secrete antibodies; antibody-mediated mechanisms are B cell functions and would be correct only if B cells were the effectors."
+      }
+    ]
+  },
+  {
+    "question": "Which cytokine produced by Th2 cells promotes alternative macrophage activation and tissue repair?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast classical vs alternative macrophage activation processes and the effector functions of macrophages activated by each process.",
+    "options": [
+      {
+        "text": "Interleukin thirteen promotes alternative activation",
+        "isCorrect": true,
+        "rationale": "Lecture states IL-13 (and IL-4) stimulate alternative macrophage activation associated with tissue repair and anti-inflammatory functions."
+      },
+      {
+        "text": "Interferon gamma promotes alternative activation",
+        "isCorrect": false,
+        "rationale": "IFN-γ drives classical (M1) activation, not alternative M2; this would be correct only if IFN-γ induced tissue repair in a specific model."
+      },
+      {
+        "text": "Interleukin two promotes alternative activation",
+        "isCorrect": false,
+        "rationale": "IL-2 supports T and NK cell proliferation and classical macrophage activation indirectly; it does not primarily induce alternative activation."
+      },
+      {
+        "text": "Interleukin seventeen promotes alternative activation",
+        "isCorrect": false,
+        "rationale": "IL-17 is proinflammatory and recruits neutrophils; it does not promote alternative macrophage activation and would be correct only in atypical contexts."
+      },
+      {
+        "text": "Tumor necrosis factor promotes alternative activation",
+        "isCorrect": false,
+        "rationale": "TNF is proinflammatory and associated with M1 functions; it would be correct only if TNF were shown to induce M2-like repair responses."
+      }
+    ]
+  },
+  {
+    "question": "A lab assay shows increased G-CSF and CXCL8 production after exposure to a T helper cytokine. Which Th-derived cytokine most likely initiated this response?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify and describe the function of cytokines produced by each type of helper T cell. (What cytokines are produced by Th1, Th2, and Th17?)",
+    "options": [
+      {
+        "text": "Interleukin seventeen from Th17 cells",
+        "isCorrect": true,
+        "rationale": "IL-17 stimulates production of G-CSF and chemokines like IL-8/CXCL8 to recruit neutrophils, as described in the lecture."
+      },
+      {
+        "text": "Interleukin four from Th2 cells",
+        "isCorrect": false,
+        "rationale": "IL-4 drives humoral responses and alternative macrophage activation, not G-CSF/CXCL8 production; this would be correct only if IL-4 induced those chemokines experimentally."
+      },
+      {
+        "text": "Interferon gamma from Th1 cells",
+        "isCorrect": false,
+        "rationale": "IFN-γ activates macrophages and promotes MHC expression; it does not primarily induce G-CSF/CXCL8 and would be correct only in mixed cytokine milieus."
+      },
+      {
+        "text": "Interleukin ten from regulatory cells",
+        "isCorrect": false,
+        "rationale": "IL-10 is anti-inflammatory and would suppress proinflammatory chemokine production; it would be correct only if IL-10 paradoxically induced G-CSF/CXCL8."
+      },
+      {
+        "text": "Tumor necrosis factor from macrophages",
+        "isCorrect": false,
+        "rationale": "TNF can induce inflammation and chemokines, but the lecture specifically links G-CSF/CXCL8 induction to IL-17; TNF would need to be the primary stimulus to be correct."
+      }
+    ]
+  },
+  {
+    "question": "Which CD marker forms the high-affinity IL-2 receptor when upregulated on activated T cells?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Review and identify CD nomenclature—see table in lecture guide.",
+    "options": [
+      {
+        "text": "CD25 is the IL-2 receptor alpha chain",
+        "isCorrect": true,
+        "rationale": "Lecture indicates CD25 is the alpha chain of the IL-2 receptor and its expression forms the high-affinity IL-2 receptor on activated T cells."
+      },
+      {
+        "text": "CD28 is the IL-2 receptor alpha chain",
+        "isCorrect": false,
+        "rationale": "CD28 is a costimulatory receptor binding B7 ligands, not the IL-2 receptor; this would be correct only if CD28 were misidentified as IL-2R."
+      },
+      {
+        "text": "CD3 is the IL-2 receptor alpha chain",
+        "isCorrect": false,
+        "rationale": "CD3 is part of the TCR signaling complex, not IL-2R; this would be correct only if CD3 were experimentally shown to bind IL-2."
+      },
+      {
+        "text": "CD40 is the IL-2 receptor alpha chain",
+        "isCorrect": false,
+        "rationale": "CD40 is expressed on B cells/macrophages for CD40L interactions, not IL-2 binding; it would be correct only in a mistaken context."
+      },
+      {
+        "text": "CD16 is the IL-2 receptor alpha chain",
+        "isCorrect": false,
+        "rationale": "CD16 is an Fc receptor on NK cells and phagocytes, not IL-2R; this would be correct only if CD16 had IL-2 binding capacity."
+      }
+    ]
+  },
+  {
+    "question": "A patient treated with a biologic that blocks IL-12 signaling develops reduced IFN-γ production. Which downstream immune defect described in the lecture is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the effector functions of Th1, Th2, Th17, and TFH cells.",
+    "options": [
+      {
+        "text": "Impaired Th1 differentiation and macrophage activation",
+        "isCorrect": true,
+        "rationale": "IL-12 from DCs/macrophages drives Th1 differentiation and IFN-γ production; blocking IL-12 reduces Th1 responses and classical macrophage activation as per the lecture."
+      },
+      {
+        "text": "Enhanced Th2 mediated eosinophil recruitment",
+        "isCorrect": false,
+        "rationale": "Blocking IL-12 reduces Th1 inhibition of Th2, potentially allowing Th2 dominance, but enhanced eosinophilia would require active Th2 cytokines to be present."
+      },
+      {
+        "text": "Direct loss of neutrophil chemotaxis via IL-17",
+        "isCorrect": false,
+        "rationale": "IL-17 drives neutrophil recruitment; IL-12 blockade does not directly reduce IL-17, so this would be correct only if Th17 responses were secondarily suppressed."
+      },
+      {
+        "text": "Immediate failure of antibody affinity maturation",
+        "isCorrect": false,
+        "rationale": "Affinity maturation is Tfh-dependent; IL-12 blockade affects Th1 more directly and would only impair Tfh-mediated maturation indirectly."
+      },
+      {
+        "text": "Complete loss of NK cell cytotoxicity",
+        "isCorrect": false,
+        "rationale": "NK cells are supported by IL-2 and type I IFNs; IL-12 blockade may reduce NK IFN-γ but not necessarily abolish cytotoxicity, so this would be correct only with broader cytokine suppression."
+      }
+    ]
+  },
+  {
+    "question": "Which interaction is the primary death receptor pathway used by CTLs to induce apoptosis in target cells?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the function of CD40, CD40L, Fas/CD95, and FasL/CD95L and which cells express these molecules.",
+    "options": [
+      {
+        "text": "Fas ligand on CTL binding Fas receptor",
+        "isCorrect": true,
+        "rationale": "Lecture states CTLs express FasL (CD95L) which binds Fas (CD95) on target cells to activate caspases and induce apoptosis."
+      },
+      {
+        "text": "CD40 ligand on CTL binding CD40 receptor",
+        "isCorrect": false,
+        "rationale": "CD40L is expressed by helper T cells to activate APCs; CTL-mediated apoptosis uses FasL:Fas, so this would be correct only for APC activation contexts."
+      },
+      {
+        "text": "CD28 on CTL binding B7 ligands",
+        "isCorrect": false,
+        "rationale": "CD28 provides costimulation to naive T cells via B7, not a death receptor pathway; this would be correct only if costimulation induced apoptosis, which it does not."
+      },
+      {
+        "text": "Perforin forming pores without receptor binding",
+        "isCorrect": false,
+        "rationale": "Perforin/granzyme is a granule-mediated pathway, not a death receptor interaction; this would be correct only for granule-mediated apoptosis, not Fas-mediated death."
+      },
+      {
+        "text": "CTLA4 on CTL binding B7 ligands",
+        "isCorrect": false,
+        "rationale": "CTLA-4 is inhibitory for T cell activation and not a death receptor ligand; it would be correct only in contexts of T cell regulation rather than target cell apoptosis."
+      }
+    ]
+  },
+  {
+    "question": "Which helper subset is most associated with promoting IgE class switching and allergic responses?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the effector functions of Th1, Th2, Th17, and TFH cells.",
+    "options": [
+      {
+        "text": "Th2 cells promote IgE and allergic responses",
+        "isCorrect": true,
+        "rationale": "Lecture indicates Th2 cells secrete IL-4 and IL-13 which drive IgE class switching and allergic reactions mediated by eosinophils and mast cells."
+      },
+      {
+        "text": "Th1 cells promote IgE and allergic responses",
+        "isCorrect": false,
+        "rationale": "Th1 cells promote cell-mediated immunity and inhibit Th2; they do not drive IgE and would be correct only if Th1 cytokines induced IgE in error."
+      },
+      {
+        "text": "Th17 cells promote IgE and allergic responses",
+        "isCorrect": false,
+        "rationale": "Th17 cells recruit neutrophils and promote inflammation, not IgE-mediated allergy; this would be correct only in mixed or atypical immune responses."
+      },
+      {
+        "text": "Tfh cells promote IgE and allergic responses",
+        "isCorrect": false,
+        "rationale": "Tfh cells support B cell isotype switching broadly, but Th2 cytokines specifically drive IgE; Tfh would need to provide IL-4/IL-13 to be correct."
+      },
+      {
+        "text": "Regulatory T cells promote IgE and allergic responses",
+        "isCorrect": false,
+        "rationale": "Tregs suppress immune responses and would not promote IgE-mediated allergy; this would be correct only if Tregs were dysfunctional in a way that favored IgE."
+      }
+    ]
+  },
+  {
+    "question": "Which cytokine is central to proliferation and survival of both CD4 and CD8 T cells during an immune response?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the role IL-2 for T cells and identify which cells primarily secrete IL-2.",
+    "options": [
+      {
+        "text": "Interleukin two supports T cell proliferation",
+        "isCorrect": true,
+        "rationale": "Lecture emphasizes IL-2 as essential for proliferation and survival of all T cells and NK cells, produced mainly by CD4 T cells."
+      },
+      {
+        "text": "Interleukin four supports T cell proliferation",
+        "isCorrect": false,
+        "rationale": "IL-4 promotes Th2 differentiation and B cell isotype switching, not general T cell proliferation; this would be correct only if IL-4 had broad proliferative effects."
+      },
+      {
+        "text": "Interferon alpha supports T cell proliferation",
+        "isCorrect": false,
+        "rationale": "Type I IFNs have antiviral roles and can modulate responses but are not the central T cell growth factor; IL-2 is required for proliferation."
+      },
+      {
+        "text": "Tumor necrosis factor supports T cell proliferation",
+        "isCorrect": false,
+        "rationale": "TNF is proinflammatory but not the primary driver of T cell proliferation; this would be correct only in combination with IL-2."
+      },
+      {
+        "text": "Interleukin ten supports T cell proliferation",
+        "isCorrect": false,
+        "rationale": "IL-10 is anti-inflammatory and inhibits Th1 responses; it does not promote T cell proliferation and would be correct only in unusual contexts."
+      }
+    ]
+  },
+  {
+    "question": "A patient with severe allergic asthma has elevated IgE and eosinophilia. Which cytokine blockade would most directly reduce eosinophil numbers according to the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss how each helper T cell subset directs the immune response in protection against disease and how they can also contribute to disease.",
+    "options": [
+      {
+        "text": "Blockade of interleukin five to reduce eosinophils",
+        "isCorrect": true,
+        "rationale": "IL-5 from Th2 cells drives production and activation of eosinophils; blocking IL-5 directly reduces eosinophil numbers as described in the lecture."
+      },
+      {
+        "text": "Blockade of interferon gamma to reduce eosinophils",
+        "isCorrect": false,
+        "rationale": "IFN-γ is Th1-associated and inhibits Th2 responses; blocking IFN-γ would likely worsen eosinophilia, so this would be correct only in a paradoxical scenario."
+      },
+      {
+        "text": "Blockade of interleukin seventeen to reduce eosinophils",
+        "isCorrect": false,
+        "rationale": "IL-17 recruits neutrophils, not eosinophils; blocking IL-17 would not directly reduce eosinophils and would be correct only if eosinophilia were IL-17 dependent."
+      },
+      {
+        "text": "Blockade of interleukin two to reduce eosinophils",
+        "isCorrect": false,
+        "rationale": "IL-2 supports T cell proliferation broadly; blocking IL-2 might reduce many lymphocytes but is not the targeted approach for eosinophils and would be correct only with broad immunosuppression."
+      },
+      {
+        "text": "Blockade of interleukin ten to reduce eosinophils",
+        "isCorrect": false,
+        "rationale": "IL-10 is anti-inflammatory and inhibits Th1; blocking IL-10 would not reduce eosinophils and could increase inflammation, so this would be correct only in atypical regulation."
+      }
+    ]
+  },
+  {
+    "question": "Which helper subset's cytokines would most directly increase production of opsonizing IgG subclasses and enhance ADCC?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the effector functions of Th1, Th2, Th17, and TFH cells.",
+    "options": [
+      {
+        "text": "Th1 cells promote IgG subclass production",
+        "isCorrect": true,
+        "rationale": "Lecture notes IFN-γ from Th1 cells induces certain IgG subclasses that mediate opsonization and ADCC via Fc receptors."
+      },
+      {
+        "text": "Th2 cells promote IgG subclass production",
+        "isCorrect": false,
+        "rationale": "Th2 cells promote IgE and some IgG4 switching; opsonizing IgG subclasses for ADCC are primarily Th1-driven and would require IFN-γ to be correct."
+      },
+      {
+        "text": "Th17 cells promote IgG subclass production",
+        "isCorrect": false,
+        "rationale": "Th17 cells drive neutrophil recruitment and antimicrobial peptides, not IgG subclass switching; this would be correct only if Th17 induced B cell isotype changes."
+      },
+      {
+        "text": "Tfh cells inhibit IgG subclass production",
+        "isCorrect": false,
+        "rationale": "Tfh cells support B cell isotype switching and affinity maturation rather than inhibiting IgG; this would be correct only in a suppressive Tfh subset scenario."
+      },
+      {
+        "text": "Regulatory T cells promote IgG subclass production",
+        "isCorrect": false,
+        "rationale": "Tregs are suppressive and do not promote opsonizing IgG; this would be correct only if Tregs indirectly favored certain isotypes."
+      }
+    ]
+  },
+  {
+    "question": "Which cytokine combination would most likely inhibit Th1 differentiation according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify and describe the function of cytokines produced by each type of helper T cell. (What cytokines are produced by Th1, Th2, and Th17?)",
+    "options": [
+      {
+        "text": "IL-4 and IL-10 inhibit Th1 differentiation",
+        "isCorrect": true,
+        "rationale": "Lecture indicates IL-4 (Th2) and IL-10 (anti-inflammatory) inhibit Th1 differentiation and classical macrophage activation."
+      },
+      {
+        "text": "IFN gamma and IL-12 inhibit Th1 differentiation",
+        "isCorrect": false,
+        "rationale": "IFN-γ and IL-12 promote Th1 differentiation; this would be correct only if their roles were reversed experimentally."
+      },
+      {
+        "text": "IL-17 and IL-22 inhibit Th1 differentiation",
+        "isCorrect": false,
+        "rationale": "IL-17/IL-22 are Th17 cytokines promoting neutrophilic responses; they do not primarily inhibit Th1 and would be correct only in indirect regulatory contexts."
+      },
+      {
+        "text": "TGF beta and IL-23 inhibit Th1 differentiation",
+        "isCorrect": false,
+        "rationale": "TGF-β and IL-23 support Th17 differentiation; they do not directly inhibit Th1 unless they shift lineage commitment toward Th17."
+      },
+      {
+        "text": "TNF and IL-1 inhibit Th1 differentiation",
+        "isCorrect": false,
+        "rationale": "TNF and IL-1 are proinflammatory and can support Th1-associated inflammation; they would not inhibit Th1 and would be correct only with counterregulatory signals."
+      }
+    ]
+  },
+  {
+    "question": "Which cell type expresses CD16 and mediates antibody-dependent cell-mediated cytotoxicity as described in the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Review and identify CD nomenclature—see table in lecture guide.",
+    "options": [
+      {
+        "text": "Natural killer cells express CD16 and mediate ADCC",
+        "isCorrect": true,
+        "rationale": "Lecture states NK cells are CD56+ CD16+ and mediate ADCC via the Fc receptor CD16 binding IgG-coated targets."
+      },
+      {
+        "text": "Naive B cells express CD16 and mediate ADCC",
+        "isCorrect": false,
+        "rationale": "B cells express CD19/CD20, not CD16; they do not mediate ADCC and would be correct only if B cells expressed CD16 experimentally."
+      },
+      {
+        "text": "Neutrophils express CD16 and mediate ADCC",
+        "isCorrect": false,
+        "rationale": "Some neutrophils express Fc receptors but the lecture highlights NK CD16-mediated ADCC; this would be correct only if neutrophil ADCC were the dominant mechanism."
+      },
+      {
+        "text": "CD8 T cells express CD16 and mediate ADCC",
+        "isCorrect": false,
+        "rationale": "CD8 T cells express CD8 and kill via TCR/perforin or FasL, not CD16-mediated ADCC; this would be correct only if CD8s aberrantly expressed CD16."
+      },
+      {
+        "text": "Macrophages express CD16 and mediate ADCC",
+        "isCorrect": false,
+        "rationale": "Macrophages express Fc receptors like CD64 for opsonization, but lecture emphasizes NK CD16 for ADCC; macrophage ADCC would be correct only in specific contexts."
+      }
+    ]
+  },
+  {
+    "question": "Which helper subset is most likely to be therapeutically targeted to reduce neutrophil-driven chronic inflammation in psoriasis?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss how each helper T cell subset directs the immune response in protection against disease and how they can also contribute to disease.",
+    "options": [
+      {
+        "text": "Target Th17 responses to reduce neutrophilic inflammation",
+        "isCorrect": true,
+        "rationale": "Lecture links Th17 (IL-17) to neutrophil recruitment and chronic inflammatory diseases like psoriasis; targeting Th17 reduces neutrophil-driven pathology."
+      },
+      {
+        "text": "Target Th2 responses to reduce neutrophilic inflammation",
+        "isCorrect": false,
+        "rationale": "Th2 responses drive eosinophils and IgE, not neutrophils; this would be correct only if psoriasis were Th2-mediated, which it is not typically."
+      },
+      {
+        "text": "Target Th1 responses to reduce neutrophilic inflammation",
+        "isCorrect": false,
+        "rationale": "Th1 contributes to macrophage activation and DTH; while it may play a role, neutrophil recruitment is primarily Th17-driven and would need IFN-γ dominance to be correct."
+      },
+      {
+        "text": "Target Tfh responses to reduce neutrophilic inflammation",
+        "isCorrect": false,
+        "rationale": "Tfh cells support B cell antibody responses and are not the main drivers of neutrophilic inflammation; this would be correct only if autoantibodies were central."
+      },
+      {
+        "text": "Target regulatory T cells to reduce neutrophilic inflammation",
+        "isCorrect": false,
+        "rationale": "Enhancing Treg function might suppress inflammation, but the lecture specifically implicates Th17 in neutrophil recruitment; Treg targeting would be indirect and less specific."
+      }
+    ]
+  },
+  {
+    "question": "Which cytokine is produced by plasmacytoid dendritic cells and infected cells to create an antiviral state, as emphasized in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identity the type I interferons, what cells secrete these cytokines, and the role these cytokines play in antiviral responses. (Is this innate or adaptive?)",
+    "options": [
+      {
+        "text": "Type I interferons IFN alpha and beta",
+        "isCorrect": true,
+        "rationale": "Lecture identifies IFN-α and IFN-β (type I IFNs) produced by infected cells and plasmacytoid DCs to induce antiviral states and upregulate MHC I."
+      },
+      {
+        "text": "Type II interferon IFN gamma only",
+        "isCorrect": false,
+        "rationale": "IFN-γ is type II interferon produced by Th1, NK, and CTLs; it supports cell-mediated immunity but is distinct from type I antiviral IFNs."
+      },
+      {
+        "text": "Interleukin four and interleukin thirteen",
+        "isCorrect": false,
+        "rationale": "IL-4 and IL-13 are Th2 cytokines involved in humoral responses and alternative macrophage activation, not primary antiviral type I IFNs."
+      },
+      {
+        "text": "Tumor necrosis factor alpha and beta",
+        "isCorrect": false,
+        "rationale": "TNF is proinflammatory and has antiviral effects but is not the type I IFN family; this would be correct only if TNF were the dominant antiviral mediator."
+      },
+      {
+        "text": "Interleukin ten and transforming growth factor",
+        "isCorrect": false,
+        "rationale": "IL-10 and TGF-β are anti-inflammatory and do not induce antiviral states; they would be correct only in regulatory or repair contexts."
+      }
+    ]
+  }
+]
