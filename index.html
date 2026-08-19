@@ -525,6 +525,14 @@ textarea:focus{outline:none;border-color:var(--primary)}
   border-radius:10px;border:1px solid rgba(231,76,60,0.25);background:rgba(231,76,60,0.06);
 }
 .report-modal-note strong{font-weight:800}
+.report-modal-quiz{
+  font-size:.72rem;line-height:1.55;margin-bottom:12px;padding:10px 12px;
+  border-radius:10px;border:1px solid var(--border);background:rgba(255,255,255,.04);
+}
+.report-modal-quiz strong{font-weight:800}
+.report-modal-quiz .quiz-file{
+  font-family:var(--font-mono);font-size:.68rem;opacity:.8;word-break:break-all;
+}
 .report-validation-error{
   font-size:.72rem;color:var(--danger);margin:-6px 0 12px;line-height:1.45;min-height:1.2em;
 }
@@ -1809,10 +1817,8 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
 <div id="report-question-modal" onclick="if(event.target===this)closeReportModal()">
   <div class="report-modal-card">
     <div class="report-modal-title">Report Question</div>
-    <div class="report-modal-note">
-      Your report goes <strong>directly to the MedStep developer</strong>. I review reports and work to fix issues <strong>the same day</strong> when possible.
-      Make sure this quiz came from the quiz library, and it is <strong>NOT</strong> one that you generated yourself. I cannot fix those.
-    </div>
+    <div class="report-modal-sub">Your report goes <strong>directly to the MedStep developer</strong>. I review reports and work to fix issues <strong>the same day</strong> when possible.</div>
+    <div class="report-modal-quiz" id="report-quiz-identity">Identifying quiz…</div>
     <div class="report-modal-sub">To submit, choose a reason below <strong>and</strong> write a rationale (at least <strong>5 words</strong>).</div>
 
     <label class="modal-label" for="report-rationale">Reason (required)</label>
@@ -1826,6 +1832,16 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
     <label class="modal-label" for="report-details">Your rationale (required)</label>
     <div class="report-details-hint" id="report-details-hint">Explain the problem clearly. Minimum 5 words.</div>
     <textarea class="modal-textarea" id="report-details" placeholder="Describe what is wrong and why…" style="height:120px;margin-bottom:6px" oninput="updateReportDetailsHint()"></textarea>
+
+    <label class="modal-label" for="report-contact-name">Your name (optional)</label>
+    <input class="modal-input" id="report-contact-name" type="text" autocomplete="name" placeholder="So I know who to reply to">
+    <label class="modal-label" for="report-contact-info">Email or phone (optional)</label>
+    <div class="report-details-hint">Include this so I can get back to you about this report.</div>
+    <input class="modal-input" id="report-contact-info" type="text" autocomplete="email" placeholder="email@example.com or phone number">
+
+    <div class="report-modal-note" id="report-custom-disclaimer">
+      <strong>Before you submit:</strong> if this is a <strong>custom quiz you made yourself</strong> (My Quizzes, pasted JSON, or generated on your device), I <strong>cannot edit or delete</strong> those questions — they are not in the official MedStep library. I can only change questions that come from the quiz library/manifest.
+    </div>
     <div class="report-validation-error" id="report-validation-error" aria-live="polite"></div>
 
     <div style="display:flex;gap:10px">
@@ -1953,10 +1969,18 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
     <div class="report-modal-note" style="margin-bottom:14px">
       You can also reach the developers directly at <a href="mailto:medstepdev@gmail.com" style="color:var(--primary);font-weight:700">medstepdev@gmail.com</a>.
     </div>
+    <div class="report-modal-quiz" id="feedback-quiz-identity" hidden></div>
 
     <label class="modal-label" for="feedback-modal-text" id="feedback-modal-label">Description</label>
     <div class="report-details-hint" id="feedback-modal-hint">Minimum 5 words.</div>
     <textarea class="modal-textarea" id="feedback-modal-text" style="height:120px;margin-bottom:6px"></textarea>
+
+    <label class="modal-label" for="feedback-contact-name">Your name (optional)</label>
+    <input class="modal-input" id="feedback-contact-name" type="text" autocomplete="name" placeholder="So I know who to reply to">
+    <label class="modal-label" for="feedback-contact-info">Email or phone (optional)</label>
+    <div class="report-details-hint">Include this so I can get back to you about this message.</div>
+    <input class="modal-input" id="feedback-contact-info" type="text" autocomplete="email" placeholder="email@example.com or phone number">
+
     <div class="report-validation-error" id="feedback-modal-error" aria-live="polite"></div>
 
     <div style="display:flex;gap:10px">
@@ -1978,6 +2002,13 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
     <label class="modal-label" for="email-quiz-description">Quiz description (required)</label>
     <div class="report-details-hint">Briefly describe this quiz (topic, source lecture, block/exam, etc.).</div>
     <textarea class="modal-textarea" id="email-quiz-description" placeholder="e.g. Block 2 Exam 1 Week 3 — Pharmacology autonomic drugs, from lecture slides…" style="height:110px;margin-bottom:6px"></textarea>
+
+    <label class="modal-label" for="email-quiz-contact-name">Your name (optional)</label>
+    <input class="modal-input" id="email-quiz-contact-name" type="text" autocomplete="name" placeholder="So I know who to reply to">
+    <label class="modal-label" for="email-quiz-contact-info">Email or phone (optional)</label>
+    <div class="report-details-hint">Include this so I can get back to you about this submission.</div>
+    <input class="modal-input" id="email-quiz-contact-info" type="text" autocomplete="email" placeholder="email@example.com or phone number">
+
     <div class="report-validation-error" id="email-quiz-confirm-error" aria-live="polite"></div>
 
     <div style="display:flex;gap:10px">
@@ -2600,6 +2631,8 @@ const PACE_COUNTDOWN_WARN=10;
 const DEFAULT_PACE_SECONDS=60;
 const LS_REPORT_NOTIFY_EMAIL='medstep_report_notify_email';
 const LS_REPORT_QUEUE='medstep_question_reports';
+const LS_REPORTER_NAME='medstep_reporter_name';
+const LS_REPORTER_CONTACT='medstep_reporter_contact';
 const REPORT_EMAIL_DEFAULT='medstepdev@gmail.com';
 const REPORT_GITHUB_USER='4vpvjyx4wr-star';
 const REPORT_GITHUB_REPO='MedStep';
@@ -4612,7 +4645,17 @@ function loadDemo(){
 function initQuiz(){
   try{
     const raw=JSON.parse(document.getElementById('mega-input').value.trim());
-    buildQuiz(raw, { source: 'manual', title: 'Pasted Quiz' });
+    let meta = { source: 'manual', title: 'Pasted Quiz' };
+    if (typeof stagedQuizzes !== 'undefined' && stagedQuizzes.length) {
+      meta = metaFromQuizSources(stagedQuizzes.map(s =>
+        quizSourceFromEntry(findLibraryEntry(s.file) || {
+          title: s.title,
+          file: s.file,
+          source: isPersonalFile(s.file) ? 'personal' : 'library'
+        })
+      ));
+    }
+    buildQuiz(raw, meta);
   }catch(e){alert('Invalid JSON. Make sure you copied the full Copilot output.');}
 }
 function buildQuiz(raw, meta){
@@ -4671,11 +4714,214 @@ function saveReportNotifyEmail(){ /* fixed developer inbox */ }
 function countReportWords(text){
   return (text || '').trim().split(/\s+/).filter(Boolean).length;
 }
+function looksLikeEmail(value){
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value || '').trim());
+}
+function loadReporterContact(){
+  return {
+    name: localStorage.getItem(LS_REPORTER_NAME) || '',
+    contact: localStorage.getItem(LS_REPORTER_CONTACT) || ''
+  };
+}
+function saveReporterContact(name, contact){
+  if (name) localStorage.setItem(LS_REPORTER_NAME, name);
+  else localStorage.removeItem(LS_REPORTER_NAME);
+  if (contact) localStorage.setItem(LS_REPORTER_CONTACT, contact);
+  else localStorage.removeItem(LS_REPORTER_CONTACT);
+}
+function fillReporterInputs(nameId, contactId){
+  const saved = loadReporterContact();
+  const nameEl = document.getElementById(nameId);
+  const contactEl = document.getElementById(contactId);
+  if (nameEl) nameEl.value = saved.name;
+  if (contactEl) contactEl.value = saved.contact;
+}
+function readReporterInputs(nameId, contactId){
+  const name = (document.getElementById(nameId)?.value || '').trim();
+  const contact = (document.getElementById(contactId)?.value || '').trim();
+  saveReporterContact(name, contact);
+  const fields = {
+    reporter_name: name || '(not provided)',
+    reporter_contact: contact || '(not provided)'
+  };
+  if (looksLikeEmail(contact)) fields._replyto = contact;
+  return { name, contact, fields };
+}
 function githubQuizEditUrl(file){
-  if (!file) return '';
+  if (!file || isPersonalFile(file)) return '';
   const clean = String(file).replace(/^quizzes\//, '');
   return 'https://github.com/' + REPORT_GITHUB_USER + '/' + REPORT_GITHUB_REPO +
     '/edit/' + REPORT_GITHUB_BRANCH + '/quizzes/' + encodeURIComponent(clean);
+}
+function quizSourceFromEntry(entry){
+  if (!entry) return null;
+  const personal = typeof isPersonalEntry === 'function' ? isPersonalEntry(entry) : isPersonalFile(entry.file);
+  return {
+    source: personal ? 'personal' : (entry.source || 'library'),
+    title: entry.title || '',
+    file: entry.file || null,
+    classTag: entry.classTag || '',
+    block: entry.block || '',
+    exam: entry.exam || '',
+    week: entry.week || '',
+    tagCode: (typeof getTagCode === 'function' ? getTagCode(entry) : '') || ''
+  };
+}
+function enrichQuizSource(src){
+  if (!src) return { source: 'unknown', title: 'Unknown' };
+  const file = src.file ? String(src.file).replace(/^quizzes\//, '') : '';
+  if (file && typeof libraryManifest !== 'undefined') {
+    const entry = libraryManifest.find(e => e.file === file || e.file === src.file);
+    if (entry) return Object.assign({}, quizSourceFromEntry(entry), { source: 'library' });
+  }
+  if (file && isPersonalFile(file)) {
+    const entry = typeof findLibraryEntry === 'function' ? findLibraryEntry(file) : null;
+    if (entry) return Object.assign({}, quizSourceFromEntry(entry), { source: 'personal' });
+    return Object.assign({}, src, { source: 'personal', file });
+  }
+  return Object.assign({}, src, { file: file || src.file || null });
+}
+function isOfficialLibrarySource(src){
+  const e = enrichQuizSource(src);
+  if (!e || e.source === 'personal' || e.source === 'manual' || e.source === 'unknown') return false;
+  if (isPersonalFile(e.file)) return false;
+  const file = e.file ? String(e.file).replace(/^quizzes\//, '') : '';
+  if (file && typeof libraryManifest !== 'undefined' && libraryManifest.some(m => m.file === file || m.file === e.file)) return true;
+  return e.source === 'library' && !!file;
+}
+function isCustomOwnedSource(src){
+  const e = enrichQuizSource(src);
+  if (!e) return true;
+  if (e.source === 'personal' || e.source === 'manual') return true;
+  if (isPersonalFile(e.file)) return true;
+  return !isOfficialLibrarySource(e);
+}
+function stampQuestionsFromEntry(json, entry){
+  const src = quizSourceFromEntry(entry);
+  if (!Array.isArray(json)) return [];
+  if (!src) return json.slice();
+  return json.map(q => Object.assign({}, q, { _src: src }));
+}
+function uniqueQuizSourcesFromQuestions(qs){
+  const seen = new Set();
+  const out = [];
+  (qs || []).forEach(q => {
+    if (!q || !q._src) return;
+    const key = String(q._src.file || q._src.title || '');
+    if (!key || seen.has(key)) return;
+    seen.add(key);
+    out.push(q._src);
+  });
+  return out;
+}
+function formatQuizSourceLine(src){
+  const e = enrichQuizSource(src);
+  const parts = [e.title || 'Untitled'];
+  if (e.classTag) parts.push(e.classTag);
+  if (e.tagCode) parts.push(e.tagCode);
+  if (e.file && !isPersonalFile(e.file)) parts.push('quizzes/' + String(e.file).replace(/^quizzes\//, ''));
+  else if (isPersonalFile(e.file) || e.source === 'personal') parts.push('custom / My Quizzes');
+  else if (e.source === 'manual') parts.push('pasted / generated');
+  return parts.join(' · ');
+}
+function formatQuizSourceHtml(src){
+  const e = enrichQuizSource(src);
+  const official = isOfficialLibrarySource(e);
+  const lines = [];
+  if (official) {
+    lines.push('<strong>MedStep library quiz</strong> (from the official manifest)');
+  } else if (e.source === 'personal' || isPersonalFile(e.file)) {
+    lines.push('<strong>Custom quiz</strong> (My Quizzes — not in the official library)');
+  } else if (e.source === 'manual') {
+    lines.push('<strong>Custom / pasted quiz</strong> (not in the official library)');
+  } else if (e.source === 'mixed') {
+    lines.push('<strong>Mixed quiz</strong> (library + custom sources)');
+  } else {
+    lines.push('<strong>Quiz</strong>');
+  }
+  if (e.title) lines.push(escapeHtmlLib(e.title));
+  const metaBits = [];
+  if (e.classTag) metaBits.push(escapeHtmlLib(e.classTag));
+  if (e.tagCode) metaBits.push(escapeHtmlLib(e.tagCode));
+  if (metaBits.length) lines.push(metaBits.join(' · '));
+  if (e.file && !isPersonalFile(e.file)) {
+    lines.push('<span class="quiz-file">File: quizzes/' + escapeHtmlLib(String(e.file).replace(/^quizzes\//, '')) + '</span>');
+  }
+  return lines.join('<br>');
+}
+function metaFromQuizSources(details){
+  const raw = (details || []).filter(Boolean).map(enrichQuizSource);
+  const seen = new Set();
+  const list = [];
+  raw.forEach(s => {
+    const key = String(s.file || s.title || '');
+    if (key && seen.has(key)) return;
+    if (key) seen.add(key);
+    list.push(s);
+  });
+  if (!list.length) return { source: 'manual', title: 'Custom Quiz' };
+  const official = list.filter(isOfficialLibrarySource);
+  const custom = list.filter(isCustomOwnedSource);
+  let source = 'library';
+  if (custom.length && official.length) source = 'mixed';
+  else if (custom.length && !official.length) {
+    source = list.every(s => s.source === 'personal' || isPersonalFile(s.file)) ? 'personal' : 'manual';
+  }
+  const files = [...new Set(list.map(s => s.file).filter(Boolean))];
+  const titles = list.map(s => s.title).filter(Boolean);
+  return {
+    source,
+    title: list.length === 1 ? (list[0].title || 'Quiz') : (titles.join(' + ') || 'Mixed Quiz'),
+    file: files.length === 1 ? files[0] : null,
+    files,
+    classTag: list.length === 1 ? (list[0].classTag || '') : '',
+    tagCode: list.length === 1 ? (list[0].tagCode || '') : '',
+    sources: list.map(formatQuizSourceLine),
+    sourceDetails: list
+  };
+}
+function resolveQuestionQuizSource(q){
+  if (q && q._src) return enrichQuizSource(q._src);
+  if (activeQuizMeta && activeQuizMeta.sourceDetails && activeQuizMeta.sourceDetails.length === 1) {
+    return enrichQuizSource(activeQuizMeta.sourceDetails[0]);
+  }
+  return enrichQuizSource(activeQuizMeta || { source: 'unknown', title: 'Unknown' });
+}
+function currentQuizContextLines(){
+  if (!questions.length) return [];
+  const q = questions[currentIdx] || questions[0];
+  const src = resolveQuestionQuizSource(q);
+  const lines = [
+    'Active quiz: ' + formatQuizSourceLine(src),
+    'Question: ' + ((questions[currentIdx] ? currentIdx : 0) + 1) + ' of ' + questions.length
+  ];
+  if (activeQuizMeta && activeQuizMeta.sources && activeQuizMeta.sources.length > 1) {
+    lines.push('Built from: ' + activeQuizMeta.sources.join(' | '));
+  }
+  return lines;
+}
+function updateReportQuizContext(){
+  const box = document.getElementById('report-quiz-identity');
+  const note = document.getElementById('report-custom-disclaimer');
+  const q = questions[currentIdx];
+  const src = resolveQuestionQuizSource(q);
+  const official = isOfficialLibrarySource(src);
+  const custom = isCustomOwnedSource(src);
+  if (box) {
+    let html = formatQuizSourceHtml(src);
+    if (activeQuizMeta && activeQuizMeta.sources && activeQuizMeta.sources.length > 1) {
+      html += '<br><span class="quiz-file">Built from: ' +
+        activeQuizMeta.sources.map(escapeHtmlLib).join(' | ') + '</span>';
+    }
+    box.innerHTML = html;
+  }
+  if (note) {
+    if (custom && !official) {
+      note.innerHTML = '<strong>Before you submit:</strong> this looks like a <strong>custom quiz you made yourself</strong> (My Quizzes, pasted JSON, or generated on your device). I <strong>cannot edit or delete</strong> those questions — they live only on your device, not in the official MedStep library.';
+    } else {
+      note.innerHTML = '<strong>Before you submit:</strong> if this is a <strong>custom quiz you made yourself</strong> (My Quizzes, pasted JSON, or generated on your device), I <strong>cannot edit or delete</strong> those questions — they are not in the official MedStep library. I can only change questions that come from the quiz library/manifest.';
+    }
+  }
 }
 function updateReportDetailsHint(){
   const category = document.getElementById('report-rationale')?.value || '';
@@ -4706,16 +4952,21 @@ function showReportValidationError(msg){
   const el = document.getElementById('report-validation-error');
   if (el) el.textContent = msg || '';
 }
-function buildQPickerMeta(){
-  const sources = _qpickerBuildingChunks.length
-    ? _qpickerBuildingChunks.map(c => c.label)
-    : [_qpickerCurrentLabel];
-  return {
-    source: 'library',
-    title: _qpickerCurrentLabel || 'Library Quiz',
-    file: _qpickerEntry?.file || null,
-    sources
-  };
+function buildQPickerMeta(extraQuestions){
+  const details = [];
+  _qpickerBuildingChunks.forEach(c => {
+    if (c.srcs && c.srcs.length) details.push(...c.srcs);
+    else if (c.src) details.push(c.src);
+    else details.push(...uniqueQuizSourcesFromQuestions(c.questions));
+  });
+  if (_qpickerEntry) details.push(quizSourceFromEntry(_qpickerEntry));
+  details.push(...uniqueQuizSourcesFromQuestions(extraQuestions));
+  if (!details.length && _qpickerCurrentLabel) {
+    details.push({ title: _qpickerCurrentLabel, source: librarySource === 'personal' ? 'personal' : 'library' });
+  }
+  const meta = metaFromQuizSources(details);
+  if (!meta.title || meta.title === 'Custom Quiz') meta.title = _qpickerCurrentLabel || 'Library Quiz';
+  return meta;
 }
 function updateReportButton(){
   const btn = document.getElementById('report-btn');
@@ -4740,8 +4991,10 @@ function openReportModal(){
   const sel = document.getElementById('report-rationale');
   sel.selectedIndex = 0;
   document.getElementById('report-details').value = '';
+  fillReporterInputs('report-contact-name', 'report-contact-info');
   showReportValidationError('');
   updateReportDetailsHint();
+  updateReportQuizContext();
   document.getElementById('report-submit-btn').disabled = false;
   document.getElementById('report-submit-btn').innerText = 'Submit Report';
   document.getElementById('report-question-modal').classList.add('open');
@@ -4750,19 +5003,29 @@ function openReportModal(){
 function closeReportModal(){
   document.getElementById('report-question-modal').classList.remove('open');
 }
-function questionReportPayload(q, idx, category, rationale){
+function questionReportPayload(q, idx, category, rationale, reporter){
+  const src = resolveQuestionQuizSource(q);
   const meta = activeQuizMeta || { source: 'unknown', title: 'Unknown' };
-  const quizFile = meta.file || null;
+  const quizFile = src.file || meta.file || null;
   const githubEditUrl = githubQuizEditUrl(quizFile);
+  const official = isOfficialLibrarySource(src);
   return {
     reportedAt: new Date().toISOString(),
     category,
     rationale: rationale || '',
+    reporterName: reporter?.name || '',
+    reporterContact: reporter?.contact || '',
     githubEditUrl,
     quiz: {
-      source: meta.source,
-      title: meta.title,
+      kind: official ? 'official_library' : (isCustomOwnedSource(src) ? 'custom' : (src.source || meta.source)),
+      source: src.source || meta.source,
+      title: src.title || meta.title,
       file: quizFile,
+      classTag: src.classTag || meta.classTag || '',
+      tagCode: src.tagCode || meta.tagCode || '',
+      block: src.block || '',
+      exam: src.exam || '',
+      week: src.week || '',
       sources: meta.sources || null
     },
     questionIndex: idx + 1,
@@ -4782,18 +5045,29 @@ function questionReportPayload(q, idx, category, rationale){
   };
 }
 function formatReportForEmail(payload){
+  const quizFile = payload.quiz.file
+    ? (isPersonalFile(payload.quiz.file) ? payload.quiz.file : 'quizzes/' + String(payload.quiz.file).replace(/^quizzes\//, ''))
+    : '';
+  const kindLabel = payload.quiz.kind === 'official_library'
+    ? 'Official MedStep library (manifest)'
+    : (payload.quiz.kind === 'custom' ? 'Custom quiz (cannot edit/delete)' : payload.quiz.kind);
   const lines = [
     'MedStep Question Report',
     '──────────────────────',
     'Time: ' + payload.reportedAt,
     'Reason: ' + payload.category,
+    'Reporter: ' + (payload.reporterName || '(not provided)'),
+    'Contact: ' + (payload.reporterContact || '(not provided)'),
     '',
+    'Quiz kind: ' + kindLabel,
     'Quiz: ' + payload.quiz.title,
-    payload.quiz.file ? 'File: quizzes/' + payload.quiz.file : '',
-    payload.quiz.sources ? 'Sources: ' + payload.quiz.sources.join(', ') : '',
+    payload.quiz.classTag ? 'Class: ' + payload.quiz.classTag : '',
+    payload.quiz.tagCode ? 'Tags: ' + payload.quiz.tagCode : '',
+    quizFile ? 'File: ' + quizFile : 'File: (not a library/manifest quiz)',
+    payload.quiz.sources ? 'Built from: ' + payload.quiz.sources.join(' | ') : '',
     'Question: ' + payload.questionIndex + ' of ' + payload.questionTotal,
     '',
-    payload.githubEditUrl ? 'Edit on GitHub:\n' + payload.githubEditUrl : 'Edit on GitHub: (quiz file unknown — pasted or custom quiz)',
+    payload.githubEditUrl ? 'Edit on GitHub:\n' + payload.githubEditUrl : 'Edit on GitHub: (custom or unknown quiz — cannot edit library file)',
     '',
     'Learning objective:',
     payload.cited_learning_objective || '(none)',
@@ -4827,22 +5101,32 @@ async function sendReportEmail(payload){
   const email = getReportNotifyEmail();
   if (!email) return false;
   const body = formatReportForEmail(payload);
+  const quizFile = payload.quiz.file
+    ? (isPersonalFile(payload.quiz.file) ? payload.quiz.file : 'quizzes/' + String(payload.quiz.file).replace(/^quizzes\//, ''))
+    : '(not a library/manifest quiz)';
+  const fields = {
+    _subject: 'MedStep report: ' + payload.category + ' — ' + (payload.quiz.title || 'Quiz'),
+    _template: 'table',
+    reporter_name: payload.reporterName || '(not provided)',
+    reporter_contact: payload.reporterContact || '(not provided)',
+    reason: payload.category,
+    student_rationale: payload.rationale || '(none)',
+    quiz_kind: payload.quiz.kind || '',
+    quiz: payload.quiz.title,
+    quiz_class: payload.quiz.classTag || '',
+    quiz_tags: payload.quiz.tagCode || '',
+    quiz_file: quizFile,
+    edit_on_github: payload.githubEditUrl || '(custom or unknown quiz — no library file)',
+    question_number: String(payload.questionIndex) + ' / ' + String(payload.questionTotal),
+    question_stem: payload.question,
+    learning_objective: payload.cited_learning_objective || '',
+    full_report: body
+  };
+  if (looksLikeEmail(payload.reporterContact)) fields._replyto = payload.reporterContact;
   const res = await fetch('https://formsubmit.co/ajax/' + encodeURIComponent(email), {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-    body: JSON.stringify({
-      _subject: 'MedStep report: ' + payload.category + ' — ' + (payload.quiz.title || 'Quiz'),
-      _template: 'table',
-      reason: payload.category,
-      student_rationale: payload.rationale || '(none)',
-      edit_on_github: payload.githubEditUrl || '(no quiz file — manual/pasted quiz)',
-      quiz: payload.quiz.title,
-      quiz_file: payload.quiz.file || '',
-      question_number: String(payload.questionIndex) + ' / ' + String(payload.questionTotal),
-      question_stem: payload.question,
-      learning_objective: payload.cited_learning_objective || '',
-      full_report: body
-    })
+    body: JSON.stringify(fields)
   });
   return res.ok;
 }
@@ -4858,10 +5142,11 @@ async function submitQuestionReport(){
   showReportValidationError('');
   const category = document.getElementById('report-rationale').value;
   const rationale = document.getElementById('report-details').value.trim();
+  const reporter = readReporterInputs('report-contact-name', 'report-contact-info');
   const submitBtn = document.getElementById('report-submit-btn');
   submitBtn.disabled = true;
   submitBtn.innerText = 'Sending…';
-  const payload = questionReportPayload(q, currentIdx, category, rationale);
+  const payload = questionReportPayload(q, currentIdx, category, rationale, reporter);
   queueReportLocally(payload);
   let emailed = false;
   try { emailed = await sendReportEmail(payload); } catch(e) { emailed = false; }
@@ -4925,7 +5210,9 @@ const BACKUP_PREF_ALIASES = {
   github_token: 'medstep_github_token',
   question_reports: 'medstep_question_reports',
   report_queue: 'medstep_question_reports',
-  report_notify_email: 'medstep_report_notify_email'
+  report_notify_email: 'medstep_report_notify_email',
+  reporter_name: 'medstep_reporter_name',
+  reporter_contact: 'medstep_reporter_contact'
 };
 
 function collectMedstepLocalStorage() {
@@ -7070,8 +7357,22 @@ function launchStagedQuizzes() {
   if (!stagedQuizzes.length) { showToast('❌ No quizzes staged'); return; }
   stagedQuizzes = applyClassLectureOrder(stagedQuizzes);
   updateMegaInputFromStaged();
+  const details = stagedQuizzes.map(s =>
+    quizSourceFromEntry(findLibraryEntry(s.file) || {
+      title: s.title,
+      file: s.file,
+      source: isPersonalFile(s.file) ? 'personal' : 'library'
+    })
+  );
+  const raw = stagedQuizzes.flatMap(s =>
+    stampQuestionsFromEntry(s.json, findLibraryEntry(s.file) || {
+      title: s.title,
+      file: s.file,
+      source: isPersonalFile(s.file) ? 'personal' : 'library'
+    })
+  );
   toggleLibrary();
-  initQuiz();
+  buildQuiz(raw, metaFromQuizSources(details));
 }
 
 // ── Question-count picker ────────────────────────────────
@@ -7371,7 +7672,7 @@ async function openQPickerForEntry(entry, btn) {
   showToast('⏳ Loading ' + entry.title + '…');
   try {
     const json = await fetchQuizJSON(entry);
-    showQPicker(json, entry.title);
+    showQPicker(stampQuestionsFromEntry(json, entry), entry.title);
   } catch(e) {
     showToast('❌ Failed to load: ' + (e.message || e));
   } finally {
@@ -7402,10 +7703,11 @@ async function openQPickerForScope(file, scope) {
   showToast('⏳ Loading ' + matches.length + ' quiz' + (matches.length !== 1 ? 'zes' : '') + '…');
   const combined = [];
   for (const entry of matches) {
-    try { combined.push(...await fetchQuizJSON(entry)); }
+    try { combined.push(...stampQuestionsFromEntry(await fetchQuizJSON(entry), entry)); }
     catch(e) { /* skip bad */ }
   }
   if (!combined.length) { showToast('❌ No questions loaded'); return; }
+  _qpickerEntry = matches.length === 1 ? matches[0] : null;
   showQPicker(combined, label);
 }
 
@@ -7437,10 +7739,11 @@ async function openQPickerForFiltered() {
   showToast('⏳ Loading ' + matches.length + ' quiz' + (matches.length !== 1 ? 'zes' : '') + '…');
   const combined = [];
   for (const entry of matches) {
-    try { combined.push(...await fetchQuizJSON(entry)); }
+    try { combined.push(...stampQuestionsFromEntry(await fetchQuizJSON(entry), entry)); }
     catch(e) { /* skip bad */ }
   }
   if (!combined.length) { showToast('❌ No questions loaded'); return; }
+  _qpickerEntry = matches.length === 1 ? matches[0] : null;
   showQPicker(combined, label);
 }
 
@@ -7586,7 +7889,17 @@ function addToQuizFromQPicker() {
     return;
   }
   const mix = qpickerSelectedMixSummary();
-  _qpickerBuildingChunks.push({ label: _qpickerCurrentLabel, questions: selected, mix });
+  const srcs = uniqueQuizSourcesFromQuestions(selected);
+  _qpickerBuildingChunks.push({
+    label: _qpickerCurrentLabel,
+    questions: selected,
+    mix,
+    src: quizSourceFromEntry(_qpickerEntry) || srcs[0] || {
+      title: _qpickerCurrentLabel,
+      source: librarySource === 'personal' ? 'personal' : 'library'
+    },
+    srcs: srcs.length ? srcs : undefined
+  });
   closeQPicker();
   renderStagingArea();
   showToast('✅ Added ' + selected.length + 'Q' + (mix ? ' (' + mix + ')' : '') +
@@ -7603,7 +7916,7 @@ function confirmQPicker() {
     return;
   }
   const all = [...qpickerBuildingFlat(), ...selected];
-  const meta = buildQPickerMeta();
+  const meta = buildQPickerMeta(selected);
   _qpickerBuildingChunks = [];
   closeQPicker();
   toggleLibrary();
@@ -7621,8 +7934,16 @@ function launchBuildingQuiz() {
   if (!flat.length) { showToast('❌ No questions added yet'); return; }
   // Order lecture chunks by class lecture number when labels are quiz titles
   _qpickerBuildingChunks = applyClassLectureOrder(
-    _qpickerBuildingChunks.map(c => ({ title: c.label, file: c.label, label: c.label, questions: c.questions }))
-  ).map(c => ({ label: c.label, questions: c.questions }));
+    _qpickerBuildingChunks.map(c => ({
+      title: c.label,
+      file: (c.src && c.src.file) || c.label,
+      label: c.label,
+      questions: c.questions,
+      mix: c.mix,
+      src: c.src,
+      srcs: c.srcs
+    }))
+  ).map(c => ({ label: c.label, questions: c.questions, mix: c.mix, src: c.src, srcs: c.srcs }));
   const all = [...qpickerBuildingFlat()];
   const meta = buildQPickerMeta();
   _qpickerBuildingChunks = [];
@@ -7708,7 +8029,10 @@ async function loadLibraryQuiz(entry) {
     const json = await fetchQuizJSON(entry);
     if (!Array.isArray(json) || json.length === 0) throw new Error('Quiz has no questions');
     toggleLibrary();
-    buildQuiz(json, { source: 'library', title: entry.title, file: entry.file });
+    buildQuiz(stampQuestionsFromEntry(json, entry), Object.assign({}, quizSourceFromEntry(entry), {
+      sources: [formatQuizSourceLine(quizSourceFromEntry(entry))],
+      sourceDetails: [quizSourceFromEntry(entry)]
+    }));
     showToast('✅ ' + entry.title + ' loaded!');
   } catch(e) {
     const msg = e.message || String(e);
@@ -8338,6 +8662,20 @@ function openFeedbackModal(type){
   ta.value = '';
   ta.placeholder = copy.placeholder;
   document.getElementById('feedback-modal-error').textContent = '';
+  fillReporterInputs('feedback-contact-name', 'feedback-contact-info');
+  const quizBox = document.getElementById('feedback-quiz-identity');
+  const quizLines = currentQuizContextLines();
+  if (quizBox) {
+    if (quizLines.length) {
+      const q = questions[currentIdx];
+      quizBox.hidden = false;
+      quizBox.innerHTML = formatQuizSourceHtml(resolveQuestionQuizSource(q)) +
+        '<br><span class="quiz-file">' + escapeHtmlLib(quizLines.slice(1).join(' · ')) + '</span>';
+    } else {
+      quizBox.hidden = true;
+      quizBox.innerHTML = '';
+    }
+  }
   const btn = document.getElementById('feedback-modal-submit-btn');
   btn.disabled = false;
   btn.innerText = 'Send';
@@ -8366,23 +8704,29 @@ async function submitFeedbackModal(){
   btn.disabled = true;
   btn.innerText = 'Sending…';
 
+  const reporter = readReporterInputs('feedback-contact-name', 'feedback-contact-info');
+  const quizLines = currentQuizContextLines();
   const body = [
     copy.title,
     '──────────────────────',
     'Submitted: ' + new Date().toISOString(),
     'Type: ' + feedbackModalType,
+    'Reporter: ' + (reporter.name || '(not provided)'),
+    'Contact: ' + (reporter.contact || '(not provided)'),
     '',
+    ...(quizLines.length ? quizLines.concat(['']) : []),
     message,
     '',
     'App: ' + location.href.split('#')[0]
   ].join('\n');
 
   try {
-    const ok = await sendFormSubmitToDeveloper({
+    const ok = await sendFormSubmitToDeveloper(Object.assign({
       feedback_type: feedbackModalType,
       message: message,
+      quiz_context: quizLines.join(' | ') || '(no active quiz)',
       full_submission: body
-    }, copy.subject);
+    }, reporter.fields), copy.subject);
     if (ok) {
       showToast('✅ Sent — thank you!');
       closeFeedbackModal();
@@ -8442,6 +8786,7 @@ function openEmailQuizConfirmModal(form){
       form.parsed.length + ' question' + (form.parsed.length !== 1 ? 's' : '') + ').';
   }
   document.getElementById('email-quiz-description').value = '';
+  fillReporterInputs('email-quiz-contact-name', 'email-quiz-contact-info');
   const err = document.getElementById('email-quiz-confirm-error');
   if (err) err.textContent = '';
   const sendBtn = document.getElementById('email-quiz-final-send-btn');
@@ -8477,6 +8822,7 @@ async function confirmQuizEmailSubmission(){
   btn.disabled = true;
   btn.innerText = 'Sending…';
 
+  const reporter = readReporterInputs('email-quiz-contact-name', 'email-quiz-contact-info');
   const tagParts = [];
   if (form.block) tagParts.push('Block ' + form.block);
   if (form.exam) tagParts.push('Exam ' + form.exam);
@@ -8488,6 +8834,8 @@ async function confirmQuizEmailSubmission(){
     'MedStep Library Quiz Submission',
     '──────────────────────────────',
     'Submitted: ' + new Date().toISOString(),
+    'Reporter: ' + (reporter.name || '(not provided)'),
+    'Contact: ' + (reporter.contact || '(not provided)'),
     'Title: ' + form.title,
     'Suggested filename: quizzes/' + form.filename,
     'Questions: ' + form.parsed.length,
@@ -8501,7 +8849,7 @@ async function confirmQuizEmailSubmission(){
   ].join('\n');
 
   try {
-    const ok = await sendFormSubmitToDeveloper({
+    const ok = await sendFormSubmitToDeveloper(Object.assign({
       quiz_title: form.title,
       suggested_filename: 'quizzes/' + form.filename,
       question_count: String(form.parsed.length),
@@ -8509,7 +8857,7 @@ async function confirmQuizEmailSubmission(){
       description: description,
       quiz_json: prettyJson,
       full_submission: body
-    }, 'MedStep library quiz: ' + form.title);
+    }, reporter.fields), 'MedStep library quiz: ' + form.title);
     if (ok) {
       showToast('✅ Quiz emailed — the developer will upload it to the library.');
       closeEmailQuizConfirmModal();
