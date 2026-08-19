@@ -1,0 +1,1218 @@
+[
+  {
+    "question": "Which enzyme catalyzes the conversion of pyruvate to acetyl CoA in mitochondria?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the purpose of the pyruvate dehydrogenase complex and how it is regulated",
+    "options": [
+      {
+        "text": "Pyruvate dehydrogenase complex enzyme converting pyruvate to acetyl CoA",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states that the pyruvate dehydrogenase complex converts pyruvate into acetyl CoA with release of CO2 and production of NADH; regulation occurs via phosphorylation (inactive) and dephosphorylation (active)."
+      },
+      {
+        "text": "Citrate synthase enzyme condensing acetyl CoA with oxaloacetate to citrate",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate synthase acts after acetyl CoA formation by condensing acetyl CoA with oxaloacetate; it would be correct only if the question asked which enzyme uses acetyl CoA to form citrate."
+      },
+      {
+        "text": "Isocitrate dehydrogenase enzyme oxidatively decarboxylating isocitrate to alpha-ketoglutarate",
+        "isCorrect": false,
+        "rationale": "Wrong because isocitrate dehydrogenase acts later in the TCA cycle converting isocitrate to alpha-ketoglutarate and producing NADH; it would be correct only if the stem asked about the rate-limiting TCA step."
+      },
+      {
+        "text": "Alpha-ketoglutarate dehydrogenase complex oxidatively decarboxylating alpha-ketoglutarate",
+        "isCorrect": false,
+        "rationale": "Wrong because alpha-ketoglutarate dehydrogenase converts alpha-ketoglutarate to succinyl-CoA using the same coenzymes as PDH; it would be correct only if the substrate were alpha-ketoglutarate instead of pyruvate."
+      },
+      {
+        "text": "Malate dehydrogenase enzyme oxidizing malate to oxaloacetate with NAD+",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase regenerates oxaloacetate from malate producing NADH; it would be correct only if the question asked which enzyme regenerates oxaloacetate at the end of the cycle."
+      }
+    ]
+  },
+  {
+    "question": "Which five coenzymes are required by the pyruvate dehydrogenase complex?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Recite the 5 coenzymes required by the pyruvate dehydrogenase complex and the alpha-ketoglutarate complex",
+    "options": [
+      {
+        "text": "Thiamine pyrophosphate lipoic acid CoA FAD NAD plus",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture lists TPP, lipoic acid, CoA (from pantothenic acid), FAD (from riboflavin), and NAD+ (from niacin) as the five PDH coenzymes."
+      },
+      {
+        "text": "Biotin folate pyridoxal phosphate vitamin C vitamin K",
+        "isCorrect": false,
+        "rationale": "Wrong because these vitamins are not the PDH coenzymes; this would be correct only if the complex required biotin or folate, which the lecture does not state."
+      },
+      {
+        "text": "NADH FADH2 CoA lipoic acid thiamine monophosphate",
+        "isCorrect": false,
+        "rationale": "Wrong because NADH and FADH2 are reduced forms, and thiamine monophosphate is not the active TPP coenzyme; correct list requires NAD+ and TPP specifically."
+      },
+      {
+        "text": "Pantothenic acid riboflavin niacin thiamine lipoic acid",
+        "isCorrect": false,
+        "rationale": "Wrong because this lists vitamin precursors rather than the five coenzymes themselves; it would be correct only if the question asked for vitamin sources rather than coenzymes."
+      },
+      {
+        "text": "Coenzyme Q cytochrome c ATP GTP creatine phosphate pool",
+        "isCorrect": false,
+        "rationale": "Wrong because these are electron carriers or energy stores unrelated to PDH coenzymes; it would be correct only in a question about ETC components or energy buffering."
+      }
+    ]
+  },
+  {
+    "question": "Which TCA enzyme is allosterically inhibited by citrate accumulation and links to fatty acid synthesis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Name the substrates and product of citrate synthase, how it is regulated, and how it intersects with glycolysis and fatty acid synthesis",
+    "options": [
+      {
+        "text": "Phosphofructokinase one glycolytic enzyme inhibited by citrate accumulation",
+        "isCorrect": false,
+        "rationale": "Wrong because PFK-1 is inhibited by citrate but is a glycolytic enzyme, not the TCA enzyme asked for; it would be correct only if the stem asked which glycolytic enzyme is inhibited by citrate."
+      },
+      {
+        "text": "Citrate synthase enzyme condensing acetyl CoA with oxaloacetate to citrate",
+        "isCorrect": true,
+        "rationale": "Correct because citrate synthase catalyzes acetyl CoA plus oxaloacetate to form citrate; citrate accumulation feeds back to inhibit glycolysis (PFK-1) and activates fatty acid synthesis as noted in the lecture."
+      },
+      {
+        "text": "Aconitase enzyme isomerizing citrate to isocitrate within mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong because aconitase converts citrate to isocitrate but is not the enzyme whose product (citrate) allosterically inhibits glycolysis and activates fatty acid synthesis; it would be correct only if asked about citrate isomerization."
+      },
+      {
+        "text": "Isocitrate dehydrogenase enzyme oxidatively decarboxylating isocitrate to alpha-ketoglutarate",
+        "isCorrect": false,
+        "rationale": "Wrong because isocitrate dehydrogenase performs the rate-limiting oxidative decarboxylation step, not the citrate-producing condensation; it would be correct only if the question targeted the rate-limiting enzyme."
+      },
+      {
+        "text": "Malate dehydrogenase enzyme oxidizing malate to oxaloacetate with NAD plus",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase regenerates oxaloacetate and is not directly responsible for citrate accumulation or fatty acid synthesis activation; it would be correct only if the stem asked about oxaloacetate regeneration."
+      }
+    ]
+  },
+  {
+    "question": "Which step is described as the rate-limiting irreversible reaction of the TCA cycle?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Name the substrates and products of isocitrate dehydrogenase and how it is regulated",
+    "options": [
+      {
+        "text": "Isocitrate dehydrogenase oxidatively decarboxylating isocitrate to alpha-ketoglutarate",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture identifies isocitrate dehydrogenase as the rate-limiting TCA enzyme converting isocitrate to alpha-ketoglutarate with NAD+ reduction and CO2 release; it is regulated by ADP activation and ATP/NADH inhibition."
+      },
+      {
+        "text": "Citrate synthase condensing acetyl CoA with oxaloacetate to form citrate",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate synthase is an irreversible step but the lecture designates isocitrate dehydrogenase as the rate-limiting enzyme; this would be correct only if the lecture named citrate synthase as rate-limiting."
+      },
+      {
+        "text": "Alpha-ketoglutarate dehydrogenase oxidatively decarboxylating alpha-ketoglutarate to succinyl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong because although alpha-ketoglutarate dehydrogenase is irreversible and regulated, the lecture specifically highlights isocitrate dehydrogenase as the rate-limiting step; it would be correct only if the question asked for another irreversible enzyme."
+      },
+      {
+        "text": "Succinate dehydrogenase oxidizing succinate to fumarate with FAD reduction",
+        "isCorrect": false,
+        "rationale": "Wrong because succinate dehydrogenase is reversible and embedded in the membrane as Complex II; it would be correct only if the question targeted membrane-bound TCA enzymes."
+      },
+      {
+        "text": "Malate dehydrogenase oxidizing malate to oxaloacetate producing NADH",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase is reversible and not the rate-limiting step; it would be correct only if the stem asked which enzyme regenerates oxaloacetate."
+      }
+    ]
+  },
+  {
+    "question": "Which cofactor deficiency would most directly impair PDH and alpha-ketoglutarate dehydrogenase activity?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how the TCA cycle intersects with vitamin deficiency(s), Leigh Syndrome, arsenic poisoning, and oxygen deprivation",
+    "options": [
+      {
+        "text": "Thiamine deficiency impairing TPP dependent dehydrogenase complexes in mitochondria",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states that TPP (thiamine pyrophosphate) is required by PDH and alpha-ketoglutarate dehydrogenase; thiamine deficiency causes CNS problems such as Wernicke-Korsakoff and impairs these complexes."
+      },
+      {
+        "text": "Vitamin C deficiency impairing collagen hydroxylation and unrelated mitochondrial dehydrogenases",
+        "isCorrect": false,
+        "rationale": "Wrong because vitamin C is not a PDH coenzyme; it would be correct only if the question asked about collagen synthesis defects rather than PDH activity."
+      },
+      {
+        "text": "Vitamin K deficiency impairing gamma carboxylation of clotting factors unrelated to PDH",
+        "isCorrect": false,
+        "rationale": "Wrong because vitamin K is unrelated to PDH or alpha-ketoglutarate dehydrogenase; it would be correct only in a question about coagulation abnormalities."
+      },
+      {
+        "text": "Folate deficiency impairing one carbon metabolism and indirectly affecting nucleotide synthesis",
+        "isCorrect": false,
+        "rationale": "Wrong because folate is not listed as a PDH coenzyme in the lecture; it would be correct only if the stem asked about nucleotide synthesis or methylation defects."
+      },
+      {
+        "text": "Vitamin B12 deficiency impairing methylmalonyl CoA mutase and odd chain fatty acid metabolism",
+        "isCorrect": false,
+        "rationale": "Wrong because B12 affects propionyl-CoA metabolism, not PDH directly; it would be correct only if the question targeted propionyl-CoA to succinyl-CoA conversion."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic alcohol use presents with confusion and ataxia. Which deficiency best explains these neurologic signs via impaired PDH activity?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how the TCA cycle intersects with vitamin deficiency(s), Leigh Syndrome, arsenic poisoning, and oxygen deprivation",
+    "options": [
+      {
+        "text": "Thiamine deficiency causing impaired TPP dependent dehydrogenase activity in brain",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture links thiamine deficiency to PDH dysfunction and Wernicke-Korsakoff encephalopathy in chronic alcoholics; TPP is required for PDH activity and CNS tissues are most affected."
+      },
+      {
+        "text": "Niacin deficiency causing pellagra with dermatitis diarrhea and dementia unrelated to PDH primarily",
+        "isCorrect": false,
+        "rationale": "Wrong because niacin deficiency affects NAD+ dependent reactions broadly and causes pellagra; it would be correct only if the clinical triad of pellagra were present rather than classic Wernicke signs."
+      },
+      {
+        "text": "Riboflavin deficiency causing FAD dependent dehydrogenase dysfunction in peripheral nerves",
+        "isCorrect": false,
+        "rationale": "Wrong because riboflavin deficiency affects FAD-dependent enzymes but the lecture emphasizes thiamine deficiency in alcoholics causing Wernicke-Korsakoff; this option would be correct only with peripheral neuropathy predominance."
+      },
+      {
+        "text": "Vitamin B12 deficiency causing subacute combined degeneration of spinal cord with paresthesias",
+        "isCorrect": false,
+        "rationale": "Wrong because B12 deficiency causes dorsal column and corticospinal tract dysfunction, not the acute confusion and ophthalmoplegia of Wernicke encephalopathy; it would be correct only with corresponding exam findings."
+      },
+      {
+        "text": "Vitamin C deficiency causing scurvy with gum bleeding and poor wound healing unrelated to PDH",
+        "isCorrect": false,
+        "rationale": "Wrong because vitamin C deficiency presents with scurvy signs, not the encephalopathy linked to PDH impairment; it would be correct only if mucocutaneous bleeding were the dominant presentation."
+      }
+    ]
+  },
+  {
+    "question": "Which regulatory modification inactivates the pyruvate dehydrogenase complex?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the purpose of the pyruvate dehydrogenase complex and how it is regulated",
+    "options": [
+      {
+        "text": "Phosphorylation of PDH by PDH kinase rendering complex enzymatically inactive",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains PDH is regulated by covalent modification: phosphorylation by PDH kinase inactivates the complex, while dephosphorylation by PDH phosphatase activates it."
+      },
+      {
+        "text": "Dephosphorylation of PDH by PDH phosphatase rendering complex enzymatically inactive",
+        "isCorrect": false,
+        "rationale": "Wrong because dephosphorylation activates PDH according to the lecture; this option would be correct only if the regulatory roles were reversed."
+      },
+      {
+        "text": "Allosteric activation of PDH by acetyl CoA rendering complex inactive paradoxically",
+        "isCorrect": false,
+        "rationale": "Wrong because acetyl CoA is a product that inhibits PDH, not an activator; it would be correct only if acetyl CoA were an activator, contrary to the lecture."
+      },
+      {
+        "text": "Covalent acetylation of PDH complex increasing enzymatic activity in mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture specifies phosphorylation/dephosphorylation as the covalent regulatory mechanism; acetylation is not described and would be correct only if lecture stated it."
+      },
+      {
+        "text": "Proteolytic cleavage of PDH complex subunits as physiological activation mechanism",
+        "isCorrect": false,
+        "rationale": "Wrong because proteolytic cleavage is not the physiological regulatory mechanism described; it would be correct only in a pathological degradation scenario not covered in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which TCA enzyme is embedded in the inner mitochondrial membrane and also functions as Complex II of the ETC?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the substrates and products of isocitrate dehydrogenase and how it is regulated",
+    "options": [
+      {
+        "text": "Succinate dehydrogenase enzyme oxidizing succinate to fumarate with FAD",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states succinate dehydrogenase is membrane-bound and serves as Complex II, converting succinate to fumarate while reducing FAD to FADH2."
+      },
+      {
+        "text": "Malate dehydrogenase enzyme oxidizing malate to oxaloacetate with NAD plus",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase is soluble in the matrix and not part of the ETC; it would be correct only if the question asked about oxaloacetate regeneration."
+      },
+      {
+        "text": "Isocitrate dehydrogenase enzyme converting isocitrate to alpha-ketoglutarate with NAD plus",
+        "isCorrect": false,
+        "rationale": "Wrong because isocitrate dehydrogenase is matrix-localized and rate-limiting, not membrane-embedded Complex II; it would be correct only if the stem targeted the rate-limiting TCA step."
+      },
+      {
+        "text": "Citrate synthase enzyme condensing acetyl CoA with oxaloacetate to citrate",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate synthase is matrix-localized and not part of the ETC; it would be correct only if the question asked which enzyme forms citrate."
+      },
+      {
+        "text": "Aconitase enzyme isomerizing citrate to isocitrate via cis-aconitate intermediate",
+        "isCorrect": false,
+        "rationale": "Wrong because aconitase is matrix-localized and not an ETC complex; it would be correct only if the question asked about citrate isomerization."
+      }
+    ]
+  },
+  {
+    "question": "How many ATP equivalents are produced per acetyl CoA oxidized in the TCA cycle according to the lecture estimates?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how we can calculate an ATP yield from the TCA cycle and what contributes to this yield",
+    "options": [
+      {
+        "text": "Twelve ATP equivalents produced per acetyl CoA oxidized in cycle",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture lists 3 NADH (9 ATP), 1 FADH2 (2 ATP), and 1 GTP (1 ATP) totaling 12 ATP per acetyl CoA oxidized."
+      },
+      {
+        "text": "Thirty eight ATP equivalents produced per acetyl CoA oxidized overall glucose",
+        "isCorrect": false,
+        "rationale": "Wrong because 38 ATP is the estimated yield per glucose molecule, not per acetyl CoA; it would be correct only if the stem asked for total ATP per glucose."
+      },
+      {
+        "text": "Twenty four ATP equivalents produced per acetyl CoA oxidized in cycle",
+        "isCorrect": false,
+        "rationale": "Wrong because 24 ATP is the lecture's TCA contribution per glucose (two acetyl CoA), not per single acetyl CoA; it would be correct only if asking per glucose."
+      },
+      {
+        "text": "Nine ATP equivalents produced per acetyl CoA oxidized from NADH only",
+        "isCorrect": false,
+        "rationale": "Wrong because nine ATP corresponds to the three NADH yield only, not the total ATP equivalents per acetyl CoA; it would be correct only if the question targeted NADH contribution alone."
+      },
+      {
+        "text": "Two ATP equivalents produced per acetyl CoA oxidized from FADH2 only",
+        "isCorrect": false,
+        "rationale": "Wrong because two ATP corresponds to FADH2 contribution only, not the total per acetyl CoA; it would be correct only if the stem asked about FADH2 yield specifically."
+      }
+    ]
+  },
+  {
+    "question": "Which TCA enzyme catalyzes substrate-level phosphorylation producing GTP that can be converted to ATP?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how we can calculate an ATP yield from the TCA cycle and what contributes to this yield",
+    "options": [
+      {
+        "text": "Succinyl CoA synthetase (succinate thiokinase) producing GTP from GDP and Pi",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture describes succinyl-CoA synthetase (also called succinate thiokinase) catalyzing succinyl-CoA to succinate with substrate-level phosphorylation producing GTP."
+      },
+      {
+        "text": "Succinate dehydrogenase oxidizing succinate to fumarate with FAD reduction",
+        "isCorrect": false,
+        "rationale": "Wrong because succinate dehydrogenase produces FADH2 and is not the substrate-level phosphorylation step; it would be correct only if the question asked about FAD-linked oxidation."
+      },
+      {
+        "text": "Malate dehydrogenase oxidizing malate to oxaloacetate producing NADH",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase produces NADH and does not generate GTP; it would be correct only if the stem targeted NADH-producing steps."
+      },
+      {
+        "text": "Isocitrate dehydrogenase producing NADH and CO2 from isocitrate",
+        "isCorrect": false,
+        "rationale": "Wrong because isocitrate dehydrogenase produces NADH and CO2 but not GTP; it would be correct only if the question asked about oxidative decarboxylation steps."
+      },
+      {
+        "text": "Alpha-ketoglutarate dehydrogenase producing succinyl CoA and NADH with CO2 release",
+        "isCorrect": false,
+        "rationale": "Wrong because alpha-ketoglutarate dehydrogenase produces succinyl-CoA and NADH but not GTP directly; it would be correct only if the stem asked about succinyl-CoA formation."
+      }
+    ]
+  },
+  {
+    "question": "Which metabolic fate increases when PDH is inhibited and pyruvate accumulates?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how the TCA cycle intersects with vitamin deficiency(s), Leigh Syndrome, arsenic poisoning, and oxygen deprivation",
+    "options": [
+      {
+        "text": "Conversion of pyruvate to lactate via lactate dehydrogenase causing lactic acidosis",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains PDH deficiency leads to pyruvate shunting to lactate, producing chronic lactic acidosis as seen in Leigh syndrome."
+      },
+      {
+        "text": "Increased conversion of pyruvate to oxaloacetate via pyruvate carboxylase for gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong because while pyruvate can be carboxylated to oxaloacetate, the lecture emphasizes lactate accumulation when PDH is impaired; this option would be correct only if gluconeogenic flux predominated."
+      },
+      {
+        "text": "Enhanced fatty acid synthesis from excess acetyl CoA due to PDH inhibition",
+        "isCorrect": false,
+        "rationale": "Wrong because PDH inhibition reduces acetyl CoA production from pyruvate, so fatty acid synthesis from acetyl CoA would not increase; it would be correct only if acetyl CoA were abundant."
+      },
+      {
+        "text": "Increased ketone body formation from surplus acetyl CoA in mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong because ketogenesis requires acetyl CoA excess; PDH inhibition lowers acetyl CoA from pyruvate, so ketone production would not increase for that reason; it would be correct only with high fatty acid oxidation."
+      },
+      {
+        "text": "Augmented oxidative phosphorylation due to increased NADH supply from PDH inhibition",
+        "isCorrect": false,
+        "rationale": "Wrong because PDH inhibition decreases NADH production from pyruvate oxidation, not increases it; this option would be correct only if another source increased NADH."
+      }
+    ]
+  },
+  {
+    "question": "A patient exposed to arsenic develops severe metabolic impairment. Which coenzyme interaction explains arsenic toxicity in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how the TCA cycle intersects with vitamin deficiency(s), Leigh Syndrome, arsenic poisoning, and oxygen deprivation",
+    "options": [
+      {
+        "text": "Arsenic binds lipoic acid preventing its use as a PDH coenzyme and inhibiting PDH",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states arsenic reacts with lipoic acid, making it unavailable and thereby inhibiting PDH and alpha-ketoglutarate dehydrogenase, blocking energy production."
+      },
+      {
+        "text": "Arsenic competitively inhibits NAD plus binding to dehydrogenases reducing NADH formation",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture attributes arsenic toxicity to lipoic acid interaction rather than NAD+ competition; this would be correct only if arsenic directly blocked NAD+ binding."
+      },
+      {
+        "text": "Arsenic uncouples oxidative phosphorylation increasing oxygen consumption without ATP synthesis",
+        "isCorrect": false,
+        "rationale": "Wrong because uncoupling is not the mechanism described in the lecture; it would be correct only if arsenic acted as an uncoupler, which the lecture does not state."
+      },
+      {
+        "text": "Arsenic inhibits succinate dehydrogenase embedded in the inner mitochondrial membrane",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture specifies lipoic acid interaction affecting PDH and alpha-ketoglutarate dehydrogenase, not succinate dehydrogenase; it would be correct only if succinate dehydrogenase were targeted."
+      },
+      {
+        "text": "Arsenic causes thiamine deficiency by blocking thiamine absorption in the gut",
+        "isCorrect": false,
+        "rationale": "Wrong because arsenic toxicity is linked to lipoic acid binding, not to causing thiamine deficiency; it would be correct only if arsenic impaired thiamine uptake as described."
+      }
+    ]
+  },
+  {
+    "question": "Which three TCA enzymes are identified as the key irreversible control points of the cycle?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Overall Regulation of the TCA Cycle",
+    "options": [
+      {
+        "text": "Citrate synthase isocitrate dehydrogenase alpha-ketoglutarate dehydrogenase complex",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture lists citrate synthase, isocitrate dehydrogenase, and alpha-ketoglutarate dehydrogenase as the three irreversible, key regulatory steps of the TCA cycle."
+      },
+      {
+        "text": "Succinate dehydrogenase fumarase malate dehydrogenase reversible matrix enzymes",
+        "isCorrect": false,
+        "rationale": "Wrong because these enzymes are reversible and not listed as the key irreversible control points; this would be correct only if the lecture identified them as regulatory, which it does not."
+      },
+      {
+        "text": "Aconitase citrate lyase pyruvate carboxylase mixed compartment enzymes",
+        "isCorrect": false,
+        "rationale": "Wrong because aconitase is reversible and citrate lyase and pyruvate carboxylase are not the three irreversible TCA control enzymes named in the lecture; it would be correct only if the lecture named different enzymes."
+      },
+      {
+        "text": "Pyruvate dehydrogenase complex succinyl CoA synthetase succinate dehydrogenase membrane bound",
+        "isCorrect": false,
+        "rationale": "Wrong because while PDH is important for acetyl CoA supply, the lecture's three key irreversible TCA enzymes are citrate synthase, isocitrate dehydrogenase, and alpha-ketoglutarate dehydrogenase; this option mixes steps."
+      },
+      {
+        "text": "Isocitrate lyase malate synthase glyoxylate cycle enzymes absent in humans",
+        "isCorrect": false,
+        "rationale": "Wrong because these glyoxylate cycle enzymes are not present in humans and are not TCA control points; it would be correct only in organisms that possess the glyoxylate cycle."
+      }
+    ]
+  },
+  {
+    "question": "Which allosteric regulators activate isocitrate dehydrogenase in muscle according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Name the substrates and products of isocitrate dehydrogenase and how it is regulated",
+    "options": [
+      {
+        "text": "ADP and calcium ions activate isocitrate dehydrogenase in muscle mitochondria",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture lists ADP and Ca2+ (in muscle) as activators of isocitrate dehydrogenase, while ATP and NADH act as inhibitors."
+      },
+      {
+        "text": "ATP and NADH activate isocitrate dehydrogenase increasing cycle flux",
+        "isCorrect": false,
+        "rationale": "Wrong because ATP and NADH are inhibitors per the lecture; this option would be correct only if the regulatory roles were reversed."
+      },
+      {
+        "text": "Citrate and succinyl CoA activate isocitrate dehydrogenase enhancing decarboxylation",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate and succinyl-CoA are inhibitors of upstream steps or other enzymes, not activators of isocitrate dehydrogenase; it would be correct only if lecture stated activation."
+      },
+      {
+        "text": "FAD and FMN activate isocitrate dehydrogenase as flavoprotein cofactors",
+        "isCorrect": false,
+        "rationale": "Wrong because isocitrate dehydrogenase uses NAD+ (or NADP+ in some isoforms), not FAD/FMNs as cofactors; it would be correct only for flavoprotein enzymes."
+      },
+      {
+        "text": "Pyruvate and lactate activate isocitrate dehydrogenase by substrate level signaling",
+        "isCorrect": false,
+        "rationale": "Wrong because pyruvate and lactate are not listed as direct activators of isocitrate dehydrogenase in the lecture; it would be correct only if substrate-level regulation by these metabolites were described."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme uses the same five coenzymes as PDH and catalyzes oxidative decarboxylation of alpha-ketoglutarate?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Recite the 5 coenzymes required by the pyruvate dehydrogenase complex and the alpha-ketoglutarate complex",
+    "options": [
+      {
+        "text": "Alpha-ketoglutarate dehydrogenase complex using same five coenzymes as PDH",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explicitly states that the alpha-ketoglutarate dehydrogenase complex closely resembles PDH and uses the same coenzymes: TPP, lipoic acid, CoA, FAD, and NAD+."
+      },
+      {
+        "text": "Isocitrate dehydrogenase complex using identical five coenzymes as PDH in mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong because isocitrate dehydrogenase does not use the same five coenzymes as PDH; it primarily uses NAD+ and is not described as a multi-enzyme complex like PDH."
+      },
+      {
+        "text": "Succinate dehydrogenase complex using FAD and iron sulfur clusters as cofactors",
+        "isCorrect": false,
+        "rationale": "Wrong because succinate dehydrogenase uses FAD and Fe-S centers and is part of Complex II, not the five-coenzyme PDH-type complex; it would be correct only if asked about Complex II cofactors."
+      },
+      {
+        "text": "Malate dehydrogenase enzyme using NAD plus as sole coenzyme in matrix",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase uses NAD+ alone and is not a multi-coenzyme complex; it would be correct only if the question targeted NAD+-dependent oxidation of malate."
+      },
+      {
+        "text": "Citrate synthase enzyme using CoA and water to form citrate from acetyl CoA",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate synthase is not a multi-enzyme dehydrogenase complex and does not use the five PDH coenzymes; it would be correct only if the stem asked which enzyme forms citrate."
+      }
+    ]
+  },
+  {
+    "question": "Which TCA intermediate directly donates two carbons that are released as CO2 during the cycle?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Reactions of the TCA Cycle",
+    "options": [
+      {
+        "text": "Acetyl CoA donates two carbons that are ultimately released as carbon dioxide",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains that acetyl CoA contributes two carbons to the cycle which are subsequently oxidized and released as CO2 while oxaloacetate is regenerated."
+      },
+      {
+        "text": "Oxaloacetate donates two carbons that are released as carbon dioxide during cycle",
+        "isCorrect": false,
+        "rationale": "Wrong because oxaloacetate is regenerated and its carbons are not lost as CO2 in one turn; it would be correct only if oxaloacetate were being consumed rather than regenerated."
+      },
+      {
+        "text": "Citrate donates two carbons directly released as carbon dioxide in single turn",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate's carbons derive from acetyl CoA and oxaloacetate; the two carbons released as CO2 originate from acetyl CoA over the course of the cycle, not directly from citrate alone."
+      },
+      {
+        "text": "Succinyl CoA donates two carbons that are released as carbon dioxide in cycle",
+        "isCorrect": false,
+        "rationale": "Wrong because succinyl-CoA carbons are downstream and not the primary two carbons introduced by acetyl CoA; it would be correct only if succinyl-CoA were the initial acetyl donor."
+      },
+      {
+        "text": "Malate donates two carbons that are released as carbon dioxide during oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong because malate is oxidized to oxaloacetate without releasing CO2; CO2 release occurs at oxidative decarboxylation steps earlier in the cycle."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory pattern would you expect in PDH deficiency causing chronic lactic acidosis?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how the TCA cycle intersects with vitamin deficiency(s), Leigh Syndrome, arsenic poisoning, and oxygen deprivation",
+    "options": [
+      {
+        "text": "Elevated blood lactate with normal or low blood pyruvate ratio indicating impaired PDH flux",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture notes PDH deficiency leads to pyruvate shunting to lactate and chronic lactic acidosis; an elevated lactate with altered lactate:pyruvate ratio reflects impaired PDH-mediated entry into the TCA cycle."
+      },
+      {
+        "text": "Low blood lactate with elevated ketone bodies indicating increased fatty acid oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong because PDH deficiency causes elevated lactate rather than low lactate; this option would be correct only if fatty acid oxidation predominated and lactate production were suppressed."
+      },
+      {
+        "text": "Elevated blood ammonia with normal lactate indicating urea cycle dysfunction instead",
+        "isCorrect": false,
+        "rationale": "Wrong because ammonia elevation suggests urea cycle defects, not PDH deficiency; it would be correct only if neurological signs were due to hyperammonemia."
+      },
+      {
+        "text": "Marked hypoglycemia with low lactate indicating impaired gluconeogenesis primarily",
+        "isCorrect": false,
+        "rationale": "Wrong because PDH deficiency typically causes lactic acidosis rather than low lactate; this option would be correct only if gluconeogenesis failure caused hypoglycemia without lactate accumulation."
+      },
+      {
+        "text": "Isolated elevated creatine kinase with normal lactate indicating muscle breakdown only",
+        "isCorrect": false,
+        "rationale": "Wrong because isolated CK elevation indicates muscle injury, not PDH-related lactic acidosis; it would be correct only if the clinical picture were rhabdomyolysis."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme catalyzes the reversible hydration of fumarate to malate in the TCA cycle?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Reactions of the TCA Cycle",
+    "options": [
+      {
+        "text": "Fumarase enzyme hydrating fumarate to L malate in mitochondrial matrix reversible",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture names fumarase (fumarate hydratase) as the enzyme that hydrates fumarate to malate; the reaction is reversible and occurs in the matrix."
+      },
+      {
+        "text": "Succinate dehydrogenase enzyme oxidizing succinate to fumarate with FAD reduction",
+        "isCorrect": false,
+        "rationale": "Wrong because succinate dehydrogenase converts succinate to fumarate rather than hydrating fumarate to malate; it would be correct only if the question asked about succinate oxidation."
+      },
+      {
+        "text": "Malate dehydrogenase enzyme oxidizing malate to oxaloacetate producing NADH",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase oxidizes malate to oxaloacetate, not the hydration of fumarate; it would be correct only if the stem targeted oxaloacetate regeneration."
+      },
+      {
+        "text": "Aconitase enzyme isomerizing citrate to isocitrate via cis aconitate intermediate",
+        "isCorrect": false,
+        "rationale": "Wrong because aconitase catalyzes citrate-isocitrate isomerization, not fumarate hydration; it would be correct only if the question asked about citrate isomerization."
+      },
+      {
+        "text": "Citrate synthase enzyme condensing acetyl CoA with oxaloacetate to citrate",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate synthase forms citrate and is not involved in fumarate to malate conversion; it would be correct only if the stem asked about citrate formation."
+      }
+    ]
+  },
+  {
+    "question": "Which TCA enzyme reaction directly produces NADH and releases CO2 in one step?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Reactions of the TCA Cycle",
+    "options": [
+      {
+        "text": "Isocitrate dehydrogenase oxidatively decarboxylating isocitrate producing NADH and CO2",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture describes isocitrate dehydrogenase catalyzing oxidative decarboxylation of isocitrate to alpha-ketoglutarate with NAD+ reduction and CO2 release."
+      },
+      {
+        "text": "Malate dehydrogenase oxidizing malate to oxaloacetate producing NADH without CO2",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase produces NADH but does not release CO2; it would be correct only if CO2 release were absent from the stem."
+      },
+      {
+        "text": "Alpha-ketoglutarate dehydrogenase producing succinyl CoA NADH and CO2 in complex",
+        "isCorrect": false,
+        "rationale": "Wrong because although alpha-ketoglutarate dehydrogenase produces NADH and CO2, the lecture highlights isocitrate dehydrogenase as the rate-limiting oxidative decarboxylation; this option would be correct if asking for another oxidative decarboxylation."
+      },
+      {
+        "text": "Succinate dehydrogenase oxidizing succinate to fumarate producing FADH2 not NADH",
+        "isCorrect": false,
+        "rationale": "Wrong because succinate dehydrogenase produces FADH2 and does not release CO2; it would be correct only if the question targeted FAD-linked oxidation."
+      },
+      {
+        "text": "Citrate synthase condensing acetyl CoA and oxaloacetate producing citrate without NADH",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate synthase forms citrate and does not produce NADH or CO2; it would be correct only if the stem asked about citrate formation."
+      }
+    ]
+  },
+  {
+    "question": "Which metabolic condition will inhibit the pyruvate dehydrogenase complex via product feedback?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the purpose of the pyruvate dehydrogenase complex and how it is regulated",
+    "options": [
+      {
+        "text": "High acetyl CoA and high NADH levels inhibit PDH by product feedback",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture lists acetyl CoA and NADH as PDH products that inhibit the complex, contributing to regulation by product inhibition."
+      },
+      {
+        "text": "High ADP and low NADH levels inhibit PDH by product feedback paradoxically",
+        "isCorrect": false,
+        "rationale": "Wrong because ADP and low NADH actually activate PDH by signaling energy demand; this option would be correct only if ADP were inhibitory, contrary to the lecture."
+      },
+      {
+        "text": "High pyruvate and high NAD plus inhibit PDH by substrate overload mechanism",
+        "isCorrect": false,
+        "rationale": "Wrong because pyruvate and NAD+ are activators/substrates that promote PDH activity; it would be correct only if substrate inhibition occurred, which the lecture does not state."
+      },
+      {
+        "text": "High ATP and low acetyl CoA inhibit PDH by direct substrate competition",
+        "isCorrect": false,
+        "rationale": "Wrong because ATP is an inhibitor but low acetyl CoA would not inhibit PDH; this option mixes correct and incorrect elements and would be correct only if acetyl CoA were high."
+      },
+      {
+        "text": "High calcium and high ADP inhibit PDH by blocking dephosphorylation activation",
+        "isCorrect": false,
+        "rationale": "Wrong because Ca2+ and ADP activate PDH (via phosphatase activation and allosteric effects) rather than inhibit it; it would be correct only if their roles were reversed."
+      }
+    ]
+  },
+  {
+    "question": "A muscle cell during exercise increases TCA flux. Which ion increase contributes to activation of PDH and TCA enzymes in muscle?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Overall Regulation of the TCA Cycle",
+    "options": [
+      {
+        "text": "Increased intracellular calcium activates PDH phosphatase and TCA dehydrogenases in muscle",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture notes Ca2+ in muscle activates PDH phosphatase and stimulates isocitrate dehydrogenase and alpha-ketoglutarate dehydrogenase, increasing TCA flux during contraction."
+      },
+      {
+        "text": "Increased intracellular chloride inhibits PDH and reduces TCA flux during exercise",
+        "isCorrect": false,
+        "rationale": "Wrong because chloride is not described as a regulator of PDH or TCA enzymes in the lecture; it would be correct only if chloride had a documented regulatory role."
+      },
+      {
+        "text": "Increased intracellular sodium directly activates isocitrate dehydrogenase in mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong because sodium is not listed as an activator of TCA enzymes in the lecture; it would be correct only if sodium signaling directly modulated mitochondrial dehydrogenases."
+      },
+      {
+        "text": "Increased intracellular potassium inhibits PDH kinase thereby decreasing PDH activity",
+        "isCorrect": false,
+        "rationale": "Wrong because potassium is not described as modulating PDH kinase in the lecture; it would be correct only if evidence showed K+ inhibited PDH kinase."
+      },
+      {
+        "text": "Decreased intracellular calcium during exercise activates PDH and TCA enzymes paradoxically",
+        "isCorrect": false,
+        "rationale": "Wrong because decreased Ca2+ would not activate PDH; the lecture states increased Ca2+ activates PDH and TCA enzymes, so this option contradicts the described mechanism."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme interconverts citrate and isocitrate via a cis-aconitate intermediate?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Reactions of the TCA Cycle",
+    "options": [
+      {
+        "text": "Aconitase enzyme isomerizing citrate to isocitrate via cis aconitate intermediate",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture describes aconitase catalyzing the reversible isomerization of citrate to isocitrate through a cis-aconitate intermediate."
+      },
+      {
+        "text": "Citrate synthase enzyme condensing acetyl CoA with oxaloacetate to citrate",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate synthase forms citrate from acetyl CoA and oxaloacetate, not the citrate-to-isocitrate isomerization; it would be correct only if the question asked which enzyme forms citrate."
+      },
+      {
+        "text": "Isocitrate dehydrogenase oxidatively decarboxylating isocitrate to alpha-ketoglutarate",
+        "isCorrect": false,
+        "rationale": "Wrong because isocitrate dehydrogenase performs oxidative decarboxylation of isocitrate, not the isomerization step; it would be correct only if the stem targeted oxidative decarboxylation."
+      },
+      {
+        "text": "Malate dehydrogenase oxidizing malate to oxaloacetate producing NADH",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase acts later in the cycle and does not isomerize citrate; it would be correct only if the question asked about oxaloacetate regeneration."
+      },
+      {
+        "text": "Succinate thiokinase generating GTP from succinyl CoA and GDP plus Pi",
+        "isCorrect": false,
+        "rationale": "Wrong because succinate thiokinase catalyzes substrate-level phosphorylation, not citrate isomerization; it would be correct only if the stem asked about GTP production."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical syndrome is associated with thiamine deficiency and severe CNS dysfunction as noted in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how the TCA cycle intersects with vitamin deficiency(s), Leigh Syndrome, arsenic poisoning, and oxygen deprivation",
+    "options": [
+      {
+        "text": "Wernicke Korsakoff syndrome encephalopathy psychosis due to thiamine deficiency in alcoholics",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture names Wernicke-Korsakoff syndrome as an encephalopathy-psychosis caused by thiamine deficiency, often seen in chronic alcoholics, reflecting PDH-related CNS vulnerability."
+      },
+      {
+        "text": "Leigh syndrome subacute necrotizing encephalomyelopathy due to PDH deficiency primarily",
+        "isCorrect": false,
+        "rationale": "Wrong because Leigh syndrome is associated with PDH deficiency but the lecture links Wernicke-Korsakoff specifically to thiamine deficiency; this option would be correct only if the question asked about PDH deficiency syndromes."
+      },
+      {
+        "text": "Pellagra dermatitis diarrhea dementia due to niacin deficiency systemic signs",
+        "isCorrect": false,
+        "rationale": "Wrong because pellagra results from niacin deficiency and presents with dermatitis, diarrhea, and dementia, not the classic Wernicke triad; it would be correct only if those features were described."
+      },
+      {
+        "text": "Scurvy gum bleeding poor wound healing due to vitamin C deficiency connective tissue",
+        "isCorrect": false,
+        "rationale": "Wrong because scurvy is due to vitamin C deficiency affecting collagen, not the CNS encephalopathy described in the lecture; it would be correct only with mucocutaneous bleeding signs."
+      },
+      {
+        "text": "Beriberi peripheral neuropathy and cardiac failure due to thiamine deficiency in tissues",
+        "isCorrect": false,
+        "rationale": "Wrong because beriberi is another manifestation of thiamine deficiency affecting peripheral nerves and heart; it would be correct only if the stem emphasized neuropathy or cardiac failure rather than CNS psychosis."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best describes the relationship between the TCA cycle and oxygen availability?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how the TCA cycle intersects with vitamin deficiency(s), Leigh Syndrome, arsenic poisoning, and oxygen deprivation",
+    "options": [
+      {
+        "text": "TCA cycle requires oxygen indirectly because ETC must oxidize reduced coenzymes",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains the TCA cycle is aerobic: O2 is required as the final electron acceptor in the ETC to reoxidize NADH and FADH2, so ETC blockade or hypoxia inhibits the TCA cycle."
+      },
+      {
+        "text": "TCA cycle directly consumes molecular oxygen as a substrate in multiple steps",
+        "isCorrect": false,
+        "rationale": "Wrong because the TCA cycle does not directly use O2 as a substrate; it requires O2 indirectly via the ETC to oxidize reduced coenzymes, so this option would be correct only if direct O2 consumption occurred."
+      },
+      {
+        "text": "TCA cycle functions anaerobically producing ATP without electron transport chain involvement",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture states the TCA cycle is aerobic and depends on ETC function; it would be correct only in organisms or conditions where anaerobic TCA variants exist, which is not described."
+      },
+      {
+        "text": "TCA cycle activity increases when oxygen is absent due to compensatory upregulation",
+        "isCorrect": false,
+        "rationale": "Wrong because lack of oxygen inhibits the ETC and thus TCA cycle activity; this option would be correct only if an alternative oxidant replaced O2, which the lecture does not mention."
+      },
+      {
+        "text": "TCA cycle produces oxygen as a byproduct of oxidative decarboxylation reactions",
+        "isCorrect": false,
+        "rationale": "Wrong because the TCA cycle releases CO2, not O2; it would be correct only if the cycle generated molecular oxygen, which is incorrect per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme's activity is directly stimulated by substrate availability and inhibited by its product as described for citrate synthase?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Name the substrates and product of citrate synthase, how it is regulated, and how it intersects with glycolysis and fatty acid synthesis",
+    "options": [
+      {
+        "text": "Citrate synthase activity increases with substrates and inhibited by citrate product accumulation",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states citrate synthase is regulated by substrate activation and product inhibition; citrate accumulation also allosterically inhibits PFK-1 and activates fatty acid synthesis."
+      },
+      {
+        "text": "Isocitrate dehydrogenase activity increases with ATP and inhibited by ADP in muscle",
+        "isCorrect": false,
+        "rationale": "Wrong because isocitrate dehydrogenase is activated by ADP and Ca2+ and inhibited by ATP and NADH per the lecture; this option reverses the regulatory roles."
+      },
+      {
+        "text": "Succinate dehydrogenase activity is regulated by citrate levels directly in matrix",
+        "isCorrect": false,
+        "rationale": "Wrong because succinate dehydrogenase is not described as regulated by citrate in the lecture; it would be correct only if citrate directly modulated Complex II activity."
+      },
+      {
+        "text": "Malate dehydrogenase is activated by high citrate and inhibited by low acetyl CoA",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase regulation by citrate or acetyl CoA is not described in the lecture; it would be correct only if such regulation were documented."
+      },
+      {
+        "text": "Aconitase is inhibited by citrate accumulation preventing isomerization to isocitrate",
+        "isCorrect": false,
+        "rationale": "Wrong because aconitase catalyzes citrate to isocitrate isomerization and is not described as being inhibited by citrate accumulation in the lecture; it would be correct only if product inhibition applied to aconitase."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme complex deficiency is listed as a cause of Leigh Syndrome in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how the TCA cycle intersects with vitamin deficiency(s), Leigh Syndrome, arsenic poisoning, and oxygen deprivation",
+    "options": [
+      {
+        "text": "Pyruvate dehydrogenase complex deficiency causing chronic lactic acidosis and Leigh syndrome",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states PDH deficiency is one cause of Leigh syndrome, leading to chronic lactic acidosis and severe CNS manifestations due to impaired pyruvate entry into the TCA cycle."
+      },
+      {
+        "text": "Succinate dehydrogenase deficiency causing Leigh syndrome via Complex II dysfunction primarily",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture specifically mentions PDH deficiency in Leigh syndrome; while Complex II defects can cause mitochondrial disease, this option would be correct only if the lecture named SDH deficiency as a cause."
+      },
+      {
+        "text": "Citrate synthase deficiency causing Leigh syndrome by blocking citrate formation in mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate synthase deficiency is not cited in the lecture as a cause of Leigh syndrome; it would be correct only if the lecture linked citrate synthase defects to the syndrome."
+      },
+      {
+        "text": "Malate dehydrogenase deficiency causing Leigh syndrome by preventing oxaloacetate regeneration",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase deficiency is not mentioned as a cause of Leigh syndrome in the lecture; it would be correct only if the lecture associated MDH defects with the disease."
+      },
+      {
+        "text": "Aconitase deficiency causing Leigh syndrome by blocking citrate isomerization to isocitrate",
+        "isCorrect": false,
+        "rationale": "Wrong because aconitase deficiency is not listed as a cause of Leigh syndrome in the lecture; it would be correct only if the lecture explicitly implicated aconitase defects."
+      }
+    ]
+  },
+  {
+    "question": "Which TCA enzyme reaction generates FADH2 rather than NADH according to the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Reactions of the TCA Cycle",
+    "options": [
+      {
+        "text": "Succinate dehydrogenase oxidizing succinate to fumarate generating FADH2 in mitochondria",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states succinate dehydrogenase uses FAD to oxidize succinate to fumarate, producing FADH2 rather than NADH."
+      },
+      {
+        "text": "Isocitrate dehydrogenase oxidizing isocitrate to alpha-ketoglutarate producing NADH",
+        "isCorrect": false,
+        "rationale": "Wrong because isocitrate dehydrogenase produces NADH, not FADH2; it would be correct only if the question asked which enzyme produces NADH."
+      },
+      {
+        "text": "Malate dehydrogenase oxidizing malate to oxaloacetate producing NADH",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase produces NADH, not FADH2; it would be correct only if the stem targeted NADH-producing steps."
+      },
+      {
+        "text": "Alpha-ketoglutarate dehydrogenase producing succinyl CoA and NADH with CO2 release",
+        "isCorrect": false,
+        "rationale": "Wrong because alpha-ketoglutarate dehydrogenase produces NADH and CO2, not FADH2; it would be correct only if the question asked about NADH production."
+      },
+      {
+        "text": "Citrate synthase condensing acetyl CoA with oxaloacetate forming citrate without FADH2",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate synthase does not produce FADH2; it would be correct only if the stem asked about citrate formation."
+      }
+    ]
+  },
+  {
+    "question": "Which metabolic intersection explains how citrate accumulation inhibits glycolysis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Name the substrates and product of citrate synthase, how it is regulated, and how it intersects with glycolysis and fatty acid synthesis",
+    "options": [
+      {
+        "text": "Citrate accumulation allosterically inhibits phosphofructokinase one reducing glycolytic flux",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states citrate accumulation allosterically inhibits PFK-1, the rate-limiting glycolytic enzyme, thereby linking TCA intermediates to glycolytic regulation."
+      },
+      {
+        "text": "Citrate accumulation directly inhibits hexokinase reducing glucose phosphorylation in cytosol",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture specifies PFK-1 inhibition by citrate, not hexokinase; this option would be correct only if citrate were shown to inhibit hexokinase."
+      },
+      {
+        "text": "Citrate accumulation activates pyruvate kinase increasing glycolytic throughput paradoxically",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate does not activate pyruvate kinase per the lecture; it would be correct only if citrate stimulated pyruvate kinase activity, which is not described."
+      },
+      {
+        "text": "Citrate accumulation stimulates phosphofructokinase two in liver altering gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong because PFK-2 regulation by citrate is not described in the lecture; it would be correct only if citrate modulated PFK-2 activity as stated."
+      },
+      {
+        "text": "Citrate accumulation increases glyceraldehyde three phosphate dehydrogenase activity in glycolysis",
+        "isCorrect": false,
+        "rationale": "Wrong because GAPDH is not regulated by citrate in the lecture; it would be correct only if citrate directly affected GAPDH activity."
+      }
+    ]
+  },
+  {
+    "question": "Which therapeutic approach would most directly restore PDH activity in a patient with PDH kinase overactivity?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the purpose of the pyruvate dehydrogenase complex and how it is regulated",
+    "options": [
+      {
+        "text": "Inhibit PDH kinase to prevent PDH phosphorylation and restore active dephosphorylated PDH",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains PDH is inactivated by phosphorylation via PDH kinase; inhibiting PDH kinase would reduce phosphorylation and increase active PDH, restoring flux into the TCA cycle."
+      },
+      {
+        "text": "Activate PDH kinase further to increase PDH phosphorylation and reduce PDH activity",
+        "isCorrect": false,
+        "rationale": "Wrong because activating PDH kinase would worsen PDH inactivation; it would be correct only if the therapeutic goal were to decrease PDH activity, which is not the case here."
+      },
+      {
+        "text": "Inhibit PDH phosphatase to prevent PDH dephosphorylation and maintain PDH inactive",
+        "isCorrect": false,
+        "rationale": "Wrong because inhibiting PDH phosphatase would keep PDH phosphorylated and inactive, the opposite of the desired effect; it would be correct only if reducing PDH activity were therapeutic."
+      },
+      {
+        "text": "Supplement lipoic acid to bypass PDH kinase mediated phosphorylation directly",
+        "isCorrect": false,
+        "rationale": "Wrong because lipoic acid supplementation addresses coenzyme availability but does not counteract PDH kinase overactivity; it would be correct only if the deficiency were lipoic acid rather than kinase overactivity."
+      },
+      {
+        "text": "Provide high dose acetyl CoA to drive PDH forward despite phosphorylation state",
+        "isCorrect": false,
+        "rationale": "Wrong because acetyl CoA is a product inhibitor of PDH and would not overcome phosphorylation-mediated inactivation; it would be correct only if substrate activation could override phosphorylation, which the lecture does not indicate."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best explains why brain tissue is especially vulnerable to defects in PDH or TCA function?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how the TCA cycle intersects with vitamin deficiency(s), Leigh Syndrome, arsenic poisoning, and oxygen deprivation",
+    "options": [
+      {
+        "text": "Brain relies heavily on glucose oxidation via PDH and TCA for ATP and is highly sensitive",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture emphasizes the brain's reliance on glucose and PDH-derived acetyl CoA for TCA-driven ATP production, making it particularly susceptible to PDH or TCA dysfunction."
+      },
+      {
+        "text": "Brain primarily uses fatty acids for energy making it resistant to PDH defects",
+        "isCorrect": false,
+        "rationale": "Wrong because the brain preferentially uses glucose, not fatty acids, for energy under normal conditions; this option would be correct only in tissues that oxidize fatty acids extensively."
+      },
+      {
+        "text": "Brain has abundant anaerobic glycolysis capacity preventing damage from PDH impairment",
+        "isCorrect": false,
+        "rationale": "Wrong because anaerobic glycolysis cannot meet the brain's high ATP demands long-term and the lecture notes brain vulnerability to PDH defects; it would be correct only if anaerobic metabolism sufficed."
+      },
+      {
+        "text": "Brain contains high levels of PDH kinase making it insensitive to PDH regulation",
+        "isCorrect": false,
+        "rationale": "Wrong because high PDH kinase would reduce PDH activity and increase vulnerability, not confer insensitivity; it would be correct only if PDH kinase expression protected PDH activity."
+      },
+      {
+        "text": "Brain uses ketone bodies exclusively so PDH defects are clinically silent there",
+        "isCorrect": false,
+        "rationale": "Wrong because the brain does not exclusively use ketone bodies under normal conditions and PDH defects produce prominent neurological disease per the lecture; it would be correct only in prolonged fasting or ketogenic states."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme converts succinyl CoA to succinate while generating GTP in the TCA cycle?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Reactions of the TCA Cycle",
+    "options": [
+      {
+        "text": "Succinyl CoA synthetase also called succinate thiokinase generating GTP from GDP and Pi",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture describes succinyl-CoA synthetase (succinate thiokinase) catalyzing conversion of succinyl-CoA to succinate with substrate-level phosphorylation producing GTP."
+      },
+      {
+        "text": "Succinate dehydrogenase oxidizing succinate to fumarate producing FADH2 in membrane",
+        "isCorrect": false,
+        "rationale": "Wrong because succinate dehydrogenase oxidizes succinate to fumarate and produces FADH2, not GTP; it would be correct only if the question asked about FAD-linked oxidation."
+      },
+      {
+        "text": "Alpha-ketoglutarate dehydrogenase producing succinyl CoA NADH and CO2 from alpha-ketoglutarate",
+        "isCorrect": false,
+        "rationale": "Wrong because alpha-ketoglutarate dehydrogenase produces succinyl-CoA but does not generate GTP directly; it would be correct only if the stem asked about succinyl-CoA formation."
+      },
+      {
+        "text": "Malate dehydrogenase oxidizing malate to oxaloacetate producing NADH in matrix",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase produces NADH and regenerates oxaloacetate, not GTP; it would be correct only if the question targeted NADH production."
+      },
+      {
+        "text": "Citrate synthase condensing acetyl CoA with oxaloacetate forming citrate and CoA release",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate synthase forms citrate and releases CoA but does not produce GTP; it would be correct only if the stem asked about citrate formation."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental finding would indicate impaired electron transport chain function leading to secondary TCA inhibition?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how the TCA cycle intersects with vitamin deficiency(s), Leigh Syndrome, arsenic poisoning, and oxygen deprivation",
+    "options": [
+      {
+        "text": "Accumulation of NADH and FADH2 with decreased NAD plus and FAD reoxidation indicating ETC block",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains that TCA requires reoxidation of reduced coenzymes by the ETC; an ETC block causes NADH/FADH2 accumulation and inhibits TCA flux due to lack of oxidized cofactors."
+      },
+      {
+        "text": "Decreased NADH levels with increased oxygen consumption indicating hyperactive ETC function",
+        "isCorrect": false,
+        "rationale": "Wrong because decreased NADH and increased O2 consumption suggest active ETC, not inhibition; it would be correct only if the ETC were hyperactive rather than blocked."
+      },
+      {
+        "text": "Elevated ATP hydrolysis with low ADP levels indicating increased cellular energy demand",
+        "isCorrect": false,
+        "rationale": "Wrong because elevated ATP hydrolysis with low ADP does not directly indicate ETC dysfunction; it would be correct only if energy demand, not ETC block, were the primary issue."
+      },
+      {
+        "text": "Increased oxygen partial pressure in tissues with normal NAD plus levels indicating adequate respiration",
+        "isCorrect": false,
+        "rationale": "Wrong because increased tissue oxygen and normal NAD+ suggest intact respiration, not ETC inhibition; it would be correct only if oxygen delivery were excessive."
+      },
+      {
+        "text": "Decreased lactate production with elevated pyruvate indicating enhanced PDH activity",
+        "isCorrect": false,
+        "rationale": "Wrong because decreased lactate with elevated pyruvate would imply PDH activation or impaired lactate dehydrogenase, not ETC inhibition; it would be correct only if PDH flux increased."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme produces oxaloacetate at the end of the TCA cycle while reducing NAD+ to NADH?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Reactions of the TCA Cycle",
+    "options": [
+      {
+        "text": "Malate dehydrogenase oxidizing malate to oxaloacetate while producing NADH and H plus",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states malate dehydrogenase catalyzes malate oxidation to oxaloacetate with NAD+ reduction to NADH, regenerating the cycle's starting substrate."
+      },
+      {
+        "text": "Citrate synthase condensing acetyl CoA with oxaloacetate to form citrate and CoA",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate synthase consumes oxaloacetate to form citrate rather than producing it; it would be correct only if the question asked which enzyme uses oxaloacetate."
+      },
+      {
+        "text": "Aconitase isomerizing citrate to isocitrate via cis aconitate intermediate reversible",
+        "isCorrect": false,
+        "rationale": "Wrong because aconitase converts citrate to isocitrate and does not produce oxaloacetate or NADH; it would be correct only if the stem targeted citrate isomerization."
+      },
+      {
+        "text": "Isocitrate dehydrogenase oxidatively decarboxylating isocitrate producing NADH and CO2",
+        "isCorrect": false,
+        "rationale": "Wrong because isocitrate dehydrogenase produces NADH but converts isocitrate to alpha-ketoglutarate, not oxaloacetate; it would be correct only if the stem asked about oxidative decarboxylation."
+      },
+      {
+        "text": "Succinate dehydrogenase oxidizing succinate to fumarate producing FADH2 in membrane",
+        "isCorrect": false,
+        "rationale": "Wrong because succinate dehydrogenase produces FADH2 and fumarate, not oxaloacetate or NADH; it would be correct only if the question targeted FAD-linked oxidation."
+      }
+    ]
+  },
+  {
+    "question": "Which metabolic effect would citrate export from mitochondria have on cytosolic pathways?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Name the substrates and product of citrate synthase, how it is regulated, and how it intersects with glycolysis and fatty acid synthesis",
+    "options": [
+      {
+        "text": "Citrate export to cytosol activates fatty acid synthesis and inhibits glycolysis via PFK one",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture notes citrate as a precursor for fatty acid synthesis and that citrate accumulation allosterically inhibits PFK-1, linking mitochondrial citrate export to cytosolic anabolic regulation."
+      },
+      {
+        "text": "Citrate export to cytosol directly stimulates gluconeogenesis by activating fructose bisphosphatase",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture emphasizes citrate's role in fatty acid synthesis and PFK-1 inhibition, not direct activation of fructose bisphosphatase; it would be correct only if citrate were shown to activate gluconeogenic enzymes."
+      },
+      {
+        "text": "Citrate export to cytosol increases glycolytic flux by activating hexokinase activity",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate inhibits glycolysis via PFK-1 rather than increasing it; this option would be correct only if citrate activated glycolytic enzymes, contrary to the lecture."
+      },
+      {
+        "text": "Citrate export to cytosol decreases fatty acid synthesis by inhibiting acetyl CoA carboxylase",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate actually allosterically activates fatty acid synthesis (via acetyl-CoA carboxylase activation) per the lecture; this option reverses that effect."
+      },
+      {
+        "text": "Citrate export to cytosol increases ketone body formation in hepatocytes directly",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate export supports fatty acid synthesis rather than ketogenesis; it would be correct only if citrate promoted ketone production, which the lecture does not state."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme complex activity would be directly reduced by arsenic binding to lipoic acid?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how the TCA cycle intersects with vitamin deficiency(s), Leigh Syndrome, arsenic poisoning, and oxygen deprivation",
+    "options": [
+      {
+        "text": "Pyruvate dehydrogenase and alpha ketoglutarate dehydrogenase complexes both require lipoic acid",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains arsenic reacts with lipoic acid, making it unavailable and thereby inhibiting PDH and alpha-ketoglutarate dehydrogenase activities."
+      },
+      {
+        "text": "Succinate dehydrogenase complex requiring FAD and iron sulfur clusters unaffected by lipoic acid",
+        "isCorrect": false,
+        "rationale": "Wrong because succinate dehydrogenase uses FAD and Fe-S centers and is not dependent on lipoic acid; it would be correct only if lipoic acid were a cofactor for SDH."
+      },
+      {
+        "text": "Malate dehydrogenase requiring NAD plus and not dependent on lipoic acid cofactor",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase uses NAD+ and does not require lipoic acid; it would be correct only if the enzyme used lipoic acid."
+      },
+      {
+        "text": "Citrate synthase requiring CoA and oxaloacetate but independent of lipoic acid cofactor",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate synthase does not require lipoic acid; it would be correct only if citrate synthase activity depended on lipoic acid, which the lecture does not indicate."
+      },
+      {
+        "text": "Aconitase requiring iron sulfur cluster and not inhibited by arsenic lipoic acid binding",
+        "isCorrect": false,
+        "rationale": "Wrong because aconitase depends on an Fe-S cluster and is not the target of arsenic-lipoic acid interaction described in the lecture; it would be correct only if arsenic targeted Fe-S clusters."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the net change in TCA intermediates after one complete turn starting with acetyl CoA and oxaloacetate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Reactions of the TCA Cycle",
+    "options": [
+      {
+        "text": "No net change in intermediates because oxaloacetate is regenerated after one cycle",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states that one round of the TCA cycle regenerates oxaloacetate and does not lead to net loss or gain of cycle intermediates while acetyl CoA carbons are released as CO2."
+      },
+      {
+        "text": "Net loss of two carbons from oxaloacetate leading to cycle depletion over time",
+        "isCorrect": false,
+        "rationale": "Wrong because oxaloacetate is regenerated, not lost; the two carbons released as CO2 originate from acetyl CoA, so this option would be correct only if oxaloacetate were consumed."
+      },
+      {
+        "text": "Net gain of one carbon per cycle due to carboxylation reactions increasing pool size",
+        "isCorrect": false,
+        "rationale": "Wrong because the cycle does not net add carbons; it oxidizes acetyl CoA carbons to CO2 while regenerating oxaloacetate; this option would be correct only if anaplerotic carboxylation exceeded decarboxylation."
+      },
+      {
+        "text": "Net accumulation of succinyl CoA as a storage intermediate after each turn",
+        "isCorrect": false,
+        "rationale": "Wrong because succinyl-CoA is converted onward to succinate and does not accumulate net after a normal cycle; it would be correct only in a block downstream of succinyl-CoA."
+      },
+      {
+        "text": "Net conversion of oxaloacetate to citrate causing progressive citrate buildup",
+        "isCorrect": false,
+        "rationale": "Wrong because oxaloacetate is regenerated and citrate does not accumulate net unless downstream steps are inhibited; it would be correct only if citrate export or downstream block caused accumulation."
+      }
+    ]
+  },
+  {
+    "question": "Which intervention is most appropriate as the immediate next step for a patient with suspected arsenic poisoning impairing PDH activity?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how the TCA cycle intersects with vitamin deficiency(s), Leigh Syndrome, arsenic poisoning, and oxygen deprivation",
+    "options": [
+      {
+        "text": "Administer chelation therapy to bind arsenic and restore lipoic acid availability for dehydrogenases",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture links arsenic toxicity to reaction with lipoic acid that inhibits PDH; chelation to remove arsenic would be the immediate step to prevent further coenzyme inactivation and restore enzyme function."
+      },
+      {
+        "text": "Provide high dose thiamine to bypass arsenic binding and directly reactivate PDH complex",
+        "isCorrect": false,
+        "rationale": "Wrong because while thiamine supports TPP-dependent enzymes, arsenic toxicity specifically targets lipoic acid; thiamine alone would not remove arsenic or restore lipoic acid availability, so chelation is preferred."
+      },
+      {
+        "text": "Administer intravenous glucose to increase glycolytic flux and reduce lactate accumulation immediately",
+        "isCorrect": false,
+        "rationale": "Wrong because giving glucose may worsen lactic acidosis if PDH is inhibited and pyruvate is shunted to lactate; it would be correct only if energy provision without worsening acidosis were ensured."
+      },
+      {
+        "text": "Start broad spectrum antibiotics to treat presumed infectious encephalopathy causing PDH inhibition",
+        "isCorrect": false,
+        "rationale": "Wrong because antibiotics do not address arsenic binding to lipoic acid; this would be correct only if an infectious cause of encephalopathy were documented."
+      },
+      {
+        "text": "Begin high dose vitamin C to chelate arsenic and restore mitochondrial enzyme function rapidly",
+        "isCorrect": false,
+        "rationale": "Wrong because vitamin C is not the chelator indicated for arsenic and is not described in the lecture as effective for arsenic-lipoic acid interactions; it would be correct only if evidence supported vitamin C chelation efficacy."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme's activity is increased by ADP and decreased by ATP and NADH, serving as a major control point in the TCA cycle?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Overall Regulation of the TCA Cycle",
+    "options": [
+      {
+        "text": "Isocitrate dehydrogenase activated by ADP and Ca two inhibited by ATP NADH",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture lists isocitrate dehydrogenase as activated by ADP and Ca2+ (in muscle) and inhibited by ATP and NADH, making it a major regulatory enzyme."
+      },
+      {
+        "text": "Citrate synthase activated by ATP and inhibited by ADP and NADH contrary to lecture",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate synthase is regulated by substrate activation and product inhibition (citrate), not by ATP activation; this option contradicts the lecture's description."
+      },
+      {
+        "text": "Succinate dehydrogenase activated by ADP and inhibited by ATP and NADH in mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong because succinate dehydrogenase regulation by ADP/ATP/NADH is not described in the lecture; it would be correct only if such regulation were documented."
+      },
+      {
+        "text": "Malate dehydrogenase activated by ADP and inhibited by ATP and NADH in matrix",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase regulation by ADP/ATP/NADH is not specified in the lecture; it would be correct only if the lecture described such allosteric control."
+      },
+      {
+        "text": "Aconitase activated by ADP and inhibited by ATP and NADH via iron sulfur cluster",
+        "isCorrect": false,
+        "rationale": "Wrong because aconitase regulation by ADP/ATP/NADH is not described in the lecture; it would be correct only if aconitase were regulated that way, which the lecture does not state."
+      }
+    ]
+  }
+]
