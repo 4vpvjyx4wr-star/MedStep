@@ -1,0 +1,1218 @@
+[
+  {
+    "question": "A fasting patient relies on hepatic processes to maintain blood sugar after 18 hours without food. Which organ and process primarily supply glucose once liver glycogen is depleted?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the role of gluconeogenesis in metabolism and maintenance of blood glucose and where it occurs.",
+    "options": [
+      {
+        "text": "Liver performing gluconeogenesis from noncarbohydrate precursors",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states that after glycogen is depleted (10–18 hours), the liver becomes the main site performing gluconeogenesis to maintain blood glucose."
+      },
+      {
+        "text": "Muscle performing glycogenolysis to release free glucose",
+        "isCorrect": false,
+        "rationale": "Wrong because muscle glycogen is not released as free glucose to blood; muscle lacks glucose 6-phosphatase. It would be correct only if muscle expressed glucose 6-phosphatase."
+      },
+      {
+        "text": "Adipose tissue converting triglycerides directly into glucose",
+        "isCorrect": false,
+        "rationale": "Wrong because adipose releases glycerol and fatty acids; fatty acids cannot be converted into glucose. It would be correct only if fatty acids could be converted to pyruvate, which they cannot."
+      },
+      {
+        "text": "Kidney performing glycogenolysis to maintain systemic glucose",
+        "isCorrect": false,
+        "rationale": "Wrong because the kidney contributes to gluconeogenesis mainly during prolonged fasting (~40%), not by hepatic glycogenolysis; it would be correct only if kidney glycogen stores were the main source."
+      },
+      {
+        "text": "Pancreas increasing insulin to stimulate hepatic glucose output",
+        "isCorrect": false,
+        "rationale": "Wrong because insulin suppresses hepatic glucose production; it would be correct only if insulin stimulated gluconeogenesis, which it does not."
+      }
+    ]
+  },
+  {
+    "question": "Which three substrates are the principal precursors for new glucose synthesis during prolonged fasting?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List the three main substrates for gluconeogenesis and where these substrates are derived.",
+    "options": [
+      {
+        "text": "Glycerol, lactate, and amino acids from adipose and muscle",
+        "isCorrect": true,
+        "rationale": "Correct: lecture lists glycerol (from TAG hydrolysis), lactate (from anaerobic glycolysis), and amino acids (from muscle proteolysis) as main substrates."
+      },
+      {
+        "text": "Free fatty acids, ketone bodies, and acetyl CoA from liver",
+        "isCorrect": false,
+        "rationale": "Wrong because fatty acids and ketone bodies are not gluconeogenic substrates; they provide energy. It would be correct only if fatty acids could be converted to glucose, which they cannot."
+      },
+      {
+        "text": "Glucose, fructose, and galactose from intestinal absorption",
+        "isCorrect": false,
+        "rationale": "Wrong because these are dietary carbohydrates, not the main substrates during fasting; it would be correct only in the fed state with intestinal absorption."
+      },
+      {
+        "text": "Oxaloacetate, citrate, and malate from TCA cycle intermediates",
+        "isCorrect": false,
+        "rationale": "Wrong because while TCA intermediates can feed gluconeogenesis, the lecture emphasizes amino acids, lactate, and glycerol as primary substrates; it would be correct only if asking for immediate TCA-derived intermediates."
+      },
+      {
+        "text": "Alanine, glutamine, and serine exclusively from muscle breakdown",
+        "isCorrect": false,
+        "rationale": "Wrong because although alanine is a major amino acid used, the lecture names amino acids generally plus glycerol and lactate; this option omits glycerol and lactate and is therefore incomplete."
+      }
+    ]
+  },
+  {
+    "question": "Why cannot acetyl-CoA serve as a carbon source for net glucose production in humans?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain why acetyl COA cannot be used for gluconeogenesis and the functional significance",
+    "options": [
+      {
+        "text": "PDH reaction is irreversible so acetyl-CoA cannot form pyruvate",
+        "isCorrect": true,
+        "rationale": "Correct: lecture states PDH is irreversible and no enzyme converts acetyl-CoA back to pyruvate, preventing fatty acids from serving as gluconeogenic carbon sources."
+      },
+      {
+        "text": "Acetyl-CoA is immediately converted to glucose in mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong because acetyl-CoA cannot be converted to glucose; it enters TCA and yields CO2. It would be correct only if a reverse PDH existed."
+      },
+      {
+        "text": "Acetyl-CoA lacks the phosphate groups needed for gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong because phosphate group presence is irrelevant; the key issue is carbon flow and irreversibility of PDH. It would be correct only if phosphorylation state prevented conversion, which is not the lecture point."
+      },
+      {
+        "text": "Acetyl-CoA is sequestered in peroxisomes away from gluconeogenic enzymes",
+        "isCorrect": false,
+        "rationale": "Wrong because acetyl-CoA localization is not the reason; the lecture cites enzymatic irreversibility. It would be correct only if compartmentalization prevented access, which is not described."
+      },
+      {
+        "text": "Acetyl-CoA is rapidly converted into lactate instead of pyruvate",
+        "isCorrect": false,
+        "rationale": "Wrong because acetyl-CoA is not converted into lactate; lactate is derived from pyruvate. It would be correct only if acetyl-CoA could be reduced to lactate, which it cannot."
+      }
+    ]
+  },
+  {
+    "question": "Which set of enzymes are uniquely required to bypass the three irreversible glycolytic steps during gluconeogenesis?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the three irreversible steps of glycolysis and the four unique enzymes needed to reverse these steps for gluconeogenesis",
+    "options": [
+      {
+        "text": "Pyruvate carboxylase, PEPCK, FBPase, and glucose 6-phosphatase",
+        "isCorrect": true,
+        "rationale": "Correct: lecture lists these four enzymes as the unique gluconeogenic enzymes that bypass pyruvate kinase, PFK-1, and glucokinase steps."
+      },
+      {
+        "text": "Hexokinase, PFK-1, pyruvate kinase, and lactate dehydrogenase",
+        "isCorrect": false,
+        "rationale": "Wrong because these are glycolytic enzymes, not the gluconeogenic bypass enzymes. It would be correct only if asking for irreversible glycolytic enzymes themselves."
+      },
+      {
+        "text": "Pyruvate carboxylase, malate dehydrogenase, aldolase, and enolase",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase and aldolase are reversible and not unique bypass enzymes; it would be correct only if malate shuttle enzymes were considered unique, which they are not."
+      },
+      {
+        "text": "PEPCK, fructokinase, glucose 6-phosphatase, and transketolase",
+        "isCorrect": false,
+        "rationale": "Wrong because fructokinase and transketolase are unrelated; it would be correct only if those enzymes bypassed glycolytic irreversible steps, which they do not."
+      },
+      {
+        "text": "Pyruvate dehydrogenase, PEPCK, FBPase, and glucose 6-phosphatase",
+        "isCorrect": false,
+        "rationale": "Wrong because pyruvate dehydrogenase is irreversible and not used in gluconeogenic bypass; it would be correct only if PDH catalyzed a reverse reaction, which it does not."
+      }
+    ]
+  },
+  {
+    "question": "Glycerol released from adipose tissue enters hepatic metabolism and is converted into which glycolytic intermediate for gluconeogenesis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the three main substrates for gluconeogenesis and where these substrates are derived.",
+    "options": [
+      {
+        "text": "Dihydroxyacetone phosphate formed from glycerol phosphorylation",
+        "isCorrect": true,
+        "rationale": "Correct: lecture states glycerol from TAG hydrolysis is converted into glycerol-P and then DHAP, a glycolytic intermediate used in gluconeogenesis."
+      },
+      {
+        "text": "3-Phosphoglycerate produced directly from glycerol oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong because glycerol is converted to DHAP, not directly to 3-phosphoglycerate. It would be correct only if an extra conversion step bypassed DHAP, which is not described."
+      },
+      {
+        "text": "Phosphoenolpyruvate generated by glycerol dehydrogenation",
+        "isCorrect": false,
+        "rationale": "Wrong because glycerol does not directly yield PEP; it enters as DHAP upstream. It would be correct only if glycerol were converted all the way to PEP without intermediate steps."
+      },
+      {
+        "text": "Oxaloacetate via glycerol transamination in liver mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong because glycerol is not transaminated to OAA; amino acids yield OAA. It would be correct only if glycerol underwent transamination, which it does not."
+      },
+      {
+        "text": "Glucose 6-phosphate by direct glycerol phosphorylation in cytosol",
+        "isCorrect": false,
+        "rationale": "Wrong because glycerol is first converted to glycerol-3-phosphate and then DHAP before entering gluconeogenesis; direct formation of G6P from glycerol is not the pathway described."
+      }
+    ]
+  },
+  {
+    "question": "A patient with intense exercise produces excess lactate. Which hepatic enzyme converts lactate back into a gluconeogenic precursor, and what is that precursor?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the three main substrates for gluconeogenesis and where these substrates are derived.",
+    "options": [
+      {
+        "text": "Lactate dehydrogenase converting lactate into pyruvate",
+        "isCorrect": true,
+        "rationale": "Correct: lecture explains lactate is converted back to pyruvate in the liver by lactate dehydrogenase, feeding gluconeogenesis (Cori cycle)."
+      },
+      {
+        "text": "Pyruvate carboxylase converting lactate into oxaloacetate",
+        "isCorrect": false,
+        "rationale": "Wrong because pyruvate carboxylase acts on pyruvate, not lactate directly; it would be correct only if lactate were first oxidized to pyruvate."
+      },
+      {
+        "text": "PEPCK converting lactate directly into phosphoenolpyruvate",
+        "isCorrect": false,
+        "rationale": "Wrong because PEPCK acts on oxaloacetate, not lactate; it would be correct only if lactate were converted to OAA without intermediate steps."
+      },
+      {
+        "text": "Fructose 1,6-bisphosphatase converting lactate into fructose 6-phosphate",
+        "isCorrect": false,
+        "rationale": "Wrong because FBPase acts later in gluconeogenesis and does not convert lactate; it would be correct only if lactate were already at the fructose 1,6-BP step."
+      },
+      {
+        "text": "Glucose 6-phosphatase converting lactate into glucose directly",
+        "isCorrect": false,
+        "rationale": "Wrong because glucose 6-phosphatase acts on G6P and cannot convert lactate directly; it would be correct only if lactate were converted to G6P first."
+      }
+    ]
+  },
+  {
+    "question": "Which regulatory molecule produced by the bifunctional PFK-2/FBP-2 enzyme exerts opposite effects on PFK-1 and fructose 1,6-bisphosphatase to coordinate glycolysis and gluconeogenesis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe and explain the significance of the reciprocal regulation of fructose 1,6-bisphosphatase and phosphofructokinase-1 (PFK-1) by fructose 2,6-bisphosphate (and by extension, glucagon and PFK-2) and AMP",
+    "options": [
+      {
+        "text": "Fructose 2,6-bisphosphate acting as reciprocal regulator",
+        "isCorrect": true,
+        "rationale": "Correct: lecture states fructose 2,6-BP activates PFK-1 and inhibits fructose 1,6-bisphosphatase, coordinating mutual exclusivity of pathways."
+      },
+      {
+        "text": "Fructose 1,6-bisphosphate acting as reciprocal regulator",
+        "isCorrect": false,
+        "rationale": "Wrong because F1,6BP is a glycolytic intermediate, not the bifunctional regulator; it would be correct only if F1,6BP had the described allosteric roles, which it does not."
+      },
+      {
+        "text": "AMP acting to activate fructose 1,6-bisphosphatase directly",
+        "isCorrect": false,
+        "rationale": "Wrong because AMP inhibits fructose 1,6-bisphosphatase and activates PFK-1; it would be correct only if AMP activated FBPase, which contradicts the lecture."
+      },
+      {
+        "text": "Glucose 6-phosphate acting as the main reciprocal effector",
+        "isCorrect": false,
+        "rationale": "Wrong because G6P is a substrate/product, not the key reciprocal regulator described; it would be correct only if G6P had the specific opposing allosteric effects, which it does not."
+      },
+      {
+        "text": "Citrate acting to simultaneously activate both enzymes",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate does not activate both PFK-1 and FBPase reciprocally as described; it would be correct only if citrate had those opposing effects, which is not in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A hepatocyte with high acetyl-CoA concentration will show which combined effect on pyruvate metabolism enzymes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe and explain the significance of the reciprocal regulation of pyruvate carboxylase and pyruvate dehydrogenase complex by acetyl CoA",
+    "options": [
+      {
+        "text": "Activation of pyruvate carboxylase and inhibition of PDH complex",
+        "isCorrect": true,
+        "rationale": "Correct: lecture explains acetyl-CoA allosterically activates pyruvate carboxylase and inhibits PDH, diverting pyruvate toward OAA and gluconeogenesis."
+      },
+      {
+        "text": "Activation of PDH complex and inhibition of pyruvate carboxylase",
+        "isCorrect": false,
+        "rationale": "Wrong because acetyl-CoA inhibits PDH and activates pyruvate carboxylase; this option reverses the effects and would be correct only if acetyl-CoA had opposite allosteric roles."
+      },
+      {
+        "text": "No effect on either enzyme under fasting conditions",
+        "isCorrect": false,
+        "rationale": "Wrong because acetyl-CoA exerts allosteric regulation; it would be correct only if acetyl-CoA levels did not change during fasting, which contradicts the lecture."
+      },
+      {
+        "text": "Activation of both PDH complex and pyruvate carboxylase simultaneously",
+        "isCorrect": false,
+        "rationale": "Wrong because simultaneous activation would be counterproductive; it would be correct only if acetyl-CoA signaled both TCA and gluconeogenesis needs, which the lecture does not support."
+      },
+      {
+        "text": "Inhibition of both PDH complex and pyruvate carboxylase together",
+        "isCorrect": false,
+        "rationale": "Wrong because acetyl-CoA activates pyruvate carboxylase while inhibiting PDH; both inhibited would be correct only if another regulator overrode acetyl-CoA effects."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme catalyzes the mitochondrial carboxylation of pyruvate to oxaloacetate and requires biotin and ATP?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the three irreversible steps of glycolysis and the four unique enzymes needed to reverse these steps for gluconeogenesis",
+    "options": [
+      {
+        "text": "Pyruvate carboxylase catalyzing pyruvate to oxaloacetate",
+        "isCorrect": true,
+        "rationale": "Correct: lecture identifies pyruvate carboxylase as the mitochondrial, biotin-dependent enzyme that converts pyruvate to OAA using ATP."
+      },
+      {
+        "text": "PEP carboxykinase converting pyruvate to phosphoenolpyruvate",
+        "isCorrect": false,
+        "rationale": "Wrong because PEPCK converts OAA to PEP, not pyruvate directly; it would be correct only if PEPCK acted on pyruvate, which it does not."
+      },
+      {
+        "text": "Pyruvate dehydrogenase converting pyruvate to oxaloacetate",
+        "isCorrect": false,
+        "rationale": "Wrong because PDH converts pyruvate to acetyl-CoA, not OAA; it would be correct only if PDH catalyzed carboxylation to OAA, which it does not."
+      },
+      {
+        "text": "Malate dehydrogenase converting pyruvate to malate",
+        "isCorrect": false,
+        "rationale": "Wrong because malate dehydrogenase interconverts malate and OAA, not pyruvate to malate; it would be correct only if malate dehydrogenase accepted pyruvate as substrate."
+      },
+      {
+        "text": "Glucose 6-phosphatase converting pyruvate to glucose",
+        "isCorrect": false,
+        "rationale": "Wrong because glucose 6-phosphatase acts on G6P in the ER, not on pyruvate; it would be correct only if G6P were pyruvate, which is incorrect."
+      }
+    ]
+  },
+  {
+    "question": "During gluconeogenesis, oxaloacetate produced in mitochondria cannot cross the membrane directly. Which shuttle exports its reducing equivalents and carbon skeleton to the cytosol for PEP formation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Name the three irreversible steps of glycolysis and the four unique enzymes needed to reverse these steps for gluconeogenesis",
+    "options": [
+      {
+        "text": "Malate shuttle exporting malate for cytosolic conversion back to OAA",
+        "isCorrect": true,
+        "rationale": "Correct: lecture describes OAA reduction to malate in mitochondria, transport to cytosol, and reoxidation to OAA (malate shuttle) before PEPCK acts."
+      },
+      {
+        "text": "Citrate shuttle exporting citrate for cytosolic decarboxylation",
+        "isCorrect": false,
+        "rationale": "Wrong because citrate shuttle is for acetyl-CoA export for lipogenesis, not the OAA to PEP route; it would be correct only if citrate were the primary OAA carrier for gluconeogenesis."
+      },
+      {
+        "text": "Glycerol-3-phosphate shuttle exporting glycerol for gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong because glycerol-3-phosphate shuttle transfers electrons to the ETC, not OAA carbon skeletons; it would be correct only if it transported OAA, which it does not."
+      },
+      {
+        "text": "Urea cycle shuttle exporting aspartate for cytosolic PEP formation",
+        "isCorrect": false,
+        "rationale": "Wrong because aspartate participates in urea cycle and can interconvert with OAA, but the lecture specifies the malate shuttle as the mechanism; it would be correct only if aspartate transport were the main shuttle described."
+      },
+      {
+        "text": "Pyruvate transporter exporting pyruvate directly to cytosol for PEPCK",
+        "isCorrect": false,
+        "rationale": "Wrong because pyruvate can be transported but OAA is produced in mitochondria and the lecture emphasizes malate conversion; it would be correct only if mitochondrial OAA were directly converted to pyruvate for export, which is not the described pathway."
+      }
+    ]
+  },
+  {
+    "question": "A patient with von Gierke disease lacks glucose 6-phosphatase. Which two pathways are directly impaired by this deficiency?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how a defect in glucose 6-phosphatase affects both gluconeogenesis and glycogenolysis and predict the symptoms of von Gierke disease (full explanation in glycogen metabolism section)",
+    "options": [
+      {
+        "text": "Both gluconeogenesis and hepatic glycogenolysis are impaired",
+        "isCorrect": true,
+        "rationale": "Correct: lecture states glucose 6-phosphatase is required to produce free glucose in both gluconeogenesis and glycogenolysis; deficiency impairs both processes."
+      },
+      {
+        "text": "Only muscle glycogenolysis is impaired while gluconeogenesis is normal",
+        "isCorrect": false,
+        "rationale": "Wrong because muscle lacks glucose 6-phosphatase and is not the source of blood glucose; von Gierke affects hepatic processes. It would be correct only if muscle were the primary site of G6P hydrolysis."
+      },
+      {
+        "text": "Only gluconeogenesis is impaired while glycogenolysis remains intact",
+        "isCorrect": false,
+        "rationale": "Wrong because glucose 6-phosphatase is used in both pathways in liver; it would be correct only if another hepatic enzyme compensated for glycogenolysis, which the lecture does not indicate."
+      },
+      {
+        "text": "Only renal gluconeogenesis is impaired with hepatic function preserved",
+        "isCorrect": false,
+        "rationale": "Wrong because the enzyme deficiency affects hepatic glucose release primarily; it would be correct only if the deficiency were kidney-specific."
+      },
+      {
+        "text": "Glycolysis and ketogenesis are both directly blocked",
+        "isCorrect": false,
+        "rationale": "Wrong because glucose 6-phosphatase deficiency does not directly block glycolysis or ketogenesis; it would be correct only if G6P hydrolysis were required for those pathways, which it is not."
+      }
+    ]
+  },
+  {
+    "question": "Which hormonal signal increases hepatic PEPCK transcription and thereby promotes gluconeogenesis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the multiple roles of glucagon in promoting gluconeogenesis (effects on PFK-2, pyruvate kinase, and PEPCK)",
+    "options": [
+      {
+        "text": "Glucagon signaling increases PEPCK transcription in hepatocytes",
+        "isCorrect": true,
+        "rationale": "Correct: lecture notes glucagon stimulates transcription of PEPCK, promoting gluconeogenesis."
+      },
+      {
+        "text": "Insulin signaling increases PEPCK transcription in hepatocytes",
+        "isCorrect": false,
+        "rationale": "Wrong because insulin inhibits PEPCK transcription; it would be correct only if insulin upregulated gluconeogenic genes, which contradicts the lecture."
+      },
+      {
+        "text": "Epinephrine decreases PEPCK transcription in liver cells",
+        "isCorrect": false,
+        "rationale": "Wrong because epinephrine generally promotes glucose production; it would be correct only if epinephrine suppressed PEPCK, which is not the lecture point."
+      },
+      {
+        "text": "Thyroid hormone acutely suppresses PEPCK transcription",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture specifically attributes PEPCK transcriptional regulation to glucagon and insulin; it would be correct only if thyroid hormone had that acute suppressive role, which is not described."
+      },
+      {
+        "text": "Cortisol immediately inhibits PEPCK transcription in fasting",
+        "isCorrect": false,
+        "rationale": "Wrong because cortisol typically increases gluconeogenic enzyme expression over time; immediate inhibition is incorrect. It would be correct only if cortisol had an acute inhibitory effect, which the lecture does not state."
+      }
+    ]
+  },
+  {
+    "question": "A hepatocyte in a high cAMP state will have which effect on the bifunctional PFK-2/FBP-2 enzyme and fructose 2,6-bisphosphate levels?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe and explain the significance of the reciprocal regulation of fructose 1,6-bisphosphatase and phosphofructokinase-1 (PFK-1) by fructose 2,6-bisphosphate (and by extension, glucagon and PFK-2) and AMP",
+    "options": [
+      {
+        "text": "PFK-2 domain phosphorylated and fructose 2,6-BP levels decreased",
+        "isCorrect": true,
+        "rationale": "Correct: lecture explains high cAMP (glucagon) activates PKA, phosphorylates PFK-2/FBP-2, inactivates PFK-2, activates FBP-2, lowering fructose 2,6-BP and favoring gluconeogenesis."
+      },
+      {
+        "text": "PFK-2 domain dephosphorylated and fructose 2,6-BP levels increased",
+        "isCorrect": false,
+        "rationale": "Wrong because dephosphorylation (insulin state) activates PFK-2 and raises fructose 2,6-BP; it would be correct only in a high insulin/low cAMP state."
+      },
+      {
+        "text": "No change in PFK-2 phosphorylation or fructose 2,6-BP levels",
+        "isCorrect": false,
+        "rationale": "Wrong because cAMP/PKA signaling alters phosphorylation state; it would be correct only if PKA were inactive despite high cAMP, which is inconsistent."
+      },
+      {
+        "text": "PFK-2 phosphorylation increases fructose 2,6-BP levels",
+        "isCorrect": false,
+        "rationale": "Wrong because phosphorylation inactivates PFK-2 and decreases fructose 2,6-BP; it would be correct only if phosphorylation activated PFK-2, which contradicts the lecture."
+      },
+      {
+        "text": "PFK-2 phosphorylation converts it into a glucose transporter",
+        "isCorrect": false,
+        "rationale": "Wrong because phosphorylation modulates kinase/phosphatase activity, not membrane transport; it would be correct only in a fictional mechanism not in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which energy cofactors are consumed during the conversion of two pyruvate molecules to one glucose molecule in gluconeogenesis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Name the three irreversible steps of glycolysis and the four unique enzymes needed to reverse these steps for gluconeogenesis",
+    "options": [
+      {
+        "text": "4 ATP, 2 GTP, and 2 NADH are consumed overall",
+        "isCorrect": true,
+        "rationale": "Correct: lecture energy summary shows gluconeogenesis requires 4 ATP, 2 GTP, and 2 NADH per glucose synthesized from two pyruvates."
+      },
+      {
+        "text": "2 ATP, 2 GTP, and 4 NADH are consumed overall",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture specifies 4 ATP and 2 GTP; this option swaps ATP and NADH counts and would be correct only if the pathway stoichiometry were different."
+      },
+      {
+        "text": "6 ATP equivalents and no NADH are consumed overall",
+        "isCorrect": false,
+        "rationale": "Wrong because NADH is required (2 NADH); it would be correct only if cytosolic NADH were not needed, which contradicts the malate shuttle role."
+      },
+      {
+        "text": "4 GTP, 2 ATP, and 2 NADH are consumed overall",
+        "isCorrect": false,
+        "rationale": "Wrong because GTP count is 2 not 4; it would be correct only if PEPCK used additional GTP molecules beyond the lecture's stoichiometry."
+      },
+      {
+        "text": "No high energy cofactors are consumed; pathway is energy neutral",
+        "isCorrect": false,
+        "rationale": "Wrong because gluconeogenesis is energy-requiring; it would be correct only in a hypothetical energy-neutral variant not described in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A researcher inhibits hepatic fructose 1,6-bisphosphatase. Which immediate effect on glycolysis and gluconeogenesis fluxes would you expect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe and explain the significance of the reciprocal regulation of fructose 1,6-bisphosphatase and phosphofructokinase-1 (PFK-1) by fructose 2,6-bisphosphate (and by extension, glucagon and PFK-2) and AMP",
+    "options": [
+      {
+        "text": "Decreased gluconeogenesis and increased glycolytic flux through PFK-1",
+        "isCorrect": true,
+        "rationale": "Correct because inhibiting FBPase blocks gluconeogenesis at F1,6BP step; reciprocal regulation favors PFK-1 activity and glycolysis when FBPase is inhibited."
+      },
+      {
+        "text": "Increased gluconeogenesis with decreased PFK-1 activity",
+        "isCorrect": false,
+        "rationale": "Wrong because inhibiting FBPase would not increase gluconeogenesis; it would be correct only if an alternative bypass compensated for FBPase loss."
+      },
+      {
+        "text": "No change in either pathway due to substrate-level compensation",
+        "isCorrect": false,
+        "rationale": "Wrong because FBPase is a unique gluconeogenic enzyme; it would be correct only if another enzyme replaced its function, which the lecture does not indicate."
+      },
+      {
+        "text": "Decreased glycolysis due to accumulation of fructose 6-phosphate",
+        "isCorrect": false,
+        "rationale": "Wrong because accumulation of F6P would not directly inhibit PFK-1; it would be correct only if F6P acted as a strong inhibitor of PFK-1, which is not described."
+      },
+      {
+        "text": "Increased ketogenesis with no change in carbohydrate flux",
+        "isCorrect": false,
+        "rationale": "Wrong because FBPase inhibition affects carbohydrate flux directly; ketogenesis change is indirect and not the immediate effect described in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A fasting patient has elevated hepatic acetyl-CoA from fatty acid oxidation. Which sequence best explains how this state promotes glucose production?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe and explain the significance of the reciprocal regulation of pyruvate carboxylase and pyruvate dehydrogenase complex by acetyl CoA",
+    "options": [
+      {
+        "text": "Acetyl-CoA activates pyruvate carboxylase and inhibits PDH, increasing OAA for gluconeogenesis",
+        "isCorrect": true,
+        "rationale": "Correct: lecture states acetyl-CoA allosterically activates pyruvate carboxylase and inhibits PDH, diverting pyruvate to OAA and promoting gluconeogenesis."
+      },
+      {
+        "text": "Acetyl-CoA inhibits pyruvate carboxylase and activates PDH, reducing OAA availability",
+        "isCorrect": false,
+        "rationale": "Wrong because this reverses the lecture-described regulation; it would be correct only if acetyl-CoA had opposite allosteric effects."
+      },
+      {
+        "text": "Acetyl-CoA is converted to glucose directly, bypassing pyruvate",
+        "isCorrect": false,
+        "rationale": "Wrong because acetyl-CoA cannot be converted to glucose; it would be correct only if a reverse PDH existed, which it does not."
+      },
+      {
+        "text": "Acetyl-CoA stimulates glycolysis by activating PFK-1 in hepatocytes",
+        "isCorrect": false,
+        "rationale": "Wrong because acetyl-CoA does not activate PFK-1; it signals low OAA and promotes gluconeogenesis. It would be correct only if acetyl-CoA were a PFK-1 activator."
+      },
+      {
+        "text": "Acetyl-CoA increases lactate production to supply gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong because acetyl-CoA accumulation favors fatty acid oxidation and gluconeogenesis energy supply, not lactate production; it would be correct only if acetyl-CoA increased anaerobic glycolysis, which is not described."
+      }
+    ]
+  },
+  {
+    "question": "A patient with prolonged fasting shows increased renal gluconeogenesis contribution. Approximately what fraction of total gluconeogenesis can the kidney provide during prolonged fasting according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the role of gluconeogenesis in metabolism and maintenance of blood glucose and where it occurs.",
+    "options": [
+      {
+        "text": "About forty percent contribution from the kidney during prolonged fasting",
+        "isCorrect": true,
+        "rationale": "Correct: lecture states that during prolonged fasting the kidney contributes significantly, approximately 40%, to gluconeogenesis."
+      },
+      {
+        "text": "About ten percent contribution from the kidney during prolonged fasting",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture gives ~40%, not 10%; it would be correct only if renal contribution were minimal, which contradicts the lecture."
+      },
+      {
+        "text": "The kidney does not contribute to gluconeogenesis at all",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture explicitly states the kidney contributes during prolonged fasting; it would be correct only if renal gluconeogenesis were absent."
+      },
+      {
+        "text": "The kidney provides the majority, over seventy percent, during fasting",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture specifies ~40%, not majority; it would be correct only if renal gluconeogenesis dominated, which is not stated."
+      },
+      {
+        "text": "Renal contribution equals hepatic contribution exactly at all times",
+        "isCorrect": false,
+        "rationale": "Wrong because hepatic gluconeogenesis is the primary source and renal contribution increases during prolonged fasting; equality at all times is not supported by the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme is inhibited by AMP and thereby prevents gluconeogenesis when cellular energy is low?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe and explain the significance of the reciprocal regulation of fructose 1,6-bisphosphatase and phosphofructokinase-1 (PFK-1) by fructose 2,6-bisphosphate (and by extension, glucagon and PFK-2) and AMP",
+    "options": [
+      {
+        "text": "Fructose 1,6-bisphosphatase is inhibited by AMP",
+        "isCorrect": true,
+        "rationale": "Correct: lecture states AMP inhibits fructose 1,6-bisphosphatase, preventing energy-consuming gluconeogenesis when cellular energy is low."
+      },
+      {
+        "text": "Phosphofructokinase-1 is inhibited by AMP",
+        "isCorrect": false,
+        "rationale": "Wrong because AMP activates PFK-1 to stimulate glycolysis; it would be correct only if AMP inhibited PFK-1, which contradicts the lecture."
+      },
+      {
+        "text": "Glucose 6-phosphatase is inhibited by AMP",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture does not describe AMP inhibiting glucose 6-phosphatase; it would be correct only if AMP directly regulated that enzyme, which is not stated."
+      },
+      {
+        "text": "Pyruvate carboxylase is inhibited by AMP",
+        "isCorrect": false,
+        "rationale": "Wrong because pyruvate carboxylase is activated by acetyl-CoA and not described as AMP-inhibited; it would be correct only if AMP were an allosteric inhibitor, which the lecture does not indicate."
+      },
+      {
+        "text": "PEP carboxykinase is activated by AMP",
+        "isCorrect": false,
+        "rationale": "Wrong because PEPCK regulation by AMP is not described; it would be correct only if AMP upregulated PEPCK transcription, which the lecture does not state."
+      }
+    ]
+  },
+  {
+    "question": "A clinician gives a patient glucagon. Which immediate enzymatic effects in the liver promote gluconeogenesis according to the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the multiple roles of glucagon in promoting gluconeogenesis (effects on PFK-2, pyruvate kinase, and PEPCK)",
+    "options": [
+      {
+        "text": "Inhibits PFK-2, inhibits pyruvate kinase, and increases PEPCK transcription",
+        "isCorrect": true,
+        "rationale": "Correct: lecture details glucagon inhibits PFK-2 (lowering F2,6BP), inhibits pyruvate kinase activity, and stimulates PEPCK transcription, all promoting gluconeogenesis."
+      },
+      {
+        "text": "Activates PFK-2, activates pyruvate kinase, and decreases PEPCK transcription",
+        "isCorrect": false,
+        "rationale": "Wrong because this describes insulin-like effects opposite to glucagon; it would be correct only if glucagon had insulin-like signaling, which it does not."
+      },
+      {
+        "text": "Inhibits PFK-2, activates pyruvate kinase, and decreases PEPCK transcription",
+        "isCorrect": false,
+        "rationale": "Wrong because glucagon inhibits pyruvate kinase and increases PEPCK transcription; this option mixes effects incorrectly and would be correct only if pyruvate kinase were activated by glucagon."
+      },
+      {
+        "text": "No effect on PFK-2 but increases glycolytic enzyme expression",
+        "isCorrect": false,
+        "rationale": "Wrong because glucagon specifically affects PFK-2 and reduces glycolysis; it would be correct only if glucagon did not modulate PFK-2, contrary to the lecture."
+      },
+      {
+        "text": "Directly converts fructose 2,6-bisphosphate into glucose",
+        "isCorrect": false,
+        "rationale": "Wrong because glucagon modulates enzyme phosphorylation and transcription, not direct chemical conversion of F2,6BP to glucose; it would be correct only in a non-physiologic mechanism not in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A lab assay shows increased hepatic NADH and abundant fatty acid oxidation. How does this metabolic state support gluconeogenesis energetically?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Substrates for Gluconeogenesis",
+    "options": [
+      {
+        "text": "Fatty acid oxidation supplies ATP and NADH needed for gluconeogenesis",
+        "isCorrect": true,
+        "rationale": "Correct: lecture states fatty acid oxidation provides ATP and NADH to power the energy-requiring gluconeogenic pathway."
+      },
+      {
+        "text": "Fatty acid oxidation directly donates carbon atoms for glucose synthesis",
+        "isCorrect": false,
+        "rationale": "Wrong because fatty acids cannot be converted into glucose carbons; they supply energy only. It would be correct only if acetyl-CoA could be converted to pyruvate, which it cannot."
+      },
+      {
+        "text": "Fatty acid oxidation inhibits gluconeogenesis by consuming NADH",
+        "isCorrect": false,
+        "rationale": "Wrong because fatty acid oxidation generates NADH and ATP that support gluconeogenesis; it would be correct only if oxidation consumed NADH, which is incorrect."
+      },
+      {
+        "text": "Fatty acid oxidation increases cytosolic fructose 2,6-bisphosphate to stimulate gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong because increased F2,6BP stimulates glycolysis and inhibits gluconeogenesis; it would be correct only if F2,6BP promoted gluconeogenesis, which it does not."
+      },
+      {
+        "text": "Fatty acid oxidation converts glycerol into glucose directly in mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong because glycerol conversion to DHAP occurs in cytosol and is independent of fatty acid oxidation; it would be correct only if fatty acid oxidation catalyzed glycerol-to-glucose conversion, which is not described."
+      }
+    ]
+  },
+  {
+    "question": "A patient with muscle wasting supplies amino acids for hepatic gluconeogenesis. Which amino acid is highlighted in the lecture as the major gluconeogenic amino acid because its deamination yields pyruvate?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List the three main substrates for gluconeogenesis and where these substrates are derived.",
+    "options": [
+      {
+        "text": "Alanine is the major amino acid used because it yields pyruvate",
+        "isCorrect": true,
+        "rationale": "Correct: lecture states alanine is the major amino acid used for gluconeogenesis since removal of its amino group yields pyruvate."
+      },
+      {
+        "text": "Leucine is the major amino acid used because it yields pyruvate",
+        "isCorrect": false,
+        "rationale": "Wrong because leucine is strictly ketogenic yielding acetyl-CoA and cannot form pyruvate; it would be correct only if leucine were glucogenic, which it is not."
+      },
+      {
+        "text": "Lysine is the major amino acid used because it yields pyruvate",
+        "isCorrect": false,
+        "rationale": "Wrong because lysine is ketogenic and does not yield pyruvate; it would be correct only if lysine were glucogenic, which the lecture does not state."
+      },
+      {
+        "text": "Glutamate is the major amino acid used because it yields pyruvate",
+        "isCorrect": false,
+        "rationale": "Wrong because glutamate yields alpha-ketoglutarate, not pyruvate; it would be correct only if glutamate transaminated to pyruvate directly."
+      },
+      {
+        "text": "Phenylalanine is the major amino acid used because it yields pyruvate",
+        "isCorrect": false,
+        "rationale": "Wrong because phenylalanine is converted to fumarate and acetoacetate, not directly to pyruvate; it would be correct only if phenylalanine transaminated to pyruvate, which it does not."
+      }
+    ]
+  },
+  {
+    "question": "Which gluconeogenic enzyme also functions in glycogenolysis to produce free glucose for export from the liver?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how a defect in glucose 6-phosphatase affects both gluconeogenesis and glycogenolysis and predict the symptoms of von Gierke disease (full explanation in glycogen metabolism section)",
+    "options": [
+      {
+        "text": "Glucose 6-phosphatase hydrolyzes glucose 6-phosphate to free glucose",
+        "isCorrect": true,
+        "rationale": "Correct: lecture states glucose 6-phosphatase converts G6P to glucose and is used in both gluconeogenesis and glycogenolysis."
+      },
+      {
+        "text": "Fructose 1,6-bisphosphatase hydrolyzes glucose 6-phosphate to free glucose",
+        "isCorrect": false,
+        "rationale": "Wrong because FBPase acts on F1,6BP, not G6P; it would be correct only if FBPase hydrolyzed G6P, which it does not."
+      },
+      {
+        "text": "Glucokinase hydrolyzes glucose 6-phosphate to free glucose",
+        "isCorrect": false,
+        "rationale": "Wrong because glucokinase phosphorylates glucose to G6P, the opposite reaction; it would be correct only if glucokinase were reversible in that direction, which it is not."
+      },
+      {
+        "text": "PEP carboxykinase hydrolyzes glucose 6-phosphate to free glucose",
+        "isCorrect": false,
+        "rationale": "Wrong because PEPCK converts OAA to PEP, not G6P to glucose; it would be correct only if PEPCK had phosphatase activity, which it does not."
+      },
+      {
+        "text": "Hexokinase hydrolyzes glucose 6-phosphate to free glucose",
+        "isCorrect": false,
+        "rationale": "Wrong because hexokinase phosphorylates glucose to G6P, not hydrolyzes it; it would be correct only if hexokinase reversed its reaction, which is not the case."
+      }
+    ]
+  },
+  {
+    "question": "A mutation reduces hepatic pyruvate carboxylase activity. Which immediate metabolic consequence will most directly impair gluconeogenesis?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Name the three irreversible steps of glycolysis and the four unique enzymes needed to reverse these steps for gluconeogenesis",
+    "options": [
+      {
+        "text": "Reduced oxaloacetate formation from pyruvate limiting PEP production",
+        "isCorrect": true,
+        "rationale": "Correct because pyruvate carboxylase converts pyruvate to OAA; reduced activity limits OAA and thus PEP formation by PEPCK, impairing gluconeogenesis."
+      },
+      {
+        "text": "Increased conversion of acetyl-CoA to pyruvate enhancing gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong because acetyl-CoA cannot be converted to pyruvate; it would be correct only if PDH were reversible, which it is not."
+      },
+      {
+        "text": "Direct inhibition of glucose 6-phosphatase causing hypoglycemia",
+        "isCorrect": false,
+        "rationale": "Wrong because the mutation affects pyruvate carboxylase, not glucose 6-phosphatase; it would be correct only if the mutation targeted G6Pase."
+      },
+      {
+        "text": "Excess malate export causing cytosolic NADH depletion",
+        "isCorrect": false,
+        "rationale": "Wrong because reduced PC activity would decrease malate formation, not cause excess export; it would be correct only if malate export were increased by another mechanism."
+      },
+      {
+        "text": "Increased lactate clearance by liver raising gluconeogenic flux",
+        "isCorrect": false,
+        "rationale": "Wrong because impaired PC would reduce conversion of pyruvate (from lactate) into OAA, decreasing gluconeogenesis; it would be correct only if lactate clearance increased independently."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why gluconeogenesis and glycolysis are reciprocally regulated rather than simultaneously active in the same cell?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe and explain the significance of the reciprocal regulation of fructose 1,6-bisphosphatase and phosphofructokinase-1 (PFK-1) by fructose 2,6-bisphosphate (and by extension, glucagon and PFK-2) and AMP",
+    "options": [
+      {
+        "text": "Shared allosteric regulators ensure one pathway is active while the other is suppressed",
+        "isCorrect": true,
+        "rationale": "Correct: lecture emphasizes reciprocal regulation by F2,6BP and AMP so glycolysis and gluconeogenesis are mutually exclusive to avoid futile cycling."
+      },
+      {
+        "text": "Different cellular compartments prevent both pathways from operating together",
+        "isCorrect": false,
+        "rationale": "Wrong because many steps occur in same compartment; reciprocal allosteric regulation, not compartmentalization, is the main reason. It would be correct only if compartment separation were the primary mechanism."
+      },
+      {
+        "text": "Gluconeogenesis uses entirely different substrates so glycolysis cannot run",
+        "isCorrect": false,
+        "rationale": "Wrong because pathways share intermediates and substrates; mutual exclusivity is regulatory, not substrate incompatibility. It would be correct only if substrates were mutually exclusive."
+      },
+      {
+        "text": "ATP availability always prevents simultaneous activity of both pathways",
+        "isCorrect": false,
+        "rationale": "Wrong because ATP levels influence regulation but reciprocal allosteric control is the specific mechanism described; it would be correct only if ATP alone dictated exclusivity."
+      },
+      {
+        "text": "Hormonal signals permanently switch cells to one pathway for life",
+        "isCorrect": false,
+        "rationale": "Wrong because hormonal regulation is dynamic and reversible; permanent switching is not described. It would be correct only in a hypothetical irreversible hormonal change."
+      }
+    ]
+  },
+  {
+    "question": "A patient with hypoglycemia is given intravenous glycerol. Which hepatic intermediate will increase first and feed into gluconeogenesis?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Substrates for Gluconeogenesis",
+    "options": [
+      {
+        "text": "Dihydroxyacetone phosphate concentration will rise and enter gluconeogenesis",
+        "isCorrect": true,
+        "rationale": "Correct: lecture states glycerol is converted to glycerol-P and then to DHAP, which enters gluconeogenesis."
+      },
+      {
+        "text": "Phosphoenolpyruvate concentration will rise directly from glycerol",
+        "isCorrect": false,
+        "rationale": "Wrong because glycerol is converted to DHAP first, not directly to PEP; it would be correct only if glycerol were converted straight to PEP, which is not the pathway."
+      },
+      {
+        "text": "Oxaloacetate concentration will rise directly from glycerol",
+        "isCorrect": false,
+        "rationale": "Wrong because glycerol enters as triose phosphate, not directly as OAA; it would be correct only if glycerol were transaminated to OAA, which it is not."
+      },
+      {
+        "text": "Glucose 6-phosphate will be produced immediately from glycerol in mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong because G6P is formed later in cytosol and glycerol metabolism does not occur in mitochondria; it would be correct only if glycerol were converted directly to G6P in mitochondria."
+      },
+      {
+        "text": "Lactate concentration will rise as glycerol is reduced to lactate",
+        "isCorrect": false,
+        "rationale": "Wrong because glycerol is not reduced to lactate; lactate arises from pyruvate. It would be correct only if glycerol were metabolized to lactate, which is not described."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the role of biotin in the pyruvate carboxylase reaction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Name the three irreversible steps of glycolysis and the four unique enzymes needed to reverse these steps for gluconeogenesis",
+    "options": [
+      {
+        "text": "Biotin carries activated CO2 to pyruvate enabling OAA formation",
+        "isCorrect": true,
+        "rationale": "Correct: lecture explains biotin binds CO2 which is transferred to pyruvate by pyruvate carboxylase to form oxaloacetate."
+      },
+      {
+        "text": "Biotin phosphorylates pyruvate to generate PEP directly",
+        "isCorrect": false,
+        "rationale": "Wrong because biotin does not phosphorylate pyruvate nor generate PEP; it carries CO2 for carboxylation. It would be correct only in a nonphysiologic mechanism."
+      },
+      {
+        "text": "Biotin oxidizes NADH to provide reducing equivalents",
+        "isCorrect": false,
+        "rationale": "Wrong because biotin is a CO2 carrier, not an oxidoreductase; it would be correct only if biotin had dehydrogenase activity, which it does not."
+      },
+      {
+        "text": "Biotin transports acetyl-CoA into mitochondria for carboxylation",
+        "isCorrect": false,
+        "rationale": "Wrong because biotin does not transport acetyl-CoA; it binds CO2 for carboxylation. It would be correct only if biotin functioned as a carrier for acetyl-CoA."
+      },
+      {
+        "text": "Biotin acts as a transcription factor for PEPCK gene expression",
+        "isCorrect": false,
+        "rationale": "Wrong because biotin is a coenzyme, not a transcription factor; it would be correct only if biotin regulated gene transcription directly, which the lecture does not state."
+      }
+    ]
+  },
+  {
+    "question": "A patient with high hepatic ATP and low AMP will have what effect on fructose 1,6-bisphosphatase activity and gluconeogenesis rate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Reactions Unique to Gluconeogenesis",
+    "options": [
+      {
+        "text": "ATP activates F1,6BPase increasing gluconeogenesis rate",
+        "isCorrect": true,
+        "rationale": "Correct: lecture notes gluconeogenesis is energy-requiring; ATP activates fructose 1,6-bisphosphatase while AMP inhibits it, so high ATP favors gluconeogenesis."
+      },
+      {
+        "text": "ATP inhibits F1,6BPase decreasing gluconeogenesis rate",
+        "isCorrect": false,
+        "rationale": "Wrong because ATP activates F1,6BPase per the lecture; it would be correct only if ATP were an inhibitor, contrary to the material."
+      },
+      {
+        "text": "AMP activates F1,6BPase increasing gluconeogenesis rate",
+        "isCorrect": false,
+        "rationale": "Wrong because AMP inhibits F1,6BPase and activates PFK-1; it would be correct only if AMP had the opposite effect."
+      },
+      {
+        "text": "Neither ATP nor AMP affect F1,6BPase activity",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture explicitly states ATP activates and AMP inhibits F1,6BPase; it would be correct only if energy charge had no regulatory role."
+      },
+      {
+        "text": "High ATP converts F1,6BPase into PFK-1 enzyme",
+        "isCorrect": false,
+        "rationale": "Wrong because ATP does not change enzyme identity; it would be correct only in a fictional enzymatic conversion not in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A hepatocyte lacking mitochondrial malate dehydrogenase cannot export OAA equivalents. Which step of gluconeogenesis will be most directly impaired?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Reactions Unique to Gluconeogenesis",
+    "options": [
+      {
+        "text": "Conversion of mitochondrial OAA to malate and cytosolic PEP formation will be impaired",
+        "isCorrect": true,
+        "rationale": "Correct: lecture explains OAA is reduced to malate to cross the mitochondrial membrane; without mitochondrial malate dehydrogenase, malate formation and subsequent cytosolic PEP production are impaired."
+      },
+      {
+        "text": "Glucose 6-phosphate hydrolysis in the ER will be directly blocked",
+        "isCorrect": false,
+        "rationale": "Wrong because glucose 6-phosphatase acts later in the pathway and is not directly affected by malate dehydrogenase; it would be correct only if ER enzyme depended on malate dehydrogenase activity."
+      },
+      {
+        "text": "Fructose 1,6-bisphosphatase catalytic activity will be abolished",
+        "isCorrect": false,
+        "rationale": "Wrong because FBPase is cytosolic and its catalytic function is independent of malate shuttle; it would be correct only if FBPase required malate dehydrogenase for activation."
+      },
+      {
+        "text": "PEPCK will convert pyruvate directly to glucose without OAA",
+        "isCorrect": false,
+        "rationale": "Wrong because PEPCK acts on OAA to form PEP; it cannot bypass OAA. It would be correct only if PEPCK accepted pyruvate directly, which it does not."
+      },
+      {
+        "text": "Glycerol conversion to DHAP will be enhanced to compensate fully",
+        "isCorrect": false,
+        "rationale": "Wrong because glycerol pathway cannot fully compensate for loss of OAA-derived PEP; it would be correct only if glycerol flux increased sufficiently to replace OAA-derived carbons, which is unlikely per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following experimental manipulations would most directly increase hepatic gluconeogenic flux according to the lecture mechanisms?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Regulation of Gluconeogenesis",
+    "options": [
+      {
+        "text": "Increase glucagon signaling and enhance fatty acid oxidation in hepatocytes",
+        "isCorrect": true,
+        "rationale": "Correct: lecture states glucagon promotes gluconeogenesis (PFK-2 inhibition, pyruvate kinase inhibition, PEPCK transcription) and fatty acid oxidation supplies ATP/NADH needed for gluconeogenesis."
+      },
+      {
+        "text": "Increase insulin signaling and inhibit fatty acid oxidation in hepatocytes",
+        "isCorrect": false,
+        "rationale": "Wrong because insulin suppresses gluconeogenesis and inhibits lipolysis; it would be correct only if insulin paradoxically stimulated gluconeogenesis, which it does not."
+      },
+      {
+        "text": "Decrease acetyl-CoA levels while activating PDH complex",
+        "isCorrect": false,
+        "rationale": "Wrong because low acetyl-CoA would reduce pyruvate carboxylase activation and favor PDH, decreasing gluconeogenesis; it would be correct only if PDH activation promoted gluconeogenesis, which is not the case."
+      },
+      {
+        "text": "Increase fructose 2,6-bisphosphate levels and raise AMP concentration",
+        "isCorrect": false,
+        "rationale": "Wrong because increased F2,6BP and AMP favor glycolysis and inhibit FBPase, reducing gluconeogenesis; it would be correct only if these molecules stimulated gluconeogenesis, contrary to the lecture."
+      },
+      {
+        "text": "Block PEPCK transcription while stimulating pyruvate carboxylase activity",
+        "isCorrect": false,
+        "rationale": "Wrong because blocking PEPCK would prevent conversion of OAA to PEP despite PC activation; it would be correct only if an alternative to PEPCK existed to form PEP."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic alcohol use has high cytosolic NADH/NAD+ ratio. How will this redox state affect gluconeogenesis from lactate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Substrates for Gluconeogenesis",
+    "options": [
+      {
+        "text": "High NADH favors conversion of pyruvate to lactate, impairing gluconeogenesis from lactate",
+        "isCorrect": true,
+        "rationale": "Correct: lecture indicates cytosolic NADH is required in redox balance; high NADH drives LDH toward lactate, reducing pyruvate availability for gluconeogenesis."
+      },
+      {
+        "text": "High NADH enhances conversion of lactate to pyruvate, increasing gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong because high NADH favors lactate formation from pyruvate, not the reverse; it would be correct only if NADH promoted lactate oxidation, which is incorrect."
+      },
+      {
+        "text": "NADH levels have no effect on lactate-pyruvate interconversion",
+        "isCorrect": false,
+        "rationale": "Wrong because LDH reaction is directly dependent on NADH/NAD+ ratio; it would be correct only if LDH were independent of redox state, which it is not."
+      },
+      {
+        "text": "High NADH converts glycerol into glucose directly bypassing lactate",
+        "isCorrect": false,
+        "rationale": "Wrong because glycerol metabolism is separate and not directly enhanced by NADH; it would be correct only if NADH increased glycerol kinase activity, which is not described."
+      },
+      {
+        "text": "High NADH increases PEPCK activity to compensate for lactate block",
+        "isCorrect": false,
+        "rationale": "Wrong because PEPCK acts downstream of OAA and is not directly activated by NADH; it would be correct only if NADH upregulated PEPCK, which the lecture does not state."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why fatty acids are not a gluconeogenic substrate despite providing energy for gluconeogenesis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Substrates for Gluconeogenesis",
+    "options": [
+      {
+        "text": "Beta-oxidation yields acetyl-CoA which cannot be converted back to pyruvate",
+        "isCorrect": true,
+        "rationale": "Correct: lecture explains fatty acids yield acetyl-CoA, and PDH is irreversible so acetyl-CoA cannot serve as a carbon source for gluconeogenesis."
+      },
+      {
+        "text": "Fatty acids are water insoluble and cannot enter gluconeogenic pathways",
+        "isCorrect": false,
+        "rationale": "Wrong because solubility is not the reason; fatty acids are metabolized to acetyl-CoA which cannot form glucose. It would be correct only if solubility prevented metabolism, which is not the lecture point."
+      },
+      {
+        "text": "Fatty acids are immediately converted into lactate in the liver",
+        "isCorrect": false,
+        "rationale": "Wrong because fatty acids are oxidized to acetyl-CoA and not converted to lactate; it would be correct only if a pathway converted fatty acids to lactate, which is not described."
+      },
+      {
+        "text": "Fatty acids inhibit all gluconeogenic enzymes directly",
+        "isCorrect": false,
+        "rationale": "Wrong because fatty acids provide energy and do not directly inhibit gluconeogenic enzymes; it would be correct only if they acted as inhibitors, which the lecture does not state."
+      },
+      {
+        "text": "Fatty acids are converted into glucose only in adipose tissue",
+        "isCorrect": false,
+        "rationale": "Wrong because adipose does not convert fatty acids into glucose; it would be correct only if adipose had gluconeogenic capacity, which it does not per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A patient with hypoglycemia is given an agent that allosterically activates pyruvate carboxylase. Which immediate metabolic shift will occur in hepatic pyruvate handling?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Reactions Unique to Gluconeogenesis",
+    "options": [
+      {
+        "text": "More pyruvate will be carboxylated to oxaloacetate and diverted to gluconeogenesis",
+        "isCorrect": true,
+        "rationale": "Correct: activation of pyruvate carboxylase increases conversion of pyruvate to OAA, promoting gluconeogenesis as described in the lecture."
+      },
+      {
+        "text": "More pyruvate will be oxidatively decarboxylated to acetyl-CoA by PDH",
+        "isCorrect": false,
+        "rationale": "Wrong because activation of PC diverts pyruvate away from PDH; it would be correct only if PDH were simultaneously activated, which is not the case."
+      },
+      {
+        "text": "Pyruvate will be converted directly into glucose in mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong because conversion to glucose requires multiple cytosolic steps; it would be correct only if mitochondria contained the full gluconeogenic pathway, which they do not."
+      },
+      {
+        "text": "Pyruvate will be transaminated to alanine increasing gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong because transamination to alanine removes pyruvate from gluconeogenesis; it would be correct only if alanine were rapidly reconverted to pyruvate in liver, which is indirect."
+      },
+      {
+        "text": "Pyruvate will be reduced to lactate increasing Cori cycling",
+        "isCorrect": false,
+        "rationale": "Wrong because activation of PC favors OAA formation rather than reduction to lactate; it would be correct only if cytosolic NADH were high and LDH favored lactate formation."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following experimental findings would most strongly indicate impaired glucose export from liver despite intact gluconeogenic enzyme activities?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how a defect in glucose 6-phosphatase affects both gluconeogenesis and glycogenolysis and predict the symptoms of von Gierke disease (full explanation in glycogen metabolism section)",
+    "options": [
+      {
+        "text": "Accumulation of glucose 6-phosphate with low blood glucose and enlarged liver",
+        "isCorrect": true,
+        "rationale": "Correct: lecture indicates glucose 6-phosphatase deficiency causes G6P accumulation, hypoglycemia, and hepatomegaly as in von Gierke disease, impairing glucose export."
+      },
+      {
+        "text": "High blood glucose with low hepatic glycogen stores and normal G6P",
+        "isCorrect": false,
+        "rationale": "Wrong because impaired glucose export would cause low blood glucose and G6P accumulation, not high blood glucose; it would be correct only if hepatic glucose release increased."
+      },
+      {
+        "text": "Elevated ketone bodies with increased blood glucose and low G6P",
+        "isCorrect": false,
+        "rationale": "Wrong because G6P accumulation and hypoglycemia are expected with G6Pase defect; elevated ketones with hyperglycemia suggest insulin deficiency, not G6Pase deficiency."
+      },
+      {
+        "text": "Normal blood glucose with increased lactate and decreased G6P",
+        "isCorrect": false,
+        "rationale": "Wrong because G6Pase defect leads to increased G6P and hypoglycemia; normal glucose with decreased G6P would not indicate impaired glucose export due to G6Pase deficiency."
+      },
+      {
+        "text": "Low hepatic ATP with increased cytosolic NADH and normal G6P",
+        "isCorrect": false,
+        "rationale": "Wrong because impaired export due to G6Pase deficiency specifically causes G6P accumulation; altered ATP/NADH without G6P change does not point to G6Pase defect."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best characterizes the Cori cycle described in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Substrates for Gluconeogenesis",
+    "options": [
+      {
+        "text": "Muscle converts glucose to lactate which liver reconverts to glucose",
+        "isCorrect": true,
+        "rationale": "Correct: lecture describes the Cori cycle where tissues performing anaerobic glycolysis (muscle, RBCs) produce lactate that the liver converts back to glucose."
+      },
+      {
+        "text": "Liver converts fatty acids to lactate which muscle uses for gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong because liver does not convert fatty acids to lactate for muscle gluconeogenesis; it would be correct only if fatty acids were converted to lactate, which they are not."
+      },
+      {
+        "text": "Adipose tissue converts glycerol to lactate which brain uses for energy",
+        "isCorrect": false,
+        "rationale": "Wrong because adipose releases glycerol, not lactate, and brain primarily uses glucose/ketones; it would be correct only in a nonphysiologic scenario."
+      },
+      {
+        "text": "Kidney converts glucose to alanine which muscle reconverts to glucose",
+        "isCorrect": false,
+        "rationale": "Wrong because the Cori cycle involves lactate, not alanine; alanine cycle is separate. It would be correct only if alanine were the shuttle described."
+      },
+      {
+        "text": "Muscle exports glucose directly to liver for storage as glycogen",
+        "isCorrect": false,
+        "rationale": "Wrong because muscle does not export glucose; it lacks glucose 6-phosphatase. It would be correct only if muscle could release free glucose, which it cannot."
+      }
+    ]
+  },
+  {
+    "question": "A pharmacologic activator of fructose 1,6-bisphosphatase is administered. Which immediate metabolic effect is most consistent with the lecture's regulatory principles?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Reactions Unique to Gluconeogenesis",
+    "options": [
+      {
+        "text": "Increased gluconeogenic flux with decreased glycolytic throughput",
+        "isCorrect": true,
+        "rationale": "Correct: activating F1,6BPase drives conversion of F1,6BP to F6P, promoting gluconeogenesis and reciprocally reducing glycolysis as described in the lecture."
+      },
+      {
+        "text": "Increased glycolysis due to activation of PFK-1 by F1,6BPase",
+        "isCorrect": false,
+        "rationale": "Wrong because F1,6BPase activation reduces substrate for PFK-1 and does not activate PFK-1; it would be correct only if F1,6BPase activation somehow increased PFK-1 activity."
+      },
+      {
+        "text": "Immediate increase in hepatic glycogen synthesis without affecting gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong because F1,6BPase activation affects gluconeogenesis directly; glycogen synthesis change is indirect. It would be correct only if glycogen synthase were directly activated."
+      },
+      {
+        "text": "Blockade of PEPCK expression leading to decreased gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong because activating F1,6BPase does not block PEPCK; it would be correct only if PEPCK transcription were inhibited concurrently."
+      },
+      {
+        "text": "Conversion of glucose 6-phosphate into lactate increasing Cori cycling",
+        "isCorrect": false,
+        "rationale": "Wrong because F1,6BPase activation favors gluconeogenesis, not lactate production; it would be correct only if glycolysis were simultaneously upregulated."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the energetic cost of converting two molecules of pyruvate to one molecule of glucose in gluconeogenesis as presented in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Reactions Unique to Gluconeogenesis",
+    "options": [
+      {
+        "text": "Consumes multiple high-energy phosphates and reducing equivalents overall",
+        "isCorrect": true,
+        "rationale": "Correct: lecture emphasizes gluconeogenesis is energy-requiring, consuming ATP, GTP, and NADH to synthesize glucose from pyruvate."
+      },
+      {
+        "text": "Generates ATP and NADH net during glucose synthesis",
+        "isCorrect": false,
+        "rationale": "Wrong because gluconeogenesis consumes rather than generates high-energy cofactors; it would be correct only if the pathway were exergonic, which it is not."
+      },
+      {
+        "text": "Is energetically neutral with no net ATP or NADH change",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture specifies net consumption of ATP/GTP and NADH; neutrality would contradict that."
+      },
+      {
+        "text": "Requires only NADH but no ATP or GTP",
+        "isCorrect": false,
+        "rationale": "Wrong because ATP and GTP are required in addition to NADH; it would be correct only if phosphoryl transfer steps were absent."
+      },
+      {
+        "text": "Consumes only ATP equivalents but produces net NADH",
+        "isCorrect": false,
+        "rationale": "Wrong because gluconeogenesis consumes NADH as well; it would be correct only if NADH were produced net, which is not the case per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A patient with increased hepatic fructose 2,6-bisphosphate will most likely show which pattern of metabolic enzyme activity?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe and explain the significance of the reciprocal regulation of fructose 1,6-bisphosphatase and phosphofructokinase-1 (PFK-1) by fructose 2,6-bisphosphate (and by extension, glucagon and PFK-2) and AMP",
+    "options": [
+      {
+        "text": "Activated PFK-1 and inhibited fructose 1,6-bisphosphatase promoting glycolysis",
+        "isCorrect": true,
+        "rationale": "Correct: lecture states F2,6BP potently activates PFK-1 and inhibits FBPase, shifting metabolism toward glycolysis."
+      },
+      {
+        "text": "Inhibited PFK-1 and activated fructose 1,6-bisphosphatase promoting gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong because F2,6BP has the opposite effect; it would be correct only if F2,6BP inhibited PFK-1, which contradicts the lecture."
+      },
+      {
+        "text": "No effect on either enzyme but increases PEPCK transcription",
+        "isCorrect": false,
+        "rationale": "Wrong because F2,6BP directly regulates PFK-1 and FBPase; it would be correct only if F2,6BP acted solely on transcription, which is not described."
+      },
+      {
+        "text": "Activates both PFK-1 and fructose 1,6-bisphosphatase simultaneously",
+        "isCorrect": false,
+        "rationale": "Wrong because simultaneous activation would cause futile cycling; lecture emphasizes reciprocal regulation to prevent this. It would be correct only in a nonphysiologic scenario."
+      },
+      {
+        "text": "Converts PFK-1 into fructose 1,6-bisphosphatase by phosphorylation",
+        "isCorrect": false,
+        "rationale": "Wrong because enzymes are distinct and not interconverted; it would be correct only in a fictional mechanism not supported by the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A researcher measures hepatic enzyme activities after glucagon infusion. Which combination of changes aligns with the lecture's description of glucagon's acute effects?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Regulation of Gluconeogenesis",
+    "options": [
+      {
+        "text": "Decreased fructose 2,6-bisphosphate, inhibited pyruvate kinase, increased PEPCK transcription",
+        "isCorrect": true,
+        "rationale": "Correct: lecture states glucagon lowers F2,6BP via PFK-2 phosphorylation, inhibits pyruvate kinase activity, and stimulates PEPCK transcription, promoting gluconeogenesis."
+      },
+      {
+        "text": "Increased fructose 2,6-bisphosphate, activated pyruvate kinase, decreased PEPCK transcription",
+        "isCorrect": false,
+        "rationale": "Wrong because this pattern reflects insulin-like effects opposite to glucagon; it would be correct only if glucagon acted like insulin."
+      },
+      {
+        "text": "No change in fructose 2,6-bisphosphate but increased glycolytic enzyme expression",
+        "isCorrect": false,
+        "rationale": "Wrong because glucagon specifically alters F2,6BP and enzyme activities; no change would contradict the lecture. It would be correct only if signaling were blocked."
+      },
+      {
+        "text": "Decreased PEPCK transcription with increased pyruvate kinase activity",
+        "isCorrect": false,
+        "rationale": "Wrong because glucagon increases PEPCK transcription and inhibits pyruvate kinase; this option reverses those effects and would be correct only if glucagon had opposite actions."
+      },
+      {
+        "text": "Increased fructose 2,6-bisphosphate with inhibited pyruvate kinase activity",
+        "isCorrect": false,
+        "rationale": "Wrong because increased F2,6BP activates glycolysis and would not coincide with pyruvate kinase inhibition as described for glucagon; it would be correct only in a mixed signaling state not in the lecture."
+      }
+    ]
+  }
+]
