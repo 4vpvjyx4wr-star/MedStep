@@ -1,0 +1,1410 @@
+[
+  {
+    "question": "A cell in G1 accumulates Cyclin D and forms active complexes that phosphorylate a transcriptional repressor, allowing S-phase genes to be transcribed. Which protein is directly released from repression to drive S-phase entry?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "E2F transcription factor freed to activate S genes",
+        "isCorrect": true,
+        "rationale": "Correct because Cyclin D–CDK4/6 phosphorylates Rb, releasing E2F to promote S-phase transcription as described in the lecture."
+      },
+      {
+        "text": "p53 transcription factor freed to activate S genes",
+        "isCorrect": false,
+        "rationale": "Wrong because p53 is a tumor suppressor that induces p21 and arrest; it would need loss of DNA damage signals to act like E2F."
+      },
+      {
+        "text": "Cyclin B transcription factor freed to activate S genes",
+        "isCorrect": false,
+        "rationale": "Wrong because Cyclin B is an M-phase cyclin; for this to be correct, Cyclin B would have to drive G1→S transcription which contradicts the lecture."
+      },
+      {
+        "text": "Cdc25C phosphatase freed to activate S genes",
+        "isCorrect": false,
+        "rationale": "Wrong because cdc25C activates CDK1 for M entry; it would need to target G1 CDKs to be relevant for S-phase entry."
+      },
+      {
+        "text": "FoxM1 transcription factor freed to activate S genes",
+        "isCorrect": false,
+        "rationale": "Wrong because FoxM1 is involved later in G2/M transcription; it would require premature activation in G1 to substitute for E2F."
+      }
+    ]
+  },
+  {
+    "question": "A researcher treats cultured cells with a DNA crosslinking agent that forms bulky adducts and activates p53-mediated arrest. Which drug from the lecture most closely matches this mechanism?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Cisplatin forms DNA adducts causing checkpoint arrest",
+        "isCorrect": true,
+        "rationale": "Correct because cisplatin creates DNA adducts that trigger damage recognition and p53-dependent arrest as described in the lecture."
+      },
+      {
+        "text": "Methotrexate inhibits thymidylate synthesis causing arrest",
+        "isCorrect": false,
+        "rationale": "Wrong because MTX blocks nucleotide synthesis rather than forming DNA adducts; it would be correct only if the drug created bulky DNA lesions."
+      },
+      {
+        "text": "6-mercaptopurine incorporates into DNA causing adducts",
+        "isCorrect": false,
+        "rationale": "Wrong because 6-MP inhibits purine synthesis and causes misincorporation, not classic bulky crosslinks; it would need crosslinking activity to match cisplatin."
+      },
+      {
+        "text": "Bleomycin chelates metal and causes single strand breaks",
+        "isCorrect": false,
+        "rationale": "Wrong because bleomycin induces DNA strand breaks via metal complexes rather than forming bulky adducts; it would match only if it formed crosslinks."
+      },
+      {
+        "text": "Busulfan alkylates DNA causing interstrand crosslinks",
+        "isCorrect": false,
+        "rationale": "Wrong because busulfan is an alkylating agent not listed among the lecture drug examples; it would be correct only if the lecture had included it explicitly."
+      }
+    ]
+  },
+  {
+    "question": "A tumor sample shows viral proteins that bind and degrade p53 and disrupt Rb–E2F interactions. Which viral proteins described in the lecture are most likely responsible?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Provide clinically relevant examples of regulatory dysfunction related to the cell cycle, notably HPV and associated proteins",
+    "options": [
+      {
+        "text": "HPV E6 promotes p53 degradation and E7 disrupts Rb",
+        "isCorrect": true,
+        "rationale": "Correct because HPV E6 targets p53 for degradation and E7 binds Rb preventing Rb–E2F repression, as the lecture explains."
+      },
+      {
+        "text": "Adenovirus E1A promotes p53 degradation and E1B disrupts Rb",
+        "isCorrect": false,
+        "rationale": "Wrong because adenoviral proteins have different interactions; this would be correct only if the lecture had described adenovirus rather than HPV."
+      },
+      {
+        "text": "SV40 large T antigen promotes p53 degradation and Rb binding",
+        "isCorrect": false,
+        "rationale": "Wrong because SV40 large T antigen binds both p53 and Rb but the lecture specifically highlighted HPV E6/E7; it would be correct only if SV40 were the viral cause discussed."
+      },
+      {
+        "text": "EBV LMP1 promotes p53 degradation and Rb disruption",
+        "isCorrect": false,
+        "rationale": "Wrong because EBV LMP1 signals via NF-κB rather than directly degrading p53 or binding Rb; it would need direct p53/Rb targeting to be correct."
+      },
+      {
+        "text": "HPV L1 capsid protein promotes p53 degradation and Rb",
+        "isCorrect": false,
+        "rationale": "Wrong because L1 is a structural capsid protein not involved in p53 or Rb interactions; it would be correct only if L1 had the described regulatory activity."
+      }
+    ]
+  },
+  {
+    "question": "An investigator measures cell proliferation by adding a thymidine analog that is incorporated into newly synthesized DNA. Which lab method described in the lecture uses this principle?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe lab methods associated with measuring cell cycle and apoptosis",
+    "options": [
+      {
+        "text": "BrdU or labeled thymidine incorporation assay measures S-phase",
+        "isCorrect": true,
+        "rationale": "Correct because BrdU or radiolabeled thymidine labels newly synthesized DNA and indicates cells in S phase as taught in the lecture."
+      },
+      {
+        "text": "CFSE dye dilution assay measures S-phase DNA incorporation",
+        "isCorrect": false,
+        "rationale": "Wrong because CFSE measures cell division by dye dilution, not direct DNA incorporation; it would be correct only if CFSE were a nucleotide analog."
+      },
+      {
+        "text": "Annexin V staining measures DNA synthesis in S-phase cells",
+        "isCorrect": false,
+        "rationale": "Wrong because Annexin V detects phosphatidylserine externalization in apoptosis, not DNA synthesis; it would be correct only if Annexin V labeled nucleotides."
+      },
+      {
+        "text": "TUNEL assay measures thymidine analog incorporation into DNA",
+        "isCorrect": false,
+        "rationale": "Wrong because TUNEL detects DNA fragmentation in apoptosis, not nucleotide incorporation during S phase; it would be correct only if TUNEL labeled replicating DNA."
+      },
+      {
+        "text": "Flow cytometric side scatter measures thymidine incorporation directly",
+        "isCorrect": false,
+        "rationale": "Wrong because flow cytometry can quantify labeled nucleotides but side scatter is unrelated; it would be correct only if side scatter correlated with nucleotide uptake."
+      }
+    ]
+  },
+  {
+    "question": "A cell exposed to ionizing damage cannot repair DNA and activates a mitochondrial pathway releasing cytochrome c. Which sequence best describes the intrinsic death cascade highlighted in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe apoptotic pathway, listing most important proteins",
+    "options": [
+      {
+        "text": "BAX insertion, cytochrome c release, Apaf1, caspase9 activation",
+        "isCorrect": true,
+        "rationale": "Correct because DNA damage induces BAX-mediated mitochondrial permeabilization, cytochrome c binds Apaf-1, forming apoptosome and activating caspase-9 as taught."
+      },
+      {
+        "text": "FADD recruitment, caspase8 activation, cytochrome c release, caspase9",
+        "isCorrect": false,
+        "rationale": "Wrong because FADD and caspase-8 are part of extrinsic signaling; this would be correct only if extrinsic signaling triggered mitochondrial amplification in the scenario."
+      },
+      {
+        "text": "Apaf1 activation, BAX insertion, caspase3 activation, cytochrome c release",
+        "isCorrect": false,
+        "rationale": "Wrong because Apaf-1 is activated by cytochrome c after BAX action; the order is incorrect and would be correct only if cytochrome c preceded BAX."
+      },
+      {
+        "text": "Caspase3 activation, Apaf1 binding, BAX insertion, cytochrome c release",
+        "isCorrect": false,
+        "rationale": "Wrong because caspase-3 is an executioner downstream of caspase-9; it would be correct only if caspase-3 initiated the cascade, which contradicts the lecture."
+      },
+      {
+        "text": "TNFR clustering, DISC formation, Apaf1 activation, caspase9 activation",
+        "isCorrect": false,
+        "rationale": "Wrong because TNFR and DISC are extrinsic pathway components; this would be correct only if extrinsic signaling directly activated Apaf-1, which is not typical."
+      }
+    ]
+  },
+  {
+    "question": "A patient receives methotrexate for a proliferative disease. Based on the lecture, which immediate biochemical effect explains increased sensitivity of dividing cells to apoptosis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Inhibition of thymine synthesis leading to replication stress",
+        "isCorrect": true,
+        "rationale": "Correct because methotrexate inhibits nucleotide synthesis (thymine), causing replication stress, ROS, and increased apoptosis susceptibility as described."
+      },
+      {
+        "text": "Direct formation of DNA crosslinks causing checkpoint arrest",
+        "isCorrect": false,
+        "rationale": "Wrong because crosslink formation is cisplatin's mechanism; it would be correct only if methotrexate formed DNA adducts."
+      },
+      {
+        "text": "Metal chelation producing single strand DNA breaks",
+        "isCorrect": false,
+        "rationale": "Wrong because bleomycin chelates metal to cause strand breaks; this would be correct only if methotrexate acted like bleomycin."
+      },
+      {
+        "text": "Inhibition of microtubule polymerization blocking mitosis",
+        "isCorrect": false,
+        "rationale": "Wrong because microtubule inhibitors (e.g., vincristine) disrupt mitosis; methotrexate does not target microtubules and would need that activity to match."
+      },
+      {
+        "text": "Activation of JAK kinases increasing proinflammatory signaling",
+        "isCorrect": false,
+        "rationale": "Wrong because methotrexate modulates JAK-STAT indirectly in some contexts but its cytotoxicity is primarily via nucleotide synthesis inhibition; this option would be correct only if JAK activation caused apoptosis directly."
+      }
+    ]
+  },
+  {
+    "question": "Which CDK is most critical for initiating mitosis by partnering with its cyclin as described in the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "CDK1 partners with Cyclin B to initiate mitosis",
+        "isCorrect": true,
+        "rationale": "Correct because CDK1–Cyclin B complex is essential for M-phase entry; lecture notes emphasize CDK1's role in initiating mitosis."
+      },
+      {
+        "text": "CDK4 partners with Cyclin A to initiate mitosis",
+        "isCorrect": false,
+        "rationale": "Wrong because CDK4 pairs with Cyclin D for G1 progression; it would be correct only if CDK4/Cyclin A drove M entry, which contradicts the lecture."
+      },
+      {
+        "text": "CDK2 partners with Cyclin D to initiate mitosis",
+        "isCorrect": false,
+        "rationale": "Wrong because CDK2 associates with Cyclin E/A for S-phase; it would be correct only if CDK2/Cyclin D controlled M entry."
+      },
+      {
+        "text": "CDK6 partners with Cyclin B to initiate mitosis",
+        "isCorrect": false,
+        "rationale": "Wrong because CDK6 works with Cyclin D in G1; it would be correct only if CDK6/Cyclin B were the M-phase driver."
+      },
+      {
+        "text": "CDK3 partners with Cyclin E to initiate mitosis",
+        "isCorrect": false,
+        "rationale": "Wrong because CDK3 is not described in the lecture as an M-phase initiator; it would be correct only if CDK3/Cyclin E triggered mitosis per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A tumor suppressor protein enforces the G1 restriction point by binding and inhibiting a transcription factor. Which protein performs this gatekeeping role according to the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "Retinoblastoma protein binds E2F to block S transcription",
+        "isCorrect": true,
+        "rationale": "Correct because Rb binds E2F to repress S-phase gene transcription until phosphorylated, as the lecture details."
+      },
+      {
+        "text": "p21 binds E2F to block S transcription until phosphorylated",
+        "isCorrect": false,
+        "rationale": "Wrong because p21 is a CDK inhibitor that halts CDK activity, not the primary E2F binder; it would be correct only if p21 directly sequestered E2F."
+      },
+      {
+        "text": "Cyclin D binds E2F to block S transcription until phosphorylated",
+        "isCorrect": false,
+        "rationale": "Wrong because Cyclin D activates CDKs to phosphorylate Rb, not bind E2F to repress transcription; it would be correct only if Cyclin D acted as a repressor."
+      },
+      {
+        "text": "Cdc25C binds E2F to block S transcription until phosphorylated",
+        "isCorrect": false,
+        "rationale": "Wrong because cdc25C is a phosphatase for CDK1 in G2/M, not an E2F regulator; it would be correct only if cdc25C targeted E2F directly."
+      },
+      {
+        "text": "Mdm2 binds E2F to block S transcription until phosphorylated",
+        "isCorrect": false,
+        "rationale": "Wrong because Mdm2 regulates p53 degradation, not E2F; it would be correct only if Mdm2 were described as an E2F binder in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which family of proteins includes p16 and functions as inhibitors of cyclin–CDK complexes in G1 as taught in the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "INK family contains p16 and inhibits G1 cyclin CDKs",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture names the INK family (p16, p18) as CDK inhibitors acting on G1 CDKs."
+      },
+      {
+        "text": "Cip/Kip family contains p16 and inhibits G1 cyclin CDKs",
+        "isCorrect": false,
+        "rationale": "Wrong because Cip/Kip includes p21 and p27, not p16; it would be correct only if p16 were a Cip/Kip member."
+      },
+      {
+        "text": "Bcl-2 family contains p16 and inhibits G1 cyclin CDKs",
+        "isCorrect": false,
+        "rationale": "Wrong because Bcl-2 family regulates apoptosis, not CDK inhibition; it would be correct only if Bcl-2 proteins were CDKIs per the lecture."
+      },
+      {
+        "text": "Cyclin family contains p16 and inhibits G1 cyclin CDKs",
+        "isCorrect": false,
+        "rationale": "Wrong because cyclins activate CDKs rather than inhibit them; it would be correct only if cyclins were inhibitory in G1."
+      },
+      {
+        "text": "APAF family contains p16 and inhibits G1 cyclin CDKs",
+        "isCorrect": false,
+        "rationale": "Wrong because Apaf-1 is an apoptotic adaptor, not a CDK inhibitor; it would be correct only if Apaf family members acted as CDKIs."
+      }
+    ]
+  },
+  {
+    "question": "A cell with irreparable DNA damage activates p53 which then induces a CDK inhibitor to halt the cycle. Which inhibitor is induced by p53 per the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "p21 is induced by p53 to halt CDK activity",
+        "isCorrect": true,
+        "rationale": "Correct because p53 upregulates p21, a Cip/Kip family CDK inhibitor that stops the cell cycle to allow repair as described."
+      },
+      {
+        "text": "p16 is induced by p53 to halt CDK activity",
+        "isCorrect": false,
+        "rationale": "Wrong because p16 is an INK family inhibitor not specifically described as p53-induced in the lecture; it would be correct only if p53 directly induced p16."
+      },
+      {
+        "text": "Cyclin E is induced by p53 to halt CDK activity",
+        "isCorrect": false,
+        "rationale": "Wrong because Cyclin E activates CDK2 to promote S-phase, not halt it; it would be correct only if Cyclin E acted as an inhibitor."
+      },
+      {
+        "text": "Mdm2 is induced by p53 to halt CDK activity",
+        "isCorrect": false,
+        "rationale": "Wrong because Mdm2 is a negative regulator of p53, not a CDK inhibitor; it would be correct only if Mdm2 inhibited CDKs directly."
+      },
+      {
+        "text": "Cdc25C is induced by p53 to halt CDK activity",
+        "isCorrect": false,
+        "rationale": "Wrong because cdc25C activates CDK1 for mitosis; it would be correct only if cdc25C functioned as an inhibitor in G1."
+      }
+    ]
+  },
+  {
+    "question": "Which checkpoint monitors chromosome attachment to the spindle and prevents anaphase until all kinetochores are properly engaged as described in the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "Spindle assembly checkpoint ensures proper kinetochore attachment",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture identifies the spindle assembly checkpoint as monitoring chromosome attachment to the spindle before anaphase."
+      },
+      {
+        "text": "G1 restriction checkpoint ensures proper kinetochore attachment",
+        "isCorrect": false,
+        "rationale": "Wrong because the G1 restriction point monitors growth and DNA damage, not kinetochore attachment; it would be correct only if G1 checkpoint controlled mitotic attachments."
+      },
+      {
+        "text": "Intra S-phase checkpoint ensures proper kinetochore attachment",
+        "isCorrect": false,
+        "rationale": "Wrong because the intra–S checkpoint monitors DNA replication and damage, not spindle attachments; it would be correct only if S-phase checkpoint regulated mitosis."
+      },
+      {
+        "text": "G2/M DNA replication checkpoint ensures proper kinetochore attachment",
+        "isCorrect": false,
+        "rationale": "Wrong because the G2/M checkpoint assesses DNA replication completion and damage, not kinetochore attachment; it would be correct only if it also monitored spindle assembly."
+      },
+      {
+        "text": "Telomere length checkpoint ensures proper kinetochore attachment",
+        "isCorrect": false,
+        "rationale": "Wrong because telomere length (Hayflick limit) affects senescence, not immediate spindle attachment; it would be correct only if telomeres controlled kinetochore function."
+      }
+    ]
+  },
+  {
+    "question": "Which drug described in the lecture requires metal ion binding to generate reactive species that cleave DNA and trigger apoptosis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Bleomycin chelates metal and generates radicals to cleave DNA",
+        "isCorrect": true,
+        "rationale": "Correct because bleomycin forms metal complexes (Fe/Cu) that produce radicals causing DNA damage and apoptosis as described in the lecture."
+      },
+      {
+        "text": "Cisplatin chelates metal and generates radicals to cleave DNA",
+        "isCorrect": false,
+        "rationale": "Wrong because cisplatin forms DNA adducts rather than metal-mediated radical cleavage; it would be correct only if cisplatin acted via radical generation."
+      },
+      {
+        "text": "Methotrexate chelates metal and generates radicals to cleave DNA",
+        "isCorrect": false,
+        "rationale": "Wrong because methotrexate inhibits nucleotide synthesis, not metal-mediated DNA cleavage; it would be correct only if MTX produced radicals."
+      },
+      {
+        "text": "6-mercaptopurine chelates metal and generates radicals to cleave DNA",
+        "isCorrect": false,
+        "rationale": "Wrong because 6-MP inhibits purine synthesis and causes misincorporation, not metal radical cleavage; it would be correct only if 6-MP chelated metals."
+      },
+      {
+        "text": "Busulfan chelates metal and generates radicals to cleave DNA",
+        "isCorrect": false,
+        "rationale": "Wrong because busulfan is an alkylating agent, not a metal-chelating radical generator; it would be correct only if busulfan acted like bleomycin."
+      }
+    ]
+  },
+  {
+    "question": "A flow cytometry experiment uses CFSE labeling to track divisions. What principle causes the fluorescence signal to halve with each cell division as described in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe lab methods associated with measuring cell cycle and apoptosis",
+    "options": [
+      {
+        "text": "Dye dilution halves fluorescence intensity with each cell division",
+        "isCorrect": true,
+        "rationale": "Correct because CFSE is partitioned between daughter cells, causing fluorescence intensity to halve per division as explained in the lecture."
+      },
+      {
+        "text": "Dye photobleaching halves fluorescence intensity with each cell division",
+        "isCorrect": false,
+        "rationale": "Wrong because photobleaching reduces signal over time independent of division; it would be correct only if photobleaching correlated exactly with cell divisions."
+      },
+      {
+        "text": "Dye efflux halves fluorescence intensity with each cell division",
+        "isCorrect": false,
+        "rationale": "Wrong because CFSE dilution is due to partitioning, not active efflux; it would be correct only if cells actively pumped out the dye each division."
+      },
+      {
+        "text": "Dye enzymatic degradation halves fluorescence intensity with each cell division",
+        "isCorrect": false,
+        "rationale": "Wrong because CFSE is stable intracellularly and dilution is by partitioning; it would be correct only if intracellular enzymes degraded the dye per cycle."
+      },
+      {
+        "text": "Dye quenching by DNA replication halves fluorescence intensity with each cell division",
+        "isCorrect": false,
+        "rationale": "Wrong because DNA replication does not quench CFSE fluorescence; it would be correct only if replication chemically altered the dye."
+      }
+    ]
+  },
+  {
+    "question": "A patient with retinoblastoma has loss of function in a protein that normally restrains E2F. Which clinical consequence described in the lecture follows from that loss?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify connections between cell cycle regulation and cancer risk and progression",
+    "options": [
+      {
+        "text": "Uncontrolled E2F activity leading to excessive cell proliferation",
+        "isCorrect": true,
+        "rationale": "Correct because loss of Rb function frees E2F, promoting S-phase gene transcription and uncontrolled proliferation as the lecture illustrates with retinoblastoma."
+      },
+      {
+        "text": "Increased p53 activity leading to cell cycle arrest and senescence",
+        "isCorrect": false,
+        "rationale": "Wrong because Rb loss does not directly increase p53 activity; this would be correct only if p53 were activated downstream of Rb loss in that context."
+      },
+      {
+        "text": "Enhanced apoptosis due to BAX overexpression and cell loss",
+        "isCorrect": false,
+        "rationale": "Wrong because Rb loss typically promotes proliferation rather than apoptosis; it would be correct only if BAX were upregulated as a compensatory response."
+      },
+      {
+        "text": "Telomerase suppression causing premature replicative senescence",
+        "isCorrect": false,
+        "rationale": "Wrong because Rb loss is not described as suppressing telomerase; it would be correct only if telomerase activity were reduced by Rb mutation."
+      },
+      {
+        "text": "Spindle checkpoint activation preventing mitotic progression",
+        "isCorrect": false,
+        "rationale": "Wrong because Rb loss affects G1/S control, not spindle checkpoint; it would be correct only if Rb mutation indirectly triggered spindle defects."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental readout described in the lecture produces a DNA 'ladder' pattern on gel electrophoresis indicating internucleosomal cleavage?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe lab methods associated with measuring cell cycle and apoptosis",
+    "options": [
+      {
+        "text": "DNA fragmentation assay yields laddering in apoptotic cells",
+        "isCorrect": true,
+        "rationale": "Correct because apoptotic DNA is cleaved into internucleosomal fragments producing a ladder pattern on gel, as the lecture describes."
+      },
+      {
+        "text": "BrdU incorporation assay yields laddering in apoptotic cells",
+        "isCorrect": false,
+        "rationale": "Wrong because BrdU labels replicating DNA and does not produce laddering; it would be correct only if BrdU specifically marked fragmented DNA."
+      },
+      {
+        "text": "CFSE dilution assay yields laddering in apoptotic cells",
+        "isCorrect": false,
+        "rationale": "Wrong because CFSE measures cell division by fluorescence dilution, not DNA fragmentation; it would be correct only if CFSE bound fragmented DNA."
+      },
+      {
+        "text": "Annexin V staining yields laddering in apoptotic cells",
+        "isCorrect": false,
+        "rationale": "Wrong because Annexin V detects phosphatidylserine exposure, not DNA laddering; it would be correct only if Annexin V labeled DNA fragments."
+      },
+      {
+        "text": "Tritiated thymidine uptake yields laddering in apoptotic cells",
+        "isCorrect": false,
+        "rationale": "Wrong because tritiated thymidine measures DNA synthesis, not fragmentation; it would be correct only if labeled nucleotides produced a ladder pattern."
+      }
+    ]
+  },
+  {
+    "question": "A kinase is kept inactive by inhibitory phosphorylation until a phosphatase removes those phosphates to allow mitotic entry. Which phosphatase described in the lecture performs this activation step for the mitotic CDK?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "cdc25C removes inhibitory phosphates to activate CDK1",
+        "isCorrect": true,
+        "rationale": "Correct because cdc25C dephosphorylates inhibitory sites on CDK1 allowing Cyclin B–CDK1 activation and mitotic entry as taught in the lecture."
+      },
+      {
+        "text": "Wee1 kinase removes inhibitory phosphates to activate CDK1",
+        "isCorrect": false,
+        "rationale": "Wrong because Wee1 adds inhibitory phosphates to CDK1; it would be correct only if Wee1 were a phosphatase rather than a kinase."
+      },
+      {
+        "text": "PP2A adds inhibitory phosphates to activate CDK1",
+        "isCorrect": false,
+        "rationale": "Wrong because PP2A is a phosphatase that can oppose CDK activity but is not the cdc25C activator described; it would be correct only if PP2A specifically removed CDK1 inhibitory phosphates in that context."
+      },
+      {
+        "text": "Mdm2 removes inhibitory phosphates to activate CDK1",
+        "isCorrect": false,
+        "rationale": "Wrong because Mdm2 targets p53 for degradation, not CDK1 dephosphorylation; it would be correct only if Mdm2 had phosphatase activity toward CDK1."
+      },
+      {
+        "text": "Chk1 removes inhibitory phosphates to activate CDK1",
+        "isCorrect": false,
+        "rationale": "Wrong because Chk1 phosphorylates and inhibits cdc25C during DNA damage; it would be correct only if Chk1 acted as a phosphatase activating CDK1."
+      }
+    ]
+  },
+  {
+    "question": "Which cell type category described in the lecture rarely or never exits the nondividing state and is terminally differentiated?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "Permanent cells enter G0 and do not reenter the cycle",
+        "isCorrect": true,
+        "rationale": "Correct because permanent cells (e.g., neurons, cardiac muscle) enter G0 and typically do not divide again, as the lecture states."
+      },
+      {
+        "text": "Stable cells never enter G0 and continuously divide",
+        "isCorrect": false,
+        "rationale": "Wrong because stable (quiescent) cells can enter G0 and later reenter the cycle; it would be correct only if stable cells were continuously dividing."
+      },
+      {
+        "text": "Labile cells enter G0 and rarely reenter the cycle",
+        "isCorrect": false,
+        "rationale": "Wrong because labile cells rarely enter G0 and are constantly dividing; it would be correct only if labile cells were quiescent."
+      },
+      {
+        "text": "Stem cells are permanent and never reenter the cycle",
+        "isCorrect": false,
+        "rationale": "Wrong because stem cells can divide and often maintain telomerase activity; it would be correct only if stem cells were terminally differentiated."
+      },
+      {
+        "text": "Hepatocytes are labile and never reenter the cycle",
+        "isCorrect": false,
+        "rationale": "Wrong because hepatocytes are stable (quiescent) and can reenter the cycle after stimulus; it would be correct only if hepatocytes were truly labile."
+      }
+    ]
+  },
+  {
+    "question": "Which oncogenic class includes Ras and Cyclin D as examples and functions like an accelerator when mutated as described in the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "P53 and Rb are tumor suppressor genes",
+    "options": [
+      {
+        "text": "Proto-oncogenes become oncogenes acting as accelerators when mutated",
+        "isCorrect": true,
+        "rationale": "Correct because proto-oncogenes (e.g., Ras, Cyclin D) normally promote progression and become oncogenes when constitutively active, per the lecture."
+      },
+      {
+        "text": "Tumor suppressors become oncogenes acting as accelerators when mutated",
+        "isCorrect": false,
+        "rationale": "Wrong because tumor suppressors are brakes that lose function in cancer; it would be correct only if loss of a suppressor created an activating oncogene."
+      },
+      {
+        "text": "CDK inhibitors become oncogenes acting as accelerators when mutated",
+        "isCorrect": false,
+        "rationale": "Wrong because CDK inhibitors are tumor suppressive; they would need gain-of-function mutations that promote CDK activity to act as oncogenes."
+      },
+      {
+        "text": "Apoptotic proteins become oncogenes acting as accelerators when mutated",
+        "isCorrect": false,
+        "rationale": "Wrong because apoptotic proteins like BAX are pro-death; they would need loss of function to promote cancer, not become accelerators."
+      },
+      {
+        "text": "DNA repair enzymes become oncogenes acting as accelerators when mutated",
+        "isCorrect": false,
+        "rationale": "Wrong because defective DNA repair promotes mutation accumulation but does not act as a direct accelerator; it would be correct only if repair enzymes gained proliferative signaling functions."
+      }
+    ]
+  },
+  {
+    "question": "A cell line treated with a drug that inhibits de novo purine synthesis accumulates nucleotide precursors and shows DNA damage. Which drug from the lecture fits this mechanism?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "6-mercaptopurine inhibits de novo purine biosynthesis causing damage",
+        "isCorrect": true,
+        "rationale": "Correct because 6-MP inhibits purine synthesis pathways leading to impaired DNA synthesis and damage as described in the lecture."
+      },
+      {
+        "text": "Methotrexate inhibits de novo purine biosynthesis causing damage",
+        "isCorrect": false,
+        "rationale": "Wrong because MTX primarily inhibits thymidine synthesis and folate metabolism; it would be correct only if MTX were described as a purine synthesis inhibitor here."
+      },
+      {
+        "text": "Cisplatin inhibits de novo purine biosynthesis causing damage",
+        "isCorrect": false,
+        "rationale": "Wrong because cisplatin forms DNA adducts rather than inhibiting purine biosynthesis; it would be correct only if cisplatin targeted nucleotide synthesis."
+      },
+      {
+        "text": "Bleomycin inhibits de novo purine biosynthesis causing damage",
+        "isCorrect": false,
+        "rationale": "Wrong because bleomycin causes strand breaks via metal radicals, not purine synthesis inhibition; it would be correct only if bleomycin blocked purine pathways."
+      },
+      {
+        "text": "Hydroxyurea inhibits de novo purine biosynthesis causing damage",
+        "isCorrect": false,
+        "rationale": "Wrong because hydroxyurea inhibits ribonucleotide reductase affecting dNTP pools, not classic de novo purine synthesis; it would be correct only if hydroxyurea were listed in the lecture as 6-MP equivalent."
+      }
+    ]
+  },
+  {
+    "question": "Which assay described in the lecture detects early apoptotic cells by binding to phosphatidylserine exposed on the outer leaflet while the membrane remains intact?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe lab methods associated with measuring cell cycle and apoptosis",
+    "options": [
+      {
+        "text": "Annexin V staining detects phosphatidylserine exposure in early apoptosis",
+        "isCorrect": true,
+        "rationale": "Correct because Annexin V binds externalized phosphatidylserine on early apoptotic cells while membranes are intact, as the lecture explains."
+      },
+      {
+        "text": "TUNEL assay detects phosphatidylserine exposure in early apoptosis",
+        "isCorrect": false,
+        "rationale": "Wrong because TUNEL detects DNA fragmentation, not phosphatidylserine exposure; it would be correct only if TUNEL bound membrane lipids."
+      },
+      {
+        "text": "BrdU incorporation detects phosphatidylserine exposure in early apoptosis",
+        "isCorrect": false,
+        "rationale": "Wrong because BrdU labels replicating DNA, not membrane PS exposure; it would be correct only if BrdU bound PS."
+      },
+      {
+        "text": "CFSE dilution detects phosphatidylserine exposure in early apoptosis",
+        "isCorrect": false,
+        "rationale": "Wrong because CFSE measures cell division by dye dilution, not PS exposure; it would be correct only if CFSE reported membrane lipid changes."
+      },
+      {
+        "text": "DNA laddering detects phosphatidylserine exposure in early apoptosis",
+        "isCorrect": false,
+        "rationale": "Wrong because DNA laddering shows internucleosomal cleavage, not PS externalization; it would be correct only if laddering correlated with membrane flipping."
+      }
+    ]
+  },
+  {
+    "question": "A tumor sample shows hyperphosphorylated Rb and high expression of S-phase genes. Which upstream complex is most likely responsible for initiating Rb phosphorylation in G1 as taught in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "Cyclin D–CDK4/6 complexes phosphorylate Rb during G1",
+        "isCorrect": true,
+        "rationale": "Correct because Cyclin D bound to CDK4/6 phosphorylates Rb in early G1, leading to E2F release and S-phase gene transcription as the lecture states."
+      },
+      {
+        "text": "Cyclin B–CDK1 complexes phosphorylate Rb during G1",
+        "isCorrect": false,
+        "rationale": "Wrong because Cyclin B–CDK1 functions in G2/M, not G1; it would be correct only if Cyclin B/CDK1 acted prematurely in G1."
+      },
+      {
+        "text": "Cyclin A–CDK2 complexes phosphorylate Rb during G1",
+        "isCorrect": false,
+        "rationale": "Wrong because Cyclin A–CDK2 acts in S/G2 phases; it would be correct only if Cyclin A/CDK2 were active earlier in G1."
+      },
+      {
+        "text": "p21–CDK inhibitory complexes phosphorylate Rb during G1",
+        "isCorrect": false,
+        "rationale": "Wrong because p21 inhibits CDKs and would prevent Rb phosphorylation; it would be correct only if p21 paradoxically promoted phosphorylation."
+      },
+      {
+        "text": "APC/C ubiquitin ligase phosphorylates Rb during G1",
+        "isCorrect": false,
+        "rationale": "Wrong because APC/C is an E3 ligase regulating mitotic proteins, not an Rb kinase; it would be correct only if APC/C had kinase activity toward Rb."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory label described in the lecture uses a radioactive thymidine analog to quantify DNA synthesis in proliferating cultures?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe lab methods associated with measuring cell cycle and apoptosis",
+    "options": [
+      {
+        "text": "Tritiated thymidine incorporation measures DNA synthesis in S-phase",
+        "isCorrect": true,
+        "rationale": "Correct because tritiated thymidine is incorporated into newly synthesized DNA and its radioactivity quantifies proliferation, as the lecture describes."
+      },
+      {
+        "text": "BrdU incorporation measures DNA synthesis in S-phase by radioactivity",
+        "isCorrect": false,
+        "rationale": "Wrong because BrdU is detected immunologically rather than by radioactivity; it would be correct only if BrdU were radioactive in the described assay."
+      },
+      {
+        "text": "CFSE labeling measures DNA synthesis in S-phase by radioactivity",
+        "isCorrect": false,
+        "rationale": "Wrong because CFSE is a fluorescent dye for tracking cell division, not a radioactive thymidine analog; it would be correct only if CFSE were radioactive."
+      },
+      {
+        "text": "Annexin V labeling measures DNA synthesis in S-phase by radioactivity",
+        "isCorrect": false,
+        "rationale": "Wrong because Annexin V detects apoptosis via PS exposure, not DNA synthesis; it would be correct only if Annexin V labeled nucleotides."
+      },
+      {
+        "text": "TUNEL assay measures DNA synthesis in S-phase by radioactivity",
+        "isCorrect": false,
+        "rationale": "Wrong because TUNEL detects DNA fragmentation in apoptosis, not DNA synthesis; it would be correct only if TUNEL measured nucleotide incorporation."
+      }
+    ]
+  },
+  {
+    "question": "A cancer therapy targets rapidly dividing bone marrow cells by interfering with DNA replication enzymes. Which S-phase targeting agent from the lecture fits this description?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Cytarabine inhibits DNA polymerase during S-phase replication",
+        "isCorrect": true,
+        "rationale": "Correct because cytarabine is an S-phase agent that interferes with DNA replication enzymes, consistent with the lecture's list of S-phase targeting drugs."
+      },
+      {
+        "text": "Vincristine inhibits DNA polymerase during S-phase replication",
+        "isCorrect": false,
+        "rationale": "Wrong because vincristine disrupts microtubules in mitosis, not DNA polymerase; it would be correct only if vincristine targeted replication enzymes."
+      },
+      {
+        "text": "Paclitaxel inhibits DNA polymerase during S-phase replication",
+        "isCorrect": false,
+        "rationale": "Wrong because paclitaxel stabilizes microtubules affecting mitosis, not DNA polymerase; it would be correct only if paclitaxel inhibited replication enzymes."
+      },
+      {
+        "text": "Bleomycin inhibits DNA polymerase during S-phase replication",
+        "isCorrect": false,
+        "rationale": "Wrong because bleomycin causes strand breaks via metal radicals rather than directly inhibiting DNA polymerase; it would be correct only if bleomycin blocked polymerase activity."
+      },
+      {
+        "text": "Cisplatin inhibits DNA polymerase during S-phase replication",
+        "isCorrect": false,
+        "rationale": "Wrong because cisplatin forms DNA adducts and crosslinks rather than directly inhibiting polymerase; it would be correct only if cisplatin targeted polymerase enzymes."
+      }
+    ]
+  },
+  {
+    "question": "Which protein family listed in the lecture contains pro-apoptotic members that insert into the mitochondrial membrane to promote cytochrome c release?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe apoptotic pathway, listing most important proteins",
+    "options": [
+      {
+        "text": "BAX is a pro-apoptotic Bcl-2 family member promoting cytochrome c release",
+        "isCorrect": true,
+        "rationale": "Correct because BAX, a pro-apoptotic Bcl-2 family protein, inserts into mitochondria to release cytochrome c and trigger apoptosis as taught."
+      },
+      {
+        "text": "Bcl-2 is a pro-apoptotic Bcl-2 family member promoting cytochrome c release",
+        "isCorrect": false,
+        "rationale": "Wrong because Bcl-2 is anti-apoptotic and prevents cytochrome c release; it would be correct only if Bcl-2 were pro-apoptotic."
+      },
+      {
+        "text": "Apaf1 is a pro-apoptotic Bcl-2 family member promoting cytochrome c release",
+        "isCorrect": false,
+        "rationale": "Wrong because Apaf-1 is an adaptor activated by cytochrome c, not a Bcl-2 family membrane inserter; it would be correct only if Apaf-1 were a Bcl-2 protein."
+      },
+      {
+        "text": "Caspase9 is a pro-apoptotic Bcl-2 family member promoting cytochrome c release",
+        "isCorrect": false,
+        "rationale": "Wrong because caspase-9 is an initiator caspase activated downstream of cytochrome c, not a Bcl-2 family membrane protein; it would be correct only if caspase-9 were a Bcl-2 member."
+      },
+      {
+        "text": "Mdm2 is a pro-apoptotic Bcl-2 family member promoting cytochrome c release",
+        "isCorrect": false,
+        "rationale": "Wrong because Mdm2 regulates p53 degradation and is not part of the Bcl-2 family; it would be correct only if Mdm2 were a mitochondrial Bcl-2 protein."
+      }
+    ]
+  },
+  {
+    "question": "A cell exposed to DNA-damaging chemotherapy fails to activate p53 due to viral protein interference. According to the lecture, which viral protein would most directly promote p53 degradation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Provide clinically relevant examples of regulatory dysfunction related to the cell cycle, notably HPV and associated proteins",
+    "options": [
+      {
+        "text": "HPV E6 binds p53 and promotes its premature degradation",
+        "isCorrect": true,
+        "rationale": "Correct because HPV E6 targets p53 for degradation, preventing p53-mediated arrest or apoptosis as described in the lecture."
+      },
+      {
+        "text": "HPV E7 binds p53 and promotes its premature degradation",
+        "isCorrect": false,
+        "rationale": "Wrong because E7 primarily binds Rb, not p53; it would be correct only if E7 were shown to target p53 in the lecture."
+      },
+      {
+        "text": "Adenovirus E1A binds p53 and promotes its premature degradation",
+        "isCorrect": false,
+        "rationale": "Wrong because adenoviral proteins differ from HPV E6; it would be correct only if adenovirus E1A were the viral protein discussed in the lecture."
+      },
+      {
+        "text": "SV40 large T antigen binds p53 and promotes its premature degradation",
+        "isCorrect": false,
+        "rationale": "Wrong because SV40 large T antigen interacts with p53 but the lecture specifically highlighted HPV E6; it would be correct only if SV40 were the focus."
+      },
+      {
+        "text": "HPV L1 capsid protein binds p53 and promotes its premature degradation",
+        "isCorrect": false,
+        "rationale": "Wrong because L1 is structural and not involved in p53 degradation; it would be correct only if L1 had regulatory functions described in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which checkpoint would be activated if DNA replication is incomplete or damaged during S-phase, according to the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "Intra S-phase checkpoint monitors DNA replication and damage",
+        "isCorrect": true,
+        "rationale": "Correct because the intra–S-phase checkpoint detects replication problems and DNA damage to halt progression, as the lecture explains."
+      },
+      {
+        "text": "Spindle assembly checkpoint monitors DNA replication and damage",
+        "isCorrect": false,
+        "rationale": "Wrong because the spindle checkpoint monitors kinetochore attachment during mitosis, not S-phase replication; it would be correct only if spindle checkpoint also sensed replication."
+      },
+      {
+        "text": "G1 restriction checkpoint monitors DNA replication and damage",
+        "isCorrect": false,
+        "rationale": "Wrong because the G1 checkpoint assesses readiness for S entry, not ongoing replication in S phase; it would be correct only if G1 checkpoint acted during S."
+      },
+      {
+        "text": "G2/M checkpoint monitors DNA replication and damage",
+        "isCorrect": false,
+        "rationale": "Wrong because G2/M checks replication completion before mitosis, but intra–S specifically monitors replication during S; it would be correct only if the question asked about pre-mitotic checks."
+      },
+      {
+        "text": "Hayflick limit checkpoint monitors DNA replication and damage",
+        "isCorrect": false,
+        "rationale": "Wrong because Hayflick limit relates to replicative senescence and telomere shortening, not acute S-phase replication damage; it would be correct only if telomere attrition caused immediate S-phase arrest."
+      }
+    ]
+  },
+  {
+    "question": "A chemotherapeutic agent causes DNA crosslinks and activates ATR/Chk2 signaling leading to cell cycle arrest and apoptosis. Which downstream tumor suppressor is central to this arrest response per the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "p53 mediates arrest and apoptosis after DNA damage signaling activation",
+        "isCorrect": true,
+        "rationale": "Correct because DNA damage sensors (ATR/Chk2) activate p53, which induces p21 and apoptosis pathways as described in the lecture."
+      },
+      {
+        "text": "E2F mediates arrest and apoptosis after DNA damage signaling activation",
+        "isCorrect": false,
+        "rationale": "Wrong because E2F promotes S-phase transcription; it would be correct only if E2F were repurposed to induce arrest in response to damage."
+      },
+      {
+        "text": "Cyclin D mediates arrest and apoptosis after DNA damage signaling activation",
+        "isCorrect": false,
+        "rationale": "Wrong because Cyclin D promotes G1 progression; it would be correct only if Cyclin D acted as a damage-induced arrest mediator."
+      },
+      {
+        "text": "Cdc25C mediates arrest and apoptosis after DNA damage signaling activation",
+        "isCorrect": false,
+        "rationale": "Wrong because cdc25C activates CDK1 for mitosis and is inhibited by checkpoint kinases; it would be correct only if cdc25C induced arrest rather than being inhibited."
+      },
+      {
+        "text": "Mdm2 mediates arrest and apoptosis after DNA damage signaling activation",
+        "isCorrect": false,
+        "rationale": "Wrong because Mdm2 negatively regulates p53 and would oppose arrest; it would be correct only if Mdm2 promoted p53 activity instead."
+      }
+    ]
+  },
+  {
+    "question": "Which class of drugs listed in the lecture includes agents that disrupt microtubules and thereby interfere with mitosis?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Microtubule inhibitors such as vincristine and paclitaxel disrupt mitosis",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture names vinblastine, vincristine, and paclitaxel as microtubule inhibitors used to disrupt mitosis."
+      },
+      {
+        "text": "Alkylating agents such as cisplatin and carmustine disrupt mitosis",
+        "isCorrect": false,
+        "rationale": "Wrong because alkylating agents damage DNA rather than directly disrupting microtubules; it would be correct only if alkylators targeted tubulin."
+      },
+      {
+        "text": "Antimetabolites such as methotrexate and 6-MP disrupt mitosis",
+        "isCorrect": false,
+        "rationale": "Wrong because antimetabolites interfere with nucleotide synthesis and S-phase, not microtubules; it would be correct only if they targeted tubulin."
+      },
+      {
+        "text": "Topoisomerase inhibitors such as etoposide disrupt mitosis",
+        "isCorrect": false,
+        "rationale": "Wrong because topoisomerase inhibitors cause DNA breaks during replication, not direct microtubule disruption; it would be correct only if they affected spindle dynamics."
+      },
+      {
+        "text": "Bleomycin class drugs disrupt mitosis by binding tubulin",
+        "isCorrect": false,
+        "rationale": "Wrong because bleomycin causes DNA strand breaks via metal complexes, not tubulin binding; it would be correct only if bleomycin targeted microtubules."
+      }
+    ]
+  },
+  {
+    "question": "A researcher observes that a cell population shows externalized phosphatidylserine but intact membranes and negative luminescence in a viability assay. According to the lecture, what stage does this pattern indicate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe lab methods associated with measuring cell cycle and apoptosis",
+    "options": [
+      {
+        "text": "Early apoptosis with PS externalization and intact membrane integrity",
+        "isCorrect": true,
+        "rationale": "Correct because early apoptotic cells externalize PS (Annexin V positive) while membranes remain intact and luminescence assays can be negative, matching the lecture description."
+      },
+      {
+        "text": "Secondary necrosis with PS externalization and intact membrane integrity",
+        "isCorrect": false,
+        "rationale": "Wrong because secondary necrosis involves membrane compromise and positive luminescence; it would be correct only if membranes were compromised."
+      },
+      {
+        "text": "Primary necrosis with PS internalization and intact membrane integrity",
+        "isCorrect": false,
+        "rationale": "Wrong because primary necrosis causes membrane rupture and inflammation, not intact membranes with PS externalization; it would be correct only if necrosis preserved membrane integrity."
+      },
+      {
+        "text": "Live healthy cell with PS externalization and intact membrane integrity",
+        "isCorrect": false,
+        "rationale": "Wrong because healthy cells keep PS on the inner leaflet; it would be correct only if PS externalization occurred physiologically in healthy cells."
+      },
+      {
+        "text": "Apoptotic cell with DNA laddering but no PS externalization",
+        "isCorrect": false,
+        "rationale": "Wrong because DNA laddering can occur in apoptosis but the described assay shows PS externalization; it would be correct only if PS remained internal despite apoptosis."
+      }
+    ]
+  },
+  {
+    "question": "Which molecular event described in the lecture creates positive feedback that reinforces G1 progression once initiated?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "E2F activation increases cyclin expression reinforcing G1 progression",
+        "isCorrect": true,
+        "rationale": "Correct because freed E2F drives transcription of S-phase cyclins (e.g., Cyclin E/A), creating positive feedback for cell cycle commitment as the lecture explains."
+      },
+      {
+        "text": "p53 activation increases cyclin expression reinforcing G1 progression",
+        "isCorrect": false,
+        "rationale": "Wrong because p53 induces p21 and promotes arrest, not cyclin expression; it would be correct only if p53 paradoxically upregulated cyclins."
+      },
+      {
+        "text": "p21 induction increases cyclin expression reinforcing G1 progression",
+        "isCorrect": false,
+        "rationale": "Wrong because p21 inhibits CDKs and would oppose progression; it would be correct only if p21 stimulated cyclin transcription."
+      },
+      {
+        "text": "cdc25C activation increases cyclin expression reinforcing G1 progression",
+        "isCorrect": false,
+        "rationale": "Wrong because cdc25C acts at G2/M to activate CDK1, not to reinforce G1; it would be correct only if cdc25C influenced G1 cyclin transcription."
+      },
+      {
+        "text": "Wee1 inhibition increases cyclin expression reinforcing G1 progression",
+        "isCorrect": false,
+        "rationale": "Wrong because Wee1 regulates CDK1 inhibitory phosphorylation in G2/M; it would be correct only if Wee1 inhibition directly increased G1 cyclin levels."
+      }
+    ]
+  },
+  {
+    "question": "A tumor sample shows loss of a protein that normally enforces the Hayflick limit; cells display telomerase activity and continued proliferation. Which concept from the lecture explains this observation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify connections between cell cycle regulation and cancer risk and progression",
+    "options": [
+      {
+        "text": "Telomerase activation allows cells to bypass replicative senescence and proliferate",
+        "isCorrect": true,
+        "rationale": "Correct because telomerase activity maintains telomeres, enabling cells (including cancer cells) to escape the Hayflick limit and continue dividing as the lecture notes."
+      },
+      {
+        "text": "Rb activation allows cells to bypass replicative senescence and proliferate",
+        "isCorrect": false,
+        "rationale": "Wrong because Rb enforces G1 arrest; activation of Rb would not promote bypass of senescence and would need inactivation to allow proliferation."
+      },
+      {
+        "text": "p53 activation allows cells to bypass replicative senescence and proliferate",
+        "isCorrect": false,
+        "rationale": "Wrong because p53 promotes arrest or apoptosis in response to damage; it would be correct only if p53 activation paradoxically extended replicative capacity."
+      },
+      {
+        "text": "p21 activation allows cells to bypass replicative senescence and proliferate",
+        "isCorrect": false,
+        "rationale": "Wrong because p21 inhibits CDKs and promotes arrest; it would be correct only if p21 somehow enhanced telomerase activity."
+      },
+      {
+        "text": "Wee1 activation allows cells to bypass replicative senescence and proliferate",
+        "isCorrect": false,
+        "rationale": "Wrong because Wee1 inhibits CDK1 and controls G2/M timing, not telomere maintenance; it would be correct only if Wee1 regulated telomerase."
+      }
+    ]
+  },
+  {
+    "question": "Which extrinsic apoptotic adaptor protein described in the lecture links death receptor signaling to caspase-8 activation?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe apoptotic pathway, listing most important proteins",
+    "options": [
+      {
+        "text": "FADD recruits procaspase-8 to form the DISC and activate caspase-8",
+        "isCorrect": true,
+        "rationale": "Correct because FADD is the adaptor that binds death receptor DDs and recruits procaspase-8 to form the DISC, leading to caspase-8 activation as taught."
+      },
+      {
+        "text": "Apaf1 recruits procaspase-8 to form the DISC and activate caspase-8",
+        "isCorrect": false,
+        "rationale": "Wrong because Apaf-1 functions in the intrinsic pathway with cytochrome c and caspase-9, not DISC formation; it would be correct only if Apaf-1 recruited caspase-8."
+      },
+      {
+        "text": "BAX recruits procaspase-8 to form the DISC and activate caspase-8",
+        "isCorrect": false,
+        "rationale": "Wrong because BAX acts at mitochondria in the intrinsic pathway, not as a DISC adaptor; it would be correct only if BAX had DISC adaptor function."
+      },
+      {
+        "text": "Mdm2 recruits procaspase-8 to form the DISC and activate caspase-8",
+        "isCorrect": false,
+        "rationale": "Wrong because Mdm2 regulates p53 degradation and is not a DISC adaptor; it would be correct only if Mdm2 recruited caspase-8 in death receptor signaling."
+      },
+      {
+        "text": "Caspase9 recruits procaspase-8 to form the DISC and activate caspase-8",
+        "isCorrect": false,
+        "rationale": "Wrong because caspase-9 is an initiator in the intrinsic pathway and does not form the DISC; it would be correct only if caspase-9 functioned in extrinsic DISC assembly."
+      }
+    ]
+  },
+  {
+    "question": "A patient with cervical intraepithelial neoplasia is found to have infection with high-risk viral strains that express proteins interfering with tumor suppressors. Which preventive strategy logically targets the causative agent discussed in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Provide clinically relevant examples of regulatory dysfunction related to the cell cycle, notably HPV and associated proteins",
+    "options": [
+      {
+        "text": "Vaccination against high-risk human papillomavirus strains to prevent E6 E7 effects",
+        "isCorrect": true,
+        "rationale": "Correct because preventing infection by high-risk HPV blocks expression of E6/E7 that degrade p53 and inactivate Rb, thereby reducing cervical cancer risk as the lecture emphasizes."
+      },
+      {
+        "text": "Administration of broad spectrum antibiotics to eradicate viral oncogenes from cervix",
+        "isCorrect": false,
+        "rationale": "Wrong because antibiotics do not target viruses; it would be correct only if the causative agent were bacterial rather than HPV."
+      },
+      {
+        "text": "Use of telomerase inhibitors to reverse E6 E7 mediated tumor suppressor loss",
+        "isCorrect": false,
+        "rationale": "Wrong because telomerase inhibition does not prevent initial viral inactivation of p53/Rb; it would be correct only if telomerase were the primary driver in early HPV lesions."
+      },
+      {
+        "text": "Topical application of microtubule inhibitors to restore Rb function locally",
+        "isCorrect": false,
+        "rationale": "Wrong because microtubule inhibitors affect mitosis and do not restore Rb or p53 function; it would be correct only if such agents specifically reversed viral protein binding."
+      },
+      {
+        "text": "Systemic methotrexate to inhibit viral protein synthesis and prevent progression",
+        "isCorrect": false,
+        "rationale": "Wrong because methotrexate targets host nucleotide synthesis and is not an antiviral; it would be correct only if MTX had specific anti-HPV activity described in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a rapidly dividing malignancy is treated with cisplatin. Based on the lecture, which immediate cellular response is expected after cisplatin-induced DNA adduct formation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Activation of DNA damage checkpoints leading to p53 mediated arrest or apoptosis",
+        "isCorrect": true,
+        "rationale": "Correct because cisplatin forms DNA adducts that activate damage recognition pathways (ATR/Chk2) and p53, causing cell cycle arrest or apoptosis as the lecture outlines."
+      },
+      {
+        "text": "Immediate inhibition of microtubule polymerization causing mitotic arrest",
+        "isCorrect": false,
+        "rationale": "Wrong because cisplatin damages DNA rather than targeting microtubules; it would be correct only if the drug were a microtubule inhibitor like vincristine."
+      },
+      {
+        "text": "Direct activation of telomerase causing replicative immortality",
+        "isCorrect": false,
+        "rationale": "Wrong because cisplatin does not activate telomerase; it would be correct only if cisplatin paradoxically increased telomerase activity."
+      },
+      {
+        "text": "Inhibition of JAK kinases leading to reduced STAT signaling",
+        "isCorrect": false,
+        "rationale": "Wrong because cisplatin's primary action is DNA crosslinking, not JAK-STAT inhibition; it would be correct only if cisplatin targeted JAKs as MTX can modulate signaling."
+      },
+      {
+        "text": "Chelation of iron producing radicals that selectively cleave mitochondrial DNA",
+        "isCorrect": false,
+        "rationale": "Wrong because bleomycin, not cisplatin, uses metal-mediated radical formation; it would be correct only if cisplatin acted via metal chelation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with leukemia is given 6-mercaptopurine. According to the lecture, which metabolic pathway blockade best explains its cytotoxicity in dividing cells?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Inhibition of de novo purine biosynthesis leading to impaired DNA synthesis",
+        "isCorrect": true,
+        "rationale": "Correct because 6-MP inhibits enzymes in purine synthesis, reducing nucleotide pools and causing DNA damage in dividing cells as described in the lecture."
+      },
+      {
+        "text": "Inhibition of thymidylate synthase leading to impaired DNA synthesis",
+        "isCorrect": false,
+        "rationale": "Wrong because thymidylate synthase inhibition is MTX-related; it would be correct only if 6-MP targeted thymidylate synthase specifically."
+      },
+      {
+        "text": "Chelation of copper producing radicals that cleave DNA",
+        "isCorrect": false,
+        "rationale": "Wrong because metal radical cleavage is bleomycin's mechanism; it would be correct only if 6-MP acted like bleomycin."
+      },
+      {
+        "text": "Microtubule stabilization preventing mitotic spindle disassembly",
+        "isCorrect": false,
+        "rationale": "Wrong because microtubule stabilization is paclitaxel's action, not 6-MP; it would be correct only if 6-MP targeted tubulin."
+      },
+      {
+        "text": "Direct alkylation of DNA bases causing crosslinks",
+        "isCorrect": false,
+        "rationale": "Wrong because alkylation and crosslinking are cisplatin/alkylator mechanisms; it would be correct only if 6-MP alkylated DNA."
+      }
+    ]
+  },
+  {
+    "question": "A tumor suppressor gene is described as a 'brake' in the lecture. Which pair of genes are explicitly named as tumor suppressors in the material?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "P53 and Rb are tumor suppressor genes",
+    "options": [
+      {
+        "text": "p53 and Rb are tumor suppressors acting as brakes on proliferation",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explicitly identifies p53 and Rb as tumor suppressor genes that function as brakes on cell cycle progression."
+      },
+      {
+        "text": "Ras and Cyclin D are tumor suppressors acting as brakes on proliferation",
+        "isCorrect": false,
+        "rationale": "Wrong because Ras and Cyclin D are proto-oncogenes (accelerators), not tumor suppressors; it would be correct only if they inhibited proliferation."
+      },
+      {
+        "text": "E2F and Cyclin E are tumor suppressors acting as brakes on proliferation",
+        "isCorrect": false,
+        "rationale": "Wrong because E2F and Cyclin E promote S-phase entry and are not tumor suppressors; it would be correct only if they repressed cell cycle progression."
+      },
+      {
+        "text": "Mdm2 and E6 are tumor suppressors acting as brakes on proliferation",
+        "isCorrect": false,
+        "rationale": "Wrong because Mdm2 negatively regulates p53 and E6 is viral oncogenic, neither are tumor suppressors; it would be correct only if they suppressed tumors."
+      },
+      {
+        "text": "BAX and Apaf1 are tumor suppressors acting as brakes on proliferation",
+        "isCorrect": false,
+        "rationale": "Wrong because BAX and Apaf-1 are pro-apoptotic effectors rather than classical tumor suppressor genes like p53/Rb; it would be correct only if the lecture labeled them as tumor suppressors."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a DNA repair defect accumulates mutations and shows increased cancer risk. Which lecture concept best links defective checkpoints to tumorigenesis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify connections between cell cycle regulation and cancer risk and progression",
+    "options": [
+      {
+        "text": "Defective tumor suppressors or checkpoints allow mutation accumulation and cancer",
+        "isCorrect": true,
+        "rationale": "Correct because loss of checkpoint function (e.g., p53, Rb) permits cells with DNA damage to continue dividing, increasing mutation burden and cancer risk as the lecture explains."
+      },
+      {
+        "text": "Enhanced checkpoint activity allows mutation accumulation and cancer",
+        "isCorrect": false,
+        "rationale": "Wrong because enhanced checkpoints prevent propagation of damaged cells; it would be correct only if checkpoint hyperactivity paradoxically promoted mutations."
+      },
+      {
+        "text": "Increased apoptosis allows mutation accumulation and cancer",
+        "isCorrect": false,
+        "rationale": "Wrong because apoptosis removes damaged cells and reduces cancer risk; it would be correct only if apoptosis selectively spared mutated clones."
+      },
+      {
+        "text": "Telomerase suppression allows mutation accumulation and cancer",
+        "isCorrect": false,
+        "rationale": "Wrong because telomerase suppression leads to senescence, not mutation accumulation; it would be correct only if telomerase loss increased mutagenesis."
+      },
+      {
+        "text": "Microtubule stabilization allows mutation accumulation and cancer",
+        "isCorrect": false,
+        "rationale": "Wrong because microtubule stabilization affects mitosis but is not the primary mechanism linking checkpoint loss to mutation accumulation; it would be correct only if spindle defects directly increased mutation rates."
+      }
+    ]
+  },
+  {
+    "question": "A novel anticancer compound causes accumulation of single- and double-strand DNA breaks via metal-mediated radical chemistry. Which lecture drug provides the closest mechanistic analogy?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Bleomycin uses metal complexes to generate radicals and cleave DNA",
+        "isCorrect": true,
+        "rationale": "Correct because bleomycin forms metal complexes that produce radicals causing DNA strand breaks and apoptosis, matching the described mechanism in the lecture."
+      },
+      {
+        "text": "Cisplatin uses metal complexes to generate radicals and cleave DNA",
+        "isCorrect": false,
+        "rationale": "Wrong because cisplatin forms covalent DNA adducts rather than metal-radical cleavage; it would be correct only if cisplatin acted via radical chemistry."
+      },
+      {
+        "text": "Methotrexate uses metal complexes to generate radicals and cleave DNA",
+        "isCorrect": false,
+        "rationale": "Wrong because methotrexate inhibits nucleotide synthesis and does not generate radicals; it would be correct only if MTX produced metal-mediated radicals."
+      },
+      {
+        "text": "6-mercaptopurine uses metal complexes to generate radicals and cleave DNA",
+        "isCorrect": false,
+        "rationale": "Wrong because 6-MP inhibits purine synthesis and causes misincorporation, not metal-radical DNA cleavage; it would be correct only if 6-MP chelated metals."
+      },
+      {
+        "text": "Vincristine uses metal complexes to generate radicals and cleave DNA",
+        "isCorrect": false,
+        "rationale": "Wrong because vincristine disrupts microtubules and does not generate radicals; it would be correct only if vincristine had metal-chelating radical activity."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a tumor shows high levels of phosphorylated CDK1 on inhibitory tyrosines during G2. According to the lecture, which enzyme must act to remove those inhibitory phosphates to permit mitotic entry?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "cdc25C phosphatase removes inhibitory phosphates enabling CDK1 activation",
+        "isCorrect": true,
+        "rationale": "Correct because cdc25C dephosphorylates inhibitory tyrosines on CDK1, allowing Cyclin B–CDK1 activation and mitotic entry as the lecture describes."
+      },
+      {
+        "text": "Wee1 phosphatase removes inhibitory phosphates enabling CDK1 activation",
+        "isCorrect": false,
+        "rationale": "Wrong because Wee1 is a kinase that adds inhibitory phosphates to CDK1; it would be correct only if Wee1 were a phosphatase in the lecture."
+      },
+      {
+        "text": "PP2A kinase removes inhibitory phosphates enabling CDK1 activation",
+        "isCorrect": false,
+        "rationale": "Wrong because PP2A is a phosphatase but the lecture highlights cdc25C specifically; it would be correct only if PP2A were the primary CDK1-activating phosphatase here."
+      },
+      {
+        "text": "Chk1 phosphatase removes inhibitory phosphates enabling CDK1 activation",
+        "isCorrect": false,
+        "rationale": "Wrong because Chk1 is a checkpoint kinase that inhibits cdc25C, not a phosphatase activating CDK1; it would be correct only if Chk1 dephosphorylated CDK1."
+      },
+      {
+        "text": "Mdm2 phosphatase removes inhibitory phosphates enabling CDK1 activation",
+        "isCorrect": false,
+        "rationale": "Wrong because Mdm2 is an E3 ligase for p53, not a phosphatase for CDK1; it would be correct only if Mdm2 had phosphatase activity toward CDK1."
+      }
+    ]
+  },
+  {
+    "question": "A clinical vignette: a 32-year-old woman with persistent high-risk HPV infection develops cervical dysplasia. Based on the lecture, which molecular consequence most directly explains progression toward malignancy?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Provide clinically relevant examples of regulatory dysfunction related to the cell cycle, notably HPV and associated proteins",
+    "options": [
+      {
+        "text": "Viral E6 mediated p53 degradation and E7 mediated Rb inactivation drive proliferation",
+        "isCorrect": true,
+        "rationale": "Correct because persistent high-risk HPV expresses E6 and E7 which degrade p53 and inactivate Rb respectively, removing cell cycle brakes and promoting malignant progression as the lecture details."
+      },
+      {
+        "text": "Viral L1 capsid overexpression directly causes DNA crosslinking and mutation accumulation",
+        "isCorrect": false,
+        "rationale": "Wrong because L1 is a structural capsid protein not implicated in p53/Rb disruption or DNA crosslinking; it would be correct only if L1 had genotoxic activity."
+      },
+      {
+        "text": "HPV infection increases telomerase suppression causing replicative senescence",
+        "isCorrect": false,
+        "rationale": "Wrong because HPV tends to promote immortalization rather than telomerase suppression; it would be correct only if HPV suppressed telomerase per the lecture."
+      },
+      {
+        "text": "HPV infection activates spindle assembly checkpoint causing mitotic arrest",
+        "isCorrect": false,
+        "rationale": "Wrong because HPV oncogenes target G1/S regulators (p53/Rb), not spindle checkpoint activation; it would be correct only if HPV disrupted mitotic attachments."
+      },
+      {
+        "text": "HPV infection increases p21 expression leading to permanent cell cycle arrest",
+        "isCorrect": false,
+        "rationale": "Wrong because HPV E6/E7 reduce p53 and Rb activity, which would not increase p21-mediated arrest; it would be correct only if HPV induced p21 expression."
+      }
+    ]
+  },
+  {
+    "question": "A patient with lymphoma is treated with a drug that causes DNA crosslinks and activates MAPK and p53 pathways leading to apoptosis. Which drug from the lecture most closely matches this profile?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Cisplatin forms DNA adducts activating p53 MAPK pathways and apoptosis",
+        "isCorrect": true,
+        "rationale": "Correct because cisplatin forms DNA adducts that trigger damage recognition, MAPK and p53 signaling, and apoptosis as outlined in the lecture's cisplatin pathway figure."
+      },
+      {
+        "text": "Methotrexate forms DNA adducts activating p53 MAPK pathways and apoptosis",
+        "isCorrect": false,
+        "rationale": "Wrong because methotrexate inhibits nucleotide synthesis and modulates signaling indirectly, not primarily by forming DNA adducts; it would be correct only if MTX created adducts."
+      },
+      {
+        "text": "Bleomycin forms DNA adducts activating p53 MAPK pathways and apoptosis",
+        "isCorrect": false,
+        "rationale": "Wrong because bleomycin causes strand breaks via metal radicals rather than classic adduct formation; it would be correct only if bleomycin formed adducts as cisplatin does."
+      },
+      {
+        "text": "6-mercaptopurine forms DNA adducts activating p53 MAPK pathways and apoptosis",
+        "isCorrect": false,
+        "rationale": "Wrong because 6-MP inhibits purine synthesis and causes misincorporation, not bulky adducts; it would be correct only if 6-MP produced adducts."
+      },
+      {
+        "text": "Vincristine forms DNA adducts activating p53 MAPK pathways and apoptosis",
+        "isCorrect": false,
+        "rationale": "Wrong because vincristine disrupts microtubules and mitosis, not by forming DNA adducts; it would be correct only if vincristine alkylated DNA."
+      }
+    ]
+  },
+  {
+    "question": "A lab measures caspase activation after cytochrome c release. Which caspase is the initiator in the intrinsic apoptotic pathway as described in the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe apoptotic pathway, listing most important proteins",
+    "options": [
+      {
+        "text": "Caspase-9 is the initiator activated by Apaf-1 in the intrinsic pathway",
+        "isCorrect": true,
+        "rationale": "Correct because cytochrome c binds Apaf-1 to form the apoptosome, which activates initiator caspase-9 as the lecture explains."
+      },
+      {
+        "text": "Caspase-8 is the initiator activated by Apaf-1 in the intrinsic pathway",
+        "isCorrect": false,
+        "rationale": "Wrong because caspase-8 is the extrinsic initiator activated via DISC and FADD; it would be correct only if extrinsic signaling activated Apaf-1 directly."
+      },
+      {
+        "text": "Caspase-3 is the initiator activated by Apaf-1 in the intrinsic pathway",
+        "isCorrect": false,
+        "rationale": "Wrong because caspase-3 is an executioner caspase downstream of initiators like caspase-9; it would be correct only if caspase-3 initiated the cascade."
+      },
+      {
+        "text": "Caspase-1 is the initiator activated by Apaf-1 in the intrinsic pathway",
+        "isCorrect": false,
+        "rationale": "Wrong because caspase-1 is involved in inflammatory pyroptosis, not intrinsic apoptosis; it would be correct only if caspase-1 functioned as an apoptotic initiator here."
+      },
+      {
+        "text": "Caspase-6 is the initiator activated by Apaf-1 in the intrinsic pathway",
+        "isCorrect": false,
+        "rationale": "Wrong because caspase-6 is an executioner caspase with roles downstream, not the Apaf-1-activated initiator; it would be correct only if caspase-6 were the primary initiator."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a tumor shows loss-of-function mutations in p53. According to the lecture, which immediate apoptotic effector would be underexpressed, allowing continued survival of abnormal cells?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe apoptotic pathway, listing most important proteins",
+    "options": [
+      {
+        "text": "BAX expression is reduced when p53 function is lost allowing survival",
+        "isCorrect": true,
+        "rationale": "Correct because p53 transcriptionally activates BAX; loss of p53 reduces BAX expression, impairing intrinsic apoptosis and permitting survival as the lecture notes."
+      },
+      {
+        "text": "Apaf1 expression is reduced when p53 function is lost allowing survival",
+        "isCorrect": false,
+        "rationale": "Wrong because Apaf-1 is not primarily regulated by p53 in the lecture; it would be correct only if Apaf-1 were shown to be p53-dependent."
+      },
+      {
+        "text": "Caspase3 expression is reduced when p53 function is lost allowing survival",
+        "isCorrect": false,
+        "rationale": "Wrong because caspase-3 is an executioner downstream and not directly described as p53-regulated; it would be correct only if p53 directly controlled caspase-3 levels."
+      },
+      {
+        "text": "Mdm2 expression is reduced when p53 function is lost allowing survival",
+        "isCorrect": false,
+        "rationale": "Wrong because Mdm2 negatively regulates p53 and is often upregulated when p53 is active; it would be correct only if Mdm2 reduction promoted survival in this context."
+      },
+      {
+        "text": "Bcl-2 expression is reduced when p53 function is lost allowing survival",
+        "isCorrect": false,
+        "rationale": "Wrong because Bcl-2 is anti-apoptotic and its reduction would promote apoptosis, not survival; it would be correct only if Bcl-2 were paradoxically pro-survival when reduced."
+      }
+    ]
+  },
+  {
+    "question": "A clinical scenario: a patient with metastatic cancer is treated with bleomycin and develops pulmonary toxicity due to free radical formation. Based on the lecture, what is the primary biochemical step by which bleomycin damages DNA?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Bleomycin forms metal complexes that generate radicals causing DNA strand breaks",
+        "isCorrect": true,
+        "rationale": "Correct because bleomycin chelates metals (Fe/Cu) and through redox chemistry produces radicals that cleave DNA, leading to apoptosis and potential toxicity as the lecture explains."
+      },
+      {
+        "text": "Bleomycin forms covalent DNA adducts causing crosslinks and replication arrest",
+        "isCorrect": false,
+        "rationale": "Wrong because covalent adduct formation and crosslinking describe cisplatin's mechanism, not bleomycin; it would be correct only if bleomycin acted like cisplatin."
+      },
+      {
+        "text": "Bleomycin inhibits thymidylate synthase causing nucleotide depletion",
+        "isCorrect": false,
+        "rationale": "Wrong because thymidylate synthase inhibition is methotrexate-related; it would be correct only if bleomycin inhibited nucleotide synthesis."
+      },
+      {
+        "text": "Bleomycin stabilizes microtubules preventing mitotic spindle disassembly",
+        "isCorrect": false,
+        "rationale": "Wrong because microtubule stabilization is paclitaxel's action, not bleomycin; it would be correct only if bleomycin targeted tubulin."
+      },
+      {
+        "text": "Bleomycin alkylates DNA bases causing point mutations without strand breaks",
+        "isCorrect": false,
+        "rationale": "Wrong because bleomycin primarily causes strand breaks via radicals rather than simple alkylation; it would be correct only if bleomycin acted as a pure alkylator."
+      }
+    ]
+  }
+]
