@@ -1,0 +1,34 @@
+[
+  {
+    "question": "You requested 30 exam items based strictly on attached lecture materials, but no files or text were included in the request. Which action will you take to provide the necessary materials?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Provide the lecture materials required for item construction",
+    "options": [
+      {
+        "text": "I will upload the lecture slides now",
+        "isCorrect": false,
+        "rationale": "Wrong because uploading slides is acceptable only if the files are actually attached; this would be correct if the user attaches the slide files before submission."
+      },
+      {
+        "text": "I will paste the lecture notes into chat",
+        "isCorrect": true,
+        "rationale": "Correct because pasting the lecture text into the conversation supplies the explicit source material required for item writing and allows direct grounding of questions in the provided content."
+      },
+      {
+        "text": "I cannot share the lecture materials at this time",
+        "isCorrect": false,
+        "rationale": "Wrong because declining to provide materials prevents generation of lecture-grounded items; this would be correct only if the user explicitly states they will not provide materials and accepts that no items can be produced."
+      },
+      {
+        "text": "Please confirm which lecture file types you have",
+        "isCorrect": false,
+        "rationale": "Wrong because asking about file types delays obtaining the actual content; this would be correct if the user already indicated they have files but needed guidance on acceptable formats before uploading."
+      },
+      {
+        "text": "I want you to proceed without the materials",
+        "isCorrect": false,
+        "rationale": "Wrong because proceeding without the lecture violates the requirement that every question be grounded in the provided lecture; this would be correct only if the user explicitly waives the lecture-grounding requirement."
+      }
+    ]
+  }
+]
