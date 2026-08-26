@@ -1,0 +1,1250 @@
+[
+  {
+    "question": "A red blood cell lacks mitochondria and relies on glycolysis for ATP. Which metabolite is most likely produced as the terminal product to regenerate NAD+?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the purpose of glycolysis and the different possible end products",
+    "options": [
+      {
+        "text": "Lactate produced from pyruvate via lactate dehydrogenase",
+        "isCorrect": true,
+        "rationale": "In cells that lack mitochondria or sufficient oxygen, lactate is the end product of anaerobic glycolysis. This conversion regenerates NAD+ allowing glycolysis to continue."
+      },
+      {
+        "text": "Pyruvate accumulating without further reduction or oxidation",
+        "isCorrect": false,
+        "rationale": "Pyruvate is the aerobic end product when mitochondria and oxygen are available. For cells without mitochondria, pyruvate must be reduced to regenerate NAD+ to be correct."
+      },
+      {
+        "text": "Acetyl CoA formation via pyruvate dehydrogenase complex",
+        "isCorrect": false,
+        "rationale": "Acetyl CoA is formed when pyruvate enters mitochondria and is oxidatively decarboxylated. This requires functional mitochondria and oxygen, which RBCs lack."
+      },
+      {
+        "text": "Ethanol produced by fermentation pathways in human cells",
+        "isCorrect": false,
+        "rationale": "Ethanol fermentation occurs in some microorganisms but not in human tissues. For ethanol to be correct, the cell would need microbial fermentation enzymes absent in humans."
+      },
+      {
+        "text": "Oxaloacetate produced by carboxylation of pyruvate",
+        "isCorrect": false,
+        "rationale": "Pyruvate carboxylase can convert pyruvate to oxaloacetate for gluconeogenesis or TCA replenishment. This requires mitochondrial enzymes and is not the NAD+ regenerating pathway in anaerobic cells."
+      }
+    ]
+  },
+  {
+    "question": "A hepatocyte after a carbohydrate-rich meal increases phosphorylation of incoming glucose only when blood glucose is high. Which enzyme property best explains this behavior?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare and contrast glucokinase and hexokinase in terms of purpose, Km, Vmax, tissue, and regulation.",
+    "options": [
+      {
+        "text": "High Km and high Vmax characteristic of glucokinase",
+        "isCorrect": true,
+        "rationale": "Glucokinase in liver has a high Km and high Vmax so it phosphorylates glucose only when concentrations are high. The lecture notes state the liver enzyme has high Km and high Vmax to handle postprandial glucose."
+      },
+      {
+        "text": "Low Km and low Vmax characteristic of hexokinase enzyme",
+        "isCorrect": false,
+        "rationale": "Hexokinase has low Km and low Vmax and phosphorylates glucose even at low concentrations. If the liver behaved like hexokinase, it would phosphorylate glucose at low blood levels which contradicts the scenario."
+      },
+      {
+        "text": "Allosteric activation by fructose 2 6 bisphosphate",
+        "isCorrect": false,
+        "rationale": "Fructose 2,6-BP activates PFK-1 not the initial glucose phosphorylating enzyme. For this to explain glucose trapping, the enzyme would need direct regulation by F-2,6-BP which it does not."
+      },
+      {
+        "text": "Sodium dependent cotransport increasing intracellular glucose",
+        "isCorrect": false,
+        "rationale": "Sodium dependent transporters concentrate glucose in epithelial cells. Hepatocytes use facilitated GLUT transport and intracellular phosphorylation, so SGLT activity does not explain the liver's glucose sensing."
+      },
+      {
+        "text": "Competitive inhibition by glucose 6 phosphate feedback",
+        "isCorrect": false,
+        "rationale": "Hexokinase is inhibited by glucose 6-phosphate but glucokinase is not. For feedback inhibition to explain selective postprandial phosphorylation, the enzyme would need to be inhibited by G6P which is not true for glucokinase."
+      }
+    ]
+  },
+  {
+    "question": "An intestinal epithelial cell uses a transporter that moves glucose against its concentration gradient by coupling to sodium influx. Which transport mechanism is most consistent with this description?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how the sodium-dependent glucose transporters function and why certain tissues would require these",
+    "options": [
+      {
+        "text": "Sodium dependent glucose cotransporter using Na gradient",
+        "isCorrect": true,
+        "rationale": "The Na plus monosaccharide cotransporter uses the sodium gradient to transport glucose against its concentration gradient. The lecture states this system is used in intestinal epithelium to concentrate sugar from food."
+      },
+      {
+        "text": "Facilitated diffusion via GLUT family down concentration gradient",
+        "isCorrect": false,
+        "rationale": "GLUT transporters mediate Na independent facilitated diffusion and move glucose down its gradient. To move glucose against its gradient, a sodium cotransporter rather than GLUT would be required."
+      },
+      {
+        "text": "Primary active transport directly using ATP hydrolysis",
+        "isCorrect": false,
+        "rationale": "Primary active transport uses ATP directly to move substrates. Glucose uptake in intestine uses secondary active transport coupled to Na plus gradient rather than direct ATP driven glucose pumps."
+      },
+      {
+        "text": "Endocytosis of glucose containing vesicles across apical membrane",
+        "isCorrect": false,
+        "rationale": "Endocytosis is not the primary mechanism for bulk glucose absorption in enterocytes. The described rapid concentration of sugar after meals is mediated by SGLTs not vesicular uptake."
+      },
+      {
+        "text": "Paracellular diffusion through tight junctions driven by solvent drag",
+        "isCorrect": false,
+        "rationale": "Paracellular routes allow limited passive movement between cells. Active uphill transport against a gradient requires cotransport mechanisms rather than paracellular diffusion."
+      }
+    ]
+  },
+  {
+    "question": "Which GLUT isoform property best explains continuous basal glucose uptake into many tissues including erythrocytes and the blood brain barrier?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recite the four major glucose transporters (GLUTs) in terms of the tissues and functions",
+    "options": [
+      {
+        "text": "High affinity constitutive transporter expressed widely GLUT1",
+        "isCorrect": true,
+        "rationale": "GLUT1 mediates basal glucose uptake in RBCs and blood brain barrier tissues. The lecture notes list GLUT1 as the transporter used for normal transport into CSF and RBCs."
+      },
+      {
+        "text": "Insulin responsive transporter in adipose and muscle GLUT4",
+        "isCorrect": false,
+        "rationale": "GLUT4 is insulin responsive and found in muscle and adipose. If basal constitutive uptake were required, GLUT4 would not be correct because it requires insulin for translocation."
+      },
+      {
+        "text": "Low affinity hepatic transporter specialized for liver GLUT2",
+        "isCorrect": false,
+        "rationale": "GLUT2 has high Km and functions in liver and pancreatic beta cells for sensing. It does not provide high affinity basal uptake in RBCs and BBB which require GLUT1."
+      },
+      {
+        "text": "Fructose preferring transporter in intestine and liver GLUT5",
+        "isCorrect": false,
+        "rationale": "GLUT5 primarily transports fructose in intestine and some liver. It does not mediate basal glucose uptake in RBCs or the blood brain barrier."
+      },
+      {
+        "text": "Renal proximal tubule apical transporter SGLT mediated",
+        "isCorrect": false,
+        "rationale": "SGLTs are sodium dependent cotransporters not GLUT isoforms. They are used in renal reabsorption but are not the Na independent GLUT responsible for basal uptake."
+      }
+    ]
+  },
+  {
+    "question": "A researcher measures enzyme kinetics of the first step after glucose entry in muscle and finds low Km and low Vmax. Which enzyme matches these kinetics?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast glucokinase and hexokinase in terms of purpose, Km, Vmax, tissue, and regulation.",
+    "options": [
+      {
+        "text": "Hexokinase low Km low Vmax present in most tissues",
+        "isCorrect": true,
+        "rationale": "Hexokinase has a low Km and low Vmax so it phosphorylates glucose even at low concentrations and is easily saturated. The lecture explicitly contrasts hexokinase kinetics with glucokinase."
+      },
+      {
+        "text": "Glucokinase high Km high Vmax present in liver",
+        "isCorrect": false,
+        "rationale": "Glucokinase has high Km and high Vmax and is found in liver. If the enzyme showed low Km and low Vmax kinetics, it would not be glucokinase."
+      },
+      {
+        "text": "Phosphofructokinase 1 rate limiting ATP consuming enzyme",
+        "isCorrect": false,
+        "rationale": "PFK-1 catalyzes a later committed step converting fructose 6-phosphate and is not the initial glucose phosphorylating enzyme. Kinetic properties described do not match PFK-1."
+      },
+      {
+        "text": "Glyceraldehyde 3 phosphate dehydrogenase NAD dependent oxidoreductase",
+        "isCorrect": false,
+        "rationale": "GAPDH acts on triose phosphates and reduces NAD plus to NADH. It is not responsible for phosphorylating incoming glucose and thus cannot explain the measured kinetics."
+      },
+      {
+        "text": "Phosphoglucose isomerase converting G6P to F6P reversible enzyme",
+        "isCorrect": false,
+        "rationale": "Phosphoglucose isomerase interconverts glucose 6 phosphate and fructose 6 phosphate and is not the initial kinase. The kinetic profile described pertains to hexokinase."
+      }
+    ]
+  },
+  {
+    "question": "A fasting patient has elevated glucagon and low insulin. Which regulatory change in liver bifunctional enzyme activity will decrease glycolytic flux?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how levels of F-2,6-BP are regulated via circulating insulin and glucagon levels",
+    "options": [
+      {
+        "text": "PFK 2 phosphorylated inactive lowering F 2 6 BP levels",
+        "isCorrect": true,
+        "rationale": "In fasting glucagon signaling leads to phosphorylation and inactivation of PFK-2, reducing F-2,6-BP and thereby inhibiting PFK-1 and glycolysis. The lecture describes this hormonal regulation in the liver."
+      },
+      {
+        "text": "PFK 2 dephosphorylated active increasing F 2 6 BP levels",
+        "isCorrect": false,
+        "rationale": "Dephosphorylated PFK-2 is active under insulin dominance and raises F-2,6-BP to stimulate glycolysis. This would increase rather than decrease glycolytic flux."
+      },
+      {
+        "text": "PFK 1 allosterically inhibited by AMP indicating low energy",
+        "isCorrect": false,
+        "rationale": "AMP activates PFK-1 as a low energy signal. For decreased glycolysis during fasting, PFK-2 inactivation and lower F-2,6-BP are the primary mechanisms rather than AMP mediated inhibition."
+      },
+      {
+        "text": "Pyruvate kinase dephosphorylated active increasing glycolysis",
+        "isCorrect": false,
+        "rationale": "Dephosphorylated pyruvate kinase is active under insulin signaling and would increase glycolysis. In fasting glucagon causes phosphorylation and inactivation, which would decrease glycolysis."
+      },
+      {
+        "text": "Citrate levels falling relieving inhibition of PFK 1",
+        "isCorrect": false,
+        "rationale": "High citrate inhibits PFK-1 and signals high energy. Falling citrate would relieve inhibition and promote glycolysis, which contradicts the fasting state described."
+      }
+    ]
+  },
+  {
+    "question": "Which metabolite directly activates phosphofructokinase 1 to increase glycolytic throughput in well fed liver?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how PFK-1, and therefore glycolysis, is regulated via ATP, AMP, citrate, and fructose 2,6 BP",
+    "options": [
+      {
+        "text": "Fructose 2 6 bisphosphate potent activator of PFK 1",
+        "isCorrect": true,
+        "rationale": "Fructose 2,6-BP is a potent activator of PFK-1 and increases glycolysis. The lecture states that PFK-2 produces F-2,6-BP which activates PFK-1."
+      },
+      {
+        "text": "ATP acting as an allosteric activator of PFK 1",
+        "isCorrect": false,
+        "rationale": "ATP allosterically inhibits PFK-1 as a high energy signal. For ATP to activate PFK-1, cellular energy status would need to be low which is not the case."
+      },
+      {
+        "text": "Citrate serving as an allosteric activator of PFK 1",
+        "isCorrect": false,
+        "rationale": "Citrate is an allosteric inhibitor of PFK-1 indicating abundant TCA intermediates. If citrate activated PFK-1 it would contradict its role as a high energy signal."
+      },
+      {
+        "text": "Glucose 6 phosphate directly activating PFK 1 enzyme",
+        "isCorrect": false,
+        "rationale": "Glucose 6-phosphate does not directly activate PFK-1. Activation is mediated by F-2,6-BP and AMP while ATP and citrate inhibit PFK-1."
+      },
+      {
+        "text": "Fructose 1 6 bisphosphate inhibiting PFK 1 activity",
+        "isCorrect": false,
+        "rationale": "Fructose 1,6-bisphosphate is a downstream product and does not inhibit PFK-1. It actually acts as a feed forward activator for pyruvate kinase rather than inhibiting PFK-1."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a mutation raising glucokinase Km presents with mild fasting hyperglycemia. Which diagnosis aligns with this enzymatic defect?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the effects of glucokinase mutations, pyruvate kinase mutations, arsenic poisoning, and lactic acidosis on human health",
+    "options": [
+      {
+        "text": "Maturity onset diabetes of the young type 2 due to glucokinase",
+        "isCorrect": true,
+        "rationale": "Mutations that reduce glucokinase activity cause MODY2. The lecture notes that reduced glucokinase activity increases Km or decreases Vmax and leads to this form of diabetes."
+      },
+      {
+        "text": "Pyruvate kinase deficiency causing hemolytic anemia in RBCs",
+        "isCorrect": false,
+        "rationale": "Pyruvate kinase mutations cause hemolytic anemia due to RBC energy failure. For glucokinase Km changes to cause anemia, the mutation would need to affect RBC glycolytic enzymes which it does not."
+      },
+      {
+        "text": "Arsenic poisoning leading to zero net ATP from glycolysis",
+        "isCorrect": false,
+        "rationale": "Arsenic can reduce net ATP yield by interfering with GAPDH substrate usage. However arsenic toxicity does not present as isolated mild fasting hyperglycemia characteristic of MODY2."
+      },
+      {
+        "text": "Lactic acidosis from excessive lactate production in tissues",
+        "isCorrect": false,
+        "rationale": "Lactic acidosis results from excessive lactate accumulation due to hypoxia or mitochondrial dysfunction. A glucokinase Km increase primarily affects hepatic glucose sensing and blood glucose levels rather than causing lactic acidosis."
+      },
+      {
+        "text": "GLUT1 deficiency causing impaired basal glucose uptake",
+        "isCorrect": false,
+        "rationale": "GLUT1 deficiency impairs basal glucose transport into brain and RBCs. It would not explain hepatic glucokinase kinetic defects and the mild hyperglycemia seen in MODY2."
+      }
+    ]
+  },
+  {
+    "question": "During intense muscle contraction with limited oxygen, which step ensures continued ATP production by regenerating NAD+?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why anaerobic conditions result in the production of lactate",
+    "options": [
+      {
+        "text": "Reduction of pyruvate to lactate by lactate dehydrogenase",
+        "isCorrect": true,
+        "rationale": "Conversion of pyruvate to lactate regenerates NAD plus from NADH allowing glycolysis to continue under anaerobic conditions. The lecture explains this as the mechanism in low oxygen or high demand states."
+      },
+      {
+        "text": "Oxidative phosphorylation in mitochondria regenerating NAD plus",
+        "isCorrect": false,
+        "rationale": "Oxidative phosphorylation regenerates NAD plus but requires oxygen and functional mitochondria. Under limited oxygen this pathway cannot sustain NAD plus regeneration."
+      },
+      {
+        "text": "Pyruvate carboxylation to oxaloacetate consuming NADH",
+        "isCorrect": false,
+        "rationale": "Pyruvate carboxylase converts pyruvate to oxaloacetate and does not oxidize NADH to NAD plus. It therefore does not regenerate NAD plus for glycolysis continuation."
+      },
+      {
+        "text": "Substrate level phosphorylation at phosphoglycerate kinase",
+        "isCorrect": false,
+        "rationale": "Substrate level phosphorylation produces ATP but does not regenerate NAD plus. NAD plus regeneration specifically requires reduction of pyruvate to lactate in anaerobic muscle."
+      },
+      {
+        "text": "Conversion of 1 3 BPG to 3 phosphoglycerate bypassing NADH usage",
+        "isCorrect": false,
+        "rationale": "The conversion of 1,3-BPG to 3-PG generates ATP but does not affect NADH to NAD plus balance. Only lactate dehydrogenase directly regenerates NAD plus from NADH."
+      }
+    ]
+  },
+  {
+    "question": "A liver cell exposed to high insulin shows increased transcription of irreversible glycolytic enzymes. Which long term effect does insulin exert on these enzymes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how and why pyruvate kinase is regulated via fructose 1,6-BP and insulin/glucagon in the liver",
+    "options": [
+      {
+        "text": "Insulin stimulates transcription increasing enzyme amounts over time",
+        "isCorrect": true,
+        "rationale": "Insulin stimulates transcription of genes encoding the irreversible glycolytic enzymes leading to increased enzyme amounts. The lecture states prolonged higher insulin increases the amount of these key enzymes."
+      },
+      {
+        "text": "Glucagon stimulates transcription increasing enzyme amounts over time",
+        "isCorrect": false,
+        "rationale": "Glucagon inhibits transcription of these enzymes during fasting. For glucagon to increase enzyme amounts, hormonal signaling would need to be reversed which is not the case."
+      },
+      {
+        "text": "Insulin acutely phosphorylates pyruvate kinase to inactivate it",
+        "isCorrect": false,
+        "rationale": "Insulin promotes dephosphorylation and activation of pyruvate kinase in liver. Acute phosphorylation inactivation is mediated by glucagon not insulin."
+      },
+      {
+        "text": "Insulin decreases fructose 1 6 bisphosphate levels reducing flux",
+        "isCorrect": false,
+        "rationale": "Insulin increases F-2,6-BP and thereby stimulates PFK-1 increasing glycolytic flux. A decrease in F-1,6-BP would not align with insulin's role in activating glycolysis."
+      },
+      {
+        "text": "Glucagon causes dephosphorylation activating pyruvate kinase",
+        "isCorrect": false,
+        "rationale": "Glucagon causes phosphorylation and inactivation of pyruvate kinase. Dephosphorylation and activation are effects of insulin, not glucagon."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic hemolytic anemia lacks Heinz bodies and has decreased ATP in RBCs. Which enzymatic defect from the lecture best fits this presentation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how and why pyruvate kinase is regulated via fructose 1,6-BP and insulin/glucagon in the liver",
+    "options": [
+      {
+        "text": "Pyruvate kinase deficiency impairing ATP generation in RBCs",
+        "isCorrect": true,
+        "rationale": "Pyruvate kinase deficiency reduces ATP production in RBCs leading to loss of membrane integrity and hemolytic anemia. The lecture notes this deficiency affects RBCs and causes hemolysis without Heinz bodies."
+      },
+      {
+        "text": "Glucokinase mutation causing impaired hepatic glucose phosphorylation",
+        "isCorrect": false,
+        "rationale": "Glucokinase mutations cause MODY2 and affect hepatic glucose sensing. They do not selectively impair RBC ATP production because RBCs do not express glucokinase."
+      },
+      {
+        "text": "G6PD deficiency causing hemolysis with Heinz body formation",
+        "isCorrect": false,
+        "rationale": "G6PD deficiency causes hemolytic anemia with Heinz bodies due to oxidative damage. The absence of Heinz bodies and isolated ATP deficiency point to pyruvate kinase rather than G6PD."
+      },
+      {
+        "text": "Arsenic exposure blocking TCA enzymes causing systemic ATP loss",
+        "isCorrect": false,
+        "rationale": "Arsenic inhibits lipoic acid dependent enzymes and can affect glycolysis yielding low ATP systemically. A chronic isolated RBC disorder without systemic toxicity is more consistent with a genetic pyruvate kinase defect."
+      },
+      {
+        "text": "Defect in GLUT1 reducing glucose entry into RBCs causing anemia",
+        "isCorrect": false,
+        "rationale": "GLUT1 deficiency impairs glucose transport into RBCs and brain but typically presents with neurologic features. The described hemolytic anemia without neurologic signs and absent Heinz bodies favors pyruvate kinase deficiency."
+      }
+    ]
+  },
+  {
+    "question": "A patient with arsenic ingestion shows severe fatigue and low ATP yield from glycolysis. Which glycolytic enzyme interaction explains the ATP loss?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the effects of glucokinase mutations, pyruvate kinase mutations, arsenic poisoning, and lactic acidosis on human health",
+    "options": [
+      {
+        "text": "Arsenic substitutes for inorganic phosphate at GAPDH bypassing ATP step",
+        "isCorrect": true,
+        "rationale": "Arsenic competes with inorganic phosphate for glyceraldehyde 3 phosphate dehydrogenase and its incorporation leads to products that bypass ATP generation by phosphoglycerate kinase reducing net ATP to zero. The lecture describes this mechanism."
+      },
+      {
+        "text": "Arsenic directly inhibits pyruvate kinase preventing substrate level phosphorylation",
+        "isCorrect": false,
+        "rationale": "Arsenic toxicity primarily affects lipoic acid dependent enzymes and GAPDH substrate usage. Direct inhibition of pyruvate kinase would cause similar ATP loss but is not the mechanism described in the lecture."
+      },
+      {
+        "text": "Arsenic blocks lactate dehydrogenase preventing NAD regeneration",
+        "isCorrect": false,
+        "rationale": "Blocking lactate dehydrogenase would impair NAD plus regeneration and glycolysis under anaerobic conditions. The lecture identifies GAPDH substrate competition as the arsenic effect rather than LDH inhibition."
+      },
+      {
+        "text": "Arsenic increases 2 3 BPG formation lowering hemoglobin affinity",
+        "isCorrect": false,
+        "rationale": "2,3-BPG levels are regulated by bisphosphoglycerate mutase in RBCs and affect hemoglobin oxygen affinity. Arsenic's primary glycolytic toxicity is via GAPDH substrate competition not altering 2,3-BPG."
+      },
+      {
+        "text": "Arsenic enhances oxidative phosphorylation causing ROS mediated damage",
+        "isCorrect": false,
+        "rationale": "Arsenic inhibits mitochondrial enzymes and can cause oxidative stress but the acute reduction of glycolytic ATP yield is specifically due to GAPDH substrate competition as described in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A lab assay shows elevated citrate and ATP in hepatocytes. How will phosphofructokinase 1 activity respond?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how PFK-1, and therefore glycolysis, is regulated via ATP, AMP, citrate, and fructose 2,6 BP",
+    "options": [
+      {
+        "text": "PFK 1 allosterically inhibited decreasing glycolytic flux",
+        "isCorrect": true,
+        "rationale": "High ATP and citrate are signals of high energy and allosterically inhibit PFK-1, reducing glycolysis. The lecture lists ATP and citrate as inhibitors of PFK-1."
+      },
+      {
+        "text": "PFK 1 allosterically activated increasing glycolytic flux",
+        "isCorrect": false,
+        "rationale": "PFK-1 is activated by AMP and F-2,6-BP rather than by ATP and citrate. Activation would require low energy signals or increased F-2,6-BP."
+      },
+      {
+        "text": "PFK 1 activity unchanged because of substrate saturation",
+        "isCorrect": false,
+        "rationale": "PFK-1 is highly regulated allosterically and responds to energy signals. Elevated ATP and citrate would not leave activity unchanged but would inhibit the enzyme."
+      },
+      {
+        "text": "PFK 1 inhibited only by AMP not by ATP or citrate",
+        "isCorrect": false,
+        "rationale": "AMP activates PFK-1 as a low energy signal. ATP and citrate are established inhibitors, so stating inhibition only by AMP is incorrect."
+      },
+      {
+        "text": "PFK 1 inhibited by fructose 2 6 bisphosphate presence",
+        "isCorrect": false,
+        "rationale": "Fructose 2,6-BP is a potent activator of PFK-1. If F-2,6-BP were present it would counteract inhibition, not cause it."
+      }
+    ]
+  },
+  {
+    "question": "A patient with prolonged fasting has hepatic PFK-2 phosphorylated and inactive. Which change in metabolite levels follows and how does it affect glycolysis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how levels of F-2,6-BP are regulated via circulating insulin and glucagon levels",
+    "options": [
+      {
+        "text": "F 2 6 BP levels fall leading to decreased PFK 1 activity",
+        "isCorrect": true,
+        "rationale": "Phosphorylation of PFK-2 in fasting reduces F-2,6-BP synthesis, lowering activation of PFK-1 and inhibiting glycolysis. The lecture describes this hormonal regulation in the liver."
+      },
+      {
+        "text": "F 2 6 BP levels rise leading to increased PFK 1 activity",
+        "isCorrect": false,
+        "rationale": "PFK-2 dephosphorylation under insulin increases F-2,6-BP. In fasting with PFK-2 phosphorylated, F-2,6-BP would not rise and glycolysis would not be stimulated."
+      },
+      {
+        "text": "AMP levels fall causing direct activation of PFK 1",
+        "isCorrect": false,
+        "rationale": "AMP activates PFK-1 when energy is low. In fasting AMP typically rises in low energy states; a fall in AMP would not activate PFK-1 and does not follow PFK-2 phosphorylation."
+      },
+      {
+        "text": "Citrate levels fall relieving inhibition of PFK 1",
+        "isCorrect": false,
+        "rationale": "High citrate inhibits PFK-1. A fall in citrate would relieve inhibition and promote glycolysis, which contradicts the expected decrease in glycolysis during fasting."
+      },
+      {
+        "text": "Glucokinase activity increases trapping more glucose in hepatocytes",
+        "isCorrect": false,
+        "rationale": "Glucokinase activity increases with high glucose and insulin. During fasting glucokinase activity is low and does not explain decreased F-2,6-BP due to PFK-2 phosphorylation."
+      }
+    ]
+  },
+  {
+    "question": "A muscle biopsy after sprinting shows high lactate and low intracellular pH. Which immediate cellular consequence explains muscle cramping in this context?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain why anaerobic conditions result in the production of lactate",
+    "options": [
+      {
+        "text": "Excess lactate lowers intracellular pH denaturing enzymes",
+        "isCorrect": true,
+        "rationale": "Excess lactate accumulation lowers intracellular pH which can denature enzymes and impair function leading to muscle cramping. The lecture notes that lactate buildup can lower pH and cause tissue damage."
+      },
+      {
+        "text": "Increased ATP from anaerobic glycolysis causing hypercontractility",
+        "isCorrect": false,
+        "rationale": "Anaerobic glycolysis yields only 2 ATP per glucose and does not increase ATP stores. Hypercontractility from excess ATP is not the mechanism for cramping after intense exercise."
+      },
+      {
+        "text": "Oxidative phosphorylation overactivation producing ROS mediated pain",
+        "isCorrect": false,
+        "rationale": "Oxidative phosphorylation requires oxygen and is not overactivated during anaerobic sprinting. ROS mediated pain is not the immediate cause of exercise induced lactate cramps described in the lecture."
+      },
+      {
+        "text": "Accumulation of 2 3 BPG in muscle reducing oxygen delivery",
+        "isCorrect": false,
+        "rationale": "2,3-BPG is produced in RBCs and affects hemoglobin oxygen affinity. Muscle cramping from intracellular lactate is not due to 2,3-BPG accumulation in muscle fibers."
+      },
+      {
+        "text": "Depletion of NAD plus preventing glycolysis continuation",
+        "isCorrect": false,
+        "rationale": "Lactate production regenerates NAD plus allowing glycolysis to continue. Depletion of NAD plus would stop glycolysis, but lactate formation specifically prevents this depletion."
+      }
+    ]
+  },
+  {
+    "question": "A clinician must choose the best test to distinguish pyruvate kinase deficiency from G6PD deficiency in a hemolytic patient. Which laboratory finding from the lecture helps differentiate these conditions?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the effects of glucokinase mutations, pyruvate kinase mutations, arsenic poisoning, and lactic acidosis on human health",
+    "options": [
+      {
+        "text": "Absence of Heinz bodies suggests pyruvate kinase deficiency",
+        "isCorrect": true,
+        "rationale": "Pyruvate kinase deficiency causes hemolytic anemia without Heinz bodies, whereas G6PD deficiency typically shows Heinz bodies from oxidized hemoglobin. The lecture highlights this distinguishing feature."
+      },
+      {
+        "text": "Presence of Heinz bodies indicates pyruvate kinase deficiency",
+        "isCorrect": false,
+        "rationale": "Heinz bodies are characteristic of G6PD deficiency due to oxidative damage. Their presence would support G6PD deficiency rather than pyruvate kinase deficiency."
+      },
+      {
+        "text": "Elevated lactate levels specifically diagnostic of pyruvate kinase defect",
+        "isCorrect": false,
+        "rationale": "Elevated lactate can occur with many conditions including hypoxia and mitochondrial dysfunction. It is not specific for pyruvate kinase deficiency which is distinguished by RBC ATP depletion and absence of Heinz bodies."
+      },
+      {
+        "text": "Low glucokinase activity measured in RBCs confirms diagnosis",
+        "isCorrect": false,
+        "rationale": "Glucokinase is expressed in liver and pancreas not RBCs. Measuring glucokinase in RBCs would not be diagnostic for hemolytic anemias."
+      },
+      {
+        "text": "Arsenic levels in blood being elevated confirms hereditary anemia",
+        "isCorrect": false,
+        "rationale": "Arsenic poisoning is an acquired toxin and not a hereditary cause of hemolytic anemia. Elevated arsenic would indicate exposure rather than a genetic enzyme deficiency."
+      }
+    ]
+  },
+  {
+    "question": "A patient with uncontrolled diabetes has elevated plasma lactate and low blood pH. Which mechanism from the lecture best explains systemic lactic acidosis in severe hypoperfusion?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the effects of glucokinase mutations, pyruvate kinase mutations, arsenic poisoning, and lactic acidosis on human health",
+    "options": [
+      {
+        "text": "Tissue hypoxia increases anaerobic glycolysis producing excess lactate",
+        "isCorrect": true,
+        "rationale": "Lack of oxygen in tissues causes excessive lactate buildup which lowers intracellular and plasma pH leading to lactic acidosis. The lecture notes that hypoxia can cause lactate accumulation and tissue necrosis."
+      },
+      {
+        "text": "Hepatic overproduction of lactate due to increased gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Gluconeogenesis consumes lactate to form glucose in the liver. Hepatic overproduction of lactate is not the mechanism for systemic lactic acidosis in hypoperfusion."
+      },
+      {
+        "text": "Renal failure causing decreased lactate excretion raising levels",
+        "isCorrect": false,
+        "rationale": "Kidneys contribute to lactate clearance but acute lactic acidosis in hypoperfusion is primarily due to increased production from anaerobic metabolism rather than isolated decreased excretion."
+      },
+      {
+        "text": "Arsenic induced bypass of ATP generation increasing lactate",
+        "isCorrect": false,
+        "rationale": "Arsenic reduces ATP yield by bypassing an ATP generating step but does not directly cause systemic lactic acidosis from tissue hypoxia. The primary cause in hypoperfusion is anaerobic glycolysis."
+      },
+      {
+        "text": "Excess 2 3 BPG production in RBCs lowering blood pH",
+        "isCorrect": false,
+        "rationale": "2,3-BPG affects hemoglobin oxygen affinity and is produced in RBCs. It does not directly lower blood pH to cause lactic acidosis as described in hypoperfusion."
+      }
+    ]
+  },
+  {
+    "question": "A patient receives glucagon infusion causing hepatic pyruvate kinase phosphorylation. What immediate effect on hepatic glycolysis does this modification produce?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how and why pyruvate kinase is regulated via fructose 1,6-BP and insulin/glucagon in the liver",
+    "options": [
+      {
+        "text": "Pyruvate kinase phosphorylated and inactivated decreasing glycolysis",
+        "isCorrect": true,
+        "rationale": "Glucagon signaling phosphorylates and inactivates hepatic pyruvate kinase, reducing glycolytic flux. The lecture explains this covalent regulation to prevent futile cycling during fasting."
+      },
+      {
+        "text": "Pyruvate kinase dephosphorylated and activated increasing glycolysis",
+        "isCorrect": false,
+        "rationale": "Dephosphorylation activates pyruvate kinase under insulin signaling. Glucagon causes phosphorylation and inactivation, so dephosphorylation would not follow glucagon infusion."
+      },
+      {
+        "text": "Pyruvate kinase activated by fructose 2 6 bisphosphate increase",
+        "isCorrect": false,
+        "rationale": "Fructose 2,6-BP activates PFK-1 and indirectly stimulates glycolysis. Pyruvate kinase is feed forward activated by fructose 1,6-BP rather than F-2,6-BP."
+      },
+      {
+        "text": "Pyruvate kinase inhibited by AMP accumulation signaling low energy",
+        "isCorrect": false,
+        "rationale": "AMP activates PFK-1 as a low energy signal and does not directly inhibit pyruvate kinase. The primary covalent regulation of hepatic pyruvate kinase is via glucagon mediated phosphorylation."
+      },
+      {
+        "text": "Pyruvate kinase activity unchanged because of transcriptional control",
+        "isCorrect": false,
+        "rationale": "Transcriptional control affects enzyme amounts over prolonged periods. Acute regulation by glucagon occurs via phosphorylation and changes activity rapidly rather than through transcriptional changes."
+      }
+    ]
+  },
+  {
+    "question": "A researcher blocks PFK 1 allosteric sites and measures glycolytic flux. Which intracellular signal would normally overcome ATP mediated inhibition to activate PFK 1?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how PFK-1, and therefore glycolysis, is regulated via ATP, AMP, citrate, and fructose 2,6 BP",
+    "options": [
+      {
+        "text": "AMP accumulation signaling low energy activates PFK 1",
+        "isCorrect": true,
+        "rationale": "AMP is an allosteric activator of PFK-1 indicating low cellular energy and can overcome ATP inhibition to stimulate glycolysis. The lecture lists AMP as an activator."
+      },
+      {
+        "text": "High ATP levels signaling abundant energy activate PFK 1",
+        "isCorrect": false,
+        "rationale": "ATP is an allosteric inhibitor of PFK-1 as a high energy signal. High ATP would not overcome inhibition but reinforce it."
+      },
+      {
+        "text": "Citrate accumulation signaling active TCA cycle activates PFK 1",
+        "isCorrect": false,
+        "rationale": "Citrate is an inhibitor of PFK-1 reflecting abundant TCA intermediates. Citrate accumulation would further inhibit rather than activate PFK-1."
+      },
+      {
+        "text": "Fructose 1 6 bisphosphate directly activating PFK 1 enzyme",
+        "isCorrect": false,
+        "rationale": "Fructose 1,6-bisphosphate is a product of PFK-1 and acts as a feed forward activator for pyruvate kinase, not as a direct activator of PFK-1 itself."
+      },
+      {
+        "text": "Glucagon mediated phosphorylation directly activating PFK 1",
+        "isCorrect": false,
+        "rationale": "Glucagon signaling inactivates PFK-2 and reduces F-2,6-BP, thereby inhibiting PFK-1. Glucagon does not directly activate PFK-1."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a mutation that lowers pyruvate kinase Vmax presents with hemolysis. Which RBC process fails due to reduced ATP from glycolysis?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the effects of glucokinase mutations, pyruvate kinase mutations, arsenic poisoning, and lactic acidosis on human health",
+    "options": [
+      {
+        "text": "Energy dependent ion pumps fail causing loss of RBC shape",
+        "isCorrect": true,
+        "rationale": "RBC membrane pumps require ATP to maintain shape and ion gradients. Pyruvate kinase deficiency reduces ATP leading to membrane damage and hemolysis as described in the lecture."
+      },
+      {
+        "text": "Hemoglobin synthesis halts causing microcytic anemia and fatigue",
+        "isCorrect": false,
+        "rationale": "Hemoglobin synthesis occurs in erythroid precursors and is not directly impaired by pyruvate kinase deficiency in mature RBCs. The primary defect is loss of membrane integrity from ATP depletion."
+      },
+      {
+        "text": "Increased 2 3 BPG production stabilizes hemoglobin causing hypoxia",
+        "isCorrect": false,
+        "rationale": "2,3-BPG levels can change in RBCs but increased 2,3-BPG does not explain membrane failure and hemolysis. The lecture emphasizes ATP dependent pumps as the critical failing process."
+      },
+      {
+        "text": "Oxidative burst from neutrophils damages RBC membranes",
+        "isCorrect": false,
+        "rationale": "Oxidative damage from neutrophils is not the mechanism in hereditary pyruvate kinase deficiency. The anemia results from intrinsic RBC energy failure rather than immune mediated damage."
+      },
+      {
+        "text": "Impaired glucose uptake via GLUT1 causing energy starvation",
+        "isCorrect": false,
+        "rationale": "RBCs use GLUT1 for glucose uptake but pyruvate kinase deficiency affects ATP generation downstream. Impaired GLUT1 would reduce substrate entry but is a different defect than PK enzyme deficiency."
+      }
+    ]
+  },
+  {
+    "question": "A patient with hypoglycemia has increased hepatic F 2,6 BP due to insulin. Which enzyme activity is directly increased by elevated F 2,6 BP to promote glycolysis?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how levels of F-2,6-BP are regulated via circulating insulin and glucagon levels",
+    "options": [
+      {
+        "text": "Phosphofructokinase 1 activity increased promoting glycolysis",
+        "isCorrect": true,
+        "rationale": "F-2,6-BP is a potent activator of PFK-1 and increases glycolytic flux. The lecture states that insulin increases PFK-2 activity leading to higher F-2,6-BP and activation of PFK-1."
+      },
+      {
+        "text": "Hexokinase activity increased trapping glucose as G6P",
+        "isCorrect": false,
+        "rationale": "Hexokinase phosphorylates glucose but is not directly activated by F-2,6-BP. The primary target of F-2,6-BP is PFK-1."
+      },
+      {
+        "text": "Pyruvate carboxylase activity increased promoting gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Pyruvate carboxylase converts pyruvate to oxaloacetate for gluconeogenesis and is not activated by F-2,6-BP. Elevated F-2,6-BP favors glycolysis over gluconeogenesis."
+      },
+      {
+        "text": "Glyceraldehyde 3 phosphate dehydrogenase activity increased",
+        "isCorrect": false,
+        "rationale": "GAPDH catalyzes an oxidation step in glycolysis but is not the direct regulatory target of F-2,6-BP. PFK-1 is the regulated enzyme influenced by F-2,6-BP."
+      },
+      {
+        "text": "Fructose 1 6 bisphosphatase activity increased promoting gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "F-1,6-bisphosphatase is inhibited by F-2,6-BP which favors glycolysis. An increase in its activity would promote gluconeogenesis and contradict the effect of elevated F-2,6-BP."
+      }
+    ]
+  },
+  {
+    "question": "A patient with severe sepsis has elevated lactate despite oxygen therapy. Which lecture mechanism could explain persistent lactate elevation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain why anaerobic conditions result in the production of lactate",
+    "options": [
+      {
+        "text": "Tissue hypoperfusion causing anaerobic glycolysis and lactate buildup",
+        "isCorrect": true,
+        "rationale": "Sepsis can cause tissue hypoperfusion and cellular hypoxia leading to anaerobic glycolysis and lactate accumulation. The lecture notes that lack of oxygen in tissues causes excessive lactate buildup and acidosis."
+      },
+      {
+        "text": "Hepatic failure preventing lactate clearance by gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Impaired hepatic clearance can contribute to elevated lactate but the primary mechanism in sepsis is often increased production from hypoperfused tissues. Hepatic failure would need to be documented to make this the main cause."
+      },
+      {
+        "text": "Arsenic poisoning causing GAPDH substrate competition producing lactate",
+        "isCorrect": false,
+        "rationale": "Arsenic can alter glycolytic ATP yield but is an uncommon cause of sepsis related lactatemia. For arsenic to be responsible, exposure history and toxicology would need to support it."
+      },
+      {
+        "text": "Excessive 2 3 BPG production in RBCs increasing lactate release",
+        "isCorrect": false,
+        "rationale": "2,3-BPG is produced in RBCs and affects oxygen unloading but does not directly cause systemic lactate elevation. Tissue hypoxia and anaerobic glycolysis are the primary drivers."
+      },
+      {
+        "text": "Increased oxidative phosphorylation producing lactate as byproduct",
+        "isCorrect": false,
+        "rationale": "Oxidative phosphorylation consumes oxygen and does not produce lactate. Lactate production is a hallmark of anaerobic metabolism rather than increased oxidative phosphorylation."
+      }
+    ]
+  },
+  {
+    "question": "A neonate with hypoglycemia requires glucose uptake into CSF during low blood sugar. Which transporter described in the lecture helps concentrate glucose into CSF during hypoglycemia?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how the sodium-dependent glucose transporters function and why certain tissues would require these",
+    "options": [
+      {
+        "text": "Sodium dependent glucose transporter in choroid plexus SGLT isoform",
+        "isCorrect": true,
+        "rationale": "The choroid plexus uses sodium dependent glucose transporters to move glucose into CSF during hypoglycemia. The lecture notes that the choroid plexus uses SGLTs for this purpose."
+      },
+      {
+        "text": "GLUT1 facilitated diffusion across blood brain barrier endothelium",
+        "isCorrect": false,
+        "rationale": "GLUT1 mediates basal transport across the blood brain barrier but the choroid plexus specifically uses sodium dependent cotransport to concentrate glucose into CSF during hypoglycemia."
+      },
+      {
+        "text": "GLUT4 insulin responsive transporter in neuronal membranes",
+        "isCorrect": false,
+        "rationale": "GLUT4 is insulin responsive and primarily in muscle and adipose. Neurons and choroid plexus rely on GLUT1 and SGLTs rather than GLUT4 for glucose uptake."
+      },
+      {
+        "text": "Paracellular leak through tight junctions increasing CSF glucose",
+        "isCorrect": false,
+        "rationale": "Paracellular leak is not a regulated mechanism for concentrating glucose into CSF. The choroid plexus uses active cotransport mechanisms as described in the lecture."
+      },
+      {
+        "text": "Endothelial pinocytosis delivering glucose containing vesicles",
+        "isCorrect": false,
+        "rationale": "Vesicular transport is not the primary regulated mechanism for CSF glucose concentration. Sodium dependent cotransporters in the choroid plexus are responsible for this function."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a mutation that increases glucokinase Vmax would most likely show which hepatic response after a high carbohydrate meal?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast glucokinase and hexokinase in terms of purpose, Km, Vmax, tissue, and regulation.",
+    "options": [
+      {
+        "text": "Enhanced hepatic glucose phosphorylation lowering postprandial glucose",
+        "isCorrect": true,
+        "rationale": "A higher glucokinase Vmax allows the liver to phosphorylate more glucose rapidly after a meal, reducing postprandial blood glucose. The lecture notes glucokinase has high Vmax enabling large increases in hepatic glucose phosphorylation."
+      },
+      {
+        "text": "Reduced hepatic glucose uptake causing higher postprandial glucose",
+        "isCorrect": false,
+        "rationale": "Reduced uptake would result from lower glucokinase activity or impaired transport. An increased Vmax would not reduce uptake but enhance hepatic phosphorylation and clearance of glucose."
+      },
+      {
+        "text": "Increased renal glucose excretion due to transporter saturation",
+        "isCorrect": false,
+        "rationale": "Renal glucose excretion depends on filtered load and SGLT capacity. Enhanced hepatic glucokinase activity would not directly increase renal glucose excretion and would more likely lower blood glucose."
+      },
+      {
+        "text": "Elevated muscle glycogen synthesis independent of hepatic changes",
+        "isCorrect": false,
+        "rationale": "Muscle glycogen synthesis depends on insulin and muscle GLUT4. Hepatic glucokinase Vmax changes primarily affect liver glucose handling rather than directly altering muscle glycogen synthesis."
+      },
+      {
+        "text": "Increased lactate release from liver causing lactic acidosis",
+        "isCorrect": false,
+        "rationale": "While liver can produce lactate, increased glucokinase Vmax promotes glycolysis and glycogen synthesis rather than causing systemic lactic acidosis. Lactic acidosis requires widespread anaerobic metabolism."
+      }
+    ]
+  },
+  {
+    "question": "A pharmacologic activator of PFK 2 is given to a diabetic patient. Which immediate hepatic effect would you expect based on lecture regulation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how levels of F-2,6-BP are regulated via circulating insulin and glucagon levels",
+    "options": [
+      {
+        "text": "Increased F 2 6 BP enhancing PFK 1 activity and glycolysis",
+        "isCorrect": true,
+        "rationale": "Activation of PFK-2 raises F-2,6-BP which potently activates PFK-1 and stimulates glycolysis. The lecture explains that PFK-2 activity controls F-2,6-BP levels and thereby glycolytic flux."
+      },
+      {
+        "text": "Decreased F 2 6 BP reducing PFK 1 activity and glycolysis",
+        "isCorrect": false,
+        "rationale": "Decreased F-2,6-BP results from PFK-2 inactivation by glucagon. A pharmacologic activator would increase rather than decrease F-2,6-BP."
+      },
+      {
+        "text": "Direct inhibition of hexokinase reducing glucose trapping",
+        "isCorrect": false,
+        "rationale": "PFK-2 activation affects F-2,6-BP and PFK-1 activity not hexokinase. Direct hexokinase inhibition would require a different mechanism."
+      },
+      {
+        "text": "Increased gluconeogenesis via activation of fructose 1 6 bisphosphatase",
+        "isCorrect": false,
+        "rationale": "F-2,6-BP inhibits fructose 1,6-bisphosphatase and promotes glycolysis. Activation of PFK-2 would not increase gluconeogenesis but would suppress it."
+      },
+      {
+        "text": "Enhanced pyruvate carboxylase activity promoting oxaloacetate",
+        "isCorrect": false,
+        "rationale": "Pyruvate carboxylase is involved in gluconeogenesis and TCA replenishment. PFK-2 activation favors glycolysis and would not directly enhance pyruvate carboxylase activity."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic alcohol use has elevated NADH NAD+ ratio in hepatocytes. Which glycolytic fate of pyruvate is favored and why according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Fate of Pyruvate",
+    "options": [
+      {
+        "text": "Conversion of pyruvate to lactate to regenerate NAD plus",
+        "isCorrect": true,
+        "rationale": "An elevated NADH to NAD plus ratio favors reduction of pyruvate to lactate to regenerate NAD plus. The lecture explains that lactate formation couples NADH oxidation to NAD plus regeneration."
+      },
+      {
+        "text": "Oxidative decarboxylation to acetyl CoA entering TCA cycle",
+        "isCorrect": false,
+        "rationale": "Conversion to acetyl CoA requires NAD plus and functional mitochondria. High NADH relative to NAD plus and impaired oxidation favor lactate formation instead."
+      },
+      {
+        "text": "Carboxylation to oxaloacetate for gluconeogenesis predominating",
+        "isCorrect": false,
+        "rationale": "Pyruvate carboxylation to oxaloacetate requires ATP and is used for gluconeogenesis. High NADH favors reduction to lactate rather than carboxylation."
+      },
+      {
+        "text": "Transamination to alanine increasing amino acid pools",
+        "isCorrect": false,
+        "rationale": "Transamination to alanine occurs but is not the primary route to regenerate NAD plus. Elevated NADH specifically drives lactate production to maintain glycolysis."
+      },
+      {
+        "text": "Spontaneous decarboxylation producing acetaldehyde and acetate",
+        "isCorrect": false,
+        "rationale": "Spontaneous decarboxylation to acetaldehyde is not a physiological pathway in human cells. The main NAD plus regenerating pathway is lactate formation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a genetic defect in bisphosphoglycerate mutase would most likely have which effect on hemoglobin oxygen delivery?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Synthesis of 2,3-BPG in Red Blood Cells (RBCs)",
+    "options": [
+      {
+        "text": "Lower 2 3 BPG increasing hemoglobin oxygen affinity",
+        "isCorrect": true,
+        "rationale": "Bisphosphoglycerate mutase produces 2,3-BPG which lowers hemoglobin oxygen affinity and increases unloading. A defect lowering 2,3-BPG would increase hemoglobin affinity and reduce tissue oxygen delivery."
+      },
+      {
+        "text": "Higher 2 3 BPG decreasing hemoglobin oxygen affinity",
+        "isCorrect": false,
+        "rationale": "Higher 2,3-BPG lowers hemoglobin affinity and enhances unloading. A mutase defect would not increase 2,3-BPG unless a compensatory pathway elevated its levels."
+      },
+      {
+        "text": "No change in oxygen affinity because 2 3 BPG irrelevant",
+        "isCorrect": false,
+        "rationale": "2,3-BPG is a key regulator of hemoglobin oxygen affinity in RBCs. It is not irrelevant and changes in its level alter oxygen unloading."
+      },
+      {
+        "text": "Increased hemoglobin concentration compensating for affinity changes",
+        "isCorrect": false,
+        "rationale": "Hemoglobin concentration changes are a longer term compensatory response and are not the immediate effect of a bisphosphoglycerate mutase defect on oxygen affinity."
+      },
+      {
+        "text": "Enhanced oxygen unloading due to increased 2 3 BPG phosphatase",
+        "isCorrect": false,
+        "rationale": "Increased phosphatase activity would lower 2,3-BPG and reduce unloading. The scenario describes a mutase defect which would lower production rather than increase phosphatase activity."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a fasting state has hepatic PFK 2 phosphorylated. Which hormonal milieu produced this phosphorylation according to the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how levels of F-2,6-BP are regulated via circulating insulin and glucagon levels",
+    "options": [
+      {
+        "text": "Glucagon dominant fasting state causing PFK 2 phosphorylation",
+        "isCorrect": true,
+        "rationale": "In fasting glucagon dominates and leads to phosphorylation and inactivation of PFK-2, lowering F-2,6-BP and inhibiting glycolysis. The lecture explicitly describes this hormonal regulation."
+      },
+      {
+        "text": "Insulin dominant fed state causing PFK 2 phosphorylation",
+        "isCorrect": false,
+        "rationale": "Insulin promotes dephosphorylation and activation of PFK-2. Phosphorylation of PFK-2 is associated with glucagon not insulin."
+      },
+      {
+        "text": "Epinephrine mediated dephosphorylation activating PFK 2",
+        "isCorrect": false,
+        "rationale": "Epinephrine signaling typically mimics glucagon in liver and promotes phosphorylation events. Dephosphorylation and activation are mediated by insulin signaling."
+      },
+      {
+        "text": "High carbohydrate meal increasing glucagon secretion",
+        "isCorrect": false,
+        "rationale": "High carbohydrate meals increase insulin not glucagon. Glucagon rises during fasting and would not be increased after a carbohydrate rich meal."
+      },
+      {
+        "text": "Thyroid hormone directly phosphorylating PFK 2 enzyme",
+        "isCorrect": false,
+        "rationale": "Thyroid hormone regulates metabolism transcriptionally over longer time frames and does not directly phosphorylate PFK-2 in the acute hormonal regulation described in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A patient with exercise induced muscle cramps has elevated intracellular ADP and AMP. How does AMP affect PFK 1 activity and glycolysis according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how PFK-1, and therefore glycolysis, is regulated via ATP, AMP, citrate, and fructose 2,6 BP",
+    "options": [
+      {
+        "text": "AMP allosterically activates PFK 1 increasing glycolysis",
+        "isCorrect": true,
+        "rationale": "AMP is a low energy signal that allosterically activates PFK-1 to increase glycolytic flux. The lecture lists AMP as an activator of PFK-1."
+      },
+      {
+        "text": "AMP allosterically inhibits PFK 1 decreasing glycolysis",
+        "isCorrect": false,
+        "rationale": "AMP activates rather than inhibits PFK-1. Inhibition is mediated by ATP and citrate as high energy signals."
+      },
+      {
+        "text": "AMP has no effect on PFK 1 activity in muscle",
+        "isCorrect": false,
+        "rationale": "AMP is an important regulator of PFK-1 in many tissues including muscle. Stating no effect contradicts the lecture's description of energy status regulation."
+      },
+      {
+        "text": "AMP converts to ATP directly stimulating oxidative phosphorylation",
+        "isCorrect": false,
+        "rationale": "AMP cannot be directly converted to ATP without metabolic pathways. Its role is as a signaling molecule activating glycolysis rather than directly producing ATP."
+      },
+      {
+        "text": "AMP increases citrate levels which then activate PFK 1",
+        "isCorrect": false,
+        "rationale": "Citrate inhibits PFK-1 and is not increased by AMP to activate glycolysis. AMP and citrate have opposite regulatory effects on PFK-1."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a liver specific defect cannot activate pyruvate kinase in fed state. Which regulatory signal linking PFK 1 to pyruvate kinase is missing according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how and why pyruvate kinase is regulated via fructose 1,6-BP and insulin/glucagon in the liver",
+    "options": [
+      {
+        "text": "Feed forward activation by fructose 1 6 bisphosphate is absent",
+        "isCorrect": true,
+        "rationale": "Fructose 1,6-bisphosphate acts as a feed forward activator of pyruvate kinase linking PFK-1 activity to pyruvate kinase. Loss of this signal would impair pyruvate kinase activation in the fed state."
+      },
+      {
+        "text": "Allosteric inhibition by ATP on pyruvate kinase is increased",
+        "isCorrect": false,
+        "rationale": "ATP inhibits PFK-1 but pyruvate kinase regulation in liver is primarily via feed forward activation by F-1,6-BP and covalent modification by hormones. Increased ATP inhibition alone does not explain lack of activation in fed state."
+      },
+      {
+        "text": "Insulin mediated phosphorylation inactivating pyruvate kinase",
+        "isCorrect": false,
+        "rationale": "Insulin promotes dephosphorylation and activation of pyruvate kinase. Phosphorylation inactivation is mediated by glucagon, not insulin."
+      },
+      {
+        "text": "Citrate mediated activation of pyruvate kinase is missing",
+        "isCorrect": false,
+        "rationale": "Citrate is an inhibitor of PFK-1 and does not activate pyruvate kinase. The key feed forward activator is F-1,6-BP."
+      },
+      {
+        "text": "Decreased fructose 2 6 bisphosphate preventing pyruvate kinase activation",
+        "isCorrect": false,
+        "rationale": "F-2,6-BP activates PFK-1 but pyruvate kinase is directly activated by F-1,6-BP. A decrease in F-2,6-BP would reduce PFK-1 activity upstream but the direct feed forward signal is F-1,6-BP."
+      }
+    ]
+  },
+  {
+    "question": "A patient with severe hypoglycemia is given intravenous glucose. Which immediate intracellular change traps glucose inside hepatocytes as described in the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Reactions of Glycolysis",
+    "options": [
+      {
+        "text": "Phosphorylation of glucose to glucose 6 phosphate trapping it",
+        "isCorrect": true,
+        "rationale": "Phosphorylation of glucose to glucose 6-phosphate prevents it from crossing membranes and thus traps it inside the cell. The lecture states phosphorylation traps the molecule inside the cell."
+      },
+      {
+        "text": "Conversion of glucose to fructose preventing membrane transport",
+        "isCorrect": false,
+        "rationale": "Conversion to fructose is not the mechanism that traps glucose intracellularly. Phosphorylation to G6P is the trapping step described in the lecture."
+      },
+      {
+        "text": "Transport into glycogen granules via direct incorporation",
+        "isCorrect": false,
+        "rationale": "Glucose is first phosphorylated to G6P before glycogen synthesis. Direct incorporation without phosphorylation does not occur."
+      },
+      {
+        "text": "Export of glucose into bile reducing extracellular levels",
+        "isCorrect": false,
+        "rationale": "Hepatocytes do not export glucose into bile as a mechanism to trap it intracellularly. Phosphorylation to G6P is the trapping mechanism."
+      },
+      {
+        "text": "Facilitated diffusion reversal moving glucose inward passively",
+        "isCorrect": false,
+        "rationale": "Facilitated diffusion moves glucose down its gradient and does not trap it. Intracellular phosphorylation is required to maintain inward gradient and trap glucose."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a mutation that increases Km of glucokinase will have which effect on postprandial hepatic glucose handling?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast glucokinase and hexokinase in terms of purpose, Km, Vmax, tissue, and regulation.",
+    "options": [
+      {
+        "text": "Reduced hepatic phosphorylation at normal postprandial glucose levels",
+        "isCorrect": true,
+        "rationale": "An increased Km reduces enzyme affinity so glucokinase will phosphorylate less glucose at typical postprandial concentrations, impairing hepatic glucose uptake. The lecture links increased Km to reduced glucokinase activity causing MODY2."
+      },
+      {
+        "text": "Increased hepatic phosphorylation at low glucose concentrations",
+        "isCorrect": false,
+        "rationale": "Increased phosphorylation at low glucose would require a lower Km or higher affinity enzyme. Raising Km decreases affinity and reduces phosphorylation at low concentrations."
+      },
+      {
+        "text": "No change because hexokinase compensates in liver",
+        "isCorrect": false,
+        "rationale": "Liver primarily uses glucokinase rather than hexokinase for postprandial handling. Hexokinase does not compensate in liver to the extent needed to normalize postprandial phosphorylation."
+      },
+      {
+        "text": "Enhanced insulin secretion directly correcting hepatic defect",
+        "isCorrect": false,
+        "rationale": "Insulin stimulates glucokinase expression and activity but a higher Km intrinsic to the enzyme reduces affinity. Increased insulin may partially compensate but does not fully correct a Km increase."
+      },
+      {
+        "text": "Increased renal glucose reabsorption preventing glycosuria",
+        "isCorrect": false,
+        "rationale": "Renal reabsorption depends on filtered load and SGLT capacity. Hepatic glucokinase Km changes do not directly increase renal reabsorption and glycosuria risk may increase with hyperglycemia."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute myocardial infarction has localized tissue hypoxia. According to the lecture, what immediate metabolic shift occurs in affected cardiomyocytes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Fate of Pyruvate",
+    "options": [
+      {
+        "text": "Increased conversion of pyruvate to lactate to regenerate NAD plus",
+        "isCorrect": true,
+        "rationale": "During hypoxia cardiomyocytes convert pyruvate to lactate to regenerate NAD plus and allow glycolysis to continue. The lecture notes that lack of oxygen causes pyruvate to be reduced to lactate."
+      },
+      {
+        "text": "Enhanced pyruvate oxidation to acetyl CoA increasing TCA flux",
+        "isCorrect": false,
+        "rationale": "Pyruvate oxidation to acetyl CoA requires oxygen and functional mitochondria. In hypoxia this pathway is impaired and lactate production increases instead."
+      },
+      {
+        "text": "Increased gluconeogenesis from pyruvate within cardiomyocytes",
+        "isCorrect": false,
+        "rationale": "Cardiomyocytes do not perform significant gluconeogenesis. Under hypoxia they rely more on anaerobic glycolysis and lactate production."
+      },
+      {
+        "text": "Transamination of pyruvate to alanine predominating to remove nitrogen",
+        "isCorrect": false,
+        "rationale": "Transamination to alanine occurs but is not the primary response to hypoxia. Lactate formation is the main mechanism to regenerate NAD plus."
+      },
+      {
+        "text": "Shunting of pyruvate into 2 3 BPG pathway altering oxygen affinity",
+        "isCorrect": false,
+        "rationale": "2,3-BPG synthesis occurs in RBCs and affects hemoglobin oxygen affinity. Cardiomyocyte pyruvate is not shunted into 2,3-BPG production as a hypoxic response."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic fasting has decreased transcription of key irreversible glycolytic enzymes in liver. Which hormone profile described in the lecture explains this transcriptional change?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Hormonal Regulation of Glycolysis",
+    "options": [
+      {
+        "text": "Prolonged high glucagon levels decreasing enzyme transcription",
+        "isCorrect": true,
+        "rationale": "Prolonged higher glucagon levels inhibit transcription of irreversible glycolytic enzymes leading to decreased enzyme amounts. The lecture states glucagon results in a net decrease in these key enzymes."
+      },
+      {
+        "text": "Prolonged high insulin levels decreasing enzyme transcription",
+        "isCorrect": false,
+        "rationale": "Insulin stimulates transcription of glycolytic enzymes and increases their amounts. A decrease in transcription would not follow prolonged high insulin."
+      },
+      {
+        "text": "Acute epinephrine surge increasing transcription of glycolytic enzymes",
+        "isCorrect": false,
+        "rationale": "Acute epinephrine effects are rapid and not primarily transcriptional for these enzymes. Prolonged hormonal states like insulin or glucagon alter transcription over time."
+      },
+      {
+        "text": "Thyroid hormone deficiency increasing glycolytic enzyme transcription",
+        "isCorrect": false,
+        "rationale": "Thyroid hormone influences metabolic rate and gene expression broadly but the lecture specifically links insulin and glucagon to transcriptional control of glycolytic enzymes."
+      },
+      {
+        "text": "Cortisol excess directly stimulating glycolytic enzyme transcription",
+        "isCorrect": false,
+        "rationale": "Cortisol affects metabolism but the lecture emphasizes insulin stimulation and glucagon inhibition as the primary hormonal regulators of glycolytic enzyme transcription in liver."
+      }
+    ]
+  },
+  {
+    "question": "A patient with inherited pyruvate kinase deficiency is evaluated. Which laboratory or clinical feature from the lecture would most likely be present?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Glycolysis and Human Health",
+    "options": [
+      {
+        "text": "Hemolytic anemia due to RBC ATP depletion and membrane damage",
+        "isCorrect": true,
+        "rationale": "Pyruvate kinase deficiency reduces ATP in RBCs causing loss of membrane integrity and hemolytic anemia. The lecture describes this as the mechanism and clinical consequence."
+      },
+      {
+        "text": "Persistent hyperglycemia due to impaired hepatic glucokinase activity",
+        "isCorrect": false,
+        "rationale": "Hyperglycemia from impaired glucokinase relates to MODY2 not pyruvate kinase deficiency. PK deficiency primarily affects RBC energy metabolism leading to hemolysis."
+      },
+      {
+        "text": "Heinz bodies on peripheral smear indicating oxidative damage",
+        "isCorrect": false,
+        "rationale": "Heinz bodies are typical of G6PD deficiency from oxidative stress. Pyruvate kinase deficiency usually lacks Heinz bodies as noted in the lecture."
+      },
+      {
+        "text": "Severe lactic acidosis from systemic inability to oxidize NADH",
+        "isCorrect": false,
+        "rationale": "While PK deficiency affects RBC ATP, it does not typically cause systemic lactic acidosis. Lactic acidosis arises from widespread tissue hypoxia or mitochondrial dysfunction."
+      },
+      {
+        "text": "Elevated 2 3 BPG causing right shift of oxygen dissociation curve",
+        "isCorrect": false,
+        "rationale": "2,3-BPG changes can occur in chronic anemia but are not the defining laboratory feature of pyruvate kinase deficiency. The hallmark is hemolysis from ATP depletion."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute arsenic exposure has normal oxygenation but profound weakness and low ATP. Which specific glycolytic measurement would support the lecture mechanism of arsenic toxicity?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Glycolysis and Human Health",
+    "options": [
+      {
+        "text": "Decreased net ATP yield from glycolysis approaching zero",
+        "isCorrect": true,
+        "rationale": "Arsenic incorporation at the GAPDH step bypasses ATP generation by phosphoglycerate kinase reducing net ATP yield to zero. The lecture explicitly states arsenic can reduce net glycolytic ATP to zero."
+      },
+      {
+        "text": "Accumulation of fructose 1 6 bisphosphate indicating PFK 1 block",
+        "isCorrect": false,
+        "rationale": "PFK-1 inhibition would cause upstream accumulation but arsenic acts at GAPDH substrate competition bypassing an ATP step rather than blocking PFK-1."
+      },
+      {
+        "text": "Elevated pyruvate with absent lactate indicating LDH inhibition",
+        "isCorrect": false,
+        "rationale": "LDH inhibition would raise pyruvate and lower lactate. Arsenic toxicity leads to bypass of ATP generation and does not primarily inhibit LDH."
+      },
+      {
+        "text": "Increased 2 3 BPG formation in RBCs causing oxygen unloading",
+        "isCorrect": false,
+        "rationale": "2,3-BPG changes are an RBC specific shunt and are not the primary biochemical marker of arsenic's effect on glycolytic ATP yield."
+      },
+      {
+        "text": "Marked decrease in glyceraldehyde 3 phosphate levels due to block",
+        "isCorrect": false,
+        "rationale": "Arsenic competes with inorganic phosphate at GAPDH but does not necessarily deplete glyceraldehyde 3-phosphate. The key measurable effect is loss of ATP generation rather than substrate depletion."
+      }
+    ]
+  },
+  {
+    "question": "A patient with exercise intolerance accumulates lactate in muscle despite adequate oxygen delivery. Which lecture concept could explain lactate production during high immediate energy demand?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Fate of Pyruvate",
+    "options": [
+      {
+        "text": "High ATP demand causes glycolysis to outpace oxidative phosphorylation",
+        "isCorrect": true,
+        "rationale": "During sudden high energy demand glycolysis can exceed mitochondrial capacity to oxidize NADH, leading to lactate production to regenerate NAD plus. The lecture notes that immediate high demand can cause pyruvate to be converted to lactate."
+      },
+      {
+        "text": "Mitochondrial dysfunction causing permanent inability to oxidize pyruvate",
+        "isCorrect": false,
+        "rationale": "Mitochondrial dysfunction can cause lactate accumulation but the scenario describes adequate oxygen delivery. Acute mismatch between glycolytic rate and mitochondrial oxidation better explains transient lactate during intense exercise."
+      },
+      {
+        "text": "Excessive insulin causing increased glycolysis and lactate release",
+        "isCorrect": false,
+        "rationale": "Insulin stimulates glycolysis but does not typically cause lactate accumulation when oxidative phosphorylation can match demand. Immediate high ATP demand rather than insulin excess explains exercise related lactate."
+      },
+      {
+        "text": "Arsenic exposure in muscle cells blocking ATP generation",
+        "isCorrect": false,
+        "rationale": "Arsenic can impair ATP yield but is an exposure related toxin. Exercise induced lactate with adequate oxygen is more likely due to rate mismatch between glycolysis and mitochondrial oxidation."
+      },
+      {
+        "text": "Increased 2 3 BPG in muscle fibers reducing oxygen utilization",
+        "isCorrect": false,
+        "rationale": "2,3-BPG affects hemoglobin oxygen affinity and is not produced in muscle fibers to regulate their own oxygen utilization. The immediate cause is metabolic rate mismatch."
+      }
+    ]
+  },
+  {
+    "question": "A clinician considers giving a drug that increases hepatic pyruvate kinase activity in a patient with fasting hyperglycemia. According to the lecture, which hormonal state would this drug mimic to promote glycolysis?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how and why pyruvate kinase is regulated via fructose 1,6-BP and insulin/glucagon in the liver",
+    "options": [
+      {
+        "text": "Insulin dominant fed state promoting dephosphorylation and activation",
+        "isCorrect": true,
+        "rationale": "Insulin causes dephosphorylation and activation of hepatic pyruvate kinase increasing glycolysis. A drug that increases pyruvate kinase activity would mimic the fed insulin dominant state described in the lecture."
+      },
+      {
+        "text": "Glucagon dominant fasting state promoting phosphorylation and inactivation",
+        "isCorrect": false,
+        "rationale": "Glucagon promotes phosphorylation and inactivation of pyruvate kinase. Mimicking glucagon would decrease rather than increase pyruvate kinase activity."
+      },
+      {
+        "text": "Epinephrine mediated phosphorylation activating pyruvate kinase",
+        "isCorrect": false,
+        "rationale": "Epinephrine signaling typically mirrors glucagon in liver and leads to phosphorylation events that inactivate glycolytic enzymes. It does not activate pyruvate kinase via phosphorylation."
+      },
+      {
+        "text": "High AMP signaling low energy directly phosphorylating pyruvate kinase",
+        "isCorrect": false,
+        "rationale": "AMP activates PFK-1 but does not directly phosphorylate pyruvate kinase. Hormonal dephosphorylation by insulin is the mechanism for pyruvate kinase activation."
+      },
+      {
+        "text": "Increased fructose 2 6 bisphosphate directly dephosphorylating pyruvate kinase",
+        "isCorrect": false,
+        "rationale": "F-2,6-BP activates PFK-1 and influences glycolysis but does not directly dephosphorylate pyruvate kinase. Insulin mediated dephosphorylation is the direct regulatory mechanism."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a rare glucokinase activating mutation has hypoglycemia after meals. Which lecture principle explains how increased glucokinase activity causes lower blood glucose?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast glucokinase and hexokinase in terms of purpose, Km, Vmax, tissue, and regulation.",
+    "options": [
+      {
+        "text": "Higher glucokinase Vmax increases hepatic glucose phosphorylation postprandially",
+        "isCorrect": true,
+        "rationale": "An activating mutation increasing glucokinase Vmax allows the liver to phosphorylate more glucose after meals, lowering blood glucose. The lecture notes glucokinase high Vmax enables rapid hepatic phosphorylation following a meal."
+      },
+      {
+        "text": "Increased hexokinase activity in muscle sequestering blood glucose",
+        "isCorrect": false,
+        "rationale": "Hexokinase is present in muscle but the scenario involves hepatic glucokinase mutation. Increased hexokinase would not explain a liver mediated postprandial hypoglycemia without changes in muscle enzyme expression."
+      },
+      {
+        "text": "Enhanced renal glucose excretion due to SGLT saturation lowering glucose",
+        "isCorrect": false,
+        "rationale": "Renal excretion depends on filtered load and transporter capacity. A glucokinase activating mutation primarily affects hepatic uptake rather than renal excretion."
+      },
+      {
+        "text": "Increased gluconeogenesis consuming circulating glucose causing hypoglycemia",
+        "isCorrect": false,
+        "rationale": "Gluconeogenesis produces glucose and would raise rather than lower blood glucose. Increased hepatic phosphorylation by glucokinase reduces circulating glucose."
+      },
+      {
+        "text": "Elevated 2 3 BPG shifting oxygen curve increasing tissue glucose use",
+        "isCorrect": false,
+        "rationale": "2,3-BPG affects hemoglobin oxygen affinity and does not directly increase hepatic glucose phosphorylation. The primary mechanism is increased glucokinase mediated trapping of glucose."
+      }
+    ]
+  }
+]
