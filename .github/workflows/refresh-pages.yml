@@ -1,0 +1,30 @@
+name: Refresh GitHub Pages
+
+# AutoQuiz publishes via the Contents API. Those commits can land on main
+# without rebuilding github.io, so other users keep an old quiz catalog.
+# Request a Pages rebuild on every main push (debounced so a quiz batch
+# only builds once).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: refresh-github-pages
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Contents API batch to finish
+        run: sleep 20
+      - name: Request Pages build
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || true

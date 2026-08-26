@@ -6523,6 +6523,37 @@ async function localFetch(filename) {
   const url = `quizzes/${clean}?v=${Date.now()}`;
   return fetch(url, { cache: 'no-store' });
 }
+
+function isLocalDevHost() {
+  const host = location.hostname;
+  return location.protocol === 'file:' ||
+    host === 'localhost' || host === '127.0.0.1' || host === '::1' || host === '[::1]';
+}
+
+/**
+ * AutoQuiz publishes via the GitHub Contents API, which often does not rebuild
+ * GitHub Pages. Hosted users must read GitHub directly or they keep seeing the
+ * last Pages snapshot. Local preview still prefers on-disk quizzes/.
+ */
+async function fetchPremadeLibraryFile(filename, options = {}) {
+  const githubFirst = options.preferGitHub === true || !isLocalDevHost();
+  if (githubFirst) {
+    try {
+      const res = await githubFetch(filename);
+      if (res && res.ok) return res;
+    } catch (err) {
+      const local = await localFetch(filename);
+      if (local && local.ok) return local;
+      throw err;
+    }
+    const local = await localFetch(filename);
+    if (local && local.ok) return local;
+    return githubFetch(filename);
+  }
+  const local = await localFetch(filename);
+  if (local && local.ok) return local;
+  return githubFetch(filename);
+}
 let libraryOpen = false;
 let libraryManifest = [];
 let generatedQuizJSON = null;
@@ -7178,16 +7209,9 @@ async function refreshLibrary(options = {}) {
   list.innerHTML = '<div class="lib-status">⏳ Fetching quizzes…</div>';
 
   try {
-    // Prefer local manifest first so active local changes appear immediately,
-    // unless we just mutated GitHub (delete/publish) and need the remote truth.
-    let res;
-    if (preferGitHub) {
-      res = await githubFetch("manifest.json");
-      if (!res.ok) res = await localFetch("manifest.json");
-    } else {
-      res = await localFetch("manifest.json");
-      if (!res.ok) res = await githubFetch("manifest.json");
-    }
+    // Hosted site: GitHub first (Pages often lags AutoQuiz API commits).
+    // Local preview: on-disk quizzes/ first, unless a GitHub mutation just happened.
+    const res = await fetchPremadeLibraryFile('manifest.json', { preferGitHub });
     const text = await res.text();
     // Guard against empty or non-JSON responses
     if (!text || !text.trim().startsWith('[')) {
@@ -7674,8 +7698,7 @@ async function fetchQuizJSON(fileOrEntry) {
       throw new Error('Personal quiz data missing or empty.');
     return entry.json;
   }
-  let res = await localFetch(file);
-  if (!res.ok) res = await githubFetch(file);
+  const res = await fetchPremadeLibraryFile(file);
   const text = await res.text();
   if (!text || !text.trim().startsWith('['))
     throw new Error('Not a JSON array.');
@@ -8990,8 +9013,7 @@ async function _prepareQuizAsync() {
   // Fetch current manifest so we can show the COMPLETE updated manifest (not just the new entry)
   let currentManifest = [];
   try {
-    let res = await localFetch("manifest.json");
-    if (!res.ok) res = await githubFetch("manifest.json");
+    const res = await fetchPremadeLibraryFile('manifest.json', { preferGitHub: true });
     const text = await res.text();
     if (text.trim().startsWith('[')) currentManifest = JSON.parse(text);
   } catch(e) { /* manifest might not exist yet — start fresh */ }
@@ -9025,8 +9047,7 @@ async function _prepareManifestEditAsync() {
 
   let currentManifest = [];
   try {
-    let res = await localFetch('manifest.json');
-    if (!res.ok) res = await githubFetch('manifest.json');
+    const res = await fetchPremadeLibraryFile('manifest.json', { preferGitHub: true });
     const text = await res.text();
     if (text && text.trim().startsWith('[')) currentManifest = JSON.parse(text);
   } catch(e) { currentManifest = libraryManifest.slice(); }
