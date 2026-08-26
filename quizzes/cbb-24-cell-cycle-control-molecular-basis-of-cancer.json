@@ -1,0 +1,1186 @@
+[
+  {
+    "question": "A researcher measures a cell population and finds accumulation of DNA synthesis markers indicating S-phase entry. Which protein most directly promotes the G1 to S transition by phosphorylating substrates that release transcription factors for DNA replication?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "Cyclin D bound to Cdk4 promoting progression",
+        "isCorrect": false,
+        "rationale": "Cyclin D–Cdk4 promotes early G1 progression; however the complex that more directly drives G1→S by phosphorylating Rb and releasing E2F is Cyclin E–Cdk2. This option would be correct if the question asked about early G1 signaling rather than the G1→S commitment."
+      },
+      {
+        "text": "Cyclin E bound to Cdk2 driving S transition",
+        "isCorrect": true,
+        "rationale": "Cyclin E–Cdk2 activity is described in the lecture as a late G1 complex that orchestrates the transition to S-phase by phosphorylating proteins that regulate commitment to DNA replication."
+      },
+      {
+        "text": "p21 binding Cdk4 to halt cell progression",
+        "isCorrect": false,
+        "rationale": "p21 is a Cdk inhibitor that halts the cycle by binding Cdks; it would not promote G1→S. This option would be correct only if the population showed cell-cycle arrest rather than S-phase entry."
+      },
+      {
+        "text": "Rb protein sequestering E2F to prevent entry",
+        "isCorrect": false,
+        "rationale": "Rb sequesters E2F to prevent S entry; it is inhibitory, not promotive. This would be correct if the cells were prevented from entering S-phase."
+      },
+      {
+        "text": "cdc25C phosphatase activating Cdk1 for mitosis",
+        "isCorrect": false,
+        "rationale": "cdc25C removes inhibitory phosphates from Cdk1 to promote mitosis (M entry), not the G1→S transition. It would be correct in a question about G2→M control."
+      }
+    ]
+  },
+  {
+    "question": "Which inhibitor family contains proteins that directly bind and inhibit cyclin–Cdk complexes such as Cdk4 and thereby function as negative regulators of cell-cycle progression?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "INK family including p16 and p18 inhibitors",
+        "isCorrect": true,
+        "rationale": "The lecture lists the INK family (p16, p18) as major Cdk inhibitors; these proteins bind Cdks to inhibit progression. This option matches the slide naming and function."
+      },
+      {
+        "text": "Cip Kip family including cyclin E and Cdk2",
+        "isCorrect": false,
+        "rationale": "The Cip/Kip family includes p21 and p27, not cyclin E or Cdk2. This would be correct if the family members were p21/p27 rather than cyclin/Cdk proteins."
+      },
+      {
+        "text": "Proto-oncogene family including Ras and EGF",
+        "isCorrect": false,
+        "rationale": "Ras and EGF are proto-oncogenes that promote cell-cycle progression, not Cdk inhibitors. This would be correct only if the question asked for promoters rather than inhibitors."
+      },
+      {
+        "text": "Tumor suppressor family including cyclin D proteins",
+        "isCorrect": false,
+        "rationale": "Cyclin D proteins are cell-cycle promoters, not tumor suppressor Cdk inhibitors. This would be correct only if cyclin D were misclassified as inhibitory."
+      },
+      {
+        "text": "Apoptotic BCL family including BAX and BAK",
+        "isCorrect": false,
+        "rationale": "BAX and related BCL proteins regulate apoptosis, not direct Cdk inhibition. This would be correct in a question about programmed cell death rather than Cdk regulation."
+      }
+    ]
+  },
+  {
+    "question": "A cervical biopsy reveals viral proteins that accelerate degradation of a genome guardian and disrupt a cell-cycle brake, promoting uncontrolled proliferation. Which pair of host tumor suppressors are targeted by these viral proteins?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Identify connections between cell cycle regulation and cancer risk and progression",
+    "options": [
+      {
+        "text": "p53 tumor suppressor and Rb cell-cycle brake",
+        "isCorrect": true,
+        "rationale": "The lecture states HPV E6 binds p53 promoting degradation and E7 binds Rb preventing Rb–E2F interaction; both are tumor suppressors targeted to promote cancer."
+      },
+      {
+        "text": "Cyclin D promoter and Cdk2 S-phase activator",
+        "isCorrect": false,
+        "rationale": "Cyclin D and Cdk2 promote progression and are not tumor suppressors; this would be correct only if viral proteins activated promoters rather than degrading suppressors."
+      },
+      {
+        "text": "p21 Cdk inhibitor and cdc25C phosphatase activator",
+        "isCorrect": false,
+        "rationale": "p21 is a Cdk inhibitor and cdc25C activates Cdk1; HPV proteins classically target p53 and Rb, not p21 or cdc25C. This option would be correct if the virus specifically altered those proteins."
+      },
+      {
+        "text": "E2F transcription factor and BAX apoptosis regulator",
+        "isCorrect": false,
+        "rationale": "E2F is released when Rb is inactivated, and BAX mediates apoptosis; HPV targets upstream tumor suppressors rather than directly targeting E2F or BAX. This would be correct only if viral proteins directly bound these factors."
+      },
+      {
+        "text": "INK family inhibitors and Cip Kip family members",
+        "isCorrect": false,
+        "rationale": "INK and Cip/Kip families are Cdk inhibitors; HPV E6/E7 target p53 and Rb specifically, so this distractor would be correct only if the virus targeted CdkI families."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed chemotherapeutic agent primarily forms DNA crosslinks and is grouped with alkylating-like platinum compounds that damage DNA in G1-targeted therapies?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Cisplatin platinum agent forming DNA crosslinks",
+        "isCorrect": true,
+        "rationale": "The lecture groups platinum agents such as cisplatin among drugs that target DNA and lists cisplatin specifically; it forms DNA crosslinks consistent with the slide grouping."
+      },
+      {
+        "text": "Methotrexate folate antagonist decreasing thymidine",
+        "isCorrect": false,
+        "rationale": "Methotrexate inhibits thymidine synthesis and is an S-phase targeting agent, not a platinum crosslinker. This would be correct if the question asked about S-phase antimetabolites."
+      },
+      {
+        "text": "Bleomycin causing G2 DNA strand breaks and apoptosis",
+        "isCorrect": false,
+        "rationale": "Bleomycin targets G2 DNA and triggers apoptosis per the lecture; it does not form platinum-like crosslinks. This would be correct for a G2-targeting agent question."
+      },
+      {
+        "text": "6-mercaptopurine purine analog interfering with replication",
+        "isCorrect": false,
+        "rationale": "6-MP is an S-phase antimetabolite affecting purine synthesis, not a platinum crosslinking agent. It would be correct if the stem asked about purine analogs."
+      },
+      {
+        "text": "Vincristine microtubule inhibitor disrupting mitosis",
+        "isCorrect": false,
+        "rationale": "Vincristine disrupts microtubules during mitosis (M phase), not DNA crosslinking like cisplatin. This would be correct in a question about mitotic inhibitors."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory method described in the lecture labels newly synthesized DNA to quantify the fraction of cells actively replicating their genome?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe lab methods associated with measuring cell cycle and apoptosis",
+    "options": [
+      {
+        "text": "BrdU incorporation labeling newly synthesized DNA",
+        "isCorrect": true,
+        "rationale": "The lecture lists BrdU or tagged thymidine labeling of newly synthesized DNA as a method to indicate cells in S-phase."
+      },
+      {
+        "text": "CFSE cytoplasmic dye halving with each division",
+        "isCorrect": false,
+        "rationale": "CFSE labels proteins and its signal halves with each division, measuring proliferation but not directly labeling newly synthesized DNA. This would be correct for tracking cell divisions over time."
+      },
+      {
+        "text": "Flow cytometry measuring cell surface antigen expression",
+        "isCorrect": false,
+        "rationale": "Flow cytometry can measure DNA synthesis when combined with BrdU or other markers; measuring surface antigens alone does not label newly synthesized DNA. This would be correct if DNA dyes or BrdU were specified."
+      },
+      {
+        "text": "Gel electrophoresis showing DNA laddering in apoptosis",
+        "isCorrect": false,
+        "rationale": "DNA laddering on gels is a method to detect apoptosis, not to label newly synthesized DNA. This would be correct in a question about apoptosis assays."
+      },
+      {
+        "text": "Antibody labeling of caspases to detect apoptosis",
+        "isCorrect": false,
+        "rationale": "Antibody labeling of caspases detects apoptotic proteins, not newly synthesized DNA. This would be correct for apoptosis measurement rather than S-phase labeling."
+      }
+    ]
+  },
+  {
+    "question": "A cell line shows persistent E2F-driven transcription despite normal cyclin levels. Which tumor suppressor protein, when mutated or absent, would most directly explain unchecked E2F activity?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "Retinoblastoma protein failing to bind E2F",
+        "isCorrect": true,
+        "rationale": "The lecture explains that Rb binds E2F to restrain transcription; Rb mutation or loss leads to excessive E2F activity and uncontrolled division."
+      },
+      {
+        "text": "p53 loss preventing DNA damage induced arrest",
+        "isCorrect": false,
+        "rationale": "p53 loss impairs DNA damage responses and p21 induction but does not directly sequester E2F; this would be correct if the phenotype were failure to arrest after damage rather than E2F overactivity."
+      },
+      {
+        "text": "p21 overexpression inhibiting Cdk4 and halting cycle",
+        "isCorrect": false,
+        "rationale": "p21 inhibits Cdks and would reduce E2F release by preventing Rb phosphorylation; overexpression would not explain persistent E2F activity. This would be correct if E2F were suppressed rather than active."
+      },
+      {
+        "text": "Cyclin E deficiency preventing Cdk2 activation",
+        "isCorrect": false,
+        "rationale": "Cyclin E deficiency would reduce Cdk2 activity and limit Rb phosphorylation, decreasing E2F activity; it would not explain increased E2F. This would be correct if E2F were low."
+      },
+      {
+        "text": "cdc25C hyperactivity promoting premature mitosis entry",
+        "isCorrect": false,
+        "rationale": "cdc25C activates Cdk1 for mitosis and does not directly regulate Rb–E2F in G1/S; this would be correct in a G2/M regulation context."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed drug decreases thymidine synthesis and thereby pushes dividing cells toward apoptosis while also being noted to inhibit a specific signaling pathway?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Methotrexate folate antagonist decreasing thymidine synthesis",
+        "isCorrect": true,
+        "rationale": "The lecture states MTX decreases thymidine synthesis, leading to ROS and apoptosis, and notes it has been found to be a JAK-STAT inhibitor."
+      },
+      {
+        "text": "6-mercaptopurine purine analog interfering with replication",
+        "isCorrect": false,
+        "rationale": "6-MP is an S-phase antimetabolite affecting purine synthesis, not primarily decreasing thymidine or inhibiting JAK-STAT. This would be correct if the stem asked about purine analogs."
+      },
+      {
+        "text": "Cisplatin platinum agent forming DNA crosslinks and adducts",
+        "isCorrect": false,
+        "rationale": "Cisplatin forms DNA crosslinks and is grouped with alkylating agents; it does not primarily decrease thymidine synthesis. This would be correct for DNA crosslinking agents."
+      },
+      {
+        "text": "Bleomycin causing G2 DNA strand breaks and apoptosis",
+        "isCorrect": false,
+        "rationale": "Bleomycin targets G2 DNA and triggers apoptosis but does not decrease thymidine synthesis or inhibit JAK-STAT. This would be correct for G2-targeting drugs."
+      },
+      {
+        "text": "Hydroxyurea ribonucleotide reductase inhibitor reducing dNTPs",
+        "isCorrect": false,
+        "rationale": "Hydroxyurea reduces dNTP pools by inhibiting ribonucleotide reductase, not thymidine synthesis specifically; it would be correct if the question asked about dNTP depletion."
+      }
+    ]
+  },
+  {
+    "question": "A tumor sample shows loss-of-function mutations in the gene encoding the protein called the 'guardian of the genome.' Which cellular response is most directly impaired by this mutation?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Identify connections between cell cycle regulation and cancer risk and progression",
+    "options": [
+      {
+        "text": "p53 mediated induction of p21 and cell-cycle arrest",
+        "isCorrect": true,
+        "rationale": "The lecture describes p53 as the 'guardian of the genome' and notes p21 is induced to halt the cycle for DNA repair; p53 loss impairs this arrest mechanism."
+      },
+      {
+        "text": "Rb binding to E2F to prevent transcriptional activation",
+        "isCorrect": false,
+        "rationale": "Rb restrains E2F, but Rb function is separate from p53; p53 mutation would not directly abolish Rb–E2F binding. This would be correct if Rb were mutated."
+      },
+      {
+        "text": "BAX activation initiating intrinsic apoptotic cascade",
+        "isCorrect": false,
+        "rationale": "BAX is activated downstream of p53 in apoptosis, but p53 loss does not directly eliminate BAX function; this would be correct if BAX itself were mutated or not induced."
+      },
+      {
+        "text": "cdc25C removal of inhibitory phosphates from Cdk1",
+        "isCorrect": false,
+        "rationale": "cdc25C regulates G2→M transition and is not the primary p53-mediated arrest mechanism; this would be correct in a G2/M checkpoint defect scenario."
+      },
+      {
+        "text": "Cyclin E overexpression driving premature S-phase entry",
+        "isCorrect": false,
+        "rationale": "Cyclin E promotes S-phase but is not the direct consequence of p53 loss; this would be correct if cyclin regulation were altered independently."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental label halves its intracellular signal with each cell division and is therefore useful for tracking the number of cell divisions over time?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe lab methods associated with measuring cell cycle and apoptosis",
+    "options": [
+      {
+        "text": "Carboxyfluorescein succinimidyl ester CFSE cytoplasmic dye",
+        "isCorrect": true,
+        "rationale": "The lecture describes CFSE as a non-specific protein label whose signal halves with each division, allowing tracking of cell divisions."
+      },
+      {
+        "text": "BrdU incorporation labeling newly synthesized DNA strands",
+        "isCorrect": false,
+        "rationale": "BrdU labels newly synthesized DNA to identify S-phase cells but does not halve signal with each division; it would be correct for measuring S-phase fraction."
+      },
+      {
+        "text": "Annexin V binding phosphatidylserine on apoptotic cells",
+        "isCorrect": false,
+        "rationale": "Annexin V detects apoptosis by binding exposed phosphatidylserine, not by halving signal with division. This would be correct for apoptosis assays."
+      },
+      {
+        "text": "Propidium iodide staining total DNA content for cycle",
+        "isCorrect": false,
+        "rationale": "Propidium iodide measures DNA content to determine cell-cycle phase distribution but does not halve signal per division. This would be correct for DNA content analysis."
+      },
+      {
+        "text": "TUNEL assay labeling fragmented DNA in apoptosis",
+        "isCorrect": false,
+        "rationale": "TUNEL detects DNA fragmentation in apoptosis, not progressive halving of a cytoplasmic label. This would be correct for apoptosis detection."
+      }
+    ]
+  },
+  {
+    "question": "Which protein family listed in the lecture contains members that directly activate caspase cascades when engaged by extracellular death ligands?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Describe apoptotic pathway, listing most important proteins",
+    "options": [
+      {
+        "text": "TNFR death receptor family initiating extrinsic apoptosis",
+        "isCorrect": true,
+        "rationale": "The lecture names the TNFR family and associated death receptors as mediators of extrinsic apoptosis via FADD and caspase 8 activation."
+      },
+      {
+        "text": "BCL family including BAX promoting intrinsic apoptosis",
+        "isCorrect": false,
+        "rationale": "BAX and BCL family members mediate intrinsic mitochondrial apoptosis, not direct activation by extracellular death ligands. This would be correct for intrinsic pathway questions."
+      },
+      {
+        "text": "APAF1 forming apoptosome with cytochrome C release",
+        "isCorrect": false,
+        "rationale": "APAF-1 participates in the intrinsic pathway by forming the apoptosome with cytochrome C and activating caspase 9, not direct death receptor signaling. This would be correct for intrinsic cascade activation."
+      },
+      {
+        "text": "Caspase 9 initiator caspase of intrinsic apoptotic pathway",
+        "isCorrect": false,
+        "rationale": "Caspase 9 is the intrinsic pathway initiator activated by APAF-1, not by death receptors; this would be correct in intrinsic pathway contexts."
+      },
+      {
+        "text": "FADD adaptor protein linking receptors to caspase activation",
+        "isCorrect": false,
+        "rationale": "FADD links death receptors to caspase 8 activation but is not itself a receptor family; this would be correct if the question asked for adaptor proteins rather than receptor families."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s tumor shows high levels of phosphorylated Rb and increased E2F target gene expression. Which upstream change best explains these findings?",
+    "difficulty_order": "3rd/2nd/3rd",
+    "cited_learning_objective": "Identify connections between cell cycle regulation and cancer risk and progression",
+    "options": [
+      {
+        "text": "Overactive Cyclin D–Cdk4/6 complex increasing phosphorylation",
+        "isCorrect": true,
+        "rationale": "Cyclin–Cdk complexes phosphorylate Rb to free E2F; overactive Cyclin D–Cdk4/6 would increase Rb phosphorylation and E2F-driven transcription as described in the lecture."
+      },
+      {
+        "text": "Loss of p53 preventing p21 mediated Cdk inhibition",
+        "isCorrect": false,
+        "rationale": "p53 loss reduces p21 induction and can increase Cdk activity indirectly, but the most direct cause of increased Rb phosphorylation is Cyclin–Cdk overactivity. This option would be correct if p53 loss were shown to reduce p21 in the tumor."
+      },
+      {
+        "text": "Increased p21 expression directly inhibiting Cdk activity",
+        "isCorrect": false,
+        "rationale": "Increased p21 would inhibit Cdks and reduce Rb phosphorylation, opposite to the observed findings. This would be correct if Rb phosphorylation were decreased."
+      },
+      {
+        "text": "cdc25C overexpression removing inhibitory Cdk1 phosphates",
+        "isCorrect": false,
+        "rationale": "cdc25C activates Cdk1 for mitosis and does not directly cause Rb phosphorylation in G1; this would be correct in a G2/M activation scenario."
+      },
+      {
+        "text": "Enhanced BAX expression promoting apoptotic signaling",
+        "isCorrect": false,
+        "rationale": "BAX promotes apoptosis and would not explain increased Rb phosphorylation and E2F activity; this would be correct if the tumor were undergoing apoptosis."
+      }
+    ]
+  },
+  {
+    "question": "A clinician considers using a drug that causes DNA strand breaks during G2 and triggers apoptosis. Which agent from the lecture best fits this mechanism?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Bleomycin causing G2 DNA damage and apoptosis",
+        "isCorrect": true,
+        "rationale": "The lecture explicitly states Bleomycin targets G2 DNA and triggers apoptosis, matching the described mechanism."
+      },
+      {
+        "text": "Cisplatin forming crosslinks primarily active in S phase",
+        "isCorrect": false,
+        "rationale": "Cisplatin forms DNA crosslinks and is not described as specifically G2-targeting in the lecture; this would be correct if crosslinking during replication were emphasized."
+      },
+      {
+        "text": "6-mercaptopurine purine analog interfering with S-phase",
+        "isCorrect": false,
+        "rationale": "6-MP is an S-phase antimetabolite affecting purine synthesis, not a G2 DNA strand breaker. This would be correct for S-phase targeting agents."
+      },
+      {
+        "text": "Vincristine microtubule inhibitor disrupting mitotic spindle",
+        "isCorrect": false,
+        "rationale": "Vincristine disrupts mitosis (M phase) via microtubule inhibition, not G2 DNA damage. This would be correct for mitotic inhibitors."
+      },
+      {
+        "text": "Methotrexate folate antagonist decreasing thymidine pools",
+        "isCorrect": false,
+        "rationale": "Methotrexate decreases thymidine synthesis and affects S-phase cells, not specifically causing G2 strand breaks. This would be correct for antimetabolite therapy."
+      }
+    ]
+  },
+  {
+    "question": "Which cell type category from the lecture describes tissues that rarely enter a nondividing state and continuously proliferate with a shortened G1 phase?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "Labile cells continuously dividing with shortened G1",
+        "isCorrect": true,
+        "rationale": "The lecture defines labile cells as those that rarely enter G0 and are in constant division with a shortened G1, such as bone marrow and gut epithelium."
+      },
+      {
+        "text": "Stable cells quiescent but able to reenter cycle",
+        "isCorrect": false,
+        "rationale": "Stable (quiescent) cells can enter G0 and later reenter the cycle (e.g., hepatocytes), not continuously divide. This would be correct if the question asked about cells that can reenter cycle."
+      },
+      {
+        "text": "Permanent cells terminally differentiated and nonproliferative",
+        "isCorrect": false,
+        "rationale": "Permanent cells enter G0 and do not reenter the cycle (e.g., neurons), opposite of labile behavior. This would be correct for nonproliferative tissues."
+      },
+      {
+        "text": "Stem cells with unlimited replicative potential and telomerase",
+        "isCorrect": false,
+        "rationale": "Stem cells have high replicative potential but the lecture categorized cells as labile, stable, or permanent; stem cells were not listed in that classification. This would be correct if stem cell behavior were the focus."
+      },
+      {
+        "text": "Differentiated epithelial cells that never divide postnatally",
+        "isCorrect": false,
+        "rationale": "Many epithelial cells are labile and do divide; stating they never divide contradicts the lecture. This would be correct only for terminally differentiated, nondividing cells."
+      }
+    ]
+  },
+  {
+    "question": "A tumor suppressor that, when phosphorylated by cyclin–Cdk complexes, releases a transcription factor network enabling S-phase gene expression is which protein?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "Retinoblastoma protein phosphorylated to free E2F",
+        "isCorrect": true,
+        "rationale": "The lecture explains Cyclin/Cdk complexes phosphorylate Rb, freeing E2F to regulate transcription necessary for S-phase entry."
+      },
+      {
+        "text": "p53 phosphorylated to induce p21 and arrest cycle",
+        "isCorrect": false,
+        "rationale": "p53 induces p21 to halt the cycle in response to damage; phosphorylation of p53 is not the mechanism that frees E2F. This would be correct for DNA damage response questions."
+      },
+      {
+        "text": "Cyclin E phosphorylated to activate Cdk2 for S-phase",
+        "isCorrect": false,
+        "rationale": "Cyclin E binds Cdk2 to promote S-phase but it is not the tumor suppressor that sequesters E2F; this would be correct if asking about activator complexes."
+      },
+      {
+        "text": "p21 binding Cdk2 to prevent S-phase progression",
+        "isCorrect": false,
+        "rationale": "p21 inhibits Cdks and would prevent E2F release by reducing Rb phosphorylation, not free E2F. This would be correct in arrest scenarios."
+      },
+      {
+        "text": "E2F transcription factor directly repressing S-phase genes",
+        "isCorrect": false,
+        "rationale": "E2F activates, not represses, S-phase genes and is released when Rb is phosphorylated; this would be correct only if E2F were described as a repressor."
+      }
+    ]
+  },
+  {
+    "question": "Which mitotic inhibitor listed in the lecture acts by disrupting microtubule dynamics and is commonly used to interfere with spindle formation during cell division?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Vincristine microtubule inhibitor disrupting mitotic spindle",
+        "isCorrect": true,
+        "rationale": "The lecture lists vincristine (and vinblastine, paclitaxel) as microtubule inhibitors used to disrupt mitosis by affecting spindle dynamics."
+      },
+      {
+        "text": "Cisplatin platinum agent forming DNA crosslinks and adducts",
+        "isCorrect": false,
+        "rationale": "Cisplatin targets DNA crosslinking rather than microtubules; this would be correct for DNA-damaging agents."
+      },
+      {
+        "text": "Methotrexate folate antagonist decreasing thymidine synthesis",
+        "isCorrect": false,
+        "rationale": "Methotrexate is an antimetabolite affecting thymidine synthesis, not a microtubule inhibitor. This would be correct for S-phase targeting drugs."
+      },
+      {
+        "text": "Bleomycin causing G2 DNA strand breaks and apoptosis",
+        "isCorrect": false,
+        "rationale": "Bleomycin targets G2 DNA and induces apoptosis, not microtubules. This would be correct for G2-targeting agents."
+      },
+      {
+        "text": "6-mercaptopurine purine analog interfering with replication",
+        "isCorrect": false,
+        "rationale": "6-MP is an S-phase purine analog, not a mitotic spindle disruptor. This would be correct for antimetabolite therapy."
+      }
+    ]
+  },
+  {
+    "question": "Which phosphatase must remove inhibitory tyrosine phosphorylations to allow the Cdk that initiates mitosis to bind its cyclin partner?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "cdc25C phosphatase removing inhibitory Cdk1 phosphates",
+        "isCorrect": true,
+        "rationale": "The lecture names cdc25C as the enzyme that removes inhibitory phosphates from Cdk1, permitting Cyclin B binding and mitotic entry."
+      },
+      {
+        "text": "p21 Cdk inhibitor binding and blocking Cdk activity",
+        "isCorrect": false,
+        "rationale": "p21 inhibits Cdks by binding them; it does not remove inhibitory phosphates. This would be correct if the question asked about Cdk inhibition rather than activation."
+      },
+      {
+        "text": "Wee1 kinase adding inhibitory phosphates to Cdk1",
+        "isCorrect": false,
+        "rationale": "Wee1 adds inhibitory phosphates to Cdk1; the correct activator is cdc25C which removes them. This option would be correct if the question asked about inhibitory phosphorylation."
+      },
+      {
+        "text": "APAF1 forming apoptosome with cytochrome C release",
+        "isCorrect": false,
+        "rationale": "APAF-1 is involved in intrinsic apoptosis, not Cdk1 dephosphorylation. This would be correct in apoptosis pathway questions."
+      },
+      {
+        "text": "Cyclin B binding Cdk1 to form active mitotic complex",
+        "isCorrect": false,
+        "rationale": "Cyclin B binds Cdk1 once inhibitory phosphates are removed; cyclin binding is necessary but the phosphatase that removes inhibition is cdc25C. This would be correct if the question asked about the active complex rather than the activating phosphatase."
+      }
+    ]
+  },
+  {
+    "question": "A flow cytometry histogram shows a large S-phase peak. Which Cdk is primarily associated with S-phase transition according to the lecture?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "Cdk2 primarily involved in S-phase transition",
+        "isCorrect": true,
+        "rationale": "The lecture states Cdk2 is involved in the S-phase transition, consistent with its role in late G1/S progression."
+      },
+      {
+        "text": "Cdk4 and Cdk6 promoting early G1 progression",
+        "isCorrect": false,
+        "rationale": "Cdk4/6 promote G1 progression but are not the primary S-phase Cdks; this would be correct for early G1 regulation."
+      },
+      {
+        "text": "Cdk1 critical for initiation of mitosis M entry",
+        "isCorrect": false,
+        "rationale": "Cdk1 is critical for mitotic initiation (M phase), not the S-phase transition. This would be correct for G2→M control."
+      },
+      {
+        "text": "p21 Cdk inhibitor halting cycle at G1 checkpoint",
+        "isCorrect": false,
+        "rationale": "p21 inhibits Cdks to halt the cycle and is not itself a Cdk promoting S-phase; this would be correct if the histogram showed arrest rather than S-phase accumulation."
+      },
+      {
+        "text": "cdc25C phosphatase activating Cdk1 for mitosis",
+        "isCorrect": false,
+        "rationale": "cdc25C activates Cdk1 for mitosis and is not associated with S-phase transition. This would be correct in a mitotic activation context."
+      }
+    ]
+  },
+  {
+    "question": "Which apoptotic initiator is activated by cytochrome C release and formation of the apoptosome in the intrinsic pathway?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe apoptotic pathway, listing most important proteins",
+    "options": [
+      {
+        "text": "Caspase 9 initiator activated by apoptosome formation",
+        "isCorrect": true,
+        "rationale": "The lecture lists cytochrome C, APAF-1, and caspase 9 as key players in the intrinsic apoptotic pathway, with caspase 9 activated by the apoptosome."
+      },
+      {
+        "text": "Caspase 8 initiator activated by death receptor signaling",
+        "isCorrect": false,
+        "rationale": "Caspase 8 is the extrinsic pathway initiator activated by death receptors and FADD, not by cytochrome C. This would be correct for extrinsic apoptosis."
+      },
+      {
+        "text": "BAX proapoptotic protein permeabilizing mitochondrial membrane",
+        "isCorrect": false,
+        "rationale": "BAX promotes cytochrome C release upstream of apoptosome formation but is not the caspase activated by the apoptosome. This would be correct if asking about mitochondrial permeabilization."
+      },
+      {
+        "text": "APAF1 adaptor assembling apoptosome with cytochrome C",
+        "isCorrect": false,
+        "rationale": "APAF-1 is the adaptor that forms the apoptosome and helps activate caspase 9; it is not the caspase itself. This would be correct if the question asked for the adaptor protein."
+      },
+      {
+        "text": "TNFR death receptor family initiating extrinsic apoptosis",
+        "isCorrect": false,
+        "rationale": "TNFR family members initiate extrinsic apoptosis via caspase 8, not intrinsic caspase 9 activation by cytochrome C. This would be correct for death receptor signaling."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed measurement technique reveals DNA fragmentation as a ladder pattern indicative of programmed cell death?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe lab methods associated with measuring cell cycle and apoptosis",
+    "options": [
+      {
+        "text": "Gel electrophoresis revealing DNA laddering in apoptosis",
+        "isCorrect": true,
+        "rationale": "The lecture mentions that gels reveal laddering as a method to detect apoptosis, reflecting internucleosomal DNA fragmentation."
+      },
+      {
+        "text": "Flow cytometry measuring BrdU incorporation in S-phase",
+        "isCorrect": false,
+        "rationale": "Flow cytometry with BrdU measures DNA synthesis and S-phase fraction, not DNA laddering. This would be correct for cell-cycle analysis."
+      },
+      {
+        "text": "CFSE dye dilution tracking successive cell divisions",
+        "isCorrect": false,
+        "rationale": "CFSE dilution tracks cell divisions by halving signal, not DNA fragmentation. This would be correct for proliferation assays."
+      },
+      {
+        "text": "Annexin V staining detecting phosphatidylserine exposure",
+        "isCorrect": false,
+        "rationale": "Annexin V detects early apoptosis via phosphatidylserine exposure but does not produce a DNA ladder on gels. This would be correct for apoptosis flow assays."
+      },
+      {
+        "text": "Propidium iodide staining assessing total DNA content",
+        "isCorrect": false,
+        "rationale": "Propidium iodide measures DNA content for cell-cycle phase distribution, not DNA laddering. This would be correct for cell-cycle histograms."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s tumor harbors an HPV strain expressing proteins that prevent Rb from binding its transcriptional partner. Which viral protein is responsible for this action according to the lecture?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Provide clinically relevant examples of regulatory dysfunction related to the cell cycle, notably HPV and associated proteins",
+    "options": [
+      {
+        "text": "Viral E7 protein binding Rb and preventing binding",
+        "isCorrect": true,
+        "rationale": "The lecture states HPV E7 binds Rb and prevents RB binding to E2F, thereby inhibiting tumor suppressor activity."
+      },
+      {
+        "text": "Viral E6 protein binding p53 and promoting degradation",
+        "isCorrect": false,
+        "rationale": "E6 targets p53 for degradation; while oncogenic, it does not directly prevent Rb–E2F binding. This would be correct for p53-targeting effects."
+      },
+      {
+        "text": "Viral L1 capsid protein mediating viral entry into cells",
+        "isCorrect": false,
+        "rationale": "L1 is a structural capsid protein involved in viral entry and is not responsible for Rb inactivation. This would be correct for questions about viral structure."
+      },
+      {
+        "text": "Viral E2 regulatory protein controlling replication origin",
+        "isCorrect": false,
+        "rationale": "E2 regulates viral replication and transcription but is not the primary Rb-binding oncoprotein; this would be correct if the question asked about replication control."
+      },
+      {
+        "text": "Viral E5 protein modulating growth factor receptor signaling",
+        "isCorrect": false,
+        "rationale": "E5 can affect growth factor signaling but is not the main Rb-binding protein; this would be correct if the stem focused on receptor modulation."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed protein is described as a master switch for intrinsic apoptosis and is activated downstream of p53?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe apoptotic pathway, listing most important proteins",
+    "options": [
+      {
+        "text": "BAX proapoptotic protein acting as intrinsic switch",
+        "isCorrect": true,
+        "rationale": "The lecture names BAX as an apoptosis master switch activated by p53, mediating mitochondrial permeabilization in the intrinsic pathway."
+      },
+      {
+        "text": "Caspase 8 initiator of extrinsic death receptor pathway",
+        "isCorrect": false,
+        "rationale": "Caspase 8 is the extrinsic initiator activated by death receptors, not the intrinsic BAX master switch. This would be correct for extrinsic apoptosis."
+      },
+      {
+        "text": "APAF1 adaptor assembling apoptosome with cytochrome C",
+        "isCorrect": false,
+        "rationale": "APAF-1 forms the apoptosome downstream of cytochrome C release but is not described as the master switch activated by p53. This would be correct for apoptosome formation."
+      },
+      {
+        "text": "p21 Cdk inhibitor halting cell-cycle progression at G1",
+        "isCorrect": false,
+        "rationale": "p21 is a Cdk inhibitor induced by p53 to halt the cell cycle, not the intrinsic apoptosis master switch. This would be correct for cell-cycle arrest mechanisms."
+      },
+      {
+        "text": "TNFR death receptor family initiating extrinsic apoptosis",
+        "isCorrect": false,
+        "rationale": "TNFR family members initiate extrinsic apoptosis and are not the intrinsic BAX switch; this would be correct for receptor-mediated apoptosis."
+      }
+    ]
+  },
+  {
+    "question": "A novel tumor shows inability to remove inhibitory tyrosine phosphorylation from the mitotic Cdk, preventing mitotic entry. Which enzyme deficiency best explains this block?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "cdc25C phosphatase deficiency preventing Cdk1 activation",
+        "isCorrect": true,
+        "rationale": "The lecture explains that cdc25C removes inhibitory phosphates from Cdk1; deficiency would keep Cdk1 inactive and block mitotic entry."
+      },
+      {
+        "text": "Wee1 kinase deficiency preventing addition of inhibitory phosphates",
+        "isCorrect": false,
+        "rationale": "Wee1 adds inhibitory phosphates; its deficiency would reduce inhibitory phosphorylation and favor mitotic entry, opposite the observed block. This would be correct if mitotic entry were premature."
+      },
+      {
+        "text": "p21 overexpression inhibiting Cdk complexes in G1",
+        "isCorrect": false,
+        "rationale": "p21 inhibits Cdks mainly in G1 and would not specifically prevent removal of inhibitory tyrosine phosphates from Cdk1; this would be correct for G1 arrest."
+      },
+      {
+        "text": "Cyclin B absence preventing Cdk1 complex formation",
+        "isCorrect": false,
+        "rationale": "Absence of Cyclin B would prevent active Cdk1–Cyclin B complex formation and block mitosis, but the stem specifies inability to remove inhibitory phosphates, implicating cdc25C. This option would be correct if cyclin levels were deficient."
+      },
+      {
+        "text": "APAF1 mutation blocking apoptosome mediated caspase activation",
+        "isCorrect": false,
+        "rationale": "APAF1 is involved in apoptosis and unrelated to Cdk1 dephosphorylation; this would be correct in an apoptosis defect scenario."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed family includes p21 and p27 and functions to inhibit cyclin–Cdk activity?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "Cip Kip family including p21 and p27 inhibitors",
+        "isCorrect": true,
+        "rationale": "The lecture names the Cip/Kip family (p21, p27) as Cdk inhibitors that bind Cdks to halt progression."
+      },
+      {
+        "text": "INK family including p16 and p18 inhibitors",
+        "isCorrect": false,
+        "rationale": "The INK family includes p16 and p18, not p21/p27; this would be correct if the question asked about INK members."
+      },
+      {
+        "text": "BCL family including BAX and antiapoptotic members",
+        "isCorrect": false,
+        "rationale": "BCL family members regulate apoptosis, not direct Cdk inhibition; this would be correct for apoptosis regulation questions."
+      },
+      {
+        "text": "TNFR family including death receptors and FADD adaptor",
+        "isCorrect": false,
+        "rationale": "TNFR family mediates extrinsic apoptosis and does not include p21/p27; this would be correct for extrinsic pathway topics."
+      },
+      {
+        "text": "Cyclin family including Cyclin D and Cyclin E",
+        "isCorrect": false,
+        "rationale": "Cyclins promote Cdk activity and include Cyclin D/E, not Cdk inhibitors; this would be correct for activator family identification."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s tumor shows increased reactive oxygen species after treatment with an agent that reduces thymidine synthesis. Which drug from the lecture most likely produced this effect?",
+    "difficulty_order": "3rd/3rd/3rd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Methotrexate decreasing thymidine and increasing ROS",
+        "isCorrect": true,
+        "rationale": "The lecture notes MTX decreases thymidine synthesis leading to excess ROS and pushing dividing cells toward apoptosis, matching the described effect."
+      },
+      {
+        "text": "6-mercaptopurine purine analog causing replication stress",
+        "isCorrect": false,
+        "rationale": "6-MP is a purine analog causing replication interference but the lecture specifically links ROS increase to MTX; this option would be correct if ROS generation were attributed to 6-MP in the slides."
+      },
+      {
+        "text": "Cisplatin forming DNA crosslinks and causing apoptosis",
+        "isCorrect": false,
+        "rationale": "Cisplatin forms DNA crosslinks and induces apoptosis but the lecture associates ROS from thymidine depletion with MTX, not cisplatin. This would be correct for crosslink-induced apoptosis."
+      },
+      {
+        "text": "Bleomycin inducing G2 DNA breaks and cell death",
+        "isCorrect": false,
+        "rationale": "Bleomycin causes G2 DNA damage and apoptosis but is not described as decreasing thymidine or increasing ROS via that mechanism. This would be correct for G2-targeted DNA damage."
+      },
+      {
+        "text": "Hydroxyurea inhibiting ribonucleotide reductase reducing dNTPs",
+        "isCorrect": false,
+        "rationale": "Hydroxyurea reduces dNTP pools by inhibiting ribonucleotide reductase and can cause replication stress, but the lecture specifically links ROS to MTX's thymidine decrease. This would be correct if the stem focused on dNTP depletion."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed method can be used with flow cytometry to determine the percentage of cells actively synthesizing DNA?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Describe lab methods associated with measuring cell cycle and apoptosis",
+    "options": [
+      {
+        "text": "BrdU incorporation detected by flow cytometry",
+        "isCorrect": true,
+        "rationale": "The lecture states BrdU or tagged thymidine labeling can be measured by flow cytometry to determine the fraction of cells in S-phase."
+      },
+      {
+        "text": "CFSE dilution measured by flow cytometry over time",
+        "isCorrect": false,
+        "rationale": "CFSE dilution tracks cell divisions by halving signal and can be measured by flow cytometry, but it indicates proliferation history rather than instantaneous DNA synthesis. This would be correct for division tracking."
+      },
+      {
+        "text": "Propidium iodide DNA content histogram by flow cytometry",
+        "isCorrect": false,
+        "rationale": "Propidium iodide measures total DNA content to infer cell-cycle phase distribution but BrdU more directly labels active DNA synthesis. This would be correct for DNA content analysis."
+      },
+      {
+        "text": "Annexin V staining combined with flow cytometry for apoptosis",
+        "isCorrect": false,
+        "rationale": "Annexin V detects apoptotic cells via phosphatidylserine exposure and is not a direct measure of DNA synthesis. This would be correct for apoptosis detection."
+      },
+      {
+        "text": "TUNEL assay labeling fragmented DNA for apoptotic cells",
+        "isCorrect": false,
+        "rationale": "TUNEL detects DNA fragmentation in apoptosis and is not used to measure active DNA synthesis. This would be correct for apoptosis assays."
+      }
+    ]
+  },
+  {
+    "question": "A tumor suppressor that, when bound by a viral oncoprotein, is targeted for premature degradation leading to loss of DNA damage surveillance is which protein?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Provide clinically relevant examples of regulatory dysfunction related to the cell cycle, notably HPV and associated proteins",
+    "options": [
+      {
+        "text": "p53 tumor suppressor bound by viral E6 and degraded",
+        "isCorrect": true,
+        "rationale": "The lecture states HPV E6 binds p53 and promotes its premature degradation, impairing DNA damage surveillance and p21 induction."
+      },
+      {
+        "text": "Rb tumor suppressor bound by viral E7 preventing binding",
+        "isCorrect": false,
+        "rationale": "E7 binds Rb and prevents Rb–E2F interaction but does not target Rb for degradation per the lecture; this would be correct if degradation were described."
+      },
+      {
+        "text": "p21 Cdk inhibitor sequestering Cdk4 to halt cycle",
+        "isCorrect": false,
+        "rationale": "p21 is induced by p53 to inhibit Cdks; it is not the protein targeted for degradation by HPV E6. This would be correct if the virus targeted Cdk inhibitors."
+      },
+      {
+        "text": "Cyclin D promoting Cdk4/6 mediated G1 progression",
+        "isCorrect": false,
+        "rationale": "Cyclin D promotes G1 progression and is not the tumor suppressor degraded by viral proteins. This would be correct for activator-focused questions."
+      },
+      {
+        "text": "E2F transcription factor driving S-phase gene expression",
+        "isCorrect": false,
+        "rationale": "E2F is released when Rb is inactivated and is not the tumor suppressor degraded by E6; this would be correct if E2F were directly targeted."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed enzyme family phosphorylates substrate proteins at serine and threonine residues to drive cell-cycle transitions when activated by cyclins?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "Cyclin dependent kinases phosphorylating serine threonine",
+        "isCorrect": true,
+        "rationale": "The lecture explains that cyclin–Cdk complexes phosphorylate substrate proteins at serine and threonine residues to regulate cell-cycle progression."
+      },
+      {
+        "text": "Tyrosine kinases phosphorylating receptor intracellular domains",
+        "isCorrect": false,
+        "rationale": "Tyrosine kinases phosphorylate tyrosine residues often in signaling cascades but the lecture emphasizes Cdks phosphorylating serine/threonine in cell-cycle control. This would be correct for receptor signaling contexts."
+      },
+      {
+        "text": "Phosphatases removing phosphates to inactivate kinases",
+        "isCorrect": false,
+        "rationale": "Phosphatases remove phosphates (e.g., cdc25C removes inhibitory phosphates) but they do not phosphorylate serine/threonine residues; this would be correct for dephosphorylation roles."
+      },
+      {
+        "text": "Proteases cleaving proteins to regulate cell-cycle progression",
+        "isCorrect": false,
+        "rationale": "Proteases cleave proteins and can regulate processes but are not the serine/threonine kinases activated by cyclins. This would be correct in proteolytic regulation contexts."
+      },
+      {
+        "text": "Ubiquitin ligases tagging proteins for proteasomal degradation",
+        "isCorrect": false,
+        "rationale": "Ubiquitin ligases tag proteins for degradation (e.g., p53 turnover) but do not phosphorylate serine/threonine residues; this would be correct for protein turnover mechanisms."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s tumor shows absent p21 expression despite intact p53. Which immediate consequence described in the lecture would most likely follow in terms of Cdk activity?",
+    "difficulty_order": "3rd/3rd/3rd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "Uninhibited Cdk4 activity leading to increased Rb phosphorylation",
+        "isCorrect": true,
+        "rationale": "p21 binds Cdk4 to halt the cycle; absent p21 would leave Cdk4 uninhibited, increasing Rb phosphorylation and promoting E2F-mediated S-phase entry as described in the lecture."
+      },
+      {
+        "text": "Enhanced BAX activation causing intrinsic apoptosis cascade",
+        "isCorrect": false,
+        "rationale": "BAX activation is downstream of p53-mediated apoptotic signaling; absent p21 would more likely increase proliferation rather than directly enhance BAX-mediated apoptosis. This would be correct if p53 favored apoptosis over cell-cycle arrest."
+      },
+      {
+        "text": "cdc25C overactivity prematurely activating Cdk1 for mitosis",
+        "isCorrect": false,
+        "rationale": "cdc25C regulates Cdk1 for mitosis and is not the immediate consequence of p21 loss; this would be correct in a G2/M dysregulation scenario."
+      },
+      {
+        "text": "Increased p27 expression compensating for p21 loss",
+        "isCorrect": false,
+        "rationale": "p27 could compensate as another Cip/Kip inhibitor, but the lecture does not state this compensation occurs; this would be correct only if compensatory upregulation were demonstrated."
+      },
+      {
+        "text": "Reduced Cyclin E levels preventing S-phase entry",
+        "isCorrect": false,
+        "rationale": "Reduced Cyclin E would inhibit S-phase entry, opposite to the expected effect of absent p21. This would be correct if cyclin expression were downregulated."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed drug class includes agents such as busulfan and cyclophosphamide and is grouped with platinum compounds for DNA-damaging therapy?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "Alkylating agents including busulfan and cyclophosphamide",
+        "isCorrect": true,
+        "rationale": "The lecture groups alkylating agents (busulfan, cyclophosphamide, ifosfamide, nitrosoureas) alongside platinum agents like cisplatin as DNA-damaging therapies."
+      },
+      {
+        "text": "Antimetabolites including 6-MP and methotrexate",
+        "isCorrect": false,
+        "rationale": "Antimetabolites target S-phase processes (e.g., 6-MP, MTX) and are distinct from alkylating/platinum DNA crosslinkers. This would be correct for S-phase targeting drugs."
+      },
+      {
+        "text": "Topoisomerase inhibitors including etoposide and doxorubicin",
+        "isCorrect": false,
+        "rationale": "Topoisomerase inhibitors interfere with DNA topology during replication but the lecture specifically grouped alkylating agents with platinum compounds. This would be correct if topoisomerase inhibition were emphasized."
+      },
+      {
+        "text": "Microtubule inhibitors including vincristine and paclitaxel",
+        "isCorrect": false,
+        "rationale": "Microtubule inhibitors disrupt mitosis and are not classified with alkylating/platinum DNA-damaging agents. This would be correct for mitotic inhibitors."
+      },
+      {
+        "text": "Bleomycin family causing G2 DNA strand breaks and apoptosis",
+        "isCorrect": false,
+        "rationale": "Bleomycin targets G2 DNA and is listed separately from alkylating/platinum agents; this would be correct for G2-targeting agents."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed transcription factor family is released when its inhibitor is phosphorylated and subsequently drives expression of genes required for DNA replication?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "E2F transcription factors released to drive S-phase genes",
+        "isCorrect": true,
+        "rationale": "The lecture indicates that phosphorylation of Rb frees E2F to regulate a transcriptional network necessary for S-phase entry."
+      },
+      {
+        "text": "NF-kB family translocating to nucleus after activation",
+        "isCorrect": false,
+        "rationale": "NF-κB is a transcription factor family activated in inflammatory signaling, not the Rb-regulated S-phase drivers discussed in the lecture. This would be correct in immune signaling contexts."
+      },
+      {
+        "text": "STAT family activated by JAK-STAT signaling cascades",
+        "isCorrect": false,
+        "rationale": "STAT proteins are activated by JAK-STAT pathways and are not the Rb-controlled E2F family; this would be correct if the question targeted cytokine signaling."
+      },
+      {
+        "text": "p53 transcription factor inducing DNA repair genes",
+        "isCorrect": false,
+        "rationale": "p53 induces DNA repair and p21 but is not the E2F family that drives S-phase genes; this would be correct for DNA damage response."
+      },
+      {
+        "text": "Myc oncogene upregulating proliferation associated genes",
+        "isCorrect": false,
+        "rationale": "Myc upregulates proliferation genes but the lecture specifically highlights E2F as the transcriptional network released by Rb phosphorylation. This would be correct if Myc were the focus."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed drug is a purine analog used to target S-phase cells by interfering with nucleotide metabolism?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe simplified mechanisms of action of notable anti-cancer agents: cisplatin, 6-MP, Bleomycin, Methotrexate",
+    "options": [
+      {
+        "text": "6-mercaptopurine purine analog interfering with replication",
+        "isCorrect": true,
+        "rationale": "The lecture lists 6-MP as an S-phase targeting agent and a purine analog that interferes with nucleotide metabolism during DNA replication."
+      },
+      {
+        "text": "Methotrexate folate antagonist decreasing thymidine synthesis",
+        "isCorrect": false,
+        "rationale": "Methotrexate is an antimetabolite affecting thymidine synthesis, not a purine analog. This would be correct for thymidine synthesis inhibition."
+      },
+      {
+        "text": "Cisplatin platinum agent forming DNA crosslinks and adducts",
+        "isCorrect": false,
+        "rationale": "Cisplatin forms DNA crosslinks and is not a purine analog; this would be correct for DNA crosslinking agents."
+      },
+      {
+        "text": "Bleomycin causing G2 DNA strand breaks and apoptosis",
+        "isCorrect": false,
+        "rationale": "Bleomycin targets G2 DNA and is not a purine analog; this would be correct for G2-targeting drugs."
+      },
+      {
+        "text": "Vinblastine microtubule inhibitor disrupting mitotic spindle",
+        "isCorrect": false,
+        "rationale": "Vinblastine disrupts microtubules during mitosis and is not a purine analog; this would be correct for mitotic inhibitors."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed checkpoint assesses nutrient availability and expression of enzymes required for DNA synthesis before committing to replication?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "G1/S checkpoint monitoring nutrients and replication readiness",
+        "isCorrect": true,
+        "rationale": "The lecture describes the G1/S checkpoint as monitoring nutrients and enzymes required for DNA synthesis before commitment to S-phase."
+      },
+      {
+        "text": "G2/M checkpoint ensuring completion of DNA replication",
+        "isCorrect": false,
+        "rationale": "G2/M checkpoint monitors DNA integrity before mitosis, not nutrient readiness for S-phase. This would be correct for G2/M surveillance."
+      },
+      {
+        "text": "Spindle assembly checkpoint verifying chromosome attachment",
+        "isCorrect": false,
+        "rationale": "The spindle checkpoint ensures proper chromosome attachment during mitosis, not nutrient or replication enzyme availability. This would be correct for mitotic fidelity."
+      },
+      {
+        "text": "Restriction point in late G2 committing to mitosis",
+        "isCorrect": false,
+        "rationale": "The restriction point is classically in late G1, not late G2; this option misplaces the commitment point and would be correct only if the restriction point were redefined."
+      },
+      {
+        "text": "DNA damage checkpoint operating only during cytokinesis",
+        "isCorrect": false,
+        "rationale": "DNA damage checkpoints operate during G1, S, and G2, not exclusively during cytokinesis. This would be correct if the checkpoint timing were different."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed protein family includes members that directly bind and neutralize proapoptotic BAX to regulate mitochondrial outer membrane permeabilization?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Describe apoptotic pathway, listing most important proteins",
+    "options": [
+      {
+        "text": "BCL family including proapoptotic and antiapoptotic members",
+        "isCorrect": true,
+        "rationale": "The lecture references BAX and the BCL family as central regulators of intrinsic apoptosis, with members that can antagonize or promote BAX activity."
+      },
+      {
+        "text": "TNFR family initiating extrinsic apoptosis via death receptors",
+        "isCorrect": false,
+        "rationale": "TNFR family mediates extrinsic apoptosis and does not directly bind BAX at mitochondria; this would be correct for receptor-mediated apoptosis."
+      },
+      {
+        "text": "Caspase family executing apoptosis by proteolytic cleavage",
+        "isCorrect": false,
+        "rationale": "Caspases execute apoptosis downstream of mitochondrial permeabilization but do not directly neutralize BAX; this would be correct for executioner functions."
+      },
+      {
+        "text": "APAF1 adaptor assembling apoptosome with cytochrome C",
+        "isCorrect": false,
+        "rationale": "APAF-1 forms the apoptosome after cytochrome C release and does not directly bind BAX to regulate membrane permeabilization. This would be correct for apoptosome assembly."
+      },
+      {
+        "text": "p53 tumor suppressor inducing proapoptotic gene expression",
+        "isCorrect": false,
+        "rationale": "p53 can induce BAX expression but is not the family that directly binds and neutralizes BAX; this would be correct for transcriptional regulation of apoptosis."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed protein is constant in concentration but varies in activity through binding to regulatory partners called cyclins?",
+    "difficulty_order": "1st/2nd/3rd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "Cyclin dependent kinases present constant but regulated",
+        "isCorrect": true,
+        "rationale": "The lecture notes that Cdk concentrations remain constant while their activity varies as cyclins bind and activate them."
+      },
+      {
+        "text": "Cyclins fluctuating in concentration to activate Cdks",
+        "isCorrect": false,
+        "rationale": "Cyclins fluctuate in concentration and activate Cdks; the question asked for the protein constant in concentration, which is Cdk. This option would be correct if asking about fluctuating regulators."
+      },
+      {
+        "text": "p21 Cdk inhibitor induced by p53 to halt cycle",
+        "isCorrect": false,
+        "rationale": "p21 is inducible and inhibits Cdks, not constant in concentration; this would be correct for inducible inhibitors."
+      },
+      {
+        "text": "Rb tumor suppressor sequestering E2F to prevent S-phase",
+        "isCorrect": false,
+        "rationale": "Rb regulates E2F but is not described as constant with activity modulated by cyclin binding; this would be correct for E2F sequestration roles."
+      },
+      {
+        "text": "cdc25C phosphatase activating Cdk1 for mitotic entry",
+        "isCorrect": false,
+        "rationale": "cdc25C removes inhibitory phosphates from Cdk1 but is not the constant-concentration protein regulated by cyclins; this would be correct for phosphatase-mediated activation."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed clinical example links viral oncoproteins to inhibition of tumor suppressor activity and increased cervical cancer risk?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Provide clinically relevant examples of regulatory dysfunction related to the cell cycle, notably HPV and associated proteins",
+    "options": [
+      {
+        "text": "Human papillomavirus strains 16 and 18 targeting p53 Rb",
+        "isCorrect": true,
+        "rationale": "The lecture states HPV strains 16 and 18 are associated with most cervical cancers and that E6/E7 inhibit p53 and Rb tumor suppressors."
+      },
+      {
+        "text": "Epstein Barr virus latent proteins driving B cell proliferation",
+        "isCorrect": false,
+        "rationale": "EBV can drive B cell proliferation but the lecture specifically highlighted HPV 16/18 in cervical cancer; this would be correct if EBV were discussed in the slides."
+      },
+      {
+        "text": "Hepatitis B virus integration causing hepatocellular carcinoma",
+        "isCorrect": false,
+        "rationale": "HBV is linked to liver cancer but was not the clinical example emphasized in the lecture; this would be correct if viral hepatitis were the focus."
+      },
+      {
+        "text": "Human T cell leukemia virus causing adult T cell leukemia",
+        "isCorrect": false,
+        "rationale": "HTLV-1 can cause T cell leukemia but the lecture's clinical example centered on HPV and cervical cancer. This would be correct if HTLV-1 were discussed."
+      },
+      {
+        "text": "Kaposi sarcoma herpesvirus inducing vascular tumor formation",
+        "isCorrect": false,
+        "rationale": "KSHV causes Kaposi sarcoma but was not the lecture's highlighted example; this would be correct if the lecture covered KSHV."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed protein directly binds to Cdks to inhibit their kinase activity and is induced by p53 after DNA damage?",
+    "difficulty_order": "2nd/2nd/3rd",
+    "cited_learning_objective": "Describe each stage of the cell cycle, highlighting molecular components driving or preventing progression: Cyclin, Cdk, Cdki, Rb, E2F, p53, cdc25C",
+    "options": [
+      {
+        "text": "p21 Cdk inhibitor induced by p53 to halt cycle",
+        "isCorrect": true,
+        "rationale": "The lecture describes p21 as a Cdk inhibitor induced by p53 that binds Cdk4 to halt the cell cycle for DNA repair."
+      },
+      {
+        "text": "p16 INK family inhibitor blocking Cdk4 activity",
+        "isCorrect": false,
+        "rationale": "p16 is an INK family inhibitor that blocks Cdk4 but is not specifically described as p53-induced; this would be correct if the question asked about INK family members."
+      },
+      {
+        "text": "Cyclin D binding Cdk4 to promote G1 progression",
+        "isCorrect": false,
+        "rationale": "Cyclin D activates Cdk4 to promote progression, not inhibit it; this would be correct for activator identification."
+      },
+      {
+        "text": "Rb sequestering E2F to prevent transcriptional activation",
+        "isCorrect": false,
+        "rationale": "Rb sequesters E2F but does not directly bind Cdks to inhibit kinase activity; this would be correct for E2F regulation."
+      },
+      {
+        "text": "cdc25C phosphatase removing inhibitory phosphates from Cdk1",
+        "isCorrect": false,
+        "rationale": "cdc25C activates Cdk1 by dephosphorylation and is not a Cdk inhibitor; this would be correct for mitotic activation."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-listed drug class would be most appropriate to target rapidly dividing bone marrow cells that rarely enter G0?",
+    "difficulty_order": "3rd/3rd/3rd",
+    "cited_learning_objective": "Identify connections between cell cycle regulation and cancer risk and progression",
+    "options": [
+      {
+        "text": "S-phase antimetabolites like 6-MP and methotrexate",
+        "isCorrect": true,
+        "rationale": "Labile tissues like bone marrow are constantly dividing with shortened G1; the lecture lists S-phase agents (6-MP, MTX) as targeting actively replicating cells, making them appropriate for such tissues."
+      },
+      {
+        "text": "Microtubule inhibitors like vincristine disrupting mitosis",
+        "isCorrect": false,
+        "rationale": "Microtubule inhibitors target M phase and can affect dividing cells but S-phase antimetabolites are specifically effective against cells actively synthesizing DNA; this would be correct if mitotic targeting were preferred."
+      },
+      {
+        "text": "Bleomycin causing G2 DNA breaks and apoptosis",
+        "isCorrect": false,
+        "rationale": "Bleomycin targets G2 and may affect dividing cells, but S-phase agents directly target DNA synthesis in rapidly dividing marrow; this would be correct if G2 targeting were desired."
+      },
+      {
+        "text": "Alkylating agents like busulfan causing DNA crosslinks",
+        "isCorrect": false,
+        "rationale": "Alkylating agents damage DNA broadly and can affect dividing cells but are less specific to S-phase DNA synthesis than antimetabolites; this would be correct for non–cell-cycle–specific cytotoxicity."
+      },
+      {
+        "text": "Topoisomerase inhibitors like etoposide interfering with replication",
+        "isCorrect": false,
+        "rationale": "Topoisomerase inhibitors affect DNA replication and can target dividing cells, but the lecture emphasized 6-MP and MTX as classic S-phase antimetabolites for rapidly dividing tissues. This would be correct if topoisomerase inhibition were the chosen mechanism."
+      }
+    ]
+  }
+]
