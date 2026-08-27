@@ -2595,7 +2595,8 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
 let questions=[], currentIdx=0, timerInt=null, paceTimerInt=null, paceAutoAdvanceTimeout=null, paceRemaining=0,
     isPaused=false, isReviewMode=false, highlighterMode=false,
   isFlaggedReviewMode=false, flaggedReviewIndices=[], flaggedReviewPos=0, flaggedReviewPosByIdx=new Map(),
-  savedQuizState=null, activeQuizMeta=null, multibuzzLoadTimer=null, multibuzzFrameLoaded=false, multibuzzNudgeTimer=null;
+  savedQuizState=null, activeQuizMeta=null, multibuzzLoadTimer=null, multibuzzFrameLoaded=false, multibuzzNudgeTimer=null,
+  persistQuizDebounce=null, restoringActiveQuiz=false;
 const LETTERS=['A','B','C','D','E'];
 const ALL_THEMES=[
   'theme-slate-orange','theme-cyber','theme-autumn','theme-mesa','theme-evergreen',
@@ -2696,6 +2697,8 @@ const LS_PREF_TIMER_VISIBLE='medstep_pref_timer_visible';
 const LS_PREF_PACE_TIMER='medstep_pref_pace_timer';
 const LS_PREF_PACE_SECONDS='medstep_pref_pace_seconds';
 const LS_PREF_MULTIBUZZ='medstep_pref_multibuzz';
+const LS_ACTIVE_QUIZ='medstep_active_quiz';
+const ACTIVE_QUIZ_MAX_AGE_MS=7*24*60*60*1000;
 const MULTIBUZZ_EMBED_URL='https://www.multibuzz.app/';
 const MULTIBUZZ_LOAD_MS=4000;
 const PACE_COUNTDOWN_WARN=10;
@@ -2984,7 +2987,15 @@ document.addEventListener('DOMContentLoaded',()=>{
   const savedTheme = localStorage.getItem('medstep_theme');
   if(savedTheme) changeTheme(savedTheme);
   loadReportNotifyEmail();
+  tryRestorePersistedQuiz();
 });
+
+document.addEventListener('visibilitychange',()=>{
+  if(document.hidden) persistActiveQuiz(true);
+});
+window.addEventListener('pagehide',()=>persistActiveQuiz(true));
+window.addEventListener('freeze',()=>persistActiveQuiz(true));
+window.addEventListener('beforeunload',()=>persistActiveQuiz(true));
 
 function toggleLO(){
   const tog=document.getElementById('lo-toggle');
@@ -4734,6 +4745,7 @@ function initQuiz(){
 function buildQuiz(raw, meta){
   raw = sanitizeQuizData(raw);
   savedQuizState = null;
+  try { localStorage.removeItem(LS_ACTIVE_QUIZ); } catch(e) {}
   activeQuizMeta = meta || { source: 'manual', title: 'Custom Quiz' };
   document.getElementById('back-to-quiz-btn').style.display = 'none';
   isReviewMode=false;
@@ -4747,6 +4759,7 @@ function buildQuiz(raw, meta){
   document.getElementById('quiz-screen').classList.remove('hidden');
   document.getElementById('quiz-nav-settings').classList.remove('hidden');
   toggleSidebar();currentIdx=0;renderGrid();loadQuestion(0);startTimer();
+  persistActiveQuiz(true);
 }
 
 // ══ FLAGGING (important questions) ═════════════════════
@@ -4773,6 +4786,7 @@ function toggleFlagForCurrentQuestion(){
   q.flagged=!q.flagged;
   renderGrid();
   updateFlagButton();
+  persistActiveQuiz(true);
   showToast(q.flagged?'⭐ Flagged for review':'☆ Removed flag');
 }
 
@@ -5293,7 +5307,7 @@ function collectMedstepLocalStorage() {
   const storage = {};
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
-    if (key && key.startsWith('medstep_')) storage[key] = localStorage.getItem(key);
+    if (key && key.startsWith('medstep_') && key !== LS_ACTIVE_QUIZ) storage[key] = localStorage.getItem(key);
   }
   return storage;
 }
@@ -5548,11 +5562,11 @@ function applyMedstepBackupToLocalStorage(storage) {
   const keysToRemove = [];
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
-    if (key && key.startsWith('medstep_')) keysToRemove.push(key);
+    if (key && key.startsWith('medstep_') && key !== LS_ACTIVE_QUIZ) keysToRemove.push(key);
   }
   keysToRemove.forEach(k => localStorage.removeItem(k));
   Object.keys(storage || {}).forEach(key => {
-    if (!key.startsWith('medstep_')) return;
+    if (!key.startsWith('medstep_') || key === LS_ACTIVE_QUIZ) return;
     const val = storage[key];
     if (val != null) localStorage.setItem(key, String(val));
   });
@@ -5621,9 +5635,10 @@ function startTimer(){
       document.getElementById('timer-display').innerText=
         `${String(Math.floor(t/60)).padStart(2,'0')}:${String(t%60).padStart(2,'0')}`;
     }
+    if(t%10===0) persistActiveQuiz();
   },1000);
 }
-function togglePause(){isPaused=!isPaused;syncPauseUI();}
+function togglePause(){isPaused=!isPaused;syncPauseUI();persistActiveQuiz(true);}
 function syncPauseUI(){
   document.getElementById('timer-eye').innerText=isPaused?'▶️':'⏸️';
   document.getElementById('timer-display').classList.toggle('paused',isPaused);
@@ -5696,6 +5711,7 @@ list.appendChild(wrap);
   updateReportButton();
   refreshTimerDisplay();
   restartPaceTimerForCurrentQuestion();
+  persistActiveQuiz();
 }
 
 // ══ ANSWER / UNDO ════════════════════════════════════════
@@ -5707,11 +5723,13 @@ function selectAnswer(opt){
   const isLast=currentIdx===questions.length-1;
   document.getElementById('finish-btn').style.display=(allDone&&isLast)?'inline-flex':'none';
   document.getElementById('next-btn').style.display=(allDone&&isLast)?'none':'inline-flex';
+  persistActiveQuiz(true);
 }
 function undoAnswer(){
   if(isReviewMode)return;
   const q=questions[currentIdx];if(!q.userAnswer)return;
   q.userAnswer=null;loadQuestion(currentIdx);showToast('↩️ Answer cleared');
+  persistActiveQuiz(true);
 }
 
 // ══ NAV ══════════════════════════════════════════════════
@@ -5740,6 +5758,7 @@ function scrambleAll(){
   const b=document.getElementById('scramble-btn');b.classList.add('spinning');
   setTimeout(()=>b.classList.remove('spinning'),500);
   showToast('🔀 Scrambled!');
+  persistActiveQuiz(true);
 }
 
 // ══ RESULTS ══════════════════════════════════════════════
@@ -5791,6 +5810,7 @@ function showResults(){
 
   document.getElementById('quiz-screen').classList.add('hidden');
   document.getElementById('results-screen').classList.remove('hidden');
+  persistActiveQuiz(true);
 }
 
 function formatQuestionText(q,idx){
@@ -5878,6 +5898,7 @@ function reviewAnswers_exit(){
   document.getElementById('quiz-screen').classList.add('hidden');
   document.getElementById('results-screen').classList.remove('hidden');
   document.getElementById('back-to-results-btn').style.display='none';
+  persistActiveQuiz(true);
 }
 
 function reviewFlaggedAnswers(){
@@ -5946,6 +5967,114 @@ function renderGrid(){
 }
 
 // ══ HOME ═════════════════════════════════════════════════
+function snapshotActiveQuiz(){
+  const live=questions.length>0;
+  const resultsEl=document.getElementById('results-screen');
+  const quizEl=document.getElementById('quiz-screen');
+  const src=live?{
+    questions,
+    currentIdx,
+    isReviewMode,
+    isFlaggedReviewMode,
+    flaggedReviewIndices,
+    flaggedReviewPos,
+    onResults:!!(resultsEl&&!resultsEl.classList.contains('hidden')),
+    isPaused,
+    activeQuizMeta
+  }:savedQuizState;
+  if(!src||!(src.questions||[]).length) return null;
+  const onResults=!!src.onResults;
+  const onQuiz=live&&quizEl&&!quizEl.classList.contains('hidden');
+  const screen=live?(onResults?'results':(onQuiz?'quiz':'home')):'home';
+  return {
+    version:1,
+    savedAt:Date.now(),
+    screen,
+    questions:src.questions,
+    currentIdx:src.currentIdx||0,
+    isReviewMode:!!src.isReviewMode,
+    isFlaggedReviewMode:!!src.isFlaggedReviewMode,
+    flaggedReviewIndices:src.flaggedReviewIndices||[],
+    flaggedReviewPos:src.flaggedReviewPos||0,
+    onResults,
+    isPaused:!!src.isPaused,
+    activeQuizMeta:src.activeQuizMeta||null
+  };
+}
+function persistActiveQuiz(immediate){
+  if(restoringActiveQuiz) return;
+  const write=()=>{
+    persistQuizDebounce=null;
+    const snap=snapshotActiveQuiz();
+    if(!snap){
+      try{ localStorage.removeItem(LS_ACTIVE_QUIZ); }catch(e){}
+      return;
+    }
+    try{
+      localStorage.setItem(LS_ACTIVE_QUIZ, JSON.stringify(snap));
+    }catch(e){}
+  };
+  if(immediate){
+    clearTimeout(persistQuizDebounce);
+    persistQuizDebounce=null;
+    write();
+    return;
+  }
+  clearTimeout(persistQuizDebounce);
+  persistQuizDebounce=setTimeout(write,300);
+}
+function relinkUserAnswers(qs){
+  (qs||[]).forEach(q=>{
+    if(!q||!q.userAnswer||!Array.isArray(q.options)) return;
+    const match=q.options.find(o=>o&&o.text===q.userAnswer.text);
+    if(match) q.userAnswer=match;
+  });
+  return qs;
+}
+function readPersistedActiveQuiz(){
+  let raw;
+  try{ raw=localStorage.getItem(LS_ACTIVE_QUIZ); }catch(e){ return null; }
+  if(!raw) return null;
+  let data;
+  try{ data=JSON.parse(raw); }catch(e){ return null; }
+  if(!data||!Array.isArray(data.questions)||!data.questions.length) return null;
+  if(data.savedAt&&(Date.now()-data.savedAt>ACTIVE_QUIZ_MAX_AGE_MS)){
+    try{ localStorage.removeItem(LS_ACTIVE_QUIZ); }catch(e){}
+    return null;
+  }
+  return data;
+}
+function tryRestorePersistedQuiz(){
+  const data=readPersistedActiveQuiz();
+  if(!data) return;
+  restoringActiveQuiz=true;
+  try{
+    savedQuizState={
+      questions:data.questions,
+      currentIdx:data.currentIdx||0,
+      isReviewMode:!!data.isReviewMode,
+      isFlaggedReviewMode:!!data.isFlaggedReviewMode,
+      flaggedReviewIndices:data.flaggedReviewIndices||[],
+      flaggedReviewPos:data.flaggedReviewPos||0,
+      onResults:data.screen==='results'||!!data.onResults,
+      isPaused:!!data.isPaused,
+      activeQuizMeta:data.activeQuizMeta||null
+    };
+    if(data.screen==='home'){
+      const btn=document.getElementById('back-to-quiz-btn');
+      if(btn) btn.style.display='flex';
+      return;
+    }
+    resumeSavedQuiz();
+    showToast('📝 Quiz restored');
+  }catch(e){
+    savedQuizState=null;
+  }finally{
+    restoringActiveQuiz=false;
+    persistActiveQuiz(true);
+  }
+}
+
 function goHome(){
   // Save quiz progress if a quiz is active so the user can resume
   if (questions.length > 0) {
@@ -5958,6 +6087,7 @@ function goHome(){
       flaggedReviewIndices: [...flaggedReviewIndices],
       flaggedReviewPos,
       onResults: quizOnResults,
+      isPaused,
       activeQuizMeta: activeQuizMeta ? { ...activeQuizMeta } : null
     };
     document.getElementById('back-to-quiz-btn').style.display = 'flex';
@@ -5971,18 +6101,19 @@ function goHome(){
   document.getElementById('back-to-results-btn').style.display='none';
   document.getElementById('quiz-nav-settings').classList.add('hidden');
   document.getElementById('settings-menu').style.display='none';
+  persistActiveQuiz(true);
 }
 
 function resumeSavedQuiz() {
   if (!savedQuizState) return;
   const s = savedQuizState;
-  questions = sanitizeQuizData(s.questions);
+  questions = relinkUserAnswers(sanitizeQuizData(s.questions));
   activeQuizMeta = s.activeQuizMeta || null;
-  currentIdx = s.currentIdx;
-  isReviewMode = s.isReviewMode;
-  isFlaggedReviewMode = s.isFlaggedReviewMode;
-  flaggedReviewIndices = s.flaggedReviewIndices;
-  flaggedReviewPos = s.flaggedReviewPos;
+  currentIdx = Math.min(Math.max(0, s.currentIdx|0), Math.max(0, questions.length-1));
+  isReviewMode = !!s.isReviewMode;
+  isFlaggedReviewMode = !!s.isFlaggedReviewMode;
+  flaggedReviewIndices = Array.isArray(s.flaggedReviewIndices) ? s.flaggedReviewIndices : [];
+  flaggedReviewPos = s.flaggedReviewPos || 0;
   flaggedReviewPosByIdx = new Map();
   flaggedReviewIndices.forEach((qi, pos) => flaggedReviewPosByIdx.set(qi, pos));
 
@@ -5997,14 +6128,18 @@ function resumeSavedQuiz() {
     document.getElementById('results-screen').classList.add('hidden');
     document.getElementById('quiz-screen').classList.remove('hidden');
     document.getElementById('quiz-nav-settings').classList.remove('hidden');
+    document.getElementById('back-to-results-btn').style.display =
+      (isReviewMode || isFlaggedReviewMode) ? 'block' : 'none';
     toggleSidebar();
     renderGrid();
     loadQuestion(currentIdx);
     startTimer();
+    if (s.isPaused) { isPaused = true; syncPauseUI(); }
   }
 
   savedQuizState = null;
   document.getElementById('back-to-quiz-btn').style.display = 'none';
+  persistActiveQuiz(true);
 }
 // ══ NEW FEATURES ══════════════════════════════════════════
 function toggleLabValues() {
