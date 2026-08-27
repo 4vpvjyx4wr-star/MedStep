@@ -1937,8 +1937,8 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
     </div>
 
     <label class="modal-label" id="quiz-json-label">Quiz JSON</label>
-    <div class="modal-tag-note" id="quiz-json-edit-hint" style="display:none">Edit questions below or paste additional ones into this array. Identical questions are removed automatically on save.</div>
-    <textarea class="modal-textarea" id="new-quiz-json" placeholder='Paste the full JSON array here (starts with [)…'></textarea>
+    <div class="modal-tag-note" id="quiz-json-edit-hint" style="display:none">Paste new questions anywhere in this box — a JSON array, a single question, or Copilot output. They are merged and formatted automatically. Identical questions are removed on save.</div>
+    <textarea class="modal-textarea" id="new-quiz-json" placeholder='Paste quiz JSON or additional questions here…'></textarea>
     <div class="personal-library-actions" id="personal-library-actions">
       <button type="button" class="btn btn-primary" style="width:100%;font-size:.8rem;padding:10px" onclick="savePersonalQuizFromModal()">💾 Save to My Library (this browser)</button>
       <button type="button" class="btn btn-secondary" style="width:100%;font-size:.78rem;padding:9px" onclick="downloadPersonalQuizFromModal()">⬇️ Download Quiz File (.json)</button>
@@ -6768,27 +6768,172 @@ function formatQuizJsonStatus(count, removed) {
   return msg;
 }
 
-function parseQuizJsonFromModal() {
-  const jsonRaw = (document.getElementById('new-quiz-json')?.value || '').trim();
-  if (!jsonRaw || jsonRaw === 'Loading quiz JSON…') {
+function transformJsonOutsideStrings(s, transformer) {
+  let out = '';
+  let inString = false;
+  let escape = false;
+  let buf = '';
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if (inString) {
+      out += c;
+      if (escape) escape = false;
+      else if (c === '\\') escape = true;
+      else if (c === '"') inString = false;
+    } else if (c === '"') {
+      out += transformer(buf) + c;
+      buf = '';
+      inString = true;
+    } else {
+      buf += c;
+    }
+  }
+  out += inString ? buf : transformer(buf);
+  return out;
+}
+
+function stripQuizJsonNoise(text) {
+  let s = String(text || '').replace(/^\uFEFF/, '');
+  s = s.replace(/```(?:json|javascript|js)?\s*/gi, '').replace(/```/g, '');
+  s = s.replace(/<[^>]+>/g, ' ');
+  s = s.replace(/&nbsp;/gi, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+  return s.trim();
+}
+
+function repairQuizJsonText(text) {
+  let s = stripQuizJsonNoise(text);
+  s = transformJsonOutsideStrings(s, chunk => chunk.replace(/,(\s*)(?=[}\]])/g, '$1'));
+  s = transformJsonOutsideStrings(s, chunk => chunk.replace(/([}\]])(\s*)(?=[{\[])/g, '$1,$2'));
+  return s;
+}
+
+function findMatchingJsonEnd(s, start) {
+  const stack = [];
+  let inString = false;
+  let escape = false;
+  for (let i = start; i < s.length; i++) {
+    const c = s[i];
+    if (inString) {
+      if (escape) escape = false;
+      else if (c === '\\') escape = true;
+      else if (c === '"') inString = false;
+      continue;
+    }
+    if (c === '"') { inString = true; continue; }
+    if (c === '{' || c === '[') stack.push(c);
+    else if (c === '}' || c === ']') {
+      const last = stack[stack.length - 1];
+      if ((c === '}' && last === '{') || (c === ']' && last === '[')) stack.pop();
+      else return -1;
+      if (!stack.length) return i;
+    }
+  }
+  return -1;
+}
+
+function isQuizQuestionObject(q) {
+  return !!(q && typeof q === 'object' && typeof q.question === 'string' && q.question.trim() && Array.isArray(q.options));
+}
+
+function coerceQuizQuestions(value, acc) {
+  acc = acc || [];
+  if (value == null) return acc;
+  if (Array.isArray(value)) {
+    value.forEach(v => coerceQuizQuestions(v, acc));
+    return acc;
+  }
+  if (typeof value === 'object') {
+    if (isQuizQuestionObject(value)) acc.push(value);
+    else if (Array.isArray(value.questions)) coerceQuizQuestions(value.questions, acc);
+    else if (Array.isArray(value.quiz)) coerceQuizQuestions(value.quiz, acc);
+  }
+  return acc;
+}
+
+function tryParseJsonValue(str) {
+  try { return { ok: true, value: JSON.parse(str) }; }
+  catch (e) { return { ok: false }; }
+}
+
+function scanQuizJsonValues(s) {
+  const values = [];
+  function walk(from, to) {
+    let i = from;
+    while (i < to) {
+      while (i < to && /[\s,;]/.test(s[i])) i++;
+      if (i >= to) break;
+      if (s[i] !== '{' && s[i] !== '[') { i++; continue; }
+      const close = findMatchingJsonEnd(s, i);
+      if (close < 0 || close >= to) { i++; continue; }
+      const chunk = repairQuizJsonText(s.slice(i, close + 1));
+      const parsed = tryParseJsonValue(chunk);
+      if (parsed.ok) values.push(parsed.value);
+      else if (s[i] === '[') walk(i + 1, close);
+      i = close + 1;
+    }
+  }
+  walk(0, s.length);
+  return values;
+}
+
+function extractQuizQuestionsFromText(text) {
+  const raw = String(text || '').trim();
+  if (!raw || raw === 'Loading quiz JSON…') return [];
+  const repaired = repairQuizJsonText(raw);
+  const direct = tryParseJsonValue(repaired);
+  if (direct.ok) {
+    const qs = coerceQuizQuestions(direct.value);
+    if (qs.length) return qs;
+  }
+  const scanned = [];
+  scanQuizJsonValues(repaired).forEach(v => coerceQuizQuestions(v, scanned));
+  if (scanned.length) return scanned;
+  const wrapped = tryParseJsonValue('[' + repaired + ']');
+  if (wrapped.ok) return coerceQuizQuestions(wrapped.value);
+  return [];
+}
+
+function looksLikeQuizQuestionPaste(text, questions) {
+  if (!questions.length) return false;
+  const t = String(text || '').trim();
+  if (t.startsWith('[') || t.startsWith('{')) return true;
+  return /"question"\s*:/.test(t) && /"options"\s*:/.test(t);
+}
+
+function prettyQuizJson(questions) {
+  return JSON.stringify(sanitizeQuizData(questions), null, 2);
+}
+
+function parseQuizJsonText(jsonRaw) {
+  const raw = String(jsonRaw || '').trim();
+  if (!raw || raw === 'Loading quiz JSON…') {
     return { error: 'Paste or load quiz JSON first.' };
   }
-  let parsed;
-  try {
-    parsed = sanitizeQuizData(JSON.parse(jsonRaw));
-    if (!Array.isArray(parsed) || !parsed.length) throw new Error('empty');
-  } catch (e) {
-    return { error: 'Invalid JSON — paste a non-empty array of questions.' };
+  const parsed = extractQuizQuestionsFromText(raw);
+  if (!parsed.length) {
+    return { error: 'Could not read questions — paste JSON questions (array or objects).' };
   }
-  const deduped = dedupeQuizQuestions(parsed);
+  const clean = sanitizeQuizData(parsed);
+  const deduped = dedupeQuizQuestions(clean);
   if (!deduped.questions.length) {
     return { error: 'No questions left after removing duplicates.' };
   }
   return {
     parsed: deduped.questions,
     removed: deduped.removed,
-    originalCount: parsed.length
+    originalCount: clean.length
   };
+}
+
+function parseQuizJsonFromModal() {
+  return parseQuizJsonText(document.getElementById('new-quiz-json')?.value || '');
+}
+
+function applyQuizJsonToModal(questions) {
+  const ta = document.getElementById('new-quiz-json');
+  if (!ta) return;
+  ta.value = prettyQuizJson(questions);
+  ta.dispatchEvent(new Event('input'));
 }
 
 function configureAddQuizModalUI() {
@@ -6855,7 +7000,9 @@ function importPersonalQuizFile(ev) {
   if (!file) return;
   const reader = new FileReader();
   reader.onload = () => {
-    document.getElementById('new-quiz-json').value = String(reader.result || '');
+    const text = String(reader.result || '');
+    const qs = extractQuizQuestionsFromText(text);
+    document.getElementById('new-quiz-json').value = qs.length ? prettyQuizJson(qs) : text;
     document.getElementById('new-quiz-json').dispatchEvent(new Event('input'));
     if (!document.getElementById('new-quiz-title').value.trim()) {
       document.getElementById('new-quiz-title').value = file.name.replace(/\.(json|txt)$/i, '');
@@ -8361,6 +8508,8 @@ function openAddQuizModal() {
   document.getElementById('new-quiz-json').disabled = false;
   document.getElementById('new-quiz-title').value = '';
   document.getElementById('new-quiz-json').value = '';
+  const hint = document.getElementById('quiz-json-edit-hint');
+  if (hint) hint.style.display = '';
   document.getElementById('new-quiz-block').value = '';
   document.getElementById('new-quiz-exam').value = '';
   document.getElementById('new-quiz-week').value = '';
@@ -8973,16 +9122,40 @@ document.getElementById('new-quiz-json').addEventListener('input', function() {
   const msg = document.getElementById('json-validate-msg');
   const val = this.value.trim();
   if (!val || val === 'Loading quiz JSON…') { msg.textContent = ''; return; }
-  try {
-    const parsed = sanitizeQuizData(JSON.parse(val));
-    if (!Array.isArray(parsed)) throw new Error('Must be an array');
-    const deduped = dedupeQuizQuestions(parsed);
-    msg.textContent = formatQuizJsonStatus(deduped.questions.length, deduped.removed);
-    msg.style.color = 'var(--success)';
-  } catch(e) {
-    msg.textContent = '❌ Invalid JSON: ' + e.message;
+  const parsed = extractQuizQuestionsFromText(val);
+  if (!parsed.length) {
+    msg.textContent = '❌ Could not read questions — paste JSON questions (array or objects).';
     msg.style.color = 'var(--danger)';
+    return;
   }
+  const deduped = dedupeQuizQuestions(sanitizeQuizData(parsed));
+  msg.textContent = formatQuizJsonStatus(deduped.questions.length, deduped.removed);
+  msg.style.color = 'var(--success)';
+});
+
+document.getElementById('new-quiz-json').addEventListener('paste', function(e) {
+  const pasted = (e.clipboardData || window.clipboardData)?.getData('text') || '';
+  if (!pasted.trim() || this.value.trim() === 'Loading quiz JSON…') return;
+  const pastedQs = extractQuizQuestionsFromText(pasted);
+  if (!looksLikeQuizQuestionPaste(pasted, pastedQs)) return;
+  e.preventDefault();
+  const start = this.selectionStart || 0;
+  const end = this.selectionEnd || 0;
+  const replacingAll = !this.value.trim() || (start === 0 && end === this.value.length);
+  let merged;
+  if (replacingAll) {
+    merged = pastedQs;
+  } else {
+    const existing = extractQuizQuestionsFromText(this.value);
+    merged = existing.concat(pastedQs);
+    if (!merged.length) merged = pastedQs;
+  }
+  applyQuizJsonToModal(merged);
+  this.selectionStart = this.selectionEnd = this.value.length;
+  const added = pastedQs.length;
+  showToast(replacingAll
+    ? '✅ Loaded ' + added + ' question' + (added !== 1 ? 's' : '') + ' — JSON formatted'
+    : '✅ Added ' + added + ' question' + (added !== 1 ? 's' : '') + ' — JSON formatted');
 });
 
 let feedbackModalType = null;
