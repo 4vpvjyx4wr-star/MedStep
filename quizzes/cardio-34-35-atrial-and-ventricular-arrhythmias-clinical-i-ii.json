@@ -359,22 +359,7 @@
       {
         "text": "Anticoagulate at time of cardioversion and continue for four weeks",
         "isCorrect": true,
-        "rationale": "Correct: The lecture states if AF duration <48 hours, anticoagulate at cardioversion and continue anticoagulation for an additional four weeks."
-      },
-      {
-        "text": "Anticoagulate for three weeks before cardioversion then stop",
-        "isCorrect": false,
-        "rationale": "Wrong: Three weeks pre-cardioversion anticoagulation is for AF >48 hours or unknown duration; for <48 hours immediate anticoagulation at cardioversion is recommended."
-      },
-      {
-        "text": "No anticoagulation is necessary before or after cardioversion",
-        "isCorrect": false,
-        "rationale": "Wrong: The lecture recommends anticoagulation for cardioversion even when duration <48 hours; omitting anticoagulation would increase stroke risk."
-      },
-      {
-        "text": "Perform TEE only and avoid anticoagulation entirely",
-        "isCorrect": false,
-        "rationale": "Wrong: TEE may be used when AF >48 hours and urgent cardioversion is needed; it does not replace anticoagulation per the lecture guidance."
+        "rationale": "Correct: The lecture states if AF duration  48 hours or unknown duration; for  48 hours and urgent cardioversion is needed; it does not replace anticoagulation per the lecture guidance."
       },
       {
         "text": "Start aspirin alone at cardioversion and continue for four weeks",
@@ -1212,6 +1197,592 @@
         "text": "Premature ventricular contractions managed with immediate ICD implantation",
         "isCorrect": false,
         "rationale": "Wrong: PVCs are ectopic ventricular beats and do not present as AV dissociation; ICD implantation is not the immediate step for complete AV block."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following is the most common reversible cause to address first when evaluating a patient with frequent premature ventricular contractions?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List the etiologies of the most common atrial and ventricular arrhythmias.",
+    "options": [
+      {
+        "text": "Electrolyte abnormalities",
+        "isCorrect": true,
+        "rationale": "Correct: PVCs are commonly precipitated by disturbances in potassium, magnesium, or calcium; correcting electrolytes often reduces ectopy."
+      },
+      {
+        "text": "Structural cardiomyopathy",
+        "isCorrect": false,
+        "rationale": "Wrong: Structural heart disease can worsen PVC prognosis but is not the first reversible cause; imaging would be needed to make this correct."
+      },
+      {
+        "text": "Thyrotoxicosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Thyroid excess can cause atrial tachyarrhythmias and PVCs but is less immediately reversible than correcting electrolytes; abnormal thyroid tests would support this."
+      },
+      {
+        "text": "Caffeine ingestion",
+        "isCorrect": false,
+        "rationale": "Wrong: Caffeine can trigger PACs or PVCs but is a behavioral trigger; removal could help but electrolyte correction is a more common first step."
+      },
+      {
+        "text": "Acute myocardial ischemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Ischemia is an important cause of ventricular ectopy and requires urgent evaluation; it would be correct if the patient had chest pain or ischemic ECG changes."
+      }
+    ]
+  },
+  {
+    "question": "Which ECG feature distinguishes a premature atrial contraction from a premature ventricular contraction?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Interpret ECGs and identify heart rhythms by ECG.",
+    "options": [
+      {
+        "text": "Abnormal P wave before QRS",
+        "isCorrect": true,
+        "rationale": "Correct: PACs originate in the atrium and typically show an abnormal P wave preceding a narrow QRS; this differentiates them from PVCs."
+      },
+      {
+        "text": "Wide QRS complex",
+        "isCorrect": false,
+        "rationale": "Wrong: A wide QRS is characteristic of PVCs, not PACs; this option would be correct for PVC identification instead of PAC."
+      },
+      {
+        "text": "Compensatory pause present",
+        "isCorrect": false,
+        "rationale": "Wrong: A compensatory pause is typical of PVCs; its presence would argue against a PAC unless interpolated PVCs are present."
+      },
+      {
+        "text": "AV dissociation on tracing",
+        "isCorrect": false,
+        "rationale": "Wrong: AV dissociation is seen with ventricular ectopy or complete heart block; it does not identify PACs."
+      },
+      {
+        "text": "Short PR interval",
+        "isCorrect": false,
+        "rationale": "Wrong: Short PR interval suggests pre-excitation such as WPW, not a PAC; PR shortening would need delta wave evidence to be correct."
+      }
+    ]
+  },
+  {
+    "question": "Which initial management step is appropriate for a hemodynamically unstable patient with third-degree atrioventricular block?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Outline a treatment plan for the most common atrial and ventricular arrhythmias.",
+    "options": [
+      {
+        "text": "Immediate temporary pacing",
+        "isCorrect": true,
+        "rationale": "Correct: Complete heart block with instability requires immediate pacing (transcutaneous or transvenous) to restore adequate ventricular rate."
+      },
+      {
+        "text": "Oral beta blocker therapy",
+        "isCorrect": false,
+        "rationale": "Wrong: AV node blockers worsen bradycardia and are contraindicated; this would be correct only if the rhythm were supraventricular tachycardia."
+      },
+      {
+        "text": "IV amiodarone infusion",
+        "isCorrect": false,
+        "rationale": "Wrong: Amiodarone treats tachyarrhythmias and can depress conduction; it is inappropriate for unstable complete AV block."
+      },
+      {
+        "text": "Carotid sinus massage",
+        "isCorrect": false,
+        "rationale": "Wrong: Carotid massage slows AV nodal conduction and could worsen complete block; it would be correct for certain SVTs instead."
+      },
+      {
+        "text": "Immediate electrical cardioversion",
+        "isCorrect": false,
+        "rationale": "Wrong: Synchronized cardioversion treats tachyarrhythmias like AF with rapid ventricular response; it is not the first-line for complete heart block."
+      }
+    ]
+  },
+  {
+    "question": "Which physical exam finding is most consistent with frequent premature ventricular contractions causing symptoms?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the symptoms and signs of the most common atrial and ventricular arrhythmias.",
+    "options": [
+      {
+        "text": "Pulse deficit on palpation",
+        "isCorrect": true,
+        "rationale": "Correct: Frequent PVCs can produce ineffective beats leading to a pulse deficit where auscultation shows beats not felt peripherally."
+      },
+      {
+        "text": "Fixed splitting of S2",
+        "isCorrect": false,
+        "rationale": "Wrong: Fixed S2 splitting suggests ASD; it is unrelated to PVCs and would require intracardiac shunt evidence to be correct."
+      },
+      {
+        "text": "Cannon A waves in jugular vein",
+        "isCorrect": false,
+        "rationale": "Wrong: Cannon A waves occur with AV dissociation such as complete heart block or VT; they are not the most typical sign of symptomatic PVCs."
+      },
+      {
+        "text": "Loud S3 gallop present",
+        "isCorrect": false,
+        "rationale": "Wrong: S3 indicates volume overload or systolic dysfunction; while PVCs can occur with cardiomyopathy, S3 alone does not identify PVCs."
+      },
+      {
+        "text": "Pericardial friction rub audible",
+        "isCorrect": false,
+        "rationale": "Wrong: A friction rub indicates pericarditis and is not a sign of PVCs; pericarditis would need pleuritic chest pain and ECG changes to be correct."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following is the most likely mechanism producing an irregularly irregular rhythm without discrete P waves on ECG?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Interpret ECGs and identify heart rhythms by ECG.",
+    "options": [
+      {
+        "text": "Atrial fibrillation with chaotic atrial activity",
+        "isCorrect": true,
+        "rationale": "Correct: Atrial fibrillation causes loss of organized atrial depolarizations producing an irregularly irregular ventricular response and absent discrete P waves."
+      },
+      {
+        "text": "Multifocal atrial tachycardia with variable P morphology",
+        "isCorrect": false,
+        "rationale": "Wrong: MAT shows distinct P waves of differing morphology; discrete P waves are still present, so this would not produce absent P waves."
+      },
+      {
+        "text": "Atrial flutter with variable block",
+        "isCorrect": false,
+        "rationale": "Wrong: Atrial flutter typically shows sawtooth atrial activity; discrete atrial activity is present even with variable AV block."
+      },
+      {
+        "text": "Sinus arrhythmia from respiratory variation",
+        "isCorrect": false,
+        "rationale": "Wrong: Sinus arrhythmia preserves normal P waves and is not irregularly irregular to the degree seen in AF; respiratory variation would need normal P morphology to be correct."
+      },
+      {
+        "text": "Complete heart block with junctional escape",
+        "isCorrect": false,
+        "rationale": "Wrong: Complete AV block produces AV dissociation with regular ventricular escape rhythm, not an irregularly irregular pattern; evidence of dissociation would make this correct."
+      }
+    ]
+  },
+  {
+    "question": "A 68-year-old man with hypertension and prior stroke is found to have atrial fibrillation. Which tool helps estimate his stroke risk to guide anticoagulation decisions?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the diagnostic approach to the most common atrial and ventricular arrhythmias including the appropriate diagnostic tests.",
+    "options": [
+      {
+        "text": "CHA2DS2-VASc scoring system",
+        "isCorrect": true,
+        "rationale": "Correct: The CHA2DS2-VASc score assigns points for cardiomyopathy, hypertension, age, diabetes, prior stroke, vascular disease, and sex to guide anticoagulation."
+      },
+      {
+        "text": "HAS-BLED bleeding score",
+        "isCorrect": false,
+        "rationale": "Wrong: HAS-BLED estimates bleeding risk on anticoagulation but does not estimate stroke risk; it would be used adjunctively after stroke risk assessment."
+      },
+      {
+        "text": "TIMI risk score",
+        "isCorrect": false,
+        "rationale": "Wrong: TIMI predicts outcomes in acute coronary syndromes, not stroke risk in AF; ACS features would be needed to make it relevant."
+      },
+      {
+        "text": "Wells pulmonary embolism score",
+        "isCorrect": false,
+        "rationale": "Wrong: Wells score assesses PE probability and is unrelated to AF stroke risk; signs of DVT or PE would be required to use it."
+      },
+      {
+        "text": "Framingham cardiovascular risk",
+        "isCorrect": false,
+        "rationale": "Wrong: Framingham estimates long-term cardiovascular risk but is not the guideline tool for AF stroke risk; CHA2DS2-VASc is the specific AF tool."
+      }
+    ]
+  },
+  {
+    "question": "Which antiarrhythmic strategy is contraindicated in a patient with Wolff-Parkinson-White syndrome presenting with wide-complex irregular tachycardia suspected to be atrial fibrillation conducting over an accessory pathway?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Outline a treatment plan for the most common atrial and ventricular arrhythmias.",
+    "options": [
+      {
+        "text": "AV nodal blocking agents",
+        "isCorrect": true,
+        "rationale": "Correct: AV nodal blockers such as adenosine, beta blockers, and calcium channel blockers can enhance conduction over the accessory pathway and are contraindicated in WPW with pre-excited AF."
+      },
+      {
+        "text": "Procainamide infusion",
+        "isCorrect": false,
+        "rationale": "Wrong: Procainamide is recommended for pre-excited AF as it slows accessory pathway conduction; it would be correct in this scenario rather than contraindicated."
+      },
+      {
+        "text": "Immediate synchronized cardioversion",
+        "isCorrect": false,
+        "rationale": "Wrong: Cardioversion is appropriate for unstable patients with pre-excited AF; instability would make this the correct immediate step."
+      },
+      {
+        "text": "IV amiodarone bolus",
+        "isCorrect": false,
+        "rationale": "Wrong: Amiodarone can unpredictably affect accessory pathway conduction and is generally avoided acutely in pre-excited AF; documented accessory pathway suppression would be needed to justify it."
+      },
+      {
+        "text": "Digoxin administration",
+        "isCorrect": false,
+        "rationale": "Wrong: Digoxin increases accessory pathway conduction risk and is contraindicated; it would only be correct if the rhythm were typical AF without pre-excitation."
+      }
+    ]
+  },
+  {
+    "question": "Which ECG finding is most characteristic of Wolff-Parkinson-White pattern during sinus rhythm?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Interpret ECGs and identify heart rhythms by ECG.",
+    "options": [
+      {
+        "text": "Short PR interval with delta wave",
+        "isCorrect": true,
+        "rationale": "Correct: WPW shows a shortened PR interval and a slurred upstroke of the QRS called a delta wave due to ventricular pre-excitation."
+      },
+      {
+        "text": "Prolonged PR interval with dropped beats",
+        "isCorrect": false,
+        "rationale": "Wrong: Prolonged PR with dropped beats suggests AV block, not WPW; AV conduction delay would be required to make this correct."
+      },
+      {
+        "text": "Diffuse ST elevation across leads",
+        "isCorrect": false,
+        "rationale": "Wrong: Diffuse ST elevation suggests pericarditis; this is unrelated to WPW and would need chest pain and PR depression to be correct."
+      },
+      {
+        "text": "Low voltage QRS complexes",
+        "isCorrect": false,
+        "rationale": "Wrong: Low voltage occurs with obesity or pericardial effusion; it does not indicate pre-excitation and would need extracardiac causes to be correct."
+      },
+      {
+        "text": "Sawtooth atrial activity",
+        "isCorrect": false,
+        "rationale": "Wrong: Sawtooth waves are characteristic of atrial flutter, not WPW; atrial flutter morphology would be required to make this correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient with symptomatic paroxysmal supraventricular tachycardia has sudden onset palpitations that terminate with vagal maneuvers. Which diagnosis is most likely?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the etiologies of the most common atrial and ventricular arrhythmias.",
+    "options": [
+      {
+        "text": "Atrioventricular nodal reentrant tachycardia",
+        "isCorrect": true,
+        "rationale": "Correct: AVNRT is a common paroxysmal SVT that often terminates with vagal maneuvers due to AV nodal dependence."
+      },
+      {
+        "text": "Atrial fibrillation with rapid response",
+        "isCorrect": false,
+        "rationale": "Wrong: AF usually does not terminate with vagal maneuvers and is irregularly irregular; ECG showing irregular rhythm would be needed to support AF."
+      },
+      {
+        "text": "Atrial flutter with 2:1 conduction",
+        "isCorrect": false,
+        "rationale": "Wrong: Atrial flutter is less likely to terminate with vagal maneuvers and typically shows sawtooth atrial activity on ECG."
+      },
+      {
+        "text": "Multifocal atrial tachycardia",
+        "isCorrect": false,
+        "rationale": "Wrong: MAT has variable P wave morphology and is associated with lung disease; vagal maneuvers rarely terminate it."
+      },
+      {
+        "text": "Ventricular tachycardia",
+        "isCorrect": false,
+        "rationale": "Wrong: VT is ventricular in origin, often wide complex, and does not terminate with vagal maneuvers; hemodynamic instability would suggest VT."
+      }
+    ]
+  },
+  {
+    "question": "Which diagnostic test is most appropriate to evaluate intermittent palpitations suspected to be due to paroxysmal arrhythmia not captured on a standard ECG?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the diagnostic approach to the most common atrial and ventricular arrhythmias including the appropriate diagnostic tests.",
+    "options": [
+      {
+        "text": "Ambulatory Holter or event monitor",
+        "isCorrect": true,
+        "rationale": "Correct: Ambulatory monitoring increases the chance of capturing intermittent arrhythmias when a standard ECG is normal."
+      },
+      {
+        "text": "Transthoracic echocardiogram",
+        "isCorrect": false,
+        "rationale": "Wrong: Echo assesses structural heart disease but does not capture transient electrical events; it would be correct if structural disease were suspected."
+      },
+      {
+        "text": "Exercise stress testing",
+        "isCorrect": false,
+        "rationale": "Wrong: Stress testing provokes ischemia-related arrhythmias but is less sensitive for random paroxysms; exertional symptoms would make it more appropriate."
+      },
+      {
+        "text": "Tilt-table autonomic testing",
+        "isCorrect": false,
+        "rationale": "Wrong: Tilt testing evaluates syncope from autonomic causes, not routine palpitations; syncope with orthostatic features would justify it."
+      },
+      {
+        "text": "Electrophysiology study immediately",
+        "isCorrect": false,
+        "rationale": "Wrong: EP study is invasive and reserved for refractory or unclear cases; documented symptomatic arrhythmia or failed medical therapy would make it appropriate."
+      }
+    ]
+  },
+  {
+    "question": "Which medication class is commonly used as first-line rate control for atrial fibrillation in patients without heart failure with reduced ejection fraction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Outline a treatment plan for the most common atrial and ventricular arrhythmias.",
+    "options": [
+      {
+        "text": "Beta blockers for ventricular rate control",
+        "isCorrect": true,
+        "rationale": "Correct: Beta blockers are first-line for rate control in AF for many patients without HFrEF because they slow AV nodal conduction."
+      },
+      {
+        "text": "Class Ic sodium channel blockers",
+        "isCorrect": false,
+        "rationale": "Wrong: Class Ic agents are rhythm control drugs and contraindicated in structural heart disease; they are not first-line for rate control."
+      },
+      {
+        "text": "Digoxin as sole therapy",
+        "isCorrect": false,
+        "rationale": "Wrong: Digoxin may help rate control at rest but is less effective during exertion and is not first-line sole therapy for most patients."
+      },
+      {
+        "text": "IV procainamide infusion",
+        "isCorrect": false,
+        "rationale": "Wrong: Procainamide is used for pre-excited AF or certain ventricular arrhythmias, not routine rate control in AF."
+      },
+      {
+        "text": "Immediate electrical defibrillation",
+        "isCorrect": false,
+        "rationale": "Wrong: Defibrillation treats ventricular fibrillation or unstable tachyarrhythmias; it is not a rate control strategy for stable AF."
+      }
+    ]
+  },
+  {
+    "question": "A 55-year-old with palpitations has an ECG showing regular narrow-complex tachycardia at 180 bpm with retrograde P waves immediately after each QRS. Which mechanism best explains this rhythm?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the etiologies of the most common atrial and ventricular arrhythmias.",
+    "options": [
+      {
+        "text": "Reentrant circuit within AV node",
+        "isCorrect": true,
+        "rationale": "Correct: AVNRT involves a reentrant circuit in or near the AV node producing narrow complex tachycardia with retrograde P waves."
+      },
+      {
+        "text": "Automatic focus in pulmonary veins",
+        "isCorrect": false,
+        "rationale": "Wrong: Pulmonary vein foci cause atrial fibrillation or focal atrial tachycardia with different P wave morphology; AF ECG would be irregular."
+      },
+      {
+        "text": "Accessory pathway reentry through bundle",
+        "isCorrect": false,
+        "rationale": "Wrong: AVRT via an accessory pathway (WPW) can cause SVT but often shows delta waves in sinus rhythm; evidence of pre-excitation would support this."
+      },
+      {
+        "text": "Enhanced automaticity of AV junction",
+        "isCorrect": false,
+        "rationale": "Wrong: Junctional tachycardia from automaticity is possible but typically lacks the sudden onset/termination and retrograde P wave pattern of AVNRT."
+      },
+      {
+        "text": "Ventricular ectopic focus near Purkinje",
+        "isCorrect": false,
+        "rationale": "Wrong: Ventricular focus produces wide QRS complexes; a narrow complex tachycardia argues against ventricular origin."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the recommended anticoagulation approach for a patient with atrial fibrillation of unknown duration who is hemodynamically stable and scheduled for elective cardioversion?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Outline a treatment plan for the most common atrial and ventricular arrhythmias.",
+    "options": [
+      {
+        "text": "Anticoagulate three weeks before cardioversion",
+        "isCorrect": true,
+        "rationale": "Correct: For AF >48 hours or unknown duration, guidelines recommend anticoagulation for three weeks before elective cardioversion to reduce thromboembolic risk."
+      },
+      {
+        "text": "No anticoagulation needed before cardioversion",
+        "isCorrect": false,
+        "rationale": "Wrong: Omitting anticoagulation is unsafe for AF >48 hours; only AF  48 hours; TEE-guided cardioversion is an alternative if anticoagulation cannot be delayed."
+      },
+      {
+        "text": "Start IV heparin and proceed immediately",
+        "isCorrect": false,
+        "rationale": "Wrong: IV heparin at the time of cardioversion is used for AF  48 hours duration, anticoagulation should be continued for at least four weeks to reduce thromboembolic risk."
+      },
+      {
+        "text": "Stop anticoagulation immediately",
+        "isCorrect": false,
+        "rationale": "Wrong: Stopping immediately after cardioversion risks thromboembolism; guidelines recommend continued anticoagulation for four weeks."
+      },
+      {
+        "text": "Continue anticoagulation for one year",
+        "isCorrect": false,
+        "rationale": "Wrong: One year is longer than guideline recommendation for post-cardioversion; long-term anticoagulation depends on stroke risk score, not routine one-year duration."
+      },
+      {
+        "text": "Switch to aspirin only after cardioversion",
+        "isCorrect": false,
+        "rationale": "Wrong: Aspirin alone is inadequate for stroke prevention post-cardioversion in most patients; oral anticoagulants are preferred."
+      },
+      {
+        "text": "Use IV heparin for four weeks",
+        "isCorrect": false,
+        "rationale": "Wrong: Long-term outpatient anticoagulation is typically with oral agents; prolonged IV heparin is impractical and unnecessary."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best characterizes wandering atrial pacemaker on ECG?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Interpret ECGs and identify heart rhythms by ECG.",
+    "options": [
+      {
+        "text": "At least three different P wave morphologies",
+        "isCorrect": true,
+        "rationale": "Correct: Wandering atrial pacemaker is defined by three or more distinct P wave morphologies in a single lead with irregular rhythm."
+      },
+      {
+        "text": "Absent P waves with irregular rhythm",
+        "isCorrect": false,
+        "rationale": "Wrong: Absent P waves with irregular rhythm suggest atrial fibrillation, not wandering atrial pacemaker which has distinct P morphologies."
+      },
+      {
+        "text": "Delta wave with short PR interval",
+        "isCorrect": false,
+        "rationale": "Wrong: Delta wave and short PR indicate WPW, not wandering atrial pacemaker; pre-excitation evidence would be needed."
+      },
+      {
+        "text": "Progressive PR prolongation then dropped beat",
+        "isCorrect": false,
+        "rationale": "Wrong: That pattern is Mobitz I AV block, not wandering atrial pacemaker; multiple P morphologies would be required."
+      },
+      {
+        "text": "Wide QRS complexes with compensatory pause",
+        "isCorrect": false,
+        "rationale": "Wrong: Wide QRS with compensatory pause suggests PVCs, not wandering atrial pacemaker which affects P wave morphology."
+      }
+    ]
+  },
+  {
+    "question": "A patient with symptomatic PVCs refractory to medical therapy is evaluated for ablation. Which finding would most strongly predict improvement in left ventricular function after PVC suppression?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "List the etiologies of the most common atrial and ventricular arrhythmias.",
+    "options": [
+      {
+        "text": "High PVC burden causing reduced EF",
+        "isCorrect": true,
+        "rationale": "Correct: A high PVC burden associated with reduced ejection fraction suggests PVC-induced cardiomyopathy and predicts improvement after PVC suppression."
+      },
+      {
+        "text": "Isolated occasional PVCs with normal EF",
+        "isCorrect": false,
+        "rationale": "Wrong: Occasional PVCs with normal EF are unlikely to cause cardiomyopathy; ablation would be less likely to improve function."
+      },
+      {
+        "text": "PVCs only during exercise with normal rest ECG",
+        "isCorrect": false,
+        "rationale": "Wrong: Exercise-triggered PVCs may be benign and less likely to cause persistent LV dysfunction; persistent high burden at rest would be needed."
+      },
+      {
+        "text": "Wide QRS PVCs in presence of ischemic scar",
+        "isCorrect": false,
+        "rationale": "Wrong: PVCs from scarred myocardium may reflect irreversible structural disease and improvement after ablation is less certain; absence of scar would favor improvement."
+      },
+      {
+        "text": "PVCs suppressed by caffeine avoidance alone",
+        "isCorrect": false,
+        "rationale": "Wrong: If PVCs respond to trigger avoidance, invasive ablation is less likely necessary; persistent burden despite avoidance would support ablation."
+      }
+    ]
+  },
+  {
+    "question": "Which acute therapy is contraindicated for a patient with wide-complex irregular tachycardia suspected to be pre-excited atrial fibrillation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Outline a treatment plan for the most common atrial and ventricular arrhythmias.",
+    "options": [
+      {
+        "text": "AV nodal blocking agents such as beta blockers",
+        "isCorrect": true,
+        "rationale": "Correct: AV nodal blockers can enhance conduction over the accessory pathway in pre-excited AF and are contraindicated; procainamide or cardioversion are preferred."
+      },
+      {
+        "text": "Procainamide infusion",
+        "isCorrect": false,
+        "rationale": "Wrong: Procainamide is recommended for pre-excited AF as it slows accessory pathway conduction and is not contraindicated."
+      },
+      {
+        "text": "Immediate synchronized cardioversion if unstable",
+        "isCorrect": false,
+        "rationale": "Wrong: Cardioversion is appropriate for unstable patients with pre-excited AF and is not contraindicated."
+      },
+      {
+        "text": "Adenosine bolus to terminate rhythm",
+        "isCorrect": false,
+        "rationale": "Wrong: Adenosine is contraindicated in pre-excited AF because it blocks the AV node and may facilitate accessory pathway conduction; it would be correct only for AVNRT."
+      },
+      {
+        "text": "IV amiodarone administration",
+        "isCorrect": false,
+        "rationale": "Wrong: Amiodarone has unpredictable effects on accessory pathways and is generally avoided acutely in pre-excited AF; procainamide is preferred."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the typical ECG appearance of atrial flutter with 2:1 conduction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Interpret ECGs and identify heart rhythms by ECG.",
+    "options": [
+      {
+        "text": "Regular ventricular rate with sawtooth atrial waves",
+        "isCorrect": true,
+        "rationale": "Correct: Atrial flutter commonly shows sawtooth atrial activity with a regular ventricular response often at half the atrial rate in 2:1 conduction."
+      },
+      {
+        "text": "Irregularly irregular rhythm without P waves",
+        "isCorrect": false,
+        "rationale": "Wrong: That pattern describes atrial fibrillation, not atrial flutter which has organized atrial activity."
+      },
+      {
+        "text": "Short PR interval with delta waves",
+        "isCorrect": false,
+        "rationale": "Wrong: Delta waves indicate WPW and pre-excitation, not atrial flutter; sawtooth waves would be expected instead."
+      },
+      {
+        "text": "Progressive PR prolongation then dropped beat",
+        "isCorrect": false,
+        "rationale": "Wrong: Progressive PR prolongation is Mobitz I AV block and is not the ECG pattern of atrial flutter."
+      },
+      {
+        "text": "Wide QRS tachycardia with AV dissociation",
+        "isCorrect": false,
+        "rationale": "Wrong: Wide complex tachycardia with AV dissociation suggests ventricular tachycardia, not atrial flutter."
+      }
+    ]
+  },
+  {
+    "question": "A 50-year-old with recurrent symptomatic AVNRT asks about definitive therapy. Which statement best reflects the lecture guidance regarding ablation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Atrioventricular nodal reentrant tachycardia",
+    "options": [
+      {
+        "text": "Catheter ablation is curative and commonly offered",
+        "isCorrect": true,
+        "rationale": "Correct: Radiofrequency ablation of the slow pathway is highly effective and often curative for symptomatic AVNRT."
+      },
+      {
+        "text": "Ablation is ineffective for AVNRT",
+        "isCorrect": false,
+        "rationale": "Wrong: Ablation is effective; stating it is ineffective contradicts evidence and lecture guidance."
+      },
+      {
+        "text": "Ablation always requires lifelong anticoagulation",
+        "isCorrect": false,
+        "rationale": "Wrong: Ablation does not mandate lifelong anticoagulation unless other indications exist; anticoagulation decisions depend on stroke risk."
+      },
+      {
+        "text": "Ablation is first-line for all asymptomatic patients",
+        "isCorrect": false,
+        "rationale": "Wrong: Ablation is reserved for symptomatic or refractory cases; asymptomatic patients typically do not undergo ablation."
+      },
+      {
+        "text": "Ablation cures WPW accessory pathways only",
+        "isCorrect": false,
+        "rationale": "Wrong: Ablation treats many arrhythmias including AVNRT and WPW; it is not limited to accessory pathways."
       }
     ]
   }
