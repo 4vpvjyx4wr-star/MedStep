@@ -1,897 +1,1473 @@
 [
   {
-    "question": "A 28-year-old woman on combined oral contraceptives presents with sudden pleuritic chest pain and mild dyspnea. Which venous location is the most likely origin of an embolus causing her symptoms?",
+    "question": "A 26-year-old woman presents with sudden pleuritic left-sided chest pain and mild exertional breathlessness that began one hour ago while walking. She takes combined oral contraceptives, has a heart rate of 95 beats/min, respiratory rate 20/min, oxygen saturation 96% on room air, and an otherwise normal exam. Using the lecture's recommended first step in evaluation, which action should be performed next?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Establish pre-test probability",
+    "options": [
+      {
+        "text": "Calculate a pretest probability score using Wells",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture specifies that determining pretest probability (eg, Wells) is the required first step before ordering D-dimer or imaging."
+      },
+      {
+        "text": "Obtain immediate CT pulmonary angiography with contrast",
+        "isCorrect": false,
+        "rationale": "Wrong because CTPA is reserved after establishing PTP and/or a positive D-dimer; it would be appropriate only if PTP were high or D-dimer positive."
+      },
+      {
+        "text": "Order a ventilation perfusion nuclear scan now",
+        "isCorrect": false,
+        "rationale": "Wrong because V/Q scanning is a secondary imaging choice and is not the initial step before assessing PTP per the lecture."
+      },
+      {
+        "text": "Send urgent lower extremity venous duplex ultrasound",
+        "isCorrect": false,
+        "rationale": "Wrong because LE ultrasound is an ancillary test and not the first step; it is used selectively after PTP assessment or when imaging is indeterminate."
+      },
+      {
+        "text": "Measure plasma D-dimer concentration immediately",
+        "isCorrect": false,
+        "rationale": "Wrong because D-dimer is indicated only after determining low or intermediate PTP; measuring it before PTP assessment is not the lecture-recommended first action."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the most common anatomic origin of emboli that obstruct pulmonary arterial flow, per the lecture?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Identify the source of most pulmonary emboli",
     "options": [
       {
-        "text": "Deep veins of the lower extremity",
+        "text": "Thrombi originating in deep veins of legs and pelvis",
         "isCorrect": true,
-        "rationale": "PE most commonly arises from thrombi in the deep veins of the legs and pelvis; identifying lower-extremity DVT explains embolic source."
+        "rationale": "Correct because the lecture states PE usually arises from deep venous thromboses in the legs and pelvis."
       },
       {
-        "text": "Superficial veins of the anterior chest",
+        "text": "Air emboli from central venous catheter placement",
         "isCorrect": false,
-        "rationale": "Superficial chest veins rarely produce clinically significant PE; if thrombosis extended into deep venous system it could become relevant."
+        "rationale": "Wrong because although air can embolize, the lecture emphasizes DVT of legs/pelvis as the usual source, not catheter-related air."
       },
       {
-        "text": "Coronary arterial thrombus from myocardium",
+        "text": "Fat emboli from long bone fractures in adults",
         "isCorrect": false,
-        "rationale": "Coronary arterial thrombi cause myocardial ischemia rather than pulmonary arterial occlusion; only venous thrombi that traverse the right heart cause PE."
+        "rationale": "Wrong because fat emboli are a less common cause; the lecture identifies thrombus from lower extremity veins as the predominant source."
       },
       {
-        "text": "Pulmonary venous thrombus within lung parenchyma",
+        "text": "Tumor fragments from metastatic intrathoracic malignancy",
         "isCorrect": false,
-        "rationale": "Pulmonary veins drain oxygenated blood to the left atrium and do not embolize to pulmonary arteries; a pulmonary arterial filling defect arises from systemic venous source."
+        "rationale": "Wrong because tumor emboli are rare; the lecture lists non-thrombotic causes as uncommon compared with DVT-derived thrombi."
       },
       {
-        "text": "Upper extremity superficial venous clot",
+        "text": "Amniotic fluid emboli during labor and delivery",
         "isCorrect": false,
-        "rationale": "Upper extremity superficial clots are uncommon sources of PE; only deep upper extremity thromboses or central venous catheter clots more plausibly embolize."
+        "rationale": "Wrong because amniotic fluid embolism is an uncommon cause and not the typical origin described in the lecture."
       }
     ]
   },
   {
-    "question": "Which set of factors best corresponds to Virchow's triad elements that increase risk for venous thrombosis?",
+    "question": "A patient with suspected pulmonary vascular obstruction has a normal chest radiograph and unexplained hypoxemia. According to the lecture, what is the primary clinical implication of this combination?",
     "difficulty_order": "1st",
-    "cited_learning_objective": "Identify the components of Virchow's triad as related to common risk factors for DVT and PE",
+    "cited_learning_objective": "Identify the primary role and the limitation of a CXR in the evaluation of suspected PE",
     "options": [
       {
-        "text": "Endothelial injury, stasis, hypercoagulability",
+        "text": "Consider pulmonary embolism until proven otherwise",
         "isCorrect": true,
-        "rationale": "Virchow's triad comprises endothelial injury, abnormal blood flow (stasis), and hypercoagulability, which underlie common VTE risk factors."
+        "rationale": "Correct because the lecture highlights that dyspnea or hypoxemia with a normal CXR should raise strong suspicion for PE."
       },
       {
-        "text": "Hypoxia, infection, systemic inflammation",
+        "text": "Exclude pulmonary embolism based on normal radiograph",
         "isCorrect": false,
-        "rationale": "Hypoxia and inflammation can contribute to thrombosis but do not map to the classic triad; if endothelial injury were specified this option would be correct."
+        "rationale": "Wrong because the lecture explicitly states CXR cannot exclude PE and a normal film does not rule it out."
       },
       {
-        "text": "Arterial hypertension, tachycardia, anemia",
+        "text": "Proceed directly to invasive pulmonary angiography now",
         "isCorrect": false,
-        "rationale": "These are cardiovascular abnormalities not representing Virchow's triad; replacing them with stasis and hypercoagulability would align with the triad."
+        "rationale": "Wrong because invasive angiography is not the routine next step; noninvasive imaging like CTPA or V/Q is preferred after PTP assessment."
       },
       {
-        "text": "Hyperlipidemia, atherosclerosis, plaque rupture",
+        "text": "Attribute hypoxemia to occult pneumonia despite normal film",
         "isCorrect": false,
-        "rationale": "These describe arterial atherothrombotic disease rather than venous thrombosis; venous clots are driven by stasis and coagulation changes instead."
+        "rationale": "Wrong because while alternative diagnoses exist, the lecture emphasizes considering PE when hypoxemia is unexplained by CXR findings."
       },
       {
-        "text": "Platelet dysfunction, leukopenia, hypovolemia",
+        "text": "Delay further testing because CXR lacks sensitivity",
         "isCorrect": false,
-        "rationale": "Platelet and leukocyte abnormalities are not the triad components; if endothelial injury and stasis were present this option would be more plausible."
+        "rationale": "Wrong because the lecture advises further evaluation (PTP, D-dimer, imaging) rather than delaying when PE is suspected."
       }
     ]
   },
   {
-    "question": "A patient with a large pulmonary arterial occlusion develops acute right ventricular dilation and hypotension. Which immediate physiologic consequence best explains the systemic hypotension?",
+    "question": "Which laboratory test, when normal, the lecture indicates has high negative predictive value for venous thromboembolism in patients with low or intermediate pretest probability?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Discuss the clinical application of a D-dimer in evaluating for PE",
+    "options": [
+      {
+        "text": "Plasma D-dimer concentration below assay cutoff",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states a normal D-dimer in low/intermediate PTP effectively excludes VTE due to high sensitivity."
+      },
+      {
+        "text": "Serum troponin concentration within reference range",
+        "isCorrect": false,
+        "rationale": "Wrong because troponin is prognostic and helps rule out ACS, but a normal troponin does not exclude PE per the lecture."
+      },
+      {
+        "text": "B-type natriuretic peptide within normal limits",
+        "isCorrect": false,
+        "rationale": "Wrong because BNP provides prognostic information for RV strain but is not used to exclude PE in low/intermediate PTP."
+      },
+      {
+        "text": "Arterial blood gas showing normal A-a gradient",
+        "isCorrect": false,
+        "rationale": "Wrong because ABG has low sensitivity and a normal A-a gradient cannot reliably exclude PE according to the lecture."
+      },
+      {
+        "text": "Complete blood count without leukocytosis or anemia",
+        "isCorrect": false,
+        "rationale": "Wrong because CBC helps identify alternative diagnoses and anticoagulation considerations but does not exclude PE when normal."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following EKG patterns is described in the lecture as the single most common electrocardiographic abnormality associated with pulmonary vascular obstruction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the most common EKG finding associated with PE",
+    "options": [
+      {
+        "text": "Sinus tachycardia with non specific ST T changes",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture notes sinus tachycardia and nonspecific ST-T changes are the most common EKG abnormalities in PE."
+      },
+      {
+        "text": "S1Q3T3 pattern with right axis deviation",
+        "isCorrect": false,
+        "rationale": "Wrong because S1Q3T3 is a classic but uncommon finding; it is not the most frequent EKG abnormality per the lecture."
+      },
+      {
+        "text": "New left bundle branch block with inferior Q waves",
+        "isCorrect": false,
+        "rationale": "Wrong because left BBB is not characteristic of PE; the lecture emphasizes right-sided strain patterns rather than left conduction defects."
+      },
+      {
+        "text": "Diffuse PR segment depression across precordial leads",
+        "isCorrect": false,
+        "rationale": "Wrong because PR depression suggests pericarditis, not PE; the lecture lists different EKG findings for PE."
+      },
+      {
+        "text": "Low voltage QRS complexes in all limb leads",
+        "isCorrect": false,
+        "rationale": "Wrong because low voltage is not a typical PE finding; the lecture focuses on tachycardia and right ventricular strain signs."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected pulmonary vascular obstruction has a D-dimer of 1,078 ng/mL (assay cutoff <500 ng/mL) and an intermediate Wells score. According to the lecture's algorithmic approach, what is the next appropriate diagnostic step?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss & apply the diagnostic pathway for evaluation of suspected PE in a patient with low/intermediate PTP",
+    "options": [
+      {
+        "text": "Obtain CT pulmonary angiography with intravenous contrast",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture indicates that a positive D-dimer in low/intermediate PTP necessitates definitive imaging, typically CTPA."
+      },
+      {
+        "text": "Repeat D-dimer using age adjusted cutoff immediately",
+        "isCorrect": false,
+        "rationale": "Wrong because repeating D-dimer is not the recommended next step when initial D-dimer is positive; imaging is required per the lecture."
+      },
+      {
+        "text": "Proceed to therapeutic anticoagulation without imaging",
+        "isCorrect": false,
+        "rationale": "Wrong because anticoagulation without imaging is reserved for high-risk PE or when imaging is impossible; with intermediate PTP and positive D-dimer, imaging is indicated."
+      },
+      {
+        "text": "Order ventilation perfusion nuclear scanning instead of imaging",
+        "isCorrect": false,
+        "rationale": "Wrong because while V/Q is an alternative, CTPA is the initial diagnostic modality of choice per the lecture for most patients."
+      },
+      {
+        "text": "Perform bedside transthoracic echocardiography for diagnosis",
+        "isCorrect": false,
+        "rationale": "Wrong because echo is ancillary and may show RV strain but cannot definitively diagnose PE; CTPA is preferred after positive D-dimer."
+      }
+    ]
+  },
+  {
+    "question": "Which physical examination finding, emphasized in the lecture as doubling the likelihood of deep venous thrombosis when present, should be assessed during evaluation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the most common exam findings in PE. Define Homan's sign. Identify the caution that must be taken when evaluating the presence of physical exam findings.",
+    "options": [
+      {
+        "text": "Two centimeter difference in calf diameter below tibial tubercle",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states a ≥2 cm diameter difference 10 cm below the tibial tubercle doubles the likelihood of DVT."
+      },
+      {
+        "text": "Positive Homan sign on passive ankle dorsiflexion",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture notes Homan's sign is no longer recommended and is not a reliable diagnostic finding."
+      },
+      {
+        "text": "Palpable cord along the superficial saphenous vein",
+        "isCorrect": false,
+        "rationale": "Wrong because a palpable cord suggests superficial thrombophlebitis rather than deep venous thrombosis; the lecture distinguishes deep versus superficial findings."
+      },
+      {
+        "text": "Bilateral pitting edema extending to the knees symmetrically",
+        "isCorrect": false,
+        "rationale": "Wrong because symmetric bilateral edema is less specific for DVT; the lecture highlights unilateral calf asymmetry as more suggestive."
+      },
+      {
+        "text": "Diffuse erythema and warmth of both lower extremities",
+        "isCorrect": false,
+        "rationale": "Wrong because diffuse bilateral erythema is nonspecific and would not double the likelihood of DVT as described in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best summarizes the primary pathophysiologic mechanisms by which a pulmonary arterial occlusion impairs cardiopulmonary function, according to the lecture?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the pathophysiologic effects of PE on both hemodynamics & gas exchange.",
     "options": [
       {
-        "text": "Reduced left ventricular preload from decreased pulmonary flow",
+        "text": "Ventilation perfusion mismatch with increased RV afterload",
         "isCorrect": true,
-        "rationale": "Acute PE increases RV afterload causing RV dilation and reduced forward flow to the left heart, lowering LV preload and systemic blood pressure."
+        "rationale": "Correct because the lecture explains PE causes V/Q mismatch and raises pulmonary artery pressure, increasing RV afterload and impairing gas exchange."
       },
       {
-        "text": "Systemic vasodilation from inflammatory mediators release",
+        "text": "Left ventricular systolic failure from coronary embolization",
         "isCorrect": false,
-        "rationale": "Inflammation may occur but systemic hypotension in acute PE is primarily due to reduced cardiac output; if profound mediator release caused distributive shock this option would be correct."
+        "rationale": "Wrong because LV failure from coronary emboli is not the typical mechanism; the lecture focuses on RV strain from pulmonary obstruction."
       },
       {
-        "text": "Myocardial infarction of left ventricle causing pump failure",
+        "text": "Primary alveolar collapse due to surfactant depletion",
         "isCorrect": false,
-        "rationale": "LV infarction causes hypotension but the vignette describes RV dilation after pulmonary occlusion; evidence of coronary ischemia would be required to make this correct."
+        "rationale": "Wrong because surfactant loss and alveolar collapse are not central mechanisms in PE; the lecture emphasizes V/Q mismatch and RV hemodynamics."
       },
       {
-        "text": "Severe hypoxemia causing peripheral vasoconstriction and shock",
+        "text": "Systemic arterial vasodilation causing hypotension",
         "isCorrect": false,
-        "rationale": "Hypoxemia contributes to instability but does not directly reduce LV preload; if hypoxemia were the dominant mechanism with normal RV function this option could explain hypotension."
+        "rationale": "Wrong because systemic vasodilation is not the primary effect; hypotension in PE is secondary to reduced LV preload from RV failure per the lecture."
       },
       {
-        "text": "Acute pericardial tamponade limiting cardiac filling",
+        "text": "Obstructive shock from left atrial inflow obstruction",
         "isCorrect": false,
-        "rationale": "Tamponade limits filling and causes hypotension but the exam shows RV dilation from afterload increase; pericardial effusion on imaging would be needed to support this diagnosis."
+        "rationale": "Wrong because obstruction occurs in pulmonary arteries affecting RV output, not direct left atrial inflow obstruction as described in the lecture."
       }
     ]
   },
   {
-    "question": "Which of the following is the most common presenting symptom of pulmonary arterial obstruction according to the lecture material?",
-    "difficulty_order": "1st",
+    "question": "A patient with suspected pulmonary vascular obstruction has an indeterminate CT pulmonary angiogram due to suboptimal contrast enhancement. Per the lecture, which next diagnostic step is most appropriate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the diagnostic approach required when an indeterminant CT scan is obtained.",
+    "options": [
+      {
+        "text": "Obtain ventilation perfusion nuclear scanning for further evaluation",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states indeterminate CTPA requires additional testing such as V/Q scanning or LE ultrasound."
+      },
+      {
+        "text": "Conclude pulmonary embolism is excluded without further testing",
+        "isCorrect": false,
+        "rationale": "Wrong because indeterminate CT cannot exclude PE; the lecture mandates further diagnostic evaluation."
+      },
+      {
+        "text": "Start thrombolytic therapy empirically without more imaging",
+        "isCorrect": false,
+        "rationale": "Wrong because thrombolytics are reserved for high-risk PE; indeterminate imaging alone does not justify empiric thrombolysis per the lecture."
+      },
+      {
+        "text": "Repeat the CT angiogram immediately with higher contrast dose",
+        "isCorrect": false,
+        "rationale": "Wrong because repeating CTPA may be considered but the lecture recommends alternative tests like V/Q or LEUS when CT is indeterminate."
+      },
+      {
+        "text": "Perform invasive pulmonary angiography as first alternative",
+        "isCorrect": false,
+        "rationale": "Wrong because invasive angiography is not the routine next step; noninvasive V/Q or ultrasound are preferred per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical feature listed in the lecture is least likely to be the presenting complaint in patients with pulmonary arterial obstruction?",
+    "difficulty_order": "2nd",
     "cited_learning_objective": "List the most common symptoms of PE.",
     "options": [
       {
-        "text": "New onset dyspnea at rest or with exertion",
+        "text": "Hemoptysis as an isolated presenting symptom",
         "isCorrect": true,
-        "rationale": "The lecture states that new dyspnea is the most common symptom of PE and should prompt consideration of VTE."
+        "rationale": "Correct because the lecture indicates hemoptysis is less common compared with dyspnea and pleuritic chest pain."
       },
       {
-        "text": "Hemoptysis with frank blood expectoration",
+        "text": "New onset exertional dyspnea without other findings",
         "isCorrect": false,
-        "rationale": "Hemoptysis occurs but is less common; if alveolar infarction were present hemoptysis would be more likely."
+        "rationale": "Wrong because dyspnea is the most common presenting symptom per the lecture."
       },
       {
-        "text": "Isolated syncope without other cardiopulmonary signs",
+        "text": "Pleuritic chest pain that worsens with inspiration",
         "isCorrect": false,
-        "rationale": "Syncope can occur in massive PE but is not the most common symptom; hemodynamic collapse would increase its likelihood."
+        "rationale": "Wrong because pleuritic chest pain is a common symptom described in the lecture."
       },
       {
-        "text": "Gradual weight loss and night sweats over months",
+        "text": "Unilateral leg pain or swelling preceding chest symptoms",
         "isCorrect": false,
-        "rationale": "Constitutional symptoms suggest chronic disease or malignancy rather than acute PE; if symptoms were acute and pleuritic this option would be less likely."
+        "rationale": "Wrong because lower extremity pain or swelling is a common associated symptom and source of emboli per the lecture."
       },
       {
-        "text": "Chronic cough productive of purulent sputum",
+        "text": "Syncope occurring at the time of symptom onset",
         "isCorrect": false,
-        "rationale": "Productive cough suggests infection; PE-related cough is usually nonproductive or associated with pleuritic pain."
+        "rationale": "Wrong because syncope can occur, especially in severe PE, and is listed among possible presentations in the lecture."
       }
     ]
   },
   {
-    "question": "A clinician notes tachypnea and tachycardia on exam but no focal lung findings. Which statement best reflects the diagnostic utility of the physical exam for pulmonary arterial occlusion?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the most common exam findings in PE. Define Homan's sign. Identify the caution that must be taken when evaluating the presence of physical exam findings.",
-    "options": [
-      {
-        "text": "Exam findings are often nonspecific and not definitive",
-        "isCorrect": true,
-        "rationale": "The lecture emphasizes that vital sign abnormalities and signs of DVT are common but nonspecific; absence of findings does not exclude PE."
-      },
-      {
-        "text": "A normal exam reliably excludes pulmonary embolism",
-        "isCorrect": false,
-        "rationale": "Normal exam does not rule out PE; only if imaging and low pretest probability are concordant could PE be excluded."
-      },
-      {
-        "text": "Homan sign is highly sensitive and recommended routinely",
-        "isCorrect": false,
-        "rationale": "Homan's sign is no longer recommended due to poor sensitivity and specificity; if validated by objective imaging it might be useful."
-      },
-      {
-        "text": "Tachycardia alone confirms high-risk pulmonary embolism",
-        "isCorrect": false,
-        "rationale": "Tachycardia suggests increased PTP but does not by itself confirm high-risk PE; hemodynamic instability and imaging define high-risk status."
-      },
-      {
-        "text": "Pulse oximetry normality excludes significant gas exchange impairment",
-        "isCorrect": false,
-        "rationale": "Pulse oximetry may be normal in PE; a normal reading does not exclude gas exchange impairment or PE."
-      }
-    ]
-  },
-  {
-    "question": "A patient with suspected embolic disease has an arterial blood gas showing PaO2 70 mmHg [80-100 mmHg] and PaCO2 30 mmHg [35-45 mmHg]. Which classic ABG pattern from the lecture does this represent?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "List \"classic\" ABG findings in PE. Discuss the limitation of an ABG in evaluation of PE.",
-    "options": [
-      {
-        "text": "Hypoxemia with respiratory alkalosis pattern",
-        "isCorrect": true,
-        "rationale": "PE classically causes hypoxemia and hypocapnia from hyperventilation, producing an increased A-a gradient and respiratory alkalosis."
-      },
-      {
-        "text": "Hypercapnia with metabolic acidosis pattern",
-        "isCorrect": false,
-        "rationale": "Hypercapnia is not the classic ABG in PE; if respiratory failure with hypoventilation occurred hypercapnia could be seen."
-      },
-      {
-        "text": "Normal gases that reliably exclude PE",
-        "isCorrect": false,
-        "rationale": "ABG may be normal and cannot exclude PE; a normal ABG does not rule out embolic disease."
-      },
-      {
-        "text": "Severe hypoxemia with primary metabolic alkalosis",
-        "isCorrect": false,
-        "rationale": "Metabolic alkalosis is unrelated to acute PE; if vomiting or diuretic use were present metabolic alkalosis might coexist."
-      },
-      {
-        "text": "Marked hypercapnia with normal oxygenation",
-        "isCorrect": false,
-        "rationale": "This pattern suggests hypoventilation rather than PE; PE typically causes increased A-a gradient and low PaCO2."
-      }
-    ]
-  },
-  {
-    "question": "Which initial step must be performed before ordering definitive imaging for suspected pulmonary arterial obstruction?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "List the 3 major steps in the work-up of suspected PE",
-    "options": [
-      {
-        "text": "Determine the patient's pretest probability score",
-        "isCorrect": true,
-        "rationale": "The lecture states that establishing pretest probability (e.g., Wells score) is the first step guiding D-dimer use and imaging decisions."
-      },
-      {
-        "text": "Obtain immediate therapeutic thrombolysis without testing",
-        "isCorrect": false,
-        "rationale": "Thrombolysis is reserved for high-risk PE with hemodynamic compromise; pretest probability and imaging guide most management decisions."
-      },
-      {
-        "text": "Perform ventilation perfusion scanning first universally",
-        "isCorrect": false,
-        "rationale": "V/Q scanning is not the universal first test; choice depends on PTP and D-dimer results, with CTPA often preferred."
-      },
-      {
-        "text": "Start anticoagulation in all patients before evaluation",
-        "isCorrect": false,
-        "rationale": "Anticoagulation may be started empirically in high-risk patients, but determining PTP is the recommended initial diagnostic step."
-      },
-      {
-        "text": "Order lower extremity venous duplex for everyone",
-        "isCorrect": false,
-        "rationale": "LE ultrasound is an ancillary test; it is useful when imaging is indeterminate or to identify DVT, not always the first step."
-      }
-    ]
-  },
-  {
-    "question": "Using the Wells criteria elements provided in the lecture, which clinical feature contributes the largest single point value to the score?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Calculate pretest probability utilizing Well's Criteria (only if criteria provided - don't memorize criteria). Determine risk based on Wells score.",
-    "options": [
-      {
-        "text": "Clinical signs and symptoms of deep vein thrombosis",
-        "isCorrect": true,
-        "rationale": "The Wells criteria assign 3 points for clinical signs of DVT, the largest single-item contribution to the score."
-      },
-      {
-        "text": "Heart rate greater than one hundred beats per minute",
-        "isCorrect": false,
-        "rationale": "Tachycardia contributes 1.5 points, less than the DVT sign item; if heart rate exceeded the threshold it would add but not be the largest."
-      },
-      {
-        "text": "Recent immobilization or surgery within four weeks",
-        "isCorrect": false,
-        "rationale": "Immobilization/surgery contributes 1.5 points; it is important but not the highest single-item value."
-      },
-      {
-        "text": "Hemoptysis with blood-tinged sputum present",
-        "isCorrect": false,
-        "rationale": "Hemoptysis contributes 1 point in Wells scoring, smaller than the DVT sign item."
-      },
-      {
-        "text": "Active malignancy treated within the last six months",
-        "isCorrect": false,
-        "rationale": "Malignancy contributes 1 point; it increases PTP but is not the largest single contributor."
-      }
-    ]
-  },
-  {
-    "question": "A patient with low pretest probability has a D-dimer result of 450 ng/mL [reference  6) presents hemodynamically stable. According to the lecture, which diagnostic step is appropriate without D-dimer testing?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Discuss & apply the diagnostic pathway for evaluation of suspected PE in a patient with high PTP.",
-    "options": [
-      {
-        "text": "Proceed directly to CT pulmonary angiography",
-        "isCorrect": true,
-        "rationale": "In high pretest probability the lecture advises imaging (CTPA) without relying on D-dimer, which is not useful in high PTP."
-      },
-      {
-        "text": "Use D-dimer to exclude pulmonary embolism first",
-        "isCorrect": false,
-        "rationale": "D-dimer is not recommended to exclude PE in high PTP patients; imaging is required."
-      },
-      {
-        "text": "Apply PERC rule to avoid further testing",
-        "isCorrect": false,
-        "rationale": "PERC is used to avoid D-dimer in very low-risk patients, not in those with high PTP."
-      },
-      {
-        "text": "Obtain only a chest radiograph and stop evaluation",
-        "isCorrect": false,
-        "rationale": "CXR cannot exclude PE and is insufficient in high PTP; definitive imaging is needed."
-      },
-      {
-        "text": "Start oral anticoagulation and defer imaging indefinitely",
-        "isCorrect": false,
-        "rationale": "Anticoagulation without imaging is not standard for stable high PTP patients; imaging should be obtained to confirm diagnosis."
-      }
-    ]
-  },
-  {
-    "question": "Which of the following best describes the primary role of chest radiography in the initial evaluation of suspected pulmonary arterial obstruction?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the primary role and the limitation of a CXR in the evaluation of suspected PE.",
-    "options": [
-      {
-        "text": "Rule out alternative diagnoses rather than confirm PE",
-        "isCorrect": true,
-        "rationale": "The lecture emphasizes that CXR's main utility is identifying alternative causes of symptoms; it cannot reliably confirm or exclude PE."
-      },
-      {
-        "text": "Confirm pulmonary embolism with high sensitivity",
-        "isCorrect": false,
-        "rationale": "CXR lacks sensitivity and specificity for PE; it cannot confirm the diagnosis reliably."
-      },
-      {
-        "text": "Detect right ventricular strain directly on radiograph",
-        "isCorrect": false,
-        "rationale": "CXR may show cardiomegaly in chronic disease but does not directly assess acute RV strain; echocardiography or biomarkers are better."
-      },
-      {
-        "text": "Measure pulmonary artery pressures noninvasively",
-        "isCorrect": false,
-        "rationale": "CXR cannot measure pressures; invasive hemodynamics or echocardiography are required for pressure assessment."
-      },
-      {
-        "text": "Exclude DVT in lower extremities without ultrasound",
-        "isCorrect": false,
-        "rationale": "CXR does not evaluate lower extremity veins; duplex ultrasound is used to detect DVT."
-      }
-    ]
-  },
-  {
-    "question": "A 70-year-old with suspected PE has a D-dimer of 600 ng/mL [reference <500 ng/mL]. The lecture mentions age-adjusted D-dimer strategies. Which adjustment principle is described?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Discuss the benefits of age-adjusted D-dimer and/or D-dimer cutoffs used in some approaches.",
-    "options": [
-      {
-        "text": "Use age times ten nanograms per milliliter cutoff",
-        "isCorrect": true,
-        "rationale": "The lecture notes some approaches use age-adjusted D-dimer (e.g., age × 10 ng/mL) to reduce false positives in older patients."
-      },
-      {
-        "text": "Apply a universal cutoff of five hundred regardless of age",
-        "isCorrect": false,
-        "rationale": "A universal 500 ng/mL cutoff is standard but age-adjusted cutoffs are used to improve specificity in older patients."
-      },
-      {
-        "text": "Double the cutoff for all patients over fifty years",
-        "isCorrect": false,
-        "rationale": "Doubling is not the described method; age × 10 is the commonly referenced adjustment in the lecture."
-      },
-      {
-        "text": "Lower the cutoff to two hundred for elderly patients",
-        "isCorrect": false,
-        "rationale": "Lowering the cutoff would increase false positives; age-adjustment increases the cutoff with age to reduce unnecessary imaging."
-      },
-      {
-        "text": "Ignore D-dimer entirely in patients older than sixty",
-        "isCorrect": false,
-        "rationale": "D-dimer remains useful with age-adjustment; the lecture does not recommend ignoring it in older patients."
-      }
-    ]
-  },
-  {
-    "question": "Which ancillary test does the lecture recommend when CT pulmonary angiography is contraindicated or nondiagnostic and ventilation-perfusion scanning is not available?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Identify common reasons V/Q is utilized. Identify ancillary tests like LE venous duplex.",
-    "options": [
-      {
-        "text": "Lower extremity venous duplex ultrasound to detect DVT",
-        "isCorrect": true,
-        "rationale": "When CTPA is contraindicated or indeterminate and V/Q is unavailable, LE duplex can identify DVT as indirect evidence of PE per the lecture."
-      },
-      {
-        "text": "Immediate pulmonary artery catheter angiography in all cases",
-        "isCorrect": false,
-        "rationale": "Catheter angiography is invasive and reserved for select cases; LE duplex is a less invasive ancillary test recommended in such scenarios."
-      },
-      {
-        "text": "Sputum culture to identify infectious mimics of PE",
-        "isCorrect": false,
-        "rationale": "Sputum culture may identify pneumonia but does not provide evidence for PE; LE duplex is the appropriate ancillary test."
-      },
-      {
-        "text": "Routine MRI brain to exclude embolic stroke concurrently",
-        "isCorrect": false,
-        "rationale": "Brain MRI is unrelated to diagnosing pulmonary embolism; it would be indicated only if neurologic symptoms suggested stroke."
-      },
-      {
-        "text": "Arterial blood gas analysis to definitively diagnose PE",
-        "isCorrect": false,
-        "rationale": "ABG findings are nonspecific and cannot definitively diagnose PE; LE duplex can provide indirect diagnostic evidence."
-      }
-    ]
-  },
-  {
-    "question": "A patient with confirmed pulmonary arterial occlusion is hemodynamically stable. According to the lecture, what is the first-line treatment for most such patients?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the mainstay of treatment of PE. List the current recommendations for treatment of PE.",
-    "options": [
-      {
-        "text": "Therapeutic anticoagulation as primary treatment",
-        "isCorrect": true,
-        "rationale": "The lecture identifies anticoagulation as the mainstay and first-line therapy for most PE patients who are not high-risk."
-      },
-      {
-        "text": "Immediate systemic thrombolysis for all patients",
-        "isCorrect": false,
-        "rationale": "Thrombolytics are reserved for high-risk PE with hemodynamic compromise; they are not first-line for stable patients."
-      },
-      {
-        "text": "Surgical pulmonary embolectomy for routine cases",
-        "isCorrect": false,
-        "rationale": "Surgical embolectomy is reserved for select massive PE or failed thrombolysis, not routine first-line therapy."
-      },
-      {
-        "text": "No therapy and outpatient observation only",
-        "isCorrect": false,
-        "rationale": "Untreated PE has high mortality; anticoagulation is indicated unless contraindicated."
-      },
-      {
-        "text": "High-dose corticosteroids to reduce pulmonary inflammation",
-        "isCorrect": false,
-        "rationale": "Corticosteroids are not a treatment for PE; anticoagulation addresses the thrombotic process directly."
-      }
-    ]
-  },
-  {
-    "question": "Which subset of patients did the lecture specify as clear candidates for thrombolytic therapy?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Identify the subset of patients with PE in which treatment with thrombolytics is clearly indicated",
-    "options": [
-      {
-        "text": "Patients with PE and persistent hemodynamic instability",
-        "isCorrect": true,
-        "rationale": "Thrombolytics are clearly indicated for high-risk PE characterized by hypotension or shock due to obstructive physiology as described in the lecture."
-      },
-      {
-        "text": "All patients with any degree of hypoxemia on pulse oximetry",
-        "isCorrect": false,
-        "rationale": "Hypoxemia alone without hemodynamic compromise is not an indication for thrombolysis; hemodynamic instability is required."
-      },
-      {
-        "text": "Patients with small subsegmental emboli on imaging",
-        "isCorrect": false,
-        "rationale": "Small subsegmental PEs are usually managed with anticoagulation, not thrombolysis; thrombolytics are for massive PE."
-      },
-      {
-        "text": "Those with chronic thromboembolic pulmonary hypertension only",
-        "isCorrect": false,
-        "rationale": "CTEPH is a chronic condition managed differently; acute thrombolysis is for acute high-risk PE with instability."
-      },
-      {
-        "text": "Patients with isolated calf vein thrombosis without pulmonary symptoms",
-        "isCorrect": false,
-        "rationale": "Isolated calf DVT without PE symptoms does not warrant thrombolysis; anticoagulation is standard."
-      }
-    ]
-  },
-  {
-    "question": "A 26-year-old woman on oral contraceptives presents with pleuritic chest pain; Wells score calculated as 1.5 (low). Which initial test does the lecture recommend next?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Discuss & apply the diagnostic pathway for evaluation of suspected PE in a patient with low/intermediate PTP.",
-    "options": [
-      {
-        "text": "Order a D-dimer assay before imaging",
-        "isCorrect": true,
-        "rationale": "For low or intermediate PTP the lecture recommends D-dimer screening first; a normal result can exclude PE without imaging."
-      },
-      {
-        "text": "Proceed directly to CT pulmonary angiography immediately",
-        "isCorrect": false,
-        "rationale": "CTPA is indicated if D-dimer is positive or PTP is high; in low PTP D-dimer is the appropriate initial test."
-      },
-      {
-        "text": "Start systemic anticoagulation empirically now",
-        "isCorrect": false,
-        "rationale": "Empiric anticoagulation without imaging is reserved for high-risk or unstable patients; low PTP warrants D-dimer screening first."
-      },
-      {
-        "text": "Obtain ventilation perfusion scan without D-dimer",
-        "isCorrect": false,
-        "rationale": "V/Q is an imaging option when indicated but D-dimer is the recommended initial screen in low/intermediate PTP."
-      },
-      {
-        "text": "Perform immediate lower extremity venous duplex ultrasound",
-        "isCorrect": false,
-        "rationale": "LE duplex can detect DVT but is not the first-line initial test in low PTP where D-dimer screening is preferred."
-      }
-    ]
-  },
-  {
-    "question": "Which statement best reflects the lecture's guidance about the sensitivity and specificity of D-dimer testing?",
+    "question": "A 68-year-old patient with suspected venous thromboembolism has a D-dimer assay result of 450 ng/mL and a Wells score of 1. According to the lecture's guidance, how should this result be interpreted?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Discuss the clinical application of a D-dimer in evaluating for PE. Identify which patients may have an elevated D-dimer, even in the absence of PE",
     "options": [
       {
-        "text": "High sensitivity but low specificity for acute VTE",
+        "text": "PE can be excluded given low pretest probability and normal D-dimer",
         "isCorrect": true,
-        "rationale": "The lecture describes D-dimer as sensitive (useful to exclude VTE) but nonspecific because many conditions elevate it."
+        "rationale": "Correct because the lecture states a normal D-dimer in low/intermediate PTP excludes PE; cutoff <500 ng/mL applies."
       },
       {
-        "text": "High specificity but low sensitivity for pulmonary embolism",
+        "text": "Proceed to CT pulmonary angiography despite normal D-dimer",
         "isCorrect": false,
-        "rationale": "D-dimer is not highly specific; it is sensitive. A test with high specificity would confirm disease, which D-dimer does not."
+        "rationale": "Wrong because imaging is not required when D-dimer is normal in low/intermediate PTP per the lecture."
       },
       {
-        "text": "Neither sensitive nor specific; rarely useful clinically",
+        "text": "Consider age adjusted D-dimer cutoff instead of absolute value",
         "isCorrect": false,
-        "rationale": "D-dimer is clinically useful due to high sensitivity in low/intermediate PTP; it is not rarely useful."
+        "rationale": "Wrong because while age-adjusted cutoffs exist, the lecture indicates a D-dimer <500 ng/mL excludes PE in low/intermediate PTP; age adjustment is an alternative approach."
       },
       {
-        "text": "Only useful in patients with active cancer per lecture",
+        "text": "Order ventilation perfusion scan because D-dimer is unreliable",
         "isCorrect": false,
-        "rationale": "D-dimer can be elevated in cancer and other states but is not limited to cancer patients; its sensitivity applies broadly."
+        "rationale": "Wrong because D-dimer is reliable for exclusion in low/intermediate PTP; V/Q is not indicated when D-dimer is normal."
       },
       {
-        "text": "Specific for chronic thromboembolic pulmonary hypertension",
+        "text": "Start anticoagulation empirically despite normal D-dimer",
         "isCorrect": false,
-        "rationale": "D-dimer detects fibrin degradation in acute VTE, not specifically CTEPH; other tests assess chronic pulmonary hypertension."
+        "rationale": "Wrong because anticoagulation without imaging is not indicated when PE is excluded by PTP and normal D-dimer per the lecture."
       }
     ]
   },
   {
-    "question": "A patient with suspected PE has a CTPA showing an intraluminal filling defect in a segmental pulmonary artery. According to the lecture, what is the correct interpretation?",
+    "question": "Which of the following best characterizes the role of arterial blood gas testing in the routine evaluation of suspected pulmonary vascular obstruction, per the lecture?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the radiographic sign on CTPA that confirms PE (intraluminal filling defect).",
+    "cited_learning_objective": "List \"classic\" ABG findings in PE. Discuss the limitation of an ABG in evaluation of PE.",
     "options": [
       {
-        "text": "Imaging confirms pulmonary embolus diagnosis",
+        "text": "Not routinely useful; may be normal despite PE",
         "isCorrect": true,
-        "rationale": "An intraluminal filling defect on CTPA is diagnostic of PE per the lecture's description of positive CTPA findings."
+        "rationale": "Correct because the lecture states ABG has low sensitivity and specificity and may be normal, so it is not routinely used."
       },
       {
-        "text": "Finding is nonspecific and requires no further action",
+        "text": "Essential diagnostic test that confirms pulmonary embolism",
         "isCorrect": false,
-        "rationale": "A filling defect is specific for PE and requires treatment; it is not a nonspecific incidental finding."
+        "rationale": "Wrong because ABG cannot confirm PE; the lecture emphasizes its limited diagnostic utility."
       },
       {
-        "text": "Represents pulmonary artery dissection rather than embolus",
+        "text": "Primary test to determine need for CT pulmonary angiography",
         "isCorrect": false,
-        "rationale": "Pulmonary artery dissection is rare and has different imaging features; an intraluminal filling defect is characteristic of embolus."
+        "rationale": "Wrong because PTP and D-dimer guide imaging decisions, not ABG results per the lecture."
       },
       {
-        "text": "Indicates chronic pulmonary hypertension without acute clot",
+        "text": "Only useful when D-dimer is indeterminate for diagnosis",
         "isCorrect": false,
-        "rationale": "Chronic changes may show webs or bands, but an acute intraluminal filling defect indicates thrombus rather than chronic remodeling."
+        "rationale": "Wrong because ABG is not recommended as a tie-breaker for D-dimer; the lecture lists specific indications like severe hypoxia or respiratory failure."
       },
       {
-        "text": "Suggests artifact from contrast timing only",
+        "text": "Replaces chest radiograph when film is unavailable",
         "isCorrect": false,
-        "rationale": "While timing artifacts can occur, a true intraluminal filling defect on adequate study is diagnostic; if contrast opacification were inadequate artifact would be considered."
+        "rationale": "Wrong because ABG does not substitute for CXR; the lecture assigns different roles to each test."
       }
     ]
   },
   {
-    "question": "Which clinical scenario from the lecture would most strongly suggest a high-risk pulmonary arterial occlusion requiring urgent reperfusion therapy?",
+    "question": "A 55-year-old patient with suspected pulmonary vascular obstruction is hemodynamically unstable with hypotension and signs of shock. According to the lecture, which classification and immediate management step applies?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Identify the defining characteristics of a High-Risk PE and the corresponding treatment.",
     "options": [
       {
-        "text": "Acute hypotension with signs of shock and RV failure",
+        "text": "High risk PE requiring immediate systemic thrombolytic therapy",
         "isCorrect": true,
-        "rationale": "High-risk (massive) PE is defined by hemodynamic instability such as hypotension and shock from RV failure, indicating need for urgent reperfusion."
+        "rationale": "Correct because the lecture defines high-risk PE by hemodynamic compromise and indicates thrombolytics are clearly indicated in this subset."
       },
       {
-        "text": "Mild exertional dyspnea with normal blood pressure",
+        "text": "Low risk PE managed with outpatient oral anticoagulation alone",
         "isCorrect": false,
-        "rationale": "Mild symptoms with stable hemodynamics indicate lower risk and are managed with anticoagulation rather than urgent reperfusion."
+        "rationale": "Wrong because hypotension and shock indicate high-risk PE, not low risk; outpatient anticoagulation would be inappropriate."
       },
       {
-        "text": "Isolated small subsegmental clot on imaging without symptoms",
+        "text": "Intermediate risk PE treated with aspirin and observation",
         "isCorrect": false,
-        "rationale": "Small subsegmental clots without symptoms are low risk and typically do not require reperfusion therapy."
+        "rationale": "Wrong because aspirin is not a treatment for PE; intermediate risk requires anticoagulation and monitoring, not antiplatelet therapy."
       },
       {
-        "text": "Chronic progressive dyspnea over months without acute change",
+        "text": "Immediate inferior vena cava filter placement without anticoagulation",
         "isCorrect": false,
-        "rationale": "Chronic symptoms suggest CTEPH or other chronic disease, not acute high-risk PE requiring immediate reperfusion."
+        "rationale": "Wrong because IVC filters are not first-line for high-risk PE with hemodynamic instability; thrombolysis is indicated per the lecture."
       },
       {
-        "text": "Transient syncope with normal hemodynamics afterward",
+        "text": "Urgent surgical embolectomy as first-line therapy in all cases",
         "isCorrect": false,
-        "rationale": "Syncope can occur but without persistent hypotension or shock it does not alone define high-risk PE; ongoing instability would be required."
+        "rationale": "Wrong because surgical embolectomy is reserved for select cases; systemic thrombolysis is first-line for most high-risk PE per the lecture."
       }
     ]
   },
   {
-    "question": "A patient with suspected PE has an indeterminate CTPA and a positive lower extremity ultrasound showing proximal DVT. According to the lecture, what is the clinical significance?",
+    "question": "A 40-year-old woman on combined oral contraceptives presents with pleuritic chest pain and unilateral calf swelling. Using the Wells criteria components provided in the lecture, which single item would contribute the largest point value to her score?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Calculate pretest probability utilizing Well's Criteria (only if criteria provided - don't memorize criteria). Determine risk based on Wells score.",
+    "options": [
+      {
+        "text": "Clinical signs and symptoms consistent with deep vein thrombosis",
+        "isCorrect": true,
+        "rationale": "Correct because the Wells table assigns 3.0 points for clinical DVT signs, the largest single-item value listed in the lecture."
+      },
+      {
+        "text": "Heart rate greater than one hundred beats per minute",
+        "isCorrect": false,
+        "rationale": "Wrong because tachycardia is worth 1.5 points in the Wells criteria per the lecture, less than the DVT item."
+      },
+      {
+        "text": "Recent immobilization or surgery within the prior four weeks",
+        "isCorrect": false,
+        "rationale": "Wrong because immobilization/surgery is 1.5 points per the lecture, not the largest single-item value."
+      },
+      {
+        "text": "Active malignancy treated within the last six months",
+        "isCorrect": false,
+        "rationale": "Wrong because malignancy is assigned 1.0 point in the lecture's Wells table, smaller than the DVT item."
+      },
+      {
+        "text": "Hemoptysis reported at presentation to the clinician",
+        "isCorrect": false,
+        "rationale": "Wrong because hemoptysis is 1.0 point in the Wells criteria per the lecture, not the largest contributor."
+      }
+    ]
+  },
+  {
+    "question": "Which imaging modality does the lecture identify as the initial diagnostic test of choice for most patients with suspected pulmonary arterial obstruction when imaging is required?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Discuss the benefits of CT scanning in the diagnosis of PE.",
+    "options": [
+      {
+        "text": "CT pulmonary angiography with intravenous contrast",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states CTPA is the initial diagnostic modality of choice due to good sensitivity, specificity, and availability."
+      },
+      {
+        "text": "Planar ventilation perfusion nuclear scanning study",
+        "isCorrect": false,
+        "rationale": "Wrong because planar V/Q has a high nondiagnostic rate; the lecture prefers CTPA for most patients."
+      },
+      {
+        "text": "Lower extremity venous duplex ultrasound alone",
+        "isCorrect": false,
+        "rationale": "Wrong because LE ultrasound is ancillary and cannot replace CTPA for diagnosing PE in most cases per the lecture."
+      },
+      {
+        "text": "Transthoracic echocardiography for definitive diagnosis",
+        "isCorrect": false,
+        "rationale": "Wrong because echo is useful for RV strain assessment but is not the definitive initial diagnostic test for PE per the lecture."
+      },
+      {
+        "text": "Invasive pulmonary angiography as routine first test",
+        "isCorrect": false,
+        "rationale": "Wrong because invasive angiography is not routine; CTPA is preferred per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected pulmonary vascular obstruction has a normal D-dimer but a high clinical pretest probability by Wells score. According to the lecture, what is the appropriate interpretation and next step?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the clinical application of a D-dimer in evaluating for PE. Identify which patients may have an elevated D-dimer, even in the absence of PE",
+    "options": [
+      {
+        "text": "D-dimer cannot exclude PE; obtain definitive imaging",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states D-dimer should not be used to exclude PE in high PTP; imaging is required."
+      },
+      {
+        "text": "PE is excluded because D-dimer is within normal limits",
+        "isCorrect": false,
+        "rationale": "Wrong because a normal D-dimer only excludes PE in low/intermediate PTP, not high PTP per the lecture."
+      },
+      {
+        "text": "Repeat D-dimer using a different assay to confirm result",
+        "isCorrect": false,
+        "rationale": "Wrong because repeating the assay is not recommended when PTP is high; imaging is the next step per the lecture."
+      },
+      {
+        "text": "Start aspirin and observe clinically for improvement",
+        "isCorrect": false,
+        "rationale": "Wrong because aspirin is not an appropriate management for suspected PE; anticoagulation or imaging-guided therapy is indicated per the lecture."
+      },
+      {
+        "text": "Order ventilation perfusion scan instead of CT imaging",
+        "isCorrect": false,
+        "rationale": "Wrong because while V/Q is an alternative, the lecture emphasizes that high PTP requires definitive imaging, typically CTPA."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following is the classic chest radiograph sign described in the lecture as a peripheral wedge-shaped opacity suggesting pulmonary infarction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List and describe the \"classic\" CXR findings in PE.",
+    "options": [
+      {
+        "text": "Peripheral pleural based wedge shaped opacity (Hampton hump)",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture identifies Hampton's hump as a wedge-shaped peripheral opacity associated with pulmonary infarction."
+      },
+      {
+        "text": "Focal central oligemia with abrupt vessel cutoff (Westermark)",
+        "isCorrect": false,
+        "rationale": "Wrong because Westermark sign is oligemia, not a wedge-shaped opacity; the lecture lists both but distinguishes their appearances."
+      },
+      {
+        "text": "Diffuse bilateral interstitial markings consistent with edema",
+        "isCorrect": false,
+        "rationale": "Wrong because pulmonary edema pattern is different and not the classic wedge-shaped infarct described as Hampton's hump in the lecture."
+      },
+      {
+        "text": "Prominent cardiomegaly indicating chronic pulmonary hypertension",
+        "isCorrect": false,
+        "rationale": "Wrong because cardiomegaly is a chronic finding and not the acute wedge-shaped opacity described as Hampton's hump."
+      },
+      {
+        "text": "Unilateral elevated hemidiaphragm without parenchymal opacity",
+        "isCorrect": false,
+        "rationale": "Wrong because an elevated hemidiaphragm is nonspecific and not the wedge-shaped pleural-based opacity characteristic of infarction."
+      }
+    ]
+  },
+  {
+    "question": "A 30-year-old pregnant patient in her second trimester presents with sudden dyspnea and pleuritic chest pain. According to the lecture, which diagnostic consideration specific to pregnancy should be addressed first in the work-up?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Identify the clinical significance in finding a DVT in a patient suspected of having a PE.",
+    "cited_learning_objective": "Apply a diagnostic pathway for the work-up of PE during pregnancy including the primary question to ask as the first step common to all approaches.",
     "options": [
       {
-        "text": "Proximal DVT supports diagnosis and guides treatment for PE",
+        "text": "Determine whether chest radiograph is normal before imaging choice",
         "isCorrect": true,
-        "rationale": "Finding a proximal DVT in the context of suspected PE provides indirect evidence of VTE and supports initiating treatment as described in the lecture."
+        "rationale": "Correct because the lecture emphasizes asking whether the chest radiograph is normal as the first step to guide imaging selection in pregnancy."
       },
       {
-        "text": "Proximal DVT excludes pulmonary embolism definitively",
+        "text": "Proceed directly to CT pulmonary angiography regardless of radiograph",
         "isCorrect": false,
-        "rationale": "DVT presence supports PE diagnosis but does not exclude it; imaging of the pulmonary arteries is still informative when possible."
+        "rationale": "Wrong because imaging choice in pregnancy depends on CXR findings; CTPA is not always the immediate first choice per the lecture."
       },
       {
-        "text": "Proximal DVT indicates need for immediate surgical embolectomy",
+        "text": "Use D-dimer alone to exclude PE in pregnancy",
         "isCorrect": false,
-        "rationale": "Surgical embolectomy is reserved for massive PE with instability; DVT alone does not mandate surgery."
+        "rationale": "Wrong because D-dimer levels change in pregnancy and cannot be solely relied upon; the lecture discusses altered D-dimer interpretation in pregnancy."
       },
       {
-        "text": "Proximal DVT suggests alternative diagnosis unrelated to embolism",
+        "text": "Start low molecular weight heparin empirically without imaging",
         "isCorrect": false,
-        "rationale": "Proximal DVT is part of the VTE spectrum and is directly related to embolic risk rather than an unrelated alternative diagnosis."
+        "rationale": "Wrong because while LMWH is treatment, the lecture indicates diagnostic pathway decisions should precede empiric therapy unless high-risk features exist."
       },
       {
-        "text": "Proximal DVT requires only compression stockings without anticoagulation",
+        "text": "Order ventilation perfusion scan without prior chest radiograph",
         "isCorrect": false,
-        "rationale": "Proximal DVT typically requires anticoagulation to prevent embolization; compression stockings alone are insufficient."
+        "rationale": "Wrong because the lecture recommends using CXR to guide whether V/Q or CTPA is preferred in pregnancy."
       }
     ]
   },
   {
-    "question": "Which of the following best summarizes the lecture's guidance on the use of ABG in suspected pulmonary arterial occlusion?",
+    "question": "Which of the following patient groups listed in the lecture is noted to commonly have elevated D-dimer levels even in the absence of venous thromboembolism?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Discuss the limitation of an ABG in evaluation of PE.",
+    "cited_learning_objective": "Identify which patients may have an elevated D-dimer, even in the absence of PE",
     "options": [
       {
-        "text": "ABG may show classic changes but cannot exclude PE",
+        "text": "Elderly patients with increasing age related elevation",
         "isCorrect": true,
-        "rationale": "The lecture notes ABG can demonstrate hypoxemia and hypocapnia but has low sensitivity and specificity and cannot rule out PE."
+        "rationale": "Correct because the lecture notes age-related D-dimer elevation and the use of age-adjusted cutoffs."
       },
       {
-        "text": "ABG is diagnostic and replaces imaging in most cases",
+        "text": "Young healthy adults without recent illness or surgery",
         "isCorrect": false,
-        "rationale": "ABG is not diagnostic and cannot replace imaging; it is used selectively for severe hypoxia or respiratory failure."
+        "rationale": "Wrong because young healthy adults are less likely to have elevated D-dimer absent VTE; the lecture lists other groups as commonly elevated."
       },
       {
-        "text": "Normal ABG definitively rules out pulmonary embolism",
+        "text": "Patients with isolated musculoskeletal chest wall pain",
         "isCorrect": false,
-        "rationale": "A normal ABG does not exclude PE; the lecture explicitly warns against using ABG to rule out disease."
+        "rationale": "Wrong because musculoskeletal pain does not typically raise D-dimer; the lecture cites trauma, pregnancy, cancer, and post-op states as causes."
       },
       {
-        "text": "ABG should never be obtained in suspected PE",
+        "text": "Individuals with chronic stable asthma without exacerbation",
         "isCorrect": false,
-        "rationale": "ABG may be indicated in significant hypoxia or respiratory distress; it is not universally contraindicated."
+        "rationale": "Wrong because stable asthma is not listed as a common cause of elevated D-dimer in the lecture."
       },
       {
-        "text": "ABG values directly determine need for thrombolysis",
+        "text": "Patients with long standing controlled hypertension only",
         "isCorrect": false,
-        "rationale": "Thrombolysis decisions are based on hemodynamic status and risk stratification, not ABG values alone."
+        "rationale": "Wrong because hypertension alone is not identified in the lecture as a common cause of elevated D-dimer."
       }
     ]
   },
   {
-    "question": "A 55-year-old with suspected PE has a CTPA that is negative and technically adequate. According to the lecture, what is the appropriate interpretation?",
+    "question": "A patient with suspected pulmonary vascular obstruction has tachypnea (RR 24) and tachycardia (HR 110) but normal oxygen saturation and normal chest radiograph. According to the lecture, how should the absence of hypoxemia be interpreted?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Interpret negative CTPA results and when further testing is required.",
+    "cited_learning_objective": "Identify the caution that must be taken when evaluating the presence of physical exam findings.",
     "options": [
       {
-        "text": "A negative adequate CTPA excludes pulmonary embolism",
+        "text": "Absence of hypoxemia does not exclude pulmonary embolism",
         "isCorrect": true,
-        "rationale": "The lecture states that a negative, technically adequate CTPA excludes PE and no further testing is required in most cases."
+        "rationale": "Correct because the lecture cautions that normal pulse oximetry does not rule out PE."
       },
       {
-        "text": "Negative CTPA always requires V/Q scanning next",
+        "text": "Normal oxygen saturation effectively rules out pulmonary embolism",
         "isCorrect": false,
-        "rationale": "V/Q is used when CTPA is indeterminate or contraindicated; a negative adequate CTPA generally obviates further testing."
+        "rationale": "Wrong because the lecture explicitly warns that absence of hypoxemia cannot exclude PE."
       },
       {
-        "text": "Negative CTPA mandates immediate anticoagulation regardless",
+        "text": "Hypoxemia must be present for PE to be clinically significant",
         "isCorrect": false,
-        "rationale": "Anticoagulation is not indicated if PE is excluded by adequate imaging unless other indications exist."
+        "rationale": "Wrong because PE can be clinically significant without hypoxemia; the lecture notes variable presentations."
       },
       {
-        "text": "Negative CTPA indicates imaging artifact and repeat CT",
+        "text": "Pulse oximetry is the most sensitive test for PE diagnosis",
         "isCorrect": false,
-        "rationale": "If the study is technically adequate, artifact is unlikely; repeat imaging is unnecessary unless clinical suspicion remains high."
+        "rationale": "Wrong because pulse oximetry lacks sensitivity and specificity for PE per the lecture."
       },
       {
-        "text": "Negative CTPA suggests chronic thromboembolic disease instead",
+        "text": "Repeat oxygen saturation after exertion to confirm absence",
         "isCorrect": false,
-        "rationale": "Chronic disease has different imaging features; an adequate negative CTPA excludes acute PE rather than indicating chronic pathology."
+        "rationale": "Wrong because while exertional desaturation may be informative, the lecture does not recommend this as a definitive exclusion strategy."
       }
     ]
   },
   {
-    "question": "Which of the following is a limitation of CT pulmonary angiography emphasized in the lecture?",
+    "question": "Which of the following best reflects the lecture's statement about the mortality impact of untreated pulmonary arterial occlusion compared with timely diagnosis and anticoagulation?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Discuss the benefits of CT scanning in the diagnosis of PE. Identify the diagnostic approach required when an indeterminant CT scan is obtained.",
+    "cited_learning_objective": "Discuss the benefits of diagnosis and treatment on PE mortality",
     "options": [
       {
-        "text": "Radiation exposure and contrast-related renal toxicity",
+        "text": "Untreated mortality up to thirty percent; treated near one to three percent",
         "isCorrect": true,
-        "rationale": "The lecture lists radiation and renal toxicity from contrast as important limitations of CTPA despite its diagnostic benefits."
+        "rationale": "Correct because the lecture reports untreated PE mortality up to 30% and with diagnosis and anticoagulation mortality approximately 1–3%."
       },
       {
-        "text": "Inability to detect any alternative diagnoses",
+        "text": "Untreated mortality less than one percent; treated unchanged",
         "isCorrect": false,
-        "rationale": "CTPA can detect alternative diagnoses; inability to do so is not a limitation cited in the lecture."
+        "rationale": "Wrong because the lecture indicates untreated mortality is much higher and treatment substantially reduces mortality."
       },
       {
-        "text": "Universal high nondiagnostic rate in most centers",
+        "text": "Treatment increases mortality due to bleeding complications",
         "isCorrect": false,
-        "rationale": "CTPA generally has good diagnostic performance; high nondiagnostic rates are more characteristic of planar V/Q scans."
+        "rationale": "Wrong because while anticoagulation has bleeding risks, the lecture emphasizes treatment reduces mortality compared with no treatment."
       },
       {
-        "text": "Complete lack of availability in emergency settings",
+        "text": "Mortality is unaffected by diagnostic delays according to lecture",
         "isCorrect": false,
-        "rationale": "CTPA is widely available and rapid; lack of availability is not the typical limitation discussed."
+        "rationale": "Wrong because the lecture highlights that undiagnosed fatal PE cases are common and timely diagnosis reduces mortality."
       },
       {
-        "text": "Absolute contraindication in all patients with renal impairment",
+        "text": "Only surgical embolectomy reduces mortality compared with no treatment",
         "isCorrect": false,
-        "rationale": "Renal impairment is a relative contraindication due to contrast risk; alternatives like V/Q or LEUS may be considered."
+        "rationale": "Wrong because the lecture identifies anticoagulation as the mainstay that reduces mortality, not only surgical embolectomy."
       }
     ]
   },
   {
-    "question": "A patient with suspected PE has tachycardia (HR 110) and unilateral calf swelling with 3 cm diameter difference. How does this physical finding affect the likelihood of DVT according to the lecture?",
+    "question": "A patient with suspected pulmonary vascular obstruction has a CTPA that shows an intraluminal filling defect in a segmental pulmonary artery. According to the lecture, what is the correct interpretation?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the most common exam findings in PE. Recognize that ≥2 cm leg diameter difference increases likelihood of DVT.",
+    "cited_learning_objective": "Identify the diagnostic criteria for positive CTPA",
     "options": [
       {
-        "text": "Leg diameter difference increases likelihood of deep vein thrombosis",
+        "text": "Positive study consistent with pulmonary embolus diagnosis",
         "isCorrect": true,
-        "rationale": "The lecture notes that a ≥2 cm difference in leg diameter 10 cm below the tibial tubercle doubles the likelihood of DVT."
+        "rationale": "Correct because the lecture states an intraluminal filling defect on CTPA indicates PE and confirms the diagnosis."
       },
       {
-        "text": "Calf swelling reliably excludes deep vein thrombosis",
+        "text": "Indeterminate study requiring additional testing for diagnosis",
         "isCorrect": false,
-        "rationale": "Calf swelling increases suspicion but does not exclude or confirm DVT; imaging is required for diagnosis."
+        "rationale": "Wrong because an intraluminal filling defect is diagnostic, whereas indeterminate studies lack such clear defects per the lecture."
       },
       {
-        "text": "Unilateral swelling indicates superficial thrombophlebitis only",
+        "text": "Negative study excluding pulmonary embolism definitively",
         "isCorrect": false,
-        "rationale": "Unilateral swelling can reflect DVT as well as superficial thrombophlebitis; it is not specific for superficial disease."
+        "rationale": "Wrong because a visible filling defect is not consistent with a negative study; the lecture defines this as diagnostic of PE."
       },
       {
-        "text": "Three centimeter difference is clinically insignificant per lecture",
+        "text": "Artifact from motion that should be ignored clinically",
         "isCorrect": false,
-        "rationale": "A ≥2 cm difference is significant per the lecture; 3 cm would be considered clinically meaningful."
+        "rationale": "Wrong because while motion can cause artifacts, a true intraluminal filling defect represents pathology and should not be dismissed per the lecture."
       },
       {
-        "text": "Calf swelling mandates immediate thrombolysis without imaging",
+        "text": "Suggestive of chronic pulmonary hypertension rather than acute PE",
         "isCorrect": false,
-        "rationale": "Thrombolysis is not indicated for isolated calf swelling; diagnostic imaging and anticoagulation decisions depend on overall assessment."
+        "rationale": "Wrong because an acute intraluminal filling defect indicates embolus; chronic pulmonary hypertension has different imaging features per the lecture."
       }
     ]
   },
   {
-    "question": "Which diagnostic pathway element did the lecture emphasize to avoid harms from over-evaluation and overtreatment in suspected PE?",
+    "question": "Which ancillary test does the lecture list as useful to detect a source of embolus when evaluating a patient with suspected pulmonary arterial obstruction?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Goals in evaluation: ensure identification of clinically significant PE while avoiding harms from overevaluation and overtreatment.",
+    "cited_learning_objective": "Identify common reasons V/Q is utilized. Identify the clinical significance in finding a DVT in a patient suspected of having a PE.",
     "options": [
       {
-        "text": "Use pretest probability and selective D-dimer testing",
+        "text": "Lower extremity venous duplex ultrasound to detect DVT",
         "isCorrect": true,
-        "rationale": "The lecture emphasizes determining PTP and using D-dimer selectively to avoid unnecessary imaging and treatment harms."
+        "rationale": "Correct because the lecture lists LE venous duplex as an ancillary test to identify DVT, the usual source of PE."
       },
       {
-        "text": "Perform CTPA on all patients regardless of risk",
+        "text": "Serum creatine kinase to evaluate muscle injury as source",
         "isCorrect": false,
-        "rationale": "Universal imaging increases radiation and false positives; selective testing based on PTP is recommended."
+        "rationale": "Wrong because CK assesses muscle injury and is not used to detect embolic sources per the lecture."
       },
       {
-        "text": "Treat empirically with anticoagulation for every chest pain case",
+        "text": "Sputum culture to identify infectious embolic sources",
         "isCorrect": false,
-        "rationale": "Empiric anticoagulation risks bleeding and is not appropriate for all chest pain; targeted therapy based on diagnosis is advised."
+        "rationale": "Wrong because sputum culture is for infection and not an ancillary test for detecting DVT or PE source per the lecture."
       },
       {
-        "text": "Avoid any testing and rely solely on clinical gestalt",
+        "text": "Coronary angiography to locate emboli in pulmonary circulation",
         "isCorrect": false,
-        "rationale": "Clinical gestalt is useful but must be combined with objective testing like D-dimer and imaging to balance risks and benefits."
+        "rationale": "Wrong because coronary angiography evaluates coronary arteries, not the venous source of pulmonary emboli as described in the lecture."
       },
       {
-        "text": "Use age-adjusted imaging thresholds for everyone",
+        "text": "Abdominal ultrasound to search for portal vein thrombosis source",
         "isCorrect": false,
-        "rationale": "Age-adjusted D-dimer cutoffs may be used, but blanket imaging threshold changes for everyone are not the lecture's recommended harm-avoidance strategy."
+        "rationale": "Wrong because portal vein thrombosis is not the common source of PE; the lecture emphasizes lower extremity and pelvic veins."
       }
     ]
   },
   {
-    "question": "A 30-year-old with suspected PE is hemodynamically unstable. According to the lecture, which immediate management step is most appropriate while arranging definitive therapy?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Identify the defining characteristics of a High-Risk PE and the corresponding treatment.",
-    "options": [
-      {
-        "text": "Initiate resuscitation and consider urgent reperfusion therapy",
-        "isCorrect": true,
-        "rationale": "For high-risk PE with hemodynamic instability the lecture recommends immediate resuscitation and urgent reperfusion (e.g., thrombolysis) as appropriate."
-      },
-      {
-        "text": "Wait for confirmatory imaging before any resuscitation",
-        "isCorrect": false,
-        "rationale": "Delaying resuscitation in unstable patients is unsafe; immediate stabilization and consideration of reperfusion are prioritized."
-      },
-      {
-        "text": "Administer only oral anticoagulant and discharge home",
-        "isCorrect": false,
-        "rationale": "Oral anticoagulants are not appropriate as sole immediate therapy in unstable high-risk PE; urgent reperfusion is indicated."
-      },
-      {
-        "text": "Perform outpatient D-dimer testing and follow up",
-        "isCorrect": false,
-        "rationale": "Outpatient testing is inappropriate for unstable patients; immediate in-hospital resuscitation and therapy are required."
-      },
-      {
-        "text": "Apply compression stockings and observe for improvement",
-        "isCorrect": false,
-        "rationale": "Compression stockings do not treat acute high-risk PE and are inadequate for hemodynamically unstable patients."
-      }
-    ]
-  },
-  {
-    "question": "Which of the following best captures the lecture's statement about the mortality of untreated pulmonary arterial occlusion compared with treated disease?",
+    "question": "A patient with suspected pulmonary vascular obstruction has an ECG showing T-wave inversions in leads V1–V4. According to the lecture, what is the clinical significance of this finding?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe mortality differences between untreated and treated PE.",
+    "cited_learning_objective": "Identify the most common EKG finding associated with PE. List 3 common EKG findings of Right Ventricular Strain.",
     "options": [
       {
-        "text": "Untreated PE mortality much higher than treated cases",
+        "text": "Suggests right ventricular strain and worse prognosis",
         "isCorrect": true,
-        "rationale": "The lecture reports untreated PE mortality up to ~30%, reduced to approximately 1–3% with diagnosis and anticoagulation."
+        "rationale": "Correct because the lecture lists T-wave inversions in V1–V4 as a sign of RV strain associated with poorer outcomes."
       },
       {
-        "text": "Untreated PE mortality slightly lower than treated cases",
+        "text": "Confirms acute coronary occlusion as primary diagnosis",
         "isCorrect": false,
-        "rationale": "This contradicts the lecture; treatment markedly reduces mortality compared with untreated PE."
+        "rationale": "Wrong because while T-wave changes can occur in ischemia, the lecture notes these inversions can reflect RV strain in PE rather than confirming ACS."
       },
       {
-        "text": "Treatment has no impact on PE mortality per lecture",
+        "text": "Indicates pericarditis requiring anti inflammatory therapy",
         "isCorrect": false,
-        "rationale": "The lecture indicates treatment significantly lowers mortality; stating no impact is incorrect."
+        "rationale": "Wrong because pericarditis typically shows diffuse ST elevation and PR depression, not isolated V1–V4 T-wave inversions as in RV strain."
       },
       {
-        "text": "Mortality identical regardless of diagnosis or therapy",
+        "text": "Represents normal variant without clinical consequence",
         "isCorrect": false,
-        "rationale": "Accurate diagnosis and anticoagulation reduce mortality substantially; identical mortality is not supported."
+        "rationale": "Wrong because T-wave inversions in these leads are not usually a benign variant and can indicate RV strain per the lecture."
       },
       {
-        "text": "Only surgical therapy reduces mortality in PE",
+        "text": "Shows left ventricular hypertrophy from chronic hypertension",
         "isCorrect": false,
-        "rationale": "Anticoagulation reduces mortality for most PEs; surgical therapy is reserved for select cases and is not the only life-saving option."
+        "rationale": "Wrong because LVH has different ECG criteria; the lecture associates V1–V4 T-wave inversions with right-sided strain in PE."
       }
     ]
   },
   {
-    "question": "A patient with suspected PE has a positive D-dimer but cannot undergo CTPA due to severe renal impairment. According to the lecture, which imaging is preferred next?",
-    "difficulty_order": "3rd",
+    "question": "Which of the following best describes the lecture's guidance on the use of V/Q SPECT compared with planar V/Q scanning?",
+    "difficulty_order": "2nd",
     "cited_learning_objective": "Identify common reasons V/Q is utilized.",
     "options": [
       {
-        "text": "Ventilation perfusion nuclear scan as alternative imaging",
+        "text": "V/Q SPECT preferred due to higher specificity and fewer nondiagnostic studies",
         "isCorrect": true,
-        "rationale": "When CTPA is contraindicated (e.g., renal dysfunction) the lecture recommends V/Q scanning as an alternative diagnostic modality."
+        "rationale": "Correct because the lecture recommends V/Q SPECT over planar V/Q for better diagnostic performance and fewer nondiagnostic results."
       },
       {
-        "text": "Repeat CTPA with higher contrast dose regardless",
+        "text": "Planar V/Q scanning preferred because it is three dimensional",
         "isCorrect": false,
-        "rationale": "Increasing contrast in renal impairment risks nephrotoxicity; V/Q is the safer alternative."
+        "rationale": "Wrong because planar V/Q is two dimensional and has a higher nondiagnostic rate; the lecture favors SPECT for 3D imaging."
       },
       {
-        "text": "Lower extremity venous duplex only without pulmonary imaging",
+        "text": "V/Q SPECT has lower specificity and more nondiagnostic scans",
         "isCorrect": false,
-        "rationale": "LE duplex may help but V/Q provides direct pulmonary assessment and is preferred when CTPA is contraindicated."
+        "rationale": "Wrong because the lecture states SPECT has greater specificity and fewer nondiagnostic scans compared with planar V/Q."
       },
       {
-        "text": "Chest radiograph alone to confirm pulmonary embolism",
+        "text": "Planar V/Q eliminates need for chest radiograph before imaging",
         "isCorrect": false,
-        "rationale": "CXR cannot confirm PE; V/Q scanning is the recommended alternative imaging modality."
+        "rationale": "Wrong because the lecture does not state planar V/Q obviates CXR; imaging choice often depends on CXR and clinical context."
       },
       {
-        "text": "Empiric thrombolysis without any imaging confirmation",
+        "text": "V/Q SPECT is contraindicated in patients with renal impairment",
         "isCorrect": false,
-        "rationale": "Thrombolysis without clear indication is risky; imaging alternatives like V/Q should be used when possible."
+        "rationale": "Wrong because V/Q SPECT uses nuclear tracers and is not contraindicated for renal impairment in the lecture; CTPA contrast is the renal concern."
       }
     ]
   },
   {
-    "question": "Which of the following best reflects the lecture's teaching about the prevalence of unsuspected fatal pulmonary arterial occlusion cases?",
+    "question": "A patient with suspected pulmonary vascular obstruction has a normal D-dimer but clinical gestalt strongly suggests PE. According to the lecture, which clinical decision rule could be applied to avoid D-dimer testing in appropriate low-risk patients?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Recognize that many fatal PE cases are unsuspected or undiagnosed.",
+    "cited_learning_objective": "Discuss & apply the diagnostic pathway for evaluation of suspected PE in a patient with low/intermediate PTP.",
     "options": [
       {
-        "text": "A majority of fatal PE cases were unsuspected before death",
+        "text": "Pulmonary embolism rule out criteria to obviate testing",
         "isCorrect": true,
-        "rationale": "The lecture notes that 60–80% of fatal PE cases were unsuspected or undiagnosed, highlighting diagnostic challenges."
+        "rationale": "Correct because the lecture mentions PERC can eliminate the need for D-dimer in appropriate low-risk patients."
+      },
+      {
+        "text": "Revised Geneva score to replace clinical gestalt entirely",
+        "isCorrect": false,
+        "rationale": "Wrong because while Geneva is a scoring system, the lecture specifically highlights PERC for ruling out testing in low-risk patients."
+      },
+      {
+        "text": "Wells criteria to obviate imaging without further testing",
+        "isCorrect": false,
+        "rationale": "Wrong because Wells determines PTP and guides D-dimer use, but PERC is the rule used to avoid D-dimer in very low-risk patients per the lecture."
+      },
+      {
+        "text": "Age adjusted D-dimer cutoff to exclude PE in all ages",
+        "isCorrect": false,
+        "rationale": "Wrong because age-adjusted D-dimer modifies cutoff but does not replace PERC for avoiding testing in low-risk patients as described in the lecture."
+      },
+      {
+        "text": "Sgarbossa criteria to rule out pulmonary embolism",
+        "isCorrect": false,
+        "rationale": "Wrong because Sgarbossa criteria apply to ischemia with LBBB and are unrelated to PE decision rules in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected pulmonary vascular obstruction has a CTPA that is technically inadequate due to motion artifact. The lecture emphasizes that such an indeterminate result has what diagnostic implication?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the clinical importance of indeterminant CT results.",
+    "options": [
+      {
+        "text": "Indeterminate CT cannot exclude PE; further testing required",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states indeterminate CT results cannot be used to exclude PE and additional testing is necessary."
+      },
+      {
+        "text": "Indeterminate CT effectively rules out clinically significant PE",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture warns indeterminate studies do not exclude PE and should prompt further evaluation."
+      },
+      {
+        "text": "Treat as negative study and search for alternative diagnoses",
+        "isCorrect": false,
+        "rationale": "Wrong because treating an indeterminate CT as negative risks missed PE; the lecture advises further testing."
+      },
+      {
+        "text": "Immediate discharge without follow up if patient is stable",
+        "isCorrect": false,
+        "rationale": "Wrong because stability does not negate the need for further testing after an indeterminate CT per the lecture."
+      },
+      {
+        "text": "Start long term anticoagulation without confirmatory imaging",
+        "isCorrect": false,
+        "rationale": "Wrong because anticoagulation without confirmation is not recommended unless high-risk features exist; indeterminate imaging requires more diagnostics."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best reflects the lecture's guidance on the primary goals when evaluating a patient for suspected pulmonary vascular obstruction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the 3 major steps in the work-up of suspected PE",
+    "options": [
+      {
+        "text": "Identify clinically significant PE while avoiding unnecessary harms",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states goals include identifying clinically significant PE and avoiding harms from overtesting and overtreatment."
+      },
+      {
+        "text": "Maximize imaging for every patient regardless of pretest probability",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture emphasizes targeted testing guided by PTP to avoid unnecessary radiation and false positives."
+      },
+      {
+        "text": "Exclude all incidental pulmonary findings irrespective of symptoms",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture warns against over-evaluation of incidentalomas and focuses on clinically significant PE."
+      },
+      {
+        "text": "Use D-dimer as sole determinant for long term therapy",
+        "isCorrect": false,
+        "rationale": "Wrong because D-dimer is a screening tool and not sufficient alone to determine long-term therapy per the lecture."
+      },
+      {
+        "text": "Delay diagnosis to observe natural symptom progression first",
+        "isCorrect": false,
+        "rationale": "Wrong because timely diagnosis and treatment reduce mortality; the lecture discourages unnecessary delays."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected pulmonary vascular obstruction has a positive CTPA confirming PE. According to the lecture, what is the mainstay of treatment for most patients without high-risk features?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify mainstay of treatment of PE. List the current recommendations for treatment of PE.",
+    "options": [
+      {
+        "text": "Therapeutic anticoagulation as first line management",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture identifies anticoagulation as the mainstay and first-line treatment for most PE patients."
+      },
+      {
+        "text": "Immediate systemic thrombolysis for all confirmed cases",
+        "isCorrect": false,
+        "rationale": "Wrong because thrombolytics are reserved for high-risk PE with hemodynamic compromise per the lecture."
+      },
+      {
+        "text": "Routine placement of inferior vena cava filter in all patients",
+        "isCorrect": false,
+        "rationale": "Wrong because IVC filters are not first-line for all patients; they are used selectively when anticoagulation is contraindicated per the lecture."
+      },
+      {
+        "text": "Long term aspirin monotherapy without anticoagulation",
+        "isCorrect": false,
+        "rationale": "Wrong because aspirin is not an appropriate substitute for anticoagulation in PE management according to the lecture."
+      },
+      {
+        "text": "Immediate surgical pulmonary embolectomy for stable patients",
+        "isCorrect": false,
+        "rationale": "Wrong because surgical embolectomy is reserved for select cases and not routine first-line therapy for stable patients per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best summarizes the lecture's statement about the frequency of undiagnosed fatal pulmonary vascular obstruction cases?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the diagnostic challenge and frequency of unsuspected fatal PE",
+    "options": [
+      {
+        "text": "Sixty to eighty percent of fatal PE cases were unsuspected",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture reports that 60–80% of fatal PE cases were unsuspected or undiagnosed."
       },
       {
         "text": "Almost all fatal PE cases are diagnosed before death",
         "isCorrect": false,
-        "rationale": "This contradicts the lecture; many fatal PEs are not recognized prior to death."
+        "rationale": "Wrong because the lecture emphasizes many fatal PEs are unsuspected, not diagnosed pre-mortem."
       },
       {
-        "text": "Fatal PE is extremely rare and always clinically obvious",
+        "text": "Fatal PE is extremely rare and usually overdiagnosed",
         "isCorrect": false,
-        "rationale": "Fatal PE is not always obvious and is a significant cause of sudden death; the lecture emphasizes its diagnostic difficulty."
+        "rationale": "Wrong because the lecture indicates PE causes significant mortality and is often undiagnosed, not overdiagnosed."
       },
       {
-        "text": "Fatal PE only occurs in hospitalized patients per lecture",
+        "text": "Undiagnosed fatal PE occurs only in hospitalized patients",
         "isCorrect": false,
-        "rationale": "PE can be fatal in both outpatient and inpatient settings; it is a leading cause of unexpected outpatient death as noted."
+        "rationale": "Wrong because the lecture notes PE is a leading cause of sudden outpatient deaths as well as in-hospital deaths."
       },
       {
-        "text": "All fatal PE cases present with massive hemoptysis",
+        "text": "Most fatal PE cases present with classic textbook symptoms",
         "isCorrect": false,
-        "rationale": "Hemoptysis is uncommon; fatal PE often presents with sudden collapse rather than specific symptoms like massive hemoptysis."
+        "rationale": "Wrong because the lecture highlights variable and nonspecific presentations, contributing to missed diagnoses."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected pulmonary vascular obstruction has a positive LE venous duplex demonstrating proximal femoral DVT but no respiratory symptoms. According to the lecture, what is the clinical significance of finding a DVT in this context?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the clinical significance in finding a DVT in a patient suspected of having a PE.",
+    "options": [
+      {
+        "text": "Finding DVT supports source of embolus and may obviate further imaging",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture notes that identifying a DVT can confirm the source and may influence diagnostic and treatment decisions."
+      },
+      {
+        "text": "DVT finding excludes pulmonary embolism as cause of symptoms",
+        "isCorrect": false,
+        "rationale": "Wrong because DVT presence does not exclude PE; it supports VTE diagnosis and may prompt treatment per the lecture."
+      },
+      {
+        "text": "Proximal DVT requires only compression therapy without anticoagulation",
+        "isCorrect": false,
+        "rationale": "Wrong because proximal DVT typically requires anticoagulation; compression alone is insufficient per the lecture."
+      },
+      {
+        "text": "Lower extremity duplex is unreliable and should be ignored",
+        "isCorrect": false,
+        "rationale": "Wrong because LE duplex is a useful ancillary test to detect DVT as described in the lecture."
+      },
+      {
+        "text": "DVT presence mandates immediate thrombolysis in all patients",
+        "isCorrect": false,
+        "rationale": "Wrong because thrombolysis is reserved for high-risk PE with hemodynamic compromise, not all DVT cases per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best reflects the lecture's recommendation regarding the use of age adjusted D-dimer thresholds?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the clinical application of a D-dimer in evaluating for PE. Identify which patients may have an elevated D-dimer, even in the absence of PE",
+    "options": [
+      {
+        "text": "Age adjusted cutoffs may be used to improve specificity in older patients",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture mentions age-adjusted D-dimer as an approach to account for age-related elevations and reduce false positives."
+      },
+      {
+        "text": "Age adjustment lowers sensitivity and should be avoided universally",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture presents age adjustment as an accepted method, not a universal avoidance due to sensitivity loss."
+      },
+      {
+        "text": "Age adjusted D-dimer applies only to pregnant patients",
+        "isCorrect": false,
+        "rationale": "Wrong because age adjustment addresses age-related changes, not pregnancy-specific D-dimer alterations discussed separately in the lecture."
+      },
+      {
+        "text": "Age adjustment increases false negatives in young adults",
+        "isCorrect": false,
+        "rationale": "Wrong because age adjustment targets older patients and is not described as increasing false negatives in young adults per the lecture."
+      },
+      {
+        "text": "Age adjusted cutoff replaces Wells scoring entirely",
+        "isCorrect": false,
+        "rationale": "Wrong because age adjustment modifies D-dimer interpretation but does not replace PTP assessment like Wells per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected pulmonary vascular obstruction has a normal CTPA but persistent clinical concern due to high pretest probability. According to the lecture, which statement best reflects appropriate next steps?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the diagnostic pathway for evaluation of suspected PE in a patient with high PTP.",
+    "options": [
+      {
+        "text": "Negative CTPA generally excludes PE but consider further testing if imaging inadequate",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states a negative CTPA excludes PE unless the study is inadequate or indeterminate, in which case further testing is needed."
+      },
+      {
+        "text": "Start lifelong anticoagulation despite negative imaging",
+        "isCorrect": false,
+        "rationale": "Wrong because anticoagulation without diagnostic confirmation is not routine; the lecture recommends further evaluation if imaging is inadequate rather than immediate lifelong therapy."
+      },
+      {
+        "text": "Treat with thrombolytics because clinical concern overrides imaging",
+        "isCorrect": false,
+        "rationale": "Wrong because thrombolytics are reserved for hemodynamic compromise; imaging alone does not mandate thrombolysis per the lecture."
+      },
+      {
+        "text": "Ignore clinical concern if CTPA is negative and discharge patient",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture cautions that indeterminate or inadequate imaging requires additional testing and clinical judgment, not automatic discharge."
+      },
+      {
+        "text": "Replace CTPA with chest radiograph as definitive next test",
+        "isCorrect": false,
+        "rationale": "Wrong because CXR cannot exclude PE and is not the definitive next step when CTPA is negative but concern persists per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best summarizes the lecture's teaching about the sensitivity and specificity of D-dimer testing for acute venous thromboembolism?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the clinical application of a D-dimer in evaluating for PE",
+    "options": [
+      {
+        "text": "High sensitivity but low specificity with many false positives",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture describes D-dimer as sensitive but not specific, with elevations in many non-VTE conditions."
+      },
+      {
+        "text": "High specificity and low sensitivity making it confirmatory",
+        "isCorrect": false,
+        "rationale": "Wrong because D-dimer is not specific and cannot confirm VTE; the lecture emphasizes its role in exclusion when negative."
+      },
+      {
+        "text": "Neither sensitive nor specific and therefore clinically useless",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture highlights D-dimer's high sensitivity and utility in excluding PE in appropriate patients."
+      },
+      {
+        "text": "Specific only in elderly patients due to age related changes",
+        "isCorrect": false,
+        "rationale": "Wrong because age-related elevations reduce specificity in elderly patients; age adjustment improves interpretation but does not make it specific."
+      },
+      {
+        "text": "Only useful for monitoring anticoagulant therapy effectiveness",
+        "isCorrect": false,
+        "rationale": "Wrong because D-dimer is a diagnostic screening tool, not a routine monitor of anticoagulant effectiveness per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected pulmonary vascular obstruction presents with pleuritic chest pain and hemoptysis. The lecture notes that lung infarction is uncommon but more likely with which clot distribution?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the pathophysiologic effects of PE on gas exchange including lung infarction likelihood",
+    "options": [
+      {
+        "text": "Smaller, distal pulmonary arterial emboli causing peripheral infarction",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture states lung infarction is uncommon (~10%) and more likely with smaller, distal clots causing pleuritic pain and hemoptysis."
+      },
+      {
+        "text": "Large central pulmonary artery occlusions causing massive infarction",
+        "isCorrect": false,
+        "rationale": "Wrong because large central clots more often cause hemodynamic compromise rather than focal infarction; distal clots are more associated with infarction per the lecture."
+      },
+      {
+        "text": "Emboli confined to bronchial arterial circulation",
+        "isCorrect": false,
+        "rationale": "Wrong because bronchial arterial emboli are not the typical mechanism; pulmonary arterial distal emboli cause infarction per the lecture."
+      },
+      {
+        "text": "Microemboli from systemic arterial sources causing diffuse infarction",
+        "isCorrect": false,
+        "rationale": "Wrong because diffuse microemboli are not the classic cause of focal pulmonary infarction described in the lecture."
+      },
+      {
+        "text": "Emboli limited to pulmonary capillary bed without arterial involvement",
+        "isCorrect": false,
+        "rationale": "Wrong because infarction is associated with arterial occlusion in distal branches rather than isolated capillary involvement per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best reflects the lecture's guidance on the role of troponin and BNP testing in suspected pulmonary vascular obstruction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify general information common lab tests provide which may help in evaluation of suspected PE",
+    "options": [
+      {
+        "text": "Provide prognostic information and suggest right ventricular strain",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture notes troponin and BNP are not diagnostic but provide prognostic information and may indicate RV strain."
+      },
+      {
+        "text": "Are diagnostic for pulmonary embolism when elevated",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture states these markers are not diagnostic for PE but help with prognosis and differential diagnosis."
+      },
+      {
+        "text": "Should be used to replace imaging in all patients",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture emphasizes imaging for diagnosis; biomarkers do not replace imaging."
+      },
+      {
+        "text": "Are only useful to detect concurrent myocardial infarction",
+        "isCorrect": false,
+        "rationale": "Wrong because while troponin can indicate MI, the lecture highlights its role in assessing RV strain and prognosis in PE as well."
+      },
+      {
+        "text": "Are contraindicated prior to initiating anticoagulation",
+        "isCorrect": false,
+        "rationale": "Wrong because these tests are not contraindicated and can inform prognosis and management decisions per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A 72-year-old patient with suspected pulmonary vascular obstruction has a D-dimer of 600 ng/mL. According to the lecture, which approach could be used to reduce false positive results in this age group?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the clinical application of a D-dimer in evaluating for PE. Identify which patients may have an elevated D-dimer, even in the absence of PE",
+    "options": [
+      {
+        "text": "Apply an age adjusted D-dimer cutoff to interpret result",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture mentions age-adjusted D-dimer thresholds as an approach to account for age-related elevations and improve specificity."
+      },
+      {
+        "text": "Ignore D-dimer and proceed directly to thrombolysis",
+        "isCorrect": false,
+        "rationale": "Wrong because thrombolysis is not indicated based solely on D-dimer; age adjustment is the lecture-recommended method to reduce false positives."
+      },
+      {
+        "text": "Use D-dimer only if chest radiograph is abnormal",
+        "isCorrect": false,
+        "rationale": "Wrong because D-dimer use is guided by PTP, not solely by CXR findings; the lecture does not recommend this approach."
+      },
+      {
+        "text": "Repeat D-dimer until value falls below five hundred",
+        "isCorrect": false,
+        "rationale": "Wrong because repeating D-dimer to reach an arbitrary cutoff is not recommended; age adjustment is the appropriate strategy per the lecture."
+      },
+      {
+        "text": "Switch to fibrinogen equivalent unit assay for all elderly",
+        "isCorrect": false,
+        "rationale": "Wrong because while assay units matter, the lecture specifically discusses age-adjusted cutoffs rather than universally switching assays."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected pulmonary vascular obstruction has tachycardia, hypotension, and echocardiographic evidence of right ventricular dilation. According to the lecture, which management decision aligns with first-line therapy for this risk category?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the subset of patients with PE in which treatment with thrombolytics is clearly indicated",
+    "options": [
+      {
+        "text": "Administer systemic thrombolytic therapy for hemodynamic compromise",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture indicates thrombolytics are clearly indicated in high-risk PE with hemodynamic instability and RV failure."
+      },
+      {
+        "text": "Begin outpatient direct oral anticoagulant therapy only",
+        "isCorrect": false,
+        "rationale": "Wrong because outpatient DOACs are inappropriate for hemodynamically unstable high-risk PE; urgent thrombolysis is indicated per the lecture."
+      },
+      {
+        "text": "Defer anticoagulation until confirmatory imaging obtained",
+        "isCorrect": false,
+        "rationale": "Wrong because in high-risk PE with instability, immediate therapy (thrombolysis) is prioritized over waiting for confirmatory imaging per the lecture."
+      },
+      {
+        "text": "Place an inferior vena cava filter and observe clinically",
+        "isCorrect": false,
+        "rationale": "Wrong because IVC filters are not first-line for unstable high-risk PE; thrombolysis is the recommended immediate therapy per the lecture."
+      },
+      {
+        "text": "Administer high dose aspirin and intravenous fluids only",
+        "isCorrect": false,
+        "rationale": "Wrong because aspirin and fluids alone are inadequate for high-risk PE; thrombolytic therapy is indicated per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best reflects the lecture's guidance on the role of chest radiograph when evaluating a pregnant patient with suspected pulmonary vascular obstruction?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Apply a diagnostic pathway for the work-up of PE during pregnancy including the primary question to ask as the first step common to all approaches.",
+    "options": [
+      {
+        "text": "Use chest radiograph first to guide choice between V/Q and CTPA",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture emphasizes asking whether the CXR is normal as the first step to determine whether V/Q or CTPA is preferred in pregnancy."
+      },
+      {
+        "text": "Avoid chest radiograph due to fetal radiation risk and proceed to CTPA",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture recommends CXR to guide imaging choice; CXR radiation is low and informative for selecting V/Q versus CTPA."
+      },
+      {
+        "text": "Perform bilateral lower extremity ultrasound before any chest imaging",
+        "isCorrect": false,
+        "rationale": "Wrong because while LE ultrasound is useful, the lecture specifies CXR as the initial step in pregnancy imaging algorithms to guide chest imaging choice."
+      },
+      {
+        "text": "Treat empirically with heparin without any imaging in pregnancy",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture advises diagnostic pathways in pregnancy and does not recommend empiric treatment without considering imaging unless high-risk features exist."
+      },
+      {
+        "text": "Use D-dimer alone to exclude PE in all pregnant patients",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture notes D-dimer changes during pregnancy and cannot be used alone to exclude PE without additional considerations."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected pulmonary vascular obstruction has a normal CTPA but ongoing clinical instability and high suspicion for embolism. According to the lecture, which additional test may provide rapid bedside information about right ventricular function to guide urgent management?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify ancillary tests such as Echo and their role in PE evaluation",
+    "options": [
+      {
+        "text": "Transthoracic echocardiography to assess right ventricular strain",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture lists echocardiography as an ancillary test that can detect RV strain and inform prognosis and urgent management."
+      },
+      {
+        "text": "Repeat chest radiograph to look for evolving infarction",
+        "isCorrect": false,
+        "rationale": "Wrong because CXR is not sensitive for RV function and would not rapidly guide urgent hemodynamic management as echo would per the lecture."
+      },
+      {
+        "text": "Lower extremity venous duplex to exclude proximal DVT immediately",
+        "isCorrect": false,
+        "rationale": "Wrong because while LE duplex can find DVT, it does not provide rapid bedside assessment of RV function needed for unstable patients per the lecture."
+      },
+      {
+        "text": "Arterial blood gas to quantify degree of hypoxemia precisely",
+        "isCorrect": false,
+        "rationale": "Wrong because ABG may show hypoxia but does not assess RV function or hemodynamic compromise as echocardiography does per the lecture."
+      },
+      {
+        "text": "Ventilation perfusion scan to confirm perfusion defects urgently",
+        "isCorrect": false,
+        "rationale": "Wrong because V/Q scanning is not a rapid bedside test and is less useful than echo for immediate hemodynamic assessment in unstable patients per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best reflects the lecture's statement about the role of CXR in suspected pulmonary vascular obstruction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the primary role and the limitation of a CXR in the evaluation of suspected PE",
+    "options": [
+      {
+        "text": "Primary role is to identify alternative diagnoses, not exclude PE",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture emphasizes CXR's main utility is ruling out other causes and it cannot confirm or exclude PE."
+      },
+      {
+        "text": "CXR can definitively exclude pulmonary embolism when normal",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture warns that a normal CXR does not exclude PE."
+      },
+      {
+        "text": "CXR should be replaced by D-dimer testing in all cases",
+        "isCorrect": false,
+        "rationale": "Wrong because CXR and D-dimer serve different roles; the lecture does not recommend replacing CXR with D-dimer universally."
+      },
+      {
+        "text": "CXR is diagnostic when Hampton hump is absent",
+        "isCorrect": false,
+        "rationale": "Wrong because absence of Hampton's hump does not exclude PE; the lecture notes classic signs are uncommon."
+      },
+      {
+        "text": "CXR is contraindicated prior to ventilation perfusion scanning",
+        "isCorrect": false,
+        "rationale": "Wrong because CXR is often used to guide V/Q selection and is not contraindicated per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected pulmonary vascular obstruction has a Wells score of 0 and meets all PERC criteria. According to the lecture, what is the recommended next step?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss & apply the diagnostic pathway for evaluation of suspected PE in a patient with low/intermediate PTP",
+    "options": [
+      {
+        "text": "No D-dimer testing required; PE can be ruled out",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains PERC can obviate the need for D-dimer in appropriate low-risk patients, allowing PE to be ruled out."
+      },
+      {
+        "text": "Obtain D-dimer despite meeting PERC criteria",
+        "isCorrect": false,
+        "rationale": "Wrong because meeting PERC criteria in low-risk patients removes the need for D-dimer per the lecture."
+      },
+      {
+        "text": "Proceed directly to CT pulmonary angiography",
+        "isCorrect": false,
+        "rationale": "Wrong because imaging is unnecessary when PERC criteria are met and PTP is low according to the lecture."
+      },
+      {
+        "text": "Start empiric anticoagulation without testing",
+        "isCorrect": false,
+        "rationale": "Wrong because anticoagulation without evidence is not recommended when PERC allows exclusion of PE per the lecture."
+      },
+      {
+        "text": "Order ventilation perfusion scan to confirm absence of PE",
+        "isCorrect": false,
+        "rationale": "Wrong because V/Q scanning is unnecessary when PERC criteria exclude PE in low-risk patients per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best reflects the lecture's description of the ventilation perfusion mismatch that occurs with pulmonary arterial occlusion?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the pathophysiologic effects of PE on gas exchange including V/Q mismatch",
+    "options": [
+      {
+        "text": "Areas ventilated but not perfused creating alveolar dead space",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture explains PE causes V/Q mismatch with ventilated but underperfused alveoli, increasing dead space and A-a gradient."
+      },
+      {
+        "text": "Areas perfused but not ventilated causing shunt physiology",
+        "isCorrect": false,
+        "rationale": "Wrong because PE primarily causes dead space (ventilated but not perfused), whereas shunt physiology is different and not the main effect described."
+      },
+      {
+        "text": "Global reduction in ventilation with preserved perfusion",
+        "isCorrect": false,
+        "rationale": "Wrong because PE causes regional perfusion defects rather than a global ventilation reduction per the lecture."
+      },
+      {
+        "text": "Uniform decrease in both ventilation and perfusion across lungs",
+        "isCorrect": false,
+        "rationale": "Wrong because PE causes focal perfusion defects leading to mismatch, not uniform decreases in both parameters per the lecture."
+      },
+      {
+        "text": "Increased perfusion to peripheral lung zones improving gas exchange",
+        "isCorrect": false,
+        "rationale": "Wrong because PE reduces perfusion distal to the occlusion and worsens gas exchange, not improves it as this option suggests."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected pulmonary vascular obstruction has a D-dimer of 1,200 ng/mL and intermediate pretest probability. The lecture notes several possible causes of elevated D-dimer aside from VTE. Which of the following is listed as a common non-VTE cause?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify which patients may have an elevated D-dimer, even in the absence of PE",
+    "options": [
+      {
+        "text": "Recent surgery or trauma causing fibrinolysis",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture lists trauma and recent surgery as common causes of elevated D-dimer independent of VTE."
+      },
+      {
+        "text": "Isolated chronic hypertension without other illness",
+        "isCorrect": false,
+        "rationale": "Wrong because hypertension alone is not listed as a common cause of elevated D-dimer in the lecture."
+      },
+      {
+        "text": "Stable hypothyroidism controlled with levothyroxine",
+        "isCorrect": false,
+        "rationale": "Wrong because hypothyroidism is not identified in the lecture as a typical cause of elevated D-dimer."
+      },
+      {
+        "text": "Long term statin therapy for hyperlipidemia",
+        "isCorrect": false,
+        "rationale": "Wrong because statin therapy is not mentioned in the lecture as a cause of elevated D-dimer."
+      },
+      {
+        "text": "Well controlled type two diabetes without complications",
+        "isCorrect": false,
+        "rationale": "Wrong because uncomplicated diabetes is not listed as a common cause of elevated D-dimer in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best reflects the lecture's guidance on when to use D-dimer testing in the diagnostic algorithm for suspected pulmonary vascular obstruction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss & apply the diagnostic pathway for evaluation of suspected PE in a patient with low/intermediate PTP",
+    "options": [
+      {
+        "text": "Use D-dimer only in patients with low or intermediate pretest probability",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture specifies D-dimer is useful to exclude PE only in low or intermediate PTP and not in high PTP."
+      },
+      {
+        "text": "Use D-dimer in all patients regardless of pretest probability",
+        "isCorrect": false,
+        "rationale": "Wrong because the lecture cautions against using D-dimer in high PTP patients where imaging is required."
+      },
+      {
+        "text": "Avoid D-dimer testing in low risk patients meeting PERC",
+        "isCorrect": false,
+        "rationale": "Wrong because while PERC can obviate D-dimer in very low-risk patients, the lecture recommends D-dimer for low/intermediate PTP when PERC not met."
+      },
+      {
+        "text": "Use D-dimer as a confirmatory test after positive imaging",
+        "isCorrect": false,
+        "rationale": "Wrong because D-dimer is a screening test and not used to confirm imaging findings per the lecture."
+      },
+      {
+        "text": "Reserve D-dimer for pregnant patients only",
+        "isCorrect": false,
+        "rationale": "Wrong because D-dimer interpretation is complicated in pregnancy and is not reserved exclusively for pregnant patients per the lecture."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected pulmonary vascular obstruction has a positive CTPA and elevated troponin and BNP. According to the lecture, what prognostic implication do these biomarker elevations have?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify general information common lab tests provide which may help in evaluation of suspected PE (prognostic info)",
+    "options": [
+      {
+        "text": "Elevations suggest right ventricular strain and worse prognosis",
+        "isCorrect": true,
+        "rationale": "Correct because the lecture indicates troponin and BNP elevations provide prognostic information and are associated with RV strain and poorer outcomes."
+      },
+      {
+        "text": "Elevations confirm absence of pulmonary embolism",
+        "isCorrect": false,
+        "rationale": "Wrong because elevated biomarkers do not exclude PE; they indicate myocardial strain and worse prognosis per the lecture."
+      },
+      {
+        "text": "Elevations mandate immediate surgical embolectomy in all cases",
+        "isCorrect": false,
+        "rationale": "Wrong because biomarker elevations inform prognosis but do not automatically mandate surgical embolectomy; management depends on hemodynamics per the lecture."
+      },
+      {
+        "text": "Elevations are specific for acute coronary syndrome only",
+        "isCorrect": false,
+        "rationale": "Wrong because troponin can be elevated in RV strain from PE as well as ACS; the lecture highlights its prognostic role in PE."
+      },
+      {
+        "text": "Elevations indicate chronic heart failure unrelated to PE",
+        "isCorrect": false,
+        "rationale": "Wrong because while BNP can be elevated in CHF, in the context of PE these elevations suggest RV strain and worse prognosis per the lecture."
       }
     ]
   }
