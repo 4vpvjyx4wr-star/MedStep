@@ -314,7 +314,10 @@ input:checked+.slider:before{transform:translateX(20px)}
 
 /* ── Two-panel instructions + controls layout ── */
 .landing-panels{
-  display:flex;gap:16px;width:100%;max-width:960px;align-items:stretch;
+  display:flex;gap:16px;width:100%;max-width:960px;align-items:flex-start;
+}
+.landing-left-col{
+  display:flex;flex-direction:column;gap:16px;flex:1;min-width:0;
 }
 .instruction-card{
   background:rgba(255,255,255,.03);border:1px solid var(--border);
@@ -327,10 +330,20 @@ input:checked+.slider:before{transform:translateX(20px)}
   font-family:var(--font-mono);font-size:1.365rem;letter-spacing:3px;
   text-transform:uppercase;color:var(--primary);opacity:.85;font-weight:800;
   margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--border);
-  display:flex;align-items:center;gap:10px;
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;line-height:1.2;
 }
-.panel-header-lg{font-size:1.95rem}
+.panel-header-lg{font-size:clamp(1.15rem,2.2vw,1.95rem)}
 .panel-header-icon{font-size:1rem;letter-spacing:0}
+button.panel-header{
+  background:transparent;border:0;width:100%;cursor:pointer;text-align:left;
+  font-family:inherit;
+}
+button.panel-header:hover{opacity:1;filter:brightness(1.18)}
+.instruction-card a.inline-lib-link{
+  background:none;border:none;padding:0;cursor:pointer;font:inherit;
+  color:var(--primary);text-decoration:underline;font-weight:700;
+}
+.instruction-card a.inline-lib-link:hover{filter:brightness(1.12)}
 .step-item{
   display:flex;align-items:flex-start;gap:14px;
   margin-bottom:14px;padding:12px 14px;
@@ -1335,6 +1348,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   overflow-y: auto; box-shadow: 0 24px 60px rgba(0,0,0,.6);
   animation: modalIn .25s cubic-bezier(.25,.8,.25,1);
 }
+.modal-card-wide { max-width: 760px; }
 @keyframes modalIn { from { opacity:0; transform:translateY(16px) scale(.97); } to { opacity:1; transform:none; } }
 .modal-title { font-size: 1.05rem; font-weight: 800; margin-bottom: 18px; }
 .modal-label { font-size: .75rem; font-weight: 700; opacity: .6; letter-spacing: .5px; margin-bottom: 6px; display: block; }
@@ -1364,6 +1378,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   padding: 12px 14px; font-family: var(--font-mono); font-size: .76rem;
   height: 160px; resize: vertical; margin-bottom: 6px; transition: border .2s;
 }
+.modal-textarea-tall { height: 280px; }
 .modal-textarea:focus { outline: none; border-color: var(--primary); }
 .github-instructions {
   background: rgba(255,255,255,.04); border: 1px solid var(--border);
@@ -1922,6 +1937,7 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
     </div>
 
     <label class="modal-label" id="quiz-json-label">Quiz JSON</label>
+    <div class="modal-tag-note" id="quiz-json-edit-hint" style="display:none">Edit questions below or paste additional ones into this array. Identical questions are removed automatically on save.</div>
     <textarea class="modal-textarea" id="new-quiz-json" placeholder='Paste the full JSON array here (starts with [)…'></textarea>
     <div class="personal-library-actions" id="personal-library-actions">
       <button type="button" class="btn btn-primary" style="width:100%;font-size:.8rem;padding:10px" onclick="savePersonalQuizFromModal()">💾 Save to My Library (this browser)</button>
@@ -2201,9 +2217,32 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
     <!-- ── MAIN PANEL ── -->
     <div id="panel-manual" style="width:100%;max-width:960px">
       <div class="landing-panels" style="margin-bottom:16px">
-        <!-- Instructions Panel -->
+        <div class="landing-left-col">
+        <!-- Quiz Library Panel -->
         <div class="instruction-card">
-          <div class="panel-header panel-header-lg"><span class="panel-header-icon">📋</span> Instructions</div>
+          <button type="button" class="panel-header panel-header-lg" onclick="openLibrary()" title="Open Quiz Library">
+            <span class="panel-header-icon">📚</span> Quiz Library
+          </button>
+          <div class="step-item">
+            <span class="step-num">1</span>
+            <p class="step-text">Click the <a href="#" class="inline-lib-link" onclick="event.preventDefault();openLibrary()">Quiz Library</a> button on the top left to access premade quizzes.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-num">2</span>
+            <p class="step-text">Filter by <strong>block, exam, week, and class</strong> to find the lectures you want. Switch between <strong>MedStep</strong> (official quizzes) and <strong>My Quizzes</strong> (ones you made).</p>
+          </div>
+          <div class="step-item">
+            <span class="step-num">3</span>
+            <p class="step-text">Click a lecture and choose how many questions you want from it. You can take as many questions as you want from each lecture.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-num">4</span>
+            <p class="step-text">Click <strong>Start Quiz</strong> to begin right away, or <strong>Add to Quiz</strong> to mix lectures into one custom quiz. When your mix is ready, click <strong>Start Built Quiz</strong>.</p>
+          </div>
+        </div>
+        <!-- Quiz Creation Instructions Panel -->
+        <div class="instruction-card">
+          <div class="panel-header panel-header-lg"><span class="panel-header-icon">📋</span> Quiz Creation Instructions</div>
           <div class="step-item">
             <span class="step-num">1</span>
             <p class="step-text">Click the settings gear on the left of the copy prompt button to adjust your prompt. Then click <em>Copy Master Prompt</em> to copy it to your clipboard.</p>
@@ -2220,10 +2259,7 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
             <span class="step-num">4</span>
             <p class="step-text">Once Copilot generates the quiz (the format it uses is called JSON), copy all of that text and paste it into the box below this one.</p>
           </div>
-          <div class="step-item">
-            <span class="step-num">5</span>
-            <p class="step-text">To access my premade quizzes, click on the quiz library button on the top left. There, you can filter by block, exam, week, and class, and build a custom quiz with as many questions as you want from each lecture.</p>
-          </div>
+        </div>
         </div>
         <!-- Controls Panel -->
         <div class="controls-card">
@@ -2573,8 +2609,9 @@ const MASTER_PROMPT=`Role: You are a Senior USMLE Step 1 Item Writer and Psychom
 ABSOLUTE RULES — violations are disqualifying:
 
 1. THE CONTENT SOURCE & PEDAGOGY
-a. Material Adherence: Every question, answer, and distractor must be grounded in the provided lecture. Do not introduce outside medical facts.
-b. Learning Objectives (LO): Each question must directly assess a specific, named LO from the materials.
+a. Material Adherence: Every question, answer, and distractor must be grounded in the provided lecture. Do not introduce outside medical facts. If you use a bridging inference the source does not state outright, put it only in the rationale and label it as an inference — never as settled lecture fact.
+b. Learning Objectives (LO): Each question must directly assess a specific, named LO from the materials. Pitch the item at the level of that LO, never at a single slide title, figure caption, or isolated phrase. A student who understood the objective should be able to reason to the answer; a student who only memorized one slide should not get a free shortcut.
+c. Coverage: Spread items across distinct LOs. Do not cluster many questions on one objective while leaving others untested. When an LO is built on a contrast students commonly conflate (two enzymes, two cell types, two pathways, two drugs), test that contrast.
 
 2. Difficulty Distribution:
 
@@ -2592,34 +2629,41 @@ b. A student reading only the stem should have no linguistic shortcut to the cor
 c. Rephrase clinical presentations using synonyms and standard vignette language with pertinent negatives to describe conditions.
 d. The stem must conclude with a clear, single-sentence lead-in question that specifies the required task (e.g., 'Which of the following is the most likely mechanism?').
 e. When presenting laboratory data, provide specific values followed by reference ranges in brackets (e.g., Blood glucose: 140 mg/dL [70-100 mg/dL]).
+f. Load-bearing details: Every fact in a vignette must be needed to answer the question. Do not add unused findings, scenic history, or unused labs (Boards Mode, if active, is the only exception for extra laboratory values).
+g. Stem style by content (still obey Section 2 difficulty counts): For 1st- and 2nd-order non-clinical items (anatomy, biochemistry, molecular biology, physiology mechanism), write a direct stem without vignette scaffolding unless the LO specifically requires applying the concept to a scenario. For clinically relevant 3rd-order items, use a short vignette: patient age and sex, presenting complaint, one or two exam or lab findings, then the lead-in.
+h. Lecture-attribution ban (stems AND option text): Never write "per the lecture," "according to the lecture," "from the lecture," "as stated in the lecture," "per the slides," "according to the slides," "as discussed in lecture," "the lecture notes that," or any similar source-pointer. Write each item as a standalone medical question. Grounding in the lecture is an authoring constraint, not wording the student should see.
 
 4. THE OPTION PARITY RULE (CRITICAL)
 a. The +-2 Word Audit: All five options in a single question MUST be within +-2 words of each other in total word count. Count every word before writing. Before finalizing an option, literally count the words one-by-one. If Option A is 10 words, Options B-E must be between 8 and 12 words. Do not guess; perform a literal count.
-b. Longest-Answer Exploit Prevention: The correct answer must RARELY be the longest option (less than 30% of the time). In at least 10 out of 30 questions, a distractor must be the single longest option. If an option is too short, pad it with medically accurate but clinically irrelevant qualifiers so they are RARELY shorter than the correct answer.
+b. Longest-Answer Exploit Prevention: The correct answer must RARELY be the longest option (less than 30% of the time). In at least 10 out of 30 questions, a distractor must be the single longest option. If length is uneven, shorten the long options or add the SAME type of medically necessary qualifier to ALL five options. Never pad with clinically irrelevant filler. Never add definitions, mechanism blurbs, or explanatory tails ("the enzyme that phosphorylates X"). Choices are terse labels the student must recognize, not sentences they can read for meaning.
 c. The correct answer should be the shortest option in roughly 20-30% of the questions as well. This creates true length-neutrality.
+d. Do not let the correct answer become more qualified, more specific, or more complete than the distractors. Any hedge, mechanism, or condition that would only fit the correct answer belongs in the stem, not in the choice.
 
 5. DISTRACTOR INTEGRITY & ANTI-EXPLOIT
-Plausibility: ALL FOUR WRONG ANSWERS MUST:
+Write exactly five options per item. Do not emit four-option items. ALL FOUR WRONG ANSWERS MUST:
 a. Be plausible enough that a student with partial knowledge would seriously consider them.
-b. Represent common misconceptions, adjacent diagnoses, or related-but-wrong pathophysiology directly from the lecture. Distractors must represent common clinical mimics, adjacent pathophysiology, or "near-miss" misconceptions from the lecture.
-c. Never be obviously absurd or dismissible without medical knowledge.
-d. For every question, make the single most dangerous distractor especially compelling — nearly identical in length and clinical detail to the correct answer, differing only in one subtle but decisive fact from the lecture.
+b. Represent common misconceptions, adjacent diagnoses, or related-but-wrong pathophysiology in the SAME category as the correct answer. Every distractor must be wrong for a specific, nameable reason — never merely because it was not mentioned. A well-prepared student should see why each one fails once it is explained.
+c. Never be obviously absurd or dismissible without medical knowledge. Never use a generally true statement lifted from elsewhere unless the stem contains a qualifier that makes it false here, and that qualifier must do real work.
+d. For every question, make the single most dangerous distractor especially compelling — nearly identical in length and clinical detail to the correct answer, differing only in one subtle but decisive fact.
 e. Use confidence Traps: At least 7 questions must contain a distractor that sounds more authoritative, more detailed, or more "textbook" than the correct answer — but is wrong in one specific, teachable way.
 f. Structure: Every option must use the same grammatical structure (e.g., all noun phrases, all complete sentences).
 g. Forbidden Content: No parentheticals like "(X because Y)", no hedging ("likely due to"), and any phrase that makes one option feel more complete or authoritative than others. Explicitly forbidden: 'All of the above,' 'None of the above,' 'Both A and B,' or any reference to other options.
-h. Options must be homogeneous (e.g., all are enzymes, all are clinical diagnoses). If the question asks for a "diagnosis," all 5 options must be diagnoses. If it asks for a "site of action," all 5 must be anatomical locations. Mixed-type options (e.g., three drugs and two side effects) are "dead" options that students ignore instantly.
+h. Options must be homogeneous (e.g., all are enzymes, all are clinical diagnoses, all are antibody isotypes, all are signaling molecules). If the question asks for a "diagnosis," all 5 options must be diagnoses. If it asks for a "site of action," all 5 must be anatomical locations. Mixed-type options (e.g., three drugs and two side effects) are "dead" options that students ignore instantly. If a fifth option in the same category is hard to write, invent a near-miss in that category — do not drop to four choices.
+i. The student must know the material to pick the answer. Never let choice wording itself give the answer away (length tell, extra clause only on the correct option, placeholder distractors next to a fully formed correct choice). If you want to explain a choice, put that explanation in the stem or the rationale.
 
 6. ANSWER POSITION BALANCE:
 Distribute correct answers across positions A, B, C, D, and E. Each letter should be correct approximately 6 times across 30 questions. No letter may be correct more than 7 times. Randomize positions actively. NEVER place the correct answer in the same position for more than 2 consecutive questions.
 
 7. RATIONALE REQUIREMENTS - Every option must have a rationale that:
-a. For the correct option: explains the mechanism in 1-2 sentences citing the specific lecture concept.
-b. For each incorrect option: explains specifically why it is wrong — not just that it is wrong — and what specific finding or fact would have to change for it to be correct instead.
+a. For the correct option: 1-2 sentences of mechanism or contrast. Do not merely restate the fact. Name the concept. Do not write "per the lecture" or similar source-pointers.
+b. For each incorrect option: name the specific reason it fails — not just that it is wrong — and what specific finding or fact would have to change for it to be correct instead.
+c. If any part of a rationale is an inference you supplied rather than something the source states, say so in that rationale.
 
-8. NO FORMATTING CUES: Do not bold, italicize, or otherwise visually distinguish any option. Do not use phrases like "According to the slides" or "As stated in the lecture" or "per the slides."
+8. NO FORMATTING CUES: Do not bold, italicize, or otherwise visually distinguish any option. Forbidden in stems, option text, and lead-ins: "per the lecture," "according to the lecture," "from the lecture," "as stated in the lecture," "per the slides," "according to the slides," "as discussed," and any equivalent source citation. Teach the medicine; do not cite the deck.
 
 9. OUTPUT FORMAT
-Strict JSON: Return ONLY a valid JSON array. No preamble, no markdown fences, no commentary.
+Strict JSON: Return ONLY a valid JSON array. No preamble, no markdown fences, no commentary. Do not add extra keys. Use this schema only.
+Before emitting, verify every item: exactly five homogeneous options; +-2 word parity; exactly one isCorrect true; difficulty_order matches the assigned mix; cited_learning_objective is the named LO; no lecture-attribution phrases in question or option text.
 
 10. CHARACTER ENCODING (CRITICAL)
 a. Emit valid UTF-8 JSON. Never output mojibake such as â, Â², Â°, Âµ, or similar Windows-1252 artifacts.
@@ -2634,11 +2678,11 @@ JSON structure:
     "difficulty_order": "1st/2nd/3rd",
     "cited_learning_objective": "The exact LO being tested.",
     "options": [
-      { "text": "Option text here.", "isCorrect": true,  "rationale": "Why correct, citing the lecture mechanism." },
-      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong and what would make it correct." },
-      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong and what would make it correct." },
-      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong and what would make it correct." },
-      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong and what would make it correct." }
+      { "text": "Option text here.", "isCorrect": true,  "rationale": "Why correct, naming the mechanism or contrast." },
+      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong, the specific failure, and what would make it correct." },
+      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong, the specific failure, and what would make it correct." },
+      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong, the specific failure, and what would make it correct." },
+      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong, the specific failure, and what would make it correct." }
     ]
   }
 ]
@@ -4556,6 +4600,7 @@ const BOARDS_MODE_PROMPT_BLOCK = `3b. BOARDS MODE — VIGNETTE DENSITY:
 a. Expand every clinical vignette and every second- or third-order stem into a full, dense NBME-style paragraph: at least 8 sentences of uninterrupted clinical narrative (present illness, pertinent history, exam, imaging summaries, and evolving course) before the single-sentence lead-in question.
 b. Embed exhaustive laboratory value tables within the stem—include broad panels (CBC with differential, CMP, ABG, urinalysis, coagulation, endocrine, lipids, infection markers, etc.) with specific values and reference ranges in brackets, even when not all values are decision-critical, to simulate real board-exam data overload.
 c. Design stems to test reading stamina and stamina-induced fatigue: students must extract the decisive clue from a long, information-dense passage rather than from a short cue-rich stem.
+d. Extra laboratory values in this mode are an intentional exception to the load-bearing-detail rule in Section 3f. The lecture-attribution ban in Section 3h still applies.
 
 `;
 
@@ -4566,6 +4611,7 @@ b. Brevity: Keep every stem to 1–3 short sentences. No dense paragraphs, no ex
 c. Minimize clinical vignettes: Limit third-order patient scenarios to no more than ${thirdVignetteMax} question(s) in this block; remaining items should be standalone recall or single-sentence stems.
 d. Direct questions encouraged: First- and second-order items may use straightforward "What is…?", "Which enzyme…?", or "Which of the following best describes…?" phrasing without embedded scenarios.
 e. Laboratory data: Include labs only when essential to the single fact being tested; otherwise omit.
+f. Still obey the lecture-attribution ban: use the terminology, never write "per the lecture," "according to the lecture," or "from the lecture" in stems or options.
 
 `;
 }
@@ -6576,6 +6622,8 @@ let libraryManifest = [];
 let generatedQuizJSON = null;
 let generatedManifestEntry = null;
 let generatedQuizFilename = null;
+let originalEditQuizCanonical = null;
+let editQuizLoadId = 0;
 let quizModalMode = 'add'; // 'add' | 'editTags'
 let pendingQuizEmailForm = null;
 let quizEditFile = null;
@@ -6650,21 +6698,15 @@ function newPersonalQuizId() {
 
 function readPersonalQuizForm() {
   const title = document.getElementById('new-quiz-title').value.trim();
-  const jsonRaw = document.getElementById('new-quiz-json').value.trim();
   if (!title) return { error: 'Enter a quiz title first.' };
-  if (!jsonRaw) return { error: 'Paste or import your quiz JSON first.' };
-  let parsed;
-  try {
-    parsed = sanitizeQuizData(JSON.parse(jsonRaw));
-    if (!Array.isArray(parsed) || !parsed.length) throw new Error('empty');
-  } catch (e) {
-    return { error: 'Invalid JSON — paste a non-empty array of questions.' };
-  }
+  const json = parseQuizJsonFromModal();
+  if (json.error) return { error: json.error };
+  if (!json.parsed.length) return { error: 'No questions left after removing duplicates.' };
   const block = document.getElementById('new-quiz-block').value;
   const exam = document.getElementById('new-quiz-exam').value;
   const week = document.getElementById('new-quiz-week').value;
   const classTag = document.getElementById('new-quiz-class').value;
-  return { title, parsed, block, exam, week, classTag };
+  return { title, parsed: json.parsed, removed: json.removed, block, exam, week, classTag };
 }
 
 function buildPersonalManifestEntry(form, existingFile) {
@@ -6686,6 +6728,69 @@ function buildPersonalManifestEntry(form, existingFile) {
   return entry;
 }
 
+function normalizeQuizText(str) {
+  return String(str || '').replace(/\s+/g, ' ').trim().toLowerCase();
+}
+
+function questionFingerprint(q) {
+  if (!q || typeof q !== 'object') return '';
+  const stem = normalizeQuizText(q.question);
+  const opts = (Array.isArray(q.options) ? q.options : [])
+    .map(o => normalizeQuizText(o && o.text))
+    .filter(Boolean)
+    .sort()
+    .join('\n');
+  return stem ? stem + '\n---\n' + opts : '';
+}
+
+function dedupeQuizQuestions(questions) {
+  if (!Array.isArray(questions)) return { questions: [], removed: 0 };
+  const seen = new Set();
+  const out = [];
+  let removed = 0;
+  questions.forEach(q => {
+    const key = questionFingerprint(q);
+    if (!key || seen.has(key)) {
+      removed += 1;
+      return;
+    }
+    seen.add(key);
+    out.push(q);
+  });
+  return { questions: out, removed };
+}
+
+function formatQuizJsonStatus(count, removed) {
+  let msg = '✅ Valid JSON — ' + count + ' question' + (count !== 1 ? 's' : '');
+  if (removed) {
+    msg += ' (' + removed + ' duplicate' + (removed !== 1 ? 's' : '') + ' will be removed on save)';
+  }
+  return msg;
+}
+
+function parseQuizJsonFromModal() {
+  const jsonRaw = (document.getElementById('new-quiz-json')?.value || '').trim();
+  if (!jsonRaw || jsonRaw === 'Loading quiz JSON…') {
+    return { error: 'Paste or load quiz JSON first.' };
+  }
+  let parsed;
+  try {
+    parsed = sanitizeQuizData(JSON.parse(jsonRaw));
+    if (!Array.isArray(parsed) || !parsed.length) throw new Error('empty');
+  } catch (e) {
+    return { error: 'Invalid JSON — paste a non-empty array of questions.' };
+  }
+  const deduped = dedupeQuizQuestions(parsed);
+  if (!deduped.questions.length) {
+    return { error: 'No questions left after removing duplicates.' };
+  }
+  return {
+    parsed: deduped.questions,
+    removed: deduped.removed,
+    originalCount: parsed.length
+  };
+}
+
 function configureAddQuizModalUI() {
   const personalActions = document.getElementById('personal-library-actions');
   const premadeSection = document.getElementById('premade-publish-section');
@@ -6695,10 +6800,12 @@ function configureAddQuizModalUI() {
   const showPersonal = quizModalMode === 'add' || quizModalMode === 'editPersonal';
 
   if (titleEl && quizModalMode === 'add') titleEl.textContent = '+ Upload New Quiz';
+  if (titleEl && quizModalMode === 'editTags') titleEl.textContent = isDeveloperMode() ? 'Edit Library Quiz' : 'Edit Quiz Tags';
   if (personalActions) personalActions.classList.toggle('visible', showPersonal);
-  if (premadeSection) premadeSection.classList.toggle('visible', quizModalMode === 'add' && librarySource === 'premade');
-  if (modalActions) modalActions.style.display = (quizModalMode === 'add' && librarySource === 'premade') ? 'flex' : 'none';
-  if (primaryBtn) primaryBtn.style.display = (quizModalMode === 'add' && librarySource === 'premade') ? '' : 'none';
+  const showPremadePublish = quizModalMode === 'editTags' || (quizModalMode === 'add' && librarySource === 'premade');
+  if (premadeSection) premadeSection.classList.toggle('visible', showPremadePublish);
+  if (modalActions) modalActions.style.display = showPremadePublish ? 'flex' : 'none';
+  if (primaryBtn) primaryBtn.style.display = showPremadePublish ? '' : 'none';
 }
 
 function savePersonalQuizFromModal() {
@@ -6706,6 +6813,9 @@ function savePersonalQuizFromModal() {
   if (form.error) { showToast('❌ ' + form.error); return; }
   const existingFile = quizModalMode === 'editPersonal' ? quizEditFile : null;
   const entry = buildPersonalManifestEntry(form, existingFile);
+  if (form.removed) {
+    document.getElementById('new-quiz-json').value = JSON.stringify(form.parsed, null, 2);
+  }
   const idx = personalLibrary.findIndex(e => e.file === entry.file);
   const isNew = idx < 0;
   if (idx >= 0) personalLibrary[idx] = entry;
@@ -6720,6 +6830,8 @@ function savePersonalQuizFromModal() {
   }
   if (isNew) {
     showToast('✅ Saved to My Library: ' + entry.title + ' — export a backup in ☰ settings');
+  } else if (form.removed) {
+    showToast('✅ Saved to My Library: ' + entry.title + ' (' + form.removed + ' duplicate' + (form.removed !== 1 ? 's' : '') + ' removed)');
   } else {
     showToast('✅ Saved to My Library: ' + entry.title);
   }
@@ -7218,6 +7330,9 @@ function toggleLibrary() {
   document.getElementById('library-toggle').style.display = libraryOpen ? 'none' : '';
   document.body.style.overflow = libraryOpen ? 'hidden' : '';
   if (libraryOpen && libraryManifest.length === 0) refreshLibrary();
+}
+function openLibrary() {
+  if (!libraryOpen) toggleLibrary();
 }
 
 async function refreshLibrary(options = {}) {
@@ -8170,7 +8285,7 @@ function renderLibrary() {
       <span class="lib-bulk-row">
         ${hasExamTag ? `<span class="lib-bulk-btn" title="Quiz all from same exam" role="button" tabindex="0" onclick="event.stopPropagation(); openQPickerForScope('${entry.file}','exam')">＋E</span>` : ''}
         ${hasWeekTag ? `<span class="lib-bulk-btn" title="Quiz all from same week" role="button" tabindex="0" onclick="event.stopPropagation(); openQPickerForScope('${entry.file}','week')">＋W</span>` : ''}
-        <span class="lib-bulk-btn" title="Edit tags" role="button" tabindex="0" onclick="event.stopPropagation(); openEditQuizTagsModalForFile('${fileAttr}')">✏️</span>
+        <span class="lib-bulk-btn" title="${personal || isDeveloperMode() ? 'Edit quiz' : 'Edit tags'}" role="button" tabindex="0" onclick="event.stopPropagation(); openEditQuizTagsModalForFile('${fileAttr}')">✏️</span>
         ${(personal || isDeveloperMode()) ? `<span class="lib-delete-btn" title="${personal ? 'Delete from My Quizzes' : 'Delete from MedStep library (developer)'}" role="button" tabindex="0" onclick="event.stopPropagation(); ${personal ? `deletePersonalQuiz('${fileAttr}')` : `deletePremadeQuiz('${fileAttr}')`}">🗑</span>` : ''}
       </span>
       <span class="lib-stage-toggle" title="${isStaged ? 'Remove from set' : 'Add to set'}" role="button" tabindex="0"
@@ -8209,9 +8324,23 @@ async function loadLibraryQuiz(entry) {
   }
 }
 
+function resetQuizJsonEditorChrome() {
+  const card = document.querySelector('#add-quiz-modal .modal-card');
+  const ta = document.getElementById('new-quiz-json');
+  const hint = document.getElementById('quiz-json-edit-hint');
+  if (card) card.classList.remove('modal-card-wide');
+  if (ta) {
+    ta.classList.remove('modal-textarea-tall');
+    ta.disabled = false;
+  }
+  if (hint) hint.style.display = 'none';
+  originalEditQuizCanonical = null;
+}
+
 function openAddQuizModal() {
   quizModalMode = 'add';
   quizEditFile = null;
+  resetQuizJsonEditorChrome();
   document.getElementById('add-quiz-modal').classList.add('open');
   document.getElementById('github-instructions').style.display = 'none';
   document.getElementById('github-step-a').style.display = '';
@@ -8252,6 +8381,8 @@ function closeAddQuizModal() {
   closeEmailQuizConfirmModal();
   quizModalMode = 'add';
   quizEditFile = null;
+  editQuizLoadId += 1;
+  resetQuizJsonEditorChrome();
   document.getElementById('github-instructions').style.display = 'none';
 }
 
@@ -8677,6 +8808,16 @@ async function autoCommitToGitHub(options = {}) {
       );
       showToast('✅ Auto-published quiz + manifest to GitHub');
     } else {
+      const quizFile = String(quizEditFile || '').replace(/^quizzes\//, '');
+      if (generatedQuizJSON && quizFile) {
+        await upsertGitHubFile(
+          'quizzes/' + quizFile,
+          generatedQuizJSON,
+          customMsg || 'Update quiz: ' + quizFile,
+          token,
+          branch
+        );
+      }
       const latestManifest = await buildManifestForUpload(token, branch);
       await upsertGitHubFile(
         'quizzes/manifest.json',
@@ -8685,7 +8826,9 @@ async function autoCommitToGitHub(options = {}) {
         token,
         branch
       );
-      showToast('✅ Auto-published manifest changes to GitHub');
+      showToast(generatedQuizJSON
+        ? '✅ Auto-published quiz JSON + manifest to GitHub'
+        : '✅ Auto-published manifest changes to GitHub');
     }
     await refreshLibrary({ preferGitHub: true });
     if (closeOnSuccess) closeAddQuizModal();
@@ -8709,6 +8852,7 @@ function openEditQuizTagsModalForFile(file) {
 function openPersonalEditModal(entry) {
   quizModalMode = 'editPersonal';
   quizEditFile = entry.file;
+  resetQuizJsonEditorChrome();
   document.getElementById('add-quiz-modal').classList.add('open');
   document.getElementById('github-instructions').style.display = 'none';
   document.getElementById('premade-publish-section')?.classList.remove('visible');
@@ -8720,20 +8864,28 @@ function openPersonalEditModal(entry) {
   document.getElementById('new-quiz-exam').value = entry.exam ? String(entry.exam) : '';
   document.getElementById('new-quiz-week').value = entry.week ? String(entry.week) : '';
   document.getElementById('quiz-json-label').style.display = '';
-  document.getElementById('new-quiz-json').style.display = '';
-  document.getElementById('new-quiz-json').disabled = false;
-  document.getElementById('new-quiz-json').value = entry.json ? JSON.stringify(entry.json, null, 2) : '';
+  const jsonTa = document.getElementById('new-quiz-json');
+  jsonTa.style.display = '';
+  jsonTa.disabled = false;
+  jsonTa.classList.add('modal-textarea-tall');
+  jsonTa.value = entry.json ? JSON.stringify(entry.json, null, 2) : '';
   document.getElementById('json-validate-msg').style.display = '';
   document.getElementById('json-validate-msg').textContent = '';
+  const hint = document.getElementById('quiz-json-edit-hint');
+  if (hint) hint.style.display = '';
   const titleEl = document.getElementById('add-quiz-modal-title');
   if (titleEl) titleEl.textContent = 'Edit My Quiz';
   configureAddQuizModalUI();
+  jsonTa.dispatchEvent(new Event('input'));
 }
 
 function openEditQuizTagsModal(entry) {
   quizModalMode = 'editTags';
   quizEditFile = entry.file;
+  const loadId = ++editQuizLoadId;
+  const allowJson = isDeveloperMode();
 
+  resetQuizJsonEditorChrome();
   document.getElementById('add-quiz-modal').classList.add('open');
 
   // Hide manifest instructions until user clicks the primary action
@@ -8743,7 +8895,9 @@ function openEditQuizTagsModal(entry) {
   document.getElementById('copy-quiz-json-btn').style.display = 'none';
   document.getElementById('copy-manifest-entry-btn').style.display = '';
 
-  document.getElementById('modal-primary-action').textContent = 'Copy Updated Manifest ↗';
+  document.getElementById('modal-primary-action').textContent = allowJson
+    ? 'Save Quiz & Manifest ↗'
+    : 'Copy Updated Manifest ↗';
   const emailSection = document.getElementById('email-quiz-submit-section');
   if (emailSection) emailSection.style.display = 'none';
 
@@ -8757,15 +8911,51 @@ function openEditQuizTagsModal(entry) {
   document.getElementById('new-quiz-exam').value = entry.exam ? String(entry.exam) : '';
   document.getElementById('new-quiz-week').value = entry.week ? String(entry.week) : '';
 
-  // In tag-edit mode, quiz JSON isn't needed
-  document.getElementById('quiz-json-label').style.display = 'none';
-  document.getElementById('new-quiz-json').style.display = 'none';
-  document.getElementById('json-validate-msg').style.display = 'none';
-  document.getElementById('new-quiz-json').disabled = true;
+  const jsonLabel = document.getElementById('quiz-json-label');
+  const jsonTa = document.getElementById('new-quiz-json');
+  const jsonMsg = document.getElementById('json-validate-msg');
+  const hint = document.getElementById('quiz-json-edit-hint');
+  const card = document.querySelector('#add-quiz-modal .modal-card');
 
   generatedQuizJSON = null;
   generatedManifestEntry = null;
   generatedQuizFilename = null;
+  originalEditQuizCanonical = null;
+
+  if (allowJson) {
+    jsonLabel.style.display = '';
+    jsonTa.style.display = '';
+    jsonTa.classList.add('modal-textarea-tall');
+    jsonMsg.style.display = '';
+    jsonMsg.textContent = '';
+    if (hint) hint.style.display = '';
+    if (card) card.classList.add('modal-card-wide');
+    jsonTa.value = 'Loading quiz JSON…';
+    jsonTa.disabled = true;
+
+    fetchQuizJSON(entry).then(questions => {
+      if (loadId !== editQuizLoadId) return;
+      originalEditQuizCanonical = JSON.stringify(questions);
+      jsonTa.disabled = false;
+      jsonTa.value = JSON.stringify(questions, null, 2);
+      jsonTa.dispatchEvent(new Event('input'));
+    }).catch(e => {
+      if (loadId !== editQuizLoadId) return;
+      jsonTa.disabled = false;
+      jsonTa.value = '';
+      jsonMsg.textContent = '❌ Could not load quiz JSON: ' + (e.message || e);
+      jsonMsg.style.color = 'var(--danger)';
+      showToast('❌ Could not load quiz JSON');
+    });
+  } else {
+    jsonLabel.style.display = 'none';
+    jsonTa.style.display = 'none';
+    jsonMsg.style.display = 'none';
+    jsonTa.disabled = true;
+    jsonTa.value = '';
+  }
+
+  configureAddQuizModalUI();
 }
 
 function clearTagFields() {
@@ -8782,11 +8972,12 @@ function clearTagFields() {
 document.getElementById('new-quiz-json').addEventListener('input', function() {
   const msg = document.getElementById('json-validate-msg');
   const val = this.value.trim();
-  if (!val) { msg.textContent = ''; return; }
+  if (!val || val === 'Loading quiz JSON…') { msg.textContent = ''; return; }
   try {
-    const parsed = JSON.parse(val);
+    const parsed = sanitizeQuizData(JSON.parse(val));
     if (!Array.isArray(parsed)) throw new Error('Must be an array');
-    msg.textContent = '✅ Valid JSON — ' + parsed.length + ' question' + (parsed.length !== 1 ? 's' : '') + ' detected.';
+    const deduped = dedupeQuizQuestions(parsed);
+    msg.textContent = formatQuizJsonStatus(deduped.questions.length, deduped.removed);
     msg.style.color = 'var(--success)';
   } catch(e) {
     msg.textContent = '❌ Invalid JSON: ' + e.message;
@@ -8917,16 +9108,10 @@ async function sendFormSubmitToDeveloper(fields, subject){
 }
 function readAddQuizFormForEmail(){
   const title = document.getElementById('new-quiz-title').value.trim();
-  const jsonRaw = document.getElementById('new-quiz-json').value.trim();
   if (!title) return { error: 'Enter a quiz title first.' };
-  if (!jsonRaw) return { error: 'Paste your quiz JSON first.' };
-  let parsed;
-  try {
-    parsed = sanitizeQuizData(JSON.parse(jsonRaw));
-    if (!Array.isArray(parsed) || !parsed.length) throw new Error();
-  } catch(e) {
-    return { error: 'Invalid JSON — paste a non-empty array of questions.' };
-  }
+  const json = parseQuizJsonFromModal();
+  if (json.error) return { error: json.error };
+  if (!json.parsed.length) return { error: 'No questions left after removing duplicates.' };
   const block = document.getElementById('new-quiz-block').value;
   const exam = document.getElementById('new-quiz-exam').value;
   const week = document.getElementById('new-quiz-week').value;
@@ -8934,7 +9119,7 @@ function readAddQuizFormForEmail(){
   const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   return {
     title,
-    parsed,
+    parsed: json.parsed,
     filename: slug + '.json',
     block,
     exam,
@@ -9052,22 +9237,17 @@ function prepareQuizForGitHub() {
 
 async function _prepareQuizAsync() {
   const title = document.getElementById('new-quiz-title').value.trim();
-  const jsonRaw = document.getElementById('new-quiz-json').value.trim();
   const block = document.getElementById('new-quiz-block').value;
   const exam = document.getElementById('new-quiz-exam').value;
   const week = document.getElementById('new-quiz-week').value;
   const classTag = document.getElementById('new-quiz-class').value;
 
   if (!title) { showToast('❌ Enter a quiz title first'); return; }
-  if (!jsonRaw) { showToast('❌ Paste your quiz JSON first'); return; }
-
-  let parsed;
-  try {
-    parsed = sanitizeQuizData(JSON.parse(jsonRaw));
-    if (!Array.isArray(parsed)) throw new Error();
-  } catch(e) {
-    showToast('❌ Invalid JSON — check your paste');
-    return;
+  const json = parseQuizJsonFromModal();
+  if (json.error) { showToast('❌ ' + json.error); return; }
+  const parsed = json.parsed;
+  if (json.removed) {
+    document.getElementById('new-quiz-json').value = JSON.stringify(parsed, null, 2);
   }
 
   const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -9105,7 +9285,9 @@ async function _prepareQuizAsync() {
   document.getElementById('github-instructions').style.display = 'block';
 
   navigator.clipboard.writeText(generatedQuizJSON).then(() => {
-    showToast('📋 Quiz JSON copied — follow steps below!');
+    showToast(json.removed
+      ? '📋 Quiz JSON copied (' + json.removed + ' duplicate' + (json.removed !== 1 ? 's' : '') + ' removed)'
+      : '📋 Quiz JSON copied — follow steps below!');
   }).catch(() => {});
   await autoCommitToGitHub({ silentIfNoToken: true, closeOnSuccess: true });
 }
@@ -9162,6 +9344,23 @@ async function _prepareManifestEditAsync() {
   // Clean undefined keys
   Object.keys(updated).forEach(k => updated[k] === undefined && delete updated[k]);
 
+  generatedQuizJSON = null;
+  let removedDupes = 0;
+  const jsonTa = document.getElementById('new-quiz-json');
+  const jsonVisible = jsonTa && jsonTa.style.display !== 'none';
+  if (jsonVisible) {
+    const json = parseQuizJsonFromModal();
+    if (json.error) { showToast('❌ ' + json.error); return; }
+    removedDupes = json.removed;
+    jsonTa.value = JSON.stringify(json.parsed, null, 2);
+    jsonTa.dispatchEvent(new Event('input'));
+    updated.questions = json.parsed.length;
+    const canonical = JSON.stringify(json.parsed);
+    if (canonical !== originalEditQuizCanonical) {
+      generatedQuizJSON = JSON.stringify(json.parsed, null, 2);
+    }
+  }
+
   if (idx !== -1) currentManifest[idx] = updated;
   else currentManifest.push(updated);
 
@@ -9171,17 +9370,29 @@ async function _prepareManifestEditAsync() {
 
   generatedManifestEntry = JSON.stringify(currentManifest, null, 2);
 
+  const showQuizFile = !!generatedQuizJSON;
   document.getElementById('github-instructions').style.display = 'block';
-  document.getElementById('github-step-a').style.display = 'none';
+  document.getElementById('github-step-a').style.display = showQuizFile ? '' : 'none';
   document.getElementById('github-step-b').style.display = '';
-  document.getElementById('copy-quiz-json-btn').style.display = 'none';
+  document.getElementById('copy-quiz-json-btn').style.display = showQuizFile ? '' : 'none';
   document.getElementById('copy-manifest-entry-btn').style.display = '';
+  if (showQuizFile) {
+    const quizFile = String(quizEditFile || '').replace(/^quizzes\//, '');
+    document.getElementById('suggested-filename').textContent = 'quizzes/' + quizFile;
+  }
 
-  // Copy updated manifest immediately
-  navigator.clipboard.writeText(generatedManifestEntry).then(() => {
-    showToast('📋 Updated manifest copied (tag edits)');
+  const clip = generatedQuizJSON || generatedManifestEntry;
+  const toastMsg = generatedQuizJSON
+    ? (removedDupes
+        ? '📋 Quiz JSON + manifest ready (' + removedDupes + ' duplicate' + (removedDupes !== 1 ? 's' : '') + ' removed)'
+        : '📋 Quiz JSON + manifest ready — follow steps below')
+    : (removedDupes
+        ? '📋 Manifest copied (' + removedDupes + ' duplicate' + (removedDupes !== 1 ? 's' : '') + ' removed; quiz file unchanged)'
+        : '📋 Updated manifest copied (tag edits)');
+  navigator.clipboard.writeText(clip).then(() => {
+    showToast(toastMsg);
   }).catch(() => {
-    showToast('📋 Updated manifest generated — use copy button');
+    showToast(toastMsg.replace('copied', 'generated').replace('ready', 'generated'));
   });
   await autoCommitToGitHub({ silentIfNoToken: true, closeOnSuccess: true });
 }
