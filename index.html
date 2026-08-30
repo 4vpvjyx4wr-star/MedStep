@@ -2605,14 +2605,15 @@ const ALL_THEMES=[
 ];
 
 // ── Master Prompt ──────────────────────────────────────
-const MASTER_PROMPT=`Role: You are a Senior USMLE Step 1 Item Writer and Psychometric Editor with 15+ years of experience in board exam construction. Your goal is to generate a high-fidelity, multiple-choice exam block based strictly on the provided lecture materials.
+const COPILOT_PROMPT_MAX_CHARS=10240;
+const MASTER_PROMPT=`Role: Senior USMLE Step 1 Item Writer and Psychometric Editor (15+ years). Generate a high-fidelity 5-option MCQ block strictly from the attached lecture. Outside facts are disallowed. If you use a bridging inference the source does not state outright, put it only in that option's rationale and label it as an inference — never as settled lecture fact.
 
 ABSOLUTE RULES — violations are disqualifying:
 
-1. THE CONTENT SOURCE & PEDAGOGY
-a. Material Adherence: Every question, answer, and distractor must be grounded in the provided lecture. Do not introduce outside medical facts. If you use a bridging inference the source does not state outright, put it only in the rationale and label it as an inference — never as settled lecture fact.
-b. Learning Objectives (LO): Each question must directly assess a specific, named LO from the materials. Pitch the item at the level of that LO, never at a single slide title, figure caption, or isolated phrase. A student who understood the objective should be able to reason to the answer; a student who only memorized one slide should not get a free shortcut.
-c. Coverage: Spread items across distinct LOs. Do not cluster many questions on one objective while leaving others untested. When an LO is built on a contrast students commonly conflate (two enzymes, two cell types, two pathways, two drugs), test that contrast.
+1. CONTENT SOURCE & PEDAGOGY
+a. Ground every stem, option, and distractor in the lecture. No outside medical facts.
+b. Each item tests one named learning objective (LO) at that LO's level—not a slide title, caption, or isolated phrase. Understanding the LO should suffice; memorizing one slide should not.
+c. Spread items across distinct LOs. When students commonly conflate a pair (enzymes, cell types, pathways, drugs), test that contrast.
 
 2. Difficulty Distribution:
 
@@ -2625,52 +2626,50 @@ Add "difficulty_order": "1st/2nd/3rd" to the JSON pertaining to each question.
 15/30 questions: Third-order (Clinical vignettes requiring >=2 reasoning steps). A student who has not studied should score <=25% on these. For these questions: NEVER ask "What is X?" directly. Always present a patient scenario or experimental result that requires applying lecture knowledge through at least one intermediate reasoning step. The answer must not be inferable from the stem alone without having studied the material. For 3rd-order vignettes, include several questions that ask for the 'next best step in management' or the 'cellular mechanism of the first-line treatment' for the condition described.
 
 3. Stem Blinding:
-a. The question stem must NOT contain unique keywords, abbreviations, phrases, or terminology that appear verbatim in the correct answer.
-b. A student reading only the stem should have no linguistic shortcut to the correct choice.
-c. Rephrase clinical presentations using synonyms and standard vignette language with pertinent negatives to describe conditions.
-d. The stem must conclude with a clear, single-sentence lead-in question that specifies the required task (e.g., 'Which of the following is the most likely mechanism?').
-e. When presenting laboratory data, provide specific values followed by reference ranges in brackets (e.g., Blood glucose: 140 mg/dL [70-100 mg/dL]).
-f. Load-bearing details: Every fact in a vignette must be needed to answer the question. Do not add unused findings, scenic history, or unused labs (Boards Mode, if active, is the only exception for extra laboratory values).
-g. Stem style by content (still obey Section 2 difficulty counts): For 1st- and 2nd-order non-clinical items (anatomy, biochemistry, molecular biology, physiology mechanism), write a direct stem without vignette scaffolding unless the LO specifically requires applying the concept to a scenario. For clinically relevant 3rd-order items, use a short vignette: patient age and sex, presenting complaint, one or two exam or lab findings, then the lead-in.
-h. Lecture-attribution ban (stems AND option text): Never write "per the lecture," "according to the lecture," "from the lecture," "as stated in the lecture," "per the slides," "according to the slides," "as discussed in lecture," "the lecture notes that," or any similar source-pointer. Write each item as a standalone medical question. Grounding in the lecture is an authoring constraint, not wording the student should see.
+a. The stem must not contain unique keywords, abbreviations, or phrases that appear verbatim in the correct answer. Reading the stem alone must give no linguistic shortcut to the key.
+b. Rephrase presentations with synonyms and standard vignette language plus pertinent negatives.
+c. End with one lead-in sentence that states the task (e.g., "Which of the following is the most likely mechanism?").
+d. Labs: specific values plus reference ranges in brackets (e.g., Blood glucose: 140 mg/dL [70-100 mg/dL]).
+e. Load-bearing details only—no unused findings, scenic history, or unused labs (Boards Mode, if active, is the only extra-lab exception).
+f. Stem style (still obey Section 2 counts): 1st/2nd-order non-clinical (anatomy, biochem, molecular, physiology mechanism) = direct stem, no vignette unless the LO requires a scenario. Clinical 3rd-order = short vignette: age/sex, complaint, 1-2 exam or lab findings, then the lead-in.
+g. Lecture-attribution ban (stems, options, and lead-ins): never write "per the lecture," "according to the lecture," "from the lecture," "as stated in the lecture," "per the slides," "according to the slides," "as discussed in lecture," or any similar source-pointer. Write standalone medical questions. Grounding is an authoring constraint, not student-facing wording.
 
 4. THE OPTION PARITY RULE (CRITICAL)
-a. The +-2 Word Audit: All five options in a single question MUST be within +-2 words of each other in total word count. Count every word before writing. Before finalizing an option, literally count the words one-by-one. If Option A is 10 words, Options B-E must be between 8 and 12 words. Do not guess; perform a literal count.
-b. Longest-Answer Exploit Prevention: The correct answer must RARELY be the longest option (less than 30% of the time). In at least 10 out of 30 questions, a distractor must be the single longest option. If length is uneven, shorten the long options or add the SAME type of medically necessary qualifier to ALL five options. Never pad with clinically irrelevant filler. Never add definitions, mechanism blurbs, or explanatory tails ("the enzyme that phosphorylates X"). Choices are terse labels the student must recognize, not sentences they can read for meaning.
-c. The correct answer should be the shortest option in roughly 20-30% of the questions as well. This creates true length-neutrality.
-d. Do not let the correct answer become more qualified, more specific, or more complete than the distractors. Any hedge, mechanism, or condition that would only fit the correct answer belongs in the stem, not in the choice.
+a. The +-2 Word Audit: all five options MUST be within +-2 words of each other. Count every word. If A is 10 words, B-E must be 8-12. Do not guess.
+b. Longest-answer exploit: the correct answer must RARELY be longest (<30% of items). In at least 10 out of 30 questions, a distractor must be the single longest option. If length is uneven, shorten the long ones or add the SAME medically necessary qualifier to ALL five. Never pad with filler, definitions, mechanism blurbs, or tails ("the enzyme that phosphorylates X"). Choices are terse labels the student must recognize, not sentences they can read for meaning.
+c. The correct answer should be shortest on ~20-30% of items (true length-neutrality).
+d. Do not make the key more qualified, specific, or complete than distractors. Hedges, mechanisms, or conditions that fit only the key belong in the stem.
 
 5. DISTRACTOR INTEGRITY & ANTI-EXPLOIT
-Write exactly five options per item. Do not emit four-option items. ALL FOUR WRONG ANSWERS MUST:
-a. Be plausible enough that a student with partial knowledge would seriously consider them.
-b. Represent common misconceptions, adjacent diagnoses, or related-but-wrong pathophysiology in the SAME category as the correct answer. Every distractor must be wrong for a specific, nameable reason — never merely because it was not mentioned. A well-prepared student should see why each one fails once it is explained.
-c. Never be obviously absurd or dismissible without medical knowledge. Never use a generally true statement lifted from elsewhere unless the stem contains a qualifier that makes it false here, and that qualifier must do real work.
-d. For every question, make the single most dangerous distractor especially compelling — nearly identical in length and clinical detail to the correct answer, differing only in one subtle but decisive fact.
-e. Use confidence Traps: At least 7 questions must contain a distractor that sounds more authoritative, more detailed, or more "textbook" than the correct answer — but is wrong in one specific, teachable way.
-f. Structure: Every option must use the same grammatical structure (e.g., all noun phrases, all complete sentences).
-g. Forbidden Content: No parentheticals like "(X because Y)", no hedging ("likely due to"), and any phrase that makes one option feel more complete or authoritative than others. Explicitly forbidden: 'All of the above,' 'None of the above,' 'Both A and B,' or any reference to other options.
-h. Options must be homogeneous (e.g., all are enzymes, all are clinical diagnoses, all are antibody isotypes, all are signaling molecules). If the question asks for a "diagnosis," all 5 options must be diagnoses. If it asks for a "site of action," all 5 must be anatomical locations. Mixed-type options (e.g., three drugs and two side effects) are "dead" options that students ignore instantly. If a fifth option in the same category is hard to write, invent a near-miss in that category — do not drop to four choices.
-i. The student must know the material to pick the answer. Never let choice wording itself give the answer away (length tell, extra clause only on the correct option, placeholder distractors next to a fully formed correct choice). If you want to explain a choice, put that explanation in the stem or the rationale.
+Exactly five options per item—never four. All four wrong answers MUST:
+a. Be plausible to a student with partial knowledge.
+b. Be common misconceptions, adjacent diagnoses, or related-but-wrong pathophysiology in the SAME category as the key. Each is wrong for a specific, nameable reason—never merely "not mentioned." A prepared student should see why each fails once explained.
+c. Never be absurd or dismissible without medical knowledge. A generally true statement lifted from elsewhere is allowed only if a stem qualifier makes it false here and that qualifier does real work.
+d. Include one dangerous distractor nearly identical in length and clinical detail, differing by one decisive fact.
+e. Confidence traps: At least 7 questions must contain a distractor that sounds more authoritative, detailed, or "textbook" than the key—but is wrong in one teachable way.
+f. Same grammatical structure for all five (all noun phrases, or all complete sentences).
+g. Forbidden: parentheticals like "(X because Y)"; hedges ("likely due to"); any phrase that makes one option feel more complete or authoritative; "All of the above"; "None of the above"; "Both A and B"; references to other options.
+h. Homogeneous types (all enzymes, all diagnoses, all antibody isotypes, all signaling molecules, all sites of action). Mixed types (e.g., three drugs and two side effects) are dead options students skip. If a fifth same-category choice is hard, invent a near-miss—do not emit four options.
+i. The student must know the material. Never let wording give the answer away (length tell, extra clause only on the key, placeholder distractors beside a fully formed key). Put explanations in the stem or rationale, not the choice.
 
 6. ANSWER POSITION BALANCE:
-Distribute correct answers across positions A, B, C, D, and E. Each letter should be correct approximately 6 times across 30 questions. No letter may be correct more than 7 times. Randomize positions actively. NEVER place the correct answer in the same position for more than 2 consecutive questions.
+Distribute keys across A, B, C, D, and E. Each letter should be correct approximately 6 times across 30 questions. No letter may be correct more than 7 times. Randomize positions. NEVER use the same key position for more than 2 consecutive items.
 
-7. RATIONALE REQUIREMENTS - Every option must have a rationale that:
-a. For the correct option: 1-2 sentences of mechanism or contrast. Do not merely restate the fact. Name the concept. Do not write "per the lecture" or similar source-pointers.
-b. For each incorrect option: name the specific reason it fails — not just that it is wrong — and what specific finding or fact would have to change for it to be correct instead.
-c. If any part of a rationale is an inference you supplied rather than something the source states, say so in that rationale.
+7. RATIONALE — every option:
+a. Correct: 1-2 sentences of mechanism or contrast; name the concept; do not merely restate the fact; no source-pointers.
+b. Incorrect: the specific reason it fails, and what finding would have to change for it to be correct.
+c. If any rationale content is your inference rather than a stated source fact, say so there.
 
-8. NO FORMATTING CUES: Do not bold, italicize, or otherwise visually distinguish any option. Forbidden in stems, option text, and lead-ins: "per the lecture," "according to the lecture," "from the lecture," "as stated in the lecture," "per the slides," "according to the slides," "as discussed," and any equivalent source citation. Teach the medicine; do not cite the deck.
+8. NO FORMATTING CUES: Do not bold, italicize, or otherwise mark any option. Teach the medicine; do not cite the deck.
 
 9. OUTPUT FORMAT
-Strict JSON: Return ONLY a valid JSON array. No preamble, no markdown fences, no commentary. Do not add extra keys. Use this schema only.
-Before emitting, verify every item: exactly five homogeneous options; +-2 word parity; exactly one isCorrect true; difficulty_order matches the assigned mix; cited_learning_objective is the named LO; no lecture-attribution phrases in question or option text.
+Return ONLY a valid JSON array. No preamble, markdown fences, commentary, or extra keys. Use this schema only. Before emitting, verify every item: exactly five homogeneous options; +-2 word parity; exactly one isCorrect true; difficulty_order matches the assigned mix; cited_learning_objective is the named LO; no lecture-attribution phrasing in question or option text.
 
 10. CHARACTER ENCODING (CRITICAL)
-a. Emit valid UTF-8 JSON. Never output mojibake such as â, Â², Â°, Âµ, or similar Windows-1252 artifacts.
-b. Compound words and numeric ranges: use the ASCII hyphen-minus (-) only (e.g., mid-systolic, N-terminus, 12-lead, 1-3%). Never use non-breaking hyphens, soft hyphens, or Word auto-formatted hyphens.
-c. Scientific symbols MAY use proper Unicode: Greek letters (α, β, γ), micro (µ), degree (°), inequalities (≥, ≤), arrows (→). Never substitute German ß for beta. Never use Word/Wingdings private-use dingbats.
-d. Superscripts in units: prefer Ca2+, cm2, or proper Unicode (Ca²⁺, cm²). Never write Â².
+a. Valid UTF-8 JSON. Never emit mojibake (â, Â², Â°, Âµ, or Windows-1252 artifacts).
+b. Compounds and numeric ranges use ASCII hyphen-minus (-) only (mid-systolic, N-terminus, 12-lead, 1-3%). No non-breaking, soft, or Word auto-hyphens.
+c. Scientific symbols MAY use Unicode: Greek (α, β, γ), micro (µ), degree (°), ≥ ≤, arrows (→). Never German ß for beta. No Word/Wingdings private-use dingbats.
+d. Units: prefer Ca2+, cm2, or proper Unicode (Ca²⁺, cm²). Never Â².
 
 JSON structure:
 [
@@ -4608,21 +4607,21 @@ function updatePromptSummary() {
 }
 
 const BOARDS_MODE_PROMPT_BLOCK = `3b. BOARDS MODE — VIGNETTE DENSITY:
-a. Expand every clinical vignette and every second- or third-order stem into a full, dense NBME-style paragraph: at least 8 sentences of uninterrupted clinical narrative (present illness, pertinent history, exam, imaging summaries, and evolving course) before the single-sentence lead-in question.
-b. Embed exhaustive laboratory value tables within the stem—include broad panels (CBC with differential, CMP, ABG, urinalysis, coagulation, endocrine, lipids, infection markers, etc.) with specific values and reference ranges in brackets, even when not all values are decision-critical, to simulate real board-exam data overload.
-c. Design stems to test reading stamina and stamina-induced fatigue: students must extract the decisive clue from a long, information-dense passage rather than from a short cue-rich stem.
-d. Extra laboratory values in this mode are an intentional exception to the load-bearing-detail rule in Section 3f. The lecture-attribution ban in Section 3h still applies.
+a. Expand every clinical vignette and every 2nd- or 3rd-order stem into a dense NBME paragraph: at least 8 sentences of uninterrupted narrative (HPI, pertinent history, exam, imaging, course) before the single-sentence lead-in.
+b. Embed exhaustive lab tables (CBC with differential, CMP, ABG, UA, coags, endocrine, lipids, infection markers) with values and bracketed reference ranges, even when not all are decision-critical.
+c. Stems must test reading stamina: the decisive clue sits in a long, dense passage, not a short cue-rich stem.
+d. Extra labs here are the intentional exception to Section 3e's load-bearing rule. Section 3g lecture-attribution ban still applies.
 
 `;
 
 function buildEzModePromptBlock(thirdVignetteMax) {
-  return `3c. EZ MODE — RAPID RECALL (supersedes conflicting rules in Section 3):
-a. Buzzword-forward stems: Deliberately use high-yield buzzwords, classic phrase associations, and lecture terminology that cue the tested concept—this mode intentionally relaxes stem blinding (Section 3a–3b) for faster pattern recognition.
-b. Brevity: Keep every stem to 1–3 short sentences. No dense paragraphs, no exhaustive lab tables, and no multi-paragraph vignettes.
-c. Minimize clinical vignettes: Limit third-order patient scenarios to no more than ${thirdVignetteMax} question(s) in this block; remaining items should be standalone recall or single-sentence stems.
-d. Direct questions encouraged: First- and second-order items may use straightforward "What is…?", "Which enzyme…?", or "Which of the following best describes…?" phrasing without embedded scenarios.
-e. Laboratory data: Include labs only when essential to the single fact being tested; otherwise omit.
-f. Still obey the lecture-attribution ban: use the terminology, never write "per the lecture," "according to the lecture," or "from the lecture" in stems or options.
+  return `3c. EZ MODE — RAPID RECALL (supersedes conflicting Section 3 rules):
+a. Buzzword-forward stems: use high-yield buzzwords, classic phrase cues, and lecture terms. This mode relaxes stem blinding (Section 3a) for faster pattern recognition.
+b. Brevity: every stem 1-3 short sentences. No dense paragraphs, lab dumps, or multi-paragraph vignettes.
+c. Cap third-order patient scenarios at ${thirdVignetteMax}; remaining items are standalone recall or single-sentence stems.
+d. Direct questions OK: 1st/2nd-order may use "What is...?", "Which enzyme...?", or "Which of the following best describes...?" without a scenario.
+e. Labs only when essential to the one fact tested; otherwise omit.
+f. Lecture-attribution ban still applies: never "per/according to/from the lecture" in stems or options.
 
 `;
 }
@@ -4645,7 +4644,7 @@ function buildSettingsPrompt() {
     const secondN = Math.max(0, total - firstN - ezThirdMax);
     const thirdN = total - firstN - secondN;
     ezThirdMax = thirdN;
-    distrib = `2. Difficulty Distribution:\n\nAdd "difficulty_order": "1st/2nd/3rd" to the JSON pertaining to each question.\n\n${firstN}/${total} questions: First-order (Direct recall using high-yield buzzwords and classic phrase cues from the lecture).\n\n${secondN}/${total} questions: Second-order (Brief two-step connections—keep stems to 1–3 sentences, no vignettes).\n\n${thirdN}/${total} questions: Third-order (Short clinical vignettes only when unavoidable—cap vignette-style stems at ${thirdN} total; all other items remain direct recall).`;
+    distrib = `2. Difficulty Distribution:\n\nAdd "difficulty_order": "1st/2nd/3rd" to the JSON pertaining to each question.\n\n${firstN}/${total} questions: First-order (Direct recall; high-yield buzzwords and classic lecture cues).\n\n${secondN}/${total} questions: Second-order (Brief two-step; stems 1-3 sentences, no vignettes).\n\n${thirdN}/${total} questions: Third-order (Short vignettes only if unavoidable; cap at ${thirdN}; all other items remain direct recall).`;
   } else if (enabled.length === 3) {
     const firstN  = Math.round(total * 4 / 30);
     const secondN = Math.round(total * 11 / 30);
@@ -4678,7 +4677,7 @@ function buildSettingsPrompt() {
   const positionMax = positionBalance + 1;
 
   let prompt = MASTER_PROMPT
-    .replace(/2\. Difficulty Distribution:[\s\S]*?(?=\n\n3\. Stem Blinding)/, distrib)
+    .replace(/2\. Difficulty Distribution:[\s\S]*?(?=\r?\n\r?\n3\. Stem Blinding)/, distrib)
     .replace(/In at least \d+ out of \d+ questions/, `In at least ${longestDistractorMin} out of ${total} questions`)
     .replace(/At least \d+ questions must contain a distractor/, `At least ${confidenceTrapMin} questions must contain a distractor`)
     .replace(/approximately \d+ times across \d+ questions/, `approximately ${positionBalance} times across ${total} questions`)
@@ -4686,9 +4685,9 @@ function buildSettingsPrompt() {
     .replace('Now generate 30 questions', `Now generate ${total} questions`);
 
   if (boardsMode) {
-    prompt = prompt.replace(/(\n\n4\. THE OPTION PARITY RULE \(CRITICAL\))/, '\n\n' + BOARDS_MODE_PROMPT_BLOCK + '4. THE OPTION PARITY RULE (CRITICAL)');
+    prompt = prompt.replace(/(\r?\n\r?\n4\. THE OPTION PARITY RULE \(CRITICAL\))/, '\n\n' + BOARDS_MODE_PROMPT_BLOCK + '4. THE OPTION PARITY RULE (CRITICAL)');
   } else if (ezMode) {
-    prompt = prompt.replace(/(\n\n4\. THE OPTION PARITY RULE \(CRITICAL\))/, '\n\n' + buildEzModePromptBlock(ezThirdMax) + '4. THE OPTION PARITY RULE (CRITICAL)');
+    prompt = prompt.replace(/(\r?\n\r?\n4\. THE OPTION PARITY RULE \(CRITICAL\))/, '\n\n' + buildEzModePromptBlock(ezThirdMax) + '4. THE OPTION PARITY RULE (CRITICAL)');
   }
 
   return prompt;
@@ -4696,11 +4695,14 @@ function buildSettingsPrompt() {
 
 function copyMasterPrompt() {
   const prompt = buildSettingsPrompt();
+  const n = prompt.length;
   navigator.clipboard.writeText(prompt).then(() => {
     const btn = document.getElementById('copy-prompt-btn');
     const orig = `📋 Copy Master Prompt (${promptSettings.questions}Q)`;
     btn.textContent = '✓ Copied!';
-    showToast('📋 Master prompt copied!');
+    showToast(n > COPILOT_PROMPT_MAX_CHARS
+      ? `⚠️ Prompt is ${n} chars (Copilot limit ${COPILOT_PROMPT_MAX_CHARS})`
+      : `📋 Master prompt copied (${n} / ${COPILOT_PROMPT_MAX_CHARS})`);
     setTimeout(() => { btn.textContent = orig; }, 2500);
     // Close the panel after copying
     document.getElementById('prompt-settings-panel').classList.remove('open');
