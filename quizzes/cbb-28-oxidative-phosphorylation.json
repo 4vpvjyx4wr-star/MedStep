@@ -1,0 +1,1090 @@
+[
+  {
+    "question": "Which component directly uses the proton gradient to synthesize ATP?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how the electron transport chain can be used to create energy in the form of ATP using the chemiosmotic hypothesis",
+    "options": [
+      {
+        "text": "ATP synthase FoF1 complex",
+        "isCorrect": true,
+        "rationale": "Correct: Complex V (ATP synthase, Fo and F1 domains) uses proton flow through Fo to drive F1 rotation and ATP synthesis."
+      },
+      {
+        "text": "Complex I NADH dehydrogenase",
+        "isCorrect": false,
+        "rationale": "Wrong: Complex I pumps protons and transfers electrons but does not catalyze ATP synthesis; it would be correct if it catalyzed ADP phosphorylation."
+      },
+      {
+        "text": "Complex II succinate dehydrogenase",
+        "isCorrect": false,
+        "rationale": "Wrong: Complex II transfers electrons from FADH2 to CoQ but does not pump protons or synthesize ATP; it would be correct if it spanned FoF1."
+      },
+      {
+        "text": "Cytochrome c mobile carrier",
+        "isCorrect": false,
+        "rationale": "Wrong: Cytochrome c shuttles electrons between complexes III and IV but does not use the proton gradient to make ATP; it would be correct if it catalyzed phosphorylation."
+      },
+      {
+        "text": "Coenzyme Q ubiquinone",
+        "isCorrect": false,
+        "rationale": "Wrong: CoQ is a lipid mobile electron carrier that transfers electrons and accepts protons, but it does not synthesize ATP; it would be correct if it rotated F1."
+      }
+    ]
+  },
+  {
+    "question": "Which complexes are coupled to proton pumping across the inner mitochondrial membrane?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how the electron transport chain can be used to create energy in the form of ATP using the chemiosmotic hypothesis",
+    "options": [
+      {
+        "text": "Complexes I III and IV",
+        "isCorrect": true,
+        "rationale": "Correct: Complexes I, III, and IV are coupled to proton pumping to create the electrochemical gradient used for ATP synthesis."
+      },
+      {
+        "text": "Complexes I II and V",
+        "isCorrect": false,
+        "rationale": "Wrong: Complex II does not pump protons and Complex V uses the gradient to make ATP; it would be correct if II pumped protons."
+      },
+      {
+        "text": "Complexes II III and IV",
+        "isCorrect": false,
+        "rationale": "Wrong: Complex II does not pump protons; this would be correct only if Complex II contributed to proton translocation."
+      },
+      {
+        "text": "Complexes I IV and V",
+        "isCorrect": false,
+        "rationale": "Wrong: Complex V is ATP synthase that dissipates the gradient rather than pumping protons; it would be correct if V pumped protons outward."
+      },
+      {
+        "text": "Complexes II IV and V",
+        "isCorrect": false,
+        "rationale": "Wrong: Complex II does not pump protons and V synthesizes ATP; this would be correct only if II pumped protons."
+      }
+    ]
+  },
+  {
+    "question": "Which mobile carrier accepts electrons from both Complex I and Complex II?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how NADH and FADH2 are oxidized through the complexes and mobile carriers of the ETC to reduce oxygen to water",
+    "options": [
+      {
+        "text": "Coenzyme Q ubiquinone",
+        "isCorrect": true,
+        "rationale": "Correct: CoQ (ubiquinone) accepts electrons from FMNH2 at Complex I and from FADH2 at Complex II and transfers them to Complex III."
+      },
+      {
+        "text": "Cytochrome c heme protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Cytochrome c accepts electrons only from Complex III and donates to Complex IV; it would be correct if it accepted from Complex II."
+      },
+      {
+        "text": "FMN flavoprotein carrier",
+        "isCorrect": false,
+        "rationale": "Wrong: FMN is part of Complex I and accepts electrons from NADH but is not the mobile carrier between complexes; it would be correct if FMN diffused between complexes."
+      },
+      {
+        "text": "Iron sulfur centers",
+        "isCorrect": false,
+        "rationale": "Wrong: Iron-sulfur centers are prosthetic groups within complexes for electron transfer, not mobile carriers; it would be correct if they moved between complexes."
+      },
+      {
+        "text": "Heme a a3 cluster",
+        "isCorrect": false,
+        "rationale": "Wrong: The heme a and a3 are components of Complex IV involved in O2 reduction, not a mobile carrier accepting from I and II; it would be correct if they accepted electrons from CoQ."
+      }
+    ]
+  },
+  {
+    "question": "Which molecule is the terminal electron acceptor in the electron transport chain?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how NADH and FADH2 are oxidized through the complexes and mobile carriers of the ETC to reduce oxygen to water",
+    "options": [
+      {
+        "text": "Molecular oxygen O2",
+        "isCorrect": true,
+        "rationale": "Correct: O2 is the final electron acceptor at Complex IV, where it is reduced with protons to form water."
+      },
+      {
+        "text": "Coenzyme Q ubiquinone",
+        "isCorrect": false,
+        "rationale": "Wrong: CoQ is an intermediate electron carrier, not the terminal acceptor; it would be correct only if O2 were absent and CoQ reduced fully to water."
+      },
+      {
+        "text": "Cytochrome c oxidase",
+        "isCorrect": false,
+        "rationale": "Wrong: Cytochrome c oxidase (Complex IV) transfers electrons to O2 but is not the terminal acceptor itself; it would be correct if it became permanently reduced by electrons."
+      },
+      {
+        "text": "NAD+ nicotinamide adenine",
+        "isCorrect": false,
+        "rationale": "Wrong: NAD+ is an initial electron acceptor in dehydrogenase reactions, not the terminal acceptor; it would be correct if NAD+ accepted electrons at Complex IV."
+      },
+      {
+        "text": "Water H2O",
+        "isCorrect": false,
+        "rationale": "Wrong: Water is the product of O2 reduction, not the electron acceptor; it would be correct only if electrons were transferred to preexisting water."
+      }
+    ]
+  },
+  {
+    "question": "A patient inhales smoke from a house fire and develops tissue hypoxia despite normal PaO2. Which ETC inhibitor best explains impaired oxygen reduction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recognize specific compounds as ETC inhibitors, and describe the effects on human health",
+    "options": [
+      {
+        "text": "Cyanide binding Complex IV",
+        "isCorrect": true,
+        "rationale": "Correct: Cyanide irreversibly binds Fe3+ in Complex IV (cytochrome c oxidase), preventing reduction of O2 and causing cellular hypoxia."
+      },
+      {
+        "text": "Rotenone blocking Complex I",
+        "isCorrect": false,
+        "rationale": "Wrong: Rotenone inhibits Complex I and would impair NADH oxidation but not directly block O2 reduction at Complex IV; it would be correct if Complex I blockade caused the observed hypoxia."
+      },
+      {
+        "text": "Antimycin A blocking Complex III",
+        "isCorrect": false,
+        "rationale": "Wrong: Antimycin A inhibits Complex III and disrupts electron flow upstream of IV; it would be correct if the clinical exposure was to a piscicide containing antimycin A."
+      },
+      {
+        "text": "Carbon monoxide binding hemoglobin",
+        "isCorrect": false,
+        "rationale": "Wrong: CO primarily binds hemoglobin reducing O2 delivery; although it can bind Complex IV reversibly, the classic mechanism in smoke inhalation is cyanide; this would be correct if hemoglobin binding explained the normal PaO2."
+      },
+      {
+        "text": "Oligomycin blocking ATP synthase",
+        "isCorrect": false,
+        "rationale": "Wrong: Oligomycin blocks Fo of ATP synthase, stopping ATP production but not directly preventing O2 reduction; it would be correct if ATP synthase blockade alone caused the hypoxia."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best describes how 2,4-dinitrophenol causes weight loss but can be fatal?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe how the electron transport chain can be uncoupled from the phosphorylation of ATP using UCP1, 2,4-dinitrophenol, and salicylic acid as examples",
+    "options": [
+      {
+        "text": "Increases proton leak releasing heat",
+        "isCorrect": true,
+        "rationale": "Correct: 2,4-DNP increases inner membrane proton permeability, uncoupling electron transport from ATP synthesis so energy is released as heat, risking fatal hyperthermia."
+      },
+      {
+        "text": "Blocks Complex IV oxygen reduction",
+        "isCorrect": false,
+        "rationale": "Wrong: 2,4-DNP does not inhibit Complex IV; it uncouples proton gradient dissipation. It would be correct if the compound bound Complex IV."
+      },
+      {
+        "text": "Inhibits Complex I electron transfer",
+        "isCorrect": false,
+        "rationale": "Wrong: 2,4-DNP is an uncoupler, not a Complex I inhibitor; it would be correct if it prevented NADH oxidation at Complex I."
+      },
+      {
+        "text": "Closes ATP synthase proton channel",
+        "isCorrect": false,
+        "rationale": "Wrong: Closing the Fo channel (as oligomycin does) prevents proton return and ATP synthesis but does not increase heat; it would be correct if 2,4-DNP acted like oligomycin."
+      },
+      {
+        "text": "Enhances cytochrome c electron transfer",
+        "isCorrect": false,
+        "rationale": "Wrong: 2,4-DNP does not enhance electron transfer through cytochrome c; it dissipates the gradient. It would be correct if it increased electron flux without uncoupling."
+      }
+    ]
+  },
+  {
+    "question": "Which mitochondrial DNA feature explains why mtDNA mutations preferentially affect oxidative phosphorylation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why defects in mitochondrial DNA affect the ETC, what tissues would be most affected, and why.",
+    "options": [
+      {
+        "text": "mtDNA encodes ETC proteins",
+        "isCorrect": true,
+        "rationale": "Correct: mtDNA encodes about 13 proteins required for oxidative phosphorylation, so mtDNA mutations can directly impair ETC function."
+      },
+      {
+        "text": "mtDNA lacks promoters",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture did not state mtDNA lacks promoters; lack of promoters would affect transcription broadly and is not the cited reason for ETC defects."
+      },
+      {
+        "text": "mtDNA is double stranded linear",
+        "isCorrect": false,
+        "rationale": "Wrong: mtDNA is circular and not linear; this statement contradicts mitochondrial genetics and would be correct only if mtDNA were linear."
+      },
+      {
+        "text": "mtDNA is repaired efficiently",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture indicates mtDNA has a high mutation rate due to ROS, implying less efficient repair; it would be correct if mtDNA repair were robust."
+      },
+      {
+        "text": "mtDNA encodes all mitochondrial proteins",
+        "isCorrect": false,
+        "rationale": "Wrong: Only ~13 of ~120 oxidative phosphorylation proteins are mtDNA-encoded; this would be correct only if mtDNA encoded the majority of mitochondrial proteins."
+      }
+    ]
+  },
+  {
+    "question": "Which tissue type is most likely to show early symptoms from inherited mtDNA oxidative phosphorylation defects?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why defects in mitochondrial DNA affect the ETC, what tissues would be most affected, and why.",
+    "options": [
+      {
+        "text": "High aerobic demand tissues",
+        "isCorrect": true,
+        "rationale": "Correct: Tissues with high aerobic metabolism (brain, heart, skeletal muscle) are most affected by OXPHOS defects due to reliance on mitochondrial ATP."
+      },
+      {
+        "text": "Low metabolic adipose tissue",
+        "isCorrect": false,
+        "rationale": "Wrong: Adipose tissue is less aerobically active; it would be correct only if adipose had the highest ATP demand."
+      },
+      {
+        "text": "Epithelial skin cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Skin epithelium has lower continuous aerobic demand compared with brain and muscle; it would be correct if skin required high mitochondrial ATP."
+      },
+      {
+        "text": "Red blood cells lacking mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong: Mature RBCs lack mitochondria and are unaffected by mtDNA OXPHOS defects; it would be correct only if RBCs retained mitochondria."
+      },
+      {
+        "text": "Glandular secretory cells",
+        "isCorrect": false,
+        "rationale": "Wrong: While secretory cells use energy, the lecture highlights neuropathies and myopathies as classic manifestations; this would be correct if glands had the highest aerobic demand."
+      }
+    ]
+  },
+  {
+    "question": "A lab assay shows NADH donates electrons to FMN within which complex?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how NADH and FADH2 are oxidized through the complexes and mobile carriers of the ETC to reduce oxygen to water",
+    "options": [
+      {
+        "text": "Complex I NADH dehydrogenase",
+        "isCorrect": true,
+        "rationale": "Correct: Complex I contains FMN which accepts electrons from NADH, forming FMNH2 as part of NADH oxidation."
+      },
+      {
+        "text": "Complex II succinate dehydrogenase",
+        "isCorrect": false,
+        "rationale": "Wrong: Complex II contains FAD and oxidizes succinate to fumarate; it does not use FMN to accept NADH electrons."
+      },
+      {
+        "text": "Complex III cytochrome bc1",
+        "isCorrect": false,
+        "rationale": "Wrong: Complex III accepts electrons from CoQ and contains cytochromes, not FMN; it would be correct if FMN were present in III."
+      },
+      {
+        "text": "Complex IV cytochrome oxidase",
+        "isCorrect": false,
+        "rationale": "Wrong: Complex IV reduces O2 using heme and copper centers, not FMN; it would be correct if FMN participated in O2 reduction."
+      },
+      {
+        "text": "ATP synthase FoF1 complex",
+        "isCorrect": false,
+        "rationale": "Wrong: ATP synthase uses the proton gradient to make ATP and does not accept electrons from NADH; it would be correct only if it contained FMN."
+      }
+    ]
+  },
+  {
+    "question": "Which inhibitor binds reversibly to Complex IV and is commonly associated with smoke inhalation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recognize specific compounds as ETC inhibitors, and describe the effects on human health",
+    "options": [
+      {
+        "text": "Carbon monoxide reversible binding",
+        "isCorrect": true,
+        "rationale": "Correct: Carbon monoxide binds reversibly to Complex IV and to hemoglobin; smoke inhalation can expose patients to CO affecting ETC function."
+      },
+      {
+        "text": "Sodium azide irreversible binding",
+        "isCorrect": false,
+        "rationale": "Wrong: Sodium azide binds similarly to cyanide at Complex IV but the lecture associates smoke exposure specifically with cyanide; this would be correct if azide were the common smoke toxin."
+      },
+      {
+        "text": "Antimycin A Complex III blockade",
+        "isCorrect": false,
+        "rationale": "Wrong: Antimycin A inhibits Complex III and is used as a piscicide, not typically implicated in house fire exposures; it would be correct if antimycin A were present in smoke."
+      },
+      {
+        "text": "Rotenone Complex I inhibitor",
+        "isCorrect": false,
+        "rationale": "Wrong: Rotenone inhibits Complex I and is used as a pesticide, not commonly from house fires; it would be correct if rotenone exposure occurred."
+      },
+      {
+        "text": "Oligomycin Fo channel blocker",
+        "isCorrect": false,
+        "rationale": "Wrong: Oligomycin blocks ATP synthase Fo channel and is a lab tool, not a typical smoke inhalation toxin; it would be correct if oligomycin were inhaled."
+      }
+    ]
+  },
+  {
+    "question": "Which mechanism explains why oligomycin halts both ATP synthesis and electron transport?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recognize specific compounds as ETC inhibitors, and describe the effects on human health",
+    "options": [
+      {
+        "text": "Blocks Fo proton channel",
+        "isCorrect": true,
+        "rationale": "Correct: Oligomycin binds the Fo domain of ATP synthase, preventing proton return; the resulting maintained gradient stops electron flow through the ETC."
+      },
+      {
+        "text": "Inhibits Complex I electron entry",
+        "isCorrect": false,
+        "rationale": "Wrong: Oligomycin does not inhibit Complex I; it blocks proton return. It would be correct if oligomycin prevented NADH oxidation."
+      },
+      {
+        "text": "Dissipates proton gradient",
+        "isCorrect": false,
+        "rationale": "Wrong: Oligomycin prevents dissipation through ATP synthase rather than dissipating the gradient; it would be correct if it acted like an uncoupler."
+      },
+      {
+        "text": "Binds cytochrome c heme group",
+        "isCorrect": false,
+        "rationale": "Wrong: Oligomycin does not bind cytochrome c; it would be correct if oligomycin inhibited electron transfer between III and IV."
+      },
+      {
+        "text": "Enhances ATP hydrolysis rate",
+        "isCorrect": false,
+        "rationale": "Wrong: Oligomycin blocks proton flow and ATP synthesis, not enhancing hydrolysis; it would be correct if it activated ATPase activity."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical syndrome is classically linked to mtDNA mutations affecting oxidative phosphorylation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why defects in mitochondrial DNA affect the ETC, what tissues would be most affected, and why.",
+    "options": [
+      {
+        "text": "Leber hereditary optic neuropathy",
+        "isCorrect": true,
+        "rationale": "Correct: LHON is a disease caused by mtDNA mutations affecting OXPHOS, leading to optic neuropathy in high-energy-demand neurons."
+      },
+      {
+        "text": "Cystic fibrosis transmembrane defect",
+        "isCorrect": false,
+        "rationale": "Wrong: Cystic fibrosis is due to CFTR nuclear gene mutations unrelated to mtDNA or OXPHOS; it would be correct only if CFTR were mitochondrial."
+      },
+      {
+        "text": "Hemophilia A clotting deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemophilia A is an X-linked clotting factor VIII deficiency unrelated to mitochondrial genetics; it would be correct if factor VIII were mtDNA-encoded."
+      },
+      {
+        "text": "Sickle cell hemoglobinopathy",
+        "isCorrect": false,
+        "rationale": "Wrong: Sickle cell disease is due to a nuclear globin mutation, not mtDNA OXPHOS defects; it would be correct if hemoglobin synthesis depended on mtDNA."
+      },
+      {
+        "text": "Type 1 diabetes autoimmune destruction",
+        "isCorrect": false,
+        "rationale": "Wrong: Type 1 diabetes is autoimmune and not a primary mtDNA OXPHOS disorder; it would be correct if pancreatic beta-cell OXPHOS defects caused the disease."
+      }
+    ]
+  },
+  {
+    "question": "A newborn with abundant brown adipose tissue uses UCP1 for thermogenesis. What is UCP1's immediate effect on mitochondrial function?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe how the electron transport chain can be uncoupled from the phosphorylation of ATP using UCP1, 2,4-dinitrophenol, and salicylic acid as examples",
+    "options": [
+      {
+        "text": "Permits proton return without ATP",
+        "isCorrect": true,
+        "rationale": "Correct: UCP1 allows protons to re-enter the matrix bypassing ATP synthase, releasing energy as heat (nonshivering thermogenesis)."
+      },
+      {
+        "text": "Blocks electron transfer to O2",
+        "isCorrect": false,
+        "rationale": "Wrong: UCP1 does not block electron transfer; it uncouples proton flow from ATP synthesis. It would be correct if UCP1 inhibited Complex IV."
+      },
+      {
+        "text": "Inhibits Complex III activity",
+        "isCorrect": false,
+        "rationale": "Wrong: UCP1 is an uncoupling protein in the inner membrane and does not inhibit Complex III; it would be correct if UCP1 bound Complex III."
+      },
+      {
+        "text": "Enhances ATP synthase rotation",
+        "isCorrect": false,
+        "rationale": "Wrong: UCP1 decreases proton flow through ATP synthase, reducing ATP production; it would be correct if UCP1 increased proton flux through Fo."
+      },
+      {
+        "text": "Increases matrix pH significantly",
+        "isCorrect": false,
+        "rationale": "Wrong: Proton leak via UCP1 reduces the gradient and tends to decrease the pH difference; it would be correct if UCP1 pumped protons out of matrix."
+      }
+    ]
+  },
+  {
+    "question": "Which lab finding would you expect after exposure to a Complex I inhibitor like rotenone?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recognize specific compounds as ETC inhibitors, and describe the effects on human health",
+    "options": [
+      {
+        "text": "Elevated serum lactate levels",
+        "isCorrect": true,
+        "rationale": "Correct: Inhibition of Complex I impairs NADH oxidation, slowing the TCA cycle and promoting anaerobic glycolysis with increased lactate."
+      },
+      {
+        "text": "Decreased serum lactate levels",
+        "isCorrect": false,
+        "rationale": "Wrong: Lactate would rise, not decrease; this would be correct only if anaerobic glycolysis were suppressed."
+      },
+      {
+        "text": "Increased oxygen consumption",
+        "isCorrect": false,
+        "rationale": "Wrong: ETC inhibition reduces oxygen consumption; it would be correct if electron flow increased."
+      },
+      {
+        "text": "Elevated ATP production",
+        "isCorrect": false,
+        "rationale": "Wrong: ATP production falls when the ETC is inhibited; it would be correct if an alternative ATP source compensated fully."
+      },
+      {
+        "text": "Reduced NADH levels",
+        "isCorrect": false,
+        "rationale": "Wrong: NADH accumulates when Complex I is inhibited; it would be correct if NADH oxidation increased despite inhibition."
+      }
+    ]
+  },
+  {
+    "question": "Which prosthetic group in Complex IV contributes uniquely to O2 reduction alongside iron?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how NADH and FADH2 are oxidized through the complexes and mobile carriers of the ETC to reduce oxygen to water",
+    "options": [
+      {
+        "text": "Copper centers in Complex IV",
+        "isCorrect": true,
+        "rationale": "Correct: Complex IV uses both iron (heme) and copper centers to catalyze the reduction of O2 to H2O."
+      },
+      {
+        "text": "FMN in Complex IV",
+        "isCorrect": false,
+        "rationale": "Wrong: FMN is part of Complex I, not IV; it would be correct if FMN participated in O2 reduction at IV."
+      },
+      {
+        "text": "FAD in Complex IV",
+        "isCorrect": false,
+        "rationale": "Wrong: FAD is associated with Complex II and other dehydrogenases, not Complex IV; it would be correct if FAD were present in IV."
+      },
+      {
+        "text": "Iron sulfur clusters in IV",
+        "isCorrect": false,
+        "rationale": "Wrong: Iron-sulfur centers are in other complexes; Complex IV specifically uses heme iron and copper. It would be correct if IV contained Fe-S clusters."
+      },
+      {
+        "text": "Ubiquinone in Complex IV",
+        "isCorrect": false,
+        "rationale": "Wrong: Ubiquinone (CoQ) is a mobile carrier, not a prosthetic group in Complex IV; it would be correct if CoQ were a structural IV component."
+      }
+    ]
+  },
+  {
+    "question": "A researcher adds excess ADP to isolated mitochondria and measures increased oxygen consumption without a change in membrane integrity. Which principle explains this observation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how the electron transport chain can be used to create energy in the form of ATP using the chemiosmotic hypothesis",
+    "options": [
+      {
+        "text": "ADP stimulates ATP synthase activity",
+        "isCorrect": true,
+        "rationale": "Correct: Adding ADP increases ATP synthase activity, allowing protons to flow back through Fo, dissipating the gradient and increasing electron transport and O2 consumption."
+      },
+      {
+        "text": "ADP directly donates electrons",
+        "isCorrect": false,
+        "rationale": "Wrong: ADP is not an electron donor; increased O2 consumption is due to enhanced ATP synthesis. It would be correct only if ADP carried electrons."
+      },
+      {
+        "text": "ADP uncouples proton gradient",
+        "isCorrect": false,
+        "rationale": "Wrong: ADP does not uncouple the gradient; uncouplers increase O2 consumption without ATP synthesis. It would be correct if ADP acted like DNP."
+      },
+      {
+        "text": "ADP inhibits Complex IV",
+        "isCorrect": false,
+        "rationale": "Wrong: Inhibiting Complex IV would decrease O2 consumption; it would be correct if ADP blocked electron transfer to O2."
+      },
+      {
+        "text": "ADP increases CoQ concentration",
+        "isCorrect": false,
+        "rationale": "Wrong: ADP does not change CoQ levels; increased O2 consumption is from ATP synthase-driven proton flow. It would be correct if CoQ were upregulated acutely."
+      }
+    ]
+  },
+  {
+    "question": "A patient overdoses on aspirin and develops hyperthermia. Which mitochondrial effect from the lecture best explains the fever?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe how the electron transport chain can be uncoupled from the phosphorylation of ATP using UCP1, 2,4-dinitrophenol, and salicylic acid as examples",
+    "options": [
+      {
+        "text": "Salicylate increases proton leak",
+        "isCorrect": true,
+        "rationale": "Correct: Salicylic acid compounds can uncouple oxidative phosphorylation by increasing proton permeability, releasing energy as heat and causing hyperthermia."
+      },
+      {
+        "text": "Aspirin inhibits Complex I",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture links salicylates to uncoupling rather than Complex I inhibition; it would be correct if aspirin directly blocked Complex I."
+      },
+      {
+        "text": "Aspirin blocks ATP synthase",
+        "isCorrect": false,
+        "rationale": "Wrong: Oligomycin blocks ATP synthase, not aspirin; this would be correct if aspirin bound the Fo domain."
+      },
+      {
+        "text": "Salicylate increases ATP production",
+        "isCorrect": false,
+        "rationale": "Wrong: Uncoupling decreases ATP yield while increasing heat; it would be correct only if salicylate enhanced ATP synthase efficiency."
+      },
+      {
+        "text": "Aspirin reduces oxygen affinity",
+        "isCorrect": false,
+        "rationale": "Wrong: Aspirin does not reduce O2 affinity; this would be correct if aspirin altered hemoglobin oxygen binding."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected cyanide poisoning has normal hemoglobin saturation but impaired cellular respiration. Which lab change aligns with cyanide's mechanism?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recognize specific compounds as ETC inhibitors, and describe the effects on human health",
+    "options": [
+      {
+        "text": "High lactate low oxygen consumption",
+        "isCorrect": true,
+        "rationale": "Correct: Cyanide inhibits Complex IV, halting electron transport and O2 utilization, causing anaerobic glycolysis with elevated lactate despite normal PaO2."
+      },
+      {
+        "text": "Low lactate increased oxygen consumption",
+        "isCorrect": false,
+        "rationale": "Wrong: ETC inhibition raises lactate and lowers O2 consumption; this would be correct only if metabolism shifted to increased aerobic oxidation."
+      },
+      {
+        "text": "High ATP increased oxygen consumption",
+        "isCorrect": false,
+        "rationale": "Wrong: Cyanide reduces ATP production and O2 consumption; it would be correct if cyanide stimulated oxidative phosphorylation."
+      },
+      {
+        "text": "Decreased NADH accumulation",
+        "isCorrect": false,
+        "rationale": "Wrong: Inhibition at IV leads to upstream electron backup and NADH accumulation; it would be correct if NADH oxidation increased."
+      },
+      {
+        "text": "Elevated hemoglobin CO binding",
+        "isCorrect": false,
+        "rationale": "Wrong: CO binds hemoglobin; cyanide binds Complex IV. This would be correct if CO exposure occurred instead of cyanide."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental manipulation would most directly demonstrate the chemiosmotic coupling between electron transport and ATP synthesis?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how the electron transport chain can be used to create energy in the form of ATP using the chemiosmotic hypothesis",
+    "options": [
+      {
+        "text": "Add proton ionophore and measure ATP",
+        "isCorrect": true,
+        "rationale": "Correct: Adding an uncoupling proton ionophore dissipates the proton gradient and reduces ATP synthesis despite continued electron transport, demonstrating chemiosmotic coupling."
+      },
+      {
+        "text": "Add NADH and measure membrane potential",
+        "isCorrect": false,
+        "rationale": "Wrong: Adding NADH drives electron transport but does not alone prove coupling; it would be correct if ATP synthesis changed independently of gradient manipulation."
+      },
+      {
+        "text": "Block glycolysis and measure ATP",
+        "isCorrect": false,
+        "rationale": "Wrong: Blocking glycolysis affects substrate supply but not the direct coupling between ETC and ATP synthase; it would be correct if glycolysis were the only ATP source."
+      },
+      {
+        "text": "Increase external oxygen concentration",
+        "isCorrect": false,
+        "rationale": "Wrong: Raising O2 may increase electron flow but does not isolate the role of the proton gradient; it would be correct if O2 were limiting electron transport."
+      },
+      {
+        "text": "Add excess ADP without measuring O2",
+        "isCorrect": false,
+        "rationale": "Wrong: Adding ADP stimulates ATP synthase but without measuring O2 or gradient changes it doesn't directly demonstrate chemiosmotic coupling; it would be correct if gradient changes were also measured."
+      }
+    ]
+  },
+  {
+    "question": "A patient with MERRF has ragged red fibers on muscle biopsy. Which mitochondrial defect best explains the histology?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain why defects in mitochondrial DNA affect the ETC, what tissues would be most affected, and why.",
+    "options": [
+      {
+        "text": "mtDNA mutation impairing OXPHOS",
+        "isCorrect": true,
+        "rationale": "Correct: MERRF is caused by mtDNA mutations that impair oxidative phosphorylation, leading to compensatory mitochondrial proliferation visible as ragged red fibers."
+      },
+      {
+        "text": "Nuclear tRNA gene deletion",
+        "isCorrect": false,
+        "rationale": "Wrong: MERRF is linked to mtDNA tRNA mutations rather than nuclear gene deletions; it would be correct if the nuclear genome encoded the defective tRNA."
+      },
+      {
+        "text": "Autoimmune mitochondrial destruction",
+        "isCorrect": false,
+        "rationale": "Wrong: MERRF is genetic, not autoimmune; it would be correct if immune-mediated mitochondrial loss produced similar pathology."
+      },
+      {
+        "text": "Defect in cytosolic glycolysis enzymes",
+        "isCorrect": false,
+        "rationale": "Wrong: Glycolytic defects do not cause ragged red fibers from mitochondrial proliferation; it would be correct if glycolysis failure triggered mitochondrial biogenesis similarly."
+      },
+      {
+        "text": "Loss of mitochondrial outer membrane pores",
+        "isCorrect": false,
+        "rationale": "Wrong: Outer membrane pore loss is not the mechanism described; it would be correct if impaired metabolite exchange caused OXPHOS failure and proliferation."
+      }
+    ]
+  },
+  {
+    "question": "Which inhibitor would most directly prevent electron transfer from CoQ to cytochrome c?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how NADH and FADH2 are oxidized through the complexes and mobile carriers of the ETC to reduce oxygen to water",
+    "options": [
+      {
+        "text": "Antimycin A Complex III inhibitor",
+        "isCorrect": true,
+        "rationale": "Correct: Antimycin A inhibits Complex III (cytochrome bc1), blocking electron transfer from CoQ to cytochrome c."
+      },
+      {
+        "text": "Rotenone Complex I inhibitor",
+        "isCorrect": false,
+        "rationale": "Wrong: Rotenone blocks electron entry at Complex I, upstream of CoQ; it would be correct if it specifically blocked CoQ to III transfer."
+      },
+      {
+        "text": "Cyanide Complex IV inhibitor",
+        "isCorrect": false,
+        "rationale": "Wrong: Cyanide inhibits Complex IV, downstream of cytochrome c; it would be correct if it blocked transfer between CoQ and cytochrome c."
+      },
+      {
+        "text": "Oligomycin ATP synthase blocker",
+        "isCorrect": false,
+        "rationale": "Wrong: Oligomycin blocks ATP synthase and does not directly prevent CoQ to cytochrome c electron transfer; it would be correct if it bound Complex III."
+      },
+      {
+        "text": "Dinitrophenol uncoupling agent",
+        "isCorrect": false,
+        "rationale": "Wrong: DNP dissipates the proton gradient but does not block electron transfer between CoQ and cytochrome c; it would be correct if it inhibited Complex III."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected CO poisoning has headache and confusion. Which combined effect described in the lecture explains both impaired oxygen delivery and ETC inhibition?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recognize specific compounds as ETC inhibitors, and describe the effects on human health",
+    "options": [
+      {
+        "text": "CO binds hemoglobin and Complex IV",
+        "isCorrect": true,
+        "rationale": "Correct: Carbon monoxide tightly binds hemoglobin reducing O2 delivery and also binds reversibly to Complex IV, impairing electron transport and cellular respiration."
+      },
+      {
+        "text": "CO increases mitochondrial biogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong: CO does not increase mitochondrial biogenesis; it impairs oxygen delivery and ETC function. It would be correct if CO stimulated compensatory mitochondrial growth."
+      },
+      {
+        "text": "CO acts as an uncoupling agent",
+        "isCorrect": false,
+        "rationale": "Wrong: CO is not an uncoupler; it inhibits O2 reduction. It would be correct if CO increased proton leak across the inner membrane."
+      },
+      {
+        "text": "CO blocks ATP synthase directly",
+        "isCorrect": false,
+        "rationale": "Wrong: CO does not directly block ATP synthase; it binds hemoglobin and Complex IV. It would be correct if CO bound the Fo domain."
+      },
+      {
+        "text": "CO oxidizes NADH to NAD+",
+        "isCorrect": false,
+        "rationale": "Wrong: CO inhibits electron transfer, leading to NADH accumulation rather than oxidation; it would be correct if CO enhanced NADH oxidation."
+      }
+    ]
+  },
+  {
+    "question": "During ischemia, which immediate mitochondrial change would reduce ATP synthesis according to the lecture's mechanisms?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how the electron transport chain can be used to create energy in the form of ATP using the chemiosmotic hypothesis",
+    "options": [
+      {
+        "text": "Loss of proton gradient across inner membrane",
+        "isCorrect": true,
+        "rationale": "Correct: Ischemia limits electron flow and proton pumping, collapsing the proton gradient needed for ATP synthase to produce ATP."
+      },
+      {
+        "text": "Increased CoQ electron transfer",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased CoQ transfer would support ATP synthesis; it would be correct only if electron flow increased during ischemia."
+      },
+      {
+        "text": "Enhanced Complex IV activity",
+        "isCorrect": false,
+        "rationale": "Wrong: Complex IV activity falls with limited oxygen and electron donors during ischemia; it would be correct if oxygen supply increased."
+      },
+      {
+        "text": "Upregulated ATP synthase expression",
+        "isCorrect": false,
+        "rationale": "Wrong: Acute ischemia does not immediately upregulate protein expression; it would be correct if gene expression changes occurred rapidly."
+      },
+      {
+        "text": "Increased matrix NAD+ levels",
+        "isCorrect": false,
+        "rationale": "Wrong: NAD+ typically decreases as NADH accumulates when ETC slows; it would be correct if NADH were rapidly oxidized."
+      }
+    ]
+  },
+  {
+    "question": "A toxin that oxidizes the heme iron in cytochromes to Fe3+ and prevents reduction would most directly impair which ETC step?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how NADH and FADH2 are oxidized through the complexes and mobile carriers of the ETC to reduce oxygen to water",
+    "options": [
+      {
+        "text": "Electron transfer through cytochromes",
+        "isCorrect": true,
+        "rationale": "Correct: Oxidizing heme iron to Fe3+ prevents its reversible redox cycling (Fe3+/Fe2+), directly blocking electron transfer through cytochromes like those in Complex III and IV."
+      },
+      {
+        "text": "FMN accepting electrons from NADH",
+        "isCorrect": false,
+        "rationale": "Wrong: FMN in Complex I is separate from cytochrome heme iron; it would be correct if the toxin targeted FMN instead of heme."
+      },
+      {
+        "text": "FAD reduction in Complex II",
+        "isCorrect": false,
+        "rationale": "Wrong: FAD in Complex II is not a heme iron center; it would be correct if the toxin oxidized FAD directly."
+      },
+      {
+        "text": "CoQ diffusion in membrane",
+        "isCorrect": false,
+        "rationale": "Wrong: CoQ is a lipid carrier and not directly affected by heme iron oxidation; it would be correct if CoQ redox cycling were blocked."
+      },
+      {
+        "text": "ATP synthase catalytic site",
+        "isCorrect": false,
+        "rationale": "Wrong: ATP synthase does not rely on heme iron redox; it would be correct if the toxin bound the F1 catalytic domain."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected mitochondrial encephalomyopathy shows elevated reactive oxygen species in mitochondria. Which lecture point explains why mtDNA is vulnerable?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain why defects in mitochondrial DNA affect the ETC, what tissues would be most affected, and why.",
+    "options": [
+      {
+        "text": "ROS generation increases mtDNA mutation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states that ROS generated in mitochondria raise mtDNA mutation rates, contributing to OXPHOS defects."
+      },
+      {
+        "text": "mtDNA is protected by histones",
+        "isCorrect": false,
+        "rationale": "Wrong: mtDNA lacks histone protection like nuclear DNA; this would be correct only if mtDNA were histone-bound."
+      },
+      {
+        "text": "mtDNA is repaired faster than nuclear DNA",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture implies mtDNA has a high mutation rate, not faster repair; it would be correct if repair mechanisms were more efficient."
+      },
+      {
+        "text": "Mitochondria lack electron transport",
+        "isCorrect": false,
+        "rationale": "Wrong: Mitochondria contain the ETC; this contradicts the lecture and would be correct only if mitochondria were non-respiring organelles."
+      },
+      {
+        "text": "ROS decrease proton gradient directly",
+        "isCorrect": false,
+        "rationale": "Wrong: While ROS can damage components, the lecture emphasizes mutation accumulation in mtDNA rather than immediate gradient dissipation; it would be correct if ROS acutely collapsed the gradient."
+      }
+    ]
+  },
+  {
+    "question": "Which therapeutic action would most directly reverse cyanide inhibition of Complex IV as discussed in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recognize specific compounds as ETC inhibitors, and describe the effects on human health",
+    "options": [
+      {
+        "text": "Provide an alternative electron acceptor",
+        "isCorrect": true,
+        "rationale": "Inference: Correct inference based on lecture mechanism—treatments aim to restore electron flow by providing alternative pathways or agents that remove cyanide from Complex IV, allowing O2 reduction to resume."
+      },
+      {
+        "text": "Administer oligomycin to block Fo",
+        "isCorrect": false,
+        "rationale": "Wrong: Oligomycin blocks ATP synthase and would worsen cellular energy failure; it would be correct only if blocking Fo removed cyanide binding."
+      },
+      {
+        "text": "Give rotenone to inhibit Complex I",
+        "isCorrect": false,
+        "rationale": "Wrong: Rotenone inhibits Complex I and would further impair respiration; it would be correct only if Complex I inhibition displaced cyanide."
+      },
+      {
+        "text": "Use dinitrophenol to uncouple",
+        "isCorrect": false,
+        "rationale": "Wrong: DNP increases proton leak and heat but does not remove cyanide from Complex IV; it would be correct only if uncoupling restored electron flow despite cyanide."
+      },
+      {
+        "text": "Increase inspired oxygen fraction",
+        "isCorrect": false,
+        "rationale": "Wrong: Increasing FiO2 may not overcome cyanide blockade at Complex IV; it would be correct only if cyanide binding were reversible by high O2 alone."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental result would indicate that Complex II contributes electrons to CoQ but not to proton pumping?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how NADH and FADH2 are oxidized through the complexes and mobile carriers of the ETC to reduce oxygen to water",
+    "options": [
+      {
+        "text": "FADH2 donates electrons without H+ pumping",
+        "isCorrect": true,
+        "rationale": "Correct: Complex II (succinate dehydrogenase) transfers electrons from FADH2 to CoQ but does not pump protons, consistent with the lecture."
+      },
+      {
+        "text": "FADH2 increases proton gradient",
+        "isCorrect": false,
+        "rationale": "Wrong: If FADH2 increased the gradient, Complex II would pump protons; it would be correct only if Complex II translocated protons."
+      },
+      {
+        "text": "NADH bypasses CoQ entirely",
+        "isCorrect": false,
+        "rationale": "Wrong: NADH electrons enter at Complex I and pass through CoQ; it would be correct if an alternate NADH pathway existed."
+      },
+      {
+        "text": "CoQ pumps protons when reduced",
+        "isCorrect": false,
+        "rationale": "Wrong: CoQ shuttles electrons and protons but is not a proton pump itself; it would be correct if CoQ actively translocated protons across the membrane."
+      },
+      {
+        "text": "Complex II reduces oxygen directly",
+        "isCorrect": false,
+        "rationale": "Wrong: Complex II transfers electrons to CoQ, not directly to O2; it would be correct if Complex II contained O2-reducing centers."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected oligomycin exposure shows high proton gradient but low ATP. Which mitochondrial measurement would confirm oligomycin's mechanism?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recognize specific compounds as ETC inhibitors, and describe the effects on human health",
+    "options": [
+      {
+        "text": "High membrane potential low ATP",
+        "isCorrect": true,
+        "rationale": "Correct: Oligomycin blocks Fo, preventing proton return; this raises membrane potential while ATP synthesis falls, matching the lecture description."
+      },
+      {
+        "text": "Low membrane potential high ATP",
+        "isCorrect": false,
+        "rationale": "Wrong: This pattern suggests uncoupling or increased ATP synthase activity, not oligomycin; it would be correct if proton leak increased."
+      },
+      {
+        "text": "High oxygen consumption high ATP",
+        "isCorrect": false,
+        "rationale": "Wrong: Oligomycin typically reduces electron flow and O2 consumption due to gradient buildup; it would be correct if ATP synthase activity increased."
+      },
+      {
+        "text": "Low NADH low lactate",
+        "isCorrect": false,
+        "rationale": "Wrong: Oligomycin causes NADH accumulation and may increase lactate; it would be correct if NADH oxidation increased."
+      },
+      {
+        "text": "Increased CoQ pool oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong: Oligomycin-induced gradient buildup slows electron flow and CoQ oxidation; it would be correct if electron transport accelerated."
+      }
+    ]
+  },
+  {
+    "question": "Which finding would best distinguish an uncoupler from an inhibitor of Complex IV in isolated mitochondria?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe how the electron transport chain can be uncoupled from the phosphorylation of ATP using UCP1, 2,4-dinitrophenol, and salicylic acid as examples",
+    "options": [
+      {
+        "text": "Increased O2 consumption decreased ATP",
+        "isCorrect": true,
+        "rationale": "Correct: Uncouplers increase O2 consumption while decreasing ATP production by dissipating the proton gradient; Complex IV inhibitors decrease O2 consumption."
+      },
+      {
+        "text": "Decreased O2 consumption decreased ATP",
+        "isCorrect": false,
+        "rationale": "Wrong: This pattern fits Complex IV inhibition, not uncoupling; it would be correct if electron flow were blocked."
+      },
+      {
+        "text": "Increased ATP increased membrane potential",
+        "isCorrect": false,
+        "rationale": "Wrong: Uncoupling lowers ATP and membrane potential; this would be correct only if ATP synthesis and gradient both rose."
+      },
+      {
+        "text": "No change in O2 consumption",
+        "isCorrect": false,
+        "rationale": "Wrong: Both uncouplers and inhibitors alter O2 consumption; no change would be unexpected and would be correct only if compensatory mechanisms balanced effects."
+      },
+      {
+        "text": "Decreased ATP increased O2 consumption",
+        "isCorrect": false,
+        "rationale": "Wrong: This is similar to uncoupling but phrased inconsistently; the key distinguishing pattern is increased O2 consumption with decreased ATP, which is the correct option."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical feature would most strongly suggest an inherited OXPHOS mtDNA disorder rather than a nuclear gene defect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain why defects in mitochondrial DNA affect the ETC, what tissues would be most affected, and why.",
+    "options": [
+      {
+        "text": "Maternal inheritance pattern",
+        "isCorrect": true,
+        "rationale": "Correct: mtDNA is maternally inherited; a maternal transmission pattern supports an mtDNA OXPHOS disorder rather than a nuclear gene defect."
+      },
+      {
+        "text": "Autosomal recessive sibling recurrence",
+        "isCorrect": false,
+        "rationale": "Wrong: Autosomal recessive patterns suggest nuclear gene defects; it would be correct if inheritance matched Mendelian recessive transmission."
+      },
+      {
+        "text": "X-linked male predominance",
+        "isCorrect": false,
+        "rationale": "Wrong: X-linked patterns implicate nuclear X-chromosome genes, not mtDNA; it would be correct if the causative gene were on the X chromosome."
+      },
+      {
+        "text": "Sporadic somatic mosaicism",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic mosaicism can occur but does not specifically indicate mtDNA origin; it would be correct if mutations arose postzygotically in mtDNA."
+      },
+      {
+        "text": "Paternal transmission to offspring",
+        "isCorrect": false,
+        "rationale": "Wrong: Paternal mtDNA transmission is extremely rare; paternal inheritance would indicate nuclear gene involvement. It would be correct only if paternal mtDNA were transmitted."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental observation would indicate that cytochrome c is functioning as a mobile carrier?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how NADH and FADH2 are oxidized through the complexes and mobile carriers of the ETC to reduce oxygen to water",
+    "options": [
+      {
+        "text": "Transfers electrons from III to IV",
+        "isCorrect": true,
+        "rationale": "Correct: Cytochrome c accepts electrons from Complex III and donates them to Complex IV, functioning as a soluble mobile carrier in the intermembrane space."
+      },
+      {
+        "text": "Accepts electrons from Complex I",
+        "isCorrect": false,
+        "rationale": "Wrong: Cytochrome c does not accept electrons from Complex I; it would be correct if Complex I directly reduced cytochrome c."
+      },
+      {
+        "text": "Shuttles protons across membrane",
+        "isCorrect": false,
+        "rationale": "Wrong: Cytochrome c transfers electrons, not protons across the membrane; it would be correct if cytochrome c were a proton carrier."
+      },
+      {
+        "text": "Reduces CoQ to ubiquinol",
+        "isCorrect": false,
+        "rationale": "Wrong: CoQ is reduced by Complex I or II, not by cytochrome c; it would be correct if cytochrome c interacted with CoQ directly."
+      },
+      {
+        "text": "Forms part of ATP synthase",
+        "isCorrect": false,
+        "rationale": "Wrong: Cytochrome c is not a structural component of ATP synthase; it would be correct if cytochrome c were integrated into Complex V."
+      }
+    ]
+  },
+  {
+    "question": "Which pharmacologic exposure would most likely cause both decreased ATP and increased heat production?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe how the electron transport chain can be uncoupled from the phosphorylation of ATP using UCP1, 2,4-dinitrophenol, and salicylic acid as examples",
+    "options": [
+      {
+        "text": "2,4-dinitrophenol uncoupling agent",
+        "isCorrect": true,
+        "rationale": "Correct: 2,4-DNP uncouples oxidative phosphorylation, decreasing ATP synthesis while increasing heat production, as described in the lecture."
+      },
+      {
+        "text": "Rotenone Complex I inhibitor",
+        "isCorrect": false,
+        "rationale": "Wrong: Rotenone decreases ATP but does not increase heat via uncoupling; it would be correct only if it also increased proton leak."
+      },
+      {
+        "text": "Antimycin A Complex III blocker",
+        "isCorrect": false,
+        "rationale": "Wrong: Antimycin A inhibits electron flow and reduces ATP without producing heat from uncoupling; it would be correct if it caused proton leak."
+      },
+      {
+        "text": "Oligomycin Fo channel blocker",
+        "isCorrect": false,
+        "rationale": "Wrong: Oligomycin decreases ATP and can reduce electron flow, but it does not increase heat like uncouplers; it would be correct if it paradoxically increased heat."
+      },
+      {
+        "text": "Cyanide Complex IV inhibitor",
+        "isCorrect": false,
+        "rationale": "Wrong: Cyanide blocks O2 reduction and reduces ATP without causing heat from uncoupling; it would be correct if cyanide induced proton leak."
+      }
+    ]
+  },
+  {
+    "question": "Which structural feature of the inner mitochondrial membrane supports high rates of oxidative phosphorylation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how the electron transport chain can be used to create energy in the form of ATP using the chemiosmotic hypothesis",
+    "options": [
+      {
+        "text": "Cristae increase membrane surface area",
+        "isCorrect": true,
+        "rationale": "Correct: The inner membrane's cristae greatly increase surface area, allowing more ETC and ATP synthase complexes to support high rates of oxidative phosphorylation."
+      },
+      {
+        "text": "Outer membrane impermeability",
+        "isCorrect": false,
+        "rationale": "Wrong: The outer membrane is freely permeable via pores; inner membrane impermeability is key. This would be correct only if the outer membrane limited ion flow."
+      },
+      {
+        "text": "Low protein content of inner membrane",
+        "isCorrect": false,
+        "rationale": "Wrong: The inner membrane is unusually protein-rich; low protein content would not support high OXPHOS rates. It would be correct if proteins were sparse."
+      },
+      {
+        "text": "Matrix lacks ADP and Pi",
+        "isCorrect": false,
+        "rationale": "Wrong: The matrix contains ADP and Pi necessary for ATP synthesis; absence would prevent ATP production. It would be correct if ADP/Pi were excluded."
+      },
+      {
+        "text": "Inner membrane is freely permeable",
+        "isCorrect": false,
+        "rationale": "Wrong: Inner membrane impermeability is essential for gradient formation; free permeability would dissipate the gradient and stop ATP synthesis."
+      }
+    ]
+  },
+  {
+    "question": "Which observation would indicate that a drug acts like UCP1 rather than oligomycin in brown fat mitochondria?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe how the electron transport chain can be uncoupled from the phosphorylation of ATP using UCP1, 2,4-dinitrophenol, and salicylic acid as examples",
+    "options": [
+      {
+        "text": "Increased heat decreased ATP synthesis",
+        "isCorrect": true,
+        "rationale": "Correct: UCP1 permits proton leak causing increased heat and decreased ATP; oligomycin blocks ATP synthase and does not increase heat in the same way."
+      },
+      {
+        "text": "High membrane potential high ATP",
+        "isCorrect": false,
+        "rationale": "Wrong: UCP1 lowers membrane potential and ATP; high potential with high ATP suggests intact coupling, not UCP1 action."
+      },
+      {
+        "text": "Decreased oxygen consumption increased ATP",
+        "isCorrect": false,
+        "rationale": "Wrong: UCP1 increases O2 consumption while decreasing ATP; this pattern is inconsistent with UCP1 and would be correct only if metabolism slowed."
+      },
+      {
+        "text": "No change in heat production",
+        "isCorrect": false,
+        "rationale": "Wrong: UCP1 increases heat; no change would argue against UCP1 activity. It would be correct only if compensatory mechanisms masked heat changes."
+      },
+      {
+        "text": "Increased ATP synthase activity",
+        "isCorrect": false,
+        "rationale": "Wrong: UCP1 reduces ATP synthase-driven ATP production by dissipating the gradient; increased activity would contradict uncoupling."
+      }
+    ]
+  }
+]
