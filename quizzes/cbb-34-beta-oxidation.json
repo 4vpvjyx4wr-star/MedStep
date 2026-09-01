@@ -1,0 +1,1250 @@
+[
+  {
+    "question": "A fasting patient has elevated glucagon and epinephrine with low insulin. Which adipose enzyme is directly activated to release free fatty acids into the blood?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the process of fatty acid mobilization and regulation of hormone sensitive lipase",
+    "options": [
+      {
+        "text": "Hormone sensitive lipase",
+        "isCorrect": true,
+        "rationale": "Correct: Elevated glucagon/epinephrine via cAMP-PKA phosphorylates and activates hormone sensitive lipase to hydrolyze triglycerides. "
+      },
+      {
+        "text": "Acetyl-CoA carboxylase",
+        "isCorrect": false,
+        "rationale": "Wrong: ACC is involved in malonyl-CoA synthesis for FA synthesis, not triglyceride hydrolysis; decreased ACC activity occurs during fasting."
+      },
+      {
+        "text": "Fatty acyl-CoA synthetase",
+        "isCorrect": false,
+        "rationale": "Wrong: This enzyme activates fatty acids in the cytosol for metabolism, not for adipose triglyceride hydrolysis; it would not be the lipase releasing FFAs."
+      },
+      {
+        "text": "Lipoprotein lipase",
+        "isCorrect": false,
+        "rationale": "Wrong: LPL hydrolyzes circulating triglycerides at capillaries, not intracellular adipocyte triglyceride stores; increased fasting does not directly activate LPL for adipose lipolysis."
+      },
+      {
+        "text": "Malonyl-CoA decarboxylase",
+        "isCorrect": false,
+        "rationale": "Wrong: MCoADC decarboxylates malonyl-CoA regulating CPT-I, not adipocyte triglyceride hydrolysis; its activation promotes FA oxidation rather than lipolysis."
+      }
+    ]
+  },
+  {
+    "question": "Which mitochondrial transport step is the rate-limiting control point for long-chain fatty acid entry into mitochondria?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the process of activation of fatty acids and their transport to the mitochondria",
+    "options": [
+      {
+        "text": "Carnitine palmitoyltransferase I",
+        "isCorrect": true,
+        "rationale": "Correct: CPT-I on the outer mitochondrial membrane converts acyl-CoA to acyl-carnitine and is the rate-limiting step for long-chain FA mitochondrial entry."
+      },
+      {
+        "text": "Carnitine palmitoyltransferase II",
+        "isCorrect": false,
+        "rationale": "Wrong: CPT-II regenerates acyl-CoA inside the matrix but is not the rate-limiting outer membrane step."
+      },
+      {
+        "text": "Carnitine acyl-translocase",
+        "isCorrect": false,
+        "rationale": "Wrong: The translocase exchanges acyl-carnitine and carnitine across the inner membrane but CPT-I is the regulatory rate-limiting enzyme."
+      },
+      {
+        "text": "Fatty acyl-CoA synthetase",
+        "isCorrect": false,
+        "rationale": "Wrong: This activates fatty acids in the cytosol (forms acyl-CoA) but transport into mitochondria is limited by CPT-I."
+      },
+      {
+        "text": "Fatty acid translocase",
+        "isCorrect": false,
+        "rationale": "Wrong: Plasma membrane transporters mediate cellular uptake, not the mitochondrial rate-limiting step for long-chain FA entry."
+      }
+    ]
+  },
+  {
+    "question": "Which metabolite inhibits CPT-I and thereby downregulates beta-oxidation when fatty acid synthesis is active?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the process of activation of fatty acids and their transport to the mitochondria",
+    "options": [
+      {
+        "text": "Malonyl-CoA",
+        "isCorrect": true,
+        "rationale": "Correct: Malonyl-CoA, produced by ACC-2, inhibits CPT-I and prevents mitochondrial import of long-chain acyl-CoA during FA synthesis."
+      },
+      {
+        "text": "Acetyl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong: Acetyl-CoA is substrate for malonyl-CoA formation but does not directly inhibit CPT-I; elevated acetyl-CoA alone would not explain CPT-I inhibition."
+      },
+      {
+        "text": "AMP",
+        "isCorrect": false,
+        "rationale": "Wrong: AMP activates AMPK which ultimately reduces malonyl-CoA, thereby relieving CPT-I inhibition rather than directly inhibiting CPT-I."
+      },
+      {
+        "text": "Carnitine",
+        "isCorrect": false,
+        "rationale": "Wrong: Carnitine is required for transport and does not inhibit CPT-I; low carnitine would impair transport but not via malonyl-CoA signaling."
+      },
+      {
+        "text": "NADH",
+        "isCorrect": false,
+        "rationale": "Wrong: High NADH signals reduced electron transport and can slow beta-oxidation indirectly but does not directly inhibit CPT-I like malonyl-CoA does."
+      }
+    ]
+  },
+  {
+    "question": "A neonate screens positive for elevated medium-chain acyl-carnitines. Which enzyme deficiency best explains impaired oxidation of 8-10 carbon fatty acids?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the pathophysiology and presentation of CPT-I deficiency, MCAD deficiency, and propionic acidemia",
+    "options": [
+      {
+        "text": "Medium-chain acyl-CoA dehydrogenase",
+        "isCorrect": true,
+        "rationale": "Correct: MCAD catalyzes the first oxidation step for medium-chain FAs; deficiency causes accumulation of 8-10 carbon acyl-carnitines and hypoketotic hypoglycemia."
+      },
+      {
+        "text": "Very-long-chain acyl-CoA dehydrogenase",
+        "isCorrect": false,
+        "rationale": "Wrong: VLCAD acts on very-long-chain FAs; it would not primarily cause medium-chain acyl-carnitine accumulation."
+      },
+      {
+        "text": "Carnitine palmitoyltransferase I",
+        "isCorrect": false,
+        "rationale": "Wrong: CPT-I deficiency limits long-chain FA import and causes hypoketotic hypoglycemia but does not specifically elevate medium-chain acyl-carnitines."
+      },
+      {
+        "text": "Propionyl-CoA carboxylase",
+        "isCorrect": false,
+        "rationale": "Wrong: Propionyl-CoA carboxylase deficiency causes propionic acidemia with elevated propionyl-CoA, not medium-chain acyl-carnitines."
+      },
+      {
+        "text": "Acyl-CoA dehydrogenase short-chain",
+        "isCorrect": false,
+        "rationale": "Wrong: SCAD acts on short-chain FAs; deficiency would elevate short-chain acyl-carnitines rather than medium-chain species."
+      }
+    ]
+  },
+  {
+    "question": "Which sequence correctly lists the four recurring enzymatic steps of a beta-oxidation spiral?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the steps of @-oxidation in all fatty acids and the steps unique to unsaturated fatty acids and odd-chain fatty acids",
+    "options": [
+      {
+        "text": "Oxidation, hydration, oxidation, thiolysis",
+        "isCorrect": true,
+        "rationale": "Correct: Each beta-oxidation cycle involves acyl-CoA dehydrogenase (oxidation), enoyl hydratase (hydration), hydroxyacyl dehydrogenase (oxidation), and thiolase (cleavage/thiolysis)."
+      },
+      {
+        "text": "Hydration, oxidation, oxidation, thiolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Hydration follows the first oxidation; the correct order begins with oxidation, not hydration."
+      },
+      {
+        "text": "Oxidation, oxidation, hydration, thiolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Two oxidations are separated by a hydration step; the order is oxidation, hydration, oxidation, then thiolysis."
+      },
+      {
+        "text": "Hydration, oxidation, thiolysis, oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong: Thiolysis is the terminal step of the spiral; it does not precede the second oxidation."
+      },
+      {
+        "text": "Oxidation, hydration, thiolysis, oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong: Thiolysis is last; the second oxidation occurs before thiolysis, not after."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a defect in propionyl-CoA carboxylase accumulates propionyl-CoA. Which vitamin cofactor deficiency would produce a similar biochemical block by preventing methylmalonyl-CoA rearrangement to succinyl-CoA?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the pathophysiology and presentation of CPT-I deficiency, MCAD deficiency, and propionic acidemia",
+    "options": [
+      {
+        "text": "Vitamin B12",
+        "isCorrect": true,
+        "rationale": "Correct: Methylmalonyl-CoA mutase requires coenzyme B12 to convert methylmalonyl-CoA to succinyl-CoA; B12 deficiency elevates methylmalonic acid."
+      },
+      {
+        "text": "Biotin",
+        "isCorrect": false,
+        "rationale": "Wrong: Biotin is a cofactor for propionyl-CoA carboxylase (carboxylation), not for the B12-dependent mutase step; biotin deficiency mimics propionyl-CoA carboxylase loss, not the rearrangement step."
+      },
+      {
+        "text": "Folate",
+        "isCorrect": false,
+        "rationale": "Wrong: Folate deficiency affects one-carbon metabolism and homocysteine but does not directly impair methylmalonyl-CoA mutase activity."
+      },
+      {
+        "text": "Vitamin B6",
+        "isCorrect": false,
+        "rationale": "Wrong: B6 is a cofactor for transamination reactions, not for methylmalonyl-CoA mutase; it would not cause methylmalonic acid accumulation."
+      },
+      {
+        "text": "Vitamin C",
+        "isCorrect": false,
+        "rationale": "Wrong: Vitamin C is not involved in methylmalonyl-CoA rearrangement; its deficiency would not mimic this metabolic block."
+      }
+    ]
+  },
+  {
+    "question": "During prolonged fasting, which hepatic enzyme is the rate-limiting step for ketone body synthesis from acetyl-CoA?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the steps of ketogenesis and describe the transport and use of ketones by extrahepatic tissues",
+    "options": [
+      {
+        "text": "HMG-CoA synthase",
+        "isCorrect": true,
+        "rationale": "Correct: HMG-CoA synthase converts acetoacetyl-CoA to HMG-CoA and is the rate-limiting enzyme of hepatic ketogenesis."
+      },
+      {
+        "text": "Thiolase",
+        "isCorrect": false,
+        "rationale": "Wrong: Thiolase condenses two acetyl-CoA to acetoacetyl-CoA but HMG-CoA synthase is the rate-limiting step for ketone synthesis."
+      },
+      {
+        "text": "HMG-CoA lyase",
+        "isCorrect": false,
+        "rationale": "Wrong: HMG-CoA lyase cleaves HMG-CoA to acetoacetate but is downstream of the rate-limiting HMG-CoA synthase step."
+      },
+      {
+        "text": "Beta-hydroxybutyrate dehydrogenase",
+        "isCorrect": false,
+        "rationale": "Wrong: This enzyme interconverts acetoacetate and β-hydroxybutyrate in the cytosol/mitochondria but is not the rate-limiting ketogenesis enzyme."
+      },
+      {
+        "text": "Acetoacetyl-CoA thiolase",
+        "isCorrect": false,
+        "rationale": "Wrong: This is another name for thiolase; it forms acetoacetyl-CoA but does not control the rate-limiting ketogenesis step."
+      }
+    ]
+  },
+  {
+    "question": "A patient with uncontrolled type 1 diabetes presents with hyperglycemia and anion-gap metabolic acidosis. Which immediate therapy addresses the primary metabolic driver of ketone overproduction?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand how hormonal and metabolic changes result in the clinical findings of diabetic ketoacidosis",
+    "options": [
+      {
+        "text": "Intravenous insulin infusion",
+        "isCorrect": true,
+        "rationale": "Correct: Insulin reduces lipolysis (inhibits HSL), decreases free fatty acid supply for hepatic ketogenesis, and corrects hyperglycemia; this targets the primary driver of ketone overproduction."
+      },
+      {
+        "text": "Sodium bicarbonate infusion",
+        "isCorrect": false,
+        "rationale": "Wrong: Bicarbonate may temporize severe acidosis but does not stop lipolysis or ketogenesis; insulin is required to halt ketone production."
+      },
+      {
+        "text": "Intravenous glucose alone",
+        "isCorrect": false,
+        "rationale": "Wrong: Glucose without insulin will not suppress lipolysis in insulin-deficient DKA; insulin is necessary to restore cellular glucose uptake and inhibit HSL."
+      },
+      {
+        "text": "Intravenous potassium replacement",
+        "isCorrect": false,
+        "rationale": "Wrong: Potassium replacement corrects hypokalemia risk during insulin therapy but does not address the hormonal driver of ketogenesis; it is supportive, not primary."
+      },
+      {
+        "text": "Beta-adrenergic blockade",
+        "isCorrect": false,
+        "rationale": "Wrong: Blocking catecholamine effects could reduce lipolysis theoretically but is not an appropriate acute therapy for DKA and would not correct insulin deficiency."
+      }
+    ]
+  },
+  {
+    "question": "Which extrahepatic enzyme is required to activate acetoacetate for use as acetyl-CoA in peripheral tissues but is absent in hepatocytes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the steps of ketogenesis and describe the transport and use of ketones by extrahepatic tissues",
+    "options": [
+      {
+        "text": "Succinyl-CoA:acetoacetate CoA transferase",
+        "isCorrect": true,
+        "rationale": "Correct: Thiophorase (succinyl-CoA:acetoacetate CoA transferase) activates acetoacetate to acetoacetyl-CoA in extrahepatic tissues; liver lacks this enzyme."
+      },
+      {
+        "text": "Acetoacetate decarboxylase",
+        "isCorrect": false,
+        "rationale": "Wrong: Decarboxylase converts acetoacetate to acetone for exhalation, not activation for TCA use; it is not the activating enzyme."
+      },
+      {
+        "text": "Beta-hydroxybutyrate dehydrogenase",
+        "isCorrect": false,
+        "rationale": "Wrong: This enzyme interconverts β-hydroxybutyrate and acetoacetate but does not activate acetoacetate to acetoacetyl-CoA; it is present in many tissues."
+      },
+      {
+        "text": "HMG-CoA lyase",
+        "isCorrect": false,
+        "rationale": "Wrong: HMG-CoA lyase generates acetoacetate in the liver during ketogenesis; it does not activate acetoacetate in peripheral tissues."
+      },
+      {
+        "text": "Acetoacetyl-CoA thiolase",
+        "isCorrect": false,
+        "rationale": "Wrong: Thiolase splits acetoacetyl-CoA into acetyl-CoA but requires acetoacetyl-CoA produced by thiophorase; absence of thiophorase in liver prevents hepatic ketone use."
+      }
+    ]
+  },
+  {
+    "question": "An athlete consumes a high-fat meal and then exercises intensely. Which tissue preferentially increases fatty acid oxidation during prolonged exercise?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the utilization of fatty acids and ketones by various tissues",
+    "options": [
+      {
+        "text": "Skeletal muscle",
+        "isCorrect": true,
+        "rationale": "Correct: Skeletal muscle increases fatty acid oxidation during prolonged exercise and fasting, using FAs as a major energy source."
+      },
+      {
+        "text": "Red blood cells",
+        "isCorrect": false,
+        "rationale": "Wrong: RBCs lack mitochondria and cannot oxidize fatty acids; they rely on glucose/glycolysis."
+      },
+      {
+        "text": "Hepatocytes",
+        "isCorrect": false,
+        "rationale": "Wrong: Liver oxidizes fatty acids and produces ketones but is not the primary consumer of FAs during exercise; it exports ketones instead."
+      },
+      {
+        "text": "Adipocytes",
+        "isCorrect": false,
+        "rationale": "Wrong: Adipocytes release free fatty acids via lipolysis but do not substantially oxidize FAs for systemic ATP during exercise."
+      },
+      {
+        "text": "Brain neurons",
+        "isCorrect": false,
+        "rationale": "Wrong: Brain cannot use fatty acids directly due to blood-brain barrier; it uses ketones during prolonged fasting, not FAs."
+      }
+    ]
+  },
+  {
+    "question": "A patient with CPT-I deficiency is advised to replace long-chain dietary fats with which alternative to improve energy availability?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the pathophysiology and presentation of CPT-I deficiency, MCAD deficiency, and propionic acidemia",
+    "options": [
+      {
+        "text": "Medium-chain triglycerides",
+        "isCorrect": true,
+        "rationale": "Correct: MCTs (medium-chain fatty acids) can diffuse into mitochondria without carnitine transport, bypassing CPT-I defect and providing energy."
+      },
+      {
+        "text": "Very-long-chain triglycerides",
+        "isCorrect": false,
+        "rationale": "Wrong: VLCFAs require carnitine transport and would worsen energy deficit in CPT-I deficiency."
+      },
+      {
+        "text": "Long-chain monounsaturated fats",
+        "isCorrect": false,
+        "rationale": "Wrong: Long-chain fats still require CPT-I for mitochondrial entry; monounsaturation does not bypass CPT-I requirement."
+      },
+      {
+        "text": "High-protein supplements",
+        "isCorrect": false,
+        "rationale": "Wrong: Protein provides gluconeogenic substrates but does not replace the need for oxidizable fatty acids that bypass CPT-I; dietary MCTs are preferred."
+      },
+      {
+        "text": "Short-chain fatty acids",
+        "isCorrect": false,
+        "rationale": "Wrong: While short-chain FAs can diffuse into mitochondria, dietary form is typically as MCTs; pure short-chain fats are not the usual dietary replacement compared to MCTs."
+      }
+    ]
+  },
+  {
+    "question": "Which regulatory kinase phosphorylates ACC-2 and malonyl-CoA decarboxylase to favor fatty acid oxidation during low cellular energy?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process of activation of fatty acids and their transport to the mitochondria",
+    "options": [
+      {
+        "text": "AMP-activated protein kinase",
+        "isCorrect": true,
+        "rationale": "Correct: AMPK phosphorylates ACC-2 (inhibiting it) and activates malonyl-CoA decarboxylase, lowering malonyl-CoA and promoting CPT-I activity and FA oxidation."
+      },
+      {
+        "text": "Protein kinase A",
+        "isCorrect": false,
+        "rationale": "Wrong: PKA phosphorylates HSL to stimulate lipolysis but AMPK is the energy sensor that regulates ACC-2 and MCoADC for FA oxidation."
+      },
+      {
+        "text": "mTOR kinase",
+        "isCorrect": false,
+        "rationale": "Wrong: mTOR promotes anabolic processes and does not phosphorylate ACC-2 to stimulate FA oxidation during low energy."
+      },
+      {
+        "text": "Protein kinase C",
+        "isCorrect": false,
+        "rationale": "Wrong: PKC is involved in various signaling pathways but not the primary regulator of ACC-2 and malonyl-CoA decarboxylase in energy sensing."
+      },
+      {
+        "text": "Glycogen synthase kinase",
+        "isCorrect": false,
+        "rationale": "Wrong: GSK regulates glycogen metabolism and is not the key kinase that modulates ACC-2 and MCoADC to favor FA oxidation."
+      }
+    ]
+  },
+  {
+    "question": "An 18-month-old with vomiting and hypotonia has metabolic acidosis and elevated propionyl-CoA. Which dietary restriction is essential in management to reduce propionyl-CoA production?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the pathophysiology and presentation of CPT-I deficiency, MCAD deficiency, and propionic acidemia",
+    "options": [
+      {
+        "text": "Isoleucine and valine restriction",
+        "isCorrect": false,
+        "rationale": "Wrong: While valine and isoleucine produce propionyl-CoA, the classic mnemonic includes multiple amino acids; restricting only these two is incomplete."
+      },
+      {
+        "text": "Methionine and threonine restriction",
+        "isCorrect": false,
+        "rationale": "Wrong: Methionine and threonine also generate propionyl-CoA, but management requires broader restriction including valine and isoleucine; this option is incomplete."
+      },
+      {
+        "text": "Valine isoleucine methionine threonine restriction",
+        "isCorrect": true,
+        "rationale": "Correct: Propionic acidemia management restricts amino acids that form propionyl-CoA: valine, odd-chain FAs, methionine, isoleucine, and threonine (VOMIT mnemonic)."
+      },
+      {
+        "text": "Leucine lysine tryptophan restriction",
+        "isCorrect": false,
+        "rationale": "Wrong: These amino acids are primarily ketogenic and do not form propionyl-CoA; restricting them would not address propionic acidemia."
+      },
+      {
+        "text": "High-protein unrestricted diet",
+        "isCorrect": false,
+        "rationale": "Wrong: High-protein intake increases substrates that form propionyl-CoA and would worsen propionic acidemia; restriction is required."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best explains why the liver cannot utilize ketone bodies for its own energy needs?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the steps of ketogenesis and describe the transport and use of ketones by extrahepatic tissues",
+    "options": [
+      {
+        "text": "Liver lacks thiophorase enzyme",
+        "isCorrect": true,
+        "rationale": "Correct: Hepatocytes lack succinyl-CoA:acetoacetate CoA transferase (thiophorase), so they cannot activate acetoacetate for oxidation and thus cannot use ketones."
+      },
+      {
+        "text": "Liver cannot export acetoacetate",
+        "isCorrect": false,
+        "rationale": "Wrong: Liver exports ketone bodies; inability to export is not the reason it cannot use them."
+      },
+      {
+        "text": "Liver lacks mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong: Hepatocytes have mitochondria and can oxidize substrates; the specific absence of thiophorase prevents hepatic ketone utilization."
+      },
+      {
+        "text": "Liver cannot form acetyl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong: Liver forms acetyl-CoA during beta-oxidation; inability to form acetyl-CoA is not the reason for lack of ketone use."
+      },
+      {
+        "text": "Liver lacks HMG-CoA synthase",
+        "isCorrect": false,
+        "rationale": "Wrong: Liver expresses HMG-CoA synthase to make ketones; lacking it would prevent ketogenesis, not ketone utilization."
+      }
+    ]
+  },
+  {
+    "question": "A patient with an unsaturated fatty acid containing a cis-Δ3 double bond undergoes beta-oxidation. Which additional enzymatic activity is required to allow continued normal beta-oxidation at that site?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the steps of @-oxidation in all fatty acids and the steps unique to unsaturated fatty acids and odd-chain fatty acids",
+    "options": [
+      {
+        "text": "Enoyl-CoA isomerase",
+        "isCorrect": true,
+        "rationale": "Correct: Cis-Δ3 double bonds must be isomerized to trans-Δ2 by enoyl-CoA isomerase to enter the standard beta-oxidation pathway."
+      },
+      {
+        "text": "2,4-dienoyl-CoA reductase",
+        "isCorrect": false,
+        "rationale": "Wrong: 2,4-dienoyl-CoA reductase handles conjugated double bonds (two double bonds) and requires NADPH; a single cis-Δ3 isomerization uses enoyl-CoA isomerase."
+      },
+      {
+        "text": "Propionyl-CoA carboxylase",
+        "isCorrect": false,
+        "rationale": "Wrong: Propionyl-CoA carboxylase processes odd-chain propionyl-CoA, not cis double bonds in unsaturated FA oxidation."
+      },
+      {
+        "text": "Acyl-CoA dehydrogenase",
+        "isCorrect": false,
+        "rationale": "Wrong: Acyl-CoA dehydrogenase catalyzes the first oxidation step but cannot isomerize cis-Δ3 to trans-Δ2; enoyl-CoA isomerase is required."
+      },
+      {
+        "text": "Beta-hydroxyacyl-CoA dehydrogenase",
+        "isCorrect": false,
+        "rationale": "Wrong: This enzyme oxidizes hydroxyacyl intermediates and does not isomerize double bonds; it cannot resolve a cis-Δ3 double bond."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory pattern is most characteristic of MCAD deficiency during a fasting episode?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the pathophysiology and presentation of CPT-I deficiency, MCAD deficiency, and propionic acidemia",
+    "options": [
+      {
+        "text": "Hypoketotic hypoglycemia with medium-chain acylcarnitines",
+        "isCorrect": true,
+        "rationale": "Correct: MCAD deficiency impairs medium-chain FA oxidation causing decreased ketone production (hypoketotic) and hypoglycemia with accumulation of medium-chain acylcarnitines."
+      },
+      {
+        "text": "Hyperketotic hyperglycemia with long-chain acylcarnitines",
+        "isCorrect": false,
+        "rationale": "Wrong: MCAD causes low ketones and low glucose; hyperketotic hyperglycemia with long-chain acylcarnitines would not fit MCAD."
+      },
+      {
+        "text": "Hypoketotic hypoglycemia with elevated propionyl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong: Elevated propionyl-CoA is seen in propionic acidemia, not MCAD deficiency; MCAD shows medium-chain acylcarnitines instead."
+      },
+      {
+        "text": "Normal ketones with elevated short-chain acylcarnitines",
+        "isCorrect": false,
+        "rationale": "Wrong: MCAD specifically elevates medium-chain species and reduces ketones; normal ketones would not match the disorder."
+      },
+      {
+        "text": "Hyperketotic hypoglycemia with carnitine deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: Carnitine deficiency impairs long-chain FA transport and may reduce ketones; MCAD causes hypoketotic hypoglycemia with medium-chain accumulation, not hyperketosis."
+      }
+    ]
+  },
+  {
+    "question": "A researcher measures ATP yield from complete oxidation of palmitate. Which net ATP value from palmitate oxidation is reported in the lecture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List the steps of @-oxidation in all fatty acids and the steps unique to unsaturated fatty acids and odd-chain fatty acids",
+    "options": [
+      {
+        "text": "129 ATP",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture calculates net ATP yield from palmitate oxidation as 129 ATP after accounting for activation cost and electron transport yields."
+      },
+      {
+        "text": "96 ATP",
+        "isCorrect": false,
+        "rationale": "Wrong: 96 ATP corresponds to oxidation of acetyl-CoA units alone in the lecture table, not the net palmitate yield after all contributions and costs."
+      },
+      {
+        "text": "36 ATP",
+        "isCorrect": false,
+        "rationale": "Wrong: ~36 ATP is the typical yield for one glucose molecule, not palmitate; palmitate yields much more ATP."
+      },
+      {
+        "text": "106 ATP",
+        "isCorrect": false,
+        "rationale": "Wrong: 106 ATP is not the lecture's reported palmitate net yield; the lecture states 129 ATP."
+      },
+      {
+        "text": "80 ATP",
+        "isCorrect": false,
+        "rationale": "Wrong: 80 ATP is not supported by the lecture's palmitate energy calculation; the correct net is 129 ATP."
+      }
+    ]
+  },
+  {
+    "question": "Which statement explains why beta-oxidation rate slows when the electron transport chain is saturated with NADH and FADH2?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe all the various mechanisms of regulation of @-oxidation and ketones",
+    "options": [
+      {
+        "text": "Oxidized NAD+ and FAD are required",
+        "isCorrect": true,
+        "rationale": "Correct: Beta-oxidation requires NAD+ and FAD as electron acceptors; when NADH/FADH2 accumulate and ETC cannot reoxidize them, beta-oxidation slows due to lack of oxidized cofactors."
+      },
+      {
+        "text": "Malonyl-CoA directly accumulates",
+        "isCorrect": false,
+        "rationale": "Wrong: Malonyl-CoA inhibits CPT-I but is linked to FA synthesis status, not directly to ETC saturation with NADH/FADH2."
+      },
+      {
+        "text": "AMPK becomes overactivated",
+        "isCorrect": false,
+        "rationale": "Wrong: AMPK activation promotes FA oxidation by lowering malonyl-CoA; ETC saturation would not cause AMPK overactivation to slow beta-oxidation."
+      },
+      {
+        "text": "HMG-CoA synthase is inhibited",
+        "isCorrect": false,
+        "rationale": "Wrong: HMG-CoA synthase is involved in ketogenesis, not the direct feedback slowing of beta-oxidation due to lack of oxidized cofactors."
+      },
+      {
+        "text": "Carnitine levels fall rapidly",
+        "isCorrect": false,
+        "rationale": "Wrong: Carnitine availability affects transport but ETC saturation primarily limits reoxidation of NADH/FADH2, reducing beta-oxidation flux."
+      }
+    ]
+  },
+  {
+    "question": "A patient with fasting intolerance, hypoketotic hypoglycemia, and hepatomegaly likely has which defect that limits hepatic long-chain fatty acid oxidation and gluconeogenesis during fasting?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the pathophysiology and presentation of CPT-I deficiency, MCAD deficiency, and propionic acidemia",
+    "options": [
+      {
+        "text": "Carnitine palmitoyltransferase I deficiency",
+        "isCorrect": true,
+        "rationale": "Correct: CPT-I deficiency limits hepatic import of long-chain FAs, reducing beta-oxidation and ketogenesis and impairing gluconeogenesis during fasting, causing hypoketotic hypoglycemia and liver dysfunction."
+      },
+      {
+        "text": "Medium-chain acyl-CoA dehydrogenase deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: MCAD affects medium-chain FA oxidation and presents with hypoketotic hypoglycemia but CPT-I deficiency specifically limits long-chain FA import and hepatic gluconeogenesis."
+      },
+      {
+        "text": "Propionyl-CoA carboxylase deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: Propionic acidemia causes metabolic acidosis and elevated propionyl-CoA, not primarily fasting intolerance with impaired long-chain FA import."
+      },
+      {
+        "text": "Carnitine transporter deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: Systemic carnitine deficiency impairs FA transport broadly and can mimic CPT defects, but the lecture specifically describes CPT-I deficiency causing hepatic fasting intolerance."
+      },
+      {
+        "text": "Acyl-CoA dehydrogenase very-long-chain deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: VLCAD affects very-long-chain FA oxidation and has different clinical features; CPT-I deficiency best explains impaired hepatic long-chain FA oxidation and gluconeogenesis."
+      }
+    ]
+  },
+  {
+    "question": "Which metabolic fate describes acetone produced during ketogenesis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the steps of ketogenesis and describe the transport and use of ketones by extrahepatic tissues",
+    "options": [
+      {
+        "text": "Exhaled by lungs",
+        "isCorrect": true,
+        "rationale": "Correct: Acetone is a decarboxylation product of acetoacetate that is volatile and is exhaled by the lungs rather than used for energy."
+      },
+      {
+        "text": "Converted to acetoacetyl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong: Acetoacetate can be activated to acetoacetyl-CoA in tissues, but acetone is not converted back to acetoacetyl-CoA for energy in the lecture's pathway."
+      },
+      {
+        "text": "Oxidized to acetyl-CoA in liver",
+        "isCorrect": false,
+        "rationale": "Wrong: Liver lacks thiophorase and does not oxidize ketones; acetone is not oxidized to acetyl-CoA in the liver per lecture content."
+      },
+      {
+        "text": "Stored as triglyceride",
+        "isCorrect": false,
+        "rationale": "Wrong: Acetone is volatile and exhaled; it is not stored as triglyceride."
+      },
+      {
+        "text": "Converted to beta-hydroxybutyrate",
+        "isCorrect": false,
+        "rationale": "Wrong: Beta-hydroxybutyrate interconverts with acetoacetate via dehydrogenase, but acetone is produced by nonenzymatic decarboxylation and is not converted back to β-hydroxybutyrate in the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which tissues cannot use fatty acids directly for ATP production according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the utilization of fatty acids and ketones by various tissues",
+    "options": [
+      {
+        "text": "Brain and red blood cells",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states brain cannot use fatty acids (blood-brain barrier) and RBCs lack mitochondria, so neither can oxidize fatty acids directly."
+      },
+      {
+        "text": "Skeletal muscle and liver",
+        "isCorrect": false,
+        "rationale": "Wrong: Skeletal muscle and liver can metabolize fatty acids for energy per the lecture."
+      },
+      {
+        "text": "Cardiac muscle and kidney",
+        "isCorrect": false,
+        "rationale": "Wrong: Cardiac muscle and many tissues including kidney can use fatty acids; they are not excluded from FA utilization."
+      },
+      {
+        "text": "Adipose tissue and pancreas",
+        "isCorrect": false,
+        "rationale": "Wrong: Adipose tissue stores and releases fatty acids; pancreas is not listed as unable to use FAs in the lecture."
+      },
+      {
+        "text": "Hepatocytes and erythrocytes",
+        "isCorrect": false,
+        "rationale": "Wrong: Hepatocytes can oxidize fatty acids and produce ketones; erythrocytes (RBCs) cannot, but pairing hepatocytes with RBCs is incorrect."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme carboxylates acetyl-CoA to form malonyl-CoA and thereby links fatty acid synthesis to CPT-I regulation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process of activation of fatty acids and their transport to the mitochondria",
+    "options": [
+      {
+        "text": "Acetyl-CoA carboxylase-2",
+        "isCorrect": true,
+        "rationale": "Correct: ACC-2 carboxylates acetyl-CoA to malonyl-CoA; malonyl-CoA inhibits CPT-I, linking FA synthesis to mitochondrial FA import regulation."
+      },
+      {
+        "text": "Malonyl-CoA decarboxylase",
+        "isCorrect": false,
+        "rationale": "Wrong: MCoADC decarboxylates malonyl-CoA to acetyl-CoA, reducing malonyl-CoA levels and relieving CPT-I inhibition."
+      },
+      {
+        "text": "HMG-CoA synthase",
+        "isCorrect": false,
+        "rationale": "Wrong: HMG-CoA synthase is involved in ketogenesis, not malonyl-CoA production for FA synthesis."
+      },
+      {
+        "text": "Fatty acyl-CoA synthetase",
+        "isCorrect": false,
+        "rationale": "Wrong: This enzyme activates fatty acids to acyl-CoA, not carboxylate acetyl-CoA to malonyl-CoA."
+      },
+      {
+        "text": "Propionyl-CoA carboxylase",
+        "isCorrect": false,
+        "rationale": "Wrong: Propionyl-CoA carboxylase carboxylates propionyl-CoA in odd-chain FA metabolism, not acetyl-CoA to malonyl-CoA."
+      }
+    ]
+  },
+  {
+    "question": "A patient with prolonged fasting shows rising blood β-hydroxybutyrate. Which hepatic condition favors diversion of acetyl-CoA into ketogenesis rather than the TCA cycle?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe all the various mechanisms of regulation of @-oxidation and ketones",
+    "options": [
+      {
+        "text": "High NADH to NAD+ ratio",
+        "isCorrect": true,
+        "rationale": "Correct: Elevated NADH/FADH2 from β-oxidation diverts acetyl-CoA away from the TCA cycle toward ketogenesis because oxidized cofactors are limited."
+      },
+      {
+        "text": "Low malonyl-CoA concentration",
+        "isCorrect": false,
+        "rationale": "Wrong: Low malonyl-CoA activates CPT-I and increases FA import but does not by itself divert acetyl-CoA from TCA to ketogenesis; high NADH is the direct metabolic signal."
+      },
+      {
+        "text": "Increased HMG-CoA lyase activity",
+        "isCorrect": false,
+        "rationale": "Wrong: HMG-CoA lyase acts downstream in ketogenesis; its increased activity alone does not explain diversion of acetyl-CoA from TCA without high reducing equivalents."
+      },
+      {
+        "text": "Decreased AMPK activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Decreased AMPK would favor anabolic processes and not promote ketogenesis; AMPK activation actually promotes FA oxidation."
+      },
+      {
+        "text": "Elevated succinyl-CoA levels",
+        "isCorrect": false,
+        "rationale": "Wrong: Elevated succinyl-CoA would feed the TCA cycle and not favor diversion to ketogenesis; the lecture emphasizes NADH/FADH2 accumulation as the diverting factor."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme deficiency causes accumulation of methylmalonic acid when vitamin B12 is lacking, as described in odd-chain fatty acid metabolism?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the steps of @-oxidation in all fatty acids and the steps unique to unsaturated fatty acids and odd-chain fatty acids",
+    "options": [
+      {
+        "text": "Methylmalonyl-CoA mutase",
+        "isCorrect": true,
+        "rationale": "Correct: Methylmalonyl-CoA mutase requires coenzyme B12 to convert methylmalonyl-CoA to succinyl-CoA; B12 deficiency elevates methylmalonic acid."
+      },
+      {
+        "text": "Propionyl-CoA carboxylase",
+        "isCorrect": false,
+        "rationale": "Wrong: Propionyl-CoA carboxylase (biotin-dependent) forms methylmalonyl-CoA from propionyl-CoA; deficiency elevates propionyl-CoA rather than methylmalonic acid."
+      },
+      {
+        "text": "Methylmalonyl-CoA epimerase",
+        "isCorrect": false,
+        "rationale": "Wrong: The epimerase interconverts D- and L-methylmalonyl-CoA but the B12-dependent mutase is the step whose deficiency raises methylmalonic acid."
+      },
+      {
+        "text": "Succinyl-CoA synthetase",
+        "isCorrect": false,
+        "rationale": "Wrong: Succinyl-CoA synthetase acts later in the TCA cycle and is not the B12-dependent enzyme converting methylmalonyl-CoA."
+      },
+      {
+        "text": "Acyl-CoA dehydrogenase",
+        "isCorrect": false,
+        "rationale": "Wrong: Acyl-CoA dehydrogenases act in beta-oxidation and are not involved in methylmalonyl-CoA rearrangement."
+      }
+    ]
+  },
+  {
+    "question": "A patient with fasting hypoglycemia and low ketones is found to have elevated long-chain acylcarnitines and low carnitine levels. Which defect best matches these findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the process of activation of fatty acids and their transport to the mitochondria",
+    "options": [
+      {
+        "text": "Primary carnitine deficiency",
+        "isCorrect": true,
+        "rationale": "Correct: Primary carnitine deficiency impairs transport of long-chain acyl groups into mitochondria, causing accumulation of acylcarnitines, hypoketotic hypoglycemia, and low free carnitine."
+      },
+      {
+        "text": "CPT-II deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: CPT-II deficiency causes impaired matrix regeneration of acyl-CoA and can raise acylcarnitines, but low free carnitine is more characteristic of systemic carnitine deficiency."
+      },
+      {
+        "text": "MCAD deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: MCAD elevates medium-chain acylcarnitines rather than long-chain species and does not typically present with low total carnitine."
+      },
+      {
+        "text": "CPT-I deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: CPT-I deficiency limits formation of acyl-carnitine and often presents with low ketones and fasting intolerance, but accumulation pattern and low carnitine better fit primary carnitine deficiency."
+      },
+      {
+        "text": "Acyl-CoA dehydrogenase very-long-chain deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: VLCAD deficiency affects very-long-chain acylcarnitines and would not necessarily cause low free carnitine levels as the primary finding."
+      }
+    ]
+  },
+  {
+    "question": "Which mnemonic from the lecture lists amino acids and substrates that produce propionyl-CoA and should be avoided in propionic acidemia?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the pathophysiology and presentation of CPT-I deficiency, MCAD deficiency, and propionic acidemia",
+    "options": [
+      {
+        "text": "VOMIT",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture provides the mnemonic VOMIT (Valine, Odd-chain FAs, Methionine, Isoleucine, Threonine) for substrates that form propionyl-CoA."
+      },
+      {
+        "text": "KETOGEN",
+        "isCorrect": false,
+        "rationale": "Wrong: KETOGEN is not the lecture mnemonic for propionyl-CoA–forming substrates; VOMIT is the correct mnemonic."
+      },
+      {
+        "text": "SADFACE",
+        "isCorrect": false,
+        "rationale": "Wrong: SADFACE is not mentioned in the lecture and is unrelated to propionyl-CoA substrate listing."
+      },
+      {
+        "text": "MCT",
+        "isCorrect": false,
+        "rationale": "Wrong: MCT refers to medium-chain triglycerides and is not the mnemonic for propionyl-CoA–forming amino acids/substrates."
+      },
+      {
+        "text": "ABCDEF",
+        "isCorrect": false,
+        "rationale": "Wrong: ABCDEF is not the lecture mnemonic for propionic acidemia substrates; VOMIT is specified."
+      }
+    ]
+  },
+  {
+    "question": "Which step in odd-chain fatty acid catabolism converts propionyl-CoA to methylmalonyl-CoA and requires which cofactor?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the steps of @-oxidation in all fatty acids and the steps unique to unsaturated fatty acids and odd-chain fatty acids",
+    "options": [
+      {
+        "text": "Propionyl-CoA carboxylase - Biotin",
+        "isCorrect": true,
+        "rationale": "Correct: Propionyl-CoA carboxylase carboxylates propionyl-CoA to methylmalonyl-CoA and requires biotin as a cofactor."
+      },
+      {
+        "text": "Methylmalonyl-CoA mutase - Biotin",
+        "isCorrect": false,
+        "rationale": "Wrong: The mutase converts methylmalonyl-CoA to succinyl-CoA and requires B12, not biotin; the carboxylase step uses biotin."
+      },
+      {
+        "text": "Propionyl-CoA carboxylase - B12",
+        "isCorrect": false,
+        "rationale": "Wrong: Propionyl-CoA carboxylase requires biotin; B12 is required for the subsequent mutase step."
+      },
+      {
+        "text": "Methylmalonyl-CoA epimerase - B12",
+        "isCorrect": false,
+        "rationale": "Wrong: The epimerase interconverts stereoisomers and does not require B12; the mutase requires B12."
+      },
+      {
+        "text": "Succinyl-CoA synthetase - Biotin",
+        "isCorrect": false,
+        "rationale": "Wrong: Succinyl-CoA synthetase is a TCA enzyme and does not carboxylate propionyl-CoA; biotin is not its cofactor."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical feature is most directly explained by increased catecholamine release during stress in uncontrolled diabetes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand how hormonal and metabolic changes result in the clinical findings of diabetic ketoacidosis",
+    "options": [
+      {
+        "text": "Increased lipolysis and ketogenesis",
+        "isCorrect": true,
+        "rationale": "Correct: Catecholamines raise glucagon and lower insulin, activating HSL and increasing lipolysis, supplying FFAs for hepatic ketogenesis in DKA."
+      },
+      {
+        "text": "Decreased gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong: Catecholamines and glucagon increase gluconeogenesis; decreased gluconeogenesis would not explain DKA features."
+      },
+      {
+        "text": "Reduced osmotic diuresis",
+        "isCorrect": false,
+        "rationale": "Wrong: Osmotic diuresis is increased by hyperglycemia in DKA; catecholamines do not reduce it."
+      },
+      {
+        "text": "Lowered free fatty acid release",
+        "isCorrect": false,
+        "rationale": "Wrong: Catecholamines increase, not lower, free fatty acid release via HSL activation."
+      },
+      {
+        "text": "Suppressed ketone production",
+        "isCorrect": false,
+        "rationale": "Wrong: Catecholamines promote ketone production by increasing lipolysis and hepatic FA oxidation; suppression is incorrect."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the fate of β-hydroxybutyrate in extrahepatic tissues?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the steps of ketogenesis and describe the transport and use of ketones by extrahepatic tissues",
+    "options": [
+      {
+        "text": "Oxidized to acetoacetate then to acetyl-CoA",
+        "isCorrect": true,
+        "rationale": "Correct: Extrahepatic tissues oxidize β-hydroxybutyrate to acetoacetate, which is activated by thiophorase to acetoacetyl-CoA and then split to acetyl-CoA for the TCA cycle."
+      },
+      {
+        "text": "Converted to acetone and exhaled",
+        "isCorrect": false,
+        "rationale": "Wrong: β-hydroxybutyrate is not directly converted to acetone for exhalation; acetoacetate can decarboxylate to acetone."
+      },
+      {
+        "text": "Used directly by liver mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong: Liver lacks thiophorase and cannot use ketones; extrahepatic tissues use β-hydroxybutyrate."
+      },
+      {
+        "text": "Stored as glycogen in muscle",
+        "isCorrect": false,
+        "rationale": "Wrong: Ketone bodies are oxidized for energy, not stored as glycogen."
+      },
+      {
+        "text": "Converted to propionyl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong: Ketone metabolism yields acetyl-CoA, not propionyl-CoA; conversion to propionyl-CoA is unrelated."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme family catalyzes the first oxidation step in each beta-oxidation spiral and has isoforms for different chain lengths?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the steps of @-oxidation in all fatty acids and the steps unique to unsaturated fatty acids and odd-chain fatty acids",
+    "options": [
+      {
+        "text": "Acyl-CoA dehydrogenases",
+        "isCorrect": true,
+        "rationale": "Correct: Acyl-CoA dehydrogenases (VLCAD, LCAD, MCAD, SCAD) catalyze the first FAD-dependent oxidation step with isoforms for chain-length specificity."
+      },
+      {
+        "text": "Enoyl-CoA hydratases",
+        "isCorrect": false,
+        "rationale": "Wrong: Enoyl-CoA hydratase catalyzes the hydration step (second) and does not have the chain-length isoform pattern described."
+      },
+      {
+        "text": "Beta-hydroxyacyl-CoA dehydrogenases",
+        "isCorrect": false,
+        "rationale": "Wrong: These enzymes catalyze the third step (NAD+-dependent oxidation) and are not the chain-length specific dehydrogenases referenced."
+      },
+      {
+        "text": "Acyl-CoA synthetases",
+        "isCorrect": false,
+        "rationale": "Wrong: Acyl-CoA synthetases activate fatty acids in the cytosol and are not the mitochondrial chain-length dehydrogenases."
+      },
+      {
+        "text": "Thiolases",
+        "isCorrect": false,
+        "rationale": "Wrong: Thiolases perform the thiolytic cleavage (fourth step) and are not the chain-length specific first-step dehydrogenases."
+      }
+    ]
+  },
+  {
+    "question": "A patient with prolonged fasting shows rising blood ketones after 48 hours. Which brain fuel shift described in the lecture explains this adaptation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the utilization of fatty acids and ketones by various tissues",
+    "options": [
+      {
+        "text": "Brain uses ketone bodies preferentially",
+        "isCorrect": true,
+        "rationale": "Correct: After ~2-3 days of starvation, the brain shifts to using ketone bodies preferentially because fatty acids cannot cross the blood-brain barrier."
+      },
+      {
+        "text": "Brain increases fatty acid oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong: Brain cannot use fatty acids directly due to the blood-brain barrier; it uses ketones instead during starvation."
+      },
+      {
+        "text": "Brain relies solely on gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong: Gluconeogenesis supplies some glucose but the brain shifts to ketones for major energy after prolonged fasting."
+      },
+      {
+        "text": "Brain converts ketones to glucose",
+        "isCorrect": false,
+        "rationale": "Wrong: Brain oxidizes ketones to acetyl-CoA for the TCA cycle; it does not convert ketones back to glucose."
+      },
+      {
+        "text": "Brain increases lactate utilization",
+        "isCorrect": false,
+        "rationale": "Wrong: While lactate can be used by brain under some conditions, the lecture emphasizes ketone utilization during prolonged fasting."
+      }
+    ]
+  },
+  {
+    "question": "Which therapeutic dietary change is recommended for MCAD deficiency to prevent metabolic decompensation during fasting?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the pathophysiology and presentation of CPT-I deficiency, MCAD deficiency, and propionic acidemia",
+    "options": [
+      {
+        "text": "Avoid fasting and provide frequent carbohydrates",
+        "isCorrect": true,
+        "rationale": "Correct: MCAD management includes avoiding fasting and ensuring carbohydrate intake to prevent reliance on impaired medium-chain FA oxidation and hypoketotic hypoglycemia."
+      },
+      {
+        "text": "High-fat low-carbohydrate diet",
+        "isCorrect": false,
+        "rationale": "Wrong: High-fat diets increase reliance on FA oxidation and would worsen MCAD deficiency; the lecture recommends low-fat, high-carbohydrate approaches."
+      },
+      {
+        "text": "Restrict medium-chain triglycerides",
+        "isCorrect": false,
+        "rationale": "Wrong: MCTs are oxidized via medium-chain pathways; restricting them is not the primary management—avoiding fasting is key."
+      },
+      {
+        "text": "Supplement with carnitine only",
+        "isCorrect": false,
+        "rationale": "Wrong: Carnitine supplementation may help some disorders but the lecture emphasizes newborn screening, avoiding fasting, and dietary carbohydrate rather than carnitine alone."
+      },
+      {
+        "text": "High-protein low-fat diet",
+        "isCorrect": false,
+        "rationale": "Wrong: High-protein intake is not the mainstay for MCAD; the lecture suggests low-fat, high-carbohydrate diets and fasting avoidance."
+      }
+    ]
+  },
+  {
+    "question": "Which biochemical change directly increases CPT-I activity during fasting according to the lecture's regulatory pathway?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process of activation of fatty acids and their transport to the mitochondria",
+    "options": [
+      {
+        "text": "Decreased malonyl-CoA levels",
+        "isCorrect": true,
+        "rationale": "Correct: Lower malonyl-CoA relieves inhibition of CPT-I, increasing long-chain FA transport into mitochondria during fasting."
+      },
+      {
+        "text": "Increased acetyl-CoA carboxylase activity",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased ACC activity raises malonyl-CoA and would inhibit CPT-I; fasting decreases ACC activity."
+      },
+      {
+        "text": "Elevated insulin signaling",
+        "isCorrect": false,
+        "rationale": "Wrong: Insulin promotes ACC activity and malonyl-CoA production, which inhibits CPT-I; fasting lowers insulin to activate CPT-I."
+      },
+      {
+        "text": "Increased malonyl-CoA decarboxylase inhibition",
+        "isCorrect": false,
+        "rationale": "Wrong: Inhibition of MCoADC would raise malonyl-CoA and inhibit CPT-I; activation of MCoADC lowers malonyl-CoA to increase CPT-I activity."
+      },
+      {
+        "text": "Decreased AMPK activation",
+        "isCorrect": false,
+        "rationale": "Wrong: Decreased AMPK would favor ACC activity and malonyl-CoA accumulation, inhibiting CPT-I; fasting activates AMPK to promote CPT-I activity."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical management step is emphasized in the lecture as immediate treatment for diabetic ketoacidosis to correct volume depletion and hyperglycemia?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand how hormonal and metabolic changes result in the clinical findings of diabetic ketoacidosis",
+    "options": [
+      {
+        "text": "Intravenous fluids and insulin",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists insulin and fluid administration as primary DKA treatments to correct hyperglycemia, volume depletion, and halt ketogenesis."
+      },
+      {
+        "text": "Immediate dialysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Dialysis is not first-line for typical DKA; fluids and insulin are initial therapies unless refractory or with severe complications."
+      },
+      {
+        "text": "Oral bicarbonate and glucose",
+        "isCorrect": false,
+        "rationale": "Wrong: Oral bicarbonate is not standard acute therapy and glucose without insulin will not stop ketone production; IV insulin and fluids are required."
+      },
+      {
+        "text": "Beta-blocker administration",
+        "isCorrect": false,
+        "rationale": "Wrong: Beta-blockers are not indicated to treat DKA and could mask hypoglycemia; they do not correct volume depletion or ketogenesis."
+      },
+      {
+        "text": "High-dose corticosteroids",
+        "isCorrect": false,
+        "rationale": "Wrong: Corticosteroids worsen hyperglycemia and are not part of acute DKA management; they would exacerbate the metabolic disturbance."
+      }
+    ]
+  },
+  {
+    "question": "Which metabolic product accumulates when odd-chain fatty acids are fully beta-oxidized and the final three-carbon fragment remains?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the steps of @-oxidation in all fatty acids and the steps unique to unsaturated fatty acids and odd-chain fatty acids",
+    "options": [
+      {
+        "text": "Propionyl-CoA",
+        "isCorrect": true,
+        "rationale": "Correct: Beta-oxidation of odd-chain fatty acids yields a final three-carbon propionyl-CoA, which is then converted to succinyl-CoA via carboxylation and rearrangement."
+      },
+      {
+        "text": "Acetyl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong: Even-chain beta-oxidation yields acetyl-CoA two carbons at a time; odd-chain oxidation leaves propionyl-CoA as the terminal fragment."
+      },
+      {
+        "text": "Succinyl-CoA directly",
+        "isCorrect": false,
+        "rationale": "Wrong: Propionyl-CoA is converted to methylmalonyl-CoA and then to succinyl-CoA; succinyl-CoA is not the immediate product of odd-chain cleavage."
+      },
+      {
+        "text": "Methylmalonic acid",
+        "isCorrect": false,
+        "rationale": "Wrong: Methylmalonic acid may accumulate if methylmalonyl-CoA mutase or B12 is deficient, but the direct product of odd-chain beta-oxidation is propionyl-CoA."
+      },
+      {
+        "text": "Butyryl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong: Butyryl-CoA is a four-carbon acyl-CoA intermediate from even-chain oxidation, not the three-carbon product of odd-chain FA oxidation."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory finding in DKA directly results from osmotic diuresis caused by hyperglycemia?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand how hormonal and metabolic changes result in the clinical findings of diabetic ketoacidosis",
+    "options": [
+      {
+        "text": "Volume depletion and polyuria",
+        "isCorrect": true,
+        "rationale": "Correct: Hyperglycemia causes osmotic diuresis leading to polyuria and volume depletion, as described in the lecture's clinical findings for DKA."
+      },
+      {
+        "text": "Elevated anion gap metabolic alkalosis",
+        "isCorrect": false,
+        "rationale": "Wrong: DKA causes anion-gap metabolic acidosis, not alkalosis; osmotic diuresis contributes to volume loss but not alkalosis."
+      },
+      {
+        "text": "Hypoglycemia with ketonuria",
+        "isCorrect": false,
+        "rationale": "Wrong: DKA presents with hyperglycemia and ketonuria; hypoglycemia would not cause osmotic diuresis in this context."
+      },
+      {
+        "text": "Decreased serum sodium without volume change",
+        "isCorrect": false,
+        "rationale": "Wrong: Osmotic diuresis causes volume depletion and can alter sodium concentration, but the primary clinical effect is volume loss and polyuria."
+      },
+      {
+        "text": "Increased urine specific gravity without polyuria",
+        "isCorrect": false,
+        "rationale": "Wrong: Osmotic diuresis typically causes polyuria and decreased urine osmolality relative to solute load; increased specific gravity without polyuria is inconsistent."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme converts fatty acyl-CoA to fatty acyl-carnitine on the cytosolic face of the outer mitochondrial membrane?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the process of activation of fatty acids and their transport to the mitochondria",
+    "options": [
+      {
+        "text": "Carnitine palmitoyltransferase I",
+        "isCorrect": true,
+        "rationale": "Correct: CPT-I on the outer mitochondrial membrane converts fatty acyl-CoA to acyl-carnitine for transport into the mitochondrion."
+      },
+      {
+        "text": "Carnitine palmitoyltransferase II",
+        "isCorrect": false,
+        "rationale": "Wrong: CPT-II is on the inner mitochondrial membrane/matrix side and regenerates fatty acyl-CoA from acyl-carnitine inside the matrix."
+      },
+      {
+        "text": "Carnitine acyl-translocase",
+        "isCorrect": false,
+        "rationale": "Wrong: The translocase exchanges acyl-carnitine across the inner membrane but does not catalyze the acyl transfer reaction on the cytosolic face."
+      },
+      {
+        "text": "Fatty acyl-CoA synthetase",
+        "isCorrect": false,
+        "rationale": "Wrong: This enzyme activates free fatty acids to fatty acyl-CoA in the cytosol but does not form acyl-carnitine."
+      },
+      {
+        "text": "Acyl-CoA dehydrogenase",
+        "isCorrect": false,
+        "rationale": "Wrong: Acyl-CoA dehydrogenase catalyzes the first oxidation step in beta-oxidation inside mitochondria, not the cytosolic acyl-carnitine formation."
+      }
+    ]
+  },
+  {
+    "question": "Which metabolic adaptation increases hepatic HMG-CoA synthase expression during prolonged fasting, promoting ketone production?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe all the various mechanisms of regulation of @-oxidation and ketones",
+    "options": [
+      {
+        "text": "Sustained high fatty acid oxidation",
+        "isCorrect": true,
+        "rationale": "Correct: Continued fasting increases FA oxidation and NADH/FADH2, and the lecture notes that prolonged fasting increases HMG-CoA synthase synthesis, promoting ketogenesis."
+      },
+      {
+        "text": "Acute insulin bolus",
+        "isCorrect": false,
+        "rationale": "Wrong: Insulin suppresses lipolysis and ketogenesis; an acute insulin bolus would decrease HMG-CoA synthase expression and ketone production."
+      },
+      {
+        "text": "Short-term carbohydrate feeding",
+        "isCorrect": false,
+        "rationale": "Wrong: Carbohydrate feeding raises insulin and lowers ketogenesis; it would not increase HMG-CoA synthase expression."
+      },
+      {
+        "text": "Inhibition of beta-oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong: Inhibiting beta-oxidation reduces acetyl-CoA supply and would not induce HMG-CoA synthase; increased FA oxidation induces it."
+      },
+      {
+        "text": "Acute activation of ACC-2",
+        "isCorrect": false,
+        "rationale": "Wrong: ACC-2 activation raises malonyl-CoA and inhibits CPT-I, reducing FA oxidation and ketogenesis; it would not increase HMG-CoA synthase."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why red blood cells cannot use fatty acids for energy?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the utilization of fatty acids and ketones by various tissues",
+    "options": [
+      {
+        "text": "Lack mitochondria",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states RBCs cannot use fatty acids because they lack mitochondria, which are required for beta-oxidation and the TCA cycle."
+      },
+      {
+        "text": "Lack fatty acid transporters",
+        "isCorrect": false,
+        "rationale": "Wrong: RBCs may have membrane transporters but the key limitation is absence of mitochondria, not transporters."
+      },
+      {
+        "text": "High malonyl-CoA levels",
+        "isCorrect": false,
+        "rationale": "Wrong: Malonyl-CoA inhibits CPT-I in mitochondria; RBCs lack mitochondria so malonyl-CoA levels are not the primary reason they cannot oxidize FAs."
+      },
+      {
+        "text": "Absence of carnitine",
+        "isCorrect": false,
+        "rationale": "Wrong: Carnitine is required for long-chain FA transport into mitochondria, but RBCs lack mitochondria entirely, making carnitine irrelevant."
+      },
+      {
+        "text": "Inability to form acetyl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong: RBCs cannot form acetyl-CoA via mitochondrial beta-oxidation because they lack mitochondria; the specific reason is mitochondrial absence."
+      }
+    ]
+  }
+]
