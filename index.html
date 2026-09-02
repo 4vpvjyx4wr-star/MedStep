@@ -8769,15 +8769,51 @@ async function assertGitHubWriteAccess(token) {
   );
 }
 
+function githubSleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+let githubWriteChain = Promise.resolve();
+function withGitHubWriteLock(fn) {
+  const run = githubWriteChain.then(fn, fn);
+  githubWriteChain = run.then(() => undefined, () => undefined);
+  return run;
+}
+
+function isGitHubConflictStatus(status, detail) {
+  if (status === 409) return true;
+  if (status === 422 && /sha|conflict|does not match|is at/i.test(String(detail || ''))) return true;
+  return false;
+}
+
+function isRetryableGitHubWriteError(err) {
+  const msg = ((err && err.message) || String(err)).toLowerCase();
+  if (/\(401\)|\(403\)/.test(msg)) return false;
+  return (
+    /\(409\)|\(422\)/.test(msg) ||
+    msg.includes('concurrent update') ||
+    msg.includes('does not match') ||
+    (msg.includes('sha') && (msg.includes('conflict') || msg.includes('match'))) ||
+    msg.includes('failed to fetch') ||
+    msg.includes('networkerror') ||
+    msg.includes('load failed')
+  );
+}
+
+const GITHUB_WRITE_MAX_ATTEMPTS = 12;
+
+async function githubContentsGet(url, token) {
+  const opts = { headers: githubAuthHeaders(token), cache: 'no-store' };
+  let res = await fetch(url, opts);
+  if (res.status === 401 && token) {
+    res = await fetch(url, { headers: githubAuthHeaders(null), cache: 'no-store' });
+  }
+  return res;
+}
+
 async function getGitHubSha(path, token, branch) {
   const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${path}?ref=${branch}`;
-  let res = await fetch(url, { headers: githubAuthHeaders(token) });
-  // Invalid tokens make public-repo GETs return 401. Fall back to anonymous
-  // so new-file uploads can still discover "file missing" (sha=null).
-  // Do NOT treat 403 the same — that usually means a scope/permission problem.
-  if (res.status === 401 && token) {
-    res = await fetch(url, { headers: githubAuthHeaders(null) });
-  }
+  const res = await githubContentsGet(url, token);
   if (res.status === 404) return null;
   if (!res.ok) {
     const text = await res.text();
@@ -8790,10 +8826,7 @@ async function getGitHubSha(path, token, branch) {
 async function detectWritableBranch(token) {
   for (const branch of GITHUB_BRANCH_FALLBACKS) {
     const probeUrl = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/quizzes/manifest.json?ref=${branch}`;
-    let res = await fetch(probeUrl, { headers: githubAuthHeaders(token) });
-    if (res.status === 401 && token) {
-      res = await fetch(probeUrl, { headers: githubAuthHeaders(null) });
-    }
+    const res = await githubContentsGet(probeUrl, token);
     if (res.ok) return branch;
   }
   return GITHUB_BRANCH_FALLBACKS[0] || 'main';
@@ -8847,26 +8880,26 @@ async function deletePremadeQuizOnBranch(file, token, branch) {
   if (!Array.isArray(latest) || !latest.length) {
     return { branch, deletedFile, removedFromManifest: false, touched: deletedFile };
   }
-  const filtered = manifestWithoutQuiz(latest, file);
-  const removedFromManifest = filtered.length !== latest.length;
-  if (removedFromManifest) {
-    await upsertGitHubFile(
-      'quizzes/manifest.json',
-      JSON.stringify(applyClassLectureOrder(filtered), null, 2),
-      `Remove ${file} from manifest`,
-      token,
-      branch
-    );
+  const alreadyGone = manifestWithoutQuiz(latest, file).length === latest.length;
+  if (alreadyGone) {
+    return { branch, deletedFile, removedFromManifest: false, touched: deletedFile };
   }
-  return { branch, deletedFile, removedFromManifest, touched: deletedFile || removedFromManifest };
+  await upsertGitHubFile(
+    'quizzes/manifest.json',
+    async () => {
+      const current = await fetchManifestFromGitHub(token, branch);
+      return JSON.stringify(applyClassLectureOrder(manifestWithoutQuiz(current, file)), null, 2);
+    },
+    `Remove ${file} from manifest`,
+    token,
+    branch
+  );
+  return { branch, deletedFile, removedFromManifest: true, touched: true };
 }
 
 async function fetchManifestFromGitHub(token, branch) {
   const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/quizzes/manifest.json?ref=${branch}`;
-  let res = await fetch(url, { headers: githubAuthHeaders(token) });
-  if (res.status === 401 && token) {
-    res = await fetch(url, { headers: githubAuthHeaders(null) });
-  }
+  const res = await githubContentsGet(url, token);
   if (res.status === 404) return [];
   if (!res.ok) {
     const text = await res.text();
@@ -8904,52 +8937,78 @@ async function buildManifestForUpload(token, branch) {
   return JSON.stringify(applyClassLectureOrder(merged), null, 2);
 }
 
-async function upsertGitHubFile(path, content, commitMessage, token, branch) {
-  const sha = await getGitHubSha(path, token, branch);
+async function upsertGitHubFile(path, content, commitMessage, token, branch, maxAttempts = GITHUB_WRITE_MAX_ATTEMPTS) {
   const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${path}`;
-  const body = {
-    message: commitMessage,
-    content: base64EncodeUnicode(content),
-    branch
-  };
-  if (sha) body.sha = sha;
-  const res = await fetch(url, {
-    method: 'PUT',
-    headers: {
-      ...githubAuthHeaders(token),
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(body)
-  });
-  if (!res.ok) {
+  const getContent = typeof content === 'function' ? content : async () => content;
+  let lastStatus = 0;
+  let lastDetail = '';
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    const payload = await getContent();
+    const sha = await getGitHubSha(path, token, branch);
+    const body = {
+      message: commitMessage,
+      content: base64EncodeUnicode(payload),
+      branch
+    };
+    if (sha) body.sha = sha;
+    const res = await fetch(url, {
+      method: 'PUT',
+      headers: {
+        ...githubAuthHeaders(token),
+        'Content-Type': 'application/json',
+        'Cache-Control': 'no-cache'
+      },
+      cache: 'no-store',
+      body: JSON.stringify(body)
+    });
+    if (res.ok) return;
     let detail = '';
     try {
       const json = await res.json();
       detail = json?.message || JSON.stringify(json);
     } catch(e) {
       detail = await res.text();
+    }
+    lastStatus = res.status;
+    lastDetail = detail;
+    if (isGitHubConflictStatus(res.status, detail) && attempt < maxAttempts) {
+      if (attempt === 1 || attempt % 3 === 0) {
+        showToast('⏳ GitHub still updating — retrying automatically…');
+      }
+      await githubSleep(Math.min(2500, 200 * attempt));
+      continue;
     }
     throw new Error(`GitHub update failed for ${path} (${res.status}): ${formatGitHubAuthError(res.status, detail)}`);
   }
+  throw new Error(`GitHub update failed for ${path} (${lastStatus}): ${formatGitHubAuthError(lastStatus, lastDetail)}`);
 }
 
-async function deleteGitHubFile(path, commitMessage, token, branch) {
-  const sha = await getGitHubSha(path, token, branch);
-  if (!sha) throw new Error(`File not found on GitHub: ${path}`);
+async function deleteGitHubFile(path, commitMessage, token, branch, maxAttempts = GITHUB_WRITE_MAX_ATTEMPTS) {
   const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${path}`;
-  const res = await fetch(url, {
-    method: 'DELETE',
-    headers: {
-      ...githubAuthHeaders(token),
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      message: commitMessage,
-      sha,
-      branch
-    })
-  });
-  if (!res.ok) {
+  let lastStatus = 0;
+  let lastDetail = '';
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    const sha = await getGitHubSha(path, token, branch);
+    if (!sha) {
+      if (attempt === 1) throw new Error(`File not found on GitHub: ${path}`);
+      await githubSleep(Math.min(2500, 200 * attempt));
+      continue;
+    }
+    const res = await fetch(url, {
+      method: 'DELETE',
+      headers: {
+        ...githubAuthHeaders(token),
+        'Content-Type': 'application/json',
+        'Cache-Control': 'no-cache'
+      },
+      cache: 'no-store',
+      body: JSON.stringify({
+        message: commitMessage,
+        sha,
+        branch
+      })
+    });
+    if (res.ok) return;
     let detail = '';
     try {
       const json = await res.json();
@@ -8957,8 +9016,18 @@ async function deleteGitHubFile(path, commitMessage, token, branch) {
     } catch(e) {
       detail = await res.text();
     }
+    lastStatus = res.status;
+    lastDetail = detail;
+    if (isGitHubConflictStatus(res.status, detail) && attempt < maxAttempts) {
+      if (attempt === 1 || attempt % 3 === 0) {
+        showToast('⏳ GitHub still updating — retrying automatically…');
+      }
+      await githubSleep(Math.min(2500, 200 * attempt));
+      continue;
+    }
     throw new Error(`GitHub delete failed for ${path} (${res.status}): ${formatGitHubAuthError(res.status, detail)}`);
   }
+  throw new Error(`GitHub delete failed for ${path} (${lastStatus}): ${formatGitHubAuthError(lastStatus, lastDetail)}`);
 }
 
 async function deletePremadeQuiz(file) {
@@ -8996,20 +9065,22 @@ async function deletePremadeQuiz(file) {
   try {
     localStorage.setItem(LS_GITHUB_TOKEN, token);
     await assertGitHubWriteAccess(token);
-    const branches = await listRepoBranches(token);
-    const results = [];
-    for (const branch of branches) {
-      try {
-        const result = await deletePremadeQuizOnBranch(file, token, branch);
-        results.push(result);
-      } catch (branchErr) {
-        results.push({
-          branch,
-          touched: false,
-          error: branchErr.message || String(branchErr)
-        });
+    const results = await withGitHubWriteLock(async () => {
+      const branches = await listRepoBranches(token);
+      const out = [];
+      for (const branch of branches) {
+        try {
+          out.push(await deletePremadeQuizOnBranch(file, token, branch));
+        } catch (branchErr) {
+          out.push({
+            branch,
+            touched: false,
+            error: branchErr.message || String(branchErr)
+          });
+        }
       }
-    }
+      return out;
+    });
 
     const touched = results.filter(r => r.touched);
     const failed = results.filter(r => r.error);
@@ -9070,59 +9141,68 @@ async function autoCommitToGitHub(options = {}) {
   const customMsg = (document.getElementById('github-commit-message')?.value || '').trim();
   const branch = await detectWritableBranch(token);
 
-  try {
-    if (quizModalMode === 'add') {
-      if (!generatedQuizJSON || !generatedQuizFilename) {
-        showToast('❌ Generate quiz file first');
-        return false;
+  return withGitHubWriteLock(async () => {
+    for (let attempt = 1; attempt <= GITHUB_WRITE_MAX_ATTEMPTS; attempt++) {
+      try {
+        if (quizModalMode === 'add') {
+          if (!generatedQuizJSON || !generatedQuizFilename) {
+            showToast('❌ Generate quiz file first');
+            return false;
+          }
+          const quizPath = `quizzes/${generatedQuizFilename}`;
+          await upsertGitHubFile(
+            quizPath,
+            generatedQuizJSON,
+            customMsg || `Add quiz: ${generatedQuizFilename}`,
+            token,
+            branch
+          );
+          await githubSleep(300);
+          await upsertGitHubFile(
+            'quizzes/manifest.json',
+            () => buildManifestForUpload(token, branch),
+            customMsg || `Update manifest for ${generatedQuizFilename}`,
+            token,
+            branch
+          );
+          showToast('✅ Auto-published quiz + manifest to GitHub');
+        } else {
+          const quizFile = String(quizEditFile || '').replace(/^quizzes\//, '');
+          if (generatedQuizJSON && quizFile) {
+            await upsertGitHubFile(
+              'quizzes/' + quizFile,
+              generatedQuizJSON,
+              customMsg || 'Update quiz: ' + quizFile,
+              token,
+              branch
+            );
+            await githubSleep(300);
+          }
+          await upsertGitHubFile(
+            'quizzes/manifest.json',
+            () => buildManifestForUpload(token, branch),
+            customMsg || `Update manifest tags for ${quizEditFile || 'quiz'}`,
+            token,
+            branch
+          );
+          showToast(generatedQuizJSON
+            ? '✅ Auto-published quiz JSON + manifest to GitHub'
+            : '✅ Auto-published manifest changes to GitHub');
+        }
+        await refreshLibrary({ preferGitHub: true });
+        if (closeOnSuccess) closeAddQuizModal();
+        return true;
+      } catch (e) {
+        if (!isRetryableGitHubWriteError(e) || attempt === GITHUB_WRITE_MAX_ATTEMPTS) {
+          showToast('❌ ' + (e.message || String(e)).slice(0, 140));
+          return false;
+        }
+        showToast('⏳ GitHub not ready — retrying automatically (' + attempt + ')…');
+        await githubSleep(Math.min(2500, 250 * attempt));
       }
-      const quizPath = `quizzes/${generatedQuizFilename}`;
-      await upsertGitHubFile(
-        quizPath,
-        generatedQuizJSON,
-        customMsg || `Add quiz: ${generatedQuizFilename}`,
-        token,
-        branch
-      );
-      const latestManifest = await buildManifestForUpload(token, branch);
-      await upsertGitHubFile(
-        'quizzes/manifest.json',
-        latestManifest,
-        customMsg || `Update manifest for ${generatedQuizFilename}`,
-        token,
-        branch
-      );
-      showToast('✅ Auto-published quiz + manifest to GitHub');
-    } else {
-      const quizFile = String(quizEditFile || '').replace(/^quizzes\//, '');
-      if (generatedQuizJSON && quizFile) {
-        await upsertGitHubFile(
-          'quizzes/' + quizFile,
-          generatedQuizJSON,
-          customMsg || 'Update quiz: ' + quizFile,
-          token,
-          branch
-        );
-      }
-      const latestManifest = await buildManifestForUpload(token, branch);
-      await upsertGitHubFile(
-        'quizzes/manifest.json',
-        latestManifest,
-        customMsg || `Update manifest tags for ${quizEditFile || 'quiz'}`,
-        token,
-        branch
-      );
-      showToast(generatedQuizJSON
-        ? '✅ Auto-published quiz JSON + manifest to GitHub'
-        : '✅ Auto-published manifest changes to GitHub');
     }
-    await refreshLibrary({ preferGitHub: true });
-    if (closeOnSuccess) closeAddQuizModal();
-    return true;
-  } catch(e) {
-    showToast('❌ ' + (e.message || String(e)).slice(0, 140));
     return false;
-  }
+  });
 }
 
 function openEditQuizTagsModalForFile(file) {
