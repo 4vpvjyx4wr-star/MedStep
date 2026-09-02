@@ -1,1217 +1,1249 @@
 [
   {
-    "question": "A student is asked to list the defining structural features of a nonenveloped, single-stranded positive-sense RNA virus described in the lecture. Which of the following best matches the virus family characteristics?",
+    "question": "Which structural feature best describes viruses in the Picornaviridae family?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Describe the classification, common/key structural and physiological properties of the members of Picornaviridae.",
     "options": [
       {
-        "text": "Nonenveloped capsid with SSRNA positive-sense genome and lytic replication",
+        "text": "Non-enveloped positive-sense RNA virus",
         "isCorrect": true,
-        "rationale": "Correct because the lecture states Picornaviridae are non-enveloped, have single-stranded positive-sense RNA, and are lytic viruses."
+        "rationale": "Correct: Picornaviridae are non-enveloped viruses with single-stranded positive-sense RNA; this names the family’s core structural class."
       },
       {
-        "text": "Enveloped capsid with SSRNA negative-sense genome and latent replication",
+        "text": "Enveloped negative-sense RNA virus",
         "isCorrect": false,
-        "rationale": "Wrong because the lecture specifies non-enveloped SSRNA(+) and lytic replication; changing to enveloped SSRNA(-) and latent replication would be required to make this correct."
+        "rationale": "Wrong: Picornaviridae are non-enveloped and positive-sense; it would be correct if the family had an envelope and negative-sense genome."
       },
       {
-        "text": "Nonenveloped capsid with double-stranded DNA genome and lytic replication",
+        "text": "Non-enveloped double-stranded DNA virus",
         "isCorrect": false,
-        "rationale": "Wrong because Picornaviridae have SSRNA(+), not dsDNA; replacing dsDNA with SSRNA(+) would make this correct."
+        "rationale": "Wrong: Picornaviridae have ssRNA(+), not dsDNA; this would be correct for a non-enveloped DNA virus family."
       },
       {
-        "text": "Enveloped capsid with SSRNA positive-sense genome and persistent replication",
+        "text": "Enveloped segmented RNA virus",
         "isCorrect": false,
-        "rationale": "Wrong because the family is non-enveloped and typically lytic; changing to non-enveloped and lytic replication would be required to be correct."
+        "rationale": "Wrong: Picornaviridae are non-enveloped and non-segmented; this option would fit segmented enveloped viruses instead."
       },
       {
-        "text": "Nonenveloped capsid with segmented SSRNA negative-sense genome and lytic replication",
+        "text": "Non-enveloped single-stranded DNA virus",
         "isCorrect": false,
-        "rationale": "Wrong because Picornaviridae genomes are unsegmented SSRNA(+); altering to unsegmented SSRNA(+) would make this correct."
+        "rationale": "Wrong: Picornaviridae contain single-stranded RNA, not single-stranded DNA; change RNA to DNA to make it correct."
       }
     ]
   },
   {
-    "question": "Which structural viral protein region is most directly implicated as a neutralizing antigenic site according to the lecture diagrams?",
+    "question": "Which property explains why many non-rhinovirus enteroviruses persist in sewage and spread fecal-orally?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Describe the classification, common/key structural and physiological properties of the members of Picornaviridae.",
     "options": [
       {
-        "text": "Surface-exposed capsid proteins such as VP1 VP2 and VP3",
+        "text": "Resistance to low pH and detergents",
         "isCorrect": true,
-        "rationale": "Correct because the lecture figures and notes identify VP1, VP2, and VP3 as surface capsid proteins containing neutralizing antigenic sites."
+        "rationale": "Correct: Non-rhino enteroviruses are resistant to pH 3–9 and detergents, enabling survival in feces and sewage."
       },
       {
-        "text": "Internal nonstructural proteins such as 3A and 3D",
+        "text": "Sensitivity to mild heat exposure",
         "isCorrect": false,
-        "rationale": "Wrong because nonstructural proteins are not surface capsid antigens; if these proteins were surface-exposed structural proteins, this option would be correct."
+        "rationale": "Wrong: Lecture states enteroviruses are resistant to heat; sensitivity to mild heat would make sewage survival unlikely."
       },
       {
-        "text": "Viral RNA genome secondary structures in the 5' UTR",
+        "text": "Obligate intracellular envelope dependence",
         "isCorrect": false,
-        "rationale": "Wrong because neutralizing antigenic sites are on capsid proteins, not RNA; if the RNA were protein-bound and surface-exposed, this would be different."
+        "rationale": "Wrong: They are non-enveloped; an envelope would reduce environmental stability and contradict lecture facts."
       },
       {
-        "text": "Membrane glycoproteins embedded in an envelope",
+        "text": "Rapid inactivation by soap alone",
         "isCorrect": false,
-        "rationale": "Wrong because Picornaviridae are non-enveloped and lack membrane glycoproteins; if the virus were enveloped with glycoproteins, this could be correct."
+        "rationale": "Wrong: Lecture notes resistance to detergents; soap alone would not rapidly inactivate these enteroviruses."
       },
       {
-        "text": "Capsid internal scaffold proteins not exposed on virion surface",
+        "text": "Exclusive replication in respiratory mucosa",
         "isCorrect": false,
-        "rationale": "Wrong because internal scaffold proteins are not accessible to neutralizing antibodies; if they were surface-exposed, they could be antigenic."
+        "rationale": "Wrong: Non-rhino enteroviruses primarily infect intestinal epithelium, not exclusively respiratory mucosa."
       }
     ]
   },
   {
-    "question": "A researcher tests an antiviral that binds a hydrophobic pocket in a picornavirus capsid and prevents uncoating. Based on the lecture, which step of the viral life cycle is this drug most likely inhibiting?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
-    "options": [
-      {
-        "text": "Virus entry and uncoating step preventing genome release into cytoplasm",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture notes state pleconaril and WIN compounds bind a capsid pocket and interfere with entry/uncoating, blocking genome release."
-      },
-      {
-        "text": "Polyprotein translation on host ribosomes preventing initial protein synthesis",
-        "isCorrect": false,
-        "rationale": "Wrong because the described pocket-binding drugs act on capsid uncoating rather than translation; if the drug targeted ribosomal initiation it would inhibit translation instead."
-      },
-      {
-        "text": "RNA-dependent RNA polymerase activity preventing negative-strand synthesis",
-        "isCorrect": false,
-        "rationale": "Wrong because enviroxime targets nonstructural protein 3A and RNA synthesis, not capsid pocket binders; changing the drug target to 3A would make this correct."
-      },
-      {
-        "text": "Viral morphogenesis preventing capsid assembly into virions",
-        "isCorrect": false,
-        "rationale": "Wrong because capsid-pocket binders block uncoating rather than assembly; if the compound disrupted capsid protein processing it would affect morphogenesis."
-      },
-      {
-        "text": "Virion release from lysed host cells preventing spread",
-        "isCorrect": false,
-        "rationale": "Wrong because the drug described prevents entry/uncoating; a drug blocking release would need to inhibit cell lysis or budding to be correct."
-      }
-    ]
-  },
-  {
-    "question": "Which environmental property best explains why non-rhinovirus enteroviruses can persist in sewage and resist many disinfectants as taught in the lecture?",
+    "question": "Which mechanism primarily generates genetic diversity in Picornaviridae?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Describe the classification, common/key structural and physiological properties of the members of Picornaviridae.",
     "options": [
       {
-        "text": "Non-enveloped capsid conferring resistance to pH detergents and solvents",
+        "text": "RdRp misincorporation without proofreading",
         "isCorrect": true,
-        "rationale": "Correct because the lecture highlights that non-rhino enteroviruses are non-enveloped and resistant to pH 3–9, detergents, solvents, and heat, explaining environmental persistence."
+        "rationale": "Correct: The viral RNA-dependent RNA polymerase lacks proofreading, causing nucleotide misincorporation and antigenic drift."
       },
       {
-        "text": "Enveloped lipid membrane protecting against pH and detergents",
+        "text": "Host DNA polymerase errors",
         "isCorrect": false,
-        "rationale": "Wrong because enveloped viruses are more sensitive to detergents; if these enteroviruses were enveloped, they would be less resistant."
+        "rationale": "Wrong: Picornaviridae replicate via viral RdRp, not host DNA polymerase; host DNA polymerase errors are irrelevant."
       },
       {
-        "text": "Segmented genome allowing rapid reassortment for survival",
+        "text": "High-fidelity viral proofreading",
         "isCorrect": false,
-        "rationale": "Wrong because genome segmentation does not confer chemical resistance; if the genome were segmented it would affect diversity but not disinfectant resistance."
+        "rationale": "Wrong: Lecture emphasizes lack of proofreading; high-fidelity proofreading would reduce diversity."
       },
       {
-        "text": "Double-stranded DNA genome increasing capsid stability",
+        "text": "Reverse transcriptase recombination",
         "isCorrect": false,
-        "rationale": "Wrong because the lecture specifies SSRNA(+); changing to SSRNA(+) non-enveloped capsid would align with resistance described."
+        "rationale": "Wrong: These viruses are positive-sense RNA viruses without reverse transcription; RT-mediated recombination is not applicable."
       },
       {
-        "text": "Enzymatic coat that neutralizes bleach and oxidants",
+        "text": "DNA recombination in nucleus",
         "isCorrect": false,
-        "rationale": "Wrong because the lecture notes state they are sensitive to 10% bleach; an enzymatic neutralizer would contradict that sensitivity."
+        "rationale": "Wrong: Picornaviridae do not have a DNA phase or nuclear recombination; this would be true for DNA viruses."
       }
     ]
   },
   {
-    "question": "A patient presents after ingesting contaminated water with an enteric picornavirus. According to the lecture, which initial host tissue is most likely the primary site of viral replication for non-rhinovirus enteroviruses?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
-    "options": [
-      {
-        "text": "Intestinal epithelium including M cells and Peyer's patches",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture states non-rhino enteroviruses infect intestinal epithelia and may enter via M cells and Peyer's patches."
-      },
-      {
-        "text": "Upper respiratory ciliated epithelium of the nasopharynx",
-        "isCorrect": false,
-        "rationale": "Wrong because rhinoviruses replicate in respiratory ciliated epithelium; if the virus were rhinovirus this option would be correct."
-      },
-      {
-        "text": "Hepatocytes in the liver as primary replication site",
-        "isCorrect": false,
-        "rationale": "Wrong because enteroviruses primarily infect lymphoid and intestinal tissues; only hepatotropic viruses would primarily replicate in hepatocytes."
-      },
-      {
-        "text": "Skin keratinocytes at sites of vesicular lesions",
-        "isCorrect": false,
-        "rationale": "Wrong because skin lesions are secondary manifestations for some enteroviruses; primary replication occurs in intestinal or lymphoid tissues."
-      },
-      {
-        "text": "Cardiac myocytes as initial site of infection",
-        "isCorrect": false,
-        "rationale": "Wrong because myocarditis is a secondary complication for some coxsackie B viruses; initial replication is intestinal/lymphoid."
-      }
-    ]
-  },
-  {
-    "question": "Which transmission route best differentiates rhinoviruses from non-rhinovirus enteroviruses as emphasized in the lecture?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
-    "options": [
-      {
-        "text": "Rhinovirus via respiratory droplets and fomites; enterovirus via fecal-oral route",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture contrasts rhinovirus droplet/fomite spread with non-rhino enteroviruses transmitted fecal-orally and shed in feces."
-      },
-      {
-        "text": "Rhinovirus via bloodborne exposure; enterovirus via sexual contact",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture does not describe bloodborne or sexual transmission as primary routes; changing to respiratory and fecal-oral would be correct."
-      },
-      {
-        "text": "Both rhinovirus and enterovirus primarily via vector-borne insects",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture identifies respiratory and fecal-oral routes; vector-borne transmission is not described for these viruses."
-      },
-      {
-        "text": "Rhinovirus via contaminated food; enterovirus via aerosolized droplets",
-        "isCorrect": false,
-        "rationale": "Wrong because this reverses the lecture distinctions; swapping routes to respiratory for rhinovirus and fecal-oral for enterovirus would make it correct."
-      },
-      {
-        "text": "Both transmitted mainly through vertical maternal-fetal transfer",
-        "isCorrect": false,
-        "rationale": "Wrong because vertical transmission is not presented as the main route in the lecture; primary routes are respiratory and fecal-oral."
-      }
-    ]
-  },
-  {
-    "question": "A volunteer is experimentally inoculated intranasally with a rhinovirus strain. According to the lecture, when is viral shedding from the upper airway expected to peak?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
-    "options": [
-      {
-        "text": "Two to four days after inoculation",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture notes that viral shedding from the upper airway peaks 2–4 days after experimental inoculation."
-      },
-      {
-        "text": "Within a few hours after inoculation",
-        "isCorrect": false,
-        "rationale": "Wrong because immediate peak is inconsistent with the lecture; if shedding peaked within hours rather than days this would be correct."
-      },
-      {
-        "text": "Two to four weeks after inoculation",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture specifies days not weeks; extending to weeks would contradict the described kinetics."
-      },
-      {
-        "text": "Only after development of viremia several days later",
-        "isCorrect": false,
-        "rationale": "Wrong because rhinovirus replication and shedding occur in the upper airway without systemic viremia; if viremia were required this would be different."
-      },
-      {
-        "text": "Not until convalescent phase after symptom resolution",
-        "isCorrect": false,
-        "rationale": "Wrong because shedding peaks during early symptomatic days per the lecture; waiting until convalescence would be incorrect."
-      }
-    ]
-  },
-  {
-    "question": "A clinician is evaluating a child with fever, oral vesicles on the soft palate, and posterior oropharyngeal ulcers. Based on the lecture, which diagnosis is most consistent with this presentation?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
-    "options": [
-      {
-        "text": "Herpangina caused by enterovirus infection",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture defines herpangina as small painful blisters or ulcers at the back of the mouth caused by enteroviruses."
-      },
-      {
-        "text": "Hand-foot-and-mouth disease with palatal ulcers only",
-        "isCorrect": false,
-        "rationale": "Wrong because HFMD typically includes vesicular lesions on hands and feet as well as mouth; absence of extremity lesions would need to be present for this to be correct."
-      },
-      {
-        "text": "Acute hemorrhagic conjunctivitis presenting with oral ulcers",
-        "isCorrect": false,
-        "rationale": "Wrong because acute hemorrhagic conjunctivitis primarily affects the eyes; if ocular hemorrhage and conjunctival findings were present this could be considered."
-      },
-      {
-        "text": "Streptococcal pharyngitis causing posterior palatal vesicles",
-        "isCorrect": false,
-        "rationale": "Wrong because strep throat usually causes erythema and exudates rather than whitish posterior palatal ulcers; if white exudates and positive rapid strep were present this would be different."
-      },
-      {
-        "text": "Herpes labialis causing posterior oropharyngeal ulcers",
-        "isCorrect": false,
-        "rationale": "Wrong because herpes labialis typically affects lips and anterior oral mucosa; if lesions were on lips and anterior mucosa this would support herpes instead."
-      }
-    ]
-  },
-  {
-    "question": "A patient with suspected viral myocarditis is tested and coxsackie B virus is considered. According to the lecture, which statement best reflects the typical course of viral myocarditis from coxsackie B?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
-    "options": [
-      {
-        "text": "Often subclinical and self-limited but can progress to acute cardiac disease",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture notes viral myocarditis from coxsackie B is frequently self-limited and subclinical but can evolve to serious acute cardiac disease."
-      },
-      {
-        "text": "Always causes fulminant heart failure within 24 hours",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture describes a spectrum from subclinical to severe, not universal fulminant failure; if all cases progressed rapidly this would be correct."
-      },
-      {
-        "text": "Exclusively causes chronic dilated cardiomyopathy without acute phase",
-        "isCorrect": false,
-        "rationale": "Wrong because acute myocarditis is described and may be self-limited; exclusive chronic presentation would contradict the lecture."
-      },
-      {
-        "text": "Only affects immunocompromised hosts and spares healthy individuals",
-        "isCorrect": false,
-        "rationale": "Wrong because coxsackie B can affect immunocompetent persons; restricting to immunocompromised would be incorrect."
-      },
-      {
-        "text": "Is prevented reliably by routine poliovirus vaccination",
-        "isCorrect": false,
-        "rationale": "Wrong because poliovirus vaccines target poliovirus, not coxsackie B; if a vaccine against coxsackie B existed and was used this would change the answer."
-      }
-    ]
-  },
-  {
-    "question": "A lab scientist observes rapid onset unilateral eye redness with subconjunctival hemorrhage after exposure to a contaminated pool. Which enterovirus species from the lecture is most classically associated with acute hemorrhagic conjunctivitis?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
-    "options": [
-      {
-        "text": "Coxsackie A24 or enterovirus D70",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture lists CV-A24 and EV-D70 as causes of acute hemorrhagic conjunctivitis."
-      },
-      {
-        "text": "Enterovirus A71 causing conjunctivitis",
-        "isCorrect": false,
-        "rationale": "Wrong because EV-A71 is more associated with hand-foot-and-mouth disease and neurologic disease; if EV-A71 were documented to cause hemorrhagic conjunctivitis this would be correct."
-      },
-      {
-        "text": "Poliovirus type 1 causing conjunctival hemorrhage",
-        "isCorrect": false,
-        "rationale": "Wrong because poliovirus is primarily associated with paralytic disease; if poliovirus were known to cause hemorrhagic conjunctivitis this would be different."
-      },
-      {
-        "text": "Rhinovirus species causing hemorrhagic conjunctivitis",
-        "isCorrect": false,
-        "rationale": "Wrong because rhinoviruses are linked to respiratory disease and secondary bacterial complications, not classic hemorrhagic conjunctivitis; if rhinovirus strains were implicated this would change the answer."
-      },
-      {
-        "text": "Coxsackie B viruses exclusively causing conjunctival hemorrhage",
-        "isCorrect": false,
-        "rationale": "Wrong because coxsackie B is more linked to myocarditis; if coxsackie B were the primary cause of hemorrhagic conjunctivitis this would be correct."
-      }
-    ]
-  },
-  {
-    "question": "A public health student asks why live oral poliovirus vaccine historically provided herd immunity. Based on the lecture, which mechanism best explains this effect?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the clinical importance of respiratory viruses and the key species affiliated with acute respiratory disease symptoms (ARDS).",
-    "options": [
-      {
-        "text": "Excreted vaccine virus spreads to contacts generating secondary immunity",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture notes live Sabin vaccine is excreted and can expand immunity in the community, providing herd protection."
-      },
-      {
-        "text": "Vaccine induces permanent sterilizing mucosal immunity in all recipients",
-        "isCorrect": false,
-        "rationale": "Wrong because while live vaccine induces strong intestinal immunity, the lecture does not claim universal permanent sterilizing immunity; if sterilizing mucosal immunity were universal this would be correct."
-      },
-      {
-        "text": "Killed vaccine virus replicates in the gut and spreads to contacts",
-        "isCorrect": false,
-        "rationale": "Wrong because killed (Salk) vaccine is inactivated and not excreted; if the killed vaccine were live this would be correct."
-      },
-      {
-        "text": "Vaccine virus integrates into host genome providing lifelong immunity",
-        "isCorrect": false,
-        "rationale": "Wrong because poliovirus does not integrate into host DNA; integration would be required for this to be correct."
-      },
-      {
-        "text": "Oral vaccine prevents all asymptomatic shedding in recipients",
-        "isCorrect": false,
-        "rationale": "Wrong because live vaccine can be shed; preventing all shedding is not described in the lecture and would contradict the mechanism of herd spread."
-      }
-    ]
-  },
-  {
-    "question": "A virology student asks which viral protein is targeted by enviroxime as described in the lecture and what process it blocks. Which option is correct?",
+    "question": "Which antiviral target was described as binding a capsid pocket and showing activity against rhinovirus in vitro?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the classification, common/key structural and physiological properties of the members of Picornaviridae.",
     "options": [
       {
-        "text": "Nonstructural protein 3A blocking positive-strand RNA synthesis",
+        "text": "Pleconaril binding capsid pocket",
         "isCorrect": true,
-        "rationale": "Correct because the lecture states enviroxime targets nonstructural protein 3A and blocks RNA(+) synthesis, though it was toxic in humans."
+        "rationale": "Correct: Pleconaril (and WIN compounds) bind a capsid pocket and showed good results against rhinovirus experimentally."
       },
       {
-        "text": "Capsid protein VP1 blocking receptor binding",
+        "text": "Enviroxime inhibiting 3A protein",
         "isCorrect": false,
-        "rationale": "Wrong because enviroxime targets 3A and RNA synthesis, not VP1; if the drug targeted VP1 and prevented receptor binding this would be correct."
+        "rationale": "Wrong: Enviroxime targets nonstructural protein 3A and RNA synthesis, not the capsid pocket; it would be correct if the question asked about 3A inhibition."
       },
       {
-        "text": "RNA-dependent RNA polymerase 3D blocking translation initiation",
+        "text": "Protease inhibitor blocking polyprotein cleavage",
         "isCorrect": false,
-        "rationale": "Wrong because enviroxime targets 3A and RNA synthesis, not 3D or translation initiation; if 3D were inhibited and translation affected this would be different."
+        "rationale": "Wrong: Lecture mentions no approved protease inhibitors; a protease inhibitor would be correct if such a drug were described."
       },
       {
-        "text": "VPg protein blocking genome encapsidation",
+        "text": "Neuraminidase inhibitor blocking release",
         "isCorrect": false,
-        "rationale": "Wrong because enviroxime's described mechanism is inhibition of 3A and RNA synthesis; if enviroxime blocked VPg-mediated encapsidation this option would be correct."
+        "rationale": "Wrong: Neuraminidase inhibitors target influenza neuraminidase, not picornavirus capsid pockets; would be correct for influenza."
       },
       {
-        "text": "Protease 3C blocking polyprotein processing",
+        "text": "Reverse transcriptase inhibitor",
         "isCorrect": false,
-        "rationale": "Wrong because enviroxime does not target protease 3C per the lecture; if the drug inhibited 3C protease and blocked processing this would be correct."
+        "rationale": "Wrong: Picornaviridae are RNA(+) viruses without reverse transcription; RT inhibitors are irrelevant here."
       }
     ]
   },
   {
-    "question": "A patient with suspected poliovirus infection develops asymmetric flaccid paralysis localized to an extremity. According to the lecture, which spinal region cell population is most directly damaged to produce this clinical picture?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
-    "options": [
-      {
-        "text": "Anterior horn motor neurons in the spinal cord ventral horn",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture's poliomyelitis diagrams show ventral horn motor neuron destruction causing asymmetric flaccid paralysis."
-      },
-      {
-        "text": "Dorsal root sensory neurons in the dorsal horn",
-        "isCorrect": false,
-        "rationale": "Wrong because sensory neuron damage causes sensory deficits, not the flaccid motor paralysis described; if dorsal horn motor neurons were affected this would be different."
-      },
-      {
-        "text": "Autonomic ganglia causing autonomic dysfunction only",
-        "isCorrect": false,
-        "rationale": "Wrong because poliovirus targets motor neurons; exclusive autonomic ganglia damage would not explain limb flaccid paralysis."
-      },
-      {
-        "text": "Cerebellar Purkinje cells causing ataxia",
-        "isCorrect": false,
-        "rationale": "Wrong because cerebellar damage causes coordination problems, not flaccid limb paralysis; if cerebellar signs predominated this would be correct."
-      },
-      {
-        "text": "Upper motor neurons in the motor cortex causing spastic paresis",
-        "isCorrect": false,
-        "rationale": "Wrong because upper motor neuron lesions produce spasticity, not flaccid asymmetric paralysis; if cortical motor neurons were the primary target this would be different."
-      }
-    ]
-  },
-  {
-    "question": "A clinician is counseling parents about vaccine choices. Based on the lecture tables, which statement correctly contrasts the killed Salk vaccine with the live Sabin vaccine?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
-    "options": [
-      {
-        "text": "Salk is inactivated and safer for immunodeficient patients; Sabin is live and can revert",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture lists Salk advantages including safety for immunodeficient persons and Sabin disadvantages including potential reversion to neurovirulence."
-      },
-      {
-        "text": "Salk is live oral vaccine causing community spread; Sabin is killed injectable vaccine",
-        "isCorrect": false,
-        "rationale": "Wrong because this reverses the vaccines; swapping live and killed descriptions would make it correct."
-      },
-      {
-        "text": "Both Salk and Sabin are inactivated and equally safe in immunosuppressed hosts",
-        "isCorrect": false,
-        "rationale": "Wrong because Sabin is live and contraindicated in immunosuppressed hosts; if Sabin were inactivated this would be correct."
-      },
-      {
-        "text": "Sabin requires intramuscular injection and is more expensive than Salk",
-        "isCorrect": false,
-        "rationale": "Wrong because Sabin is oral and relatively inexpensive per the lecture; changing route and cost descriptions would be needed."
-      },
-      {
-        "text": "Salk provides herd immunity by excretion of vaccine virus into environment",
-        "isCorrect": false,
-        "rationale": "Wrong because herd immunity via excreted vaccine virus is a property of live Sabin vaccine; if Salk were live and excreted this would be correct."
-      }
-    ]
-  },
-  {
-    "question": "A child presents with fever, vesicular lesions on hands and feet, and oral ulcers. Which enterovirus is most commonly implicated in this syndrome according to the lecture?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
-    "options": [
-      {
-        "text": "Enterovirus A71 or coxsackie A16 causing hand-foot-and-mouth disease",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture lists EV-A71 and CV-A16 among viruses associated with hand-foot-and-mouth disease and related rash."
-      },
-      {
-        "text": "Coxsackie B causing isolated hand vesicles only",
-        "isCorrect": false,
-        "rationale": "Wrong because coxsackie B is more associated with myocarditis; if coxsackie B commonly caused HFMD this would be correct."
-      },
-      {
-        "text": "Poliovirus causing hand-foot-and-mouth lesions",
-        "isCorrect": false,
-        "rationale": "Wrong because poliovirus is primarily paralytic; if poliovirus commonly caused vesicular hand lesions this would be correct."
-      },
-      {
-        "text": "Rhinovirus causing hand-foot-and-mouth disease",
-        "isCorrect": false,
-        "rationale": "Wrong because rhinovirus causes respiratory illness and common cold, not HFMD; if rhinovirus strains produced characteristic HFMD lesions this would change the answer."
-      },
-      {
-        "text": "Enterovirus D68 causing isolated oral ulcers only",
-        "isCorrect": false,
-        "rationale": "Wrong because EV-D68 is more linked to respiratory disease and AFM; if EV-D68 primarily caused HFMD this would be correct."
-      }
-    ]
-  },
-  {
-    "question": "A patient with upper respiratory infection develops secondary bacterial sinusitis. The lecture links rhinovirus infection to increased prevalence of certain bacterial pathogens. Which of the following bacteria is listed as commonly increased after rhinovirus infection?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the clinical importance of respiratory viruses and the key species affiliated with acute respiratory disease symptoms (ARDS).",
-    "options": [
-      {
-        "text": "Streptococcus pneumoniae prevalence increases after rhinovirus infection",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture notes rhinovirus infections are associated with increased prevalence of Streptococcus pneumoniae among other bacterial pathogens."
-      },
-      {
-        "text": "Mycobacterium tuberculosis prevalence increases after rhinovirus infection",
-        "isCorrect": false,
-        "rationale": "Wrong because TB is not listed as a common secondary pathogen after rhinovirus; if TB colonization increased post-rhinovirus this would be different."
-      },
-      {
-        "text": "Clostridioides difficile prevalence increases after rhinovirus infection",
-        "isCorrect": false,
-        "rationale": "Wrong because C. difficile is an enteric pathogen not linked to rhinovirus respiratory infections; if enteric flora shifts were described this could be relevant."
-      },
-      {
-        "text": "Neisseria gonorrhoeae prevalence increases after rhinovirus infection",
-        "isCorrect": false,
-        "rationale": "Wrong because gonococcus is sexually transmitted and not described as secondary to rhinovirus; if mucosal susceptibility to gonococcus increased this would be needed."
-      },
-      {
-        "text": "Legionella pneumophila prevalence increases after rhinovirus infection",
-        "isCorrect": false,
-        "rationale": "Wrong because Legionella is environmental and not listed among the lecture's common secondary pathogens; if Legionella colonization rose post-rhinovirus this would be different."
-      }
-    ]
-  },
-  {
-    "question": "A virology lab notes high mutation rates in a picornavirus population due to lack of proofreading by the viral polymerase. Which evolutionary consequence described in the lecture best follows from this property?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the classification, common/key structural and physiological properties of the members of Picornaviridae.",
-    "options": [
-      {
-        "text": "Antigenic drift leading to rapid sequence diversity",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture emphasizes that RdRp lacks proofreading, causing misincorporation and antigenic drift."
-      },
-      {
-        "text": "Stable genome with minimal sequence variation",
-        "isCorrect": false,
-        "rationale": "Wrong because lack of proofreading increases variation; if the polymerase had proofreading activity this option would be correct."
-      },
-      {
-        "text": "Genome segmentation producing reassortment events",
-        "isCorrect": false,
-        "rationale": "Wrong because picornaviruses have unsegmented genomes; segmentation would be required for reassortment to occur."
-      },
-      {
-        "text": "Immediate correction by host exonuclease preventing mutations",
-        "isCorrect": false,
-        "rationale": "Wrong because viral RdRp errors are not corrected by host exonucleases in the lecture; if host proofreading corrected viral RNA this would be different."
-      },
-      {
-        "text": "Complete resistance to antiviral drugs due to low mutation rate",
-        "isCorrect": false,
-        "rationale": "Wrong because high mutation rates increase diversity and can lead to resistance, not low mutation rates; reversing mutation rate would be needed."
-      }
-    ]
-  },
-  {
-    "question": "A patient with suspected enteroviral meningitis has CSF studies. The lecture lists several enteroviruses more commonly causing meningitis than poliovirus. Which of the following is among those listed?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
-    "options": [
-      {
-        "text": "Enterovirus A71 is more commonly associated with meningitis",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture lists EV-A71 among viruses more commonly causing meningitis than poliovirus."
-      },
-      {
-        "text": "Rhinovirus C is the leading cause of enteroviral meningitis",
-        "isCorrect": false,
-        "rationale": "Wrong because rhinoviruses are primarily respiratory pathogens; if rhinovirus C were documented to cause meningitis commonly this would be correct."
-      },
-      {
-        "text": "Poliovirus type 1 is the most common cause of meningitis today",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture notes poliovirus rarely causes meningitis and other enteroviruses like EV-A71 are more common; if poliovirus incidence were higher this would change the answer."
-      },
-      {
-        "text": "Coxsackie A24 is the most frequent cause of meningitis",
-        "isCorrect": false,
-        "rationale": "Wrong because CV-A24 is associated with conjunctivitis; if epidemiology showed CV-A24 causing meningitis commonly this would be correct."
-      },
-      {
-        "text": "Enterovirus D68 is exclusively a gastrointestinal pathogen causing meningitis",
-        "isCorrect": false,
-        "rationale": "Wrong because EV-D68 is linked to respiratory disease and AFM, not exclusively GI meningitis; changing tropism would be required."
-      }
-    ]
-  },
-  {
-    "question": "A patient with suspected rhinovirus infection is noted to have wheezing and exacerbation of asthma. According to the lecture, which relationship between rhinovirus and asthma is emphasized?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the clinical importance of respiratory viruses and the key species affiliated with acute respiratory disease symptoms (ARDS).",
-    "options": [
-      {
-        "text": "Rhinovirus infections are closely linked to inception and exacerbation of asthma",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture explicitly states RV infections have been closely linked to the inception and exacerbation of asthma."
-      },
-      {
-        "text": "Rhinovirus infections prevent asthma development by inducing tolerance",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture links rhinovirus to asthma exacerbation rather than prevention; if evidence showed protective tolerance this would be correct."
-      },
-      {
-        "text": "Rhinovirus exclusively causes lower respiratory failure without asthma association",
-        "isCorrect": false,
-        "rationale": "Wrong because rhinovirus is associated with upper airway disease and asthma exacerbations, not exclusively lower respiratory failure; changing the association would be needed."
-      },
-      {
-        "text": "Rhinovirus infection cures chronic asthma symptoms",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture indicates rhinovirus worsens or contributes to asthma, not cures it; if rhinovirus had therapeutic effects this would be correct."
-      },
-      {
-        "text": "Rhinovirus infection only affects immunocompromised patients with asthma",
-        "isCorrect": false,
-        "rationale": "Wrong because rhinovirus affects broad populations and is linked to asthma in general; restricting to immunocompromised hosts would be incorrect."
-      }
-    ]
-  },
-  {
-    "question": "A virology student asks which host factor primarily dictates tissue tropism for enteroviruses as taught in the lecture. Which is the best answer?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
-    "options": [
-      {
-        "text": "Presence of specific cellular receptors on target cells",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture states that receptors in target cells dictate tissue specificity and susceptibility."
-      },
-      {
-        "text": "Ambient environmental temperature alone",
-        "isCorrect": false,
-        "rationale": "Wrong because temperature is not presented as the primary determinant; if receptor distribution were uniform and temperature solely determined tropism this would be correct."
-      },
-      {
-        "text": "Viral genome segmentation pattern",
-        "isCorrect": false,
-        "rationale": "Wrong because segmentation is not discussed as dictating tissue tropism; if segmentation encoded tissue-specific factors this would be different."
-      },
-      {
-        "text": "Host blood type antigens exclusively determining infection",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture emphasizes receptors rather than blood group antigens; if blood type were the main receptor this would be correct."
-      },
-      {
-        "text": "Presence of an envelope on the virion surface",
-        "isCorrect": false,
-        "rationale": "Wrong because envelope presence affects stability and transmission but receptors determine tissue tropism; if envelope proteins mediated receptor binding this could be relevant."
-      }
-    ]
-  },
-  {
-    "question": "A patient with suspected enteroviral infection has diarrhea and rash. The lecture lists several enteroviruses associated with gastroenteritis and skin findings. Which virus is included among those linked to diarrhea in the lecture?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
-    "options": [
-      {
-        "text": "Enterovirus A71 is listed among viruses linked to diarrhea",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture lists EV-A71 among viruses associated with gastroenteritis and diarrhea."
-      },
-      {
-        "text": "Rhinovirus A16 is listed as a common cause of diarrhea",
-        "isCorrect": false,
-        "rationale": "Wrong because rhinoviruses are respiratory pathogens; if RV-A16 were implicated in GI disease this would be correct."
-      },
-      {
-        "text": "Poliovirus exclusively causes chronic diarrhea",
-        "isCorrect": false,
-        "rationale": "Wrong because poliovirus is primarily paralytic; if poliovirus commonly caused diarrhea this would be different."
-      },
-      {
-        "text": "Coxsackie B exclusively causes isolated watery diarrhea",
-        "isCorrect": false,
-        "rationale": "Wrong because coxsackie B is more associated with cardiac disease; if it were the primary enteric diarrheal pathogen this would be correct."
-      },
-      {
-        "text": "Enterovirus D68 is the leading cause of viral gastroenteritis",
-        "isCorrect": false,
-        "rationale": "Wrong because EV-D68 is linked to respiratory disease and AFM; if epidemiology showed EV-D68 causing gastroenteritis commonly this would be correct."
-      }
-    ]
-  },
-  {
-    "question": "A pediatric patient develops acute flaccid limb weakness after a recent respiratory illness. The lecture mentions several enteroviruses associated with acute flaccid myelitis. Which enterovirus is included in that list?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
-    "options": [
-      {
-        "text": "Enterovirus D68 is associated with acute flaccid myelitis",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture lists EV-D68 among viruses linked to acute flaccid myelitis and neurologic disease."
-      },
-      {
-        "text": "Rhinovirus B14 is the primary cause of acute flaccid myelitis",
-        "isCorrect": false,
-        "rationale": "Wrong because rhinoviruses are respiratory and not listed as primary causes of AFM; if RV-B14 were epidemiologically linked to AFM this would be correct."
-      },
-      {
-        "text": "Coxsackie A16 exclusively causes AFM",
-        "isCorrect": false,
-        "rationale": "Wrong because CV-A16 is more associated with HFMD; if CV-A16 were the main AFM cause this would be different."
-      },
-      {
-        "text": "Poliovirus has no association with acute flaccid paralysis",
-        "isCorrect": false,
-        "rationale": "Wrong because poliovirus historically causes paralytic disease; stating no association contradicts the lecture and would be incorrect."
-      },
-      {
-        "text": "Enterovirus A71 never causes neurologic disease",
-        "isCorrect": false,
-        "rationale": "Wrong because EV-A71 is listed as causing meningitis and encephalitis; claiming it never causes neurologic disease contradicts the lecture."
-      }
-    ]
-  },
-  {
-    "question": "A clinician considers using pleconaril for a severe rhinovirus infection. Based on the lecture, which statement about pleconaril is accurate?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the classification, common/key structural and physiological properties of the members of Picornaviridae.",
-    "options": [
-      {
-        "text": "Pleconaril binds a capsid pocket and showed good results for rhinovirus in studies",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture notes pleconaril and WIN compounds bind the capsid pocket and had good results for rhinovirus infections."
-      },
-      {
-        "text": "Pleconaril targets nonstructural protein 3A to block RNA synthesis",
-        "isCorrect": false,
-        "rationale": "Wrong because enviroxime targets 3A; pleconaril binds the capsid pocket to inhibit uncoating, not 3A."
-      },
-      {
-        "text": "Pleconaril is an approved, widely used antiviral for rhinovirus",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture states there are no approved drugs despite promising compounds; approval would be required to make this correct."
-      },
-      {
-        "text": "Pleconaril irreversibly inhibits host ribosomes to stop viral translation",
-        "isCorrect": false,
-        "rationale": "Wrong because pleconaril acts on the viral capsid, not host ribosomes; if it inhibited ribosomes this would be different."
-      },
-      {
-        "text": "Pleconaril is a bleach-based disinfectant used to inactivate viruses",
-        "isCorrect": false,
-        "rationale": "Wrong because pleconaril is an antiviral compound, not a disinfectant; if it were a chemical disinfectant this option would be correct."
-      }
-    ]
-  },
-  {
-    "question": "A lab culture of rhinovirus shows replication limited to ciliated respiratory epithelial cells. According to the lecture, what is a likely consequence of infection of these cells?",
+    "question": "A researcher places an infected volunteer behind a mesh barrier; nearby volunteers remain uninfected unless direct hand contact occurs. Which transmission route does this experiment support for rhinovirus?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
     "options": [
       {
-        "text": "Impaired mucociliary clearance leading to increased secondary bacterial infections",
+        "text": "Fomite/contact transmission predominance",
         "isCorrect": true,
-        "rationale": "Correct because the lecture asks about consequences of ciliated epithelium infection and notes rhinovirus predisposes to bacterial sinusitis, otitis, and bronchitis."
+        "rationale": "Correct: The experiment showed infection after hand contact but not through mesh, supporting fomite/contact spread for rhinovirus."
       },
       {
-        "text": "Enhanced intestinal absorption and diarrhea",
+        "text": "Long-range airborne transmission predominance",
         "isCorrect": false,
-        "rationale": "Wrong because ciliated respiratory epithelium infection affects airway clearance, not intestinal absorption; if intestinal epithelium were infected this would be relevant."
+        "rationale": "Wrong: If long-range airborne spread predominated, mesh-separated volunteers would have become infected; changing to aerosol spread would make this correct."
       },
       {
-        "text": "Immediate systemic viremia without local symptoms",
+        "text": "Vector-borne insect transmission",
         "isCorrect": false,
-        "rationale": "Wrong because rhinovirus replication is typically localized to respiratory epithelium with local symptoms; if viremia were typical this would be different."
+        "rationale": "Wrong: No insect vector is described; vector transmission would require insect involvement to be correct."
       },
       {
-        "text": "Destruction of hepatocytes causing jaundice",
+        "text": "Waterborne fecal-oral transmission",
         "isCorrect": false,
-        "rationale": "Wrong because hepatic involvement is not a primary consequence of rhinovirus ciliated cell infection; liver damage would be required for this to be correct."
+        "rationale": "Wrong: Rhinovirus experiments showed contact spread; fecal-oral would be correct for non-rhino enteroviruses in sewage contexts."
       },
       {
-        "text": "Increased intestinal lymphoid tissue infection via Peyer's patches",
+        "text": "Sexual transmission predominance",
         "isCorrect": false,
-        "rationale": "Wrong because Peyer's patch infection is characteristic of non-rhino enteroviruses, not rhinovirus ciliated epithelium infection."
+        "rationale": "Wrong: Sexual transmission is not supported by the experiment; it would require sexual contact data to be correct."
       }
     ]
   },
   {
-    "question": "A patient with suspected enteroviral infection is noted to shed virus in feces for prolonged periods. Which public health implication from the lecture follows most directly?",
+    "question": "Which initial infection site differentiates rhinoviruses from non-rhinovirus enteroviruses?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
     "options": [
       {
-        "text": "Fecal-oral transmission can sustain community spread via contaminated water and surfaces",
+        "text": "Respiratory ciliated epithelium versus intestinal epithelium",
         "isCorrect": true,
-        "rationale": "Correct because the lecture emphasizes non-rhino enteroviruses are shed in feces for long periods and transmitted fecal-orally, facilitating spread."
+        "rationale": "Correct: Rhinoviruses primarily infect respiratory ciliated epithelium; non-rhino enteroviruses infect intestinal epithelium and associated lymphoid tissue."
       },
       {
-        "text": "Respiratory droplet precautions alone are sufficient to prevent spread",
+        "text": "Hepatocytes versus renal tubular epithelium",
         "isCorrect": false,
-        "rationale": "Wrong because fecal-oral spread requires sanitation measures beyond droplet precautions; if shedding were only respiratory this would be correct."
+        "rationale": "Wrong: Lecture does not describe hepatocyte or renal tropism; this would be correct only if those tissues were primary targets."
       },
       {
-        "text": "Virus is immediately inactivated by common detergents in sewage",
+        "text": "Neuronal ganglia versus cardiac myocytes",
         "isCorrect": false,
-        "rationale": "Wrong because the lecture notes resistance to detergents and solvents; if the virus were detergent-sensitive this would be correct."
+        "rationale": "Wrong: While some enteroviruses can affect heart or CNS secondarily, initial infection sites are respiratory or intestinal, not these pairs."
       },
       {
-        "text": "Asymptomatic fecal shedding is rare and unimportant for transmission",
+        "text": "Skin keratinocytes versus conjunctival epithelium",
         "isCorrect": false,
-        "rationale": "Wrong because the lecture states asymptomatic patients contribute to spread and prolonged fecal shedding occurs; rarity would contradict the lecture."
+        "rationale": "Wrong: Skin and conjunctiva are not the primary initial sites described; this would be correct only if those were the entry points."
       },
       {
-        "text": "Only direct person-to-person respiratory contact transmits these enteroviruses",
+        "text": "Alveolar macrophages versus pancreatic islets",
         "isCorrect": false,
-        "rationale": "Wrong because fecal-oral transmission is a primary route for non-rhino enteroviruses; restricting to respiratory contact would be incorrect."
+        "rationale": "Wrong: These tissues are not cited as primary initial infection sites in the lecture; changing to respiratory vs intestinal would make it correct."
       }
     ]
   },
   {
-    "question": "A virology exam question asks which of the following best explains why picornaviral RdRp-driven diversity also includes recombination events as taught in the lecture. Which mechanism is correct?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the classification, common/key structural and physiological properties of the members of Picornaviridae.",
-    "options": [
-      {
-        "text": "Template switching by RNA polymerase during replication causing recombination",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture describes recombination via template switching by the viral RNA polymerase as a source of diversity."
-      },
-      {
-        "text": "Host DNA polymerase-mediated homologous recombination",
-        "isCorrect": false,
-        "rationale": "Wrong because recombination described is mediated by viral RNA polymerase template switching, not host DNA polymerase; if host DNA polymerase were involved this would be different."
-      },
-      {
-        "text": "Segmented genome reassortment between co-infecting viruses",
-        "isCorrect": false,
-        "rationale": "Wrong because picornaviruses have unsegmented genomes; segmentation would be required for reassortment to explain diversity."
-      },
-      {
-        "text": "Reverse transcription into host genome followed by recombination",
-        "isCorrect": false,
-        "rationale": "Wrong because picornaviruses are positive-sense RNA viruses without reverse transcription; if they used reverse transcription this could enable recombination differently."
-      },
-      {
-        "text": "Antigenic shift due to exchange of envelope glycoproteins",
-        "isCorrect": false,
-        "rationale": "Wrong because antigenic shift via envelope glycoprotein exchange applies to segmented or enveloped viruses; picornaviruses are non-enveloped and unsegmented."
-      }
-    ]
-  },
-  {
-    "question": "A patient with suspected rhinovirus infection is being considered for an investigational antiviral that binds the capsid pocket. The clinician asks what adverse limitation was noted for enviroxime in the lecture that would caution against its use. What was reported?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the classification, common/key structural and physiological properties of the members of Picornaviridae.",
-    "options": [
-      {
-        "text": "Enviroxime inhibited RNA synthesis in vitro but was toxic and ineffective in humans",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture states enviroxime blocks nonstructural protein 3A and RNA synthesis but was toxic and not effective clinically."
-      },
-      {
-        "text": "Enviroxime caused immediate anaphylaxis in all trial participants",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture mentions toxicity and lack of efficacy, not universal anaphylaxis; if trials reported anaphylaxis this would be correct."
-      },
-      {
-        "text": "Enviroxime enhanced viral replication in vivo",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture reports inhibition in vitro but toxicity in humans, not enhancement; if it increased replication this would be different."
-      },
-      {
-        "text": "Enviroxime was perfectly safe but failed due to cost",
-        "isCorrect": false,
-        "rationale": "Wrong because toxicity and lack of efficacy, not cost, were cited as reasons it was not used clinically; if safety were established but cost prohibitive this would be correct."
-      },
-      {
-        "text": "Enviroxime only worked against enveloped viruses",
-        "isCorrect": false,
-        "rationale": "Wrong because enviroxime targets enterovirus nonstructural protein 3A and inhibited EV and rhinovirus in vitro; stating activity only against enveloped viruses contradicts the lecture."
-      }
-    ]
-  },
-  {
-    "question": "A patient with suspected rhinovirus infection is noted to have secondary otitis media. The lecture links rhinovirus to increased prevalence of certain bacteria. Which of the following is another bacterium listed as increased after rhinovirus infection?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the clinical importance of respiratory viruses and the key species affiliated with acute respiratory disease symptoms (ARDS).",
-    "options": [
-      {
-        "text": "Haemophilus influenzae prevalence increases after rhinovirus infection",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture lists Haemophilus influenzae among bacterial pathogens whose prevalence increases following rhinovirus infection."
-      },
-      {
-        "text": "Escherichia coli prevalence increases after rhinovirus infection",
-        "isCorrect": false,
-        "rationale": "Wrong because E. coli is an enteric bacterium not listed as a common secondary respiratory pathogen; if E. coli colonized the respiratory tract post-rhinovirus this would be different."
-      },
-      {
-        "text": "Treponema pallidum prevalence increases after rhinovirus infection",
-        "isCorrect": false,
-        "rationale": "Wrong because syphilis bacterium is unrelated to post-viral respiratory complications; if T. pallidum colonized the nasopharynx this would be required."
-      },
-      {
-        "text": "Clostridium perfringens prevalence increases after rhinovirus infection",
-        "isCorrect": false,
-        "rationale": "Wrong because C. perfringens is not a typical respiratory secondary pathogen; if it were implicated in sinusitis this would be different."
-      },
-      {
-        "text": "Mycoplasma genitalium prevalence increases after rhinovirus infection",
-        "isCorrect": false,
-        "rationale": "Wrong because M. genitalium is a urogenital pathogen and not listed among post-rhinovirus respiratory bacteria; if it colonized the respiratory tract this would be required."
-      }
-    ]
-  },
-  {
-    "question": "A clinician is deciding infection-control measures for a hospitalized child shedding enterovirus in stool. Based on the lecture, which disinfectant is specifically noted as effective against these non-enveloped enteroviruses?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the classification, common/key structural and physiological properties of the members of Picornaviridae.",
-    "options": [
-      {
-        "text": "Ten percent bleach solution is effective against these viruses",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture explicitly states non-rhino enteroviruses are sensitive to 10% bleach despite resistance to many detergents."
-      },
-      {
-        "text": "Standard mild detergent solutions are sufficient to inactivate them",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture notes resistance to detergents and solvents; if detergents were effective this option would be correct."
-      },
-      {
-        "text": "Alcohol-based hand sanitizers reliably inactivate them",
-        "isCorrect": false,
-        "rationale": "Wrong because non-enveloped enteroviruses are often resistant to alcohol-based sanitizers; if evidence showed alcohol efficacy this would be correct."
-      },
-      {
-        "text": "Ultraviolet light has no effect on these viruses",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture does not state UV has no effect; absence of UV effect is not described and would need supporting data to be correct."
-      },
-      {
-        "text": "Diluted household vinegar is the recommended disinfectant",
-        "isCorrect": false,
-        "rationale": "Wrong because vinegar is not listed as effective; if vinegar at specific concentrations were proven effective this would be different."
-      }
-    ]
-  },
-  {
-    "question": "A patient with suspected rhinovirus infection is being evaluated for antiviral therapy. The lecture states there are no approved drugs but mentions investigational compounds. Which statement best summarizes the lecture's position on rhinovirus treatment?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
-    "options": [
-      {
-        "text": "Treatment is symptomatic; no approved antivirals though some compounds are in development",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture states treatment focuses on symptom relief and there are no approved drugs, although some are under development."
-      },
-      {
-        "text": "Antibiotics are first-line therapy for rhinovirus infection",
-        "isCorrect": false,
-        "rationale": "Wrong because antibiotics do not treat viral infections; if a bacterial superinfection were documented antibiotics would be indicated."
-      },
-      {
-        "text": "High-dose bleach ingestion is an effective systemic therapy",
-        "isCorrect": false,
-        "rationale": "Wrong and dangerous; bleach is a disinfectant and not a systemic therapy; if a safe systemic antiviral existed this would be correct."
-      },
-      {
-        "text": "Rhinovirus infections are treated with live attenuated vaccines acutely",
-        "isCorrect": false,
-        "rationale": "Wrong because vaccines are preventive and not used as acute therapy; if an emergency therapeutic vaccine existed this would be different."
-      },
-      {
-        "text": "Enviroxime is the approved standard antiviral for rhinovirus",
-        "isCorrect": false,
-        "rationale": "Wrong because enviroxime was toxic and ineffective in humans per the lecture; approval would be required to make this correct."
-      }
-    ]
-  },
-  {
-    "question": "A researcher studying viral diversity notes both misincorporation errors and recombination in picornaviruses. According to the lecture, which two processes together explain the origins of diversity?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "Describe the classification, common/key structural and physiological properties of the members of Picornaviridae.",
-    "options": [
-      {
-        "text": "High misincorporation rate and template-switching recombination",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture lists misincorporation due to lack of proofreading and recombination via template switching as origins of diversity."
-      },
-      {
-        "text": "Host DNA repair and chromosomal recombination",
-        "isCorrect": false,
-        "rationale": "Wrong because viral RdRp errors and template switching, not host DNA repair, are emphasized; if host DNA repair drove diversity this would be correct."
-      },
-      {
-        "text": "Segmented genome reassortment and antigenic shift",
-        "isCorrect": false,
-        "rationale": "Wrong because picornaviruses are unsegmented and antigenic shift via reassortment is not applicable; segmentation would be required."
-      },
-      {
-        "text": "Reverse transcription errors and integration into host genome",
-        "isCorrect": false,
-        "rationale": "Wrong because picornaviruses do not use reverse transcription; if reverse transcription occurred this could contribute to diversity differently."
-      },
-      {
-        "text": "Proofreading exonuclease activity and low mutation rate",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture states lack of proofreading leads to high mutation rates; presence of proofreading would reduce diversity."
-      }
-    ]
-  },
-  {
-    "question": "A hospitalized child with suspected enteroviral infection has lymphoid tissue involvement after intestinal entry. According to the lecture, which lymphoid structures are implicated as primary infection sites for non-rhino enteroviruses?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
-    "options": [
-      {
-        "text": "Peyer's patches and associated lymphoid organs",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture indicates M-cell and Peyer's patch infection and lymphoid organs are likely primary sites for non-rhino enteroviruses."
-      },
-      {
-        "text": "Tonsils only without intestinal involvement",
-        "isCorrect": false,
-        "rationale": "Wrong because non-rhino enteroviruses primarily involve intestinal lymphoid tissue; if infection were limited to tonsils this would be different."
-      },
-      {
-        "text": "Splenic white pulp exclusively",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture emphasizes gut-associated lymphoid tissue like Peyer's patches rather than spleen as primary sites; if splenic infection predominated this would be correct."
-      },
-      {
-        "text": "Bronchus-associated lymphoid tissue as the primary site",
-        "isCorrect": false,
-        "rationale": "Wrong because bronchus-associated lymphoid tissue is more relevant to respiratory pathogens like rhinovirus; if the virus were rhinovirus this could be relevant."
-      },
-      {
-        "text": "Bone marrow stromal cells as initial infection site",
-        "isCorrect": false,
-        "rationale": "Wrong because bone marrow is not described as a primary site for enterovirus entry; if hematopoietic infection were primary this would be different."
-      }
-    ]
-  },
-  {
-    "question": "A clinician is asked to identify which clinical syndrome is most likely caused by enterovirus EV-D68 as described in the lecture. Which syndrome is correct?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
-    "options": [
-      {
-        "text": "Respiratory illness and association with acute flaccid myelitis",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture lists EV-D68 among viruses associated with respiratory disease and acute flaccid myelitis."
-      },
-      {
-        "text": "Acute hemorrhagic conjunctivitis as the primary syndrome",
-        "isCorrect": false,
-        "rationale": "Wrong because EV-D70 and CV-A24 are classically linked to hemorrhagic conjunctivitis; if EV-D68 were primarily ocular this would be correct."
-      },
-      {
-        "text": "Exclusive cause of hand-foot-and-mouth disease",
-        "isCorrect": false,
-        "rationale": "Wrong because HFMD is more commonly caused by EV-A71 and CV-A16; if EV-D68 commonly caused HFMD this would be different."
-      },
-      {
-        "text": "Primary cause of poliomyelitis-like paralysis historically",
-        "isCorrect": false,
-        "rationale": "Wrong because poliovirus historically causes paralytic disease; EV-D68 is linked to AFM but not the classic poliovirus history."
-      },
-      {
-        "text": "Chronic hepatitis leading to cirrhosis",
-        "isCorrect": false,
-        "rationale": "Wrong because EV-D68 is respiratory/neurotropic, not hepatotropic; if it caused chronic hepatitis this would be required."
-      }
-    ]
-  },
-  {
-    "question": "A patient with suspected rhinovirus infection is noted to have virus recovered from adenoid lymphoid tissue experimentally. According to the lecture, what does this finding suggest about rhinovirus infection?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
-    "options": [
-      {
-        "text": "Rhinovirus primarily infects respiratory epithelium but can involve adjacent lymphoid tissue",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture states rhinovirus infections are restricted to respiratory epithelial cells and adjacent lymphoid tissue, with virus recoverable from lymphoid cells experimentally."
-      },
-      {
-        "text": "Rhinovirus primarily infects intestinal Peyer's patches",
-        "isCorrect": false,
-        "rationale": "Wrong because intestinal lymphoid infection is characteristic of non-rhino enteroviruses; if rhinovirus targeted Peyer's patches this would be correct."
-      },
-      {
-        "text": "Recovery from adenoids indicates systemic viremia is required",
-        "isCorrect": false,
-        "rationale": "Wrong because local lymphoid involvement does not imply systemic viremia; if viremia were necessary for lymphoid infection this would be different."
-      },
-      {
-        "text": "Adenoid recovery proves rhinovirus is an enteric pathogen",
-        "isCorrect": false,
-        "rationale": "Wrong because adenoid recovery reflects respiratory lymphoid involvement, not enteric tropism; enteric pathogens primarily infect intestinal tissues."
-      },
-      {
-        "text": "Virus in adenoids indicates chronic persistent infection only",
-        "isCorrect": false,
-        "rationale": "Wrong because detection in lymphoid tissue can occur during acute infection; proving chronic persistence would require longitudinal data."
-      }
-    ]
-  },
-  {
-    "question": "A clinical vignette: A 6-year-old child presents with fever, sore throat, and posterior oropharyngeal ulcers. Two days later, several household contacts develop similar symptoms after close contact. Based on the lecture, which transmission route most likely explains the rapid household spread?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
-    "options": [
-      {
-        "text": "Respiratory droplet and fomite transmission from infected respiratory secretions",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture describes rhinovirus spread via droplets and contaminated surfaces leading to close-contact household transmission; this explains rapid spread among contacts."
-      },
-      {
-        "text": "Fecal-oral transmission from contaminated food handled by the child",
-        "isCorrect": false,
-        "rationale": "Wrong because fecal-oral spread is characteristic of non-rhino enteroviruses; if the child had fecal contamination and enteric symptoms this would be plausible."
-      },
-      {
-        "text": "Vector-borne transmission via household insects",
-        "isCorrect": false,
-        "rationale": "Wrong because the lecture does not describe insect vectors for rhinovirus; if vectors were implicated this would be different."
-      },
-      {
-        "text": "Transmission via blood transfusion among household members",
-        "isCorrect": false,
-        "rationale": "Wrong because bloodborne spread is not described for common cold viruses; if transfusion exposure occurred this could transmit bloodborne pathogens."
-      },
-      {
-        "text": "Vertical maternal-fetal transmission causing simultaneous illness",
-        "isCorrect": false,
-        "rationale": "Wrong because vertical transmission does not explain rapid household spread among unrelated contacts; if all were neonates exposed in utero this would be relevant."
-      }
-    ]
-  },
-  {
-    "question": "A 3rd-order clinical vignette: A 4-year-old previously healthy child presents with fever, drooling, and painful posterior oropharyngeal ulcers. Examination shows small whitish ulcers on the soft palate and tonsillar pillars. Which next best step aligns with the lecture's guidance for likely herpangina caused by enterovirus?",
+    "question": "A child in daycare transmits a virus that later increases bacterial colonization with Streptococcus pneumoniae and leads to otitis media. Which virus from the lecture most likely caused this sequence?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
     "options": [
       {
-        "text": "Provide supportive care with hydration pain control and observation",
+        "text": "Rhinovirus causing upper respiratory infection",
         "isCorrect": true,
-        "rationale": "Correct because the lecture describes herpangina as an enteroviral illness characterized by painful posterior oral ulcers in children; management is supportive as no specific antiviral is approved."
+        "rationale": "Correct: Lecture links rhinovirus infections to increased prevalence of bacterial pathogens like S. pneumoniae and complications such as otitis media."
       },
       {
-        "text": "Start high-dose intravenous antibiotics immediately",
+        "text": "Poliovirus causing paralytic disease",
         "isCorrect": false,
-        "rationale": "Wrong because herpangina is viral and antibiotics are not indicated unless bacterial superinfection is suspected; if bacterial pharyngitis were confirmed antibiotics would be appropriate."
+        "rationale": "Wrong: Poliovirus causes febrile illness and possible paralysis, not the bacterial colonization–otitis sequence; it would be correct if paralysis were described."
       },
       {
-        "text": "Administer oral pleconaril as first-line antiviral therapy",
+        "text": "Coxsackie B causing myocarditis",
         "isCorrect": false,
-        "rationale": "Wrong because the lecture notes no approved antivirals despite investigational compounds; pleconaril is not an approved standard therapy."
+        "rationale": "Wrong: Coxsackie B is associated with myocarditis, not increased nasopharyngeal bacterial colonization leading to otitis media."
       },
       {
-        "text": "Perform immediate surgical drainage of palatal ulcers",
+        "text": "Enterovirus A causing hand-foot-mouth disease",
         "isCorrect": false,
-        "rationale": "Wrong because ulcers are viral mucosal lesions not abscesses; drainage would be inappropriate unless an abscess were present."
+        "rationale": "Wrong: EV-A causes HFMD and herpangina, not the described bacterial otitis media complication; it would be correct if vesicular lesions were present."
       },
       {
-        "text": "Admit for urgent poliovirus-specific antitoxin therapy",
+        "text": "Adenovirus causing conjunctivitis",
         "isCorrect": false,
-        "rationale": "Wrong because poliovirus antitoxin is not a described therapy and herpangina is not poliomyelitis; if poliovirus paralysis were present this would be different."
+        "rationale": "Wrong: Adenovirus is not a picornavirus and is outside the lecture’s enterovirus/rhinovirus focus; it would be correct only if adenoviral conjunctivitis were the scenario."
       }
     ]
   },
   {
-    "question": "A 3rd-order vignette: A 7-year-old child develops acute asymmetric flaccid weakness of the right arm two weeks after a respiratory illness. MRI shows spinal cord anterior horn lesions. Based on the lecture, which enterovirus is most plausibly implicated and what is the most likely pathophysiologic target?",
-    "difficulty_order": "3rd",
+    "question": "Which clinical manifestation is most characteristic of Coxsackie B enterovirus infection as emphasized in the lecture?",
+    "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
     "options": [
       {
-        "text": "Enterovirus D68 targeting anterior horn motor neurons causing acute flaccid myelitis",
+        "text": "Myocarditis with possible cardiac damage",
         "isCorrect": true,
-        "rationale": "Correct because the lecture links EV-D68 with respiratory illness and acute flaccid myelitis, and poliomyelitis-like paralysis results from anterior horn motor neuron damage."
+        "rationale": "Correct: Coxsackie B viruses are linked to myocarditis and can cause cardiac inflammation and damage."
       },
       {
-        "text": "Rhinovirus infection targeting ciliated epithelial cells causing limb weakness",
+        "text": "Acute hemorrhagic conjunctivitis",
         "isCorrect": false,
-        "rationale": "Wrong because rhinovirus targets respiratory epithelium and predisposes to airway disease, not anterior horn motor neuron injury; if rhinovirus were neurotropic this would be different."
+        "rationale": "Wrong: Acute hemorrhagic conjunctivitis is associated with EV-A24, not Coxsackie B; it would be correct for EV-A24 scenarios."
       },
       {
-        "text": "Coxsackie A16 targeting sensory dorsal root ganglia causing motor paralysis",
+        "text": "Hand-foot-and-mouth vesicular rash",
         "isCorrect": false,
-        "rationale": "Wrong because CV-A16 is associated with HFMD and not classically with AFM; if CV-A16 targeted motor neurons this would be correct."
+        "rationale": "Wrong: HFMD is associated with EV-A71 and certain Coxsackie A types, not Coxsackie B; it would be correct for EV-A or Coxsackie A cases."
       },
       {
-        "text": "Poliovirus targeting cerebellar Purkinje cells causing flaccid limb weakness",
+        "text": "Paralytic spinal polio",
         "isCorrect": false,
-        "rationale": "Wrong because poliovirus targets anterior horn motor neurons, not Purkinje cells; if cerebellar involvement produced ataxia rather than flaccid paralysis this would be different."
+        "rationale": "Wrong: Paralytic disease is characteristic of poliovirus, not Coxsackie B; it would be correct if poliovirus were the agent."
       },
       {
-        "text": "Enterovirus A71 targeting hepatocytes causing neurologic weakness",
+        "text": "Chronic hepatitis with jaundice",
         "isCorrect": false,
-        "rationale": "Wrong because EV-A71 can cause neurologic disease but the classic AFM association in this scenario is EV-D68 targeting motor neurons; hepatocyte targeting would not explain spinal cord lesions."
+        "rationale": "Wrong: Hepatitis is not described as a Coxsackie B manifestation in the lecture; it would be correct only if liver involvement were documented."
       }
     ]
   },
   {
-    "question": "A 3rd-order vignette: A 2-year-old unimmunized child develops fever and asymmetric flaccid paralysis. The clinician must decide between administering inactivated poliovirus vaccine or supportive care. Based on the lecture's vaccine discussion and acute paralytic disease, what is the most appropriate immediate action?",
+    "question": "Which statement best contrasts transmission routes between rhinoviruses and non-rhinovirus enteroviruses?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
+    "options": [
+      {
+        "text": "Rhinovirus: contact/droplet; Enterovirus: fecal-oral",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture contrasts rhinovirus contact/droplet and fomite spread with non-rhino enteroviruses’ fecal-oral shedding and surface persistence."
+      },
+      {
+        "text": "Rhinovirus: vector-borne; Enterovirus: airborne long-range",
+        "isCorrect": false,
+        "rationale": "Wrong: Neither vector-borne nor long-range airborne transmission is supported; changing to contact and fecal-oral would make it correct."
+      },
+      {
+        "text": "Rhinovirus: waterborne; Enterovirus: sexual",
+        "isCorrect": false,
+        "rationale": "Wrong: Waterborne and sexual routes are not the primary modes described; correct contrast is contact/droplet vs fecal-oral."
+      },
+      {
+        "text": "Rhinovirus: vertical maternal; Enterovirus: zoonotic",
+        "isCorrect": false,
+        "rationale": "Wrong: Vertical and zoonotic routes are not emphasized; this would be correct only if those routes were documented."
+      },
+      {
+        "text": "Rhinovirus: foodborne; Enterovirus: respiratory droplets",
+        "isCorrect": false,
+        "rationale": "Wrong: This reverses the lecture’s distinctions; swapping the routes would be needed to make it correct."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental observation supports that rhinovirus transmission often requires short-distance droplets or direct contact rather than long-range aerosol spread?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
+    "options": [
+      {
+        "text": "Mesh barrier prevented infection without hand contact",
+        "isCorrect": true,
+        "rationale": "Correct: The mesh experiment showed low transmission across a barrier unless direct contact occurred, supporting short-distance/contact spread."
+      },
+      {
+        "text": "Infected subject caused 100% illness across barrier",
+        "isCorrect": false,
+        "rationale": "Wrong: That result was observed with influenza, not rhinovirus; if rhinovirus caused 100% across barrier this option would be correct."
+      },
+      {
+        "text": "Virus persisted only in sewage samples",
+        "isCorrect": false,
+        "rationale": "Wrong: Sewage persistence pertains to non-rhino enteroviruses; it would be correct for fecal-oral enteroviruses, not rhinovirus."
+      },
+      {
+        "text": "Transmission required insect vector presence",
+        "isCorrect": false,
+        "rationale": "Wrong: No insect vector was described; this would be correct only if vector studies showed transmission."
+      },
+      {
+        "text": "Air sampling detected high distant aerosol titers",
+        "isCorrect": false,
+        "rationale": "Wrong: Lecture did not report distant aerosol detection for rhinovirus; such a finding would support long-range airborne spread."
+      }
+    ]
+  },
+  {
+    "question": "A volunteer inoculated intranasally with rhinovirus sheds virus from the upper airway peaking at 2–4 days. Which clinical implication follows from this shedding pattern?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
     "options": [
       {
-        "text": "Provide supportive care and arrange urgent neurologic evaluation rather than vaccinating acutely",
+        "text": "Peak infectivity occurs early after symptom onset",
         "isCorrect": true,
-        "rationale": "Correct because acute paralytic disease requires immediate supportive and neurologic management; vaccination is preventive and not a treatment for established paralysis per the lecture's vaccine distinctions."
+        "rationale": "Correct: Peak viral shedding 2–4 days post-inoculation implies early peak infectivity, increasing transmission risk soon after symptoms begin."
       },
       {
-        "text": "Administer live oral Sabin vaccine immediately to treat paralysis",
+        "text": "Shedding is negligible during first week",
         "isCorrect": false,
-        "rationale": "Wrong because Sabin is preventive and contraindicated in immunodeficient patients; it does not treat acute paralysis and could risk vaccine-associated paralysis."
+        "rationale": "Wrong: Lecture states shedding peaks at 2–4 days; negligible first-week shedding contradicts that and would be correct only if peak were later."
       },
       {
-        "text": "Give high-dose bleach orally to inactivate virus systemically",
+        "text": "Chronic lifelong shedding is typical",
         "isCorrect": false,
-        "rationale": "Wrong and dangerous; bleach is a disinfectant not a systemic therapy; if a specific antiviral existed this would be considered."
+        "rationale": "Wrong: Chronic lifelong shedding is not described for rhinovirus; it would be correct only if persistent shedding were documented."
       },
       {
-        "text": "Delay evaluation and rely on home remedies because most cases resolve spontaneously",
+        "text": "Shedding peaks only after two months",
         "isCorrect": false,
-        "rationale": "Wrong because acute flaccid paralysis requires prompt evaluation; assuming spontaneous resolution without assessment contradicts appropriate care."
+        "rationale": "Wrong: Peak at 2–4 days contradicts a two-month peak; this would be correct only if delayed shedding were observed."
       },
       {
-        "text": "Administer killed Salk vaccine intramuscularly to reverse existing neurologic damage",
+        "text": "Shedding occurs exclusively from feces",
         "isCorrect": false,
-        "rationale": "Wrong because Salk vaccine prevents future infection but does not reverse established neurologic injury; if given earlier as prevention this would be appropriate."
+        "rationale": "Wrong: Rhinovirus sheds from the upper airway; fecal shedding is characteristic of non-rhino enteroviruses."
+      }
+    ]
+  },
+  {
+    "question": "Which tissue infection explains rhinovirus-associated asthma exacerbations described in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the clinical importance of respiratory viruses and the key species affiliated with acute respiratory disease symptoms (ARDS).",
+    "options": [
+      {
+        "text": "Infection of respiratory ciliated epithelial cells",
+        "isCorrect": true,
+        "rationale": "Correct: Rhinovirus targets respiratory ciliated epithelium; infection there can trigger airway inflammation and asthma exacerbations."
+      },
+      {
+        "text": "Primary infection of intestinal M cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Intestinal M cells are entry points for non-rhino enteroviruses; they do not explain respiratory asthma exacerbations."
+      },
+      {
+        "text": "Direct infection of cardiac myocytes",
+        "isCorrect": false,
+        "rationale": "Wrong: Cardiac myocyte infection relates to Coxsackie B myocarditis, not rhinovirus-induced asthma exacerbation."
+      },
+      {
+        "text": "Infection confined to conjunctival epithelium",
+        "isCorrect": false,
+        "rationale": "Wrong: Conjunctival infection causes ocular disease like hemorrhagic conjunctivitis, not asthma exacerbation; would be correct for EV-A24."
+      },
+      {
+        "text": "Neuronal infection of brainstem respiratory centers",
+        "isCorrect": false,
+        "rationale": "Wrong: Brainstem neuronal infection is not the mechanism described for rhinovirus-triggered asthma; it would be correct only if neuroinvasion caused respiratory dysfunction."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical syndrome is most rapidly progressive with conjunctival hemorrhage and possible keratitis as described for a specific enterovirus in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
+    "options": [
+      {
+        "text": "Acute hemorrhagic conjunctivitis due to EV-A24",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes acute hemorrhagic conjunctivitis with rapid onset and hemorrhages associated with EV-A24."
+      },
+      {
+        "text": "Herpangina due to Coxsackie B",
+        "isCorrect": false,
+        "rationale": "Wrong: Herpangina is linked to Coxsackie A types, not Coxsackie B; it would be correct if Coxsackie A were named."
+      },
+      {
+        "text": "Hand-foot-and-mouth disease due to Coxsackie B",
+        "isCorrect": false,
+        "rationale": "Wrong: HFMD is associated with EV-A71 and Coxsackie A types, not Coxsackie B; it would be correct for EV-A or Coxsackie A."
+      },
+      {
+        "text": "Aseptic meningitis due to rhinovirus",
+        "isCorrect": false,
+        "rationale": "Wrong: Aseptic meningitis is more commonly linked to enteroviruses like Coxsackie or echovirus, not rhinovirus; it would be correct if an enterovirus causing meningitis were specified."
+      },
+      {
+        "text": "Paralytic poliomyelitis due to EV-A24",
+        "isCorrect": false,
+        "rationale": "Wrong: Poliovirus causes paralytic disease; EV-A24 causes conjunctivitis, so this pairing is incorrect."
+      }
+    ]
+  },
+  {
+    "question": "Which feature explains why bleach is recommended for decontamination of surfaces contaminated with enteroviruses?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the classification, common/key structural and physiological properties of the members of Picornaviridae.",
+    "options": [
+      {
+        "text": "Enteroviruses are sensitive to 10% bleach",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states non-rhino enteroviruses are resistant to many agents but are sensitive to 10% bleach, supporting bleach use."
+      },
+      {
+        "text": "Enteroviruses are inactivated by mild detergents",
+        "isCorrect": false,
+        "rationale": "Wrong: Lecture notes resistance to detergents; mild detergents alone would not reliably inactivate them."
+      },
+      {
+        "text": "Enteroviruses require lipid solvents for inactivation",
+        "isCorrect": false,
+        "rationale": "Wrong: Non-enveloped viruses are resistant to solvents; lipid solvents are effective against enveloped viruses, not these."
+      },
+      {
+        "text": "Enteroviruses are heat-labile at room temperature",
+        "isCorrect": false,
+        "rationale": "Wrong: Lecture indicates resistance to heat; being heat-labile at room temperature contradicts that statement."
+      },
+      {
+        "text": "Enteroviruses are neutralized by alcohol hand rubs",
+        "isCorrect": false,
+        "rationale": "Wrong: Resistance to detergents and solvents suggests alcohol rubs may be less effective; this would be correct only if alcohol efficacy were documented."
+      }
+    ]
+  },
+  {
+    "question": "Which pathophysiologic step is most likely blocked by enviroxime according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the classification, common/key structural and physiological properties of the members of Picornaviridae.",
+    "options": [
+      {
+        "text": "Nonstructural protein 3A inhibiting RNA synthesis",
+        "isCorrect": true,
+        "rationale": "Correct: Enviroxime targets nonstructural protein 3A and blocks synthesis of positive-sense RNA as described."
+      },
+      {
+        "text": "Capsid pocket preventing viral entry",
+        "isCorrect": false,
+        "rationale": "Wrong: Capsid pocket binders like pleconaril act on entry; enviroxime targets 3A and RNA synthesis, not the capsid."
+      },
+      {
+        "text": "Host ribosome blockade of translation",
+        "isCorrect": false,
+        "rationale": "Wrong: Enviroxime inhibits viral nonstructural protein 3A and RNA synthesis, not host ribosomal translation; it would be correct if translation were targeted."
+      },
+      {
+        "text": "Viral protease inhibition preventing polyprotein cleavage",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture does not describe enviroxime as a protease inhibitor; that would be correct only if protease inhibition were specified."
+      },
+      {
+        "text": "Reverse transcriptase inhibition of cDNA formation",
+        "isCorrect": false,
+        "rationale": "Wrong: Picornaviridae do not use reverse transcriptase; RT inhibition is irrelevant to enviroxime’s described mechanism."
+      }
+    ]
+  },
+  {
+    "question": "A patient presents with rapid-onset conjunctival hemorrhage and periorbital swelling over 48 hours after exposure at a crowded clinic. Which enterovirus species from the lecture is the most likely cause?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
+    "options": [
+      {
+        "text": "Enterovirus A species (EV-A24) infection",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture links acute hemorrhagic conjunctivitis with EV-A24, which presents with rapid onset and conjunctival hemorrhage."
+      },
+      {
+        "text": "Coxsackie B (Enterovirus B) infection",
+        "isCorrect": false,
+        "rationale": "Wrong: Coxsackie B is associated with myocarditis, not acute hemorrhagic conjunctivitis; it would be correct if cardiac symptoms were present."
+      },
+      {
+        "text": "Rhinovirus infection of upper airway",
+        "isCorrect": false,
+        "rationale": "Wrong: Rhinovirus causes common cold and respiratory symptoms, not the hemorrhagic conjunctivitis described; it would be correct if upper respiratory signs predominated."
+      },
+      {
+        "text": "Poliovirus (Enterovirus C) paralytic infection",
+        "isCorrect": false,
+        "rationale": "Wrong: Poliovirus causes paralytic disease and meningitis, not acute hemorrhagic conjunctivitis; it would be correct if paralysis were present."
+      },
+      {
+        "text": "Adenovirus ocular infection",
+        "isCorrect": false,
+        "rationale": "Wrong: Adenovirus is not an enterovirus and is outside the lecture’s picornavirus examples; it would be correct only if adenoviral features were documented."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental behavior increased rhinovirus transmission to healthy volunteers in the contact experiment?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
+    "options": [
+      {
+        "text": "Infected subject touched others after nose scratching",
+        "isCorrect": true,
+        "rationale": "Correct: The experiment where the infected subject scratched nose then touched others led to transmission, supporting contact spread."
+      },
+      {
+        "text": "Infected subject remained isolated behind mesh",
+        "isCorrect": false,
+        "rationale": "Wrong: Isolation behind mesh prevented transmission in the rhinovirus experiment; if mesh did not prevent spread this would be correct."
+      },
+      {
+        "text": "Healthy subjects wore masks but shared utensils",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture’s experiment emphasized direct hand contact; mask use with shared utensils was not the described variable."
+      },
+      {
+        "text": "Infected subject coughed continuously across barrier",
+        "isCorrect": false,
+        "rationale": "Wrong: Continuous coughing across a barrier would favor droplet/aerosol spread; the mesh experiment showed limited transmission without contact."
+      },
+      {
+        "text": "Infected subject contaminated water supply",
+        "isCorrect": false,
+        "rationale": "Wrong: Water contamination pertains to fecal-oral enteroviruses, not the rhinovirus contact experiments described."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical complication is commonly associated with rhinovirus infection according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
+    "options": [
+      {
+        "text": "Sinusitis and otitis media secondary bacterial infection",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture notes rhinovirus infections are associated with increased bacterial pathogens and complications like sinusitis and otitis media."
+      },
+      {
+        "text": "Acute hemorrhagic conjunctivitis with hemorrhage",
+        "isCorrect": false,
+        "rationale": "Wrong: Acute hemorrhagic conjunctivitis is linked to EV-A24, not rhinovirus; it would be correct for that enterovirus."
+      },
+      {
+        "text": "Paralytic asymmetric flaccid paralysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Paralytic disease is characteristic of poliovirus, not rhinovirus; it would be correct if poliovirus were the cause."
+      },
+      {
+        "text": "Viral myocarditis with cardiac failure",
+        "isCorrect": false,
+        "rationale": "Wrong: Myocarditis is associated with Coxsackie B, not rhinovirus; it would be correct if Coxsackie B infection were described."
+      },
+      {
+        "text": "Chronic hepatitis with cirrhosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Chronic hepatitis is not described as a rhinovirus complication in the lecture; it would be correct only if liver disease were documented."
+      }
+    ]
+  },
+  {
+    "question": "Which statement about enterovirus pathogenesis best reflects the lecture’s description of non-rhino enteroviruses after gastrointestinal entry?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
+    "options": [
+      {
+        "text": "Primary infection of lymphoid organs with variable secondary spread",
+        "isCorrect": true,
+        "rationale": "Correct: Lecture states lymphoid organs are primary sites for non-rhino enteroviruses with secondary infection depending on the virus."
+      },
+      {
+        "text": "Exclusive replication limited to intestinal lumen",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture indicates invasion of intestinal epithelium and lymphoid tissue, not exclusive luminal replication; exclusive lumen replication would be correct only if no tissue invasion occurred."
+      },
+      {
+        "text": "Immediate neuroinvasion in all cases",
+        "isCorrect": false,
+        "rationale": "Wrong: Neuroinvasion is virus-dependent and not immediate in all cases; it would be correct only if every enterovirus always invaded the CNS."
+      },
+      {
+        "text": "Replication only in respiratory ciliated cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Respiratory ciliated cells are primary for rhinovirus, not non-rhino enteroviruses; this would be correct for rhinovirus."
+      },
+      {
+        "text": "Obligate persistence in hepatocytes",
+        "isCorrect": false,
+        "rationale": "Wrong: Hepatocyte persistence is not described; this would be correct only if liver persistence were documented."
+      }
+    ]
+  },
+  {
+    "question": "Which vaccine comparison from the lecture distinguishes Salk and Sabin poliovirus vaccines?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the classification, common/key structural and physiological properties of the members of Picornaviridae.",
+    "options": [
+      {
+        "text": "Salk killed vaccine versus Sabin live vaccine",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explicitly contrasts the Salk killed vaccine with the Sabin live attenuated vaccine for poliovirus."
+      },
+      {
+        "text": "Salk live vaccine versus Sabin killed vaccine",
+        "isCorrect": false,
+        "rationale": "Wrong: This reverses the lecture’s comparison; swapping live and killed would make it correct."
+      },
+      {
+        "text": "Both Salk and Sabin are killed vaccines",
+        "isCorrect": false,
+        "rationale": "Wrong: Only Salk is killed; stating both are killed contradicts the lecture and would be correct only if Sabin were killed."
+      },
+      {
+        "text": "Both Salk and Sabin are live vaccines",
+        "isCorrect": false,
+        "rationale": "Wrong: Only Sabin is live attenuated; claiming both are live contradicts the lecture and would be correct only if Salk were live."
+      },
+      {
+        "text": "Neither vaccine induces neutralizing antibodies",
+        "isCorrect": false,
+        "rationale": "Wrong: Vaccines are intended to induce protective immunity; saying neither induces neutralizing antibodies contradicts vaccine purpose and lecture context."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical finding would most strongly suggest poliovirus infection rather than a typical rhinovirus infection?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
+    "options": [
+      {
+        "text": "Asymmetric flaccid paralysis of limbs",
+        "isCorrect": true,
+        "rationale": "Correct: Poliovirus can cause asymmetric flaccid paralysis (spinal polio), distinguishing it from rhinovirus which causes upper respiratory disease."
+      },
+      {
+        "text": "Acute onset nasal congestion and sneezing",
+        "isCorrect": false,
+        "rationale": "Wrong: Nasal congestion and sneezing are typical of rhinovirus; they would not distinguish poliovirus from rhinovirus."
+      },
+      {
+        "text": "Periorbital conjunctival hemorrhage",
+        "isCorrect": false,
+        "rationale": "Wrong: Conjunctival hemorrhage is linked to EV-A24 acute hemorrhagic conjunctivitis, not poliovirus paralysis; it would be correct for EV-A24."
+      },
+      {
+        "text": "Vesicular lesions on hands and feet",
+        "isCorrect": false,
+        "rationale": "Wrong: Vesicular lesions indicate HFMD from EV-A or Coxsackie A, not poliovirus paralysis; it would be correct for HFMD agents."
+      },
+      {
+        "text": "Subacute myocarditis with chest pain",
+        "isCorrect": false,
+        "rationale": "Wrong: Myocarditis is associated with Coxsackie B, not classic poliovirus paralysis; it would be correct if cardiac involvement were present."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental result would most directly support fomite-mediated rhinovirus transmission?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
+    "options": [
+      {
+        "text": "Virus transfer from contaminated hands to eyes causes infection",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture’s contact experiment showed that touching after nasal contamination then touching eyes/nose led to infection, supporting fomite-mediated transmission."
+      },
+      {
+        "text": "Airborne particles infect across a mesh barrier without contact",
+        "isCorrect": false,
+        "rationale": "Wrong: That result would support long-range airborne spread, which the rhinovirus mesh experiment did not show; it would be correct only if mesh transmission occurred."
+      },
+      {
+        "text": "Virus survives only in sewage samples",
+        "isCorrect": false,
+        "rationale": "Wrong: Sewage survival pertains to fecal-oral enteroviruses, not rhinovirus fomite transmission; it would be correct for non-rhino enteroviruses."
+      },
+      {
+        "text": "Insect bites transmit virus between volunteers",
+        "isCorrect": false,
+        "rationale": "Wrong: No insect vector is described; this would be correct only if vector transmission experiments were positive."
+      },
+      {
+        "text": "Virus requires ingestion to infect volunteers",
+        "isCorrect": false,
+        "rationale": "Wrong: Ingestion and fecal-oral spread are characteristic of non-rhino enteroviruses, not rhinovirus fomite transmission."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical scenario best matches Coxsackie A virus infection described in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
+    "options": [
+      {
+        "text": "Child with oral ulcers and vesicles on hands and feet",
+        "isCorrect": true,
+        "rationale": "Correct: Hand-foot-and-mouth disease and herpangina (oral lesions) are associated with Coxsackie A and EV-A71 as described."
+      },
+      {
+        "text": "Adult with acute flaccid limb paralysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Acute flaccid paralysis suggests poliovirus, not Coxsackie A; it would be correct if poliovirus were implicated."
+      },
+      {
+        "text": "Teenager with subacute myocarditis",
+        "isCorrect": false,
+        "rationale": "Wrong: Myocarditis is linked to Coxsackie B, not Coxsackie A; it would be correct for Coxsackie B infection."
+      },
+      {
+        "text": "Infant with hemorrhagic conjunctivitis",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemorrhagic conjunctivitis is associated with EV-A24, not typically Coxsackie A; it would be correct for EV-A24."
+      },
+      {
+        "text": "Elderly patient with chronic sinusitis only",
+        "isCorrect": false,
+        "rationale": "Wrong: Chronic sinusitis alone is not the classic Coxsackie A presentation; HFMD/herpangina features would be needed to make it correct."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory or epidemiologic observation would most strongly implicate non-rhino enteroviruses in community spread?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
+    "options": [
+      {
+        "text": "High viral titers detected in sewage samples",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture cites poliovirus isolation from stools and potential sewage concentration, supporting sewage surveillance for enterovirus spread."
+      },
+      {
+        "text": "Peak nasal shedding at 2–4 days post-inoculation",
+        "isCorrect": false,
+        "rationale": "Wrong: Peak nasal shedding describes rhinovirus, not fecal-oral enteroviruses; it would be correct for rhinovirus epidemiology."
+      },
+      {
+        "text": "Transmission only after direct hand-to-hand contact",
+        "isCorrect": false,
+        "rationale": "Wrong: While contact can spread many viruses, non-rhino enteroviruses are primarily fecal-oral and shed in feces; hand-to-hand only would not capture fecal-oral dynamics."
+      },
+      {
+        "text": "Insect vector population correlates with cases",
+        "isCorrect": false,
+        "rationale": "Wrong: Insect vectors are not described for enteroviruses; this would be correct only if vector-borne transmission were documented."
+      },
+      {
+        "text": "Universal mask use eliminates cases",
+        "isCorrect": false,
+        "rationale": "Wrong: Masking targets respiratory spread; fecal-oral enteroviruses in sewage would not be eliminated solely by masks."
+      }
+    ]
+  },
+  {
+    "question": "Which statement about antigenic diversity in picornaviruses is emphasized in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the classification, common/key structural and physiological properties of the members of Picornaviridae.",
+    "options": [
+      {
+        "text": "Lack of RdRp proofreading increases antigenic drift",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture highlights that viral RdRp lacks proofreading, causing misincorporation and antigenic drift."
+      },
+      {
+        "text": "Host adaptive immunity drives recombination",
+        "isCorrect": false,
+        "rationale": "Wrong: While immune pressure can select variants, the lecture cites recombination and RdRp errors as diversity origins; host immunity alone is not the stated mechanism."
+      },
+      {
+        "text": "High-fidelity replication limits diversity",
+        "isCorrect": false,
+        "rationale": "Wrong: High-fidelity replication would reduce diversity; the lecture states the opposite due to lack of proofreading."
+      },
+      {
+        "text": "DNA polymerase errors cause antigenic drift",
+        "isCorrect": false,
+        "rationale": "Wrong: RNA viruses’ diversity arises from RdRp errors, not DNA polymerase errors; this would be correct for DNA viruses."
+      },
+      {
+        "text": "Antigenic shift via segmented genome reassortment",
+        "isCorrect": false,
+        "rationale": "Wrong: Picornaviruses are non-segmented; reassortment-driven antigenic shift is not applicable and would be correct only for segmented viruses."
+      }
+    ]
+  },
+  {
+    "question": "Which management approach is recommended for uncomplicated rhinovirus infection in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
+    "options": [
+      {
+        "text": "Symptomatic treatment and watch for complications",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture advises alleviating symptoms and monitoring for complications like asthma exacerbation or otitis media."
+      },
+      {
+        "text": "Immediate antiviral therapy with enviroxime",
+        "isCorrect": false,
+        "rationale": "Wrong: Enviroxime is toxic and ineffective in humans per the lecture; it would be correct only if an effective antiviral were available."
+      },
+      {
+        "text": "Routine administration of live polio vaccine",
+        "isCorrect": false,
+        "rationale": "Wrong: Polio vaccination is unrelated to treating rhinovirus; it would be correct only for poliovirus prevention contexts."
+      },
+      {
+        "text": "Empiric broad-spectrum antibiotics for all cases",
+        "isCorrect": false,
+        "rationale": "Wrong: Antibiotics are not indicated for viral rhinovirus unless bacterial complication occurs; they would be correct only with documented bacterial infection."
+      },
+      {
+        "text": "Immediate surgical drainage of sinuses",
+        "isCorrect": false,
+        "rationale": "Wrong: Surgical drainage is not first-line for uncomplicated rhinovirus; it would be correct only for severe suppurative sinusitis."
+      }
+    ]
+  },
+  {
+    "question": "Which observation would indicate persistent rhinovirus infection in lymphoid tissue as noted in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
+    "options": [
+      {
+        "text": "Recovery of virus from adenoid B and CD4 cells",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states rhinoviruses can persist in B and CD4 lymphocytes in adenoid tissue, so recovery from these cells indicates persistence."
+      },
+      {
+        "text": "Isolation of virus only from stool samples",
+        "isCorrect": false,
+        "rationale": "Wrong: Stool isolation is characteristic of fecal-oral enteroviruses like poliovirus, not rhinovirus lymphoid persistence."
+      },
+      {
+        "text": "Exclusive infection of intestinal Peyer’s patches",
+        "isCorrect": false,
+        "rationale": "Wrong: Peyer’s patch infection is described for non-rhino enteroviruses; exclusive Peyer’s patch infection would not indicate rhinovirus persistence."
+      },
+      {
+        "text": "Detection only in nasal secretions for one day",
+        "isCorrect": false,
+        "rationale": "Wrong: Short nasal detection does not demonstrate lymphoid persistence; prolonged recovery from lymphoid cells would be required."
+      },
+      {
+        "text": "Serologic evidence of lifelong neutralizing antibodies",
+        "isCorrect": false,
+        "rationale": "Wrong: Serology alone does not prove lymphoid persistence; direct recovery from lymphoid cells is the lecture’s evidence."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical population is highlighted as a frequent source of rhinovirus transmission to adults in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
+    "options": [
+      {
+        "text": "Young children in daycare settings",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes transmission frequently comes from young children in daycare to adults at home."
+      },
+      {
+        "text": "Hospitalized elderly patients only",
+        "isCorrect": false,
+        "rationale": "Wrong: While elderly can transmit infections, the lecture specifically emphasizes daycare children as common transmitters to adults."
+      },
+      {
+        "text": "Asymptomatic sewage workers",
+        "isCorrect": false,
+        "rationale": "Wrong: Sewage workers relate to fecal-oral enteroviruses; they are not the lecture’s highlighted rhinovirus source."
+      },
+      {
+        "text": "Insect vectors in tropical regions",
+        "isCorrect": false,
+        "rationale": "Wrong: Insect vectors are not described for rhinovirus transmission; this would be correct only if vector transmission were documented."
+      },
+      {
+        "text": "Blood transfusion recipients",
+        "isCorrect": false,
+        "rationale": "Wrong: Blood transfusion is not described as a rhinovirus transmission route; it would be correct only if viremia and transfusion transmission were shown."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical test result would most strongly support a diagnosis of enteroviral aseptic meningitis in an infant, per lecture associations?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
+    "options": [
+      {
+        "text": "Enterovirus isolated from cerebrospinal fluid",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes enteroviruses (including Coxsackie B) are common causes of aseptic meningitis; CSF isolation supports the diagnosis."
+      },
+      {
+        "text": "Rhinovirus detected only in nasal swab",
+        "isCorrect": false,
+        "rationale": "Wrong: Nasal rhinovirus detection does not confirm CNS infection; CSF isolation would be needed for meningitis diagnosis."
+      },
+      {
+        "text": "High stool viral titers without CNS findings",
+        "isCorrect": false,
+        "rationale": "Wrong: Stool shedding indicates enteroviral GI infection but without CNS findings it does not confirm meningitis; CSF evidence would be required."
+      },
+      {
+        "text": "Positive blood culture for Streptococcus pneumoniae",
+        "isCorrect": false,
+        "rationale": "Wrong: Bacterial bloodstream infection suggests bacterial meningitis risk, not enteroviral aseptic meningitis; CSF viral detection would be needed."
+      },
+      {
+        "text": "Serum antibodies to adenovirus only",
+        "isCorrect": false,
+        "rationale": "Wrong: Adenovirus serology does not support enteroviral meningitis; CSF enterovirus detection would be necessary."
+      }
+    ]
+  },
+  {
+    "question": "Which public health observation from the lecture explains why asymptomatic individuals contribute to enterovirus spread?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
+    "options": [
+      {
+        "text": "Enteroviruses are shed in feces for long periods",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states non-rhino enteroviruses are shed in feces for long periods, enabling asymptomatic spread."
+      },
+      {
+        "text": "Rhinovirus causes prolonged fecal shedding",
+        "isCorrect": false,
+        "rationale": "Wrong: Prolonged fecal shedding is characteristic of non-rhino enteroviruses, not rhinovirus; this would be correct only if rhinovirus fecal shedding were documented."
+      },
+      {
+        "text": "All infected persons develop severe symptoms",
+        "isCorrect": false,
+        "rationale": "Wrong: Many enterovirus infections are asymptomatic; claiming all develop severe symptoms contradicts the lecture."
+      },
+      {
+        "text": "Enteroviruses are immediately inactivated in sewage",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture suggests enteroviruses can be present in sewage; immediate inactivation would contradict that observation."
+      },
+      {
+        "text": "Transmission requires visible skin lesions",
+        "isCorrect": false,
+        "rationale": "Wrong: Transmission can occur without visible lesions due to fecal shedding; requiring lesions would be incorrect."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical feature distinguishes hand-foot-and-mouth disease from herpangina as described in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
+    "options": [
+      {
+        "text": "Vesicular lesions on hands and feet",
+        "isCorrect": true,
+        "rationale": "Correct: Hand-foot-and-mouth disease is characterized by vesicular lesions on hands, feet, and mouth, distinguishing it from herpangina."
+      },
+      {
+        "text": "Whitish sores confined to oropharynx only",
+        "isCorrect": false,
+        "rationale": "Wrong: Whitish oropharyngeal sores describe herpangina, not HFMD; it would be correct for herpangina."
+      },
+      {
+        "text": "Rapid conjunctival hemorrhage and pain",
+        "isCorrect": false,
+        "rationale": "Wrong: Rapid hemorrhagic conjunctivitis is EV-A24, not HFMD; it would be correct for acute hemorrhagic conjunctivitis."
+      },
+      {
+        "text": "Asymmetric flaccid limb weakness",
+        "isCorrect": false,
+        "rationale": "Wrong: Asymmetric flaccid weakness indicates poliomyelitis, not HFMD; it would be correct for poliovirus infection."
+      },
+      {
+        "text": "Subacute myocarditis with arrhythmia",
+        "isCorrect": false,
+        "rationale": "Wrong: Myocarditis is associated with Coxsackie B, not HFMD; it would be correct for Coxsackie B infection."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental contrast in the lecture demonstrates that influenza transmits more readily across a barrier than rhinovirus?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
+    "options": [
+      {
+        "text": "Influenza caused 100% infection across mesh barrier",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture’s experiment showed influenza infected all healthy subjects across the mesh, unlike rhinovirus, indicating more efficient airborne spread."
+      },
+      {
+        "text": "Rhinovirus caused 100% infection across mesh barrier",
+        "isCorrect": false,
+        "rationale": "Wrong: Rhinovirus did not infect across the mesh in that experiment; if it had, this option would be correct."
+      },
+      {
+        "text": "Both viruses failed to transmit across barrier",
+        "isCorrect": false,
+        "rationale": "Wrong: Influenza transmitted across the barrier in the experiment; stating both failed contradicts the lecture."
+      },
+      {
+        "text": "Neither virus transmitted without direct ingestion",
+        "isCorrect": false,
+        "rationale": "Wrong: Influenza transmitted across the barrier without ingestion; this option would be correct only if ingestion were required."
+      },
+      {
+        "text": "Transmission required insect vectors for both",
+        "isCorrect": false,
+        "rationale": "Wrong: No insect vectors were involved; this would be correct only if vector transmission were demonstrated."
+      }
+    ]
+  },
+  {
+    "question": "Which management priority follows from recognizing rhinovirus infection as a trigger for bacterial superinfection?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
+    "options": [
+      {
+        "text": "Monitor for secondary bacterial sinusitis or otitis",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture emphasizes watching for complications like sinusitis and otitis media due to increased bacterial pathogens after rhinovirus infection."
+      },
+      {
+        "text": "Start empiric antibiotics immediately for all cases",
+        "isCorrect": false,
+        "rationale": "Wrong: Antibiotics are not routinely indicated for viral rhinovirus without evidence of bacterial complication; they would be correct only with confirmed bacterial infection."
+      },
+      {
+        "text": "Administer live attenuated polio vaccine",
+        "isCorrect": false,
+        "rationale": "Wrong: Polio vaccination is unrelated to treating rhinovirus-triggered bacterial complications; it would be correct only for poliovirus prevention."
+      },
+      {
+        "text": "Perform immediate cardiac MRI",
+        "isCorrect": false,
+        "rationale": "Wrong: Cardiac imaging is relevant for suspected myocarditis (Coxsackie B), not routine rhinovirus complications; it would be correct if myocarditis were suspected."
+      },
+      {
+        "text": "Isolate patient in negative-pressure room",
+        "isCorrect": false,
+        "rationale": "Wrong: Negative-pressure isolation is not described for routine rhinovirus; it would be correct only for airborne high-risk pathogens like tuberculosis."
+      }
+    ]
+  },
+  {
+    "question": "Which finding in a community outbreak would most strongly implicate rhinovirus rather than non-rhino enteroviruses?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the clinical importance of respiratory viruses and the key species affiliated with acute respiratory disease symptoms (ARDS).",
+    "options": [
+      {
+        "text": "Clusters of upper respiratory symptoms from daycare contacts",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture links rhinovirus spread from daycare children causing upper respiratory illness and secondary bacterial complications, supporting this outbreak pattern."
+      },
+      {
+        "text": "Widespread paralytic illness in adults",
+        "isCorrect": false,
+        "rationale": "Wrong: Paralytic illness suggests poliovirus or similar enterovirus, not rhinovirus; it would be correct if paralysis predominated."
+      },
+      {
+        "text": "High rates of hemorrhagic conjunctivitis",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemorrhagic conjunctivitis implicates EV-A24, not rhinovirus; it would be correct if ocular hemorrhage were the main feature."
+      },
+      {
+        "text": "Sewage viral titers without respiratory symptoms",
+        "isCorrect": false,
+        "rationale": "Wrong: Sewage detection points to fecal-oral enteroviruses; absence of respiratory symptoms would not support rhinovirus."
+      },
+      {
+        "text": "Predominant myocarditis cases in young adults",
+        "isCorrect": false,
+        "rationale": "Wrong: Myocarditis implicates Coxsackie B (Enterovirus B), not rhinovirus; it would be correct if cardiac cases predominated."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental or clinical observation would most directly contradict the lecture’s description of rhinovirus transmission?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
+    "options": [
+      {
+        "text": "High infection rates across physical barriers without contact",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture’s rhinovirus experiments showed low transmission across barriers unless contact occurred; high barrier transmission would contradict that finding."
+      },
+      {
+        "text": "Increased bacterial otitis after rhinovirus infection",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased bacterial otitis is consistent with the lecture and would not contradict rhinovirus transmission descriptions."
+      },
+      {
+        "text": "Virus recovery from adenoid lymphocytes",
+        "isCorrect": false,
+        "rationale": "Wrong: Recovery from lymphoid cells supports rhinovirus persistence and aligns with the lecture rather than contradicting it."
+      },
+      {
+        "text": "Fecal shedding for months in asymptomatic adults",
+        "isCorrect": false,
+        "rationale": "Wrong: Prolonged fecal shedding is described for non-rhino enteroviruses and would not contradict rhinovirus transmission statements; it would be expected for enteroviruses."
+      },
+      {
+        "text": "Enviroxime effective and safe in human trials",
+        "isCorrect": false,
+        "rationale": "Wrong: Lecture states enviroxime is toxic and ineffective in humans; human efficacy would contradict the lecture but is not an observation about transmission specifically."
+      }
+    ]
+  },
+  {
+    "question": "Which prevention measure is most directly supported by the lecture to reduce rhinovirus fomite transmission?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
+    "options": [
+      {
+        "text": "Hand hygiene and avoiding face touching",
+        "isCorrect": true,
+        "rationale": "Correct: The contact experiments showed transmission via contaminated hands to eyes/nose, so hand hygiene and avoiding face touching reduce fomite spread."
+      },
+      {
+        "text": "Universal sewage chlorination",
+        "isCorrect": false,
+        "rationale": "Wrong: Sewage chlorination targets fecal-oral enteroviruses; it is not the primary prevention for rhinovirus fomite transmission."
+      },
+      {
+        "text": "Routine administration of enviroxime prophylaxis",
+        "isCorrect": false,
+        "rationale": "Wrong: Enviroxime is toxic and ineffective in humans per the lecture; prophylactic use is not supported."
+      },
+      {
+        "text": "Widespread insect control programs",
+        "isCorrect": false,
+        "rationale": "Wrong: Insect vectors are not implicated in rhinovirus transmission; vector control would be irrelevant."
+      },
+      {
+        "text": "Immediate use of 10% bleach on skin",
+        "isCorrect": false,
+        "rationale": "Wrong: Bleach is recommended for surfaces; applying 10% bleach to skin is unsafe and not advised by the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which rationale explains why pleconaril showed promise against rhinovirus but is not an approved therapy according to the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the classification, common/key structural and physiological properties of the members of Picornaviridae.",
+    "options": [
+      {
+        "text": "Binds capsid pocket but no approved drugs exist",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes pleconaril/WIN compounds bind the capsid pocket and had good results, but states there are no approved drugs for picornaviruses."
+      },
+      {
+        "text": "Targets host 3A protein causing toxicity",
+        "isCorrect": false,
+        "rationale": "Wrong: Enviroxime targets 3A and had toxicity issues; pleconaril binds the capsid pocket, not 3A, so this option misattributes mechanism."
+      },
+      {
+        "text": "Enhances RdRp proofreading reducing efficacy",
+        "isCorrect": false,
+        "rationale": "Wrong: No drug enhancing RdRp proofreading is described; this would be correct only if such a mechanism were documented."
+      },
+      {
+        "text": "Requires reverse transcription to act",
+        "isCorrect": false,
+        "rationale": "Wrong: Pleconaril acts on capsid structure, not reverse transcription; RT dependence is irrelevant for picornaviruses."
+      },
+      {
+        "text": "Only effective against enveloped viruses",
+        "isCorrect": false,
+        "rationale": "Wrong: Pleconaril targets non-enveloped picornavirus capsids; stating it works only on enveloped viruses contradicts the lecture."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical pattern in infants under 3 months is most commonly linked to Enterovirus B (former Coxsackie B) per the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical manifestations of rhinoviruses and (non-rhinovirus) enterovirus (e.g. coxsackieviruses).",
+    "options": [
+      {
+        "text": "Aseptic meningitis with enterovirus isolation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture reports high rates of enterovirus (including CVB) in infants with aseptic meningitis, making this pattern characteristic."
+      },
+      {
+        "text": "Isolated upper respiratory rhinorrhea only",
+        "isCorrect": false,
+        "rationale": "Wrong: Isolated rhinorrhea suggests rhinovirus, not Enterovirus B meningitis; CSF findings would be needed for meningitis diagnosis."
+      },
+      {
+        "text": "Acute hemorrhagic conjunctivitis in 24 hours",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemorrhagic conjunctivitis is linked to EV-A24, not Enterovirus B; it would be correct for EV-A24 exposure."
+      },
+      {
+        "text": "Hand-foot-and-mouth vesicles on palms",
+        "isCorrect": false,
+        "rationale": "Wrong: HFMD is associated with EV-A and Coxsackie A types, not Enterovirus B; it would be correct for EV-A or Coxsackie A."
+      },
+      {
+        "text": "Chronic diarrheal illness with weight loss",
+        "isCorrect": false,
+        "rationale": "Wrong: Chronic diarrheal illness is not the lecture’s highlighted Enterovirus B presentation in infants; meningitis is the emphasized association."
+      }
+    ]
+  },
+  {
+    "question": "Which experimental or clinical observation from the lecture would most support recommending surface disinfection with bleach during an enterovirus outbreak?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain, compare, and contrast the transmission and pathogenesis of rhinoviruses and non-rhino enteroviruses.",
+    "options": [
+      {
+        "text": "Enteroviruses resist detergents but are bleach-sensitive",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states non-rhino enteroviruses resist detergents and solvents but are sensitive to 10% bleach, supporting bleach disinfection."
+      },
+      {
+        "text": "Rhinovirus transmits only via long-range aerosols",
+        "isCorrect": false,
+        "rationale": "Wrong: Rhinovirus transmission is primarily contact/droplet; long-range aerosol-only transmission is not supported and would not justify surface bleach use alone."
+      },
+      {
+        "text": "Enviroxime effectively sterilizes surfaces",
+        "isCorrect": false,
+        "rationale": "Wrong: Enviroxime is an antiviral targeting 3A and is toxic in humans; it is not described as a surface disinfectant."
+      },
+      {
+        "text": "Insect vectors contaminate surfaces with virus",
+        "isCorrect": false,
+        "rationale": "Wrong: Insect vectors are not implicated in enterovirus spread in the lecture; this would be correct only if vector contamination were shown."
+      },
+      {
+        "text": "Alcohol hand rubs eliminate enterovirus from surfaces",
+        "isCorrect": false,
+        "rationale": "Wrong: Lecture indicates resistance to detergents/solvents, implying alcohol may be insufficient; bleach sensitivity is the supported disinfectant."
       }
     ]
   }

@@ -1,1249 +1,1313 @@
 [
   {
-    "question": "A biochemistry student is asked to name the enzyme that catalyzes the committed, rate-limiting reduction step early in sterol biosynthesis. Which of the following enzymes is the correct catalyst?",
+    "question": "Which enzyme catalyzes the rate-limiting reduction step that converts HMG-CoA into mevalonate during cytosolic cholesterol synthesis?",
     "difficulty_order": "1st",
     "cited_learning_objective": "List the basic steps of cholesterol synthesis, including the rate-limiting reaction",
     "options": [
       {
-        "text": "HMG-COA reductase enzyme catalyzing HMG-COA reduction",
+        "text": "HMG-CoA reductase",
         "isCorrect": true,
-        "rationale": "Correct: The lecture identifies HMG-COA reductase as the rate-limiting enzyme that reduces HMG-COA to mevalonate. If the committed step were different, the named enzyme would not be rate-limiting."
+        "rationale": "Correct: the lecture identifies HMG-CoA reductase as the rate-limiting enzyme that reduces HMG-CoA to mevalonate."
       },
       {
-        "text": "HMG-COA synthase condensing acetoacetyl-CoA and acetyl-CoA",
+        "text": "HMG-CoA synthase",
         "isCorrect": false,
-        "rationale": "Wrong: HMG-COA synthase forms HMG-COA but is upstream and not the rate-limiting reductive enzyme; it would be correct only if the lecture stated synthesis rather than reduction was rate-limiting."
+        "rationale": "Wrong: HMG-CoA synthase forms HMG-CoA from acetoacetyl-CoA and acetyl-CoA; it does not perform the rate-limiting reduction. It would be correct if the stem asked about HMG-CoA formation."
       },
       {
-        "text": "Squalene synthase condensing activated isoprenes to squalene",
+        "text": "Squalene synthase",
         "isCorrect": false,
-        "rationale": "Wrong: Squalene synthase acts later in the pathway converting isoprenes to squalene; it would be correct only if the rate-limiting step occurred at squalene formation per the lecture."
+        "rationale": "Wrong: squalene synthase condenses isoprenes to squalene in a later phase; it is not the rate-limiting reductase early in the pathway."
       },
       {
-        "text": "Lanosterol synthase converting squalene to lanosterol",
+        "text": "Mevalonate kinase",
         "isCorrect": false,
-        "rationale": "Wrong: Lanosterol synthase functions after squalene formation and is not the early committed reductive step; it would be correct only if the lecture designated lanosterol formation as rate-limiting."
+        "rationale": "Wrong: mevalonate kinase phosphorylates mevalonate in subsequent steps; it does not reduce HMG-CoA to mevalonate."
       },
       {
-        "text": "Mevalonate kinase phosphorylating mevalonate to 5-phosphomevalonate",
+        "text": "Lanosterol synthase",
         "isCorrect": false,
-        "rationale": "Wrong: Mevalonate kinase acts after mevalonate formation; it would be correct only if phosphorylation of mevalonate were described as the rate-limiting reaction."
+        "rationale": "Wrong: lanosterol synthase converts squalene epoxide to lanosterol later in the pathway; it is not involved in the HMG-CoA to mevalonate step."
       }
     ]
   },
   {
-    "question": "Which regulatory mechanism decreases the activity of the key cholesterol synthetic enzyme when cellular sterol levels rise?",
+    "question": "Which regulatory mechanism decreases HMG-CoA reductase activity by promoting its phosphorylation when cellular energy is low?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Describe regulation of HMG-COA Reductase",
     "options": [
       {
-        "text": "Enhanced proteolytic degradation of the enzyme protein",
+        "text": "AMP-activated protein kinase phosphorylation",
         "isCorrect": true,
-        "rationale": "Correct: The lecture states increased cholesterol increases susceptibility of HMG-COA reductase to degradation, lowering activity. It would be incorrect if degradation were not cholesterol-responsive."
+        "rationale": "Correct: the lecture states AMP-activated protein kinase phosphorylates and inhibits HMG-CoA reductase during low ATP states."
       },
       {
-        "text": "Increased transcriptional activation of the enzyme gene",
+        "text": "Proteolytic degradation by sterol sensing",
         "isCorrect": false,
-        "rationale": "Wrong: Increased cholesterol decreases transcription factor activity for the enzyme; this option would be correct only if cholesterol increased transcription."
+        "rationale": "Wrong: increased cholesterol enhances degradation, but that is a separate mechanism from phosphorylation; it would be correct if the stem asked about sterol-induced degradation."
       },
       {
-        "text": "Activation by dephosphorylation through insulin signaling",
+        "text": "Insulin-mediated phosphorylation",
         "isCorrect": false,
-        "rationale": "Wrong: Dephosphorylation activates the enzyme and is promoted by insulin, which would raise activity; it would be correct only if the question asked about activity increase."
+        "rationale": "Wrong: insulin activates HMG-CoA reductase via dephosphorylation, not phosphorylation; the option contradicts the lecture."
       },
       {
-        "text": "Allosteric activation by elevated intracellular ATP levels",
+        "text": "Transcriptional activation by SREBP",
         "isCorrect": false,
-        "rationale": "Wrong: High ATP favors the active form via reduced AMP kinase activity, increasing enzyme activity; it would be correct only if ATP-mediated activation were the cholesterol response."
+        "rationale": "Wrong: SREBP increases transcription when cholesterol is low; it does not decrease activity by phosphorylation."
       },
       {
-        "text": "Covalent attachment of ubiquitin to increase enzyme activity",
+        "text": "Allosteric inhibition by bile salts",
         "isCorrect": false,
-        "rationale": "Wrong: Ubiquitination targets proteins for degradation and would not increase activity; it would be correct only if ubiquitination were described as activating in the lecture."
+        "rationale": "Wrong: bile salts inhibit bile acid synthesis and can feedback inhibit 7α-hydroxylase, but the lecture does not describe direct allosteric inhibition of HMG-CoA reductase by bile salts."
       }
     ]
   },
   {
-    "question": "A patient is prescribed a competitive inhibitor that resembles the substrate of the rate-limiting enzyme in sterol synthesis. Which drug class best fits this description based on the lecture?",
-    "difficulty_order": "1st",
+    "question": "A patient is started on a competitive inhibitor that resembles the HMG-CoA substrate and lowers hepatic cholesterol synthesis. Which adverse effect listed in the lecture is most associated with this drug class?",
+    "difficulty_order": "2nd",
     "cited_learning_objective": "Describe regulation of HMG-COA Reductase",
     "options": [
       {
-        "text": "Statins as HMG-COA reductase competitive inhibitors",
+        "text": "Elevated serum aminotransferases",
         "isCorrect": true,
-        "rationale": "Correct: The lecture describes statins as competitive inhibitors resembling HMG-CoA and inhibiting HMG-COA reductase, decreasing cholesterol synthesis. It would be incorrect if statins did not act competitively."
+        "rationale": "Correct: the lecture lists elevated aminotransferases as a known adverse effect of HMG-CoA reductase inhibitors (statins)."
       },
       {
-        "text": "Bile acid sequestrants binding intestinal bile salts",
+        "text": "Pancreatitis from chylomicron accumulation",
         "isCorrect": false,
-        "rationale": "Wrong: Bile acid sequestrants act in the gut and do not competitively inhibit the reductase; this would be correct only if the drug class inhibited the enzyme directly."
+        "rationale": "Wrong: pancreatitis from chylomicron accumulation is linked to defective LPL or ApoC-II (Type I dyslipidemia), not statin therapy."
       },
       {
-        "text": "Fibrates activating peroxisome proliferator activated receptors",
+        "text": "Tendon xanthomas",
         "isCorrect": false,
-        "rationale": "Wrong: Fibrates act via PPARs to alter lipid metabolism, not by competitive inhibition of the reductase; it would be correct only if fibrates targeted the enzyme."
+        "rationale": "Wrong: tendon xanthomas are a feature of familial hypercholesterolemia (Type II), not a statin adverse effect."
       },
       {
-        "text": "Niacin inhibiting hepatic diacylglycerol acyltransferase activity",
+        "text": "Severe hypertriglyceridemia",
         "isCorrect": false,
-        "rationale": "Wrong: Niacin's mechanisms differ and do not competitively inhibit the reductase; it would be correct only if niacin were described as a competitive inhibitor."
+        "rationale": "Wrong: severe hypertriglyceridemia is characteristic of hyperchylomicronemia (Type I), not a typical statin adverse effect."
       },
       {
-        "text": "PCSK9 inhibitors preventing receptor recycling",
+        "text": "Decreased bile salt synthesis",
         "isCorrect": false,
-        "rationale": "Wrong: PCSK9 inhibitors affect LDL receptor recycling rather than directly inhibiting the reductase; it would be correct only if they were described as enzyme inhibitors."
+        "rationale": "Wrong: statins reduce cholesterol synthesis but the lecture does not list decreased bile salt synthesis as a common adverse effect; this would require different pathway inhibition."
       }
     ]
   },
   {
-    "question": "Which of the following best describes the initial substrate combination that leads to formation of HMG-COA in the early biosynthetic stage?",
+    "question": "Which hepatic enzyme catalyzes the rate-limiting hydroxylation initiating bile acid synthesis from cholesterol?",
     "difficulty_order": "1st",
-    "cited_learning_objective": "List the basic steps of cholesterol synthesis, including the rate-limiting reaction",
-    "options": [
-      {
-        "text": "Condensation of two acetyl-CoA molecules then addition of acetyl-CoA",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture explains two acetyl-CoA form acetoacetyl-CoA, then HMG-COA synthase adds another acetyl-CoA to form HMG-COA. It would be wrong if different acyl units were used."
-      },
-      {
-        "text": "Condensation of three malonyl-CoA molecules sequentially",
-        "isCorrect": false,
-        "rationale": "Wrong: Malonyl-CoA condensation is fatty acid synthesis, not cholesterol synthesis; it would be correct only if the pathway used malonyl-CoA as described."
-      },
-      {
-        "text": "Direct cyclization of squalene to form HMG-COA",
-        "isCorrect": false,
-        "rationale": "Wrong: Squalene is a later intermediate; this would be correct only if the pathway were reversed in the lecture."
-      },
-      {
-        "text": "Phosphorylation of mevalonate to produce HMG-COA",
-        "isCorrect": false,
-        "rationale": "Wrong: Mevalonate is downstream of HMG-COA reduction; it would be correct only if the order were inverted."
-      },
-      {
-        "text": "Oxidation of lanosterol to generate HMG-COA",
-        "isCorrect": false,
-        "rationale": "Wrong: Lanosterol is a later sterol intermediate; this would be correct only if lanosterol were upstream in the lecture."
-      }
-    ]
-  },
-  {
-    "question": "A hepatocyte increases conversion of cholesterol into a more water-soluble form for excretion. Which enzyme catalyzes the rate-limiting hydroxylation initiating this pathway?",
-    "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the fate of cholesterol including bile salt formation and elimination as well as cholesterol esterification",
     "options": [
       {
-        "text": "7alpha-hydroxylase initiating bile acid synthesis",
+        "text": "7α-hydroxylase",
         "isCorrect": true,
-        "rationale": "Correct: The lecture states 7α-hydroxylase hydroxylates carbon 7 and is the rate-limiting step in bile salt formation. It would be incorrect if another hydroxylase were rate-limiting."
+        "rationale": "Correct: the lecture identifies 7α-hydroxylase as the rate-limiting enzyme for bile salt formation from cholesterol."
       },
       {
-        "text": "ACAT esterifying cholesterol for storage",
+        "text": "ACAT",
         "isCorrect": false,
-        "rationale": "Wrong: ACAT esterifies cholesterol for storage or transport, not the hydroxylation initiating bile salt synthesis; it would be correct only if esterification initiated bile salt formation."
+        "rationale": "Wrong: ACAT esterifies cholesterol for storage; it does not hydroxylate cholesterol to form bile acids."
       },
       {
-        "text": "LCAT converting free cholesterol to cholesteryl esters",
+        "text": "LCAT",
         "isCorrect": false,
-        "rationale": "Wrong: LCAT acts on HDL in reverse cholesterol transport, not in hepatic bile acid synthesis; it would be correct only if LCAT initiated bile salt formation."
+        "rationale": "Wrong: LCAT esterifies cholesterol on HDL in plasma; it is not the hepatic 7α-hydroxylase initiating bile acid synthesis."
       },
       {
-        "text": "Squalene monooxygenase oxidizing squalene to oxidosqualene",
+        "text": "Squalene monooxygenase",
         "isCorrect": false,
-        "rationale": "Wrong: Squalene monooxygenase functions earlier in cholesterol biosynthesis, not bile acid formation; it would be correct only if squalene oxidation were the initiating step."
+        "rationale": "Wrong: squalene monooxygenase acts earlier in cholesterol biosynthesis, not in bile acid formation from cholesterol."
       },
       {
-        "text": "Cholesterol ester hydrolase releasing free cholesterol",
+        "text": "Cholesterol oxidase",
         "isCorrect": false,
-        "rationale": "Wrong: Cholesterol ester hydrolase releases cholesterol from esters but does not catalyze the rate-limiting hydroxylation for bile salts; it would be correct only if hydrolysis were rate-limiting."
+        "rationale": "Wrong: cholesterol oxidase is not described in the lecture as the hepatic rate-limiting enzyme for bile acid synthesis."
       }
     ]
   },
   {
-    "question": "A lab report shows a patient has impaired conjugation of bile acids to amino acids. Which step described in the lecture is directly affected by this defect?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the fate of cholesterol including bile salt formation and elimination as well as cholesterol esterification",
+    "question": "Which apolipoprotein is synthesized by intestinal epithelial cells and is specific to chylomicrons?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the functions of various apolipoproteins including Apo B-48, Apo B-100, Apo E, and Apo C-II",
     "options": [
       {
-        "text": "Activation of carboxyl group and conjugation to glycine or taurine",
+        "text": "Apo B-48",
         "isCorrect": true,
-        "rationale": "Correct: The lecture explains the carboxyl group is activated by ATP and CoA then conjugated to glycine or taurine; impairment affects this conjugation. It would be correct only if conjugation were intact."
+        "rationale": "Correct: the lecture states intestinal epithelial cells produce ApoB-48, which is specific to chylomicrons."
       },
       {
-        "text": "Hydroxylation at carbon 7 by 7alpha-hydroxylase",
+        "text": "Apo B-100",
         "isCorrect": false,
-        "rationale": "Wrong: Hydroxylation precedes conjugation; a conjugation defect would not directly impair the hydroxylation step. It would be correct only if hydroxylation were defective."
+        "rationale": "Wrong: ApoB-100 is produced by the liver and is present on VLDL and LDL, not chylomicrons."
       },
       {
-        "text": "Reabsorption of bile salts at the terminal ileum",
+        "text": "Apo C-II",
         "isCorrect": false,
-        "rationale": "Wrong: Reabsorption is downstream; conjugation defects affect bile salt formation rather than ileal uptake. It would be correct only if ileal transporters were defective."
+        "rationale": "Wrong: ApoC-II is transferred from HDL to chylomicrons and activates LPL, but it is not synthesized specifically by intestinal cells."
       },
       {
-        "text": "Dehydroxylation by gut bacteria forming secondary bile salts",
+        "text": "Apo E",
         "isCorrect": false,
-        "rationale": "Wrong: Dehydroxylation occurs in the gut and is separate from hepatic conjugation; it would be correct only if bacterial modification were impaired."
+        "rationale": "Wrong: ApoE is provided by HDL to chylomicrons and mediates remnant uptake, but it is not the intestine-specific apolipoprotein."
       },
       {
-        "text": "Esterification of cholesterol by ACAT in hepatocytes",
+        "text": "Apo A-I",
         "isCorrect": false,
-        "rationale": "Wrong: ACAT esterifies cholesterol for storage and transport, not for bile salt conjugation; it would be correct only if esterification were the conjugation step."
+        "rationale": "Wrong: ApoA-I is central to HDL formation and is synthesized by liver and intestine, but it is not the chylomicron-specific ApoB-48."
       }
     ]
   },
   {
-    "question": "A researcher measures daily biliary cholesterol secretion and intestinal reabsorption. According to the lecture, approximately what fraction of the biliary plus dietary cholesterol pool is reabsorbed by enterocytes?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the fate of cholesterol including bile salt formation and elimination as well as cholesterol esterification",
-    "options": [
-      {
-        "text": "About fifty-five percent of the biliary and dietary pool",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture states roughly 55% of the biliary plus dietary cholesterol pool is reabsorbed by enterocytes. It would be incorrect if the reabsorption fraction were substantially different."
-      },
-      {
-        "text": "About ninety-five percent of bile salts are reabsorbed",
-        "isCorrect": false,
-        "rationale": "Wrong: Ninety-five percent refers to bile salt enterohepatic recycling, not cholesterol reabsorption; it would be correct only if the question asked about bile salts."
-      },
-      {
-        "text": "About five percent of biliary cholesterol is reabsorbed",
-        "isCorrect": false,
-        "rationale": "Wrong: Five percent is inconsistent with the lecture's 55% figure; it would be correct only if reabsorption were minimal."
-      },
-      {
-        "text": "All biliary cholesterol is excreted without reabsorption",
-        "isCorrect": false,
-        "rationale": "Wrong: The lecture indicates substantial reabsorption; this option would be correct only if enterohepatic reuptake were absent."
-      },
-      {
-        "text": "Approximately twenty percent of biliary cholesterol is reabsorbed",
-        "isCorrect": false,
-        "rationale": "Wrong: Twenty percent does not match the lecture's stated 55% reabsorption; it would be correct only if the lecture reported that lower value."
-      }
-    ]
-  },
-  {
-    "question": "Which enzyme in hepatocytes transfers a fatty acyl group from acyl-CoA to the 3-hydroxyl of cholesterol to form a storage form?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the fate of cholesterol including bile salt formation and elimination as well as cholesterol esterification",
-    "options": [
-      {
-        "text": "ACAT catalyzing cholesterol ester formation for storage",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture names ACAT as the enzyme transferring fatty acyl groups from fatty acyl-CoA to cholesterol to form cholesteryl esters for storage or transport. It would be incorrect if another enzyme performed this esterification."
-      },
-      {
-        "text": "LCAT esterifying cholesterol on HDL particles",
-        "isCorrect": false,
-        "rationale": "Wrong: LCAT acts in plasma on HDL, not intracellular hepatic storage; it would be correct only if the question asked about HDL-associated esterification."
-      },
-      {
-        "text": "7alpha-hydroxylase initiating bile acid formation",
-        "isCorrect": false,
-        "rationale": "Wrong: 7α-hydroxylase hydroxylates cholesterol for bile acid synthesis, not esterification; it would be correct only if hydroxylation were the esterification step."
-      },
-      {
-        "text": "Squalene synthase condensing isoprenes to squalene",
-        "isCorrect": false,
-        "rationale": "Wrong: Squalene synthase is involved in biosynthesis, not esterification; it would be correct only if squalene formation were an esterification reaction."
-      },
-      {
-        "text": "Cholesterol ester hydrolase forming cholesteryl esters",
-        "isCorrect": false,
-        "rationale": "Wrong: Cholesterol ester hydrolase hydrolyzes esters rather than forming them; it would be correct only if the enzyme synthesized esters."
-      }
-    ]
-  },
-  {
-    "question": "A patient with defective intestinal packaging of dietary lipids will have impaired formation of which circulating particle that initially contains ApoB-48?",
+    "question": "A nascent intestinal lipoprotein acquires two apolipoproteins from circulating HDL to become mature and activate tissue lipases. Which pair does it receive?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the composition, function, and fates of lipoproteins including chylomicrons, VLDL, IDL, LDL, and HDL",
     "options": [
       {
-        "text": "Chylomicrons transporting dietary triglycerides from intestine",
+        "text": "Apo C-II and Apo E",
         "isCorrect": true,
-        "rationale": "Correct: The lecture states intestinal epithelial cells produce ApoB-48 and package dietary triglycerides and cholesterol into chylomicrons. It would be incorrect if ApoB-48 were associated with a different lipoprotein."
+        "rationale": "Correct: the lecture explains nascent chylomicrons receive ApoC-II and ApoE from HDL to become mature and activate LPL."
       },
       {
-        "text": "VLDL carrying endogenously synthesized triglycerides from liver",
+        "text": "Apo B-100 and Apo A-I",
         "isCorrect": false,
-        "rationale": "Wrong: VLDL contains ApoB-100 from the liver, not ApoB-48; it would be correct only if ApoB-48 were hepatic."
+        "rationale": "Wrong: ApoB-100 is on VLDL/LDL and ApoA-I is HDL-related; chylomicrons receive ApoC-II and ApoE, not this pair."
       },
       {
-        "text": "LDL delivering cholesterol to peripheral tissues",
+        "text": "Apo B-48 and Apo B-100",
         "isCorrect": false,
-        "rationale": "Wrong: LDL primarily contains ApoB-100 and is derived from VLDL/IDL, not intestinal ApoB-48; it would be correct only if LDL carried ApoB-48."
+        "rationale": "Wrong: ApoB-48 is on chylomicrons and ApoB-100 on VLDL/LDL; chylomicrons do not acquire ApoB-100 from HDL."
       },
       {
-        "text": "HDL serving as an apolipoprotein reservoir and reverse transporter",
+        "text": "Apo A-I and Apo E",
         "isCorrect": false,
-        "rationale": "Wrong: HDL does not contain ApoB-48 as its defining apolipoprotein; it would be correct only if HDL were produced with ApoB-48."
+        "rationale": "Wrong: while ApoE can be transferred, ApoA-I is not the activating cofactor for LPL; ApoC-II is required for LPL activation."
       },
       {
-        "text": "IDL representing an intermediate VLDL remnant particle",
+        "text": "Apo C-III and Apo A-II",
         "isCorrect": false,
-        "rationale": "Wrong: IDL is a VLDL remnant and contains ApoB-100, not ApoB-48; it would be correct only if IDL derived from intestinal particles."
+        "rationale": "Wrong: ApoC-III inhibits lipolysis and is not the pair transferred from HDL to nascent chylomicrons to activate LPL."
       }
     ]
   },
   {
-    "question": "During chylomicron maturation in plasma, which apolipoprotein activates the tissue enzyme that hydrolyzes triglycerides in the particle?",
+    "question": "Which lipoprotein class primarily transports endogenously synthesized triglycerides from the liver to peripheral tissues?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the composition, function, and fates of lipoproteins including chylomicrons, VLDL, IDL, LDL, and HDL",
+    "options": [
+      {
+        "text": "VLDL",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture states VLDL carries triglycerides synthesized in the liver to peripheral tissues."
+      },
+      {
+        "text": "Chylomicrons",
+        "isCorrect": false,
+        "rationale": "Wrong: chylomicrons transport dietary (exogenous) triglycerides from intestinal cells, not endogenous hepatic TGs."
+      },
+      {
+        "text": "LDL",
+        "isCorrect": false,
+        "rationale": "Wrong: LDL primarily transports cholesterol to tissues rather than triglyceride-rich cargo."
+      },
+      {
+        "text": "HDL",
+        "isCorrect": false,
+        "rationale": "Wrong: HDL is involved in reverse cholesterol transport and apolipoprotein exchange, not primary TG transport from liver."
+      },
+      {
+        "text": "IDL",
+        "isCorrect": false,
+        "rationale": "Wrong: IDL is a VLDL remnant intermediate; it is not the main carrier of newly synthesized hepatic triglycerides."
+      }
+    ]
+  },
+  {
+    "question": "During conversion of VLDL to LDL in the circulation, which protein mediates exchange of triglycerides for cholesteryl esters between VLDL and HDL?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the composition, function, and fates of lipoproteins including chylomicrons, VLDL, IDL, LDL, and HDL",
+    "options": [
+      {
+        "text": "Cholesteryl ester transfer protein",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture names CETP as the protein that exchanges TGs and cholesteryl esters between VLDL/IDL and HDL."
+      },
+      {
+        "text": "Lipoprotein lipase",
+        "isCorrect": false,
+        "rationale": "Wrong: LPL hydrolyzes TGs at capillaries but does not catalyze TG-CE exchange between lipoproteins."
+      },
+      {
+        "text": "Hepatic lipase",
+        "isCorrect": false,
+        "rationale": "Wrong: hepatic lipase remodels HDL and IDL but is not the CETP-mediated exchange protein described."
+      },
+      {
+        "text": "LCAT",
+        "isCorrect": false,
+        "rationale": "Wrong: LCAT esterifies free cholesterol on HDL; it does not mediate TG-CE exchange between lipoproteins."
+      },
+      {
+        "text": "ACAT",
+        "isCorrect": false,
+        "rationale": "Wrong: ACAT esterifies cholesterol intracellularly for storage; it does not mediate interlipoprotein exchange."
+      }
+    ]
+  },
+  {
+    "question": "A hepatocyte internalizes LDL via receptor-mediated endocytosis. Which apolipoprotein on LDL is recognized by the receptor to initiate uptake?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process of LDL uptake and list how it regulates cholesterol levels",
+    "options": [
+      {
+        "text": "Apo B-100",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture specifies ApoB-100 as the ligand for the LDL receptor mediating receptor-mediated endocytosis."
+      },
+      {
+        "text": "Apo B-48",
+        "isCorrect": false,
+        "rationale": "Wrong: ApoB-48 is on chylomicrons and remnants; it does not mediate LDL receptor binding."
+      },
+      {
+        "text": "Apo E",
+        "isCorrect": false,
+        "rationale": "Wrong: ApoE mediates remnant uptake for chylomicron remnants and IDL, but LDL uptake specifically uses ApoB-100."
+      },
+      {
+        "text": "Apo C-II",
+        "isCorrect": false,
+        "rationale": "Wrong: ApoC-II activates LPL and is not the primary ligand for LDL receptor-mediated uptake."
+      },
+      {
+        "text": "Apo A-I",
+        "isCorrect": false,
+        "rationale": "Wrong: ApoA-I is central to HDL and reverse cholesterol transport, not LDL receptor binding."
+      }
+    ]
+  },
+  {
+    "question": "Which intracellular enzyme esterifies free cholesterol for storage after LDL-derived cholesterol is released in lysosomes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the fate of cholesterol including bile salt formation and elimination as well as cholesterol esterification",
+    "options": [
+      {
+        "text": "ACAT",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture states ACAT transfers a fatty acyl group to cholesterol to form cholesteryl esters for storage."
+      },
+      {
+        "text": "LCAT",
+        "isCorrect": false,
+        "rationale": "Wrong: LCAT esterifies cholesterol in plasma on HDL, not intracellularly for storage."
+      },
+      {
+        "text": "HMG-CoA reductase",
+        "isCorrect": false,
+        "rationale": "Wrong: HMG-CoA reductase synthesizes mevalonate in cholesterol biosynthesis, not cholesterol esterification."
+      },
+      {
+        "text": "7α-hydroxylase",
+        "isCorrect": false,
+        "rationale": "Wrong: 7α-hydroxylase initiates bile acid synthesis, not cholesterol esterification."
+      },
+      {
+        "text": "Cholesteryl ester transfer protein",
+        "isCorrect": false,
+        "rationale": "Wrong: CETP mediates exchange of CE and TG between lipoproteins, not intracellular esterification."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a genetic defect causing absent lipoprotein lipase activity presents with eruptive xanthomas and pancreatitis. Which familial dyslipidemia type from the lecture best matches this presentation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the pathophysiology and lab findings of Familial Dyslipidemia Types I and II",
+    "options": [
+      {
+        "text": "Type I hyperchylomicronemia",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture links mutations in LPL or ApoC-II to Type I, causing chylomicron accumulation, pancreatitis, and xanthomas."
+      },
+      {
+        "text": "Type II familial hypercholesterolemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Type II involves LDL receptor or ApoB-100 defects with high LDL and tendon xanthomas, not chylomicron-driven pancreatitis."
+      },
+      {
+        "text": "Type III dysbetalipoproteinemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Type III involves defective ApoE and remnant accumulation; the lecture associates pancreatitis and chylomicrons specifically with Type I."
+      },
+      {
+        "text": "Type IV hypertriglyceridemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Type IV is VLDL overproduction; the lecture attributes severe chylomicronemia and pancreatitis to Type I LPL/ApoC-II defects."
+      },
+      {
+        "text": "Type V mixed hyperlipidemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Type V includes chylomicrons and VLDL but the lecture specifically names LPL or ApoC-II mutations as Type I; Type V is not the primary match here."
+      }
+    ]
+  },
+  {
+    "question": "A patient with familial hypercholesterolemia has markedly elevated LDL from birth. Which genetic defect described in the lecture most commonly causes this autosomal dominant condition?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the pathophysiology and lab findings of Familial Dyslipidemia Types I and II",
+    "options": [
+      {
+        "text": "LDL receptor mutation",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture states familial hypercholesterolemia (Type II) is commonly due to LDL receptor mutations causing impaired LDL uptake."
+      },
+      {
+        "text": "ApoC-II deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: ApoC-II deficiency causes Type I hyperchylomicronemia with TG accumulation, not autosomal dominant familial hypercholesterolemia."
+      },
+      {
+        "text": "ACAT overactivity",
+        "isCorrect": false,
+        "rationale": "Wrong: ACAT esterifies cholesterol intracellularly; the lecture does not list ACAT overactivity as the cause of familial hypercholesterolemia."
+      },
+      {
+        "text": "7α-hydroxylase deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: 7α-hydroxylase deficiency would impair bile acid synthesis; it is not the LDL receptor defect described for Type II."
+      },
+      {
+        "text": "LCAT deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: LCAT deficiency affects HDL maturation and reverse cholesterol transport, not the LDL receptor-mediated hypercholesterolemia of Type II."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical finding listed in the lecture is characteristic of homozygous familial hypercholesterolemia and results from lifelong very high LDL levels?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the pathophysiology and lab findings of Familial Dyslipidemia Types I and II",
+    "options": [
+      {
+        "text": "Tendon xanthomas",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture notes tendon xanthomas as a clinical sign associated with familial hypercholesterolemia due to high LDL."
+      },
+      {
+        "text": "Eruptive xanthomas",
+        "isCorrect": false,
+        "rationale": "Wrong: eruptive xanthomas are more typical of severe hypertriglyceridemia/chylomicronemia (Type I), not classic familial LDL-driven xanthomas."
+      },
+      {
+        "text": "Pancreatitis",
+        "isCorrect": false,
+        "rationale": "Wrong: pancreatitis is linked to severe hypertriglyceridemia from chylomicron accumulation (Type I), not primarily to familial hypercholesterolemia."
+      },
+      {
+        "text": "Corneal arcus in infancy",
+        "isCorrect": false,
+        "rationale": "Wrong: corneal arcus can occur in familial hypercholesterolemia but the lecture emphasizes tendon xanthomas as a hallmark; corneal arcus alone would be less specific."
+      },
+      {
+        "text": "Hepatosplenomegaly",
+        "isCorrect": false,
+        "rationale": "Wrong: hepatosplenomegaly is described with chylomicron accumulation in Type I, not as a primary feature of familial hypercholesterolemia."
+      }
+    ]
+  },
+  {
+    "question": "A patient’s hepatocytes sense increased intracellular cholesterol after LDL uptake. According to the lecture, which of the following is a direct cellular response that reduces further cholesterol synthesis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process of LDL uptake and list how it regulates cholesterol levels",
+    "options": [
+      {
+        "text": "Inhibition of HMG-CoA reductase expression",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture explains intracellular cholesterol inhibits HMG-CoA reductase expression, decreasing cholesterol synthesis."
+      },
+      {
+        "text": "Activation of LPL gene transcription",
+        "isCorrect": false,
+        "rationale": "Wrong: LPL acts extracellularly to hydrolyze TGs; intracellular cholesterol does not directly activate LPL transcription as described."
+      },
+      {
+        "text": "Upregulation of ApoA-I synthesis",
+        "isCorrect": false,
+        "rationale": "Wrong: ApoA-I relates to HDL formation; the lecture does not list its upregulation as a direct response to intracellular cholesterol."
+      },
+      {
+        "text": "Increased CETP activity",
+        "isCorrect": false,
+        "rationale": "Wrong: CETP mediates lipid exchange between lipoproteins; the lecture does not describe intracellular cholesterol directly increasing CETP activity."
+      },
+      {
+        "text": "Enhanced bile salt conjugation",
+        "isCorrect": false,
+        "rationale": "Wrong: while bile salt synthesis is linked to cholesterol, the lecture specifies inhibition of HMG-CoA reductase expression as a direct intracellular regulatory response."
+      }
+    ]
+  },
+  {
+    "question": "Which plasma enzyme converts free cholesterol on nascent HDL into cholesteryl esters to allow HDL maturation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the formation of HDL, its relationship to other lipoproteins",
+    "options": [
+      {
+        "text": "LCAT",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture states LCAT esterifies free cholesterol on HDL, converting nascent HDL to mature HDL particles."
+      },
+      {
+        "text": "ACAT",
+        "isCorrect": false,
+        "rationale": "Wrong: ACAT esterifies cholesterol intracellularly; LCAT performs the plasma HDL-associated esterification."
+      },
+      {
+        "text": "Hepatic lipase",
+        "isCorrect": false,
+        "rationale": "Wrong: hepatic lipase remodels HDL and hydrolyzes lipids but does not catalyze the esterification of free cholesterol on HDL."
+      },
+      {
+        "text": "CETP",
+        "isCorrect": false,
+        "rationale": "Wrong: CETP transfers cholesteryl esters between lipoproteins but does not itself esterify free cholesterol on HDL."
+      },
+      {
+        "text": "Lipoprotein lipase",
+        "isCorrect": false,
+        "rationale": "Wrong: LPL hydrolyzes triglycerides at capillaries; it does not esterify cholesterol on HDL."
+      }
+    ]
+  },
+  {
+    "question": "Which membrane transporter moves cholesterol from peripheral cells to the outer leaflet for initial pickup by nascent HDL during reverse cholesterol transport?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process of reverse cholesterol transport",
+    "options": [
+      {
+        "text": "ABCA1",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture identifies ABCA1 as the transporter that moves cholesterol to the cell surface for HDL uptake."
+      },
+      {
+        "text": "SR-B1",
+        "isCorrect": false,
+        "rationale": "Wrong: SR-B1 is the hepatic receptor that mediates selective uptake of cholesteryl esters from HDL, not the peripheral cholesterol exporter."
+      },
+      {
+        "text": "NPC1",
+        "isCorrect": false,
+        "rationale": "Wrong: NPC1 is involved in intracellular cholesterol trafficking from lysosomes; it is not the ABCA1-mediated export to nascent HDL."
+      },
+      {
+        "text": "CETP",
+        "isCorrect": false,
+        "rationale": "Wrong: CETP mediates lipid exchange between lipoproteins, not cholesterol export from peripheral cell membranes."
+      },
+      {
+        "text": "LDL receptor",
+        "isCorrect": false,
+        "rationale": "Wrong: LDL receptor mediates LDL uptake into cells; it does not export cholesterol to nascent HDL."
+      }
+    ]
+  },
+  {
+    "question": "A researcher measures HDL particle maturation in vitro and blocks the enzyme that esterifies cholesterol on HDL. Which step in HDL maturation described in the lecture will be directly prevented?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the formation of HDL, its relationship to other lipoproteins",
+    "options": [
+      {
+        "text": "Conversion of nascent HDL to HDL3 and HDL2",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture explains LCAT-mediated esterification converts nascent HDL into HDL3 and then HDL2 as it accumulates cholesteryl esters."
+      },
+      {
+        "text": "Transfer of ApoC-II to chylomicrons",
+        "isCorrect": false,
+        "rationale": "Wrong: ApoC-II transfer from HDL to chylomicrons is an apolipoprotein exchange process and not directly dependent on LCAT esterification."
+      },
+      {
+        "text": "Hepatic SR-B1-mediated CE uptake",
+        "isCorrect": false,
+        "rationale": "Wrong: SR-B1-mediated hepatic uptake of CE occurs after HDL maturation; blocking esterification prevents maturation but SR-B1 function itself is separate."
+      },
+      {
+        "text": "CETP-mediated TG-CE exchange",
+        "isCorrect": false,
+        "rationale": "Wrong: CETP exchanges lipids between lipoproteins; while affected indirectly by HDL composition, CETP activity is not the direct esterification step."
+      },
+      {
+        "text": "ABCA1-mediated cholesterol export",
+        "isCorrect": false,
+        "rationale": "Wrong: ABCA1 exports cholesterol to nascent HDL upstream of LCAT; blocking LCAT does not prevent ABCA1 export itself."
+      }
+    ]
+  },
+  {
+    "question": "A patient with low HDL is found to have reduced ApoA-I production. According to the lecture, which HDL-related function would be most directly impaired?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the formation of HDL, its relationship to other lipoproteins",
+    "options": [
+      {
+        "text": "Apolipoprotein reservoir and reverse cholesterol transport",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture describes ApoA-I as central to HDL formation and to reverse cholesterol transport and apolipoprotein supply."
+      },
+      {
+        "text": "Activation of lipoprotein lipase",
+        "isCorrect": false,
+        "rationale": "Wrong: ApoC-II activates LPL; ApoA-I deficiency would not directly impair LPL activation."
+      },
+      {
+        "text": "LDL receptor-mediated LDL uptake",
+        "isCorrect": false,
+        "rationale": "Wrong: LDL receptor-mediated uptake depends on ApoB-100 on LDL, not ApoA-I on HDL."
+      },
+      {
+        "text": "Hepatic bile salt conjugation",
+        "isCorrect": false,
+        "rationale": "Wrong: bile salt conjugation is a hepatic enzymatic process (e.g., conjugation with glycine/taurine) and is not directly driven by ApoA-I levels."
+      },
+      {
+        "text": "Synthesis of VLDL in liver",
+        "isCorrect": false,
+        "rationale": "Wrong: VLDL synthesis is a hepatic lipid packaging process involving ApoB-100, not ApoA-I-dependent HDL formation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with defective ApoC-II cannot activate tissue lipoprotein lipase. Which immediate lipoprotein clearance defect described in the lecture would you expect?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the functions of various apolipoproteins including Apo B-48, Apo B-100, Apo E, and Apo C-II",
     "options": [
       {
-        "text": "Apo C-II activating lipoprotein lipase at capillaries",
+        "text": "Impaired chylomicron triglyceride hydrolysis",
         "isCorrect": true,
-        "rationale": "Correct: The lecture explains Apo C-II from HDL activates lipoprotein lipase (LPL) on tissues to hydrolyze chylomicron triglycerides. It would be incorrect if another apolipoprotein activated LPL."
+        "rationale": "Correct: the lecture states ApoC-II activates LPL; deficiency prevents chylomicron TG breakdown and clearance."
       },
       {
-        "text": "Apo B-48 mediating hepatic remnant receptor binding",
+        "text": "Reduced LDL receptor binding",
         "isCorrect": false,
-        "rationale": "Wrong: ApoB-48 is important for chylomicron structure and remnant recognition via ApoE, but it does not activate LPL; it would be correct only if ApoB-48 activated LPL."
+        "rationale": "Wrong: LDL receptor binding depends on ApoB-100 or ApoE, not ApoC-II; ApoC-II deficiency does not directly reduce LDL receptor binding."
       },
       {
-        "text": "Apo E serving as the primary LPL activator in plasma",
+        "text": "Failure of HDL maturation by LCAT",
         "isCorrect": false,
-        "rationale": "Wrong: ApoE mediates remnant uptake by the liver, not LPL activation; it would be correct only if ApoE activated LPL per the lecture."
+        "rationale": "Wrong: LCAT-mediated HDL maturation is independent of ApoC-II; ApoC-II deficiency affects LPL activation instead."
       },
       {
-        "text": "Apo B-100 activating hepatic lipase in the liver",
+        "text": "Decreased CETP-mediated exchange",
         "isCorrect": false,
-        "rationale": "Wrong: ApoB-100 is a structural apolipoprotein of VLDL/LDL and does not activate LPL; it would be correct only if ApoB-100 were an LPL cofactor."
+        "rationale": "Wrong: CETP exchanges lipids between lipoproteins; ApoC-II deficiency primarily impairs LPL activity and chylomicron clearance."
       },
       {
-        "text": "Apo A-I directly hydrolyzing triglycerides in chylomicrons",
+        "text": "Impaired bile acid conjugation",
         "isCorrect": false,
-        "rationale": "Wrong: ApoA-I is central to HDL formation and LCAT activation, not triglyceride hydrolysis; it would be correct only if ApoA-I had lipase activity."
+        "rationale": "Wrong: bile acid conjugation is a hepatic enzymatic process unrelated to ApoC-II and LPL activation."
       }
     ]
   },
   {
-    "question": "A patient lacks functional lipoprotein lipase or ApoC-II. Which laboratory pattern described in the lecture is most consistent with this defect?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Discuss the pathophysiology and lab findings of Familial Dyslipidemia Types I and II",
-    "options": [
-      {
-        "text": "Markedly elevated chylomicrons with high triglyceride levels",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture states deficiency of LPL or ApoC-II prevents chylomicron TG breakdown, causing hyperchylomicronemia with elevated triglycerides and chylomicrons. It would be incorrect if LPL function were normal."
-      },
-      {
-        "text": "Isolated elevated LDL cholesterol with tendon xanthomas",
-        "isCorrect": false,
-        "rationale": "Wrong: That pattern fits familial hypercholesterolemia (Type II), not LPL/ApoC-II deficiency; it would be correct only if LDL receptor defects were present."
-      },
-      {
-        "text": "Low HDL cholesterol with increased reverse cholesterol transport",
-        "isCorrect": false,
-        "rationale": "Wrong: LPL/ApoC-II defects cause chylomicron accumulation rather than primary HDL deficiency; it would be correct only if HDL synthesis were impaired."
-      },
-      {
-        "text": "Decreased triglycerides with increased bile salt excretion",
-        "isCorrect": false,
-        "rationale": "Wrong: LPL/ApoC-II deficiency increases triglycerides, not decreases them; it would be correct only if triglyceride catabolism were enhanced."
-      },
-      {
-        "text": "Normal lipoprotein profile with isolated elevated bile acids",
-        "isCorrect": false,
-        "rationale": "Wrong: The lecture links LPL/ApoC-II defects to abnormal chylomicron and TG elevations; this option would be correct only if chylomicron metabolism were unaffected."
-      }
-    ]
-  },
-  {
-    "question": "A nascent VLDL particle acquires two apolipoproteins from HDL to become mature. Which pair is transferred according to the lecture?",
+    "question": "A patient with high circulating LDL is treated with a drug that lowers intracellular hepatic cholesterol synthesis and secondarily increases LDL receptor expression. Which drug class from the lecture fits this description?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the composition, function, and fates of lipoproteins including chylomicrons, VLDL, IDL, LDL, and HDL",
+    "cited_learning_objective": "Describe regulation of HMG-COA Reductase",
     "options": [
       {
-        "text": "Apo C-II and Apo E transferred from HDL to VLDL",
+        "text": "HMG-CoA reductase inhibitors",
         "isCorrect": true,
-        "rationale": "Correct: The lecture states nascent VLDL receives ApoC-II and ApoE from HDL to become mature VLDL. It would be incorrect if different apolipoproteins were transferred."
+        "rationale": "Correct: statins inhibit HMG-CoA reductase, lowering intracellular cholesterol and upregulating LDL receptors as a secondary effect."
       },
       {
-        "text": "Apo B-48 and Apo A-I transferred from HDL to VLDL",
+        "text": "Bile acid sequestrants",
         "isCorrect": false,
-        "rationale": "Wrong: ApoB-48 is intestinal and ApoA-I is HDL-associated; they are not the pair transferred to nascent VLDL per the lecture. It would be correct only if the lecture described that transfer."
+        "rationale": "Wrong: bile acid sequestrants increase bile acid excretion and indirectly lower cholesterol but the lecture specifically links LDL receptor upregulation to statin-induced decreased synthesis."
       },
       {
-        "text": "Apo B-100 and Apo C-III transferred from HDL to VLDL",
+        "text": "LCAT activators",
         "isCorrect": false,
-        "rationale": "Wrong: ApoB-100 is synthesized with VLDL by the liver and not transferred from HDL; it would be correct only if HDL donated ApoB-100."
+        "rationale": "Wrong: LCAT activators would affect HDL esterification, not directly reduce hepatic cholesterol synthesis to increase LDL receptors as described."
       },
       {
-        "text": "Apo E and Apo B-48 transferred from HDL to VLDL",
+        "text": "CETP inhibitors",
         "isCorrect": false,
-        "rationale": "Wrong: ApoB-48 is intestinal and not transferred from HDL to hepatic VLDL; it would be correct only if intestinal apolipoproteins were exchanged with VLDL."
+        "rationale": "Wrong: CETP inhibitors alter HDL-LDL exchange; they do not primarily inhibit HMG-CoA reductase to increase LDL receptor expression."
       },
       {
-        "text": "Apo A-I and Apo C-II transferred from HDL to VLDL",
+        "text": "ACAT inhibitors",
         "isCorrect": false,
-        "rationale": "Wrong: ApoA-I is HDL structural and not the LPL activator transferred to VLDL; it would be correct only if ApoA-I were the LPL cofactor in the lecture."
+        "rationale": "Wrong: ACAT inhibitors would affect intracellular cholesterol esterification, not directly inhibit cholesterol synthesis via HMG-CoA reductase as statins do."
       }
     ]
   },
   {
-    "question": "A patient’s VLDL particles are progressively converted to LDL in plasma. Which exchange protein mediates transfer of triglycerides from VLDL to HDL in exchange for cholesteryl esters?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the composition, function, and fates of lipoproteins including chylomicrons, VLDL, IDL, LDL, and HDL",
-    "options": [
-      {
-        "text": "Cholesteryl ester transfer protein mediating CE-TG exchange",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture names CETP as the protein that transfers TGs from VLDL to HDL in exchange for cholesteryl esters, facilitating LDL formation. It would be incorrect if another protein performed this exchange."
-      },
-      {
-        "text": "Lipoprotein lipase hydrolyzing triglycerides at capillary beds",
-        "isCorrect": false,
-        "rationale": "Wrong: LPL hydrolyzes TGs but does not catalyze CE-TG exchange between lipoproteins; it would be correct only if the question asked about TG hydrolysis."
-      },
-      {
-        "text": "LCAT esterifying cholesterol on HDL particles",
-        "isCorrect": false,
-        "rationale": "Wrong: LCAT converts free cholesterol to cholesteryl esters on HDL but does not mediate exchange between VLDL and HDL; it would be correct only if esterification were the exchange mechanism."
-      },
-      {
-        "text": "ACAT esterifying cholesterol within hepatocytes",
-        "isCorrect": false,
-        "rationale": "Wrong: ACAT acts intracellularly in hepatocytes for storage, not in plasma lipoprotein exchange; it would be correct only if intracellular esterification mediated exchange."
-      },
-      {
-        "text": "SR-B1 receptor facilitating HDL uptake by hepatocytes",
-        "isCorrect": false,
-        "rationale": "Wrong: SR-B1 mediates selective uptake of cholesteryl esters by hepatocytes, not CETP-mediated exchange; it would be correct only if receptor-mediated uptake were the exchange process."
-      }
-    ]
-  },
-  {
-    "question": "A cell increases intracellular free cholesterol. According to the lecture, which of the following cellular responses will reduce further cholesterol uptake?",
+    "question": "Which lipoprotein receptor is upregulated in steroidogenic tissues that require cholesterol for hormone synthesis, as noted in the lecture?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the process of LDL uptake and list how it regulates cholesterol levels",
     "options": [
       {
-        "text": "Downregulation of LDL receptor gene expression",
+        "text": "Scavenger receptor class B type 1",
         "isCorrect": true,
-        "rationale": "Correct: The lecture explains intracellular cholesterol inhibits LDL receptor gene expression, decreasing receptor density and uptake. It would be incorrect if receptor expression increased with cholesterol."
+        "rationale": "Correct: the lecture states SR-B1 is upregulated in cells needing cholesterol for biosynthesis, such as the adrenal cortex, to take up cholesteryl esters from HDL."
       },
       {
-        "text": "Upregulation of HMG-COA reductase transcription",
+        "text": "LDL receptor",
         "isCorrect": false,
-        "rationale": "Wrong: Increased intracellular cholesterol inhibits HMG-COA reductase expression; this option would be correct only if cholesterol stimulated synthesis."
+        "rationale": "Wrong: LDL receptor mediates LDL uptake broadly, but the lecture specifically highlights SR-B1 upregulation in steroidogenic tissues for HDL CE uptake."
       },
       {
-        "text": "Activation of ACAT to decrease cholesteryl ester formation",
+        "text": "ABCA1 transporter",
         "isCorrect": false,
-        "rationale": "Wrong: Intracellular cholesterol stimulates ACAT to form cholesteryl esters for storage, not decrease it; it would be correct only if ACAT were inhibited by cholesterol."
+        "rationale": "Wrong: ABCA1 exports cholesterol to nascent HDL; it is not the receptor upregulated for hepatic or steroidogenic CE uptake."
       },
       {
-        "text": "Increased LDL receptor recycling to the plasma membrane",
+        "text": "NPC1 receptor",
         "isCorrect": false,
-        "rationale": "Wrong: Excess cholesterol reduces receptor density and recycling; it would be correct only if cholesterol promoted recycling."
+        "rationale": "Wrong: NPC1 is involved in lysosomal cholesterol trafficking, not the surface receptor for HDL CE uptake described."
       },
       {
-        "text": "Enhanced conversion of cholesterol to squalene",
+        "text": "CETP receptor",
         "isCorrect": false,
-        "rationale": "Wrong: Squalene is an upstream biosynthetic intermediate; conversion to squalene does not remove excess cholesterol and would be correct only if reverse conversion occurred."
+        "rationale": "Wrong: CETP is a transfer protein, not a cell-surface receptor; the lecture names SR-B1 as the receptor for HDL CE uptake."
       }
     ]
   },
   {
-    "question": "A hepatocyte internalizes LDL via receptor-mediated endocytosis. Which apolipoprotein on LDL is recognized by the receptor according to the lecture?",
-    "difficulty_order": "1st",
+    "question": "A patient with defective LDL receptor recycling due to PCSK9 overactivity would most likely have which effect on serum LDL levels according to the lecture mechanisms?",
+    "difficulty_order": "3rd",
     "cited_learning_objective": "Describe the process of LDL uptake and list how it regulates cholesterol levels",
     "options": [
       {
-        "text": "Apo B-100 on LDL binding to the LDL receptor",
+        "text": "Increased serum LDL concentration",
         "isCorrect": true,
-        "rationale": "Correct: The lecture states LDL receptor binds ApoB-100 on LDL to mediate uptake via clathrin-coated pits. It would be incorrect if a different apolipoprotein were the ligand."
+        "rationale": "Correct: the lecture notes PCSK9 inhibits LDL receptor recycling, reducing receptor density and raising serum LDL levels."
       },
       {
-        "text": "Apo B-48 mediating hepatic LDL uptake",
+        "text": "Decreased serum triglycerides",
         "isCorrect": false,
-        "rationale": "Wrong: ApoB-48 is specific to chylomicrons and not the ligand for LDL receptors; it would be correct only if ApoB-48 were present on LDL."
+        "rationale": "Wrong: PCSK9 effects on LDL receptor recycling primarily affect LDL cholesterol, not serum triglycerides; TGs would not necessarily decrease."
       },
       {
-        "text": "Apo C-II serving as the primary LDL receptor ligand",
+        "text": "Enhanced HDL-mediated reverse transport",
         "isCorrect": false,
-        "rationale": "Wrong: ApoC-II activates LPL and is not the LDL receptor ligand; it would be correct only if ApoC-II mediated receptor binding."
+        "rationale": "Wrong: PCSK9-mediated receptor degradation reduces LDL uptake; it does not enhance HDL reverse cholesterol transport as described."
       },
       {
-        "text": "Apo E exclusively mediating LDL uptake in hepatocytes",
+        "text": "Increased bile acid synthesis",
         "isCorrect": false,
-        "rationale": "Wrong: ApoE mediates remnant uptake but LDL uptake primarily uses ApoB-100; it would be correct only if LDL particles bore ApoE as the main ligand."
+        "rationale": "Wrong: increased bile acid synthesis would lower cholesterol, but PCSK9 overactivity reduces LDL clearance and would not directly increase bile acid synthesis."
       },
       {
-        "text": "Apo A-I binding LDL receptors for endocytosis",
+        "text": "Reduced hepatic cholesterol synthesis",
         "isCorrect": false,
-        "rationale": "Wrong: ApoA-I is an HDL apolipoprotein and does not mediate LDL receptor binding; it would be correct only if ApoA-I were present on LDL."
+        "rationale": "Wrong: reduced hepatic cholesterol synthesis would lower LDL; PCSK9 overactivity instead decreases receptor recycling and raises LDL."
       }
     ]
   },
   {
-    "question": "A patient with familial hypercholesterolemia has a mutation that prevents LDL receptor recycling. Which class of mutation from the lecture best describes this defect?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Discuss the pathophysiology and lab findings of Familial Dyslipidemia Types I and II",
-    "options": [
-      {
-        "text": "Class IV mutation affecting receptor clustering and recycling",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture lists Class IV as affecting clustering and recycling of LDL receptors, matching impaired recycling. It would be incorrect if the defect were in synthesis or binding instead."
-      },
-      {
-        "text": "Class I mutation preventing receptor synthesis entirely",
-        "isCorrect": false,
-        "rationale": "Wrong: Class I affects synthesis; recycling defects are Class IV. It would be correct only if the mutation abolished receptor production."
-      },
-      {
-        "text": "Class III mutation enhancing receptor binding to LDL",
-        "isCorrect": false,
-        "rationale": "Wrong: Class III impairs binding, not enhances it; this option would be correct only if binding were increased per the lecture."
-      },
-      {
-        "text": "Class II mutation improving transport to the Golgi",
-        "isCorrect": false,
-        "rationale": "Wrong: Class II affects transport to Golgi and typically impairs it; it would be correct only if transport were enhanced and caused the phenotype."
-      },
-      {
-        "text": "Class V mutation increasing receptor synthesis rate",
-        "isCorrect": false,
-        "rationale": "Wrong: Class V relates to recycling defects per the lecture; increasing synthesis would not match the described recycling impairment and would be correct only if synthesis were altered."
-      }
-    ]
-  },
-  {
-    "question": "A clinician considers therapies for heterozygous familial hypercholesterolemia. Based on the lecture, which intervention directly increases hepatic LDL receptor numbers as a secondary effect?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Discuss the pathophysiology and lab findings of Familial Dyslipidemia Types I and II",
-    "options": [
-      {
-        "text": "HMG-COA reductase inhibitors reducing intracellular cholesterol synthesis",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture notes statins decrease intracellular cholesterol synthesis, which secondarily upregulates LDL receptor expression, lowering serum LDL. It would be incorrect if statins did not reduce intracellular cholesterol."
-      },
-      {
-        "text": "Bile acid sequestrants directly increasing LDL receptor gene transcription",
-        "isCorrect": false,
-        "rationale": "Wrong: Bile acid sequestrants lower bile acid reabsorption and can secondarily lower LDL but do not directly increase LDL receptor transcription per the lecture; it would be correct only if the lecture stated direct transcriptional upregulation."
-      },
-      {
-        "text": "PCSK9 inhibitors decreasing hepatic LDL receptor synthesis",
-        "isCorrect": false,
-        "rationale": "Wrong: PCSK9 inhibitors increase receptor availability by preventing degradation, not by decreasing synthesis; this option would be correct only if PCSK9 inhibitors reduced synthesis."
-      },
-      {
-        "text": "Niacin increasing LDL receptor density by blocking receptor recycling",
-        "isCorrect": false,
-        "rationale": "Wrong: Niacin's mechanisms differ and do not block recycling to increase receptor density; it would be correct only if niacin affected recycling as described."
-      },
-      {
-        "text": "Fibrates increasing LDL receptor numbers via LPL activation",
-        "isCorrect": false,
-        "rationale": "Wrong: Fibrates activate PPARs and LPL but do not primarily increase LDL receptor numbers; it would be correct only if fibrates were shown to upregulate LDL receptors in the lecture."
-      }
-    ]
-  },
-  {
-    "question": "A nascent HDL particle acquires free cholesterol from peripheral cells. Which membrane transporter moves cholesterol to the outer leaflet for HDL pickup as described in the lecture?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the formation of HDL, its relationship to other lipoproteins",
-    "options": [
-      {
-        "text": "ABCA1 transporter moving cholesterol to outer membrane leaflet",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture identifies ABCA1 as moving cholesterol to the outer leaflet where HDL picks it up during nascent HDL formation. It would be incorrect if a different transporter performed this role."
-      },
-      {
-        "text": "SR-B1 receptor mediating selective cholesteryl ester uptake",
-        "isCorrect": false,
-        "rationale": "Wrong: SR-B1 mediates hepatic uptake of cholesteryl esters from HDL, not initial cholesterol efflux to HDL; it would be correct only if SR-B1 exported cholesterol to HDL."
-      },
-      {
-        "text": "LCAT esterifying cholesterol on HDL particles",
-        "isCorrect": false,
-        "rationale": "Wrong: LCAT esterifies cholesterol after HDL picks it up, but does not move cholesterol to the membrane leaflet; it would be correct only if LCAT performed the transporter function."
-      },
-      {
-        "text": "CETP exchanging cholesteryl esters and triglycerides between lipoproteins",
-        "isCorrect": false,
-        "rationale": "Wrong: CETP mediates exchange between lipoproteins, not cholesterol efflux to nascent HDL; it would be correct only if CETP exported cholesterol from cells."
-      },
-      {
-        "text": "ACAT esterifying intracellular cholesterol for storage",
-        "isCorrect": false,
-        "rationale": "Wrong: ACAT esterifies cholesterol intracellularly for storage and reduces free cholesterol available for efflux; it would be correct only if ACAT moved cholesterol to the membrane."
-      }
-    ]
-  },
-  {
-    "question": "A nascent HDL particle becomes mature by conversion of free cholesterol to cholesteryl esters. Which enzyme catalyzes this reaction on HDL according to the lecture?",
+    "question": "Which lipoprotein particle is described in the lecture as the largest and least dense, carrying primarily dietary triglycerides?",
     "difficulty_order": "1st",
-    "cited_learning_objective": "Describe the formation of HDL, its relationship to other lipoproteins",
+    "cited_learning_objective": "Describe the composition, function, and fates of lipoproteins including chylomicrons, VLDL, IDL, LDL, and HDL",
     "options": [
       {
-        "text": "LCAT converting free cholesterol to cholesteryl esters on HDL",
+        "text": "Chylomicron",
         "isCorrect": true,
-        "rationale": "Correct: The lecture states LCAT converts free cholesterol to cholesteryl esters on HDL, enabling maturation to HDL2. It would be incorrect if another enzyme performed this esterification on HDL."
+        "rationale": "Correct: the lecture describes chylomicrons as the largest, least dense particles that transport dietary triglycerides."
       },
       {
-        "text": "ACAT esterifying cholesterol within hepatocytes",
+        "text": "VLDL",
         "isCorrect": false,
-        "rationale": "Wrong: ACAT acts intracellularly in hepatocytes for storage, not on HDL in plasma; it would be correct only if ACAT acted on circulating HDL."
+        "rationale": "Wrong: VLDL is large and TG-rich but is smaller and denser than chylomicrons and carries endogenous TGs from the liver."
       },
       {
-        "text": "CETP transferring cholesteryl esters to HDL",
+        "text": "LDL",
         "isCorrect": false,
-        "rationale": "Wrong: CETP exchanges CE and TG between lipoproteins but does not catalyze esterification on HDL; it would be correct only if CETP synthesized CE on HDL."
+        "rationale": "Wrong: LDL is smaller and denser and primarily carries cholesterol, not primarily dietary TGs."
       },
       {
-        "text": "SR-B1 mediating selective uptake of cholesteryl esters",
+        "text": "HDL",
         "isCorrect": false,
-        "rationale": "Wrong: SR-B1 mediates hepatic uptake of CE from HDL, not the esterification step; it would be correct only if SR-B1 esterified cholesterol."
+        "rationale": "Wrong: HDL is the smallest and most dense, involved in reverse cholesterol transport, not carrying dietary TGs."
       },
       {
-        "text": "Lipoprotein lipase hydrolyzing triglycerides on HDL particles",
+        "text": "IDL",
         "isCorrect": false,
-        "rationale": "Wrong: LPL hydrolyzes TGs at capillaries and is not involved in HDL esterification; it would be correct only if LPL acted on HDL ester formation."
+        "rationale": "Wrong: IDL is an intermediate remnant between VLDL and LDL, not the largest least dense chylomicron particle."
       }
     ]
   },
   {
-    "question": "A hepatocyte expresses SR-B1 receptors at high levels. According to the lecture, what is the primary consequence of increased SR-B1 expression in tissues requiring cholesterol for steroidogenesis?",
+    "question": "A patient with defective hepatic uptake of chylomicron remnants due to ApoE mutation would most likely show which laboratory pattern described in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the composition, function, and fates of lipoproteins including chylomicrons, VLDL, IDL, LDL, and HDL",
+    "options": [
+      {
+        "text": "Elevated chylomicron remnants and triglycerides",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture explains ApoE mediates remnant binding to hepatic receptors; ApoE defects cause remnant accumulation and hypertriglyceridemia."
+      },
+      {
+        "text": "Isolated high LDL cholesterol",
+        "isCorrect": false,
+        "rationale": "Wrong: isolated high LDL is typical of LDL receptor defects (Type II), not ApoE-mediated remnant clearance failure."
+      },
+      {
+        "text": "Low HDL cholesterol with normal TGs",
+        "isCorrect": false,
+        "rationale": "Wrong: ApoE remnant clearance defects raise remnant/TG levels; low HDL with normal TGs is not the expected pattern."
+      },
+      {
+        "text": "Markedly increased bile salt excretion",
+        "isCorrect": false,
+        "rationale": "Wrong: impaired remnant uptake does not directly cause increased bile salt excretion as described in the lecture."
+      },
+      {
+        "text": "Decreased VLDL production",
+        "isCorrect": false,
+        "rationale": "Wrong: ApoE mutation affects remnant clearance, not hepatic VLDL production; VLDL production would not necessarily decrease."
+      }
+    ]
+  },
+  {
+    "question": "Which process described in the lecture explains how HDL returns cholesteryl esters to the liver without whole-particle uptake?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the process of reverse cholesterol transport",
     "options": [
       {
-        "text": "Enhanced selective uptake of cholesteryl esters from HDL",
+        "text": "Selective uptake via SR-B1",
         "isCorrect": true,
-        "rationale": "Correct: The lecture notes SR-B1 mediates transfer of cholesteryl esters from HDL into cells, and SR-B1 is upregulated in steroidogenic tissues to supply cholesterol. It would be incorrect if SR-B1 reduced CE uptake."
+        "rationale": "Correct: the lecture states HDL binds SR-B1 on hepatocytes and transfers cholesteryl esters selectively without whole-particle endocytosis."
       },
       {
-        "text": "Increased ABCA1-mediated cholesterol efflux to nascent HDL",
+        "text": "Receptor-mediated endocytosis of HDL",
         "isCorrect": false,
-        "rationale": "Wrong: ABCA1 mediates efflux to nascent HDL, not SR-B1-mediated uptake; it would be correct only if ABCA1 expression increased."
+        "rationale": "Wrong: HDL typically transfers CE via SR-B1 selectively; whole-particle endocytosis is not the primary mechanism described."
       },
       {
-        "text": "Greater CETP-mediated exchange of triglycerides for cholesteryl esters",
+        "text": "CETP-mediated direct hepatic uptake",
         "isCorrect": false,
-        "rationale": "Wrong: CETP mediates exchange between lipoproteins in plasma, not SR-B1-driven cellular uptake; it would be correct only if CETP activity were the primary effect."
+        "rationale": "Wrong: CETP mediates lipid exchange between lipoproteins, not direct hepatic selective CE uptake from HDL."
       },
       {
-        "text": "Reduced LCAT activity converting free cholesterol to esters",
+        "text": "ABCA1-dependent hepatic internalization",
         "isCorrect": false,
-        "rationale": "Wrong: SR-B1 upregulation does not reduce LCAT activity; it would be correct only if SR-B1 negatively regulated LCAT per the lecture."
+        "rationale": "Wrong: ABCA1 exports cholesterol to nascent HDL in peripheral cells; it is not the hepatic receptor for CE uptake."
       },
       {
-        "text": "Inhibition of hepatic bile salt synthesis from cholesterol",
+        "text": "LCAT-facilitated hepatic endocytosis",
         "isCorrect": false,
-        "rationale": "Wrong: SR-B1 facilitates CE uptake for biosynthesis, not inhibition of bile salt formation; it would be correct only if SR-B1 suppressed bile acid pathways."
+        "rationale": "Wrong: LCAT esterifies cholesterol on HDL; it does not mediate hepatic endocytosis of HDL CE."
       }
     ]
   },
   {
-    "question": "A patient presents with pancreatitis, eruptive xanthomas, and very high triglycerides due to accumulation of large triglyceride-rich particles. Which familial dyslipidemia type from the lecture best matches this presentation?",
+    "question": "A patient with low activity of LCAT would have impaired HDL maturation. Which immediate plasma change described in the lecture would you expect?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Discuss the pathophysiology and lab findings of Familial Dyslipidemia Types I and II",
+    "cited_learning_objective": "Describe the formation of HDL, its relationship to other lipoproteins",
     "options": [
       {
-        "text": "Type I hyperchylomicronemia from LPL or ApoC-II defects",
+        "text": "Accumulation of nascent discoidal HDL",
         "isCorrect": true,
-        "rationale": "Correct: The lecture describes Type I (hyperchylomicronemia) as autosomal recessive due to LPL or ApoC-II mutations causing chylomicron accumulation, pancreatitis, hepatosplenomegaly, and xanthomas. It would be incorrect if LDL receptor defects caused the phenotype."
+        "rationale": "Correct: the lecture explains LCAT esterifies free cholesterol to form CE, allowing nascent discoidal HDL to mature; LCAT deficiency would leave discoidal HDL accumulated."
       },
       {
-        "text": "Type II familial hypercholesterolemia from LDL receptor defects",
+        "text": "Increased LDL receptor expression",
         "isCorrect": false,
-        "rationale": "Wrong: Type II causes high LDL and tendon xanthomas, not primary chylomicron-driven pancreatitis; it would be correct only if LDL accumulation produced the described triglyceride-rich particles."
+        "rationale": "Wrong: LDL receptor expression is regulated by intracellular cholesterol and HMG-CoA reductase activity, not directly by LCAT activity."
       },
       {
-        "text": "Type III dysbetalipoproteinemia with remnant accumulation",
+        "text": "Enhanced CETP activity",
         "isCorrect": false,
-        "rationale": "Wrong: Type III involves remnant particles and palmar xanthomas, not classic chylomicron-driven pancreatitis; it would be correct only if remnant accumulation caused the symptoms."
+        "rationale": "Wrong: CETP activity exchanges lipids between lipoproteins; LCAT deficiency does not directly increase CETP activity as described."
       },
       {
-        "text": "Type IV hypertriglyceridemia from hepatic VLDL overproduction",
+        "text": "Marked hyperchylomicronemia",
         "isCorrect": false,
-        "rationale": "Wrong: Type IV involves VLDL overproduction and elevated TGs but the lecture links chylomicron accumulation specifically to pancreatitis and xanthomas in Type I; it would be correct only if VLDL predominated."
+        "rationale": "Wrong: hyperchylomicronemia results from LPL or ApoC-II defects (Type I), not LCAT deficiency affecting HDL maturation."
       },
       {
-        "text": "Type V combined hyperlipidemia with mixed particle elevation",
+        "text": "Increased hepatic ACAT activity",
         "isCorrect": false,
-        "rationale": "Wrong: Type V includes mixed chylomicron and VLDL elevation but the lecture specifically attributes classic LPL/ApoC-II deficiency to Type I; it would be correct only if combined particle elevation matched the case details."
+        "rationale": "Wrong: ACAT esterifies intracellular cholesterol for storage; LCAT deficiency affects plasma HDL esterification, not directly hepatic ACAT activity."
       }
     ]
   },
   {
-    "question": "A patient’s LDL particles are internalized and degraded in lysosomes, releasing free cholesterol. Which intracellular enzyme then esterifies that cholesterol for storage as described in the lecture?",
+    "question": "Which statement best describes the fate of approximately 95% of bile salts after intestinal secretion, as presented in the lecture?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the fate of cholesterol including bile salt formation and elimination as well as cholesterol esterification",
     "options": [
       {
-        "text": "ACAT esterifying free cholesterol to cholesteryl esters",
+        "text": "Reabsorbed at the terminal ileum and recycled",
         "isCorrect": true,
-        "rationale": "Correct: The lecture explains that after LDL degradation, free cholesterol is esterified by ACAT for storage as cholesteryl esters. It would be incorrect if another enzyme performed intracellular esterification."
+        "rationale": "Correct: the lecture states about 95% of bile salts are reabsorbed in the terminal ileum and recycled via the enterohepatic circulation."
       },
       {
-        "text": "LCAT esterifying cholesterol on circulating HDL",
+        "text": "Converted to cholesterol by gut bacteria",
         "isCorrect": false,
-        "rationale": "Wrong: LCAT acts in plasma on HDL, not intracellularly in lysosomes; it would be correct only if esterification occurred extracellularly on HDL."
+        "rationale": "Wrong: gut bacteria can deconjugate and dehydroxylate bile salts to secondary bile salts, but they are not converted back to cholesterol."
       },
       {
-        "text": "7alpha-hydroxylase converting cholesterol to bile acids",
+        "text": "Excreted entirely in feces daily",
         "isCorrect": false,
-        "rationale": "Wrong: 7α-hydroxylase initiates bile acid synthesis, not intracellular esterification for storage; it would be correct only if bile acid formation were the storage pathway."
+        "rationale": "Wrong: only a small fraction (~0.5 g/day) is excreted; most are reabsorbed and recycled as the lecture notes."
       },
       {
-        "text": "Squalene synthase converting cholesterol to squalene",
+        "text": "Absorbed in the duodenum and sent to lymphatics",
         "isCorrect": false,
-        "rationale": "Wrong: Squalene synthase acts earlier in biosynthesis and does not esterify cholesterol; it would be correct only if reverse conversion were possible."
+        "rationale": "Wrong: bile salts are reabsorbed mainly in the terminal ileum and return via portal circulation, not lymphatics from the duodenum."
       },
       {
-        "text": "Cholesterol ester hydrolase forming cholesteryl esters",
+        "text": "Conjugated with cholesterol for transport",
         "isCorrect": false,
-        "rationale": "Wrong: Cholesterol ester hydrolase hydrolyzes esters rather than forming them; it would be correct only if the enzyme synthesized esters."
+        "rationale": "Wrong: bile salts are conjugated with glycine or taurine for secretion; they are not conjugated with cholesterol for transport as stated."
       }
     ]
   },
   {
-    "question": "A patient with homozygous LDL receptor null mutations has extremely high LDL from birth. According to the lecture, which clinical feature is most characteristic of severe homozygous disease?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Discuss the pathophysiology and lab findings of Familial Dyslipidemia Types I and II",
-    "options": [
-      {
-        "text": "Early severe atherosclerosis with survival rarely past second decade",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture states homozygotes with dysfunctional receptors develop significant atherosclerosis by age 30 and rarely survive past the second decade without receptors. It would be incorrect if homozygotes had mild disease."
-      },
-      {
-        "text": "Isolated pancreatitis without atherosclerotic disease",
-        "isCorrect": false,
-        "rationale": "Wrong: Pancreatitis is associated with chylomicronemia (Type I), not homozygous LDL receptor null disease; it would be correct only if chylomicrons predominated."
-      },
-      {
-        "text": "Normal cholesterol levels with tendon xanthomas only",
-        "isCorrect": false,
-        "rationale": "Wrong: Homozygous LDL receptor defects cause very high cholesterol, not normal levels; it would be correct only if receptor function were preserved."
-      },
-      {
-        "text": "Low LDL cholesterol with increased HDL concentrations",
-        "isCorrect": false,
-        "rationale": "Wrong: Homozygous receptor defects increase LDL, not lower it; it would be correct only if LDL clearance were enhanced."
-      },
-      {
-        "text": "Predominant VLDL accumulation with hepatic steatosis",
-        "isCorrect": false,
-        "rationale": "Wrong: VLDL accumulation is not the hallmark of homozygous LDL receptor null disease; it would be correct only if VLDL overproduction were the primary defect."
-      }
-    ]
-  },
-  {
-    "question": "A clinician orders a lipid panel and sees LDL cholesterol of 320 mg/dL in a patient with a family history of early coronary disease. According to the lecture, which zygosity and expected LDL range best fits this finding?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Discuss the pathophysiology and lab findings of Familial Dyslipidemia Types I and II",
-    "options": [
-      {
-        "text": "Heterozygote familial hypercholesterolemia with LDL ~300 mg/dL",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture reports heterozygotes typically have LDL around 300 mg/dL, consistent with this value. It would be incorrect if the patient were homozygous with much higher LDL."
-      },
-      {
-        "text": "Homozygote familial hypercholesterolemia with LDL ~700 mg/dL",
-        "isCorrect": false,
-        "rationale": "Wrong: Homozygotes often have LDL >700 mg/dL per the lecture; this option would be correct only if LDL were in that higher range."
-      },
-      {
-        "text": "Type I hyperchylomicronemia with LDL ~50 mg/dL",
-        "isCorrect": false,
-        "rationale": "Wrong: Type I involves chylomicron and TG elevation, not isolated high LDL; it would be correct only if LDL were low and TGs high."
-      },
-      {
-        "text": "Secondary hyperlipidemia from hypothyroidism with LDL ~320 mg/dL",
-        "isCorrect": false,
-        "rationale": "Wrong: The lecture focuses on familial causes; secondary causes are not the described familial pattern and would be correct only if clinical context supported hypothyroidism."
-      },
-      {
-        "text": "Normal lipid variation with LDL ~120 mg/dL",
-        "isCorrect": false,
-        "rationale": "Wrong: 120 mg/dL is not consistent with the reported familial heterozygote range; it would be correct only if the patient lacked familial hypercholesterolemia."
-      }
-    ]
-  },
-  {
-    "question": "A patient’s chylomicron remnants bind hepatic receptors via which apolipoprotein, facilitating endocytosis and lysosomal degradation as described in the lecture?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "Describe the composition, function, and fates of lipoproteins including chylomicrons, VLDL, IDL, LDL, and HDL",
-    "options": [
-      {
-        "text": "Apo E mediating hepatic remnant receptor binding and uptake",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture states ApoE on chylomicron remnants binds hepatic receptors for endocytosis and lysosomal degradation. It would be incorrect if ApoE were absent or another apolipoprotein mediated binding."
-      },
-      {
-        "text": "Apo B-48 solely responsible for hepatic remnant uptake",
-        "isCorrect": false,
-        "rationale": "Wrong: ApoB-48 is structural but ApoE mediates remnant receptor binding; it would be correct only if ApoB-48 were the receptor ligand per the lecture."
-      },
-      {
-        "text": "Apo C-II acting as the primary hepatic remnant ligand",
-        "isCorrect": false,
-        "rationale": "Wrong: ApoC-II activates LPL and is returned to HDL, not the main hepatic remnant ligand; it would be correct only if ApoC-II mediated hepatic uptake."
-      },
-      {
-        "text": "Apo A-I binding hepatic receptors for remnant clearance",
-        "isCorrect": false,
-        "rationale": "Wrong: ApoA-I is an HDL apolipoprotein and does not mediate chylomicron remnant hepatic uptake; it would be correct only if ApoA-I were the remnant ligand."
-      },
-      {
-        "text": "Apo B-100 exclusively mediating intestinal chylomicron uptake",
-        "isCorrect": false,
-        "rationale": "Wrong: ApoB-100 is hepatic and associated with VLDL/LDL, not intestinal chylomicron remnant uptake; it would be correct only if ApoB-100 were present on chylomicron remnants."
-      }
-    ]
-  },
-  {
-    "question": "A pharmacology student asks which adverse effect is specifically highlighted in the lecture as associated with HMG-COA reductase inhibitors. Which adverse effect is emphasized?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "Describe regulation of HMG-COA Reductase",
-    "options": [
-      {
-        "text": "Myopathy with elevated creatine kinase and possible rhabdomyolysis",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture lists elevated CK, muscle pain, and possible rhabdomyolysis as statin adverse effects. It would be incorrect if statins lacked muscle-related toxicity."
-      },
-      {
-        "text": "Severe hypoglycemia requiring insulin therapy",
-        "isCorrect": false,
-        "rationale": "Wrong: The lecture mentions debated associations with diabetes but does not list severe hypoglycemia as a statin adverse effect; it would be correct only if hypoglycemia were documented."
-      },
-      {
-        "text": "Acute pancreatitis from direct pancreatic toxicity",
-        "isCorrect": false,
-        "rationale": "Wrong: Pancreatitis is linked to hypertriglyceridemia, not a primary statin adverse effect per the lecture; it would be correct only if statins caused pancreatitis."
-      },
-      {
-        "text": "Marked thrombocytopenia with bleeding diathesis",
-        "isCorrect": false,
-        "rationale": "Wrong: Thrombocytopenia is not described as a statin adverse effect in the lecture; it would be correct only if bleeding disorders were associated."
-      },
-      {
-        "text": "Immediate anaphylaxis after first dose of statin therapy",
-        "isCorrect": false,
-        "rationale": "Wrong: Anaphylaxis is not a highlighted statin adverse effect in the lecture; it would be correct only if hypersensitivity reactions were emphasized."
-      }
-    ]
-  },
-  {
-    "question": "A patient with low HDL is found to have impaired ABCA1 function. Based on the lecture, which step in reverse cholesterol transport is directly disrupted?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the process of reverse cholesterol transport",
-    "options": [
-      {
-        "text": "Initial efflux of cholesterol to nascent HDL via ABCA1",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture describes ABCA1 moving cholesterol to the outer leaflet for pickup by nascent HDL; ABCA1 dysfunction impairs this initial efflux. It would be incorrect if ABCA1 acted later in the pathway."
-      },
-      {
-        "text": "Esterification of cholesterol by LCAT on mature HDL",
-        "isCorrect": false,
-        "rationale": "Wrong: LCAT acts after efflux to esterify cholesterol; ABCA1 dysfunction affects the earlier efflux step, not LCAT activity directly. It would be correct only if LCAT were defective."
-      },
-      {
-        "text": "Selective hepatic uptake of cholesteryl esters via SR-B1",
-        "isCorrect": false,
-        "rationale": "Wrong: SR-B1 mediates hepatic uptake later in reverse transport; ABCA1 impairment does not directly affect SR-B1 function. It would be correct only if SR-B1 were defective."
-      },
-      {
-        "text": "CETP-mediated exchange of CE for triglycerides between lipoproteins",
-        "isCorrect": false,
-        "rationale": "Wrong: CETP mediates exchange between lipoproteins and is downstream of efflux; it would be correct only if CETP activity were the primary defect."
-      },
-      {
-        "text": "Hepatic conversion of cholesterol to bile salts by 7alpha-hydroxylase",
-        "isCorrect": false,
-        "rationale": "Wrong: 7α-hydroxylase converts cholesterol to bile acids in the liver and is downstream of HDL-mediated delivery; it would be correct only if hepatic conversion were impaired."
-      }
-    ]
-  },
-  {
-    "question": "A patient with a loss-of-function mutation in PCSK9 would be expected to have which effect on LDL receptor availability and serum LDL, based on the lecture mechanisms?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the process of LDL uptake and list how it regulates cholesterol levels",
-    "options": [
-      {
-        "text": "Increased LDL receptor recycling and decreased serum LDL levels",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture indicates PCSK9 inhibits receptor recycling; loss-of-function would reduce inhibition, increasing receptor recycling and lowering serum LDL. It would be incorrect if PCSK9 loss decreased receptor availability."
-      },
-      {
-        "text": "Decreased LDL receptor synthesis with increased serum LDL",
-        "isCorrect": false,
-        "rationale": "Wrong: PCSK9 primarily affects receptor degradation/recycling rather than synthesis; this would be correct only if PCSK9 loss reduced synthesis."
-      },
-      {
-        "text": "Increased hepatic bile acid synthesis causing higher LDL",
-        "isCorrect": false,
-        "rationale": "Wrong: PCSK9 mutations do not directly increase bile acid synthesis; it would be correct only if PCSK9 regulated bile acid pathways per the lecture."
-      },
-      {
-        "text": "Enhanced ACAT activity leading to higher circulating LDL",
-        "isCorrect": false,
-        "rationale": "Wrong: ACAT esterifies intracellular cholesterol and is not the primary mediator of PCSK9 effects; it would be correct only if ACAT were regulated by PCSK9."
-      },
-      {
-        "text": "No change in LDL receptor dynamics or serum LDL",
-        "isCorrect": false,
-        "rationale": "Wrong: The lecture links PCSK9 to receptor recycling and serum LDL; loss-of-function would alter these parameters, so no change would be incorrect unless compensatory mechanisms fully offset effects."
-      }
-    ]
-  },
-  {
-    "question": "A patient with defective LPL presents with fasting hypertriglyceridemia. Which therapeutic approach described in the lecture would most directly address the underlying enzymatic deficiency?",
+    "question": "A patient with a loss-of-function mutation in hepatic 7α-hydroxylase would most directly have which consequence described in the lecture?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Discuss the pathophysiology and lab findings of Familial Dyslipidemia Types I and II",
+    "cited_learning_objective": "Describe the fate of cholesterol including bile salt formation and elimination as well as cholesterol esterification",
     "options": [
       {
-        "text": "Dietary fat restriction to reduce chylomicron production",
+        "text": "Reduced bile acid synthesis and impaired cholesterol elimination",
         "isCorrect": true,
-        "rationale": "Correct: The lecture links LPL deficiency to impaired chylomicron TG clearance; reducing dietary fat lowers chylomicron formation and addresses the metabolic burden. It would be incorrect if the therapy increased chylomicron production."
+        "rationale": "Correct: the lecture identifies 7α-hydroxylase as the rate-limiting step in bile salt formation; loss reduces bile acid production and cholesterol elimination."
       },
       {
-        "text": "High-intensity statin therapy to inhibit HMG-COA reductase",
+        "text": "Increased HDL-mediated reverse transport",
         "isCorrect": false,
-        "rationale": "Wrong: Statins reduce cholesterol synthesis and upregulate LDL receptors but do not correct LPL-mediated chylomicron TG hydrolysis; it would be correct only if statins restored LPL function."
+        "rationale": "Wrong: reduced bile acid synthesis would not directly increase HDL reverse transport; it would impair cholesterol elimination instead."
       },
       {
-        "text": "PCSK9 inhibitor therapy to increase LDL receptor recycling",
+        "text": "Enhanced ACAT activity in hepatocytes",
         "isCorrect": false,
-        "rationale": "Wrong: PCSK9 inhibitors increase LDL receptor availability and lower LDL, not chylomicron TGs; it would be correct only if LDL receptor modulation treated LPL deficiency."
+        "rationale": "Wrong: ACAT esterifies cholesterol for storage; while intracellular cholesterol handling may change, the lecture does not state ACAT is directly enhanced by 7α-hydroxylase loss."
       },
       {
-        "text": "Bile acid sequestrant therapy to bind intestinal bile salts",
+        "text": "Marked hyperchylomicronemia",
         "isCorrect": false,
-        "rationale": "Wrong: Bile acid sequestrants affect bile salt recycling and can lower LDL but do not address chylomicron TG clearance; it would be correct only if bile acid binding reduced chylomicron formation."
+        "rationale": "Wrong: hyperchylomicronemia arises from LPL or ApoC-II defects, not from impaired bile acid synthesis."
       },
       {
-        "text": "Niacin therapy to directly activate lipoprotein lipase activity",
+        "text": "Increased conversion of cholesterol to squalene",
         "isCorrect": false,
-        "rationale": "Wrong: Niacin does not directly activate LPL per the lecture; it would be correct only if niacin were shown to restore LPL enzymatic activity."
+        "rationale": "Wrong: conversion to squalene is part of biosynthesis, not a compensatory fate described in the lecture for 7α-hydroxylase deficiency."
       }
     ]
   },
   {
-    "question": "A patient’s HDL particles donate ApoC-II back to chylomicrons and VLDL. Which role of HDL emphasized in the lecture does this illustrate?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the formation of HDL, its relationship to other lipoproteins",
-    "options": [
-      {
-        "text": "Apolipoprotein reservoir supplying ApoC-II and ApoE to other lipoproteins",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture describes HDL as an apolipoprotein reservoir that supplies ApoC-II and ApoE to nascent chylomicrons and VLDL, facilitating maturation. It would be incorrect if HDL did not exchange apolipoproteins."
-      },
-      {
-        "text": "Primary carrier of dietary triglycerides from intestine",
-        "isCorrect": false,
-        "rationale": "Wrong: HDL does not primarily carry dietary TGs; chylomicrons do. It would be correct only if HDL were the main dietary TG carrier."
-      },
-      {
-        "text": "Main site of cholesterol esterification within hepatocytes",
-        "isCorrect": false,
-        "rationale": "Wrong: Esterification within hepatocytes is mediated by ACAT, not HDL; it would be correct only if HDL performed intracellular esterification."
-      },
-      {
-        "text": "Exclusive mediator of CETP-dependent TG transfer to VLDL",
-        "isCorrect": false,
-        "rationale": "Wrong: CETP mediates exchange between lipoproteins but HDL is not the exclusive mediator; it would be correct only if HDL alone performed CETP functions."
-      },
-      {
-        "text": "Primary enzyme hydrolyzing triglycerides in capillaries",
-        "isCorrect": false,
-        "rationale": "Wrong: LPL hydrolyzes TGs in capillaries; HDL does not perform this enzymatic hydrolysis. It would be correct only if HDL had lipase activity."
-      }
-    ]
-  },
-  {
-    "question": "A patient with high intracellular cholesterol shows decreased HMG-COA reductase activity. Which of the following combined regulatory mechanisms from the lecture explains this decrease?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe regulation of HMG-COA Reductase",
-    "options": [
-      {
-        "text": "Transcriptional inhibition, enhanced degradation, and phosphorylation",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture lists three regulatory mechanisms: decreased transcription, increased degradation, and covalent modification (phosphorylation) that reduce HMG-COA reductase activity when cholesterol is high. It would be incorrect if only one mechanism were involved."
-      },
-      {
-        "text": "Increased transcription, decreased degradation, and dephosphorylation",
-        "isCorrect": false,
-        "rationale": "Wrong: Those changes would increase enzyme activity; it would be correct only if intracellular cholesterol stimulated enzyme activation."
-      },
-      {
-        "text": "Enhanced ACAT activity with increased LCAT-mediated esterification",
-        "isCorrect": false,
-        "rationale": "Wrong: ACAT and LCAT esterify cholesterol but do not directly explain decreased HMG-COA reductase activity; it would be correct only if esterification regulated transcription per the lecture."
-      },
-      {
-        "text": "Upregulation of SREBP activation and increased enzyme synthesis",
-        "isCorrect": false,
-        "rationale": "Wrong: Increased SREBP activation would raise enzyme synthesis; it would be correct only if cholesterol activated SREBP rather than inhibiting it."
-      },
-      {
-        "text": "Activation of CETP leading to increased cholesterol efflux",
-        "isCorrect": false,
-        "rationale": "Wrong: CETP mediates lipid exchange between lipoproteins and does not directly downregulate HMG-COA reductase; it would be correct only if CETP activity controlled enzyme expression."
-      }
-    ]
-  },
-  {
-    "question": "A patient with defective HDL formation cannot efficiently accept cholesterol from peripheral cells. Which enzyme that converts free cholesterol to cholesteryl esters on HDL would be functionally important and is described in the lecture?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the formation of HDL, its relationship to other lipoproteins",
-    "options": [
-      {
-        "text": "LCAT catalyzing esterification of free cholesterol on HDL",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture identifies LCAT as the enzyme that converts free cholesterol to cholesteryl esters on HDL, enabling maturation and reverse transport. It would be incorrect if another enzyme performed this plasma esterification."
-      },
-      {
-        "text": "ACAT esterifying cholesterol within hepatocytes for storage",
-        "isCorrect": false,
-        "rationale": "Wrong: ACAT acts intracellularly in hepatocytes, not on circulating HDL; it would be correct only if HDL esterification occurred intracellularly."
-      },
-      {
-        "text": "ABCA1 transporting cholesterol to the outer membrane leaflet",
-        "isCorrect": false,
-        "rationale": "Wrong: ABCA1 mediates efflux to nascent HDL but does not esterify cholesterol; it would be correct only if ABCA1 had enzymatic esterification activity."
-      },
-      {
-        "text": "CETP exchanging cholesteryl esters and triglycerides between lipoproteins",
-        "isCorrect": false,
-        "rationale": "Wrong: CETP mediates exchange but does not catalyze esterification on HDL; it would be correct only if CETP synthesized CE on HDL."
-      },
-      {
-        "text": "SR-B1 mediating hepatic uptake of cholesteryl esters from HDL",
-        "isCorrect": false,
-        "rationale": "Wrong: SR-B1 facilitates hepatic uptake of CE, not their formation on HDL; it would be correct only if SR-B1 esterified cholesterol."
-      }
-    ]
-  },
-  {
-    "question": "A patient with familial hypercholesterolemia due to ApoB-100 mutation would most directly impair which process described in the lecture?",
+    "question": "Which apolipoprotein retained on LDL is essential for its recognition by the LDL receptor and is encoded by the same gene that produces a shorter intestinal isoform by alternative splicing?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the functions of various apolipoproteins including Apo B-48, Apo B-100, Apo E, and Apo C-II",
     "options": [
       {
-        "text": "LDL receptor binding and receptor-mediated LDL uptake",
+        "text": "Apo B-100",
         "isCorrect": true,
-        "rationale": "Correct: The lecture states ApoB-100 is the ligand for LDL receptor binding; mutations impair receptor-mediated LDL uptake leading to elevated LDL. It would be incorrect if ApoB-100 did not mediate receptor binding."
+        "rationale": "Correct: the lecture explains ApoB-100 is on VLDL/LDL and is encoded by the same gene as ApoB-48 via different splicing; ApoB-100 mediates LDL receptor binding."
       },
       {
-        "text": "Activation of lipoprotein lipase at peripheral capillaries",
+        "text": "Apo B-48",
         "isCorrect": false,
-        "rationale": "Wrong: ApoC-II activates LPL, not ApoB-100; it would be correct only if ApoB-100 were the LPL cofactor."
+        "rationale": "Wrong: ApoB-48 is the intestinal splice variant specific to chylomicrons and lacks the LDL receptor-binding domain present in ApoB-100."
       },
       {
-        "text": "Conjugation of bile acids to glycine or taurine",
+        "text": "Apo E",
         "isCorrect": false,
-        "rationale": "Wrong: Bile acid conjugation is a hepatic enzymatic process unrelated to ApoB-100; it would be correct only if apolipoproteins mediated conjugation."
+        "rationale": "Wrong: ApoE mediates remnant uptake but is not the ApoB isoform produced by alternative splicing that binds the LDL receptor."
       },
       {
-        "text": "Esterification of cholesterol on HDL by LCAT",
+        "text": "Apo C-II",
         "isCorrect": false,
-        "rationale": "Wrong: LCAT esterifies cholesterol on HDL and is not dependent on ApoB-100; it would be correct only if ApoB-100 regulated LCAT."
+        "rationale": "Wrong: ApoC-II activates LPL and is not the large ApoB isoform responsible for LDL receptor recognition."
       },
       {
-        "text": "Transport of dietary triglycerides from intestine via lacteals",
+        "text": "Apo A-I",
         "isCorrect": false,
-        "rationale": "Wrong: ApoB-48 mediates chylomicron formation for dietary TG transport, not ApoB-100; it would be correct only if ApoB-100 were intestinally produced."
+        "rationale": "Wrong: ApoA-I is central to HDL and is not produced from the ApoB gene or responsible for LDL receptor binding."
       }
     ]
   },
   {
-    "question": "A patient’s HDL binds hepatocyte SR-B1 receptors to deliver cholesteryl esters. According to the lecture, what happens to HDL after selective CE transfer?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the process of reverse cholesterol transport",
-    "options": [
-      {
-        "text": "HDL is released back into circulation after CE transfer",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture states HDL binds SR-B1, transfers cholesteryl esters to hepatocytes, and is then released back into circulation to continue reverse transport. It would be incorrect if HDL were degraded after transfer."
-      },
-      {
-        "text": "HDL is internalized and degraded in lysosomes",
-        "isCorrect": false,
-        "rationale": "Wrong: HDL undergoes selective CE transfer via SR-B1 and is released, not typically internalized for degradation; it would be correct only if SR-B1 mediated endocytosis in the lecture."
-      },
-      {
-        "text": "HDL permanently donates ApoA-I to hepatocytes",
-        "isCorrect": false,
-        "rationale": "Wrong: HDL may exchange apolipoproteins but is not described as permanently donating ApoA-I to hepatocytes; it would be correct only if ApoA-I were irreversibly transferred."
-      },
-      {
-        "text": "HDL converts into chylomicrons after CE transfer",
-        "isCorrect": false,
-        "rationale": "Wrong: HDL does not convert into chylomicrons; chylomicrons originate from intestinal packaging. It would be correct only if lipoprotein identity conversion were described."
-      },
-      {
-        "text": "HDL becomes trapped in bile and excreted immediately",
-        "isCorrect": false,
-        "rationale": "Wrong: HDL is not directly excreted into bile after CE transfer; cholesterol delivered to liver may be converted to bile salts and excreted. It would be correct only if HDL itself were excreted."
-      }
-    ]
-  },
-  {
-    "question": "A patient with a mutation that prevents ApoC-II expression will most closely resemble which laboratory and clinical phenotype described in the lecture?",
+    "question": "Which therapeutic approach mentioned in the lecture directly removes LDL particles from the circulation in patients with homozygous familial hypercholesterolemia?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Discuss the pathophysiology and lab findings of Familial Dyslipidemia Types I and II",
     "options": [
       {
-        "text": "Hyperchylomicronemia with elevated triglycerides and pancreatitis risk",
+        "text": "LDL apheresis",
         "isCorrect": true,
-        "rationale": "Correct: The lecture indicates ApoC-II deficiency prevents LPL activation, causing chylomicron accumulation, high TGs, pancreatitis, hepatosplenomegaly, and xanthomas. It would be incorrect if ApoC-II were normal."
+        "rationale": "Correct: the lecture states homozygous familial hypercholesterolemia may require LDL apheresis to directly remove LDL from blood."
       },
       {
-        "text": "Familial hypercholesterolemia with tendon xanthomas and high LDL",
+        "text": "High-intensity statin monotherapy",
         "isCorrect": false,
-        "rationale": "Wrong: That phenotype is due to LDL receptor or ApoB-100 defects (Type II), not ApoC-II deficiency; it would be correct only if LDL receptor function were impaired."
+        "rationale": "Wrong: while statins are first-line for heterozygotes, homozygotes often need apheresis because statins alone are insufficient when receptors are dysfunctional."
       },
       {
-        "text": "Isolated low HDL cholesterol without triglyceride elevation",
+        "text": "Fibrate therapy",
         "isCorrect": false,
-        "rationale": "Wrong: ApoC-II deficiency elevates TG-rich chylomicrons rather than causing isolated low HDL; it would be correct only if HDL synthesis were defective."
+        "rationale": "Wrong: fibrates primarily lower TGs by activating PPARα and are not the direct LDL removal strategy described for homozygous FH."
       },
       {
-        "text": "Normal lipid panel with only mild postprandial lipemia",
+        "text": "Bile acid sequestrant monotherapy",
         "isCorrect": false,
-        "rationale": "Wrong: ApoC-II deficiency causes marked chylomicronemia and significant TG elevation, not a normal panel; it would be correct only if compensatory mechanisms normalized lipids."
+        "rationale": "Wrong: bile acid sequestrants reduce LDL modestly but are not the direct LDL removal method indicated for severe homozygous FH."
       },
       {
-        "text": "Predominant VLDL elevation with hepatic steatosis and low TGs",
+        "text": "LCAT replacement",
         "isCorrect": false,
-        "rationale": "Wrong: ApoC-II deficiency primarily affects chylomicron clearance and increases TGs, not isolated VLDL with low TGs; it would be correct only if VLDL overproduction dominated."
+        "rationale": "Wrong: LCAT replacement would affect HDL function, not directly remove LDL particles as LDL apheresis does."
       }
     ]
   },
   {
-    "question": "A patient’s nascent chylomicron receives apolipoproteins from HDL to become mature. Which apolipoprotein returned to HDL after triglyceride hydrolysis is described in the lecture?",
+    "question": "Which statement from the lecture best explains why statin therapy can lower serum LDL beyond inhibiting cholesterol synthesis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe regulation of HMG-COA Reductase",
+    "options": [
+      {
+        "text": "Decreased intracellular cholesterol increases LDL receptor production",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture notes that lowering intracellular cholesterol via statins upregulates LDL receptor synthesis, enhancing LDL clearance."
+      },
+      {
+        "text": "Statins directly activate LPL in adipose tissue",
+        "isCorrect": false,
+        "rationale": "Wrong: statins act on HMG-CoA reductase and indirectly increase LDL receptors; they do not directly activate LPL as described."
+      },
+      {
+        "text": "Statins increase bile salt excretion immediately",
+        "isCorrect": false,
+        "rationale": "Wrong: while cholesterol metabolism and bile acids are linked, the lecture emphasizes LDL receptor upregulation as the secondary LDL-lowering effect of statins."
+      },
+      {
+        "text": "Statins convert VLDL to HDL",
+        "isCorrect": false,
+        "rationale": "Wrong: statins do not convert VLDL to HDL; VLDL remodeling is mediated by LPL, CETP, and hepatic lipase."
+      },
+      {
+        "text": "Statins inhibit CETP activity",
+        "isCorrect": false,
+        "rationale": "Wrong: CETP inhibition is a separate therapeutic strategy; the lecture does not attribute CETP inhibition to statins."
+      }
+    ]
+  },
+  {
+    "question": "A patient with pancreatitis is found to have triglycerides >1000 mg/dL due to failure of chylomicron clearance. Which genetic defect described in the lecture is most likely responsible?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the pathophysiology and lab findings of Familial Dyslipidemia Types I and II",
+    "options": [
+      {
+        "text": "Lipoprotein lipase deficiency",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture states LPL deficiency prevents chylomicron TG breakdown, causing hyperchylomicronemia and pancreatitis."
+      },
+      {
+        "text": "LDL receptor mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: LDL receptor mutations cause elevated LDL cholesterol (Type II), not chylomicron-driven hypertriglyceridemia leading to pancreatitis."
+      },
+      {
+        "text": "LCAT deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: LCAT deficiency impairs HDL maturation and does not typically cause severe chylomicron accumulation and pancreatitis."
+      },
+      {
+        "text": "ACAT overexpression",
+        "isCorrect": false,
+        "rationale": "Wrong: ACAT affects intracellular cholesterol esterification; it is not the cause of chylomicron clearance failure described."
+      },
+      {
+        "text": "PCSK9 gain-of-function",
+        "isCorrect": false,
+        "rationale": "Wrong: PCSK9 gain-of-function reduces LDL receptor recycling and raises LDL, not chylomicron TGs causing pancreatitis."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best summarizes the three major fates of cholesterol produced in the liver as outlined in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the fate of cholesterol including bile salt formation and elimination as well as cholesterol esterification",
+    "options": [
+      {
+        "text": "Biliary secretion, bile salt formation, esterification for storage",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture lists secretion as free cholesterol into bile, conversion to bile salts, and esterification/storage as the three main hepatic fates."
+      },
+      {
+        "text": "Conversion to triglycerides, VLDL packaging, urinary excretion",
+        "isCorrect": false,
+        "rationale": "Wrong: cholesterol is not converted to triglycerides for urinary excretion; the lecture emphasizes bile secretion, bile salts, and esterification."
+      },
+      {
+        "text": "Direct renal elimination, HDL-mediated export, ketone formation",
+        "isCorrect": false,
+        "rationale": "Wrong: cholesterol is not eliminated directly via kidneys or converted to ketones as primary fates described in the lecture."
+      },
+      {
+        "text": "Oxidation to CO2, incorporation into glycogen, bile acid conjugation",
+        "isCorrect": false,
+        "rationale": "Wrong: cholesterol is not oxidized to CO2 or stored as glycogen; bile acid conjugation is correct but the other items are incorrect."
+      },
+      {
+        "text": "Phospholipid synthesis, LDL secretion, mitochondrial oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong: while cholesterol contributes to membranes, the lecture's three main hepatic fates are biliary secretion, bile salt formation, and esterification."
+      }
+    ]
+  },
+  {
+    "question": "Which lipoprotein particle, after losing triglycerides via LPL and returning ApoC-II to HDL, becomes a remnant known as IDL before further processing to LDL?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the composition, function, and fates of lipoproteins including chylomicrons, VLDL, IDL, LDL, and HDL",
     "options": [
       {
-        "text": "Apo C-II is returned to HDL after chylomicron TG hydrolysis",
+        "text": "VLDL",
         "isCorrect": true,
-        "rationale": "Correct: The lecture notes ApoC-II is transferred from HDL to nascent chylomicrons and then returned to HDL after LPL-mediated TG hydrolysis. It would be incorrect if ApoC-II remained on remnants."
+        "rationale": "Correct: the lecture explains VLDL loses TGs via LPL and becomes IDL (VLDL remnant) before conversion to LDL."
       },
       {
-        "text": "Apo B-48 is returned to HDL after TG hydrolysis",
+        "text": "Chylomicron",
         "isCorrect": false,
-        "rationale": "Wrong: ApoB-48 remains on chylomicron remnants and is not returned to HDL; it would be correct only if ApoB-48 were exchangeable like ApoC-II."
+        "rationale": "Wrong: chylomicrons become chylomicron remnants that are taken up by the liver, not IDL which is a VLDL remnant."
       },
       {
-        "text": "Apo E is permanently lost from chylomicrons after hydrolysis",
+        "text": "HDL",
         "isCorrect": false,
-        "rationale": "Wrong: ApoE mediates remnant uptake and is not described as permanently lost; it would be correct only if ApoE were irreversibly removed."
+        "rationale": "Wrong: HDL is involved in reverse cholesterol transport and apolipoprotein exchange, not the VLDL→IDL→LDL pathway."
       },
       {
-        "text": "Apo A-I is transferred from chylomicrons to HDL after hydrolysis",
+        "text": "LDL",
         "isCorrect": false,
-        "rationale": "Wrong: ApoA-I is primarily an HDL apolipoprotein and is not described as being returned from chylomicrons; it would be correct only if ApoA-I were exchanged in that direction."
+        "rationale": "Wrong: LDL is the downstream product of IDL; it does not become IDL itself."
       },
       {
-        "text": "Apo B-100 is exchanged back to HDL after TG hydrolysis",
+        "text": "Chylomicron remnant",
         "isCorrect": false,
-        "rationale": "Wrong: ApoB-100 is a structural apolipoprotein of VLDL/LDL and is not returned to HDL; it would be correct only if ApoB-100 were exchangeable like ApoC-II."
+        "rationale": "Wrong: chylomicron remnants are distinct from IDL; IDL specifically refers to VLDL remnants."
       }
     ]
   },
   {
-    "question": "A patient with high bile salt loss in stool will have which compensatory hepatic response described in the lecture to maintain bile acid pool?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the fate of cholesterol including bile salt formation and elimination as well as cholesterol esterification",
+    "question": "Which laboratory pattern shown in the lecture would you expect in a patient with Type I hyperchylomicronemia due to ApoC-II deficiency?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the pathophysiology and lab findings of Familial Dyslipidemia Types I and II",
     "options": [
       {
-        "text": "Upregulation of 7alpha-hydroxylase to increase bile acid synthesis",
+        "text": "Markedly elevated triglycerides and chylomicrons",
         "isCorrect": true,
-        "rationale": "Correct: The lecture indicates 7α-hydroxylase is the rate-limiting enzyme in bile acid synthesis and is activated by cholesterol; increased bile salt loss would stimulate bile acid synthesis via this enzyme. It would be incorrect if bile salt loss suppressed 7α-hydroxylase."
+        "rationale": "Correct: the lecture indicates ApoC-II deficiency prevents LPL activation, causing elevated chylomicrons and triglycerides."
       },
       {
-        "text": "Downregulation of ACAT to increase intracellular free cholesterol",
+        "text": "Isolated high LDL cholesterol",
         "isCorrect": false,
-        "rationale": "Wrong: ACAT esterifies cholesterol for storage; downregulation would increase free cholesterol but is not the primary compensatory response to bile salt loss per the lecture. It would be correct only if ACAT regulation were the main compensatory mechanism."
+        "rationale": "Wrong: isolated high LDL is characteristic of familial hypercholesterolemia (Type II), not ApoC-II deficiency."
       },
       {
-        "text": "Inhibition of HMG-COA reductase to reduce cholesterol synthesis",
+        "text": "Low triglycerides with high HDL",
         "isCorrect": false,
-        "rationale": "Wrong: Inhibition of HMG-COA reductase would lower cholesterol synthesis and worsen bile acid deficiency; it would be correct only if reducing synthesis were adaptive in this context."
+        "rationale": "Wrong: ApoC-II deficiency causes high TGs and chylomicrons, not low TGs or high HDL."
       },
       {
-        "text": "Increased CETP activity to transfer CE to VLDL",
+        "text": "Elevated IDL with normal chylomicrons",
         "isCorrect": false,
-        "rationale": "Wrong: CETP mediates lipoprotein exchange and is not the primary hepatic response to bile salt loss; it would be correct only if CETP activity restored bile acid pools."
+        "rationale": "Wrong: IDL elevation is more related to VLDL metabolism; ApoC-II deficiency specifically causes chylomicron accumulation."
       },
       {
-        "text": "Enhanced SR-B1-mediated HDL uptake to decrease hepatic cholesterol",
+        "text": "Decreased total cholesterol with high bile salts",
         "isCorrect": false,
-        "rationale": "Wrong: Enhanced SR-B1 uptake would deliver cholesterol to the liver but the lecture emphasizes upregulation of 7α-hydroxylase for bile acid synthesis as the direct compensatory step; it would be correct only if SR-B1 upregulation were the main response."
+        "rationale": "Wrong: ApoC-II deficiency leads to TG-rich lipoprotein accumulation, not decreased total cholesterol or increased bile salts."
       }
     ]
   },
   {
-    "question": "A patient with defective LDL receptor binding due to an ApoB-100 mutation will have which downstream intracellular effect described in the lecture?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the process of LDL uptake and list how it regulates cholesterol levels",
+    "question": "A patient with low HDL and impaired reverse cholesterol transport is found to have defective ABCA1. Which immediate mechanistic failure described in the lecture explains the low HDL?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process of reverse cholesterol transport",
     "options": [
       {
-        "text": "Reduced intracellular cholesterol leading to increased HMG-COA reductase activity",
+        "text": "Failure to export cholesterol to nascent HDL",
         "isCorrect": true,
-        "rationale": "Correct: The lecture explains that impaired LDL uptake reduces intracellular cholesterol, which relieves inhibition of HMG-COA reductase, increasing cholesterol synthesis. It would be incorrect if intracellular cholesterol increased despite uptake defects."
+        "rationale": "Correct: the lecture states ABCA1 moves cholesterol to the cell membrane for pickup by nascent HDL; defective ABCA1 prevents this export and impairs HDL formation."
       },
       {
-        "text": "Increased ACAT activity causing immediate cholesterol storage",
+        "text": "Inability to esterify cholesterol on HDL",
         "isCorrect": false,
-        "rationale": "Wrong: ACAT activity increases with intracellular cholesterol, but with reduced uptake intracellular cholesterol is low, so ACAT would not be increased; it would be correct only if intracellular cholesterol were high."
+        "rationale": "Wrong: esterification on HDL is performed by LCAT; ABCA1 defects impair cholesterol export to nascent HDL upstream of LCAT."
       },
       {
-        "text": "Enhanced LDL receptor gene expression due to cholesterol overload",
+        "text": "Reduced hepatic SR-B1 expression",
         "isCorrect": false,
-        "rationale": "Wrong: Cholesterol overload suppresses LDL receptor expression; enhanced expression would be correct only if intracellular cholesterol were low and regulatory pathways differed."
+        "rationale": "Wrong: SR-B1 mediates hepatic CE uptake from HDL; ABCA1 defects affect peripheral export to HDL rather than hepatic SR-B1 levels."
       },
       {
-        "text": "Immediate conversion of cholesterol to bile salts in peripheral tissues",
+        "text": "Increased CETP-mediated CE transfer to VLDL",
         "isCorrect": false,
-        "rationale": "Wrong: Bile salt synthesis occurs in the liver, not peripheral tissues; it would be correct only if peripheral bile salt synthesis were possible."
+        "rationale": "Wrong: CETP transfers CE between lipoproteins; ABCA1 defect primarily blocks initial cholesterol export to nascent HDL, not CETP activity."
       },
       {
-        "text": "Increased LCAT activity on HDL due to LDL receptor defect",
+        "text": "Enhanced LDL receptor recycling",
         "isCorrect": false,
-        "rationale": "Wrong: LCAT activity is not directly increased by LDL receptor defects per the lecture; it would be correct only if LCAT were regulated by LDL receptor status."
+        "rationale": "Wrong: LDL receptor recycling affects LDL clearance; it is unrelated to ABCA1-mediated HDL formation described in the lecture."
       }
     ]
   },
   {
-    "question": "A patient with elevated serum aminotransferases and muscle pain is suspected of having an adverse reaction to a cholesterol-lowering drug. Based on the lecture, which mechanism most likely produced both hepatic enzyme elevation and myopathy?",
+    "question": "Which of the following best characterizes the exchange of apolipoproteins between HDL and nascent triglyceride-rich particles as described in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the formation of HDL, its relationship to other lipoproteins",
+    "options": [
+      {
+        "text": "HDL supplies ApoC-II and ApoE to nascent chylomicrons and VLDL",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture explains HDL donates ApoC-II and ApoE to nascent chylomicrons and VLDL, enabling LPL activation and remnant uptake."
+      },
+      {
+        "text": "HDL receives ApoB-100 from chylomicrons",
+        "isCorrect": false,
+        "rationale": "Wrong: ApoB-100 is not transferred from chylomicrons; chylomicrons contain ApoB-48, and HDL exchanges ApoC-II and ApoE, not ApoB-100."
+      },
+      {
+        "text": "HDL transfers ApoA-I to VLDL to activate LPL",
+        "isCorrect": false,
+        "rationale": "Wrong: ApoA-I is central to HDL structure and LCAT activation, not the LPL activation of VLDL which requires ApoC-II."
+      },
+      {
+        "text": "HDL permanently retains ApoC-II after transfer",
+        "isCorrect": false,
+        "rationale": "Wrong: HDL donates ApoC-II to nascent particles and later receives it back after TG hydrolysis; it does not permanently retain it."
+      },
+      {
+        "text": "HDL exchanges ApoE for ApoB-48 on LDL",
+        "isCorrect": false,
+        "rationale": "Wrong: ApoE exchange occurs between HDL and remnants; ApoB-48 is on chylomicrons and is not exchanged onto LDL as described."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical management step from the lecture is recommended for heterozygous familial hypercholesterolemia to reduce ASCVD risk?",
     "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the pathophysiology and lab findings of Familial Dyslipidemia Types I and II",
+    "options": [
+      {
+        "text": "Start high-intensity statin therapy",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture recommends aggressive high-intensity statin treatment for heterozygous familial hypercholesterolemia to lower LDL and reduce ASCVD risk."
+      },
+      {
+        "text": "Immediate LDL apheresis",
+        "isCorrect": false,
+        "rationale": "Wrong: LDL apheresis is reserved for homozygous or refractory cases; heterozygotes are typically managed with high-intensity statins first."
+      },
+      {
+        "text": "Begin fibrate monotherapy",
+        "isCorrect": false,
+        "rationale": "Wrong: fibrates target triglycerides and are not first-line for LDL lowering in familial hypercholesterolemia as per the lecture."
+      },
+      {
+        "text": "Prescribe LCAT replacement therapy",
+        "isCorrect": false,
+        "rationale": "Wrong: LCAT replacement addresses HDL maturation defects, not the LDL receptor dysfunction central to familial hypercholesterolemia management."
+      },
+      {
+        "text": "Recommend bile acid supplementation",
+        "isCorrect": false,
+        "rationale": "Wrong: bile acid supplementation is not the lecture-recommended primary therapy for heterozygous familial hypercholesterolemia; statins are."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why secondary actions of statins include increased LDL receptor expression, as described in the lecture?",
+    "difficulty_order": "2nd",
     "cited_learning_objective": "Describe regulation of HMG-COA Reductase",
     "options": [
       {
-        "text": "Competitive inhibition of HMG-COA reductase decreasing cholesterol synthesis",
+        "text": "Lowered intracellular cholesterol relieves feedback inhibition on LDL receptor synthesis",
         "isCorrect": true,
-        "rationale": "Correct: The lecture links statins (competitive HMG-COA reductase inhibitors) to elevated aminotransferases and myopathy; inhibition of cholesterol synthesis can lead to these adverse effects. It would be incorrect if the drug did not inhibit the reductase."
+        "rationale": "Correct: the lecture explains that decreased intracellular cholesterol from statin therapy leads to increased LDL receptor production, enhancing LDL clearance."
       },
       {
-        "text": "Activation of lipoprotein lipase causing excessive TG hydrolysis",
+        "text": "Statins directly bind LDL receptors to stabilize them",
         "isCorrect": false,
-        "rationale": "Wrong: LPL activation leads to TG clearance and is not associated with hepatic enzyme elevation and myopathy per the lecture; it would be correct only if LPL activation caused these toxicities."
+        "rationale": "Wrong: statins inhibit HMG-CoA reductase and indirectly increase receptor synthesis; they do not directly bind or stabilize LDL receptors."
       },
       {
-        "text": "Upregulation of 7alpha-hydroxylase increasing bile acid toxicity",
+        "text": "Statins increase CETP expression to remove LDL",
         "isCorrect": false,
-        "rationale": "Wrong: Increased 7α-hydroxylase would alter bile acid synthesis but is not the mechanism described for statin-related hepatotoxicity and myopathy; it would be correct only if bile acid toxicity caused the symptoms."
+        "rationale": "Wrong: CETP mediates lipid exchange and is not the mechanism by which statins increase LDL receptor expression."
       },
       {
-        "text": "Inhibition of ACAT causing accumulation of free cholesterol intracellularly",
+        "text": "Statins activate LPL to clear LDL particles",
         "isCorrect": false,
-        "rationale": "Wrong: ACAT inhibition would increase free cholesterol but the lecture attributes statin adverse effects to reductase inhibition; it would be correct only if ACAT inhibition produced the clinical picture."
+        "rationale": "Wrong: LPL hydrolyzes TGs in chylomicrons and VLDL; it does not clear LDL and is not the mechanism for statin-induced LDL receptor upregulation."
       },
       {
-        "text": "Excess CETP activity leading to abnormal lipoprotein exchange",
+        "text": "Statins enhance bile salt reabsorption to lower LDL",
         "isCorrect": false,
-        "rationale": "Wrong: CETP activity affects lipoprotein composition but is not linked to hepatic enzyme elevation and myopathy in the lecture; it would be correct only if CETP dysregulation caused these toxicities."
+        "rationale": "Wrong: bile salt reabsorption would conserve bile acids; the lecture attributes increased LDL receptors to reduced intracellular cholesterol from statins."
+      }
+    ]
+  },
+  {
+    "question": "Which lipoprotein is the primary donor of ApoC-II and ApoE to nascent triglyceride-rich particles, serving as an apolipoprotein reservoir as described in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the formation of HDL, its relationship to other lipoproteins",
+    "options": [
+      {
+        "text": "HDL",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture describes HDL as the apolipoprotein reservoir that supplies ApoC-II and ApoE to nascent chylomicrons and VLDL."
+      },
+      {
+        "text": "LDL",
+        "isCorrect": false,
+        "rationale": "Wrong: LDL primarily carries cholesterol to tissues and is not the main donor of ApoC-II and ApoE to nascent TG-rich particles."
+      },
+      {
+        "text": "Chylomicron",
+        "isCorrect": false,
+        "rationale": "Wrong: chylomicrons receive ApoC-II and ApoE from HDL rather than donating them."
+      },
+      {
+        "text": "VLDL",
+        "isCorrect": false,
+        "rationale": "Wrong: VLDL receives apolipoproteins from HDL during maturation; it is not the primary reservoir described."
+      },
+      {
+        "text": "IDL",
+        "isCorrect": false,
+        "rationale": "Wrong: IDL is a remnant intermediate and not the apolipoprotein reservoir supplying ApoC-II and ApoE."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following lecture-described mechanisms directly increases the hydrophilicity of cholesterol to permit its elimination as bile salts?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the fate of cholesterol including bile salt formation and elimination as well as cholesterol esterification",
+    "options": [
+      {
+        "text": "Hydroxylation at carbon 7 by 7α-hydroxylase",
+        "isCorrect": true,
+        "rationale": "Correct: the lecture states hydroxylation at C7 by 7α-hydroxylase is the first step that increases cholesterol hydrophilicity for bile salt formation."
+      },
+      {
+        "text": "Esterification by ACAT",
+        "isCorrect": false,
+        "rationale": "Wrong: ACAT esterifies cholesterol for storage, which increases hydrophobicity rather than hydrophilicity."
+      },
+      {
+        "text": "Esterification by LCAT",
+        "isCorrect": false,
+        "rationale": "Wrong: LCAT esterifies cholesterol on HDL in plasma; this does not increase hydrophilicity for bile salt elimination."
+      },
+      {
+        "text": "Dehydroxylation by gut bacteria",
+        "isCorrect": false,
+        "rationale": "Wrong: bacterial dehydroxylation produces secondary bile salts that are less soluble and more likely excreted, but the initial hydrophilicity increase is via hepatic hydroxylation."
+      },
+      {
+        "text": "Conjugation with fatty acyl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong: conjugation with glycine or taurine (not fatty acyl-CoA) increases bile salt solubility; the lecture emphasizes 7α-hydroxylation as the key hydrophilicity step."
       }
     ]
   }

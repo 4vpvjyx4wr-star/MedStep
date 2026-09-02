@@ -1,1345 +1,1313 @@
 [
   {
-    "question": "A student is asked to name the major biochemical categories of lipids and their primary roles in cells. Which of the following lists best matches the major lipid classes and basic functions?",
+    "question": "Which class of lipids is the primary long-term energy storage form in adipose tissue?",
     "difficulty_order": "1st",
     "cited_learning_objective": "List the major classes of lipids, and their basic function",
     "options": [
       {
-        "text": "Fatty acids; storage; membranes; signaling",
-        "isCorrect": false,
-        "rationale": "Wrong because this option mixes a single molecule type with functions rather than listing the major classes; to be correct it would need to list triacylglycerols, phospholipids, sterols, sphingolipids, and eicosanoids explicitly."
-      },
-      {
-        "text": "Triacylglycerols; phospholipids; sterols; sphingolipids",
+        "text": "Triacylglycerols",
         "isCorrect": true,
-        "rationale": "Correct because the lecture lists triacylglycerols, phospholipids, isoprenoids/steroids (sterols), sphingolipids, fatty acids, and eicosanoids as major classes and their roles include storage, membranes, hormones, and signaling."
+        "rationale": "Triacylglycerols (triglycerides) are described as the primary storage form of fats in adipose tissue and used for energy, heat, and insulation."
       },
       {
-        "text": "Glycogen; phospholipids; cholesterol; prostaglandins",
+        "text": "Phospholipids",
         "isCorrect": false,
-        "rationale": "Wrong because glycogen is a carbohydrate not a lipid; it would be correct only if glycogen were replaced by triacylglycerol or fatty acids."
+        "rationale": "Phospholipids are membrane components and signaling molecules; they are not the main storage form and would be correct only if the question asked about membrane structure."
       },
       {
-        "text": "Proteins; triglycerides; steroids; leukotrienes",
+        "text": "Sphingolipids",
         "isCorrect": false,
-        "rationale": "Wrong because proteins are not a lipid class; to be correct the first item should be a lipid class such as fatty acids or phospholipids."
+        "rationale": "Sphingolipids are membrane components, especially in nervous tissue; they are not the primary energy storage form and would be correct only if the stem asked about neural membranes."
       },
       {
-        "text": "Phospholipids; sphingolipids; eicosanoids; triglycerides",
+        "text": "Eicosanoids",
         "isCorrect": false,
-        "rationale": "Partially correct but incomplete because it omits sterols/isoprenoids and fatty acids; adding sterols would make this a complete list per the lecture."
+        "rationale": "Eicosanoids are signaling molecules derived from arachidonic acid; they are not storage lipids and would be correct only if the question asked about cell signaling."
+      },
+      {
+        "text": "Isoprenoids",
+        "isCorrect": false,
+        "rationale": "Isoprenoids/steroids function as hormones and membrane components; they are not the main adipose storage form and would be correct only if the stem targeted steroid hormones."
       }
     ]
   },
   {
-    "question": "Which abbreviated notation corresponds to a saturated fatty acid with eighteen carbons?",
+    "question": "A fatty acid abbreviated 18:1(9) has which structural features?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Describe the basic structure of fatty acids and be able to give the abbreviation of fatty acids based on chain length and saturation",
     "options": [
       {
-        "text": "18:0",
+        "text": "18 carbons and one double bond at carbon 9",
         "isCorrect": true,
-        "rationale": "Correct because the lecture defines stearic acid as octadecanoic acid with abbreviation 18:0 indicating 18 carbons and zero double bonds."
+        "rationale": "The notation 18:1(9) denotes 18 carbons with one double bond located at carbon 9 from the carboxyl end."
       },
       {
-        "text": "18:1",
+        "text": "18 carbons and one double bond at carbon 1",
         "isCorrect": false,
-        "rationale": "Wrong because 18:1 denotes one double bond; it would be correct for oleic acid rather than a saturated eighteen-carbon fatty acid."
+        "rationale": "A double bond at carbon 1 would be written as (1); this option is incorrect unless the position were specified as 1."
       },
       {
-        "text": "16:0",
+        "text": "18 carbons and two double bonds at carbons 9 and 12",
         "isCorrect": false,
-        "rationale": "Wrong because 16:0 denotes a sixteen-carbon saturated fatty acid (palmitic acid); changing the carbon count to 18 would make it correct."
+        "rationale": "Two double bonds would be indicated as 18:2; this option would be correct only if the abbreviation were 18:2(9,12)."
       },
       {
-        "text": "20:4",
+        "text": "16 carbons and one double bond at carbon 9",
         "isCorrect": false,
-        "rationale": "Wrong because 20:4 denotes arachidonic acid with four double bonds; altering the carbon number and double bond count would be required to match an 18-carbon saturated FA."
+        "rationale": "This describes a 16:1(9) fatty acid, not 18:1(9); it would be correct only if the carbon count were 16."
       },
       {
-        "text": "18:3",
+        "text": "18 carbons and saturated (no double bonds)",
         "isCorrect": false,
-        "rationale": "Wrong because 18:3 denotes a polyunsaturated eighteen-carbon fatty acid (alpha-linolenic acid); removing the double bonds would make it 18:0 and correct."
+        "rationale": "Saturated 18-carbon fatty acid is 18:0; this option would be correct only if the abbreviation were 18:0."
       }
     ]
   },
   {
-    "question": "Identify the fatty acid that the body cannot synthesize because it requires a double bond at the omega-6 position and must be obtained from the diet.",
+    "question": "Which dietary fatty acid is essential because humans cannot introduce a double bond at the omega-6 position?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Define essential fatty acid and list examples and their food sources",
     "options": [
       {
-        "text": "Linoleic acid eighteen carbons two double bonds",
+        "text": "Linoleic acid",
         "isCorrect": true,
-        "rationale": "Correct because the lecture states linoleic acid is an essential omega-6 fatty acid and is a precursor for arachidonic acid and must be obtained from plant-based foods."
+        "rationale": "Linoleic acid is an essential ω-6 fatty acid and must be obtained from plant-based foods as stated."
       },
       {
-        "text": "Oleic acid eighteen carbons one double bond",
+        "text": "Oleic acid",
         "isCorrect": false,
-        "rationale": "Wrong because oleic acid is monounsaturated and not an essential omega-6; it is synthesized endogenously and would be essential only if humans lacked the desaturase to form it."
+        "rationale": "Oleic acid is a monounsaturated ω-9 fatty acid that is not essential; it would be correct only if humans lacked the ability to synthesize ω-9 bonds."
       },
       {
-        "text": "Arachidonic acid twenty carbons four double bonds",
+        "text": "Arachidonic acid",
         "isCorrect": false,
-        "rationale": "Wrong because arachidonic acid can be synthesized from linoleic acid and is not the primary dietary essential omega-6; if linoleic acid were absent in diet, arachidonic acid would become essential."
+        "rationale": "Arachidonic acid is derived from linoleic acid and is not classified as an essential dietary fatty acid in the lecture; it would be correct only if dietary arachidonate were required."
       },
       {
-        "text": "Alpha linolenic acid eighteen carbons three double bonds",
+        "text": "Palmitic acid",
         "isCorrect": false,
-        "rationale": "Wrong because alpha-linolenic acid is an essential omega-3 fatty acid, not an omega-6; it would be correct only if the question asked for an omega-3 essential fatty acid."
+        "rationale": "Palmitic acid is a saturated fatty acid commonly synthesized by the body; it would be correct only if the stem asked about saturated fats."
       },
       {
-        "text": "Palmitic acid sixteen carbons zero double bonds",
+        "text": "α-Linolenic acid",
         "isCorrect": false,
-        "rationale": "Wrong because palmitic acid is a saturated fatty acid that can be synthesized by the body; it would be essential only if endogenous synthesis were impossible."
+        "rationale": "α-Linolenic acid is an essential ω-3 fatty acid, not an ω-6; it would be correct only if the question asked about omega-3 essentiality."
       }
     ]
   },
   {
-    "question": "Which structural feature most directly lowers a fatty acid's melting temperature?",
+    "question": "How does increasing the number of cis double bonds in a fatty acid affect its melting temperature?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Describe how melting temperature changes based on chain length and saturation",
     "options": [
       {
-        "text": "Increased number of carbon double bonds",
+        "text": "Melting temperature decreases",
         "isCorrect": true,
-        "rationale": "Correct because the lecture explains that melting temperature decreases with increasing number of double bonds (unsaturation), as seen with oleic and linoleic acids."
+        "rationale": "The lecture states that melting temperature decreases with increasing number of double bonds, as seen with oleic and linolenic acids."
       },
       {
-        "text": "Longer hydrocarbon chain length",
+        "text": "Melting temperature increases",
         "isCorrect": false,
-        "rationale": "Wrong because longer chain length increases melting temperature; shortening the chain would lower melting point and make this statement correct."
+        "rationale": "Melting temperature increases with chain length, not with more double bonds; this option would be correct only if chain length increased instead."
       },
       {
-        "text": "Addition of a phosphate head group",
+        "text": "Melting temperature remains unchanged",
         "isCorrect": false,
-        "rationale": "Wrong because adding a polar head affects amphipathicity and membrane behavior rather than directly lowering fatty acid melting point; if the question asked about phospholipids rather than free fatty acids this could be relevant."
+        "rationale": "Double bonds alter packing and lower melting point; this would be correct only if the double bonds were trans and compensated by other factors."
       },
       {
-        "text": "Conversion to a trans double bond configuration",
+        "text": "Melting temperature becomes unpredictable",
         "isCorrect": false,
-        "rationale": "Wrong because trans double bonds pack more tightly and raise melting temperature compared with cis; if the double bond were cis this option would lower melting temperature."
+        "rationale": "The lecture gives predictable trends; unpredictability would be correct only if structural data were missing."
+      },
+      {
+        "text": "Melting temperature increases then decreases",
+        "isCorrect": false,
+        "rationale": "No biphasic trend is described; this would be correct only with additional context about chain length changes."
+      }
+    ]
+  },
+  {
+    "question": "Identify the configuration and typical dietary origin of most naturally occurring unsaturated fatty acids.",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify trans and cis unsaturated fatty acids and understand health impacts of trans fatty acids",
+    "options": [
+      {
+        "text": "Cis configuration, plant and fish oils",
+        "isCorrect": true,
+        "rationale": "Most natural unsaturated fatty acids are cis; ω-3s are found in fish and plant oils as noted in the lecture."
+      },
+      {
+        "text": "Trans configuration, cold-water fish",
+        "isCorrect": false,
+        "rationale": "Trans fats are usually produced by chemical hydrogenation, not naturally abundant in cold-water fish; this would be correct only if the stem specified industrial processing."
+      },
+      {
+        "text": "Cis configuration, hydrogenated vegetable oils",
+        "isCorrect": false,
+        "rationale": "Hydrogenation produces trans fats; cis configuration predominates in unprocessed plant oils, so this is incorrect unless hydrogenation preserved cis bonds."
+      },
+      {
+        "text": "Trans configuration, dairy fats",
+        "isCorrect": false,
+        "rationale": "While some trans isomers can occur in ruminant fats, the lecture emphasizes industrial hydrogenation as the main source of trans fats; this would be correct only if ruminant-derived trans fats were the focus."
+      },
+      {
+        "text": "Cis configuration, red meat fats",
+        "isCorrect": false,
+        "rationale": "Red meat contains more saturated fats; cis unsaturated fats are more characteristic of plant and fish oils and this option would be correct only if specifying monounsaturated content."
+      }
+    ]
+  },
+  {
+    "question": "Which molecule is phosphatidic acid missing compared with other common phospholipids?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the structure and functions of phospholipids and what separates phosphatidic acid from other phospholipids",
+    "options": [
+      {
+        "text": "An additional organic head group",
+        "isCorrect": true,
+        "rationale": "Phosphatidic acid lacks an additional organic molecule attached to the phosphate; other phospholipids have head groups like choline or serine."
+      },
+      {
+        "text": "A glycerol backbone",
+        "isCorrect": false,
+        "rationale": "Phosphatidic acid is built on a glycerol backbone; this would be correct only if the molecule were a sphingolipid."
+      },
+      {
+        "text": "Fatty acid tails",
+        "isCorrect": false,
+        "rationale": "Phosphatidic acid contains fatty acids at carbons 1 and 2; this would be correct only if the molecule were a lysophospholipid missing one tail."
+      },
+      {
+        "text": "A phosphate group",
+        "isCorrect": false,
+        "rationale": "Phosphatidic acid includes a phosphate at carbon 3; this would be correct only if the stem described diacylglycerol."
+      },
+      {
+        "text": "An ester linkage",
+        "isCorrect": false,
+        "rationale": "Ester bonds link fatty acids to glycerol in phosphatidic acid; this would be correct only if the molecule were a sphingosine-based lipid."
+      }
+    ]
+  },
+  {
+    "question": "A patient has progressive neurodegeneration, hepatosplenomegaly, and a macular cherry-red spot. Which enzyme deficiency best explains accumulation of sphingomyelin in lysosomes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the enzyme deficiency and its usual products for Niemann-Pick Disease",
+    "options": [
+      {
+        "text": "Sphingomyelinase deficiency",
+        "isCorrect": true,
+        "rationale": "Niemann-Pick disease results from sphingomyelinase deficiency, causing sphingomyelin buildup and the described clinical features."
+      },
+      {
+        "text": "Glucocerebrosidase deficiency",
+        "isCorrect": false,
+        "rationale": "Glucocerebrosidase deficiency causes Gaucher disease with glucocerebroside accumulation; it would be correct only if Gaucher clinical signs were present."
+      },
+      {
+        "text": "Hexosaminidase A deficiency",
+        "isCorrect": false,
+        "rationale": "Hexosaminidase A deficiency causes Tay-Sachs with GM2 ganglioside accumulation; it would be correct only if the stem lacked hepatosplenomegaly."
+      },
+      {
+        "text": "Arylsulfatase A deficiency",
+        "isCorrect": false,
+        "rationale": "Arylsulfatase A deficiency causes metachromatic leukodystrophy with sulfatide accumulation; it would be correct only if demyelination without hepatosplenomegaly were emphasized."
+      },
+      {
+        "text": "α-Galactosidase A deficiency",
+        "isCorrect": false,
+        "rationale": "α-Galactosidase A deficiency causes Fabry disease with ceramide trihexoside accumulation; it would be correct only if angiokeratomas and neuropathic pain were described."
+      }
+    ]
+  },
+  {
+    "question": "Which structural component differentiates a ceramide from sphingosine?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the components of a sphingolipid, including the differentiation of ceramide and sphingosine",
+    "options": [
+      {
+        "text": "An amide-linked fatty acid on the amino group",
+        "isCorrect": true,
+        "rationale": "Ceramide is sphingosine with an attached fatty acid at the NH2 (amide linkage), distinguishing it from free sphingosine."
+      },
+      {
+        "text": "A phosphate group on the terminal hydroxyl",
+        "isCorrect": false,
+        "rationale": "A phosphate on the terminal hydroxyl yields sphingomyelin when combined with choline; this would be correct only for sphingomyelin, not ceramide."
+      },
+      {
+        "text": "A sugar head group attached to the amino",
+        "isCorrect": false,
+        "rationale": "Glycosphingolipids have sugar head groups attached to ceramide's terminal hydroxyl, not to the amino; this would be correct only for cerebrosides or gangliosides."
+      },
+      {
+        "text": "A glycerol backbone replacing sphingosine",
+        "isCorrect": false,
+        "rationale": "Glycerol backbone characterizes glycerophospholipids, not sphingolipids; this would be correct only if the lipid were a phosphatidylglycerol."
+      },
+      {
+        "text": "An esterified fatty acid at carbon 1",
+        "isCorrect": false,
+        "rationale": "Esterified fatty acids at glycerol carbons define phosphoacylglycerols; this would be correct only for glycerol-based phospholipids."
+      }
+    ]
+  },
+  {
+    "question": "Which phospholipid is especially important in mitochondrial membranes and energy conversion?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the structure and functions of phospholipids and what separates phosphatidic acid from other phospholipids",
+    "options": [
+      {
+        "text": "Cardiolipin",
+        "isCorrect": true,
+        "rationale": "Cardiolipin (diphosphatidylglycerol) is noted as essential in mitochondrial membranes and plays a role in respiration and energy conversion."
+      },
+      {
+        "text": "Phosphatidylcholine",
+        "isCorrect": false,
+        "rationale": "Phosphatidylcholine is a common membrane phospholipid but the lecture specifically highlights cardiolipin for mitochondrial function; this would be correct only if general membrane structure were asked."
+      },
+      {
+        "text": "Phosphatidylserine",
+        "isCorrect": false,
+        "rationale": "Phosphatidylserine is important for membrane signaling and apoptosis, not specifically mitochondrial energy conversion; it would be correct only if the stem targeted signaling roles."
+      },
+      {
+        "text": "Phosphatidylethanolamine",
+        "isCorrect": false,
+        "rationale": "Phosphatidylethanolamine is a major membrane lipid but not singled out for mitochondrial respiration in the lecture; it would be correct only with different emphasis."
+      },
+      {
+        "text": "Phosphatidylglycerol",
+        "isCorrect": false,
+        "rationale": "Phosphatidylglycerol is a precursor to cardiolipin but cardiolipin is the mitochondrial-specific lipid; this would be correct only if precursor roles were asked."
+      }
+    ]
+  },
+  {
+    "question": "Which pathway converts arachidonic acid into prostaglandins and thromboxanes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe briefly the synthesis of eicosanoids from arachidonic acid and list their functions",
+    "options": [
+      {
+        "text": "Cyclooxygenase pathway",
+        "isCorrect": true,
+        "rationale": "The cyclooxygenase (COX) pathway produces prostaglandins and thromboxanes from arachidonic acid as described."
+      },
+      {
+        "text": "Lipoxygenase pathway",
+        "isCorrect": false,
+        "rationale": "The lipoxygenase pathway yields leukotrienes, not prostaglandins or thromboxanes; it would be correct only if leukotriene synthesis were asked."
+      },
+      {
+        "text": "Cytochrome P450 pathway",
+        "isCorrect": false,
+        "rationale": "The cytochrome P450 pathway forms epoxides from arachidonic acid; it would be correct only if epoxide synthesis were the target."
+      },
+      {
+        "text": "Phospholipase C pathway",
+        "isCorrect": false,
+        "rationale": "Phospholipase C generates diacylglycerol and IP3, not eicosanoids; it would be correct only if signaling lipid cleavage were asked."
+      },
+      {
+        "text": "Sphingomyelinase pathway",
+        "isCorrect": false,
+        "rationale": "Sphingomyelinase degrades sphingomyelin to ceramide; it would be correct only in a sphingolipid catabolism context."
+      }
+    ]
+  },
+  {
+    "question": "Aspirin irreversibly inhibits which enzyme to reduce thromboxane and prostaglandin synthesis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe how aspirin inhibits eicosanoid synthesis",
+    "options": [
+      {
+        "text": "Cyclooxygenase",
+        "isCorrect": true,
+        "rationale": "Aspirin acetylates and irreversibly inhibits cyclooxygenase, blocking prostaglandin and thromboxane synthesis."
+      },
+      {
+        "text": "Phospholipase A2",
+        "isCorrect": false,
+        "rationale": "Phospholipase A2 releases arachidonic acid from membranes; aspirin acts downstream on COX, so this would be correct only if PLA2 were the target."
+      },
+      {
+        "text": "5-Lipoxygenase",
+        "isCorrect": false,
+        "rationale": "5-Lipoxygenase produces leukotrienes; aspirin inhibits COX, not 5-LOX, so this would be correct only if leukotriene synthesis were inhibited."
+      },
+      {
+        "text": "Cytochrome P450 epoxygenase",
+        "isCorrect": false,
+        "rationale": "Cytochrome P450 forms epoxides from arachidonic acid; aspirin does not inhibit this enzyme and this would be correct only with different drug action."
+      },
+      {
+        "text": "Thromboxane synthase",
+        "isCorrect": false,
+        "rationale": "Thromboxane synthase converts prostaglandin endoperoxides to TXA2; aspirin blocks upstream COX, so this would be correct only if the drug targeted that enzyme directly."
+      }
+    ]
+  },
+  {
+    "question": "Which fatty acid listed is a precursor for prostaglandin synthesis and is 20 carbons long with four double bonds?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe briefly the synthesis of eicosanoids from arachidonic acid and list their functions",
+    "options": [
+      {
+        "text": "Arachidonic acid",
+        "isCorrect": true,
+        "rationale": "Arachidonic acid is 20:4(5,8,11,14) and is the precursor for prostaglandins and other eicosanoids."
+      },
+      {
+        "text": "Linoleic acid",
+        "isCorrect": false,
+        "rationale": "Linoleic acid is 18:2 and a precursor to arachidonic acid but is not itself the 20:4 precursor; it would be correct only if conversion steps were emphasized."
+      },
+      {
+        "text": "α-Linolenic acid",
+        "isCorrect": false,
+        "rationale": "α-Linolenic acid is 18:3 (ω-3) and not the 20:4 arachidonate; it would be correct only if ω-3 pathways were the focus."
+      },
+      {
+        "text": "Oleic acid",
+        "isCorrect": false,
+        "rationale": "Oleic acid is 18:1 and not a 20-carbon tetraene; it would be correct only if monounsaturated fatty acids were asked."
+      },
+      {
+        "text": "Stearic acid",
+        "isCorrect": false,
+        "rationale": "Stearic acid is 18:0 saturated and not a precursor for prostaglandins; it would be correct only if saturated fatty acids were the topic."
+      }
+    ]
+  },
+  {
+    "question": "Which lipid class contains a glycerol backbone, two fatty acid tails, and a phosphate-linked head group?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the structure and functions of phospholipids and what separates phosphatidic acid from other phospholipids",
+    "options": [
+      {
+        "text": "Phosphoacylglycerols",
+        "isCorrect": true,
+        "rationale": "Phosphoacylglycerols (glycerophospholipids) have glycerol, two fatty acids at carbons 1 and 2, and a phosphate-linked head group at carbon 3."
+      },
+      {
+        "text": "Triacylglycerols",
+        "isCorrect": false,
+        "rationale": "Triacylglycerols have three fatty acids esterified to glycerol and lack a phosphate head group; this would be correct only if the stem omitted phosphate."
+      },
+      {
+        "text": "Sphingomyelins",
+        "isCorrect": false,
+        "rationale": "Sphingomyelins are sphingolipids with phosphocholine on ceramide, not glycerol-based; this would be correct only if sphingosine backbone were specified."
+      },
+      {
+        "text": "Glycosphingolipids",
+        "isCorrect": false,
+        "rationale": "Glycosphingolipids have sugar head groups on ceramide and lack glycerol backbones; this would be correct only if sugars were the focus."
+      },
+      {
+        "text": "Isoprenoids",
+        "isCorrect": false,
+        "rationale": "Isoprenoids/steroids are built from isoprenyl units and lack glycerol and fatty acid tails; this would be correct only in a steroid context."
+      }
+    ]
+  },
+  {
+    "question": "A lipid with a sphingosine backbone plus a phosphocholine head group is best classified as which molecule?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the components of a sphingolipid, including the differentiation of ceramide and sphingosine",
+    "options": [
+      {
+        "text": "Sphingomyelin",
+        "isCorrect": true,
+        "rationale": "Sphingomyelin is ceramide with a phosphocholine head group and is a key component of myelin as described."
+      },
+      {
+        "text": "Ceramide",
+        "isCorrect": false,
+        "rationale": "Ceramide is sphingosine plus a fatty acid but lacks the phosphocholine head group; this would be correct only if no head group were attached."
+      },
+      {
+        "text": "Glucocerebroside",
+        "isCorrect": false,
+        "rationale": "Glucocerebroside is a glycosphingolipid with a glucose head group, not phosphocholine; it would be correct only if a sugar head group were present."
+      },
+      {
+        "text": "Phosphatidylcholine",
+        "isCorrect": false,
+        "rationale": "Phosphatidylcholine is glycerol-based with choline on phosphate, not sphingosine-based; it would be correct only if glycerol backbone were present."
+      },
+      {
+        "text": "Ganglioside",
+        "isCorrect": false,
+        "rationale": "Gangliosides are complex glycosphingolipids containing sialic acid, not phosphocholine; this would be correct only if sialic acid were specified."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best describes the dietary and health associations of saturated fatty acids per the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the basic structure of fatty acids and be able to give the abbreviation of fatty acids based on chain length and saturation",
+    "options": [
+      {
+        "text": "Found in animal fats and linked to increased LDL",
+        "isCorrect": true,
+        "rationale": "The lecture notes saturated fatty acids are often found in animal fats and diets high in them are associated with increased LDL and cardiovascular disease."
+      },
+      {
+        "text": "Found mainly in fish and reduce LDL",
+        "isCorrect": false,
+        "rationale": "Fish are richer in ω-3 unsaturated fats; this would be correct only if referring to ω-3 fatty acids rather than saturated fats."
+      },
+      {
+        "text": "Produced only by plants and increase HDL",
+        "isCorrect": false,
+        "rationale": "Saturated fats are common in animal products; plant-derived unsaturated fats are associated with HDL increases, so this is incorrect unless the stem targeted plant oils."
+      },
+      {
+        "text": "Always liquid at room temperature",
+        "isCorrect": false,
+        "rationale": "Saturated fats are typically solid at room temperature due to higher melting points; this would be correct only for short-chain saturated fats."
+      },
+      {
+        "text": "Contain cis double bonds in natural form",
+        "isCorrect": false,
+        "rationale": "Saturated fatty acids have no double bonds; this would be correct only for unsaturated fatty acids."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme releases arachidonic acid from membrane phospholipids to initiate eicosanoid synthesis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe briefly the synthesis of eicosanoids from arachidonic acid and list their functions",
+    "options": [
+      {
+        "text": "Phospholipase A2",
+        "isCorrect": true,
+        "rationale": "Phospholipase A2 releases arachidonic acid from membrane phospholipids, providing substrate for eicosanoid synthesis."
+      },
+      {
+        "text": "Cyclooxygenase",
+        "isCorrect": false,
+        "rationale": "Cyclooxygenase converts free arachidonic acid into prostaglandin endoperoxides but does not release arachidonate from membranes; it would be correct only for downstream conversion."
+      },
+      {
+        "text": "Lipoxygenase",
+        "isCorrect": false,
+        "rationale": "Lipoxygenase acts on free arachidonic acid to form leukotrienes; it does not liberate arachidonate from phospholipids and would be correct only downstream."
+      },
+      {
+        "text": "Phospholipase C",
+        "isCorrect": false,
+        "rationale": "Phospholipase C cleaves phosphatidylinositol to DAG and IP3, not releasing arachidonic acid; it would be correct only in a different signaling context."
+      },
+      {
+        "text": "Sphingomyelinase",
+        "isCorrect": false,
+        "rationale": "Sphingomyelinase degrades sphingomyelin to ceramide; it does not release arachidonic acid and would be correct only for sphingolipid catabolism."
+      }
+    ]
+  },
+  {
+    "question": "Which eicosanoid promotes vasodilation and inhibits platelet aggregation according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe briefly the synthesis of eicosanoids from arachidonic acid and list their functions",
+    "options": [
+      {
+        "text": "Prostacyclin (PGI2)",
+        "isCorrect": true,
+        "rationale": "PGI2 (prostacyclin) is noted to inhibit platelet aggregation and promote vasodilation in the lecture."
+      },
+      {
+        "text": "Thromboxane A2 (TXA2)",
+        "isCorrect": false,
+        "rationale": "TXA2 promotes platelet aggregation and vasoconstriction; it would be correct only if the stem asked about pro-aggregatory eicosanoids."
+      },
+      {
+        "text": "Leukotriene B4 (LTB4)",
+        "isCorrect": false,
+        "rationale": "LTB4 is a neutrophil chemotactic agent, not primarily a vasodilator or anti-aggregant; it would be correct only if chemotaxis were asked."
+      },
+      {
+        "text": "Prostaglandin F2α (PGF2α)",
+        "isCorrect": false,
+        "rationale": "PGF2α increases uterine tone and vascular effects but is not the primary inhibitor of platelet aggregation; it would be correct only with different functions."
+      },
+      {
+        "text": "Epoprostenol",
+        "isCorrect": false,
+        "rationale": "Epoprostenol is a synthetic prostacyclin analog with similar effects, but the lecture specifically names PGI2; this would be correct only if synthetic analogs were acceptable."
+      }
+    ]
+  },
+  {
+    "question": "Which lipid modification increases cholesterol solubility for storage and transport?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the structure and function of cholesterol",
+    "options": [
+      {
+        "text": "Esterification with a fatty acid",
+        "isCorrect": true,
+        "rationale": "Cholesterol can be esterified at the hydroxyl of carbon 3 with a fatty acid, which is important for cholesterol storage and transport."
+      },
+      {
+        "text": "Addition of a phosphate group",
+        "isCorrect": false,
+        "rationale": "Phosphorylation is not the described modification for cholesterol storage; this would be correct only if discussing phospholipids."
+      },
+      {
+        "text": "Conversion to a sphingolipid",
+        "isCorrect": false,
+        "rationale": "Cholesterol is not converted into sphingolipids; this would be correct only in a hypothetical pathway not covered in the lecture."
+      },
+      {
+        "text": "Hydrogenation of the steroid nucleus",
+        "isCorrect": false,
+        "rationale": "Hydrogenation of rings is not the storage modification described; esterification is the correct storage form."
+      },
+      {
+        "text": "Attachment of a sugar head group",
+        "isCorrect": false,
+        "rationale": "Glycosylation is not the standard cholesterol storage modification; this would be correct only for glycosphingolipids."
+      }
+    ]
+  },
+  {
+    "question": "Which fatty acid abbreviation corresponds to linoleic acid?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define essential fatty acid and list examples and their food sources",
+    "options": [
+      {
+        "text": "18:2(9,12)",
+        "isCorrect": true,
+        "rationale": "Linoleic acid is abbreviated 18:2(9,12) as listed in the lecture table."
+      },
+      {
+        "text": "18:3(9,12,15)",
+        "isCorrect": false,
+        "rationale": "18:3(9,12,15) corresponds to α-linolenic acid (ω-3), not linoleic acid; it would be correct only if the stem asked for α-linolenate."
+      },
+      {
+        "text": "20:4(5,8,11,14)",
+        "isCorrect": false,
+        "rationale": "20:4(5,8,11,14) is arachidonic acid; it would be correct only if the stem targeted arachidonate."
+      },
+      {
+        "text": "18:1(9)",
+        "isCorrect": false,
+        "rationale": "18:1(9) is oleic acid, a monounsaturated fatty acid; it would be correct only if oleate were asked."
+      },
+      {
+        "text": "16:0",
+        "isCorrect": false,
+        "rationale": "16:0 is palmitic acid, a saturated fatty acid; it would be correct only if palmitate were the target."
+      }
+    ]
+  },
+  {
+    "question": "A patient consumes a diet high in industrially hydrogenated vegetable oil. Which lipid change is most likely to increase in their serum and is linked to cardiovascular risk?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify trans and cis unsaturated fatty acids and understand health impacts of trans fatty acids",
+    "options": [
+      {
+        "text": "Trans unsaturated fatty acids",
+        "isCorrect": true,
+        "rationale": "Industrial hydrogenation produces trans fatty acids, and diets high in trans fats are linked to elevated cholesterol and cardiovascular disease."
+      },
+      {
+        "text": "Cis polyunsaturated fatty acids",
+        "isCorrect": false,
+        "rationale": "Cis polyunsaturated fats are decreased by hydrogenation; this option would be correct only if the diet favored unprocessed plant oils."
+      },
+      {
+        "text": "Short-chain saturated fatty acids",
+        "isCorrect": false,
+        "rationale": "Hydrogenation primarily converts unsaturated to trans or saturated long-chain fats; short-chain saturated fats would increase only with specific dairy intake."
+      },
+      {
+        "text": "ω-3 long-chain polyunsaturated fatty acids",
+        "isCorrect": false,
+        "rationale": "ω-3s are typically found in fish and are not increased by hydrogenation; this would be correct only if the diet included more fish."
+      },
+      {
+        "text": "Monounsaturated cis fatty acids",
+        "isCorrect": false,
+        "rationale": "Monounsaturated cis fats are not the primary product of industrial hydrogenation; this would be correct only if partial hydrogenation preserved cis monounsaturates."
+      }
+    ]
+  },
+  {
+    "question": "A researcher measures melting points of three fatty acids: 10:0 at 31.6°C, 18:0 at 69.6°C, and 18:1(9) at 16°C. Which structural factor explains the lowest melting point of 18:1(9)?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe how melting temperature changes based on chain length and saturation",
+    "options": [
+      {
+        "text": "Presence of a cis double bond disrupting packing",
+        "isCorrect": true,
+        "rationale": "Cis double bonds introduce kinks that reduce tight packing and lower melting temperature, explaining why 18:1(9) melts at 16°C."
+      },
+      {
+        "text": "Shorter overall carbon chain length",
+        "isCorrect": false,
+        "rationale": "18:1 has the same chain length as 18:0; a shorter chain would lower melting point but is not the case here."
+      },
+      {
+        "text": "Trans double bond increasing rigidity",
+        "isCorrect": false,
+        "rationale": "Trans bonds allow tighter packing and higher melting points; this would be correct only if the double bond were trans."
+      },
+      {
+        "text": "Additional polar head group presence",
+        "isCorrect": false,
+        "rationale": "A polar head group pertains to phospholipids, not free fatty acids; this would be correct only if the molecule were a phospholipid."
       },
       {
         "text": "Esterification to glycerol backbone",
         "isCorrect": false,
-        "rationale": "Wrong because esterification forms acylglycerols and affects storage and solubility rather than directly lowering the fatty acid melting temperature; free unsaturation is the key factor."
+        "rationale": "Esterification forms acylglycerols and alters physical properties, but the melting point comparison here is among free fatty acids; this would be correct only if comparing triacylglycerols."
       }
     ]
   },
   {
-    "question": "A lipid with a glycerol backbone esterified to three fatty acids is primarily used for long-term energy storage. What is the correct name for this molecule?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the structure and functions of triacylglycerols",
-    "options": [
-      {
-        "text": "Triacylglycerol three fatty acids on glycerol",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture defines triacylglycerols as three fatty acid chains bound to glycerol and stored in adipose tissue for energy and insulation."
-      },
-      {
-        "text": "Phosphatidylcholine glycerol with phosphate and choline",
-        "isCorrect": false,
-        "rationale": "Wrong because phosphatidylcholine is a phospholipid with a phosphate and choline head group and only one or two fatty acids; replacing the phosphate with an esterified fatty acid would make it a triacylglycerol."
-      },
-      {
-        "text": "Ceramide sphingosine with single fatty acid attached",
-        "isCorrect": false,
-        "rationale": "Wrong because ceramide is a sphingolipid backbone with one fatty acid and is a membrane component; adding two more fatty acids to glycerol would be required to form a triacylglycerol."
-      },
-      {
-        "text": "Cholesteryl ester cholesterol esterified to fatty acid",
-        "isCorrect": false,
-        "rationale": "Wrong because cholesteryl esters are cholesterol esterified at the hydroxyl and are used for transport and storage, not the glycerol-based storage form described; replacing cholesterol with glycerol would make it correct."
-      },
-      {
-        "text": "Phosphatidic acid glycerol with phosphate no head group",
-        "isCorrect": false,
-        "rationale": "Wrong because phosphatidic acid has two fatty acids and a phosphate on glycerol and is a phospholipid precursor; adding a third fatty acid and removing phosphate would yield a triacylglycerol."
-      }
-    ]
-  },
-  {
-    "question": "Which description best distinguishes phosphatidic acid from other glycerophospholipids?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the structure and functions of phospholipids and what separates phosphatidic acid from other phospholipids",
-    "options": [
-      {
-        "text": "Glycerol with two acyl chains and free phosphate",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture states phosphatidic acid is diacylglycerol with a phosphate at carbon three and no additional head group, distinguishing it from other phospholipids."
-      },
-      {
-        "text": "Glycerol with two acyl chains and choline head",
-        "isCorrect": false,
-        "rationale": "Wrong because that describes phosphatidylcholine which has an added choline head group; removing choline would make it phosphatidic acid."
-      },
-      {
-        "text": "Sphingosine backbone with attached phosphorylcholine",
-        "isCorrect": false,
-        "rationale": "Wrong because sphingomyelin has a sphingosine backbone with phosphorylcholine; replacing sphingosine with glycerol would describe a glycerophospholipid instead."
-      },
-      {
-        "text": "Glycerol with three acyl chains and no phosphate",
-        "isCorrect": false,
-        "rationale": "Wrong because that describes a triacylglycerol; adding a phosphate at carbon three would convert it to phosphatidic acid."
-      },
-      {
-        "text": "Cholesterol esterified to a single fatty acid",
-        "isCorrect": false,
-        "rationale": "Wrong because cholesteryl esters are sterol derivatives, not glycerophospholipids; substituting cholesterol with glycerol would be required to match phosphatidic acid."
-      }
-    ]
-  },
-  {
-    "question": "A patient’s membrane phospholipids are analyzed and one species is found to have serine attached to the phosphate. Which phospholipid is this?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the structure and functions of phospholipids and what separates phosphatidic acid from other phospholipids",
-    "options": [
-      {
-        "text": "Phosphatidylserine glycerol phosphate serine head",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture lists phosphatidylserine as a glycerophospholipid with serine attached to the phosphate head group."
-      },
-      {
-        "text": "Phosphatidylcholine glycerol phosphate choline head",
-        "isCorrect": false,
-        "rationale": "Wrong because phosphatidylcholine has choline as the head group; if serine were replaced by choline this option would be correct for a different phospholipid."
-      },
-      {
-        "text": "Phosphatidylethanolamine glycerol phosphate ethanolamine head",
-        "isCorrect": false,
-        "rationale": "Wrong because phosphatidylethanolamine has ethanolamine as the head group; changing the head group to serine would make it phosphatidylserine."
-      },
-      {
-        "text": "Cardiolipin diphosphatidylglycerol mitochondrial membrane lipid",
-        "isCorrect": false,
-        "rationale": "Wrong because cardiolipin is a diphosphatidylglycerol found in mitochondria and does not have serine as its head group; replacing its glycerol linkage with serine would be required to match phosphatidylserine."
-      },
-      {
-        "text": "Phosphatidylinositol glycerol phosphate inositol head",
-        "isCorrect": false,
-        "rationale": "Wrong because phosphatidylinositol has an inositol head group; substituting inositol with serine would produce phosphatidylserine."
-      }
-    ]
-  },
-  {
-    "question": "Which structural components define a sphingolipid backbone and its immediate precursors?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "List the components of a sphingolipid, including the differentiation of ceramide and sphingosine",
-    "options": [
-      {
-        "text": "Sphingosine backbone derived from serine and palmitate",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture explains sphingosine is synthesized from serine and palmitate and ceramide is sphingosine with an attached fatty acid."
-      },
-      {
-        "text": "Glycerol backbone esterified to three fatty acids",
-        "isCorrect": false,
-        "rationale": "Wrong because that describes triacylglycerol; replacing glycerol with sphingosine and adding serine-derived structure would describe sphingolipids."
-      },
-      {
-        "text": "Cholesterol nucleus with four fused hydrocarbon rings",
-        "isCorrect": false,
-        "rationale": "Wrong because cholesterol is a sterol with a steroid nucleus, not a sphingolipid; substituting sphingosine for the steroid nucleus would be required."
-      },
-      {
-        "text": "Glycerol backbone with phosphate and choline head",
-        "isCorrect": false,
-        "rationale": "Wrong because that describes phosphatidylcholine, a glycerophospholipid; replacing glycerol with sphingosine would be necessary to describe a sphingolipid."
-      },
-      {
-        "text": "Fatty acid chain attached to cholesterol hydroxyl group",
-        "isCorrect": false,
-        "rationale": "Wrong because that describes a cholesteryl ester; converting cholesterol to sphingosine and adding serine would be required to match sphingolipid structure."
-      }
-    ]
-  },
-  {
-    "question": "A child presents with progressive neurodegeneration, hepatosplenomegaly, and a macular cherry-red spot. Enzyme assay shows low sphingomyelinase activity. Which lysosomal storage disorder is most consistent with these findings?",
+    "question": "A newborn screening suggests a lysosomal storage disorder with macrophages showing 'crumpled tissue paper' cytoplasm. Which accumulated lipid and enzyme pair fits this finding?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "List the enzyme deficiency and its usual products for Niemann-Pick Disease",
     "options": [
       {
-        "text": "Niemann-Pick disease sphingomyelinase deficiency",
+        "text": "Sphingomyelin accumulation from sphingomyelinase deficiency",
         "isCorrect": true,
-        "rationale": "Correct because the lecture states Niemann-Pick disease results from sphingomyelinase deficiency leading to sphingomyelin accumulation with neurodegeneration, hepatosplenomegaly, and cherry-red macula."
+        "rationale": "Niemann-Pick disease involves sphingomyelinase deficiency leading to sphingomyelin buildup and characteristic macrophage appearance."
       },
       {
-        "text": "Gaucher disease glucocerebrosidase deficiency",
+        "text": "Glucocerebroside accumulation from glucocerebrosidase deficiency",
         "isCorrect": false,
-        "rationale": "Wrong because Gaucher disease involves glucocerebrosidase deficiency and glucocerebroside accumulation; if the enzyme assay showed low glucocerebrosidase instead, this would be correct."
+        "rationale": "Glucocerebrosidase deficiency causes Gaucher disease with Gaucher cells, not the crumpled tissue paper of Niemann-Pick; it would be correct only with Gaucher-specific findings."
       },
       {
-        "text": "Tay-Sachs disease hexosaminidase A deficiency",
+        "text": "GM2 ganglioside accumulation from hexosaminidase A deficiency",
         "isCorrect": false,
-        "rationale": "Wrong because Tay-Sachs involves hexosaminidase A deficiency and GM2 ganglioside accumulation; a different enzyme deficiency would be required to match the vignette."
+        "rationale": "Hexosaminidase A deficiency causes Tay-Sachs with neuronal storage and cherry-red spot but not macrophage sphingomyelin accumulation; it would be correct only if hepatosplenomegaly were absent."
       },
       {
-        "text": "Fabry disease alpha galactosidase A deficiency",
+        "text": "Sulfatide accumulation from arylsulfatase A deficiency",
         "isCorrect": false,
-        "rationale": "Wrong because Fabry disease results from alpha-galactosidase A deficiency causing ceramide trihexoside buildup and typically presents with angiokeratomas and pain, not the described findings; a matching enzyme assay would make this correct."
+        "rationale": "Arylsulfatase A deficiency causes metachromatic leukodystrophy with demyelination, not the described macrophage morphology; it would be correct only with leukodystrophy signs."
       },
       {
-        "text": "Krabbe disease galactocerebrosidase deficiency",
+        "text": "Ceramide trihexoside accumulation from α-galactosidase A deficiency",
         "isCorrect": false,
-        "rationale": "Wrong because Krabbe disease involves galactocerebrosidase deficiency and demyelination; if the assay showed low galactocerebrosidase this option would be correct."
+        "rationale": "α-Galactosidase A deficiency causes Fabry disease with angiokeratomas and neuropathic pain, not crumpled tissue paper macrophages; it would be correct only with Fabry features."
       }
     ]
   },
   {
-    "question": "A researcher measures membrane composition and finds high cardiolipin content in a tissue sample. Which organelle is most likely enriched in this lipid?",
-    "difficulty_order": "2nd",
+    "question": "Which lipid class is amphipathic and forms bilayers due to hydrophilic head groups and hydrophobic tails?",
+    "difficulty_order": "1st",
     "cited_learning_objective": "Describe the structure and functions of phospholipids and what separates phosphatidic acid from other phospholipids",
     "options": [
       {
-        "text": "Mitochondrial inner membrane site of cardiolipin",
+        "text": "Phospholipids",
         "isCorrect": true,
-        "rationale": "Correct because the lecture notes cardiolipin is an essential constituent of mitochondrial membranes and plays a role in respiration and energy conversion."
+        "rationale": "Phospholipids have hydrophilic phosphate-containing head groups and hydrophobic fatty acid tails, enabling bilayer formation."
       },
       {
-        "text": "Plasma membrane outer leaflet abundant in cardiolipin",
+        "text": "Triacylglycerols",
         "isCorrect": false,
-        "rationale": "Wrong because cardiolipin is primarily mitochondrial; if cardiolipin were found predominantly in plasma membrane in a specific pathology this option could be correct."
+        "rationale": "Triacylglycerols are nonpolar storage lipids lacking hydrophilic head groups and do not form bilayers; this would be correct only if asking about energy storage."
       },
       {
-        "text": "Endoplasmic reticulum lumen enriched with cardiolipin",
+        "text": "Sphingolipids",
         "isCorrect": false,
-        "rationale": "Wrong because ER membranes are not cardiolipin-rich; relocation of cardiolipin synthesis to ER would be required to make this correct."
+        "rationale": "Sphingolipids can be amphipathic and are membrane components, but the canonical bilayer-forming class described is phospholipids; this would be correct only with sphingolipid-specific context."
       },
       {
-        "text": "Golgi apparatus cisternae high cardiolipin concentration",
+        "text": "Isoprenoids",
         "isCorrect": false,
-        "rationale": "Wrong because Golgi membranes do not typically contain high cardiolipin; altering organelle lipid synthesis would be necessary for correctness."
+        "rationale": "Isoprenoids/steroids are largely hydrophobic and do not form bilayers; this would be correct only if discussing membrane fluidity modifiers."
       },
       {
-        "text": "Lysosomal membrane predominantly composed of cardiolipin",
+        "text": "Eicosanoids",
         "isCorrect": false,
-        "rationale": "Wrong because lysosomal membranes are not characterized by cardiolipin abundance; if cardiolipin were required for lysosomal function this option might be plausible."
+        "rationale": "Eicosanoids are signaling lipids derived from arachidonate and are not structural bilayer components; this would be correct only if signaling roles were asked."
       }
     ]
   },
   {
-    "question": "Which fatty acid configuration is most commonly produced by industrial hydrogenation and associated with increased cardiovascular risk?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify trans and cis unsaturated fatty acids and understand health impacts of trans fatty acids",
-    "options": [
-      {
-        "text": "Trans unsaturated fatty acids produced by hydrogenation",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture explains trans fatty acids are usually produced by chemical hydrogenation of polyunsaturated fatty acids and are linked to elevated cholesterol and cardiovascular disease."
-      },
-      {
-        "text": "Cis unsaturated fatty acids from natural plant oils",
-        "isCorrect": false,
-        "rationale": "Wrong because cis unsaturated fatty acids are the natural configuration and are not typically produced by hydrogenation; if hydrogenation preserved cis geometry this would be correct."
-      },
-      {
-        "text": "Saturated fatty acids formed by enzymatic desaturation",
-        "isCorrect": false,
-        "rationale": "Wrong because saturated fatty acids lack double bonds and are not formed by desaturation; saturation results from hydrogenation, not desaturation."
-      },
-      {
-        "text": "Polyunsaturated omega three fatty acids from fish",
-        "isCorrect": false,
-        "rationale": "Wrong because omega-3 polyunsaturated fatty acids are dietary and cardioprotective, not typically produced by industrial hydrogenation; if industrial processing converted them to trans isomers this option would be relevant."
-      },
-      {
-        "text": "Branched chain fatty acids from bacterial membranes",
-        "isCorrect": false,
-        "rationale": "Wrong because branched-chain fatty acids are microbial and not the trans isomers produced by hydrogenation; if the question asked about bacterial lipids this could be correct."
-      }
-    ]
-  },
-  {
-    "question": "A patient with a diet high in olive oil and low in red meat is expected to have which predominant fatty acid type in their diet?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the structure of fatty acids and be able to give the abbreviation of fatty acids based on chain length and saturation",
-    "options": [
-      {
-        "text": "Monounsaturated fatty acids abundant in olive oil",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture notes the Mediterranean diet high in olive oil is rich in monounsaturated fatty acids like oleic acid, associated with lower LDL and higher HDL."
-      },
-      {
-        "text": "Saturated fatty acids abundant in olive oil",
-        "isCorrect": false,
-        "rationale": "Wrong because olive oil is low in saturated fats; if the oil were replaced by butter or animal fat this option would be correct."
-      },
-      {
-        "text": "Trans fatty acids abundant in olive oil",
-        "isCorrect": false,
-        "rationale": "Wrong because trans fats are produced by hydrogenation and are not characteristic of natural olive oil; hydrogenated olive oil would make this option plausible."
-      },
-      {
-        "text": "Omega three polyunsaturated fatty acids abundant in olive oil",
-        "isCorrect": false,
-        "rationale": "Wrong because olive oil is not a major source of omega-3 polyunsaturated fatty acids; if the oil were flaxseed oil this option would be correct."
-      },
-      {
-        "text": "Short chain fatty acids abundant in olive oil",
-        "isCorrect": false,
-        "rationale": "Wrong because olive oil contains long-chain fatty acids, not short-chain ones found in milk; substituting milk fats would make this option correct."
-      }
-    ]
-  },
-  {
-    "question": "Which enzyme class releases arachidonic acid from membrane phospholipids to serve as substrate for eicosanoid synthesis?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe briefly the synthesis of eicosanoids from arachidonic acid and list their functions",
-    "options": [
-      {
-        "text": "Phospholipase A2 cleaves arachidonic acid from phospholipids",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture states phospholipase A2 releases arachidonic acid from membrane phospholipids, providing substrate for eicosanoid pathways."
-      },
-      {
-        "text": "Cyclooxygenase converts arachidonic acid to prostaglandins",
-        "isCorrect": false,
-        "rationale": "Wrong because cyclooxygenase acts downstream to convert free arachidonic acid into cyclic endoperoxides and prostaglandins; if arachidonic acid were already free this enzyme would act next."
-      },
-      {
-        "text": "Lipoxygenase esterifies arachidonic acid into membranes",
-        "isCorrect": false,
-        "rationale": "Wrong because lipoxygenase oxygenates free arachidonic acid to leukotrienes rather than esterifying it; an enzyme that esterifies would be an acyltransferase."
-      },
-      {
-        "text": "Phospholipase C cleaves head groups releasing diacylglycerol",
-        "isCorrect": false,
-        "rationale": "Wrong because phospholipase C cleaves phospholipids to yield diacylglycerol and a phosphorylated head group, not free arachidonic acid; if phospholipase C activity led to arachidonic release this would be correct."
-      },
-      {
-        "text": "Acetyltransferase acetylates cyclooxygenase active site",
-        "isCorrect": false,
-        "rationale": "Wrong because acetyltransferase activity describes aspirin acetylating cyclooxygenase, not releasing arachidonic acid; if the question asked about aspirin mechanism this option would be relevant."
-      }
-    ]
-  },
-  {
-    "question": "A patient is given low-dose aspirin for secondary prevention of myocardial infarction. Which molecular action best explains aspirin’s antiplatelet effect?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe how aspirin inhibits eicosanoid synthesis",
-    "options": [
-      {
-        "text": "Irreversible acetylation of cyclooxygenase serine residue",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture explains aspirin acetylates and inactivates cyclooxygenase, preventing thromboxane synthesis and reducing platelet aggregation."
-      },
-      {
-        "text": "Reversible inhibition of phospholipase A2 activity",
-        "isCorrect": false,
-        "rationale": "Wrong because aspirin acts on cyclooxygenase rather than phospholipase A2; if aspirin instead inhibited PLA2 this would reduce arachidonic acid release and be correct."
-      },
-      {
-        "text": "Competitive blockade of thromboxane receptor on platelets",
-        "isCorrect": false,
-        "rationale": "Wrong because aspirin reduces thromboxane production rather than blocking its receptor; a thromboxane receptor antagonist would match this option."
-      },
-      {
-        "text": "Activation of lipoxygenase pathway increasing leukotrienes",
-        "isCorrect": false,
-        "rationale": "Wrong because aspirin does not activate lipoxygenase; if aspirin shunted arachidonic acid to lipoxygenase this could increase leukotrienes but would not explain antiplatelet effect."
-      },
-      {
-        "text": "Hydrolysis of prostacyclin to inactive metabolites",
-        "isCorrect": false,
-        "rationale": "Wrong because aspirin does not hydrolyze prostacyclin; reducing prostacyclin would worsen platelet aggregation rather than prevent it."
-      }
-    ]
-  },
-  {
-    "question": "Which eicosanoid class is primarily produced via the cyclooxygenase pathway and promotes platelet aggregation and vasoconstriction?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe briefly the synthesis of eicosanoids from arachidonic acid and list their functions",
-    "options": [
-      {
-        "text": "Thromboxanes promote platelet aggregation and vasoconstriction",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture lists thromboxanes (e.g., TXA2) as cyclooxygenase products that increase platelet aggregation and vascular tone."
-      },
-      {
-        "text": "Prostacyclins inhibit platelet aggregation and vasodilation",
-        "isCorrect": false,
-        "rationale": "Wrong because prostacyclin (PGI2) inhibits platelet aggregation and causes vasodilation; if the question asked for an inhibitor of aggregation this would be correct."
-      },
-      {
-        "text": "Leukotrienes mediate bronchoconstriction and chemotaxis",
-        "isCorrect": false,
-        "rationale": "Wrong because leukotrienes are produced via lipoxygenase and mediate bronchial tone and neutrophil chemotaxis; they are not cyclooxygenase thromboxanes."
-      },
-      {
-        "text": "Epoxides formed by cytochrome P450 cause vasodilation",
-        "isCorrect": false,
-        "rationale": "Wrong because cytochrome P450-derived epoxides have different vascular effects and are not thromboxanes; if the question asked about P450 products this could be correct."
-      },
-      {
-        "text": "Endoperoxides are inactive storage forms of eicosanoids",
-        "isCorrect": false,
-        "rationale": "Wrong because cyclic endoperoxides are intermediates in prostaglandin and thromboxane synthesis, not inactive storage forms; calling them intermediates would make this option accurate."
-      }
-    ]
-  },
-  {
-    "question": "A lab report shows a fatty acid labeled 18:2(9,12). Which common name corresponds to this structure?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the basic structure of fatty acids and be able to give the abbreviation of fatty acids based on chain length and saturation",
-    "options": [
-      {
-        "text": "Linoleic acid essential omega six fatty acid",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture lists linoleic acid as 18:2(9,12), an essential omega-6 fatty acid found in plant-based foods."
-      },
-      {
-        "text": "Oleic acid monounsaturated eighteen carbons one double bond",
-        "isCorrect": false,
-        "rationale": "Wrong because oleic acid is 18:1(9) with one double bond; changing the double bond count to two would match linoleic acid."
-      },
-      {
-        "text": "Alpha linolenic acid omega three polyunsaturated eighteen carbons",
-        "isCorrect": false,
-        "rationale": "Wrong because alpha-linolenic acid is 18:3(9,12,15) with three double bonds; reducing one double bond would make it linoleic acid."
-      },
-      {
-        "text": "Stearic acid saturated eighteen carbons no double bonds",
-        "isCorrect": false,
-        "rationale": "Wrong because stearic acid is 18:0 with no double bonds; adding two double bonds would convert it to linoleic acid."
-      },
-      {
-        "text": "Arachidonic acid twenty carbons four double bonds",
-        "isCorrect": false,
-        "rationale": "Wrong because arachidonic acid is 20:4(5,8,11,14) and not 18:2; shortening the chain and changing double bond positions would be required."
-      }
-    ]
-  },
-  {
-    "question": "Which lipid class contains a phosphorylcholine head group attached to a ceramide backbone and is a major component of myelin?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "List the components of a sphingolipid, including the differentiation of ceramide and sphingosine",
-    "options": [
-      {
-        "text": "Sphingomyelin ceramide with phosphorylcholine head",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture describes sphingomyelin as ceramide with phosphorylcholine attached and as a key component of the myelin sheath."
-      },
-      {
-        "text": "Phosphatidylcholine glycerol based with choline head",
-        "isCorrect": false,
-        "rationale": "Wrong because phosphatidylcholine is glycerol-based, not ceramide-based; replacing glycerol with sphingosine would describe sphingomyelin."
-      },
-      {
-        "text": "Glucocerebroside ceramide with glucose head group",
-        "isCorrect": false,
-        "rationale": "Wrong because glucocerebroside is a glycosphingolipid with glucose head group, not phosphorylcholine; substituting glucose with phosphorylcholine would make it sphingomyelin."
-      },
-      {
-        "text": "Ganglioside complex oligosaccharide with sialic acid",
-        "isCorrect": false,
-        "rationale": "Wrong because gangliosides are glycosphingolipids containing sialic acid residues, not phosphorylcholine; replacing the oligosaccharide with phosphorylcholine would change identity."
-      },
-      {
-        "text": "Cardiolipin diphosphatidylglycerol found in mitochondria",
-        "isCorrect": false,
-        "rationale": "Wrong because cardiolipin is a glycerophospholipid in mitochondria, not a ceramide derivative; converting cardiolipin to a ceramide would be required."
-      }
-    ]
-  },
-  {
-    "question": "A patient’s lab shows elevated LDL associated with a diet high in which fatty acid type according to the lecture?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify trans and cis unsaturated fatty acids and understand health impacts of trans fatty acids",
-    "options": [
-      {
-        "text": "Saturated and trans fatty acids linked to higher LDL",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture notes diets high in saturated and trans fatty acids are associated with increased LDL and cardiovascular disease."
-      },
-      {
-        "text": "Monounsaturated fatty acids linked to higher LDL levels",
-        "isCorrect": false,
-        "rationale": "Wrong because monounsaturated fats (e.g., olive oil) are associated with lower LDL and higher HDL; if evidence showed they raised LDL this option would be correct."
-      },
-      {
-        "text": "Omega three polyunsaturated fatty acids raise LDL markedly",
-        "isCorrect": false,
-        "rationale": "Wrong because omega-3s are believed to be cardioprotective and do not typically raise LDL markedly; if they increased LDL in a specific context this option could be true."
-      },
-      {
-        "text": "Short chain fatty acids from milk raise LDL significantly",
-        "isCorrect": false,
-        "rationale": "Wrong because short-chain fatty acids are not the primary drivers of LDL elevation; replacing with long-chain saturated fats would make this option plausible."
-      },
-      {
-        "text": "Branched chain fatty acids from bacteria raise LDL",
-        "isCorrect": false,
-        "rationale": "Wrong because bacterial branched-chain fatty acids are not implicated in dietary LDL increases; if dietary intake of such fatty acids were high and shown to raise LDL this would be correct."
-      }
-    ]
-  },
-  {
-    "question": "Which molecule is the immediate 20-carbon polyunsaturated precursor for prostaglandin and leukotriene synthesis?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe briefly the synthesis of eicosanoids from arachidonic acid and list their functions",
-    "options": [
-      {
-        "text": "Arachidonic acid twenty carbons four double bonds",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture identifies arachidonic acid (20:4(5,8,11,14)) as the 20-carbon polyunsaturated fatty acid precursor for eicosanoids."
-      },
-      {
-        "text": "Linoleic acid eighteen carbons two double bonds",
-        "isCorrect": false,
-        "rationale": "Wrong because linoleic acid is an 18-carbon omega-6 precursor that can be elongated to arachidonic acid; if the question asked for the dietary precursor this would be correct."
-      },
-      {
-        "text": "Oleic acid eighteen carbons one double bond",
-        "isCorrect": false,
-        "rationale": "Wrong because oleic acid is monounsaturated and not the 20-carbon eicosanoid precursor; elongation and desaturation would be needed to form arachidonic acid."
-      },
-      {
-        "text": "Alpha linolenic acid eighteen carbons three double bonds",
-        "isCorrect": false,
-        "rationale": "Wrong because alpha-linolenic acid is an omega-3 18-carbon fatty acid and not the direct 20-carbon eicosanoid precursor; conversion pathways differ from omega-6."
-      },
-      {
-        "text": "Palmitic acid sixteen carbons zero double bonds",
-        "isCorrect": false,
-        "rationale": "Wrong because palmitic acid is saturated and not a precursor for eicosanoids; elongation and desaturation would be required to approach arachidonic acid structure."
-      }
-    ]
-  },
-  {
-    "question": "A patient with aspirin overdose presents with bleeding due to impaired platelet function. Which eicosanoid pathway inhibition best explains this bleeding tendency?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe how aspirin inhibits eicosanoid synthesis",
-    "options": [
-      {
-        "text": "Irreversible cyclooxygenase inhibition reducing thromboxane",
-        "isCorrect": true,
-        "rationale": "Correct because aspirin irreversibly acetylates cyclooxygenase, decreasing thromboxane A2 synthesis and impairing platelet aggregation as described in the lecture."
-      },
-      {
-        "text": "Lipoxygenase inhibition reducing leukotriene mediated chemotaxis",
-        "isCorrect": false,
-        "rationale": "Wrong because aspirin primarily targets cyclooxygenase not lipoxygenase; if aspirin inhibited lipoxygenase this could reduce leukotriene effects but would not explain platelet dysfunction."
-      },
-      {
-        "text": "Phospholipase A2 activation increasing arachidonic release",
-        "isCorrect": false,
-        "rationale": "Wrong because activation of PLA2 would increase arachidonic acid availability and potentially increase eicosanoid production, worsening rather than explaining bleeding; inhibition would be needed to match aspirin effect."
-      },
-      {
-        "text": "Cytochrome P450 induction increasing epoxide formation",
-        "isCorrect": false,
-        "rationale": "Wrong because cytochrome P450 epoxide formation is a separate pathway and does not account for aspirin’s antiplatelet action; if aspirin induced P450 to reduce thromboxane this could be relevant."
-      },
-      {
-        "text": "Competitive antagonism at prostacyclin receptor on platelets",
-        "isCorrect": false,
-        "rationale": "Wrong because aspirin reduces prostaglandin and thromboxane synthesis rather than acting as a receptor antagonist; a prostacyclin receptor antagonist would have different effects."
-      }
-    ]
-  },
-  {
-    "question": "Which dietary source is most likely to provide alpha-linolenic acid according to the lecture?",
+    "question": "Which dietary source is specifically noted as rich in α-linolenic acid (an essential ω-3 fatty acid)?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Define essential fatty acid and list examples and their food sources",
     "options": [
       {
-        "text": "Flaxseed oil plant based source of omega three",
+        "text": "Flax seed oil",
         "isCorrect": true,
-        "rationale": "Correct because the lecture states alpha-linolenic acid (an omega-3) is found in plant oils such as flaxseed."
+        "rationale": "The lecture lists plant oils such as flax seed as sources of α-linolenic acid (ω-3)."
       },
       {
-        "text": "Red meat primary source of alpha linolenic acid",
+        "text": "Red meat",
         "isCorrect": false,
-        "rationale": "Wrong because red meat is richer in saturated fats and not a primary source of alpha-linolenic acid; if the meat were enriched with omega-3s this could be plausible."
+        "rationale": "Red meat is richer in saturated fats like palmitic acid; it would be correct only if the stem asked about saturated fat sources."
       },
       {
-        "text": "Butter concentrated source of omega three fatty acids",
+        "text": "Butter",
         "isCorrect": false,
-        "rationale": "Wrong because butter contains short- and medium-chain saturated fatty acids rather than alpha-linolenic acid; if butter were fortified with flaxseed oil this option might be true."
+        "rationale": "Butter contains saturated fats and is not a primary source of α-linolenic acid; it would be correct only if dairy-derived short-chain fats were targeted."
       },
       {
-        "text": "Cold water fish exclusive source of alpha linolenic acid",
+        "text": "Cold-water fish only",
         "isCorrect": false,
-        "rationale": "Wrong because cold-water fish provide other omega-3s like EPA and DHA rather than alpha-linolenic acid primarily; if the question asked for EPA/DHA this would be correct."
+        "rationale": "Cold-water fish provide other ω-3s (e.g., EPA/DHA), but α-linolenic acid is emphasized in plant oils like flax; this would be correct only if the question asked about long-chain ω-3s."
       },
       {
-        "text": "Olive oil richest source of alpha linolenic acid",
+        "text": "Processed hydrogenated oils",
         "isCorrect": false,
-        "rationale": "Wrong because olive oil is high in monounsaturated oleic acid, not alpha-linolenic acid; flaxseed oil would be the correct plant source."
+        "rationale": "Hydrogenated oils produce trans fats and are not sources of α-linolenic acid; this would be correct only in a different dietary context."
       }
     ]
   },
   {
-    "question": "Which structural change converts a cis unsaturated fatty acid into a form that packs more tightly and raises melting temperature?",
+    "question": "Which lipid-derived mediator is primarily responsible for neutrophil chemotaxis?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify trans and cis unsaturated fatty acids and understand health impacts of trans fatty acids",
+    "cited_learning_objective": "Describe briefly the synthesis of eicosanoids from arachidonic acid and list their functions",
     "options": [
       {
-        "text": "Isomerization of cis double bond to trans configuration",
+        "text": "Leukotriene B4 (LTB4)",
         "isCorrect": true,
-        "rationale": "Correct because the lecture explains trans double bonds, often produced by hydrogenation, allow tighter packing and are associated with higher melting points and adverse health effects."
+        "rationale": "LTB4 is identified as a neutrophil chemotactic agent in the lecture diagram and notes."
       },
       {
-        "text": "Addition of extra cis double bonds increasing unsaturation",
+        "text": "Prostacyclin (PGI2)",
         "isCorrect": false,
-        "rationale": "Wrong because adding cis double bonds increases unsaturation and lowers melting temperature; removing double bonds would raise melting point."
+        "rationale": "PGI2 inhibits platelet aggregation and causes vasodilation, not neutrophil chemotaxis; it would be correct only if anti-aggregatory effects were asked."
       },
       {
-        "text": "Shortening the hydrocarbon chain length",
+        "text": "Thromboxane A2 (TXA2)",
         "isCorrect": false,
-        "rationale": "Wrong because shortening chain length lowers melting temperature; lengthening the chain would raise melting point and be correct."
+        "rationale": "TXA2 promotes platelet aggregation and vasoconstriction, not neutrophil chemotaxis; it would be correct only with a different function focus."
       },
       {
-        "text": "Esterification to glycerol forming triglyceride",
+        "text": "Prostaglandin E2 (PGE2)",
         "isCorrect": false,
-        "rationale": "Wrong because esterification affects storage form rather than double bond geometry; changing double bond geometry to trans would be required to raise melting temperature."
+        "rationale": "PGE2 has roles in inflammation and vasodilation but is not the primary neutrophil chemoattractant listed; it would be correct only with broader inflammatory context."
       },
       {
-        "text": "Addition of a polar phosphate head group",
+        "text": "Epoprostenol",
         "isCorrect": false,
-        "rationale": "Wrong because adding a phosphate head alters amphipathicity and membrane behavior, not the hydrocarbon packing that determines melting temperature; converting cis to trans would be the direct change."
+        "rationale": "Epoprostenol is a prostacyclin analog with vasodilatory and anti-aggregatory effects, not neutrophil chemotaxis; it would be correct only if synthetic analogs were acceptable."
       }
     ]
   },
   {
-    "question": "A patient’s platelet function is tested after taking low-dose aspirin. Which eicosanoid reduction primarily mediates the antiplatelet effect observed?",
+    "question": "A patient with low-dose aspirin therapy benefits from reduced risk of recurrent myocardial infarction primarily because aspirin irreversibly inhibits which platelet-related process?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Describe how aspirin inhibits eicosanoid synthesis",
     "options": [
       {
-        "text": "Thromboxane A2 decreased reducing platelet aggregation",
+        "text": "Platelet thromboxane A2 synthesis",
         "isCorrect": true,
-        "rationale": "Correct because aspirin inhibits cyclooxygenase, reducing thromboxane A2 synthesis which normally promotes platelet aggregation as described in the lecture."
+        "rationale": "Aspirin irreversibly inhibits cyclooxygenase, reducing thromboxane A2 synthesis in platelets and thereby decreasing platelet aggregation."
       },
       {
-        "text": "Prostacyclin decreased increasing platelet aggregation",
+        "text": "Platelet prostacyclin production",
         "isCorrect": false,
-        "rationale": "Wrong because prostacyclin inhibits platelet aggregation and vasodilates; aspirin can reduce prostacyclin too but the antiplatelet effect is primarily due to thromboxane reduction."
+        "rationale": "Prostacyclin is produced mainly by endothelial cells and inhibits aggregation; aspirin affects COX in both cell types but antiplatelet benefit is due to reduced TXA2, so this would be correct only if endothelial PGI2 were the dominant effect."
       },
       {
-        "text": "Leukotriene B4 decreased reducing neutrophil chemotaxis",
+        "text": "Leukotriene-mediated chemotaxis",
         "isCorrect": false,
-        "rationale": "Wrong because leukotrienes are produced via lipoxygenase and mediate chemotaxis; aspirin’s antiplatelet effect is not mediated by leukotriene B4 reduction."
+        "rationale": "Leukotriene synthesis is via lipoxygenase and not the primary target of aspirin; this would be correct only with a drug inhibiting 5-LOX."
       },
       {
-        "text": "Epoxide metabolites increased causing platelet activation",
+        "text": "Phospholipase A2 activity",
         "isCorrect": false,
-        "rationale": "Wrong because cytochrome P450 epoxides are a separate pathway and do not explain aspirin’s antiplatelet action; an increase in epoxides would not account for decreased aggregation."
+        "rationale": "Aspirin does not inhibit PLA2; it acts on COX downstream, so this would be correct only with corticosteroid therapy."
       },
       {
-        "text": "Cyclic endoperoxides increased promoting aggregation",
+        "text": "Platelet phosphatidylcholine synthesis",
         "isCorrect": false,
-        "rationale": "Wrong because cyclic endoperoxides are intermediates in prostaglandin and thromboxane synthesis; aspirin inhibits their formation rather than increasing them."
+        "rationale": "Phosphatidylcholine synthesis is unrelated to aspirin's antiplatelet effect; this would be correct only in a different metabolic context."
       }
     ]
   },
   {
-    "question": "Which lipid is a four-ring structure with a hydroxyl at carbon three and serves as a membrane structural component and precursor for bile acids and steroid hormones?",
+    "question": "Which lipid class is synthesized from isoprenyl units and forms steroid hormones and bile acids?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the structure and function of cholesterol",
     "options": [
       {
-        "text": "Cholesterol steroid nucleus with hydroxyl at carbon three",
+        "text": "Isoprenoids/steroids",
         "isCorrect": true,
-        "rationale": "Correct because the lecture describes cholesterol as a sterol with a four-ring steroid nucleus, a hydroxyl at C3, and roles in membranes and as precursor to bile acids and steroids."
+        "rationale": "Isoprenoids/steroids are built from isoprenyl units and include cholesterol, steroid hormones, and bile acids as described."
       },
       {
-        "text": "Phosphatidylcholine glycerol based phospholipid with choline head",
+        "text": "Triacylglycerols",
         "isCorrect": false,
-        "rationale": "Wrong because phosphatidylcholine is a glycerophospholipid, not a steroid; replacing glycerol with the steroid nucleus would be required to describe cholesterol."
+        "rationale": "Triacylglycerols are glycerol esters of fatty acids and do not form steroid hormones; this would be correct only if storage lipids were asked."
       },
       {
-        "text": "Triacylglycerol glycerol esterified to three fatty acids",
+        "text": "Phospholipids",
         "isCorrect": false,
-        "rationale": "Wrong because triacylglycerols are storage lipids without a steroid nucleus; converting the glycerol backbone to a steroid ring system would be necessary."
+        "rationale": "Phospholipids form membranes and signaling molecules, not steroid hormones; this would be correct only in membrane context."
       },
       {
-        "text": "Sphingomyelin ceramide with phosphorylcholine head group",
+        "text": "Sphingolipids",
         "isCorrect": false,
-        "rationale": "Wrong because sphingomyelin is a sphingolipid and not a sterol; substituting the ceramide backbone with a steroid nucleus would change identity."
+        "rationale": "Sphingolipids are sphingosine-based membrane lipids, not isoprenoid-derived steroids; this would be correct only if neural membrane components were the focus."
       },
       {
-        "text": "Cardiolipin diphosphatidylglycerol found in mitochondria",
+        "text": "Eicosanoids",
         "isCorrect": false,
-        "rationale": "Wrong because cardiolipin is a glycerophospholipid in mitochondria and lacks a steroid nucleus; replacing its glycerol units with a steroid would be required."
+        "rationale": "Eicosanoids are derived from arachidonic acid and act as signaling molecules, not steroid hormones; this would be correct only if signaling lipids were targeted."
       }
     ]
   },
   {
-    "question": "A patient’s adipose tissue biopsy shows predominance of triacylglycerols containing long-chain fatty acids of at least sixteen carbons. Which lecture statement best explains this finding?",
+    "question": "Which glycosphingolipid contains at least one sialic acid residue and has a complex oligosaccharide head group?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the structure and functions of triacylglycerols",
+    "cited_learning_objective": "List the components of a sphingolipid, including the differentiation of ceramide and sphingosine",
     "options": [
       {
-        "text": "Structural lipids and triacylglycerols contain primarily long chain fatty acids",
+        "text": "Ganglioside",
         "isCorrect": true,
-        "rationale": "Correct because the lecture notes structural lipids and triacylglycerols primarily contain fatty acids of at least 16 carbons, consistent with adipose storage composition."
+        "rationale": "Gangliosides are glycosphingolipids with complex oligosaccharide head groups that include sialic acid (NANA)."
       },
       {
-        "text": "Milk contains mainly long chain fatty acids four to ten carbons",
+        "text": "Cerebroside",
         "isCorrect": false,
-        "rationale": "Wrong because the lecture states milk contains significant quantities of 4 to 10 carbon fatty acids; if the sample were milk fat this option would be correct."
+        "rationale": "Cerebrosides are simpler glycosphingolipids with a single sugar head group; this would be correct only if a single-sugar glycosphingolipid were asked."
       },
       {
-        "text": "Short chain fatty acids predominate in adipose tissue storage",
+        "text": "Sphingomyelin",
         "isCorrect": false,
-        "rationale": "Wrong because adipose stores long-chain fatty acids; if adipose tissue were replaced by milk fat this statement could be true."
+        "rationale": "Sphingomyelin has a phosphocholine head group, not sialic acid-containing oligosaccharides; it would be correct only if phosphocholine were specified."
       },
       {
-        "text": "Phospholipids store energy as long chain fatty acids in adipose",
+        "text": "Phosphatidylinositol",
         "isCorrect": false,
-        "rationale": "Wrong because phospholipids are membrane components, not primary energy storage; triacylglycerols perform storage function as described in the lecture."
+        "rationale": "Phosphatidylinositol is a glycerophospholipid with inositol head group, not a glycosphingolipid; this would be correct only in glycerol-based lipid context."
       },
       {
-        "text": "Cholesteryl esters are the main adipose storage lipids",
+        "text": "Glucocerebroside",
         "isCorrect": false,
-        "rationale": "Wrong because cholesteryl esters are used for cholesterol transport and storage but are not the primary adipose energy storage form; triacylglycerols are."
+        "rationale": "Glucocerebroside is a cerebroside with a glucose head group and lacks sialic acid; it would be correct only if a single glucose head group were the focus."
       }
     ]
   },
   {
-    "question": "A patient with a diet deficient in omega-6 fatty acids would most directly lack which downstream signaling precursor?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Define essential fatty acid and list examples and their food sources",
+    "question": "Which fatty acid from the lecture is most likely to be liquid at room temperature due to multiple cis double bonds?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe how melting temperature changes based on chain length and saturation",
     "options": [
       {
-        "text": "Arachidonic acid precursor for prostaglandin synthesis",
+        "text": "Linolenic acid (18:3)",
         "isCorrect": true,
-        "rationale": "Correct because the lecture states linoleic acid (an essential omega-6) is the precursor for arachidonic acid, which is required for eicosanoid synthesis."
+        "rationale": "Linolenic acid (18:3) has multiple cis double bonds and a low melting point (−11°C), making it liquid at room temperature."
       },
       {
-        "text": "Eicosapentaenoic acid omega three precursor from fish",
+        "text": "Stearic acid (18:0)",
         "isCorrect": false,
-        "rationale": "Wrong because EPA is an omega-3 derivative, not derived from omega-6 linoleic acid; if the diet lacked omega-3s this option would be relevant."
+        "rationale": "Stearic acid is saturated with a high melting point (69.6°C) and is solid at room temperature; it would be correct only if saturation were asked."
       },
       {
-        "text": "Cholesterol derived steroid hormones from sterol pathway",
+        "text": "Oleic acid (18:1)",
         "isCorrect": false,
-        "rationale": "Wrong because cholesterol and steroid hormones are not direct products of omega-6 deficiency; if cholesterol synthesis were impaired this option could be implicated."
+        "rationale": "Oleic acid is monounsaturated with a higher melting point (16°C) than linolenate and may be liquid at room temperature but is not the most unsaturated example; it would be correct only if single unsaturation were emphasized."
       },
       {
-        "text": "Sphingomyelin myelin sheath component from ceramide",
+        "text": "Palmitic acid (16:0)",
         "isCorrect": false,
-        "rationale": "Wrong because sphingomyelin is a sphingolipid derived from sphingosine and ceramide, not from omega-6 fatty acids; a defect in sphingolipid metabolism would make this option correct."
+        "rationale": "Palmitic acid is saturated and typically solid at room temperature; it would be correct only if short saturated chains were considered."
       },
       {
-        "text": "Short chain fatty acids produced by gut bacteria",
+        "text": "Lignoceric acid (24:0)",
         "isCorrect": false,
-        "rationale": "Wrong because short-chain fatty acids are microbial fermentation products and unrelated to dietary omega-6 deficiency; if gut microbiota were altered this could be relevant."
+        "rationale": "Lignoceric acid is a very long saturated fatty acid and would be solid at room temperature; it would be correct only if chain length effects were the focus."
       }
     ]
   },
   {
-    "question": "Which laboratory finding would best support a diagnosis of Niemann-Pick disease in a child with hepatosplenomegaly?",
-    "difficulty_order": "3rd",
+    "question": "A patient with a mutation causing absent sphingomyelinase activity would most likely show which inheritance pattern?",
+    "difficulty_order": "2nd",
     "cited_learning_objective": "List the enzyme deficiency and its usual products for Niemann-Pick Disease",
     "options": [
       {
-        "text": "Low sphingomyelinase activity with sphingomyelin accumulation",
+        "text": "Autosomal recessive",
         "isCorrect": true,
-        "rationale": "Correct because the lecture specifies Niemann-Pick disease results from sphingomyelinase deficiency leading to sphingomyelin buildup in lysosomes and clinical features like hepatosplenomegaly."
+        "rationale": "Niemann-Pick disease is described as having an autosomal recessive inheritance pattern in the lecture."
       },
       {
-        "text": "Low glucocerebrosidase activity with glucocerebroside accumulation",
+        "text": "Autosomal dominant",
         "isCorrect": false,
-        "rationale": "Wrong because that pattern indicates Gaucher disease; if the enzyme assay showed low glucocerebrosidase this would support Gaucher rather than Niemann-Pick."
+        "rationale": "Autosomal dominant inheritance is not described for Niemann-Pick; this would be correct only if a dominant sphingolipidosis were specified."
       },
       {
-        "text": "Low hexosaminidase A activity with GM2 ganglioside accumulation",
+        "text": "X-linked recessive",
         "isCorrect": false,
-        "rationale": "Wrong because that finding indicates Tay-Sachs disease; a different enzyme deficiency would be required to diagnose Niemann-Pick."
+        "rationale": "X-linked recessive inheritance applies to some lysosomal disorders like Fabry disease, not Niemann-Pick; it would be correct only with different enzyme deficiency."
       },
       {
-        "text": "Low alpha galactosidase A activity with ceramide trihexoside accumulation",
+        "text": "Mitochondrial inheritance",
         "isCorrect": false,
-        "rationale": "Wrong because that pattern is seen in Fabry disease; if the clinical picture included angiokeratomas and neuropathic pain this option would be more likely."
+        "rationale": "Mitochondrial inheritance is unrelated to lysosomal enzyme deficiencies; this would be correct only if a mitochondrial disorder were described."
       },
       {
-        "text": "Elevated cholesterol esters with xanthoma formation",
+        "text": "Multifactorial inheritance",
         "isCorrect": false,
-        "rationale": "Wrong because elevated cholesteryl esters and xanthomas suggest lipid transport disorders like familial hypercholesterolemia, not Niemann-Pick; abnormal sphingomyelinase would be needed for correctness."
+        "rationale": "Multifactorial inheritance involves multiple genes and environment and is not the pattern for Niemann-Pick; it would be correct only with complex trait evidence."
       }
     ]
   },
   {
-    "question": "Which pharmacologic agent specifically inhibits the 5-lipoxygenase pathway and would reduce leukotriene synthesis according to the lecture schematic?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe briefly the synthesis of eicosanoids from arachidonic acid and list their functions",
-    "options": [
-      {
-        "text": "Zileuton direct 5 lipoxygenase pathway inhibitor",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture schematic lists zileuton as a 5-lipoxygenase inhibitor that reduces leukotriene synthesis."
-      },
-      {
-        "text": "Celecoxib selective cyclooxygenase two inhibitor",
-        "isCorrect": false,
-        "rationale": "Wrong because celecoxib selectively inhibits COX-2 and affects prostaglandin synthesis, not 5-lipoxygenase; if the drug inhibited lipoxygenase it would match the question."
-      },
-      {
-        "text": "Montelukast leukotriene receptor antagonist not enzyme inhibitor",
-        "isCorrect": false,
-        "rationale": "Wrong because montelukast blocks leukotriene receptors rather than inhibiting 5-lipoxygenase; if the question asked about receptor antagonists this would be correct."
-      },
-      {
-        "text": "Aspirin irreversible cyclooxygenase acetylator",
-        "isCorrect": false,
-        "rationale": "Wrong because aspirin acetylates cyclooxygenase and reduces prostaglandin and thromboxane synthesis, not leukotriene production via 5-lipoxygenase; if aspirin inhibited lipoxygenase this would be relevant."
-      },
-      {
-        "text": "Ibuprofen reversible cyclooxygenase inhibitor NSAID",
-        "isCorrect": false,
-        "rationale": "Wrong because ibuprofen reversibly inhibits cyclooxygenase enzymes and does not directly inhibit 5-lipoxygenase; a true 5-lipoxygenase inhibitor would be required."
-      }
-    ]
-  },
-  {
-    "question": "A patient with asthma is prescribed montelukast. According to the lecture, which step in eicosanoid signaling does this drug affect?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe briefly the synthesis of eicosanoids from arachidonic acid and list their functions",
-    "options": [
-      {
-        "text": "Leukotriene receptor antagonism blocking bronchoconstriction",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture lists montelukast as a leukotriene receptor antagonist that reduces leukotriene-mediated bronchial tone."
-      },
-      {
-        "text": "Direct inhibition of cyclooxygenase reducing prostaglandins",
-        "isCorrect": false,
-        "rationale": "Wrong because montelukast does not inhibit cyclooxygenase; if the drug inhibited COX it would reduce prostaglandin synthesis instead."
-      },
-      {
-        "text": "Irreversible acetylation of phospholipase A2 preventing arachidonic release",
-        "isCorrect": false,
-        "rationale": "Wrong because montelukast does not acetylate enzymes and PLA2 is not its target; if montelukast inhibited PLA2 this option would be correct."
-      },
-      {
-        "text": "Activation of cytochrome P450 increasing epoxide production",
-        "isCorrect": false,
-        "rationale": "Wrong because montelukast acts at leukotriene receptors and does not induce P450; if it did induce P450-mediated epoxide formation this would be relevant."
-      },
-      {
-        "text": "Competitive inhibition of thromboxane synthase reducing aggregation",
-        "isCorrect": false,
-        "rationale": "Wrong because montelukast does not inhibit thromboxane synthase; a thromboxane synthase inhibitor would match this option."
-      }
-    ]
-  },
-  {
-    "question": "Which dietary recommendation from the lecture would most likely increase HDL and lower total cholesterol?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the structure of fatty acids and be able to give the abbreviation of fatty acids based on chain length and saturation",
-    "options": [
-      {
-        "text": "Adopt Mediterranean diet high in monounsaturated fats",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture notes the Mediterranean diet, high in monounsaturated fatty acids like olive oil, is associated with lower total cholesterol and LDL and increased HDL."
-      },
-      {
-        "text": "Increase intake of hydrogenated vegetable oils high in trans fats",
-        "isCorrect": false,
-        "rationale": "Wrong because trans fats raise LDL and are linked to cardiovascular disease; if trans fats were shown to raise HDL this option would be correct."
-      },
-      {
-        "text": "Consume large amounts of red meat rich in saturated fats",
-        "isCorrect": false,
-        "rationale": "Wrong because diets high in saturated fats are associated with increased LDL; if the meat were replaced by lean fish this could be beneficial."
-      },
-      {
-        "text": "Eliminate all dietary fats including essential fatty acids",
-        "isCorrect": false,
-        "rationale": "Wrong because essential fatty acids are required and eliminating all fats would be harmful; supplementing with essential omega-3 and omega-6 would be necessary for correctness."
-      },
-      {
-        "text": "Rely exclusively on short chain fatty acids from milk",
-        "isCorrect": false,
-        "rationale": "Wrong because milk fats are not the recommended source for raising HDL per the lecture; replacing with monounsaturated-rich oils would be needed."
-      }
-    ]
-  },
-  {
-    "question": "Which structural feature differentiates a glycosphingolipid from a simple ceramide?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "List the components of a sphingolipid, including the differentiation of ceramide and sphingosine",
-    "options": [
-      {
-        "text": "Presence of one or more sugar residues attached to ceramide",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture defines glycosphingolipids as sphingolipids with one or more sugar groups attached to ceramide, such as cerebrosides and gangliosides."
-      },
-      {
-        "text": "Addition of phosphorylcholine to ceramide forming sphingomyelin",
-        "isCorrect": false,
-        "rationale": "Wrong because phosphorylcholine addition yields sphingomyelin, not a glycosphingolipid; if the head group were a sugar this would be a glycosphingolipid."
-      },
-      {
-        "text": "Esterification of ceramide to glycerol backbone",
-        "isCorrect": false,
-        "rationale": "Wrong because ceramide is not esterified to glycerol; converting ceramide to a glycerophospholipid would change its class entirely."
-      },
-      {
-        "text": "Saturation of sphingosine double bond producing dihydroceramide",
-        "isCorrect": false,
-        "rationale": "Wrong because saturation alters ceramide saturation state but does not add sugar residues; adding sugars would be required to form glycosphingolipids."
-      },
-      {
-        "text": "Attachment of a phosphate group to the fatty acid chain",
-        "isCorrect": false,
-        "rationale": "Wrong because phosphate attachment to the fatty acid is not how glycosphingolipids are formed; attaching sugars to the terminal hydroxyl of ceramide is the defining change."
-      }
-    ]
-  },
-  {
-    "question": "A patient’s membrane analysis shows increased levels of cholesteryl esters. Which statement best describes the biochemical modification that forms a cholesteryl ester?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the structure and function of cholesterol",
-    "options": [
-      {
-        "text": "Esterification of cholesterol hydroxyl with a fatty acid",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture explains cholesterol can be esterified at the hydroxyl group of carbon three with a fatty acid for storage and transport."
-      },
-      {
-        "text": "Hydroxylation of cholesterol ring increasing polarity",
-        "isCorrect": false,
-        "rationale": "Wrong because hydroxylation increases polarity but does not form an ester; esterification specifically links a fatty acid to the hydroxyl group."
-      },
-      {
-        "text": "Cleavage of steroid nucleus producing bile acids directly",
-        "isCorrect": false,
-        "rationale": "Wrong because bile acids are modified sterols derived from cholesterol but not by simple cleavage; esterification forms cholesteryl esters instead."
-      },
-      {
-        "text": "Phosphorylation of cholesterol at carbon three forming sterol phosphate",
-        "isCorrect": false,
-        "rationale": "Wrong because phosphorylation is not the typical storage modification; esterification with a fatty acid produces cholesteryl esters."
-      },
-      {
-        "text": "Conjugation to glucuronic acid for renal excretion",
-        "isCorrect": false,
-        "rationale": "Wrong because glucuronidation aids excretion and is not the storage form cholesteryl ester; esterification is the storage modification described in the lecture."
-      }
-    ]
-  },
-  {
-    "question": "Which pathway converts arachidonic acid into leukotrienes that mediate bronchial tone and neutrophil chemotaxis?",
+    "question": "Which lipid class includes molecules that act as local regulators derived from arachidonic acid?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe briefly the synthesis of eicosanoids from arachidonic acid and list their functions",
     "options": [
       {
-        "text": "Lipoxygenase pathway produces leukotrienes from arachidonic acid",
+        "text": "Eicosanoids",
         "isCorrect": true,
-        "rationale": "Correct because the lecture states the lipoxygenase pathway yields leukotrienes which affect bronchial tone and neutrophil chemotaxis."
+        "rationale": "Eicosanoids are lipid-based compounds derived from arachidonic acid that function as local regulators and signaling molecules."
       },
       {
-        "text": "Cyclooxygenase pathway produces leukotrienes and thromboxanes",
+        "text": "Triacylglycerols",
         "isCorrect": false,
-        "rationale": "Wrong because cyclooxygenase produces prostaglandins and thromboxanes, not leukotrienes; if cyclooxygenase produced leukotrienes this option would be correct."
+        "rationale": "Triacylglycerols are storage lipids and not local signaling regulators; this would be correct only if energy storage were the focus."
       },
       {
-        "text": "Cytochrome P450 pathway produces prostacyclin and prostaglandins",
+        "text": "Phosphoacylglycerols",
         "isCorrect": false,
-        "rationale": "Wrong because cytochrome P450 produces epoxides and other metabolites, not prostacyclin; prostacyclin is a cyclooxygenase product."
+        "rationale": "Phosphoacylglycerols are membrane lipids and not the primary arachidonate-derived signaling mediators; this would be correct only if membrane structure were asked."
       },
       {
-        "text": "Phospholipase A2 directly synthesizes leukotrienes from membranes",
+        "text": "Isoprenoids",
         "isCorrect": false,
-        "rationale": "Wrong because PLA2 releases arachidonic acid from membranes but does not synthesize leukotrienes; lipoxygenase acts on the released arachidonic acid to form leukotrienes."
+        "rationale": "Isoprenoids/steroids are hormone precursors and membrane components, not arachidonate-derived local regulators; this would be correct only in steroidogenesis context."
       },
       {
-        "text": "Acetyltransferase converts arachidonic acid to cyclic endoperoxides",
+        "text": "Glycosphingolipids",
         "isCorrect": false,
-        "rationale": "Wrong because acetyltransferase activity (as with aspirin) modifies cyclooxygenase, not directly converting arachidonic acid to endoperoxides; cyclooxygenase performs that conversion."
+        "rationale": "Glycosphingolipids are membrane components with sugar head groups, not eicosanoid signaling molecules; this would be correct only if glycan-mediated recognition were asked."
       }
     ]
   },
   {
-    "question": "A patient with chronic inflammation is given a COX-2 selective inhibitor. According to the lecture, which eicosanoid pathway product is most directly reduced by this drug class?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe briefly the synthesis of eicosanoids from arachidonic acid and list their functions",
-    "options": [
-      {
-        "text": "Prostaglandin synthesis via cyclooxygenase two inhibition",
-        "isCorrect": true,
-        "rationale": "Correct because COX-2 selective inhibitors reduce prostaglandin production by inhibiting the cyclooxygenase-2 enzyme, as outlined in the lecture schematic."
-      },
-      {
-        "text": "Leukotriene synthesis via lipoxygenase inhibition",
-        "isCorrect": false,
-        "rationale": "Wrong because COX-2 inhibitors target cyclooxygenase, not lipoxygenase; a lipoxygenase inhibitor like zileuton would reduce leukotrienes."
-      },
-      {
-        "text": "Epoxide formation via cytochrome P450 blockade",
-        "isCorrect": false,
-        "rationale": "Wrong because COX-2 inhibitors do not block cytochrome P450 epoxide formation; a P450 inhibitor would be needed to reduce epoxides."
-      },
-      {
-        "text": "Phospholipase A2 activity preventing arachidonic release",
-        "isCorrect": false,
-        "rationale": "Wrong because COX-2 inhibitors act downstream of PLA2 and do not prevent arachidonic acid release; inhibiting PLA2 would reduce substrate availability for all eicosanoids."
-      },
-      {
-        "text": "Thromboxane receptor antagonism on platelets",
-        "isCorrect": false,
-        "rationale": "Wrong because COX-2 inhibitors reduce prostaglandin synthesis and may affect thromboxane indirectly but do not act as thromboxane receptor antagonists; a receptor antagonist would be required for that mechanism."
-      }
-    ]
-  },
-  {
-    "question": "Which lipid class listed in the lecture is synthesized from multiple five-carbon isoprenyl units and forms steroid hormones and bile acids?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "List the major classes of lipids, and their basic function",
-    "options": [
-      {
-        "text": "Isoprenoids steroids formed from isoprenyl five carbon units",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture states steroids and isoprenoids are made of multiple five-carbon isoprenyl units and include hormones and bile acids."
-      },
-      {
-        "text": "Phospholipids glycerol based membrane components and signals",
-        "isCorrect": false,
-        "rationale": "Wrong because phospholipids are glycerol-based membrane lipids, not synthesized from isoprenyl units; if the question asked about membrane components this would be correct."
-      },
-      {
-        "text": "Sphingolipids sphingosine based nervous tissue membrane lipids",
-        "isCorrect": false,
-        "rationale": "Wrong because sphingolipids are built on sphingosine from serine and palmitate, not isoprenyl units; changing the biosynthetic precursors would be required."
-      },
-      {
-        "text": "Triacylglycerols glycerol esterified to three fatty acids",
-        "isCorrect": false,
-        "rationale": "Wrong because triacylglycerols are storage lipids formed from glycerol and fatty acids, not isoprenyl units; replacing glycerol with isoprenyl building blocks would be needed."
-      },
-      {
-        "text": "Eicosanoids twenty carbon signaling lipids from arachidonic",
-        "isCorrect": false,
-        "rationale": "Wrong because eicosanoids derive from arachidonic acid and are not synthesized from isoprenyl units; if the question asked about signaling lipids this would be relevant."
-      }
-    ]
-  },
-  {
-    "question": "Which membrane lipid class increases head group hydrophilicity and enables bilayer formation by having a phosphate plus an additional organic moiety?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the structure and functions of phospholipids and what separates phosphatidic acid from other phospholipids",
-    "options": [
-      {
-        "text": "Phospholipids glycerol or sphingosine with phosphate head",
-        "isCorrect": true,
-        "rationale": "Correct because the lecture explains phospholipids have a glycerol or sphingosine backbone with a phosphate and often an additional organic head group, increasing hydrophilicity and enabling bilayer formation."
-      },
-      {
-        "text": "Triacylglycerols three fatty acids on glycerol nonpolar storage",
-        "isCorrect": false,
-        "rationale": "Wrong because triacylglycerols lack a phosphate head and are nonpolar storage lipids; adding a phosphate head would convert them into phospholipids."
-      },
-      {
-        "text": "Cholesteryl esters cholesterol esterified to fatty acid hydrophobic",
-        "isCorrect": false,
-        "rationale": "Wrong because cholesteryl esters are hydrophobic storage forms and do not increase head group hydrophilicity; hydrolyzing the ester to free cholesterol would increase polarity slightly."
-      },
-      {
-        "text": "Glycosphingolipids ceramide with sugar head groups less polar",
-        "isCorrect": false,
-        "rationale": "Wrong because glycosphingolipids have sugar head groups that can be polar but are not phosphate-containing phospholipids; replacing sugar with phosphate would make them phospholipids."
-      },
-      {
-        "text": "Cardiolipin diphosphatidylglycerol with two phosphate groups",
-        "isCorrect": false,
-        "rationale": "Wrong because cardiolipin is a specialized phospholipid with two phosphatidyl groups and is mitochondrial-specific; while it increases hydrophilicity, the general class described is phospholipids."
-      }
-    ]
-  },
-  {
-    "question": "Which fatty acid abbreviation corresponds to oleic acid as used in the lecture examples?",
+    "question": "Which structural feature is common to all fatty acids described in the lecture and gives them acidic properties?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Describe the basic structure of fatty acids and be able to give the abbreviation of fatty acids based on chain length and saturation",
     "options": [
       {
-        "text": "18:1 nine position monounsaturated",
+        "text": "Carboxyl group (COOH)",
         "isCorrect": true,
-        "rationale": "Correct because the lecture identifies oleic acid as cis-9-octadecenoate abbreviated 18:1(9), indicating 18 carbons and one double bond at carbon 9."
+        "rationale": "Fatty acids are carboxylic acids with a carboxyl group that imparts acidic properties (pKa ~4.8) as noted."
       },
       {
-        "text": "18:0 saturated stearic acid notation",
+        "text": "Phosphate group",
         "isCorrect": false,
-        "rationale": "Wrong because 18:0 denotes stearic acid which is saturated; changing the double bond count to one would match oleic acid."
+        "rationale": "Phosphate groups are features of phospholipids, not free fatty acids; this would be correct only for phospholipid head groups."
       },
       {
-        "text": "16:1 palmitoleic acid monounsaturated notation",
+        "text": "Sphingosine backbone",
         "isCorrect": false,
-        "rationale": "Wrong because 16:1 denotes palmitoleic acid with 16 carbons; increasing the carbon count to 18 would be needed for oleic acid."
+        "rationale": "Sphingosine is the backbone of sphingolipids, not a universal fatty acid feature; it would be correct only in sphingolipid context."
       },
       {
-        "text": "18:3 alpha linolenic acid polyunsaturated notation",
+        "text": "Steroid nucleus",
         "isCorrect": false,
-        "rationale": "Wrong because 18:3 denotes alpha-linolenic acid with three double bonds; reducing double bonds to one would yield oleic acid."
+        "rationale": "The steroid nucleus is characteristic of cholesterol and steroids, not fatty acids; this would be correct only for isoprenoids."
       },
       {
-        "text": "20:4 arachidonic acid polyunsaturated notation",
+        "text": "Glycerol backbone",
         "isCorrect": false,
-        "rationale": "Wrong because 20:4 denotes arachidonic acid with four double bonds and 20 carbons; shortening and altering double bonds would be required."
+        "rationale": "Glycerol backbones are present in acylglycerols and phospholipids, not in free fatty acids; this would be correct only for glycerol-based lipids."
       }
     ]
   },
   {
-    "question": "Which membrane lipid class is especially abundant in nervous tissue and includes cerebrosides and gangliosides?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "List the components of a sphingolipid, including the differentiation of ceramide and sphingosine",
+    "question": "A patient with decreased mitochondrial cardiolipin content would most likely have impaired which cellular process?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the structure and functions of phospholipids and what separates phosphatidic acid from other phospholipids",
     "options": [
       {
-        "text": "Glycosphingolipids sphingolipids with sugar head groups",
+        "text": "Mitochondrial respiration and energy conversion",
         "isCorrect": true,
-        "rationale": "Correct because the lecture describes glycosphingolipids, including cerebrosides and gangliosides, as sphingolipids with sugar head groups abundant in nervous tissue."
+        "rationale": "Cardiolipin is essential in mitochondrial membranes and plays a role in mitochondrial function including respiration and energy conversion."
       },
       {
-        "text": "Phosphatidylcholine glycerophospholipid with choline head group",
+        "text": "Extracellular lipid transport",
         "isCorrect": false,
-        "rationale": "Wrong because phosphatidylcholine is a glycerophospholipid common in membranes but not specifically the glycosphingolipids of nervous tissue; replacing choline with sugar would make it glycosphingolipid-like."
+        "rationale": "Extracellular lipid transport involves lipoproteins and cholesterol esterification, not cardiolipin; this would be correct only if lipoprotein pathways were disrupted."
       },
       {
-        "text": "Cardiolipin mitochondrial diphosphatidylglycerol membrane lipid",
+        "text": "Plasma membrane phospholipid asymmetry",
         "isCorrect": false,
-        "rationale": "Wrong because cardiolipin is mitochondrial and not the glycosphingolipid class; if the question targeted mitochondria this would be correct."
+        "rationale": "Membrane asymmetry involves phosphatidylserine and other phospholipids, not specifically cardiolipin; it would be correct only with different phospholipid defects."
       },
       {
-        "text": "Cholesteryl ester storage form of cholesterol in lipoproteins",
+        "text": "Sphingomyelin synthesis in myelin",
         "isCorrect": false,
-        "rationale": "Wrong because cholesteryl esters are transport/storage forms and not nervous tissue glycosphingolipids; converting cholesterol to a glycosphingolipid would be required."
+        "rationale": "Sphingomyelin synthesis pertains to sphingolipids and myelin, not cardiolipin; this would be correct only if sphingolipid enzymes were defective."
       },
       {
-        "text": "Triacylglycerol adipose storage lipid with three acyl chains",
+        "text": "Bile acid conjugation",
         "isCorrect": false,
-        "rationale": "Wrong because triacylglycerols are storage lipids and not membrane glycosphingolipids; replacing glycerol backbone with sphingosine would change class."
+        "rationale": "Bile acid formation involves cholesterol modification, not cardiolipin; this would be correct only if cholesterol metabolism were impaired."
       }
     ]
   },
   {
-    "question": "Which clinical feature described in the lecture is characteristic of sphingomyelin accumulation in lysosomal storage disease?",
+    "question": "Which lipid is formed when a fatty acid is esterified to the hydroxyl group at carbon 3 of cholesterol?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "List the enzyme deficiency and its usual products for Niemann-Pick Disease",
+    "cited_learning_objective": "Describe the structure and function of cholesterol",
     "options": [
       {
-        "text": "Cherry red spot on macula with neurodegeneration and hepatosplenomegaly",
+        "text": "Cholesteryl ester",
         "isCorrect": true,
-        "rationale": "Correct because the lecture lists progressive neurodegeneration, hepatosplenomegaly, and a cherry-red macular spot as clinical findings in Niemann-Pick disease due to sphingomyelin accumulation."
+        "rationale": "Cholesterol esterified at the hydroxyl of carbon 3 with a fatty acid forms a cholesteryl ester, important for storage and transport."
       },
       {
-        "text": "Angiokeratomas with peripheral neuropathy and renal failure",
+        "text": "Phosphatidylcholine",
         "isCorrect": false,
-        "rationale": "Wrong because angiokeratomas and renal involvement are features of Fabry disease due to alpha-galactosidase A deficiency; if those findings were present this option would be correct."
+        "rationale": "Phosphatidylcholine is a glycerophospholipid with choline head group, not an esterified cholesterol; it would be correct only in phospholipid context."
       },
       {
-        "text": "Hepatosplenomegaly with crumpled tissue paper macrophages only",
+        "text": "Sphingomyelin",
         "isCorrect": false,
-        "rationale": "Wrong because while crumpled tissue paper macrophages are seen in Gaucher disease, Niemann-Pick shows sphingomyelin-laden macrophages; specifying sphingomyelin accumulation would make this correct."
+        "rationale": "Sphingomyelin is a sphingolipid with phosphocholine on ceramide, not a cholesterol ester; it would be correct only if sphingosine backbone were present."
       },
       {
-        "text": "Progressive ataxia with peripheral demyelination and seizures",
+        "text": "Triacylglycerol",
         "isCorrect": false,
-        "rationale": "Wrong because this constellation is more typical of metachromatic leukodystrophy; if arylsulfatase A deficiency were present this option would be correct."
+        "rationale": "Triacylglycerol is glycerol esterified with three fatty acids, not cholesterol ester; it would be correct only if glycerol backbone were involved."
       },
       {
-        "text": "X linked inheritance with angiokeratomas and pain crises",
+        "text": "Cardiolipin",
         "isCorrect": false,
-        "rationale": "Wrong because X-linked inheritance with angiokeratomas describes Fabry disease, not the autosomal recessive Niemann-Pick; changing inheritance pattern would be necessary."
+        "rationale": "Cardiolipin is a diphosphatidylglycerol in mitochondria, not a cholesterol ester; it would be correct only in mitochondrial membrane context."
       }
     ]
   },
   {
-    "question": "Which lipid-derived mediator listed in the lecture acts as a neutrophil chemotactic agent?",
+    "question": "Which enzyme pathway is selectively targeted by celecoxib according to the lecture diagram?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe briefly the synthesis of eicosanoids from arachidonic acid and list their functions",
     "options": [
       {
-        "text": "Leukotriene B4 neutrophil chemotactic agent",
+        "text": "COX-2 selective inhibition",
         "isCorrect": true,
-        "rationale": "Correct because the lecture explicitly states LTB4 is a neutrophil chemotactic agent produced via the lipoxygenase pathway."
+        "rationale": "Celecoxib is indicated in the lecture diagram as a COX-2 selective inhibitor, distinguishing it from nonselective NSAIDs."
       },
       {
-        "text": "Prostacyclin inhibitor of platelet aggregation and vasodilator",
+        "text": "Nonselective COX-1 and COX-2 inhibition",
         "isCorrect": false,
-        "rationale": "Wrong because prostacyclin (PGI2) inhibits platelet aggregation and causes vasodilation rather than neutrophil chemotaxis; if the question asked about platelet inhibition this would be correct."
+        "rationale": "Nonselective NSAIDs inhibit both COX-1 and COX-2; celecoxib is COX-2 selective, so this would be correct only for drugs like ibuprofen."
       },
       {
-        "text": "Thromboxane A2 inhibitor of platelet aggregation",
+        "text": "5-Lipoxygenase inhibition",
         "isCorrect": false,
-        "rationale": "Wrong because thromboxane A2 promotes platelet aggregation and vasoconstriction; if the option stated promotion rather than inhibition it would match lecture content."
+        "rationale": "5-LOX inhibitors (e.g., zileuton) block leukotriene synthesis; celecoxib targets COX-2, not 5-LOX, so this would be correct only with a different drug."
       },
       {
-        "text": "PGE2 neutrophil chemotactic agent and platelet aggregator",
+        "text": "Phospholipase A2 inhibition",
         "isCorrect": false,
-        "rationale": "Wrong because PGE2 has diverse roles including vasodilation and inflammation but is not the primary neutrophil chemotactic agent listed; LTB4 is the specific chemotactic mediator."
+        "rationale": "Glucocorticoids inhibit PLA2 indirectly; celecoxib inhibits COX-2 downstream, so this would be correct only for corticosteroids."
       },
       {
-        "text": "Epoxyeicosatrienoic acids primary neutrophil chemoattractants",
+        "text": "Leukotriene receptor antagonism",
         "isCorrect": false,
-        "rationale": "Wrong because cytochrome P450-derived epoxides have different vascular effects and are not identified in the lecture as primary neutrophil chemoattractants; LTB4 fits that role."
+        "rationale": "Leukotriene receptor antagonists (e.g., montelukast) block leukotriene receptors, not COX-2; this would be correct only for those agents."
       }
     ]
   },
   {
-    "question": "Which of the following best explains why essential fatty acids must be obtained from the diet?",
+    "question": "Which fatty acid listed in the lecture table is a 24-carbon monounsaturated fatty acid with a double bond at carbon 15?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Define essential fatty acid and list examples and their food sources",
+    "cited_learning_objective": "Describe the basic structure of fatty acids and be able to give the abbreviation of fatty acids based on chain length and saturation",
     "options": [
       {
-        "text": "Humans cannot introduce double bonds at omega three and six positions",
+        "text": "Nervonic acid (24:1(15))",
         "isCorrect": true,
-        "rationale": "Correct because the lecture states the body is unable to synthesize double bonds at the w-6 and w-3 carbons, making linoleic and linolenic acids essential dietary components."
+        "rationale": "Nervonic acid is listed as 24:1(15), a 24-carbon monounsaturated fatty acid with a double bond at carbon 15."
       },
       {
-        "text": "Humans lack enzymes to elongate fatty acids beyond sixteen carbons",
+        "text": "Lignoceric acid (24:0)",
         "isCorrect": false,
-        "rationale": "Wrong because humans can elongate fatty acids; the essentiality is due to inability to desaturate at specific omega positions, not elongation capacity."
+        "rationale": "Lignoceric acid is 24:0 (saturated) and lacks a double bond; it would be correct only if saturation were specified."
       },
       {
-        "text": "Essential fatty acids are only produced by gut bacteria",
+        "text": "Arachidonic acid (20:4)",
         "isCorrect": false,
-        "rationale": "Wrong because essential fatty acids are dietary plant or fish sources, not primarily gut bacterial products; if gut bacteria synthesized sufficient amounts this statement could be true."
+        "rationale": "Arachidonic acid is 20:4 and not 24:1(15); it would be correct only if a 20-carbon tetraene were asked."
       },
       {
-        "text": "All polyunsaturated fatty acids are synthesized endogenously",
+        "text": "Oleic acid (18:1(9))",
         "isCorrect": false,
-        "rationale": "Wrong because some polyunsaturated fatty acids like omega-3 and omega-6 are essential and cannot be synthesized; if endogenous desaturases could act at omega positions this would be correct."
+        "rationale": "Oleic acid is 18:1(9) and not a 24-carbon fatty acid; it would be correct only if an 18-carbon monounsaturate were targeted."
       },
       {
-        "text": "Essential fatty acids are only required during infancy and not adulthood",
+        "text": "Palmitoleic acid (16:1(9))",
         "isCorrect": false,
-        "rationale": "Wrong because essential fatty acids are required throughout life for physiological functions; restricting requirement to infancy would be incorrect per the lecture."
+        "rationale": "Palmitoleic acid is 16:1(9) and not 24:1(15); it would be correct only if a 16-carbon monounsaturate were asked."
       }
     ]
   },
   {
-    "question": "Which lipid class listed in the lecture functions primarily as cell signaling molecules derived from arachidonic acid?",
+    "question": "A patient with inflammatory asthma is prescribed montelukast. Which pathway or target does this drug antagonize according to the lecture diagram?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe briefly the synthesis of eicosanoids from arachidonic acid and list their functions",
+    "options": [
+      {
+        "text": "Leukotriene receptor antagonism",
+        "isCorrect": true,
+        "rationale": "Montelukast is listed as a leukotriene receptor antagonist, blocking leukotriene-mediated bronchoconstriction."
+      },
+      {
+        "text": "5-Lipoxygenase enzyme inhibition",
+        "isCorrect": false,
+        "rationale": "5-LOX inhibitors like zileuton block leukotriene synthesis; montelukast blocks receptors, so this would be correct only with zileuton."
+      },
+      {
+        "text": "Cyclooxygenase inhibition",
+        "isCorrect": false,
+        "rationale": "COX inhibitors (aspirin, NSAIDs) affect prostaglandin and thromboxane synthesis, not leukotriene receptors; this would be correct only with NSAID therapy."
+      },
+      {
+        "text": "Phospholipase A2 inhibition",
+        "isCorrect": false,
+        "rationale": "PLA2 inhibition reduces arachidonate release and is achieved by corticosteroids, not montelukast; this would be correct only with steroid therapy."
+      },
+      {
+        "text": "Thromboxane receptor antagonism",
+        "isCorrect": false,
+        "rationale": "Thromboxane receptor antagonists target platelet aggregation pathways, not leukotriene-mediated bronchospasm; this would be correct only in antiplatelet contexts."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best contrasts phosphatidylcholine and phosphatidylserine head groups?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the structure and functions of phospholipids and what separates phosphatidic acid from other phospholipids",
+    "options": [
+      {
+        "text": "Choline head group versus serine head group",
+        "isCorrect": true,
+        "rationale": "Phosphatidylcholine has a choline head group while phosphatidylserine has a serine head group, distinguishing their head-group chemistry."
+      },
+      {
+        "text": "Glycerol backbone versus sphingosine backbone",
+        "isCorrect": false,
+        "rationale": "Both phosphatidylcholine and phosphatidylserine are glycerophospholipids with glycerol backbones; this would be correct only if comparing glycerol to sphingosine lipids."
+      },
+      {
+        "text": "No phosphate group versus phosphate present",
+        "isCorrect": false,
+        "rationale": "Both contain phosphate groups; this would be correct only if contrasting neutral lipids like triacylglycerols."
+      },
+      {
+        "text": "Single fatty acid tail versus two fatty acid tails",
+        "isCorrect": false,
+        "rationale": "Both have two fatty acid tails esterified at carbons 1 and 2; this would be correct only for lysophospholipids."
+      },
+      {
+        "text": "Sialic acid-containing head versus choline head",
+        "isCorrect": false,
+        "rationale": "Sialic acid-containing heads characterize gangliosides, not phosphatidylserine; this would be correct only when comparing glycosphingolipids."
+      }
+    ]
+  },
+  {
+    "question": "Which lipid-derived mediator increases uterine tone and is listed among prostaglandins in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe briefly the synthesis of eicosanoids from arachidonic acid and list their functions",
+    "options": [
+      {
+        "text": "Prostaglandin F2α (PGF2α)",
+        "isCorrect": true,
+        "rationale": "PGF2α is listed as increasing uterine tone among prostaglandins in the lecture diagram."
+      },
+      {
+        "text": "Prostacyclin (PGI2)",
+        "isCorrect": false,
+        "rationale": "PGI2 promotes vasodilation and inhibits platelet aggregation, not uterine tone; it would be correct only if vasodilation were asked."
+      },
+      {
+        "text": "Thromboxane A2 (TXA2)",
+        "isCorrect": false,
+        "rationale": "TXA2 promotes platelet aggregation and vasoconstriction, not primarily uterine tone; it would be correct only with platelet-focused stems."
+      },
+      {
+        "text": "Leukotriene C4 (LTC4)",
+        "isCorrect": false,
+        "rationale": "LTC4 affects bronchial tone and vascular permeability, not uterine tone; it would be correct only in bronchospasm contexts."
+      },
+      {
+        "text": "Prostaglandin E1 (PGE1)",
+        "isCorrect": false,
+        "rationale": "PGE1 has vasodilatory and other effects but PGF2α is the prostaglandin specifically noted for uterine tone in the lecture; this would be correct only with different prostaglandin functions emphasized."
+      }
+    ]
+  },
+  {
+    "question": "Which lipid class is described as amphipathic with both polar and nonpolar components and serves as a major fuel source in the body?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "List the major classes of lipids, and their basic function",
     "options": [
       {
-        "text": "Eicosanoids lipid based signaling molecules from arachidonic acid",
+        "text": "Fatty acids",
         "isCorrect": true,
-        "rationale": "Correct because the lecture identifies eicosanoids as lipid-based compounds derived from arachidonic acid that act as regulators and signaling molecules."
+        "rationale": "Fatty acids are amphipathic molecules with a hydrophilic carboxyl head and hydrophobic tail and are used as fuel in the body."
       },
       {
-        "text": "Triacylglycerols primary storage form of fatty acids in adipose",
+        "text": "Cholesteryl esters",
         "isCorrect": false,
-        "rationale": "Wrong because triacylglycerols are storage lipids, not signaling molecules; if the question asked about storage this would be correct."
+        "rationale": "Cholesteryl esters are storage/transport forms of cholesterol and are not the primary fuel source; this would be correct only in lipid transport contexts."
       },
       {
-        "text": "Phospholipids membrane components and signaling molecules",
+        "text": "Cardiolipin",
         "isCorrect": false,
-        "rationale": "Wrong because while phospholipids have signaling roles, the specific class derived from arachidonic acid for signaling is eicosanoids; phospholipids are the source of arachidonic acid."
+        "rationale": "Cardiolipin is a mitochondrial membrane phospholipid important for respiration, not a primary fuel; it would be correct only if mitochondrial function were asked."
       },
       {
-        "text": "Sphingolipids membrane components in nervous tissue",
+        "text": "Gangliosides",
         "isCorrect": false,
-        "rationale": "Wrong because sphingolipids are membrane components and have signaling roles but are not the arachidonic acid-derived eicosanoids; if the question targeted nervous tissue this would be relevant."
+        "rationale": "Gangliosides are complex glycosphingolipids involved in cell recognition, not major fuels; this would be correct only in neural membrane contexts."
       },
       {
-        "text": "Sterols structural membrane components and hormone precursors",
+        "text": "Triacylglycerols",
         "isCorrect": false,
-        "rationale": "Wrong because sterols like cholesterol are structural and precursors for hormones, not the arachidonic acid-derived signaling eicosanoids; if the question asked about hormone precursors this would be correct."
+        "rationale": "Triacylglycerols are major energy stores but are nonpolar and not amphipathic; this would be correct only if the stem emphasized storage rather than amphipathicity."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical feature is specifically associated with Niemann-Pick disease in the lecture and helps distinguish it from Tay-Sachs?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "List the enzyme deficiency and its usual products for Niemann-Pick Disease",
+    "options": [
+      {
+        "text": "Hepatosplenomegaly with sphingomyelin accumulation",
+        "isCorrect": true,
+        "rationale": "Niemann-Pick disease features sphingomyelin accumulation in lysosomes with hepatosplenomegaly, distinguishing it from Tay-Sachs which lacks organomegaly."
+      },
+      {
+        "text": "Isolated neurodegeneration without organomegaly",
+        "isCorrect": false,
+        "rationale": "Isolated neurodegeneration without hepatosplenomegaly is more characteristic of Tay-Sachs; this would be correct only if organomegaly were absent."
+      },
+      {
+        "text": "Angiokeratomas and peripheral neuropathy",
+        "isCorrect": false,
+        "rationale": "Angiokeratomas and neuropathic pain are features of Fabry disease, not Niemann-Pick; this would be correct only with Fabry-specific findings."
+      },
+      {
+        "text": "Gaucher cells with bone crises",
+        "isCorrect": false,
+        "rationale": "Gaucher disease presents with glucocerebroside-laden macrophages and bone involvement, not the sphingomyelin accumulation of Niemann-Pick; this would be correct only with Gaucher features."
+      },
+      {
+        "text": "Metachromatic leukodystrophy with demyelination",
+        "isCorrect": false,
+        "rationale": "Metachromatic leukodystrophy involves sulfatide accumulation and demyelination, not sphingomyelin-laden macrophages and organomegaly; it would be correct only with leukodystrophy signs."
       }
     ]
   }
