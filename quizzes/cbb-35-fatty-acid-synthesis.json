@@ -1,0 +1,1154 @@
+[
+  {
+    "question": "A hepatocyte in the fed state increases cytosolic acetyl-CoA for fatty acid synthesis. Which pathway directly exports acetyl units from mitochondria to the cytosol?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the process of the citrate shuttle and how it is regulated",
+    "options": [
+      {
+        "text": "Citrate shuttle via citrate export",
+        "isCorrect": true,
+        "rationale": "Correct — acetyl-CoA condenses with oxaloacetate to form citrate, which is exported and cleaved by citrate lyase to yield cytosolic acetyl-CoA."
+      },
+      {
+        "text": "Malate-aspartate shuttle",
+        "isCorrect": false,
+        "rationale": "Wrong — this shuttle transfers reducing equivalents (NADH) not acetyl units; it would be correct if the question asked about NADH transfer."
+      },
+      {
+        "text": "Glycerol 3-phosphate shuttle",
+        "isCorrect": false,
+        "rationale": "Wrong — this shuttle moves electrons into mitochondria via glycerol 3-phosphate, not acetyl groups; it would be correct for cytosolic NADH reoxidation."
+      },
+      {
+        "text": "Carnitine shuttle for acyl groups",
+        "isCorrect": false,
+        "rationale": "Wrong — the carnitine system imports long-chain acyl-CoA into mitochondria for β-oxidation, not export of acetyl units; it would be correct if asking about mitochondrial import of fatty acyl-CoA."
+      },
+      {
+        "text": "Pyruvate-alanine cycle",
+        "isCorrect": false,
+        "rationale": "Wrong — this cycle exchanges amino groups and pyruvate between tissues, not acetyl export; it would be correct only if the stem asked about nitrogen transport."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme catalyzes the committed, rate-limiting cytosolic step that converts acetyl-CoA to malonyl-CoA?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the process of malonyl-CoA synthesis and any coenzymes needed",
+    "options": [
+      {
+        "text": "Acetyl-CoA carboxylase (biotin)",
+        "isCorrect": true,
+        "rationale": "Correct — ACC carboxylates acetyl-CoA to malonyl-CoA using biotin, ATP, and CO₂; this is the rate-limiting committed step."
+      },
+      {
+        "text": "Fatty acid synthase (NADPH)",
+        "isCorrect": false,
+        "rationale": "Wrong — FAS elongates acyl chains using malonyl-CoA and NADPH; it would be correct if the question asked about chain assembly rather than the committed carboxylation."
+      },
+      {
+        "text": "Citrate lyase (ATP)",
+        "isCorrect": false,
+        "rationale": "Wrong — citrate lyase cleaves citrate to acetyl-CoA and OAA in the cytosol; it would be correct if asking how cytosolic acetyl-CoA is generated from citrate."
+      },
+      {
+        "text": "Pyruvate carboxylase (biotin)",
+        "isCorrect": false,
+        "rationale": "Wrong — pyruvate carboxylase forms oxaloacetate in mitochondria using biotin; it would be correct for anaplerotic OAA formation, not malonyl-CoA synthesis."
+      },
+      {
+        "text": "Malic enzyme (NADP+)",
+        "isCorrect": false,
+        "rationale": "Wrong — malic enzyme converts malate to pyruvate producing NADPH; it would be correct if the question asked about a cytosolic NADPH source."
+      }
+    ]
+  },
+  {
+    "question": "Elevated insulin in the fed state affects enzymes to favor fatty acid synthesis. Which of the following actions does insulin directly promote that increases malonyl-CoA production?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the mechanisms of regulation of acetyl-CoA Carboxylase",
+    "options": [
+      {
+        "text": "Activation of a phosphatase dephosphorylating ACC",
+        "isCorrect": true,
+        "rationale": "Correct — insulin activates a phosphatase that dephosphorylates and activates acetyl-CoA carboxylase, increasing malonyl-CoA formation."
+      },
+      {
+        "text": "Activation of AMP-activated protein kinase",
+        "isCorrect": false,
+        "rationale": "Wrong — AMP-K phosphorylates and inactivates ACC; it would be correct only if cellular energy were low rather than insulin-high."
+      },
+      {
+        "text": "Stimulation of PKA phosphorylation of ACC",
+        "isCorrect": false,
+        "rationale": "Wrong — PKA phosphorylates and inactivates ACC in response to glucagon/epinephrine; it would be correct under catecholamine signaling."
+      },
+      {
+        "text": "Allosteric inhibition of ACC by citrate",
+        "isCorrect": false,
+        "rationale": "Wrong — citrate allosterically activates ACC, not inhibits it; this option would be correct if citrate were described as an activator."
+      },
+      {
+        "text": "Increased palmitoyl-CoA activation of ACC",
+        "isCorrect": false,
+        "rationale": "Wrong — palmitoyl-CoA allosterically inhibits ACC; this would be correct only if palmitate levels were low and the question asked about relief of inhibition."
+      }
+    ]
+  },
+  {
+    "question": "A researcher measures hepatic enzyme activity after a high-carbohydrate meal and finds increased citrate lyase activity. Which immediate cytosolic change best explains this finding's effect on fatty acid synthesis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the general process used to generate acetyl-CoA for Fatty acid synthesis",
+    "options": [
+      {
+        "text": "Increased cytosolic acetyl-CoA availability",
+        "isCorrect": true,
+        "rationale": "Correct — citrate lyase cleaves exported citrate into acetyl-CoA and OAA in the cytosol, raising acetyl-CoA for lipogenesis."
+      },
+      {
+        "text": "Elevated mitochondrial NADH levels",
+        "isCorrect": false,
+        "rationale": "Wrong — citrate lyase acts in the cytosol and does not directly change mitochondrial NADH; this would be correct if measuring mitochondrial redox state."
+      },
+      {
+        "text": "Enhanced carnitine-dependent import",
+        "isCorrect": false,
+        "rationale": "Wrong — carnitine import moves fatty acyl-CoA into mitochondria for oxidation, not related to citrate lyase increasing cytosolic acetyl-CoA."
+      },
+      {
+        "text": "Direct activation of fatty acid synthase",
+        "isCorrect": false,
+        "rationale": "Wrong — citrate lyase increases substrate availability but does not directly activate FAS; it would be correct if the enzyme were an allosteric activator of FAS."
+      },
+      {
+        "text": "Increased cytosolic oxaloacetate accumulation",
+        "isCorrect": false,
+        "rationale": "Wrong — citrate lyase produces OAA but OAA is rapidly converted to malate and pyruvate; persistent OAA accumulation would be unusual and not the main effect."
+      }
+    ]
+  },
+  {
+    "question": "Which cofactor provides reducing equivalents for the reduction steps during fatty acid chain elongation by fatty acid synthase?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List the steps of the fatty acid synthesis spiral and list any coenzymes needed",
+    "options": [
+      {
+        "text": "NADPH from pentose and malic enzyme",
+        "isCorrect": true,
+        "rationale": "Correct — NADPH supplies reducing power for the two reduction steps in each cycle; malic enzyme and pentose phosphate pathway generate cytosolic NADPH."
+      },
+      {
+        "text": "NADH from glycolysis",
+        "isCorrect": false,
+        "rationale": "Wrong — NADH is not the reducing cofactor used by FAS; it would be correct only if FAS used NADH, which it does not."
+      },
+      {
+        "text": "FADH2 from electron transport",
+        "isCorrect": false,
+        "rationale": "Wrong — FADH2 is not used by FAS reduction steps; it would be correct for some desaturase reactions but not core FAS reductions."
+      },
+      {
+        "text": "Coenzyme A thiol groups",
+        "isCorrect": false,
+        "rationale": "Wrong — CoA provides acyl carriers, not reducing equivalents; it would be correct if the question asked about acyl transfer rather than reduction."
+      },
+      {
+        "text": "Biotin-bound CO2",
+        "isCorrect": false,
+        "rationale": "Wrong — biotin supplies activated CO₂ for carboxylation by ACC, not reducing power for FAS; it would be correct for malonyl-CoA formation."
+      }
+    ]
+  },
+  {
+    "question": "A mutation reduces activity of acetyl-CoA carboxylase in liver. Which immediate metabolic consequence best follows?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the mechanisms of regulation of acetyl-CoA Carboxylase",
+    "options": [
+      {
+        "text": "Lower malonyl-CoA concentration",
+        "isCorrect": true,
+        "rationale": "Correct — ACC produces malonyl-CoA; reduced ACC activity decreases malonyl-CoA levels, reducing fatty acid synthesis and relieving CPT-I inhibition."
+      },
+      {
+        "text": "Increased inhibition of CPT-I",
+        "isCorrect": false,
+        "rationale": "Wrong — lower malonyl-CoA would relieve CPT-I inhibition, increasing fatty acid import into mitochondria; this option would be correct only if malonyl-CoA rose."
+      },
+      {
+        "text": "Elevated cytosolic citrate levels",
+        "isCorrect": false,
+        "rationale": "Wrong — decreased ACC activity would not directly raise citrate; citrate might accumulate if downstream utilization falls, but this is indirect."
+      },
+      {
+        "text": "Enhanced fatty acid synthase activity",
+        "isCorrect": false,
+        "rationale": "Wrong — FAS requires malonyl-CoA substrate; reduced ACC would decrease substrate and thus FAS flux, not enhance it."
+      },
+      {
+        "text": "Increased biotin consumption",
+        "isCorrect": false,
+        "rationale": "Wrong — ACC uses biotin; reduced ACC activity would lower biotin turnover, not increase it; this would be correct if ACC activity rose."
+      }
+    ]
+  },
+  {
+    "question": "Which structural component of fatty acid synthase resembles coenzyme A and carries growing acyl chains between active sites?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process of malonyl-CoA synthesis and any coenzymes needed",
+    "options": [
+      {
+        "text": "Acyl carrier protein with pantothenate",
+        "isCorrect": true,
+        "rationale": "Correct — ACP contains a pantothenic acid (vitamin B5) derived prosthetic group with a thiol that carries acyl intermediates, analogous to CoA."
+      },
+      {
+        "text": "Biotin prosthetic group",
+        "isCorrect": false,
+        "rationale": "Wrong — biotin is the CO₂ carrier for ACC, not the acyl carrier within FAS; it would be correct if asking about carboxylation enzymes."
+      },
+      {
+        "text": "Heme-containing cytochrome b5",
+        "isCorrect": false,
+        "rationale": "Wrong — cytochrome b5 participates in desaturase reactions, not as the acyl carrier in FAS; it would be correct for desaturation steps."
+      },
+      {
+        "text": "Thiolase active-site cysteine",
+        "isCorrect": false,
+        "rationale": "Wrong — the cysteine on KS accepts acyl groups transiently but the ACP is the mobile carrier; this would be correct only if asking about the KS active-site acceptor."
+      },
+      {
+        "text": "FAD prosthetic group",
+        "isCorrect": false,
+        "rationale": "Wrong — FAD is a redox cofactor for some enzymes but not the acyl carrier in FAS; it would be correct for certain dehydrogenases outside FAS."
+      }
+    ]
+  },
+  {
+    "question": "During each fatty acid synthase cycle, two carbons are added and one CO2 is lost. Which substrate provides the two-carbon donor for chain elongation?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List the steps of the fatty acid synthesis spiral and list any coenzymes needed",
+    "options": [
+      {
+        "text": "Malonyl-CoA as the two-carbon donor",
+        "isCorrect": true,
+        "rationale": "Correct — malonyl-CoA donates two carbons in the condensation step while releasing CO₂, driving the reaction forward."
+      },
+      {
+        "text": "Acetyl-CoA as the two-carbon donor",
+        "isCorrect": false,
+        "rationale": "Wrong — acetyl-CoA provides the initial primer acetyl group but malonyl-CoA supplies the two-carbon units for elongation; it would be correct only for initiation."
+      },
+      {
+        "text": "Citrate as the two-carbon donor",
+        "isCorrect": false,
+        "rationale": "Wrong — citrate transports acetyl units to the cytosol but is not the direct two-carbon donor in the condensation step; it would be correct for acetyl export."
+      },
+      {
+        "text": "Glycerol 3-phosphate as the donor",
+        "isCorrect": false,
+        "rationale": "Wrong — glycerol 3-phosphate is backbone for glycerolipids, not a carbon donor for FAS; it would be correct in triglyceride synthesis context."
+      },
+      {
+        "text": "Oxaloacetate as the donor",
+        "isCorrect": false,
+        "rationale": "Wrong — OAA condenses with acetyl-CoA to form citrate in mitochondria, but OAA is not the two-carbon donor for FAS; it would be correct only in TCA context."
+      }
+    ]
+  },
+  {
+    "question": "A patient with high circulating palmitate shows decreased activity of acetyl-CoA carboxylase. Which mechanism from the lecture explains this feedback?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the mechanisms of regulation of acetyl-CoA Carboxylase",
+    "options": [
+      {
+        "text": "Allosteric inhibition of ACC by palmitoyl-CoA",
+        "isCorrect": true,
+        "rationale": "Correct — elevated palmitoyl-CoA allosterically inhibits ACC, providing negative feedback to fatty acid synthesis."
+      },
+      {
+        "text": "PKA-mediated dephosphorylation of ACC",
+        "isCorrect": false,
+        "rationale": "Wrong — PKA phosphorylates and inactivates ACC; dephosphorylation activates ACC and is promoted by insulin, not PKA."
+      },
+      {
+        "text": "Insulin-stimulated ACC phosphorylation",
+        "isCorrect": false,
+        "rationale": "Wrong — insulin activates a phosphatase that dephosphorylates (activates) ACC; phosphorylation by insulin would be incorrect."
+      },
+      {
+        "text": "AMP-K activation by high ATP",
+        "isCorrect": false,
+        "rationale": "Wrong — AMP-K is activated by low energy (high AMP), phosphorylating and inhibiting ACC; high ATP would suppress AMP-K, not activate it."
+      },
+      {
+        "text": "Citrate allosteric inhibition of ACC",
+        "isCorrect": false,
+        "rationale": "Wrong — citrate allosterically activates ACC; this option would be correct only if citrate were low and the question asked about loss of activation."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme's inhibition prevents newly synthesized fatty acids from being immediately transported into mitochondria for β-oxidation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Malonyl-CoA and CPT-I",
+    "options": [
+      {
+        "text": "Carnitine palmitoyltransferase I inhibited by malonyl-CoA",
+        "isCorrect": true,
+        "rationale": "Correct — malonyl-CoA inhibits CPT-I, blocking carnitine addition and mitochondrial import of fatty acyl-CoA, preventing immediate oxidation."
+      },
+      {
+        "text": "Acyl-CoA dehydrogenase inhibited by malonyl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong — acyl-CoA dehydrogenase acts inside mitochondria in β-oxidation and is not directly inhibited by malonyl-CoA; it would be correct only if malonyl-CoA entered mitochondria and inhibited it."
+      },
+      {
+        "text": "Citrate lyase inhibited by malonyl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong — citrate lyase generates cytosolic acetyl-CoA and is not inhibited by malonyl-CoA; this would be correct only if malonyl-CoA regulated citrate cleavage."
+      },
+      {
+        "text": "Fatty acid synthase inhibited by malonyl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong — malonyl-CoA is the substrate for FAS and does not inhibit it; this would be correct only if malonyl-CoA were an inhibitor, which it is not."
+      },
+      {
+        "text": "Acetyl-CoA carboxylase inhibited by malonyl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong — ACC produces malonyl-CoA and is not inhibited by its product in the lecture; product inhibition by palmitoyl-CoA was described, not malonyl-CoA."
+      }
+    ]
+  },
+  {
+    "question": "Which enzymatic activity within the fatty acid synthase complex catalyzes the initial condensation between an acetyl and a malonyl group?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the steps of the fatty acid synthesis spiral and list any coenzymes needed",
+    "options": [
+      {
+        "text": "β-Ketoacyl-ACP synthase (condensing enzyme)",
+        "isCorrect": true,
+        "rationale": "Correct — KS (condensing enzyme) catalyzes the decarboxylative condensation of malonyl-ACP with the acetyl group to form a β-ketoacyl-ACP."
+      },
+      {
+        "text": "3-Ketoacyl-ACP reductase",
+        "isCorrect": false,
+        "rationale": "Wrong — KR reduces the β-keto group to a hydroxyl after condensation; it would be correct if the question asked about the first reduction step."
+      },
+      {
+        "text": "Enoyl-ACP reductase",
+        "isCorrect": false,
+        "rationale": "Wrong — ER reduces the enoyl intermediate later in the cycle; it would be correct for the final reduction step, not condensation."
+      },
+      {
+        "text": "Malonyl/acetyl-CoA-ACP transferase",
+        "isCorrect": false,
+        "rationale": "Wrong — MAT transfers malonyl and acetyl groups onto ACP but does not perform the condensation; it would be correct if asking about loading onto ACP."
+      },
+      {
+        "text": "3-Hydroxyacyl-ACP dehydratase",
+        "isCorrect": false,
+        "rationale": "Wrong — DH removes water to form the enoyl intermediate after reduction; it would be correct for the dehydration step."
+      }
+    ]
+  },
+  {
+    "question": "A lab assay shows decreased malic enzyme activity in adipose tissue. Which downstream effect on fatty acid synthesis is most likely?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the general process used to generate acetyl-CoA for Fatty acid synthesis",
+    "options": [
+      {
+        "text": "Reduced cytosolic NADPH supply",
+        "isCorrect": true,
+        "rationale": "Correct — malic enzyme converts malate to pyruvate producing NADPH, a key reducing equivalent for FAS; decreased activity lowers NADPH availability."
+      },
+      {
+        "text": "Increased malonyl-CoA production",
+        "isCorrect": false,
+        "rationale": "Wrong — reduced NADPH would limit FAS activity and not increase malonyl-CoA; malonyl-CoA is produced by ACC independent of malic enzyme NADPH generation."
+      },
+      {
+        "text": "Enhanced citrate export",
+        "isCorrect": false,
+        "rationale": "Wrong — malic enzyme reduction does not directly increase citrate export; citrate export is driven by mitochondrial acetyl-CoA and energy state."
+      },
+      {
+        "text": "Upregulated CPT-I inhibition",
+        "isCorrect": false,
+        "rationale": "Wrong — CPT-I is inhibited by malonyl-CoA; decreased NADPH would not increase malonyl-CoA and thus would not enhance CPT-I inhibition."
+      },
+      {
+        "text": "Increased glycerol 3-phosphate formation",
+        "isCorrect": false,
+        "rationale": "Wrong — glycerol 3-phosphate formation is separate (glycerol kinase or DHAP reduction) and not directly increased by lower malic enzyme activity."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best describes human fatty acyl desaturase limitations relevant to essential fatty acids?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why essential fatty acids must be obtained from the diet and when arachidonic acid becomes an essential fatty acid",
+    "options": [
+      {
+        "text": "Humans cannot introduce double bonds beyond carbon-9",
+        "isCorrect": true,
+        "rationale": "Correct — human desaturases cannot insert double bonds past carbon 9 (counting from carboxyl end), so ω-3 and ω-6 double bonds must be obtained from diet, making linoleate essential."
+      },
+      {
+        "text": "Humans lack any desaturase activity",
+        "isCorrect": false,
+        "rationale": "Wrong — humans have desaturases that introduce double bonds up to C9; complete lack would be incorrect and would make all unsaturated FAs essential."
+      },
+      {
+        "text": "Desaturases require NADP+ as oxidant",
+        "isCorrect": false,
+        "rationale": "Wrong — desaturases use molecular oxygen and NADH via cytochrome b5, not NADP+; this would be correct only if NADP+ were the electron acceptor."
+      },
+      {
+        "text": "Desaturation occurs only in mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong — desaturation occurs in the smooth endoplasmic reticulum; mitochondrial localization would be incorrect."
+      },
+      {
+        "text": "Arachidonic acid is synthesized de novo without diet",
+        "isCorrect": false,
+        "rationale": "Wrong — arachidonic acid can be synthesized from linoleate but becomes essential if dietary linoleate is deficient; de novo synthesis without precursor is incorrect."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a rare leptin receptor mutation reports severe hyperphagia and obesity. Which endocrine role of adipose tissue is disrupted?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the function of leptin and how it relates to the amount of adipose tissue",
+    "options": [
+      {
+        "text": "Leptin signaling that suppresses appetite",
+        "isCorrect": true,
+        "rationale": "Correct — adipocytes secrete leptin proportional to fat mass; leptin acts on the hypothalamus to decrease appetite and increase energy expenditure, so receptor loss causes hyperphagia."
+      },
+      {
+        "text": "Adiponectin-mediated insulin resistance",
+        "isCorrect": false,
+        "rationale": "Wrong — adiponectin improves insulin sensitivity and is not the primary satiety hormone; this would be correct only if adiponectin were disrupted."
+      },
+      {
+        "text": "Ghrelin secretion from adipocytes",
+        "isCorrect": false,
+        "rationale": "Wrong — ghrelin is produced by the stomach and stimulates appetite; attributing it to adipocytes is incorrect."
+      },
+      {
+        "text": "Increased pancreatic insulin secretion",
+        "isCorrect": false,
+        "rationale": "Wrong — leptin acts centrally on appetite and energy expenditure; increased insulin secretion is not the direct disrupted endocrine function in leptin receptor mutation."
+      },
+      {
+        "text": "Reduced CCK release from adipose",
+        "isCorrect": false,
+        "rationale": "Wrong — CCK is released from the intestine and signals satiety; adipose does not secrete CCK, so this option is incorrect."
+      }
+    ]
+  },
+  {
+    "question": "Which sequence correctly lists the four recurring enzymatic steps of the fatty acid synthase assembly cycle?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List the steps of the fatty acid synthesis spiral and list any coenzymes needed",
+    "options": [
+      {
+        "text": "Condensation, reduction, dehydration, reduction",
+        "isCorrect": true,
+        "rationale": "Correct — each cycle: condensation (KS), reduction (KR, NADPH), dehydration (DH), and reduction (ER, NADPH) to extend the chain by two carbons."
+      },
+      {
+        "text": "Reduction, condensation, reduction, dehydration",
+        "isCorrect": false,
+        "rationale": "Wrong — order is incorrect; condensation must precede the first reduction for proper β-ketoacyl formation."
+      },
+      {
+        "text": "Dehydration, reduction, condensation, reduction",
+        "isCorrect": false,
+        "rationale": "Wrong — dehydration occurs after the first reduction; this sequence misorders steps and would not produce the correct intermediates."
+      },
+      {
+        "text": "Condensation, dehydration, reduction, reduction",
+        "isCorrect": false,
+        "rationale": "Wrong — dehydration follows the first reduction, not immediately after condensation; the first reduction step is missing in this sequence."
+      },
+      {
+        "text": "Reduction, dehydration, condensation, reduction",
+        "isCorrect": false,
+        "rationale": "Wrong — condensation must initiate the cycle; starting with reduction is inconsistent with the mechanism and would be correct only if the primer were already a keto group."
+      }
+    ]
+  },
+  {
+    "question": "A patient takes aspirin regularly. Which eicosanoid pathway is directly inhibited by aspirin and reduces thromboxane production?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the basic functions of prostaglandins, thromboxane, and leukotrienes and the enzymes used to form these from arachidonic acid",
+    "options": [
+      {
+        "text": "Cyclooxygenase pathway producing PGH2",
+        "isCorrect": true,
+        "rationale": "Correct — aspirin irreversibly inhibits cyclooxygenase, blocking conversion of arachidonic acid to PGG2/PGH2 and downstream thromboxane TXA2 synthesis."
+      },
+      {
+        "text": "Lipoxygenase pathway producing LTA4",
+        "isCorrect": false,
+        "rationale": "Wrong — lipoxygenase produces leukotrienes; aspirin targets COX, not lipoxygenase, so leukotriene synthesis is not directly inhibited."
+      },
+      {
+        "text": "P450 epoxygenase producing epoxides",
+        "isCorrect": false,
+        "rationale": "Wrong — cytochrome P450 epoxygenase forms epoxides from arachidonic acid and is not the target of aspirin; inhibition here would not explain reduced TXA2."
+      },
+      {
+        "text": "Phospholipase A2 releasing arachidonate",
+        "isCorrect": false,
+        "rationale": "Wrong — PLA2 liberates arachidonic acid from membranes; aspirin inhibits COX downstream, not PLA2, so this option is incorrect."
+      },
+      {
+        "text": "Thromboxane synthase directly inhibited by aspirin",
+        "isCorrect": false,
+        "rationale": "Wrong — aspirin inhibits COX upstream; thromboxane synthase converts PGH2 to TXA2 but is not the direct aspirin target."
+      }
+    ]
+  },
+  {
+    "question": "Which lipid intermediate is the immediate precursor for both triglyceride and phospholipid synthesis?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the synthesis of phosphatidic acid, triglycerides and phospholipids",
+    "options": [
+      {
+        "text": "Phosphatidic acid (diacylglycerol precursor)",
+        "isCorrect": true,
+        "rationale": "Correct — phosphatidic acid is formed by acylation of glycerol-3-phosphate and is dephosphorylated to DAG, the precursor for triglycerides and many phospholipids."
+      },
+      {
+        "text": "Glycerol 3-phosphate directly",
+        "isCorrect": false,
+        "rationale": "Wrong — G3P is the backbone starting molecule but must be acylated to phosphatidic acid before DAG and triglyceride formation; it would be correct only as an upstream precursor."
+      },
+      {
+        "text": "Free glycerol released from adipose",
+        "isCorrect": false,
+        "rationale": "Wrong — free glycerol can be phosphorylated in liver to G3P, but it is not the immediate diacylglycerol precursor used for triglyceride assembly."
+      },
+      {
+        "text": "CDP-diacylglycerol",
+        "isCorrect": false,
+        "rationale": "Wrong — CDP-DAG is an activated intermediate for some phospholipids but not the universal immediate precursor for triglycerides; DAG is the common branch point."
+      },
+      {
+        "text": "Triacylglycerol stored in VLDL",
+        "isCorrect": false,
+        "rationale": "Wrong — triacylglycerol is the final storage form, not a precursor; it would be correct only if asking about secreted lipid form."
+      }
+    ]
+  },
+  {
+    "question": "A researcher blocks glycerol kinase in hepatocytes. Which pathway for glycerol 3-phosphate formation will be impaired and which tissue can still form G3P via DHAP reduction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the synthesis of phosphatidic acid, triglycerides and phospholipids",
+    "options": [
+      {
+        "text": "Glycerol phosphorylation impaired; adipose uses DHAP reduction",
+        "isCorrect": true,
+        "rationale": "Correct — liver uses glycerol kinase to phosphorylate glycerol; adipose lacks glycerol kinase and forms G3P by reducing DHAP via glycerol-3-phosphate dehydrogenase."
+      },
+      {
+        "text": "DHAP reduction impaired; liver uses DHAP reduction",
+        "isCorrect": false,
+        "rationale": "Wrong — liver primarily uses glycerol kinase; stating DHAP reduction impairment and liver usage is inconsistent with tissue-specific pathways."
+      },
+      {
+        "text": "Glycerol phosphorylation impaired; muscle uses glycerol kinase",
+        "isCorrect": false,
+        "rationale": "Wrong — muscle does not significantly phosphorylate glycerol; liver is the main site of glycerol kinase activity, so muscle is not the compensatory tissue."
+      },
+      {
+        "text": "CDP-DAG formation impaired; adipose uses CDP-DAG",
+        "isCorrect": false,
+        "rationale": "Wrong — CDP-DAG is an activated phospholipid intermediate unrelated to glycerol kinase; adipose uses DHAP reduction, not CDP-DAG, to form G3P."
+      },
+      {
+        "text": "Glycerol phosphorylation impaired; brain uses DHAP reduction",
+        "isCorrect": false,
+        "rationale": "Wrong — brain glycerol metabolism is limited; adipose is the primary tissue that reduces DHAP to G3P, not brain."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme family produces leukotrienes from arachidonic acid and is distinct from cyclooxygenase?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the basic functions of prostaglandins, thromboxane, and leukotrienes and the enzymes used to form these from arachidonic acid",
+    "options": [
+      {
+        "text": "Lipoxygenases generating leukotriene intermediates",
+        "isCorrect": true,
+        "rationale": "Correct — lipoxygenase enzymes convert arachidonic acid into leukotriene precursors (e.g., LTA4) via the lipoxygenase pathway, distinct from COX."
+      },
+      {
+        "text": "Cytochrome P450 epoxygenases",
+        "isCorrect": false,
+        "rationale": "Wrong — P450 enzymes form epoxides from arachidonic acid, not leukotrienes; they are a separate pathway from lipoxygenase."
+      },
+      {
+        "text": "Phospholipase C producing DAG",
+        "isCorrect": false,
+        "rationale": "Wrong — PLC cleaves membrane phospholipids to release DAG and IP3, not directly producing leukotrienes; PLA2 releases arachidonic acid upstream."
+      },
+      {
+        "text": "Cyclooxygenases producing prostacyclin",
+        "isCorrect": false,
+        "rationale": "Wrong — COX enzymes produce prostaglandins and thromboxanes, not leukotrienes; this would be correct for PG/TX synthesis."
+      },
+      {
+        "text": "Thromboxane synthases producing TXA2",
+        "isCorrect": false,
+        "rationale": "Wrong — TX synthase converts PGH2 to TXA2 downstream of COX, not part of leukotriene biosynthesis; it would be correct only for thromboxane formation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with low dietary linoleate develops signs of essential fatty acid deficiency. Which fatty acid becomes essential under this dietary deficiency?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why essential fatty acids must be obtained from the diet and when arachidonic acid becomes an essential fatty acid",
+    "options": [
+      {
+        "text": "Arachidonic acid becomes essential without linoleate",
+        "isCorrect": true,
+        "rationale": "Correct — arachidonic acid is normally synthesized from dietary linoleate (ω-6); if linoleate is deficient, arachidonate becomes essential and must be obtained from diet."
+      },
+      {
+        "text": "Oleic acid becomes essential without linoleate",
+        "isCorrect": false,
+        "rationale": "Wrong — oleic acid (monounsaturated) can be synthesized de novo and is not made essential by linoleate deficiency; this would be correct only if desaturases were absent."
+      },
+      {
+        "text": "Palmitic acid becomes essential without linoleate",
+        "isCorrect": false,
+        "rationale": "Wrong — palmitate is synthesized de novo by FAS and is not essential; linoleate deficiency does not make palmitate essential."
+      },
+      {
+        "text": "Linolenic acid becomes essential without linoleate",
+        "isCorrect": false,
+        "rationale": "Wrong — α-linolenic acid (ω-3) is a separate essential fatty acid; deficiency of linoleate does not make linolenate essential beyond its own dietary requirement."
+      },
+      {
+        "text": "Stearic acid becomes essential without linoleate",
+        "isCorrect": false,
+        "rationale": "Wrong — stearate is synthesized from palmitate and is not rendered essential by linoleate deficiency; this would be correct only if elongation were impossible."
+      }
+    ]
+  },
+  {
+    "question": "Which cellular location hosts elongation of palmitate to longer fatty acids and desaturation reactions in humans?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe briefly the processes of fatty acid elongation and desaturation",
+    "options": [
+      {
+        "text": "Smooth endoplasmic reticulum for elongation and desaturation",
+        "isCorrect": true,
+        "rationale": "Correct — elongation beyond C16 and desaturation occur in the smooth ER using ER-associated enzymes and cytochrome b5-dependent desaturases."
+      },
+      {
+        "text": "Mitochondrial matrix for elongation and desaturation",
+        "isCorrect": false,
+        "rationale": "Wrong — mitochondrial β-oxidation shortens fatty acids; elongation and desaturation for longer-chain synthesis occur in the ER, not mitochondrial matrix."
+      },
+      {
+        "text": "Cytosolic fatty acid synthase complex",
+        "isCorrect": false,
+        "rationale": "Wrong — cytosolic FAS synthesizes palmitate de novo but further elongation and desaturation occur in the ER; this would be correct only for initial C16 synthesis."
+      },
+      {
+        "text": "Peroxisomal lumen for desaturation",
+        "isCorrect": false,
+        "rationale": "Wrong — peroxisomes perform very-long-chain fatty acid oxidation and some elongation, but desaturation to introduce double bonds is primarily ER-localized; this would be correct only for specific peroxisomal pathways."
+      },
+      {
+        "text": "Golgi apparatus for elongation and desaturation",
+        "isCorrect": false,
+        "rationale": "Wrong — Golgi modifies lipids but is not the main site of fatty acid elongation/desaturation; ER is the correct organelle."
+      }
+    ]
+  },
+  {
+    "question": "A patient with uncontrolled diabetes has increased hepatic ketogenesis and decreased fatty acid synthesis. Which hormonal change best explains this shift?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Endocrine Regulation of FA Synthesis and ß-oxidation",
+    "options": [
+      {
+        "text": "Low insulin to glucagon ratio increasing PKA activity",
+        "isCorrect": true,
+        "rationale": "Correct — low insulin/high glucagon activates PKA, which phosphorylates and inhibits ACC, decreasing malonyl-CoA and promoting CPT-I activity and β-oxidation/ketogenesis."
+      },
+      {
+        "text": "High insulin activating acetyl-CoA carboxylase",
+        "isCorrect": false,
+        "rationale": "Wrong — high insulin activates ACC and promotes lipogenesis; this would be correct in the fed state, not uncontrolled diabetes."
+      },
+      {
+        "text": "Increased leptin signaling suppressing appetite",
+        "isCorrect": false,
+        "rationale": "Wrong — leptin affects appetite and energy expenditure but is not the primary driver of hepatic shift to ketogenesis; this would be correct only if central appetite regulation were the cause."
+      },
+      {
+        "text": "Elevated epinephrine decreasing PKA activity",
+        "isCorrect": false,
+        "rationale": "Wrong — epinephrine increases PKA activity, not decreases it; decreased PKA would not explain increased ketogenesis."
+      },
+      {
+        "text": "AMP-K inhibition by low AMP levels",
+        "isCorrect": false,
+        "rationale": "Wrong — AMP-K activation (not inhibition) phosphorylates and inhibits ACC during low energy; inhibition of AMP-K would not promote β-oxidation in diabetes."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a defect in fatty acid synthase cannot produce palmitate. Which immediate lipid synthetic step will still proceed in hepatocytes despite this defect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Overview of Fatty Acid Synthesis",
+    "options": [
+      {
+        "text": "Glycerol 3-phosphate acylation to phosphatidic acid",
+        "isCorrect": true,
+        "rationale": "Correct — phosphatidic acid formation requires acylation of glycerol-3-phosphate using available fatty acyl-CoA; if exogenous fatty acids or dietary fatty acyl-CoA are present, phosphatidic acid synthesis can proceed despite defective de novo palmitate synthesis."
+      },
+      {
+        "text": "De novo malonyl-CoA formation by ACC",
+        "isCorrect": false,
+        "rationale": "Wrong — ACC could still form malonyl-CoA, but without FAS to use it, downstream palmitate synthesis fails; this would be correct only if asking about ACC activity specifically."
+      },
+      {
+        "text": "Desaturation of palmitate to palmitoleate",
+        "isCorrect": false,
+        "rationale": "Wrong — desaturation requires palmitate substrate; if FAS cannot produce palmitate and no exogenous palmitate is available, desaturation cannot proceed."
+      },
+      {
+        "text": "Elongation of palmitate to stearate",
+        "isCorrect": false,
+        "rationale": "Wrong — elongation requires palmitate substrate; without palmitate, elongation cannot occur unless dietary palmitate is supplied."
+      },
+      {
+        "text": "Citrate export from mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong — citrate export may continue, but without FAS the exported acetyl-CoA cannot be incorporated into palmitate; this option would be correct only for acetyl transport, not lipid assembly."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic glucocorticoid therapy has suppressed phospholipase A2 activity. Which eicosanoid pathway consequence is expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Prostaglandins and Inflammatory Response",
+    "options": [
+      {
+        "text": "Reduced arachidonic acid release and eicosanoid synthesis",
+        "isCorrect": true,
+        "rationale": "Correct — glucocorticoids inhibit PLA2, decreasing release of arachidonic acid from membrane phospholipids and thereby reducing prostaglandin, thromboxane, and leukotriene production."
+      },
+      {
+        "text": "Increased leukotriene production via lipoxygenase",
+        "isCorrect": false,
+        "rationale": "Wrong — reduced arachidonate availability lowers leukotriene synthesis; increased leukotrienes would occur only if PLA2 activity rose or substrate availability increased."
+      },
+      {
+        "text": "Selective inhibition of cyclooxygenase only",
+        "isCorrect": false,
+        "rationale": "Wrong — glucocorticoids act upstream at PLA2, not selectively on COX; selective COX inhibition would be seen with NSAIDs like aspirin."
+      },
+      {
+        "text": "Enhanced thromboxane-mediated platelet aggregation",
+        "isCorrect": false,
+        "rationale": "Wrong — decreased arachidonic acid reduces TXA2 synthesis and would lower platelet aggregation, not enhance it; enhancement would require increased COX/TX synthase activity."
+      },
+      {
+        "text": "Increased phosphatidic acid synthesis",
+        "isCorrect": false,
+        "rationale": "Wrong — PLA2 inhibition affects arachidonate release, not glycerolipid acylation to phosphatidic acid; this would be correct only if glycerolipid pathways were upregulated independently."
+      }
+    ]
+  },
+  {
+    "question": "A lab finds that hepatic ACC is phosphorylated and inactive while citrate levels are high. Which additional signal from the lecture would most likely explain ACC phosphorylation despite citrate presence?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Citrate Shuttle Regulation",
+    "options": [
+      {
+        "text": "Activation of AMP-activated protein kinase by low energy",
+        "isCorrect": true,
+        "rationale": "Correct — AMP-K phosphorylates and inactivates ACC during low energy states; high citrate allosterically activates ACC but phosphorylation by AMP-K overrides this activation, explaining inactive ACC despite citrate."
+      },
+      {
+        "text": "Insulin-stimulated phosphatase activation",
+        "isCorrect": false,
+        "rationale": "Wrong — insulin activates a phosphatase that dephosphorylates and activates ACC; this would not explain ACC phosphorylation and inactivity."
+      },
+      {
+        "text": "Elevated palmitoyl-CoA causing ACC dephosphorylation",
+        "isCorrect": false,
+        "rationale": "Wrong — palmitoyl-CoA allosterically inhibits ACC but does not cause dephosphorylation; dephosphorylation is insulin-mediated, not palmitoyl-CoA–mediated."
+      },
+      {
+        "text": "PKA inhibition due to low glucagon",
+        "isCorrect": false,
+        "rationale": "Wrong — PKA phosphorylates ACC in response to glucagon/epinephrine; PKA inhibition would favor dephosphorylation, not phosphorylation."
+      },
+      {
+        "text": "Increased citrate lyase phosphorylation",
+        "isCorrect": false,
+        "rationale": "Wrong — citrate lyase phosphorylation status does not directly determine ACC phosphorylation; this would be correct only if citrate lyase activity altered signaling to ACC, which is not described."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a genetic defect in ACP pantetheine attachment cannot synthesize functional ACP. Which specific step of fatty acid synthase activity will be directly impaired?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Fatty Acid Synthase",
+    "options": [
+      {
+        "text": "Transfer of malonyl group onto ACP",
+        "isCorrect": true,
+        "rationale": "Correct — ACP carries malonyl and acetyl groups via its pantetheine thiol; without functional ACP, loading of malonyl onto ACP (by MAT) and subsequent condensation cannot occur."
+      },
+      {
+        "text": "Biotin-dependent carboxylation of acetyl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong — biotin-dependent ACC carboxylation occurs before ACP involvement; ACP defect would not directly impair ACC's carboxylation step."
+      },
+      {
+        "text": "Citrate export from mitochondria",
+        "isCorrect": false,
+        "rationale": "Wrong — citrate shuttle operates upstream to provide acetyl-CoA; ACP defect affects FAS assembly, not citrate export."
+      },
+      {
+        "text": "Malic enzyme NADPH production",
+        "isCorrect": false,
+        "rationale": "Wrong — malic enzyme generates NADPH for reductions but is independent of ACP function; impairment of ACP would not directly reduce malic enzyme activity."
+      },
+      {
+        "text": "Desaturation by fatty acyl desaturase",
+        "isCorrect": false,
+        "rationale": "Wrong — desaturases act on longer acyl-CoA in ER and require cytochrome b5; ACP defect in cytosolic FAS would not directly block ER desaturation if exogenous acyl-CoA were available."
+      }
+    ]
+  },
+  {
+    "question": "Which molecule allosterically activates acetyl-CoA carboxylase and signals abundant substrate for lipogenesis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Citrate Shuttle Regulation",
+    "options": [
+      {
+        "text": "Citrate accumulation in the cytosol",
+        "isCorrect": true,
+        "rationale": "Correct — high cytosolic citrate indicates abundant acetyl-CoA and energy, allosterically activating ACC to promote malonyl-CoA formation and lipogenesis."
+      },
+      {
+        "text": "Palmitoyl-CoA accumulation",
+        "isCorrect": false,
+        "rationale": "Wrong — palmitoyl-CoA allosterically inhibits ACC as negative feedback; it would be correct only if the question asked about inhibition."
+      },
+      {
+        "text": "High AMP levels",
+        "isCorrect": false,
+        "rationale": "Wrong — high AMP activates AMP-K, which phosphorylates and inhibits ACC; AMP is not an activator of ACC."
+      },
+      {
+        "text": "Glucagon-stimulated PKA",
+        "isCorrect": false,
+        "rationale": "Wrong — PKA phosphorylates and inactivates ACC in response to glucagon; it does not activate ACC."
+      },
+      {
+        "text": "Low cytosolic ATP concentration",
+        "isCorrect": false,
+        "rationale": "Wrong — low ATP signals low energy and would inhibit lipogenesis via AMP-K activation; it would not activate ACC."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme transfers the growing acyl chain from ACP to the active-site cysteine on the adjacent FAS subunit during the cycle?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Fatty Acid Synthase",
+    "options": [
+      {
+        "text": "Translocation to β-ketoacyl-ACP synthase (KS) cysteine",
+        "isCorrect": true,
+        "rationale": "Correct — after reduction steps the acyl group is transferred from ACP to the cysteine residue on KS to position it for the next condensation cycle."
+      },
+      {
+        "text": "Malonyl/acetyl-CoA-ACP transferase (MAT) action",
+        "isCorrect": false,
+        "rationale": "Wrong — MAT loads malonyl and acetyl groups onto ACP but does not perform the translocation to KS cysteine; it would be correct for loading steps."
+      },
+      {
+        "text": "Enoyl-ACP reductase-mediated transfer",
+        "isCorrect": false,
+        "rationale": "Wrong — ER reduces the enoyl intermediate but does not transfer acyl groups to KS; this would be correct only for the reduction step."
+      },
+      {
+        "text": "3-Ketoacyl-ACP reductase-mediated transfer",
+        "isCorrect": false,
+        "rationale": "Wrong — KR reduces the β-keto group and does not catalyze acyl translocation; it would be correct if the question asked about the reduction step."
+      },
+      {
+        "text": "ACP auto-cleavage and spontaneous transfer",
+        "isCorrect": false,
+        "rationale": "Wrong — transfer is enzyme-mediated (to KS cysteine), not spontaneous auto-cleavage; spontaneous transfer would be biochemically implausible."
+      }
+    ]
+  },
+  {
+    "question": "A patient with high circulating malonyl-CoA would be expected to have which change in mitochondrial fatty acid handling?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Malonyl-CoA and CPT-I",
+    "options": [
+      {
+        "text": "Decreased mitochondrial import of long-chain acyl-CoA",
+        "isCorrect": true,
+        "rationale": "Correct — malonyl-CoA inhibits CPT-I, reducing carnitine-mediated import of fatty acyl-CoA into mitochondria and decreasing β-oxidation."
+      },
+      {
+        "text": "Increased β-oxidation due to CPT-II activation",
+        "isCorrect": false,
+        "rationale": "Wrong — CPT-II acts inside mitochondria and is not activated by malonyl-CoA; increased β-oxidation would occur if malonyl-CoA were low."
+      },
+      {
+        "text": "Enhanced acyl-carnitine formation",
+        "isCorrect": false,
+        "rationale": "Wrong — malonyl-CoA inhibits CPT-I and thus reduces acyl-carnitine formation; enhancement would require decreased malonyl-CoA."
+      },
+      {
+        "text": "Unchanged mitochondrial import because CPT-I is cytosolic",
+        "isCorrect": false,
+        "rationale": "Wrong — CPT-I is on the outer mitochondrial membrane and is inhibited by malonyl-CoA; stating it is cytosolic is incorrect."
+      },
+      {
+        "text": "Increased peroxisomal β-oxidation compensating",
+        "isCorrect": false,
+        "rationale": "Wrong — peroxisomal oxidation may handle very-long-chain fatty acids but is not the immediate compensatory response to elevated malonyl-CoA; this would be correct only in specific VLCFA overload contexts."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best explains why fatty acids store more energy per gram than carbohydrates or proteins, as noted in the lecture overview?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Overview of Fatty Acid Synthesis",
+    "options": [
+      {
+        "text": "Higher reduced carbon content yields more kcal per gram",
+        "isCorrect": true,
+        "rationale": "Correct — fatty acids are more reduced and anhydrous, providing more oxidizable carbon per gram and thus higher energy density compared with carbohydrates or proteins."
+      },
+      {
+        "text": "Fatty acids contain more oxygen atoms",
+        "isCorrect": false,
+        "rationale": "Wrong — fatty acids are relatively oxygen-poor compared with carbohydrates; more oxygen would lower energy yield per carbon, so this is incorrect."
+      },
+      {
+        "text": "Proteins are stored with water increasing weight",
+        "isCorrect": false,
+        "rationale": "Wrong — while proteins bind water, the primary reason fats store more energy is their chemical reduction state, not water content alone; this would be partially true but not the main biochemical explanation."
+      },
+      {
+        "text": "Carbohydrates are polymerized and inaccessible",
+        "isCorrect": false,
+        "rationale": "Wrong — carbohydrates are readily metabolized; their lower energy density is due to oxidation state, not polymerization accessibility."
+      },
+      {
+        "text": "Fatty acids require less ATP to synthesize",
+        "isCorrect": false,
+        "rationale": "Wrong — synthesis cost does not explain storage energy density; fatty acids actually require ATP and NADPH to synthesize, so this option is incorrect."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme converts membrane phospholipid–esterified arachidonic acid into free arachidonate for eicosanoid synthesis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Eicosanoids",
+    "options": [
+      {
+        "text": "Phospholipase A2 releasing arachidonic acid",
+        "isCorrect": true,
+        "rationale": "Correct — PLA2 cleaves the sn-2 position of membrane phospholipids to liberate arachidonic acid for downstream COX and LOX pathways."
+      },
+      {
+        "text": "Phospholipase C producing DAG",
+        "isCorrect": false,
+        "rationale": "Wrong — PLC cleaves to produce DAG and IP3; DAG can be further processed but PLC does not directly release free arachidonate from phospholipids."
+      },
+      {
+        "text": "Cyclooxygenase converting arachidonate to PGG2",
+        "isCorrect": false,
+        "rationale": "Wrong — COX acts on free arachidonic acid to form PGG2 but does not release arachidonate from membranes; PLA2 is required upstream."
+      },
+      {
+        "text": "Lipoxygenase forming LTA4",
+        "isCorrect": false,
+        "rationale": "Wrong — LOX converts free arachidonic acid to leukotriene precursors but does not liberate arachidonate from phospholipids."
+      },
+      {
+        "text": "Thromboxane synthase producing TXA2",
+        "isCorrect": false,
+        "rationale": "Wrong — TX synthase converts PGH2 to TXA2 downstream of COX and does not release arachidonic acid from membranes."
+      }
+    ]
+  },
+  {
+    "question": "A patient with obesity has high leptin levels but continues to overeat. Which lecture-described phenomenon best accounts for this clinical picture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Endocrine Function of Adipose Tissue",
+    "options": [
+      {
+        "text": "Leptin resistance blunting hypothalamic satiety signaling",
+        "isCorrect": true,
+        "rationale": "Correct — obesity is often associated with leptin resistance, where high leptin fails to elicit hypothalamic satiety responses, leading to continued hyperphagia despite elevated leptin."
+      },
+      {
+        "text": "Primary leptin deficiency causing low leptin",
+        "isCorrect": false,
+        "rationale": "Wrong — primary leptin deficiency causes low leptin and severe obesity; this patient has high leptin, so deficiency is not the cause."
+      },
+      {
+        "text": "Excess ghrelin secretion from adipose tissue",
+        "isCorrect": false,
+        "rationale": "Wrong — ghrelin is secreted by the stomach and stimulates appetite; adipose does not secrete ghrelin, so this is not the lecture-described mechanism."
+      },
+      {
+        "text": "Increased CCK release causing overeating",
+        "isCorrect": false,
+        "rationale": "Wrong — CCK promotes satiety; increased CCK would reduce, not increase, food intake, so this option contradicts the clinical picture."
+      },
+      {
+        "text": "Enhanced leptin receptor sensitivity",
+        "isCorrect": false,
+        "rationale": "Wrong — enhanced receptor sensitivity would reduce appetite, not cause overeating; the correct mechanism is resistance, not increased sensitivity."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme in the fatty acid synthase complex catalyzes the final reduction of the enoyl intermediate to a saturated acyl-ACP using NADPH?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Fatty Acid Synthase",
+    "options": [
+      {
+        "text": "Enoyl-ACP reductase using NADPH",
+        "isCorrect": true,
+        "rationale": "Correct — enoyl-ACP reductase (ER) reduces the trans-2-enoyl-ACP to saturated acyl-ACP using NADPH as the reducing agent."
+      },
+      {
+        "text": "3-Ketoacyl-ACP reductase using NADH",
+        "isCorrect": false,
+        "rationale": "Wrong — KR reduces the β-keto group using NADPH, not NADH, and acts earlier in the cycle; stating NADH is incorrect."
+      },
+      {
+        "text": "β-Ketoacyl-ACP synthase performing reduction",
+        "isCorrect": false,
+        "rationale": "Wrong — KS catalyzes condensation, not reduction; it would be correct only for the condensation step."
+      },
+      {
+        "text": "3-Hydroxyacyl-ACP dehydratase performing reduction",
+        "isCorrect": false,
+        "rationale": "Wrong — DH catalyzes dehydration, not reduction; it would be correct only for the dehydration step."
+      },
+      {
+        "text": "Malonyl/acetyl-CoA-ACP transferase performing reduction",
+        "isCorrect": false,
+        "rationale": "Wrong — MAT transfers acyl groups onto ACP and does not catalyze reductions; this would be correct for loading steps, not reduction."
+      }
+    ]
+  },
+  {
+    "question": "Which metabolic effect would you expect in adipose tissue when insulin inhibits hormone-sensitive lipase (HSL)?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Endocrine Regulation of FA Synthesis and ß-oxidation",
+    "options": [
+      {
+        "text": "Decreased fatty acid mobilization from triglycerides",
+        "isCorrect": true,
+        "rationale": "Correct — insulin inhibits HSL, reducing lipolysis and release of free fatty acids from adipose triglyceride stores."
+      },
+      {
+        "text": "Increased triglyceride hydrolysis",
+        "isCorrect": false,
+        "rationale": "Wrong — inhibition of HSL decreases hydrolysis; increased hydrolysis would occur with HSL activation by catecholamines."
+      },
+      {
+        "text": "Enhanced CPT-I activity in adipose",
+        "isCorrect": false,
+        "rationale": "Wrong — insulin increases malonyl-CoA which inhibits CPT-I, decreasing mitochondrial fatty acid import; enhanced CPT-I would occur when malonyl-CoA is low."
+      },
+      {
+        "text": "Upregulated lipoprotein lipase-mediated uptake",
+        "isCorrect": false,
+        "rationale": "Wrong — insulin stimulates LPL in adipose to promote uptake of circulating TG-derived fatty acids, but the question asked specifically about HSL inhibition effects; LPL upregulation is related but not the immediate effect of HSL inhibition."
+      },
+      {
+        "text": "Increased β-oxidation within adipocytes",
+        "isCorrect": false,
+        "rationale": "Wrong — insulin suppresses β-oxidation by promoting malonyl-CoA formation and inhibiting CPT-I; increased β-oxidation would occur under fasting/catecholamine signaling."
+      }
+    ]
+  },
+  {
+    "question": "Which activated nucleotide is used to form CDP-activated headgroups during phospholipid synthesis from diacylglycerol or phosphatidic acid?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Phospholipids",
+    "options": [
+      {
+        "text": "Cytidine triphosphate (CTP) activates headgroups",
+        "isCorrect": true,
+        "rationale": "Correct — CTP activates either the headgroup or diacylglycerol (forming CDP-headgroup or CDP-DAG) enabling transfer to form glycerophospholipids."
+      },
+      {
+        "text": "Adenosine triphosphate (ATP) activates headgroups",
+        "isCorrect": false,
+        "rationale": "Wrong — ATP provides energy but the specific activating nucleotide for phospholipid headgroups is CTP; ATP alone would not form CDP-activated intermediates."
+      },
+      {
+        "text": "Uridine diphosphate (UDP) activates headgroups",
+        "isCorrect": false,
+        "rationale": "Wrong — UDP activates sugars in glycosylation reactions, not phospholipid headgroups; CTP is the correct nucleotide for CDP intermediates."
+      },
+      {
+        "text": "Guanosine triphosphate (GTP) activates headgroups",
+        "isCorrect": false,
+        "rationale": "Wrong — GTP is not used to form CDP-headgroups in phospholipid synthesis; CTP is required for CDP activation."
+      },
+      {
+        "text": "Nicotinamide adenine dinucleotide phosphate (NADP+)",
+        "isCorrect": false,
+        "rationale": "Wrong — NADP+ is a redox cofactor, not a nucleotide used to activate headgroups for phospholipid assembly; this would be correct only for reduction reactions."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the fate of phosphatidic acid in triglyceride synthesis in adipose tissue?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Triglycerides",
+    "options": [
+      {
+        "text": "Dephosphorylated to diacylglycerol then acylated to triacylglycerol",
+        "isCorrect": true,
+        "rationale": "Correct — phosphatidic acid is dephosphorylated to DAG, which is then acylated with a third fatty acyl-CoA to form triacylglycerol for storage."
+      },
+      {
+        "text": "Converted directly to CDP-diacylglycerol for triglycerides",
+        "isCorrect": false,
+        "rationale": "Wrong — CDP-DAG is an activated intermediate for some phospholipids, not the direct route to triglycerides; triglyceride synthesis proceeds via DAG."
+      },
+      {
+        "text": "Oxidized to acetyl-CoA for β-oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong — phosphatidic acid is a glycerolipid intermediate, not oxidized for energy; oxidation to acetyl-CoA would require lipolysis and β-oxidation of fatty acids."
+      },
+      {
+        "text": "Used to synthesize cholesterol esters",
+        "isCorrect": false,
+        "rationale": "Wrong — cholesterol esterification uses acyl-CoA and cholesterol, not phosphatidic acid directly; this option confuses pathways."
+      },
+      {
+        "text": "Exported unchanged in VLDL particles",
+        "isCorrect": false,
+        "rationale": "Wrong — triglycerides (not phosphatidic acid) are packaged into VLDL for export from liver; phosphatidic acid is converted to DAG and TAG first."
+      }
+    ]
+  }
+]
