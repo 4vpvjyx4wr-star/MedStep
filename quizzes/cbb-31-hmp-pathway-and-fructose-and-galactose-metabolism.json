@@ -1,0 +1,1346 @@
+[
+  {
+    "question": "A biochemistry student is asked to list the primary cellular goals of a metabolic branch that diverges from glycolysis. Which two outputs best summarize the main functions of this branch?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the two main purposes of the HMP Pathway, the rate-limiting step, and the starting substrates",
+    "options": [
+      {
+        "text": "NADPH generation and ribose five-phosphate production",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states the HMP (pentose phosphate) pathway produces NADPH and 5-carbon ribose for nucleotide synthesis; these are its two main purposes."
+      },
+      {
+        "text": "ATP production and lactate formation from glucose",
+        "isCorrect": false,
+        "rationale": "Wrong: ATP and lactate are glycolytic outputs; for this branch to be correct it would need emphasis on energy generation rather than NADPH/ribose."
+      },
+      {
+        "text": "Acetyl-CoA formation and ketone body synthesis",
+        "isCorrect": false,
+        "rationale": "Wrong: Acetyl-CoA and ketogenesis are mitochondrial/catabolic processes; changing the pathway context to mitochondrial oxidation would make this correct."
+      },
+      {
+        "text": "Fructose phosphorylation and sorbitol accumulation",
+        "isCorrect": false,
+        "rationale": "Wrong: Those describe fructose/aldose pathways; if the question targeted dietary sugar metabolism rather than the pentose branch it could be correct."
+      },
+      {
+        "text": "Glycogen synthesis and glucose export from liver",
+        "isCorrect": false,
+        "rationale": "Wrong: Glycogen metabolism and hepatic glucose output are separate pathways; altering the stem to ask about storage would make this option plausible."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme catalyzes the committed, rate-limiting oxidation step that controls flux into the pathway producing NADPH and pentoses?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the two main purposes of the HMP Pathway, the rate-limiting step, and the starting substrates",
+    "options": [
+      {
+        "text": "Glucose 6-phosphate dehydrogenase enzyme",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture identifies G6PD as the major regulated, rate-limiting enzyme in the oxidative phase generating NADPH."
+      },
+      {
+        "text": "Hexokinase catalyzing glucose phosphorylation",
+        "isCorrect": false,
+        "rationale": "Wrong: Hexokinase phosphorylates glucose for glycolysis; if the pathway asked were glycolysis rather than the pentose branch this would be correct."
+      },
+      {
+        "text": "Phosphofructokinase controlling glycolytic flux",
+        "isCorrect": false,
+        "rationale": "Wrong: PFK is the glycolytic rate-limiting enzyme; it would be correct only if the stem targeted glycolysis."
+      },
+      {
+        "text": "Transketolase transferring two-carbon units",
+        "isCorrect": false,
+        "rationale": "Wrong: Transketolase functions in the reversible nonoxidative phase, not the committed oxidative rate-limiting step; if asked about ribose shuttling it would be correct."
+      },
+      {
+        "text": "Aldolase cleaving fructose bisphosphate",
+        "isCorrect": false,
+        "rationale": "Wrong: Aldolase acts in glycolysis; it would be correct only for a question about glycolytic cleavage rather than pentose pathway regulation."
+      }
+    ]
+  },
+  {
+    "question": "A lab measures an erythrocyte enzyme activity that increases after adding thiamine pyrophosphate. Which enzyme deficiency is this test designed to detect?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the importance of transketolase in terms of its use in medicine",
+    "options": [
+      {
+        "text": "Transketolase activity indicating thiamine responsiveness",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains RBC transketolase requires TPP; increased activity after TPP addition indicates thiamine deficiency."
+      },
+      {
+        "text": "Glucose 6-phosphate dehydrogenase activity assay",
+        "isCorrect": false,
+        "rationale": "Wrong: G6PD is assayed differently and is not TPP-responsive; if the assay measured NADPH production changes it could be relevant."
+      },
+      {
+        "text": "Aldolase B activity in hepatic fructose metabolism",
+        "isCorrect": false,
+        "rationale": "Wrong: Aldolase B relates to fructose intolerance and is not TPP-dependent; changing the tissue to liver enzyme testing would make this plausible."
+      },
+      {
+        "text": "Galactokinase activity in lens sugar processing",
+        "isCorrect": false,
+        "rationale": "Wrong: Galactokinase deficiency causes cataracts but is not thiamine-responsive; if the test measured galactitol accumulation it would be relevant."
+      },
+      {
+        "text": "Pyruvate dehydrogenase complex activity requiring TPP",
+        "isCorrect": false,
+        "rationale": "Wrong: PDH requires TPP but is mitochondrial and not assayed via RBC transketolase; if the stem specified mitochondrial enzyme testing this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "Which cellular antioxidant system depends directly on NADPH to regenerate its reduced form used to neutralize peroxides?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe how NADPH is used in the neutralization of free radicals via the glutathione system",
+    "options": [
+      {
+        "text": "Glutathione reductase–glutathione peroxidase system",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states NADPH reduces oxidized glutathione via glutathione reductase, enabling glutathione peroxidase to detoxify peroxides."
+      },
+      {
+        "text": "Catalase converting hydrogen peroxide to water",
+        "isCorrect": false,
+        "rationale": "Wrong: Catalase detoxifies peroxide but does not use NADPH directly; if catalase required NADPH it would be correct."
+      },
+      {
+        "text": "Superoxide dismutase converting superoxide radicals",
+        "isCorrect": false,
+        "rationale": "Wrong: SOD dismutates superoxide to peroxide and oxygen and does not use NADPH; altering the enzyme to NADPH-dependent oxidase would change correctness."
+      },
+      {
+        "text": "Myeloperoxidase generating hypochlorous acid",
+        "isCorrect": false,
+        "rationale": "Wrong: MPO generates reactive species for microbial killing and does not regenerate glutathione; if the question asked about pathogen killing this would be plausible."
+      },
+      {
+        "text": "Cytochrome P450 monooxygenase detoxification system",
+        "isCorrect": false,
+        "rationale": "Wrong: P450 uses NADPH for monooxygenation but is not the primary glutathione-based peroxide neutralizer; if the stem targeted xenobiotic hydroxylation this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient with recurrent infections lacks a respiratory burst in phagocytes. Which enzyme complex defect best explains failure to generate microbicidal reactive oxygen species?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the use of NADPH to generate free radicals and basic pathology of chronic granulomatous disease",
+    "options": [
+      {
+        "text": "NADPH oxidase complex deficiency causing impaired respiratory burst",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture links NADPH oxidase deficiency to inability to generate oxygen radicals and chronic granulomatous disease with recurrent infections."
+      },
+      {
+        "text": "Glucose 6-phosphate dehydrogenase deficiency reducing NADPH supply",
+        "isCorrect": false,
+        "rationale": "Wrong: G6PD reduces NADPH availability but CGD is due to oxidase defect; if the stem emphasized RBC hemolysis rather than phagocyte function this would be relevant."
+      },
+      {
+        "text": "Myeloperoxidase deficiency preventing hypochlorous acid formation",
+        "isCorrect": false,
+        "rationale": "Wrong: MPO deficiency impairs some killing but respiratory burst generation is intact; if the patient had impaired HOCl formation this would be correct."
+      },
+      {
+        "text": "Catalase deficiency increasing susceptibility to oxidative stress",
+        "isCorrect": false,
+        "rationale": "Wrong: Catalase deficiency affects peroxide breakdown but not respiratory burst generation; altering the stem to peroxide accumulation would make this plausible."
+      },
+      {
+        "text": "Superoxide dismutase deficiency preventing superoxide formation",
+        "isCorrect": false,
+        "rationale": "Wrong: SOD converts superoxide to peroxide and is not the source of superoxide; if the enzyme produced superoxide this option would be correct."
+      }
+    ]
+  },
+  {
+    "question": "Why are red blood cells primarily affected in individuals with an enzyme defect that impairs NADPH production, leading to episodic hemolysis under oxidative stress?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe glucose 6-phosphate dehydrogenase deficiency in terms of: role in red blood cells, symptoms, reason for prevalence, genetics, precipitating factors, and why red blood cells are mainly affected (versus other cell types)",
+    "options": [
+      {
+        "text": "RBCs rely solely on pentose pathway for NADPH and lack nucleus",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains RBCs depend on HMP pathway for NADPH and cannot synthesize new enzyme due to lack of nucleus, causing hemolysis."
+      },
+      {
+        "text": "RBCs have abundant mitochondria producing excess ROS",
+        "isCorrect": false,
+        "rationale": "Wrong: RBCs lack mitochondria; if RBCs had mitochondria producing ROS this option would be relevant."
+      },
+      {
+        "text": "RBCs overexpress catalase leading to paradoxical damage",
+        "isCorrect": false,
+        "rationale": "Wrong: Overexpression of catalase is not described; if catalase were deficient or overactive in a way that consumed NADPH this could be plausible."
+      },
+      {
+        "text": "RBC membranes contain unique lipids susceptible to oxidation",
+        "isCorrect": false,
+        "rationale": "Wrong: While membrane lipids can be oxidized, the lecture emphasizes NADPH deficiency and inability to replace enzyme as primary cause; changing focus to membrane composition would alter correctness."
+      },
+      {
+        "text": "RBCs import glucose poorly and cannot use glycolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: RBCs import glucose and rely on glycolysis; if they could not import glucose this option would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A male patient of Mediterranean descent develops acute hemolysis after taking an oxidative medication. Which inheritance pattern and population prevalence best match this enzymatic disorder?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe glucose 6-phosphate dehydrogenase deficiency in terms of: role in red blood cells, symptoms, reason for prevalence, genetics, precipitating factors, and why red blood cells are mainly affected (versus other cell types)",
+    "options": [
+      {
+        "text": "X-linked inheritance with high frequency in Mediterranean populations",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states G6PD is X-linked and common in African, Mediterranean, and Asian populations due to malaria protection."
+      },
+      {
+        "text": "Autosomal recessive inheritance common in Northern Europeans",
+        "isCorrect": false,
+        "rationale": "Wrong: G6PD is X-linked, not autosomal recessive; if the gene were autosomal recessive and prevalent in Northern Europeans this option would be correct."
+      },
+      {
+        "text": "Mitochondrial inheritance transmitted through fathers",
+        "isCorrect": false,
+        "rationale": "Wrong: Mitochondrial inheritance is maternal; changing transmission to maternal lineage would make this option plausible."
+      },
+      {
+        "text": "Autosomal dominant inheritance with variable penetrance",
+        "isCorrect": false,
+        "rationale": "Wrong: G6PD is not autosomal dominant; if the disorder showed dominant transmission this option would be correct."
+      },
+      {
+        "text": "Y-linked inheritance affecting only males in all populations",
+        "isCorrect": false,
+        "rationale": "Wrong: Y-linked traits are rare and not described for this enzyme; if the gene were on Y chromosome this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following is a common precipitant of episodic hemolysis in patients with decreased erythrocyte capacity to regenerate reduced glutathione?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe glucose 6-phosphate dehydrogenase deficiency in terms of: role in red blood cells, symptoms, reason for prevalence, genetics, precipitating factors, and why red blood cells are mainly affected (versus other cell types)",
+    "options": [
+      {
+        "text": "Infection causing increased oxidative stress from immune cells",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists infection as a precipitant because macrophage-generated radicals increase oxidative stress leading to hemolysis in G6PD deficiency."
+      },
+      {
+        "text": "High dietary cholesterol intake worsening membrane rigidity",
+        "isCorrect": false,
+        "rationale": "Wrong: Dietary cholesterol is not cited as a precipitant; if membrane lipid peroxidation from diet were implicated this could be plausible."
+      },
+      {
+        "text": "Excessive vitamin C supplementation protecting RBCs",
+        "isCorrect": false,
+        "rationale": "Wrong: Vitamin C is an antioxidant and would not precipitate hemolysis; if it acted as a pro-oxidant at high doses this might change correctness."
+      },
+      {
+        "text": "Hypothyroidism reducing metabolic rate and oxidative load",
+        "isCorrect": false,
+        "rationale": "Wrong: Hypothyroidism is not described as a trigger; if metabolic changes increased ROS this could be relevant."
+      },
+      {
+        "text": "High altitude exposure increasing oxygen delivery to tissues",
+        "isCorrect": false,
+        "rationale": "Wrong: High altitude is not listed as a precipitant; if it caused oxidative stress in RBCs this option would be plausible."
+      }
+    ]
+  },
+  {
+    "question": "A peripheral smear from an affected patient shows intracellular inclusions composed of denatured hemoglobin. What are these inclusions called?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe glucose 6-phosphate dehydrogenase deficiency in terms of: role in red blood cells, symptoms, reason for prevalence, genetics, precipitating factors, and why red blood cells are mainly affected (versus other cell types)",
+    "options": [
+      {
+        "text": "Heinz bodies representing oxidized hemoglobin precipitates",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes Heinz bodies are precipitates of oxidized hemoglobin seen in G6PD deficiency during oxidative stress."
+      },
+      {
+        "text": "Howell Jolly bodies representing nuclear remnants",
+        "isCorrect": false,
+        "rationale": "Wrong: Howell-Jolly bodies are nuclear remnants after splenectomy; if the patient had splenic dysfunction this would be correct."
+      },
+      {
+        "text": "Pappenheimer bodies representing iron granules",
+        "isCorrect": false,
+        "rationale": "Wrong: Pappenheimer bodies are iron-containing inclusions; if iron overload were present this would be correct."
+      },
+      {
+        "text": "Basophilic stippling from ribosomal RNA aggregates",
+        "isCorrect": false,
+        "rationale": "Wrong: Basophilic stippling indicates ribosomal RNA aggregates seen in lead poisoning; if lead exposure were present this would be correct."
+      },
+      {
+        "text": "Siderotic granules indicating mitochondrial iron deposits",
+        "isCorrect": false,
+        "rationale": "Wrong: Siderotic granules are iron-laden mitochondria; if sideroblastic anemia were the context this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A newborn urine screen incidentally shows reducing sugars but the infant is asymptomatic. Which benign enzymatic defect in fructose handling best fits this picture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For each of the following diseases, name the defective enzyme, the resulting disruption in metabolism, and how this results in the symptoms seen in affected patients: essential fructosuria, hereditary fructose intolerance, galactokinase deficiency, and classic galactosemia",
+    "options": [
+      {
+        "text": "Fructokinase deficiency causing essential fructosuria",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes fructokinase deficiency as benign essential fructosuria often found incidentally on urinalysis."
+      },
+      {
+        "text": "Aldolase B deficiency causing severe hepatic dysfunction",
+        "isCorrect": false,
+        "rationale": "Wrong: Aldolase B deficiency causes hereditary fructose intolerance with severe symptoms; if the infant had hypoglycemia and liver signs this would be correct."
+      },
+      {
+        "text": "Fructose 1,6-bisphosphatase deficiency causing hypoglycemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Fructose 1,6-bisphosphatase deficiency affects gluconeogenesis, not benign fructosuria; if gluconeogenic failure were present this would be relevant."
+      },
+      {
+        "text": "Sorbitol dehydrogenase deficiency causing sorbitol buildup",
+        "isCorrect": false,
+        "rationale": "Wrong: Sorbitol dehydrogenase issues relate to polyol pathway; if sorbitol accumulation and osmotic damage were present this could be plausible."
+      },
+      {
+        "text": "Hexokinase deficiency preventing glucose phosphorylation",
+        "isCorrect": false,
+        "rationale": "Wrong: Hexokinase deficiency would impair glycolysis broadly; if generalized hypoglycemia were present this option would be correct."
+      }
+    ]
+  },
+  {
+    "question": "An infant presents with vomiting, jaundice, and hypoglycemia after starting formula containing sucrose. Which enzymatic defect that traps a phosphorylated sugar and depletes cellular phosphate best explains these findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For each of the following diseases, name the defective enzyme, the resulting disruption in metabolism, and how this results in the symptoms seen in affected patients: essential fructosuria, hereditary fructose intolerance, galactokinase deficiency, and classic galactosemia",
+    "options": [
+      {
+        "text": "Aldolase B deficiency causing hereditary fructose intolerance",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains aldolase B deficiency leads to accumulation of fructose-1-phosphate, trapping phosphate, impairing ATP, and causing hypoglycemia and liver/kidney dysfunction."
+      },
+      {
+        "text": "Fructokinase deficiency causing benign fructosuria only",
+        "isCorrect": false,
+        "rationale": "Wrong: Fructokinase deficiency is benign and does not cause phosphate trapping or severe hypoglycemia; if the infant were asymptomatic this would be plausible."
+      },
+      {
+        "text": "Galactokinase deficiency causing early cataracts only",
+        "isCorrect": false,
+        "rationale": "Wrong: Galactokinase deficiency causes cataracts via galactitol accumulation but not severe hepatic hypoglycemia; if lens findings predominated this would be correct."
+      },
+      {
+        "text": "Galactose 1-phosphate uridyltransferase deficiency causing liver failure",
+        "isCorrect": false,
+        "rationale": "Wrong: Classic galactosemia traps Gal-1-P and causes liver damage, but the stem describes fructose exposure; if exposure were to galactose this would be correct."
+      },
+      {
+        "text": "Fructose 1,6-bisphosphatase deficiency impairing gluconeogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong: F1,6BPase deficiency causes fasting hypoglycemia but not phosphate trapping after sucrose ingestion; if gluconeogenesis failure were the trigger this would be plausible."
+      }
+    ]
+  },
+  {
+    "question": "A clinician asks which dietary sugars must be avoided in a patient with aldolase B deficiency to prevent hepatic and renal injury. Which list is most accurate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For each of the following diseases, name the defective enzyme, the resulting disruption in metabolism, and how this results in the symptoms seen in affected patients: essential fructosuria, hereditary fructose intolerance, galactokinase deficiency, and classic galactosemia",
+    "options": [
+      {
+        "text": "Fructose, sucrose, and sorbitol should be avoided",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states hereditary fructose intolerance requires avoidance of fructose, sucrose (which yields fructose), and sorbitol to prevent symptoms."
+      },
+      {
+        "text": "Lactose and galactose only should be avoided",
+        "isCorrect": false,
+        "rationale": "Wrong: Lactose/galactose avoidance pertains to galactosemia, not aldolase B deficiency; if the disorder were galactose-related this would be correct."
+      },
+      {
+        "text": "All monosaccharides including glucose must be avoided",
+        "isCorrect": false,
+        "rationale": "Wrong: Glucose is essential and not contraindicated; if the patient had a global carbohydrate intolerance this would be relevant."
+      },
+      {
+        "text": "Sucrose only needs restriction while others are safe",
+        "isCorrect": false,
+        "rationale": "Wrong: Sucrose restriction alone is insufficient because sorbitol and free fructose also cause problems; if sorbitol metabolism were intact this might be plausible."
+      },
+      {
+        "text": "Only artificial sweeteners should be avoided",
+        "isCorrect": false,
+        "rationale": "Wrong: Artificial sweeteners are not the cause; if the sweeteners contained fructose this would change correctness."
+      }
+    ]
+  },
+  {
+    "question": "A toddler develops cataracts early in life and laboratory testing shows elevated galactose in blood. Which enzyme deficiency that leads to accumulation of galactitol in the lens is most likely?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For each of the following diseases, name the defective enzyme, the resulting disruption in metabolism, and how this results in the symptoms seen in affected patients: essential fructosuria, hereditary fructose intolerance, galactokinase deficiency, and classic galactosemia",
+    "options": [
+      {
+        "text": "Galactokinase deficiency causing galactitol accumulation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture indicates galactokinase deficiency leads to excess galactose converted to galactitol by aldose reductase in the lens, causing cataracts."
+      },
+      {
+        "text": "Galactose 1-phosphate uridyltransferase deficiency causing severe systemic disease",
+        "isCorrect": false,
+        "rationale": "Wrong: Classic galactosemia (GALT deficiency) causes more severe liver and neurologic damage in addition to cataracts; if Gal-1-P accumulation were present this would be correct."
+      },
+      {
+        "text": "Fructokinase deficiency causing benign urinary fructose excretion",
+        "isCorrect": false,
+        "rationale": "Wrong: Fructokinase deficiency affects fructose, not galactose; if the sugar abnormality were fructose this would be plausible."
+      },
+      {
+        "text": "Aldolase B deficiency causing phosphate trapping and hypoglycemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Aldolase B deficiency pertains to fructose metabolism; if the infant had hypoglycemia after fructose ingestion this would be correct."
+      },
+      {
+        "text": "Sorbitol dehydrogenase deficiency causing sorbitol accumulation",
+        "isCorrect": false,
+        "rationale": "Wrong: Sorbitol dehydrogenase issues affect sorbitol, not galactitol; if sorbitol were elevated this would be relevant."
+      }
+    ]
+  },
+  {
+    "question": "A newborn with feeding intolerance and jaundice is found to have elevated Gal-1-P levels. Which enzyme defect and management strategy best match this presentation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For each of the following diseases, name the defective enzyme, the resulting disruption in metabolism, and how this results in the symptoms seen in affected patients: essential fructosuria, hereditary fructose intolerance, galactokinase deficiency, and classic galactosemia",
+    "options": [
+      {
+        "text": "Galactose 1-phosphate uridyltransferase deficiency; remove dietary galactose",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes classic galactosemia (GALT deficiency) causing Gal-1-P trapping and organ damage; dietary galactose avoidance prevents many consequences."
+      },
+      {
+        "text": "Galactokinase deficiency; treat with aldose reductase inhibitors",
+        "isCorrect": false,
+        "rationale": "Wrong: Galactokinase deficiency primarily causes cataracts from galactitol; aldose reductase inhibitors are not standard therapy—dietary galactose restriction would be needed for systemic disease."
+      },
+      {
+        "text": "Fructokinase deficiency; restrict dietary fructose and sucrose",
+        "isCorrect": false,
+        "rationale": "Wrong: Fructokinase deficiency is benign and usually asymptomatic; if the infant had fructose-induced hypoglycemia this would be relevant."
+      },
+      {
+        "text": "Aldolase B deficiency; provide intravenous fructose to correct hypoglycemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Aldolase B deficiency causes hypoglycemia after fructose ingestion and requires fructose avoidance; giving fructose would worsen the condition."
+      },
+      {
+        "text": "UDP-glucose epimerase deficiency; supplement with galactose",
+        "isCorrect": false,
+        "rationale": "Wrong: UDP-glucose epimerase defects are rare and management differs; supplementing galactose would not correct Gal-1-P accumulation and could be harmful."
+      }
+    ]
+  },
+  {
+    "question": "Which metabolic fate allows cells to produce ribose for nucleotide synthesis without generating NADPH when NADPH is not required?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the two main purposes of the HMP Pathway, the rate-limiting step, and the starting substrates",
+    "options": [
+      {
+        "text": "Nonoxidative reversible shunting of glycolytic intermediates",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains the reversible nonoxidative phase can generate ribose from glycolytic intermediates without the oxidative NADPH-producing step."
+      },
+      {
+        "text": "Oxidative decarboxylation producing NADPH and CO2",
+        "isCorrect": false,
+        "rationale": "Wrong: The oxidative phase produces NADPH; if NADPH were needed this would be correct rather than the nonoxidative shunt."
+      },
+      {
+        "text": "Direct conversion of glucose to ATP via glycolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Glycolysis yields ATP and pyruvate, not ribose; if nucleotide precursors were not required this would be relevant."
+      },
+      {
+        "text": "Gluconeogenesis from amino acid carbon skeletons",
+        "isCorrect": false,
+        "rationale": "Wrong: Gluconeogenesis regenerates glucose, not ribose; if the cell needed glucose rather than ribose this would be plausible."
+      },
+      {
+        "text": "Pentose recycling through the Krebs cycle intermediates",
+        "isCorrect": false,
+        "rationale": "Wrong: Krebs intermediates are not the primary source of ribose; if pentose carbons were oxidized for energy this might be relevant."
+      }
+    ]
+  },
+  {
+    "question": "Which cofactor is essential for the enzyme that transfers two-carbon units between sugars in the reversible phase linking pentose and glycolytic intermediates?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the importance of transketolase in terms of its use in medicine",
+    "options": [
+      {
+        "text": "Thiamine pyrophosphate is required for transketolase activity",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states transketolase requires thiamine (TPP), and TPP responsiveness is used to diagnose deficiency."
+      },
+      {
+        "text": "NADH is the required cofactor for transketolase",
+        "isCorrect": false,
+        "rationale": "Wrong: Transketolase uses TPP, not NADH; if the enzyme were a dehydrogenase this would be correct."
+      },
+      {
+        "text": "FAD is the essential cofactor for this transferase",
+        "isCorrect": false,
+        "rationale": "Wrong: FAD is used by oxidases; if the enzyme catalyzed oxidation rather than carbon transfer this would be plausible."
+      },
+      {
+        "text": "Biotin is required for two-carbon transfer reactions",
+        "isCorrect": false,
+        "rationale": "Wrong: Biotin is a CO2 carrier for carboxylation reactions; if the enzyme performed carboxylation this would be correct."
+      },
+      {
+        "text": "Pyridoxal phosphate is necessary for sugar translocation",
+        "isCorrect": false,
+        "rationale": "Wrong: PLP is a cofactor for aminotransferases; if the reaction involved amino group transfer this would be relevant."
+      }
+    ]
+  },
+  {
+    "question": "A researcher measures NADPH levels in hepatocytes after insulin exposure and observes increased enzyme transcription. Which enzyme's gene transcription is increased by insulin according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the two main purposes of the HMP Pathway, the rate-limiting step, and the starting substrates",
+    "options": [
+      {
+        "text": "Glucose 6-phosphate dehydrogenase transcription is increased",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes insulin increases transcription of the G6PD gene, enhancing NADPH production."
+      },
+      {
+        "text": "Transketolase transcription is increased by insulin",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture highlights insulin effect on G6PD, not transketolase; if transketolase were insulin-responsive this option would be correct."
+      },
+      {
+        "text": "Aldolase B transcription is increased by insulin",
+        "isCorrect": false,
+        "rationale": "Wrong: Aldolase B is involved in fructose metabolism and not described as insulin-regulated in the lecture; if hepatic fructose flux were insulin-dependent this could be plausible."
+      },
+      {
+        "text": "Galactokinase transcription is increased by insulin",
+        "isCorrect": false,
+        "rationale": "Wrong: Galactokinase regulation by insulin is not described; if galactose metabolism were hormonally regulated this might be relevant."
+      },
+      {
+        "text": "Hexokinase transcription is increased by insulin",
+        "isCorrect": false,
+        "rationale": "Wrong: Hexokinase regulation differs by isoform and tissue; the lecture specifically mentions G6PD as insulin-responsive."
+      }
+    ]
+  },
+  {
+    "question": "Which NADPH-dependent system is directly involved in steroid biosynthesis by adding oxygen groups to make products more soluble?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Uses of NADPH",
+    "options": [
+      {
+        "text": "Mitochondrial cytochrome P450 monooxygenase system",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes a mitochondrial P450 system using NADPH for steroid hydroxylation to add oxygen groups."
+      },
+      {
+        "text": "Microsomal cytochrome P450 detoxification system",
+        "isCorrect": false,
+        "rationale": "Wrong: Microsomal P450s detoxify xenobiotics; while NADPH-dependent, they are more for detoxification than steroid biosynthesis."
+      },
+      {
+        "text": "Glutathione peroxidase antioxidant enzyme system",
+        "isCorrect": false,
+        "rationale": "Wrong: Glutathione peroxidase neutralizes peroxides using reduced glutathione, not directly for steroid hydroxylation; if the question targeted peroxide detoxification this would be correct."
+      },
+      {
+        "text": "NADPH oxidase generating microbicidal radicals",
+        "isCorrect": false,
+        "rationale": "Wrong: NADPH oxidase produces ROS for pathogen killing, not steroid biosynthesis; if the stem asked about immune killing this would be relevant."
+      },
+      {
+        "text": "Nitric oxide synthase producing signaling gas",
+        "isCorrect": false,
+        "rationale": "Wrong: NOS uses NADPH to make NO for signaling and immune functions, not steroid hydroxylation; if the question targeted vasodilation this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A pharmacologist studies a drug that increases hepatic hydroxylation of xenobiotics via an NADPH-dependent microsomal system. Which system is being activated?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Uses of NADPH",
+    "options": [
+      {
+        "text": "Microsomal cytochrome P450 monooxygenase detoxification system",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes the microsomal P450 system as NADPH-dependent for detoxifying chemicals and drugs by hydroxylation."
+      },
+      {
+        "text": "Mitochondrial electron transport chain for ATP synthesis",
+        "isCorrect": false,
+        "rationale": "Wrong: Mitochondrial ETC produces ATP and uses NADH/NADPH differently; if the drug targeted ATP production this would be relevant."
+      },
+      {
+        "text": "Glutathione reductase pathway for peroxide neutralization",
+        "isCorrect": false,
+        "rationale": "Wrong: Glutathione reductase uses NADPH but is for antioxidant defense, not xenobiotic hydroxylation; if the drug increased antioxidant capacity this would be plausible."
+      },
+      {
+        "text": "NADPH oxidase complex producing superoxide radicals",
+        "isCorrect": false,
+        "rationale": "Wrong: NADPH oxidase generates ROS for microbial killing, not xenobiotic hydroxylation; if the drug enhanced immune oxidative burst this would be correct."
+      },
+      {
+        "text": "Aldose reductase converting glucose to sorbitol",
+        "isCorrect": false,
+        "rationale": "Wrong: Aldose reductase uses NADPH in the polyol pathway but is not the microsomal detoxification system; if the drug affected polyol flux this would be relevant."
+      }
+    ]
+  },
+  {
+    "question": "Which biological molecule synthesized from arginine, oxygen, and NADPH acts as a short-lived gaseous signaling molecule that relaxes smooth muscle and inhibits platelet aggregation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Uses of NADPH",
+    "options": [
+      {
+        "text": "Nitric oxide synthesized by nitric oxide synthase",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states NO is synthesized from arginine, oxygen, and NADPH by NOS and relaxes smooth muscle and inhibits platelet aggregation."
+      },
+      {
+        "text": "Nitrous oxide used as an inhaled anesthetic gas",
+        "isCorrect": false,
+        "rationale": "Wrong: Nitrous oxide (laughing gas) is distinct and not synthesized from arginine/NADPH; if the stem asked about anesthetic gases this would be correct."
+      },
+      {
+        "text": "Carbon monoxide produced by heme oxygenase",
+        "isCorrect": false,
+        "rationale": "Wrong: CO is produced by heme oxygenase and can act as a signaling gas, but it is not synthesized from arginine and NADPH; if heme degradation were the focus this would be plausible."
+      },
+      {
+        "text": "Hydrogen sulfide generated by cystathionine enzymes",
+        "isCorrect": false,
+        "rationale": "Wrong: H2S is another gaseous transmitter but not produced from arginine/NADPH; if sulfur metabolism were targeted this would be relevant."
+      },
+      {
+        "text": "Prostaglandin I2 synthesized via cyclooxygenase pathway",
+        "isCorrect": false,
+        "rationale": "Wrong: Prostacyclin is lipid-derived and not directly synthesized from arginine/NADPH; if the question targeted eicosanoids this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected chronic granulomatous disease has recurrent catalase-positive infections and granuloma formation. Which cellular inability best explains this phenotype?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the use of NADPH to generate free radicals and basic pathology of chronic granulomatous disease",
+    "options": [
+      {
+        "text": "Failure of phagocyte NADPH oxidase to produce superoxide",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture links CGD to NADPH oxidase deficiency, preventing generation of reactive oxygen species needed to kill engulfed microbes and leading to granulomas."
+      },
+      {
+        "text": "Inability of glutathione peroxidase to reduce hydrogen peroxide",
+        "isCorrect": false,
+        "rationale": "Wrong: Glutathione peroxidase detoxifies peroxides but CGD is due to failure to generate ROS; if peroxide detoxification were defective this would cause oxidative damage rather than impaired killing."
+      },
+      {
+        "text": "Defect in myeloperoxidase preventing HOCl formation",
+        "isCorrect": false,
+        "rationale": "Wrong: MPO deficiency impairs some killing but respiratory burst superoxide generation remains intact; if HOCl formation were absent this could cause susceptibility to certain infections but not classic CGD."
+      },
+      {
+        "text": "Lack of catalase in pathogens leading to increased virulence",
+        "isCorrect": false,
+        "rationale": "Wrong: Pathogen catalase status affects susceptibility in CGD but the host defect is in oxidase; if the stem focused on pathogen factors this might be relevant."
+      },
+      {
+        "text": "Reduced NADPH production in hepatocytes causing systemic immunodeficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: Hepatocyte NADPH deficits affect metabolism but CGD is a phagocyte oxidase defect; if systemic NADPH shortage impaired immune cells broadly this could be plausible."
+      }
+    ]
+  },
+  {
+    "question": "A patient with G6PD deficiency is exposed to fava beans and develops hemolysis. Which mechanism best explains why fava beans precipitate hemolysis in susceptible individuals?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe glucose 6-phosphate dehydrogenase deficiency in terms of: role in red blood cells, symptoms, reason for prevalence, genetics, precipitating factors, and why red blood cells are mainly affected (versus other cell types)",
+    "options": [
+      {
+        "text": "Fava bean oxidants increase ROS that RBCs cannot neutralize",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes fava beans can produce oxidative stress; G6PD-deficient RBCs lack NADPH to regenerate reduced glutathione, leading to hemolysis."
+      },
+      {
+        "text": "Fava beans directly inhibit hemoglobin synthesis causing anemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Fava beans cause oxidative stress rather than inhibiting hemoglobin synthesis; if they blocked globin production this would be correct."
+      },
+      {
+        "text": "Fava beans cause immune-mediated hemolysis via antibodies",
+        "isCorrect": false,
+        "rationale": "Wrong: The mechanism is oxidative, not antibody-mediated; if Coombs test were positive this option would be plausible."
+      },
+      {
+        "text": "Fava beans chelate iron leading to ineffective erythropoiesis",
+        "isCorrect": false,
+        "rationale": "Wrong: Iron chelation is not the mechanism; if iron availability were reduced causing anemia this would be relevant."
+      },
+      {
+        "text": "Fava beans increase splenic sequestration of normal RBCs",
+        "isCorrect": false,
+        "rationale": "Wrong: Splenic sequestration is not the primary mechanism in favism; if splenomegaly with pooling were present this could be plausible."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory finding would most directly indicate impaired NADPH production in red blood cells during an oxidative episode?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe how NADPH is used in the neutralization of free radicals via the glutathione system",
+    "options": [
+      {
+        "text": "Presence of Heinz bodies on peripheral blood smear",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states Heinz bodies are precipitates of oxidized hemoglobin seen when RBCs cannot regenerate reduced glutathione due to NADPH deficiency."
+      },
+      {
+        "text": "Elevated serum lactate dehydrogenase from muscle injury",
+        "isCorrect": false,
+        "rationale": "Wrong: LDH elevation is nonspecific and not direct evidence of RBC NADPH impairment; if hemolysis markers were elevated this could be supportive."
+      },
+      {
+        "text": "Increased serum bilirubin from hepatic conjugation failure",
+        "isCorrect": false,
+        "rationale": "Wrong: Indirect bilirubin rises with hemolysis but is not specific for NADPH pathway failure; if conjugation were impaired this would be relevant."
+      },
+      {
+        "text": "Low plasma haptoglobin due to intravascular hemolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Low haptoglobin indicates hemolysis but does not directly show NADPH deficiency; combining with Heinz bodies would strengthen the diagnosis."
+      },
+      {
+        "text": "Positive direct antiglobulin test indicating autoimmune hemolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: A positive DAT indicates immune hemolysis, not oxidative enzyme deficiency; if DAT were negative this would support nonimmune hemolysis."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected hereditary fructose intolerance avoids fruit and sucrose. Which intracellular metabolite accumulation explains the resulting hypoglycemia and hepatic dysfunction when exposed to fructose?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For each of the following diseases, name the defective enzyme, the resulting disruption in metabolism, and how this results in the symptoms seen in affected patients: essential fructosuria, hereditary fructose intolerance, galactokinase deficiency, and classic galactosemia",
+    "options": [
+      {
+        "text": "Fructose 1-phosphate accumulation depleting cellular phosphate",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains aldolase B deficiency causes fructose-1-phosphate buildup, tying up phosphate and impairing ATP production leading to hypoglycemia and organ damage."
+      },
+      {
+        "text": "Fructose 6-phosphate accumulation inhibiting glycolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Fructose-6-phosphate accumulation is not the mechanism in HFI; if F6P were elevated and inhibited glycolysis this would be plausible."
+      },
+      {
+        "text": "Galactose 1-phosphate accumulation causing liver injury",
+        "isCorrect": false,
+        "rationale": "Wrong: Gal-1-P accumulates in classic galactosemia, not HFI; if the sugar exposure were galactose this would be correct."
+      },
+      {
+        "text": "Sorbitol accumulation causing osmotic lens damage",
+        "isCorrect": false,
+        "rationale": "Wrong: Sorbitol accumulation relates to polyol pathway and cataracts, not HFI; if lens findings predominated this would be relevant."
+      },
+      {
+        "text": "Glucose 1-phosphate accumulation impairing glycogenolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Glucose-1-phosphate accumulation is not described in HFI; if glycogen breakdown were blocked this could be plausible."
+      }
+    ]
+  },
+  {
+    "question": "Which diagnostic test using red blood cells can reveal thiamine deficiency by demonstrating increased enzymatic activity after cofactor addition?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the importance of transketolase in terms of its use in medicine",
+    "options": [
+      {
+        "text": "Transketolase activity assay with thiamine pyrophosphate stimulation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes measuring RBC transketolase activity and increased activity after TPP addition as diagnostic for thiamine deficiency."
+      },
+      {
+        "text": "G6PD activity assay showing NADPH production increase",
+        "isCorrect": false,
+        "rationale": "Wrong: G6PD assays measure NADPH generation but are not TPP-stimulated; if the test measured oxidative phase flux this would be relevant."
+      },
+      {
+        "text": "Pyruvate kinase assay demonstrating ATP generation",
+        "isCorrect": false,
+        "rationale": "Wrong: Pyruvate kinase relates to glycolytic ATP production and is not TPP-responsive; if ATP production were the focus this would be plausible."
+      },
+      {
+        "text": "Aldolase B activity measurement in erythrocytes",
+        "isCorrect": false,
+        "rationale": "Wrong: Aldolase B is hepatic and not typically assayed in RBCs; if liver biopsy enzyme testing were available this could be relevant."
+      },
+      {
+        "text": "Galactokinase assay detecting galactitol formation",
+        "isCorrect": false,
+        "rationale": "Wrong: Galactokinase assays detect galactose phosphorylation but are not TPP-dependent; if cataract risk were being assessed this would be plausible."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected classic galactosemia is advised that dietary restriction will prevent most complications. Which dietary change is the most appropriate first-line intervention?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For each of the following diseases, name the defective enzyme, the resulting disruption in metabolism, and how this results in the symptoms seen in affected patients: essential fructosuria, hereditary fructose intolerance, galactokinase deficiency, and classic galactosemia",
+    "options": [
+      {
+        "text": "Eliminate lactose and galactose from the infant's diet immediately",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states avoidance of galactose (and thus lactose) prevents most consequences of classic galactosemia due to Gal-1-P accumulation."
+      },
+      {
+        "text": "Restrict fructose and sucrose while maintaining lactose",
+        "isCorrect": false,
+        "rationale": "Wrong: Fructose restriction pertains to HFI, not galactosemia; if the disorder were aldolase B deficiency this would be correct."
+      },
+      {
+        "text": "Increase dietary galactose to induce alternative pathways",
+        "isCorrect": false,
+        "rationale": "Wrong: Increasing galactose would worsen Gal-1-P accumulation; if an enzyme replacement existed this might be considered but is not lecture-based."
+      },
+      {
+        "text": "Provide high fructose corn syrup as lactose substitute",
+        "isCorrect": false,
+        "rationale": "Wrong: HFCS contains fructose and would be harmful in HFI and unnecessary in galactosemia; if the infant had no sugar intolerance this could be considered."
+      },
+      {
+        "text": "Start broad-spectrum antibiotics to reduce gut sugar absorption",
+        "isCorrect": false,
+        "rationale": "Wrong: Antibiotics do not prevent endogenous galactose metabolism; if gut flora produced harmful metabolites this might be relevant."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why many G6PD mutations result in enzyme instability and progressive loss of activity over the red cell lifespan?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe glucose 6-phosphate dehydrogenase deficiency in terms of: role in red blood cells, symptoms, reason for prevalence, genetics, precipitating factors, and why red blood cells are mainly affected (versus other cell types)",
+    "options": [
+      {
+        "text": "Mutations reduce enzyme stability so activity declines over RBC lifespan",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes most G6PD mutations affect enzyme stability, causing progressive loss of activity in enucleated RBCs that cannot synthesize replacement enzyme."
+      },
+      {
+        "text": "Mutations increase enzyme activity causing chronic oxidative stress",
+        "isCorrect": false,
+        "rationale": "Wrong: Mutations typically reduce stability/activity rather than increase it; if a gain-of-function mutation caused excess ROS this would be different."
+      },
+      {
+        "text": "Mutations cause overproduction of NADPH leading to feedback inhibition",
+        "isCorrect": false,
+        "rationale": "Wrong: Overproduction of NADPH is not described; if NADPH were in excess causing metabolic imbalance this could be plausible."
+      },
+      {
+        "text": "Mutations localize enzyme to mitochondria where RBCs lack organelles",
+        "isCorrect": false,
+        "rationale": "Wrong: Mislocalization to mitochondria is not the mechanism; if the enzyme were sequestered away from cytosolic substrates this might be relevant."
+      },
+      {
+        "text": "Mutations create novel antigenic epitopes causing immune clearance",
+        "isCorrect": false,
+        "rationale": "Wrong: Immune-mediated clearance is not the typical mechanism; if hemolysis were autoimmune this option would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A clinician considers the role of NADPH in both antioxidant defense and in generating microbicidal radicals. Which statement best reconciles these dual roles?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Uses of NADPH",
+    "options": [
+      {
+        "text": "NADPH fuels both glutathione reduction and phagocyte oxidase activity",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists NADPH uses including regenerating reduced glutathione for antioxidant defense and supplying electrons to NADPH oxidase for microbial killing."
+      },
+      {
+        "text": "NADPH exclusively neutralizes free radicals and never generates them",
+        "isCorrect": false,
+        "rationale": "Wrong: NADPH is used both to neutralize ROS and to generate ROS in phagocytes; stating exclusivity contradicts lecture content."
+      },
+      {
+        "text": "NADPH is only produced during fasting and not during infection",
+        "isCorrect": false,
+        "rationale": "Wrong: NADPH production is continuous and regulated; if production were strictly fasting-dependent this would be correct."
+      },
+      {
+        "text": "NADPH is synthesized only in mitochondria and not cytosol",
+        "isCorrect": false,
+        "rationale": "Wrong: NADPH is produced in cytosolic HMP pathway among others; if production were mitochondrial-only this would be plausible."
+      },
+      {
+        "text": "NADPH functions solely in steroid biosynthesis and not immunity",
+        "isCorrect": false,
+        "rationale": "Wrong: NADPH is used in steroid biosynthesis but also in immune functions per the lecture; restricting it to steroids is incorrect."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected G6PD deficiency has a normal enzyme assay when tested during recovery from hemolysis. Which explanation based on lecture material best accounts for a false-normal result?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe glucose 6-phosphate dehydrogenase deficiency in terms of: role in red blood cells, symptoms, reason for prevalence, genetics, precipitating factors, and why red blood cells are mainly affected (versus other cell types)",
+    "options": [
+      {
+        "text": "Younger RBCs have higher residual enzyme making assay appear normal",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes that older RBCs lose unstable G6PD; after hemolysis, younger cells with more enzyme can transiently normalize activity, causing false-normal tests."
+      },
+      {
+        "text": "Assay interference from bilirubin falsely elevates measured activity",
+        "isCorrect": false,
+        "rationale": "Wrong: Bilirubin interference is not described as causing false-normal G6PD; if assay methodology were affected this could be plausible."
+      },
+      {
+        "text": "Recent transfusion with G6PD-deficient blood masks deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: Transfusion with normal donor blood would mask deficiency, not transfusion with deficient blood; if transfused with normal RBCs this would explain normalization."
+      },
+      {
+        "text": "Concurrent infection increases G6PD expression in all cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Infection does not upregulate G6PD sufficiently to normalize RBC enzyme levels; if transcriptional upregulation occurred in nucleated cells this might be relevant."
+      },
+      {
+        "text": "Laboratory error due to mislabeling of patient sample",
+        "isCorrect": false,
+        "rationale": "Wrong: While possible, the lecture provides a physiologic explanation (young RBCs) that better accounts for transient normal results; if sample handling were proven faulty this would be correct."
+      }
+    ]
+  },
+  {
+    "question": "A patient with hereditary fructose intolerance develops hyperuricemia. Which metabolic explanation from the lecture best accounts for increased uric acid?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For each of the following diseases, name the defective enzyme, the resulting disruption in metabolism, and how this results in the symptoms seen in affected patients: essential fructosuria, hereditary fructose intolerance, galactokinase deficiency, and classic galactosemia",
+    "options": [
+      {
+        "text": "ATP depletion increases AMP degradation leading to hyperuricemia",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains phosphate trapping by fructose-1-phosphate reduces ATP, increasing AMP degradation and resulting in hyperuricemia."
+      },
+      {
+        "text": "Excess fructose directly converted to uric acid by xanthine oxidase",
+        "isCorrect": false,
+        "rationale": "Wrong: Fructose is not directly converted to uric acid; if purine catabolism were directly stimulated by fructose this would be plausible."
+      },
+      {
+        "text": "Impaired renal uric acid excretion due to tubular obstruction",
+        "isCorrect": false,
+        "rationale": "Wrong: The lecture attributes hyperuricemia to increased production from AMP degradation, not renal excretion failure; if renal dysfunction were primary this would be relevant."
+      },
+      {
+        "text": "Increased dietary purine intake accompanying fructose ingestion",
+        "isCorrect": false,
+        "rationale": "Wrong: Dietary purines are not the mechanism described; if the diet were purine-rich this could contribute."
+      },
+      {
+        "text": "Activation of xanthine oxidase by NADPH excess",
+        "isCorrect": false,
+        "rationale": "Wrong: NADPH excess activating xanthine oxidase is not described; if xanthine oxidase regulation were altered this might be plausible."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical test result would best distinguish essential fructosuria from hereditary fructose intolerance in an asymptomatic infant with reducing sugars in urine?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For each of the following diseases, name the defective enzyme, the resulting disruption in metabolism, and how this results in the symptoms seen in affected patients: essential fructosuria, hereditary fructose intolerance, galactokinase deficiency, and classic galactosemia",
+    "options": [
+      {
+        "text": "Presence of hypoglycemia and liver dysfunction after fructose ingestion",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture indicates HFI (aldolase B deficiency) causes hypoglycemia and hepatic/renal dysfunction after fructose exposure, distinguishing it from benign essential fructosuria."
+      },
+      {
+        "text": "Detection of fructose in urine without systemic symptoms",
+        "isCorrect": false,
+        "rationale": "Wrong: Fructosuria without symptoms suggests essential fructosuria; if the infant remains asymptomatic this would support that diagnosis rather than HFI."
+      },
+      {
+        "text": "Early cataract formation in the first weeks of life",
+        "isCorrect": false,
+        "rationale": "Wrong: Early cataracts point to galactose metabolism defects, not fructose disorders; if cataracts were present this would suggest galactokinase deficiency."
+      },
+      {
+        "text": "Elevated Gal-1-P levels on blood testing",
+        "isCorrect": false,
+        "rationale": "Wrong: Elevated Gal-1-P indicates classic galactosemia, not fructose disorders; if Gal-1-P were high this would change the diagnosis."
+      },
+      {
+        "text": "Positive direct antiglobulin test indicating immune hemolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: A positive DAT indicates autoimmune hemolysis and is unrelated to fructose metabolism; if immune hemolysis were suspected this would be relevant."
+      }
+    ]
+  },
+  {
+    "question": "A medical student is asked to explain why the HMP pathway can produce ribose without NADPH. Which mechanistic statement best matches the lecture explanation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the two main purposes of the HMP Pathway, the rate-limiting step, and the starting substrates",
+    "options": [
+      {
+        "text": "Reversible nonoxidative reactions convert glycolytic intermediates to ribose",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains the nonoxidative phase is reversible and can generate ribose from glycolytic intermediates without the oxidative NADPH-producing step."
+      },
+      {
+        "text": "Oxidative decarboxylation of glucose directly yields ribose",
+        "isCorrect": false,
+        "rationale": "Wrong: Oxidative decarboxylation produces NADPH and CO2, not ribose; if ribose were produced by oxidative cleavage this would be plausible."
+      },
+      {
+        "text": "Glycolysis produces ribose via triose phosphate isomerase",
+        "isCorrect": false,
+        "rationale": "Wrong: Glycolysis does not directly produce ribose; if transketolase/transaldolase acted within glycolysis this might be relevant."
+      },
+      {
+        "text": "Pentose recycling through mitochondria generates ribose",
+        "isCorrect": false,
+        "rationale": "Wrong: Ribose synthesis occurs in cytosolic pentose pathway; mitochondrial recycling is not the mechanism described."
+      },
+      {
+        "text": "Direct phosphorylation of ribose from dietary nucleotides",
+        "isCorrect": false,
+        "rationale": "Wrong: Dietary nucleotides can be salvaged but the lecture focuses on de novo ribose production via nonoxidative shunting."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the role of NADPH in fatty acid and cholesterol biosynthesis as presented in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Uses of NADPH",
+    "options": [
+      {
+        "text": "NADPH provides reducing equivalents for reductive biosynthesis",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists NADPH as the electron donor for reductive biosynthesis such as fatty acid and cholesterol synthesis."
+      },
+      {
+        "text": "NADPH acts as a phosphate donor for acyl carrier proteins",
+        "isCorrect": false,
+        "rationale": "Wrong: NADPH is an electron donor, not a phosphate donor; if the question targeted phosphorylation reactions this would be relevant."
+      },
+      {
+        "text": "NADPH is the primary energy currency replacing ATP",
+        "isCorrect": false,
+        "rationale": "Wrong: ATP is the energy currency; NADPH supplies reducing power for biosynthesis, not energy per se."
+      },
+      {
+        "text": "NADPH oxidizes substrates to generate acetyl-CoA",
+        "isCorrect": false,
+        "rationale": "Wrong: NADPH reduces substrates; oxidation to generate acetyl-CoA is not its role in biosynthesis."
+      },
+      {
+        "text": "NADPH transports acetyl groups between organelles",
+        "isCorrect": false,
+        "rationale": "Wrong: NADPH does not transport acetyl groups; carrier proteins and CoA handle acetyl transport."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected enzyme deficiency in galactose metabolism presents with cataracts but no liver dysfunction. Which enzymatic defect and expected primary finding align with this presentation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For each of the following diseases, name the defective enzyme, the resulting disruption in metabolism, and how this results in the symptoms seen in affected patients: essential fructosuria, hereditary fructose intolerance, galactokinase deficiency, and classic galactosemia",
+    "options": [
+      {
+        "text": "Galactokinase deficiency causing galactitol accumulation in lens",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states galactokinase deficiency leads to galactitol production in the lens via aldose reductase, causing early cataracts without systemic liver disease."
+      },
+      {
+        "text": "Galactose 1-phosphate uridyltransferase deficiency causing severe liver disease",
+        "isCorrect": false,
+        "rationale": "Wrong: GALT deficiency causes systemic liver and renal damage in addition to cataracts; if liver dysfunction were present this would be correct."
+      },
+      {
+        "text": "Fructokinase deficiency causing benign urinary fructose excretion",
+        "isCorrect": false,
+        "rationale": "Wrong: Fructokinase deficiency affects fructose, not galactose; if the abnormal sugar were fructose this would be plausible."
+      },
+      {
+        "text": "Aldolase B deficiency causing phosphate trapping and hypoglycemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Aldolase B deficiency pertains to fructose metabolism and systemic symptoms after fructose ingestion; if hypoglycemia followed fructose exposure this would be correct."
+      },
+      {
+        "text": "Sorbitol dehydrogenase deficiency causing lens sorbitol accumulation",
+        "isCorrect": false,
+        "rationale": "Wrong: Sorbitol accumulation can cause cataracts but is not the mechanism in isolated galactosemia; if sorbitol were elevated this would be relevant."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best summarizes why the HMP pathway can be flexibly used to produce NADPH, ribose, or both depending on cellular needs?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the two main purposes of the HMP Pathway, the rate-limiting step, and the starting substrates",
+    "options": [
+      {
+        "text": "Oxidative phase yields NADPH; reversible phase yields ribose",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture explains the oxidative phase irreversibly generates NADPH while the reversible nonoxidative phase can produce ribose, allowing flexible outputs."
+      },
+      {
+        "text": "Glycolysis and gluconeogenesis alternate to produce NADPH",
+        "isCorrect": false,
+        "rationale": "Wrong: Glycolysis/gluconeogenesis do not directly produce NADPH; if the question targeted energy balance this might be relevant."
+      },
+      {
+        "text": "Mitochondrial TCA cycle provides ribose and NADPH on demand",
+        "isCorrect": false,
+        "rationale": "Wrong: TCA cycle does not produce ribose; if mitochondrial one-carbon metabolism were involved this could be plausible."
+      },
+      {
+        "text": "Pentose pathway is constitutively fixed to produce both always",
+        "isCorrect": false,
+        "rationale": "Wrong: The pathway is regulated and can produce NADPH, ribose, or both depending on needs; stating it is fixed contradicts lecture content."
+      },
+      {
+        "text": "Fatty acid oxidation drives pentose phosphate flux directly",
+        "isCorrect": false,
+        "rationale": "Wrong: Fatty acid oxidation is separate; if cross-talk regulated flux this might be plausible but is not lecture-described."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected G6PD deficiency is counseled about medications to avoid. Which class of agents described in the lecture should be avoided because they produce oxidative stress?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe glucose 6-phosphate dehydrogenase deficiency in terms of: role in red blood cells, symptoms, reason for prevalence, genetics, precipitating factors, and why red blood cells are mainly affected (versus other cell types)",
+    "options": [
+      {
+        "text": "Drugs that generate oxidative stress such as certain antibiotics",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture lists drugs producing oxidative stress as precipitants of hemolysis in G6PD deficiency."
+      },
+      {
+        "text": "Allopurinol and xanthine oxidase inhibitors",
+        "isCorrect": false,
+        "rationale": "Wrong: Allopurinol reduces uric acid production and is not a typical oxidant precipitant; if a drug increased oxidative metabolites this would be relevant."
+      },
+      {
+        "text": "Beta blockers used for hypertension management",
+        "isCorrect": false,
+        "rationale": "Wrong: Beta blockers are not cited as oxidative precipitants; if they caused hemolysis via other mechanisms this could be plausible."
+      },
+      {
+        "text": "ACE inhibitors causing bradykinin accumulation",
+        "isCorrect": false,
+        "rationale": "Wrong: ACE inhibitors affect bradykinin and blood pressure, not oxidative RBC stress; if angioedema were the concern this would be relevant."
+      },
+      {
+        "text": "Statins causing cholesterol lowering and muscle symptoms",
+        "isCorrect": false,
+        "rationale": "Wrong: Statins are not typical oxidative triggers for G6PD hemolysis; if the patient had rhabdomyolysis this would be a different issue."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best characterizes essential fructosuria in contrast to hereditary fructose intolerance based on lecture content?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For each of the following diseases, name the defective enzyme, the resulting disruption in metabolism, and how this results in the symptoms seen in affected patients: essential fructosuria, hereditary fructose intolerance, galactokinase deficiency, and classic galactosemia",
+    "options": [
+      {
+        "text": "Benign urinary fructose excretion without systemic symptoms",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture describes essential fructosuria from fructokinase deficiency as essentially symptomless and often found incidentally in urine."
+      },
+      {
+        "text": "Severe hypoglycemia and liver failure after fructose ingestion",
+        "isCorrect": false,
+        "rationale": "Wrong: That describes hereditary fructose intolerance due to aldolase B deficiency; if systemic signs were present this would be correct."
+      },
+      {
+        "text": "Early cataracts due to galactitol accumulation in lens",
+        "isCorrect": false,
+        "rationale": "Wrong: Early cataracts are characteristic of galactokinase deficiency, not essential fructosuria; if lens findings were present this would be relevant."
+      },
+      {
+        "text": "Progressive neurologic decline from accumulated Gal-1-P",
+        "isCorrect": false,
+        "rationale": "Wrong: Progressive neurologic impairment is seen in classic galactosemia (GALT deficiency), not essential fructosuria; if Gal-1-P accumulated this would be correct."
+      },
+      {
+        "text": "Renal tubular acidosis from proximal tubule phosphate loss",
+        "isCorrect": false,
+        "rationale": "Wrong: Renal dysfunction can occur in HFI but RTA is not the defining feature of essential fructosuria; if proximal tubule damage were present this could be plausible."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected NADPH oxidase deficiency is evaluated. Which clinical feature described in the lecture is most characteristic of this condition?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the use of NADPH to generate free radicals and basic pathology of chronic granulomatous disease",
+    "options": [
+      {
+        "text": "Recurrent severe infections with granuloma formation",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states CGD causes persistent severe infections and granulomas due to inability to kill bacteria from lack of NADPH oxidase activity."
+      },
+      {
+        "text": "Chronic hemolytic anemia with Heinz bodies",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemolytic anemia with Heinz bodies is characteristic of G6PD deficiency, not CGD; if RBC oxidative damage predominated this would be relevant."
+      },
+      {
+        "text": "Early cataracts in infancy due to sugar alcohols",
+        "isCorrect": false,
+        "rationale": "Wrong: Early cataracts are linked to galactose metabolism defects; if lens galactitol accumulation were present this would be correct."
+      },
+      {
+        "text": "Hyperuricemia and gouty arthritis in childhood",
+        "isCorrect": false,
+        "rationale": "Wrong: Hyperuricemia can occur in HFI due to AMP degradation, not CGD; if fructose exposure caused ATP depletion this would be plausible."
+      },
+      {
+        "text": "Progressive muscle weakness from mitochondrial dysfunction",
+        "isCorrect": false,
+        "rationale": "Wrong: Mitochondrial disorders cause muscle weakness, not CGD; if oxidative phosphorylation were impaired this would be relevant."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why insulin increases flux through the NADPH-generating oxidative phase in hepatocytes as noted in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the two main purposes of the HMP Pathway, the rate-limiting step, and the starting substrates",
+    "options": [
+      {
+        "text": "Insulin upregulates G6PD transcription increasing NADPH production",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture indicates insulin increases transcription of the G6PD gene, enhancing oxidative phase flux and NADPH generation for biosynthesis."
+      },
+      {
+        "text": "Insulin inhibits transketolase to divert carbons to glycolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Transketolase is TPP-dependent and reversible; insulin regulation of transketolase is not described in the lecture."
+      },
+      {
+        "text": "Insulin activates NADPH oxidase to produce ROS for signaling",
+        "isCorrect": false,
+        "rationale": "Wrong: NADPH oxidase produces ROS in phagocytes, not as a primary insulin target for biosynthesis; if insulin stimulated immune ROS this would be plausible."
+      },
+      {
+        "text": "Insulin increases gluconeogenesis reducing pentose flux",
+        "isCorrect": false,
+        "rationale": "Wrong: Insulin suppresses gluconeogenesis and promotes anabolic pathways; stating it increases gluconeogenesis contradicts lecture physiology."
+      },
+      {
+        "text": "Insulin decreases hexokinase activity to spare glucose for pentose pathway",
+        "isCorrect": false,
+        "rationale": "Wrong: Insulin generally promotes glucose utilization and does not decrease hexokinase to favor pentose pathway; if hexokinase were inhibited this could alter flux."
+      }
+    ]
+  },
+  {
+    "question": "A patient with classic galactosemia avoids milk and dairy. Which long-term outcome described in the lecture is most likely to be prevented by early dietary restriction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For each of the following diseases, name the defective enzyme, the resulting disruption in metabolism, and how this results in the symptoms seen in affected patients: essential fructosuria, hereditary fructose intolerance, galactokinase deficiency, and classic galactosemia",
+    "options": [
+      {
+        "text": "Prevention of most liver and kidney damage with dietary avoidance",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture states avoidance of galactose can avoid most consequences of classic galactosemia, including liver and kidney damage."
+      },
+      {
+        "text": "Elimination of cataract formation in galactokinase deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: Cataracts from galactokinase deficiency are prevented by galactose restriction, but the stem targets classic galactosemia systemic damage specifically."
+      },
+      {
+        "text": "Reversal of established intellectual disability in affected infants",
+        "isCorrect": false,
+        "rationale": "Wrong: Dietary restriction prevents many consequences but established severe intellectual disability may not be fully reversible; early avoidance is preventive rather than curative for existing damage."
+      },
+      {
+        "text": "Complete normalization of UDP-glucose epimerase activity",
+        "isCorrect": false,
+        "rationale": "Wrong: Dietary changes do not correct enzyme defects; if enzyme replacement were available this would be relevant."
+      },
+      {
+        "text": "Prevention of hereditary fructose intolerance symptoms",
+        "isCorrect": false,
+        "rationale": "Wrong: Avoiding galactose does not prevent HFI, which requires fructose/sucrose avoidance; if fructose were restricted this would be relevant."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the relationship between the oxidative and nonoxidative phases of the pentose pathway as taught in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the two main purposes of the HMP Pathway, the rate-limiting step, and the starting substrates",
+    "options": [
+      {
+        "text": "Oxidative phase is irreversible; nonoxidative phase is reversible",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture emphasizes the oxidative phase irreversibly generates NADPH, while the nonoxidative phase is reversible and interconverts sugars."
+      },
+      {
+        "text": "Both phases are irreversible and produce NADPH equally",
+        "isCorrect": false,
+        "rationale": "Wrong: The nonoxidative phase is reversible and does not necessarily produce NADPH; stating both are irreversible contradicts lecture content."
+      },
+      {
+        "text": "Nonoxidative phase consumes NADPH to make ribose",
+        "isCorrect": false,
+        "rationale": "Wrong: The nonoxidative phase rearranges sugars without consuming NADPH; if it required reducing power this would be different."
+      },
+      {
+        "text": "Oxidative phase only operates in mitochondria while nonoxidative in cytosol",
+        "isCorrect": false,
+        "rationale": "Wrong: Both phases occur in the cytosol; assigning mitochondrial localization is incorrect per lecture."
+      },
+      {
+        "text": "Nonoxidative phase produces ATP directly from pentoses",
+        "isCorrect": false,
+        "rationale": "Wrong: The nonoxidative phase does not produce ATP; if it fed into glycolysis indirectly this could be relevant."
+      }
+    ]
+  },
+  {
+    "question": "A clinician asks which laboratory smear finding plus clinical context would most strongly suggest G6PD deficiency rather than autoimmune hemolysis. Which combination is most consistent with the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe glucose 6-phosphate dehydrogenase deficiency in terms of: role in red blood cells, symptoms, reason for prevalence, genetics, precipitating factors, and why red blood cells are mainly affected (versus other cell types)",
+    "options": [
+      {
+        "text": "Heinz bodies on smear with negative direct antiglobulin test",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture notes Heinz bodies from oxidized hemoglobin are characteristic of G6PD deficiency; a negative DAT helps distinguish nonimmune oxidative hemolysis from autoimmune hemolysis."
+      },
+      {
+        "text": "Spherocytes on smear with positive direct antiglobulin test",
+        "isCorrect": false,
+        "rationale": "Wrong: Spherocytes with positive DAT indicate autoimmune hemolysis; if DAT were negative this would not support autoimmune etiology."
+      },
+      {
+        "text": "Basophilic stippling with elevated lead levels",
+        "isCorrect": false,
+        "rationale": "Wrong: Basophilic stippling suggests lead poisoning, not G6PD deficiency; if lead exposure were present this would be correct."
+      },
+      {
+        "text": "Target cells with low MCV indicating thalassemia trait",
+        "isCorrect": false,
+        "rationale": "Wrong: Target cells and microcytosis suggest thalassemia, not oxidative hemolysis; if hemoglobinopathy were suspected this would be relevant."
+      },
+      {
+        "text": "Schistocytes with normal DAT indicating mechanical hemolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Schistocytes indicate microangiopathic hemolysis; while DAT may be negative, the mechanism differs from G6PD oxidative damage."
+      }
+    ]
+  }
+]
