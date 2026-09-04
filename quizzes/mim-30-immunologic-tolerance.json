@@ -1,0 +1,1090 @@
+[
+  {
+    "question": "A researcher studies thymic selection and finds a transcription factor expressed by medullary thymic epithelial cells that induces expression of tissue-specific proteins for negative selection. Which molecule is most likely responsible?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the biological significance of AIRE, FoxP3, CTLA-4, PD-1, and Fas/CD95 and their roles in promoting tolerance and what would happen if each of these is not functional.",
+    "options": [
+      {
+        "text": "AIRE transcription factor",
+        "isCorrect": true,
+        "rationale": "Correct: AIRE is expressed by medullary thymic epithelial cells and drives tissue-specific gene expression to enable negative selection of thymocytes."
+      },
+      {
+        "text": "FoxP3 transcription factor",
+        "isCorrect": false,
+        "rationale": "Wrong: FoxP3 defines Treg phenotype and peripheral suppression; it is not the thymic epithelial factor that induces tissue-specific antigens. It would be correct if the question asked about Treg development."
+      },
+      {
+        "text": "CTLA-4 inhibitory receptor",
+        "isCorrect": false,
+        "rationale": "Wrong: CTLA-4 is an inhibitory receptor that modulates costimulation in peripheral T cells; it does not induce tissue-specific antigen expression in thymic epithelial cells."
+      },
+      {
+        "text": "PD-1 inhibitory receptor",
+        "isCorrect": false,
+        "rationale": "Wrong: PD-1 functions during effector phases to inhibit T cells; it is not a thymic transcription factor producing tissue antigens."
+      },
+      {
+        "text": "Fas death receptor CD95",
+        "isCorrect": false,
+        "rationale": "Wrong: Fas/CD95 mediates apoptosis via death-ligand engagement in peripheral tolerance; it is not responsible for thymic tissue-specific antigen expression."
+      }
+    ]
+  },
+  {
+    "question": "A male infant presents with severe early-onset autoimmunity, chronic diarrhea, and failure to thrive. Genetic testing shows a nonfunctional transcription factor required for regulatory T cell development. Which gene is most likely mutated?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the clinical outcome of a deficiency in the following: AIRE or FoxP3.",
+    "options": [
+      {
+        "text": "FoxP3 gene",
+        "isCorrect": true,
+        "rationale": "Correct: Loss of functional FoxP3 prevents development of functional Treg cells, causing IPEX-like severe early autoimmunity."
+      },
+      {
+        "text": "AIRE gene",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE deficiency causes multiorgan autoimmunity (APS-1/APECED) with different features; it is not the primary cause of Treg absence in IPEX."
+      },
+      {
+        "text": "CTLA4 gene",
+        "isCorrect": false,
+        "rationale": "Wrong: CTLA-4 defects impair inhibitory signaling but do not directly abolish Treg lineage via FoxP3; would be correct if the stem described impaired peripheral inhibition rather than Treg absence."
+      },
+      {
+        "text": "PDCD1 gene (PD-1)",
+        "isCorrect": false,
+        "rationale": "Wrong: PD-1 loss affects effector T cell inhibition; it does not explain congenital absence of Treg-mediated tolerance causing IPEX phenotype."
+      },
+      {
+        "text": "FAS gene (CD95)",
+        "isCorrect": false,
+        "rationale": "Wrong: Fas mutations cause defective apoptosis and lymphoproliferation (ALPS-like), not the severe Treg deficiency syndrome described."
+      }
+    ]
+  },
+  {
+    "question": "During B cell development in bone marrow, a B cell binds a ubiquitous soluble self-protein with low affinity and survives but shows reduced BCR expression and functional unresponsiveness. What is this outcome called?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the mechanisms of central and peripheral tolerance for T cells and B cells. Compare and contrast how tolerance is generated for T cells vs. B cells.",
+    "options": [
+      {
+        "text": "Anergy of developing B cell",
+        "isCorrect": true,
+        "rationale": "Correct: Low-affinity binding to soluble self-antigen induces B cell anergy with decreased BCR expression and functional unresponsiveness."
+      },
+      {
+        "text": "Receptor editing of light chain",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing occurs after high-affinity self-binding to attempt new light-chain recombination; it would be correct if high-affinity binding triggered rearrangement."
+      },
+      {
+        "text": "Clonal deletion by apoptosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Deletion occurs with high-affinity self-reactivity; low-affinity soluble antigen typically induces anergy rather than apoptosis."
+      },
+      {
+        "text": "Class-switch recombination",
+        "isCorrect": false,
+        "rationale": "Wrong: Class switching is a peripheral activation event for antibody isotype change, unrelated to central tolerance mechanisms in bone marrow."
+      },
+      {
+        "text": "Somatic hypermutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation occurs in germinal centers during affinity maturation, not during central tolerance in bone marrow."
+      }
+    ]
+  },
+  {
+    "question": "Which central tolerance mechanism is unique to developing B cells and allows them to alter antigen specificity by additional light-chain recombination?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the mechanisms of central and peripheral tolerance for T cells and B cells. Compare and contrast how tolerance is generated for T cells vs. B cells.",
+    "options": [
+      {
+        "text": "Receptor editing via RAG reactivation",
+        "isCorrect": true,
+        "rationale": "Correct: B cells can reactivate RAG1/2 to recombine light chains (receptor editing) to change specificity; this does not occur in thymocytes."
+      },
+      {
+        "text": "Negative selection by apoptosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Negative selection by apoptosis occurs in both B and T cells for high-affinity self-reactivity; it is not unique to B cells."
+      },
+      {
+        "text": "Anergy induction by reduced BCR",
+        "isCorrect": false,
+        "rationale": "Wrong: Anergy can occur in B cells but is not the unique mechanism that changes receptor specificity; receptor editing is."
+      },
+      {
+        "text": "Positive selection for self-MHC recognition",
+        "isCorrect": false,
+        "rationale": "Wrong: Positive selection for self-MHC is a thymic T cell process, not a B cell light-chain recombination mechanism."
+      },
+      {
+        "text": "Class-switch recombination to IgA",
+        "isCorrect": false,
+        "rationale": "Wrong: Class switching to IgA is a peripheral differentiation event, not a central tolerance mechanism in bone marrow."
+      }
+    ]
+  },
+  {
+    "question": "A naïve CD4+ T cell recognizes antigen presented by a dendritic cell but the dendritic cell expresses very low CD80/CD86 and there is no inflammatory cytokine milieu. What is the most likely fate of this T cell?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the mechanisms of central and peripheral tolerance for T cells and B cells. Compare and contrast how tolerance is generated for T cells vs. B cells.",
+    "options": [
+      {
+        "text": "Anergy or deletion due to inadequate costimulation",
+        "isCorrect": true,
+        "rationale": "Correct: Naïve T cells receiving TCR signal without adequate CD28-mediated costimulation and cytokines undergo anergy or apoptosis as peripheral tolerance."
+      },
+      {
+        "text": "Differentiation into effector Th1 cell",
+        "isCorrect": false,
+        "rationale": "Wrong: Effector differentiation requires antigen plus adequate costimulation and cytokines; lacking costimulation prevents Th1 development."
+      },
+      {
+        "text": "Immediate class-switching of B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: B cell class switching is unrelated to a naïve T cell encountering antigen without costimulation; this option is not a T cell fate."
+      },
+      {
+        "text": "Receptor editing of TCR genes",
+        "isCorrect": false,
+        "rationale": "Wrong: TCR receptor editing does not occur in peripheral naïve T cells; receptor editing is a B cell central tolerance mechanism."
+      },
+      {
+        "text": "Conversion into plasma cell",
+        "isCorrect": false,
+        "rationale": "Wrong: Plasma cell differentiation is a B cell outcome; T cells do not become plasma cells."
+      }
+    ]
+  },
+  {
+    "question": "Which inhibitory receptor expressed constitutively by regulatory T cells competes with CD28 for CD80/CD86 and can remove these ligands from antigen-presenting cells?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the biological significance of AIRE, FoxP3, CTLA-4, PD-1, and Fas/CD95 and their roles in promoting tolerance and what would happen if each of these is not functional.",
+    "options": [
+      {
+        "text": "CTLA-4 inhibitory receptor",
+        "isCorrect": true,
+        "rationale": "Correct: CTLA-4 binds CD80/CD86 with higher affinity than CD28 and can remove B7 ligands (trogocytosis), contributing to suppression."
+      },
+      {
+        "text": "PD-1 inhibitory receptor",
+        "isCorrect": false,
+        "rationale": "Wrong: PD-1 inhibits signaling mainly during effector phases via PD-L1/PD-L2 engagement; it does not primarily remove B7 ligands from APCs."
+      },
+      {
+        "text": "Fas death receptor CD95",
+        "isCorrect": false,
+        "rationale": "Wrong: Fas mediates apoptosis via FasL engagement; it does not compete for costimulatory ligands on APCs."
+      },
+      {
+        "text": "CD28 costimulatory receptor",
+        "isCorrect": false,
+        "rationale": "Wrong: CD28 provides positive costimulation by binding CD80/CD86; it does not inhibit or remove these ligands."
+      },
+      {
+        "text": "IL-2 receptor alpha chain CD25",
+        "isCorrect": false,
+        "rationale": "Wrong: CD25 is the high-affinity IL-2 receptor expressed by Tregs to sequester IL-2; it does not compete for or remove B7 ligands."
+      }
+    ]
+  },
+  {
+    "question": "A tumor patient receives monoclonal antibody therapy that blocks an inhibitory receptor-ligand interaction on exhausted T cells, restoring cytotoxic function. Which checkpoint target described in the lecture is most likely being blocked to reverse exhaustion during the effector phase?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss how checkpoint blockade therapy is used to treat cancer & which inhibitory molecules are targeted by antibody therapy.",
+    "options": [
+      {
+        "text": "PD-1 receptor blockade",
+        "isCorrect": true,
+        "rationale": "Correct: PD-1 engagement during the effector phase contributes to exhaustion; blocking PD-1 can restore T cell function against tumors."
+      },
+      {
+        "text": "AIRE transcription factor blockade",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE functions in thymic negative selection; blocking AIRE would not reverse peripheral T cell exhaustion and would disrupt central tolerance."
+      },
+      {
+        "text": "FoxP3 transcription factor blockade",
+        "isCorrect": false,
+        "rationale": "Wrong: FoxP3 defines Tregs; blocking FoxP3 is not the standard checkpoint blockade described and would ablate Tregs rather than directly reversing exhausted effector T cells."
+      },
+      {
+        "text": "Fas death receptor blockade",
+        "isCorrect": false,
+        "rationale": "Wrong: Blocking Fas could prevent apoptosis but is not the common checkpoint blockade used to reverse T cell exhaustion in cancer therapy."
+      },
+      {
+        "text": "CD28 costimulatory agonism",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhancing CD28 costimulation is not the lecture-described checkpoint blockade strategy; checkpoint blockade targets inhibitory receptors like PD-1 or CTLA-4."
+      }
+    ]
+  },
+  {
+    "question": "Which peripheral tolerance mechanism involves engagement of death receptors such as Fas/CD95 leading to caspase activation and apoptosis of self-reactive lymphocytes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the mechanisms of central and peripheral tolerance for T cells and B cells. Compare and contrast how tolerance is generated for T cells vs. B cells.",
+    "options": [
+      {
+        "text": "Deletion via death receptor engagement",
+        "isCorrect": true,
+        "rationale": "Correct: Peripheral deletion involves death-ligand engagement (FasL) of Fas/CD95, activating caspases and inducing apoptosis."
+      },
+      {
+        "text": "Anergy from reduced BCR expression",
+        "isCorrect": false,
+        "rationale": "Wrong: Anergy involves functional unresponsiveness and reduced receptor expression, not apoptosis via death receptors."
+      },
+      {
+        "text": "Receptor editing of light chain",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing is a central B cell mechanism to change specificity, not peripheral apoptosis via Fas."
+      },
+      {
+        "text": "CTLA-4 mediated trogocytosis",
+        "isCorrect": false,
+        "rationale": "Wrong: CTLA-4-mediated removal of B7 ligands suppresses activation but does not directly induce apoptosis via death receptors."
+      },
+      {
+        "text": "PD-1 phosphatase activation",
+        "isCorrect": false,
+        "rationale": "Wrong: PD-1 signaling inhibits kinase activity via phosphatases, causing functional inhibition rather than death receptor-mediated apoptosis."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a mutation that prevents expression of high-affinity IL-2 receptor alpha (CD25) on CD4+ T cells would most directly impair which cell population and its suppressive function?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the function and phenotype of regulatory T (Treg) cells. (What markers are expressed by Treg cells? What cytokines do they produce)?",
+    "options": [
+      {
+        "text": "Regulatory T cells (Treg) maintenance",
+        "isCorrect": true,
+        "rationale": "Correct: Tregs constitutively express high-affinity IL-2R (CD25); IL-2 sustains Tregs, so loss of CD25 impairs Treg maintenance and suppression."
+      },
+      {
+        "text": "Naïve B cell survival",
+        "isCorrect": false,
+        "rationale": "Wrong: Naïve B cells do not rely on CD25 for maintenance; this would be correct only if the stem described B cell IL-2 dependence."
+      },
+      {
+        "text": "Th1 effector differentiation",
+        "isCorrect": false,
+        "rationale": "Wrong: Th1 differentiation depends on other cytokines (e.g., IL-12); CD25 loss on CD4+ cells primarily affects Tregs rather than Th1 lineage."
+      },
+      {
+        "text": "Follicular dendritic cell function",
+        "isCorrect": false,
+        "rationale": "Wrong: Follicular dendritic cells are stromal APCs not maintained by CD25 expression on T cells; this option is unrelated."
+      },
+      {
+        "text": "Plasma cell antibody secretion",
+        "isCorrect": false,
+        "rationale": "Wrong: Plasma cell function is independent of CD25 on CD4+ T cells; impaired CD25 would not directly reduce antibody secretion."
+      }
+    ]
+  },
+  {
+    "question": "Which cytokines are produced by Treg cells to mediate suppression in peripheral tissues?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the function and phenotype of regulatory T (Treg) cells. (What markers are expressed by Treg cells? What cytokines do they produce)?",
+    "options": [
+      {
+        "text": "IL-10 and TGF-β",
+        "isCorrect": true,
+        "rationale": "Correct: Treg cells secrete inhibitory cytokines IL-10 and TGF-β as part of their suppressive mechanisms."
+      },
+      {
+        "text": "IL-2 and IFN-γ",
+        "isCorrect": false,
+        "rationale": "Wrong: IL-2 supports Treg survival but is not a suppressive cytokine produced by Tregs; IFN-γ is an effector cytokine from Th1 cells."
+      },
+      {
+        "text": "IL-4 and IL-5",
+        "isCorrect": false,
+        "rationale": "Wrong: IL-4 and IL-5 are Th2 cytokines promoting humoral responses, not the inhibitory cytokines characteristic of Tregs."
+      },
+      {
+        "text": "TNF-α and IL-1β",
+        "isCorrect": false,
+        "rationale": "Wrong: TNF-α and IL-1β are proinflammatory cytokines, not Treg-derived suppressive cytokines."
+      },
+      {
+        "text": "IL-17 and IL-22",
+        "isCorrect": false,
+        "rationale": "Wrong: IL-17 and IL-22 are produced by Th17 and ILCs, not by Tregs for suppression."
+      }
+    ]
+  },
+  {
+    "question": "A patient with autoimmune polyendocrinopathy, chronic mucocutaneous candidiasis, and hypoparathyroidism is suspected to have a defect in a gene that enables thymic expression of peripheral tissue antigens. Which syndrome fits this presentation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the clinical outcome of a deficiency in the following: AIRE or FoxP3.",
+    "options": [
+      {
+        "text": "APS-1/APECED from AIRE mutation",
+        "isCorrect": true,
+        "rationale": "Correct: AIRE deficiency causes APS-1/APECED with multiorgan autoimmunity including candidiasis and endocrine failure."
+      },
+      {
+        "text": "IPEX from FoxP3 mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: IPEX (FoxP3 loss) causes severe early systemic autoimmunity and enteropathy but not the classic APS-1 triad with candidiasis and hypoparathyroidism."
+      },
+      {
+        "text": "ALPS from FAS mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: ALPS involves lymphoproliferation due to defective Fas-mediated apoptosis, not the endocrine-candidiasis pattern of APS-1."
+      },
+      {
+        "text": "CTLA-4 haploinsufficiency syndrome",
+        "isCorrect": false,
+        "rationale": "Wrong: CTLA-4 defects impair peripheral inhibition and can cause autoimmunity but do not specifically produce the APS-1 constellation tied to AIRE."
+      },
+      {
+        "text": "Common variable immunodeficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: CVID causes hypogammaglobulinemia and infections, not the specific endocrine autoimmunity and candidiasis seen with AIRE deficiency."
+      }
+    ]
+  },
+  {
+    "question": "Which mechanism best explains how central T cell tolerance indirectly enforces B cell tolerance to protein antigens?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how a breakdown in T cell tolerance can lead to production of autoantibodies by self-reactive B cells, and therefore, a breakdown in B cell tolerance.",
+    "options": [
+      {
+        "text": "Elimination of self-reactive helper T cells",
+        "isCorrect": true,
+        "rationale": "Correct: Central deletion of self-reactive thymocytes prevents helper T cells from providing T-dependent help to self-reactive B cells, promoting B cell tolerance."
+      },
+      {
+        "text": "Receptor editing of BCR light chains",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing is a B cell intrinsic central tolerance mechanism; it does not explain how T cell central tolerance enforces B cell tolerance."
+      },
+      {
+        "text": "Sequestration of IL-2 by B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: IL-2 sequestration is a Treg mechanism, not a direct effect of central T cell deletion enforcing B cell tolerance."
+      },
+      {
+        "text": "PD-1 expression on B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: PD-1 functions mainly on T cells during effector phases; PD-1 on B cells is not the primary link between T cell central tolerance and B cell tolerance."
+      },
+      {
+        "text": "Anergy induction via reduced IgD",
+        "isCorrect": false,
+        "rationale": "Wrong: Anergy with reduced BCR expression is a B cell outcome; it does not describe how T cell central tolerance prevents B cell activation by removing helper T cells."
+      }
+    ]
+  },
+  {
+    "question": "A researcher repeatedly exposes mice to the same antigen without adjuvant, observing progressive T cell functional impairment with upregulation of inhibitory receptors like PD-1. This phenomenon is most analogous to which physiological state described in the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss how checkpoint blockade therapy is used to treat cancer & which inhibitory molecules are targeted by antibody therapy.",
+    "options": [
+      {
+        "text": "T cell exhaustion from prolonged antigen exposure",
+        "isCorrect": true,
+        "rationale": "Correct: Repeated/prolonged antigen exposure induces inhibitory receptors and functional impairment termed T cell exhaustion; checkpoint blockade can reverse this."
+      },
+      {
+        "text": "Central tolerance by negative selection",
+        "isCorrect": false,
+        "rationale": "Wrong: Central negative selection deletes thymocytes during development, not the peripheral exhaustion from chronic antigen exposure."
+      },
+      {
+        "text": "B cell receptor editing",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing is a B cell central mechanism to change specificity, unrelated to peripheral T cell exhaustion."
+      },
+      {
+        "text": "Immediate hypersensitivity reaction",
+        "isCorrect": false,
+        "rationale": "Wrong: Immediate hypersensitivity is an allergic response mediated by IgE, not progressive T cell dysfunction with PD-1 upregulation."
+      },
+      {
+        "text": "Complement-mediated cytolysis",
+        "isCorrect": false,
+        "rationale": "Wrong: Complement-mediated lysis is an effector mechanism of antibodies, not the T cell exhaustion process described."
+      }
+    ]
+  },
+  {
+    "question": "Which anatomical sites are listed in the lecture as immunoprivileged and rely on physical barriers and high local TGF-β/IL-10 to maintain tolerance?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the major immunoprivileged sites & summarize the primary mechanisms of maintaining tolerance at these sites.",
+    "options": [
+      {
+        "text": "Brain, eyes, testes, placenta-fetus",
+        "isCorrect": true,
+        "rationale": "Correct: The lecture names brain, eyes, testes, and placenta/fetus as immunoprivileged sites with barriers and suppressive cytokines like TGF-β and IL-10."
+      },
+      {
+        "text": "Skin, lymph node, spleen, bone marrow",
+        "isCorrect": false,
+        "rationale": "Wrong: These are not the immunoprivileged sites listed; they are immune-active organs rather than barrier-protected privileged tissues."
+      },
+      {
+        "text": "Liver, gut lumen, thymus, pancreas",
+        "isCorrect": false,
+        "rationale": "Wrong: While the gut and liver have tolerogenic features, they were not listed as the classic immunoprivileged sites in the lecture."
+      },
+      {
+        "text": "Heart, skeletal muscle, adipose tissue",
+        "isCorrect": false,
+        "rationale": "Wrong: These tissues are not the immunoprivileged sites emphasized in the lecture and do not primarily rely on the described barrier mechanisms."
+      },
+      {
+        "text": "Lymph node cortex, Peyer patches, tonsils",
+        "isCorrect": false,
+        "rationale": "Wrong: These are secondary lymphoid tissues involved in immune responses, not immunoprivileged barrier sites."
+      }
+    ]
+  },
+  {
+    "question": "A mucosal environment promotes tolerance to commensal microbiota. Which of the following features described in the lecture contributes to this tolerance by physically separating bacteria from immune cells?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the major immunoprivileged sites & summarize the primary mechanisms of maintaining tolerance at these sites.",
+    "options": [
+      {
+        "text": "Mucus layer overlying epithelium",
+        "isCorrect": true,
+        "rationale": "Correct: The mucus layer separates luminal bacteria from the epithelium and underlying immune cells, promoting tolerance to microbiota."
+      },
+      {
+        "text": "High endothelial venules",
+        "isCorrect": false,
+        "rationale": "Wrong: HEVs facilitate lymphocyte trafficking into lymph nodes and are not the physical separation mechanism for microbiota tolerance."
+      },
+      {
+        "text": "Follicular dendritic cell networks",
+        "isCorrect": false,
+        "rationale": "Wrong: FDCs present antigen in follicles and do not provide the epithelial mucus barrier that separates microbiota from immune cells."
+      },
+      {
+        "text": "Subcapsular sinus macrophages",
+        "isCorrect": false,
+        "rationale": "Wrong: These macrophages filter lymph in lymph nodes and are not the mucosal mucus barrier described for microbiota tolerance."
+      },
+      {
+        "text": "Basement membrane collagen layer",
+        "isCorrect": false,
+        "rationale": "Wrong: While structural, the basement membrane is not the mucus-mediated physical separation emphasized for microbiota tolerance."
+      }
+    ]
+  },
+  {
+    "question": "Which cell type in mucosal tissues is noted in the lecture to promote epithelial glycosylation that supports microbiota survival while preventing invasion?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the major immunoprivileged sites & summarize the primary mechanisms of maintaining tolerance at these sites.",
+    "options": [
+      {
+        "text": "Innate lymphoid cells (ILCs)",
+        "isCorrect": true,
+        "rationale": "Correct: ILCs promote glycosylation of intestinal epithelial cells, supporting microbiota survival and preventing invasion as described."
+      },
+      {
+        "text": "Follicular B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Follicular B cells are adaptive lymphocytes in follicles and are not described as promoting epithelial glycosylation."
+      },
+      {
+        "text": "Neutrophils",
+        "isCorrect": false,
+        "rationale": "Wrong: Neutrophils are inflammatory effectors and do not promote epithelial glycosylation for microbiota tolerance."
+      },
+      {
+        "text": "Plasmacytoid dendritic cells",
+        "isCorrect": false,
+        "rationale": "Wrong: pDCs produce type I interferons and are not the ILCs described as promoting epithelial glycosylation."
+      },
+      {
+        "text": "Kupffer cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Kupffer cells are liver macrophages and are not the mucosal ILCs that regulate epithelial glycosylation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a tumor receives anti-CTLA-4 therapy. Based on the lecture, why might there be concern about autoimmune side effects after this treatment?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss how checkpoint blockade therapy is used to treat cancer & which inhibitory molecules are targeted by antibody therapy.",
+    "options": [
+      {
+        "text": "Loss of peripheral inhibition by Tregs",
+        "isCorrect": true,
+        "rationale": "Correct: CTLA-4 is expressed by Tregs and blocks costimulation; anti-CTLA-4 can reduce Treg-mediated suppression, increasing autoimmunity risk."
+      },
+      {
+        "text": "Increased AIRE expression in thymus",
+        "isCorrect": false,
+        "rationale": "Wrong: Anti-CTLA-4 does not increase AIRE expression; AIRE is a thymic transcription factor unrelated to CTLA-4 blockade."
+      },
+      {
+        "text": "Enhanced B cell receptor editing",
+        "isCorrect": false,
+        "rationale": "Wrong: BCR editing is a central B cell mechanism in bone marrow and is not directly increased by CTLA-4 blockade; this would be correct only if CTLA-4 blockade somehow altered bone marrow recombination."
+      },
+      {
+        "text": "Direct blockade of Fas-mediated apoptosis",
+        "isCorrect": false,
+        "rationale": "Wrong: CTLA-4 antibodies do not directly block Fas-mediated death receptor pathways; this option would be correct only if Fas signaling were inhibited."
+      },
+      {
+        "text": "Upregulation of mucosal mucus production",
+        "isCorrect": false,
+        "rationale": "Wrong: CTLA-4 blockade does not upregulate mucus production; this is unrelated to the mechanism causing autoimmunity after checkpoint therapy."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic exposure to a nonpathogenic oral antigen develops systemic unresponsiveness to that antigen. Which peripheral tolerance mechanism described in the lecture most likely explains this outcome?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the mechanisms of central and peripheral tolerance for T cells and B cells. Compare and contrast how tolerance is generated for T cells vs. B cells.",
+    "options": [
+      {
+        "text": "Anergy or deletion from repeated exposure",
+        "isCorrect": true,
+        "rationale": "Correct: Repeated/prolonged antigen exposure, especially via oral route, induces anergy or deletion and promotes tolerance as described."
+      },
+      {
+        "text": "Receptor editing in peripheral B cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing occurs centrally in bone marrow, not peripherally after repeated antigen exposure; it would be correct only if editing occurred outside marrow."
+      },
+      {
+        "text": "Immediate IgE-mediated sensitization",
+        "isCorrect": false,
+        "rationale": "Wrong: IgE sensitization causes hypersensitivity, not systemic unresponsiveness; this would be correct if allergic priming occurred instead."
+      },
+      {
+        "text": "PD-1 gene deletion",
+        "isCorrect": false,
+        "rationale": "Wrong: PD-1 deletion would reduce inhibitory signaling and likely increase responses, not cause tolerance from repeated exposure."
+      },
+      {
+        "text": "Increased somatic hypermutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation enhances antibody affinity in germinal centers and does not explain systemic tolerance from repeated oral antigen exposure."
+      }
+    ]
+  },
+  {
+    "question": "A patient lacks functional Treg cells due to FoxP3 deficiency. Which of the following clinical features described in the lecture would you expect to see?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the clinical outcome of a deficiency in the following: AIRE or FoxP3.",
+    "options": [
+      {
+        "text": "Severe early-onset multi-organ autoimmunity",
+        "isCorrect": true,
+        "rationale": "Correct: FoxP3 deficiency (IPEX) causes loss of peripheral tolerance with severe early multi-organ autoimmune disease."
+      },
+      {
+        "text": "Isolated chronic mucocutaneous candidiasis",
+        "isCorrect": false,
+        "rationale": "Wrong: Chronic mucocutaneous candidiasis is characteristic of AIRE deficiency (APS-1), not isolated FoxP3 loss."
+      },
+      {
+        "text": "Selective loss of thymic negative selection",
+        "isCorrect": false,
+        "rationale": "Wrong: Thymic negative selection defects are linked to AIRE dysfunction; FoxP3 loss primarily affects peripheral Treg-mediated suppression."
+      },
+      {
+        "text": "Enhanced receptor editing in bone marrow",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing is a B cell central tolerance mechanism and is not directly increased by FoxP3 deficiency."
+      },
+      {
+        "text": "Predominant IgA deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: IgA deficiency is not the primary consequence of FoxP3 loss; the hallmark is systemic autoimmunity from absent Treg function."
+      }
+    ]
+  },
+  {
+    "question": "A patient with an autoimmune disease has autoantibodies but minimal tissue damage; the lecture suggests this pattern can occur when which cell type primarily drives disease without major antibody-mediated pathology?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the role of the immune system in health and disease including the maintenance of self-tolerance, the response to disease, mechanisms of disease prevention (vaccines) and the development of common autoimmune disorders.",
+    "options": [
+      {
+        "text": "Helper T cells driving cell-mediated damage",
+        "isCorrect": true,
+        "rationale": "Correct: Th cells can drive disease via cell-mediated mechanisms; autoantibodies may be present but not the main cause of tissue damage."
+      },
+      {
+        "text": "Follicular B cells producing pathogenic IgG",
+        "isCorrect": false,
+        "rationale": "Wrong: Follicular B cells producing pathogenic antibodies would cause antibody-mediated damage; this contradicts the minimal tissue damage described."
+      },
+      {
+        "text": "Plasma cells secreting neutralizing IgA",
+        "isCorrect": false,
+        "rationale": "Wrong: Plasma cell IgA secretion is mucosal and would not explain systemic autoantibodies with minimal damage; this would be correct if mucosal tolerance were lost."
+      },
+      {
+        "text": "Neutrophil extracellular trap formation",
+        "isCorrect": false,
+        "rationale": "Wrong: NETosis is an innate inflammatory mechanism causing tissue damage, not the scenario of autoantibodies with minimal damage driven by T cells."
+      },
+      {
+        "text": "Complement deficiency preventing opsonization",
+        "isCorrect": false,
+        "rationale": "Wrong: Complement deficiency could reduce antibody-mediated damage but the lecture emphasizes T cell-driven disease as the explanation for minimal antibody-mediated pathology."
+      }
+    ]
+  },
+  {
+    "question": "A scientist blocks PD-L1 on tumor cells in vitro and observes increased T cell kinase activity due to reduced phosphatase signaling. Which inhibitory pathway described in the lecture does this experiment target?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the biological significance of AIRE, FoxP3, CTLA-4, PD-1, and Fas/CD95 and their roles in promoting tolerance and what would happen if each of these is not functional.",
+    "options": [
+      {
+        "text": "PD-1/PD-L1 inhibitory pathway",
+        "isCorrect": true,
+        "rationale": "Correct: PD-1 engagement by PD-L1 activates phosphatases that inhibit kinases; blocking PD-L1 reduces phosphatase activity and restores kinase signaling."
+      },
+      {
+        "text": "CTLA-4 competing for B7 ligands",
+        "isCorrect": false,
+        "rationale": "Wrong: CTLA-4 competes for CD80/CD86 and blocks CD28 costimulation; it does not signal via phosphatase activation through PD-L1."
+      },
+      {
+        "text": "Fas-FasL apoptosis pathway",
+        "isCorrect": false,
+        "rationale": "Wrong: Fas-FasL triggers caspase-mediated apoptosis, not phosphatase-mediated inhibition of kinases as in PD-1 signaling."
+      },
+      {
+        "text": "AIRE-mediated thymic antigen expression",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE controls thymic expression of tissue antigens for negative selection and is unrelated to PD-1/PD-L1 phosphatase signaling."
+      },
+      {
+        "text": "IL-10 secretion by Tregs",
+        "isCorrect": false,
+        "rationale": "Wrong: IL-10 is an inhibitory cytokine but does not directly involve PD-1/PD-L1 phosphatase-mediated inhibition of T cell kinases."
+      }
+    ]
+  },
+  {
+    "question": "A patient with peripheral self-reactive B cells lacks T cell help because helper T cells were deleted in the thymus. According to the lecture, which central tolerance failure could indirectly permit autoantibody production if it occurred instead?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how a breakdown in T cell tolerance can lead to production of autoantibodies by self-reactive B cells, and therefore, a breakdown in B cell tolerance.",
+    "options": [
+      {
+        "text": "AIRE deficiency allowing autoreactive Th cells",
+        "isCorrect": true,
+        "rationale": "Correct: AIRE failure impairs negative selection, permitting self-reactive helper T cells that can provide help to autoreactive B cells and enable autoantibody production."
+      },
+      {
+        "text": "B cell receptor editing failure",
+        "isCorrect": false,
+        "rationale": "Wrong: Failure of BCR editing increases self-reactive B cells but the question asks which T cell central tolerance failure would indirectly permit autoantibodies; BCR editing is a B cell intrinsic mechanism."
+      },
+      {
+        "text": "PD-1 overexpression in thymus",
+        "isCorrect": false,
+        "rationale": "Wrong: PD-1 functions peripherally during effector phases; thymic PD-1 overexpression is not the central tolerance failure described in the lecture."
+      },
+      {
+        "text": "CTLA-4 deficiency on peripheral Tregs",
+        "isCorrect": false,
+        "rationale": "Wrong: CTLA-4 deficiency on Tregs impairs peripheral suppression but the stem asks for a central tolerance failure that allows autoreactive helper T cells—AIRE fits that role."
+      },
+      {
+        "text": "Somatic hypermutation in bone marrow",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation occurs in germinal centers and is unrelated to central T cell tolerance; it would not explain thymic deletion failure."
+      }
+    ]
+  },
+  {
+    "question": "Which peripheral mechanism described in the lecture allows regulatory T cells to limit effector responses by consuming a key growth cytokine?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the function and phenotype of regulatory T (Treg) cells. (What markers are expressed by Treg cells? What cytokines do they produce)?",
+    "options": [
+      {
+        "text": "IL-2 sequestration via high CD25 expression",
+        "isCorrect": true,
+        "rationale": "Correct: Tregs constitutively express high-affinity IL-2R (CD25) and sequester IL-2, limiting availability for effector T cells."
+      },
+      {
+        "text": "CTLA-4 mediated B7 removal",
+        "isCorrect": false,
+        "rationale": "Wrong: CTLA-4 removes B7 ligands to limit costimulation, but the question asked specifically about consuming a growth cytokine, which is IL-2 sequestration."
+      },
+      {
+        "text": "PD-1 ligand upregulation",
+        "isCorrect": false,
+        "rationale": "Wrong: PD-1 ligand expression inhibits T cells via signaling, not by consuming a growth cytokine like IL-2."
+      },
+      {
+        "text": "FasL-induced apoptosis of APCs",
+        "isCorrect": false,
+        "rationale": "Wrong: FasL can induce apoptosis but does not describe cytokine consumption; this would be correct only if the mechanism involved killing IL-2-producing cells."
+      },
+      {
+        "text": "IgA secretion into mucosa",
+        "isCorrect": false,
+        "rationale": "Wrong: IgA secretion is an antibody-mediated mucosal mechanism and does not involve cytokine sequestration by Tregs."
+      }
+    ]
+  },
+  {
+    "question": "A patient with metastatic melanoma is treated with anti-PD-1 therapy. Shortly after, they develop autoimmune colitis. Based on lecture mechanisms, which explanation best accounts for this adverse effect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss how checkpoint blockade therapy is used to treat cancer & which inhibitory molecules are targeted by antibody therapy.",
+    "options": [
+      {
+        "text": "Restored effector T cell activity against self tissues",
+        "isCorrect": true,
+        "rationale": "Correct: Anti-PD-1 reverses inhibitory signaling on exhausted T cells, restoring effector function that can target tumor and self tissues, causing autoimmunity."
+      },
+      {
+        "text": "Increased AIRE expression causing thymic escape",
+        "isCorrect": false,
+        "rationale": "Wrong: Checkpoint blockade does not increase AIRE; thymic antigen expression changes are not the mechanism for acute autoimmune colitis after PD-1 blockade."
+      },
+      {
+        "text": "Enhanced B cell receptor editing producing autoantibodies",
+        "isCorrect": false,
+        "rationale": "Wrong: BCR editing is a central B cell process and is not acutely enhanced by PD-1 blockade to cause colitis."
+      },
+      {
+        "text": "Direct blockade of Fas-mediated apoptosis in gut epithelium",
+        "isCorrect": false,
+        "rationale": "Wrong: PD-1 antibodies do not directly block Fas pathways in epithelium; autoimmune colitis arises from increased T cell activity, not Fas blockade."
+      },
+      {
+        "text": "Sequestration of IL-10 by tumor cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Tumor IL-10 sequestration is not the described mechanism; PD-1 blockade primarily affects T cell inhibitory signaling leading to autoimmunity."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a peripheral self-reactive T cell repeatedly encounters antigen without infection, leading to expression of PD-1 and functional impairment. Which therapeutic approach described in the lecture could reverse this state to enhance anti-tumor immunity?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss how checkpoint blockade therapy is used to treat cancer & which inhibitory molecules are targeted by antibody therapy.",
+    "options": [
+      {
+        "text": "Monoclonal antibodies blocking PD-1",
+        "isCorrect": true,
+        "rationale": "Correct: Blocking PD-1 with antibodies can reverse T cell exhaustion and restore cytotoxic function against tumors."
+      },
+      {
+        "text": "Administration of AIRE protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Administering AIRE would affect thymic antigen expression, not reverse peripheral PD-1-mediated exhaustion; this would be correct only if central tolerance were the target."
+      },
+      {
+        "text": "Induction of B cell receptor editing",
+        "isCorrect": false,
+        "rationale": "Wrong: BCR editing is a central B cell mechanism and does not reverse PD-1-mediated T cell exhaustion."
+      },
+      {
+        "text": "Blocking IL-10 and TGF-β systemically",
+        "isCorrect": false,
+        "rationale": "Wrong: While blocking inhibitory cytokines might enhance immunity, the lecture specifically highlights checkpoint antibodies against inhibitory receptors like PD-1 as the reversal strategy."
+      },
+      {
+        "text": "Enhancing Fas-FasL interactions",
+        "isCorrect": false,
+        "rationale": "Wrong: Enhancing Fas interactions would promote apoptosis, not restore exhausted T cell function; this would worsen T cell numbers."
+      }
+    ]
+  },
+  {
+    "question": "A newborn with failure to thrive, dermatitis, and early-onset diabetes is found to have absent functional Tregs. Which laboratory marker profile described in the lecture would best support a diagnosis of Treg deficiency?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the function and phenotype of regulatory T (Treg) cells. (What markers are expressed by Treg cells? What cytokines do they produce)?",
+    "options": [
+      {
+        "text": "Low FoxP3 expression and absent CD25hi CD4+ cells",
+        "isCorrect": true,
+        "rationale": "Correct: Tregs are CD4+FoxP3+ and express high CD25; absence of FoxP3 and CD25hi CD4+ cells indicates Treg deficiency."
+      },
+      {
+        "text": "High AIRE expression and increased thymic peptides",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE expression in thymic epithelial cells is unrelated to peripheral Treg markers; increased AIRE would not indicate Treg absence."
+      },
+      {
+        "text": "Elevated PD-1 on effector T cells",
+        "isCorrect": false,
+        "rationale": "Wrong: PD-1 elevation indicates exhaustion or inhibition but does not directly diagnose Treg absence; this would be correct only if PD-1 loss were measured."
+      },
+      {
+        "text": "Increased BCR light-chain rearrangements",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased light-chain rearrangements reflect receptor editing in B cells, not Treg marker status."
+      },
+      {
+        "text": "High serum IgA with normal T cell markers",
+        "isCorrect": false,
+        "rationale": "Wrong: Serum IgA changes are not diagnostic of Treg deficiency; the key markers are FoxP3 and CD25 on CD4+ cells."
+      }
+    ]
+  },
+  {
+    "question": "A patient with peripheral tolerance to gut microbiota has abundant IgA in the lumen but minimal inflammatory responses. Which lecture-described role of IgA best explains this observation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the major immunoprivileged sites & summarize the primary mechanisms of maintaining tolerance at these sites.",
+    "options": [
+      {
+        "text": "Protective IgA without inducing alarm",
+        "isCorrect": true,
+        "rationale": "Correct: IgA provides protection at mucosal surfaces while avoiding strong inflammatory responses, supporting tolerance to microbiota."
+      },
+      {
+        "text": "IgA-mediated complement activation",
+        "isCorrect": false,
+        "rationale": "Wrong: IgA is poor at activating complement compared with IgG; complement activation would provoke inflammation, not tolerance."
+      },
+      {
+        "text": "IgA-driven Th1 polarization",
+        "isCorrect": false,
+        "rationale": "Wrong: Th1 polarization is proinflammatory and not the tolerogenic role of mucosal IgA described in the lecture."
+      },
+      {
+        "text": "IgA-dependent neutrophil recruitment",
+        "isCorrect": false,
+        "rationale": "Wrong: Neutrophil recruitment causes inflammation; mucosal IgA functions to limit invasion without recruiting inflammatory cells."
+      },
+      {
+        "text": "IgA-induced systemic anaphylaxis",
+        "isCorrect": false,
+        "rationale": "Wrong: IgA does not typically cause systemic anaphylaxis; this would contradict the mucosal tolerance role described."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a defect in CTLA-4 function would most likely show which peripheral immune abnormality described in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the biological significance of AIRE, FoxP3, CTLA-4, PD-1, and Fas/CD95 and their roles in promoting tolerance and what would happen if each of these is not functional.",
+    "options": [
+      {
+        "text": "Excessive T cell activation due to unchecked costimulation",
+        "isCorrect": true,
+        "rationale": "Correct: CTLA-4 competes with CD28 for CD80/CD86 and sends inhibitory signals; loss of CTLA-4 leads to increased costimulation and T cell activation."
+      },
+      {
+        "text": "Failure of thymic expression of tissue antigens",
+        "isCorrect": false,
+        "rationale": "Wrong: Thymic tissue antigen expression is mediated by AIRE, not CTLA-4; CTLA-4 deficiency affects peripheral inhibition."
+      },
+      {
+        "text": "Impaired B cell receptor editing",
+        "isCorrect": false,
+        "rationale": "Wrong: BCR editing is a central B cell mechanism in bone marrow and is not directly caused by CTLA-4 dysfunction."
+      },
+      {
+        "text": "Enhanced PD-1 phosphatase activity",
+        "isCorrect": false,
+        "rationale": "Wrong: PD-1 signaling involves phosphatases; CTLA-4 loss does not directly increase PD-1 phosphatase activity."
+      },
+      {
+        "text": "Increased Fas-mediated apoptosis of T cells",
+        "isCorrect": false,
+        "rationale": "Wrong: CTLA-4 deficiency leads to hyperactivation rather than increased Fas-mediated apoptosis; this would be correct only if death receptor pathways were upregulated."
+      }
+    ]
+  },
+  {
+    "question": "Which peripheral tolerance mechanism described in the lecture is most important for maintaining tolerance to fetal antigens during pregnancy?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the major immunoprivileged sites & summarize the primary mechanisms of maintaining tolerance at these sites.",
+    "options": [
+      {
+        "text": "Placental barrier with limited antigen presentation",
+        "isCorrect": true,
+        "rationale": "Correct: The placenta acts as a barrier with generally poor antigen presentation and expression of inhibitory molecules, promoting fetal tolerance."
+      },
+      {
+        "text": "Thymic negative selection of fetal-reactive T cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Thymic negative selection occurs during development and cannot account for maternal tolerance to paternal fetal antigens encountered during pregnancy."
+      },
+      {
+        "text": "B cell receptor editing in maternal bone marrow",
+        "isCorrect": false,
+        "rationale": "Wrong: Maternal BCR editing in bone marrow is not the primary mechanism for tolerance to fetal antigens; placental and peripheral mechanisms are."
+      },
+      {
+        "text": "PD-1-mediated apoptosis of trophoblasts",
+        "isCorrect": false,
+        "rationale": "Wrong: PD-1 signaling inhibits T cells; apoptosis of trophoblasts is not the tolerance mechanism described for fetal protection."
+      },
+      {
+        "text": "IgG-mediated complement activation at placenta",
+        "isCorrect": false,
+        "rationale": "Wrong: IgG crosses the placenta but complement activation would harm the fetus; tolerance relies on inhibitory environments, not complement activation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic infection shows T cells expressing high PD-1 and poor effector function. According to the lecture, which change would most likely restore their anti-pathogen activity?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss how checkpoint blockade therapy is used to treat cancer & which inhibitory molecules are targeted by antibody therapy.",
+    "options": [
+      {
+        "text": "Administer anti-PD-1 monoclonal antibody",
+        "isCorrect": true,
+        "rationale": "Correct: Blocking PD-1 can reverse exhaustion and restore T cell effector functions, as described for chronic antigen exposure."
+      },
+      {
+        "text": "Increase AIRE expression in thymus",
+        "isCorrect": false,
+        "rationale": "Wrong: Increasing AIRE affects central tolerance and thymic selection, not peripheral exhaustion in chronic infection."
+      },
+      {
+        "text": "Induce B cell receptor editing",
+        "isCorrect": false,
+        "rationale": "Wrong: BCR editing is unrelated to T cell exhaustion and would not restore T cell effector activity."
+      },
+      {
+        "text": "Block IL-2 to reduce T cell proliferation",
+        "isCorrect": false,
+        "rationale": "Wrong: Blocking IL-2 would further impair T cell responses; restoring activity requires relieving inhibitory signaling, not reducing IL-2."
+      },
+      {
+        "text": "Enhance Fas-FasL interactions to kill exhausted T cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Killing exhausted T cells would not restore anti-pathogen activity; checkpoint blockade aims to revive, not eliminate, exhausted cells."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes how CTLA-4 can suppress T cell activation beyond simply competing with CD28 for ligands, as noted in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the biological significance of AIRE, FoxP3, CTLA-4, PD-1, and Fas/CD95 and their roles in promoting tolerance and what would happen if each of these is not functional.",
+    "options": [
+      {
+        "text": "Removal of B7 ligands from APCs (trogocytosis)",
+        "isCorrect": true,
+        "rationale": "Correct: CTLA-4 can remove CD80/CD86 from APC surfaces (trogocytosis), reducing available costimulation and suppressing T cell activation."
+      },
+      {
+        "text": "Activation of caspases in T cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Caspase activation is associated with Fas-mediated apoptosis, not CTLA-4-mediated suppression; CTLA-4 inhibits costimulation instead."
+      },
+      {
+        "text": "Induction of receptor editing in T cells",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing is a B cell central tolerance mechanism; CTLA-4 does not induce TCR gene rearrangement."
+      },
+      {
+        "text": "Secretion of IgA at mucosal surfaces",
+        "isCorrect": false,
+        "rationale": "Wrong: IgA secretion is an antibody function unrelated to CTLA-4-mediated T cell suppression."
+      },
+      {
+        "text": "Upregulation of AIRE in thymic epithelium",
+        "isCorrect": false,
+        "rationale": "Wrong: CTLA-4 does not regulate AIRE expression; AIRE functions in thymic epithelial cells independently."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a self-reactive B cell that escaped central tolerance is anergic in the periphery because it lacks T cell help. Which peripheral tolerance principle from the lecture explains why this B cell remains unactivated?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the mechanisms of central and peripheral tolerance for T cells and B cells. Compare and contrast how tolerance is generated for T cells vs. B cells.",
+    "options": [
+      {
+        "text": "Dependence on T cell help for protein antigens",
+        "isCorrect": true,
+        "rationale": "Correct: Many B cells are T-dependent; without self-reactive helper T cells (deleted centrally), B cells cannot receive necessary help and remain anergic."
+      },
+      {
+        "text": "Peripheral receptor editing of BCRs",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing occurs centrally in bone marrow; peripheral anergy due to lack of T cell help is the relevant mechanism here."
+      },
+      {
+        "text": "PD-1-mediated B cell apoptosis",
+        "isCorrect": false,
+        "rationale": "Wrong: PD-1 signaling affects T cells primarily; B cell anergy from lack of T help is not due to PD-1-mediated apoptosis."
+      },
+      {
+        "text": "CTLA-4 expression on B cells blocking activation",
+        "isCorrect": false,
+        "rationale": "Wrong: CTLA-4 is expressed on T cells and Tregs; B cell anergy due to absent T cell help is not caused by CTLA-4 on B cells."
+      },
+      {
+        "text": "Somatic hypermutation causing loss of specificity",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation occurs in germinal centers and alters affinity, not the peripheral anergy maintained by lack of T cell help."
+      }
+    ]
+  },
+  {
+    "question": "Which lecture-described feature of mucosal immune tolerance helps induce Treg differentiation and a tolerogenic environment via innate sensing?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the major immunoprivileged sites & summarize the primary mechanisms of maintaining tolerance at these sites.",
+    "options": [
+      {
+        "text": "Tolerogenic dendritic cell activation via TLRs",
+        "isCorrect": true,
+        "rationale": "Correct: Tolerogenic DCs activated through certain TLR signals can induce Treg differentiation and promote mucosal tolerance as described."
+      },
+      {
+        "text": "High-affinity IgG opsonization",
+        "isCorrect": false,
+        "rationale": "Wrong: IgG opsonization promotes clearance and inflammation, not the tolerogenic Treg induction described for mucosal sites."
+      },
+      {
+        "text": "Increased neutrophil recruitment to lamina propria",
+        "isCorrect": false,
+        "rationale": "Wrong: Neutrophil recruitment is inflammatory and would counteract tolerance rather than induce Tregs."
+      },
+      {
+        "text": "Enhanced somatic hypermutation in Peyer patches",
+        "isCorrect": false,
+        "rationale": "Wrong: Somatic hypermutation refines antibody affinity and is not the innate-driven tolerogenic DC mechanism inducing Tregs."
+      },
+      {
+        "text": "Upregulation of complement cascade",
+        "isCorrect": false,
+        "rationale": "Wrong: Complement activation is proinflammatory and does not promote the tolerogenic DC-driven Treg differentiation described."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a mutation that prevents expression of Fas (CD95) on lymphocytes develops lymphoproliferation and autoimmunity due to failed apoptosis. Which peripheral tolerance mechanism from the lecture is disrupted?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the biological significance of AIRE, FoxP3, CTLA-4, PD-1, and Fas/CD95 and their roles in promoting tolerance and what would happen if each of these is not functional.",
+    "options": [
+      {
+        "text": "Death receptor-mediated deletion",
+        "isCorrect": true,
+        "rationale": "Correct: Fas/CD95 engagement by FasL triggers caspase activation and apoptosis; loss disrupts peripheral deletion of self-reactive lymphocytes."
+      },
+      {
+        "text": "CTLA-4-mediated B7 removal",
+        "isCorrect": false,
+        "rationale": "Wrong: CTLA-4 removal of B7 ligands suppresses activation but is distinct from Fas-mediated apoptotic deletion; Fas loss specifically impairs death receptor pathways."
+      },
+      {
+        "text": "AIRE-driven thymic antigen expression",
+        "isCorrect": false,
+        "rationale": "Wrong: AIRE affects central negative selection in thymus; Fas loss disrupts peripheral apoptosis, not thymic antigen expression."
+      },
+      {
+        "text": "PD-1 phosphatase inhibition of kinases",
+        "isCorrect": false,
+        "rationale": "Wrong: PD-1 signaling inhibits kinases via phosphatases; Fas-mediated apoptosis is a separate death receptor mechanism."
+      },
+      {
+        "text": "Receptor editing of B cell light chains",
+        "isCorrect": false,
+        "rationale": "Wrong: Receptor editing is a central B cell tolerance mechanism and is not directly affected by Fas deficiency."
+      }
+    ]
+  }
+]
