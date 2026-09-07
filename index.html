@@ -305,6 +305,54 @@ input:checked+.slider:before{transform:translateX(20px)}
   display:flex;flex-direction:column;gap:6px;
 }
 .backup-panel-actions .btn{font-size:.75rem;padding:8px}
+.resume-code-card{
+  width:100%;max-width:960px;margin-top:16px;
+  background:rgba(255,255,255,.03);border:1px solid var(--border);
+  border-radius:16px;text-align:left;
+}
+.resume-code-summary{
+  list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;
+  padding:18px 24px;font-family:var(--font-mono);font-size:clamp(1rem,2vw,1.25rem);
+  letter-spacing:2.5px;text-transform:uppercase;color:var(--primary);opacity:.85;
+  font-weight:800;line-height:1.25;
+}
+.resume-code-summary::-webkit-details-marker,
+.resume-code-summary::marker{display:none;content:''}
+.resume-code-summary:hover{opacity:1;filter:brightness(1.12)}
+.resume-code-summary:focus{outline:none}
+.resume-code-summary:focus-visible{
+  box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--primary) 40%,transparent);
+  border-radius:16px;
+}
+.resume-code-summary-label{display:flex;align-items:center;gap:10px;min-width:0}
+.resume-code-chevron{margin-left:auto;opacity:.7;transition:transform .15s;font-size:.9rem;letter-spacing:0}
+.resume-code-card[open] .resume-code-summary{
+  border-bottom:1px solid var(--border);padding-bottom:14px;
+}
+.resume-code-card[open] .resume-code-chevron{transform:rotate(90deg)}
+.resume-code-card:not([open]) .resume-code-body{display:none!important}
+.resume-code-body{padding:14px 24px 18px}
+.resume-code-desc{
+  font-size:.78rem;line-height:1.5;opacity:.6;margin:0 0 12px;
+}
+.resume-code-card .modal-textarea{
+  height:88px;margin-bottom:10px;font-family:var(--font-mono);font-size:.72rem;
+}
+.resume-code-actions{display:flex;gap:8px;flex-wrap:wrap}
+.resume-code-actions .btn{font-size:.78rem;padding:8px 14px}
+#copy-progress-code-btn{
+  margin-top:12px;width:100%;flex-shrink:0;position:relative;z-index:1;
+  font-size:.72rem;padding:10px 8px;line-height:1.25;white-space:normal;
+}
+#quiz-resume-copy-modal{
+  position:fixed;inset:0;background:rgba(0,0,0,.7);
+  z-index:2260;display:none;align-items:center;justify-content:center;
+  backdrop-filter:blur(4px);
+}
+#quiz-resume-copy-modal.open{display:flex}
+#quiz-resume-copy-fallback{
+  position:fixed;left:-9999px;top:0;opacity:0;height:1px;width:1px;
+}
 
 /* ── Input screen ─────────────────────────────────────── */
 #input-screen{
@@ -715,6 +763,13 @@ mark.medstep-highlight { background-color: rgba(230, 126, 34, 0.4); color: inher
   background: rgba(128, 128, 128, 0.1) !important; 
   text-decoration: line-through;
   filter: grayscale(1);
+}
+.option-row.choice-hidden:hover:not(.disabled){
+  border-color:var(--border);
+  background:rgba(128,128,128,0.1)!important;
+}
+.option-row.choice-hidden mark.medstep-highlight{
+  background-color:transparent;
 }
 .hide-choice-btn {
   opacity: 0.3;
@@ -2344,6 +2399,23 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
   </div>
 </div>
 
+<!-- ══ QUIZ RESUME COPY FALLBACK ══════════════════════════ -->
+<textarea id="quiz-resume-copy-fallback" aria-hidden="true" tabindex="-1"></textarea>
+<input type="file" id="quiz-resume-file-import" accept=".json,.txt,text/plain,application/json" hidden onchange="importQuizResumeFile(event)">
+<div id="quiz-resume-copy-modal" onclick="if(event.target===this)closeQuizResumeCopyModal()">
+  <div class="report-modal-card">
+    <div class="report-modal-title">Copy blocked</div>
+    <div class="report-modal-note" style="margin-bottom:14px">
+      Select the resume code below and press Ctrl+C (or Cmd+C), then paste it into email or Notes.
+    </div>
+    <textarea class="modal-textarea modal-textarea-tall" id="quiz-resume-copy-visible" readonly spellcheck="false"></textarea>
+    <div style="display:flex;gap:10px;margin-top:12px">
+      <button type="button" class="btn btn-secondary" style="flex:0 0 auto" onclick="closeQuizResumeCopyModal()">Close</button>
+      <button type="button" class="btn btn-primary" style="flex:1" onclick="selectQuizResumeCopyVisible()">Select all</button>
+    </div>
+  </div>
+</div>
+
 <!-- ══ SETTINGS ══════════════════════════════════════════ -->
 <div class="settings-menu" id="settings-menu">
   <div class="settings-menu-scroll" id="settings-menu-scroll">
@@ -2470,6 +2542,19 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
     <div class="kbd-row"><span class="kbd-key">F</span><span class="kbd-desc">Flag Question</span></div>
     <div class="kbd-row"><span class="kbd-key">T</span><span class="kbd-desc">Random Theme</span></div>
     <div class="kbd-row"><span class="kbd-key">=</span><span class="kbd-desc">Toggle Fullscreen</span></div>
+  </div>
+
+  <hr class="settings-divider">
+
+  <div class="kbd-panel backup-panel">
+    <div class="kbd-panel-title">📋 Resume code</div>
+    <p class="backup-panel-desc">Paste a progress code or shared quiz code to continue on this device. During a quiz, copy from the exam grid (<strong>Copy Progress Code</strong>) or the button below.</p>
+    <textarea class="modal-textarea" id="settings-resume-code" placeholder="Paste MSQUIZ1:… or resume JSON here" spellcheck="false" autocomplete="off" style="height:88px;margin-bottom:8px;font-family:var(--font-mono);font-size:.72rem"></textarea>
+    <div class="backup-panel-actions">
+      <button type="button" class="btn btn-secondary" onclick="copyQuizResumeCode()">Copy Progress Code</button>
+      <button type="button" class="btn btn-primary" onclick="resumeQuizFromPaste('settings-resume-code')">Resume quiz</button>
+      <button type="button" class="btn btn-secondary" onclick="triggerQuizResumeFileImport()">Load resume file</button>
+    </div>
   </div>
 
   <hr class="settings-divider">
@@ -2689,6 +2774,20 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
       </div>
       <textarea id="mega-input" placeholder="Paste Copilot JSON output here…"></textarea>
       <button class="btn btn-primary" style="width:100%;padding:15px;border-radius:50px;font-size:1rem" onclick="initQuiz()">Generate Quiz →</button>
+      <details class="resume-code-card" id="home-resume-card">
+        <summary class="resume-code-summary">
+          <span class="resume-code-summary-label"><span class="panel-header-icon">📋</span> Resume a quiz</span>
+          <span class="resume-code-chevron" aria-hidden="true">▸</span>
+        </summary>
+        <div class="resume-code-body">
+          <p class="resume-code-desc">Paste a progress code or a shared quiz code (or JSON from a downloaded file) to continue where you left off, or to start a shared quiz from the beginning. Email it to yourself to move between devices.</p>
+          <textarea class="modal-textarea" id="home-resume-code" placeholder="Paste MSQUIZ1:… or resume JSON here" spellcheck="false" autocomplete="off"></textarea>
+          <div class="resume-code-actions">
+            <button type="button" class="btn btn-primary" onclick="resumeQuizFromPaste('home-resume-code')">Resume quiz</button>
+            <button type="button" class="btn btn-secondary" onclick="triggerQuizResumeFileImport()">Load resume file</button>
+          </div>
+        </div>
+      </details>
     </div>
 
     <div style="margin-top:16px;font-size:.75rem;opacity:.35;font-family:var(--font-mono)">
@@ -2714,6 +2813,7 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
       <div class="nav-grid-wrap">
         <div id="nav-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:7px"></div>
       </div>
+      <button type="button" class="btn btn-secondary" id="copy-progress-code-btn" onclick="copyQuizResumeCode()" title="Copy progress code to paste into Resume a quiz">Copy Progress Code</button>
       <button class="btn btn-secondary" id="back-to-results-btn" onclick="reviewAnswers_exit()" style="display:none;margin-top:12px;width:100%;flex-shrink:0;position:relative;z-index:1;font-size:.78rem;padding:10px 0">← Back to Results</button>
     </aside>
     <main class="main-content">
@@ -2860,10 +2960,11 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
     <div class="results-badge">Exam Performance Report</div>
     <div id="score-pct" class="score-pct">0%</div>
 
-    <div style="display:flex;gap:14px;justify-content:center;margin-top:20px;margin-bottom:28px">
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:20px;margin-bottom:28px">
       <button class="btn btn-secondary" onclick="goHome()">🏠 New Quiz</button>
       <button class="btn btn-primary" onclick="reviewAnswers()">Review Answers</button>
       <button class="btn btn-primary" id="review-flagged-btn" style="display:none" onclick="reviewFlaggedAnswers()">Review Flagged</button>
+      <button type="button" class="btn btn-secondary" onclick="copyFreshQuizShareCode()" title="Copy this quiz unanswered from the start">📋 Copy this quiz</button>
     </div>
 
     <div class="stat-grid">
@@ -2907,6 +3008,11 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
           <span class="export-icon">✗</span>
           <span class="export-label">Copy Incorrect as JSON</span>
           <span class="export-sub" id="export-incorrect-json-count"></span>
+        </button>
+        <button class="export-btn" onclick="copyFreshQuizShareCode()">
+          <span class="export-icon">📋</span>
+          <span class="export-label">Copy this quiz</span>
+          <span class="export-sub">Unanswered, from the start</span>
         </button>
       </div>
     </div>
@@ -3024,6 +3130,12 @@ const LS_CHANGELOG_SEEN='medstep_changelog_seen';
 const LS_CHANGELOG_OPEN='medstep_changelog_open';
 const CHANGELOG_VISIBLE_COUNT=3;
 const MEDSTEP_CHANGELOG=[
+  {
+    id:'2026-09-07-resume-codes',
+    date:'2026-09-07',
+    title:'Copy a resume code mid-quiz',
+    body:'Copy Progress Code from the exam grid during a quiz, or Copy this quiz on results to share it unanswered. Paste the code under Resume a quiz on the home screen or in Settings.'
+  },
   {
     id:'2026-09-07-whats-new',
     date:'2026-09-07',
@@ -3160,6 +3272,7 @@ const LS_PREF_PACE_TIMER='medstep_pref_pace_timer';
 const LS_PREF_PACE_SECONDS='medstep_pref_pace_seconds';
 const LS_PREF_MULTIBUZZ='medstep_pref_multibuzz';
 const LS_ACTIVE_QUIZ='medstep_active_quiz';
+const QUIZ_RESUME_PREFIX='MSQUIZ1:';
 const ACTIVE_QUIZ_MAX_AGE_MS=7*24*60*60*1000;
 const MULTIBUZZ_EMBED_URL='https://www.multibuzz.app/';
 const MULTIBUZZ_LOAD_MS=4000;
@@ -3455,6 +3568,7 @@ document.addEventListener('DOMContentLoaded',()=>{
       if(document.getElementById('email-quiz-confirm-modal')?.classList.contains('open')) closeEmailQuizConfirmModal();
       if(document.getElementById('feedback-modal')?.classList.contains('open')) closeFeedbackModal();
       if(document.getElementById('custom-theme-modal')?.classList.contains('open')) closeCustomThemeModal();
+      if(document.getElementById('quiz-resume-copy-modal')?.classList.contains('open')) closeQuizResumeCopyModal();
     }
   });
 
@@ -3468,6 +3582,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   themeResizeW=window.innerWidth; themeResizeH=window.innerHeight;
   loadReportNotifyEmail();
   initChangelog();
+  initHomeResumeCard();
   tryRestorePersistedQuiz();
 });
 
@@ -9931,7 +10046,7 @@ if (q.userAnswer) {
 row.innerHTML = `
   <div class="option-letter">${LETTERS[i]}</div>
   <div class="option-text">${opt.text}</div>
-  ${!q.userAnswer ? `<div class="hide-choice-btn" onclick="toggleHideChoice(event, ${i})">👁‍🗨</div>` : ''}
+  ${!q.userAnswer ? `<div class="hide-choice-btn" onclick="toggleHideChoice(event, ${i})" onmousedown="event.stopPropagation()" onmouseup="event.stopPropagation()">👁‍🗨</div>` : ''}
 `;
 wrap.appendChild(row);
 
@@ -10379,6 +10494,228 @@ function resumeSavedQuiz() {
   document.getElementById('back-to-quiz-btn').style.display = 'none';
   persistActiveQuiz(true);
 }
+
+function quizResumeExportPayload(snap){
+  if(!snap||typeof snap!=='object') return null;
+  return Object.assign({app:'MedStep',kind:'quiz-progress'}, snap);
+}
+function looksLikeQuizResumeSnapshot(obj){
+  if(!obj||typeof obj!=='object'||Array.isArray(obj)) return false;
+  const qs=obj.questions;
+  if(!Array.isArray(qs)||!qs.length) return false;
+  return qs.some(q=>q&&typeof q==='object'&&(q.question!=null||q.stem!=null||q.prompt!=null)
+    &&(Array.isArray(q.options)||Array.isArray(q.choices)||Array.isArray(q.answers)));
+}
+function encodeQuizResumeCode(snap){
+  const payload=quizResumeExportPayload(snap);
+  if(!payload) return '';
+  try{ return QUIZ_RESUME_PREFIX+btoa(encodeURIComponent(JSON.stringify(payload))); }
+  catch(e){ return ''; }
+}
+function decodeQuizResumePayload(raw){
+  let s=String(raw==null?'':raw).replace(/^\uFEFF/,'').trim();
+  if(!s) return {error:'empty'};
+  const themeMatch=s.match(/MSTHEME1\s*:/i);
+  const quizMatch=s.match(/MSQUIZ1\s*:/i);
+  const themeIdx=themeMatch?s.search(/MSTHEME1\s*:/i):-1;
+  const quizIdx=quizMatch?s.search(/MSQUIZ1\s*:/i):-1;
+  if(themeIdx>=0&&(quizIdx<0||themeIdx<quizIdx)) return {error:'theme'};
+  if(quizIdx>=0){
+    const after=s.slice(quizIdx+quizMatch[0].length).replace(/\s+/g,'');
+    try{
+      const obj=JSON.parse(decodeURIComponent(atob(after)));
+      if(!looksLikeQuizResumeSnapshot(obj)) return {error:'invalid'};
+      return {data:obj};
+    }catch(e){ return {error:'invalid'}; }
+  }
+  if(s.startsWith('{')||s.startsWith('[')){
+    let obj;
+    try{ obj=JSON.parse(s); }catch(e){ return {error:'invalid'}; }
+    if(Array.isArray(obj)){
+      if(typeof looksLikeQuestionArray==='function'&&looksLikeQuestionArray(obj)) return {error:'quizjson'};
+      return {error:'invalid'};
+    }
+    if(looksLikeQuizResumeSnapshot(obj)) return {data:obj};
+    if(typeof looksLikeQuestionArray==='function'&&looksLikeQuestionArray(obj.questions)&&obj.kind!=='quiz-progress'&&obj.version==null&&obj.currentIdx==null)
+      return {error:'quizjson'};
+    return {error:'invalid'};
+  }
+  return {error:'invalid'};
+}
+function quizResumeErrorToast(error){
+  if(error==='empty') return '⚠️ Paste a resume code first';
+  if(error==='theme') return '⚠️ That is a theme share code. Paste it in Settings → Custom theme.';
+  if(error==='quizjson') return '⚠️ That looks like quiz JSON, not a resume code. Use Generate Quiz on the home screen.';
+  return '❌ Not a valid resume code';
+}
+function downloadQuizResumeFile(payload, filename){
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=filename||('medstep-progress-'+new Date().toISOString().slice(0,10)+'.json');
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+function openQuizResumeCopyModal(text){
+  const modal=document.getElementById('quiz-resume-copy-modal');
+  const vis=document.getElementById('quiz-resume-copy-visible');
+  if(vis) vis.value=text||'';
+  if(modal) modal.classList.add('open');
+  showToast('⚠️ Copy blocked — select the code and press Ctrl+C');
+  setTimeout(()=>selectQuizResumeCopyVisible(),0);
+}
+function closeQuizResumeCopyModal(){
+  document.getElementById('quiz-resume-copy-modal')?.classList.remove('open');
+}
+function selectQuizResumeCopyVisible(){
+  const vis=document.getElementById('quiz-resume-copy-visible');
+  if(!vis) return;
+  vis.focus();
+  vis.select();
+  try{ vis.setSelectionRange(0,vis.value.length); }catch(e){}
+}
+function copyQuizResumeText(text, successMsg){
+  const ok=()=>showToast(successMsg||'📋 Resume code copied — paste it into Resume a quiz');
+  const fail=()=>openQuizResumeCopyModal(text);
+  const ta=document.getElementById('quiz-resume-copy-fallback');
+  if(ta) ta.value=text;
+  if(navigator.clipboard&&window.isSecureContext){
+    navigator.clipboard.writeText(text).then(ok).catch(()=>{
+      if(ta&&typeof ctLegacyCopy==='function'&&ctLegacyCopy(ta)) ok();
+      else fail();
+    });
+    return;
+  }
+  if(ta&&typeof ctLegacyCopy==='function'&&ctLegacyCopy(ta)) ok();
+  else fail();
+}
+function copyEncodedQuizSnapshot(snap, opts){
+  opts=opts||{};
+  if(!snap||!Array.isArray(snap.questions)||!snap.questions.length){
+    showToast(opts.emptyMsg||'⚠️ No quiz in progress to copy');
+    return;
+  }
+  const payload=quizResumeExportPayload(snap);
+  const code=encodeQuizResumeCode(snap);
+  if(!code){
+    downloadQuizResumeFile(payload, opts.filename);
+    showToast(opts.tooLargeMsg||'⚠️ Quiz is too large to copy — resume file downloaded instead');
+    return;
+  }
+  copyQuizResumeText(code, opts.successMsg);
+}
+function copyQuizResumeCode(){
+  copyEncodedQuizSnapshot(snapshotActiveQuiz(), {
+    successMsg:'📋 Progress code copied — paste it into Resume a quiz',
+    filename:'medstep-progress-'+new Date().toISOString().slice(0,10)+'.json'
+  });
+}
+function freshQuizSnapshotFromQuestions(qs, meta){
+  const questions=(qs||[]).map(q=>{
+    let copy;
+    try{ copy=JSON.parse(JSON.stringify(q)); }
+    catch(e){ copy=q?Object.assign({},q):{}; }
+    copy.userAnswer=null;
+    copy.time=0;
+    copy.flagged=false;
+    copy.reported=false;
+    return copy;
+  }).filter(q=>q&&(q.question!=null||q.stem!=null||q.prompt!=null));
+  if(!questions.length) return null;
+  return {
+    version:1,
+    savedAt:Date.now(),
+    screen:'quiz',
+    questions,
+    currentIdx:0,
+    isReviewMode:false,
+    isFlaggedReviewMode:false,
+    flaggedReviewIndices:[],
+    flaggedReviewPos:0,
+    onResults:false,
+    isPaused:false,
+    activeQuizMeta:meta||activeQuizMeta||null
+  };
+}
+function copyFreshQuizShareCode(){
+  const src=questions.length?questions:(savedQuizState&&savedQuizState.questions)||[];
+  const snap=freshQuizSnapshotFromQuestions(src, activeQuizMeta||(savedQuizState&&savedQuizState.activeQuizMeta)||null);
+  copyEncodedQuizSnapshot(snap, {
+    emptyMsg:'⚠️ No quiz to copy',
+    successMsg:'📋 Quiz copied — paste it into Resume a quiz to start from the beginning',
+    filename:'medstep-quiz-'+new Date().toISOString().slice(0,10)+'.json',
+    tooLargeMsg:'⚠️ Quiz is too large to copy — quiz file downloaded instead'
+  });
+}
+function hasInProgressQuiz(){
+  if(questions.length>0) return true;
+  if(savedQuizState&&Array.isArray(savedQuizState.questions)&&savedQuizState.questions.length) return true;
+  return !!readPersistedActiveQuiz();
+}
+function savedStateFromResumeSnapshot(data, opts){
+  const toQuizScreen = !opts || opts.toQuizScreen !== false;
+  return {
+    questions:data.questions,
+    currentIdx:Math.max(0, data.currentIdx|0),
+    isReviewMode:toQuizScreen?false:!!data.isReviewMode,
+    isFlaggedReviewMode:toQuizScreen?false:!!data.isFlaggedReviewMode,
+    flaggedReviewIndices:toQuizScreen?[]:(data.flaggedReviewIndices||[]),
+    flaggedReviewPos:toQuizScreen?0:(data.flaggedReviewPos||0),
+    onResults:toQuizScreen?false:(data.screen==='results'||!!data.onResults),
+    isPaused:!!data.isPaused,
+    activeQuizMeta:data.activeQuizMeta||null
+  };
+}
+function collapseHomeResumeCard(){
+  const card=document.getElementById('home-resume-card');
+  if(!card) return;
+  card.open=false;
+  card.removeAttribute('open');
+}
+function initHomeResumeCard(){
+  collapseHomeResumeCard();
+}
+function applyQuizResumeSnapshot(data){
+  if(!looksLikeQuizResumeSnapshot(data)){
+    showToast('❌ Not a valid resume code');
+    return false;
+  }
+  if(hasInProgressQuiz()&&!confirm('This will replace your current in-progress quiz. Continue?')) return false;
+  closeSettingsMenu();
+  closeQuizResumeCopyModal();
+  collapseHomeResumeCard();
+  savedQuizState=savedStateFromResumeSnapshot(data,{toQuizScreen:true});
+  resumeSavedQuiz();
+  showToast('📝 Quiz resumed');
+  return true;
+}
+function applyQuizResumeInput(raw,opts){
+  const decoded=decodeQuizResumePayload(raw);
+  if(decoded.error){
+    showToast(quizResumeErrorToast(decoded.error));
+    return false;
+  }
+  const ok=applyQuizResumeSnapshot(decoded.data);
+  if(ok&&opts&&opts.clearEl) opts.clearEl.value='';
+  return ok;
+}
+function resumeQuizFromPaste(textareaId){
+  const el=document.getElementById(textareaId);
+  applyQuizResumeInput(el?el.value:'',{clearEl:el});
+}
+function triggerQuizResumeFileImport(){
+  document.getElementById('quiz-resume-file-import')?.click();
+}
+function importQuizResumeFile(ev){
+  const file=ev.target.files&&ev.target.files[0];
+  ev.target.value='';
+  if(!file) return;
+  const reader=new FileReader();
+  reader.onload=()=>applyQuizResumeInput(String(reader.result||''));
+  reader.onerror=()=>showToast('❌ Could not read resume file');
+  reader.readAsText(file);
+}
+
 // ══ NEW FEATURES ══════════════════════════════════════════
 function toggleLabValues() {
   const panel = document.getElementById('lab-panel');
@@ -10636,16 +10973,15 @@ function toggleHighlighter() {
   if (highlighterMode) showToast('🖍️ Highlighter Active');
 }
 
+function unwrapHighlights(root) {
+  if (!root || !root.querySelectorAll) return 0;
+  const highlights = root.querySelectorAll('mark.medstep-highlight');
+  highlights.forEach(mark => mark.replaceWith(...mark.childNodes));
+  return highlights.length;
+}
+
 function clearHighlights() {
-  // Finds all highlighted elements within the question container
-  const highlights = document.querySelectorAll('mark.medstep-highlight');
-  
-  highlights.forEach(mark => {
-    // Replaces the <mark> element with its own internal text content
-    mark.replaceWith(...mark.childNodes);
-  });
-  
-  // Optional: Shows a quick confirmation
+  unwrapHighlights(document);
   if (typeof showToast === "function") {
     showToast('🧼 Highlights Cleared');
   }
@@ -10671,8 +11007,18 @@ document.addEventListener('mouseup', () => {
 function toggleHideChoice(event, optIdx) {
   event.stopPropagation(); // Prevents selecting the answer
   const q = questions[currentIdx];
-  q.options[optIdx]._hidden = !q.options[optIdx]._hidden;
-  loadQuestion(currentIdx);
+  if (!q || !q.options || !q.options[optIdx] || q.userAnswer) return;
+  const hiding = !q.options[optIdx]._hidden;
+  q.options[optIdx]._hidden = hiding;
+
+  const row = document.querySelectorAll('#options-list .option-row')[optIdx];
+  if (!row) {
+    loadQuestion(currentIdx);
+    return;
+  }
+  row.classList.toggle('choice-hidden', hiding);
+  if (hiding) unwrapHighlights(row);
+  persistActiveQuiz();
 }
 // ══ Open Copilot Popup ══════════════════════════════════
 function openCopilotPopup() {
