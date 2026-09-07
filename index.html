@@ -40,7 +40,6 @@
 .theme-aurora   {--bg:#030b1c;--card:#0a1730;--text:#e2f5ff;--border:#153352;--primary:#48e0b0}
 .theme-synthwave{--bg:#12002e;--card:#1f0745;--text:#ffe4fb;--border:#4c1478;--primary:#ff2d95}
 .theme-zen      {--bg:#f2eadb;--card:#fdf8ee;--text:#33291c;--border:#dbcaa9;--primary:#8a6a3a}
-.theme-xray     {--bg:#07090c;--card:#151a22;--text:#e8f2fa;--border:#2c3540;--primary:#4fd4c8}
 
 *{box-sizing:border-box}
 
@@ -997,13 +996,6 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   33% { transform:translateY(35vh) translateX(64px)  rotate(140deg) }
   66% { transform:translateY(70vh) translateX(-44px) rotate(252deg) }
   100%{ transform:translateY(112vh)translateX(26px)  rotate(402deg) }
-}
-
-/* X-ray viewbox scanlines */
-.xray-scanlines{
-  position:absolute;inset:0;pointer-events:none;
-  background:repeating-linear-gradient(180deg,rgba(190,220,230,.045) 0 1px,transparent 1px 4px);
-  opacity:.5;
 }
 
 /* Calculator Panel */
@@ -2492,7 +2484,6 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
       <option value="theme-aurora">🌠 Aurora Borealis</option>
       <option value="theme-synthwave">🌆 Synthwave</option>
       <option value="theme-zen">🎋 Zen Garden</option>
-      <option value="theme-xray">🩻 X-ray</option>
     </select>
     <button type="button" id="theme-select-trigger" class="theme-select-trigger" aria-expanded="false" aria-haspopup="listbox" aria-controls="theme-select-panel" aria-labelledby="theme-select-heading theme-select-label">
       <span id="theme-select-label" class="theme-select-trigger-txt"></span>
@@ -3034,8 +3025,7 @@ const ALL_THEMES=[
   'theme-slate-orange','theme-cyber','theme-autumn','theme-mesa','theme-evergreen',
   'theme-space','theme-rainbow','theme-paper','theme-neon-hospital','theme-arctic','theme-volcanic',
   'theme-mountain','theme-coffee','theme-pets',
-  'theme-ocean','theme-sakura','theme-storm','theme-aurora','theme-synthwave','theme-zen',
-  'theme-xray'
+  'theme-ocean','theme-sakura','theme-storm','theme-aurora','theme-synthwave','theme-zen'
 ];
 
 // ── Master Prompt ──────────────────────────────────────
@@ -3146,7 +3136,7 @@ const MEDSTEP_CHANGELOG=[
     id:'2026-09-07-themes',
     date:'2026-09-07',
     title:'New themes & custom colors',
-    body:'Ocean, Sakura, Storm, Aurora, Synthwave, Zen Garden, and X-ray themes, plus custom theme colors in Settings.'
+    body:'Ocean, Sakura, Storm, Aurora, Synthwave, and Zen Garden themes, plus custom theme colors in Settings.'
   },
   {
     id:'2026-09-02-editor',
@@ -3891,8 +3881,7 @@ const THEME_EFFECTS={
   'theme-storm':startStorm,
   'theme-aurora':startAurora,
   'theme-synthwave':startSynthwave,
-  'theme-zen':startZen,
-  'theme-xray':startXray
+  'theme-zen':startZen
 };
 
 /* Overlay-capable effects offered by the custom theme editor's animation dropdown. */
@@ -3905,8 +3894,7 @@ const CUSTOM_EFFECT_CHOICES=[
   {key:'storm',     label:'Thunderstorm',   fn:startStorm},
   {key:'aurora',    label:'Aurora Ribbons', fn:startAurora},
   {key:'synthwave', label:'Synthwave Grid', fn:startSynthwave},
-  {key:'zen',       label:'Zen Koi',        fn:startZen},
-  {key:'xray',      label:'X-ray Viewbox',  fn:startXray}
+  {key:'zen',       label:'Zen Koi',        fn:startZen}
 ];
 
 function startThemeEffects(t,opts){
@@ -7876,479 +7864,6 @@ function startZen(opts){
     l.style.animationDelay=(-Math.random()*24)+'s';
     d.appendChild(l);
   }
-}
-
-/* ── X-RAY / RADIOGRAPHY (viewbox + CXR + lateral skull) ── */
-function startXray(opts){
-  const overlayOnly=!!(opts&&opts.overlayOnly);
-  const cv=document.getElementById('bg-canvas'); cv.style.display='block';
-  const ctx=cv.getContext('2d');
-  cv.width=window.innerWidth; cv.height=window.innerHeight;
-  const W=cv.width, H=cv.height;
-
-  const grain=document.createElement('canvas'); grain.width=96; grain.height=96;
-  const gctx=grain.getContext('2d');
-  const gimg=gctx.createImageData(96,96);
-  for(let i=0;i<gimg.data.length;i+=4){
-    const v=70+Math.random()*150;
-    gimg.data[i]=gimg.data[i+1]=gimg.data[i+2]=v;
-    gimg.data[i+3]=18+Math.random()*36;
-  }
-  gctx.putImageData(gimg,0,0);
-  const grainPat=ctx.createPattern(grain,'repeat');
-
-  const box={x:W*.05,y:H*.055,w:W*.90,h:H*.89};
-  const chest={x:box.x+box.w*.035,y:box.y+box.h*.11,w:box.w*.54,h:box.h*.78};
-  const skull={x:box.x+box.w*.605,y:box.y+box.h*.12,w:box.w*.33,h:box.h*.56};
-
-  function filmBack(f,flick){
-    ctx.fillStyle=`rgba(8,10,12,${overlayOnly?0.55:0.96})`;
-    ctx.fillRect(f.x,f.y,f.w,f.h);
-    ctx.strokeStyle='rgba(4,5,6,0.95)'; ctx.lineWidth=Math.max(7,f.w*.032);
-    ctx.strokeRect(f.x,f.y,f.w,f.h);
-    const lg=ctx.createRadialGradient(f.x+f.w*.5,f.y+f.h*.42,0,f.x+f.w*.5,f.y+f.h*.5,Math.max(f.w,f.h)*.62);
-    lg.addColorStop(0,`rgba(205,222,232,${.11+flick*.05})`); lg.addColorStop(1,'rgba(10,14,18,0.02)');
-    ctx.fillStyle=lg; ctx.fillRect(f.x,f.y,f.w,f.h);
-    ctx.strokeStyle='rgba(190,210,220,0.16)'; ctx.lineWidth=1;
-    ctx.strokeRect(f.x+.5,f.y+.5,f.w-1,f.h-1);
-  }
-  function clipAt(cx,cy,s){
-    ctx.fillStyle='rgba(168,178,188,0.58)';
-    ctx.beginPath();
-    ctx.moveTo(cx-s*.42,cy-s*.85); ctx.lineTo(cx+s*.42,cy-s*.85);
-    ctx.lineTo(cx+s*.30,cy+s*.35); ctx.lineTo(cx-s*.30,cy+s*.35);
-    ctx.closePath(); ctx.fill();
-    ctx.fillStyle='rgba(72,80,88,0.72)';
-    ctx.fillRect(cx-s*.16,cy-s*.22,s*.32,s*.55);
-  }
-  function marker(f,ch,left){
-    const s=Math.min(f.w,f.h)*.072, mx=left?f.x+f.w*.07:f.x+f.w*.86-s, my=f.y+f.h*.07;
-    ctx.fillStyle='rgba(214,226,232,0.20)'; ctx.fillRect(mx,my,s,s);
-    ctx.strokeStyle='rgba(236,246,250,0.48)'; ctx.lineWidth=1; ctx.strokeRect(mx+.5,my+.5,s-1,s-1);
-    ctx.fillStyle='rgba(240,248,252,0.78)';
-    ctx.font=`700 ${Math.round(s*.62)}px sans-serif`; ctx.textAlign='center'; ctx.textBaseline='middle';
-    ctx.fillText(ch,mx+s*.5,my+s*.54);
-  }
-
-  function drawChest(f,flick){
-    filmBack(f,flick);
-    ctx.save();
-    const m=f.w*.065;
-    ctx.beginPath(); ctx.rect(f.x+m,f.y+m*.75,f.w-m*2,f.h-m*1.55); ctx.clip();
-    const cx=f.x+f.w*.5;
-    ctx.lineCap='round'; ctx.lineJoin='round';
-
-    // Soft-tissue envelope (neck, shoulders, chest wall)
-    ctx.fillStyle='rgba(78,90,102,0.26)';
-    ctx.beginPath();
-    ctx.moveTo(cx-f.w*.40,f.y+f.h*.20);
-    ctx.quadraticCurveTo(cx-f.w*.46,f.y+f.h*.07,cx-f.w*.22,f.y+f.h*.09);
-    ctx.quadraticCurveTo(cx,f.y+f.h*.065,cx+f.w*.22,f.y+f.h*.09);
-    ctx.quadraticCurveTo(cx+f.w*.46,f.y+f.h*.07,cx+f.w*.40,f.y+f.h*.20);
-    ctx.quadraticCurveTo(cx+f.w*.43,f.y+f.h*.52,cx+f.w*.38,f.y+f.h*.80);
-    ctx.quadraticCurveTo(cx+f.w*.18,f.y+f.h*.90,cx,f.y+f.h*.87);
-    ctx.quadraticCurveTo(cx-f.w*.18,f.y+f.h*.90,cx-f.w*.38,f.y+f.h*.78);
-    ctx.quadraticCurveTo(cx-f.w*.43,f.y+f.h*.52,cx-f.w*.40,f.y+f.h*.20);
-    ctx.fill();
-    ctx.fillStyle='rgba(58,68,78,0.30)';
-    ctx.beginPath(); ctx.ellipse(cx,f.y+f.h*.13,f.w*.10,f.h*.075,0,0,Math.PI*2); ctx.fill();
-
-    // Lucent lung fields (darker than mediastinum)
-    const lungG=ctx.createRadialGradient(cx+f.w*.06,f.y+f.h*.48,f.w*.05,cx,f.y+f.h*.50,f.w*.42);
-    lungG.addColorStop(0,'rgba(22,28,34,0.22)'); lungG.addColorStop(.4,'rgba(5,7,9,0.70)'); lungG.addColorStop(1,'rgba(6,8,10,0.82)');
-    ctx.fillStyle=lungG;
-    ctx.beginPath();
-    ctx.moveTo(cx-f.w*.37,f.y+f.h*.22);
-    ctx.quadraticCurveTo(cx-f.w*.39,f.y+f.h*.11,cx-f.w*.20,f.y+f.h*.105);
-    ctx.lineTo(cx+f.w*.20,f.y+f.h*.105);
-    ctx.quadraticCurveTo(cx+f.w*.39,f.y+f.h*.11,cx+f.w*.37,f.y+f.h*.22);
-    ctx.quadraticCurveTo(cx+f.w*.40,f.y+f.h*.50,cx+f.w*.355,f.y+f.h*.77);
-    ctx.quadraticCurveTo(cx+f.w*.16,f.y+f.h*.70,cx+f.w*.02,f.y+f.h*.72);
-    ctx.quadraticCurveTo(cx-f.w*.16,f.y+f.h*.68,cx-f.w*.355,f.y+f.h*.75);
-    ctx.quadraticCurveTo(cx-f.w*.40,f.y+f.h*.48,cx-f.w*.37,f.y+f.h*.22);
-    ctx.fill();
-
-    // Pulmonary vascular markings radiating from hila
-    const rHilum={x:cx-f.w*.095,y:f.y+f.h*.465};
-    const lHilum={x:cx+f.w*.105,y:f.y+f.h*.435};
-    function vessels(h,dir){
-      for(let i=0;i<9;i++){
-        const spread=-.92+i*.23, len=f.w*(.13+.05*Math.abs(Math.sin(i*1.7+dir)));
-        ctx.strokeStyle=`rgba(152,170,184,${.22-i*.012})`;
-        ctx.lineWidth=Math.max(.85,f.w*(.0062-.00032*i));
-        ctx.beginPath();
-        ctx.moveTo(h.x,h.y);
-        ctx.quadraticCurveTo(h.x+dir*len*.48,h.y+spread*f.h*.10,h.x+dir*len,h.y+spread*f.h*.20);
-        ctx.stroke();
-        if(i%2===0){
-          ctx.beginPath();
-          ctx.moveTo(h.x+dir*len*.55,h.y+spread*f.h*.11);
-          ctx.quadraticCurveTo(h.x+dir*len*.72,h.y+spread*f.h*.18,h.x+dir*len*.88,h.y+spread*f.h*.16);
-          ctx.stroke();
-        }
-      }
-    }
-    vessels(rHilum,-1); vessels(lHilum,1);
-    ctx.fillStyle='rgba(132,148,162,0.32)';
-    ctx.beginPath(); ctx.ellipse(rHilum.x,rHilum.y,f.w*.052,f.h*.042,.2,0,Math.PI*2); ctx.fill();
-    ctx.beginPath(); ctx.ellipse(lHilum.x,lHilum.y,f.w*.055,f.h*.040,-.15,0,Math.PI*2); ctx.fill();
-    ctx.fillStyle='rgba(110,126,140,0.20)';
-    ctx.beginPath(); ctx.ellipse(rHilum.x-f.w*.01,rHilum.y+f.h*.006,f.w*.028,f.h*.022,0,0,Math.PI*2); ctx.fill();
-    ctx.beginPath(); ctx.ellipse(lHilum.x+f.w*.008,lHilum.y,f.w*.026,f.h*.020,0,0,Math.PI*2); ctx.fill();
-
-    // Posterior ribs 2–12 — nearly horizontal arcs; spacing tightens inferiorly. Rib 1 with clavicles.
-    let pY=f.y+f.h*.205;
-    for(let i=0;i<12;i++){
-      const k=i/11;
-      const lat=f.w*(i===1?.33:.368-k*.022);
-      const drop=f.h*(.006+k*.010);
-      if(i>0){
-        ctx.strokeStyle=`rgba(210,226,238,${.44-k*.12})`;
-        ctx.lineWidth=Math.max(1.7,f.w*(.0115-k*.003));
-        [-1,1].forEach(dir=>{
-          ctx.beginPath();
-          ctx.moveTo(cx+dir*f.w*.04,pY);
-          ctx.quadraticCurveTo(cx+dir*lat*.55,pY-f.h*.01,cx+dir*lat,pY+drop);
-          ctx.stroke();
-        });
-      }
-      pY+=f.h*(.046-k*.012);
-    }
-
-    // Heart / mediastinum — PA silhouette, CTR ~0.47; patient's left = viewer's right
-    const hg=ctx.createRadialGradient(cx+f.w*.12,f.y+f.h*.52,f.w*.04,cx+f.w*.08,f.y+f.h*.50,f.w*.28);
-    hg.addColorStop(0,'rgba(150,166,180,0.50)'); hg.addColorStop(.55,'rgba(124,140,154,0.42)'); hg.addColorStop(1,'rgba(100,116,130,0.22)');
-    ctx.fillStyle=hg;
-    ctx.beginPath();
-    ctx.moveTo(cx-f.w*.028,f.y+f.h*.195);                // SVC
-    ctx.lineTo(cx-f.w*.030,f.y+f.h*.37);
-    ctx.quadraticCurveTo(cx-f.w*.068,f.y+f.h*.50,cx-f.w*.058,f.y+f.h*.625); // RA, just right of midline
-    ctx.quadraticCurveTo(cx+f.w*.10,f.y+f.h*.705,cx+f.w*.292,f.y+f.h*.668); // inferior → apex in left chest
-    ctx.quadraticCurveTo(cx+f.w*.312,f.y+f.h*.52,cx+f.w*.228,f.y+f.h*.442); // LV
-    ctx.quadraticCurveTo(cx+f.w*.162,f.y+f.h*.392,cx+f.w*.145,f.y+f.h*.352); // pulmonary bay
-    ctx.quadraticCurveTo(cx+f.w*.175,f.y+f.h*.302,cx+f.w*.118,f.y+f.h*.288); // aortic knob
-    ctx.quadraticCurveTo(cx+f.w*.028,f.y+f.h*.232,cx-f.w*.028,f.y+f.h*.195);
-    ctx.closePath(); ctx.fill();
-    ctx.strokeStyle='rgba(198,214,226,0.32)'; ctx.lineWidth=Math.max(1.2,f.w*.005); ctx.stroke();
-    ctx.fillStyle='rgba(168,184,198,0.28)';
-    ctx.beginPath(); ctx.ellipse(cx+f.w*.118,f.y+f.h*.296,f.w*.038,f.h*.025,0,0,Math.PI*2); ctx.fill();
-    // Descending aorta
-    ctx.strokeStyle='rgba(160,176,190,0.12)'; ctx.lineWidth=Math.max(4,f.w*.018);
-    ctx.beginPath(); ctx.moveTo(cx+f.w*.07,f.y+f.h*.34); ctx.quadraticCurveTo(cx+f.w*.08,f.y+f.h*.52,cx+f.w*.06,f.y+f.h*.68); ctx.stroke();
-
-    // Trachea: vertical lucency slightly right of midline (patient), so left of cx on PA
-    ctx.fillStyle='rgba(6,8,10,0.42)';
-    const tx=cx-f.w*.016, tw=f.w*.026;
-    ctx.beginPath();
-    ctx.moveTo(tx-tw*.5,f.y+f.h*.105);
-    ctx.lineTo(tx+tw*.5,f.y+f.h*.105);
-    ctx.lineTo(tx+tw*.42,f.y+f.h*.355);
-    ctx.lineTo(tx-tw*.42,f.y+f.h*.355);
-    ctx.closePath(); ctx.fill();
-    // Carina + main bronchi
-    ctx.strokeStyle='rgba(8,10,12,0.40)'; ctx.lineWidth=Math.max(1.6,f.w*.007);
-    ctx.beginPath();
-    ctx.moveTo(tx,f.y+f.h*.355);
-    ctx.quadraticCurveTo(tx-f.w*.04,f.y+f.h*.39,rHilum.x+f.w*.01,rHilum.y-f.h*.01);
-    ctx.moveTo(tx,f.y+f.h*.355);
-    ctx.quadraticCurveTo(tx+f.w*.05,f.y+f.h*.375,lHilum.x-f.w*.01,lHilum.y+f.h*.008);
-    ctx.stroke();
-
-    // Diaphragm: right hemidiaphragm higher; sharp costophrenic angles
-    ctx.beginPath();
-    ctx.moveTo(cx-f.w*.40,f.y+f.h*.78);
-    ctx.quadraticCurveTo(cx-f.w*.20,f.y+f.h*.605,cx-f.w*.04,f.y+f.h*.70);
-    ctx.quadraticCurveTo(cx+f.w*.16,f.y+f.h*.645,cx+f.w*.40,f.y+f.h*.81);
-    ctx.lineTo(cx+f.w*.42,f.y+f.h); ctx.lineTo(cx-f.w*.42,f.y+f.h); ctx.closePath();
-    const dia=ctx.createLinearGradient(0,f.y+f.h*.62,0,f.y+f.h);
-    dia.addColorStop(0,'rgba(92,108,122,0.38)'); dia.addColorStop(1,'rgba(48,58,68,0.50)');
-    ctx.fillStyle=dia; ctx.fill();
-    ctx.beginPath();
-    ctx.moveTo(cx-f.w*.40,f.y+f.h*.78);
-    ctx.quadraticCurveTo(cx-f.w*.20,f.y+f.h*.605,cx-f.w*.04,f.y+f.h*.70);
-    ctx.quadraticCurveTo(cx+f.w*.16,f.y+f.h*.645,cx+f.w*.40,f.y+f.h*.81);
-    ctx.strokeStyle='rgba(198,214,226,0.40)'; ctx.lineWidth=Math.max(1.8,f.h*.007); ctx.stroke();
-    // Gastric bubble under left hemidiaphragm
-    ctx.fillStyle='rgba(4,6,8,0.58)';
-    ctx.beginPath(); ctx.ellipse(cx+f.w*.175,f.y+f.h*.835,f.w*.055,f.h*.032,0,0,Math.PI*2); ctx.fill();
-    ctx.strokeStyle='rgba(170,186,200,0.18)'; ctx.lineWidth=1;
-    ctx.beginPath(); ctx.ellipse(cx+f.w*.175,f.y+f.h*.835,f.w*.055,f.h*.032,0,0,Math.PI*2); ctx.stroke();
-
-    // Spine visible through the heart — bodies fade caudally
-    for(let i=0;i<12;i++){
-      const k=i/11;
-      const y=f.y+f.h*(.175+i*.048);
-      const a=.14-k*.10;
-      ctx.fillStyle=`rgba(196,210,222,${a})`;
-      ctx.beginPath(); ctx.ellipse(cx,y,f.w*(.042+k*.010),f.h*.013,0,0,Math.PI*2); ctx.fill();
-      ctx.fillStyle=`rgba(160,176,190,${a*.45})`;
-      ctx.beginPath(); ctx.ellipse(cx,y,f.w*.012,f.h*.007,0,0,Math.PI*2); ctx.fill();
-    }
-
-    // First ribs — short, steep C-arcs under the clavicles
-    ctx.strokeStyle='rgba(214,228,238,0.46)'; ctx.lineWidth=Math.max(2.2,f.w*.011);
-    [-1,1].forEach(dir=>{
-      ctx.beginPath();
-      ctx.moveTo(cx+dir*f.w*.04,f.y+f.h*.188);
-      ctx.bezierCurveTo(cx+dir*f.w*.13,f.y+f.h*.155, cx+dir*f.w*.22,f.y+f.h*.195, cx+dir*f.w*.20,f.y+f.h*.248);
-      ctx.quadraticCurveTo(cx+dir*f.w*.12,f.y+f.h*.255,cx+dir*f.w*.055,f.y+f.h*.238);
-      ctx.stroke();
-    });
-
-    // Clavicles — symmetric, slightly sloped, anterior to first ribs
-    [-1,1].forEach(dir=>{
-      ctx.strokeStyle='rgba(226,236,244,0.46)'; ctx.lineWidth=Math.max(2.1,f.w*.0095);
-      ctx.beginPath();
-      ctx.moveTo(cx+dir*f.w*.028,f.y+f.h*.205);
-      ctx.bezierCurveTo(cx+dir*f.w*.14,f.y+f.h*.168, cx+dir*f.w*.24,f.y+f.h*.175, cx+dir*f.w*.355,f.y+f.h*.228);
-      ctx.stroke();
-      ctx.strokeStyle='rgba(226,236,244,0.22)'; ctx.lineWidth=Math.max(1.2,f.w*.005);
-      ctx.beginPath();
-      ctx.moveTo(cx+dir*f.w*.028,f.y+f.h*.218);
-      ctx.bezierCurveTo(cx+dir*f.w*.14,f.y+f.h*.180, cx+dir*f.w*.24,f.y+f.h*.188, cx+dir*f.w*.355,f.y+f.h*.240);
-      ctx.stroke();
-    });
-
-    // Anterior ribs — steeper diagonal toward the sternum, much fainter than posterior
-    let aY=f.y+f.h*.255;
-    for(let i=0;i<10;i++){
-      const k=i/9;
-      const lat=f.w*(.350-k*.018);
-      const med=f.w*(i<7?.055:.11+(i-7)*.03);
-      const slope=f.h*(.078+k*.018);
-      ctx.strokeStyle=`rgba(186,204,218,${.22-k*.06})`;
-      ctx.lineWidth=Math.max(1.0,f.w*(.006-k*.0015));
-      [-1,1].forEach(dir=>{
-        ctx.beginPath();
-        ctx.moveTo(cx+dir*lat,aY);
-        ctx.quadraticCurveTo(cx+dir*(lat*.55+med*.45),aY+slope*.58,cx+dir*med,aY+slope);
-        ctx.stroke();
-      });
-      aY+=f.h*(.046-k*.010);
-    }
-
-    ctx.restore();
-    marker(f,'R',true);
-  }
-
-  function drawSkull(f,flick){
-    filmBack(f,flick*.85);
-    ctx.save();
-    const m=f.w*.07;
-    ctx.beginPath(); ctx.rect(f.x+m,f.y+m*.7,f.w-m*2,f.h-m*1.45); ctx.clip();
-    ctx.lineCap='round'; ctx.lineJoin='round';
-    // Lateral skull, face to the left. Landmark: vault center shifted right.
-    const sx=f.x+f.w*.58, sy=f.y+f.h*.36;
-    const rx=f.w*.34, ry=f.h*.29;
-
-    function vaultPath(k){
-      const ax=rx*k, ay=ry*k;
-      ctx.beginPath();
-      ctx.moveTo(sx-ax*.88,sy+ay*.08);
-      ctx.bezierCurveTo(sx-ax*.98,sy-ay*.50, sx-ax*.10,sy-ay*1.06, sx+ax*.28,sy-ay*1.00);
-      ctx.bezierCurveTo(sx+ax*.88,sy-ay*.92, sx+ax*1.16,sy-ay*.12, sx+ax*1.02,sy+ay*.38);
-      ctx.bezierCurveTo(sx+ax*.92,sy+ay*.78, sx+ax*.32,sy+ay*.68, sx-ax*.14,sy+ay*.36);
-    }
-
-    // Soft-tissue scalp / nose (very faint)
-    ctx.strokeStyle='rgba(190,206,218,0.12)'; ctx.lineWidth=Math.max(3.5,f.w*.028);
-    vaultPath(1.08); ctx.stroke();
-    ctx.beginPath();
-    ctx.moveTo(sx-rx*.88,sy+ry*.04);
-    ctx.quadraticCurveTo(sx-rx*1.18,sy+ry*.16,sx-rx*1.02,sy+ry*.30);
-    ctx.strokeStyle='rgba(190,206,218,0.10)'; ctx.lineWidth=Math.max(2.2,f.w*.016); ctx.stroke();
-
-    // Calvarium fill: lucent interior, denser cortex
-    const vg=ctx.createRadialGradient(sx-rx*.12,sy-ry*.08,rx*.06,sx+rx*.05,sy,rx*1.2);
-    vg.addColorStop(0,'rgba(22,28,34,0.52)'); vg.addColorStop(.5,'rgba(52,64,74,0.22)'); vg.addColorStop(.84,'rgba(150,166,180,0.26)'); vg.addColorStop(1,'rgba(208,222,234,0.42)');
-    ctx.fillStyle=vg; vaultPath(1); ctx.closePath(); ctx.fill();
-
-    // Outer table
-    ctx.strokeStyle='rgba(224,236,244,0.52)'; ctx.lineWidth=Math.max(2.6,f.w*.018);
-    vaultPath(1); ctx.stroke();
-    // Inner table
-    ctx.strokeStyle='rgba(186,202,216,0.28)'; ctx.lineWidth=Math.max(1.2,f.w*.008);
-    vaultPath(.86); ctx.stroke();
-
-    // Cranial sutures (faint)
-    ctx.strokeStyle='rgba(200,216,228,0.18)'; ctx.lineWidth=Math.max(.8,f.w*.0045);
-    ctx.setLineDash([3,4]);
-    ctx.beginPath(); // coronal — bregma down toward pterion
-    ctx.moveTo(sx+rx*.05,sy-ry*.98);
-    ctx.quadraticCurveTo(sx-rx*.12,sy-ry*.40,sx-rx*.18,sy+ry*.02);
-    ctx.stroke();
-    ctx.beginPath(); // lambdoid — lambda to mastoid
-    ctx.moveTo(sx+rx*.42,sy-ry*.78);
-    ctx.quadraticCurveTo(sx+rx*.78,sy-ry*.05,sx+rx*.72,sy+ry*.38);
-    ctx.stroke();
-    ctx.beginPath(); // squamosal
-    ctx.moveTo(sx+rx*.02,sy-ry*.12);
-    ctx.quadraticCurveTo(sx+rx*.28,sy+ry*.10,sx+rx*.22,sy+ry*.30);
-    ctx.stroke();
-    ctx.setLineDash([]);
-
-    // Frontal sinus lucency
-    ctx.fillStyle='rgba(8,10,12,0.38)';
-    ctx.beginPath(); ctx.ellipse(sx-rx*.72,sy-ry*.28,rx*.13,ry*.11,.35,0,Math.PI*2); ctx.fill();
-    ctx.strokeStyle='rgba(180,196,210,0.22)'; ctx.lineWidth=1;
-    ctx.beginPath(); ctx.ellipse(sx-rx*.72,sy-ry*.28,rx*.13,ry*.11,.35,0,Math.PI*2); ctx.stroke();
-
-    // Orbit (lateral) + ethmoid lucency
-    ctx.fillStyle='rgba(8,10,12,0.40)';
-    ctx.beginPath(); ctx.ellipse(sx-rx*.52,sy+ry*.02,rx*.16,ry*.13,.18,0,Math.PI*2); ctx.fill();
-    ctx.strokeStyle='rgba(210,224,234,0.36)'; ctx.lineWidth=Math.max(1.4,f.w*.008);
-    ctx.beginPath(); ctx.ellipse(sx-rx*.52,sy+ry*.02,rx*.16,ry*.13,.18,0,Math.PI*2); ctx.stroke();
-    ctx.fillStyle='rgba(8,10,12,0.28)';
-    ctx.beginPath(); ctx.ellipse(sx-rx*.38,sy+ry*.04,rx*.07,ry*.08,0,0,Math.PI*2); ctx.fill();
-
-    // Sella turcica (saddle) + sphenoid sinus
-    const slx=sx-rx*.08, sly=sy+ry*.14;
-    ctx.fillStyle='rgba(8,10,12,0.42)';
-    ctx.beginPath(); ctx.ellipse(slx+rx*.02,sly+ry*.14,rx*.14,ry*.10,0,0,Math.PI*2); ctx.fill();
-    ctx.strokeStyle='rgba(226,238,246,0.55)'; ctx.lineWidth=Math.max(1.8,f.w*.011);
-    ctx.beginPath();
-    ctx.moveTo(slx-rx*.12,sly-ry*.02);
-    ctx.lineTo(slx-rx*.05,sly+ry*.02);
-    ctx.quadraticCurveTo(slx+rx*.01,sly+ry*.12,slx+rx*.10,sly+ry*.02);
-    ctx.lineTo(slx+rx*.11,sly-ry*.08);
-    ctx.quadraticCurveTo(slx+rx*.04,sly-ry*.01,slx-rx*.04,sly);
-    ctx.stroke();
-
-    // Nasal bone
-    ctx.strokeStyle='rgba(214,228,238,0.40)'; ctx.lineWidth=Math.max(1.5,f.w*.008);
-    ctx.beginPath();
-    ctx.moveTo(sx-rx*.88,sy+ry*.06);
-    ctx.lineTo(sx-rx*1.10,sy+ry*.18);
-    ctx.quadraticCurveTo(sx-rx*1.02,sy+ry*.24,sx-rx*.86,sy+ry*.20);
-    ctx.stroke();
-
-    // Maxilla + maxillary sinus lucency
-    ctx.fillStyle='rgba(8,10,12,0.34)';
-    ctx.beginPath(); ctx.ellipse(sx-rx*.58,sy+ry*.38,rx*.14,ry*.12,.1,0,Math.PI*2); ctx.fill();
-    ctx.strokeStyle='rgba(200,216,228,0.28)'; ctx.lineWidth=Math.max(1.2,f.w*.007);
-    ctx.beginPath();
-    ctx.moveTo(sx-rx*.90,sy+ry*.22);
-    ctx.quadraticCurveTo(sx-rx*.70,sy+ry*.32,sx-rx*.42,sy+ry*.30);
-    ctx.quadraticCurveTo(sx-rx*.38,sy+ry*.48,sx-rx*.72,sy+ry*.52);
-    ctx.quadraticCurveTo(sx-rx*.92,sy+ry*.42,sx-rx*.90,sy+ry*.22);
-    ctx.stroke();
-    // Hard palate
-    ctx.strokeStyle='rgba(210,224,234,0.32)'; ctx.lineWidth=Math.max(1.3,f.w*.007);
-    ctx.beginPath(); ctx.moveTo(sx-rx*.96,sy+ry*.48); ctx.lineTo(sx-rx*.38,sy+ry*.50); ctx.stroke();
-
-    // Mandible: condyle, ramus, angle, body
-    ctx.strokeStyle='rgba(216,230,240,0.46)'; ctx.lineWidth=Math.max(2.0,f.w*.012);
-    ctx.beginPath();
-    ctx.moveTo(sx+rx*.02,sy+ry*.28); // condyle near EAM
-    ctx.quadraticCurveTo(sx+rx*.06,sy+ry*.22,sx-rx*.02,sy+ry*.26);
-    ctx.lineTo(sx-rx*.06,sy+ry*.72); // ramus
-    ctx.quadraticCurveTo(sx-rx*.12,sy+ry*.88,sx-rx*.32,sy+ry*.90); // angle
-    ctx.quadraticCurveTo(sx-rx*.70,sy+ry*.92,sx-rx*.98,sy+ry*.78); // body → chin
-    ctx.quadraticCurveTo(sx-rx*.92,sy+ry*.68,sx-rx*.70,sy+ry*.70);
-    ctx.lineTo(sx-rx*.22,sy+ry*.68); // alveolar
-    ctx.quadraticCurveTo(sx-rx*.12,sy+ry*.50,sx-rx*.04,sy+ry*.32);
-    ctx.stroke();
-    ctx.fillStyle='rgba(148,164,178,0.16)';
-    ctx.beginPath();
-    ctx.moveTo(sx-rx*.04,sy+ry*.32);
-    ctx.lineTo(sx-rx*.06,sy+ry*.72);
-    ctx.quadraticCurveTo(sx-rx*.12,sy+ry*.88,sx-rx*.32,sy+ry*.90);
-    ctx.quadraticCurveTo(sx-rx*.70,sy+ry*.92,sx-rx*.98,sy+ry*.78);
-    ctx.quadraticCurveTo(sx-rx*.92,sy+ry*.68,sx-rx*.70,sy+ry*.70);
-    ctx.lineTo(sx-rx*.22,sy+ry*.68);
-    ctx.quadraticCurveTo(sx-rx*.12,sy+ry*.50,sx-rx*.04,sy+ry*.32);
-    ctx.closePath(); ctx.fill();
-    // Coronoid
-    ctx.beginPath();
-    ctx.moveTo(sx-rx*.12,sy+ry*.34);
-    ctx.lineTo(sx-rx*.18,sy+ry*.22);
-    ctx.lineTo(sx-rx*.08,sy+ry*.36);
-    ctx.strokeStyle='rgba(210,224,234,0.32)'; ctx.lineWidth=Math.max(1.2,f.w*.007); ctx.stroke();
-
-    // Teeth — faint occlusal ticks, not clip-art blocks
-    ctx.strokeStyle='rgba(220,232,242,0.22)'; ctx.lineWidth=Math.max(.8,f.w*.004);
-    for(let i=0;i<7;i++){
-      const x=sx-rx*(.86-i*.07);
-      ctx.beginPath(); ctx.moveTo(x,sy+ry*.475); ctx.lineTo(x,sy+ry*.525); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(x,sy+ry*.675); ctx.lineTo(x,sy+ry*.722); ctx.stroke();
-    }
-
-    // Petrous / EAM
-    ctx.strokeStyle='rgba(200,216,228,0.28)'; ctx.lineWidth=Math.max(1.3,f.w*.007);
-    ctx.beginPath(); ctx.ellipse(sx+rx*.04,sy+ry*.22,rx*.055,ry*.048,0,0,Math.PI*2); ctx.stroke();
-    ctx.fillStyle='rgba(10,12,14,0.35)';
-    ctx.beginPath(); ctx.ellipse(sx+rx*.04,sy+ry*.22,rx*.022,ry*.020,0,0,Math.PI*2); ctx.fill();
-
-    // C1–C2 at the skull base, C3 faint
-    const c0x=sx+rx*.08, c0y=sy+ry*1.08;
-    ctx.strokeStyle='rgba(200,216,228,0.32)'; ctx.lineWidth=Math.max(1.5,f.w*.008);
-    ctx.beginPath(); ctx.ellipse(c0x,c0y,f.w*.055,f.h*.022,0,0,Math.PI*2); ctx.stroke(); // C1 ring
-    ctx.beginPath(); ctx.moveTo(c0x-f.w*.012,c0y-f.h*.04); ctx.lineTo(c0x-f.w*.012,c0y+f.h*.01); ctx.stroke(); // dens
-    ctx.fillStyle='rgba(186,202,216,0.22)';
-    ctx.beginPath(); ctx.ellipse(c0x,c0y+f.h*.055,f.w*.048,f.h*.020,0,0,Math.PI*2); ctx.fill(); // C2 body
-    ctx.strokeStyle='rgba(200,216,228,0.28)';
-    ctx.beginPath(); ctx.moveTo(c0x+f.w*.04,c0y+f.h*.055); ctx.lineTo(c0x+f.w*.09,c0y+f.h*.048); ctx.stroke(); // C2 spinous
-    ctx.fillStyle='rgba(180,196,210,0.12)';
-    ctx.beginPath(); ctx.ellipse(c0x,c0y+f.h*.10,f.w*.046,f.h*.018,0,0,Math.PI*2); ctx.fill();
-
-    ctx.restore();
-    marker(f,'L',true);
-  }
-
-  let t=0;
-  function draw(){
-    if(overlayOnly){
-      ctx.clearRect(0,0,W,H);
-    }else{
-      const room=ctx.createLinearGradient(0,0,0,H);
-      room.addColorStop(0,'#0b0e12'); room.addColorStop(.55,'#06080b'); room.addColorStop(1,'#030405');
-      ctx.fillStyle=room; ctx.fillRect(0,0,W,H);
-    }
-    const flick=.5+.5*Math.sin(t*.028);
-
-    if(!overlayOnly){
-      const panel=ctx.createLinearGradient(box.x,box.y,box.x,box.y+box.h);
-      panel.addColorStop(0,'#1c242e'); panel.addColorStop(1,'#10151c');
-      ctx.fillStyle=panel; ctx.fillRect(box.x,box.y,box.w,box.h);
-    }
-    ctx.save();
-    ctx.shadowColor=`rgba(110,210,220,${.16+flick*.08})`; ctx.shadowBlur=38;
-    ctx.strokeStyle=`rgba(150,220,230,${.20+flick*.10})`; ctx.lineWidth=3;
-    ctx.strokeRect(box.x,box.y,box.w,box.h);
-    ctx.restore();
-    ctx.strokeStyle=`rgba(190,236,246,${.10+flick*.06})`; ctx.lineWidth=1;
-    ctx.strokeRect(box.x+6,box.y+6,box.w-12,box.h-12);
-    ctx.strokeStyle='rgba(140,180,192,0.045)'; ctx.lineWidth=1;
-    for(let i=1;i<8;i++){
-      ctx.beginPath(); ctx.moveTo(box.x+box.w*(i/8),box.y); ctx.lineTo(box.x+box.w*(i/8),box.y+box.h); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(box.x,box.y+box.h*(i/8)); ctx.lineTo(box.x+box.w,box.y+box.h*(i/8)); ctx.stroke();
-    }
-    ctx.fillStyle='rgba(88,98,108,0.58)';
-    ctx.fillRect(box.x+box.w*.05,box.y-H*.01,box.w*.90,Math.max(6,H*.012));
-
-    drawChest(chest,flick);
-    drawSkull(skull,flick);
-    clipAt(chest.x+chest.w*.28,chest.y-2,15);
-    clipAt(chest.x+chest.w*.72,chest.y-2,15);
-    clipAt(skull.x+skull.w*.32,skull.y-2,13);
-    clipAt(skull.x+skull.w*.68,skull.y-2,13);
-
-    ctx.save();
-    ctx.beginPath(); ctx.rect(box.x,box.y,box.w,box.h); ctx.clip();
-    const sy=box.y+((t*1.15)%(box.h+170))-90;
-    const sg=ctx.createLinearGradient(0,sy,0,sy+96);
-    sg.addColorStop(0,'transparent'); sg.addColorStop(.5,`rgba(176,230,240,${.065+flick*.03})`); sg.addColorStop(1,'transparent');
-    ctx.fillStyle=sg; ctx.fillRect(box.x,sy,box.w,96);
-    ctx.restore();
-
-    ctx.save(); ctx.globalAlpha=.065; ctx.fillStyle=grainPat; ctx.fillRect(0,0,W,H); ctx.restore();
-    t++; animId=requestAnimationFrame(draw);
-  }
-  draw();
-
-  const d=document.getElementById('theme-decor');
-  const scan=document.createElement('div'); scan.className='xray-scanlines';
-  d.appendChild(scan);
 }
 
 // ══ UTILITIES ════════════════════════════════════════════
