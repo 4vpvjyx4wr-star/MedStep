@@ -657,6 +657,13 @@ textarea:focus{outline:none;border-color:var(--primary)}
   opacity:.8;cursor:pointer;
 }
 .edit-q-opt-text,.edit-q-opt-rationale{height:78px;margin-bottom:10px;font-family:var(--font-display);font-size:.82rem}
+.edit-q-remove{
+  background:none;border:none;color:var(--subtle);cursor:pointer;
+  font-size:.68rem;font-weight:700;font-family:var(--font-display);
+  padding:0;opacity:.7;
+}
+.edit-q-remove:hover{opacity:1;color:var(--danger)}
+#edit-q-add-option{width:100%;margin:4px 0 8px;font-size:.78rem;padding:8px}
 #edit-q-stem{height:120px;font-family:var(--font-display);font-size:.86rem}
 #edit-q-lo{height:72px;font-family:var(--font-display);font-size:.82rem;margin-bottom:14px}
 
@@ -794,7 +801,8 @@ mark.medstep-highlight { background-color: rgba(230, 126, 34, 0.4); color: inher
 .lab-table td { padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
 .lab-val { text-align: right; color: var(--primary); }
 .option-row.disabled{cursor:default}
-.option-letter{width:24px;height:24px;background:var(--primary);color:#fff;border-radius:5px;display:flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0;font-size:.72rem;font-family:var(--font-mono)}
+.option-letter{min-width:24px;width:auto;height:24px;padding:0 5px;background:var(--primary);color:#fff;border-radius:5px;display:flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0;font-size:.72rem;font-family:var(--font-mono);box-sizing:border-box}
+#options-list{display:flex;flex-direction:column}
 .option-text{flex-grow:1;font-size:.88rem;line-height:1.4;overflow-wrap:break-word;word-wrap:break-word}
 .rationale-bubble{margin:3px 0 10px 48px;padding:9px 14px;background:rgba(0,0,0,.15);border-radius:8px;border-left:3px solid var(--primary);font-size:.82rem;line-height:1.45;color:var(--subtle)}
 
@@ -2164,6 +2172,7 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
 
       <div class="modal-label" style="margin-top:4px">Answers &amp; rationales</div>
       <div id="edit-question-options"></div>
+      <button type="button" class="btn btn-secondary" id="edit-q-add-option" onclick="addEditQuestionOption()">+ Add answer</button>
     </div>
 
     <div class="report-validation-error" id="edit-question-error" aria-live="polite"></div>
@@ -2522,7 +2531,7 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
   <div class="kbd-panel">
     <div class="kbd-panel-title">⌨️ Keyboard Controls</div>
     <div class="kbd-row"><span class="kbd-key">← →</span><span class="kbd-desc">Navigate Questions</span></div>
-    <div class="kbd-row"><span class="kbd-key">1 – 5</span><span class="kbd-desc">Select Answer</span></div>
+    <div class="kbd-row"><span class="kbd-key">1 – 9</span><span class="kbd-desc">Select Answer</span></div>
     <div class="kbd-row"><span class="kbd-key">Space</span><span class="kbd-desc">Next Question</span></div>
     <div class="kbd-row"><span class="kbd-key">R</span><span class="kbd-desc">Undo Answer</span></div>
     <div class="kbd-row"><span class="kbd-key">S</span><span class="kbd-desc">Scramble All</span></div>
@@ -2654,7 +2663,7 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
         <div class="controls-card">
           <div class="panel-header"><span class="panel-header-icon">⌨️</span> Controls</div>
           <div class="kbd-row"><span class="kbd-key">← →</span><span class="kbd-desc">Navigate</span></div>
-          <div class="kbd-row"><span class="kbd-key">1 – 5</span><span class="kbd-desc">Select Answer</span></div>
+          <div class="kbd-row"><span class="kbd-key">1 – 9</span><span class="kbd-desc">Select Answer</span></div>
           <div class="kbd-row"><span class="kbd-key">Space</span><span class="kbd-desc">Next Question</span></div>
           <div class="kbd-row"><span class="kbd-key">R</span><span class="kbd-desc">Undo Answer</span></div>
           <div class="kbd-row"><span class="kbd-key">S</span><span class="kbd-desc">Scramble All</span></div>
@@ -3020,7 +3029,56 @@ let questions=[], currentIdx=0, timerInt=null, paceTimerInt=null, paceAutoAdvanc
   isFlaggedReviewMode=false, flaggedReviewIndices=[], flaggedReviewPos=0, flaggedReviewPosByIdx=new Map(),
   savedQuizState=null, activeQuizMeta=null, multibuzzLoadTimer=null, multibuzzFrameLoaded=false, multibuzzNudgeTimer=null,
   persistQuizDebounce=null, restoringActiveQuiz=false;
-const LETTERS=['A','B','C','D','E'];
+const MIN_QUIZ_OPTIONS=5;
+function optionLetter(i){
+  let n=Math.floor(Number(i));
+  if(!Number.isFinite(n)||n<0) return '?';
+  let s='';
+  n+=1;
+  while(n>0){
+    n--;
+    s=String.fromCharCode(65+(n%26))+s;
+    n=Math.floor(n/26);
+  }
+  return s;
+}
+function quizQuestionOptions(q){
+  if(!q||typeof q!=='object') return [];
+  if(Array.isArray(q.options)) return q.options;
+  if(Array.isArray(q.choices)) return q.choices;
+  if(Array.isArray(q.answers)) return q.answers;
+  return [];
+}
+function normalizeQuizQuestion(q){
+  if(!q||typeof q!=='object') return q;
+  const options=quizQuestionOptions(q).filter(o=>o&&typeof o==='object');
+  return Object.assign({},q,{options});
+}
+function questionsMissingMinOptions(list){
+  return (list||[]).filter(q=>!Array.isArray(q.options)||q.options.length<MIN_QUIZ_OPTIONS);
+}
+function formatShortOptionsError(shortCount,total){
+  return 'Every question needs at least '+MIN_QUIZ_OPTIONS+' answer options ('+
+    shortCount+' of '+total+' '+(shortCount===1?'has':'have')+' fewer).';
+}
+function questionStemHasLecture(q){
+  return /lecture/i.test(String(q && q.question || ''));
+}
+function questionsWithLectureInStem(list){
+  return (list||[]).filter(questionStemHasLecture);
+}
+function formatLectureStemError(n,total){
+  return n+' of '+total+' question'+(n===1?' has':' have')+
+    ' the word "lecture" in the stem — rewrite those stems (OK in rationales).';
+}
+function quizContentValidationError(list){
+  const qs=(list||[]).map(normalizeQuizQuestion);
+  const short=questionsMissingMinOptions(qs);
+  if(short.length) return formatShortOptionsError(short.length, qs.length);
+  const lecture=questionsWithLectureInStem(qs);
+  if(lecture.length) return formatLectureStemError(lecture.length, qs.length);
+  return '';
+}
 const ALL_THEMES=[
   'theme-slate-orange','theme-cyber','theme-autumn','theme-mesa','theme-evergreen',
   'theme-space','theme-rainbow','theme-paper','theme-neon-hospital','theme-arctic','theme-volcanic',
@@ -3030,7 +3088,7 @@ const ALL_THEMES=[
 
 // ── Master Prompt ──────────────────────────────────────
 const COPILOT_PROMPT_MAX_CHARS=10240;
-const MASTER_PROMPT=`Role: Senior USMLE Step 1 Item Writer and Psychometric Editor (15+ years). Generate a high-fidelity 5-option MCQ block strictly from the attached lecture. Outside facts are disallowed. If you use a bridging inference the source does not state outright, put it only in that option's rationale and label it as an inference — never as settled lecture fact.
+const MASTER_PROMPT=`Role: Senior USMLE Step 1 Item Writer and Psychometric Editor (15+ years). Generate a high-fidelity MCQ block strictly from the attached lecture. Each item MUST have at least five options (prefer five; extra options only when they stay same-category and same length). Outside facts are disallowed. If you use a bridging inference the source does not state outright, put it only in that option's rationale and label it as an inference — never as settled lecture fact.
 
 ABSOLUTE RULES — violations are disqualifying:
 
@@ -3056,28 +3114,28 @@ c. End with one lead-in sentence that states the task (e.g., "Which of the follo
 d. Labs: specific values plus reference ranges in brackets (e.g., Blood glucose: 140 mg/dL [70-100 mg/dL]).
 e. Load-bearing details only—no unused findings, scenic history, or unused labs (Boards Mode, if active, is the only extra-lab exception).
 f. Stem style (still obey Section 2 counts): 1st/2nd-order non-clinical (anatomy, biochem, molecular, physiology mechanism) = direct stem, no vignette unless the LO requires a scenario. Clinical 3rd-order = short vignette: age/sex, complaint, 1-2 exam or lab findings, then the lead-in.
-g. Lecture-attribution ban (stems, options, and lead-ins): never write "per the lecture," "according to the lecture," "from the lecture," "as stated in the lecture," "per the slides," "according to the slides," "as discussed in lecture," or any similar source-pointer. Write standalone medical questions. Grounding is an authoring constraint, not student-facing wording.
+g. STEM WORD BAN — "lecture" (DISQUALIFYING): The "question" field (the stem and its lead-in) MUST NOT contain the word "lecture" in any form (lecture, lectures, Lecture, LECTURE). Scan the stem before emitting. Forbidden phrasing includes "per the lecture," "from the lecture," "according to the lecture," "listed in the lecture," "as stated in the lecture," "as discussed in lecture," "the lecture states," and "in lecture." Write a standalone medical question with no source-pointer. This ban applies ONLY to the question stem — option rationales MAY use "lecture." Also never put "per/according to/from the slides" in the stem. Grounding is an authoring constraint, not student-facing wording.
 
 4. THE OPTION PARITY RULE (CRITICAL)
-a. The +-2 Word Audit: all five options MUST be within +-2 words of each other. Count every word. If A is 10 words, B-E must be 8-12. Do not guess.
-b. Longest-answer exploit: the correct answer must RARELY be longest (<30% of items). In at least 10 out of 30 questions, a distractor must be the single longest option. If length is uneven, shorten the long ones or add the SAME medically necessary qualifier to ALL five. Never pad with filler, definitions, mechanism blurbs, or tails ("the enzyme that phosphorylates X"). Choices are terse labels the student must recognize, not sentences they can read for meaning.
+a. The +-2 Word Audit: ALL options MUST be within +-2 words of each other. Count every word. If A is 10 words, every other option must be 8-12. Do not guess.
+b. Longest-answer exploit: the correct answer must RARELY be longest (<30% of items). In at least 10 out of 30 questions, a distractor must be the single longest option. If length is uneven, shorten the long ones or add the SAME medically necessary qualifier to ALL options. Never pad with filler, definitions, mechanism blurbs, or tails ("the enzyme that phosphorylates X"). Choices are terse labels the student must recognize, not sentences they can read for meaning.
 c. The correct answer should be shortest on ~20-30% of items (true length-neutrality).
 d. Do not make the key more qualified, specific, or complete than distractors. Hedges, mechanisms, or conditions that fit only the key belong in the stem.
 
 5. DISTRACTOR INTEGRITY & ANTI-EXPLOIT
-Exactly five options per item—never four. All four wrong answers MUST:
+At least five options per item—never fewer. Prefer five (A-E). Extra options (F+) are allowed only when they are same-category, pass word-parity, and are pedagogically necessary. Never emit four or fewer. Every incorrect answer MUST:
 a. Be plausible to a student with partial knowledge.
 b. Be common misconceptions, adjacent diagnoses, or related-but-wrong pathophysiology in the SAME category as the key. Each is wrong for a specific, nameable reason—never merely "not mentioned." A prepared student should see why each fails once explained.
 c. Never be absurd or dismissible without medical knowledge. A generally true statement lifted from elsewhere is allowed only if a stem qualifier makes it false here and that qualifier does real work.
 d. Include one dangerous distractor nearly identical in length and clinical detail, differing by one decisive fact.
 e. Confidence traps: At least 7 questions must contain a distractor that sounds more authoritative, detailed, or "textbook" than the key—but is wrong in one teachable way.
-f. Same grammatical structure for all five (all noun phrases, or all complete sentences).
+f. Same grammatical structure for ALL options (all noun phrases, or all complete sentences).
 g. Forbidden: parentheticals like "(X because Y)"; hedges ("likely due to"); any phrase that makes one option feel more complete or authoritative; "All of the above"; "None of the above"; "Both A and B"; references to other options.
 h. Homogeneous types (all enzymes, all diagnoses, all antibody isotypes, all signaling molecules, all sites of action). Mixed types (e.g., three drugs and two side effects) are dead options students skip. If a fifth same-category choice is hard, invent a near-miss—do not emit four options.
 i. The student must know the material. Never let wording give the answer away (length tell, extra clause only on the key, placeholder distractors beside a fully formed key). Put explanations in the stem or rationale, not the choice.
 
 6. ANSWER POSITION BALANCE:
-Distribute keys across A, B, C, D, and E. Each letter should be correct approximately 6 times across 30 questions. No letter may be correct more than 7 times. Randomize positions. NEVER use the same key position for more than 2 consecutive items.
+Distribute keys across A, B, C, D, and E. Each letter should be correct approximately 6 times across 30 questions. No letter may be correct more than 7 times. Randomize positions. NEVER use the same key position for more than 2 consecutive items. If an item has more than five options, the key may be any of those letters and must still be randomized.
 
 7. RATIONALE — every option:
 a. Correct: 1-2 sentences of mechanism or contrast; name the concept; do not merely restate the fact; no source-pointers.
@@ -3087,7 +3145,7 @@ c. If any rationale content is your inference rather than a stated source fact, 
 8. NO FORMATTING CUES: Do not bold, italicize, or otherwise mark any option. Teach the medicine; do not cite the deck.
 
 9. OUTPUT FORMAT
-Return ONLY a valid JSON array. No preamble, markdown fences, commentary, or extra keys. Use this schema only. Before emitting, verify every item: exactly five homogeneous options; +-2 word parity; exactly one isCorrect true; difficulty_order matches the assigned mix; cited_learning_objective is the named LO; no lecture-attribution phrasing in question or option text.
+Return ONLY a valid JSON array. No preamble, markdown fences, commentary, or extra keys. Use this schema only. Before emitting, search each item's "question" string: if it contains "lecture" in any case, rewrite that stem until the word is gone (rationales may keep it). Then verify every item: at least five homogeneous options (prefer five; never fewer); +-2 word parity across ALL options; exactly one isCorrect true; difficulty_order matches the assigned mix; cited_learning_objective is the named LO; no source-pointers in question text.
 
 10. CHARACTER ENCODING (CRITICAL)
 a. Valid UTF-8 JSON. Never emit mojibake (â, Â², Â°, Âµ, or Windows-1252 artifacts).
@@ -3120,6 +3178,12 @@ const LS_CHANGELOG_SEEN='medstep_changelog_seen';
 const LS_CHANGELOG_OPEN='medstep_changelog_open';
 const CHANGELOG_VISIBLE_COUNT=3;
 const MEDSTEP_CHANGELOG=[
+  {
+    id:'2026-09-09-quiz-options',
+    date:'2026-09-09',
+    title:'Quizzes keep at least 5 answers',
+    body:'Generated and saved quizzes now require at least five answer choices. Extra options (F, G, …) render, score, and keyboard-select like A–E instead of breaking the layout.'
+  },
   {
     id:'2026-09-07-resume-codes',
     date:'2026-09-07',
@@ -7973,18 +8037,18 @@ const BOARDS_MODE_PROMPT_BLOCK = `3b. BOARDS MODE — VIGNETTE DENSITY:
 a. Expand every clinical vignette and every 2nd- or 3rd-order stem into a dense NBME paragraph: at least 8 sentences of uninterrupted narrative (HPI, pertinent history, exam, imaging, course) before the single-sentence lead-in.
 b. Embed exhaustive lab tables (CBC with differential, CMP, ABG, UA, coags, endocrine, lipids, infection markers) with values and bracketed reference ranges, even when not all are decision-critical.
 c. Stems must test reading stamina: the decisive clue sits in a long, dense passage, not a short cue-rich stem.
-d. Extra labs here are the intentional exception to Section 3e's load-bearing rule. Section 3g lecture-attribution ban still applies.
+d. Extra labs here are the intentional exception to Section 3e's load-bearing rule. Section 3g still applies: the word "lecture" must not appear in any question stem (rationales may use it).
 
 `;
 
 function buildEzModePromptBlock(thirdVignetteMax) {
   return `3c. EZ MODE — RAPID RECALL (supersedes conflicting Section 3 rules):
-a. Buzzword-forward stems: use high-yield buzzwords, classic phrase cues, and lecture terms. This mode relaxes stem blinding (Section 3a) for faster pattern recognition.
+a. Buzzword-forward stems: use high-yield buzzwords, classic phrase cues, and source terms. This mode relaxes stem blinding (Section 3a) for faster pattern recognition.
 b. Brevity: every stem 1-3 short sentences. No dense paragraphs, lab dumps, or multi-paragraph vignettes.
 c. Cap third-order patient scenarios at ${thirdVignetteMax}; remaining items are standalone recall or single-sentence stems.
 d. Direct questions OK: 1st/2nd-order may use "What is...?", "Which enzyme...?", or "Which of the following best describes...?" without a scenario.
 e. Labs only when essential to the one fact tested; otherwise omit.
-f. Lecture-attribution ban still applies: never "per/according to/from the lecture" in stems or options.
+f. The word "lecture" is forbidden in every question stem (any case). Rationales may use it. Never "per/according to/from the lecture" in stems.
 
 `;
 }
@@ -8093,7 +8157,9 @@ function loadDemo(){
 // ══ QUIZ INIT ════════════════════════════════════════════
 function initQuiz(){
   try{
-    const raw=sanitizeQuizData(JSON.parse(document.getElementById('mega-input').value.trim()));
+    const extracted=extractQuizQuestionsFromText(document.getElementById('mega-input').value);
+    if(!extracted.length) throw new Error('no questions');
+    const raw=sanitizeQuizData(extracted);
     let meta = { source: 'manual', title: 'Pasted Quiz' };
     if (typeof stagedQuizzes !== 'undefined' && stagedQuizzes.length) {
       meta = metaFromQuizSources(stagedQuizzes.map(s =>
@@ -8104,18 +8170,27 @@ function initQuiz(){
         })
       ));
     }
+    const lectureN = questionsWithLectureInStem(raw).length;
     buildQuiz(raw, meta);
+    if (lectureN) showToast('⚠️ ' + formatLectureStemError(lectureN, raw.length));
   }catch(e){alert('Invalid JSON. Make sure you copied the full Copilot output.');}
 }
 function buildQuiz(raw, meta){
   raw = sanitizeQuizData(raw);
+  const normalized=(Array.isArray(raw)?raw:[]).map(normalizeQuizQuestion);
+  const kept=normalized.filter(q=>Array.isArray(q.options)&&q.options.length>=MIN_QUIZ_OPTIONS);
+  const dropped=normalized.length-kept.length;
+  if(!kept.length){
+    alert(formatShortOptionsError(dropped||normalized.length, normalized.length||dropped));
+    return;
+  }
   savedQuizState = null;
   try { localStorage.removeItem(LS_ACTIVE_QUIZ); } catch(e) {}
   activeQuizMeta = meta || { source: 'manual', title: 'Custom Quiz' };
   document.getElementById('back-to-quiz-btn').style.display = 'none';
   isReviewMode=false;
   isFlaggedReviewMode=false; flaggedReviewIndices=[]; flaggedReviewPos=0; flaggedReviewPosByIdx=new Map();
-  questions=shuffle(raw).map(q=>({...q,options:shuffle([...q.options]),userAnswer:null,time:0,flagged:false,reported:false}));
+  questions=shuffle(kept).map(q=>({...q,options:shuffle([...q.options]),userAnswer:null,time:0,flagged:false,reported:false}));
   document.getElementById('total-q-count').innerText=questions.length;
   document.getElementById('finish-btn').style.display='none';
   document.getElementById('next-btn').innerText='Next Question →';
@@ -8125,6 +8200,9 @@ function buildQuiz(raw, meta){
   document.getElementById('quiz-nav-settings').classList.remove('hidden');
   toggleSidebar();currentIdx=0;renderGrid();loadQuestion(0);startTimer();
   persistActiveQuiz(true);
+  if(dropped){
+    showToast('⚠️ Skipped '+dropped+' question'+(dropped===1?'':'s')+' with fewer than '+MIN_QUIZ_OPTIONS+' answer options');
+  }
 }
 
 // ══ FLAGGING (important questions) ═════════════════════
@@ -8613,19 +8691,37 @@ function fillEditQuestionForm(q) {
   const diff = document.getElementById('edit-q-difficulty');
   const order = String(q.difficulty_order || '1st');
   if (diff) diff.value = ['1st', '2nd', '3rd'].includes(order) ? order : '1st';
+  renderEditQuestionOptions(q.options || []);
+}
+
+function snapshotEditQuestionOptions() {
+  const cards = document.querySelectorAll('#edit-question-options .edit-q-option');
+  const correctEl = document.querySelector('#edit-question-modal input[name="edit-q-correct"]:checked');
+  const correctIdx = correctEl ? Number(correctEl.value) : -1;
+  return Array.from(cards).map((card, i) => ({
+    text: card.querySelector('.edit-q-opt-text')?.value || '',
+    rationale: card.querySelector('.edit-q-opt-rationale')?.value || '',
+    isCorrect: i === correctIdx
+  }));
+}
+
+function renderEditQuestionOptions(options) {
   const wrap = document.getElementById('edit-question-options');
   wrap.innerHTML = '';
-  (q.options || []).forEach((opt, i) => {
-    const letter = LETTERS[i] || String(i + 1);
+  (options || []).forEach((opt, i) => {
+    const letter = optionLetter(i);
     const card = document.createElement('div');
     card.className = 'edit-q-option';
     card.innerHTML =
       '<div class="edit-q-option-head">' +
         '<span>Answer ' + letter + '</span>' +
-        '<label class="edit-q-correct-label">' +
-          '<input type="radio" name="edit-q-correct" value="' + i + '"' + (opt.isCorrect ? ' checked' : '') + '>' +
-          ' Correct' +
-        '</label>' +
+        '<span style="display:inline-flex;align-items:center;gap:10px">' +
+          '<label class="edit-q-correct-label">' +
+            '<input type="radio" name="edit-q-correct" value="' + i + '"' + (opt.isCorrect ? ' checked' : '') + '>' +
+            ' Correct' +
+          '</label>' +
+          '<button type="button" class="edit-q-remove" onclick="removeEditQuestionOption(' + i + ')">Remove</button>' +
+        '</span>' +
       '</div>' +
       '<label class="modal-label" for="edit-q-opt-text-' + i + '">Answer text</label>' +
       '<textarea class="modal-textarea edit-q-opt-text" id="edit-q-opt-text-' + i + '"></textarea>' +
@@ -8637,6 +8733,24 @@ function fillEditQuestionForm(q) {
   });
 }
 
+function addEditQuestionOption() {
+  const opts = snapshotEditQuestionOptions();
+  opts.push({ text: '', rationale: '', isCorrect: false });
+  renderEditQuestionOptions(opts);
+}
+
+function removeEditQuestionOption(i) {
+  const opts = snapshotEditQuestionOptions();
+  if (opts.length <= 1) {
+    showEditQuestionError('Keep at least one answer.');
+    return;
+  }
+  const wasCorrect = !!(opts[i] && opts[i].isCorrect);
+  opts.splice(i, 1);
+  if (wasCorrect && opts.length && !opts.some(o => o.isCorrect)) opts[0].isCorrect = true;
+  renderEditQuestionOptions(opts);
+}
+
 function readEditQuestionForm(original) {
   const question = (document.getElementById('edit-q-stem')?.value || '').trim();
   const cited_learning_objective = (document.getElementById('edit-q-lo')?.value || '').trim();
@@ -8644,9 +8758,11 @@ function readEditQuestionForm(original) {
   const correctEl = document.querySelector('#edit-question-modal input[name="edit-q-correct"]:checked');
   const correctIdx = correctEl ? Number(correctEl.value) : -1;
   const origOpts = Array.isArray(original.options) ? original.options : [];
-  const options = origOpts.map((orig, i) => {
-    const text = (document.getElementById('edit-q-opt-text-' + i)?.value || '').trim();
-    const rationale = (document.getElementById('edit-q-opt-rat-' + i)?.value || '').trim();
+  const cards = document.querySelectorAll('#edit-question-options .edit-q-option');
+  const options = Array.from(cards).map((card, i) => {
+    const text = (card.querySelector('.edit-q-opt-text')?.value || '').trim();
+    const rationale = (card.querySelector('.edit-q-opt-rationale')?.value || '').trim();
+    const orig = origOpts[i];
     const base = orig && typeof orig === 'object' ? Object.assign({}, orig) : {};
     Object.keys(base).forEach(k => { if (k.startsWith('_')) delete base[k]; });
     return Object.assign(base, {
@@ -8670,9 +8786,11 @@ function readEditQuestionForm(original) {
 function validateEditQuestionForm(edited) {
   if (!edited.question) return 'Question stem is required.';
   if (!edited.options.length) return 'This question has no answers to edit.';
+  if (edited.options.length < MIN_QUIZ_OPTIONS) return 'Provide at least ' + MIN_QUIZ_OPTIONS + ' answer options.';
+  if (questionStemHasLecture(edited)) return 'Remove the word "lecture" from the question stem. It is OK in rationales.';
   if (edited.options.filter(o => o.isCorrect).length !== 1) return 'Mark exactly one answer as correct.';
   for (let i = 0; i < edited.options.length; i++) {
-    const letter = LETTERS[i] || String(i + 1);
+    const letter = optionLetter(i);
     if (!edited.options[i].text) return 'Answer ' + letter + ' text is required.';
     if (!edited.options[i].rationale) return 'Answer ' + letter + ' rationale is required.';
   }
@@ -8684,23 +8802,36 @@ function applyEditedQuestionToLive(liveQ, original, edited) {
   liveQ.question = edited.question;
   liveQ.cited_learning_objective = edited.cited_learning_objective;
   liveQ.difficulty_order = edited.difficulty_order;
-  const byOrig = new Map();
+  const prevAnswerText = liveQ.userAnswer
+    ? normalizeQuestionText(liveQ.userAnswer.text).toLowerCase()
+    : '';
+  const origToEdited = new Map();
   (original.options || []).forEach((o, i) => {
-    byOrig.set(normalizeQuestionText(o && o.text).toLowerCase(), edited.options[i]);
+    const ed = (edited.options || [])[i];
+    if (o && ed) origToEdited.set(normalizeQuestionText(o.text).toLowerCase(), ed);
   });
+  const used = new Set();
+  const next = [];
   (liveQ.options || []).forEach(liveOpt => {
-    const match = byOrig.get(normalizeQuestionText(liveOpt.text).toLowerCase());
-    if (!match) return;
+    const key = normalizeQuestionText(liveOpt.text).toLowerCase();
+    const match = origToEdited.get(key);
+    if (!match || used.has(match)) return;
+    used.add(match);
     liveOpt.text = match.text;
     liveOpt.isCorrect = !!match.isCorrect;
     liveOpt.rationale = match.rationale;
+    next.push(liveOpt);
   });
-  if (liveQ.userAnswer) {
-    const prev = normalizeQuestionText(liveQ.userAnswer.text).toLowerCase();
-    const mapped = byOrig.get(prev);
-    const nextText = mapped ? mapped.text : liveQ.userAnswer.text;
-    const relink = (liveQ.options || []).find(o => o.text === nextText);
-    if (relink) liveQ.userAnswer = relink;
+  (edited.options || []).forEach(ed => {
+    if (used.has(ed)) return;
+    next.push(Object.assign({}, ed));
+    used.add(ed);
+  });
+  liveQ.options = next;
+  if (prevAnswerText) {
+    const mapped = origToEdited.get(prevAnswerText);
+    const want = mapped ? normalizeQuestionText(mapped.text).toLowerCase() : prevAnswerText;
+    liveQ.userAnswer = next.find(o => normalizeQuestionText(o.text).toLowerCase() === want) || null;
   }
 }
 
@@ -8987,7 +9118,7 @@ function questionReportPayload(q, idx, category, rationale, reporter){
     difficulty_order: q.difficulty_order || '',
     cited_learning_objective: q.cited_learning_objective || '',
     options: (q.options || []).map((o, i) => ({
-      letter: LETTERS[i] || String(i + 1),
+      letter: optionLetter(i),
       text: o.text,
       isCorrect: !!o.isCorrect,
       rationale: o.rationale || ''
@@ -9543,7 +9674,7 @@ function loadQuestion(idx){
   }
 
   const list=document.getElementById('options-list');list.innerHTML='';
-  q.options.forEach((opt,i)=>{
+  (q.options||[]).forEach((opt,i)=>{
 const wrap = document.createElement('div'); wrap.className = 'option-wrap';
 const row = document.createElement('div'); row.className = 'option-row';
 // Check if this specific choice was hidden by distraction hider
@@ -9559,7 +9690,7 @@ if (q.userAnswer) {
 
 // Added the eye-slash button for distraction hiding
 row.innerHTML = `
-  <div class="option-letter">${LETTERS[i]}</div>
+  <div class="option-letter">${optionLetter(i)}</div>
   <div class="option-text">${opt.text}</div>
   ${!q.userAnswer ? `<div class="hide-choice-btn" onclick="toggleHideChoice(event, ${i})" onmousedown="event.stopPropagation()" onmouseup="event.stopPropagation()">👁‍🗨</div>` : ''}
 `;
@@ -9620,7 +9751,12 @@ function changeQ(dir){
 function scrambleAll(){
   if(isReviewMode)return;
   shuffle(questions);
-  questions.forEach(q=>{const p=q.userAnswer?.text;shuffle(q.options);if(p)q.userAnswer=q.options.find(o=>o.text===p)||q.userAnswer;});
+  questions.forEach(q=>{
+    if(!Array.isArray(q.options)) q.options=[];
+    const p=q.userAnswer?.text;
+    shuffle(q.options);
+    if(p)q.userAnswer=q.options.find(o=>o.text===p)||q.userAnswer;
+  });
   currentIdx=0;loadQuestion(0);
   const b=document.getElementById('scramble-btn');b.classList.add('spinning');
   setTimeout(()=>b.classList.remove('spinning'),500);
@@ -9730,7 +9866,7 @@ function questionsToJSON(list){
     question_number:i+1,
     question:q.question,
     learning_objective:q.cited_learning_objective||null,
-    options:q.options.map(o=>({letter:LETTERS[q.options.indexOf(o)],text:o.text,is_correct:o.isCorrect,rationale:o.rationale||null})),
+    options:q.options.map((o,i)=>({letter:optionLetter(i),text:o.text,is_correct:o.isCorrect,rationale:o.rationale||null})),
     user_answer:q.userAnswer?{text:q.userAnswer.text,is_correct:q.userAnswer.isCorrect}:null
   })),null,2);
 }
@@ -10577,8 +10713,8 @@ document.addEventListener('keydown',e=>{
     if(document.activeElement&&document.activeElement.id==='multibuzz-iframe')return;
     e.preventDefault();changeQ(1);
   }
-  if(['1','2','3','4','5'].includes(e.key)){
-    const opt=questions[currentIdx]?.options[Number(e.key)-1];
+  if(/^[1-9]$/.test(e.key)){
+    const opt=questions[currentIdx]?.options?.[Number(e.key)-1];
     if(opt)selectAnswer(opt);
   }
 });
@@ -10938,6 +11074,8 @@ function readPersonalQuizForm() {
   const json = parseQuizJsonFromModal();
   if (json.error) return { error: json.error };
   if (!json.parsed.length) return { error: 'No questions left after removing duplicates.' };
+  const contentErr = quizContentValidationError(json.parsed);
+  if (contentErr) return { error: contentErr };
   const block = document.getElementById('new-quiz-block').value;
   const exam = document.getElementById('new-quiz-exam').value;
   const week = document.getElementById('new-quiz-week').value;
@@ -10996,7 +11134,17 @@ function dedupeQuizQuestions(questions) {
   return { questions: out, removed };
 }
 
-function formatQuizJsonStatus(count, removed) {
+function formatQuizJsonStatus(count, removed, shortCount, lectureCount) {
+  const issues = [];
+  if (shortCount) issues.push(formatShortOptionsError(shortCount, count));
+  if (lectureCount) issues.push(formatLectureStemError(lectureCount, count));
+  if (issues.length) {
+    let msg = '❌ ' + issues.join(' ');
+    if (removed) {
+      msg += ' (' + removed + ' duplicate' + (removed !== 1 ? 's' : '') + ' will be removed on save)';
+    }
+    return msg;
+  }
   let msg = '✅ Valid JSON — ' + count + ' question' + (count !== 1 ? 's' : '');
   if (removed) {
     msg += ' (' + removed + ' duplicate' + (removed !== 1 ? 's' : '') + ' will be removed on save)';
@@ -13476,8 +13624,13 @@ function snapshotQuizJsonForGithubEdit() {
   const json = parseQuizJsonFromModal();
   if (json.error) return { error: json.error };
   const canonical = JSON.stringify(json.parsed);
+  const jsonChanged = canonical !== originalEditQuizCanonical;
+  if (jsonChanged) {
+    const short = questionsMissingMinOptions(json.parsed.map(normalizeQuizQuestion));
+    if (short.length) return { error: formatShortOptionsError(short.length, json.parsed.length) };
+  }
   return {
-    quizJson: canonical !== originalEditQuizCanonical ? JSON.stringify(json.parsed, null, 2) : null,
+    quizJson: jsonChanged ? JSON.stringify(json.parsed, null, 2) : null,
     parsed: json.parsed,
     removed: json.removed || 0
   };
@@ -13793,8 +13946,10 @@ document.getElementById('new-quiz-json').addEventListener('input', function() {
     return;
   }
   const deduped = dedupeQuizQuestions(sanitizeQuizData(parsed));
-  msg.textContent = formatQuizJsonStatus(deduped.questions.length, deduped.removed);
-  msg.style.color = 'var(--success)';
+  const short = questionsMissingMinOptions(deduped.questions.map(normalizeQuizQuestion));
+  const lectureStems = questionsWithLectureInStem(deduped.questions);
+  msg.textContent = formatQuizJsonStatus(deduped.questions.length, deduped.removed, short.length, lectureStems.length);
+  msg.style.color = (short.length || lectureStems.length) ? 'var(--danger)' : 'var(--success)';
 });
 
 document.getElementById('new-quiz-json').addEventListener('paste', function(e) {
@@ -13949,6 +14104,8 @@ function readAddQuizFormForEmail(){
   const json = parseQuizJsonFromModal();
   if (json.error) return { error: json.error };
   if (!json.parsed.length) return { error: 'No questions left after removing duplicates.' };
+  const contentErr = quizContentValidationError(json.parsed);
+  if (contentErr) return { error: contentErr };
   const block = document.getElementById('new-quiz-block').value;
   const exam = document.getElementById('new-quiz-exam').value;
   const week = document.getElementById('new-quiz-week').value;
@@ -14084,7 +14241,9 @@ async function _prepareQuizAsync() {
   if (!title) { showToast('❌ Enter a quiz title first'); return; }
   const json = parseQuizJsonFromModal();
   if (json.error) { showToast('❌ ' + json.error); return; }
-  const parsed = json.parsed;
+  const parsed = json.parsed.map(normalizeQuizQuestion);
+  const contentErr = quizContentValidationError(parsed);
+  if (contentErr) { showToast('❌ ' + contentErr); return; }
   if (json.removed) {
     document.getElementById('new-quiz-json').value = JSON.stringify(parsed, null, 2);
   }
