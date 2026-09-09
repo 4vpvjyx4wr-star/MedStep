@@ -1,0 +1,1154 @@
+[
+  {
+    "question": "Which lung cancer type is most often managed primarily with surgical resection when detected at early stages?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Know which type(s) of lung cancer are primarily treated with surgery and which almost exclusively with drug therapies (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Non-small cell lung cancer",
+        "isCorrect": true,
+        "rationale": "NSCLC is usually resectable in early stages and surgery is the first-line local therapy; would be incorrect if disease were advanced or unresectable."
+      },
+      {
+        "text": "Small cell lung cancer",
+        "isCorrect": false,
+        "rationale": "SCLC is usually widespread at diagnosis and rarely treated primarily with surgery; it would be correct only for extremely rare very limited-stage SCLC."
+      },
+      {
+        "text": "Diffuse metastatic lung carcinoma",
+        "isCorrect": false,
+        "rationale": "Diffuse metastatic disease is not managed primarily with surgery; resection would be inappropriate unless solitary metastasis amenable to resection."
+      },
+      {
+        "text": "Multifocal bronchioloalveolar carcinoma",
+        "isCorrect": false,
+        "rationale": "Multifocal disease is typically not treated with curative surgery; a single localized lesion would be required to make surgery primary."
+      },
+      {
+        "text": "Carcinoid tumor of the lung",
+        "isCorrect": false,
+        "rationale": "Typical carcinoids may be resected but the lecture contrasts NSCLC versus SCLC for primary surgical management; carcinoid is not the tested contrast here."
+      }
+    ]
+  },
+  {
+    "question": "Which regimen is the standard chemotherapy backbone for extensive-stage small cell lung cancer?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Know which drug combinations are used for SCLC vs NSCLC (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Etoposide plus cisplatin",
+        "isCorrect": true,
+        "rationale": "The lecture lists etoposide + cisplatin (EP) as the standard SCLC regimen; it would be incorrect if a platinum agent were absent."
+      },
+      {
+        "text": "Carboplatin plus paclitaxel",
+        "isCorrect": false,
+        "rationale": "Carboplatin + paclitaxel is used for NSCLC, not the typical SCLC EP backbone; would be correct for many NSCLC regimens."
+      },
+      {
+        "text": "Cisplatin plus gemcitabine",
+        "isCorrect": false,
+        "rationale": "Cisplatin + gemcitabine is an NSCLC option, not the canonical SCLC EP regimen; would be correct for non-small cell histology."
+      },
+      {
+        "text": "Pemetrexed plus bevacizumab",
+        "isCorrect": false,
+        "rationale": "Pemetrexed-based regimens and bevacizumab are for non-squamous NSCLC; not standard for SCLC."
+      },
+      {
+        "text": "Docetaxel monotherapy",
+        "isCorrect": false,
+        "rationale": "Single-agent docetaxel is not the standard first-line SCLC regimen; combination platinum-etoposide is preferred."
+      }
+    ]
+  },
+  {
+    "question": "Which molecular target is directly inhibited by osimertinib in EGFR-mutant NSCLC?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Mutant EGFR tyrosine kinase",
+        "isCorrect": true,
+        "rationale": "Osimertinib irreversibly inhibits mutant EGFR (including T790M and L858R); would be incorrect if the target were wild-type EGFR only."
+      },
+      {
+        "text": "ALK fusion kinase",
+        "isCorrect": false,
+        "rationale": "ALK inhibitors target ALK fusions; osimertinib targets EGFR mutants, not ALK."
+      },
+      {
+        "text": "VEGFR tyrosine kinase",
+        "isCorrect": false,
+        "rationale": "VEGFR inhibitors (e.g., axitinib) target angiogenesis; osimertinib targets EGFR mutations instead."
+      },
+      {
+        "text": "PD-1 immune checkpoint receptor",
+        "isCorrect": false,
+        "rationale": "PD-1 is targeted by checkpoint inhibitor antibodies like pembrolizumab; osimertinib is a small-molecule EGFR inhibitor."
+      },
+      {
+        "text": "BRAF V600 mutant kinase",
+        "isCorrect": false,
+        "rationale": "BRAF inhibitors target V600 mutations; osimertinib does not inhibit BRAF."
+      }
+    ]
+  },
+  {
+    "question": "Which adverse effect is classically associated with platinum-based chemotherapy and may be mitigated by coadministration of amifostine?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List the major adverse effects of the drugs (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Nephrotoxicity",
+        "isCorrect": true,
+        "rationale": "Platinum compounds cause nephrotoxicity and amifostine is used to lessen platinum nephrotoxicity; would be incorrect if referring to non-platinum toxicities."
+      },
+      {
+        "text": "Immune-related pneumonitis",
+        "isCorrect": false,
+        "rationale": "Immune checkpoint inhibitors cause pneumonitis; amifostine does not prevent immune-mediated AEs."
+      },
+      {
+        "text": "EGFR inhibitor acneiform rash",
+        "isCorrect": false,
+        "rationale": "EGFR inhibitors cause dermatologic rash; amifostine is not used to prevent this effect."
+      },
+      {
+        "text": "VEGF inhibitor impaired wound healing",
+        "isCorrect": false,
+        "rationale": "VEGF blockade impairs wound healing; amifostine is not indicated for this toxicity."
+      },
+      {
+        "text": "ALK inhibitor QT prolongation",
+        "isCorrect": false,
+        "rationale": "ALK inhibitors can prolong QT; amifostine does not mitigate QT effects."
+      }
+    ]
+  },
+  {
+    "question": "A patient with metastatic NSCLC lacks driver mutations. Which addition to platinum-doublet chemotherapy is commonly used to improve outcomes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Know which drug combinations are used for SCLC vs NSCLC (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "PD-1 or PD-L1 immune checkpoint inhibitor",
+        "isCorrect": true,
+        "rationale": "For driver mutation-negative NSCLC, immunotherapy (PD-1/PD-L1 antibodies) is commonly added to chemotherapy; would be incorrect if a targeted driver were present."
+      },
+      {
+        "text": "EGFR tyrosine kinase inhibitor",
+        "isCorrect": false,
+        "rationale": "EGFR TKIs are added only when EGFR driver mutations are present; not appropriate for driver-negative disease."
+      },
+      {
+        "text": "ALK tyrosine kinase inhibitor",
+        "isCorrect": false,
+        "rationale": "ALK inhibitors are for ALK-positive tumors; they are not added to chemo in ALK-negative patients."
+      },
+      {
+        "text": "VEGF receptor kinase inhibitor",
+        "isCorrect": false,
+        "rationale": "Angiogenesis inhibitors may be used in some settings but the lecture emphasizes immunotherapy as the common add-on for driver-negative NSCLC."
+      },
+      {
+        "text": "High-dose corticosteroid maintenance",
+        "isCorrect": false,
+        "rationale": "Chronic high-dose steroids are not a standard adjunct to chemotherapy for NSCLC and would worsen immune responses."
+      }
+    ]
+  },
+  {
+    "question": "Which mechanism best explains how PD-1 or PD-L1 monoclonal antibodies enhance antitumor immunity?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Block PD-1/PD-L1 interaction to increase T-cell killing",
+        "isCorrect": true,
+        "rationale": "PD-1/PD-L1 antibodies prevent PD-1 activation by PD-L1, restoring T-cell activity against tumor cells; would be incorrect if they directly killed tumor cells without immune mediation."
+      },
+      {
+        "text": "Directly alkylate tumor DNA causing apoptosis",
+        "isCorrect": false,
+        "rationale": "Alkylators damage DNA directly; checkpoint antibodies act via immune disinhibition, not DNA alkylation."
+      },
+      {
+        "text": "Inhibit VEGF to reduce tumor angiogenesis",
+        "isCorrect": false,
+        "rationale": "VEGF inhibitors target angiogenesis; PD-1/PD-L1 antibodies modulate T-cell responses instead."
+      },
+      {
+        "text": "Block CTLA4 to prevent T-cell activation",
+        "isCorrect": false,
+        "rationale": "Blocking CTLA4 increases T-cell activation but is a different checkpoint pathway; PD-1/PD-L1 blockade specifically prevents PD-1 signaling."
+      },
+      {
+        "text": "Deliver cytotoxic payload into tumor cells",
+        "isCorrect": false,
+        "rationale": "Antibody-drug conjugates deliver toxins; PD-1/PD-L1 mAbs do not carry cytotoxic payloads."
+      }
+    ]
+  },
+  {
+    "question": "Which adverse effect profile is shared across PD-1, PD-L1, and CTLA4 blocking antibodies?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the major adverse effects of the drugs (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Immune-mediated inflammatory toxicities",
+        "isCorrect": true,
+        "rationale": "Checkpoint inhibitors cause autoimmune/inflammatory AEs such as pneumonitis, colitis, and thyroiditis; would be incorrect if describing cytotoxic chemo toxicities."
+      },
+      {
+        "text": "Dose-limiting nephrotoxicity",
+        "isCorrect": false,
+        "rationale": "Nephrotoxicity is characteristic of platinum chemotherapy, not the class-wide effect of checkpoint inhibitors."
+      },
+      {
+        "text": "Severe peripheral neuropathy",
+        "isCorrect": false,
+        "rationale": "Peripheral neuropathy is common with platinum and taxanes; checkpoint inhibitors cause immune AEs instead."
+      },
+      {
+        "text": "Profound myelosuppression",
+        "isCorrect": false,
+        "rationale": "Myelosuppression is typical of cytotoxic agents; immune checkpoint blockade does not primarily cause marrow suppression."
+      },
+      {
+        "text": "Impaired wound healing and hemorrhage",
+        "isCorrect": false,
+        "rationale": "These are characteristic of VEGF pathway inhibitors, not checkpoint antibodies."
+      }
+    ]
+  },
+  {
+    "question": "Which drug class produces an acneiform rash that correlates with improved survival in treated patients?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe and adverse effects that might indicate drug efficacy (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "EGFR tyrosine kinase inhibitors",
+        "isCorrect": true,
+        "rationale": "EGFR inhibitors commonly cause acneiform rash and the lecture notes this dermatologic reaction correlates with greater survival; would be incorrect for non-EGFR-targeted classes."
+      },
+      {
+        "text": "ALK tyrosine kinase inhibitors",
+        "isCorrect": false,
+        "rationale": "ALK inhibitors have other AEs (QT, visual) but not the characteristic acneiform rash tied to efficacy."
+      },
+      {
+        "text": "PD-1 immune checkpoint inhibitors",
+        "isCorrect": false,
+        "rationale": "Checkpoint inhibitors cause immune-related AEs but not the specific acneiform rash linked to EGFR inhibition."
+      },
+      {
+        "text": "Platinum alkylating agents",
+        "isCorrect": false,
+        "rationale": "Platinum agents cause nephrotoxicity, ototoxicity, neuropathy, and myelosuppression, not acneiform rash."
+      },
+      {
+        "text": "VEGF pathway inhibitors",
+        "isCorrect": false,
+        "rationale": "VEGF inhibitors cause hemorrhage and impaired wound healing, not the acneiform rash associated with EGFR blockade."
+      }
+    ]
+  },
+  {
+    "question": "A tumor harbors an EML4-ALK fusion. Which drug class is the most appropriate targeted therapy?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "ALK tyrosine kinase inhibitors",
+        "isCorrect": true,
+        "rationale": "ALK fusions are treated with ALK inhibitors (e.g., crizotinib, alectinib); would be incorrect if the tumor lacked ALK rearrangement."
+      },
+      {
+        "text": "EGFR tyrosine kinase inhibitors",
+        "isCorrect": false,
+        "rationale": "EGFR TKIs target EGFR mutations, not ALK fusions; they would be appropriate only if EGFR mutation coexisted."
+      },
+      {
+        "text": "PD-L1 monoclonal antibodies",
+        "isCorrect": false,
+        "rationale": "Checkpoint inhibitors are used broadly but targeted ALK inhibitors are preferred when ALK fusion drives disease."
+      },
+      {
+        "text": "VEGFR kinase inhibitors",
+        "isCorrect": false,
+        "rationale": "VEGFR inhibitors target angiogenesis, not the oncogenic ALK fusion protein."
+      },
+      {
+        "text": "BRAF V600 kinase inhibitors",
+        "isCorrect": false,
+        "rationale": "BRAF inhibitors target BRAF V600 mutations, not ALK fusions."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best describes the cell-cycle specificity of platinum chemotherapy agents?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Non-cell-cycle specific DNA alkylators",
+        "isCorrect": true,
+        "rationale": "Platinum compounds are non–cell-cycle-specific alkylators that bind DNA (e.g., N7 guanine); would be incorrect if labeled as cell-cycle specific."
+      },
+      {
+        "text": "S-phase specific antimetabolites",
+        "isCorrect": false,
+        "rationale": "Antimetabolites are S-phase specific; platinum agents act across cell cycle phases."
+      },
+      {
+        "text": "M-phase specific microtubule inhibitors",
+        "isCorrect": false,
+        "rationale": "Taxanes and vinca alkaloids target M phase; platinum drugs do not."
+      },
+      {
+        "text": "G1 checkpoint kinase inhibitors",
+        "isCorrect": false,
+        "rationale": "Checkpoint kinase inhibitors are a different targeted class; platinum agents alkylate DNA directly."
+      },
+      {
+        "text": "MEK pathway signal transduction inhibitors",
+        "isCorrect": false,
+        "rationale": "MEK inhibitors target MAPK signaling; platinum compounds are DNA-damaging agents."
+      }
+    ]
+  },
+  {
+    "question": "A patient with squamous NSCLC develops hypercalcemia due to tumor secretion of PTHrP. Which class of drugs listed in the lecture is appropriate to inhibit osteoclast-mediated bone resorption?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the major adverse effects of the drugs (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Bisphosphonates or denosumab",
+        "isCorrect": true,
+        "rationale": "The lecture states bisphosphonates (e.g., pamidronate) or denosumab inhibit osteoclast activity for PTHrP-mediated hypercalcemia; would be incorrect if osteoclast inhibition were absent."
+      },
+      {
+        "text": "EGFR tyrosine kinase inhibitors",
+        "isCorrect": false,
+        "rationale": "EGFR TKIs do not directly treat hypercalcemia from PTHrP; they target tumor EGFR signaling."
+      },
+      {
+        "text": "PD-1 immune checkpoint inhibitors",
+        "isCorrect": false,
+        "rationale": "Checkpoint inhibitors do not directly inhibit osteoclasts and are not first-line for hypercalcemia management."
+      },
+      {
+        "text": "VEGF receptor inhibitors",
+        "isCorrect": false,
+        "rationale": "VEGF inhibitors affect angiogenesis, not osteoclast-mediated bone resorption."
+      },
+      {
+        "text": "ALK tyrosine kinase inhibitors",
+        "isCorrect": false,
+        "rationale": "ALK inhibitors target ALK fusion proteins, not bone resorption from PTHrP."
+      }
+    ]
+  },
+  {
+    "question": "Which targeted therapy mechanism involves antibody-dependent cellular cytotoxicity (ADCC) as part of its antitumor effect?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Monoclonal antibodies binding tumor surface receptors",
+        "isCorrect": true,
+        "rationale": "Some mAbs (e.g., necitumumab, amivantamab) bind extracellular tumor receptors and induce ADCC; would be incorrect for small-molecule inhibitors that lack Fc-mediated ADCC."
+      },
+      {
+        "text": "Small-molecule EGFR kinase inhibitors",
+        "isCorrect": false,
+        "rationale": "Small-molecule TKIs inhibit intracellular kinase activity and do not mediate ADCC."
+      },
+      {
+        "text": "Platinum alkylating agents",
+        "isCorrect": false,
+        "rationale": "Platinum drugs damage DNA directly and do not trigger ADCC."
+      },
+      {
+        "text": "MEK pathway inhibitors",
+        "isCorrect": false,
+        "rationale": "MEK inhibitors block intracellular signaling and do not rely on ADCC."
+      },
+      {
+        "text": "Proteasome inhibitors",
+        "isCorrect": false,
+        "rationale": "Proteasome inhibitors affect protein degradation pathways and are not ADCC-mediating antibodies."
+      }
+    ]
+  },
+  {
+    "question": "Which adverse effect is specifically noted for ALK inhibitor therapy in the lecture slides?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the major adverse effects of the drugs (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "QT prolongation and visual disturbances",
+        "isCorrect": true,
+        "rationale": "ALK inhibitors are associated with QT prolongation, visual symptoms, GI effects, and myelosuppression per the lecture; would be incorrect if claiming only dermatologic rash."
+      },
+      {
+        "text": "Severe nephrotoxicity and ototoxicity",
+        "isCorrect": false,
+        "rationale": "Nephrotoxicity and ototoxicity are classic for platinum agents, not ALK inhibitors."
+      },
+      {
+        "text": "Acneiform dermatologic rash",
+        "isCorrect": false,
+        "rationale": "Acneiform rash is characteristic of EGFR inhibitors, not ALK inhibitors."
+      },
+      {
+        "text": "Impaired wound healing and hemorrhage",
+        "isCorrect": false,
+        "rationale": "These are VEGF inhibitor toxicities, not typical ALK inhibitor effects."
+      },
+      {
+        "text": "Profound immune-mediated colitis",
+        "isCorrect": false,
+        "rationale": "Immune-mediated colitis is a checkpoint inhibitor toxicity, not an ALK inhibitor AE."
+      }
+    ]
+  },
+  {
+    "question": "A patient with NSCLC has an exon 20 insertion EGFR mutation. Which agent from the lecture is specifically indicated for exon 20 insertion mutants?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Sunvozertinib",
+        "isCorrect": true,
+        "rationale": "Sunvozertinib is noted for activity against EGFR exon 20 insertion mutants; it would be incorrect if the mutation were exon 19 deletion or L858R where other TKIs apply."
+      },
+      {
+        "text": "Crizotinib",
+        "isCorrect": false,
+        "rationale": "Crizotinib targets ALK, ROS1, and c-MET, not specifically EGFR exon 20 insertions."
+      },
+      {
+        "text": "Osimertinib",
+        "isCorrect": false,
+        "rationale": "Osimertinib targets common EGFR mutants including T790M and L858R but exon 20 insertions are better targeted by agents like sunvozertinib."
+      },
+      {
+        "text": "Bevacizumab",
+        "isCorrect": false,
+        "rationale": "Bevacizumab targets VEGF and angiogenesis, not EGFR exon 20 insertion mutations."
+      },
+      {
+        "text": "Pembrolizumab",
+        "isCorrect": false,
+        "rationale": "Pembrolizumab is a PD-1 inhibitor used for immunotherapy, not a targeted EGFR exon 20 insertion inhibitor."
+      }
+    ]
+  },
+  {
+    "question": "Which drug class listed in the lecture intercepts a ligand by using a fusion protein ending in -cept?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Ligand-trapping fusion proteins (ending -cept)",
+        "isCorrect": true,
+        "rationale": "Drugs ending in -cept (e.g., ziv-aflibercept) are fusion proteins that intercept ligands like VEGF; would be incorrect if describing monoclonal antibodies or TKIs."
+      },
+      {
+        "text": "Monoclonal antibodies ending in -mab",
+        "isCorrect": false,
+        "rationale": "mAbs bind targets via antibody structure; -cept fusion proteins specifically intercept ligands rather than acting as conventional antibodies."
+      },
+      {
+        "text": "Small-molecule kinase inhibitors ending in -ib",
+        "isCorrect": false,
+        "rationale": "Small-molecule inhibitors end in -ib and inhibit kinases intracellularly, not by ligand interception."
+      },
+      {
+        "text": "Antimetabolite cytotoxics",
+        "isCorrect": false,
+        "rationale": "Antimetabolites are cytotoxic chemotherapies and are unrelated to -cept fusion proteins."
+      },
+      {
+        "text": "Antibody-drug conjugates delivering toxins",
+        "isCorrect": false,
+        "rationale": "ADCs deliver cytotoxic payloads via antibodies; -cept proteins act by ligand sequestration."
+      }
+    ]
+  },
+  {
+    "question": "Which targeted therapy approach would be most appropriate for a tumor with a KRAS G12C mutation according to the lecture?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "KRAS G12C covalent inhibitors (sotorasib/adagrasib)",
+        "isCorrect": true,
+        "rationale": "Sotorasib and adagrasib form covalent bonds with KRAS G12C and are indicated for that mutation; would be incorrect if KRAS mutation were a different codon."
+      },
+      {
+        "text": "BRAF V600 inhibitors",
+        "isCorrect": false,
+        "rationale": "BRAF inhibitors target V600 mutations, not KRAS G12C."
+      },
+      {
+        "text": "EGFR exon 19 deletion inhibitors",
+        "isCorrect": false,
+        "rationale": "EGFR exon 19 deletion TKIs target EGFR mutations, not KRAS G12C."
+      },
+      {
+        "text": "ALK fusion kinase inhibitors",
+        "isCorrect": false,
+        "rationale": "ALK inhibitors target ALK fusions, not KRAS point mutations."
+      },
+      {
+        "text": "VEGFR tyrosine kinase inhibitors",
+        "isCorrect": false,
+        "rationale": "VEGFR inhibitors target angiogenesis, not oncogenic KRAS G12C."
+      }
+    ]
+  },
+  {
+    "question": "A patient receiving bevacizumab develops a nonhealing surgical wound and hemoptysis. Which mechanism explains these adverse events?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "List the major adverse effects of the drugs (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "VEGF pathway inhibition impairing angiogenesis and healing",
+        "isCorrect": true,
+        "rationale": "Bevacizumab binds VEGF and inhibits angiogenesis, causing hemorrhage and impaired wound healing; would be incorrect if the drug did not target VEGF."
+      },
+      {
+        "text": "Immune checkpoint activation causing autoimmune vasculitis",
+        "isCorrect": false,
+        "rationale": "Immune checkpoint inhibitors cause autoimmune inflammation but bevacizumab's AEs are due to VEGF blockade, not immune activation."
+      },
+      {
+        "text": "EGFR blockade causing skin breakdown and secondary bleeding",
+        "isCorrect": false,
+        "rationale": "EGFR inhibitors cause dermatologic toxicity, not impaired wound angiogenesis leading to hemorrhage."
+      },
+      {
+        "text": "Platinum-induced thrombocytopenia causing bleeding",
+        "isCorrect": false,
+        "rationale": "Platinum agents can cause myelosuppression and bleeding risk, but the combination of impaired wound healing and hemorrhage is characteristic of VEGF inhibition."
+      },
+      {
+        "text": "ALK inhibitor–related QT prolongation causing mucosal ischemia",
+        "isCorrect": false,
+        "rationale": "QT prolongation does not explain impaired wound healing or hemoptysis; this distractor is a teachable mismatch."
+      }
+    ]
+  },
+  {
+    "question": "A patient with NSCLC has an EGFR L858R mutation and develops diarrhea and hypomagnesemia after starting therapy. Which drug class is most likely responsible?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "List the major adverse effects of the drugs (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "EGFR tyrosine kinase inhibitors",
+        "isCorrect": true,
+        "rationale": "EGFR inhibitors cause dermatologic reactions, diarrhea, and hypomagnesemia per the lecture; would be incorrect if the patient were on a non-EGFR targeted agent."
+      },
+      {
+        "text": "ALK tyrosine kinase inhibitors",
+        "isCorrect": false,
+        "rationale": "ALK inhibitors cause QT prolongation and visual symptoms rather than hypomagnesemia and diarrhea as primary AEs."
+      },
+      {
+        "text": "PD-1 immune checkpoint inhibitors",
+        "isCorrect": false,
+        "rationale": "Checkpoint inhibitors cause immune-mediated AEs like colitis but hypomagnesemia is more characteristic of EGFR TKIs."
+      },
+      {
+        "text": "Platinum-based chemotherapy",
+        "isCorrect": false,
+        "rationale": "Platinum agents cause nephrotoxicity and neuropathy; hypomagnesemia and diarrhea point toward EGFR-targeted therapy."
+      },
+      {
+        "text": "VEGF receptor inhibitors",
+        "isCorrect": false,
+        "rationale": "VEGF inhibitors cause hemorrhage and wound-healing issues, not the specific hypomagnesemia described."
+      }
+    ]
+  },
+  {
+    "question": "Which therapeutic strategy is most appropriate for a patient with NSCLC whose tumor tests positive for ROS1 fusion?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "ROS1-targeted tyrosine kinase inhibitor",
+        "isCorrect": true,
+        "rationale": "ROS1 fusions are treated with ROS1 inhibitors (e.g., crizotinib, entrectinib); would be incorrect if ROS1 fusion were absent."
+      },
+      {
+        "text": "EGFR tyrosine kinase inhibitor",
+        "isCorrect": false,
+        "rationale": "EGFR TKIs target EGFR mutations, not ROS1 fusions; they would be appropriate only if EGFR mutation coexisted."
+      },
+      {
+        "text": "ALK inhibitor only",
+        "isCorrect": false,
+        "rationale": "Some ALK inhibitors also inhibit ROS1, but the correct approach is a ROS1-targeted TKI rather than ALK-only therapy."
+      },
+      {
+        "text": "PD-L1 checkpoint inhibitor monotherapy",
+        "isCorrect": false,
+        "rationale": "Checkpoint inhibitors may be used broadly but targeted ROS1 inhibition is preferred when ROS1 fusion drives disease."
+      },
+      {
+        "text": "VEGF ligand-trapping fusion protein",
+        "isCorrect": false,
+        "rationale": "VEGF -cept proteins target angiogenesis, not ROS1 fusion oncogenes."
+      }
+    ]
+  },
+  {
+    "question": "A patient with metastatic NSCLC receives pembrolizumab and later develops new-onset hypothyroidism. Which mechanism explains this adverse event?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "List the major adverse effects of the drugs (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Immune-mediated thyroiditis from checkpoint blockade",
+        "isCorrect": true,
+        "rationale": "Checkpoint inhibitors can cause autoimmune thyroiditis leading to hypothyroidism; would be incorrect if the drug were a non-immune-targeted agent."
+      },
+      {
+        "text": "Direct thyroid follicular cell alkylation by pembrolizumab",
+        "isCorrect": false,
+        "rationale": "Pembrolizumab does not alkylate DNA; hypothyroidism arises from immune-mediated inflammation, not direct cytotoxicity."
+      },
+      {
+        "text": "EGFR inhibitor–induced thyroid dysfunction",
+        "isCorrect": false,
+        "rationale": "EGFR inhibitors cause dermatologic and GI AEs, not the classic immune-mediated thyroiditis seen with checkpoint inhibitors."
+      },
+      {
+        "text": "VEGF inhibitor–related ischemic thyroid necrosis",
+        "isCorrect": false,
+        "rationale": "VEGF inhibitors cause vascular AEs but immune-mediated thyroiditis is the mechanism with PD-1 blockade."
+      },
+      {
+        "text": "Platinum chemotherapy causing autoimmune endocrinopathy",
+        "isCorrect": false,
+        "rationale": "Platinum agents cause cytotoxic effects and nephrotoxicity, not immune-mediated thyroiditis typical of checkpoint inhibitors."
+      }
+    ]
+  },
+  {
+    "question": "Which drug from the lecture is a fusion protein that binds VEGF and prevents receptor activation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Ziv-aflibercept",
+        "isCorrect": true,
+        "rationale": "Ziv-aflibercept is a VEGF ligand-trapping fusion protein (-cept) that binds VEGF; would be incorrect if naming a monoclonal antibody instead."
+      },
+      {
+        "text": "Bevacizumab",
+        "isCorrect": false,
+        "rationale": "Bevacizumab is a monoclonal antibody that binds VEGF, not a fusion -cept protein; both bind VEGF but differ structurally."
+      },
+      {
+        "text": "Ramucirumab",
+        "isCorrect": false,
+        "rationale": "Ramucirumab binds VEGFR2 (the receptor), not the ligand via a fusion protein."
+      },
+      {
+        "text": "Axitinib",
+        "isCorrect": false,
+        "rationale": "Axitinib is a small-molecule VEGFR kinase inhibitor, not a ligand-trapping fusion protein."
+      },
+      {
+        "text": "Pembrolizumab",
+        "isCorrect": false,
+        "rationale": "Pembrolizumab is a PD-1 antibody and unrelated to VEGF ligand trapping."
+      }
+    ]
+  },
+  {
+    "question": "A patient with advanced NSCLC and an EGFR exon 19 deletion is started on afatinib. Which description best matches afatinib's mechanism?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Irreversible EGFR tyrosine kinase inhibitor",
+        "isCorrect": true,
+        "rationale": "Afatinib irreversibly inhibits certain EGFR mutants (exon 19 deletion, L858R, others); would be incorrect if described as reversible."
+      },
+      {
+        "text": "Reversible EGFR extracellular antibody",
+        "isCorrect": false,
+        "rationale": "Reversible extracellular antibodies (e.g., necitumumab) bind EGFR outside the cell; afatinib is an irreversible small-molecule TKI."
+      },
+      {
+        "text": "ALK fusion kinase inhibitor",
+        "isCorrect": false,
+        "rationale": "ALK inhibitors target ALK fusions; afatinib targets EGFR mutants, not ALK."
+      },
+      {
+        "text": "PD-L1 ligand trap fusion protein",
+        "isCorrect": false,
+        "rationale": "Afatinib is not a fusion protein or immune checkpoint agent; this distractor mixes classes."
+      },
+      {
+        "text": "VEGFR kinase inhibitor",
+        "isCorrect": false,
+        "rationale": "VEGFR inhibitors target angiogenesis; afatinib targets EGFR signaling directly."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why some EGFR inhibitor–related skin rashes are considered a favorable sign?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe and adverse effects that might indicate drug efficacy (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "On-target EGFR inhibition in skin correlates with tumor response",
+        "isCorrect": true,
+        "rationale": "The acneiform rash reflects on-target EGFR blockade in epithelial tissues and correlates with improved survival; would be incorrect if rash were off-target or unrelated to drug activity."
+      },
+      {
+        "text": "Immune activation causing paraneoplastic dermatologic improvement",
+        "isCorrect": false,
+        "rationale": "Immune activation from checkpoint inhibitors can cause skin AEs, but the EGFR rash is an on-target effect, not immune-mediated improvement."
+      },
+      {
+        "text": "VEGF blockade causing cutaneous ischemia linked to tumor shrinkage",
+        "isCorrect": false,
+        "rationale": "VEGF inhibition causes vascular AEs, not the acneiform rash tied to EGFR inhibition."
+      },
+      {
+        "text": "Platinum-induced hypersensitivity indicating DNA damage",
+        "isCorrect": false,
+        "rationale": "Platinum hypersensitivity is not the acneiform rash and does not explain the correlation with EGFR-targeted efficacy."
+      },
+      {
+        "text": "Off-target kinase inhibition causing nonspecific inflammation",
+        "isCorrect": false,
+        "rationale": "The lecture attributes the rash to on-target EGFR effects rather than nonspecific off-target inflammation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with SCLC receives etoposide and cisplatin. Which cellular process is primarily targeted by etoposide?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Topoisomerase II inhibition causing DNA strand breaks",
+        "isCorrect": true,
+        "rationale": "Etoposide inhibits topoisomerase II leading to DNA breaks and impaired replication; would be incorrect if described as a platinum DNA alkylator."
+      },
+      {
+        "text": "DNA cross-linking at N7 guanine by platinum",
+        "isCorrect": false,
+        "rationale": "Cisplatin cross-links DNA at N7 guanine; etoposide acts via topoisomerase II inhibition, not DNA alkylation."
+      },
+      {
+        "text": "Microtubule stabilization preventing mitosis",
+        "isCorrect": false,
+        "rationale": "Taxanes stabilize microtubules; etoposide targets topoisomerase II instead."
+      },
+      {
+        "text": "PD-1 blockade enhancing T-cell cytotoxicity",
+        "isCorrect": false,
+        "rationale": "Checkpoint blockade is immunotherapy and unrelated to etoposide's topoisomerase inhibition."
+      },
+      {
+        "text": "VEGF ligand sequestration reducing angiogenesis",
+        "isCorrect": false,
+        "rationale": "VEGF sequestration is the mechanism of -cept proteins; etoposide is a topoisomerase inhibitor."
+      }
+    ]
+  },
+  {
+    "question": "Which targeted agent class would be most appropriate for a tumor with RET fusion per the lecture's drug list?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "RET-selective tyrosine kinase inhibitors",
+        "isCorrect": true,
+        "rationale": "RET fusions are targeted by RET inhibitors (e.g., selpercatinib, pralsetinib) as listed; would be incorrect if using non-RET-targeted therapy."
+      },
+      {
+        "text": "EGFR exon 20 insertion inhibitors",
+        "isCorrect": false,
+        "rationale": "EGFR exon 20 inhibitors target EGFR mutations, not RET fusions."
+      },
+      {
+        "text": "ALK fusion inhibitors",
+        "isCorrect": false,
+        "rationale": "ALK inhibitors target ALK fusions, not RET rearrangements."
+      },
+      {
+        "text": "KRAS G12C covalent inhibitors",
+        "isCorrect": false,
+        "rationale": "KRAS G12C inhibitors target that specific KRAS mutation, not RET fusions."
+      },
+      {
+        "text": "VEGF ligand-trapping fusion proteins",
+        "isCorrect": false,
+        "rationale": "VEGF -cept proteins target angiogenesis, not RET oncogenic drivers."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best characterizes antibody-drug conjugates targeting HER2 mentioned in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Antibodies bind HER2 and deliver cytotoxic payloads",
+        "isCorrect": true,
+        "rationale": "ADC agents (e.g., ado-trastuzumab emtansine, deruxtecan) bind HER2 and deliver toxins to tumor cells; would be incorrect if claiming they act solely by ADCC."
+      },
+      {
+        "text": "Small-molecule HER2 kinase inhibitors only",
+        "isCorrect": false,
+        "rationale": "Some drugs are small-molecule HER2 inhibitors, but ADCs specifically deliver cytotoxic payloads via antibody targeting."
+      },
+      {
+        "text": "VEGF receptor antibodies preventing angiogenesis",
+        "isCorrect": false,
+        "rationale": "VEGF antibodies target angiogenesis, not HER2-directed ADC cytotoxic delivery."
+      },
+      {
+        "text": "Immune checkpoint antibodies enhancing T-cell killing",
+        "isCorrect": false,
+        "rationale": "Checkpoint antibodies modulate immunity; ADCs deliver cytotoxins directly to HER2-expressing cells."
+      },
+      {
+        "text": "Ligand-trapping fusion proteins sequestering HER2 ligands",
+        "isCorrect": false,
+        "rationale": "HER2 ADCs are not ligand-trapping fusion proteins; they are antibody conjugates with cytotoxic drugs."
+      }
+    ]
+  },
+  {
+    "question": "A patient with NSCLC has a BRAF V600E mutation. According to the lecture, which combination of inhibitors would be mechanistically appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "BRAF inhibitor plus MEK inhibitor",
+        "isCorrect": true,
+        "rationale": "BRAF V600 mutations are treated with BRAF inhibitors (vemurafenib, dabrafenib) often combined with MEK inhibitors (trametinib) to block MAPK pathway; would be incorrect if using single-agent unrelated inhibitors."
+      },
+      {
+        "text": "KRAS G12C covalent inhibitor alone",
+        "isCorrect": false,
+        "rationale": "KRAS G12C inhibitors target a different mutation; they are not appropriate for BRAF V600E tumors."
+      },
+      {
+        "text": "EGFR irreversible TKI plus PD-1 antibody",
+        "isCorrect": false,
+        "rationale": "EGFR TKIs target EGFR mutations; combining with PD-1 blockade is not the specific targeted strategy for BRAF V600E."
+      },
+      {
+        "text": "ALK inhibitor plus VEGF inhibitor",
+        "isCorrect": false,
+        "rationale": "ALK inhibitors target ALK fusions; this combination does not address BRAF V600E-driven MAPK signaling."
+      },
+      {
+        "text": "VEGF ligand trap plus HER2 ADC",
+        "isCorrect": false,
+        "rationale": "These agents target angiogenesis and HER2 respectively, not the BRAF-driven MAPK pathway."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why platinum compounds cause ototoxicity and peripheral neuropathy in addition to nephrotoxicity?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "DNA cross-linking damages rapidly dividing and sensitive tissues",
+        "isCorrect": true,
+        "rationale": "Platinum agents covalently bind DNA causing damage that affects dividing cells and sensitive tissues like renal tubular cells, cochlea, and peripheral nerves; would be incorrect if attributing these AEs to immune mechanisms."
+      },
+      {
+        "text": "Immune-mediated attack on sensory organs",
+        "isCorrect": false,
+        "rationale": "Immune-mediated toxicity is characteristic of checkpoint inhibitors, not platinum-induced ototoxicity or neuropathy."
+      },
+      {
+        "text": "VEGF inhibition causing ischemic nerve injury",
+        "isCorrect": false,
+        "rationale": "VEGF inhibitors cause vascular AEs but platinum neuropathy and ototoxicity are due to direct cytotoxic effects, not ischemia."
+      },
+      {
+        "text": "EGFR blockade causing epidermal sensory loss",
+        "isCorrect": false,
+        "rationale": "EGFR inhibitors cause dermatologic effects; they do not explain platinum-associated neuropathy and ototoxicity."
+      },
+      {
+        "text": "ALK inhibitor off-target mitochondrial toxicity",
+        "isCorrect": false,
+        "rationale": "ALK inhibitors have different toxicity profiles; platinum toxicities are due to DNA damage and related cellular injury."
+      }
+    ]
+  },
+  {
+    "question": "A patient with SCLC is enrolled in a trial of tarlatamab, a bispecific antibody that binds DLL3 on tumor cells and CD3 on T cells. Which mechanism best describes its intended antitumor action?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "Redirect T cells to kill DLL3-expressing tumor cells",
+        "isCorrect": true,
+        "rationale": "Tarlatamab is a bispecific antibody that binds DLL3 and CD3 to activate T cells against tumor cells; would be incorrect if described as a simple checkpoint inhibitor."
+      },
+      {
+        "text": "Block PD-1 to relieve T-cell inhibition",
+        "isCorrect": false,
+        "rationale": "PD-1 blockade relieves inhibition but tarlatamab actively redirects T cells via CD3 engagement, a different mechanism."
+      },
+      {
+        "text": "Deliver cytotoxic payload into DLL3-positive cells",
+        "isCorrect": false,
+        "rationale": "Antibody-drug conjugates deliver toxins; tarlatamab functions by T-cell engagement rather than payload delivery."
+      },
+      {
+        "text": "Sequester VEGF to inhibit tumor angiogenesis",
+        "isCorrect": false,
+        "rationale": "VEGF sequestration targets angiogenesis and is unrelated to bispecific T-cell engager mechanisms."
+      },
+      {
+        "text": "Irreversibly inhibit DLL3 intracellular kinase activity",
+        "isCorrect": false,
+        "rationale": "DLL3 is targeted extracellularly by the bispecific antibody; there is no intracellular kinase inhibition involved."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following is the most appropriate next step for a patient with advanced NSCLC found to have high PD-L1 expression but no actionable driver mutation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "When are immunotherapies used? Which drugs belong in each class?",
+    "options": [
+      {
+        "text": "Add PD-1/PD-L1 checkpoint inhibitor to chemotherapy",
+        "isCorrect": true,
+        "rationale": "For driver-negative NSCLC, immunotherapy (PD-1/PD-L1 antibodies) is commonly added to chemotherapy; would be incorrect if a driver mutation were present requiring targeted therapy."
+      },
+      {
+        "text": "Start EGFR tyrosine kinase inhibitor monotherapy",
+        "isCorrect": false,
+        "rationale": "EGFR TKIs are indicated only with EGFR mutations; high PD-L1 alone does not justify EGFR-targeted therapy."
+      },
+      {
+        "text": "Begin ALK inhibitor therapy",
+        "isCorrect": false,
+        "rationale": "ALK inhibitors require ALK rearrangement; PD-L1 expression does not indicate ALK positivity."
+      },
+      {
+        "text": "Use VEGF ligand trap as sole systemic therapy",
+        "isCorrect": false,
+        "rationale": "VEGF-targeted agents are not standard monotherapy for PD-L1–high, driver-negative NSCLC; immunotherapy is preferred."
+      },
+      {
+        "text": "Proceed with platinum-doublet chemotherapy alone",
+        "isCorrect": false,
+        "rationale": "Chemotherapy alone is an option, but the lecture emphasizes adding checkpoint inhibitors for driver-negative disease to improve outcomes."
+      }
+    ]
+  },
+  {
+    "question": "Which drug naming infix indicates a monoclonal antibody designed to modulate the immune system (checkpoint inhibitor) as described in the nomenclature slide?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Antineoplastic Drug Nomenclature",
+    "options": [
+      {
+        "text": "The infix -li- or -lim- within the name",
+        "isCorrect": true,
+        "rationale": "The lecture notes that infixes like -l(i)(m)- indicate immune system targeting (e.g., PD-1/PD-L1 or CTLA4 antibodies); would be incorrect if claiming a different infix."
+      },
+      {
+        "text": "The suffix -ib indicating a small-molecule inhibitor",
+        "isCorrect": false,
+        "rationale": "Suffix -ib denotes small-molecule signal transduction inhibitors, not immune-targeting mAbs."
+      },
+      {
+        "text": "The prefix indicating the unique antibody name",
+        "isCorrect": false,
+        "rationale": "The prefix is unique but does not indicate immune targeting; the infix conveys target class."
+      },
+      {
+        "text": "The infix -ci- indicating circulatory targeting",
+        "isCorrect": false,
+        "rationale": "-ci- indicates circulatory/angiogenesis targeting (e.g., VEGF), not immune checkpoint modulation."
+      },
+      {
+        "text": "The suffix -cept indicating a fusion protein",
+        "isCorrect": false,
+        "rationale": "-cept denotes fusion proteins that intercept ligands, not immune-targeting monoclonal antibodies."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes why some newer targeted agents are called 'biologics' in the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "They are protein drugs, mostly monoclonal antibodies",
+        "isCorrect": true,
+        "rationale": "The lecture states that protein drugs (mostly mAbs) are known as biologics; would be incorrect if describing small molecules as biologics."
+      },
+      {
+        "text": "They are small-molecule kinase inhibitors",
+        "isCorrect": false,
+        "rationale": "Small molecules are not biologics; biologics are typically protein-based therapies."
+      },
+      {
+        "text": "They are DNA-alkylating cytotoxics",
+        "isCorrect": false,
+        "rationale": "Alkylators are chemical cytotoxics, not biologic protein drugs."
+      },
+      {
+        "text": "They are fusion proteins that always deliver toxins",
+        "isCorrect": false,
+        "rationale": "Some fusion proteins are biologics, but not all biologics deliver toxins; ADCs deliver payloads, while many biologics act by binding targets."
+      },
+      {
+        "text": "They are immune checkpoint small peptides",
+        "isCorrect": false,
+        "rationale": "Checkpoint inhibitors are monoclonal antibodies (proteins), not small peptides; the lecture groups them as biologics."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following is the most likely reason to add amifostine when administering platinum chemotherapy?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe any drug treatments to prevent/minimize cancer drug toxicities. (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "To scavenge free radicals and reduce nephrotoxicity",
+        "isCorrect": true,
+        "rationale": "Amifostine is a free radical scavenger activated in nonacidic conditions and is coadministered to lessen platinum nephrotoxicity; would be incorrect if used to prevent immune AEs."
+      },
+      {
+        "text": "To prevent immune-mediated colitis from checkpoint inhibitors",
+        "isCorrect": false,
+        "rationale": "Amifostine does not prevent immune-related AEs from checkpoint blockade; immunosuppression or steroids are used instead."
+      },
+      {
+        "text": "To reverse EGFR inhibitor–related rash",
+        "isCorrect": false,
+        "rationale": "Amifostine does not treat EGFR inhibitor dermatologic toxicity; topical or dose modification strategies are used."
+      },
+      {
+        "text": "To block VEGF and reduce bleeding risk",
+        "isCorrect": false,
+        "rationale": "Amifostine does not inhibit VEGF; it protects normal tissues from free radical damage, particularly renal."
+      },
+      {
+        "text": "To chelate platinum and increase tumor uptake",
+        "isCorrect": false,
+        "rationale": "Amifostine does not chelate platinum to increase tumor uptake; it protects normal tissues from toxicity."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best summarizes when targeted therapies are preferred over conventional chemotherapy in NSCLC?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Know which drug combinations are used for SCLC vs NSCLC (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "When a tumor harbors a specific actionable driver mutation",
+        "isCorrect": true,
+        "rationale": "Targeted therapies are used when driver mutations (EGFR, ALK, ROS1, RET, etc.) are present; would be incorrect if no actionable mutation exists."
+      },
+      {
+        "text": "For all advanced NSCLC regardless of mutation status",
+        "isCorrect": false,
+        "rationale": "Targeted therapy requires an actionable mutation; immunotherapy or chemotherapy are used when drivers are absent."
+      },
+      {
+        "text": "Only after failure of platinum-doublet chemotherapy",
+        "isCorrect": false,
+        "rationale": "Targeted agents are often first-line when a driver mutation is identified, not reserved only after chemo failure."
+      },
+      {
+        "text": "Only for squamous histology tumors",
+        "isCorrect": false,
+        "rationale": "Some targeted therapies are more common in non-squamous NSCLC; squamous histology is not the sole indication."
+      },
+      {
+        "text": "When PD-L1 expression is low",
+        "isCorrect": false,
+        "rationale": "PD-L1 expression guides immunotherapy use; targeted therapy depends on driver mutations, not PD-L1 level."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following is the most appropriate interpretation if a patient on an EGFR inhibitor develops a prominent acneiform rash early in therapy?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe and adverse effects that might indicate drug efficacy (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "On-target effect that may correlate with better tumor response",
+        "isCorrect": true,
+        "rationale": "The lecture notes that dermatologic reactions from EGFR inhibitors correlate with greater survival, indicating an on-target effect; would be incorrect if rash were assumed to indicate treatment failure."
+      },
+      {
+        "text": "Immediate drug hypersensitivity requiring permanent discontinuation",
+        "isCorrect": false,
+        "rationale": "While severe hypersensitivity may require stopping therapy, the typical acneiform rash is an expected on-target AE and not an automatic reason for permanent discontinuation."
+      },
+      {
+        "text": "VEGF inhibitor toxicity signaling bleeding risk",
+        "isCorrect": false,
+        "rationale": "VEGF inhibitors cause bleeding and wound-healing issues, not acneiform rash associated with EGFR inhibitors."
+      },
+      {
+        "text": "Platinum-induced ototoxicity manifesting cutaneously",
+        "isCorrect": false,
+        "rationale": "Platinum ototoxicity affects hearing, not causing acneiform skin eruptions; this distractor conflates unrelated toxicities."
+      },
+      {
+        "text": "Immune checkpoint–related dermatitis indicating autoimmune activation",
+        "isCorrect": false,
+        "rationale": "Checkpoint inhibitors can cause immune dermatitis, but the acneiform rash described is characteristic of EGFR blockade and is on-target rather than autoimmune."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the role of angiogenesis inhibitors in lung cancer therapy per the lecture?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the molecular mechanisms of action and targets of each class of the anticancer drugs for treating lung cancer (AACOM competency II.1.f)",
+    "options": [
+      {
+        "text": "They inhibit VEGF signaling to reduce tumor blood vessel formation",
+        "isCorrect": true,
+        "rationale": "Angiogenesis inhibitors (bevacizumab, ramucirumab, VEGFR TKIs) block VEGF/VEGFR signaling to inhibit tumor angiogenesis; would be incorrect if claiming they directly kill tumor cells."
+      },
+      {
+        "text": "They directly alkylate tumor DNA causing cell death",
+        "isCorrect": false,
+        "rationale": "Alkylators like platinum compounds damage DNA; angiogenesis inhibitors act on vascular signaling, not DNA."
+      },
+      {
+        "text": "They activate T cells by blocking PD-1",
+        "isCorrect": false,
+        "rationale": "Checkpoint inhibitors activate T cells; angiogenesis inhibitors target VEGF pathways instead."
+      },
+      {
+        "text": "They inhibit EGFR-driven epithelial proliferation",
+        "isCorrect": false,
+        "rationale": "EGFR inhibitors target epithelial growth signaling, not angiogenesis mediated by VEGF."
+      },
+      {
+        "text": "They sequester HER2 ligands to prevent receptor activation",
+        "isCorrect": false,
+        "rationale": "HER2-targeted therapies act on HER2; angiogenesis inhibitors target VEGF/VEGFR signaling."
+      }
+    ]
+  }
+]
