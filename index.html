@@ -9750,7 +9750,11 @@ function changeQ(dir){
 }
 function scrambleAll(){
   if(isReviewMode)return;
-  shuffle(questions);
+  const unanswered=questions.filter(q=>!q.userAnswer);
+  const answered=questions.filter(q=>q.userAnswer);
+  shuffle(unanswered);
+  shuffle(answered);
+  questions=unanswered.concat(answered);
   questions.forEach(q=>{
     if(!Array.isArray(q.options)) q.options=[];
     const p=q.userAnswer?.text;
@@ -9760,7 +9764,7 @@ function scrambleAll(){
   currentIdx=0;loadQuestion(0);
   const b=document.getElementById('scramble-btn');b.classList.add('spinning');
   setTimeout(()=>b.classList.remove('spinning'),500);
-  showToast('🔀 Scrambled!');
+  showToast(answered.length?'🔀 Scrambled — answered items at the end':'🔀 Scrambled!');
   persistActiveQuiz(true);
 }
 
