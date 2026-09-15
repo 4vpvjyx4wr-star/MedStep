@@ -73,6 +73,10 @@ body{
   pointer-events:none;
 }
 .top-bar>*{pointer-events:auto}
+.top-bar-left{
+  display:flex;align-items:center;gap:10px;flex-wrap:nowrap;
+  min-width:0;pointer-events:auto;
+}
 
 /* ── Settings ─────────────────────────────────────────── */
 .settings-btn{
@@ -862,6 +866,9 @@ mark.medstep-highlight { background-color: rgba(230, 126, 34, 0.4); color: inher
 .export-btn .export-sub{font-size:.62rem;opacity:.5;font-family:var(--font-mono)}
 
 .hidden{display:none!important}
+#input-screen.hidden,
+#quiz-screen.hidden,
+#results-screen.hidden{display:none!important}
 select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(--text);border:1px solid var(--border);font-family:var(--font-display);font-size:.83rem;cursor:pointer;margin-bottom:2px}
 .toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--card);border:1px solid var(--primary);color:var(--text);padding:12px 24px;border-radius:40px;font-weight:700;font-size:.85rem;opacity:0;transition:all .3s;z-index:9999;pointer-events:none;font-family:var(--font-mono)}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
@@ -1182,7 +1189,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 #library-sidebar {
   position: fixed; left: 0; top: 0; bottom: 0; width: 700px; max-width: 96vw;
   background: var(--card); border-right: 1px solid var(--border);
-  z-index: 900; display: flex; flex-direction: column;
+  z-index: 1002; display: flex; flex-direction: column;
   transform: translateX(-100%); transition: transform .3s cubic-bezier(.25,.8,.25,1);
   box-shadow: 4px 0 30px rgba(0,0,0,.4);
   overscroll-behavior: contain;
@@ -1216,14 +1223,17 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   border-radius: 50px; padding: 11px 18px; font-family: var(--font-display);
   font-weight: 700; font-size: .82rem; cursor: pointer;
   display: flex; align-items: center; gap: 8px;
+  position: static; flex-shrink: 0;
   box-shadow: 0 4px 18px rgba(0,0,0,.35); transition: .2s;
 }
 #library-toggle:hover { filter: brightness(1.12); transform: translateY(-2px); }
+body.library-open #library-toggle { display: none; }
 #back-to-quiz-btn {
   background: var(--success, #2ecc71); color: #fff; border: none;
   border-radius: 50px; padding: 11px 18px; font-family: var(--font-display);
   font-weight: 700; font-size: .82rem; cursor: pointer;
   display: none; align-items: center; gap: 8px;
+  position: static; flex-shrink: 0; white-space: nowrap;
   box-shadow: 0 4px 18px rgba(0,0,0,.35); transition: .2s;
 }
 #back-to-quiz-btn:hover { filter: brightness(1.12); transform: translateY(-2px); }
@@ -1234,6 +1244,7 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   overscroll-behavior: none;
 }
 .lib-header .lib-title,
+.lib-header #back-to-quiz-btn,
 .lib-header .lib-close {
   flex-shrink: 0;
 }
@@ -1549,19 +1560,29 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 .lib-bulk-row {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   margin-left: auto;
+  flex-shrink: 0;
 }
 .lib-bulk-btn {
   border: 1px solid var(--border);
   background: rgba(255,255,255,.03);
   color: var(--text);
   border-radius: 8px;
-  width: 28px;
-  height: 28px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-size: .72rem;
+  font-weight: 800;
+  font-family: var(--font-display);
+  letter-spacing: 0;
+  display: inline-grid;
+  place-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
   cursor: pointer;
 }
 .lib-bulk-btn:hover { border-color: var(--primary); }
@@ -1573,6 +1594,12 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
   box-shadow: 0 4px 18px rgba(0,0,0,.35); transition: .2s;
 }
 .lib-title:hover { filter: brightness(1.12); transform: translateY(-2px); }
+@media (max-width: 720px) {
+  .top-bar-left { gap: 8px; }
+  #library-toggle, #back-to-quiz-btn, #library-sidebar .lib-title {
+    padding: 9px 12px; font-size: .75rem;
+  }
+}
 .lib-close {
   cursor: pointer; opacity: .4; font-size: 1.1rem; transition: .15s; line-height: 1;
 }
@@ -1955,9 +1982,8 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
 
 <!-- ══ TOP BAR ════════════════════════════════════════════ -->
 <div class="top-bar">
-  <div style="display:flex;align-items:center;gap:10px">
+  <div class="top-bar-left">
     <button id="library-toggle" onclick="toggleLibrary()">📚 Quiz Library</button>
-    <button id="back-to-quiz-btn" onclick="resumeSavedQuiz()" style="display:none">📝 Back to Quiz</button>
   </div>
   <div class="settings-btn" id="settings-trigger" title="Settings Menu">☰</div>
 </div>
@@ -1967,6 +1993,7 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
 <div id="library-sidebar">
   <div class="lib-header">
     <button type="button" class="lib-title" onclick="toggleLibrary()">📚 Quiz Library</button>
+    <button id="back-to-quiz-btn" onclick="resumeSavedQuiz()" style="display:none">📝 Back to Quiz</button>
     <div class="lib-header-scroll-outer">
       <div class="lib-header-scroll" id="lib-header-scroll" role="region" aria-label="Library actions" tabindex="0">
         <div class="lib-header-actions">
@@ -3042,6 +3069,10 @@ function optionLetter(i){
   }
   return s;
 }
+function quizQuestionStem(q){
+  if(!q||typeof q!=='object') return '';
+  return String(q.question||q.stem||q.prompt||'').trim();
+}
 function quizQuestionOptions(q){
   if(!q||typeof q!=='object') return [];
   if(Array.isArray(q.options)) return q.options;
@@ -3049,10 +3080,32 @@ function quizQuestionOptions(q){
   if(Array.isArray(q.answers)) return q.answers;
   return [];
 }
+function isQuizOptionCorrect(o){
+  if(!o||typeof o!=='object') return false;
+  return !!(o.isCorrect||o.correct||o.is_correct);
+}
+function normalizeQuizOption(o){
+  if(o==null) return null;
+  if(typeof o==='string'){
+    const text=o.trim();
+    return text?{text,isCorrect:false,rationale:''}:null;
+  }
+  if(typeof o!=='object') return null;
+  const text=String(o.text||o.option||o.label||o.answer||'').trim();
+  if(!text) return null;
+  const out=Object.assign({},o,{
+    text,
+    isCorrect:isQuizOptionCorrect(o)
+  });
+  const rationale=String(o.rationale||o.explanation||o.reason||'');
+  if(rationale&&!out.rationale) out.rationale=rationale;
+  return out;
+}
 function normalizeQuizQuestion(q){
   if(!q||typeof q!=='object') return q;
-  const options=quizQuestionOptions(q).filter(o=>o&&typeof o==='object');
-  return Object.assign({},q,{options});
+  const question=quizQuestionStem(q)||String(q.question||'');
+  const options=quizQuestionOptions(q).map(normalizeQuizOption).filter(Boolean);
+  return Object.assign({},q,{question,options});
 }
 function questionsMissingMinOptions(list){
   return (list||[]).filter(q=>!Array.isArray(q.options)||q.options.length<MIN_QUIZ_OPTIONS);
@@ -3178,6 +3231,12 @@ const LS_CHANGELOG_SEEN='medstep_changelog_seen';
 const LS_CHANGELOG_OPEN='medstep_changelog_open';
 const CHANGELOG_VISIBLE_COUNT=3;
 const MEDSTEP_CHANGELOG=[
+  {
+    id:'2026-09-15-paste-questions',
+    date:'2026-09-15',
+    title:'Pasting questions keeps the full set',
+    body:'Editing a quiz and pasting new Copilot JSON now keeps every question and its answer choices. Lab values that use < or > no longer get treated as HTML and stripped out.'
+  },
   {
     id:'2026-09-09-quiz-options',
     date:'2026-09-09',
@@ -8196,6 +8255,9 @@ function buildQuiz(raw, meta){
   document.getElementById('next-btn').innerText='Next Question →';
   document.getElementById('back-to-results-btn').style.display='none';
   document.getElementById('input-screen').classList.add('hidden');
+  document.getElementById('results-screen').classList.add('hidden');
+  const objList=document.getElementById('objective-list');
+  if(objList) objList.innerHTML='';
   document.getElementById('quiz-screen').classList.remove('hidden');
   document.getElementById('quiz-nav-settings').classList.remove('hidden');
   toggleSidebar();currentIdx=0;renderGrid();loadQuestion(0);startTimer();
@@ -10114,6 +10176,7 @@ function goHome(){
 
 function resumeSavedQuiz() {
   if (!savedQuizState) return;
+  if (libraryOpen) toggleLibrary();
   const s = savedQuizState;
   questions = relinkUserAnswers(sanitizeQuizData(s.questions));
   activeQuizMeta = s.activeQuizMeta || null;
@@ -11183,8 +11246,9 @@ function transformJsonOutsideStrings(s, transformer) {
 function stripQuizJsonNoise(text) {
   let s = String(text || '').replace(/^\uFEFF/, '');
   s = s.replace(/```(?:json|javascript|js)?\s*/gi, '').replace(/```/g, '');
-  s = s.replace(/<[^>]+>/g, ' ');
-  s = s.replace(/&nbsp;/gi, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+  // Only strip real HTML tags (e.g. <br>, </p>). Never treat lab comparisons
+  // like PaO2 < 60 mmHg or pH > 7.45 as tags — that deletes JSON in between.
+  s = s.replace(/<\/?[a-zA-Z][a-zA-Z0-9:-]*(?:\s[^>]*)?>/g, ' ');
   return s.trim();
 }
 
@@ -11220,21 +11284,30 @@ function findMatchingJsonEnd(s, start) {
 }
 
 function isQuizQuestionObject(q) {
-  return !!(q && typeof q === 'object' && typeof q.question === 'string' && q.question.trim() && Array.isArray(q.options));
+  if (!q || typeof q !== 'object' || Array.isArray(q)) return false;
+  const stem = quizQuestionStem(q);
+  if (!stem) return false;
+  if (quizQuestionOptions(q).length) return true;
+  return 'options' in q || 'choices' in q || 'answers' in q ||
+    'difficulty_order' in q || 'cited_learning_objective' in q;
 }
 
-function coerceQuizQuestions(value, acc) {
+function coerceQuizQuestions(value, acc, seen) {
   acc = acc || [];
+  seen = seen || new Set();
   if (value == null) return acc;
+  if (typeof value !== 'object') return acc;
+  if (seen.has(value)) return acc;
+  seen.add(value);
   if (Array.isArray(value)) {
-    value.forEach(v => coerceQuizQuestions(v, acc));
+    value.forEach(v => coerceQuizQuestions(v, acc, seen));
     return acc;
   }
-  if (typeof value === 'object') {
-    if (isQuizQuestionObject(value)) acc.push(value);
-    else if (Array.isArray(value.questions)) coerceQuizQuestions(value.questions, acc);
-    else if (Array.isArray(value.quiz)) coerceQuizQuestions(value.quiz, acc);
+  if (isQuizQuestionObject(value)) {
+    acc.push(value);
+    return acc;
   }
+  Object.keys(value).forEach(k => coerceQuizQuestions(value[k], acc, seen));
   return acc;
 }
 
@@ -11256,7 +11329,7 @@ function scanQuizJsonValues(s) {
       const chunk = repairQuizJsonText(s.slice(i, close + 1));
       const parsed = tryParseJsonValue(chunk);
       if (parsed.ok) values.push(parsed.value);
-      else if (s[i] === '[') walk(i + 1, close);
+      else walk(i + 1, close);
       i = close + 1;
     }
   }
@@ -11264,32 +11337,40 @@ function scanQuizJsonValues(s) {
   return values;
 }
 
+function canonicalizeQuizQuestions(list) {
+  return (list || [])
+    .map(q => normalizeQuizQuestion(q))
+    .filter(q => q && typeof q === 'object' && String(q.question || '').trim());
+}
+
 function extractQuizQuestionsFromText(text) {
   const raw = String(text || '').trim();
   if (!raw || raw === 'Loading quiz JSON…') return [];
   const repaired = repairQuizJsonText(raw);
+  const buckets = [];
   const direct = tryParseJsonValue(repaired);
-  if (direct.ok) {
-    const qs = coerceQuizQuestions(direct.value);
-    if (qs.length) return qs;
-  }
+  if (direct.ok) buckets.push(coerceQuizQuestions(direct.value));
   const scanned = [];
   scanQuizJsonValues(repaired).forEach(v => coerceQuizQuestions(v, scanned));
-  if (scanned.length) return scanned;
+  if (scanned.length) buckets.push(scanned);
   const wrapped = tryParseJsonValue('[' + repaired + ']');
-  if (wrapped.ok) return coerceQuizQuestions(wrapped.value);
-  return [];
+  if (wrapped.ok) buckets.push(coerceQuizQuestions(wrapped.value));
+  let best = [];
+  buckets.forEach(list => {
+    if (list.length > best.length) best = list;
+  });
+  return canonicalizeQuizQuestions(best);
 }
 
 function looksLikeQuizQuestionPaste(text, questions) {
   if (!questions.length) return false;
   const t = String(text || '').trim();
   if (t.startsWith('[') || t.startsWith('{')) return true;
-  return /"question"\s*:/.test(t) && /"options"\s*:/.test(t);
+  return /"question"\s*:/.test(t);
 }
 
 function prettyQuizJson(questions) {
-  return JSON.stringify(sanitizeQuizData(questions), null, 2);
+  return JSON.stringify(sanitizeQuizData(canonicalizeQuizQuestions(questions)), null, 2);
 }
 
 function parseQuizJsonText(jsonRaw) {
@@ -11931,7 +12012,7 @@ function toggleLibrary() {
   libraryOpen = !libraryOpen;
   document.getElementById('library-sidebar').classList.toggle('open', libraryOpen);
   document.getElementById('library-overlay').classList.toggle('open', libraryOpen);
-  document.getElementById('library-toggle').style.display = libraryOpen ? 'none' : '';
+  document.body.classList.toggle('library-open', libraryOpen);
   document.body.style.overflow = libraryOpen ? 'hidden' : '';
   if (libraryOpen && libraryManifest.length === 0) refreshLibrary();
 }
@@ -12463,6 +12544,7 @@ function sanitizeQuizText(str) {
   s = s.replace(/\u00BAC/g, '\u00B0C');
   s = s.replace(/\uF0E0/g, '\u2192');
   s = s.replace(/\uF04A/g, '');
+  s = s.replace(/&nbsp;/gi, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
   return s;
 }
 
@@ -12887,8 +12969,8 @@ function renderLibrary() {
         </div>
       </div>
       <span class="lib-bulk-row">
-        ${hasExamTag ? `<span class="lib-bulk-btn" title="Quiz all from same exam" role="button" tabindex="0" onclick="event.stopPropagation(); openQPickerForScope('${entry.file}','exam')">＋E</span>` : ''}
-        ${hasWeekTag ? `<span class="lib-bulk-btn" title="Quiz all from same week" role="button" tabindex="0" onclick="event.stopPropagation(); openQPickerForScope('${entry.file}','week')">＋W</span>` : ''}
+        ${hasExamTag ? `<span class="lib-bulk-btn" title="Quiz all from same exam" role="button" tabindex="0" onclick="event.stopPropagation(); openQPickerForScope('${entry.file}','exam')">+E</span>` : ''}
+        ${hasWeekTag ? `<span class="lib-bulk-btn" title="Quiz all from same week" role="button" tabindex="0" onclick="event.stopPropagation(); openQPickerForScope('${entry.file}','week')">+W</span>` : ''}
         <span class="lib-bulk-btn" title="${personal || isDeveloperMode() ? 'Edit quiz' : 'Edit tags'}" role="button" tabindex="0" onclick="event.stopPropagation(); openEditQuizTagsModalForFile('${fileAttr}')">✏️</span>
         ${(personal || isDeveloperMode()) ? `<span class="lib-delete-btn" title="${personal ? 'Delete from My Quizzes' : 'Delete from MedStep library (developer)'}" role="button" tabindex="0" onclick="event.stopPropagation(); ${personal ? `deletePersonalQuiz('${fileAttr}')` : `deletePremadeQuiz('${fileAttr}')`}">🗑</span>` : ''}
       </span>
@@ -13976,9 +14058,10 @@ document.getElementById('new-quiz-json').addEventListener('paste', function(e) {
   applyQuizJsonToModal(merged);
   this.selectionStart = this.selectionEnd = this.value.length;
   const added = pastedQs.length;
+  const total = merged.length;
   showToast(replacingAll
     ? '✅ Loaded ' + added + ' question' + (added !== 1 ? 's' : '') + ' — JSON formatted'
-    : '✅ Added ' + added + ' question' + (added !== 1 ? 's' : '') + ' — JSON formatted');
+    : '✅ Added ' + added + ' question' + (added !== 1 ? 's' : '') + ' (' + total + ' total) — JSON formatted');
 });
 
 let feedbackModalType = null;
