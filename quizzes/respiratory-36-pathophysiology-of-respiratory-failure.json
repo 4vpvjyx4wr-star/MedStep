@@ -1,321 +1,1153 @@
 [
   {
-    "question": "A preterm infant at 30 weeks gestation develops tachypnea, nasal flaring, and diffuse ground-glass chest radiograph shortly after birth. Which pathophysiologic mechanism best explains this presentation?",
+    "question": "A researcher examines fetal lung fluid and reports an L/S ratio of 1.2. Which neonatal risk is most likely increased for this fetus?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of neonatal respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
     "options": [
       {
-        "text": "Surfactant deficiency from immature type II pneumocytes",
+        "text": "Neonatal respiratory distress syndrome",
         "isCorrect": true,
-        "rationale": "Correct: NRDS is caused by insufficient surfactant production by immature type II pneumocytes leading to alveolar collapse and ground-glass radiograph."
+        "rationale": "Correct: An L/S ratio <1.5 indicates low surfactant and predicts NRDS due to immature type II pneumocytes and surfactant deficiency."
       },
       {
-        "text": "Excess pulmonary surfactant production",
+        "text": "Transient tachypnea of newborn",
         "isCorrect": false,
-        "rationale": "Wrong: Excess surfactant would increase compliance and prevent atelectasis; NRDS requires deficiency, not excess."
+        "rationale": "Wrong: Transient tachypnea is related to delayed fluid clearance, not an L/S ratio; an increased L/S would not predict it."
       },
       {
-        "text": "Primary cardiac left heart failure",
+        "text": "Meconium aspiration syndrome",
         "isCorrect": false,
-        "rationale": "Wrong: Cardiac failure causes cardiogenic edema and cardiomegaly; NRDS shows noncardiogenic atelectasis and no cardiomegaly."
+        "rationale": "Wrong: Meconium aspiration is associated with postterm or distressed infants, not low L/S; a change in meconium presence would be needed to make this correct."
+      },
+      {
+        "text": "Persistent pulmonary hypertension",
+        "isCorrect": false,
+        "rationale": "Wrong: Pulmonary hypertension can follow severe hypoxemia from NRDS but low L/S specifically predicts surfactant deficiency; direct evidence of pulmonary vascular pathology would be required."
       },
       {
         "text": "Congenital diaphragmatic hernia",
         "isCorrect": false,
-        "rationale": "Wrong: Diaphragmatic hernia causes bowel in chest and mediastinal shift; it does not produce surfactant-deficiency ground-glass pattern."
-      },
-      {
-        "text": "Pulmonary hypoplasia from oligohydramnios",
-        "isCorrect": false,
-        "rationale": "Wrong: Hypoplasia reduces lung volume but is not caused by surfactant deficiency; chest x-ray and timing differ from NRDS."
+        "rationale": "Wrong: Diaphragmatic hernia is structural and not predicted by amniotic L/S ratio; imaging showing abdominal contents in thorax would be needed."
       }
     ]
   },
   {
-    "question": "Which amniotic fluid test result most strongly predicts high risk of neonatal respiratory distress in an imminent preterm delivery?",
+    "question": "Which fetal factor listed most directly inhibits surfactant synthesis and thereby increases risk of neonatal respiratory distress?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of neonatal respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
     "options": [
       {
-        "text": "Lecithin:sphingomyelin ratio less than 1.5",
+        "text": "Fetal hyperinsulinemia",
         "isCorrect": true,
-        "rationale": "Correct: L/S ratio  2.0 indicates lung maturity and low NRDS risk; this would not predict high risk."
+        "rationale": "Correct: The slides state insulin inhibits surfactant production; fetal hyperinsulinemia (from maternal diabetes) reduces surfactant synthesis."
       },
       {
-        "text": "Lamellar body count above 40,000 µL",
+        "text": "Antenatal corticosteroids",
         "isCorrect": false,
-        "rationale": "Wrong: High lamellar body count suggests maturity; a low count would predict higher NRDS risk."
+        "rationale": "Wrong: Corticosteroids stimulate surfactant production; evidence of steroid administration would reverse risk."
       },
       {
-        "text": "Presence of phosphatidylglycerol in fluid",
+        "text": "Male fetal sex",
         "isCorrect": false,
-        "rationale": "Wrong: Phosphatidylglycerol appears late (~35 weeks) and indicates maturity; its presence predicts lower NRDS risk."
+        "rationale": "Wrong: Male sex is a slight risk factor but does not directly inhibit surfactant synthesis; a hormonal mechanism would be needed to make this correct."
       },
       {
-        "text": "Stable foam on shake test",
+        "text": "Multiple gestation",
         "isCorrect": false,
-        "rationale": "Wrong: Stable foam indicates adequate surfactant and lower NRDS risk; instability would predict higher risk."
+        "rationale": "Wrong: Multiple gestation increases prematurity risk but does not directly inhibit surfactant; earlier gestational age would be required."
+      },
+      {
+        "text": "Cesarean delivery",
+        "isCorrect": false,
+        "rationale": "Wrong: Cesarean reduces cortisol surge and indirectly lowers surfactant, but the slide names insulin as a direct inhibitor; direct evidence of maternal hyperglycemia would be needed."
       }
     ]
   },
   {
-    "question": "A pregnant woman with poorly controlled diabetes is at increased risk of delivering an infant with NRDS. Which fetal metabolic effect explains this increased risk?",
+    "question": "Which chest radiograph pattern is most characteristic of surfactant deficiency in a preterm infant with increased work of breathing?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of neonatal respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
     "options": [
       {
-        "text": "Fetal hyperinsulinemia inhibiting surfactant synthesis",
+        "text": "Diffuse ground-glass opacities",
         "isCorrect": true,
-        "rationale": "Correct: Maternal hyperglycemia causes fetal hyperinsulinemia, and insulin inhibits surfactant production by type II pneumocytes."
+        "rationale": "Correct: NRDS shows diffuse reticulo-granular 'ground-glass' opacities with air bronchograms due to alveolar collapse."
       },
       {
-        "text": "Fetal hypothyroidism reducing lung growth",
+        "text": "Lobar consolidation",
         "isCorrect": false,
-        "rationale": "Wrong: Thyroid dysfunction is not the lecture-cited mechanism; maternal diabetes specifically causes fetal hyperinsulinemia."
+        "rationale": "Wrong: Lobar consolidation suggests pneumonia; radiographic focal consolidation would be required to make this correct."
       },
       {
-        "text": "Placental insufficiency causing hypoxia",
+        "text": "Hyperinflation with flattening",
         "isCorrect": false,
-        "rationale": "Wrong: Placental insufficiency can cause growth restriction but the lecture links diabetes to insulin-mediated surfactant inhibition."
+        "rationale": "Wrong: Hyperinflation is typical of obstructive disease, not surfactant deficiency; clinical signs of air trapping would be needed."
       },
       {
-        "text": "Excess fetal cortisol accelerating surfactant",
+        "text": "Cardiomegaly with edema",
         "isCorrect": false,
-        "rationale": "Wrong: Corticosteroids stimulate surfactant; excess cortisol would reduce NRDS risk, not increase it."
+        "rationale": "Wrong: Cardiogenic pulmonary edema shows cardiomegaly; elevated PAWP or cardiac enlargement would be needed."
       },
       {
-        "text": "Fetal polycythemia increasing blood viscosity",
+        "text": "Patchy alveolar nodules",
         "isCorrect": false,
-        "rationale": "Wrong: Polycythemia is unrelated to surfactant synthesis and NRDS risk per the lecture."
+        "rationale": "Wrong: Patchy nodules suggest aspiration or infection; microbiologic or positional aspiration history would be required."
       }
     ]
   },
   {
-    "question": "Which immediate treatment directly lowers alveolar surface tension and improves lung compliance in NRDS?",
+    "question": "Which intervention given to a mother at risk of preterm delivery most directly increases fetal surfactant production?",
     "difficulty_order": "1st",
     "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of neonatal respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
     "options": [
       {
-        "text": "Endotracheal surfactant replacement therapy",
+        "text": "Antenatal corticosteroids",
         "isCorrect": true,
-        "rationale": "Correct: Direct instillation of surfactant immediately lowers surface tension and improves compliance in NRDS."
+        "rationale": "Correct: The slides state antenatal corticosteroids (dexamethasone, betamethasone) stimulate surfactant production when given between 23 and 34 weeks."
       },
       {
-        "text": "High-dose systemic corticosteroids",
+        "text": "Maternal insulin therapy",
         "isCorrect": false,
-        "rationale": "Wrong: Antenatal corticosteroids given to mother stimulate fetal surfactant production, but postnatal systemic steroids do not immediately replace surfactant."
+        "rationale": "Wrong: Insulin inhibits surfactant; maternal insulin would not increase fetal surfactant unless maternal hyperglycemia were corrected."
       },
       {
-        "text": "Inhaled nitric oxide therapy",
+        "text": "Thyroxine supplementation",
         "isCorrect": false,
-        "rationale": "Wrong: Inhaled NO treats pulmonary hypertension but does not directly replace surfactant or lower surface tension."
+        "rationale": "Wrong: Thyroxine was mentioned as given in a case but not as increasing surfactant; evidence linking thyroxine to surfactant increase is absent in the slides."
       },
       {
-        "text": "Diuretic administration to reduce edema",
+        "text": "Prophylactic antibiotics",
         "isCorrect": false,
-        "rationale": "Wrong: Diuretics do not address surfactant deficiency and are not immediate surfactant replacement."
+        "rationale": "Wrong: Antibiotics do not stimulate surfactant production; infection prevention alone would not change surfactant synthesis."
       },
       {
-        "text": "Bronchodilator nebulization with albuterol",
+        "text": "Elective cesarean delivery",
         "isCorrect": false,
-        "rationale": "Wrong: Bronchodilators do not affect alveolar surface tension or surfactant levels in NRDS."
+        "rationale": "Wrong: Cesarean reduces fetal cortisol surge and decreases surfactant production; it would not increase surfactant."
       }
     ]
   },
   {
-    "question": "Which maternal intervention before preterm delivery increases fetal surfactant production and reduces NRDS risk?",
+    "question": "A 45-year-old patient with sepsis develops acute hypoxemia and bilateral fluffy infiltrates on chest x-ray with normal pulmonary wedge pressure. Which pathophysiologic process best explains the pulmonary edema in this patient?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Increased alveolar-capillary permeability",
+        "isCorrect": true,
+        "rationale": "Correct: ARDS causes diffuse alveolar damage with increased permeability leading to protein-rich, noncardiogenic pulmonary edema as described."
+      },
+      {
+        "text": "Left ventricular failure",
+        "isCorrect": false,
+        "rationale": "Wrong: Cardiogenic edema from LV failure raises PAWP; a normal PAWP argues against this mechanism."
+      },
+      {
+        "text": "Lymphatic obstruction",
+        "isCorrect": false,
+        "rationale": "Wrong: Lymphatic blockage causes interstitial edema but is not the acute permeability defect seen in ARDS; imaging or lymphatic obstruction evidence would be needed."
+      },
+      {
+        "text": "Alveolar hemorrhage",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemorrhage would show blood in alveoli and different histology; bronchoscopy or bloody lavage would be required."
+      },
+      {
+        "text": "Bronchial obstruction",
+        "isCorrect": false,
+        "rationale": "Wrong: Obstruction causes atelectasis or hyperinflation, not diffuse protein-rich edema; airway obstruction findings would be necessary."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following is the most common in-hospital precipitant of the syndrome characterized by diffuse alveolar damage and neutrophil activation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Sepsis",
+        "isCorrect": true,
+        "rationale": "Correct: The slides identify sepsis as the most common in-hospital cause of ARDS, associated with neutrophil activation and cytokine release."
+      },
+      {
+        "text": "Pulmonary embolism",
+        "isCorrect": false,
+        "rationale": "Wrong: PE causes V/Q mismatch but is not listed as the most common in-hospital cause of diffuse alveolar damage; evidence of thromboembolism would be needed."
+      },
+      {
+        "text": "Asthma exacerbation",
+        "isCorrect": false,
+        "rationale": "Wrong: Asthma involves bronchospasm and eosinophils, not the neutrophil-driven diffuse alveolar damage typical of ARDS."
+      },
+      {
+        "text": "Left heart failure",
+        "isCorrect": false,
+        "rationale": "Wrong: Left heart failure causes cardiogenic edema with elevated PAWP, not ARDS; elevated wedge pressure would be required."
+      },
+      {
+        "text": "Pulmonary contusion",
+        "isCorrect": false,
+        "rationale": "Wrong: Contusion is a cause but not the most common in-hospital precipitant; trauma history would be needed to support this."
+      }
+    ]
+  },
+  {
+    "question": "A patient aspirated gastric contents while supine and later develops focal infiltrates in the posterior upper lobes. Which physiologic principle explains this distribution?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Dependent lung perfusion",
+        "isCorrect": true,
+        "rationale": "Correct: Dependent segments receive best perfusion; when supine, posterior upper lobes and superior lower lobes are dependent and prone to aspiration-related injury."
+      },
+      {
+        "text": "Right main bronchus anatomy",
+        "isCorrect": false,
+        "rationale": "Wrong: Right main bronchus predisposes to aspiration generally, but the specific posterior upper lobe distribution when supine is due to dependent perfusion."
+      },
+      {
+        "text": "Gravity-independent ventilation",
+        "isCorrect": false,
+        "rationale": "Wrong: Ventilation varies with position; gravity-independent ventilation would not explain dependent aspiration distribution."
+      },
+      {
+        "text": "Hypoxic vasoconstriction",
+        "isCorrect": false,
+        "rationale": "Wrong: Hypoxic vasoconstriction diverts blood away from poorly ventilated areas, not the primary determinant of aspiration location; positional perfusion evidence would be needed."
+      },
+      {
+        "text": "Alveolar surfactant deficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: Surfactant deficiency causes diffuse atelectasis, not focal dependent aspiration; surfactant loss would need to be global to make this correct."
+      }
+    ]
+  },
+  {
+    "question": "Which cytokine profile listed best matches the early exudative phase of diffuse alveolar damage leading to hyaline membrane formation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "TNF, IL-1, IL-6, IL-8",
+        "isCorrect": true,
+        "rationale": "Correct: The slides list TNF and interleukins 1, 6, and 8 as mediators recruiting neutrophils and causing epithelial damage in ARDS."
+      },
+      {
+        "text": "IL-4, IL-5, IL-13",
+        "isCorrect": false,
+        "rationale": "Wrong: These Th2 cytokines are associated with eosinophilic inflammation and asthma, not neutrophil-driven ARDS; eosinophilic markers would be needed."
+      },
+      {
+        "text": "IFN-γ, IL-12, IL-2",
+        "isCorrect": false,
+        "rationale": "Wrong: Th1 cytokines mediate cell-mediated immunity but are not the primary mediators listed for ARDS exudative phase; evidence of macrophage-driven granuloma would be required."
+      },
+      {
+        "text": "TGF-β, PDGF, VEGF",
+        "isCorrect": false,
+        "rationale": "Wrong: These are fibrotic and angiogenic mediators more relevant to later proliferative/fibrotic phases; fibrotic histology would be needed."
+      },
+      {
+        "text": "IL-10, TGF-β, IL-1ra",
+        "isCorrect": false,
+        "rationale": "Wrong: These are anti-inflammatory mediators and would not explain neutrophil recruitment and hyaline membrane formation; elevated anti-inflammatory markers would be required."
+      }
+    ]
+  },
+  {
+    "question": "A ventilated patient with ARDS is managed with low tidal volumes and PEEP. Which physiologic benefit of PEEP is most directly intended by this strategy?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Prevent alveolar collapse",
+        "isCorrect": true,
+        "rationale": "Correct: PEEP maintains positive end-expiratory pressure to keep alveoli open, increase FRC, and improve oxygenation in ARDS."
+      },
+      {
+        "text": "Increase cardiac preload",
+        "isCorrect": false,
+        "rationale": "Wrong: PEEP decreases venous return and cardiac output; increased preload would be opposite and require hemodynamic data showing improved venous return."
+      },
+      {
+        "text": "Reduce airway resistance",
+        "isCorrect": false,
+        "rationale": "Wrong: PEEP affects alveolar recruitment more than airway resistance; bronchodilator response would be needed to support reduced resistance."
+      },
+      {
+        "text": "Eliminate pulmonary shunt",
+        "isCorrect": false,
+        "rationale": "Wrong: PEEP reduces shunt but does not eliminate it; complete elimination would require full alveolar recruitment and resolution of permeability edema."
+      },
+      {
+        "text": "Lower pulmonary vascular resistance",
+        "isCorrect": false,
+        "rationale": "Wrong: PEEP can increase pulmonary vascular resistance and impair RV output; hemodynamic measures showing decreased PVR would be required."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic CO2 retention receives high-flow oxygen and develops a rise in PaCO2. Which mechanism described best accounts for this increase?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Outline the pathophysiological and clinical consequences of hypercapnia and oxygen toxicity (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Haldane effect",
+        "isCorrect": true,
+        "rationale": "Correct: The Haldane effect explains CO2 displacement from hemoglobin when O2 binds, raising PaCO2 as described in the slides."
+      },
+      {
+        "text": "Increased hypoxic drive",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased hypoxic drive would lower PaCO2; the slides note oxygen blunts hypoxic drive, not increases it."
+      },
+      {
+        "text": "Enhanced renal bicarbonate excretion",
+        "isCorrect": false,
+        "rationale": "Wrong: Renal compensation occurs over days and would not acutely raise PaCO2; acute renal changes would be required."
+      },
+      {
+        "text": "Improved alveolar diffusion",
+        "isCorrect": false,
+        "rationale": "Wrong: Improved diffusion would lower PaCO2; evidence of increased diffusion capacity would be needed."
+      },
+      {
+        "text": "Bronchoconstriction from oxygen",
+        "isCorrect": false,
+        "rationale": "Wrong: Oxygen does not cause bronchoconstriction as the primary mechanism for CO2 rise; bronchospasm findings would be necessary."
+      }
+    ]
+  },
+  {
+    "question": "Which clinical sign most directly indicates alveolar hyperventilation leading to hypocapnia?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Outline the pathophysiological and clinical consequences of hypoxemia and hypocapnia (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "PaCO2 <35 mmHg",
+        "isCorrect": true,
+        "rationale": "Correct: The slides define hypocapnia as PaCO2 <35 mmHg, which implies alveolar hyperventilation."
+      },
+      {
+        "text": "PaO2 <60 mmHg",
+        "isCorrect": false,
+        "rationale": "Wrong: Low PaO2 indicates hypoxemia, not hypocapnia; a low PaO2 would need to be accompanied by low PaCO2 to indicate hyperventilation."
+      },
+      {
+        "text": "Elevated bicarbonate",
+        "isCorrect": false,
+        "rationale": "Wrong: Elevated HCO3- is a renal compensation for chronic hypercapnia, not a marker of acute hypocapnia; chronic labs would be required."
+      },
+      {
+        "text": "Asterixis on exam",
+        "isCorrect": false,
+        "rationale": "Wrong: Asterixis is associated with hypercapnia or metabolic encephalopathy, not hypocapnia; signs of CO2 retention would be needed."
+      },
+      {
+        "text": "Cyanosis on pulse oximetry",
+        "isCorrect": false,
+        "rationale": "Wrong: Cyanosis indicates hypoxemia; pulse oximetry showing low SpO2 would be required to support hypoxemia rather than hypocapnia."
+      }
+    ]
+  },
+  {
+    "question": "A patient with ARDS has PaO2/FiO2 ratio of 150 mmHg. According to the severity grading described, how should this ARDS be classified?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Moderate ARDS",
+        "isCorrect": true,
+        "rationale": "Correct: The slides define moderate ARDS as PaO2/FiO2 between 100 and 200 mmHg; 150 falls in this range."
+      },
+      {
+        "text": "Mild ARDS",
+        "isCorrect": false,
+        "rationale": "Wrong: Mild ARDS is 200-300 mmHg; a higher ratio would be needed to classify as mild."
+      },
+      {
+        "text": "Severe ARDS",
+        "isCorrect": false,
+        "rationale": "Wrong: Severe ARDS is <100 mmHg; a lower ratio would be required to meet that category."
+      },
+      {
+        "text": "No ARDS",
+        "isCorrect": false,
+        "rationale": "Wrong: A ratio of 150 indicates significant hypoxemia consistent with ARDS; a normal ratio (~500) would be needed to exclude ARDS."
+      },
+      {
+        "text": "Cardiogenic pulmonary edema",
+        "isCorrect": false,
+        "rationale": "Wrong: Classification is based on oxygenation, not etiology; normal PAWP would be required to distinguish cardiogenic edema."
+      }
+    ]
+  },
+  {
+    "question": "A patient with ARDS is placed in the prone position. Which physiologic rationale best explains improved oxygenation with proning?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Better posterior lung perfusion",
+        "isCorrect": true,
+        "rationale": "Correct: Prone positioning improves V/Q matching because posterior lungs are better perfused and proning redistributes ventilation to better-perfused areas."
+      },
+      {
+        "text": "Increased cardiac output",
+        "isCorrect": false,
+        "rationale": "Wrong: Proning primarily improves V/Q matching rather than increasing cardiac output; hemodynamic data showing increased CO would be needed."
+      },
+      {
+        "text": "Reduced alveolar permeability",
+        "isCorrect": false,
+        "rationale": "Wrong: Proning does not directly alter capillary permeability; resolution of permeability edema would require time and anti-inflammatory treatment."
+      },
+      {
+        "text": "Enhanced lymphatic drainage",
+        "isCorrect": false,
+        "rationale": "Wrong: While position may affect drainage, the slides emphasize perfusion redistribution as the mechanism; evidence of improved lymph flow would be required."
+      },
+      {
+        "text": "Lower airway resistance",
+        "isCorrect": false,
+        "rationale": "Wrong: Proning does not primarily reduce airway resistance; bronchodilator response would be necessary to support this."
+      }
+    ]
+  },
+  {
+    "question": "A newborn at 33 weeks delivered by cesarean has nasal flaring, expiratory grunting, and SpO2 64% on room air. Which immediate respiratory support is described as analogous to adult PEEP and appropriate as initial therapy?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of neonatal respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
     "options": [
       {
-        "text": "Antenatal corticosteroid administration to mother",
+        "text": "Mask CPAP with oxygen",
         "isCorrect": true,
-        "rationale": "Correct: Maternal corticosteroids (dexamethasone, betamethasone) stimulate fetal type II pneumocytes to increase surfactant production."
+        "rationale": "Correct: The slides state CPAP in neonates prevents alveolar collapse and works like PEEP in adults, increasing FRC and reducing work of breathing."
       },
       {
-        "text": "Maternal insulin infusion to lower glucose",
+        "text": "High-flow nasal cannula",
         "isCorrect": false,
-        "rationale": "Wrong: Lowering maternal glucose does not directly stimulate surfactant; maternal hyperglycemia is the risk factor via fetal insulin."
+        "rationale": "Wrong: High-flow devices are not specifically equated to PEEP in the slides; CPAP is the recommended analogous therapy."
       },
       {
-        "text": "Prophylactic maternal antibiotics",
+        "text": "Immediate intubation without PEEP",
         "isCorrect": false,
-        "rationale": "Wrong: Antibiotics prevent infection but do not increase fetal surfactant production per the lecture."
+        "rationale": "Wrong: Intubation may be needed but PEEP/CPAP is emphasized; intubation without PEEP would not prevent alveolar collapse."
       },
       {
-        "text": "Maternal thyroxine supplementation",
+        "text": "Supplemental oxygen alone",
         "isCorrect": false,
-        "rationale": "Wrong: Thyroxine was mentioned but not as a surfactant stimulant; corticosteroids are the cited intervention."
+        "rationale": "Wrong: Oxygen alone does not prevent alveolar collapse; CPAP/PEEP is required to maintain FRC."
       },
       {
-        "text": "Immediate cesarean delivery without steroids",
+        "text": "Surfactant via IV infusion",
         "isCorrect": false,
-        "rationale": "Wrong: Cesarean delivery increases NRDS risk due to reduced cortisol surge; not giving steroids would not reduce risk."
+        "rationale": "Wrong: Surfactant is given directly into the airway, not IV; an airway administration would be required to be correct."
       }
     ]
   },
   {
-    "question": "A 45-year-old patient in the ICU develops acute hypoxemic respiratory failure with bilateral fluffy infiltrates on chest x-ray and normal pulmonary capillary wedge pressure. Which mechanism best describes the primary pathophysiology?",
+    "question": "A patient with ARDS is started on mechanical ventilation and develops hypotension after increasing PEEP. Which hemodynamic mechanism best explains this hypotension?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
     "options": [
       {
-        "text": "Inflammation-induced increased alveolar-capillary permeability",
+        "text": "Decreased venous return",
         "isCorrect": true,
-        "rationale": "Correct: ARDS is due to diffuse alveolar damage and increased permeability causing noncardiogenic pulmonary edema."
+        "rationale": "Correct: The slides list decreased venous return due to increased right atrial pressure as a primary mechanism by which PEEP lowers cardiac output and causes hypotension."
       },
       {
-        "text": "Left ventricular systolic dysfunction causing edema",
+        "text": "Systemic vasodilation",
         "isCorrect": false,
-        "rationale": "Wrong: Cardiogenic edema raises PAWP; ARDS has normal wedge pressure and is permeability-driven."
+        "rationale": "Wrong: Systemic vasodilation is not the primary PEEP effect described; vasodilation would need to be documented to make this correct."
       },
       {
-        "text": "Primary pulmonary embolism causing infarction",
+        "text": "Increased left ventricular preload",
         "isCorrect": false,
-        "rationale": "Wrong: PE causes V/Q mismatch and may show focal changes, not diffuse permeability edema characteristic of ARDS."
+        "rationale": "Wrong: PEEP typically decreases preload; increased preload would contradict the described hemodynamic effects."
       },
       {
-        "text": "Bronchospasm with mucus plugging",
+        "text": "Enhanced renal fluid loss",
         "isCorrect": false,
-        "rationale": "Wrong: Bronchospasm causes airflow limitation, not diffuse alveolar-capillary leak and hyaline membranes."
+        "rationale": "Wrong: Diuresis is not an acute effect of PEEP causing hypotension; evidence of volume loss would be required."
       },
       {
-        "text": "Alveolar proteinosis with surfactant accumulation",
+        "text": "Decreased pulmonary vascular resistance",
         "isCorrect": false,
-        "rationale": "Wrong: Alveolar proteinosis involves surfactant accumulation, not the inflammatory protein-rich edema seen in ARDS."
+        "rationale": "Wrong: PEEP can increase pulmonary vascular resistance and impair RV output; decreased PVR would not explain hypotension here."
       }
     ]
   },
   {
-    "question": "Which clinical scenario from the lecture is the most common hospital-acquired cause of ARDS?",
+    "question": "Which histologic finding is characteristic of both neonatal surfactant deficiency and adult diffuse alveolar damage?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
     "options": [
       {
-        "text": "Sepsis from a systemic infection",
+        "text": "Hyaline membranes",
         "isCorrect": true,
-        "rationale": "Correct: Sepsis is the most common in-hospital cause of ARDS due to systemic inflammation and neutrophil activation."
+        "rationale": "Correct: The slides note hyaline membranes composed of fibrin and dead epithelial cells are seen in NRDS and ARDS due to alveolar-capillary barrier damage."
       },
       {
-        "text": "Community-acquired viral pneumonia",
+        "text": "Granulomatous inflammation",
         "isCorrect": false,
-        "rationale": "Wrong: Pneumonia is the most common cause outside hospital, but sepsis is the leading in-hospital cause per the lecture."
+        "rationale": "Wrong: Granulomas are not part of ARDS/NRDS pathology; granulomatous histology would be required."
       },
       {
-        "text": "Isolated pulmonary contusion after trauma",
+        "text": "Eosinophilic bronchitis",
         "isCorrect": false,
-        "rationale": "Wrong: Trauma is a cause but less common than sepsis in hospitalized patients."
+        "rationale": "Wrong: Eosinophilic bronchitis is typical of asthma, not diffuse alveolar damage; eosinophil predominance would be needed."
       },
       {
-        "text": "Transfusion-related acute lung injury",
+        "text": "Alveolar proteinosis",
         "isCorrect": false,
-        "rationale": "Wrong: TRALI is a recognized cause but not the most common hospital-acquired cause compared with sepsis."
+        "rationale": "Wrong: Alveolar proteinosis has PAS-positive proteinaceous material but is a distinct entity; specific surfactant accumulation evidence would be required."
       },
       {
-        "text": "Aspiration while supine",
+        "text": "Caseating necrosis",
         "isCorrect": false,
-        "rationale": "Wrong: Aspiration can cause ARDS but is not the single most common in-hospital cause per the lecture."
+        "rationale": "Wrong: Caseation is seen in TB, not ARDS/NRDS; microbiologic confirmation of TB would be necessary."
       }
     ]
   },
   {
-    "question": "Which sequence best describes the early cellular events in ARDS pathogenesis?",
+    "question": "A clinician plans oxygen therapy for a chronic CO2 retainer. Based on the material, what SpO2 target range should be used to minimize oxygen-induced hypercapnia?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Outline the pathophysiological and clinical consequences of hypercapnia and oxygen toxicity (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
     "options": [
       {
-        "text": "Cytokine release then neutrophil activation",
+        "text": "88-92% SpO2",
         "isCorrect": true,
-        "rationale": "Correct: Tissue injury triggers cytokines (TNF, IL-1, IL-6, IL-8) which recruit and activate neutrophils causing alveolar-capillary damage."
+        "rationale": "Correct: The slides recommend titrating O2 in chronic CO2 retainers to a target SpO2 about 88–92% to avoid worsening hypercapnia."
       },
       {
-        "text": "Surfactant overproduction then edema",
+        "text": "95-100% SpO2",
         "isCorrect": false,
-        "rationale": "Wrong: ARDS involves surfactant loss and edema, not overproduction preceding edema."
+        "rationale": "Wrong: High targets increase risk of oxygen-induced hypercapnia and ROP in neonates; lower targets are advised for CO2 retainers."
       },
       {
-        "text": "Alveolar hemorrhage then fibrosis",
+        "text": "75-80% SpO2",
         "isCorrect": false,
-        "rationale": "Wrong: Hemorrhage is not the primary early event; neutrophil-mediated permeability and hyaline membranes occur first."
+        "rationale": "Wrong: This range is dangerously low and would cause tissue hypoxia; higher oxygenation would be required to be safe."
       },
       {
-        "text": "Bronchial obstruction then infection",
+        "text": "100% SpO2 only",
         "isCorrect": false,
-        "rationale": "Wrong: Bronchial obstruction is not the initiating cellular event described for ARDS pathophysiology."
+        "rationale": "Wrong: 100% is not recommended for chronic CO2 retainers due to Haldane effect and V/Q mismatch; evidence of acute severe hypoxemia would be needed to justify it."
       },
       {
-        "text": "Type II hyperplasia then cytokine release",
+        "text": "80-85% SpO2",
         "isCorrect": false,
-        "rationale": "Wrong: Type II cell proliferation is part of later proliferative repair, not the initial cytokine-driven injury."
+        "rationale": "Wrong: This is below the recommended target and risks hypoxemia; a higher target within 88-92% would be required."
       }
     ]
   },
   {
-    "question": "A patient with ARDS has PaO2 60 mmHg while receiving FiO2 0.6. How should the severity be classified using the PaO2/FiO2 ratio?",
+    "question": "A postoperative patient received 100% oxygen during induction and develops hypoxemia 24 hours later due to alveolar collapse. Which mechanism best explains this phenomenon?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Outline the pathophysiological and clinical consequences of hypercapnia and oxygen toxicity (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
     "options": [
       {
-        "text": "Moderate ARDS (PaO2/FiO2 100–200 mmHg)",
+        "text": "Oxygen absorption atelectasis",
         "isCorrect": true,
-        "rationale": "Correct: PaO2/FiO2 = 60/0.6 = 100, which falls at the lower boundary of moderate ARDS per the lecture criteria."
+        "rationale": "Correct: The slides describe oxygen absorption atelectasis where high O2 washes out nitrogen, removing the 'stent' and allowing alveolar collapse."
       },
       {
-        "text": "Mild ARDS (PaO2/FiO2 200–300 mmHg)",
+        "text": "Pulmonary embolism",
         "isCorrect": false,
-        "rationale": "Wrong: A ratio of 100 is far below the mild range; this is not mild ARDS."
+        "rationale": "Wrong: PE causes sudden V/Q mismatch but is not caused by high intraoperative oxygen; imaging evidence of thrombus would be needed."
       },
       {
-        "text": "Severe ARDS (PaO2/FiO2  2.0)",
+        "text": "Ventilator-associated pneumonia",
         "isCorrect": false,
-        "rationale": "Wrong: L/S >2.0 indicates maturity and low risk; 1.6 falls below that threshold."
+        "rationale": "Wrong: VAP causes infection-related hypoxemia but not nitrogen washout-induced atelectasis; microbiologic confirmation would be required."
       },
       {
-        "text": "High risk for NRDS (L/S <1.5)",
+        "text": "Cardiogenic pulmonary edema",
         "isCorrect": false,
-        "rationale": "Wrong: High risk is L/S <1.5; 1.6 is slightly above that cutoff and considered borderline."
+        "rationale": "Wrong: Cardiogenic edema is due to heart failure, not nitrogen washout; elevated PAWP would be necessary to support this."
       },
       {
-        "text": "Definitive absence of surfactant",
+        "text": "Bronchospasm from anesthesia",
         "isCorrect": false,
-        "rationale": "Wrong: A ratio of 1.6 does not indicate absence of surfactant; it indicates borderline maturity."
-      },
-      {
-        "text": "Immediate need for surfactant replacement regardless",
-        "isCorrect": false,
-        "rationale": "Wrong: Management depends on clinical status; L/S 1.6 alone is borderline and does not mandate immediate replacement without clinical signs."
+        "rationale": "Wrong: Bronchospasm causes airflow limitation, not absorption atelectasis; wheeze and bronchospasm signs would be needed."
       }
     ]
   },
   {
-    "question": "A patient with ARDS has severe hypoxemia unresponsive to increased FiO2. Which pathophysiologic explanation from the lecture accounts for poor response to supplemental oxygen?",
+    "question": "A neonate with NRDS receives surfactant replacement directly into the airway. Which immediate biophysical effect explains improved lung compliance?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of neonatal respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Lowered alveolar surface tension",
+        "isCorrect": true,
+        "rationale": "Correct: Surfactant lowers surface tension, preventing alveolar collapse and increasing compliance as stated in the slides."
+      },
+      {
+        "text": "Increased lung recoil",
+        "isCorrect": false,
+        "rationale": "Wrong: Surfactant decreases lung recoil; increased recoil would worsen compliance and contradict the described effect."
+      },
+      {
+        "text": "Raised airway resistance",
+        "isCorrect": false,
+        "rationale": "Wrong: Surfactant improves alveolar mechanics, not increase airway resistance; evidence of bronchial narrowing would be required."
+      },
+      {
+        "text": "Enhanced pulmonary vascular resistance",
+        "isCorrect": false,
+        "rationale": "Wrong: Surfactant reduces hypoxemia-related vasoconstriction indirectly; a direct increase in PVR would be incorrect."
+      },
+      {
+        "text": "Promotion of alveolar fibrosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Surfactant replacement does not cause fibrosis; fibrotic histology would be needed to support this."
+      }
+    ]
+  },
+  {
+    "question": "A patient with ARDS has early ABG showing low PaO2 and low PaCO2 with alkalemia. Which physiologic explanation best fits this early pattern?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Outline the pathophysiological and clinical consequences of hypoxemia and hypocapnia (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Hyperventilation causing hypocapnia",
+        "isCorrect": true,
+        "rationale": "Correct: Early ARDS often shows hypoxemia with compensatory hyperventilation leading to low PaCO2 and respiratory alkalosis as noted in the slides."
+      },
+      {
+        "text": "Renal bicarbonate retention",
+        "isCorrect": false,
+        "rationale": "Wrong: Renal compensation occurs over days and would not explain early alkalemia; chronic labs would be needed."
+      },
+      {
+        "text": "CO2 retention from hypoventilation",
+        "isCorrect": false,
+        "rationale": "Wrong: CO2 retention causes hypercapnia and acidosis, the opposite of the early pattern described."
+      },
+      {
+        "text": "Metabolic alkalosis from diuretics",
+        "isCorrect": false,
+        "rationale": "Wrong: Metabolic alkalosis could raise pH but the slide specifically attributes early low PaCO2 to hyperventilation in ARDS."
+      },
+      {
+        "text": "Mixed respiratory and metabolic acidosis",
+        "isCorrect": false,
+        "rationale": "Wrong: This would lower pH and not match the early alkalemia pattern; ABG evidence of acidosis would be required."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute pancreatitis becomes hypoxemic and develops diffuse bilateral infiltrates within 48 hours. Which diagnosis is most consistent with this sequence?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
     "options": [
       {
-        "text": "Large right-to-left intrapulmonary shunt from alveolar collapse",
+        "text": "Acute respiratory distress syndrome",
         "isCorrect": true,
-        "rationale": "Correct: ARDS causes alveolar collapse and protein-rich edema producing shunt physiology that is poorly responsive to increased FiO2."
+        "rationale": "Correct: The slides list acute pancreatitis as a major risk factor for ARDS, which presents with rapid hypoxemia and bilateral infiltrates."
       },
       {
-        "text": "Increased diffusion capacity improving oxygenation",
+        "text": "Aspiration pneumonitis",
         "isCorrect": false,
-        "rationale": "Wrong: Diffusion capacity is impaired in ARDS; increased diffusion would improve oxygenation, not explain poor response."
+        "rationale": "Wrong: Aspiration often affects dependent segments and may be focal; a history of aspiration and dependent infiltrates would be needed."
       },
       {
-        "text": "Enhanced ventilation of affected alveoli",
+        "text": "Cardiogenic pulmonary edema",
         "isCorrect": false,
-        "rationale": "Wrong: Affected alveoli are poorly ventilated; enhanced ventilation would improve response to oxygen, not worsen it."
+        "rationale": "Wrong: Cardiogenic edema would show elevated PAWP and cardiomegaly; normal wedge pressure and no cardiomegaly favor ARDS."
       },
       {
-        "text": "Left-to-right shunt increasing arterial oxygen",
+        "text": "Pulmonary embolism",
         "isCorrect": false,
-        "rationale": "Wrong: Left-to-right shunts do not cause hypoxemia; right-to-left shunts cause hypoxemia unresponsive to O2."
+        "rationale": "Wrong: PE causes V/Q mismatch and often focal infarcts; imaging or D-dimer evidence would be required."
       },
       {
-        "text": "Hyperventilation causing decreased PaO2",
+        "text": "Fat embolism syndrome",
         "isCorrect": false,
-        "rationale": "Wrong: Hyperventilation lowers PaCO2 but does not directly cause refractory hypoxemia; shunt physiology explains poor O2 response."
+        "rationale": "Wrong: Fat embolism follows trauma or fractures and may show petechiae; absence of trauma makes this unlikely."
+      }
+    ]
+  },
+  {
+    "question": "A 56-year-old alcoholic with acute pancreatitis develops dyspnea and rales. Bronchoalveolar lavage shows proteinaceous fluid and hyaline membranes. Which management principle should guide therapy?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Treat underlying cause",
+        "isCorrect": true,
+        "rationale": "Correct: The slides emphasize treating the precipitant (eg, sepsis, pancreatitis) rather than only treating the lungs in ARDS."
+      },
+      {
+        "text": "Routine corticosteroids",
+        "isCorrect": false,
+        "rationale": "Wrong: The slides state corticosteroids are not indicated routinely in ARDS; evidence of a steroid-responsive process would be needed."
+      },
+      {
+        "text": "Aggressive diuresis",
+        "isCorrect": false,
+        "rationale": "Wrong: Diuretics do not correct permeability edema in ARDS; elevated PAWP and cardiogenic edema would justify diuretics."
+      },
+      {
+        "text": "High tidal volume ventilation",
+        "isCorrect": false,
+        "rationale": "Wrong: The slides recommend low tidal volumes (~6 mL/kg) to avoid ventilator-induced injury; high volumes would be contraindicated."
+      },
+      {
+        "text": "Immediate routine antibiotics",
+        "isCorrect": false,
+        "rationale": "Wrong: Routine antibiotics are only for documented infection; microbiologic confirmation would be required to justify routine use."
+      }
+    ]
+  },
+  {
+    "question": "A trauma patient with ARDS is on mechanical ventilation with low tidal volumes. Oxygenation remains poor despite high FiO2. Which ventilator adjustment is most appropriate to improve oxygenation while minimizing volutrauma?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Increase PEEP level",
+        "isCorrect": true,
+        "rationale": "Correct: Increasing PEEP recruits alveoli, raises FRC, and improves oxygenation while maintaining low tidal volumes as recommended."
+      },
+      {
+        "text": "Raise tidal volume to 10 mL/kg",
+        "isCorrect": false,
+        "rationale": "Wrong: Higher tidal volumes increase volutrauma; the slides recommend low tidal volumes (~6 mL/kg) to reduce injury."
+      },
+      {
+        "text": "Stop PEEP and increase RR",
+        "isCorrect": false,
+        "rationale": "Wrong: Removing PEEP promotes alveolar collapse; increasing RR alone does not address recruitment and may worsen oxygenation."
+      },
+      {
+        "text": "Switch to pressure support only",
+        "isCorrect": false,
+        "rationale": "Wrong: Pressure support may be inadequate for severe ARDS; evidence of patient-triggered breaths and stability would be needed."
+      },
+      {
+        "text": "Administer routine corticosteroids",
+        "isCorrect": false,
+        "rationale": "Wrong: Corticosteroids are not routinely indicated for ARDS per the slides; specific indications would be required."
+      }
+    ]
+  },
+  {
+    "question": "A neonate treated with supplemental oxygen for NRDS is at risk for retinopathy of prematurity. Which pathophysiologic sequence explains this complication?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of neonatal respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Hyperoxia then VEGF rebound",
+        "isCorrect": true,
+        "rationale": "Correct: Slides describe temporary hyperoxia suppressing retinal vessels, then VEGF-driven neovascularization on return to room air causing ROP."
+      },
+      {
+        "text": "Direct oxygen toxicity to retina",
+        "isCorrect": false,
+        "rationale": "Wrong: The mechanism involves VEGF-mediated neovascularization after hyperoxia, not direct oxygen necrosis; histologic VEGF evidence would be needed."
+      },
+      {
+        "text": "Intraventricular hemorrhage spread",
+        "isCorrect": false,
+        "rationale": "Wrong: IVH is a separate complication of prematurity; retinal detachment from IVH is not the described mechanism."
+      },
+      {
+        "text": "Surfactant-induced angiogenesis",
+        "isCorrect": false,
+        "rationale": "Wrong: Surfactant replacement does not cause retinal neovascularization; evidence linking surfactant to VEGF would be required (inference)."
+      },
+      {
+        "text": "Nitrogen washout of retinal vessels",
+        "isCorrect": false,
+        "rationale": "Wrong: Nitrogen washout causes alveolar atelectasis, not retinal neovascularization; ocular-specific gas effects would be needed."
+      }
+    ]
+  },
+  {
+    "question": "A patient with COPD becomes somnolent after receiving high-flow oxygen. Which combination of mechanisms most plausibly explains the acute rise in PaCO2?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Outline the pathophysiological and clinical consequences of hypercapnia and oxygen toxicity (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Blunted hypoxic drive and Haldane effect",
+        "isCorrect": true,
+        "rationale": "Correct: The slides list reduced hypoxic ventilatory drive and the Haldane effect as major contributors to oxygen-induced hypercapnia in chronic CO2 retainers."
+      },
+      {
+        "text": "Increased renal HCO3- excretion and V/Q improvement",
+        "isCorrect": false,
+        "rationale": "Wrong: Renal changes are slow and V/Q improvement would lower CO2; this combination contradicts the acute rise described."
+      },
+      {
+        "text": "Bronchospasm and alveolar hemorrhage",
+        "isCorrect": false,
+        "rationale": "Wrong: These are not the mechanisms described for oxygen-induced CO2 rise; evidence of bronchospasm or hemorrhage would be required."
+      },
+      {
+        "text": "Pulmonary embolism and decreased cardiac output",
+        "isCorrect": false,
+        "rationale": "Wrong: PE causes hypoxemia but is not the oxygen-induced hypercapnia mechanism; imaging evidence of PE would be needed."
+      },
+      {
+        "text": "Enhanced diffusion capacity and increased minute ventilation",
+        "isCorrect": false,
+        "rationale": "Wrong: These would lower PaCO2, not raise it; physiologic data showing increased diffusion and ventilation would be necessary."
+      }
+    ]
+  },
+  {
+    "question": "A patient with ARDS has normal pulmonary capillary wedge pressure but severe hypoxemia unresponsive to oxygen. Which diagnostic feature best distinguishes ARDS from cardiogenic pulmonary edema?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Normal PAWP",
+        "isCorrect": true,
+        "rationale": "Correct: The slides emphasize that ARDS is noncardiogenic with a normal pulmonary artery wedge pressure (6-12 mmHg), distinguishing it from cardiogenic edema."
+      },
+      {
+        "text": "Elevated BNP level",
+        "isCorrect": false,
+        "rationale": "Wrong: Elevated BNP suggests cardiac failure; a normal BNP would be needed to support noncardiogenic edema."
+      },
+      {
+        "text": "Cardiomegaly on chest x-ray",
+        "isCorrect": false,
+        "rationale": "Wrong: Cardiomegaly favors cardiogenic edema; absence of cardiomegaly supports ARDS but cardiomegaly presence would change interpretation."
+      },
+      {
+        "text": "Focal lobar consolidation",
+        "isCorrect": false,
+        "rationale": "Wrong: Focal consolidation suggests pneumonia or aspiration, not diffuse ARDS; diffuse bilateral infiltrates are expected in ARDS."
+      },
+      {
+        "text": "Rapid response to diuretics",
+        "isCorrect": false,
+        "rationale": "Wrong: Diuretics improve cardiogenic edema but do not correct permeability edema in ARDS; improvement after diuresis would indicate cardiogenic cause."
+      }
+    ]
+  },
+  {
+    "question": "A neonate with NRDS shows progressive respiratory acidosis with rising PaCO2 after initial hypoxemia. Which pathophysiologic sequence explains this progression?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of neonatal respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Atelectasis → increased work → respiratory fatigue",
+        "isCorrect": true,
+        "rationale": "Correct: Slides describe alveolar collapse causing increased work of breathing, decreased compliance, and eventual respiratory muscle fatigue leading to CO2 retention and acidosis."
+      },
+      {
+        "text": "Surfactant excess → hyperventilation",
+        "isCorrect": false,
+        "rationale": "Wrong: Surfactant excess would not cause respiratory acidosis; evidence of supraphysiologic surfactant would be needed."
+      },
+      {
+        "text": "Pulmonary hemorrhage → metabolic alkalosis",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemorrhage would not cause metabolic alkalosis and does not explain rising PaCO2; bloody lavage findings would be required."
+      },
+      {
+        "text": "Primary metabolic acidosis from sepsis",
+        "isCorrect": false,
+        "rationale": "Wrong: Metabolic acidosis could coexist but the slide mechanism links respiratory muscle fatigue to rising PaCO2; metabolic labs would be needed to support primary metabolic cause."
+      },
+      {
+        "text": "Upper airway obstruction → increased ventilation",
+        "isCorrect": false,
+        "rationale": "Wrong: Obstruction reduces ventilation and could raise PaCO2 but the slide emphasizes alveolar collapse and fatigue as the mechanism in NRDS."
+      }
+    ]
+  },
+  {
+    "question": "A patient with ARDS is being considered for prone positioning and conservative fluid strategy. Which combined physiologic goals are these interventions intended to achieve?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Improve V/Q matching and reduce edema",
+        "isCorrect": true,
+        "rationale": "Correct: Proning improves perfusion-ventilation matching; conservative fluids limit interstitial edema—both improve oxygenation in ARDS per the slides."
+      },
+      {
+        "text": "Increase cardiac preload and oxygen delivery",
+        "isCorrect": false,
+        "rationale": "Wrong: Conservative fluids reduce preload rather than increase it; increased preload would contradict the fluid strategy described."
+      },
+      {
+        "text": "Promote alveolar fibrosis and stiffening",
+        "isCorrect": false,
+        "rationale": "Wrong: These interventions aim to improve oxygenation, not promote fibrosis; fibrotic changes are a later phase not a therapeutic goal."
+      },
+      {
+        "text": "Enhance neutrophil sequestration",
+        "isCorrect": false,
+        "rationale": "Wrong: Increasing neutrophil sequestration would worsen injury; the slides describe neutrophil activation as pathogenic, not therapeutic."
+      },
+      {
+        "text": "Raise PAWP to improve perfusion",
+        "isCorrect": false,
+        "rationale": "Wrong: Raising PAWP would suggest cardiogenic edema risk; ARDS management seeks to avoid fluid overload and elevated wedge pressure."
+      }
+    ]
+  },
+  {
+    "question": "A patient aspirates while upright and develops infiltrates in the basal segments of the lower lobes. Which positional rule explains this distribution?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Aspiration in upright position affects basal lower lobes",
+        "isCorrect": true,
+        "rationale": "Correct: The slides state that aspiration when upright or semi-recumbent typically involves basal segments of the lower lobes due to dependent positioning."
+      },
+      {
+        "text": "Aspiration in supine affects basal lower lobes",
+        "isCorrect": false,
+        "rationale": "Wrong: Supine aspiration affects posterior upper lobes and superior lower lobes; the position determines dependent segments."
+      },
+      {
+        "text": "Right main bronchus protects left lung",
+        "isCorrect": false,
+        "rationale": "Wrong: Right main bronchus anatomy predisposes to aspiration into the right lung, not protection of the left; bronchial anatomy evidence would be needed."
+      },
+      {
+        "text": "Dependent segments are least perfused",
+        "isCorrect": false,
+        "rationale": "Wrong: Dependent segments are best perfused per the slides; stating they are least perfused contradicts the material."
+      },
+      {
+        "text": "Aspiration always causes diffuse bilateral infiltrates",
+        "isCorrect": false,
+        "rationale": "Wrong: Aspiration distribution depends on position and is often focal to dependent segments; diffuse bilateral infiltrates would suggest other processes like ARDS."
+      }
+    ]
+  },
+  {
+    "question": "A patient with ARDS shows neutrophil-rich alveolar infiltrates and proteinaceous edema. Which stage of ARDS best corresponds to this exudative picture occurring within the first week?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Exudative phase",
+        "isCorrect": true,
+        "rationale": "Correct: The slides describe the exudative phase in week 1 with diffuse alveolar damage, neutrophil recruitment, edema, necrosis, and hyaline membranes."
+      },
+      {
+        "text": "Proliferative phase",
+        "isCorrect": false,
+        "rationale": "Wrong: The proliferative phase occurs later with epithelial repair and macrophage activity; early neutrophil-rich edema defines the exudative phase."
+      },
+      {
+        "text": "Fibrotic phase",
+        "isCorrect": false,
+        "rationale": "Wrong: Fibrotic phase involves fibroblast proliferation and collagen deposition occurring after the initial exudative stage."
+      },
+      {
+        "text": "Resolution phase",
+        "isCorrect": false,
+        "rationale": "Wrong: Resolution with edema reabsorption follows proliferative changes; early exudative findings would not be present in resolution."
+      },
+      {
+        "text": "Chronic remodeling phase",
+        "isCorrect": false,
+        "rationale": "Wrong: Chronic remodeling with restrictive physiology is a late outcome in some patients, not the acute neutrophil-dominant stage."
+      }
+    ]
+  },
+  {
+    "question": "A patient with ARDS is noted to have poor response to supplemental oxygen. Which pathophysiologic feature most directly explains oxygen-refractory hypoxemia?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Right-to-left intrapulmonary shunt",
+        "isCorrect": true,
+        "rationale": "Correct: The slides explain that alveolar collapse and protein-rich edema create shunt physiology where blood bypasses ventilated alveoli, causing hypoxemia unresponsive to O2."
+      },
+      {
+        "text": "Diffusion limitation alone",
+        "isCorrect": false,
+        "rationale": "Wrong: Diffusion impairment contributes but shunt physiology is the primary reason for oxygen-refractory hypoxemia in ARDS; diffusion testing would be needed to support this alone."
+      },
+      {
+        "text": "Upper airway obstruction",
+        "isCorrect": false,
+        "rationale": "Wrong: Upper airway obstruction limits ventilation but does not explain intrapulmonary shunt; airway patency evidence would be required."
+      },
+      {
+        "text": "Anemia reducing CaO2",
+        "isCorrect": false,
+        "rationale": "Wrong: Anemia lowers oxygen content but supplemental O2 typically raises PaO2; anemia alone would not cause oxygen-refractory hypoxemia without shunt."
+      },
+      {
+        "text": "Pulmonary embolism causing dead space",
+        "isCorrect": false,
+        "rationale": "Wrong: PE increases dead space and V/Q mismatch but does not produce the large shunt physiology that is refractory to oxygen as in ARDS."
+      }
+    ]
+  },
+  {
+    "question": "A neonate born at 30 weeks to a mother with poorly controlled diabetes develops NRDS. Which maternal metabolic factor most likely contributed to the infant's surfactant deficiency?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of neonatal respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Maternal hyperglycemia causing fetal hyperinsulinemia",
+        "isCorrect": true,
+        "rationale": "Correct: The slides state maternal hyperglycemia leads to fetal hyperglycemia and high fetal insulin, which inhibits surfactant synthesis and increases NRDS risk."
+      },
+      {
+        "text": "Maternal hypothyroidism",
+        "isCorrect": false,
+        "rationale": "Wrong: Thyroxine was mentioned but not implicated as causing surfactant inhibition; evidence linking hypothyroidism to surfactant deficiency is not provided."
+      },
+      {
+        "text": "Maternal corticosteroid therapy",
+        "isCorrect": false,
+        "rationale": "Wrong: Corticosteroids stimulate surfactant production and would reduce NRDS risk, not increase it."
+      },
+      {
+        "text": "Maternal anemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Maternal anemia is not described as affecting fetal surfactant production in the slides; hematologic data would be needed."
+      },
+      {
+        "text": "Maternal nicotine use",
+        "isCorrect": false,
+        "rationale": "Wrong: Smoking is not discussed in the slides as a direct inhibitor of surfactant; specific slide evidence would be required."
+      }
+    ]
+  },
+  {
+    "question": "A patient with ARDS develops dyspnea shortly after a blood transfusion. Which transfusion-related mechanism explains this presentation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Two-hit neutrophil activation by anti-leukocyte antibodies",
+        "isCorrect": true,
+        "rationale": "Correct: The slides describe transfusion-related acute lung injury as a two-hit mechanism where antibodies activate primed neutrophils causing ARDS."
+      },
+      {
+        "text": "Volume overload causing cardiogenic edema",
+        "isCorrect": false,
+        "rationale": "Wrong: TRALI is noncardiogenic with normal PAWP; volume overload would raise wedge pressure and suggest cardiogenic edema."
+      },
+      {
+        "text": "Delayed hemolytic transfusion reaction",
+        "isCorrect": false,
+        "rationale": "Wrong: Hemolytic reactions cause hemolysis and systemic signs, not the acute neutrophil-mediated lung injury described."
+      },
+      {
+        "text": "Transfusion-associated bacterial contamination",
+        "isCorrect": false,
+        "rationale": "Wrong: Bacterial contamination causes sepsis but the slide specifically highlights antibody-mediated neutrophil activation in TRALI."
+      },
+      {
+        "text": "Allergic anaphylaxis to plasma proteins",
+        "isCorrect": false,
+        "rationale": "Wrong: Anaphylaxis presents with bronchospasm and hypotension; TRALI involves neutrophil activation and pulmonary capillary leak."
+      }
+    ]
+  },
+  {
+    "question": "A clinician considers giving 100% oxygen to a chronic CO2 retainer who is hypoxemic. Which immediate clinical rule should guide oxygen administration?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Outline the pathophysiological and clinical consequences of hypercapnia and oxygen toxicity (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Never withhold oxygen when hypoxemic",
+        "isCorrect": true,
+        "rationale": "Correct: The slides state oxygen should never be withheld in hypoxemia, but in chronic CO2 retainers it must be carefully titrated to avoid hypercapnia."
+      },
+      {
+        "text": "Always give 100% oxygen immediately",
+        "isCorrect": false,
+        "rationale": "Wrong: The slides caution against indiscriminate high O2 in chronic CO2 retainers due to Haldane effect and V/Q mismatch; titration is advised."
+      },
+      {
+        "text": "Avoid oxygen until ABG obtained",
+        "isCorrect": false,
+        "rationale": "Wrong: Withholding oxygen in hypoxemia is contraindicated; immediate oxygen with careful titration is recommended."
+      },
+      {
+        "text": "Target SpO2 >98% in all patients",
+        "isCorrect": false,
+        "rationale": "Wrong: High targets can worsen hypercapnia in CO2 retainers; the slides recommend lower targets (88-92%)."
+      },
+      {
+        "text": "Use only noninvasive ventilation",
+        "isCorrect": false,
+        "rationale": "Wrong: NIV may improve ventilation but oxygen administration decisions depend on hypoxemia severity; NIV alone is not the universal rule."
+      }
+    ]
+  },
+  {
+    "question": "A patient with ARDS shows diffuse bilateral fluffy infiltrates and no cardiomegaly. Which chest x-ray pattern is being described?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of acute respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Diffuse bilateral fluffy infiltrates",
+        "isCorrect": true,
+        "rationale": "Correct: The slides describe ARDS x-ray as diffuse bilateral fluffy infiltrates or 'white lungs' without cardiomegaly, consistent with noncardiogenic edema."
+      },
+      {
+        "text": "Unilateral lobar consolidation",
+        "isCorrect": false,
+        "rationale": "Wrong: Lobar consolidation suggests pneumonia or aspiration, not the diffuse bilateral pattern of ARDS."
+      },
+      {
+        "text": "Cardiomegaly with interstitial edema",
+        "isCorrect": false,
+        "rationale": "Wrong: Cardiomegaly indicates cardiogenic edema; ARDS typically lacks cardiomegaly and has normal PAWP."
+      },
+      {
+        "text": "Hyperinflation with flattened diaphragms",
+        "isCorrect": false,
+        "rationale": "Wrong: Hyperinflation is seen in obstructive disease, not ARDS; pulmonary function evidence would be needed."
+      },
+      {
+        "text": "Miliary nodular pattern",
+        "isCorrect": false,
+        "rationale": "Wrong: Miliary nodules suggest disseminated infection, not the diffuse alveolar filling pattern of ARDS."
+      }
+    ]
+  },
+  {
+    "question": "A neonate with NRDS is treated with surfactant instilled into the airway. Which histologic change is expected to decrease after effective therapy?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze pathophysiology, causes, symptoms of neonatal respiratory distress syndrome (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "options": [
+      {
+        "text": "Hyaline membrane formation",
+        "isCorrect": true,
+        "rationale": "Correct: Surfactant replacement reduces alveolar collapse and proteinaceous exudate formation, thereby decreasing hyaline membranes seen in NRDS."
+      },
+      {
+        "text": "Alveolar macrophage count",
+        "isCorrect": false,
+        "rationale": "Wrong: Macrophage numbers are not the primary target of surfactant therapy; changes in macrophage counts are not described as immediate effects."
+      },
+      {
+        "text": "Bronchial smooth muscle mass",
+        "isCorrect": false,
+        "rationale": "Wrong: Surfactant does not alter bronchial smooth muscle mass acutely; structural airway remodeling would be required to change this."
+      },
+      {
+        "text": "Interstitial collagen deposition",
+        "isCorrect": false,
+        "rationale": "Wrong: Fibrosis and collagen deposition are chronic changes (eg, BPD) and would not acutely decrease after surfactant therapy."
+      },
+      {
+        "text": "Pulmonary vascular thrombi",
+        "isCorrect": false,
+        "rationale": "Wrong: Surfactant does not resolve thrombi; anticoagulation or thrombolysis evidence would be needed."
       }
     ]
   }
