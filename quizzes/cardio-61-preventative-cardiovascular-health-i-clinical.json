@@ -1,358 +1,924 @@
 [
   {
-    "question": "A 52-year-old man with prior statin-associated myalgias asks which lifestyle change most directly lowers LDL cholesterol concentration.",
+    "question": "Which single population-level intervention listed below was associated with the largest long-term reduction in coronary heart disease in the 40-year Finnish observational study described?",
     "difficulty_order": "1st",
-    "cited_learning_objective": "Recommend lifestyle interventions that reduce cardiovascular risk factors and improve long-term cardiovascular health. (PCPS10, ICS4)",
+    "cited_learning_objective": "Identify evidence-based strategies for the primary and secondary prevention of atherosclerotic cardiovascular disease (ASCVD) and major cardiovascular events. (MK1, PCPS10, PCPS11)",
     "options": [
       {
-        "text": "Reduce saturated fat intake",
+        "text": "Elimination of smoking",
         "isCorrect": true,
-        "rationale": "Correct: The slides state that reducing saturated fat increases LDL receptor activity and lowers LDL. To be correct otherwise, the patient would need a different dominant dietary driver of LDL."
+        "rationale": "Correct: The Finnish study highlighted smoking cessation as a primary driver of the large reduction in CHD; removing tobacco exposure reduces major ASCVD events. "
       },
       {
-        "text": "Increase dietary cholesterol",
+        "text": "Increased physical activity",
         "isCorrect": false,
-        "rationale": "Wrong: The slides note dietary cholesterol does not impact serum cholesterol; increasing it would not lower LDL. It would be correct only if dietary cholesterol were shown to reduce LDL in this patient."
+        "rationale": "Wrong: Physical activity reduces risk but the study emphasized smoking elimination; increased activity would be correct only if the study data had shown it as the dominant factor."
       },
       {
-        "text": "Add sugar sweetened beverages",
+        "text": "Universal statin therapy",
         "isCorrect": false,
-        "rationale": "Wrong: SSBs raise cardiometabolic risk and triglycerides rather than lowering LDL; replacing them with healthier options would be needed to lower LDL."
+        "rationale": "Wrong: The study cited population risk-factor improvements (smoking, cholesterol, BP) rather than universal pharmacotherapy; universal statins would be correct only if the study reported medication-driven change."
       },
       {
-        "text": "Increase trans fat intake",
+        "text": "Widespread aspirin use",
         "isCorrect": false,
-        "rationale": "Wrong: Trans fats worsen lipid profiles and raise LDL; lowering trans fats would be required to lower LDL."
+        "rationale": "Wrong: Aspirin was not reported as the main driver in that observational study; it would be correct only if aspirin uptake correlated with the CHD decline in the study."
       },
       {
-        "text": "Increase refined carbohydrates",
+        "text": "Mass screening ECG programs",
         "isCorrect": false,
-        "rationale": "Wrong: High refined carbohydrate intake raises triglycerides and insulin resistance, not LDL lowering; reducing them would be needed to improve lipids."
+        "rationale": "Wrong: Routine ECG screening was noted as not indicated; it would be correct only if the study had shown screening reduced CHD, which it did not."
       }
     ]
   },
   {
-    "question": "Which single assessment tool is appropriate to estimate a 10-year ASCVD risk for a 52-year-old patient to guide primary prevention decisions?",
+    "question": "Which dietary pattern is explicitly linked to approximately a 30% reduction in cardiovascular events in randomized trials referenced?",
     "difficulty_order": "1st",
+    "cited_learning_objective": "Recommend lifestyle interventions that reduce cardiovascular risk factors and improve long-term cardiovascular health. (PCPS10, ICS4)",
+    "options": [
+      {
+        "text": "Mediterranean diet",
+        "isCorrect": true,
+        "rationale": "Correct: The PREDIMED trial and related studies cited a ~30% reduction in CVD with a Mediterranean dietary pattern."
+      },
+      {
+        "text": "Low carbohydrate diet",
+        "isCorrect": false,
+        "rationale": "Wrong: The slides highlighted Mediterranean diet benefits; a low carbohydrate diet was not cited as producing the 30% reduction."
+      },
+      {
+        "text": "High protein meat-based diet",
+        "isCorrect": false,
+        "rationale": "Wrong: Meat-heavy diets were associated with increased CVD mortality; this option would be correct only if evidence showed benefit, which it did not."
+      },
+      {
+        "text": "Trans-fat enriched diet",
+        "isCorrect": false,
+        "rationale": "Wrong: Trans fats worsen lipid profiles and increase risk; it would be correct only if evidence paradoxically showed benefit, which is false."
+      },
+      {
+        "text": "Sugar-sweetened beverage diet",
+        "isCorrect": false,
+        "rationale": "Wrong: SSB intake increases cardiometabolic risk; it would be correct only if SSBs reduced events, which they do not."
+      }
+    ]
+  },
+  {
+    "question": "For primary prevention in adults aged 40-59, which approach to aspirin prophylaxis is recommended based on individualized risk assessment described?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Develop appropriate pharmacologic treatment plans for the primary and secondary prevention of cardiovascular disease based on individual patient risk profiles. (MK1, PCPS7)",
+    "options": [
+      {
+        "text": "Consider aspirin if 10-year ASCVD risk ≥10%",
+        "isCorrect": true,
+        "rationale": "Correct: The slides recommend individualized aspirin prophylaxis for ages 40–59 with ≥10% 10-year ASCVD risk and low bleeding risk."
+      },
+      {
+        "text": "Recommend aspirin for all adults 40–59",
+        "isCorrect": false,
+        "rationale": "Wrong: Universal aspirin is not recommended; it would be correct only if guidelines supported routine use regardless of risk."
+      },
+      {
+        "text": "Avoid aspirin in all adults under 60",
+        "isCorrect": false,
+        "rationale": "Wrong: The guidance allows individualized use in 40–59 with high ASCVD risk; avoidance for all under 60 would be incorrect."
+      },
+      {
+        "text": "Use aspirin only if LDL >190 mg/dL",
+        "isCorrect": false,
+        "rationale": "Wrong: Aspirin decision is based on ASCVD risk and bleeding risk, not solely LDL; it would be correct only if LDL threshold were guideline-specified for aspirin."
+      },
+      {
+        "text": "Start aspirin for everyone with family history of MI",
+        "isCorrect": false,
+        "rationale": "Wrong: Family history alone does not mandate aspirin; it would be correct only if family history raised 10-year risk to ≥10% without bleeding risk."
+      }
+    ]
+  },
+  {
+    "question": "Which single laboratory test is recommended to be checked once in a lifetime to identify an inherited lipid-related risk factor that impairs LDL receptor binding?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Apply validated cardiovascular risk assessment tools to estimate ASCVD risk and guide preventive management decisions. (MK1, MK2, PCPS10)",
+    "options": [
+      {
+        "text": "Lipoprotein(a) level",
+        "isCorrect": true,
+        "rationale": "Correct: The slides advise checking Lp(a) once to detect this specialized LDL form that reduces LDL receptor effectiveness."
+      },
+      {
+        "text": "Apolipoprotein B level",
+        "isCorrect": false,
+        "rationale": "Wrong: ApoB is useful but the slide specifically recommended a one-time Lp(a) check; ApoB would be correct only if the slide had specified it."
+      },
+      {
+        "text": "Fasting insulin level",
+        "isCorrect": false,
+        "rationale": "Wrong: Fasting insulin assesses metabolic risk but does not identify the LDL receptor-binding defect; it would be correct only if the slide recommended it for that purpose."
+      },
+      {
+        "text": "High-sensitivity CRP",
+        "isCorrect": false,
+        "rationale": "Wrong: hs-CRP is an inflammatory marker but not the one-time test for impaired LDL receptor binding; it would be correct only if the slide named it."
+      },
+      {
+        "text": "Direct LDL particle count",
+        "isCorrect": false,
+        "rationale": "Wrong: LDL particle number is informative but the slide singled out Lp(a); this would be correct only if the slide prioritized particle count as the one-time test."
+      }
+    ]
+  },
+  {
+    "question": "Which risk calculator was described as eliminating race and intended for ages 30-79 to estimate 10-year and lifetime ASCVD risk?",
+    "difficulty_order": "2nd",
     "cited_learning_objective": "Apply validated cardiovascular risk assessment tools to estimate ASCVD risk and guide preventive management decisions. (MK1, MK2, PCPS10)",
     "options": [
       {
         "text": "PREVENT online calculator",
         "isCorrect": true,
-        "rationale": "Correct: The slides reference the PREVENT equations and online calculator for ages 30-79 to estimate 10-year risk and guide management."
+        "rationale": "Correct: The PREVENT equations and online calculator were described as race-neutral and for ages 30–79 to estimate 10-year and lifetime risk."
+      },
+      {
+        "text": "ASCVD Risk Estimator Plus",
+        "isCorrect": false,
+        "rationale": "Wrong: ASCVD Risk Estimator Plus exists but the slide emphasized PREVENT as the race-eliminating tool; this would be correct only if the slide had labeled ASCVD estimator as race-neutral."
       },
       {
         "text": "Framingham risk score",
         "isCorrect": false,
-        "rationale": "Wrong: Framingham is not the tool emphasized in the slides; it would be correct only if the lecture had specified Framingham as the preferred estimator."
+        "rationale": "Wrong: Framingham is older and not the race-eliminating PREVENT tool; it would be correct only if the slide had identified it as such."
       },
       {
         "text": "QRISK3 calculator",
         "isCorrect": false,
-        "rationale": "Wrong: QRISK3 is not mentioned in the slides; it would be correct only if regional guidance recommended it."
+        "rationale": "Wrong: QRISK3 is a different model not cited on the slides; it would be correct only if the lecture had referenced it."
       },
       {
-        "text": "Reynolds risk score",
+        "text": "SCORE2 risk chart",
         "isCorrect": false,
-        "rationale": "Wrong: Reynolds score is not cited in the material; it would be correct only if the lecture had included it as validated for this population."
-      },
-      {
-        "text": "SCORE risk chart",
-        "isCorrect": false,
-        "rationale": "Wrong: SCORE is a European tool not referenced in the slides; it would be correct only if the lecture had recommended SCORE for US patients."
+        "rationale": "Wrong: SCORE2 is a European tool not described as the PREVENT race-neutral calculator; it would be correct only if the slide had mentioned it."
       }
     ]
   },
   {
-    "question": "Which component of AHA Life's Essential 8 is specified as reducing biologic age by approximately six years when optimized?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "Recommend lifestyle interventions that reduce cardiovascular risk factors and improve long-term cardiovascular health. (PCPS10, ICS4)",
-    "options": [
-      {
-        "text": "Combined Life's Essential 8",
-        "isCorrect": true,
-        "rationale": "Correct: The slides state that optimizing Life's Essential 8 reduces biologic age by 6 years, implying the combined metric rather than a single component."
-      },
-      {
-        "text": "Only increased physical activity",
-        "isCorrect": false,
-        "rationale": "Wrong: Physical activity is one component but the slide attributes the 6-year reduction to the full Life's Essential 8, not activity alone."
-      },
-      {
-        "text": "Only dietary change",
-        "isCorrect": false,
-        "rationale": "Wrong: Diet is important but the slide credits the composite Life's Essential 8 for the biologic age reduction; diet alone would not match that claim."
-      },
-      {
-        "text": "Only smoking cessation",
-        "isCorrect": false,
-        "rationale": "Wrong: Smoking cessation is critical but the slide specifies the full Life's Essential 8 rather than a single behavior."
-      },
-      {
-        "text": "Only sleep optimization",
-        "isCorrect": false,
-        "rationale": "Wrong: Sleep is one element; the slide links the 6-year reduction to the overall Life's Essential 8 score, not sleep alone."
-      }
-    ]
-  },
-  {
-    "question": "Which lifestyle program mentioned demonstrated a Mediterranean-style intervention after myocardial infarction with a large reduction in recurrent cardiovascular events at 46 months?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "Recommend lifestyle interventions that reduce cardiovascular risk factors and improve long-term cardiovascular health. (PCPS10, ICS4)",
-    "options": [
-      {
-        "text": "Lyon Heart Study",
-        "isCorrect": true,
-        "rationale": "Correct: The slides cite the Lyon Heart Study showing a 50-70% reduction in CV events at 46 months with a Mediterranean diet after MI."
-      },
-      {
-        "text": "PREDIMED trial",
-        "isCorrect": false,
-        "rationale": "Wrong: PREDIMED showed primary prevention benefits but the specific 46-month post-MI reduction is attributed to the Lyon Heart Study in the slides."
-      },
-      {
-        "text": "Adventist Health Study",
-        "isCorrect": false,
-        "rationale": "Wrong: Adventist data relate to meat and mortality; it did not report the 46-month post-MI Mediterranean intervention described."
-      },
-      {
-        "text": "Med-South program",
-        "isCorrect": false,
-        "rationale": "Wrong: Med-South is a lifestyle program mentioned separately; it is not the study reporting the 46-month MI outcome."
-      },
-      {
-        "text": "DASH randomized trial",
-        "isCorrect": false,
-        "rationale": "Wrong: DASH targets blood pressure and is not the post-MI Mediterranean study cited for 46-month outcomes."
-      }
-    ]
-  },
-  {
-    "question": "A patient asks which single lifetime laboratory test is recommended once to detect a genetically mediated lipid risk factor that impairs LDL receptor binding and increases thrombotic risk.",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Apply validated cardiovascular risk assessment tools to estimate ASCVD risk and guide preventive management decisions. (MK1, MK2, PCPS10)",
-    "options": [
-      {
-        "text": "Lipoprotein(a) measurement",
-        "isCorrect": true,
-        "rationale": "Correct: Slides recommend checking Lp(a) once per lifetime as a risk-enhancing factor that impairs LDL receptor binding and increases clot risk."
-      },
-      {
-        "text": "Apolipoprotein B measurement",
-        "isCorrect": false,
-        "rationale": "Wrong: ApoB is a lipid marker but the slides specifically recommend Lp(a) once; ApoB would be correct only if the lecture had emphasized it as a one-time screen."
-      },
-      {
-        "text": "Genetic LDLR sequencing",
-        "isCorrect": false,
-        "rationale": "Wrong: Genetic sequencing is not the one-time test recommended; it would be correct only if familial hypercholesterolemia workup were specified."
-      },
-      {
-        "text": "Fasting insulin level",
-        "isCorrect": false,
-        "rationale": "Wrong: Fasting insulin assesses metabolic risk but does not detect Lp(a) or LDL receptor binding defects; it would be correct only if insulin resistance were the target."
-      },
-      {
-        "text": "High-sensitivity CRP",
-        "isCorrect": false,
-        "rationale": "Wrong: hs-CRP is an inflammatory marker but the slides single out Lp(a) as the one-time risk-enhancing test."
-      }
-    ]
-  },
-  {
-    "question": "Which dietary pattern is associated with approximately a 30% reduction in cardiovascular disease according to the slides?",
+    "question": "Which of the following lifestyle components is part of the AHA Life's Essential 8 and specifically targets biological aging reduction according to the slides?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Recommend lifestyle interventions that reduce cardiovascular risk factors and improve long-term cardiovascular health. (PCPS10, ICS4)",
     "options": [
       {
-        "text": "Mediterranean diet pattern",
+        "text": "Sleep 7 to 9 hours nightly",
         "isCorrect": true,
-        "rationale": "Correct: The slides cite PREDIMED showing a ~30% reduction in CVD with a Mediterranean diet."
+        "rationale": "Correct: Sleep 7–9 hours is one of Life's Essential 8 and was linked to reducing biological age by about 6 years in the slides."
       },
       {
-        "text": "Southern-style diet",
+        "text": "Daily alcohol consumption",
         "isCorrect": false,
-        "rationale": "Wrong: The REGARDS trial linked a Southern-style diet to increased CVD and stroke, not reduction; it would be correct only if evidence showed benefit."
+        "rationale": "Wrong: Alcohol was not recommended; slides noted abstinence is safest and alcohol increases risks, so daily consumption would be incorrect."
       },
       {
-        "text": "High red meat diet",
+        "text": "High saturated fat intake",
         "isCorrect": false,
-        "rationale": "Wrong: Meat-heavy diets were associated with higher CVD mortality in Adventist data; they do not reduce CVD."
+        "rationale": "Wrong: High saturated fat worsens LDL and is not part of Life's Essential 8; it would be correct only if the slide had endorsed it."
       },
       {
-        "text": "Low-fat high refined carb diet",
+        "text": "Skipping breakfast routinely",
         "isCorrect": false,
-        "rationale": "Wrong: High refined carbs raise triglycerides and risk; slides do not attribute CVD reduction to this pattern."
+        "rationale": "Wrong: Skipping breakfast was associated with higher CHD risk; it would be correct only if evidence showed benefit, which it did not."
       },
       {
-        "text": "Trans-fat enriched diet",
+        "text": "Standing instead of sitting all day",
         "isCorrect": false,
-        "rationale": "Wrong: Trans fats worsen lipid profiles and increase risk; they would not reduce CVD."
+        "rationale": "Wrong: Standing is not listed as a Life's Essential 8 component; it would be correct only if the slide had included it explicitly."
       }
     ]
   },
   {
-    "question": "A 60-year-old man with no bleeding risk has a 10-year ASCVD risk of 12%. According to the slides, how should aspirin for primary prevention be approached?",
+    "question": "Which blood pressure target is listed under Life's Essential 8 as the goal for optimal cardiovascular health?",
     "difficulty_order": "2nd",
+    "cited_learning_objective": "Recommend lifestyle interventions that reduce cardiovascular risk factors and improve long-term cardiovascular health. (PCPS10, ICS4)",
+    "options": [
+      {
+        "text": "Less than 120/80 mmHg",
+        "isCorrect": true,
+        "rationale": "Correct: The slides list  10 hours was not presented as optimal and would be correct only if evidence supported it."
+      },
+      {
+        "text": "Sleep duration has no CV effect",
+        "isCorrect": false,
+        "rationale": "Wrong: Slides linked sleep to BP and appetite; it would be correct only if studies showed no association."
+      },
+      {
+        "text": "Only sleep timing matters",
+        "isCorrect": false,
+        "rationale": "Wrong: Both duration and timing were discussed; claiming only timing matters would be incorrect unless slides had emphasized timing exclusively."
+      },
+      {
+        "text": "Napping replaces nightly sleep",
+        "isCorrect": false,
+        "rationale": "Wrong: Slides did not suggest napping substitutes for adequate nightly sleep; it would be correct only if evidence showed equivalence."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best summarizes the slides' guidance on routine ECG screening for asymptomatic adults at low cardiovascular risk?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify evidence-based strategies for the primary and secondary prevention of atherosclerotic cardiovascular disease (ASCVD) and major cardiovascular events. (MK1, PCPS10, PCPS11)",
+    "options": [
+      {
+        "text": "Not recommended routinely",
+        "isCorrect": true,
+        "rationale": "Correct: The slides state routine ECG screening in low-risk adults is not indicated due to lack of benefit and false positives."
+      },
+      {
+        "text": "Recommended annually",
+        "isCorrect": false,
+        "rationale": "Wrong: Annual ECGs were not recommended; this would be correct only if evidence showed benefit for routine annual screening."
+      },
+      {
+        "text": "Recommended only for smokers",
+        "isCorrect": false,
+        "rationale": "Wrong: Smoking alone did not prompt routine ECG per slides; it would be correct only if guidelines specified ECG for smokers."
+      },
+      {
+        "text": "Required before exercise",
+        "isCorrect": false,
+        "rationale": "Wrong: Pre-exercise ECGs were not advised for asymptomatic low-risk adults; it would be correct only if the slide had recommended screening prior to activity."
+      },
+      {
+        "text": "Mandatory for all over 40",
+        "isCorrect": false,
+        "rationale": "Wrong: Mandatory ECGs for all >40 were not recommended; it would be correct only if the slide had mandated age-based screening."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following risk factors was emphasized as nonmodifiable and the most significant constitutional contributor to ASCVD risk?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify evidence-based strategies for the primary and secondary prevention of atherosclerotic cardiovascular disease (ASCVD) and major cardiovascular events. (MK1, PCPS10, PCPS11)",
+    "options": [
+      {
+        "text": "Genetics (family history)",
+        "isCorrect": true,
+        "rationale": "Correct: The slides list genetics as the most significant constitutional risk factor for ASCVD."
+      },
+      {
+        "text": "Smoking history",
+        "isCorrect": false,
+        "rationale": "Wrong: Smoking is modifiable and was listed separately; it would be correct only if the slide had labeled it nonmodifiable."
+      },
+      {
+        "text": "Age",
+        "isCorrect": false,
+        "rationale": "Wrong: Age is nonmodifiable and important, but the slide emphasized genetics as most significant; age would be correct only if prioritized similarly."
+      },
+      {
+        "text": "Male sex",
+        "isCorrect": false,
+        "rationale": "Wrong: Sex is constitutional but the slide highlighted genetics as the most significant; male sex would be correct only if the slide had ranked it highest."
+      },
+      {
+        "text": "Low socioeconomic status",
+        "isCorrect": false,
+        "rationale": "Wrong: Socioeconomic factors influence risk but were not listed as the single most significant constitutional factor on the slides."
+      }
+    ]
+  },
+  {
+    "question": "A 68-year-old woman with nonvalvular atrial fibrillation has a history of prior ischemic stroke. Using CHA₂DS₂-VASc components, which element in her score carries 2 points?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Utilize the CHA₂DS₂-VASc score to assess thromboembolic risk and determine appropriate anticoagulation therapy for patients with atrial fibrillation. (MK1, MK2, MK5)",
+    "options": [
+      {
+        "text": "Prior stroke or TIA",
+        "isCorrect": true,
+        "rationale": "Correct: Prior stroke or TIA is assigned 2 points in the CHA₂DS₂-VASc scoring system as listed on the slides."
+      },
+      {
+        "text": "Age 65 to 74 years",
+        "isCorrect": false,
+        "rationale": "Wrong: Age 65–74 carries 1 point; it would be correct only if the slide assigned it 2 points."
+      },
+      {
+        "text": "Female sex",
+        "isCorrect": false,
+        "rationale": "Wrong: Female sex contributes 1 point; it would be correct only if the slide had given it 2 points."
+      },
+      {
+        "text": "Hypertension",
+        "isCorrect": false,
+        "rationale": "Wrong: Hypertension is 1 point; it would be correct only if the slide had assigned 2 points to HTN."
+      },
+      {
+        "text": "Diabetes mellitus",
+        "isCorrect": false,
+        "rationale": "Wrong: Diabetes is 1 point; it would be correct only if the slide had listed diabetes as 2 points."
+      }
+    ]
+  },
+  {
+    "question": "According to the slides, which CHA₂DS₂-VASc score threshold in men indicates a high thromboembolic risk where oral anticoagulation is recommended?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Utilize the CHA₂DS₂-VASc score to assess thromboembolic risk and determine appropriate anticoagulation therapy for patients with atrial fibrillation. (MK1, MK2, MK5)",
+    "options": [
+      {
+        "text": "Score of 2 or more",
+        "isCorrect": true,
+        "rationale": "Correct: The slides indicate men with a CHA₂DS₂-VASc score ≥2 are at high risk and should receive oral anticoagulation."
+      },
+      {
+        "text": "Score of 0",
+        "isCorrect": false,
+        "rationale": "Wrong: Score 0 indicates low risk and no antithrombotic therapy; it would be correct only if the slide recommended anticoagulation at 0."
+      },
+      {
+        "text": "Score of 1",
+        "isCorrect": false,
+        "rationale": "Wrong: Score 1 in men is moderate risk and anticoagulation is optional; it would be correct only if the slide mandated therapy at 1."
+      },
+      {
+        "text": "Score of 3 or more",
+        "isCorrect": false,
+        "rationale": "Wrong: While ≥3 is high, the slide threshold for men was ≥2; this would be correct only if the slide used ≥3 as the cutoff."
+      },
+      {
+        "text": "Any female sex score",
+        "isCorrect": false,
+        "rationale": "Wrong: Female sex alone does not mandate anticoagulation; it would be correct only if the slide recommended therapy for sex alone."
+      }
+    ]
+  },
+  {
+    "question": "Which anticoagulant was named on the slides as an example for oral anticoagulation in high-risk atrial fibrillation patients?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Utilize the CHA₂DS₂-VASc score to assess thromboembolic risk and determine appropriate anticoagulation therapy for patients with atrial fibrillation. (MK1, MK2, MK5)",
+    "options": [
+      {
+        "text": "Apixaban",
+        "isCorrect": true,
+        "rationale": "Correct: Apixaban was listed on the slides as an example of oral anticoagulant for high-risk AF patients."
+      },
+      {
+        "text": "Aspirin alone",
+        "isCorrect": false,
+        "rationale": "Wrong: Aspirin alone is not preferred for high-risk patients; it would be correct only for low-risk or when anticoagulation is contraindicated."
+      },
+      {
+        "text": "Clopidogrel monotherapy",
+        "isCorrect": false,
+        "rationale": "Wrong: Antiplatelet monotherapy is inferior to anticoagulation for stroke prevention in AF; it would be correct only if anticoagulation were contraindicated."
+      },
+      {
+        "text": "Warfarin only",
+        "isCorrect": false,
+        "rationale": "Wrong: Warfarin is an anticoagulant but the slide specifically named apixaban as an example; warfarin would be correct only if the slide had listed it."
+      },
+      {
+        "text": "Heparin infusion long-term",
+        "isCorrect": false,
+        "rationale": "Wrong: Long-term heparin infusion is not standard outpatient therapy; it would be correct only in inpatient or bridging contexts."
+      }
+    ]
+  },
+  {
+    "question": "A 52-year-old man with dyslipidemia and family history of premature MI asks which single lifestyle habit change from the slides most reduces ASCVD risk population-wide?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recommend lifestyle interventions that reduce cardiovascular risk factors and improve long-term cardiovascular health. (PCPS10, ICS4)",
+    "options": [
+      {
+        "text": "Smoking cessation",
+        "isCorrect": true,
+        "rationale": "Correct: Smoking cessation was emphasized as a major modifiable factor driving population-level reductions in CHD in the Finnish study and slides."
+      },
+      {
+        "text": "Begin daily aspirin",
+        "isCorrect": false,
+        "rationale": "Wrong: Aspirin is individualized and not a universal lifestyle change; it would be correct only if the patient met the ≥10% 10-year risk and low bleeding risk criteria."
+      },
+      {
+        "text": "Start red yeast rice",
+        "isCorrect": false,
+        "rationale": "Wrong: Red yeast rice is a supplement with LDL-lowering effects but is not the single most impactful population-level habit change; it would be correct only if pharmacologic replacement were the primary driver."
+      },
+      {
+        "text": "Increase alcohol intake",
+        "isCorrect": false,
+        "rationale": "Wrong: Alcohol increases morbidity and is not recommended; it would be correct only if evidence showed protective effects, which slides did not."
+      },
+      {
+        "text": "Routine stress testing",
+        "isCorrect": false,
+        "rationale": "Wrong: Routine stress testing is not recommended for low-risk individuals and would not reduce ASCVD risk unless targeted by symptoms or high risk."
+      }
+    ]
+  },
+  {
+    "question": "A 55-year-old man with hypertension and LDL 160 mg/dL [reference 0-99 mg/dL] refuses statins due to prior myalgias. According to the slides, which nonpharmacologic intervention most directly lowers LDL receptor suppression and should be recommended first?",
+    "difficulty_order": "3rd",
     "cited_learning_objective": "Develop appropriate pharmacologic treatment plans for the primary and secondary prevention of cardiovascular disease based on individual patient risk profiles. (MK1, PCPS7)",
     "options": [
       {
-        "text": "Individualized decision to consider aspirin",
+        "text": "Reduce saturated fat intake",
         "isCorrect": true,
-        "rationale": "Correct: Slides state aspirin may be considered for ages 40-59 with ≥10% 10-year risk after individualized decision-making; average-risk use is not recommended."
+        "rationale": "Correct: Slides state saturated fat reduces LDL receptor activity; reducing saturated fat increases receptor activity and lowers LDL, a first-line lifestyle step."
       },
       {
-        "text": "Routine aspirin recommended",
+        "text": "Increase sugar-sweetened beverages",
         "isCorrect": false,
-        "rationale": "Wrong: Routine aspirin is not recommended for average-risk individuals; it would be correct only if guidelines endorsed routine use."
+        "rationale": "Wrong: Increasing SSBs raises triglycerides and risk; it would be correct only if SSBs lowered LDL receptor suppression, which they do not."
       },
       {
-        "text": "Aspirin contraindicated due to age",
+        "text": "Begin garlic supplements",
         "isCorrect": false,
-        "rationale": "Wrong: The slides recommend against aspirin for age ≥60; however, this patient is 60 and the slide lists ≥60 as recommendation against—this option would be correct only if strict age cutoff applied without individualized assessment."
+        "rationale": "Wrong: Garlic lowers cholesterol only modestly (~3%); it would be correct only if the patient preferred supplements and accepted smaller LDL reductions."
       },
       {
-        "text": "Aspirin only if LDL high",
+        "text": "Start high-dose omega-3s",
         "isCorrect": false,
-        "rationale": "Wrong: Aspirin decision is based on ASCVD risk and bleeding risk, not LDL alone; it would be correct only if LDL were the stated criterion."
+        "rationale": "Wrong: Omega-3s primarily lower triglycerides rather than LDL; it would be correct only if triglyceride reduction were the primary goal."
       },
       {
-        "text": "Aspirin replaced by statin therapy",
+        "text": "Adopt late-night eating",
         "isCorrect": false,
-        "rationale": "Wrong: Statins are primary prevention pharmacotherapy but slides do not state aspirin is replaced by statins; this would be correct only if guidance explicitly equated them."
+        "rationale": "Wrong: Late-night eating was associated with higher CHD risk; it would be correct only if it paradoxically lowered LDL, which it does not."
       }
     ]
   },
   {
-    "question": "Which of the following lifestyle factors listed in Life's Essential 8 is specified with a numeric target of 7 to 9 hours per night?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "Recommend lifestyle interventions that reduce cardiovascular risk factors and improve long-term cardiovascular health. (PCPS10, ICS4)",
+    "question": "A 62-year-old woman with atrial fibrillation has CHA₂DS₂-VASc score 3. According to the slides' secondary prevention table, what is the most appropriate next step?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Utilize the CHA₂DS₂-VASc score to assess thromboembolic risk and determine appropriate anticoagulation therapy for patients with atrial fibrillation. (MK1, MK2, MK5)",
     "options": [
       {
-        "text": "Sleep duration target",
+        "text": "Start oral anticoagulation (e.g., apixaban)",
         "isCorrect": true,
-        "rationale": "Correct: The slides list sleep with a target of 7 to 9 hours per night as part of Life's Essential 8."
+        "rationale": "Correct: Slides indicate scores ≥2 in men or ≥3 in women denote high risk and warrant oral anticoagulation such as apixaban."
       },
       {
-        "text": "Daily fruit intake target",
+        "text": "Use aspirin monotherapy",
         "isCorrect": false,
-        "rationale": "Wrong: Fruit intake has cup targets in the slides, not a 7-9 hour numeric target; it would be correct only if fruit were measured in hours."
+        "rationale": "Wrong: Aspirin alone is insufficient for high-risk patients; it would be correct only if anticoagulation were contraindicated."
       },
       {
-        "text": "Weekly activity target",
+        "text": "No antithrombotic therapy",
         "isCorrect": false,
-        "rationale": "Wrong: Physical activity has minute-per-week targets (≥150 min), not 7-9 hours per night; it would be correct only if activity were measured in nightly hours."
+        "rationale": "Wrong: No therapy is for low-risk patients (score 0); it would be correct only if the patient's score were 0."
       },
       {
-        "text": "Blood pressure target",
+        "text": "Start dual antiplatelet therapy",
         "isCorrect": false,
-        "rationale": "Wrong: Age >75 carries 2 points but is not the vascular disease component; it would be correct only if asking about age weighting."
+        "rationale": "Wrong: Dual antiplatelet therapy is not standard for stroke prevention in AF; it would be correct only in specific coronary contexts."
       },
       {
-        "text": "Diabetes only",
+        "text": "Begin heparin infusion outpatient",
         "isCorrect": false,
-        "rationale": "Wrong: Diabetes is a separate 1-point component, not the vascular disease item described."
-      },
-      {
-        "text": "Female sex only",
-        "isCorrect": false,
-        "rationale": "Wrong: Female sex is a 1-point component but does not represent vascular disease as defined on the slides."
+        "rationale": "Wrong: Long-term outpatient heparin infusion is not standard; it would be correct only for short-term inpatient bridging."
       }
     ]
   },
   {
-    "question": "Which of the following best reflects the slide statement about alcohol and hypertension risk from the 2024 meta-analysis cited?",
+    "question": "A 50-year-old man with BMI 32 kg/m² asks which lifestyle program from the slides focuses on regional cultural adaptation and was mentioned as a community-based intervention?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Recommend lifestyle interventions that reduce cardiovascular risk factors and improve long-term cardiovascular health. (PCPS10, ICS4)",
     "options": [
       {
-        "text": "Abstinence yields best BP outcomes",
+        "text": "Med-South Lifestyle Program",
         "isCorrect": true,
-        "rationale": "Correct: Slides summarize a 2024 meta-analysis concluding abstinence has the best outcome for hypertension risk compared with drinking."
+        "rationale": "Correct: The slides referenced the Med-South Lifestyle Program as a culturally adapted community intervention for lifestyle change."
       },
       {
-        "text": "Moderate drinking prevents hypertension",
+        "text": "PREDIMED trial program",
         "isCorrect": false,
-        "rationale": "Wrong: The slides indicate alcohol increases HTN risk and abstinence is best; prevention by moderate drinking contradicts the cited analysis."
+        "rationale": "Wrong: PREDIMED was a Mediterranean diet trial, not the regional Med-South program; it would be correct only if the patient sought Mediterranean-specific intervention."
       },
       {
-        "text": "Alcohol has no dose-response with BP",
+        "text": "Lyon Heart Study protocol",
         "isCorrect": false,
-        "rationale": "Wrong: The meta-analysis cited reports dose-response relationships; claiming none contradicts the slide content."
+        "rationale": "Wrong: Lyon Heart Study evaluated Mediterranean diet after MI; it is not the community Med-South program mentioned."
       },
       {
-        "text": "Only binge drinking affects BP",
+        "text": "DASH community rollout",
         "isCorrect": false,
-        "rationale": "Wrong: Slides discuss overall alcohol intake and HTN risk, not only binge patterns; this would be correct only if the study limited findings to binge drinking."
+        "rationale": "Wrong: DASH is a dietary approach but the slide specifically named Med-South as the regional program; DASH would be correct only if the slide had highlighted a community DASH rollout."
       },
       {
-        "text": "Women tolerate unlimited alcohol without BP effects",
+        "text": "Framingham lifestyle initiative",
         "isCorrect": false,
-        "rationale": "Wrong: Slides note women have cancer risk increases with alcohol and do not suggest unlimited tolerance; this option contradicts the guidance."
+        "rationale": "Wrong: Framingham is an observational cohort, not the Med-South program; it would be correct only if the slide had referenced such an initiative."
       }
     ]
   },
   {
-    "question": "A 50-year-old man with no prior CVD asks which three major risk factors the slides list as the most important modifiable contributors to coronary heart disease prevention efforts.",
+    "question": "A 45-year-old man with no prior ASCVD has a 10-year PREVENT risk of 12% and low bleeding risk. He asks about aspirin. Based on the slides, what is the best recommendation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Develop appropriate pharmacologic treatment plans for the primary and secondary prevention of cardiovascular disease based on individual patient risk profiles. (MK1, PCPS7)",
+    "options": [
+      {
+        "text": "Consider low-dose aspirin after individualized discussion",
+        "isCorrect": true,
+        "rationale": "Correct: Slides recommend individualized aspirin prophylaxis for ages 40–59 with ≥10% 10-year ASCVD risk and low bleeding risk."
+      },
+      {
+        "text": "Recommend aspirin for all adults regardless of risk",
+        "isCorrect": false,
+        "rationale": "Wrong: Universal aspirin is not recommended; it would be correct only if guidelines supported routine use irrespective of bleeding risk."
+      },
+      {
+        "text": "Advise against aspirin due to age alone",
+        "isCorrect": false,
+        "rationale": "Wrong: Age alone (40–59) does not contraindicate aspirin; it would be correct only if the patient were ≥60, where recommendation against use applies."
+      },
+      {
+        "text": "Start high-dose aspirin 325 mg daily",
+        "isCorrect": false,
+        "rationale": "Wrong: Higher doses increase GI bleeding; slides recommend low-dose (75–81 mg) if used."
+      },
+      {
+        "text": "Use aspirin only if LDL >190 mg/dL",
+        "isCorrect": false,
+        "rationale": "Wrong: Aspirin decision is based on ASCVD risk and bleeding risk, not LDL threshold alone."
+      }
+    ]
+  },
+  {
+    "question": "A 58-year-old woman with hypertension controlled on medication asks which dietary sodium target from the slides would best support blood pressure reduction?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recommend lifestyle interventions that reduce cardiovascular risk factors and improve long-term cardiovascular health. (PCPS10, ICS4)",
+    "options": [
+      {
+        "text": "Less than 2000 mg per day",
+        "isCorrect": true,
+        "rationale": "Correct: Slides recommend sodium <2000 mg/day, ideally <1500 mg/day, as part of BP-lowering nutrition strategies."
+      },
+      {
+        "text": "Less than 4000 mg per day",
+        "isCorrect": false,
+        "rationale": "Wrong: 4000 mg is higher than recommended; it would be correct only if the slide had allowed higher sodium intake."
+      },
+      {
+        "text": "No sodium restriction needed",
+        "isCorrect": false,
+        "rationale": "Wrong: Sodium restriction is recommended for BP control; it would be correct only if evidence showed no BP effect."
+      },
+      {
+        "text": "Increase sodium to 3000 mg per day",
+        "isCorrect": false,
+        "rationale": "Wrong: Increasing sodium worsens BP; it would be correct only if the slide had suggested higher sodium benefits."
+      },
+      {
+        "text": "Sodium target based on potassium only",
+        "isCorrect": false,
+        "rationale": "Wrong: While potassium intake is important, the slide specified sodium limits rather than potassium-only targets."
+      }
+    ]
+  },
+  {
+    "question": "A 60-year-old man with stage 1 hypertension asks which exercise prescription from the slides is expected to lower systolic BP by approximately 5-8 mmHg?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recommend lifestyle interventions that reduce cardiovascular risk factors and improve long-term cardiovascular health. (PCPS10, ICS4)",
+    "options": [
+      {
+        "text": "Aerobic exercise 90-150 minutes weekly",
+        "isCorrect": true,
+        "rationale": "Correct: Slides report aerobic activity 90–150 min/week reduces BP by ~5–8 mmHg."
+      },
+      {
+        "text": "Isometric handgrip 5 minutes weekly",
+        "isCorrect": false,
+        "rationale": "Wrong: Isometric protocols cited ~12 minutes 3x/week for ~5 mmHg reduction; 5 minutes weekly would be insufficient."
+      },
+      {
+        "text": "No exercise recommended",
+        "isCorrect": false,
+        "rationale": "Wrong: Exercise is recommended to lower BP; it would be correct only if contraindications existed."
+      },
+      {
+        "text": "Dynamic resistance 10 minutes weekly",
+        "isCorrect": false,
+        "rationale": "Wrong: Dynamic resistance 90–150 min/week yields ~4 mmHg reduction; 10 minutes weekly is inadequate."
+      },
+      {
+        "text": "Only stretching exercises",
+        "isCorrect": false,
+        "rationale": "Wrong: Stretching alone was not cited as effective for BP reduction; it would be correct only if evidence supported similar BP effects."
+      }
+    ]
+  },
+  {
+    "question": "A 50-year-old man with dyslipidemia asks which beverage habit change from the slides would most reduce his cardiometabolic risk?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recommend lifestyle interventions that reduce cardiovascular risk factors and improve long-term cardiovascular health. (PCPS10, ICS4)",
+    "options": [
+      {
+        "text": "Eliminate sugar-sweetened beverages",
+        "isCorrect": true,
+        "rationale": "Correct: Slides associate SSB intake with increased diabetes and CVD risk and recommend reducing SSBs to lower cardiometabolic risk."
+      },
+      {
+        "text": "Switch to one SSB daily",
+        "isCorrect": false,
+        "rationale": "Wrong: Even one SSB daily increases risk; it would be correct only if evidence showed no harm at that frequency."
+      },
+      {
+        "text": "Replace SSBs with alcohol",
+        "isCorrect": false,
+        "rationale": "Wrong: Alcohol increases morbidity and is not a recommended substitute; it would be correct only if alcohol were shown safer."
+      },
+      {
+        "text": "Increase artificially sweetened beverages",
+        "isCorrect": false,
+        "rationale": "Wrong: Artificially sweetened beverages were linked to risk increases in some analyses; they were not endorsed as safe replacements."
+      },
+      {
+        "text": "Drink SSBs only at breakfast",
+        "isCorrect": false,
+        "rationale": "Wrong: Timing did not negate SSB harms; it would be correct only if timing eliminated risk, which slides did not claim."
+      }
+    ]
+  },
+  {
+    "question": "A 67-year-old man with atrial fibrillation and CHA₂DS₂-VASc score 1 (male) asks about antithrombotic therapy. Based on the slides, which statement best reflects recommended management?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Utilize the CHA₂DS₂-VASc score to assess thromboembolic risk and determine appropriate anticoagulation therapy for patients with atrial fibrillation. (MK1, MK2, MK5)",
+    "options": [
+      {
+        "text": "Oral anticoagulation optional; encourage shared decision",
+        "isCorrect": true,
+        "rationale": "Correct: Slides state for men with score 1 (women 2) anticoagulation is optional and should be encouraged after discussion."
+      },
+      {
+        "text": "No antithrombotic therapy recommended",
+        "isCorrect": false,
+        "rationale": "Wrong: No therapy is for score 0; it would be correct only if the patient's score were 0."
+      },
+      {
+        "text": "Start full-dose apixaban immediately",
+        "isCorrect": false,
+        "rationale": "Wrong: Immediate anticoagulation is recommended for high-risk scores (≥2 men); for score 1 it is optional."
+      },
+      {
+        "text": "Use aspirin instead of anticoagulant",
+        "isCorrect": false,
+        "rationale": "Wrong: Aspirin may be considered but is not equivalent to anticoagulation for stroke prevention; it would be correct only if anticoagulation were contraindicated."
+      },
+      {
+        "text": "Begin dual antiplatelet therapy",
+        "isCorrect": false,
+        "rationale": "Wrong: Dual antiplatelet therapy is not standard for AF stroke prevention; it would be correct only in specific coronary scenarios."
+      }
+    ]
+  },
+  {
+    "question": "A 54-year-old man with LDL 220 mg/dL [0-99 mg/dL] and family history of premature CAD asks about Lp(a) testing. According to the slides, what is the recommended frequency for Lp(a) measurement?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Apply validated cardiovascular risk assessment tools to estimate ASCVD risk and guide preventive management decisions. (MK1, MK2, PCPS10)",
+    "options": [
+      {
+        "text": "Check once in a lifetime",
+        "isCorrect": true,
+        "rationale": "Correct: Slides recommend checking Lp(a) once per lifetime to identify inherited elevated levels that increase ASCVD risk."
+      },
+      {
+        "text": "Check annually",
+        "isCorrect": false,
+        "rationale": "Wrong: Annual testing is unnecessary because Lp(a) is genetically determined and stable; it would be correct only if levels were known to vary yearly."
+      },
+      {
+        "text": "Never check Lp(a)",
+        "isCorrect": false,
+        "rationale": "Wrong: Slides advise a one-time check, especially with family history or unexplained CAD; never checking would miss inherited risk."
+      },
+      {
+        "text": "Check only if LDL <70 mg/dL",
+        "isCorrect": false,
+        "rationale": "Wrong: Lp(a) testing is not contingent on very low LDL; it would be correct only if the slide had set that conditional threshold."
+      },
+      {
+        "text": "Check monthly for 3 months",
+        "isCorrect": false,
+        "rationale": "Wrong: Monthly checks are unnecessary given genetic stability; they would be correct only if Lp(a) fluctuated rapidly."
+      }
+    ]
+  },
+  {
+    "question": "A 49-year-old man with BMI 29 kg/m² asks which single behavioral change from the slides is associated with a 40% reduction in CVD when substituting for meat as protein?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recommend lifestyle interventions that reduce cardiovascular risk factors and improve long-term cardiovascular health. (PCPS10, ICS4)",
+    "options": [
+      {
+        "text": "Substitute nuts and seeds for meat",
+        "isCorrect": true,
+        "rationale": "Correct: The Adventist and related data cited substituting nuts/seeds for meat reduced CVD by ~40%."
+      },
+      {
+        "text": "Increase processed meat intake",
+        "isCorrect": false,
+        "rationale": "Wrong: Processed meats increase CVD risk; it would be correct only if evidence showed benefit, which it did not."
+      },
+      {
+        "text": "Replace nuts with refined grains",
+        "isCorrect": false,
+        "rationale": "Wrong: Refined grains worsen cardiometabolic risk compared with nuts; it would be correct only if they reduced CVD."
+      },
+      {
+        "text": "Add sugar-sweetened beverages",
+        "isCorrect": false,
+        "rationale": "Wrong: SSBs increase risk; it would be correct only if they paradoxically lowered CVD."
+      },
+      {
+        "text": "Increase saturated fat from dairy",
+        "isCorrect": false,
+        "rationale": "Wrong: Increasing saturated fat is linked to higher LDL; it would be correct only if such an increase reduced CVD, which slides did not claim."
+      }
+    ]
+  },
+  {
+    "question": "A 57-year-old man with hypertension, diabetes, and hyperlipidemia asks how much his combined risk increases compared with someone without these conditions according to the slides' multiplicative estimates. Which estimate is closest?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Identify evidence-based strategies for the primary and secondary prevention of atherosclerotic cardiovascular disease (ASCVD) and major cardiovascular events. (MK1, PCPS10, PCPS11)",
     "options": [
       {
-        "text": "Hypertension, smoking, dyslipidemia",
+        "text": "About 20-fold increased risk",
         "isCorrect": true,
-        "rationale": "Correct: Slides list hypertension, smoking, and dyslipidemia among key modifiable risk factors to emphasize in CHD prevention."
+        "rationale": "Correct: Slides state HTN + DM + hyperlipidemia confer approximately a 20-fold increased risk."
       },
       {
-        "text": "Age, male sex, genetics",
+        "text": "About 2-fold increased risk",
         "isCorrect": false,
-        "rationale": "Wrong: These are constitutional, nonmodifiable risk factors; they are important but not modifiable contributors emphasized for prevention."
+        "rationale": "Wrong: A 2-fold increase corresponds to single conditions like HTN or DM alone; it would be correct only for isolated risk factors."
       },
       {
-        "text": "Family history, height, eye color",
+        "text": "About 8-fold increased risk",
         "isCorrect": false,
-        "rationale": "Wrong: Height and eye color are irrelevant; family history is noted but the other items are not risk factors."
+        "rationale": "Wrong: HTN + DM together were cited as ~8-fold; adding hyperlipidemia increases risk further to ~20-fold."
       },
       {
-        "text": "Low potassium, high HDL, vegetarian diet",
+        "text": "No increased risk",
         "isCorrect": false,
-        "rationale": "Wrong: High HDL and vegetarian diet are not listed as major modifiable contributors to CHD risk in the slides; low potassium is a BP-related factor but not grouped as primary."
+        "rationale": "Wrong: Multiple risk factors markedly increase risk; 'no increase' would be correct only if none of the conditions were present."
       },
       {
-        "text": "Sleep duration only",
+        "text": "About 50-fold increased risk",
         "isCorrect": false,
-        "rationale": "Wrong: Sleep is a component of Life's Essential 8 but not one of the three primary modifiable risk factors highlighted for CHD prevention."
+        "rationale": "Wrong: Slides did not report a 50-fold increase; it would be correct only if evidence showed an even larger multiplicative effect."
       }
     ]
   },
   {
-    "question": "Which of the following best describes the slide guidance on routine cardiovascular screening with ECG in asymptomatic low-risk adults?",
-    "difficulty_order": "2nd",
+    "question": "A 51-year-old man with dyslipidemia and prior statin intolerance asks which nonstatin supplement listed provides LDL reductions similar to a low-potency statin and therefore requires counseling about statin-like effects?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Develop appropriate pharmacologic treatment plans for the primary and secondary prevention of cardiovascular disease based on individual patient risk profiles. (MK1, PCPS7)",
+    "options": [
+      {
+        "text": "Red yeast rice extract",
+        "isCorrect": true,
+        "rationale": "Correct: Red yeast rice contains monacolin K identical to lovastatin and lowers LDL substantially, so it mimics statin effects and side-effect profiles."
+      },
+      {
+        "text": "Garlic supplements",
+        "isCorrect": false,
+        "rationale": "Wrong: Garlic lowers cholesterol only modestly (~3%) and does not contain statin-like monacolin K; it would be correct only if it had similar potency."
+      },
+      {
+        "text": "Green tea extract",
+        "isCorrect": false,
+        "rationale": "Wrong: Green tea has modest lipid effects and is not statin-equivalent; it would be correct only if evidence showed comparable LDL reduction."
+      },
+      {
+        "text": "Coenzyme Q10",
+        "isCorrect": false,
+        "rationale": "Wrong: CoQ10 does not lower LDL significantly; it would be correct only if it had lipid-lowering properties similar to statins."
+      },
+      {
+        "text": "Vitamin D supplementation",
+        "isCorrect": false,
+        "rationale": "Wrong: Vitamin D is not an LDL-lowering agent; it would be correct only if trials had shown LDL reductions."
+      }
+    ]
+  },
+  {
+    "question": "A 46-year-old man with no ASCVD has a 10-year PREVENT risk of 4%. According to the risk categories on the slides, how is his 10-year risk classified?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Apply validated cardiovascular risk assessment tools to estimate ASCVD risk and guide preventive management decisions. (MK1, MK2, PCPS10)",
+    "options": [
+      {
+        "text": "Borderline risk",
+        "isCorrect": true,
+        "rationale": "Correct: Slides define borderline 10-year risk as 3% to <5%, so a 4% risk falls into the borderline category."
+      },
+      {
+        "text": "Low risk",
+        "isCorrect": false,
+        "rationale": "Wrong: Low risk is <3%; 4% exceeds that threshold and would be correct only if the cutoff were higher."
+      },
+      {
+        "text": "Intermediate risk",
+        "isCorrect": false,
+        "rationale": "Wrong: Intermediate is 5% to <10%; 4% is below that range and would be correct only if the ranges were different."
+      },
+      {
+        "text": "High risk",
+        "isCorrect": false,
+        "rationale": "Wrong: High risk is ≥10%; 4% is far below that and would be correct only if the threshold were lower."
+      },
+      {
+        "text": "Very low lifetime risk",
+        "isCorrect": false,
+        "rationale": "Wrong: Lifetime risk is separate from 10-year categories; this would be correct only if lifetime risk were specifically calculated and low."
+      }
+    ]
+  },
+  {
+    "question": "A 65-year-old woman with atrial fibrillation and prior TIA asks whether female sex alone mandates anticoagulation. Based on the CHA₂DS₂-VASc components on the slides, which statement is correct?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Utilize the CHA₂DS₂-VASc score to assess thromboembolic risk and determine appropriate anticoagulation therapy for patients with atrial fibrillation. (MK1, MK2, MK5)",
+    "options": [
+      {
+        "text": "Female sex alone does not mandate anticoagulation",
+        "isCorrect": true,
+        "rationale": "Correct: Female sex contributes 1 point but anticoagulation decisions depend on total score; sex alone without other risk factors does not mandate therapy."
+      },
+      {
+        "text": "Female sex alone requires anticoagulation",
+        "isCorrect": false,
+        "rationale": "Wrong: Sex alone is insufficient; it would be correct only if guidelines treated female sex as an independent indication."
+      },
+      {
+        "text": "Female sex counts as 2 points",
+        "isCorrect": false,
+        "rationale": "Wrong: Female sex is 1 point on CHA₂DS₂-VASc; it would be correct only if the scoring assigned 2 points."
+      },
+      {
+        "text": "Female sex reduces stroke risk",
+        "isCorrect": false,
+        "rationale": "Wrong: Female sex does not reduce risk; it adds a point in the scoring system and would be correct only if evidence showed protective effect."
+      },
+      {
+        "text": "Female sex is ignored in scoring",
+        "isCorrect": false,
+        "rationale": "Wrong: Female sex is included as 1 point; ignoring it would be correct only if the scoring system omitted sex."
+      }
+    ]
+  },
+  {
+    "question": "A 59-year-old man with ASCVD risk factors asks which single preventive test the slides explicitly advise against as routine in low-risk adults due to false positives and downstream testing?",
+    "difficulty_order": "3rd",
     "cited_learning_objective": "Identify evidence-based strategies for the primary and secondary prevention of atherosclerotic cardiovascular disease (ASCVD) and major cardiovascular events. (MK1, PCPS10, PCPS11)",
     "options": [
       {
-        "text": "Not recommended due to false positives",
+        "text": "Routine stress testing",
         "isCorrect": true,
-        "rationale": "Correct: Slides state routine ECG screening in low-risk adults is not indicated because false positives lead to unnecessary testing."
+        "rationale": "Correct: Slides state routine stress tests are not indicated in low-risk adults because false positives lead to unnecessary further testing."
       },
       {
-        "text": "Recommended annually for all adults",
+        "text": "Lipid panel screening",
         "isCorrect": false,
-        "rationale": "Wrong: Annual ECG for all is not recommended; slides advise against routine screening in low-risk individuals."
+        "rationale": "Wrong: Lipid screening is recommended to guide prevention; it would be correct only if slides discouraged lipid checks."
       },
       {
-        "text": "Recommended only if Lp(a) elevated",
+        "text": "Blood pressure measurement",
         "isCorrect": false,
-        "rationale": "Wrong: Lp(a) testing is separate; slides do not tie routine ECG screening to Lp(a) levels."
+        "rationale": "Wrong: BP measurement is essential for risk detection; it would be correct only if slides advised against it."
       },
       {
-        "text": "Recommended only in women",
+        "text": "Smoking status assessment",
         "isCorrect": false,
-        "rationale": "Wrong: Slides do not recommend routine ECG based on sex alone; this would be correct only if evidence supported sex-specific screening."
+        "rationale": "Wrong: Smoking assessment is recommended; it would be correct only if slides suggested not to assess smoking."
       },
       {
-        "text": "Recommended for all smokers regardless of risk",
+        "text": "Lp(a) one-time check",
         "isCorrect": false,
-        "rationale": "Wrong: Smoking increases risk but slides do not recommend routine ECG for all smokers; screening decisions should be risk-based."
+        "rationale": "Wrong: Lp(a) one-time check is recommended in certain contexts; it would be correct only if slides advised against it."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best reflects the slides' summary statement about the leading cause of death and effective prevention strategies?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify evidence-based strategies for the primary and secondary prevention of atherosclerotic cardiovascular disease (ASCVD) and major cardiovascular events. (MK1, PCPS10, PCPS11)",
+    "options": [
+      {
+        "text": "Cardiovascular disease leads US mortality; weight reduction and lifestyle changes are effective",
+        "isCorrect": true,
+        "rationale": "Correct: The summary states CVD remains the leading cause of death and that weight reduction and lifestyle changes effectively reduce CV risk factors."
+      },
+      {
+        "text": "Infectious disease is the leading cause; antibiotics are primary prevention",
+        "isCorrect": false,
+        "rationale": "Wrong: Slides identify CVD as leading cause; this option would be correct only if infectious disease were the top cause per the slides."
+      },
+      {
+        "text": "Screening ECGs prevent most deaths",
+        "isCorrect": false,
+        "rationale": "Wrong: Routine ECGs are not recommended for low-risk adults; this would be correct only if slides had shown mortality benefit."
+      },
+      {
+        "text": "Pharmacotherapy alone eliminates CVD risk",
+        "isCorrect": false,
+        "rationale": "Wrong: Slides emphasize lifestyle plus pharmacotherapy; pharmacotherapy alone is insufficient unless combined with lifestyle changes."
+      },
+      {
+        "text": "Surgery is first-line prevention",
+        "isCorrect": false,
+        "rationale": "Wrong: Surgery is not a primary prevention strategy; it would be correct only in specific secondary prevention contexts."
       }
     ]
   }
