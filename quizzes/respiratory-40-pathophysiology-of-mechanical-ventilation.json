@@ -1,823 +1,993 @@
 [
   {
-    "question": "Which ventilator setting primarily increases alveolar oxygenation by preventing end-expiratory alveolar collapse?",
+    "question": "Which ventilator setting primarily increases alveolar oxygen content without directly removing CO2?",
     "difficulty_order": "1st",
-    "cited_learning_objective": "Explain the role of PEEP in mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Outline the general principles of mechanical ventilation",
     "options": [
       {
-        "text": "Increase positive end expiratory pressure",
+        "text": "Increase FiO2",
         "isCorrect": true,
-        "rationale": "Correct: PEEP keeps alveoli open at end expiration, recruiting alveoli and improving PaO2. It directly prevents alveolar collapse and increases oxygenation."
+        "rationale": "Correct: FiO2 raises the fraction of inspired oxygen and thus increases PaO2 without directly affecting CO2 elimination."
       },
       {
-        "text": "Increase tidal volume delivered",
+        "text": "Increase respiratory rate",
         "isCorrect": false,
-        "rationale": "Wrong: Tidal volume primarily affects minute ventilation and CO2 elimination; increasing it would not specifically prevent end-expiratory collapse. It would help oxygenation only indirectly if minute ventilation were limiting."
+        "rationale": "Wrong: RR increases minute ventilation and lowers PaCO2; it does not primarily raise inspired oxygen fraction. It would be correct if the goal were to reduce PaCO2."
       },
       {
-        "text": "Increase inspiratory oxygen fraction",
+        "text": "Increase tidal volume",
         "isCorrect": false,
-        "rationale": "Wrong: FiO2 raises the fraction of inspired oxygen and increases PaO2 but does not recruit or prevent alveolar collapse; raising FiO2 would not substitute for PEEP in recruiting alveoli."
+        "rationale": "Wrong: Increasing tidal volume increases minute ventilation and lowers PaCO2 more than it raises oxygen content; it would be correct if ventilation (CO2 removal) were the target."
       },
       {
-        "text": "Increase respiratory rate setting",
+        "text": "Increase PEEP",
         "isCorrect": false,
-        "rationale": "Wrong: Respiratory rate increases minute ventilation and lowers PaCO2; it does not prevent alveolar collapse at end expiration. Only PEEP maintains end-expiratory pressure."
+        "rationale": "Wrong: PEEP improves oxygenation by recruiting alveoli but does so by preventing collapse rather than changing inspired oxygen fraction; it would be correct if alveolar recruitment were the specific mechanism sought."
       },
       {
-        "text": "Decrease inspiratory flow rate",
+        "text": "Decrease tidal volume",
         "isCorrect": false,
-        "rationale": "Wrong: Changing inspiratory flow alters I:E timing but does not itself maintain positive pressure at end expiration; decreasing flow would not recruit alveoli like PEEP would."
+        "rationale": "Wrong: Decreasing tidal volume reduces minute ventilation and tends to raise PaCO2; it would be correct only when lung-protective strategy is the priority, not to increase oxygenation."
       }
     ]
   },
   {
-    "question": "A ventilated patient has rising peak inspiratory pressure while plateau pressure remains unchanged. Which immediate cause best explains this pattern?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Analyze the modes of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Increased airway resistance from bronchospasm",
-        "isCorrect": true,
-        "rationale": "Correct: Increased peak with normal plateau indicates increased airway resistance (e.g., bronchospasm, secretions). Plateau reflects compliance and remains unchanged."
-      },
-      {
-        "text": "Decreased lung compliance from edema",
-        "isCorrect": false,
-        "rationale": "Wrong: Decreased compliance raises both peak and plateau pressures; plateau would not remain normal. If plateau rose, compliance problem would be implicated."
-      },
-      {
-        "text": "Endotracheal tube cuff leak",
-        "isCorrect": false,
-        "rationale": "Wrong: A cuff leak typically lowers delivered pressures and volumes, not selectively raise peak pressure with normal plateau. If leak were present, alarms and low volumes would be seen."
-      },
-      {
-        "text": "Auto-PEEP from breath stacking",
-        "isCorrect": false,
-        "rationale": "Wrong: Auto-PEEP increases intrinsic end-expiratory pressure and often raises plateau as well; it is a dynamic hyperinflation issue rather than isolated airway resistance."
-      },
-      {
-        "text": "Kinked ventilator circuit tubing",
-        "isCorrect": false,
-        "rationale": "Wrong: A kink would increase peak pressure but often also affect plateau; persistent circuit obstruction would usually alter both or trigger machine alarms. Removing the kink would normalize pressures."
-      }
-    ]
-  },
-  {
-    "question": "Which pair of ventilator settings primarily controls arterial carbon dioxide tension (PaCO2)?",
+    "question": "A ventilator mode that guarantees a preset tidal volume for every delivered breath, whether patient-triggered or machine-triggered, is called what?",
     "difficulty_order": "1st",
-    "cited_learning_objective": "Outline the general principles of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Analyze the modes of mechanical ventilation",
     "options": [
       {
-        "text": "Respiratory rate and tidal volume",
+        "text": "Volume assist-control",
         "isCorrect": true,
-        "rationale": "Correct: Minute ventilation (RR × TV) determines alveolar ventilation and thus PaCO2; adjusting RR or TV changes CO2 elimination."
+        "rationale": "Correct: Volume assist-control delivers a set tidal volume on each breath, whether triggered by patient effort or the ventilator's backup rate."
       },
       {
-        "text": "FiO2 and PEEP settings",
+        "text": "Pressure assist-control",
         "isCorrect": false,
-        "rationale": "Wrong: FiO2 and PEEP primarily affect oxygenation (PaO2) and alveolar recruitment; they do not directly control PaCO2. Changing them would not reliably lower CO2."
+        "rationale": "Wrong: Pressure assist-control delivers a set inspiratory pressure, not a guaranteed tidal volume; it would be correct if the mode fixed pressure rather than volume."
       },
       {
-        "text": "Inspiratory flow and FiO2",
+        "text": "Pressure support only",
         "isCorrect": false,
-        "rationale": "Wrong: Inspiratory flow affects I:E timing and patient comfort; FiO2 affects oxygenation. Neither pair is the main determinant of PaCO2."
+        "rationale": "Wrong: Pressure support augments spontaneous breaths without guaranteeing a set tidal volume for every breath; it would be correct if the question asked about support-only spontaneous breaths."
       },
       {
-        "text": "Plateau pressure and peak pressure",
+        "text": "Continuous mandatory ventilation",
         "isCorrect": false,
-        "rationale": "Wrong: Plateau and peak pressures reflect mechanics (compliance and resistance) rather than minute ventilation; altering them does not directly set PaCO2."
+        "rationale": "Wrong: Continuous mandatory ventilation is a broader term and may not specify volume guarantee; it would be correct only if defined as volume-targeted mandatory breaths in the stem."
       },
       {
-        "text": "PEEP and inspiratory hold time",
+        "text": "Spontaneous breathing trial",
         "isCorrect": false,
-        "rationale": "Wrong: PEEP and inspiratory hold influence oxygenation and alveolar recruitment; they are not the primary controllers of PaCO2."
+        "rationale": "Wrong: SBT assesses readiness for extubation and is not a mode that guarantees tidal volume; it would be correct if the stem asked about weaning assessment rather than a ventilation mode."
       }
     ]
   },
   {
-    "question": "A patient with ARDS should have which tidal volume strategy to minimize ventilator-induced lung injury while maintaining adequate ventilation?",
+    "question": "Which parameter is measured during an inspiratory hold and reflects lung compliance without airway resistance?",
     "difficulty_order": "1st",
-    "cited_learning_objective": "Explain the use of different settings in mechanical ventilation in the treatment of COPD, post-operative hypoxemia, oxygen toxicity, and ARDS (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Outline the general principles of mechanical ventilation",
     "options": [
       {
-        "text": "Low tidal volume ventilation at 6 mL per kg",
+        "text": "Plateau pressure",
         "isCorrect": true,
-        "rationale": "Correct: ARDS management uses lung-protective low tidal volumes (~6 mL/kg ideal body weight) to reduce overdistention and VILI."
+        "rationale": "Correct: Plateau pressure is measured during an inspiratory hold when flow is zero and reflects alveolar pressure and lung compliance independent of airway resistance."
       },
       {
-        "text": "High tidal volume ventilation at 12 mL per kg",
+        "text": "Peak inspiratory pressure",
         "isCorrect": false,
-        "rationale": "Wrong: High tidal volumes increase volutrauma and inflammation; this would worsen VILI. Only if compliance and clinical context changed would larger volumes be considered."
+        "rationale": "Wrong: Peak pressure is measured during flow and includes airway resistance; it would be correct only if airway resistance were the focus."
       },
       {
-        "text": "Moderate tidal volume at 8-10 mL per kg",
+        "text": "Intrinsic PEEP",
         "isCorrect": false,
-        "rationale": "Wrong: Moderate volumes exceed the lung-protective target for ARDS; they risk overdistention. Lower volumes are preferred unless ventilation is inadequate."
+        "rationale": "Wrong: Intrinsic (auto) PEEP is end-expiratory pressure from air trapping, not measured by inspiratory hold; it would be correct if the question asked about end-expiratory pressures."
       },
       {
-        "text": "Tidal volume set to achieve plateau  100 mmHg",
+        "text": "Driving pressure",
         "isCorrect": false,
-        "rationale": "Wrong: Tidal volume primarily controls CO2, not oxygenation; adjusting TV to reach high PaO2 is inappropriate and risks VILI. Oxygenation is managed with FiO2 and PEEP."
+        "rationale": "Wrong: Driving pressure is the difference between plateau and PEEP and is not directly the single value measured during an inspiratory hold; it would be correct if the stem asked for a pressure difference metric."
+      },
+      {
+        "text": "Mean airway pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: Mean airway pressure averages pressures over the respiratory cycle and is not the static plateau measured during an inspiratory hold; it would be correct if the question asked about average cycle pressure."
       }
     ]
   },
   {
-    "question": "A ventilator in volume assist-control mode guarantees which of the following for every delivered breath?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Analyze the modes of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "A preset tidal volume each breath",
-        "isCorrect": true,
-        "rationale": "Correct: VAC delivers a preset tidal volume for each breath whether patient-triggered or machine-triggered; resulting airway pressure varies with compliance."
-      },
-      {
-        "text": "A preset inspiratory pressure each breath",
-        "isCorrect": false,
-        "rationale": "Wrong: Preset inspiratory pressure is characteristic of pressure assist-control, not volume assist-control. If pressure control were used, volume would vary with compliance."
-      },
-      {
-        "text": "A fixed inspiratory flow waveform each breath",
-        "isCorrect": false,
-        "rationale": "Wrong: While flow can be set, VAC specifically guarantees volume; flow waveform is a separate setting and not the guaranteed parameter."
-      },
-      {
-        "text": "A constant plateau pressure each breath",
-        "isCorrect": false,
-        "rationale": "Wrong: Plateau pressure depends on compliance and volume; VAC does not guarantee a constant plateau pressure. Only pressure-targeted modes aim to control pressure."
-      },
-      {
-        "text": "A fixed inspiratory time each breath",
-        "isCorrect": false,
-        "rationale": "Wrong: Inspiratory time may be set but is not the defining guaranteed parameter of VAC; the defining guarantee is tidal volume."
-      }
-    ]
-  },
-  {
-    "question": "A patient with COPD on mechanical ventilation is at risk for dynamic hyperinflation. Which ventilator adjustment best reduces that risk?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Explain the use of different settings in mechanical ventilation in the treatment of COPD, post-operative hypoxemia, oxygen toxicity, and ARDS (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Lower respiratory rate and prolong expiratory time",
-        "isCorrect": true,
-        "rationale": "Correct: Lowering RR and increasing expiratory time prevents breath stacking and auto-PEEP in COPD, allowing lungs to empty and reducing dynamic hyperinflation."
-      },
-      {
-        "text": "Increase tidal volume to shorten exhalation",
-        "isCorrect": false,
-        "rationale": "Wrong: Increasing TV prolongs exhalation time and worsens breath stacking in COPD; it increases risk of auto-PEEP and hyperinflation."
-      },
-      {
-        "text": "Increase applied PEEP to 15 cm H2O",
-        "isCorrect": false,
-        "rationale": "Wrong: High applied PEEP can worsen hyperinflation in obstructive disease; COPD management often uses low or minimal PEEP to avoid added intrinsic pressure."
-      },
-      {
-        "text": "Increase inspiratory flow to 30 L per min",
-        "isCorrect": false,
-        "rationale": "Wrong: Increasing inspiratory flow can shorten inspiratory time and lengthen expiratory time if adjusted appropriately, but a flow of 30 L/min is low compared with recommended higher flows for COPD; the key is lowering RR and prolonging expiration."
-      },
-      {
-        "text": "Decrease FiO2 to below 21%",
-        "isCorrect": false,
-        "rationale": "Wrong: FiO2 affects oxygenation, not dynamic hyperinflation; decreasing FiO2 below ambient is impossible and would not address auto-PEEP."
-      }
-    ]
-  },
-  {
-    "question": "Which ventilator parameter should be adjusted first when the primary problem is elevated PaCO2 with normal oxygenation?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Outline the general principles of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Increase respiratory rate setting",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture states RR is usually changed first to increase minute ventilation and lower PaCO2; RR adjustments are the initial step for hypercapnia."
-      },
-      {
-        "text": "Increase fraction of inspired oxygen",
-        "isCorrect": false,
-        "rationale": "Wrong: FiO2 affects oxygenation (PaO2) and does not directly lower PaCO2; increasing FiO2 would not correct hypercapnia."
-      },
-      {
-        "text": "Increase positive end expiratory pressure",
-        "isCorrect": false,
-        "rationale": "Wrong: PEEP improves oxygenation by recruiting alveoli; it does not primarily increase CO2 elimination and may reduce venous return."
-      },
-      {
-        "text": "Decrease tidal volume to 4 mL per kg",
-        "isCorrect": false,
-        "rationale": "Wrong: Decreasing TV reduces minute ventilation and would worsen hypercapnia; only in ARDS is low TV used with permissive hypercapnia."
-      },
-      {
-        "text": "Perform an inspiratory hold maneuver",
-        "isCorrect": false,
-        "rationale": "Wrong: Inspiratory hold measures plateau pressure and assesses compliance; it does not directly correct elevated PaCO2."
-      }
-    ]
-  },
-  {
-    "question": "A ventilated patient with sudden hypotension, hyperinflated chest, and elevated peak airway pressures most likely has which complication?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Outline the main principles of weaning from the mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Auto positive end expiratory pressure",
-        "isCorrect": true,
-        "rationale": "Correct: Auto-PEEP (intrinsic PEEP) from breath stacking causes hyperinflation and can reduce venous return leading to hypotension; it raises peak pressures."
-      },
-      {
-        "text": "Pulmonary embolism causing obstruction",
-        "isCorrect": false,
-        "rationale": "Wrong: PE causes hypotension and hypoxemia but would not cause hyperinflated chest or elevated peak airway pressures; imaging and gas exchange would differ."
-      },
-      {
-        "text": "Left ventricular failure with pulmonary edema",
-        "isCorrect": false,
-        "rationale": "Wrong: LV failure causes pulmonary edema and low compliance, not hyperinflation; chest would show congestion rather than hyperinflation."
-      },
-      {
-        "text": "Endotracheal tube dislodgement into mainstem bronchus",
-        "isCorrect": false,
-        "rationale": "Wrong: Mainstem intubation causes unilateral overinflation and hypoxemia, not generalized hyperinflation with elevated peak pressures; repositioning would correct it."
-      },
-      {
-        "text": "Tension pneumothorax from barotrauma",
-        "isCorrect": false,
-        "rationale": "Wrong: Tension pneumothorax causes hypotension and may increase airway pressures but typically produces asymmetric chest findings and absent breath sounds; hyperinflation of both lungs is less likely."
-      }
-    ]
-  },
-  {
-    "question": "Which ventilator mode is described as delivering a set inspiratory pressure with variable tidal volumes depending on lung compliance?",
+    "question": "Which setting is commonly started at 5 cm H2O to help keep alveoli open at end expiration?",
     "difficulty_order": "1st",
-    "cited_learning_objective": "Analyze the modes of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Explain the role of PEEP in mechanical ventilation",
     "options": [
       {
-        "text": "Pressure assist control ventilation mode",
+        "text": "Applied PEEP",
         "isCorrect": true,
-        "rationale": "Correct: PACV delivers breaths to a preset inspiratory pressure; tidal volume varies with compliance, making it lung-protective against high pressures."
+        "rationale": "Correct: Applied PEEP is commonly initiated at about 5 cm H2O to prevent alveolar collapse and improve oxygenation."
       },
       {
-        "text": "Volume assist control ventilation mode",
+        "text": "Inspiratory pressure",
         "isCorrect": false,
-        "rationale": "Wrong: VAC guarantees a preset tidal volume and allows pressure to vary with compliance; it does not fix inspiratory pressure."
+        "rationale": "Wrong: Inspiratory pressure is set to deliver tidal volume or limit pressure during inspiration; it would be correct only if the stem asked about inspiratory limits rather than end-expiratory support."
       },
       {
-        "text": "Synchronized intermittent mandatory ventilation",
+        "text": "FiO2 fraction",
         "isCorrect": false,
-        "rationale": "Wrong: SIMV delivers mandatory breaths synchronized with patient effort but is not defined by fixed inspiratory pressure as the primary target; tidal volumes may be set."
+        "rationale": "Wrong: FiO2 is the inspired oxygen fraction and is not measured in cm H2O; it would be correct if the question asked about oxygen concentration rather than pressure."
       },
       {
-        "text": "Continuous positive airway pressure mode",
+        "text": "Respiratory rate",
         "isCorrect": false,
-        "rationale": "Wrong: CPAP provides continuous pressure without mandatory breaths and does not deliver pressure-targeted assisted breaths with variable tidal volumes in the same way as PACV."
+        "rationale": "Wrong: Respiratory rate is breaths per minute and not expressed in cm H2O; it would be correct if the stem asked about ventilation frequency."
       },
       {
-        "text": "Pressure support ventilation mode",
+        "text": "Tidal volume setting",
         "isCorrect": false,
-        "rationale": "Wrong: Pressure support augments spontaneous breaths with set pressure but is not the same as pressure assist-control which provides mandatory pressure-targeted breaths with a backup rate."
+        "rationale": "Wrong: Tidal volume is a volume parameter (mL/kg) and not a pressure in cm H2O; it would be correct if the question asked about delivered volume per breath."
       }
     ]
   },
   {
-    "question": "During a diagnostic inspiratory hold, plateau pressure is measured to be 32 cm H2O. According to the material, what is the implication of this plateau pressure value?",
+    "question": "A patient on mechanical ventilation has rising PaCO2. Which initial ventilator change is recommended to lower PaCO2 while minimizing risk of volutrauma?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Evaluate the Assist Control mode of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Outline the general principles of mechanical ventilation",
     "options": [
       {
-        "text": "Plateau pressure exceeds safe threshold",
+        "text": "Increase respiratory rate",
         "isCorrect": true,
-        "rationale": "Correct: The lecture indicates safe plateau pressure is  60% risks oxygen toxicity; adjuncts like prone positioning and PEEP are used to improve oxygenation safely."
+        "rationale": "Correct: Increasing RR raises minute ventilation and lowers PaCO2 and is usually adjusted first to avoid increasing tidal volume and risking volutrauma."
+      },
+      {
+        "text": "Increase tidal volume",
+        "isCorrect": false,
+        "rationale": "Wrong: Increasing TV also lowers PaCO2 but raises risk of volutrauma; it would be correct only if lung-protective concerns were absent."
+      },
+      {
+        "text": "Increase FiO2",
+        "isCorrect": false,
+        "rationale": "Wrong: FiO2 affects oxygenation, not CO2 elimination; it would be correct only if hypoxemia were the primary problem."
+      },
+      {
+        "text": "Increase PEEP",
+        "isCorrect": false,
+        "rationale": "Wrong: PEEP improves oxygenation by recruiting alveoli and does not directly reduce PaCO2; it would be correct only if alveolar recruitment was causing ventilation-perfusion mismatch affecting CO2."
+      },
+      {
+        "text": "Decrease respiratory rate",
+        "isCorrect": false,
+        "rationale": "Wrong: Decreasing RR would worsen hypercapnia; it would be correct only if the patient had dynamic hyperinflation and needed longer exhalation time."
       }
     ]
   },
   {
-    "question": "Which of the following best describes the relationship between tidal volume, compliance, and airway pressure in volume assist-control ventilation?",
+    "question": "Which pair correctly links the ventilator variable to the primary gas it controls?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Analyze the modes of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Outline the general principles of mechanical ventilation",
     "options": [
       {
-        "text": "Fixed volume yields variable pressure inversely with compliance",
+        "text": "FiO2 controls oxygenation",
         "isCorrect": true,
-        "rationale": "Correct: In VAC the ventilator delivers a set volume; airway pressure varies and is inversely related to compliance (lower compliance → higher pressure)."
+        "rationale": "Correct: FiO2 primarily affects PaO2 and oxygenation, as stated in the material."
       },
       {
-        "text": "Fixed pressure yields constant volume regardless of compliance",
+        "text": "PEEP controls CO2 elimination",
         "isCorrect": false,
-        "rationale": "Wrong: Fixed pressure (pressure control) yields variable volume depending on compliance; it does not guarantee constant volume."
+        "rationale": "Wrong: PEEP improves oxygenation by preventing alveolar collapse; it would be correct only if PEEP were described as altering minute ventilation significantly."
       },
       {
-        "text": "Increasing compliance increases peak pressure at fixed volume",
+        "text": "Respiratory rate controls oxygenation",
         "isCorrect": false,
-        "rationale": "Wrong: Increased compliance lowers pressure for a given volume; peak pressure rises when compliance decreases, not increases."
+        "rationale": "Wrong: RR primarily affects CO2 elimination via minute ventilation; it would be correct only if RR changes produced major shifts in oxygenation through altered mean airway pressure."
       },
       {
-        "text": "Volume and pressure are independent of compliance",
+        "text": "Tidal volume controls oxygenation",
         "isCorrect": false,
-        "rationale": "Wrong: Both volume and pressure are influenced by compliance; they are not independent. The relationship is central to ventilator mechanics."
+        "rationale": "Wrong: TV mainly affects CO2 elimination by changing minute ventilation; it would be correct only if large TV changes altered oxygenation through recruitment."
       },
       {
-        "text": "Fixed volume always keeps plateau pressure constant",
+        "text": "Inspiratory flow controls FiO2",
         "isCorrect": false,
-        "rationale": "Wrong: Plateau pressure depends on compliance; fixed volume does not guarantee constant plateau pressure—plateau will rise if compliance falls."
+        "rationale": "Wrong: Inspiratory flow affects timing and I:E ratio, not the fraction of inspired oxygen; it would be correct only if flow altered gas mixing with supplemental oxygen delivery."
       }
     ]
   },
   {
-    "question": "Which ventilator change is most appropriate when a patient has hypoxemia but is hypotensive and has pulmonary edema from congestive heart failure?",
+    "question": "A ventilated patient has sudden increase in peak inspiratory pressure but plateau pressure remains normal. Which problem is most likely?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze the modes of mechanical ventilation",
+    "options": [
+      {
+        "text": "Increased airway resistance",
+        "isCorrect": true,
+        "rationale": "Correct: A rise in peak pressure with normal plateau indicates increased airway resistance (bronchospasm, secretions, tube occlusion) rather than decreased compliance."
+      },
+      {
+        "text": "Decreased lung compliance",
+        "isCorrect": false,
+        "rationale": "Wrong: Decreased compliance raises both peak and plateau pressures; it would be correct only if plateau pressure were also elevated."
+      },
+      {
+        "text": "Increased intrinsic PEEP",
+        "isCorrect": false,
+        "rationale": "Wrong: Auto-PEEP can raise pressures but typically affects end-expiratory pressure and would often change plateau; it would be correct if flow did not return to zero before next breath."
+      },
+      {
+        "text": "Ventilator circuit leak",
+        "isCorrect": false,
+        "rationale": "Wrong: A leak usually lowers delivered pressures and volumes; it would be correct only if the leak caused compensatory pressure changes documented elsewhere."
+      },
+      {
+        "text": "Patient biting tube",
+        "isCorrect": false,
+        "rationale": "Wrong: Biting the tube can increase airway resistance and thus peak pressure, but it is a specific cause of increased resistance rather than the general mechanism; it would be correct if the stem asked for a specific etiology."
+      }
+    ]
+  },
+  {
+    "question": "Which ventilator strategy is recommended to minimize ventilator-induced lung injury in ARDS while maintaining oxygenation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the role of PEEP in mechanical ventilation",
+    "options": [
+      {
+        "text": "Low tidal volume with higher PEEP",
+        "isCorrect": true,
+        "rationale": "Correct: ARDS management uses low tidal volume ventilation (≈6 mL/kg) and increased PEEP to recruit alveoli while limiting volutrauma and barotrauma."
+      },
+      {
+        "text": "High tidal volume with low PEEP",
+        "isCorrect": false,
+        "rationale": "Wrong: High TV increases volutrauma and is contraindicated in ARDS; it would be correct only if lung-protective concerns were absent."
+      },
+      {
+        "text": "Low tidal volume with low FiO2",
+        "isCorrect": false,
+        "rationale": "Wrong: Low FiO2 may not correct hypoxemia; it would be correct only if oxygenation were adequate at low FiO2."
+      },
+      {
+        "text": "High respiratory rate with low PEEP",
+        "isCorrect": false,
+        "rationale": "Wrong: High RR may increase minute ventilation but does not protect against VILI and may worsen auto-PEEP; it would be correct only if CO2 control were the sole goal."
+      },
+      {
+        "text": "Increase FiO2 to 100%",
+        "isCorrect": false,
+        "rationale": "Wrong: FiO2 up to 60% is preferred to avoid oxygen toxicity; 100% risks oxygen toxicity and is not the lung-protective strategy described."
+      }
+    ]
+  },
+  {
+    "question": "Which change most directly increases alveolar recruitment and can improve PaO2 but may reduce venous return and cardiac output?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the role of PEEP in mechanical ventilation",
+    "options": [
+      {
+        "text": "Increase PEEP level",
+        "isCorrect": true,
+        "rationale": "Correct: Raising PEEP recruits alveoli and improves oxygenation but increases intrathoracic pressure, which can reduce venous return and cardiac output."
+      },
+      {
+        "text": "Increase respiratory rate",
+        "isCorrect": false,
+        "rationale": "Wrong: RR affects CO2 elimination more than alveolar recruitment; it would be correct only if RR changes altered mean airway pressure significantly."
+      },
+      {
+        "text": "Increase tidal volume",
+        "isCorrect": false,
+        "rationale": "Wrong: Increasing TV may recruit alveoli but primarily risks volutrauma; it would be correct only if recruitment via larger volumes were the intended mechanism."
+      },
+      {
+        "text": "Increase FiO2",
+        "isCorrect": false,
+        "rationale": "Wrong: FiO2 raises inspired oxygen fraction but does not recruit collapsed alveoli; it would be correct only if oxygenation without recruitment were sufficient."
+      },
+      {
+        "text": "Decrease inspiratory flow",
+        "isCorrect": false,
+        "rationale": "Wrong: Changing inspiratory flow alters I:E timing but does not directly recruit alveoli; it would be correct only if altered flow improved distribution in specific patients."
+      }
+    ]
+  },
+  {
+    "question": "A patient with COPD on mechanical ventilation is at risk for dynamic hyperinflation. Which ventilator adjustment best reduces that risk by prolonging exhalation time?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the use of different settings in mechanical ventilation in the treatment of COPD, post-operative hypoxemia, oxygen toxicity, and ARDS",
+    "options": [
+      {
+        "text": "Decrease respiratory rate",
+        "isCorrect": true,
+        "rationale": "Correct: Lowering RR increases expiratory time and reduces breath stacking and auto-PEEP in COPD patients prone to air trapping."
+      },
+      {
+        "text": "Increase tidal volume",
+        "isCorrect": false,
+        "rationale": "Wrong: Increasing TV lengthens inspiratory time and can worsen air trapping; it would be correct only if larger volumes were needed and exhalation time was simultaneously increased."
+      },
+      {
+        "text": "Increase FiO2",
+        "isCorrect": false,
+        "rationale": "Wrong: FiO2 affects oxygenation but not expiratory time; it would be correct only if hypoxemia were the primary issue."
+      },
+      {
+        "text": "Increase PEEP",
+        "isCorrect": false,
+        "rationale": "Wrong: Increasing applied PEEP can worsen hyperinflation in COPD by adding to intrinsic PEEP; it would be correct only if small applied PEEP were needed to offset circuit effects."
+      },
+      {
+        "text": "Decrease inspiratory flow",
+        "isCorrect": false,
+        "rationale": "Wrong: Decreasing inspiratory flow prolongs inspiratory time and shortens expiratory time, worsening air trapping; it would be correct only if flow adjustments improved synchrony without reducing exhalation."
+      }
+    ]
+  },
+  {
+    "question": "Which bedside test is commonly used during weaning to predict success by combining respiratory rate and tidal volume into an index?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Outline the main principles of weaning from the mechanical ventilation",
+    "options": [
+      {
+        "text": "Rapid shallow breathing index",
+        "isCorrect": true,
+        "rationale": "Correct: The RSBI (RR/TV) is used during SBTs; values  30-35 cm H2O indicates high alveolar distending pressure and increased risk of barotrauma and VILI."
+      },
+      {
+        "text": "Airway obstruction only",
+        "isCorrect": false,
+        "rationale": "Wrong: Airway obstruction raises peak but not plateau pressure; it would be correct only if plateau were normal and peak elevated."
+      },
+      {
+        "text": "Circuit leak",
+        "isCorrect": false,
+        "rationale": "Wrong: A leak lowers pressures and volumes; it would be correct only if measured pressures were unexpectedly low."
+      },
+      {
+        "text": "Hypoventilation",
+        "isCorrect": false,
+        "rationale": "Wrong: Hypoventilation is reflected by elevated PaCO2, not plateau pressure; it would be correct only if ABG showed hypercapnia without pressure changes."
+      },
+      {
+        "text": "Low lung compliance absent",
+        "isCorrect": false,
+        "rationale": "Wrong: High plateau indicates decreased compliance is present, not absent; it would be correct only if plateau were low."
+      }
+    ]
+  },
+  {
+    "question": "During a spontaneous breathing trial, which combination of findings best predicts successful extubation?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Explain the role of PEEP in mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Outline the main principles of weaning from the mechanical ventilation",
     "options": [
       {
-        "text": "Increase PEEP to improve oxygenation and reduce congestion",
+        "text": "RSBI  7.35",
         "isCorrect": true,
-        "rationale": "Correct: The lecture notes that in CHF with pulmonary edema, increasing PEEP can improve lung aeration and alleviate congestion despite potential hemodynamic effects; this can improve oxygenation."
+        "rationale": "Correct: An RSBI  7.35) during SBT are indicators of successful weaning and extubation readiness."
       },
       {
-        "text": "Decrease FiO2 to reduce oxygen toxicity risk",
+        "text": "RSBI >105 and PaO2 >80 mmHg",
         "isCorrect": false,
-        "rationale": "Wrong: Decreasing FiO2 would worsen hypoxemia; oxygen toxicity is a later concern and not the immediate priority in hypoxemic CHF with edema."
+        "rationale": "Wrong: RSBI >105 predicts weaning failure despite good oxygenation; it would be correct only if RSBI were low."
       },
       {
-        "text": "Lower tidal volume to 4 mL per kg to protect lungs",
+        "text": "PaO2/FiO2  95%",
         "isCorrect": false,
-        "rationale": "Wrong: Lowering TV reduces minute ventilation and does not address hypoxemia; lung-protective strategies are used in ARDS, not as the primary step for CHF-related hypoxemia."
+        "rationale": "Wrong: Low P/F ratio indicates severe hypoxemia and poor extubation candidacy; it would be correct only if P/F ratio were higher."
+      },
+      {
+        "text": "FiO2  70 mmHg",
+        "isCorrect": false,
+        "rationale": "Wrong: Elevated PaCO2 suggests inadequate ventilation and risk for extubation failure; it would be correct only if PaCO2 were normal."
+      },
+      {
+        "text": "PEEP >10 cm H2O and alertness",
+        "isCorrect": false,
+        "rationale": "Wrong: High PEEP indicates significant support and reduces extubation readiness even if the patient is alert; it would be correct only if PEEP were minimal."
+      }
+    ]
+  },
+  {
+    "question": "A ventilated patient with sepsis and diffuse bilateral infiltrates has PaO2/FiO2 = 100. Which ventilator target range for PaO2 and SpO2 aligns with ARDS lung-protective strategy?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the role of PEEP in mechanical ventilation",
+    "options": [
+      {
+        "text": "PaO2 55-80 mmHg and SpO2 88-95%",
+        "isCorrect": true,
+        "rationale": "Correct: ARDS lung-protective targets accept PaO2 55-80 mmHg and SpO2 88-95% to limit FiO2 and VILI while maintaining adequate oxygenation."
+      },
+      {
+        "text": "PaO2 90-110 mmHg and SpO2 98-100%",
+        "isCorrect": false,
+        "rationale": "Wrong: These higher oxygen targets risk oxygen toxicity and are not consistent with lung-protective ARDS strategy; they would be correct only if maximal oxygenation were prioritized over VILI risk."
+      },
+      {
+        "text": "PaO2 40-50 mmHg and SpO2 80-85%",
+        "isCorrect": false,
+        "rationale": "Wrong: These low values are inadequate for tissue oxygenation; they would be correct only if extreme permissive hypoxemia were intentionally accepted."
+      },
+      {
+        "text": "PaO2 >100 mmHg and SpO2 >97%",
+        "isCorrect": false,
+        "rationale": "Wrong: Excessively high oxygenation increases oxygen toxicity risk and is not the ARDS target; it would be correct only if oxygen toxicity were not a concern."
+      },
+      {
+        "text": "PaO2 30-40 mmHg and SpO2 75-80%",
+        "isCorrect": false,
+        "rationale": "Wrong: These values are dangerously low and not acceptable for ARDS management; they would be correct only in nonviable scenarios."
+      }
+    ]
+  },
+  {
+    "question": "A ventilated COPD patient has PaCO2 chronically elevated. Rapid normalization of PaCO2 risks which complication that supports permissive hypercapnia?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the use of different settings in mechanical ventilation in the treatment of COPD, post-operative hypoxemia, oxygen toxicity, and ARDS",
+    "options": [
+      {
+        "text": "Seizures and arrhythmias from alkalosis",
+        "isCorrect": true,
+        "rationale": "Correct: Rapid correction of chronic hypercapnia can cause metabolic alkalosis and precipitate seizures or arrhythmias, so permissive hypercapnia is often tolerated."
+      },
+      {
+        "text": "Pulmonary embolism",
+        "isCorrect": false,
+        "rationale": "Wrong: PE is not caused by rapid PaCO2 correction; it would be correct only if thromboembolic risk factors were present."
+      },
+      {
+        "text": "Oxygen toxicity",
+        "isCorrect": false,
+        "rationale": "Wrong: Oxygen toxicity results from high FiO2 over time, not rapid PaCO2 normalization; it would be correct only if FiO2 were excessively increased."
+      },
+      {
+        "text": "Barotrauma from low tidal volume",
+        "isCorrect": false,
+        "rationale": "Wrong: Barotrauma is linked to high pressures/volumes, not rapid CO2 correction; it would be correct only if ventilator settings increased plateau pressures."
+      },
+      {
+        "text": "Autoimmune flare",
+        "isCorrect": false,
+        "rationale": "Wrong: Autoimmune flares are unrelated to PaCO2 changes; it would be correct only if an underlying autoimmune trigger were documented."
+      }
+    ]
+  },
+  {
+    "question": "A ventilated patient with hypotension and hyperinflated chest radiograph likely has which ventilator-related complication?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the use of different settings in mechanical ventilation in the treatment of COPD, post-operative hypoxemia, oxygen toxicity, and ARDS",
+    "options": [
+      {
+        "text": "Auto-PEEP causing hemodynamic compromise",
+        "isCorrect": true,
+        "rationale": "Correct: Dynamic hyperinflation (auto-PEEP) increases intrathoracic pressure, reduces venous return, and can cause hypotension and hyperinflation on exam."
+      },
+      {
+        "text": "Pulmonary embolism causing hypotension",
+        "isCorrect": false,
+        "rationale": "Wrong: PE can cause hypotension but would not explain hyperinflated chest; it would be correct only with imaging or D-dimer supporting PE."
+      },
+      {
+        "text": "Left heart failure causing hyperinflation",
+        "isCorrect": false,
+        "rationale": "Wrong: Left heart failure causes pulmonary edema, not hyperinflation; it would be correct only if cardiogenic pulmonary edema were misinterpreted as hyperinflation."
+      },
+      {
+        "text": "Pneumothorax without hypotension",
+        "isCorrect": false,
+        "rationale": "Wrong: Pneumothorax can cause hyperinflation on one side and hypotension if tension physiology occurs; it would be correct only if unilateral findings and mediastinal shift were present."
+      },
+      {
+        "text": "Oxygen toxicity causing hypotension",
+        "isCorrect": false,
+        "rationale": "Wrong: Oxygen toxicity is a chronic injury and does not acutely cause hypotension and hyperinflation; it would be correct only after prolonged high FiO2 exposure."
+      }
+    ]
+  },
+  {
+    "question": "Which ventilator alarm finding should prompt an immediate inspiratory hold to distinguish airway resistance from compliance problems?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Evaluate the Assist Control mode of mechanical ventilation",
+    "options": [
+      {
+        "text": "High peak inspiratory pressure alarm",
+        "isCorrect": true,
+        "rationale": "Correct: A high peak pressure alarm warrants an inspiratory hold to compare peak and plateau pressures and differentiate airway resistance from decreased compliance."
+      },
+      {
+        "text": "Low tidal volume alarm",
+        "isCorrect": false,
+        "rationale": "Wrong: Low volume alarms suggest leak or low delivery and do not require an inspiratory hold to assess plateau; it would be correct only if pressure changes accompanied low volumes."
+      },
+      {
+        "text": "Low PEEP alarm",
+        "isCorrect": false,
+        "rationale": "Wrong: Low PEEP alarms indicate loss of end-expiratory pressure and are not diagnosed by inspiratory hold; it would be correct only if PEEP loss caused pressure waveform changes."
+      },
+      {
+        "text": "High FiO2 alarm",
+        "isCorrect": false,
+        "rationale": "Wrong: FiO2 alarms relate to oxygen delivery and do not require inspiratory hold; it would be correct only if oxygenation issues coincided with pressure abnormalities."
+      },
+      {
+        "text": "Low respiratory rate alarm",
+        "isCorrect": false,
+        "rationale": "Wrong: Low RR alarms indicate inadequate rate and are unrelated to inspiratory hold diagnostics; it would be correct only if rate changes affected pressure waveforms."
+      }
+    ]
+  },
+  {
+    "question": "A patient with ARDS is being ventilated with low tidal volumes. The team allows a modest rise in PaCO2 to avoid high pressures. This strategy is called what?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Handling of ARDS",
+    "options": [
+      {
+        "text": "Permissive hypercapnia",
+        "isCorrect": true,
+        "rationale": "Correct: Permissive hypercapnia accepts elevated PaCO2 to allow lung-protective low tidal volumes and limit ventilator-induced lung injury."
+      },
+      {
+        "text": "Permissive hypoxemia",
+        "isCorrect": false,
+        "rationale": "Wrong: Permissive hypoxemia is not the standard ARDS strategy; it would be correct only if oxygenation targets were intentionally lowered beyond recommended ranges."
+      },
+      {
+        "text": "Inverse ratio ventilation",
+        "isCorrect": false,
+        "rationale": "Wrong: Inverse ratio ventilation prolongs inspiratory time and is a different strategy; it would be correct only if I:E ratio manipulation were used."
+      },
+      {
+        "text": "High-frequency oscillation",
+        "isCorrect": false,
+        "rationale": "Wrong: HFOV is a distinct ventilation mode and not synonymous with permissive hypercapnia; it would be correct only if HFOV were specifically employed."
+      },
+      {
+        "text": "Lung recruitment maneuver",
+        "isCorrect": false,
+        "rationale": "Wrong: Recruitment maneuvers transiently increase pressures to open alveoli and are not the same as tolerating hypercapnia; it would be correct only if maneuvers were the focus."
+      }
+    ]
+  },
+  {
+    "question": "Which ventilator adjustment is least likely to cause oxygen toxicity when used transiently to correct hypoxemia?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Outline the general principles of mechanical ventilation",
+    "options": [
+      {
+        "text": "Increase PEEP modestly",
+        "isCorrect": true,
+        "rationale": "Correct: Increasing PEEP recruits alveoli and improves PaO2 without raising FiO2, thus reducing oxygen toxicity risk compared with prolonged high FiO2."
+      },
+      {
+        "text": "Increase FiO2 to 100%",
+        "isCorrect": false,
+        "rationale": "Wrong: Prolonged high FiO2 (>60%) increases oxygen toxicity risk; it would be correct only for very short rescue periods."
+      },
+      {
+        "text": "Increase tidal volume",
+        "isCorrect": false,
+        "rationale": "Wrong: Increasing TV affects ventilation and may worsen VILI but does not directly cause oxygen toxicity; it would be correct only if oxygen toxicity were unrelated to FiO2."
+      },
+      {
+        "text": "Decrease respiratory rate",
+        "isCorrect": false,
+        "rationale": "Wrong: Decreasing RR affects CO2 elimination and is unrelated to oxygen toxicity; it would be correct only if RR changes indirectly required higher FiO2."
+      },
+      {
+        "text": "Switch to pressure control",
+        "isCorrect": false,
+        "rationale": "Wrong: Changing mode to pressure control alters pressure delivery but does not inherently reduce oxygen toxicity unless it allows lower FiO2; it would be correct only if mode change enabled FiO2 reduction."
+      }
+    ]
+  },
+  {
+    "question": "A patient on VAC mode is not triggering breaths and receives mandatory breaths at the backup rate. Which feature of assist-control ensures ventilation in this situation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Evaluate the Assist Control mode of mechanical ventilation",
+    "options": [
+      {
+        "text": "Backup rate delivers set breaths",
+        "isCorrect": true,
+        "rationale": "Correct: Assist-control includes a backup rate so the ventilator delivers mandatory breaths if the patient fails to trigger spontaneous breaths."
+      },
+      {
+        "text": "Pressure support augments breaths",
+        "isCorrect": false,
+        "rationale": "Wrong: Pressure support augments spontaneous efforts but does not guarantee breaths when the patient is apneic; it would be correct only if spontaneous triggering were present."
+      },
+      {
+        "text": "SBT initiates spontaneous trial",
+        "isCorrect": false,
+        "rationale": "Wrong: SBT is a weaning test and does not provide mandatory ventilation; it would be correct only if the device were in SBT mode."
+      },
+      {
+        "text": "Auto-PEEP triggers breaths",
+        "isCorrect": false,
+        "rationale": "Wrong: Auto-PEEP is intrinsic end-expiratory pressure and can impede triggering, not ensure mandatory breaths; it would be correct only if the ventilator used auto-triggering settings."
+      },
+      {
+        "text": "FiO2 override ensures ventilation",
+        "isCorrect": false,
+        "rationale": "Wrong: FiO2 affects oxygenation and does not control breath delivery; it would be correct only if oxygenation settings somehow triggered mandatory breaths, which they do not."
+      }
+    ]
+  },
+  {
+    "question": "Which bedside calculation defines minute ventilation and directly predicts changes in PaCO2 when altered?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Outline the general principles of mechanical ventilation",
+    "options": [
+      {
+        "text": "Minute ventilation = RR × TV",
+        "isCorrect": true,
+        "rationale": "Correct: Minute ventilation equals respiratory rate times tidal volume and determines alveolar ventilation and PaCO2."
+      },
+      {
+        "text": "Alveolar gas equation",
+        "isCorrect": false,
+        "rationale": "Wrong: The alveolar gas equation estimates PAO2 and oxygenation, not minute ventilation; it would be correct only if oxygenation were the target."
+      },
+      {
+        "text": "Fick’s law of diffusion",
+        "isCorrect": false,
+        "rationale": "Wrong: Fick’s law describes diffusion across membranes and is not the bedside minute ventilation formula; it would be correct only for diffusion-limited gas exchange contexts."
+      },
+      {
+        "text": "RSBI = RR/TV",
+        "isCorrect": false,
+        "rationale": "Wrong: RSBI predicts weaning success and is not minute ventilation; it would be correct only if assessing extubation readiness."
+      },
+      {
+        "text": "Driving pressure = Pplat - PEEP",
+        "isCorrect": false,
+        "rationale": "Wrong: Driving pressure relates to lung stress and compliance, not minute ventilation; it would be correct only if pressure-related injury risk were the focus."
+      }
+    ]
+  },
+  {
+    "question": "A ventilated patient with COPD should have which target SpO2 range to avoid worsening hypercapnia from excessive oxygen administration?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the use of different settings in mechanical ventilation in the treatment of COPD, post-operative hypoxemia, oxygen toxicity, and ARDS",
+    "options": [
+      {
+        "text": "SpO2 88-92%",
+        "isCorrect": true,
+        "rationale": "Correct: COPD patients are typically managed with lower oxygen targets (SpO2 88-92%) to avoid worsening hypercapnia from excessive FiO2."
+      },
+      {
+        "text": "SpO2 95-100%",
+        "isCorrect": false,
+        "rationale": "Wrong: Higher SpO2 risks CO2 retention in COPD; it would be correct only if the patient had severe hypoxemia requiring higher oxygen."
+      },
+      {
+        "text": "SpO2 80-85%",
+        "isCorrect": false,
+        "rationale": "Wrong: This range is too low and risks tissue hypoxia; it would be correct only in extreme permissive hypoxemia scenarios."
+      },
+      {
+        "text": "SpO2 100% always",
+        "isCorrect": false,
+        "rationale": "Wrong: Targeting 100% increases oxygen toxicity and CO2 retention risk in COPD; it would be correct only for short rescue periods."
+      },
+      {
+        "text": "SpO2 70-75%",
+        "isCorrect": false,
+        "rationale": "Wrong: This is dangerously low and not acceptable for COPD management; it would be correct only in nonviable contexts."
+      }
+    ]
+  },
+  {
+    "question": "A ventilated patient with sudden hypotension and unilateral absent breath sounds after a high-pressure alarm most likely has which complication?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Outline the general principles of mechanical ventilation",
+    "options": [
+      {
+        "text": "Tension pneumothorax",
+        "isCorrect": true,
+        "rationale": "Correct: Sudden hypotension, high airway pressures, and unilateral absent breath sounds suggest tension pneumothorax from alveolar rupture due to excessive pressure."
+      },
+      {
+        "text": "Pulmonary embolism",
+        "isCorrect": false,
+        "rationale": "Wrong: PE causes sudden hypotension but not high airway pressures or unilateral absent breath sounds; it would be correct only with supporting imaging or D-dimer."
+      },
+      {
+        "text": "Endotracheal tube dislodgement",
+        "isCorrect": false,
+        "rationale": "Wrong: Tube dislodgement may cause hypoxia and absent breath sounds but usually lowers delivered pressures; it would be correct only if tube position confirmed malposition."
+      },
+      {
+        "text": "Bronchospasm",
+        "isCorrect": false,
+        "rationale": "Wrong: Bronchospasm raises peak pressures but typically presents with bilateral wheeze rather than unilateral absent sounds; it would be correct only if obstruction were localized."
+      },
+      {
+        "text": "Pulmonary edema",
+        "isCorrect": false,
+        "rationale": "Wrong: Pulmonary edema causes bilateral crackles and hypoxemia but not unilateral absent breath sounds and sudden hypotension; it would be correct only if cardiogenic shock were present."
+      }
+    ]
+  },
+  {
+    "question": "Which ventilator parameter should be limited to <30-35 cm H2O to reduce the risk of barotrauma?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Outline the general principles of mechanical ventilation",
+    "options": [
+      {
+        "text": "Plateau pressure limit",
+        "isCorrect": true,
+        "rationale": "Correct: Plateau pressure should be kept below about 30-35 cm H2O to minimize alveolar overdistention and barotrauma."
+      },
+      {
+        "text": "Peak inspiratory pressure limit",
+        "isCorrect": false,
+        "rationale": "Wrong: Peak pressure includes airway resistance and may be higher; limiting plateau pressure specifically addresses alveolar distending pressure."
+      },
+      {
+        "text": "Applied PEEP limit",
+        "isCorrect": false,
+        "rationale": "Wrong: PEEP is typically lower (e.g., 5-15 cm H2O) and is not the same as plateau pressure; it would be correct only if PEEP exceeded safe hemodynamic thresholds."
+      },
+      {
+        "text": "Respiratory rate limit",
+        "isCorrect": false,
+        "rationale": "Wrong: RR is breaths per minute and not measured in cm H2O; it would be correct only if excessive RR caused auto-PEEP and secondary pressure issues."
+      },
+      {
+        "text": "Tidal volume limit",
+        "isCorrect": false,
+        "rationale": "Wrong: TV is a volume parameter (mL/kg) and not directly a pressure limit; it would be correct only if TV increases led to high plateau pressures."
+      }
+    ]
+  },
+  {
+    "question": "A patient with ARDS is placed prone and shows improved oxygenation. Which physiologic mechanism best explains this improvement?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the role of PEEP in mechanical ventilation",
+    "options": [
+      {
+        "text": "Improved ventilation-perfusion matching",
+        "isCorrect": true,
+        "rationale": "Correct: Prone positioning redistributes ventilation and perfusion, improving V/Q matching and oxygenation in ARDS."
+      },
+      {
+        "text": "Increased cardiac output",
+        "isCorrect": false,
+        "rationale": "Wrong: Proning does not primarily increase cardiac output; it would be correct only if hemodynamics improved and contributed to oxygenation."
+      },
+      {
+        "text": "Reduced metabolic rate",
+        "isCorrect": false,
+        "rationale": "Wrong: Proning does not significantly lower metabolic oxygen demand; it would be correct only if oxygen consumption decreased markedly."
+      },
+      {
+        "text": "Direct increase in FiO2 delivery",
+        "isCorrect": false,
+        "rationale": "Wrong: Positioning does not change inspired oxygen fraction; it would be correct only if FiO2 were concurrently increased."
+      },
+      {
+        "text": "Decreased airway resistance",
+        "isCorrect": false,
+        "rationale": "Wrong: Proning affects regional lung mechanics more than airway resistance; it would be correct only if bronchospasm resolved with position change."
+      }
+    ]
+  },
+  {
+    "question": "Which ventilator adjustment is most appropriate for a postoperative patient with hypoxemia but low blood pressure where increasing intrathoracic pressure would be harmful?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the use of different settings in mechanical ventilation in the treatment of COPD, post-operative hypoxemia, oxygen toxicity, and ARDS",
+    "options": [
+      {
+        "text": "Increase FiO2 rather than increase PEEP",
+        "isCorrect": true,
+        "rationale": "Correct: In hypotensive patients, increasing FiO2 improves PaO2 without raising intrathoracic pressure, avoiding further reduction in venous return."
+      },
+      {
+        "text": "Increase PEEP rather than increase FiO2",
+        "isCorrect": false,
+        "rationale": "Wrong: Raising PEEP can worsen hypotension by reducing venous return; it would be correct only if hemodynamics tolerated higher intrathoracic pressure."
+      },
+      {
+        "text": "Decrease tidal volume to improve oxygenation",
+        "isCorrect": false,
+        "rationale": "Wrong: Lowering TV reduces minute ventilation and does not improve oxygenation; it would be correct only for lung-protective strategy when oxygenation is adequate."
       },
       {
         "text": "Increase respiratory rate to improve oxygenation",
         "isCorrect": false,
-        "rationale": "Wrong: RR affects CO2 elimination, not oxygenation; increasing RR will not reliably correct hypoxemia from pulmonary edema."
+        "rationale": "Wrong: RR primarily affects CO2 elimination and has limited effect on oxygenation; it would be correct only if increased RR improved mean airway pressure indirectly."
       },
       {
-        "text": "Perform immediate extubation to reduce intrathoracic pressure",
+        "text": "Switch to spontaneous breathing trial",
         "isCorrect": false,
-        "rationale": "Wrong: Extubation in a hypoxemic, hypotensive patient with pulmonary edema is unsafe; increasing PEEP is the recommended ventilatory maneuver per the material."
+        "rationale": "Wrong: SBT is for weaning and not an acute oxygenation maneuver; it would be correct only if the patient were ready for extubation and oxygenation was adequate."
       }
     ]
   },
   {
-    "question": "Which statement best summarizes the primary purpose of invasive mechanical ventilation as presented?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "Outline the general principles of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "It provides positive pressure support while disease is treated",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture states ventilators buy time by providing positive pressure ventilation while underlying disease (e.g., ARDS, pneumonia, overdose) is treated."
-      },
-      {
-        "text": "It cures the underlying pulmonary disease directly",
-        "isCorrect": false,
-        "rationale": "Wrong: Ventilation does not treat the disease; it supports gas exchange while therapy addresses the cause. Cure requires treating the underlying pathology."
-      },
-      {
-        "text": "It primarily reduces cardiac preload in all patients",
-        "isCorrect": false,
-        "rationale": "Wrong: While PEEP can reduce venous return and preload, this is not the primary purpose of ventilation and is a potential side effect, not the goal."
-      },
-      {
-        "text": "It eliminates the need for antibiotics in pneumonia",
-        "isCorrect": false,
-        "rationale": "Wrong: Ventilation does not replace antimicrobial therapy; pneumonia requires antibiotics while ventilation supports oxygenation/ventilation."
-      },
-      {
-        "text": "It always normalizes PaCO2 without adjustments",
-        "isCorrect": false,
-        "rationale": "Wrong: Ventilation settings must be adjusted to control PaCO2; it does not automatically normalize CO2 without appropriate settings."
-      }
-    ]
-  },
-  {
-    "question": "A patient on VAC has a sudden drop in delivered tidal volume with rising plateau pressure. Which underlying problem is most consistent with these findings?",
+    "question": "Which monitoring change during volume assist-control ventilation would most strongly suggest developing pulmonary edema?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Evaluate the Assist Control mode of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Analyze the modes of mechanical ventilation",
     "options": [
       {
-        "text": "Decreased lung compliance from pulmonary edema",
+        "text": "Sudden increase in plateau pressure",
         "isCorrect": true,
-        "rationale": "Correct: In VAC a fixed volume should be delivered; if plateau pressure rises and delivered volume drops, decreased compliance (e.g., pulmonary edema, ARDS) is likely causing higher pressures and impaired ventilation."
+        "rationale": "Correct: A sudden rise in plateau pressure indicates decreased compliance, which can result from pulmonary edema developing in the lungs."
       },
       {
-        "text": "Increased airway resistance from secretions",
+        "text": "Sudden decrease in peak pressure",
         "isCorrect": false,
-        "rationale": "Wrong: Increased resistance raises peak pressure but plateau remains normal; a rising plateau implicates compliance rather than airway resistance."
+        "rationale": "Wrong: A decrease in peak pressure would not indicate pulmonary edema; it would be correct only if airway resistance suddenly improved."
       },
       {
-        "text": "Endotracheal tube disconnection",
+        "text": "Gradual fall in FiO2 requirement",
         "isCorrect": false,
-        "rationale": "Wrong: Disconnection would cause loss of delivered volume and low pressures, not a rising plateau pressure. Reconnection would restore volumes."
+        "rationale": "Wrong: Falling FiO2 need suggests improving oxygenation, not edema; it would be correct only if edema were resolving."
       },
       {
-        "text": "Patient-initiated hyperventilation",
+        "text": "Increase in RSBI",
         "isCorrect": false,
-        "rationale": "Wrong: Patient hyperventilation would increase minute ventilation and lower PaCO2; it would not cause rising plateau pressure and decreased delivered volume in VAC."
+        "rationale": "Wrong: RSBI relates to weaning and spontaneous breathing, not directly to pulmonary edema; it would be correct only if edema impaired spontaneous breathing."
       },
       {
-        "text": "Ventilator flow sensor malfunction",
+        "text": "Decrease in PEEP alarm frequency",
         "isCorrect": false,
-        "rationale": "Wrong: Sensor malfunction could misreport values but would not physiologically raise plateau pressure; clinical correlation and equipment check would be needed to confirm."
+        "rationale": "Wrong: Fewer PEEP alarms do not indicate edema; it would be correct only if PEEP adjustments were stabilizing lung mechanics."
       }
     ]
   },
   {
-    "question": "Which of the following best describes permissive hypercapnia as applied in ARDS management?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Handling of ARDS (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Allowing elevated PaCO2 to avoid high tidal volumes",
-        "isCorrect": true,
-        "rationale": "Correct: Permissive hypercapnia accepts higher PaCO2 to permit low tidal volumes and reduce VILI; pH targets (e.g., ≥7.25) guide acceptability."
-      },
-      {
-        "text": "Aggressively normalizing PaCO2 with high tidal volumes",
-        "isCorrect": false,
-        "rationale": "Wrong: Aggressive normalization with high TV increases VILI and is contrary to lung-protective strategy; permissive hypercapnia avoids this."
-      },
-      {
-        "text": "Using high respiratory rates to eliminate CO2",
-        "isCorrect": false,
-        "rationale": "Wrong: While RR can lower CO2, in ARDS high RR may be limited and does not represent permissive hypercapnia, which tolerates elevated CO2 to protect lungs."
-      },
-      {
-        "text": "Lowering FiO2 to reduce CO2 production",
-        "isCorrect": false,
-        "rationale": "Wrong: FiO2 does not control CO2 production significantly; permissive hypercapnia is about ventilator settings, not FiO2 reduction."
-      },
-      {
-        "text": "Increasing PEEP to wash out CO2",
-        "isCorrect": false,
-        "rationale": "Wrong: PEEP improves oxygenation and recruitment but does not directly 'wash out' CO2; permissive hypercapnia accepts higher CO2 to protect lungs."
-      }
-    ]
-  },
-  {
-    "question": "Which of the following criteria is part of readiness for extubation according to the material?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Outline the main principles of weaning from the mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "FiO2 less than 40% with PEEP 5–8 cm H2O",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture lists adequate oxygenation on minimal support (FiO2  105 suggests failure and is not a readiness criterion."
-      },
-      {
-        "text": "Mental obtundation without airway reflexes",
-        "isCorrect": false,
-        "rationale": "Wrong: Mental alertness and intact airway protection are required for extubation; obtundation contraindicates extubation."
-      }
-    ]
-  },
-  {
-    "question": "A ventilated patient with asthma is experiencing high peak pressures. Which ventilator strategy from the material is most appropriate to reduce air trapping and improve ventilation?",
+    "question": "Which ventilator parameter change is most likely to worsen dynamic hyperinflation in an obstructive lung disease patient?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Explain the use of different settings in mechanical ventilation in the treatment of COPD, post-operative hypoxemia, oxygen toxicity, and ARDS (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Explain the use of different settings in mechanical ventilation in the treatment of COPD, post-operative hypoxemia, oxygen toxicity, and ARDS",
     "options": [
       {
-        "text": "Prolong expiratory time and lower respiratory rate",
+        "text": "Increase respiratory rate",
         "isCorrect": true,
-        "rationale": "Correct: For obstructive disease like severe asthma, prolonging expiratory time and lowering RR prevents breath stacking and reduces auto-PEEP, as the lecture recommends."
+        "rationale": "Correct: Increasing RR shortens expiratory time and promotes breath stacking and dynamic hyperinflation in obstructive disease."
       },
       {
-        "text": "Increase tidal volume to improve minute ventilation",
+        "text": "Decrease tidal volume",
         "isCorrect": false,
-        "rationale": "Wrong: Increasing TV in obstructive disease prolongs exhalation and worsens air trapping; it is not the recommended strategy."
+        "rationale": "Wrong: Decreasing TV can lengthen exhalation fraction and may reduce hyperinflation; it would be correct only if it shortened expiratory time."
       },
       {
-        "text": "Increase applied PEEP to 15 cm H2O",
+        "text": "Decrease inspiratory flow",
         "isCorrect": false,
-        "rationale": "Wrong: High applied PEEP can exacerbate hyperinflation in asthma; minimal PEEP is preferred to avoid added intrinsic pressure."
+        "rationale": "Wrong: Lower inspiratory flow prolongs inspiratory time and shortens expiratory time, but increasing RR is a more direct cause; it would be correct only if flow change markedly reduced expiratory time."
       },
       {
-        "text": "Shorten expiratory time to increase RR",
+        "text": "Decrease FiO2",
         "isCorrect": false,
-        "rationale": "Wrong: Shortening expiratory time worsens breath stacking and auto-PEEP; the lecture advises prolonging expiration instead."
+        "rationale": "Wrong: FiO2 changes do not affect hyperinflation; it would be correct only if hypoxemia-induced tachypnea were the driver."
       },
       {
-        "text": "Decrease inspiratory flow to 10 L per min",
+        "text": "Increase applied PEEP slightly",
         "isCorrect": false,
-        "rationale": "Wrong: Very low inspiratory flow prolongs inspiratory time and shortens expiratory time, worsening air trapping; increasing inspiratory flow is used to shorten inspiratory time and lengthen expiration."
+        "rationale": "Wrong: Increasing applied PEEP can add to total end-expiratory pressure and worsen hyperinflation; it would be correct only if applied PEEP significantly increased total PEEP."
       }
     ]
   },
   {
-    "question": "Which ventilator graphic measurement is obtained during an inspiratory hold and reflects lung compliance only (no airway resistance)?",
+    "question": "Which of the following best describes the primary purpose of invasive positive-pressure mechanical ventilation?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Analyze the modes of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Outline the general principles of mechanical ventilation",
     "options": [
       {
-        "text": "Plateau pressure measured during breath hold",
+        "text": "Buy time while underlying disease is treated",
         "isCorrect": true,
-        "rationale": "Correct: Plateau pressure is measured during an inspiratory hold with no flow and reflects lung compliance alone, excluding airway resistance."
+        "rationale": "Correct: Mechanical ventilation does not cure disease but supports oxygenation/ventilation to allow treatment of the underlying cause."
       },
       {
-        "text": "Peak inspiratory pressure during flow",
+        "text": "Directly treat pulmonary infection",
         "isCorrect": false,
-        "rationale": "Wrong: Peak pressure is measured during active flow and includes both airway resistance and compliance; it is not isolated to compliance."
+        "rationale": "Wrong: Ventilation supports gas exchange but does not treat infections; it would be correct only if ventilation delivered antimicrobial therapy, which it does not."
       },
       {
-        "text": "End expiratory flow rate",
+        "text": "Permanently replace respiratory muscles",
         "isCorrect": false,
-        "rationale": "Wrong: End expiratory flow relates to expiratory mechanics and auto-PEEP detection, not the static compliance measured by plateau pressure."
+        "rationale": "Wrong: Ventilation is temporary support and not intended as permanent muscle replacement; it would be correct only in chronic ventilator-dependent patients."
       },
       {
-        "text": "Mean airway pressure over cycle",
+        "text": "Eliminate need for antibiotics",
         "isCorrect": false,
-        "rationale": "Wrong: Mean airway pressure is an average influenced by flow, pressure, and timing; it does not isolate compliance like plateau pressure does."
+        "rationale": "Wrong: Ventilation does not obviate antimicrobial therapy; it would be correct only if infection were noncontributory to respiratory failure."
       },
       {
-        "text": "Inspiratory flow waveform amplitude",
+        "text": "Prevent all ventilator-associated complications",
         "isCorrect": false,
-        "rationale": "Wrong: Flow waveform amplitude reflects flow settings and resistance but does not directly measure static lung compliance."
+        "rationale": "Wrong: Mechanical ventilation carries risks and cannot prevent all complications; it would be correct only if no complications occurred, which is unrealistic."
       }
     ]
   },
   {
-    "question": "A patient with COPD has chronic CO2 retention (PaCO2 chronically elevated). According to the material, what is the recommended approach to correcting PaCO2 in such patients?",
+    "question": "Which bedside maneuver distinguishes increased airway resistance from decreased lung compliance when peak pressure is elevated?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Explain the use of different settings in mechanical ventilation in the treatment of COPD, post-operative hypoxemia, oxygen toxicity, and ARDS (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Analyze the modes of mechanical ventilation",
     "options": [
       {
-        "text": "Accept permissive hypercapnia and avoid rapid correction",
+        "text": "Perform an inspiratory hold to measure plateau",
         "isCorrect": true,
-        "rationale": "Correct: The lecture advises tolerating chronic hypercapnia and avoiding rapid normalization, which can cause alkalosis and complications; permissive hypercapnia is accepted."
+        "rationale": "Correct: An inspiratory hold yields plateau pressure; if plateau is normal while peak is high, airway resistance is implicated; if plateau is high, compliance is reduced."
       },
       {
-        "text": "Rapidly normalize PaCO2 with high minute ventilation",
+        "text": "Measure RSBI",
         "isCorrect": false,
-        "rationale": "Wrong: Rapid correction risks alkalosis, seizures, and arrhythmias in chronic CO2 retainers; the lecture warns against aggressive normalization."
+        "rationale": "Wrong: RSBI assesses weaning readiness and does not differentiate resistance vs compliance; it would be correct only for extubation assessment."
       },
       {
-        "text": "Lower FiO2 to increase respiratory drive",
+        "text": "Obtain D-dimer",
         "isCorrect": false,
-        "rationale": "Wrong: Lowering FiO2 to stimulate drive is not recommended and risks hypoxemia; oxygen should be titrated to safe SpO2 targets (88–92%)."
+        "rationale": "Wrong: D-dimer screens for thromboembolism and does not evaluate airway mechanics; it would be correct only if PE were suspected clinically."
       },
       {
-        "text": "Increase PEEP to reduce intrinsic PEEP",
+        "text": "Increase FiO2 and reassess",
         "isCorrect": false,
-        "rationale": "Wrong: Increasing applied PEEP may worsen hyperinflation in COPD; intrinsic PEEP is managed by prolonging expiration and lowering RR."
+        "rationale": "Wrong: FiO2 affects oxygenation and not mechanical properties; it would be correct only if hypoxemia were the primary concern."
       },
       {
-        "text": "Extubate early to restore spontaneous ventilation",
+        "text": "Decrease tidal volume and reassess",
         "isCorrect": false,
-        "rationale": "Wrong: Early extubation without readiness risks respiratory failure; COPD patients require careful weaning and SBT assessment before extubation."
+        "rationale": "Wrong: Lowering TV changes pressures but does not directly distinguish resistance from compliance; it would be correct only if pressure changes clarified the mechanism."
       }
     ]
   },
   {
-    "question": "Which of the following best explains why FiO2 >60% is used cautiously according to the material?",
+    "question": "Which ventilator parameter is calculated from patient height and used to set lung-protective tidal volumes?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Outline the general principles of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Outline the general principles of mechanical ventilation",
     "options": [
       {
-        "text": "High FiO2 risks oxygen toxicity and lung inflammation",
+        "text": "Predicted body weight for tidal volume",
         "isCorrect": true,
-        "rationale": "Correct: The lecture warns that FiO2 >60% can cause oxygen toxicity, inflammation, and atelectasis, so FiO2 should be limited when possible."
+        "rationale": "Correct: Tidal volume for lung-protective ventilation is set based on predicted body weight (PBW) derived from height, typically 6-8 mL/kg."
       },
       {
-        "text": "High FiO2 increases minute ventilation excessively",
+        "text": "Actual body weight for tidal volume",
         "isCorrect": false,
-        "rationale": "Wrong: FiO2 affects oxygenation, not minute ventilation; it does not directly increase ventilation and CO2 elimination."
+        "rationale": "Wrong: Using actual body weight can overestimate TV in obese patients; it would be correct only if PBW were unavailable and obesity absent."
       },
       {
-        "text": "High FiO2 always causes auto-PEEP",
+        "text": "Ideal body weight for FiO2",
         "isCorrect": false,
-        "rationale": "Wrong: Auto-PEEP results from expiratory flow limitation and breath stacking, not from high FiO2. FiO2 does not cause intrinsic PEEP."
+        "rationale": "Wrong: FiO2 is not set by ideal body weight; it would be correct only if oxygen dosing were weight-dependent, which it is not."
       },
       {
-        "text": "High FiO2 reduces plateau pressure",
+        "text": "Predicted body weight for PEEP",
         "isCorrect": false,
-        "rationale": "Wrong: FiO2 does not change plateau pressure, which reflects compliance; oxygen fraction and pressures are separate variables."
+        "rationale": "Wrong: PEEP is titrated to oxygenation and compliance, not PBW; it would be correct only if PBW-based protocols dictated PEEP."
       },
       {
-        "text": "High FiO2 increases airway resistance",
+        "text": "Actual body weight for respiratory rate",
         "isCorrect": false,
-        "rationale": "Wrong: Airway resistance is determined by bronchospasm, secretions, and tube issues; FiO2 does not increase resistance."
+        "rationale": "Wrong: RR is set by ventilation needs and not by actual body weight; it would be correct only if metabolic demands correlated strictly with weight."
       }
     ]
   },
   {
-    "question": "Which of the following is the most appropriate immediate action when a ventilator alarm indicates high peak pressure and inspiratory hold shows normal plateau pressure?",
+    "question": "Which immediate action is indicated when a ventilator alarm signals high peak pressure and the inspiratory hold shows normal plateau pressure?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Evaluate the Assist Control mode of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Evaluate the Assist Control mode of mechanical ventilation",
     "options": [
       {
-        "text": "Assess for airway obstruction such as bronchospasm or secretions",
+        "text": "Check for airway obstruction and bronchospasm",
         "isCorrect": true,
-        "rationale": "Correct: High peak with normal plateau indicates airway resistance; the lecture advises checking for bronchospasm, secretions, tube occlusion, or biting as causes."
+        "rationale": "Correct: High peak with normal plateau indicates increased airway resistance; immediate checks for bronchospasm, secretions, tube kink, or biting are appropriate."
       },
       {
         "text": "Increase tidal volume to overcome resistance",
         "isCorrect": false,
-        "rationale": "Wrong: Increasing TV would raise pressures further and worsen the problem; the issue is resistance, not insufficient volume."
+        "rationale": "Wrong: Increasing TV would raise pressures further and worsen injury; it would be correct only if resistance were transient and volume delivery essential."
       },
       {
-        "text": "Increase PEEP to open collapsed alveoli",
+        "text": "Increase PEEP to reduce peak pressure",
         "isCorrect": false,
-        "rationale": "Wrong: Normal plateau suggests compliance is fine; increasing PEEP targets recruitment and would not address airway resistance and could harm the patient."
+        "rationale": "Wrong: Raising PEEP does not correct airway resistance and may worsen pressures; it would be correct only if alveolar collapse were the underlying issue."
       },
       {
-        "text": "Decrease respiratory rate to reduce minute ventilation",
+        "text": "Decrease FiO2 to lower airway pressure",
         "isCorrect": false,
-        "rationale": "Wrong: Decreasing RR affects CO2 elimination and does not relieve airway obstruction; it may worsen ventilation if not indicated."
+        "rationale": "Wrong: FiO2 does not affect airway resistance or peak pressure; it would be correct only if oxygen toxicity concerns required FiO2 reduction."
       },
       {
-        "text": "Immediately extubate the patient",
+        "text": "Perform immediate bronchoscopy without other checks",
         "isCorrect": false,
-        "rationale": "Wrong: Extubation is unsafe during an acute airway resistance event; first assess and treat reversible airway causes."
-      }
-    ]
-  },
-  {
-    "question": "Which of the following best characterizes the effect of increasing PEEP on cardiac output as described in the material?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Explain the role of PEEP in mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Increases intrathoracic pressure and may decrease venous return",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture explains that higher PEEP raises intrathoracic pressure, reducing the MSFP–RAP gradient and venous return, which can lower cardiac output and blood pressure."
-      },
-      {
-        "text": "Always increases cardiac output by improving oxygenation",
-        "isCorrect": false,
-        "rationale": "Wrong: While PEEP can improve oxygenation, it does not always increase cardiac output; it often reduces venous return and can lower cardiac output."
-      },
-      {
-        "text": "Has no hemodynamic effects on preload or afterload",
-        "isCorrect": false,
-        "rationale": "Wrong: PEEP does affect intrathoracic pressures and preload; it is not hemodynamically neutral."
-      },
-      {
-        "text": "Decreases right atrial pressure and increases venous return",
-        "isCorrect": false,
-        "rationale": "Wrong: PEEP increases intrathoracic and right atrial pressures, reducing the gradient for venous return rather than increasing it."
-      },
-      {
-        "text": "Directly increases left ventricular contractility",
-        "isCorrect": false,
-        "rationale": "Wrong: PEEP does not directly augment LV contractility; its main cardiac effects are via preload and afterload changes, not contractility."
-      }
-    ]
-  },
-  {
-    "question": "A patient on mechanical ventilation has PaO2 110 mmHg and PaCO2 68 mmHg with pH 7.24. Which statement reflects the priority of correction according to the material?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Outline the general principles of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Correct ventilation (PaCO2) before fine-tuning oxygenation",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture emphasizes addressing ventilation (CO2) first because ventilator changes affect both gases; oxygenation is fine-tuned after ventilation is corrected."
-      },
-      {
-        "text": "Increase FiO2 immediately because PaO2 is priority",
-        "isCorrect": false,
-        "rationale": "Wrong: PaO2 is adequate here; the priority is hypercapnia and acidosis. Increasing FiO2 would not address CO2 and risks oxygen toxicity."
-      },
-      {
-        "text": "Decrease respiratory rate to improve pH",
-        "isCorrect": false,
-        "rationale": "Wrong: Decreasing RR would worsen hypercapnia and acidosis; to correct high PaCO2, RR should be increased."
-      },
-      {
-        "text": "Lower PEEP to reduce plateau pressure first",
-        "isCorrect": false,
-        "rationale": "Wrong: PEEP affects oxygenation and hemodynamics; with adequate PaO2 and hypercapnia, ventilation adjustments are prioritized over PEEP changes."
-      },
-      {
-        "text": "Perform immediate bronchoscopy to remove secretions",
-        "isCorrect": false,
-        "rationale": "Wrong: Bronchoscopy may help if airway obstruction is suspected, but the immediate priority per the material is to increase minute ventilation to correct PaCO2."
-      }
-    ]
-  },
-  {
-    "question": "Which of the following best defines minute ventilation and its relation to PaCO2 as presented?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "Outline the general principles of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Minute ventilation equals RR times tidal volume",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture states minute ventilation = RR × TV and that increased minute ventilation lowers PaCO2 by increasing alveolar ventilation."
-      },
-      {
-        "text": "Minute ventilation equals FiO2 times PEEP",
-        "isCorrect": false,
-        "rationale": "Wrong: FiO2 and PEEP affect oxygenation, not minute ventilation; minute ventilation is RR × TV, not FiO2 × PEEP."
-      },
-      {
-        "text": "Minute ventilation equals plateau pressure divided by compliance",
-        "isCorrect": false,
-        "rationale": "Wrong: Plateau pressure and compliance relate to mechanics, not minute ventilation; this formula is not described in the material."
-      },
-      {
-        "text": "Minute ventilation equals inspiratory flow times I:E ratio",
-        "isCorrect": false,
-        "rationale": "Wrong: Inspiratory flow and I:E ratio affect timing but do not directly define minute ventilation; RR × TV is the correct relation."
-      },
-      {
-        "text": "Minute ventilation equals PaO2 divided by FiO2",
-        "isCorrect": false,
-        "rationale": "Wrong: PaO2/FiO2 is a measure of oxygenation (P/F ratio), not minute ventilation; it does not determine PaCO2."
-      }
-    ]
-  },
-  {
-    "question": "Which of the following complications is most directly caused by excessive applied airway pressure or volume during mechanical ventilation?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Outline the general principles of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Barotrauma from alveolar rupture",
-        "isCorrect": true,
-        "rationale": "Correct: Excessive pressure can cause alveolar rupture leading to barotrauma (e.g., pneumothorax), as described in the complications section."
-      },
-      {
-        "text": "Oxygen toxicity from high FiO2",
-        "isCorrect": false,
-        "rationale": "Wrong: Oxygen toxicity is due to prolonged high FiO2, not excessive pressure or volume. It is a separate ventilator complication."
-      },
-      {
-        "text": "Ventilator-associated pneumonia from secretions",
-        "isCorrect": false,
-        "rationale": "Wrong: VAP is an infectious complication related to intubation and aspiration risk, not directly caused by high pressures or volumes."
-      },
-      {
-        "text": "Pulmonary embolism from immobility",
-        "isCorrect": false,
-        "rationale": "Wrong: PE is a thromboembolic complication of immobility, unrelated to applied ventilator pressures or volumes."
-      },
-      {
-        "text": "Auto-PEEP from low tidal volumes",
-        "isCorrect": false,
-        "rationale": "Wrong: Auto-PEEP results from inadequate expiratory time and airflow limitation, not from low tidal volumes; excessive pressure/volume causes barotrauma/volutrauma."
-      }
-    ]
-  },
-  {
-    "question": "A patient on mechanical ventilation has plateau pressure 28 cm H2O and peak pressure 40 cm H2O. Which intervention would be most appropriate to evaluate the cause of the high peak pressure?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Evaluate the Assist Control mode of mechanical ventilation (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Perform an inspiratory hold to compare plateau and peak",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture recommends an inspiratory hold when peak pressure is high to measure plateau; comparing them distinguishes airway resistance (high peak, normal plateau) from compliance problems (both high)."
-      },
-      {
-        "text": "Increase tidal volume to reduce peak pressure",
-        "isCorrect": false,
-        "rationale": "Wrong: Increasing TV would likely raise pressures further; the diagnostic step is to perform an inspiratory hold, not increase volume."
-      },
-      {
-        "text": "Increase FiO2 to improve oxygenation",
-        "isCorrect": false,
-        "rationale": "Wrong: FiO2 affects oxygenation and does not diagnose the cause of high peak pressure; inspiratory hold is the correct diagnostic maneuver."
-      },
-      {
-        "text": "Decrease PEEP to zero immediately",
-        "isCorrect": false,
-        "rationale": "Wrong: Decreasing PEEP may affect oxygenation and hemodynamics but does not distinguish airway resistance from compliance; inspiratory hold is needed first."
-      },
-      {
-        "text": "Extubate the patient to relieve airway pressure",
-        "isCorrect": false,
-        "rationale": "Wrong: Extubation is unsafe without diagnosing the cause; inspiratory hold and airway assessment should precede any decision to extubate."
-      }
-    ]
-  },
-  {
-    "question": "Which of the following best represents the recommended oxygenation targets in ARDS per the material?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Handling of ARDS (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "PaO2 55–80 mmHg and SpO2 88–95%",
-        "isCorrect": true,
-        "rationale": "Correct: The lecture specifies oxygenation targets in ARDS as PaO2 55–80 mmHg and SpO2 88–95% to balance oxygenation and avoid toxicity."
-      },
-      {
-        "text": "PaO2 >100 mmHg and SpO2 >98%",
-        "isCorrect": false,
-        "rationale": "Wrong: Targets this high risk oxygen toxicity and are not recommended in ARDS; the lecture recommends lower permissive targets."
-      },
-      {
-        "text": "PaO2  150 is part of readiness; >100 alone is not the specific SBT index cited. RSBI is the index referenced for SBT success."
-      },
-      {
-        "text": "Plateau pressure less than 45 cm H2O",
-        "isCorrect": false,
-        "rationale": "Wrong: PaO2 does not contraindicate permissive hypercapnia; the strategy concerns CO2 and lung protection, not oxygenation alone."
-      },
-      {
-        "text": "Permissive hypercapnia requires lowering PEEP to zero",
-        "isCorrect": false,
-        "rationale": "Wrong: PEEP manages oxygenation and recruitment; permissive hypercapnia does not mandate PEEP removal and may coexist with appropriate PEEP."
+        "rationale": "Wrong: Bronchoscopy may help but is invasive; initial bedside checks for secretions or tube issues are preferred before bronchoscopy."
       }
     ]
   }
