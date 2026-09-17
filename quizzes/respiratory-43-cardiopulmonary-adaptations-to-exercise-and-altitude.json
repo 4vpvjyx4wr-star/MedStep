@@ -1,1249 +1,1217 @@
 [
   {
-    "question": "At 6,000 m altitude a climber develops sustained hyperventilation. Which arterial blood gas change is the most direct immediate effect of hyperventilation?",
+    "question": "At 6 km altitude atmospheric pressure falls roughly by half and alveolar PO2 falls substantially. Which systemic arterial change is an immediate respiratory response to this hypoxia?",
     "difficulty_order": "1st",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
     "options": [
       {
-        "text": "Decreased PaCO2",
+        "text": "PaO2 decrease",
         "isCorrect": true,
-        "rationale": "Correct: Hyperventilation lowers alveolar and arterial CO2 (PaCO2); this is the primary immediate change. Would be incorrect if ventilation decreased."
+        "rationale": "Correct: Hypobaric hypoxia lowers alveolar and arterial PO2 directly; this is the primary immediate change described in the material."
       },
       {
-        "text": "Increased PaCO2",
+        "text": "PaCO2 increase",
         "isCorrect": false,
-        "rationale": "Wrong: increased PaCO2 results from hypoventilation; would be correct only if ventilation fell rather than rose."
+        "rationale": "Wrong: Hyperventilation at altitude lowers PaCO2; PaCO2 would increase only with hypoventilation, which is not the immediate altitude response."
       },
       {
-        "text": "Increased PaO2",
+        "text": "pH decrease",
         "isCorrect": false,
-        "rationale": "Wrong: hyperventilation raises alveolar O2 slightly but at high altitude inspired PO2 is low so PaO2 remains depressed; would be correct only with supplemental O2."
+        "rationale": "Wrong: Hyperventilation causes respiratory alkalosis and an increased pH; pH would decrease only with primary metabolic acidosis."
       },
       {
-        "text": "Increased HCO3-",
+        "text": "Hb saturation increase",
         "isCorrect": false,
-        "rationale": "Wrong: acute hyperventilation causes respiratory alkalosis with decreased HCO3- via buffering; HCO3- rises only in metabolic alkalosis or renal retention."
+        "rationale": "Wrong: Lower PaO2 reduces hemoglobin saturation initially; saturation increases later only after acclimatization or supplemental O2."
       },
       {
-        "text": "Marked polycythemia",
+        "text": "Hb concentration decrease",
         "isCorrect": false,
-        "rationale": "Wrong: polycythemia is a delayed response over days to weeks from increased EPO, not an immediate effect of hyperventilation."
+        "rationale": "Wrong: Erythropoietin increases RBC production over days to weeks, raising Hb concentration rather than decreasing it."
       }
     ]
   },
   {
-    "question": "Which change in hemoglobin-oxygen affinity occurs within hours after ascent to high altitude and helps unload O2 to tissues?",
+    "question": "A climber develops hyperventilation within hours of ascent. Which acid-base pattern best matches the immediate arterial blood changes?",
     "difficulty_order": "1st",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
     "options": [
       {
-        "text": "Right shift of curve",
+        "text": "Respiratory alkalosis",
         "isCorrect": true,
-        "rationale": "Correct: Increased 2,3-DPG shifts the O2-Hb curve right, lowering affinity and increasing tissue unloading; would be absent if 2,3-DPG did not rise."
+        "rationale": "Correct: Hyperventilation lowers PaCO2 producing respiratory alkalosis, as described for acute altitude exposure."
       },
       {
-        "text": "Left shift of curve",
+        "text": "Metabolic alkalosis",
         "isCorrect": false,
-        "rationale": "Wrong: left shift increases affinity and impairs unloading; would be correct only with decreased 2,3-DPG or alkalosis."
+        "rationale": "Wrong: Metabolic alkalosis arises from bicarbonate gain or H+ loss; immediate altitude response is respiratory in origin."
       },
       {
-        "text": "No change in affinity",
+        "text": "Respiratory acidosis",
         "isCorrect": false,
-        "rationale": "Wrong: acute altitude triggers biochemical changes (2,3-DPG) that alter affinity; no change would imply no metabolic response."
+        "rationale": "Wrong: Respiratory acidosis requires hypoventilation and increased PaCO2, the opposite of hyperventilation."
       },
       {
-        "text": "Irreversible affinity loss",
+        "text": "Metabolic acidosis",
         "isCorrect": false,
-        "rationale": "Wrong: changes are reversible adaptations; irreversible loss would require hemoglobin damage not described here."
+        "rationale": "Wrong: Metabolic acidosis is not the immediate effect of hyperventilation at altitude; acetazolamide can induce metabolic acidosis therapeutically, but that is drug-induced."
       },
       {
-        "text": "Affinity increased by polycythemia",
+        "text": "Normal acid-base status",
         "isCorrect": false,
-        "rationale": "Wrong: polycythemia increases O2 content but does not increase Hb O2 affinity; affinity changes are mediated by 2,3-DPG and pH."
+        "rationale": "Wrong: Hyperventilation produces measurable alkalosis; normal status would not reflect the immediate ventilatory response."
       }
     ]
   },
   {
-    "question": "A patient with acute respiratory alkalosis from high-altitude hyperventilation has an acute predicted change in serum bicarbonate. If PaCO2 falls from 40 to 30 mmHg, what is the expected acute change in HCO3-?",
+    "question": "Using the compensation rules provided, calculate the expected acute change in serum bicarbonate when PaCO2 falls from 40 to 30 mmHg. Which value is closest?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
+    "options": [
+      {
+        "text": "HCO3- decreases by 2 mEq/L",
+        "isCorrect": true,
+        "rationale": "Correct: For acute respiratory alkalosis the slide gives ΔHCO3- = ΔCO2 × 0.2; ΔCO2 = 10 → 10×0.2 = 2 mEq/L decrease."
+      },
+      {
+        "text": "HCO3- decreases by 5 mEq/L",
+        "isCorrect": false,
+        "rationale": "Wrong: A 5 mEq/L decrease corresponds to chronic compensation (ΔCO2×0.5), not the acute change; would be correct only after days."
+      },
+      {
+        "text": "HCO3- increases by 2 mEq/L",
+        "isCorrect": false,
+        "rationale": "Wrong: Bicarbonate does not increase in respiratory alkalosis; it falls as a compensatory response."
+      },
+      {
+        "text": "HCO3- unchanged",
+        "isCorrect": false,
+        "rationale": "Wrong: Acute respiratory alkalosis produces a predictable small bicarbonate decrease; unchanged would imply no compensation."
+      },
+      {
+        "text": "HCO3- decreases by 10 mEq/L",
+        "isCorrect": false,
+        "rationale": "Wrong: A 10 mEq/L fall is far larger than the acute or chronic predicted compensations given in the material."
+      }
+    ]
+  },
+  {
+    "question": "Which hematologic adaptation develops over weeks at high altitude and contributes to increased oxygen-carrying capacity?",
     "difficulty_order": "1st",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
     "options": [
       {
-        "text": "Decrease by 2 mEq/L",
+        "text": "Polycythemia from increased EPO",
         "isCorrect": true,
-        "rationale": "Correct: Acute compensation uses ΔHCO3- = ΔCO2 × 0.2; ΔCO2 = 10 → 10×0.2 = 2 mEq/L decrease. Would differ if chronic compensation applied."
+        "rationale": "Correct: Hypoxia stimulates renal EPO within a day and polycythemia develops over ~3 weeks, increasing Hb concentration."
       },
       {
-        "text": "Decrease by 5 mEq/L",
+        "text": "Immediate hemoglobin glycosylation",
         "isCorrect": false,
-        "rationale": "Wrong: a 5 mEq/L drop reflects chronic renal compensation (0.5 factor); would be correct only after days of sustained alkalosis."
+        "rationale": "Wrong: Glycosylation is unrelated to acute altitude adaptation and is not described in the material."
       },
       {
-        "text": "Increase by 2 mEq/L",
+        "text": "Decreased 2,3-DPG production",
         "isCorrect": false,
-        "rationale": "Wrong: HCO3- rises in metabolic alkalosis; here respiratory alkalosis causes HCO3- to fall acutely."
+        "rationale": "Wrong: 2,3-DPG actually increases at altitude to facilitate tissue unloading; a decrease would be opposite."
       },
       {
-        "text": "No change in HCO3-",
+        "text": "Acute hemolysis",
         "isCorrect": false,
-        "rationale": "Wrong: acute respiratory disturbances provoke immediate buffering and a small HCO3- change; no change would imply no buffering."
+        "rationale": "Wrong: Hemolysis would lower RBC mass; altitude adaptation increases RBC production rather than destroying cells."
       },
       {
-        "text": "Decrease by 10 mEq/L",
+        "text": "Immediate plasma volume expansion",
         "isCorrect": false,
-        "rationale": "Wrong: a 10 mEq/L drop is far larger than predicted for acute respiratory alkalosis; would require massive metabolic acid loss."
+        "rationale": "Wrong: Plasma volume changes are not the primary weeks-long adaptation described; polycythemia is the key hematologic change."
       }
     ]
   },
   {
-    "question": "Which drug used for altitude prophylaxis produces metabolic acidosis by inhibiting proximal tubule carbonic anhydrase?",
+    "question": "A patient at high altitude develops pulmonary hypertension from hypoxic pulmonary vasoconstriction. Which cardiac remodeling pattern is expected early in this process?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
+    "options": [
+      {
+        "text": "Concentric right ventricular hypertrophy",
+        "isCorrect": true,
+        "rationale": "Correct: Pressure overload from pulmonary HTN causes concentric RV hypertrophy with sarcomeres added in parallel."
+      },
+      {
+        "text": "Eccentric right ventricular hypertrophy",
+        "isCorrect": false,
+        "rationale": "Wrong: Eccentric hypertrophy reflects volume overload and occurs later with decompensation, not early pressure overload."
+      },
+      {
+        "text": "Left ventricular dilation",
+        "isCorrect": false,
+        "rationale": "Wrong: The primary load is on the right ventricle from pulmonary hypertension; left-sided dilation is not the expected early change."
+      },
+      {
+        "text": "Biventricular atrophy",
+        "isCorrect": false,
+        "rationale": "Wrong: Atrophy is not an adaptive response to increased afterload; hypertrophy is."
+      },
+      {
+        "text": "Right ventricular thinning",
+        "isCorrect": false,
+        "rationale": "Wrong: Thinning would indicate failure and dilation, not the early concentric hypertrophy described."
+      }
+    ]
+  },
+  {
+    "question": "Which change in erythrocyte biochemistry shifts the hemoglobin-oxygen dissociation curve to the right at altitude?",
     "difficulty_order": "1st",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
     "options": [
       {
-        "text": "Acetazolamide",
+        "text": "Increased 2,3-DPG concentration",
         "isCorrect": true,
-        "rationale": "Correct: Acetazolamide inhibits carbonic anhydrase in PCT causing HCO3- loss and metabolic acidosis that stimulates ventilation; would be incorrect if a different diuretic were used."
+        "rationale": "Correct: The material states 2,3-DPG rises, decreasing O2 affinity and shifting the curve right to enhance tissue unloading."
       },
       {
-        "text": "Furosemide",
+        "text": "Decreased 2,3-DPG concentration",
         "isCorrect": false,
-        "rationale": "Wrong: furosemide is a loop diuretic causing volume loss and alkalosis risk, not the CA inhibition metabolic acidosis seen with acetazolamide."
+        "rationale": "Wrong: A decrease would shift the curve left and increase O2 affinity, opposite to the described adaptation."
       },
       {
-        "text": "Hydrochlorothiazide",
+        "text": "Decreased hemoglobin synthesis",
         "isCorrect": false,
-        "rationale": "Wrong: thiazides cause metabolic alkalosis via aldosterone-mediated K+ loss; would be correct only if it inhibited CA."
+        "rationale": "Wrong: Hemoglobin synthesis increases over time via EPO-driven erythropoiesis; decreased synthesis is incorrect."
       },
       {
-        "text": "Spironolactone",
+        "text": "Increased fetal hemoglobin",
         "isCorrect": false,
-        "rationale": "Wrong: spironolactone is K-sparing and can cause mild acidosis but does not inhibit carbonic anhydrase in PCT; would be correct only with CA activity."
+        "rationale": "Wrong: Fetal hemoglobin is not described as an altitude adaptation; its higher affinity would shift the curve left."
       },
       {
-        "text": "Mannitol",
+        "text": "Increased methemoglobin formation",
         "isCorrect": false,
-        "rationale": "Wrong: mannitol is an osmotic diuretic acting throughout nephron and does not produce the CA-inhibition metabolic acidosis used for altitude prophylaxis."
+        "rationale": "Wrong: Methemoglobin impairs O2 delivery and is not the adaptive mechanism discussed; it would not be a beneficial right shift."
       }
     ]
   },
   {
-    "question": "Which cardiovascular parameter typically decreases during moderate dynamic exercise because of widespread skeletal muscle vasodilation?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Understand the most affected parameters of cardiovascular system to exercise (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Total peripheral resistance",
-        "isCorrect": true,
-        "rationale": "Correct: Exercise-induced metabolite-mediated vasodilation in skeletal muscle markedly lowers TPR; would be reversed if vasoconstriction predominated."
-      },
-      {
-        "text": "Cardiac output",
-        "isCorrect": false,
-        "rationale": "Wrong: cardiac output increases during exercise; would be correct only in heart failure limiting CO rise."
-      },
-      {
-        "text": "Stroke volume",
-        "isCorrect": false,
-        "rationale": "Wrong: stroke volume increases with exercise due to increased venous return; would decrease only with severe hypovolemia."
-      },
-      {
-        "text": "Systolic blood pressure",
-        "isCorrect": false,
-        "rationale": "Wrong: systolic pressure rises with increased SV; would fall only with impaired contractility."
-      },
-      {
-        "text": "Arteriovenous O2 difference",
-        "isCorrect": false,
-        "rationale": "Wrong: a-v O2 difference increases during exercise due to greater tissue extraction; would decrease only with reduced extraction."
-      }
-    ]
-  },
-  {
-    "question": "During moderate exercise at sea level which of the following arterial blood gas values is expected to remain essentially unchanged?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Understand the integral response for exercise in the respiratory system (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "PaO2",
-        "isCorrect": true,
-        "rationale": "Correct: Moderate exercise maintains arterial PaO2 near baseline despite increased O2 consumption; would change only with severe pulmonary limitation."
-      },
-      {
-        "text": "Mixed venous PO2",
-        "isCorrect": false,
-        "rationale": "Wrong: venous PO2 decreases during exercise due to increased extraction; would be unchanged only with no change in tissue O2 use."
-      },
-      {
-        "text": "Mixed venous PCO2",
-        "isCorrect": false,
-        "rationale": "Wrong: venous PCO2 increases with exercise from greater CO2 production; would be unchanged only with no metabolic increase."
-      },
-      {
-        "text": "Physiologic dead space",
-        "isCorrect": false,
-        "rationale": "Wrong: physiologic dead space decreases during exercise as previously underperfused alveoli open; would increase only with ventilation-perfusion mismatch."
-      },
-      {
-        "text": "Arterial pH during strenuous exercise",
-        "isCorrect": false,
-        "rationale": "Wrong: strenuous exercise can lower arterial pH from lactic acidosis; would be unchanged only with moderate intensity."
-      }
-    ]
-  },
-  {
-    "question": "Which mechanism primarily redirects blood flow to exercising skeletal muscle despite increased sympathetic activity?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Understand the most affected parameters of cardiovascular system to exercise (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Local metabolite vasodilation",
-        "isCorrect": true,
-        "rationale": "Correct: Metabolites (adenosine, lactate, K+, CO2, H+) locally inhibit α1-mediated vasoconstriction causing vasodilation and blood redistribution to muscle."
-      },
-      {
-        "text": "Increased parasympathetic tone",
-        "isCorrect": false,
-        "rationale": "Wrong: parasympathetic activity decreases during exercise; increased parasympathetic tone would reduce HR and not redirect flow."
-      },
-      {
-        "text": "Coronary artery constriction",
-        "isCorrect": false,
-        "rationale": "Wrong: coronary flow increases via local metabolites; constriction would impair myocardial perfusion and be maladaptive."
-      },
-      {
-        "text": "Renal autoregulatory vasodilation",
-        "isCorrect": false,
-        "rationale": "Wrong: renal vasoconstriction occurs during exercise to preserve blood pressure; dilation would not favor muscle perfusion."
-      },
-      {
-        "text": "Skin vasoconstriction only",
-        "isCorrect": false,
-        "rationale": "Wrong: skin flow initially constricts then later dilates for thermoregulation; skin changes alone do not explain muscle hyperemia."
-      }
-    ]
-  },
-  {
-    "question": "A healthy runner begins moderate exercise. Which change in pulse pressure is most likely and why?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Understand the most affected parameters of cardiovascular system to exercise (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Pulse pressure increases",
-        "isCorrect": true,
-        "rationale": "Correct: Increased stroke volume raises systolic pressure while diastolic remains similar, widening pulse pressure during exercise."
-      },
-      {
-        "text": "Pulse pressure decreases",
-        "isCorrect": false,
-        "rationale": "Wrong: decreased pulse pressure would occur with reduced stroke volume or severe vasodilation without SV rise; not typical in moderate exercise."
-      },
-      {
-        "text": "Pulse pressure unchanged",
-        "isCorrect": false,
-        "rationale": "Wrong: pulse pressure usually changes due to increased SV; unchanged would imply no cardiac output change."
-      },
-      {
-        "text": "Pulse pressure becomes negative",
-        "isCorrect": false,
-        "rationale": "Wrong: negative pulse pressure is physiologically impossible; would indicate measurement error."
-      },
-      {
-        "text": "Pulse pressure varies with respiration only",
-        "isCorrect": false,
-        "rationale": "Wrong: respiratory variation affects pressures but exercise-induced pulse pressure change is driven by SV increase, not respiration alone."
-      }
-    ]
-  },
-  {
-    "question": "Which physiologic effect of chronic high-altitude exposure explains the development of right ventricular hypertrophy over weeks?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Pulmonary hypertension from hypoxic vasoconstriction",
-        "isCorrect": true,
-        "rationale": "Correct: Generalized hypoxic pulmonary vasoconstriction raises pulmonary arterial pressure, increasing RV afterload and causing concentric hypertrophy."
-      },
-      {
-        "text": "Systemic hypertension from polycythemia",
-        "isCorrect": false,
-        "rationale": "Wrong: polycythemia increases viscosity but systemic hypertension is not the primary driver of RV hypertrophy; pulmonary pressures are key."
-      },
-      {
-        "text": "Left ventricular volume overload",
-        "isCorrect": false,
-        "rationale": "Wrong: LV volume overload causes LV eccentric hypertrophy, not RV hypertrophy; would be correct only with left-sided pathology."
-      },
-      {
-        "text": "Coronary artery stenosis",
-        "isCorrect": false,
-        "rationale": "Wrong: coronary stenosis impairs myocardial perfusion but does not chronically increase RV afterload; would not explain RV hypertrophy here."
-      },
-      {
-        "text": "Decreased venous return",
-        "isCorrect": false,
-        "rationale": "Wrong: decreased venous return would reduce preload and not cause pressure-overload hypertrophy of the RV."
-      }
-    ]
-  },
-  {
-    "question": "A mountaineer at very high altitude develops headache, ataxia, and confusion. Which pathophysiologic change best explains these neurologic findings?",
+    "question": "A mountaineer with severe headache, ataxia, and confusion after rapid ascent likely has high-altitude cerebral edema. Which immediate management step is recommended in the material?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
     "options": [
       {
-        "text": "Cerebral vasodilation with capillary leakage",
+        "text": "Immediate descent and supplemental oxygen",
         "isCorrect": true,
-        "rationale": "Correct: Severe hypoxia causes cerebral vasodilation increasing capillary hydrostatic pressure and filtration leading to high-altitude cerebral edema and neurologic symptoms."
+        "rationale": "Correct: The slides state descent and oxygen are primary treatments for HACE; dexamethasone is adjunctive."
       },
       {
-        "text": "Cerebral vasoconstriction from hypocapnia",
+        "text": "Administer acetazolamide and continue ascent",
         "isCorrect": false,
-        "rationale": "Wrong: hypocapnia causes vasoconstriction which would reduce intracranial pressure and not produce edema; would be correct only if symptoms were from ischemia due to low CO2."
+        "rationale": "Wrong: Acetazolamide is preventive and helps acclimatization; continuing ascent would worsen HACE and is contraindicated."
       },
       {
-        "text": "Systemic hypotension causing ischemia",
+        "text": "Give high-dose loop diuretic and rest",
         "isCorrect": false,
-        "rationale": "Wrong: systemic hypotension can cause global ischemia but high-altitude neurologic signs are due to vasogenic edema from hypoxia-induced vasodilation."
+        "rationale": "Wrong: Loop diuretics are not recommended for HACE; diuresis is not the primary therapy and would not replace descent/oxygen."
       },
       {
-        "text": "Intracerebral hemorrhage from polycythemia",
+        "text": "Immediate intubation without descent",
         "isCorrect": false,
-        "rationale": "Wrong: polycythemia increases viscosity and bleeding risk rarely, but acute HACE is primarily vasogenic edema; hemorrhage would require vessel rupture evidence."
+        "rationale": "Wrong: Airway support may be needed in severe cases, but descent and oxygen are the first-line steps; intubation alone without descent is not the recommended immediate action."
       },
       {
-        "text": "Seizure from electrolyte loss",
+        "text": "Administer nifedipine and observe",
         "isCorrect": false,
-        "rationale": "Wrong: seizures can cause confusion but the constellation with headache and ataxia at altitude points to cerebral edema rather than isolated electrolyte disturbance."
+        "rationale": "Wrong: Nifedipine is used for HAPE to reduce pulmonary pressures; it is not the primary treatment for HACE and observation alone is insufficient."
       }
     ]
   },
   {
-    "question": "A hiker with progressive dyspnea at rest at high altitude produces pink frothy sputum. Which mechanism best explains this presentation?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "question": "Which mechanism explains why acetazolamide speeds acclimatization to high altitude?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
+    "options": [
+      {
+        "text": "Induces metabolic acidosis by HCO3- loss",
+        "isCorrect": true,
+        "rationale": "Correct: Carbonic anhydrase inhibition in PCT reduces HCO3- reabsorption, producing metabolic acidosis that stimulates ventilation and counters respiratory alkalosis."
+      },
+      {
+        "text": "Directly increases EPO secretion",
+        "isCorrect": false,
+        "rationale": "Wrong: Acetazolamide does not increase EPO; erythropoietin rise is driven by hypoxia, not CA inhibition."
+      },
+      {
+        "text": "Blocks pulmonary vasoconstriction",
+        "isCorrect": false,
+        "rationale": "Wrong: Acetazolamide's primary effect is renal bicarbonate loss and diuresis; it does not directly block hypoxic pulmonary vasoconstriction."
+      },
+      {
+        "text": "Raises PaCO2 to stimulate chemoreceptors",
+        "isCorrect": false,
+        "rationale": "Wrong: Acetazolamide does not raise PaCO2; it induces metabolic acidosis which stimulates ventilation despite low PaCO2."
+      },
+      {
+        "text": "Increases 2,3-DPG production in RBCs",
+        "isCorrect": false,
+        "rationale": "Wrong: 2,3-DPG changes are erythrocyte metabolic adaptations to hypoxia, not a direct effect of acetazolamide."
+      }
+    ]
+  },
+  {
+    "question": "A patient with high-altitude pulmonary edema has pink frothy sputum and dyspnea. Which pathophysiologic process described explains the edema formation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
     "options": [
       {
         "text": "Heterogeneous hypoxic vasoconstriction causing capillary stress failure",
         "isCorrect": true,
-        "rationale": "Correct: Uneven pulmonary vasoconstriction leads to overperfusion of some capillaries, stress failure, and noncardiogenic pulmonary edema (HAPE) producing pink frothy sputum."
+        "rationale": "Correct: Uneven vasoconstriction leads to overperfusion of some capillaries and stress failure producing noncardiogenic pulmonary edema, as stated."
       },
       {
-        "text": "Left heart failure with pulmonary venous hypertension",
+        "text": "Left ventricular systolic failure causing hydrostatic edema",
         "isCorrect": false,
-        "rationale": "Wrong: cardiogenic edema from LV failure causes similar sputum but at altitude HAPE is due to pulmonary arterial hypertension without primary LV dysfunction; would be correct if LV dysfunction were documented."
+        "rationale": "Wrong: HAPE is noncardiogenic and due to pulmonary vascular factors, not left ventricular failure."
       },
       {
-        "text": "Bronchial infection causing hemorrhagic sputum",
+        "text": "Systemic vasodilation increasing pulmonary capillary pressure",
         "isCorrect": false,
-        "rationale": "Wrong: infection can produce bloody sputum but the acute dyspnea and altitude context favor noncardiogenic edema; infection would show fever and leukocytosis."
+        "rationale": "Wrong: Systemic vasodilation would not selectively raise pulmonary capillary pressures; hypoxic pulmonary vasoconstriction is the driver."
       },
       {
-        "text": "Pulmonary embolism causing infarction",
+        "text": "Increased plasma oncotic pressure forcing fluid into alveoli",
         "isCorrect": false,
-        "rationale": "Wrong: PE can cause hemoptysis but typically presents with pleuritic pain and focal infarct signs; HAPE is more consistent with diffuse edema."
+        "rationale": "Wrong: Increased oncotic pressure would retain fluid intravascularly; decreased oncotic pressure would favor edema, but that is not the mechanism here."
       },
       {
-        "text": "Upper airway bleeding from mucosal dryness",
+        "text": "Alveolar epithelial necrosis from hypoxia",
         "isCorrect": false,
-        "rationale": "Wrong: mucosal bleeding yields blood-tinged sputum but not the pink frothy pulmonary edema fluid seen in HAPE; would be correct with visible oropharyngeal bleeding."
+        "rationale": "Wrong: While severe hypoxia can injure epithelium, HAPE pathophysiology emphasizes vascular stress failure rather than primary epithelial necrosis."
       }
     ]
   },
   {
-    "question": "A patient with acute mountain sickness is given acetazolamide. Which immediate physiologic effect explains improved ventilation?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Induced metabolic acidosis stimulating central chemoreceptors",
-        "isCorrect": true,
-        "rationale": "Correct: Acetazolamide causes bicarbonate loss producing metabolic acidosis; central chemoreceptors interpret this as increased CO2, stimulating ventilation and improving oxygenation."
-      },
-      {
-        "text": "Direct bronchodilation of small airways",
-        "isCorrect": false,
-        "rationale": "Wrong: acetazolamide does not bronchodilate; bronchodilation would improve ventilation but is not the drug's mechanism."
-      },
-      {
-        "text": "Increased hemoglobin synthesis within hours",
-        "isCorrect": false,
-        "rationale": "Wrong: erythropoiesis is delayed over days to weeks; immediate ventilation effects are metabolic, not hematologic."
-      },
-      {
-        "text": "Peripheral chemoreceptor desensitization",
-        "isCorrect": false,
-        "rationale": "Wrong: desensitization would reduce ventilation; acetazolamide enhances ventilation via metabolic acidosis, not by altering peripheral chemoreceptor sensitivity."
-      },
-      {
-        "text": "Inhibition of pulmonary vasoconstriction",
-        "isCorrect": false,
-        "rationale": "Wrong: while some drugs reduce pulmonary vasoconstriction, acetazolamide's primary acute benefit is metabolic acidosis-driven ventilation increase; vasodilation is not its main immediate action."
-      }
-    ]
-  },
-  {
-    "question": "Which change in venous blood gases is expected during moderate exercise and explains increased tissue O2 extraction?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Understand the integral response for exercise in the respiratory system (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Decreased PvO2",
-        "isCorrect": true,
-        "rationale": "Correct: Increased tissue O2 consumption lowers mixed venous PO2 during exercise, reflecting greater extraction; would be unchanged only with no metabolic increase."
-      },
-      {
-        "text": "Increased PvO2",
-        "isCorrect": false,
-        "rationale": "Wrong: PvO2 rises only if tissue extraction falls or cardiac output massively increases without increased O2 use; not typical in exercise."
-      },
-      {
-        "text": "Decreased PaO2",
-        "isCorrect": false,
-        "rationale": "Wrong: arterial PaO2 remains essentially unchanged in moderate exercise; a decrease would indicate pulmonary limitation."
-      },
-      {
-        "text": "Decreased PaCO2",
-        "isCorrect": false,
-        "rationale": "Wrong: arterial PaCO2 usually remains stable in moderate exercise; decreases occur with hyperventilation beyond metabolic needs."
-      },
-      {
-        "text": "Increased arterial lactate only",
-        "isCorrect": false,
-        "rationale": "Wrong: lactate may rise with strenuous exercise but the key venous gas change for extraction is decreased PvO2; lactate alone doesn't explain O2 extraction."
-      }
-    ]
-  },
-  {
-    "question": "A patient ascending rapidly to high altitude develops respiratory alkalosis that suppresses ventilation. Which physiologic rationale explains why acetazolamide counteracts this suppression?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Metabolic acidosis removes central inhibition",
-        "isCorrect": true,
-        "rationale": "Correct: Acetazolamide-induced metabolic acidosis offsets respiratory alkalosis, preventing central chemoreceptor-mediated inhibition of ventilation and thus sustaining hyperventilation."
-      },
-      {
-        "text": "Peripheral chemoreceptor blockade",
-        "isCorrect": false,
-        "rationale": "Wrong: acetazolamide does not block peripheral chemoreceptors; blockade would reduce hypoxic ventilatory drive, worsening hypoxemia."
-      },
-      {
-        "text": "Direct stimulation of carotid bodies",
-        "isCorrect": false,
-        "rationale": "Wrong: acetazolamide acts via acid-base changes, not direct carotid body stimulation; direct stimulation would increase ventilation but is not the drug's mechanism."
-      },
-      {
-        "text": "Increased PaCO2 retention",
-        "isCorrect": false,
-        "rationale": "Wrong: acetazolamide does not retain CO2; increased PaCO2 would reduce alkalosis but occurs via hypoventilation, not desired here."
-      },
-      {
-        "text": "Enhanced renal bicarbonate reabsorption",
-        "isCorrect": false,
-        "rationale": "Wrong: acetazolamide decreases bicarbonate reabsorption causing acidosis; increased reabsorption would worsen alkalosis and suppress ventilation."
-      }
-    ]
-  },
-  {
-    "question": "Which immediate cardiovascular adjustment increases venous return during exercise and thereby supports increased stroke volume?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Understand the most affected parameters of cardiovascular system to exercise (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Muscle pump activity",
-        "isCorrect": true,
-        "rationale": "Correct: Rhythmic muscle contractions compress veins, increasing venous return and preload, which raises stroke volume during exercise."
-      },
-      {
-        "text": "Decreased heart rate",
-        "isCorrect": false,
-        "rationale": "Wrong: heart rate increases during exercise; decreased HR would reduce cardiac output and venous return contribution to SV."
-      },
-      {
-        "text": "Systemic vasodilation in kidneys",
-        "isCorrect": false,
-        "rationale": "Wrong: renal vasoconstriction occurs to redistribute blood; renal vasodilation would not increase venous return to the heart."
-      },
-      {
-        "text": "Reduced blood volume",
-        "isCorrect": false,
-        "rationale": "Wrong: reduced blood volume lowers venous return; only increased central blood volume or venous tone raises return."
-      },
-      {
-        "text": "Increased pulmonary vascular resistance",
-        "isCorrect": false,
-        "rationale": "Wrong: increased pulmonary resistance impedes forward flow and would not augment systemic venous return; it may reduce left-sided preload."
-      }
-    ]
-  },
-  {
-    "question": "A well-trained runner at sea level performs a half-marathon at moderate intensity. Which of the following is most likely increased compared with rest?",
+    "question": "Which physiologic change during moderate exercise at sea level is most likely to increase markedly compared with rest?",
     "difficulty_order": "1st",
-    "cited_learning_objective": "Understand the integral response for exercise in the respiratory system (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Understand the most affected parameters of cardiovascular system to exercise",
     "options": [
       {
-        "text": "Venous PCO2",
+        "text": "Cardiac output increase",
         "isCorrect": true,
-        "rationale": "Correct: Exercise increases CO2 production, raising mixed venous PCO2; arterial PCO2 remains near baseline in moderate exercise."
+        "rationale": "Correct: Exercise markedly increases cardiac output via higher HR and SV, as summarized in the slides."
       },
       {
-        "text": "Physiologic dead space",
+        "text": "Total peripheral resistance increase",
         "isCorrect": false,
-        "rationale": "Wrong: physiologic dead space decreases during exercise as previously underperfused alveoli are recruited; would increase only with V/Q mismatch."
+        "rationale": "Wrong: TPR decreases due to vasodilation in exercising skeletal muscle; an increase would be incorrect."
+      },
+      {
+        "text": "Arterial PO2 increase",
+        "isCorrect": false,
+        "rationale": "Wrong: Arterial PO2 remains essentially unchanged during moderate exercise at sea level."
+      },
+      {
+        "text": "Physiologic dead space increase",
+        "isCorrect": false,
+        "rationale": "Wrong: Physiologic dead space decreases during exercise because previously underperfused alveoli are recruited."
+      },
+      {
+        "text": "Venous PO2 increase",
+        "isCorrect": false,
+        "rationale": "Wrong: Venous PO2 decreases because tissues extract more oxygen during exercise."
+      }
+    ]
+  },
+  {
+    "question": "During moderate exercise which pattern best describes arterial blood gas changes compared with rest?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the integral response for exercise in the respiratory system",
+    "options": [
+      {
+        "text": "PaO2 unchanged; PaCO2 unchanged",
+        "isCorrect": true,
+        "rationale": "Correct: The slides state that PaO2 and PaCO2 do not change during moderate exercise despite increased metabolism."
+      },
+      {
+        "text": "PaO2 decreased; PaCO2 increased",
+        "isCorrect": false,
+        "rationale": "Wrong: Venous gases change, but arterial PaO2 and PaCO2 remain stable in moderate exercise; this pattern would indicate inadequate ventilation."
+      },
+      {
+        "text": "PaO2 increased; PaCO2 decreased",
+        "isCorrect": false,
+        "rationale": "Wrong: Arterial values typically remain near baseline; increases in PaO2 and decreases in PaCO2 are not the expected moderate-exercise pattern."
+      },
+      {
+        "text": "PaO2 decreased; PaCO2 decreased",
+        "isCorrect": false,
+        "rationale": "Wrong: A simultaneous arterial decrease in both gases is not the described response; PaO2 is maintained."
+      },
+      {
+        "text": "PaO2 increased; PaCO2 increased",
+        "isCorrect": false,
+        "rationale": "Wrong: Both increasing would be physiologically inconsistent with increased ventilation and tissue extraction during exercise."
+      }
+    ]
+  },
+  {
+    "question": "Which local factor is the primary driver of vasodilation in exercising skeletal muscle according to the material?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the most affected parameters of cardiovascular system to exercise",
+    "options": [
+      {
+        "text": "Metabolite accumulation (adenosine, lactate, K+)",
+        "isCorrect": true,
+        "rationale": "Correct: The slides emphasize metabolites like adenosine, lactate, and K+ as primary mediators that inhibit α1 receptors and cause vasodilation."
+      },
+      {
+        "text": "Increased sympathetic α1 tone",
+        "isCorrect": false,
+        "rationale": "Wrong: Sympathetic α1 tone causes vasoconstriction; exercising muscle vasodilation occurs despite sympathetic activity due to local metabolites."
+      },
+      {
+        "text": "Decreased endothelial NO release",
+        "isCorrect": false,
+        "rationale": "Wrong: NO release increases vasodilation; a decrease would oppose dilation."
+      },
+      {
+        "text": "Local hypothermia",
+        "isCorrect": false,
+        "rationale": "Wrong: Hypothermia causes vasoconstriction; thermoregulatory vasodilation occurs later but is not the primary exercising-muscle driver."
+      },
+      {
+        "text": "Reduced circulating epinephrine",
+        "isCorrect": false,
+        "rationale": "Wrong: Circulating epinephrine typically rises and can cause β2-mediated dilation; reduced epinephrine would not explain exercise vasodilation."
+      }
+    ]
+  },
+  {
+    "question": "A well-trained runner at moderate intensity shows which change in arterio-venous oxygen difference compared with rest?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the most affected parameters of cardiovascular system to exercise",
+    "options": [
+      {
+        "text": "Arterio-venous O2 difference increases",
+        "isCorrect": true,
+        "rationale": "Correct: Increased tissue O2 extraction during exercise raises the A-V O2 difference, as noted in the slides."
+      },
+      {
+        "text": "Arterio-venous O2 difference decreases",
+        "isCorrect": false,
+        "rationale": "Wrong: Decreased difference would imply less extraction; exercise increases extraction and thus the difference."
+      },
+      {
+        "text": "Arterio-venous O2 difference unchanged",
+        "isCorrect": false,
+        "rationale": "Wrong: Exercise typically increases extraction; unchanged would be unexpected during moderate exertion."
+      },
+      {
+        "text": "Arterio-venous CO2 difference decreases",
+        "isCorrect": false,
+        "rationale": "Wrong: The question asks about O2 difference; CO2 differences are not the measured parameter here and would not answer the stem."
+      },
+      {
+        "text": "Arterio-venous O2 difference becomes negative",
+        "isCorrect": false,
+        "rationale": "Wrong: A negative difference is physiologically impossible; tissues always have lower venous O2 than arterial O2 under normal extraction."
+      }
+    ]
+  },
+  {
+    "question": "Which change in physiologic dead space occurs during exercise and why, per the slides?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the integral response for exercise in the respiratory system",
+    "options": [
+      {
+        "text": "Physiologic dead space decreases due to alveolar recruitment",
+        "isCorrect": true,
+        "rationale": "Correct: Exercise recruits previously underperfused alveoli, reducing physiologic dead space as stated."
+      },
+      {
+        "text": "Physiologic dead space increases due to hyperventilation",
+        "isCorrect": false,
+        "rationale": "Wrong: Hyperventilation alone would not increase physiologic dead space; recruitment reduces it during exercise."
+      },
+      {
+        "text": "Physiologic dead space unchanged",
+        "isCorrect": false,
+        "rationale": "Wrong: The material specifies a decrease, not no change."
+      },
+      {
+        "text": "Anatomic dead space decreases from bronchodilation",
+        "isCorrect": false,
+        "rationale": "Wrong: Anatomic dead space is structural and does not decrease with bronchodilation; the slides refer to physiologic dead space."
+      },
+      {
+        "text": "Physiologic dead space increases due to V/Q mismatch",
+        "isCorrect": false,
+        "rationale": "Wrong: Exercise tends to improve V/Q matching and decrease physiologic dead space rather than increase it."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best describes arterial pH during moderate versus strenuous exercise according to the material?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the integral response for exercise in the respiratory system",
+    "options": [
+      {
+        "text": "No change in moderate; decrease in strenuous",
+        "isCorrect": true,
+        "rationale": "Correct: Slides state arterial pH is unchanged in moderate exercise but falls (acidosis) during strenuous exercise due to lactic acid."
+      },
+      {
+        "text": "Increase in moderate; no change in strenuous",
+        "isCorrect": false,
+        "rationale": "Wrong: pH does not increase in moderate exercise; the expected pattern is unchanged then decreased with intensity."
+      },
+      {
+        "text": "Decrease in moderate; increase in strenuous",
+        "isCorrect": false,
+        "rationale": "Wrong: This reverses the described pattern; moderate exercise does not typically lower arterial pH."
+      },
+      {
+        "text": "Increase in both moderate and strenuous",
+        "isCorrect": false,
+        "rationale": "Wrong: pH increases are not described; strenuous exercise causes acidosis, not alkalosis."
+      },
+      {
+        "text": "No change in both moderate and strenuous",
+        "isCorrect": false,
+        "rationale": "Wrong: Strenuous exercise produces metabolic acidosis and a pH decrease; thus no change in both is incorrect."
+      }
+    ]
+  },
+  {
+    "question": "A patient hyperventilates at altitude producing respiratory alkalosis. Which renal response over days helps normalize pH as described?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
+    "options": [
+      {
+        "text": "Renal bicarbonate excretion lowering HCO3-",
+        "isCorrect": true,
+        "rationale": "Correct: Kidney excretes bicarbonate over days to compensate for respiratory alkalosis, lowering serum HCO3- as shown."
+      },
+      {
+        "text": "Renal bicarbonate reabsorption increasing HCO3-",
+        "isCorrect": false,
+        "rationale": "Wrong: Increasing reabsorption would worsen alkalosis; the compensatory response is to excrete HCO3-."
+      },
+      {
+        "text": "Renal ammonium retention raising pH",
+        "isCorrect": false,
+        "rationale": "Wrong: Ammonium excretion helps excrete acid; retention raising pH is not the compensatory mechanism described."
+      },
+      {
+        "text": "Immediate renal H+ secretion within minutes",
+        "isCorrect": false,
+        "rationale": "Wrong: Renal compensation takes days; immediate changes are respiratory, not renal."
+      },
+      {
+        "text": "Increased renal EPO production",
+        "isCorrect": false,
+        "rationale": "Wrong: EPO production affects erythropoiesis, not acute acid-base compensation by the kidney."
+      }
+    ]
+  },
+  {
+    "question": "Which cerebral blood flow response occurs when PaCO2 falls due to hyperventilation at altitude, and how can severe hypoxia modify that effect?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
+    "options": [
+      {
+        "text": "Cerebral vasoconstriction from low PaCO2; severe hypoxia overrides and dilates",
+        "isCorrect": true,
+        "rationale": "Correct: Low PaCO2 causes vasoconstriction and reduced CBF, but marked hypoxia dilates cerebral vessels and can cause HACE despite low CO2."
+      },
+      {
+        "text": "Cerebral vasodilation from low PaCO2; severe hypoxia causes further constriction",
+        "isCorrect": false,
+        "rationale": "Wrong: Low PaCO2 causes constriction, not dilation; hypoxia causes dilation, not constriction."
+      },
+      {
+        "text": "No change in cerebral blood flow with PaCO2 fall",
+        "isCorrect": false,
+        "rationale": "Wrong: PaCO2 is a major regulator of cerebral blood flow; a fall normally reduces flow."
+      },
+      {
+        "text": "Cerebral vasoconstriction from low PaCO2; hypoxia has no effect",
+        "isCorrect": false,
+        "rationale": "Wrong: Severe hypoxia does affect cerebral vessels and can override CO2 effects, leading to dilation."
+      },
+      {
+        "text": "Cerebral vasodilation from low PaCO2; hypoxia causes edema without flow change",
+        "isCorrect": false,
+        "rationale": "Wrong: Low PaCO2 does not dilate; hypoxia-induced dilation increases capillary pressure and contributes to edema."
+      }
+    ]
+  },
+  {
+    "question": "Which pharmacologic agent listed is specifically noted as useful for preventing acute mountain sickness by stimulating ventilation via metabolic acidosis?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
+    "options": [
+      {
+        "text": "Acetazolamide (carbonic anhydrase inhibitor)",
+        "isCorrect": true,
+        "rationale": "Correct: Acetazolamide inhibits carbonic anhydrase in the PCT, causing bicarbonate loss and metabolic acidosis that stimulates ventilation and aids acclimatization."
+      },
+      {
+        "text": "Nifedipine (calcium channel blocker)",
+        "isCorrect": false,
+        "rationale": "Wrong: Nifedipine is used for HAPE to reduce pulmonary pressures but does not induce metabolic acidosis to stimulate ventilation."
+      },
+      {
+        "text": "Sildenafil (PDE-5 inhibitor)",
+        "isCorrect": false,
+        "rationale": "Wrong: Sildenafil can lower pulmonary pressures in HAPE but is not the preventive agent that induces metabolic acidosis."
+      },
+      {
+        "text": "Furosemide (loop diuretic)",
+        "isCorrect": false,
+        "rationale": "Wrong: Loop diuretics are not recommended for AMS prevention and do not stimulate ventilation via metabolic acidosis."
+      },
+      {
+        "text": "Dexamethasone (corticosteroid)",
+        "isCorrect": false,
+        "rationale": "Wrong: Dexamethasone treats HACE and reduces cerebral edema but does not work by inducing metabolic acidosis to stimulate ventilation."
+      }
+    ]
+  },
+  {
+    "question": "A patient exercises strenuously and develops lactic acidosis. Which shift of the hemoglobin-oxygen dissociation curve is expected and why?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the integral response for exercise in the respiratory system",
+    "options": [
+      {
+        "text": "Right shift due to decreased pH and increased temperature",
+        "isCorrect": true,
+        "rationale": "Correct: Exercise lowers pH and raises temperature, both factors that shift the curve right and promote O2 unloading to tissues."
+      },
+      {
+        "text": "Left shift due to increased pH and decreased temperature",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased pH and lower temperature would increase O2 affinity and shift left; exercise produces the opposite changes."
+      },
+      {
+        "text": "No shift because arterial O2 is unchanged",
+        "isCorrect": false,
+        "rationale": "Wrong: Even if arterial PO2 is stable, local factors like pH and temperature change and shift the curve to facilitate unloading."
+      },
+      {
+        "text": "Right shift due to decreased 2,3-DPG",
+        "isCorrect": false,
+        "rationale": "Wrong: A decrease in 2,3-DPG would shift left; exercise and hypoxia increase 2,3-DPG, not decrease it."
+      },
+      {
+        "text": "Left shift due to increased hemoglobin concentration",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased Hb concentration affects content but not affinity; it does not cause a left shift in the dissociation curve."
+      }
+    ]
+  },
+  {
+    "question": "Which cardiovascular change during exercise explains why systolic blood pressure rises while diastolic pressure remains roughly unchanged?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the most affected parameters of cardiovascular system to exercise",
+    "options": [
+      {
+        "text": "Increased stroke volume with decreased TPR",
+        "isCorrect": true,
+        "rationale": "Correct: Higher SV raises systolic pressure while decreased total peripheral resistance (vasodilation) keeps diastolic pressure near baseline."
+      },
+      {
+        "text": "Decreased stroke volume with increased TPR",
+        "isCorrect": false,
+        "rationale": "Wrong: Decreased SV would not raise systolic pressure; TPR actually falls during exercise due to muscle vasodilation."
+      },
+      {
+        "text": "Increased heart rate with increased TPR",
+        "isCorrect": false,
+        "rationale": "Wrong: While HR increases, TPR decreases; increased TPR would raise diastolic pressure, which is not observed."
+      },
+      {
+        "text": "Decreased heart rate with decreased SV",
+        "isCorrect": false,
+        "rationale": "Wrong: Heart rate and stroke volume both increase during exercise; decreases would not explain systolic rise."
+      },
+      {
+        "text": "Increased venous compliance reducing preload",
+        "isCorrect": false,
+        "rationale": "Wrong: Venous return and preload increase during exercise, supporting higher SV; increased venous compliance reducing preload is incorrect."
+      }
+    ]
+  },
+  {
+    "question": "A patient hyperventilates at altitude producing PaCO2 of 30 mmHg and arterial pH 7.50. Using the acute compensation rule, what approximate HCO3- would you predict?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
+    "options": [
+      {
+        "text": "HCO3- ≈ 22 mEq/L",
+        "isCorrect": true,
+        "rationale": "Correct: Acute ΔHCO3- = ΔCO2×0.2; ΔCO2 = 40-30 =10 → 10×0.2=2; 24-2=22 mEq/L, matching the slide example."
+      },
+      {
+        "text": "HCO3- ≈ 19 mEq/L",
+        "isCorrect": false,
+        "rationale": "Wrong: 19 mEq/L corresponds to chronic compensation (ΔCO2×0.5); it would be correct only after days of renal adjustment."
+      },
+      {
+        "text": "HCO3- ≈ 24 mEq/L",
+        "isCorrect": false,
+        "rationale": "Wrong: 24 mEq/L is normal bicarbonate and would imply no compensation; acute respiratory alkalosis produces a small fall."
+      },
+      {
+        "text": "HCO3- ≈ 16 mEq/L",
+        "isCorrect": false,
+        "rationale": "Wrong: A fall to 16 mEq/L is much larger than predicted acute or chronic compensation and is inconsistent with the provided formula."
+      },
+      {
+        "text": "HCO3- ≈ 26 mEq/L",
+        "isCorrect": false,
+        "rationale": "Wrong: An increase to 26 mEq/L would worsen alkalosis; compensation lowers bicarbonate, not raises it."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best explains why arterial oxygen content can normalize within a month at high altitude despite low PaO2?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
+    "options": [
+      {
+        "text": "Polycythemia increases hemoglobin concentration",
+        "isCorrect": true,
+        "rationale": "Correct: Increased RBC mass raises Hb concentration and oxygen content despite low PaO2; this hematologic adaptation is described in the slides."
+      },
+      {
+        "text": "Persistent hyperventilation raises PaO2 to sea-level values",
+        "isCorrect": false,
+        "rationale": "Wrong: Hyperventilation lowers PaCO2 but does not restore PaO2 to sea-level values; oxygen content normalization is due to increased Hb."
+      },
+      {
+        "text": "2,3-DPG decrease improves loading in lungs",
+        "isCorrect": false,
+        "rationale": "Wrong: 2,3-DPG increases at altitude and reduces O2 affinity, which helps unloading but makes loading harder; a decrease would not explain normalized content."
+      },
+      {
+        "text": "Pulmonary vasodilation increases alveolar perfusion",
+        "isCorrect": false,
+        "rationale": "Wrong: Hypoxic pulmonary vasoconstriction, not vasodilation, predominates; vasodilation would not be the adaptive mechanism described."
+      },
+      {
+        "text": "Renal bicarbonate retention increases O2 carrying capacity",
+        "isCorrect": false,
+        "rationale": "Wrong: Bicarbonate handling affects acid-base balance, not oxygen-carrying capacity; this would not normalize arterial O2 content."
+      }
+    ]
+  },
+  {
+    "question": "Which feature distinguishes high-altitude pulmonary edema from cardiogenic pulmonary edema in the material's pathophysiology section?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
+    "options": [
+      {
+        "text": "Noncardiogenic edema from uneven hypoxic vasoconstriction",
+        "isCorrect": true,
+        "rationale": "Correct: HAPE is noncardiogenic and results from heterogeneous hypoxic vasoconstriction causing capillary stress failure, per the slides."
+      },
+      {
+        "text": "Left heart failure causing increased hydrostatic pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: That describes cardiogenic edema; HAPE is specifically noncardiogenic due to pulmonary vascular factors."
+      },
+      {
+        "text": "Primary alveolar infection causing exudate",
+        "isCorrect": false,
+        "rationale": "Wrong: Infection is not the mechanism of HAPE; the slides emphasize vascular stress failure, not infectious exudation."
+      },
+      {
+        "text": "Systemic hypoalbuminemia lowering oncotic pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: Hypoalbuminemia causes transudative edema but is not the mechanism for HAPE described."
+      },
+      {
+        "text": "Pulmonary embolism causing localized edema",
+        "isCorrect": false,
+        "rationale": "Wrong: Pulmonary embolism has different pathophysiology and is not the heterogeneous vasoconstriction mechanism described for HAPE."
+      }
+    ]
+  },
+  {
+    "question": "Which receptor-mediated effect predominates in resting skeletal muscle vascular tone according to the slides?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the most affected parameters of cardiovascular system to exercise",
+    "options": [
+      {
+        "text": "Sympathetic α1-mediated vasoconstriction",
+        "isCorrect": true,
+        "rationale": "Correct: At rest, sympathetic α1 tone predominates because norepinephrine from nerves is continuously released, producing vasoconstriction."
+      },
+      {
+        "text": "β2-mediated vasodilation from epinephrine",
+        "isCorrect": false,
+        "rationale": "Wrong: β2 dilation occurs with circulating epinephrine during stress, but at rest α1 constriction predominates."
+      },
+      {
+        "text": "Parasympathetic-mediated vasodilation",
+        "isCorrect": false,
+        "rationale": "Wrong: Parasympathetic influence on skeletal muscle vascular tone is minimal; sympathetic control dominates."
+      },
+      {
+        "text": "Local metabolite-mediated vasoconstriction",
+        "isCorrect": false,
+        "rationale": "Wrong: Local metabolites cause vasodilation during exercise, not vasoconstriction at rest."
+      },
+      {
+        "text": "Endothelin-mediated vasodilation",
+        "isCorrect": false,
+        "rationale": "Wrong: Endothelin is a vasoconstrictor, not a vasodilator, and is not described as the resting predominant mechanism."
+      }
+    ]
+  },
+  {
+    "question": "A patient at sea level begins moderate exercise. Which venous blood change is expected compared with rest?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the integral response for exercise in the respiratory system",
+    "options": [
+      {
+        "text": "Venous PO2 decreases",
+        "isCorrect": true,
+        "rationale": "Correct: Increased tissue O2 extraction lowers venous PO2 during exercise, as noted in the slides."
+      },
+      {
+        "text": "Venous PO2 increases",
+        "isCorrect": false,
+        "rationale": "Wrong: Venous PO2 falls because tissues extract more oxygen; an increase would be inconsistent with higher extraction."
+      },
+      {
+        "text": "Arterial PO2 decreases",
+        "isCorrect": false,
+        "rationale": "Wrong: Arterial PO2 remains essentially unchanged during moderate exercise; the change is in venous blood."
+      },
+      {
+        "text": "Venous PCO2 decreases",
+        "isCorrect": false,
+        "rationale": "Wrong: Venous PCO2 increases due to greater CO2 production by tissues; a decrease would be unexpected."
+      },
+      {
+        "text": "Arterial PCO2 increases",
+        "isCorrect": false,
+        "rationale": "Wrong: Arterial PCO2 remains near baseline in moderate exercise; increases would suggest hypoventilation."
+      }
+    ]
+  },
+  {
+    "question": "Which therapeutic agent is listed as useful for HACE in addition to descent and oxygen?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
+    "options": [
+      {
+        "text": "Dexamethasone",
+        "isCorrect": true,
+        "rationale": "Correct: The slides recommend dexamethasone (e.g., 8 mg then 4 mg q6h) for HACE alongside descent and oxygen."
+      },
+      {
+        "text": "Acetazolamide",
+        "isCorrect": false,
+        "rationale": "Wrong: Acetazolamide is preventive and helpful for acclimatization but dexamethasone is the specific treatment for HACE."
+      },
+      {
+        "text": "Nifedipine",
+        "isCorrect": false,
+        "rationale": "Wrong: Nifedipine is used for HAPE to reduce pulmonary pressures, not the primary agent for HACE."
+      },
+      {
+        "text": "Furosemide",
+        "isCorrect": false,
+        "rationale": "Wrong: Loop diuretics are not the recommended treatment for HACE; dexamethasone is preferred."
+      },
+      {
+        "text": "Sildenafil",
+        "isCorrect": false,
+        "rationale": "Wrong: Sildenafil may help pulmonary hypertension in HAPE but is not the recommended therapy for HACE."
+      }
+    ]
+  },
+  {
+    "question": "Which physiologic effect of acetazolamide contributes to reduced cerebral edema risk at altitude?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
+    "options": [
+      {
+        "text": "Diuresis reducing intracranial fluid volume",
+        "isCorrect": true,
+        "rationale": "Correct: Acetazolamide causes mild diuresis via decreased Na+ reabsorption, which can reduce cerebral edema risk as noted."
+      },
+      {
+        "text": "Direct cerebral vasoconstriction lowering blood flow",
+        "isCorrect": false,
+        "rationale": "Wrong: Acetazolamide does not directly constrict cerebral vessels; its benefit is metabolic acidosis and diuresis."
+      },
+      {
+        "text": "Inhibition of EPO reducing RBC mass",
+        "isCorrect": false,
+        "rationale": "Wrong: Acetazolamide does not inhibit EPO; EPO changes are hypoxia-driven and unrelated to CA inhibition."
+      },
+      {
+        "text": "Increase in PaCO2 to improve perfusion",
+        "isCorrect": false,
+        "rationale": "Wrong: Acetazolamide does not increase PaCO2; it stimulates ventilation via metabolic acidosis despite low PaCO2."
+      },
+      {
+        "text": "Blocking pulmonary vasoconstriction to lower intracranial pressure",
+        "isCorrect": false,
+        "rationale": "Wrong: Pulmonary vascular effects do not directly lower intracranial pressure; acetazolamide's diuretic effect is the relevant mechanism."
+      }
+    ]
+  },
+  {
+    "question": "Which change in pulmonary arterial pressure is expected with generalized hypoxia and contributes to right ventricular afterload?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
+    "options": [
+      {
+        "text": "Pulmonary arterial pressure increases",
+        "isCorrect": true,
+        "rationale": "Correct: Hypoxic pulmonary vasoconstriction raises pulmonary arterial pressure, increasing RV afterload and causing hypertrophy."
+      },
+      {
+        "text": "Pulmonary arterial pressure decreases",
+        "isCorrect": false,
+        "rationale": "Wrong: Hypoxia causes vasoconstriction and increased pressure, not a decrease."
+      },
+      {
+        "text": "Systemic arterial pressure decreases",
+        "isCorrect": false,
+        "rationale": "Wrong: The question asks about pulmonary arterial pressure; systemic pressure changes are not the primary effect described."
+      },
+      {
+        "text": "Pulmonary venous pressure decreases",
+        "isCorrect": false,
+        "rationale": "Wrong: Pulmonary venous pressure is not the main driver of RV afterload in hypoxic pulmonary vasoconstriction; arterial pressure increases are."
+      },
+      {
+        "text": "No change in pulmonary pressures",
+        "isCorrect": false,
+        "rationale": "Wrong: Generalized hypoxia produces measurable pulmonary hypertension; no change would contradict the described physiology."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute respiratory alkalosis from hyperventilation has PaCO2 30 mmHg. Which compensatory bicarbonate value corresponds to chronic renal compensation per the slide formula?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
+    "options": [
+      {
+        "text": "HCO3- ≈ 19 mEq/L",
+        "isCorrect": true,
+        "rationale": "Correct: Chronic compensation uses ΔHCO3- = ΔCO2×0.5; ΔCO2=10 → 10×0.5=5; 24-5=19 mEq/L, matching the slide example."
+      },
+      {
+        "text": "HCO3- ≈ 22 mEq/L",
+        "isCorrect": false,
+        "rationale": "Wrong: 22 mEq/L is the acute compensation value; chronic compensation predicts a larger bicarbonate fall to ~19 mEq/L."
+      },
+      {
+        "text": "HCO3- ≈ 24 mEq/L",
+        "isCorrect": false,
+        "rationale": "Wrong: 24 mEq/L is normal and would indicate no renal compensation; chronic alkalosis produces a lower value."
+      },
+      {
+        "text": "HCO3- ≈ 16 mEq/L",
+        "isCorrect": false,
+        "rationale": "Wrong: 16 mEq/L is too low for the predicted chronic compensation given the formula; it would imply a larger disturbance."
+      },
+      {
+        "text": "HCO3- ≈ 26 mEq/L",
+        "isCorrect": false,
+        "rationale": "Wrong: An increase to 26 mEq/L would worsen alkalosis; compensation lowers bicarbonate in chronic respiratory alkalosis."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best explains why hyperventilation at altitude can paradoxically worsen hypoxemia if uncorrected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
+    "options": [
+      {
+        "text": "Respiratory alkalosis inhibits central ventilatory drive",
+        "isCorrect": true,
+        "rationale": "Correct: The slides explain that respiratory alkalosis raises pH and inhibits central chemoreceptors, reducing ventilation and potentially worsening hypoxemia unless compensated."
+      },
+      {
+        "text": "Hyperventilation increases pulmonary shunt fraction",
+        "isCorrect": false,
+        "rationale": "Wrong: Hyperventilation does not increase shunt; uneven hypoxic vasoconstriction causes shunt-like effects in HAPE, but hyperventilation itself does not increase shunt fraction."
+      },
+      {
+        "text": "Hyperventilation reduces hemoglobin concentration",
+        "isCorrect": false,
+        "rationale": "Wrong: Ventilation changes do not acutely alter hemoglobin concentration; polycythemia occurs over weeks."
+      },
+      {
+        "text": "Hyperventilation causes bronchoconstriction reducing alveolar ventilation",
+        "isCorrect": false,
+        "rationale": "Wrong: Hyperventilation does not cause bronchoconstriction that would reduce alveolar ventilation; it increases alveolar ventilation."
+      },
+      {
+        "text": "Hyperventilation increases 2,3-DPG preventing oxygen loading",
+        "isCorrect": false,
+        "rationale": "Wrong: 2,3-DPG changes occur in RBCs over time and facilitate unloading; they do not explain acute worsening of hypoxemia via ventilatory inhibition."
+      }
+    ]
+  },
+  {
+    "question": "Which physiologic regulator is described as the main controller of cerebral blood flow under normal conditions?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
+    "options": [
+      {
+        "text": "Arterial PCO2",
+        "isCorrect": true,
+        "rationale": "Correct: The slides state CO2 is the main controlling factor for cerebral blood flow under normal conditions."
       },
       {
         "text": "Arterial PO2",
         "isCorrect": false,
-        "rationale": "Wrong: arterial PO2 typically remains unchanged in moderate exercise; a decrease would indicate pulmonary limitation."
+        "rationale": "Wrong: While severe hypoxia dilates cerebral vessels, under normal conditions PaCO2 is the primary regulator."
       },
       {
-        "text": "Arterial oxygen content",
+        "text": "Systemic blood pressure",
         "isCorrect": false,
-        "rationale": "Wrong: arterial O2 content is usually maintained; it increases only with supplemental O2 or marked polycythemia."
+        "rationale": "Wrong: Autoregulation maintains CBF across a range of systemic pressures; CO2 is the main metabolic regulator."
       },
       {
-        "text": "Venous PO2",
+        "text": "Plasma osmolarity",
         "isCorrect": false,
-        "rationale": "Wrong: venous PO2 decreases during exercise due to increased extraction; an increase would imply reduced tissue O2 use."
+        "rationale": "Wrong: Osmolarity affects fluid shifts but is not the primary acute regulator of cerebral blood flow."
+      },
+      {
+        "text": "Arterial pH",
+        "isCorrect": false,
+        "rationale": "Wrong: pH influences ventilation and indirectly CO2, but PaCO2 is the direct main controller of cerebral blood flow."
       }
     ]
   },
   {
-    "question": "Which physiologic change explains why cerebral blood flow may still increase at altitude despite concurrent hypocapnia from hyperventilation?",
+    "question": "Which change in systemic arterial blood is summarized as occurring with high altitude adaptation?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
     "options": [
       {
-        "text": "Severe hypoxemia overrides CO2 effect",
+        "text": "PaO2 decreases; PaCO2 decreases; Hb concentration increases",
         "isCorrect": true,
-        "rationale": "Correct: Markedly low PaO2 causes cerebral vasodilation that overrides hypocapnic vasoconstriction, increasing cerebral blood flow and risk of edema."
+        "rationale": "Correct: The summary slide lists decreased PaO2 and PaCO2 with respiratory alkalosis and increased Hb from polycythemia as key systemic changes."
       },
       {
-        "text": "Hypocapnia always increases flow",
+        "text": "PaO2 increases; PaCO2 increases; Hb concentration decreases",
         "isCorrect": false,
-        "rationale": "Wrong: hypocapnia normally causes vasoconstriction and reduced flow; only severe hypoxia reverses this effect."
+        "rationale": "Wrong: This is the opposite of the described altitude adaptations; PaO2 and Hb change in the other direction."
       },
       {
-        "text": "Increased systemic blood pressure alone",
+        "text": "PaO2 unchanged; PaCO2 decreases; Hb concentration decreases",
         "isCorrect": false,
-        "rationale": "Wrong: systemic BP changes do not fully account for local cerebral vasodilation driven by hypoxia; increased BP alone would not explain edema."
+        "rationale": "Wrong: PaO2 falls at altitude and Hb concentration rises over time; this option mixes incorrect directions."
       },
       {
-        "text": "Decreased 2,3-DPG in brain tissue",
+        "text": "PaO2 decreases; PaCO2 increases; Hb concentration unchanged",
         "isCorrect": false,
-        "rationale": "Wrong: 2,3-DPG changes occur in RBCs and affect O2 unloading, not direct cerebral vessel tone; decreased 2,3-DPG would reduce tissue unloading."
+        "rationale": "Wrong: PaCO2 decreases due to hyperventilation, not increases; Hb typically rises with acclimatization."
       },
       {
-        "text": "Enhanced sympathetic cerebral vasoconstriction",
+        "text": "PaO2 increases; PaCO2 decreases; Hb concentration increases",
         "isCorrect": false,
-        "rationale": "Wrong: sympathetic activity tends to constrict cerebral vessels but local metabolic control predominates; increased sympathetic tone would reduce flow, not increase it."
+        "rationale": "Wrong: PaO2 does not increase at altitude; it decreases despite compensatory mechanisms."
       }
     ]
   },
   {
-    "question": "A patient with chronic high-altitude exposure has increased hematocrit and hemoglobin. Which downstream hemodynamic effect is most likely to develop over weeks?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Increased pulmonary vascular resistance",
-        "isCorrect": true,
-        "rationale": "Correct: Polycythemia raises blood viscosity, increasing pulmonary resistance and contributing to pulmonary hypertension and RV hypertrophy."
-      },
-      {
-        "text": "Decreased systemic vascular resistance",
-        "isCorrect": false,
-        "rationale": "Wrong: polycythemia tends to increase viscosity systemically; decreased SVR would not follow increased hematocrit."
-      },
-      {
-        "text": "Immediate left ventricular dilation",
-        "isCorrect": false,
-        "rationale": "Wrong: LV dilation is not the expected response to increased viscosity; RV pressure overload is more likely due to pulmonary hypertension."
-      },
-      {
-        "text": "Reduced right ventricular afterload",
-        "isCorrect": false,
-        "rationale": "Wrong: increased viscosity raises pulmonary afterload, not reduces it; reduced afterload would require pulmonary vasodilation."
-      },
-      {
-        "text": "Lowered arterial oxygen content",
-        "isCorrect": false,
-        "rationale": "Wrong: polycythemia increases arterial O2 content despite low PaO2; lowered content would occur only with anemia or severe hypoxemia without compensation."
-      }
-    ]
-  },
-  {
-    "question": "Which immediate respiratory system change during exercise reduces physiologic dead space and improves alveolar ventilation?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Understand the integral response for exercise in the respiratory system (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Recruitment of previously underperfused alveoli",
-        "isCorrect": true,
-        "rationale": "Correct: Exercise opens previously low-perfusion alveoli, reducing physiologic dead space and improving effective alveolar ventilation."
-      },
-      {
-        "text": "Increased anatomic dead space",
-        "isCorrect": false,
-        "rationale": "Wrong: anatomic dead space does not decrease with exercise; it may proportionally matter less but does not increase ventilation efficiency."
-      },
-      {
-        "text": "Decreased tidal volume",
-        "isCorrect": false,
-        "rationale": "Wrong: tidal volume increases during exercise; decreased tidal volume would worsen alveolar ventilation and increase dead space fraction."
-      },
-      {
-        "text": "Bronchoconstriction of small airways",
-        "isCorrect": false,
-        "rationale": "Wrong: bronchoconstriction would increase V/Q mismatch and dead space; exercise typically causes bronchodilation in healthy subjects."
-      },
-      {
-        "text": "Increased physiologic shunt",
-        "isCorrect": false,
-        "rationale": "Wrong: physiologic shunt increases with severe V/Q mismatch; exercise tends to improve V/Q matching in healthy lungs."
-      }
-    ]
-  },
-  {
-    "question": "A patient with acute respiratory alkalosis from high-altitude hyperventilation has ABG: pH 7.50 [7.35-7.45], PaCO2 30 mmHg [40 mmHg]. Using acute compensation rules from the material, what is the expected HCO3-?",
+    "question": "Which of the following is the best immediate pharmacologic option for a patient with HAPE who cannot descend rapidly, per the material?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
     "options": [
       {
-        "text": "Approximately 22 mEq/L",
+        "text": "Nifedipine to lower pulmonary artery pressure",
         "isCorrect": true,
-        "rationale": "Correct: Acute ΔHCO3- = ΔCO2 × 0.2; ΔCO2 = 40-30 =10 → 10×0.2 =2; HCO3- ≈24-2 =22 mEq/L. Would be lower (≈19) if chronic compensation applied."
+        "rationale": "Correct: The slides list nifedipine (a CCB) as a pharmacologic option to reduce pulmonary hypertension in HAPE when descent or oxygen may be delayed."
       },
       {
-        "text": "Approximately 19 mEq/L",
+        "text": "Acetazolamide to induce metabolic acidosis",
         "isCorrect": false,
-        "rationale": "Wrong: 19 mEq/L reflects chronic renal compensation (Δ×0.5); would be correct only after days of sustained alkalosis."
+        "rationale": "Wrong: Acetazolamide helps acclimatization and ventilation but is not the primary acute pharmacologic therapy for established HAPE."
       },
       {
-        "text": "Approximately 24 mEq/L",
+        "text": "Dexamethasone to reduce pulmonary edema",
         "isCorrect": false,
-        "rationale": "Wrong: 24 mEq/L is normal HCO3- and would indicate no compensation; acute respiratory alkalosis should show a small HCO3- decrease."
+        "rationale": "Wrong: Dexamethasone is recommended for HACE and may help HAPE in some cases, but nifedipine is the specific pulmonary vasodilator listed for HAPE."
       },
       {
-        "text": "Approximately 16 mEq/L",
+        "text": "Furosemide to remove alveolar fluid",
         "isCorrect": false,
-        "rationale": "Wrong: 16 mEq/L is an excessive drop not predicted by acute compensation; would require a large metabolic acidosis superimposed."
+        "rationale": "Wrong: Loop diuretics are not the recommended acute treatment for HAPE; they do not address hypoxic pulmonary vasoconstriction."
       },
       {
-        "text": "Approximately 26 mEq/L",
+        "text": "Sublingual nitroglycerin to reduce preload",
         "isCorrect": false,
-        "rationale": "Wrong: 26 mEq/L indicates metabolic alkalosis or no respiratory alkalosis; would be inconsistent with the given ABG."
+        "rationale": "Wrong: Nitroglycerin affects systemic preload and is not the pulmonary vasodilator therapy described for HAPE."
       }
     ]
   },
   {
-    "question": "Which physiologic adaptation increases oxygen delivery to tissues after several weeks at high altitude despite low PaO2?",
+    "question": "Which statement best characterizes the control of blood flow to exercising skeletal muscle in the slides?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Understand the most affected parameters of cardiovascular system to exercise",
     "options": [
       {
-        "text": "Increased hemoglobin concentration",
+        "text": "Local metabolites override sympathetic vasoconstriction",
         "isCorrect": true,
-        "rationale": "Correct: Erythropoietin-driven polycythemia raises Hb and arterial O2 content, improving O2 delivery despite low PaO2."
+        "rationale": "Correct: The material explains that metabolites inhibit α1 receptors and cause vasodilation, overriding sympathetic constriction during exercise."
       },
       {
-        "text": "Decreased 2,3-DPG",
+        "text": "Sympathetic α1 tone fully prevents vasodilation",
         "isCorrect": false,
-        "rationale": "Wrong: 2,3-DPG increases at altitude causing right shift; decreased 2,3-DPG would increase affinity and impair tissue unloading."
+        "rationale": "Wrong: Sympathetic tone is present but local metabolites override it to permit increased muscle blood flow."
       },
       {
-        "text": "Reduced cardiac output",
+        "text": "β1 receptor activation causes local vasodilation",
         "isCorrect": false,
-        "rationale": "Wrong: cardiac output typically increases during activity and is not reduced as an adaptation to altitude; reduced CO would lower O2 delivery."
+        "rationale": "Wrong: β1 receptors primarily affect heart rate and contractility; β2 receptors mediate vasodilation."
       },
       {
-        "text": "Permanent left shift of O2 curve",
+        "text": "Endothelin release is the main vasodilator",
         "isCorrect": false,
-        "rationale": "Wrong: a left shift increases affinity and impairs unloading; altitude adaptation favors right shift to enhance tissue unloading."
+        "rationale": "Wrong: Endothelin is a vasoconstrictor; NO and metabolites are the vasodilatory mediators described."
       },
       {
-        "text": "Decreased capillary density",
+        "text": "Reduced circulating epinephrine causes dilation",
         "isCorrect": false,
-        "rationale": "Wrong: angiogenesis increases capillary density at altitude; decreased density would worsen tissue oxygenation."
+        "rationale": "Wrong: Circulating epinephrine typically increases and can contribute to β2-mediated dilation; reduced epinephrine would not explain exercise vasodilation."
       }
     ]
   },
   {
-    "question": "A patient at high altitude develops pulmonary hypertension. Which structural change in the right ventricle is expected early in the course and why?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Concentric RV hypertrophy",
-        "isCorrect": true,
-        "rationale": "Correct: Pressure overload from pulmonary hypertension leads to concentric hypertrophy with sarcomeres added in parallel, increasing wall thickness."
-      },
-      {
-        "text": "Eccentric RV hypertrophy",
-        "isCorrect": false,
-        "rationale": "Wrong: eccentric hypertrophy results from volume overload with sarcomeres in series; would occur later with decompensation and dilation."
-      },
-      {
-        "text": "Left ventricular concentric hypertrophy",
-        "isCorrect": false,
-        "rationale": "Wrong: LV concentric hypertrophy follows systemic hypertension, not pulmonary hypertension; RV changes are primary here."
-      },
-      {
-        "text": "RV thinning and dilation",
-        "isCorrect": false,
-        "rationale": "Wrong: thinning and dilation indicate late decompensation; early response is concentric thickening, not thinning."
-      },
-      {
-        "text": "No structural change",
-        "isCorrect": false,
-        "rationale": "Wrong: sustained pressure overload induces structural adaptation; absence of change would imply very short exposure or no pressure increase."
-      }
-    ]
-  },
-  {
-    "question": "A patient exercising strenuously develops lactic acidosis. Which immediate effect on the hemoglobin-oxygen dissociation curve aids tissue oxygen unloading?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Understand the integral response for exercise in the respiratory system (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Rightward shift",
-        "isCorrect": true,
-        "rationale": "Correct: Increased temperature, CO2, H+, and 2,3-DPG during exercise shift the curve right, decreasing affinity and enhancing tissue O2 unloading."
-      },
-      {
-        "text": "Leftward shift",
-        "isCorrect": false,
-        "rationale": "Wrong: left shift increases affinity and impairs unloading; would occur with alkalosis or decreased 2,3-DPG."
-      },
-      {
-        "text": "No shift",
-        "isCorrect": false,
-        "rationale": "Wrong: strenuous exercise produces metabolic changes that shift the curve; no shift would imply no metabolic response."
-      },
-      {
-        "text": "Irreversible denaturation",
-        "isCorrect": false,
-        "rationale": "Wrong: denaturation would impair O2 transport and is not a physiologic adaptation to exercise."
-      },
-      {
-        "text": "Increased O2 affinity only in venous blood",
-        "isCorrect": false,
-        "rationale": "Wrong: affinity changes affect hemoglobin systemically; increased affinity in venous blood would reduce unloading and contradict exercise physiology."
-      }
-    ]
-  },
-  {
-    "question": "A 35-year-old climber at 4,000 m complains of insomnia and headache after rapid ascent. Which prevention strategy would best reduce his risk of acute mountain sickness?",
+    "question": "Which exam-style question from the slides tests understanding that arterial blood gases remain stable during moderate exercise? Choose the most likely correct answer from the options below.",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Understand the integral response for exercise in the respiratory system",
     "options": [
       {
-        "text": "Gradual ascent with acetazolamide prophylaxis",
+        "text": "Arterial PO2 unchanged during moderate exercise",
         "isCorrect": true,
-        "rationale": "Correct: Gradual ascent allows acclimatization; acetazolamide speeds metabolic compensation and ventilation, reducing AMS risk. Would be less effective with rapid ascent and no drug."
+        "rationale": "Correct: The provided exam question and explanation state that PaO2 does not change during moderate exercise at sea level."
       },
       {
-        "text": "Immediate vigorous exercise at altitude",
+        "text": "Physiologic dead space increases during moderate exercise",
         "isCorrect": false,
-        "rationale": "Wrong: exertion worsens hypoxemia and edema risk; rest and gradual ascent reduce AMS risk."
+        "rationale": "Wrong: Physiologic dead space decreases during exercise due to alveolar recruitment; an increase is incorrect."
       },
       {
-        "text": "High-dose loop diuretics",
+        "text": "Arterial oxygen content decreases during moderate exercise",
         "isCorrect": false,
-        "rationale": "Wrong: loop diuretics do not correct respiratory alkalosis and can cause electrolyte disturbances; acetazolamide is preferred for prophylaxis."
+        "rationale": "Wrong: Arterial oxygen content remains essentially unchanged during moderate exercise; a decrease would be unexpected."
       },
       {
-        "text": "Supplemental oxygen only during sleep",
+        "text": "Venous PO2 increases during moderate exercise",
         "isCorrect": false,
-        "rationale": "Wrong: supplemental O2 helps but prophylactic acetazolamide and gradual ascent are primary prevention; O2 only at night is insufficient alone."
+        "rationale": "Wrong: Venous PO2 decreases because tissues extract more oxygen during exercise."
       },
       {
-        "text": "Immediate descent to sea level",
+        "text": "Arterial PCO2 increases during moderate exercise",
         "isCorrect": false,
-        "rationale": "Wrong: descent treats severe AMS but is impractical as prevention; prevention focuses on ascent rate and acetazolamide."
+        "rationale": "Wrong: Arterial PCO2 remains near baseline in moderate exercise; increases would indicate hypoventilation."
       }
     ]
   },
   {
-    "question": "Which physiologic variable primarily explains why diastolic blood pressure remains relatively unchanged during moderate exercise?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Understand the most affected parameters of cardiovascular system to exercise (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Decreased total peripheral resistance",
-        "isCorrect": true,
-        "rationale": "Correct: Vasodilation in exercising muscles lowers TPR, offsetting increased cardiac output and keeping diastolic pressure near baseline."
-      },
-      {
-        "text": "Marked increase in heart rate",
-        "isCorrect": false,
-        "rationale": "Wrong: HR rises and affects systolic pressure more; HR increase alone does not explain stable diastolic pressure."
-      },
-      {
-        "text": "Increased systemic vascular resistance",
-        "isCorrect": false,
-        "rationale": "Wrong: SVR decreases during exercise due to muscle vasodilation; increased SVR would raise diastolic pressure."
-      },
-      {
-        "text": "Decreased stroke volume",
-        "isCorrect": false,
-        "rationale": "Wrong: stroke volume increases during moderate exercise; decreased SV would lower systolic pressure and not explain stable diastolic pressure."
-      },
-      {
-        "text": "Peripheral chemoreceptor activation",
-        "isCorrect": false,
-        "rationale": "Wrong: chemoreceptor activation affects ventilation and sympathetic tone but TPR changes primarily determine diastolic pressure behavior."
-      }
-    ]
-  },
-  {
-    "question": "A patient with high-altitude pulmonary edema is treated with nifedipine. Which immediate physiologic effect of nifedipine helps in this condition?",
+    "question": "Which of the following best explains why 2,3-DPG increase is beneficial in the first hours at high altitude but may be disadvantageous later?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Identify the integral response of the body to high altitude",
     "options": [
       {
-        "text": "Pulmonary vasodilation lowering pulmonary pressure",
+        "text": "Right shift aids tissue unloading but impairs pulmonary loading",
         "isCorrect": true,
-        "rationale": "Correct: Nifedipine, a calcium-channel blocker, reduces pulmonary arterial pressure by vasodilation, decreasing capillary stress and edema in HAPE."
+        "rationale": "Correct: Increased 2,3-DPG shifts the curve right, improving tissue O2 unloading but making it harder to load O2 in the lungs; the slides note this trade-off."
       },
       {
-        "text": "Systemic vasoconstriction increasing afterload",
+        "text": "Right shift increases hemoglobin affinity for O2",
         "isCorrect": false,
-        "rationale": "Wrong: nifedipine causes vasodilation, not constriction; increased afterload would worsen pulmonary edema indirectly."
+        "rationale": "Wrong: A right shift decreases affinity; increased affinity would be a left shift and is not the effect of 2,3-DPG."
       },
       {
-        "text": "Direct alveolar fluid clearance",
+        "text": "Left shift aids tissue unloading but impairs pulmonary loading",
         "isCorrect": false,
-        "rationale": "Wrong: nifedipine does not directly clear alveolar fluid; descent and oxygen address edema clearance while vasodilation reduces formation."
+        "rationale": "Wrong: A left shift increases affinity and impairs unloading; it does not aid unloading as stated."
       },
       {
-        "text": "Inhibition of erythropoietin release",
+        "text": "Increased 2,3-DPG reduces hemoglobin concentration",
         "isCorrect": false,
-        "rationale": "Wrong: nifedipine does not affect EPO acutely; EPO-mediated polycythemia is a longer-term altitude adaptation."
+        "rationale": "Wrong: 2,3-DPG affects affinity, not hemoglobin concentration; concentration changes are due to erythropoiesis."
       },
       {
-        "text": "Bronchial smooth muscle constriction",
+        "text": "Increased 2,3-DPG prevents polycythemia",
         "isCorrect": false,
-        "rationale": "Wrong: nifedipine does not constrict bronchi; bronchoconstriction would worsen gas exchange and is not therapeutic in HAPE."
+        "rationale": "Wrong: 2,3-DPG does not prevent polycythemia; polycythemia is driven by EPO and occurs independently."
       }
     ]
   },
   {
-    "question": "Which statement best describes the control of resting skeletal muscle blood flow?",
+    "question": "Which of the following best summarizes the integrated cardiovascular response to exercise listed in the slides?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Understand the most affected parameters of cardiovascular system to exercise (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Understand the most affected parameters of cardiovascular system to exercise",
     "options": [
       {
-        "text": "Predominantly sympathetic α1 vasoconstriction",
+        "text": "↑HR, ↑SV, ↑CO, ↓TPR",
         "isCorrect": true,
-        "rationale": "Correct: At rest sympathetic α1-mediated vasoconstriction predominates because norepinephrine from nerves is continuous while epinephrine is episodic."
+        "rationale": "Correct: The summary lists increased heart rate, stroke volume, cardiac output and decreased total peripheral resistance due to muscle vasodilation."
       },
       {
-        "text": "Predominantly β2-mediated vasodilation",
+        "text": "↓HR, ↓SV, ↓CO, ↑TPR",
         "isCorrect": false,
-        "rationale": "Wrong: β2 vasodilation via epinephrine occurs mainly during fight-or-flight and is not the dominant resting control; would be correct during stress."
+        "rationale": "Wrong: Exercise increases HR, SV, and CO while decreasing TPR; this option reverses the expected directions."
       },
       {
-        "text": "Endothelial NO as sole controller",
+        "text": "↑HR, ↓SV, ↓CO, ↑TPR",
         "isCorrect": false,
-        "rationale": "Wrong: NO contributes but is not the sole controller; neural sympathetic tone is the main resting influence."
+        "rationale": "Wrong: Stroke volume and cardiac output increase during exercise; decreases would be inconsistent with the described physiology."
       },
       {
-        "text": "Local metabolites dominate at rest",
+        "text": "No change in HR, ↑SV, ↑CO, ↑TPR",
         "isCorrect": false,
-        "rationale": "Wrong: local metabolites drive exercising muscle vasodilation, not resting muscle flow; dominance shifts during activity."
+        "rationale": "Wrong: Heart rate increases during exercise and TPR decreases; this option misstates those changes."
       },
       {
-        "text": "Parasympathetic vasodilation predominates",
+        "text": "↑HR, ↑SV, ↓CO, ↓TPR",
         "isCorrect": false,
-        "rationale": "Wrong: parasympathetic influence on skeletal muscle vasculature is minimal; sympathetic control predominates at rest."
+        "rationale": "Wrong: Cardiac output increases (HR×SV); a decrease in CO contradicts the combined HR and SV increases."
       }
     ]
   },
   {
-    "question": "A patient at altitude has PaO2 of 55 mmHg and PaCO2 of 30 mmHg. Which combination best describes the acid-base status and expected renal compensation if exposure is chronic?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Respiratory alkalosis with decreased HCO3- (chronic)",
-        "isCorrect": true,
-        "rationale": "Correct: Hyperventilation at altitude causes respiratory alkalosis; chronic renal compensation lowers HCO3- more (ΔCO2×0.5) than acute compensation."
-      },
-      {
-        "text": "Metabolic acidosis with increased HCO3-",
-        "isCorrect": false,
-        "rationale": "Wrong: metabolic acidosis lowers HCO3-; increased HCO3- would not match the ABG pattern of low PaCO2 and high pH."
-      },
-      {
-        "text": "Respiratory acidosis with increased HCO3-",
-        "isCorrect": false,
-        "rationale": "Wrong: respiratory acidosis features elevated PaCO2; here PaCO2 is low indicating alkalosis, not acidosis."
-      },
-      {
-        "text": "Normal acid-base with no compensation",
-        "isCorrect": false,
-        "rationale": "Wrong: PaCO2 of 30 mmHg indicates respiratory alkalosis; compensation occurs and would not be absent in chronic exposure."
-      },
-      {
-        "text": "Mixed respiratory and metabolic acidosis",
-        "isCorrect": false,
-        "rationale": "Wrong: mixed acidosis would show low pH and high PaCO2 or low HCO3-; the given values indicate alkalosis, not acidosis."
-      }
-    ]
-  },
-  {
-    "question": "Which factor most directly causes the rightward shift of the O2-hemoglobin dissociation curve at altitude and during exercise?",
+    "question": "Which physiologic principle explains why skin blood flow initially decreases during exercise and later increases for thermoregulation, per the slides?",
     "difficulty_order": "2nd",
-    "cited_learning_objective": "Understand the integral response for exercise in the respiratory system (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
+    "cited_learning_objective": "Understand the most affected parameters of cardiovascular system to exercise",
     "options": [
       {
-        "text": "Increased 2,3-DPG in RBCs",
+        "text": "Initial sympathetic α1 vasoconstriction then metabolite-driven vasodilation",
         "isCorrect": true,
-        "rationale": "Correct: Elevated 2,3-DPG binds hemoglobin lowering O2 affinity and shifting the curve right, facilitating tissue unloading during hypoxia or exercise."
+        "rationale": "Correct: The slides describe initial α1-mediated vasoconstriction followed by vasodilation later for thermoregulation as metabolites accumulate."
       },
       {
-        "text": "Decreased temperature",
+        "text": "Immediate β1-mediated vasodilation then α1 constriction",
         "isCorrect": false,
-        "rationale": "Wrong: decreased temperature shifts the curve left increasing affinity; increased temperature shifts it right."
+        "rationale": "Wrong: β1 receptors affect heart function, not primary skin vasodilation; the sequence described is incorrect."
       },
       {
-        "text": "Decreased CO2",
+        "text": "Constant high skin blood flow throughout exercise",
         "isCorrect": false,
-        "rationale": "Wrong: decreased CO2 (hypocapnia) shifts the curve left via alkalosis; increased CO2 shifts it right."
+        "rationale": "Wrong: Skin flow changes dynamically; it does not remain constantly high during exercise."
       },
       {
-        "text": "Increased hemoglobin affinity",
+        "text": "Initial local hypoxia causing vasodilation then constriction",
         "isCorrect": false,
-        "rationale": "Wrong: increased affinity shifts left and impairs unloading; altitude/exercise adaptations decrease affinity to aid unloading."
+        "rationale": "Wrong: Initial response is sympathetic vasoconstriction, not local hypoxia-driven dilation; later dilation is for thermoregulation."
       },
       {
-        "text": "Decreased tissue metabolism",
+        "text": "Decreased core temperature causing early vasodilation",
         "isCorrect": false,
-        "rationale": "Wrong: decreased metabolism would reduce factors that shift the curve right; increased metabolism promotes right shift."
-      }
-    ]
-  },
-  {
-    "question": "A patient with HACE is treated with dexamethasone. Which immediate therapeutic effect of dexamethasone is most relevant to symptom improvement?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Reduction of cerebral vasogenic edema",
-        "isCorrect": true,
-        "rationale": "Correct: Dexamethasone reduces cerebral edema and inflammation, lowering intracranial pressure and improving neurologic symptoms in HACE."
-      },
-      {
-        "text": "Immediate increase in erythropoietin",
-        "isCorrect": false,
-        "rationale": "Wrong: dexamethasone does not acutely raise EPO; erythropoiesis is a delayed response and not the mechanism for rapid HACE improvement."
-      },
-      {
-        "text": "Direct pulmonary vasodilation",
-        "isCorrect": false,
-        "rationale": "Wrong: dexamethasone's main effect in HACE is cerebral edema reduction; pulmonary vasodilation is not its primary action for HACE."
-      },
-      {
-        "text": "Stimulation of peripheral chemoreceptors",
-        "isCorrect": false,
-        "rationale": "Wrong: dexamethasone does not stimulate chemoreceptors to increase ventilation; acetazolamide does this via metabolic acidosis."
-      },
-      {
-        "text": "Rapid diuresis lowering blood volume",
-        "isCorrect": false,
-        "rationale": "Wrong: dexamethasone is not a diuretic; diuresis may help edema but is not the steroid's mechanism of action in HACE."
-      }
-    ]
-  },
-  {
-    "question": "Which hemodynamic change during exercise most increases myocardial oxygen demand and therefore requires increased coronary blood flow?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Understand the most affected parameters of cardiovascular system to exercise (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Increased heart rate",
-        "isCorrect": true,
-        "rationale": "Correct: Increased HR raises myocardial work and O2 demand; coronary flow increases via local metabolites to meet this demand."
-      },
-      {
-        "text": "Decreased stroke volume",
-        "isCorrect": false,
-        "rationale": "Wrong: stroke volume increases during exercise; decreased SV would lower myocardial workload, not increase it."
-      },
-      {
-        "text": "Decreased systolic pressure",
-        "isCorrect": false,
-        "rationale": "Wrong: systolic pressure rises with exercise and contributes to demand; decreased systolic pressure would reduce afterload and demand."
-      },
-      {
-        "text": "Reduced venous return",
-        "isCorrect": false,
-        "rationale": "Wrong: venous return increases during exercise, supporting SV; reduced return would lower preload and myocardial demand."
-      },
-      {
-        "text": "Lowered arteriovenous O2 difference",
-        "isCorrect": false,
-        "rationale": "Wrong: a-v O2 difference increases during exercise; a lowered difference would indicate less tissue extraction and not higher myocardial demand."
-      }
-    ]
-  },
-  {
-    "question": "A patient with rapid ascent has PaO2 50 mmHg and complains of severe dyspnea. Which immediate management step is most appropriate to reverse hypoxemia?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Administer supplemental oxygen and descend",
-        "isCorrect": true,
-        "rationale": "Correct: Supplemental O2 raises PaO2 immediately and descent reduces hypoxic stress; both are first-line treatments for severe altitude-related hypoxemia."
-      },
-      {
-        "text": "Start high-dose loop diuretics",
-        "isCorrect": false,
-        "rationale": "Wrong: loop diuretics do not correct hypoxemia and are not first-line for altitude illness; descent and O2 are primary."
-      },
-      {
-        "text": "Give oral acetazolamide only",
-        "isCorrect": false,
-        "rationale": "Wrong: acetazolamide aids acclimatization but is slower acting; severe hypoxemia requires immediate O2 and descent rather than acetazolamide alone."
-      },
-      {
-        "text": "Begin inhaled bronchodilator therapy",
-        "isCorrect": false,
-        "rationale": "Wrong: bronchodilators help bronchospasm but not primary hypoxemia from low inspired PO2; would be correct only if bronchospasm were present."
-      },
-      {
-        "text": "Administer high-flow IV fluids",
-        "isCorrect": false,
-        "rationale": "Wrong: IV fluids do not correct hypoxemia and may worsen pulmonary edema; fluid management must be cautious in HAPE."
-      }
-    ]
-  },
-  {
-    "question": "Which change in pulmonary physiology at high altitude most directly increases the risk of noncardiogenic pulmonary edema (HAPE)?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Heterogeneous hypoxic vasoconstriction",
-        "isCorrect": true,
-        "rationale": "Correct: Uneven vasoconstriction causes regional overperfusion and capillary stress failure leading to noncardiogenic pulmonary edema characteristic of HAPE."
-      },
-      {
-        "text": "Global pulmonary vasodilation",
-        "isCorrect": false,
-        "rationale": "Wrong: global vasodilation would lower pulmonary pressures and not cause stress failure; HAPE arises from uneven vasoconstriction."
-      },
-      {
-        "text": "Left atrial hypertension",
-        "isCorrect": false,
-        "rationale": "Wrong: left atrial hypertension causes cardiogenic edema; HAPE is noncardiogenic and due to pulmonary arterial factors."
-      },
-      {
-        "text": "Decreased capillary permeability",
-        "isCorrect": false,
-        "rationale": "Wrong: decreased permeability would reduce edema; HAPE involves increased filtration from stress failure and permeability changes."
-      },
-      {
-        "text": "Bronchial mucosal edema only",
-        "isCorrect": false,
-        "rationale": "Wrong: bronchial mucosal edema causes cough but HAPE involves alveolar flooding from capillary leakage, not isolated bronchial edema."
-      }
-    ]
-  },
-  {
-    "question": "Which laboratory or physiologic finding would most strongly support a diagnosis of acute mountain sickness rather than simple fatigue after ascent?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Headache with nausea and sleep disturbance",
-        "isCorrect": true,
-        "rationale": "Correct: The constellation of headache, GI symptoms, and sleep disturbance after ascent defines acute mountain sickness clinically, distinguishing it from simple exertional fatigue."
-      },
-      {
-        "text": "Mild muscle soreness only",
-        "isCorrect": false,
-        "rationale": "Wrong: isolated muscle soreness suggests exertional fatigue; AMS requires systemic symptoms like headache and nausea."
-      },
-      {
-        "text": "Isolated tachycardia without other symptoms",
-        "isCorrect": false,
-        "rationale": "Wrong: tachycardia can occur with exertion or anxiety and is not specific for AMS without accompanying symptoms."
-      },
-      {
-        "text": "Fever and productive cough",
-        "isCorrect": false,
-        "rationale": "Wrong: fever and productive cough suggest infection rather than AMS; AMS is not typically febrile."
-      },
-      {
-        "text": "Chest pain relieved by rest",
-        "isCorrect": false,
-        "rationale": "Wrong: chest pain has many causes and is not a defining feature of AMS; AMS diagnosis relies on neurologic and systemic symptoms after ascent."
-      }
-    ]
-  },
-  {
-    "question": "Which physiologic response during exercise most increases arterio-venous O2 difference?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Understand the integral response for exercise in the respiratory system (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Increased tissue O2 extraction",
-        "isCorrect": true,
-        "rationale": "Correct: Exercise increases metabolic demand and tissue extraction of O2, widening the a-v O2 difference; would be reduced if extraction fell."
-      },
-      {
-        "text": "Decreased cardiac output",
-        "isCorrect": false,
-        "rationale": "Wrong: decreased CO would reduce O2 delivery and could increase extraction but overall a-v difference typically increases due to higher extraction with increased CO."
-      },
-      {
-        "text": "Increased arterial O2 content only",
-        "isCorrect": false,
-        "rationale": "Wrong: increased arterial content alone narrows a-v difference unless tissue extraction also rises; exercise increases extraction primarily."
-      },
-      {
-        "text": "Reduced capillary density",
-        "isCorrect": false,
-        "rationale": "Wrong: reduced capillary density would impair extraction and lower a-v difference; exercise promotes capillary recruitment and extraction."
-      },
-      {
-        "text": "Lowered hemoglobin concentration",
-        "isCorrect": false,
-        "rationale": "Wrong: lower Hb reduces arterial O2 content and may alter extraction but does not directly increase a-v difference as exercise does."
-      }
-    ]
-  },
-  {
-    "question": "A patient with chronic exposure to high altitude shows increased angiogenesis in peripheral tissues. Which benefit does this adaptation provide?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Improved tissue oxygen delivery",
-        "isCorrect": true,
-        "rationale": "Correct: Angiogenesis increases capillary density, reducing diffusion distance and improving O2 delivery to hypoxic tissues at altitude."
-      },
-      {
-        "text": "Reduced erythropoietin production",
-        "isCorrect": false,
-        "rationale": "Wrong: angiogenesis does not reduce EPO; EPO is driven by hypoxia and stimulates RBC production independently."
-      },
-      {
-        "text": "Immediate rise in PaO2",
-        "isCorrect": false,
-        "rationale": "Wrong: angiogenesis improves tissue perfusion but does not acutely raise arterial PaO2, which depends on inspired PO2."
-      },
-      {
-        "text": "Decreased 2,3-DPG levels",
-        "isCorrect": false,
-        "rationale": "Wrong: 2,3-DPG typically increases at altitude; angiogenesis does not lower 2,3-DPG."
-      },
-      {
-        "text": "Lowered pulmonary vascular resistance",
-        "isCorrect": false,
-        "rationale": "Wrong: angiogenesis in peripheral tissues does not directly reduce pulmonary vascular resistance; pulmonary vasculature adaptations are separate."
-      }
-    ]
-  },
-  {
-    "question": "Which physiologic change during acute ascent most directly triggers increased erythropoietin secretion by renal peritubular fibroblasts?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Decreased renal tissue oxygen tension",
-        "isCorrect": true,
-        "rationale": "Correct: Hypoxia in renal peritubular fibroblasts stimulates EPO production, initiating erythropoiesis and later polycythemia."
-      },
-      {
-        "text": "Increased PaO2",
-        "isCorrect": false,
-        "rationale": "Wrong: increased PaO2 would suppress EPO; EPO rises in response to hypoxia, not hyperoxia."
-      },
-      {
-        "text": "Elevated PaCO2",
-        "isCorrect": false,
-        "rationale": "Wrong: PaCO2 changes affect ventilation and pH but EPO secretion is primarily driven by tissue hypoxia, not CO2."
-      },
-      {
-        "text": "Increased renal blood flow",
-        "isCorrect": false,
-        "rationale": "Wrong: increased renal flow alone does not stimulate EPO; decreased oxygen delivery to renal tissue is the key stimulus."
-      },
-      {
-        "text": "Acute metabolic alkalosis",
-        "isCorrect": false,
-        "rationale": "Wrong: acid-base status does not directly trigger EPO; hypoxia is the principal regulator of EPO secretion."
-      }
-    ]
-  },
-  {
-    "question": "A patient exercising intensely develops a drop in arterial pH. Which immediate cause from the lecture best explains this change?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Understand the integral response for exercise in the respiratory system (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Accumulation of lactic acid",
-        "isCorrect": true,
-        "rationale": "Correct: Strenuous exercise produces lactic acid from anaerobic metabolism, lowering arterial pH and causing metabolic acidosis."
-      },
-      {
-        "text": "Hyperventilation-induced alkalosis",
-        "isCorrect": false,
-        "rationale": "Wrong: hyperventilation causes respiratory alkalosis (increased pH); lactic acidosis lowers pH during strenuous exercise."
-      },
-      {
-        "text": "Renal bicarbonate retention",
-        "isCorrect": false,
-        "rationale": "Wrong: renal HCO3- retention raises pH; retention would not explain an acute pH drop during exercise."
-      },
-      {
-        "text": "Decreased CO2 production",
-        "isCorrect": false,
-        "rationale": "Wrong: CO2 production increases with exercise; decreased CO2 would raise pH, not lower it."
-      },
-      {
-        "text": "Increased hemoglobin affinity for O2",
-        "isCorrect": false,
-        "rationale": "Wrong: increased affinity affects O2 unloading but does not directly cause arterial pH changes; metabolic acid accumulation is the driver."
-      }
-    ]
-  },
-  {
-    "question": "Which physiologic principle explains why arterial oxygen content can normalize within a month at high altitude despite persistently low PaO2?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Identify the integral response of the body to high altitude (AACOM I.2. b; II.1.f; III.3.a; OMED-620 – 1, 2, 12)",
-    "options": [
-      {
-        "text": "Polycythemia increasing hemoglobin concentration",
-        "isCorrect": true,
-        "rationale": "Correct: Increased RBC mass raises arterial O2 content (CaO2) despite low PaO2; this compensatory polycythemia typically develops over weeks."
-      },
-      {
-        "text": "Normalization of inspired PO2",
-        "isCorrect": false,
-        "rationale": "Wrong: inspired PO2 remains low at altitude; normalization of CaO2 occurs via hematologic adaptation, not increased inspired PO2."
-      },
-      {
-        "text": "Permanent right shift preventing loading",
-        "isCorrect": false,
-        "rationale": "Wrong: right shift aids unloading but can impair loading; arterial content normalization is mainly due to increased Hb, not an irreversible shift."
-      },
-      {
-        "text": "Decreased metabolic demand permanently",
-        "isCorrect": false,
-        "rationale": "Wrong: metabolic demand does not permanently decrease to normalize CaO2; physiological adaptations increase O2 delivery instead."
-      },
-      {
-        "text": "Renal retention of CO2",
-        "isCorrect": false,
-        "rationale": "Wrong: renal CO2 retention is not a mechanism for increasing arterial O2 content; hematologic changes are primary."
+        "rationale": "Wrong: Core temperature rises during exercise and later triggers vasodilation; decreased core temperature would not explain the pattern."
       }
     ]
   }
