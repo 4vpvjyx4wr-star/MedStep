@@ -1,0 +1,898 @@
+[
+  {
+    "question": "Which term describes a single-base substitution where a purine is replaced by a different purine?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Recognize, define, compare, and contrast the following mutation types: transition, transversion, silent mutation, missense mutation, conservative mutation, nonsense mutation, insertion/deletion (frameshift and in-frame), splice site mutations, trinucleotide repeat expansions, large segment insertion/deletions, promoter mutations",
+    "options": [
+      {
+        "text": "Transition mutation",
+        "isCorrect": true,
+        "rationale": "Correct: A transition is a purine-to-purine or pyrimidine-to-pyrimidine single-base substitution as defined in the material."
+      },
+      {
+        "text": "Transversion mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: A transversion is a purine-to-pyrimidine or pyrimidine-to-purine change; it would be correct only if the base class changed."
+      },
+      {
+        "text": "Silent mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: A silent mutation changes the codon without altering the encoded amino acid; it does not describe base class substitution."
+      },
+      {
+        "text": "Missense mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Missense changes the encoded amino acid; it does not specify purine-to-purine substitution."
+      },
+      {
+        "text": "Nonsense mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Nonsense converts an amino-acid codon to a stop codon; it is not defined by purine/pyrimidine class."
+      }
+    ]
+  },
+  {
+    "question": "A codon change that still encodes the same amino acid is best called which of the following?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Recognize, define, compare, and contrast the following mutation types: transition, transversion, silent mutation, missense mutation, conservative mutation, nonsense mutation, insertion/deletion (frameshift and in-frame), splice site mutations, trinucleotide repeat expansions, large segment insertion/deletions, promoter mutations",
+    "options": [
+      {
+        "text": "Silent mutation",
+        "isCorrect": true,
+        "rationale": "Correct: A silent mutation alters the codon but not the encoded amino acid, as described in the slides."
+      },
+      {
+        "text": "Missense mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Missense changes the amino acid; it would be correct only if the codon change altered the amino acid."
+      },
+      {
+        "text": "Nonsense mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Nonsense creates a premature stop codon; it does not preserve the amino acid."
+      },
+      {
+        "text": "Frameshift mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Frameshift alters the reading frame via insertion/deletion not divisible by three; it is not a synonymous codon change."
+      },
+      {
+        "text": "Conservative mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Conservative is a type of missense where the new amino acid has similar properties; it still changes the amino acid."
+      }
+    ]
+  },
+  {
+    "question": "Which mutation type produces a codon that specifies a different amino acid but with similar biochemical properties?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Recognize, define, compare, and contrast the following mutation types: transition, transversion, silent mutation, missense mutation, conservative mutation, nonsense mutation, insertion/deletion (frameshift and in-frame), splice site mutations, trinucleotide repeat expansions, large segment insertion/deletions, promoter mutations",
+    "options": [
+      {
+        "text": "Conservative missense mutation",
+        "isCorrect": true,
+        "rationale": "Correct: A conservative missense substitutes an amino acid with similar properties; slides note conservative missense may still affect function."
+      },
+      {
+        "text": "Nonsense mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Nonsense creates a stop codon and truncates the protein; it does not substitute similar amino acids."
+      },
+      {
+        "text": "Silent mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Silent does not change the amino acid; it cannot be conservative because no substitution occurs."
+      },
+      {
+        "text": "Frameshift mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Frameshift alters the reading frame via indels not divisible by three; it is not a single amino-acid conservative change."
+      },
+      {
+        "text": "Transversion mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Transversion describes base-class change (purine↔pyrimidine) and does not specify amino-acid similarity."
+      }
+    ]
+  },
+  {
+    "question": "Which mutation type most directly explains the molecular defect in classic sickle cell disease?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For the following diseases, name the mutation type(s) commonly associated with them: alpha thalassemia, beta thalassemia, sickle cell anemia, PKU, and cystic fibrosis",
+    "options": [
+      {
+        "text": "Missense point mutation",
+        "isCorrect": true,
+        "rationale": "Correct: Sickle cell disease is caused by a single nucleotide missense change in β-globin (Glu→Val) as presented in the slides."
+      },
+      {
+        "text": "Nonsense point mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Nonsense would create a premature stop; sickle cell involves an amino-acid substitution, not early termination."
+      },
+      {
+        "text": "Frameshift insertion",
+        "isCorrect": false,
+        "rationale": "Wrong: Frameshift indels change the reading frame; sickle cell is a single-base substitution, not an indel."
+      },
+      {
+        "text": "Splice site mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Splice site mutations alter exon/intron processing; sickle cell is due to a coding-region missense change."
+      },
+      {
+        "text": "Silent synonymous mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Silent mutations do not change the amino acid; sickle cell changes Glu to Val and is not silent."
+      }
+    ]
+  },
+  {
+    "question": "A patient has phenylketonuria due to a mutation that creates an early stop codon in PAH. Which mutation type is responsible?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For the following diseases, name the mutation type(s) commonly associated with them: alpha thalassemia, beta thalassemia, sickle cell anemia, PKU, and cystic fibrosis",
+    "options": [
+      {
+        "text": "Nonsense point mutation",
+        "isCorrect": true,
+        "rationale": "Correct: PKU can result from nonsense mutations in PAH that introduce premature stop codons, as noted in the slides."
+      },
+      {
+        "text": "Missense point mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Missense changes an amino acid but does not create a stop codon; PKU can include missense but this stem specifies an early stop."
+      },
+      {
+        "text": "In-frame deletion",
+        "isCorrect": false,
+        "rationale": "Wrong: In-frame deletions remove whole codons; they do not create an early stop unless they alter splicing or frame."
+      },
+      {
+        "text": "Nonstop point mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Nonstop converts a stop codon to an amino-acid codon; the stem describes creation of a premature stop, not loss of one."
+      },
+      {
+        "text": "Splice site mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Splice site changes affect exon inclusion; they can cause PKU but would be correct only if the stem described aberrant splicing."
+      }
+    ]
+  },
+  {
+    "question": "Which mutation type accounts for the most common cause of cystic fibrosis (ΔF508)?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For the following diseases, name the mutation type(s) commonly associated with them: alpha thalassemia, beta thalassemia, sickle cell anemia, PKU, and cystic fibrosis",
+    "options": [
+      {
+        "text": "Three-base in-frame deletion",
+        "isCorrect": true,
+        "rationale": "Correct: The common CFTR ΔF508 is a 3-base (in-frame) deletion removing a phenylalanine, as described in the slides."
+      },
+      {
+        "text": "Frameshift deletion",
+        "isCorrect": false,
+        "rationale": "Wrong: Frameshift deletions are not multiples of three and alter the reading frame; ΔF508 is an in-frame deletion."
+      },
+      {
+        "text": "Nonsense point mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Nonsense introduces a stop codon; ΔF508 removes an amino acid without creating a stop."
+      },
+      {
+        "text": "Splice site mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Splice site mutations affect exon processing; ΔF508 is a coding-region in-frame deletion."
+      },
+      {
+        "text": "Transition point mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Transition is a single-base substitution; ΔF508 is a three-base deletion, not a substitution."
+      }
+    ]
+  },
+  {
+    "question": "Which mechanism best explains how a trinucleotide expansion in a 5' UTR can reduce protein production?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For the following trinucleotide repeat expansion diseases, name the gene and the location of the expansion and explain how that results in the symptoms that are seen (ie, explain the defective process at the molecular/cellular level): Fragile X Syndrome, Myotonic Dystrophy, and Huntington Disease",
+    "options": [
+      {
+        "text": "Promoter hypermethylation and silencing",
+        "isCorrect": true,
+        "rationale": "Correct: Expanded repeats in the 5' UTR of FMR1 lead to hypermethylation and gene silencing, reducing protein production as the slides state."
+      },
+      {
+        "text": "Aberrant protein aggregation",
+        "isCorrect": false,
+        "rationale": "Wrong: Protein aggregation is typical of coding CAG expansions (Huntington); it would be correct only if the expansion were in coding sequence."
+      },
+      {
+        "text": "Nuclear retention of mRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Nuclear mRNA retention is described for 3' UTR expansions (myotonic dystrophy); it does not explain 5' UTR hypermethylation."
+      },
+      {
+        "text": "Frameshift translation error",
+        "isCorrect": false,
+        "rationale": "Wrong: Frameshifts arise from indels not repeat expansions in UTRs; this would be correct only if the repeat altered the coding frame."
+      },
+      {
+        "text": "Increased proteasomal degradation",
+        "isCorrect": false,
+        "rationale": "Wrong: Proteasomal degradation can follow abnormal proteins but does not explain reduced transcription from 5' UTR hypermethylation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with myotonic dystrophy has a repeat expansion in the 3' UTR of DMPK. Which cellular defect best accounts for the muscle relaxation delay?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For the following trinucleotide repeat expansion diseases, name the gene and the location of the expansion and explain how that results in the symptoms that are seen (ie, explain the defective process at the molecular/cellular level): Fragile X Syndrome, Myotonic Dystrophy, and Huntington Disease",
+    "options": [
+      {
+        "text": "Aberrant splicing due to sequestered RNA-binding proteins",
+        "isCorrect": true,
+        "rationale": "Correct: Expanded 3' UTR DMPK mRNA binds and sequesters splicing factors, disrupting splicing in muscle and causing myotonia as described in the slides."
+      },
+      {
+        "text": "Loss of protein from promoter methylation",
+        "isCorrect": false,
+        "rationale": "Wrong: Promoter methylation and loss of protein is the mechanism for 5' UTR Fragile X; it would be correct only if the expansion were in the 5' region."
+      },
+      {
+        "text": "Polyglutamine protein aggregation",
+        "isCorrect": false,
+        "rationale": "Wrong: Polyglutamine aggregation occurs with coding CAG expansions like Huntington; it does not explain 3' UTR RNA-mediated splicing defects."
+      },
+      {
+        "text": "Frameshift-induced truncated kinase",
+        "isCorrect": false,
+        "rationale": "Wrong: Frameshifts produce truncated proteins from coding indels; the DMPK defect is RNA-mediated, not a truncated kinase."
+      },
+      {
+        "text": "Increased mitochondrial apoptosis",
+        "isCorrect": false,
+        "rationale": "Wrong: While muscle cells may die in some diseases, the slide links myotonia specifically to splicing interference, not primary mitochondrial apoptosis."
+      }
+    ]
+  },
+  {
+    "question": "Which trinucleotide repeat location and consequence pair matches Huntington disease?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For the following trinucleotide repeat expansion diseases, name the gene and the location of the expansion and explain how that results in the symptoms that are seen (ie, explain the defective process at the molecular/cellular level): Fragile X Syndrome, Myotonic Dystrophy, and Huntington Disease",
+    "options": [
+      {
+        "text": "Coding region CAG expansion causing polyglutamine aggregates",
+        "isCorrect": true,
+        "rationale": "Correct: Huntington disease involves CAG repeats in the coding region of HTT producing polyglutamine tracts that aggregate and kill neurons, per the slides."
+      },
+      {
+        "text": "5' UTR CGG expansion causing methylation",
+        "isCorrect": false,
+        "rationale": "Wrong: 5' UTR CGG expansion and methylation describe Fragile X, not Huntington."
+      },
+      {
+        "text": "3' UTR CTG expansion causing splicing defects",
+        "isCorrect": false,
+        "rationale": "Wrong: 3' UTR CTG expansions causing splicing defects describe myotonic dystrophy, not Huntington."
+      },
+      {
+        "text": "Intronic GAA expansion causing heterochromatin",
+        "isCorrect": false,
+        "rationale": "Wrong: Intronic GAA expansions causing heterochromatin and reduced expression describe Friedreich's ataxia, not Huntington."
+      },
+      {
+        "text": "Promoter TATA expansion causing increased transcription",
+        "isCorrect": false,
+        "rationale": "Wrong: Promoter repeat expansions causing increased transcription are not described in the slides and do not match Huntington's coding CAG expansion."
+      }
+    ]
+  },
+  {
+    "question": "Which mutation class most commonly underlies β-thalassemia according to the material?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For the following diseases, name the mutation type(s) commonly associated with them: alpha thalassemia, beta thalassemia, sickle cell anemia, PKU, and cystic fibrosis",
+    "options": [
+      {
+        "text": "Splice site mutations",
+        "isCorrect": true,
+        "rationale": "Correct: Many common β-thalassemia mutations are splice site changes that alter β-globin mRNA processing, as the slides state."
+      },
+      {
+        "text": "Three-base in-frame deletions",
+        "isCorrect": false,
+        "rationale": "Wrong: In-frame three-base deletions are characteristic of CFTR ΔF508; they are not the predominant β-thalassemia mechanism."
+      },
+      {
+        "text": "Missense point mutations",
+        "isCorrect": false,
+        "rationale": "Wrong: Missense mutations can occur but the slides emphasize splice site mutations as common in β-thalassemia."
+      },
+      {
+        "text": "Large segment duplications",
+        "isCorrect": false,
+        "rationale": "Wrong: Large segment changes cause alpha-thalassemia via gene deletion/duplication; β-thalassemia is often splice-related."
+      },
+      {
+        "text": "Nonsense point mutations",
+        "isCorrect": false,
+        "rationale": "Wrong: Nonsense mutations can cause β-globin absence but the slide highlights splice site mutations as a common class."
+      }
+    ]
+  },
+  {
+    "question": "A lab finds an insertion of two nucleotides in an exon early in a gene. Which outcome is most likely?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recognize, define, compare, and contrast the following mutation types: transition, transversion, silent mutation, missense mutation, conservative mutation, nonsense mutation, insertion/deletion (frameshift and in-frame), splice site mutations, trinucleotide repeat expansions, large segment insertion/deletions, promoter mutations",
+    "options": [
+      {
+        "text": "Frameshift with premature stop",
+        "isCorrect": true,
+        "rationale": "Correct: Insertions not divisible by three cause frameshifts that alter the reading frame and often produce premature stop codons, per the slides."
+      },
+      {
+        "text": "In-frame single amino-acid insertion",
+        "isCorrect": false,
+        "rationale": "Wrong: In-frame insertions require multiples of three nucleotides; a two-nucleotide insertion would not yield an in-frame single amino-acid insertion."
+      },
+      {
+        "text": "Silent synonymous change",
+        "isCorrect": false,
+        "rationale": "Wrong: Silent changes do not alter amino acids and are single-base synonymous substitutions, not two-nucleotide insertions."
+      },
+      {
+        "text": "Conservative missense substitution",
+        "isCorrect": false,
+        "rationale": "Wrong: Conservative missense is a single-base substitution producing a similar amino acid; it does not follow from a two-base insertion."
+      },
+      {
+        "text": "Promoter activity increase",
+        "isCorrect": false,
+        "rationale": "Wrong: Promoter activity changes arise from promoter-region variants; an exon insertion early in coding sequence would not increase promoter activity."
+      }
+    ]
+  },
+  {
+    "question": "Which genetic change best describes alpha-thalassemia mechanisms emphasized in the slides?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recognize, define, compare, and contrast the following mutation types: transition, transversion, silent mutation, missense mutation, conservative mutation, nonsense mutation, insertion/deletion (frameshift and in-frame), splice site mutations, trinucleotide repeat expansions, large segment insertion/deletions, promoter mutations",
+    "options": [
+      {
+        "text": "Large segment deletions of globin genes",
+        "isCorrect": true,
+        "rationale": "Correct: Alpha-thalassemia commonly results from large segment deletions or unequal crossover removing α-globin genes, as the slides explain."
+      },
+      {
+        "text": "Single-base missense substitutions",
+        "isCorrect": false,
+        "rationale": "Wrong: While single-base changes can affect genes, the slides highlight large deletions/unequal crossover as alpha-thalassemia causes."
+      },
+      {
+        "text": "Splice site point mutations",
+        "isCorrect": false,
+        "rationale": "Wrong: Splice site mutations are emphasized for β-thalassemia; alpha-thalassemia is mainly large gene deletions."
+      },
+      {
+        "text": "Three-base in-frame deletions",
+        "isCorrect": false,
+        "rationale": "Wrong: Three-base in-frame deletions are exemplified by CFTR ΔF508, not alpha-thalassemia."
+      },
+      {
+        "text": "Promoter point mutations",
+        "isCorrect": false,
+        "rationale": "Wrong: Promoter mutations reduce expression but the slides specifically cite large segment loss via unequal crossover for alpha-thalassemia."
+      }
+    ]
+  },
+  {
+    "question": "Which description best matches a nonstop (stop-loss) mutation effect described in the slides?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recognize, define, compare, and contrast the following mutation types: transition, transversion, silent mutation, missense mutation, conservative mutation, nonsense mutation, insertion/deletion (frameshift and in-frame), splice site mutations, trinucleotide repeat expansions, large segment insertion/deletions, promoter mutations",
+    "options": [
+      {
+        "text": "Stop codon changed to amino-acid codon",
+        "isCorrect": true,
+        "rationale": "Correct: Nonstop mutations convert a stop codon into a sense codon, producing extended translation as the slides describe."
+      },
+      {
+        "text": "Amino-acid codon changed to stop",
+        "isCorrect": false,
+        "rationale": "Wrong: That describes a nonsense mutation (early stop), the opposite of nonstop."
+      },
+      {
+        "text": "Three-base deletion removing residue",
+        "isCorrect": false,
+        "rationale": "Wrong: Three-base deletions are in-frame deletions removing amino acids; they are not nonstop changes."
+      },
+      {
+        "text": "Frameshift causing early truncation",
+        "isCorrect": false,
+        "rationale": "Wrong: Frameshifts typically cause premature stops, not loss of a stop codon and extension."
+      },
+      {
+        "text": "Splice donor site loss",
+        "isCorrect": false,
+        "rationale": "Wrong: Splice donor loss affects mRNA processing; it does not convert stop codons to amino-acid codons."
+      }
+    ]
+  },
+  {
+    "question": "Which mutation type is most likely to reduce mRNA levels by triggering hypermethylation of the gene promoter?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For the following trinucleotide repeat expansion diseases, name the gene and the location of the expansion and explain how that results in the symptoms that are seen (ie, explain the defective process at the molecular/cellular level): Fragile X Syndrome, Myotonic Dystrophy, and Huntington Disease",
+    "options": [
+      {
+        "text": "5' UTR trinucleotide expansion",
+        "isCorrect": true,
+        "rationale": "Correct: A 5' UTR expansion in FMR1 leads to hypermethylation and gene silencing, reducing mRNA and protein levels as the slides state."
+      },
+      {
+        "text": "Coding region CAG expansion",
+        "isCorrect": false,
+        "rationale": "Wrong: Coding CAG expansions (Huntington) produce toxic proteins rather than promoter hypermethylation."
+      },
+      {
+        "text": "3' UTR trinucleotide expansion",
+        "isCorrect": false,
+        "rationale": "Wrong: 3' UTR expansions (myotonic dystrophy) cause nuclear RNA toxicity and splicing defects, not promoter hypermethylation."
+      },
+      {
+        "text": "Intronic GAA expansion",
+        "isCorrect": false,
+        "rationale": "Wrong: Intronic GAA expansions (Friedreich's ataxia) reduce expression via heterochromatin but are intronic, not 5' UTR."
+      },
+      {
+        "text": "Promoter point mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: A promoter point mutation can reduce transcription but the slides specifically link 5' UTR repeat expansion to hypermethylation and silencing."
+      }
+    ]
+  },
+  {
+    "question": "Which slide-described mechanism explains why many frameshift mutations near the start of a coding sequence are more severe?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recognize, define, compare, and contrast the following mutation types: transition, transversion, silent mutation, missense mutation, conservative mutation, nonsense mutation, insertion/deletion (frameshift and in-frame), splice site mutations, trinucleotide repeat expansions, large segment insertion/deletions, promoter mutations",
+    "options": [
+      {
+        "text": "Altered reading frame producing truncated protein",
+        "isCorrect": true,
+        "rationale": "Correct: Frameshifts change the open reading frame and often create premature stops; earlier frameshifts truncate more of the protein, increasing severity as the slides note."
+      },
+      {
+        "text": "Loss of promoter binding sites",
+        "isCorrect": false,
+        "rationale": "Wrong: Loss of promoter sites affects transcription initiation; frameshifts in coding sequence do not directly alter promoter binding."
+      },
+      {
+        "text": "Silent codon preservation",
+        "isCorrect": false,
+        "rationale": "Wrong: Silent codon changes preserve amino acids and do not explain frameshift severity."
+      },
+      {
+        "text": "Conservative amino-acid substitution",
+        "isCorrect": false,
+        "rationale": "Wrong: Conservative substitutions change one amino acid to a similar one; they do not cause frameshift truncation."
+      },
+      {
+        "text": "Increased mRNA export",
+        "isCorrect": false,
+        "rationale": "Wrong: Increased mRNA export would not cause protein truncation; frameshifts alter translation reading frame instead."
+      }
+    ]
+  },
+  {
+    "question": "A point mutation at a canonical splice donor site causes skipping of an exon. Which immediate mRNA-level outcome is most consistent with the slides?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recognize, define, compare, and contrast the following mutation types: transition, transversion, silent mutation, missense mutation, conservative mutation, nonsense mutation, insertion/deletion (frameshift and in-frame), splice site mutations, trinucleotide repeat expansions, large segment insertion/deletions, promoter mutations",
+    "options": [
+      {
+        "text": "Exon deletion from mature mRNA",
+        "isCorrect": true,
+        "rationale": "Correct: Splice site mutations can lead to complete deletion of an exon from the final mRNA, as the slides describe."
+      },
+      {
+        "text": "Intron retention in mature mRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: While splice mutations can also cause intron retention, the stem specifies exon skipping; intron retention would be correct only if intron sequences remained."
+      },
+      {
+        "text": "Increased translation efficiency",
+        "isCorrect": false,
+        "rationale": "Wrong: Splice site mutations disrupt proper mRNA structure and typically reduce correct translation, not increase efficiency."
+      },
+      {
+        "text": "Silent synonymous substitution",
+        "isCorrect": false,
+        "rationale": "Wrong: Silent substitutions do not affect splicing; they preserve the amino acid and are not splice-site effects."
+      },
+      {
+        "text": "Promoter hyperactivation",
+        "isCorrect": false,
+        "rationale": "Wrong: Promoter hyperactivation affects transcription initiation; splice donor mutations affect post-transcriptional mRNA processing."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best defines the strict population-frequency distinction between mutation and polymorphism given in the slides?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Give the general definition of how the terms “mutation” and “polymorphism” are used as well as the more specific definition (1%)",
+    "options": [
+      {
+        "text": "Polymorphism frequency ≥ 1%",
+        "isCorrect": true,
+        "rationale": "Correct: The slides state a strict definition where polymorphisms occur at ≥1% frequency while mutations are  400 known mutations across 13 exons including missense, splice, nonsense, insertions, and deletions, explaining genetic heterogeneity."
+      },
+      {
+        "text": "PKU is caused only by promoter mutations",
+        "isCorrect": false,
+        "rationale": "Wrong: The slides list many mutation classes for PKU; promoter-only causation contradicts the documented diversity."
+      },
+      {
+        "text": "PKU results exclusively from trinucleotide expansions",
+        "isCorrect": false,
+        "rationale": "Wrong: Trinucleotide expansions are not the primary mechanism for PKU; the slides enumerate point mutations and indels instead."
+      },
+      {
+        "text": "PKU is always due to large segment deletions",
+        "isCorrect": false,
+        "rationale": "Wrong: Large deletions are not the predominant cause; the slides emphasize many point and small indel mutations across exons."
+      },
+      {
+        "text": "PKU variants are limited to introns",
+        "isCorrect": false,
+        "rationale": "Wrong: The slides state mutations occur in exons and introns, with many in coding exons; limiting to introns contradicts the slide content."
+      }
+    ]
+  },
+  {
+    "question": "Which option best captures the slide explanation for why most of the human genome tolerates high sequence variability without disease?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Give the general definition of how the terms “mutation” and “polymorphism” are used as well as the more specific definition (1%)",
+    "options": [
+      {
+        "text": "Most genome is noncoding with little selection",
+        "isCorrect": true,
+        "rationale": "Correct: Slides state only a few percent of the genome codes for proteins and intervening noncoding regions face little selection, allowing hypervariability."
+      },
+      {
+        "text": "All noncoding variants are pathogenic",
+        "isCorrect": false,
+        "rationale": "Wrong: The slides indicate most noncoding variants are not harmful; claiming all are pathogenic contradicts the material."
+      },
+      {
+        "text": "Coding regions are hypervariable",
+        "isCorrect": false,
+        "rationale": "Wrong: Coding regions are constrained; the slides emphasize intervening noncoding sequences as hypervariable."
+      },
+      {
+        "text": "Selection increases variation in exons",
+        "isCorrect": false,
+        "rationale": "Wrong: Selection typically reduces harmful variation in exons; the slides say noncoding regions have less selection pressure."
+      },
+      {
+        "text": "Polymorphisms always alter protein function",
+        "isCorrect": false,
+        "rationale": "Wrong: Slides note most polymorphisms are in noncoding regions and do not affect protein function."
+      }
+    ]
+  },
+  {
+    "question": "Which option is the most likely molecular explanation, per the slides, for recurrent lung infections in cystic fibrosis patients?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For the following diseases, name the mutation type(s) commonly associated with them: alpha thalassemia, beta thalassemia, sickle cell anemia, PKU, and cystic fibrosis",
+    "options": [
+      {
+        "text": "Dehydrated airway mucus from reduced chloride secretion",
+        "isCorrect": true,
+        "rationale": "Correct: Slides explain CFTR dysfunction reduces chloride secretion, dehydrating mucus, obstructing airways, and predisposing to recurrent infections."
+      },
+      {
+        "text": "Autoimmune destruction of bronchial epithelium",
+        "isCorrect": false,
+        "rationale": "Wrong: The slides attribute lung disease to defective chloride transport and mucus dehydration, not autoimmune epithelial destruction."
+      },
+      {
+        "text": "Excessive chloride secretion causing fluid overload",
+        "isCorrect": false,
+        "rationale": "Wrong: CF involves reduced chloride secretion and dehydrated mucus; excessive secretion contradicts the slide mechanism."
+      },
+      {
+        "text": "Primary ciliary dyskinesia from dynein mutation",
+        "isCorrect": false,
+        "rationale": "Wrong: Primary ciliary dyskinesia is a separate cause of recurrent infections; slides link CF infections to CFTR-related mucus dehydration."
+      },
+      {
+        "text": "Pancreatic enzyme hypersecretion causing aspiration",
+        "isCorrect": false,
+        "rationale": "Wrong: Pancreatic insufficiency occurs in CF but does not explain recurrent pulmonary infections; aspiration from enzyme hypersecretion is not slide-described."
+      }
+    ]
+  },
+  {
+    "question": "Which option best describes the slide distinction between transition and transversion mutations?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Recognize, define, compare, and contrast the following mutation types: transition, transversion, silent mutation, missense mutation, conservative mutation, nonsense mutation, insertion/deletion (frameshift and in-frame), splice site mutations, trinucleotide repeat expansions, large segment insertion/deletions, promoter mutations",
+    "options": [
+      {
+        "text": "Transition: purine↔purine or pyrimidine↔pyrimidine",
+        "isCorrect": true,
+        "rationale": "Correct: Slides define transition as replacement within the same base class (purine→purine or pyrimidine→pyrimidine)."
+      },
+      {
+        "text": "Transversion: purine↔purimidine",
+        "isCorrect": false,
+        "rationale": "Wrong: While transversion is purine↔pyrimidine, this option misspells pyrimidine and thus is not the best match; the correct contrast is transition as defined above."
+      },
+      {
+        "text": "Transition: insertion of bases",
+        "isCorrect": false,
+        "rationale": "Wrong: Transitions are single-base substitutions, not insertions; insertions are indels and may cause frameshifts."
+      },
+      {
+        "text": "Transversion: deletion of codons",
+        "isCorrect": false,
+        "rationale": "Wrong: Transversions are base substitutions between classes, not codon deletions; deletions are indels."
+      },
+      {
+        "text": "Transition: change to stop codon",
+        "isCorrect": false,
+        "rationale": "Wrong: Change to a stop codon is a nonsense mutation, not the definition of a transition substitution."
+      }
+    ]
+  },
+  {
+    "question": "Which option best predicts the immediate mRNA consequence if a splice-site point mutation causes retention of intronic sequence?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recognize, define, compare, and contrast the following mutation types: transition, transversion, silent mutation, missense mutation, conservative mutation, nonsense mutation, insertion/deletion (frameshift and in-frame), splice site mutations, trinucleotide repeat expansions, large segment insertion/deletions, promoter mutations",
+    "options": [
+      {
+        "text": "Aberrant mRNA containing intronic nucleotides",
+        "isCorrect": true,
+        "rationale": "Correct: Splice-site mutations can leave intronic nucleotides in the mature mRNA, producing aberrant transcripts as the slides describe."
+      },
+      {
+        "text": "Increased promoter-driven mRNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Promoter-driven increases affect transcription initiation; intron retention is a post-transcriptional splicing defect."
+      },
+      {
+        "text": "Complete loss of genomic DNA",
+        "isCorrect": false,
+        "rationale": "Wrong: Splice-site mutations alter RNA processing; they do not delete genomic DNA."
+      },
+      {
+        "text": "Silent synonymous mRNA sequence",
+        "isCorrect": false,
+        "rationale": "Wrong: Silent synonymous changes preserve amino acids and do not explain intron retention in mRNA."
+      },
+      {
+        "text": "Three-base codon insertion",
+        "isCorrect": false,
+        "rationale": "Wrong: A three-base insertion is an in-frame indel; intron retention involves inclusion of noncoding intronic sequence, not a simple codon insertion."
+      }
+    ]
+  },
+  {
+    "question": "Which option best reflects the slide explanation for why some disease-causing alleles can exceed 1% frequency in a population?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Give the general definition of how the terms “mutation” and “polymorphism” are used as well as the more specific definition (1%)",
+    "options": [
+      {
+        "text": "Frequency cutoff is imperfect; exceptions exist",
+        "isCorrect": true,
+        "rationale": "Correct: Slides caution that the strict 1% cutoff has exceptions: some disease genes occur >1% and some polymorphisms <1%, so frequency alone is imperfect."
+      },
+      {
+        "text": "All disease alleles are always rare",
+        "isCorrect": false,
+        "rationale": "Wrong: The slides explicitly note that some disease alleles can be common, so this absolute statement is incorrect."
+      },
+      {
+        "text": "Polymorphisms never affect phenotype",
+        "isCorrect": false,
+        "rationale": "Wrong: While many polymorphisms are benign, the slides acknowledge some polymorphisms can have disease consequences, so this is false."
+      },
+      {
+        "text": "Mutation definition is based on function only",
+        "isCorrect": false,
+        "rationale": "Wrong: The slide gives a frequency-based definition (<1%) and notes functional exceptions; it is not solely function-based."
+      },
+      {
+        "text": "1% cutoff applies only to coding variants",
+        "isCorrect": false,
+        "rationale": "Wrong: The slide presents the 1% frequency rule generally and warns about exceptions; it does not limit the cutoff to coding variants."
+      }
+    ]
+  },
+  {
+    "question": "Which option best matches the slide-described molecular basis for macro-orchidism and intellectual disability in Fragile X syndrome?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For the following trinucleotide repeat expansion diseases, name the gene and the location of the expansion and explain how that results in the symptoms that are seen (ie, explain the defective process at the molecular/cellular level): Fragile X Syndrome, Myotonic Dystrophy, and Huntington Disease",
+    "options": [
+      {
+        "text": "FMR1 5' UTR expansion causing gene silencing",
+        "isCorrect": true,
+        "rationale": "Correct: Slides state Fragile X involves a 5' UTR expansion in FMR1 leading to hypermethylation and silencing, reducing FMRP and causing intellectual disability and macro-orchidism."
+      },
+      {
+        "text": "DMPK 3' UTR expansion causing splicing defects",
+        "isCorrect": false,
+        "rationale": "Wrong: DMPK 3' UTR expansions cause myotonic dystrophy with splicing defects, not Fragile X features."
+      },
+      {
+        "text": "HTT coding CAG expansion causing neuronal loss",
+        "isCorrect": false,
+        "rationale": "Wrong: HTT CAG expansions cause Huntington disease neurodegeneration, not Fragile X macro-orchidism or FMR1 silencing."
+      },
+      {
+        "text": "Intronic GAA expansion causing cardiomyopathy",
+        "isCorrect": false,
+        "rationale": "Wrong: Intronic GAA expansions (Friedreich's ataxia) cause cardiomyopathy and ataxia, not Fragile X intellectual disability."
+      },
+      {
+        "text": "CFTR in-frame deletion causing chloride loss",
+        "isCorrect": false,
+        "rationale": "Wrong: CFTR ΔF508 causes cystic fibrosis; it is unrelated to Fragile X molecular pathology."
+      }
+    ]
+  },
+  {
+    "question": "Which option best describes the slide-stated relationship between mutation type and severity in Duchenne versus Becker muscular dystrophy?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recognize, define, compare, and contrast the following mutation types: transition, transversion, silent mutation, missense mutation, conservative mutation, nonsense mutation, insertion/deletion (frameshift and in-frame), splice site mutations, trinucleotide repeat expansions, large segment insertion/deletions, promoter mutations",
+    "options": [
+      {
+        "text": "Duchenne: frameshift; Becker: in-frame",
+        "isCorrect": true,
+        "rationale": "Correct: Slides use Duchenne (frameshift) and Becker (in-frame) dystrophies to illustrate that frameshifts are generally more severe than in-frame deletions."
+      },
+      {
+        "text": "Duchenne: in-frame; Becker: frameshift",
+        "isCorrect": false,
+        "rationale": "Wrong: This reverses the slide example; Duchenne is frameshift (severe) and Becker is in-frame (less severe)."
+      },
+      {
+        "text": "Both caused by promoter mutations",
+        "isCorrect": false,
+        "rationale": "Wrong: Promoter mutations affect expression but the slide contrast specifically uses frameshift vs in-frame coding indels."
+      },
+      {
+        "text": "Both are silent synonymous changes",
+        "isCorrect": false,
+        "rationale": "Wrong: Silent changes do not alter protein sequence and cannot explain the Duchenne/Becker phenotypic differences."
+      },
+      {
+        "text": "Both due to trinucleotide expansions",
+        "isCorrect": false,
+        "rationale": "Wrong: Duchenne/Becker are due to dystrophin gene indels, not trinucleotide repeat expansions."
+      }
+    ]
+  },
+  {
+    "question": "Which option best matches the slide explanation for why some nonstop mutations lead to proteasomal degradation while others deplete mRNA?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recognize, define, compare, and contrast the following mutation types: transition, transversion, silent mutation, missense mutation, conservative mutation, nonsense mutation, insertion/deletion (frameshift and in-frame), splice site mutations, trinucleotide repeat expansions, large segment insertion/deletions, promoter mutations",
+    "options": [
+      {
+        "text": "Extension length influences mRNA or protein fate",
+        "isCorrect": true,
+        "rationale": "Correct: Slides give examples where short extensions (VHL) lead to proteasomal degradation while very long extensions (BAP1) deplete mRNA, indicating extension length affects outcome."
+      },
+      {
+        "text": "Stop-loss always increases protein stability",
+        "isCorrect": false,
+        "rationale": "Wrong: The slides show stop-loss can either destabilize protein or deplete mRNA depending on extension length; it does not always increase stability."
+      },
+      {
+        "text": "Nonstop mutations always cause frameshifts",
+        "isCorrect": false,
+        "rationale": "Wrong: Nonstop mutations change termination codons but do not inherently create frameshifts; frameshifts require indels."
+      },
+      {
+        "text": "Proteasomal degradation only occurs for intronic changes",
+        "isCorrect": false,
+        "rationale": "Wrong: Proteasomal degradation follows abnormal protein extensions, not intronic changes; the slide example links short extensions to degradation."
+      },
+      {
+        "text": "mRNA depletion occurs only with promoter mutations",
+        "isCorrect": false,
+        "rationale": "Wrong: mRNA depletion in the slide is linked to very long nonstop extensions, not promoter mutations."
+      }
+    ]
+  },
+  {
+    "question": "Which option best represents a plausible slide-based reason why some polymorphisms in noncoding regions persist at high frequency?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Give the general definition of how the terms “mutation” and “polymorphism” are used as well as the more specific definition (1%)",
+    "options": [
+      {
+        "text": "Lack of selection pressure in intervening sequences",
+        "isCorrect": true,
+        "rationale": "Correct: Slides state intervening noncoding sequences face little selection pressure, allowing variants to accumulate and persist at higher frequencies as polymorphisms."
+      },
+      {
+        "text": "They always confer strong selective advantage",
+        "isCorrect": false,
+        "rationale": "Wrong: The slides do not claim polymorphisms always confer advantage; many persist because of neutral drift in noncoding regions."
+      },
+      {
+        "text": "They are rapidly purged by purifying selection",
+        "isCorrect": false,
+        "rationale": "Wrong: Rapid purging would prevent high-frequency polymorphisms; slides indicate low selection allows hypervariability."
+      },
+      {
+        "text": "They always alter protein coding",
+        "isCorrect": false,
+        "rationale": "Wrong: Most polymorphisms are in noncoding regions and do not alter protein coding, per the slides."
+      },
+      {
+        "text": "They result only from recent founder effects",
+        "isCorrect": false,
+        "rationale": "Wrong: While founder effects can raise allele frequency, the slides emphasize general lack of selection in noncoding regions as a broader explanation."
+      }
+    ]
+  },
+  {
+    "question": "Which option best describes the slide-stated immediate molecular consequence of a nonsense mutation occurring early in a coding exon?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recognize, define, compare, and contrast the following mutation types: transition, transversion, silent mutation, missense mutation, conservative mutation, nonsense mutation, insertion/deletion (frameshift and in-frame), splice site mutations, trinucleotide repeat expansions, large segment insertion/deletions, promoter mutations",
+    "options": [
+      {
+        "text": "Premature stop leading to truncated protein",
+        "isCorrect": true,
+        "rationale": "Correct: Nonsense mutations change an amino-acid codon to a stop codon, producing early termination and truncated protein as the slides explain."
+      },
+      {
+        "text": "Synonymous codon with no change",
+        "isCorrect": false,
+        "rationale": "Wrong: Synonymous (silent) mutations do not change the amino acid and do not produce premature stops."
+      },
+      {
+        "text": "In-frame amino-acid deletion",
+        "isCorrect": false,
+        "rationale": "Wrong: In-frame deletions remove whole codons; nonsense mutations introduce stop codons rather than deleting amino acids."
+      },
+      {
+        "text": "Increased mRNA splicing accuracy",
+        "isCorrect": false,
+        "rationale": "Wrong: Nonsense mutations affect translation termination, not splicing accuracy."
+      },
+      {
+        "text": "Nonstop extension of protein",
+        "isCorrect": false,
+        "rationale": "Wrong: Nonstop mutations remove stop codons causing extension; nonsense mutations create stop codons causing truncation."
+      }
+    ]
+  },
+  {
+    "question": "Which option best matches the slide explanation for how trinucleotide repeat expansions in different gene regions produce distinct disease mechanisms?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For the following trinucleotide repeat expansion diseases, name the gene and the location of the expansion and explain how that results in the symptoms that are seen (ie, explain the defective process at the molecular/cellular level): Fragile X Syndrome, Myotonic Dystrophy, and Huntington Disease",
+    "options": [
+      {
+        "text": "Location dictates silencing, RNA toxicity, or protein toxicity",
+        "isCorrect": true,
+        "rationale": "Correct: Slides explain 5' UTR expansions cause silencing (Fragile X), 3' UTR expansions cause RNA-mediated splicing toxicity (myotonic dystrophy), and coding expansions cause toxic proteins (Huntington)."
+      },
+      {
+        "text": "All expansions always cause promoter hypermethylation",
+        "isCorrect": false,
+        "rationale": "Wrong: Only certain 5' UTR expansions cause hypermethylation; other locations produce RNA or protein toxicity instead."
+      },
+      {
+        "text": "All expansions always produce polyglutamine proteins",
+        "isCorrect": false,
+        "rationale": "Wrong: Polyglutamine proteins arise from coding CAG repeats; expansions in UTRs or introns do not produce polyglutamine tracts."
+      },
+      {
+        "text": "Location is irrelevant to mechanism",
+        "isCorrect": false,
+        "rationale": "Wrong: The slides emphasize that the genomic location of the repeat determines whether the effect is silencing, RNA toxicity, or protein aggregation."
+      },
+      {
+        "text": "All expansions always cause frameshift mutations",
+        "isCorrect": false,
+        "rationale": "Wrong: Repeat expansions do not universally cause frameshifts; coding expansions add amino-acid repeats, while UTR/intronic expansions affect regulation or RNA processing."
+      }
+    ]
+  }
+]
