@@ -805,6 +805,7 @@ mark.medstep-highlight { background-color: rgba(230, 126, 34, 0.4); color: inher
 .lab-table td { padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
 .lab-val { text-align: right; color: var(--primary); }
 .option-row.disabled{cursor:default}
+.option-row.exam-locked{border-color:var(--text);background:rgba(127,127,127,.14)}
 .option-letter{min-width:24px;width:auto;height:24px;padding:0 5px;background:var(--primary);color:#fff;border-radius:5px;display:flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0;font-size:.72rem;font-family:var(--font-mono);box-sizing:border-box}
 #options-list{display:flex;flex-direction:column}
 .option-text{flex-grow:1;font-size:.88rem;line-height:1.4;overflow-wrap:break-word;word-wrap:break-word}
@@ -1622,7 +1623,9 @@ body.library-open #library-toggle { display: none; }
 .lib-quiz-btn.staged { border-color: var(--success); background: rgba(46,204,113,.07); }
 .lib-quiz-btn.staged:hover { border-color: var(--success); filter: brightness(1.1); }
 .lib-quiz-btn .lib-icon { font-size: 1.1rem; flex-shrink: 0; }
-.lib-quiz-meta { font-size: .62rem; font-family: var(--font-mono); opacity: .4; font-weight: 400; margin-top: 1px; }
+.lib-quiz-meta { font-size: .62rem; font-family: var(--font-mono); font-weight: 400; margin-top: 1px; }
+.lib-meta-faded { opacity: .4; }
+.lib-progress-done { color: var(--success); font-weight: 700; }
 /* Add Quiz Modal */
 #add-quiz-modal {
   position: fixed; inset: 0; background: rgba(0,0,0,.65);
@@ -1866,7 +1869,26 @@ body.library-open #library-toggle { display: none; }
 }
 .qpicker-subtitle {
   font-family: var(--font-mono); font-size: .72rem; color: var(--subtle);
-  margin-bottom: 22px;
+  margin-bottom: 8px;
+}
+.qpicker-progress-actions {
+  display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+  margin: 0 0 16px;
+}
+.qpicker-text-btn {
+  background: none; border: none; padding: 0; cursor: pointer;
+  color: var(--subtle); font-family: var(--font-mono);
+  font-size: .68rem; font-weight: 700;
+  text-decoration: underline; text-underline-offset: 2px;
+}
+.qpicker-text-btn:hover { color: var(--primary); }
+.qpicker-repeat-wrap { margin: 2px 8px 12px; text-align: left; }
+.qpicker-repeat-wrap.hidden { display: none; }
+.qpicker-repeat-label {
+  font-size: .68rem; font-family: var(--font-mono); opacity: .7; margin-bottom: 4px;
+}
+.qpicker-repeat-wrap input[type="range"] {
+  width: 100%; accent-color: var(--primary); height: 4px; cursor: pointer;
 }
 .qpicker-slider-wrap {
   display: flex; align-items: center; gap: 10px; margin-bottom: 8px;
@@ -2106,7 +2128,11 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
 <div id="qcount-picker-modal" onclick="if(event.target===this)closeQPicker()">
   <div class="qpicker-card">
     <div class="qpicker-title">How many questions?</div>
-    <div class="qpicker-subtitle" id="qpicker-pool-info">0 questions available</div>
+    <div class="qpicker-subtitle" id="qpicker-pool-info">0 new of 0</div>
+    <div class="qpicker-progress-actions">
+      <button type="button" class="qpicker-text-btn" onclick="markQPickerSetComplete()">Mark set complete</button>
+      <button type="button" class="qpicker-text-btn" onclick="clearQPickerProgress()">Clear progress</button>
+    </div>
     <div class="qpicker-slider-wrap">
       <button type="button" class="qpicker-nudge" id="qpicker-minus"
               aria-label="One fewer question" onclick="nudgeQPickerValue(-1)">−</button>
@@ -2127,6 +2153,16 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
     <div class="qpicker-order-panel" id="qpicker-order-panel" hidden>
       <div id="qpicker-order-rows"></div>
       <div class="qpicker-order-hint" id="qpicker-order-hint"></div>
+    </div>
+    <div class="qpicker-mix-bar" id="qpicker-pool-bar" role="group" aria-label="Which questions to draw">
+      <button type="button" class="qpicker-mix-btn" id="qpicker-pool-new" onclick="setQPickerPoolMode('new')">New</button>
+      <button type="button" class="qpicker-mix-btn" id="qpicker-pool-mix" onclick="setQPickerPoolMode('mix')">Mix</button>
+      <button type="button" class="qpicker-mix-btn active" id="qpicker-pool-all" onclick="setQPickerPoolMode('all')">All</button>
+    </div>
+    <div id="qpicker-repeat-wrap" class="qpicker-repeat-wrap hidden">
+      <div class="qpicker-repeat-label" id="qpicker-repeat-label">Repeats 25%</div>
+      <input type="range" id="qpicker-repeat-slider" min="0" max="100" step="1" value="25"
+             oninput="setQPickerRepeatPct(this.value)" aria-label="Percent of the draw that may be previously answered">
     </div>
     <div id="qpicker-build-status"></div>
     <div class="qpicker-actions">
@@ -2461,9 +2497,19 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
 
   <hr class="settings-divider">
 
-  <div class="setting-row">
-    <span>Real-time Feedback</span>
-    <label class="switch"><input type="checkbox" id="feedback-toggle" checked onchange="saveFeedbackPref();renderGrid()"><span class="slider"></span></label>
+  <div class="setting-row setting-row-stack" id="feedback-setting">
+    <div class="setting-row-head">
+      <span>Real-time Feedback</span>
+      <label class="switch"><input type="checkbox" id="feedback-toggle" checked onchange="saveFeedbackPref();renderGrid()"><span class="slider"></span></label>
+    </div>
+    <p class="setting-desc hidden" id="feedback-exam-note">Real-time Feedback is inactive for this attempt while Exam Mode is on.</p>
+  </div>
+  <div class="setting-row setting-row-stack" id="exam-mode-setting">
+    <div class="setting-row-head">
+      <span>Exam Mode</span>
+      <label class="switch"><input type="checkbox" id="exam-mode-toggle" onchange="saveExamModePref()"><span class="slider"></span></label>
+    </div>
+    <p class="setting-desc">Choices lock in. Correctness and explanations wait until you finish and review the quiz.</p>
   </div>
   <div class="setting-row">
     <span>Exam Grid</span>
@@ -2478,7 +2524,7 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
       <span>Question Pace Timer</span>
       <label class="switch"><input type="checkbox" id="pace-timer-toggle" onchange="savePaceTimerPref()"><span class="slider"></span></label>
     </div>
-    <p class="setting-desc">Limits how long you have per question. When time runs out, the correct answer is selected automatically and the quiz advances to the next question. A 10-second warning appears before auto-answer.</p>
+    <p class="setting-desc" id="pace-timer-desc">Limits how long you have per question. When time runs out, the correct answer is selected automatically and the quiz advances to the next question. A 10-second warning appears before auto-answer.</p>
     <div id="pace-timer-seconds-wrap" class="pace-seconds-wrap hidden">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
         <span style="font-size:.78rem;font-weight:600">Seconds per question</span>
@@ -3384,6 +3430,11 @@ const LS_PREF_TIMER_VISIBLE='medstep_pref_timer_visible';
 const LS_PREF_PACE_TIMER='medstep_pref_pace_timer';
 const LS_PREF_PACE_SECONDS='medstep_pref_pace_seconds';
 const LS_PREF_MULTIBUZZ='medstep_pref_multibuzz';
+const LS_PREF_QUESTION_POOL='medstep_pref_question_pool';
+const LS_PREF_REPEAT_PCT='medstep_pref_repeat_pct';
+const LS_PREF_EXAM_MODE='medstep_pref_exam_mode';
+const LS_QUESTION_PROGRESS='medstep_question_progress';
+const DEFAULT_REPEAT_PCT=25;
 const LS_ACTIVE_QUIZ='medstep_active_quiz';
 const QUIZ_RESUME_PREFIX='MSQUIZ1:';
 const ACTIVE_QUIZ_MAX_AGE_MS=7*24*60*60*1000;
@@ -3402,6 +3453,29 @@ const REPORT_GITHUB_BRANCH='main';
 
 function saveFeedbackPref(){
   localStorage.setItem(LS_PREF_FEEDBACK, document.getElementById('feedback-toggle').checked?'1':'0');
+}
+function isExamModeOn(){
+  const el=document.getElementById('exam-mode-toggle');
+  return !!(el&&el.checked);
+}
+function applyExamModeNotes(){
+  const on=isExamModeOn();
+  const note=document.getElementById('feedback-exam-note');
+  if(note) note.classList.toggle('hidden',!on);
+  const pace=document.getElementById('pace-timer-desc');
+  if(pace){
+    if(!pace.dataset.normal) pace.dataset.normal=pace.textContent;
+    pace.textContent=on
+      ? 'Limits how long you have per question. When time runs out in Exam Mode, the question is left unanswered and the quiz advances. The correct choice is not shown. A 10-second warning appears before time runs out.'
+      : pace.dataset.normal;
+  }
+}
+function saveExamModePref(){
+  localStorage.setItem(LS_PREF_EXAM_MODE, isExamModeOn()?'1':'0');
+  applyExamModeNotes();
+  const onQuiz=questions.length&&document.getElementById('quiz-screen')&&!document.getElementById('quiz-screen').classList.contains('hidden');
+  if(onQuiz) loadQuestion(currentIdx);
+  else if(typeof renderGrid==='function'&&questions.length) renderGrid();
 }
 function saveExamGridPref(){
   localStorage.setItem(LS_PREF_EXAM_GRID, document.getElementById('grid-toggle').checked?'1':'0');
@@ -3534,6 +3608,14 @@ function autoAnswerPaceTimeout(){
   if(isReviewMode||isFlaggedReviewMode)return;
   const q=questions[currentIdx];
   if(!q||q.userAnswer)return;
+  if(isExamModeOn()){
+    showToast("Time's up — question left unanswered");
+    const isLastExam=isFlaggedReviewMode
+      ? flaggedReviewPos===flaggedReviewIndices.length-1
+      : currentIdx===questions.length-1;
+    if(!isLastExam) changeQ(1);
+    return;
+  }
   const correct=q.options.find(o=>o.isCorrect);
   if(!correct)return;
   selectAnswer(correct);
@@ -3592,6 +3674,12 @@ function loadEnginePrefs(){
     const m=localStorage.getItem(LS_PREF_MULTIBUZZ);
     if(m!==null) mb.checked=m==='1';
   }
+  const exam=document.getElementById('exam-mode-toggle');
+  if(exam){
+    const em=localStorage.getItem(LS_PREF_EXAM_MODE);
+    if(em!==null) exam.checked=em==='1';
+  }
+  applyExamModeNotes();
   const paceVal=document.getElementById('pace-seconds-val');
   if(paceVal) paceVal.textContent=getPaceSecondsLimit()+'s';
   updatePaceSecondsWrapVisibility();
@@ -3614,6 +3702,75 @@ function refreshTimerDisplay(){
   if(!q)return;
   const t=q.time|0;
   td.innerText=`${String(Math.floor(t/60)).padStart(2,'0')}:${String(t%60).padStart(2,'0')}`;
+}
+
+// ── Question progress (stem hash per library file) ──────
+function questionProgressFile(q){
+  const file=q&&q._src&&q._src.file;
+  if(!file) return '';
+  return String(file).replace(/^quizzes\//,'');
+}
+function questionStemHash(q){
+  const stem=normalizeQuestionText(quizQuestionStem(q)||'').toLowerCase();
+  if(!stem) return '';
+  let h=2166136261;
+  for(let i=0;i<stem.length;i++){
+    h^=stem.charCodeAt(i);
+    h=Math.imul(h,16777619);
+  }
+  return (h>>>0).toString(16);
+}
+function readQuestionProgress(){
+  try{
+    const data=JSON.parse(localStorage.getItem(LS_QUESTION_PROGRESS)||'{}');
+    return data&&typeof data==='object'&&!Array.isArray(data)?data:{};
+  }catch(e){ return {}; }
+}
+function writeQuestionProgress(data){
+  try{ localStorage.setItem(LS_QUESTION_PROGRESS, JSON.stringify(data||{})); }catch(e){}
+}
+function getFileProgress(file){
+  const key=String(file||'').replace(/^quizzes\//,'');
+  if(!key) return null;
+  const rec=readQuestionProgress()[key];
+  return rec&&typeof rec==='object'&&!Array.isArray(rec)?rec:null;
+}
+function isQuestionSeen(q, data){
+  const file=questionProgressFile(q);
+  if(!file) return false;
+  const store=data||readQuestionProgress();
+  const rec=store[file];
+  if(!rec||typeof rec!=='object') return false;
+  if(rec.markedComplete) return true;
+  const hash=questionStemHash(q);
+  return !!(hash&&rec.completed&&rec.completed[hash]);
+}
+function recordQuestionCompleted(q){
+  const file=questionProgressFile(q);
+  const hash=questionStemHash(q);
+  if(!file||!hash) return false;
+  const data=readQuestionProgress();
+  if(!data[file]||typeof data[file]!=='object'||Array.isArray(data[file])) data[file]={completed:{}};
+  if(!data[file].completed||typeof data[file].completed!=='object') data[file].completed={};
+  const already=!!data[file].completed[hash]||!!data[file].markedComplete;
+  data[file].completed[hash]=1;
+  writeQuestionProgress(data);
+  return !already;
+}
+function undoQuestionCompleted(q){
+  if(!q||!q._progressNew) return;
+  const file=q._progressFile||questionProgressFile(q);
+  const hash=q._progressHash||questionStemHash(q);
+  q._progressNew=false;
+  q._progressFile='';
+  q._progressHash='';
+  if(!file||!hash) return;
+  const data=readQuestionProgress();
+  const rec=data[file];
+  if(rec&&rec.completed) delete rec.completed[hash];
+  const left=rec&&rec.completed?Object.keys(rec.completed).length:0;
+  if(rec&&!left&&!rec.markedComplete) delete data[file];
+  writeQuestionProgress(data);
 }
 
 // ══ SETTINGS ═════════════════════════════════════════════
@@ -9349,6 +9506,13 @@ const BACKUP_PREF_ALIASES = {
   pace_seconds: 'medstep_pref_pace_seconds',
   pref_multibuzz: 'medstep_pref_multibuzz',
   multibuzz: 'medstep_pref_multibuzz',
+  pref_question_pool: 'medstep_pref_question_pool',
+  question_pool: 'medstep_pref_question_pool',
+  pref_repeat_pct: 'medstep_pref_repeat_pct',
+  repeat_pct: 'medstep_pref_repeat_pct',
+  pref_exam_mode: 'medstep_pref_exam_mode',
+  exam_mode: 'medstep_pref_exam_mode',
+  question_progress: 'medstep_question_progress',
   lib_filters: 'medstep_lib_filters',
   library_filters: 'medstep_lib_filters',
   library_source: 'medstep_library_source',
@@ -9742,9 +9906,12 @@ const row = document.createElement('div'); row.className = 'option-row';
 // Check if this specific choice was hidden by distraction hider
 if (opt._hidden) row.classList.add('choice-hidden');
 
+const examLock = isExamModeOn() && !isReviewMode;
 if (q.userAnswer) {
   row.classList.add('disabled');
-  if (opt.isCorrect) { row.style.borderColor = 'var(--success)'; row.style.background = 'rgba(46,204,113,0.05)'; }
+  if (examLock) {
+    if (opt === q.userAnswer) row.classList.add('exam-locked');
+  } else if (opt.isCorrect) { row.style.borderColor = 'var(--success)'; row.style.background = 'rgba(46,204,113,0.05)'; }
   else if (opt === q.userAnswer) { row.style.borderColor = 'var(--danger)'; row.style.background = 'rgba(231,76,60,0.06)'; }
 } else {
   row.onclick = () => selectAnswer(opt);
@@ -9758,7 +9925,7 @@ row.innerHTML = `
 `;
 wrap.appendChild(row);
 
-if (q.userAnswer) {
+if (q.userAnswer && !examLock) {
   const rat = document.createElement('div'); rat.className = 'rationale-bubble';
   rat.innerText = (opt.isCorrect ? '✅ ' : '❌ ') + opt.rationale; wrap.appendChild(rat);
 }
@@ -9778,7 +9945,13 @@ list.appendChild(wrap);
 function selectAnswer(opt){
   if(isReviewMode)return;
   const q=questions[currentIdx];if(q.userAnswer)return;
-  q.userAnswer=opt;loadQuestion(currentIdx);
+  q.userAnswer=opt;
+  if(recordQuestionCompleted(q)){
+    q._progressNew=true;
+    q._progressFile=questionProgressFile(q);
+    q._progressHash=questionStemHash(q);
+  }
+  loadQuestion(currentIdx);
   const allDone=questions.every(q=>q.userAnswer);
   const isLast=currentIdx===questions.length-1;
   document.getElementById('finish-btn').style.display=(allDone&&isLast)?'inline-flex':'none';
@@ -9788,6 +9961,7 @@ function selectAnswer(opt){
 function undoAnswer(){
   if(isReviewMode)return;
   const q=questions[currentIdx];if(!q.userAnswer)return;
+  if(q._progressNew) undoQuestionCompleted(q);
   q.userAnswer=null;loadQuestion(currentIdx);showToast('↩️ Answer cleared');
   persistActiveQuiz(true);
 }
@@ -10010,7 +10184,8 @@ function reviewObjectiveQuestion(loKey, startIdx){
 // ══ GRID ═════════════════════════════════════════════════
 function renderGrid(){
   const grid=document.getElementById('nav-grid');
-  const fb=document.getElementById('feedback-toggle').checked;
+  const examLock=isExamModeOn()&&!isReviewMode;
+  const fb=document.getElementById('feedback-toggle').checked&&!examLock;
   grid.innerHTML='';
   questions.forEach((q,i)=>{
     const b=document.createElement('div');b.className='nav-box';
@@ -12015,6 +12190,7 @@ function toggleLibrary() {
   document.body.classList.toggle('library-open', libraryOpen);
   document.body.style.overflow = libraryOpen ? 'hidden' : '';
   if (libraryOpen && libraryManifest.length === 0) refreshLibrary();
+  else if (libraryOpen) renderLibrary();
 }
 function openLibrary() {
   if (!libraryOpen) toggleLibrary();
@@ -12226,13 +12402,15 @@ function launchStagedQuizzes() {
       source: isPersonalFile(s.file) ? 'personal' : 'library'
     })
   );
-  const raw = stagedQuizzes.flatMap(s =>
+  let raw = stagedQuizzes.flatMap(s =>
     stampQuestionsFromEntry(s.json, findLibraryEntry(s.file) || {
       title: s.title,
       file: s.file,
       source: isPersonalFile(s.file) ? 'personal' : 'library'
     })
   );
+  raw = applySavedPoolToQuestions(raw);
+  if (!raw) return;
   toggleLibrary();
   buildQuiz(raw, metaFromQuizSources(details));
 }
@@ -12300,44 +12478,152 @@ function qpickerOrderSum() {
 
 function qpickerSelectableMax() {
   if (_qpickerMixMode === 'custom') return qpickerTaggedTotal();
+  if (getQuestionPoolMode() === 'new') return countUnseenQuestions(_qpickerPool);
   return _qpickerPool.length;
 }
 
 function qpickerPoolBreakdownText() {
+  const buckets = qpickerBuildBuckets(_qpickerPool);
   const parts = [];
   ['1st', '2nd', '3rd'].forEach(k => {
-    if (_qpickerOrderAvail[k]) parts.push(_qpickerOrderAvail[k] + ' ' + k);
+    if (buckets[k].length) parts.push(buckets[k].length + ' ' + k);
   });
-  if (_qpickerOrderAvail.other) parts.push(_qpickerOrderAvail.other + ' untagged');
+  if (buckets.other.length) parts.push(buckets.other.length + ' untagged');
   return parts.join(' · ');
 }
 
-function showQPicker(pool, label) {
-  _qpickerPool = pool;
-  _qpickerCurrentLabel = label || 'Unknown';
-  _qpickerBuckets = qpickerBuildBuckets(pool);
+function countUnseenQuestions(pool) {
+  let n = 0;
+  (pool || []).forEach(q => { if (!isQuestionSeen(q)) n++; });
+  return n;
+}
+
+function getQuestionPoolMode() {
+  let v = '';
+  try { v = localStorage.getItem(LS_PREF_QUESTION_POOL) || ''; } catch (e) {}
+  return v === 'new' || v === 'mix' ? v : 'all';
+}
+
+function getRepeatPct() {
+  let n = NaN;
+  try { n = parseInt(localStorage.getItem(LS_PREF_REPEAT_PCT), 10); } catch (e) {}
+  if (!Number.isFinite(n)) return DEFAULT_REPEAT_PCT;
+  return Math.max(0, Math.min(100, n));
+}
+
+function refreshQPickerBuckets() {
+  const source = getQuestionPoolMode() === 'new'
+    ? _qpickerPool.filter(q => !isQuestionSeen(q))
+    : _qpickerPool;
+  _qpickerBuckets = qpickerBuildBuckets(source);
   _qpickerOrderAvail = {
     '1st': _qpickerBuckets['1st'].length,
     '2nd': _qpickerBuckets['2nd'].length,
     '3rd': _qpickerBuckets['3rd'].length,
     other: _qpickerBuckets.other.length
   };
+  ['1st', '2nd', '3rd'].forEach(k => {
+    if ((_qpickerOrderCounts[k] || 0) > (_qpickerOrderAvail[k] || 0)) {
+      _qpickerOrderCounts[k] = _qpickerOrderAvail[k] || 0;
+    }
+  });
+}
+
+function renderQPickerSubtitle() {
+  const el = document.getElementById('qpicker-pool-info');
+  if (!el) return;
+  const total = _qpickerPool.length;
+  const unseen = countUnseenQuestions(_qpickerPool);
+  const breakdown = qpickerPoolBreakdownText();
+  el.innerHTML = escapeHtmlLib(unseen + ' new of ' + total) +
+    ' — ' + escapeHtmlLib(_qpickerCurrentLabel || '') +
+    (breakdown ? '<br>' + escapeHtmlLib(breakdown) : '');
+}
+
+function applyQPickerPoolChrome() {
+  const mode = getQuestionPoolMode();
+  ['new', 'mix', 'all'].forEach(m => {
+    const btn = document.getElementById('qpicker-pool-' + m);
+    if (btn) btn.classList.toggle('active', mode === m);
+  });
+  const wrap = document.getElementById('qpicker-repeat-wrap');
+  if (wrap) wrap.classList.toggle('hidden', mode !== 'mix');
+  const pct = getRepeatPct();
+  const slider = document.getElementById('qpicker-repeat-slider');
+  const label = document.getElementById('qpicker-repeat-label');
+  if (slider) slider.value = String(pct);
+  if (label) label.textContent = 'Repeats ' + pct + '%';
+}
+
+function setQPickerRepeatPct(val) {
+  let n = Math.round(Number(val));
+  if (!Number.isFinite(n)) n = DEFAULT_REPEAT_PCT;
+  n = Math.max(0, Math.min(100, n));
+  try { localStorage.setItem(LS_PREF_REPEAT_PCT, String(n)); } catch (e) {}
+  const label = document.getElementById('qpicker-repeat-label');
+  if (label) label.textContent = 'Repeats ' + n + '%';
+}
+
+function applyQPickerSliderMax(preferred) {
+  const slider = document.getElementById('qpicker-slider');
+  if (!slider) return;
+  const max = Math.max(0, qpickerSelectableMax());
+  if (max < 1) {
+    slider.min = 0;
+    slider.max = 0;
+    slider.value = 0;
+    buildQPickerPresets(0);
+    const el = document.getElementById('qpicker-value');
+    if (el) {
+      if (el.tagName === 'INPUT') el.value = '0';
+      else el.textContent = '0';
+    }
+    document.querySelectorAll('.qpicker-preset').forEach(b => b.classList.remove('active'));
+    syncQPickerNudgeButtons();
+    return;
+  }
+  slider.min = 1;
+  slider.max = max;
+  let val = Math.round(Number(preferred));
+  if (!Number.isFinite(val) || val < 1) val = Math.min(10, max);
+  val = Math.max(1, Math.min(max, val));
+  if (_qpickerMixMode === 'custom') {
+    const sum = qpickerOrderSum();
+    if (sum > 0) val = Math.min(max, sum);
+  }
+  slider.value = val;
+  buildQPickerPresets(max);
+  _qpickerSyncing = true;
+  updateQPickerValue(val);
+  _qpickerSyncing = false;
+}
+
+function setQPickerPoolMode(mode) {
+  const next = mode === 'new' || mode === 'mix' ? mode : 'all';
+  try { localStorage.setItem(LS_PREF_QUESTION_POOL, next); } catch (e) {}
+  applyQPickerPoolChrome();
+  refreshQPickerBuckets();
+  renderQPickerSubtitle();
+  const slider = document.getElementById('qpicker-slider');
+  const keep = _qpickerMixMode === 'custom' ? qpickerOrderSum() : Number(slider && slider.value);
+  applyQPickerSliderMax(keep);
+  if (_qpickerMixMode === 'custom') renderQPickerOrderRows();
+  updateQPickerMixButtons();
+}
+
+function showQPicker(pool, label) {
+  _qpickerPool = pool || [];
+  _qpickerCurrentLabel = label || 'Unknown';
   _qpickerOrderCounts = { '1st': 0, '2nd': 0, '3rd': 0 };
   _qpickerMixMode = 'any';
-  const total = pool.length;
-  const slider = document.getElementById('qpicker-slider');
-  slider.min = 1;
-  slider.max = Math.max(1, total);
-  slider.value = Math.min(total, 10);
-  const breakdown = qpickerPoolBreakdownText();
-  document.getElementById('qpicker-pool-info').innerHTML =
-    total + ' question' + (total !== 1 ? 's' : '') + ' — ' + escapeHtmlLib(label) +
-    (breakdown ? '<br>' + escapeHtmlLib(breakdown) : '');
+  refreshQPickerBuckets();
   updateQPickerMixButtons();
-  document.getElementById('qpicker-order-panel').hidden = true;
+  const panel = document.getElementById('qpicker-order-panel');
+  if (panel) panel.hidden = true;
   updateQPickerBuildStatus();
-  buildQPickerPresets(total);
-  updateQPickerValue(slider.value);
+  applyQPickerPoolChrome();
+  renderQPickerSubtitle();
+  applyQPickerSliderMax(Math.min(10, Math.max(0, qpickerSelectableMax()) || 10));
   document.getElementById('qcount-picker-modal').classList.add('open');
 }
 
@@ -12356,8 +12642,13 @@ function updateQPickerMixButtons() {
 }
 
 function setQPickerMixMode(mode) {
+  refreshQPickerBuckets();
   if (mode === 'custom' && qpickerTaggedTotal() === 0) {
-    showToast('❌ These questions are not tagged by order');
+    if (getQuestionPoolMode() === 'new' && !countUnseenQuestions(_qpickerPool) && _qpickerPool.length) {
+      showToast('No new questions left in this set');
+    } else {
+      showToast('❌ These questions are not tagged by order');
+    }
     return;
   }
   const prevCounts = { ..._qpickerOrderCounts };
@@ -12366,22 +12657,16 @@ function setQPickerMixMode(mode) {
   const panel = document.getElementById('qpicker-order-panel');
   if (panel) panel.hidden = _qpickerMixMode !== 'custom';
   const slider = document.getElementById('qpicker-slider');
-  const max = Math.max(1, qpickerSelectableMax());
-  slider.min = 1;
-  slider.max = max;
-  let val = Number(slider.value);
-  val = Math.max(1, Math.min(max, val || 1));
-  slider.value = val;
-  _qpickerSyncing = true;
+  const prevVal = Number(slider && slider.value);
   if (_qpickerMixMode === 'custom') {
-    redistributeQPickerOrders(val, prevCounts);
-    val = qpickerOrderSum() || val;
-    slider.value = val;
+    const max = qpickerTaggedTotal();
+    const target = Math.max(0, Math.min(max, prevVal || Math.min(10, max)));
+    if (max > 0) redistributeQPickerOrders(target || Math.min(10, max), prevCounts);
     renderQPickerOrderRows();
+    applyQPickerSliderMax(qpickerOrderSum());
+  } else {
+    applyQPickerSliderMax(prevVal);
   }
-  buildQPickerPresets(qpickerSelectableMax());
-  updateQPickerValue(val);
-  _qpickerSyncing = false;
 }
 
 function redistributeQPickerOrders(total, prevCounts) {
@@ -12662,6 +12947,7 @@ async function openQPickerForFiltered() {
 function buildQPickerPresets(total) {
   const container = document.getElementById('qpicker-presets');
   container.innerHTML = '';
+  if (!total || total < 1) return;
   const candidates = [5, 10, 15, 20, 25, 30, 40, 50];
   const presets = candidates.filter(n => n <= total);
   if (!presets.includes(total)) presets.push(total);
@@ -12824,29 +13110,105 @@ function qpickerSelectedMixSummary() {
     .join(', ');
 }
 
+function sampleByProgress(pool, count, opts) {
+  const mode = (opts && opts.mode) || getQuestionPoolMode();
+  const pct = opts && opts.repeatPct != null ? opts.repeatPct : getRepeatPct();
+  const list = Array.isArray(pool) ? pool : [];
+  const n = Math.max(0, Math.min(list.length, Math.round(Number(count) || 0)));
+  const unseen = [];
+  const seen = [];
+  list.forEach(q => (isQuestionSeen(q) ? seen : unseen).push(q));
+  if (mode === 'new') {
+    if (!unseen.length || n <= 0) return { questions: [], filledFromSeen: false, emptyNew: true };
+    return { questions: randomSelect(unseen, Math.min(n, unseen.length)), filledFromSeen: false, emptyNew: false };
+  }
+  if (mode !== 'mix') {
+    return { questions: randomSelect(list, n), filledFromSeen: false, emptyNew: false };
+  }
+  if (n <= 0) return { questions: [], filledFromSeen: false, emptyNew: false };
+  let repeatSlots = Math.round(n * pct / 100);
+  if (repeatSlots > n) repeatSlots = n;
+  let newSlots = n - repeatSlots;
+  let filledFromSeen = false;
+  if (unseen.length < newSlots) {
+    filledFromSeen = true;
+    const short = newSlots - unseen.length;
+    newSlots = unseen.length;
+    repeatSlots = Math.min(seen.length, repeatSlots + short);
+  }
+  if (seen.length < repeatSlots) {
+    const short = repeatSlots - seen.length;
+    repeatSlots = seen.length;
+    newSlots = Math.min(unseen.length, newSlots + short);
+  }
+  const picked = randomSelect(unseen, newSlots).concat(randomSelect(seen, repeatSlots));
+  return { questions: randomSelect(picked, picked.length), filledFromSeen: filledFromSeen, emptyNew: false };
+}
+
+function applySavedPoolToQuestions(raw) {
+  const list = Array.isArray(raw) ? raw : [];
+  const mode = getQuestionPoolMode();
+  if (mode === 'all') return list;
+  const unseenCount = countUnseenQuestions(list);
+  const count = mode === 'new' ? unseenCount : list.length;
+  const result = sampleByProgress(list, count, { mode: mode });
+  if (!result.questions.length) {
+    showToast('No new questions left in this set');
+    return null;
+  }
+  if (result.filledFromSeen) {
+    showToast('Not enough new questions — filled the rest with ones you already answered');
+  }
+  return result.questions;
+}
+
 function selectQPickerQuestions() {
+  refreshQPickerBuckets();
+  const mode = getQuestionPoolMode();
   if (_qpickerMixMode === 'custom') {
     const sum = qpickerOrderSum();
-    if (sum <= 0) return [];
+    if (sum <= 0) {
+      return {
+        questions: [],
+        filledFromSeen: false,
+        emptyNew: mode === 'new' && countUnseenQuestions(_qpickerPool) === 0
+      };
+    }
     const picked = [];
+    let filledFromSeen = false;
     ['1st', '2nd', '3rd'].forEach(k => {
       const n = _qpickerOrderCounts[k] || 0;
-      if (n > 0) picked.push(...randomSelect(_qpickerBuckets[k] || [], n));
+      if (n > 0) {
+        const part = sampleByProgress(_qpickerBuckets[k] || [], n, { mode: mode });
+        if (part.filledFromSeen) filledFromSeen = true;
+        picked.push(...part.questions);
+      }
     });
-    return randomSelect(picked, picked.length);
+    return {
+      questions: randomSelect(picked, picked.length),
+      filledFromSeen: filledFromSeen,
+      emptyNew: mode === 'new' && !picked.length
+    };
   }
   const count = Number(document.getElementById('qpicker-slider').value);
-  return randomSelect(_qpickerPool, count);
+  return sampleByProgress(_qpickerPool, count, { mode: mode });
+}
+
+function consumeQPickerSelection() {
+  const result = selectQPickerQuestions();
+  if (!result.questions.length) {
+    if (result.emptyNew) showToast('No new questions left in this set');
+    else if (_qpickerMixMode === 'custom') showToast('❌ Choose how many 1st, 2nd, or 3rd-order questions to include');
+    else showToast('❌ Select at least 1 question');
+    return null;
+  }
+  return result;
 }
 
 function addToQuizFromQPicker() {
-  const selected = selectQPickerQuestions();
-  if (!selected.length) {
-    showToast(_qpickerMixMode === 'custom'
-      ? '❌ Choose how many 1st, 2nd, or 3rd-order questions to include'
-      : '❌ Select at least 1 question');
-    return;
-  }
+  const result = consumeQPickerSelection();
+  if (!result) return;
+  const selected = result.questions;
   const mix = qpickerSelectedMixSummary();
   const srcs = uniqueQuizSourcesFromQuestions(selected);
   _qpickerBuildingChunks.push({
@@ -12861,25 +13223,78 @@ function addToQuizFromQPicker() {
   });
   closeQPicker();
   renderStagingArea();
-  showToast('✅ Added ' + selected.length + 'Q' + (mix ? ' (' + mix + ')' : '') +
+  const fill = result.filledFromSeen ? ' (filled with repeats — not enough new)' : '';
+  showToast('✅ Added ' + selected.length + 'Q' + (mix ? ' (' + mix + ')' : '') + fill +
     ' — quiz now has ' + qpickerBuildingTotal() + ' questions');
   if (!libraryOpen) toggleLibrary();
 }
 
 function confirmQPicker() {
-  const selected = selectQPickerQuestions();
-  if (!selected.length) {
-    showToast(_qpickerMixMode === 'custom'
-      ? '❌ Choose how many 1st, 2nd, or 3rd-order questions to include'
-      : '❌ Select at least 1 question');
-    return;
-  }
+  const result = consumeQPickerSelection();
+  if (!result) return;
+  const selected = result.questions;
   const all = [...qpickerBuildingFlat(), ...selected];
   const meta = buildQPickerMeta(selected);
   _qpickerBuildingChunks = [];
   closeQPicker();
   toggleLibrary();
   buildQuiz(all, meta);
+  if (result.filledFromSeen) {
+    showToast('Not enough new questions — filled the rest with ones you already answered');
+  }
+}
+
+function qpickerTrackedFiles() {
+  const files = [];
+  const seen = new Set();
+  (_qpickerPool || []).forEach(q => {
+    const file = questionProgressFile(q);
+    if (!file || seen.has(file)) return;
+    seen.add(file);
+    files.push(file);
+  });
+  return files;
+}
+
+function refreshQPickerProgressView() {
+  refreshQPickerBuckets();
+  renderQPickerSubtitle();
+  const slider = document.getElementById('qpicker-slider');
+  const keep = _qpickerMixMode === 'custom' ? qpickerOrderSum() : Number(slider && slider.value);
+  applyQPickerSliderMax(keep);
+  if (_qpickerMixMode === 'custom') renderQPickerOrderRows();
+  updateQPickerMixButtons();
+  if (typeof renderLibrary === 'function') renderLibrary();
+}
+
+function markQPickerSetComplete() {
+  if (!_qpickerPool.length) { showToast('No questions loaded'); return; }
+  const data = readQuestionProgress();
+  let marked = 0;
+  _qpickerPool.forEach(q => {
+    const file = questionProgressFile(q);
+    const hash = questionStemHash(q);
+    if (!file || !hash) return;
+    if (!data[file] || typeof data[file] !== 'object' || Array.isArray(data[file])) data[file] = { completed: {} };
+    if (!data[file].completed || typeof data[file].completed !== 'object') data[file].completed = {};
+    data[file].completed[hash] = 1;
+    data[file].markedComplete = true;
+    marked++;
+  });
+  if (!marked) { showToast('This set has no library file to track'); return; }
+  writeQuestionProgress(data);
+  refreshQPickerProgressView();
+  showToast('Marked set complete (' + marked + ')');
+}
+
+function clearQPickerProgress() {
+  const files = qpickerTrackedFiles();
+  if (!files.length) { showToast('This set has no library file to track'); return; }
+  const data = readQuestionProgress();
+  files.forEach(file => { delete data[file]; });
+  writeQuestionProgress(data);
+  refreshQPickerProgressView();
+  showToast('Progress cleared');
 }
 
 function clearBuildingQuiz() {
@@ -12918,6 +13333,20 @@ function clearStaged() {
   renderStagingArea();
   renderLibrary();
   showToast('🗑️ Cleared all staged quizzes');
+}
+
+function libraryProgressMeta(entry) {
+  const total = Number(entry && entry.questions) || 0;
+  if (!total) return '';
+  const prog = getFileProgress(entry.file);
+  const done = prog && prog.completed && typeof prog.completed === 'object'
+    ? Object.keys(prog.completed).length : 0;
+  const marked = !!(prog && prog.markedComplete);
+  if (!done && !marked) return '<span class="lib-meta-faded">' + total + ' Qs</span>';
+  const full = marked || done >= total;
+  const shown = full ? total : Math.min(done, total);
+  if (full) return '<span class="lib-progress-done">' + shown + '/' + total + '</span>';
+  return '<span class="lib-meta-faded">' + shown + '/' + total + '</span>';
 }
 
 function renderLibrary() {
@@ -12962,10 +13391,8 @@ function renderLibrary() {
       <div style="flex:1;min-width:0">
         <div>${entry.title}</div>
         <div class="lib-quiz-meta">
-          ${entry.questions ? entry.questions + ' Qs' : ''}
-          ${entry.topic ? '· ' + entry.topic : ''}
-          ${entry.classTag ? '· ' + entry.classTag : ''}
-          ${tagCode ? '· ' + tagCode : ''}
+          ${libraryProgressMeta(entry)}
+          <span class="lib-meta-faded">${[entry.topic ? '· ' + entry.topic : '', entry.classTag ? '· ' + entry.classTag : '', tagCode ? '· ' + tagCode : ''].filter(Boolean).join(' ')}</span>
         </div>
       </div>
       <span class="lib-bulk-row">
