@@ -1,33 +1,1057 @@
 [
   {
-    "question": "Clinical vignette or stem here.",
-    "difficulty_order": "1st/2nd/3rd",
-    "cited_learning_objective": "The exact LO being tested.",
+    "question": "Which transmitter is released by autonomic preganglionic neurons?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare sympathetic, parasympathetic, and somatic innervation.",
     "options": [
       {
-        "text": "Option text here.",
+        "text": "Acetylcholine",
         "isCorrect": true,
-        "rationale": "Why correct, naming the mechanism or contrast."
+        "rationale": "Acetylcholine is released by preganglionic neurons in both autonomic divisions."
       },
       {
-        "text": "Option text here.",
+        "text": "Norepinephrine",
         "isCorrect": false,
-        "rationale": "Why wrong, the specific failure, and what would make it correct."
+        "rationale": "Norepinephrine is associated with sympathetic postganglionic signaling; it would be correct if the question asked for the transmitter released by those fibers."
       },
       {
-        "text": "Option text here.",
+        "text": "Epinephrine",
         "isCorrect": false,
-        "rationale": "Why wrong, the specific failure, and what would make it correct."
+        "rationale": "Epinephrine is compared with norepinephrine at adrenergic receptors; it would be correct only if a listed adrenergic agonist profile favored it."
       },
       {
-        "text": "Option text here.",
+        "text": "Phenylephrine",
         "isCorrect": false,
-        "rationale": "Why wrong, the specific failure, and what would make it correct."
+        "rationale": "Phenylephrine is an α1 agonist; it would be correct if the question asked for the listed α1-selective agent."
       },
       {
-        "text": "Option text here.",
+        "text": "Nicotine",
         "isCorrect": false,
-        "rationale": "Why wrong, the specific failure, and what would make it correct."
+        "rationale": "Nicotine is a nicotinic receptor agonist rather than an endogenous preganglionic transmitter; it would be correct if the question asked for an N2 agonist."
+      }
+    ]
+  },
+  {
+    "question": "Which receptor is postsynaptic within both sympathetic and parasympathetic autonomic ganglia?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare sympathetic, parasympathetic, and somatic innervation.",
+    "options": [
+      {
+        "text": "Muscarinic M2 receptor",
+        "isCorrect": false,
+        "rationale": "M2 is listed among parasympathetic effector receptors; it would be correct if the target were a parasympathetic postganglionic effector."
+      },
+      {
+        "text": "Nicotinic N2 receptor",
+        "isCorrect": true,
+        "rationale": "Nicotinic N2 receptors receive acetylcholine at ganglia in both autonomic divisions."
+      },
+      {
+        "text": "Adrenergic α1 receptor",
+        "isCorrect": false,
+        "rationale": "α1 is a sympathetic effector receptor; it would be correct if the question concerned a postganglionic adrenergic target."
+      },
+      {
+        "text": "Adrenergic β1 receptor",
+        "isCorrect": false,
+        "rationale": "β1 appears among sympathetic postganglionic receptors; it would be correct for an appropriate adrenergic effector rather than a ganglion."
+      },
+      {
+        "text": "Muscarinic M3 receptor",
+        "isCorrect": false,
+        "rationale": "M3 is a parasympathetic effector receptor; it would be correct if the question asked about a muscarinic target after the ganglion."
+      }
+    ]
+  },
+  {
+    "question": "Which spinal levels provide the sympathetic preganglionic outflow shown?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe sympathetic innervation, transmitters, receptors, agonists, and antagonists.",
+    "options": [
+      {
+        "text": "Brain and S2-S4",
+        "isCorrect": false,
+        "rationale": "Brain and S2-S4 identify parasympathetic outflow; they would be correct if that division were requested."
+      },
+      {
+        "text": "T1 through S4",
+        "isCorrect": false,
+        "rationale": "This range improperly combines the two divisions; it would require both thoracolumbar and sacral origins to be requested."
+      },
+      {
+        "text": "T1 through L3",
+        "isCorrect": true,
+        "rationale": "The sympathetic preganglionic neurons are shown arising from T1-L3."
+      },
+      {
+        "text": "L1 through S4",
+        "isCorrect": false,
+        "rationale": "This range omits much of the stated thoracic origin and includes sacral levels; it would fit neither listed division."
+      },
+      {
+        "text": "Brain through L3",
+        "isCorrect": false,
+        "rationale": "This range combines a parasympathetic origin with sympathetic levels; it would require a combined-origin question."
+      }
+    ]
+  },
+  {
+    "question": "Which agent is identified as an antagonist at autonomic ganglionic N2 receptors?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare sympathetic, parasympathetic, and somatic innervation.",
+    "options": [
+      {
+        "text": "Nicotine",
+        "isCorrect": false,
+        "rationale": "Nicotine is the listed N2 agonist; it would be correct if receptor activation were requested."
+      },
+      {
+        "text": "Atropine",
+        "isCorrect": false,
+        "rationale": "Atropine is listed as a muscarinic antagonist; it would be correct if blockade of muscarinic effector signaling were requested."
+      },
+      {
+        "text": "Metoprolol",
+        "isCorrect": false,
+        "rationale": "Metoprolol is listed with β1 signaling; it would be correct if the target were the β1 receptor."
+      },
+      {
+        "text": "Hexamethonium",
+        "isCorrect": true,
+        "rationale": "Hexamethonium is the listed antagonist at nicotinic N2 receptors in autonomic ganglia."
+      },
+      {
+        "text": "Phentolamine",
+        "isCorrect": false,
+        "rationale": "Phentolamine is listed with α1 signaling; it would be correct if α1 antagonism were requested."
+      }
+    ]
+  },
+  {
+    "question": "A compound prevents acetylcholine breakdown and thereby stimulates cholinergic neurons in sympathetic, parasympathetic, and somatic pathways. Which sign most specifically demonstrates involvement of the somatic pathway?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Distinguish muscarinic from nicotinic manifestations of cholinergic stimulation.",
+    "options": [
+      {
+        "text": "Copious bronchial secretions",
+        "isCorrect": false,
+        "rationale": "Bronchial secretion is a muscarinic manifestation; it would answer a question targeting parasympathetic effector activity."
+      },
+      {
+        "text": "Marked pupillary constriction",
+        "isCorrect": false,
+        "rationale": "Miosis is identified as a muscarinic sign; it would be correct if ocular muscarinic stimulation were requested."
+      },
+      {
+        "text": "Profuse salivary secretion",
+        "isCorrect": false,
+        "rationale": "Salivation belongs to the muscarinic and SLUDGE pattern; it would fit a question about glandular parasympathetic effects."
+      },
+      {
+        "text": "Hyperactive bowel sounds",
+        "isCorrect": false,
+        "rationale": "Increased gastrointestinal activity accompanies muscarinic stimulation; it would be correct if the question targeted gastrointestinal parasympathetic effects."
+      },
+      {
+        "text": "Visible skeletal fasciculations",
+        "isCorrect": true,
+        "rationale": "Fasciculations reflect nicotinic stimulation at somatic skeletal muscle rather than a muscarinic visceral effect."
+      }
+    ]
+  },
+  {
+    "question": "A researcher activates postganglionic parasympathetic neurons while leaving autonomic ganglia unstimulated. Which transmitter-receptor pairing is expected at the visceral effector?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe parasympathetic innervation, transmitters, receptors, agonists, and antagonists.",
+    "options": [
+      {
+        "text": "Acetylcholine at muscarinic receptors",
+        "isCorrect": true,
+        "rationale": "Parasympathetic postganglionic neurons release acetylcholine onto muscarinic receptors at visceral effectors."
+      },
+      {
+        "text": "Acetylcholine at nicotinic receptors",
+        "isCorrect": false,
+        "rationale": "This pairing characterizes autonomic ganglia or somatic effectors; it would be correct if the postsynaptic target were an N2 ganglionic receptor."
+      },
+      {
+        "text": "Norepinephrine at adrenergic receptors",
+        "isCorrect": false,
+        "rationale": "This pairing characterizes sympathetic postganglionic transmission; it would be correct if the stimulated neuron belonged to that division."
+      },
+      {
+        "text": "Nicotine at muscarinic receptors",
+        "isCorrect": false,
+        "rationale": "Nicotine is listed as a nicotinic agonist, not a muscarinic transmitter; it would fit activation of N2 receptors."
+      },
+      {
+        "text": "Phenylephrine at adrenergic receptors",
+        "isCorrect": false,
+        "rationale": "Phenylephrine is a listed α1 agonist rather than a neuronal transmitter; it would be correct if pharmacologic α1 activation were requested."
+      }
+    ]
+  },
+  {
+    "question": "An isolated autonomic ganglion receives intact preganglionic input but fails to activate its postganglionic neuron after drug exposure. Muscarinic and adrenergic effector receptors remain functional. Which agent best explains the result?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare sympathetic, parasympathetic, and somatic innervation.",
+    "options": [
+      {
+        "text": "Atropine",
+        "isCorrect": false,
+        "rationale": "Atropine blocks muscarinic effector receptors; it would be correct if postganglionic parasympathetic effects were selectively lost."
+      },
+      {
+        "text": "Hexamethonium",
+        "isCorrect": true,
+        "rationale": "Hexamethonium blocks ganglionic N2 receptors, interrupting transmission before either autonomic postganglionic neuron can activate."
+      },
+      {
+        "text": "Phenylephrine",
+        "isCorrect": false,
+        "rationale": "Phenylephrine activates α1 receptors; it would be correct if direct α1 stimulation rather than ganglionic failure were observed."
+      },
+      {
+        "text": "Metoprolol",
+        "isCorrect": false,
+        "rationale": "Metoprolol is associated with β1 blockade; it would fit selective loss of β1-mediated effector responses."
+      },
+      {
+        "text": "Yohimbine",
+        "isCorrect": false,
+        "rationale": "Yohimbine is listed with α2 antagonism; it would be correct if the experiment isolated an α2-mediated response."
+      }
+    ]
+  },
+  {
+    "question": "A postganglionic fiber releases norepinephrine onto a visceral target. Which additional feature best identifies the pathway?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe sympathetic innervation, transmitters, receptors, agonists, and antagonists.",
+    "options": [
+      {
+        "text": "Ganglion located near target",
+        "isCorrect": false,
+        "rationale": "A ganglion near the target is characteristic of parasympathetic organization; it would be correct if the postganglionic transmitter were acetylcholine."
+      },
+      {
+        "text": "Preganglionic origin at S2-S4",
+        "isCorrect": false,
+        "rationale": "S2-S4 is part of parasympathetic outflow; it would be correct for a sacral parasympathetic pathway."
+      },
+      {
+        "text": "Preganglionic origin at T1-L3",
+        "isCorrect": true,
+        "rationale": "Norepinephrine at the effector together with T1-L3 preganglionic origin identifies the sympathetic pathway."
+      },
+      {
+        "text": "Effector bearing muscarinic receptors",
+        "isCorrect": false,
+        "rationale": "Muscarinic effector receptors characterize parasympathetic transmission; they would fit acetylcholine release from the postganglionic fiber."
+      },
+      {
+        "text": "Single myelinated motor neuron",
+        "isCorrect": false,
+        "rationale": "A single myelinated neuron describes somatic efferent organization; it would be correct if the target were skeletal muscle."
+      }
+    ]
+  },
+  {
+    "question": "An investigator compares somatic and autonomic motor pathways. Which feature belongs only to the autonomic pathway shown?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Differentiate somatic and autonomic efferent innervation.",
+    "options": [
+      {
+        "text": "Acetylcholine release from motor neurons",
+        "isCorrect": false,
+        "rationale": "Both systems use acetylcholine somewhere in their efferent pathways; it would distinguish neither pathway without specifying the synapse."
+      },
+      {
+        "text": "Innervation of peripheral effector tissue",
+        "isCorrect": false,
+        "rationale": "Both systems innervate peripheral effectors; it would be distinctive only if the effector type were specified."
+      },
+      {
+        "text": "Conduction through a myelinated fiber",
+        "isCorrect": false,
+        "rationale": "Myelinated fibers appear in both diagrams; it would not uniquely identify autonomic organization."
+      },
+      {
+        "text": "Two-neuron chain containing a ganglion",
+        "isCorrect": true,
+        "rationale": "The autonomic pathway uses preganglionic and postganglionic neurons connected within an autonomic ganglion."
+      },
+      {
+        "text": "Termination on a muscle cell",
+        "isCorrect": false,
+        "rationale": "Both pathways can terminate on muscle tissue; it would be specific only if skeletal versus cardiac or smooth muscle were stated."
+      }
+    ]
+  },
+  {
+    "question": "A drug selectively prevents muscarinic signaling while preserving N2 receptor activation. Which response should remain possible during broad cholinergic stimulation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Distinguish muscarinic from nicotinic manifestations of cholinergic stimulation.",
+    "options": [
+      {
+        "text": "Marked pupillary constriction",
+        "isCorrect": false,
+        "rationale": "Miosis is a muscarinic sign and should be blocked; it would remain if muscarinic receptors were functional."
+      },
+      {
+        "text": "Copious bronchial secretion",
+        "isCorrect": false,
+        "rationale": "Bronchial secretion is muscarinic and should be reduced; it would remain under intact muscarinic signaling."
+      },
+      {
+        "text": "Profuse salivary secretion",
+        "isCorrect": false,
+        "rationale": "Salivation is part of the muscarinic pattern; it would persist only if muscarinic receptors were not blocked."
+      },
+      {
+        "text": "Severe diarrheal output",
+        "isCorrect": false,
+        "rationale": "Diarrhea is included among muscarinic effects; it would remain if gastrointestinal muscarinic signaling were preserved."
+      },
+      {
+        "text": "Visible skeletal fasciculations",
+        "isCorrect": true,
+        "rationale": "Somatic fasciculations are nicotinic effects and can persist despite muscarinic blockade."
+      }
+    ]
+  },
+  {
+    "question": "A compound activates α1 receptors but has no direct activity at α2 or β receptors. Which listed agent has this profile?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe sympathetic innervation, transmitters, receptors, agonists, and antagonists.",
+    "options": [
+      {
+        "text": "Phenylephrine",
+        "isCorrect": true,
+        "rationale": "Phenylephrine is identified as the agonist associated with the α1 receptor."
+      },
+      {
+        "text": "Phentolamine",
+        "isCorrect": false,
+        "rationale": "Phentolamine is listed as an α1 antagonist; it would be correct if blockade rather than activation were requested."
+      },
+      {
+        "text": "Yohimbine",
+        "isCorrect": false,
+        "rationale": "Yohimbine is listed with α2 antagonism; it would fit a question requesting blockade of α2 signaling."
+      },
+      {
+        "text": "Metoprolol",
+        "isCorrect": false,
+        "rationale": "Metoprolol is listed with β1 antagonism; it would be correct if selective β1 blockade were requested."
+      },
+      {
+        "text": "Butoxamine",
+        "isCorrect": false,
+        "rationale": "Butoxamine is listed with β2 antagonism; it would be correct if the target were β2 rather than α1."
+      }
+    ]
+  },
+  {
+    "question": "A researcher applies norepinephrine and epinephrine separately to an α2-expressing preparation. Which potency relationship is expected from the receptor profile shown?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe sympathetic innervation, transmitters, receptors, agonists, and antagonists.",
+    "options": [
+      {
+        "text": "Epinephrine exceeds norepinephrine",
+        "isCorrect": false,
+        "rationale": "That relationship is shown for α1 rather than α2; it would be correct if the preparation expressed α1 receptors."
+      },
+      {
+        "text": "Norepinephrine exceeds epinephrine",
+        "isCorrect": true,
+        "rationale": "The α2 profile shows norepinephrine producing greater activity than epinephrine."
+      },
+      {
+        "text": "Both agonists lack activity",
+        "isCorrect": false,
+        "rationale": "Both catecholamines are associated with adrenergic receptor signaling; this would require an unresponsive preparation."
+      },
+      {
+        "text": "Both agonists show equality",
+        "isCorrect": false,
+        "rationale": "The displayed profile specifies unequal activity; equality would require no potency preference."
+      },
+      {
+        "text": "Nicotine exceeds both agonists",
+        "isCorrect": false,
+        "rationale": "Nicotine activates N2 receptors rather than α2 receptors; it would be correct only in a nicotinic preparation."
+      }
+    ]
+  },
+  {
+    "question": "A selective antagonist abolishes responses at β2 receptors while α1, α2, β1, and β3 responses remain intact. Which agent was applied?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe sympathetic innervation, transmitters, receptors, agonists, and antagonists.",
+    "options": [
+      {
+        "text": "Metoprolol",
+        "isCorrect": false,
+        "rationale": "Metoprolol is listed with β1 antagonism; it would be correct if β1 responses were selectively abolished."
+      },
+      {
+        "text": "SR-52230A",
+        "isCorrect": false,
+        "rationale": "SR-52230A is listed with β3 antagonism; it would be correct if β3 responses were lost."
+      },
+      {
+        "text": "Butoxamine",
+        "isCorrect": true,
+        "rationale": "Butoxamine is the antagonist associated with β2 receptors."
+      },
+      {
+        "text": "Phentolamine",
+        "isCorrect": false,
+        "rationale": "Phentolamine is listed with α1 antagonism; it would be correct if α1 responses were abolished."
+      },
+      {
+        "text": "Yohimbine",
+        "isCorrect": false,
+        "rationale": "Yohimbine is listed with α2 antagonism; it would be correct if α2 responses were selectively lost."
+      }
+    ]
+  },
+  {
+    "question": "A neural tracing study follows a fiber from a ganglion located near a visceral organ to that organ. The terminal releases acetylcholine. Which receptor class should be present on the effector?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe parasympathetic innervation, transmitters, receptors, agonists, and antagonists.",
+    "options": [
+      {
+        "text": "Nicotinic N2 receptors",
+        "isCorrect": false,
+        "rationale": "N2 receptors are located at autonomic ganglia; they would be correct if the traced synapse ended on a postganglionic neuron."
+      },
+      {
+        "text": "Adrenergic α1 receptors",
+        "isCorrect": false,
+        "rationale": "α1 receptors receive sympathetic adrenergic signaling; they would fit a norepinephrine-releasing postganglionic pathway."
+      },
+      {
+        "text": "Adrenergic β1 receptors",
+        "isCorrect": false,
+        "rationale": "β1 receptors belong to the listed sympathetic effector set; they would be correct for an appropriate adrenergic target."
+      },
+      {
+        "text": "Muscarinic acetylcholine receptors",
+        "isCorrect": true,
+        "rationale": "A nearby ganglion and acetylcholine-releasing terminal identify a parasympathetic postganglionic pathway ending on muscarinic receptors."
+      },
+      {
+        "text": "Somatic nicotinic receptors",
+        "isCorrect": false,
+        "rationale": "Somatic nicotinic signaling terminates on skeletal muscle without an autonomic ganglion; it would fit a single-neuron somatic pathway."
+      }
+    ]
+  },
+  {
+    "question": "A compound increases signaling at all cholinergic synapses by inhibiting the enzyme that terminates acetylcholine action. Which combination best reflects the affected systems?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Distinguish muscarinic from nicotinic manifestations of cholinergic stimulation.",
+    "options": [
+      {
+        "text": "Sympathetic pathways only",
+        "isCorrect": false,
+        "rationale": "Cholinergic synapses occur beyond the sympathetic division; this would be correct only if other cholinergic pathways were excluded."
+      },
+      {
+        "text": "Parasympathetic pathways only",
+        "isCorrect": false,
+        "rationale": "The parasympathetic system is affected but does not account for ganglionic sympathetic or somatic cholinergic signaling."
+      },
+      {
+        "text": "Somatic pathways only",
+        "isCorrect": false,
+        "rationale": "Somatic neuromuscular signaling is affected but cannot explain muscarinic visceral manifestations."
+      },
+      {
+        "text": "Sympathetic and parasympathetic pathways",
+        "isCorrect": false,
+        "rationale": "Both autonomic divisions are affected, but this choice omits somatic cholinergic signaling."
+      },
+      {
+        "text": "Sympathetic, parasympathetic, and somatic pathways",
+        "isCorrect": true,
+        "rationale": "Inhibiting acetylcholinesterase stimulates cholinergic neurons in both autonomic divisions and the somatic system."
+      }
+    ]
+  },
+  {
+    "question": "A 26-year-old man is lethargic after ingesting unknown pills. Pulse is 40/min, blood pressure is 80/46 mm Hg, and bilateral wheezing is present. His skin and oral mucosa are dry, and his pupils are midpoint. Which autonomic pattern best accounts for the dominant cardiovascular and pulmonary findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Apply autonomic physiology to distinguish sympathetic, parasympathetic, and somatic clinical findings.",
+    "options": [
+      {
+        "text": "Reduced sympathetic effector signaling",
+        "isCorrect": true,
+        "rationale": "Loss of sympathetic effector activity can connect the marked bradycardia and hypotension with impaired adrenergic support. The dry findings and midpoint pupils help distinguish this presentation from diffuse muscarinic excess."
+      },
+      {
+        "text": "Diffuse muscarinic receptor stimulation",
+        "isCorrect": false,
+        "rationale": "Diffuse muscarinic stimulation would be expected to include salivation, lacrimation, secretions, diarrhea, or miosis; it would fit if those wet findings replaced the dryness."
+      },
+      {
+        "text": "Diffuse nicotinic receptor stimulation",
+        "isCorrect": false,
+        "rationale": "Nicotinic excess would be supported by fasciculations or other somatic findings; it would fit if skeletal muscle signs dominated."
+      },
+      {
+        "text": "Increased adrenergic effector signaling",
+        "isCorrect": false,
+        "rationale": "Increased adrenergic signaling conflicts with severe bradycardia and hypotension; it would fit if pulse and pressure were elevated."
+      },
+      {
+        "text": "Isolated somatic motor stimulation",
+        "isCorrect": false,
+        "rationale": "Somatic stimulation primarily affects skeletal muscle and does not explain the cardiovascular pattern; it would fit if twitching or fasciculations were the principal findings."
+      }
+    ]
+  },
+  {
+    "question": "A 26-year-old man with pill ingestion has a pulse of 40/min and blood pressure of 80/46 mm Hg. After an initial medication, his pulse rises to 60/min and pressure to 90/54 mm Hg. Which receptor-directed intervention best matches the partial response?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Apply autonomic receptor pharmacology to cardiovascular case findings.",
+    "options": [
+      {
+        "text": "N2 receptor blockade with hexamethonium",
+        "isCorrect": false,
+        "rationale": "Ganglionic blockade would interrupt both autonomic divisions rather than selectively remove parasympathetic restraint; it would fit an experiment designed to abolish ganglionic transmission."
+      },
+      {
+        "text": "Muscarinic receptor blockade with atropine",
+        "isCorrect": true,
+        "rationale": "Atropine blocks muscarinic signaling and can remove parasympathetic influence on heart rate, explaining the partial pulse and pressure improvement."
+      },
+      {
+        "text": "α1 receptor blockade with phentolamine",
+        "isCorrect": false,
+        "rationale": "α1 blockade would not provide the observed cardiovascular support; it would fit a scenario requiring antagonism of α1-mediated signaling."
+      },
+      {
+        "text": "β1 receptor blockade with metoprolol",
+        "isCorrect": false,
+        "rationale": "β1 blockade is directionally inconsistent with improving marked bradycardia; it would fit if excessive β1 activity required suppression."
+      },
+      {
+        "text": "α2 receptor blockade with yohimbine",
+        "isCorrect": false,
+        "rationale": "Yohimbine is linked to α2 blockade rather than the muscarinic pathway implicated by the pulse response; it would fit selective α2 antagonism."
+      }
+    ]
+  },
+  {
+    "question": "A 42-year-old man becomes confused and dyspneic after working outdoors. Pulse is 42/min, blood pressure is 86/40 mm Hg, and oxygen saturation is 90% [95-100%]. Examination shows pinpoint pupils, tearing, copious oral secretions, wheezing, diarrhea, and fasciculations. Which mechanism best unifies these findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Distinguish muscarinic from nicotinic manifestations of cholinergic stimulation.",
+    "options": [
+      {
+        "text": "Selective muscarinic receptor activation",
+        "isCorrect": false,
+        "rationale": "Muscarinic activation explains the secretions, miosis, diarrhea, and bradycardia but not the somatic fasciculations; it would fit if fasciculations were absent."
+      },
+      {
+        "text": "Selective nicotinic receptor activation",
+        "isCorrect": false,
+        "rationale": "Nicotinic activation explains fasciculations but not the full SLUDGE-like muscarinic pattern; it would fit if glandular and gastrointestinal findings were absent."
+      },
+      {
+        "text": "Acetylcholinesterase inhibition",
+        "isCorrect": true,
+        "rationale": "Preventing acetylcholine breakdown stimulates muscarinic, autonomic nicotinic, and somatic nicotinic pathways, unifying the wet findings and fasciculations."
+      },
+      {
+        "text": "Adrenergic receptor blockade",
+        "isCorrect": false,
+        "rationale": "Adrenergic blockade may contribute to low pulse or pressure but does not explain miosis, secretions, diarrhea, and fasciculations; it would fit a dry presentation without cholinergic signs."
+      },
+      {
+        "text": "Somatic motor neuron inhibition",
+        "isCorrect": false,
+        "rationale": "Somatic inhibition could produce weakness but would not explain the autonomic secretory syndrome; it would fit isolated skeletal muscle dysfunction."
+      }
+    ]
+  },
+  {
+    "question": "A 42-year-old man has bradycardia, hypotension, miosis, tearing, copious secretions, diarrhea, and fasciculations after outdoor exposure. Airway support is underway. Which listed medication is the next best step for the life-threatening muscarinic manifestations?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Apply autonomic receptor pharmacology to cholinergic clinical findings.",
+    "options": [
+      {
+        "text": "Hexamethonium",
+        "isCorrect": false,
+        "rationale": "Hexamethonium blocks N2 receptors at autonomic ganglia but is not the listed muscarinic antagonist; it would fit if ganglionic transmission were the intended target."
+      },
+      {
+        "text": "Nicotine",
+        "isCorrect": false,
+        "rationale": "Nicotine stimulates N2 receptors and could add nicotinic activity; it would fit if ganglionic N2 activation were desired."
+      },
+      {
+        "text": "Phenylephrine",
+        "isCorrect": false,
+        "rationale": "Phenylephrine activates α1 receptors but does not directly block the secretory muscarinic syndrome; it would fit isolated α1 agonism."
+      },
+      {
+        "text": "Atropine",
+        "isCorrect": true,
+        "rationale": "Atropine is the listed muscarinic antagonist and directly opposes the bronchial, glandular, gastrointestinal, ocular, and cardiac muscarinic manifestations."
+      },
+      {
+        "text": "Metoprolol",
+        "isCorrect": false,
+        "rationale": "Metoprolol blocks β1 receptors and would not counter muscarinic excess; it would fit excessive β1-mediated activity rather than severe bradycardia."
+      }
+    ]
+  },
+  {
+    "question": "A patient with diffuse cholinergic findings receives a muscarinic antagonist. Secretions decrease and pulse rises, but fasciculations persist. Which receptor location best explains the residual sign?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Distinguish muscarinic from nicotinic manifestations of cholinergic stimulation.",
+    "options": [
+      {
+        "text": "Muscarinic receptors on visceral effectors",
+        "isCorrect": false,
+        "rationale": "These receptors account for the findings that improved after treatment; they would explain persistent secretions if blockade were incomplete."
+      },
+      {
+        "text": "Nicotinic receptors on skeletal muscle",
+        "isCorrect": true,
+        "rationale": "Fasciculations are somatic nicotinic manifestations, so they can persist after muscarinic receptors are blocked."
+      },
+      {
+        "text": "Adrenergic receptors on visceral effectors",
+        "isCorrect": false,
+        "rationale": "Adrenergic receptors do not mediate the listed somatic fasciculations; they would fit a sympathetic effector response."
+      },
+      {
+        "text": "Muscarinic receptors within autonomic ganglia",
+        "isCorrect": false,
+        "rationale": "The ganglionic postsynaptic receptor shown is nicotinic N2, not muscarinic; this would require a different ganglionic receptor arrangement."
+      },
+      {
+        "text": "Adrenergic receptors on skeletal muscle",
+        "isCorrect": false,
+        "rationale": "The somatic effector synapse shown is cholinergic and nicotinic; this would require adrenergic somatic innervation not depicted."
+      }
+    ]
+  },
+  {
+    "question": "A patient has tearing, salivation, bronchial secretions, diarrhea, miosis, bradycardia, and skeletal fasciculations. A drug abolishes both autonomic ganglionic transmission and transmission to postganglionic neurons but does not directly block muscarinic effector receptors. Which agent was used?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare sympathetic, parasympathetic, and somatic innervation.",
+    "options": [
+      {
+        "text": "Atropine",
+        "isCorrect": false,
+        "rationale": "Atropine directly blocks muscarinic effector receptors rather than N2 ganglionic receptors; it would fit selective suppression of muscarinic findings."
+      },
+      {
+        "text": "Nicotine",
+        "isCorrect": false,
+        "rationale": "Nicotine is listed as an N2 agonist rather than antagonist; it would fit ganglionic receptor stimulation."
+      },
+      {
+        "text": "Hexamethonium",
+        "isCorrect": true,
+        "rationale": "Hexamethonium antagonizes N2 receptors at sympathetic and parasympathetic ganglia, interrupting ganglionic transmission."
+      },
+      {
+        "text": "Phentolamine",
+        "isCorrect": false,
+        "rationale": "Phentolamine is associated with α1 blockade and would not abolish parasympathetic ganglionic signaling; it would fit selective α1 antagonism."
+      },
+      {
+        "text": "Butoxamine",
+        "isCorrect": false,
+        "rationale": "Butoxamine is associated with β2 blockade and would not interrupt N2-mediated ganglionic transmission; it would fit selective β2 antagonism."
+      }
+    ]
+  },
+  {
+    "question": "An experiment stimulates a myelinated preganglionic autonomic fiber. The postsynaptic neuron is activated, but a drug then prevents signaling at the distant visceral effector without affecting the ganglion. Which target was most likely blocked in a parasympathetic pathway?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe parasympathetic innervation, transmitters, receptors, agonists, and antagonists.",
+    "options": [
+      {
+        "text": "Ganglionic N2 receptor",
+        "isCorrect": false,
+        "rationale": "Blocking N2 would impair the ganglion itself, contrary to preserved postsynaptic neuron activation; it would fit failure at the ganglionic synapse."
+      },
+      {
+        "text": "Postganglionic α1 receptor",
+        "isCorrect": false,
+        "rationale": "α1 is an adrenergic sympathetic effector receptor; it would fit an α1-mediated sympathetic target."
+      },
+      {
+        "text": "Postganglionic β1 receptor",
+        "isCorrect": false,
+        "rationale": "β1 belongs to the sympathetic receptor set; it would fit selective loss of a β1-mediated effector response."
+      },
+      {
+        "text": "Preganglionic muscarinic receptor",
+        "isCorrect": false,
+        "rationale": "The preganglionic synapse uses acetylcholine at N2 receptors, not muscarinic receptors; this would require a different receptor at the ganglion."
+      },
+      {
+        "text": "Effector muscarinic receptor",
+        "isCorrect": true,
+        "rationale": "Parasympathetic postganglionic fibers release acetylcholine onto muscarinic receptors, so blocking those receptors preserves ganglionic activation while preventing the effector response."
+      }
+    ]
+  },
+  {
+    "question": "A 42-year-old man with cholinergic findings receives atropine. His secretions and bradycardia improve, but muscle twitching remains. Which additional conclusion is best supported by this response?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Apply autonomic receptor pharmacology to cholinergic clinical findings.",
+    "options": [
+      {
+        "text": "Muscarinic and nicotinic pathways were activated",
+        "isCorrect": true,
+        "rationale": "Improvement of secretory and cardiac findings identifies muscarinic blockade, while persistent twitching demonstrates continued nicotinic somatic involvement."
+      },
+      {
+        "text": "Only parasympathetic effectors were activated",
+        "isCorrect": false,
+        "rationale": "Isolated parasympathetic activation does not account for persistent somatic twitching; it would fit if all findings resolved with atropine."
+      },
+      {
+        "text": "Only sympathetic ganglia were activated",
+        "isCorrect": false,
+        "rationale": "This cannot explain the muscarinic secretory syndrome and somatic twitching together; it would require findings limited to sympathetic ganglionic effects."
+      },
+      {
+        "text": "Adrenergic receptors caused the twitching",
+        "isCorrect": false,
+        "rationale": "The displayed somatic pathway uses acetylcholine and nicotinic receptors; this would require an adrenergic skeletal muscle synapse not shown."
+      },
+      {
+        "text": "Muscarinic receptors caused the twitching",
+        "isCorrect": false,
+        "rationale": "Twitching and fasciculations are identified as nicotinic somatic effects; this would be correct only if they were listed as muscarinic effects."
+      }
+    ]
+  },
+  {
+    "question": "A neural lesion interrupts fibers arising from T1-L3 before they reach prevertebral or paravertebral ganglia. Which transmission event is directly lost first?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe sympathetic innervation, transmitters, receptors, agonists, and antagonists.",
+    "options": [
+      {
+        "text": "Acetylcholine activation of ganglionic N2 receptors",
+        "isCorrect": true,
+        "rationale": "T1-L3 sympathetic preganglionic neurons release acetylcholine onto N2 receptors in prevertebral or paravertebral ganglia."
+      },
+      {
+        "text": "Norepinephrine activation of effector α1 receptors",
+        "isCorrect": false,
+        "rationale": "This is a downstream postganglionic event rather than the first lost synapse; it would be the direct loss if the postganglionic terminal were interrupted."
+      },
+      {
+        "text": "Norepinephrine activation of effector β1 receptors",
+        "isCorrect": false,
+        "rationale": "β1 signaling occurs after ganglionic transmission; it would be directly lost with damage to an appropriate sympathetic postganglionic fiber."
+      },
+      {
+        "text": "Acetylcholine activation of effector muscarinic receptors",
+        "isCorrect": false,
+        "rationale": "This pairing characterizes parasympathetic postganglionic signaling; it would fit damage to a parasympathetic effector pathway."
+      },
+      {
+        "text": "Acetylcholine activation of skeletal nicotinic receptors",
+        "isCorrect": false,
+        "rationale": "This event belongs to the somatic pathway and does not pass through an autonomic ganglion; it would fit a somatic motor lesion."
+      }
+    ]
+  },
+  {
+    "question": "A patient with severe bradycardia and hypotension receives a medication that blocks β1 receptors. The cardiovascular abnormalities worsen. Which listed drug most likely produced this effect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe sympathetic innervation, transmitters, receptors, agonists, and antagonists.",
+    "options": [
+      {
+        "text": "Phenylephrine",
+        "isCorrect": false,
+        "rationale": "Phenylephrine is an α1 agonist rather than a β1 antagonist; it would fit a request for direct α1 activation."
+      },
+      {
+        "text": "Metoprolol",
+        "isCorrect": true,
+        "rationale": "Metoprolol is the listed β1 antagonist, matching selective β1 blockade in a patient already showing cardiovascular depression."
+      },
+      {
+        "text": "Butoxamine",
+        "isCorrect": false,
+        "rationale": "Butoxamine is associated with β2 antagonism; it would be correct if β2 responses were selectively blocked."
+      },
+      {
+        "text": "Yohimbine",
+        "isCorrect": false,
+        "rationale": "Yohimbine is associated with α2 antagonism; it would fit selective loss of α2 signaling."
+      },
+      {
+        "text": "Phentolamine",
+        "isCorrect": false,
+        "rationale": "Phentolamine is associated with α1 antagonism; it would be correct if α1-mediated responses were blocked."
+      }
+    ]
+  },
+  {
+    "question": "A patient with profound hypotension receives an agent that directly activates the adrenergic receptor paired with phenylephrine. Which receptor mediates the intended intervention?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe sympathetic innervation, transmitters, receptors, agonists, and antagonists.",
+    "options": [
+      {
+        "text": "Adrenergic α2 receptor",
+        "isCorrect": false,
+        "rationale": "The displayed α2 profile favors norepinephrine over epinephrine and lists yohimbine as antagonist; it would fit an α2-directed intervention."
+      },
+      {
+        "text": "Adrenergic β1 receptor",
+        "isCorrect": false,
+        "rationale": "β1 is paired with metoprolol rather than phenylephrine; it would be correct if the named drug were metoprolol's receptor target."
+      },
+      {
+        "text": "Adrenergic α1 receptor",
+        "isCorrect": true,
+        "rationale": "Phenylephrine is the listed agonist at the α1 receptor."
+      },
+      {
+        "text": "Adrenergic β2 receptor",
+        "isCorrect": false,
+        "rationale": "β2 is paired with butoxamine as antagonist; it would be correct if selective β2 antagonism were described."
+      },
+      {
+        "text": "Adrenergic β3 receptor",
+        "isCorrect": false,
+        "rationale": "β3 is paired with SR-52230A rather than phenylephrine; it would fit a β3-directed experiment."
+      }
+    ]
+  },
+  {
+    "question": "A patient has salivation, lacrimation, urinary incontinence, defecation, gastrointestinal distress, and emesis. Which additional finding would most strongly show that the process extends beyond muscarinic effector stimulation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Distinguish muscarinic from nicotinic manifestations of cholinergic stimulation.",
+    "options": [
+      {
+        "text": "Bronchial constriction",
+        "isCorrect": false,
+        "rationale": "Bronchoconstriction is another muscarinic manifestation; it would strengthen muscarinic involvement without proving extension beyond it."
+      },
+      {
+        "text": "Pupillary constriction",
+        "isCorrect": false,
+        "rationale": "Miosis is explicitly identified as a muscarinic sign; it would further support muscarinic activation alone."
+      },
+      {
+        "text": "Increased bronchial secretions",
+        "isCorrect": false,
+        "rationale": "Bronchial secretions are muscarinic; they would be expected within the same effector pattern."
+      },
+      {
+        "text": "Skeletal muscle fasciculations",
+        "isCorrect": true,
+        "rationale": "Fasciculations identify somatic nicotinic involvement and therefore demonstrate cholinergic activity beyond muscarinic visceral effectors."
+      },
+      {
+        "text": "Hyperactive bowel activity",
+        "isCorrect": false,
+        "rationale": "Increased gastrointestinal activity remains within the muscarinic pattern; it would not establish nicotinic involvement."
+      }
+    ]
+  },
+  {
+    "question": "A drug is administered to a patient with miosis, secretions, diarrhea, and fasciculations. It binds the receptor found on postganglionic neurons in both autonomic divisions. Which immediate synaptic effect is expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare sympathetic, parasympathetic, and somatic innervation.",
+    "options": [
+      {
+        "text": "Direct blockade of muscarinic effectors",
+        "isCorrect": false,
+        "rationale": "Muscarinic effectors are downstream parasympathetic targets rather than postganglionic neurons in both divisions; this would describe atropine."
+      },
+      {
+        "text": "Direct activation of adrenergic effectors",
+        "isCorrect": false,
+        "rationale": "Adrenergic effectors are targets of sympathetic postganglionic neurons; this would require an adrenergic agonist."
+      },
+      {
+        "text": "Direct blockade of β1 effectors",
+        "isCorrect": false,
+        "rationale": "β1 blockade is limited to one sympathetic receptor class; it would fit metoprolol exposure."
+      },
+      {
+        "text": "Activation of ganglionic nicotinic receptors",
+        "isCorrect": false,
+        "rationale": "This would occur with nicotine, an N2 agonist; it would be correct if the drug activated rather than blocked the shared receptor."
+      },
+      {
+        "text": "Blockade of ganglionic nicotinic receptors",
+        "isCorrect": true,
+        "rationale": "The receptor on postganglionic neurons in both divisions is N2, and antagonism interrupts autonomic ganglionic transmission."
+      }
+    ]
+  },
+  {
+    "question": "A 42-year-old man with diffuse secretions, miosis, diarrhea, bradycardia, and fasciculations receives atropine. Which cellular mechanism explains the expected improvement in the secretory and cardiac findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Apply autonomic receptor pharmacology to cholinergic clinical findings.",
+    "options": [
+      {
+        "text": "Antagonism of muscarinic acetylcholine receptors",
+        "isCorrect": true,
+        "rationale": "Atropine blocks muscarinic receptors on parasympathetic effectors, reducing the muscarinic secretory, ocular, gastrointestinal, pulmonary, and cardiac manifestations."
+      },
+      {
+        "text": "Antagonism of ganglionic nicotinic receptors",
+        "isCorrect": false,
+        "rationale": "Ganglionic N2 antagonism is associated with hexamethonium; it would fit interruption of both autonomic divisions at their ganglia."
+      },
+      {
+        "text": "Agonism of ganglionic nicotinic receptors",
+        "isCorrect": false,
+        "rationale": "N2 agonism is associated with nicotine and would not directly oppose muscarinic excess; it would fit intended ganglionic stimulation."
+      },
+      {
+        "text": "Antagonism of adrenergic β1 receptors",
+        "isCorrect": false,
+        "rationale": "β1 antagonism is associated with metoprolol and would not treat a muscarinic secretory syndrome; it would fit excessive β1 signaling."
+      },
+      {
+        "text": "Agonism of adrenergic α1 receptors",
+        "isCorrect": false,
+        "rationale": "α1 agonism is associated with phenylephrine and does not directly block muscarinic receptors; it would fit direct α1 activation."
+      }
+    ]
+  },
+  {
+    "question": "An isolated visceral organ receives a postganglionic fiber that releases acetylcholine. Atropine eliminates the organ response, but hexamethonium applied directly to the organ has no effect. Which pathway supplies the fiber?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe parasympathetic innervation, transmitters, receptors, agonists, and antagonists.",
+    "options": [
+      {
+        "text": "Sympathetic preganglionic pathway",
+        "isCorrect": false,
+        "rationale": "A sympathetic preganglionic fiber releases acetylcholine onto N2 receptors within a ganglion; it would be blocked by hexamethonium at that synapse."
+      },
+      {
+        "text": "Parasympathetic postganglionic pathway",
+        "isCorrect": true,
+        "rationale": "Parasympathetic postganglionic fibers release acetylcholine onto muscarinic effector receptors, explaining atropine sensitivity and absent direct hexamethonium effect."
+      },
+      {
+        "text": "Sympathetic postganglionic pathway",
+        "isCorrect": false,
+        "rationale": "The displayed sympathetic postganglionic transmitter is norepinephrine; this would fit an adrenergic effector response."
+      },
+      {
+        "text": "Parasympathetic preganglionic pathway",
+        "isCorrect": false,
+        "rationale": "A parasympathetic preganglionic fiber targets ganglionic N2 receptors; it would fit hexamethonium-sensitive ganglionic transmission."
+      },
+      {
+        "text": "Somatic skeletal motor pathway",
+        "isCorrect": false,
+        "rationale": "The somatic pathway releases acetylcholine onto nicotinic skeletal muscle receptors; it would fit a skeletal rather than visceral effector."
+      }
+    ]
+  },
+  {
+    "question": "A patient exposed to an acetylcholine breakdown inhibitor develops both hypotension with bradycardia and visible fasciculations. Which two receptor populations must be involved to account for both findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Distinguish muscarinic from nicotinic manifestations of cholinergic stimulation.",
+    "options": [
+      {
+        "text": "Adrenergic α1 and β1 receptors",
+        "isCorrect": false,
+        "rationale": "These are sympathetic effector receptors and do not explain the listed somatic cholinergic sign; they would fit combined adrenergic signaling."
+      },
+      {
+        "text": "Adrenergic α2 and β2 receptors",
+        "isCorrect": false,
+        "rationale": "These receptors belong to the sympathetic adrenergic set and do not mediate fasciculations; they would fit an adrenergic receptor comparison."
+      },
+      {
+        "text": "Muscarinic and somatic nicotinic receptors",
+        "isCorrect": true,
+        "rationale": "Muscarinic stimulation accounts for the parasympathetic cardiovascular pattern, while somatic nicotinic stimulation accounts for fasciculations."
+      },
+      {
+        "text": "Ganglionic N2 and α1 receptors",
+        "isCorrect": false,
+        "rationale": "This combination omits the somatic nicotinic receptor needed for fasciculations; it would fit ganglionic and sympathetic effector signaling."
+      },
+      {
+        "text": "Muscarinic and adrenergic β3 receptors",
+        "isCorrect": false,
+        "rationale": "Muscarinic activity explains part of the presentation, but β3 does not account for fasciculations; it would require a β3-specific effector finding."
+      }
+    ]
+  },
+  {
+    "question": "A preparation expressing only one sympathetic receptor subtype loses its response after SR-52230A is applied. Responses in α1-, α2-, β1-, and β2-expressing preparations remain intact. Which receptor was present?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe sympathetic innervation, transmitters, receptors, agonists, and antagonists.",
+    "options": [
+      {
+        "text": "Adrenergic α1 receptor",
+        "isCorrect": false,
+        "rationale": "α1 is paired with phenylephrine and phentolamine; it would be correct if phentolamine abolished the response."
+      },
+      {
+        "text": "Adrenergic α2 receptor",
+        "isCorrect": false,
+        "rationale": "α2 is paired with yohimbine; it would be correct if that antagonist selectively removed the response."
+      },
+      {
+        "text": "Adrenergic β1 receptor",
+        "isCorrect": false,
+        "rationale": "β1 is paired with metoprolol; it would be correct if metoprolol caused the selective loss."
+      },
+      {
+        "text": "Adrenergic β3 receptor",
+        "isCorrect": true,
+        "rationale": "SR-52230A is the antagonist listed with the β3 receptor."
+      },
+      {
+        "text": "Adrenergic β2 receptor",
+        "isCorrect": false,
+        "rationale": "β2 is paired with butoxamine; it would be correct if butoxamine abolished the preparation's response."
+      }
+    ]
+  },
+  {
+    "question": "A patient's secretions, miosis, diarrhea, and bradycardia improve after atropine, but weakness and fasciculations continue. Which next therapeutic target is most logically supported by the remaining physiology?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Apply autonomic receptor pharmacology to cholinergic clinical findings.",
+    "options": [
+      {
+        "text": "Somatic nicotinic signaling",
+        "isCorrect": true,
+        "rationale": "Persistent weakness and fasciculations after muscarinic blockade identify ongoing somatic nicotinic involvement. Selecting a specific additional drug would be an inference because no treatment for this component is named in the source."
+      },
+      {
+        "text": "Parasympathetic muscarinic signaling",
+        "isCorrect": false,
+        "rationale": "The muscarinic findings have already improved with atropine; this target would remain appropriate if secretions, miosis, diarrhea, or bradycardia persisted."
+      },
+      {
+        "text": "Sympathetic α1 signaling",
+        "isCorrect": false,
+        "rationale": "α1 signaling does not account for the residual somatic muscle findings; it would fit an α1-mediated sympathetic abnormality."
+      },
+      {
+        "text": "Sympathetic β2 signaling",
+        "isCorrect": false,
+        "rationale": "β2 is an adrenergic effector pathway rather than the somatic neuromuscular pathway; it would fit a selective β2 response."
+      },
+      {
+        "text": "Autonomic muscarinic signaling",
+        "isCorrect": false,
+        "rationale": "Muscarinic blockade explains the findings that resolved, not the persistent fasciculations; it would be correct if wet autonomic findings remained."
       }
     ]
   }
