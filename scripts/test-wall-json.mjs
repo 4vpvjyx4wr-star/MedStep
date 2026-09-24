@@ -15,15 +15,27 @@ function grab(name, nextName) {
 }
 
 const src = [
+  ['quizObjectField', 'quizQuestionStem'],
+  ['quizQuestionStem', 'quizQuestionOptions'],
+  ['quizQuestionOptions', 'isQuizOptionCorrect'],
+  ['isQuizOptionCorrect', 'normalizeQuizOption'],
+  ['normalizeQuizOption', 'normalizeQuizQuestion'],
+  ['normalizeQuizQuestion', 'questionsMissingMinOptions'],
   ['transformJsonOutsideStrings', 'stripQuizJsonNoise'],
   ['stripQuizJsonNoise', 'repairQuizJsonText'],
   ['repairQuizJsonText', 'findMatchingJsonEnd'],
-  ['recoverWallOfTextQuizJson', 'extractQuizQuestionsFromText'],
+  ['findMatchingJsonEnd', 'isQuizQuestionObject'],
+  ['isQuizQuestionObject', 'coerceQuizQuestions'],
+  ['coerceQuizQuestions', 'tryParseJsonValue'],
+  ['tryParseJsonValue', 'scanQuizJsonValues'],
+  ['scanQuizJsonValues', 'canonicalizeQuizQuestions'],
+  ['canonicalizeQuizQuestions', 'recoverWallOfTextQuizJson'],
+  ['recoverWallOfTextQuizJson', 'looksLikeQuizQuestionPaste'],
 ].map(([name, next]) => grab(name, next)).join('\n');
 
 const context = {};
 vm.createContext(context);
-vm.runInContext(src + '\nthis.recover = recoverWallOfTextQuizJson;\nthis.repair = repairQuizJsonText;', context);
+vm.runInContext(src + '\nthis.extract = extractQuizQuestionsFromText;', context);
 
 const q = {
   question: 'A 54-year-old man has chest pain.',
@@ -37,24 +49,30 @@ const q = {
 const pretty = JSON.stringify([q], null, 2);
 const wall = JSON.stringify(pretty);
 const prose = 'The quiz was serialized as plain text rather than presented in a clearly copyable JSON block.\n' + wall;
-const recovered = context.repair(context.recover(prose));
-const parsed = JSON.parse(recovered.slice(recovered.indexOf('['), recovered.lastIndexOf(']') + 1));
-if (parsed[0].question !== q.question) throw new Error('prose string unwrap failed');
+const fromProse = context.extract(prose);
+if (fromProse[0].question !== q.question) throw new Error('prose string unwrap failed');
 
 const literal = 'serialized as plain text ' + pretty.replace(/\n/g, '\\n');
-const recovered2 = context.repair(context.recover(literal));
-JSON.parse(recovered2.slice(recovered2.indexOf('[')));
-if (!recovered2.includes('\n')) throw new Error('literal backslash-n was not expanded');
+const fromLiteral = context.extract(literal);
+if (fromLiteral[0].difficulty_order !== '1st') throw new Error('literal backslash-n was not expanded');
 
 const minified = JSON.stringify([q]);
-const recovered3 = context.repair(context.recover(minified));
-if (JSON.parse(recovered3)[0].options[0].text !== 'Aortic dissection') {
+if (context.extract(minified)[0].options[0].text !== 'Aortic dissection') {
   throw new Error('minified JSON was damaged');
 }
 
 const curly = pretty.replace(/"/g, '\u201c');
-const recovered4 = context.repair(context.recover(curly));
-if (JSON.parse(recovered4)[0].difficulty_order !== '1st') {
+if (context.extract(curly)[0].difficulty_order !== '1st') {
   throw new Error('curly-quote JSON was not recovered');
+}
+
+const brokenLine = pretty.replace('"Fits the vignette."', '"Fits the\nvignette."');
+if (context.extract(brokenLine)[0].question !== q.question) {
+  throw new Error('raw newline inside a string was not recovered');
+}
+
+const titled = minified.replace(/"question"/, '"Question"');
+if (context.extract(titled)[0].question !== q.question) {
+  throw new Error('capital Question key was dropped');
 }
 console.log('wall-json recovery ok');

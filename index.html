@@ -3115,16 +3115,23 @@ function optionLetter(i){
   }
   return s;
 }
+function quizObjectField(q, names) {
+  if (!q || typeof q !== 'object') return undefined;
+  const want = new Set(names.map(n => String(n).toLowerCase().replace(/[\s_-]/g, '')));
+  const keys = Object.keys(q);
+  for (let i = 0; i < keys.length; i++) {
+    if (want.has(keys[i].toLowerCase().replace(/[\s_-]/g, ''))) return q[keys[i]];
+  }
+  return undefined;
+}
 function quizQuestionStem(q){
   if(!q||typeof q!=='object') return '';
-  return String(q.question||q.stem||q.prompt||'').trim();
+  return String(quizObjectField(q, ['question', 'stem', 'prompt', 'vignette', 'questiontext']) || '').trim();
 }
 function quizQuestionOptions(q){
   if(!q||typeof q!=='object') return [];
-  if(Array.isArray(q.options)) return q.options;
-  if(Array.isArray(q.choices)) return q.choices;
-  if(Array.isArray(q.answers)) return q.answers;
-  return [];
+  const options = quizObjectField(q, ['options', 'choices', 'answers', 'answerchoices']);
+  return Array.isArray(options) ? options : [];
 }
 function isQuizOptionCorrect(o){
   if(!o||typeof o!=='object') return false;
@@ -11563,6 +11570,7 @@ function recoverWallOfTextQuizJson(text) {
   const lead = s.search(/```|[\[{]|\\"question\\"|"question"\s*:|[\u201c]question[\u201d]\s*:/);
   if (lead > 0) s = s.slice(lead);
   s = s.replace(/```(?:json|javascript|js)?/gi, '').replace(/```/g, '').trim();
+  s = s.replace(/&quot;/gi, '"').replace(/&#34;/g, '"').replace(/&amp;/gi, '&');
   if (s.startsWith('"') && s.endsWith('"')) {
     try {
       const inner = JSON.parse(s);
@@ -11583,10 +11591,29 @@ function recoverWallOfTextQuizJson(text) {
   return s.trim();
 }
 
-function extractQuizQuestionsFromText(text) {
-  const raw = recoverWallOfTextQuizJson(String(text || '').trim());
-  if (!raw || raw === 'Loading quiz JSON…') return [];
-  const repaired = repairQuizJsonText(raw);
+function quizJsonCandidates(text) {
+  const base = recoverWallOfTextQuizJson(String(text || ''));
+  const out = [];
+  function add(s) {
+    const t = String(s || '').trim();
+    if (t && out.indexOf(t) < 0) out.push(t);
+  }
+  add(base);
+  add(base.replace(/\r?\n/g, ' '));
+  add(base.replace(/[\u201c\u201d]/g, '"').replace(/[\u2018\u2019]/g, "'"));
+  add(base.replace(/\\r\\n/g, '\n').replace(/\\n/g, '\n').replace(/\\t/g, '\t').replace(/\\"/g, '"'));
+  const start = base.indexOf('[');
+  const end = base.lastIndexOf(']');
+  if (start >= 0 && end > start) add(base.slice(start, end + 1).replace(/\r?\n/g, ' '));
+  if (!/"question"\s*:/i.test(base) && /'question'\s*:/i.test(base)) add(base.replace(/'/g, '"'));
+  if (!/"question"\s*:/i.test(base) && /\bquestion\s*:/i.test(base)) {
+    add(base.replace(/([{,\[]\s*)(question|difficulty_order|cited_learning_objective|options|text|isCorrect|is_correct|rationale|stem|choices|answers)\s*:/gi, '$1"$2":'));
+  }
+  return out;
+}
+
+function questionsFromQuizText(text) {
+  const repaired = repairQuizJsonText(text);
   const buckets = [];
   const direct = tryParseJsonValue(repaired);
   if (direct.ok) buckets.push(coerceQuizQuestions(direct.value));
@@ -11597,6 +11624,17 @@ function extractQuizQuestionsFromText(text) {
   if (wrapped.ok) buckets.push(coerceQuizQuestions(wrapped.value));
   let best = [];
   buckets.forEach(list => {
+    if (list.length > best.length) best = list;
+  });
+  return best;
+}
+
+function extractQuizQuestionsFromText(text) {
+  const raw = String(text || '').trim();
+  if (!raw || raw === 'Loading quiz JSON…') return [];
+  let best = [];
+  quizJsonCandidates(raw).forEach(candidate => {
+    const list = questionsFromQuizText(candidate);
     if (list.length > best.length) best = list;
   });
   return canonicalizeQuizQuestions(best);
