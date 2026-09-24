@@ -1,0 +1,962 @@
+[
+  {
+    "question": "Which viral protein binds CD4 and a chemokine coreceptor during host-cell entry?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the key structural genes (env, pol, gag) of HIV and the function of the proteins they encode.",
+    "options": [
+      {
+        "text": "Envelope glycoprotein gp120",
+        "isCorrect": true,
+        "rationale": "Gp120 is an env-encoded protein that binds CD4 and then CCR5 or CXCR4. These interactions bring the virion closer to the host membrane."
+      },
+      {
+        "text": "Envelope glycoprotein gp41",
+        "isCorrect": false,
+        "rationale": "Gp41 mediates fusion rather than receptor binding. This option would be correct if the task asked which protein merges the viral envelope with the host membrane."
+      },
+      {
+        "text": "Capsid protein p24",
+        "isCorrect": false,
+        "rationale": "P24 is a gag-encoded capsid component rather than a receptor-binding protein. This option would be correct if the task asked for the capsid antigen detected by combination screening."
+      },
+      {
+        "text": "Matrix protein p17",
+        "isCorrect": false,
+        "rationale": "P17 is a gag-encoded matrix protein and does not bind the entry receptors. This option would be correct if the task asked for the viral matrix component."
+      },
+      {
+        "text": "Nucleocapsid protein p7",
+        "isCorrect": false,
+        "rationale": "P7 is the gag-encoded nucleocapsid protein associated with viral RNA. This option would be correct if the task asked which structural component associates with the genome."
+      }
+    ]
+  },
+  {
+    "question": "Which viral enzyme inserts newly synthesized viral DNA into a host chromosome?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List and explain all steps of the life cycle of HIV.",
+    "options": [
+      {
+        "text": "Viral reverse transcriptase",
+        "isCorrect": false,
+        "rationale": "Reverse transcriptase synthesizes double-stranded viral DNA from the RNA genome. This option would be correct if the task asked which enzyme generates viral DNA after uncoating."
+      },
+      {
+        "text": "Viral integrase",
+        "isCorrect": true,
+        "rationale": "Integrase inserts viral DNA into the host chromosome. The integrated viral DNA is then called a provirus."
+      },
+      {
+        "text": "Viral protease",
+        "isCorrect": false,
+        "rationale": "Protease cleaves Gag and Pol polyproteins into active products. This option would be correct if the task asked which enzyme supports virion maturation."
+      },
+      {
+        "text": "Host polymerase",
+        "isCorrect": false,
+        "rationale": "Host polymerase transcribes integrated viral DNA rather than inserting it. This option would be correct if the provirus had already formed and viral transcription were being examined."
+      },
+      {
+        "text": "Envelope glycoprotein",
+        "isCorrect": false,
+        "rationale": "Envelope glycoproteins support receptor binding and membrane fusion rather than chromosomal integration. This option would be correct if the task concerned viral entry."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory method measures the amount of circulating viral RNA in an infected patient?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Depending on the clinical scenario, identify the most appropriate laboratory diagnostic tool for HIV infection or assay for monitoring progression of disease in HIV positive individuals.",
+    "options": [
+      {
+        "text": "Antibody differentiation immunoassay",
+        "isCorrect": false,
+        "rationale": "The differentiation immunoassay distinguishes anti-HIV-1 from anti-HIV-2 antibodies but does not measure viral quantity. It would be correct if viral type needed clarification after reactive screening."
+      },
+      {
+        "text": "Antigen-antibody combination immunoassay",
+        "isCorrect": false,
+        "rationale": "The combination immunoassay screens for p24 antigen and antibodies against both viral types. It would be correct if the task asked for the standard screening test."
+      },
+      {
+        "text": "Quantitative reverse-transcription PCR",
+        "isCorrect": true,
+        "rationale": "Quantitative reverse-transcription PCR measures circulating viral RNA and determines viral load. This value is used to monitor infection during antiretroviral therapy."
+      },
+      {
+        "text": "Proviral DNA PCR",
+        "isCorrect": false,
+        "rationale": "Proviral DNA PCR detects viral DNA incorporated into the host chromosome rather than circulating RNA quantity. It would be correct if integrated provirus were the target."
+      },
+      {
+        "text": "CD4 flow cytometry",
+        "isCorrect": false,
+        "rationale": "Flow cytometry enumerates CD4 T cells and therefore monitors immune status. It would be correct if the task asked how to measure progression toward the immunologic AIDS threshold."
+      }
+    ]
+  },
+  {
+    "question": "Which finding independently meets the immunologic criterion for AIDS in an HIV-positive patient?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the defining criteria for AIDS.",
+    "options": [
+      {
+        "text": "CD4 count below 500 cells/µL",
+        "isCorrect": false,
+        "rationale": "A value below 500 cells/µL indicates CD4-cell depletion but does not meet the specified AIDS threshold. This option would be correct if the cutoff were below 500 rather than below 200 cells/µL."
+      },
+      {
+        "text": "CD8 count below 200 cells/µL",
+        "isCorrect": false,
+        "rationale": "The immunologic criterion is based on CD4 T cells rather than CD8 T cells. This option would be correct if the depleted population were identified as CD4 T cells."
+      },
+      {
+        "text": "Viral load above 200 copies/mL",
+        "isCorrect": false,
+        "rationale": "Viral load is used for monitoring but is not the specified immunologic AIDS criterion. This option would be correct only if the definition used a viral RNA threshold."
+      },
+      {
+        "text": "CD4 count below 200 cells/µL",
+        "isCorrect": true,
+        "rationale": "An HIV-positive patient meets the immunologic definition of AIDS when the CD4 T-cell count falls below 200 cells/µL. A qualifying AIDS-defining illness is the alternative criterion."
+      },
+      {
+        "text": "CD4:CD8 ratio below two",
+        "isCorrect": false,
+        "rationale": "The ratio declines during disease progression, but a ratio below two is not the stated diagnostic criterion. This option would be correct only if the AIDS definition were ratio-based."
+      }
+    ]
+  },
+  {
+    "question": "A mutation prevents expression of functional gag products while env and pol expression remain intact. Which group of proteins is directly lost?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the key structural genes (env, pol, gag) of HIV and the function of the proteins they encode.",
+    "options": [
+      {
+        "text": "Gp120, gp41, and p24",
+        "isCorrect": false,
+        "rationale": "Gp120 and gp41 are Env products, whereas only p24 is encoded by gag. This option would be correct if both env and part of gag were disrupted."
+      },
+      {
+        "text": "Gp120, p17, and integrase",
+        "isCorrect": false,
+        "rationale": "This group contains products of env, gag, and pol. It would be correct only if separate defects affected all three structural genes."
+      },
+      {
+        "text": "Gp41, p7, and protease",
+        "isCorrect": false,
+        "rationale": "Only p7 is a Gag product; gp41 is encoded by env and protease by pol. This option would require combined defects involving all three genes."
+      },
+      {
+        "text": "Reverse transcriptase, integrase, and protease",
+        "isCorrect": false,
+        "rationale": "These functional enzymes are encoded by pol rather than gag. This option would be correct if pol expression were lost."
+      },
+      {
+        "text": "P17, p24, and p7",
+        "isCorrect": true,
+        "rationale": "Gag produces matrix protein p17, capsid protein p24, and nucleocapsid protein p7. These proteins form the principal structural framework of the virion."
+      }
+    ]
+  },
+  {
+    "question": "A viral isolate binds both required host receptors normally but cannot merge its envelope with the cellular membrane. Which molecule is dysfunctional?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List and explain all steps of the life cycle of HIV.",
+    "options": [
+      {
+        "text": "Envelope glycoprotein gp41",
+        "isCorrect": true,
+        "rationale": "Gp41 mediates fusion after gp120 has engaged CD4 and a chemokine coreceptor. Preserved receptor binding with failed membrane merger therefore identifies defective gp41."
+      },
+      {
+        "text": "Envelope glycoprotein gp120",
+        "isCorrect": false,
+        "rationale": "Gp120 performs the receptor-binding functions that remain intact in this experiment. This option would be correct if attachment to CD4 or a chemokine coreceptor failed."
+      },
+      {
+        "text": "Capsid protein p24",
+        "isCorrect": false,
+        "rationale": "P24 forms the conical capsid and does not execute membrane fusion. This option would be correct if the identified defect involved capsid structure."
+      },
+      {
+        "text": "Matrix protein p17",
+        "isCorrect": false,
+        "rationale": "P17 is a matrix component rather than the envelope fusion protein. This option would be correct if viral matrix structure were disrupted."
+      },
+      {
+        "text": "Nucleocapsid protein p7",
+        "isCorrect": false,
+        "rationale": "P7 associates with viral RNA inside the virion rather than merging membranes. This option would be correct if nucleocapsid organization were impaired."
+      }
+    ]
+  },
+  {
+    "question": "A viral strain preferentially infects macrophages, dendritic cells, and CD4 T cells early in infection. Which coreceptor is being used?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the host cell receptors targeted by HIV and explain how some individuals are resistant to infection.",
+    "options": [
+      {
+        "text": "CD3 surface complex",
+        "isCorrect": false,
+        "rationale": "CD3 is a T-cell marker used in flow cytometry rather than an identified entry coreceptor. This option would be correct if the task asked for a marker used to identify T cells."
+      },
+      {
+        "text": "CD4 primary receptor",
+        "isCorrect": false,
+        "rationale": "CD4 is the required primary receptor but does not distinguish macrophage-tropic from T-cell-tropic isolates. This option would be correct if the task asked for the initial receptor bound by gp120."
+      },
+      {
+        "text": "CCR5 chemokine receptor",
+        "isCorrect": true,
+        "rationale": "CCR5-using isolates are macrophage-tropic and infect macrophages, dendritic cells, and CD4 T cells early in infection. Gp120 binds CCR5 after engaging CD4."
+      },
+      {
+        "text": "CXCR4 chemokine receptor",
+        "isCorrect": false,
+        "rationale": "CXCR4-using isolates are T-cell-tropic and are associated with CD4 T-cell infection later in disease. This option would be correct for a late isolate exhibiting T-cell tropism."
+      },
+      {
+        "text": "CD28 costimulatory receptor",
+        "isCorrect": false,
+        "rationale": "CD28 can be detected as a cellular marker but is not an identified entry coreceptor. This option would be correct if the task asked for a marker used during flow-cytometric characterization."
+      }
+    ]
+  },
+  {
+    "question": "Two individuals carry a deletion affecting the early macrophage-tropic entry pathway. One is homozygous and the other heterozygous. Which outcome is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the host cell receptors targeted by HIV and explain how some individuals are resistant to infection.",
+    "options": [
+      {
+        "text": "Both show complete resistance",
+        "isCorrect": false,
+        "rationale": "Complete resistance is associated with the homozygous CCR5 deletion rather than both genotypes. This option would be correct if both individuals were homozygous."
+      },
+      {
+        "text": "Homozygote resists; heterozygote progresses slower",
+        "isCorrect": true,
+        "rationale": "A homozygous CCR5 deletion confers resistance, whereas a heterozygous deletion reduces transmission and slows progression. The difference reflects the number of affected alleles."
+      },
+      {
+        "text": "Homozygote progresses slower; heterozygote resists",
+        "isCorrect": false,
+        "rationale": "This reverses the stated genotype-phenotype relationship. It would be correct only if one deleted allele conferred complete resistance and two produced partial protection."
+      },
+      {
+        "text": "Both show accelerated progression",
+        "isCorrect": false,
+        "rationale": "CCR5 deletion is associated with protection or slower progression rather than acceleration. This option would require a genetic alteration associated with worse disease progression."
+      },
+      {
+        "text": "Homozygote worsens; heterozygote remains unchanged",
+        "isCorrect": false,
+        "rationale": "Neither outcome reflects the protective effect of CCR5 deletion. This option would require the deletion to facilitate entry rather than interfere with it."
+      }
+    ]
+  },
+  {
+    "question": "Newly released virions contain uncleaved Gag and Pol polyproteins instead of active structural and functional components. Which process failed?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List and explain all steps of the life cycle of HIV.",
+    "options": [
+      {
+        "text": "Gp120-mediated receptor binding",
+        "isCorrect": false,
+        "rationale": "Gp120-mediated binding initiates entry into a new cell and does not cleave polyproteins. This option would be correct if attachment to CD4 and a coreceptor failed."
+      },
+      {
+        "text": "Reverse transcription of RNA",
+        "isCorrect": false,
+        "rationale": "Reverse transcription generates viral DNA early after entry but does not activate viral polyproteins. This option would be correct if viral DNA synthesis failed."
+      },
+      {
+        "text": "Integration of viral DNA",
+        "isCorrect": false,
+        "rationale": "Integration creates provirus before viral production and does not process proteins in released particles. This option would be correct if viral DNA failed to enter the host chromosome."
+      },
+      {
+        "text": "Proteolytic maturation of polyproteins",
+        "isCorrect": true,
+        "rationale": "Viral protease cleaves Gag and Pol polyproteins into active structural proteins and enzymes. Failure of this maturation step leaves released particles with inactive precursors."
+      },
+      {
+        "text": "Host transcription of provirus",
+        "isCorrect": false,
+        "rationale": "Host transcription generates viral RNA, but the presence of viral polyproteins shows that gene expression occurred. This option would be correct if viral RNA and proteins were absent."
+      }
+    ]
+  },
+  {
+    "question": "A viral population rapidly produces altered envelope antigens and drug-resistant descendants within one host. Which property accounts for both outcomes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the key viral molecules used in adaptation and evasion of the immune response.",
+    "options": [
+      {
+        "text": "Accurate host polymerase activity",
+        "isCorrect": false,
+        "rationale": "Host polymerase transcribes proviral DNA but is not identified as the source of rapid viral variation. This option would require variation to arise primarily during host-mediated transcription."
+      },
+      {
+        "text": "Stable viral integrase activity",
+        "isCorrect": false,
+        "rationale": "Integrase produces provirus but does not account for altered envelope antigens or drug-resistant strains. This option would be correct if the task asked how viral DNA becomes chromosomally persistent."
+      },
+      {
+        "text": "Specific viral protease activity",
+        "isCorrect": false,
+        "rationale": "Protease activates viral proteins through cleavage but does not generate heritable sequence diversity. This option would be correct if the task asked how polyproteins become functional."
+      },
+      {
+        "text": "Selective gp120 receptor binding",
+        "isCorrect": false,
+        "rationale": "Gp120 variants participate in immune escape, but receptor binding does not generate those variants. This option would be correct if the task concerned attachment to host receptors."
+      },
+      {
+        "text": "Error-prone reverse transcriptase activity",
+        "isCorrect": true,
+        "rationale": "Reverse transcriptase frequently introduces copying errors. The resulting variation generates altered gp120 and gp41 molecules as well as drug-resistant viral strains."
+      }
+    ]
+  },
+  {
+    "question": "Viral burden decreases after the acute phase but infection remains active for years with few clinical symptoms. Which paired processes best explain this state?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Outline the pathogenesis, phases, and outcomes of HIV infection.",
+    "options": [
+      {
+        "text": "Complete clearance with absent replication",
+        "isCorrect": false,
+        "rationale": "The clinically latent phase includes persistent reservoirs and ongoing replication rather than viral eradication. This option would require elimination of both active virus and integrated provirus."
+      },
+      {
+        "text": "Proviral persistence with immune pressure",
+        "isCorrect": true,
+        "rationale": "Integrated provirus maintains reservoirs while cellular and humoral responses lower viral burden. This ongoing conflict produces relatively few symptoms without clearing infection."
+      },
+      {
+        "text": "Failed integration with viral elimination",
+        "isCorrect": false,
+        "rationale": "Integration has occurred and contributes directly to lifelong persistence. This option would be correct if viral DNA never entered the host chromosome and infection resolved."
+      },
+      {
+        "text": "Absent variation with stable antigens",
+        "isCorrect": false,
+        "rationale": "Error-prone reverse transcription continually produces new viral strains and antigenic variants. This option would require high-fidelity replication and stable envelope proteins."
+      },
+      {
+        "text": "Exclusive viremia without tissue reservoirs",
+        "isCorrect": false,
+        "rationale": "Lymphoid tissue and the CNS contain persistent reservoirs during this phase. This option would require infection to remain exclusively within circulating blood."
+      }
+    ]
+  },
+  {
+    "question": "Which sequence correctly orders the major intracellular events occurring after membrane fusion and before assembly of new particles?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List and explain all steps of the life cycle of HIV.",
+    "options": [
+      {
+        "text": "Integration, uncoating, transcription, reverse transcription",
+        "isCorrect": false,
+        "rationale": "Uncoating and reverse transcription must precede integration, and transcription follows provirus formation. This option would require substantial reordering to match the viral life cycle."
+      },
+      {
+        "text": "Uncoating, integration, reverse transcription, transcription",
+        "isCorrect": false,
+        "rationale": "Integration cannot occur until reverse transcription has generated viral DNA. This option would be correct if reverse transcription and integration exchanged positions."
+      },
+      {
+        "text": "Reverse transcription, uncoating, integration, transcription",
+        "isCorrect": false,
+        "rationale": "Uncoating releases the genome and reverse transcriptase before viral DNA synthesis begins. This option would be correct if uncoating preceded reverse transcription."
+      },
+      {
+        "text": "Uncoating, reverse transcription, integration, transcription",
+        "isCorrect": true,
+        "rationale": "Uncoating releases viral RNA and reverse transcriptase, DNA synthesis follows, integrase creates provirus, and host polymerase then transcribes viral DNA."
+      },
+      {
+        "text": "Transcription, integration, uncoating, reverse transcription",
+        "isCorrect": false,
+        "rationale": "Viral DNA cannot be transcribed before uncoating, reverse transcription, and integration occur. This option would be correct only if the sequence were reversed and reordered."
+      }
+    ]
+  },
+  {
+    "question": "A strong early immune response lowers plasma viral burden but fails to eradicate infection. Which mechanism best explains lifelong persistence?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the key viral molecules used in adaptation and evasion of the immune response.",
+    "options": [
+      {
+        "text": "Provirus remains within tissue reservoirs",
+        "isCorrect": true,
+        "rationale": "Integrated provirus can remain latent within lymphoid tissue and the CNS. These reservoirs permit persistence and subsequent release of virus despite reduced plasma burden."
+      },
+      {
+        "text": "P24 blocks all antibody production",
+        "isCorrect": false,
+        "rationale": "P24 is a capsid antigen, and infected patients produce antiviral antibodies. This option would require p24 to suppress humoral immunity completely."
+      },
+      {
+        "text": "Gp41 destroys infected helper cells",
+        "isCorrect": false,
+        "rationale": "Gp41 mediates membrane fusion rather than directly destroying infected cells. This option would be correct if the task asked which protein completes entry after receptor binding."
+      },
+      {
+        "text": "Protease integrates viral DNA",
+        "isCorrect": false,
+        "rationale": "Integrase inserts viral DNA, whereas protease cleaves viral polyproteins. This option would be correct if protease were replaced by integrase."
+      },
+      {
+        "text": "Host polymerase copies viral RNA",
+        "isCorrect": false,
+        "rationale": "Viral reverse transcriptase converts viral RNA into DNA, while host polymerase transcribes integrated DNA. This option would require a different enzyme and nucleic-acid direction."
+      }
+    ]
+  },
+  {
+    "question": "An infected patient has few symptoms despite persistent replication, gradual helper-cell loss, and continuing elimination of infected cells by cytotoxic lymphocytes. Which phase is represented?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify key clinical manifestations of each phase of HIV infection: acute, latent, and AIDS.",
+    "options": [
+      {
+        "text": "Acute infection phase",
+        "isCorrect": false,
+        "rationale": "The acute phase has marked early viremia and may cause fever, fatigue, myalgia, rash, headache, or lymphadenopathy. This option would be correct if the findings occurred approximately 2-4 weeks after infection."
+      },
+      {
+        "text": "Complete viral suppression",
+        "isCorrect": false,
+        "rationale": "Persistent replication and continuing helper-cell loss contradict complete viral suppression. This option would be correct if therapy maintained an undetectable viral load and prevented progression."
+      },
+      {
+        "text": "Resolved viral infection",
+        "isCorrect": false,
+        "rationale": "Integrated provirus and ongoing replication mean that infection has not resolved. This option would require eradication of reservoirs and cessation of viral production."
+      },
+      {
+        "text": "Late AIDS phase",
+        "isCorrect": false,
+        "rationale": "The late phase is defined by severe CD4-cell depletion or an AIDS-defining illness. This option would be correct if the count were below 200 cells/µL or a qualifying illness were present."
+      },
+      {
+        "text": "Clinically latent phase",
+        "isCorrect": true,
+        "rationale": "The clinically latent phase has few symptoms despite persistent reservoirs, ongoing replication, immune pressure, and progressive CD4 T-cell destruction."
+      }
+    ]
+  },
+  {
+    "question": "A 24-year-old patient presents 12 days after a high-risk exposure with fever, fatigue, myalgia, and generalized lymphadenopathy. A rapid antibody test is negative. Which test is the most appropriate next diagnostic step?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Depending on the clinical scenario, identify the most appropriate laboratory diagnostic tool for HIV infection or assay for monitoring progression of disease in HIV positive individuals.",
+    "options": [
+      {
+        "text": "Repeat rapid antibody screening",
+        "isCorrect": false,
+        "rationale": "Another antibody-only assay may remain negative before seroconversion. It would be appropriate after enough time had passed for anti-HIV antibodies to become detectable."
+      },
+      {
+        "text": "HIV antibody differentiation immunoassay",
+        "isCorrect": false,
+        "rationale": "The differentiation assay follows a reactive combination screen and distinguishes HIV-1 from HIV-2 antibodies. It would be appropriate if the initial screen were reactive."
+      },
+      {
+        "text": "CD4 T-cell flow cytometry",
+        "isCorrect": false,
+        "rationale": "Flow cytometry assesses immune status rather than directly diagnosing acute infection. It would be appropriate after infection was confirmed and CD4-cell status required monitoring."
+      },
+      {
+        "text": "HIV RNA reverse-transcription PCR",
+        "isCorrect": true,
+        "rationale": "The timing and systemic symptoms indicate possible acute infection before seroconversion. Reverse-transcription PCR directly detects viral RNA at approximately 1.5-2 weeks."
+      },
+      {
+        "text": "HIV proviral DNA PCR",
+        "isCorrect": false,
+        "rationale": "Proviral DNA PCR detects integrated viral DNA, whereas reverse-transcription PCR is the specified test for suspected acute infection. This option would be correct if incorporated provirus were the intended target."
+      }
+    ]
+  },
+  {
+    "question": "A 31-year-old patient has a reactive combination screening result. The subsequent type-differentiation assay detects neither type-specific antibody. Which test is the most appropriate next step?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Depending on the clinical scenario, identify the most appropriate laboratory diagnostic tool for HIV infection or assay for monitoring progression of disease in HIV positive individuals.",
+    "options": [
+      {
+        "text": "Viral nucleic acid testing",
+        "isCorrect": true,
+        "rationale": "When the combination screen is reactive but antibody differentiation is indeterminate, nucleic acid testing determines whether HIV-1, HIV-2, both, or neither is detected."
+      },
+      {
+        "text": "Repeat oral antibody testing",
+        "isCorrect": false,
+        "rationale": "An oral antibody test is less sensitive and cannot reliably resolve discordant laboratory results. It would be appropriate only as an initial rapid screen followed by confirmatory testing if reactive."
+      },
+      {
+        "text": "CD4 flow-cytometric testing",
+        "isCorrect": false,
+        "rationale": "CD4 enumeration assesses immune status rather than resolving whether the screening reaction reflects HIV-1, HIV-2, or neither. It would be appropriate after infection was established."
+      },
+      {
+        "text": "Quantitative viral-load testing",
+        "isCorrect": false,
+        "rationale": "Quantitative testing measures how much circulating viral RNA is present, but the diagnostic algorithm first calls for nucleic acid detection to resolve the indeterminate result. It would be appropriate for subsequent viral-load monitoring."
+      },
+      {
+        "text": "Repeat type-differentiation testing",
+        "isCorrect": false,
+        "rationale": "Repeating the same indeterminate antibody assay does not directly establish whether virus is present. It would be appropriate only for later antibody reassessment after additional time for seroconversion."
+      }
+    ]
+  },
+  {
+    "question": "A 29-year-old patient begins antiretroviral therapy after confirmed infection. Three months later, the clinician wants to determine whether circulating viral burden has fallen. Which assay is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Depending on the clinical scenario, identify the most appropriate laboratory diagnostic tool for HIV infection or assay for monitoring progression of disease in HIV positive individuals.",
+    "options": [
+      {
+        "text": "Antibody differentiation immunoassay",
+        "isCorrect": false,
+        "rationale": "This assay distinguishes antibodies against HIV-1 and HIV-2 but does not measure changes in viral quantity. It would be appropriate if viral type required clarification after screening."
+      },
+      {
+        "text": "Antigen-antibody combination immunoassay",
+        "isCorrect": false,
+        "rationale": "The combination assay is used for screening, and continuing reactivity does not quantify treatment response. It would be appropriate for initial detection of infection."
+      },
+      {
+        "text": "Rapid oral antibody testing",
+        "isCorrect": false,
+        "rationale": "Rapid oral testing detects antibodies and cannot quantify circulating viral RNA. It would be appropriate for rapid initial screening followed by confirmatory testing if reactive."
+      },
+      {
+        "text": "Qualitative proviral DNA PCR",
+        "isCorrect": false,
+        "rationale": "Integrated provirus may persist despite suppression, so qualitative DNA detection does not measure circulating burden. It would be appropriate if the target were incorporated viral DNA."
+      },
+      {
+        "text": "Quantitative reverse-transcription PCR",
+        "isCorrect": true,
+        "rationale": "Quantitative reverse-transcription PCR measures circulating viral RNA and determines viral load. Serial values are used to assess viral suppression during treatment."
+      }
+    ]
+  },
+  {
+    "question": "A 40-year-old patient with confirmed infection has a CD4 count of 460 cells/µL [500-1500 cells/µL] and no defining illness. Which test should be used serially to monitor progression toward AIDS?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Depending on the clinical scenario, identify the most appropriate laboratory diagnostic tool for HIV infection or assay for monitoring progression of disease in HIV positive individuals.",
+    "options": [
+      {
+        "text": "Antibody differentiation immunoassay",
+        "isCorrect": false,
+        "rationale": "Antibody differentiation identifies HIV-1 or HIV-2 antibodies but does not quantify helper T cells. It would be appropriate if viral type needed clarification after reactive screening."
+      },
+      {
+        "text": "CD4 flow-cytometric measurement",
+        "isCorrect": true,
+        "rationale": "Flow cytometry uses fluorescent antibodies against cellular markers to enumerate CD4 T cells. Serial counts monitor immune decline toward the threshold below 200 cells/µL."
+      },
+      {
+        "text": "P24 antigen screening assay",
+        "isCorrect": false,
+        "rationale": "P24 detection contributes to initial screening but does not measure progression toward the immunologic AIDS criterion. It would be appropriate as part of a combination screening assay."
+      },
+      {
+        "text": "Proviral DNA amplification assay",
+        "isCorrect": false,
+        "rationale": "Proviral DNA amplification detects integrated viral genetic material but does not enumerate helper T cells. It would be appropriate if chromosomally incorporated virus were the target."
+      },
+      {
+        "text": "Rapid oral antibody assay",
+        "isCorrect": false,
+        "rationale": "An oral assay detects anti-HIV antibodies and is less sensitive than laboratory screening. It would be appropriate for rapid screening rather than serial immune monitoring."
+      }
+    ]
+  },
+  {
+    "question": "A 35-year-old HIV-positive patient has a CD4 count of 320 cells/µL [500-1500 cells/µL] and is diagnosed with Kaposi sarcoma. Which classification is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the defining criteria for AIDS.",
+    "options": [
+      {
+        "text": "Acute infection without AIDS",
+        "isCorrect": false,
+        "rationale": "Acute infection occurs early and may produce a systemic retroviral syndrome. This option would be correct if the patient had recent acquisition without a defining illness."
+      },
+      {
+        "text": "Latent infection without AIDS",
+        "isCorrect": false,
+        "rationale": "A CD4 count above 200 cells/µL does not exclude AIDS when a defining illness is present. This option would be correct if Kaposi sarcoma were absent."
+      },
+      {
+        "text": "AIDS from qualifying illness",
+        "isCorrect": true,
+        "rationale": "Kaposi sarcoma is an AIDS-defining illness. An HIV-positive patient with this diagnosis meets AIDS criteria despite having more than 200 CD4 cells/µL."
+      },
+      {
+        "text": "AIDS from CD8 depletion",
+        "isCorrect": false,
+        "rationale": "The immunologic threshold is based on CD4 T cells rather than CD8 T cells. This option would require a qualifying CD8 criterion that is not part of the definition."
+      },
+      {
+        "text": "Resolved infection with malignancy",
+        "isCorrect": false,
+        "rationale": "Integrated provirus permits lifelong persistence, so infection is not considered resolved. This option would require viral eradication and a malignancy unrelated to AIDS classification."
+      }
+    ]
+  },
+  {
+    "question": "A 42-year-old HIV-positive patient has a CD4 count of 185 cells/µL [500-1500 cells/µL] but no symptoms or opportunistic illness. Which classification is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the defining criteria for AIDS.",
+    "options": [
+      {
+        "text": "Acute retroviral syndrome",
+        "isCorrect": false,
+        "rationale": "Acute retroviral syndrome occurs early with high viral burden and systemic symptoms. This option would be correct if there were recent acquisition with fever, fatigue, rash, or lymphadenopathy."
+      },
+      {
+        "text": "Latent infection without AIDS",
+        "isCorrect": false,
+        "rationale": "Minimal symptoms can occur during latency, but the CD4 count independently meets the AIDS threshold. This option would be correct if the count were at least 200 cells/µL without a defining illness."
+      },
+      {
+        "text": "AIDS from viral burden",
+        "isCorrect": false,
+        "rationale": "No viral-load threshold is given as a defining criterion for AIDS. This option would require classification based on quantitative viral RNA rather than CD4-cell depletion."
+      },
+      {
+        "text": "AIDS by CD4 criterion",
+        "isCorrect": true,
+        "rationale": "An HIV-positive patient meets AIDS criteria when the CD4 count is below 200 cells/µL. Symptoms or an opportunistic illness are not additionally required."
+      },
+      {
+        "text": "Infection below diagnostic threshold",
+        "isCorrect": false,
+        "rationale": "The patient is already HIV-positive, and the low CD4 count supports advanced disease. This option would require negative diagnostic testing and no qualifying manifestation."
+      }
+    ]
+  },
+  {
+    "question": "A 27-year-old patient develops fever, fatigue, myalgia, rash, and lymphadenopathy 3 weeks after infection. Plasma viral RNA is markedly elevated. Which additional feature best fits this phase?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Correlate the changes of viral load and immune responses with the progression of HIV infection.",
+    "options": [
+      {
+        "text": "Lowest risk of transmission",
+        "isCorrect": false,
+        "rationale": "Transmission risk rises with viral burden and is not lowest during marked early viremia. This option would be correct if treatment had produced sustained viral suppression."
+      },
+      {
+        "text": "Complete elimination of reservoirs",
+        "isCorrect": false,
+        "rationale": "Infected immune cells migrate to lymph nodes and the CNS, establishing reservoirs. This option would require eradication before tissue persistence developed."
+      },
+      {
+        "text": "Stable absence of replication",
+        "isCorrect": false,
+        "rationale": "Marked viral RNA demonstrates substantial active replication. This option would require undetectable viral RNA and sustained suppression."
+      },
+      {
+        "text": "Permanent recovery of helper cells",
+        "isCorrect": false,
+        "rationale": "The immune response lowers viral burden but does not eradicate infection or guarantee permanent helper-cell recovery. This option would require elimination of proviral reservoirs."
+      },
+      {
+        "text": "Highest level of infectivity",
+        "isCorrect": true,
+        "rationale": "The acute phase has very high blood viral burden and systemic distribution. Infectivity is therefore highest at approximately 2-4 weeks."
+      }
+    ]
+  },
+  {
+    "question": "A 38-year-old patient remains minimally symptomatic for several years after an acute systemic illness. Testing shows persistent replication and gradual CD4-cell loss. Which mechanism most directly prevents immune eradication?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify the key viral molecules used in adaptation and evasion of the immune response.",
+    "options": [
+      {
+        "text": "Proviral reservoirs preserve latent genomes",
+        "isCorrect": true,
+        "rationale": "Integrated viral DNA can remain latent in lymphoid tissue and the CNS. These reservoirs preserve infection despite immune control of circulating virus."
+      },
+      {
+        "text": "Stable envelope antigens sustain neutralization",
+        "isCorrect": false,
+        "rationale": "Gp120 and gp41 mutate rapidly rather than remaining stable. This option would require minimal antigenic variation and sustained recognition by existing antibodies."
+      },
+      {
+        "text": "Accurate genome copying prevents variation",
+        "isCorrect": false,
+        "rationale": "Reverse transcriptase is error-prone and generates new strains during infection. This option would require high-fidelity genome copying."
+      },
+      {
+        "text": "P24 antibodies clear infected reservoirs",
+        "isCorrect": false,
+        "rationale": "Antibody responses do not eliminate cells containing integrated provirus. This option would require anti-p24 antibodies to eradicate latent viral genomes."
+      },
+      {
+        "text": "Gp41 suppresses cytotoxic lymphocyte activity",
+        "isCorrect": false,
+        "rationale": "Gp41 mediates membrane fusion and is not assigned a role in suppressing cytotoxic lymphocytes. This option would be correct if the task asked for the viral fusion protein."
+      }
+    ]
+  },
+  {
+    "question": "A 46-year-old patient with advanced infection develops progressive dyspnea and an AIDS-defining opportunistic pneumonia. Which illness-agent pairing best matches this presentation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify two commonly-associated, AIDS-defining illnesses.",
+    "options": [
+      {
+        "text": "Kaposi sarcoma; Pneumocystis jirovecii",
+        "isCorrect": false,
+        "rationale": "Kaposi sarcoma is associated with HHV-8 rather than Pneumocystis jirovecii. This option would be correct if the associated agent were HHV-8."
+      },
+      {
+        "text": "Pneumocystis pneumonia; Pneumocystis jirovecii",
+        "isCorrect": true,
+        "rationale": "Pneumocystis pneumonia caused by Pneumocystis jirovecii is one of the two emphasized characteristic AIDS-defining illnesses."
+      },
+      {
+        "text": "Pneumocystis pneumonia; human herpesvirus 8",
+        "isCorrect": false,
+        "rationale": "Human herpesvirus 8 is associated with Kaposi sarcoma rather than Pneumocystis pneumonia. This option would be correct if the illness were Kaposi sarcoma."
+      },
+      {
+        "text": "Kaposi sarcoma; Mycobacterium tuberculosis",
+        "isCorrect": false,
+        "rationale": "Mycobacterium tuberculosis contributes substantially to disease in infected patients but is not the associated agent for Kaposi sarcoma. This option would be correct if the illness were tuberculosis."
+      },
+      {
+        "text": "Tuberculosis; Pneumocystis jirovecii",
+        "isCorrect": false,
+        "rationale": "Pneumocystis jirovecii causes Pneumocystis pneumonia rather than tuberculosis. This option would be correct if the illness were changed to Pneumocystis pneumonia."
+      }
+    ]
+  },
+  {
+    "question": "A 44-year-old patient with severe immune depletion develops violaceous skin lesions diagnosed as an AIDS-defining malignancy. Which associated agent best matches this condition?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Identify two commonly-associated, AIDS-defining illnesses.",
+    "options": [
+      {
+        "text": "Herpes simplex virus type 1",
+        "isCorrect": false,
+        "rationale": "HSV-1 may reactivate during progression but is not the agent associated with Kaposi sarcoma. This option would be correct if the patient had reactivated HSV-1 disease."
+      },
+      {
+        "text": "Herpes simplex virus type 2",
+        "isCorrect": false,
+        "rationale": "HSV-2 is associated with increased transmission risk and may reactivate, but it is not linked to Kaposi sarcoma. This option would be correct for HSV-2 reactivation."
+      },
+      {
+        "text": "Varicella-zoster virus",
+        "isCorrect": false,
+        "rationale": "Varicella-zoster virus can reactivate during disease progression but is not the associated agent for this malignancy. This option would be correct if the manifestation were shingles."
+      },
+      {
+        "text": "Mycobacterium tuberculosis",
+        "isCorrect": false,
+        "rationale": "Tuberculosis is a major coinfection and cause of death in infected patients but does not cause Kaposi sarcoma. This option would be correct if the diagnosis were tuberculosis."
+      },
+      {
+        "text": "Human herpesvirus 8",
+        "isCorrect": true,
+        "rationale": "Kaposi sarcoma is the characteristic AIDS-defining malignancy associated with human herpesvirus 8. Its presence fulfills an illness-based AIDS criterion."
+      }
+    ]
+  },
+  {
+    "question": "A 36-year-old patient has an undetectable plasma viral load while consistently taking prescribed antiretroviral medication. Which outcome is expected while suppression is maintained?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Correlate the changes of viral load and immune responses with the progression of HIV infection.",
+    "options": [
+      {
+        "text": "Progression to AIDS accelerates",
+        "isCorrect": false,
+        "rationale": "Viral suppression prevents progression toward AIDS rather than accelerating it. This option would require uncontrolled replication and continuing immune destruction."
+      },
+      {
+        "text": "Integrated provirus becomes eradicated",
+        "isCorrect": false,
+        "rationale": "Suppression controls viral replication but does not remove integrated provirus from tissue reservoirs. This option would require elimination of latent viral DNA."
+      },
+      {
+        "text": "Sexual transmission risk approaches zero",
+        "isCorrect": true,
+        "rationale": "Maintaining an undetectable viral load produces effectively no risk of sexual transmission. Suppression also prevents progression toward AIDS."
+      },
+      {
+        "text": "All antiviral antibodies immediately disappear",
+        "isCorrect": false,
+        "rationale": "Viral suppression does not cause immediate disappearance of established antibodies. This option would require loss of the existing humoral response after treatment."
+      },
+      {
+        "text": "CCR5 resistance becomes homozygous",
+        "isCorrect": false,
+        "rationale": "Antiretroviral therapy does not change the inherited CCR5 genotype. This option would require a genetic alteration rather than pharmacologic suppression."
+      }
+    ]
+  },
+  {
+    "question": "A 25-year-old uninfected person reports ongoing behavior associated with high exposure risk. Which antiretroviral prevention strategy is most appropriate before a future exposure?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Outline the pathogenesis, phases, and outcomes of HIV infection.",
+    "options": [
+      {
+        "text": "Postexposure prophylaxis",
+        "isCorrect": false,
+        "rationale": "Postexposure prophylaxis is used after a high-risk exposure rather than before a future exposure. This option would be correct if a specific exposure had already occurred."
+      },
+      {
+        "text": "Quantitative viral-load monitoring",
+        "isCorrect": false,
+        "rationale": "Viral-load monitoring measures circulating RNA in an infected patient and does not prevent acquisition. This option would be correct if a treated patient required assessment of suppression."
+      },
+      {
+        "text": "CD4 flow-cytometric monitoring",
+        "isCorrect": false,
+        "rationale": "CD4 monitoring evaluates immune status in established infection and does not provide preexposure prevention. This option would be correct if disease progression were being assessed."
+      },
+      {
+        "text": "Preexposure prophylaxis",
+        "isCorrect": true,
+        "rationale": "Preexposure prophylaxis uses antiretroviral medication before exposure in individuals at high risk for infection. It is a preventive strategy rather than a diagnostic test."
+      },
+      {
+        "text": "Antibody differentiation testing",
+        "isCorrect": false,
+        "rationale": "Antibody differentiation distinguishes HIV-1 from HIV-2 after reactive screening and is not preventive treatment. This option would be correct if type-specific diagnosis were needed."
+      }
+    ]
+  },
+  {
+    "question": "A 30-year-old healthcare worker experiences a high-risk blood exposure from a patient with uncontrolled infection. Which antiretroviral prevention strategy is most appropriate now?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Outline the pathogenesis, phases, and outcomes of HIV infection.",
+    "options": [
+      {
+        "text": "Routine antibody monitoring",
+        "isCorrect": false,
+        "rationale": "Antibody testing may contribute to follow-up but does not provide antiretroviral prevention after exposure. This option would be correct if the task asked only about later antibody surveillance."
+      },
+      {
+        "text": "Preexposure prophylaxis",
+        "isCorrect": false,
+        "rationale": "Preexposure prophylaxis is initiated before anticipated exposure. This option would be correct if medication were being selected for ongoing risk before an exposure occurred."
+      },
+      {
+        "text": "CD4 count surveillance",
+        "isCorrect": false,
+        "rationale": "CD4 surveillance monitors immune decline in established infection and does not prevent acquisition after exposure. This option would be correct if an infected patient required progression monitoring."
+      },
+      {
+        "text": "HIV-type antibody differentiation",
+        "isCorrect": false,
+        "rationale": "The differentiation assay clarifies HIV-1 versus HIV-2 antibodies after reactive screening. This option would be correct if type-specific diagnosis rather than immediate prevention were needed."
+      },
+      {
+        "text": "Postexposure prophylaxis",
+        "isCorrect": true,
+        "rationale": "Postexposure prophylaxis is the antiretroviral prevention strategy used after a high-risk exposure. The exposure has already occurred, distinguishing this approach from preexposure prophylaxis."
+      }
+    ]
+  },
+  {
+    "question": "A 39-year-old patient has chronic untreated infection. Replication continues in lymphoid tissue while the CD4 count progressively declines. Which combined process most directly causes helper-cell loss?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Outline the pathogenesis, phases, and outcomes of HIV infection.",
+    "options": [
+      {
+        "text": "Antibody neutralization plus proviral clearance",
+        "isCorrect": false,
+        "rationale": "Antibodies help control circulating virus but do not clear integrated provirus from reservoirs. This option would require complete elimination of infected cells and latent genomes."
+      },
+      {
+        "text": "Protease inhibition plus capsid assembly",
+        "isCorrect": false,
+        "rationale": "Protease inhibition would impair maturation, while capsid assembly does not describe the immune mechanisms causing CD4-cell loss. This option would be correct only for a task about virion maturation."
+      },
+      {
+        "text": "Viral killing plus cytotoxic elimination",
+        "isCorrect": true,
+        "rationale": "Active virus kills infected CD4 T cells, while cytotoxic T cells and natural killer cells eliminate additional infected helper cells. Both processes contribute to progressive depletion."
+      },
+      {
+        "text": "CCR5 deletion plus accelerated transmission",
+        "isCorrect": false,
+        "rationale": "CCR5 deletion reduces transmission or slows progression rather than accelerating disease. This option would require a genetic alteration that facilitated viral entry."
+      },
+      {
+        "text": "P24 detection plus antibody differentiation",
+        "isCorrect": false,
+        "rationale": "These are diagnostic targets and procedures rather than mechanisms of helper-cell destruction. This option would be correct only for a task concerning the diagnostic algorithm."
+      }
+    ]
+  },
+  {
+    "question": "A 41-year-old patient develops declining cellular and humoral responses as helper T cells are progressively lost. Which function of these cells explains the broad immune impairment?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Outline the pathogenesis, phases, and outcomes of HIV infection.",
+    "options": [
+      {
+        "text": "They directly form viral capsids",
+        "isCorrect": false,
+        "rationale": "Viral capsids are formed from p24 rather than helper T cells. This option would be correct if the task asked which viral structural protein forms the capsid."
+      },
+      {
+        "text": "They cleave viral polyproteins",
+        "isCorrect": false,
+        "rationale": "Viral protease cleaves Gag and Pol polyproteins; helper T cells do not perform this function. This option would be correct if the subject were the viral maturation enzyme."
+      },
+      {
+        "text": "They integrate proviral DNA",
+        "isCorrect": false,
+        "rationale": "Viral integrase inserts viral DNA into host chromosomes. This option would be correct if the task asked which enzyme creates provirus."
+      },
+      {
+        "text": "They generate envelope variants",
+        "isCorrect": false,
+        "rationale": "Error-prone reverse transcription generates genetic variants, including altered envelope proteins. This option would be correct if the task addressed the origin of antigenic variation."
+      },
+      {
+        "text": "They coordinate targeted immune responses",
+        "isCorrect": true,
+        "rationale": "Helper T cells direct immune responses tailored to specific pathogens and support multiple immune compartments. Their loss therefore impairs cellular, humoral, and mucosal defense."
+      }
+    ]
+  },
+  {
+    "question": "A 43-year-old patient has persistent infection despite strong circulating immune responses. Tissue sampling identifies viable infected macrophages and microglial cells that continue releasing virus. Which role do these cells serve?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Outline the pathogenesis, phases, and outcomes of HIV infection.",
+    "options": [
+      {
+        "text": "Viral reservoirs enabling dissemination",
+        "isCorrect": true,
+        "rationale": "Macrophages, dendritic cells, microglia, and other myeloid cells serve as important viral reservoirs. Their persistence also helps disseminate virus to different tissues."
+      },
+      {
+        "text": "Transient producers without persistence",
+        "isCorrect": false,
+        "rationale": "The continued survival and viral release demonstrate persistent reservoir function rather than transient production. This option would require rapid elimination of infected myeloid cells."
+      },
+      {
+        "text": "Primary antibody-secreting cells",
+        "isCorrect": false,
+        "rationale": "The described macrophages and microglia are myeloid cells rather than antibody-producing cells. This option would require a cell population responsible for antibody secretion."
+      },
+      {
+        "text": "Exclusive targets of CXCR4 strains",
+        "isCorrect": false,
+        "rationale": "Early macrophage-tropic isolates use CCR5, whereas CXCR4 isolates are described as T-cell-tropic. This option would require late infection limited primarily to CD4 T cells."
+      },
+      {
+        "text": "Cells resistant to viral entry",
+        "isCorrect": false,
+        "rationale": "The recovery of infected cells demonstrates susceptibility rather than resistance to entry. This option would require failure of viral receptor engagement and absence of cellular infection."
+      }
+    ]
+  }
+]
