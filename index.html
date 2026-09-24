@@ -3198,7 +3198,7 @@ c. Spread items across distinct LOs. When students commonly conflate a pair (enz
 
 2. Difficulty Distribution:
 
-Add "difficulty_order": "1st/2nd/3rd" to the JSON pertaining to each question.
+Set each question's "difficulty_order" to exactly "1st", "2nd", or "3rd". One value per question.
 
 4/30 questions: First-order (Direct recall).
 
@@ -3244,7 +3244,17 @@ c. If any rationale content is your inference rather than a stated source fact, 
 8. NO FORMATTING CUES: Do not bold, italicize, or otherwise mark any option. Teach the medicine; do not cite the deck.
 
 9. OUTPUT FORMAT
-Return one fenced json code block and nothing else. Inside the fence, pretty-print a JSON array with real line breaks and 2-space indentation, one key per line. A person must be able to copy that block. Never emit a single-line wall of text. Never escape the array as one quoted string. Never write that the JSON was "serialized as plain text" or that it is not a copyable block. No preamble and no extra keys. Whitespace inside the fence: one space after each colon and comma, no double spaces, no trailing spaces, no blank lines inside an object or array, and no tabs. difficulty_order is exactly "1st" or "2nd" or "3rd" (never "1st/2nd/3rd"). isCorrect is the JSON boolean true or false, not a string. Before emitting, search each item's "question" string: if it contains "lecture" in any case, rewrite that stem until the word is gone (rationales may keep it). Then verify every item: at least five homogeneous options (prefer five; never fewer); +-2 word parity across ALL options; exactly one isCorrect true; difficulty_order matches the assigned mix; cited_learning_objective is the named LO; no source-pointers in question text.
+Return one fenced json code block and nothing else.
+Pretty-print the array with real line breaks, 2-space indentation, and one key per line.
+Do not emit a one-line wall of text.
+Do not escape the array as one quoted string.
+Do not write that the JSON was serialized as plain text.
+No preamble and no extra keys.
+One space after each colon and comma. No double spaces. No trailing spaces. No blank lines inside an object or array. No tabs.
+difficulty_order is exactly "1st" or "2nd" or "3rd".
+isCorrect is the JSON boolean true or false, not a string.
+Before emitting, search each item's "question" string: if it contains "lecture" in any case, rewrite that stem until the word is gone (rationales may keep it).
+Then verify every item: at least five homogeneous options (prefer five; never fewer); +-2 word parity across ALL options; exactly one isCorrect true; difficulty_order matches the assigned mix; cited_learning_objective is the named LO; no source-pointers in question text.
 
 10. CHARACTER ENCODING (CRITICAL)
 a. Valid UTF-8 JSON. Never emit mojibake (â, Â², Â°, Âµ, or Windows-1252 artifacts).
@@ -8313,12 +8323,12 @@ function buildSettingsPrompt() {
     const secondN = Math.max(0, total - firstN - ezThirdMax);
     const thirdN = total - firstN - secondN;
     ezThirdMax = thirdN;
-    distrib = `2. Difficulty Distribution:\n\nAdd "difficulty_order": "1st/2nd/3rd" to the JSON pertaining to each question.\n\n${firstN}/${total} questions: First-order (Direct recall; high-yield buzzwords and classic lecture cues).\n\n${secondN}/${total} questions: Second-order (Brief two-step; stems 1-3 sentences, no vignettes).\n\n${thirdN}/${total} questions: Third-order (Short vignettes only if unavoidable; cap at ${thirdN}; all other items remain direct recall).`;
+    distrib = `2. Difficulty Distribution:\n\nSet each question's "difficulty_order" to exactly "1st", "2nd", or "3rd". One value per question.\n\n${firstN}/${total} questions: First-order (Direct recall; high-yield buzzwords and classic lecture cues).\n\n${secondN}/${total} questions: Second-order (Brief two-step; stems 1-3 sentences, no vignettes).\n\n${thirdN}/${total} questions: Third-order (Short vignettes only if unavoidable; cap at ${thirdN}; all other items remain direct recall).`;
   } else if (enabled.length === 3) {
     const firstN  = Math.round(total * 4 / 30);
     const secondN = Math.round(total * 11 / 30);
     const thirdN  = total - firstN - secondN;
-    distrib = `2. Difficulty Distribution:\n\nAdd "difficulty_order": "${orderValues}" to the JSON pertaining to each question.\n\n${firstN}/${total} questions: First-order (Direct recall).\n\n${secondN}/${total} questions: Second-order (Connecting two concepts).\n\n${thirdN}/${total} questions: Third-order (Clinical vignettes requiring >=2 reasoning steps). A student who has not studied should score <=25% on these.${thirdOrderExtra}`;
+    distrib = `2. Difficulty Distribution:\n\nSet each question's "difficulty_order" to exactly "1st", "2nd", or "3rd". One value per question.\n\n${firstN}/${total} questions: First-order (Direct recall).\n\n${secondN}/${total} questions: Second-order (Connecting two concepts).\n\n${thirdN}/${total} questions: Third-order (Clinical vignettes requiring >=2 reasoning steps). A student who has not studied should score <=25% on these.${thirdOrderExtra}`;
   } else if (enabled.length === 2) {
     const half = Math.round(total / 2);
     const rest = total - half;
@@ -8327,7 +8337,7 @@ function buildSettingsPrompt() {
       if (o === 'second') return 'Second-order (Connecting two concepts)';
       return 'Third-order (Clinical vignettes requiring >=2 reasoning steps, <=25% difficulty floor)';
     };
-    let text = `2. Difficulty Distribution:\n\nAdd "difficulty_order": "${orderValues}" to the JSON pertaining to each question.\n\n${half}/${total} questions: ${orderDesc(enabled[0])}.\n\n${rest}/${total} questions: ${orderDesc(enabled[1])}.`;
+    let text = `2. Difficulty Distribution:\n\nSet each question's "difficulty_order" to exactly "${orderValues.split('/').join('" or "')}". One value per question.\n\n${half}/${total} questions: ${orderDesc(enabled[0])}.\n\n${rest}/${total} questions: ${orderDesc(enabled[1])}.`;
     if (enabled.includes('third')) text += thirdOrderExtra;
     distrib = text;
   } else {
@@ -8335,7 +8345,7 @@ function buildSettingsPrompt() {
     const desc = orderName === 'first'  ? 'First-order (Direct recall)' :
                  orderName === 'second' ? 'Second-order (Connecting two concepts)' :
                  'Third-order (Clinical vignettes requiring >=2 reasoning steps) — all items must be genuinely difficult';
-    let text = `2. Difficulty Distribution:\n\nAdd "difficulty_order": "${orderLabel(orderName)}" to the JSON pertaining to each question.\n\nAll ${total} questions are ${desc}.`;
+    let text = `2. Difficulty Distribution:\n\nSet every question's "difficulty_order" to "${orderLabel(orderName)}".\n\nAll ${total} questions are ${desc}.`;
     if (orderName === 'third') text += thirdOrderExtra;
     distrib = text;
   }
