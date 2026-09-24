@@ -29,7 +29,8 @@ const src = [
   ['coerceQuizQuestions', 'tryParseJsonValue'],
   ['tryParseJsonValue', 'scanQuizJsonValues'],
   ['scanQuizJsonValues', 'canonicalizeQuizQuestions'],
-  ['canonicalizeQuizQuestions', 'recoverWallOfTextQuizJson'],
+  ['canonicalizeQuizQuestions', 'repairCopilotSerializedQuiz'],
+  ['repairCopilotSerializedQuiz', 'recoverWallOfTextQuizJson'],
   ['recoverWallOfTextQuizJson', 'looksLikeQuizQuestionPaste'],
 ].map(([name, next]) => grab(name, next)).join('\n');
 
@@ -74,5 +75,17 @@ if (context.extract(brokenLine)[0].question !== q.question) {
 const titled = minified.replace(/"question"/, '"Question"');
 if (context.extract(titled)[0].question !== q.question) {
   throw new Error('capital Question key was dropped');
+}
+
+const smashed = '"question":"Stem one.","difficulty_order":"1st","cited_learning_objective":"LO","options":\\["text":"A","isCorrect":false,"rationale":"ra","text":"B","isCorrect":true,"rationale":"rb"],"question":"Stem two.","difficulty\\_order":"2nd","cited\\_learning\\_objective":"LO2","options":\\["text":"C","isCorrect":true,"rationale":"rc"]';
+const spaced = '{ "question": "Stem one.", "difficulty\\_order": "1st", "cited\\_learning\\_objective": "LO", "options": \\[ { "text": "A", "isCorrect": false, "rationale": "ra" }, { "text": "B", "isCorrect": true, "rationale": "rb" } ] }, { "question": "Stem two.", "difficulty\\_order": "2nd", "cited\\_learning\\_objective": "LO2", "options": \\[ { "text": "C", "isCorrect": true, "rationale": "rc" } ] } ]';
+const both = smashed + ']]' + spaced;
+const fromBoth = context.extract(both);
+if (fromBoth.length !== 2 || fromBoth[0].question !== 'Stem one.' || fromBoth[1].options.length !== 1) {
+  throw new Error('serialized copilot dump was not converted, got ' + fromBoth.length);
+}
+const fromSmashed = context.extract(smashed);
+if (fromSmashed.length !== 2 || fromSmashed[0].options.length !== 2) {
+  throw new Error('space-stripped dump was not converted, got ' + fromSmashed.length);
 }
 console.log('wall-json recovery ok');

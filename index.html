@@ -3315,6 +3315,12 @@ const LS_CHANGELOG_OPEN='medstep_changelog_open';
 const CHANGELOG_VISIBLE_COUNT=3;
 const MEDSTEP_CHANGELOG=[
   {
+    id:'2026-09-24-review-undo',
+    date:'2026-09-24',
+    title:'Retry a question from review',
+    body:'After you finish a quiz, Undo (or R) on a reviewed question clears that answer so you can try it again. Going back to results updates your score.'
+  },
+  {
     id:'2026-09-23-progress-exam',
     date:'2026-09-23',
     title:'Question progress & Exam Mode',
@@ -9928,7 +9934,7 @@ function loadQuestion(idx){
   loText.classList.remove('visible');
   loToggle.style.display=q.cited_learning_objective?'inline-flex':'none';
   document.getElementById('q-text').innerText=q.question;
-  document.getElementById('undo-btn').style.display=(q.userAnswer&&!isReviewMode)?'inline-flex':'none';
+  document.getElementById('undo-btn').style.display=q.userAnswer?'inline-flex':'none';
 
   const isLast=isFlaggedReviewMode?(flaggedReviewPos===flaggedReviewIndices.length-1):(idx===questions.length-1);
   const finBtn=document.getElementById('finish-btn');
@@ -9986,8 +9992,7 @@ list.appendChild(wrap);
 
 // ══ ANSWER / UNDO ════════════════════════════════════════
 function selectAnswer(opt){
-  if(isReviewMode)return;
-  const q=questions[currentIdx];if(q.userAnswer)return;
+  const q=questions[currentIdx];if(!q||q.userAnswer)return;
   q.userAnswer=opt;
   if(recordQuestionCompleted(q)){
     q._progressNew=true;
@@ -9995,17 +10000,19 @@ function selectAnswer(opt){
     q._progressHash=questionStemHash(q);
   }
   loadQuestion(currentIdx);
-  const allDone=questions.every(q=>q.userAnswer);
-  const isLast=currentIdx===questions.length-1;
-  document.getElementById('finish-btn').style.display=(allDone&&isLast)?'inline-flex':'none';
-  document.getElementById('next-btn').style.display=(allDone&&isLast)?'none':'inline-flex';
+  if(!isReviewMode){
+    const allDone=questions.every(q=>q.userAnswer);
+    const isLast=currentIdx===questions.length-1;
+    document.getElementById('finish-btn').style.display=(allDone&&isLast)?'inline-flex':'none';
+    document.getElementById('next-btn').style.display=(allDone&&isLast)?'none':'inline-flex';
+  }
   persistActiveQuiz(true);
 }
 function undoAnswer(){
-  if(isReviewMode)return;
-  const q=questions[currentIdx];if(!q.userAnswer)return;
-  if(q._progressNew) undoQuestionCompleted(q);
-  q.userAnswer=null;loadQuestion(currentIdx);showToast('↩️ Answer cleared');
+  const q=questions[currentIdx];if(!q||!q.userAnswer)return;
+  if(!isReviewMode&&q._progressNew) undoQuestionCompleted(q);
+  q.userAnswer=null;loadQuestion(currentIdx);
+  showToast(isReviewMode?'↩️ Answer cleared — try again':'↩️ Answer cleared');
   persistActiveQuiz(true);
 }
 
@@ -10180,11 +10187,8 @@ function reviewAnswers_exit(){
   isReviewMode=false;
   isFlaggedReviewMode=false;
   flaggedReviewIndices=[]; flaggedReviewPos=0; flaggedReviewPosByIdx=new Map();
-  document.getElementById('total-q-count').innerText=questions.length;
-  document.getElementById('quiz-screen').classList.add('hidden');
-  document.getElementById('results-screen').classList.remove('hidden');
   document.getElementById('back-to-results-btn').style.display='none';
-  persistActiveQuiz(true);
+  showResults();
 }
 
 function reviewFlaggedAnswers(){
@@ -11565,6 +11569,46 @@ function canonicalizeQuizQuestions(list) {
     .filter(q => q && typeof q === 'object' && String(q.question || '').trim());
 }
 
+function repairCopilotSerializedQuiz(text) {
+  let s = String(text || '');
+  s = s.replace(/\\_/g, '_');
+  s = s.replace(/\\\[/g, '[').replace(/\\\]/g, ']');
+  s = s.replace(/\\\{/g, '{').replace(/\\\}/g, '}');
+  const junction = s.search(/\]\]\s*\{/);
+  if (junction >= 0) {
+    const pretty = s.slice(junction).replace(/^\]\]\s*/, '');
+    if (/"question"\s*:/.test(pretty)) s = pretty;
+  }
+  s = s.replace(/("options"\s*:\s*\[)\s*("text"\s*:)/gi, '$1{$2');
+  s = s.replace(/("rationale"\s*:\s*"(?:\\.|[^"\\])*")\s*,\s*("text"\s*:)/gi, '$1},{$2');
+  s = s.replace(/(\])\s*,\s*("question"\s*:)/gi, '$1},{$2');
+  s = s.replace(/("rationale"\s*:\s*"(?:\\.|[^"\\])*")\s*(\])/gi, '$1}$2');
+  s = s.trim();
+  if (/^"question"\s*:/i.test(s)) s = '[{' + s;
+  else if (s.startsWith('{')) s = '[' + s;
+  let curly = 0;
+  let square = 0;
+  let inString = false;
+  let escape = false;
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if (inString) {
+      if (escape) escape = false;
+      else if (c === '\\') escape = true;
+      else if (c === '"') inString = false;
+      continue;
+    }
+    if (c === '"') inString = true;
+    else if (c === '{') curly++;
+    else if (c === '}') curly--;
+    else if (c === '[') square++;
+    else if (c === ']') square--;
+  }
+  while (curly > 0) { s += '}'; curly--; }
+  while (square > 0) { s += ']'; square--; }
+  return s;
+}
+
 function recoverWallOfTextQuizJson(text) {
   let s = String(text || '').replace(/^\uFEFF/, '');
   const lead = s.search(/```|[\[{]|\\"question\\"|"question"\s*:|[\u201c]question[\u201d]\s*:/);
@@ -11588,7 +11632,7 @@ function recoverWallOfTextQuizJson(text) {
   if (!/"question"\s*:/.test(s) && /[\u201c\u201d]/.test(s)) {
     s = s.replace(/[\u201c\u201d]/g, '"').replace(/[\u2018\u2019]/g, "'");
   }
-  return s.trim();
+  return repairCopilotSerializedQuiz(s).trim();
 }
 
 function quizJsonCandidates(text) {
