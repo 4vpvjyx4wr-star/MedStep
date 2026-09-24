@@ -1,0 +1,1090 @@
+[
+  {
+    "question": "Which DNA change can directly generate a restriction fragment length polymorphism?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain what is meant by an RFLP based on a SNP or VNTR and how they may be used in genetic tests",
+    "options": [
+      {
+        "text": "Creation of a restriction enzyme site",
+        "isCorrect": true,
+        "rationale": "A single nucleotide polymorphism can create a new restriction site, changing where DNA is cut and therefore altering fragment length."
+      },
+      {
+        "text": "Transcription of a protein-coding exon",
+        "isCorrect": false,
+        "rationale": "Transcription does not change the genomic restriction pattern. This would be relevant if the question asked how a DNA sequence is expressed as RNA."
+      },
+      {
+        "text": "Translation of a messenger RNA",
+        "isCorrect": false,
+        "rationale": "Translation produces a protein without changing DNA fragment lengths. This would be correct if the question concerned protein synthesis."
+      },
+      {
+        "text": "Replication of an unchanged DNA segment",
+        "isCorrect": false,
+        "rationale": "Replication of an unchanged sequence preserves the same restriction sites. This would apply if the question asked how an existing restriction pattern is copied."
+      },
+      {
+        "text": "Expression of a noncoding RNA gene",
+        "isCorrect": false,
+        "rationale": "RNA expression does not itself create a different restriction fragment. This would be relevant if the question concerned transcription from a noncoding region."
+      }
+    ]
+  },
+  {
+    "question": "Which property makes variable-number tandem repeats useful as molecular fingerprints?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how RFLPs based on VNTRs can be used for paternity testing or forensics and interpret results",
+    "options": [
+      {
+        "text": "They occur exclusively within protein-coding exons",
+        "isCorrect": false,
+        "rationale": "VNTRs are not restricted to protein-coding exons. This would be correct only if the repeated regions were confined to coding sequences."
+      },
+      {
+        "text": "They vary greatly among unrelated individuals",
+        "isCorrect": true,
+        "rationale": "The number of tandem repeats varies substantially among unrelated people, producing individual-specific fragment patterns."
+      },
+      {
+        "text": "They always cause clinically apparent disease",
+        "isCorrect": false,
+        "rationale": "Many VNTR differences are harmless polymorphisms. This would be correct only for a repeat change that consistently produced disease."
+      },
+      {
+        "text": "They eliminate every nearby restriction site",
+        "isCorrect": false,
+        "rationale": "VNTR-based fragment differences arise from different repeat numbers between flanking sites, not elimination of every nearby site. Site elimination would instead describe certain SNP-based RFLPs."
+      },
+      {
+        "text": "They remain identical across unrelated individuals",
+        "isCorrect": false,
+        "rationale": "Identity across unrelated individuals would remove their fingerprinting value. This would be appropriate for a highly conserved sequence rather than a hypervariable VNTR."
+      }
+    ]
+  },
+  {
+    "question": "Which mutation is responsible for the most commonly tested cystic fibrosis allele?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how testing can be done and interpret results for cystic fibrosis using PCR and ASO probes",
+    "options": [
+      {
+        "text": "Single nucleotide substitution in CFTR",
+        "isCorrect": false,
+        "rationale": "The emphasized common CFTR mutation is not a single nucleotide substitution. This would fit the sickle β-globin mutation discussed in the source."
+      },
+      {
+        "text": "Large tandem-repeat expansion in CFTR",
+        "isCorrect": false,
+        "rationale": "The common CFTR allele is not a repeat expansion. This would be more consistent with the mutation class discussed for myotonic dystrophy."
+      },
+      {
+        "text": "Three nucleotide deletion in CFTR",
+        "isCorrect": true,
+        "rationale": "Approximately 70% of the described cystic fibrosis cases result from a three-nucleotide CFTR deletion that removes a phenylalanine residue."
+      },
+      {
+        "text": "Restriction-site duplication in CFTR",
+        "isCorrect": false,
+        "rationale": "A restriction-site duplication was not identified as the common CFTR mutation. This would require evidence that the disease allele duplicated a restriction site."
+      },
+      {
+        "text": "Variable-number repeat insertion in CFTR",
+        "isCorrect": false,
+        "rationale": "The common allele is a defined three-nucleotide deletion rather than a VNTR insertion. This would be correct if repeat-number variation caused the tested allele."
+      }
+    ]
+  },
+  {
+    "question": "Which biochemical pattern is used to screen newborns for phenylketonuria?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain why the types of testing for sickle cell anemia and cystic fibrosis are not applicable to PKU",
+    "options": [
+      {
+        "text": "Low phenylalanine with elevated tyrosine",
+        "isCorrect": false,
+        "rationale": "This reverses the screening pattern. It would be correct only if the measured metabolite changes were opposite those described for PKU."
+      },
+      {
+        "text": "Elevated chloride with reduced phenylalanine",
+        "isCorrect": false,
+        "rationale": "Elevated sweat chloride is associated with cystic fibrosis, not the PKU newborn blood screen. This would fit a cystic fibrosis assessment if chloride were measured in sweat."
+      },
+      {
+        "text": "Elevated tyrosine with normal phenylalanine",
+        "isCorrect": false,
+        "rationale": "PKU screening does not use elevated tyrosine with normal phenylalanine. This would require a disorder producing that different biochemical pattern."
+      },
+      {
+        "text": "Elevated phenylalanine with reduced tyrosine",
+        "isCorrect": true,
+        "rationale": "Newborn PKU screening uses a blood test demonstrating elevated phenylalanine and low tyrosine."
+      },
+      {
+        "text": "Reduced chloride with elevated tyrosine",
+        "isCorrect": false,
+        "rationale": "This combination is not the described PKU screening result. It would require a condition characterized by those particular chloride and tyrosine changes."
+      }
+    ]
+  },
+  {
+    "question": "A single nucleotide change abolishes a restriction site between two conserved flanking sites. Compared with the original allele, which product pattern is expected after digestion?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain what is meant by an RFLP based on a SNP or VNTR and how they may be used in genetic tests",
+    "options": [
+      {
+        "text": "One shorter fragment replacing two longer fragments",
+        "isCorrect": false,
+        "rationale": "Losing a site joins rather than shortens the adjacent products. This pattern would require creation of additional cuts producing smaller fragments."
+      },
+      {
+        "text": "Two shorter fragments replacing one longer fragment",
+        "isCorrect": false,
+        "rationale": "Two shorter products indicate creation of a restriction site. This would be correct if the nucleotide change added rather than abolished the site."
+      },
+      {
+        "text": "Two equal fragments replacing one shorter fragment",
+        "isCorrect": false,
+        "rationale": "Site loss does not inherently produce two equal fragments. This would require an added central site that divided one fragment equally."
+      },
+      {
+        "text": "No fragment because digestion destroys the allele",
+        "isCorrect": false,
+        "rationale": "Restriction digestion cuts DNA but does not make the allele disappear from analysis. No detectable band would instead require failure of detection or absence of the target."
+      },
+      {
+        "text": "One longer fragment replacing two shorter fragments",
+        "isCorrect": true,
+        "rationale": "Abolition of an internal restriction site prevents cleavage, so the two smaller products remain joined as one longer fragment."
+      }
+    ]
+  },
+  {
+    "question": "A 500-bp β-globin PCR product is digested with MstII. The gel shows bands at 500 bp, 400 bp, and 100 bp. Which genotype best explains this pattern?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how testing can be done and interpret results for sickle cell anemia using RFLPs, PCR, and ASO probes",
+    "options": [
+      {
+        "text": "One normal and one sickle allele",
+        "isCorrect": true,
+        "rationale": "The normal allele is cut into 400-bp and 100-bp products, whereas the sickle allele remains as a 500-bp product; observing all three identifies a heterozygote."
+      },
+      {
+        "text": "Two normal β-globin alleles",
+        "isCorrect": false,
+        "rationale": "Two normal alleles would produce only the 400-bp and 100-bp bands. This would be correct if the uncut 500-bp band were absent."
+      },
+      {
+        "text": "Two sickle β-globin alleles",
+        "isCorrect": false,
+        "rationale": "Two sickle alleles would produce only the uncut 500-bp band. This would be correct if both smaller bands were absent."
+      },
+      {
+        "text": "One deleted and one normal allele",
+        "isCorrect": false,
+        "rationale": "A deletion allele is not needed to explain the complete three-band pattern. This would require evidence that one allele failed to amplify or produced a differently sized product."
+      },
+      {
+        "text": "One expanded and one sickle allele",
+        "isCorrect": false,
+        "rationale": "A repeat expansion is not the described β-globin alteration. This would require an additional larger PCR product caused by an expanded segment."
+      }
+    ]
+  },
+  {
+    "question": "A β-globin dot blot binds both the normal-sequence probe and the sickle-sequence probe. Which interpretation is most appropriate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how testing can be done and interpret results for sickle cell anemia using RFLPs, PCR, and ASO probes",
+    "options": [
+      {
+        "text": "Only normal β-globin sequences are present",
+        "isCorrect": false,
+        "rationale": "A sample containing only normal alleles would bind the normal probe but not the sickle probe. This would be correct if only the normal-probe spot were positive."
+      },
+      {
+        "text": "Normal and sickle β-globin sequences coexist",
+        "isCorrect": true,
+        "rationale": "Each short ASO probe binds only its exact complementary sequence, so binding both probes indicates that both alleles are represented."
+      },
+      {
+        "text": "Only sickle β-globin sequences are present",
+        "isCorrect": false,
+        "rationale": "A sample containing only sickle alleles would bind only the sickle-sequence probe. This would be correct if the normal-probe signal were absent."
+      },
+      {
+        "text": "Neither β-globin sequence was amplified",
+        "isCorrect": false,
+        "rationale": "Positive binding to both probes demonstrates that target sequences are present. This would fit a blot with no signal from either probe."
+      },
+      {
+        "text": "Both probes recognized an inexact sequence",
+        "isCorrect": false,
+        "rationale": "ASO probes are used because they bind exact matches under the testing conditions. This would require nonspecific hybridization rather than the described allele-specific behavior."
+      }
+    ]
+  },
+  {
+    "question": "A CFTR region is amplified to evaluate the common disease-associated allele. Which result most directly distinguishes that allele from the normal allele?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how testing can be done and interpret results for cystic fibrosis using PCR and ASO probes",
+    "options": [
+      {
+        "text": "A product containing additional tandem repeats",
+        "isCorrect": false,
+        "rationale": "The common CFTR allele is not defined by tandem-repeat expansion. This would indicate a repeat-number variant."
+      },
+      {
+        "text": "A product lacking an MstII site",
+        "isCorrect": false,
+        "rationale": "Loss of an MstII site characterizes the sickle-cell testing example. This would be correct for the sickle β-globin allele."
+      },
+      {
+        "text": "A product shorter by three nucleotides",
+        "isCorrect": true,
+        "rationale": "The commonly tested CFTR allele contains a three-nucleotide deletion, so amplification across the region produces a correspondingly shorter product."
+      },
+      {
+        "text": "A product longer by three nucleotides",
+        "isCorrect": false,
+        "rationale": "The emphasized CFTR mutation is a deletion rather than an insertion. This would be correct if three nucleotides had been added."
+      },
+      {
+        "text": "A product containing fifty CTG repeats",
+        "isCorrect": false,
+        "rationale": "A CTG-repeat expansion is associated with DMPK and myotonic dystrophy. This would be correct if the amplified target were the DMPK repeat region."
+      }
+    ]
+  },
+  {
+    "question": "Why is a single direct allele-specific assay generally inadequate for broad phenylketonuria screening?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why the types of testing for sickle cell anemia and cystic fibrosis are not applicable to PKU",
+    "options": [
+      {
+        "text": "PAH contains no protein-coding exons",
+        "isCorrect": false,
+        "rationale": "PAH has 13 exons, so absence of coding regions is not the limitation. This would be correct only for a target without exons."
+      },
+      {
+        "text": "PAH cannot be amplified by PCR",
+        "isCorrect": false,
+        "rationale": "The issue is not an absolute inability to amplify PAH. This would require PCR failure for every relevant PAH region."
+      },
+      {
+        "text": "PKU always results from repeat expansion",
+        "isCorrect": false,
+        "rationale": "PKU involves numerous mutation types rather than a universal repeat expansion. This would fit a disorder consistently caused by expansion of one repeated sequence."
+      },
+      {
+        "text": "PKU involves hundreds of distinct PAH mutations",
+        "isCorrect": true,
+        "rationale": "Approximately 400 known PAH mutations span multiple exons and mutation classes, so one probe or one narrowly targeted assay cannot detect all affected families."
+      },
+      {
+        "text": "PAH mutations never segregate within families",
+        "isCorrect": false,
+        "rationale": "Family-based linkage testing depends on segregation of a mutation-associated marker. This would be correct only if familial cosegregation did not occur."
+      }
+    ]
+  },
+  {
+    "question": "In a family with phenylketonuria, what must be established before a linked-marker prenatal test can be interpreted?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how a prenatal genetic test for PKU can be done using RFLPs and interpret results",
+    "options": [
+      {
+        "text": "The fetus has elevated sweat chloride",
+        "isCorrect": false,
+        "rationale": "Elevated sweat chloride is associated with cystic fibrosis and does not establish PKU linkage. This would be relevant to evaluating CF."
+      },
+      {
+        "text": "The fetus carries a β-globin mutation",
+        "isCorrect": false,
+        "rationale": "β-globin testing concerns sickle cell disease, not PAH linkage. This would be relevant if the family were being evaluated for the sickle allele."
+      },
+      {
+        "text": "Every PAH mutation changes one restriction site",
+        "isCorrect": false,
+        "rationale": "The family-based method is needed because many PAH mutations do not provide one universal restriction-site change. This would be correct only if all causal variants generated the same direct marker."
+      },
+      {
+        "text": "All relatives share one identical VNTR",
+        "isCorrect": false,
+        "rationale": "The necessary relationship is cosegregation between a marker and the familial disease allele, not universal identity at one VNTR. This would require all relatives to carry the same repeat allele."
+      },
+      {
+        "text": "A marker cosegregates with the familial mutation",
+        "isCorrect": true,
+        "rationale": "DNA from several relatives, including an affected person, is used to identify which RFLP marker travels with the disease-causing PAH allele in that family."
+      }
+    ]
+  },
+  {
+    "question": "Restriction sites flank a tandem-repeat region. One person has more repeat copies than another. Which difference is expected after digestion?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain what is meant by an RFLP based on a SNP or VNTR and how they may be used in genetic tests",
+    "options": [
+      {
+        "text": "A longer fragment between unchanged flanking sites",
+        "isCorrect": true,
+        "rationale": "Additional repeat copies increase the distance between the same flanking restriction sites, producing a longer restriction fragment."
+      },
+      {
+        "text": "A shorter fragment from abolished flanking sites",
+        "isCorrect": false,
+        "rationale": "Abolishing flanking sites would not explain the direct relationship between repeat number and fragment length. This would require a separate SNP affecting restriction cutting."
+      },
+      {
+        "text": "An identical fragment despite added repeats",
+        "isCorrect": false,
+        "rationale": "Added repeats increase the length of the bounded DNA segment. Identical fragments would require equal repeat numbers or an assay that did not span the variable region."
+      },
+      {
+        "text": "No fragment because repeats prevent digestion",
+        "isCorrect": false,
+        "rationale": "The repeated sequence does not inherently prevent cleavage at intact flanking sites. This would require both restriction sites to be inaccessible or absent."
+      },
+      {
+        "text": "Two fragments from one added restriction site",
+        "isCorrect": false,
+        "rationale": "VNTR length variation does not require creation of an internal site. This would instead describe a SNP that creates a new restriction site."
+      }
+    ]
+  },
+  {
+    "question": "A DMPK allele contains an expanded CTG region between two restriction sites. Compared with a normal allele, which Southern blot finding is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how RFLP analysis or PCR can be used to diagnose trinucleotide repeat expansions and interpret results",
+    "options": [
+      {
+        "text": "A smaller disease-associated restriction fragment",
+        "isCorrect": false,
+        "rationale": "Expansion adds DNA and therefore does not produce a smaller bounded fragment. This would require a deletion or repeat contraction."
+      },
+      {
+        "text": "A larger disease-associated restriction fragment",
+        "isCorrect": true,
+        "rationale": "Expansion of the CTG repeat increases the distance between the flanking restriction sites, creating a larger detectable fragment."
+      },
+      {
+        "text": "An absent normal restriction fragment only",
+        "isCorrect": false,
+        "rationale": "An affected heterozygous pattern can contain a normal allele as well as an expanded allele. This would require both normal alleles to be absent from detection."
+      },
+      {
+        "text": "Two smaller disease-associated restriction fragments",
+        "isCorrect": false,
+        "rationale": "Repeat expansion changes length without necessarily creating a new internal cut. This would require an added restriction site within the tested region."
+      },
+      {
+        "text": "An unchanged fragment with stronger staining",
+        "isCorrect": false,
+        "rationale": "The diagnostic feature is altered fragment length, not merely greater signal intensity. This would require more target DNA without a change in repeat number."
+      }
+    ]
+  },
+  {
+    "question": "Why may PCR be less effective than RFLP analysis for some myotonic dystrophy alleles?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how RFLP analysis or PCR can be used to diagnose trinucleotide repeat expansions and interpret results",
+    "options": [
+      {
+        "text": "The DMPK gene lacks flanking sequences",
+        "isCorrect": false,
+        "rationale": "The testing diagrams use sequences flanking the repeat region. This would be correct only if suitable primer-binding regions were absent."
+      },
+      {
+        "text": "The disease allele abolishes every primer",
+        "isCorrect": false,
+        "rationale": "The described limitation is allele size rather than universal destruction of primer sites. This would require mutations at all relevant primer-binding sequences."
+      },
+      {
+        "text": "The expanded product may become extremely large",
+        "isCorrect": true,
+        "rationale": "The CTG expansion can become so large that amplification across the repeated region is difficult."
+      },
+      {
+        "text": "The repeat occurs only in translated RNA",
+        "isCorrect": false,
+        "rationale": "The repeat is present in genomic DNA within the 3' untranslated region. This would be correct only if no corresponding DNA repeat existed."
+      },
+      {
+        "text": "The normal allele prevents restriction digestion",
+        "isCorrect": false,
+        "rationale": "Restriction digestion is an alternative means of evaluating fragment size and is not prevented by the normal allele. This would require loss of the relevant restriction sites."
+      }
+    ]
+  },
+  {
+    "question": "Why are several VNTR loci evaluated in a paternity investigation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how RFLPs based on VNTRs can be used for paternity testing or forensics and interpret results",
+    "options": [
+      {
+        "text": "Each locus detects a different disease mutation",
+        "isCorrect": false,
+        "rationale": "Paternity testing uses VNTRs as identity markers rather than as a panel of disease mutations. This would be correct for a test designed to detect several causal variants."
+      },
+      {
+        "text": "Each locus requires a different parent",
+        "isCorrect": false,
+        "rationale": "The same tested individuals are assessed across multiple loci. This would require separate relatives to contribute evidence at different loci."
+      },
+      {
+        "text": "Each locus abolishes a unique enzyme",
+        "isCorrect": false,
+        "rationale": "VNTR differences are based on repeat number, not necessarily on abolishing enzymes or their sites. This would fit a collection of SNP-based restriction-site variants."
+      },
+      {
+        "text": "Combined loci increase identification accuracy",
+        "isCorrect": true,
+        "rationale": "Different VNTRs have different paternity indices, and evaluating several loci increases the strength and accuracy of the match."
+      },
+      {
+        "text": "Combined loci eliminate DNA amplification",
+        "isCorrect": false,
+        "rationale": "Modern VNTR testing commonly uses PCR rather than eliminating it. This would be correct only for a method performed entirely without amplification."
+      }
+    ]
+  },
+  {
+    "question": "A forensic specimen contains too little DNA for traditional Southern blotting. Which strategy best preserves the ability to compare an identity marker?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how RFLPs based on VNTRs can be used for paternity testing or forensics and interpret results",
+    "options": [
+      {
+        "text": "Measure phenylalanine and tyrosine concentrations",
+        "isCorrect": false,
+        "rationale": "These metabolites are used in newborn PKU screening and do not provide an individual DNA fingerprint. This would be appropriate when screening a newborn for PKU."
+      },
+      {
+        "text": "Digest unamplified DNA at one locus",
+        "isCorrect": false,
+        "rationale": "With very little evidence DNA, relying on unamplified material does not address the stated limitation. This would be more feasible if abundant DNA were available."
+      },
+      {
+        "text": "Hybridize one sickle-specific ASO probe",
+        "isCorrect": false,
+        "rationale": "A sickle-specific probe detects one β-globin allele rather than providing a broad identity pattern. This would be appropriate when testing for the sickle mutation."
+      },
+      {
+        "text": "Screen the specimen for elevated chloride",
+        "isCorrect": false,
+        "rationale": "Chloride measurement is a cystic fibrosis diagnostic hallmark and is not a DNA identity test. This would be relevant to a patient being assessed for CF."
+      },
+      {
+        "text": "Amplify several informative VNTR loci",
+        "isCorrect": true,
+        "rationale": "PCR can amplify small quantities of evidence DNA, and comparison across several VNTR loci provides a more informative molecular fingerprint."
+      }
+    ]
+  },
+  {
+    "question": "A newborn has blood phenylalanine of 22 mg/dL [1-2 mg/dL] and reduced tyrosine. The parents request one mutation-specific probe that will exclude all genetic forms of the disorder. Which response best explains why that approach is inadequate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain why the types of testing for sickle cell anemia and cystic fibrosis are not applicable to PKU",
+    "options": [
+      {
+        "text": "PAH has hundreds of possible pathogenic variants",
+        "isCorrect": true,
+        "rationale": "PKU can result from approximately 400 known PAH mutations across 13 exons, so a probe targeting one sequence cannot exclude every genetic form."
+      },
+      {
+        "text": "PAH contains a single universal deletion",
+        "isCorrect": false,
+        "rationale": "PKU is not dominated by one universal deletion. This would support a targeted assay if nearly all cases shared that deletion."
+      },
+      {
+        "text": "PAH mutations always expand tandem repeats",
+        "isCorrect": false,
+        "rationale": "The described PAH variants include missense, splice, nonsense, insertion, and deletion mutations. This would be correct for a disease uniformly caused by repeat expansion."
+      },
+      {
+        "text": "PAH has no identifiable linked markers",
+        "isCorrect": false,
+        "rationale": "Linked RFLP markers can be identified through family analysis. This would be correct only if no polymorphic marker cosegregated with the familial allele."
+      },
+      {
+        "text": "PAH variants cannot occur within exons",
+        "isCorrect": false,
+        "rationale": "Mutations can occur throughout the 13 PAH exons. This would be correct only if all relevant variants occurred outside exons."
+      }
+    ]
+  },
+  {
+    "question": "A child with recurrent lung infections has elevated sweat chloride. A targeted assay is planned for the mutation responsible for most cases described in the source material. Which molecular finding should the assay seek?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how testing can be done and interpret results for cystic fibrosis using PCR and ASO probes",
+    "options": [
+      {
+        "text": "Loss of one β-globin restriction site",
+        "isCorrect": false,
+        "rationale": "Loss of the β-globin MstII site is the sickle-cell mutation marker. This would be correct if the patient were being tested for the sickle allele."
+      },
+      {
+        "text": "Loss of three CFTR nucleotides",
+        "isCorrect": true,
+        "rationale": "The common CFTR mutation is a three-nucleotide deletion that removes a phenylalanine residue and can be evaluated by PCR or allele-specific probes."
+      },
+      {
+        "text": "Expansion of one DMPK CTG region",
+        "isCorrect": false,
+        "rationale": "DMPK CTG expansion is associated with myotonic dystrophy. This would fit an evaluation for that repeat-expansion disorder."
+      },
+      {
+        "text": "Gain of one PAH missense variant",
+        "isCorrect": false,
+        "rationale": "PAH mutations cause PKU and are highly heterogeneous. This would be relevant if biochemical screening instead suggested PKU."
+      },
+      {
+        "text": "Expansion of one flanked VNTR locus",
+        "isCorrect": false,
+        "rationale": "VNTR length is primarily used here for identity testing rather than as the common CFTR mutation. This would fit a paternity or forensic comparison."
+      }
+    ]
+  },
+  {
+    "question": "A β-globin PCR product remains 500 bp after MstII digestion, whereas a control product yields 400-bp and 100-bp bands. Which molecular event best explains the patient's result?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how testing can be done and interpret results for sickle cell anemia using RFLPs, PCR, and ASO probes",
+    "options": [
+      {
+        "text": "Creation of an additional MstII site",
+        "isCorrect": false,
+        "rationale": "Creating a site would increase cleavage and produce smaller products. This would fit a pattern with additional bands after digestion."
+      },
+      {
+        "text": "Expansion of a β-globin tandem repeat",
+        "isCorrect": false,
+        "rationale": "The tested sickle allele is caused by a single nucleotide change rather than repeat expansion. This would require a larger undigested PCR product."
+      },
+      {
+        "text": "Abolition of the β-globin MstII site",
+        "isCorrect": true,
+        "rationale": "The sickle mutation eliminates the MstII recognition site, leaving the amplified 500-bp sequence uncut."
+      },
+      {
+        "text": "Deletion of both PCR primer sites",
+        "isCorrect": false,
+        "rationale": "Deletion of both primer sites would prevent production of the 500-bp amplicon. This would fit complete amplification failure."
+      },
+      {
+        "text": "Addition of three β-globin nucleotides",
+        "isCorrect": false,
+        "rationale": "A three-nucleotide change is associated with the common CFTR deletion, not this β-globin restriction pattern. This would require a product with an altered total length."
+      }
+    ]
+  },
+  {
+    "question": "A woman and her partner previously had a child with phenylketonuria. They request prenatal assessment in a new pregnancy, but the family's causal PAH variants are not directly known. Which next step is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how a prenatal genetic test for PKU can be done using RFLPs and interpret results",
+    "options": [
+      {
+        "text": "Test the fetus with one universal ASO",
+        "isCorrect": false,
+        "rationale": "No single ASO can cover the hundreds of known PAH mutations. This would be appropriate only if one known familial sequence change were being targeted."
+      },
+      {
+        "text": "Digest fetal DNA with MstII alone",
+        "isCorrect": false,
+        "rationale": "MstII digestion alone is linked to the sickle-cell example and does not establish which marker tracks the family's PAH mutation. This would fit direct testing of the sickle β-globin site."
+      },
+      {
+        "text": "Measure fetal sweat chloride concentration",
+        "isCorrect": false,
+        "rationale": "Sweat chloride is associated with cystic fibrosis rather than PKU linkage analysis. This would be relevant to CF diagnosis."
+      },
+      {
+        "text": "Identify a familial mutation-linked RFLP marker",
+        "isCorrect": true,
+        "rationale": "Testing several relatives, including the affected child, can reveal which RFLP allele cosegregates with the familial PAH mutation before the fetal genotype is interpreted."
+      },
+      {
+        "text": "Amplify one unrelated forensic VNTR locus",
+        "isCorrect": false,
+        "rationale": "An unrelated VNTR may identify an individual but cannot predict PKU unless it is linked to the familial mutation. This would be useful for identity testing rather than disease linkage."
+      }
+    ]
+  },
+  {
+    "question": "A man develops adult-onset muscular dystrophy. Testing shows one DNA fragment that is larger than either fragment detected in unaffected relatives, and the enlarged fragment becomes progressively larger in later generations. Which alteration best explains the pattern?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how RFLP analysis or PCR can be used to diagnose trinucleotide repeat expansions and interpret results",
+    "options": [
+      {
+        "text": "A PAH exon deletion",
+        "isCorrect": false,
+        "rationale": "A PAH deletion concerns PKU and would not explain a progressively enlarging DMPK fragment. This would fit a family with a deletion-based PAH mutation."
+      },
+      {
+        "text": "A CFTR nucleotide deletion",
+        "isCorrect": false,
+        "rationale": "The common CFTR mutation is a fixed three-nucleotide deletion rather than a progressively enlarging allele. This would fit cystic fibrosis testing."
+      },
+      {
+        "text": "A β-globin site loss",
+        "isCorrect": false,
+        "rationale": "Loss of the β-globin MstII site produces a defined restriction change rather than progressive generational enlargement. This would fit sickle-cell analysis."
+      },
+      {
+        "text": "A VNTR identity polymorphism",
+        "isCorrect": false,
+        "rationale": "VNTRs can vary among individuals, but the described adult muscular dystrophy and increasing disease-associated allele point to the DMPK expansion. This would fit identity testing without the disease pattern."
+      },
+      {
+        "text": "A DMPK CTG-repeat expansion",
+        "isCorrect": true,
+        "rationale": "Myotonic dystrophy results from expansion of CTG repeats in the 3' untranslated region of DMPK, producing a larger allele that can increase across generations."
+      }
+    ]
+  },
+  {
+    "question": "A patient is suspected of having myotonic dystrophy. PCR detects one normal-sized allele, but no second product is generated despite adequate control amplification. Which next testing approach is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how RFLP analysis or PCR can be used to diagnose trinucleotide repeat expansions and interpret results",
+    "options": [
+      {
+        "text": "Perform flanking-site digestion and fragment analysis",
+        "isCorrect": true,
+        "rationale": "A very large CTG expansion may be difficult to amplify by PCR, whereas digestion at sites flanking the expansion can reveal a large disease-associated RFLP."
+      },
+      {
+        "text": "Use one sickle-specific ASO probe",
+        "isCorrect": false,
+        "rationale": "A sickle-specific ASO evaluates a β-globin nucleotide substitution, not a DMPK repeat expansion. This would be appropriate for sickle-cell testing."
+      },
+      {
+        "text": "Measure serum phenylalanine and tyrosine",
+        "isCorrect": false,
+        "rationale": "Phenylalanine and tyrosine measurements screen for PKU. This would be appropriate for a newborn with suspected PAH deficiency."
+      },
+      {
+        "text": "Measure chloride in a sweat sample",
+        "isCorrect": false,
+        "rationale": "Sweat chloride is a diagnostic hallmark of cystic fibrosis. This would be appropriate for a patient with a CF presentation."
+      },
+      {
+        "text": "Analyze one unrelated paternity marker",
+        "isCorrect": false,
+        "rationale": "An unrelated identity marker does not assess the DMPK expansion. This would be appropriate for paternity testing rather than diagnosis."
+      }
+    ]
+  },
+  {
+    "question": "A newborn has elevated phenylalanine and low tyrosine. The family asks why the initial screen measured metabolites rather than using the single-site strategy applied to sickle cell disease. Which explanation is most accurate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain why the types of testing for sickle cell anemia and cystic fibrosis are not applicable to PKU",
+    "options": [
+      {
+        "text": "PKU mutations occur only in introns",
+        "isCorrect": false,
+        "rationale": "PAH mutations can occur across its 13 exons and include multiple mutation types. This would be correct only if all causal variants were confined to introns."
+      },
+      {
+        "text": "PKU lacks any biochemical phenotype",
+        "isCorrect": false,
+        "rationale": "Elevated phenylalanine and low tyrosine provide a biochemical screening phenotype. This would be correct only if metabolite levels remained unaffected."
+      },
+      {
+        "text": "PKU results from numerous distinct PAH variants",
+        "isCorrect": true,
+        "rationale": "Hundreds of PAH mutations make a single-site test broadly inadequate, whereas the metabolite pattern can screen affected newborns regardless of the particular familial mutation."
+      },
+      {
+        "text": "PKU always changes one restriction site",
+        "isCorrect": false,
+        "rationale": "There is no universal restriction-site change shared by all PAH mutations. This would support direct RFLP diagnosis if every case altered the same site."
+      },
+      {
+        "text": "PKU is caused by CFTR deletion",
+        "isCorrect": false,
+        "rationale": "CFTR deletion causes cystic fibrosis, not PKU. This would be appropriate if the presentation involved elevated sweat chloride and CF manifestations."
+      }
+    ]
+  },
+  {
+    "question": "A child has recurrent pulmonary infections, obstructed airways, and elevated sweat chloride. PCR across the commonly affected CFTR region produces both a normal-length band and a band shorter by three nucleotides. Which interpretation is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how testing can be done and interpret results for cystic fibrosis using PCR and ASO probes",
+    "options": [
+      {
+        "text": "Two normal CFTR alleles",
+        "isCorrect": false,
+        "rationale": "Two normal alleles would not generate the shorter deletion-associated product. This would be correct if only the normal-length band were detected."
+      },
+      {
+        "text": "Two deleted CFTR alleles",
+        "isCorrect": false,
+        "rationale": "Two copies of the tested deletion would produce only the shorter product. This would be correct if the normal-length product were absent."
+      },
+      {
+        "text": "One expanded DMPK allele",
+        "isCorrect": false,
+        "rationale": "DMPK expansion produces a larger repeat-containing allele and concerns myotonic dystrophy. This would fit a large DMPK product rather than a shorter CFTR band."
+      },
+      {
+        "text": "One normal and one deleted CFTR allele",
+        "isCorrect": true,
+        "rationale": "The two product lengths indicate that one allele retains the normal sequence while the other contains the common three-nucleotide deletion."
+      },
+      {
+        "text": "One normal and one sickle allele",
+        "isCorrect": false,
+        "rationale": "Normal and sickle designations apply to β-globin alleles evaluated by the MstII pattern. This would fit β-globin rather than CFTR testing."
+      }
+    ]
+  },
+  {
+    "question": "An affected child and both unaffected parents are analyzed for a polymorphic restriction marker near PAH. The affected child inherited marker allele 2 from each parent. A fetus also inherited allele 2 from both parents. Which conclusion is best supported?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how a prenatal genetic test for PKU can be done using RFLPs and interpret results",
+    "options": [
+      {
+        "text": "The fetus definitely lacks both familial mutations",
+        "isCorrect": false,
+        "rationale": "Inheritance of the marker associated with the affected child's mutations argues against absence of both mutations. This would be supported if the fetus inherited the marker alleles linked to normal parental chromosomes."
+      },
+      {
+        "text": "The fetus likely inherited both linked mutations",
+        "isCorrect": true,
+        "rationale": "If allele 2 cosegregates with each parent's disease-causing chromosome, inheriting allele 2 from both parents predicts inheritance of both familial PAH mutations with the stated marker accuracy."
+      },
+      {
+        "text": "The fetus has the common CFTR deletion",
+        "isCorrect": false,
+        "rationale": "The marker analysis concerns PAH linkage and does not establish a CFTR genotype. This would require direct or linked evidence involving CFTR."
+      },
+      {
+        "text": "The fetus has a DMPK repeat expansion",
+        "isCorrect": false,
+        "rationale": "No DMPK repeat testing is described in this family. This would require an abnormally large fragment involving the DMPK CTG region."
+      },
+      {
+        "text": "The fetus carries one sickle β-globin allele",
+        "isCorrect": false,
+        "rationale": "The PAH-linked marker does not determine β-globin status. This would require a β-globin ASO or MstII-based test."
+      }
+    ]
+  },
+  {
+    "question": "Crime-scene DNA and samples from three suspects are available, but the evidence quantity is extremely limited. Investigators need an identification method based on repeat-number variation. Which approach is the best next step?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how RFLPs based on VNTRs can be used for paternity testing or forensics and interpret results",
+    "options": [
+      {
+        "text": "Use one ASO targeting a CFTR deletion",
+        "isCorrect": false,
+        "rationale": "A single CFTR allele does not provide a sufficiently informative identity pattern. This would be appropriate for targeted cystic fibrosis testing."
+      },
+      {
+        "text": "Measure chloride in each collected sample",
+        "isCorrect": false,
+        "rationale": "Chloride measurement evaluates cystic fibrosis physiology rather than DNA identity. This would be relevant to a clinical CF assessment."
+      },
+      {
+        "text": "Perform unamplified single-locus Southern blotting",
+        "isCorrect": false,
+        "rationale": "Traditional Southern blotting requires more DNA and a single locus provides limited identity evidence. This would be more feasible with abundant DNA and additional probes."
+      },
+      {
+        "text": "Screen each sample for PAH metabolites",
+        "isCorrect": false,
+        "rationale": "Phenylalanine and tyrosine measurements screen for PKU and cannot generate an individual DNA fingerprint. This would be appropriate for newborn screening."
+      },
+      {
+        "text": "PCR-amplify several distinct VNTR regions",
+        "isCorrect": true,
+        "rationale": "PCR is valuable when evidence DNA is scarce, and several VNTR regions should be compared because the combined pattern improves identification accuracy."
+      }
+    ]
+  },
+  {
+    "question": "A child has a 500-bp β-globin band after MstII digestion. Both parents show 500-bp, 400-bp, and 100-bp bands. Which inheritance pattern best explains these results?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how testing can be done and interpret results for sickle cell anemia using RFLPs, PCR, and ASO probes",
+    "options": [
+      {
+        "text": "Each parent transmitted a sickle allele",
+        "isCorrect": true,
+        "rationale": "Both parents have heterozygous three-band patterns, and the child's isolated uncut 500-bp band indicates inheritance of the MstII-lacking sickle allele from each parent."
+      },
+      {
+        "text": "Each parent transmitted a normal allele",
+        "isCorrect": false,
+        "rationale": "Two normal alleles would yield only 400-bp and 100-bp products. This would be correct if the child's 500-bp band were absent."
+      },
+      {
+        "text": "One parent transmitted a CFTR deletion",
+        "isCorrect": false,
+        "rationale": "A CFTR deletion does not explain the β-globin MstII pattern. This would be relevant to cystic fibrosis testing."
+      },
+      {
+        "text": "One parent transmitted a DMPK expansion",
+        "isCorrect": false,
+        "rationale": "A DMPK expansion alters a CTG-repeat region rather than the β-globin digest. This would fit myotonic dystrophy fragment analysis."
+      },
+      {
+        "text": "Each parent transmitted a linked PAH marker",
+        "isCorrect": false,
+        "rationale": "PAH-linked markers are used for familial PKU prediction and do not create this direct β-globin pattern. This would fit a PKU pedigree analysis."
+      }
+    ]
+  },
+  {
+    "question": "A DNA sample is placed directly onto a membrane after denaturation rather than being separated by fragment size. Two short probes are then applied under exact-match conditions. Which testing principle is being used?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how testing can be done and interpret results for sickle cell anemia using RFLPs, PCR, and ASO probes",
+    "options": [
+      {
+        "text": "VNTR sizing by traditional Southern blot",
+        "isCorrect": false,
+        "rationale": "Traditional Southern blot analysis includes separation of restriction fragments by size. This would be correct if the DNA had first been electrophoretically separated."
+      },
+      {
+        "text": "Allele discrimination by ASO dot blot",
+        "isCorrect": true,
+        "rationale": "A dot blot places denatured DNA on the membrane without size separation, and short ASO probes distinguish alleles through exact sequence matching."
+      },
+      {
+        "text": "Metabolite detection by newborn screening",
+        "isCorrect": false,
+        "rationale": "Newborn PKU screening measures phenylalanine and tyrosine rather than membrane-bound DNA hybridization. This would fit a biochemical blood test."
+      },
+      {
+        "text": "Repeat expansion by restriction digestion",
+        "isCorrect": false,
+        "rationale": "Restriction analysis distinguishes fragment sizes and does not depend solely on two exact-match short probes. This would fit flanking-site analysis of a repeat expansion."
+      },
+      {
+        "text": "Individual identification by several VNTRs",
+        "isCorrect": false,
+        "rationale": "VNTR fingerprinting compares length variation across identity markers. This would be correct if several repeat loci were amplified or restriction fragments were compared."
+      }
+    ]
+  },
+  {
+    "question": "A woman with adult-onset muscular dystrophy has a disease-associated DMPK allele that is larger than her unaffected allele. Her affected child has an even larger disease-associated allele and more severe findings. Which molecular observation accounts for the testing pattern?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how RFLP analysis or PCR can be used to diagnose trinucleotide repeat expansions and interpret results",
+    "options": [
+      {
+        "text": "Progressive loss of PAH exons",
+        "isCorrect": false,
+        "rationale": "PAH exon mutations concern PKU and do not explain an enlarging DMPK allele. This would require serial deletions within PAH."
+      },
+      {
+        "text": "Progressive creation of MstII sites",
+        "isCorrect": false,
+        "rationale": "Creation of restriction sites would divide fragments rather than produce a progressively larger repeat-containing allele. This would fit an SNP-based RFLP with additional cleavage."
+      },
+      {
+        "text": "Progressive removal of CFTR nucleotides",
+        "isCorrect": false,
+        "rationale": "The common CFTR change is a fixed three-nucleotide deletion, not progressive generational enlargement. This would fit cystic fibrosis molecular testing."
+      },
+      {
+        "text": "Progressive expansion of CTG repeat copies",
+        "isCorrect": true,
+        "rationale": "Increasing CTG repeat number enlarges the DMPK fragment in later generations and correlates with greater disease severity."
+      },
+      {
+        "text": "Progressive contraction of VNTR repeat copies",
+        "isCorrect": false,
+        "rationale": "Repeat contraction would make the tested fragment smaller rather than larger. This would fit a pattern of decreasing fragment length."
+      }
+    ]
+  },
+  {
+    "question": "A paternity analysis at one VNTR locus shows that the tested man shares a compatible allele with the child. The laboratory must provide stronger evidence before reporting its conclusion. Which next step is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how RFLPs based on VNTRs can be used for paternity testing or forensics and interpret results",
+    "options": [
+      {
+        "text": "Test the child's sweat chloride level",
+        "isCorrect": false,
+        "rationale": "Sweat chloride assesses cystic fibrosis rather than biological identity. This would be appropriate if the child had a CF presentation."
+      },
+      {
+        "text": "Sequence one PAH exon from the child",
+        "isCorrect": false,
+        "rationale": "A PAH exon does not provide the multilocus identity evidence required for paternity testing. This would be relevant to investigating a specific PKU variant."
+      },
+      {
+        "text": "Digest β-globin DNA with MstII",
+        "isCorrect": false,
+        "rationale": "The MstII test evaluates the sickle β-globin allele and is not a sufficient paternity panel. This would be appropriate for sickle-cell genotyping."
+      },
+      {
+        "text": "Apply one CFTR-specific ASO probe",
+        "isCorrect": false,
+        "rationale": "One CFTR allele is not sufficiently informative for robust paternity assessment. This would be appropriate for a known CFTR mutation."
+      },
+      {
+        "text": "Analyze several additional informative VNTR loci",
+        "isCorrect": true,
+        "rationale": "Paternity cases require several distinct VNTR markers because each locus has its own paternity index and their combined evidence increases accuracy."
+      }
+    ]
+  },
+  {
+    "question": "A forensic Southern blot from a blood specimen shows a VNTR pattern matching the victim. A second mixed specimen contains all victim bands plus additional bands matching one suspect across several probes. Which interpretation is best supported?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how RFLPs based on VNTRs can be used for paternity testing or forensics and interpret results",
+    "options": [
+      {
+        "text": "The second specimen includes suspect DNA",
+        "isCorrect": true,
+        "rationale": "Matching additional VNTR bands across several probes supports the presence of that suspect's DNA within the mixed specimen."
+      },
+      {
+        "text": "The victim has a PAH mutation",
+        "isCorrect": false,
+        "rationale": "VNTR matching establishes identity rather than a PAH disease genotype. This would require a PAH-specific test linked to PKU."
+      },
+      {
+        "text": "The suspect has cystic fibrosis",
+        "isCorrect": false,
+        "rationale": "A VNTR fingerprint does not establish the common CFTR deletion or elevated sweat chloride. This would require CF-specific clinical or molecular testing."
+      },
+      {
+        "text": "The victim has myotonic dystrophy",
+        "isCorrect": false,
+        "rationale": "General VNTR bands do not demonstrate a DMPK CTG expansion. This would require an enlarged disease-associated DMPK fragment."
+      },
+      {
+        "text": "The suspect carries sickle β-globin",
+        "isCorrect": false,
+        "rationale": "Identity matching does not determine the MstII-sensitive β-globin genotype. This would require β-globin restriction or ASO analysis."
+      }
+    ]
+  },
+  {
+    "question": "Two unaffected parents have one child with phenylketonuria. A linked marker study shows that marker allele A travels with the altered maternal chromosome and marker allele B travels with the altered paternal chromosome. Which fetal result predicts the greatest disease risk?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how a prenatal genetic test for PKU can be done using RFLPs and interpret results",
+    "options": [
+      {
+        "text": "Inheritance of neither marker allele",
+        "isCorrect": false,
+        "rationale": "Absence of both disease-linked markers predicts inheritance of neither tracked familial mutation. This would indicate the lowest risk under the established linkage pattern."
+      },
+      {
+        "text": "Inheritance of maternal allele A only",
+        "isCorrect": false,
+        "rationale": "This predicts inheritance of only the maternal mutation-linked chromosome. It would fit carrier prediction rather than inheritance of both tracked mutations."
+      },
+      {
+        "text": "Inheritance of alleles A and B",
+        "isCorrect": true,
+        "rationale": "Receiving both disease-linked marker alleles predicts inheritance of the altered PAH chromosome from each obligate-carrier parent."
+      },
+      {
+        "text": "Inheritance of paternal allele B only",
+        "isCorrect": false,
+        "rationale": "This predicts inheritance of only the paternal mutation-linked chromosome. It would fit carrier prediction rather than the highest disease risk."
+      },
+      {
+        "text": "Inheritance of an unrelated VNTR allele",
+        "isCorrect": false,
+        "rationale": "An unrelated VNTR does not predict the familial PAH genotype. It would be informative only if linkage to a familial mutation had been established."
+      }
+    ]
+  },
+  {
+    "question": "An adult with suspected myotonic dystrophy undergoes restriction analysis. The blot shows one normal-sized band and one much larger band. Which cellular consequence is associated with the larger allele?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how RFLP analysis or PCR can be used to diagnose trinucleotide repeat expansions and interpret results",
+    "options": [
+      {
+        "text": "A shortened CFTR protein lacking phenylalanine",
+        "isCorrect": false,
+        "rationale": "Loss of a phenylalanine residue is associated with the common CFTR deletion. This would fit cystic fibrosis rather than a DMPK expansion."
+      },
+      {
+        "text": "A β-globin product resistant to MstII",
+        "isCorrect": false,
+        "rationale": "MstII resistance identifies the sickle β-globin allele. This would fit an uncut β-globin PCR product."
+      },
+      {
+        "text": "A universal PAH restriction-site loss",
+        "isCorrect": false,
+        "rationale": "PKU does not result from one universal PAH restriction-site change. This would require all affected PAH alleles to share that direct alteration."
+      },
+      {
+        "text": "A long RNA tail forming hairpins",
+        "isCorrect": true,
+        "rationale": "More than 50 CTG repeats in the DMPK 3' untranslated region produce a long RNA tail that forms hairpin structures."
+      },
+      {
+        "text": "A shorter VNTR molecular fingerprint",
+        "isCorrect": false,
+        "rationale": "The disease-associated DMPK allele is larger because of expansion. A shorter fingerprint would require repeat contraction."
+      }
+    ]
+  },
+  {
+    "question": "A patient with recurrent respiratory infections has elevated sweat chloride, but an ASO probe for the common CFTR deletion is negative. Which conclusion is most appropriate based on the available testing limits?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how testing can be done and interpret results for cystic fibrosis using PCR and ASO probes",
+    "options": [
+      {
+        "text": "Cystic fibrosis is completely excluded",
+        "isCorrect": false,
+        "rationale": "The common three-nucleotide deletion accounts for approximately 70% of cases, so a negative targeted probe does not exclude every CFTR mutation. Exclusion would require a test covering all relevant variants."
+      },
+      {
+        "text": "The tested common deletion was not detected",
+        "isCorrect": true,
+        "rationale": "An ASO probe assesses exact sequence matching, so a negative result establishes only that the specifically targeted deletion was not identified."
+      },
+      {
+        "text": "A DMPK expansion must be present",
+        "isCorrect": false,
+        "rationale": "Failure to detect a CFTR deletion does not establish a DMPK repeat expansion. This would require fragment or PCR evidence involving DMPK."
+      },
+      {
+        "text": "A sickle β-globin allele must be present",
+        "isCorrect": false,
+        "rationale": "A negative CFTR probe does not determine β-globin status. This would require MstII digestion or β-globin-specific ASO testing."
+      },
+      {
+        "text": "A PAH mutation must be present",
+        "isCorrect": false,
+        "rationale": "A negative CFTR probe does not establish a PAH mutation. This would require biochemical PKU findings and appropriate PAH evaluation."
+      }
+    ]
+  },
+  {
+    "question": "A laboratory must distinguish DNA from several unrelated individuals using markers that are usually harmless and highly variable. Which marker class best fulfills this purpose?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how RFLPs based on VNTRs can be used for paternity testing or forensics and interpret results",
+    "options": [
+      {
+        "text": "Single common CFTR deletion alleles",
+        "isCorrect": false,
+        "rationale": "One disease-associated CFTR allele provides limited identity discrimination. This would be appropriate for targeted cystic fibrosis testing."
+      },
+      {
+        "text": "Single sickle β-globin mutation alleles",
+        "isCorrect": false,
+        "rationale": "One β-globin mutation distinguishes sickle and normal sequences but does not create a broad individual fingerprint. This would fit sickle-cell diagnosis."
+      },
+      {
+        "text": "Single linked PAH marker alleles",
+        "isCorrect": false,
+        "rationale": "A PAH-linked marker is useful within an informative family, not as the strongest general identity panel. This would fit prenatal PKU linkage analysis."
+      },
+      {
+        "text": "Single expanded DMPK repeat alleles",
+        "isCorrect": false,
+        "rationale": "DMPK repeat analysis is directed toward myotonic dystrophy rather than routine individual identification. This would fit diagnosis of a repeat-expansion disorder."
+      },
+      {
+        "text": "Multiple variable-number tandem-repeat alleles",
+        "isCorrect": true,
+        "rationale": "VNTRs vary greatly among unrelated individuals, and patterns across multiple loci function as highly informative molecular fingerprints."
+      }
+    ]
+  }
+]
