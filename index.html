@@ -3244,7 +3244,7 @@ c. If any rationale content is your inference rather than a stated source fact, 
 8. NO FORMATTING CUES: Do not bold, italicize, or otherwise mark any option. Teach the medicine; do not cite the deck.
 
 9. OUTPUT FORMAT
-Return ONLY a valid JSON array. No preamble, markdown fences, commentary, or extra keys. Use this schema only. Before emitting, search each item's "question" string: if it contains "lecture" in any case, rewrite that stem until the word is gone (rationales may keep it). Then verify every item: at least five homogeneous options (prefer five; never fewer); +-2 word parity across ALL options; exactly one isCorrect true; difficulty_order matches the assigned mix; cited_learning_objective is the named LO; no source-pointers in question text.
+Return ONLY a valid JSON array. No preamble, markdown fences, commentary, or extra keys. Use this schema only. Whitespace is part of the contract: 2-space indentation, one space after each colon and comma, each key on its own line, no double spaces, no trailing spaces, no blank lines inside an object or array, and no tabs. difficulty_order is exactly "1st" or "2nd" or "3rd" (never "1st/2nd/3rd"). isCorrect is the JSON boolean true or false, not a string. Before emitting, search each item's "question" string: if it contains "lecture" in any case, rewrite that stem until the word is gone (rationales may keep it). Then verify every item: at least five homogeneous options (prefer five; never fewer); +-2 word parity across ALL options; exactly one isCorrect true; difficulty_order matches the assigned mix; cited_learning_objective is the named LO; no source-pointers in question text.
 
 10. CHARACTER ENCODING (CRITICAL)
 a. Valid UTF-8 JSON. Never emit mojibake (â, Â², Â°, Âµ, or Windows-1252 artifacts).
@@ -3256,14 +3256,34 @@ JSON structure:
 [
   {
     "question": "Clinical vignette or stem here.",
-    "difficulty_order": "1st/2nd/3rd",
+    "difficulty_order": "3rd",
     "cited_learning_objective": "The exact LO being tested.",
     "options": [
-      { "text": "Option text here.", "isCorrect": true,  "rationale": "Why correct, naming the mechanism or contrast." },
-      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong, the specific failure, and what would make it correct." },
-      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong, the specific failure, and what would make it correct." },
-      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong, the specific failure, and what would make it correct." },
-      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong, the specific failure, and what would make it correct." }
+      {
+        "text": "Option text here.",
+        "isCorrect": true,
+        "rationale": "Why correct, naming the mechanism or contrast."
+      },
+      {
+        "text": "Option text here.",
+        "isCorrect": false,
+        "rationale": "Why wrong, the specific failure, and what would make it correct."
+      },
+      {
+        "text": "Option text here.",
+        "isCorrect": false,
+        "rationale": "Why wrong, the specific failure, and what would make it correct."
+      },
+      {
+        "text": "Option text here.",
+        "isCorrect": false,
+        "rationale": "Why wrong, the specific failure, and what would make it correct."
+      },
+      {
+        "text": "Option text here.",
+        "isCorrect": false,
+        "rationale": "Why wrong, the specific failure, and what would make it correct."
+      }
     ]
   }
 ]
@@ -11435,6 +11455,8 @@ function stripQuizJsonNoise(text) {
 
 function repairQuizJsonText(text) {
   let s = stripQuizJsonNoise(text);
+  s = s.replace(/[\u00a0\u1680\u2000-\u200b\u202f\u205f\u3000\ufeff]/g, ' ');
+  s = transformJsonOutsideStrings(s, chunk => chunk.replace(/[ \t]{2,}/g, ' '));
   s = transformJsonOutsideStrings(s, chunk => chunk.replace(/,(\s*)(?=[}\]])/g, '$1'));
   s = transformJsonOutsideStrings(s, chunk => chunk.replace(/([}\]])(\s*)(?=[{\[])/g, '$1,$2'));
   return s;
