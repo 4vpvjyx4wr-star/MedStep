@@ -1,0 +1,994 @@
+[
+  {
+    "question": "Which description best distinguishes an epigenetic change from a genetic mutation?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Provide a working definition of epigenetics and contrast an epigenetic change with a mutation.",
+    "options": [
+      {
+        "text": "Altered gene expression without altered DNA sequence",
+        "isCorrect": true,
+        "rationale": "Epigenetic changes modify how much gene product is made without changing the underlying nucleotide sequence."
+      },
+      {
+        "text": "Altered protein identity from changed DNA sequence",
+        "isCorrect": false,
+        "rationale": "This describes a genetic mutation. It would be correct if the nucleotide sequence and resulting gene product were changed."
+      },
+      {
+        "text": "Altered chromosome number from meiotic segregation failure",
+        "isCorrect": false,
+        "rationale": "This changes chromosome dosage rather than regulating expression epigenetically. It would be correct if whole chromosomes were gained or lost."
+      },
+      {
+        "text": "Altered nucleotide order from DNA replication error",
+        "isCorrect": false,
+        "rationale": "A replication error changes genetic information. It would be correct if the question asked about a sequence-based mutation."
+      },
+      {
+        "text": "Altered gene identity from chromosomal sequence variation",
+        "isCorrect": false,
+        "rationale": "Sequence variation changes what is encoded rather than how strongly it is expressed. It would be correct for a structural genetic alteration."
+      }
+    ]
+  },
+  {
+    "question": "Which pair represents the two primary mechanisms responsible for epigenetic regulation?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain and describe the two main mechanisms that contribute to epigenetic changes",
+    "options": [
+      {
+        "text": "DNA replication and RNA translation",
+        "isCorrect": false,
+        "rationale": "These processes copy or use genetic information but are not the two primary epigenetic mechanisms. It would be correct if the question concerned information flow."
+      },
+      {
+        "text": "Cytosine methylation and histone modification",
+        "isCorrect": true,
+        "rationale": "Methylation of cytosines at CpG sites and post-translational modification of histones are the two principal mechanisms described."
+      },
+      {
+        "text": "Chromosome segregation and DNA recombination",
+        "isCorrect": false,
+        "rationale": "These alter chromosome inheritance or sequence arrangement. It would be correct if the question concerned meiotic chromosome behavior."
+      },
+      {
+        "text": "RNA splicing and protein degradation",
+        "isCorrect": false,
+        "rationale": "These regulate RNA processing and protein abundance but are not the two principal chromatin-based mechanisms. It would be correct for post-transcriptional regulation."
+      },
+      {
+        "text": "DNA repair and nucleotide excision",
+        "isCorrect": false,
+        "rationale": "These preserve genomic fidelity rather than establish epigenetic expression states. It would be correct if damaged DNA were being corrected."
+      }
+    ]
+  },
+  {
+    "question": "Which event initiates silencing of one X chromosome during early embryogenesis?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the process of X-inactivation",
+    "options": [
+      {
+        "text": "Translation of a chromosome-wide regulatory protein",
+        "isCorrect": false,
+        "rationale": "The initiating product is a long noncoding RNA rather than a translated protein. It would be correct if a protein directly coated the chromosome."
+      },
+      {
+        "text": "Replication of a chromosome-specific CpG island",
+        "isCorrect": false,
+        "rationale": "Replication does not initiate the process. It would be correct if the question asked how chromosome DNA is copied."
+      },
+      {
+        "text": "Production of XIST long noncoding RNA",
+        "isCorrect": true,
+        "rationale": "The chromosome selected for silencing produces XIST RNA, which coats the same chromosome and initiates subsequent repressive changes."
+      },
+      {
+        "text": "Deletion of an X-linked promoter region",
+        "isCorrect": false,
+        "rationale": "Normal X-inactivation does not require deletion. It would be correct only for a structural mutation removing a promoter."
+      },
+      {
+        "text": "Expansion of an X-linked trinucleotide repeat",
+        "isCorrect": false,
+        "rationale": "Repeat expansion is associated with FMR1 silencing, not initiation of chromosome-wide X-inactivation. It would be correct for Fragile X syndrome."
+      }
+    ]
+  },
+  {
+    "question": "Which repeat range is associated with an affected FMR1 allele?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the process by which the FMR1 gene undergoes epigenetic changes in Fragile X syndrome",
+    "options": [
+      {
+        "text": "Fewer than 6 CGG repeats",
+        "isCorrect": false,
+        "rationale": "This range is below the stated normal interval. It would be correct if the source defined a pathogenic contraction."
+      },
+      {
+        "text": "Between 6 and 50 CGG repeats",
+        "isCorrect": false,
+        "rationale": "This is the unaffected range. It would be correct if the question asked for a normal allele."
+      },
+      {
+        "text": "Between 50 and 200 CGG repeats",
+        "isCorrect": false,
+        "rationale": "This is the premutation range. It would be correct if the question asked for an allele associated with nuclear RNA accumulation without full silencing."
+      },
+      {
+        "text": "More than 200 CGG repeats",
+        "isCorrect": true,
+        "rationale": "Expansion beyond 200 repeats is associated with extensive methylation around FMR1 and transcriptional silencing."
+      },
+      {
+        "text": "Exactly 200 CGG repeat units",
+        "isCorrect": false,
+        "rationale": "The affected category is stated as greater than 200 rather than exactly 200. It would be correct only if that precise boundary were defined as affected."
+      }
+    ]
+  },
+  {
+    "question": "Promoter-associated CpG sites acquire increased methylation. Which nearby change is most expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain and describe the two main mechanisms that contribute to epigenetic changes",
+    "options": [
+      {
+        "text": "Increased transcription of the adjacent gene",
+        "isCorrect": false,
+        "rationale": "Promoter methylation attenuates rather than increases nearby expression. It would be correct if the promoter became less methylated."
+      },
+      {
+        "text": "Increased mutation of the adjacent gene",
+        "isCorrect": false,
+        "rationale": "The described modification regulates expression without requiring sequence alteration. It would be correct if DNA sequence damage occurred."
+      },
+      {
+        "text": "Increased translation of the adjacent transcript",
+        "isCorrect": false,
+        "rationale": "Reduced transcription would not directly produce greater translation. It would be correct if transcript availability or translation were increased."
+      },
+      {
+        "text": "Increased recombination within the adjacent chromosome",
+        "isCorrect": false,
+        "rationale": "CpG methylation is presented as an expression-control mechanism, not a recombination signal. It would be correct if meiotic exchange were being measured."
+      },
+      {
+        "text": "Decreased expression of the adjacent gene",
+        "isCorrect": true,
+        "rationale": "Methylation at promoter-associated CpG dinucleotides is linked to attenuation of nearby gene expression."
+      }
+    ]
+  },
+  {
+    "question": "Acetyl groups are added to histone tails surrounding a gene. Which molecular consequence is most likely?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain and describe the two main mechanisms that contribute to epigenetic changes",
+    "options": [
+      {
+        "text": "Weaker histone-DNA binding with increased transcription",
+        "isCorrect": true,
+        "rationale": "Acetylation neutralizes positive charges on histones, weakens their attraction to negatively charged DNA, and supports transcription."
+      },
+      {
+        "text": "Stronger histone-DNA binding with increased transcription",
+        "isCorrect": false,
+        "rationale": "Stronger binding would oppose chromatin accessibility. It would be correct if the first effect were weaker binding."
+      },
+      {
+        "text": "Weaker histone-DNA binding with decreased transcription",
+        "isCorrect": false,
+        "rationale": "Weaker binding is associated with greater, not lower, transcriptional activity. It would be correct if transcription increased."
+      },
+      {
+        "text": "Stronger histone-DNA binding with decreased transcription",
+        "isCorrect": false,
+        "rationale": "This describes the expected effect of histone hypoacetylation. It would be correct if acetyl groups were removed rather than added."
+      },
+      {
+        "text": "Unchanged histone-DNA binding with increased mutation",
+        "isCorrect": false,
+        "rationale": "Histone acetylation changes electrostatic association and expression, not DNA sequence. It would be correct only if an independent mutagenic event occurred."
+      }
+    ]
+  },
+  {
+    "question": "A chromosome 15 microdeletion removes the copy inherited from the father. Which outcome follows from the normal imprinting pattern?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how imprinting plus a chromosome 15 deletion can result in either Prader-Willi or Angelman syndrome.",
+    "options": [
+      {
+        "text": "Angelman syndrome from absent maternal expression",
+        "isCorrect": false,
+        "rationale": "Angelman syndrome follows loss of the maternal contribution. It would be correct if the deletion were maternally inherited."
+      },
+      {
+        "text": "Prader-Willi syndrome from absent paternal expression",
+        "isCorrect": true,
+        "rationale": "The maternal copies of the relevant Prader-Willi genes are normally imprinted, so deleting the paternal region removes their active copies."
+      },
+      {
+        "text": "Fragile X syndrome from promoter hypermethylation",
+        "isCorrect": false,
+        "rationale": "Fragile X syndrome involves FMR1 repeat expansion and methylation, not deletion of paternal chromosome 15. It would be correct with an affected FMR1 allele."
+      },
+      {
+        "text": "Angelman syndrome from absent paternal expression",
+        "isCorrect": false,
+        "rationale": "This combines the wrong syndrome with the paternal loss. It would be correct if the syndrome were Prader-Willi."
+      },
+      {
+        "text": "Prader-Willi syndrome from absent maternal expression",
+        "isCorrect": false,
+        "rationale": "Prader-Willi syndrome reflects absent paternal expression, not absent maternal expression. It would be correct if paternal replaced maternal."
+      }
+    ]
+  },
+  {
+    "question": "A child inherits both chromosome 15 copies from the father. Which expression consequence is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how imprinting and uniparental disomy can result in Prader-Willi or Angelman syndrome",
+    "options": [
+      {
+        "text": "Absent active Prader-Willi genes causing Prader-Willi syndrome",
+        "isCorrect": false,
+        "rationale": "Paternal copies provide active Prader-Willi genes. It would be correct if both chromosomes came from the mother."
+      },
+      {
+        "text": "Absent active Prader-Willi genes causing Angelman syndrome",
+        "isCorrect": false,
+        "rationale": "The missing activity is maternal UBE3A-region expression, not paternal Prader-Willi expression. It would be correct only with maternal disomy and the other syndrome."
+      },
+      {
+        "text": "Absent active Angelman gene causing Angelman syndrome",
+        "isCorrect": true,
+        "rationale": "Both paternal copies carry an imprinted Angelman-region gene, leaving no active maternal UBE3A contribution."
+      },
+      {
+        "text": "Absent active Angelman gene causing Prader-Willi syndrome",
+        "isCorrect": false,
+        "rationale": "Loss of active maternal-region expression produces Angelman syndrome. It would be correct if the syndrome label changed."
+      },
+      {
+        "text": "Preserved active Angelman gene preventing either syndrome",
+        "isCorrect": false,
+        "rationale": "The paternal Angelman-region copies are imprinted rather than active. It would be correct if a maternal chromosome 15 were present."
+      }
+    ]
+  },
+  {
+    "question": "A male carries one chromosome 15 with a maternal imprint and one with a paternal imprint. What happens before transmission to his offspring?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain what is meant by imprinting",
+    "options": [
+      {
+        "text": "Both chromosomes retain their original parental imprints",
+        "isCorrect": false,
+        "rationale": "Imprints are erased and reset during meiosis rather than permanently retaining grandparental origin. It would be correct for mitotic inheritance within somatic cells."
+      },
+      {
+        "text": "Both chromosomes acquire maternal imprinting patterns",
+        "isCorrect": false,
+        "rationale": "A male resets transmitted chromosome 15 copies to a paternal pattern. It would be correct for transmission through a female germline."
+      },
+      {
+        "text": "Only the maternally inherited chromosome retains imprinting",
+        "isCorrect": false,
+        "rationale": "Both homologs undergo germline imprint resetting. It would be correct only if the paternal homolog uniquely lost its imprint."
+      },
+      {
+        "text": "Both chromosomes acquire paternal imprinting patterns",
+        "isCorrect": true,
+        "rationale": "Parental imprints are erased during meiosis and reset according to the sex of the transmitting individual."
+      },
+      {
+        "text": "Only the paternally inherited chromosome retains imprinting",
+        "isCorrect": false,
+        "rationale": "Transmission is determined by the current parent's sex, not by which grandparent supplied each homolog. It would be correct if imprints were not reset."
+      }
+    ]
+  },
+  {
+    "question": "After one X chromosome is selected for silencing in an embryonic cell, which pattern is expected in its descendants?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process of X-inactivation",
+    "options": [
+      {
+        "text": "Each descendant randomly selects either chromosome again",
+        "isCorrect": false,
+        "rationale": "Selection is fixed after the early embryonic event. It would be correct if inactivation were independently repeated in every cell division."
+      },
+      {
+        "text": "Each descendant deletes the previously active chromosome",
+        "isCorrect": false,
+        "rationale": "The chromosome is epigenetically silenced rather than physically deleted. It would be correct only for chromosome loss."
+      },
+      {
+        "text": "Each descendant activates both chromosomes completely",
+        "isCorrect": false,
+        "rationale": "The established inactive state is maintained through mitosis. It would be correct if the silencing marks were fully erased."
+      },
+      {
+        "text": "Each descendant silences both chromosomes equally",
+        "isCorrect": false,
+        "rationale": "One chromosome is selected for inactivation, not both. It would be correct only if chromosome-wide silencing affected both homologs."
+      },
+      {
+        "text": "Each descendant maintains the same inactive chromosome",
+        "isCorrect": true,
+        "rationale": "X-inactivation is fixed early in embryogenesis, so daughter cells preserve the same inactive X chromosome."
+      }
+    ]
+  },
+  {
+    "question": "A tumor progresses from a benign neoplasm to a malignancy while global DNA methylation decreases. Which consequence is most consistent with this change?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how epigenetic changes can be involved in the cancer process",
+    "options": [
+      {
+        "text": "Greater oncogene activity and chromosomal instability",
+        "isCorrect": true,
+        "rationale": "Widespread hypomethylation can increase oncogene activity and produce global chromosomal instability during progression."
+      },
+      {
+        "text": "Lower oncogene activity and chromosomal stability",
+        "isCorrect": false,
+        "rationale": "This reverses both described effects of hypomethylation. It would be correct if methylation suppressed oncogenes while preserving chromosome stability."
+      },
+      {
+        "text": "Greater tumor suppressor silencing and chromosomal stability",
+        "isCorrect": false,
+        "rationale": "Tumor suppressor silencing is associated with promoter hypermethylation, while global hypomethylation promotes instability. It would be correct with targeted hypermethylation and preserved stability."
+      },
+      {
+        "text": "Lower microRNA silencing and reduced gene expression",
+        "isCorrect": false,
+        "rationale": "Cancer-associated microRNA loss is linked to hypermethylation, and loss can increase target-gene expression. It would be correct if methylation and expression effects were reversed."
+      },
+      {
+        "text": "Greater DNA repair expression and genomic fidelity",
+        "isCorrect": false,
+        "rationale": "Cancer progression can involve silencing of repair genes rather than improved fidelity. It would be correct if repair-gene expression were restored."
+      }
+    ]
+  },
+  {
+    "question": "A cancer cell hypermethylates a microRNA gene and stops producing its transcript. Which downstream change is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how epigenetic changes can be involved in the cancer process",
+    "options": [
+      {
+        "text": "Reduced expression of cancer-associated target genes",
+        "isCorrect": false,
+        "rationale": "Loss of the regulatory microRNA permits higher target-gene expression. It would be correct if the microRNA remained active and suppressed its targets."
+      },
+      {
+        "text": "Increased expression of cancer-associated target genes",
+        "isCorrect": true,
+        "rationale": "Hypermethylation silences the microRNA gene, removing its restraining effect and allowing associated target genes to be overexpressed."
+      },
+      {
+        "text": "Reduced methylation of cancer-associated target genes",
+        "isCorrect": false,
+        "rationale": "The stated downstream effect concerns target expression, not necessarily target-gene methylation. It would be correct if demethylation of those targets were demonstrated."
+      },
+      {
+        "text": "Increased repair of cancer-associated target genes",
+        "isCorrect": false,
+        "rationale": "MicroRNA silencing does not directly restore DNA repair. It would be correct if an active repair pathway were specifically induced."
+      },
+      {
+        "text": "Decreased mutation of cancer-associated target genes",
+        "isCorrect": false,
+        "rationale": "The mechanism changes expression rather than directly lowering mutation frequency. It would be correct if genomic damage were independently reduced."
+      }
+    ]
+  },
+  {
+    "question": "At low concentration, 5-azacytidine restores expression of a silenced tumor suppressor. Which action most directly explains this effect?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the mechanism of action of 5-azacytidine and vorinostat and how they can be used to modify epigenetics in some diseases",
+    "options": [
+      {
+        "text": "Activation of histone deacetylase activity",
+        "isCorrect": false,
+        "rationale": "Histone deacetylation promotes tighter chromatin and silencing. It would be correct if the desired effect were reduced transcription."
+      },
+      {
+        "text": "Activation of DNA methyltransferase activity",
+        "isCorrect": false,
+        "rationale": "Increasing methyltransferase activity would reinforce methylation-dependent silencing. It would be correct if promoter methylation were being increased."
+      },
+      {
+        "text": "Inhibition of DNA methyltransferase activity",
+        "isCorrect": true,
+        "rationale": "Low-dose 5-azacytidine inhibits DNA methyltransferase, allowing demethylation and re-expression of silenced tumor suppressor genes."
+      },
+      {
+        "text": "Inhibition of histone acetyltransferase activity",
+        "isCorrect": false,
+        "rationale": "Reducing acetylation would favor stronger histone-DNA binding and lower expression. It would be correct if transcriptional repression were intended."
+      },
+      {
+        "text": "Activation of chromosome segregation machinery",
+        "isCorrect": false,
+        "rationale": "The drug modifies methylation rather than chromosome segregation. It would be correct if the treatment directly corrected a segregation defect."
+      }
+    ]
+  },
+  {
+    "question": "Older monozygous twins show different genomic distributions of methylated cytosines and histone acetylation. Which conclusion is best supported?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the evidence that epigenetic changes can occur over time using identical twin studies",
+    "options": [
+      {
+        "text": "Their inherited DNA sequences progressively became different",
+        "isCorrect": false,
+        "rationale": "The findings concern epigenetic patterns rather than demonstrated sequence divergence. It would be correct if nucleotide differences accumulated and were measured."
+      },
+      {
+        "text": "Their chromosome numbers progressively became different",
+        "isCorrect": false,
+        "rationale": "No chromosome-number change is required to explain the observations. It would be correct if aneuploidy had been detected."
+      },
+      {
+        "text": "Their parental imprints were erased during mitosis",
+        "isCorrect": false,
+        "rationale": "Genomic imprints are maintained through mitosis. It would be correct if germline imprint resetting during meiosis were examined."
+      },
+      {
+        "text": "Their epigenetic profiles diverged during aging",
+        "isCorrect": true,
+        "rationale": "Young twins are epigenetically similar, whereas older twins show divergence in methylation, acetylation, and gene-expression patterns."
+      },
+      {
+        "text": "Their gene identities changed during aging",
+        "isCorrect": false,
+        "rationale": "Epigenetic divergence changes expression rather than gene identity. It would be correct if sequence-based alterations changed encoded genes."
+      }
+    ]
+  },
+  {
+    "question": "Famine exposure early in pregnancy produces normal-size children whose offspring have increased small-for-gestational-age births. Which interpretation best connects these observations?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the evidence that epigenetic changes may be passed down through more than one generation",
+    "options": [
+      {
+        "text": "Late gestational exposure directly reduced grandchild growth",
+        "isCorrect": false,
+        "rationale": "The relevant exposure occurred early in the grandmother's pregnancy rather than late in the grandchild's gestation. It would be correct if the grandchildren were directly exposed late."
+      },
+      {
+        "text": "A chromosome deletion was inherited across generations",
+        "isCorrect": false,
+        "rationale": "The observations are presented as evidence for environmentally induced epigenetic transmission, not a demonstrated deletion. It would be correct if a deletion were identified."
+      },
+      {
+        "text": "A DNA mutation immediately reduced child birth weight",
+        "isCorrect": false,
+        "rationale": "The directly exposed children were normal size, and no sequence mutation was established. It would be correct if a causal mutation and immediate phenotype were documented."
+      },
+      {
+        "text": "Maternal imprinting permanently silenced chromosome 15",
+        "isCorrect": false,
+        "rationale": "The famine findings are not attributed to chromosome 15 imprinting. It would be correct if a chromosome 15 imprinting disorder were demonstrated."
+      },
+      {
+        "text": "Early environmental marks persisted into another generation",
+        "isCorrect": true,
+        "rationale": "The delayed phenotype in the next generation supports epigenetic markers arising early and persisting through at least one additional generation."
+      }
+    ]
+  },
+  {
+    "question": "A child has no active expression from the maternally expressed region of chromosome 15. Testing shows two paternal chromosome 15 copies and no deletion. Which mechanism best explains the finding?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how imprinting and uniparental disomy can result in Prader-Willi or Angelman syndrome",
+    "options": [
+      {
+        "text": "Paternal uniparental disomy following trisomy rescue",
+        "isCorrect": true,
+        "rationale": "Two paternal copies reproduce the expression pattern of a maternal deletion because the relevant paternal alleles are imprinted."
+      },
+      {
+        "text": "Maternal uniparental disomy following trisomy rescue",
+        "isCorrect": false,
+        "rationale": "Maternal disomy removes active paternal-region expression and produces Prader-Willi syndrome. It would be correct if both copies were maternal."
+      },
+      {
+        "text": "Paternal microdeletion involving chromosome 15",
+        "isCorrect": false,
+        "rationale": "Testing explicitly shows no deletion, and paternal deletion affects Prader-Willi-region expression. It would be correct if a paternal deletion were detected."
+      },
+      {
+        "text": "Maternal microdeletion involving chromosome 15",
+        "isCorrect": false,
+        "rationale": "A maternal deletion can remove active Angelman-region expression, but no deletion is present. It would be correct if the maternal region were structurally absent."
+      },
+      {
+        "text": "Maternal UBE3A duplication involving chromosome 15",
+        "isCorrect": false,
+        "rationale": "A duplication would not explain absent maternal expression in a child with two paternal copies. It would be relevant only if additional active maternal material were present."
+      }
+    ]
+  },
+  {
+    "question": "A child has absent expression of paternally active genes on chromosome 15. Both chromosome copies are structurally intact and came from the same parent. Which diagnosis-mechanism pairing is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how imprinting and uniparental disomy can result in Prader-Willi or Angelman syndrome",
+    "options": [
+      {
+        "text": "Angelman syndrome with paternal uniparental disomy",
+        "isCorrect": false,
+        "rationale": "Paternal disomy causes loss of active maternal-region expression. It would be correct if maternally expressed genes were absent."
+      },
+      {
+        "text": "Prader-Willi syndrome with maternal uniparental disomy",
+        "isCorrect": true,
+        "rationale": "Two maternal copies carry imprinted Prader-Willi-region genes, leaving no active paternal contribution despite intact chromosomes."
+      },
+      {
+        "text": "Angelman syndrome with maternal uniparental disomy",
+        "isCorrect": false,
+        "rationale": "Maternal copies preserve expression of the Angelman-region gene. It would be correct if the diagnosis were Prader-Willi."
+      },
+      {
+        "text": "Prader-Willi syndrome with paternal uniparental disomy",
+        "isCorrect": false,
+        "rationale": "Paternal copies provide active Prader-Willi-region genes. It would be correct if both copies were maternal."
+      },
+      {
+        "text": "Fragile X syndrome with maternal uniparental disomy",
+        "isCorrect": false,
+        "rationale": "Fragile X syndrome involves FMR1 repeat-associated methylation rather than chromosome 15 disomy. It would be correct with an affected FMR1 expansion."
+      }
+    ]
+  },
+  {
+    "question": "A child lacks expression of the maternally active ubiquitin-related gene on chromosome 15. Chromosome copy number and parental inheritance are normal. Which alteration most directly accounts for this pattern?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how imprinting plus a chromosome 15 deletion can result in either Prader-Willi or Angelman syndrome.",
+    "options": [
+      {
+        "text": "Loss-of-function mutation in paternal UBE3A",
+        "isCorrect": false,
+        "rationale": "The paternal allele is normally imprinted in the relevant tissue. It would be correct only if paternal UBE3A were the active copy."
+      },
+      {
+        "text": "Gain-of-function mutation in paternal UBE3A",
+        "isCorrect": false,
+        "rationale": "Changing the imprinted paternal allele does not replace missing maternal activity. It would be correct only if the paternal allele were expressed and overactive."
+      },
+      {
+        "text": "Loss-of-function mutation in maternal UBE3A",
+        "isCorrect": true,
+        "rationale": "Maternal UBE3A is the active copy in the described region, so its loss of function can produce Angelman syndrome without deletion or disomy."
+      },
+      {
+        "text": "Gain-of-function mutation in maternal UBE3A",
+        "isCorrect": false,
+        "rationale": "A gain of function does not explain absent activity. It would be correct if excessive maternal gene activity were the finding."
+      },
+      {
+        "text": "Loss-of-function mutation in maternal FMR1",
+        "isCorrect": false,
+        "rationale": "FMR1 is implicated in Fragile X syndrome rather than chromosome 15 imprinting. It would be correct if FMR1 expression were lost through repeat-associated silencing."
+      }
+    ]
+  },
+  {
+    "question": "Cells from a patient show an expanded FMR1 5' noncoding region, extensive local methylation, and absent gene expression. Which event most directly produces the absent expression?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the process by which the FMR1 gene undergoes epigenetic changes in Fragile X syndrome",
+    "options": [
+      {
+        "text": "Expanded RNA increases nuclear export efficiency",
+        "isCorrect": false,
+        "rationale": "Premutation RNA can accumulate in the nucleus rather than gaining export efficiency. It would be correct if enhanced export had been demonstrated."
+      },
+      {
+        "text": "Expanded RNA increases cytoplasmic translation efficiency",
+        "isCorrect": false,
+        "rationale": "The affected allele is transcriptionally silenced, preventing this proposed increase. It would be correct if abundant transcript reached the cytoplasm."
+      },
+      {
+        "text": "Repeat contraction activates local histone deacetylation",
+        "isCorrect": false,
+        "rationale": "The allele contains an expansion rather than a contraction. It would be correct only if contraction triggered the repressive change."
+      },
+      {
+        "text": "Repeat-associated methylation silences FMR1 transcription",
+        "isCorrect": true,
+        "rationale": "Heavy methylation of the expanded repeat region and nearby CG-rich DNA epigenetically shuts off FMR1."
+      },
+      {
+        "text": "Repeat excision deletes the FMRP coding region",
+        "isCorrect": false,
+        "rationale": "The mechanism is methylation-mediated silencing rather than excision of coding DNA. It would be correct if a deletion removed the coding region."
+      }
+    ]
+  },
+  {
+    "question": "A 68-year-old individual with an FMR1 premutation develops a neurologic disorder. Cells contain abundant aberrant transcript within nuclei. Which mechanism best explains the cellular injury?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the process by which the FMR1 gene undergoes epigenetic changes in Fragile X syndrome",
+    "options": [
+      {
+        "text": "Toxic accumulation of expanded nuclear RNA",
+        "isCorrect": true,
+        "rationale": "Premutation alleles can produce aberrant RNA that accumulates in nuclei and has toxic effects later in life."
+      },
+      {
+        "text": "Complete silencing from extensive promoter methylation",
+        "isCorrect": false,
+        "rationale": "Complete methylation-mediated silencing characterizes an affected full expansion rather than an RNA-producing premutation. It would be correct if FMR1 transcription were absent."
+      },
+      {
+        "text": "Chromosomal instability from widespread DNA hypomethylation",
+        "isCorrect": false,
+        "rationale": "This is associated with tumor progression rather than premutation RNA toxicity. It would be correct if global hypomethylation and chromosome instability were observed."
+      },
+      {
+        "text": "Transcriptional activation from increased histone acetylation",
+        "isCorrect": false,
+        "rationale": "Although acetylation can increase transcription, it does not explain the stated toxicity of retained expanded RNA. It would be correct if increased expression alone were the endpoint."
+      },
+      {
+        "text": "Loss of imprinting from paternal chromosome disomy",
+        "isCorrect": false,
+        "rationale": "Chromosome 15 disomy causes imprinting disorders, not FMR1 premutation toxicity. It would be correct if both chromosome 15 copies came from the father."
+      }
+    ]
+  },
+  {
+    "question": "A female embryo has one X chromosome coated by its own regulatory RNA. Subsequent analysis shows increased methylation and reduced histone acetylation on that chromosome. Which long-term outcome is expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the process of X-inactivation",
+    "options": [
+      {
+        "text": "Complete activation of every gene on that chromosome",
+        "isCorrect": false,
+        "rationale": "The modifications establish repression rather than complete activation. It would be correct if the chromosome lost its silencing marks."
+      },
+      {
+        "text": "Stable silencing with all genes permanently inactive",
+        "isCorrect": false,
+        "rationale": "The stable silencing is incomplete because about 10% of genes may remain active. It would be correct if no genes escaped inactivation."
+      },
+      {
+        "text": "Random reselection of the inactive chromosome daily",
+        "isCorrect": false,
+        "rationale": "Selection becomes fixed in descendant cells rather than being repeatedly randomized. It would be correct if choice were reset continually."
+      },
+      {
+        "text": "Deletion of the coated chromosome during mitosis",
+        "isCorrect": false,
+        "rationale": "The chromosome is retained and epigenetically repressed. It would be correct only if physical chromosome loss occurred."
+      },
+      {
+        "text": "Stable silencing with some genes remaining active",
+        "isCorrect": true,
+        "rationale": "XIST coating initiates methylation and deacetylation, producing mitotically stable but incomplete X-inactivation."
+      }
+    ]
+  },
+  {
+    "question": "Tumor cells show progressive global loss of cytosine methylation but focal methylation of a DNA repair gene promoter. Which combined effect is most expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how epigenetic changes can be involved in the cancer process",
+    "options": [
+      {
+        "text": "Chromosomal instability with reduced repair-gene expression",
+        "isCorrect": true,
+        "rationale": "Global hypomethylation promotes chromosome instability, while focal promoter hypermethylation can silence a repair gene."
+      },
+      {
+        "text": "Chromosomal stability with increased repair-gene expression",
+        "isCorrect": false,
+        "rationale": "This reverses both expected consequences. It would be correct if global methylation and repair-gene expression were restored."
+      },
+      {
+        "text": "Chromosomal instability with increased repair-gene expression",
+        "isCorrect": false,
+        "rationale": "The global effect is plausible, but promoter methylation predicts reduced repair-gene expression. It would be correct if the repair promoter were demethylated."
+      },
+      {
+        "text": "Chromosomal stability with reduced repair-gene expression",
+        "isCorrect": false,
+        "rationale": "Repair-gene repression fits, but global hypomethylation predicts instability. It would be correct if global chromosomal stability were preserved."
+      },
+      {
+        "text": "Normal chromosomes with unchanged repair-gene expression",
+        "isCorrect": false,
+        "rationale": "Both measured methylation changes have functional consequences. It would be correct if neither global nor promoter methylation had changed."
+      }
+    ]
+  },
+  {
+    "question": "A malignancy has hypermethylation and silencing of a tumor suppressor promoter. The treatment goal is to restore transcription using a low drug dose. Which therapy is the best match?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the mechanism of action of 5-azacytidine and vorinostat and how they can be used to modify epigenetics in some diseases",
+    "options": [
+      {
+        "text": "High-dose 5-azacytidine increasing nucleic acid incorporation",
+        "isCorrect": false,
+        "rationale": "High-dose exposure causes DNA and RNA incorporation with cell death rather than selective demethylation. It would be correct if cytotoxicity were the treatment goal."
+      },
+      {
+        "text": "Low-dose 5-azacytidine inhibiting DNA methyltransferase",
+        "isCorrect": true,
+        "rationale": "Low-dose 5-azacytidine inhibits DNA methyltransferase and can un-silence a methylated tumor suppressor."
+      },
+      {
+        "text": "Vorinostat increasing histone deacetylase activity",
+        "isCorrect": false,
+        "rationale": "Vorinostat inhibits rather than activates histone deacetylase. It would be correct if the action were stated as deacetylase inhibition."
+      },
+      {
+        "text": "Vorinostat increasing promoter cytosine methylation",
+        "isCorrect": false,
+        "rationale": "Vorinostat targets histone deacetylation rather than increasing DNA methylation. It would be correct if a methylating agent were intended."
+      },
+      {
+        "text": "High-dose 5-azacytidine activating DNA methyltransferase",
+        "isCorrect": false,
+        "rationale": "5-azacytidine does not restore expression by activating methyltransferase. It would be correct only if increased methylation and silencing were desired."
+      }
+    ]
+  },
+  {
+    "question": "A patient with T cell lymphoma receives a drug intended to reverse histone hypoacetylation. Which cellular action should occur first?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the mechanism of action of 5-azacytidine and vorinostat and how they can be used to modify epigenetics in some diseases",
+    "options": [
+      {
+        "text": "Activation of histone deacetylase by vorinostat",
+        "isCorrect": false,
+        "rationale": "Vorinostat blocks rather than activates histone deacetylase. It would be correct if the drug promoted transcriptional repression."
+      },
+      {
+        "text": "Inhibition of DNA methyltransferase by vorinostat",
+        "isCorrect": false,
+        "rationale": "DNA methyltransferase inhibition is the low-dose action of 5-azacytidine. It would be correct if that drug were administered."
+      },
+      {
+        "text": "Inhibition of histone deacetylase by vorinostat",
+        "isCorrect": true,
+        "rationale": "Vorinostat inhibits histone deacetylase, counteracting hypoacetylation and permitting a more transcriptionally active chromatin state."
+      },
+      {
+        "text": "Activation of histone acetyltransferase by 5-azacytidine",
+        "isCorrect": false,
+        "rationale": "5-azacytidine acts through DNA methyltransferase inhibition at low doses. It would be correct if a demonstrated acetyltransferase activator were used."
+      },
+      {
+        "text": "Inhibition of histone acetyltransferase by 5-azacytidine",
+        "isCorrect": false,
+        "rationale": "This would reduce acetylation and does not describe 5-azacytidine. It would be correct if repression through acetyltransferase blockade were intended."
+      }
+    ]
+  },
+  {
+    "question": "After treatment with an epigenetic drug, histone tails remain acetylated and tumor suppressor transcription rises. Which physical chromatin change mediates this response?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the mechanism of action of 5-azacytidine and vorinostat and how they can be used to modify epigenetics in some diseases",
+    "options": [
+      {
+        "text": "Greater positive histone charge strengthens DNA binding",
+        "isCorrect": false,
+        "rationale": "Acetylation neutralizes positive charge rather than increasing it. It would be correct if histones were hypoacetylated."
+      },
+      {
+        "text": "Greater negative DNA charge weakens nucleotide pairing",
+        "isCorrect": false,
+        "rationale": "The relevant change occurs on histone charge and histone-DNA association, not DNA base pairing. It would be correct if nucleotide pairing were directly disrupted."
+      },
+      {
+        "text": "Reduced negative DNA charge strengthens histone binding",
+        "isCorrect": false,
+        "rationale": "The drug does not act by neutralizing DNA charge. It would be correct if DNA charge were experimentally reduced."
+      },
+      {
+        "text": "Reduced positive histone charge weakens DNA binding",
+        "isCorrect": true,
+        "rationale": "Histone acetylation neutralizes positive charges, weakens attraction to negatively charged DNA, and increases transcriptional accessibility."
+      },
+      {
+        "text": "Reduced positive histone charge strengthens DNA binding",
+        "isCorrect": false,
+        "rationale": "Neutralizing histone charge weakens rather than strengthens electrostatic attraction. It would be correct if the final phrase stated weaker binding."
+      }
+    ]
+  },
+  {
+    "question": "A leukemia is treated with a high concentration of 5-azacytidine. Rapid cell death occurs before substantial re-expression of silenced genes. Which mechanism best explains this result?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the mechanism of action of 5-azacytidine and vorinostat and how they can be used to modify epigenetics in some diseases",
+    "options": [
+      {
+        "text": "Histone deacetylase inhibition opens tumor chromatin",
+        "isCorrect": false,
+        "rationale": "This describes vorinostat rather than high-dose 5-azacytidine. It would be correct if an HDAC inhibitor produced the response."
+      },
+      {
+        "text": "DNA methyltransferase activation silences tumor suppressors",
+        "isCorrect": false,
+        "rationale": "5-azacytidine does not activate DNA methyltransferase. It would be correct if a methyltransferase activator increased silencing."
+      },
+      {
+        "text": "Promoter demethylation restores tumor suppressor expression",
+        "isCorrect": false,
+        "rationale": "This is the desired low-dose mechanism and does not best explain rapid high-dose cytotoxicity. It would be correct at low concentration with restored expression."
+      },
+      {
+        "text": "Histone acetyltransferase inhibition compacts tumor chromatin",
+        "isCorrect": false,
+        "rationale": "This is not the stated action of 5-azacytidine. It would be correct if a histone acetyltransferase inhibitor were administered."
+      },
+      {
+        "text": "DNA and RNA incorporation causes cell death",
+        "isCorrect": true,
+        "rationale": "At high doses, 5-azacytidine is incorporated into DNA and RNA and produces direct cytotoxicity."
+      }
+    ]
+  },
+  {
+    "question": "A researcher wishes to restore expression of one cancer-related gene while limiting changes at unrelated loci. Which proposed platform best addresses this therapeutic challenge?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the mechanism of action of 5-azacytidine and vorinostat and how they can be used to modify epigenetics in some diseases",
+    "options": [
+      {
+        "text": "Guide-directed construct recruiting endogenous epigenetic machinery",
+        "isCorrect": true,
+        "rationale": "A guide RNA can direct a construct to a specific gene while a small molecule recruits endogenous epigenetic machinery."
+      },
+      {
+        "text": "Systemic demethylation affecting every methylated promoter",
+        "isCorrect": false,
+        "rationale": "Broad demethylation lacks the desired gene specificity. It would be correct if genome-wide promoter activation were the goal."
+      },
+      {
+        "text": "Systemic deacetylase blockade affecting all histone substrates",
+        "isCorrect": false,
+        "rationale": "Global enzyme inhibition can alter many genes and does not solve locus targeting. It would be correct if broad chromatin opening were acceptable."
+      },
+      {
+        "text": "Random chromosome deletion removing silenced genomic regions",
+        "isCorrect": false,
+        "rationale": "Chromosome deletion is neither targeted epigenetic regulation nor reversible. It would be correct only if physical removal of a chromosome were intended."
+      },
+      {
+        "text": "Global microRNA suppression affecting multiple target transcripts",
+        "isCorrect": false,
+        "rationale": "Broad microRNA suppression would influence numerous targets rather than one locus. It would be correct if widespread target-gene activation were desired."
+      }
+    ]
+  },
+  {
+    "question": "A young pair of monozygous twins has nearly identical epigenetic profiles. Decades later, their methylation, acetylation, and expression patterns differ substantially. Which explanation best accounts for the later discordance?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the evidence that epigenetic changes can occur over time using identical twin studies",
+    "options": [
+      {
+        "text": "Progressive divergence of chromosome copy numbers",
+        "isCorrect": false,
+        "rationale": "The measured differences are epigenetic rather than changes in chromosome dosage. It would be correct if aneuploidy developed in one twin."
+      },
+      {
+        "text": "Progressive divergence of DNA nucleotide sequences",
+        "isCorrect": false,
+        "rationale": "The observations do not require sequence changes. It would be correct if genomic sequencing demonstrated increasing sequence differences."
+      },
+      {
+        "text": "Progressive divergence of environmentally responsive epigenetic marks",
+        "isCorrect": true,
+        "rationale": "Twin data support dynamic epigenetic marks that can diverge with aging and differing environmental influences."
+      },
+      {
+        "text": "Progressive resetting of all parental imprints",
+        "isCorrect": false,
+        "rationale": "Imprints are maintained through somatic mitosis rather than globally reset during aging. It would be correct during germline imprint erasure and re-establishment."
+      },
+      {
+        "text": "Progressive deletion of transcriptionally inactive genes",
+        "isCorrect": false,
+        "rationale": "Epigenetic repression does not require physical gene deletion. It would be correct if structural deletions were detected."
+      }
+    ]
+  },
+  {
+    "question": "During a historic famine, exposure in the final two trimesters is followed by reduced birth weight in directly exposed children, but their offspring are generally normal size. Which conclusion is best supported?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the evidence that epigenetic changes may be passed down through more than one generation",
+    "options": [
+      {
+        "text": "Late exposure consistently transmitted reduced growth across generations",
+        "isCorrect": false,
+        "rationale": "The offspring of the small-for-gestational-age children tended to be normal size. It would be correct if reduced growth persisted in their offspring."
+      },
+      {
+        "text": "Late exposure affected direct growth without clear transgenerational persistence",
+        "isCorrect": true,
+        "rationale": "Late-pregnancy famine was associated with reduced birth weight in directly exposed children, but the next generation generally lacked that phenotype."
+      },
+      {
+        "text": "Early exposure affected direct growth without later consequences",
+        "isCorrect": false,
+        "rationale": "Early exposure produced normal-size children whose offspring showed increased small-for-gestational-age births. It would be correct if the timing and generational pattern were reversed."
+      },
+      {
+        "text": "Early exposure consistently reduced growth in both generations",
+        "isCorrect": false,
+        "rationale": "Directly exposed children after early famine were normal size. It would be correct if both generations had reduced birth weight."
+      },
+      {
+        "text": "Late exposure altered DNA sequence in both generations",
+        "isCorrect": false,
+        "rationale": "The findings are discussed as possible epigenetic effects, not demonstrated sequence mutations. It would be correct if inherited nucleotide changes were identified."
+      }
+    ]
+  },
+  {
+    "question": "A normal somatic cell passes a parent-specific chromosome 15 expression pattern to its daughter cells. Later, that individual produces gametes with imprints matching the individual's sex. Which sequence of events explains both observations?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain what is meant by imprinting",
+    "options": [
+      {
+        "text": "Mitotic erasure followed by meiotic maintenance",
+        "isCorrect": false,
+        "rationale": "This reverses the described pattern. It would be correct if somatic divisions erased imprints and gametogenesis preserved the inherited marks."
+      },
+      {
+        "text": "Mitotic mutation followed by meiotic deletion",
+        "isCorrect": false,
+        "rationale": "Imprinting involves expression marks rather than required mutation or deletion. It would be correct if sequence alteration and chromosome loss were observed."
+      },
+      {
+        "text": "Mitotic resetting followed by meiotic fixation",
+        "isCorrect": false,
+        "rationale": "Somatic cells maintain rather than reset the imprint. It would be correct if imprints were newly established during every mitosis."
+      },
+      {
+        "text": "Mitotic maintenance followed by meiotic resetting",
+        "isCorrect": true,
+        "rationale": "Imprints are stably inherited through mitosis but erased and re-established according to the transmitting parent's sex during meiosis."
+      },
+      {
+        "text": "Mitotic deletion followed by meiotic duplication",
+        "isCorrect": false,
+        "rationale": "No chromosome deletion or duplication is needed for normal imprinting. It would be correct if copy-number changes produced the observed pattern."
+      }
+    ]
+  },
+  {
+    "question": "A sporadic colorectal tumor shows promoter hypermethylation of MGMT that persists in daughter tumor cells. Which process is most directly impaired?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how epigenetic changes can be involved in the cancer process",
+    "options": [
+      {
+        "text": "Maintenance of genomic fidelity through DNA repair",
+        "isCorrect": true,
+        "rationale": "MGMT is presented as a DNA repair gene, so promoter hypermethylation can silence repair activity and reduce genomic fidelity."
+      },
+      {
+        "text": "Activation of oncogenes through global hypomethylation",
+        "isCorrect": false,
+        "rationale": "Global hypomethylation can activate oncogenes, but the stem specifies focal MGMT hypermethylation. It would be correct if widespread methylation loss were observed."
+      },
+      {
+        "text": "Coating of chromosomes through long noncoding RNA",
+        "isCorrect": false,
+        "rationale": "Chromosome coating by long noncoding RNA describes X-inactivation. It would be correct if XIST-mediated silencing were examined."
+      },
+      {
+        "text": "Resetting of parental marks during gamete formation",
+        "isCorrect": false,
+        "rationale": "Germline imprint resetting is unrelated to somatic MGMT silencing. It would be correct if meiotic inheritance patterns were studied."
+      },
+      {
+        "text": "Transport of messenger RNA into the cytoplasm",
+        "isCorrect": false,
+        "rationale": "Messenger RNA shuttling is associated with the proposed function of FMRP. It would be correct if FMRP activity were lost."
+      }
+    ]
+  }
+]
