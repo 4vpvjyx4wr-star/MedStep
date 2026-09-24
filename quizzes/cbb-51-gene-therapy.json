@@ -1,0 +1,578 @@
+[
+  {
+    "question": "Which modification distinguishes a heritable genetic intervention from one restricted to treated body cells?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the difference between germline gene therapy and somatic gene therapy",
+    "options": [
+      {
+        "text": "Modification of selected somatic cells",
+        "isCorrect": false,
+        "rationale": "This describes somatic therapy, which does not affect the germline. It would be correct if the intervention were restricted to nonreproductive body cells."
+      },
+      {
+        "text": "Modification that includes germ cells",
+        "isCorrect": true,
+        "rationale": "Germline therapy modifies all cells or a subset that includes germ cells, allowing the change to be transmitted to offspring."
+      },
+      {
+        "text": "Modification performed outside the body",
+        "isCorrect": false,
+        "rationale": "This describes an ex vivo delivery setting rather than heritability. It would be correct if the question asked where isolated cells are modified."
+      },
+      {
+        "text": "Modification performed within the body",
+        "isCorrect": false,
+        "rationale": "This describes an in vivo delivery setting rather than germline involvement. It would be correct if cells were targeted without removal from the patient."
+      },
+      {
+        "text": "Modification using a viral vector",
+        "isCorrect": false,
+        "rationale": "Viral delivery can be used for somatic interventions and does not establish heritability. It would be correct if the question asked about a common delivery method."
+      }
+    ]
+  },
+  {
+    "question": "Which pair constitutes the two principal requirements for successful human gene therapy?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the components required for gene therapy",
+    "options": [
+      {
+        "text": "Donor DNA and germ cells",
+        "isCorrect": false,
+        "rationale": "Donor DNA and germ cells are not the two universal requirements. This would fit a germline editing approach that specifically used donor DNA."
+      },
+      {
+        "text": "Target RNA and dividing cells",
+        "isCorrect": false,
+        "rationale": "Target RNA and dividing cells apply only to selected strategies. This would fit an approach requiring an RNA target and proliferating recipient cells."
+      },
+      {
+        "text": "Normal protein and immune cells",
+        "isCorrect": false,
+        "rationale": "Gene therapy transfers genetic material rather than supplying a normal protein as its defining requirement. This would fit a protein-replacement strategy directed at immune cells."
+      },
+      {
+        "text": "Therapeutic genes and efficient delivery",
+        "isCorrect": true,
+        "rationale": "Successful gene therapy requires a therapeutic gene and a delivery system capable of efficiently introducing it into target cells."
+      },
+      {
+        "text": "Guide RNA and donor DNA",
+        "isCorrect": false,
+        "rationale": "These are components of a particular CRISPR-mediated editing strategy rather than all gene therapy. This would fit homologous recombination after targeted cleavage."
+      }
+    ]
+  },
+  {
+    "question": "Which strategy adds a functional allele without exchanging it for the abnormal allele?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain why the most common gene therapy (gene augmentation) would work best for autosomal recessive diseases",
+    "options": [
+      {
+        "text": "Gene augmentation therapy",
+        "isCorrect": true,
+        "rationale": "Gene augmentation introduces an additional normal gene copy, which usually remains separate from the genome or integrates randomly without replacing the abnormal allele."
+      },
+      {
+        "text": "Targeted cell killing",
+        "isCorrect": false,
+        "rationale": "Targeted killing uses a toxic transgene to destroy selected cells. It would be correct if the goal were elimination of cancer cells."
+      },
+      {
+        "text": "Targeted expression inhibition",
+        "isCorrect": false,
+        "rationale": "Targeted inhibition interferes with a disease gene at the DNA, RNA, or protein level. It would be correct if suppression of harmful expression were required."
+      },
+      {
+        "text": "Targeted mutation correction",
+        "isCorrect": false,
+        "rationale": "Targeted correction changes a mutated DNA sequence or repairs an RNA splicing defect. It would be correct if the abnormal sequence itself were precisely corrected."
+      },
+      {
+        "text": "Germline genome modification",
+        "isCorrect": false,
+        "rationale": "Germline modification is defined by inclusion of germ cells and potential inheritance. It would be correct if the question focused on transmission to offspring."
+      }
+    ]
+  },
+  {
+    "question": "Which repair process typically generates insertion or deletion mutations after targeted double-strand DNA cleavage?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how CRISPR/Cas9 can be used to modify genes, and the advantages and disadvantages of this system as it applies to potential use for gene therapy in humans",
+    "options": [
+      {
+        "text": "Retroviral chromosomal integration",
+        "isCorrect": false,
+        "rationale": "Retroviral integration inserts vector DNA into a chromosome but is not the repair pathway following Cas9 cleavage. It would be correct if vector integration were being tested."
+      },
+      {
+        "text": "Adenoviral episomal retention",
+        "isCorrect": false,
+        "rationale": "Adenoviral DNA remains outside the chromosome and does not repair a targeted DNA break. It would be correct if transient adenoviral persistence were being tested."
+      },
+      {
+        "text": "Guide RNA hybridization",
+        "isCorrect": false,
+        "rationale": "Guide RNA hybridization directs Cas9 to complementary DNA but does not itself repair the break. It would be correct if target recognition were being tested."
+      },
+      {
+        "text": "Donor-directed homologous recombination",
+        "isCorrect": false,
+        "rationale": "Homologous recombination uses supplied donor DNA to edit the sequence rather than typically generating disruptive indels. It would be correct if precise donor-directed editing were desired."
+      },
+      {
+        "text": "Nonhomologous end joining",
+        "isCorrect": true,
+        "rationale": "Nonhomologous end joining is error prone and commonly produces insertion or deletion mutations that can eliminate gene function."
+      }
+    ]
+  },
+  {
+    "question": "A genetic disorder results from absent activity of both copies of an enzyme gene. Which approach most directly restores the missing function without correcting either original allele?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why the most common gene therapy (gene augmentation) would work best for autosomal recessive diseases",
+    "options": [
+      {
+        "text": "Toxic transgene delivery",
+        "isCorrect": false,
+        "rationale": "A toxic transgene destroys targeted cells rather than restoring an absent enzyme. It would be appropriate if selective killing of diseased cells were the goal."
+      },
+      {
+        "text": "Disease transcript degradation",
+        "isCorrect": false,
+        "rationale": "Transcript degradation suppresses gene expression and cannot restore a missing product. It would fit a disorder caused by harmful gene overexpression."
+      },
+      {
+        "text": "Normal allele augmentation",
+        "isCorrect": true,
+        "rationale": "Adding a normal allele can supply the functional enzyme because the recessive disorder reflects insufficient normal gene product rather than a product requiring suppression."
+      },
+      {
+        "text": "Mutant protein degradation",
+        "isCorrect": false,
+        "rationale": "Protein degradation removes an existing product and does not supply the absent enzyme. It would fit a condition driven by an unwanted protein."
+      },
+      {
+        "text": "Targeted cell elimination",
+        "isCorrect": false,
+        "rationale": "Eliminating cells would further reduce enzyme-producing tissue rather than restore function. It would fit cancer therapy using a toxic transgene."
+      }
+    ]
+  },
+  {
+    "question": "Patient cells are removed, genetically modified in a laboratory, and returned to the same patient. Which delivery setting is being used?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain what is meant by in vivo and ex vivo therapies",
+    "options": [
+      {
+        "text": "Ex vivo therapy",
+        "isCorrect": true,
+        "rationale": "Ex vivo therapy modifies an isolated tissue or cell population outside the body before returning it to the patient."
+      },
+      {
+        "text": "In vivo therapy",
+        "isCorrect": false,
+        "rationale": "In vivo therapy targets cells while they remain inside the body. It would be correct if the vector were administered directly to the patient."
+      },
+      {
+        "text": "Germline gene therapy",
+        "isCorrect": false,
+        "rationale": "Germline therapy requires modification involving germ cells and potential inheritance. It would be correct if reproductive cells were modified."
+      },
+      {
+        "text": "Targeted cell killing",
+        "isCorrect": false,
+        "rationale": "Targeted killing describes the transgene's effect rather than the location of treatment. It would be correct if the transgene were toxic to selected cells."
+      },
+      {
+        "text": "In vivo gene correction",
+        "isCorrect": false,
+        "rationale": "This would require modification of cells inside the patient, which is contrary to their removal and reinfusion. It would be correct if correction occurred within the body."
+      }
+    ]
+  },
+  {
+    "question": "A vector must deliver a transgene to mature cells that do not replicate. Avoidance of chromosomal insertion is preferred despite the need for repeated treatment. Which vector best satisfies these requirements?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast retroviral vectors, adenovirus vectors, and non-viral vectors for gene therapy",
+    "options": [
+      {
+        "text": "Integrating retroviral vector",
+        "isCorrect": false,
+        "rationale": "Retroviral integration requires dividing target cells and introduces insertional risk. It would fit proliferating cells when durable chromosomal integration was desired."
+      },
+      {
+        "text": "Nonviral delivery vector",
+        "isCorrect": false,
+        "rationale": "Nonviral vectors require an alternative method of cellular entry, but the stated combination of nondividing-cell infection and transient episomal persistence specifically matches adenovirus. It would fit if viral entry were unsuitable."
+      },
+      {
+        "text": "Germline retroviral vector",
+        "isCorrect": false,
+        "rationale": "This adds heritable modification and retains the dividing-cell requirement of retroviral integration. It would fit an animal experiment targeting germline cells."
+      },
+      {
+        "text": "Integrating adenoviral vector",
+        "isCorrect": false,
+        "rationale": "Adenoviral DNA does not normally integrate into the target-cell genome. This would require a vector with chromosomal integration, which instead characterizes retroviral delivery."
+      },
+      {
+        "text": "Nonintegrating adenoviral vector",
+        "isCorrect": true,
+        "rationale": "Adenovirus can infect nondividing cells and remains episomal, producing transient expression that requires repeated administration."
+      }
+    ]
+  },
+  {
+    "question": "Why are viruses frequently adapted as delivery vehicles for therapeutic genetic material?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why viruses are commonly used to create gene therapy vectors",
+    "options": [
+      {
+        "text": "They precisely replace every abnormal allele",
+        "isCorrect": false,
+        "rationale": "Most gene therapy does not exchange an abnormal allele for a normal allele. This would require exact targeted mutation correction."
+      },
+      {
+        "text": "They naturally enter cells with genetic material",
+        "isCorrect": true,
+        "rationale": "Introducing genetic material into cells is a natural part of the viral life cycle, making viruses useful foundations for delivery vectors."
+      },
+      {
+        "text": "They permanently avoid all immune responses",
+        "isCorrect": false,
+        "rationale": "Viral vectors can be immunogenic, and adenoviral inflammation can worsen with repeated exposure. This would require a delivery system without immunogenicity."
+      },
+      {
+        "text": "They always infect only dividing cells",
+        "isCorrect": false,
+        "rationale": "The dividing-cell restriction applies to retroviral integration, whereas adenoviruses can infect nondividing cells. It would be correct only for the relevant retroviral target requirement."
+      },
+      {
+        "text": "They retain every pathogenic viral gene",
+        "isCorrect": false,
+        "rationale": "Pathogenesis genes are removed to prevent production of viral disease. This would describe an unmodified infectious virus rather than a therapy vector."
+      }
+    ]
+  },
+  {
+    "question": "A viral vector retains cellular entry and transgene-expression functions. Which additional modification is required to prevent production of the original viral disease?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why viruses are commonly used to create gene therapy vectors",
+    "options": [
+      {
+        "text": "Increase chromosomal insertion frequency",
+        "isCorrect": false,
+        "rationale": "Increasing insertion would not remove the cause of viral disease and could increase insertional mutagenesis. It would be considered if durable integration were the only objective."
+      },
+      {
+        "text": "Add multiple guide RNA sequences",
+        "isCorrect": false,
+        "rationale": "Multiple guide RNAs permit targeting of multiple genes but do not make a viral vector nonpathogenic. This would fit multiplex CRISPR editing."
+      },
+      {
+        "text": "Require active target-cell division",
+        "isCorrect": false,
+        "rationale": "A requirement for cell division is a retroviral integration constraint, not a safety modification. It would apply when selecting proliferating retroviral targets."
+      },
+      {
+        "text": "Remove viral pathogenesis genes",
+        "isCorrect": true,
+        "rationale": "Viral vectors are made noninfectious in the disease-producing sense by removing genes responsible for pathogenesis while retaining delivery and expression functions."
+      },
+      {
+        "text": "Promote inflammatory immune recognition",
+        "isCorrect": false,
+        "rationale": "Inflammatory recognition is an adverse feature rather than a protective vector modification. It would describe a complication associated with adenoviral exposure."
+      }
+    ]
+  },
+  {
+    "question": "A therapeutic gene must remain expressed through repeated divisions of a rapidly proliferating target population. Which vector property most directly supports this goal?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast retroviral vectors, adenovirus vectors, and non-viral vectors for gene therapy",
+    "options": [
+      {
+        "text": "Transient episomal persistence",
+        "isCorrect": false,
+        "rationale": "Episomal adenoviral DNA is rapidly eliminated, making treatment transient. It would fit a nonintegrating strategy in which repeated dosing was acceptable."
+      },
+      {
+        "text": "Inflammatory response induction",
+        "isCorrect": false,
+        "rationale": "Inflammation is a complication of adenoviral delivery and does not preserve expression. It would be expected with repeated adenoviral exposure."
+      },
+      {
+        "text": "Stable chromosomal integration",
+        "isCorrect": true,
+        "rationale": "Retroviral integration places the therapeutic gene in host chromosomal DNA, supporting persistent expression in an actively dividing target population."
+      },
+      {
+        "text": "Alternative nonviral entry",
+        "isCorrect": false,
+        "rationale": "Alternative entry is necessary for nonviral vectors but does not itself ensure persistence through division. It would fit a nonviral delivery requirement."
+      },
+      {
+        "text": "Rapid nuclear elimination",
+        "isCorrect": false,
+        "rationale": "Rapid elimination causes transient expression rather than durable expression. It would characterize adenoviral DNA after entry into the nucleus."
+      }
+    ]
+  },
+  {
+    "question": "A Cas9 complex binds a selected genomic site before cleavage. Which component determines the DNA sequence recognized by the complex?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how CRISPR/Cas9 can be used to modify genes, and the advantages and disadvantages of this system as it applies to potential use for gene therapy in humans",
+    "options": [
+      {
+        "text": "Supplied donor DNA",
+        "isCorrect": false,
+        "rationale": "Donor DNA provides a template for homologous recombination after cleavage but does not direct initial target recognition. It would be required for donor-directed sequence editing."
+      },
+      {
+        "text": "Engineered guide RNA",
+        "isCorrect": true,
+        "rationale": "The engineered guide RNA contains a sequence complementary to the target DNA and thereby directs the Cas9 nuclease to a specific site."
+      },
+      {
+        "text": "Adenoviral vector DNA",
+        "isCorrect": false,
+        "rationale": "Adenoviral DNA can carry genetic material but does not inherently determine CRISPR target specificity. It would be relevant if adenovirus served as the delivery vector."
+      },
+      {
+        "text": "Retroviral vector RNA",
+        "isCorrect": false,
+        "rationale": "Retroviral RNA is reverse transcribed during vector integration and is not the CRISPR targeting component. It would be relevant to retroviral gene delivery."
+      },
+      {
+        "text": "Target-cell chromosomal DNA",
+        "isCorrect": false,
+        "rationale": "Chromosomal DNA contains the target, but specificity is conferred by complementary guide RNA. It would be the substrate selected for cleavage."
+      }
+    ]
+  },
+  {
+    "question": "A researcher wants to disrupt an overexpressed mutant gene rather than restore its original sequence. Which combination best accomplishes this objective?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how CRISPR/Cas9 can be used to modify genes, and the advantages and disadvantages of this system as it applies to potential use for gene therapy in humans",
+    "options": [
+      {
+        "text": "Cas9 cleavage with donor-directed recombination",
+        "isCorrect": false,
+        "rationale": "Donor-directed recombination edits a sequence rather than preferentially producing disruptive indels. It would fit restoration of a mutant gene to a supplied sequence."
+      },
+      {
+        "text": "Adenoviral delivery with episomal retention",
+        "isCorrect": false,
+        "rationale": "Episomal retention provides transient transgene expression but does not itself disrupt the genomic target. It would fit temporary expression in nondividing cells."
+      },
+      {
+        "text": "Retroviral delivery with random integration",
+        "isCorrect": false,
+        "rationale": "Random integration adds DNA but does not specifically disable the overexpressed gene. It would fit stable augmentation in dividing cells."
+      },
+      {
+        "text": "Guide binding without nuclease cleavage",
+        "isCorrect": false,
+        "rationale": "Target recognition without cleavage does not initiate the error-prone repair described for gene disruption. It would identify the site without creating indels."
+      },
+      {
+        "text": "Cas9 cleavage with end joining",
+        "isCorrect": true,
+        "rationale": "Cas9 cleavage followed by nonhomologous end joining commonly creates indels that can eliminate the function of an overexpressed mutant gene."
+      }
+    ]
+  },
+  {
+    "question": "Which relationship explains why repeated administration is both necessary and increasingly problematic for an adenoviral treatment?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast retroviral vectors, adenovirus vectors, and non-viral vectors for gene therapy",
+    "options": [
+      {
+        "text": "Transient persistence with increasing inflammation",
+        "isCorrect": true,
+        "rationale": "Adenoviral DNA is rapidly eliminated from the nucleus, requiring repeated treatment, while inflammatory responses increase with repeated exposure."
+      },
+      {
+        "text": "Stable integration with increasing mutagenesis",
+        "isCorrect": false,
+        "rationale": "Stable integration and insertional mutagenesis are concerns for insertional vectors, not nonintegrating adenovirus. This would fit repeated consequences of chromosomal insertion."
+      },
+      {
+        "text": "Poor entry with decreasing expression",
+        "isCorrect": false,
+        "rationale": "The defining issue is episomal loss rather than failure of adenovirus to enter cells. This would fit a vector with inadequate cellular delivery."
+      },
+      {
+        "text": "Required division with progressive inflammation",
+        "isCorrect": false,
+        "rationale": "Adenovirus can infect nondividing cells, so target-cell division is not required. This would require a retroviral integration constraint plus an inflammatory vector."
+      },
+      {
+        "text": "Random integration with transient expression",
+        "isCorrect": false,
+        "rationale": "Random integration tends to support persistence rather than transient expression. This would fit an integrating vector only if expression were subsequently lost for another reason."
+      }
+    ]
+  },
+  {
+    "question": "Which feature makes gene augmentation generally less suitable for a disease caused by an actively harmful gene product?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why the most common gene therapy (gene augmentation) would work best for autosomal recessive diseases",
+    "options": [
+      {
+        "text": "It requires germ-cell modification",
+        "isCorrect": false,
+        "rationale": "Gene augmentation can be performed in somatic cells and does not require germline modification. This would describe a heritable intervention involving germ cells."
+      },
+      {
+        "text": "It destroys all targeted cells",
+        "isCorrect": false,
+        "rationale": "Cell destruction characterizes targeted killing, not augmentation. It would be correct if a toxic transgene were used against cancer cells."
+      },
+      {
+        "text": "It prevents cellular DNA entry",
+        "isCorrect": false,
+        "rationale": "Augmentation depends on successful delivery of a normal gene and does not inherently prevent DNA entry. This would describe delivery failure."
+      },
+      {
+        "text": "It leaves harmful expression intact",
+        "isCorrect": true,
+        "rationale": "Adding a normal copy does not suppress an actively harmful disease allele, so targeted inhibition or correction may be required instead."
+      },
+      {
+        "text": "It eliminates normal protein production",
+        "isCorrect": false,
+        "rationale": "Augmentation is intended to increase normal product rather than eliminate it. This would fit a disruptive strategy directed against the normal allele."
+      }
+    ]
+  },
+  {
+    "question": "In the treatment strategy for adenosine deaminase deficiency, why were patient lymphocytes compatible targets for the selected viral vector?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how gene therapy was used in the case of ADA deficiency, and the results and complications",
+    "options": [
+      {
+        "text": "They remained permanently nondividing",
+        "isCorrect": false,
+        "rationale": "Retroviral integration requires dividing cells, so permanent nondivision would prevent the intended integration. This would favor an adenoviral target instead."
+      },
+      {
+        "text": "They secreted toxic transgenes",
+        "isCorrect": false,
+        "rationale": "The lymphocytes expressed normal adenosine deaminase rather than a toxic product. This would fit targeted killing of selected cells."
+      },
+      {
+        "text": "They could support retroviral integration",
+        "isCorrect": true,
+        "rationale": "The isolated lymphocytes could be transfected ex vivo with a retroviral vector, allowing reverse-transcribed vector DNA to integrate into their chromosomes."
+      },
+      {
+        "text": "They transmitted edits to offspring",
+        "isCorrect": false,
+        "rationale": "Lymphocytes are somatic cells and do not transmit modifications to offspring. This would require germ-cell modification."
+      },
+      {
+        "text": "They retained episomal adenoviral DNA",
+        "isCorrect": false,
+        "rationale": "The treatment used chromosomal integration by a retroviral vector rather than episomal adenoviral retention. This would fit transient treatment of nondividing cells."
+      }
+    ]
+  },
+  {
+    "question": "A child has severe susceptibility to infection with markedly reduced T and B lymphocytes. Testing identifies an autosomal recessive enzyme deficiency that inhibits nucleotide metabolism and cell division. Which treatment sequence most directly addresses the disorder?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how gene therapy was used in the case of ADA deficiency, and the results and complications",
+    "options": [
+      {
+        "text": "Inject adenovirus directly into germ cells",
+        "isCorrect": false,
+        "rationale": "This would create a germline intervention and does not reproduce the established somatic lymphocyte strategy. It would fit an animal germline experiment using direct delivery."
+      },
+      {
+        "text": "Deliver toxic genes into circulating lymphocytes",
+        "isCorrect": false,
+        "rationale": "Toxic genes would destroy the cells whose immune function must be restored. This would fit targeted killing of malignant lymphocytes."
+      },
+      {
+        "text": "Suppress enzyme transcription within isolated lymphocytes",
+        "isCorrect": false,
+        "rationale": "The disorder results from enzyme deficiency, so further suppression would worsen the defect. It would fit harmful enzyme overexpression."
+      },
+      {
+        "text": "Modify isolated lymphocytes and reinfuse them",
+        "isCorrect": true,
+        "rationale": "The ADA strategy isolates patient lymphocytes, introduces a normal ADA gene with a retroviral vector, and reinfuses the transformed cells to restore enzyme expression."
+      },
+      {
+        "text": "Remove lymphocytes and inhibit DNA replication",
+        "isCorrect": false,
+        "rationale": "DNA replication is already inhibited by the enzyme deficiency, and further inhibition would not restore immunity. It would fit a strategy intended to stop proliferation."
+      }
+    ]
+  },
+  {
+    "question": "A patient receives genetically modified lymphocytes that regain production of a missing metabolic enzyme. Years later, a new malignant blood-cell population develops. Which treatment feature most plausibly contributed to this complication?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how gene therapy was used in the case of ADA deficiency, and the results and complications",
+    "options": [
+      {
+        "text": "Loss of episomal adenoviral DNA",
+        "isCorrect": false,
+        "rationale": "The ADA strategy used an integrating retroviral vector rather than transient adenoviral DNA. This would explain loss of expression after adenoviral treatment."
+      },
+      {
+        "text": "Random retroviral chromosomal insertion",
+        "isCorrect": true,
+        "rationale": "Retroviral insertion can alter an essential gene and produce insertional mutagenesis, consistent with leukemia occurring after treatment."
+      },
+      {
+        "text": "Failure of guide RNA hybridization",
+        "isCorrect": false,
+        "rationale": "The treatment did not depend on CRISPR guide RNA targeting. This would produce failure of site-specific Cas9 cleavage."
+      },
+      {
+        "text": "Repeated adenoviral inflammatory exposure",
+        "isCorrect": false,
+        "rationale": "Repeated adenoviral exposure causes increasing inflammation, not the insertion-associated leukemia described here. It would fit a repeatedly administered adenoviral therapy."
+      },
+      {
+        "text": "Donor-directed homologous gene repair",
+        "isCorrect": false,
+        "rationale": "The treatment added a normal gene through retroviral integration rather than precise homologous repair. This would fit targeted mutation correction with donor DNA."
+      }
+    ]
+  },
+  {
+    "question": "A patient has a disorder driven by excessive production from a mutated gene. Investigators want to introduce a site-specific break and disable the gene through error-prone repair. Which intervention best matches this goal?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how CRISPR/Cas9 can be used to modify genes, and the advantages and disadvantages of this system as it applies to potential use for gene therapy in humans",
+    "options": [
+      {
+        "text": "Normal-gene augmentation using retroviral integration",
+        "isCorrect": false,
+        "rationale": "Augmentation adds a normal copy but leaves the overexpressed mutant gene active. It would fit a recessive loss-of-function disorder."
+      },
+      {
+        "text": "Transient expression using episomal adenovirus",
+        "isCorrect": false,
+        "rationale": "Transient transgene expression does not specifically disable the genomic disease gene. It would fit temporary expression in nondividing cells."
+      },
+      {
+        "text": "Exact correction using donor-directed recombination",
+        "isCorrect": false,
+        "rationale": "Donor-directed recombination edits the sequence instead of disabling it through error-prone repair. It would fit restoration of a mutant sequence."
+      },
+      {
+        "text": "Toxic transgene delivery into target cells",
+        "isCorrect": false,
+        "rationale": "A toxic transgene kills selected cells rather than specifically disrupting the overexpressed gene. It would fit targeted killing in cancer."
+      },
+      {
+        "text": "Targeted Cas9 cleavage followed by end joining",
+        "isCorrect": true,
+        "rationale": "Guide-directed Cas9 cleavage followed by nonhomologous end joining produces indels that can eliminate the function of the overexpressed gene."
+      }
+    ]
+  }
+]
