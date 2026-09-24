@@ -1,0 +1,994 @@
+[
+  {
+    "question": "Which pedigree feature most strongly supports an X-linked recessive inheritance pattern?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Recognize and identify X-linked recessive and mitochondrial inheritance pedigrees",
+    "options": [
+      {
+        "text": "Absent father-to-son transmission",
+        "isCorrect": true,
+        "rationale": "Sons receive their X chromosome from their mother, so an affected father cannot transmit an X-linked mutant allele to a son."
+      },
+      {
+        "text": "Affected fathers transmit universally",
+        "isCorrect": false,
+        "rationale": "Universal paternal transmission is incompatible with X-linked recessive inheritance. This would require a different inheritance mechanism in which fathers transmit the causal material to every child."
+      },
+      {
+        "text": "Affected mothers transmit exclusively",
+        "isCorrect": false,
+        "rationale": "Exclusive maternal transmission characterizes mitochondrial inheritance. This would be correct if affected mothers transmitted the condition to offspring while affected fathers transmitted it to none."
+      },
+      {
+        "text": "Affected females predominate twofold",
+        "isCorrect": false,
+        "rationale": "An approximately 2:1 female predominance supports true X-linked dominant inheritance. This would be correct if one mutant copy produced the phenotype and affected females outnumbered affected males."
+      },
+      {
+        "text": "Affected fathers transmit maternally",
+        "isCorrect": false,
+        "rationale": "A father cannot transmit an allele maternally. This choice would require the transmitting parent to be the mother rather than the father."
+      }
+    ]
+  },
+  {
+    "question": "Which molecule coats the chromosome selected for transcriptional silencing in female embryonic cells?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain why X inactivation is necessary, the outlined characteristics and how they effect the genetics of X-linked disorders, and how it happens at the molecular level (including XIST)",
+    "options": [
+      {
+        "text": "Factor VIII protein",
+        "isCorrect": false,
+        "rationale": "Factor VIII participates in blood clotting rather than chromosome silencing. This would be relevant if the question concerned the deficient product in hemophilia A."
+      },
+      {
+        "text": "XIST noncoding RNA",
+        "isCorrect": true,
+        "rationale": "XIST is transcribed from the inactive X chromosome and functions as a long noncoding RNA that coats that chromosome."
+      },
+      {
+        "text": "Dystrophin cytoskeletal protein",
+        "isCorrect": false,
+        "rationale": "Dystrophin is a cytoskeletal protein affected in Duchenne and Becker muscular dystrophy. This would be correct if the question asked for the shared defective protein in those disorders."
+      },
+      {
+        "text": "FMR1 mutant transcript",
+        "isCorrect": false,
+        "rationale": "FMR1 is associated with Fragile X syndrome but is not the chromosome-coating silencing molecule. This would be relevant if the question concerned expression of the Fragile X mutant gene."
+      },
+      {
+        "text": "Factor IX protein",
+        "isCorrect": false,
+        "rationale": "Factor IX is the deficient clotting factor in hemophilia B. This would be correct if the question asked for the molecular defect underlying hemophilia B."
+      }
+    ]
+  },
+  {
+    "question": "Which disorder is associated with rapid, irreversible loss of central vision beginning during the third decade?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Recite the high yield diseases that are x-linked recessive and mitochondrial, and know the symptoms for each in cases where they were provided",
+    "options": [
+      {
+        "text": "Fragile X syndrome",
+        "isCorrect": false,
+        "rationale": "Fragile X syndrome is associated with intellectual disability, autism, characteristic facial findings, and macro-orchidism. This would be correct if those features replaced the visual loss."
+      },
+      {
+        "text": "Duchenne muscular dystrophy",
+        "isCorrect": false,
+        "rationale": "Duchenne muscular dystrophy causes early progressive muscle wasting rather than central visual loss. This would be correct if weakness began by approximately age 5 and progressed rapidly."
+      },
+      {
+        "text": "Leber hereditary optic neuropathy",
+        "isCorrect": true,
+        "rationale": "Leber hereditary optic neuropathy causes optic atrophy with rapid, irreversible central-field vision loss, typically beginning in the third decade."
+      },
+      {
+        "text": "Myoclonic epilepsy ragged-red fiber syndrome",
+        "isCorrect": false,
+        "rationale": "MERRF is associated with epilepsy, dementia, ataxia, and myopathy. This would be correct if those neurologic and muscular findings replaced the isolated central visual loss."
+      },
+      {
+        "text": "Becker muscular dystrophy",
+        "isCorrect": false,
+        "rationale": "Becker muscular dystrophy causes a milder, later-onset muscular dystrophy. This would be correct if progressive weakness appeared around age 11."
+      }
+    ]
+  },
+  {
+    "question": "Which clotting factor is defective in hemophilia B?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "For hemophilia A and B, know the inheritance pattern, the molecular defect, the basic pathology (symptoms), why there has been such a high incidence of death from HIV, and what is now done to combat that",
+    "options": [
+      {
+        "text": "Clotting factor VIII",
+        "isCorrect": false,
+        "rationale": "Factor VIII is defective in hemophilia A. This would be correct if testing identified hemophilia A rather than hemophilia B."
+      },
+      {
+        "text": "Clotting factor XIST",
+        "isCorrect": false,
+        "rationale": "XIST is a noncoding RNA involved in X inactivation, not a clotting factor. This would be relevant if the question concerned chromosome silencing."
+      },
+      {
+        "text": "Clotting factor FMR1",
+        "isCorrect": false,
+        "rationale": "FMR1 is associated with Fragile X syndrome and is not a clotting factor. This would be relevant if the question concerned the gene implicated in Fragile X syndrome."
+      },
+      {
+        "text": "Clotting factor IX",
+        "isCorrect": true,
+        "rationale": "Hemophilia B results from a defect in clotting factor IX, whereas hemophilia A results from a factor VIII defect."
+      },
+      {
+        "text": "Clotting factor dystrophin",
+        "isCorrect": false,
+        "rationale": "Dystrophin is a cytoskeletal protein rather than a clotting factor. This would be relevant if the question concerned Duchenne or Becker muscular dystrophy."
+      }
+    ]
+  },
+  {
+    "question": "A carrier mother and an unaffected father have a son. What is the son's probability of inheriting the X-linked recessive disease?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Determine the recurrence risk of x-linked recessive diseases given the genotype of the parents",
+    "options": [
+      {
+        "text": "Zero percent risk",
+        "isCorrect": false,
+        "rationale": "A carrier mother can transmit either of her X chromosomes to a son. Zero risk would require the mother to lack the mutant allele."
+      },
+      {
+        "text": "Twenty-five percent risk",
+        "isCorrect": false,
+        "rationale": "Twenty-five percent can describe the proportion of all children who are affected sons when sex is not predetermined. It would be correct if the question asked about a child of unspecified sex."
+      },
+      {
+        "text": "Seventy-five percent risk",
+        "isCorrect": false,
+        "rationale": "A carrier mother does not transmit her mutant X chromosome to three quarters of sons. This would require a transmission pattern not described for an X-linked recessive allele."
+      },
+      {
+        "text": "One hundred percent risk",
+        "isCorrect": false,
+        "rationale": "A heterozygous carrier mother also possesses a normal X chromosome. This would require the mother to transmit a mutant X chromosome to every son."
+      },
+      {
+        "text": "Fifty percent risk",
+        "isCorrect": true,
+        "rationale": "A son receives his only X chromosome from his mother, who has an equal chance of transmitting her normal or mutant X chromosome."
+      }
+    ]
+  },
+  {
+    "question": "A heterozygous female has some cell populations expressing her maternal X chromosome and others expressing her paternal X chromosome. Which property explains why each population maintains its expression pattern?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why X inactivation is necessary, the outlined characteristics and how they effect the genetics of X-linked disorders, and how it happens at the molecular level (including XIST)",
+    "options": [
+      {
+        "text": "Fixed somatic inheritance",
+        "isCorrect": true,
+        "rationale": "Once an X chromosome is inactivated, its status is fixed in somatic descendants, producing clonal cell populations with the same inactive X."
+      },
+      {
+        "text": "Universal paternal selection",
+        "isCorrect": false,
+        "rationale": "X inactivation is random rather than universally directed toward the paternal chromosome. This would be correct only if every cell selected the paternal X."
+      },
+      {
+        "text": "Complete gene silencing",
+        "isCorrect": false,
+        "rationale": "X inactivation is incomplete because approximately 10% of genes remain transcriptionally available. Complete silencing would require all genes on the inactive X to be unavailable."
+      },
+      {
+        "text": "Late embryonic initiation",
+        "isCorrect": false,
+        "rationale": "X inactivation occurs early in female embryonic development. This would be correct if the process began only during a later developmental period."
+      },
+      {
+        "text": "Random mitochondrial segregation",
+        "isCorrect": false,
+        "rationale": "Random mitochondrial segregation helps produce heteroplasmy, not stable X-expression patterns in somatic clones. This would be correct if variable mutant mtDNA distribution were being tested."
+      }
+    ]
+  },
+  {
+    "question": "A deletion preserves the dystrophin reading frame and produces an abnormal protein with residual function. Which phenotype is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For Duchenne and Becker muscular dystrophy, know the inheritance pattern, the molecular defect, the molecular reason that Becker is less severe, and the basic symptoms",
+    "options": [
+      {
+        "text": "Hemophilia A phenotype",
+        "isCorrect": false,
+        "rationale": "Hemophilia A results from a factor VIII defect rather than a dystrophin deletion. This would be correct if the molecular finding involved factor VIII."
+      },
+      {
+        "text": "Becker muscular dystrophy",
+        "isCorrect": true,
+        "rationale": "An in-frame deletion preserves a partially functional dystrophin protein, producing the milder Becker muscular dystrophy phenotype."
+      },
+      {
+        "text": "Fragile X syndrome",
+        "isCorrect": false,
+        "rationale": "Fragile X syndrome involves a trinucleotide repeat expansion in a 5-prime noncoding region. This would be correct if that expansion and an intellectual disability phenotype were present."
+      },
+      {
+        "text": "Duchenne muscular dystrophy",
+        "isCorrect": false,
+        "rationale": "Duchenne muscular dystrophy usually results from a frameshift insertion or deletion that disrupts dystrophin production. This would be correct if the deletion did not preserve the reading frame."
+      },
+      {
+        "text": "Leber optic neuropathy",
+        "isCorrect": false,
+        "rationale": "Leber hereditary optic neuropathy is a mitochondrial disorder causing central visual loss. This would be correct if the presentation involved optic atrophy rather than a dystrophin defect."
+      }
+    ]
+  },
+  {
+    "question": "An affected man and an unaffected woman have children. Their daughters may inherit his mutant allele, but their sons cannot. Which parental contribution accounts for this difference?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recognize and identify X-linked recessive and mitochondrial inheritance pedigrees",
+    "options": [
+      {
+        "text": "Paternal X reaches daughters",
+        "isCorrect": true,
+        "rationale": "A father transmits his X chromosome to daughters and his Y chromosome to sons, preventing father-to-son transmission of an X-linked allele."
+      },
+      {
+        "text": "Paternal X reaches sons",
+        "isCorrect": false,
+        "rationale": "Sons receive their paternal Y chromosome rather than their paternal X chromosome. This would be correct only if sons inherited an X chromosome from their father."
+      },
+      {
+        "text": "Maternal Y reaches daughters",
+        "isCorrect": false,
+        "rationale": "The mother does not possess or transmit a Y chromosome. This would require a maternal Y chromosome, which is incompatible with the parental genotypes described."
+      },
+      {
+        "text": "Paternal mitochondria reach daughters",
+        "isCorrect": false,
+        "rationale": "Sperm do not pass mitochondria to the egg. This would require paternal mitochondrial transmission, which does not occur in the described inheritance model."
+      },
+      {
+        "text": "Maternal mitochondria reach sons",
+        "isCorrect": false,
+        "rationale": "Maternal mitochondria do reach sons, but this does not explain inheritance of a paternal X-linked allele by daughters. This would be relevant to mitochondrial inheritance."
+      }
+    ]
+  },
+  {
+    "question": "An affected mother has children with widely different severity of the same mitochondrial disorder. Which process best explains this variation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain what is meant by heteroplasmy and how this complicates the presentation of mitochondrial disorders and why tissues with a high ATP demand are going to be most affected",
+    "options": [
+      {
+        "text": "Fixed paternal X silencing",
+        "isCorrect": false,
+        "rationale": "Fixed X inactivation concerns somatic expression of X chromosomes and does not determine mutant mtDNA proportions. This would be relevant if variable expression of an X-linked allele were described."
+      },
+      {
+        "text": "Complete maternal gene penetrance",
+        "isCorrect": false,
+        "rationale": "Uniform penetrance would not explain markedly different severity among children. This would fit if all offspring expressed an equivalent phenotype."
+      },
+      {
+        "text": "Random mutant mtDNA segregation",
+        "isCorrect": true,
+        "rationale": "Multiple mtDNA copies segregate randomly, giving offspring and tissues variable mixtures of normal and mutant mtDNA."
+      },
+      {
+        "text": "Universal paternal mitochondrial transmission",
+        "isCorrect": false,
+        "rationale": "Paternal mitochondria are not passed through fertilization in this inheritance model. This would require sperm to contribute mitochondria to the offspring."
+      },
+      {
+        "text": "Complete inactive X transcription",
+        "isCorrect": false,
+        "rationale": "The inactive X is mostly unavailable for transcription, and its activity does not explain mitochondrial heterogeneity. This would concern X-chromosome regulation rather than mtDNA segregation."
+      }
+    ]
+  },
+  {
+    "question": "A female heterozygote develops manifestations of an X-linked recessive condition despite having one normal allele. Which event best accounts for her phenotype?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why X inactivation is necessary, the outlined characteristics and how they effect the genetics of X-linked disorders, and how it happens at the molecular level (including XIST)",
+    "options": [
+      {
+        "text": "Preferential mutant X silencing",
+        "isCorrect": false,
+        "rationale": "Silencing the mutant X would favor expression of the normal allele and reduce symptoms. This would fit an asymptomatic or minimally affected carrier."
+      },
+      {
+        "text": "Complete escape from silencing",
+        "isCorrect": false,
+        "rationale": "Only about 10% of genes generally escape X inactivation, and complete escape would not represent the unfavorable lyonization described. This would require the relevant gene to remain active on both X chromosomes."
+      },
+      {
+        "text": "Paternal mitochondrial transmission",
+        "isCorrect": false,
+        "rationale": "Paternal mitochondrial transmission does not occur and cannot explain expression of an X-linked allele. This would require mitochondrial inheritance from the father."
+      },
+      {
+        "text": "Preferential normal X silencing",
+        "isCorrect": true,
+        "rationale": "Extremely unfavorable lyonization can inactivate the normal X chromosome in a large proportion of cells, permitting greater expression of the mutant allele."
+      },
+      {
+        "text": "Reading-frame dystrophin preservation",
+        "isCorrect": false,
+        "rationale": "Reading-frame preservation explains the milder Becker phenotype, not symptomatic expression in a general female heterozygote. This would fit an in-frame dystrophin deletion."
+      }
+    ]
+  },
+  {
+    "question": "A disorder affects both sexes, is transmitted by affected women, and is never transmitted by affected men. Which cellular event establishes this pedigree pattern?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why mutations on mitochondrial DNA are inherited exclusively through the mother",
+    "options": [
+      {
+        "text": "Maternal X silencing",
+        "isCorrect": false,
+        "rationale": "Maternal X silencing would alter X-linked expression but would not produce exclusive maternal transmission to both sexes. This would be relevant to lyonization."
+      },
+      {
+        "text": "Absent sperm mitochondrial contribution",
+        "isCorrect": true,
+        "rationale": "Sperm do not pass their mitochondria to the egg, so mtDNA mutations are inherited exclusively through the mother."
+      },
+      {
+        "text": "Paternal X transmission",
+        "isCorrect": false,
+        "rationale": "Paternal X transmission occurs only to daughters and therefore cannot explain transmission to both sexes. This would fit inheritance of a paternal X-linked allele by daughters."
+      },
+      {
+        "text": "Complete mtDNA homoplasmy",
+        "isCorrect": false,
+        "rationale": "A uniform mtDNA population could affect expression but does not establish maternal-only inheritance. This would be relevant if all mtDNA copies were identical."
+      },
+      {
+        "text": "Random embryonic lyonization",
+        "isCorrect": false,
+        "rationale": "Lyonization concerns X-chromosome dosage compensation in females. This would explain mosaic X-linked expression rather than maternal mtDNA transmission."
+      }
+    ]
+  },
+  {
+    "question": "Two patients have clinically indistinguishable inherited bleeding disorders. Testing shows different deficient proteins. Which pairing correctly distinguishes their diagnoses?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "For hemophilia A and B, know the inheritance pattern, the molecular defect, the basic pathology (symptoms), why there has been such a high incidence of death from HIV, and what is now done to combat that",
+    "options": [
+      {
+        "text": "A-factor IX; B-factor VIII",
+        "isCorrect": false,
+        "rationale": "This pairing reverses the two deficient factors. It would be correct if the diagnostic labels A and B were exchanged."
+      },
+      {
+        "text": "A-dystrophin; B-factor VIII",
+        "isCorrect": false,
+        "rationale": "Dystrophin defects cause muscular dystrophy rather than hemophilia. This would require the first patient to have a muscular dystrophy phenotype."
+      },
+      {
+        "text": "A-factor VIII; B-factor IX",
+        "isCorrect": true,
+        "rationale": "Hemophilia A is caused by factor VIII deficiency, whereas hemophilia B is caused by factor IX deficiency."
+      },
+      {
+        "text": "A-XIST; B-factor IX",
+        "isCorrect": false,
+        "rationale": "XIST mediates X inactivation and is not the deficient clotting product in hemophilia A. This would be relevant if the first condition involved chromosome silencing."
+      },
+      {
+        "text": "A-FMR1; B-factor VIII",
+        "isCorrect": false,
+        "rationale": "FMR1 is associated with Fragile X syndrome rather than a bleeding disorder. This would require the first patient to have the Fragile X phenotype."
+      }
+    ]
+  },
+  {
+    "question": "A female carries a mutant FMR1 gene but has a milder and less predictable phenotype than an affected male relative. Which concept best accounts for this difference?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why Fragile X is considered X-linked dominant with reduced penetrance in females, and why X inactivation confuses the use of the terms “dominant” and “recessive” at the cellular level",
+    "options": [
+      {
+        "text": "Variable normal X inactivation",
+        "isCorrect": true,
+        "rationale": "Random lyonization can produce different proportions or lineages of cells expressing the mutant FMR1 allele, contributing to reduced penetrance and variable severity."
+      },
+      {
+        "text": "Uniform mutant X inactivation",
+        "isCorrect": false,
+        "rationale": "Uniform silencing of the mutant X would consistently reduce mutant expression rather than produce broad variability. This would fit a uniformly protected carrier state."
+      },
+      {
+        "text": "Exclusive paternal mitochondrial inheritance",
+        "isCorrect": false,
+        "rationale": "Mitochondrial inheritance is maternal, not paternal, and does not regulate FMR1 expression. This would require the causal mutation to be in paternally inherited mtDNA."
+      },
+      {
+        "text": "Complete dystrophin reading-frame loss",
+        "isCorrect": false,
+        "rationale": "Loss of the dystrophin reading frame explains Duchenne muscular dystrophy. This would be correct if the phenotype were early progressive muscle wasting."
+      },
+      {
+        "text": "Uniform inactive X transcription",
+        "isCorrect": false,
+        "rationale": "The inactive X is mostly unavailable for transcription rather than uniformly transcribed. This would require the mutant gene to escape inactivation consistently in every cell."
+      }
+    ]
+  },
+  {
+    "question": "A cell contains hundreds of mitochondrial genomes, but symptoms appear only after mutant genomes exceed a critical proportion. Which paired concepts describe this situation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain what is meant by heteroplasmy and how this complicates the presentation of mitochondrial disorders and why tissues with a high ATP demand are going to be most affected",
+    "options": [
+      {
+        "text": "Lyonization and fixed inheritance",
+        "isCorrect": false,
+        "rationale": "Lyonization and fixation describe X-chromosome inactivation in somatic cell lineages. This would be correct if the question concerned stable X-expression mosaics."
+      },
+      {
+        "text": "Hemizygosity and paternal transmission",
+        "isCorrect": false,
+        "rationale": "Hemizygosity explains expression of X-linked mutations in males, while paternal transmission does not describe mtDNA inheritance. This would fit an X-linked pedigree question."
+      },
+      {
+        "text": "Frameshift and complete dysfunction",
+        "isCorrect": false,
+        "rationale": "A frameshift can disrupt dystrophin but does not describe mixed mtDNA populations or symptom onset at a mutant proportion. This would fit Duchenne muscular dystrophy."
+      },
+      {
+        "text": "Heteroplasmy and threshold expression",
+        "isCorrect": true,
+        "rationale": "Heteroplasmy is the mixture of normal and mutant mtDNA, and symptoms emerge when the mutant proportion reaches a functional threshold."
+      },
+      {
+        "text": "Hypermethylation and histone acetylation",
+        "isCorrect": false,
+        "rationale": "X inactivation involves hypermethylation and histone deacetylation, not histone acetylation. This would require a question about chromatin-mediated X silencing with deacetylation."
+      }
+    ]
+  },
+  {
+    "question": "A normal X chromosome must offset the transcriptional contribution of a second X chromosome in female cells. Which combined changes most directly accomplish this?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain why X inactivation is necessary, the outlined characteristics and how they effect the genetics of X-linked disorders, and how it happens at the molecular level (including XIST)",
+    "options": [
+      {
+        "text": "XIST coating, methylation, histone deacetylation",
+        "isCorrect": true,
+        "rationale": "XIST coats the inactive X, while DNA hypermethylation, histone deacetylation, and condensation make most genes unavailable for transcription."
+      },
+      {
+        "text": "FMR1 expansion, demethylation, chromatin relaxation",
+        "isCorrect": false,
+        "rationale": "FMR1 repeat expansion is associated with Fragile X syndrome, while demethylation and relaxation oppose the described silencing process. This would require an activating rather than inactivating chromatin state."
+      },
+      {
+        "text": "Dystrophin deletion, methylation, chromatin condensation",
+        "isCorrect": false,
+        "rationale": "A dystrophin deletion causes muscular dystrophy and does not initiate chromosome-wide X inactivation. This would be relevant if the question concerned dystrophin pathology."
+      },
+      {
+        "text": "Factor infusion, screening, viral elimination",
+        "isCorrect": false,
+        "rationale": "Factor infusion and donor screening concern hemophilia treatment, and concentration historically did not eliminate viruses. This would fit a question about reducing treatment-associated infection."
+      },
+      {
+        "text": "mtDNA segregation, condensation, histone acetylation",
+        "isCorrect": false,
+        "rationale": "Random mtDNA segregation produces heteroplasmy, while histone acetylation is not the silencing change described. This would require a mitochondrial variation question rather than X inactivation."
+      }
+    ]
+  },
+  {
+    "question": "A 4-year-old boy has progressive muscle wasting and cognitive impairment after appearing normal at birth. Genetic analysis identifies an insertion that disrupts the coding frame of a large cytoskeletal gene. Which diagnosis is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For Duchenne and Becker muscular dystrophy, know the inheritance pattern, the molecular defect, the molecular reason that Becker is less severe, and the basic symptoms",
+    "options": [
+      {
+        "text": "Becker muscular dystrophy",
+        "isCorrect": false,
+        "rationale": "Becker muscular dystrophy generally involves an in-frame mutation producing partially functional dystrophin and later, milder disease. It would fit if onset were around age 11 and the reading frame were preserved."
+      },
+      {
+        "text": "Duchenne muscular dystrophy",
+        "isCorrect": true,
+        "rationale": "Early progressive weakness plus a frameshift mutation in the dystrophin gene supports Duchenne muscular dystrophy."
+      },
+      {
+        "text": "Leber hereditary optic neuropathy",
+        "isCorrect": false,
+        "rationale": "Leber hereditary optic neuropathy causes rapid central-field vision loss and optic atrophy. It would fit if the principal finding were irreversible visual loss in the third decade."
+      },
+      {
+        "text": "Myoclonic epilepsy ragged-red fiber syndrome",
+        "isCorrect": false,
+        "rationale": "MERRF produces epilepsy, dementia, ataxia, and myopathy rather than the characteristic early dystrophin-related course. It would fit if those neurologic findings dominated."
+      },
+      {
+        "text": "Fragile X syndrome",
+        "isCorrect": false,
+        "rationale": "Fragile X syndrome is caused by a trinucleotide repeat expansion in a 5-prime noncoding region. It would fit if the molecular finding were that repeat expansion rather than a frameshift insertion."
+      }
+    ]
+  },
+  {
+    "question": "A 12-year-old boy has progressive weakness that began at age 11. Testing identifies a dystrophin deletion involving a number of nucleotides divisible by three. Which mechanism best explains his relatively mild course?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For Duchenne and Becker muscular dystrophy, know the inheritance pattern, the molecular defect, the molecular reason that Becker is less severe, and the basic symptoms",
+    "options": [
+      {
+        "text": "Complete dystrophin transcriptional silencing",
+        "isCorrect": false,
+        "rationale": "Complete silencing would eliminate dystrophin function and would not explain a milder course. This would better fit a severe loss-of-function state."
+      },
+      {
+        "text": "Factor VIII activity preservation",
+        "isCorrect": false,
+        "rationale": "Factor VIII activity concerns hemophilia A rather than dystrophin-related disease. This would be relevant if the patient had prolonged bleeding."
+      },
+      {
+        "text": "Random normal X inactivation",
+        "isCorrect": false,
+        "rationale": "X inactivation can modify disease expression in heterozygous females but does not explain a milder phenotype in a hemizygous boy. This would fit a symptomatic female carrier."
+      },
+      {
+        "text": "Partial dystrophin function preservation",
+        "isCorrect": true,
+        "rationale": "An in-frame deletion produces an abnormal but partially functional dystrophin protein, explaining the later and milder Becker phenotype."
+      },
+      {
+        "text": "Mutant mtDNA threshold reduction",
+        "isCorrect": false,
+        "rationale": "A mutant mtDNA threshold concerns mitochondrial disease severity, not dystrophin function. This would fit variable expression of a mitochondrial disorder."
+      }
+    ]
+  },
+  {
+    "question": "A 6-year-old boy has prolonged bleeding after a minor procedure, easy bruising, and recurrent joint swelling. His maternal uncle had similar findings. Which treatment best replaces the primary deficient product while minimizing the historical infectious risk?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For hemophilia A and B, know the inheritance pattern, the molecular defect, the basic pathology (symptoms), why there has been such a high incidence of death from HIV, and what is now done to combat that",
+    "options": [
+      {
+        "text": "Recombinant clotting factor infusion",
+        "isCorrect": true,
+        "rationale": "Factor replacement treats the clotting deficiency, and recombinant products reduce the infectious risk associated with factors concentrated from human plasma."
+      },
+      {
+        "text": "Unscreened plasma factor infusion",
+        "isCorrect": false,
+        "rationale": "Plasma-derived concentrates historically transmitted HIV because concentration did not eliminate viruses. This would be considered only if recombinant products and screened plasma were unavailable, but it would not minimize the stated risk."
+      },
+      {
+        "text": "XIST noncoding RNA infusion",
+        "isCorrect": false,
+        "rationale": "XIST regulates X inactivation and does not replace a deficient clotting factor. This would be relevant to chromosome silencing rather than bleeding management."
+      },
+      {
+        "text": "Dystrophin protein replacement infusion",
+        "isCorrect": false,
+        "rationale": "Dystrophin is defective in Duchenne and Becker muscular dystrophy, not hemophilia. This would require progressive muscular weakness rather than bleeding and hemarthrosis."
+      },
+      {
+        "text": "Mutant mtDNA threshold reduction",
+        "isCorrect": false,
+        "rationale": "The mtDNA threshold concept applies to mitochondrial disorders and does not replace a clotting factor. This would fit a heteroplasmic mitochondrial disease."
+      }
+    ]
+  },
+  {
+    "question": "A boy receiving repeated treatment for an inherited bleeding disorder later acquires a blood-borne viral infection. Which historical treatment feature most directly created this risk?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For hemophilia A and B, know the inheritance pattern, the molecular defect, the basic pathology (symptoms), why there has been such a high incidence of death from HIV, and what is now done to combat that",
+    "options": [
+      {
+        "text": "Recombinant factor production",
+        "isCorrect": false,
+        "rationale": "Recombinant factors are replacing blood-derived factors because they are the safer treatment method. This would be correct if the question asked which approach reduces viral transmission."
+      },
+      {
+        "text": "Early embryonic X inactivation",
+        "isCorrect": false,
+        "rationale": "X inactivation affects gene expression in female cells and does not introduce blood-borne viruses during therapy. This would be relevant to symptomatic female carriers."
+      },
+      {
+        "text": "Random mitochondrial DNA segregation",
+        "isCorrect": false,
+        "rationale": "Random mtDNA segregation produces heteroplasmy and variable mitochondrial disease. This would be relevant if the presentation varied by ATP-demanding tissue."
+      },
+      {
+        "text": "Screened donor plasma selection",
+        "isCorrect": false,
+        "rationale": "More rigorous donor screening lowers HIV exposure rather than creating it. This would be correct if the question asked how current blood banking reduces risk."
+      },
+      {
+        "text": "Virus-retaining plasma concentration",
+        "isCorrect": true,
+        "rationale": "Traditional clotting factors were concentrated from human plasma, and the concentration process did not eliminate viruses such as HIV."
+      }
+    ]
+  },
+  {
+    "question": "A newborn boy has prolonged umbilical bleeding. His mother is unaffected, and her brother experienced recurrent joint bleeding. Which additional finding would most directly distinguish the boy's specific disorder from the clinically similar alternative?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For hemophilia A and B, know the inheritance pattern, the molecular defect, the basic pathology (symptoms), why there has been such a high incidence of death from HIV, and what is now done to combat that",
+    "options": [
+      {
+        "text": "Measured factor VIII activity",
+        "isCorrect": true,
+        "rationale": "Hemophilia A and B are clinically indistinguishable, so measurement of the affected clotting factor can distinguish factor VIII deficiency from factor IX deficiency."
+      },
+      {
+        "text": "Observed joint swelling severity",
+        "isCorrect": false,
+        "rationale": "Hemarthrosis can occur in both hemophilia A and B and does not identify the deficient factor. This would help assess clinical severity rather than distinguish the molecular diagnosis."
+      },
+      {
+        "text": "Recorded umbilical bleeding duration",
+        "isCorrect": false,
+        "rationale": "Prolonged neonatal bleeding can occur in both disorders. This would clarify bleeding severity but not distinguish factor VIII from factor IX deficiency."
+      },
+      {
+        "text": "Documented maternal carrier status",
+        "isCorrect": false,
+        "rationale": "Both hemophilia A and B are X-linked and can be transmitted by a carrier mother. This would support X-linked inheritance but not distinguish the two disorders."
+      },
+      {
+        "text": "Observed bruising frequency",
+        "isCorrect": false,
+        "rationale": "Easy bruising is shared by both hemophilia types. This would contribute to the clinical picture but would not identify the defective clotting factor."
+      }
+    ]
+  },
+  {
+    "question": "A woman has severe manifestations of an X-linked bleeding disorder despite being heterozygous. Testing confirms that most relevant cells express her mutant chromosome. Which molecular change most likely occurred on her normal chromosome?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain why X inactivation is necessary, the outlined characteristics and how they effect the genetics of X-linked disorders, and how it happens at the molecular level (including XIST)",
+    "options": [
+      {
+        "text": "Reduced methylation and decondensation",
+        "isCorrect": false,
+        "rationale": "Reduced methylation and decondensation would favor transcription of the normal chromosome. This would fit preferential expression rather than silencing of the normal allele."
+      },
+      {
+        "text": "XIST loss and histone acetylation",
+        "isCorrect": false,
+        "rationale": "Loss of XIST coating and increased acetylation would oppose X inactivation. This would fit continued activity of the normal chromosome."
+      },
+      {
+        "text": "Random mtDNA segregation and heteroplasmy",
+        "isCorrect": false,
+        "rationale": "Heteroplasmy concerns mixtures of mitochondrial genomes and cannot selectively silence a normal X chromosome. This would fit variable mitochondrial disease expression."
+      },
+      {
+        "text": "XIST coating and hypermethylation",
+        "isCorrect": true,
+        "rationale": "XIST coating, DNA hypermethylation, histone deacetylation, and condensation make most genes on the normal X unavailable for transcription."
+      },
+      {
+        "text": "Reading-frame preservation and transcription",
+        "isCorrect": false,
+        "rationale": "Reading-frame preservation explains partially functional dystrophin in Becker muscular dystrophy. This would fit an in-frame dystrophin deletion rather than unfavorable lyonization."
+      }
+    ]
+  },
+  {
+    "question": "A woman with a mitochondrial disorder has three children whose manifestations range from absent to severe. Which result from the children would best explain this clinical range?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain what is meant by heteroplasmy and how this complicates the presentation of mitochondrial disorders and why tissues with a high ATP demand are going to be most affected",
+    "options": [
+      {
+        "text": "Different mutant mtDNA proportions",
+        "isCorrect": true,
+        "rationale": "Random segregation can give each child a different proportion of mutant mtDNA, and symptoms depend on whether the relevant threshold is reached."
+      },
+      {
+        "text": "Different paternal X chromosomes",
+        "isCorrect": false,
+        "rationale": "Paternal X chromosomes differ only between daughters and sons and do not explain maternal mtDNA disease severity across children. This would be relevant to an X-linked trait in daughters."
+      },
+      {
+        "text": "Identical mutant mtDNA proportions",
+        "isCorrect": false,
+        "rationale": "Identical mutant proportions would not readily explain the wide phenotypic range described. This would better fit similar expression among the children."
+      },
+      {
+        "text": "Different paternal mitochondrial genomes",
+        "isCorrect": false,
+        "rationale": "Sperm do not contribute mitochondria to the egg in this inheritance model. This would require paternal mtDNA transmission."
+      },
+      {
+        "text": "Identical inactive X patterns",
+        "isCorrect": false,
+        "rationale": "Identical X-inactivation patterns concern X-linked expression and would not explain variable mutant mtDNA burdens. This would be relevant to lyonization."
+      }
+    ]
+  },
+  {
+    "question": "A 28-year-old patient develops rapid, irreversible loss of central vision. Examination shows optic atrophy. The patient's affected mother has the same disorder, but the affected father has no affected children. Which diagnosis is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recite the high yield diseases that are x-linked recessive and mitochondrial, and know the symptoms for each in cases where they were provided",
+    "options": [
+      {
+        "text": "Duchenne muscular dystrophy",
+        "isCorrect": false,
+        "rationale": "Duchenne muscular dystrophy causes early progressive muscle wasting and is X-linked recessive. It would fit a boy with weakness beginning by approximately age 5."
+      },
+      {
+        "text": "Leber hereditary optic neuropathy",
+        "isCorrect": true,
+        "rationale": "Rapid central-field visual loss in the third decade with optic atrophy and maternal transmission is characteristic of Leber hereditary optic neuropathy."
+      },
+      {
+        "text": "Becker muscular dystrophy",
+        "isCorrect": false,
+        "rationale": "Becker muscular dystrophy causes later, milder progressive weakness due to partially functional dystrophin. It would fit weakness beginning around age 11."
+      },
+      {
+        "text": "Fragile X syndrome",
+        "isCorrect": false,
+        "rationale": "Fragile X syndrome primarily causes intellectual disability and autism, with macro-orchidism in most postpubertal affected males. It would fit those findings rather than optic atrophy."
+      },
+      {
+        "text": "Hemophilia B disorder",
+        "isCorrect": false,
+        "rationale": "Hemophilia B causes prolonged bleeding due to factor IX deficiency. It would fit recurrent bleeding and hemarthrosis rather than central vision loss."
+      }
+    ]
+  },
+  {
+    "question": "A patient has epilepsy, progressive cognitive decline, impaired coordination, and muscle disease. The patient's mother is affected, whereas the affected father transmitted the condition to none of his children. Which diagnosis is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recite the high yield diseases that are x-linked recessive and mitochondrial, and know the symptoms for each in cases where they were provided",
+    "options": [
+      {
+        "text": "Leber hereditary optic neuropathy",
+        "isCorrect": false,
+        "rationale": "Leber hereditary optic neuropathy causes rapid central vision loss and optic atrophy. It would fit if visual loss in the third decade replaced the neurologic and muscular combination."
+      },
+      {
+        "text": "Duchenne muscular dystrophy",
+        "isCorrect": false,
+        "rationale": "Duchenne muscular dystrophy produces progressive muscle wasting and cognitive impairment but not the stated maternal-only pedigree with epilepsy and ataxia. It would fit an X-linked boy with an early frameshift dystrophin defect."
+      },
+      {
+        "text": "Fragile X syndrome",
+        "isCorrect": false,
+        "rationale": "Fragile X syndrome is associated with intellectual disability, autism, and characteristic physical findings. It would fit if those findings replaced epilepsy, ataxia, and myopathy."
+      },
+      {
+        "text": "Becker muscular dystrophy",
+        "isCorrect": false,
+        "rationale": "Becker muscular dystrophy causes later-onset, milder weakness due to partially functional dystrophin. It would fit an in-frame dystrophin mutation rather than maternal transmission."
+      },
+      {
+        "text": "Myoclonic epilepsy ragged-red fiber syndrome",
+        "isCorrect": true,
+        "rationale": "MERRF is a mitochondrial disorder associated with epilepsy, dementia, ataxia, and myopathy and therefore follows maternal transmission."
+      }
+    ]
+  },
+  {
+    "question": "A muscle and nervous-system disorder varies substantially among tissues in the same patient. Which tissue characteristic predicts the greatest clinical involvement?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain what is meant by heteroplasmy and how this complicates the presentation of mitochondrial disorders and why tissues with a high ATP demand are going to be most affected",
+    "options": [
+      {
+        "text": "Highest ATP requirement",
+        "isCorrect": true,
+        "rationale": "Tissues with high ATP demand are most severely affected when impaired mitochondrial genomes compromise energy production."
+      },
+      {
+        "text": "Lowest mtDNA copy count",
+        "isCorrect": false,
+        "rationale": "The source emphasizes ATP demand and the proportion of mutant mtDNA rather than low total copy count. This would require evidence that copy number, rather than energy demand, determined involvement."
+      },
+      {
+        "text": "Greatest inactive X condensation",
+        "isCorrect": false,
+        "rationale": "Inactive X condensation regulates X-linked transcription and does not determine mitochondrial tissue vulnerability. This would fit a disorder modified by X inactivation."
+      },
+      {
+        "text": "Highest factor VIII activity",
+        "isCorrect": false,
+        "rationale": "Factor VIII activity relates to hemophilia A severity rather than mitochondrial tissue injury. This would be relevant to an inherited bleeding disorder."
+      },
+      {
+        "text": "Greatest dystrophin expression",
+        "isCorrect": false,
+        "rationale": "Dystrophin expression concerns Duchenne and Becker muscular dystrophy, not generalized mitochondrial vulnerability. This would fit a dystrophin-related muscle disorder."
+      }
+    ]
+  },
+  {
+    "question": "A postpubertal male has intellectual disability, autism, a long face, a large mandible, everted ears, and enlarged testes. Which molecular category best accounts for his condition?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain why Fragile X is considered X-linked dominant with reduced penetrance in females, and why X inactivation confuses the use of the terms “dominant” and “recessive” at the cellular level",
+    "options": [
+      {
+        "text": "Dystrophin frameshift deletion",
+        "isCorrect": false,
+        "rationale": "A dystrophin frameshift deletion causes Duchenne muscular dystrophy. It would fit progressive muscle wasting beginning by approximately age 5."
+      },
+      {
+        "text": "Factor VIII gene defect",
+        "isCorrect": false,
+        "rationale": "A factor VIII defect causes hemophilia A. It would fit prolonged bleeding, easy bruising, and hemarthrosis."
+      },
+      {
+        "text": "Noncoding trinucleotide repeat expansion",
+        "isCorrect": true,
+        "rationale": "Fragile X syndrome is associated with a trinucleotide repeat expansion in the 5-prime noncoding region of FMR1."
+      },
+      {
+        "text": "Mitochondrial genome random segregation",
+        "isCorrect": false,
+        "rationale": "Random mtDNA segregation produces heteroplasmy and variable mitochondrial phenotypes. It would fit a maternally inherited neuropathy or myopathy."
+      },
+      {
+        "text": "Factor IX gene defect",
+        "isCorrect": false,
+        "rationale": "A factor IX defect causes hemophilia B. It would fit a clinically indistinguishable inherited bleeding disorder confirmed by factor testing."
+      }
+    ]
+  },
+  {
+    "question": "A woman carrying a mutant FMR1 allele has no manifestations, whereas her daughter with the same allele has intellectual disability. Which explanation best accounts for their different phenotypes?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain why Fragile X is considered X-linked dominant with reduced penetrance in females, and why X inactivation confuses the use of the terms “dominant” and “recessive” at the cellular level",
+    "options": [
+      {
+        "text": "Different factor VIII activities",
+        "isCorrect": false,
+        "rationale": "Factor VIII activity determines hemophilia A severity rather than FMR1-associated penetrance. This would fit variable bleeding severity."
+      },
+      {
+        "text": "Different dystrophin reading frames",
+        "isCorrect": false,
+        "rationale": "Dystrophin reading-frame status distinguishes Duchenne from Becker muscular dystrophy. This would fit two patients with different severities of muscle wasting."
+      },
+      {
+        "text": "Different paternal mitochondrial genomes",
+        "isCorrect": false,
+        "rationale": "Paternal mitochondria are not transmitted in the described inheritance model. This would require sperm-derived mtDNA inheritance."
+      },
+      {
+        "text": "Different factor IX activities",
+        "isCorrect": false,
+        "rationale": "Factor IX activity affects hemophilia B severity and does not regulate FMR1 expression. This would fit differences in an inherited bleeding disorder."
+      },
+      {
+        "text": "Different lyonization patterns",
+        "isCorrect": true,
+        "rationale": "Different proportions or lineages of cells may inactivate the normal versus mutant X, producing reduced penetrance and variable severity in females."
+      }
+    ]
+  },
+  {
+    "question": "A 5-year-old boy develops progressive muscle wasting. His mother is unaffected, and his maternal grandfather had a similar disorder. Which finding would most strongly support the more severe dystrophinopathy?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For Duchenne and Becker muscular dystrophy, know the inheritance pattern, the molecular defect, the molecular reason that Becker is less severe, and the basic symptoms",
+    "options": [
+      {
+        "text": "In-frame dystrophin deletion",
+        "isCorrect": false,
+        "rationale": "An in-frame deletion preserves partial dystrophin function and supports Becker muscular dystrophy. This would fit later onset and a milder course."
+      },
+      {
+        "text": "Out-of-frame dystrophin deletion",
+        "isCorrect": true,
+        "rationale": "A deletion that disrupts the reading frame is typical of Duchenne muscular dystrophy and prevents production of partially functional dystrophin."
+      },
+      {
+        "text": "Factor VIII gene deletion",
+        "isCorrect": false,
+        "rationale": "A factor VIII defect causes hemophilia A rather than progressive muscle wasting. This would fit prolonged bleeding and hemarthrosis."
+      },
+      {
+        "text": "FMR1 noncoding repeat expansion",
+        "isCorrect": false,
+        "rationale": "An FMR1 repeat expansion causes Fragile X syndrome. This would fit intellectual disability, autism, and characteristic postpubertal findings."
+      },
+      {
+        "text": "Mixed mutant mitochondrial genomes",
+        "isCorrect": false,
+        "rationale": "Mixed normal and mutant mitochondrial genomes define heteroplasmy. This would fit a maternally inherited disorder with variable tissue expression."
+      }
+    ]
+  },
+  {
+    "question": "A man with a confirmed mitochondrial DNA disorder asks about transmission to his children. His partner is unaffected. Which recurrence assessment is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain why mutations on mitochondrial DNA are inherited exclusively through the mother",
+    "options": [
+      {
+        "text": "All children inherit it",
+        "isCorrect": false,
+        "rationale": "Affected mothers can transmit mtDNA disorders to all offspring, but affected fathers do not transmit their mitochondria. This would be correct if the affected parent were the mother."
+      },
+      {
+        "text": "Half of sons inherit it",
+        "isCorrect": false,
+        "rationale": "A 50% risk to sons resembles transmission from a heterozygous carrier mother for an X-linked recessive allele. This would fit that parental genotype."
+      },
+      {
+        "text": "Half of daughters inherit it",
+        "isCorrect": false,
+        "rationale": "A mitochondrial mutation from an affected father is not transmitted to daughters. This would require a different X-linked inheritance scenario."
+      },
+      {
+        "text": "No children inherit it",
+        "isCorrect": true,
+        "rationale": "Sperm do not contribute mitochondria to the egg, so an affected man does not transmit an mtDNA mutation to his children."
+      },
+      {
+        "text": "Only daughters inherit it",
+        "isCorrect": false,
+        "rationale": "Only-daughter transmission can occur for a paternal X-linked allele, not paternal mtDNA. This would fit an X-linked mutation carried on the father's X chromosome."
+      }
+    ]
+  },
+  {
+    "question": "A woman with a confirmed mitochondrial disorder asks for a Mendelian percentage predicting which child will be symptomatic. Her children have shown markedly different severity. Which response best reflects the underlying genetics?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain what is meant by heteroplasmy and how this complicates the presentation of mitochondrial disorders and why tissues with a high ATP demand are going to be most affected",
+    "options": [
+      {
+        "text": "Use a fixed fifty-percent risk",
+        "isCorrect": false,
+        "rationale": "A fixed 50% risk applies to some Mendelian crosses but not to random segregation of multiple mtDNA copies. This would fit a carrier mother's transmission risk to a son for an X-linked recessive allele."
+      },
+      {
+        "text": "Use a fixed twenty-five-percent risk",
+        "isCorrect": false,
+        "rationale": "A fixed 25% risk is not appropriate for heteroplasmic mitochondrial inheritance. This would require a Mendelian parental cross producing that recurrence fraction."
+      },
+      {
+        "text": "Avoid a fixed Mendelian percentage",
+        "isCorrect": true,
+        "rationale": "Mitochondrial inheritance does not follow Mendelian recurrence calculations, and heteroplasmy creates variable mutant burdens and phenotypic expression."
+      },
+      {
+        "text": "Use paternal phenotype severity",
+        "isCorrect": false,
+        "rationale": "Paternal phenotype does not determine transmission of maternal mtDNA. This would require paternal mitochondrial contribution."
+      },
+      {
+        "text": "Use daughter-only transmission risk",
+        "isCorrect": false,
+        "rationale": "Mitochondrial mutations can affect and be transmitted to both sons and daughters of an affected mother. Daughter-only transmission would fit a paternal X-linked allele."
+      }
+    ]
+  },
+  {
+    "question": "A boy with an inherited bleeding disorder has recurrent hemarthroses and requires long-term replacement therapy. Which next treatment choice most directly reduces exposure to viruses that may remain in concentrated donor products?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "For hemophilia A and B, know the inheritance pattern, the molecular defect, the basic pathology (symptoms), why there has been such a high incidence of death from HIV, and what is now done to combat that",
+    "options": [
+      {
+        "text": "Continue unscreened plasma concentrates",
+        "isCorrect": false,
+        "rationale": "Unscreened human plasma concentrates preserve the historical viral exposure risk. This would not reduce risk and would be considered only under an unsafe historical approach."
+      },
+      {
+        "text": "Begin recombinant factor replacement",
+        "isCorrect": true,
+        "rationale": "Recombinant clotting factors replace the deficient product while avoiding reliance on blood-derived factor concentrates and are described as the safest treatment method."
+      },
+      {
+        "text": "Begin XIST RNA replacement",
+        "isCorrect": false,
+        "rationale": "XIST RNA mediates X-chromosome inactivation and does not restore clotting activity. This would be relevant to an X-silencing defect rather than hemophilia."
+      },
+      {
+        "text": "Begin dystrophin gene replacement",
+        "isCorrect": false,
+        "rationale": "Dystrophin-targeted therapy concerns Duchenne and Becker muscular dystrophy. This would fit progressive muscle wasting caused by a dystrophin mutation."
+      },
+      {
+        "text": "Continue concentrated donor factors",
+        "isCorrect": false,
+        "rationale": "Blood-derived concentrates can transmit viruses because concentration does not eliminate them. This would replace the factor but would not most directly minimize the stated risk."
+      }
+    ]
+  }
+]
