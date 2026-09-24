@@ -756,6 +756,18 @@ textarea:focus{outline:none;border-color:var(--primary)}
 .report-details-hint{font-size:.68rem;opacity:.5;margin:-8px 0 10px;line-height:1.45}
 
 .option-wrap{margin-bottom:6px}
+.fill-block,.match-block{display:flex;flex-direction:column;gap:10px;margin-top:4px}
+.fill-input,.match-select{
+  width:100%;box-sizing:border-box;border:1px solid var(--border);border-radius:10px;
+  background:rgba(255,255,255,.03);color:var(--text);font:inherit;padding:12px 14px;
+}
+.fill-input:focus,.match-select:focus{outline:none;border-color:var(--primary)}
+.fill-submit{align-self:flex-start}
+.fill-reveal,.match-key{font-size:.92rem;line-height:1.45;padding:10px 12px;border-radius:10px;border:1px solid var(--border)}
+.fill-reveal.ok,.match-key.ok{border-color:var(--success);background:rgba(46,204,113,.08)}
+.fill-reveal.bad,.match-key.bad{border-color:var(--danger);background:rgba(231,76,60,.08)}
+.match-row{display:flex;flex-direction:column;gap:6px;padding:10px 0;border-bottom:1px solid var(--border)}
+.match-prompt{font-weight:650}
 .option-row{display:flex;align-items:flex-start;gap:12px;cursor:pointer;border:1px solid var(--border);border-radius:10px;padding:11px 14px;transition:border .15s,background .15s;background:rgba(255,255,255,.01)}
 .option-row:hover:not(.disabled){border-color:var(--primary);background:rgba(255,255,255,.03)}
 /* Highlighter & Distraction Styles */
@@ -3158,10 +3170,39 @@ function normalizeQuizQuestion(q){
   if(!q||typeof q!=='object') return q;
   const question=quizQuestionStem(q)||String(q.question||'');
   const options=quizQuestionOptions(q).map(normalizeQuizOption).filter(Boolean);
-  return Object.assign({},q,{question,options});
+  const next=Object.assign({},q,{question,options});
+  if(Array.isArray(q.pairs)){
+    next.pairs=q.pairs.map(p=>({
+      prompt:String(p&&p.prompt||'').trim(),
+      answer:String(p&&p.answer||'').trim()
+    })).filter(p=>p.prompt&&p.answer);
+  }
+  if(q.answer!=null) next.answer=String(q.answer).trim();
+  return next;
+}
+function isFillBlankQuestion(q){
+  return !!(q&&q.type==='fill_blank'&&String(q.answer||'').trim());
+}
+function isMatchingQuestion(q){
+  return !!(q&&q.type==='matching'&&Array.isArray(q.pairs)&&q.pairs.length);
+}
+function isSourceMcq(q){
+  return !!(q&&q.type==='mcq'&&Array.isArray(q.options)&&q.options.length>=2&&q.options.some(o=>o&&o.isCorrect));
+}
+function isPlayableQuestion(q){
+  if(isFillBlankQuestion(q)||isMatchingQuestion(q)||isSourceMcq(q)) return true;
+  return Array.isArray(q&&q.options)&&q.options.length>=MIN_QUIZ_OPTIONS;
+}
+function normalizeBlankAnswer(s){
+  return String(s||'').toLowerCase().replace(/[\u2018\u2019]/g,"'").replace(/[^a-z0-9]+/g,' ').trim().replace(/\s+/g,' ');
+}
+function blankAnswersMatch(typed, key){
+  const a=normalizeBlankAnswer(typed);
+  const b=normalizeBlankAnswer(key);
+  return !!a&&a===b;
 }
 function questionsMissingMinOptions(list){
-  return (list||[]).filter(q=>!Array.isArray(q.options)||q.options.length<MIN_QUIZ_OPTIONS);
+  return (list||[]).filter(q=>!isPlayableQuestion(q));
 }
 function formatShortOptionsError(shortCount,total){
   return 'Every question needs at least '+MIN_QUIZ_OPTIONS+' answer options ('+
@@ -3205,7 +3246,7 @@ c. Spread items across distinct LOs. When students commonly conflate a pair (enz
 
 2. Difficulty Distribution:
 
-Set each question's "difficulty_order" to exactly "1st", "2nd", or "3rd". One value per question.
+Add "difficulty_order": "1st/2nd/3rd" to the JSON pertaining to each question.
 
 4/30 questions: First-order (Direct recall).
 
@@ -3251,17 +3292,7 @@ c. If any rationale content is your inference rather than a stated source fact, 
 8. NO FORMATTING CUES: Do not bold, italicize, or otherwise mark any option. Teach the medicine; do not cite the deck.
 
 9. OUTPUT FORMAT
-Return one fenced json code block and nothing else.
-Pretty-print the array with real line breaks, 2-space indentation, and one key per line.
-Do not emit a one-line wall of text.
-Do not escape the array as one quoted string.
-Do not write that the JSON was serialized as plain text.
-No preamble and no extra keys.
-One space after each colon and comma. No double spaces. No trailing spaces. No blank lines inside an object or array. No tabs.
-difficulty_order is exactly "1st" or "2nd" or "3rd".
-isCorrect is the JSON boolean true or false, not a string.
-Before emitting, search each item's "question" string: if it contains "lecture" in any case, rewrite that stem until the word is gone (rationales may keep it).
-Then verify every item: at least five homogeneous options (prefer five; never fewer); +-2 word parity across ALL options; exactly one isCorrect true; difficulty_order matches the assigned mix; cited_learning_objective is the named LO; no source-pointers in question text.
+Return ONLY a valid JSON array. No preamble, markdown fences, commentary, or extra keys. Use this schema only. Before emitting, search each item's "question" string: if it contains "lecture" in any case, rewrite that stem until the word is gone (rationales may keep it). Then verify every item: at least five homogeneous options (prefer five; never fewer); +-2 word parity across ALL options; exactly one isCorrect true; difficulty_order matches the assigned mix; cited_learning_objective is the named LO; no source-pointers in question text.
 
 10. CHARACTER ENCODING (CRITICAL)
 a. Valid UTF-8 JSON. Never emit mojibake (â, Â², Â°, Âµ, or Windows-1252 artifacts).
@@ -3273,34 +3304,14 @@ JSON structure:
 [
   {
     "question": "Clinical vignette or stem here.",
-    "difficulty_order": "3rd",
+    "difficulty_order": "1st/2nd/3rd",
     "cited_learning_objective": "The exact LO being tested.",
     "options": [
-      {
-        "text": "Option text here.",
-        "isCorrect": true,
-        "rationale": "Why correct, naming the mechanism or contrast."
-      },
-      {
-        "text": "Option text here.",
-        "isCorrect": false,
-        "rationale": "Why wrong, the specific failure, and what would make it correct."
-      },
-      {
-        "text": "Option text here.",
-        "isCorrect": false,
-        "rationale": "Why wrong, the specific failure, and what would make it correct."
-      },
-      {
-        "text": "Option text here.",
-        "isCorrect": false,
-        "rationale": "Why wrong, the specific failure, and what would make it correct."
-      },
-      {
-        "text": "Option text here.",
-        "isCorrect": false,
-        "rationale": "Why wrong, the specific failure, and what would make it correct."
-      }
+      { "text": "Option text here.", "isCorrect": true,  "rationale": "Why correct, naming the mechanism or contrast." },
+      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong, the specific failure, and what would make it correct." },
+      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong, the specific failure, and what would make it correct." },
+      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong, the specific failure, and what would make it correct." },
+      { "text": "Option text here.", "isCorrect": false, "rationale": "Why wrong, the specific failure, and what would make it correct." }
     ]
   }
 ]
@@ -3665,7 +3676,7 @@ function autoAnswerPaceTimeout(){
     if(!isLastExam) changeQ(1);
     return;
   }
-  const correct=q.options.find(o=>o.isCorrect);
+  const correct=Array.isArray(q.options)?q.options.find(o=>o.isCorrect):null;
   if(!correct)return;
   selectAnswer(correct);
   const isLast=isFlaggedReviewMode
@@ -8341,7 +8352,7 @@ function buildSettingsPrompt() {
     const firstN  = Math.round(total * 4 / 30);
     const secondN = Math.round(total * 11 / 30);
     const thirdN  = total - firstN - secondN;
-    distrib = `2. Difficulty Distribution:\n\nSet each question's "difficulty_order" to exactly "1st", "2nd", or "3rd". One value per question.\n\n${firstN}/${total} questions: First-order (Direct recall).\n\n${secondN}/${total} questions: Second-order (Connecting two concepts).\n\n${thirdN}/${total} questions: Third-order (Clinical vignettes requiring >=2 reasoning steps). A student who has not studied should score <=25% on these.${thirdOrderExtra}`;
+    distrib = `2. Difficulty Distribution:\n\nAdd "difficulty_order": "1st/2nd/3rd" to the JSON pertaining to each question.\n\n${firstN}/${total} questions: First-order (Direct recall).\n\n${secondN}/${total} questions: Second-order (Connecting two concepts).\n\n${thirdN}/${total} questions: Third-order (Clinical vignettes requiring >=2 reasoning steps). A student who has not studied should score <=25% on these.${thirdOrderExtra}`;
   } else if (enabled.length === 2) {
     const half = Math.round(total / 2);
     const rest = total - half;
@@ -8443,7 +8454,7 @@ function initQuiz(){
 function buildQuiz(raw, meta){
   raw = sanitizeQuizData(raw);
   const normalized=(Array.isArray(raw)?raw:[]).map(normalizeQuizQuestion);
-  const kept=normalized.filter(q=>Array.isArray(q.options)&&q.options.length>=MIN_QUIZ_OPTIONS);
+  const kept=normalized.filter(isPlayableQuestion);
   const dropped=normalized.length-kept.length;
   if(!kept.length){
     alert(formatShortOptionsError(dropped||normalized.length, normalized.length||dropped));
@@ -8455,7 +8466,16 @@ function buildQuiz(raw, meta){
   document.getElementById('back-to-quiz-btn').style.display = 'none';
   isReviewMode=false;
   isFlaggedReviewMode=false; flaggedReviewIndices=[]; flaggedReviewPos=0; flaggedReviewPosByIdx=new Map();
-  questions=shuffle(kept).map(q=>({...q,options:shuffle([...q.options]),userAnswer:null,time:0,flagged:false,reported:false}));
+  questions=shuffle(kept).map(q=>{
+    const next={...q,userAnswer:null,time:0,flagged:false,reported:false};
+    if(isMatchingQuestion(q)){
+      next._matchOrder=shuffle(q.pairs.map((_,i)=>i));
+      next._choiceOrder=shuffle(q.pairs.map((_,i)=>i));
+    } else if(Array.isArray(q.options)&&q.options.length){
+      next.options=shuffle([...q.options]);
+    }
+    return next;
+  });
   document.getElementById('total-q-count').innerText=questions.length;
   document.getElementById('finish-btn').style.display='none';
   document.getElementById('next-btn').innerText='Next Question →';
@@ -8869,7 +8889,8 @@ function updateEditQuestionButton() {
   if (!btn) return;
   const quizEl = document.getElementById('quiz-screen');
   const onQuiz = !!(quizEl && !quizEl.classList.contains('hidden'));
-  const show = onQuiz && questions.length && questions[currentIdx] && !!currentQuestionEditTarget();
+  const qNow=questions[currentIdx];
+  const show = onQuiz && questions.length && qNow && !isFillBlankQuestion(qNow) && !isMatchingQuestion(qNow) && !!currentQuestionEditTarget();
   btn.style.display = show ? 'inline' : 'none';
 }
 
@@ -9606,7 +9627,7 @@ function canonicalMedstepKey(key) {
 function isQuestionObject(obj) {
   return obj && typeof obj === 'object' && !Array.isArray(obj)
     && (obj.stem != null || obj.question != null || obj.prompt != null)
-    && (obj.choices != null || obj.options != null || obj.answers != null);
+    && (obj.choices != null || obj.options != null || obj.answers != null || obj.type==='fill_blank' || obj.type==='matching' || obj.answer != null);
 }
 
 function looksLikePersonalLibraryEntries(arr) {
@@ -9949,7 +9970,11 @@ function loadQuestion(idx){
   }
 
   const list=document.getElementById('options-list');list.innerHTML='';
-  (q.options||[]).forEach((opt,i)=>{
+  if(isFillBlankQuestion(q)){
+    renderFillBlank(q, list);
+  } else if(isMatchingQuestion(q)){
+    renderMatching(q, list);
+  } else (q.options||[]).forEach((opt,i)=>{
 const wrap = document.createElement('div'); wrap.className = 'option-wrap';
 const row = document.createElement('div'); row.className = 'option-row';
 // Check if this specific choice was hidden by distraction hider
@@ -9990,10 +10015,131 @@ list.appendChild(wrap);
   persistActiveQuiz();
 }
 
+function renderFillBlank(q, list){
+  const block=document.createElement('div');
+  block.className='fill-block';
+  if(q.userAnswer){
+    const yours=document.createElement('div');
+    yours.className='fill-reveal '+(q.userAnswer.isCorrect?'ok':'bad');
+    yours.textContent='Your answer: '+(q.userAnswer.text||'(blank)');
+    const key=document.createElement('div');
+    key.className='fill-reveal ok';
+    key.textContent='Correct answer: '+q.answer;
+    block.appendChild(yours);
+    block.appendChild(key);
+    if(q.rationale){
+      const rat=document.createElement('div');
+      rat.className='rationale-bubble';
+      rat.textContent=q.rationale;
+      block.appendChild(rat);
+    }
+  } else {
+    const input=document.createElement('input');
+    input.className='fill-input';
+    input.type='text';
+    input.placeholder='Type your answer';
+    input.autocomplete='off';
+    input.value=q._fillDraft||'';
+    input.oninput=()=>{ q._fillDraft=input.value; };
+    input.addEventListener('keydown',e=>{
+      if(e.key==='Enter'){ e.preventDefault(); submitFillBlank(); }
+    });
+    const btn=document.createElement('button');
+    btn.type='button';
+    btn.className='btn btn-primary fill-submit';
+    btn.textContent='Submit answer';
+    btn.onclick=submitFillBlank;
+    block.appendChild(input);
+    block.appendChild(btn);
+  }
+  list.appendChild(block);
+}
+function renderMatching(q, list){
+  const block=document.createElement('div');
+  block.className='match-block';
+  const order=Array.isArray(q._matchOrder)&&q._matchOrder.length===q.pairs.length?q._matchOrder:q.pairs.map((_,i)=>i);
+  const choiceOrder=Array.isArray(q._choiceOrder)&&q._choiceOrder.length===q.pairs.length?q._choiceOrder:q.pairs.map((_,i)=>i);
+  if(!q._matchDraft) q._matchDraft={};
+  order.forEach(pairIdx=>{
+    const pair=q.pairs[pairIdx];
+    const row=document.createElement('div');
+    row.className='match-row';
+    const label=document.createElement('div');
+    label.className='match-prompt';
+    label.textContent=pair.prompt;
+    row.appendChild(label);
+    const sel=document.createElement('select');
+    sel.className='match-select';
+    const blank=document.createElement('option');
+    blank.value='';
+    blank.textContent='Select a match';
+    sel.appendChild(blank);
+    choiceOrder.forEach(ci=>{
+      const opt=document.createElement('option');
+      opt.value=String(ci);
+      opt.textContent=q.pairs[ci].answer;
+      sel.appendChild(opt);
+    });
+    const chosen=q.userAnswer?q.userAnswer.selections[pairIdx]:q._matchDraft[pairIdx];
+    if(chosen!=null&&chosen!=='') sel.value=String(chosen);
+    sel.disabled=!!q.userAnswer;
+    sel.onchange=()=>{ q._matchDraft[pairIdx]=sel.value===''?null:Number(sel.value); };
+    row.appendChild(sel);
+    if(q.userAnswer){
+      const picked=q.userAnswer.selections[pairIdx];
+      const ok=picked!=null&&q.pairs[picked]&&blankAnswersMatch(q.pairs[picked].answer, pair.answer);
+      const note=document.createElement('div');
+      note.className='match-key '+(ok?'ok':'bad');
+      note.textContent=ok?'Correct: '+pair.answer:'Correct answer: '+pair.answer;
+      row.appendChild(note);
+    }
+    block.appendChild(row);
+  });
+  if(!q.userAnswer){
+    const btn=document.createElement('button');
+    btn.type='button';
+    btn.className='btn btn-primary fill-submit';
+    btn.textContent='Submit matches';
+    btn.onclick=submitMatching;
+    block.appendChild(btn);
+  }
+  list.appendChild(block);
+}
+function submitFillBlank(){
+  const q=questions[currentIdx];
+  if(!q||q.userAnswer||!isFillBlankQuestion(q)) return;
+  const typed=String(q._fillDraft||'').trim();
+  if(!typed){ showToast('Type an answer first'); return; }
+  commitUserAnswer(q,{
+    text:typed,
+    isCorrect:blankAnswersMatch(typed, q.answer),
+    rationale:q.rationale||''
+  });
+}
+function submitMatching(){
+  const q=questions[currentIdx];
+  if(!q||q.userAnswer||!isMatchingQuestion(q)) return;
+  const selections={};
+  let complete=true;
+  let correctCount=0;
+  q.pairs.forEach((pair,i)=>{
+    const picked=q._matchDraft?q._matchDraft[i]:null;
+    if(picked==null||picked===''){ complete=false; selections[i]=null; return; }
+    selections[i]=picked;
+    if(q.pairs[picked]&&blankAnswersMatch(q.pairs[picked].answer, pair.answer)) correctCount++;
+  });
+  if(!complete){ showToast('Match every row before submitting'); return; }
+  commitUserAnswer(q,{
+    text:correctCount+'/'+q.pairs.length+' matched',
+    isCorrect:correctCount===q.pairs.length,
+    selections
+  });
+}
+
 // ══ ANSWER / UNDO ════════════════════════════════════════
-function selectAnswer(opt){
-  const q=questions[currentIdx];if(!q||q.userAnswer)return;
-  q.userAnswer=opt;
+function commitUserAnswer(q, answer){
+  if(!q||q.userAnswer) return;
+  q.userAnswer=answer;
   if(recordQuestionCompleted(q)){
     q._progressNew=true;
     q._progressFile=questionProgressFile(q);
@@ -10001,12 +10147,16 @@ function selectAnswer(opt){
   }
   loadQuestion(currentIdx);
   if(!isReviewMode){
-    const allDone=questions.every(q=>q.userAnswer);
+    const allDone=questions.every(item=>item.userAnswer);
     const isLast=currentIdx===questions.length-1;
     document.getElementById('finish-btn').style.display=(allDone&&isLast)?'inline-flex':'none';
     document.getElementById('next-btn').style.display=(allDone&&isLast)?'none':'inline-flex';
   }
   persistActiveQuiz(true);
+}
+function selectAnswer(opt){
+  const q=questions[currentIdx];if(!q||q.userAnswer)return;
+  commitUserAnswer(q, opt);
 }
 function undoAnswer(){
   const q=questions[currentIdx];if(!q||!q.userAnswer)return;
@@ -10042,6 +10192,7 @@ function scrambleAll(){
   shuffle(answered);
   questions=unanswered.concat(answered);
   questions.forEach(q=>{
+    if(isFillBlankQuestion(q)||isMatchingQuestion(q)) return;
     if(!Array.isArray(q.options)) q.options=[];
     const p=q.userAnswer?.text;
     shuffle(q.options);
@@ -10106,12 +10257,17 @@ function showResults(){
   persistActiveQuiz(true);
 }
 
+function keyedAnswerText(q){
+  if(isFillBlankQuestion(q)) return q.answer;
+  if(isMatchingQuestion(q)) return q.pairs.map(p=>p.prompt+' → '+p.answer).join('; ');
+  const correct=Array.isArray(q.options)?q.options.find(o=>o.isCorrect):null;
+  return correct?correct.text:'N/A';
+}
 function formatQuestionText(q,idx){
-  const correct=q.options.find(o=>o.isCorrect);
   const chosen=q.userAnswer;
   let txt=`Q${idx+1}: ${q.question}\n`;
   txt+=`  Learning Objective: ${q.cited_learning_objective||'N/A'}\n`;
-  txt+=`  Correct Answer: ${correct?correct.text:'N/A'}\n`;
+  txt+=`  Correct Answer: ${keyedAnswerText(q)}\n`;
   if(chosen) txt+=`  Your Answer: ${chosen.text} (${chosen.isCorrect?'Correct':'Incorrect'})\n`;
   else txt+=`  Your Answer: Unanswered\n`;
   return txt;
@@ -10156,7 +10312,10 @@ function questionsToJSON(list){
     question_number:i+1,
     question:q.question,
     learning_objective:q.cited_learning_objective||null,
-    options:q.options.map((o,i)=>({letter:optionLetter(i),text:o.text,is_correct:o.isCorrect,rationale:o.rationale||null})),
+    type:q.type||'mcq',
+    answer:isFillBlankQuestion(q)?q.answer:undefined,
+    pairs:isMatchingQuestion(q)?q.pairs:undefined,
+    options:Array.isArray(q.options)?q.options.map((o,i)=>({letter:optionLetter(i),text:o.text,is_correct:o.isCorrect,rationale:o.rationale||null})):[],
     user_answer:q.userAnswer?{text:q.userAnswer.text,is_correct:q.userAnswer.isCorrect}:null
   })),null,2);
 }
@@ -10316,7 +10475,7 @@ function persistActiveQuiz(immediate){
 }
 function relinkUserAnswers(qs){
   (qs||[]).forEach(q=>{
-    if(!q||!q.userAnswer||!Array.isArray(q.options)) return;
+    if(!q||!q.userAnswer||!Array.isArray(q.options)||isFillBlankQuestion(q)||isMatchingQuestion(q)) return;
     const match=q.options.find(o=>o&&o.text===q.userAnswer.text);
     if(match) q.userAnswer=match;
   });
@@ -11036,14 +11195,14 @@ const LS_GITHUB_TOKEN = 'medstep_github_token';
 const LS_IS_DEVELOPER = 'medstep_is_developer';
 const LS_DEVELOPER_LOGIN = 'medstep_developer_login';
 const BLOCK_CLASSES = {
-  1: ['Cell Biology/Biochemistry', 'Microbiology/Immunology', 'Anatomy'],
-  2: ['Pharmacology', 'Physiology', 'Pathology', 'Anatomy'],
-  3: ['Musculoskeletal System', 'Anatomy'],
-  4: ['Neuroscience', 'Psychiatry', 'Anatomy'],
-  5: ['Cardiovascular System', 'Respiratory System'],
-  6: ['Hematology', 'Renal System', 'Dermatology'],
-  7: ['Endocrine System', 'Gastrointestinal System'],
-  8: ['Reproductive System']
+  1: ['Cell Biology/Biochemistry', 'Microbiology/Immunology', 'Anatomy', 'OMM'],
+  2: ['Pharmacology', 'Physiology', 'Pathology', 'Anatomy', 'OMM'],
+  3: ['Musculoskeletal System', 'Anatomy', 'OMM'],
+  4: ['Neuroscience', 'Psychiatry', 'Anatomy', 'OMM'],
+  5: ['Cardiovascular System', 'Respiratory System', 'OMM'],
+  6: ['Hematology', 'Renal System', 'Dermatology', 'OMM'],
+  7: ['Endocrine System', 'Gastrointestinal System', 'OMM'],
+  8: ['Reproductive System', 'OMM']
 };
 const CLASS_ICONS = {
   'Neuroscience': '🧠',
@@ -11062,7 +11221,8 @@ const CLASS_ICONS = {
   'Dermatology': '🧴',
   'Endocrine System': '🧪',
   'Gastrointestinal System': '🫃',
-  'Reproductive System': '🤰'
+  'Reproductive System': '🤰',
+  'OMM': '🤲'
 };
 function getClassIcon(entry) {
   if (entry.classTag && CLASS_ICONS[entry.classTag]) return CLASS_ICONS[entry.classTag];
@@ -11996,7 +12156,10 @@ function updateClassOptions() {
 }
 
 function getTagCode(entry) {
-  if (!entry || !entry.block || !entry.exam || !entry.week) return '';
+  if (!entry || !entry.block) return '';
+  if (!entry.exam || !entry.week) {
+    return entry.classTag === 'OMM' ? `B${entry.block}` : '';
+  }
   return `B${entry.block}E${entry.exam}W${entry.week}`;
 }
 
@@ -12013,6 +12176,7 @@ function entryMatchesLibFilter(entry, level, filterVal) {
   if (filterVal === 'all') return true;
   if (filterVal === 'other') {
     if (level === 'class') return !entry.classTag;
+    if (entry.classTag === 'OMM' && (level === 'exam' || level === 'week')) return false;
     const field = level === 'block' ? 'block' : level === 'exam' ? 'exam' : 'week';
     return !isStandardLibTag(level, entry[field]);
   }
@@ -12270,8 +12434,9 @@ function renderBlockQuickView(entries) {
     const ex = Number(e.exam || 0);
     const wk = Number(e.week || 0);
     const cls = e.classTag || '';
-    if (!tree[b]) tree[b] = { count: 0, exams: {} };
+    if (!tree[b]) tree[b] = { count: 0, exams: {}, omm: [] };
     tree[b].count++;
+    if (e.classTag === 'OMM') tree[b].omm.push(e);
     if (ex) {
       if (!tree[b].exams[ex]) tree[b].exams[ex] = { count: 0, weeks: {} };
       tree[b].exams[ex].count++;
@@ -12305,6 +12470,15 @@ function renderBlockQuickView(entries) {
         });
       });
     });
+    if (blockNode.omm.length) {
+      const ommFile = String(blockNode.omm[0].file).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+      html += `<button class="lib-tree-item exam" onclick="openQPickerForScope('${ommFile}','omm')">OMM — all topics (${blockNode.omm.length})</button>`;
+      blockNode.omm.slice().sort((a, b) => String(a.title || '').localeCompare(String(b.title || ''))).forEach(entry => {
+        const file = String(entry.file).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+        const title = String(entry.topic || entry.title || 'Topic').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        html += `<button class="lib-tree-item week" onclick="openQPickerForFile('${file}')">${title}</button>`;
+      });
+    }
   });
   wrap.innerHTML = html;
 }
@@ -12492,6 +12666,7 @@ async function toggleStageQuiz(entry, btn) {
 async function stageByScope(seed, scope) {
   let matches = getActiveLibraryEntries().filter(e => {
     if (String(e.block || '') !== String(seed.block || '')) return false;
+    if (scope === 'omm') return String(e.classTag || '') === 'OMM';
     if (scope === 'week') {
       return String(e.exam || '') === String(seed.exam || '') &&
              String(e.week || '') === String(seed.week || '');
@@ -12684,7 +12859,8 @@ function renderQPickerSubtitle() {
   const breakdown = qpickerPoolBreakdownText();
   el.innerHTML = escapeHtmlLib(unseen + ' new of ' + total) +
     ' — ' + escapeHtmlLib(_qpickerCurrentLabel || '') +
-    (breakdown ? '<br>' + escapeHtmlLib(breakdown) : '');
+    (breakdown ? '<br>' + escapeHtmlLib(breakdown) : '') +
+    (total && qpickerTaggedTotal() === 0 ? '<br>No 1st/2nd/3rd tags. Use Any to include these questions.' : '');
 }
 
 function applyQPickerPoolChrome() {
@@ -13009,6 +13185,12 @@ async function fetchQuizJSON(fileOrEntry) {
   return sanitizeQuizData(json);
 }
 
+async function openQPickerForFile(file) {
+  const entry = findLibraryEntry(file);
+  if (!entry) { showToast('❌ Quiz entry not found'); return; }
+  await openQPickerForEntry(entry);
+}
+
 // Single quiz click
 async function openQPickerForEntry(entry, btn) {
   _qpickerEntry = entry;
@@ -13031,6 +13213,7 @@ async function openQPickerForScope(file, scope) {
   const pool = getActiveLibraryEntries();
   let matches = pool.filter(e => {
     if (String(e.block || '') !== String(seed.block || '')) return false;
+    if (scope === 'omm') return String(e.classTag || '') === 'OMM';
     if (scope === 'week') {
       return String(e.exam || '') === String(seed.exam || '') &&
              String(e.week || '') === String(seed.week || '');
@@ -13040,7 +13223,9 @@ async function openQPickerForScope(file, scope) {
   matches = applyClassLectureOrder(matches);
   if (!matches.length) { showToast('❌ No quizzes found for same ' + scope); return; }
 
-  const label = scope === 'week'
+  const label = scope === 'omm'
+    ? 'Block ' + seed.block + ' / OMM'
+    : scope === 'week'
     ? 'Block ' + seed.block + ' / Exam ' + seed.exam + ' / Week ' + seed.week
     : 'Block ' + seed.block + ' / Exam ' + seed.exam;
 
@@ -13543,6 +13728,7 @@ function renderLibrary() {
         </div>
       </div>
       <span class="lib-bulk-row">
+        ${(entry.classTag === 'OMM' && entry.block) ? `<span class="lib-bulk-btn" title="Quiz all OMM in this block" role="button" tabindex="0" onclick="event.stopPropagation(); openQPickerForScope('${entry.file}','omm')">+B</span>` : ''}
         ${hasExamTag ? `<span class="lib-bulk-btn" title="Quiz all from same exam" role="button" tabindex="0" onclick="event.stopPropagation(); openQPickerForScope('${entry.file}','exam')">+E</span>` : ''}
         ${hasWeekTag ? `<span class="lib-bulk-btn" title="Quiz all from same week" role="button" tabindex="0" onclick="event.stopPropagation(); openQPickerForScope('${entry.file}','week')">+W</span>` : ''}
         <span class="lib-bulk-btn" title="${personal || isDeveloperMode() ? 'Edit quiz' : 'Edit tags'}" role="button" tabindex="0" onclick="event.stopPropagation(); openEditQuizTagsModalForFile('${fileAttr}')">✏️</span>
