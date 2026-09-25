@@ -1,0 +1,540 @@
+[
+  {
+    "question": "List an example of each of the following (multiple answers are possible): viscerosomatic reflex, somatovisceral reflex, and viscerovisceral reflex.",
+    "type": "open",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Give an example of a viscerosomatic, somatovisceral, and viscerovisceral reflex.",
+    "answer": "Viscerosomatic: Gallbladder distention may produce pain in the right shoulder region and/or somatic dysfunction in the mid-thoracic area.\nSomatovisceral: Pectoralis trigger points may contribute to cardiac rhythm dysfunction.\nViscerovisceral: Stretching the stomach and chyme in the duodenum stimulates the colon into active transport toward the rectum.\nMany other examples are possible.",
+    "rationale": "A viscerosomatic reflex sends visceral input out to somatic tissues. A somatovisceral reflex sends somatic input out to a viscus. A viscerovisceral reflex links one viscus to another."
+  },
+  {
+    "question": "Match each spinal level to the organ most likely related to it by a somatovisceral or viscerosomatic reflex.",
+    "type": "matching",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Match spinal somatic dysfunction levels to the organs most likely related by a somatovisceral or viscerosomatic reflex.",
+    "pairs": [
+      {"prompt": "T2", "answer": "Heart"},
+      {"prompt": "T7", "answer": "Stomach"},
+      {"prompt": "T11", "answer": "Kidney"},
+      {"prompt": "L2", "answer": "Urinary bladder"}
+    ]
+  },
+  {
+    "question": "A patient presents with gastroesophageal reflux that has responded poorly to over-the-counter medication. The exam shows hypertonicity, tenderness, and restricted motion at T5 (T5 FRRSR). After osteopathic manipulative treatment, reflux symptoms improve over the following week. That symptom relief most likely represents which type of reflex?",
+    "type": "mcq",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Distinguish the reflex direction of a treatment response from the reflex that produced the somatic finding.",
+    "options": [
+      {"text": "Somatosomatic", "isCorrect": false, "rationale": "A somatosomatic reflex stays inside the somatic system. Symptom relief here is a change in a visceral complaint after treatment of the soma."},
+      {"text": "Viscerosomatic", "isCorrect": false, "rationale": "Viscerosomatic reflex activity likely produced the T5 dysfunction from the esophageal irritation. The question asks about the effect of treating that dysfunction, which runs from soma to viscera."},
+      {"text": "Somatovisceral", "isCorrect": true, "rationale": "Treating the somatic dysfunction at T5 was followed by improvement in visceral symptoms. That direction of influence is soma to viscera, a somatovisceral reflex."},
+      {"text": "Viscerovisceral", "isCorrect": false, "rationale": "A viscerovisceral reflex connects two visceral organs. This response begins with treatment of a spinal somatic dysfunction."}
+    ]
+  },
+  {
+    "question": "What is the definition of a somatic-somatic reflex?",
+    "type": "open",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define a somatosomatic reflex.",
+    "answer": "A somatosomatic reflex is an involuntary motor response within the somatic system to neurosensory inputs from the somatic system. An example is a deep tendon reflex, used to assess lower motor neuron function.",
+    "rationale": "Both the incoming signal and the motor response stay in the somatic system."
+  },
+  {
+    "question": "True or false? All reflexes have an afferent arm that brings impulses to the CNS, a central arm within the CNS (an interneuron), and an efferent arm that carries impulses to peripheral structures.",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the required parts of a reflex arc and the monosynaptic exception.",
+    "options": [
+      {"text": "True", "isCorrect": false, "rationale": "This would be true only if every reflex used an interneuron. Monosynaptic stretch reflexes do not."},
+      {"text": "False", "isCorrect": true, "rationale": "False. Reflexes have an afferent arm, a central connection, and an efferent arm, but not all of them use an interneuron. The patellar reflex is monosynaptic: the afferent fiber synapses directly on the motor neuron."}
+    ]
+  },
+  {
+    "question": "Producing extension of the knee with a sharp tap to the patellar tendon is an example of what kind of reflex?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Classify the patellar reflex.",
+    "options": [
+      {"text": "Somatosomatic", "isCorrect": true, "rationale": "Knee extension is an involuntary somatic motor response (quadriceps contraction) to a somatic sensory input (sudden stretch of the patellar tendon)."},
+      {"text": "Somatovisceral", "isCorrect": false, "rationale": "A somatovisceral reflex would change visceral function. The response here is contraction of skeletal muscle."},
+      {"text": "Viscerovisceral", "isCorrect": false, "rationale": "Neither the stimulus nor the response is visceral."},
+      {"text": "Viscerosomatic", "isCorrect": false, "rationale": "A viscerosomatic reflex starts in a viscus. The stimulus is stretch of a tendon."}
+    ]
+  },
+  {
+    "question": "Which organ is most likely to produce viscerosomatic tissue texture changes at T7?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the organ most likely to produce viscerosomatic change at T7.",
+    "options": [
+      {"text": "Heart", "isCorrect": false, "rationale": "Sympathetic viscerosomatic findings for the heart are expected around T1 to T5, most often left T2."},
+      {"text": "Lung", "isCorrect": false, "rationale": "Sympathetic supply to the lung is about T2 to T7, but T7 is the classic level cited here for the stomach."},
+      {"text": "Stomach", "isCorrect": true, "rationale": "The stomach produces sympathetically mediated viscerosomatic changes around T5 to T9, and parasympathetically mediated changes at C0 to C2."},
+      {"text": "Jejunum", "isCorrect": false, "rationale": "Midgut viscerosomatic changes sit lower than the stomach's T5 to T9 range."},
+      {"text": "Colon", "isCorrect": false, "rationale": "Hindgut sympathetic viscerosomatic changes are expected nearer T12 to L2."},
+      {"text": "Uterus", "isCorrect": false, "rationale": "Uterine sympathetic findings are expected in the lower thoracic and upper lumbar segments, not specifically T7."}
+    ]
+  },
+  {
+    "question": "Inflammation at the hepatic flexure of the colon is most likely to produce viscerosomatic tissue texture changes at which spinal level?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Localize viscerosomatic change from the hepatic flexure.",
+    "options": [
+      {"text": "OA", "isCorrect": false, "rationale": "The OA is a parasympathetic-associated level via the vagus, not the sympathetic level for the hepatic flexure."},
+      {"text": "C4", "isCorrect": false, "rationale": "C4 is outside both the vagal occiput-to-C2 region and the sympathetic levels for this part of the colon."},
+      {"text": "T5", "isCorrect": false, "rationale": "T5 fits upper abdominal organs such as the stomach more closely than the hepatic flexure."},
+      {"text": "T11", "isCorrect": true, "rationale": "The hepatic flexure produces sympathetically mediated viscerosomatic changes around T10 to L2. T11 is inside that range. Parasympathetic-mediated changes for vagal territory are at C0 to C2."},
+      {"text": "Sacrum", "isCorrect": false, "rationale": "The sacrum is associated with pelvic splanchnic parasympathetic supply (S2 to S4), which serves the hindgut rather than being the sympathetic level asked for here."}
+    ]
+  },
+  {
+    "question": "A sudden burst of nociceptive activity in the right first metatarsophalangeal joint will tend to affect the muscles below through flexor-withdrawal and crossed-extensor reflexes. Match each muscle to the expected response.",
+    "type": "matching",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Predict flexor-withdrawal and crossed-extensor effects from unilateral foot nociception.",
+    "pairs": [
+      {"prompt": "Right vastus medialis", "answer": "Inhibited"},
+      {"prompt": "Right hamstring", "answer": "Facilitated"},
+      {"prompt": "Right psoas", "answer": "Facilitated"},
+      {"prompt": "Right gluteus maximus", "answer": "Inhibited"},
+      {"prompt": "Left vastus medialis", "answer": "Facilitated"},
+      {"prompt": "Left hamstring", "answer": "Inhibited"},
+      {"prompt": "Left psoas", "answer": "Inhibited"},
+      {"prompt": "Left gluteus maximus", "answer": "Facilitated"}
+    ]
+  },
+  {
+    "question": "List the spinal levels most likely to exhibit somatic dysfunction when screening for parasympathetically mediated viscerosomatic reflexes.",
+    "type": "open",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the spinal regions screened for parasympathetic viscerosomatic reflexes.",
+    "answer": "C0 to C2, related to the vagus nerves. The sacrum and pelvis, related to S2 to S4.",
+    "rationale": "Cranial parasympathetic outflow to the trunk travels in the vagus and is associated with the upper cervical region. Sacral parasympathetic outflow is S2 to S4."
+  },
+  {
+    "question": "Where is spinal somatic dysfunction most likely to appear when a patient has a visceral dysfunction or visceral pathology?",
+    "type": "open",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "State where somatic dysfunction related to visceral disease is expected.",
+    "answer": "At or near the spinal levels from which the sympathetic and/or parasympathetic nerve supply to that organ originates.",
+    "rationale": "Viscerosomatic findings follow the segmental autonomic supply of the involved organ."
+  },
+  {
+    "question": "Complete the statements about spinal facilitation.\nA. The ________ of a pool of neurons (for example premotor neurons, motor neurons, or preganglionic sympathetic neurons in one or more segments) in a state of ________ excitation; in this state, less ________ ________ is required to trigger the discharge of impulses.\nB. A theory regarding the neurophysiological mechanisms underlying the neuronal activity associated with ________ ________.\nC. Facilitation may be due to a sustained increase in ________ ________, aberrant patterns of ________ ________, or changes within the affected neurons themselves or their chemical environment. Once established, facilitation can be ________ by regular CNS activity.",
+    "type": "open",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define spinal facilitation and what maintains it.",
+    "answer": "A. The maintenance of a pool of neurons in a state of partial or subthreshold excitation; in this state, less afferent stimulation is required to trigger the discharge of impulses.\nB. A theory regarding the neurophysiological mechanisms underlying the neuronal activity associated with somatic dysfunction.\nC. Facilitation may be due to a sustained increase in afferent input, aberrant patterns of afferent input, or changes within the affected neurons or their chemical environment. Once established, regular CNS activity can sustain the facilitation.",
+    "rationale": "Facilitation is a lowered threshold in a segmental pool of neurons, and it is one explanation for the neural activity of somatic dysfunction."
+  },
+  {
+    "question": "Which of the following is most characteristic of facilitation?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Recognize the defining feature of facilitation.",
+    "options": [
+      {"text": "Normal sympathetic segmental activity", "isCorrect": false, "rationale": "Facilitation is a state of partial excitation, not ordinary baseline sympathetic activity."},
+      {"text": "Subthreshold excitation of a pool of neurons", "isCorrect": true, "rationale": "Facilitation keeps a pool of neurons in partial or subthreshold excitation, so less afferent input is needed to fire them. It is a theory of the neural activity associated with somatic dysfunction and can be sustained by ordinary CNS activity."},
+      {"text": "Reduced tendency of sympathetic neurons to depolarize", "isCorrect": false, "rationale": "Facilitated neurons are easier to discharge, not harder."},
+      {"text": "Requires increased activity in descending pathways to maintain the state", "isCorrect": false, "rationale": "Once established, ordinary CNS activity can sustain facilitation. It does not require extra descending drive."},
+      {"text": "Tends to reduce the presence of somatic dysfunction", "isCorrect": false, "rationale": "Facilitation is offered as a mechanism of the neuronal activity associated with somatic dysfunction, not a process that clears it."}
+    ]
+  },
+  {
+    "question": "Which portion of the spinal grey matter contains the cell bodies of preganglionic sympathetic neurons?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Locate preganglionic sympathetic cell bodies in the spinal cord.",
+    "options": [
+      {"text": "Ventral horn", "isCorrect": false, "rationale": "The ventral horn contains somatic motor neurons."},
+      {"text": "Posterior horn", "isCorrect": false, "rationale": "The posterior horn is a sensory receiving area."},
+      {"text": "Lateral horn", "isCorrect": true, "rationale": "Preganglionic sympathetic cell bodies sit in the intermediolateral cell column of the lateral horn."},
+      {"text": "Periaqueductal gray", "isCorrect": false, "rationale": "Periaqueductal gray is in the midbrain, not spinal grey matter."}
+    ]
+  },
+  {
+    "question": "Which spinal cord level does not contain cell bodies of preganglionic sympathetic neurons?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify a spinal level outside the thoracolumbar sympathetic outflow.",
+    "options": [
+      {"text": "C2", "isCorrect": true, "rationale": "Preganglionic sympathetic cell bodies occupy the lateral horn from T1 to L2. C2 has none."},
+      {"text": "T2", "isCorrect": false, "rationale": "T2 is inside T1 to L2 and does contain these cell bodies."},
+      {"text": "T9", "isCorrect": false, "rationale": "T9 is inside T1 to L2."},
+      {"text": "L1", "isCorrect": false, "rationale": "L1 is inside T1 to L2."},
+      {"text": "L3", "isCorrect": false, "rationale": "L3 is at the lower edge of some descriptions of the column, but the level that clearly contains none of these cell bodies among the choices is C2."}
+    ]
+  },
+  {
+    "question": "Which spinal cord level is most likely to contain the cell body of a preganglionic sympathetic neuron that supplies the heart?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Place cardiac sympathetic preganglionic cell bodies.",
+    "options": [
+      {"text": "C2", "isCorrect": false, "rationale": "C2 has no preganglionic sympathetic cell bodies. Cardiac parasympathetics, not sympathetics, are associated with the vagus and C0 to C2."},
+      {"text": "T2", "isCorrect": true, "rationale": "Cardiac sympathetic preganglionic cell bodies lie in T1 to T5. T2 is inside that range."},
+      {"text": "T9", "isCorrect": false, "rationale": "T9 is below the T1 to T5 cardiac sympathetic outflow."},
+      {"text": "L1", "isCorrect": false, "rationale": "L1 is part of the general sympathetic column but not the cardiac outflow."},
+      {"text": "L3", "isCorrect": false, "rationale": "L3 is below the cardiac sympathetic levels."}
+    ]
+  },
+  {
+    "question": "Which spinal cord level is most likely to contain the cell body of a preganglionic sympathetic neuron that supplies the lung?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Place pulmonary sympathetic preganglionic cell bodies.",
+    "options": [
+      {"text": "C2", "isCorrect": false, "rationale": "C2 has no preganglionic sympathetic cell bodies."},
+      {"text": "T2", "isCorrect": true, "rationale": "Pulmonary sympathetic preganglionic cell bodies lie in T2 to T7. T2 is inside that range."},
+      {"text": "T9", "isCorrect": false, "rationale": "T9 is below the T2 to T7 pulmonary sympathetic outflow."},
+      {"text": "L1", "isCorrect": false, "rationale": "L1 supplies lower abdominal and pelvic viscera, not the lung."},
+      {"text": "L3", "isCorrect": false, "rationale": "L3 is outside the pulmonary sympathetic range."}
+    ]
+  },
+  {
+    "question": "Which spinal level is most likely to exhibit a somatic dysfunction related to aberrant parasympathetic output to the heart?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Localize somatic dysfunction related to cardiac parasympathetic output.",
+    "options": [
+      {"text": "C2", "isCorrect": true, "rationale": "Parasympathetic supply to the heart is vagal and is associated with somatic dysfunction at C0 to C2."},
+      {"text": "T2", "isCorrect": false, "rationale": "T2 is a sympathetic level for the heart, not the parasympathetic level."},
+      {"text": "T9", "isCorrect": false, "rationale": "T9 is neither vagal nor within T1 to T5 cardiac sympathetics."},
+      {"text": "L1", "isCorrect": false, "rationale": "L1 is a lower sympathetic level and does not carry cardiac parasympathetic output."},
+      {"text": "L3", "isCorrect": false, "rationale": "L3 is unrelated to vagal supply to the heart."}
+    ]
+  },
+  {
+    "question": "Which somatic dysfunction is most likely associated with abnormal afferent sympathetic activity from the heart?",
+    "type": "mcq",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Choose the cardiac sympathetic somatic dysfunction from a set of diagnoses.",
+    "options": [
+      {"text": "OA SLRR", "isCorrect": false, "rationale": "The OA is associated with vagal parasympathetic influence, not cardiac sympathetic afferents."},
+      {"text": "C2 NSLRR", "isCorrect": false, "rationale": "C2 is in the vagal parasympathetic region, C0 to C2."},
+      {"text": "T1 NSRRL", "isCorrect": false, "rationale": "T1 is in the T1 to T5 cardiac sympathetic range, but a neutral type I diagnosis is less typical of this segmental association than a non-neutral type II dysfunction."},
+      {"text": "T3 ERLSL", "isCorrect": true, "rationale": "Cardiac sympathetics span T1 to T5. T3 ERLSL is inside that range and is a non-neutral type II dysfunction, which is the pattern more typically linked to this finding."},
+      {"text": "T8 FRRSR", "isCorrect": false, "rationale": "T8 is below the T1 to T5 cardiac sympathetic range."}
+    ]
+  },
+  {
+    "question": "At what location is the most common viscerosomatic TART change related to the heart?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the most common cardiac viscerosomatic TART location.",
+    "options": [
+      {"text": "Left T1", "isCorrect": false, "rationale": "Left T1 is inside the T1 to T4 or T5 cardiac range, but it is not the most common site."},
+      {"text": "Right T1", "isCorrect": false, "rationale": "Cardiac viscerosomatic change is more often left-sided, and T2 is the most common level."},
+      {"text": "Left T2", "isCorrect": true, "rationale": "Cardiac viscerosomatic reflexes occur from about T1 to T4 or T5. Left T2 is the most common location."},
+      {"text": "Right T2", "isCorrect": false, "rationale": "T2 is the common level, but the most common side is the left."},
+      {"text": "Left T3", "isCorrect": false, "rationale": "Left T3 can be involved, but left T2 is the most common site."},
+      {"text": "Right T3", "isCorrect": false, "rationale": "Right T3 is neither the most common level nor the most common side."},
+      {"text": "Left T4", "isCorrect": false, "rationale": "Left T4 is at the lower end of the common range, not the most frequent site."},
+      {"text": "Right T4", "isCorrect": false, "rationale": "Right T4 is the least typical of the classic left T2 finding."}
+    ]
+  },
+  {
+    "question": "Which statement about the enteric nervous system is most accurate?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the independence of the enteric nervous system.",
+    "options": [
+      {"text": "It requires continuous input from the vagus nerve to function", "isCorrect": false, "rationale": "The enteric nervous system can operate without continuous vagal drive."},
+      {"text": "It can coordinate gastrointestinal motility independently of the CNS and ANS", "isCorrect": true, "rationale": "The enteric nervous system can coordinate GI activity on its own and still interact with sympathetic and parasympathetic input."},
+      {"text": "It contains only sympathetic postganglionic neurons", "isCorrect": false, "rationale": "The enteric plexuses are a separate network, not a chain made only of sympathetic postganglionic cells."},
+      {"text": "It has no clinical relevance to OMT", "isCorrect": false, "rationale": "Autonomic and somatovisceral effects on the gut are clinically relevant to osteopathic treatment."}
+    ]
+  },
+  {
+    "question": "Which pairing of preganglionic and postganglionic neurotransmitters is correct for the sympathetic nervous system in most target organs?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the usual sympathetic preganglionic and postganglionic transmitters.",
+    "options": [
+      {"text": "ACh preganglionic and ACh postganglionic", "isCorrect": false, "rationale": "Acetylcholine at both synapses is the parasympathetic pattern, and also the sympathetic exception at sweat glands."},
+      {"text": "NE preganglionic and NE postganglionic", "isCorrect": false, "rationale": "Preganglionic autonomic neurons release acetylcholine, not norepinephrine."},
+      {"text": "ACh preganglionic and NE postganglionic", "isCorrect": true, "rationale": "Sympathetic preganglionic neurons release acetylcholine onto nicotinic receptors. Most sympathetic postganglionic neurons release norepinephrine onto adrenergic receptors."},
+      {"text": "NE preganglionic and ACh postganglionic", "isCorrect": false, "rationale": "This reverses both transmitters."}
+    ]
+  },
+  {
+    "question": "Which cranial nerve provides the majority of parasympathetic outflow to thoracic and upper abdominal viscera?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the cranial nerve carrying parasympathetic supply to the chest and upper abdomen.",
+    "options": [
+      {"text": "CN III", "isCorrect": false, "rationale": "CN III supplies the pupil and ciliary muscle."},
+      {"text": "CN VII", "isCorrect": false, "rationale": "CN VII supplies lacrimal, nasal, and salivary glands."},
+      {"text": "CN IX", "isCorrect": false, "rationale": "CN IX supplies the parotid gland."},
+      {"text": "CN X", "isCorrect": true, "rationale": "The vagus nerve supplies parasympathetic input to thoracic and upper abdominal organs."}
+    ]
+  },
+  {
+    "question": "Which statement best distinguishes facilitation from central sensitization?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Distinguish facilitation from central sensitization.",
+    "options": [
+      {"text": "Facilitation is a cortical phenomenon, and central sensitization is segmental", "isCorrect": false, "rationale": "This reverses the geography. Facilitation is segmental. Central sensitization is broader CNS processing."},
+      {"text": "Facilitation describes a lowered activation threshold in segmental spinal neurons; central sensitization describes amplified nociceptive processing within the CNS", "isCorrect": true, "rationale": "Facilitation is segmental hyperexcitability. Central sensitization is amplified nociceptive processing in the CNS."},
+      {"text": "Both terms describe identical spinal mechanisms", "isCorrect": false, "rationale": "They are related ideas about excitability, but they are not the same mechanism."},
+      {"text": "Central sensitization is limited to acute injury", "isCorrect": false, "rationale": "Central sensitization is used to explain persistent pain, not only acute injury."}
+    ]
+  },
+  {
+    "question": "Which structure contains the cell bodies of preganglionic sympathetic neurons that project to prevertebral ganglia such as the celiac ganglion?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Locate the cell bodies that project to prevertebral ganglia.",
+    "options": [
+      {"text": "Dorsal horn", "isCorrect": false, "rationale": "The dorsal horn receives sensory input. It does not house these preganglionic cell bodies."},
+      {"text": "Ventral horn", "isCorrect": false, "rationale": "The ventral horn contains somatic motor neurons."},
+      {"text": "Lateral horn of T1 to L2", "isCorrect": true, "rationale": "Preganglionic sympathetic neurons arise from the intermediolateral cell column in the lateral horn of T1 to L2, including those that reach the celiac ganglion."},
+      {"text": "Dorsal root ganglion", "isCorrect": false, "rationale": "The dorsal root ganglion contains sensory cell bodies."}
+    ]
+  },
+  {
+    "question": "Which of the following correctly matches a viscerosomatic relationship?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Match an organ to its sympathetic viscerosomatic levels.",
+    "options": [
+      {"text": "Heart with T7 to T9", "isCorrect": false, "rationale": "The heart maps to about T1 to T5, not T7 to T9."},
+      {"text": "Stomach with T5 to T9", "isCorrect": true, "rationale": "The stomach commonly maps to T5 to T9. The heart maps to T1 to T5, the lungs to T2 to T7, and the distal colon receives sympathetic innervation from about T12 to L2."},
+      {"text": "Lung with T10 to L2", "isCorrect": false, "rationale": "The lungs map to about T2 to T7."},
+      {"text": "Colon with T1 to T4", "isCorrect": false, "rationale": "T1 to T4 fits the heart more than the colon. Distal colon sympathetics are about T12 to L2."}
+    ]
+  },
+  {
+    "question": "A patient has right lower quadrant pain and segmental TART changes at T12 to L1. Which mechanism best explains this pattern?",
+    "type": "mcq",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain segmental TART findings associated with appendiceal pain.",
+    "options": [
+      {"text": "Somatosomatic reflex from abdominal wall strain", "isCorrect": false, "rationale": "Abdominal wall strain could change the soma, but it does not explain findings segmentally tied to an inflamed appendix."},
+      {"text": "Somatovisceral reflex from paraspinal spasm altering cecal motility", "isCorrect": false, "rationale": "That direction would start in the soma and change the viscus. Here the visceral process is explaining the somatic findings."},
+      {"text": "Viscerosomatic reflex from appendiceal afferents converging on spinal segments", "isCorrect": true, "rationale": "Visceral afferents from the appendix converge on spinal neurons and produce segmental somatic findings."},
+      {"text": "Viscerovisceral reflex from colon to stomach", "isCorrect": false, "rationale": "A viscerovisceral reflex would change another viscus, not produce thoracic TART changes."}
+    ]
+  },
+  {
+    "question": "Which OMT choice is most appropriate to directly reduce excessive sympathetic tone at thoracic levels?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Select an OMT technique aimed at thoracic sympathetic tone.",
+    "options": [
+      {"text": "Suboccipital release", "isCorrect": false, "rationale": "Suboccipital release is used to influence vagal parasympathetic tone."},
+      {"text": "Rib raising", "isCorrect": true, "rationale": "Rib raising targets thoracic sympathetics and can decrease sympathetic output."},
+      {"text": "Sacral rocking", "isCorrect": false, "rationale": "Sacral techniques address sacral parasympathetic levels, S2 to S4."},
+      {"text": "OA decompression", "isCorrect": false, "rationale": "OA decompression is aimed at the vagal region, not thoracic sympathetics."}
+    ]
+  },
+  {
+    "question": "Which heart rate variability finding is most consistent with increased parasympathetic activity after OMT?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Interpret an HRV change as increased vagal activity.",
+    "options": [
+      {"text": "Decrease in time-domain measures such as RMSSD", "isCorrect": false, "rationale": "Higher RMSSD, not a decrease, generally reflects increased vagal activity."},
+      {"text": "Increase in high-frequency power", "isCorrect": true, "rationale": "Increased high-frequency power, along with higher RMSSD, generally reflects increased vagal activity."},
+      {"text": "Increase in the low-to-high frequency ratio", "isCorrect": false, "rationale": "A higher LF/HF ratio is read as relatively more sympathetic, or less vagal, balance."},
+      {"text": "Reduction in total power with no other change", "isCorrect": false, "rationale": "A drop in total power alone does not indicate increased parasympathetic activity."}
+    ]
+  },
+  {
+    "question": "Which statement about white and gray rami communicantes is correct?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Distinguish white rami from gray rami.",
+    "options": [
+      {"text": "White rami are present at all spinal levels", "isCorrect": false, "rationale": "White rami exist only at T1 to L2."},
+      {"text": "Gray rami are present only at T1 to L2", "isCorrect": false, "rationale": "Gray rami are present at all spinal levels."},
+      {"text": "White rami carry preganglionic sympathetic fibers from T1 to L2 into the sympathetic chain", "isCorrect": true, "rationale": "White rami exist only at T1 to L2 and carry preganglionic fibers into the chain. Gray rami exist at all levels and return postganglionic fibers to spinal nerves."},
+      {"text": "Gray rami carry preganglionic fibers back to the spinal nerves", "isCorrect": false, "rationale": "Gray rami carry postganglionic fibers back to the spinal nerves."}
+    ]
+  },
+  {
+    "question": "Which reflex type best explains improvement in bowel motility after paraspinal inhibition at T10 to L2 in a patient with postoperative ileus?",
+    "type": "mcq",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Classify the reflex that links paraspinal OMT to bowel motility.",
+    "options": [
+      {"text": "Somatosomatic", "isCorrect": false, "rationale": "The observed change is visceral motility, not a somatic motor response."},
+      {"text": "Viscerovisceral", "isCorrect": false, "rationale": "The input is somatic treatment, not another viscus."},
+      {"text": "Somatovisceral", "isCorrect": true, "rationale": "Somatic input from OMT can influence visceral function through a somatovisceral reflex."},
+      {"text": "Viscerosomatic", "isCorrect": false, "rationale": "A viscerosomatic reflex would produce somatic findings from the viscus. Here treatment of the soma is followed by a visceral change."}
+    ]
+  },
+  {
+    "question": "A patient with orthostatic intolerance has an excessive heart-rate increase on standing. Which integrated OMT focus is most appropriate to support autonomic rebalancing?",
+    "type": "mcq",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Choose an OMT focus for orthostatic intolerance.",
+    "options": [
+      {"text": "Lower cervical HVLA and lumbar HVLA only", "isCorrect": false, "rationale": "Isolated HVLA at those regions does not address vagal and thoracic-inlet autonomic balance."},
+      {"text": "Suboccipital release and thoracic inlet myofascial release, with reassessment of heart rate and symptoms", "isCorrect": true, "rationale": "Suboccipital and thoracic inlet approaches support vagal tone and regional autonomic balance, and the response should be reassessed."},
+      {"text": "Sacral rocking only", "isCorrect": false, "rationale": "Sacral parasympathetic work does not address the cranial vagal and thoracic inlet regions most relevant to this presentation."},
+      {"text": "Direct costochondral mobilization only", "isCorrect": false, "rationale": "Local costochondral mobilization does not target the autonomic regions described for this problem."}
+    ]
+  },
+  {
+    "question": "How does understanding the organization of the autonomic nervous system change how you approach a patient with symptoms such as fatigue, dizziness, or gastrointestinal discomfort?",
+    "type": "open",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Apply autonomic organization to a patient with fatigue, dizziness, or gastrointestinal discomfort.",
+    "answer": "Recognizing the autonomic patterns behind these symptoms helps me look for regional somatic dysfunctions that might influence sympathetic or parasympathetic tone. For instance, upper thoracic dysfunction might relate to altered sympathetic drive, while sacral dysfunction could point toward parasympathetic imbalance. This understanding allows treatment aimed at restoring autonomic balance rather than only treating symptoms.",
+    "rationale": "Example answer. Other clinically sound responses are acceptable."
+  },
+  {
+    "question": "Why is it clinically significant that sympathetic and parasympathetic systems often exert opposite effects on the same organ?",
+    "type": "open",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the clinical value of opposing autonomic effects on one organ.",
+    "answer": "This dual control provides a mechanism for fine-tuning organ activity. OMT can be directed to influence autonomic tone depending on the dysfunction. For example, rib raising could influence sympathetic overactivity in a constipated patient, while suboccipital release can influence parasympathetic activity to support digestion.",
+    "rationale": "Example answer. Other clinically sound responses are acceptable."
+  },
+  {
+    "question": "How do viscerosomatic reflexes influence the interpretation of TART findings during a structural exam?",
+    "type": "open",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Use viscerosomatic reflexes when interpreting TART findings.",
+    "answer": "Viscerosomatic reflexes are a reminder that somatic findings may not always originate from musculoskeletal strain. For example, a T5 dysfunction could reflect stomach irritation rather than local trauma. The structural exam should include possible visceral sources of somatic change.",
+    "rationale": "Example answer. Other clinically sound responses are acceptable."
+  },
+  {
+    "question": "What is the importance of facilitation in explaining why certain somatic dysfunctions recur or persist even after effective treatment?",
+    "type": "open",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain recurrence of somatic dysfunction using facilitation.",
+    "answer": "Facilitation explains how chronic sensory input from a dysfunctional region keeps spinal neurons in a heightened state of excitability. Even after local tissue tension resolves, the spinal segment may react abnormally to minor stimuli, and symptoms return. Recognizing facilitation supports repeated treatment and patient education to break that cycle.",
+    "rationale": "Example answer. Other clinically sound responses are acceptable."
+  },
+  {
+    "question": "How does central sensitization deepen your understanding of chronic pain beyond structural causes?",
+    "type": "open",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Relate central sensitization to chronic pain that outlasts structural findings.",
+    "answer": "Central sensitization shows that chronic pain can be maintained by altered central processing, not only by peripheral injury. Addressing somatic dysfunction together with contributors such as stress or sleep, and explaining why pain may persist despite unremarkable imaging, follows from that idea.",
+    "rationale": "Example answer. Other clinically sound responses are acceptable."
+  },
+  {
+    "question": "In what ways can referred pain complicate diagnosis, and how can osteopathic knowledge of segmental relationships clarify these cases?",
+    "type": "open",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Use segmental relationships to interpret referred pain.",
+    "answer": "Referred pain can mask the true source of pathology, such as shoulder pain caused by gallbladder irritation. Knowing segmental innervation patterns allows the pain to be traced toward a visceral source, which helps avoid unnecessary local treatment and directs appropriate care.",
+    "rationale": "Example answer. Other clinically sound responses are acceptable."
+  },
+  {
+    "question": "How can OMT be used strategically to influence autonomic balance in systemic conditions such as anxiety, irritable bowel syndrome, or hypertension?",
+    "type": "open",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Plan OMT that targets sympathetic or parasympathetic pathways in systemic conditions.",
+    "answer": "Knowing which spinal levels relate to sympathetic and parasympathetic pathways allows targeted OMT aimed at normalizing tone. Thoracic soft tissue work can address sympathetic drive in hypertension, while cranial and suboccipital techniques can address parasympathetic activity in anxiety.",
+    "rationale": "Example answer. Other clinically sound responses are acceptable."
+  },
+  {
+    "question": "Why is it important to consider both the sympathetic and parasympathetic systems when designing an OMT plan?",
+    "type": "open",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Justify treating both autonomic divisions in one OMT plan.",
+    "answer": "Focusing on only one division can miss compensatory activity in the other. Reducing sympathetic tone without supporting parasympathetic function may not restore balance. An effective plan often includes both thoracic and craniosacral work.",
+    "rationale": "Example answer. Other clinically sound responses are acceptable."
+  },
+  {
+    "question": "How do clinical findings such as tenderness or tissue texture changes help distinguish a viscerosomatic reflex from a purely musculoskeletal strain?",
+    "type": "open",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Distinguish viscerosomatic tissue texture change from musculoskeletal strain.",
+    "answer": "Viscerosomatic reflexes often present as firm, ropy, or rubbery, less mobile tissue that may recur or fail to improve with direct mechanical treatment alone. The findings also tend to be segmentally consistent with the affected organ. That pattern should prompt consideration of visceral involvement and referral when needed.",
+    "rationale": "Example answer. Other clinically sound responses are acceptable."
+  },
+  {
+    "question": "How might awareness of autonomic patterns and reflex physiology improve collaboration between osteopathic physicians and other healthcare professionals?",
+    "type": "open",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe how autonomic reflex knowledge supports interprofessional care.",
+    "answer": "It supports a shared understanding of symptoms that cross organ systems. For example, an osteopathic physician can explain to a cardiologist how upper thoracic dysfunction may perpetuate sympathetic activity that influences heart rate, while the cardiologist addresses medical management.",
+    "rationale": "Example answer. Other clinically sound responses are acceptable."
+  },
+  {
+    "question": "Define spatial and temporal summation, and explain how they contribute to segmental output patterns within wide-dynamic-range interneurons.",
+    "type": "open",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define spatial and temporal summation at wide-dynamic-range interneurons.",
+    "answer": "Spatial summation occurs when multiple afferent inputs from different sources converge on a single pool of interneurons at the same time and together reach threshold.\nTemporal summation occurs when a single afferent fiber delivers repeated impulses rapidly enough to produce a cumulative depolarizing effect.\nTogether these mechanisms set the excitability of segmental circuits and explain how small or repeated stimuli can amplify motor or autonomic output.",
+    "rationale": "Example answer. Other clinically sound responses are acceptable."
+  },
+  {
+    "question": "Provide an example of a distal or contralateral reflex effect produced by persistent unilateral nociceptive input.",
+    "type": "open",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Give an example of spread from persistent unilateral nociception.",
+    "answer": "Sustained nociceptive input from the right thoracic paraspinal region may activate interneuronal pools that extend to adjacent and contralateral spinal segments. This can increase tone or tenderness on the opposite side even without direct tissue irritation there. The finding reflects interneuronal spread and supports treating the functional region, not only the painful side.",
+    "rationale": "Example answer. Other clinically sound responses are acceptable."
+  },
+  {
+    "question": "Distinguish between primary and secondary somatic dysfunction in the context of viscerosomatic reflexes.",
+    "type": "open",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Distinguish primary from secondary somatic dysfunction.",
+    "answer": "A primary somatic dysfunction arises on its own, such as a thoracic segment restricted after trauma. A secondary dysfunction occurs in response to another condition, such as gallbladder inflammation producing right mid-thoracic tissue texture changes. Secondary dysfunctions often recur until the visceral or systemic cause is addressed. The distinction directs treatment of both the somatic finding and its physiologic driver.",
+    "rationale": "Example answer. Other clinically sound responses are acceptable."
+  },
+  {
+    "question": "For a sympathetic organ table, what three items should you identify for each organ system?",
+    "type": "open",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List the three columns of a sympathetic organ table.",
+    "answer": "For each organ system, identify (1) the spinal level providing sympathetic innervation, (2) the effect of increased sympathetic stimulation, and (3) the effect of decreased sympathetic stimulation. The source self-study set named these columns but did not include the completed organ rows.",
+    "rationale": "Use the sympathetic levels and end-organ effects from your autonomics notes to complete each row."
+  },
+  {
+    "question": "For a parasympathetic organ table, what three items should you identify for each organ system?",
+    "type": "open",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List the three columns of a parasympathetic organ table.",
+    "answer": "For each organ system, identify (1) the parasympathetic source, (2) the effect of increased parasympathetic stimulation, and (3) the effect of decreased parasympathetic stimulation. The source self-study set named these columns but did not include the completed organ rows.",
+    "rationale": "Cranial parasympathetic sources include the vagus for thoracic and upper abdominal viscera. Sacral parasympathetic supply is S2 to S4."
+  },
+  {
+    "question": "A 45-year-old man has right upper quadrant discomfort after a fatty meal. Tissue texture changes and tenderness are present at T6 to T9 on the right, with a firm, ropy paraspinal feel. Which type of reflex best explains the relationship between the gallbladder and these thoracic findings?",
+    "type": "mcq",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Classify gallbladder-related thoracic findings.",
+    "options": [
+      {"text": "Somatosomatic", "isCorrect": false, "rationale": "A somatosomatic reflex would link two somatic structures. The driver here is the gallbladder."},
+      {"text": "Viscerovisceral", "isCorrect": false, "rationale": "A viscerovisceral reflex would change another viscus, not thoracic tissue texture."},
+      {"text": "Somatovisceral", "isCorrect": false, "rationale": "Somatovisceral influence runs from soma to viscus. These findings run from the gallbladder to the soma."},
+      {"text": "Viscerosomatic", "isCorrect": true, "rationale": "Visceral afferent input from the gallbladder produces a somatic response in the related spinal segments. The gallbladder receives sympathetic innervation from about T6 to T9 on the right via the celiac ganglion."},
+      {"text": "Somatoautonomic", "isCorrect": false, "rationale": "The findings are somatic changes produced by the viscus, which is the viscerosomatic pattern."}
+    ]
+  },
+  {
+    "question": "A patient with a left pectoralis major trigger point has intermittent cardiac arrhythmia. The best classification of this reflex connection is:",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Classify a pectoralis trigger point linked to arrhythmia.",
+    "options": [
+      {"text": "Somatovisceral", "isCorrect": true, "rationale": "Somatic afferent input from the trigger point produces a visceral effect through autonomic pathways. A pectoralis trigger point may alter sympathetic tone to the heart and disturb rhythm."},
+      {"text": "Viscerovisceral", "isCorrect": false, "rationale": "Both ends of a viscerovisceral reflex are visceral. The trigger point is somatic."},
+      {"text": "Somatosomatic", "isCorrect": false, "rationale": "The response of interest is a cardiac rhythm change, which is visceral."},
+      {"text": "Viscerosomatic", "isCorrect": false, "rationale": "A viscerosomatic reflex would start in the heart and change the soma. This item starts in the muscle."},
+      {"text": "Somatoautonomic", "isCorrect": false, "rationale": "The specific classification requested is somatovisceral: somatic input with a visceral effect."}
+    ]
+  },
+  {
+    "question": "A patient with acute gastroenteritis develops reflex hypermotility of the colon and increased gastric secretion because adjacent visceral organs are communicating. Which type of reflex best describes this?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Classify a reflex between gastrointestinal organs.",
+    "options": [
+      {"text": "Viscerosomatic", "isCorrect": false, "rationale": "The response described is in other viscera, not in somatic tissue."},
+      {"text": "Somatovisceral", "isCorrect": false, "rationale": "The input is from an irritated viscus, not from the soma."},
+      {"text": "Viscerovisceral", "isCorrect": true, "rationale": "Afferent signals from one visceral organ change efferent output to another visceral organ. Irritation of the gut alters motility and secretion elsewhere in the gastrointestinal tract."},
+      {"text": "Somatosomatic", "isCorrect": false, "rationale": "Neither the stimulus nor the response is somatic."},
+      {"text": "Somatoautonomic", "isCorrect": false, "rationale": "The connection is viscus to viscus, which is viscerovisceral."}
+    ]
+  }
+]

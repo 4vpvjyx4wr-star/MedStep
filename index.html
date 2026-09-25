@@ -761,9 +761,11 @@ textarea:focus{outline:none;border-color:var(--primary)}
   width:100%;box-sizing:border-box;border:1px solid var(--border);border-radius:10px;
   background:rgba(255,255,255,.03);color:var(--text);font:inherit;padding:12px 14px;
 }
-.fill-input:focus,.match-select:focus{outline:none;border-color:var(--primary)}
+.fill-input:focus,.match-select:focus,.fill-textarea:focus{outline:none;border-color:var(--primary)}
+.fill-textarea{min-height:140px;resize:vertical;line-height:1.45}
+.fill-actions{display:flex;flex-wrap:wrap;gap:8px}
 .fill-submit{align-self:flex-start}
-.fill-reveal,.match-key{font-size:.92rem;line-height:1.45;padding:10px 12px;border-radius:10px;border:1px solid var(--border)}
+.fill-reveal,.match-key{font-size:.92rem;line-height:1.45;padding:10px 12px;border-radius:10px;border:1px solid var(--border);white-space:pre-wrap}
 .fill-reveal.ok,.match-key.ok{border-color:var(--success);background:rgba(46,204,113,.08)}
 .fill-reveal.bad,.match-key.bad{border-color:var(--danger);background:rgba(231,76,60,.08)}
 .match-row{display:flex;flex-direction:column;gap:6px;padding:10px 0;border-bottom:1px solid var(--border)}
@@ -3183,6 +3185,9 @@ function normalizeQuizQuestion(q){
 function isFillBlankQuestion(q){
   return !!(q&&q.type==='fill_blank'&&String(q.answer||'').trim());
 }
+function isOpenQuestion(q){
+  return !!(q&&q.type==='open'&&String(q.answer||'').trim());
+}
 function isMatchingQuestion(q){
   return !!(q&&q.type==='matching'&&Array.isArray(q.pairs)&&q.pairs.length);
 }
@@ -3190,7 +3195,7 @@ function isSourceMcq(q){
   return !!(q&&q.type==='mcq'&&Array.isArray(q.options)&&q.options.length>=2&&q.options.some(o=>o&&o.isCorrect));
 }
 function isPlayableQuestion(q){
-  if(isFillBlankQuestion(q)||isMatchingQuestion(q)||isSourceMcq(q)) return true;
+  if(isFillBlankQuestion(q)||isOpenQuestion(q)||isMatchingQuestion(q)||isSourceMcq(q)) return true;
   return Array.isArray(q&&q.options)&&q.options.length>=MIN_QUIZ_OPTIONS;
 }
 function normalizeBlankAnswer(s){
@@ -8890,7 +8895,7 @@ function updateEditQuestionButton() {
   const quizEl = document.getElementById('quiz-screen');
   const onQuiz = !!(quizEl && !quizEl.classList.contains('hidden'));
   const qNow=questions[currentIdx];
-  const show = onQuiz && questions.length && qNow && !isFillBlankQuestion(qNow) && !isMatchingQuestion(qNow) && !!currentQuestionEditTarget();
+  const show = onQuiz && questions.length && qNow && !isFillBlankQuestion(qNow) && !isOpenQuestion(qNow) && !isMatchingQuestion(qNow) && !!currentQuestionEditTarget();
   btn.style.display = show ? 'inline' : 'none';
 }
 
@@ -9627,7 +9632,7 @@ function canonicalMedstepKey(key) {
 function isQuestionObject(obj) {
   return obj && typeof obj === 'object' && !Array.isArray(obj)
     && (obj.stem != null || obj.question != null || obj.prompt != null)
-    && (obj.choices != null || obj.options != null || obj.answers != null || obj.type==='fill_blank' || obj.type==='matching' || obj.answer != null);
+    && (obj.choices != null || obj.options != null || obj.answers != null || obj.type==='fill_blank' || obj.type==='open' || obj.type==='matching' || obj.answer != null);
 }
 
 function looksLikePersonalLibraryEntries(arr) {
@@ -9972,6 +9977,8 @@ function loadQuestion(idx){
   const list=document.getElementById('options-list');list.innerHTML='';
   if(isFillBlankQuestion(q)){
     renderFillBlank(q, list);
+  } else if(isOpenQuestion(q)){
+    renderOpen(q, list);
   } else if(isMatchingQuestion(q)){
     renderMatching(q, list);
   } else (q.options||[]).forEach((opt,i)=>{
@@ -10074,10 +10081,15 @@ function renderMatching(q, list){
     blank.value='';
     blank.textContent='Select a match';
     sel.appendChild(blank);
+    const seenAnswers=new Set();
     choiceOrder.forEach(ci=>{
+      const label=q.pairs[ci].answer;
+      const key=normalizeBlankAnswer(label);
+      if(seenAnswers.has(key)) return;
+      seenAnswers.add(key);
       const opt=document.createElement('option');
       opt.value=String(ci);
-      opt.textContent=q.pairs[ci].answer;
+      opt.textContent=label;
       sel.appendChild(opt);
     });
     const chosen=q.userAnswer?q.userAnswer.selections[pairIdx]:q._matchDraft[pairIdx];
@@ -10105,14 +10117,86 @@ function renderMatching(q, list){
   }
   list.appendChild(block);
 }
+function renderOpen(q, list){
+  const block=document.createElement('div');
+  block.className='fill-block';
+  if(q.userAnswer){
+    if(q.userAnswer.text){
+      const yours=document.createElement('div');
+      yours.className='fill-reveal';
+      yours.textContent='Your notes: '+q.userAnswer.text;
+      block.appendChild(yours);
+    }
+    const key=document.createElement('div');
+    key.className='fill-reveal '+(q.userAnswer.isCorrect?'ok':'bad');
+    key.textContent='Model answer: '+q.answer;
+    block.appendChild(key);
+    if(q.rationale){
+      const rat=document.createElement('div');
+      rat.className='rationale-bubble';
+      rat.textContent=q.rationale;
+      block.appendChild(rat);
+    }
+  } else if(q._openRevealed){
+    const key=document.createElement('div');
+    key.className='fill-reveal ok';
+    key.textContent='Model answer: '+q.answer;
+    block.appendChild(key);
+    if(q.rationale){
+      const rat=document.createElement('div');
+      rat.className='rationale-bubble';
+      rat.textContent=q.rationale;
+      block.appendChild(rat);
+    }
+    const actions=document.createElement('div');
+    actions.className='fill-actions';
+    const knew=document.createElement('button');
+    knew.type='button';
+    knew.className='btn btn-primary fill-submit';
+    knew.textContent='I knew this';
+    knew.onclick=()=>submitOpen(true);
+    const missed=document.createElement('button');
+    missed.type='button';
+    missed.className='btn btn-secondary fill-submit';
+    missed.textContent='I need to review';
+    missed.onclick=()=>submitOpen(false);
+    actions.appendChild(knew);
+    actions.appendChild(missed);
+    block.appendChild(actions);
+  } else {
+    const input=document.createElement('textarea');
+    input.className='fill-input fill-textarea';
+    input.placeholder='Write your answer, then reveal the model answer';
+    input.value=q._fillDraft||'';
+    input.oninput=()=>{ q._fillDraft=input.value; };
+    const btn=document.createElement('button');
+    btn.type='button';
+    btn.className='btn btn-primary fill-submit';
+    btn.textContent='Show model answer';
+    btn.onclick=()=>{ q._openRevealed=true; loadQuestion(currentIdx); };
+    block.appendChild(input);
+    block.appendChild(btn);
+  }
+  list.appendChild(block);
+}
+function submitOpen(knew){
+  const q=questions[currentIdx];
+  if(!q||q.userAnswer||!isOpenQuestion(q)) return;
+  commitUserAnswer(q,{
+    text:String(q._fillDraft||'').trim(),
+    isCorrect:!!knew,
+    rationale:q.rationale||''
+  });
+}
 function submitFillBlank(){
   const q=questions[currentIdx];
   if(!q||q.userAnswer||!isFillBlankQuestion(q)) return;
   const typed=String(q._fillDraft||'').trim();
   if(!typed){ showToast('Type an answer first'); return; }
+  const keys=[q.answer].concat(Array.isArray(q.accept)?q.accept:[]);
   commitUserAnswer(q,{
     text:typed,
-    isCorrect:blankAnswersMatch(typed, q.answer),
+    isCorrect:keys.some(key=>blankAnswersMatch(typed, key)),
     rationale:q.rationale||''
   });
 }
@@ -10192,7 +10276,7 @@ function scrambleAll(){
   shuffle(answered);
   questions=unanswered.concat(answered);
   questions.forEach(q=>{
-    if(isFillBlankQuestion(q)||isMatchingQuestion(q)) return;
+    if(isFillBlankQuestion(q)||isOpenQuestion(q)||isMatchingQuestion(q)) return;
     if(!Array.isArray(q.options)) q.options=[];
     const p=q.userAnswer?.text;
     shuffle(q.options);
@@ -10258,7 +10342,7 @@ function showResults(){
 }
 
 function keyedAnswerText(q){
-  if(isFillBlankQuestion(q)) return q.answer;
+  if(isFillBlankQuestion(q)||isOpenQuestion(q)) return q.answer;
   if(isMatchingQuestion(q)) return q.pairs.map(p=>p.prompt+' → '+p.answer).join('; ');
   const correct=Array.isArray(q.options)?q.options.find(o=>o.isCorrect):null;
   return correct?correct.text:'N/A';
@@ -10313,7 +10397,7 @@ function questionsToJSON(list){
     question:q.question,
     learning_objective:q.cited_learning_objective||null,
     type:q.type||'mcq',
-    answer:isFillBlankQuestion(q)?q.answer:undefined,
+    answer:(isFillBlankQuestion(q)||isOpenQuestion(q))?q.answer:undefined,
     pairs:isMatchingQuestion(q)?q.pairs:undefined,
     options:Array.isArray(q.options)?q.options.map((o,i)=>({letter:optionLetter(i),text:o.text,is_correct:o.isCorrect,rationale:o.rationale||null})):[],
     user_answer:q.userAnswer?{text:q.userAnswer.text,is_correct:q.userAnswer.isCorrect}:null
@@ -10475,7 +10559,7 @@ function persistActiveQuiz(immediate){
 }
 function relinkUserAnswers(qs){
   (qs||[]).forEach(q=>{
-    if(!q||!q.userAnswer||!Array.isArray(q.options)||isFillBlankQuestion(q)||isMatchingQuestion(q)) return;
+    if(!q||!q.userAnswer||!Array.isArray(q.options)||isFillBlankQuestion(q)||isOpenQuestion(q)||isMatchingQuestion(q)) return;
     const match=q.options.find(o=>o&&o.text===q.userAnswer.text);
     if(match) q.userAnswer=match;
   });
