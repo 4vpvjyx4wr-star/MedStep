@@ -770,6 +770,60 @@ textarea:focus{outline:none;border-color:var(--primary)}
 .fill-reveal.bad,.match-key.bad{border-color:var(--danger);background:rgba(231,76,60,.08)}
 .match-row{display:flex;flex-direction:column;gap:6px;padding:10px 0;border-bottom:1px solid var(--border)}
 .match-prompt{font-weight:650}
+.match-select-wrap{position:relative}
+.match-select-trigger{
+  position:relative;width:100%;box-sizing:border-box;display:flex;align-items:center;
+  margin:0;cursor:pointer;text-align:left;
+  font-family:var(--font-display);font-size:.92rem;font-weight:600;
+  letter-spacing:.01em;line-height:1.35;color:var(--text);
+  background:var(--card);
+  border:1px solid var(--border);border-radius:10px;
+  padding:11px 36px 11px 14px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.05);
+  transition:border-color .18s ease, box-shadow .18s ease, background-color .18s ease;
+}
+.match-select-trigger::after{
+  content:'';position:absolute;right:14px;top:50%;width:7px;height:7px;
+  border:solid var(--primary);border-width:0 2px 2px 0;
+  transform:translateY(-65%) rotate(45deg);opacity:.85;pointer-events:none;
+  transition:transform .18s ease;
+}
+.match-select-wrap.is-open .match-select-trigger::after{transform:translateY(-20%) rotate(225deg)}
+.match-select-trigger:hover:not(:disabled){border-color:color-mix(in srgb, var(--primary) 42%, var(--border))}
+.match-select-trigger:focus{outline:none}
+.match-select-trigger:focus-visible{
+  border-color:var(--primary);
+  box-shadow:0 0 0 3px color-mix(in srgb, var(--primary) 28%, transparent);
+}
+.match-select-trigger:disabled{cursor:default;opacity:.72}
+.match-select-trigger.is-placeholder{font-weight:500;opacity:.62}
+.match-select-trigger-txt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.match-select-panel{
+  position:fixed;z-index:2500;box-sizing:border-box;
+  max-height:min(280px,46vh);overflow-y:auto;overflow-x:hidden;
+  overscroll-behavior:contain;padding:6px;border-radius:12px;
+  background:linear-gradient(180deg,color-mix(in srgb,var(--card) 96%,var(--bg)),var(--card));
+  border:1px solid var(--border);color:var(--text);
+  box-shadow:0 12px 36px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.06);
+  scrollbar-width:thin;scrollbar-color:var(--primary) transparent;
+}
+.match-select-panel::-webkit-scrollbar{width:6px}
+.match-select-panel::-webkit-scrollbar-thumb{
+  background:color-mix(in srgb,var(--primary) 55%,transparent);border-radius:6px;
+}
+.match-select-option{
+  display:block;width:100%;box-sizing:border-box;margin:0;padding:10px 12px;
+  font-family:var(--font-display);font-size:.88rem;font-weight:600;text-align:left;color:var(--text);
+  background:transparent;border:none;border-radius:8px;cursor:pointer;
+  transition:background .15s ease;
+}
+.match-select-option:hover{background:color-mix(in srgb,var(--primary) 14%,var(--card))}
+.match-select-option.is-selected{
+  background:color-mix(in srgb,var(--primary) 22%,var(--card));
+  box-shadow:inset 3px 0 0 var(--primary);
+}
+.match-select-option:focus{outline:none}
+.match-select-option:focus-visible{box-shadow:0 0 0 2px color-mix(in srgb,var(--primary) 35%,transparent)}
 .option-row{display:flex;align-items:flex-start;gap:12px;cursor:pointer;border:1px solid var(--border);border-radius:10px;padding:11px 14px;transition:border .15s,background .15s;background:rgba(255,255,255,.01)}
 .option-row:hover:not(.disabled){border-color:var(--primary);background:rgba(255,255,255,.03)}
 /* Highlighter & Distraction Styles */
@@ -3194,9 +3248,19 @@ function isMatchingQuestion(q){
 function isSourceMcq(q){
   return !!(q&&q.type==='mcq'&&Array.isArray(q.options)&&q.options.length>=2&&q.options.some(o=>o&&o.isCorrect));
 }
+function isOmmLibraryFile(file){
+  return /(^|[\\/])omm-/i.test(String(file||''));
+}
+function isOmmQuizQuestion(q){
+  const src=q&&q._src;
+  if(src&&String(src.classTag||'').trim().toUpperCase()==='OMM') return true;
+  return isOmmLibraryFile(src&&src.file);
+}
 function isPlayableQuestion(q){
   if(isFillBlankQuestion(q)||isOpenQuestion(q)||isMatchingQuestion(q)||isSourceMcq(q)) return true;
-  return Array.isArray(q&&q.options)&&q.options.length>=MIN_QUIZ_OPTIONS;
+  const opts=Array.isArray(q&&q.options)?q.options:[];
+  if(isOmmQuizQuestion(q)&&opts.length>=2&&opts.some(isQuizOptionCorrect)) return true;
+  return opts.length>=MIN_QUIZ_OPTIONS;
 }
 function normalizeBlankAnswer(s){
   return String(s||'').toLowerCase().replace(/[\u2018\u2019]/g,"'").replace(/[^a-z0-9]+/g,' ').trim().replace(/\s+/g,' ');
@@ -9080,7 +9144,9 @@ function readEditQuestionForm(original) {
 function validateEditQuestionForm(edited) {
   if (!edited.question) return 'Question stem is required.';
   if (!edited.options.length) return 'This question has no answers to edit.';
-  if (edited.options.length < MIN_QUIZ_OPTIONS) return 'Provide at least ' + MIN_QUIZ_OPTIONS + ' answer options.';
+  const editingOmm=typeof editQuestionState!=='undefined'&&editQuestionState&&isOmmLibraryFile(editQuestionState.file);
+  const minOpts=(isOmmQuizQuestion(edited)||editingOmm)?2:MIN_QUIZ_OPTIONS;
+  if (edited.options.length < minOpts) return 'Provide at least ' + minOpts + ' answer options.';
   if (questionStemHasLecture(edited)) return 'Remove the word "lecture" from the question stem. It is OK in rationales.';
   if (edited.options.filter(o => o.isCorrect).length !== 1) return 'Mark exactly one answer as correct.';
   for (let i = 0; i < edited.options.length; i++) {
@@ -10022,6 +10088,19 @@ list.appendChild(wrap);
   persistActiveQuiz();
 }
 
+let matchMenusBound=false;
+function bindMatchMenus(){
+  if(matchMenusBound) return;
+  matchMenusBound=true;
+  const closeOpen=()=>{
+    document.querySelectorAll('.match-select-wrap.is-open').forEach(open=>{
+      if(typeof open._closeMatch==='function') open._closeMatch();
+    });
+  };
+  document.addEventListener('click', closeOpen);
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeOpen(); });
+  document.addEventListener('scroll', closeOpen, true);
+}
 function renderFillBlank(q, list){
   const block=document.createElement('div');
   block.className='fill-block';
@@ -10062,6 +10141,7 @@ function renderFillBlank(q, list){
   list.appendChild(block);
 }
 function renderMatching(q, list){
+  bindMatchMenus();
   const block=document.createElement('div');
   block.className='match-block';
   const order=Array.isArray(q._matchOrder)&&q._matchOrder.length===q.pairs.length?q._matchOrder:q.pairs.map((_,i)=>i);
@@ -10075,27 +10155,107 @@ function renderMatching(q, list){
     label.className='match-prompt';
     label.textContent=pair.prompt;
     row.appendChild(label);
-    const sel=document.createElement('select');
-    sel.className='match-select';
-    const blank=document.createElement('option');
-    blank.value='';
-    blank.textContent='Select a match';
-    sel.appendChild(blank);
+    const sel=document.createElement('div');
+    sel.className='match-select-wrap';
+    const trigger=document.createElement('button');
+    trigger.type='button';
+    trigger.className='match-select-trigger is-placeholder';
+    trigger.setAttribute('aria-haspopup','listbox');
+    trigger.setAttribute('aria-expanded','false');
+    const triggerTxt=document.createElement('span');
+    triggerTxt.className='match-select-trigger-txt';
+    triggerTxt.textContent='Select a match';
+    trigger.appendChild(triggerTxt);
+    const panel=document.createElement('div');
+    panel.className='match-select-panel';
+    panel.hidden=true;
+    panel.setAttribute('role','listbox');
+    const choices=[{value:'', text:'Select a match'}];
     const seenAnswers=new Set();
     choiceOrder.forEach(ci=>{
       const label=q.pairs[ci].answer;
       const key=normalizeBlankAnswer(label);
       if(seenAnswers.has(key)) return;
       seenAnswers.add(key);
-      const opt=document.createElement('option');
-      opt.value=String(ci);
-      opt.textContent=label;
-      sel.appendChild(opt);
+      choices.push({value:String(ci), text:label});
     });
     const chosen=q.userAnswer?q.userAnswer.selections[pairIdx]:q._matchDraft[pairIdx];
-    if(chosen!=null&&chosen!=='') sel.value=String(chosen);
-    sel.disabled=!!q.userAnswer;
-    sel.onchange=()=>{ q._matchDraft[pairIdx]=sel.value===''?null:Number(sel.value); };
+    const selectedValue=chosen!=null&&chosen!==''?String(chosen):'';
+    function paintTrigger(){
+      const current=choices.find(c=>c.value===selectedNow())||choices[0];
+      triggerTxt.textContent=current.text;
+      trigger.classList.toggle('is-placeholder', !current.value);
+      trigger.title=current.text;
+      panel.querySelectorAll('.match-select-option').forEach(row=>{
+        const on=row.dataset.value===selectedNow();
+        row.classList.toggle('is-selected', on);
+        row.setAttribute('aria-selected', on?'true':'false');
+      });
+    }
+    function selectedNow(){
+      const draft=q._matchDraft[pairIdx];
+      return draft!=null&&draft!==''?String(draft):'';
+    }
+    function positionPanel(){
+      const r=trigger.getBoundingClientRect();
+      const pad=6;
+      const maxH=Math.min(280, window.innerHeight*0.46);
+      panel.style.maxHeight=maxH+'px';
+      let top=r.bottom+pad;
+      const spaceBelow=window.innerHeight-top-8;
+      const spaceAbove=r.top-8-pad;
+      if(spaceBelow<120 && spaceAbove>spaceBelow) top=Math.max(8, r.top-maxH-pad);
+      const vw=window.innerWidth;
+      let left=r.left;
+      const width=r.width;
+      if(left+width>vw-8) left=Math.max(8, vw-8-width);
+      panel.style.left=left+'px';
+      panel.style.width=width+'px';
+      panel.style.top=top+'px';
+    }
+    function closePanel(){
+      panel.hidden=true;
+      sel.classList.remove('is-open');
+      trigger.setAttribute('aria-expanded','false');
+      if(panel.parentNode===document.body) sel.appendChild(panel);
+    }
+    function openPanel(){
+      document.querySelectorAll('.match-select-wrap.is-open').forEach(open=>{
+        if(open!==sel && typeof open._closeMatch==='function') open._closeMatch();
+      });
+      if(panel.parentNode!==document.body) document.body.appendChild(panel);
+      panel.hidden=false;
+      sel.classList.add('is-open');
+      trigger.setAttribute('aria-expanded','true');
+      positionPanel();
+    }
+    sel._closeMatch=closePanel;
+    choices.forEach(choice=>{
+      const opt=document.createElement('button');
+      opt.type='button';
+      opt.className='match-select-option';
+      opt.dataset.value=choice.value;
+      opt.textContent=choice.text;
+      opt.setAttribute('role','option');
+      opt.onclick=ev=>{
+        ev.stopPropagation();
+        q._matchDraft[pairIdx]=choice.value===''?null:Number(choice.value);
+        paintTrigger();
+        closePanel();
+      };
+      panel.appendChild(opt);
+    });
+    if(selectedValue) q._matchDraft[pairIdx]=Number(selectedValue);
+    paintTrigger();
+    trigger.disabled=!!q.userAnswer;
+    trigger.onclick=ev=>{
+      ev.stopPropagation();
+      if(trigger.disabled) return;
+      if(panel.hidden) openPanel();
+      else closePanel();
+    };
+    sel.appendChild(trigger);
+    sel.appendChild(panel);
     row.appendChild(sel);
     if(q.userAnswer){
       const picked=q.userAnswer.selections[pairIdx];
