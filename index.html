@@ -12414,12 +12414,35 @@ function updateClassOptions() {
   if (classes.includes(oldValue)) classSel.value = oldValue;
 }
 
+function entryBlockList(entry) {
+  if (!entry || entry.block == null || entry.block === '') return [];
+  const raw = Array.isArray(entry.block) ? entry.block : [entry.block];
+  const out = [];
+  raw.forEach(v => {
+    const n = Number(v);
+    if (n > 0 && out.indexOf(n) === -1) out.push(n);
+  });
+  return out;
+}
+
+function formatBlockTag(blocks) {
+  if (!blocks.length) return '';
+  if (blocks.length === 1) return 'B' + blocks[0];
+  const sorted = blocks.slice().sort((a, b) => a - b);
+  const consecutive = sorted.every((n, i) => i === 0 || n === sorted[i - 1] + 1);
+  if (consecutive) return 'B' + sorted[0] + '\u2013B' + sorted[sorted.length - 1];
+  return sorted.map(n => 'B' + n).join(' ');
+}
+
 function getTagCode(entry) {
-  if (!entry || !entry.block) return '';
+  const blocks = entryBlockList(entry);
+  if (!blocks.length) return '';
+  const blockLabel = formatBlockTag(blocks);
   if (!entry.exam || !entry.week) {
-    return entry.classTag === 'OMM' ? `B${entry.block}` : '';
+    return entry.classTag === 'OMM' ? blockLabel : '';
   }
-  return `B${entry.block}E${entry.exam}W${entry.week}`;
+  if (blocks.length > 1) return blockLabel;
+  return 'B' + blocks[0] + 'E' + entry.exam + 'W' + entry.week;
 }
 
 const LIB_FILTER_MAX = { block: 8, exam: 3, week: 3 };
@@ -12437,14 +12460,21 @@ function isOmmLibraryEntry(entry) {
 
 function entryMatchesLibFilter(entry, level, filterVal) {
   if (filterVal === 'all') return true;
+  if (level === 'block') {
+    const blocks = entryBlockList(entry);
+    if (filterVal === 'other') {
+      return !blocks.length || blocks.some(n => !isStandardLibTag('block', n));
+    }
+    return blocks.some(n => String(n) === String(filterVal));
+  }
   if (filterVal === 'other') {
     if (level === 'class') return !entry.classTag;
     if (isOmmLibraryEntry(entry) && (level === 'exam' || level === 'week')) return false;
-    const field = level === 'block' ? 'block' : level === 'exam' ? 'exam' : 'week';
+    const field = level === 'exam' ? 'exam' : 'week';
     return !isStandardLibTag(level, entry[field]);
   }
   if (level === 'class') return String(entry.classTag || '') === filterVal;
-  const field = level === 'block' ? 'block' : level === 'exam' ? 'exam' : 'week';
+  const field = level === 'exam' ? 'exam' : 'week';
   return String(entry[field] || '') === filterVal;
 }
 
@@ -12709,11 +12739,12 @@ function renderBlockQuickView(entries) {
   const showOmm = (document.getElementById('lib-class-filter')?.value || 'all') === 'OMM';
   entries.forEach(e => {
     if (isOmmLibraryEntry(e) && !showOmm) return;
-    const b = Number(e.block || 0);
-    if (!b) return;
+    const blocks = entryBlockList(e);
+    if (!blocks.length) return;
     const ex = Number(e.exam || 0);
     const wk = Number(e.week || 0);
     const cls = e.classTag || '';
+    blocks.forEach(b => {
     if (!tree[b]) tree[b] = { count: 0, exams: {}, omm: [] };
     tree[b].count++;
     if (e.classTag === 'OMM') tree[b].omm.push(e);
@@ -12726,6 +12757,7 @@ function renderBlockQuickView(entries) {
         if (cls) tree[b].exams[ex].weeks[wk].classes[cls] = (tree[b].exams[ex].weeks[wk].classes[cls] || 0) + 1;
       }
     }
+    });
   });
   const keys = Object.keys(tree).sort((a, b) => Number(a) - Number(b));
   if (!keys.length) {
@@ -12752,7 +12784,7 @@ function renderBlockQuickView(entries) {
     });
     if (blockNode.omm.length) {
       const ommFile = String(blockNode.omm[0].file).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
-      html += `<button class="lib-tree-item exam" onclick="openQPickerForScope('${ommFile}','omm')">OMM — all topics (${blockNode.omm.length})</button>`;
+      html += `<button class="lib-tree-item exam" onclick="openQPickerForScope('${ommFile}','omm','${k}')">OMM — all topics (${blockNode.omm.length})</button>`;
       blockNode.omm.slice().sort((a, b) => String(a.title || '').localeCompare(String(b.title || ''))).forEach(entry => {
         const file = String(entry.file).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
         const title = String(entry.topic || entry.title || 'Topic').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -13487,12 +13519,23 @@ async function openQPickerForEntry(entry, btn) {
 }
 
 // +E / +W scope click
-async function openQPickerForScope(file, scope) {
+function scopeBlocksForSeed(seed, blockHint) {
+  const hint = Number(blockHint);
+  if (hint > 0) return [hint];
+  let blocks = entryBlockList(seed);
+  const filter = document.getElementById('lib-block-filter')?.value || 'all';
+  const n = Number(filter);
+  if (n > 0 && blocks.includes(n)) return [n];
+  return blocks;
+}
+
+async function openQPickerForScope(file, scope, blockHint) {
   const seed = findLibraryEntry(file);
   if (!seed) { showToast('❌ Quiz entry not found'); return; }
+  const seedBlocks = scopeBlocksForSeed(seed, blockHint);
   const pool = getActiveLibraryEntries();
   let matches = pool.filter(e => {
-    if (String(e.block || '') !== String(seed.block || '')) return false;
+    if (!seedBlocks.length || !entryBlockList(e).some(n => seedBlocks.includes(n))) return false;
     if (scope === 'omm') return String(e.classTag || '') === 'OMM';
     if (scope === 'week') {
       return String(e.exam || '') === String(seed.exam || '') &&
@@ -13503,11 +13546,12 @@ async function openQPickerForScope(file, scope) {
   matches = applyClassLectureOrder(matches);
   if (!matches.length) { showToast('❌ No quizzes found for same ' + scope); return; }
 
+  const blockLabel = seedBlocks.length === 1 ? ('Block ' + seedBlocks[0]) : formatBlockTag(seedBlocks);
   const label = scope === 'omm'
-    ? 'Block ' + seed.block + ' / OMM'
+    ? blockLabel + ' / OMM'
     : scope === 'week'
-    ? 'Block ' + seed.block + ' / Exam ' + seed.exam + ' / Week ' + seed.week
-    : 'Block ' + seed.block + ' / Exam ' + seed.exam;
+    ? blockLabel + ' / Exam ' + seed.exam + ' / Week ' + seed.week
+    : blockLabel + ' / Exam ' + seed.exam;
 
   showToast('⏳ Loading ' + matches.length + ' quiz' + (matches.length !== 1 ? 'zes' : '') + '…');
   const combined = [];
