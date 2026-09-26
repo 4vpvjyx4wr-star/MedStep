@@ -3398,6 +3398,12 @@ const LS_CHANGELOG_OPEN='medstep_changelog_open';
 const CHANGELOG_VISIBLE_COUNT=3;
 const MEDSTEP_CHANGELOG=[
   {
+    id:'2026-09-26-omm',
+    date:'2026-09-26',
+    title:'OMM is a new subject',
+    body:'Osteopathic Manipulative Medicine is now in the library. The OMM button stays under Class even when an exam or week is selected. Choose OMM to see that block’s quizzes; they stay out of the list until you do.'
+  },
+  {
     id:'2026-09-24-review-undo',
     date:'2026-09-24',
     title:'Retry a question from review',
@@ -12425,17 +12431,29 @@ function isStandardLibTag(level, value) {
   return max ? n <= max : false;
 }
 
+function isOmmLibraryEntry(entry) {
+  return String(entry?.classTag || '') === 'OMM';
+}
+
 function entryMatchesLibFilter(entry, level, filterVal) {
   if (filterVal === 'all') return true;
   if (filterVal === 'other') {
     if (level === 'class') return !entry.classTag;
-    if (entry.classTag === 'OMM' && (level === 'exam' || level === 'week')) return false;
+    if (isOmmLibraryEntry(entry) && (level === 'exam' || level === 'week')) return false;
     const field = level === 'block' ? 'block' : level === 'exam' ? 'exam' : 'week';
     return !isStandardLibTag(level, entry[field]);
   }
   if (level === 'class') return String(entry.classTag || '') === filterVal;
   const field = level === 'block' ? 'block' : level === 'exam' ? 'exam' : 'week';
   return String(entry[field] || '') === filterVal;
+}
+
+function libraryEntryVisible(entry, blockFilter, examFilter, weekFilter, classFilter) {
+  if (!entryMatchesLibFilter(entry, 'block', blockFilter)) return false;
+  if (isOmmLibraryEntry(entry)) return classFilter === 'OMM';
+  return entryMatchesLibFilter(entry, 'exam', examFilter) &&
+    entryMatchesLibFilter(entry, 'week', weekFilter) &&
+    entryMatchesLibFilter(entry, 'class', classFilter);
 }
 
 function libraryFilterDisplayLabel(level, value) {
@@ -12503,14 +12521,21 @@ function getLibraryManifestClasses() {
   const exam = document.getElementById('lib-exam-filter')?.value || 'all';
   const week = document.getElementById('lib-week-filter')?.value || 'all';
   const classes = new Set();
+  let hasOmm = false;
   getActiveLibraryEntries().forEach(e => {
     if (!e.classTag) return;
     if (!entryMatchesLibFilter(e, 'block', block)) return;
+    if (isOmmLibraryEntry(e)) {
+      hasOmm = true;
+      return;
+    }
     if (!entryMatchesLibFilter(e, 'exam', exam)) return;
     if (!entryMatchesLibFilter(e, 'week', week)) return;
     classes.add(String(e.classTag));
   });
-  return [...classes].sort((a, b) => a.localeCompare(b));
+  const names = [...classes].sort((a, b) => a.localeCompare(b));
+  if (hasOmm) names.unshift('OMM');
+  return names;
 }
 
 function updateLibraryClassOptions() {
@@ -12681,7 +12706,9 @@ function renderBlockQuickView(entries) {
   const wrap = document.getElementById('lib-block-items');
   if (!wrap) return;
   const tree = {};
+  const showOmm = (document.getElementById('lib-class-filter')?.value || 'all') === 'OMM';
   entries.forEach(e => {
+    if (isOmmLibraryEntry(e) && !showOmm) return;
     const b = Number(e.block || 0);
     if (!b) return;
     const ex = Number(e.exam || 0);
@@ -13500,10 +13527,7 @@ async function openQPickerForFiltered() {
   const weekFilter  = document.getElementById('lib-week-filter')?.value || 'all';
   const classFilter = document.getElementById('lib-class-filter')?.value || 'all';
   const matches = applyClassLectureOrder(getActiveLibraryEntries().filter(entry =>
-    entryMatchesLibFilter(entry, 'block', blockFilter) &&
-    entryMatchesLibFilter(entry, 'exam', examFilter) &&
-    entryMatchesLibFilter(entry, 'week', weekFilter) &&
-    entryMatchesLibFilter(entry, 'class', classFilter)
+    libraryEntryVisible(entry, blockFilter, examFilter, weekFilter, classFilter)
   ));
   if (!matches.length) { showToast('❌ No quizzes match current filters'); return; }
 
@@ -13951,10 +13975,7 @@ function renderLibrary() {
   const classFilter = document.getElementById('lib-class-filter')?.value || 'all';
   list.innerHTML = '';
   const visible = applyClassLectureOrder(entries.filter(entry =>
-    entryMatchesLibFilter(entry, 'block', blockFilter) &&
-    entryMatchesLibFilter(entry, 'exam', examFilter) &&
-    entryMatchesLibFilter(entry, 'week', weekFilter) &&
-    entryMatchesLibFilter(entry, 'class', classFilter)
+    libraryEntryVisible(entry, blockFilter, examFilter, weekFilter, classFilter)
   ));
   if (librarySource === 'premade') renderBlockQuickView(libraryManifest);
   if (!visible.length) {
