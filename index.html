@@ -614,6 +614,8 @@ textarea:focus{outline:none;border-color:var(--primary)}
 .lo-text{font-family:var(--font-mono);font-size:.7rem;color:var(--subtle);line-height:1.45;margin-bottom:10px;padding:6px 10px;background:rgba(255,255,255,.03);border-left:2px solid var(--primary);border-radius:0 6px 6px 0;display:none;opacity:0;transition:opacity .2s}
 .lo-text.visible{display:block;opacity:1}
 .q-text{font-size:1.05rem;font-weight:600;margin-bottom:22px;line-height:1.5;overflow-wrap:break-word;word-wrap:break-word}
+.q-image{display:block;max-width:100%;height:auto;margin:0 0 18px}
+.q-image[hidden]{display:none}
 
 .nav-box{aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:11px;border-radius:7px;background:var(--border);cursor:pointer;border:2px solid transparent;font-weight:800;font-family:var(--font-mono);transition:transform .12s,border .12s}
 .nav-box:hover{transform:scale(1.08)}
@@ -3065,6 +3067,7 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
         <div class="lo-tag" id="lo-toggle" onclick="toggleLO()"><span class="lo-arrow">▶</span> Learning Objective</div>
         <div class="lo-text" id="lo-citation"></div>
         <div class="q-text" id="q-text"></div>
+        <img id="q-image" class="q-image" alt="" hidden>
         <div id="options-list"></div>
       </div>
       <div class="quiz-footer">
@@ -10026,6 +10029,12 @@ function loadQuestion(idx){
   loText.classList.remove('visible');
   loToggle.style.display=q.cited_learning_objective?'inline-flex':'none';
   document.getElementById('q-text').innerText=q.question;
+  const qImg=document.getElementById('q-image');
+  if(qImg){
+    const src=q&&typeof q.image==='string'?q.image.trim():'';
+    if(src){ qImg.src=src; qImg.alt=''; qImg.hidden=false; }
+    else { qImg.removeAttribute('src'); qImg.hidden=true; }
+  }
   document.getElementById('undo-btn').style.display=q.userAnswer?'inline-flex':'none';
 
   const isLast=isFlaggedReviewMode?(flaggedReviewPos===flaggedReviewIndices.length-1):(idx===questions.length-1);
