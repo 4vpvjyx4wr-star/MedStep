@@ -1,0 +1,704 @@
+[
+  {
+    "question": "Match each cranial bone to its mode of motion during the primary respiratory mechanism (PRM).",
+    "type": "matching",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Match midline and paired cranial bones to PRM motion.",
+    "rationale": "Midline bones (sphenoid, occiput, ethmoid, vomer, sacrum) flex and extend. Paired bones (temporal, parietal, frontal, maxilla, zygoma, and the packet also lists nasal, lacrimal, palatine, and mandible) move in internal and external rotation.",
+    "pairs": [
+      {"prompt": "Sphenoid", "answer": "Flexion/extension (midline)"},
+      {"prompt": "Occiput", "answer": "Flexion/extension (midline)"},
+      {"prompt": "Temporal", "answer": "Internal/external rotation (paired)"},
+      {"prompt": "Parietal", "answer": "Internal/external rotation (paired)"},
+      {"prompt": "Sacrum", "answer": "Flexion/extension (midline)"},
+      {"prompt": "Ethmoid", "answer": "Flexion/extension (midline)"},
+      {"prompt": "Vomer", "answer": "Flexion/extension (midline)"},
+      {"prompt": "Frontal", "answer": "Internal/external rotation (paired)"},
+      {"prompt": "Maxilla", "answer": "Internal/external rotation (paired)"},
+      {"prompt": "Zygoma", "answer": "Internal/external rotation (paired)"}
+    ]
+  },
+  {
+    "question": "Match each cranial nerve to the exit foramen or canal printed for it in the cranial-nerve matching key.",
+    "type": "matching",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Match each listed cranial nerve to the printed exit point.",
+    "rationale": "Keyed as printed: 1-A, 2-B, 3-C, 4-C, 5-D, 6-E, 7-C, 8-F, 9-F, 10-G, 11-G, 12-G, 13-H. The key maps ophthalmic (V1) to the optic canal. A later table in this packet places CN II at the optic canal and CN V1 at the superior orbital fissure. The key maps the facial nerve to the internal acoustic canal; other items in this packet name the stylomastoid foramen as CN VII's exit from the cranium.",
+    "pairs": [
+      {"prompt": "Olfactory", "answer": "Cribriform plate"},
+      {"prompt": "Ophthalmic (V1)", "answer": "Optic canal"},
+      {"prompt": "Oculomotor", "answer": "Superior orbital fissure"},
+      {"prompt": "Trochlear", "answer": "Superior orbital fissure"},
+      {"prompt": "Trigeminal V2", "answer": "Foramen rotundum"},
+      {"prompt": "Trigeminal V3", "answer": "Foramen ovale"},
+      {"prompt": "Abducens", "answer": "Superior orbital fissure"},
+      {"prompt": "Facial", "answer": "Internal acoustic canal"},
+      {"prompt": "Vestibulocochlear", "answer": "Internal acoustic canal"},
+      {"prompt": "Glossopharyngeal", "answer": "Jugular foramen"},
+      {"prompt": "Vagus", "answer": "Jugular foramen"},
+      {"prompt": "Accessory", "answer": "Jugular foramen"},
+      {"prompt": "Hypoglossal", "answer": "Hypoglossal foramen"}
+    ]
+  },
+  {
+    "question": "Match each syndrome or symptom to the most likely dysfunctional cranial bone from the printed key.",
+    "type": "matching",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Match common cranial symptoms to the keyed dysfunctional bone.",
+    "rationale": "Printed key: Bell's palsy, otitis media, and tinnitus are temporal (G). Diplopia is sphenoid (F). Difficulty nursing is occiput (D). TMJ dysfunction is letter C (maxilla), and the key's parenthetical also says 'maxilla or temporal complex,' so that broader wording is the answer. Vertigo is printed as A or G: often temporal, ethmoid if sinus-related. The explanation says symptoms follow the bone related to the involved cranial nerve, and that the temporal bone dominates this list.",
+    "pairs": [
+      {"prompt": "Bell's palsy", "answer": "Temporal"},
+      {"prompt": "Otitis media", "answer": "Temporal"},
+      {"prompt": "Diplopia", "answer": "Sphenoid"},
+      {"prompt": "TMJ dysfunction", "answer": "Maxilla or temporal complex"},
+      {"prompt": "Difficulty nursing", "answer": "Occiput"},
+      {"prompt": "Tinnitus", "answer": "Temporal"},
+      {"prompt": "Vertigo", "answer": "Temporal (often); ethmoid if sinus-related"}
+    ]
+  },
+  {
+    "question": "Match each OCMM technique to the treatment principle it employs.",
+    "type": "matching",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Match OCMM techniques to direct action, disengagement, or exaggeration.",
+    "rationale": "Printed key: condylar decompression and OA decompression are direct action; parietal lift and frontal lift are disengagement; CV4 is exaggeration. The five OCMM principles named in the explanation are direct action, disengagement, indirect (balanced membranous tension), exaggeration, and molding.",
+    "pairs": [
+      {"prompt": "Decompression of the occipital condyles", "answer": "Direct action"},
+      {"prompt": "Occipitoatlantal (OA) decompression", "answer": "Direct action"},
+      {"prompt": "Parietal lift", "answer": "Disengagement"},
+      {"prompt": "Frontal lift", "answer": "Disengagement"},
+      {"prompt": "CV4", "answer": "Exaggeration"}
+    ]
+  },
+  {
+    "question": "The midline bones — ethmoid, vomer, sphenoid, occiput, and __________ — move in flexion and extension during the PRM.",
+    "type": "fill_blank",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the midline bone that flexes and extends with the cranial base during the PRM.",
+    "answer": "sacrum",
+    "accept": ["the sacrum"],
+    "rationale": "The midline bones that flex and extend are the ethmoid, vomer, sphenoid, occiput, and sacrum."
+  },
+  {
+    "question": "The normal PRM rate is __________ cycles per minute.",
+    "type": "fill_blank",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "State the normal PRM rate in cycles per minute.",
+    "answer": "8 to 14",
+    "accept": ["8-14", "8 - 14", "8–14", "eight to fourteen"],
+    "rationale": "The normal PRM rate is 8 to 14 cycles per minute."
+  },
+  {
+    "question": "A torsion dysfunction is named for the side of the __________ greater wing of the sphenoid.",
+    "type": "fill_blank",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "State how an SBS torsion is named.",
+    "answer": "superior (more elevated)",
+    "accept": ["superior", "more elevated", "elevated", "the superior"],
+    "rationale": "A torsion is named for the side of the superior, or more elevated, greater wing of the sphenoid."
+  },
+  {
+    "question": "A lateral strain is named for the direction in which the __________ of the sphenoid is displaced relative to the occiput at the SBS.",
+    "type": "fill_blank",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "State how a lateral strain is named at the SBS.",
+    "answer": "base",
+    "accept": ["the base"],
+    "rationale": "A lateral strain is named for the direction of the base of the sphenoid relative to the occiput at the SBS."
+  },
+  {
+    "question": "A vertical strain is named for the position of the __________ of the sphenoid relative to the occiput at the SBS.",
+    "type": "fill_blank",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "State how a vertical strain is named at the SBS.",
+    "answer": "base",
+    "accept": ["the base"],
+    "rationale": "A vertical strain is named for the position of the base of the sphenoid relative to the occiput at the SBS."
+  },
+  {
+    "question": "The four absolute contraindications to cranial manipulation are increased intracranial pressure, acute intracranial bleed, __________, and acute CVA.",
+    "type": "fill_blank",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the absolute contraindication listed with intracranial pressure, bleed, and acute CVA.",
+    "answer": "skull fracture",
+    "accept": ["a skull fracture", "acute skull fracture"],
+    "rationale": "The four absolute contraindications named here are increased intracranial pressure, acute intracranial bleed, skull fracture, and acute CVA."
+  },
+  {
+    "question": "During cranial flexion, the anteroposterior diameter of the cranium decreases and the __________ diameter increases.",
+    "type": "fill_blank",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the cranial diameter that increases during PRM flexion.",
+    "answer": "transverse",
+    "accept": ["transverse diameter"],
+    "rationale": "In cranial flexion the anteroposterior diameter decreases and the transverse diameter increases."
+  },
+  {
+    "question": "The cranial nerve most directly implicated in difficulty nursing, latching on, and sucking is CN __________, which exits through the hypoglossal canal in the occiput.",
+    "type": "fill_blank",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the cranial nerve for nursing difficulty that exits the hypoglossal canal.",
+    "answer": "XII",
+    "accept": ["12", "twelve", "CN XII", "CN 12", "hypoglossal"],
+    "rationale": "CN XII exits the hypoglossal canal in the occiput and is the nerve tied here to difficulty nursing, latching, and sucking."
+  },
+  {
+    "question": "The cranial nerve that exits the cranium through the stylomastoid foramen is CN __________, and its injury produces facial paralysis.",
+    "type": "fill_blank",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the cranial nerve that exits the stylomastoid foramen.",
+    "answer": "VII",
+    "accept": ["7", "seven", "CN VII", "CN 7", "facial", "facial nerve", "the facial nerve", "VII (the facial nerve)"],
+    "rationale": "CN VII, the facial nerve, exits through the stylomastoid foramen, and its injury produces facial paralysis."
+  },
+  {
+    "question": "The technique whose objective is to balance the reciprocal tension membrane at the hypoglossal canal and normalize function of CN XII is called __________.",
+    "type": "fill_blank",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the technique aimed at the hypoglossal canal and CN XII.",
+    "answer": "decompression of the occipital condyles",
+    "accept": ["condylar decompression", "decompression of the occipital condyles (condylar decompression)", "occipital condylar decompression", "condylar decompression technique"],
+    "rationale": "Decompression of the occipital condyles, also called condylar decompression, balances the reciprocal tension membrane at the hypoglossal canal and is aimed at CN XII."
+  },
+  {
+    "question": "CV4 employs the __________ principle of OCMM treatment, in which the operator holds the occiput in extension and resists SBS flexion.",
+    "type": "fill_blank",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the OCMM principle used in CV4.",
+    "answer": "exaggeration",
+    "accept": ["the exaggeration principle", "exaggeration principle"],
+    "rationale": "CV4 uses the exaggeration principle: the occiput is held in extension and SBS flexion is resisted."
+  },
+  {
+    "question": "The four major reference points monitored under the vault hold are the left and right greater wings of the __________ and the left and right squamae of the __________.",
+    "type": "fill_blank",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the two bones whose vault-hold reference points are monitored.",
+    "answer": "sphenoid, occiput",
+    "accept": ["sphenoid; occiput", "sphenoid and occiput", "sphenoid occiput"],
+    "rationale": "The vault hold monitors the greater wings of the sphenoid and the squamae of the occiput, left and right."
+  },
+  {
+    "question": "The cranial rhythmic impulse cycles at the same rate as the __________ and is taken as the surface expression of that mechanism.",
+    "type": "fill_blank",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the mechanism expressed at the surface as the cranial rhythmic impulse.",
+    "answer": "primary respiratory mechanism",
+    "accept": ["PRM", "the primary respiratory mechanism", "primary respiratory mechanism (PRM)", "the PRM"],
+    "rationale": "The cranial rhythmic impulse cycles at the same rate as the primary respiratory mechanism and is taken as its surface expression."
+  },
+  {
+    "question": "The cartilaginous junction between the sphenoid and the occiput at the cranial base is the __________.",
+    "type": "fill_blank",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the cartilaginous junction of the sphenoid and occiput.",
+    "answer": "sphenobasilar synchondrosis",
+    "accept": ["SBS", "sphenobasilar synchondrosis (SBS)", "the sphenobasilar synchondrosis", "the SBS"],
+    "rationale": "The sphenobasilar synchondrosis (SBS) is the cartilaginous junction between the sphenoid and the occiput at the cranial base."
+  },
+  {
+    "question": "Match each cranial nerve and anatomic point (CN I through CN V1) to the syndrome or symptom and the likely dysfunctional bones printed in the fill-in table.",
+    "type": "matching",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Match CN I through V1 to the printed symptom and dysfunctional bones.",
+    "pairs": [
+      {"prompt": "CN I, cribriform plate", "answer": "Impaired sense of smell; sphenoid, frontal, ethmoid"},
+      {"prompt": "CN II, optic canal", "answer": "Impaired or altered vision; sphenoid (possibly occipital bone in relation to cortical processing)"},
+      {"prompt": "CN III, superior orbital fissure, Meckel's cave", "answer": "Diplopia, ptosis, impaired visual accommodation; sphenoid, temporal"},
+      {"prompt": "CN IV, superior orbital fissure, cavernous sinus", "answer": "Diplopia; sphenoid, temporal"},
+      {"prompt": "CN V1, superior orbital fissure", "answer": "Pain or altered sensation in the V1 distribution; sphenoid, temporal"}
+    ]
+  },
+  {
+    "question": "Match each cranial nerve and anatomic point (CN V2 through CN VIII) to the syndrome or symptom and the likely dysfunctional bones printed in the fill-in table.",
+    "type": "matching",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Match CN V2 through VIII to the printed symptom and dysfunctional bones.",
+    "rationale": "The CN VII symptom cell is printed as 'fascial paralysis.' Other items in this packet name the same finding facial paralysis, so this answer uses facial. Bones for CN VII are temporal, most likely, with sphenoid and occiput.",
+    "pairs": [
+      {"prompt": "CN V2, foramen rotundum, branches to maxillae", "answer": "Pain or altered sensation in the V2 distribution, trigeminal neuralgia (tic douloureux); sphenoid, temporal, maxilla"},
+      {"prompt": "CN V3, foramen ovale", "answer": "Pain or altered sensation in the V3 distribution; sphenoid, mandible"},
+      {"prompt": "CN VI, superior orbital fissure, petrosphenoidal ligament", "answer": "Diplopia; sphenoid, temporal. Compression of CN VI under the petrosphenoidal ligament from temporal bone or SBS dysfunction"},
+      {"prompt": "CN VII, internal acoustic meatus, stylomastoid foramen", "answer": "Bell's palsy, facial paralysis; temporal - most likely, sphenoid, occiput"},
+      {"prompt": "CN VIII, internal acoustic meatus", "answer": "Hearing loss, tinnitus, vertigo; temporal - most likely, sphenoid, occiput"}
+    ]
+  },
+  {
+    "question": "Match each cranial nerve and anatomic point (CN IX through CN XII) to the syndrome or symptom and the likely dysfunctional bones printed in the fill-in table.",
+    "type": "matching",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Match CN IX through XII to the printed symptom and dysfunctional bones.",
+    "rationale": "The printed CN X anatomic-point cell ends with a comma after jugular foramen and lists no further landmarks. The printed CN X symptom cell ends at 'organs supplied' and is not completed in the table.",
+    "pairs": [
+      {"prompt": "CN IX, jugular foramen, parotid gland, carotid bodies, carotid sinus", "answer": "Altered taste, difficulty swallowing, blood pressure regulation; temporal, occiput"},
+      {"prompt": "CN X, jugular foramen", "answer": "H/A, nausea, anything pertaining to thoracic or abdominal organs supplied; temporal, occiput, C1, C2"},
+      {"prompt": "CN XI, foramen magnum, jugular foramen", "answer": "Dysfunction or tenderness in SCM and trapezius; temporal, occiput"},
+      {"prompt": "CN XII, hypoglossal canal", "answer": "Dysphagia; difficulty nursing, latching on, and sucking (may also relate to CN IX and X); occiput"}
+    ]
+  },
+  {
+    "question": "Match each condition to the likely dysfunctional bones and rationale printed for adjunctive cranial treatment.",
+    "type": "matching",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Match headache, otitis media, sinusitis, and TMJ to the printed cranial rationale.",
+    "pairs": [
+      {"prompt": "Headache", "answer": "Multiple; altered sensory input from meninges; altered arterial, venous, or lymphatic flow"},
+      {"prompt": "Otitis media", "answer": "Temporal; altered drainage of the auditory (Eustachian) tube"},
+      {"prompt": "Sinusitis", "answer": "Multiple; altered autonomic tone influencing secretions; altered sinus drainage"},
+      {"prompt": "TMJ", "answer": "Temporal, sphenoid, SBS, mandible; altered mechanical function"}
+    ]
+  },
+  {
+    "question": "Which of the following is not an element of the primary respiratory mechanism?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify which choice is not an element of the PRM.",
+    "options": [
+      {"text": "Inherent motility of the central nervous system", "isCorrect": false, "rationale": "Inherent motility of the central nervous system is one of the five PRM elements."},
+      {"text": "Mobility of the intracranial membranes", "isCorrect": false, "rationale": "Mobility of the intracranial membranes is one of the five PRM elements."},
+      {"text": "Fluctuation of the cerebrospinal fluid", "isCorrect": false, "rationale": "Fluctuation of the cerebrospinal fluid is one of the five PRM elements."},
+      {"text": "Innate respiratory drive", "isCorrect": true, "rationale": "Innate respiratory drive is not an element of the PRM."},
+      {"text": "Mobility of the cranial bones", "isCorrect": false, "rationale": "Mobility of the cranial bones is one of the five PRM elements."}
+    ]
+  },
+  {
+    "question": "Which of the following most accurately describes the PRM?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Select the description of the primary respiratory mechanism.",
+    "options": [
+      {"text": "A midbrain nucleus that triggers muscles of inhalation and exhalation", "isCorrect": false, "rationale": "The PRM is not described as a midbrain nucleus that triggers respiratory muscles."},
+      {"text": "A system of five interdependent elements, working simultaneously, cycling at 8-14 cycles per minute, and serving as a foundational movement of metabolism", "isCorrect": true, "rationale": "The PRM is five interdependent elements working simultaneously, cycling at 8 to 14 cycles per minute, as a foundational movement of metabolism."},
+      {"text": "The Primary Relational Mechanism", "isCorrect": false, "rationale": "PRM here is the primary respiratory mechanism, not a 'relational' mechanism."},
+      {"text": "A system that produces somatic dysfunction through imbalances of fluid flow and bony motion", "isCorrect": false, "rationale": "That wording is not the description keyed for the PRM."}
+    ]
+  },
+  {
+    "question": "A 40-year-old woman with chronic fatigue and depression aggravated by severe stress is most likely to demonstrate a PRM rate in the range of:",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Choose the PRM rate range associated with depression.",
+    "options": [
+      {"text": "0", "isCorrect": false, "rationale": "A rate of 0 is not the range keyed for depression."},
+      {"text": "1-8 cycles/min", "isCorrect": true, "rationale": "Depression is associated with a decreased PRM rate, in the range of 1-8 cycles/min."},
+      {"text": "8-14 cycles/min", "isCorrect": false, "rationale": "8-14 cycles/min is the normal PRM rate, not the decreased rate associated with depression."},
+      {"text": "15 or higher cycles/min", "isCorrect": false, "rationale": "15 or higher cycles/min is the increased rate associated with fever and manic episodes, not depression."}
+    ]
+  },
+  {
+    "question": "A previously healthy patient with a fever of 102°F and acute viral illness is most likely to demonstrate a PRM rate in the range of:",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Choose the PRM rate range associated with fever.",
+    "options": [
+      {"text": "0", "isCorrect": false, "rationale": "A rate of 0 is not the range keyed for fever."},
+      {"text": "1-8 cycles/min", "isCorrect": false, "rationale": "1-8 cycles/min is the decreased rate associated with depression, not fever."},
+      {"text": "8-14 cycles/min", "isCorrect": false, "rationale": "8-14 cycles/min is the normal rate, not the increased rate associated with fever."},
+      {"text": "15 or higher cycles/min", "isCorrect": true, "rationale": "Fever and manic episodes are associated with an increased PRM rate, 15 or higher cycles/min."}
+    ]
+  },
+  {
+    "question": "Which of the following is not a contraindication to cranial manipulation?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify which listed finding is not a contraindication to cranial manipulation.",
+    "options": [
+      {"text": "Increased intracranial pressure", "isCorrect": false, "rationale": "Increased intracranial pressure is an absolute contraindication to cranial manipulation."},
+      {"text": "Space-occupying lesion of the cranium", "isCorrect": false, "rationale": "This item treats a space-occupying lesion of the cranium as a contraindication. The choice that is not a contraindication is severe headache."},
+      {"text": "Acute stroke", "isCorrect": false, "rationale": "Acute stroke is grouped with the contraindications to cranial manipulation."},
+      {"text": "Severe headache", "isCorrect": true, "rationale": "Severe headache is a common indication, provided dangerous causes have been excluded."},
+      {"text": "Skull fracture", "isCorrect": false, "rationale": "Skull fracture is an absolute contraindication to cranial manipulation."}
+    ]
+  },
+  {
+    "question": "Which of the following distances increases during PRM extension?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the cranial distance that increases in PRM extension.",
+    "options": [
+      {"text": "Left asterion to right asterion", "isCorrect": false, "rationale": "In extension the transverse diameter decreases. The distance that increases is the anteroposterior diameter."},
+      {"text": "Anteroposterior diameter of the cranium", "isCorrect": true, "rationale": "In extension the anteroposterior diameter increases and the transverse diameter decreases."},
+      {"text": "Left zygomatic arch to right zygomatic arch", "isCorrect": false, "rationale": "That transverse distance does not increase in extension. The anteroposterior diameter increases."},
+      {"text": "Transverse diameter of the cranium", "isCorrect": false, "rationale": "The transverse diameter decreases in extension. It increases in flexion."}
+    ]
+  },
+  {
+    "question": "Which best describes the axis of motion of the sphenoid in an SBS torsion dysfunction?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the axis of an SBS torsion.",
+    "options": [
+      {"text": "Roughly anteroposterior", "isCorrect": true, "rationale": "Torsions occur about a roughly anteroposterior axis through the basilar portions of the sphenoid and occiput."},
+      {"text": "Transverse", "isCorrect": false, "rationale": "Flexion and extension, not torsion, occur about transverse axes."},
+      {"text": "Longitudinal", "isCorrect": false, "rationale": "The torsion axis is described as roughly anteroposterior, not longitudinal."},
+      {"text": "Superior/inferior", "isCorrect": false, "rationale": "Sidebending rotation and lateral strain use superior-inferior axes. Torsion is about a roughly anteroposterior axis."}
+    ]
+  },
+  {
+    "question": "Which best describes the motion of the operator's 2nd and 5th fingers when palpating normal cranial flexion with a vault hold?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe vault-hold finger motion in normal cranial flexion.",
+    "options": [
+      {"text": "All fingers move inferiorly", "isCorrect": true, "rationale": "All four reference points move inferiorly during flexion as the transverse diameter widens."},
+      {"text": "All fingers move superiorly", "isCorrect": false, "rationale": "Superior motion of all fingers is not the flexion pattern. In flexion all four reference points move inferiorly."},
+      {"text": "2nd fingers move inferiorly, 5th fingers move superiorly", "isCorrect": false, "rationale": "That split motion is not normal flexion. In flexion all four reference points move inferiorly."},
+      {"text": "2nd fingers move superiorly, 5th fingers move superiorly", "isCorrect": false, "rationale": "Both pairs moving superiorly is not normal flexion. In flexion all four reference points move inferiorly."}
+    ]
+  },
+  {
+    "question": "Which best describes the motion of the operator's fingers when palpating a left torsion with a vault hold?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the vault-hold pattern of a left torsion.",
+    "options": [
+      {"text": "Left 2nd finger superior, right 5th finger superior", "isCorrect": true, "rationale": "The named (left) side has a superior greater wing and an inferior occipital squama; the opposite side mirrors this, so the right 5th finger is superior."},
+      {"text": "Right 2nd finger inferior, left 5th finger superior", "isCorrect": false, "rationale": "On the named left side the greater wing is superior and the occipital squama is inferior, so the left 5th finger is not the superior finding keyed here."},
+      {"text": "Left 2nd and 5th fingers superior", "isCorrect": false, "rationale": "Both left fingers superior would not match an inferior occipital squama on the named side."},
+      {"text": "Right 2nd and 5th fingers superior", "isCorrect": false, "rationale": "The superior greater wing is on the named left side, not both fingers on the right."}
+    ]
+  },
+  {
+    "question": "In addition to increasing the AP distance between the left 2nd and 5th fingers, what describes a left sidebending rotation strain under a vault hold?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the vault-hold pattern of a left sidebending rotation.",
+    "options": [
+      {"text": "Left 2nd and 5th fingers move superiorly", "isCorrect": false, "rationale": "The pattern is named for the inferior, widening side. On a left sidebending rotation both left fingers move inferior."},
+      {"text": "Right 2nd and 5th fingers move inferiorly", "isCorrect": false, "rationale": "The right fingers move superior. Both fingers on the left move inferior."},
+      {"text": "Left 2nd and 5th fingers move inferiorly", "isCorrect": true, "rationale": "The pattern is named for the inferior, widening side; both fingers on the left move inferior and both on the right move superior."},
+      {"text": "Right 2nd finger inferior, left 5th finger inferior", "isCorrect": false, "rationale": "That split pattern is not the left sidebending rotation. Both left fingers move inferior."}
+    ]
+  },
+  {
+    "question": "Which best describes a right lateral strain under a vault hold?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the vault-hold pattern of a right lateral strain.",
+    "options": [
+      {"text": "Right 2nd finger right and left 5th finger left", "isCorrect": false, "rationale": "The keyed pattern is anterior motion of both right fingers and posterior motion of the left fingers."},
+      {"text": "Left 2nd finger left and right 5th finger right", "isCorrect": false, "rationale": "The keyed pattern is anterior on the right and posterior on the left, not this finger pairing."},
+      {"text": "Right 2nd and 5th fingers move anteriorly; left fingers move posteriorly", "isCorrect": true, "rationale": "Both bones rotate counterclockwise viewed from above; the greater wing and squama move anteriorly on the right and posteriorly on the left."},
+      {"text": "Right 2nd and 5th fingers move posteriorly; left fingers move anteriorly", "isCorrect": false, "rationale": "That is the opposite of the keyed right lateral strain, in which the right fingers move anteriorly and the left fingers move posteriorly."}
+    ]
+  },
+  {
+    "question": "Which best describes a superior vertical strain under a vault hold?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the vault-hold pattern of a superior vertical strain.",
+    "options": [
+      {"text": "Bilateral greater wings inferior, bilateral squamae inferior", "isCorrect": false, "rationale": "In a superior vertical strain the squamae move superiorly, not inferiorly."},
+      {"text": "Bilateral greater wings inferior, bilateral squamae superior", "isCorrect": true, "rationale": "The base of the sphenoid is superior relative to the occiput; the greater wings move inferiorly and the squamae move superiorly."},
+      {"text": "Bilateral greater wings superior, bilateral squamae inferior", "isCorrect": false, "rationale": "That pattern is the opposite of the keyed superior vertical strain."},
+      {"text": "Bilateral greater wings superior, bilateral squamae superior", "isCorrect": false, "rationale": "The greater wings move inferiorly, not superiorly, in a superior vertical strain."}
+    ]
+  },
+  {
+    "question": "The cranial nerve that exits through the stylomastoid foramen is injured. The most likely symptom is:",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Name the symptom of injury to the nerve at the stylomastoid foramen.",
+    "options": [
+      {"text": "Diplopia", "isCorrect": false, "rationale": "Diplopia is not the symptom keyed to the nerve that exits the stylomastoid foramen."},
+      {"text": "Tinnitus", "isCorrect": false, "rationale": "Tinnitus is tied to CN VIII at the internal acoustic meatus, not to the stylomastoid foramen."},
+      {"text": "Hearing loss", "isCorrect": false, "rationale": "Hearing loss is not the symptom keyed to stylomastoid foramen injury."},
+      {"text": "Facial paralysis", "isCorrect": true, "rationale": "The facial nerve (CN VII) exits at the stylomastoid foramen, and its injury produces facial paralysis."}
+    ]
+  },
+  {
+    "question": "Temporal bone somatic dysfunction is most likely causally related to:",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify the symptom most closely related to temporal bone somatic dysfunction.",
+    "options": [
+      {"text": "Diplopia", "isCorrect": false, "rationale": "Diplopia is not the finding keyed as most likely related to temporal bone somatic dysfunction."},
+      {"text": "Amblyopia", "isCorrect": false, "rationale": "Amblyopia is not the finding keyed to temporal bone somatic dysfunction."},
+      {"text": "Tinnitus", "isCorrect": true, "rationale": "Tinnitus involves CN VIII at the internal acoustic meatus of the temporal bone."},
+      {"text": "Excessive lacrimation", "isCorrect": false, "rationale": "Excessive lacrimation is not the finding keyed to temporal bone somatic dysfunction."}
+    ]
+  },
+  {
+    "question": "Which of the following is not a cranial treatment principle?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Identify which choice is not one of the five OCMM principles.",
+    "options": [
+      {"text": "Direct action", "isCorrect": false, "rationale": "Direct action is one of the five OCMM principles."},
+      {"text": "Exaggeration", "isCorrect": false, "rationale": "Exaggeration is one of the five OCMM principles."},
+      {"text": "Inhibition", "isCorrect": true, "rationale": "Inhibition is not one of the five OCMM principles. Those five are direct action, disengagement, indirect, exaggeration, and molding."},
+      {"text": "Disengagement", "isCorrect": false, "rationale": "Disengagement is one of the five OCMM principles."},
+      {"text": "Indirect", "isCorrect": false, "rationale": "Indirect is one of the five OCMM principles."}
+    ]
+  },
+  {
+    "question": "The direction of force employed during decompression of the occipital condyles is:",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "State the direction of force in condylar decompression.",
+    "options": [
+      {"text": "Medial and inferior", "isCorrect": false, "rationale": "Condylar decompression uses superior and lateral traction, not medial and inferior force."},
+      {"text": "Lateral and inferior", "isCorrect": false, "rationale": "The inferior direction is not the keyed force. Traction is superior and lateral."},
+      {"text": "Medial and anterior", "isCorrect": false, "rationale": "Medial and anterior is not the direction keyed for condylar decompression."},
+      {"text": "Lateral and superior", "isCorrect": true, "rationale": "The operator applies a gentle superior and lateral traction at the inferior occiput."}
+    ]
+  },
+  {
+    "question": "The direction of force employed during the parietal lift is:",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "State the direction of force in the parietal lift.",
+    "options": [
+      {"text": "Lateral and anterior", "isCorrect": false, "rationale": "The parietal lift is medial and superior, not lateral and anterior."},
+      {"text": "Lateral and posterior", "isCorrect": false, "rationale": "The parietal lift is not directed lateral and posterior."},
+      {"text": "Medial and posterior", "isCorrect": false, "rationale": "The lift is cephalad (superior), not posterior."},
+      {"text": "Medial and superior", "isCorrect": true, "rationale": "Mild medial compression at the temporals induces internal rotation that disengages the parietals; the operator then lifts cephalad."}
+    ]
+  },
+  {
+    "question": "Which of the following best describes the sphenobasilar synchondrosis (SBS)?",
+    "type": "mcq",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define the sphenobasilar synchondrosis.",
+    "options": [
+      {"text": "The membranous attachment of the falx cerebri to the crista galli", "isCorrect": false, "rationale": "That attachment is not the SBS."},
+      {"text": "The cartilaginous junction between the sphenoid and occiput at the cranial base", "isCorrect": true, "rationale": "The SBS is the cartilaginous link between the sphenoid and occiput and the reference point for naming SBS strain patterns."},
+      {"text": "The fibrous suture between the parietal and temporal bones", "isCorrect": false, "rationale": "The SBS is a cartilaginous junction at the cranial base, not the parietal-temporal suture."},
+      {"text": "The synovial joint between the atlas and the occipital condyles", "isCorrect": false, "rationale": "The OA joint is not the SBS."}
+    ]
+  },
+  {
+    "question": "A 62-year-old recreational boxer presents with a persistent mild headache after being struck hard directly underneath the chin with an inferior-to-superior uppercut blow on the midline beneath the symphysis menti, forcing his jaw closed. Which SBS dysfunction is this mechanism most likely to induce?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Predict the SBS strain from a midline inferior-to-superior blow under the chin.",
+    "options": [
+      {"text": "Superior vertical strain", "isCorrect": false, "rationale": "The superiorly directed force produces an inferior vertical strain, because the base of the sphenoid moves inferiorly."},
+      {"text": "Inferior vertical strain", "isCorrect": true, "rationale": "The superiorly directed force reaches the body of the sphenoid anterior to its transverse axis, producing biomechanical extension of the sphenoid. The greater wings move superiorly, so the base of the sphenoid moves inferiorly relative to the base of the occiput, defining an inferior vertical strain."},
+      {"text": "Right torsion", "isCorrect": false, "rationale": "A midline uppercut is not keyed as a torsion."},
+      {"text": "Left torsion", "isCorrect": false, "rationale": "A midline uppercut is not keyed as a torsion."},
+      {"text": "SBS compression", "isCorrect": false, "rationale": "The mechanism is keyed as an inferior vertical strain, not SBS compression."}
+    ]
+  },
+  {
+    "question": "A 17-year-old basketball player presents with eight days of persistent diplopia after an opposing player's elbow struck her left frontal eminence with a force directed inferiorly. Which is the most likely axis around which the SBS has become strained?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the SBS axis strained by an inferior blow to the frontal eminence.",
+    "options": [
+      {"text": "Superior/inferior", "isCorrect": false, "rationale": "The force is keyed to rotation about a roughly anteroposterior axis, the substrate of a torsion."},
+      {"text": "Transverse", "isCorrect": false, "rationale": "A transverse axis is the flexion/extension axis, not the axis keyed for this frontal blow."},
+      {"text": "Anterior/posterior", "isCorrect": true, "rationale": "Inferiorly directed force on the frontal eminence transfers primarily to the lateral aspect of the sphenoid, producing rotation about a roughly AP axis, the substrate of a torsion."},
+      {"text": "An oblique axis through the petrous ridges", "isCorrect": false, "rationale": "The keyed axis is a roughly anteroposterior axis, not an oblique axis through the petrous ridges."}
+    ]
+  },
+  {
+    "question": "A 17-year-old basketball player has eight days of persistent diplopia after an opposing player's elbow struck her left frontal eminence with a force directed inferiorly. What is the most likely palpatory finding under a vault hold?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Predict vault-hold findings after an inferior blow to the left frontal eminence.",
+    "options": [
+      {"text": "Left greater wing inferior, left occipital squama superior", "isCorrect": true, "rationale": "An inferiorly directed force on the left frontal eminence drives the left greater wing inferior; the mirror-image squama therefore palpates superior. Because torsions are named for the more superior greater wing, this is a right torsion."},
+      {"text": "Left greater wing superior, left occipital squama inferior", "isCorrect": false, "rationale": "The left greater wing is driven inferior, not superior."},
+      {"text": "Left greater wing inferior, left occipital squama inferior", "isCorrect": false, "rationale": "The left squama palpates superior when the left greater wing is driven inferior."},
+      {"text": "Left greater wing superior, left occipital squama superior", "isCorrect": false, "rationale": "The left greater wing is driven inferior, and the left squama palpates superior."}
+    ]
+  },
+  {
+    "question": "A 17-year-old basketball player presents with eight days of persistent diplopia after an opposing player's elbow struck her right frontal eminence with a force directed inferiorly. What is the most likely diagnosis?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Name the torsion produced by an inferior blow to the right frontal eminence.",
+    "options": [
+      {"text": "Left sidebending rotation", "isCorrect": false, "rationale": "The mechanism is keyed as a torsion about a roughly AP axis, not a sidebending rotation."},
+      {"text": "Right sidebending rotation", "isCorrect": false, "rationale": "The mechanism is keyed as a left torsion, not a sidebending rotation."},
+      {"text": "Left torsion", "isCorrect": true, "rationale": "The right greater wing is driven inferiorly, so the left greater wing is relatively superior, indicating left torsion."},
+      {"text": "Right torsion", "isCorrect": false, "rationale": "The right greater wing is the inferior one. Torsion is named for the superior greater wing, which is the left."},
+      {"text": "Inferior vertical strain", "isCorrect": false, "rationale": "A lateral frontal blow is keyed as a torsion, not an inferior vertical strain."}
+    ]
+  },
+  {
+    "question": "A 3-month-old infant presents with persistent difficulty latching, weak sucking, and a mild left-sided tongue deviation on protrusion. Which technique most directly addresses the relevant cranial nerve?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Select the technique aimed at the cranial nerve involved in infant feeding difficulty.",
+    "options": [
+      {"text": "Parietal lift", "isCorrect": false, "rationale": "The parietal lift does not address the hypoglossal canal and CN XII."},
+      {"text": "Decompression of the occipital condyles", "isCorrect": true, "rationale": "Condylar decompression balances the reciprocal tension membrane at the hypoglossal canal, supporting CN XII function, the classic indication in feeding difficulty."},
+      {"text": "CV4", "isCorrect": false, "rationale": "CV4 is not the technique keyed for this feeding presentation."},
+      {"text": "Frontal lift", "isCorrect": false, "rationale": "The frontal lift does not address CN XII at the hypoglossal canal."},
+      {"text": "OA decompression", "isCorrect": false, "rationale": "OA decompression is a different technique. The keyed technique for this feeding difficulty is decompression of the occipital condyles."}
+    ]
+  },
+  {
+    "question": "A 28-year-old presents with suboccipital tension and reduced OA motion. The physician selects OA decompression. Which of the following best describes the proper application of force?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the hand placement and force of OA decompression.",
+    "options": [
+      {"text": "High-velocity thrust through the mastoid processes", "isCorrect": false, "rationale": "OA decompression is not a high-velocity thrust."},
+      {"text": "Bilateral hypothenar pressure on the lateral angles of the frontal bones", "isCorrect": false, "rationale": "That contact is not the OA decompression setup."},
+      {"text": "Pads of both middle fingers slid down the occiput onto the posterior arches of the atlas, applying caudad pressure to separate the condyles from the facets while the patient tucks the chin without flexing the neck", "isCorrect": true, "rationale": "OA decompression uses a fulcrum at the operator's forearms, middle fingers on the posterior arches of the atlas, and caudad pressure while the patient performs a chin tuck, the small nodding motion of the OA joint, not cervical flexion."},
+      {"text": "Crossed thumbs above the sagittal suture with cephalad lift", "isCorrect": false, "rationale": "That contact is not OA decompression."},
+      {"text": "Thenar eminences posteromedially to the occipitomastoid sutures", "isCorrect": false, "rationale": "That contact is not the OA decompression setup described here."}
+    ]
+  },
+  {
+    "question": "A 4-year-old with recurrent right-sided otitis media is referred for adjunctive OCMM. Which cranial bone is the most likely target of treatment, and why?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the cranial bone targeted in adjunctive OCMM for otitis media.",
+    "options": [
+      {"text": "Frontal — to influence the cribriform plate", "isCorrect": false, "rationale": "The cribriform plate is not the rationale keyed for recurrent otitis media."},
+      {"text": "Sphenoid — to influence the optic canal", "isCorrect": false, "rationale": "The optic canal is not the rationale keyed for recurrent otitis media."},
+      {"text": "Temporal — to influence the drainage of the auditory (Eustachian) tube", "isCorrect": true, "rationale": "The temporal bone houses the middle ear and influences the orientation and drainage of the auditory (Eustachian) tube. Restoring temporal motion is the rationale for adjunctive OCMM in recurrent otitis media."},
+      {"text": "Occiput — to influence the hypoglossal canal", "isCorrect": false, "rationale": "The hypoglossal canal is the CN XII landmark, not the otitis media target keyed here."},
+      {"text": "Parietal — to influence the sagittal sinus", "isCorrect": false, "rationale": "The sagittal sinus is not the rationale keyed for recurrent otitis media."}
+    ]
+  },
+  {
+    "question": "A 35-year-old presents with episodic right-sided V2 distribution pain consistent with trigeminal neuralgia. Which combination of bones is most likely to be involved?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the bones involved in V2 trigeminal neuralgia.",
+    "options": [
+      {"text": "Sphenoid, temporal, maxilla", "isCorrect": true, "rationale": "CN V2 exits at the foramen rotundum within the sphenoid and branches to the maxillae; the temporal bone borders the related anatomy."},
+      {"text": "Sphenoid, mandible", "isCorrect": false, "rationale": "Sphenoid and mandible are the combination named for V3 pain at the foramen ovale, not V2."},
+      {"text": "Sphenoid, frontal, ethmoid", "isCorrect": false, "rationale": "That combination is not the one keyed for V2 pain."},
+      {"text": "Temporal, occiput", "isCorrect": false, "rationale": "Temporal and occiput are not the combination keyed for V2 trigeminal neuralgia."},
+      {"text": "Frontal, zygoma", "isCorrect": false, "rationale": "Frontal and zygoma are not the combination keyed for V2 pain."}
+    ]
+  },
+  {
+    "question": "A 30-year-old presents one week after a left-sided motor-vehicle collision with persistent left-sided facial weakness, including inability to fully close the left eye and flattening of the left nasolabial fold. Which cranial bone is most likely to be involved, and which foramen is the critical anatomic point?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Localize post-traumatic facial paralysis to a bone and foramen.",
+    "options": [
+      {"text": "Sphenoid; superior orbital fissure", "isCorrect": false, "rationale": "The superior orbital fissure is not the exit keyed for this facial paralysis."},
+      {"text": "Temporal; stylomastoid foramen", "isCorrect": true, "rationale": "CN VII exits through the stylomastoid foramen of the temporal bone. Bell's palsy and post-traumatic facial paralysis classically implicate the temporal bone, with the sphenoid and occiput as secondary considerations."},
+      {"text": "Occiput; hypoglossal canal", "isCorrect": false, "rationale": "The hypoglossal canal is the CN XII landmark, not the foramen for this facial weakness."},
+      {"text": "Sphenoid; foramen ovale", "isCorrect": false, "rationale": "The foramen ovale is the V3 exit, not the critical point for this facial paralysis."},
+      {"text": "Frontal; cribriform plate", "isCorrect": false, "rationale": "The cribriform plate is the olfactory exit, not the point keyed for this facial weakness."}
+    ]
+  },
+  {
+    "question": "An adult patient with chronic sinusitis is referred for adjunctive OMT. Which of the following best summarizes the rationale for cranial treatment in this setting?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "State the rationale for cranial treatment in chronic sinusitis.",
+    "options": [
+      {"text": "To deliver thrust to the maxillary sutures", "isCorrect": false, "rationale": "Thrust techniques are not part of standard cranial treatment."},
+      {"text": "To address altered autonomic tone influencing secretions, and altered sinus drainage at multiple involved bones", "isCorrect": true, "rationale": "Multiple bones contribute to sinus structure and drainage. The OCMM rationale combines autonomic balance for secretion control with mechanical support for drainage."},
+      {"text": "To compress the fourth ventricle and reduce intracranial pressure", "isCorrect": false, "rationale": "Reducing intracranial pressure by compressing the fourth ventricle is not the sinusitis rationale."},
+      {"text": "To decompress the optic canal", "isCorrect": false, "rationale": "Optic-canal decompression is not the sinusitis rationale."},
+      {"text": "To restore motion at the OA joint alone", "isCorrect": false, "rationale": "The rationale is not limited to the OA joint."}
+    ]
+  },
+  {
+    "question": "A patient is being treated for a headache. The operator notes a globally diminished CRI with markedly reduced amplitude at all four vault-hold reference points and no clear asymmetric or rotational pattern. Which SBS strain pattern is most consistent with these findings?",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Identify the SBS pattern of a globally diminished CRI without an asymmetric axis.",
+    "options": [
+      {"text": "SBS compression", "isCorrect": true, "rationale": "SBS compression presents as overall reduced motion in all directions rather than a discrete asymmetric axis shift. It has been associated with prior compressive forces, including birth, and clinically with depression and a generally blunted CRI."},
+      {"text": "Right lateral strain", "isCorrect": false, "rationale": "A lateral strain has an asymmetric anterior-posterior pattern, which is absent here."},
+      {"text": "Superior vertical strain", "isCorrect": false, "rationale": "A vertical strain has a superior-inferior pattern at the greater wings and squamae, which is absent here."},
+      {"text": "Left torsion", "isCorrect": false, "rationale": "A torsion has an asymmetric greater-wing pattern, which is absent here."},
+      {"text": "Right sidebending rotation", "isCorrect": false, "rationale": "A sidebending rotation is named for an inferior, widening side, which is not described here."}
+    ]
+  },
+  {
+    "question": "A patient presents with severe headache and new vomiting, focal neurologic deficit, and altered mental status after a recent fall. The most appropriate next step is:",
+    "type": "mcq",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Choose the next step when red flags follow head trauma.",
+    "options": [
+      {"text": "Vault hold and CV4", "isCorrect": false, "rationale": "OCMM is deferred until dangerous causes are excluded."},
+      {"text": "Condylar decompression", "isCorrect": false, "rationale": "Cranial manipulation is contraindicated until red flags are evaluated."},
+      {"text": "Urgent neurologic evaluation and imaging; defer OCMM", "isCorrect": true, "rationale": "Increased intracranial pressure, acute intracranial bleed, skull fracture, and acute CVA are absolute contraindications. Red flags must be evaluated and excluded before any OCMM."},
+      {"text": "Parietal lift", "isCorrect": false, "rationale": "A parietal lift is not appropriate before red flags are excluded."},
+      {"text": "Frontal lift", "isCorrect": false, "rationale": "A frontal lift is not appropriate before red flags are excluded."}
+    ]
+  },
+  {
+    "question": "List and briefly describe the five elements of the primary respiratory mechanism, and explain how each is engaged or supported by cranial manipulation.",
+    "type": "open",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "List the five PRM elements and how cranial manipulation relates to them.",
+    "answer": "The five elements are: inherent motility of the central nervous system; mobility of the intracranial and intraspinal membranes (reciprocal tension membrane); fluctuation of the cerebrospinal fluid; mobility of the cranial bones; and involuntary mobility of the sacrum between the ilia. Cranial manipulation engages elements four and five directly (bones and sacrum) and is intended to influence the other three indirectly through changes in membrane tension, fluid flow, and the inherent rhythmic expression of the central nervous system.",
+    "rationale": "The sample answer lists those five elements and says cranial manipulation engages the bones and sacrum directly and is intended to influence the other three indirectly."
+  },
+  {
+    "question": "Describe the motion of the sphenoid and occiput during cranial flexion and extension. Address motion at the SBS, motion at the greater wings of the sphenoid, motion at the squamous portions of the occiput, and the motion the examiner feels at the 2nd and 5th fingers under the vault hold.",
+    "type": "open",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe sphenoid and occiput motion in cranial flexion and extension.",
+    "answer": "In cranial flexion, both bones rotate about transverse axes so that the SBS rises; the greater wings of the sphenoid move anteroinferiorly and laterally; the squamae of the occiput move posteroinferiorly and laterally; the anteroposterior diameter of the cranium decreases, and the transverse diameter increases. Under the vault hold, all four reference points (the 2nd and 5th fingers) move inferiorly and slightly apart. In cranial extension, the opposite occurs.",
+    "rationale": "Flexion raises the SBS, moves the greater wings anteroinferiorly and laterally and the squamae posteroinferiorly and laterally, shortens the AP diameter, and widens the transverse diameter. Extension is the opposite."
+  },
+  {
+    "question": "Explain what happens to the general shape of the head during cranial flexion and extension, and why this matters for palpation.",
+    "type": "open",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the change in head shape across the PRM and why it matters for palpation.",
+    "answer": "During flexion, the head becomes broader and shorter (transverse diameter increases; AP diameter and height decrease) as paired bones externally rotate. During extension, the head becomes narrower and longer as paired bones internally rotate. Recognizing these gross shape changes anchors the more subtle palpatory perception of motion at the four vault-hold reference points and provides an internal cross-check on what the fingers are reporting.",
+    "rationale": "Flexion makes the head broader and shorter as paired bones externally rotate. Extension makes it narrower and longer as paired bones internally rotate."
+  },
+  {
+    "question": "Summarize the axes of motion involved in the major SBS dysfunctions: flexion/extension, torsion, sidebending rotation, lateral strain, vertical strain, and compression. Explain how knowing the axis predicts the palpatory findings.",
+    "type": "open",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Summarize the axes of the major SBS dysfunctions and the palpatory pattern each predicts.",
+    "answer": "Flexion and extension occur about transverse (left-right) axes with the sphenoid and occiput moving in opposite directions, expressed grossly as PRM flexion/extension of the cranium. Torsion involves opposite rotation about a single roughly AP axis. Sidebending rotation involves rotation about both superior-inferior axes (in opposite directions, producing the AP widening on one side) coupled with same-direction rotation about a roughly AP axis. Lateral strains involve same-direction rotation about the two superior-inferior axes (producing the parallelogram appearance). Vertical strains involve same-direction rotation about the transverse axes (producing the superior/inferior displacement of the base of the sphenoid). Compression involves loss of motion across the SBS in all axes. Each axis predicts a characteristic four-point pattern under the vault hold.",
+    "rationale": "The sample answer assigns each named pattern to its axis and says each axis predicts a four-point vault-hold pattern."
+  },
+  {
+    "question": "Trace one cranial nerve from its course through its foramen, name the bone that houses or borders the foramen, and predict the dysfunctional bone or bones most likely to be implicated when that nerve is symptomatic. A worked example from the packet is acceptable.",
+    "type": "open",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Trace one cranial nerve to its foramen and the bone implicated when that nerve is symptomatic.",
+    "answer": "Example: CN VIII (vestibulocochlear) traverses the internal acoustic meatus in the petrous portion of the temporal bone. A patient with tinnitus, hearing loss, or vertigo most likely demonstrates temporal bone somatic dysfunction; the sphenoid and occiput are secondary considerations because of their articular relationships with the temporal bone. Treatment is directed at restoring temporal motion within the cranial vault.",
+    "rationale": "The sample answer uses CN VIII at the internal acoustic meatus of the temporal bone, with sphenoid and occiput as secondary considerations."
+  },
+  {
+    "question": "Choose one of the following — headache, otitis media, sinusitis, or TMJ dysfunction — and outline the rationale for cranial treatment, including the most likely dysfunctional bones and the proposed physiologic mechanism. A worked example from the packet is acceptable.",
+    "type": "open",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Outline a cranial-treatment rationale for one common head or neck condition.",
+    "answer": "Sample answer (otitis media). The temporal bone houses the middle ear and influences the orientation and drainage of the auditory (Eustachian) tube. Recurrent otitis media in children has been linked to suboptimal Eustachian drainage and altered autonomic balance. OCMM, directed at restoring temporal motion (and, where appropriate, addressing parietal, sphenoid, and occipital contributions), is proposed to improve drainage, reduce middle-ear pressure asymmetry, and support resolution. Treatment is adjunctive and is integrated with standard pediatric care; red flags (mastoiditis, immunocompromise, suspected meningitis) are excluded first.",
+    "rationale": "The packet's worked example is otitis media, aimed at temporal motion and Eustachian drainage, as an adjunct after red flags are excluded."
+  },
+  {
+    "question": "Describe how the vector and location of a traumatic force predict the likely SBS strain pattern, using one specific example. Note when the predicted pattern should be revisited based on palpatory findings.",
+    "type": "open",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Predict an SBS pattern from a trauma vector and state when palpation overrides that prediction.",
+    "answer": "An inferiorly directed force on the right frontal eminence transfers as an inferior force on the right greater wing of the sphenoid, producing rotation about a roughly AP axis. The right greater wing palpates inferior, and the left palpates superior — a left torsion (named for the more superior greater wing). In real life, vectors are rarely pure and may layer on pre-existing strains; if palpation reveals a different pattern (for example, sidebending rotation), the palpatory diagnosis takes precedence over the mechanism of injury for both treatment and test answers.",
+    "rationale": "The example is an inferior blow on the right frontal eminence producing a left torsion. Palpation takes precedence when it shows a different pattern."
+  },
+  {
+    "question": "Compare the indications, treatment principle, and direction of force for condylar decompression versus parietal lift. When is each most useful?",
+    "type": "open",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare condylar decompression and the parietal lift.",
+    "answer": "Condylar decompression employs the direct action principle: the operator applies gentle superior and lateral traction to the inferior occiput to decompress the condylar parts of the occiput at the hypoglossal canal and normalize CN XII function. It is classically indicated in infants with feeding difficulty and in patients with findings localizing to the basioccipital region. The parietal lift employs the disengagement principle: medial compression on the temporals first induces parietal internal rotation, after which a gentle medial-and-superior lift disengages the parietal-temporal and parietal-frontal sutures. It is most useful for parietal dysfunction expressed as reduced parietal motion, sutural tenderness or compression, and an overall reduced CRI quality.",
+    "rationale": "Condylar decompression is direct action with superior and lateral traction for CN XII and basioccipital findings. The parietal lift is disengagement with a medial-and-superior lift after temporal compression."
+  },
+  {
+    "question": "A patient with new neurologic symptoms after a fall is referred for cranial treatment of headache. Describe how you screen for contraindications and how the screen changes your decision.",
+    "type": "open",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Screen red flags after a fall before cranial treatment.",
+    "answer": "Absolute contraindications include increased intracranial pressure, acute intracranial bleed, skull fracture, and acute CVA; relative contraindications include coagulopathy and space-occupying lesions. The history (mechanism, loss of consciousness, vomiting, anticoagulation, focal deficit) and a focused exam (vital signs, level of consciousness, pupils, cranial nerves, gross motor) precede any cranial work. Any red flag prompts urgent imaging and neurologic evaluation, and OCMM is deferred. Treatment is appropriate only once dangerous causes have been excluded, and the patient is stable.",
+    "rationale": "Absolute contraindications are increased intracranial pressure, acute intracranial bleed, skull fracture, and acute CVA. Relative contraindications named here include coagulopathy and space-occupying lesions. Red flags defer OCMM."
+  },
+  {
+    "question": "Discuss how palpatory findings should be reconciled with the mechanism of injury when these point to different SBS strain patterns.",
+    "type": "open",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Reconcile palpatory SBS findings with the mechanism of injury.",
+    "answer": "In real life, treatment is always based on palpatory findings. Forces are rarely directed exactly along a primary axis, multiple strains can coexist, and trauma may be layered on pre-existing patterns. The diagnosis is the palpatory finding. If palpation reveals a different pattern (for example, sidebending rotation), the palpatory diagnosis takes precedence over the mechanism of injury for both treatment and test answers.",
+    "rationale": "The printed sample answer ends at the words 'The diagnosis is.' The remainder is completed from the trauma-vector item in the same section, which states that the palpatory diagnosis takes precedence over the mechanism of injury."
+  }
+]

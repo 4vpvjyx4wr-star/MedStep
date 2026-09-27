@@ -616,6 +616,11 @@ textarea:focus{outline:none;border-color:var(--primary)}
 .q-text{font-size:1.05rem;font-weight:600;margin-bottom:22px;line-height:1.5;overflow-wrap:break-word;word-wrap:break-word}
 .q-image{display:block;max-width:100%;height:auto;margin:0 0 18px}
 .q-image[hidden]{display:none}
+.q-images{display:flex;flex-direction:column;gap:14px;margin:0 0 18px}
+.q-images[hidden]{display:none}
+.q-image-figure{margin:0}
+.q-image-figure figcaption{font-size:.8rem;font-weight:700;margin:0 0 6px}
+.q-image-figure .q-image{margin:0}
 
 .nav-box{aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:11px;border-radius:7px;background:var(--border);cursor:pointer;border:2px solid transparent;font-weight:800;font-family:var(--font-mono);transition:transform .12s,border .12s}
 .nav-box:hover{transform:scale(1.08)}
@@ -3068,6 +3073,7 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
         <div class="lo-text" id="lo-citation"></div>
         <div class="q-text" id="q-text"></div>
         <img id="q-image" class="q-image" alt="" hidden>
+        <div id="q-images" class="q-images" hidden></div>
         <div id="options-list"></div>
       </div>
       <div class="quiz-footer">
@@ -10036,10 +10042,28 @@ function loadQuestion(idx){
   loToggle.style.display=q.cited_learning_objective?'inline-flex':'none';
   document.getElementById('q-text').innerText=q.question;
   const qImg=document.getElementById('q-image');
+  const qImgs=document.getElementById('q-images');
+  if(qImgs){ qImgs.replaceChildren(); qImgs.hidden=true; }
+  const many=Array.isArray(q&&q.images)?q.images.map(s=>String(s||'').trim()).filter(Boolean):[];
   if(qImg){
-    const src=q&&typeof q.image==='string'?q.image.trim():'';
+    const src=(!many.length && q && typeof q.image==='string')?q.image.trim():'';
     if(src){ qImg.src=src; qImg.alt=''; qImg.hidden=false; }
     else { qImg.removeAttribute('src'); qImg.hidden=true; }
+  }
+  if(many.length && qImgs){
+    many.forEach((src,i)=>{
+      const fig=document.createElement('figure');
+      fig.className='q-image-figure';
+      const cap=document.createElement('figcaption');
+      cap.textContent=String.fromCharCode(65+i);
+      const img=document.createElement('img');
+      img.className='q-image';
+      img.alt='Photo '+cap.textContent;
+      img.src=src;
+      fig.append(cap,img);
+      qImgs.appendChild(fig);
+    });
+    qImgs.hidden=false;
   }
   document.getElementById('undo-btn').style.display=q.userAnswer?'inline-flex':'none';
 
