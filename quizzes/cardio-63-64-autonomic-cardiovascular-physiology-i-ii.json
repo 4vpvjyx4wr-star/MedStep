@@ -1054,5 +1054,965 @@
         "rationale": "Muscarinic blockade explains the findings that resolved, not the persistent fasciculations; it would be correct if wet autonomic findings remained."
       }
     ]
+  },
+  {
+    "question": "Which intracellular event directly follows stimulation of cardiac β1 receptors?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the second-messenger pathway and physiologic effects of β1-receptor stimulation.",
+    "options": [
+      {
+        "text": "Increased adenylyl cyclase activity",
+        "isCorrect": true,
+        "rationale": "β1 receptors couple to Gs, which activates adenylyl cyclase and increases intracellular cAMP."
+      },
+      {
+        "text": "Decreased adenylyl cyclase activity",
+        "isCorrect": false,
+        "rationale": "This is opposite the β1-receptor response. It would be correct if Gs signaling were inhibited rather than stimulated."
+      },
+      {
+        "text": "Increased acetylcholinesterase inhibition",
+        "isCorrect": false,
+        "rationale": "Acetylcholinesterase inhibition causes acetylcholine accumulation rather than β1 signaling. It would fit exposure to an organophosphate."
+      },
+      {
+        "text": "Decreased muscarinic receptor activity",
+        "isCorrect": false,
+        "rationale": "Reduced muscarinic activity can follow atropine administration but is not the direct intracellular consequence of β1 stimulation."
+      },
+      {
+        "text": "Increased guanylyl cyclase activity",
+        "isCorrect": false,
+        "rationale": "Guanylyl cyclase increases cGMP rather than mediating the β1 Gs-cAMP pathway. It would fit a cGMP-mediated vasodilator mechanism."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme is inhibited when increased cAMP relaxes vascular smooth muscle?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain how β2-receptor stimulation produces vascular and bronchial smooth-muscle relaxation.",
+    "options": [
+      {
+        "text": "Adenylyl cyclase",
+        "isCorrect": false,
+        "rationale": "Adenylyl cyclase generates cAMP and is stimulated upstream. This would be correct if the question asked which enzyme produces cAMP."
+      },
+      {
+        "text": "Myosin light chain kinase",
+        "isCorrect": true,
+        "rationale": "Increased cAMP inhibits myosin light chain kinase, reducing myosin phosphorylation and smooth-muscle contraction."
+      },
+      {
+        "text": "Acetylcholinesterase",
+        "isCorrect": false,
+        "rationale": "Acetylcholinesterase degrades acetylcholine rather than controlling cAMP-mediated smooth-muscle contraction. Its inhibition would fit organophosphate toxicity."
+      },
+      {
+        "text": "Sodium-potassium ATPase",
+        "isCorrect": false,
+        "rationale": "This pump is identified as the target of digoxin, not the downstream target of β2-generated cAMP."
+      },
+      {
+        "text": "Myosin light chain phosphatase",
+        "isCorrect": false,
+        "rationale": "The presented β2 pathway specifically inhibits myosin light chain kinase. This choice would require a mechanism centered on increased dephosphorylation instead."
+      }
+    ]
+  },
+  {
+    "question": "Which medication independently activates myocardial adenylyl cyclase despite impaired adrenergic-receptor signaling?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the mechanisms of medications used to treat β-blocker overdose.",
+    "options": [
+      {
+        "text": "Atropine",
+        "isCorrect": false,
+        "rationale": "Atropine blocks muscarinic receptors and does not independently activate myocardial adenylyl cyclase. It would fit muscarinic manifestations of cholinergic excess."
+      },
+      {
+        "text": "Pralidoxime",
+        "isCorrect": false,
+        "rationale": "Pralidoxime reactivates acetylcholinesterase rather than stimulating adenylyl cyclase. It would fit organophosphate poisoning."
+      },
+      {
+        "text": "Glucagon",
+        "isCorrect": true,
+        "rationale": "Glucagon bypasses the impaired β receptor and independently activates myocardial adenylyl cyclase, increasing cAMP."
+      },
+      {
+        "text": "Phenylephrine",
+        "isCorrect": false,
+        "rationale": "Phenylephrine is a pure alpha agonist that causes vasoconstriction without the stated myocardial mechanism."
+      },
+      {
+        "text": "Dobutamine",
+        "isCorrect": false,
+        "rationale": "Dobutamine is a positive inotrope with inadequate chronotropic effect in this setting. It does not bypass the receptor through independent cyclase activation."
+      }
+    ]
+  },
+  {
+    "question": "Which medication reactivates acetylcholinesterase by displacing an organophosphate from its active site?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the complementary mechanisms of atropine and pralidoxime in organophosphate poisoning.",
+    "options": [
+      {
+        "text": "Donepezil",
+        "isCorrect": false,
+        "rationale": "Donepezil inhibits central acetylcholinesterase and can worsen cholinergic excess. It would fit treatment of Alzheimer disease."
+      },
+      {
+        "text": "Atropine",
+        "isCorrect": false,
+        "rationale": "Atropine competitively blocks muscarinic receptors but does not reactivate acetylcholinesterase. It would be correct for reversal of muscarinic manifestations."
+      },
+      {
+        "text": "Physostigmine",
+        "isCorrect": false,
+        "rationale": "Physostigmine reversibly inhibits acetylcholinesterase rather than restoring it. It would fit management of antimuscarinic toxicity."
+      },
+      {
+        "text": "Pralidoxime",
+        "isCorrect": true,
+        "rationale": "Pralidoxime removes the organophosphate from acetylcholinesterase and thereby reactivates the enzyme."
+      },
+      {
+        "text": "Edrophonium",
+        "isCorrect": false,
+        "rationale": "Edrophonium is a reversible acetylcholinesterase inhibitor and would increase acetylcholine. It would fit reversal of nondepolarizing neuromuscular blockade."
+      }
+    ]
+  },
+  {
+    "question": "β1-receptor stimulation activates protein kinase A and increases calcium entry. Which cardiac change should result?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Connect β1-receptor signaling with changes in cardiac rate, contractility, and output.",
+    "options": [
+      {
+        "text": "Reduced rate and contractility",
+        "isCorrect": false,
+        "rationale": "These changes follow β1 blockade rather than stimulation. The choice would be correct after excessive β-blocker exposure."
+      },
+      {
+        "text": "Increased rate with reduced contractility",
+        "isCorrect": false,
+        "rationale": "β1 signaling increases both rate and contractility. Reduced contractility would require impaired calcium entry or β1 blockade."
+      },
+      {
+        "text": "Reduced rate with increased contractility",
+        "isCorrect": false,
+        "rationale": "The effects are discordant with β1 stimulation, which increases both variables. Reduced rate would require suppression of cardiac β1 signaling."
+      },
+      {
+        "text": "Unchanged rate and contractility",
+        "isCorrect": false,
+        "rationale": "Activation of the β1 Gs-cAMP pathway changes both cardiac rate and calcium-dependent contraction."
+      },
+      {
+        "text": "Increased rate and contractility",
+        "isCorrect": true,
+        "rationale": "β1 stimulation increases cAMP, calcium entry, and sarcoplasmic calcium release, thereby increasing heart rate and contractility."
+      }
+    ]
+  },
+  {
+    "question": "A drug blocks both cardiac and bronchial β receptors. Which paired physiologic effects are expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Contrast the cardiac and pulmonary consequences of selective and nonselective β-receptor blockade.",
+    "options": [
+      {
+        "text": "Bradycardia and bronchoconstriction",
+        "isCorrect": true,
+        "rationale": "β1 blockade slows the heart, while β2 blockade removes bronchodilator signaling and produces bronchoconstriction."
+      },
+      {
+        "text": "Tachycardia and bronchoconstriction",
+        "isCorrect": false,
+        "rationale": "Bronchoconstriction fits β2 blockade, but tachycardia contradicts β1 blockade. Tachycardia would require cardiac adrenergic stimulation."
+      },
+      {
+        "text": "Bradycardia and bronchodilation",
+        "isCorrect": false,
+        "rationale": "Bradycardia fits β1 blockade, but bronchodilation requires β2 stimulation rather than blockade."
+      },
+      {
+        "text": "Tachycardia and bronchodilation",
+        "isCorrect": false,
+        "rationale": "Both effects align with β-receptor stimulation rather than blockade. The stem would need to describe an agonist."
+      },
+      {
+        "text": "Bradycardia and unchanged bronchi",
+        "isCorrect": false,
+        "rationale": "An unchanged airway response would better fit therapeutic cardioselective β1 blockade, not blockade of both receptor subtypes."
+      }
+    ]
+  },
+  {
+    "question": "Atenolol and propranolol are compared at usual doses. Which property most clearly distinguishes propranolol?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Differentiate selective and nonselective β-blockers using receptor selectivity and central nervous system penetration.",
+    "options": [
+      {
+        "text": "Exclusive intravenous availability",
+        "isCorrect": false,
+        "rationale": "Exclusive intravenous administration characterizes esmolol in the provided material. The comparison would need to involve esmolol."
+      },
+      {
+        "text": "β2 blockade with brain penetration",
+        "isCorrect": true,
+        "rationale": "Propranolol is nonselective and highly lipophilic, permitting β2 blockade and blood-brain barrier penetration."
+      },
+      {
+        "text": "β1 selectivity with brain penetration",
+        "isCorrect": false,
+        "rationale": "The presented distinguishing profile is nonselectivity, not β1 selectivity. This would require a cardioselective agent that crosses the barrier."
+      },
+      {
+        "text": "β2 selectivity without brain penetration",
+        "isCorrect": false,
+        "rationale": "Propranolol is nonselective rather than β2-selective and does cross the blood-brain barrier."
+      },
+      {
+        "text": "β1 selectivity without brain penetration",
+        "isCorrect": false,
+        "rationale": "This better describes the contrasted cardioselective profile. It would fit atenolol rather than propranolol."
+      }
+    ]
+  },
+  {
+    "question": "A pure alpha agonist raises vascular resistance during β-blocker toxicity. Why can cardiac output remain inadequate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare useful and less useful autonomic medications in β-blocker overdose.",
+    "options": [
+      {
+        "text": "It inhibits myocardial calcium entry",
+        "isCorrect": false,
+        "rationale": "The material attributes reduced calcium entry to β blockade, not to the pure alpha agonist. This would fit the toxic drug's effect."
+      },
+      {
+        "text": "It produces excessive bronchodilation",
+        "isCorrect": false,
+        "rationale": "A pure alpha agonist does not produce the β2-mediated bronchodilation described. This would require β2 stimulation."
+      },
+      {
+        "text": "It fails to increase rate",
+        "isCorrect": true,
+        "rationale": "Phenylephrine can increase vascular tone but has no direct effect on heart rate, leaving a major determinant of cardiac output uncorrected."
+      },
+      {
+        "text": "It directly causes myocardial vasodilation",
+        "isCorrect": false,
+        "rationale": "The stated effect is vasoconstriction rather than vasodilation. A vasodilating agent would be needed for this choice."
+      },
+      {
+        "text": "It reactivates blocked muscarinic receptors",
+        "isCorrect": false,
+        "rationale": "Muscarinic receptors are not the target of phenylephrine. This would require an intervention affecting cholinergic signaling."
+      }
+    ]
+  },
+  {
+    "question": "A patient receives dobutamine for profound β-blocker toxicity. Which limitation most directly reduces its usefulness?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare useful and less useful autonomic medications in β-blocker overdose.",
+    "options": [
+      {
+        "text": "Absent positive inotropic activity",
+        "isCorrect": false,
+        "rationale": "Dobutamine is specifically identified as a positive inotrope. This would be correct for an agent lacking contractility effects."
+      },
+      {
+        "text": "Complete muscarinic receptor blockade",
+        "isCorrect": false,
+        "rationale": "Muscarinic receptor blockade describes atropine, not dobutamine. The stem would need to ask about atropine."
+      },
+      {
+        "text": "Irreversible cholinesterase inhibition",
+        "isCorrect": false,
+        "rationale": "This describes organophosphate action rather than dobutamine. The exposure would need to involve a cholinesterase inhibitor."
+      },
+      {
+        "text": "Inadequate positive chronotropic activity",
+        "isCorrect": true,
+        "rationale": "Dobutamine improves contractility but lacks a significant chronotropic effect, so severe bradycardia can continue to limit cardiac output."
+      },
+      {
+        "text": "Excessive central adrenergic suppression",
+        "isCorrect": false,
+        "rationale": "Central adrenergic suppression is associated with alpha-2 agonism, not dobutamine. This would fit methyldopa's pathway."
+      }
+    ]
+  },
+  {
+    "question": "A patient has excess acetylcholine affecting both autonomic synapses and the neuromuscular junction. Which paired findings reflect muscarinic and nicotinic effects, respectively?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Differentiate muscarinic, nicotinic, central, and somatic manifestations of cholinergic excess.",
+    "options": [
+      {
+        "text": "Dry mucosa and fasciculations",
+        "isCorrect": false,
+        "rationale": "Fasciculations are nicotinic, but dry mucosa opposes muscarinic excess. Copious secretions would be needed."
+      },
+      {
+        "text": "Mydriasis and muscle weakness",
+        "isCorrect": false,
+        "rationale": "Muscle weakness can be nicotinic, but cholinergic muscarinic excess produces miosis rather than mydriasis."
+      },
+      {
+        "text": "Bronchodilation and muscle twitching",
+        "isCorrect": false,
+        "rationale": "Muscle twitching is nicotinic, but muscarinic excess causes bronchoconstriction and increased secretions, not bronchodilation."
+      },
+      {
+        "text": "Salivation and altered mentation",
+        "isCorrect": false,
+        "rationale": "Salivation is muscarinic, but altered mentation is a central effect rather than a neuromuscular nicotinic manifestation."
+      },
+      {
+        "text": "Miosis and muscle fasciculations",
+        "isCorrect": true,
+        "rationale": "Miosis reflects muscarinic stimulation, whereas fasciculations reflect nicotinic stimulation at the somatic neuromuscular junction."
+      }
+    ]
+  },
+  {
+    "question": "Atropine improves bronchial secretions after organophosphate exposure but leaves limb weakness unchanged. Which distinction explains this response?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the complementary mechanisms of atropine and pralidoxime in organophosphate poisoning.",
+    "options": [
+      {
+        "text": "Muscarinic blockade without nicotinic blockade",
+        "isCorrect": true,
+        "rationale": "Atropine antagonizes muscarinic receptors but does not block nicotinic receptors at the neuromuscular junction."
+      },
+      {
+        "text": "Nicotinic blockade without muscarinic blockade",
+        "isCorrect": false,
+        "rationale": "This reverses atropine's receptor selectivity. It would require a drug acting at nicotinic rather than muscarinic receptors."
+      },
+      {
+        "text": "Central blockade without peripheral blockade",
+        "isCorrect": false,
+        "rationale": "Atropine acts at both central and peripheral muscarinic receptors. This would require an agent restricted to central sites."
+      },
+      {
+        "text": "Enzyme reactivation without receptor blockade",
+        "isCorrect": false,
+        "rationale": "This describes pralidoxime rather than atropine. It would be correct if acetylcholinesterase had been directly reactivated."
+      },
+      {
+        "text": "Adrenergic stimulation without cholinergic blockade",
+        "isCorrect": false,
+        "rationale": "Atropine works through cholinergic receptor antagonism, not adrenergic stimulation. This would fit an adrenergic agonist."
+      }
+    ]
+  },
+  {
+    "question": "Why does delayed pralidoxime administration become progressively less effective after organophosphate exposure?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how aging of the organophosphate-acetylcholinesterase complex affects pralidoxime treatment.",
+    "options": [
+      {
+        "text": "Muscarinic receptors become irreversibly activated",
+        "isCorrect": false,
+        "rationale": "The time-dependent change involves the enzyme-toxin complex, not irreversible activation of muscarinic receptors."
+      },
+      {
+        "text": "The enzyme-toxin complex undergoes aging",
+        "isCorrect": true,
+        "rationale": "Aging stabilizes the organophosphate-acetylcholinesterase complex, making displacement by pralidoxime less likely."
+      },
+      {
+        "text": "Atropine competitively blocks enzyme reactivation",
+        "isCorrect": false,
+        "rationale": "Atropine blocks muscarinic receptors and does not prevent pralidoxime from reactivating acetylcholinesterase."
+      },
+      {
+        "text": "Acetylcholine permanently leaves the synapse",
+        "isCorrect": false,
+        "rationale": "Acetylcholine accumulates when acetylcholinesterase is inhibited. Permanent synaptic removal would require restored degradation."
+      },
+      {
+        "text": "Nicotinic receptors lose all sensitivity",
+        "isCorrect": false,
+        "rationale": "The stated reason for treatment failure is aging of the inhibited enzyme complex, not complete nicotinic receptor desensitization."
+      }
+    ]
+  },
+  {
+    "question": "Two poisoned patients have bradycardia, hypotension, and wheezing. Which finding most strongly supports cholinergic excess rather than nonselective β blockade?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare the clinical presentations of β-blocker overdose and organophosphate poisoning.",
+    "options": [
+      {
+        "text": "Weak peripheral pulses",
+        "isCorrect": false,
+        "rationale": "Weak pulses can accompany hypotension in either presentation. A differentiating choice would require a cholinergic secretory or nicotinic sign."
+      },
+      {
+        "text": "Pale extremities",
+        "isCorrect": false,
+        "rationale": "Pallor can occur with poor perfusion and does not distinguish the two syndromes. A finding such as miosis would be more specific."
+      },
+      {
+        "text": "Diffuse pulmonary wheezing",
+        "isCorrect": false,
+        "rationale": "Wheezing occurs with both bronchospasm from cholinergic excess and β2 blockade. Added copious secretions would favor cholinergic excess."
+      },
+      {
+        "text": "Generalized muscle fasciculations",
+        "isCorrect": true,
+        "rationale": "Fasciculations reflect nicotinic stimulation at the neuromuscular junction and strongly favor acetylcholine accumulation."
+      },
+      {
+        "text": "Reduced arterial pressure",
+        "isCorrect": false,
+        "rationale": "Hypotension occurs in both toxic syndromes. A distinguishing nicotinic or muscarinic manifestation would be required."
+      }
+    ]
+  },
+  {
+    "question": "Which sequence links β2-receptor stimulation to relaxation of bronchial smooth muscle?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how β2-receptor stimulation produces vascular and bronchial smooth-muscle relaxation.",
+    "options": [
+      {
+        "text": "Gs activation, reduced cAMP, kinase activation",
+        "isCorrect": false,
+        "rationale": "Gs increases rather than reduces cAMP. The sequence would require increased cAMP followed by kinase inhibition."
+      },
+      {
+        "text": "Gq activation, increased cAMP, kinase inhibition",
+        "isCorrect": false,
+        "rationale": "The stated β2 pathway uses Gs rather than Gq. Replacing Gq with Gs would correct the sequence."
+      },
+      {
+        "text": "Gs activation, increased cAMP, kinase inhibition",
+        "isCorrect": true,
+        "rationale": "β2 receptors activate Gs, increase cAMP, and inhibit myosin light chain kinase, producing relaxation."
+      },
+      {
+        "text": "Gq activation, increased IP3, kinase inhibition",
+        "isCorrect": false,
+        "rationale": "Gq-IP3 signaling is associated with smooth-muscle contraction in the presented pathway. β2-mediated relaxation requires Gs and cAMP."
+      },
+      {
+        "text": "Gs activation, increased cGMP, phosphatase inhibition",
+        "isCorrect": false,
+        "rationale": "β2 signaling increases cAMP, not cGMP, and the stated mechanism centers on myosin light chain kinase inhibition."
+      }
+    ]
+  },
+  {
+    "question": "A β blocker decreases cardiac cAMP while also decreasing vascular β2 signaling. Which combined hemodynamic change is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Relate β-receptor blockade to cardiac output, vascular tone, and blood pressure.",
+    "options": [
+      {
+        "text": "Increased output with reduced resistance",
+        "isCorrect": false,
+        "rationale": "β blockade lowers cardiac output and removes a small vasodilator influence. This pattern instead resembles β-receptor stimulation."
+      },
+      {
+        "text": "Increased output with increased resistance",
+        "isCorrect": false,
+        "rationale": "Increased resistance can follow loss of β2 vasodilation, but cardiac output should decrease because of β1 blockade."
+      },
+      {
+        "text": "Unchanged output with reduced resistance",
+        "isCorrect": false,
+        "rationale": "Neither component matches combined β1 and β2 blockade. Reduced resistance would require preserved or stimulated β2 signaling."
+      },
+      {
+        "text": "Reduced output with reduced resistance",
+        "isCorrect": false,
+        "rationale": "Reduced output fits β1 blockade, but vascular β2 blockade removes vasodilation and can slightly increase resistance."
+      },
+      {
+        "text": "Reduced output with increased resistance",
+        "isCorrect": true,
+        "rationale": "β1 blockade reduces rate and contractility, while β2 blockade removes a vasodilator influence and permits greater alpha-mediated vascular tone."
+      }
+    ]
+  },
+  {
+    "question": "A 26-year-old man is found lethargic after ingesting unknown pills. Pulse is 40/min, blood pressure is 80/46 mm Hg, and bilateral wheezing is present. Which toxic exposure best unifies these findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recognize the clinical presentation and receptor basis of severe β-blocker toxicity.",
+    "options": [
+      {
+        "text": "Nonselective β-receptor blocker overdose",
+        "isCorrect": true,
+        "rationale": "β1 blockade explains bradycardia and pump failure, while β2 blockade explains wheezing from bronchoconstriction."
+      },
+      {
+        "text": "Selective α1-receptor blocker overdose",
+        "isCorrect": false,
+        "rationale": "An α1 blocker can reduce vascular resistance but does not explain bronchoconstriction with profound bradycardia. Reflex tachycardia would better fit."
+      },
+      {
+        "text": "Pure α1-receptor agonist overdose",
+        "isCorrect": false,
+        "rationale": "A pure alpha agonist causes vasoconstriction and increased pressure rather than this hypotensive pump-failure pattern."
+      },
+      {
+        "text": "Central α2-receptor agonist overdose",
+        "isCorrect": false,
+        "rationale": "Central adrenergic suppression could reduce pressure, but the presented material does not connect it with β2-mediated wheezing. The airway finding would need removal."
+      },
+      {
+        "text": "Peripheral D1-receptor agonist overdose",
+        "isCorrect": false,
+        "rationale": "D1 stimulation reduces resistance in renal vascular beds and does not explain the combined cardiac and bronchial findings."
+      }
+    ]
+  },
+  {
+    "question": "A 29-year-old woman develops profound bradycardia and hypotension after excessive β blockade. A medication is needed to increase both vascular tone and cardiac output. Which agent is the best choice?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Select adrenergic therapy that restores perfusion during severe β-blocker overdose.",
+    "options": [
+      {
+        "text": "Phenylephrine",
+        "isCorrect": false,
+        "rationale": "Phenylephrine increases vascular tone but has no direct effect on heart rate or contractility. It would fit isolated vasodilatory hypotension."
+      },
+      {
+        "text": "Epinephrine",
+        "isCorrect": true,
+        "rationale": "Epinephrine provides vasoconstriction while increasing heart rate, contractility, cardiac output, and bronchodilation."
+      },
+      {
+        "text": "Dobutamine",
+        "isCorrect": false,
+        "rationale": "Dobutamine increases contractility but has little chronotropic effect and can cause vasodilation. It would better fit a need for isolated inotropic support."
+      },
+      {
+        "text": "Atropine",
+        "isCorrect": false,
+        "rationale": "Atropine blocks parasympathetic muscarinic activity, but β-blocker toxicity reflects impaired sympathetic signaling. It would fit cholinergic excess."
+      },
+      {
+        "text": "Pralidoxime",
+        "isCorrect": false,
+        "rationale": "Pralidoxime reactivates acetylcholinesterase and does not provide the required adrenergic effects. It would fit organophosphate poisoning."
+      }
+    ]
+  },
+  {
+    "question": "A 34-year-old man remains hypotensive and bradycardic after initial adrenergic support for β-blocker overdose. Which next therapy most directly bypasses the impaired receptor?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the mechanisms of medications used to treat β-blocker overdose.",
+    "options": [
+      {
+        "text": "Intravenous phenylephrine",
+        "isCorrect": false,
+        "rationale": "Phenylephrine causes alpha-mediated vasoconstriction but does not bypass cardiac β receptors through adenylyl cyclase."
+      },
+      {
+        "text": "Intravenous atropine",
+        "isCorrect": false,
+        "rationale": "Atropine removes muscarinic influence but does not independently activate myocardial adenylyl cyclase."
+      },
+      {
+        "text": "Intravenous glucagon",
+        "isCorrect": true,
+        "rationale": "Glucagon bypasses the impaired β receptor and independently activates myocardial adenylyl cyclase, increasing cAMP."
+      },
+      {
+        "text": "Intravenous pralidoxime",
+        "isCorrect": false,
+        "rationale": "Pralidoxime restores acetylcholinesterase activity and would be appropriate after organophosphate exposure."
+      },
+      {
+        "text": "Intravenous physostigmine",
+        "isCorrect": false,
+        "rationale": "Physostigmine inhibits acetylcholinesterase and increases cholinergic activity. It would fit antimuscarinic toxicity, not β blockade."
+      }
+    ]
+  },
+  {
+    "question": "A 42-year-old landscaper develops vomiting, diarrhea, pinpoint pupils, copious oral secretions, wheezing, and fasciculations. Which mechanism most likely produced this syndrome?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Connect organophosphate-mediated cholinesterase inhibition with muscarinic and nicotinic manifestations.",
+    "options": [
+      {
+        "text": "Irreversible inhibition of cholinesterase",
+        "isCorrect": true,
+        "rationale": "Organophosphate-mediated cholinesterase inhibition causes acetylcholine accumulation at autonomic synapses and neuromuscular junctions."
+      },
+      {
+        "text": "Competitive blockade of muscarinic receptors",
+        "isCorrect": false,
+        "rationale": "Muscarinic blockade would reduce secretions and produce the opposite of this toxidrome. It would fit atropine exposure."
+      },
+      {
+        "text": "Selective blockade of cardiac β1 receptors",
+        "isCorrect": false,
+        "rationale": "β1 blockade could cause bradycardia but does not explain miosis, diarrhea, secretions, and fasciculations."
+      },
+      {
+        "text": "Direct activation of vascular α1 receptors",
+        "isCorrect": false,
+        "rationale": "α1 activation causes vasoconstriction but does not account for widespread muscarinic and nicotinic findings."
+      },
+      {
+        "text": "Central activation of α2 receptors",
+        "isCorrect": false,
+        "rationale": "Central α2 activation reduces adrenergic outflow but does not produce the combined secretory and neuromuscular syndrome."
+      }
+    ]
+  },
+  {
+    "question": "A 45-year-old farm worker has bradycardia, bronchorrhea, miosis, and vomiting after pesticide exposure. Which medication should be administered first to reverse the immediately dangerous secretory findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Select first-line treatment for life-threatening muscarinic manifestations of organophosphate poisoning.",
+    "options": [
+      {
+        "text": "Physostigmine",
+        "isCorrect": false,
+        "rationale": "Physostigmine further inhibits acetylcholinesterase and would worsen cholinergic findings. It would fit antimuscarinic toxicity."
+      },
+      {
+        "text": "Pralidoxime",
+        "isCorrect": false,
+        "rationale": "Pralidoxime reactivates acetylcholinesterase and should be given promptly, but atropine is the most important agent for immediate muscarinic reversal."
+      },
+      {
+        "text": "Glucagon",
+        "isCorrect": false,
+        "rationale": "Glucagon bypasses myocardial β receptors and would fit β-blocker toxicity rather than diffuse cholinergic excess."
+      },
+      {
+        "text": "Atropine",
+        "isCorrect": true,
+        "rationale": "Atropine competitively antagonizes central and peripheral muscarinic receptors, rapidly reducing bronchial and oral secretions."
+      },
+      {
+        "text": "Dobutamine",
+        "isCorrect": false,
+        "rationale": "Dobutamine provides inotropic support but does not reverse muscarinic bronchorrhea. It would fit selected cardiac pump-failure states."
+      }
+    ]
+  },
+  {
+    "question": "A pesticide-exposed patient receives atropine. Secretions and bradycardia improve, but fasciculations persist. Which additional treatment addresses the underlying enzyme inhibition?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the complementary mechanisms of atropine and pralidoxime in organophosphate poisoning.",
+    "options": [
+      {
+        "text": "Epinephrine",
+        "isCorrect": false,
+        "rationale": "Epinephrine provides adrenergic stimulation but does not restore acetylcholinesterase. It would fit a need for combined cardiac and vascular support."
+      },
+      {
+        "text": "Pralidoxime",
+        "isCorrect": true,
+        "rationale": "Pralidoxime displaces the organophosphate from acetylcholinesterase, restoring enzyme activity and addressing nicotinic manifestations."
+      },
+      {
+        "text": "Donepezil",
+        "isCorrect": false,
+        "rationale": "Donepezil inhibits central acetylcholinesterase and could intensify cholinergic excess. It would fit Alzheimer disease treatment."
+      },
+      {
+        "text": "Edrophonium",
+        "isCorrect": false,
+        "rationale": "Edrophonium also inhibits acetylcholinesterase and would worsen acetylcholine accumulation. It would fit reversal of nondepolarizing blockade."
+      },
+      {
+        "text": "Methyldopa",
+        "isCorrect": false,
+        "rationale": "Methyldopa reduces central adrenergic outflow and does not reactivate cholinesterase. It would fit treatment requiring reduced vascular resistance."
+      }
+    ]
+  },
+  {
+    "question": "A 38-year-old man reaches care many hours after organophosphate exposure. Atropine improves secretions, but pralidoxime has limited effect. Which process best explains the poor response?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how aging of the organophosphate-acetylcholinesterase complex affects pralidoxime treatment.",
+    "options": [
+      {
+        "text": "Aging of the inhibited enzyme complex",
+        "isCorrect": true,
+        "rationale": "Prolonged organophosphate binding allows the acetylcholinesterase complex to age, reducing the ability of pralidoxime to displace the toxin."
+      },
+      {
+        "text": "Depletion of all muscarinic receptors",
+        "isCorrect": false,
+        "rationale": "Treatment failure is attributed to aging of the enzyme-toxin complex, not disappearance of muscarinic receptors."
+      },
+      {
+        "text": "Permanent activation of adenylyl cyclase",
+        "isCorrect": false,
+        "rationale": "Adenylyl cyclase activation is relevant to glucagon treatment in β-blocker toxicity, not delayed pralidoxime failure."
+      },
+      {
+        "text": "Irreversible blockade of β2 receptors",
+        "isCorrect": false,
+        "rationale": "β2 blockade can cause bronchoconstriction but does not explain reduced pralidoxime efficacy after pesticide exposure."
+      },
+      {
+        "text": "Exhaustion of central adrenergic outflow",
+        "isCorrect": false,
+        "rationale": "Central adrenergic outflow is not the target of pralidoxime. This would require an alpha-2-mediated process."
+      }
+    ]
+  },
+  {
+    "question": "A 24-year-old man has bradycardia, hypotension, wheezing, dry mucosa, midpoint pupils, and confusion after a pill ingestion. Which agent most likely caused the presentation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Differentiate propranolol toxicity from selective β-blocker toxicity and cholinergic crisis.",
+    "options": [
+      {
+        "text": "Atenolol",
+        "isCorrect": false,
+        "rationale": "Atenolol is cardioselective and does not usually cause β2-mediated bronchoconstriction or central effects at ordinary exposure levels. Very high doses would be required."
+      },
+      {
+        "text": "Esmolol",
+        "isCorrect": false,
+        "rationale": "Esmolol is a short-acting intravenous cardioselective agent and does not match an unknown oral ingestion with central and pulmonary findings."
+      },
+      {
+        "text": "Metoprolol",
+        "isCorrect": false,
+        "rationale": "Metoprolol is cardioselective and is less consistent with simultaneous bronchoconstriction and blood-brain barrier effects. Very high doses could reduce selectivity."
+      },
+      {
+        "text": "Propranolol",
+        "isCorrect": true,
+        "rationale": "Propranolol is nonselective and highly lipophilic, explaining β1 cardiac toxicity, β2-mediated wheezing, and altered mental status."
+      },
+      {
+        "text": "Phenylephrine",
+        "isCorrect": false,
+        "rationale": "Phenylephrine is a pure alpha agonist expected to increase vascular tone rather than cause hypotensive β-blocker toxicity."
+      }
+    ]
+  },
+  {
+    "question": "A 67-year-old patient requires rapid control of a perioperative tachyarrhythmia using an intravenous agent with a very short half-life. Which medication is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Differentiate β-blockers using receptor selectivity, route of administration, and duration of action.",
+    "options": [
+      {
+        "text": "Propranolol",
+        "isCorrect": false,
+        "rationale": "Propranolol is distinguished by nonselectivity and lipophilicity, not exclusive intravenous administration with a very short half-life."
+      },
+      {
+        "text": "Atenolol",
+        "isCorrect": false,
+        "rationale": "Atenolol is cardioselective but is not identified as the short-half-life intravenous perioperative agent."
+      },
+      {
+        "text": "Metoprolol",
+        "isCorrect": false,
+        "rationale": "Metoprolol is cardioselective but lacks the specifically emphasized very short half-life and intravenous-only profile."
+      },
+      {
+        "text": "Dobutamine",
+        "isCorrect": false,
+        "rationale": "Dobutamine is a positive inotrope without significant chronotropic benefit and is not used to suppress a tachyarrhythmia."
+      },
+      {
+        "text": "Esmolol",
+        "isCorrect": true,
+        "rationale": "Esmolol has a very short half-life, is given intravenously, and is used for perioperative tachyarrhythmia control."
+      }
+    ]
+  },
+  {
+    "question": "A 31-year-old patient with β-blocker overdose remains profoundly bradycardic. One proposed drug can increase contractility but may worsen hypotension and will not adequately raise the heart rate. Which drug has these limitations?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare useful and less useful autonomic medications in β-blocker overdose.",
+    "options": [
+      {
+        "text": "Dobutamine",
+        "isCorrect": true,
+        "rationale": "Dobutamine is a positive inotrope with little chronotropic effect and can cause vasodilation, potentially worsening hypotension."
+      },
+      {
+        "text": "Epinephrine",
+        "isCorrect": false,
+        "rationale": "Epinephrine increases heart rate, contractility, cardiac output, and vascular tone. It would fit the desired combined response."
+      },
+      {
+        "text": "Norepinephrine",
+        "isCorrect": false,
+        "rationale": "Norepinephrine provides strong alpha-mediated vasoconstriction with modest β1 activity rather than the stated vasodilating limitation."
+      },
+      {
+        "text": "Glucagon",
+        "isCorrect": false,
+        "rationale": "Glucagon bypasses the blocked β receptor through independent myocardial adenylyl cyclase activation."
+      },
+      {
+        "text": "Phenylephrine",
+        "isCorrect": false,
+        "rationale": "Phenylephrine lacks direct chronotropic activity but causes vasoconstriction rather than the potentially harmful vasodilation described."
+      }
+    ]
+  },
+  {
+    "question": "A 43-year-old woman has severe β-blocker toxicity with shock. The team favors a vasopressor possessing dominant α1 activity and modest β1 activity because another agent carries greater risks of tachyarrhythmias and metabolic abnormalities. Which drug is selected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare epinephrine and norepinephrine as vasopressors in β-blocker overdose.",
+    "options": [
+      {
+        "text": "Phenylephrine",
+        "isCorrect": false,
+        "rationale": "Phenylephrine is a pure alpha agonist without the modest β1 activity specified. It would fit a need for isolated vasoconstriction."
+      },
+      {
+        "text": "Norepinephrine",
+        "isCorrect": true,
+        "rationale": "Norepinephrine acts primarily at α1 receptors with modest β1 activity and may be favored before epinephrine because of epinephrine-associated risks."
+      },
+      {
+        "text": "Epinephrine",
+        "isCorrect": false,
+        "rationale": "Epinephrine activates β1 and β2 receptors and is the comparator associated with greater tachyarrhythmic and metabolic risk."
+      },
+      {
+        "text": "Dobutamine",
+        "isCorrect": false,
+        "rationale": "Dobutamine is primarily an inotrope, lacks adequate chronotropic effect, and can worsen hypotension through vasodilation."
+      },
+      {
+        "text": "Glucagon",
+        "isCorrect": false,
+        "rationale": "Glucagon independently activates myocardial adenylyl cyclase but is not the predominantly α1 vasopressor described."
+      }
+    ]
+  },
+  {
+    "question": "A 40-year-old man with pesticide exposure receives a medication that decreases bronchial secretions and raises his pulse from 42/min to 58/min. Which cellular target mediates this treatment?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the receptor-level mechanism of atropine in organophosphate poisoning.",
+    "options": [
+      {
+        "text": "Myocardial β1 receptors",
+        "isCorrect": false,
+        "rationale": "β1 stimulation can increase heart rate but does not directly reverse excessive bronchial secretions. An adrenergic agonist would be needed."
+      },
+      {
+        "text": "Vascular α1 receptors",
+        "isCorrect": false,
+        "rationale": "α1 stimulation increases vascular tone but does not antagonize muscarinic secretory effects."
+      },
+      {
+        "text": "Central and peripheral muscarinic receptors",
+        "isCorrect": true,
+        "rationale": "Atropine competitively antagonizes acetylcholine at central and peripheral muscarinic receptors, reversing secretions and bradycardia."
+      },
+      {
+        "text": "Neuromuscular nicotinic receptors",
+        "isCorrect": false,
+        "rationale": "Atropine does not act at nicotinic receptors and therefore does not directly reverse fasciculations or muscle weakness."
+      },
+      {
+        "text": "Myocardial adenylyl cyclase",
+        "isCorrect": false,
+        "rationale": "Independent myocardial adenylyl cyclase activation describes glucagon treatment for β-blocker overdose."
+      }
+    ]
+  },
+  {
+    "question": "A 36-year-old pesticide worker has miosis, salivation, diarrhea, bronchospasm, and muscle weakness. Atropine is administered. Which finding is most likely to persist despite adequate dosing?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Differentiate atropine-responsive muscarinic findings from nicotinic manifestations of organophosphate poisoning.",
+    "options": [
+      {
+        "text": "Copious salivation",
+        "isCorrect": false,
+        "rationale": "Salivation is muscarinic and should improve with adequate atropine. Persistence would suggest inadequate muscarinic blockade."
+      },
+      {
+        "text": "Pinpoint pupils",
+        "isCorrect": false,
+        "rationale": "Miosis is a muscarinic manifestation and should respond to atropine. Persistence would require insufficient treatment."
+      },
+      {
+        "text": "Profuse diarrhea",
+        "isCorrect": false,
+        "rationale": "Diarrhea reflects excessive muscarinic activity and should improve after muscarinic antagonism."
+      },
+      {
+        "text": "Skeletal muscle weakness",
+        "isCorrect": true,
+        "rationale": "Muscle weakness is mediated by nicotinic effects at the neuromuscular junction, where atropine is ineffective."
+      },
+      {
+        "text": "Marked bronchial secretions",
+        "isCorrect": false,
+        "rationale": "Bronchial hypersecretion is muscarinic and is a major target of atropine treatment."
+      }
+    ]
+  },
+  {
+    "question": "A 27-year-old patient has hypotension and bronchospasm after ingesting a nonselective β blocker. Which change in vascular smooth muscle signaling contributes to the loss of vasodilation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Apply the β2 Gs-cAMP pathway to vascular and bronchial effects of nonselective β blockade.",
+    "options": [
+      {
+        "text": "Reduced cAMP with increased kinase activity",
+        "isCorrect": true,
+        "rationale": "β2 blockade reduces cAMP, removing inhibition of myosin light chain kinase and favoring smooth-muscle contraction."
+      },
+      {
+        "text": "Increased cAMP with reduced kinase activity",
+        "isCorrect": false,
+        "rationale": "This describes β2 stimulation and smooth-muscle relaxation. The receptor would need to be activated rather than blocked."
+      },
+      {
+        "text": "Reduced cGMP with enzyme reactivation",
+        "isCorrect": false,
+        "rationale": "The β2 pathway described depends on cAMP and myosin light chain kinase, not acetylcholinesterase reactivation."
+      },
+      {
+        "text": "Increased IP3 with reduced calcium entry",
+        "isCorrect": false,
+        "rationale": "The stated consequence of β2 blockade is loss of cAMP-mediated kinase inhibition, not this mixed IP3-calcium pattern."
+      },
+      {
+        "text": "Increased cAMP with increased kinase activity",
+        "isCorrect": false,
+        "rationale": "Increased cAMP inhibits rather than activates myosin light chain kinase in vascular smooth muscle."
+      }
+    ]
+  },
+  {
+    "question": "A 50-year-old man has bradycardia, hypotension, wheezing, vomiting, and confusion. Which additional finding would most strongly shift the diagnosis from β-blocker toxicity to organophosphate poisoning?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare the clinical presentations of β-blocker overdose and organophosphate poisoning.",
+    "options": [
+      {
+        "text": "Weak peripheral pulses",
+        "isCorrect": false,
+        "rationale": "Weak pulses can result from shock in either condition. A cholinergic secretory or neuromuscular sign is needed."
+      },
+      {
+        "text": "Reduced cardiac output",
+        "isCorrect": false,
+        "rationale": "Reduced output can accompany profound bradycardia in both presentations and does not distinguish them."
+      },
+      {
+        "text": "Diffuse bilateral wheezing",
+        "isCorrect": false,
+        "rationale": "Wheezing can occur with either muscarinic bronchospasm or β2 blockade. Secretions or fasciculations would be more discriminating."
+      },
+      {
+        "text": "Pale cool extremities",
+        "isCorrect": false,
+        "rationale": "Pallor and cool skin can accompany poor perfusion or increased vascular tone in β-blocker toxicity."
+      },
+      {
+        "text": "Copious secretions with fasciculations",
+        "isCorrect": true,
+        "rationale": "Copious secretions indicate muscarinic excess, while fasciculations indicate nicotinic stimulation from acetylcholine accumulation."
+      }
+    ]
   }
 ]
