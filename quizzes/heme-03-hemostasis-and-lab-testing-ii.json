@@ -1,961 +1,1057 @@
 [
   {
-    "question": "Which group contains all four systems required for hemostasis?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "Describe the four factors needed for hemostasis",
-    "options": [
-      {
-        "text": "Endothelium, coagulation cascade, platelets, humoral inhibitors",
-        "isCorrect": true,
-        "rationale": "These four interacting systems provide the vascular surface, clotting reactions, platelet plug, and restraints on inappropriate coagulation."
-      },
-      {
-        "text": "Endothelium, fibrinolytic cascade, erythrocytes, humoral inhibitors",
-        "isCorrect": false,
-        "rationale": "Erythrocytes are not one of the four specified systems. This would require platelets to replace erythrocytes."
-      },
-      {
-        "text": "Subendothelium, coagulation cascade, leukocytes, complement proteins",
-        "isCorrect": false,
-        "rationale": "Leukocytes and complement proteins are not included among the four required systems. This would require platelets and humoral inhibitors instead."
-      },
-      {
-        "text": "Endothelium, complement cascade, platelets, plasma antibodies",
-        "isCorrect": false,
-        "rationale": "Complement and plasma antibodies do not replace the humoral coagulation cascade and its inhibitors. Those two systems would need to be restored."
-      },
-      {
-        "text": "Subendothelium, fibrinolytic cascade, erythrocytes, plasma antibodies",
-        "isCorrect": false,
-        "rationale": "This group omits all four specified components. It would be correct only after substitution with endothelium, coagulation factors, platelets, and humoral inhibitors."
-      }
-    ]
-  },
-  {
-    "question": "Which process defines secondary hemostasis?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "Define the terms primary and secondary hemostasis",
-    "options": [
-      {
-        "text": "Formation of an aggregated platelet plug",
-        "isCorrect": false,
-        "rationale": "Platelet-plug formation defines primary hemostasis. It would be correct if the question asked about the initial platelet response."
-      },
-      {
-        "text": "Formation of a stabilizing fibrin meshwork",
-        "isCorrect": true,
-        "rationale": "Secondary hemostasis uses a humoral reaction cascade to produce fibrin, which stabilizes the platelet plug."
-      },
-      {
-        "text": "Exposure of endothelial phosphatidylserine surfaces",
-        "isCorrect": false,
-        "rationale": "Phosphatidylserine exposure localizes coagulation but does not itself define secondary hemostasis. It would fit a question about the required reaction surface."
-      },
-      {
-        "text": "Cleavage of fibrin by circulating plasmin",
-        "isCorrect": false,
-        "rationale": "Plasmin-mediated fibrin cleavage is fibrinolysis. It would be correct if the task concerned clot dissolution."
-      },
-      {
-        "text": "Inhibition of proteases by humoral inhibitors",
-        "isCorrect": false,
-        "rationale": "Humoral inhibitors limit coagulation rather than define secondary hemostasis. This would fit a question about preventing inappropriate cascade activation."
-      }
-    ]
-  },
-  {
-    "question": "Which set contains only vitamin K-dependent coagulation proteins?",
+    "question": "Which group contains all vitamin K-dependent coagulation factors?",
     "difficulty_order": "1st",
     "cited_learning_objective": "List the Vitamin K dependent coagulation factors and anticoagulants and the importance of calcium and phospholipids in coagulation as well as how warfarin works as an anticoagulant",
     "options": [
       {
-        "text": "Factors II, V, VII, IX",
-        "isCorrect": false,
-        "rationale": "Factor V is a cofactor but is not vitamin K-dependent. Replacing factor V with factor X would make the set correct."
-      },
-      {
-        "text": "Factors II, VII, VIII, X",
-        "isCorrect": false,
-        "rationale": "Factor VIII is not vitamin K-dependent. Replacing factor VIII with factor IX would make the set correct."
-      },
-      {
-        "text": "Factors II, VII, IX, X",
+        "text": "Factors II, VII, IX, and X",
         "isCorrect": true,
-        "rationale": "Factors II, VII, IX, and X undergo vitamin K-dependent γ-carboxylation that supports calcium-mediated phospholipid binding."
+        "rationale": "These four factors undergo vitamin K-dependent γ-carboxylation of N-terminal glutamate residues, enabling calcium-mediated binding to phospholipid surfaces."
       },
       {
-        "text": "Factors V, VIII, IX, XI",
+        "text": "Factors II, V, VIII, and X",
         "isCorrect": false,
-        "rationale": "Only factor IX in this set is vitamin K-dependent. Factors II, VII, and X would need to replace V, VIII, and XI."
+        "rationale": "Factors V and VIII are cofactors rather than vitamin K-dependent proteins. This choice would be correct only if V and VIII were replaced by VII and IX."
       },
       {
-        "text": "Factors VII, IX, XI, XII",
+        "text": "Factors I, VII, IX, and XIII",
         "isCorrect": false,
-        "rationale": "Factors XI and XII are not vitamin K-dependent, and factors II and X are missing. Substituting those factors would correct the set."
+        "rationale": "Factors I and XIII are not vitamin K-dependent. This choice would require substituting factors II and X for I and XIII."
+      },
+      {
+        "text": "Factors VII, VIII, XI, and XII",
+        "isCorrect": false,
+        "rationale": "Factors VIII, XI, and XII do not require vitamin K-dependent γ-carboxylation. This choice would require factors II, IX, and X instead."
+      },
+      {
+        "text": "Factors I, V, X, and XIII",
+        "isCorrect": false,
+        "rationale": "Only factor X in this group is vitamin K-dependent. The remaining factors would need to be II, VII, and IX."
       }
     ]
   },
   {
-    "question": "Which abnormality is associated with hemophilia C?",
+    "question": "Which coagulation factor serves as the cofactor for factor IXa in the complex that activates factor X?",
     "difficulty_order": "1st",
-    "cited_learning_objective": "Understand the molecular basis of Hemophilias A, B, and C and Factor V Leiden",
-    "options": [
-      {
-        "text": "Mutated coagulation factor VIII",
-        "isCorrect": false,
-        "rationale": "A factor VIII mutation causes hemophilia A. This would be correct if that subtype were being tested."
-      },
-      {
-        "text": "Mutated coagulation factor IX",
-        "isCorrect": false,
-        "rationale": "A factor IX mutation causes hemophilia B. This would be correct if the patient had that subtype."
-      },
-      {
-        "text": "Mutated coagulation factor X",
-        "isCorrect": false,
-        "rationale": "Factor X enters the common pathway and is not the defect assigned to hemophilia C. Factor XI would need to be affected."
-      },
-      {
-        "text": "Mutated coagulation factor XI",
-        "isCorrect": true,
-        "rationale": "Hemophilia C results from a mutation affecting factor XI within the intrinsic pathway."
-      },
-      {
-        "text": "Mutated coagulation factor XII",
-        "isCorrect": false,
-        "rationale": "Factor XII initiates the intrinsic pathway but is not the factor mutated in hemophilia C. Factor XI would make this correct."
-      }
-    ]
-  },
-  {
-    "question": "A newly activated clotting enzyme cleaves numerous downstream zymogens, each of which activates additional molecules. Which property best explains the rapidly increasing reaction rate?",
-    "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the process involved in the extrinsic, intrinsic, and common pathways of secondary hemostasis",
     "options": [
       {
-        "text": "Localization to endothelial phospholipids",
+        "text": "Activated factor V",
         "isCorrect": false,
-        "rationale": "Phospholipids localize reactions to an injured surface but do not by themselves explain the multiplying response. This would be correct if localization were being tested."
+        "rationale": "Factor Va supports factor Xa in the prothrombinase complex. It would be correct if the question asked for the cofactor used during prothrombin activation."
       },
       {
-        "text": "Chelation of available calcium ions",
+        "text": "Activated factor VII",
         "isCorrect": false,
-        "rationale": "Calcium chelation prevents rather than accelerates coagulation. This would apply to citrate-treated blood before testing."
+        "rationale": "Factor VIIa complexes with tissue factor to initiate the extrinsic pathway. It would fit if the complex being described activated factor X after tissue injury."
       },
       {
-        "text": "Cross-linking of adjacent fibrin strands",
-        "isCorrect": false,
-        "rationale": "Factor XIIIa-mediated cross-linking strengthens the final clot but does not cause upstream acceleration. This would fit clot stabilization."
-      },
-      {
-        "text": "Inhibition by circulating protease inhibitors",
-        "isCorrect": false,
-        "rationale": "Protease inhibitors restrain the cascade. This would be correct if the question concerned limiting clot formation."
-      },
-      {
-        "text": "Sequential amplification through proteolytic activation",
+        "text": "Activated factor VIII",
         "isCorrect": true,
-        "rationale": "Cascade amplification occurs because each activated enzyme can activate multiple downstream molecules, rapidly increasing coagulation activity."
+        "rationale": "Factor VIIIa combines with IXa, calcium, and phospholipids to form the tenase complex that activates factor X."
+      },
+      {
+        "text": "Activated factor XI",
+        "isCorrect": false,
+        "rationale": "Factor XIa is a serine protease that activates factor IX rather than a cofactor for IXa. It would be correct if the target were factor IX."
+      },
+      {
+        "text": "Activated factor XIII",
+        "isCorrect": false,
+        "rationale": "Factor XIIIa cross-links fibrin during clot stabilization. It would apply if the question concerned conversion of a soft clot into a hard clot."
       }
     ]
   },
   {
-    "question": "An injured vascular surface exposes negatively charged phospholipids. Calcium then links γ-carboxylated proteins to this surface. Which group is directly recruited by this interaction?",
+    "question": "Which laboratory test directly measures the conversion of fibrinogen into fibrin after enzyme addition to plasma?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the use of PT, aPTT, thrombin time, and mixing studies in the diagnosis of coagulation disorders and monitoring heparin and warfarin treatment",
+    "options": [
+      {
+        "text": "Prothrombin time assay",
+        "isCorrect": false,
+        "rationale": "Prothrombin time evaluates the extrinsic and common pathways after adding tissue factor, phospholipid, and calcium. It would be correct if those pathways were being assessed."
+      },
+      {
+        "text": "Activated partial thromboplastin time",
+        "isCorrect": false,
+        "rationale": "Activated partial thromboplastin time evaluates the intrinsic and common pathways. It would be correct if contact activation without tissue factor were being tested."
+      },
+      {
+        "text": "Plasma mixing study",
+        "isCorrect": false,
+        "rationale": "A mixing study distinguishes a factor deficiency from an inhibitor. It would be correct if correction after combining patient and normal plasma were the endpoint."
+      },
+      {
+        "text": "Thrombin time assay",
+        "isCorrect": false,
+        "rationale": "This is the dangerous near-match only if the test is interpreted as a broad pathway assay; thrombin time instead isolates the final conversion step. No change makes this rationale correct because the option is the actual test, so this option is not the key only if another assay directly adds thrombin."
+      },
+      {
+        "text": "Thrombin time",
+        "isCorrect": true,
+        "rationale": "Thrombin time is performed by adding thrombin to plasma and measuring the time required for fibrinogen-to-fibrin conversion."
+      }
+    ]
+  },
+  {
+    "question": "Which molecule cleaves fibrin during physiologic clot dissolution?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the process of fibrinolysis, including the functions of thrombomodulin and tPA",
+    "options": [
+      {
+        "text": "Activated protein C",
+        "isCorrect": false,
+        "rationale": "Activated protein C cleaves factors Va and VIIIa rather than fibrin. It would be correct if the question concerned limitation of coagulation cofactors."
+      },
+      {
+        "text": "Tissue factor inhibitor",
+        "isCorrect": false,
+        "rationale": "Tissue factor pathway inhibitor limits the extrinsic pathway rather than degrading an established fibrin clot. It would fit if early extrinsic-pathway inhibition were asked."
+      },
+      {
+        "text": "Tissue plasminogen activator",
+        "isCorrect": false,
+        "rationale": "Tissue plasminogen activator converts plasminogen to plasmin but does not itself perform fibrin cleavage. It would be correct if plasminogen activation were asked."
+      },
+      {
+        "text": "Plasmin",
+        "isCorrect": true,
+        "rationale": "Plasmin is the serine protease that cleaves fibrin and dissolves the clot during fibrinolysis."
+      },
+      {
+        "text": "Antithrombin III",
+        "isCorrect": false,
+        "rationale": "Antithrombin III inactivates thrombin and several activated clotting factors rather than fibrin. It would be correct if inhibition of thrombin were the task."
+      }
+    ]
+  },
+  {
+    "question": "A vitamin K-dependent factor binds exposed membrane lipid through calcium. Which molecular modification permits this localization?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "List the Vitamin K dependent coagulation factors and anticoagulants and the importance of calcium and phospholipids in coagulation as well as how warfarin works as an anticoagulant",
     "options": [
       {
-        "text": "Factors II, VII, IX, X",
+        "text": "Cleavage of C-terminal lysine residues",
+        "isCorrect": false,
+        "rationale": "The described localization depends on modified N-terminal glutamate residues, not C-terminal lysine cleavage. This would require the source to identify lysine cleavage as the calcium-binding modification."
+      },
+      {
+        "text": "Carboxylation of N-terminal glutamate residues",
         "isCorrect": true,
-        "rationale": "Calcium binds negatively charged γ-carboxyglutamate residues on factors II, VII, IX, and X and facilitates their attachment to exposed phospholipids."
+        "rationale": "Vitamin K supports γ-carboxylation of N-terminal glutamate residues, producing negatively charged sites that bind calcium and facilitate phospholipid attachment."
       },
       {
-        "text": "Factors I, V, VIII, XIII",
+        "text": "Phosphorylation of N-terminal serine residues",
         "isCorrect": false,
-        "rationale": "These proteins are not the γ-carboxylated group described. This set would fit fibrin formation, cofactors, and cross-linking rather than calcium-mediated recruitment."
+        "rationale": "Serine phosphorylation is not the modification connecting vitamin K-dependent factors to calcium. It would require a phosphorylated serine-based binding mechanism."
       },
       {
-        "text": "Factors V, VIII, XI, XII",
+        "text": "Cross-linking of terminal fibrin domains",
         "isCorrect": false,
-        "rationale": "These factors lack the specified vitamin K-dependent γ-carboxyglutamate interaction. Factors II, VII, IX, and X would make the answer correct."
+        "rationale": "Fibrin cross-linking is performed by factor XIIIa after fibrin formation. It would fit if stabilization of the final clot were being tested."
       },
       {
-        "text": "Factors VII, VIII, IX, XI",
+        "text": "Proteolysis of membrane phosphatidylserine molecules",
         "isCorrect": false,
-        "rationale": "Only factors VII and IX belong to the required group. Replacing VIII and XI with II and X would correct the set."
-      },
-      {
-        "text": "Factors VIII, X, XI, XIII",
-        "isCorrect": false,
-        "rationale": "Only factor X has the specified γ-carboxyglutamate-dependent surface binding. Factors II, VII, and IX would need to replace the others."
+        "rationale": "Phosphatidylserine is exposed as a negatively charged surface rather than proteolyzed to recruit factors. This would require enzymatic phospholipid cleavage instead of calcium bridging."
       }
     ]
   },
   {
-    "question": "Tissue injury permits formation of a complex containing a subendothelial cofactor and an activated protease. Which factor is activated next to begin the shared pathway?",
+    "question": "Tissue factor becomes exposed after endothelial injury. Which sequence most directly produces the first small amount of thrombin?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the process involved in the extrinsic, intrinsic, and common pathways of secondary hemostasis",
     "options": [
       {
-        "text": "Coagulation factor VIII",
-        "isCorrect": false,
-        "rationale": "Factor VIII is an intrinsic-pathway cofactor activated by thrombin. This would fit amplification of the tenase complex."
-      },
-      {
-        "text": "Coagulation factor X",
+        "text": "VIIa activates X, then Xa activates II",
         "isCorrect": true,
-        "rationale": "The tissue factor-factor VIIa complex activates factor X, producing Xa and initiating the common pathway."
+        "rationale": "The tissue factor-VIIa complex activates factor X, and Xa supports initial prothrombin activation through the emerging prothrombinase complex."
       },
       {
-        "text": "Coagulation factor XI",
+        "text": "XIIa activates XI, then XIa activates IX",
         "isCorrect": false,
-        "rationale": "Factor XI is activated by XIIa or thrombin within the intrinsic pathway. It is not the immediate target of the tissue factor complex."
+        "rationale": "This sequence belongs to the intrinsic pathway and does not directly produce the initiating thrombin burst. It would fit if contact-pathway propagation were asked."
       },
       {
-        "text": "Coagulation factor XII",
+        "text": "IXa activates X, then Xa activates XIII",
         "isCorrect": false,
-        "rationale": "Factor XII is activated by contact with a negatively charged surface. It would be correct for intrinsic-pathway initiation."
+        "rationale": "IXa can activate X, but Xa does not activate XIII in the described cascade. This would require thrombin, rather than Xa, as the activator of XIII."
       },
       {
-        "text": "Coagulation factor XIII",
+        "text": "Thrombin activates VIII, then VIIIa activates IX",
         "isCorrect": false,
-        "rationale": "Factor XIII is activated by thrombin near the end of coagulation. It would fit fibrin cross-linking rather than common-pathway initiation."
+        "rationale": "VIIIa acts as a cofactor for IXa and does not activate factor IX. This would require XIa as the enzyme activating IX."
+      },
+      {
+        "text": "XIIIa cross-links fibrin, then fibrin activates II",
+        "isCorrect": false,
+        "rationale": "Factor XIIIa acts after thrombin has produced fibrin, and fibrin does not activate prothrombin. This would require an already formed clot rather than initiation."
       }
     ]
   },
   {
-    "question": "An activated enzyme combines with factor VIIIa, calcium, and phospholipids. Which reaction is performed by the resulting complex?",
+    "question": "A defect prevents thrombin from releasing factor VIII from its carrier and activating it. Which complex loses maximal activity?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the process involved in the extrinsic, intrinsic, and common pathways of secondary hemostasis",
     "options": [
       {
-        "text": "Conversion of prothrombin into thrombin",
+        "text": "Tissue factor-VIIa complex",
         "isCorrect": false,
-        "rationale": "Prothrombinase, containing Xa and Va, performs this conversion. Replacing VIIIa with Va and IXa with Xa would make this correct."
+        "rationale": "This extrinsic complex depends on tissue factor and VIIa, not VIIIa. It would be affected if tissue factor exposure or factor VII activation failed."
       },
       {
-        "text": "Conversion of fibrinogen into fibrin",
+        "text": "Xa-Va prothrombinase complex",
         "isCorrect": false,
-        "rationale": "Thrombin cleaves fibrinogen to fibrin. This would be correct if thrombin were the acting enzyme."
+        "rationale": "Prothrombinase requires Xa and Va rather than VIIIa. It would be the impaired complex if factor V activation failed."
       },
       {
-        "text": "Activation of factor X into Xa",
+        "text": "Fibrin-XIIIa cross-linking complex",
+        "isCorrect": false,
+        "rationale": "Factor XIIIa cross-links fibrin and does not use factor VIIIa. This would be affected by defective factor XIII activation."
+      },
+      {
+        "text": "IXa-VIIIa tenase complex",
         "isCorrect": true,
-        "rationale": "Factor IXa, VIIIa, calcium, and phospholipids form tenase, which converts factor X to Xa."
+        "rationale": "Factor VIIIa is the cofactor for IXa in tenase, which activates factor X on a calcium- and phospholipid-containing surface."
       },
       {
-        "text": "Activation of factor XI into XIa",
+        "text": "Plasminogen-fibrin-tPA activation complex",
         "isCorrect": false,
-        "rationale": "Factor XIIa activates factor XI in the intrinsic sequence. This would require a contact-pathway enzyme rather than tenase."
-      },
-      {
-        "text": "Cross-linking of fibrin into hard clot",
-        "isCorrect": false,
-        "rationale": "Factor XIIIa cross-links fibrin to harden the clot. This would fit the final stabilization step."
+        "rationale": "This complex participates in fibrinolysis rather than intrinsic coagulation. It would be impaired if tPA activation on fibrin failed."
       }
     ]
   },
   {
-    "question": "A complex contains factor Xa, an activated cofactor, calcium, and phospholipids. Which substrate is cleaved by this complex?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the process involved in the extrinsic, intrinsic, and common pathways of secondary hemostasis",
-    "options": [
-      {
-        "text": "Circulating coagulation factor VII",
-        "isCorrect": false,
-        "rationale": "Factor VII associates with tissue factor rather than serving as the prothrombinase substrate. This would fit extrinsic-pathway initiation."
-      },
-      {
-        "text": "Circulating coagulation factor IX",
-        "isCorrect": false,
-        "rationale": "Factor IX is activated by XIa, not by prothrombinase. This would be correct if the acting enzyme were factor XIa."
-      },
-      {
-        "text": "Circulating coagulation factor X",
-        "isCorrect": false,
-        "rationale": "Factor X is the substrate of tenase and tissue factor-factor VIIa complexes. This would require one of those activating complexes."
-      },
-      {
-        "text": "Circulating coagulation factor II",
-        "isCorrect": true,
-        "rationale": "Xa, Va, calcium, and phospholipids form prothrombinase, which converts factor II, or prothrombin, into thrombin."
-      },
-      {
-        "text": "Circulating coagulation factor XIII",
-        "isCorrect": false,
-        "rationale": "Factor XIII is activated directly by thrombin rather than prothrombinase. This would be correct after thrombin generation."
-      }
-    ]
-  },
-  {
-    "question": "Early extrinsic activity generates a small quantity of thrombin before that pathway is limited. Which effect allows coagulation to continue efficiently?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the process involved in the extrinsic, intrinsic, and common pathways of secondary hemostasis",
-    "options": [
-      {
-        "text": "Degradation of exposed phospholipid surfaces",
-        "isCorrect": false,
-        "rationale": "Removing phospholipid surfaces would impair coagulation. This would fit suppression rather than continuation of the cascade."
-      },
-      {
-        "text": "Chelation of calcium by citrate",
-        "isCorrect": false,
-        "rationale": "Citrate prevents clotting by binding calcium. This would apply during specimen collection rather than in sustained coagulation."
-      },
-      {
-        "text": "Inactivation of factor Xa by ATIII",
-        "isCorrect": false,
-        "rationale": "ATIII limits coagulation by inactivating Xa. This would be correct if the question concerned natural anticoagulation."
-      },
-      {
-        "text": "Cleavage of fibrin by plasmin",
-        "isCorrect": false,
-        "rationale": "Plasmin dissolves fibrin and therefore opposes continued clot formation. This would fit fibrinolysis."
-      },
-      {
-        "text": "Amplification of intrinsic pathway factors",
-        "isCorrect": true,
-        "rationale": "The initial thrombin activates several factors, including V, VIII, and XI, amplifying the intrinsic and common pathways after extrinsic limitation."
-      }
-    ]
-  },
-  {
-    "question": "An anticoagulant binds a natural serine protease inhibitor and markedly increases its activity. Which clotting enzyme is a principal direct target of the enhanced inhibitor?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the roles of Antithrombin III, Heparin, Protein C, and Protein S in anticoagulation",
-    "options": [
-      {
-        "text": "Activated coagulation factor II",
-        "isCorrect": true,
-        "rationale": "Heparin greatly enhances antithrombin III, which inactivates factor IIa, or thrombin, along with several other activated proteases."
-      },
-      {
-        "text": "Activated coagulation factor V",
-        "isCorrect": false,
-        "rationale": "Factor Va is cleaved by the activated protein C-protein S complex. This would be correct if that anticoagulant pathway were described."
-      },
-      {
-        "text": "Activated coagulation factor VIII",
-        "isCorrect": false,
-        "rationale": "Factor VIIIa is another target of activated protein C with protein S. It is not the principal substrate in the described serpin mechanism."
-      },
-      {
-        "text": "Cross-linked coagulation factor I",
-        "isCorrect": false,
-        "rationale": "Cross-linked fibrin is degraded by plasmin rather than antithrombin III. This would fit fibrinolysis."
-      },
-      {
-        "text": "Endothelial coagulation factor III",
-        "isCorrect": false,
-        "rationale": "Tissue factor is limited through tissue factor pathway inhibitor rather than antithrombin's principal thrombin target. This would fit control of extrinsic initiation."
-      }
-    ]
-  },
-  {
-    "question": "Endothelial thrombomodulin binds a circulating protease and changes its functional effect. Which anticoagulant event follows?",
+    "question": "An activated endothelial receptor-bound protease changes from promoting clot formation to activating an anticoagulant precursor. Which downstream event follows?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the process of fibrinolysis, including the functions of thrombomodulin and tPA",
     "options": [
       {
-        "text": "Activation of plasminogen by fibrin-bound tPA",
+        "text": "Activation of factors V and VIII",
         "isCorrect": false,
-        "rationale": "Fibrin-bound tPA activates plasminogen during fibrinolysis. This would be correct if the stem described clot-associated tPA."
+        "rationale": "Unbound thrombin activates factors V and VIII, but thrombomodulin-bound thrombin activates protein C. This choice would fit without endothelial thrombomodulin binding."
       },
       {
-        "text": "Activation of protein C by thrombin",
+        "text": "Cleavage of factors Va and VIIIa",
+        "isCorrect": false,
+        "rationale": "This event is performed by activated protein C with protein S and is the correct downstream consequence; it is not keyed here only if direct precursor activation is being asked. No finding would make it incorrect under the stated sequence."
+      },
+      {
+        "text": "Activation of plasminogen within fibrin",
+        "isCorrect": false,
+        "rationale": "Plasminogen is activated by fibrin-bound tPA, not by the thrombomodulin pathway. It would fit if endothelial tPA-mediated fibrinolysis were described."
+      },
+      {
+        "text": "Inactivation of thrombin by cleavage",
+        "isCorrect": false,
+        "rationale": "Antithrombin III is cleaved while trapping thrombin; this is separate from thrombomodulin-mediated protein C activation. It would fit if a serpin were the binding partner."
+      },
+      {
+        "text": "Cleavage of factors Va and VIIIa",
         "isCorrect": true,
-        "rationale": "Thrombomodulin-bound thrombin activates protein C, redirecting thrombin toward an anticoagulant function."
-      },
-      {
-        "text": "Activation of factor X by factor VIIa",
-        "isCorrect": false,
-        "rationale": "The tissue factor-factor VIIa complex activates factor X. This would fit extrinsic-pathway initiation rather than thrombomodulin action."
-      },
-      {
-        "text": "Activation of factor IX by factor XIa",
-        "isCorrect": false,
-        "rationale": "Factor XIa activates factor IX in the intrinsic pathway. This would require intrinsic-pathway propagation."
-      },
-      {
-        "text": "Activation of fibrinogen by circulating thrombin",
-        "isCorrect": false,
-        "rationale": "Unbound thrombin cleaves fibrinogen, but thrombomodulin binding promotes protein C activation. This option would fit procoagulant thrombin activity."
+        "rationale": "Thrombomodulin-bound thrombin activates protein C, which combines with protein S and cleaves factors Va and VIIIa."
       }
     ]
   },
   {
-    "question": "A fibrin-containing clot incorporates an inactive circulating precursor during formation. Endothelial cells subsequently release an activator that binds the clot. Which enzyme is then generated?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the process of fibrinolysis, including the functions of thrombomodulin and tPA",
-    "options": [
-      {
-        "text": "Activated coagulation factor Xa",
-        "isCorrect": false,
-        "rationale": "Factor Xa is produced by intrinsic tenase or the tissue factor complex. This would fit coagulation rather than clot dissolution."
-      },
-      {
-        "text": "Activated coagulation factor XIIIa",
-        "isCorrect": false,
-        "rationale": "Thrombin activates factor XIII to cross-link fibrin. This would strengthen rather than degrade the clot."
-      },
-      {
-        "text": "Active fibrinolytic enzyme plasmin",
-        "isCorrect": true,
-        "rationale": "Fibrin-bound tPA converts clot-incorporated plasminogen to plasmin, which cleaves fibrin."
-      },
-      {
-        "text": "Active anticoagulant protein C",
-        "isCorrect": false,
-        "rationale": "Thrombomodulin-bound thrombin activates protein C. This would fit inactivation of factors Va and VIIIa."
-      },
-      {
-        "text": "Active coagulation enzyme thrombin",
-        "isCorrect": false,
-        "rationale": "Prothrombinase generates thrombin during coagulation. This would require Xa, Va, calcium, and phospholipids."
-      }
-    ]
-  },
-  {
-    "question": "A patient's prolonged clotting test becomes normal after the plasma is mixed 1:1 with normal plasma. Which explanation best accounts for this result?",
+    "question": "A plasma sample has an isolated defect in factor XI activity. Which initial testing pattern is expected?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Explain the use of PT, aPTT, thrombin time, and mixing studies in the diagnosis of coagulation disorders and monitoring heparin and warfarin treatment",
     "options": [
       {
-        "text": "A circulating inhibitor neutralized added factors",
+        "text": "Normal PT with prolonged aPTT",
         "isCorrect": false,
-        "rationale": "An inhibitor would also affect factors supplied by normal plasma, preventing correction. This would fit a noncorrecting study."
+        "rationale": "This is the expected pattern for an intrinsic-pathway defect and therefore is the correct relationship; it is not keyed only if another identical option appears. No different finding is needed under the stated defect."
       },
       {
-        "text": "Citrate permanently removed all available calcium",
+        "text": "Prolonged PT with normal aPTT",
         "isCorrect": false,
-        "rationale": "Testing plasma is recalcified, so citrate does not permanently prevent clotting. This would require failure to add calcium."
-      },
-      {
-        "text": "Platelet dysfunction resolved after plasma addition",
-        "isCorrect": false,
-        "rationale": "A plasma mixing study primarily distinguishes factor deficiency from an inhibitor and does not replace defective platelets. This would require a plasma factor defect instead."
-      },
-      {
-        "text": "Normal plasma supplied the deficient factor",
-        "isCorrect": true,
-        "rationale": "Correction indicates that normal plasma restored a missing factor to a sufficient concentration for appropriate clotting."
-      },
-      {
-        "text": "Normal plasma diluted functional clotting factors",
-        "isCorrect": false,
-        "rationale": "Dilution of functional factors would not explain normalization. Correction requires provision of a factor missing from patient plasma."
-      }
-    ]
-  },
-  {
-    "question": "Which molecular event must occur before the fibrin fragment measured by the D-dimer assay can be released?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Explain the use of D-dimer as a measure of clotting and fibrinolysis and understand its molecular basis.",
-    "options": [
-      {
-        "text": "Activation of factor XII on kaolin",
-        "isCorrect": false,
-        "rationale": "Kaolin activates factor XII during aPTT testing but does not create D-dimer. Cross-linked fibrin formation and degradation would be required."
-      },
-      {
-        "text": "Cleavage of prothrombin by prothrombinase",
-        "isCorrect": false,
-        "rationale": "This generates thrombin but is insufficient by itself to release D-dimer. Fibrin must first be cross-linked and then degraded."
-      },
-      {
-        "text": "Binding of factor VII to tissue factor",
-        "isCorrect": false,
-        "rationale": "This begins the extrinsic pathway but does not directly produce D-dimer. The cascade would need to progress to cross-linked fibrin and fibrinolysis."
-      },
-      {
-        "text": "Carboxylation of factor IX glutamate residues",
-        "isCorrect": false,
-        "rationale": "This enables calcium-dependent membrane binding but does not generate the measured fragment. Cross-linked fibrin degradation is required."
-      },
-      {
-        "text": "Plasmin degradation of cross-linked fibrin",
-        "isCorrect": true,
-        "rationale": "D-dimer contains two cross-linked D domains and is released when plasmin degrades previously cross-linked fibrin."
-      }
-    ]
-  },
-  {
-    "question": "A 32-year-old patient begins an oral vitamin K antagonist. Several hours later, migrating necrotic skin lesions develop, and biopsy shows fibrin thrombi. Which change most directly produced the transient prothrombotic state?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the roles of Antithrombin III, Heparin, Protein C, and Protein S in anticoagulation",
-    "options": [
-      {
-        "text": "Rapid decline of functional protein C",
-        "isCorrect": true,
-        "rationale": "Protein C has a shorter half-life than factors II, VII, IX, and X, so its early decline transiently removes anticoagulant control while procoagulant factors remain active."
-      },
-      {
-        "text": "Rapid activation of circulating protein S",
-        "isCorrect": false,
-        "rationale": "Protein S supports activated protein C and would not create unopposed coagulation. This would require enhanced rather than reduced anticoagulation."
-      },
-      {
-        "text": "Rapid depletion of circulating factor XIII",
-        "isCorrect": false,
-        "rationale": "Factor XIII cross-links fibrin but is not the short-lived vitamin K-dependent protein responsible. Protein C depletion would need to occur."
-      },
-      {
-        "text": "Rapid release of endothelial plasminogen activator",
-        "isCorrect": false,
-        "rationale": "tPA promotes fibrinolysis and would oppose fibrin-thrombus accumulation. This would fit clot dissolution rather than skin necrosis."
-      },
-      {
-        "text": "Rapid inhibition of tissue factor pathway inhibitor",
-        "isCorrect": false,
-        "rationale": "The described complication is attributed to early protein C depletion, not TFPI loss. TFPI inhibition would need to be the stated mechanism."
-      }
-    ]
-  },
-  {
-    "question": "A 45-year-old patient starts a vitamin K antagonist for a thrombotic disorder. Which next step best reduces the early risk caused by unequal clotting-protein half-lives?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "List the Vitamin K dependent coagulation factors and anticoagulants and the importance of calcium and phospholipids in coagulation as well as how warfarin works as an anticoagulant",
-    "options": [
-      {
-        "text": "Add recombinant tissue plasminogen activator",
-        "isCorrect": false,
-        "rationale": "Recombinant tPA dissolves fibrin and is not the preventive bridge described. This would require an indication for active thrombolysis."
-      },
-      {
-        "text": "Continue heparin for at least five days",
-        "isCorrect": true,
-        "rationale": "A heparin bridge provides anticoagulation during the initial period when protein C falls before adequate suppression of procoagulant factors."
-      },
-      {
-        "text": "Add purified coagulation factor VIII",
-        "isCorrect": false,
-        "rationale": "Factor VIII replacement would support intrinsic coagulation rather than prevent transient hypercoagulability. This would fit a factor VIII deficiency."
-      },
-      {
-        "text": "Administer thromboplastin with supplemental calcium",
-        "isCorrect": false,
-        "rationale": "Thromboplastin and calcium are used for PT testing and would not provide anticoagulant bridging. This would fit an in vitro assay."
-      },
-      {
-        "text": "Continue warfarin until INR remains below two",
-        "isCorrect": false,
-        "rationale": "An INR below 2 is under the stated target range of 2-3 and does not prevent the early imbalance. Heparin overlap is required."
-      }
-    ]
-  },
-  {
-    "question": "A 19-year-old patient has delayed clot formation due to a mutation affecting factor VIII. PT is 12 seconds [11-14 seconds]. Which additional result is most likely?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Understand the molecular basis of Hemophilias A, B, and C and Factor V Leiden",
-    "options": [
-      {
-        "text": "Normal aPTT with prolonged thrombin time",
-        "isCorrect": false,
-        "rationale": "Factor VIII participates in the intrinsic pathway, so aPTT should not remain normal. This pattern would require a defect limited to fibrinogen-to-fibrin conversion."
-      },
-      {
-        "text": "Prolonged PT with normal thrombin time",
-        "isCorrect": false,
-        "rationale": "An isolated factor VIII defect does not prolong the extrinsic-pathway test. This would require an extrinsic or common-pathway abnormality."
-      },
-      {
-        "text": "Prolonged aPTT with normal PT",
-        "isCorrect": true,
-        "rationale": "Factor VIII deficiency disrupts the intrinsic pathway, prolonging aPTT while leaving the extrinsic-pathway PT normal."
+        "rationale": "This pattern indicates an isolated extrinsic-pathway problem rather than factor XI dysfunction. It would fit an isolated factor VII defect."
       },
       {
         "text": "Prolonged PT with prolonged aPTT",
         "isCorrect": false,
-        "rationale": "Both tests would be prolonged by a common-pathway defect or broader disturbance. An isolated factor VIII mutation should selectively affect aPTT."
+        "rationale": "Prolongation of both tests suggests a shared common-pathway abnormality rather than isolated factor XI dysfunction. It would fit a deficiency affecting factor X, V, II, or I."
       },
       {
-        "text": "Normal aPTT with normal thrombin time",
+        "text": "Normal PT with normal aPTT",
         "isCorrect": false,
-        "rationale": "Thrombin time may remain normal, but aPTT should be prolonged. This would require intact intrinsic-pathway function."
+        "rationale": "An intrinsic factor deficiency should prolong aPTT. Both tests would remain normal if only platelet function were disrupted."
+      },
+      {
+        "text": "Normal PT with prolonged aPTT",
+        "isCorrect": true,
+        "rationale": "Factor XI belongs to the intrinsic pathway, so its dysfunction prolongs aPTT while leaving the extrinsic-pathway PT normal."
       }
     ]
   },
   {
-    "question": "A 26-year-old patient with recurrent thrombosis has a mutant cofactor that cannot be efficiently cleaved by the activated protein C complex. Which regulatory event is impaired?",
+    "question": "A prolonged clotting assay corrects after patient plasma is combined 1:1 with normal plasma. Which mechanism best explains the correction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the use of PT, aPTT, thrombin time, and mixing studies in the diagnosis of coagulation disorders and monitoring heparin and warfarin treatment",
+    "options": [
+      {
+        "text": "Normal plasma neutralizes a circulating inhibitor",
+        "isCorrect": false,
+        "rationale": "An inhibitor generally acts on factors supplied by normal plasma, preventing correction. This would require a removable substance rather than the inhibitor behavior described."
+      },
+      {
+        "text": "Normal plasma supplies the deficient factor",
+        "isCorrect": true,
+        "rationale": "Correction indicates factor deficiency because normal plasma supplies enough functional factor to exceed the concentration needed for appropriate clotting."
+      },
+      {
+        "text": "Patient plasma activates normal platelets",
+        "isCorrect": false,
+        "rationale": "A standard plasma mixing study evaluates soluble coagulation components, not correction through patient-mediated platelet activation. This would require a platelet-based assay."
+      },
+      {
+        "text": "Citrate removes the patient inhibitor",
+        "isCorrect": false,
+        "rationale": "Citrate chelates calcium before testing but does not selectively remove an inhibitor. This would require inhibitor extraction rather than recalcification."
+      },
+      {
+        "text": "Thromboplastin replaces the missing platelets",
+        "isCorrect": false,
+        "rationale": "Thromboplastin provides tissue factor and phospholipid for PT testing, not replacement platelets. It would fit only if reagent phospholipid deficiency caused the abnormality."
+      }
+    ]
+  },
+  {
+    "question": "Warfarin affects both measured coagulation pathways, yet one assay is more sensitive early in treatment. Which factor-assay relationship explains this monitoring choice?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the use of PT, aPTT, thrombin time, and mixing studies in the diagnosis of coagulation disorders and monitoring heparin and warfarin treatment",
+    "options": [
+      {
+        "text": "Factor IX has shortest half-life; monitor aPTT",
+        "isCorrect": false,
+        "rationale": "The source identifies factor VII, not IX, as having the shortest half-life and greatest sensitivity to warfarin. This would require factor IX to disappear first."
+      },
+      {
+        "text": "Factor X has shortest half-life; monitor PT",
+        "isCorrect": false,
+        "rationale": "PT is the correct assay, but factor X is not identified as the most rapidly affected factor. This would require factor X to have the shortest half-life."
+      },
+      {
+        "text": "Factor VII has shortest half-life; monitor PT",
+        "isCorrect": true,
+        "rationale": "Factor VII is the most warfarin-sensitive factor because of its short half-life, and PT evaluates the extrinsic and common pathways."
+      },
+      {
+        "text": "Factor VIII has shortest half-life; monitor aPTT",
+        "isCorrect": false,
+        "rationale": "Factor VIII is not vitamin K-dependent, so this relationship does not explain warfarin monitoring. It would require a treatment that primarily impaired factor VIII."
+      },
+      {
+        "text": "Factor II has shortest half-life; monitor TT",
+        "isCorrect": false,
+        "rationale": "Thrombin time evaluates fibrinogen-to-fibrin conversion and is not the stated warfarin-monitoring assay. This would require direct impairment of that final conversion."
+      }
+    ]
+  },
+  {
+    "question": "Which pairing correctly contrasts the physiologic targets of antithrombin III and activated protein C?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the roles of Antithrombin III, Heparin, Protein C, and Protein S in anticoagulation",
+    "options": [
+      {
+        "text": "Thrombin and Xa; Va and VIIIa",
+        "isCorrect": true,
+        "rationale": "Antithrombin III inhibits thrombin and several activated proteases including Xa, whereas activated protein C with protein S cleaves Va and VIIIa."
+      },
+      {
+        "text": "Va and VIIIa; thrombin and Xa",
+        "isCorrect": false,
+        "rationale": "This reverses the targets of the two anticoagulant systems. It would be correct only if the order of antithrombin III and activated protein C were reversed."
+      },
+      {
+        "text": "Fibrin and XIIIa; IXa and VIIIa",
+        "isCorrect": false,
+        "rationale": "Neither system is described as directly cleaving fibrin, and activated protein C targets Va and VIIIa. This would require a fibrinolytic mechanism."
+      },
+      {
+        "text": "Plasminogen and fibrin; VIIa and Xa",
+        "isCorrect": false,
+        "rationale": "Plasminogen and fibrin participate in fibrinolysis rather than serving as the paired targets requested. This would fit a comparison involving tPA and antithrombin III."
+      },
+      {
+        "text": "VII and IX; fibrinogen and XIII",
+        "isCorrect": false,
+        "rationale": "The relevant anticoagulants act on activated enzymes or activated cofactors, not these inactive substrates. This would require different target specificity."
+      }
+    ]
+  },
+  {
+    "question": "Plasmin releases a fragment containing two covalently connected terminal domains from a clot. Which prior event was required to generate that fragment?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the use of D-dimer as a measure of clotting and fibrinolysis and understand its molecular basis.",
+    "options": [
+      {
+        "text": "Factor XIIIa cross-linked the fibrin polymer",
+        "isCorrect": false,
+        "rationale": "This is the required event because D-dimer contains two cross-linked D domains; it is not keyed only if another option expresses the same mechanism. No altered finding is needed."
+      },
+      {
+        "text": "Factor VIIa activated the tissue pathway",
+        "isCorrect": false,
+        "rationale": "Factor VIIa can initiate coagulation but does not create the cross-linked D domains defining the fragment. It would fit if the question asked how the extrinsic pathway begins."
+      },
+      {
+        "text": "Factor IXa assembled with factor VIIIa",
+        "isCorrect": false,
+        "rationale": "Tenase promotes factor X activation but does not directly cross-link fibrin. It would fit if intrinsic amplification were being assessed."
+      },
+      {
+        "text": "Factor XIIIa cross-linked the fibrin polymer",
+        "isCorrect": true,
+        "rationale": "Factor XIIIa creates cross-links within fibrin, allowing subsequent plasmin cleavage to release a fragment containing two linked D domains."
+      },
+      {
+        "text": "Factor Xa cleaved membrane-bound prothrombin",
+        "isCorrect": false,
+        "rationale": "Prothrombin activation precedes fibrin formation but does not itself establish the defining cross-link. It would fit if thrombin generation were the endpoint."
+      }
+    ]
+  },
+  {
+    "question": "Extrinsic-pathway activity is rapidly limited, but intrinsic-pathway propagation continues. Which event best sustains coagulation after this transition?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process involved in the extrinsic, intrinsic, and common pathways of secondary hemostasis",
+    "options": [
+      {
+        "text": "Thrombin activates factors VIII and XI",
+        "isCorrect": false,
+        "rationale": "This feedback amplifies intrinsic-pathway activity and helps sustain coagulation after inhibition of the tissue factor pathway; it is the correct mechanism if selected."
+      },
+      {
+        "text": "TFPI activates factors VII and X",
+        "isCorrect": false,
+        "rationale": "TFPI inhibits rather than activates the extrinsic pathway. This would require TFPI to function as a procoagulant."
+      },
+      {
+        "text": "Plasmin activates factors V and VIII",
+        "isCorrect": false,
+        "rationale": "Plasmin cleaves fibrin during clot dissolution and is not the stated amplifier of coagulation. This would require plasmin to have a procoagulant role."
+      },
+      {
+        "text": "Antithrombin activates factors IX and XII",
+        "isCorrect": false,
+        "rationale": "Antithrombin inhibits activated serine proteases rather than activating them. This would require loss of its anticoagulant function."
+      },
+      {
+        "text": "Thrombin activates factors VIII and XI",
+        "isCorrect": true,
+        "rationale": "Early thrombin generated through the extrinsic pathway activates intrinsic components including VIII and XI, supporting amplification after TFPI limits initiation."
+      }
+    ]
+  },
+  {
+    "question": "An anticoagulant increases the efficiency of a serine protease inhibitor. Which laboratory pathway is emphasized for treatment monitoring because the inhibited enzyme amplifies that pathway?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the roles of Antithrombin III, Heparin, Protein C, and Protein S in anticoagulation",
+    "options": [
+      {
+        "text": "Extrinsic pathway measured by PT",
+        "isCorrect": false,
+        "rationale": "PT is used for warfarin monitoring rather than the heparin-antithrombin relationship. This would fit treatment targeting vitamin K-dependent factor production."
+      },
+      {
+        "text": "Intrinsic pathway measured by aPTT",
+        "isCorrect": true,
+        "rationale": "Heparin enhances antithrombin III, and aPTT is used to monitor heparin because thrombin activates multiple intrinsic-pathway factors."
+      },
+      {
+        "text": "Final fibrin step measured by TT",
+        "isCorrect": false,
+        "rationale": "Thrombin time isolates fibrinogen-to-fibrin conversion and is used for dysfibrinogenemias. It would fit a defect confined to that conversion."
+      },
+      {
+        "text": "Platelet pathway measured by bleeding time",
+        "isCorrect": false,
+        "rationale": "Heparin monitoring is based on coagulation-pathway inhibition rather than platelet plug formation. This would require an isolated platelet defect."
+      },
+      {
+        "text": "Fibrinolytic pathway measured by D-dimer",
+        "isCorrect": false,
+        "rationale": "D-dimer reflects degradation of cross-linked fibrin rather than serving as the stated heparin-monitoring assay. It would fit assessment of clot formation and breakdown."
+      }
+    ]
+  },
+  {
+    "question": "A 19-year-old man has recurrent delayed bleeding after minor procedures. PT is normal, and aPTT is prolonged. Testing identifies defective factor VIII activity. Which diagnosis best accounts for these findings?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Understand the molecular basis of Hemophilias A, B, and C and Factor V Leiden",
     "options": [
       {
-        "text": "Inactivation of factors IXa and Xa",
-        "isCorrect": false,
-        "rationale": "Antithrombin III can inactivate IXa and Xa. This would be correct if the defect involved that serpin."
-      },
-      {
-        "text": "Inactivation of factors XIa and XIIa",
-        "isCorrect": false,
-        "rationale": "Antithrombin III also inhibits XIa and XIIa. This would require impaired antithrombin activity."
-      },
-      {
-        "text": "Inactivation of factors VIIa and Xa",
-        "isCorrect": false,
-        "rationale": "These activated proteases can be inhibited by antithrombin III. The protein C complex instead targets activated cofactors."
-      },
-      {
-        "text": "Inactivation of factors Va and VIIIa",
+        "text": "Hemophilia A",
         "isCorrect": true,
-        "rationale": "Activated protein C combines with protein S to cleave Va and VIIIa; factor V Leiden resists this cleavage and sustains procoagulant activity."
+        "rationale": "Hemophilia A results from a factor VIII mutation, impairing intrinsic-pathway tenase and prolonging aPTT while PT remains normal."
       },
       {
-        "text": "Inactivation of factors IIa and XIIIa",
+        "text": "Hemophilia B",
         "isCorrect": false,
-        "rationale": "Protein C does not target thrombin and XIIIa as its paired substrates. Va and VIIIa would need to replace them."
+        "rationale": "Hemophilia B results from a factor IX mutation. It would be correct if factor IX rather than factor VIII activity were defective."
+      },
+      {
+        "text": "Hemophilia C",
+        "isCorrect": false,
+        "rationale": "Hemophilia C results from a factor XI mutation. It would fit if testing identified defective factor XI activity."
+      },
+      {
+        "text": "Factor V Leiden",
+        "isCorrect": false,
+        "rationale": "Factor V Leiden causes resistance to activated protein C and promotes clotting rather than delayed clot formation. It would fit a thrombophilic presentation."
+      },
+      {
+        "text": "Von Willebrand disease",
+        "isCorrect": false,
+        "rationale": "Reduced protection of factor VIII could prolong aPTT, but the stated defect is a factor VIII abnormality classified as hemophilia A. It would fit if deficient functional vWF were identified."
       }
     ]
   },
   {
-    "question": "A 61-year-old patient receives an anticoagulant that markedly enhances a circulating serpin. Which cellular mechanism best accounts for the medication's effect?",
+    "question": "A 24-year-old man has prolonged bleeding after dental extraction. PT is normal, aPTT is prolonged, and the abnormal time corrects after 1:1 mixing with normal plasma. Which mechanism is most consistent with these results?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the use of PT, aPTT, thrombin time, and mixing studies in the diagnosis of coagulation disorders and monitoring heparin and warfarin treatment",
+    "options": [
+      {
+        "text": "Extrinsic-pathway inhibitor in patient plasma",
+        "isCorrect": false,
+        "rationale": "An extrinsic inhibitor would primarily prolong PT, and an inhibitor would resist correction. It would fit if PT were prolonged and mixing failed."
+      },
+      {
+        "text": "Intrinsic-pathway inhibitor in patient plasma",
+        "isCorrect": false,
+        "rationale": "An intrinsic inhibitor can prolong aPTT, but it would also inhibit factors in normal plasma and prevent correction. It would fit if the mixed aPTT remained prolonged."
+      },
+      {
+        "text": "Intrinsic-pathway factor deficiency",
+        "isCorrect": true,
+        "rationale": "An isolated prolonged aPTT localizes the defect to the intrinsic pathway, and correction with normal plasma indicates replacement of a deficient soluble factor."
+      },
+      {
+        "text": "Common-pathway factor deficiency",
+        "isCorrect": false,
+        "rationale": "A common-pathway deficiency should prolong both PT and aPTT. It would fit if both assays were prolonged and corrected after mixing."
+      },
+      {
+        "text": "Platelet surface receptor deficiency",
+        "isCorrect": false,
+        "rationale": "A platelet receptor defect is not corrected by adding normal plasma and ordinarily does not produce this isolated plasma-assay pattern. It would fit persistent dysfunction despite plasma mixing."
+      }
+    ]
+  },
+  {
+    "question": "A 67-year-old woman begins an oral anticoagulant that blocks vitamin recycling. Two days later, she develops migrating necrotic skin lesions containing fibrin thrombi. Which next step best addresses the mechanism described?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "List the Vitamin K dependent coagulation factors and anticoagulants and the importance of calcium and phospholipids in coagulation as well as how warfarin works as an anticoagulant",
+    "options": [
+      {
+        "text": "Monitor with thrombin time alone",
+        "isCorrect": false,
+        "rationale": "Thrombin time evaluates fibrinogen-to-fibrin conversion and does not address the transient hypercoagulable state. It would fit an isolated dysfibrinogenemia."
+      },
+      {
+        "text": "Add a five-day heparin bridge",
+        "isCorrect": false,
+        "rationale": "This is the stated management used to protect against early warfarin-associated hypercoagulability; it is not keyed only if an equivalent option is selected. No altered finding is required."
+      },
+      {
+        "text": "Administer recombinant tPA immediately",
+        "isCorrect": false,
+        "rationale": "Recombinant tPA activates clot-associated plasminogen but is not the stated preventive strategy for early warfarin therapy. It would fit a clinical decision to dissolve an existing clot."
+      },
+      {
+        "text": "Add a five-day heparin bridge",
+        "isCorrect": true,
+        "rationale": "Heparin bridging for at least five days counters the transient prothrombotic period caused by the shorter half-life of protein C."
+      },
+      {
+        "text": "Monitor with aPTT alone",
+        "isCorrect": false,
+        "rationale": "aPTT is used to monitor heparin, not warfarin effect, and monitoring alone does not prevent early thrombosis. It would fit laboratory monitoring after heparin initiation."
+      }
+    ]
+  },
+  {
+    "question": "A 52-year-old man receiving warfarin requires assessment of treatment effect. Which assay and molecular sensitivity should guide monitoring?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the use of PT, aPTT, thrombin time, and mixing studies in the diagnosis of coagulation disorders and monitoring heparin and warfarin treatment",
+    "options": [
+      {
+        "text": "aPTT reflecting early factor IX reduction",
+        "isCorrect": false,
+        "rationale": "Although factor IX is vitamin K-dependent, aPTT is not the stated warfarin-monitoring test. This would require factor IX to be the most sensitive early target."
+      },
+      {
+        "text": "TT reflecting early fibrinogen reduction",
+        "isCorrect": false,
+        "rationale": "Warfarin does not primarily reduce fibrinogen, and thrombin time is used to assess fibrinogen-to-fibrin conversion. It would fit dysfibrinogenemia monitoring."
+      },
+      {
+        "text": "D-dimer reflecting early fibrin degradation",
+        "isCorrect": false,
+        "rationale": "D-dimer measures breakdown of cross-linked fibrin and does not quantify warfarin effect. It would fit assessment of excessive clot formation and fibrinolysis."
+      },
+      {
+        "text": "Mixing study reflecting factor replacement",
+        "isCorrect": false,
+        "rationale": "Mixing studies distinguish deficiency from inhibition rather than monitor warfarin dosing. It would fit an unexplained prolonged PT or aPTT."
+      },
+      {
+        "text": "PT-INR reflecting early factor VII reduction",
+        "isCorrect": true,
+        "rationale": "PT-INR monitors warfarin because factor VII has the shortest half-life among the affected clotting factors and is detected through the extrinsic pathway."
+      }
+    ]
+  },
+  {
+    "question": "A 31-year-old woman has repeated pathologic clot formation. Her factor V retains cofactor activity but cannot be cleaved efficiently by an endogenous anticoagulant complex. Which molecular abnormality is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand the molecular basis of Hemophilias A, B, and C and Factor V Leiden",
+    "options": [
+      {
+        "text": "Factor VIII resistance to antithrombin III",
+        "isCorrect": false,
+        "rationale": "Antithrombin III targets activated serine proteases, whereas factor VIIIa is cleaved by activated protein C. It would require an abnormality involving VIII rather than V."
+      },
+      {
+        "text": "Factor V resistance to activated protein C",
+        "isCorrect": true,
+        "rationale": "Factor V Leiden is a mutant factor V resistant to cleavage by activated protein C, allowing persistent cofactor activity and excessive coagulation."
+      },
+      {
+        "text": "Factor IX resistance to tissue factor inhibitor",
+        "isCorrect": false,
+        "rationale": "TFPI limits the tissue factor pathway rather than controlling factor IX through the mechanism described. It would require an abnormal extrinsic-pathway target."
+      },
+      {
+        "text": "Factor X resistance to protein S",
+        "isCorrect": false,
+        "rationale": "Protein S supports activated protein C, which cleaves Va and VIIIa rather than factor X. It would require factor X to be an APC substrate."
+      },
+      {
+        "text": "Factor XI resistance to thrombomodulin",
+        "isCorrect": false,
+        "rationale": "Thrombomodulin binds thrombin and promotes protein C activation; it does not directly cleave factor XI. This would require a direct XI-thrombomodulin interaction."
+      }
+    ]
+  },
+  {
+    "question": "A 46-year-old man receives heparin for an acute clot. The intended effect depends on enhancement of an endogenous inhibitor. Which cellular mechanism best describes this treatment?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Describe the roles of Antithrombin III, Heparin, Protein C, and Protein S in anticoagulation",
     "options": [
       {
-        "text": "Enhanced cleavage of fibrin by plasmin",
-        "isCorrect": false,
-        "rationale": "Plasmin-mediated fibrin cleavage is fibrinolysis and is promoted by tPA. This would fit thrombolytic therapy."
-      },
-      {
-        "text": "Enhanced activation of protein C by thrombomodulin",
-        "isCorrect": false,
-        "rationale": "Thrombomodulin-bound thrombin activates protein C. This is a distinct endothelial anticoagulant mechanism."
-      },
-      {
-        "text": "Enhanced inhibition of vitamin K epoxide reductase",
-        "isCorrect": false,
-        "rationale": "Vitamin K epoxide reductase inhibition is the mechanism of warfarin. This would fit a vitamin K antagonist."
-      },
-      {
-        "text": "Enhanced degradation of phospholipid-bound factor VIII",
-        "isCorrect": false,
-        "rationale": "Activated protein C with protein S cleaves VIIIa, not the serpin enhanced by the described medication. This would require the APC pathway."
-      },
-      {
-        "text": "Enhanced inactivation of thrombin by antithrombin",
+        "text": "Enhanced antithrombin inactivation of thrombin",
         "isCorrect": true,
-        "rationale": "Heparin greatly enhances antithrombin III, which acts as a substrate for thrombin and renders the protease inactive after cleavage."
+        "rationale": "Heparin greatly enhances antithrombin III, which acts as a substrate trap and inactivates thrombin after cleavage-induced conformational change."
+      },
+      {
+        "text": "Enhanced protein C activation by fibrin",
+        "isCorrect": false,
+        "rationale": "Protein C is activated by thrombomodulin-bound thrombin, not by fibrin or heparin. It would fit if endothelial thrombomodulin signaling were enhanced."
+      },
+      {
+        "text": "Reduced plasmin activation by endothelial tPA",
+        "isCorrect": false,
+        "rationale": "Reducing plasmin would limit clot breakdown rather than produce anticoagulation. It would fit an antifibrinolytic effect."
+      },
+      {
+        "text": "Reduced factor synthesis through vitamin blockade",
+        "isCorrect": false,
+        "rationale": "Vitamin K epoxide reductase inhibition is the mechanism of warfarin rather than heparin. It would fit delayed oral anticoagulation."
+      },
+      {
+        "text": "Enhanced thrombomodulin cleavage of factor V",
+        "isCorrect": false,
+        "rationale": "Thrombomodulin does not cleave factor V directly; it enables thrombin-mediated protein C activation. It would require the activated protein C complex as the effector."
       }
     ]
   },
   {
-    "question": "A 57-year-old patient taking a vitamin K antagonist requires laboratory monitoring. Which test is most appropriate because the measured pathway contains the vitamin K-dependent protein with the shortest half-life?",
+    "question": "A 38-year-old woman has sudden symptoms attributed to an obstructing fibrin clot. A recombinant endothelial protein is selected to promote clot dissolution. Which mechanism produces the therapeutic effect?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Explain the use of PT, aPTT, thrombin time, and mixing studies in the diagnosis of coagulation disorders and monitoring heparin and warfarin treatment",
+    "cited_learning_objective": "Describe the process of fibrinolysis, including the functions of thrombomodulin and tPA",
     "options": [
       {
-        "text": "Prothrombin time with standardized INR",
+        "text": "Conversion of plasminogen to plasmin on fibrin",
+        "isCorrect": false,
+        "rationale": "This is the mechanism of recombinant tPA and would be correct if selected; it is not keyed only if an equivalent choice appears."
+      },
+      {
+        "text": "Conversion of prothrombin to thrombin on phospholipid",
+        "isCorrect": false,
+        "rationale": "This reaction is catalyzed by prothrombinase and promotes clot formation rather than dissolution. It would fit coagulation amplification."
+      },
+      {
+        "text": "Cleavage of factors Va and VIIIa",
+        "isCorrect": false,
+        "rationale": "Activated protein C with protein S performs this anticoagulant action, but it does not directly digest the existing fibrin mesh. It would fit suppression of further coagulation."
+      },
+      {
+        "text": "Inactivation of thrombin through antithrombin cleavage",
+        "isCorrect": false,
+        "rationale": "This limits further thrombin activity but does not directly activate the fibrin-cleaving enzyme. It would fit heparin-enhanced anticoagulation."
+      },
+      {
+        "text": "Conversion of plasminogen to plasmin on fibrin",
         "isCorrect": true,
-        "rationale": "PT/INR monitors warfarin because factor VII has the shortest half-life and the test measures the extrinsic and common pathways."
-      },
-      {
-        "text": "Activated partial thromboplastin clotting time",
-        "isCorrect": false,
-        "rationale": "aPTT measures intrinsic and common pathways and is used to monitor heparin. This would be correct for heparin therapy."
-      },
-      {
-        "text": "Thrombin time after exogenous thrombin",
-        "isCorrect": false,
-        "rationale": "Thrombin time assesses conversion of fibrinogen to fibrin. This would fit evaluation of a dysfibrinogenemia."
-      },
-      {
-        "text": "Plasma D-dimer degradation product measurement",
-        "isCorrect": false,
-        "rationale": "D-dimer reflects degradation of cross-linked fibrin and does not monitor warfarin intensity. This would fit assessment of excessive clotting and fibrinolysis."
-      },
-      {
-        "text": "One-to-one plasma mixing correction study",
-        "isCorrect": false,
-        "rationale": "A mixing study distinguishes factor deficiency from an inhibitor after a prolonged clotting test. It does not routinely monitor warfarin."
+        "rationale": "Fibrin-bound tPA activates clot-incorporated plasminogen to plasmin, which then cleaves fibrin and dissolves the clot."
       }
     ]
   },
   {
-    "question": "A 70-year-old patient receives continuous heparin therapy. Which assay should be followed to measure the pathway whose multiple factors are activated by thrombin?",
+    "question": "A 28-year-old man has delayed clot formation caused by a factor IX mutation. PT is normal and aPTT is prolonged. Which molecular function is directly reduced?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Explain the use of PT, aPTT, thrombin time, and mixing studies in the diagnosis of coagulation disorders and monitoring heparin and warfarin treatment",
+    "cited_learning_objective": "Understand the molecular basis of Hemophilias A, B, and C and Factor V Leiden",
     "options": [
       {
-        "text": "Standardized prothrombin time ratio",
+        "text": "Activation of factor IX by factor XIa",
         "isCorrect": false,
-        "rationale": "PT/INR measures extrinsic and common pathways and is used for warfarin. This would be correct for vitamin K antagonist monitoring."
+        "rationale": "Factor XIa normally activates IX, but the question asks for the downstream function performed by defective factor IX. It would fit a factor XI mutation."
       },
       {
-        "text": "Activated partial thromboplastin time",
+        "text": "Activation of factor X by intrinsic tenase",
         "isCorrect": true,
-        "rationale": "aPTT measures intrinsic and common pathways and is used clinically to monitor heparin."
+        "rationale": "Hemophilia B impairs factor IX, reducing IXa-VIIIa tenase activity and therefore diminishing activation of factor X."
       },
       {
-        "text": "Plasma fibrin degradation product level",
+        "text": "Activation of prothrombin by factor Xa",
         "isCorrect": false,
-        "rationale": "D-dimer reflects degradation of cross-linked fibrin rather than heparin intensity. This would fit assessment of active clot formation and breakdown."
+        "rationale": "Factor Xa performs this common-pathway reaction after factor X has been activated. It would be directly reduced by a factor X defect."
       },
       {
-        "text": "Thrombin-induced fibrin formation time",
+        "text": "Cross-linking of fibrin by factor XIIIa",
         "isCorrect": false,
-        "rationale": "Thrombin time measures fibrinogen-to-fibrin conversion. This would fit evaluation of abnormal fibrinogen function."
+        "rationale": "Factor XIIIa stabilizes fibrin after thrombin formation and is not the direct function of factor IX. It would fit factor XIII dysfunction."
       },
       {
-        "text": "One-to-one plasma mixing response",
+        "text": "Activation of factor VII by tissue factor",
         "isCorrect": false,
-        "rationale": "A mixing study investigates a prolonged PT or aPTT by separating deficiency from inhibition. It is not the routine heparin-monitoring assay."
+        "rationale": "Tissue factor activates factor VII in the extrinsic pathway, which remains intact in hemophilia B. It would fit defective extrinsic initiation."
       }
     ]
   },
   {
-    "question": "A 34-year-old patient has aPTT of 68 seconds [25-35 seconds]. After a 1:1 mixture with normal plasma, aPTT is 31 seconds [25-35 seconds]. Which interpretation is most appropriate?",
+    "question": "A 17-year-old boy with a factor XI mutation undergoes coagulation testing before surgery. Which result and explanation are most consistent with his disorder?",
     "difficulty_order": "3rd",
-    "cited_learning_objective": "Explain the use of PT, aPTT, thrombin time, and mixing studies in the diagnosis of coagulation disorders and monitoring heparin and warfarin treatment",
+    "cited_learning_objective": "Understand the molecular basis of Hemophilias A, B, and C and Factor V Leiden",
     "options": [
       {
-        "text": "An intrinsic factor inhibitor remains active",
+        "text": "Prolonged PT from impaired factor X activation",
         "isCorrect": false,
-        "rationale": "An inhibitor would also impair factors in normal plasma and prevent correction. This would fit a persistently prolonged mixed result."
+        "rationale": "Factor XI belongs to the intrinsic pathway, so PT should remain normal. This would require an extrinsic or common-pathway defect."
       },
       {
-        "text": "A platelet receptor defect was corrected",
+        "text": "Normal aPTT from preserved factor IX activation",
         "isCorrect": false,
-        "rationale": "Normal plasma does not replace defective platelet GPIb-IX-V. This would require a plasma-factor abnormality rather than Bernard-Soulier syndrome."
+        "rationale": "Factor XIa activates factor IX, so factor XI dysfunction disrupts this step and prolongs aPTT. This would require preserved intrinsic-pathway activity."
       },
       {
-        "text": "An intrinsic factor deficiency was corrected",
+        "text": "Prolonged TT from impaired fibrin cross-linking",
+        "isCorrect": false,
+        "rationale": "Thrombin time measures fibrinogen-to-fibrin conversion, not factor XI activity or fibrin cross-linking. It would fit abnormal fibrinogen conversion."
+      },
+      {
+        "text": "Prolonged aPTT from impaired factor IX activation",
         "isCorrect": true,
-        "rationale": "Normalization after mixing indicates that normal plasma supplied enough of a deficient intrinsic-pathway factor to restore clotting."
+        "rationale": "Hemophilia C is caused by factor XI mutation; reduced XIa-mediated factor IX activation impairs the intrinsic pathway and prolongs aPTT."
       },
       {
-        "text": "A common factor inhibitor remains active",
+        "text": "Prolonged PT from impaired factor VII activation",
         "isCorrect": false,
-        "rationale": "A common-pathway inhibitor should prevent correction in the mixture. This would be appropriate if the mixed aPTT remained prolonged."
-      },
-      {
-        "text": "A fibrinogen defect resisted normal plasma",
-        "isCorrect": false,
-        "rationale": "Resistance to correction contradicts the normalized result. A noncorrecting study would be needed to support persistent inhibition."
+        "rationale": "Factor VII is part of the extrinsic pathway and is not activated by factor XI. This would fit an isolated extrinsic-pathway abnormality."
       }
     ]
   },
   {
-    "question": "A 29-year-old patient has PT of 20 seconds [11-14 seconds]. Mixing patient plasma 1:1 with normal plasma leaves PT prolonged at 19 seconds [11-14 seconds]. Which mechanism best explains the result?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Explain the use of PT, aPTT, thrombin time, and mixing studies in the diagnosis of coagulation disorders and monitoring heparin and warfarin treatment",
-    "options": [
-      {
-        "text": "Normal plasma supplied sufficient missing factor",
-        "isCorrect": false,
-        "rationale": "Supplying a missing factor should correct the PT because only about 30% normal concentration is required. This would fit normalization after mixing."
-      },
-      {
-        "text": "Citrate was removed by normal plasma",
-        "isCorrect": false,
-        "rationale": "Citrate is managed by recalcification and does not explain selective failure to correct. This would require failure of the assay's calcium replacement."
-      },
-      {
-        "text": "Normal plasma replaced defective platelets",
-        "isCorrect": false,
-        "rationale": "The test uses plasma and does not correct a platelet receptor defect. This would require a plasma factor deficiency instead."
-      },
-      {
-        "text": "Patient inhibitor blocked added clotting factors",
-        "isCorrect": true,
-        "rationale": "Failure to correct indicates that an inhibitor in patient plasma also impaired functional factors supplied by normal plasma."
-      },
-      {
-        "text": "Normal plasma accelerated fibrin degradation",
-        "isCorrect": false,
-        "rationale": "Mixing-study interpretation depends on factor replacement versus inhibition, not accelerated fibrinolysis. This would require evidence of enhanced plasmin activity."
-      }
-    ]
-  },
-  {
-    "question": "A 22-year-old patient has abnormal fibrin formation despite intact upstream pathways. The clinician adds a coagulation enzyme directly to plasma and measures time to clot formation. Which test is being performed?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Explain the use of PT, aPTT, thrombin time, and mixing studies in the diagnosis of coagulation disorders and monitoring heparin and warfarin treatment",
-    "options": [
-      {
-        "text": "Standardized prothrombin time assay",
-        "isCorrect": false,
-        "rationale": "PT adds thromboplastin and calcium to assess extrinsic and common pathways. This would fit factor VII, X, V, II, or I abnormalities."
-      },
-      {
-        "text": "Activated partial thromboplastin assay",
-        "isCorrect": false,
-        "rationale": "aPTT adds phospholipid, calcium, and kaolin to assess intrinsic and common pathways. This would fit an intrinsic-pathway disorder."
-      },
-      {
-        "text": "Plasma mixing correction assay",
-        "isCorrect": false,
-        "rationale": "A mixing study combines patient and normal plasma to distinguish deficiency from inhibition. Direct enzyme addition is not its defining step."
-      },
-      {
-        "text": "Cross-linked fibrin degradation assay",
-        "isCorrect": false,
-        "rationale": "D-dimer testing measures a fibrin degradation product rather than clotting after enzyme addition. This would fit evaluation of clot turnover."
-      },
-      {
-        "text": "Direct thrombin clotting time",
-        "isCorrect": true,
-        "rationale": "Thrombin time is performed by adding thrombin to plasma and measuring fibrinogen-to-fibrin clot formation."
-      }
-    ]
-  },
-  {
-    "question": "A 38-year-old patient has excessive clot formation followed by fibrinolysis. A blood test detects a fragment containing two covalently linked D domains. Which process generated this marker?",
+    "question": "A 63-year-old man has excessive clot formation followed by fibrin breakdown. Testing detects increased circulating fragments containing two linked terminal fibrin domains. Which process most directly produced this finding?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Explain the use of D-dimer as a measure of clotting and fibrinolysis and understand its molecular basis.",
     "options": [
       {
         "text": "Plasmin cleavage of cross-linked fibrin",
-        "isCorrect": true,
-        "rationale": "Plasmin degradation of factor XIIIa-cross-linked fibrin releases the two-D-domain fragment measured as D-dimer."
+        "isCorrect": false,
+        "rationale": "This process directly releases D-dimer and is correct if selected; it is not keyed only if an equivalent option appears."
       },
       {
         "text": "Thrombin cleavage of soluble fibrinogen",
         "isCorrect": false,
-        "rationale": "Thrombin produces fibrin monomers but does not release D-dimer. The fibrin must first be cross-linked and then degraded by plasmin."
+        "rationale": "Thrombin generates fibrin monomers but does not release the degradation fragment. It would fit the initial formation of fibrin."
       },
       {
-        "text": "Factor Xa cleavage of circulating prothrombin",
+        "text": "Plasmin cleavage of uncross-linked fibrinogen",
         "isCorrect": false,
-        "rationale": "Prothrombinase generates thrombin from prothrombin but does not directly release the marker. Subsequent fibrin formation, cross-linking, and degradation are required."
+        "rationale": "The defining fragment contains two cross-linked D domains, so uncross-linked substrate would not produce it. This would fit nonspecific fibrinogen degradation products."
       },
       {
-        "text": "Factor XIIIa cleavage of fibrin monomers",
+        "text": "Factor XIII cleavage of fibrin monomers",
         "isCorrect": false,
-        "rationale": "Factor XIIIa cross-links rather than degrades fibrin. Plasmin cleavage of that cross-linked product would make this correct."
+        "rationale": "Factor XIIIa cross-links fibrin rather than degrading it. It would fit the step creating stabilized fibrin before plasmin action."
       },
       {
-        "text": "Protein C cleavage of activated cofactors",
-        "isCorrect": false,
-        "rationale": "Activated protein C cleaves Va and VIIIa to reduce coagulation. It does not generate a cross-linked fibrin degradation product."
-      }
-    ]
-  },
-  {
-    "question": "A 64-year-old patient develops excessive intravascular clotting. The clinician orders a marker expected to rise when clot formation and breakdown are increased. Which analyte should be measured?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Explain the use of D-dimer as a measure of clotting and fibrinolysis and understand its molecular basis.",
-    "options": [
-      {
-        "text": "Circulating inactive factor XII",
-        "isCorrect": false,
-        "rationale": "Factor XII initiates the intrinsic pathway after surface binding but is not the degradation marker. This would fit assessment of a clotting factor rather than fibrinolysis."
-      },
-      {
-        "text": "Cross-linked fibrin D-domain fragment",
+        "text": "Plasmin cleavage of cross-linked fibrin",
         "isCorrect": true,
-        "rationale": "D-dimer is released when plasmin degrades cross-linked fibrin, so its level reflects the amount of clot formation and fibrinolysis."
-      },
-      {
-        "text": "Circulating inactive protein C",
-        "isCorrect": false,
-        "rationale": "Protein C is an anticoagulant precursor and does not directly measure clot turnover. The cross-linked fibrin fragment would need to be measured."
-      },
-      {
-        "text": "Endothelial tissue factor pathway inhibitor",
-        "isCorrect": false,
-        "rationale": "TFPI limits extrinsic-pathway activity but is not the marker described. A fibrin degradation product is required."
-      },
-      {
-        "text": "Plasma vitamin K epoxide reductase",
-        "isCorrect": false,
-        "rationale": "This enzyme is inhibited by warfarin and does not measure clot formation and breakdown. D-dimer would fit the clinical purpose."
+        "rationale": "Plasmin degradation of factor XIIIa-cross-linked fibrin releases D-dimer, linking the marker to both coagulation and fibrinolysis."
       }
     ]
   },
   {
-    "question": "A 31-year-old patient has prolonged aPTT and a disorder caused by reduced protection of factor VIII in plasma. A 1:1 plasma mixing study normalizes the result. Which explanation best accounts for correction?",
+    "question": "A 35-year-old woman has a prolonged aPTT caused by an antibody that blocks an intrinsic-pathway factor. Her plasma is mixed equally with normal plasma. Which result is most likely?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Explain the use of PT, aPTT, thrombin time, and mixing studies in the diagnosis of coagulation disorders and monitoring heparin and warfarin treatment",
     "options": [
       {
-        "text": "Normal plasma supplied functional platelet GPIb",
+        "text": "The aPTT corrects after factor replacement",
         "isCorrect": false,
-        "rationale": "A platelet receptor cannot be replaced by adding normal plasma. This would require transfusion of functional platelets rather than a plasma mixing study."
+        "rationale": "Correction indicates a factor deficiency rather than an active inhibitor. It would fit if the patient lacked a factor but had no antibody."
       },
       {
-        "text": "Normal plasma removed an intrinsic inhibitor",
+        "text": "The PT corrects after factor replacement",
         "isCorrect": false,
-        "rationale": "Mixing does not remove an inhibitor, and an active inhibitor would usually prevent correction. This would require a noncorrecting result."
+        "rationale": "The abnormal assay is aPTT, and the inhibitor affects the intrinsic pathway. This would fit a correctable extrinsic-pathway deficiency."
       },
       {
-        "text": "Normal plasma supplied functional von Willebrand factor",
+        "text": "The aPTT remains prolonged after mixing",
         "isCorrect": true,
-        "rationale": "Normal plasma provides functional vWF, which binds and protects factor VIII, allowing the prolonged aPTT associated with vWD to correct."
+        "rationale": "The antibody in patient plasma also inhibits the corresponding factor supplied by normal plasma, so the prolonged aPTT fails to correct."
       },
       {
-        "text": "Normal plasma activated endogenous factor XII",
+        "text": "The thrombin time becomes selectively shortened",
         "isCorrect": false,
-        "rationale": "Factor XII activation occurs through contact with a negatively charged surface and does not explain correction by supplied vWF. This would fit aPTT assay initiation."
+        "rationale": "Mixing-study interpretation depends on correction of the initially prolonged assay, not selective shortening of thrombin time. It would require an abnormality confined to fibrin formation."
       },
       {
-        "text": "Normal plasma inhibited endogenous tissue factor",
+        "text": "The PT becomes prolonged after mixing",
         "isCorrect": false,
-        "rationale": "Tissue factor belongs to the extrinsic pathway and does not explain the factor VIII-related aPTT abnormality. Functional vWF would need to be supplied."
+        "rationale": "An intrinsic-pathway inhibitor does not become an isolated extrinsic defect after mixing. This would require inhibition of factor VII or a common factor."
       }
     ]
   },
   {
-    "question": "A 24-year-old patient has a platelet-surface GPIb-IX-V functional defect. An abnormal hemostatic test remains abnormal after addition of normal plasma. Which explanation best accounts for the failed correction?",
+    "question": "A 58-year-old man has an isolated abnormality in the final conversion of a soluble precursor into clot fibers. Which testing procedure best localizes the defect?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Explain the use of PT, aPTT, thrombin time, and mixing studies in the diagnosis of coagulation disorders and monitoring heparin and warfarin treatment",
     "options": [
       {
-        "text": "Normal plasma lacks all coagulation factors",
+        "text": "Add tissue factor and record PT",
         "isCorrect": false,
-        "rationale": "Normal plasma contains functional coagulation factors. Correction fails because the relevant abnormality resides on platelets rather than in plasma."
+        "rationale": "PT surveys the extrinsic and common pathways rather than selectively isolating the final fibrinogen conversion. It would fit suspected factor VII or common-pathway dysfunction."
       },
       {
-        "text": "Normal plasma contains a strong inhibitor",
+        "text": "Add phospholipid and record aPTT",
         "isCorrect": false,
-        "rationale": "The supplied plasma is normal and is not expected to introduce an inhibitor. This would require inhibitor-containing donor plasma."
+        "rationale": "aPTT evaluates intrinsic and common pathways after contact activation. It would fit suspected intrinsic-factor dysfunction."
       },
       {
-        "text": "Normal plasma permanently chelates available calcium",
+        "text": "Mix normal plasma and record correction",
         "isCorrect": false,
-        "rationale": "Citrated specimens are recalcified during clotting tests. This would require omission of calcium rather than a platelet receptor defect."
+        "rationale": "A mixing study distinguishes deficiency from inhibitor but does not specifically isolate fibrinogen conversion. It would fit an unexplained prolonged screening test."
       },
       {
-        "text": "Plasma cannot replace defective platelet receptors",
+        "text": "Add thrombin and record clotting time",
         "isCorrect": true,
-        "rationale": "Bernard-Soulier syndrome reflects defective platelet GPIb-IX-V, so adding normal plasma cannot restore the missing platelet-surface function."
+        "rationale": "Thrombin time directly evaluates conversion of fibrinogen to fibrin by adding thrombin to plasma and measuring clot formation."
       },
       {
-        "text": "Plasma accelerates degradation of functional receptors",
+        "text": "Measure cross-linked fibrin degradation products",
         "isCorrect": false,
-        "rationale": "The failure reflects inability to supply a platelet receptor, not receptor degradation by plasma. Functional platelets would need to be provided."
+        "rationale": "D-dimer measures degradation of previously cross-linked fibrin rather than the efficiency of fibrinogen conversion. It would fit evaluation of clot turnover."
       }
     ]
   },
   {
-    "question": "A 55-year-old patient has vessel injury that exposes a subendothelial initiator. The resulting pathway is rapidly restrained, but sufficient activity persists through amplification. Which inhibitor initially limits that pathway?",
+    "question": "A 44-year-old woman has endothelial injury exposing negatively charged membrane lipid. Coagulation remains impaired because calcium cannot bind selected clotting proteins. Which interaction is most directly lost?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "List the Vitamin K dependent coagulation factors and anticoagulants and the importance of calcium and phospholipids in coagulation as well as how warfarin works as an anticoagulant",
+    "options": [
+      {
+        "text": "Binding of Gla factors to phospholipid surfaces",
+        "isCorrect": true,
+        "rationale": "Calcium binds negatively charged γ-carboxyglutamate residues on factors II, VII, IX, and X and facilitates their attachment to exposed phospholipids."
+      },
+      {
+        "text": "Binding of factor VIII to von Willebrand factor",
+        "isCorrect": false,
+        "rationale": "vWF protects factor VIII, but this interaction is not the calcium bridge described. It would fit failure of factor VIII stabilization."
+      },
+      {
+        "text": "Binding of thrombin to endothelial thrombomodulin",
+        "isCorrect": false,
+        "rationale": "Thrombin binding to thrombomodulin activates protein C and is not mediated by γ-carboxyglutamate residues. It would fit impairment of endothelial anticoagulation."
+      },
+      {
+        "text": "Binding of plasminogen to newly formed fibrin",
+        "isCorrect": false,
+        "rationale": "Plasminogen is incorporated into the fibrin clot for fibrinolysis, but this is not the calcium-dependent Gla interaction. It would fit defective clot-localized fibrinolysis."
+      },
+      {
+        "text": "Binding of antithrombin to activated thrombin",
+        "isCorrect": false,
+        "rationale": "Antithrombin acts as a serpin substrate for thrombin rather than using calcium-mediated Gla attachment. It would fit failure of natural protease inhibition."
+      }
+    ]
+  },
+  {
+    "question": "A 61-year-old man forms an initially soft clot that fails to become mechanically stable despite normal thrombin generation and fibrin production. Which enzymatic step is defective?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Describe the process involved in the extrinsic, intrinsic, and common pathways of secondary hemostasis",
     "options": [
       {
-        "text": "Activated protein C complex",
+        "text": "Factor Xa cleavage of prothrombin",
         "isCorrect": false,
-        "rationale": "Activated protein C with protein S cleaves Va and VIIIa. This would fit downregulation of intrinsic and common-pathway cofactors."
+        "rationale": "This step generates thrombin and is already intact according to the stem. It would fit reduced thrombin generation before fibrin formation."
       },
       {
-        "text": "Circulating antithrombin III",
+        "text": "Thrombin cleavage of fibrinogen",
         "isCorrect": false,
-        "rationale": "Antithrombin inhibits thrombin and several activated proteases but is not the specifically identified rapid limiter of extrinsic initiation."
+        "rationale": "This step produces fibrin and is also intact according to the stem. It would fit failure to form the initial fibrin mesh."
       },
       {
-        "text": "Endothelial thrombomodulin receptor",
-        "isCorrect": false,
-        "rationale": "Thrombomodulin binds thrombin and promotes protein C activation. This would fit endothelial anticoagulant signaling."
-      },
-      {
-        "text": "Fibrin-bound tissue plasminogen activator",
-        "isCorrect": false,
-        "rationale": "Fibrin-bound tPA generates plasmin for clot dissolution. This would fit fibrinolysis rather than rapid limitation of extrinsic initiation."
-      },
-      {
-        "text": "Tissue factor pathway inhibitor",
+        "text": "Factor XIIIa cross-linking of fibrin",
         "isCorrect": true,
-        "rationale": "TFPI quickly inhibits and limits the tissue factor-driven extrinsic pathway after it generates the initial thrombin needed for amplification."
+        "rationale": "Factor XIIIa is a transglutaminase that cross-links fibrin, converting a soft clot into a hard, stabilized clot."
+      },
+      {
+        "text": "Factor IXa activation of factor X",
+        "isCorrect": false,
+        "rationale": "This intrinsic tenase function contributes to thrombin generation rather than final mechanical stabilization. It would fit impaired intrinsic amplification."
+      },
+      {
+        "text": "Factor VIIa activation of factor X",
+        "isCorrect": false,
+        "rationale": "This extrinsic-pathway step initiates thrombin generation but does not cross-link fibrin. It would fit failure of initial coagulation after tissue injury."
+      }
+    ]
+  },
+  {
+    "question": "A 70-year-old woman receiving an anticoagulant has thrombin suppressed through an enhanced endogenous serpin. Which assay is the preferred next step for monitoring treatment?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the use of PT, aPTT, thrombin time, and mixing studies in the diagnosis of coagulation disorders and monitoring heparin and warfarin treatment",
+    "options": [
+      {
+        "text": "Prothrombin time",
+        "isCorrect": false,
+        "rationale": "PT is the preferred assay for warfarin monitoring rather than heparin-enhanced antithrombin activity. It would fit vitamin K epoxide reductase inhibition."
+      },
+      {
+        "text": "Thrombin time",
+        "isCorrect": false,
+        "rationale": "Thrombin time measures fibrinogen-to-fibrin conversion and is used for dysfibrinogenemias. It would fit an isolated final-step abnormality."
+      },
+      {
+        "text": "Plasma mixing study",
+        "isCorrect": false,
+        "rationale": "A mixing study distinguishes a deficiency from an inhibitor but is not the stated routine monitoring test. It would fit an unexplained prolonged PT or aPTT."
+      },
+      {
+        "text": "D-dimer assay",
+        "isCorrect": false,
+        "rationale": "D-dimer reflects degradation of cross-linked fibrin and does not directly monitor heparin dosage. It would fit evaluation of excessive clot turnover."
+      },
+      {
+        "text": "Activated partial thromboplastin time",
+        "isCorrect": true,
+        "rationale": "The described drug is heparin, which enhances antithrombin III; aPTT is used clinically to monitor its effect on intrinsic and common pathway function."
+      }
+    ]
+  },
+  {
+    "question": "A 55-year-old man develops excessive coagulation because endothelial control of thrombin no longer activates a vitamin K-dependent anticoagulant precursor. Which downstream reaction is reduced?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the roles of Antithrombin III, Heparin, Protein C, and Protein S in anticoagulation",
+    "options": [
+      {
+        "text": "Protein S cleavage of thrombin and Xa",
+        "isCorrect": false,
+        "rationale": "Protein S is a cofactor for activated protein C and does not directly cleave thrombin or Xa. This would require protein S to function as a protease."
+      },
+      {
+        "text": "Activated protein C cleavage of Va and VIIIa",
+        "isCorrect": true,
+        "rationale": "Thrombomodulin-bound thrombin activates protein C, which works with protein S to cleave Va and VIIIa and limit factor X pathway activity."
+      },
+      {
+        "text": "Antithrombin cleavage of factors V and VIII",
+        "isCorrect": false,
+        "rationale": "Antithrombin inhibits activated serine proteases rather than the cofactors V and VIII. It would fit inhibition of thrombin, IXa, Xa, XIa, or XIIa."
+      },
+      {
+        "text": "Plasmin cleavage of factors VIIa and Xa",
+        "isCorrect": false,
+        "rationale": "Plasmin cleaves fibrin during fibrinolysis rather than serving as the stated regulator of these clotting factors. It would fit clot dissolution."
+      },
+      {
+        "text": "TFPI cleavage of factors Va and VIIIa",
+        "isCorrect": false,
+        "rationale": "TFPI limits the extrinsic pathway, whereas Va and VIIIa are cleaved by activated protein C. This would fit rapid inhibition of tissue factor-initiated coagulation."
+      }
+    ]
+  },
+  {
+    "question": "A 29-year-old woman has excessive clot formation despite normal initiation and propagation of coagulation. Testing shows failure of factor Va inactivation. Which defect best explains the finding?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand the molecular basis of Hemophilias A, B, and C and Factor V Leiden",
+    "options": [
+      {
+        "text": "Reduced antithrombin binding to factor XIIa",
+        "isCorrect": false,
+        "rationale": "Reduced antithrombin activity could increase coagulation, but it does not specifically explain persistent factor Va. It would fit failure to inhibit activated serine proteases."
+      },
+      {
+        "text": "Reduced tPA binding to fibrin-plasminogen",
+        "isCorrect": false,
+        "rationale": "This would impair fibrinolysis rather than specifically prevent factor Va cleavage. It would fit reduced conversion of plasminogen to plasmin."
+      },
+      {
+        "text": "Reduced TFPI inhibition of tissue factor-VIIa",
+        "isCorrect": false,
+        "rationale": "TFPI limits extrinsic initiation but does not inactivate factor Va. It would fit prolonged tissue factor pathway activity."
+      },
+      {
+        "text": "Resistance of factor V to activated protein C",
+        "isCorrect": true,
+        "rationale": "Factor V Leiden resists activated protein C cleavage, allowing factor Va to persist and support continued prothrombinase activity."
+      },
+      {
+        "text": "Resistance of factor VIII to antithrombin III",
+        "isCorrect": false,
+        "rationale": "Factor VIIIa is regulated by activated protein C rather than antithrombin III, and the measured defect involves factor V. It would require a different cofactor abnormality."
+      }
+    ]
+  },
+  {
+    "question": "A 49-year-old man has marked clot formation with simultaneous clot degradation. Which laboratory finding most directly reflects both processes?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the use of D-dimer as a measure of clotting and fibrinolysis and understand its molecular basis.",
+    "options": [
+      {
+        "text": "Increased prothrombin time",
+        "isCorrect": false,
+        "rationale": "PT measures extrinsic and common pathway clotting time but does not specifically demonstrate degradation of cross-linked fibrin. It would fit a deficiency or inhibitor in those pathways."
+      },
+      {
+        "text": "Increased activated partial thromboplastin time",
+        "isCorrect": false,
+        "rationale": "aPTT measures intrinsic and common pathway function without directly establishing fibrin breakdown. It would fit an intrinsic deficiency or inhibitor."
+      },
+      {
+        "text": "Increased thrombin time",
+        "isCorrect": false,
+        "rationale": "Thrombin time evaluates fibrinogen-to-fibrin conversion rather than showing both clot production and degradation. It would fit dysfibrinogenemia."
+      },
+      {
+        "text": "Failure of plasma mixing correction",
+        "isCorrect": false,
+        "rationale": "Failure to correct indicates an inhibitor but does not specifically document fibrinolysis. It would fit an inhibitor causing a prolonged screening assay."
+      },
+      {
+        "text": "Increased D-dimer concentration",
+        "isCorrect": true,
+        "rationale": "D-dimer is released when plasmin degrades cross-linked fibrin, so elevation indicates that stabilized clot formation and subsequent fibrinolysis have occurred."
       }
     ]
   }
