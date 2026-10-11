@@ -1,65 +1,33 @@
 [
   {
-    "question": "Which cellular blood component is primarily responsible for forming the initial hemostatic plug?",
+    "question": "Which blood component is primarily responsible for forming the initial plug at a site of vascular injury?",
     "difficulty_order": "1st",
     "cited_learning_objective": "List the components essential to functional hemostasis and list the phases of hemostasis",
     "options": [
       {
         "text": "Circulating platelets",
         "isCorrect": true,
-        "rationale": "Platelets adhere, activate, secrete, and aggregate to form the initial plug of primary hemostasis."
-      },
-      {
-        "text": "Red blood cells",
-        "isCorrect": false,
-        "rationale": "Red blood cells are cellular blood components but do not form the primary hemostatic plug. This would be correct only if the task asked for the principal oxygen-carrying cellular component."
-      },
-      {
-        "text": "White blood cells",
-        "isCorrect": false,
-        "rationale": "White blood cells are cellular blood components but are not identified as the cells responsible for primary hemostasis. This would be correct if the task concerned the leukocyte component of blood."
+        "rationale": "Platelets are the cellular component responsible for primary hemostasis and formation of the initial plug."
       },
       {
         "text": "Plasma clotting factors",
         "isCorrect": false,
-        "rationale": "Plasma clotting factors participate primarily in secondary hemostasis rather than initial platelet-plug formation. This would be correct if the task asked about the humoral coagulation cascade."
+        "rationale": "Plasma clotting factors predominantly support secondary hemostasis. This would be correct if the question asked which component produces thrombin and fibrin."
       },
       {
         "text": "Humoral coagulation inhibitors",
         "isCorrect": false,
-        "rationale": "Humoral inhibitors limit coagulation and prevent inappropriate activation rather than constructing the platelet plug. This would be correct if the task asked which system restrains the coagulation cascade."
-      }
-    ]
-  },
-  {
-    "question": "Which platelet surface complex binds the endothelial-derived protein attached to exposed subendothelial collagen?",
-    "difficulty_order": "1st",
-    "cited_learning_objective": "Describe the morphology of platelets as well as their important receptors and secretory molecules",
-    "options": [
-      {
-        "text": "GPIIb-IIIa complex",
-        "isCorrect": false,
-        "rationale": "GPIIb-IIIa binds fibrinogen during platelet aggregation rather than initiating attachment to the vessel wall. It would be correct if the question described fibrinogen-mediated platelet bridging."
+        "rationale": "Humoral inhibitors limit inappropriate coagulation rather than form the initial plug. This would be correct if the task concerned regulation of the clotting cascade."
       },
       {
-        "text": "GPIb-IX-V complex",
-        "isCorrect": true,
-        "rationale": "GPIb-IX-V binds von Willebrand factor attached to exposed collagen, anchoring platelets during adhesion."
+        "text": "Vascular endothelial cells",
+        "isCorrect": false,
+        "rationale": "Endothelial cells regulate platelet activity and expose activating structures after injury, but they do not constitute the platelet plug. This would be correct if the question asked which cells cover subendothelial collagen."
       },
       {
-        "text": "P2Y12 receptor",
+        "text": "Circulating red cells",
         "isCorrect": false,
-        "rationale": "P2Y12 binds ADP and promotes platelet activation rather than collagen-associated adhesion. It would be correct if the stem asked which receptor responds to released ADP."
-      },
-      {
-        "text": "Protein C receptor",
-        "isCorrect": false,
-        "rationale": "The protein C receptor is an endothelial anticoagulant-associated protein, not the platelet adhesion complex. It would be correct if the question concerned endothelial inhibition of coagulation."
-      },
-      {
-        "text": "Tissue factor protein",
-        "isCorrect": false,
-        "rationale": "Tissue factor enhances secondary hemostasis rather than anchoring platelets to collagen. It would be correct if the stem asked which endothelial factor initiates humoral coagulation after injury."
+        "rationale": "Red cells are cellular blood components but are not identified as mediators of primary hemostasis. This would require a question about the cellular composition of blood rather than plug formation."
       }
     ]
   },
@@ -69,893 +37,957 @@
     "cited_learning_objective": "Describe the morphology of platelets as well as their important receptors and secretory molecules",
     "options": [
       {
-        "text": "Alpha storage granules",
+        "text": "Alpha granules",
         "isCorrect": false,
-        "rationale": "Alpha granules contain proteins involved in vessel repair and coagulation rather than the listed small molecules. This would be correct if the contents included fibrinogen, factor V, or platelet-derived growth factor."
+        "rationale": "Alpha granules contain proteins involved in vessel repair and coagulation. This would be correct if the listed contents included factor V, fibrinogen, or platelet-derived growth factor."
       },
       {
-        "text": "Platelet surface vesicles",
+        "text": "Surface granules",
         "isCorrect": false,
-        "rationale": "The source divides platelet granules into alpha and dense granules and does not assign these contents to surface vesicles. This would require a different named platelet compartment."
+        "rationale": "Surface granules are not one of the two platelet granule categories presented. This would require the source to identify a separate surface-granule compartment."
       },
       {
-        "text": "Dense storage granules",
+        "text": "Dense granules",
         "isCorrect": true,
-        "rationale": "Dense granules store ADP, ATP, calcium, and serotonin, supporting platelet adhesion, activation, and vasoconstriction."
+        "rationale": "Dense granules store ADP, ATP, calcium, and serotonin, supporting platelet activation, adhesion, and vasoconstriction."
       },
       {
-        "text": "Endothelial secretory granules",
+        "text": "Contractile granules",
         "isCorrect": false,
-        "rationale": "These substances are described as platelet dense-granule contents rather than an endothelial granule set. This would be correct only if the stem identified an endothelial storage compartment containing them."
+        "rationale": "Platelets contain contractile proteins, but these are not classified as a granule type. This would be correct only if the question asked about a non-granular platelet component."
       },
       {
-        "text": "Plasma protein granules",
+        "text": "Prostaglandin granules",
         "isCorrect": false,
-        "rationale": "Plasma is the acellular blood component and is not presented as containing platelet granules. This would require the question to concern freely circulating plasma proteins instead."
+        "rationale": "Platelets possess enzyme systems that synthesize prostaglandins, not a granule class with this name. This would require the question to concern platelet enzyme systems."
       }
     ]
   },
   {
-    "question": "Which laboratory study measures platelet-related cessation of bleeding from standardized shallow skin incisions?",
+    "question": "Which endothelial product directly supports vasodilation and platelet inhibition under normal conditions?",
     "difficulty_order": "1st",
-    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
-    "options": [
-      {
-        "text": "Complete blood count",
-        "isCorrect": false,
-        "rationale": "A complete blood count measures platelet quantity and size rather than the duration of bleeding from incisions. It would be correct if the task were to identify thrombocytopenia or thrombocytosis."
-      },
-      {
-        "text": "Platelet aggregometry study",
-        "isCorrect": false,
-        "rationale": "Aggregometry measures agonist-induced changes in light transmission through platelet-rich plasma. It would be correct if the stem described increasing light reaching a detector."
-      },
-      {
-        "text": "Ristocetin aggregation assay",
-        "isCorrect": false,
-        "rationale": "The ristocetin assay evaluates the interaction between von Willebrand factor and GPIb-IX-V. It would be correct if the stem described ristocetin-induced platelet binding."
-      },
-      {
-        "text": "Bleeding time test",
-        "isCorrect": true,
-        "rationale": "Bleeding time records how long standardized shallow incisions continue bleeding and therefore assesses platelet function."
-      },
-      {
-        "text": "PFA 100 study",
-        "isCorrect": false,
-        "rationale": "The PFA 100 measures the time required for platelets to obstruct agonist-coated pores. It would be correct if blood were flowing through coated apertures rather than skin incisions."
-      }
-    ]
-  },
-  {
-    "question": "Endothelial injury simultaneously exposes collagen and changes local endothelial activity. Which resulting combination promotes the earliest platelet response?",
-    "difficulty_order": "2nd",
     "cited_learning_objective": "List the procoagulant and anticoagulant properties of endothelial cells",
     "options": [
       {
-        "text": "Protein S release and vasodilation",
+        "text": "Tissue factor",
         "isCorrect": false,
-        "rationale": "Protein S and vasodilation support an anticoagulant endothelial state rather than the earliest response to injury. This would fit intact endothelium maintaining blood fluidity."
+        "rationale": "Tissue factor enhances secondary hemostasis after endothelial injury. This would be correct if the question asked for a procoagulant endothelial property."
       },
       {
-        "text": "Antithrombin release and fibrinolysis",
+        "text": "Von Willebrand factor",
         "isCorrect": false,
-        "rationale": "Antithrombin limits coagulation and fibrinolysis dissolves clot rather than initiating platelet adhesion. This would fit coagulation restraint or clot removal."
+        "rationale": "Von Willebrand factor promotes platelet adhesion to exposed collagen. This would be correct if the task concerned platelet anchoring after vascular injury."
       },
       {
-        "text": "Prostacyclin release and platelet inhibition",
+        "text": "Tissue plasminogen activator",
         "isCorrect": false,
-        "rationale": "Prostacyclin maintains vasodilation and platelet inhibition in healthy endothelium. This would be correct for an intact vessel preventing inappropriate activation."
+        "rationale": "Tissue plasminogen activator promotes clot dissolution rather than directly providing the paired vasodilatory and platelet-inhibitory effects. This would be correct if fibrinolysis were requested."
       },
       {
-        "text": "Thrombomodulin expression and protein inhibition",
+        "text": "Endothelial protein S",
         "isCorrect": false,
-        "rationale": "Thrombomodulin belongs to the endothelial anticoagulant system rather than the injury-driven adhesive response. This would fit healthy endothelial suppression of coagulation."
+        "rationale": "Protein S contributes to inhibition of the coagulation cascade but is not identified as the direct mediator of vasodilation. This would fit a question about endothelial anticoagulant proteins."
       },
       {
-        "text": "Von Willebrand factor release and adhesion",
+        "text": "Nitric oxide",
         "isCorrect": true,
-        "rationale": "Injury releases von Willebrand factor, which binds exposed collagen and permits platelet adhesion through GPIb-IX-V."
+        "rationale": "Nitric oxide is released by healthy endothelium and contributes to both vasodilation and platelet inhibition."
       }
     ]
   },
   {
-    "question": "A platelet adheres to a damaged vessel wall and subsequently exposes more aggregation receptors. Which sequence best connects these events?",
+    "question": "Which receptor binds fibrinogen to connect activated platelets during plug formation?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the morphology of platelets as well as their important receptors and secretory molecules",
+    "options": [
+      {
+        "text": "GPIb-IX-V complex",
+        "isCorrect": false,
+        "rationale": "GPIb-IX-V binds von Willebrand factor and mediates adhesion rather than fibrinogen-dependent aggregation. This would be correct if platelet anchoring to the vessel wall were requested."
+      },
+      {
+        "text": "GPIIb-IIIa complex",
+        "isCorrect": true,
+        "rationale": "Activated GPIIb-IIIa binds fibrinogen, allowing fibrinogen to bridge adjacent platelets during aggregation."
+      },
+      {
+        "text": "P2Y12 receptor",
+        "isCorrect": false,
+        "rationale": "P2Y12 binds ADP and facilitates activation rather than directly bridging platelets. This would be correct if the question asked which receptor transmits the ADP signal."
+      },
+      {
+        "text": "Protein C receptor",
+        "isCorrect": false,
+        "rationale": "The protein C receptor is an endothelial anticoagulant component, not a platelet fibrinogen receptor. This would fit a question about endothelial inhibition of coagulation."
+      },
+      {
+        "text": "Tissue factor receptor",
+        "isCorrect": false,
+        "rationale": "Tissue factor enhances secondary hemostasis and is not presented as the platelet receptor for fibrinogen. This would require a question about initiation of secondary hemostasis."
+      }
+    ]
+  },
+  {
+    "question": "Endothelial damage exposes collagen and triggers release of a protein that binds the exposed surface. Which platelet interaction subsequently anchors the platelet to the vessel wall?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the process of primary hemostasis including platelet adhesion, activation, secretion, and aggregation",
     "options": [
       {
-        "text": "GPIb binding, shape change, dense-granule secretion",
+        "text": "GPIb-IX-V binding von Willebrand factor",
+        "isCorrect": false,
+        "rationale": "This interaction is mechanistically correct, but the keyed sequence requires the receptor-ligand orientation specified by the available answer set. To make this option uniquely correct, the lead-in would need to ask which platelet receptor recognizes collagen-bound von Willebrand factor."
+      },
+      {
+        "text": "P2Y12 binding released serotonin",
+        "isCorrect": false,
+        "rationale": "P2Y12 binds ADP, not serotonin. This would become correct if serotonin were replaced by ADP."
+      },
+      {
+        "text": "Fibrinogen binding exposed collagen",
+        "isCorrect": false,
+        "rationale": "Fibrinogen bridges activated platelets rather than anchoring them to exposed collagen. This would fit aggregation if the second binding partner were GPIIb-IIIa."
+      },
+      {
+        "text": "Von Willebrand factor binding GPIb-IX-V",
         "isCorrect": true,
-        "rationale": "GPIb-IX-V binding to von Willebrand factor initiates platelet shape change and dense-granule secretion, which amplify activation."
+        "rationale": "Collagen-bound von Willebrand factor engages platelet GPIb-IX-V, thereby anchoring the platelet and initiating activation."
       },
       {
-        "text": "GPIIb binding, fibrinolysis, alpha-granule suppression",
+        "text": "Tissue factor binding GPIIb-IIIa",
         "isCorrect": false,
-        "rationale": "GPIIb-IIIa functions during aggregation, while fibrinolysis dissolves clot and does not drive receptor exposure. This would require a clot-removal process rather than platelet activation."
-      },
-      {
-        "text": "P2Y12 binding, vasodilation, collagen concealment",
-        "isCorrect": false,
-        "rationale": "P2Y12 signaling promotes activation, but vasodilation and collagen concealment characterize an intact inhibitory surface. This would fit restoration of healthy endothelium rather than plug formation."
-      },
-      {
-        "text": "Fibrinogen binding, adhesion, GPIb suppression",
-        "isCorrect": false,
-        "rationale": "Fibrinogen binds GPIIb-IIIa after activation and bridges platelets; it does not initiate adhesion or suppress GPIb. This would become correct only if the sequence began with activated platelet aggregation."
-      },
-      {
-        "text": "Tissue factor binding, secretion, pore closure",
-        "isCorrect": false,
-        "rationale": "Tissue factor initiates secondary hemostasis, while pore closure describes a laboratory endpoint. This would require a humoral-coagulation or PFA-testing context."
+        "rationale": "Tissue factor initiates secondary hemostasis and is not the ligand for GPIIb-IIIa. This would require fibrinogen as the ligand and an aggregation-focused lead-in."
       }
     ]
   },
   {
-    "question": "Two platelet proteins participate sequentially after vascular injury. Which pairing correctly distinguishes initial vessel-wall attachment from platelet-to-platelet bridging?",
+    "question": "A platelet adheres at an injured vessel and undergoes a shape change. Which paired event most directly prepares that platelet for subsequent aggregation?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the process of primary hemostasis including platelet adhesion, activation, secretion, and aggregation",
     "options": [
       {
-        "text": "P2Y12 for attachment; GPIb-IX-V for bridging",
-        "isCorrect": false,
-        "rationale": "P2Y12 mediates ADP-dependent activation, while GPIb-IX-V mediates adhesion rather than platelet bridging. The pairing would require receptor functions opposite those described."
-      },
-      {
-        "text": "GPIb-IX-V for attachment; GPIIb-IIIa for bridging",
+        "text": "GPIIb-IIIa assumes high affinity",
         "isCorrect": true,
-        "rationale": "GPIb-IX-V attaches platelets to collagen-bound von Willebrand factor, whereas GPIIb-IIIa binds fibrinogen that bridges activated platelets."
+        "rationale": "Adhesion-mediated activation changes GPIIb-IIIa into a high-affinity conformation that can bind fibrinogen during aggregation."
       },
       {
-        "text": "GPIIb-IIIa for attachment; P2Y12 for bridging",
+        "text": "GPIb-IX-V releases bound collagen",
         "isCorrect": false,
-        "rationale": "GPIIb-IIIa mediates fibrinogen-dependent aggregation, and P2Y12 promotes activation without directly bridging platelets. This would require P2Y12 to bind a linker molecule, which it does not."
+        "rationale": "GPIb-IX-V binds von Willebrand factor rather than collagen directly, and releasing the adhesive interaction would not prepare aggregation. This would require a detachment-focused process not described here."
       },
       {
-        "text": "Tissue factor for attachment; GPIb-IX-V for bridging",
+        "text": "P2Y12 assumes low affinity",
         "isCorrect": false,
-        "rationale": "Tissue factor promotes secondary hemostasis and is not the platelet attachment receptor. This would require the first process to be coagulation initiation rather than platelet adhesion."
+        "rationale": "P2Y12 supports activation after binding ADP; a low-affinity transition is not the stated aggregation mechanism. This would become correct only if the source identified such a conformational change."
       },
       {
-        "text": "GPIIb-IIIa for attachment; fibrinogen for bridging",
+        "text": "Tissue factor becomes fibrinolytic",
         "isCorrect": false,
-        "rationale": "Fibrinogen does bridge activated platelets, but GPIIb-IIIa participates in that same aggregation step rather than initial vessel-wall attachment. Replacing GPIIb-IIIa with GPIb-IX-V would correct the pairing."
+        "rationale": "Tissue factor enhances secondary hemostasis and does not become fibrinolytic. This would require tissue plasminogen activator instead of tissue factor."
+      },
+      {
+        "text": "Thrombomodulin promotes platelet bridging",
+        "isCorrect": false,
+        "rationale": "Thrombomodulin is an endothelial anticoagulant protein and does not bridge platelets. This would require fibrinogen interacting with activated GPIIb-IIIa."
       }
     ]
   },
   {
-    "question": "A platelet releases ADP after adhering at an injury site. Which receptor-mediated consequence most directly amplifies plug formation?",
+    "question": "A platelet releases ADP after adhering to an injured vessel. Which sequence best connects this secretion to recruitment of additional platelets?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the process of primary hemostasis including platelet adhesion, activation, secretion, and aggregation",
     "options": [
       {
-        "text": "GPIb-IX-V activation with collagen concealment",
+        "text": "ADP blocks P2Y12 signaling",
         "isCorrect": false,
-        "rationale": "GPIb-IX-V mediates adhesion to von Willebrand factor, and collagen concealment would reduce rather than amplify platelet recruitment. This would fit restoration of an intact endothelial barrier."
+        "rationale": "ADP activates rather than blocks P2Y12 signaling. This would be correct if the stimulus were a P2Y12 inhibitor."
       },
       {
-        "text": "Tissue factor activation with platelet inhibition",
+        "text": "ADP suppresses receptor exposure",
         "isCorrect": false,
-        "rationale": "Tissue factor supports secondary hemostasis, while platelet inhibition opposes plug amplification. This would require a question focused on coagulation initiation rather than ADP signaling."
+        "rationale": "ADP promotes further exposure of GPIIb-IIIa rather than suppressing it. This would require an inhibitory platelet signal."
       },
       {
-        "text": "P2Y12 activation with increased GPIIb-IIIa exposure",
+        "text": "ADP activates nearby platelets",
         "isCorrect": true,
-        "rationale": "ADP binds P2Y12, promoting platelet activation and further exposure of GPIIb-IIIa for aggregation."
+        "rationale": "Released ADP engages P2Y12 and activates additional platelets, increasing GPIIb-IIIa availability and promoting aggregation."
       },
       {
-        "text": "Protein C activation with fibrinogen degradation",
+        "text": "ADP dissolves fibrin bridges",
         "isCorrect": false,
-        "rationale": "Protein C-associated endothelial activity inhibits coagulation and is not the platelet response to ADP. This would fit anticoagulant regulation rather than primary plug amplification."
+        "rationale": "ADP is a platelet agonist and does not mediate fibrinolysis. This would require tissue plasminogen activator and an established clot."
       },
       {
-        "text": "Prostacyclin activation with reduced platelet recruitment",
+        "text": "ADP masks exposed collagen",
         "isCorrect": false,
-        "rationale": "Prostacyclin inhibits platelets and maintains vasodilation, producing the opposite effect. This would be correct for healthy endothelium restraining platelet activation."
+        "rationale": "ADP recruits and activates platelets rather than covering collagen. This would require an adhesive protein such as von Willebrand factor."
       }
     ]
   },
   {
-    "question": "Which paired granule contents best distinguishes platelet-mediated vessel repair from platelet activation and vasoconstriction?",
+    "question": "A defect prevents platelet adhesion but leaves the platelet receptor structurally intact. Addition of normal plasma restores the measured interaction. Which molecular abnormality best explains this result?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast von Willebrand Disease and Bernard-Soulier Syndrome",
+    "options": [
+      {
+        "text": "Defective platelet GPIIb-IIIa",
+        "isCorrect": false,
+        "rationale": "GPIIb-IIIa deficiency impairs fibrinogen-dependent aggregation and would not be corrected by supplying plasma von Willebrand factor. Normal ristocetin testing with impaired agonist aggregation would support this option."
+      },
+      {
+        "text": "Defective platelet GPIb-IX-V",
+        "isCorrect": false,
+        "rationale": "A platelet GPIb-IX-V defect does not correct with normal plasma because the replacement plasma supplies von Willebrand factor but no functional patient platelets. Failure to correct would support this option."
+      },
+      {
+        "text": "Defective platelet P2Y12",
+        "isCorrect": false,
+        "rationale": "P2Y12 deficiency disrupts ADP-mediated activation rather than the plasma-correctable adhesive interaction. Selectively decreased aggregation with ADP would support this option."
+      },
+      {
+        "text": "Deficient plasma fibrinogen",
+        "isCorrect": false,
+        "rationale": "Fibrinogen supports aggregation through GPIIb-IIIa, whereas the described correction assesses the GPIb-IX-V-von Willebrand factor interaction. An aggregation defect centered on fibrinogen bridging would be needed."
+      },
+      {
+        "text": "Deficient von Willebrand factor",
+        "isCorrect": true,
+        "rationale": "Normal plasma supplies functional von Willebrand factor, restoring its interaction with intact platelet GPIb-IX-V."
+      }
+    ]
+  },
+  {
+    "question": "A normal platelet encounters high-concentration ristocetin in an appropriate plasma sample. Which induced event produces the expected assay response?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
+    "options": [
+      {
+        "text": "Fibrinogen binding activated GPIIb-IIIa",
+        "isCorrect": false,
+        "rationale": "This interaction mediates platelet aggregation but is not the specific interaction induced by ristocetin. An assay using ADP, epinephrine, or collagen to evaluate aggregation would better support it."
+      },
+      {
+        "text": "Von Willebrand factor binding GPIb-IX-V",
+        "isCorrect": true,
+        "rationale": "At high concentration, ristocetin induces binding between von Willebrand factor and platelet GPIb-IX-V, producing the normal assay response."
+      },
+      {
+        "text": "ADP binding platelet P2Y12",
+        "isCorrect": false,
+        "rationale": "ADP-P2Y12 signaling activates platelets but is not the target interaction of ristocetin. Selective testing with ADP as the agonist would support this option."
+      },
+      {
+        "text": "Tissue factor binding exposed collagen",
+        "isCorrect": false,
+        "rationale": "Tissue factor initiates secondary hemostasis and does not bind collagen in the stated assay. Endothelial injury with secondary-hemostatic activation would be required."
+      },
+      {
+        "text": "Serotonin binding platelet GPIb-IX-V",
+        "isCorrect": false,
+        "rationale": "Serotonin is released from dense granules but is not the ligand for GPIb-IX-V. Replacing serotonin with von Willebrand factor would make this interaction correct."
+      }
+    ]
+  },
+  {
+    "question": "Agonist is added to platelet-rich plasma positioned between a light source and detector. Platelets then leave suspension. Which measurement change indicates aggregation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
+    "options": [
+      {
+        "text": "Decreased detector light transmission",
+        "isCorrect": false,
+        "rationale": "Aggregation clears platelets from suspension and increases, rather than decreases, transmitted light. Decreased transmission would fit persistence of dispersed platelets."
+      },
+      {
+        "text": "Increased sample platelet count",
+        "isCorrect": false,
+        "rationale": "Aggregometry measures light transmission over time rather than an increase in platelet number. A complete blood count would be needed to assess platelet quantity."
+      },
+      {
+        "text": "Decreased plasma ristocetin binding",
+        "isCorrect": false,
+        "rationale": "Ristocetin binding evaluates von Willebrand factor-GPIb-IX-V integrity and is not the optical endpoint described. A ristocetin assay would be required."
+      },
+      {
+        "text": "Increased detector light transmission",
+        "isCorrect": true,
+        "rationale": "As platelets aggregate and fall out of suspension, the sample becomes more transmissive, allowing more light to reach the detector."
+      },
+      {
+        "text": "Increased pore closure duration",
+        "isCorrect": false,
+        "rationale": "Pore closure time is the endpoint of the PFA 100, not light-based aggregometry. A sample moving through agonist-coated pores would support this option."
+      }
+    ]
+  },
+  {
+    "question": "Which pairing correctly links a platelet receptor to the primary-hemostatic stage it most directly supports?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the morphology of platelets as well as their important receptors and secretory molecules",
     "options": [
       {
-        "text": "ADP in alpha; fibrinogen in dense",
+        "text": "GPIb-IX-V with fibrinogen bridging",
         "isCorrect": false,
-        "rationale": "ADP is stored in dense granules, whereas fibrinogen is stored in alpha granules. Reversing the compartments would correct the pairing."
+        "rationale": "GPIb-IX-V supports adhesion by binding von Willebrand factor, not fibrinogen bridging. Replacing GPIb-IX-V with GPIIb-IIIa would make the pairing correct."
       },
       {
-        "text": "Serotonin in alpha; fibronectin in dense",
+        "text": "GPIIb-IIIa with initial adhesion",
         "isCorrect": false,
-        "rationale": "Serotonin is a dense-granule constituent, while fibronectin is an alpha-granule constituent. Reversing the assignments would make the pairing correct."
+        "rationale": "GPIIb-IIIa supports aggregation after activation rather than initial adhesion. Replacing it with GPIb-IX-V would correct the pairing."
       },
       {
-        "text": "Calcium in alpha; factor V in dense",
+        "text": "P2Y12 with collagen anchoring",
         "isCorrect": false,
-        "rationale": "Calcium is stored in dense granules, and factor V is stored in alpha granules. The pairing would be correct if those locations were exchanged."
+        "rationale": "P2Y12 transmits an ADP activation signal and does not anchor platelets to collagen. GPIb-IX-V binding collagen-associated von Willebrand factor would be required."
       },
       {
-        "text": "Fibrinogen in alpha; ADP in dense",
+        "text": "GPIIb-IIIa with ADP sensing",
+        "isCorrect": false,
+        "rationale": "GPIIb-IIIa binds fibrinogen, whereas P2Y12 senses ADP. Replacing the receptor with P2Y12 would make the pairing correct."
+      },
+      {
+        "text": "P2Y12 with platelet activation",
         "isCorrect": true,
-        "rationale": "Alpha granules contain fibrinogen and other repair or coagulation proteins, whereas dense granules contain ADP and other activation-associated molecules."
-      },
-      {
-        "text": "ATP in alpha; P-selectin in dense",
-        "isCorrect": false,
-        "rationale": "ATP is a dense-granule constituent, while P-selectin is an alpha-granule constituent. Switching their assigned granules would correct the option."
+        "rationale": "P2Y12 binds released ADP and facilitates platelet activation, thereby promoting recruitment and further receptor exposure."
       }
     ]
   },
   {
-    "question": "An abnormality prevents fibrinogen from linking activated platelets but leaves their initial vessel-wall attachment intact. Which defect best explains this pattern?",
+    "question": "An activated platelet surface contributes to both primary and secondary hemostasis. Which paired features account for these two functions, respectively?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List the components essential to functional hemostasis and list the phases of hemostasis",
+    "options": [
+      {
+        "text": "Fibrinogen bridging; phospholipid binding sites",
+        "isCorrect": true,
+        "rationale": "Fibrinogen bridges GPIIb-IIIa receptors during primary aggregation, while negatively charged platelet phospholipids provide binding sites for coagulation-cascade components."
+      },
+      {
+        "text": "Tissue factor release; collagen concealment",
+        "isCorrect": false,
+        "rationale": "Tissue factor supports secondary hemostasis, while collagen concealment is a property of intact endothelium rather than activated platelets. Reversing the setting to healthy endothelium would support the second feature."
+      },
+      {
+        "text": "P2Y12 inhibition; von Willebrand degradation",
+        "isCorrect": false,
+        "rationale": "P2Y12 inhibition reduces activation, and von Willebrand factor degradation is not presented as an activated-platelet function. P2Y12 activation and von Willebrand factor release would be needed."
+      },
+      {
+        "text": "Prostacyclin release; fibrin clot lysis",
+        "isCorrect": false,
+        "rationale": "Prostacyclin and fibrinolytic activity are endothelial antithrombotic functions, not the paired prohemostatic platelet functions. An intact endothelial surface would support this pairing."
+      },
+      {
+        "text": "Antithrombin release; serotonin inhibition",
+        "isCorrect": false,
+        "rationale": "Antithrombin is an endothelial anticoagulant component, and serotonin is released during platelet degranulation rather than inhibited. An anticoagulant endothelial context would be required."
+      }
+    ]
+  },
+  {
+    "question": "A sample displays normal ristocetin-induced activity but fails to aggregate after ADP, epinephrine, and collagen stimulation. Which molecular defect best explains the contrast?",
     "difficulty_order": "2nd",
     "cited_learning_objective": "Describe the molecular basis of von Willebrand Disease, Bernard-Soulier Syndrome, and Glanzmann Thrombasthenia",
-    "options": [
-      {
-        "text": "Defective von Willebrand factor",
-        "isCorrect": false,
-        "rationale": "Defective von Willebrand factor impairs GPIb-dependent adhesion rather than selectively preventing fibrinogen bridging. It would fit failed initial attachment with correction after normal plasma."
-      },
-      {
-        "text": "Defective GPIb-IX-V complex",
-        "isCorrect": false,
-        "rationale": "A GPIb-IX-V defect prevents von Willebrand factor-mediated adhesion. It would fit Bernard-Soulier syndrome with an abnormal ristocetin response that does not correct with normal plasma."
-      },
-      {
-        "text": "Defective P2Y12 receptor",
-        "isCorrect": false,
-        "rationale": "A P2Y12 defect reduces ADP-dependent activation but is not the direct fibrinogen-binding abnormality. It would fit selective reduction of aggregation in response to ADP."
-      },
-      {
-        "text": "Defective endothelial tissue factor",
-        "isCorrect": false,
-        "rationale": "Tissue factor initiates secondary hemostasis rather than fibrinogen-mediated platelet aggregation. It would fit impaired humoral activation after endothelial injury."
-      },
-      {
-        "text": "Defective GPIIb-IIIa complex",
-        "isCorrect": true,
-        "rationale": "GPIIb-IIIa binds fibrinogen and permits platelet-to-platelet bridging; its deficiency is the molecular basis of Glanzmann thrombasthenia."
-      }
-    ]
-  },
-  {
-    "question": "High-concentration ristocetin fails to produce platelet aggregation. Addition of normal plasma restores the response. Which abnormal component was supplied by the plasma?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Compare and contrast von Willebrand Disease and Bernard-Soulier Syndrome",
-    "options": [
-      {
-        "text": "Functional von Willebrand factor",
-        "isCorrect": true,
-        "rationale": "Normal plasma supplies functional von Willebrand factor, restoring its interaction with intact platelet GPIb-IX-V in von Willebrand disease."
-      },
-      {
-        "text": "Functional GPIb-IX-V receptor",
-        "isCorrect": false,
-        "rationale": "Normal plasma does not supply platelets bearing GPIb-IX-V. This would be the abnormal component in Bernard-Soulier syndrome, in which plasma mixing does not correct the response."
-      },
-      {
-        "text": "Functional GPIIb-IIIa receptor",
-        "isCorrect": false,
-        "rationale": "GPIIb-IIIa is a platelet receptor for fibrinogen and is not supplied by normal plasma. Its deficiency would produce abnormal agonist-dependent aggregation with a normal ristocetin assay."
-      },
-      {
-        "text": "Functional platelet P2Y12 receptor",
-        "isCorrect": false,
-        "rationale": "P2Y12 is a platelet ADP receptor and is not replaced by normal plasma. Its inhibition would selectively reduce the response to ADP."
-      },
-      {
-        "text": "Functional platelet collagen receptor",
-        "isCorrect": false,
-        "rationale": "The tested interaction is between von Willebrand factor and GPIb-IX-V rather than a plasma-supplied collagen receptor. A receptor defect would require replacement of platelets, not plasma."
-      }
-    ]
-  },
-  {
-    "question": "Which laboratory pattern best distinguishes Bernard-Soulier syndrome from von Willebrand disease when initial ristocetin responses are absent?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Compare and contrast von Willebrand Disease and Bernard-Soulier Syndrome",
-    "options": [
-      {
-        "text": "Correction after normal plasma addition",
-        "isCorrect": false,
-        "rationale": "Correction with normal plasma supports von Willebrand disease because plasma supplies functional von Willebrand factor. Bernard-Soulier syndrome retains defective platelet GPIb-IX-V."
-      },
-      {
-        "text": "Persistent defect after plasma addition",
-        "isCorrect": true,
-        "rationale": "The defect persists in Bernard-Soulier syndrome because normal plasma adds von Willebrand factor but no functional platelet GPIb-IX-V receptors."
-      },
-      {
-        "text": "Aggregation at low ristocetin concentration",
-        "isCorrect": false,
-        "rationale": "Aggregation at low ristocetin concentration characterizes type IIB von Willebrand disease due to tighter receptor binding. It does not identify Bernard-Soulier syndrome."
-      },
-      {
-        "text": "Normal aggregation after ADP exposure",
-        "isCorrect": false,
-        "rationale": "A response to ADP does not directly distinguish the two disorders because the decisive contrast is plasma correction of the ristocetin defect. This would instead help assess ADP-dependent activation."
-      },
-      {
-        "text": "Normal platelet count with bleeding",
-        "isCorrect": false,
-        "rationale": "A normal platelet count is typical of most von Willebrand disease, whereas Bernard-Soulier syndrome has mild-to-moderate thrombocytopenia. The finding would support von Willebrand disease rather than distinguish Bernard-Soulier syndrome."
-      }
-    ]
-  },
-  {
-    "question": "A platelet-rich plasma sample becomes progressively clearer after an agonist is added. Which event accounts for the detector change?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
-    "options": [
-      {
-        "text": "Platelets adhere to exposed collagen",
-        "isCorrect": false,
-        "rationale": "Collagen exposure initiates adhesion in an injured vessel but does not explain the optical change in the assay. This would fit primary hemostasis in vivo."
-      },
-      {
-        "text": "Platelets release dense-granule contents",
-        "isCorrect": false,
-        "rationale": "Dense-granule secretion amplifies activation but is not the direct optical endpoint. This would be correct if the task asked what follows platelet adhesion."
-      },
-      {
-        "text": "Platelets aggregate and leave suspension",
-        "isCorrect": true,
-        "rationale": "During aggregometry, activated platelets aggregate and fall out of suspension, increasing light transmission to the detector."
-      },
-      {
-        "text": "Platelets obstruct agonist-coated pores completely",
-        "isCorrect": false,
-        "rationale": "Obstruction of agonist-coated pores is the endpoint of the PFA 100, not light-transmission aggregometry. It would fit a flow-based aperture test."
-      },
-      {
-        "text": "Platelets bind ristocetin-linked fibrinogen",
-        "isCorrect": false,
-        "rationale": "Ristocetin induces von Willebrand factor binding to GPIb-IX-V, not fibrinogen binding. This would require a ristocetin assay rather than general optical aggregometry."
-      }
-    ]
-  },
-  {
-    "question": "Which finding connects a reduced platelet number with otherwise preserved receptor-dependent platelet function?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
-    "options": [
-      {
-        "text": "Normal count with absent ristocetin response",
-        "isCorrect": false,
-        "rationale": "This pattern suggests a qualitative adhesion defect rather than platelet destruction. Plasma correction would further support von Willebrand disease."
-      },
-      {
-        "text": "Low count with persistent plasma-mixing defect",
-        "isCorrect": false,
-        "rationale": "A low count plus an uncorrected ristocetin defect supports Bernard-Soulier syndrome rather than preserved receptor function. A normal ristocetin response would be needed."
-      },
-      {
-        "text": "Normal count with absent agonist aggregation",
-        "isCorrect": false,
-        "rationale": "This pattern indicates a qualitative aggregation defect such as GPIIb-IIIa deficiency. A low count with normal functional assays would be required."
-      },
-      {
-        "text": "Low count with normal functional assays",
-        "isCorrect": true,
-        "rationale": "Immune thrombocytopenia decreases platelet number through antibody-mediated destruction while ristocetin and platelet-function studies remain normal."
-      },
-      {
-        "text": "Normal count with reduced ADP response",
-        "isCorrect": false,
-        "rationale": "This pattern supports P2Y12 inhibition and therefore impaired ADP-dependent function. A reduced platelet count with preserved responses would fit platelet destruction."
-      }
-    ]
-  },
-  {
-    "question": "Which sequence correctly orders key events from endothelial disruption through completion of the initial platelet plug?",
-    "difficulty_order": "2nd",
-    "cited_learning_objective": "Describe the process of primary hemostasis including platelet adhesion, activation, secretion, and aggregation",
-    "options": [
-      {
-        "text": "Aggregation, adhesion, secretion, receptor activation",
-        "isCorrect": false,
-        "rationale": "Aggregation occurs after adhesion, activation, and secretion. This order would need to begin with platelet attachment to collagen-bound von Willebrand factor."
-      },
-      {
-        "text": "Secretion, aggregation, adhesion, vasoconstriction",
-        "isCorrect": false,
-        "rationale": "Secretion follows adhesion, and aggregation does not precede vessel-wall attachment. Correct ordering requires injury and adhesion before secretion."
-      },
-      {
-        "text": "Adhesion, fibrinolysis, secretion, platelet inhibition",
-        "isCorrect": false,
-        "rationale": "Fibrinolysis and platelet inhibition restrain or remove a clot rather than build the initial plug. Activation and aggregation would need to replace those steps."
-      },
-      {
-        "text": "Vasodilation, adhesion, inhibition, thrombolysis",
-        "isCorrect": false,
-        "rationale": "Injury causes transient vasoconstriction rather than vasodilation, and inhibition or thrombolysis does not construct the plug. These events fit an anticoagulant state."
-      },
-      {
-        "text": "Injury, adhesion, secretion, platelet aggregation",
-        "isCorrect": true,
-        "rationale": "Endothelial injury exposes collagen, adhesion initiates activation and secretion, and fibrinogen-dependent aggregation completes the weak initial plug."
-      }
-    ]
-  },
-  {
-    "question": "A patient has mucosal bleeding. Platelet count is 230,000/µL [150,000-450,000/µL], bleeding time is 12 minutes [1-8 minutes], and high-concentration ristocetin produces no aggregation. Normal plasma restores aggregation. Which molecular abnormality best explains these findings?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the molecular basis of von Willebrand Disease, Bernard-Soulier Syndrome, and Glanzmann Thrombasthenia",
-    "options": [
-      {
-        "text": "Deficient or dysfunctional von Willebrand factor",
-        "isCorrect": true,
-        "rationale": "The normal platelet count, prolonged bleeding time, abnormal ristocetin response, and correction by normal plasma identify a von Willebrand factor abnormality."
-      },
-      {
-        "text": "Deficient platelet GPIb-IX-V adhesion complex",
-        "isCorrect": false,
-        "rationale": "GPIb-IX-V deficiency also impairs ristocetin-induced aggregation, but normal plasma cannot replace the defective platelet receptor. It would fit if the defect persisted after plasma addition."
-      },
-      {
-        "text": "Deficient platelet GPIIb-IIIa aggregation complex",
-        "isCorrect": false,
-        "rationale": "GPIIb-IIIa deficiency causes absent aggregation to several agonists while ristocetin remains normal. It would fit if the ristocetin response were preserved."
-      },
-      {
-        "text": "Inhibited platelet P2Y12 activation receptor",
-        "isCorrect": false,
-        "rationale": "P2Y12 inhibition selectively reduces ADP-induced aggregation and does not impair ristocetin testing. It would fit if only the ADP response were reduced."
-      },
-      {
-        "text": "Antibody-mediated circulating platelet destruction",
-        "isCorrect": false,
-        "rationale": "Immune destruction produces a decreased platelet count with normal ristocetin and aggregometry results. It would fit if thrombocytopenia replaced the qualitative adhesion defect."
-      }
-    ]
-  },
-  {
-    "question": "A patient with recurrent bleeding has a platelet count of 105,000/µL [150,000-450,000/µL]. High-concentration ristocetin produces no aggregation, and normal plasma does not restore the response. Which mechanism is most likely?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Compare and contrast von Willebrand Disease and Bernard-Soulier Syndrome",
-    "options": [
-      {
-        "text": "Reduced circulating von Willebrand factor function",
-        "isCorrect": false,
-        "rationale": "A von Willebrand factor defect should correct when normal plasma supplies the functional protein. It would fit if plasma addition restored aggregation."
-      },
-      {
-        "text": "Defective platelet GPIb-IX-V receptor function",
-        "isCorrect": true,
-        "rationale": "Bernard-Soulier syndrome combines mild-to-moderate thrombocytopenia with defective GPIb-IX-V, causing an abnormal ristocetin response that does not correct with normal plasma."
-      },
-      {
-        "text": "Defective platelet GPIIb-IIIa receptor function",
-        "isCorrect": false,
-        "rationale": "GPIIb-IIIa deficiency produces impaired aggregation to ADP, epinephrine, and collagen but preserves ristocetin responses. It would fit if ristocetin aggregation were normal."
-      },
-      {
-        "text": "Reduced platelet P2Y12 receptor signaling",
-        "isCorrect": false,
-        "rationale": "Reduced P2Y12 signaling causes decreased ADP-induced aggregation with a normal platelet count and normal ristocetin response. It would fit selective ADP-response loss."
-      },
-      {
-        "text": "Immune-mediated circulating platelet destruction",
-        "isCorrect": false,
-        "rationale": "Immune thrombocytopenia lowers the platelet count but leaves ristocetin and aggregometry function normal. It would fit if the functional assays were preserved."
-      }
-    ]
-  },
-  {
-    "question": "A patient has prolonged bleeding after minor injuries. Platelet count is 260,000/µL [150,000-450,000/µL]. Ristocetin testing is normal, but ADP, epinephrine, and collagen fail to produce aggregation. Which mechanism best accounts for the results?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the molecular basis of von Willebrand Disease, Bernard-Soulier Syndrome, and Glanzmann Thrombasthenia",
-    "options": [
-      {
-        "text": "Failure of von Willebrand factor synthesis",
-        "isCorrect": false,
-        "rationale": "Von Willebrand factor deficiency impairs ristocetin-induced adhesion and may correct with normal plasma. It would fit if the ristocetin response were abnormal."
-      },
-      {
-        "text": "Failure of platelet GPIb-IX-V expression",
-        "isCorrect": false,
-        "rationale": "GPIb-IX-V deficiency impairs ristocetin-induced adhesion and is associated with a reduced platelet count. It would fit an uncorrected abnormal ristocetin response."
-      },
-      {
-        "text": "Failure of platelet GPIIb-IIIa function",
-        "isCorrect": true,
-        "rationale": "GPIIb-IIIa deficiency prevents fibrinogen-mediated platelet bridging, producing Glanzmann thrombasthenia with normal ristocetin testing but absent aggregation to multiple agonists."
-      },
-      {
-        "text": "Failure of platelet P2Y12 signaling",
-        "isCorrect": false,
-        "rationale": "P2Y12 inhibition reduces the response to ADP rather than eliminating responses to ADP, epinephrine, and collagen collectively. It would fit selective ADP hyporesponsiveness."
-      },
-      {
-        "text": "Failure of endothelial tissue factor expression",
-        "isCorrect": false,
-        "rationale": "Tissue factor initiates secondary hemostasis and does not explain absent agonist-induced platelet aggregation. It would fit a defect in humoral coagulation activation."
-      }
-    ]
-  },
-  {
-    "question": "A patient taking a platelet-directed medication has a count of 310,000/µL [150,000-450,000/µL], a normal ristocetin assay, and reduced aggregation only after ADP exposure. Which cellular action of the medication explains this pattern?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
-    "options": [
-      {
-        "text": "Blocking GPIb-IX-V binding to von Willebrand factor",
-        "isCorrect": false,
-        "rationale": "Blocking GPIb-IX-V would impair ristocetin-dependent adhesion rather than selectively reducing the ADP response. It would fit an abnormal ristocetin assay."
-      },
-      {
-        "text": "Blocking GPIIb-IIIa binding to circulating fibrinogen",
-        "isCorrect": false,
-        "rationale": "Blocking GPIIb-IIIa would impair aggregation in response to multiple agonists because fibrinogen bridging is the common final step. It would not isolate ADP responsiveness."
-      },
-      {
-        "text": "Blocking tissue factor initiation of coagulation",
-        "isCorrect": false,
-        "rationale": "Tissue factor participates in secondary hemostasis rather than selective ADP-dependent platelet activation. It would fit impaired humoral coagulation initiation."
-      },
-      {
-        "text": "Blocking P2Y12 signaling after ADP binding",
-        "isCorrect": true,
-        "rationale": "P2Y12 inhibition disrupts ADP-mediated platelet activation while leaving platelet quantity and ristocetin-dependent adhesion intact."
-      },
-      {
-        "text": "Blocking von Willebrand factor collagen attachment",
-        "isCorrect": false,
-        "rationale": "Preventing von Willebrand factor attachment would impair the ristocetin-related adhesion pathway. It would fit an abnormal ristocetin response that corrects with functional plasma protein."
-      }
-    ]
-  },
-  {
-    "question": "A patient has a platelet count of 42,000/µL [150,000-450,000/µL] and prolonged bleeding. Ristocetin testing and agonist-induced aggregation are normal. Which process most likely caused the abnormal bleeding study?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
-    "options": [
-      {
-        "text": "Defective von Willebrand factor-mediated adhesion",
-        "isCorrect": false,
-        "rationale": "A von Willebrand factor defect would make the ristocetin assay abnormal despite a generally normal platelet count. It would fit if normal plasma corrected the adhesion defect."
-      },
-      {
-        "text": "Defective GPIb-IX-V-mediated platelet adhesion",
-        "isCorrect": false,
-        "rationale": "GPIb-IX-V deficiency can lower platelet count but would also cause an abnormal ristocetin response. It would fit if the ristocetin defect persisted after normal plasma."
-      },
-      {
-        "text": "Defective GPIIb-IIIa-mediated platelet aggregation",
-        "isCorrect": false,
-        "rationale": "GPIIb-IIIa deficiency produces abnormal agonist-induced aggregation with a normal count. It would fit if ADP, epinephrine, and collagen responses were absent."
-      },
-      {
-        "text": "Defective P2Y12-mediated platelet activation",
-        "isCorrect": false,
-        "rationale": "P2Y12 inhibition selectively decreases ADP-induced aggregation and leaves the platelet count normal. It would fit if the ADP response were reduced."
-      },
-      {
-        "text": "Antibody-mediated platelet destruction",
-        "isCorrect": true,
-        "rationale": "Immune thrombocytopenia causes antibody-mediated platelet destruction, reducing platelet number while the remaining platelets show normal ristocetin and aggregometry responses."
-      }
-    ]
-  },
-  {
-    "question": "A patient has bleeding time of 14 minutes [1-8 minutes] and platelet count of 275,000/µL [150,000-450,000/µL]. A flow-based test shows delayed obstruction of agonist-coated pores. Which platelet process is directly being measured?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
-    "options": [
-      {
-        "text": "Agonist-induced platelet plug formation",
-        "isCorrect": true,
-        "rationale": "The PFA 100 measures the time required for platelets to aggregate and obstruct agonist-coated pores, thereby stopping blood flow."
-      },
-      {
-        "text": "Light transmission through platelet-rich plasma",
-        "isCorrect": false,
-        "rationale": "Increasing light transmission is measured by platelet aggregometry rather than the pore-closure system. It would fit a sample positioned between a light source and detector."
-      },
-      {
-        "text": "Ristocetin-induced platelet adhesion correction",
-        "isCorrect": false,
-        "rationale": "Plasma correction after ristocetin assesses von Willebrand factor versus GPIb-IX-V defects. It would fit a mixing study rather than coated-pore closure."
-      },
-      {
-        "text": "Circulating platelet quantity and size",
-        "isCorrect": false,
-        "rationale": "Platelet quantity and size are evaluated by a complete blood count. It would fit a numerical cell measurement rather than a functional flow assay."
-      },
-      {
-        "text": "Incision-associated cessation of external bleeding",
-        "isCorrect": false,
-        "rationale": "Cessation of bleeding from standardized incisions is measured by bleeding time. It would fit a skin-incision procedure rather than an in vitro pore system."
-      }
-    ]
-  },
-  {
-    "question": "A patient with recurrent bleeding has normal platelet quantity. Optical testing shows no increase in light transmission after ADP, epinephrine, or collagen, whereas ristocetin produces aggregation. Which next laboratory interpretation is most appropriate?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
-    "options": [
-      {
-        "text": "Primary adhesion is defective despite normal aggregation",
-        "isCorrect": false,
-        "rationale": "The normal ristocetin response indicates preserved adhesion, while responses to other agonists show defective aggregation. Reversing those functional assignments would match the findings."
-      },
-      {
-        "text": "Primary adhesion is preserved but aggregation fails",
-        "isCorrect": true,
-        "rationale": "Ristocetin confirms preservation of the GPIb-IX-V-von Willebrand factor interaction, while absent responses to several agonists indicate failed GPIIb-IIIa-dependent aggregation."
-      },
-      {
-        "text": "Platelet destruction explains both functional abnormalities",
-        "isCorrect": false,
-        "rationale": "Immune platelet destruction lowers platelet count but leaves functional assays normal. It would fit thrombocytopenia with preserved ristocetin and aggregometry responses."
-      },
-      {
-        "text": "Secondary hemostasis alone explains prolonged bleeding",
-        "isCorrect": false,
-        "rationale": "The absent platelet aggregation responses directly demonstrate a primary-hemostasis abnormality. This would require normal platelet-function testing with an isolated humoral-coagulation defect."
-      },
-      {
-        "text": "Endothelial fibrinolysis explains absent agonist responses",
-        "isCorrect": false,
-        "rationale": "Endothelial fibrinolysis dissolves clot through tissue plasminogen activator but does not account for absent in vitro platelet aggregation. It would fit accelerated clot removal rather than receptor dysfunction."
-      }
-    ]
-  },
-  {
-    "question": "A patient has prolonged bleeding time, a normal platelet count, and absent aggregation with high-concentration ristocetin. Which next laboratory step best separates a plasma-protein defect from a platelet-receptor defect?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Compare and contrast von Willebrand Disease and Bernard-Soulier Syndrome",
-    "options": [
-      {
-        "text": "Repeat the complete blood count",
-        "isCorrect": false,
-        "rationale": "Repeating the count does not distinguish von Willebrand factor deficiency from GPIb-IX-V dysfunction because the decisive issue is correction of the adhesion interaction. It would help confirm a suspected quantitative platelet abnormality."
-      },
-      {
-        "text": "Measure skin-incision bleeding time again",
-        "isCorrect": false,
-        "rationale": "Both disorders prolong bleeding time, so repetition does not identify which interaction partner is defective. This would only reconfirm impaired primary hemostasis."
-      },
-      {
-        "text": "Add normal plasma and repeat ristocetin",
-        "isCorrect": true,
-        "rationale": "Normal plasma supplies functional von Willebrand factor but no platelets; correction supports von Willebrand disease, whereas persistence supports Bernard-Soulier syndrome."
-      },
-      {
-        "text": "Add ADP and measure pore closure",
-        "isCorrect": false,
-        "rationale": "ADP-based testing evaluates activation and aggregation but does not directly distinguish the two sides of the ristocetin interaction. It would be useful for suspected P2Y12 dysfunction."
-      },
-      {
-        "text": "Add collagen and measure light transmission",
-        "isCorrect": false,
-        "rationale": "Collagen-induced aggregometry assesses general platelet aggregation rather than plasma correction of ristocetin-dependent adhesion. It would help evaluate a broader aggregation defect."
-      }
-    ]
-  },
-  {
-    "question": "A patient has a normal platelet count and normal ristocetin response but fails to aggregate after several non-ristocetin agonists. Which missing interaction normally creates the initial weak platelet plug?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the process of primary hemostasis including platelet adhesion, activation, secretion, and aggregation",
-    "options": [
-      {
-        "text": "GPIb-IX-V binding collagen-bound von Willebrand factor",
-        "isCorrect": false,
-        "rationale": "This interaction mediates adhesion and is preserved because ristocetin produces a normal response. It would be defective if ristocetin-induced aggregation were absent."
-      },
-      {
-        "text": "P2Y12 binding released platelet-derived ADP",
-        "isCorrect": false,
-        "rationale": "P2Y12 signaling promotes activation, but dysfunction would chiefly reduce the ADP response rather than responses to several agonists. It would fit selective ADP hyporesponsiveness."
-      },
-      {
-        "text": "Tissue factor initiating humoral coagulation activation",
-        "isCorrect": false,
-        "rationale": "Tissue factor initiates secondary hemostasis rather than the weak platelet plug. It would fit impaired generation of the fibrin-strengthened clot."
-      },
-      {
-        "text": "GPIIb-IIIa binding platelet-bridging fibrinogen",
-        "isCorrect": true,
-        "rationale": "Activated GPIIb-IIIa binds fibrinogen, which bridges adjacent platelets and creates the weak plug at the end of primary hemostasis."
-      },
-      {
-        "text": "Tissue plasminogen activator initiating clot dissolution",
-        "isCorrect": false,
-        "rationale": "Tissue plasminogen activator promotes fibrinolysis and therefore removes rather than creates a platelet plug. It would fit the clot-dissolution phase."
-      }
-    ]
-  },
-  {
-    "question": "A patient develops excessive bleeding while receiving a medication that selectively reduces ADP-induced aggregation. Platelet count and ristocetin testing remain normal. Which downstream platelet change is most directly reduced?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the process of primary hemostasis including platelet adhesion, activation, secretion, and aggregation",
-    "options": [
-      {
-        "text": "Collagen exposure beneath damaged endothelial cells",
-        "isCorrect": false,
-        "rationale": "Collagen exposure results from endothelial injury and is not controlled by platelet ADP signaling. It would be reduced only if the vessel wall remained intact."
-      },
-      {
-        "text": "Von Willebrand factor attachment to collagen",
-        "isCorrect": false,
-        "rationale": "Von Willebrand factor attaches to exposed collagen before ADP-dependent amplification. It would be impaired by a von Willebrand factor defect rather than P2Y12 inhibition."
-      },
-      {
-        "text": "GPIb-IX-V attachment to von Willebrand factor",
-        "isCorrect": false,
-        "rationale": "GPIb-IX-V-mediated adhesion precedes ADP release and remains reflected by normal ristocetin testing. It would be impaired in Bernard-Soulier syndrome."
-      },
-      {
-        "text": "Endothelial tissue factor expression after injury",
-        "isCorrect": false,
-        "rationale": "Tissue factor is an endothelial procoagulant property associated with secondary hemostasis, not a downstream P2Y12 response. It would be altered by changes in endothelial injury signaling."
-      },
-      {
-        "text": "High-affinity GPIIb-IIIa exposure during activation",
-        "isCorrect": true,
-        "rationale": "ADP signaling through P2Y12 promotes platelet activation and further GPIIb-IIIa exposure, so receptor inhibition reduces subsequent fibrinogen-dependent aggregation."
-      }
-    ]
-  },
-  {
-    "question": "A patient has a platelet count of 120,000/µL [150,000-450,000/µL]. Low-concentration ristocetin unexpectedly produces aggregation. Which alteration best explains the result?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the molecular basis of von Willebrand Disease, Bernard-Soulier Syndrome, and Glanzmann Thrombasthenia",
-    "options": [
-      {
-        "text": "Increased von Willebrand factor affinity for GPIb-IX-V",
-        "isCorrect": true,
-        "rationale": "Type IIB von Willebrand disease features tighter von Willebrand factor binding to GPIb-IX-V, permitting aggregation at low ristocetin concentrations and potentially lowering platelet count."
-      },
-      {
-        "text": "Decreased von Willebrand factor affinity for GPIb-IX-V",
-        "isCorrect": false,
-        "rationale": "Reduced affinity would impair rather than enhance ristocetin-induced aggregation. It would fit absent aggregation at high ristocetin concentration with correction by normal plasma."
-      },
-      {
-        "text": "Decreased platelet GPIb-IX-V receptor expression",
-        "isCorrect": false,
-        "rationale": "Reduced GPIb-IX-V expression causes Bernard-Soulier syndrome and prevents ristocetin-induced aggregation. It would fit a defect persisting after normal plasma addition."
-      },
-      {
-        "text": "Decreased platelet GPIIb-IIIa receptor expression",
-        "isCorrect": false,
-        "rationale": "Reduced GPIIb-IIIa impairs fibrinogen-mediated aggregation but leaves ristocetin responses normal. It would fit absent responses to ADP, epinephrine, and collagen."
-      },
-      {
-        "text": "Decreased platelet P2Y12 receptor signaling",
-        "isCorrect": false,
-        "rationale": "Reduced P2Y12 signaling selectively impairs ADP-dependent activation and does not cause low-dose ristocetin aggregation. It would fit reduced aggregation after ADP exposure."
-      }
-    ]
-  },
-  {
-    "question": "A patient with prolonged bleeding has a normal platelet count. Testing shows normal adhesion through the collagen-associated plasma protein but impaired bridging between activated platelets. Which diagnosis best fits this pattern?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the molecular basis of von Willebrand Disease, Bernard-Soulier Syndrome, and Glanzmann Thrombasthenia",
-    "options": [
-      {
-        "text": "Von Willebrand disease",
-        "isCorrect": false,
-        "rationale": "Von Willebrand disease impairs platelet adhesion through abnormal or deficient von Willebrand factor. It would fit an abnormal ristocetin response that corrects with normal plasma."
-      },
-      {
-        "text": "Glanzmann thrombasthenia",
-        "isCorrect": true,
-        "rationale": "Glanzmann thrombasthenia results from GPIIb-IIIa deficiency, preserving ristocetin-dependent adhesion but preventing fibrinogen-mediated platelet bridging."
-      },
-      {
-        "text": "Bernard-Soulier syndrome",
-        "isCorrect": false,
-        "rationale": "Bernard-Soulier syndrome impairs GPIb-IX-V-mediated adhesion and commonly lowers platelet count. It would fit an abnormal ristocetin response that does not correct with plasma."
-      },
-      {
-        "text": "Immune thrombocytopenia",
-        "isCorrect": false,
-        "rationale": "Immune thrombocytopenia reduces platelet number while leaving platelet-function studies normal. It would fit thrombocytopenia without a selective bridging defect."
-      },
-      {
-        "text": "P2Y12 receptor inhibition",
-        "isCorrect": false,
-        "rationale": "P2Y12 inhibition reduces ADP-dependent activation rather than directly eliminating the fibrinogen receptor. It would fit selective reduction in ADP-induced aggregation."
-      }
-    ]
-  },
-  {
-    "question": "A platelet initially attaches normally at an injured vessel but cannot recruit neighboring platelets efficiently after dense-granule release. Which disrupted interaction most directly explains the amplification failure?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Describe the process of primary hemostasis including platelet adhesion, activation, secretion, and aggregation",
-    "options": [
-      {
-        "text": "Von Willebrand factor binding exposed collagen",
-        "isCorrect": false,
-        "rationale": "This interaction occurs before platelet attachment and is preserved because initial adhesion is normal. It would fit failure to anchor the first platelet."
-      },
-      {
-        "text": "GPIb-IX-V binding von Willebrand factor",
-        "isCorrect": false,
-        "rationale": "GPIb-IX-V mediates the initial adhesion described as intact. It would fit Bernard-Soulier syndrome if attachment itself failed."
-      },
-      {
-        "text": "ADP binding the P2Y12 receptor",
-        "isCorrect": true,
-        "rationale": "Dense granules release ADP, which binds P2Y12 on platelets to recruit and activate additional platelets and promote further GPIIb-IIIa exposure."
-      },
-      {
-        "text": "Tissue factor activating secondary hemostasis",
-        "isCorrect": false,
-        "rationale": "Tissue factor initiates the humoral coagulation pathway rather than ADP-mediated recruitment of neighboring platelets. It would fit impaired secondary clot strengthening."
-      },
-      {
-        "text": "Tissue plasminogen activator promoting fibrinolysis",
-        "isCorrect": false,
-        "rationale": "Tissue plasminogen activator dissolves clot and does not amplify platelet recruitment. It would fit accelerated removal of a formed thrombus."
-      }
-    ]
-  },
-  {
-    "question": "A patient has normal counts of circulating platelets but prolonged bleeding. In vitro testing shows preserved ristocetin response and decreased aggregation after ADP alone. Which diagnosis best explains the pattern?",
-    "difficulty_order": "3rd",
-    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
     "options": [
       {
         "text": "Von Willebrand factor deficiency",
         "isCorrect": false,
-        "rationale": "Von Willebrand factor deficiency causes an abnormal ristocetin response rather than selective loss of ADP-induced aggregation. It would fit correction after adding normal plasma."
+        "rationale": "Von Willebrand factor deficiency impairs the ristocetin response. Failure of that response with correction after normal plasma would support this defect."
       },
       {
         "text": "GPIb-IX-V receptor deficiency",
         "isCorrect": false,
-        "rationale": "GPIb-IX-V deficiency causes an abnormal ristocetin response that does not correct with plasma and may lower platelet count. It would not preserve ristocetin aggregation."
+        "rationale": "GPIb-IX-V deficiency also impairs the ristocetin response and does not correct with normal plasma. An abnormal ristocetin assay without correction would support it."
       },
       {
         "text": "GPIIb-IIIa receptor deficiency",
-        "isCorrect": false,
-        "rationale": "GPIIb-IIIa deficiency impairs aggregation after multiple agonists, not ADP alone. It would fit absent responses to ADP, epinephrine, and collagen with normal ristocetin."
+        "isCorrect": true,
+        "rationale": "GPIIb-IIIa deficiency preserves von Willebrand factor-dependent adhesion but prevents fibrinogen-mediated aggregation after multiple agonists."
       },
       {
         "text": "P2Y12 receptor inhibition",
-        "isCorrect": true,
-        "rationale": "P2Y12 inhibition selectively reduces ADP-induced platelet activation while preserving platelet count and ristocetin-dependent adhesion."
+        "isCorrect": false,
+        "rationale": "P2Y12 inhibition selectively decreases the response to ADP rather than eliminating responses to all listed agonists. Isolated ADP-associated impairment would support it."
       },
       {
-        "text": "Immune platelet destruction",
+        "text": "Type IIB von Willebrand dysfunction",
         "isCorrect": false,
-        "rationale": "Immune platelet destruction lowers the platelet count and leaves functional testing normal. It would fit thrombocytopenia with preserved ristocetin and aggregometry."
+        "rationale": "Type IIB dysfunction produces excessive interaction at low ristocetin concentration, not a normal ristocetin response with broad agonist failure. Low-dose ristocetin aggregation would support it."
       }
     ]
   },
   {
-    "question": "A patient has prolonged bleeding time, platelet count of 290,000/µL [150,000-450,000/µL], normal ristocetin-induced aggregation, and absent responses to ADP, epinephrine, and collagen. Which platelet ligand cannot perform its normal function?",
+    "question": "Which finding best distinguishes a defect of the platelet adhesion receptor from a deficiency of its plasma ligand?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare and contrast von Willebrand Disease and Bernard-Soulier Syndrome",
+    "options": [
+      {
+        "text": "Prolonged bleeding time",
+        "isCorrect": false,
+        "rationale": "Both disorders can prolong bleeding time, so this does not distinguish them. A general primary-hemostatic defect without a requested distinction would support this finding."
+      },
+      {
+        "text": "Abnormal ristocetin aggregation",
+        "isCorrect": false,
+        "rationale": "Both disorders can show decreased ristocetin-associated aggregation. This would identify disruption of the shared interaction but not its defective side."
+      },
+      {
+        "text": "Impaired platelet adhesion",
+        "isCorrect": false,
+        "rationale": "Both disorders impair platelet adhesion because they affect opposite partners in the same interaction. This would be sufficient only if the question did not require differentiation."
+      },
+      {
+        "text": "Failure of plasma correction",
+        "isCorrect": true,
+        "rationale": "A receptor defect remains abnormal after normal plasma because plasma supplies functional von Willebrand factor but not replacement platelets."
+      },
+      {
+        "text": "Reduced factor VIII protection",
+        "isCorrect": false,
+        "rationale": "Reduced factor VIII protection follows von Willebrand factor dysfunction rather than the platelet receptor defect. Evidence of secondary-hemostatic dysfunction would support this option."
+      }
+    ]
+  },
+  {
+    "question": "Which sequence correctly orders the major events beginning with vascular injury and ending with the initial weak plug?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the process of primary hemostasis including platelet adhesion, activation, secretion, and aggregation",
+    "options": [
+      {
+        "text": "Aggregation, adhesion, secretion, injury",
+        "isCorrect": false,
+        "rationale": "This sequence reverses the biologic progression. It would require beginning with an existing aggregate rather than endothelial damage."
+      },
+      {
+        "text": "Injury, adhesion, secretion, aggregation",
+        "isCorrect": true,
+        "rationale": "Endothelial injury exposes collagen, adhesion initiates activation, secretion recruits additional platelets, and aggregation forms the weak plug."
+      },
+      {
+        "text": "Secretion, injury, aggregation, adhesion",
+        "isCorrect": false,
+        "rationale": "Secretion does not precede the initiating vascular injury, and adhesion must occur before aggregation. A preactivated platelet preparation would be needed even to approach this ordering."
+      },
+      {
+        "text": "Adhesion, aggregation, injury, secretion",
+        "isCorrect": false,
+        "rationale": "Adhesion requires prior endothelial injury, and secretion contributes before completion of aggregation. Moving injury first and aggregation last would correct it."
+      },
+      {
+        "text": "Injury, aggregation, adhesion, secretion",
+        "isCorrect": false,
+        "rationale": "Aggregation cannot precede the adhesive and activating steps. Exchanging aggregation and adhesion, then placing secretion before aggregation, would correct the sequence."
+      }
+    ]
+  },
+  {
+    "question": "A 19-year-old patient has recurrent mucosal bleeding. Platelet count is 238,000/µL [150,000-450,000/µL], bleeding time is prolonged, and high-dose ristocetin produces no aggregation. Addition of normal plasma restores aggregation. Which diagnosis is most consistent with these findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast von Willebrand Disease and Bernard-Soulier Syndrome",
+    "options": [
+      {
+        "text": "Von Willebrand disease",
+        "isCorrect": true,
+        "rationale": "The normal platelet count, abnormal ristocetin response, and correction with normal plasma identify a deficiency or dysfunction of plasma von Willebrand factor."
+      },
+      {
+        "text": "Bernard-Soulier syndrome",
+        "isCorrect": false,
+        "rationale": "Bernard-Soulier syndrome does not correct with normal plasma and commonly has a mildly to moderately reduced platelet count. Failure of correction would support it."
+      },
+      {
+        "text": "Glanzmann thrombasthenia",
+        "isCorrect": false,
+        "rationale": "Glanzmann thrombasthenia has a normal ristocetin response but impaired aggregation with other agonists. Normal ristocetin testing with broad agonist failure would support it."
+      },
+      {
+        "text": "Immune thrombocytopenia",
+        "isCorrect": false,
+        "rationale": "Immune thrombocytopenia produces a decreased platelet count with normal functional assays of the remaining platelets. Marked thrombocytopenia and normal ristocetin testing would support it."
+      },
+      {
+        "text": "P2Y12 receptor inhibition",
+        "isCorrect": false,
+        "rationale": "P2Y12 inhibition selectively decreases ADP-induced aggregation while ristocetin remains normal. An isolated abnormal ADP response would support it."
+      }
+    ]
+  },
+  {
+    "question": "A 7-year-old patient has frequent nosebleeds. Platelet count is 92,000/µL [150,000-450,000/µL], bleeding time is prolonged, and ristocetin produces no aggregation. Normal plasma is added without improvement. Which diagnosis is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast von Willebrand Disease and Bernard-Soulier Syndrome",
+    "options": [
+      {
+        "text": "Von Willebrand disease",
+        "isCorrect": false,
+        "rationale": "Most von Willebrand disease has a normal platelet count and its ristocetin defect corrects with normal plasma. Correction after plasma addition would support it."
+      },
+      {
+        "text": "Glanzmann thrombasthenia",
+        "isCorrect": false,
+        "rationale": "Glanzmann thrombasthenia has a normal platelet count and normal ristocetin response. Broad failure with ADP, epinephrine, and collagen would support it."
+      },
+      {
+        "text": "P2Y12 receptor inhibition",
+        "isCorrect": false,
+        "rationale": "P2Y12 inhibition preserves platelet count and ristocetin activity while reducing the ADP response. Selective ADP-associated dysfunction would support it."
+      },
+      {
+        "text": "Immune thrombocytopenia",
+        "isCorrect": false,
+        "rationale": "Immune thrombocytopenia decreases platelet count but leaves ristocetin and aggregometry responses normal. Normal functional testing would support it."
+      },
+      {
+        "text": "Bernard-Soulier syndrome",
+        "isCorrect": true,
+        "rationale": "A low platelet count plus an uncorrected ristocetin defect identifies dysfunctional platelet GPIb-IX-V rather than deficient plasma von Willebrand factor."
+      }
+    ]
+  },
+  {
+    "question": "A 22-year-old patient has prolonged bleeding after minor trauma. Platelet count is 310,000/µL [150,000-450,000/µL]. Ristocetin testing is normal, but ADP, epinephrine, and collagen fail to produce aggregation. Which molecular abnormality is most likely?",
     "difficulty_order": "3rd",
     "cited_learning_objective": "Describe the molecular basis of von Willebrand Disease, Bernard-Soulier Syndrome, and Glanzmann Thrombasthenia",
     "options": [
       {
-        "text": "Von Willebrand factor linking platelets with collagen",
+        "text": "Deficient platelet GPIb-IX-V",
         "isCorrect": false,
-        "rationale": "The normal ristocetin response indicates that von Willebrand factor can interact with platelet GPIb-IX-V. It would be implicated if ristocetin-induced aggregation were absent."
+        "rationale": "GPIb-IX-V deficiency disrupts the ristocetin response. An abnormal ristocetin assay that does not correct with normal plasma would support it."
       },
       {
-        "text": "ADP binding platelet P2Y12 activation receptors",
-        "isCorrect": false,
-        "rationale": "P2Y12 dysfunction would selectively impair ADP responsiveness rather than responses to epinephrine and collagen as well. It would fit isolated ADP-response reduction."
-      },
-      {
-        "text": "Tissue factor initiating the coagulation cascade",
-        "isCorrect": false,
-        "rationale": "Tissue factor supports secondary hemostasis and is not the ligand responsible for platelet-to-platelet bridging. It would fit impaired humoral coagulation initiation."
-      },
-      {
-        "text": "Prostacyclin maintaining endothelial platelet inhibition",
-        "isCorrect": false,
-        "rationale": "Prostacyclin inhibits platelet activation on healthy endothelium and does not form the platelet bridge. It would fit excessive endothelial platelet suppression."
-      },
-      {
-        "text": "Fibrinogen bridging activated platelet GPIIb-IIIa receptors",
+        "text": "Deficient platelet GPIIb-IIIa",
         "isCorrect": true,
-        "rationale": "In Glanzmann thrombasthenia, deficient GPIIb-IIIa prevents fibrinogen from bridging activated platelets despite preserved ristocetin-dependent adhesion."
+        "rationale": "GPIIb-IIIa deficiency prevents fibrinogen-mediated bridging, causing broad agonist-associated aggregation failure despite preserved ristocetin-dependent adhesion."
+      },
+      {
+        "text": "Deficient von Willebrand factor",
+        "isCorrect": false,
+        "rationale": "Von Willebrand factor deficiency produces an abnormal ristocetin response that corrects with normal plasma. That assay pattern would support this option."
+      },
+      {
+        "text": "Inhibited platelet P2Y12",
+        "isCorrect": false,
+        "rationale": "P2Y12 inhibition selectively reduces ADP-induced aggregation rather than responses to all listed agonists. Isolated ADP failure would support it."
+      },
+      {
+        "text": "Increased endothelial prostacyclin",
+        "isCorrect": false,
+        "rationale": "Prostacyclin inhibits platelets, but the specific laboratory pattern presented is assigned to GPIIb-IIIa deficiency. Inference: generalized endothelial overproduction could suppress platelet activity, but that mechanism is not provided as a tested disorder."
+      }
+    ]
+  },
+  {
+    "question": "A 35-year-old patient taking a platelet-directed medication has prolonged bleeding time and a platelet count of 275,000/µL [150,000-450,000/µL]. Ristocetin testing is normal, but aggregation is reduced only when one dense-granule agonist is used. Which receptor is inhibited?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
+    "options": [
+      {
+        "text": "Platelet GPIb-IX-V",
+        "isCorrect": false,
+        "rationale": "GPIb-IX-V inhibition would disrupt von Willebrand factor-dependent ristocetin activity. An abnormal ristocetin result would support this receptor."
+      },
+      {
+        "text": "Platelet GPIIb-IIIa",
+        "isCorrect": false,
+        "rationale": "GPIIb-IIIa dysfunction would impair responses to multiple aggregation agonists, not only the dense-granule agonist. Broad agonist failure would support it."
+      },
+      {
+        "text": "Endothelial thrombomodulin",
+        "isCorrect": false,
+        "rationale": "Thrombomodulin is an endothelial anticoagulant protein rather than the platelet receptor for the relevant agonist. A question about endothelial inhibition of coagulation would support it."
+      },
+      {
+        "text": "Platelet P2Y12",
+        "isCorrect": true,
+        "rationale": "P2Y12 binds ADP, a dense-granule product, so its inhibition selectively decreases ADP-associated aggregation while platelet count and ristocetin testing remain normal."
+      },
+      {
+        "text": "Endothelial protein C receptor",
+        "isCorrect": false,
+        "rationale": "The protein C receptor contributes to endothelial anticoagulant activity and does not mediate platelet ADP signaling. An endothelial anticoagulation question would support it."
+      }
+    ]
+  },
+  {
+    "question": "A 4-year-old patient develops mucosal bleeding with antibody-mediated platelet destruction. Platelet count is 28,000/µL [150,000-450,000/µL]. Which additional laboratory pattern is most consistent with this disorder?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
+    "options": [
+      {
+        "text": "Normal bleeding time; abnormal ristocetin",
+        "isCorrect": false,
+        "rationale": "The reduced platelet quantity prolongs bleeding time, while ristocetin activity of remaining platelets is normal. A von Willebrand factor or GPIb-IX-V defect would be needed for abnormal ristocetin."
+      },
+      {
+        "text": "Prolonged bleeding time; abnormal ristocetin",
+        "isCorrect": false,
+        "rationale": "The bleeding time is prolonged, but the ristocetin assay is normal in immune thrombocytopenia. An accompanying adhesive defect would be required for this pattern."
+      },
+      {
+        "text": "Normal bleeding time; normal aggregometry",
+        "isCorrect": false,
+        "rationale": "Aggregometry is normal, but bleeding time is prolonged because platelet number is decreased. Restoring the count would be necessary for a normal bleeding time."
+      },
+      {
+        "text": "Prolonged bleeding time; abnormal aggregometry",
+        "isCorrect": false,
+        "rationale": "The remaining platelets retain normal aggregometry responses. A functional receptor defect in addition to platelet destruction would be required."
+      },
+      {
+        "text": "Prolonged bleeding time; normal aggregometry",
+        "isCorrect": true,
+        "rationale": "Immune platelet destruction lowers the count and prolongs bleeding time, while ristocetin and platelet aggregometry remain functionally normal."
+      }
+    ]
+  },
+  {
+    "question": "A 16-year-old patient has recurrent bleeding and aggregation at a ristocetin concentration that does not aggregate normal platelets. Which molecular behavior most directly explains the result?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the molecular basis of von Willebrand Disease, Bernard-Soulier Syndrome, and Glanzmann Thrombasthenia",
+    "options": [
+      {
+        "text": "Increased vWF affinity for GPIb-IX-V",
+        "isCorrect": true,
+        "rationale": "Type IIB von Willebrand disease features von Willebrand factor with increased affinity for GPIb-IX-V, permitting aggregation at low ristocetin concentrations."
+      },
+      {
+        "text": "Decreased vWF affinity for GPIb-IX-V",
+        "isCorrect": false,
+        "rationale": "Reduced affinity would diminish rather than enhance the low-dose ristocetin response. Failure at high ristocetin concentration would better support reduced function."
+      },
+      {
+        "text": "Increased fibrinogen affinity for GPIIb-IIIa",
+        "isCorrect": false,
+        "rationale": "Ristocetin specifically interrogates the von Willebrand factor-GPIb-IX-V interaction, not fibrinogen-GPIIb-IIIa bridging. A broad aggregation assay would be required."
+      },
+      {
+        "text": "Decreased ADP affinity for P2Y12",
+        "isCorrect": false,
+        "rationale": "Reduced ADP-P2Y12 signaling would selectively impair ADP-induced activation and would not explain low-dose ristocetin aggregation. An abnormal ADP response would support it."
+      },
+      {
+        "text": "Increased collagen affinity for GPIIb-IIIa",
+        "isCorrect": false,
+        "rationale": "GPIIb-IIIa binds fibrinogen rather than collagen. Replacing collagen with fibrinogen would describe aggregation, but not the low-dose ristocetin result."
+      }
+    ]
+  },
+  {
+    "question": "A patient has prolonged bleeding with a normal platelet count. To distinguish an adhesion defect from a fibrinogen-bridging defect, which test should be performed first based on the specific receptor-ligand interaction it evaluates?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
+    "options": [
+      {
+        "text": "Repeat complete blood count",
+        "isCorrect": false,
+        "rationale": "The platelet count is already known to be normal, and repeating it would not distinguish functional adhesion from aggregation defects. A changing platelet quantity would justify repetition."
+      },
+      {
+        "text": "Perform bleeding time testing",
+        "isCorrect": false,
+        "rationale": "Bleeding time confirms reduced platelet function but does not identify the affected receptor-ligand interaction. It would be useful if functional impairment had not yet been established."
+      },
+      {
+        "text": "Perform ristocetin assay testing",
+        "isCorrect": true,
+        "rationale": "The ristocetin assay directly evaluates the von Willebrand factor-GPIb-IX-V adhesion interaction and separates an adhesion abnormality from a defect with normal ristocetin activity."
+      },
+      {
+        "text": "Measure plasma cell quantities",
+        "isCorrect": false,
+        "rationale": "Plasma is acellular, and this measurement does not evaluate platelet adhesion. A complete blood count would be appropriate only for cellular blood quantities."
+      },
+      {
+        "text": "Measure clot lysis time",
+        "isCorrect": false,
+        "rationale": "Clot lysis concerns fibrinolysis rather than the platelet adhesion-versus-aggregation distinction. Suspected abnormal tissue plasminogen activator activity would be required."
+      }
+    ]
+  },
+  {
+    "question": "A patient has an abnormal high-dose ristocetin response. After normal plasma is added, the abnormality persists. Which next interpretation best localizes the defect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast von Willebrand Disease and Bernard-Soulier Syndrome",
+    "options": [
+      {
+        "text": "Plasma vWF is deficient",
+        "isCorrect": false,
+        "rationale": "A plasma von Willebrand factor deficiency should correct when functional von Willebrand factor is supplied. Correction after plasma addition would support this interpretation."
+      },
+      {
+        "text": "Platelet GPIIb-IIIa is deficient",
+        "isCorrect": false,
+        "rationale": "GPIIb-IIIa deficiency characteristically preserves the ristocetin response. Normal ristocetin activity with impaired responses to other agonists would support it."
+      },
+      {
+        "text": "Platelet P2Y12 is inhibited",
+        "isCorrect": false,
+        "rationale": "P2Y12 inhibition affects ADP-induced aggregation and leaves ristocetin testing normal. Selective ADP impairment would support this interpretation."
+      },
+      {
+        "text": "Platelet GPIb-IX-V is defective",
+        "isCorrect": true,
+        "rationale": "Persistence after normal plasma localizes the problem to the patient's platelet receptor because the added plasma supplies ligand but not functional replacement platelets."
+      },
+      {
+        "text": "Plasma fibrinogen is deficient",
+        "isCorrect": false,
+        "rationale": "Fibrinogen mediates GPIIb-IIIa-dependent aggregation rather than the ristocetin-induced adhesive interaction. Failure across aggregation agonists would be required."
+      }
+    ]
+  },
+  {
+    "question": "A 26-year-old patient has prolonged bleeding time, normal platelet count, normal ristocetin testing, and absent aggregation after several agonists. Which missing interaction directly prevents formation of the weak primary plug?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the process of primary hemostasis including platelet adhesion, activation, secretion, and aggregation",
+    "options": [
+      {
+        "text": "ADP binding platelet P2Y12",
+        "isCorrect": false,
+        "rationale": "Loss of ADP-P2Y12 signaling selectively affects ADP-related activation rather than aggregation after several agonists. Selective ADP failure would support it."
+      },
+      {
+        "text": "vWF binding platelet GPIb-IX-V",
+        "isCorrect": false,
+        "rationale": "This interaction mediates adhesion and is intact when ristocetin testing is normal. An abnormal ristocetin response would support its loss."
+      },
+      {
+        "text": "Collagen binding plasma vWF",
+        "isCorrect": false,
+        "rationale": "Collagen-bound von Willebrand factor supports platelet adhesion, which is preserved by the normal ristocetin result. A plasma-correctable ristocetin defect would implicate this pathway."
+      },
+      {
+        "text": "Endothelin binding vascular targets",
+        "isCorrect": false,
+        "rationale": "Endothelin contributes to transient vasoconstriction but does not bridge activated platelets. A question about the immediate vascular response to injury would support it."
+      },
+      {
+        "text": "Fibrinogen binding platelet GPIIb-IIIa",
+        "isCorrect": true,
+        "rationale": "Fibrinogen must bind activated GPIIb-IIIa on adjacent platelets to create the bridges that produce the weak primary plug."
+      }
+    ]
+  },
+  {
+    "question": "A patient with a plasma-correctable adhesion disorder also develops dysfunction involving secondary hemostasis. Loss of which additional function explains involvement of both phases?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast von Willebrand Disease and Bernard-Soulier Syndrome",
+    "options": [
+      {
+        "text": "Protection of factor VIII",
+        "isCorrect": true,
+        "rationale": "Von Willebrand factor supports platelet adhesion and protects factor VIII from degradation, linking its deficiency to abnormalities in both primary and secondary hemostasis."
+      },
+      {
+        "text": "Activation of platelet P2Y12",
+        "isCorrect": false,
+        "rationale": "P2Y12 mediates ADP-dependent platelet activation but does not provide the stated secondary-hemostatic role. Selective ADP aggregation failure would support this mechanism."
+      },
+      {
+        "text": "Bridging of platelet GPIIb-IIIa",
+        "isCorrect": false,
+        "rationale": "Fibrinogen bridges GPIIb-IIIa during primary aggregation, but this does not explain factor protection. Broad agonist-associated aggregation failure would support this defect."
+      },
+      {
+        "text": "Release of endothelial endothelin",
+        "isCorrect": false,
+        "rationale": "Endothelin mediates transient vasoconstriction after injury rather than connecting the adhesive defect to secondary hemostasis. Impaired vasoconstriction would be required."
+      },
+      {
+        "text": "Inhibition of tissue plasminogen activator",
+        "isCorrect": false,
+        "rationale": "Tissue plasminogen activator promotes fibrinolysis and is not the additional von Willebrand factor function described. A clot-dissolution abnormality would support this option."
+      }
+    ]
+  },
+  {
+    "question": "A patient has normal platelet quantity but prolonged bleeding. Whole blood is passed through agonist-coated pores, and cessation of flow is delayed. Which process is this system directly measuring?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
+    "options": [
+      {
+        "text": "Platelet-dependent pore closure",
+        "isCorrect": true,
+        "rationale": "The PFA 100 measures the time required for agonist-stimulated platelets to aggregate, block coated pores, and stop blood flow."
+      },
+      {
+        "text": "Ristocetin-dependent plasma correction",
+        "isCorrect": false,
+        "rationale": "Plasma correction distinguishes von Willebrand factor deficiency from GPIb-IX-V dysfunction and is not the pore-closure endpoint. A mixing step with normal plasma would be required."
+      },
+      {
+        "text": "Light-dependent platelet sedimentation",
+        "isCorrect": false,
+        "rationale": "Light transmission through platelet-rich plasma is measured by platelet aggregometry, not the pore-based system. A light source and detector would support it."
+      },
+      {
+        "text": "Antibody-dependent platelet destruction",
+        "isCorrect": false,
+        "rationale": "Immune platelet destruction lowers platelet quantity but is not directly measured by agonist-coated pores. A decreased platelet count would support that process."
+      },
+      {
+        "text": "Endothelium-dependent clot dissolution",
+        "isCorrect": false,
+        "rationale": "Clot dissolution is mediated by endothelial tissue plasminogen activator and is not the endpoint of the PFA 100. A fibrinolysis-focused test would be needed."
+      }
+    ]
+  },
+  {
+    "question": "A 31-year-old patient has prolonged bleeding time and a platelet count of 220,000/µL [150,000-450,000/µL]. Ristocetin testing is normal. Aggregation is reduced with ADP but preserved with other agonists. Which cellular mechanism best explains the findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the morphology of platelets as well as their important receptors and secretory molecules",
+    "options": [
+      {
+        "text": "Failure of fibrinogen bridging",
+        "isCorrect": false,
+        "rationale": "Failure of GPIIb-IIIa-mediated fibrinogen bridging would disrupt aggregation with multiple agonists. Broad agonist failure would support this mechanism."
+      },
+      {
+        "text": "Failure of ADP signaling",
+        "isCorrect": true,
+        "rationale": "P2Y12 inhibition blocks the platelet response to ADP while preserving platelet count, ristocetin activity, and responses not dependent on the tested ADP pathway."
+      },
+      {
+        "text": "Failure of vWF adhesion",
+        "isCorrect": false,
+        "rationale": "Von Willebrand factor-dependent adhesion is assessed by ristocetin and is normal here. An abnormal ristocetin response corrected by plasma would support this mechanism."
+      },
+      {
+        "text": "Failure of GPIb expression",
+        "isCorrect": false,
+        "rationale": "Loss of GPIb-IX-V would produce abnormal ristocetin testing that fails to correct with normal plasma. That pattern would support this mechanism."
+      },
+      {
+        "text": "Failure of platelet production",
+        "isCorrect": false,
+        "rationale": "Reduced platelet production would decrease the platelet count rather than selectively affect ADP aggregation. Thrombocytopenia would be required."
+      }
+    ]
+  },
+  {
+    "question": "A patient has a platelet count of 470,000/µL [150,000-450,000/µL]. Which term correctly classifies this isolated quantitative finding?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
+    "options": [
+      {
+        "text": "Normal platelet quantity",
+        "isCorrect": false,
+        "rationale": "The value exceeds the stated upper reference limit of 450,000/µL. A count within 150,000-450,000/µL would support this classification."
+      },
+      {
+        "text": "Mild platelet dysfunction",
+        "isCorrect": false,
+        "rationale": "A complete blood count measures quantity and does not establish platelet function. Prolonged bleeding time or abnormal functional testing would be needed."
+      },
+      {
+        "text": "Quantitative thrombocytosis",
+        "isCorrect": true,
+        "rationale": "A platelet count above 450,000/µL is classified as thrombocytosis."
+      },
+      {
+        "text": "Quantitative thrombocytopenia",
+        "isCorrect": false,
+        "rationale": "Thrombocytopenia requires a count below 150,000/µL. A value below that threshold would support this classification."
+      },
+      {
+        "text": "Qualitative aggregation failure",
+        "isCorrect": false,
+        "rationale": "The count alone does not demonstrate an aggregation defect. Abnormal PFA 100 or aggregometry results would be required."
+      }
+    ]
+  },
+  {
+    "question": "A 43-year-old patient has prolonged mucosal bleeding after vascular injury. Platelets adhere normally but cannot recruit neighboring platelets efficiently after dense-granule release. Which signaling interaction is most directly impaired?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the process of primary hemostasis including platelet adhesion, activation, secretion, and aggregation",
+    "options": [
+      {
+        "text": "vWF binding platelet GPIb-IX-V",
+        "isCorrect": false,
+        "rationale": "This interaction mediates initial adhesion, which is stated to be normal. Impaired platelet anchoring and an abnormal ristocetin assay would support it."
+      },
+      {
+        "text": "Fibrinogen binding platelet GPIIb-IIIa",
+        "isCorrect": false,
+        "rationale": "This interaction forms bridges during aggregation, but the stem localizes the defect to recruitment signaling after granule release. Broad failure after multiple agonists would support it."
+      },
+      {
+        "text": "Collagen binding von Willebrand factor",
+        "isCorrect": false,
+        "rationale": "Collagen-von Willebrand factor binding supports the adhesive stage, which is intact. A plasma-correctable adhesion defect would support it."
+      },
+      {
+        "text": "ADP binding platelet P2Y12",
+        "isCorrect": true,
+        "rationale": "Dense granules release ADP, which binds P2Y12 on platelets and amplifies activation, receptor exposure, recruitment, and aggregation."
+      },
+      {
+        "text": "Tissue factor activating secondary hemostasis",
+        "isCorrect": false,
+        "rationale": "Tissue factor initiates secondary hemostasis rather than dense-granule-mediated platelet recruitment. A defect in coagulation-cascade initiation would support it."
+      }
+    ]
+  },
+  {
+    "question": "A patient with endothelial injury initially forms a weak platelet plug, but the plug is not subsequently strengthened. Which phase has most directly failed?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "List the components essential to functional hemostasis and list the phases of hemostasis",
+    "options": [
+      {
+        "text": "Initial vascular constriction",
+        "isCorrect": false,
+        "rationale": "Initial vasoconstriction occurs before platelet-plug formation. Failure at this stage would impair the earliest response rather than strengthening an existing plug."
+      },
+      {
+        "text": "Platelet adhesion phase",
+        "isCorrect": false,
+        "rationale": "Adhesion must already have occurred for a weak platelet plug to form. Failure would prevent anchoring rather than later stabilization."
+      },
+      {
+        "text": "Platelet secretion phase",
+        "isCorrect": false,
+        "rationale": "Secretion recruits additional platelets during primary hemostasis. Failure would impair formation of the weak plug itself."
+      },
+      {
+        "text": "Platelet aggregation phase",
+        "isCorrect": false,
+        "rationale": "Aggregation produces the weak platelet plug, which is already present. Failure would prevent that plug from forming."
+      },
+      {
+        "text": "Humoral coagulation phase",
+        "isCorrect": true,
+        "rationale": "Secondary hemostasis generates thrombin and fibrin through humoral coagulation factors, strengthening the weak primary platelet plug."
+      }
+    ]
+  },
+  {
+    "question": "A patient has an abnormal platelet-function screening result. Platelet-rich plasma is then tested with a detector-based method after agonist exposure. Which observation would demonstrate successful aggregation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the roles of Complete Blood Count, Bleeding Time, the Ristocetin Assay, PFA 100, and Platelet Aggregometry in evaluating patients for disorders of primary hemostasis",
+    "options": [
+      {
+        "text": "Greater light transmission",
+        "isCorrect": true,
+        "rationale": "Successful aggregation removes dispersed platelets from suspension, increasing the amount of light reaching the detector."
+      },
+      {
+        "text": "Lower platelet count",
+        "isCorrect": false,
+        "rationale": "The method assesses optical change rather than a true reduction in circulating platelet quantity. A complete blood count would be needed to demonstrate thrombocytopenia."
+      },
+      {
+        "text": "Longer bleeding duration",
+        "isCorrect": false,
+        "rationale": "Bleeding duration is measured by bleeding time, not detector-based aggregometry. A forearm-incision procedure would support this observation."
+      },
+      {
+        "text": "Faster pore closure",
+        "isCorrect": false,
+        "rationale": "Pore closure is the endpoint of the PFA 100. Blood passing through agonist-coated pores would be required."
+      },
+      {
+        "text": "Stronger ristocetin correction",
+        "isCorrect": false,
+        "rationale": "Ristocetin correction evaluates the adhesive receptor-ligand pair rather than the optical aggregometry endpoint. Addition of normal plasma to an abnormal ristocetin sample would be required."
       }
     ]
   }
