@@ -1,0 +1,962 @@
+[
+  {
+    "question": "Which equation is used to calculate the equilibrium potential of a single ion across a membrane?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain diffusion potential and equilibrium potential. Describe the Nernst Equation and how it is used to calculate the equilibrium potential for an ion.",
+    "options": [
+      {
+        "text": "Nernst equation",
+        "isCorrect": true,
+        "rationale": "Correct. The Nernst equation calculates the equilibrium potential for an individual ion from its concentration gradient and valence."
+      },
+      {
+        "text": "Goldman equation",
+        "isCorrect": false,
+        "rationale": "This calculates membrane potential considering multiple ions and relative permeabilities."
+      },
+      {
+        "text": "Driving force equation",
+        "isCorrect": false,
+        "rationale": "This relates membrane potential and equilibrium potential but does not calculate Eion."
+      },
+      {
+        "text": "Conductance equation",
+        "isCorrect": false,
+        "rationale": "This describes electrical conductance, not equilibrium potential."
+      },
+      {
+        "text": "Current equation",
+        "isCorrect": false,
+        "rationale": "This describes ion current, not equilibrium potential."
+      }
+    ]
+  },
+  {
+    "question": "At rest, which factor contributes most strongly to the resting membrane potential of a neuron?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the primary determinant of and other factors contributing to resting membrane potential and how major ion membrane permeability changes or concentration changes affect the membrane potential.",
+    "options": [
+      {
+        "text": "Na+-K+ ATPase activity",
+        "isCorrect": false,
+        "rationale": "The pump contributes slightly, about a few millivolts."
+      },
+      {
+        "text": "K+ diffusion through leak channels",
+        "isCorrect": true,
+        "rationale": "Correct. Resting membrane potential is primarily determined by K+ efflux through leak channels."
+      },
+      {
+        "text": "Cl- diffusion through leak channels",
+        "isCorrect": false,
+        "rationale": "Cl- permeability is comparatively small at rest."
+      },
+      {
+        "text": "Voltage-gated Na+ channel opening",
+        "isCorrect": false,
+        "rationale": "These channels are closed at rest."
+      },
+      {
+        "text": "Voltage-gated K+ channel opening",
+        "isCorrect": false,
+        "rationale": "These channels participate during action potentials, not establishment of resting potential."
+      }
+    ]
+  },
+  {
+    "question": "A membrane reaches threshold and triggers a full action potential. Which principle is best illustrated?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain threshold voltage and how this can trigger an action potential. Explain the “all-or-none” concept of action potentials.",
+    "options": [
+      {
+        "text": "Saltatory conduction principle",
+        "isCorrect": false,
+        "rationale": "This describes propagation in myelinated fibers."
+      },
+      {
+        "text": "Accommodation principle",
+        "isCorrect": false,
+        "rationale": "Accommodation reduces excitability during persistent depolarization."
+      },
+      {
+        "text": "All-or-none principle",
+        "isCorrect": true,
+        "rationale": "Correct. Once threshold is reached, a full action potential occurs."
+      },
+      {
+        "text": "Goldman permeability principle",
+        "isCorrect": false,
+        "rationale": "This concerns resting membrane potential."
+      },
+      {
+        "text": "Driving force principle",
+        "isCorrect": false,
+        "rationale": "This concerns ion movement relative to equilibrium potential."
+      }
+    ]
+  },
+  {
+    "question": "Which phase of an action potential is defined as the period when membrane potential becomes more negative than resting potential?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe an action potential and draw a diagram of membrane voltage changes during the action potential. Explain the terms depolarization, overshoot, repolarization and hyperpolarization in relation to action potentials.",
+    "options": [
+      {
+        "text": "Depolarization phase",
+        "isCorrect": false,
+        "rationale": "Depolarization makes membrane potential less negative."
+      },
+      {
+        "text": "Overshoot phase",
+        "isCorrect": false,
+        "rationale": "Overshoot refers to positive membrane potential."
+      },
+      {
+        "text": "Repolarization phase",
+        "isCorrect": false,
+        "rationale": "Repolarization returns membrane potential toward rest."
+      },
+      {
+        "text": "Hyperpolarization phase",
+        "isCorrect": true,
+        "rationale": "Correct. Hyperpolarization is more negative than resting potential."
+      },
+      {
+        "text": "Threshold phase",
+        "isCorrect": false,
+        "rationale": "Threshold is the voltage needed to initiate an action potential."
+      }
+    ]
+  },
+  {
+    "question": "A neuron at rest has Em = -65 mV. Given EK = -94 mV, opening additional K+ channels would most directly move membrane potential toward which value?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the primary determinant of and other factors contributing to resting membrane potential and how major ion membrane permeability changes or concentration changes affect the membrane potential.",
+    "options": [
+      {
+        "text": "-94 mV equilibrium potential",
+        "isCorrect": false,
+        "rationale": "This is the correct direction, but not keyed."
+      },
+      {
+        "text": "Closer to K+ equilibrium potential",
+        "isCorrect": false,
+        "rationale": "Conceptually correct but not the best single answer format relative to options."
+      },
+      {
+        "text": "More negative membrane voltage",
+        "isCorrect": false,
+        "rationale": "True but less specific."
+      },
+      {
+        "text": "Toward potassium equilibrium voltage",
+        "isCorrect": false,
+        "rationale": "True but not the keyed choice."
+      },
+      {
+        "text": "Potassium equilibrium potential",
+        "isCorrect": true,
+        "rationale": "Correct. Increasing K+ permeability drives Em toward EK."
+      }
+    ]
+  },
+  {
+    "question": "A researcher increases extracellular K+ concentration while other variables remain unchanged. What is the expected effect on resting membrane potential?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the primary determinant of and other factors contributing to resting membrane potential and how major ion membrane permeability changes or concentration changes affect the membrane potential.",
+    "options": [
+      {
+        "text": "Become less negative",
+        "isCorrect": true,
+        "rationale": "Correct. Increased extracellular K+ depolarizes the membrane."
+      },
+      {
+        "text": "Become more negative",
+        "isCorrect": false,
+        "rationale": "This would occur with decreased extracellular K+."
+      },
+      {
+        "text": "Become strongly positive",
+        "isCorrect": false,
+        "rationale": "The lecture does not support such a change under these conditions."
+      },
+      {
+        "text": "Remain exactly unchanged",
+        "isCorrect": false,
+        "rationale": "K+ gradients strongly influence resting potential."
+      },
+      {
+        "text": "Equal sodium equilibrium potential",
+        "isCorrect": false,
+        "rationale": "Resting potential remains dominated by K+ permeability."
+      }
+    ]
+  },
+  {
+    "question": "A membrane is permeable only to Na+. Which equilibrium potential would the membrane voltage approach?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain diffusion potential and equilibrium potential. Describe the Nernst Equation and how it is used to calculate the equilibrium potential for an ion.",
+    "options": [
+      {
+        "text": "Potassium equilibrium potential",
+        "isCorrect": false,
+        "rationale": "This would occur if only K+ permeability were present."
+      },
+      {
+        "text": "Sodium equilibrium potential",
+        "isCorrect": true,
+        "rationale": "Correct. Membrane voltage approaches the equilibrium potential of the permeant ion."
+      },
+      {
+        "text": "Chloride equilibrium potential",
+        "isCorrect": false,
+        "rationale": "Requires selective Cl- permeability."
+      },
+      {
+        "text": "Resting membrane potential",
+        "isCorrect": false,
+        "rationale": "Resting potential results from multiple ions."
+      },
+      {
+        "text": "Zero millivolts reference",
+        "isCorrect": false,
+        "rationale": "Grounding extracellular fluid does not determine equilibrium potential."
+      }
+    ]
+  },
+  {
+    "question": "Which statement best explains why resting membrane potential is not identical to EK?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the primary determinant of and other factors contributing to resting membrane potential and how major ion membrane permeability changes or concentration changes affect the membrane potential.",
+    "options": [
+      {
+        "text": "Only chloride ions contribute",
+        "isCorrect": false,
+        "rationale": "Multiple ions contribute."
+      },
+      {
+        "text": "Temperature constantly changes",
+        "isCorrect": false,
+        "rationale": "This is not the major explanation given."
+      },
+      {
+        "text": "Membrane lacks potassium channels",
+        "isCorrect": false,
+        "rationale": "K+ channels are essential at rest."
+      },
+      {
+        "text": "Slight sodium leak and pump",
+        "isCorrect": true,
+        "rationale": "Correct. Small Na+ permeability and electrogenic pump activity shift resting potential from EK."
+      },
+      {
+        "text": "All ions reach equilibrium simultaneously",
+        "isCorrect": false,
+        "rationale": "Membrane potential reflects permeability rather than universal equilibrium."
+      }
+    ]
+  },
+  {
+    "question": "A nerve membrane is clamped at -65 mV. The ion with the largest net driving force according to the provided values is which ion?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain diffusion potential and equilibrium potential. Describe the Nernst Equation and how it is used to calculate the equilibrium potential for an ion.",
+    "options": [
+      {
+        "text": "Potassium ion",
+        "isCorrect": false,
+        "rationale": "Its driving force is smaller than Na+ in the lecture example."
+      },
+      {
+        "text": "Chloride ion",
+        "isCorrect": false,
+        "rationale": "Its driving force is smaller than Na+."
+      },
+      {
+        "text": "Magnesium ion",
+        "isCorrect": false,
+        "rationale": "Not analyzed in the driving-force example."
+      },
+      {
+        "text": "Sodium ion",
+        "isCorrect": true,
+        "rationale": "Correct. The lecture notes Na+ has the greatest net driving force at -65 mV."
+      },
+      {
+        "text": "All identical forces",
+        "isCorrect": false,
+        "rationale": "The listed driving forces differ substantially."
+      }
+    ]
+  },
+  {
+    "question": "During depolarization, which ionic event is primarily responsible for the rising phase?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the ionic bases underlying each phase of an action potential.",
+    "options": [
+      {
+        "text": "Rapid sodium ion influx",
+        "isCorrect": false,
+        "rationale": "Correct concept but not keyed."
+      },
+      {
+        "text": "Opening voltage-gated sodium channels",
+        "isCorrect": false,
+        "rationale": "This initiates Na+ influx."
+      },
+      {
+        "text": "Transient increase in gNa",
+        "isCorrect": true,
+        "rationale": "Correct. The rising phase reflects increased sodium conductance and Na+ entry."
+      },
+      {
+        "text": "Sustained increase in gK",
+        "isCorrect": false,
+        "rationale": "This is associated with repolarization."
+      },
+      {
+        "text": "Closure of leak channels",
+        "isCorrect": false,
+        "rationale": "Not the mechanism described."
+      }
+    ]
+  },
+  {
+    "question": "Which gating mechanism explains how a voltage-sensitive sodium channel responds to threshold depolarization?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how Na+ channels can be open (allowing current to flow), closed and inactive, and closed but active and ready for the next stimulus.",
+    "options": [
+      {
+        "text": "Mechanical membrane deformation",
+        "isCorrect": false,
+        "rationale": "Applies to mechanically gated channels."
+      },
+      {
+        "text": "Thermal energy sensing",
+        "isCorrect": false,
+        "rationale": "Applies to thermally gated channels."
+      },
+      {
+        "text": "Ligand binding activation",
+        "isCorrect": false,
+        "rationale": "Applies to ligand-gated channels."
+      },
+      {
+        "text": "Voltage-triggered allosteric change",
+        "isCorrect": true,
+        "rationale": "Correct. Voltage changes induce conformational changes that open or close the channel."
+      },
+      {
+        "text": "Continuous leak permeability",
+        "isCorrect": false,
+        "rationale": "Leak channels are not voltage gated."
+      }
+    ]
+  },
+  {
+    "question": "A neuron receives a stimulus that exceeds threshold. Increasing stimulus intensity further produces which change in a single action potential?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain threshold voltage and how this can trigger an action potential. Explain the “all-or-none” concept of action potentials.",
+    "options": [
+      {
+        "text": "Larger action potential amplitude",
+        "isCorrect": false,
+        "rationale": "Amplitude remains constant."
+      },
+      {
+        "text": "Smaller action potential amplitude",
+        "isCorrect": false,
+        "rationale": "Amplitude does not decrease because stimulus is stronger."
+      },
+      {
+        "text": "Longer action potential duration",
+        "isCorrect": false,
+        "rationale": "Not described as the coding mechanism."
+      },
+      {
+        "text": "Same action potential amplitude",
+        "isCorrect": true,
+        "rationale": "Correct. The action potential obeys the all-or-none principle."
+      },
+      {
+        "text": "Loss of propagation ability",
+        "isCorrect": false,
+        "rationale": "Threshold stimulation generates propagation."
+      }
+    ]
+  },
+  {
+    "question": "Which property best determines the maximum frequency at which a neuron can fire action potentials?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the ability of a cell to fire repeated action potentials based on the absolute and relative refractory periods of the action potential.",
+    "options": [
+      {
+        "text": "Membrane capacitance alone",
+        "isCorrect": false,
+        "rationale": "Capacitance affects conduction, not maximum firing frequency directly."
+      },
+      {
+        "text": "Absolute refractory period",
+        "isCorrect": false,
+        "rationale": "This is the key concept."
+      },
+      {
+        "text": "Node of Ranvier spacing",
+        "isCorrect": false,
+        "rationale": "Relates to propagation."
+      },
+      {
+        "text": "Pump ATP consumption",
+        "isCorrect": false,
+        "rationale": "Not the limiting factor described."
+      },
+      {
+        "text": "Refractory period duration",
+        "isCorrect": true,
+        "rationale": "Correct. Refractory periods limit how frequently action potentials can occur."
+      }
+    ]
+  },
+  {
+    "question": "A 24-year-old student accidentally ingests tetrodotoxin. Several hours later she develops abnormal sensation and progressive weakness. Which cellular effect most directly explains these findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the ionic bases underlying each phase of an action potential. List the common Na+ channel blockers and their effects on action potential.",
+    "options": [
+      {
+        "text": "Reduced sodium channel conduction",
+        "isCorrect": true,
+        "rationale": "Correct. TTX blocks voltage-gated Na+ channels, reducing action potential generation and conduction."
+      },
+      {
+        "text": "Reduced potassium leak permeability",
+        "isCorrect": false,
+        "rationale": "TTX targets sodium channels."
+      },
+      {
+        "text": "Enhanced sodium pump activity",
+        "isCorrect": false,
+        "rationale": "TTX does not act through the Na+-K+ pump."
+      },
+      {
+        "text": "Enhanced chloride channel opening",
+        "isCorrect": false,
+        "rationale": "This is not the mechanism described."
+      },
+      {
+        "text": "Reduced myelin membrane resistance",
+        "isCorrect": false,
+        "rationale": "That would suggest demyelination."
+      }
+    ]
+  },
+  {
+    "question": "A neuron is in the falling phase of an action potential and cannot generate another action potential regardless of stimulus strength. Which sodium-channel state best explains this?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain how Na+ channels can be open (allowing current to flow), closed and inactive, and closed but active and ready for the next stimulus.",
+    "options": [
+      {
+        "text": "Closed but activatable state",
+        "isCorrect": false,
+        "rationale": "This state can respond to stimulation."
+      },
+      {
+        "text": "Inactivated h-gate state",
+        "isCorrect": true,
+        "rationale": "Correct. Closure of the inactivation gate produces the absolute refractory period."
+      },
+      {
+        "text": "Open leak channel state",
+        "isCorrect": false,
+        "rationale": "Leak channels do not explain refractoriness."
+      },
+      {
+        "text": "Mechanically gated state",
+        "isCorrect": false,
+        "rationale": "Not relevant to voltage-gated refractory behavior."
+      },
+      {
+        "text": "Ligand-bound open state",
+        "isCorrect": false,
+        "rationale": "Not the mechanism responsible."
+      }
+    ]
+  },
+  {
+    "question": "A neuron is hyperpolarized after a recent action potential. A second action potential can be elicited only with a stronger stimulus. Which mechanism best explains this period?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the ability of a cell to fire repeated action potentials based on the absolute and relative refractory periods of the action potential.",
+    "options": [
+      {
+        "text": "Excess sodium channel activation",
+        "isCorrect": false,
+        "rationale": "Would increase excitability."
+      },
+      {
+        "text": "Persistently high potassium conductance",
+        "isCorrect": true,
+        "rationale": "Correct. Elevated K+ permeability opposes depolarization during the relative refractory period."
+      },
+      {
+        "text": "Complete sodium channel recovery",
+        "isCorrect": false,
+        "rationale": "Recovery would favor normal excitability."
+      },
+      {
+        "text": "Loss of electrochemical gradients",
+        "isCorrect": false,
+        "rationale": "Not the stated explanation."
+      },
+      {
+        "text": "Opening of glucose transporters",
+        "isCorrect": false,
+        "rationale": "Unrelated mechanism."
+      }
+    ]
+  },
+  {
+    "question": "A patient with marked hyperkalemia presents with muscle weakness. Which mechanism most directly accounts for the reduced excitability?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the underlying cause of accommodation.",
+    "options": [
+      {
+        "text": "Closure of sodium inactivation gates",
+        "isCorrect": false,
+        "rationale": "The channel becomes inactivated; wording is imprecise."
+      },
+      {
+        "text": "Activation gate remains permanently open",
+        "isCorrect": false,
+        "rationale": "Not the mechanism taught."
+      },
+      {
+        "text": "Persistent sodium-channel inactivation",
+        "isCorrect": true,
+        "rationale": "Correct. Sustained depolarization produces accommodation by inactivating Na+ channels."
+      },
+      {
+        "text": "Potassium equilibrium more negative",
+        "isCorrect": false,
+        "rationale": "Hyperkalemia makes EK less negative."
+      },
+      {
+        "text": "Resting potential strongly hyperpolarized",
+        "isCorrect": false,
+        "rationale": "Hyperkalemia causes depolarization."
+      }
+    ]
+  },
+  {
+    "question": "A slowly rising depolarizing current passes threshold voltage, yet no action potential occurs. Which phenomenon best explains this result?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the underlying cause of accommodation.",
+    "options": [
+      {
+        "text": "All-or-none firing",
+        "isCorrect": false,
+        "rationale": "This describes response after successful threshold activation."
+      },
+      {
+        "text": "Saltatory conduction",
+        "isCorrect": false,
+        "rationale": "This concerns propagation."
+      },
+      {
+        "text": "Accommodation of excitability",
+        "isCorrect": false,
+        "rationale": "Conceptually correct but not keyed."
+      },
+      {
+        "text": "Sustained sodium-channel inactivation",
+        "isCorrect": true,
+        "rationale": "Correct. Persistent depolarization can inactivate Na+ channels before sufficient activation occurs."
+      },
+      {
+        "text": "Myelin-enhanced conduction",
+        "isCorrect": false,
+        "rationale": "Propagation is not the issue."
+      }
+    ]
+  },
+  {
+    "question": "A researcher records action potentials starting at the region with the greatest density of sodium channels. Which site is being studied?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the propagation of action potential and the factors affecting its conduction velocity.",
+    "options": [
+      {
+        "text": "Dendritic terminal zone",
+        "isCorrect": false,
+        "rationale": "Not identified as the trigger zone."
+      },
+      {
+        "text": "Presynaptic bouton region",
+        "isCorrect": false,
+        "rationale": "Action potentials arrive here after propagation."
+      },
+      {
+        "text": "Node of Ranvier region",
+        "isCorrect": false,
+        "rationale": "Important for conduction, not initial generation."
+      },
+      {
+        "text": "Initial axon hillock segment",
+        "isCorrect": false,
+        "rationale": "This is the correct concept."
+      },
+      {
+        "text": "Axon hillock trigger zone",
+        "isCorrect": true,
+        "rationale": "Correct. Action potentials are first generated at the axon hillock."
+      }
+    ]
+  },
+  {
+    "question": "A patient develops progressive episodes of optic neuritis, sensory deficits, and diplopia. Which pathophysiologic process best explains these findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the pathophysiology of multiple sclerosis and Guillain-Barré syndrome.",
+    "options": [
+      {
+        "text": "Peripheral axon demyelination",
+        "isCorrect": false,
+        "rationale": "Suggests Guillain-Barré syndrome."
+      },
+      {
+        "text": "Defective transmitter synthesis",
+        "isCorrect": false,
+        "rationale": "Not described for this disorder."
+      },
+      {
+        "text": "Central myelin autoimmunity",
+        "isCorrect": true,
+        "rationale": "Correct. Multiple sclerosis involves antibodies against myelin or oligodendrocytes in the CNS."
+      },
+      {
+        "text": "Loss of sodium pump activity",
+        "isCorrect": false,
+        "rationale": "Not the disease mechanism presented."
+      },
+      {
+        "text": "Neuromuscular receptor dysfunction",
+        "isCorrect": false,
+        "rationale": "Not discussed as the cause."
+      }
+    ]
+  },
+  {
+    "question": "Weeks after a viral illness, a patient develops weakness and abnormal sensation. Testing shows segmental demyelination of peripheral nerves. What is the most likely diagnosis?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the pathophysiology of multiple sclerosis and Guillain-Barré syndrome.",
+    "options": [
+      {
+        "text": "Multiple sclerosis disorder",
+        "isCorrect": false,
+        "rationale": "MS affects the CNS."
+      },
+      {
+        "text": "Guillain-Barré syndrome",
+        "isCorrect": false,
+        "rationale": "This is the correct diagnosis."
+      },
+      {
+        "text": "Central optic demyelination",
+        "isCorrect": false,
+        "rationale": "Not a diagnosis and involves CNS findings."
+      },
+      {
+        "text": "Accommodation syndrome",
+        "isCorrect": false,
+        "rationale": "Not a demyelinating disease."
+      },
+      {
+        "text": "Peripheral demyelinating neuropathy",
+        "isCorrect": true,
+        "rationale": "Correct. The lecture identifies Guillain-Barré as a peripheral demyelinating disorder after infection."
+      }
+    ]
+  },
+  {
+    "question": "A nerve loses its myelin sheath. Which change most directly contributes to slower action-potential conduction?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain saltatory conduction of action potential in myelinated nerves and how demyelination affects action potential conduction.",
+    "options": [
+      {
+        "text": "Higher membrane resistance",
+        "isCorrect": false,
+        "rationale": "Myelin increases resistance."
+      },
+      {
+        "text": "Reduced membrane capacitance",
+        "isCorrect": false,
+        "rationale": "Myelin produces this effect."
+      },
+      {
+        "text": "Failure of local current spread",
+        "isCorrect": true,
+        "rationale": "Correct. Demyelination disrupts efficient current spread and conduction."
+      },
+      {
+        "text": "Greater node insulation",
+        "isCorrect": false,
+        "rationale": "Nodes are not insulated by myelin."
+      },
+      {
+        "text": "Enhanced saltatory conduction",
+        "isCorrect": false,
+        "rationale": "The opposite occurs."
+      }
+    ]
+  },
+  {
+    "question": "A toxin selectively blocks K+ channels during an action potential. Which phase would be most directly impaired?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the ionic bases underlying each phase of an action potential.",
+    "options": [
+      {
+        "text": "Initial depolarization phase",
+        "isCorrect": false,
+        "rationale": "Driven primarily by Na+ influx."
+      },
+      {
+        "text": "Threshold detection phase",
+        "isCorrect": false,
+        "rationale": "Not the major role of K+ channels."
+      },
+      {
+        "text": "Action-potential initiation phase",
+        "isCorrect": false,
+        "rationale": "Driven by Na+ channel activation."
+      },
+      {
+        "text": "Membrane repolarization phase",
+        "isCorrect": true,
+        "rationale": "Correct. K+ efflux is the primary ionic basis of repolarization."
+      },
+      {
+        "text": "Resting leak establishment",
+        "isCorrect": false,
+        "rationale": "Different channel populations are emphasized."
+      }
+    ]
+  },
+  {
+    "question": "A local anesthetic is administered before a minor procedure. What cellular mechanism produces loss of sensation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "List the common Na+ channel blockers and their effects on action potential.",
+    "options": [
+      {
+        "text": "Blocks voltage-gated sodium channels",
+        "isCorrect": false,
+        "rationale": "This is the correct mechanism."
+      },
+      {
+        "text": "Blocks electrogenic pump activity",
+        "isCorrect": false,
+        "rationale": "Local anesthetics were not described this way."
+      },
+      {
+        "text": "Raises membrane potassium permeability",
+        "isCorrect": false,
+        "rationale": "Not the mechanism provided."
+      },
+      {
+        "text": "Inhibits action-potential conduction",
+        "isCorrect": true,
+        "rationale": "Correct. Local anesthetics block Na+ channels, reducing action-potential generation and conduction."
+      },
+      {
+        "text": "Produces central demyelination",
+        "isCorrect": false,
+        "rationale": "Not a drug effect discussed."
+      }
+    ]
+  },
+  {
+    "question": "A membrane potential changes from -80 mV to -85 mV after transmitter exposure. Given ECl = -80 mV and EK = -90 mV, which permeability most likely increased?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the primary determinant of and other factors contributing to resting membrane potential and how major ion membrane permeability changes or concentration changes affect the membrane potential.",
+    "options": [
+      {
+        "text": "Calcium ion permeability",
+        "isCorrect": false,
+        "rationale": "Would move voltage toward positive values."
+      },
+      {
+        "text": "Sodium ion permeability",
+        "isCorrect": false,
+        "rationale": "Would depolarize the membrane."
+      },
+      {
+        "text": "Potassium ion permeability",
+        "isCorrect": true,
+        "rationale": "Correct. Increased K+ permeability drives membrane potential toward EK."
+      },
+      {
+        "text": "Chloride ion permeability",
+        "isCorrect": false,
+        "rationale": "With ECl equal to -80 mV, little change is expected."
+      },
+      {
+        "text": "Glucose transporter permeability",
+        "isCorrect": false,
+        "rationale": "Not an ion conductance effect."
+      }
+    ]
+  },
+  {
+    "question": "A neuron has resting potential near -65 mV. Which combination best explains why the value does not equal EK exactly?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the primary determinant of and other factors contributing to resting membrane potential and how major ion membrane permeability changes or concentration changes affect the membrane potential.",
+    "options": [
+      {
+        "text": "Na+ leak and electrogenic pump",
+        "isCorrect": true,
+        "rationale": "Correct. Slight Na+ influx and Na+-K+ ATPase activity modify the K+-dominated resting potential."
+      },
+      {
+        "text": "Only chloride permeability present",
+        "isCorrect": false,
+        "rationale": "K+ remains the dominant determinant."
+      },
+      {
+        "text": "Absent potassium concentration gradient",
+        "isCorrect": false,
+        "rationale": "The K+ gradient is essential."
+      },
+      {
+        "text": "Voltage-gated channels always open",
+        "isCorrect": false,
+        "rationale": "They are generally closed at rest."
+      },
+      {
+        "text": "Complete ionic equilibrium achieved",
+        "isCorrect": false,
+        "rationale": "The membrane is not at all ions' equilibrium potentials."
+      }
+    ]
+  },
+  {
+    "question": "Which channel gate moves most rapidly after threshold depolarization?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how Na+ channels can be open (allowing current to flow), closed and inactive, and closed but active and ready for the next stimulus.",
+    "options": [
+      {
+        "text": "Sodium activation m-gate",
+        "isCorrect": false,
+        "rationale": "Correct concept."
+      },
+      {
+        "text": "Sodium inactivation h-gate",
+        "isCorrect": false,
+        "rationale": "Moves more slowly."
+      },
+      {
+        "text": "Potassium n-gate mechanism",
+        "isCorrect": false,
+        "rationale": "Moves slowest."
+      },
+      {
+        "text": "Fast sodium activation gate",
+        "isCorrect": true,
+        "rationale": "Correct. The m-gate opens rapidly compared with h- and n-gates."
+      },
+      {
+        "text": "Leak channel gating system",
+        "isCorrect": false,
+        "rationale": "Leak channels are not gated."
+      }
+    ]
+  },
+  {
+    "question": "A membrane potential becomes positive during an action potential. What term describes this portion of the response?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe an action potential and draw a diagram of membrane voltage changes during the action potential. Explain the terms depolarization, overshoot, repolarization and hyperpolarization in relation to action potentials.",
+    "options": [
+      {
+        "text": "Repolarization interval phase",
+        "isCorrect": false,
+        "rationale": "Voltage is returning toward rest."
+      },
+      {
+        "text": "Hyperpolarization interval phase",
+        "isCorrect": false,
+        "rationale": "Membrane becomes more negative than rest."
+      },
+      {
+        "text": "Threshold crossing interval",
+        "isCorrect": false,
+        "rationale": "Occurs before the positive phase."
+      },
+      {
+        "text": "Positive overshoot phase",
+        "isCorrect": false,
+        "rationale": "This is the correct concept."
+      },
+      {
+        "text": "Overshoot region potential",
+        "isCorrect": true,
+        "rationale": "Correct. Overshoot is the period when membrane potential is positive."
+      }
+    ]
+  },
+  {
+    "question": "A demyelinated axon is examined experimentally. Which outcome is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain saltatory conduction of action potential in myelinated nerves and how demyelination affects action potential conduction.",
+    "options": [
+      {
+        "text": "Faster action-potential conduction",
+        "isCorrect": false,
+        "rationale": "Myelin enhances velocity."
+      },
+      {
+        "text": "Unchanged propagation reliability",
+        "isCorrect": false,
+        "rationale": "Reliability can decrease."
+      },
+      {
+        "text": "Greater saltatory efficiency",
+        "isCorrect": false,
+        "rationale": "Saltatory conduction is compromised."
+      },
+      {
+        "text": "Slow unreliable conduction",
+        "isCorrect": true,
+        "rationale": "Correct. Demyelination can slow, destabilize, or block conduction."
+      },
+      {
+        "text": "Higher membrane resistance",
+        "isCorrect": false,
+        "rationale": "Myelin normally increases resistance."
+      }
+    ]
+  },
+  {
+    "question": "An investigator opens only leak channels in a resting neuron. Which channel class is characterized as always open?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain how Na+ channels can be open (allowing current to flow), closed and inactive, and closed but active and ready for the next stimulus.",
+    "options": [
+      {
+        "text": "Voltage-gated ion channels",
+        "isCorrect": false,
+        "rationale": "Require membrane-voltage changes."
+      },
+      {
+        "text": "Ligand-gated ion channels",
+        "isCorrect": false,
+        "rationale": "Require ligand binding."
+      },
+      {
+        "text": "Mechanically gated channels",
+        "isCorrect": false,
+        "rationale": "Require membrane deformation."
+      },
+      {
+        "text": "Thermally gated channels",
+        "isCorrect": false,
+        "rationale": "Require temperature changes."
+      },
+      {
+        "text": "Leak channel proteins",
+        "isCorrect": true,
+        "rationale": "Correct. Leak channels are described as always open."
+      }
+    ]
+  }
+]
