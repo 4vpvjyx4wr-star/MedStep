@@ -1,0 +1,994 @@
+[
+  {
+    "question": "Which structural unit directly permits ionic current to pass between electrically coupled cells?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare electrical and chemical synapses. Explain the presynaptic and postsynaptic mechanisms of chemical synapses.",
+    "options": [
+      {
+        "text": "A connexin-composed connexon",
+        "isCorrect": true,
+        "rationale": "Six connexins form a connexon within a gap junction, permitting direct ionic current transfer between cells."
+      },
+      {
+        "text": "A synaptotagmin-bearing vesicle",
+        "isCorrect": false,
+        "rationale": "Synaptotagmin senses Ca2+ during chemical transmitter release. This would be correct if the question asked which vesicular protein detects presynaptic Ca2+."
+      },
+      {
+        "text": "A transmitter-gated channel",
+        "isCorrect": false,
+        "rationale": "A transmitter-gated channel mediates a postsynaptic response at a chemical synapse. This would be correct if communication required released neurotransmitter."
+      },
+      {
+        "text": "A G-protein-coupled receptor",
+        "isCorrect": false,
+        "rationale": "A G-protein-coupled receptor produces a metabotropic chemical response. This would be correct if the question asked about slower postsynaptic signaling."
+      },
+      {
+        "text": "A voltage-gated calcium channel",
+        "isCorrect": false,
+        "rationale": "A presynaptic voltage-gated calcium channel initiates chemical transmitter release. This would be correct if the question asked what opens after terminal depolarization."
+      }
+    ]
+  },
+  {
+    "question": "Which enzyme catalyzes the rate-limiting step in catecholamine synthesis?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define the synthetic pathways, inactivation mechanisms and mechanisms of receptor transduction for the following neurotransmitters: catecholamines (DA, NE, E); acetylcholine; GABA; glutamate; serotonin.",
+    "options": [
+      {
+        "text": "Aromatic-L-amino acid decarboxylase",
+        "isCorrect": false,
+        "rationale": "This enzyme converts L-DOPA to dopamine but is not rate limiting. It would be correct if the question asked for the decarboxylation step."
+      },
+      {
+        "text": "Tyrosine hydroxylase",
+        "isCorrect": true,
+        "rationale": "Tyrosine hydroxylase performs the rate-limiting conversion of tyrosine toward L-DOPA in catecholamine synthesis."
+      },
+      {
+        "text": "Glutamic acid decarboxylase",
+        "isCorrect": false,
+        "rationale": "This enzyme converts glutamate to GABA. It would be correct if the pathway involved synthesis of the major inhibitory neurotransmitter."
+      },
+      {
+        "text": "Tryptophan hydroxylase",
+        "isCorrect": false,
+        "rationale": "Tryptophan hydroxylase is rate limiting for serotonin synthesis. It would be correct if the precursor were tryptophan."
+      },
+      {
+        "text": "Phenylethanolamine N-methyltransferase",
+        "isCorrect": false,
+        "rationale": "This enzyme converts norepinephrine toward epinephrine and is present in the adrenal medulla. It would be correct if the final catecholamine conversion were tested."
+      }
+    ]
+  },
+  {
+    "question": "Which receptor is a ligand-gated chloride channel that generates an inhibitory postsynaptic potential?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the postsynaptic receptors as ligand-gated ion channels or G-protein coupled receptors. Explain EPSP and IPSP and link their generation with ion channel permeability changes.",
+    "options": [
+      {
+        "text": "GABAB receptor",
+        "isCorrect": false,
+        "rationale": "GABAB is metabotropic and promotes K+ channel opening or presynaptic Ca2+ channel suppression. It would be correct if a G-protein-coupled inhibitory receptor were requested."
+      },
+      {
+        "text": "NMDA receptor",
+        "isCorrect": false,
+        "rationale": "NMDA is an excitatory glutamate-gated cation channel. It would be correct if slow excitation with Ca2+ permeability were described."
+      },
+      {
+        "text": "GABAA receptor",
+        "isCorrect": true,
+        "rationale": "GABAA is a ligand-gated Cl- channel whose activation hyperpolarizes the postsynaptic membrane and generates an IPSP."
+      },
+      {
+        "text": "AMPA receptor",
+        "isCorrect": false,
+        "rationale": "AMPA is an excitatory glutamate-gated cation channel. It would be correct if rapid Na+ entry and an EPSP were described."
+      },
+      {
+        "text": "Metabotropic glutamate receptor",
+        "isCorrect": false,
+        "rationale": "This receptor signals through a G protein rather than serving as a chloride pore. It would be correct if indirect glutamate signaling were requested."
+      }
+    ]
+  },
+  {
+    "question": "Which cell type performs the emphasized uptake step that clears glutamate from a synapse?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define the synthetic pathways, inactivation mechanisms and mechanisms of receptor transduction for the following neurotransmitters: catecholamines (DA, NE, E); acetylcholine; GABA; glutamate; serotonin.",
+    "options": [
+      {
+        "text": "Postsynaptic skeletal myocyte",
+        "isCorrect": false,
+        "rationale": "A skeletal myocyte is a peripheral acetylcholine target rather than the emphasized glutamate-clearing cell. It would fit if neuromuscular acetylcholine signaling were tested."
+      },
+      {
+        "text": "Presynaptic cholinergic neuron",
+        "isCorrect": false,
+        "rationale": "Cholinergic terminals release acetylcholine, which is cleared by acetylcholinesterase. It would fit if acetylcholine synthesis or release were tested."
+      },
+      {
+        "text": "Postsynaptic dopaminergic neuron",
+        "isCorrect": false,
+        "rationale": "Dopamine is primarily removed by presynaptic reuptake and enzymatic degradation. It would fit if catecholamine signaling were under study."
+      },
+      {
+        "text": "Astrocytic glial cell",
+        "isCorrect": true,
+        "rationale": "Astrocytes use specialized excitatory amino acid transporters to remove glutamate and support its recycling through glutamine."
+      },
+      {
+        "text": "Presynaptic serotonergic neuron",
+        "isCorrect": false,
+        "rationale": "Serotonergic terminals clear serotonin through transporter-mediated reuptake. It would fit if the transmitter were 5-HT rather than glutamate."
+      }
+    ]
+  },
+  {
+    "question": "A presynaptic terminal is depolarized normally, but extracellular Ca2+ is removed. Which event is most directly reduced?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe chemical neurotransmission, listing in correct temporal sequence the events beginning with the depolarization at pre-synaptic membrane and ending with the post-synaptic membrane responses. Explain the mechanism of action of botulinum toxin and the pathophysiology of Lambert-Eaton myasthenic syndrome.",
+    "options": [
+      {
+        "text": "Postsynaptic receptor synthesis",
+        "isCorrect": false,
+        "rationale": "Receptor synthesis is not the immediate Ca2+-dependent presynaptic event. It would fit if long-term receptor production rather than acute transmission were altered."
+      },
+      {
+        "text": "Axonal action-potential propagation",
+        "isCorrect": false,
+        "rationale": "The action potential has already reached and depolarized the terminal. This would fit if voltage-dependent axonal conduction had failed."
+      },
+      {
+        "text": "Vesicular transmitter packaging",
+        "isCorrect": false,
+        "rationale": "Packaging uses ATP-dependent active transport and precedes terminal depolarization. It would fit if vesicular loading were selectively inhibited."
+      },
+      {
+        "text": "Postsynaptic ligand binding",
+        "isCorrect": false,
+        "rationale": "Ligand binding falls secondarily because less transmitter reaches the cleft, but it is not the directly Ca2+-triggered event. It would fit if receptors could not recognize released transmitter."
+      },
+      {
+        "text": "Presynaptic vesicle fusion",
+        "isCorrect": true,
+        "rationale": "Ca2+ binding to synaptotagmin triggers vesicle fusion, so removing extracellular Ca2+ directly reduces exocytotic transmitter release."
+      }
+    ]
+  },
+  {
+    "question": "Two coupled cells transmit changes rapidly in either direction without signal amplification. Which connection best accounts for these findings?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare electrical and chemical synapses. Explain the presynaptic and postsynaptic mechanisms of chemical synapses.",
+    "options": [
+      {
+        "text": "Gap-junction ionic pathway",
+        "isCorrect": true,
+        "rationale": "Gap junctions directly transfer ionic current, producing very fast, bidirectional transmission without an amplification mechanism."
+      },
+      {
+        "text": "Ionotropic glutamate pathway",
+        "isCorrect": false,
+        "rationale": "Ionotropic glutamate signaling is chemical and depends on transmitter release. It would fit if rapid excitation occurred across a chemical synaptic cleft."
+      },
+      {
+        "text": "Metabotropic glutamate pathway",
+        "isCorrect": false,
+        "rationale": "Metabotropic signaling is slower and can engage second messengers. It would fit if a prolonged G-protein-mediated response were observed."
+      },
+      {
+        "text": "GABAA chloride pathway",
+        "isCorrect": false,
+        "rationale": "GABAA signaling is inhibitory chemical transmission and is not intrinsically bidirectional. It would fit if released GABA opened postsynaptic chloride channels."
+      },
+      {
+        "text": "Nicotinic cation pathway",
+        "isCorrect": false,
+        "rationale": "Nicotinic signaling uses ligand-gated cation channels after acetylcholine release. It would fit if a rapid cholinergic chemical response were described."
+      }
+    ]
+  },
+  {
+    "question": "A transmitter produces a delayed but prolonged response through receptor activation, G-protein dissociation, and effector regulation. Which receptor class mediates this response?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the postsynaptic receptors as ligand-gated ion channels or G-protein coupled receptors. Explain EPSP and IPSP and link their generation with ion channel permeability changes.",
+    "options": [
+      {
+        "text": "Voltage-gated calcium channel",
+        "isCorrect": false,
+        "rationale": "This channel opens with presynaptic depolarization rather than transmitter binding. It would fit if the event were Ca2+ entry preceding vesicle fusion."
+      },
+      {
+        "text": "Metabotropic neurotransmitter receptor",
+        "isCorrect": true,
+        "rationale": "Metabotropic receptors activate heterotrimeric G proteins and effectors, producing slower, longer-lasting, and more diverse responses."
+      },
+      {
+        "text": "Ionotropic neurotransmitter receptor",
+        "isCorrect": false,
+        "rationale": "Ionotropic receptors directly open their pores and generally act rapidly. They would fit if transmitter binding immediately altered ion permeability."
+      },
+      {
+        "text": "Presynaptic vesicular transporter",
+        "isCorrect": false,
+        "rationale": "A vesicular transporter concentrates transmitter using active transport but does not generate a postsynaptic G-protein response. It would fit if vesicle loading were tested."
+      },
+      {
+        "text": "Electrical gap-junction channel",
+        "isCorrect": false,
+        "rationale": "A gap junction transfers current directly without a receptor or G protein. It would fit if cells showed fast bidirectional electrical coupling."
+      }
+    ]
+  },
+  {
+    "question": "A neuron becomes more negative after transmitter binding because a cation leaves the cell. Which permeability change generated this response?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the postsynaptic receptors as ligand-gated ion channels or G-protein coupled receptors. Explain EPSP and IPSP and link their generation with ion channel permeability changes.",
+    "options": [
+      {
+        "text": "Increased sodium permeability",
+        "isCorrect": false,
+        "rationale": "Increased Na+ permeability promotes depolarization and an EPSP. It would fit if positive charge entered the postsynaptic cell."
+      },
+      {
+        "text": "Decreased chloride permeability",
+        "isCorrect": false,
+        "rationale": "Reduced Cl- permeability removes an inhibitory influence rather than directly producing the described cation efflux. It would fit if an EPSP arose through chloride-channel inhibition."
+      },
+      {
+        "text": "Increased potassium permeability",
+        "isCorrect": true,
+        "rationale": "Opening K+ channels permits K+ efflux, hyperpolarizing the membrane and producing an IPSP."
+      },
+      {
+        "text": "Increased calcium permeability",
+        "isCorrect": false,
+        "rationale": "Increased Ca2+ permeability supports excitation rather than cation-mediated hyperpolarization. It would fit if positive charge entered through an excitatory channel."
+      },
+      {
+        "text": "Decreased potassium permeability",
+        "isCorrect": false,
+        "rationale": "Reduced K+ permeability can favor depolarization by limiting positive-charge efflux. It would fit if an EPSP were generated by K+ channel inhibition."
+      }
+    ]
+  },
+  {
+    "question": "A toxin leaves terminal Ca2+ entry intact but prevents acetylcholine exocytosis. Which process is selectively blocked?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe chemical neurotransmission, listing in correct temporal sequence the events beginning with the depolarization at pre-synaptic membrane and ending with the post-synaptic membrane responses. Explain the mechanism of action of botulinum toxin and the pathophysiology of Lambert-Eaton myasthenic syndrome.",
+    "options": [
+      {
+        "text": "Vesicular acetylcholine synthesis",
+        "isCorrect": false,
+        "rationale": "Acetylcholine synthesis is not the fusion step targeted by botulinum toxin. It would fit if production of acetylcholine were impaired."
+      },
+      {
+        "text": "Terminal calcium-channel opening",
+        "isCorrect": false,
+        "rationale": "The question specifies preserved Ca2+ entry, excluding impaired channel opening. This would fit Lambert-Eaton syndrome rather than botulinum toxin action."
+      },
+      {
+        "text": "Postsynaptic receptor binding",
+        "isCorrect": false,
+        "rationale": "Postsynaptic binding falls only because transmitter is not released. It would fit if acetylcholine reached the cleft but could not activate its receptor."
+      },
+      {
+        "text": "Presynaptic vesicle-membrane fusion",
+        "isCorrect": true,
+        "rationale": "Botulinum toxin blocks fusion of transmitter vesicles with the presynaptic membrane without preventing Ca2+ entry."
+      },
+      {
+        "text": "Synaptic acetylcholine degradation",
+        "isCorrect": false,
+        "rationale": "Acetylcholinesterase degrades released acetylcholine and is not the blocked process. It would fit if acetylcholine accumulated after release."
+      }
+    ]
+  },
+  {
+    "question": "Sequential activation of two glutamate receptors first depolarizes a neuron and then permits substantial Ca2+ entry. Which receptor mediates the later response?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define the synthetic pathways, inactivation mechanisms and mechanisms of receptor transduction for the following neurotransmitters: catecholamines (DA, NE, E); acetylcholine; GABA; glutamate; serotonin.",
+    "options": [
+      {
+        "text": "Kainate receptor channel",
+        "isCorrect": false,
+        "rationale": "Kainate receptors mediate fast Na+ and K+ conductance but are not the emphasized slow Ca2+-permeable receptor. They would fit a fast glutamatergic EPSP."
+      },
+      {
+        "text": "GABAA receptor channel",
+        "isCorrect": false,
+        "rationale": "GABAA receptors conduct Cl- and generate inhibition. They would fit if the second response were hyperpolarization rather than Ca2+ entry."
+      },
+      {
+        "text": "AMPA receptor channel",
+        "isCorrect": false,
+        "rationale": "AMPA receptors normally provide the initial fast depolarization that helps remove the voltage-dependent block. They would fit the earlier response."
+      },
+      {
+        "text": "GABAB receptor pathway",
+        "isCorrect": false,
+        "rationale": "GABAB is metabotropic and promotes K+ conductance or suppresses presynaptic Ca2+ channels. It would fit a slower inhibitory response."
+      },
+      {
+        "text": "NMDA receptor channel",
+        "isCorrect": true,
+        "rationale": "Depolarization removes Mg2+ from NMDA channels, allowing their ligand-dependent Na+, K+, and Ca2+ conductance."
+      }
+    ]
+  },
+  {
+    "question": "A synthesized transmitter is cleared mainly by a transporter that is blocked by fluoxetine. Which precursor and rate-limiting enzyme pair supplies this transmitter?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define the synthetic pathways, inactivation mechanisms and mechanisms of receptor transduction for the following neurotransmitters: catecholamines (DA, NE, E); acetylcholine; GABA; glutamate; serotonin.",
+    "options": [
+      {
+        "text": "Tryptophan and tryptophan hydroxylase",
+        "isCorrect": true,
+        "rationale": "Fluoxetine blocks serotonin reuptake through SERT; serotonin is synthesized from tryptophan through the rate-limiting action of tryptophan hydroxylase."
+      },
+      {
+        "text": "Tyrosine and tyrosine hydroxylase",
+        "isCorrect": false,
+        "rationale": "This pair supplies catecholamines rather than serotonin. It would be correct if dopamine, norepinephrine, or epinephrine were the transmitter."
+      },
+      {
+        "text": "Glutamate and glutamate decarboxylase",
+        "isCorrect": false,
+        "rationale": "This pair supplies GABA rather than serotonin. It would be correct if synthesis of the major inhibitory transmitter were tested."
+      },
+      {
+        "text": "Glutamine and glutaminase enzyme",
+        "isCorrect": false,
+        "rationale": "This pair supplies glutamate rather than serotonin. It would be correct if the transmitter were cleared primarily by glial uptake."
+      },
+      {
+        "text": "Choline and choline acetyltransferase",
+        "isCorrect": false,
+        "rationale": "These substrates participate in acetylcholine synthesis, whose emphasized rate-limiting step is choline transport. It would fit a cholinergic pathway."
+      }
+    ]
+  },
+  {
+    "question": "Presynaptic and postsynaptic neurons are repeatedly coactivated, producing a persistent increase in synaptic function. Which named principle best explains this change?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare electrical and chemical synapses. Explain the presynaptic and postsynaptic mechanisms of chemical synapses.",
+    "options": [
+      {
+        "text": "Synaptic transmitter clearance",
+        "isCorrect": false,
+        "rationale": "Clearance terminates individual transmission events rather than strengthening a coactivated connection. It would fit if the question concerned readiness for another signaling cycle."
+      },
+      {
+        "text": "Postsynaptic receptor desensitization",
+        "isCorrect": false,
+        "rationale": "Desensitization reduces responsiveness rather than producing persistent strengthening. It would fit if repeated exposure weakened the postsynaptic response."
+      },
+      {
+        "text": "Hebbian synaptic potentiation",
+        "isCorrect": true,
+        "rationale": "Hebb's rule links simultaneous pre- and postsynaptic activity with strengthening of that synapse, forming a basis for memory storage."
+      },
+      {
+        "text": "Electrical current equilibration",
+        "isCorrect": false,
+        "rationale": "Current equilibration describes passive electrical coupling rather than activity-dependent strengthening. It would fit if ions flowed directly through gap junctions."
+      },
+      {
+        "text": "Vesicular transmitter depletion",
+        "isCorrect": false,
+        "rationale": "Depletion would reduce transmission with repeated activity. It would fit if the response progressively weakened because releasable transmitter declined."
+      }
+    ]
+  },
+  {
+    "question": "Norepinephrine activates a β-adrenergic pathway that increases cAMP and PKA activity. Which downstream process supports stabilization of glutamatergic synaptic strengthening?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define the relationships between neurotransmitter dysfunction and some neurological disorders. Relate the relationships to the pharmacologic treatment of such disorders.",
+    "options": [
+      {
+        "text": "Activation of protein phosphatase I",
+        "isCorrect": false,
+        "rationale": "The pathway inhibits rather than activates protein phosphatase I. This would fit if phosphorylation were being reversed instead of stabilized."
+      },
+      {
+        "text": "Blockade of glutamate synthesis",
+        "isCorrect": false,
+        "rationale": "Blocking glutamate synthesis would not potentiate glutamatergic transmission. It would fit if excitatory signaling needed to be reduced."
+      },
+      {
+        "text": "Suppression of PKA catalytic activity",
+        "isCorrect": false,
+        "rationale": "The β-adrenergic cAMP pathway activates PKA. This would fit if signaling decreased cAMP rather than increased it."
+      },
+      {
+        "text": "Inhibition of protein phosphatase I",
+        "isCorrect": true,
+        "rationale": "β-adrenergic activation increases cAMP and PKA activity, which inhibits protein phosphatase I and helps stabilize long-term potentiation."
+      },
+      {
+        "text": "Removal of postsynaptic glutamate receptors",
+        "isCorrect": false,
+        "rationale": "Removing glutamate receptors would weaken excitation. It would fit if the pathway promoted synaptic depression rather than potentiation."
+      }
+    ]
+  },
+  {
+    "question": "A receptor activated by an inhibitory transmitter opens a postsynaptic K+ channel and can suppress a presynaptic Ca2+ channel. Which receptor matches both effects?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the postsynaptic receptors as ligand-gated ion channels or G-protein coupled receptors. Explain EPSP and IPSP and link their generation with ion channel permeability changes.",
+    "options": [
+      {
+        "text": "GABAA ionotropic receptor",
+        "isCorrect": false,
+        "rationale": "GABAA directly opens Cl- channels rather than producing both metabotropic effects. It would fit if ligand binding generated a rapid chloride-mediated IPSP."
+      },
+      {
+        "text": "GABAC ionotropic receptor",
+        "isCorrect": false,
+        "rationale": "GABAC is a rho-subunit variant of the Cl- channel receptor. It would fit if inhibition occurred through direct chloride conductance."
+      },
+      {
+        "text": "AMPA ionotropic receptor",
+        "isCorrect": false,
+        "rationale": "AMPA opens excitatory cation channels and produces fast depolarization. It would fit if rapid glutamatergic excitation were described."
+      },
+      {
+        "text": "NMDA ionotropic receptor",
+        "isCorrect": false,
+        "rationale": "NMDA conducts Na+, K+, and Ca2+ after ligand binding and depolarization. It would fit if slow glutamatergic excitation followed Mg2+ removal."
+      },
+      {
+        "text": "GABAB metabotropic receptor",
+        "isCorrect": true,
+        "rationale": "GABAB is a G-protein-coupled receptor that opens postsynaptic K+ channels or suppresses presynaptic Ca2+ channels."
+      }
+    ]
+  },
+  {
+    "question": "A drug blocks both catechol-O-methyltransferase and monoamine oxidase. Which additional physiological process normally contributes to removal of the same transmitters?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define the synthetic pathways, inactivation mechanisms and mechanisms of receptor transduction for the following neurotransmitters: catecholamines (DA, NE, E); acetylcholine; GABA; glutamate; serotonin.",
+    "options": [
+      {
+        "text": "Presynaptic terminal reuptake",
+        "isCorrect": true,
+        "rationale": "Catecholamines are removed through presynaptic reuptake as well as degradation by COMT and MAO."
+      },
+      {
+        "text": "Astrocytic glutamate uptake",
+        "isCorrect": false,
+        "rationale": "Astrocytic uptake is the emphasized clearance route for glutamate. It would fit if the transmitter were the major excitatory amino acid."
+      },
+      {
+        "text": "Synaptic cholinesterase degradation",
+        "isCorrect": false,
+        "rationale": "Acetylcholinesterase clears acetylcholine rather than catecholamines. It would fit if a cholinergic transmitter were being removed."
+      },
+      {
+        "text": "Membrane nitric-oxide diffusion",
+        "isCorrect": false,
+        "rationale": "Nitric oxide diffuses across membranes and has a short half-life. It would fit if a gaseous retrograde transmitter were under study."
+      },
+      {
+        "text": "Postsynaptic chloride-channel transport",
+        "isCorrect": false,
+        "rationale": "Chloride-channel conductance generates inhibitory potentials but does not clear catecholamines. It would fit if GABAA receptor transduction were tested."
+      }
+    ]
+  },
+  {
+    "question": "A 62-year-old man has progressive difficulty initiating movement, a resting hand tremor, and muscular rigidity. Which intervention most directly addresses the transmitter deficit underlying these findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the relationships between neurotransmitter dysfunction and some neurological disorders. Relate the relationships to the pharmacologic treatment of such disorders.",
+    "options": [
+      {
+        "text": "Increase central dopamine levels",
+        "isCorrect": true,
+        "rationale": "Degeneration of substantia nigra dopaminergic neurons produces the described motor syndrome; increasing CNS dopamine levels directly addresses that deficit."
+      },
+      {
+        "text": "Increase central serotonin levels",
+        "isCorrect": false,
+        "rationale": "Serotonin treatment is linked to depressive disorders rather than substantia nigra motor dysfunction. It would fit prominent depression associated with decreased serotonin."
+      },
+      {
+        "text": "Increase central glutamate levels",
+        "isCorrect": false,
+        "rationale": "High glutamate can cause excitotoxicity and does not replace deficient nigrostriatal dopamine. It would fit no therapeutic goal described for this motor syndrome."
+      },
+      {
+        "text": "Decrease central GABA levels",
+        "isCorrect": false,
+        "rationale": "Lowering GABA increases CNS excitability and may promote seizures. It would fit only if excessive inhibitory transmission were identified as the primary defect."
+      },
+      {
+        "text": "Decrease central acetylcholine levels",
+        "isCorrect": false,
+        "rationale": "The stated treatment strategy is to increase dopamine or activate dopamine receptors. This choice would require a primary cholinergic excess not identified in the source."
+      }
+    ]
+  },
+  {
+    "question": "A 55-year-old woman has proximal limb weakness, dry mouth, constipation, and blurred vision. Testing identifies antibodies against a presynaptic membrane protein. Which synaptic event is reduced first?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe chemical neurotransmission, listing in correct temporal sequence the events beginning with the depolarization at pre-synaptic membrane and ending with the post-synaptic membrane responses. Explain the mechanism of action of botulinum toxin and the pathophysiology of Lambert-Eaton myasthenic syndrome.",
+    "options": [
+      {
+        "text": "Synaptic acetylcholine degradation",
+        "isCorrect": false,
+        "rationale": "Acetylcholinesterase degradation occurs after release and is not the antibody target. It would fit if synaptic acetylcholine persisted excessively."
+      },
+      {
+        "text": "Terminal calcium entry",
+        "isCorrect": true,
+        "rationale": "Lambert-Eaton syndrome targets presynaptic voltage-gated Ca2+ channels, reducing Ca2+ entry and subsequently reducing acetylcholine release."
+      },
+      {
+        "text": "Postsynaptic sodium entry",
+        "isCorrect": false,
+        "rationale": "Postsynaptic cation entry is reduced secondarily because less acetylcholine is released. It would be the first defect if the postsynaptic receptor channel were directly impaired."
+      },
+      {
+        "text": "Vesicular acetylcholine loading",
+        "isCorrect": false,
+        "rationale": "The antibodies do not target ATP-dependent vesicular loading. This would fit if transmitter packaging were selectively defective."
+      },
+      {
+        "text": "Axonal membrane depolarization",
+        "isCorrect": false,
+        "rationale": "The primary defect is at terminal Ca2+ channels after depolarization arrives. This would fit if action-potential propagation failed before reaching the terminal."
+      }
+    ]
+  },
+  {
+    "question": "A 34-year-old woman receives a facial injection that weakens selected skeletal muscles. Presynaptic depolarization and Ca2+ influx remain normal. Which cellular mechanism produces the therapeutic effect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe chemical neurotransmission, listing in correct temporal sequence the events beginning with the depolarization at pre-synaptic membrane and ending with the post-synaptic membrane responses. Explain the mechanism of action of botulinum toxin and the pathophysiology of Lambert-Eaton myasthenic syndrome.",
+    "options": [
+      {
+        "text": "Inhibition of calcium-channel opening",
+        "isCorrect": false,
+        "rationale": "Ca2+ influx is preserved, so calcium-channel blockade is excluded. This would fit the presynaptic defect in Lambert-Eaton syndrome."
+      },
+      {
+        "text": "Acceleration of acetylcholine degradation",
+        "isCorrect": false,
+        "rationale": "Botulinum toxin does not increase acetylcholinesterase activity. This would fit a treatment that shortened acetylcholine action after normal release."
+      },
+      {
+        "text": "Blockade of vesicle fusion",
+        "isCorrect": true,
+        "rationale": "Botulinum toxin prevents acetylcholine-containing vesicles from fusing with the presynaptic membrane, reducing neuromuscular transmission despite preserved Ca2+ entry."
+      },
+      {
+        "text": "Blockade of nicotinic receptors",
+        "isCorrect": false,
+        "rationale": "The mechanism is presynaptic rather than direct postsynaptic receptor blockade. This would fit a drug preventing released acetylcholine from opening Nm channels."
+      },
+      {
+        "text": "Inhibition of choline transport",
+        "isCorrect": false,
+        "rationale": "Choline transport limits acetylcholine synthesis but is not the toxin's target. This would fit a selective reduction in acetylcholine production."
+      }
+    ]
+  },
+  {
+    "question": "A 29-year-old woman at 32 weeks of gestation develops hypertension and edema. A medication is given to prevent seizures by maintaining a voltage-dependent channel block. Which receptor is most directly affected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the relationships between neurotransmitter dysfunction and some neurological disorders. Relate the relationships to the pharmacologic treatment of such disorders.",
+    "options": [
+      {
+        "text": "GABAA chloride receptor",
+        "isCorrect": false,
+        "rationale": "GABAA is a ligand-gated Cl- channel without the described Mg2+-dependent pore block. It would fit a drug acting through chloride-mediated inhibition."
+      },
+      {
+        "text": "AMPA glutamate receptor",
+        "isCorrect": false,
+        "rationale": "AMPA generates the fast depolarization that can help relieve the neighboring voltage-dependent block. It would fit if rapid excitatory cation conductance were targeted."
+      },
+      {
+        "text": "GABAB potassium receptor",
+        "isCorrect": false,
+        "rationale": "GABAB is metabotropic and promotes K+ channel opening. It would fit if seizure prevention resulted from G-protein-mediated inhibition."
+      },
+      {
+        "text": "NMDA glutamate receptor",
+        "isCorrect": true,
+        "rationale": "Mg2+ physically blocks NMDA channels at resting voltage; maintaining this block reduces glutamate-driven excitation and helps prevent eclamptic seizures."
+      },
+      {
+        "text": "Nicotinic acetylcholine receptor",
+        "isCorrect": false,
+        "rationale": "Nicotinic receptors are ligand-gated cation channels but lack the emphasized voltage-dependent Mg2+ block. They would fit a rapid cholinergic response."
+      }
+    ]
+  },
+  {
+    "question": "A 6-month-old infant with a nutritional cofactor deficiency develops seizures. Reduced activity of an enzyme converting an excitatory amino acid into an inhibitory transmitter is suspected. Which enzyme is impaired?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the synthetic pathways, inactivation mechanisms and mechanisms of receptor transduction for the following neurotransmitters: catecholamines (DA, NE, E); acetylcholine; GABA; glutamate; serotonin.",
+    "options": [
+      {
+        "text": "Tryptophan hydroxylase enzyme",
+        "isCorrect": false,
+        "rationale": "Tryptophan hydroxylase is rate limiting for serotonin, not GABA. It would fit if decreased serotonin synthesis were suspected."
+      },
+      {
+        "text": "Tyrosine hydroxylase enzyme",
+        "isCorrect": false,
+        "rationale": "Tyrosine hydroxylase is rate limiting for catecholamine synthesis. It would fit if dopamine and norepinephrine production were reduced."
+      },
+      {
+        "text": "Glutaminase synthesis enzyme",
+        "isCorrect": false,
+        "rationale": "Glutaminase converts glutamine to excitatory glutamate rather than converting glutamate to GABA. It would fit impaired glutamate synthesis."
+      },
+      {
+        "text": "Aromatic-L-amino acid decarboxylase",
+        "isCorrect": false,
+        "rationale": "This enzyme participates in dopamine and serotonin pathways rather than the glutamate-to-GABA step. It would fit impaired decarboxylation of L-DOPA or 5-hydroxytryptophan."
+      },
+      {
+        "text": "Glutamic acid decarboxylase",
+        "isCorrect": true,
+        "rationale": "Glutamic acid decarboxylase uses pyridoxal phosphate derived from vitamin B6 to convert glutamate into GABA; reduced GABA permits excessive CNS activity."
+      }
+    ]
+  },
+  {
+    "question": "A 68-year-old patient has progressive memory impairment and reduced daytime alertness associated with deficient forebrain signaling. Which treatment mechanism best addresses both findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the relationships between neurotransmitter dysfunction and some neurological disorders. Relate the relationships to the pharmacologic treatment of such disorders.",
+    "options": [
+      {
+        "text": "Inhibit acetylcholine degradation",
+        "isCorrect": true,
+        "rationale": "Cholinesterase inhibition prolongs acetylcholine action and can improve memory and daytime alertness in patients with Alzheimer disease."
+      },
+      {
+        "text": "Inhibit serotonin reuptake selectively",
+        "isCorrect": false,
+        "rationale": "Serotonin reuptake inhibition is used for depression, anxiety, and obsessive-compulsive disorders. It would fit decreased serotonergic mood signaling."
+      },
+      {
+        "text": "Inhibit catecholamine synthesis",
+        "isCorrect": false,
+        "rationale": "Reducing catecholamines would not restore deficient forebrain cholinergic activity. It would fit a condition driven by catecholamine excess."
+      },
+      {
+        "text": "Enhance glutamate accumulation",
+        "isCorrect": false,
+        "rationale": "High glutamate can cause excitotoxicity rather than safely restore cognition. It would fit no stated treatment for cholinergic cognitive deficiency."
+      },
+      {
+        "text": "Block GABAA chloride channels",
+        "isCorrect": false,
+        "rationale": "Blocking GABAA receptors increases CNS excitability and can provoke convulsions. It would fit an experimental attempt to remove inhibition, not the first-line mechanism described."
+      }
+    ]
+  },
+  {
+    "question": "A 41-year-old patient has persistent depressed mood associated with reduced activity of neurons arising from the raphe nuclei. Which cellular action describes an indicated treatment?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the relationships between neurotransmitter dysfunction and some neurological disorders. Relate the relationships to the pharmacologic treatment of such disorders.",
+    "options": [
+      {
+        "text": "Block norepinephrine vesicle fusion",
+        "isCorrect": false,
+        "rationale": "Blocking norepinephrine release would not raise serotonergic signaling. It would fit a condition requiring reduced noradrenergic transmission."
+      },
+      {
+        "text": "Block serotonin terminal reuptake",
+        "isCorrect": true,
+        "rationale": "Raphe neurons are serotonergic, and blocking SERT with fluoxetine increases serotonin availability in the synaptic cleft."
+      },
+      {
+        "text": "Block glutamate glial uptake",
+        "isCorrect": false,
+        "rationale": "Blocking glial glutamate uptake would increase extracellular glutamate and risk excitotoxicity. It would fit an experimental manipulation of glutamatergic clearance."
+      },
+      {
+        "text": "Block acetylcholine synaptic degradation",
+        "isCorrect": false,
+        "rationale": "Acetylcholinesterase inhibition strengthens cholinergic signaling and is linked to Alzheimer treatment. It would fit a forebrain cholinergic deficit."
+      },
+      {
+        "text": "Block GABA potassium conductance",
+        "isCorrect": false,
+        "rationale": "Reducing GABAB-mediated inhibition does not target the deficient raphe transmitter. It would fit a manipulation intended to increase excitability by removing GABA effects."
+      }
+    ]
+  },
+  {
+    "question": "A 47-year-old patient receives a drug that selectively activates the metabotropic receptor for the brain's major inhibitory transmitter. Which immediate membrane response is expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the postsynaptic receptors as ligand-gated ion channels or G-protein coupled receptors. Explain EPSP and IPSP and link their generation with ion channel permeability changes.",
+    "options": [
+      {
+        "text": "Increased chloride influx",
+        "isCorrect": false,
+        "rationale": "Cl- influx is associated with ionotropic GABAA or GABAC receptors. It would fit activation of a ligand-gated GABA receptor."
+      },
+      {
+        "text": "Increased sodium influx",
+        "isCorrect": false,
+        "rationale": "Na+ influx produces excitation through receptors such as AMPA. It would fit activation of a fast excitatory cation channel."
+      },
+      {
+        "text": "Increased potassium efflux",
+        "isCorrect": true,
+        "rationale": "GABAB is the metabotropic GABA receptor; its activation opens K+ channels, causing K+ efflux and a postsynaptic IPSP."
+      },
+      {
+        "text": "Increased calcium influx",
+        "isCorrect": false,
+        "rationale": "GABAB can suppress presynaptic Ca2+ channels rather than increase Ca2+ influx. Increased Ca2+ entry would fit activated NMDA channels."
+      },
+      {
+        "text": "Decreased chloride influx",
+        "isCorrect": false,
+        "rationale": "Reduced Cl- conductance would weaken inhibition rather than mediate the expected GABAB response. It would fit inhibition of a GABAA channel."
+      }
+    ]
+  },
+  {
+    "question": "A 59-year-old patient experiences cerebral ischemia followed by reperfusion. Excess extracellular excitatory transmitter causes intracellular Ca2+ accumulation, cytokine production, and free-radical injury. Which process should be limited first?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the relationships between neurotransmitter dysfunction and some neurological disorders. Relate the relationships to the pharmacologic treatment of such disorders.",
+    "options": [
+      {
+        "text": "GABA-mediated chloride entry",
+        "isCorrect": false,
+        "rationale": "GABA-mediated Cl- entry is inhibitory and balances excitation. It would fit if excessive inhibitory signaling were causing neuronal suppression."
+      },
+      {
+        "text": "Acetylcholine enzymatic degradation",
+        "isCorrect": false,
+        "rationale": "Acetylcholine degradation does not initiate the stated excitotoxic cascade. It would fit if prolonged cholinergic action were the problem."
+      },
+      {
+        "text": "Serotonin terminal reuptake",
+        "isCorrect": false,
+        "rationale": "Serotonin reuptake regulates serotonergic signaling rather than glutamate-mediated injury. It would fit if synaptic serotonin persistence were targeted."
+      },
+      {
+        "text": "Glutamate-driven calcium entry",
+        "isCorrect": true,
+        "rationale": "Excess glutamate during ischemia-reperfusion promotes Ca2+ entry, followed by inflammatory cytokines and free-radical injury characteristic of excitotoxicity."
+      },
+      {
+        "text": "Dopamine enzymatic metabolism",
+        "isCorrect": false,
+        "rationale": "Dopamine metabolism by COMT and MAO is not the initiating event described. It would fit if catecholamine clearance were being manipulated."
+      }
+    ]
+  },
+  {
+    "question": "A 44-year-old patient has depressive symptoms associated with reduced general excitability from a widely projecting brainstem nucleus. Which treatment mechanism targets the implicated transmitter?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the relationships between neurotransmitter dysfunction and some neurological disorders. Relate the relationships to the pharmacologic treatment of such disorders.",
+    "options": [
+      {
+        "text": "Acetylcholinesterase activation",
+        "isCorrect": false,
+        "rationale": "Activating acetylcholinesterase would reduce cholinergic signaling and does not address low norepinephrine. It would fit a condition requiring shorter acetylcholine action."
+      },
+      {
+        "text": "Glutamate transporter activation",
+        "isCorrect": false,
+        "rationale": "Greater glutamate uptake would reduce extracellular excitation but would not selectively restore locus-coeruleus signaling. It would fit excessive glutamate accumulation."
+      },
+      {
+        "text": "GABA transaminase activation",
+        "isCorrect": false,
+        "rationale": "Increasing GABA degradation would reduce inhibitory signaling rather than directly increase norepinephrine. It would fit an experimental reduction of GABA activity."
+      },
+      {
+        "text": "Tyrosine hydroxylase inhibition",
+        "isCorrect": false,
+        "rationale": "Inhibiting tyrosine hydroxylase would reduce catecholamine synthesis and worsen the identified deficiency. It would fit treatment of pathological catecholamine excess."
+      },
+      {
+        "text": "Norepinephrine reuptake inhibition",
+        "isCorrect": true,
+        "rationale": "Locus-coeruleus neurons release norepinephrine, and reuptake inhibitors increase synaptic norepinephrine to treat depressive disorders."
+      }
+    ]
+  },
+  {
+    "question": "A 52-year-old patient has episodic hypertension and tachycardia caused by excessive production of two sympathomimetic transmitters. Which biochemical finding is most consistent with their normal metabolism?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the relationships between neurotransmitter dysfunction and some neurological disorders. Relate the relationships to the pharmacologic treatment of such disorders.",
+    "options": [
+      {
+        "text": "Increased metanephrine and VMA",
+        "isCorrect": true,
+        "rationale": "Excess norepinephrine and epinephrine production raises catecholamine metabolites such as metanephrine and VMA in blood or urine."
+      },
+      {
+        "text": "Increased glutamine and glutamate",
+        "isCorrect": false,
+        "rationale": "Glutamine and glutamate belong to the excitatory amino-acid cycle rather than catecholamine metabolism. They would fit altered astrocytic glutamate handling."
+      },
+      {
+        "text": "Increased choline and acetate",
+        "isCorrect": false,
+        "rationale": "These products relate to acetylcholine metabolism rather than norepinephrine and epinephrine excess. They would fit increased cholinergic turnover."
+      },
+      {
+        "text": "Increased tryptophan and serotonin",
+        "isCorrect": false,
+        "rationale": "Tryptophan supplies serotonin and does not represent catecholamine metabolites. It would fit altered serotonergic synthesis."
+      },
+      {
+        "text": "Increased glutamate and GABA",
+        "isCorrect": false,
+        "rationale": "Glutamate is converted to GABA through glutamic acid decarboxylase. These would fit altered inhibitory-transmitter synthesis rather than sympathetic catecholamine excess."
+      }
+    ]
+  },
+  {
+    "question": "A 24-year-old patient receives an antiseizure medication that increases the action of the major inhibitory transmitter at its ionotropic receptor. Which cellular change mediates the desired effect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the relationships between neurotransmitter dysfunction and some neurological disorders. Relate the relationships to the pharmacologic treatment of such disorders.",
+    "options": [
+      {
+        "text": "Opening postsynaptic potassium channels",
+        "isCorrect": false,
+        "rationale": "K+ channel opening is associated with metabotropic GABAB signaling. It would fit activation of the G-protein-coupled GABA receptor."
+      },
+      {
+        "text": "Opening postsynaptic chloride channels",
+        "isCorrect": true,
+        "rationale": "The ionotropic GABAA receptor is a ligand-gated Cl- channel; increased Cl- permeability hyperpolarizes neurons and reduces seizure-promoting excitability."
+      },
+      {
+        "text": "Opening postsynaptic sodium channels",
+        "isCorrect": false,
+        "rationale": "Na+ channel opening causes an EPSP and increases excitation. It would fit activation of an excitatory receptor such as AMPA."
+      },
+      {
+        "text": "Opening postsynaptic calcium channels",
+        "isCorrect": false,
+        "rationale": "Ca2+ entry through excitatory channels can enhance neuronal activation. It would fit activation of depolarized NMDA receptors."
+      },
+      {
+        "text": "Closing postsynaptic chloride channels",
+        "isCorrect": false,
+        "rationale": "Closing Cl- channels would reduce GABAA-mediated inhibition. It would fit the opposite of the desired antiseizure effect."
+      }
+    ]
+  },
+  {
+    "question": "A 39-year-old patient is exposed to an antagonist of the brain's most abundant inhibitory transmitter. Shortly afterward, generalized convulsions develop. Which receptor-mediated response was lost?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the relationships between neurotransmitter dysfunction and some neurological disorders. Relate the relationships to the pharmacologic treatment of such disorders.",
+    "options": [
+      {
+        "text": "Fast sodium-mediated depolarization",
+        "isCorrect": false,
+        "rationale": "Na+-mediated depolarization is excitatory rather than the lost inhibitory response. It would fit blockade of an excitatory AMPA-like pathway."
+      },
+      {
+        "text": "Slow calcium-mediated depolarization",
+        "isCorrect": false,
+        "rationale": "Ca2+-permeable NMDA signaling promotes excitation. It would fit loss of slow glutamatergic excitation rather than GABAergic inhibition."
+      },
+      {
+        "text": "Chloride-mediated membrane hyperpolarization",
+        "isCorrect": true,
+        "rationale": "Blocking GABA action removes GABAA-mediated Cl- conductance and hyperpolarization, allowing excessive activity that can produce convulsions."
+      },
+      {
+        "text": "Glutamate-mediated calcium accumulation",
+        "isCorrect": false,
+        "rationale": "Glutamate-mediated Ca2+ accumulation contributes to excitation and excitotoxicity, not the inhibitory balance that was lost. It would fit excessive glutamate signaling."
+      },
+      {
+        "text": "Acetylcholine-mediated cation conductance",
+        "isCorrect": false,
+        "rationale": "Nicotinic acetylcholine receptors conduct cations and are excitatory. This would fit impaired cholinergic excitation rather than GABA blockade."
+      }
+    ]
+  },
+  {
+    "question": "A 63-year-old patient has a movement disorder caused by degeneration of neurons in one midbrain nucleus. Which projection is primarily disrupted?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the relationships between neurotransmitter dysfunction and some neurological disorders. Relate the relationships to the pharmacologic treatment of such disorders.",
+    "options": [
+      {
+        "text": "Raphe nuclei to forebrain",
+        "isCorrect": false,
+        "rationale": "Raphe nuclei provide widespread serotonergic projections involved in mood and arousal. This would fit a serotonergic disorder rather than Parkinson disease."
+      },
+      {
+        "text": "Locus coeruleus to cortex",
+        "isCorrect": false,
+        "rationale": "The locus coeruleus supplies widespread noradrenergic projections. This would fit altered general excitability or depressive symptoms."
+      },
+      {
+        "text": "Basal forebrain to cortex",
+        "isCorrect": false,
+        "rationale": "Basal forebrain cholinergic projections support learning, memory, and wakefulness. This would fit a cholinergic cognitive deficit."
+      },
+      {
+        "text": "Substantia nigra to striatum",
+        "isCorrect": true,
+        "rationale": "Substantia nigra dopaminergic neurons project to the corpus striatum and coordinate motor function; their degeneration contributes to Parkinson disease."
+      },
+      {
+        "text": "Ventral tegmentum to limbic system",
+        "isCorrect": false,
+        "rationale": "The ventral tegmental area projects to limbic structures and participates in reward and motivation. This would fit mesolimbic dysfunction."
+      }
+    ]
+  },
+  {
+    "question": "A 36-year-old patient has a disorder treated by increasing a monoamine linked to mood, cognition, motivation, and reward. The relevant neurons originate in paired brainstem nuclei. Which synthesis step is rate limiting?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the synthetic pathways, inactivation mechanisms and mechanisms of receptor transduction for the following neurotransmitters: catecholamines (DA, NE, E); acetylcholine; GABA; glutamate; serotonin.",
+    "options": [
+      {
+        "text": "Tyrosine hydroxylation toward L-DOPA",
+        "isCorrect": false,
+        "rationale": "Tyrosine hydroxylation is rate limiting for catecholamines. It would fit a dopamine, norepinephrine, or epinephrine pathway."
+      },
+      {
+        "text": "Glutamate decarboxylation toward GABA",
+        "isCorrect": false,
+        "rationale": "This reaction synthesizes GABA using pyridoxal phosphate. It would fit a disorder involving deficient inhibitory transmission."
+      },
+      {
+        "text": "Glutamine conversion toward glutamate",
+        "isCorrect": false,
+        "rationale": "Glutaminase produces glutamate from glutamine. It would fit synthesis of the major excitatory CNS transmitter."
+      },
+      {
+        "text": "Choline transport for acetylcholine",
+        "isCorrect": false,
+        "rationale": "Choline transport is rate limiting for acetylcholine synthesis. It would fit cholinergic signaling involved in memory and wakefulness."
+      },
+      {
+        "text": "Tryptophan hydroxylation toward 5-hydroxytryptophan",
+        "isCorrect": true,
+        "rationale": "Raphe nuclei contain serotonergic neurons, and tryptophan hydroxylase catalyzes the rate-limiting step in serotonin synthesis."
+      }
+    ]
+  },
+  {
+    "question": "A 57-year-old patient receives a compound that prevents astrocytes from clearing the major excitatory CNS transmitter. Which consequence is most directly expected if extracellular levels remain high?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define the relationships between neurotransmitter dysfunction and some neurological disorders. Relate the relationships to the pharmacologic treatment of such disorders.",
+    "options": [
+      {
+        "text": "Glutamate-mediated neuronal excitotoxicity",
+        "isCorrect": true,
+        "rationale": "Astrocytic transporters normally clear glutamate; sustained high glutamate produces excessive excitation, Ca2+ entry, neuronal injury, and death."
+      },
+      {
+        "text": "GABA-mediated neuronal hyperpolarization",
+        "isCorrect": false,
+        "rationale": "GABA hyperpolarizes neurons and balances excitation rather than mediating glutamate toxicity. It would fit increased inhibitory transmission."
+      },
+      {
+        "text": "Acetylcholine-mediated muscular paralysis",
+        "isCorrect": false,
+        "rationale": "Paralysis in the source results from reduced acetylcholine release after blocked vesicle fusion. It would fit botulinum toxin exposure."
+      },
+      {
+        "text": "Serotonin-mediated depressive symptoms",
+        "isCorrect": false,
+        "rationale": "Depression is associated with decreased serotonin, not failed astrocytic glutamate uptake. It would fit deficient raphe serotonergic signaling."
+      },
+      {
+        "text": "Dopamine-mediated movement slowing",
+        "isCorrect": false,
+        "rationale": "Movement slowing is associated with lost substantia nigra dopamine. It would fit degeneration of the nigrostriatal pathway."
+      }
+    ]
+  }
+]
