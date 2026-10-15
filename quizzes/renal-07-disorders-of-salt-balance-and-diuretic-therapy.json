@@ -990,5 +990,997 @@
         "rationale": "Mineralocorticoid antagonists are used for hyperaldosteronism, refractory edema, and potassium conservation. They do not provide the specified calcium-wasting action."
       }
     ]
+  },
+  {
+    "question": "Which nephron site is targeted by Na-Cl cotransport blockers?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List major types of diuretics and their site of action.",
+    "options": [
+      {
+        "text": "Distal convoluted tubule",
+        "isCorrect": true,
+        "rationale": "The distal convoluted tubule contains the Na-Cl cotransporter inhibited by thiazide and thiazide-like agents."
+      },
+      {
+        "text": "Proximal convoluted tubule",
+        "isCorrect": false,
+        "rationale": "This segment is targeted by carbonic anhydrase inhibitors and osmotic agents. It would be correct if the drug blocked carbonic anhydrase or retained an osmotic solute."
+      },
+      {
+        "text": "Thick ascending limb",
+        "isCorrect": false,
+        "rationale": "This segment contains the Na-K-2Cl transporter. It would be correct for furosemide, bumetanide, or torsemide."
+      },
+      {
+        "text": "Cortical collecting duct",
+        "isCorrect": false,
+        "rationale": "This segment is targeted by ENaC blockers, mineralocorticoid antagonists, and aquaretics. It would be correct if one of those mechanisms were specified."
+      },
+      {
+        "text": "Early loop segment",
+        "isCorrect": false,
+        "rationale": "Mannitol retains water in the proximal tubule and early loop rather than blocking the Na-Cl cotransporter. It would be correct for the tubular action of an osmotic agent."
+      }
+    ]
+  },
+  {
+    "question": "Which agent is classified as a carbonic anhydrase inhibitor?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List major types of diuretics and their site of action.",
+    "options": [
+      {
+        "text": "Hydrochlorothiazide",
+        "isCorrect": false,
+        "rationale": "Hydrochlorothiazide is a thiazide that inhibits distal Na-Cl cotransport. It would be correct if the question asked for a commonly prescribed thiazide."
+      },
+      {
+        "text": "Acetazolamide",
+        "isCorrect": true,
+        "rationale": "Acetazolamide is the prototype sulfonamide carbonic anhydrase inhibitor acting in the proximal tubule."
+      },
+      {
+        "text": "Furosemide",
+        "isCorrect": false,
+        "rationale": "Furosemide is a loop agent that inhibits Na-K-2Cl transport. It would be correct if the target were the thick ascending limb."
+      },
+      {
+        "text": "Spironolactone",
+        "isCorrect": false,
+        "rationale": "Spironolactone antagonizes the mineralocorticoid receptor. It would be correct if aldosterone-dependent ENaC expression were targeted."
+      },
+      {
+        "text": "Tolvaptan",
+        "isCorrect": false,
+        "rationale": "Tolvaptan is a selective V2 receptor antagonist. It would be correct if selective water excretion were desired."
+      }
+    ]
+  },
+  {
+    "question": "Which agent selectively antagonizes the V2 receptor?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Understand the difference between aquaretics and other diuretics and define indications for their use.",
+    "options": [
+      {
+        "text": "Conivaptan",
+        "isCorrect": false,
+        "rationale": "Conivaptan blocks both V2 and V1a receptors. It would be correct if dual vasopressin receptor blockade were requested."
+      },
+      {
+        "text": "Mannitol",
+        "isCorrect": false,
+        "rationale": "Mannitol produces osmotic diuresis after filtration. It would be correct if increased tubular osmotic pressure were requested."
+      },
+      {
+        "text": "Tolvaptan",
+        "isCorrect": true,
+        "rationale": "Tolvaptan selectively blocks the V2 receptor that mediates the antidiuretic response to ADH."
+      },
+      {
+        "text": "Amiloride",
+        "isCorrect": false,
+        "rationale": "Amiloride directly blocks ENaC in the collecting duct. It would be correct if luminal sodium-channel inhibition were requested."
+      },
+      {
+        "text": "Eplerenone",
+        "isCorrect": false,
+        "rationale": "Eplerenone blocks the mineralocorticoid receptor rather than V2. It would be correct if aldosterone signaling were targeted."
+      }
+    ]
+  },
+  {
+    "question": "Which adverse effect is most characteristic of potassium-sparing agents?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Infer side effects of diuretic therapy from their mechanism of action.",
+    "options": [
+      {
+        "text": "Metabolic alkalosis",
+        "isCorrect": false,
+        "rationale": "Metabolic alkalosis accompanies thiazide and loop therapy. It would be correct if enhanced distal potassium and acid loss followed upstream sodium blockade."
+      },
+      {
+        "text": "Calcium wasting",
+        "isCorrect": false,
+        "rationale": "Calcium wasting is associated with loop agents. It would be correct if Na-K-2Cl transport in the thick ascending limb were inhibited."
+      },
+      {
+        "text": "Ototoxic hearing deficit",
+        "isCorrect": false,
+        "rationale": "Ototoxicity is associated with loop therapy, especially ethacrynic acid. It would be correct if a loop adverse effect were requested."
+      },
+      {
+        "text": "Hyperkalemia",
+        "isCorrect": true,
+        "rationale": "Collecting-duct sodium blockade or mineralocorticoid antagonism decreases potassium secretion, producing hyperkalemia."
+      },
+      {
+        "text": "Hyperchloremic acidosis",
+        "isCorrect": false,
+        "rationale": "Hyperchloremic metabolic acidosis is characteristic of carbonic anhydrase inhibition. It would be correct if bicarbonate loss were the mechanism."
+      }
+    ]
+  },
+  {
+    "question": "An agent decreases sodium uptake in a nephron segment that normally reabsorbs 20-25% of filtered sodium. Which drug class produces the strongest natriuretic response through this action?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "Carbonic anhydrase inhibitors",
+        "isCorrect": false,
+        "rationale": "These are weak agents because distal segments can reclaim much of the sodium escaping the proximal tubule. They would be correct if proximal bicarbonate-linked reabsorption were targeted."
+      },
+      {
+        "text": "Thiazide-type agents",
+        "isCorrect": false,
+        "rationale": "Thiazides inhibit a segment reabsorbing only 5-10% of filtered sodium. They would be correct if distal Na-Cl transport were specified."
+      },
+      {
+        "text": "Potassium-sparing agents",
+        "isCorrect": false,
+        "rationale": "These act where approximately 3% of filtered sodium is reabsorbed and consequently have low natriuretic efficacy. They would be correct for collecting-duct blockade."
+      },
+      {
+        "text": "Vasopressin receptor antagonists",
+        "isCorrect": false,
+        "rationale": "These selectively increase water excretion without altering sodium or potassium excretion. They would be correct if electrolyte-free water loss were requested."
+      },
+      {
+        "text": "Loop-acting agents",
+        "isCorrect": true,
+        "rationale": "Loop agents inhibit Na-K-2Cl transport in the thick ascending limb, where 20-25% of filtered sodium is normally reabsorbed."
+      }
+    ]
+  },
+  {
+    "question": "A diuretic increases distal delivery of sodium-rich tubular fluid. Which cellular response most directly explains the resulting potassium loss?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Infer side effects of diuretic therapy from their mechanism of action.",
+    "options": [
+      {
+        "text": "Principal-cell sodium uptake",
+        "isCorrect": true,
+        "rationale": "Greater distal sodium delivery and flow stimulate principal-cell sodium uptake and coupled potassium secretion, producing flow-stimulated kaliuresis."
+      },
+      {
+        "text": "Proximal bicarbonate uptake",
+        "isCorrect": false,
+        "rationale": "Proximal bicarbonate uptake does not explain distal flow-stimulated potassium secretion. It would be relevant if carbonic anhydrase-dependent bicarbonate handling were being tested."
+      },
+      {
+        "text": "V2-mediated water uptake",
+        "isCorrect": false,
+        "rationale": "V2 signaling controls collecting-duct water permeability rather than the sodium-potassium exchange responsible here. It would be correct for ADH-mediated water reabsorption."
+      },
+      {
+        "text": "Basolateral calcium exchange",
+        "isCorrect": false,
+        "rationale": "The basolateral Na-Ca exchanger explains thiazide-associated calcium retention, not potassium loss. It would be correct if reduced urinary calcium were requested."
+      },
+      {
+        "text": "Mineralocorticoid receptor blockade",
+        "isCorrect": false,
+        "rationale": "Mineralocorticoid receptor blockade decreases rather than increases potassium secretion. It would be correct if potassium preservation were requested."
+      }
+    ]
+  },
+  {
+    "question": "A patient receiving long-term antihypertensive therapy develops reduced urinary calcium excretion. Which tubular change best accounts for this finding?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "Reduced proximal calcium uptake",
+        "isCorrect": false,
+        "rationale": "Volume depletion increases proximal calcium reabsorption rather than reducing it. This would be correct only if proximal calcium reclamation decreased."
+      },
+      {
+        "text": "Enhanced distal calcium uptake",
+        "isCorrect": true,
+        "rationale": "Thiazide inhibition of distal sodium entry stimulates basolateral Na-Ca exchange, facilitating calcium entry from the tubular lumen."
+      },
+      {
+        "text": "Enhanced loop calcium loss",
+        "isCorrect": false,
+        "rationale": "Enhanced calcium loss is produced by loop drugs and would increase urinary calcium. It would be correct if the patient were receiving Na-K-2Cl inhibition."
+      },
+      {
+        "text": "Reduced collecting sodium uptake",
+        "isCorrect": false,
+        "rationale": "Collecting-duct sodium blockade primarily preserves potassium and does not explain thiazide-associated calcium retention. It would fit ENaC inhibition."
+      },
+      {
+        "text": "Enhanced bicarbonate excretion",
+        "isCorrect": false,
+        "rationale": "Enhanced bicarbonate excretion reflects carbonic anhydrase inhibition and causes alkaline urine. It would be correct if acetazolamide were administered."
+      }
+    ]
+  },
+  {
+    "question": "A drug remains extensively bound to carbonic anhydrase within erythrocytes, slowing its elimination. Which dosing consequence follows from this property?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "Frequent intravenous administration",
+        "isCorrect": false,
+        "rationale": "The prolonged disposition supports less frequent oral administration rather than repeated intravenous dosing. Intravenous-only use would describe mannitol."
+      },
+      {
+        "text": "Rapid tolerance development",
+        "isCorrect": false,
+        "rationale": "Tolerance is emphasized for acetazolamide, whereas prolonged chlorthalidone exposure limits adaptive sodium retention. This would be correct if carbonic anhydrase inhibitor tolerance were described."
+      },
+      {
+        "text": "Once-daily oral administration",
+        "isCorrect": true,
+        "rationale": "Erythrocyte carbonic anhydrase binding extends chlorthalidone's half-life and permits convenient once-daily administration."
+      },
+      {
+        "text": "Selective free-water excretion",
+        "isCorrect": false,
+        "rationale": "Selective water excretion is produced by V2 antagonists, not prolonged thiazide exposure. It would be correct for an aquaretic."
+      },
+      {
+        "text": "Complete potassium preservation",
+        "isCorrect": false,
+        "rationale": "Chlorthalidone can still promote distal potassium loss. Complete potassium preservation would instead suggest collecting-duct potassium-sparing therapy."
+      }
+    ]
+  },
+  {
+    "question": "Which combination principle most effectively overcomes increased sodium reclamation downstream from an inhibited transport site?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "Duplicate proximal-site blockade",
+        "isCorrect": false,
+        "rationale": "Duplicating one site does not directly block compensatory transport farther downstream. It would help only if inadequate inhibition at that same proximal site were the limiting problem."
+      },
+      {
+        "text": "Repeated single-agent dosing",
+        "isCorrect": false,
+        "rationale": "Repeated use of one agent leaves distal compensatory reclamation available. It would be appropriate if duration, rather than nephron adaptation, were the only limitation."
+      },
+      {
+        "text": "Selective water-channel blockade",
+        "isCorrect": false,
+        "rationale": "V2 antagonism increases water excretion without directly preventing downstream sodium reclamation. It would be correct for dilutional hyponatremia."
+      },
+      {
+        "text": "Sequential nephron-site blockade",
+        "isCorrect": true,
+        "rationale": "Combining agents acting at different nephron sites limits distal compensation and produces synergistic natriuresis."
+      },
+      {
+        "text": "Reduced tubular drug delivery",
+        "isCorrect": false,
+        "rationale": "A diuretic must reach its tubular target, so reduced delivery diminishes rather than enhances its effect. Increased delivery would be required for this concept."
+      }
+    ]
+  },
+  {
+    "question": "A sodium-channel blocker and a mineralocorticoid antagonist both reduce collecting-duct sodium reabsorption. Which distinction correctly separates their mechanisms?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "Luminal transport versus receptor signaling",
+        "isCorrect": true,
+        "rationale": "Amiloride and triamterene directly inhibit luminal ENaC, whereas spironolactone and eplerenone block mineralocorticoid receptor signaling and reduce ENaC expression."
+      },
+      {
+        "text": "Loop transport versus calcium exchange",
+        "isCorrect": false,
+        "rationale": "Neither group primarily targets loop transport or distal Na-Ca exchange. This distinction would apply to loop and thiazide actions."
+      },
+      {
+        "text": "Bicarbonate loss versus water loss",
+        "isCorrect": false,
+        "rationale": "These mechanisms describe carbonic anhydrase inhibitors and aquaretics. They would be correct if those two classes were contrasted."
+      },
+      {
+        "text": "Glucose transport versus chloride transport",
+        "isCorrect": false,
+        "rationale": "These targets correspond to SGLT2 inhibitors and thiazides rather than potassium-sparing agents. The distinction would fit proximal and distal cotransport blockers."
+      },
+      {
+        "text": "Osmotic retention versus sodium exchange",
+        "isCorrect": false,
+        "rationale": "Osmotic retention describes mannitol, while sodium-potassium exchange is downstream physiology. It would be correct if an osmotic drug were compared with distal sodium handling."
+      }
+    ]
+  },
+  {
+    "question": "An inherited increase in distal Na-Cl cotransport produces hypertension, hyperkalemia, and metabolic acidosis. Which drug class most directly reverses the transport abnormality?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "Loop diuretics",
+        "isCorrect": false,
+        "rationale": "Loop agents inhibit Na-K-2Cl transport upstream rather than the overactive distal Na-Cl cotransporter. They would be selected for thick ascending limb blockade."
+      },
+      {
+        "text": "Thiazide diuretics",
+        "isCorrect": true,
+        "rationale": "Gordon syndrome features increased distal Na-Cl cotransport, making thiazide blockade a direct functional treatment."
+      },
+      {
+        "text": "Osmotic diuretics",
+        "isCorrect": false,
+        "rationale": "Osmotic agents retain solute and water in the proximal tubule and early loop. They would be appropriate when tubular osmotic pressure must be increased."
+      },
+      {
+        "text": "Aquaretic agents",
+        "isCorrect": false,
+        "rationale": "Aquaretics alter water handling rather than distal Na-Cl transport. They would be appropriate for severe dilutional hyponatremia."
+      },
+      {
+        "text": "Carbonic anhydrase inhibitors",
+        "isCorrect": false,
+        "rationale": "These inhibit proximal bicarbonate-linked sodium reabsorption. They would be appropriate for glaucoma, altitude illness, or severe alkalosis."
+      }
+    ]
+  },
+  {
+    "question": "A drug causes natriuresis, hypokalemia, metabolic alkalosis, and increased urinary calcium. Which transporter is most likely inhibited?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Infer side effects of diuretic therapy from their mechanism of action.",
+    "options": [
+      {
+        "text": "Distal Na-Cl cotransporter",
+        "isCorrect": false,
+        "rationale": "Blocking this transporter causes hypokalemia and alkalosis but decreases urinary calcium. It would be correct if calcium excretion were reduced."
+      },
+      {
+        "text": "Collecting-duct epithelial sodium channel",
+        "isCorrect": false,
+        "rationale": "ENaC blockade preserves potassium rather than causing hypokalemia. It would be correct if hyperkalemia accompanied collecting-duct sodium blockade."
+      },
+      {
+        "text": "Proximal sodium-glucose cotransporter",
+        "isCorrect": false,
+        "rationale": "SGLT2 inhibition produces osmotic diuresis through glucosuria and does not define this calcium pattern. It would be correct if proximal glucose-linked transport were specified."
+      },
+      {
+        "text": "Thick-limb Na-K-2Cl cotransporter",
+        "isCorrect": true,
+        "rationale": "Loop blockade of Na-K-2Cl transport produces powerful natriuresis with potassium, magnesium, and calcium loss."
+      },
+      {
+        "text": "Collecting-duct mineralocorticoid receptor",
+        "isCorrect": false,
+        "rationale": "Mineralocorticoid receptor blockade decreases potassium secretion. It would be correct if hyperkalemia and potassium preservation were present."
+      }
+    ]
+  },
+  {
+    "question": "A filtered inert sugar raises tubular-fluid osmotic pressure and limits passive water reabsorption. Which additional immediate effect occurs before filtration?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "Reduced plasma osmotic pressure",
+        "isCorrect": false,
+        "rationale": "Mannitol raises rather than lowers plasma osmotic pressure. This would be correct only for an intervention that diluted plasma osmoles."
+      },
+      {
+        "text": "Reduced interstitial water movement",
+        "isCorrect": false,
+        "rationale": "The raised plasma osmotic pressure attracts water from interstitial fluid rather than reducing this movement. It would fit an agent lacking an extracellular osmotic effect."
+      },
+      {
+        "text": "Increased plasma osmotic pressure",
+        "isCorrect": true,
+        "rationale": "Before filtration, mannitol raises plasma osmotic pressure and draws water from the interstitial compartment into the vascular space."
+      },
+      {
+        "text": "Increased mineralocorticoid receptor blockade",
+        "isCorrect": false,
+        "rationale": "Mannitol does not antagonize mineralocorticoid receptors. This would be correct for spironolactone or eplerenone."
+      },
+      {
+        "text": "Reduced vasopressin receptor signaling",
+        "isCorrect": false,
+        "rationale": "Mannitol does not block vasopressin receptors. This would be correct for tolvaptan or conivaptan."
+      }
+    ]
+  },
+  {
+    "question": "A patient receiving an upstream natriuretic develops low serum potassium. Adding a collecting-duct agent corrects the abnormality while providing relatively little additional sodium loss. Which property explains this benefit?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "High proximal sodium capacity",
+        "isCorrect": false,
+        "rationale": "Potassium-sparing agents do not act in the proximal tubule. This would apply to the large reabsorptive capacity of proximal segments."
+      },
+      {
+        "text": "Strong loop natriuretic potency",
+        "isCorrect": false,
+        "rationale": "These agents have low rather than strong natriuretic potency. This would describe loop drugs acting where 20-25% of sodium is reabsorbed."
+      },
+      {
+        "text": "Selective bicarbonate excretion",
+        "isCorrect": false,
+        "rationale": "Bicarbonate excretion is promoted by carbonic anhydrase inhibition. It would be correct if acetazolamide were added."
+      },
+      {
+        "text": "Selective electrolyte-free diuresis",
+        "isCorrect": false,
+        "rationale": "Electrolyte-free water excretion is produced by aquaretics. It would be correct if V2 signaling were blocked."
+      },
+      {
+        "text": "Low sodium capacity with potassium retention",
+        "isCorrect": true,
+        "rationale": "The collecting duct handles only about 3% of filtered sodium, so blockade has low natriuretic efficacy but usefully prevents potassium loss."
+      }
+    ]
+  },
+  {
+    "question": "A patient with maximal antidiuretic hormone activity has low urine volume and concentrated urine. Which intervention increases water excretion without directly increasing sodium or potassium excretion?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the difference between aquaretics and other diuretics and define indications for their use.",
+    "options": [
+      {
+        "text": "Block collecting-duct V2 receptors",
+        "isCorrect": true,
+        "rationale": "V2 antagonism prevents ADH-mediated free-water reabsorption and produces selective water diuresis without altering urinary sodium or potassium."
+      },
+      {
+        "text": "Block thick-limb salt transport",
+        "isCorrect": false,
+        "rationale": "Loop blockade increases electrolyte excretion and disrupts free-water generation. It would be correct if powerful natriuresis were required."
+      },
+      {
+        "text": "Block proximal carbonic anhydrase",
+        "isCorrect": false,
+        "rationale": "This causes sodium and bicarbonate loss rather than selective water excretion. It would be correct for glaucoma or severe alkalosis."
+      },
+      {
+        "text": "Block distal Na-Cl transport",
+        "isCorrect": false,
+        "rationale": "Thiazides cause natriuresis and alter potassium and calcium handling. They would be correct for hypertension or hypercalciuria."
+      },
+      {
+        "text": "Block collecting-duct sodium channels",
+        "isCorrect": false,
+        "rationale": "ENaC blockade changes sodium and potassium excretion. It would be correct when potassium preservation or Liddle syndrome treatment is needed."
+      }
+    ]
+  },
+  {
+    "question": "A 68-year-old patient with chronic heart failure has worsening leg edema and an estimated filtration rate of 24 mL/min [≥90 mL/min]. Which therapy is the next best step for mobilizing the retained salt and water?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "Oral hydrochlorothiazide therapy",
+        "isCorrect": false,
+        "rationale": "Thiazides used alone are limited when filtration is below 30 mL/min. This would be appropriate for hypertension with preserved filtration."
+      },
+      {
+        "text": "Oral acetazolamide therapy",
+        "isCorrect": false,
+        "rationale": "Acetazolamide is a weak natriuretic because distal sodium reabsorption compensates. It would be appropriate for glaucoma, altitude illness, or severe alkalosis."
+      },
+      {
+        "text": "Intravenous mannitol therapy",
+        "isCorrect": false,
+        "rationale": "Mannitol can expand plasma volume and precipitate heart failure. It would be appropriate for cerebral edema without compromised ventricular function or anuria."
+      },
+      {
+        "text": "Oral tolvaptan therapy",
+        "isCorrect": false,
+        "rationale": "Tolvaptan selectively removes water and is indicated for severe dilutional hyponatremia. It would fit heart failure accompanied by severe hyponatremia requiring aquaresis."
+      },
+      {
+        "text": "Loop diuretic therapy",
+        "isCorrect": true,
+        "rationale": "Loop agents retain efficacy at low filtration rates and are drugs of choice for heart-failure edema."
+      }
+    ]
+  },
+  {
+    "question": "A 43-year-old patient has recurrent calcium oxalate stones and excessive urinary calcium. Kidney filtration is preserved. Which long-term therapy most directly reduces stone-promoting calcium loss?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "Hydrochlorothiazide",
+        "isCorrect": true,
+        "rationale": "Thiazides increase distal calcium reabsorption and produce mild volume depletion that further increases proximal calcium reclamation."
+      },
+      {
+        "text": "Furosemide",
+        "isCorrect": false,
+        "rationale": "Furosemide increases urinary calcium and would oppose the treatment goal. It would be useful if enhanced calcium excretion were desired in hypercalcemia."
+      },
+      {
+        "text": "Acetazolamide",
+        "isCorrect": false,
+        "rationale": "Acetazolamide alkalinizes urine and may promote calcium-salt precipitation. It would be appropriate for glaucoma, altitude illness, or severe alkalosis."
+      },
+      {
+        "text": "Mannitol",
+        "isCorrect": false,
+        "rationale": "Mannitol produces osmotic diuresis but does not provide the calcium-retaining effect sought here. It would be appropriate for cerebral edema."
+      },
+      {
+        "text": "Tolvaptan",
+        "isCorrect": false,
+        "rationale": "Tolvaptan causes selective water loss without directly reducing calcium excretion. It would be appropriate for severe hyponatremia caused by excess ADH activity."
+      }
+    ]
+  },
+  {
+    "question": "A 36-year-old patient taking a diuretic for hypertension develops weakness. Potassium is 2.9 mEq/L [3.5-5.0 mEq/L], and bicarbonate is 34 mEq/L [22-29 mEq/L]. Which cellular mechanism most directly produced these abnormalities?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Infer side effects of diuretic therapy from their mechanism of action.",
+    "options": [
+      {
+        "text": "Reduced V2-mediated water entry",
+        "isCorrect": false,
+        "rationale": "V2 blockade causes selective water loss rather than this potassium and acid-base pattern. It would fit aquaretic treatment of dilutional hyponatremia."
+      },
+      {
+        "text": "Enhanced distal sodium-potassium exchange",
+        "isCorrect": true,
+        "rationale": "Thiazide-induced sodium and flow delivery to the late distal nephron stimulates principal-cell sodium uptake with potassium secretion, supporting hypokalemia and alkalosis."
+      },
+      {
+        "text": "Reduced proximal bicarbonate reclamation",
+        "isCorrect": false,
+        "rationale": "Reduced bicarbonate reclamation causes metabolic acidosis, not alkalosis. It would fit carbonic anhydrase inhibition."
+      },
+      {
+        "text": "Reduced collecting-duct sodium entry",
+        "isCorrect": false,
+        "rationale": "ENaC blockade decreases potassium secretion and tends toward potassium retention. It would fit potassium-sparing therapy."
+      },
+      {
+        "text": "Enhanced distal calcium secretion",
+        "isCorrect": false,
+        "rationale": "Thiazides increase calcium reabsorption rather than secretion, and calcium handling does not directly explain these abnormalities. Enhanced calcium loss would fit loop treatment."
+      }
+    ]
+  },
+  {
+    "question": "A 59-year-old patient with symptomatic hypercalcemia is first given normal saline for volume expansion. Which subsequent treatment most directly increases renal calcium elimination?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "Hydrochlorothiazide",
+        "isCorrect": false,
+        "rationale": "Hydrochlorothiazide decreases urinary calcium and could worsen calcium retention. It would be appropriate for hypercalciuria and calcium oxalate stone prevention."
+      },
+      {
+        "text": "Spironolactone",
+        "isCorrect": false,
+        "rationale": "Spironolactone preserves potassium but does not produce the desired calcium-wasting effect. It would be appropriate for hyperaldosteronism or refractory edema."
+      },
+      {
+        "text": "Furosemide",
+        "isCorrect": true,
+        "rationale": "After volume expansion, loop blockade increases calcium excretion and is used to treat hypercalcemia."
+      },
+      {
+        "text": "Acetazolamide",
+        "isCorrect": false,
+        "rationale": "Acetazolamide promotes bicarbonate loss and urine alkalinization rather than the characteristic loop-associated calcium wasting. It would fit severe metabolic alkalosis."
+      },
+      {
+        "text": "Tolvaptan",
+        "isCorrect": false,
+        "rationale": "Tolvaptan selectively increases free-water excretion and does not directly increase calcium elimination. It would fit severe dilutional hyponatremia."
+      }
+    ]
+  },
+  {
+    "question": "A 27-year-old patient develops cerebral edema after an acute neurologic injury. Cardiac and renal function are adequate. Which treatment is most appropriate for rapidly drawing water from the interstitial compartment?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "Oral hydrochlorothiazide",
+        "isCorrect": false,
+        "rationale": "Hydrochlorothiazide does not acutely raise plasma osmotic pressure. It would be appropriate for hypertension or hypercalciuric stones."
+      },
+      {
+        "text": "Oral spironolactone",
+        "isCorrect": false,
+        "rationale": "Spironolactone has low natriuretic efficacy and does not draw interstitial water into plasma. It would fit hyperaldosteronism or potassium preservation."
+      },
+      {
+        "text": "Oral acetazolamide",
+        "isCorrect": false,
+        "rationale": "Acetazolamide promotes bicarbonate loss but is not the described osmotic treatment for cerebral edema. It would fit glaucoma or altitude illness."
+      },
+      {
+        "text": "Intravenous mannitol",
+        "isCorrect": true,
+        "rationale": "Intravenous mannitol raises plasma osmotic pressure, attracts interstitial water into plasma, and then retains water within the tubular lumen."
+      },
+      {
+        "text": "Oral tolvaptan",
+        "isCorrect": false,
+        "rationale": "Tolvaptan blocks V2-mediated water reabsorption but does not initially draw interstitial water through plasma osmotic expansion. It would fit severe dilutional hyponatremia."
+      }
+    ]
+  },
+  {
+    "question": "A 71-year-old patient with severe left ventricular dysfunction is accidentally given an osmotic agent. Shortly afterward, pulmonary congestion worsens. Which initial drug action most directly explains this complication?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Infer side effects of diuretic therapy from their mechanism of action.",
+    "options": [
+      {
+        "text": "Increased vascular volume from interstitial water",
+        "isCorrect": true,
+        "rationale": "Mannitol initially raises plasma osmotic pressure and draws interstitial water into the circulation, potentially precipitating heart failure."
+      },
+      {
+        "text": "Reduced vascular volume from sodium loss",
+        "isCorrect": false,
+        "rationale": "Volume contraction is a later diuretic complication and would not explain immediate congestion. It would fit excessive natriuresis causing orthostasis or prerenal injury."
+      },
+      {
+        "text": "Increased potassium retention from ENaC blockade",
+        "isCorrect": false,
+        "rationale": "ENaC blockade causes potassium retention but not acute plasma-volume expansion. It would fit amiloride or triamterene therapy."
+      },
+      {
+        "text": "Reduced bicarbonate reclamation from enzyme blockade",
+        "isCorrect": false,
+        "rationale": "Carbonic anhydrase inhibition causes bicarbonate loss and metabolic acidosis. It would fit acetazolamide exposure."
+      },
+      {
+        "text": "Reduced water uptake from V2 blockade",
+        "isCorrect": false,
+        "rationale": "V2 blockade promotes water excretion rather than immediate intravascular expansion. It would fit tolvaptan or conivaptan therapy."
+      }
+    ]
+  },
+  {
+    "question": "A 52-year-old patient with cirrhosis receives a drug that alkalinizes the urine. The patient subsequently develops worsening hyperammonemia and encephalopathy. Which drug was most likely administered?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Infer side effects of diuretic therapy from their mechanism of action.",
+    "options": [
+      {
+        "text": "Furosemide",
+        "isCorrect": false,
+        "rationale": "Furosemide blocks Na-K-2Cl transport and does not characteristically reduce ammonium excretion through urine alkalinization. It would fit edema with adequate monitoring."
+      },
+      {
+        "text": "Acetazolamide",
+        "isCorrect": true,
+        "rationale": "Carbonic anhydrase inhibition alkalinizes urine, decreases urinary ammonium excretion, and can worsen hyperammonemia in cirrhosis."
+      },
+      {
+        "text": "Hydrochlorothiazide",
+        "isCorrect": false,
+        "rationale": "Hydrochlorothiazide inhibits distal Na-Cl transport and does not produce the bicarbonaturia described. It would fit hypertension or hypercalciuria."
+      },
+      {
+        "text": "Spironolactone",
+        "isCorrect": false,
+        "rationale": "Spironolactone antagonizes mineralocorticoid receptors and does not alkalinize urine through bicarbonate wasting. It would fit secondary hyperaldosteronism."
+      },
+      {
+        "text": "Tolvaptan",
+        "isCorrect": false,
+        "rationale": "Tolvaptan promotes selective water loss without increasing bicarbonate excretion. It would fit severe hyponatremia associated with cirrhosis only if that indication were specified."
+      }
+    ]
+  },
+  {
+    "question": "A 34-year-old climber develops symptoms of high-altitude illness. Which treatment uses bicarbonate loss and urine alkalinization as part of its pharmacologic action?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "Hydrochlorothiazide",
+        "isCorrect": false,
+        "rationale": "Hydrochlorothiazide blocks distal Na-Cl transport and is not the listed treatment for altitude illness. It would fit hypertension or hypercalciuria."
+      },
+      {
+        "text": "Furosemide",
+        "isCorrect": false,
+        "rationale": "Furosemide inhibits thick-limb Na-K-2Cl transport rather than carbonic anhydrase. It would fit pulmonary edema or edema with low filtration."
+      },
+      {
+        "text": "Acetazolamide",
+        "isCorrect": true,
+        "rationale": "Acetazolamide blocks proximal carbonic anhydrase, increasing sodium and bicarbonate excretion and alkalinizing urine."
+      },
+      {
+        "text": "Amiloride",
+        "isCorrect": false,
+        "rationale": "Amiloride blocks collecting-duct ENaC and preserves potassium. It would fit Liddle syndrome or prevention of potassium loss."
+      },
+      {
+        "text": "Mannitol",
+        "isCorrect": false,
+        "rationale": "Mannitol produces osmotic diuresis without carbonic anhydrase blockade. It would fit cerebral edema when cardiac and renal function permit."
+      }
+    ]
+  },
+  {
+    "question": "A 65-year-old patient receiving a loop agent develops tinnitus and hearing impairment after an additional antimicrobial is started. Which drug combination best explains the enhanced toxicity?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Infer side effects of diuretic therapy from their mechanism of action.",
+    "options": [
+      {
+        "text": "Hydrochlorothiazide plus spironolactone",
+        "isCorrect": false,
+        "rationale": "This combination is used to limit thiazide-associated potassium loss and is not the highlighted ototoxic interaction. It would fit hypertension requiring potassium preservation."
+      },
+      {
+        "text": "Acetazolamide plus tolvaptan",
+        "isCorrect": false,
+        "rationale": "These agents affect bicarbonate and water handling, respectively, without the specified ototoxic interaction. It would fit separate indications for alkalosis and hyponatremia."
+      },
+      {
+        "text": "Mannitol plus conivaptan",
+        "isCorrect": false,
+        "rationale": "Both increase water excretion through different mechanisms but are not identified as producing enhanced ototoxicity. They would fit osmotic or aquaretic indications."
+      },
+      {
+        "text": "Furosemide plus aminoglycoside",
+        "isCorrect": true,
+        "rationale": "Loop-associated ototoxicity is enhanced when a loop agent is administered with an aminoglycoside antibiotic."
+      },
+      {
+        "text": "Amiloride plus eplerenone",
+        "isCorrect": false,
+        "rationale": "Both preserve potassium and would raise concern for hyperkalemia rather than ototoxicity. They would fit collecting-duct blockade if potassium were not elevated."
+      }
+    ]
+  },
+  {
+    "question": "A 46-year-old patient has hypertension, hypokalemia, and metabolic alkalosis caused by an inherited gain of function in a collecting-duct sodium channel. Which therapy is the next best step?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "Spironolactone",
+        "isCorrect": false,
+        "rationale": "Mineralocorticoid receptor blockade does not directly correct the constitutively overactive channel. It would fit aldosterone-driven sodium retention."
+      },
+      {
+        "text": "Furosemide",
+        "isCorrect": false,
+        "rationale": "Furosemide blocks upstream Na-K-2Cl transport rather than the abnormal collecting-duct channel. It would fit severe edema or low filtration."
+      },
+      {
+        "text": "Hydrochlorothiazide",
+        "isCorrect": false,
+        "rationale": "Hydrochlorothiazide blocks distal Na-Cl transport rather than the gain-of-function sodium channel. It would fit Gordon syndrome."
+      },
+      {
+        "text": "Acetazolamide",
+        "isCorrect": false,
+        "rationale": "Acetazolamide inhibits proximal carbonic anhydrase and does not target the abnormal channel. It would fit glaucoma, altitude illness, or alkalosis."
+      },
+      {
+        "text": "Amiloride",
+        "isCorrect": true,
+        "rationale": "Liddle syndrome is caused by ENaC gain of function, and amiloride directly blocks this luminal collecting-duct channel."
+      }
+    ]
+  },
+  {
+    "question": "A 58-year-old patient with secondary hyperaldosteronism and refractory edema requires an added potassium-sparing drug. Which cellular mechanism is expected from the selected treatment?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "Competitive mineralocorticoid receptor inhibition",
+        "isCorrect": true,
+        "rationale": "Spironolactone or eplerenone competitively blocks the mineralocorticoid receptor and decreases aldosterone-dependent ENaC expression."
+      },
+      {
+        "text": "Direct distal Na-Cl cotransport inhibition",
+        "isCorrect": false,
+        "rationale": "This describes thiazide action and does not directly antagonize aldosterone signaling. It would fit hypertension or hypercalciuria."
+      },
+      {
+        "text": "Direct thick-limb cotransport inhibition",
+        "isCorrect": false,
+        "rationale": "This describes loop therapy and does not explain potassium-sparing receptor antagonism. It would fit severe edema or pulmonary edema."
+      },
+      {
+        "text": "Selective collecting-duct V2 receptor inhibition",
+        "isCorrect": false,
+        "rationale": "This produces aquaresis rather than aldosterone antagonism. It would fit severe dilutional hyponatremia."
+      },
+      {
+        "text": "Proximal carbonic anhydrase inhibition",
+        "isCorrect": false,
+        "rationale": "This causes bicarbonate and sodium loss but does not block secondary hyperaldosteronism. It would fit severe alkalosis."
+      }
+    ]
+  },
+  {
+    "question": "A 62-year-old patient taking a mineralocorticoid antagonist develops breast enlargement and sexual dysfunction. Which alternative in the same drug subgroup produces fewer anti-androgen effects?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Infer side effects of diuretic therapy from their mechanism of action.",
+    "options": [
+      {
+        "text": "Amiloride",
+        "isCorrect": false,
+        "rationale": "Amiloride is potassium-sparing but directly blocks ENaC rather than belonging to the mineralocorticoid antagonist subgroup. It would be appropriate if direct channel blockade were desired."
+      },
+      {
+        "text": "Triamterene",
+        "isCorrect": false,
+        "rationale": "Triamterene is also a direct ENaC blocker rather than a receptor antagonist. It would fit potassium preservation through luminal channel inhibition."
+      },
+      {
+        "text": "Eplerenone",
+        "isCorrect": true,
+        "rationale": "Eplerenone remains a mineralocorticoid receptor antagonist but produces fewer anti-androgen effects than spironolactone."
+      },
+      {
+        "text": "Hydrochlorothiazide",
+        "isCorrect": false,
+        "rationale": "Hydrochlorothiazide is a thiazide and does not share the desired receptor-blocking mechanism. It would fit hypertension with preserved filtration."
+      },
+      {
+        "text": "Furosemide",
+        "isCorrect": false,
+        "rationale": "Furosemide is a loop agent and does not substitute within the mineralocorticoid antagonist subgroup. It would fit edema requiring powerful natriuresis."
+      }
+    ]
+  },
+  {
+    "question": "A 70-year-old patient receiving aggressive diuresis develops orthostatic hypotension and rising creatinine. Which mechanism most directly links the treatment to the kidney injury?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Infer side effects of diuretic therapy from their mechanism of action.",
+    "options": [
+      {
+        "text": "Excessive vascular volume contraction",
+        "isCorrect": true,
+        "rationale": "Excessive diuresis contracts vascular volume, causes orthostatic hypotension, and can produce prerenal acute kidney injury."
+      },
+      {
+        "text": "Selective free-water retention",
+        "isCorrect": false,
+        "rationale": "Diuretics increase rather than selectively retain water. This would fit persistent ADH action without an aquaretic."
+      },
+      {
+        "text": "Increased proximal sodium reabsorption",
+        "isCorrect": false,
+        "rationale": "Compensatory proximal reabsorption may reduce drug efficacy but does not directly explain hypotension from excessive diuresis. It would fit adaptation to volume depletion."
+      },
+      {
+        "text": "Increased plasma osmotic expansion",
+        "isCorrect": false,
+        "rationale": "Plasma expansion is the early effect of mannitol and would more directly threaten congestion. It would fit worsening heart failure after osmotic therapy."
+      },
+      {
+        "text": "Reduced distal calcium excretion",
+        "isCorrect": false,
+        "rationale": "Reduced calcium excretion is a thiazide effect but does not directly cause orthostatic hypotension and prerenal injury. It would fit stone prevention."
+      }
+    ]
+  },
+  {
+    "question": "A 55-year-old patient with syndrome of inappropriate antidiuretic hormone secretion has sodium of 121 mmol/L [135-145 mmol/L]. Which treatment most selectively corrects the water excess?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand the difference between aquaretics and other diuretics and define indications for their use.",
+    "options": [
+      {
+        "text": "Hydrochlorothiazide",
+        "isCorrect": false,
+        "rationale": "Hydrochlorothiazide can cause hyponatremia and increases electrolyte excretion. It would fit hypertension or hypercalciuria."
+      },
+      {
+        "text": "Furosemide",
+        "isCorrect": false,
+        "rationale": "Furosemide causes natriuresis and electrolyte loss rather than selective free-water excretion. It would fit pulmonary edema or low-filtration edema."
+      },
+      {
+        "text": "Acetazolamide",
+        "isCorrect": false,
+        "rationale": "Acetazolamide causes sodium and bicarbonate loss. It would fit glaucoma, altitude illness, or severe metabolic alkalosis."
+      },
+      {
+        "text": "Tolvaptan",
+        "isCorrect": true,
+        "rationale": "Tolvaptan selectively blocks V2 receptors, prevents ADH-mediated water reabsorption, and corrects severe dilutional hyponatremia."
+      },
+      {
+        "text": "Spironolactone",
+        "isCorrect": false,
+        "rationale": "Spironolactone blocks aldosterone signaling and alters sodium and potassium handling. It would fit hyperaldosteronism or refractory edema."
+      }
+    ]
+  },
+  {
+    "question": "A 49-year-old patient treated for severe dilutional hyponatremia reports marked thirst, and the serum sodium rises less than expected. Which drug action best explains both findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand the difference between aquaretics and other diuretics and define indications for their use.",
+    "options": [
+      {
+        "text": "Inhibition of proximal bicarbonate reclamation",
+        "isCorrect": false,
+        "rationale": "This describes acetazolamide and produces bicarbonaturia rather than selective water loss with thirst. It would fit treatment of severe alkalosis."
+      },
+      {
+        "text": "Inhibition of distal sodium-chloride uptake",
+        "isCorrect": false,
+        "rationale": "This describes thiazides, which increase electrolyte excretion and can worsen hyponatremia. It would fit hypertension or hypercalciuria."
+      },
+      {
+        "text": "Inhibition of thick-limb salt transport",
+        "isCorrect": false,
+        "rationale": "This produces strong natriuresis rather than selective water loss. It would fit pulmonary edema or hypercalcemia after volume expansion."
+      },
+      {
+        "text": "Inhibition of collecting sodium channels",
+        "isCorrect": false,
+        "rationale": "ENaC blockade preserves potassium and changes sodium excretion. It would fit Liddle syndrome."
+      },
+      {
+        "text": "Inhibition of V2-mediated water reabsorption",
+        "isCorrect": true,
+        "rationale": "V2 antagonism causes selective free-water loss; the resulting thirst promotes water intake and may limit the rise in serum sodium."
+      }
+    ]
+  },
+  {
+    "question": "A 66-year-old patient with edema receives an effective loop agent for several days, but the natriuretic response progressively weakens despite unchanged dosing. Which change most directly contributes to this adaptation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe cellular and molecular mechanism of diuretic action for all major types of diuretics and correlate it with their use for treatment of disorders of salt and water balance.",
+    "options": [
+      {
+        "text": "Enhanced downstream sodium reabsorption",
+        "isCorrect": true,
+        "rationale": "Reduced sodium uptake at one nephron site increases sodium delivery and compensatory reabsorption at more distal sites, weakening the response."
+      },
+      {
+        "text": "Reduced downstream sodium reabsorption",
+        "isCorrect": false,
+        "rationale": "Reduced distal reclamation would strengthen rather than weaken natriuresis. It would occur with sequential blockade at a downstream site."
+      },
+      {
+        "text": "Enhanced selective water excretion",
+        "isCorrect": false,
+        "rationale": "Selective water excretion characterizes aquaretics and does not explain adaptation to loop natriuresis. It would fit V2 receptor blockade."
+      },
+      {
+        "text": "Reduced principal-cell potassium secretion",
+        "isCorrect": false,
+        "rationale": "Loop therapy generally increases distal flow-stimulated potassium secretion. Reduced secretion would fit potassium-sparing treatment."
+      },
+      {
+        "text": "Enhanced proximal bicarbonate excretion",
+        "isCorrect": false,
+        "rationale": "Bicarbonate excretion characterizes carbonic anhydrase inhibition and does not explain compensatory distal sodium uptake. It would fit acetazolamide therapy."
+      }
+    ]
   }
 ]
