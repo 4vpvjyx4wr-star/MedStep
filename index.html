@@ -61,14 +61,15 @@ body{
   position:relative;z-index:1;
   min-height:100%;width:100%;max-width:1620px;
   margin:auto;display:flex;flex-direction:column;
-  padding:62px 18px 18px;box-sizing:border-box;
+  padding:calc(62px + env(safe-area-inset-top, 0px)) 18px 18px;box-sizing:border-box;
 }
 
 /* ── Top Bar ──────────────────────────────────────────── */
 .top-bar{
-  position:fixed;top:0;left:0;right:0;height:56px;
+  position:fixed;top:0;left:0;right:0;
+  height:calc(56px + env(safe-area-inset-top, 0px));
   display:flex;align-items:center;justify-content:space-between;
-  padding:0 18px;z-index:1001;box-sizing:border-box;
+  padding:env(safe-area-inset-top, 0px) 18px 0;z-index:1001;box-sizing:border-box;
   background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,transparent 100%);
   pointer-events:none;
 }
@@ -87,15 +88,19 @@ body{
 .settings-btn:hover{opacity:1;transform:scale(1.08)}
 
 .settings-menu{
-  position:fixed;top:60px;right:18px;
+  position:fixed;top:calc(60px + env(safe-area-inset-top, 0px));
+  right:max(12px, env(safe-area-inset-right, 0px));
   background:var(--card);border:1px solid var(--border);
   padding:0;border-radius:18px;z-index:1000;display:none;
-  width:min(320px, calc(100vw - 36px));box-sizing:border-box;
+  flex-direction:column;
+  width:min(320px, calc(100vw - 24px));box-sizing:border-box;
   box-shadow:0 12px 40px rgba(0,0,0,.5);
-  max-height:calc(100vh - 75px);overflow:hidden;
+  max-height:calc(100dvh - 72px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
+  overflow:hidden;
 }
 .settings-menu-scroll{
-  max-height:calc(100vh - 75px);
+  flex:1 1 auto;min-height:0;
+  max-height:100%;
   overflow-y:auto;overflow-x:hidden;
   overscroll-behavior:contain;
   -webkit-overflow-scrolling:touch;
@@ -510,9 +515,9 @@ button.panel-header:hover{opacity:1;filter:brightness(1.18)}
 @media(max-width:720px){
   .landing-panels{flex-direction:column}
   .landing-right-col,.controls-card{width:100%}
-  .quiz-layout{grid-template-columns:1fr!important;height:calc(100vh - 60px)}
+  .quiz-layout{grid-template-columns:1fr!important;height:calc(100dvh - 80px - env(safe-area-inset-top, 0px))}
   .quiz-layout .sidebar{display:none}
-  .main-content{padding:16px}
+  .main-content{padding:14px 12px}
   .quiz-header{flex-wrap:wrap}
   .q-text{font-size:.95rem}
   .option-text{font-size:.82rem}
@@ -536,7 +541,7 @@ textarea:focus{outline:none;border-color:var(--primary)}
 .btn-row{display:flex;gap:10px;width:100%;margin-bottom:12px}
 
 /* ── Quiz layout ─────────────────────────────────────── */
-.quiz-layout{display:grid;grid-template-columns:175px 1fr;gap:22px;height:calc(100vh - 80px);min-height:0;overflow:hidden}
+.quiz-layout{display:grid;grid-template-columns:175px 1fr;gap:22px;height:calc(100dvh - 80px - env(safe-area-inset-top, 0px));min-height:0;overflow:hidden}
 .no-sidebar{grid-template-columns:1fr!important}
 .no-sidebar .sidebar{display:none!important}
 .quiz-layout.multibuzz-on{grid-template-columns:175px 1fr 320px}
@@ -893,6 +898,10 @@ mark.medstep-highlight { background-color: rgba(230, 126, 34, 0.4); color: inher
 }
 .quiz-footer-prev{justify-self:start}
 .quiz-footer-nav{justify-self:end;display:flex;gap:10px;align-items:center}
+.quiz-nav-arrow{
+  min-width:48px;padding:12px 16px;font-size:1.15rem;line-height:1;
+  display:inline-flex;align-items:center;justify-content:center;
+}
 
 /* Results */
 #results-screen{overflow-y:auto;padding:40px 24px;text-align:center}
@@ -1304,15 +1313,25 @@ select{width:100%;padding:10px;border-radius:9px;background:var(--bg);color:var(
 }
 #library-toggle:hover { filter: brightness(1.12); transform: translateY(-2px); }
 body.library-open #library-toggle { display: none; }
+#nav-home-btn,
 #back-to-quiz-btn {
-  background: var(--success, #2ecc71); color: #fff; border: none;
+  background: var(--card); color: var(--text);
+  border: 1px solid var(--border);
   border-radius: 50px; padding: 11px 18px; font-family: var(--font-display);
   font-weight: 700; font-size: .82rem; cursor: pointer;
   display: none; align-items: center; gap: 8px;
   position: static; flex-shrink: 0; white-space: nowrap;
   box-shadow: 0 4px 18px rgba(0,0,0,.35); transition: .2s;
 }
+#nav-home-btn.is-visible,
+#back-to-quiz-btn.is-visible { display: flex; }
+#nav-home-btn.mode-back,
+#back-to-quiz-btn.mode-back {
+  background: var(--success, #2ecc71); color: #fff; border-color: transparent;
+}
+#nav-home-btn:hover,
 #back-to-quiz-btn:hover { filter: brightness(1.12); transform: translateY(-2px); }
+.nav-ctx-short { display: none; }
 .lib-header {
   padding: 16px 12px 14px 16px; border-bottom: 1px solid var(--border);
   display: flex; align-items: center; flex-wrap: nowrap; flex-shrink: 0;
@@ -1672,8 +1691,15 @@ body.library-open #library-toggle { display: none; }
 .lib-title:hover { filter: brightness(1.12); transform: translateY(-2px); }
 @media (max-width: 720px) {
   .top-bar-left { gap: 8px; }
-  #library-toggle, #back-to-quiz-btn, #library-sidebar .lib-title {
+  #library-toggle, #nav-home-btn, #back-to-quiz-btn, #library-sidebar .lib-title {
     padding: 9px 12px; font-size: .75rem;
+  }
+}
+@media (max-width: 400px) {
+  .nav-ctx-long { display: none; }
+  .nav-ctx-short { display: inline; }
+  #library-toggle, #nav-home-btn, #back-to-quiz-btn, #library-sidebar .lib-title {
+    padding: 8px 11px; font-size: .72rem;
   }
 }
 .lib-close {
@@ -1802,9 +1828,12 @@ body.library-open #library-toggle { display: none; }
 .prompt-settings-panel {
   position: absolute; bottom: calc(100% + 10px); left: 0;
   background: var(--card); border: 1px solid var(--border);
-  border-radius: 18px; padding: 18px 20px; width: 310px;
+  border-radius: 18px; padding: 18px 20px; width: min(310px, calc(100vw - 24px));
+  max-width: calc(100vw - 24px);
+  max-height: min(70dvh, 520px); overflow-y: auto;
   box-shadow: 0 12px 40px rgba(0,0,0,.5);
   z-index: 500; display: none;
+  box-sizing: border-box;
 }
 .prompt-settings-panel.open { display: block; animation: panelIn .2s cubic-bezier(.25,.8,.25,1); }
 @keyframes panelIn { from { opacity:0; transform:translateY(8px) scale(.97); } to { opacity:1; transform:none; } }
@@ -2067,6 +2096,68 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
   min-height: 1.2em; margin-bottom: 10px; opacity: .85;
 }
 #qpicker-build-status:empty { display: none; }
+
+/* Dialogs stay inside the viewport, including short phone screens */
+#add-quiz-modal,
+#qcount-picker-modal,
+#edit-question-modal,
+#report-question-modal,
+#email-quiz-confirm-modal,
+#feedback-modal,
+#custom-theme-modal,
+#quiz-resume-copy-modal {
+  padding: max(12px, env(safe-area-inset-top, 0px)) 12px max(12px, env(safe-area-inset-bottom, 0px));
+  overflow-y: auto;
+}
+.modal-card,
+.qpicker-card,
+.report-modal-card {
+  max-height: min(90dvh, calc(100dvh - 24px));
+  width: min(100%, 540px);
+}
+
+@media (max-width: 720px) {
+  .app-container { padding-left: 10px; padding-right: 10px; padding-bottom: 12px; }
+  .top-bar { padding-left: 10px; padding-right: 10px; }
+  #input-screen { padding: 4px 2px 16px; }
+  .instruction-card, .controls-card { padding: 16px 14px 14px; }
+  .panel-header, .panel-header-lg { letter-spacing: 1px; }
+  .step-item { padding: 10px; gap: 10px; }
+  .step-text { font-size: .92rem; }
+  .resume-code-summary { letter-spacing: 1px; padding: 14px; font-size: .95rem; }
+  .resume-code-body { padding: 12px 14px 14px; }
+  .btn-row { flex-direction: column; align-items: stretch; }
+  .prompt-btn-wrap { width: 100%; min-width: 0; }
+  #copy-prompt-btn { min-width: 0; font-size: .78rem; padding-left: 10px; padding-right: 10px; }
+  .hero-title { letter-spacing: -1px; }
+  #library-sidebar { width: 100%; max-width: 100%; }
+  .lib-header { padding: 10px 8px 10px 10px; }
+  .lib-toolbar { padding: 12px 10px; }
+  .modal-card, .qpicker-card, .report-modal-card { padding: 18px 14px 16px; border-radius: 16px; }
+  .quiz-layout { height: calc(100dvh - 74px - env(safe-area-inset-top, 0px)); }
+  .quiz-header .timer-eye { margin-right: 2px !important; }
+  .header-btn { padding: 6px 8px; font-size: .7rem; }
+  .lab-panel { left: 8px; right: 8px; width: auto; top: 8px; bottom: 8px; }
+  .calc-panel {
+    left: 8px; right: 8px; width: auto; min-width: 0; resize: none;
+    top: calc(64px + env(safe-area-inset-top, 0px));
+    max-height: calc(100dvh - 80px);
+  }
+  #results-screen { padding: 28px 12px 32px !important; }
+  .stat-card { padding: 14px 8px; }
+  .stat-val { font-size: 1.6rem; }
+  .stat-label { letter-spacing: .4px; font-size: .58rem; }
+  .export-panel { padding: 16px 14px; margin-top: 20px; }
+  .export-panel-header { letter-spacing: 1px; font-size: 1.05rem; flex-wrap: wrap; }
+  .settings-support { flex-wrap: wrap; justify-content: flex-start; }
+  .settings-menu-scroll { padding: 16px; }
+}
+@media (max-width: 420px) {
+  .stat-grid { grid-template-columns: 1fr; }
+  .stat-card { padding: 16px; }
+  .stat-val { font-size: 2rem; }
+  .stat-label { letter-spacing: 1.2px; font-size: .65rem; }
+}
 </style>
 </head>
 <body class="theme-slate-orange">
@@ -2080,7 +2171,11 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
 <!-- ══ TOP BAR ════════════════════════════════════════════ -->
 <div class="top-bar">
   <div class="top-bar-left">
-    <button id="library-toggle" onclick="toggleLibrary()">📚 Quiz Library</button>
+    <button id="library-toggle" onclick="toggleLibrary()"><span class="nav-ctx-long">📚 Quiz Library</span><span class="nav-ctx-short">📚 Library</span></button>
+    <button type="button" id="nav-home-btn" onclick="onNavContextClick(false)" aria-label="Home">
+      <span class="nav-ctx-long">🏠 Home</span>
+      <span class="nav-ctx-short">Home</span>
+    </button>
   </div>
   <div class="settings-btn" id="settings-trigger" title="Settings Menu">☰</div>
 </div>
@@ -2089,8 +2184,11 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
 <div id="library-overlay" onclick="toggleLibrary()"></div>
 <div id="library-sidebar">
   <div class="lib-header">
-    <button type="button" class="lib-title" onclick="toggleLibrary()">📚 Quiz Library</button>
-    <button id="back-to-quiz-btn" onclick="resumeSavedQuiz()" style="display:none">📝 Back to Quiz</button>
+    <button type="button" class="lib-title" onclick="toggleLibrary()"><span class="nav-ctx-long">📚 Quiz Library</span><span class="nav-ctx-short">📚 Library</span></button>
+    <button type="button" id="back-to-quiz-btn" onclick="onNavContextClick(true)" aria-label="Home">
+      <span class="nav-ctx-long">🏠 Home</span>
+      <span class="nav-ctx-short">Home</span>
+    </button>
     <div class="lib-header-scroll-outer">
       <div class="lib-header-scroll" id="lib-header-scroll" role="region" aria-label="Library actions" tabindex="0">
         <div class="lib-header-actions">
@@ -2774,11 +2872,11 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
           </div>
           <div class="step-item">
             <span class="step-num">2</span>
-            <p class="step-text">Filter by <strong>block, exam, week, and class</strong> to find the lectures you want. Switch between <strong>MedStep</strong> (official quizzes) and <strong>My Quizzes</strong> (ones you made).</p>
+            <p class="step-text">You can filter by block, exam, week, and class to view the lectures you want. You can then switch between official MedStep quizzes and My Quizzes to see the ones you have created.</p>
           </div>
           <div class="step-item">
             <span class="step-num">3</span>
-            <p class="step-text">Click a lecture and choose how many questions you want from it. You can take as many questions as you want from each lecture.</p>
+            <p class="step-text">Click on a lecture to choose how many questions you want to add to your quiz from its question pool. You can also click the <strong>+W</strong> button to select all lectures from that week, and the <strong>+E</strong> button to select all lectures from that exam.</p>
           </div>
           <div class="step-item">
             <span class="step-num">4</span>
@@ -3077,14 +3175,14 @@ input.qpicker-value::-webkit-inner-spin-button { -webkit-appearance: none; margi
         <div id="options-list"></div>
       </div>
       <div class="quiz-footer">
-        <button class="btn btn-secondary quiz-footer-prev" onclick="changeQ(-1)">← Previous</button>
+        <button class="btn btn-secondary quiz-footer-prev quiz-nav-arrow" onclick="changeQ(-1)" title="Previous question" aria-label="Previous question">←</button>
         <div class="quiz-footer-center">
           <button type="button" class="quiz-report-link" id="report-btn" onclick="openReportModal()" title="Report Question" aria-label="Report Question">Report Question</button>
           <button type="button" class="quiz-report-link" id="edit-question-btn" onclick="openEditQuestionModal()" title="Edit Question" aria-label="Edit Question">Edit Question</button>
         </div>
         <div class="quiz-footer-nav">
           <button class="btn btn-primary" id="finish-btn" onclick="showResults()" style="display:none">Finish Exam ✓</button>
-          <button class="btn btn-primary" id="next-btn" onclick="changeQ(1)">Next Question →</button>
+          <button class="btn btn-primary quiz-nav-arrow" id="next-btn" onclick="changeQ(1)" title="Next question" aria-label="Next question">→</button>
         </div>
       </div>
     </main>
@@ -3403,6 +3501,12 @@ const LS_CHANGELOG_SEEN='medstep_changelog_seen';
 const LS_CHANGELOG_OPEN='medstep_changelog_open';
 const CHANGELOG_VISIBLE_COUNT=3;
 const MEDSTEP_CHANGELOG=[
+  {
+    id:'2026-10-20-home-button',
+    date:'2026-10-20',
+    title:'Home and Back to Quiz',
+    body:'While a quiz is open, Home sits beside Quiz Library. On the home screen it becomes Back to Quiz and returns you to the same place you left.'
+  },
   {
     id:'2026-09-26-omm',
     date:'2026-09-26',
@@ -3953,8 +4057,8 @@ document.addEventListener('DOMContentLoaded',()=>{
   const menuScroll=document.getElementById('settings-menu-scroll');
   btn.addEventListener('click',e=>{
     e.stopPropagation();
-    const opening = menu.style.display !== 'block';
-    menu.style.display = opening ? 'block' : 'none';
+    const opening = menu.style.display !== 'flex';
+    menu.style.display = opening ? 'flex' : 'none';
     if (opening) {
       syncGitHubTokenInputs(getStoredGitHubToken());
       updateDeveloperSettingsUI();
@@ -3998,6 +4102,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   initChangelog();
   initHomeResumeCard();
   tryRestorePersistedQuiz();
+  syncNavHomeButton();
 });
 
 document.addEventListener('visibilitychange',()=>{
@@ -8310,13 +8415,47 @@ function shuffle(arr){
 // ══ PROMPT SETTINGS ══════════════════════════════════════
 const promptSettings = { questions: 30, first: true, second: true, third: true, boardsMode: false, ezMode: false };
 
+function positionPromptSettingsPanel(){
+  const panel=document.getElementById('prompt-settings-panel');
+  const wrap=document.getElementById('prompt-btn-wrap');
+  if(!panel||!panel.classList.contains('open')||!wrap) return;
+  const margin=12;
+  panel.style.width=Math.min(310, window.innerWidth-margin*2)+'px';
+  panel.style.left='0px';
+  panel.style.top='';
+  panel.style.bottom='';
+  panel.style.maxHeight='';
+  const wr=wrap.getBoundingClientRect();
+  const spaceAbove=Math.max(0, wr.top-margin-10);
+  const spaceBelow=Math.max(0, window.innerHeight-wr.bottom-margin-10);
+  const placeBelow=spaceAbove<200 && spaceBelow>spaceAbove;
+  panel.style.maxHeight=Math.max(160, Math.min(520, placeBelow?spaceBelow:spaceAbove))+'px';
+  if(placeBelow){
+    panel.style.bottom='auto';
+    panel.style.top='calc(100% + 10px)';
+  }
+  const rect=panel.getBoundingClientRect();
+  let shift=0;
+  if(rect.right>window.innerWidth-margin) shift-=rect.right-(window.innerWidth-margin);
+  if(rect.left+shift<margin) shift+=margin-(rect.left+shift);
+  panel.style.left=shift+'px';
+}
 function togglePromptSettings(e) {
   e.stopPropagation();
   const panel  = document.getElementById('prompt-settings-panel');
   const toggle = document.getElementById('prompt-settings-toggle');
   const open   = panel.classList.toggle('open');
   toggle.classList.toggle('open', open);
+  if(!open){
+    panel.style.left=panel.style.width=panel.style.top=panel.style.bottom='';
+    return;
+  }
+  positionPromptSettingsPanel();
 }
+window.addEventListener('resize', ()=>{
+  if(document.getElementById('prompt-settings-panel')?.classList.contains('open'))
+    positionPromptSettingsPanel();
+});
 
 // Close panel when clicking outside
 document.addEventListener('click', function(e) {
@@ -8547,7 +8686,6 @@ function buildQuiz(raw, meta){
   savedQuizState = null;
   try { localStorage.removeItem(LS_ACTIVE_QUIZ); } catch(e) {}
   activeQuizMeta = meta || { source: 'manual', title: 'Custom Quiz' };
-  document.getElementById('back-to-quiz-btn').style.display = 'none';
   isReviewMode=false;
   isFlaggedReviewMode=false; flaggedReviewIndices=[]; flaggedReviewPos=0; flaggedReviewPosByIdx=new Map();
   questions=shuffle(kept).map(q=>{
@@ -8562,7 +8700,7 @@ function buildQuiz(raw, meta){
   });
   document.getElementById('total-q-count').innerText=questions.length;
   document.getElementById('finish-btn').style.display='none';
-  document.getElementById('next-btn').innerText='Next Question →';
+  document.getElementById('next-btn').innerText='→';
   document.getElementById('back-to-results-btn').style.display='none';
   document.getElementById('input-screen').classList.add('hidden');
   document.getElementById('results-screen').classList.add('hidden');
@@ -8571,6 +8709,7 @@ function buildQuiz(raw, meta){
   document.getElementById('quiz-screen').classList.remove('hidden');
   document.getElementById('quiz-nav-settings').classList.remove('hidden');
   toggleSidebar();currentIdx=0;renderGrid();loadQuestion(0);startTimer();
+  syncNavHomeButton();
   persistActiveQuiz(true);
   if(dropped){
     showToast('⚠️ Skipped '+dropped+' question'+(dropped===1?'':'s')+' with fewer than '+MIN_QUIZ_OPTIONS+' answer options');
@@ -10072,11 +10211,16 @@ function loadQuestion(idx){
   const nextBtn=document.getElementById('next-btn');
   if(isReviewMode){
     finBtn.style.display='none';nextBtn.style.display='inline-flex';
-    nextBtn.innerText=isLast?'← Back to Results':'Next →';
+    nextBtn.innerText=isLast?'← Back to Results':'→';
+    nextBtn.title=isLast?'Back to Results':'Next question';
+    nextBtn.setAttribute('aria-label', isLast?'Back to Results':'Next question');
   } else {
     const allDone=questions.every(q=>q.userAnswer);
     finBtn.style.display=(isLast&&allDone)?'inline-flex':'none';
-    nextBtn.style.display=(isLast&&allDone)?'none':'inline-flex';nextBtn.innerText='Next Question →';
+    nextBtn.style.display=(isLast&&allDone)?'none':'inline-flex';
+    nextBtn.innerText='→';
+    nextBtn.title='Next question';
+    nextBtn.setAttribute('aria-label','Next question');
   }
 
   const list=document.getElementById('options-list');list.innerHTML='';
@@ -10537,6 +10681,7 @@ function showResults(){
 
   document.getElementById('quiz-screen').classList.add('hidden');
   document.getElementById('results-screen').classList.remove('hidden');
+  syncNavHomeButton();
   persistActiveQuiz(true);
 }
 
@@ -10794,8 +10939,7 @@ function tryRestorePersistedQuiz(){
       activeQuizMeta:data.activeQuizMeta||null
     };
     if(data.screen==='home'){
-      const btn=document.getElementById('back-to-quiz-btn');
-      if(btn) btn.style.display='flex';
+      syncNavHomeButton();
       return;
     }
     resumeSavedQuiz();
@@ -10823,7 +10967,6 @@ function goHome(){
       isPaused,
       activeQuizMeta: activeQuizMeta ? { ...activeQuizMeta } : null
     };
-    document.getElementById('back-to-quiz-btn').style.display = 'flex';
   }
   clearInterval(timerInt);clearPaceTimer();questions=[];isPaused=false;isReviewMode=false;
   isFlaggedReviewMode=false; flaggedReviewIndices=[]; flaggedReviewPos=0; flaggedReviewPosByIdx=new Map();
@@ -10836,6 +10979,45 @@ function goHome(){
   document.getElementById('settings-menu').style.display='none';
   persistActiveQuiz(true);
   updateEditQuestionButton();
+  syncNavHomeButton();
+}
+
+function hasResumableQuiz(){
+  return !!(savedQuizState && Array.isArray(savedQuizState.questions) && savedQuizState.questions.length);
+}
+function isHomeScreenVisible(){
+  const el=document.getElementById('input-screen');
+  return !!(el && !el.classList.contains('hidden'));
+}
+function syncNavHomeButton(){
+  const onHome=isHomeScreenVisible();
+  const inSession=!onHome && (questions.length>0 || !document.getElementById('results-screen').classList.contains('hidden'));
+  const mode=inSession?'home':(onHome && hasResumableQuiz()?'back':null);
+  const longText=mode==='back'?'📝 Back to Quiz':'🏠 Home';
+  const shortText=mode==='back'?'Back':'Home';
+  const label=mode==='back'?'Back to Quiz':'Home';
+  ['nav-home-btn','back-to-quiz-btn'].forEach(id=>{
+    const btn=document.getElementById(id);
+    if(!btn) return;
+    btn.style.display='';
+    btn.classList.toggle('is-visible', !!mode);
+    btn.classList.toggle('mode-home', mode==='home');
+    btn.classList.toggle('mode-back', mode==='back');
+    btn.setAttribute('aria-label', label);
+    btn.title=mode==='back'?'Return to your quiz':'Return to home';
+    const longEl=btn.querySelector('.nav-ctx-long');
+    const shortEl=btn.querySelector('.nav-ctx-short');
+    if(longEl) longEl.textContent=longText;
+    if(shortEl) shortEl.textContent=shortText;
+  });
+}
+function onNavContextClick(fromLibrary){
+  if(isHomeScreenVisible() && hasResumableQuiz()){
+    resumeSavedQuiz();
+    return;
+  }
+  goHome();
+  if(fromLibrary && libraryOpen) toggleLibrary();
 }
 
 function resumeSavedQuiz() {
@@ -10873,7 +11055,7 @@ function resumeSavedQuiz() {
   }
 
   savedQuizState = null;
-  document.getElementById('back-to-quiz-btn').style.display = 'none';
+  syncNavHomeButton();
   persistActiveQuiz(true);
 }
 
