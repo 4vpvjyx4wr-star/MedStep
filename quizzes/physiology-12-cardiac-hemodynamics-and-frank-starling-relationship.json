@@ -1,0 +1,994 @@
+[
+  {
+    "question": "Which variable is defined as the intrinsic ability of myocardial cells to develop force at a given cell length?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe heart contractility and explain mechanisms that regulate it.",
+    "options": [
+      {
+        "text": "Myocardial contractility",
+        "isCorrect": true,
+        "rationale": "Contractility, or inotropy, is the intrinsic force-generating ability of myocardial cells at a specified cell length."
+      },
+      {
+        "text": "Ventricular preload",
+        "isCorrect": false,
+        "rationale": "Preload describes the load and fiber stretch before contraction. It would be correct if the question asked about end-diastolic loading."
+      },
+      {
+        "text": "Ventricular afterload",
+        "isCorrect": false,
+        "rationale": "Afterload is the load against which a ventricle ejects. It would be correct if the question asked about opposition to systolic ejection."
+      },
+      {
+        "text": "Cardiac output",
+        "isCorrect": false,
+        "rationale": "Cardiac output is the volume ejected per unit time. It would be correct if the question asked for stroke volume multiplied by heart rate."
+      },
+      {
+        "text": "Ejection fraction",
+        "isCorrect": false,
+        "rationale": "Ejection fraction is the fraction of end-diastolic volume ejected per contraction. It would be correct if the question asked about ventricular emptying efficiency."
+      }
+    ]
+  },
+  {
+    "question": "Which expression calculates the volume ejected by a ventricle during one contraction?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define cardiac output, stroke volume, and ejection fraction",
+    "options": [
+      {
+        "text": "EDV divided by ESV",
+        "isCorrect": false,
+        "rationale": "Dividing end-diastolic volume by end-systolic volume does not calculate an identified hemodynamic variable. The operation would need to change from division to subtraction."
+      },
+      {
+        "text": "EDV minus ESV",
+        "isCorrect": true,
+        "rationale": "Stroke volume equals end-diastolic volume minus end-systolic volume, representing the volume removed from the ventricle during systole."
+      },
+      {
+        "text": "ESV minus EDV",
+        "isCorrect": false,
+        "rationale": "This reverses the stroke-volume subtraction and produces a negative value under usual filling conditions. The operands would need to be reversed."
+      },
+      {
+        "text": "SV divided by EDV",
+        "isCorrect": false,
+        "rationale": "Stroke volume divided by end-diastolic volume calculates ejection fraction. It would be correct if the question asked for the fraction ejected."
+      },
+      {
+        "text": "SV multiplied by HR",
+        "isCorrect": false,
+        "rationale": "Stroke volume multiplied by heart rate calculates cardiac output. It would be correct if the question asked for volume ejected per minute."
+      }
+    ]
+  },
+  {
+    "question": "Which point on a standard ventricular pressure-volume loop represents closure of the inflow valve?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe pressure-volume loop that is how volume and pressure change during heart cycle.",
+    "options": [
+      {
+        "text": "Loop point A",
+        "isCorrect": false,
+        "rationale": "Point A marks opening of the mitral valve. It would be correct if the question asked where ventricular filling begins."
+      },
+      {
+        "text": "Loop point C",
+        "isCorrect": false,
+        "rationale": "Point C marks opening of the aortic valve. It would be correct if the question asked where ventricular ejection begins."
+      },
+      {
+        "text": "Loop point B",
+        "isCorrect": true,
+        "rationale": "Point B marks mitral-valve closure at end-diastole and the beginning of isovolumic contraction."
+      },
+      {
+        "text": "Loop point D",
+        "isCorrect": false,
+        "rationale": "Point D marks closure of the aortic valve. It would be correct if the question asked where isovolumic relaxation begins."
+      },
+      {
+        "text": "Loop peak pressure",
+        "isCorrect": false,
+        "rationale": "The loop peak represents peak systolic pressure rather than a designated valve event. It would be correct if maximum systolic pressure were requested."
+      }
+    ]
+  },
+  {
+    "question": "Which ventricular variable directly determines left-sided afterload?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define preload and afterload and list conditions that can change them such as hypo- or hypervolemia, or hypertension)",
+    "options": [
+      {
+        "text": "Right atrial pressure",
+        "isCorrect": false,
+        "rationale": "Right atrial pressure contributes to the pressure gradient used in the cardiac-output relationship. It would be correct if that gradient rather than left-sided afterload were requested."
+      },
+      {
+        "text": "Pulmonary artery pressure",
+        "isCorrect": false,
+        "rationale": "Pulmonary artery pressure determines right ventricular afterload. It would be correct if the question concerned the right ventricle."
+      },
+      {
+        "text": "End-diastolic volume",
+        "isCorrect": false,
+        "rationale": "End-diastolic volume represents ventricular preload. It would be correct if the question asked about loading immediately before contraction."
+      },
+      {
+        "text": "Aortic pressure",
+        "isCorrect": true,
+        "rationale": "The left ventricle ejects against aortic pressure, making that pressure the direct determinant of left ventricular afterload."
+      },
+      {
+        "text": "End-systolic volume",
+        "isCorrect": false,
+        "rationale": "End-systolic volume is the volume remaining after ejection. It would be relevant if the question asked for the endpoint used to calculate stroke volume."
+      }
+    ]
+  },
+  {
+    "question": "A cardiomyocyte is studied at constant resting length. Increasing the inward ion current during the plateau increases force development. Which intracellular change best explains the increased force?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe heart contractility and explain mechanisms that regulate it.",
+    "options": [
+      {
+        "text": "Reduced intracellular Ca2+ concentration",
+        "isCorrect": false,
+        "rationale": "Reduced intracellular Ca2+ decreases contractility. It would fit a reduction in inward Ca2+ current or sarcoplasmic-reticulum release."
+      },
+      {
+        "text": "Reduced sarcoplasmic Ca2+ storage",
+        "isCorrect": false,
+        "rationale": "Reduced sarcoplasmic-reticulum storage limits releasable Ca2+ and therefore force. Increased storage would be needed to support the observation."
+      },
+      {
+        "text": "Reduced myocardial cell length",
+        "isCorrect": false,
+        "rationale": "Cell length is being held constant, so a length-dependent mechanism cannot explain the change. It would matter if preload changed."
+      },
+      {
+        "text": "Reduced ventricular filling volume",
+        "isCorrect": false,
+        "rationale": "Reduced filling volume lowers preload and does not explain a force increase at constant cell length. Increased filling would be required for a Frank-Starling effect."
+      },
+      {
+        "text": "Increased intracellular Ca2+ concentration",
+        "isCorrect": true,
+        "rationale": "A larger inward Ca2+ current raises intracellular Ca2+, the principal ionic determinant of myocardial contractility."
+      }
+    ]
+  },
+  {
+    "question": "Stimulation of cardiac β1 adrenergic receptors increases force without changing initial fiber length. Which signaling sequence accounts for this response?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe heart contractility and explain mechanisms that regulate it.",
+    "options": [
+      {
+        "text": "Norepinephrine increases cAMP",
+        "isCorrect": true,
+        "rationale": "Norepinephrine stimulates β1 adrenergic receptors and increases cAMP, producing a positive inotropic effect."
+      },
+      {
+        "text": "Acetylcholine increases cAMP",
+        "isCorrect": false,
+        "rationale": "Acetylcholine acting through cardiac muscarinic receptors decreases cAMP. An increase would require sympathetic β1 stimulation instead."
+      },
+      {
+        "text": "Norepinephrine decreases cAMP",
+        "isCorrect": false,
+        "rationale": "This reverses the stated β1 signaling direction. It would need an increase in cAMP to match sympathetic positive inotropy."
+      },
+      {
+        "text": "Acetylcholine stimulates β1 receptors",
+        "isCorrect": false,
+        "rationale": "Acetylcholine stimulates muscarinic rather than β1 receptors. Norepinephrine would need to replace acetylcholine."
+      },
+      {
+        "text": "Norepinephrine stimulates muscarinic receptors",
+        "isCorrect": false,
+        "rationale": "Norepinephrine acts through β1 adrenergic receptors in this pathway. Acetylcholine would be required for muscarinic stimulation."
+      }
+    ]
+  },
+  {
+    "question": "Autonomic stimulation decreases cAMP and force generation in the cardiac region receiving the relevant innervation. Which response is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe heart contractility and explain mechanisms that regulate it.",
+    "options": [
+      {
+        "text": "Increased ventricular contractility",
+        "isCorrect": false,
+        "rationale": "The described pathway decreases rather than increases contractility and does not primarily target the ventricles. β1 stimulation with increased cAMP would support this response."
+      },
+      {
+        "text": "Decreased atrial contractility",
+        "isCorrect": true,
+        "rationale": "Parasympathetic muscarinic stimulation decreases cAMP and produces negative inotropy in the atria, the innervated cardiac region identified."
+      },
+      {
+        "text": "Increased atrial contractility",
+        "isCorrect": false,
+        "rationale": "Atrial force decreases with muscarinic stimulation. Sympathetic β1 stimulation would be required for increased atrial contractility."
+      },
+      {
+        "text": "Decreased ventricular contractility",
+        "isCorrect": false,
+        "rationale": "The source specifies parasympathetic negative inotropy in the atria because parasympathetic cardiac innervation is atrial. The targeted region would need to be atrial."
+      },
+      {
+        "text": "Unchanged atrial contractility",
+        "isCorrect": false,
+        "rationale": "Atrial contractility does not remain unchanged when muscarinic signaling decreases cAMP. Absence of parasympathetic stimulation would support no change."
+      }
+    ]
+  },
+  {
+    "question": "Two contractions occur with unchanged inotropy and opposing load. The second begins at a greater end-diastolic volume. Which mechanical event explains its larger ejected volume?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss tension-length relationship in cardiac muscle (Frank-Starling Law).",
+    "options": [
+      {
+        "text": "Reduced actin-myosin bridge formation",
+        "isCorrect": false,
+        "rationale": "Reduced bridge formation would weaken contraction. Less favorable overlap rather than greater end-diastolic stretch would be required."
+      },
+      {
+        "text": "Reduced initial myocardial length",
+        "isCorrect": false,
+        "rationale": "Greater end-diastolic volume increases, rather than reduces, initial myocardial length. A smaller filling volume would support this option."
+      },
+      {
+        "text": "Optimized actin-myosin overlap",
+        "isCorrect": true,
+        "rationale": "Greater end-diastolic stretch improves actin-myosin overlap, permitting more cross-bridges and a stronger contraction."
+      },
+      {
+        "text": "Increased opposing arterial load",
+        "isCorrect": false,
+        "rationale": "An increased opposing load is an afterload change and would not explain the Frank-Starling increase under constant opposing load. A higher arterial pressure would be required."
+      },
+      {
+        "text": "Decreased intracellular Ca2+ concentration",
+        "isCorrect": false,
+        "rationale": "Decreased intracellular Ca2+ lowers contractility. It would explain diminished force rather than a length-dependent increase in ejected volume."
+      }
+    ]
+  },
+  {
+    "question": "A ventricular pressure-volume relation is measured during filling while active contraction is absent. Which structure principally accounts for the observed elastic pressure?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss tension-length relationship in cardiac muscle (Frank-Starling Law).",
+    "options": [
+      {
+        "text": "Actin cross-bridge protein",
+        "isCorrect": false,
+        "rationale": "Actin participates in active contractile cross-bridge formation, not the specified noncontractile spring behavior. Active tension would need to be assessed."
+      },
+      {
+        "text": "Myosin cross-bridge protein",
+        "isCorrect": false,
+        "rationale": "Myosin contributes to active contraction rather than the passive diastolic relation. A systolic-force question would make it relevant."
+      },
+      {
+        "text": "β1 adrenergic receptor",
+        "isCorrect": false,
+        "rationale": "β1 receptors regulate contractility through sympathetic signaling. The question would need to concern positive inotropy rather than passive elasticity."
+      },
+      {
+        "text": "Titin spring protein",
+        "isCorrect": true,
+        "rationale": "Titin is a giant noncontractile protein that behaves as a spring and contributes to the diastolic pressure-volume relation."
+      },
+      {
+        "text": "Muscarinic cardiac receptor",
+        "isCorrect": false,
+        "rationale": "Muscarinic receptors mediate parasympathetic effects on atrial contractility. Muscarinic stimulation rather than passive filling would need to be tested."
+      }
+    ]
+  },
+  {
+    "question": "End-diastolic volume remains constant while aortic pressure rises. Which paired change best identifies the altered determinant and expected pumping consequence?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define preload and afterload and list conditions that can change them such as hypo- or hypervolemia, or hypertension)",
+    "options": [
+      {
+        "text": "Higher preload, higher ejection",
+        "isCorrect": false,
+        "rationale": "Preload remains constant because end-diastolic volume is unchanged. A rise in end-diastolic volume would be required for higher preload."
+      },
+      {
+        "text": "Higher preload, lower ejection",
+        "isCorrect": false,
+        "rationale": "The lower-ejection direction may appear plausible, but the altered determinant is mislabeled. End-diastolic volume would need to increase for preload to rise."
+      },
+      {
+        "text": "Lower preload, higher ejection",
+        "isCorrect": false,
+        "rationale": "Nothing in the stem lowers end-diastolic loading. A reduced end-diastolic volume would be needed to establish lower preload."
+      },
+      {
+        "text": "Lower afterload, higher ejection",
+        "isCorrect": false,
+        "rationale": "Aortic pressure has risen, so left ventricular afterload is higher rather than lower. A fall in aortic pressure would support this option."
+      },
+      {
+        "text": "Higher afterload, lower ejection",
+        "isCorrect": true,
+        "rationale": "Aortic pressure determines left ventricular afterload. Increasing this opposing load reduces ventricular ejection when other determinants remain constant."
+      }
+    ]
+  },
+  {
+    "question": "A ventricle contains 120 mL before ejection and 50 mL afterward. Which paired values correctly describe its stroke volume and ejection fraction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define cardiac output, stroke volume, and ejection fraction",
+    "options": [
+      {
+        "text": "70 mL and 58%",
+        "isCorrect": true,
+        "rationale": "Stroke volume is 120 - 50 = 70 mL, and ejection fraction is 70/120 × 100, approximately 58%."
+      },
+      {
+        "text": "50 mL and 42%",
+        "isCorrect": false,
+        "rationale": "This treats end-systolic volume as the ejected volume. It would require a stroke volume of 50 mL from a 120-mL end-diastolic volume."
+      },
+      {
+        "text": "70 mL and 70%",
+        "isCorrect": false,
+        "rationale": "The stroke volume is correct, but the percentage incorrectly treats its numerical volume as a percentage. End-diastolic volume would need to be 100 mL for 70%."
+      },
+      {
+        "text": "120 mL and 58%",
+        "isCorrect": false,
+        "rationale": "This uses end-diastolic volume as stroke volume. End-systolic volume would need to be zero for the entire 120 mL to be ejected."
+      },
+      {
+        "text": "170 mL and 42%",
+        "isCorrect": false,
+        "rationale": "This adds ventricular volumes rather than subtracting them. The calculation would have to use end-diastolic volume minus end-systolic volume."
+      }
+    ]
+  },
+  {
+    "question": "Two individuals have equal stroke volumes. One has a higher heart rate. Which variable must be greater in that individual?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define cardiac output, stroke volume, and ejection fraction",
+    "options": [
+      {
+        "text": "End-systolic volume",
+        "isCorrect": false,
+        "rationale": "Equal stroke volumes do not establish which end-systolic volume is greater without end-diastolic volumes. Additional ventricular-volume information would be required."
+      },
+      {
+        "text": "Cardiac output",
+        "isCorrect": true,
+        "rationale": "Cardiac output equals stroke volume multiplied by heart rate, so increasing heart rate at the same stroke volume increases output."
+      },
+      {
+        "text": "Ejection fraction",
+        "isCorrect": false,
+        "rationale": "Ejection fraction also depends on end-diastolic volume, which is not provided. Equal end-diastolic volumes would be needed to compare it from equal stroke volumes."
+      },
+      {
+        "text": "Ventricular preload",
+        "isCorrect": false,
+        "rationale": "Preload reflects end-diastolic loading and cannot be inferred from heart rate alone. End-diastolic volume would need to be compared."
+      },
+      {
+        "text": "Ventricular afterload",
+        "isCorrect": false,
+        "rationale": "Afterload depends on the pressure against which the ventricle pumps, not directly on heart rate. Aortic or pulmonary artery pressure would be needed."
+      }
+    ]
+  },
+  {
+    "question": "A pressure-volume loop has an end-diastolic volume of 130 mL and an end-systolic volume of 60 mL. Which geometric measurement equals the ejected volume?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe pressure-volume loop that is how volume and pressure change during heart cycle.",
+    "options": [
+      {
+        "text": "Vertical loop height",
+        "isCorrect": false,
+        "rationale": "The vertical dimension depicts ventricular pressure rather than ejected volume. It would be relevant if a pressure difference were requested."
+      },
+      {
+        "text": "Peak loop pressure",
+        "isCorrect": false,
+        "rationale": "The peak depicts peak systolic pressure. It would be correct if the question asked for the maximum pressure reached."
+      },
+      {
+        "text": "Horizontal loop width",
+        "isCorrect": true,
+        "rationale": "Loop width is end-diastolic volume minus end-systolic volume, which here equals a 70-mL stroke volume."
+      },
+      {
+        "text": "Internal loop area",
+        "isCorrect": false,
+        "rationale": "The enclosed area represents cardiac work rather than stroke volume. It would be correct if work were requested."
+      },
+      {
+        "text": "Diastolic curve slope",
+        "isCorrect": false,
+        "rationale": "The diastolic relation reflects passive elastic behavior, not the volume ejected. A question about noncontractile filling properties would make it relevant."
+      }
+    ]
+  },
+  {
+    "question": "Ventricular pressure rises sharply while ventricular volume remains unchanged. Which phase and valve state best match this observation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe pressure-volume loop that is how volume and pressure change during heart cycle.",
+    "options": [
+      {
+        "text": "Filling after mitral opening",
+        "isCorrect": false,
+        "rationale": "Ventricular filling increases volume after the mitral valve opens. An increasing volume rather than a fixed volume would be required."
+      },
+      {
+        "text": "Ejection after aortic opening",
+        "isCorrect": false,
+        "rationale": "Ejection decreases ventricular volume after the aortic valve opens. A falling volume would be required."
+      },
+      {
+        "text": "Relaxation after aortic closure",
+        "isCorrect": false,
+        "rationale": "Isovolumic relaxation has constant volume but falling pressure. The pressure direction would need to reverse."
+      },
+      {
+        "text": "Contraction after mitral closure",
+        "isCorrect": true,
+        "rationale": "After mitral closure, isovolumic contraction raises ventricular pressure while both valves prevent a volume change."
+      },
+      {
+        "text": "Filling before mitral closure",
+        "isCorrect": false,
+        "rationale": "Before mitral closure, filling is still increasing ventricular volume. Volume would need to rise rather than remain fixed."
+      }
+    ]
+  },
+  {
+    "question": "Which pair of derived cardiovascular variables shares stroke volume as a direct component of its defining equation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define cardiac output, stroke volume, and ejection fraction",
+    "options": [
+      {
+        "text": "Preload and afterload",
+        "isCorrect": false,
+        "rationale": "Preload and afterload are loading conditions, not equations containing stroke volume. The pair would need to be defined by end-diastolic loading and opposing pressure."
+      },
+      {
+        "text": "Resistance and conductance",
+        "isCorrect": false,
+        "rationale": "Conductance is the reciprocal of resistance, and neither definition directly contains stroke volume. The question would need to concern reciprocal vascular properties."
+      },
+      {
+        "text": "Pressure and tension",
+        "isCorrect": false,
+        "rationale": "Tension relates to pressure, radius, and wall thickness. Stroke volume is not a direct component of this relation."
+      },
+      {
+        "text": "Preload and ejection fraction",
+        "isCorrect": false,
+        "rationale": "Ejection fraction directly contains stroke volume, but preload does not. Cardiac output would need to replace preload."
+      },
+      {
+        "text": "Cardiac output and ejection fraction",
+        "isCorrect": true,
+        "rationale": "Cardiac output equals SV × HR, while ejection fraction equals SV/EDV. Both therefore depend directly on stroke volume."
+      }
+    ]
+  },
+  {
+    "question": "A 24-year-old patient has acute volume loss. End-diastolic volume falls while arterial pressure and inotropy remain unchanged. Which immediate hemodynamic change is most consistent with the length-dependent mechanism?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss tension-length relationship in cardiac muscle (Frank-Starling Law).",
+    "options": [
+      {
+        "text": "Decreased stroke volume",
+        "isCorrect": true,
+        "rationale": "Lower end-diastolic volume reduces preload and initial fiber length, decreasing Frank-Starling force and stroke volume."
+      },
+      {
+        "text": "Increased stroke volume",
+        "isCorrect": false,
+        "rationale": "Increased stroke volume would follow greater end-diastolic filling when other factors are constant. The volume change would need to reverse."
+      },
+      {
+        "text": "Increased ejection pressure",
+        "isCorrect": false,
+        "rationale": "The specified change primarily reduces length-dependent force rather than increasing ejection pressure. Greater filling or contractility would be needed."
+      },
+      {
+        "text": "Increased ventricular preload",
+        "isCorrect": false,
+        "rationale": "Acute volume loss lowers rather than raises preload. Hypervolemia or increased end-diastolic volume would support this option."
+      },
+      {
+        "text": "Unchanged cardiac output",
+        "isCorrect": false,
+        "rationale": "With heart rate otherwise unchanged, the fall in stroke volume lowers cardiac output. A compensating heart-rate increase would be required, but none is stated."
+      }
+    ]
+  },
+  {
+    "question": "A 48-year-old patient develops increased circulating volume. Heart rate, arterial pressure, and myocardial inotropy are unchanged. Which sequence best explains the resulting change in minute-by-minute pumping?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss tension-length relationship in cardiac muscle (Frank-Starling Law).",
+    "options": [
+      {
+        "text": "Lower EDV → lower SV → lower CO",
+        "isCorrect": false,
+        "rationale": "Increased circulating volume should not lower end-diastolic volume. This sequence would fit hypovolemia."
+      },
+      {
+        "text": "Higher EDV → higher SV → higher CO",
+        "isCorrect": true,
+        "rationale": "Greater filling raises preload, strengthens contraction through the Frank-Starling mechanism, increases stroke volume, and thereby increases cardiac output."
+      },
+      {
+        "text": "Higher ESV → lower SV → lower CO",
+        "isCorrect": false,
+        "rationale": "The defining change is increased filling, not an isolated increase in residual volume. Increased afterload or reduced contractility would be needed to support higher ESV."
+      },
+      {
+        "text": "Lower ESV → lower SV → higher CO",
+        "isCorrect": false,
+        "rationale": "Lower end-systolic volume generally increases, rather than decreases, stroke volume when end-diastolic volume is fixed. The middle step is directionally incorrect."
+      },
+      {
+        "text": "Higher EDV → lower SV → unchanged CO",
+        "isCorrect": false,
+        "rationale": "With other determinants constant, greater end-diastolic volume raises stroke volume. A counteracting increase in afterload would be needed for stroke volume to fall."
+      }
+    ]
+  },
+  {
+    "question": "A 61-year-old patient has persistently elevated systemic arterial pressure. Ventricular filling and intracellular Ca2+ handling are unchanged. Which alteration most directly challenges left ventricular ejection?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define preload and afterload and list conditions that can change them such as hypo- or hypervolemia, or hypertension)",
+    "options": [
+      {
+        "text": "Reduced end-diastolic load",
+        "isCorrect": false,
+        "rationale": "The stem does not indicate reduced filling. A fall in end-diastolic volume would be needed to lower preload."
+      },
+      {
+        "text": "Reduced aortic opposing pressure",
+        "isCorrect": false,
+        "rationale": "Systemic arterial pressure is elevated, so the opposing pressure is increased rather than reduced. Arterial pressure would need to fall."
+      },
+      {
+        "text": "Increased aortic opposing pressure",
+        "isCorrect": true,
+        "rationale": "Elevated aortic pressure increases left ventricular afterload, increasing the load against which the ventricle must eject."
+      },
+      {
+        "text": "Increased pulmonary opposing pressure",
+        "isCorrect": false,
+        "rationale": "Pulmonary artery pressure determines right ventricular afterload. Pulmonary rather than systemic pressure would need to be elevated."
+      },
+      {
+        "text": "Reduced intracellular calcium availability",
+        "isCorrect": false,
+        "rationale": "The stem holds intracellular Ca2+ handling constant, excluding reduced contractility. A decrease in Ca2+ availability would be required."
+      }
+    ]
+  },
+  {
+    "question": "A 55-year-old patient has elevated pulmonary artery pressure with unchanged aortic pressure and ventricular filling. Which chamber-load relationship is most directly altered?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define preload and afterload and list conditions that can change them such as hypo- or hypervolemia, or hypertension)",
+    "options": [
+      {
+        "text": "Increased left ventricular preload",
+        "isCorrect": false,
+        "rationale": "Pulmonary artery pressure is not the stated determinant of left ventricular preload. Increased left end-diastolic volume would be needed."
+      },
+      {
+        "text": "Increased left ventricular afterload",
+        "isCorrect": false,
+        "rationale": "Left ventricular afterload depends on aortic pressure, which is unchanged. Aortic pressure would need to rise."
+      },
+      {
+        "text": "Increased right ventricular preload",
+        "isCorrect": false,
+        "rationale": "The altered measurement is an outflow pressure rather than end-diastolic loading. Right ventricular end-diastolic volume would need to increase."
+      },
+      {
+        "text": "Increased right ventricular afterload",
+        "isCorrect": true,
+        "rationale": "The right ventricle pumps against pulmonary artery pressure, so elevation of that pressure increases right ventricular afterload."
+      },
+      {
+        "text": "Reduced right ventricular afterload",
+        "isCorrect": false,
+        "rationale": "An elevated pulmonary artery pressure raises rather than lowers opposing load. The pressure would need to decrease."
+      }
+    ]
+  },
+  {
+    "question": "A 46-year-old patient receives stimulation that raises cAMP in cardiomyocytes. Initial fiber length and arterial pressure remain constant. Which cellular change most directly produces the expected pumping response?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe heart contractility and explain mechanisms that regulate it.",
+    "options": [
+      {
+        "text": "Decreased intracellular Ca2+",
+        "isCorrect": false,
+        "rationale": "Decreasing intracellular Ca2+ produces negative rather than positive inotropy. cAMP would need to fall in the pathway described."
+      },
+      {
+        "text": "Decreased sarcoplasmic Ca2+ release",
+        "isCorrect": false,
+        "rationale": "Decreased release lowers available intracellular Ca2+ and force. Reduced rather than enhanced contractility would have to be observed."
+      },
+      {
+        "text": "Decreased ventricular preload",
+        "isCorrect": false,
+        "rationale": "Preload is held constant through unchanged initial fiber length. A reduced end-diastolic volume would be required."
+      },
+      {
+        "text": "Increased ventricular afterload",
+        "isCorrect": false,
+        "rationale": "Afterload is held constant through unchanged arterial pressure. A pressure increase would be required."
+      },
+      {
+        "text": "Increased intracellular Ca2+",
+        "isCorrect": true,
+        "rationale": "Increased cAMP during β1 adrenergic stimulation increases contractile force through greater intracellular Ca2+ availability."
+      }
+    ]
+  },
+  {
+    "question": "A 39-year-old patient has selective activation of cardiac muscarinic receptors. Which regional mechanical change should occur through the associated second-messenger effect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe heart contractility and explain mechanisms that regulate it.",
+    "options": [
+      {
+        "text": "Reduced atrial force",
+        "isCorrect": true,
+        "rationale": "Muscarinic stimulation decreases cAMP and produces a negative inotropic effect in the atria."
+      },
+      {
+        "text": "Increased atrial force",
+        "isCorrect": false,
+        "rationale": "Increased atrial force would require positive inotropy, such as β1 adrenergic stimulation with increased cAMP."
+      },
+      {
+        "text": "Reduced ventricular force",
+        "isCorrect": false,
+        "rationale": "The specified parasympathetic cardiac effect is limited to the atria because the relevant innervation is atrial. The affected region would need to be atrial."
+      },
+      {
+        "text": "Increased ventricular force",
+        "isCorrect": false,
+        "rationale": "Muscarinic signaling decreases rather than increases contractility, and the described innervation does not target ventricular muscle. β1 stimulation would be required."
+      },
+      {
+        "text": "Unchanged atrial force",
+        "isCorrect": false,
+        "rationale": "Active muscarinic stimulation decreases atrial contractility. Absence of receptor stimulation would support no change."
+      }
+    ]
+  },
+  {
+    "question": "A 57-year-old patient has end-diastolic volume of 150 mL and end-systolic volume of 90 mL. Which value best represents the fraction of ventricular filling expelled per beat?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define cardiac output, stroke volume, and ejection fraction",
+    "options": [
+      {
+        "text": "30 percent",
+        "isCorrect": false,
+        "rationale": "Thirty percent does not follow from the supplied volumes. An ejected volume of 45 mL from 150 mL would be required."
+      },
+      {
+        "text": "40 percent",
+        "isCorrect": true,
+        "rationale": "Stroke volume is 150 - 90 = 60 mL, and 60/150 × 100 gives an ejection fraction of 40%."
+      },
+      {
+        "text": "50 percent",
+        "isCorrect": false,
+        "rationale": "A 50% ejection fraction would require a 75-mL stroke volume from the stated end-diastolic volume."
+      },
+      {
+        "text": "60 percent",
+        "isCorrect": false,
+        "rationale": "This confuses the 60-mL stroke volume with a percentage. End-diastolic volume would need to be 100 mL for 60%."
+      },
+      {
+        "text": "90 percent",
+        "isCorrect": false,
+        "rationale": "This incorrectly converts the 90-mL end-systolic volume into a percentage. A 135-mL stroke volume would be required for 90%."
+      }
+    ]
+  },
+  {
+    "question": "A 32-year-old patient has a stroke volume of 80 mL and heart rate of 75 beats/min. Which calculated value represents total ventricular ejection per minute?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define cardiac output, stroke volume, and ejection fraction",
+    "options": [
+      {
+        "text": "4.0 L/min",
+        "isCorrect": false,
+        "rationale": "This value does not equal the product of the supplied variables. It would require a heart rate of 50 beats/min at the same stroke volume."
+      },
+      {
+        "text": "5.0 L/min",
+        "isCorrect": false,
+        "rationale": "This would require a heart rate of 62.5 beats/min with an 80-mL stroke volume."
+      },
+      {
+        "text": "6.0 L/min",
+        "isCorrect": true,
+        "rationale": "Cardiac output equals 80 mL/beat × 75 beats/min = 6000 mL/min, or 6.0 L/min."
+      },
+      {
+        "text": "7.5 L/min",
+        "isCorrect": false,
+        "rationale": "This would require a stroke volume of 100 mL at the stated heart rate."
+      },
+      {
+        "text": "8.0 L/min",
+        "isCorrect": false,
+        "rationale": "This would require a heart rate of 100 beats/min at the stated stroke volume."
+      }
+    ]
+  },
+  {
+    "question": "A 64-year-old patient has cardiac output of 4.8 L/min and body surface area of 1.6 m2. Which value best expresses pumping capacity normalized for body size?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define cardiac output, stroke volume, and ejection fraction",
+    "options": [
+      {
+        "text": "1.6 L/min/m2",
+        "isCorrect": false,
+        "rationale": "This repeats the body-surface-area number rather than dividing output by area. A cardiac output of 2.56 L/min would produce this value."
+      },
+      {
+        "text": "2.0 L/min/m2",
+        "isCorrect": false,
+        "rationale": "This would follow from a cardiac output of 3.2 L/min with the stated surface area."
+      },
+      {
+        "text": "2.4 L/min/m2",
+        "isCorrect": false,
+        "rationale": "This would follow from a cardiac output of 3.84 L/min with the stated surface area."
+      },
+      {
+        "text": "3.0 L/min/m2",
+        "isCorrect": true,
+        "rationale": "Cardiac index equals cardiac output divided by body surface area: 4.8/1.6 = 3.0 L/min/m2."
+      },
+      {
+        "text": "4.8 L/min/m2",
+        "isCorrect": false,
+        "rationale": "This leaves cardiac output unadjusted for body surface area. A surface area of 1.0 m2 would be required."
+      }
+    ]
+  },
+  {
+    "question": "A 52-year-old patient undergoes ventricular monitoring. Pressure rises at fixed volume, then volume falls as pressure initially rises and subsequently falls. Which valve-event sequence brackets these phases?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe pressure-volume loop that is how volume and pressure change during heart cycle.",
+    "options": [
+      {
+        "text": "Mitral opening → aortic closure",
+        "isCorrect": false,
+        "rationale": "Mitral opening begins filling, not isovolumic contraction. The initial event would need to be mitral closure."
+      },
+      {
+        "text": "Aortic closure → mitral opening",
+        "isCorrect": false,
+        "rationale": "These events bracket isovolumic relaxation rather than contraction and ejection. Pressure would fall at fixed volume."
+      },
+      {
+        "text": "Aortic opening → mitral closure",
+        "isCorrect": false,
+        "rationale": "This reverses the sequence and places an outflow event before the end of filling. Mitral closure must precede aortic opening."
+      },
+      {
+        "text": "Mitral opening → mitral closure",
+        "isCorrect": false,
+        "rationale": "These events bracket ventricular filling, during which volume rises. The described phases are systolic."
+      },
+      {
+        "text": "Mitral closure → aortic closure",
+        "isCorrect": true,
+        "rationale": "Mitral closure begins isovolumic contraction; aortic opening then permits ejection, and aortic closure ends the ejection phase."
+      }
+    ]
+  },
+  {
+    "question": "A 45-year-old patient has ventricular pressure falling rapidly with no change in ventricular volume. Which next valve event normally ends this phase?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe pressure-volume loop that is how volume and pressure change during heart cycle.",
+    "options": [
+      {
+        "text": "Mitral valve opening",
+        "isCorrect": true,
+        "rationale": "Falling pressure at constant volume identifies isovolumic relaxation, which ends when the mitral valve opens and filling begins."
+      },
+      {
+        "text": "Mitral valve closure",
+        "isCorrect": false,
+        "rationale": "Mitral closure precedes isovolumic contraction, when pressure rises at constant volume. The pressure direction would need to reverse."
+      },
+      {
+        "text": "Aortic valve opening",
+        "isCorrect": false,
+        "rationale": "Aortic opening ends isovolumic contraction and begins ejection. The preceding phase would require rising ventricular pressure."
+      },
+      {
+        "text": "Aortic valve closure",
+        "isCorrect": false,
+        "rationale": "Aortic closure begins the described relaxation phase rather than ending it. The question would need to ask which event initiates the phase."
+      },
+      {
+        "text": "Mitral valve reopening",
+        "isCorrect": false,
+        "rationale": "Although this sounds similar to the correct event, the standard loop identifies the event simply as mitral opening at point A. A prior opening within the same cycle is not part of the stated sequence."
+      }
+    ]
+  },
+  {
+    "question": "A 58-year-old patient has a pressure-volume loop extending from 55 mL to 135 mL along the volume axis. Which value represents the blood expelled during each contraction?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe pressure-volume loop that is how volume and pressure change during heart cycle.",
+    "options": [
+      {
+        "text": "55 mL",
+        "isCorrect": false,
+        "rationale": "This is the end-systolic volume rather than the ejected volume. End-diastolic volume would need to be 110 mL for a 55-mL stroke volume."
+      },
+      {
+        "text": "70 mL",
+        "isCorrect": false,
+        "rationale": "This does not equal the horizontal difference. An end-diastolic volume of 125 mL with the same end-systolic volume would produce 70 mL."
+      },
+      {
+        "text": "80 mL",
+        "isCorrect": true,
+        "rationale": "The loop width equals stroke volume: 135 mL - 55 mL = 80 mL."
+      },
+      {
+        "text": "135 mL",
+        "isCorrect": false,
+        "rationale": "This is the end-diastolic volume, not the amount ejected. End-systolic volume would need to be zero for this stroke volume."
+      },
+      {
+        "text": "190 mL",
+        "isCorrect": false,
+        "rationale": "This adds the two endpoint volumes instead of subtracting them. The calculation must use end-diastolic minus end-systolic volume."
+      }
+    ]
+  },
+  {
+    "question": "A 67-year-old patient has reduced myocardial Ca2+ availability. End-diastolic volume and arterial pressure are unchanged. Which derived measurement most directly reflects the resulting impairment in ventricular emptying?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define cardiac output, stroke volume, and ejection fraction",
+    "options": [
+      {
+        "text": "Increased cardiac index",
+        "isCorrect": false,
+        "rationale": "Reduced contractility would not be expected to increase body-size-normalized output. Stroke volume would need to increase."
+      },
+      {
+        "text": "Increased ejection fraction",
+        "isCorrect": false,
+        "rationale": "Ejection fraction rises with more effective emptying, not reduced contractility. Greater intracellular Ca2+ availability would be required."
+      },
+      {
+        "text": "Unchanged ejection fraction",
+        "isCorrect": false,
+        "rationale": "The source identifies decreased ejection fraction as an indicator of decreased contractility. Preserved contractility would be required for no change."
+      },
+      {
+        "text": "Decreased ejection fraction",
+        "isCorrect": true,
+        "rationale": "Reduced intracellular Ca2+ lowers contractility, reducing the fraction of end-diastolic volume ejected per contraction."
+      },
+      {
+        "text": "Increased loop width",
+        "isCorrect": false,
+        "rationale": "Loop width represents stroke volume and would not increase with impaired emptying under the stated constants. Enhanced contractility would be needed."
+      }
+    ]
+  },
+  {
+    "question": "A 50-year-old patient has reduced end-diastolic filling. A proposed intervention restores ventricular filling without directly changing arterial pressure or intracellular Ca2+. Which immediate mechanism best accounts for improved ejection?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss tension-length relationship in cardiac muscle (Frank-Starling Law).",
+    "options": [
+      {
+        "text": "Reduced myocardial fiber stretch",
+        "isCorrect": false,
+        "rationale": "Restored filling increases rather than reduces fiber stretch. Reduced filling would be needed for this option."
+      },
+      {
+        "text": "Increased myocardial fiber stretch",
+        "isCorrect": true,
+        "rationale": "Restoring end-diastolic filling increases preload and myocardial length, optimizing actin-myosin overlap and increasing stroke volume."
+      },
+      {
+        "text": "Increased aortic opposing pressure",
+        "isCorrect": false,
+        "rationale": "The intervention does not alter arterial pressure, and increased afterload would oppose ejection. A rise in aortic pressure would be required."
+      },
+      {
+        "text": "Reduced intracellular calcium concentration",
+        "isCorrect": false,
+        "rationale": "Intracellular Ca2+ is unchanged, and reducing it would decrease contractility. A direct negative inotropic intervention would be required."
+      },
+      {
+        "text": "Reduced actin-myosin bridge formation",
+        "isCorrect": false,
+        "rationale": "Improved length-dependent contraction involves more favorable overlap and more cross-bridge formation. Excessively reduced overlap would be required for this option."
+      }
+    ]
+  },
+  {
+    "question": "A 43-year-old patient has an unchanged heart rate and end-diastolic volume, but stroke volume rises after sympathetic stimulation. Which mechanism best explains the higher minute output?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe heart contractility and explain mechanisms that regulate it.",
+    "options": [
+      {
+        "text": "Muscarinic activation lowers cAMP",
+        "isCorrect": false,
+        "rationale": "Lower cAMP produces negative atrial inotropy rather than the observed increase. Muscarinic stimulation would need to replace sympathetic stimulation."
+      },
+      {
+        "text": "β1 activation lowers cAMP",
+        "isCorrect": false,
+        "rationale": "β1 stimulation increases rather than lowers cAMP. The second-messenger direction would need to reverse."
+      },
+      {
+        "text": "Muscarinic activation raises cAMP",
+        "isCorrect": false,
+        "rationale": "Muscarinic stimulation decreases cAMP and does not mediate the stated sympathetic response. β1 stimulation would be required."
+      },
+      {
+        "text": "β1 activation increases cAMP",
+        "isCorrect": true,
+        "rationale": "Sympathetic β1 stimulation increases cAMP and contractility, raising stroke volume and therefore cardiac output at unchanged heart rate."
+      },
+      {
+        "text": "β1 activation reduces Ca2+",
+        "isCorrect": false,
+        "rationale": "Reduced intracellular Ca2+ would decrease force. The Ca2+ effect must favor increased availability to explain the response."
+      }
+    ]
+  },
+  {
+    "question": "A 60-year-old patient has an end-diastolic volume of 140 mL. After an increase in opposing arterial pressure, end-systolic volume rises from 60 mL to 80 mL while heart rate is unchanged. Which change follows directly?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Define cardiac output, stroke volume, and ejection fraction",
+    "options": [
+      {
+        "text": "Stroke volume rises by 20 mL",
+        "isCorrect": false,
+        "rationale": "Stroke volume falls because more blood remains after ejection. End-systolic volume would need to decrease by 20 mL for stroke volume to rise."
+      },
+      {
+        "text": "Ejection fraction rises with afterload",
+        "isCorrect": false,
+        "rationale": "The higher end-systolic volume reduces stroke volume and therefore ejection fraction. End-systolic volume would need to fall."
+      },
+      {
+        "text": "Cardiac output remains unchanged",
+        "isCorrect": false,
+        "rationale": "With unchanged heart rate, reduced stroke volume reduces cardiac output. A compensating increase in heart rate would be required."
+      },
+      {
+        "text": "Preload falls by 20 mL",
+        "isCorrect": false,
+        "rationale": "Preload is represented by end-diastolic loading, which remains at 140 mL. End-diastolic volume would need to fall."
+      },
+      {
+        "text": "Stroke volume falls by 20 mL",
+        "isCorrect": true,
+        "rationale": "Stroke volume changes from 140 - 60 = 80 mL to 140 - 80 = 60 mL, a decrease of 20 mL."
+      }
+    ]
+  }
+]
