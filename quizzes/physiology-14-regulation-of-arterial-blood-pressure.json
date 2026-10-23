@@ -1,0 +1,962 @@
+[
+  {
+    "question": "Which relationship best expresses the principal determinants of mean arterial pressure?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "List key physiological variables that influence arterial blood pressure, such as cardiac output and total peripheral resistance. Differentiate “fast” (reflex, neural) and “slow” (volume regulation by the kidney) mechanisms of blood pressure control.",
+    "options": [
+      {
+        "text": "Cardiac output times total peripheral resistance",
+        "isCorrect": true,
+        "rationale": "Mean arterial pressure is determined principally by cardiac output multiplied by total peripheral resistance. These variables represent pump function and systemic vessel resistance."
+      },
+      {
+        "text": "Cardiac output divided by peripheral resistance",
+        "isCorrect": false,
+        "rationale": "Resistance is multiplied by cardiac output rather than used as a divisor. This would become correct only if the governing pressure-flow relationship were defined differently."
+      },
+      {
+        "text": "Stroke volume times central venous pressure",
+        "isCorrect": false,
+        "rationale": "Stroke volume contributes to cardiac output, but central venous pressure is small enough to be neglected here. This would fit only if those two variables directly defined arterial pressure."
+      },
+      {
+        "text": "Pulse pressure times systemic blood volume",
+        "isCorrect": false,
+        "rationale": "Neither pulse pressure nor blood volume is used in the stated multiplicative relationship. This would fit only if the requested quantity were defined by those factors."
+      },
+      {
+        "text": "Diastolic pressure times total peripheral resistance",
+        "isCorrect": false,
+        "rationale": "Diastolic pressure helps estimate mean pressure but is not multiplied by resistance to determine it. This would fit only if cardiac output were replaced by an equivalent flow term."
+      }
+    ]
+  },
+  {
+    "question": "Which paired locations contain the principal arterial pressure sensors?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the role of baroreceptors in the control of blood pressure, including baroreflex arch and key brain centers that control SNS and PNS output, such as RVLM and nucleus ambiguous, respectively. Explain how baroreceptors respond to an increase or decrease in blood pressure and their role in the orthostatic response.",
+    "options": [
+      {
+        "text": "Vena cava and atria",
+        "isCorrect": false,
+        "rationale": "These are low-pressure cardiopulmonary receptor locations. This pair would be correct if the question asked where circulating-volume fullness is sensed."
+      },
+      {
+        "text": "Pulmonary artery and pulmonary vein",
+        "isCorrect": false,
+        "rationale": "These vessels contain low-pressure cardiopulmonary mechanoreceptors. This pair would fit if the task concerned effective arterial volume rather than arterial pressure."
+      },
+      {
+        "text": "Carotid sinus and aortic arch",
+        "isCorrect": true,
+        "rationale": "High-pressure baroreceptors monitor arterial pressure from the carotid sinus and aortic arch. Their stretch-dependent firing initiates the rapid baroreflex."
+      },
+      {
+        "text": "Afferent arterioles and renal pelvis",
+        "isCorrect": false,
+        "rationale": "Afferent arteriolar mechanoreceptors participate in renin release, whereas the renal pelvis is not identified as an arterial baroreceptor site. This would fit only for a renal perfusion-sensing question with a different second site."
+      },
+      {
+        "text": "Left atrium and vena cava",
+        "isCorrect": false,
+        "rationale": "These are low-pressure volume-sensing regions rather than the principal arterial sensor pair. This would fit if the question asked about cardiopulmonary receptor locations."
+      }
+    ]
+  },
+  {
+    "question": "Which medullary region provides major excitatory drive to sympathetic nerves controlling the vasculature?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the role of baroreceptors in the control of blood pressure, including baroreflex arch and key brain centers that control SNS and PNS output, such as RVLM and nucleus ambiguous, respectively. Explain how baroreceptors respond to an increase or decrease in blood pressure and their role in the orthostatic response.",
+    "options": [
+      {
+        "text": "Nucleus of the tractus solitarius",
+        "isCorrect": false,
+        "rationale": "The NTS receives arterial afferents and excites downstream centers rather than supplying the major sympathetic vasomotor drive. It would be correct if the task asked for the termination site of baroreceptor afferents."
+      },
+      {
+        "text": "Caudal ventrolateral medullary region",
+        "isCorrect": false,
+        "rationale": "The CVLM supplies inhibitory input to the sympathetic center. It would be correct if the task asked for the GABAergic relay that restrains sympathetic outflow."
+      },
+      {
+        "text": "Dorsal motor vagal nucleus",
+        "isCorrect": false,
+        "rationale": "This nucleus primarily contains vagal motor neurons projecting to the gastrointestinal tract. It would fit if the task concerned that vagal motor function."
+      },
+      {
+        "text": "Nucleus ambiguous parasympathetic region",
+        "isCorrect": false,
+        "rationale": "The nucleus ambiguous provides cardiac parasympathetic output rather than sympathetic vascular excitation. It would fit if the task asked for the cardiac decelerator center."
+      },
+      {
+        "text": "Rostral ventrolateral medullary region",
+        "isCorrect": true,
+        "rationale": "The RVLM is a major source of excitatory input to sympathetic nerves controlling vessels. Disinhibition of this region raises sympathetic outflow."
+      }
+    ]
+  },
+  {
+    "question": "Which hormone is released when increased atrial stretch signals excessive circulating volume?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Discuss the role of “slow” regulators of blood pressure, including regulation of extracellular fluid volume, renin-angiotensin-aldosterone system, antidiuretic hormone, and atrial natriuretic peptide.",
+    "options": [
+      {
+        "text": "Renin from juxtaglomerular cells",
+        "isCorrect": false,
+        "rationale": "Renin increases when renal perfusion falls, not when atrial stretch indicates volume expansion. It would fit a low-pressure, low-perfusion state."
+      },
+      {
+        "text": "Atrial natriuretic peptide from atrium",
+        "isCorrect": true,
+        "rationale": "Atrial stretch releases atrial natriuretic peptide, which promotes sodium excretion. This converts a volume-expansion signal into a natriuretic response."
+      },
+      {
+        "text": "Angiotensin II from circulation",
+        "isCorrect": false,
+        "rationale": "Angiotensin II supports vasoconstriction and sodium retention during low volume. It would fit activation of the renin-angiotensin-aldosterone system."
+      },
+      {
+        "text": "Antidiuretic hormone from hypothalamic signaling",
+        "isCorrect": false,
+        "rationale": "Antidiuretic hormone is reduced when effective circulating volume rises. It would fit decreased volume or an osmolality signal that stimulates secretion."
+      },
+      {
+        "text": "Aldosterone from hormonal activation",
+        "isCorrect": false,
+        "rationale": "Aldosterone belongs to the salt-retaining response to low effective arterial volume. It would fit a state activating the renin-angiotensin-aldosterone system."
+      }
+    ]
+  },
+  {
+    "question": "A rise in arterial pressure increases receptor stretch. Which combined autonomic change returns pressure toward baseline?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the role of baroreceptors in the control of blood pressure, including baroreflex arch and key brain centers that control SNS and PNS output, such as RVLM and nucleus ambiguous, respectively. Explain how baroreceptors respond to an increase or decrease in blood pressure and their role in the orthostatic response.",
+    "options": [
+      {
+        "text": "Increased sympathetic and decreased parasympathetic output",
+        "isCorrect": false,
+        "rationale": "This pattern corrects a pressure decrease, not an increase. It would be correct after reduced receptor stretch and firing."
+      },
+      {
+        "text": "Decreased sympathetic and decreased parasympathetic output",
+        "isCorrect": false,
+        "rationale": "Sympathetic withdrawal is appropriate, but parasympathetic output should rise. This would fit only if the cardiac vagal pathway were not activated."
+      },
+      {
+        "text": "Increased sympathetic and increased parasympathetic output",
+        "isCorrect": false,
+        "rationale": "The two limbs do not both increase during the stated response. This would require simultaneous activation not described by the baroreflex pathway."
+      },
+      {
+        "text": "Decreased sympathetic and increased parasympathetic output",
+        "isCorrect": true,
+        "rationale": "Greater receptor firing inhibits sympathetic drive while stimulating cardiac parasympathetic output. Cardiac output and total peripheral resistance consequently fall."
+      },
+      {
+        "text": "Unchanged sympathetic and increased parasympathetic output",
+        "isCorrect": false,
+        "rationale": "Parasympathetic activation occurs, but sympathetic inhibition is also required. This would fit only if the vascular sympathetic limb remained unaffected."
+      }
+    ]
+  },
+  {
+    "question": "Carotid sinus stretch increases while aortic arch input remains unchanged. Which afferent pathway carries the altered signal?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the role of baroreceptors in the control of blood pressure, including baroreflex arch and key brain centers that control SNS and PNS output, such as RVLM and nucleus ambiguous, respectively. Explain how baroreceptors respond to an increase or decrease in blood pressure and their role in the orthostatic response.",
+    "options": [
+      {
+        "text": "Vagus nerve from aortic arch",
+        "isCorrect": false,
+        "rationale": "The vagus carries aortic arch input, which is unchanged here. It would be correct if the altered stretch originated in the aortic arch."
+      },
+      {
+        "text": "Vagus nerve from carotid sinus",
+        "isCorrect": false,
+        "rationale": "The carotid sinus does not use the vagus as its final cranial afferent. This would require the affected sensor to be in the aortic arch."
+      },
+      {
+        "text": "Glossopharyngeal nerve from aortic arch",
+        "isCorrect": false,
+        "rationale": "The glossopharyngeal pathway serves the carotid sinus rather than the aortic arch. It would fit if the origin were correctly assigned to the carotid sinus."
+      },
+      {
+        "text": "Carotid sinus nerve through glossopharyngeal nerve",
+        "isCorrect": true,
+        "rationale": "Carotid sinus impulses travel through the carotid sinus nerve and then cranial nerve IX. This pathway conveys the increased stretch signal to the brainstem."
+      },
+      {
+        "text": "Cardiopulmonary fibers through vagus nerve",
+        "isCorrect": false,
+        "rationale": "Vagal cardiopulmonary fibers report low-pressure volume status, not selective carotid sinus stretch. They would fit a change in atrial or great-vein fullness."
+      }
+    ]
+  },
+  {
+    "question": "Increased afferent firing activates the NTS. Which sequence most directly lowers sympathetic vascular drive?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the role of baroreceptors in the control of blood pressure, including baroreflex arch and key brain centers that control SNS and PNS output, such as RVLM and nucleus ambiguous, respectively. Explain how baroreceptors respond to an increase or decrease in blood pressure and their role in the orthostatic response.",
+    "options": [
+      {
+        "text": "NTS inhibits CVLM then activates RVLM",
+        "isCorrect": false,
+        "rationale": "The NTS stimulates rather than inhibits the CVLM, and RVLM activity must fall. This would require reversing both relay effects."
+      },
+      {
+        "text": "NTS activates CVLM then inhibits RVLM",
+        "isCorrect": true,
+        "rationale": "The NTS excites CVLM neurons, which inhibit the RVLM through a GABAergic relay. Reduced RVLM activity lowers sympathetic vasomotor output."
+      },
+      {
+        "text": "NTS activates RVLM then inhibits CVLM",
+        "isCorrect": false,
+        "rationale": "Direct RVLM activation would increase sympathetic output. This would fit a pressor pathway rather than the response to increased receptor firing."
+      },
+      {
+        "text": "NTS inhibits nucleus ambiguous then activates RVLM",
+        "isCorrect": false,
+        "rationale": "The NTS stimulates the nucleus ambiguous and restrains the RVLM indirectly. This would fit only if the pressure signal were reduced and the NTS pathway withdrawn."
+      },
+      {
+        "text": "NTS activates nucleus ambiguous then activates RVLM",
+        "isCorrect": false,
+        "rationale": "Nucleus ambiguous activation lowers heart rate, but RVLM activation would oppose the pressure-lowering response. This would require sympathetic excitation rather than inhibition."
+      }
+    ]
+  },
+  {
+    "question": "A selective increase in nucleus ambiguous activity occurs. Which immediate cardiovascular change follows?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the role of baroreceptors in the control of blood pressure, including baroreflex arch and key brain centers that control SNS and PNS output, such as RVLM and nucleus ambiguous, respectively. Explain how baroreceptors respond to an increase or decrease in blood pressure and their role in the orthostatic response.",
+    "options": [
+      {
+        "text": "Increased heart rate through sympathetic output",
+        "isCorrect": false,
+        "rationale": "The nucleus ambiguous is parasympathetic, not sympathetic. This would fit activation of the sympathetic cardiac accelerator pathway."
+      },
+      {
+        "text": "Increased resistance through vascular constriction",
+        "isCorrect": false,
+        "rationale": "Vascular constriction is driven by sympathetic vasomotor output rather than this vagal center. It would fit increased RVLM activity."
+      },
+      {
+        "text": "Increased contractility through sympathetic output",
+        "isCorrect": false,
+        "rationale": "This center does not provide the sympathetic drive that raises contractility. It would fit disinhibition of the RVLM and sympathetic activation."
+      },
+      {
+        "text": "Decreased resistance through direct vasodilation",
+        "isCorrect": false,
+        "rationale": "The nucleus ambiguous primarily controls cardiac parasympathetic output, not direct vascular dilation. This would fit sympathetic withdrawal affecting resistance vessels."
+      },
+      {
+        "text": "Decreased heart rate through vagal output",
+        "isCorrect": true,
+        "rationale": "The nucleus ambiguous contains cardiac preganglionic parasympathetic neurons. Increased vagal output slows the heart and reduces cardiac output."
+      }
+    ]
+  },
+  {
+    "question": "A fall in effective arterial volume is detected by low-pressure mechanoreceptors. Which renal response is appropriate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss function of cardiopulmonary baroreceptors that reside in the low-pressure part of the circulation (list where they are located) and explain how these receptors respond to changes in intravascular volume.",
+    "options": [
+      {
+        "text": "Decreased salt and water retention",
+        "isCorrect": false,
+        "rationale": "Reduced retention would worsen the low-volume signal. It would be correct when effective arterial volume is increased."
+      },
+      {
+        "text": "Increased sodium and water excretion",
+        "isCorrect": false,
+        "rationale": "Excretion is the adaptive response to volume expansion, not contraction. It would fit increased receptor stretch and excessive circulating volume."
+      },
+      {
+        "text": "Increased salt and water retention",
+        "isCorrect": true,
+        "rationale": "Reduced fullness activates a volume-restoring response that increases renal salt and water retention. This expands effective arterial volume toward baseline."
+      },
+      {
+        "text": "Decreased sodium with increased water excretion",
+        "isCorrect": false,
+        "rationale": "The response coordinates retention of both salt and water rather than separating them this way. It would require a different regulatory signal than the described volume decrease."
+      },
+      {
+        "text": "Unchanged sodium and water handling",
+        "isCorrect": false,
+        "rationale": "Cardiopulmonary receptors specifically modulate renal handling when volume changes. This would fit only if effective arterial volume remained stable."
+      }
+    ]
+  },
+  {
+    "question": "Which pairing correctly contrasts rapid and chronic arterial pressure control?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List key physiological variables that influence arterial blood pressure, such as cardiac output and total peripheral resistance. Differentiate “fast” (reflex, neural) and “slow” (volume regulation by the kidney) mechanisms of blood pressure control.",
+    "options": [
+      {
+        "text": "Neural reflex control and renal volume control",
+        "isCorrect": true,
+        "rationale": "Fast regulation uses neural baroreflex pathways, while slow regulation adjusts salt, water, extracellular fluid, and blood volume through the kidneys."
+      },
+      {
+        "text": "Neural volume control and hormonal resistance control",
+        "isCorrect": false,
+        "rationale": "The rapid system mainly changes autonomic output, whereas the chronic system changes renal volume handling. This pairing reverses their defining targets."
+      },
+      {
+        "text": "Renal reflex control and neural sodium control",
+        "isCorrect": false,
+        "rationale": "Renal salt handling is chronic and neural baroreflex control is rapid. This would fit only if the modifiers were exchanged."
+      },
+      {
+        "text": "Hormonal resistance control and mechanical volume control",
+        "isCorrect": false,
+        "rationale": "Hormones can affect resistance, but the defining slow mechanism is renal salt-water balance. This would fit a different classification not used for the stated contrast."
+      },
+      {
+        "text": "Renal resistance control and neural volume control",
+        "isCorrect": false,
+        "rationale": "This reverses the principal roles of the two systems. It would become correct only if rapid neural control primarily regulated volume and chronic renal control primarily regulated resistance."
+      }
+    ]
+  },
+  {
+    "question": "Positive sodium balance persists for several days. Which compartment change best links this state to arterial pressure?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the role of “slow” regulators of blood pressure, including regulation of extracellular fluid volume, renin-angiotensin-aldosterone system, antidiuretic hormone, and atrial natriuretic peptide.",
+    "options": [
+      {
+        "text": "Decreased extracellular fluid compartment size",
+        "isCorrect": false,
+        "rationale": "Positive sodium balance enlarges rather than contracts the extracellular compartment. A decrease would fit negative sodium balance."
+      },
+      {
+        "text": "Increased extracellular fluid compartment size",
+        "isCorrect": true,
+        "rationale": "Extracellular compartment size reflects sodium balance. Sodium retention expands extracellular and circulating volume, supporting higher arterial pressure."
+      },
+      {
+        "text": "Decreased intracellular fluid compartment size",
+        "isCorrect": false,
+        "rationale": "The stated relationship specifically uses extracellular size as the reflection of sodium balance. This would require a different mechanism centered on intracellular volume."
+      },
+      {
+        "text": "Increased intracellular fluid compartment size",
+        "isCorrect": false,
+        "rationale": "The chronic pressure link described is extracellular volume expansion, not isolated intracellular expansion. This would fit only if intracellular solute balance were the tested determinant."
+      },
+      {
+        "text": "Unchanged extracellular fluid compartment size",
+        "isCorrect": false,
+        "rationale": "Persistent positive sodium balance is expected to increase extracellular size. No change would fit neutral sodium balance."
+      }
+    ]
+  },
+  {
+    "question": "Renal perfusion pressure decreases. Which combined response most directly expands extracellular volume?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the role of “slow” regulators of blood pressure, including regulation of extracellular fluid volume, renin-angiotensin-aldosterone system, antidiuretic hormone, and atrial natriuretic peptide.",
+    "options": [
+      {
+        "text": "Reduced renin with increased sodium excretion",
+        "isCorrect": false,
+        "rationale": "Low renal perfusion stimulates renin and favors sodium retention. This pattern would fit volume expansion with suppression of the renin system."
+      },
+      {
+        "text": "Increased ANP with increased sodium excretion",
+        "isCorrect": false,
+        "rationale": "ANP is released with atrial stretch during excessive volume. This would fit increased rather than decreased effective circulating volume."
+      },
+      {
+        "text": "Reduced ADH with increased water excretion",
+        "isCorrect": false,
+        "rationale": "Low volume stimulates rather than suppresses ADH. This pattern would fit increased effective circulating volume."
+      },
+      {
+        "text": "Increased renin with decreased sodium reabsorption",
+        "isCorrect": false,
+        "rationale": "Renin activation ultimately supports sodium retention, not reduced reabsorption. This would require a pathway that uncouples renin from its volume-restoring effects."
+      },
+      {
+        "text": "Increased renin with increased sodium reabsorption",
+        "isCorrect": true,
+        "rationale": "Reduced renal perfusion stimulates juxtaglomerular renin release. The resulting system increases sodium reabsorption and expands extracellular and blood volume."
+      }
+    ]
+  },
+  {
+    "question": "Angiotensin II rises during volume contraction. Which direct renal effect occurs independently of aldosterone?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the role of “slow” regulators of blood pressure, including regulation of extracellular fluid volume, renin-angiotensin-aldosterone system, antidiuretic hormone, and atrial natriuretic peptide.",
+    "options": [
+      {
+        "text": "Increased proximal sodium-hydrogen exchange",
+        "isCorrect": true,
+        "rationale": "Angiotensin II directly stimulates proximal tubular sodium-hydrogen exchange. This increases sodium and bicarbonate reabsorption independently of aldosterone."
+      },
+      {
+        "text": "Decreased proximal sodium-hydrogen exchange",
+        "isCorrect": false,
+        "rationale": "The exchanger is stimulated rather than inhibited by angiotensin II. This would fit suppression of the angiotensin effect."
+      },
+      {
+        "text": "Increased atrial sodium peptide release",
+        "isCorrect": false,
+        "rationale": "Atrial peptide release is controlled by atrial stretch during volume expansion. It would fit excessive circulating volume rather than contraction."
+      },
+      {
+        "text": "Decreased hypothalamic water intake drive",
+        "isCorrect": false,
+        "rationale": "Angiotensin II increases thirst and water intake. A decrease would fit withdrawal of angiotensin signaling during restored volume."
+      },
+      {
+        "text": "Decreased antidiuretic hormone secretion",
+        "isCorrect": false,
+        "rationale": "Angiotensin II stimulates antidiuretic hormone secretion. A decrease would fit volume expansion or reduced angiotensin signaling."
+      }
+    ]
+  },
+  {
+    "question": "Circulating volume increases and stretches the atrium. Which coordinated hormonal pattern promotes restoration toward baseline?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the role of “slow” regulators of blood pressure, including regulation of extracellular fluid volume, renin-angiotensin-aldosterone system, antidiuretic hormone, and atrial natriuretic peptide.",
+    "options": [
+      {
+        "text": "Decreased ANP and increased ADH secretion",
+        "isCorrect": false,
+        "rationale": "Expansion increases ANP and decreases ADH. This opposite pattern would fit a low-volume state."
+      },
+      {
+        "text": "Increased ANP and increased ADH secretion",
+        "isCorrect": false,
+        "rationale": "ANP appropriately rises, but ADH should fall. This would require simultaneous water-retaining signaling despite volume expansion."
+      },
+      {
+        "text": "Decreased ANP and decreased ADH secretion",
+        "isCorrect": false,
+        "rationale": "ADH suppression is appropriate, but atrial stretch should raise ANP. This would fit only if the atrial release mechanism were absent."
+      },
+      {
+        "text": "Increased ANP and decreased ADH secretion",
+        "isCorrect": true,
+        "rationale": "Atrial stretch releases ANP, while increased effective volume suppresses ADH. Together they increase sodium and water loss."
+      },
+      {
+        "text": "Unchanged ANP and unchanged ADH secretion",
+        "isCorrect": false,
+        "rationale": "Both hormones respond to the volume increase. No change would fit stable effective arterial volume without added atrial stretch."
+      }
+    ]
+  },
+  {
+    "question": "A person has a normal nocturnal pressure of 130/80 mm Hg and a sleeping pressure of 116/72 mm Hg. Which classification is most consistent with this pattern?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "List key physiological variables that influence arterial blood pressure, such as cardiac output and total peripheral resistance. Differentiate “fast” (reflex, neural) and “slow” (volume regulation by the kidney) mechanisms of blood pressure control.",
+    "options": [
+      {
+        "text": "Absent nocturnal dipping pattern",
+        "isCorrect": false,
+        "rationale": "The decrease exceeds the 10% threshold, so dipping is present. This would fit a sleeping systolic pressure above 117 mm Hg from a 130 mm Hg baseline."
+      },
+      {
+        "text": "Exaggerated morning surge pattern",
+        "isCorrect": false,
+        "rationale": "Only waking and sleeping values are supplied, not a morning increase. This would require data showing a steep rise after sleep."
+      },
+      {
+        "text": "Normal nocturnal dipping pattern",
+        "isCorrect": true,
+        "rationale": "The systolic decrease is about 11%, within the stated 10-20% sleeping dip. The pattern therefore preserves the expected circadian decline."
+      },
+      {
+        "text": "Late afternoon pressure peak",
+        "isCorrect": false,
+        "rationale": "The values do not identify a late-afternoon maximum. This would require time-series data showing the highest pressure then."
+      },
+      {
+        "text": "Chronic renal volume expansion",
+        "isCorrect": false,
+        "rationale": "These values demonstrate circadian dipping but do not establish chronic volume expansion. That conclusion would require evidence of persistent salt-water retention."
+      }
+    ]
+  },
+  {
+    "question": "A 24-year-old stands abruptly and briefly becomes lightheaded. Venous return and stroke volume fall. Which neural response most directly restores arterial pressure?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the role of baroreceptors in the control of blood pressure, including baroreflex arch and key brain centers that control SNS and PNS output, such as RVLM and nucleus ambiguous, respectively. Explain how baroreceptors respond to an increase or decrease in blood pressure and their role in the orthostatic response.",
+    "options": [
+      {
+        "text": "RVLM inhibition with decreased sympathetic output",
+        "isCorrect": false,
+        "rationale": "This would further reduce pressure after standing. It would be correct during an arterial pressure increase with enhanced baroreceptor firing."
+      },
+      {
+        "text": "Nucleus ambiguous stimulation with increased vagal output",
+        "isCorrect": false,
+        "rationale": "Standing withdraws rather than increases cardiac parasympathetic output. This would fit elevated arterial pressure and increased receptor firing."
+      },
+      {
+        "text": "CVLM stimulation with increased RVLM inhibition",
+        "isCorrect": false,
+        "rationale": "The CVLM brake is weakened during the orthostatic response. Increased CVLM activity would fit a pressure rise requiring sympathetic suppression."
+      },
+      {
+        "text": "NTS stimulation with decreased vascular resistance",
+        "isCorrect": false,
+        "rationale": "Afferent input to the NTS falls after standing, and resistance must increase. This would fit increased pressure with enhanced receptor firing."
+      },
+      {
+        "text": "RVLM disinhibition with increased sympathetic output",
+        "isCorrect": true,
+        "rationale": "Reduced arterial stretch lowers afferent firing, weakening NTS-CVLM inhibition of the RVLM. The disinhibited RVLM increases sympathetic support of resistance, venous return, contractility, and heart rate."
+      }
+    ]
+  },
+  {
+    "question": "A 68-year-old has acute blood loss with reduced arterial pressure. Which change occurs first in the high-pressure sensor pathway?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the role of baroreceptors in the control of blood pressure, including baroreflex arch and key brain centers that control SNS and PNS output, such as RVLM and nucleus ambiguous, respectively. Explain how baroreceptors respond to an increase or decrease in blood pressure and their role in the orthostatic response.",
+    "options": [
+      {
+        "text": "Decreased stretch and decreased afferent firing",
+        "isCorrect": true,
+        "rationale": "Lower arterial pressure reduces deformation of carotid and aortic endings, so their firing falls. This initiates the rapid compensatory autonomic response."
+      },
+      {
+        "text": "Increased stretch and increased afferent firing",
+        "isCorrect": false,
+        "rationale": "These changes follow a pressure rise, not blood loss. They would fit acute arterial hypertension or volume expansion raising arterial pressure."
+      },
+      {
+        "text": "Increased stretch and decreased afferent firing",
+        "isCorrect": false,
+        "rationale": "Stretch and firing change in the same direction in this system. This pattern would require an inverse receptor response not described."
+      },
+      {
+        "text": "Decreased stretch and increased afferent firing",
+        "isCorrect": false,
+        "rationale": "Reduced stretch lowers, rather than raises, firing. This would require the sensor to respond inversely to arterial pressure."
+      },
+      {
+        "text": "Unchanged stretch and unchanged afferent firing",
+        "isCorrect": false,
+        "rationale": "Acute blood loss lowers pressure and therefore alters both stretch and firing. No change would fit stable arterial pressure."
+      }
+    ]
+  },
+  {
+    "question": "A 70-year-old rises from bed. Heart rate fails to increase despite an initial pressure drop. Dysfunction of which efferent adjustment best explains this finding?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the role of baroreceptors in the control of blood pressure, including baroreflex arch and key brain centers that control SNS and PNS output, such as RVLM and nucleus ambiguous, respectively. Explain how baroreceptors respond to an increase or decrease in blood pressure and their role in the orthostatic response.",
+    "options": [
+      {
+        "text": "Increase of cardiac parasympathetic output",
+        "isCorrect": false,
+        "rationale": "Parasympathetic output should decrease, not increase, after standing. Increased output would fit elevated pressure requiring slower heart rate."
+      },
+      {
+        "text": "Withdrawal of vascular sympathetic output",
+        "isCorrect": false,
+        "rationale": "Vascular sympathetic output should increase, but its failure primarily impairs constriction rather than directly identifying the absent heart-rate response. It would fit failure to raise resistance."
+      },
+      {
+        "text": "Withdrawal of cardiac parasympathetic output",
+        "isCorrect": true,
+        "rationale": "Reduced baroreceptor input withdraws nucleus ambiguous stimulation, decreasing vagal restraint of the heart. Failure of this adjustment can prevent the expected heart-rate rise."
+      },
+      {
+        "text": "Increase of CVLM inhibitory output",
+        "isCorrect": false,
+        "rationale": "CVLM inhibition of RVLM should weaken after standing. An increase would fit a high-pressure baroreflex response."
+      },
+      {
+        "text": "Increase of arterial afferent firing",
+        "isCorrect": false,
+        "rationale": "Standing initially decreases afferent firing. An increase would fit rising arterial pressure and would slow rather than accelerate the heart."
+      }
+    ]
+  },
+  {
+    "question": "A 52-year-old has persistently elevated arterial pressure, and the sensor reflex now operates around that higher level. Which adaptation is most consistent with this observation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the role of baroreceptors in the control of blood pressure, including baroreflex arch and key brain centers that control SNS and PNS output, such as RVLM and nucleus ambiguous, respectively. Explain how baroreceptors respond to an increase or decrease in blood pressure and their role in the orthostatic response.",
+    "options": [
+      {
+        "text": "Increased cardiopulmonary receptor volume sensitivity",
+        "isCorrect": false,
+        "rationale": "The stated adaptation concerns arterial baroreceptor sensitivity, not low-pressure volume receptors. This would fit an altered response to vascular fullness."
+      },
+      {
+        "text": "Shifted arterial baroreceptor pressure sensitivity",
+        "isCorrect": true,
+        "rationale": "Hypertension is associated with a shift in baroreceptor sensitivity. The rapid reflex can therefore regulate around an elevated pressure rather than normalizing chronic pressure completely."
+      },
+      {
+        "text": "Decreased renal perfusion receptor sensitivity",
+        "isCorrect": false,
+        "rationale": "Renal afferent arteriolar sensing governs renin release, not resetting of the rapid arterial reflex. This would fit altered renin responses to renal perfusion."
+      },
+      {
+        "text": "Increased atrial stretch hormone sensitivity",
+        "isCorrect": false,
+        "rationale": "Atrial stretch controls ANP release but does not define the stated arterial reflex adaptation. This would fit altered natriuretic signaling during volume expansion."
+      },
+      {
+        "text": "Decreased hypothalamic osmoreceptor pressure sensitivity",
+        "isCorrect": false,
+        "rationale": "Osmoreceptors regulate ADH in response to osmolality, with volume input modulating secretion. This would fit an osmolality-control abnormality rather than arterial reflex resetting."
+      }
+    ]
+  },
+  {
+    "question": "A 44-year-old with reduced effective circulating volume has increased thirst and water conservation. Which mediator links the low-volume state to both responses?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the role of “slow” regulators of blood pressure, including regulation of extracellular fluid volume, renin-angiotensin-aldosterone system, antidiuretic hormone, and atrial natriuretic peptide.",
+    "options": [
+      {
+        "text": "Atrial natriuretic peptide signaling",
+        "isCorrect": false,
+        "rationale": "ANP promotes sodium excretion during atrial stretch and volume excess. It would fit increased effective circulating volume rather than contraction."
+      },
+      {
+        "text": "Reduced renin release signaling",
+        "isCorrect": false,
+        "rationale": "Low renal perfusion increases rather than reduces renin release. Reduced renin would fit restored or expanded volume."
+      },
+      {
+        "text": "Reduced sympathetic renal signaling",
+        "isCorrect": false,
+        "rationale": "Renal sympathetic stimulation increases renin secretion during low pressure. Reduced signaling would fit a state not requiring volume restoration."
+      },
+      {
+        "text": "Angiotensin II hypothalamic signaling",
+        "isCorrect": true,
+        "rationale": "Angiotensin II acts on the hypothalamus to increase thirst and stimulate ADH secretion. Water intake and retention then expand total body water and pressure."
+      },
+      {
+        "text": "Atrial stretch natriuretic signaling",
+        "isCorrect": false,
+        "rationale": "Atrial stretch signaling indicates excessive volume and promotes natriuresis. It would fit volume expansion with increased ANP release."
+      }
+    ]
+  },
+  {
+    "question": "A 36-year-old has acute volume contraction and reduced renal perfusion. Which cellular event is the initiating renal step in the chronic pressure response?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the role of “slow” regulators of blood pressure, including regulation of extracellular fluid volume, renin-angiotensin-aldosterone system, antidiuretic hormone, and atrial natriuretic peptide.",
+    "options": [
+      {
+        "text": "Atrial cells release natriuretic peptide",
+        "isCorrect": false,
+        "rationale": "Atrial peptide release follows increased atrial stretch, not reduced renal perfusion. It would fit circulating-volume expansion."
+      },
+      {
+        "text": "Proximal cells suppress sodium-hydrogen exchange",
+        "isCorrect": false,
+        "rationale": "Angiotensin II stimulates this exchanger during volume contraction. Suppression would fit withdrawal of angiotensin signaling."
+      },
+      {
+        "text": "Juxtaglomerular cells convert prorenin into renin",
+        "isCorrect": true,
+        "rationale": "Afferent arteriolar mechanoreceptors sense reduced renal perfusion, and juxtaglomerular cells convert prorenin to renin and release it. This initiates the slow hormonal response."
+      },
+      {
+        "text": "Hypothalamic cells suppress antidiuretic hormone",
+        "isCorrect": false,
+        "rationale": "Volume contraction stimulates rather than suppresses ADH secretion. Suppression would fit increased effective circulating volume."
+      },
+      {
+        "text": "Atrial cells reduce sodium excretion",
+        "isCorrect": false,
+        "rationale": "The initiating renal event is renin release, not an atrial cellular action. Reduced natriuretic drive could accompany low volume, but it would not be the specified renal initiating step."
+      }
+    ]
+  },
+  {
+    "question": "A 61-year-old with reduced circulating volume receives a β1 agonist. Which renal hormonal change is expected to support pressure restoration?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the role of “slow” regulators of blood pressure, including regulation of extracellular fluid volume, renin-angiotensin-aldosterone system, antidiuretic hormone, and atrial natriuretic peptide.",
+    "options": [
+      {
+        "text": "Decreased renin secretion from juxtaglomerular cells",
+        "isCorrect": false,
+        "rationale": "β1 stimulation increases rather than decreases renin secretion. Decreased renin would fit restored renal perfusion without sympathetic stimulation."
+      },
+      {
+        "text": "Increased ANP secretion from stretched atrial cells",
+        "isCorrect": false,
+        "rationale": "ANP release depends on atrial stretch during volume expansion, not β1 stimulation in contraction. It would fit increased atrial fullness."
+      },
+      {
+        "text": "Decreased ADH secretion from volume-receptor input",
+        "isCorrect": false,
+        "rationale": "Low volume stimulates ADH through cardiopulmonary input. Decreased ADH would fit effective volume expansion."
+      },
+      {
+        "text": "Increased renin secretion from juxtaglomerular cells",
+        "isCorrect": true,
+        "rationale": "Renal sympathetic stimulation and β1 agonists increase juxtaglomerular renin secretion. The downstream system supports vasoconstriction and salt-water retention."
+      },
+      {
+        "text": "Increased sodium excretion from atrial signaling",
+        "isCorrect": false,
+        "rationale": "Natriuresis is adaptive during volume excess, not contraction. It would fit increased atrial stretch and ANP release."
+      }
+    ]
+  },
+  {
+    "question": "A 58-year-old has excessive effective circulating volume and increased atrial stretch. What is the next best physiologic step for restoring volume?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the role of “slow” regulators of blood pressure, including regulation of extracellular fluid volume, renin-angiotensin-aldosterone system, antidiuretic hormone, and atrial natriuretic peptide.",
+    "options": [
+      {
+        "text": "Increase renal sodium and water retention",
+        "isCorrect": false,
+        "rationale": "Retention would worsen volume excess. It would be appropriate when effective arterial volume is reduced."
+      },
+      {
+        "text": "Increase renal sodium and water excretion",
+        "isCorrect": true,
+        "rationale": "Increased fullness activates natriuretic mechanisms and suppresses ADH, promoting salt and water loss. This returns effective arterial volume toward baseline."
+      },
+      {
+        "text": "Increase renin and aldosterone system activity",
+        "isCorrect": false,
+        "rationale": "This system expands volume and would oppose correction. It would fit reduced renal perfusion and low effective volume."
+      },
+      {
+        "text": "Increase hypothalamic thirst and water intake",
+        "isCorrect": false,
+        "rationale": "Thirst supports volume restoration during contraction, not expansion. It would fit increased angiotensin II signaling."
+      },
+      {
+        "text": "Increase proximal sodium and bicarbonate reabsorption",
+        "isCorrect": false,
+        "rationale": "This angiotensin II effect retains sodium during low volume. It would fit activation of the renin-angiotensin system."
+      }
+    ]
+  },
+  {
+    "question": "A 63-year-old has expanded effective arterial volume. Which cellular mechanism of the adaptive atrial signal best promotes recovery?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the role of “slow” regulators of blood pressure, including regulation of extracellular fluid volume, renin-angiotensin-aldosterone system, antidiuretic hormone, and atrial natriuretic peptide.",
+    "options": [
+      {
+        "text": "Atrial stretch releases a natriuretic peptide",
+        "isCorrect": true,
+        "rationale": "Mechanical atrial stretch releases ANP from a larger precursor. The circulating peptide functions as a natriuretic hormone and promotes sodium loss."
+      },
+      {
+        "text": "Atrial stretch releases a sodium-retaining peptide",
+        "isCorrect": false,
+        "rationale": "The atrial product is natriuretic rather than sodium-retaining. A retaining signal would fit low effective volume, not atrial overfilling."
+      },
+      {
+        "text": "Renal stretch releases a natriuretic peptide",
+        "isCorrect": false,
+        "rationale": "The described peptide is released from the atrium, not renal stretch sensors. This would require a renal source that is not part of the stated pathway."
+      },
+      {
+        "text": "Atrial relaxation releases a natriuretic peptide",
+        "isCorrect": false,
+        "rationale": "Increased stretch, not relaxation, controls release. This would fit only if reduced atrial filling stimulated secretion."
+      },
+      {
+        "text": "Atrial stretch releases antidiuretic hormone",
+        "isCorrect": false,
+        "rationale": "Volume expansion decreases ADH, and ADH is not the atrial natriuretic signal. This would fit neither the source nor the direction of the response."
+      }
+    ]
+  },
+  {
+    "question": "A 60-year-old has low effective arterial volume with plasma osmolality unchanged. Which signal can still increase water conservation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss function of cardiopulmonary baroreceptors that reside in the low-pressure part of the circulation (list where they are located) and explain how these receptors respond to changes in intravascular volume.",
+    "options": [
+      {
+        "text": "Increased atrial stretch suppressing ADH secretion",
+        "isCorrect": false,
+        "rationale": "Low volume decreases atrial and cardiopulmonary stretch and stimulates ADH. This pattern would fit volume expansion."
+      },
+      {
+        "text": "Increased arterial firing suppressing ADH secretion",
+        "isCorrect": false,
+        "rationale": "The relevant signal is reduced fullness detected by low-pressure receptors. Increased arterial firing would fit higher arterial pressure."
+      },
+      {
+        "text": "Increased cardiopulmonary input stimulating ADH secretion",
+        "isCorrect": false,
+        "rationale": "Increased fullness suppresses, rather than stimulates, ADH. This would fit only if the direction of ADH regulation were reversed."
+      },
+      {
+        "text": "Reduced atrial stretch suppressing ADH secretion",
+        "isCorrect": false,
+        "rationale": "Reduced stretch during low volume stimulates water conservation rather than suppression. Suppressed ADH would fit increased effective volume."
+      },
+      {
+        "text": "Reduced cardiopulmonary input stimulating ADH secretion",
+        "isCorrect": true,
+        "rationale": "Cardiopulmonary volume receptors modulate ADH independently of an osmolality change. Hypovolemia therefore stimulates water retention through ADH."
+      }
+    ]
+  },
+  {
+    "question": "A 66-year-old develops volume expansion. Which pair of receptor location and efferent response correctly describes the slow corrective pathway?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss function of cardiopulmonary baroreceptors that reside in the low-pressure part of the circulation (list where they are located) and explain how these receptors respond to changes in intravascular volume.",
+    "options": [
+      {
+        "text": "Pulmonary vessels with reduced renal retention",
+        "isCorrect": true,
+        "rationale": "Cardiopulmonary receptors occupy pulmonary vessels and other low-pressure regions. Increased fullness reduces renal salt-water retention and restores volume."
+      },
+      {
+        "text": "Carotid sinus with increased renal retention",
+        "isCorrect": false,
+        "rationale": "The carotid sinus is a high-pressure sensor, and retention would worsen expansion. This would fit neither the receptor class nor the adaptive renal direction."
+      },
+      {
+        "text": "Aortic arch with decreased renal excretion",
+        "isCorrect": false,
+        "rationale": "The aortic arch belongs to rapid arterial sensing, and reduced excretion worsens excess volume. This would fit pressure sensing with a nonadaptive renal response."
+      },
+      {
+        "text": "Afferent arteriole with increased renal retention",
+        "isCorrect": false,
+        "rationale": "Afferent arteriolar sensing triggers renin during low perfusion, not the cardiopulmonary response to volume expansion. Retention would fit low volume."
+      },
+      {
+        "text": "Carotid body with reduced renal excretion",
+        "isCorrect": false,
+        "rationale": "The relevant arterial site is the carotid sinus, while cardiopulmonary receptors govern volume feedback. Reduced excretion would fit low rather than high effective volume."
+      }
+    ]
+  },
+  {
+    "question": "A 59-year-old has an arterial pressure of 120/75 mm Hg. Which calculated value best estimates mean arterial pressure?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "List key physiological variables that influence arterial blood pressure, such as cardiac output and total peripheral resistance. Differentiate “fast” (reflex, neural) and “slow” (volume regulation by the kidney) mechanisms of blood pressure control.",
+    "options": [
+      {
+        "text": "Approximately 75 mm Hg",
+        "isCorrect": false,
+        "rationale": "This uses diastolic pressure alone and ignores one-third of pulse pressure. It would fit only if pulse pressure were zero."
+      },
+      {
+        "text": "Approximately 90 mm Hg",
+        "isCorrect": true,
+        "rationale": "Pulse pressure is 45 mm Hg, and one-third is 15 mm Hg. Adding this to 75 mm Hg gives an estimated mean pressure of 90 mm Hg."
+      },
+      {
+        "text": "Approximately 80 mm Hg",
+        "isCorrect": false,
+        "rationale": "This adds too little of the 45 mm Hg pulse pressure. It would fit a much smaller systolic-diastolic difference."
+      },
+      {
+        "text": "Approximately 85 mm Hg",
+        "isCorrect": false,
+        "rationale": "This remains below diastolic pressure plus one-third of the 45 mm Hg pulse pressure. It would fit a 30 mm Hg pulse pressure."
+      },
+      {
+        "text": "Approximately 105 mm Hg",
+        "isCorrect": false,
+        "rationale": "This adds two-thirds rather than one-third of pulse pressure to diastolic pressure. It would fit a different weighting formula."
+      }
+    ]
+  },
+  {
+    "question": "A 39-year-old has a sudden decrease in cardiac output while arterial pressure is initially preserved. Which immediate compensatory change is required by the pressure relationship?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "List key physiological variables that influence arterial blood pressure, such as cardiac output and total peripheral resistance. Differentiate “fast” (reflex, neural) and “slow” (volume regulation by the kidney) mechanisms of blood pressure control.",
+    "options": [
+      {
+        "text": "Decreased total peripheral resistance",
+        "isCorrect": false,
+        "rationale": "Lower resistance would compound the fall in cardiac output and reduce pressure. It would fit a need to lower elevated pressure."
+      },
+      {
+        "text": "Decreased effective circulating volume",
+        "isCorrect": false,
+        "rationale": "Reduced volume would lower venous return and worsen output. It would fit a pressure-lowering response to excessive volume."
+      },
+      {
+        "text": "Increased sodium and water excretion",
+        "isCorrect": false,
+        "rationale": "Excretion acts slowly and would reduce volume, opposing pressure preservation. It would fit chronic correction of volume expansion."
+      },
+      {
+        "text": "Increased total peripheral resistance",
+        "isCorrect": true,
+        "rationale": "Because pressure approximates cardiac output times total peripheral resistance, resistance must rise if output falls while pressure is preserved. The rapid reflex supplies this compensation through vasoconstriction."
+      },
+      {
+        "text": "Decreased sympathetic vasomotor output",
+        "isCorrect": false,
+        "rationale": "Sympathetic withdrawal lowers resistance and would not preserve pressure. It would fit an acute pressure increase."
+      }
+    ]
+  },
+  {
+    "question": "A 57-year-old has a sustained increase in renal salt retention. Which sequence best explains the eventual arterial pressure increase?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the role of “slow” regulators of blood pressure, including regulation of extracellular fluid volume, renin-angiotensin-aldosterone system, antidiuretic hormone, and atrial natriuretic peptide.",
+    "options": [
+      {
+        "text": "Extracellular contraction then reduced circulating volume",
+        "isCorrect": false,
+        "rationale": "Salt retention expands rather than contracts extracellular volume. This sequence would fit negative sodium balance."
+      },
+      {
+        "text": "Intracellular expansion then decreased peripheral resistance",
+        "isCorrect": false,
+        "rationale": "The stated sodium-balance marker is extracellular size, and decreased resistance would oppose a pressure rise. This would require a different compartment and vascular response."
+      },
+      {
+        "text": "Extracellular expansion then decreased circulating volume",
+        "isCorrect": false,
+        "rationale": "Extracellular expansion is not followed by reduced circulating volume in the stated model. This would require fluid to remain excluded from the vascular compartment."
+      },
+      {
+        "text": "Intracellular contraction then increased peripheral resistance",
+        "isCorrect": false,
+        "rationale": "The slow volume mechanism is tied to extracellular sodium balance, not intracellular contraction. This would fit a different solute disturbance with compensatory vasoconstriction."
+      },
+      {
+        "text": "Extracellular expansion then increased circulating volume",
+        "isCorrect": true,
+        "rationale": "Positive sodium balance enlarges the extracellular compartment and circulating volume. Increased volume supports greater cardiac output and arterial pressure."
+      }
+    ]
+  },
+  {
+    "question": "A 45-year-old has expanded circulating volume and elevated central fullness. Which next physiologic response most directly opposes further water retention?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the role of “slow” regulators of blood pressure, including regulation of extracellular fluid volume, renin-angiotensin-aldosterone system, antidiuretic hormone, and atrial natriuretic peptide.",
+    "options": [
+      {
+        "text": "Increase antidiuretic hormone secretion",
+        "isCorrect": false,
+        "rationale": "Increased ADH would retain more water and worsen expansion. It would fit hypovolemia or an appropriate osmolality stimulus."
+      },
+      {
+        "text": "Increase angiotensin II thirst signaling",
+        "isCorrect": false,
+        "rationale": "This would increase water intake and oppose correction. It would fit low renal perfusion and reduced circulating volume."
+      },
+      {
+        "text": "Decrease antidiuretic hormone secretion",
+        "isCorrect": true,
+        "rationale": "Increased effective circulating volume suppresses ADH. Reduced water reabsorption then helps return volume toward baseline."
+      },
+      {
+        "text": "Increase renin secretion from kidneys",
+        "isCorrect": false,
+        "rationale": "Renin promotes salt-water restoration and is appropriate during low perfusion. It would fit volume contraction rather than expansion."
+      },
+      {
+        "text": "Increase proximal sodium reabsorption",
+        "isCorrect": false,
+        "rationale": "Greater proximal sodium reabsorption supports volume retention. It would fit angiotensin II activation during volume depletion."
+      }
+    ]
+  }
+]
