@@ -3456,19 +3456,20 @@ f. Same grammatical structure for ALL options (all noun phrases, or all complete
 g. Forbidden: parentheticals like "(X because Y)"; hedges ("likely due to"); any phrase that makes one option feel more complete or authoritative; "All of the above"; "None of the above"; "Both A and B"; references to other options.
 h. Homogeneous types (all enzymes, all diagnoses, all antibody isotypes, all signaling molecules, all sites of action). Mixed types (e.g., three drugs and two side effects) are dead options students skip. If a fifth same-category choice is hard, invent a near-miss—do not emit four options.
 i. The student must know the material. Never let wording give the answer away (length tell, extra clause only on the key, placeholder distractors beside a fully formed key). Put explanations in the stem or rationale, not the choice.
+j. SINGLE BEST ANSWER (DISQUALIFYING): Exactly one option is medically correct for this stem. If two options could both be true, rewrite the stem or the distractor until only one remains correct. Never mark a true statement wrong because of phrasing, "not what was asked," or a wording technicality — that is a second key. A distractor must be factually wrong for this patient, mechanism, or LO.
 
 6. ANSWER POSITION BALANCE:
 Distribute keys across A, B, C, D, and E. Each letter should be correct approximately 6 times across 30 questions. No letter may be correct more than 7 times. Randomize positions. NEVER use the same key position for more than 2 consecutive items. If an item has more than five options, the key may be any of those letters and must still be randomized.
 
 7. RATIONALE — every option:
 a. Correct: 1-2 sentences of mechanism or contrast; name the concept; do not merely restate the fact; no source-pointers.
-b. Incorrect: the specific reason it fails, and what finding would have to change for it to be correct.
+b. Incorrect: name the medical reason it fails for THIS stem (wrong mechanism, cell, drug class, or step) and what finding would make it correct. Forbidden: "not specifically what the question is asking," "phrasing," "wording," "too general," "technically true but…". If you need those excuses, replace the option — it is a second key.
 c. If any rationale content is your inference rather than a stated source fact, say so there.
 
 8. NO FORMATTING CUES: Do not bold, italicize, or otherwise mark any option. Teach the medicine; do not cite the deck.
 
 9. OUTPUT FORMAT
-Return ONLY a valid JSON array. No preamble, markdown fences, commentary, or extra keys. Use this schema only. Before emitting, search each item's "question" string: if it contains "lecture" in any case, rewrite that stem until the word is gone (rationales may keep it). Then verify every item: at least five homogeneous options (prefer five; never fewer); +-2 word parity across ALL options; exactly one isCorrect true; difficulty_order matches the assigned mix; cited_learning_objective is the named LO; no source-pointers in question text.
+Return ONLY a valid JSON array. No preamble, markdown fences, commentary, or extra keys. Use this schema only. Before emitting, search each item's "question" string: if it contains "lecture" in any case, rewrite that stem until the word is gone (rationales may keep it). Then verify every item: at least five homogeneous options (prefer five; never fewer); +-2 word parity across ALL options; exactly one isCorrect true and no second keys; incorrect rationales cite a medical failure not a phrasing quibble; difficulty matches a USMLE-style medical school exam (1st-order high-yield lecture facts; 2nd/3rd NBME-style application, not trivia or trick wording); difficulty_order matches the assigned mix; cited_learning_objective is the named LO; no source-pointers in question text.
 
 10. CHARACTER ENCODING (CRITICAL)
 a. Valid UTF-8 JSON. Never emit mojibake (â, Â², Â°, Âµ, or Windows-1252 artifacts).
@@ -3501,6 +3502,12 @@ const LS_CHANGELOG_SEEN='medstep_changelog_seen';
 const LS_CHANGELOG_OPEN='medstep_changelog_open';
 const CHANGELOG_VISIBLE_COUNT=3;
 const MEDSTEP_CHANGELOG=[
+  {
+    id:'2026-10-23-single-best-answer',
+    date:'2026-10-23',
+    title:'Single-best-answer quality lock',
+    body:'Copy Master Prompt now forbids second keys. If two options are both medically true, the item must be rewritten. Incorrect rationales have to name a real medical failure — not “phrasing” or “not what the question was asking.” Difficulty stays USMLE-style medical school exam level.'
+  },
   {
     id:'2026-10-20-home-button',
     date:'2026-10-20',
