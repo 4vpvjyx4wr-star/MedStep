@@ -1,0 +1,962 @@
+[
+  {
+    "question": "Which phase accounts for approximately 60% of a cardiac cycle at 75 beats/min?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe cardiac cycle and Pressure Volume (PV) loop. Infer parameters that can be estimated from the PV loop.",
+    "options": [
+      {
+        "text": "Ventricular diastole",
+        "isCorrect": true,
+        "rationale": "Diastole is the relaxation and filling period and occupies approximately 60% of the cardiac cycle."
+      },
+      {
+        "text": "Ventricular systole",
+        "isCorrect": false,
+        "rationale": "Systole occupies approximately 40% of the cycle; this would be correct if the question asked about the contraction and ejection period."
+      },
+      {
+        "text": "Isovolumetric contraction",
+        "isCorrect": false,
+        "rationale": "Isovolumetric contraction is only one phase of systole; this would be correct if the question asked about pressure development before ejection."
+      },
+      {
+        "text": "Ventricular ejection",
+        "isCorrect": false,
+        "rationale": "Ventricular ejection is only part of systole; this would be correct if the question asked when ventricular volume decreases."
+      },
+      {
+        "text": "Isovolumetric relaxation",
+        "isCorrect": false,
+        "rationale": "Isovolumetric relaxation is only one phase of diastole; this would be correct if the question asked about pressure decline at constant volume."
+      }
+    ]
+  },
+  {
+    "question": "Which electrocardiographic deflection is primarily produced by atrial depolarization?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Appreciate the timeline of heart cycle and correlate cardiac cycle with ECG.",
+    "options": [
+      {
+        "text": "QRS complex",
+        "isCorrect": false,
+        "rationale": "The QRS complex is dominated by ventricular depolarization; this would be correct if ventricular electrical activation were being tested."
+      },
+      {
+        "text": "P wave",
+        "isCorrect": true,
+        "rationale": "The P wave primarily represents atrial depolarization and precedes atrial systole."
+      },
+      {
+        "text": "T wave",
+        "isCorrect": false,
+        "rationale": "The T wave represents ventricular repolarization; this would be correct if ventricular electrical recovery were being tested."
+      },
+      {
+        "text": "Q wave",
+        "isCorrect": false,
+        "rationale": "The Q wave is a component of the ventricular depolarization complex; this would be correct only if a component within the QRS complex were requested."
+      },
+      {
+        "text": "R wave",
+        "isCorrect": false,
+        "rationale": "The R wave is a component of the ventricular depolarization complex; this would be correct only if the question focused on the QRS complex."
+      }
+    ]
+  },
+  {
+    "question": "Which sound is produced by closure of the atrioventricular valves at the start of ventricular systole?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Correlate opening and closing of heart valves and heart sounds with cardiac cycle and Wiggers diagram.",
+    "options": [
+      {
+        "text": "Second heart sound",
+        "isCorrect": false,
+        "rationale": "The second sound follows semilunar valve closure; this would be correct if the event occurred just after ventricular systole."
+      },
+      {
+        "text": "Third heart sound",
+        "isCorrect": false,
+        "rationale": "The third sound accompanies rapid ventricular filling; this would be correct if the event occurred during early diastolic inflow."
+      },
+      {
+        "text": "First heart sound",
+        "isCorrect": true,
+        "rationale": "The first sound results from vibrations produced by sudden atrioventricular valve closure at the onset of ventricular systole."
+      },
+      {
+        "text": "Split second sound",
+        "isCorrect": false,
+        "rationale": "Physiologic splitting reflects separated aortic and pulmonary valve closure; this would be correct if inspiratory semilunar closure were described."
+      },
+      {
+        "text": "Rapid filling sound",
+        "isCorrect": false,
+        "rationale": "A rapid filling sound corresponds to the third sound rather than atrioventricular valve closure; it would fit early ventricular filling."
+      }
+    ]
+  },
+  {
+    "question": "Which jugular pressure wave is generated primarily by atrial systole?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain Wiggers diagram and elaborate on the pressure, volume, and flow changes that occur during the cardiac cycle in the ventricles, atria and big vessels.",
+    "options": [
+      {
+        "text": "Early c wave",
+        "isCorrect": false,
+        "rationale": "The c wave is associated with early ventricular contraction and valve bulging; it would fit isovolumetric ventricular contraction."
+      },
+      {
+        "text": "Late v wave",
+        "isCorrect": false,
+        "rationale": "The v wave reflects atrial filling against a closed atrioventricular valve; it would fit late ventricular systole."
+      },
+      {
+        "text": "Falling c wave",
+        "isCorrect": false,
+        "rationale": "A falling c-wave component does not identify atrial contraction; it would fit pressure decline after the early contraction-related rise."
+      },
+      {
+        "text": "Atrial a wave",
+        "isCorrect": true,
+        "rationale": "The a wave is produced by atrial systole and the associated rise in atrial and great venous pressure."
+      },
+      {
+        "text": "Rising v wave",
+        "isCorrect": false,
+        "rationale": "The rising v wave reflects continued venous return while the atrioventricular valve is closed; it would fit atrial filling during ventricular systole."
+      }
+    ]
+  },
+  {
+    "question": "A pressure-volume loop has an end-diastolic volume of 130 mL and an end-systolic volume of 50 mL. Which derived value is correct?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe cardiac cycle and Pressure Volume (PV) loop. Infer parameters that can be estimated from the PV loop.",
+    "options": [
+      {
+        "text": "Stroke volume of 50 mL",
+        "isCorrect": false,
+        "rationale": "This incorrectly uses end-systolic volume as stroke volume; it would be correct if end-diastolic volume were 100 mL."
+      },
+      {
+        "text": "Stroke volume of 65 mL",
+        "isCorrect": false,
+        "rationale": "This underestimates the width of the loop; it would be correct if end-systolic volume were 65 mL."
+      },
+      {
+        "text": "Stroke volume of 70 mL",
+        "isCorrect": false,
+        "rationale": "This value falls within the stated resting range but does not match the given volumes; it would be correct if end-systolic volume were 60 mL."
+      },
+      {
+        "text": "Stroke volume of 75 mL",
+        "isCorrect": false,
+        "rationale": "This does not equal end-diastolic minus end-systolic volume; it would be correct if end-systolic volume were 55 mL."
+      },
+      {
+        "text": "Stroke volume of 80 mL",
+        "isCorrect": true,
+        "rationale": "Stroke volume equals end-diastolic volume minus end-systolic volume, so 130 mL minus 50 mL equals 80 mL."
+      }
+    ]
+  },
+  {
+    "question": "A heart completes 75 cycles each minute. Which duration most closely represents one complete cycle?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Appreciate the timeline of heart cycle and correlate cardiac cycle with ECG.",
+    "options": [
+      {
+        "text": "0.8 seconds per cycle",
+        "isCorrect": true,
+        "rationale": "Cycle duration is the reciprocal of heart rate expressed as 60 seconds divided by 75 beats/min, yielding 0.8 seconds."
+      },
+      {
+        "text": "0.6 seconds per cycle",
+        "isCorrect": false,
+        "rationale": "This would correspond to 100 cycles/min rather than 75 cycles/min; the heart rate would need to increase."
+      },
+      {
+        "text": "0.4 seconds per cycle",
+        "isCorrect": false,
+        "rationale": "This would correspond to 150 cycles/min; it would be correct only at a substantially higher heart rate."
+      },
+      {
+        "text": "0.3 seconds per cycle",
+        "isCorrect": false,
+        "rationale": "This corresponds to the stated cycle duration near 200 beats/min; the heart rate would need to be about 200 beats/min."
+      },
+      {
+        "text": "1.0 seconds per cycle",
+        "isCorrect": false,
+        "rationale": "This would correspond to 60 cycles/min; it would be correct if the heart rate were 60 beats/min."
+      }
+    ]
+  },
+  {
+    "question": "During one interval, left ventricular pressure increases while ventricular volume remains constant. Which valve configuration is present?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Correlate opening and closing of heart valves and heart sounds with cardiac cycle and Wiggers diagram.",
+    "options": [
+      {
+        "text": "Mitral open, aortic closed",
+        "isCorrect": false,
+        "rationale": "This configuration permits ventricular filling and increasing volume; it would fit diastolic filling rather than constant-volume contraction."
+      },
+      {
+        "text": "Mitral closed, aortic closed",
+        "isCorrect": true,
+        "rationale": "Both valves are closed during isovolumetric contraction, allowing pressure to rise without a change in ventricular volume."
+      },
+      {
+        "text": "Mitral closed, aortic open",
+        "isCorrect": false,
+        "rationale": "This configuration permits ventricular ejection and decreasing volume; it would fit the ejection phase."
+      },
+      {
+        "text": "Mitral open, aortic open",
+        "isCorrect": false,
+        "rationale": "This does not represent a normal left-sided phase shown in the cardiac cycle; one valve would need to close."
+      },
+      {
+        "text": "Mitral opening, aortic opening",
+        "isCorrect": false,
+        "rationale": "Simultaneous opening does not explain constant ventricular volume; isolated mitral opening would instead initiate filling."
+      }
+    ]
+  },
+  {
+    "question": "During ventricular filling, volume rises rapidly, then slowly, and finally receives an additional increment. Which sequence explains these changes?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain Wiggers diagram and elaborate on the pressure, volume, and flow changes that occur during the cardiac cycle in the ventricles, atria and big vessels.",
+    "options": [
+      {
+        "text": "Ejection, diastasis, atrial systole",
+        "isCorrect": false,
+        "rationale": "Ejection decreases ventricular volume rather than initiating filling; rapid inflow would need to replace ejection."
+      },
+      {
+        "text": "Rapid inflow, ejection, diastasis",
+        "isCorrect": false,
+        "rationale": "Ejection interrupts rather than continues diastolic filling; atrial systole would need to replace ejection."
+      },
+      {
+        "text": "Rapid inflow, diastasis, atrial systole",
+        "isCorrect": true,
+        "rationale": "Ventricular filling progresses through rapid inflow, slower diastasis, and a final atrial contraction that completes filling."
+      },
+      {
+        "text": "Atrial systole, rapid inflow, diastasis",
+        "isCorrect": false,
+        "rationale": "Atrial systole occurs at the end rather than the beginning of ventricular filling; the order would need to be reversed."
+      },
+      {
+        "text": "Diastasis, atrial systole, rapid inflow",
+        "isCorrect": false,
+        "rationale": "This sequence places rapid inflow last instead of first; rapid inflow must follow atrioventricular valve opening."
+      }
+    ]
+  },
+  {
+    "question": "A ventricular tracing shows declining pressure with no change in volume immediately after semilunar valve closure. Which concurrent finding is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Appreciate the timeline of heart cycle and correlate cardiac cycle with ECG.",
+    "options": [
+      {
+        "text": "P wave with first sound",
+        "isCorrect": false,
+        "rationale": "The P wave precedes atrial systole and the first sound marks atrioventricular valve closure; this would fit different parts of the cycle."
+      },
+      {
+        "text": "QRS complex with first sound",
+        "isCorrect": false,
+        "rationale": "The QRS complex and first sound accompany the onset of ventricular contraction; this would fit isovolumetric contraction."
+      },
+      {
+        "text": "QRS complex with second sound",
+        "isCorrect": false,
+        "rationale": "The second sound occurs after ventricular ejection rather than with ventricular depolarization; the electrical event would need to be ventricular repolarization."
+      },
+      {
+        "text": "T wave with second sound",
+        "isCorrect": true,
+        "rationale": "Isovolumetric relaxation follows semilunar closure, producing the second sound and occurring with ventricular repolarization represented by the T wave."
+      },
+      {
+        "text": "T wave with third sound",
+        "isCorrect": false,
+        "rationale": "The third sound occurs during rapid filling after the atrioventricular valve opens; filling rather than constant volume would need to be present."
+      }
+    ]
+  },
+  {
+    "question": "A loop has a stroke volume of 70 mL and an end-diastolic volume of 130 mL. Which estimate is closest to its ejection fraction?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe cardiac cycle and Pressure Volume (PV) loop. Infer parameters that can be estimated from the PV loop.",
+    "options": [
+      {
+        "text": "Approximately 35 percent",
+        "isCorrect": false,
+        "rationale": "This is lower than 70 divided by 130; it would be correct if stroke volume were approximately 46 mL."
+      },
+      {
+        "text": "Approximately 45 percent",
+        "isCorrect": false,
+        "rationale": "This underestimates the fraction ejected; it would fit a stroke volume of approximately 59 mL."
+      },
+      {
+        "text": "Approximately 65 percent",
+        "isCorrect": false,
+        "rationale": "This is the approximate example obtained when 80-90 mL is ejected from 130 mL; a larger stroke volume would be required."
+      },
+      {
+        "text": "Approximately 75 percent",
+        "isCorrect": false,
+        "rationale": "This overestimates the fraction ejected; it would require a stroke volume near 98 mL."
+      },
+      {
+        "text": "Approximately 55 percent",
+        "isCorrect": true,
+        "rationale": "Ejection fraction equals stroke volume divided by end-diastolic volume, and 70 divided by 130 is approximately 54%, closest to 55%."
+      }
+    ]
+  },
+  {
+    "question": "An increase in heart rate from 75/min to 200/min shortens one portion of the cycle disproportionately. Which change is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Appreciate the timeline of heart cycle and correlate cardiac cycle with ECG.",
+    "options": [
+      {
+        "text": "Greater shortening of diastole",
+        "isCorrect": true,
+        "rationale": "Diastole is less fixed than systole and therefore shortens to a much greater degree as heart rate rises."
+      },
+      {
+        "text": "Greater shortening of systole",
+        "isCorrect": false,
+        "rationale": "Systole is comparatively fixed; this would be correct only if systole showed the larger duration change."
+      },
+      {
+        "text": "Equal shortening of both",
+        "isCorrect": false,
+        "rationale": "The two periods do not shorten equally; this would require systolic and diastolic durations to have the same rate dependence."
+      },
+      {
+        "text": "Selective lengthening of diastole",
+        "isCorrect": false,
+        "rationale": "Diastole shortens rather than lengthens as rate rises; this would require a slower rather than faster heart rate."
+      },
+      {
+        "text": "Selective lengthening of systole",
+        "isCorrect": false,
+        "rationale": "Systole also shortens at high rates, although less than diastole; this would require systolic duration to increase."
+      }
+    ]
+  },
+  {
+    "question": "Which paired measurement distinguishes the pressure-volume loop from a time-based Wiggers representation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe cardiac cycle and Pressure Volume (PV) loop. Infer parameters that can be estimated from the PV loop.",
+    "options": [
+      {
+        "text": "Atrial pressure versus time",
+        "isCorrect": false,
+        "rationale": "Atrial pressure plotted over time belongs to the Wiggers representation; it would be correct if the question asked for a time-based curve."
+      },
+      {
+        "text": "Ventricular pressure versus volume",
+        "isCorrect": true,
+        "rationale": "The pressure-volume loop displays ventricular pressure as a function of ventricular volume rather than as a function of time."
+      },
+      {
+        "text": "Aortic pressure versus time",
+        "isCorrect": false,
+        "rationale": "Aortic pressure over time is part of the Wiggers representation; it would fit a time-sequence analysis."
+      },
+      {
+        "text": "Ventricular volume versus time",
+        "isCorrect": false,
+        "rationale": "Ventricular volume over time is shown on the Wiggers diagram; pressure would need to replace time to form the loop."
+      },
+      {
+        "text": "Cardiac sounds versus time",
+        "isCorrect": false,
+        "rationale": "The phonocardiogram is aligned with time in the Wiggers diagram; it does not define a pressure-volume loop."
+      }
+    ]
+  },
+  {
+    "question": "Left ventricular volume is decreasing while atrial pressure is gradually rising because venous return continues. Which atrial wave develops?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain Wiggers diagram and elaborate on the pressure, volume, and flow changes that occur during the cardiac cycle in the ventricles, atria and big vessels.",
+    "options": [
+      {
+        "text": "Descending a wave",
+        "isCorrect": false,
+        "rationale": "The a wave is produced by atrial contraction rather than venous filling during ventricular ejection; atrial systole would need to occur."
+      },
+      {
+        "text": "Ascending c wave",
+        "isCorrect": false,
+        "rationale": "The c wave accompanies early ventricular contraction and valve bulging; the ventricle would need to be in isovolumetric contraction."
+      },
+      {
+        "text": "Ascending v wave",
+        "isCorrect": true,
+        "rationale": "The v wave rises as blood returns to the atrium while the atrioventricular valve remains closed during ventricular systole."
+      },
+      {
+        "text": "Descending v wave",
+        "isCorrect": false,
+        "rationale": "The v wave descends after the atrioventricular valve opens and the atrium empties; ventricular filling would need to have begun."
+      },
+      {
+        "text": "Ascending a wave",
+        "isCorrect": false,
+        "rationale": "An ascending a wave reflects atrial systole; the atrium would need to contract rather than passively fill."
+      }
+    ]
+  },
+  {
+    "question": "Blood accelerates beyond a narrowed valve and changes from silent to audible flow. Which hemodynamic transition accounts for the sound?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Correlate opening and closing of heart valves and heart sounds with cardiac cycle and Wiggers diagram.",
+    "options": [
+      {
+        "text": "Turbulent flow becoming laminar",
+        "isCorrect": false,
+        "rationale": "Laminar flow is nonturbulent and silent; this would fit disappearance rather than production of an audible sound."
+      },
+      {
+        "text": "Static blood becoming laminar",
+        "isCorrect": false,
+        "rationale": "Laminar flow remains silent below the critical velocity; turbulence would need to develop to produce a murmur."
+      },
+      {
+        "text": "Backward flow becoming silent",
+        "isCorrect": false,
+        "rationale": "The sound is linked to turbulence rather than simply flow direction; the flow would need to become turbulent and audible."
+      },
+      {
+        "text": "Laminar flow becoming turbulent",
+        "isCorrect": true,
+        "rationale": "Velocity increases beyond an obstruction and may exceed the critical threshold at which laminar flow becomes turbulent and audible."
+      },
+      {
+        "text": "Pulsatile flow becoming static",
+        "isCorrect": false,
+        "rationale": "Static blood would not explain an obstruction-related murmur; accelerated flow would need to replace static flow."
+      }
+    ]
+  },
+  {
+    "question": "Which ventricular event occurs while aortic pressure briefly exceeds ventricular pressure but blood continues moving outward because of momentum?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain Wiggers diagram and elaborate on the pressure, volume, and flow changes that occur during the cardiac cycle in the ventricles, atria and big vessels.",
+    "options": [
+      {
+        "text": "Early ventricular filling",
+        "isCorrect": false,
+        "rationale": "Early filling occurs after the mitral valve opens and volume increases; the described outward flow would need to become inward flow."
+      },
+      {
+        "text": "Atrial systolic filling",
+        "isCorrect": false,
+        "rationale": "Atrial systole adds the final ventricular filling increment; the ventricle would need to be in late diastole."
+      },
+      {
+        "text": "Isovolumetric ventricular contraction",
+        "isCorrect": false,
+        "rationale": "No blood leaves during isovolumetric contraction because both valves are closed; the aortic valve would need to remain closed."
+      },
+      {
+        "text": "Isovolumetric ventricular relaxation",
+        "isCorrect": false,
+        "rationale": "No blood leaves during isovolumetric relaxation because both valves are closed; outward flow would need to have ended."
+      },
+      {
+        "text": "Late ventricular ejection",
+        "isCorrect": true,
+        "rationale": "Late in systole, blood momentum briefly sustains outward flow even after aortic pressure exceeds left ventricular pressure."
+      }
+    ]
+  },
+  {
+    "question": "A 22-year-old has a soft low-pitched sound approximately one-third of the way through diastole. Ventricular volume is increasing rapidly at that moment. Which event most directly generates this sound?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Correlate opening and closing of heart valves and heart sounds with cardiac cycle and Wiggers diagram.",
+    "options": [
+      {
+        "text": "Rapid ventricular blood inflow",
+        "isCorrect": true,
+        "rationale": "The third heart sound coincides with rapid ventricular filling and is attributed to vibrations generated by the inrush of blood."
+      },
+      {
+        "text": "Sudden atrioventricular valve closure",
+        "isCorrect": false,
+        "rationale": "Atrioventricular valve closure produces the first sound at the start of systole; constant or falling volume would need to replace rapid filling."
+      },
+      {
+        "text": "Sudden semilunar valve closure",
+        "isCorrect": false,
+        "rationale": "Semilunar closure produces the second sound just after systole; the event would need to occur before isovolumetric relaxation."
+      },
+      {
+        "text": "Late atrial muscle contraction",
+        "isCorrect": false,
+        "rationale": "Atrial contraction supplies the final filling increment rather than the early rapid-inflow sound; the sound would need to occur near end-diastole."
+      },
+      {
+        "text": "Early ventricular muscle contraction",
+        "isCorrect": false,
+        "rationale": "Early ventricular contraction is associated with the first sound and rising pressure; diastolic filling would need to be replaced by systole."
+      }
+    ]
+  },
+  {
+    "question": "A 30-year-old develops a sustained rate of 200 beats/min. Ventricular filling and flow to the inner left ventricular muscle are most threatened by loss of which interval?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Appreciate the timeline of heart cycle and correlate cardiac cycle with ECG.",
+    "options": [
+      {
+        "text": "Ventricular ejection interval",
+        "isCorrect": false,
+        "rationale": "Ejection shortens, but filling and subendocardial coronary flow occur during diastole; this would fit a question focused on outward ventricular flow."
+      },
+      {
+        "text": "Ventricular diastolic interval",
+        "isCorrect": true,
+        "rationale": "Diastole shortens disproportionately at high rates and is the period for most ventricular filling, myocardial rest, and subendocardial coronary flow."
+      },
+      {
+        "text": "Atrial depolarization interval",
+        "isCorrect": false,
+        "rationale": "Atrial depolarization initiates atrial activation but is not the full interval supporting ventricular filling and coronary flow; the finding would need to isolate the P wave."
+      },
+      {
+        "text": "Ventricular depolarization interval",
+        "isCorrect": false,
+        "rationale": "Ventricular depolarization is represented mainly by the QRS complex; the threatened functions would need to occur during electrical activation."
+      },
+      {
+        "text": "Ventricular repolarization interval",
+        "isCorrect": false,
+        "rationale": "Repolarization accompanies transition toward relaxation but does not encompass the full filling interval; the finding would need to focus on the T wave."
+      }
+    ]
+  },
+  {
+    "question": "A 68-year-old has accelerated blood flow beyond a narrowed outflow valve and an audible sound over the heart. Which change most directly produced the abnormal sound?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Correlate opening and closing of heart valves and heart sounds with cardiac cycle and Wiggers diagram.",
+    "options": [
+      {
+        "text": "Decreased velocity below critical level",
+        "isCorrect": false,
+        "rationale": "Flow below the critical velocity remains laminar and silent; velocity would need to rise above the threshold."
+      },
+      {
+        "text": "Increased viscosity with reduced velocity",
+        "isCorrect": false,
+        "rationale": "The described mechanism is accelerated flow beyond obstruction rather than reduced velocity; the finding would need to show slower silent flow."
+      },
+      {
+        "text": "Increased velocity above critical level",
+        "isCorrect": true,
+        "rationale": "Narrowing accelerates blood beyond the obstruction, and flow above a critical velocity can become turbulent and generate a murmur."
+      },
+      {
+        "text": "Decreased pressure without flow acceleration",
+        "isCorrect": false,
+        "rationale": "A pressure change without accelerated turbulent flow does not explain the sound; increased downstream velocity would need to be present."
+      },
+      {
+        "text": "Increased volume with silent flow",
+        "isCorrect": false,
+        "rationale": "Silent flow is laminar and does not account for the murmur; the flow pattern would need to become turbulent."
+      }
+    ]
+  },
+  {
+    "question": "A 45-year-old has a left ventricular end-diastolic volume of 130 mL and an end-systolic volume of 50 mL at 75 beats/min. Which calculated output is correct?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe cardiac cycle and Pressure Volume (PV) loop. Infer parameters that can be estimated from the PV loop.",
+    "options": [
+      {
+        "text": "3.75 liters per minute",
+        "isCorrect": false,
+        "rationale": "This treats 50 mL as stroke volume; it would be correct if stroke volume equaled the end-systolic volume."
+      },
+      {
+        "text": "4.50 liters per minute",
+        "isCorrect": false,
+        "rationale": "This corresponds to a stroke volume of 60 mL; it would be correct if end-systolic volume were 70 mL."
+      },
+      {
+        "text": "5.25 liters per minute",
+        "isCorrect": false,
+        "rationale": "This corresponds to a stroke volume of 70 mL; it would be correct if end-systolic volume were 60 mL."
+      },
+      {
+        "text": "6.00 liters per minute",
+        "isCorrect": true,
+        "rationale": "Stroke volume is 130 minus 50, or 80 mL; multiplying 80 mL by 75 beats/min gives 6000 mL/min."
+      },
+      {
+        "text": "9.75 liters per minute",
+        "isCorrect": false,
+        "rationale": "This incorrectly multiplies heart rate by end-diastolic volume; it would be correct only if all 130 mL were ejected each beat."
+      }
+    ]
+  },
+  {
+    "question": "A 57-year-old undergoes simultaneous recording of ventricular pressure and volume. Pressure falls sharply while volume remains at its minimum, and a sound has just occurred. Which valve event produced that sound?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Correlate opening and closing of heart valves and heart sounds with cardiac cycle and Wiggers diagram.",
+    "options": [
+      {
+        "text": "Opening of mitral valve",
+        "isCorrect": false,
+        "rationale": "Mitral opening ends isovolumetric relaxation and initiates rising ventricular volume; volume would need to begin increasing."
+      },
+      {
+        "text": "Closure of mitral valve",
+        "isCorrect": false,
+        "rationale": "Mitral closure initiates isovolumetric contraction at maximal volume; pressure would need to rise from end-diastolic volume."
+      },
+      {
+        "text": "Opening of aortic valve",
+        "isCorrect": false,
+        "rationale": "Aortic opening initiates ejection and decreasing volume; pressure would need to have risen sufficiently during contraction."
+      },
+      {
+        "text": "Opening of pulmonary valve",
+        "isCorrect": false,
+        "rationale": "Pulmonary opening pertains to right ventricular ejection rather than the described left ventricular relaxation; right-sided ejection would need to be recorded."
+      },
+      {
+        "text": "Closure of aortic valve",
+        "isCorrect": true,
+        "rationale": "Aortic valve closure produces the second heart sound and begins isovolumetric relaxation, during which pressure falls at constant end-systolic volume."
+      }
+    ]
+  },
+  {
+    "question": "A 61-year-old has a wide left ventricular pressure-volume loop. Which calculated parameter is represented directly by the horizontal width of this loop?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe cardiac cycle and Pressure Volume (PV) loop. Infer parameters that can be estimated from the PV loop.",
+    "options": [
+      {
+        "text": "Stroke volume",
+        "isCorrect": true,
+        "rationale": "The loop width is the difference between end-diastolic and end-systolic volumes, which defines stroke volume."
+      },
+      {
+        "text": "Cardiac output",
+        "isCorrect": false,
+        "rationale": "Cardiac output additionally requires heart rate; this would be correct if loop width were multiplied by beats per minute."
+      },
+      {
+        "text": "Ejection fraction",
+        "isCorrect": false,
+        "rationale": "Ejection fraction requires dividing stroke volume by end-diastolic volume; this would be correct if the width were expressed as an EDV percentage."
+      },
+      {
+        "text": "Stroke work",
+        "isCorrect": false,
+        "rationale": "Stroke work is estimated using stroke volume and mean arterial pressure; this would be correct if pressure were incorporated."
+      },
+      {
+        "text": "End-diastolic volume",
+        "isCorrect": false,
+        "rationale": "End-diastolic volume is the maximal volume coordinate rather than the loop width; it would fit the rightmost volume point."
+      }
+    ]
+  },
+  {
+    "question": "A 26-year-old has a low-pitched sound during rapid ventricular filling. Which pressure-volume change should occur simultaneously?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain Wiggers diagram and elaborate on the pressure, volume, and flow changes that occur during the cardiac cycle in the ventricles, atria and big vessels.",
+    "options": [
+      {
+        "text": "Constant volume with rising pressure",
+        "isCorrect": false,
+        "rationale": "This describes isovolumetric contraction rather than rapid filling; both valves would need to be closed."
+      },
+      {
+        "text": "Increasing volume with slow pressure rise",
+        "isCorrect": true,
+        "rationale": "During ventricular filling, volume rises while pressure increases only slowly because the ventricle is compliant."
+      },
+      {
+        "text": "Decreasing volume with rising pressure",
+        "isCorrect": false,
+        "rationale": "This describes early ejection rather than diastolic filling; the aortic valve would need to be open."
+      },
+      {
+        "text": "Decreasing volume with falling pressure",
+        "isCorrect": false,
+        "rationale": "This fits later ejection rather than rapid inflow; blood would need to be leaving the ventricle."
+      },
+      {
+        "text": "Constant volume with falling pressure",
+        "isCorrect": false,
+        "rationale": "This describes isovolumetric relaxation before filling; the mitral valve would need to remain closed."
+      }
+    ]
+  },
+  {
+    "question": "A 70-year-old has a tracing in which ventricular pressure begins rising immediately after a depolarization complex, but ventricular volume does not change. Which concurrent atrial event is expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain Wiggers diagram and elaborate on the pressure, volume, and flow changes that occur during the cardiac cycle in the ventricles, atria and big vessels.",
+    "options": [
+      {
+        "text": "Atrial contraction producing a wave",
+        "isCorrect": false,
+        "rationale": "The a wave is generated by atrial systole before ventricular contraction; the tracing would need to show late diastole."
+      },
+      {
+        "text": "Atrial emptying producing v descent",
+        "isCorrect": false,
+        "rationale": "Atrial emptying follows atrioventricular valve opening during filling; ventricular pressure would need to have fallen below atrial pressure."
+      },
+      {
+        "text": "Valve bulging producing c wave",
+        "isCorrect": true,
+        "rationale": "During isovolumetric ventricular contraction, the closed atrioventricular valve bulges into the atrium and contributes to the c wave."
+      },
+      {
+        "text": "Venous filling producing v wave",
+        "isCorrect": false,
+        "rationale": "The v wave mainly develops as venous return fills the atrium during ventricular systole; the tracing would need to progress through ejection."
+      },
+      {
+        "text": "Atrial relaxation producing a wave",
+        "isCorrect": false,
+        "rationale": "The a wave reflects atrial contraction rather than relaxation; the atrium would need to contract to generate it."
+      }
+    ]
+  },
+  {
+    "question": "A 64-year-old has a resting stroke volume of 80 mL and end-diastolic volume of 130 mL. Which interpretation best matches the pressure-volume measurements?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe cardiac cycle and Pressure Volume (PV) loop. Infer parameters that can be estimated from the PV loop.",
+    "options": [
+      {
+        "text": "Ejection fraction near 38 percent",
+        "isCorrect": false,
+        "rationale": "This fraction corresponds approximately to the 50 mL remaining rather than the 80 mL ejected; the numerator would need to be end-systolic volume."
+      },
+      {
+        "text": "Ejection fraction near 50 percent",
+        "isCorrect": false,
+        "rationale": "This would require a stroke volume of about 65 mL; the end-systolic volume would need to be about 65 mL."
+      },
+      {
+        "text": "Ejection fraction near 55 percent",
+        "isCorrect": false,
+        "rationale": "This would fit a stroke volume near 70 mL; the ejected volume would need to be smaller."
+      },
+      {
+        "text": "Ejection fraction near 62 percent",
+        "isCorrect": true,
+        "rationale": "Ejection fraction is stroke volume divided by end-diastolic volume, and 80 divided by 130 is approximately 62%."
+      },
+      {
+        "text": "Ejection fraction near 80 percent",
+        "isCorrect": false,
+        "rationale": "This confuses the stroke-volume value with a percentage; the stroke volume would need to be approximately 104 mL."
+      }
+    ]
+  },
+  {
+    "question": "A 52-year-old has diminished ventricular filling during an extremely rapid rhythm, and cardiac output begins to fall despite the increased rate. Which sequence best explains this change?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Appreciate the timeline of heart cycle and correlate cardiac cycle with ECG.",
+    "options": [
+      {
+        "text": "Shortened systole, increased filling, increased output",
+        "isCorrect": false,
+        "rationale": "The limiting change at very high rates is shortened diastole with compromised filling; increased filling would require adequate diastolic duration."
+      },
+      {
+        "text": "Lengthened diastole, reduced filling, reduced output",
+        "isCorrect": false,
+        "rationale": "Diastole shortens rather than lengthens as rate rises; a slower heart rate would be required for lengthening."
+      },
+      {
+        "text": "Shortened ejection, increased filling, reduced output",
+        "isCorrect": false,
+        "rationale": "Increased filling contradicts the stated compromise at very high rates; diastolic filling would need to remain adequate."
+      },
+      {
+        "text": "Lengthened systole, reduced filling, increased output",
+        "isCorrect": false,
+        "rationale": "Systole does not lengthen with increasing rate, and compromised filling can reduce rather than guarantee increased output."
+      },
+      {
+        "text": "Shortened diastole, reduced filling, reduced output",
+        "isCorrect": true,
+        "rationale": "At very high rates, disproportionate diastolic shortening can compromise ventricular filling enough that cardiac output per minute falls."
+      }
+    ]
+  },
+  {
+    "question": "A 19-year-old has a heart rate of 75 beats/min and a normal cycle duration. Which timing pattern best matches one cycle?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Appreciate the timeline of heart cycle and correlate cardiac cycle with ECG.",
+    "options": [
+      {
+        "text": "0.27-second systole and 0.53-second diastole",
+        "isCorrect": true,
+        "rationale": "At 75 beats/min, the stated cycle duration is 0.80 seconds, with approximately 0.27 seconds of systole and 0.53 seconds of diastole."
+      },
+      {
+        "text": "0.53-second systole and 0.27-second diastole",
+        "isCorrect": false,
+        "rationale": "This reverses the relative durations; it would require systole to occupy the larger portion of the resting cycle."
+      },
+      {
+        "text": "0.16-second systole and 0.14-second diastole",
+        "isCorrect": false,
+        "rationale": "These values correspond to a cycle near 200 beats/min; the heart rate would need to be much higher."
+      },
+      {
+        "text": "0.14-second systole and 0.16-second diastole",
+        "isCorrect": false,
+        "rationale": "This is both reversed and characteristic of a much shorter cycle; the rate would need to approach 200 beats/min."
+      },
+      {
+        "text": "0.40-second systole and 0.40-second diastole",
+        "isCorrect": false,
+        "rationale": "Resting systole and diastole do not divide the cycle equally; diastole would need to shorten while systole lengthened."
+      }
+    ]
+  },
+  {
+    "question": "A 59-year-old has a ventricular pressure tracing with a peak near 25 mm Hg rather than 120 mm Hg, while the sequence of filling, contraction, ejection, and relaxation remains preserved. Which chamber was most likely recorded?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain Wiggers diagram and elaborate on the pressure, volume, and flow changes that occur during the cardiac cycle in the ventricles, atria and big vessels.",
+    "options": [
+      {
+        "text": "Left atrium",
+        "isCorrect": false,
+        "rationale": "The tracing follows ventricular phases rather than atrial pressure waves; an atrial waveform would need to replace the ventricular sequence."
+      },
+      {
+        "text": "Right ventricle",
+        "isCorrect": true,
+        "rationale": "Right and left ventricular cycles have similar event sequences, but peak right ventricular pressure is approximately 25 mm Hg."
+      },
+      {
+        "text": "Left ventricle",
+        "isCorrect": false,
+        "rationale": "Peak left ventricular pressure is approximately 120 mm Hg; the measured peak would need to be substantially higher."
+      },
+      {
+        "text": "Proximal aorta",
+        "isCorrect": false,
+        "rationale": "The aorta does not undergo ventricular filling and isovolumetric phases; an arterial pressure waveform would need to be described."
+      },
+      {
+        "text": "Right atrium",
+        "isCorrect": false,
+        "rationale": "Right atrial pressure is characterized by a, c, and v waves rather than ventricular ejection phases; atrial waves would need to be present."
+      }
+    ]
+  },
+  {
+    "question": "A 33-year-old has a recording showing maximal ventricular volume followed by rising pressure without ejection. Which electrical and acoustic events should occur near the start of this interval?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Appreciate the timeline of heart cycle and correlate cardiac cycle with ECG.",
+    "options": [
+      {
+        "text": "P wave and second sound",
+        "isCorrect": false,
+        "rationale": "The P wave precedes atrial systole and the second sound follows ejection; these events occur at different cycle transitions."
+      },
+      {
+        "text": "T wave and first sound",
+        "isCorrect": false,
+        "rationale": "The T wave represents ventricular repolarization rather than activation; the electrical event would need to be the QRS complex."
+      },
+      {
+        "text": "QRS complex and first sound",
+        "isCorrect": true,
+        "rationale": "Ventricular depolarization initiates systole, and atrioventricular valve closure produces the first sound as isovolumetric contraction begins."
+      },
+      {
+        "text": "QRS complex and second sound",
+        "isCorrect": false,
+        "rationale": "The second sound marks semilunar closure at the end of ejection; the first sound would need to replace it."
+      },
+      {
+        "text": "T wave and third sound",
+        "isCorrect": false,
+        "rationale": "The third sound accompanies rapid filling rather than rising pressure at constant maximal volume; ventricular filling would need to be underway."
+      }
+    ]
+  },
+  {
+    "question": "A 40-year-old has falling ventricular pressure and unchanged end-systolic volume. Which next mechanical event normally ends this interval?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Correlate opening and closing of heart valves and heart sounds with cardiac cycle and Wiggers diagram.",
+    "options": [
+      {
+        "text": "Aortic valve opening",
+        "isCorrect": false,
+        "rationale": "Aortic opening ends isovolumetric contraction and begins ejection; pressure would need to be rising at end-diastolic volume."
+      },
+      {
+        "text": "Aortic valve closure",
+        "isCorrect": false,
+        "rationale": "Aortic closure begins rather than ends isovolumetric relaxation; the interval would need to start at this event."
+      },
+      {
+        "text": "Mitral valve closure",
+        "isCorrect": false,
+        "rationale": "Mitral closure begins isovolumetric contraction; the ventricle would need to be at end-diastolic volume with rising pressure."
+      },
+      {
+        "text": "Mitral valve opening",
+        "isCorrect": true,
+        "rationale": "When ventricular pressure falls sufficiently during isovolumetric relaxation, the mitral valve opens and ventricular filling begins."
+      },
+      {
+        "text": "Pulmonary valve opening",
+        "isCorrect": false,
+        "rationale": "Pulmonary opening starts right ventricular ejection, not left ventricular filling; a right-sided rising-pressure interval would be required."
+      }
+    ]
+  },
+  {
+    "question": "A 28-year-old has an increased heart rate but preserved filling because venous return remains ample. Up to approximately which rate can output continue increasing without the stated filling limitation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Appreciate the timeline of heart cycle and correlate cardiac cycle with ECG.",
+    "options": [
+      {
+        "text": "About 75 beats/min",
+        "isCorrect": false,
+        "rationale": "This is the resting reference rate rather than the stated upper rate for adequate filling; the question would need to ask for baseline timing."
+      },
+      {
+        "text": "About 120 beats/min",
+        "isCorrect": false,
+        "rationale": "This is below the stated approximate threshold; it would be correct only if filling became compromised earlier."
+      },
+      {
+        "text": "About 150 beats/min",
+        "isCorrect": false,
+        "rationale": "This remains below the stated approximate limit; the threshold would need to be reduced."
+      },
+      {
+        "text": "About 230 beats/min",
+        "isCorrect": false,
+        "rationale": "This corresponds to the approximate adult atrioventricular nodal conduction limit, not the rate up to which filling is described as adequate."
+      },
+      {
+        "text": "About 180 beats/min",
+        "isCorrect": true,
+        "rationale": "With ample venous return, ventricular filling is described as adequate up to about 180 beats/min, allowing output to rise with rate."
+      }
+    ]
+  }
+]
