@@ -1,0 +1,994 @@
+[
+  {
+    "question": "Which equation calculates the partial pressure of a gas in a dry mixture?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Analyze the Dalton's low of partial pressures and demonstrate how to use it for calculation of partial pressure of the gases in the mixture",
+    "options": [
+      {
+        "text": "Pgas = Patm × Fgas",
+        "isCorrect": true,
+        "rationale": "Dalton's law states that a gas partial pressure equals total atmospheric pressure multiplied by its fractional concentration."
+      },
+      {
+        "text": "Pgas = Patm ÷ Fgas",
+        "isCorrect": false,
+        "rationale": "Dividing by fractional concentration would increase pressure above total pressure. This would apply only if rearranging the correct equation to solve for Patm."
+      },
+      {
+        "text": "Pgas = Patm + Fgas",
+        "isCorrect": false,
+        "rationale": "Pressure and fractional concentration are not added. Addition applies when individual gas partial pressures are combined to obtain total pressure."
+      },
+      {
+        "text": "Pgas = Patm - Fgas",
+        "isCorrect": false,
+        "rationale": "Subtracting a dimensionless fraction from pressure does not represent Dalton's law. Subtraction is used for water vapor pressure before multiplication in humidified air."
+      },
+      {
+        "text": "Pgas = Fgas ÷ Patm",
+        "isCorrect": false,
+        "rationale": "This reverses the required proportional relationship. It would not produce a gas pressure from the stated quantities."
+      }
+    ]
+  },
+  {
+    "question": "Airway conditioning adds water vapor while total barometric pressure remains unchanged. Which expression determines the resulting oxygen pressure?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze the Dalton's low of partial pressures and demonstrate how to use it for calculation of partial pressure of the gases in the mixture",
+    "options": [
+      {
+        "text": "Patm × FIO2",
+        "isCorrect": false,
+        "rationale": "This expression applies to dry inspired gas. It would be correct before water vapor enters the conducting airways."
+      },
+      {
+        "text": "PH2O × FIO2",
+        "isCorrect": false,
+        "rationale": "Water vapor pressure is not the total pressure available to oxygen. This expression would calculate a fraction of water vapor pressure instead."
+      },
+      {
+        "text": "(Patm - PH2O) × FIO2",
+        "isCorrect": true,
+        "rationale": "Humidification requires subtracting the 47 mm Hg water vapor pressure before applying the oxygen fraction."
+      },
+      {
+        "text": "(Patm + PH2O) × FIO2",
+        "isCorrect": false,
+        "rationale": "Water vapor dilutes the other gases rather than increasing their available pressure. Addition would incorrectly raise inspired oxygen pressure."
+      },
+      {
+        "text": "(Patm - FIO2) × PH2O",
+        "isCorrect": false,
+        "rationale": "This interchanges pressure and fractional concentration in the calculation. It does not represent the humidified-gas adjustment."
+      }
+    ]
+  },
+  {
+    "question": "Which volume includes conducting-airway gas plus gas entering alveoli without pulmonary blood flow?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Understand the anatomic dead space versus alveolar space",
+    "options": [
+      {
+        "text": "Minute ventilation",
+        "isCorrect": false,
+        "rationale": "Minute ventilation is the total air moved each minute. It includes both exchanging and nonexchanging gas volumes."
+      },
+      {
+        "text": "Alveolar ventilation",
+        "isCorrect": false,
+        "rationale": "Alveolar ventilation is room air reaching the respiratory zone each minute after dead-space correction."
+      },
+      {
+        "text": "Anatomic dead space",
+        "isCorrect": false,
+        "rationale": "Anatomic dead space includes only conducting airways through the terminal bronchioles. It excludes unperfused alveoli."
+      },
+      {
+        "text": "Alveolar dead space",
+        "isCorrect": false,
+        "rationale": "Alveolar dead space includes ventilated but unperfused alveoli. It excludes the conducting-airway component."
+      },
+      {
+        "text": "Physiologic dead space",
+        "isCorrect": true,
+        "rationale": "Physiologic dead space is the sum of anatomic dead space and alveolar dead space."
+      }
+    ]
+  },
+  {
+    "question": "A gas is allowed to equilibrate across an air-liquid interface. Which relationship is expected at equilibrium?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the process of dissolving the gas according to the Henry's law",
+    "options": [
+      {
+        "text": "Liquid pressure exceeds gas pressure",
+        "isCorrect": false,
+        "rationale": "A persistent excess would indicate that equilibrium has not been reached. Net gas movement would continue toward the lower-pressure phase."
+      },
+      {
+        "text": "Liquid pressure equals gas pressure",
+        "isCorrect": true,
+        "rationale": "Henry's law describes equality of a gas's partial pressure in liquid and gas phases at equilibrium."
+      },
+      {
+        "text": "Liquid pressure remains permanently zero",
+        "isCorrect": false,
+        "rationale": "Dissolved gas molecules exert pressure in the liquid. Zero pressure would require no dissolved gas."
+      },
+      {
+        "text": "Gas pressure becomes twice liquid pressure",
+        "isCorrect": false,
+        "rationale": "A twofold difference is incompatible with equilibrium. Such a gradient would continue to drive diffusion."
+      },
+      {
+        "text": "Gas pressure falls below liquid pressure",
+        "isCorrect": false,
+        "rationale": "This also represents an unequilibrated pressure gradient. Equality, not a reversed gradient, defines equilibrium."
+      }
+    ]
+  },
+  {
+    "question": "A person has a tidal volume of 500 mL, a respiratory frequency of 12 breaths/min, and a dead-space volume of 150 mL. Which value represents alveolar ventilation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the anatomic dead space versus alveolar space",
+    "options": [
+      {
+        "text": "1,800 mL/min",
+        "isCorrect": false,
+        "rationale": "This multiplies dead-space volume by respiratory frequency. It represents dead-space ventilation rather than alveolar ventilation."
+      },
+      {
+        "text": "3,500 mL/min",
+        "isCorrect": false,
+        "rationale": "This subtracts dead space after multiplying incompletely. Alveolar volume must be multiplied by the full respiratory frequency."
+      },
+      {
+        "text": "4,000 mL/min",
+        "isCorrect": false,
+        "rationale": "This does not follow (TV - VD) × frequency for the stated values. It would require different breathing variables."
+      },
+      {
+        "text": "4,200 mL/min",
+        "isCorrect": true,
+        "rationale": "Alveolar ventilation is (500 - 150) × 12, which equals 4,200 mL/min."
+      },
+      {
+        "text": "6,000 mL/min",
+        "isCorrect": false,
+        "rationale": "This is total minute ventilation, calculated as tidal volume times frequency without subtracting dead space."
+      }
+    ]
+  },
+  {
+    "question": "A patient maintains unchanged carbon dioxide production while effective respiratory-zone ventilation doubles. The initial alveolar carbon dioxide pressure is 40 mm Hg. Which new value is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze the factors determining alveolar CO2 level",
+    "options": [
+      {
+        "text": "20 mm Hg",
+        "isCorrect": true,
+        "rationale": "Alveolar carbon dioxide pressure varies inversely with alveolar ventilation when metabolic production is stable. Doubling ventilation halves the pressure."
+      },
+      {
+        "text": "30 mm Hg",
+        "isCorrect": false,
+        "rationale": "This would represent only a 25% decrease. It would require a smaller increase in alveolar ventilation."
+      },
+      {
+        "text": "40 mm Hg",
+        "isCorrect": false,
+        "rationale": "An unchanged value would require unchanged alveolar ventilation or a proportional increase in carbon dioxide production."
+      },
+      {
+        "text": "60 mm Hg",
+        "isCorrect": false,
+        "rationale": "This indicates carbon dioxide retention. It would occur with reduced ventilation or increased metabolic production."
+      },
+      {
+        "text": "80 mm Hg",
+        "isCorrect": false,
+        "rationale": "This is the opposite of the predicted response. Doubling carbon dioxide pressure would follow halving alveolar ventilation."
+      }
+    ]
+  },
+  {
+    "question": "A ventilated patient has a tidal volume of 550 mL, arterial PCO2 of 40 mm Hg, and mixed expired PCO2 of 30 mm Hg. Which physiologic dead-space volume is calculated by the Bohr equation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the anatomic dead space versus alveolar space",
+    "options": [
+      {
+        "text": "110 mL",
+        "isCorrect": false,
+        "rationale": "This corresponds to a dead-space fraction of 0.20. The measured carbon dioxide dilution produces a fraction of 0.25."
+      },
+      {
+        "text": "125 mL",
+        "isCorrect": false,
+        "rationale": "This does not equal 550 × (40 - 30)/40. It would require a different tidal volume or expired pressure."
+      },
+      {
+        "text": "138 mL",
+        "isCorrect": true,
+        "rationale": "The Bohr fraction is (40 - 30)/40 = 0.25. Multiplication by 550 mL gives approximately 138 mL."
+      },
+      {
+        "text": "150 mL",
+        "isCorrect": false,
+        "rationale": "This is the approximate normal anatomic value used elsewhere, but the measured physiologic value here is calculated from carbon dioxide dilution."
+      },
+      {
+        "text": "175 mL",
+        "isCorrect": false,
+        "rationale": "This would imply a larger dead-space fraction than the measured pressures support. A lower expired PCO2 would be required."
+      }
+    ]
+  },
+  {
+    "question": "A healthy person completes a quiet expiration. A sample is obtained from the conducting airways immediately before the next inspiration. Which gas-pressure pair is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the composition of gases in alveoli",
+    "options": [
+      {
+        "text": "PO2 150; PCO2 0 mm Hg",
+        "isCorrect": false,
+        "rationale": "This describes humidified inspired gas occupying dead space at the end of inspiration, not the end of expiration."
+      },
+      {
+        "text": "PO2 100; PCO2 40 mm Hg",
+        "isCorrect": true,
+        "rationale": "At the end of expiration, alveolar gas has filled the conducting dead space, so its composition matches alveolar and end-tidal gas."
+      },
+      {
+        "text": "PO2 160; PCO2 0 mm Hg",
+        "isCorrect": false,
+        "rationale": "This describes dry room air before humidification. It would be present outside the respiratory tract."
+      },
+      {
+        "text": "PO2 95; PCO2 40 mm Hg",
+        "isCorrect": false,
+        "rationale": "This oxygen value characterizes systemic arterial blood rather than conducting-airway gas."
+      },
+      {
+        "text": "PO2 40; PCO2 46 mm Hg",
+        "isCorrect": false,
+        "rationale": "This pair characterizes systemic venous blood. It would not describe airway gas after quiet expiration."
+      }
+    ]
+  },
+  {
+    "question": "Which neural population remains inactive during quiet breathing but is recruited when active expiration is required?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Discuss the role of central, peripheral receptors, and brain centers in regulation of breathing",
+    "options": [
+      {
+        "text": "Apneustic center",
+        "isCorrect": false,
+        "rationale": "The apneustic center excites the inspiratory center. It does not serve as the medullary expiratory population."
+      },
+      {
+        "text": "Dorsal respiratory group",
+        "isCorrect": false,
+        "rationale": "The dorsal group drives inspiration and sends phrenic output during ordinary breathing."
+      },
+      {
+        "text": "Pontine respiratory group",
+        "isCorrect": false,
+        "rationale": "The pontine group fine-tunes medullary inspiratory activity. It is not the recruited expiratory center."
+      },
+      {
+        "text": "Pneumotaxic center",
+        "isCorrect": false,
+        "rationale": "The pneumotaxic center switches off inspiration. It does not generate forced expiration."
+      },
+      {
+        "text": "Ventral respiratory group",
+        "isCorrect": true,
+        "rationale": "The ventral respiratory group is inactive during passive quiet expiration and becomes active during forced expiration."
+      }
+    ]
+  },
+  {
+    "question": "An experimental increase in arterial carbon dioxide is imposed abruptly. Which sensor detects the change directly and produces the fastest initial response?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the role of central, peripheral receptors, and brain centers in regulation of breathing",
+    "options": [
+      {
+        "text": "Peripheral arterial chemoreceptors",
+        "isCorrect": true,
+        "rationale": "Peripheral chemoreceptors respond directly to increased arterial PCO2 and are less sensitive but faster than central receptors."
+      },
+      {
+        "text": "Central medullary chemoreceptors",
+        "isCorrect": false,
+        "rationale": "Central chemoreceptors provide the main normal drive and are very sensitive but slow. They do not provide the fastest initial detection."
+      },
+      {
+        "text": "Pulmonary stretch receptors",
+        "isCorrect": false,
+        "rationale": "Stretch receptors detect lung distension and prolong expiratory time. They would respond to inflation rather than arterial carbon dioxide."
+      },
+      {
+        "text": "Airway irritant receptors",
+        "isCorrect": false,
+        "rationale": "Irritant receptors detect noxious particles and chemicals. They would be activated by an airway irritant exposure."
+      },
+      {
+        "text": "Pulmonary juxtacapillary receptors",
+        "isCorrect": false,
+        "rationale": "Juxtacapillary receptors detect capillary engorgement and increased interstitial fluid. They would be activated in left heart failure or interstitial lung disease."
+      }
+    ]
+  },
+  {
+    "question": "A 24-year-old woman develops rapid breathing during severe anxiety. Arterial PCO2 is 29 mm Hg [35-45 mm Hg]. Metabolic carbon dioxide production is unchanged. Which change most directly produced this result?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the factors determining alveolar CO2 level",
+    "options": [
+      {
+        "text": "Decreased inspired oxygen fraction",
+        "isCorrect": false,
+        "rationale": "Inspired oxygen fraction directly alters alveolar oxygen, not carbon dioxide when ventilation and metabolism are specified. It would explain a change in PAO2."
+      },
+      {
+        "text": "Decreased alveolar ventilation rate",
+        "isCorrect": false,
+        "rationale": "Reduced alveolar ventilation raises PACO2 and PaCO2. It would fit a value above 45 mm Hg."
+      },
+      {
+        "text": "Increased alveolar ventilation rate",
+        "isCorrect": true,
+        "rationale": "With stable metabolism, increased alveolar ventilation lowers alveolar and arterial PCO2, producing hyperventilation."
+      },
+      {
+        "text": "Increased physiologic dead-space fraction",
+        "isCorrect": false,
+        "rationale": "With unchanged tidal volume and frequency, more dead space reduces effective alveolar ventilation and raises PCO2."
+      },
+      {
+        "text": "Increased metabolic carbon dioxide production",
+        "isCorrect": false,
+        "rationale": "Greater metabolic production raises PACO2 unless ventilation increases proportionally. The stem specifies unchanged production."
+      }
+    ]
+  },
+  {
+    "question": "A 70-year-old man receives a narcotic and develops slow, shallow breathing. Arterial PCO2 is 58 mm Hg [35-45 mm Hg]. Which regulatory component has reduced sensitivity in this patient?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the role of central, peripheral receptors, and brain centers in regulation of breathing",
+    "options": [
+      {
+        "text": "Aortic arterial chemoreceptors",
+        "isCorrect": false,
+        "rationale": "Aortic bodies are peripheral sensors with no described sensitivity reduction. They respond directly to arterial CO2 and low oxygen."
+      },
+      {
+        "text": "Carotid arterial chemoreceptors",
+        "isCorrect": false,
+        "rationale": "Carotid bodies remain responsive to arterial CO2, H+, and marked hypoxemia. Narcotics are described as reducing central receptor sensitivity."
+      },
+      {
+        "text": "Airway epithelial irritant receptors",
+        "isCorrect": false,
+        "rationale": "Irritant receptors detect noxious inhaled substances and trigger cough, mucus, bronchoconstriction, and faster breathing."
+      },
+      {
+        "text": "Central medullary chemoreceptors",
+        "isCorrect": true,
+        "rationale": "Narcotics reduce the sensitivity of central chemoreceptors, weakening the principal normal ventilatory drive to carbon dioxide."
+      },
+      {
+        "text": "Pulmonary juxtacapillary receptors",
+        "isCorrect": false,
+        "rationale": "Juxtacapillary receptors respond to pulmonary capillary engorgement and interstitial fluid, not narcotic depression."
+      }
+    ]
+  },
+  {
+    "question": "A 68-year-old patient with chronic carbon dioxide retention has depressed central receptor responsiveness and marked arterial hypoxemia. Which stimulus is now the principal driver of ventilation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the role of central, peripheral receptors, and brain centers in regulation of breathing",
+    "options": [
+      {
+        "text": "Lung distension through stretch receptors",
+        "isCorrect": false,
+        "rationale": "Stretch receptor activation slows respiratory frequency by increasing expiratory time. It does not become the principal drive in chronic hypercapnia."
+      },
+      {
+        "text": "Arterial acidity through central receptors",
+        "isCorrect": false,
+        "rationale": "Central receptor sensitivity is depressed in chronic carbon dioxide retention. Arterial H+ is detected directly by peripheral rather than central receptors."
+      },
+      {
+        "text": "Venous carbon dioxide through peripheral receptors",
+        "isCorrect": false,
+        "rationale": "Peripheral chemoreceptors respond to arterial PCO2, not systemic venous PCO2. Venous carbon dioxide is not the stated hypoxic drive."
+      },
+      {
+        "text": "Alveolar oxygen through medullary receptors",
+        "isCorrect": false,
+        "rationale": "Central medullary chemoreceptors have no oxygen receptors. Oxygen sensing occurs in peripheral arterial chemoreceptors."
+      },
+      {
+        "text": "Arterial hypoxemia through peripheral receptors",
+        "isCorrect": true,
+        "rationale": "When PaO2 falls below about 65 mm Hg, peripheral oxygen sensing becomes the main ventilatory drive, especially when central responsiveness is depressed."
+      }
+    ]
+  },
+  {
+    "question": "A 68-year-old patient with chronic hypoventilation is breathing primarily because of severe arterial hypoxemia. High-concentration supplemental oxygen is administered. Which immediate consequence is predicted by the described control mechanism?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the role of central, peripheral receptors, and brain centers in regulation of breathing",
+    "options": [
+      {
+        "text": "Reduced peripheral drive and reduced ventilation",
+        "isCorrect": true,
+        "rationale": "Supplemental oxygen removes the low-oxygen stimulus sustaining peripheral chemoreceptor activity, so ventilation can decline."
+      },
+      {
+        "text": "Increased central drive and increased ventilation",
+        "isCorrect": false,
+        "rationale": "Chronic hypercapnia has reduced central receptor sensitivity. Oxygen administration does not restore central carbon dioxide responsiveness immediately."
+      },
+      {
+        "text": "Increased stretch drive and deeper ventilation",
+        "isCorrect": false,
+        "rationale": "Stretch receptors respond to lung inflation and slow frequency. Supplemental oxygen does not directly create an inflation signal."
+      },
+      {
+        "text": "Reduced irritant drive and increased ventilation",
+        "isCorrect": false,
+        "rationale": "Irritant receptors respond to airway chemicals and particles. Removing their drive would not explain oxygen-induced ventilatory depression."
+      },
+      {
+        "text": "Increased pontine drive and forced expiration",
+        "isCorrect": false,
+        "rationale": "Pontine centers fine-tune inspiration, while forced expiration recruits the ventral respiratory group. Oxygen does not directly activate this pathway."
+      }
+    ]
+  },
+  {
+    "question": "A 30-year-old man rapidly ascends to an altitude where barometric pressure is 387 mm Hg. The inspired oxygen fraction remains 0.21. Which dry-air oxygen pressure enters his nose?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the Dalton's low of partial pressures and demonstrate how to use it for calculation of partial pressure of the gases in the mixture",
+    "options": [
+      {
+        "text": "38 mm Hg",
+        "isCorrect": false,
+        "rationale": "This is approximately half the calculated value. It would require an oxygen fraction near 0.10 at this pressure."
+      },
+      {
+        "text": "70 mm Hg",
+        "isCorrect": false,
+        "rationale": "This is near the humidified tracheal value after subtracting water vapor. The sample is dry air before entering the nose."
+      },
+      {
+        "text": "80 mm Hg",
+        "isCorrect": true,
+        "rationale": "Dalton's law gives 387 × 0.21 = 81.27 mm Hg, approximated as 80 mm Hg."
+      },
+      {
+        "text": "100 mm Hg",
+        "isCorrect": false,
+        "rationale": "This is the typical alveolar oxygen pressure at sea level. It does not follow from the stated altitude pressure."
+      },
+      {
+        "text": "160 mm Hg",
+        "isCorrect": false,
+        "rationale": "This is dry inspired oxygen pressure at a barometric pressure of 760 mm Hg, not 387 mm Hg."
+      }
+    ]
+  },
+  {
+    "question": "A 30-year-old man is at an altitude where barometric pressure is 387 mm Hg. Inspired oxygen fraction is 0.21, and airway water vapor pressure is 47 mm Hg. Which oxygen pressure reaches the lower conducting airways?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the Dalton's low of partial pressures and demonstrate how to use it for calculation of partial pressure of the gases in the mixture",
+    "options": [
+      {
+        "text": "38 mm Hg",
+        "isCorrect": false,
+        "rationale": "This is too low for the stated calculation. It would require a substantially lower pressure or oxygen fraction."
+      },
+      {
+        "text": "70 mm Hg",
+        "isCorrect": true,
+        "rationale": "Humidified inspired oxygen pressure is (387 - 47) × 0.21 = 71.4 mm Hg, approximated as 70 mm Hg."
+      },
+      {
+        "text": "80 mm Hg",
+        "isCorrect": false,
+        "rationale": "This is the corresponding dry-air value before humidification. It omits subtraction of water vapor pressure."
+      },
+      {
+        "text": "100 mm Hg",
+        "isCorrect": false,
+        "rationale": "This is a typical sea-level alveolar value rather than the altitude-adjusted conducting-airway value."
+      },
+      {
+        "text": "150 mm Hg",
+        "isCorrect": false,
+        "rationale": "This is humidified inspired oxygen pressure near sea level. The lower barometric pressure makes it inappropriate here."
+      }
+    ]
+  },
+  {
+    "question": "A 56-year-old man is ventilated with FIO2 0.50 at a barometric pressure of 747 mm Hg. PaCO2 is 40 mm Hg, water vapor pressure is 47 mm Hg, and the respiratory exchange ratio is 0.8. Which alveolar oxygen pressure is expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the factors determining alveolar O2 level",
+    "options": [
+      {
+        "text": "160 mm Hg",
+        "isCorrect": false,
+        "rationale": "This is the measured arterial oxygen value from the source case, not the pressure calculated with the alveolar gas equation."
+      },
+      {
+        "text": "250 mm Hg",
+        "isCorrect": false,
+        "rationale": "This over-subtracts from humidified inspired oxygen. The carbon dioxide correction is 40/0.8, or 50 mm Hg."
+      },
+      {
+        "text": "280 mm Hg",
+        "isCorrect": false,
+        "rationale": "This does not follow 0.50 × (747 - 47) - 40/0.8. It would require different input values."
+      },
+      {
+        "text": "300 mm Hg",
+        "isCorrect": true,
+        "rationale": "The calculation is 0.50 × 700 - 50 = 300 mm Hg."
+      },
+      {
+        "text": "350 mm Hg",
+        "isCorrect": false,
+        "rationale": "This is humidified inspired oxygen pressure before subtracting the PACO2-to-R term."
+      }
+    ]
+  },
+  {
+    "question": "A patient has stable metabolism but develops reduced effective ventilation. Which paired alveolar change follows from the relationships governing respiratory gases?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze the factors determining alveolar O2 level",
+    "options": [
+      {
+        "text": "Decreased PCO2 with decreased PO2",
+        "isCorrect": false,
+        "rationale": "Reduced ventilation raises rather than lowers alveolar PCO2. Both values would decrease together only under a different set of determinants."
+      },
+      {
+        "text": "Decreased PCO2 with increased PO2",
+        "isCorrect": false,
+        "rationale": "This pair follows increased alveolar ventilation. It is the opposite of the stated ventilatory change."
+      },
+      {
+        "text": "Unchanged PCO2 with decreased PO2",
+        "isCorrect": false,
+        "rationale": "With stable metabolism, reduced ventilation cannot leave PACO2 unchanged. This pattern would require an independent reduction in inspired oxygen."
+      },
+      {
+        "text": "Increased PCO2 with increased PO2",
+        "isCorrect": false,
+        "rationale": "The alveolar gas equation subtracts the carbon dioxide term from inspired oxygen pressure. A higher PACO2 therefore does not increase PAO2."
+      },
+      {
+        "text": "Increased PCO2 with decreased PO2",
+        "isCorrect": true,
+        "rationale": "Reduced alveolar ventilation raises PACO2, and the increased carbon dioxide term lowers PAO2 in the alveolar gas equation."
+      }
+    ]
+  },
+  {
+    "question": "A 45-year-old patient has sustained metabolic acid accumulation and an arterial pH of 7.25 [7.35-7.45]. Which receptor response provides respiratory compensation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the role of central, peripheral receptors, and brain centers in regulation of breathing",
+    "options": [
+      {
+        "text": "Carotid H+ detection increasing ventilation",
+        "isCorrect": true,
+        "rationale": "Peripheral H+ receptors in the carotid bodies directly detect decreased arterial pH and increase ventilation, lowering carbon dioxide."
+      },
+      {
+        "text": "Central H+ detection decreasing ventilation",
+        "isCorrect": false,
+        "rationale": "The direct arterial H+ response is assigned to carotid bodies, and acidosis stimulates rather than suppresses ventilation."
+      },
+      {
+        "text": "Aortic H+ detection decreasing ventilation",
+        "isCorrect": false,
+        "rationale": "The stated independent arterial H+ response occurs only in carotid bodies. Decreasing ventilation would also worsen acidosis."
+      },
+      {
+        "text": "Pulmonary H+ detection increasing ventilation",
+        "isCorrect": false,
+        "rationale": "Pulmonary mechanoreceptors detect stretch, irritants, movement-related signals, or interstitial fluid rather than arterial H+."
+      },
+      {
+        "text": "Pontine H+ detection decreasing ventilation",
+        "isCorrect": false,
+        "rationale": "Pontine centers regulate inspiratory pattern and do not directly detect arterial H+ in the described pathway."
+      }
+    ]
+  },
+  {
+    "question": "A patient with acute pulmonary capillary engorgement develops rapid shallow breathing and a sensation of difficult breathing. Which receptor population mediates this response?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the process of regulation of alveolar ventilation",
+    "options": [
+      {
+        "text": "Bronchial stretch receptors",
+        "isCorrect": false,
+        "rationale": "Stretch receptors detect lung distension and slow frequency by prolonging expiration. They do not mediate the capillary-engorgement pattern."
+      },
+      {
+        "text": "Limb movement receptors",
+        "isCorrect": false,
+        "rationale": "Joint and muscle receptors respond to limb movement and produce an anticipatory exercise response."
+      },
+      {
+        "text": "Airway irritant receptors",
+        "isCorrect": false,
+        "rationale": "Irritant receptors respond to noxious particles and cause bronchoconstriction, mucus secretion, cough, and faster breathing."
+      },
+      {
+        "text": "Pulmonary juxtacapillary receptors",
+        "isCorrect": true,
+        "rationale": "Juxtacapillary receptors near alveolar capillaries detect capillary engorgement or increased interstitial fluid and produce rapid shallow breathing and dyspnea."
+      },
+      {
+        "text": "Central carbon dioxide receptors",
+        "isCorrect": false,
+        "rationale": "Central chemoreceptors respond to carbon dioxide and provide the main normal ventilatory drive, not the specific fluid-engorgement response."
+      }
+    ]
+  },
+  {
+    "question": "A patient inhales a noxious aerosol and immediately develops cough, increased mucus production, airway narrowing, and faster breathing. Which receptors were activated?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the process of regulation of alveolar ventilation",
+    "options": [
+      {
+        "text": "Lung stretch receptors",
+        "isCorrect": false,
+        "rationale": "Stretch receptors respond to inhalational distension and slow respiratory frequency. They do not produce the full irritant-response pattern."
+      },
+      {
+        "text": "Joint movement receptors",
+        "isCorrect": false,
+        "rationale": "Joint and muscle receptors detect limb movement and increase ventilation in anticipation of exercise."
+      },
+      {
+        "text": "Airway irritant receptors",
+        "isCorrect": true,
+        "rationale": "Irritant receptors between airway epithelial cells detect noxious chemicals and trigger cough, mucus, bronchoconstriction, and tachypnea."
+      },
+      {
+        "text": "Pulmonary juxtacapillary receptors",
+        "isCorrect": false,
+        "rationale": "Juxtacapillary receptors detect capillary engorgement and interstitial fluid, producing rapid shallow breathing and dyspnea."
+      },
+      {
+        "text": "Central medullary chemoreceptors",
+        "isCorrect": false,
+        "rationale": "Central chemoreceptors detect carbon dioxide-related drive. They do not directly detect inhaled particles in the airway epithelium."
+      }
+    ]
+  },
+  {
+    "question": "During a large inspiration, bronchial smooth muscle is stretched. Which immediate breathing-pattern change is produced by the resulting reflex?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze the process of regulation of alveolar ventilation",
+    "options": [
+      {
+        "text": "Shorter expiration with faster frequency",
+        "isCorrect": false,
+        "rationale": "The inflation reflex increases rather than shortens expiratory time. Faster breathing characterizes irritant or juxtacapillary stimulation."
+      },
+      {
+        "text": "Longer expiration with slower frequency",
+        "isCorrect": true,
+        "rationale": "Slowly adapting pulmonary stretch receptors produce the Hering-Breuer inflation reflex, increasing expiratory time and slowing frequency."
+      },
+      {
+        "text": "Longer inspiration with faster frequency",
+        "isCorrect": false,
+        "rationale": "This is opposite to termination of inspiration by the inflation reflex. Prolonged inspiration instead resembles excess apneustic influence."
+      },
+      {
+        "text": "Shorter inspiration with forced expiration",
+        "isCorrect": false,
+        "rationale": "Stretch input can limit inspiration, but forced expiration requires recruitment of the ventral respiratory group and is not the stated reflex effect."
+      },
+      {
+        "text": "Unchanged expiration with deeper frequency",
+        "isCorrect": false,
+        "rationale": "The described receptors specifically alter expiratory duration and respiratory frequency. An unchanged expiration would indicate absent stretch-reflex influence."
+      }
+    ]
+  },
+  {
+    "question": "A brainstem lesion removes the upper pontine influence that normally terminates inspiration while lower pontine excitation remains. The patient has prolonged gasping inspirations separated by brief expirations. Which breathing pattern is present?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Discuss the role of central, peripheral receptors, and brain centers in regulation of breathing",
+    "options": [
+      {
+        "text": "Biot breathing",
+        "isCorrect": false,
+        "rationale": "Biot breathing consists of groups of shallow inspirations followed by regular periods of apnea. It does not feature held gasping inspirations."
+      },
+      {
+        "text": "Quiet breathing",
+        "isCorrect": false,
+        "rationale": "Quiet breathing has rhythmic inspiratory activity and passive expiration. It lacks prolonged inspiratory holds."
+      },
+      {
+        "text": "Forced breathing",
+        "isCorrect": false,
+        "rationale": "Forced breathing recruits expiratory neurons but does not define the characteristic held-inspiration pattern."
+      },
+      {
+        "text": "Periodic breathing",
+        "isCorrect": false,
+        "rationale": "The described periodic pattern in the source is progressive waxing and waning of depth, unlike sustained gasping inspirations."
+      },
+      {
+        "text": "Apneustic breathing",
+        "isCorrect": true,
+        "rationale": "Loss of inspiratory off-switch influence permits excessive apneustic excitation, producing deep inspirations held for several seconds with short expirations."
+      }
+    ]
+  },
+  {
+    "question": "A patient has progressively increasing and then decreasing depth of breathing in repeating cycles. Which named pattern best matches this observation?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Discuss the role of central, peripheral receptors, and brain centers in regulation of breathing",
+    "options": [
+      {
+        "text": "Cheyne-Stokes breathing",
+        "isCorrect": true,
+        "rationale": "Cheyne-Stokes breathing is defined by progressively increasing and decreasing respiratory depth."
+      },
+      {
+        "text": "Apneustic breathing",
+        "isCorrect": false,
+        "rationale": "Apneustic breathing consists of deep gasping inspirations held for several seconds with brief expiration."
+      },
+      {
+        "text": "Biot breathing",
+        "isCorrect": false,
+        "rationale": "Biot breathing consists of groups of shallow inspirations followed by regular periods of apnea."
+      },
+      {
+        "text": "Forced expiratory breathing",
+        "isCorrect": false,
+        "rationale": "Forced expiration reflects ventral respiratory group recruitment. It does not describe cyclic waxing and waning."
+      },
+      {
+        "text": "Quiet passive breathing",
+        "isCorrect": false,
+        "rationale": "Quiet breathing has passive expiration and regular medullary inspiratory bursts rather than a progressive cyclic pattern."
+      }
+    ]
+  },
+  {
+    "question": "A patient's tidal volume is 450 mL, breathing frequency is 16 breaths/min, PaCO2 is 41 mm Hg, and mixed expired PCO2 is 35 mm Hg. Which alveolar ventilation is closest?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand the anatomic dead space versus alveolar space",
+    "options": [
+      {
+        "text": "4,800 mL/min",
+        "isCorrect": false,
+        "rationale": "This is below the calculated value. It would require a larger dead-space fraction or a lower respiratory frequency."
+      },
+      {
+        "text": "5,400 mL/min",
+        "isCorrect": false,
+        "rationale": "This remains lower than the result obtained after applying the Bohr equation to the stated pressures."
+      },
+      {
+        "text": "5,800 mL/min",
+        "isCorrect": false,
+        "rationale": "This approximation underestimates effective ventilation. The calculated dead-space volume is about 66 mL."
+      },
+      {
+        "text": "6,140 mL/min",
+        "isCorrect": true,
+        "rationale": "Dead space is 450 × (41 - 35)/41, about 66 mL. Alveolar ventilation is approximately (450 - 66) × 16 = 6,140 mL/min."
+      },
+      {
+        "text": "7,200 mL/min",
+        "isCorrect": false,
+        "rationale": "This is total minute ventilation, calculated as 450 × 16 without correcting for physiologic dead space."
+      }
+    ]
+  },
+  {
+    "question": "A mechanically ventilated patient has stable carbon dioxide production. Tidal volume increases from 400 mL to 700 mL while dead space remains 100 mL and frequency remains 12 breaths/min. Initial PACO2 is 40 mm Hg. Which new value is expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the factors determining alveolar CO2 level",
+    "options": [
+      {
+        "text": "10 mm Hg",
+        "isCorrect": false,
+        "rationale": "This would require a fourfold increase in alveolar ventilation. The calculated increase is twofold."
+      },
+      {
+        "text": "20 mm Hg",
+        "isCorrect": true,
+        "rationale": "Alveolar ventilation increases from (400 - 100) × 12 to (700 - 100) × 12, doubling from 3.6 to 7.2 L/min. PACO2 therefore halves."
+      },
+      {
+        "text": "30 mm Hg",
+        "isCorrect": false,
+        "rationale": "This would reflect a smaller increase in alveolar ventilation. The stated settings exactly double effective ventilation."
+      },
+      {
+        "text": "40 mm Hg",
+        "isCorrect": false,
+        "rationale": "An unchanged value would require unchanged alveolar ventilation or doubled carbon dioxide production."
+      },
+      {
+        "text": "80 mm Hg",
+        "isCorrect": false,
+        "rationale": "This would follow halving alveolar ventilation. The ventilator change increases rather than decreases effective ventilation."
+      }
+    ]
+  },
+  {
+    "question": "A patient with stable metabolism has PaCO2 of 52 mm Hg [35-45 mm Hg]. The treatment goal is to lower carbon dioxide by changing ventilation alone. Which ventilatory adjustment is the next best step?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the factors determining alveolar CO2 level",
+    "options": [
+      {
+        "text": "Decrease respiratory-zone ventilation",
+        "isCorrect": false,
+        "rationale": "Decreasing alveolar ventilation would further raise PACO2. It would be appropriate only if carbon dioxide were below the target range."
+      },
+      {
+        "text": "Decrease inspired oxygen fraction",
+        "isCorrect": false,
+        "rationale": "Inspired oxygen fraction changes PAO2 but does not directly correct elevated PACO2 when metabolism is stable."
+      },
+      {
+        "text": "Increase respiratory-zone ventilation",
+        "isCorrect": true,
+        "rationale": "PACO2 is inversely related to alveolar ventilation. Increasing effective ventilation lowers alveolar and arterial carbon dioxide."
+      },
+      {
+        "text": "Increase physiologic dead-space volume",
+        "isCorrect": false,
+        "rationale": "Increasing dead space reduces effective alveolar ventilation and would worsen carbon dioxide retention."
+      },
+      {
+        "text": "Increase airway water-vapor pressure",
+        "isCorrect": false,
+        "rationale": "Water vapor alters inspired gas partial pressures but is not the ventilatory determinant used to lower PACO2."
+      }
+    ]
+  },
+  {
+    "question": "A ventilated patient has an abnormally low calculated alveolar oxygen pressure despite unchanged FIO2 and barometric pressure. PaCO2 has risen from 40 to 60 mm Hg. Which mechanism explains the oxygen change?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the factors determining alveolar O2 level",
+    "options": [
+      {
+        "text": "Carbon dioxide raises inspired oxygen pressure",
+        "isCorrect": false,
+        "rationale": "PACO2 does not raise inspired oxygen pressure. Inspired pressure is determined by atmospheric pressure, water vapor, and oxygen fraction."
+      },
+      {
+        "text": "Carbon dioxide increases oxygen fraction",
+        "isCorrect": false,
+        "rationale": "PACO2 does not alter the set inspired oxygen fraction. FIO2 is specified as unchanged."
+      },
+      {
+        "text": "Carbon dioxide lowers water-vapor pressure",
+        "isCorrect": false,
+        "rationale": "The equation uses water vapor pressure as 47 mm Hg. A higher PACO2 does not lower that value."
+      },
+      {
+        "text": "Carbon dioxide is subtracted from inspired oxygen",
+        "isCorrect": true,
+        "rationale": "The alveolar gas equation subtracts PACO2 divided by the respiratory exchange ratio. A larger carbon dioxide term therefore lowers PAO2."
+      },
+      {
+        "text": "Carbon dioxide raises atmospheric pressure",
+        "isCorrect": false,
+        "rationale": "Arterial or alveolar carbon dioxide does not increase barometric pressure. Atmospheric pressure is an independent input."
+      }
+    ]
+  },
+  {
+    "question": "A patient begins breathing oxygen-enriched gas while atmospheric pressure, water vapor pressure, PACO2, and respiratory exchange ratio remain unchanged. Which alveolar effect is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze the factors determining alveolar O2 level",
+    "options": [
+      {
+        "text": "Decreased alveolar oxygen pressure",
+        "isCorrect": false,
+        "rationale": "Increasing inspired oxygen fraction raises the first term of the alveolar gas equation rather than lowering it."
+      },
+      {
+        "text": "Unchanged alveolar oxygen pressure",
+        "isCorrect": false,
+        "rationale": "PAO2 cannot remain unchanged when FIO2 increases and all other determinants are fixed."
+      },
+      {
+        "text": "Decreased alveolar carbon dioxide pressure",
+        "isCorrect": false,
+        "rationale": "PACO2 is governed by metabolic production and alveolar ventilation. Neither is stated to change."
+      },
+      {
+        "text": "Increased alveolar carbon dioxide pressure",
+        "isCorrect": false,
+        "rationale": "An increased oxygen fraction does not directly raise PACO2 when metabolism and ventilation remain constant."
+      },
+      {
+        "text": "Increased alveolar oxygen pressure",
+        "isCorrect": true,
+        "rationale": "Supplemental oxygen increases FIO2 and therefore increases humidified inspired oxygen pressure and PAO2."
+      }
+    ]
+  },
+  {
+    "question": "An arterial oxygen pressure acutely falls to 58 mm Hg [approximately 95 mm Hg]. Which response becomes dominant at this level?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Discuss the role of central, peripheral receptors, and brain centers in regulation of breathing",
+    "options": [
+      {
+        "text": "Peripheral oxygen sensing increases ventilation",
+        "isCorrect": true,
+        "rationale": "Below approximately 65 mm Hg, peripheral chemoreceptors are strongly stimulated and hypoxemia becomes the main ventilatory drive."
+      },
+      {
+        "text": "Central oxygen sensing increases ventilation",
+        "isCorrect": false,
+        "rationale": "Central chemoreceptors have no oxygen receptors. They primarily provide carbon dioxide-related drive."
+      },
+      {
+        "text": "Peripheral oxygen sensing decreases ventilation",
+        "isCorrect": false,
+        "rationale": "Marked arterial hypoxemia stimulates rather than suppresses peripheral chemoreceptors."
+      },
+      {
+        "text": "Pulmonary oxygen sensing stops ventilation",
+        "isCorrect": false,
+        "rationale": "The described pulmonary mechanoreceptors detect stretch, irritants, movement, or interstitial fluid, not arterial oxygen."
+      },
+      {
+        "text": "Pontine oxygen sensing prolongs expiration",
+        "isCorrect": false,
+        "rationale": "Pontine centers regulate inspiratory timing but are not identified as arterial oxygen sensors."
+      }
+    ]
+  },
+  {
+    "question": "A patient's total exhaled PCO2 equals alveolar PCO2 during a collection period. Which conclusion follows from the Bohr relationship?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the anatomic dead space versus alveolar space",
+    "options": [
+      {
+        "text": "Dead-space fraction equals one quarter",
+        "isCorrect": false,
+        "rationale": "A one-quarter fraction would require expired PCO2 to be 25% lower than alveolar PCO2."
+      },
+      {
+        "text": "Dead-space fraction equals one half",
+        "isCorrect": false,
+        "rationale": "A one-half fraction would require expired PCO2 to equal half of alveolar PCO2."
+      },
+      {
+        "text": "Dead-space fraction equals zero",
+        "isCorrect": true,
+        "rationale": "When PECO2 equals PACO2, the Bohr numerator PACO2 - PECO2 is zero, so calculated physiologic dead space is zero."
+      },
+      {
+        "text": "Dead-space fraction exceeds alveolar fraction",
+        "isCorrect": false,
+        "rationale": "Equal pressures indicate no carbon dioxide dilution by nonexchanging gas, not a dominant dead-space compartment."
+      },
+      {
+        "text": "Dead-space fraction cannot be calculated",
+        "isCorrect": false,
+        "rationale": "The fraction can be calculated directly because both required pressures are provided and equal."
+      }
+    ]
+  }
+]
