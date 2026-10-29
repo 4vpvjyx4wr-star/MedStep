@@ -1,0 +1,1026 @@
+[
+  {
+    "question": "Which process describes movement of a drug from its administration site into the central compartment?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define drug absorption and distribution",
+    "options": [
+      {
+        "text": "Drug absorption",
+        "isCorrect": true,
+        "rationale": "Absorption is movement of a drug from its administration site into the central compartment."
+      },
+      {
+        "text": "Drug distribution",
+        "isCorrect": false,
+        "rationale": "Distribution is dispersion from the systemic circulation into body fluids and tissues. It would be correct if the drug had already entered the circulation."
+      },
+      {
+        "text": "Drug metabolism",
+        "isCorrect": false,
+        "rationale": "Metabolism transforms a drug into a more active or inactive form. It would be correct if chemical modification were described."
+      },
+      {
+        "text": "Drug excretion",
+        "isCorrect": false,
+        "rationale": "Excretion removes a drug from the body. It would be correct if bodily elimination were described."
+      },
+      {
+        "text": "Drug accumulation",
+        "isCorrect": false,
+        "rationale": "Accumulation describes progressive storage within a compartment. It would be correct if repeated or gradual tissue sequestration were described."
+      }
+    ]
+  },
+  {
+    "question": "Which route introduces a drug directly into cerebrospinal fluid and bypasses a restrictive central nervous system barrier?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the four general routes of administration",
+    "options": [
+      {
+        "text": "Intravenous administration",
+        "isCorrect": false,
+        "rationale": "Intravenous administration places drug in the venous circulation but does not directly bypass the barrier. It would fit direct systemic delivery."
+      },
+      {
+        "text": "Intramuscular administration",
+        "isCorrect": false,
+        "rationale": "Intramuscular administration deposits drug in vascularized muscle. It would fit an intermediate-onset muscular depot."
+      },
+      {
+        "text": "Intrathecal administration",
+        "isCorrect": true,
+        "rationale": "Intrathecal administration introduces drug directly into cerebrospinal fluid, thereby bypassing the blood-brain barrier."
+      },
+      {
+        "text": "Subcutaneous administration",
+        "isCorrect": false,
+        "rationale": "Subcutaneous administration deposits drug in poorly vascularized adipose tissue. It would fit slow delivery of a small volume."
+      },
+      {
+        "text": "Transdermal administration",
+        "isCorrect": false,
+        "rationale": "Transdermal administration moves a lipophilic drug through skin into blood. It would fit slow, continuous systemic delivery."
+      }
+    ]
+  },
+  {
+    "question": "Which property is characteristic of a drug with a high apparent volume of distribution?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe volume of distribution and apply it to a clinical scenario",
+    "options": [
+      {
+        "text": "Extensive vascular retention",
+        "isCorrect": false,
+        "rationale": "Vascular retention preserves a high plasma concentration and produces a low apparent volume. It would fit a hydrophilic drug confined to blood."
+      },
+      {
+        "text": "Strong albumin binding",
+        "isCorrect": false,
+        "rationale": "Strong albumin binding retains drug in the vasculature and lowers apparent volume. It would fit a highly protein-bound drug."
+      },
+      {
+        "text": "Limited tissue partitioning",
+        "isCorrect": false,
+        "rationale": "Limited tissue partitioning keeps drug in plasma and lowers apparent volume. It would fit poor access to nonvascular compartments."
+      },
+      {
+        "text": "High plasma concentration",
+        "isCorrect": false,
+        "rationale": "For a fixed body amount, a high plasma concentration corresponds to a low apparent volume. It would fit vascular confinement."
+      },
+      {
+        "text": "Extensive tissue sequestration",
+        "isCorrect": true,
+        "rationale": "Extensive tissue sequestration lowers the measured plasma concentration relative to the total body amount, producing a high apparent volume."
+      }
+    ]
+  },
+  {
+    "question": "Which plasma protein is identified as the most abundant binding protein for circulating drugs?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the effects of blood flow and plasma protein binding on drug distribution",
+    "options": [
+      {
+        "text": "P-glycoprotein transporter",
+        "isCorrect": false,
+        "rationale": "P-glycoprotein is an efflux transporter rather than the abundant plasma binding protein. It would fit cellular drug extrusion."
+      },
+      {
+        "text": "Plasma albumin",
+        "isCorrect": true,
+        "rationale": "Albumin is the most abundant plasma protein and can bind drugs within the vascular compartment."
+      },
+      {
+        "text": "Hepatic clearance protein",
+        "isCorrect": false,
+        "rationale": "Hepatic clearance is a pharmacokinetic process rather than the named plasma binding protein. It would fit calculation of hepatic extraction."
+      },
+      {
+        "text": "Tissue reservoir protein",
+        "isCorrect": false,
+        "rationale": "A tissue reservoir retains drug outside plasma and does not represent the most abundant circulating protein. It would fit tissue sequestration."
+      },
+      {
+        "text": "Skeletal muscle protein",
+        "isCorrect": false,
+        "rationale": "Skeletal muscle proteins may bind particular drugs but are not circulating plasma proteins. They would fit muscular tissue storage."
+      }
+    ]
+  },
+  {
+    "question": "An orally administered drug has an absorption fraction of 0.80 and a hepatic extraction ratio of 0.25. Which bioavailability value is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Apply the concept of bioavailability after oral and IV administration of a drug and equivalent doses to achieve plasma drug concentration",
+    "options": [
+      {
+        "text": "Twenty percent",
+        "isCorrect": false,
+        "rationale": "Twenty percent results from multiplying absorption by extraction rather than by the fraction escaping extraction. It would fit the extracted fraction of the absorbed dose."
+      },
+      {
+        "text": "Twenty-five percent",
+        "isCorrect": false,
+        "rationale": "Twenty-five percent equals the extraction ratio alone and omits incomplete absorption. It would fit the proportion removed during first pass."
+      },
+      {
+        "text": "Forty-five percent",
+        "isCorrect": false,
+        "rationale": "Forty-five percent does not follow F = f × (1 - ER). It would require different absorption or extraction values."
+      },
+      {
+        "text": "Sixty percent",
+        "isCorrect": true,
+        "rationale": "Bioavailability is 0.80 × (1 - 0.25) = 0.60, so 60% of the administered dose reaches systemic circulation."
+      },
+      {
+        "text": "Eighty percent",
+        "isCorrect": false,
+        "rationale": "Eighty percent accounts for absorption but ignores first-pass hepatic extraction. It would fit an extraction ratio of zero."
+      }
+    ]
+  },
+  {
+    "question": "A drug is given intravenously at 30 mg three times daily. Its oral bioavailability is 60%. Which total oral daily dose provides equivalent systemic exposure?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Apply the concept of bioavailability after oral and IV administration of a drug and equivalent doses to achieve plasma drug concentration",
+    "options": [
+      {
+        "text": "Fifty-four milligrams daily",
+        "isCorrect": false,
+        "rationale": "This multiplies the intravenous daily dose by oral bioavailability. It would represent the systemically available amount after giving 90 mg orally."
+      },
+      {
+        "text": "One hundred fifty milligrams daily",
+        "isCorrect": true,
+        "rationale": "The intravenous daily dose is 90 mg. Dividing by oral bioavailability, 90 mg ÷ 0.60, gives 150 mg orally."
+      },
+      {
+        "text": "Ninety milligrams daily",
+        "isCorrect": false,
+        "rationale": "This preserves the administered dose despite incomplete oral bioavailability. It would be equivalent if oral bioavailability were 100%."
+      },
+      {
+        "text": "One hundred twenty milligrams daily",
+        "isCorrect": false,
+        "rationale": "This dose would provide only 72 mg systemically at 60% bioavailability. It would require a higher oral bioavailability to match 90 mg."
+      },
+      {
+        "text": "One hundred eighty milligrams daily",
+        "isCorrect": false,
+        "rationale": "This dose would provide 108 mg systemically and exceed the intravenous exposure. It would fit an oral bioavailability of 50%."
+      }
+    ]
+  },
+  {
+    "question": "A compound is highly lipophilic but dissolves poorly in the aqueous layer adjacent to the intestinal membrane. Which consequence is expected after oral dosing?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Apply the concept of bioavailability after oral and IV administration of a drug and equivalent doses to achieve plasma drug concentration",
+    "options": [
+      {
+        "text": "Complete intestinal absorption",
+        "isCorrect": false,
+        "rationale": "Poor aqueous solubility prevents complete movement across the water layer. Complete absorption would require adequate dissolution before membrane passage."
+      },
+      {
+        "text": "Increased hepatic blood flow",
+        "isCorrect": false,
+        "rationale": "Aqueous solubility does not directly increase hepatic blood flow. Increased flow would alter the extraction relationship rather than intestinal dissolution."
+      },
+      {
+        "text": "Reduced oral bioavailability",
+        "isCorrect": false,
+        "rationale": "This consequence is related but not the most direct step specified. Reduced bioavailability would follow after impaired absorption decreases systemic delivery."
+      },
+      {
+        "text": "Enhanced membrane ionization",
+        "isCorrect": false,
+        "rationale": "Poor aqueous solubility does not establish enhanced ionization. Ionization would be the relevant mechanism if charge prevented membrane diffusion."
+      },
+      {
+        "text": "Incomplete intestinal absorption",
+        "isCorrect": true,
+        "rationale": "Excessive lipophilicity can impair dissolution in the aqueous layer, causing incomplete absorption across the gut wall."
+      }
+    ]
+  },
+  {
+    "question": "Two highly protein-bound drugs compete for the same plasma binding site. Which immediate change is expected for the displaced drug?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the effects of blood flow and plasma protein binding on drug distribution",
+    "options": [
+      {
+        "text": "Increased free concentration",
+        "isCorrect": true,
+        "rationale": "Displacement from a shared plasma protein site increases the unbound drug fraction, which can increase therapeutic or toxic effects."
+      },
+      {
+        "text": "Decreased free concentration",
+        "isCorrect": false,
+        "rationale": "Competition reduces rather than increases binding of the displaced drug. Decreased free concentration would require additional available binding capacity."
+      },
+      {
+        "text": "Increased bound concentration",
+        "isCorrect": false,
+        "rationale": "Competition for the same site decreases binding of the displaced drug. Increased bound concentration would require more unoccupied protein sites."
+      },
+      {
+        "text": "Decreased tissue availability",
+        "isCorrect": false,
+        "rationale": "An increased free fraction raises availability for tissue distribution. Decreased tissue availability would follow stronger plasma protein binding."
+      },
+      {
+        "text": "Increased vascular retention",
+        "isCorrect": false,
+        "rationale": "Vascular retention is promoted by protein binding, which competition reduces. It would fit increased binding without displacement."
+      }
+    ]
+  },
+  {
+    "question": "A drug remains predominantly bound to albumin in the bloodstream. Which paired pharmacokinetic pattern is most consistent with this behavior?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the effects of blood flow and plasma protein binding on drug distribution",
+    "options": [
+      {
+        "text": "High tissue distribution",
+        "isCorrect": false,
+        "rationale": "High albumin binding counteracts tissue distribution. This pattern would fit a drug with a large unbound fraction."
+      },
+      {
+        "text": "High apparent volume",
+        "isCorrect": false,
+        "rationale": "A high apparent volume indicates extensive movement outside the vasculature. It would fit tissue or fat sequestration."
+      },
+      {
+        "text": "Low vascular retention",
+        "isCorrect": false,
+        "rationale": "Albumin binding increases vascular retention rather than reducing it. Low retention would fit weak plasma protein binding."
+      },
+      {
+        "text": "High free availability",
+        "isCorrect": false,
+        "rationale": "Albumin-bound drug is unavailable as free drug. High free availability would fit minimal plasma protein binding."
+      },
+      {
+        "text": "Low apparent volume",
+        "isCorrect": true,
+        "rationale": "Strong albumin binding retains drug in plasma and reduces tissue partitioning, producing a low apparent volume of distribution."
+      }
+    ]
+  },
+  {
+    "question": "A drug requires rapid systemic entry while avoiding gastrointestinal exposure and hepatic first-pass metabolism. Which route best satisfies both requirements?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the four general routes of administration",
+    "options": [
+      {
+        "text": "Oral administration",
+        "isCorrect": false,
+        "rationale": "Oral administration exposes drug to the gastrointestinal tract and first-pass metabolism. It would fit convenient, painless self-administration."
+      },
+      {
+        "text": "Rectal administration",
+        "isCorrect": false,
+        "rationale": "Rectal administration only partially avoids first-pass metabolism and has incomplete, inconsistent absorption. It would fit vomiting or unconsciousness."
+      },
+      {
+        "text": "Intravenous administration",
+        "isCorrect": true,
+        "rationale": "Intravenous administration directly enters systemic circulation, has rapid onset and complete bioavailability, and avoids first-pass metabolism."
+      },
+      {
+        "text": "Transdermal administration",
+        "isCorrect": false,
+        "rationale": "Transdermal delivery avoids gastrointestinal exposure but is designed for slow, continuous administration. It would fit a lipophilic maintenance drug."
+      },
+      {
+        "text": "Subcutaneous administration",
+        "isCorrect": false,
+        "rationale": "Subcutaneous delivery avoids first pass but enters slowly because adipose tissue is poorly vascularized. It would fit small-volume slow delivery."
+      }
+    ]
+  },
+  {
+    "question": "A 500 mg dose produces a plasma concentration of 25 mg/L after distribution. Which apparent volume of distribution is calculated?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe volume of distribution and apply it to a clinical scenario",
+    "options": [
+      {
+        "text": "Five liters",
+        "isCorrect": false,
+        "rationale": "Five liters would correspond to a plasma concentration of 100 mg/L after a 500 mg dose."
+      },
+      {
+        "text": "Ten liters",
+        "isCorrect": false,
+        "rationale": "Ten liters would correspond to a plasma concentration of 50 mg/L after a 500 mg dose."
+      },
+      {
+        "text": "Twenty liters",
+        "isCorrect": true,
+        "rationale": "Apparent volume equals body amount divided by plasma concentration: 500 mg ÷ 25 mg/L = 20 L."
+      },
+      {
+        "text": "Twenty-five liters",
+        "isCorrect": false,
+        "rationale": "Twenty-five liters would require a plasma concentration of 20 mg/L for the same dose."
+      },
+      {
+        "text": "Fifty liters",
+        "isCorrect": false,
+        "rationale": "Fifty liters would require a plasma concentration of 10 mg/L for the same dose."
+      }
+    ]
+  },
+  {
+    "question": "A drug has an apparent distribution volume of 21 L. Which dose is required to produce a plasma concentration of 23.5 mg/L?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe volume of distribution and apply it to a clinical scenario",
+    "options": [
+      {
+        "text": "Two hundred forty-seven milligrams",
+        "isCorrect": false,
+        "rationale": "This value is approximately half the necessary dose. It would produce a concentration near 11.8 mg/L in 21 L."
+      },
+      {
+        "text": "Three hundred fifty milligrams",
+        "isCorrect": false,
+        "rationale": "This dose would produce approximately 16.7 mg/L in a 21 L apparent volume."
+      },
+      {
+        "text": "Four hundred twenty milligrams",
+        "isCorrect": false,
+        "rationale": "This dose would produce 20 mg/L in a 21 L apparent volume."
+      },
+      {
+        "text": "Five hundred eighty-eight milligrams",
+        "isCorrect": false,
+        "rationale": "This dose would produce 28 mg/L in a 21 L apparent volume."
+      },
+      {
+        "text": "Four hundred ninety-four milligrams",
+        "isCorrect": true,
+        "rationale": "Dose equals volume multiplied by target concentration: 21 L × 23.5 mg/L = 493.5 mg, approximately 494 mg."
+      }
+    ]
+  },
+  {
+    "question": "Which combination would most strongly favor passive entry of a circulating drug into the central nervous system?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the four general routes of administration",
+    "options": [
+      {
+        "text": "Large ionized protein-bound compound",
+        "isCorrect": false,
+        "rationale": "Large size, ionization, and protein binding each reduce barrier passage. This pattern would favor vascular retention."
+      },
+      {
+        "text": "Small lipophilic non-ionized compound",
+        "isCorrect": true,
+        "rationale": "Small molecular size, high lipophilicity, and a non-ionized state favor diffusion across the blood-brain barrier."
+      },
+      {
+        "text": "Large hydrophilic non-ionized compound",
+        "isCorrect": false,
+        "rationale": "Even without charge, large size and hydrophilicity impede passage. It would become more favorable if small and lipophilic."
+      },
+      {
+        "text": "Small hydrophilic protein-bound compound",
+        "isCorrect": false,
+        "rationale": "Hydrophilicity and plasma protein binding reduce the free drug available to cross. It would improve with lipophilicity and low binding."
+      },
+      {
+        "text": "Small lipophilic transporter-substrate compound",
+        "isCorrect": false,
+        "rationale": "Lipophilicity and small size favor entry, but affinity for an efflux transporter opposes net passage. It would fit if transporter affinity were absent."
+      }
+    ]
+  },
+  {
+    "question": "After equilibrium is established between plasma and tissue compartments, which process accounts for the slower subsequent decline in circulating drug?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe distribution kinetics and drug accumulation",
+    "options": [
+      {
+        "text": "Instantaneous intravenous absorption",
+        "isCorrect": false,
+        "rationale": "Intravenous entry is complete at administration and does not explain the later slow phase. It would account for immediate systemic delivery."
+      },
+      {
+        "text": "Incomplete intestinal absorption",
+        "isCorrect": false,
+        "rationale": "Intestinal absorption does not apply after an established systemic compartment equilibrium. It would fit oral administration before systemic entry."
+      },
+      {
+        "text": "Rapid vessel-rich distribution",
+        "isCorrect": false,
+        "rationale": "Rapid distribution produces the initial steep change rather than the slower terminal decline. It would fit early movement into highly perfused tissues."
+      },
+      {
+        "text": "First-order drug elimination",
+        "isCorrect": true,
+        "rationale": "Once distribution equilibrium is established, elimination from the circulation follows a slower first-order decline."
+      },
+      {
+        "text": "Progressive plasma protein binding",
+        "isCorrect": false,
+        "rationale": "The described slower phase is attributed to elimination after equilibrium, not progressive binding. Binding would instead alter free drug and distribution."
+      }
+    ]
+  },
+  {
+    "question": "A drug concentration-time curve has a terminal linear elimination phase. Why is that phase extrapolated back to time zero?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe distribution kinetics and drug accumulation",
+    "options": [
+      {
+        "text": "To estimate initial plasma concentration",
+        "isCorrect": true,
+        "rationale": "Back-extrapolation of the terminal first-order elimination line estimates the plasma concentration at time zero after distribution."
+      },
+      {
+        "text": "To calculate intestinal absorption fraction",
+        "isCorrect": false,
+        "rationale": "The terminal elimination line does not isolate intestinal absorption. Absorption fraction would require information about entry across the gut wall."
+      },
+      {
+        "text": "To determine hepatic blood flow",
+        "isCorrect": false,
+        "rationale": "Hepatic blood flow is used with hepatic clearance to calculate extraction ratio. It is not obtained from this extrapolation."
+      },
+      {
+        "text": "To measure plasma protein abundance",
+        "isCorrect": false,
+        "rationale": "Protein abundance is not derived from an elimination curve. Protein binding would require direct binding information."
+      },
+      {
+        "text": "To identify administration route",
+        "isCorrect": false,
+        "rationale": "The terminal curve does not uniquely identify the route. Route determination would require information about how the dose entered the body."
+      }
+    ]
+  },
+  {
+    "question": "A 62-year-old patient cannot swallow because of persistent vomiting. A systemic drug must be given without an injection, and partial avoidance of hepatic first-pass metabolism is desired. Which route is the next best choice?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the four general routes of administration",
+    "options": [
+      {
+        "text": "Oral administration",
+        "isCorrect": false,
+        "rationale": "Persistent vomiting prevents reliable oral administration, which also undergoes first-pass metabolism. It would fit a patient able to retain oral medication."
+      },
+      {
+        "text": "Intramuscular administration",
+        "isCorrect": false,
+        "rationale": "Intramuscular dosing avoids first pass but requires an injection. It would fit when parenteral administration is acceptable."
+      },
+      {
+        "text": "Subcutaneous administration",
+        "isCorrect": false,
+        "rationale": "Subcutaneous dosing also requires an injection and provides slow absorption. It would fit a small-volume parenteral dose."
+      },
+      {
+        "text": "Rectal administration",
+        "isCorrect": true,
+        "rationale": "Rectal administration is an alternative during vomiting and allows approximately half the dose to bypass the liver, although absorption is inconsistent."
+      },
+      {
+        "text": "Intravenous administration",
+        "isCorrect": false,
+        "rationale": "Intravenous dosing provides complete systemic entry but violates the requirement to avoid injection. It would fit when immediate parenteral delivery is required."
+      }
+    ]
+  },
+  {
+    "question": "A 24-year-old patient requires rapid induction with precise control over delivery. The therapeutic agent produces concentration-related toxicity at high peaks. Which route offers the required control but creates the stated risk?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the four general routes of administration",
+    "options": [
+      {
+        "text": "Intravenous administration",
+        "isCorrect": true,
+        "rationale": "Intravenous administration provides rapid onset and controlled delivery, but immediate complete entry can produce peak-related toxicity."
+      },
+      {
+        "text": "Intramuscular administration",
+        "isCorrect": false,
+        "rationale": "Intramuscular administration has an intermediate onset and does not provide the same immediate control. It would fit an oil-based muscular depot."
+      },
+      {
+        "text": "Subcutaneous administration",
+        "isCorrect": false,
+        "rationale": "Subcutaneous absorption is slow because adipose tissue is poorly vascularized. It would fit a small-volume drug requiring gradual entry."
+      },
+      {
+        "text": "Transdermal administration",
+        "isCorrect": false,
+        "rationale": "Transdermal administration is designed for slow, continuous delivery rather than rapid induction. It would fit prolonged maintenance treatment."
+      },
+      {
+        "text": "Rectal administration",
+        "isCorrect": false,
+        "rationale": "Rectal absorption is incomplete and inconsistent, preventing precise rapid control. It would fit a vomiting or unconscious patient when injection is undesirable."
+      }
+    ]
+  },
+  {
+    "question": "A 40-year-old patient receives an intravenous bolus of a highly lipophilic anesthetic. Unconsciousness occurs within seconds, but awareness returns after several minutes without substantial metabolism. Which process best explains recovery?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe distribution kinetics and drug accumulation",
+    "options": [
+      {
+        "text": "Hepatic first-pass elimination",
+        "isCorrect": false,
+        "rationale": "An intravenous drug does not undergo first-pass elimination before systemic entry. This mechanism would affect an orally absorbed drug."
+      },
+      {
+        "text": "Immediate renal drug excretion",
+        "isCorrect": false,
+        "rationale": "The recovery is not attributed to rapid removal from the body. Excretion would fit a decline caused by bodily elimination."
+      },
+      {
+        "text": "Redistribution into slower tissues",
+        "isCorrect": true,
+        "rationale": "The drug initially reaches the highly perfused brain and then redistributes into muscle and adipose tissue, lowering its brain concentration."
+      },
+      {
+        "text": "Delayed intestinal drug absorption",
+        "isCorrect": false,
+        "rationale": "The dose was intravenous, so intestinal absorption is not involved. This mechanism would fit an enterally administered drug."
+      },
+      {
+        "text": "Progressive vascular protein binding",
+        "isCorrect": false,
+        "rationale": "Recovery is explained by movement among tissue compartments rather than newly developing vascular binding. Protein binding would primarily alter free drug availability."
+      }
+    ]
+  },
+  {
+    "question": "A 40-year-old patient receives the same lipophilic anesthetic repeatedly during a prolonged procedure. Drug gradually collects in a large, poorly perfused compartment. Which compartment is functioning as the long-term reservoir?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe distribution kinetics and drug accumulation",
+    "options": [
+      {
+        "text": "Vessel-rich organ group",
+        "isCorrect": false,
+        "rationale": "Vessel-rich organs receive drug rapidly and peak early rather than serving as the slowly filling long-term reservoir. They explain rapid onset."
+      },
+      {
+        "text": "Skeletal muscle compartment",
+        "isCorrect": false,
+        "rationale": "Muscle has intermediate perfusion and accumulates drug more slowly than vessel-rich organs, but the large poorly perfused reservoir described is adipose tissue."
+      },
+      {
+        "text": "Plasma protein compartment",
+        "isCorrect": false,
+        "rationale": "Plasma protein binding retains drug in the vasculature rather than creating the specified large tissue reservoir. It would fit a low apparent volume."
+      },
+      {
+        "text": "Cerebrospinal fluid compartment",
+        "isCorrect": false,
+        "rationale": "Cerebrospinal fluid is not identified as the long-term reservoir in this distribution model. Direct entry would instead describe intrathecal dosing."
+      },
+      {
+        "text": "Adipose tissue compartment",
+        "isCorrect": true,
+        "rationale": "Adipose tissue is poorly perfused but large in volume, so lipophilic drug accumulates gradually and forms a long-term reservoir."
+      }
+    ]
+  },
+  {
+    "question": "A 70-kg patient receives 420 mg of a drug intravenously. Back-extrapolation of the terminal elimination line gives an initial plasma concentration of 12 mg/L. Which apparent distribution volume is calculated?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe volume of distribution and apply it to a clinical scenario",
+    "options": [
+      {
+        "text": "Twelve liters",
+        "isCorrect": false,
+        "rationale": "Twelve liters repeats the concentration value without applying the volume equation. It would require a body amount of 144 mg."
+      },
+      {
+        "text": "Twenty-one liters",
+        "isCorrect": false,
+        "rationale": "Twenty-one liters would correspond to an initial concentration of 20 mg/L after a 420 mg dose."
+      },
+      {
+        "text": "Thirty-five liters",
+        "isCorrect": true,
+        "rationale": "Apparent volume equals dose divided by initial plasma concentration: 420 mg ÷ 12 mg/L = 35 L."
+      },
+      {
+        "text": "Forty-two liters",
+        "isCorrect": false,
+        "rationale": "Forty-two liters would correspond to an initial plasma concentration of 10 mg/L."
+      },
+      {
+        "text": "Seventy liters",
+        "isCorrect": false,
+        "rationale": "Seventy liters would correspond to an initial plasma concentration of 6 mg/L."
+      }
+    ]
+  },
+  {
+    "question": "A 70-kg patient receives equal doses of two drugs. Drug X has an apparent distribution volume of 0.15 L/kg, whereas drug Y has a value of 9.2 L/kg. Which pattern best describes drug Y?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe volume of distribution and apply it to a clinical scenario",
+    "options": [
+      {
+        "text": "Greater vascular retention",
+        "isCorrect": false,
+        "rationale": "Greater vascular retention produces a lower apparent volume. It better describes drug X."
+      },
+      {
+        "text": "Greater plasma protein binding",
+        "isCorrect": false,
+        "rationale": "Strong plasma protein binding retains drug in blood and lowers apparent volume. It would better fit the smaller value."
+      },
+      {
+        "text": "Higher plasma concentration",
+        "isCorrect": false,
+        "rationale": "For equal doses, extensive tissue distribution lowers plasma concentration. A higher concentration would fit drug X."
+      },
+      {
+        "text": "Greater tissue partitioning",
+        "isCorrect": true,
+        "rationale": "The much larger apparent volume indicates that drug Y partitions extensively into muscle, fat, or other nonvascular compartments."
+      },
+      {
+        "text": "Lower tissue sequestration",
+        "isCorrect": false,
+        "rationale": "Lower tissue sequestration would keep drug in plasma and reduce apparent volume. It would better describe drug X."
+      }
+    ]
+  },
+  {
+    "question": "A 33-year-old patient requires a noninvasive systemic therapy that maintains slow, continuous delivery. The selected agent is sufficiently lipid soluble. Which route is the next best choice?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the four general routes of administration",
+    "options": [
+      {
+        "text": "Intravenous administration",
+        "isCorrect": false,
+        "rationale": "Intravenous dosing is invasive and produces immediate systemic delivery. It would fit a need for rapid, controlled onset."
+      },
+      {
+        "text": "Intramuscular administration",
+        "isCorrect": false,
+        "rationale": "Intramuscular dosing is invasive and has an intermediate onset. It would fit an oil-based drug deposited in muscle."
+      },
+      {
+        "text": "Sublingual administration",
+        "isCorrect": false,
+        "rationale": "Sublingual mucosa provides rapid absorption rather than the desired sustained delivery. It would fit a need for fast entry without first pass."
+      },
+      {
+        "text": "Rectal administration",
+        "isCorrect": false,
+        "rationale": "Rectal absorption is incomplete and inconsistent rather than predictably continuous. It would fit vomiting or unconsciousness."
+      },
+      {
+        "text": "Transdermal administration",
+        "isCorrect": true,
+        "rationale": "Transdermal patches provide simple, noninvasive, slow, continuous delivery and require a lipophilic drug."
+      }
+    ]
+  },
+  {
+    "question": "A 19-year-old patient with an airway disorder needs rapid delivery to the respiratory tract with minimal dependence on hepatic first-pass processing. Which route is the next best choice?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the four general routes of administration",
+    "options": [
+      {
+        "text": "Inhalational administration",
+        "isCorrect": true,
+        "rationale": "Inhalation permits local respiratory application and rapid absorption across the large pulmonary surface while avoiding first-pass metabolism."
+      },
+      {
+        "text": "Oral administration",
+        "isCorrect": false,
+        "rationale": "Oral dosing is slower and exposes drug to gastrointestinal and first-pass processes. It would fit convenient systemic self-administration."
+      },
+      {
+        "text": "Rectal administration",
+        "isCorrect": false,
+        "rationale": "Rectal dosing only partially avoids first pass and has inconsistent absorption. It would fit a patient who is vomiting."
+      },
+      {
+        "text": "Transdermal administration",
+        "isCorrect": false,
+        "rationale": "Transdermal delivery is slow and systemic rather than rapidly directed to the respiratory tract. It would fit continuous delivery of a lipophilic drug."
+      },
+      {
+        "text": "Subcutaneous administration",
+        "isCorrect": false,
+        "rationale": "Subcutaneous delivery is slow and requires injection. It would fit small-volume parenteral administration."
+      }
+    ]
+  },
+  {
+    "question": "A patient receives an oral drug that is efficiently absorbed across the gut wall but extensively removed during its first passage through the liver. Which intervention directly avoids the responsible presystemic step?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Apply the concept of bioavailability after oral and IV administration of a drug and equivalent doses to achieve plasma drug concentration",
+    "options": [
+      {
+        "text": "Increase oral particle size",
+        "isCorrect": false,
+        "rationale": "Increasing particle size does not bypass hepatic extraction and may impair absorption. Smaller particles would be relevant if dissolution were limiting."
+      },
+      {
+        "text": "Use intravenous administration",
+        "isCorrect": true,
+        "rationale": "Intravenous administration places the entire dose directly into systemic circulation and eliminates hepatic first-pass loss before systemic entry."
+      },
+      {
+        "text": "Increase gastric gut content",
+        "isCorrect": false,
+        "rationale": "Gut content may affect gastrointestinal absorption but does not bypass hepatic first-pass extraction. It would matter if absorption were the limiting step."
+      },
+      {
+        "text": "Decrease splanchnic blood flow",
+        "isCorrect": false,
+        "rationale": "Changing splanchnic flow does not directly provide complete avoidance of presystemic hepatic passage. A nonenteral systemic route does."
+      },
+      {
+        "text": "Increase plasma protein binding",
+        "isCorrect": false,
+        "rationale": "Plasma protein binding primarily affects distribution after systemic entry. It does not prevent first-pass loss of an absorbed oral dose."
+      }
+    ]
+  },
+  {
+    "question": "A patient takes an oral drug that is pumped from intestinal cells back toward the gut lumen. A coadministered dietary substance inhibits that transporter. Which change is expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Apply the concept of bioavailability after oral and IV administration of a drug and equivalent doses to achieve plasma drug concentration",
+    "options": [
+      {
+        "text": "Decreased intestinal absorption",
+        "isCorrect": false,
+        "rationale": "Inhibiting outward transport reduces drug return to the lumen and therefore does not decrease absorption. Decreased absorption would follow stronger efflux."
+      },
+      {
+        "text": "Increased hepatic extraction",
+        "isCorrect": false,
+        "rationale": "The inhibited process occurs at the intestinal cellular barrier, not during hepatic extraction. This would require increased first-pass removal."
+      },
+      {
+        "text": "Decreased systemic bioavailability",
+        "isCorrect": false,
+        "rationale": "Reduced efflux permits more drug to enter systemic circulation, increasing rather than decreasing bioavailability. A decrease would follow enhanced transporter activity."
+      },
+      {
+        "text": "Increased systemic bioavailability",
+        "isCorrect": true,
+        "rationale": "Inhibition of intestinal P-glycoprotein reduces drug extrusion back into the lumen, increasing net absorption and systemic bioavailability."
+      },
+      {
+        "text": "Increased plasma protein binding",
+        "isCorrect": false,
+        "rationale": "Transporter inhibition at the gut wall does not directly increase plasma protein binding. Binding changes would affect distribution after absorption."
+      }
+    ]
+  },
+  {
+    "question": "A 58-year-old patient receives two drugs that both bind extensively to the same circulating protein. Soon afterward, the effect of one drug becomes excessive despite an unchanged dose. Which mechanism best explains this change?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the effects of blood flow and plasma protein binding on drug distribution",
+    "options": [
+      {
+        "text": "Reduced unbound drug fraction",
+        "isCorrect": false,
+        "rationale": "A reduced unbound fraction would diminish available drug rather than intensify its effect. It would follow increased protein binding."
+      },
+      {
+        "text": "Increased tissue protein sequestration",
+        "isCorrect": false,
+        "rationale": "The interaction arises from competition at plasma binding sites, not increased tissue binding. Tissue sequestration would primarily increase apparent volume."
+      },
+      {
+        "text": "Reduced hepatic blood flow",
+        "isCorrect": false,
+        "rationale": "Hepatic blood flow contributes to extraction ratio but is not the described competitive mechanism. It would fit a flow-mediated clearance change."
+      },
+      {
+        "text": "Increased intestinal drug absorption",
+        "isCorrect": false,
+        "rationale": "Both drugs are already circulating, so intestinal absorption does not explain the immediate interaction. It would fit inhibition of intestinal efflux."
+      },
+      {
+        "text": "Increased unbound drug fraction",
+        "isCorrect": true,
+        "rationale": "Competition for the same plasma protein site displaces drug, increases its free fraction, and can amplify therapeutic or toxic effects."
+      }
+    ]
+  },
+  {
+    "question": "A drug candidate has low molecular mass and high lipid solubility but remains highly ionized at physiological pH. Systemic concentrations are adequate, yet central nervous system entry is limited. Which modification would most directly improve entry?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the four general routes of administration",
+    "options": [
+      {
+        "text": "Increase plasma protein binding",
+        "isCorrect": false,
+        "rationale": "Greater plasma protein binding reduces free drug available to cross the barrier. Lower binding would be favorable."
+      },
+      {
+        "text": "Increase molecular drug size",
+        "isCorrect": false,
+        "rationale": "Larger molecular size impairs barrier passage. Smaller size is one of the favorable characteristics."
+      },
+      {
+        "text": "Increase the non-ionized fraction",
+        "isCorrect": true,
+        "rationale": "Because size and lipophilicity are already favorable, increasing the uncharged fraction directly improves diffusion across the barrier."
+      },
+      {
+        "text": "Increase efflux transporter affinity",
+        "isCorrect": false,
+        "rationale": "Greater efflux transporter affinity promotes removal from barrier cells and reduces net entry. Lack of affinity would be favorable."
+      },
+      {
+        "text": "Increase aqueous drug solubility",
+        "isCorrect": false,
+        "rationale": "Aqueous solubility can support oral absorption, but the decisive unfavorable feature here is ionization. Barrier entry favors a non-ionized lipophilic compound."
+      }
+    ]
+  },
+  {
+    "question": "A patient needs a small-volume parenteral dose with gradual absorption. Examination shows intact adipose tissue, and immediate onset is unnecessary. Which route is the next best choice?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the four general routes of administration",
+    "options": [
+      {
+        "text": "Subcutaneous administration",
+        "isCorrect": true,
+        "rationale": "Subcutaneous dosing places a small volume in poorly vascularized adipose tissue, producing a slow onset."
+      },
+      {
+        "text": "Intravenous administration",
+        "isCorrect": false,
+        "rationale": "Intravenous dosing produces immediate and complete systemic delivery rather than gradual absorption. It would fit an urgent effect."
+      },
+      {
+        "text": "Intrathecal administration",
+        "isCorrect": false,
+        "rationale": "Intrathecal dosing directly enters cerebrospinal fluid and is designed to bypass the blood-brain barrier. It would fit a central nervous system target."
+      },
+      {
+        "text": "Inhalational administration",
+        "isCorrect": false,
+        "rationale": "Inhalational dosing has rapid pulmonary access rather than slow adipose absorption. It would fit gaseous, volatile, or locally acting respiratory drugs."
+      },
+      {
+        "text": "Sublingual administration",
+        "isCorrect": false,
+        "rationale": "Sublingual mucosa is highly vascular and provides rapid absorption. It would fit rapid noninvasive delivery that avoids first pass."
+      }
+    ]
+  },
+  {
+    "question": "A drug is administered into a well-vascularized tissue as an oil-based preparation. Its onset is slower than direct venous dosing but faster than delivery into poorly vascularized fat. Which route was used?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the four general routes of administration",
+    "options": [
+      {
+        "text": "Intravenous administration",
+        "isCorrect": false,
+        "rationale": "Intravenous dosing enters circulation directly and has rapid onset without an absorption phase. It would fit immediate systemic delivery."
+      },
+      {
+        "text": "Subcutaneous administration",
+        "isCorrect": false,
+        "rationale": "Subcutaneous tissue is poorly vascularized and produces a slower onset. It would fit small-volume delivery into adipose tissue."
+      },
+      {
+        "text": "Intrathecal administration",
+        "isCorrect": false,
+        "rationale": "Intrathecal dosing enters cerebrospinal fluid rather than vascularized muscle. It would fit bypassing the blood-brain barrier."
+      },
+      {
+        "text": "Intramuscular administration",
+        "isCorrect": true,
+        "rationale": "Intramuscular administration deposits drug in well-vascularized muscle, supports oil-based preparations, and produces an intermediate onset."
+      },
+      {
+        "text": "Transdermal administration",
+        "isCorrect": false,
+        "rationale": "Transdermal drugs cross skin for slow continuous delivery rather than forming an intramuscular oil depot. It would fit a lipophilic patch."
+      }
+    ]
+  },
+  {
+    "question": "A 75-year-old patient receives a hydrophilic drug that remains largely within the vasculature. Compared with an equally dosed lipophilic drug stored in fat, which plasma pattern is expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe volume of distribution and apply it to a clinical scenario",
+    "options": [
+      {
+        "text": "Lower concentration and higher volume",
+        "isCorrect": false,
+        "rationale": "That pattern describes extensive tissue distribution by the lipophilic comparison drug. Vascular retention produces the opposite relationship."
+      },
+      {
+        "text": "Higher concentration and lower volume",
+        "isCorrect": true,
+        "rationale": "Hydrophilic vascular retention preserves a higher plasma concentration for the same dose and therefore produces a lower apparent volume."
+      },
+      {
+        "text": "Lower concentration and lower volume",
+        "isCorrect": false,
+        "rationale": "A lower concentration mathematically increases apparent volume for a fixed dose. This pairing is inconsistent with the volume equation."
+      },
+      {
+        "text": "Higher concentration and higher volume",
+        "isCorrect": false,
+        "rationale": "A higher concentration mathematically lowers apparent volume for a fixed dose. This pairing is inconsistent with the volume equation."
+      },
+      {
+        "text": "Equal concentration and equal volume",
+        "isCorrect": false,
+        "rationale": "Different vascular and fat partitioning produces different plasma concentrations and apparent volumes. Equality would require similar compartment distribution."
+      }
+    ]
+  },
+  {
+    "question": "A 50-year-old patient receives a drug that rapidly reaches highly perfused organs, then enters muscle more slowly and fat last. Which factor most directly determines this sequence?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the effects of blood flow and plasma protein binding on drug distribution",
+    "options": [
+      {
+        "text": "Regional tissue blood flow",
+        "isCorrect": false,
+        "rationale": "This is the relevant concept but does not match the requested answer position in the distribution sequence."
+      },
+      {
+        "text": "Plasma albumin abundance",
+        "isCorrect": false,
+        "rationale": "Albumin binding alters vascular retention and free drug but does not explain the ordered arrival based on organ perfusion. It would fit a low apparent volume."
+      },
+      {
+        "text": "Hepatic extraction ratio",
+        "isCorrect": true,
+        "rationale": "This option is incorrect because hepatic extraction governs first-pass availability rather than the sequence of tissue distribution. Regional tissue blood flow is the mechanism described."
+      },
+      {
+        "text": "Intestinal dissolution rate",
+        "isCorrect": false,
+        "rationale": "Dissolution affects absorption before systemic entry and cannot explain distribution among perfused tissues. It would fit an orally administered solid drug."
+      },
+      {
+        "text": "Gastrointestinal drug ionization",
+        "isCorrect": false,
+        "rationale": "Gastrointestinal ionization affects absorption across gut membranes rather than post-systemic tissue sequence. It would fit an oral absorption problem."
+      }
+    ]
+  },
+  {
+    "question": "A patient receives a drug that must reach a protected central compartment, but its large size, high protein binding, and ionized state prevent effective passage from blood. Which next step most directly overcomes all three limitations?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the four general routes of administration",
+    "options": [
+      {
+        "text": "Administer the drug orally",
+        "isCorrect": false,
+        "rationale": "Oral dosing still requires systemic drug to cross the protective barrier and also introduces absorption and first-pass limitations."
+      },
+      {
+        "text": "Administer the drug intramuscularly",
+        "isCorrect": false,
+        "rationale": "Intramuscular dosing changes the absorption site but still requires passage from blood into the central compartment."
+      },
+      {
+        "text": "Administer the drug subcutaneously",
+        "isCorrect": false,
+        "rationale": "Subcutaneous dosing provides slow systemic entry but does not bypass the central nervous system barrier."
+      },
+      {
+        "text": "Administer the drug transdermally",
+        "isCorrect": false,
+        "rationale": "Transdermal delivery requires lipophilicity and still relies on systemic barrier passage. It would fit slow continuous delivery of a lipophilic agent."
+      },
+      {
+        "text": "Administer the drug intrathecally",
+        "isCorrect": true,
+        "rationale": "Intrathecal administration places drug directly into cerebrospinal fluid and bypasses the blood-brain barrier."
+      }
+    ]
+  }
+]
