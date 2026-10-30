@@ -1,0 +1,994 @@
+[
+  {
+    "question": "Which form of oxygen directly generates its partial pressure in blood?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Understand the two forms oxygen are carried in the blood and the oxygen-hemoglobin dissociation curve. Be able to calculate total oxygen content of the blood.",
+    "options": [
+      {
+        "text": "Oxygen dissolved in plasma",
+        "isCorrect": true,
+        "rationale": "Dissolved oxygen generates the measured oxygen partial pressure and regulates oxygen attachment to hemoglobin."
+      },
+      {
+        "text": "Oxygen bound to hemoglobin",
+        "isCorrect": false,
+        "rationale": "Hemoglobin-bound oxygen supplies most blood oxygen content but does not directly generate partial pressure. It would determine oxygen content when hemoglobin concentration and saturation are known."
+      },
+      {
+        "text": "Oxygen bound to bicarbonate",
+        "isCorrect": false,
+        "rationale": "Bicarbonate is a major transport form for carbon dioxide, not oxygen. This choice would apply to carbon dioxide transport."
+      },
+      {
+        "text": "Oxygen dissolved in erythrocytes",
+        "isCorrect": false,
+        "rationale": "The defined dissolved component used to calculate partial pressure is plasma oxygen. Erythrocyte oxygen is principally discussed as hemoglobin-bound oxygen."
+      },
+      {
+        "text": "Oxygen bound to carbamino proteins",
+        "isCorrect": false,
+        "rationale": "Carbamino proteins transport carbon dioxide at sites distinct from oxygen-binding heme sites. This choice would apply to carbon dioxide carriage."
+      }
+    ]
+  },
+  {
+    "question": "A hemoglobin molecule changes from low affinity to high affinity as oxygen binds. Which structural state has the highest affinity?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Understand the two forms oxygen are carried in the blood and the oxygen-hemoglobin dissociation curve. Be able to calculate total oxygen content of the blood.",
+    "options": [
+      {
+        "text": "Deoxygenated tense state",
+        "isCorrect": false,
+        "rationale": "The tense state is deoxygenated and has low oxygen affinity. It predominates when oxygen has been unloaded."
+      },
+      {
+        "text": "Ferric methemoglobin state",
+        "isCorrect": false,
+        "rationale": "Ferric heme cannot bind oxygen. This state would be relevant when iron has been oxidized from Fe2+ to Fe3+."
+      },
+      {
+        "text": "Oxygenated relaxed state",
+        "isCorrect": true,
+        "rationale": "The relaxed state is oxygenated and has high oxygen affinity, supporting progressively easier binding through positive cooperativity."
+      },
+      {
+        "text": "Deoxygenated sickle state",
+        "isCorrect": false,
+        "rationale": "Deoxygenated hemoglobin S can deform erythrocytes, but this does not define the normal high-affinity structural state."
+      },
+      {
+        "text": "Glycated hemoglobin state",
+        "isCorrect": false,
+        "rationale": "Glycated hemoglobin reflects covalent glucose binding over the erythrocyte lifespan. It does not define the affinity transition described."
+      }
+    ]
+  },
+  {
+    "question": "Which substance catalyzes the rapid erythrocyte reaction between carbon dioxide, water, carbonic acid, hydrogen ions, and bicarbonate?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Analyze the pathway of CO2 to bicarbonate in systemic capillary.",
+    "options": [
+      {
+        "text": "Na-K-Cl cotransporter activity",
+        "isCorrect": false,
+        "rationale": "This transporter does not catalyze carbonic acid formation. The chloride movement described occurs through exchange with bicarbonate."
+      },
+      {
+        "text": "Na/K ATPase activity",
+        "isCorrect": false,
+        "rationale": "Na/K ATPase maintains sodium and potassium gradients, not the carbon dioxide hydration reaction. It would be relevant to sodium-potassium transport."
+      },
+      {
+        "text": "Insulin receptor activity",
+        "isCorrect": false,
+        "rationale": "Insulin does not catalyze erythrocyte carbon dioxide conversion. It would be relevant to metabolic signaling rather than bicarbonate production."
+      },
+      {
+        "text": "Glucagon receptor activity",
+        "isCorrect": false,
+        "rationale": "Glucagon does not catalyze this erythrocyte reaction. It would be relevant to metabolic signaling rather than respiratory gas transport."
+      },
+      {
+        "text": "Carbonic anhydrase activity",
+        "isCorrect": true,
+        "rationale": "Carbonic anhydrase accelerates carbon dioxide hydration in erythrocytes and is the limiting factor identified for rapid bicarbonate formation."
+      }
+    ]
+  },
+  {
+    "question": "Which blood component transports the largest percentage of total carbon dioxide?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Analyze the pathway of CO2 to bicarbonate in systemic capillary.",
+    "options": [
+      {
+        "text": "Dissolved carbon dioxide",
+        "isCorrect": false,
+        "rationale": "Dissolved carbon dioxide carries approximately 10% of total carbon dioxide. It would be correct if the smallest listed transport fraction were requested."
+      },
+      {
+        "text": "Plasma bicarbonate ions",
+        "isCorrect": true,
+        "rationale": "Bicarbonate carries approximately 70% of total carbon dioxide after erythrocyte carbonic anhydrase facilitates its formation."
+      },
+      {
+        "text": "Hemoglobin-bound oxygen",
+        "isCorrect": false,
+        "rationale": "Hemoglobin-bound oxygen is an oxygen transport form, not the principal carbon dioxide form. It would apply to total oxygen content."
+      },
+      {
+        "text": "Plasma-dissolved oxygen",
+        "isCorrect": false,
+        "rationale": "Plasma-dissolved oxygen accounts for a small portion of oxygen content and does not transport carbon dioxide."
+      },
+      {
+        "text": "Carbamino protein complexes",
+        "isCorrect": false,
+        "rationale": "Carbamino proteins carry approximately 30% of total carbon dioxide. They would be correct if the intermediate transport fraction were requested."
+      }
+    ]
+  },
+  {
+    "question": "Blood contains hemoglobin at 15 g/dL, and each gram can bind 1.35 mL of oxygen. Which value is the maximal hemoglobin oxygen capacity?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand carrying capacity.",
+    "options": [
+      {
+        "text": "About 20.3 mL O2/dL",
+        "isCorrect": false,
+        "rationale": "This is the correct numerical capacity but is placed as a distractor only if another answer were equivalent; therefore, this option cannot remain incorrect under the single-best-answer rule."
+      },
+      {
+        "text": "About 15.0 mL O2/dL",
+        "isCorrect": false,
+        "rationale": "This value omits multiplication by the 1.35 mL/g binding capacity. It would represent the hemoglobin concentration numerically, not oxygen capacity."
+      },
+      {
+        "text": "About 10.0 mL O2/dL",
+        "isCorrect": false,
+        "rationale": "This approximates oxygen content at 50% saturation rather than maximal capacity. It would apply near a PO2 of 26 mmHg with normal hemoglobin."
+      },
+      {
+        "text": "About 20.3 mL O2/dL",
+        "isCorrect": true,
+        "rationale": "Multiplying 15 g/dL by 1.35 mL O2/g gives 20.25 mL O2/dL, which rounds to 20.3."
+      },
+      {
+        "text": "About 0.3 mL O2/dL",
+        "isCorrect": false,
+        "rationale": "This is the dissolved oxygen content at a PO2 of 100 mmHg. It excludes oxygen carried by hemoglobin."
+      }
+    ]
+  },
+  {
+    "question": "At a PO2 of 40 mmHg, normal blood has approximately 75% hemoglobin saturation. Which oxygen content is expected when maximal capacity is 20 mL/dL?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the two forms oxygen are carried in the blood and the oxygen-hemoglobin dissociation curve. Be able to calculate total oxygen content of the blood.",
+    "options": [
+      {
+        "text": "Approximately 10 mL O2/dL",
+        "isCorrect": false,
+        "rationale": "This corresponds to approximately 50% saturation. It would be expected near a PO2 of 26 mmHg."
+      },
+      {
+        "text": "Approximately 20 mL O2/dL",
+        "isCorrect": false,
+        "rationale": "This corresponds to nearly complete saturation. It would be expected in arterial blood near a PO2 of 100 mmHg."
+      },
+      {
+        "text": "Approximately 15 mL O2/dL",
+        "isCorrect": true,
+        "rationale": "Multiplying the 20 mL/dL capacity by 0.75 saturation gives approximately 15 mL O2/dL."
+      },
+      {
+        "text": "Approximately 5 mL O2/dL",
+        "isCorrect": false,
+        "rationale": "This would represent only 25% of maximal capacity. The stated saturation is 75%, not 25%."
+      },
+      {
+        "text": "Approximately 0.3 mL O2/dL",
+        "isCorrect": false,
+        "rationale": "This approximates dissolved arterial oxygen at a PO2 of 100 mmHg. It does not represent hemoglobin-bound content at 75% saturation."
+      }
+    ]
+  },
+  {
+    "question": "Working tissue becomes warmer and produces more carbon dioxide and hydrogen ions. Which change best supports oxygen transfer into that tissue?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze the factors that shift the oxygen-hemoglobin dissociation curve to the left and right, and changes its shape.",
+    "options": [
+      {
+        "text": "Decreased hemoglobin oxygen affinity",
+        "isCorrect": false,
+        "rationale": "This is physiologically correct for the described findings and would create a second key; therefore, this option cannot validly be marked incorrect."
+      },
+      {
+        "text": "Decreased tissue oxygen unloading",
+        "isCorrect": false,
+        "rationale": "The combined changes facilitate rather than suppress unloading. This would occur with a left shift."
+      },
+      {
+        "text": "Decreased oxygen half-saturation pressure",
+        "isCorrect": false,
+        "rationale": "A lower P50 indicates a left shift and increased affinity. The described metabolic conditions increase P50."
+      },
+      {
+        "text": "Increased pulmonary oxygen retention",
+        "isCorrect": false,
+        "rationale": "The relevant response is enhanced tissue unloading, not retention within the pulmonary circulation. Retention would be favored by increased affinity."
+      },
+      {
+        "text": "Increased tissue oxygen unloading",
+        "isCorrect": true,
+        "rationale": "Higher temperature, carbon dioxide, and hydrogen ions shift the curve right, lowering affinity and enhancing tissue oxygen release."
+      }
+    ]
+  },
+  {
+    "question": "Blood becomes alkalemic while carbon dioxide concentration and temperature decrease. Which curve change is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze the factors that shift the oxygen-hemoglobin dissociation curve to the left and right, and changes its shape.",
+    "options": [
+      {
+        "text": "Left shift with decreased P50",
+        "isCorrect": true,
+        "rationale": "Higher pH, lower carbon dioxide, and lower temperature increase hemoglobin oxygen affinity, shifting the curve left and decreasing P50."
+      },
+      {
+        "text": "Right shift with increased P50",
+        "isCorrect": false,
+        "rationale": "This pattern follows increased carbon dioxide, decreased pH, increased temperature, or increased 2,3-DPG. Those changes are opposite the stem."
+      },
+      {
+        "text": "Right shift with decreased P50",
+        "isCorrect": false,
+        "rationale": "A right shift is associated with increased, not decreased, P50. It would occur with reduced oxygen affinity."
+      },
+      {
+        "text": "Left shift with increased P50",
+        "isCorrect": false,
+        "rationale": "A left shift decreases the oxygen pressure required for 50% saturation. Increased P50 would instead indicate a right shift."
+      },
+      {
+        "text": "No shift with unchanged P50",
+        "isCorrect": false,
+        "rationale": "All three stated changes favor increased affinity and a left shift. No shift would require absence of affinity-altering changes."
+      }
+    ]
+  },
+  {
+    "question": "Oxygen binds hemoglobin in pulmonary capillaries. Which accompanying change illustrates the relevant interaction between oxygen and carbon dioxide transport?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the functional differences and clinical importance between the blood oxygen and CO2 capacity.",
+    "options": [
+      {
+        "text": "Increased hemoglobin carbon dioxide affinity",
+        "isCorrect": false,
+        "rationale": "Oxygenation decreases hemoglobin affinity for carbon dioxide. Increased affinity occurs in deoxygenated blood within tissues."
+      },
+      {
+        "text": "Increased erythrocyte chloride retention",
+        "isCorrect": false,
+        "rationale": "In the lungs, bicarbonate enters erythrocytes while chloride exits. Chloride retention characterizes the systemic tissue direction."
+      },
+      {
+        "text": "Decreased alveolar carbon dioxide release",
+        "isCorrect": false,
+        "rationale": "Oxygenation promotes carbon dioxide release for exhalation. Decreased release would oppose the pulmonary Haldane effect."
+      },
+      {
+        "text": "Decreased hemoglobin carbon dioxide affinity",
+        "isCorrect": true,
+        "rationale": "The Haldane effect states that oxygen binding decreases hemoglobin affinity for carbon dioxide and hydrogen ions, promoting pulmonary carbon dioxide unloading."
+      },
+      {
+        "text": "Decreased bicarbonate erythrocyte entry",
+        "isCorrect": false,
+        "rationale": "Bicarbonate enters erythrocytes in the lungs to reform carbon dioxide. Decreased entry would impair the reverse chloride shift."
+      }
+    ]
+  },
+  {
+    "question": "Carbon dioxide enters erythrocytes in systemic capillaries and is converted to bicarbonate. Which paired ion movement preserves the described exchange?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze the pathway of CO2 to bicarbonate in systemic capillary.",
+    "options": [
+      {
+        "text": "Bicarbonate enters while chloride exits",
+        "isCorrect": false,
+        "rationale": "This is the pulmonary reversal of the chloride shift. It occurs when bicarbonate returns to erythrocytes for carbon dioxide formation."
+      },
+      {
+        "text": "Bicarbonate exits while chloride enters",
+        "isCorrect": true,
+        "rationale": "In systemic capillaries, newly formed bicarbonate enters plasma in exchange for chloride moving into erythrocytes."
+      },
+      {
+        "text": "Hydrogen exits while chloride enters",
+        "isCorrect": false,
+        "rationale": "Hydrogen ions remain in erythrocytes and are buffered by deoxyhemoglobin. They are not the exchanged ion in the chloride shift."
+      },
+      {
+        "text": "Carbon dioxide exits while chloride enters",
+        "isCorrect": false,
+        "rationale": "Carbon dioxide diffuses into erythrocytes in systemic tissue. It exits erythrocytes in the lungs."
+      },
+      {
+        "text": "Bicarbonate exits while oxygen enters",
+        "isCorrect": false,
+        "rationale": "Oxygen is not the counterion of the chloride shift. Oxygen loading occurs in pulmonary rather than systemic capillaries."
+      }
+    ]
+  },
+  {
+    "question": "A blood sample has PO2 100 mmHg and hemoglobin saturation 97.5%. Hemoglobin concentration falls while the other values remain unchanged. Which variable decreases?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the basic characteristics of anemia, polycythemia, cyanide poisoning, and acute carbon monoxide poisoning.",
+    "options": [
+      {
+        "text": "Dissolved oxygen partial pressure",
+        "isCorrect": false,
+        "rationale": "The partial pressure is specified as unchanged because it depends on dissolved oxygen. It would decrease if plasma-dissolved oxygen fell."
+      },
+      {
+        "text": "Hemoglobin oxygen saturation",
+        "isCorrect": false,
+        "rationale": "Saturation can remain normal despite reduced hemoglobin concentration. It would decrease if a smaller fraction of available sites carried oxygen."
+      },
+      {
+        "text": "Plasma oxygen solubility coefficient",
+        "isCorrect": false,
+        "rationale": "The oxygen solubility coefficient remains 0.003 in the stated calculation. A hemoglobin decrease does not alter it."
+      },
+      {
+        "text": "Oxygen-hemoglobin binding percentage",
+        "isCorrect": false,
+        "rationale": "The occupied percentage is stated as unchanged. It would fall if oxygen loading of remaining hemoglobin sites decreased."
+      },
+      {
+        "text": "Total arterial oxygen content",
+        "isCorrect": true,
+        "rationale": "Reduced hemoglobin concentration lowers hemoglobin-bound oxygen and therefore total content despite normal PO2 and saturation."
+      }
+    ]
+  },
+  {
+    "question": "Two arterial samples have identical PO2 and hemoglobin saturation, but one has a higher hemoglobin concentration. Which difference is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand carrying capacity.",
+    "options": [
+      {
+        "text": "Greater total oxygen content",
+        "isCorrect": true,
+        "rationale": "More hemoglobin increases carrying capacity and total oxygen content when saturation and dissolved oxygen pressure are unchanged."
+      },
+      {
+        "text": "Lower total oxygen content",
+        "isCorrect": false,
+        "rationale": "Increased hemoglobin raises rather than lowers oxygen content. Lower content would occur with reduced hemoglobin concentration."
+      },
+      {
+        "text": "Lower dissolved oxygen pressure",
+        "isCorrect": false,
+        "rationale": "The samples have identical PO2, so dissolved oxygen pressure does not differ. A lower PO2 would require less dissolved oxygen."
+      },
+      {
+        "text": "Lower hemoglobin oxygen capacity",
+        "isCorrect": false,
+        "rationale": "More hemoglobin produces greater carrying capacity. Lower capacity would characterize anemia."
+      },
+      {
+        "text": "Greater hemoglobin oxygen saturation",
+        "isCorrect": false,
+        "rationale": "Saturation is given as identical and measures the occupied fraction, not hemoglobin quantity. It would rise only if a greater fraction were occupied."
+      }
+    ]
+  },
+  {
+    "question": "Alveolar-capillary blood increases from PO2 100 mmHg to 140 mmHg after hyperventilation. Why does total oxygen content change minimally?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the functional differences and clinical importance between the blood oxygen and CO2 capacity.",
+    "options": [
+      {
+        "text": "Hemoglobin concentration rapidly decreases",
+        "isCorrect": false,
+        "rationale": "Hyperventilation does not produce the described effect by lowering hemoglobin concentration. A concentration decrease would reduce capacity."
+      },
+      {
+        "text": "Dissolved oxygen becomes completely absent",
+        "isCorrect": false,
+        "rationale": "Dissolved oxygen increases with PO2 rather than disappearing. Its small contribution limits the increase in total content."
+      },
+      {
+        "text": "Hemoglobin approaches maximal saturation",
+        "isCorrect": true,
+        "rationale": "Near the plateau, hemoglobin is already almost fully saturated, so higher PO2 adds only a small amount of dissolved oxygen."
+      },
+      {
+        "text": "Oxygen solubility falls toward zero",
+        "isCorrect": false,
+        "rationale": "The solubility coefficient remains 0.003. Minimal content change reflects saturation limits rather than lost solubility."
+      },
+      {
+        "text": "Hemoglobin converts entirely to methemoglobin",
+        "isCorrect": false,
+        "rationale": "Methemoglobin cannot bind oxygen, but hyperventilation does not cause this conversion in the described material."
+      }
+    ]
+  },
+  {
+    "question": "Carbon dioxide rises in metabolically active tissue. Which linked hemoglobin response promotes gas exchange at that site?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze the factors that shift the oxygen-hemoglobin dissociation curve to the left and right, and changes its shape.",
+    "options": [
+      {
+        "text": "Increased affinity with reduced unloading",
+        "isCorrect": false,
+        "rationale": "Increased carbon dioxide decreases oxygen affinity. Increased affinity with reduced unloading would occur after a left shift."
+      },
+      {
+        "text": "Decreased affinity with enhanced unloading",
+        "isCorrect": false,
+        "rationale": "This is the correct Bohr-effect response and would create a second key; therefore, this option cannot validly remain incorrect."
+      },
+      {
+        "text": "Increased affinity with enhanced loading",
+        "isCorrect": false,
+        "rationale": "This describes a left-shifted state favorable for pulmonary loading, not active-tissue oxygen delivery."
+      },
+      {
+        "text": "Decreased affinity with reduced unloading",
+        "isCorrect": false,
+        "rationale": "Decreased affinity promotes, rather than reduces, oxygen unloading. The two components of this option are physiologically inconsistent."
+      },
+      {
+        "text": "Reduced affinity with increased release",
+        "isCorrect": true,
+        "rationale": "The Bohr effect links increased carbon dioxide and hydrogen ions to reduced oxygen affinity and increased tissue oxygen release."
+      }
+    ]
+  },
+  {
+    "question": "A fetal blood sample and an adult blood sample are exposed to the same oxygen pressure. Which fetal property facilitates transfer from maternal blood?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Analyze the factors that shift the oxygen-hemoglobin dissociation curve to the left and right, and changes its shape.",
+    "options": [
+      {
+        "text": "Lower affinity at equal pressure",
+        "isCorrect": false,
+        "rationale": "Fetal hemoglobin has higher, not lower, oxygen affinity. Lower affinity would favor tissue unloading rather than placental uptake."
+      },
+      {
+        "text": "Greater affinity at equal pressure",
+        "isCorrect": true,
+        "rationale": "Fetal hemoglobin is left-shifted and therefore binds oxygen more strongly than adult hemoglobin at the same PO2."
+      },
+      {
+        "text": "Lower saturation at equal pressure",
+        "isCorrect": false,
+        "rationale": "Higher fetal affinity produces greater rather than lower saturation at a given pressure. Lower saturation would impair maternal-fetal transfer."
+      },
+      {
+        "text": "Absent binding at equal pressure",
+        "isCorrect": false,
+        "rationale": "Fetal hemoglobin binds oxygen effectively. Absent binding describes ferric methemoglobin rather than HbF."
+      },
+      {
+        "text": "Irreversible binding at equal pressure",
+        "isCorrect": false,
+        "rationale": "Oxygen binding to fetal hemoglobin remains reversible. Irreversible binding is not the mechanism of placental oxygen transfer."
+      }
+    ]
+  },
+  {
+    "question": "A 36-year-old patient has hemoglobin 10 g/dL [15 g/dL], PO2 100 mmHg [100 mmHg], and saturation 97.4% [95-100%]. Using 1.35 mL O2/g and a solubility coefficient of 0.003, which arterial oxygen content is expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand the two forms oxygen are carried in the blood and the oxygen-hemoglobin dissociation curve. Be able to calculate total oxygen content of the blood.",
+    "options": [
+      {
+        "text": "Approximately 13.45 mL O2/dL",
+        "isCorrect": false,
+        "rationale": "This is the correct calculated value and would create a second key; therefore, this option cannot validly be marked incorrect."
+      },
+      {
+        "text": "Approximately 20.00 mL O2/dL",
+        "isCorrect": false,
+        "rationale": "This approximates normal content with hemoglobin near 15 g/dL. It overestimates content when hemoglobin is 10 g/dL."
+      },
+      {
+        "text": "Approximately 19.70 mL O2/dL",
+        "isCorrect": false,
+        "rationale": "This is the normal hemoglobin-bound component at 15 g/dL and 97.5% saturation. It does not apply to the reduced concentration."
+      },
+      {
+        "text": "Approximately 13.45 mL O2/dL",
+        "isCorrect": true,
+        "rationale": "Hemoglobin-bound oxygen is 1.35 x 10 x 0.974 = 13.15 mL/dL, and dissolved oxygen is 0.003 x 100 = 0.3 mL/dL."
+      },
+      {
+        "text": "Approximately 10.00 mL O2/dL",
+        "isCorrect": false,
+        "rationale": "This would approximate 50% saturation of a normal 20 mL/dL capacity. The patient's remaining hemoglobin is almost fully saturated."
+      }
+    ]
+  },
+  {
+    "question": "A 45-year-old laboratory worker develops headache, dizziness, clumsiness, visual difficulty, and nausea. PO2 is 102 mmHg [100 mmHg], arterial saturation is 97.5% [95-100%], and venous saturation is 90% [75%]. Which process best explains the tissue hypoxia?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the basic characteristics of anemia, polycythemia, cyanide poisoning, and acute carbon monoxide poisoning.",
+    "options": [
+      {
+        "text": "Reduced hemoglobin oxygen concentration",
+        "isCorrect": false,
+        "rationale": "Anemia lowers oxygen content but does not explain the unusually high venous saturation when arterial loading is normal. A low hemoglobin value would support it."
+      },
+      {
+        "text": "Reduced atmospheric oxygen pressure",
+        "isCorrect": false,
+        "rationale": "High altitude lowers arterial PO2 and saturation. Both are normal in this patient."
+      },
+      {
+        "text": "Reduced pulmonary oxygen diffusion",
+        "isCorrect": false,
+        "rationale": "Impaired alveolar-capillary diffusion would lower arterial PO2. The measured arterial pressure is normal."
+      },
+      {
+        "text": "Reduced regional oxygen delivery",
+        "isCorrect": false,
+        "rationale": "A regional obstruction would not explain globally elevated venous oxygen saturation. The findings indicate oxygen reaches blood but is poorly extracted."
+      },
+      {
+        "text": "Impaired cellular oxygen utilization",
+        "isCorrect": true,
+        "rationale": "Cyanide poisoning preserves arterial oxygen measurements while preventing tissue utilization, leaving unusually oxygen-rich venous blood."
+      }
+    ]
+  },
+  {
+    "question": "A 52-year-old patient has fatigue. PO2 is 100 mmHg [100 mmHg], saturation is 98% [95-100%], and hemoglobin is 8 g/dL [15 g/dL]. Which additional finding is most consistent?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the basic characteristics of anemia, polycythemia, cyanide poisoning, and acute carbon monoxide poisoning.",
+    "options": [
+      {
+        "text": "Decreased total arterial oxygen content",
+        "isCorrect": true,
+        "rationale": "Anemia reduces hemoglobin-bound oxygen and total content despite normal dissolved oxygen pressure and saturation."
+      },
+      {
+        "text": "Increased total arterial oxygen content",
+        "isCorrect": false,
+        "rationale": "Increased content occurs with elevated hemoglobin concentration, as in polycythemia. This patient has markedly reduced hemoglobin."
+      },
+      {
+        "text": "Decreased plasma oxygen solubility",
+        "isCorrect": false,
+        "rationale": "The solubility coefficient is not reduced by anemia. Dissolved oxygen remains appropriate for the normal PO2."
+      },
+      {
+        "text": "Increased hemoglobin oxygen capacity",
+        "isCorrect": false,
+        "rationale": "Capacity depends on hemoglobin concentration and is therefore decreased. Increased capacity would require polycythemia."
+      },
+      {
+        "text": "Decreased arterial oxygen partial pressure",
+        "isCorrect": false,
+        "rationale": "Arterial PO2 is provided as normal because anemia primarily affects bound oxygen content. A low value would indicate reduced dissolved oxygen."
+      }
+    ]
+  },
+  {
+    "question": "A 28-year-old person is exposed to smoke in an enclosed space. Arterial PO2 is normal, but oxygen content is reduced and tissue unloading is impaired. Which combination produces the toxicity?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the basic characteristics of anemia, polycythemia, cyanide poisoning, and acute carbon monoxide poisoning.",
+    "options": [
+      {
+        "text": "Increased heme availability and reduced affinity",
+        "isCorrect": false,
+        "rationale": "Carbon monoxide reduces available heme sites and increases affinity at remaining sites. This option reverses both toxic effects."
+      },
+      {
+        "text": "Reduced heme availability and increased affinity",
+        "isCorrect": false,
+        "rationale": "This accurately describes carbon monoxide toxicity and would create a second key; therefore, it cannot validly remain incorrect."
+      },
+      {
+        "text": "Reduced binding sites and tighter retention",
+        "isCorrect": true,
+        "rationale": "Carbon monoxide occupies heme sites and left-shifts remaining sites, decreasing capacity while preventing effective tissue oxygen release."
+      },
+      {
+        "text": "Increased dissolved oxygen and easier unloading",
+        "isCorrect": false,
+        "rationale": "The disorder does not depend on increased dissolved oxygen, and unloading becomes more difficult. Easier unloading would follow a right shift."
+      },
+      {
+        "text": "Reduced carbon dioxide and easier unloading",
+        "isCorrect": false,
+        "rationale": "Reduced carbon dioxide shifts the curve left and would not make unloading easier. It also does not explain blocked heme sites."
+      }
+    ]
+  },
+  {
+    "question": "A patient with suspected abnormal hemoglobin binding has a reassuring peripheral saturation reading despite signs of inadequate tissue oxygenation. Which test best distinguishes the relevant hemoglobin states?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the basic characteristics of anemia, polycythemia, cyanide poisoning, and acute carbon monoxide poisoning.",
+    "options": [
+      {
+        "text": "Standard peripheral pulse oximetry",
+        "isCorrect": false,
+        "rationale": "Pulse oximetry reports the percentage of bound hemoglobin but does not discriminate oxygen from other bound substances. It is appropriate for routine saturation monitoring."
+      },
+      {
+        "text": "Calculated dissolved oxygen concentration",
+        "isCorrect": false,
+        "rationale": "The calculation determines plasma-dissolved oxygen from PO2 but cannot separate oxyhemoglobin, carboxyhemoglobin, and methemoglobin."
+      },
+      {
+        "text": "Calculated hemoglobin binding capacity",
+        "isCorrect": false,
+        "rationale": "Capacity estimates maximal oxygen binding from hemoglobin concentration. It does not identify the molecular state occupying hemoglobin."
+      },
+      {
+        "text": "Direct multi-state CO-oximetry",
+        "isCorrect": true,
+        "rationale": "CO-oximetry distinguishes oxyhemoglobin, deoxyhemoglobin, carboxyhemoglobin, and methemoglobin when pulse oximetry is misleading."
+      },
+      {
+        "text": "Standard oxygen partial pressure",
+        "isCorrect": false,
+        "rationale": "PO2 measures dissolved oxygen and can remain normal despite abnormal hemoglobin binding. It would identify impaired dissolved oxygen availability."
+      }
+    ]
+  },
+  {
+    "question": "A 24-year-old runner has warm active muscles producing excess carbon dioxide and hydrogen ions. At the same local PO2, which hemoglobin behavior improves oxygen delivery?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the factors that shift the oxygen-hemoglobin dissociation curve to the left and right, and changes its shape.",
+    "options": [
+      {
+        "text": "Lower saturation with greater unloading",
+        "isCorrect": false,
+        "rationale": "This describes the correct consequence of a right shift and would create a second key; therefore, it cannot validly remain incorrect."
+      },
+      {
+        "text": "Higher saturation with reduced unloading",
+        "isCorrect": false,
+        "rationale": "This is a left-shift pattern associated with higher affinity. It would impair delivery to active muscle."
+      },
+      {
+        "text": "Higher affinity with greater retention",
+        "isCorrect": false,
+        "rationale": "Greater retention prevents the needed tissue oxygen release. It occurs when the curve shifts left."
+      },
+      {
+        "text": "Lower pressure with unchanged saturation",
+        "isCorrect": false,
+        "rationale": "The curve shift changes saturation at a given pressure. Unchanged saturation would not represent the Bohr effect."
+      },
+      {
+        "text": "Reduced saturation with enhanced release",
+        "isCorrect": true,
+        "rationale": "Exercise, heat, carbon dioxide, and hydrogen ions shift the curve right, so less oxygen remains bound at the same PO2."
+      }
+    ]
+  },
+  {
+    "question": "A 31-year-old patient hyperventilates, reducing arterial carbon dioxide. Tissue metabolic demand is unchanged. Which hemoglobin change is expected at a given PO2?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the factors that shift the oxygen-hemoglobin dissociation curve to the left and right, and changes its shape.",
+    "options": [
+      {
+        "text": "Greater saturation and reduced unloading",
+        "isCorrect": true,
+        "rationale": "Reduced carbon dioxide shifts the curve left, increasing oxygen affinity and saturation while making tissue unloading more difficult."
+      },
+      {
+        "text": "Lower saturation and increased unloading",
+        "isCorrect": false,
+        "rationale": "This right-shift pattern follows increased carbon dioxide or hydrogen ions. Hyperventilation produces the opposite carbon dioxide change."
+      },
+      {
+        "text": "Lower affinity and increased P50",
+        "isCorrect": false,
+        "rationale": "Lower affinity and increased P50 define a right shift. Reduced carbon dioxide decreases P50."
+      },
+      {
+        "text": "Unchanged saturation and unchanged unloading",
+        "isCorrect": false,
+        "rationale": "Carbon dioxide is an identified determinant of oxygen affinity. Its reduction changes the curve rather than leaving it fixed."
+      },
+      {
+        "text": "Greater P50 and reduced loading",
+        "isCorrect": false,
+        "rationale": "Greater P50 indicates a right shift and harder pulmonary loading. Hyperventilation-induced hypocapnia favors a left shift."
+      }
+    ]
+  },
+  {
+    "question": "A 60-year-old patient has hemoglobin 20 g/dL [15 g/dL], PO2 100 mmHg [100 mmHg], and saturation 100% [95-100%]. Which interpretation best integrates these values?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the basic characteristics of anemia, polycythemia, cyanide poisoning, and acute carbon monoxide poisoning.",
+    "options": [
+      {
+        "text": "Normal pressure with reduced oxygen content",
+        "isCorrect": false,
+        "rationale": "Content rises when hemoglobin concentration increases and saturation remains complete. Reduced content would characterize anemia."
+      },
+      {
+        "text": "Normal pressure with increased oxygen content",
+        "isCorrect": false,
+        "rationale": "This is the correct polycythemia pattern and would create a second key; therefore, it cannot validly remain incorrect."
+      },
+      {
+        "text": "Reduced pressure with normal oxygen content",
+        "isCorrect": false,
+        "rationale": "The measured PO2 is normal, not reduced. Normal content would also ignore the increased hemoglobin concentration."
+      },
+      {
+        "text": "Normal pressure with greater oxygen content",
+        "isCorrect": true,
+        "rationale": "Polycythemia raises carrying capacity and oxygen content while arterial PO2 and saturation can remain normal."
+      },
+      {
+        "text": "Increased pressure with normal oxygen content",
+        "isCorrect": false,
+        "rationale": "PO2 is stated as normal. Moreover, increased hemoglobin at full saturation increases content above normal."
+      }
+    ]
+  },
+  {
+    "question": "A 40-year-old patient has tissue hypoxia after a toxic exposure. PO2, saturation, hemoglobin concentration, and arterial oxygen content are all normal. Which mechanism best fits this pattern?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the basic characteristics of anemia, polycythemia, cyanide poisoning, and acute carbon monoxide poisoning.",
+    "options": [
+      {
+        "text": "Reduced atmospheric oxygen availability",
+        "isCorrect": false,
+        "rationale": "Reduced atmospheric oxygen lowers arterial PO2, saturation, and content. Those measurements are normal here."
+      },
+      {
+        "text": "Reduced circulating hemoglobin concentration",
+        "isCorrect": false,
+        "rationale": "Anemia lowers hemoglobin concentration and oxygen content. Neither variable is reduced."
+      },
+      {
+        "text": "Impaired pulmonary oxygen diffusion",
+        "isCorrect": false,
+        "rationale": "Impaired diffusion would lower arterial PO2 and usually saturation. The normal arterial values oppose this mechanism."
+      },
+      {
+        "text": "Competitive heme-site occupation",
+        "isCorrect": false,
+        "rationale": "Carbon monoxide occupation lowers functional saturation and oxygen content despite normal PO2. The complete normal pattern does not fit it."
+      },
+      {
+        "text": "Blocked cellular oxygen utilization",
+        "isCorrect": true,
+        "rationale": "Cyanide poisoning causes tissue hypoxia despite normal PO2, saturation, hemoglobin concentration, and arterial oxygen content."
+      }
+    ]
+  },
+  {
+    "question": "A 34-year-old patient moves rapidly to high altitude. Hemoglobin concentration has not yet changed. Which arterial pattern is expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the basic characteristics of anemia, polycythemia, cyanide poisoning, and acute carbon monoxide poisoning.",
+    "options": [
+      {
+        "text": "Decreased PO2, saturation, and content",
+        "isCorrect": true,
+        "rationale": "High altitude lowers arterial oxygen pressure, reducing hemoglobin saturation and total oxygen content while hemoglobin concentration initially remains normal."
+      },
+      {
+        "text": "Normal PO2, saturation, and content",
+        "isCorrect": false,
+        "rationale": "This is the pattern identified for cyanide poisoning, not high altitude. Reduced inspired oxygen lowers arterial PO2."
+      },
+      {
+        "text": "Normal PO2 with decreased content",
+        "isCorrect": false,
+        "rationale": "This pattern can occur in anemia or carbon monoxide poisoning. High altitude directly decreases arterial PO2."
+      },
+      {
+        "text": "Increased PO2, saturation, and content",
+        "isCorrect": false,
+        "rationale": "High altitude reduces rather than increases oxygen pressure. All three oxygen measures therefore cannot rise."
+      },
+      {
+        "text": "Decreased PO2 with increased content",
+        "isCorrect": false,
+        "rationale": "With unchanged hemoglobin concentration, reduced PO2 lowers saturation and content. Increased content would require increased carrying capacity."
+      }
+    ]
+  },
+  {
+    "question": "A 55-year-old patient has unevenly ventilated lung regions. Hyperventilation in healthier regions restores arterial carbon dioxide but not arterial oxygen. Which property explains this difference?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand the functional differences and clinical importance between the blood oxygen and CO2 capacity.",
+    "options": [
+      {
+        "text": "Carbon dioxide has lower blood capacity",
+        "isCorrect": false,
+        "rationale": "Blood has greater capacity for carbon dioxide than oxygen. Lower capacity does not explain effective carbon dioxide compensation."
+      },
+      {
+        "text": "Oxygen remains far below saturation",
+        "isCorrect": false,
+        "rationale": "Hemoglobin in normally ventilated regions is already near maximal saturation. Remaining far below saturation would allow greater compensation."
+      },
+      {
+        "text": "Oxygen content reaches a saturation plateau",
+        "isCorrect": true,
+        "rationale": "Additional ventilation cannot substantially increase oxygen content once hemoglobin is near fully saturated, whereas carbon dioxide content can decline substantially."
+      },
+      {
+        "text": "Carbon dioxide cannot dissolve in plasma",
+        "isCorrect": false,
+        "rationale": "Carbon dioxide is highly soluble and approximately 10% is dissolved. Its solubility supports, rather than prevents, transport."
+      },
+      {
+        "text": "Oxygen has greater bicarbonate carriage",
+        "isCorrect": false,
+        "rationale": "Bicarbonate is the principal carbon dioxide transport form, not an oxygen transport form. Oxygen is carried mainly by hemoglobin."
+      }
+    ]
+  },
+  {
+    "question": "A 47-year-old patient has systemic venous blood entering the lungs. Oxygen binding to hemoglobin triggers release of hydrogen ions and carbon dioxide. Which named interaction is operating?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand the functional differences and clinical importance between the blood oxygen and CO2 capacity.",
+    "options": [
+      {
+        "text": "Bohr effect in systemic tissue",
+        "isCorrect": false,
+        "rationale": "The Bohr effect describes carbon dioxide and hydrogen ions lowering oxygen affinity in tissues. The stem describes oxygen promoting carbon dioxide release in lungs."
+      },
+      {
+        "text": "Chloride shift in systemic tissue",
+        "isCorrect": false,
+        "rationale": "The systemic chloride shift exchanges bicarbonate out for chloride in. It does not name the oxygen-induced release from hemoglobin."
+      },
+      {
+        "text": "Positive cooperativity during oxygen binding",
+        "isCorrect": false,
+        "rationale": "Positive cooperativity facilitates sequential oxygen binding but does not specifically describe carbon dioxide and hydrogen ion unloading."
+      },
+      {
+        "text": "Haldane effect in pulmonary blood",
+        "isCorrect": true,
+        "rationale": "The Haldane effect is the reduction in hemoglobin affinity for carbon dioxide and hydrogen ions as oxygen binds in the lungs."
+      },
+      {
+        "text": "Mass action in systemic blood",
+        "isCorrect": false,
+        "rationale": "Mass action drives carbon dioxide conversion according to local concentrations but does not name the hemoglobin interaction described."
+      }
+    ]
+  },
+  {
+    "question": "A 43-year-old patient's venous erythrocytes contain more chloride than arterial erythrocytes. Which intracellular event most directly initiates the difference?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the pathway of CO2 to bicarbonate in systemic capillary.",
+    "options": [
+      {
+        "text": "Rapid carbon dioxide hydration",
+        "isCorrect": false,
+        "rationale": "This is the correct initiating event and would create a second key; therefore, it cannot validly remain incorrect."
+      },
+      {
+        "text": "Rapid carbonic acid formation",
+        "isCorrect": false,
+        "rationale": "This is also part of the same correct pathway and would create another key; therefore, it cannot validly be retained as an incorrect option."
+      },
+      {
+        "text": "Accelerated bicarbonate production",
+        "isCorrect": false,
+        "rationale": "Bicarbonate production drives its exit and chloride entry, making this another correct description. It cannot validly serve as a distractor."
+      },
+      {
+        "text": "Suppressed oxygen binding",
+        "isCorrect": false,
+        "rationale": "Deoxygenation supports hydrogen buffering but does not directly generate the bicarbonate exchanged for chloride. Oxygen binding would predominate in arterial blood."
+      },
+      {
+        "text": "Carbonic anhydrase catalysis",
+        "isCorrect": true,
+        "rationale": "Carbonic anhydrase rapidly forms carbonic acid and bicarbonate in tissue erythrocytes, driving bicarbonate exit and chloride entry."
+      }
+    ]
+  },
+  {
+    "question": "A 29-year-old patient has arterial PO2 100 mmHg [100 mmHg] and hemoglobin saturation 97.5% [95-100%]. Which change would most directly increase oxygen delivery if cardiac output remains constant?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand carrying capacity.",
+    "options": [
+      {
+        "text": "Increasing arterial hemoglobin concentration",
+        "isCorrect": true,
+        "rationale": "Oxygen delivery equals cardiac output multiplied by oxygen content, and increased hemoglobin raises content when saturation is already near maximal."
+      },
+      {
+        "text": "Increasing PO2 toward 130 mmHg",
+        "isCorrect": false,
+        "rationale": "Near maximal saturation, raising PO2 adds only a small dissolved component. It produces little content increase compared with added hemoglobin."
+      },
+      {
+        "text": "Decreasing arterial hemoglobin concentration",
+        "isCorrect": false,
+        "rationale": "Lower hemoglobin reduces carrying capacity and oxygen content. It would decrease delivery at unchanged cardiac output."
+      },
+      {
+        "text": "Decreasing hemoglobin oxygen saturation",
+        "isCorrect": false,
+        "rationale": "Lower saturation reduces the amount of oxygen bound to existing hemoglobin. It would reduce total oxygen content."
+      },
+      {
+        "text": "Decreasing dissolved oxygen partial pressure",
+        "isCorrect": false,
+        "rationale": "Lower PO2 reduces dissolved oxygen and can reduce hemoglobin saturation. It cannot increase delivery."
+      }
+    ]
+  },
+  {
+    "question": "A 38-year-old patient has carbon monoxide exposure. The remaining unoccupied heme sites bind oxygen unusually tightly. Which dissociation-curve change follows?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the factors that shift the oxygen-hemoglobin dissociation curve to the left and right, and changes its shape.",
+    "options": [
+      {
+        "text": "Right shift with increased P50",
+        "isCorrect": false,
+        "rationale": "A right shift lowers affinity and promotes unloading. Carbon monoxide increases the affinity of remaining sites."
+      },
+      {
+        "text": "Left shift with decreased P50",
+        "isCorrect": true,
+        "rationale": "Carbon monoxide left-shifts the remaining oxygen-binding sites, decreasing P50 and impairing oxygen release to tissues."
+      },
+      {
+        "text": "Right shift with decreased P50",
+        "isCorrect": false,
+        "rationale": "A right shift and decreased P50 are incompatible. Right shifts increase the pressure required for 50% saturation."
+      },
+      {
+        "text": "Left shift with increased P50",
+        "isCorrect": false,
+        "rationale": "A left shift decreases rather than increases P50. Increased P50 signifies reduced affinity."
+      },
+      {
+        "text": "No shift with unchanged P50",
+        "isCorrect": false,
+        "rationale": "Carbon monoxide markedly increases affinity at remaining sites, so the curve does not remain unchanged."
+      }
+    ]
+  },
+  {
+    "question": "A 50-year-old patient's systemic tissues produce carbon dioxide. Bicarbonate leaves erythrocytes, and hydrogen ions remain intracellular. Which molecule buffers these hydrogen ions?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Analyze the pathway of CO2 to bicarbonate in systemic capillary.",
+    "options": [
+      {
+        "text": "Oxygenated hemoglobin in tissues",
+        "isCorrect": false,
+        "rationale": "Systemic tissues promote oxygen unloading, and the resulting deoxygenated form buffers hydrogen ions. Oxygenated hemoglobin is associated with pulmonary gas exchange."
+      },
+      {
+        "text": "Plasma bicarbonate outside erythrocytes",
+        "isCorrect": false,
+        "rationale": "Bicarbonate exits into plasma while hydrogen ions remain inside. The intracellular buffer specified is hemoglobin."
+      },
+      {
+        "text": "Deoxygenated hemoglobin in erythrocytes",
+        "isCorrect": true,
+        "rationale": "Deoxygenated hemoglobin binds and buffers hydrogen ions formed during carbon dioxide conversion in systemic erythrocytes."
+      },
+      {
+        "text": "Carbaminohemoglobin in arterial plasma",
+        "isCorrect": false,
+        "rationale": "Carbaminohemoglobin forms on hemoglobin rather than in plasma and transports carbon dioxide. It is not the specified hydrogen buffer."
+      },
+      {
+        "text": "Dissolved oxygen within arterial plasma",
+        "isCorrect": false,
+        "rationale": "Dissolved oxygen regulates hemoglobin saturation but does not buffer intracellular hydrogen ions."
+      }
+    ]
+  }
+]
