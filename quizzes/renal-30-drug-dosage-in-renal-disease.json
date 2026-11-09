@@ -1,0 +1,962 @@
+[
+  {
+    "question": "Which pharmacokinetic variable primarily determines a loading dose?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "Volume of distribution",
+        "isCorrect": true,
+        "rationale": "Loading dose is proportional to volume of distribution for a specified target concentration and bioavailability."
+      },
+      {
+        "text": "Total drug clearance",
+        "isCorrect": false,
+        "rationale": "Clearance determines maintenance dose rate. It would be the relevant variable when replacing drug eliminated over time."
+      },
+      {
+        "text": "Renal filtration rate",
+        "isCorrect": false,
+        "rationale": "Renal function can influence clearance but does not directly determine loading dose. It would matter primarily for maintenance dosing of a renally eliminated drug."
+      },
+      {
+        "text": "Elimination half-life",
+        "isCorrect": false,
+        "rationale": "Half-life determines the time required to approach steady state. It would be relevant when estimating how long repeated dosing takes to equilibrate."
+      },
+      {
+        "text": "Maintenance dosing interval",
+        "isCorrect": false,
+        "rationale": "The dosing interval is one component of maintenance therapy. It would be adjusted when reduced clearance requires less frequent administration."
+      }
+    ]
+  },
+  {
+    "question": "Approximately how many elimination half-lives are required to approach a desired steady-state plasma concentration?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "One to two half-lives",
+        "isCorrect": false,
+        "rationale": "One to two half-lives are insufficient to approach the stated steady state. This interval would describe an earlier accumulation phase."
+      },
+      {
+        "text": "Four to five half-lives",
+        "isCorrect": false,
+        "rationale": "This is the correct time range conceptually, but this option is marked incorrect only if another option duplicates it; therefore, it cannot serve as a valid distractor."
+      },
+      {
+        "text": "Four to five half-lives",
+        "isCorrect": true,
+        "rationale": "Repeated dosing generally requires approximately four to five elimination half-lives to approach steady state."
+      },
+      {
+        "text": "Seven to eight half-lives",
+        "isCorrect": false,
+        "rationale": "Seven to eight half-lives exceed the stated time required to approach steady state. This would represent continued dosing after the usual equilibration period."
+      },
+      {
+        "text": "Nine to ten half-lives",
+        "isCorrect": false,
+        "rationale": "Nine to ten half-lives are not required for the stated endpoint. This duration would extend well beyond the usual approach to steady state."
+      }
+    ]
+  },
+  {
+    "question": "Which index represents the combined filtration rates of all functioning nephrons?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the KDIGO recommended stepwise approach to adjusting drug dosage regimens for patients with CKD and AKI (Competencies III.4; OMED640:4)",
+    "options": [
+      {
+        "text": "Serum creatinine concentration",
+        "isCorrect": false,
+        "rationale": "Serum creatinine is used to estimate kidney filtration but is influenced by muscle mass and diet. It would be the relevant laboratory input rather than the filtration index itself."
+      },
+      {
+        "text": "Creatinine clearance estimate",
+        "isCorrect": false,
+        "rationale": "Creatinine clearance approximates filtration and may overestimate it because creatinine undergoes tubular secretion. It would fit a calculation using serum creatinine, age, sex, and weight."
+      },
+      {
+        "text": "Renal drug clearance",
+        "isCorrect": false,
+        "rationale": "Renal drug clearance describes removal of a drug by the kidneys. It would be relevant when relating renal function to maintenance dosing."
+      },
+      {
+        "text": "Total glomerular filtration rate",
+        "isCorrect": false,
+        "rationale": "This option expresses the same concept as the key and would create a second correct answer; therefore, it cannot function as a valid distractor."
+      },
+      {
+        "text": "Glomerular filtration rate",
+        "isCorrect": true,
+        "rationale": "Glomerular filtration rate equals the total filtration rates of the functioning nephrons and is a useful index of kidney function."
+      }
+    ]
+  },
+  {
+    "question": "Which pharmacokinetic variable primarily determines the maintenance dose rate?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "Apparent distribution volume",
+        "isCorrect": false,
+        "rationale": "Distribution volume primarily determines loading dose. It would be relevant when fluid overload changes the initial dose required to reach a target concentration."
+      },
+      {
+        "text": "Total drug clearance",
+        "isCorrect": true,
+        "rationale": "Maintenance dose rate is proportional to clearance because drug input must replace drug elimination at steady state."
+      },
+      {
+        "text": "Time to steady state",
+        "isCorrect": false,
+        "rationale": "Time to steady state is governed by elimination half-life. It would predict when concentrations equilibrate rather than the required maintenance dose rate."
+      },
+      {
+        "text": "Initial loading amount",
+        "isCorrect": false,
+        "rationale": "The loading amount rapidly establishes the target concentration. It does not determine the subsequent rate needed to replace eliminated drug."
+      },
+      {
+        "text": "Extracellular fluid expansion",
+        "isCorrect": false,
+        "rationale": "Fluid expansion can increase distribution volume. It would justify changing a loading dose rather than directly setting maintenance dose rate."
+      }
+    ]
+  },
+  {
+    "question": "A drug is infused at an unchanged rate while its clearance decreases from 100 mL/min to 20 mL/min. Its previous steady-state concentration was 2 mg/L. Which new concentration is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "10 mg/L plasma concentration",
+        "isCorrect": true,
+        "rationale": "Steady-state concentration is inversely proportional to clearance. A fivefold clearance reduction produces a fivefold increase from 2 mg/L to 10 mg/L."
+      },
+      {
+        "text": "8 mg/L plasma concentration",
+        "isCorrect": false,
+        "rationale": "This represents only a fourfold increase. It would fit a clearance reduction to one-fourth of normal rather than one-fifth."
+      },
+      {
+        "text": "5 mg/L plasma concentration",
+        "isCorrect": false,
+        "rationale": "This represents a 2.5-fold increase. It would require clearance to fall to 40% of its original value."
+      },
+      {
+        "text": "2 mg/L plasma concentration",
+        "isCorrect": false,
+        "rationale": "The concentration would remain 2 mg/L only if clearance or infusion rate were unchanged proportionally."
+      },
+      {
+        "text": "0.4 mg/L plasma concentration",
+        "isCorrect": false,
+        "rationale": "This incorrectly changes concentration in the same direction as clearance. It would result if the infusion rate decreased fivefold while clearance remained constant."
+      }
+    ]
+  },
+  {
+    "question": "A patient develops extracellular fluid expansion while bioavailability and the target plasma concentration remain unchanged. Which dosage modification follows directly from this change?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "Decrease the loading dose",
+        "isCorrect": false,
+        "rationale": "A decreased loading dose is appropriate when distribution volume decreases. Fluid expansion produces the opposite change."
+      },
+      {
+        "text": "Decrease the maintenance rate",
+        "isCorrect": false,
+        "rationale": "Maintenance rate should decrease when clearance decreases. Fluid expansion by itself identifies a distribution change, not a clearance reduction."
+      },
+      {
+        "text": "Increase the loading dose",
+        "isCorrect": true,
+        "rationale": "Fluid expansion increases distribution volume, particularly for hydrophilic drugs, so a larger loading dose is required for the same target concentration."
+      },
+      {
+        "text": "Increase the maintenance rate",
+        "isCorrect": false,
+        "rationale": "An increased maintenance rate would require increased clearance. The described change instead affects distribution volume."
+      },
+      {
+        "text": "Extend the dosing interval",
+        "isCorrect": false,
+        "rationale": "Extending the interval compensates for reduced clearance during maintenance therapy. It does not correct the initial distribution effect of fluid expansion."
+      }
+    ]
+  },
+  {
+    "question": "Renal function falls to 40% of normal for a drug whose clearance changes proportionally with kidney function. Which maintenance regimen most closely preserves the previous average exposure?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "Maintain the original dose rate",
+        "isCorrect": false,
+        "rationale": "Keeping the original rate while clearance falls would increase steady-state exposure. It would be appropriate if renal function remained normal."
+      },
+      {
+        "text": "Use twice the original rate",
+        "isCorrect": false,
+        "rationale": "Doubling the rate would further increase accumulation. It would require substantially increased rather than reduced clearance."
+      },
+      {
+        "text": "Use sixty percent dosing",
+        "isCorrect": false,
+        "rationale": "Sixty percent dosing exceeds the clearance fraction and would raise average exposure. It would fit renal function at 60% of normal."
+      },
+      {
+        "text": "Use forty percent dosing",
+        "isCorrect": false,
+        "rationale": "This duplicates the correct proportional adjustment and would create a second key; therefore, it cannot serve as a valid distractor."
+      },
+      {
+        "text": "Use forty percent dosing",
+        "isCorrect": true,
+        "rationale": "Maintenance dose rate is proportional to clearance, so renal function at 40% of normal supports approximately 40% of the original dose rate."
+      }
+    ]
+  },
+  {
+    "question": "A drug has bioavailability of 0.93, a dose rate of 0.208 mg/h, and clearance of 0.192 L/h. Which steady-state concentration is predicted?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "0.20 mg/L steady state",
+        "isCorrect": false,
+        "rationale": "This value does not result from multiplying dose rate by bioavailability and dividing by clearance. It would reflect a substantially larger clearance."
+      },
+      {
+        "text": "1.01 mg/L steady state",
+        "isCorrect": true,
+        "rationale": "Using concentration = bioavailability × dose rate ÷ clearance gives approximately 0.93 × 0.208 ÷ 0.192 = 1.01 mg/L."
+      },
+      {
+        "text": "1.93 mg/L steady state",
+        "isCorrect": false,
+        "rationale": "This value does not follow the stated steady-state equation. It would overestimate exposure for the supplied dose rate and clearance."
+      },
+      {
+        "text": "4.47 mg/L steady state",
+        "isCorrect": false,
+        "rationale": "This concentration is too high for the supplied parameters. It would require a higher dose rate or lower clearance."
+      },
+      {
+        "text": "9.30 mg/L steady state",
+        "isCorrect": false,
+        "rationale": "This incorrectly treats bioavailability as a large multiplier. It would require a markedly different dose rate-to-clearance ratio."
+      }
+    ]
+  },
+  {
+    "question": "Reduced albumin binding increases the unbound fraction of an acidic drug in chronic kidney disease. Which linked pharmacokinetic change is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "Reduced tissue drug distribution",
+        "isCorrect": false,
+        "rationale": "Reduced binding leaves more free drug available to enter tissues, so tissue distribution does not decrease. This would fit increased plasma sequestration."
+      },
+      {
+        "text": "Reduced apparent distribution volume",
+        "isCorrect": false,
+        "rationale": "A smaller distribution volume would follow reduced tissue entry. The described increase in unbound drug promotes the opposite effect."
+      },
+      {
+        "text": "Unchanged apparent distribution volume",
+        "isCorrect": false,
+        "rationale": "The distribution volume is not expected to remain unchanged when reduced binding increases tissue availability. Unchanged binding would support this option."
+      },
+      {
+        "text": "Increased apparent distribution volume",
+        "isCorrect": true,
+        "rationale": "Fewer plasma binding sites increase free drug available for tissue distribution, thereby increasing apparent volume of distribution."
+      },
+      {
+        "text": "Increased plasma protein binding",
+        "isCorrect": false,
+        "rationale": "This is the opposite of the stated binding change. It would require more available albumin binding sites."
+      }
+    ]
+  },
+  {
+    "question": "A renally eliminated medication has an unchanged distribution volume but substantially reduced clearance. Which paired dosing approach is most appropriate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "Usual loading, reduced maintenance",
+        "isCorrect": false,
+        "rationale": "This is the correct pharmacokinetic pairing and would create a second key if retained as a distractor."
+      },
+      {
+        "text": "Reduced loading, usual maintenance",
+        "isCorrect": false,
+        "rationale": "Unchanged distribution volume does not justify reducing the loading dose, and reduced clearance makes usual maintenance excessive."
+      },
+      {
+        "text": "Increased loading, increased maintenance",
+        "isCorrect": false,
+        "rationale": "Neither change is supported. Increased loading requires increased distribution volume, whereas increased maintenance requires increased clearance."
+      },
+      {
+        "text": "Reduced loading, reduced maintenance",
+        "isCorrect": false,
+        "rationale": "The maintenance reduction is appropriate, but the loading reduction is not. Both would be appropriate only if distribution volume and clearance decreased."
+      },
+      {
+        "text": "Usual loading, reduced maintenance",
+        "isCorrect": true,
+        "rationale": "The unchanged distribution volume supports the usual loading dose, while reduced clearance requires a lower maintenance dose rate."
+      }
+    ]
+  },
+  {
+    "question": "A standard regimen is 1000 mg every 12 hours. Drug clearance is estimated at 40% of normal. Which calculated maintenance amount preserves the same interval?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "400 mg every 12 hours",
+        "isCorrect": true,
+        "rationale": "Multiplying the usual 1000-mg dose by the clearance fraction of 0.4 gives 400 mg while retaining the 12-hour interval."
+      },
+      {
+        "text": "500 mg every 12 hours",
+        "isCorrect": false,
+        "rationale": "This is a practical regimen presented for use when 400-mg doses are inconvenient, but it is not the calculated proportional amount."
+      },
+      {
+        "text": "600 mg every 12 hours",
+        "isCorrect": false,
+        "rationale": "This corresponds to 60% rather than 40% of the standard dose. It would fit clearance at 60% of normal."
+      },
+      {
+        "text": "800 mg every 12 hours",
+        "isCorrect": false,
+        "rationale": "This corresponds to 80% of the standard dose. It would fit a much smaller reduction in clearance."
+      },
+      {
+        "text": "1000 mg every 12 hours",
+        "isCorrect": false,
+        "rationale": "The unchanged regimen would exceed the replacement requirement at 40% clearance and promote accumulation."
+      }
+    ]
+  },
+  {
+    "question": "A clinician wishes to retain a 1000-mg individual dose when clearance is approximately 40% of normal. Which practical regimen matches the adjustment example?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "1000 mg every 8 hours",
+        "isCorrect": false,
+        "rationale": "Shortening the interval increases dose rate despite reduced clearance. It would be considered only with markedly increased elimination."
+      },
+      {
+        "text": "1000 mg every 12 hours",
+        "isCorrect": false,
+        "rationale": "This retains the unadjusted dose rate and would increase exposure when clearance is reduced."
+      },
+      {
+        "text": "1000 mg every 18 hours",
+        "isCorrect": false,
+        "rationale": "This interval is shorter than the practical regimen provided for approximately 40% renal function and would produce a higher dose rate."
+      },
+      {
+        "text": "1000 mg every 24 hours",
+        "isCorrect": true,
+        "rationale": "The practical adjustment retains the 1000-mg dose and extends administration from every 12 hours to every 24 hours."
+      },
+      {
+        "text": "1000 mg every 36 hours",
+        "isCorrect": false,
+        "rationale": "This interval reduces the dose rate beyond the presented practical regimen. It would correspond to a more severe reduction in elimination."
+      }
+    ]
+  },
+  {
+    "question": "Which sequence best represents the monitoring component of individualized dosage adjustment?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the KDIGO recommended stepwise approach to adjusting drug dosage regimens for patients with CKD and AKI (Competencies III.4; OMED640:4)",
+    "options": [
+      {
+        "text": "Monitor, estimate, start, adjust",
+        "isCorrect": false,
+        "rationale": "Monitoring cannot evaluate treatment response before a regimen is estimated and started. This order reverses the initial clinical steps."
+      },
+      {
+        "text": "Start, adjust, estimate, monitor",
+        "isCorrect": false,
+        "rationale": "Adjustment should follow monitoring rather than precede estimation. This sequence lacks a rational initial dose selection."
+      },
+      {
+        "text": "Estimate, start, monitor, adjust",
+        "isCorrect": false,
+        "rationale": "This duplicates the correct sequence and would create a second key; therefore, it cannot function as a distractor."
+      },
+      {
+        "text": "Estimate, adjust, start, monitor",
+        "isCorrect": false,
+        "rationale": "A regimen cannot be adjusted from observed response before therapy begins. Adjustment should follow monitoring."
+      },
+      {
+        "text": "Estimate, start, monitor, adjust",
+        "isCorrect": true,
+        "rationale": "The dosage process proceeds from estimation to treatment initiation, monitoring of response or levels, and subsequent adjustment."
+      }
+    ]
+  },
+  {
+    "question": "Which limitation applies to creatinine-based filtration estimates regardless of the equation selected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the KDIGO recommended stepwise approach to adjusting drug dosage regimens for patients with CKD and AKI (Competencies III.4; OMED640:4)",
+    "options": [
+      {
+        "text": "Dependence on muscle mass and diet",
+        "isCorrect": true,
+        "rationale": "Serum creatinine varies with muscle mass and diet, causing estimated filtration to differ from true filtration at physiologic extremes."
+      },
+      {
+        "text": "Dependence on race category alone",
+        "isCorrect": false,
+        "rationale": "Race was included in the 2009 equation but not the 2021 equation. It is therefore not a limitation shared by every equation."
+      },
+      {
+        "text": "Restriction to female patients only",
+        "isCorrect": false,
+        "rationale": "Creatinine-based equations apply to both sexes with equation-specific factors. This restriction is not part of the described methods."
+      },
+      {
+        "text": "Requirement for urinary drug levels",
+        "isCorrect": false,
+        "rationale": "The equations use serum creatinine and demographic variables rather than urinary drug levels. Urinary measurements would represent a different assessment."
+      },
+      {
+        "text": "Requirement for measured filtration markers",
+        "isCorrect": false,
+        "rationale": "Estimated filtration avoids direct measurement with filtration markers. Such markers would be used for measured rather than estimated filtration."
+      }
+    ]
+  },
+  {
+    "question": "Which equation characteristic distinguishes the 2021 creatinine-based approach from the 2009 version?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the KDIGO recommended stepwise approach to adjusting drug dosage regimens for patients with CKD and AKI (Competencies III.4; OMED640:4)",
+    "options": [
+      {
+        "text": "It requires urinary iothalamate clearance",
+        "isCorrect": false,
+        "rationale": "Urinary iothalamate clearance was used as a reference method in development contexts, not as a routine input to the 2021 equation."
+      },
+      {
+        "text": "It requires patient body weight",
+        "isCorrect": false,
+        "rationale": "Body weight is an input to Cockcroft-Gault, not the listed 2021 creatinine equation."
+      },
+      {
+        "text": "It omits a race specification",
+        "isCorrect": true,
+        "rationale": "The 2021 equation avoids specifying race while remaining sufficiently accurate for most routine clinical circumstances."
+      },
+      {
+        "text": "It eliminates creatinine imprecision",
+        "isCorrect": false,
+        "rationale": "The 2021 equation retains limitations arising from muscle mass and diet because it still depends on serum creatinine."
+      },
+      {
+        "text": "It reports only low values",
+        "isCorrect": false,
+        "rationale": "Restricted reporting below 60 mL/min/1.73 m2 was associated with limitations discussed for MDRD, not the defining feature of the 2021 equation."
+      }
+    ]
+  },
+  {
+    "question": "A 67-year-old patient with chronic kidney disease requires rapid therapeutic exposure to a hydrophilic drug. Examination shows marked edema, and renal clearance is reduced. Which initial dosing strategy is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "Increase the loading dose",
+        "isCorrect": true,
+        "rationale": "Edema expands extracellular fluid and increases distribution volume for a hydrophilic drug, requiring a larger loading dose to reach the target concentration."
+      },
+      {
+        "text": "Decrease the loading dose",
+        "isCorrect": false,
+        "rationale": "A lower loading dose would be appropriate if distribution volume decreased. Edema produces the opposite distribution change."
+      },
+      {
+        "text": "Omit the loading dose",
+        "isCorrect": false,
+        "rationale": "Omitting the loading dose preserves the four-to-five-half-life delay. It would not meet the stated need for rapid therapeutic exposure."
+      },
+      {
+        "text": "Extend the loading interval",
+        "isCorrect": false,
+        "rationale": "Loading dose is usually given once or in divided fractions rather than managed as a maintenance interval. Interval extension addresses reduced maintenance clearance."
+      },
+      {
+        "text": "Maintain the usual loading dose",
+        "isCorrect": false,
+        "rationale": "The usual loading dose is appropriate when distribution volume is unchanged. Marked edema indicates that it has increased."
+      }
+    ]
+  },
+  {
+    "question": "A 58-year-old patient receives a continuous infusion. Kidney dysfunction reduces clearance to one-fifth of normal, but the infusion rate is unchanged. Which adjustment best restores the previous steady-state concentration?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "Double the infusion rate",
+        "isCorrect": false,
+        "rationale": "Doubling input while clearance is reduced would further increase steady-state concentration. It would fit increased rather than decreased clearance."
+      },
+      {
+        "text": "Halve the infusion rate",
+        "isCorrect": false,
+        "rationale": "Halving the rate does not match the fivefold clearance reduction and would leave exposure above the original target."
+      },
+      {
+        "text": "Maintain the infusion rate",
+        "isCorrect": false,
+        "rationale": "An unchanged rate with one-fifth clearance produces a fivefold concentration increase. This would be suitable only if clearance were unchanged."
+      },
+      {
+        "text": "Reduce the rate fivefold",
+        "isCorrect": false,
+        "rationale": "This is equivalent to the correct adjustment and would create a second key if used as a distractor."
+      },
+      {
+        "text": "Use one-fifth infusion rate",
+        "isCorrect": true,
+        "rationale": "Steady-state concentration depends on dose rate divided by clearance. Reducing both to one-fifth preserves the original ratio and concentration."
+      }
+    ]
+  },
+  {
+    "question": "A 46-year-old woman with chronic kidney disease is prescribed a renally cleared antimicrobial. Her filtration estimate is 39.7 mL/min/1.73 m2 compared with approximately 100 mL/min in normal function. Which maintenance plan best matches the calculated clearance fraction?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "Retain the complete dose rate",
+        "isCorrect": false,
+        "rationale": "The complete dose rate would exceed elimination at approximately 40% renal function and increase accumulation."
+      },
+      {
+        "text": "Use forty percent dose rate",
+        "isCorrect": true,
+        "rationale": "The renal function fraction is approximately 39.7/100, so a clearance-proportional maintenance rate is about 40% of standard."
+      },
+      {
+        "text": "Use sixty percent dose rate",
+        "isCorrect": false,
+        "rationale": "Sixty percent reverses the fraction lost rather than using the fraction remaining. It would fit renal function at 60% of normal."
+      },
+      {
+        "text": "Use eighty percent dose rate",
+        "isCorrect": false,
+        "rationale": "Eighty percent would be appropriate for only a mild reduction in clearance, not function near 40% of normal."
+      },
+      {
+        "text": "Double the complete dose rate",
+        "isCorrect": false,
+        "rationale": "Doubling the rate moves exposure in the wrong direction and would be considered only if clearance substantially increased."
+      }
+    ]
+  },
+  {
+    "question": "A 72-year-old woman has serum creatinine of 3.0 mg/dL compared with an approximate reference value of 1.0 mg/dL. A renally excreted drug is normally given as 600 mg twice daily. Using the inverse relationship presented, which adjusted individual dose is appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "100 mg twice daily",
+        "isCorrect": false,
+        "rationale": "This represents one-sixth of the standard dose. It would require renal function near 17% rather than approximately one-third of normal."
+      },
+      {
+        "text": "150 mg twice daily",
+        "isCorrect": false,
+        "rationale": "This represents one-fourth of the standard dose. It would fit a fourfold rather than threefold creatinine increase under the simplified relationship."
+      },
+      {
+        "text": "200 mg twice daily",
+        "isCorrect": false,
+        "rationale": "This is the correct proportional result and would create a second key if retained as a distractor."
+      },
+      {
+        "text": "200 mg twice daily",
+        "isCorrect": true,
+        "rationale": "A threefold serum creatinine increase corresponds to approximately one-third of normal creatinine clearance; one-third of 600 mg is 200 mg."
+      },
+      {
+        "text": "300 mg twice daily",
+        "isCorrect": false,
+        "rationale": "This represents one-half of the standard dose. It would fit renal function at approximately 50% of normal."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic kidney disease begins a drug after an individualized regimen is calculated. Several doses later, the measured concentration exceeds the target and adverse effects appear. What is the next best step?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the KDIGO recommended stepwise approach to adjusting drug dosage regimens for patients with CKD and AKI (Competencies III.4; OMED640:4)",
+    "options": [
+      {
+        "text": "Repeat the demographic history",
+        "isCorrect": false,
+        "rationale": "History is obtained during initial assessment. New excessive exposure after treatment requires regimen revision based on monitoring results."
+      },
+      {
+        "text": "Recalculate normal kidney function",
+        "isCorrect": false,
+        "rationale": "Normal reference function does not replace the patient's observed response. Reassessment should use the patient's current status and measured concentration."
+      },
+      {
+        "text": "Continue the current regimen",
+        "isCorrect": false,
+        "rationale": "Continuation would preserve excessive exposure and toxicity. It would be reasonable only if response and concentrations were appropriate."
+      },
+      {
+        "text": "Increase the maintenance rate",
+        "isCorrect": false,
+        "rationale": "Increasing the rate would worsen excessive concentration. It would be considered for subtherapeutic exposure with adequate tolerance."
+      },
+      {
+        "text": "Revise the dosage regimen",
+        "isCorrect": true,
+        "rationale": "The stepwise process uses monitored drug response, toxicity, and levels to revise the regimen after therapy begins."
+      }
+    ]
+  },
+  {
+    "question": "A patient with unstable acute kidney injury requires a medication with renal elimination. Current drug levels are available, and kidney function has changed since treatment began. Which action best completes the stepwise process?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the KDIGO recommended stepwise approach to adjusting drug dosage regimens for patients with CKD and AKI (Competencies III.4; OMED640:4)",
+    "options": [
+      {
+        "text": "Adjust using response and status",
+        "isCorrect": true,
+        "rationale": "Regimen revision should incorporate drug response and changes in patient status, including altered renal function."
+      },
+      {
+        "text": "Retain the initial dosage indefinitely",
+        "isCorrect": false,
+        "rationale": "An initial estimate must be reassessed when kidney function changes. Retention would fit stable function with appropriate levels and response."
+      },
+      {
+        "text": "Use normal renal function values",
+        "isCorrect": false,
+        "rationale": "Normal values do not represent the patient's changing elimination. They would be useful only as a comparison when calculating a renal function fraction."
+      },
+      {
+        "text": "Ignore the measured drug levels",
+        "isCorrect": false,
+        "rationale": "Available levels are explicit monitoring data for individualization. They could be omitted only when unavailable."
+      },
+      {
+        "text": "Restart the assessment without treatment",
+        "isCorrect": false,
+        "rationale": "Reassessment is required, but the described final step is regimen revision rather than discarding all accumulated treatment and monitoring information."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic kidney disease has severe fluid retention and reduced renal elimination of a hydrophilic drug. Rapid target attainment is required, followed by sustained therapy. Which combined strategy is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "Lower loading and lower maintenance",
+        "isCorrect": false,
+        "rationale": "Lower maintenance is supported by reduced clearance, but lower loading conflicts with the increased distribution volume caused by fluid retention."
+      },
+      {
+        "text": "Higher loading and usual maintenance",
+        "isCorrect": false,
+        "rationale": "Higher loading addresses increased distribution volume, but usual maintenance would promote accumulation when clearance is reduced."
+      },
+      {
+        "text": "Higher loading and lower maintenance",
+        "isCorrect": true,
+        "rationale": "Fluid retention increases distribution volume and loading requirement, whereas reduced elimination lowers the maintenance dose rate."
+      },
+      {
+        "text": "Usual loading and higher maintenance",
+        "isCorrect": false,
+        "rationale": "Neither component matches the described changes. This pairing would require unchanged distribution volume and increased clearance."
+      },
+      {
+        "text": "Lower loading and higher maintenance",
+        "isCorrect": false,
+        "rationale": "This is opposite to both required adjustments. It would fit decreased distribution volume combined with increased clearance."
+      }
+    ]
+  },
+  {
+    "question": "A patient receiving repeated doses develops declining kidney function. The dose and interval remain unchanged, and the drug is eliminated primarily through the kidneys. Which mechanism best explains the rising plasma concentration?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "Increased renal drug elimination",
+        "isCorrect": false,
+        "rationale": "Increased elimination would lower rather than raise plasma concentration. It would occur with increased renal clearance."
+      },
+      {
+        "text": "Decreased apparent distribution volume",
+        "isCorrect": false,
+        "rationale": "A distribution change can alter concentrations, but the stated renal decline directly reduces elimination of a primarily renally cleared drug."
+      },
+      {
+        "text": "Increased plasma protein binding",
+        "isCorrect": false,
+        "rationale": "The material describes reduced protein binding in chronic kidney disease. Increased binding would not explain accumulation from declining renal function."
+      },
+      {
+        "text": "Reduced renal drug clearance",
+        "isCorrect": true,
+        "rationale": "Reduced renal clearance decreases drug removal, so unchanged dosing increases accumulation and steady-state concentration."
+      },
+      {
+        "text": "Reduced oral drug absorption",
+        "isCorrect": false,
+        "rationale": "Reduced absorption would lower drug input and concentration. It would fit subtherapeutic exposure after gastrointestinal changes."
+      }
+    ]
+  },
+  {
+    "question": "A patient at an extreme of muscle mass has a serum creatinine-based filtration estimate that appears inconsistent with the clinical picture. What is the most appropriate interpretation?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the KDIGO recommended stepwise approach to adjusting drug dosage regimens for patients with CKD and AKI (Competencies III.4; OMED640:4)",
+    "options": [
+      {
+        "text": "The estimate may be imprecise",
+        "isCorrect": false,
+        "rationale": "This is the correct interpretation and would create a second key if retained as a distractor."
+      },
+      {
+        "text": "The estimate may be imprecise",
+        "isCorrect": false,
+        "rationale": "This duplicates the correct answer and therefore cannot function as a valid distractor."
+      },
+      {
+        "text": "The estimate is always exact",
+        "isCorrect": false,
+        "rationale": "Creatinine generation varies with muscle mass and diet, so the estimate may differ from true filtration."
+      },
+      {
+        "text": "The estimate excludes serum creatinine",
+        "isCorrect": false,
+        "rationale": "The described estimate is explicitly creatinine-based. An estimate excluding creatinine would require a different marker."
+      },
+      {
+        "text": "The estimate may be imprecise",
+        "isCorrect": true,
+        "rationale": "Extreme muscle mass changes creatinine generation, so estimated filtration may be higher or lower than the patient's true filtration."
+      }
+    ]
+  },
+  {
+    "question": "A clinician is selecting an equation for routine estimation of kidney filtration and wants to avoid specifying race. Which method best meets this requirement?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the KDIGO recommended stepwise approach to adjusting drug dosage regimens for patients with CKD and AKI (Competencies III.4; OMED640:4)",
+    "options": [
+      {
+        "text": "CKD-EPI 2021 creatinine equation",
+        "isCorrect": true,
+        "rationale": "The 2021 CKD-EPI creatinine equation avoids the need to specify race and is sufficiently accurate for most routine circumstances."
+      },
+      {
+        "text": "CKD-EPI 2009 creatinine equation",
+        "isCorrect": false,
+        "rationale": "The 2009 equation includes race, a feature associated with imprecision as a social construct and potential disparities."
+      },
+      {
+        "text": "MDRD chronic disease equation",
+        "isCorrect": false,
+        "rationale": "MDRD was developed in a chronic kidney disease cohort and includes race among its listed factors. It does not meet the stated requirement."
+      },
+      {
+        "text": "Cockcroft-Gault clearance equation",
+        "isCorrect": false,
+        "rationale": "Cockcroft-Gault estimates creatinine clearance using age, sex, weight, and serum creatinine, but it is no longer recommended here because creatinine values were not standardized."
+      },
+      {
+        "text": "Measured iothalamate clearance method",
+        "isCorrect": false,
+        "rationale": "This is a measured filtration approach rather than the requested routine estimating equation. It would fit a direct measurement strategy."
+      }
+    ]
+  },
+  {
+    "question": "A patient needs immediate therapeutic concentrations of a potentially toxic drug that has a high distribution volume. Which administration plan reduces delay while limiting a large single exposure?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "Divide the loading dose",
+        "isCorrect": false,
+        "rationale": "This is the correct strategy and would create a second key if retained as a distractor."
+      },
+      {
+        "text": "Divide the loading dose",
+        "isCorrect": true,
+        "rationale": "A loading dose removes the delay to target concentration and may be divided into fractions for drugs with greater toxicity."
+      },
+      {
+        "text": "Omit the loading dose",
+        "isCorrect": false,
+        "rationale": "Omission requires waiting approximately four to five half-lives for steady state, conflicting with the need for immediate exposure."
+      },
+      {
+        "text": "Increase the maintenance interval",
+        "isCorrect": false,
+        "rationale": "Interval extension addresses reduced clearance during maintenance therapy. It does not rapidly establish the initial target concentration."
+      },
+      {
+        "text": "Decrease the target concentration",
+        "isCorrect": false,
+        "rationale": "Changing the therapeutic target is not the stated dosing strategy. Fractionation limits a large single exposure while preserving the intended total loading amount."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic kidney disease starts a new orally administered drug. Parent-drug and metabolite concentrations differ markedly from those observed with normal kidney function. Which approach is most appropriate before further adjustment?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the KDIGO recommended stepwise approach to adjusting drug dosage regimens for patients with CKD and AKI (Competencies III.4; OMED640:4)",
+    "options": [
+      {
+        "text": "Assume only excretion changed",
+        "isCorrect": false,
+        "rationale": "Chronic kidney disease can alter absorption, distribution, metabolism, excretion, and microbiome-related handling, so an excretion-only assumption is incomplete."
+      },
+      {
+        "text": "Assume only absorption changed",
+        "isCorrect": false,
+        "rationale": "Oral absorption may change, but altered metabolites and nonrenal clearance also require consideration. This would fit an isolated gastrointestinal effect."
+      },
+      {
+        "text": "Evaluate all pharmacokinetic processes",
+        "isCorrect": true,
+        "rationale": "Kidney disease may alter absorption, distribution, nonrenal metabolism, and excretion, making the combined exposure a new pharmacologic context."
+      },
+      {
+        "text": "Apply the normal regimen unchanged",
+        "isCorrect": false,
+        "rationale": "Markedly different parent and metabolite concentrations indicate that normal-function exposure assumptions may not apply."
+      },
+      {
+        "text": "Evaluate renal excretion exclusively",
+        "isCorrect": false,
+        "rationale": "Exclusive focus on excretion misses altered protein binding, fluid distribution, gastrointestinal factors, microbiome effects, and nonrenal metabolism."
+      }
+    ]
+  },
+  {
+    "question": "A patient's kidney function is stable at 30% of normal. A primarily renally eliminated drug has a standard dose of 150 mg/day. Which daily amount follows the proportional adjustment method?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "30 mg per day",
+        "isCorrect": false,
+        "rationale": "This is 20% of the standard dose. It would fit renal function at 20% of normal."
+      },
+      {
+        "text": "40 mg per day",
+        "isCorrect": false,
+        "rationale": "This is approximately 27% of the standard dose rather than the stated 30%."
+      },
+      {
+        "text": "50 mg per day",
+        "isCorrect": false,
+        "rationale": "This is one-third of the standard dose. It would fit kidney function near 33% of normal."
+      },
+      {
+        "text": "45 mg per day",
+        "isCorrect": true,
+        "rationale": "Multiplying 150 mg/day by the remaining renal function fraction of 0.30 gives 45 mg/day."
+      },
+      {
+        "text": "60 mg per day",
+        "isCorrect": false,
+        "rationale": "This is 40% of the standard dose. It would fit renal function at 40% of normal."
+      }
+    ]
+  },
+  {
+    "question": "A patient with chronic kidney disease receives an adjusted regimen based on an initial filtration estimate. Follow-up shows improving kidney function and subtherapeutic drug levels. What is the next best step?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the KDIGO recommended stepwise approach to adjusting drug dosage regimens for patients with CKD and AKI (Competencies III.4; OMED640:4)",
+    "options": [
+      {
+        "text": "Continue the reduced regimen",
+        "isCorrect": false,
+        "rationale": "Continuing ignores improved elimination and measured subtherapeutic exposure. It would fit stable function with adequate levels."
+      },
+      {
+        "text": "Decrease the maintenance rate",
+        "isCorrect": false,
+        "rationale": "A further decrease would worsen subtherapeutic exposure. It would be appropriate for excessive levels or declining clearance."
+      },
+      {
+        "text": "Repeat only the history",
+        "isCorrect": false,
+        "rationale": "History is part of initial assessment, but current renal function and drug levels directly support regimen revision."
+      },
+      {
+        "text": "Ignore the changing filtration",
+        "isCorrect": false,
+        "rationale": "Changing kidney function alters renal drug clearance and is specifically included when revising a regimen."
+      },
+      {
+        "text": "Increase and reassess the regimen",
+        "isCorrect": true,
+        "rationale": "Improved kidney function can increase clearance, and subtherapeutic levels support increasing the regimen followed by continued monitoring."
+      }
+    ]
+  },
+  {
+    "question": "A patient with reduced kidney function has no edema, ascites, fluid overload, or evidence of altered distribution volume. A rapidly acting regimen is required for a renally eliminated drug. Which initial dose is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the pharmacokinetic basis for drug dosage adjustment (Competencies II.1; OMED640:4)",
+    "options": [
+      {
+        "text": "Use the usual loading dose",
+        "isCorrect": true,
+        "rationale": "Renal impairment alone does not require a lower loading dose. With unchanged distribution volume, the usual loading dose remains appropriate."
+      },
+      {
+        "text": "Use half the loading dose",
+        "isCorrect": false,
+        "rationale": "A reduced loading dose requires a decreased distribution volume. No such change is present."
+      },
+      {
+        "text": "Use double the loading dose",
+        "isCorrect": false,
+        "rationale": "A larger loading dose requires increased distribution volume, such as that produced by fluid overload."
+      },
+      {
+        "text": "Omit the initial loading dose",
+        "isCorrect": false,
+        "rationale": "Omission delays target attainment for approximately four to five half-lives and conflicts with the need for rapid action."
+      },
+      {
+        "text": "Extend the initial dosing interval",
+        "isCorrect": false,
+        "rationale": "Interval extension is a maintenance adjustment for reduced clearance, not a substitute for an appropriate initial loading dose."
+      }
+    ]
+  }
+]
