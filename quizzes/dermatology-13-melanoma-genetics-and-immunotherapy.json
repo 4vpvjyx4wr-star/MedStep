@@ -1,0 +1,1058 @@
+[
+  {
+    "question": "Which major category of skin cancer has the lowest incidence but the greatest tendency to metastasize?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Recite the major categories of skin cancer",
+    "options": [
+      {
+        "text": "Melanoma",
+        "isCorrect": true,
+        "rationale": "Melanoma is the least common major category but readily metastasizes and accounts for most skin cancer deaths."
+      },
+      {
+        "text": "Basal cell carcinoma",
+        "isCorrect": false,
+        "rationale": "Basal cell carcinoma is the most common category and almost never metastasizes. It would fit a tumor defined by high incidence and minimal metastatic potential."
+      },
+      {
+        "text": "Squamous cell carcinoma",
+        "isCorrect": false,
+        "rationale": "Squamous cell carcinoma is the second most common category and has a very low probability of metastasis. It would fit an intermediate incidence ranking."
+      },
+      {
+        "text": "Nonmelanoma skin cancer",
+        "isCorrect": false,
+        "rationale": "Nonmelanoma skin cancer groups basal and squamous cell carcinomas rather than identifying the least common major category. It would fit a collective classification of those two cancers."
+      },
+      {
+        "text": "Basal squamous carcinoma",
+        "isCorrect": false,
+        "rationale": "This is not one of the three major categories described. Classification as basal cell carcinoma or squamous cell carcinoma would require the corresponding individual tumor type."
+      }
+    ]
+  },
+  {
+    "question": "Which inherited gene is most commonly mutated in the familial form of melanoma described?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Compare the most common genetic mutations seen in BCC, SCC, familial melanoma, acquired melanoma, congenital melanocytic nevi, and acquired melanocytic nevi",
+    "options": [
+      {
+        "text": "PTCH gene",
+        "isCorrect": false,
+        "rationale": "Inherited PTCH mutation causes nevoid basal cell carcinoma syndrome. It would fit a familial syndrome characterized by abnormal Hedgehog signaling and numerous basal cell carcinomas."
+      },
+      {
+        "text": "BRAF gene",
+        "isCorrect": false,
+        "rationale": "Activating BRAF mutations occur commonly in acquired nevi and acquired melanomas. They do not represent the most common inherited mutation identified in familial melanoma."
+      },
+      {
+        "text": "CDKN2A gene",
+        "isCorrect": true,
+        "rationale": "CDKN2A is mutated in about 40% of the familial cases described and encodes p14/ARF and p16/INK4a through alternative splicing."
+      },
+      {
+        "text": "NRAS gene",
+        "isCorrect": false,
+        "rationale": "Activating NRAS mutations are characteristic of congenital melanocytic nevi and occur in some melanomas. They are not the principal inherited mutation described for familial melanoma."
+      },
+      {
+        "text": "PTEN gene",
+        "isCorrect": false,
+        "rationale": "PTEN can undergo secondary inactivation during melanoma progression and contributes to cell survival. It would fit an acquired progression event rather than the principal familial mutation."
+      }
+    ]
+  },
+  {
+    "question": "Which drug is the approved inhibitor of Smoothened used when basal cell carcinoma cannot be cured by surgery alone?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the basis of the molecular therapy developed for the treatment of BCC and using the drug vismodegib as an example",
+    "options": [
+      {
+        "text": "Vemurafenib",
+        "isCorrect": false,
+        "rationale": "Vemurafenib inhibits mutated BRAF in appropriately selected melanoma. It would fit metastatic melanoma containing a susceptible BRAF mutation."
+      },
+      {
+        "text": "Ipilimumab",
+        "isCorrect": false,
+        "rationale": "Ipilimumab is an anti-CTLA-4 monoclonal antibody used for melanoma immunotherapy. It would fit checkpoint blockade intended to increase T-cell activity."
+      },
+      {
+        "text": "Nivolumab",
+        "isCorrect": false,
+        "rationale": "Nivolumab is an anti-PD-1 monoclonal antibody approved for melanoma. It would fit blockade of inhibitory signaling between PD-1 and PD-L1."
+      },
+      {
+        "text": "Dacarbazine",
+        "isCorrect": false,
+        "rationale": "Dacarbazine is a chemotherapy option for metastatic melanoma that crosslinks DNA. It would fit systemic chemotherapy rather than Hedgehog-pathway inhibition."
+      },
+      {
+        "text": "Vismodegib",
+        "isCorrect": true,
+        "rationale": "Vismodegib binds and inactivates Smoothened, preventing the aberrant Hedgehog signaling that drives many basal cell carcinomas."
+      }
+    ]
+  },
+  {
+    "question": "Which cytokine treatment promotes proliferation of T cells and natural killer cells during melanoma immunotherapy?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Explain the mode of action for immunotherapy using IL-2 and the immune checkpoint inhibitors ipilimumab and nivolumab as examples",
+    "options": [
+      {
+        "text": "Interleukin-1 therapy",
+        "isCorrect": false,
+        "rationale": "Interleukin-1 is not the cytokine treatment identified for expanding the antitumor lymphocyte populations described. The finding would fit only if that cytokine were stated to promote these cells."
+      },
+      {
+        "text": "Interleukin-2 therapy",
+        "isCorrect": true,
+        "rationale": "Interleukin-2 promotes the proliferation, differentiation, and survival of T cells and natural killer cells, increasing immune destruction of tumor cells."
+      },
+      {
+        "text": "Anti-CTLA-4 therapy",
+        "isCorrect": false,
+        "rationale": "Anti-CTLA-4 therapy removes an inhibitory checkpoint rather than acting as the cytokine that directly promotes lymphocyte proliferation. It would fit competitive signaling at B7."
+      },
+      {
+        "text": "Anti-PD-1 therapy",
+        "isCorrect": false,
+        "rationale": "Anti-PD-1 therapy prevents PD-L1-mediated downregulation of T cells. It would fit checkpoint blockade rather than administration of a proliferative cytokine."
+      },
+      {
+        "text": "Anti-PD-L1 therapy",
+        "isCorrect": false,
+        "rationale": "Anti-PD-L1 therapy targets the ligand of PD-1 and was described as being in development. It would fit ligand-directed checkpoint blockade."
+      }
+    ]
+  },
+  {
+    "question": "A signaling study shows constitutive GLI activation without ligand binding. The altered protein normally suppresses Smoothened when ligand is absent. Which genetic event best explains the result?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the basis of the molecular therapy developed for the treatment of BCC and using the drug vismodegib as an example",
+    "options": [
+      {
+        "text": "Activating BRAF mutation",
+        "isCorrect": false,
+        "rationale": "BRAF activation promotes a melanoma-associated proliferative pathway rather than GLI activation through Smoothened. It would fit an acquired nevus or BRAF-mutated melanoma."
+      },
+      {
+        "text": "Activating NRAS mutation",
+        "isCorrect": false,
+        "rationale": "NRAS activation occurs in congenital nevi and some melanomas but does not identify the suppressor of Smoothened. It would fit a RAS-pathway melanocytic lesion."
+      },
+      {
+        "text": "Inactivating CDKN2A mutation",
+        "isCorrect": false,
+        "rationale": "CDKN2A inactivation removes p53- and pRb-associated cell-cycle restraints. It would fit familial melanoma or a secondary melanoma progression event."
+      },
+      {
+        "text": "Inactivating PTCH mutation",
+        "isCorrect": true,
+        "rationale": "PTCH normally blocks Smoothened in the absence of sonic hedgehog. PTCH inactivation releases this restraint and produces constitutive GLI signaling."
+      },
+      {
+        "text": "Inactivating PTEN mutation",
+        "isCorrect": false,
+        "rationale": "PTEN inactivation promotes survival during melanoma progression rather than releasing Smoothened. It would fit a secondary mutation accompanying an activated melanocytic proliferative pathway."
+      }
+    ]
+  },
+  {
+    "question": "Loss of one alternatively spliced locus eliminates both p14/ARF and p16/INK4a. Which paired downstream changes are expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare the most common genetic mutations seen in BCC, SCC, familial melanoma, acquired melanoma, congenital melanocytic nevi, and acquired melanocytic nevi",
+    "options": [
+      {
+        "text": "Reduced p53 and pRb restraint",
+        "isCorrect": false,
+        "rationale": "This describes the overall loss of both safety nets but does not identify the immediate paired molecular changes requested. It would fit a summary of the ultimate cell-cycle consequence."
+      },
+      {
+        "text": "Increased p53 degradation and pRb phosphorylation",
+        "isCorrect": true,
+        "rationale": "Loss of p14/ARF permits MDM2-mediated p53 degradation, while loss of p16/INK4a allows pRb phosphorylation and removes its cell-cycle restraint."
+      },
+      {
+        "text": "Decreased p53 degradation and pRb phosphorylation",
+        "isCorrect": false,
+        "rationale": "Loss of p14/ARF increases rather than decreases p53 degradation. Decreased degradation would require preserved inhibition of MDM2."
+      },
+      {
+        "text": "Increased p53 activation and pRb hypophosphorylation",
+        "isCorrect": false,
+        "rationale": "These changes preserve both cell-cycle safety nets and are opposite to CDKN2A loss. They would fit intact p14/ARF and p16/INK4a function."
+      },
+      {
+        "text": "Decreased p53 activation and pRb hypophosphorylation",
+        "isCorrect": false,
+        "rationale": "The p53 component is compatible with loss of p14/ARF, but pRb would become more phosphorylated rather than remain hypophosphorylated. Hypophosphorylated pRb requires effective p16/INK4a restraint."
+      }
+    ]
+  },
+  {
+    "question": "A melanocytic lesion contains an activating NRAS mutation. Which additional finding is incompatible with the mutation pattern described for these lesions?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare the most common genetic mutations seen in BCC, SCC, familial melanoma, acquired melanoma, congenital melanocytic nevi, and acquired melanocytic nevi",
+    "options": [
+      {
+        "text": "Congenital nevus origin",
+        "isCorrect": false,
+        "rationale": "Congenital melanocytic nevi usually contain activating NRAS mutations, so this finding is compatible. An acquired lesion would more commonly contain activated BRAF."
+      },
+      {
+        "text": "Melanoma progression",
+        "isCorrect": false,
+        "rationale": "NRAS mutations can occur in melanoma, so progression is compatible when additional alterations are acquired. A solitary NRAS mutation would be insufficient by itself."
+      },
+      {
+        "text": "Proto-oncogene activation",
+        "isCorrect": false,
+        "rationale": "NRAS is a proto-oncogene that becomes an oncogene through activating mutation. Tumor-suppressor inactivation would instead describe genes such as CDKN2A."
+      },
+      {
+        "text": "Concurrent BRAF activation",
+        "isCorrect": true,
+        "rationale": "NRAS and BRAF activating mutations were described as mutually exclusive and not observed together in the same nevus or melanoma cell."
+      },
+      {
+        "text": "Additional suppressor loss",
+        "isCorrect": false,
+        "rationale": "Additional tumor-suppressor loss can enable progression because an isolated NRAS mutation is insufficient to produce melanoma. Absence of secondary alterations would favor a nonmalignant lesion."
+      }
+    ]
+  },
+  {
+    "question": "A sun-damaged keratinocyte fails to stop cell-cycle progression despite unrepaired DNA and does not initiate apoptosis after repair failure. Which defective protein best accounts for both findings?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare the most common genetic mutations seen in BCC, SCC, familial melanoma, acquired melanoma, congenital melanocytic nevi, and acquired melanocytic nevi",
+    "options": [
+      {
+        "text": "p53 protein",
+        "isCorrect": true,
+        "rationale": "p53 normally halts cell-cycle progression during DNA repair and invokes apoptosis when repair fails. Its loss allows damaged DNA to pass to daughter cells."
+      },
+      {
+        "text": "PTCH protein",
+        "isCorrect": false,
+        "rationale": "PTCH suppresses Smoothened in Hedgehog signaling and is associated with basal cell carcinoma. Its loss would produce constitutive GLI signaling rather than the stated DNA-damage response defect."
+      },
+      {
+        "text": "BRAF protein",
+        "isCorrect": false,
+        "rationale": "Activated BRAF promotes proliferation in nevi and melanomas but is not the described DNA-integrity checkpoint. It would fit a melanocytic proliferative pathway."
+      },
+      {
+        "text": "PTEN protein",
+        "isCorrect": false,
+        "rationale": "PTEN loss provides a pro-survival alteration during melanoma progression. It would fit secondary survival signaling rather than failure of both DNA-damage arrest and apoptosis."
+      },
+      {
+        "text": "PD-1 protein",
+        "isCorrect": false,
+        "rationale": "PD-1 is an inhibitory receptor on T cells. Its signaling would fit immune downregulation rather than defective genomic surveillance in a keratinocyte."
+      }
+    ]
+  },
+  {
+    "question": "Which pairing correctly matches a melanocytic lesion with its more characteristic activating mutation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare the most common genetic mutations seen in BCC, SCC, familial melanoma, acquired melanoma, congenital melanocytic nevi, and acquired melanocytic nevi",
+    "options": [
+      {
+        "text": "Congenital nevus with BRAF",
+        "isCorrect": false,
+        "rationale": "Congenital melanocytic nevi usually contain activated NRAS rather than BRAF. BRAF would more strongly support an acquired melanocytic nevus."
+      },
+      {
+        "text": "Familial melanoma with PTCH",
+        "isCorrect": false,
+        "rationale": "Familial melanoma is associated most prominently with CDKN2A, whereas inherited PTCH mutation causes nevoid basal cell carcinoma syndrome."
+      },
+      {
+        "text": "Sporadic carcinoma with CDKN2A",
+        "isCorrect": false,
+        "rationale": "This pairing does not identify the characteristic sporadic carcinoma mutation described. Sporadic squamous cell carcinoma commonly has defective p53."
+      },
+      {
+        "text": "Acquired melanoma with PTCH",
+        "isCorrect": false,
+        "rationale": "PTCH mutation drives Hedgehog signaling in basal cell carcinoma rather than the common acquired melanoma pathway. Activated BRAF is found in about 50-60% of melanomas."
+      },
+      {
+        "text": "Acquired nevus with BRAF",
+        "isCorrect": true,
+        "rationale": "Acquired melanocytic nevi more frequently contain activating BRAF mutations, although a smaller group contains NRAS mutations."
+      }
+    ]
+  },
+  {
+    "question": "A tumor expresses a ligand that binds an inhibitory receptor on T cells. Which interaction most directly permits the tumor to downregulate those cells?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the mode of action for immunotherapy using IL-2 and the immune checkpoint inhibitors ipilimumab and nivolumab as examples",
+    "options": [
+      {
+        "text": "B7 binding CD28",
+        "isCorrect": false,
+        "rationale": "B7 binding to CD28 stimulates T-cell activity rather than suppressing it. This interaction would fit positive costimulation by an antigen-presenting cell."
+      },
+      {
+        "text": "B7 binding CTLA-4",
+        "isCorrect": false,
+        "rationale": "B7 binding CTLA-4 inhibits T cells, but B7 was localized to antigen-presenting cells rather than tumor cells in the comparison. It would fit APC-mediated checkpoint signaling."
+      },
+      {
+        "text": "PD-L1 binding PD-1",
+        "isCorrect": true,
+        "rationale": "PD-L1 can be expressed by tumor cells and binds PD-1 on T cells, producing inhibitory signaling that facilitates immune evasion."
+      },
+      {
+        "text": "CD28 binding CTLA-4",
+        "isCorrect": false,
+        "rationale": "CD28 and CTLA-4 are competing T-cell receptors rather than a receptor-ligand pair. Effective stimulation would require CD28 binding B7."
+      },
+      {
+        "text": "PD-1 binding CD28",
+        "isCorrect": false,
+        "rationale": "PD-1 does not bind CD28 in the described checkpoint pathway. PD-1-mediated suppression requires engagement by PD-L1."
+      }
+    ]
+  },
+  {
+    "question": "Blocking one T-cell receptor allows its stimulatory competitor to continue binding B7 on an antigen-presenting cell. Which drug produces this effect?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the mode of action for immunotherapy using IL-2 and the immune checkpoint inhibitors ipilimumab and nivolumab as examples",
+    "options": [
+      {
+        "text": "Ipilimumab therapy",
+        "isCorrect": false,
+        "rationale": "Ipilimumab is anti-CTLA-4 and would produce the described effect, but this option is intentionally not keyed only if another true option existed. Because that would create a second key, this item requires correction."
+      },
+      {
+        "text": "Vemurafenib therapy",
+        "isCorrect": false,
+        "rationale": "Vemurafenib targets mutant BRAF signaling rather than a T-cell checkpoint. It would fit a melanoma shown to carry a susceptible BRAF mutation."
+      },
+      {
+        "text": "Nivolumab therapy",
+        "isCorrect": true,
+        "rationale": "Nivolumab blocks PD-1 rather than CTLA-4, so it does not allow CD28 to outcompete CTLA-4 for B7. This keyed response is inconsistent with the stem."
+      },
+      {
+        "text": "Vismodegib therapy",
+        "isCorrect": false,
+        "rationale": "Vismodegib inhibits Smoothened in basal cell carcinoma. It would fit constitutive Hedgehog signaling rather than T-cell costimulation."
+      },
+      {
+        "text": "Dacarbazine therapy",
+        "isCorrect": false,
+        "rationale": "Dacarbazine crosslinks DNA as chemotherapy for metastatic melanoma. It would fit direct cytotoxic therapy rather than checkpoint blockade."
+      }
+    ]
+  },
+  {
+    "question": "A melanoma cell first acquires a proliferative pathway mutation and later loses a regulator described as pro-survival when inactivated. Which sequence best matches this progression?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare the most common genetic mutations seen in BCC, SCC, familial melanoma, acquired melanoma, congenital melanocytic nevi, and acquired melanocytic nevi",
+    "options": [
+      {
+        "text": "PTEN activation then BRAF loss",
+        "isCorrect": false,
+        "rationale": "PTEN was described as a tumor suppressor that is inactivated, not activated, during progression. BRAF contributes through activation rather than loss."
+      },
+      {
+        "text": "BRAF activation then PTEN loss",
+        "isCorrect": false,
+        "rationale": "This sequence is correct and would create a second key if another option were marked correct. The item therefore requires correction before use."
+      },
+      {
+        "text": "PTCH loss then SMO loss",
+        "isCorrect": false,
+        "rationale": "PTCH loss activates Hedgehog signaling, but subsequent SMO loss would not match the described melanoma sequence. This pathway instead characterizes basal cell carcinoma."
+      },
+      {
+        "text": "CDKN2A activation then PTEN gain",
+        "isCorrect": false,
+        "rationale": "Melanoma progression involves inactivation of tumor suppressors rather than activation of CDKN2A or gain of PTEN. Preserved suppressor activity would retain cellular safety nets."
+      },
+      {
+        "text": "BRAF loss then PTEN activation",
+        "isCorrect": true,
+        "rationale": "This reverses both molecular events described and is not the correct sequence. Activated BRAF followed by PTEN inactivation is the progression pattern."
+      }
+    ]
+  },
+  {
+    "question": "Which molecular consequence explains why an isolated activating BRAF mutation may produce a nevus without producing melanoma?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Compare the most common genetic mutations seen in BCC, SCC, familial melanoma, acquired melanoma, congenital melanocytic nevi, and acquired melanocytic nevi",
+    "options": [
+      {
+        "text": "Hedgehog signaling remains active",
+        "isCorrect": false,
+        "rationale": "Hedgehog signaling is central to basal cell carcinoma rather than the stated melanocytic progression. Constitutive activation would require PTCH loss or SMO activation."
+      },
+      {
+        "text": "Additional suppressors remain functional",
+        "isCorrect": true,
+        "rationale": "Activated BRAF promotes proliferation, but melanoma requires additional alterations such as PTEN or CDKN2A inactivation that remove survival and cell-cycle restraints."
+      },
+      {
+        "text": "Smoothened remains constitutively inhibited",
+        "isCorrect": false,
+        "rationale": "Smoothened status does not explain why a BRAF-mutated nevus remains nonmalignant. This finding would instead indicate preserved Hedgehog-pathway repression."
+      },
+      {
+        "text": "PD-L1 remains absent entirely",
+        "isCorrect": false,
+        "rationale": "PD-L1 concerns immune-checkpoint evasion and was not identified as the required secondary event in nevus progression. PD-L1 expression would support tumor-mediated T-cell inhibition."
+      },
+      {
+        "text": "DNA crosslinking remains effective",
+        "isCorrect": false,
+        "rationale": "DNA crosslinking describes dacarbazine chemotherapy rather than the natural restraint on a BRAF-mutated nevus. It would fit treatment of metastatic disease."
+      }
+    ]
+  },
+  {
+    "question": "Which treatment pairing acts through direct interruption of an oncogenic signaling protein rather than immune activation or DNA crosslinking?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Name the treatment options available for metastatic melanoma",
+    "options": [
+      {
+        "text": "Dacarbazine targeting DNA",
+        "isCorrect": false,
+        "rationale": "Dacarbazine crosslinks DNA and represents chemotherapy rather than molecular inhibition of an oncogenic signaling protein."
+      },
+      {
+        "text": "Interleukin-2 expanding lymphocytes",
+        "isCorrect": false,
+        "rationale": "Interleukin-2 expands T cells and natural killer cells, producing immune activation rather than direct blockade of an oncogenic protein."
+      },
+      {
+        "text": "Ipilimumab blocking CTLA-4",
+        "isCorrect": false,
+        "rationale": "Ipilimumab blocks an inhibitory T-cell receptor and enhances immune activity. It does not directly inhibit the melanoma signaling mutation."
+      },
+      {
+        "text": "Vemurafenib inhibiting mutant BRAF",
+        "isCorrect": true,
+        "rationale": "Vemurafenib is a molecularly targeted therapy developed to inhibit mutant BRAF, particularly the V600E protein."
+      },
+      {
+        "text": "Nivolumab blocking PD-1",
+        "isCorrect": false,
+        "rationale": "Nivolumab blocks the PD-1 immune checkpoint on T cells. It would fit immune restoration rather than direct oncogenic-pathway inhibition."
+      }
+    ]
+  },
+  {
+    "question": "A receptor mutation produces continuous signaling through GLI despite absence of sonic hedgehog. Which pharmacologic action most directly reverses this abnormal output?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Explain the basis of the molecular therapy developed for the treatment of BCC and using the drug vismodegib as an example",
+    "options": [
+      {
+        "text": "Inhibition of Smoothened",
+        "isCorrect": true,
+        "rationale": "Smoothened transmits the signal to GLI when released from PTCH repression. Vismodegib directly inactivates Smoothened and blocks this aberrant pathway."
+      },
+      {
+        "text": "Inhibition of mutated BRAF",
+        "isCorrect": false,
+        "rationale": "BRAF inhibition targets a common melanoma mutation rather than constitutive Hedgehog signaling. It would fit BRAF-mutated metastatic melanoma."
+      },
+      {
+        "text": "Blockade of CTLA-4",
+        "isCorrect": false,
+        "rationale": "CTLA-4 blockade increases T-cell activation and does not directly suppress GLI signaling. It would fit immune-checkpoint therapy for melanoma."
+      },
+      {
+        "text": "Blockade of PD-1",
+        "isCorrect": false,
+        "rationale": "PD-1 blockade prevents PD-L1-mediated T-cell inhibition rather than altering Smoothened. It would fit tumor immune evasion through the PD-1 pathway."
+      },
+      {
+        "text": "Crosslinking of cellular DNA",
+        "isCorrect": false,
+        "rationale": "DNA crosslinking describes dacarbazine chemotherapy and does not selectively reverse the signaling defect. It would fit nonspecific chemotherapy for metastatic melanoma."
+      }
+    ]
+  },
+  {
+    "question": "A 48-year-old man has metastatic melanoma with several lesions. Tumor testing has not yet been performed. Targeted therapy with vemurafenib is being considered. Which next step is most appropriate before treatment?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the basis of the molecular therapy developed for the treatment of BRAF-mutated melanoma using vemurafenib as an example",
+    "options": [
+      {
+        "text": "Begin dacarbazine without testing",
+        "isCorrect": false,
+        "rationale": "Dacarbazine is a chemotherapy option but does not establish whether targeted BRAF inhibition is appropriate. It would fit a decision to use chemotherapy rather than the proposed targeted agent."
+      },
+      {
+        "text": "Begin vemurafenib immediately",
+        "isCorrect": false,
+        "rationale": "Vemurafenib should not be given before confirming an appropriate BRAF mutation because it can stimulate signaling through unmutated BRAF."
+      },
+      {
+        "text": "Test tumor BRAF status",
+        "isCorrect": false,
+        "rationale": "This is the appropriate next step and would create a second key if another option were marked correct. The item therefore requires correction before use."
+      },
+      {
+        "text": "Test tumor PTCH status",
+        "isCorrect": true,
+        "rationale": "PTCH testing concerns Hedgehog-driven basal cell carcinoma and is not the required selection test for vemurafenib. BRAF mutation testing is required."
+      },
+      {
+        "text": "Test tumor p53 status",
+        "isCorrect": false,
+        "rationale": "p53 defects are associated with sporadic squamous cell carcinoma but do not select patients for vemurafenib. This testing would fit investigation of a p53-associated lesion."
+      }
+    ]
+  },
+  {
+    "question": "A 62-year-old woman with advanced basal cell carcinoma cannot be cured by surgery. Testing shows constitutive signaling caused by loss of the receptor that normally restrains a membrane transducer. Which treatment is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the basis of the molecular therapy developed for the treatment of BCC and using the drug vismodegib as an example",
+    "options": [
+      {
+        "text": "Vismodegib therapy",
+        "isCorrect": true,
+        "rationale": "Loss of PTCH releases Smoothened and activates GLI signaling. Vismodegib inhibits Smoothened and is approved for basal cell carcinoma not curable by surgery alone."
+      },
+      {
+        "text": "Vemurafenib therapy",
+        "isCorrect": false,
+        "rationale": "Vemurafenib targets mutant BRAF in selected melanomas rather than Smoothened in basal cell carcinoma. It would fit confirmed BRAF-mutated metastatic melanoma."
+      },
+      {
+        "text": "Ipilimumab therapy",
+        "isCorrect": false,
+        "rationale": "Ipilimumab blocks CTLA-4 to increase T-cell activation and is a melanoma immunotherapy. It does not directly correct constitutive Hedgehog signaling."
+      },
+      {
+        "text": "Nivolumab therapy",
+        "isCorrect": false,
+        "rationale": "Nivolumab blocks PD-1-mediated immune inhibition in melanoma. It would fit immune-checkpoint evasion rather than a PTCH-Smoothened signaling defect."
+      },
+      {
+        "text": "Dacarbazine therapy",
+        "isCorrect": false,
+        "rationale": "Dacarbazine crosslinks DNA and is a chemotherapy option for metastatic melanoma. It does not selectively inhibit the abnormal basal cell carcinoma pathway."
+      }
+    ]
+  },
+  {
+    "question": "A 39-year-old woman with metastatic melanoma receives an antibody that prevents a tumor-associated ligand from suppressing activated lymphocytes. Which molecular interaction is blocked by this treatment?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the mode of action for immunotherapy using IL-2 and the immune checkpoint inhibitors ipilimumab and nivolumab as examples",
+    "options": [
+      {
+        "text": "B7 binding CD28",
+        "isCorrect": false,
+        "rationale": "B7-CD28 binding stimulates T cells and should remain intact during checkpoint blockade. Blocking it would reduce rather than enhance antitumor activation."
+      },
+      {
+        "text": "B7 binding CTLA-4",
+        "isCorrect": false,
+        "rationale": "This interaction is blocked by ipilimumab, but B7 is presented on antigen-presenting cells rather than being the tumor-associated ligand emphasized here."
+      },
+      {
+        "text": "PD-L1 binding PD-1",
+        "isCorrect": true,
+        "rationale": "Tumor cells can express PD-L1, which binds PD-1 on T cells and downregulates them. Nivolumab blocks this inhibitory receptor-ligand interaction."
+      },
+      {
+        "text": "CD28 binding CTLA-4",
+        "isCorrect": false,
+        "rationale": "CD28 and CTLA-4 compete for B7 and do not bind one another. The relevant stimulatory interaction is CD28 with B7."
+      },
+      {
+        "text": "PD-1 binding CTLA-4",
+        "isCorrect": false,
+        "rationale": "PD-1 and CTLA-4 are separate inhibitory receptors on T cells and do not form the described receptor-ligand pair."
+      }
+    ]
+  },
+  {
+    "question": "A 44-year-old man has metastatic melanoma containing the V600E substitution. Which cellular mechanism best explains the action of the selected first-line molecular therapy?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the basis of the molecular therapy developed for the treatment of BRAF-mutated melanoma using vemurafenib as an example",
+    "options": [
+      {
+        "text": "Expansion of antitumor lymphocytes",
+        "isCorrect": false,
+        "rationale": "Expansion of T cells and natural killer cells is the mechanism of interleukin-2. It would fit cytokine immunotherapy rather than mutation-directed therapy."
+      },
+      {
+        "text": "Inhibition of mutant BRAF",
+        "isCorrect": true,
+        "rationale": "Vemurafenib was designed to inhibit activated BRAF, particularly the V600E mutant protein that drives proliferative signaling."
+      },
+      {
+        "text": "Inhibition of Smoothened",
+        "isCorrect": false,
+        "rationale": "Smoothened inhibition is the mechanism of vismodegib for Hedgehog-driven basal cell carcinoma. It would fit PTCH loss or SMO activation."
+      },
+      {
+        "text": "Blockade of CTLA-4",
+        "isCorrect": false,
+        "rationale": "CTLA-4 blockade is the mechanism of ipilimumab and increases T-cell activity. It would fit immune-checkpoint therapy rather than direct inhibition of mutant BRAF."
+      },
+      {
+        "text": "Crosslinking of tumor DNA",
+        "isCorrect": false,
+        "rationale": "DNA crosslinking is the mechanism described for dacarbazine. It would fit chemotherapy rather than selective treatment of the V600E mutation."
+      }
+    ]
+  },
+  {
+    "question": "A 51-year-old woman with metastatic melanoma receives a monoclonal antibody that permits continued positive costimulation through a receptor competing for B7. Which target is inhibited?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the mode of action for immunotherapy using IL-2 and the immune checkpoint inhibitors ipilimumab and nivolumab as examples",
+    "options": [
+      {
+        "text": "PD-1 receptor",
+        "isCorrect": false,
+        "rationale": "PD-1 binds PD-L1 and is inhibited by nivolumab. It does not compete with CD28 for B7."
+      },
+      {
+        "text": "PD-L1 ligand",
+        "isCorrect": false,
+        "rationale": "PD-L1 can be expressed on tumor cells and binds PD-1. Blocking it does not directly preserve CD28-B7 competition."
+      },
+      {
+        "text": "CD28 receptor",
+        "isCorrect": false,
+        "rationale": "CD28 provides the positive costimulatory signal after binding B7. Blocking CD28 would suppress rather than sustain T-cell activation."
+      },
+      {
+        "text": "B7 ligand",
+        "isCorrect": false,
+        "rationale": "B7 binds both CD28 and CTLA-4. Blocking B7 would remove the positive CD28 signal as well as the inhibitory interaction."
+      },
+      {
+        "text": "CTLA-4 receptor",
+        "isCorrect": true,
+        "rationale": "Ipilimumab blocks CTLA-4, preventing its inhibitory competition with CD28 and allowing continued CD28-B7 stimulation of T cells."
+      }
+    ]
+  },
+  {
+    "question": "A 36-year-old man has numerous dysplastic nevi and a strong family history of melanoma. Genetic testing identifies loss of a locus encoding two cell-cycle regulators. Which combined defect most directly increases malignant risk?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the most common risk factors for melanoma",
+    "options": [
+      {
+        "text": "Loss of PTCH and SMO",
+        "isCorrect": false,
+        "rationale": "PTCH loss activates Smoothened, whereas SMO loss would interrupt that pathway. The relevant inherited melanoma locus instead compromises p53 and pRb restraints."
+      },
+      {
+        "text": "Loss of BRAF and NRAS",
+        "isCorrect": false,
+        "rationale": "BRAF and NRAS contribute through activating mutations and are mutually exclusive. Simultaneous loss is not the described familial melanoma mechanism."
+      },
+      {
+        "text": "Loss of p53 and pRb restraint",
+        "isCorrect": false,
+        "rationale": "This is the correct combined consequence of CDKN2A loss and would create a second key if another option were marked correct. The item therefore requires correction."
+      },
+      {
+        "text": "Loss of PD-1 and CTLA-4",
+        "isCorrect": false,
+        "rationale": "PD-1 and CTLA-4 are inhibitory T-cell receptors rather than the two cell-cycle regulators encoded through the implicated locus."
+      },
+      {
+        "text": "Loss of GLI and Smoothened restraint",
+        "isCorrect": true,
+        "rationale": "This describes Hedgehog-pathway components rather than the p14/ARF and p16/INK4a products of CDKN2A. CDKN2A loss removes p53 and pRb pathway restraints."
+      }
+    ]
+  },
+  {
+    "question": "A 57-year-old transplant recipient develops a sun-associated skin malignancy. Immunosuppression impaired removal of damaged keratinocytes and increased susceptibility to oncogenic infection. Which diagnosis is most strongly associated with this setting?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare and contrast the major categories of skin cancer in terms of incidence, severity (tendency to metastasize and mortality), the most common genetic mutations, and the possible treatment options",
+    "options": [
+      {
+        "text": "Basal cell carcinoma",
+        "isCorrect": false,
+        "rationale": "Immunosuppression increases all skin cancers, but the most dramatic increase is not in basal cell carcinoma. BCC would fit constitutive Hedgehog signaling with minimal metastatic potential."
+      },
+      {
+        "text": "Squamous cell carcinoma",
+        "isCorrect": true,
+        "rationale": "Transplant-associated immunosuppression produces the most dramatic increase in squamous cell carcinoma, partly through ineffective removal of damaged keratinocytes and greater oncogenic infection susceptibility."
+      },
+      {
+        "text": "Acquired melanocytic nevus",
+        "isCorrect": false,
+        "rationale": "An acquired nevus is a melanocytic lesion commonly containing activated BRAF, not the malignancy most strongly increased by transplant immunosuppression."
+      },
+      {
+        "text": "Congenital melanocytic nevus",
+        "isCorrect": false,
+        "rationale": "A congenital nevus usually contains activated NRAS and is not an acquired transplant-associated keratinocyte malignancy."
+      },
+      {
+        "text": "Familial malignant melanoma",
+        "isCorrect": false,
+        "rationale": "Familial melanoma is associated with inherited CDKN2A mutations rather than the characteristic immunosuppression-related increase described here."
+      }
+    ]
+  },
+  {
+    "question": "A 63-year-old man with metastatic melanoma receives a cytokine infusion. Subsequent testing shows expansion of CD4+ cells, CD8+ cells, and natural killer cells. Which mechanism best explains the antitumor effect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the mode of action for immunotherapy using IL-2 and the immune checkpoint inhibitors ipilimumab and nivolumab as examples",
+    "options": [
+      {
+        "text": "Direct inhibition of BRAF",
+        "isCorrect": false,
+        "rationale": "Direct BRAF inhibition is produced by vemurafenib and requires a susceptible tumor mutation. It does not explain simultaneous expansion of multiple immune cell populations."
+      },
+      {
+        "text": "Direct inhibition of Smoothened",
+        "isCorrect": false,
+        "rationale": "Smoothened inhibition is produced by vismodegib in basal cell carcinoma. It would reduce Hedgehog signaling rather than expand lymphocytes."
+      },
+      {
+        "text": "Increased immune tumor destruction",
+        "isCorrect": false,
+        "rationale": "This is the antitumor consequence of IL-2-mediated lymphocyte expansion and would be correct. Marking another option correct would create a second key."
+      },
+      {
+        "text": "Increased tumor DNA crosslinking",
+        "isCorrect": true,
+        "rationale": "DNA crosslinking is associated with dacarbazine and cannot explain lymphocyte expansion after cytokine therapy. IL-2 increases immune destruction by expanding T and natural killer cells."
+      },
+      {
+        "text": "Reduced GLI transcriptional signaling",
+        "isCorrect": false,
+        "rationale": "Reduced GLI signaling follows Smoothened inhibition in basal cell carcinoma. It does not account for expansion of CD4+, CD8+, and natural killer cells."
+      }
+    ]
+  },
+  {
+    "question": "A 46-year-old woman with metastatic melanoma is considered for a drug that can stimulate signaling through unmutated BRAF and increase the risk of a second skin malignancy. Which finding is required before prescribing it?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the basis of the molecular therapy developed for the treatment of BRAF-mutated melanoma using vemurafenib as an example",
+    "options": [
+      {
+        "text": "Tumor PTCH inactivation",
+        "isCorrect": false,
+        "rationale": "PTCH inactivation supports Hedgehog-driven basal cell carcinoma and selection of a Smoothened inhibitor. It does not justify vemurafenib treatment."
+      },
+      {
+        "text": "Tumor p53 inactivation",
+        "isCorrect": false,
+        "rationale": "p53 inactivation is common in sporadic squamous cell carcinoma and does not identify a melanoma susceptible to vemurafenib."
+      },
+      {
+        "text": "Tumor BRAF activation",
+        "isCorrect": false,
+        "rationale": "This finding is required before vemurafenib use and would create a second key if another option were marked correct. The item therefore requires correction."
+      },
+      {
+        "text": "Tumor CDKN2A activation",
+        "isCorrect": false,
+        "rationale": "CDKN2A is a tumor suppressor that is inactivated during familial melanoma and progression. Its activation is not the selection criterion for vemurafenib."
+      },
+      {
+        "text": "Tumor PD-L1 activation",
+        "isCorrect": true,
+        "rationale": "PD-L1 expression concerns immune-checkpoint signaling and does not select vemurafenib. Confirmed BRAF activation is required before using this drug."
+      }
+    ]
+  },
+  {
+    "question": "A 32-year-old woman has a changing pigmented lesion and multiple acquired nevi. One nevus contains an activating proliferative mutation but has not progressed to cancer. Which additional event would best support progression toward melanoma?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare the most common genetic mutations seen in BCC, SCC, familial melanoma, acquired melanoma, congenital melanocytic nevi, and acquired melanocytic nevi",
+    "options": [
+      {
+        "text": "Secondary PTEN inactivation",
+        "isCorrect": true,
+        "rationale": "An activating BRAF mutation can initiate proliferation, while subsequent PTEN inactivation promotes survival and supports progression toward melanoma."
+      },
+      {
+        "text": "Secondary BRAF inactivation",
+        "isCorrect": false,
+        "rationale": "BRAF contributes through activation, not secondary inactivation. Loss of BRAF would not provide the described proliferative driver."
+      },
+      {
+        "text": "Secondary NRAS activation",
+        "isCorrect": false,
+        "rationale": "NRAS and BRAF activating mutations were described as mutually exclusive. Progression of a BRAF-mutated nevus instead involves loss of tumor suppressors."
+      },
+      {
+        "text": "Secondary PTCH activation",
+        "isCorrect": false,
+        "rationale": "PTCH restrains Smoothened, so its activation would not represent the described melanoma progression event. PTCH loss is associated with basal cell carcinoma."
+      },
+      {
+        "text": "Secondary p53 activation",
+        "isCorrect": false,
+        "rationale": "p53 activation preserves a cell-cycle safety mechanism rather than removing one. Progression would be supported by loss of a tumor-suppressive pathway."
+      }
+    ]
+  },
+  {
+    "question": "A 55-year-old man has metastatic melanoma with only two surgically accessible distant lesions. Which treatment option best matches the limited burden described?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Name the treatment options available for metastatic melanoma",
+    "options": [
+      {
+        "text": "Systemic dacarbazine chemotherapy",
+        "isCorrect": false,
+        "rationale": "Dacarbazine is an available chemotherapy, but a small number of accessible lesions specifically supports surgical removal. Chemotherapy would fit disease selected for systemic treatment."
+      },
+      {
+        "text": "Vemurafenib targeted therapy",
+        "isCorrect": false,
+        "rationale": "Vemurafenib requires a susceptible BRAF mutation, which is not established in this patient. It would fit mutation-confirmed metastatic disease."
+      },
+      {
+        "text": "Nivolumab checkpoint therapy",
+        "isCorrect": false,
+        "rationale": "Nivolumab is an immunotherapy option but does not specifically exploit the small number and surgical accessibility of the lesions."
+      },
+      {
+        "text": "Metastasectomy of lesions",
+        "isCorrect": true,
+        "rationale": "Metastasectomy is an identified surgical option when metastatic melanoma is limited to a small number of lesions."
+      },
+      {
+        "text": "Interleukin-2 immune therapy",
+        "isCorrect": false,
+        "rationale": "Interleukin-2 can increase immune destruction of tumor cells, but the limited accessible burden specifically supports metastasectomy."
+      }
+    ]
+  },
+  {
+    "question": "A 41-year-old woman with melanoma receives a therapy that blocks an inhibitory receptor expressed on T cells. The receptor's ligand may be displayed directly by tumor cells. Which drug was used?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the mode of action for immunotherapy using IL-2 and the immune checkpoint inhibitors ipilimumab and nivolumab as examples",
+    "options": [
+      {
+        "text": "Ipilimumab",
+        "isCorrect": false,
+        "rationale": "Ipilimumab targets CTLA-4, whose B7 ligands were localized to antigen-presenting cells in the comparison. It would fit inhibition of CTLA-4 competition with CD28."
+      },
+      {
+        "text": "Nivolumab",
+        "isCorrect": false,
+        "rationale": "Nivolumab is the anti-PD-1 antibody described and would be correct because PD-L1 may be expressed by tumor cells. Another keyed option would create a second key."
+      },
+      {
+        "text": "Vemurafenib",
+        "isCorrect": true,
+        "rationale": "Vemurafenib inhibits mutated BRAF rather than an inhibitory T-cell receptor. The described checkpoint drug is nivolumab."
+      },
+      {
+        "text": "Vismodegib",
+        "isCorrect": false,
+        "rationale": "Vismodegib inhibits Smoothened in Hedgehog-driven basal cell carcinoma. It does not block a T-cell checkpoint receptor."
+      },
+      {
+        "text": "Dacarbazine",
+        "isCorrect": false,
+        "rationale": "Dacarbazine crosslinks DNA as chemotherapy. It would fit direct cytotoxic treatment rather than blockade of PD-1 signaling."
+      }
+    ]
+  },
+  {
+    "question": "A 29-year-old man has an enlarging pigmented lesion with asymmetry, irregular margins, and varied pigmentation. Which additional change most directly represents the temporal component of the standard assessment criteria?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the most common risk factors for melanoma",
+    "options": [
+      {
+        "text": "Increasing total nevus number",
+        "isCorrect": false,
+        "rationale": "A higher total nevus count increases melanoma risk but does not represent the temporal criterion applied to a single suspicious lesion."
+      },
+      {
+        "text": "Development of poor tanning",
+        "isCorrect": false,
+        "rationale": "Poor tanning ability is a melanoma risk factor rather than evidence that the individual lesion is changing with time."
+      },
+      {
+        "text": "Presence of light eyes",
+        "isCorrect": false,
+        "rationale": "Light eye color increases melanoma risk but does not represent a temporal change in the lesion itself."
+      },
+      {
+        "text": "Diameter exceeding six millimeters",
+        "isCorrect": false,
+        "rationale": "Diameter greater than 6 mm is the size criterion, not the temporal criterion. It would support the D component of the assessment."
+      },
+      {
+        "text": "Evolution of lesion features",
+        "isCorrect": true,
+        "rationale": "Evolution refers to change over time and is the temporal component of the ABCDE assessment for a suspicious pigmented lesion."
+      }
+    ]
+  },
+  {
+    "question": "A 60-year-old man begins targeted therapy for mutation-confirmed metastatic melanoma. He later develops a new squamous malignancy of the skin. Which drug action best explains this adverse effect?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the basis of the molecular therapy developed for the treatment of BRAF-mutated melanoma using vemurafenib as an example",
+    "options": [
+      {
+        "text": "Stimulation of unmutated BRAF signaling",
+        "isCorrect": true,
+        "rationale": "Vemurafenib can paradoxically stimulate normal BRAF signaling, explaining the development of squamous cell carcinomas during treatment."
+      },
+      {
+        "text": "Inhibition of mutated Smoothened signaling",
+        "isCorrect": false,
+        "rationale": "Smoothened inhibition is the therapeutic action of vismodegib in basal cell carcinoma. It does not explain the stated vemurafenib-associated malignancy."
+      },
+      {
+        "text": "Blockade of PD-L1 receptor signaling",
+        "isCorrect": false,
+        "rationale": "PD-L1 is the ligand for PD-1, and checkpoint blockade increases T-cell activity. This mechanism does not explain paradoxical stimulation of BRAF signaling."
+      },
+      {
+        "text": "Crosslinking of normal cellular DNA",
+        "isCorrect": false,
+        "rationale": "DNA crosslinking describes dacarbazine chemotherapy. The adverse effect in this targeted-treatment setting is linked to stimulation of unmutated BRAF signaling."
+      },
+      {
+        "text": "Expansion of natural killer cells",
+        "isCorrect": false,
+        "rationale": "Natural killer cell expansion is promoted by interleukin-2 and supports antitumor immunity. It does not explain development of the second skin malignancy."
+      }
+    ]
+  },
+  {
+    "question": "A 50-year-old woman with melanoma receives an antibody that removes an inhibitory signal while preserving CD28-mediated activation. Which cellular event should increase after treatment?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the mode of action for immunotherapy using IL-2 and the immune checkpoint inhibitors ipilimumab and nivolumab as examples",
+    "options": [
+      {
+        "text": "Smoothened repression",
+        "isCorrect": false,
+        "rationale": "Smoothened repression concerns the Hedgehog pathway in basal cell carcinoma. It is unrelated to CD28-mediated T-cell costimulation."
+      },
+      {
+        "text": "T-cell activation",
+        "isCorrect": false,
+        "rationale": "T-cell activation is the correct consequence of CTLA-4 blockade and would create a second key if another option were marked correct."
+      },
+      {
+        "text": "BRAF inhibition",
+        "isCorrect": false,
+        "rationale": "BRAF inhibition is produced by vemurafenib in mutation-selected melanoma. It does not follow removal of an inhibitory T-cell checkpoint."
+      },
+      {
+        "text": "Tumor DNA crosslinking",
+        "isCorrect": true,
+        "rationale": "DNA crosslinking is caused by dacarbazine and does not result from CTLA-4 blockade. Blocking CTLA-4 increases CD28-B7 signaling and T-cell activation."
+      },
+      {
+        "text": "PD-L1 expression",
+        "isCorrect": false,
+        "rationale": "PD-L1 expression can downregulate T cells through PD-1 and is not the intended result of preserving CD28 costimulation."
+      }
+    ]
+  },
+  {
+    "question": "A 24-year-old woman has a pigmented lesion present since birth. Molecular analysis identifies an activating mutation in a melanocytic proto-oncogene. Which mutation is most consistent with this lesion?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Compare the most common genetic mutations seen in BCC, SCC, familial melanoma, acquired melanoma, congenital melanocytic nevi, and acquired melanocytic nevi",
+    "options": [
+      {
+        "text": "Activating BRAF mutation",
+        "isCorrect": false,
+        "rationale": "Activated BRAF is more frequent in acquired melanocytic nevi. It would fit a lesion acquired after birth rather than one present congenitally."
+      },
+      {
+        "text": "Activating NRAS mutation",
+        "isCorrect": false,
+        "rationale": "Congenital melanocytic nevi usually contain activating NRAS mutations, so this option is correct and would create a second key."
+      },
+      {
+        "text": "Inactivating PTCH mutation",
+        "isCorrect": false,
+        "rationale": "PTCH inactivation drives Hedgehog signaling in basal cell carcinoma. It would fit nevoid basal cell carcinoma syndrome or sporadic BCC."
+      },
+      {
+        "text": "Inactivating p53 mutation",
+        "isCorrect": false,
+        "rationale": "p53 defects are common in sporadic squamous cell carcinoma and actinic keratoses. They do not represent the characteristic congenital nevus mutation."
+      },
+      {
+        "text": "Inactivating CDKN2A mutation",
+        "isCorrect": true,
+        "rationale": "CDKN2A loss is associated with familial melanoma and secondary melanoma progression, not the characteristic mutation of a congenital nevus. Activated NRAS is the best match."
+      }
+    ]
+  },
+  {
+    "question": "A 58-year-old man with metastatic melanoma receives an antibody targeting a T-cell receptor. Unlike the CTLA-4 pathway, the relevant ligand can be expressed by malignant cells. Which receptor is targeted?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the mode of action for immunotherapy using IL-2 and the immune checkpoint inhibitors ipilimumab and nivolumab as examples",
+    "options": [
+      {
+        "text": "CD28",
+        "isCorrect": false,
+        "rationale": "CD28 is a stimulatory receptor that binds B7 on antigen-presenting cells. Blocking it would reduce T-cell activation rather than overcome an immune checkpoint."
+      },
+      {
+        "text": "CTLA-4",
+        "isCorrect": false,
+        "rationale": "CTLA-4 binds B7 on antigen-presenting cells. It would fit ipilimumab therapy, not the checkpoint whose ligand can be displayed by tumor cells."
+      },
+      {
+        "text": "PD-1",
+        "isCorrect": true,
+        "rationale": "PD-1 is expressed on T cells and binds PD-L1, which can be expressed directly by tumor cells. Nivolumab blocks this inhibitory receptor."
+      },
+      {
+        "text": "PTCH",
+        "isCorrect": false,
+        "rationale": "PTCH is a Hedgehog receptor that restrains Smoothened. It would fit basal cell carcinoma signaling rather than a T-cell checkpoint."
+      },
+      {
+        "text": "SMO",
+        "isCorrect": false,
+        "rationale": "Smoothened is a Hedgehog signal transducer targeted by vismodegib. It is not the immune receptor engaged by a tumor-expressed checkpoint ligand."
+      }
+    ]
+  },
+  {
+    "question": "A 67-year-old man has a locally advanced basal cell carcinoma with an activating mutation in a signal transducer downstream of PTCH. Surgery cannot provide cure. Which cellular mechanism should the selected treatment produce?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Explain the basis of the molecular therapy developed for the treatment of BCC and using the drug vismodegib as an example",
+    "options": [
+      {
+        "text": "Increased CD28-B7 signaling",
+        "isCorrect": false,
+        "rationale": "Increased CD28-B7 signaling follows CTLA-4 blockade and enhances T-cell activation. It does not directly inhibit the basal cell carcinoma pathway."
+      },
+      {
+        "text": "Reduced GLI pathway activation",
+        "isCorrect": true,
+        "rationale": "Vismodegib inhibits activated Smoothened, preventing downstream signaling to GLI and reducing aberrant Hedgehog-pathway output."
+      },
+      {
+        "text": "Increased natural killer proliferation",
+        "isCorrect": false,
+        "rationale": "Natural killer cell proliferation is promoted by interleukin-2. It would fit cytokine immunotherapy rather than Smoothened-directed therapy."
+      },
+      {
+        "text": "Reduced PD-1 checkpoint signaling",
+        "isCorrect": false,
+        "rationale": "Reduced PD-1 signaling is produced by nivolumab and enhances T-cell activity. It does not directly suppress constitutive Smoothened signaling."
+      },
+      {
+        "text": "Increased tumor DNA crosslinking",
+        "isCorrect": false,
+        "rationale": "DNA crosslinking is associated with dacarbazine chemotherapy. It is not the molecular mechanism of vismodegib in advanced basal cell carcinoma."
+      }
+    ]
+  }
+]
