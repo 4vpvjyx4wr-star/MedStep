@@ -1,0 +1,994 @@
+[
+  {
+    "question": "Which parameter represents the ratio of the ligand dissociation rate constant to the ligand association rate constant?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Understand how ligand-receptor binding relationship (LR = L/R/Kd) is used to define affinity and receptor occupancy.",
+    "options": [
+      {
+        "text": "Dissociation constant",
+        "isCorrect": true,
+        "rationale": "The dissociation constant equals Koff/Kon and characterizes the strength of ligand-receptor binding."
+      },
+      {
+        "text": "Median effective concentration",
+        "isCorrect": false,
+        "rationale": "This identifies the concentration producing 50% of maximal response; it would apply to potency on a graded curve."
+      },
+      {
+        "text": "Maximum drug effect",
+        "isCorrect": false,
+        "rationale": "This represents efficacy; it would apply to the greatest response achievable regardless of dose."
+      },
+      {
+        "text": "Median toxic dose",
+        "isCorrect": false,
+        "rationale": "This is the dose causing toxicity in 50% of a population; it would apply to a quantal toxic endpoint."
+      },
+      {
+        "text": "Median effective dose",
+        "isCorrect": false,
+        "rationale": "This is the dose producing a therapeutic response in 50% of subjects; it would apply to a quantal therapeutic endpoint."
+      }
+    ]
+  },
+  {
+    "question": "Which parameter is the concentration producing 50% of a drug's maximal response in one individual?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Recognize graded dose-response relationships and how they are used to determine potency and efficacy.",
+    "options": [
+      {
+        "text": "Median effective dose",
+        "isCorrect": false,
+        "rationale": "This is a population-based quantal measure; it would apply when 50% of subjects exhibit a specified therapeutic response."
+      },
+      {
+        "text": "Half-maximal effective concentration",
+        "isCorrect": true,
+        "rationale": "EC50 is the concentration that produces 50% of the drug's maximal response and is used to compare potency."
+      },
+      {
+        "text": "Median toxic dose",
+        "isCorrect": false,
+        "rationale": "This is a population toxicity measure; it would apply when 50% of subjects experience a specified toxic response."
+      },
+      {
+        "text": "Maximum achievable effect",
+        "isCorrect": false,
+        "rationale": "This is Emax rather than EC50; it would apply when comparing drug efficacy."
+      },
+      {
+        "text": "Median lethal dose",
+        "isCorrect": false,
+        "rationale": "This is a population lethality measure; it would apply when death occurs in 50% of subjects."
+      }
+    ]
+  },
+  {
+    "question": "Which value is the dose at which 50% of a population exhibits a specified therapeutic response?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Interpret quantal dose-response curves to determine ED50, TD50, LD50 and know how to calculate therapeutic index.",
+    "options": [
+      {
+        "text": "Half-maximal effective concentration",
+        "isCorrect": false,
+        "rationale": "EC50 measures a graded response in an individual; it would apply to 50% of that drug's maximal effect."
+      },
+      {
+        "text": "Median toxic dose",
+        "isCorrect": false,
+        "rationale": "TD50 concerns toxicity; it would apply if 50% of subjects experienced the defined toxic response."
+      },
+      {
+        "text": "Median effective dose",
+        "isCorrect": true,
+        "rationale": "ED50 is the dose at which 50% of subjects exhibit the specified therapeutic response."
+      },
+      {
+        "text": "Median lethal dose",
+        "isCorrect": false,
+        "rationale": "LD50 concerns death; it would apply if 50% of subjects died at the stated dose."
+      },
+      {
+        "text": "Maximum achievable effect",
+        "isCorrect": false,
+        "rationale": "Emax measures maximal graded efficacy; it would apply to the response ceiling in an individual."
+      }
+    ]
+  },
+  {
+    "question": "Which drug-receptor interaction stabilizes the inactive receptor state and decreases activity below its baseline level?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Understand how partial agonists, competitive antagonists, and noncompetitive antagonists alter the agonist dose-response curve.",
+    "options": [
+      {
+        "text": "Full agonist binding",
+        "isCorrect": false,
+        "rationale": "A full agonist produces the system's maximal response; it would apply when receptor activation rises to the full ceiling."
+      },
+      {
+        "text": "Partial agonist binding",
+        "isCorrect": false,
+        "rationale": "A partial agonist activates receptors incompletely; it would apply when activity rises above baseline but remains submaximal."
+      },
+      {
+        "text": "Competitive antagonist binding",
+        "isCorrect": false,
+        "rationale": "A competitive antagonist blocks agonist binding without producing the opposite response; it would apply to a surmountable rightward shift."
+      },
+      {
+        "text": "Inverse agonist binding",
+        "isCorrect": true,
+        "rationale": "An inverse agonist stabilizes the inactive receptor state and reduces basal activity below baseline."
+      },
+      {
+        "text": "Noncompetitive antagonist binding",
+        "isCorrect": false,
+        "rationale": "A noncompetitive antagonist prevents full receptor activation; it would apply when agonist Emax falls without a decrease below basal activity."
+      }
+    ]
+  },
+  {
+    "question": "Two ligands are tested at equal free-receptor concentrations. Ligand X has a smaller dissociation constant than ligand Y. Which property best distinguishes ligand X?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand how ligand-receptor binding relationship (LR = L/R/Kd) is used to define affinity and receptor occupancy.",
+    "options": [
+      {
+        "text": "Lower affinity with easier dissociation",
+        "isCorrect": false,
+        "rationale": "Easier dissociation corresponds to a larger Kd; this would describe ligand Y under the stated comparison."
+      },
+      {
+        "text": "Equal affinity with greater efficacy",
+        "isCorrect": false,
+        "rationale": "The unequal Kd values indicate unequal affinity, while efficacy cannot be determined from Kd alone."
+      },
+      {
+        "text": "Lower potency with unchanged occupancy",
+        "isCorrect": false,
+        "rationale": "Kd directly affects occupancy in the binding relationship; this would require evidence about response concentrations rather than binding alone."
+      },
+      {
+        "text": "Greater efficacy with equal affinity",
+        "isCorrect": false,
+        "rationale": "Affinity is not equal because the Kd values differ, and maximal efficacy is not established by this comparison."
+      },
+      {
+        "text": "Higher affinity with slower dissociation",
+        "isCorrect": true,
+        "rationale": "A smaller Kd indicates that ligand X remains bound longer and therefore has higher receptor affinity."
+      }
+    ]
+  },
+  {
+    "question": "Free ligand is doubled while free-receptor concentration and the dissociation constant remain unchanged. Which immediate change is predicted by the binding relationship?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand how ligand-receptor binding relationship (LR = L/R/Kd) is used to define affinity and receptor occupancy.",
+    "options": [
+      {
+        "text": "Increased ligand-receptor complex concentration",
+        "isCorrect": true,
+        "rationale": "Free ligand is in the numerator of the binding relationship, so increasing it increases the concentration of bound receptors."
+      },
+      {
+        "text": "Decreased ligand-receptor complex concentration",
+        "isCorrect": false,
+        "rationale": "A decrease would require less free ligand, fewer free receptors, or a larger Kd rather than doubled ligand."
+      },
+      {
+        "text": "Unchanged ligand-receptor complex concentration",
+        "isCorrect": false,
+        "rationale": "The complex cannot remain unchanged when a numerator term increases and the other terms are fixed."
+      },
+      {
+        "text": "Increased receptor dissociation constant",
+        "isCorrect": false,
+        "rationale": "Changing ligand concentration does not itself change Kd; this would require altered association or dissociation kinetics."
+      },
+      {
+        "text": "Decreased free-receptor target concentration",
+        "isCorrect": false,
+        "rationale": "The stem holds free-receptor concentration constant; a decrease would require receptor loss or another stated change."
+      }
+    ]
+  },
+  {
+    "question": "A tissue increases its number of available receptors while ligand concentration and binding affinity remain constant. Which result is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand how ligand-receptor binding relationship (LR = L/R/Kd) is used to define affinity and receptor occupancy.",
+    "options": [
+      {
+        "text": "Fewer complexes and reduced effect",
+        "isCorrect": false,
+        "rationale": "More available receptors increase rather than decrease complex formation; fewer complexes would follow receptor reduction."
+      },
+      {
+        "text": "More complexes and increased effect",
+        "isCorrect": true,
+        "rationale": "Free receptor is a numerator term, so receptor upregulation permits more complexes and a greater response at the same ligand concentration."
+      },
+      {
+        "text": "Same complexes and unchanged effect",
+        "isCorrect": false,
+        "rationale": "Complex formation changes when free-receptor concentration rises; this would require receptor concentration to remain fixed."
+      },
+      {
+        "text": "Lower affinity and reduced effect",
+        "isCorrect": false,
+        "rationale": "Receptor number does not determine Kd; lower affinity would require a larger dissociation constant."
+      },
+      {
+        "text": "Higher affinity and unchanged effect",
+        "isCorrect": false,
+        "rationale": "Receptor upregulation changes binding capacity rather than affinity; higher affinity would require a smaller Kd."
+      }
+    ]
+  },
+  {
+    "question": "Drug X and drug Y reach the same maximal response, but X reaches half of that response at a lower concentration. Which comparison is correct?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recognize graded dose-response relationships and how they are used to determine potency and efficacy.",
+    "options": [
+      {
+        "text": "X has lower potency and efficacy",
+        "isCorrect": false,
+        "rationale": "X has greater potency because its EC50 is lower, while equal maxima indicate equal efficacy."
+      },
+      {
+        "text": "X has greater efficacy only",
+        "isCorrect": false,
+        "rationale": "Equal maximal responses exclude greater efficacy; this would require X to reach a higher response ceiling."
+      },
+      {
+        "text": "X has greater potency only",
+        "isCorrect": true,
+        "rationale": "The lower EC50 makes X more potent, while the shared Emax indicates equal efficacy."
+      },
+      {
+        "text": "Y has greater potency only",
+        "isCorrect": false,
+        "rationale": "Y requires a higher concentration for half-maximal response; Y would be more potent only if its EC50 were lower."
+      },
+      {
+        "text": "Y has greater efficacy only",
+        "isCorrect": false,
+        "rationale": "The drugs reach the same maximum; Y would have greater efficacy only if its Emax were higher."
+      }
+    ]
+  },
+  {
+    "question": "Two drugs have identical half-maximal concentrations, but drug M produces a higher maximal response than drug N. Which comparison is correct?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recognize graded dose-response relationships and how they are used to determine potency and efficacy.",
+    "options": [
+      {
+        "text": "M has greater potency only",
+        "isCorrect": false,
+        "rationale": "Identical EC50 values indicate equal potency; greater potency would require a lower EC50 for M."
+      },
+      {
+        "text": "N has greater efficacy only",
+        "isCorrect": false,
+        "rationale": "N has the lower response ceiling; greater efficacy would require N to have the higher Emax."
+      },
+      {
+        "text": "N has greater potency only",
+        "isCorrect": false,
+        "rationale": "The equal EC50 values exclude a potency difference; N would be more potent if its curve were left-shifted."
+      },
+      {
+        "text": "M has greater efficacy only",
+        "isCorrect": true,
+        "rationale": "M has the higher Emax and therefore greater efficacy, while the identical EC50 values indicate equal potency."
+      },
+      {
+        "text": "M has lower efficacy and potency",
+        "isCorrect": false,
+        "rationale": "M has higher efficacy and equal potency; this option would require both a lower Emax and a higher EC50."
+      }
+    ]
+  },
+  {
+    "question": "A dose-response relationship is replotted from a linear concentration axis to a base-10 logarithmic axis. Which change is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Recognize graded dose-response relationships and how they are used to determine potency and efficacy.",
+    "options": [
+      {
+        "text": "Sigmoidal curve with expanded low-dose region",
+        "isCorrect": true,
+        "rationale": "A semilog plot produces a sigmoidal curve and expands the region where responses change rapidly."
+      },
+      {
+        "text": "Hyperbolic curve with expanded high-dose region",
+        "isCorrect": false,
+        "rationale": "The hyperbolic appearance belongs to the linear plot; the logarithmic plot compresses the high-dose region."
+      },
+      {
+        "text": "Linear curve with unchanged dose spacing",
+        "isCorrect": false,
+        "rationale": "Logarithmic transformation changes dose spacing and produces a sigmoid rather than a straight line."
+      },
+      {
+        "text": "Sigmoidal curve with compressed low-dose region",
+        "isCorrect": false,
+        "rationale": "The low-dose region is expanded, not compressed; compression occurs at higher doses."
+      },
+      {
+        "text": "Hyperbolic curve with compressed low-dose region",
+        "isCorrect": false,
+        "rationale": "This reverses both features; a hyperbola occurs on the linear scale and low doses expand on the semilog scale."
+      }
+    ]
+  },
+  {
+    "question": "A study records whether each participant achieves seizure prevention at each administered dose. Which curve and parameter pairing best analyzes these data?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Interpret quantal dose-response curves to determine ED50, TD50, LD50 and know how to calculate therapeutic index.",
+    "options": [
+      {
+        "text": "Graded curve with maximum effect",
+        "isCorrect": false,
+        "rationale": "A graded curve measures response magnitude in one individual; it would apply if the amount of effect were measured continuously."
+      },
+      {
+        "text": "Quantal curve with median effective dose",
+        "isCorrect": true,
+        "rationale": "The binary therapeutic outcome is measured across a population, making ED50 on a quantal curve appropriate."
+      },
+      {
+        "text": "Graded curve with median toxic dose",
+        "isCorrect": false,
+        "rationale": "TD50 is a quantal toxicity measure; it would apply if the specified outcome were toxic and population-based."
+      },
+      {
+        "text": "Quantal curve with maximum effect",
+        "isCorrect": false,
+        "rationale": "Emax is derived from graded response magnitude; it would apply to the greatest effect within an individual."
+      },
+      {
+        "text": "Graded curve with median lethal dose",
+        "isCorrect": false,
+        "rationale": "LD50 is a quantal population measure; it would apply when the binary outcome is death."
+      }
+    ]
+  },
+  {
+    "question": "Drug A has a median toxic dose of 200 mg and a median effective dose of 20 mg. Which therapeutic index is correct?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Interpret quantal dose-response curves to determine ED50, TD50, LD50 and know how to calculate therapeutic index.",
+    "options": [
+      {
+        "text": "Therapeutic index of five",
+        "isCorrect": false,
+        "rationale": "A value of 5 would require TD50 to be five times ED50, such as 100 mg divided by 20 mg."
+      },
+      {
+        "text": "Therapeutic index of twenty",
+        "isCorrect": false,
+        "rationale": "A value of 20 would require TD50 to be twenty times ED50, such as 400 mg divided by 20 mg."
+      },
+      {
+        "text": "Therapeutic index of ten",
+        "isCorrect": true,
+        "rationale": "Therapeutic index equals TD50/ED50, so 200 mg divided by 20 mg equals 10."
+      },
+      {
+        "text": "Therapeutic index of one",
+        "isCorrect": false,
+        "rationale": "A value of 1 would require equal median toxic and effective doses."
+      },
+      {
+        "text": "Therapeutic index of two",
+        "isCorrect": false,
+        "rationale": "A value of 2 would require TD50 to be twice ED50, such as 40 mg divided by 20 mg."
+      }
+    ]
+  },
+  {
+    "question": "An antagonist shifts an agonist concentration-response curve rightward without changing its maximum. Which interaction best explains this pattern?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand how partial agonists, competitive antagonists, and noncompetitive antagonists alter the agonist dose-response curve.",
+    "options": [
+      {
+        "text": "Partial receptor activation",
+        "isCorrect": false,
+        "rationale": "Partial activation lowers the attainable maximum; it would apply if the response plateau remained below that of the full agonist."
+      },
+      {
+        "text": "Allosteric receptor inactivation",
+        "isCorrect": false,
+        "rationale": "Allosteric inactivation reduces Emax; it would apply if increasing agonist could not restore the maximum."
+      },
+      {
+        "text": "Inactive-state receptor stabilization",
+        "isCorrect": false,
+        "rationale": "Inactive-state stabilization lowers basal activity; it would apply if activity fell below the untreated baseline."
+      },
+      {
+        "text": "Same-site receptor competition",
+        "isCorrect": true,
+        "rationale": "A competitive antagonist reduces agonist potency through a rightward shift while preserving Emax."
+      },
+      {
+        "text": "Reduced intrinsic receptor activity",
+        "isCorrect": false,
+        "rationale": "Reduced intrinsic activity characterizes partial agonism; it would apply if maximal efficacy were reduced."
+      }
+    ]
+  },
+  {
+    "question": "An antagonist lowers the maximum response to an agonist while leaving the agonist's half-maximal concentration unchanged. Which interaction best explains the findings?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand how partial agonists, competitive antagonists, and noncompetitive antagonists alter the agonist dose-response curve.",
+    "options": [
+      {
+        "text": "Full agonist receptor activation",
+        "isCorrect": false,
+        "rationale": "Full agonism defines the maximal response; it would apply if receptor activation reached the original response ceiling."
+      },
+      {
+        "text": "Partial agonist receptor activation",
+        "isCorrect": false,
+        "rationale": "A partial agonist has lower intrinsic activity, but its potency may vary; the stated unchanged agonist potency with lost Emax identifies receptor inactivation."
+      },
+      {
+        "text": "Competitive same-site antagonism",
+        "isCorrect": false,
+        "rationale": "Competitive antagonism decreases potency while preserving Emax; it would apply to a surmountable rightward shift."
+      },
+      {
+        "text": "Inverse agonist receptor stabilization",
+        "isCorrect": false,
+        "rationale": "Inverse agonism reduces basal activity below baseline; it would apply if the antagonist produced an opposite receptor response."
+      },
+      {
+        "text": "Noncompetitive receptor antagonism",
+        "isCorrect": true,
+        "rationale": "Noncompetitive antagonism removes functional receptors, lowering Emax while leaving agonist potency unchanged."
+      }
+    ]
+  },
+  {
+    "question": "A partial activator and a full activator bind the same receptor population. The partial activator has equal affinity but lower intrinsic activity. Which outcome is expected when both are present?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand how partial agonists, competitive antagonists, and noncompetitive antagonists alter the agonist dose-response curve.",
+    "options": [
+      {
+        "text": "Reduced maximum full-agonist response",
+        "isCorrect": true,
+        "rationale": "The partial agonist occupies receptors while activating them incompletely, thereby reducing the maximum response produced by the full agonist."
+      },
+      {
+        "text": "Increased maximum full-agonist response",
+        "isCorrect": false,
+        "rationale": "Lower intrinsic activity cannot raise the full-agonist ceiling; this would require greater receptor activation than full agonism."
+      },
+      {
+        "text": "Unchanged maximum full-agonist response",
+        "isCorrect": false,
+        "rationale": "Equal affinity permits the partial agonist to compete for occupancy, so the full-agonist maximum is reduced."
+      },
+      {
+        "text": "Decreased basal activity below baseline",
+        "isCorrect": false,
+        "rationale": "A decrease below baseline characterizes inverse agonism; it would require stabilization of the inactive receptor state."
+      },
+      {
+        "text": "Complete loss of receptor binding",
+        "isCorrect": false,
+        "rationale": "Both ligands retain receptor binding; complete binding loss would require absent affinity rather than partial intrinsic activity."
+      }
+    ]
+  },
+  {
+    "question": "A 46-year-old participant receives an investigational agonist. Increasing concentrations initially produce progressively larger responses, but further increases do not raise the plateau. Which property is represented by this plateau?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recognize graded dose-response relationships and how they are used to determine potency and efficacy.",
+    "options": [
+      {
+        "text": "Median population toxicity",
+        "isCorrect": false,
+        "rationale": "TD50 is a quantal population endpoint; it would apply if toxicity occurred in 50% of participants."
+      },
+      {
+        "text": "Maximum drug efficacy",
+        "isCorrect": true,
+        "rationale": "The response plateau is Emax, the greatest effect achievable even when additional drug no longer increases response."
+      },
+      {
+        "text": "Median population lethality",
+        "isCorrect": false,
+        "rationale": "LD50 is a quantal death endpoint; it would apply if half of a studied population died."
+      },
+      {
+        "text": "Half-maximal drug potency",
+        "isCorrect": false,
+        "rationale": "Potency is assessed by EC50 along the rising curve; it would apply at 50% of the observed maximum."
+      },
+      {
+        "text": "Receptor binding affinity",
+        "isCorrect": false,
+        "rationale": "Affinity is represented by Kd rather than the response plateau; it would require binding or dissociation information."
+      }
+    ]
+  },
+  {
+    "question": "A 38-year-old participant receives drug X and drug Y on separate days. Both lower a measured physiologic variable by the same maximum amount, but X requires one-tenth the concentration of Y to produce half of that change. Which conclusion is most accurate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Recognize graded dose-response relationships and how they are used to determine potency and efficacy.",
+    "options": [
+      {
+        "text": "X has lower potency and equal efficacy",
+        "isCorrect": false,
+        "rationale": "X requires less drug and therefore has greater potency; equal maxima do establish equal efficacy."
+      },
+      {
+        "text": "X has greater efficacy and equal potency",
+        "isCorrect": false,
+        "rationale": "The equal maxima indicate equal efficacy, while the unequal half-maximal concentrations indicate different potency."
+      },
+      {
+        "text": "X has greater potency and equal efficacy",
+        "isCorrect": true,
+        "rationale": "X has a lower EC50 and is more potent, while the identical maximal changes indicate equal efficacy."
+      },
+      {
+        "text": "Y has greater potency and equal efficacy",
+        "isCorrect": false,
+        "rationale": "Y requires the higher concentration and is less potent; it would be more potent if its EC50 were lower."
+      },
+      {
+        "text": "Y has greater efficacy and equal potency",
+        "isCorrect": false,
+        "rationale": "Y does not produce a higher maximum, and the different half-maximal concentrations exclude equal potency."
+      }
+    ]
+  },
+  {
+    "question": "A 55-year-old participant receives two receptor activators. Drug P reaches a lower response plateau than drug F despite complete receptor occupancy. Drug P also binds with high affinity. Which property best explains its lower plateau?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand how partial agonists, competitive antagonists, and noncompetitive antagonists alter the agonist dose-response curve.",
+    "options": [
+      {
+        "text": "Greater receptor density",
+        "isCorrect": false,
+        "rationale": "Greater receptor density promotes more complexes rather than incomplete activation; it would apply if available receptor concentration increased."
+      },
+      {
+        "text": "Lower ligand affinity",
+        "isCorrect": false,
+        "rationale": "The stem establishes high affinity and complete occupancy; lower affinity would require a larger Kd or easier dissociation."
+      },
+      {
+        "text": "Competitive receptor blockade",
+        "isCorrect": false,
+        "rationale": "Competitive blockade preserves the agonist maximum when enough agonist is given; it would apply to a rightward shift without a lower plateau."
+      },
+      {
+        "text": "Lower intrinsic activity",
+        "isCorrect": true,
+        "rationale": "A partial agonist can bind with high affinity yet has lower intrinsic activity, so complete occupancy still produces a submaximal response."
+      },
+      {
+        "text": "Faster receptor association",
+        "isCorrect": false,
+        "rationale": "Association kinetics do not explain incomplete activation after full occupancy; this would instead affect binding behavior."
+      }
+    ]
+  },
+  {
+    "question": "A 41-year-old participant receives an agonist plus a blocker. The agonist curve shifts rightward, but the original maximum is restored by increasing the agonist concentration. Which blocker mechanism is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand how partial agonists, competitive antagonists, and noncompetitive antagonists alter the agonist dose-response curve.",
+    "options": [
+      {
+        "text": "Reduced receptor intrinsic activity",
+        "isCorrect": false,
+        "rationale": "Reduced intrinsic activity lowers the maximal response; it would apply to partial agonism rather than a surmountable blockade."
+      },
+      {
+        "text": "Inactive receptor state stabilization",
+        "isCorrect": false,
+        "rationale": "Inactive-state stabilization produces activity below baseline; it would apply if the blocker generated the opposite receptor response."
+      },
+      {
+        "text": "Allosteric receptor inactivation",
+        "isCorrect": false,
+        "rationale": "Allosteric inactivation lowers Emax despite additional agonist; it would apply if the original maximum could not be restored."
+      },
+      {
+        "text": "Incomplete receptor activation",
+        "isCorrect": false,
+        "rationale": "Incomplete activation describes a partial agonist and lowers the response ceiling; it would apply if occupancy produced a persistent submaximal effect."
+      },
+      {
+        "text": "Same-site receptor competition",
+        "isCorrect": true,
+        "rationale": "A competitive antagonist occupies the agonist site, reducing potency while permitting sufficient agonist to restore Emax."
+      }
+    ]
+  },
+  {
+    "question": "A 52-year-old participant receives an agonist with an allosteric blocker. Even a large increase in agonist concentration cannot restore the original maximum response. Which curve change is expected?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand how partial agonists, competitive antagonists, and noncompetitive antagonists alter the agonist dose-response curve.",
+    "options": [
+      {
+        "text": "Lower Emax with unchanged potency",
+        "isCorrect": true,
+        "rationale": "Noncompetitive antagonism removes functional receptors, reducing efficacy while leaving agonist binding and potency unchanged."
+      },
+      {
+        "text": "Unchanged Emax with reduced potency",
+        "isCorrect": false,
+        "rationale": "This is the competitive-antagonist pattern; it would apply if additional agonist restored the original maximum."
+      },
+      {
+        "text": "Higher Emax with unchanged potency",
+        "isCorrect": false,
+        "rationale": "Receptor inactivation cannot increase efficacy; this would require an increased maximal response rather than blocked activation."
+      },
+      {
+        "text": "Unchanged Emax with increased potency",
+        "isCorrect": false,
+        "rationale": "The blocker does not make the agonist more potent; this would require a lower EC50 without changing the maximum."
+      },
+      {
+        "text": "Higher Emax with reduced potency",
+        "isCorrect": false,
+        "rationale": "Noncompetitive blockade lowers rather than raises Emax; this pattern would require simultaneous increased efficacy and decreased potency."
+      }
+    ]
+  },
+  {
+    "question": "A 34-year-old participant receives a full receptor activator and then a second ligand. The second ligand binds the same receptors and lowers the combined response but still produces activity above baseline when given alone. Which ligand class best fits these findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand how partial agonists, competitive antagonists, and noncompetitive antagonists alter the agonist dose-response curve.",
+    "options": [
+      {
+        "text": "Competitive receptor antagonist",
+        "isCorrect": false,
+        "rationale": "A competitive antagonist does not activate the receptor; it would apply if the second ligand produced no response alone."
+      },
+      {
+        "text": "Partial receptor agonist",
+        "isCorrect": true,
+        "rationale": "A partial agonist activates receptors incompletely alone and reduces the full agonist's response by competing for occupancy."
+      },
+      {
+        "text": "Noncompetitive receptor antagonist",
+        "isCorrect": false,
+        "rationale": "A noncompetitive antagonist prevents receptor activation without functioning as an activator; it would apply if the second ligand lacked agonist activity."
+      },
+      {
+        "text": "Inverse receptor agonist",
+        "isCorrect": false,
+        "rationale": "An inverse agonist lowers activity below baseline; it would apply if the second ligand produced an opposite response alone."
+      },
+      {
+        "text": "Full receptor agonist",
+        "isCorrect": false,
+        "rationale": "A full agonist produces the maximal system response; it would apply if the second ligand reached the same full ceiling alone."
+      }
+    ]
+  },
+  {
+    "question": "A 29-year-old participant receives a ligand that decreases constitutive receptor signaling below the untreated level. Which receptor-state effect best explains this response?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand how partial agonists, competitive antagonists, and noncompetitive antagonists alter the agonist dose-response curve.",
+    "options": [
+      {
+        "text": "Preferential active-state stabilization",
+        "isCorrect": false,
+        "rationale": "Active-state stabilization increases signaling; it would apply to agonist activity above baseline."
+      },
+      {
+        "text": "Incomplete active-state stimulation",
+        "isCorrect": false,
+        "rationale": "Incomplete stimulation raises activity submaximally; it would apply to a partial agonist response above baseline."
+      },
+      {
+        "text": "Preferential inactive-state stabilization",
+        "isCorrect": true,
+        "rationale": "Inverse agonism stabilizes the inactive receptor state and lowers basal signaling below its untreated level."
+      },
+      {
+        "text": "Reversible same-site occupancy",
+        "isCorrect": false,
+        "rationale": "Same-site antagonist occupancy blocks agonist action without lowering basal activity; it would apply to competitive antagonism."
+      },
+      {
+        "text": "Allosteric activation blockade",
+        "isCorrect": false,
+        "rationale": "Noncompetitive blockade reduces agonist efficacy without necessarily decreasing basal signaling; it would apply to a lower agonist Emax."
+      }
+    ]
+  },
+  {
+    "question": "A dose-finding study shows therapeutic responses in 50% of participants at 25 mg and toxic responses in 50% at 50 mg. Which management approach is most appropriate based on these data?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Interpret quantal dose-response curves to determine ED50, TD50, LD50 and know how to calculate therapeutic index.",
+    "options": [
+      {
+        "text": "Use unrestricted dosing without monitoring",
+        "isCorrect": false,
+        "rationale": "The therapeutic index is only 2, indicating a narrow margin; unrestricted dosing would fit a much wider separation between effective and toxic doses."
+      },
+      {
+        "text": "Select doses solely by maximal efficacy",
+        "isCorrect": false,
+        "rationale": "Emax does not define the population safety margin; this approach would apply only to comparing graded response ceilings."
+      },
+      {
+        "text": "Increase doses until toxicity appears",
+        "isCorrect": false,
+        "rationale": "A narrow therapeutic index requires avoidance of toxic exposure; deliberate escalation to toxicity is not supported by the safety relationship."
+      },
+      {
+        "text": "Titrate carefully with clinical monitoring",
+        "isCorrect": true,
+        "rationale": "TD50/ED50 equals 2, so the narrow safety margin warrants careful dose titration and monitoring."
+      },
+      {
+        "text": "Assume toxicity begins above 100 mg",
+        "isCorrect": false,
+        "rationale": "Toxicity already occurs in 50% at 50 mg; a threshold above 100 mg would require substantially different quantal data."
+      }
+    ]
+  },
+  {
+    "question": "Two investigational drugs have the same median effective dose. Drug A has a median toxic dose four times that of drug B. Which selection best prioritizes population safety?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Interpret quantal dose-response curves to determine ED50, TD50, LD50 and know how to calculate therapeutic index.",
+    "options": [
+      {
+        "text": "Select B for higher potency",
+        "isCorrect": false,
+        "rationale": "The equal ED50 values do not establish greater potency for B; this choice would require a lower effective dose for B."
+      },
+      {
+        "text": "Select B for wider safety margin",
+        "isCorrect": false,
+        "rationale": "B has the lower TD50 at the same ED50 and therefore the narrower safety margin."
+      },
+      {
+        "text": "Select either for identical safety",
+        "isCorrect": false,
+        "rationale": "Their therapeutic indices differ because their median toxic doses differ despite identical median effective doses."
+      },
+      {
+        "text": "Select either for identical efficacy",
+        "isCorrect": false,
+        "rationale": "ED50 does not establish identical maximal efficacy; that conclusion would require equal Emax values on graded curves."
+      },
+      {
+        "text": "Select A for wider safety margin",
+        "isCorrect": true,
+        "rationale": "With the same ED50 and a fourfold higher TD50, drug A has the larger therapeutic index and wider safety margin."
+      }
+    ]
+  },
+  {
+    "question": "A 60-year-old participant receives a drug with an ED50 of 10 mg and a TD50 of 20 mg. A second drug has an ED50 of 10 mg and a TD50 of 100 mg. Which comparison is correct?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Interpret quantal dose-response curves to determine ED50, TD50, LD50 and know how to calculate therapeutic index.",
+    "options": [
+      {
+        "text": "Second drug has greater therapeutic index",
+        "isCorrect": true,
+        "rationale": "The second drug has a therapeutic index of 10 versus 2 for the first drug, indicating a wider safety margin."
+      },
+      {
+        "text": "First drug has greater therapeutic index",
+        "isCorrect": false,
+        "rationale": "The first drug has the lower TD50 at the same ED50 and therefore the smaller therapeutic index."
+      },
+      {
+        "text": "Both drugs have equal therapeutic indices",
+        "isCorrect": false,
+        "rationale": "Their TD50/ED50 ratios are 2 and 10; equal indices would require equal ratios."
+      },
+      {
+        "text": "First drug has greater maximal efficacy",
+        "isCorrect": false,
+        "rationale": "ED50 and TD50 do not determine Emax; greater efficacy would require a higher graded response plateau."
+      },
+      {
+        "text": "Second drug has lower receptor affinity",
+        "isCorrect": false,
+        "rationale": "Quantal effective and toxic doses do not establish Kd; lower affinity would require direct binding information."
+      }
+    ]
+  },
+  {
+    "question": "A population study records whether participants develop a specified toxic effect after each dose. At 80 mg, exactly half meet the toxicity criterion. Which parameter has been identified?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Interpret quantal dose-response curves to determine ED50, TD50, LD50 and know how to calculate therapeutic index.",
+    "options": [
+      {
+        "text": "Median effective concentration",
+        "isCorrect": false,
+        "rationale": "EC50 measures half of an individual's maximal graded response; it would apply to a continuous effect magnitude."
+      },
+      {
+        "text": "Median toxic dose",
+        "isCorrect": true,
+        "rationale": "TD50 is the dose at which 50% of a population experiences the specified toxic response."
+      },
+      {
+        "text": "Median effective dose",
+        "isCorrect": false,
+        "rationale": "ED50 concerns a therapeutic response; it would apply if half the population achieved the intended benefit."
+      },
+      {
+        "text": "Median lethal dose",
+        "isCorrect": false,
+        "rationale": "LD50 requires death as the endpoint; it would apply if half of the subjects died."
+      },
+      {
+        "text": "Maximum drug effect",
+        "isCorrect": false,
+        "rationale": "Emax is a graded efficacy measure; it would apply to the highest response achieved in an individual."
+      }
+    ]
+  },
+  {
+    "question": "A human safety program needs an estimate of the dose associated with death in 50% of exposed subjects. Which evidence source is appropriate for this endpoint?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Interpret quantal dose-response curves to determine ED50, TD50, LD50 and know how to calculate therapeutic index.",
+    "options": [
+      {
+        "text": "Prospective lethal-dose testing in volunteers",
+        "isCorrect": false,
+        "rationale": "Experimental determination of human LD50 is ethically prohibited; prospective human testing would not be appropriate."
+      },
+      {
+        "text": "Individual graded-response efficacy testing",
+        "isCorrect": false,
+        "rationale": "Graded efficacy testing determines response magnitude and Emax or EC50, not a population death endpoint."
+      },
+      {
+        "text": "Routine receptor-occupancy testing in volunteers",
+        "isCorrect": false,
+        "rationale": "Receptor occupancy evaluates binding rather than lethality; it would apply to ligand-receptor complex formation."
+      },
+      {
+        "text": "Animal and historical toxicology evidence",
+        "isCorrect": true,
+        "rationale": "Human LD50 estimates come from animal studies, historical toxicology data, or post-market and overdose surveillance rather than experimental human lethality tests."
+      },
+      {
+        "text": "Individual maximum-response testing in volunteers",
+        "isCorrect": false,
+        "rationale": "Maximum-response testing measures graded efficacy; it would apply to Emax rather than population lethality."
+      }
+    ]
+  },
+  {
+    "question": "A 44-year-old participant receives increasing agonist concentrations after exposure to a blocker. The original response ceiling remains attainable, but a larger agonist concentration is required to reach half of that ceiling. Which parameter change occurred?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand how partial agonists, competitive antagonists, and noncompetitive antagonists alter the agonist dose-response curve.",
+    "options": [
+      {
+        "text": "Lower EC50 with unchanged Emax",
+        "isCorrect": false,
+        "rationale": "A lower EC50 indicates increased potency; it would apply to a leftward shift rather than the observed need for more agonist."
+      },
+      {
+        "text": "Unchanged EC50 with lower Emax",
+        "isCorrect": false,
+        "rationale": "This is the noncompetitive pattern; it would apply if the response ceiling could not be restored."
+      },
+      {
+        "text": "Higher EC50 with unchanged Emax",
+        "isCorrect": true,
+        "rationale": "The blocker reduces potency by increasing EC50 while preserving Emax, which is the competitive-antagonist pattern."
+      },
+      {
+        "text": "Unchanged EC50 with higher Emax",
+        "isCorrect": false,
+        "rationale": "The ceiling is unchanged rather than increased; this would require enhanced maximal efficacy."
+      },
+      {
+        "text": "Higher EC50 with lower Emax",
+        "isCorrect": false,
+        "rationale": "The observed maximum is preserved; a lower Emax would require loss of achievable efficacy."
+      }
+    ]
+  },
+  {
+    "question": "A 50-year-old participant receives increasing agonist concentrations after administration of a receptor blocker. The half-maximal concentration is unchanged, but the response plateau falls from 100% to 60%. Which next experimental step best distinguishes this interaction?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand how partial agonists, competitive antagonists, and noncompetitive antagonists alter the agonist dose-response curve.",
+    "options": [
+      {
+        "text": "Increase agonist and assess plateau recovery",
+        "isCorrect": true,
+        "rationale": "Failure of additional agonist to restore the plateau confirms an insurmountable, noncompetitive effect on functional receptor activation."
+      },
+      {
+        "text": "Decrease agonist and assess potency recovery",
+        "isCorrect": false,
+        "rationale": "Reducing agonist cannot test whether blockade is surmountable; recovery testing requires increasing the competing agonist."
+      },
+      {
+        "text": "Measure population death at each dose",
+        "isCorrect": false,
+        "rationale": "This would generate an LD50 curve rather than distinguish mechanisms altering an individual's graded response."
+      },
+      {
+        "text": "Measure population toxicity at each dose",
+        "isCorrect": false,
+        "rationale": "This would determine TD50 rather than whether additional agonist restores Emax."
+      },
+      {
+        "text": "Replot responses on a linear axis",
+        "isCorrect": false,
+        "rationale": "Changing the plotting scale does not test reversibility; it would only change the visual representation of the same responses."
+      }
+    ]
+  },
+  {
+    "question": "A 47-year-old participant receives a drug that occupies every available receptor, yet the measured response remains below the system maximum defined by a reference agonist. Which finding best explains the discrepancy?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand how partial agonists, competitive antagonists, and noncompetitive antagonists alter the agonist dose-response curve.",
+    "options": [
+      {
+        "text": "The drug has reduced intrinsic activity",
+        "isCorrect": true,
+        "rationale": "Complete occupancy with a submaximal response identifies partial agonism caused by reduced intrinsic activity."
+      },
+      {
+        "text": "The drug has increased receptor affinity",
+        "isCorrect": false,
+        "rationale": "Affinity determines binding strength rather than the response produced after complete occupancy; increased affinity could coexist with either full or partial activation."
+      },
+      {
+        "text": "The tissue has increased receptor density",
+        "isCorrect": false,
+        "rationale": "More receptors increase potential complex formation; it would apply if receptor availability, rather than activation per occupied receptor, were limiting."
+      },
+      {
+        "text": "The drug has reduced dissociation rate",
+        "isCorrect": false,
+        "rationale": "Slower dissociation indicates higher affinity but does not explain incomplete activation once all receptors are occupied."
+      },
+      {
+        "text": "The drug has increased association rate",
+        "isCorrect": false,
+        "rationale": "Faster association changes binding kinetics rather than intrinsic activity; it would apply to how quickly complexes form."
+      }
+    ]
+  },
+  {
+    "question": "A 63-year-old participant is treated with a drug having a small therapeutic index. The target response is achieved, but minor dose changes approach the toxic-response range. Which next step is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Interpret quantal dose-response curves to determine ED50, TD50, LD50 and know how to calculate therapeutic index.",
+    "options": [
+      {
+        "text": "Continue unrestricted dose escalation",
+        "isCorrect": false,
+        "rationale": "A small therapeutic index makes unrestricted escalation unsafe; this would fit a drug with a wide margin between effective and toxic doses."
+      },
+      {
+        "text": "Stop assessing therapeutic response",
+        "isCorrect": false,
+        "rationale": "A narrow safety margin increases rather than removes the need to assess response during dosing."
+      },
+      {
+        "text": "Monitor and titrate the dose",
+        "isCorrect": true,
+        "rationale": "A small therapeutic index requires careful titration and monitoring because effective and toxic dose ranges are close."
+      },
+      {
+        "text": "Determine experimental human lethality",
+        "isCorrect": false,
+        "rationale": "Experimental human LD50 determination is unethical; lethality estimates instead rely on animal, historical, or surveillance data."
+      },
+      {
+        "text": "Dose solely from maximal efficacy",
+        "isCorrect": false,
+        "rationale": "Emax does not define the safe dosing range; this approach would ignore the narrow separation between therapeutic and toxic effects."
+      }
+    ]
+  }
+]
