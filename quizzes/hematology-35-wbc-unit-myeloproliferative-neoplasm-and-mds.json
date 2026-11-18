@@ -1,0 +1,994 @@
+[
+  {
+    "question": "Which molecular abnormality uniquely distinguishes chronic myeloid leukemia from the other myeloproliferative neoplasms discussed?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "BCR::ABL1 fusion gene",
+        "isCorrect": true,
+        "rationale": "The fusion constitutively activates ABL tyrosine kinase and is present in all cases of chronic myeloid leukemia."
+      },
+      {
+        "text": "JAK2 V617F mutation",
+        "isCorrect": false,
+        "rationale": "This mutation drives most cases of polycythemia vera and some cases of essential thrombocythemia and primary myelofibrosis. It would fit erythroid panmyelosis or selected BCR::ABL1-negative neoplasms."
+      },
+      {
+        "text": "CALR gene mutation",
+        "isCorrect": false,
+        "rationale": "CALR mutations occur in subsets of essential thrombocythemia and primary myelofibrosis. This would fit a BCR::ABL1-negative neoplasm involving megakaryocytes."
+      },
+      {
+        "text": "MPL gene mutation",
+        "isCorrect": false,
+        "rationale": "MPL mutations account for a minority of essential thrombocythemia and primary myelofibrosis cases. This would fit constitutive MPL kinase activation."
+      },
+      {
+        "text": "KIT gene mutation",
+        "isCorrect": false,
+        "rationale": "KIT mutations are associated with systemic mastocytosis rather than chronic myeloid leukemia. This would fit a mast cell neoplasm."
+      }
+    ]
+  },
+  {
+    "question": "Which morphologic abnormality is associated with the erythroid lineage in myelodysplastic syndromes?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the presentation, etiology, and pathological findings in myelodysplastic syndromes (MDS)",
+    "options": [
+      {
+        "text": "Small dysplastic megakaryocytes",
+        "isCorrect": false,
+        "rationale": "These abnormal cells involve the megakaryocytic lineage. They would fit dysmegakaryopoiesis rather than erythroid dysplasia."
+      },
+      {
+        "text": "Hypogranular mature neutrophils",
+        "isCorrect": false,
+        "rationale": "Decreased granules represent granulocytic dysplasia. This would fit an abnormality of the neutrophil lineage."
+      },
+      {
+        "text": "Perinuclear ring sideroblasts",
+        "isCorrect": true,
+        "rationale": "Ring sideroblasts are erythroid progenitors containing iron-laden mitochondria visible as perinuclear granules with Prussian blue stain."
+      },
+      {
+        "text": "Bilobed pseudo-Pelger-Hüet cells",
+        "isCorrect": false,
+        "rationale": "Pseudo-Pelger-Hüet cells are dysplastic neutrophils with two nuclear lobes. They would fit granulocytic dysplasia."
+      },
+      {
+        "text": "Multinucleated abnormal megakaryocytes",
+        "isCorrect": false,
+        "rationale": "Multiple separate nuclei represent megakaryocytic dysplasia. This would fit an abnormality of platelet-producing cells."
+      }
+    ]
+  },
+  {
+    "question": "Which treatment is the only curative option for primary myelofibrosis?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Long-term hydroxyurea therapy",
+        "isCorrect": false,
+        "rationale": "Hydroxyurea can reduce splenomegaly but does not eliminate the clonal disorder. It would be used for symptomatic splenic enlargement."
+      },
+      {
+        "text": "Chronic ruxolitinib therapy",
+        "isCorrect": false,
+        "rationale": "Ruxolitinib reduces splenomegaly and constitutional symptoms through JAK1/2 inhibition but is not curative."
+      },
+      {
+        "text": "Repeated erythrocyte transfusions",
+        "isCorrect": false,
+        "rationale": "Transfusions provide supportive management for anemia without eradicating the abnormal stem cell clone."
+      },
+      {
+        "text": "Splenic radiation therapy",
+        "isCorrect": false,
+        "rationale": "Radiation can treat sites of extramedullary hematopoiesis but does not cure the underlying neoplasm."
+      },
+      {
+        "text": "Allogeneic stem cell transplantation",
+        "isCorrect": true,
+        "rationale": "Allogeneic stem cell transplantation replaces the diseased hematopoietic compartment and is the only curative treatment listed for primary myelofibrosis."
+      }
+    ]
+  },
+  {
+    "question": "Which laboratory measurement is typically decreased in polycythemia vera and helps distinguish it from secondary erythrocytosis?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Peripheral platelet count",
+        "isCorrect": false,
+        "rationale": "Platelets may be increased because polycythemia vera produces panmyelosis. A reduced value would not provide the stated distinction."
+      },
+      {
+        "text": "Serum erythropoietin level",
+        "isCorrect": true,
+        "rationale": "Autonomous JAK2 signaling drives erythrocyte production independently of erythropoietin, so the circulating erythropoietin level is low."
+      },
+      {
+        "text": "Peripheral erythrocyte count",
+        "isCorrect": false,
+        "rationale": "The erythrocyte count is increased rather than decreased. An increased value establishes erythrocytosis but does not by itself identify its source."
+      },
+      {
+        "text": "Marrow granulocyte production",
+        "isCorrect": false,
+        "rationale": "Granulocyte production may increase as part of panmyelosis. Decreased production would oppose the expected marrow pattern."
+      },
+      {
+        "text": "Marrow megakaryocyte production",
+        "isCorrect": false,
+        "rationale": "Megakaryocytic proliferation may accompany erythroid proliferation. Decreased production would not fit trilineage expansion."
+      }
+    ]
+  },
+  {
+    "question": "A myeloid neoplasm contains a mutation that constitutively activates a kinase associated with erythropoietin, thrombopoietin, and granulocyte colony-stimulating factor receptors. Which marrow response is most likely?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the pathogenetic role of the JAK2 mutation in myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Trilineage myeloid proliferation",
+        "isCorrect": false,
+        "rationale": "This describes proliferation across myeloid lineages but is less precise than the specific erythroid, granulocytic, and megakaryocytic expansion produced through the three cited receptors."
+      },
+      {
+        "text": "Isolated granulocytic proliferation",
+        "isCorrect": false,
+        "rationale": "This omits erythroid and megakaryocytic progenitors activated through erythropoietin and thrombopoietin receptor signaling. It would fit a predominantly granulocytic process."
+      },
+      {
+        "text": "Selective erythroid proliferation",
+        "isCorrect": false,
+        "rationale": "This omits granulocytic and megakaryocytic proliferation. It would fit an erythroid-restricted response rather than signaling through all three receptors."
+      },
+      {
+        "text": "Erythroid granulocytic megakaryocytic proliferation",
+        "isCorrect": true,
+        "rationale": "Constitutive JAK2 activation stimulates progenitors through the erythropoietin, G-CSF, and MPL receptors, producing panmyelosis."
+      },
+      {
+        "text": "Isolated megakaryocytic proliferation",
+        "isCorrect": false,
+        "rationale": "This ignores signaling through the erythropoietin and G-CSF receptors. It would better fit a platelet-predominant neoplasm."
+      }
+    ]
+  },
+  {
+    "question": "A blood specimen shows marked leukocytosis with neutrophils, band forms, metamyelocytes, myelocytes, eosinophils, and basophils. Which additional result most strongly supports a clonal process rather than a severe reactive process?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Detected BCR::ABL1 fusion",
+        "isCorrect": true,
+        "rationale": "BCR::ABL1 establishes chronic myeloid leukemia and separates it from a leukemoid reaction, which lacks the fusion."
+      },
+      {
+        "text": "Prominent neutrophil left shift",
+        "isCorrect": false,
+        "rationale": "A left shift occurs in both chronic myeloid leukemia and leukemoid reactions. It would support either process rather than establish clonality."
+      },
+      {
+        "text": "Elevated leukocyte alkaline phosphatase",
+        "isCorrect": false,
+        "rationale": "A high LAP score supports a leukemoid reaction, whereas chronic myeloid leukemia characteristically has a low score."
+      },
+      {
+        "text": "Abundant neutrophil toxic granulation",
+        "isCorrect": false,
+        "rationale": "Toxic granulation commonly supports a reactive leukemoid process. Its absence would better fit chronic myeloid leukemia."
+      },
+      {
+        "text": "Numerous neutrophil Döhle bodies",
+        "isCorrect": false,
+        "rationale": "Döhle bodies often accompany a leukemoid reaction and are absent in the clonal process described."
+      }
+    ]
+  },
+  {
+    "question": "An untreated myeloid neoplasm progresses from a chronic period to worsening anemia and thrombocytopenia, followed months later by a marked increase in blasts. Which disease course is represented?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Polycythemia vera spent phase",
+        "isCorrect": false,
+        "rationale": "The spent phase features marrow fibrosis and extensive extramedullary hematopoiesis after years of polycythemia. It does not define the chronic-to-accelerated-to-blast sequence."
+      },
+      {
+        "text": "Essential thrombocythemia progression",
+        "isCorrect": false,
+        "rationale": "Essential thrombocythemia has rare progression to acute myeloid leukemia and lacks the characteristic accelerated phase described."
+      },
+      {
+        "text": "Chronic myeloid leukemia evolution",
+        "isCorrect": true,
+        "rationale": "Untreated chronic myeloid leukemia may enter an accelerated phase with worsening cytopenias before progressing to blast crisis."
+      },
+      {
+        "text": "Primary myelofibrosis evolution",
+        "isCorrect": false,
+        "rationale": "Primary myelofibrosis may transform to acute myeloid leukemia, but its defining progression is from a prefibrotic phase to a fibrotic phase."
+      },
+      {
+        "text": "Myelodysplastic syndrome evolution",
+        "isCorrect": false,
+        "rationale": "Myelodysplastic syndromes can transform to acute myeloid leukemia, but the stated accelerated phase after a chronic myeloproliferative period identifies chronic myeloid leukemia."
+      }
+    ]
+  },
+  {
+    "question": "A clonal disorder produces thrombocytosis without erythrocytosis, marrow fibrosis, or the chromosome 9;22-associated fusion. Which pathologic finding best supports the remaining diagnosis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Diffuse granulocytic precursor expansion",
+        "isCorrect": false,
+        "rationale": "Massive granulocytic precursor expansion supports chronic myeloid leukemia. That disorder would be expected to carry BCR::ABL1."
+      },
+      {
+        "text": "Trilineage marrow cell proliferation",
+        "isCorrect": false,
+        "rationale": "Panmyelosis supports polycythemia vera. That diagnosis would include increased erythrocytes rather than isolated thrombocytosis."
+      },
+      {
+        "text": "Extensive reticulin tissue deposition",
+        "isCorrect": false,
+        "rationale": "Extensive marrow fibrosis supports primary myelofibrosis. Its absence is required to separate essential thrombocythemia from that disorder."
+      },
+      {
+        "text": "Numerous large marrow megakaryocytes",
+        "isCorrect": false,
+        "rationale": "This is close to the expected finding, but the source specifically characterizes essential thrombocythemia by increased large megakaryocytes rather than merely numerous cells without explicit hyperplasia."
+      },
+      {
+        "text": "Megakaryocytic hyperplasia with large forms",
+        "isCorrect": true,
+        "rationale": "Essential thrombocythemia is characterized by megakaryocytic hyperplasia with large megakaryocytes and increased abnormally large peripheral platelets."
+      }
+    ]
+  },
+  {
+    "question": "A clonal stem cell disorder causes marrow expansion but fewer mature cells reach the peripheral circulation. Which paired findings should result?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the presentation, etiology, and pathological findings in myelodysplastic syndromes (MDS)",
+    "options": [
+      {
+        "text": "Hypocellular marrow with pancytosis",
+        "isCorrect": false,
+        "rationale": "Both components oppose the characteristic pattern. This disorder usually has a hypercellular marrow with one or more peripheral cytopenias."
+      },
+      {
+        "text": "Hypercellular marrow with cytopenias",
+        "isCorrect": true,
+        "rationale": "Ineffective hematopoiesis causes marrow cellularity to increase while defective maturation prevents adequate entry of cells into the blood."
+      },
+      {
+        "text": "Hypercellular marrow with pancytosis",
+        "isCorrect": false,
+        "rationale": "Pancytosis implies effective production and release of multiple lineages. The maturation defect instead produces peripheral cytopenias."
+      },
+      {
+        "text": "Fibrotic marrow with erythrocytosis",
+        "isCorrect": false,
+        "rationale": "Fibrosis with extramedullary hematopoiesis fits a myelofibrotic process. Erythrocytosis is not the expected consequence of ineffective maturation."
+      },
+      {
+        "text": "Normocellular marrow with leukocytosis",
+        "isCorrect": false,
+        "rationale": "This combination does not reflect failure of marrow cells to enter the circulation. Leukocytosis would indicate increased circulating cells."
+      }
+    ]
+  },
+  {
+    "question": "A myeloproliferative neoplasm is driven by autonomous signaling through a kinase normally linked to multiple hematopoietic cytokine receptors. Which blood pattern most directly follows this mechanism?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Understand the pathogenetic role of the JAK2 mutation in myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Reduced erythrocytes and granulocytes",
+        "isCorrect": false,
+        "rationale": "Constitutive growth signaling increases rather than suppresses these lineages. Reductions would fit ineffective or failing hematopoiesis."
+      },
+      {
+        "text": "Increased lymphocytes and monocytes",
+        "isCorrect": false,
+        "rationale": "The demonstrated receptor associations involve erythroid, granulocytic, and megakaryocytic progenitors rather than a lymphocyte-predominant expansion."
+      },
+      {
+        "text": "Increased erythrocytes alone",
+        "isCorrect": false,
+        "rationale": "Erythrocytes cause most symptoms, but JAK2 signaling also expands granulocytic and megakaryocytic progenitors."
+      },
+      {
+        "text": "Increased erythrocytes granulocytes platelets",
+        "isCorrect": true,
+        "rationale": "Activation through erythropoietin, G-CSF, and thrombopoietin receptor pathways produces erythrocyte, granulocyte, and platelet expansion."
+      },
+      {
+        "text": "Reduced platelets and granulocytes",
+        "isCorrect": false,
+        "rationale": "Constitutive JAK2 signaling promotes both megakaryocytic and granulocytic proliferation. Reductions would contradict the proliferative mechanism."
+      }
+    ]
+  },
+  {
+    "question": "Which combination most strongly separates primary myelofibrosis from essential thrombocythemia?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Thrombocytosis and JAK2 mutation",
+        "isCorrect": false,
+        "rationale": "Both disorders may show thrombocytosis and a JAK2 mutation. These findings do not reliably distinguish them."
+      },
+      {
+        "text": "Erythromelalgia and abnormal platelets",
+        "isCorrect": false,
+        "rationale": "Erythromelalgia and abnormal platelets support essential thrombocythemia but do not capture the defining fibrotic and extramedullary pattern of primary myelofibrosis."
+      },
+      {
+        "text": "Fibrosis and extramedullary hematopoiesis",
+        "isCorrect": false,
+        "rationale": "These findings support primary myelofibrosis, but the more discriminating combination includes the characteristic leukoerythroblastic blood picture caused by marrow distortion."
+      },
+      {
+        "text": "Large megakaryocytes and thrombocytosis",
+        "isCorrect": false,
+        "rationale": "Large megakaryocytes and elevated platelets are characteristic of essential thrombocythemia. They would support that diagnosis rather than primary myelofibrosis."
+      },
+      {
+        "text": "Fibrosis and leukoerythroblastosis",
+        "isCorrect": true,
+        "rationale": "Marrow fibrosis with nucleated erythrocytes, immature granulocytes, and teardrop cells distinguishes primary myelofibrosis from essential thrombocythemia."
+      }
+    ]
+  },
+  {
+    "question": "A marrow disorder develops several years after DNA-damaging treatment and carries a particularly rapid risk of acute leukemia. Which etiologic category best fits?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the presentation, etiology, and pathological findings in myelodysplastic syndromes (MDS)",
+    "options": [
+      {
+        "text": "Therapy-related myelodysplastic syndrome",
+        "isCorrect": true,
+        "rationale": "Therapy-related MDS appears 2-8 years after genotoxic drugs or radiation and has the highest frequency and most rapid transformation to acute myeloid leukemia."
+      },
+      {
+        "text": "Primary myelodysplastic syndrome",
+        "isCorrect": false,
+        "rationale": "Primary MDS arises through de novo mutations without the preceding genotoxic exposure. It would fit a patient lacking such treatment."
+      },
+      {
+        "text": "Lower-grade sideroblastic syndrome",
+        "isCorrect": false,
+        "rationale": "Ring sideroblasts are associated with better prognosis in lower-grade disease. They do not define a post-treatment etiology with rapid transformation."
+      },
+      {
+        "text": "Indeterminate clonal hematopoiesis",
+        "isCorrect": false,
+        "rationale": "CHIP is an asymptomatic precursor state from which MDS may arise. It does not describe overt cytopenic disease after genotoxic exposure."
+      },
+      {
+        "text": "Primary myelofibrotic neoplasm",
+        "isCorrect": false,
+        "rationale": "Primary myelofibrosis is a myeloproliferative neoplasm characterized by reactive fibrosis and extramedullary hematopoiesis, not a therapy-related dysplastic syndrome."
+      }
+    ]
+  },
+  {
+    "question": "A marrow sample contains dysplastic cells from several nonlymphoid lineages and an increased blast fraction that remains below the acute leukemia threshold. Which change would most worsen prognosis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the presentation, etiology, and pathological findings in myelodysplastic syndromes (MDS)",
+    "options": [
+      {
+        "text": "Development of ring sideroblasts",
+        "isCorrect": false,
+        "rationale": "Ring sideroblasts are associated with better prognosis in lower-grade MDS. Their presence would not be the worsening feature described."
+      },
+      {
+        "text": "Reduction of dysplastic lineages",
+        "isCorrect": false,
+        "rationale": "Fewer involved lineages would reduce rather than increase the adverse morphologic burden."
+      },
+      {
+        "text": "Increase in marrow blasts",
+        "isCorrect": true,
+        "rationale": "Prognosis worsens with excess blasts, and reaching at least 20% changes the diagnosis to acute myeloid leukemia."
+      },
+      {
+        "text": "Appearance of erythroid iron",
+        "isCorrect": false,
+        "rationale": "Iron-laden mitochondria produce ring sideroblasts, which are associated with better prognosis in lower-grade disease."
+      },
+      {
+        "text": "Decrease in marrow cellularity",
+        "isCorrect": false,
+        "rationale": "The stated prognostic framework emphasizes blast percentage and multilineage dysplasia. Reduced cellularity is not identified as the adverse change."
+      }
+    ]
+  },
+  {
+    "question": "A patient with marked thrombocytosis lacks erythrocytosis, marrow fibrosis, and BCR::ABL1. Which additional evaluation is required before assigning a clonal diagnosis?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Exclude secondary erythrocytosis",
+        "isCorrect": false,
+        "rationale": "Erythrocytosis is absent, so evaluation of secondary red cell expansion would address polycythemia rather than the platelet abnormality."
+      },
+      {
+        "text": "Exclude chronic basophilic leukemia",
+        "isCorrect": false,
+        "rationale": "The source distinguishes chronic myeloid leukemia using BCR::ABL1 and does not establish chronic basophilic leukemia as the required exclusion."
+      },
+      {
+        "text": "Exclude inherited marrow fibrosis",
+        "isCorrect": false,
+        "rationale": "Marrow fibrosis is absent. The necessary exclusion concerns nonclonal causes of the elevated platelet count."
+      },
+      {
+        "text": "Exclude reactive thrombocytosis",
+        "isCorrect": true,
+        "rationale": "Essential thrombocythemia is a diagnosis of exclusion, requiring assessment for inflammatory disorders, iron deficiency anemia, and asplenia."
+      },
+      {
+        "text": "Exclude secondary neutropenia",
+        "isCorrect": false,
+        "rationale": "Neutropenia does not explain marked thrombocytosis. This evaluation would fit a reduced neutrophil count rather than platelet proliferation."
+      }
+    ]
+  },
+  {
+    "question": "A 66-year-old man has fatigue, weight loss, and left upper quadrant discomfort. Leukocyte count is 118,000/mm3 [4,500-11,000/mm3], and the smear shows basophils with multiple stages of granulocyte maturation. Which treatment most directly targets the driving abnormality?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Low-dose aspirin therapy",
+        "isCorrect": false,
+        "rationale": "Aspirin reduces thrombosis in polycythemia vera and selected essential thrombocythemia cases. It does not inhibit the fusion kinase driving this presentation."
+      },
+      {
+        "text": "Therapeutic phlebotomy alone",
+        "isCorrect": false,
+        "rationale": "Phlebotomy controls hematocrit in polycythemia vera. This patient instead has a granulocytic neoplasm with basophilia."
+      },
+      {
+        "text": "Emergency plateletpheresis alone",
+        "isCorrect": false,
+        "rationale": "Plateletpheresis rapidly lowers extreme platelet counts. The central abnormality here is leukocytosis driven by a constitutively active fusion kinase."
+      },
+      {
+        "text": "Allogeneic transplantation immediately",
+        "isCorrect": false,
+        "rationale": "The source identifies kinase inhibition as standard treatment producing sustained remission in more than 90% of patients. Immediate transplantation is not the stated first-line approach."
+      },
+      {
+        "text": "BCR::ABL1 kinase inhibition",
+        "isCorrect": true,
+        "rationale": "The findings indicate chronic myeloid leukemia. Imatinib-class therapy inhibits the constitutively active BCR::ABL1 tyrosine kinase."
+      }
+    ]
+  },
+  {
+    "question": "A 58-year-old woman has headaches and severe itching after warm showers. Hematocrit is 58% [36-46%], and serum erythropoietin is decreased. Which cellular mechanism best explains the disorder?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Understand the pathogenetic role of the JAK2 mutation in myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Constitutive JAK2 kinase activation",
+        "isCorrect": true,
+        "rationale": "The presentation indicates polycythemia vera, in which JAK2 V617F produces autonomous kinase signaling and increased myeloid proliferation."
+      },
+      {
+        "text": "Constitutive ABL kinase activation",
+        "isCorrect": false,
+        "rationale": "Constitutive ABL activation results from BCR::ABL1 in chronic myeloid leukemia. That disorder would feature marked granulocytic leukocytosis and basophilia."
+      },
+      {
+        "text": "Constitutive MPL kinase activation",
+        "isCorrect": false,
+        "rationale": "MPL mutations occur in a minority of essential thrombocythemia and primary myelofibrosis cases. They would better fit a platelet-predominant or fibrotic neoplasm."
+      },
+      {
+        "text": "Alternative MPL ligand production",
+        "isCorrect": false,
+        "rationale": "Mutant CALR acts as an alternative MPL ligand in subsets of essential thrombocythemia and primary myelofibrosis. It is not the major driver of this erythrocytosis."
+      },
+      {
+        "text": "Defective nonlymphoid cell maturation",
+        "isCorrect": false,
+        "rationale": "Defective maturation produces ineffective hematopoiesis and cytopenias in MDS. This patient has autonomous overproduction of mature blood cells."
+      }
+    ]
+  },
+  {
+    "question": "A 63-year-old man has facial plethora and a painful red-blue hand. Hematocrit is 57% [41-53%]. Which initial management combination most directly reduces the major immediate vascular risk?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Ruxolitinib plus erythrocyte transfusion",
+        "isCorrect": false,
+        "rationale": "Transfusion would worsen erythrocytosis, while ruxolitinib is not the basic risk-reduction combination described for initial control."
+      },
+      {
+        "text": "Phlebotomy plus low-dose aspirin",
+        "isCorrect": true,
+        "rationale": "Phlebotomy lowers hematocrit toward the target below 45%, while low-dose aspirin decreases thrombosis risk."
+      },
+      {
+        "text": "Hydroxyurea plus platelet transfusion",
+        "isCorrect": false,
+        "rationale": "Platelet transfusion is not indicated and could increase the cellular burden. Hydroxyurea may provide cytoreduction but does not replace hematocrit control and antithrombotic therapy."
+      },
+      {
+        "text": "Interferon-α plus erythropoietin",
+        "isCorrect": false,
+        "rationale": "Erythropoietin would stimulate the lineage already overproduced. The endogenous level is expected to be low because production is JAK2-driven."
+      },
+      {
+        "text": "Anagrelide plus therapeutic phlebotomy",
+        "isCorrect": false,
+        "rationale": "Anagrelide inhibits platelet maturation and is used in essential thrombocythemia. It does not replace aspirin for the vascular manifestations described."
+      }
+    ]
+  },
+  {
+    "question": "A 71-year-old woman has marked thrombocytosis and burning erythema of both feet. Bone marrow shows large megakaryocytes without fibrosis, and BCR::ABL1 is absent. Which diagnosis is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Chronic myeloid leukemia",
+        "isCorrect": false,
+        "rationale": "Chronic myeloid leukemia requires BCR::ABL1 and usually demonstrates marked granulocytic proliferation with basophilia."
+      },
+      {
+        "text": "Polycythemia vera",
+        "isCorrect": false,
+        "rationale": "Polycythemia vera produces erythrocytosis and panmyelosis. The stated absence of erythrocytosis and isolated megakaryocytic pattern oppose that diagnosis."
+      },
+      {
+        "text": "Essential thrombocythemia",
+        "isCorrect": true,
+        "rationale": "Marked thrombocytosis, large megakaryocytes, erythromelalgia, absent fibrosis, and absent BCR::ABL1 support essential thrombocythemia."
+      },
+      {
+        "text": "Primary myelofibrosis",
+        "isCorrect": false,
+        "rationale": "Primary myelofibrosis would show marrow fibrosis, leukoerythroblastosis, teardrop erythrocytes, and often a dry tap."
+      },
+      {
+        "text": "Myelodysplastic syndrome",
+        "isCorrect": false,
+        "rationale": "MDS produces ineffective hematopoiesis, dysplasia, and peripheral cytopenias rather than isolated proliferative thrombocytosis."
+      }
+    ]
+  },
+  {
+    "question": "A 66-year-old man has fatigue, weight loss, massive splenomegaly, and anemia. The smear shows nucleated erythrocytes, teardrop cells, and immature granulocytes. Which marrow procedure result is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Hypercellular aspirate with panmyelosis",
+        "isCorrect": false,
+        "rationale": "Panmyelosis supports polycythemia vera. The leukoerythroblastic smear and teardrop cells instead indicate marrow fibrosis."
+      },
+      {
+        "text": "Hypercellular aspirate with granulocytosis",
+        "isCorrect": false,
+        "rationale": "Granulocytic hyperplasia is associated with chronic myeloid leukemia. It does not explain the characteristic teardrop cells and failed aspiration."
+      },
+      {
+        "text": "Cellular aspirate with sideroblasts",
+        "isCorrect": false,
+        "rationale": "Ring sideroblasts support erythroid dysplasia in MDS. They would not account for massive splenomegaly with a leukoerythroblastic smear."
+      },
+      {
+        "text": "Dry tap with fibrosis",
+        "isCorrect": true,
+        "rationale": "Primary myelofibrosis produces connective tissue deposition that prevents successful aspiration and causes a dry tap."
+      },
+      {
+        "text": "Normal aspirate with megakaryocytes",
+        "isCorrect": false,
+        "rationale": "A normal aspirate is incompatible with the extensive fibrosis implied by leukoerythroblastosis and teardrop erythrocytes."
+      }
+    ]
+  },
+  {
+    "question": "A 54-year-old woman has platelet count 1,620,000/mm3 [150,000-400,000/mm3] and recurrent epistaxis. A clonal megakaryocytic disorder has been established. Which complication best explains the bleeding?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Acquired von Willebrand syndrome",
+        "isCorrect": false,
+        "rationale": "This is the correct underlying concept, but the source specifically links extreme platelet counts to acquired von Willebrand syndrome as a platelet-count-associated bleeding complication; a more complete selection below states that relationship."
+      },
+      {
+        "text": "Abnormal platelet function alone",
+        "isCorrect": false,
+        "rationale": "Abnormal platelet function explains bleeding in untreated polycythemia vera. Extreme thrombocytosis in essential thrombocythemia has a more specific acquired mechanism."
+      },
+      {
+        "text": "Marrow failure causing thrombocytopenia",
+        "isCorrect": false,
+        "rationale": "The platelet count is profoundly elevated rather than reduced. Marrow failure would fit bleeding accompanied by thrombocytopenia."
+      },
+      {
+        "text": "Accelerated-phase platelet consumption",
+        "isCorrect": false,
+        "rationale": "An accelerated phase is described for chronic myeloid leukemia and may include thrombocytopenia. It does not explain bleeding during extreme thrombocytosis."
+      },
+      {
+        "text": "Extreme-count acquired von Willebrand syndrome",
+        "isCorrect": true,
+        "rationale": "Essential thrombocythemia with platelets above approximately 1-1.5 million/mm3 can cause acquired von Willebrand syndrome and paradoxical hemorrhage."
+      }
+    ]
+  },
+  {
+    "question": "A 52-year-old woman with a platelet-predominant clonal neoplasm has a prior thrombotic event and a JAK2 mutation. Platelet count is 780,000/mm3 [150,000-400,000/mm3]. Which treatment is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Aspirin plus hydroxyurea",
+        "isCorrect": true,
+        "rationale": "Prior thrombosis and a JAK2 mutation establish high thrombotic risk, for which aspirin plus hydroxyurea is the listed treatment."
+      },
+      {
+        "text": "Observation without drug therapy",
+        "isCorrect": false,
+        "rationale": "Observation is reserved for low-risk disease. Prior thrombosis and a JAK2 mutation place this patient in the high-risk group."
+      },
+      {
+        "text": "Phlebotomy plus low-dose aspirin",
+        "isCorrect": false,
+        "rationale": "Phlebotomy is used to control hematocrit in polycythemia vera. The stated disorder is platelet-predominant without erythrocytosis."
+      },
+      {
+        "text": "Ruxolitinib plus supportive transfusions",
+        "isCorrect": false,
+        "rationale": "Ruxolitinib and transfusions are used for symptoms and anemia in primary myelofibrosis. They are not the high-risk regimen for this disorder."
+      },
+      {
+        "text": "Immediate allogeneic stem cell transplantation",
+        "isCorrect": false,
+        "rationale": "Transplantation is reserved after transformation to myelofibrosis or acute myeloid leukemia. No such transformation is present."
+      }
+    ]
+  },
+  {
+    "question": "A 60-year-old man with erythrocytosis receives a cytoreductive drug that lowers erythrocytes, platelets, and leukocytes by limiting deoxyribonucleotide production. Which cellular target is inhibited?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "JAK1/2 tyrosine kinase",
+        "isCorrect": false,
+        "rationale": "Ruxolitinib inhibits JAK1/2 signaling. It does not lower deoxyribonucleotide production through the enzyme described."
+      },
+      {
+        "text": "BCR::ABL1 tyrosine kinase",
+        "isCorrect": false,
+        "rationale": "Imatinib-class therapy inhibits the fusion kinase in chronic myeloid leukemia. It does not act through depletion of deoxyribonucleotides."
+      },
+      {
+        "text": "Megakaryocyte maturation pathway",
+        "isCorrect": false,
+        "rationale": "Anagrelide inhibits platelet maturation from megakaryocytes. It does not suppress all three myeloid elements through reduced DNA synthesis."
+      },
+      {
+        "text": "DNA methylation pathway",
+        "isCorrect": false,
+        "rationale": "Azacitidine and decitabine are hypomethylating agents used in MDS. The described cytoreductive mechanism is direct inhibition of nucleotide synthesis."
+      },
+      {
+        "text": "Ribonucleotide reductase enzyme",
+        "isCorrect": true,
+        "rationale": "Hydroxyurea inhibits ribonucleotide reductase, decreasing deoxyribonucleotides and DNA synthesis across erythroid, granulocytic, and megakaryocytic lineages."
+      }
+    ]
+  },
+  {
+    "question": "A 74-year-old man has weakness and recurrent infections. Hemoglobin is 8.2 g/dL [13.5-17.5 g/dL], and neutrophils are 900/mm3 [1,500-8,000/mm3]. Marrow is hypercellular with dysplastic maturation and 12% blasts. Which diagnostic change occurs if blasts reach 20%?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the presentation, etiology, and pathological findings in myelodysplastic syndromes (MDS)",
+    "options": [
+      {
+        "text": "Diagnosis becomes chronic myeloid leukemia",
+        "isCorrect": false,
+        "rationale": "Chronic myeloid leukemia is defined by BCR::ABL1 rather than a 20% blast threshold."
+      },
+      {
+        "text": "Diagnosis becomes acute myeloid leukemia",
+        "isCorrect": true,
+        "rationale": "MDS permits myeloblasts below 20%; reaching at least 20% establishes acute myeloid leukemia."
+      },
+      {
+        "text": "Diagnosis becomes essential thrombocythemia",
+        "isCorrect": false,
+        "rationale": "Essential thrombocythemia is a platelet-predominant myeloproliferative neoplasm, not the consequence of increasing blasts."
+      },
+      {
+        "text": "Diagnosis becomes primary myelofibrosis",
+        "isCorrect": false,
+        "rationale": "Primary myelofibrosis requires reactive marrow fibrosis and extramedullary hematopoiesis. Blast percentage alone does not establish it."
+      },
+      {
+        "text": "Diagnosis becomes polycythemia vera",
+        "isCorrect": false,
+        "rationale": "Polycythemia vera is driven by erythrocytosis and JAK2 signaling. Increasing blasts in a dysplastic marrow does not produce that diagnosis."
+      }
+    ]
+  },
+  {
+    "question": "A 70-year-old woman has macrocytic anemia and thrombocytopenia. Marrow examination shows iron-laden perinuclear mitochondria in erythroid precursors and few blasts. Which prognostic interpretation is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the presentation, etiology, and pathological findings in myelodysplastic syndromes (MDS)",
+    "options": [
+      {
+        "text": "Poorer prognosis from marrow fibrosis",
+        "isCorrect": false,
+        "rationale": "The finding represents ring sideroblasts rather than marrow fibrosis. Fibrosis would produce a different pathologic pattern."
+      },
+      {
+        "text": "Poorer prognosis from excess blasts",
+        "isCorrect": false,
+        "rationale": "The stem specifies few blasts. Excess blasts would worsen prognosis but are not represented by iron-laden mitochondria."
+      },
+      {
+        "text": "Better prognosis in lower-grade disease",
+        "isCorrect": true,
+        "rationale": "Ring sideroblasts are associated with a better prognosis when present in lower-grade MDS."
+      },
+      {
+        "text": "Immediate conversion to acute leukemia",
+        "isCorrect": false,
+        "rationale": "Conversion to acute myeloid leukemia requires at least 20% blasts. Ring sideroblasts do not independently establish transformation."
+      },
+      {
+        "text": "High-risk therapy-related disease",
+        "isCorrect": false,
+        "rationale": "Therapy-related MDS requires preceding genotoxic drugs or radiation and carries rapid transformation risk. Ring sideroblasts alone do not establish that etiology."
+      }
+    ]
+  },
+  {
+    "question": "A 69-year-old man has night sweats, weight loss, massive splenomegaly, anemia, and a fibrotic marrow. Which drug mechanism is expected to reduce both splenic enlargement and constitutional symptoms?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Inhibition of ribonucleotide reductase",
+        "isCorrect": false,
+        "rationale": "Hydroxyurea can reduce splenomegaly through cytoreduction, but the treatment specifically listed to improve both splenomegaly and constitutional symptoms inhibits JAK signaling."
+      },
+      {
+        "text": "Inhibition of platelet maturation",
+        "isCorrect": false,
+        "rationale": "Anagrelide inhibits platelet maturation in essential thrombocythemia. It does not address the symptom complex of primary myelofibrosis."
+      },
+      {
+        "text": "Inhibition of BCR::ABL1 kinase",
+        "isCorrect": false,
+        "rationale": "This mechanism treats chronic myeloid leukemia. The fibrotic marrow and extramedullary hematopoiesis indicate a different neoplasm."
+      },
+      {
+        "text": "Inhibition of JAK1/2 signaling",
+        "isCorrect": true,
+        "rationale": "Ruxolitinib inhibits JAK1/2 and reduces splenomegaly and constitutional symptoms in primary myelofibrosis."
+      },
+      {
+        "text": "Inhibition of DNA methylation",
+        "isCorrect": false,
+        "rationale": "Hypomethylating drugs treat MDS. They are not the listed therapy for symptomatic splenomegaly and constitutional manifestations of primary myelofibrosis."
+      }
+    ]
+  },
+  {
+    "question": "A 68-year-old man has leukocyte count 74,000/mm3 [4,500-11,000/mm3] during severe infection. The smear shows a left shift, toxic granulation, and Döhle bodies without basophilia. Which additional result is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Detected Philadelphia chromosome",
+        "isCorrect": false,
+        "rationale": "The Philadelphia chromosome supports chronic myeloid leukemia. The reactive morphology and absence of basophilia instead support a leukemoid reaction."
+      },
+      {
+        "text": "Detected BCR::ABL1 fusion",
+        "isCorrect": false,
+        "rationale": "BCR::ABL1 is absent in leukemoid reactions. Its presence would change the diagnosis to chronic myeloid leukemia."
+      },
+      {
+        "text": "Reduced leukocyte alkaline phosphatase",
+        "isCorrect": false,
+        "rationale": "A low LAP score supports chronic myeloid leukemia. Reactive neutrophils in a leukemoid reaction have a high score."
+      },
+      {
+        "text": "Marked persistent splenomegaly",
+        "isCorrect": false,
+        "rationale": "Marked splenomegaly supports chronic myeloid leukemia. It is usually absent in a leukemoid reaction."
+      },
+      {
+        "text": "Elevated leukocyte alkaline phosphatase",
+        "isCorrect": true,
+        "rationale": "Severe infection, toxic granulation, Döhle bodies, and absent basophilia indicate a leukemoid reaction, which has a high LAP score."
+      }
+    ]
+  },
+  {
+    "question": "A 59-year-old man with autonomous erythrocyte production develops early satiety and left upper quadrant fullness. Which process most directly accounts for the abdominal finding?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Splenic extramedullary hematopoiesis",
+        "isCorrect": true,
+        "rationale": "Polycythemia vera commonly causes splenomegaly, producing early satiety and left upper quadrant discomfort; the source associates splenic enlargement with extramedullary hematopoiesis."
+      },
+      {
+        "text": "Hepatic vein platelet occlusion",
+        "isCorrect": false,
+        "rationale": "Hepatic vein thrombosis produces Budd-Chiari syndrome rather than isolated splenic enlargement with early satiety."
+      },
+      {
+        "text": "Peripheral blood deoxygenation",
+        "isCorrect": false,
+        "rationale": "Peripheral stagnation and deoxygenation cause plethora and cyanosis. They do not directly produce left upper quadrant fullness."
+      },
+      {
+        "text": "Basophil histamine release",
+        "isCorrect": false,
+        "rationale": "Histamine release produces aquagenic pruritus. It does not directly explain splenic enlargement."
+      },
+      {
+        "text": "Urate crystal joint deposition",
+        "isCorrect": false,
+        "rationale": "Increased cell turnover may cause hyperuricemia and gout. This would present with a painful swollen joint rather than early satiety."
+      }
+    ]
+  },
+  {
+    "question": "A 73-year-old woman previously treated with genotoxic therapy develops persistent cytopenias. Marrow is hypercellular with dysplasia in three myeloid lineages and 8% blasts. Which feature most strongly predicts an adverse course?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the presentation, etiology, and pathological findings in myelodysplastic syndromes (MDS)",
+    "options": [
+      {
+        "text": "Presence of ring sideroblasts",
+        "isCorrect": false,
+        "rationale": "Ring sideroblasts are associated with better prognosis in lower-grade MDS. They would not explain the adverse course."
+      },
+      {
+        "text": "Multilineage dysplasia with excess blasts",
+        "isCorrect": true,
+        "rationale": "Prognosis worsens as more lineages become dysplastic and the blast percentage increases."
+      },
+      {
+        "text": "Hypercellularity with peripheral cytopenias",
+        "isCorrect": false,
+        "rationale": "This combination is characteristic of ineffective hematopoiesis in MDS but does not provide the strongest adverse stratification among these choices."
+      },
+      {
+        "text": "Incidental detection by blood testing",
+        "isCorrect": false,
+        "rationale": "Incidental detection occurs in approximately half of cases. It does not itself indicate a worse prognosis."
+      },
+      {
+        "text": "Macrocytic anemia with neutropenia",
+        "isCorrect": false,
+        "rationale": "These cytopenias result from ineffective hematopoiesis. The more adverse findings are multilineage dysplasia and increased blasts."
+      }
+    ]
+  },
+  {
+    "question": "A 56-year-old woman with a platelet-predominant neoplasm has a count of 1,700,000/mm3 [150,000-400,000/mm3] and active mucosal bleeding. Which management option can rapidly lower the platelet burden?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Immediate low-dose aspirin",
+        "isCorrect": false,
+        "rationale": "At counts above 1-1.5 million/mm3, aspirin can worsen bleeding associated with acquired von Willebrand syndrome."
+      },
+      {
+        "text": "Serial therapeutic phlebotomy",
+        "isCorrect": false,
+        "rationale": "Phlebotomy lowers hematocrit in polycythemia vera. It does not rapidly remove circulating platelets."
+      },
+      {
+        "text": "Emergency plateletpheresis",
+        "isCorrect": true,
+        "rationale": "Emergency plateletpheresis directly removes circulating platelets and provides rapid reduction of an extreme platelet count."
+      },
+      {
+        "text": "Immediate erythrocyte transfusion",
+        "isCorrect": false,
+        "rationale": "Erythrocyte transfusion does not reduce platelets and is reserved for clinically significant anemia."
+      },
+      {
+        "text": "Immediate splenic radiation",
+        "isCorrect": false,
+        "rationale": "Radiation treats extramedullary hematopoiesis in primary myelofibrosis. It does not provide rapid control of extreme thrombocytosis."
+      }
+    ]
+  },
+  {
+    "question": "A 67-year-old man with longstanding erythrocytosis later develops anemia, prominent organomegaly, and extensive marrow fibrosis. Which disease phase best explains this transition?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the clinical features, laboratory findings, and treatment options for these myeloproliferative neoplasms",
+    "options": [
+      {
+        "text": "Chronic myeloid accelerated phase",
+        "isCorrect": false,
+        "rationale": "The accelerated phase of chronic myeloid leukemia features worsening anemia, thrombocytopenia, and sometimes basophilia before blast crisis. It does not follow longstanding erythrocytosis."
+      },
+      {
+        "text": "Essential thrombocythemia vascular phase",
+        "isCorrect": false,
+        "rationale": "Essential thrombocythemia produces platelet-mediated thrombosis or hemorrhage. A prior erythrocytosis followed by fibrosis indicates a different evolution."
+      },
+      {
+        "text": "Primary myelofibrosis prefibrotic phase",
+        "isCorrect": false,
+        "rationale": "The prefibrotic phase precedes overt fibrosis. This patient already has extensive fibrosis after a prior erythrocytotic disorder."
+      },
+      {
+        "text": "Polycythemia vera spent phase",
+        "isCorrect": true,
+        "rationale": "The spent phase of polycythemia vera develops after years of disease and features extensive marrow fibrosis, extramedullary hematopoiesis, and organomegaly."
+      },
+      {
+        "text": "Myelodysplastic leukemic transformation",
+        "isCorrect": false,
+        "rationale": "MDS transformation is defined by at least 20% blasts. The stem instead describes post-polycythemic fibrosis and organomegaly."
+      }
+    ]
+  },
+  {
+    "question": "A 72-year-old man has pancytopenia and a hypercellular marrow containing bilobed neutrophils, abnormal megakaryocyte nuclei, and erythroid nuclear budding. Which unifying mechanism best explains the peripheral counts?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe the presentation, etiology, and pathological findings in myelodysplastic syndromes (MDS)",
+    "options": [
+      {
+        "text": "Constitutive multilineage growth signaling",
+        "isCorrect": false,
+        "rationale": "Constitutive growth signaling in myeloproliferative neoplasms increases mature blood elements. It does not explain dysplasia with peripheral pancytopenia."
+      },
+      {
+        "text": "Reactive connective tissue deposition",
+        "isCorrect": false,
+        "rationale": "Reactive fibrosis in primary myelofibrosis causes a dry tap and leukoerythroblastosis. The listed dysplastic forms instead indicate defective maturation."
+      },
+      {
+        "text": "Ineffective nonlymphoid hematopoiesis",
+        "isCorrect": false,
+        "rationale": "This is the correct general mechanism, but the more specific choice below incorporates the failure of dysplastic marrow cells to reach the circulation."
+      },
+      {
+        "text": "Selective megakaryocytic cell proliferation",
+        "isCorrect": false,
+        "rationale": "Selective megakaryocytic proliferation would produce thrombocytosis, as in essential thrombocythemia, rather than pancytopenia."
+      },
+      {
+        "text": "Ineffective maturation with failed release",
+        "isCorrect": true,
+        "rationale": "MDS causes ineffective hematopoiesis with maturation defects, so a hypercellular marrow fails to deliver adequate mature cells to peripheral blood."
+      }
+    ]
+  }
+]
