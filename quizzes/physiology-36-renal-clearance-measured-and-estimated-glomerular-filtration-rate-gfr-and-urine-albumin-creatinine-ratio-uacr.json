@@ -1,0 +1,994 @@
+[
+  {
+    "question": "Which expression calculates the virtual plasma volume cleared of a substance per unit time?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define renal clearance, explain how to calculate it, and give examples of substances that have high or low clearance.",
+    "options": [
+      {
+        "text": "Urine concentration times flow divided by plasma concentration",
+        "isCorrect": true,
+        "rationale": "Renal clearance equals the urinary excretion rate, Ux × V, divided by the plasma concentration, Px."
+      },
+      {
+        "text": "Plasma concentration times flow divided by urine concentration",
+        "isCorrect": false,
+        "rationale": "This reverses the plasma and urine concentrations. It would be correct only if Ux and Px exchanged positions."
+      },
+      {
+        "text": "Urine concentration divided by plasma concentration and flow",
+        "isCorrect": false,
+        "rationale": "Urine flow must multiply urine concentration to produce an excretion rate. Division by flow does not calculate clearance."
+      },
+      {
+        "text": "Plasma concentration divided by urine concentration and flow",
+        "isCorrect": false,
+        "rationale": "This expression neither calculates urinary excretion nor divides that excretion rate by plasma concentration."
+      },
+      {
+        "text": "Urine flow divided by both measured marker concentrations",
+        "isCorrect": false,
+        "rationale": "Flow alone must not be divided by both concentrations. Clearance requires Ux × V in the numerator."
+      }
+    ]
+  },
+  {
+    "question": "A substance is freely filtered and undergoes neither tubular uptake nor tubular addition. Which relationship is expected?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Determine characteristics of a substance that can be used to measure glomerular filtration rate (GFR). Explain why this is not routinely used in the clinic.",
+    "options": [
+      {
+        "text": "Clearance equals renal plasma flow",
+        "isCorrect": false,
+        "rationale": "Clearance approaches renal plasma flow for a predominantly secreted marker such as PAH, not for a filtration-only marker."
+      },
+      {
+        "text": "Clearance exceeds urinary excretion rate",
+        "isCorrect": false,
+        "rationale": "Clearance is a volume per time, whereas urinary excretion is an amount per time; these are not equivalent quantities."
+      },
+      {
+        "text": "Clearance equals glomerular filtration rate",
+        "isCorrect": true,
+        "rationale": "Without reabsorption or secretion, filtered load equals urinary excretion rate, so marker clearance equals GFR."
+      },
+      {
+        "text": "Clearance falls below filtration rate",
+        "isCorrect": false,
+        "rationale": "Clearance below GFR indicates net reabsorption. That tubular process is excluded by the stem."
+      },
+      {
+        "text": "Clearance rises above filtration rate",
+        "isCorrect": false,
+        "rationale": "Clearance above GFR indicates net secretion. That tubular process is excluded by the stem."
+      }
+    ]
+  },
+  {
+    "question": "Which endogenous marker is least dependent on skeletal muscle mass?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Distinguish the utility of creatinine and cystatin C serum concentrations in estimating GFR. Elaborate on why GFR is estimated instead of measured in clinic and what equation is currently used for estimating GFR.",
+    "options": [
+      {
+        "text": "Plasma creatine concentration",
+        "isCorrect": false,
+        "rationale": "Creatine is the precursor of creatinine and participates in muscle energy metabolism. The stated muscle-independent filtration marker is cystatin C."
+      },
+      {
+        "text": "Blood urea nitrogen",
+        "isCorrect": false,
+        "rationale": "BUN is influenced by protein intake, protein synthesis, and hydration status, limiting its reliability as a clearance marker."
+      },
+      {
+        "text": "Serum creatinine concentration",
+        "isCorrect": false,
+        "rationale": "Creatinine production occurs predominantly in muscle, so its serum concentration is influenced by muscle mass."
+      },
+      {
+        "text": "Plasma phosphocreatine concentration",
+        "isCorrect": false,
+        "rationale": "Phosphocreatine is produced in skeletal muscle and brain and is not identified as the preferred muscle-independent marker."
+      },
+      {
+        "text": "Serum cystatin C",
+        "isCorrect": true,
+        "rationale": "Cystatin C does not depend on muscle mass, making it useful when creatinine-based estimates may be confounded."
+      }
+    ]
+  },
+  {
+    "question": "Which spot urine result represents moderately increased albumin excretion?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Correlate estimated GFR and urine albumin creatinine ratio and delineate how they are used for evaluation of kidney function and for chronic kidney disease risk stratification.",
+    "options": [
+      {
+        "text": "ACR below 15 mg/g",
+        "isCorrect": false,
+        "rationale": "This value is below the 30 mg/g threshold for moderately increased albuminuria."
+      },
+      {
+        "text": "ACR from 30-300 mg/g",
+        "isCorrect": true,
+        "rationale": "An ACR of 30-300 mg/g defines moderately increased albuminuria, historically called microalbuminuria."
+      },
+      {
+        "text": "ACR from 5-25 mg/g",
+        "isCorrect": false,
+        "rationale": "This range remains below the threshold for moderately increased albumin excretion."
+      },
+      {
+        "text": "ACR above 500 mg/g",
+        "isCorrect": false,
+        "rationale": "An ACR above 300 mg/g represents severely increased rather than moderately increased albuminuria."
+      },
+      {
+        "text": "ACR from 10-20 mg/g",
+        "isCorrect": false,
+        "rationale": "This range is below 30 mg/g and therefore does not meet the stated moderately increased category."
+      }
+    ]
+  },
+  {
+    "question": "A marker has a urine concentration of 10 mg/mL, plasma concentration of 0.25 mg/mL, and urine flow of 1 mL/min. Which clearance is calculated?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define renal clearance, explain how to calculate it, and give examples of substances that have high or low clearance.",
+    "options": [
+      {
+        "text": "Ten milliliters per minute",
+        "isCorrect": false,
+        "rationale": "This results from failing to divide the urinary excretion rate by the plasma concentration correctly."
+      },
+      {
+        "text": "Twenty milliliters per minute",
+        "isCorrect": false,
+        "rationale": "The provided values do not produce 20 mL/min when entered into Cx = Ux × V/Px."
+      },
+      {
+        "text": "Twenty-five milliliters per minute",
+        "isCorrect": false,
+        "rationale": "This value incorrectly handles the 0.25 mg/mL plasma concentration."
+      },
+      {
+        "text": "Forty milliliters per minute",
+        "isCorrect": true,
+        "rationale": "Clearance is 10 mg/mL × 1 mL/min divided by 0.25 mg/mL, which equals 40 mL/min."
+      },
+      {
+        "text": "One hundred milliliters per minute",
+        "isCorrect": false,
+        "rationale": "This exceeds the calculated value because the concentration ratio is 40, not 100."
+      }
+    ]
+  },
+  {
+    "question": "A solute has clearance substantially below that of a filtration-only marker. Which renal handling process best explains this result?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Define renal clearance, explain how to calculate it, and give examples of substances that have high or low clearance.",
+    "options": [
+      {
+        "text": "Net tubular reabsorption",
+        "isCorrect": true,
+        "rationale": "Reabsorption returns filtered solute to plasma, reducing urinary excretion and producing clearance below GFR."
+      },
+      {
+        "text": "Net tubular secretion",
+        "isCorrect": false,
+        "rationale": "Secretion adds solute to tubular fluid and raises clearance above GFR rather than below it."
+      },
+      {
+        "text": "Filtration without transport",
+        "isCorrect": false,
+        "rationale": "Filtration without reabsorption or secretion produces clearance equal to GFR."
+      },
+      {
+        "text": "Complete peritubular extraction",
+        "isCorrect": false,
+        "rationale": "Predominant extraction from peritubular plasma characterizes a high-clearance secreted marker such as PAH."
+      },
+      {
+        "text": "Increased tubular secretion capacity",
+        "isCorrect": false,
+        "rationale": "Greater secretory capacity would increase urinary excretion and clearance, producing the opposite relationship."
+      }
+    ]
+  },
+  {
+    "question": "A substance is removed from peritubular capillary blood and delivered into tubular fluid. Its clearance approaches 700 mL/min. Which quantity does its clearance best approximate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Describe characteristics of a substance that can be used to measure renal blood flow.",
+    "options": [
+      {
+        "text": "Urinary albumin excretion",
+        "isCorrect": false,
+        "rationale": "Albumin excretion evaluates kidney damage and does not represent the plasma delivered to secretory tubules."
+      },
+      {
+        "text": "Glomerular filtration rate",
+        "isCorrect": false,
+        "rationale": "A filtration-only marker has clearance near 120 mL/min. Predominant secretion produces a much higher clearance."
+      },
+      {
+        "text": "Renal plasma flow",
+        "isCorrect": true,
+        "rationale": "PAH-like extraction and secretion remove most delivered marker from renal plasma, so clearance provides a measure of renal plasma flow."
+      },
+      {
+        "text": "Creatinine production rate",
+        "isCorrect": false,
+        "rationale": "Creatinine production is related to muscle mass and does not account for a clearance approaching 700 mL/min."
+      },
+      {
+        "text": "Tubular reabsorption rate",
+        "isCorrect": false,
+        "rationale": "Reabsorption lowers urinary excretion and clearance. The described movement is secretion from capillary blood into tubular fluid."
+      }
+    ]
+  },
+  {
+    "question": "An exogenous marker is freely filtered but also returned from tubular fluid to blood. How will its clearance compare with the true filtration rate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Determine characteristics of a substance that can be used to measure glomerular filtration rate (GFR). Explain why this is not routinely used in the clinic.",
+    "options": [
+      {
+        "text": "It will equal renal plasma flow",
+        "isCorrect": false,
+        "rationale": "Renal plasma flow is approximated by a predominantly secreted marker, not a reabsorbed filtration marker."
+      },
+      {
+        "text": "It will equal urinary flow rate",
+        "isCorrect": false,
+        "rationale": "Urine flow is one component of the clearance equation and is not itself the marker clearance."
+      },
+      {
+        "text": "It will exceed the filtration rate",
+        "isCorrect": false,
+        "rationale": "Clearance exceeds GFR when net secretion adds marker to tubular fluid. The stem specifies the opposite process."
+      },
+      {
+        "text": "It will equal the filtration rate",
+        "isCorrect": false,
+        "rationale": "Equality requires no tubular reabsorption or secretion. Reabsorption violates an essential ideal-marker criterion."
+      },
+      {
+        "text": "It will underestimate the filtration rate",
+        "isCorrect": true,
+        "rationale": "Reabsorption makes urinary excretion lower than filtered load, so calculated clearance underestimates GFR."
+      }
+    ]
+  },
+  {
+    "question": "A marker's filtered load is 12 mg/min, and its urinary excretion rate is also 12 mg/min. Which interpretation is most appropriate?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Determine characteristics of a substance that can be used to measure glomerular filtration rate (GFR). Explain why this is not routinely used in the clinic.",
+    "options": [
+      {
+        "text": "The marker undergoes complete reabsorption",
+        "isCorrect": false,
+        "rationale": "Complete reabsorption would reduce urinary excretion to approximately zero rather than preserve equality with filtered load."
+      },
+      {
+        "text": "The marker undergoes predominant secretion",
+        "isCorrect": false,
+        "rationale": "Predominant secretion would make urinary excretion exceed filtered load."
+      },
+      {
+        "text": "The marker measures renal plasma flow",
+        "isCorrect": false,
+        "rationale": "A renal plasma flow marker is predominantly secreted and has excretion exceeding its filtered load."
+      },
+      {
+        "text": "The marker satisfies filtration balance",
+        "isCorrect": true,
+        "rationale": "Equality of filtered load and urinary excretion indicates filtration without net reabsorption or secretion."
+      },
+      {
+        "text": "The marker has negligible filtration",
+        "isCorrect": false,
+        "rationale": "A filtered load of 12 mg/min is not negligible, and equal urinary excretion supports filtration balance."
+      }
+    ]
+  },
+  {
+    "question": "Measured filtration studies require marker administration, hydration, and multiple timed urine collections. Which consequence most directly explains routine reliance on estimated values?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Distinguish the utility of creatinine and cystatin C serum concentrations in estimating GFR. Elaborate on why GFR is estimated instead of measured in clinic and what equation is currently used for estimating GFR.",
+    "options": [
+      {
+        "text": "Direct measurement is clinically cumbersome",
+        "isCorrect": true,
+        "rationale": "Measured GFR protocols are complex, time consuming, and cumbersome, so endogenous serum markers are used routinely for estimation."
+      },
+      {
+        "text": "Exogenous markers undergo complete reabsorption",
+        "isCorrect": false,
+        "rationale": "Ideal exogenous markers are selected because they are not reabsorbed. Reabsorption would invalidate the measurement."
+      },
+      {
+        "text": "Serum markers cannot reflect filtration",
+        "isCorrect": false,
+        "rationale": "Creatinine and cystatin C concentrations are specifically used to estimate filtration in clinical practice."
+      },
+      {
+        "text": "Urinary clearance cannot measure filtration",
+        "isCorrect": false,
+        "rationale": "Clearance of an ideal filtration marker can accurately measure GFR; the limitation is practical complexity."
+      },
+      {
+        "text": "Filtration markers are predominantly secreted",
+        "isCorrect": false,
+        "rationale": "An ideal filtration marker is neither secreted nor reabsorbed. Predominant secretion instead supports plasma-flow measurement."
+      }
+    ]
+  },
+  {
+    "question": "Two individuals have identical filtration function but markedly different skeletal muscle mass. Which marker is more likely to differ because of this contrast?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Distinguish the utility of creatinine and cystatin C serum concentrations in estimating GFR. Elaborate on why GFR is estimated instead of measured in clinic and what equation is currently used for estimating GFR.",
+    "options": [
+      {
+        "text": "Urinary albumin concentration",
+        "isCorrect": false,
+        "rationale": "Urinary albumin is used as a marker of kidney damage, not as the stated muscle-mass-dependent filtration marker."
+      },
+      {
+        "text": "Serum creatinine concentration",
+        "isCorrect": true,
+        "rationale": "Most creatinine is produced in muscle, so different muscle mass can alter serum creatinine despite identical filtration."
+      },
+      {
+        "text": "Serum cystatin C concentration",
+        "isCorrect": false,
+        "rationale": "Cystatin C does not depend on muscle mass, although it has other non-GFR determinants."
+      },
+      {
+        "text": "Urinary iothalamate concentration",
+        "isCorrect": false,
+        "rationale": "Iothalamate is an administered exogenous filtration marker rather than a product generated according to muscle mass."
+      },
+      {
+        "text": "Urinary EDTA concentration",
+        "isCorrect": false,
+        "rationale": "EDTA is used as an exogenous filtration marker and is not described as being produced by skeletal muscle."
+      }
+    ]
+  },
+  {
+    "question": "Which combination provides the optimal equation-based confirmation when both endogenous marker measurements are available?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Distinguish the utility of creatinine and cystatin C serum concentrations in estimating GFR. Elaborate on why GFR is estimated instead of measured in clinic and what equation is currently used for estimating GFR.",
+    "options": [
+      {
+        "text": "BUN plus urinary albumin",
+        "isCorrect": false,
+        "rationale": "BUN is confounded by diet and hydration, while urinary albumin indicates damage rather than serving in the stated confirming equation."
+      },
+      {
+        "text": "Creatinine plus urinary albumin",
+        "isCorrect": false,
+        "rationale": "Albuminuria complements eGFR for risk assessment but is not the second serum marker in the combined equation."
+      },
+      {
+        "text": "Cystatin C plus BUN",
+        "isCorrect": false,
+        "rationale": "BUN is not part of the stated CKD-EPI combined-marker confirmation method."
+      },
+      {
+        "text": "Creatinine plus cystatin C",
+        "isCorrect": true,
+        "rationale": "The 2021 CKD-EPI creatinine-cystatin C equation is the optimal equation-based confirmation when both measurements are available."
+      },
+      {
+        "text": "Creatinine plus plasma PAH",
+        "isCorrect": false,
+        "rationale": "PAH clearance is used to measure renal plasma flow, not as an endogenous component of the confirming eGFR equation."
+      }
+    ]
+  },
+  {
+    "question": "A spot sample contains urinary albumin of 60 mg and urinary creatinine of 1 g. Which category applies?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Correlate estimated GFR and urine albumin creatinine ratio and delineate how they are used for evaluation of kidney function and for chronic kidney disease risk stratification.",
+    "options": [
+      {
+        "text": "Normal albumin excretion",
+        "isCorrect": false,
+        "rationale": "The calculated ACR is 60 mg/g, which exceeds the 30 mg/g threshold."
+      },
+      {
+        "text": "Negligible albumin excretion",
+        "isCorrect": false,
+        "rationale": "An ACR of 60 mg/g is not negligible and falls within the moderately increased category."
+      },
+      {
+        "text": "Severely increased albuminuria",
+        "isCorrect": false,
+        "rationale": "Severely increased albuminuria requires an ACR above 300 mg/g."
+      },
+      {
+        "text": "Isolated filtration reduction",
+        "isCorrect": false,
+        "rationale": "The sample calculates albumin excretion relative to creatinine and does not independently establish a reduced eGFR."
+      },
+      {
+        "text": "Moderately increased albuminuria",
+        "isCorrect": true,
+        "rationale": "ACR equals 60 mg/g, placing the result within the 30-300 mg/g moderately increased range."
+      }
+    ]
+  },
+  {
+    "question": "Two patients have the same estimated filtration value. One has an ACR of 15 mg/g and the other has an ACR of 450 mg/g. Which patient-level distinction is supported?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Correlate estimated GFR and urine albumin creatinine ratio and delineate how they are used for evaluation of kidney function and for chronic kidney disease risk stratification.",
+    "options": [
+      {
+        "text": "The second has greater progression risk",
+        "isCorrect": true,
+        "rationale": "Severely increased albuminuria is associated with faster CKD progression and declining GFR, even when current eGFR values match."
+      },
+      {
+        "text": "The first has greater progression risk",
+        "isCorrect": false,
+        "rationale": "An ACR of 15 mg/g is below the increased-albuminuria threshold, whereas 450 mg/g is severely increased."
+      },
+      {
+        "text": "Both have identical progression risk",
+        "isCorrect": false,
+        "rationale": "Risk stratification uses the combination of eGFR and uACR, so differing albuminuria changes predicted risk."
+      },
+      {
+        "text": "Neither has measurable kidney damage",
+        "isCorrect": false,
+        "rationale": "An ACR of 450 mg/g represents a marked kidney-damage marker if persistent."
+      },
+      {
+        "text": "The second has lower albumin excretion",
+        "isCorrect": false,
+        "rationale": "An ACR of 450 mg/g is substantially higher than 15 mg/g and lies above the severe-category threshold."
+      }
+    ]
+  },
+  {
+    "question": "A patient's creatinine-based estimate is 52 mL/min/1.73 m2, with no albuminuria or radiologic abnormality. Which study is preferred for initial confirmation?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Distinguish the utility of creatinine and cystatin C serum concentrations in estimating GFR. Elaborate on why GFR is estimated instead of measured in clinic and what equation is currently used for estimating GFR.",
+    "options": [
+      {
+        "text": "Repeat BUN-based clearance equation",
+        "isCorrect": false,
+        "rationale": "BUN is influenced by diet, protein metabolism, and hydration and is not the recommended confirming equation."
+      },
+      {
+        "text": "Spot albumin-only concentration measurement",
+        "isCorrect": false,
+        "rationale": "Albumin assessment should use ACR, and the stem already establishes absence of albuminuria."
+      },
+      {
+        "text": "Creatinine-cystatin C eGFR equation",
+        "isCorrect": true,
+        "rationale": "A creatinine-based eGFR of 45-60 without other CKD features should first be confirmed using the 2021 combined equation."
+      },
+      {
+        "text": "PAH renal plasma clearance",
+        "isCorrect": false,
+        "rationale": "PAH clearance evaluates renal plasma flow rather than confirming a borderline creatinine-based eGFR."
+      },
+      {
+        "text": "Serial urinary glucose clearance",
+        "isCorrect": false,
+        "rationale": "Glucose undergoes net reabsorption and has near-zero clearance under the described physiologic example, so it cannot confirm GFR."
+      }
+    ]
+  },
+  {
+    "question": "A 79-year-old woman with marked loss of muscle mass has a serum creatinine within its reference range, but kidney dysfunction remains suspected. Which next step best reduces the identified marker bias?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Distinguish the utility of creatinine and cystatin C serum concentrations in estimating GFR. Elaborate on why GFR is estimated instead of measured in clinic and what equation is currently used for estimating GFR.",
+    "options": [
+      {
+        "text": "Order blood urea nitrogen alone",
+        "isCorrect": false,
+        "rationale": "BUN is affected by protein intake, protein synthesis, and hydration, so it does not specifically resolve muscle-mass bias."
+      },
+      {
+        "text": "Accept the creatinine result unchanged",
+        "isCorrect": false,
+        "rationale": "Low muscle mass can keep creatinine deceptively low despite reduced filtration, so the result should not be accepted without confirmation."
+      },
+      {
+        "text": "Measure spot urinary glucose clearance",
+        "isCorrect": false,
+        "rationale": "Glucose has net reabsorption and approximately zero clearance in the example, making it unsuitable for filtration estimation."
+      },
+      {
+        "text": "Order cystatin C and recalculate",
+        "isCorrect": true,
+        "rationale": "Cystatin C is independent of muscle mass, and combining it with creatinine provides a more accurate eGFR estimate."
+      },
+      {
+        "text": "Measure PAH clearance immediately",
+        "isCorrect": false,
+        "rationale": "PAH clearance measures renal plasma flow. It does not directly address confirmation of creatinine-based GFR in sarcopenia."
+      }
+    ]
+  },
+  {
+    "question": "A 34-year-old competitive bodybuilder has an unexpectedly low creatinine-based filtration estimate without albuminuria. Which next step is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Distinguish the utility of creatinine and cystatin C serum concentrations in estimating GFR. Elaborate on why GFR is estimated instead of measured in clinic and what equation is currently used for estimating GFR.",
+    "options": [
+      {
+        "text": "Confirm using the combined-marker equation",
+        "isCorrect": true,
+        "rationale": "High muscle mass is a prominent non-GFR determinant of creatinine, so the combined creatinine-cystatin C equation should be used first."
+      },
+      {
+        "text": "Diagnose kidney disease from creatinine alone",
+        "isCorrect": false,
+        "rationale": "Creatinine may be elevated because of high muscle mass, so an unconfirmed creatinine-based estimate can misrepresent filtration."
+      },
+      {
+        "text": "Confirm using urinary glucose clearance",
+        "isCorrect": false,
+        "rationale": "Glucose is reabsorbed and has near-zero clearance in the stated example, preventing accurate GFR confirmation."
+      },
+      {
+        "text": "Confirm using PAH plasma clearance",
+        "isCorrect": false,
+        "rationale": "PAH clearance approximates renal plasma flow rather than GFR and does not correct creatinine's muscle-mass dependence."
+      },
+      {
+        "text": "Confirm using blood urea nitrogen",
+        "isCorrect": false,
+        "rationale": "BUN has important nonrenal determinants and is not the recommended confirmation method in altered muscle mass."
+      }
+    ]
+  },
+  {
+    "question": "A 48-year-old prospective kidney donor requires formal evaluation of filtration function. Which next step satisfies the stated donor-evaluation approach?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Determine characteristics of a substance that can be used to measure glomerular filtration rate (GFR). Explain why this is not routinely used in the clinic.",
+    "options": [
+      {
+        "text": "Use serum creatinine concentration only",
+        "isCorrect": false,
+        "rationale": "Donor evaluation requires a clearance measurement rather than reliance on serum creatinine alone."
+      },
+      {
+        "text": "Use spot urinary albumin only",
+        "isCorrect": false,
+        "rationale": "Albuminuria evaluates kidney damage but does not fulfill the required clearance measurement for donor GFR evaluation."
+      },
+      {
+        "text": "Use blood urea nitrogen only",
+        "isCorrect": false,
+        "rationale": "BUN is influenced by diet and hydration and is not the required donor clearance measurement."
+      },
+      {
+        "text": "Use PAH clearance measurement",
+        "isCorrect": false,
+        "rationale": "PAH clearance measures renal plasma flow rather than providing the required GFR clearance assessment."
+      },
+      {
+        "text": "Perform a formal clearance measurement",
+        "isCorrect": true,
+        "rationale": "Potential kidney donors require creatinine clearance or urinary or plasma clearance of an exogenous filtration marker."
+      }
+    ]
+  },
+  {
+    "question": "A 66-year-old man undergoes an exogenous marker study. The marker is freely filtered, unchanged by the kidney, and neither added to nor removed from tubular fluid. Which measured value will equal its clearance?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Determine characteristics of a substance that can be used to measure glomerular filtration rate (GFR). Explain why this is not routinely used in the clinic.",
+    "options": [
+      {
+        "text": "Renal plasma flow",
+        "isCorrect": false,
+        "rationale": "Renal plasma flow is approximated by the clearance of a predominantly secreted marker such as PAH."
+      },
+      {
+        "text": "Glomerular filtration rate",
+        "isCorrect": true,
+        "rationale": "For an ideal filtration marker, filtered load equals urinary excretion, making marker clearance equal to GFR."
+      },
+      {
+        "text": "Urinary flow rate",
+        "isCorrect": false,
+        "rationale": "Urinary flow contributes to excretion rate but does not equal clearance unless unsupported concentration conditions are imposed."
+      },
+      {
+        "text": "Tubular secretion rate",
+        "isCorrect": false,
+        "rationale": "The marker is not secreted, so no tubular secretion rate accounts for its urinary appearance."
+      },
+      {
+        "text": "Tubular reabsorption rate",
+        "isCorrect": false,
+        "rationale": "The marker is not reabsorbed, so its clearance cannot represent a tubular reabsorption rate."
+      }
+    ]
+  },
+  {
+    "question": "A 57-year-old patient receives a candidate filtration marker. Its urinary excretion rate consistently exceeds its filtered load. Which property disqualifies this marker from accurate measurement?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Determine characteristics of a substance that can be used to measure glomerular filtration rate (GFR). Explain why this is not routinely used in the clinic.",
+    "options": [
+      {
+        "text": "Tubular reabsorption of marker",
+        "isCorrect": false,
+        "rationale": "Reabsorption would make urinary excretion lower than filtered load, producing the opposite result."
+      },
+      {
+        "text": "Incomplete glomerular filtration",
+        "isCorrect": false,
+        "rationale": "Failure to filter freely could lower marker clearance but does not explain excretion exceeding filtered load."
+      },
+      {
+        "text": "Renal metabolism of marker",
+        "isCorrect": false,
+        "rationale": "An ideal marker must remain unchanged, but the specified excess of excretion over filtered load directly identifies addition to tubular fluid."
+      },
+      {
+        "text": "Tubular secretion of marker",
+        "isCorrect": true,
+        "rationale": "Secretion adds marker to tubular fluid, causing urinary excretion to exceed filtered load and clearance to overestimate GFR."
+      },
+      {
+        "text": "Plasma dilution of marker",
+        "isCorrect": false,
+        "rationale": "Plasma concentration is included in the clearance calculation, but dilution does not establish excretion exceeding filtered load."
+      }
+    ]
+  },
+  {
+    "question": "A 61-year-old patient receives a marker whose clearance is approximately 700 mL/min. Tubular cells transfer the marker from surrounding capillaries into the lumen. Which function is being evaluated?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Describe characteristics of a substance that can be used to measure renal blood flow.",
+    "options": [
+      {
+        "text": "Albumin excretion severity",
+        "isCorrect": false,
+        "rationale": "Albuminuria is evaluated with spot ACR and is not determined by the clearance of a predominantly secreted marker."
+      },
+      {
+        "text": "Glomerular filtration rate",
+        "isCorrect": false,
+        "rationale": "GFR is measured by a marker that is filtered without reabsorption or secretion, with clearance near 120 mL/min in the example."
+      },
+      {
+        "text": "Renal plasma flow",
+        "isCorrect": true,
+        "rationale": "Predominant tubular secretion allows PAH clearance to reflect the plasma delivered to the kidneys."
+      },
+      {
+        "text": "Creatinine production rate",
+        "isCorrect": false,
+        "rationale": "Creatinine production depends substantially on muscle mass and is not represented by this secretory clearance pattern."
+      },
+      {
+        "text": "Urea synthesis capacity",
+        "isCorrect": false,
+        "rationale": "Urea synthesis occurs through liver enzymes and is not measured by renal extraction of a secreted marker."
+      }
+    ]
+  },
+  {
+    "question": "A 72-year-old man with low muscle mass has discordant clinical concern and creatinine-based estimation. Cystatin C is available. Which calculation is expected to provide the most accurate routine estimate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Distinguish the utility of creatinine and cystatin C serum concentrations in estimating GFR. Elaborate on why GFR is estimated instead of measured in clinic and what equation is currently used for estimating GFR.",
+    "options": [
+      {
+        "text": "BUN-based filtration equation",
+        "isCorrect": false,
+        "rationale": "BUN is affected by protein intake, synthesis, and hydration and is not the recommended contemporary equation."
+      },
+      {
+        "text": "Creatinine-only CKD-EPI equation",
+        "isCorrect": false,
+        "rationale": "Creatinine alone remains vulnerable to this patient's low muscle mass, creating the identified estimation bias."
+      },
+      {
+        "text": "Cystatin-only clearance equation",
+        "isCorrect": false,
+        "rationale": "Cystatin C avoids muscle-mass dependence, but the combined creatinine-cystatin C equation is stated to be optimal when available."
+      },
+      {
+        "text": "PAH-based plasma flow equation",
+        "isCorrect": false,
+        "rationale": "PAH clearance evaluates renal plasma flow rather than providing the optimal routine estimate of GFR."
+      },
+      {
+        "text": "Creatinine-cystatin C CKD-EPI equation",
+        "isCorrect": true,
+        "rationale": "The combined 2021 CKD-EPI equation reduces creatinine-related bias and is the most accurate routine estimation approach described."
+      }
+    ]
+  },
+  {
+    "question": "A 55-year-old woman has a spot urinary albumin concentration of 240 mg and urinary creatinine concentration of 2 g. Which classification applies?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Correlate estimated GFR and urine albumin creatinine ratio and delineate how they are used for evaluation of kidney function and for chronic kidney disease risk stratification.",
+    "options": [
+      {
+        "text": "Moderately increased albuminuria",
+        "isCorrect": true,
+        "rationale": "The ACR is 240 mg divided by 2 g, or 120 mg/g, which falls within the 30-300 mg/g range."
+      },
+      {
+        "text": "Severely increased albuminuria",
+        "isCorrect": false,
+        "rationale": "Severely increased albuminuria requires an ACR above 300 mg/g; the calculated value is 120 mg/g."
+      },
+      {
+        "text": "Normal urinary albumin",
+        "isCorrect": false,
+        "rationale": "The calculated ACR exceeds 30 mg/g and therefore is above the normal range."
+      },
+      {
+        "text": "Negligible urinary albumin",
+        "isCorrect": false,
+        "rationale": "An ACR of 120 mg/g is clinically increased rather than negligible."
+      },
+      {
+        "text": "Isolated filtration impairment",
+        "isCorrect": false,
+        "rationale": "The calculation classifies albuminuria and does not independently establish an isolated reduction in filtration."
+      }
+    ]
+  },
+  {
+    "question": "A 59-year-old man has an ACR of 85 mg/g on one spot sample. A repeat result 4 months later is 92 mg/g. Which interpretation is best supported?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Correlate estimated GFR and urine albumin creatinine ratio and delineate how they are used for evaluation of kidney function and for chronic kidney disease risk stratification.",
+    "options": [
+      {
+        "text": "Transient normal albumin excretion",
+        "isCorrect": false,
+        "rationale": "Both measurements exceed 30 mg/g, and persistence over at least 3 months argues against a transient normal finding."
+      },
+      {
+        "text": "Persistent kidney damage marker",
+        "isCorrect": true,
+        "rationale": "Two positive ACR measurements over at least 3 months establish persistent increased albumin excretion as a kidney-damage marker."
+      },
+      {
+        "text": "Severely increased albumin excretion",
+        "isCorrect": false,
+        "rationale": "Both results are below 300 mg/g and therefore fall in the moderately increased category."
+      },
+      {
+        "text": "Normal age-related filtration decline",
+        "isCorrect": false,
+        "rationale": "The findings describe persistent albuminuria, not an eGFR trend attributable to increasing age."
+      },
+      {
+        "text": "Predominant tubular marker secretion",
+        "isCorrect": false,
+        "rationale": "ACR measures urinary albumin relative to creatinine and does not demonstrate secretion of a clearance marker."
+      }
+    ]
+  },
+  {
+    "question": "A 63-year-old woman has an eGFR of 58 mL/min/1.73 m2 on two measurements separated by 3 months. Her ACR is 12 mg/g. Which finding meets the stated kidney-disease criterion?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Correlate estimated GFR and urine albumin creatinine ratio and delineate how they are used for evaluation of kidney function and for chronic kidney disease risk stratification.",
+    "options": [
+      {
+        "text": "Persistent filtration below 60",
+        "isCorrect": true,
+        "rationale": "An eGFR below 60 mL/min/1.73 m2 detected at least twice over 3 months meets the stated criterion despite normal ACR."
+      },
+      {
+        "text": "Single normal albumin ratio",
+        "isCorrect": false,
+        "rationale": "An ACR of 12 mg/g is below the kidney-damage threshold and does not negate persistent eGFR reduction."
+      },
+      {
+        "text": "Moderately increased albumin excretion",
+        "isCorrect": false,
+        "rationale": "Moderately increased albuminuria begins at 30 mg/g; this patient's ACR is 12 mg/g."
+      },
+      {
+        "text": "Severely increased albumin excretion",
+        "isCorrect": false,
+        "rationale": "Severely increased albuminuria requires an ACR above 300 mg/g."
+      },
+      {
+        "text": "Preserved filtration above 60",
+        "isCorrect": false,
+        "rationale": "Both reported eGFR values are 58 mL/min/1.73 m2 and therefore are below 60."
+      }
+    ]
+  },
+  {
+    "question": "A 46-year-old man has an eGFR of 88 mL/min/1.73 m2 and ACR values of 75 and 82 mg/g measured 4 months apart. Which result establishes the stated abnormality?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Correlate estimated GFR and urine albumin creatinine ratio and delineate how they are used for evaluation of kidney function and for chronic kidney disease risk stratification.",
+    "options": [
+      {
+        "text": "Filtration persistently below 60",
+        "isCorrect": false,
+        "rationale": "The eGFR is 88 mL/min/1.73 m2, so the reduced-filtration criterion is not met."
+      },
+      {
+        "text": "Severely increased persistent albuminuria",
+        "isCorrect": false,
+        "rationale": "The ACR values are persistent but remain below the severe threshold of 300 mg/g."
+      },
+      {
+        "text": "Normal filtration without kidney damage",
+        "isCorrect": false,
+        "rationale": "An eGFR above 60 does not exclude kidney damage when albuminuria is persistently above 30 mg/g."
+      },
+      {
+        "text": "Persistent moderately increased albuminuria",
+        "isCorrect": true,
+        "rationale": "Both ACR values lie between 30 and 300 mg/g and remain positive over more than 3 months."
+      },
+      {
+        "text": "Transient moderately increased albuminuria",
+        "isCorrect": false,
+        "rationale": "Two elevated results separated by 4 months demonstrate persistence rather than a transient abnormality."
+      }
+    ]
+  },
+  {
+    "question": "A 50-year-old man has a plasma creatinine increase after a reduction in filtration function. Which sequence best explains the laboratory change?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Distinguish the utility of creatinine and cystatin C serum concentrations in estimating GFR. Elaborate on why GFR is estimated instead of measured in clinic and what equation is currently used for estimating GFR.",
+    "options": [
+      {
+        "text": "Reduced filtration increases renal creatinine clearance",
+        "isCorrect": false,
+        "rationale": "Reduced GFR compromises rather than increases renal creatinine clearance."
+      },
+      {
+        "text": "Reduced filtration decreases creatinine production",
+        "isCorrect": false,
+        "rationale": "Creatinine production is linked primarily to muscle metabolism, whereas reduced GFR affects its renal elimination."
+      },
+      {
+        "text": "Reduced filtration increases tubular reabsorption",
+        "isCorrect": false,
+        "rationale": "The described rise follows impaired clearance; creatinine is freely filtered with a small secreted component, not presented as reabsorbed."
+      },
+      {
+        "text": "Reduced filtration enhances urinary creatinine loss",
+        "isCorrect": false,
+        "rationale": "A reduction in filtration compromises renal elimination rather than enhancing urinary loss."
+      },
+      {
+        "text": "Reduced filtration impairs creatinine clearance",
+        "isCorrect": true,
+        "rationale": "Lower GFR reduces renal creatinine clearance, allowing plasma creatinine concentration to rise."
+      }
+    ]
+  },
+  {
+    "question": "A 68-year-old woman has a serum creatinine within the laboratory reference range, but progressive renal damage is suspected. Which interpretation is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Distinguish the utility of creatinine and cystatin C serum concentrations in estimating GFR. Elaborate on why GFR is estimated instead of measured in clinic and what equation is currently used for estimating GFR.",
+    "options": [
+      {
+        "text": "Normal creatinine excludes renal damage",
+        "isCorrect": false,
+        "rationale": "Plasma creatinine may remain within its reference range until significant renal damage has occurred."
+      },
+      {
+        "text": "Creatinine may miss impaired function",
+        "isCorrect": true,
+        "rationale": "A reference-range creatinine does not guarantee normal renal function because the level may change only after substantial damage."
+      },
+      {
+        "text": "Creatinine directly measures renal plasma flow",
+        "isCorrect": false,
+        "rationale": "Renal plasma flow is assessed with a predominantly secreted marker such as PAH, not serum creatinine."
+      },
+      {
+        "text": "Creatinine remains independent of muscle mass",
+        "isCorrect": false,
+        "rationale": "Serum creatinine is influenced by muscle mass because most creatinine is produced in muscle."
+      },
+      {
+        "text": "Creatinine provides an ideal filtration marker",
+        "isCorrect": false,
+        "rationale": "Creatinine is freely filtered but has a small secreted component and important muscle-mass dependence, so it is not ideal."
+      }
+    ]
+  },
+  {
+    "question": "A 42-year-old patient has increased BUN after a major change in protein intake while filtration function is otherwise unchanged. Which limitation best explains the discordant marker?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Distinguish the utility of creatinine and cystatin C serum concentrations in estimating GFR. Elaborate on why GFR is estimated instead of measured in clinic and what equation is currently used for estimating GFR.",
+    "options": [
+      {
+        "text": "BUN depends on muscle mass",
+        "isCorrect": false,
+        "rationale": "Muscle mass prominently affects creatinine. BUN is instead influenced by protein intake, protein metabolism, and hydration."
+      },
+      {
+        "text": "BUN undergoes complete secretion",
+        "isCorrect": false,
+        "rationale": "The stated limitation is dependence on non-GFR factors, not complete tubular secretion."
+      },
+      {
+        "text": "BUN reflects protein-related factors",
+        "isCorrect": true,
+        "rationale": "BUN varies with protein intake and protein synthesis, so it can change independently of filtration function."
+      },
+      {
+        "text": "BUN directly measures plasma flow",
+        "isCorrect": false,
+        "rationale": "Renal plasma flow is measured with a predominantly secreted substance such as PAH."
+      },
+      {
+        "text": "BUN remains unaffected by hydration",
+        "isCorrect": false,
+        "rationale": "Hydration status is specifically identified as a factor that influences BUN."
+      }
+    ]
+  },
+  {
+    "question": "A 70-year-old patient has an ACR of 420 mg/g and declining eGFR. Which relationship most directly links these findings?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Correlate estimated GFR and urine albumin creatinine ratio and delineate how they are used for evaluation of kidney function and for chronic kidney disease risk stratification.",
+    "options": [
+      {
+        "text": "Severe albuminuria predicts stable filtration",
+        "isCorrect": false,
+        "rationale": "Severely increased albuminuria is associated with progressive rather than stable filtration."
+      },
+      {
+        "text": "Normal albuminuria predicts declining filtration",
+        "isCorrect": false,
+        "rationale": "An ACR of 420 mg/g is not normal; it exceeds the 300 mg/g severe-category threshold."
+      },
+      {
+        "text": "Moderate albuminuria prevents filtration decline",
+        "isCorrect": false,
+        "rationale": "The value is severely increased, and increased albuminuria does not prevent declining filtration."
+      },
+      {
+        "text": "Low filtration eliminates albumin excretion",
+        "isCorrect": false,
+        "rationale": "Reduced filtration does not eliminate albuminuria; the two measurements provide complementary risk information."
+      },
+      {
+        "text": "Severe albuminuria accompanies faster progression",
+        "isCorrect": true,
+        "rationale": "An ACR above 300 mg/g defines severely increased albuminuria, which is associated with faster CKD progression and GFR decline."
+      }
+    ]
+  },
+  {
+    "question": "A 75-year-old patient with extreme frailty has a creatinine-based eGFR of 56 mL/min/1.73 m2 and no other kidney-damage features. Which next step is preferred before assigning the diagnosis?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Distinguish the utility of creatinine and cystatin C serum concentrations in estimating GFR. Elaborate on why GFR is estimated instead of measured in clinic and what equation is currently used for estimating GFR.",
+    "options": [
+      {
+        "text": "Apply the combined-marker equation",
+        "isCorrect": true,
+        "rationale": "Extreme frailty and low muscle mass confound creatinine, and an eGFR of 45-60 without other CKD features warrants combined-marker confirmation."
+      },
+      {
+        "text": "Assign disease from creatinine alone",
+        "isCorrect": false,
+        "rationale": "The creatinine result may be biased by frailty, so confirmation is recommended before relying on it."
+      },
+      {
+        "text": "Measure PAH clearance for filtration",
+        "isCorrect": false,
+        "rationale": "PAH clearance measures renal plasma flow and is not the preferred first confirmation of this creatinine-based estimate."
+      },
+      {
+        "text": "Use urinary glucose clearance",
+        "isCorrect": false,
+        "rationale": "Glucose undergoes net reabsorption and has near-zero clearance in the example, so it cannot confirm GFR."
+      },
+      {
+        "text": "Use BUN concentration alone",
+        "isCorrect": false,
+        "rationale": "BUN has diet-, metabolism-, and hydration-related determinants and is not the recommended confirmation method."
+      }
+    ]
+  }
+]
