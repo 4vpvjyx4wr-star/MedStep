@@ -1,0 +1,1122 @@
+[
+  {
+    "question": "Which genetic polymorphism consists of a change in one DNA nucleotide that can alter the resulting protein?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define genetic polymorphisms including single nucleotide polymorphisms (SNPs), gene deletions, and gene amplifications (can affect protein structure, configuration, and/or concentration).",
+    "options": [
+      {
+        "text": "Single nucleotide polymorphism",
+        "isCorrect": true,
+        "rationale": "A single nucleotide polymorphism changes one nucleotide and can alter the structure or configuration of the encoded protein."
+      },
+      {
+        "text": "Whole gene deletion",
+        "isCorrect": false,
+        "rationale": "A gene deletion removes gene copies rather than changing one nucleotide. It would be correct if the affected DNA segment were missing."
+      },
+      {
+        "text": "Whole gene amplification",
+        "isCorrect": false,
+        "rationale": "Gene amplification increases gene copy number rather than changing one nucleotide. It would be correct if additional copies were present."
+      },
+      {
+        "text": "Chromosomal translocation event",
+        "isCorrect": false,
+        "rationale": "A chromosomal translocation moves material to a non-homologous chromosome. It would be correct if a chromosome segment changed location."
+      },
+      {
+        "text": "Promoter repeat absence",
+        "isCorrect": false,
+        "rationale": "Promoter repeat absence describes the ALOX5 example rather than a single-nucleotide change. It would be correct if the normal repeat sequence were missing."
+      }
+    ]
+  },
+  {
+    "question": "Which type of genetic variation produces more than the usual number of copies of one or more genes?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define genetic polymorphisms including single nucleotide polymorphisms (SNPs), gene deletions, and gene amplifications (can affect protein structure, configuration, and/or concentration).",
+    "options": [
+      {
+        "text": "Single nucleotide polymorphism",
+        "isCorrect": false,
+        "rationale": "A single nucleotide polymorphism changes one nucleotide without necessarily increasing copy number. It would fit a one-base DNA change."
+      },
+      {
+        "text": "Whole gene deletion",
+        "isCorrect": false,
+        "rationale": "A gene deletion removes copies rather than creating extra copies. It would fit a missing gene segment."
+      },
+      {
+        "text": "Whole gene amplification",
+        "isCorrect": true,
+        "rationale": "Gene amplification creates additional copies of one or more genes and can increase the concentration of the encoded protein."
+      },
+      {
+        "text": "Chromosomal translocation event",
+        "isCorrect": false,
+        "rationale": "A translocation relocates a chromosome segment rather than increasing gene copy number. It would fit movement between non-homologous chromosomes."
+      },
+      {
+        "text": "Promoter repeat absence",
+        "isCorrect": false,
+        "rationale": "Promoter repeat absence can alter expression but does not describe additional gene copies. It would fit the ALOX5 promoter variant."
+      }
+    ]
+  },
+  {
+    "question": "A chromosome segment moves to a different location on a non-homologous chromosome and produces a fusion protein. Which variation occurred?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Define genetic polymorphisms including single nucleotide polymorphisms (SNPs), gene deletions, and gene amplifications (can affect protein structure, configuration, and/or concentration).",
+    "options": [
+      {
+        "text": "Single nucleotide polymorphism",
+        "isCorrect": false,
+        "rationale": "A single nucleotide polymorphism changes one base rather than relocating a chromosome segment. It would fit an isolated nucleotide substitution."
+      },
+      {
+        "text": "Whole gene deletion",
+        "isCorrect": false,
+        "rationale": "A gene deletion removes genetic material rather than repositioning it. It would fit loss of one or more gene copies."
+      },
+      {
+        "text": "Whole gene amplification",
+        "isCorrect": false,
+        "rationale": "Gene amplification increases copy number rather than joining material from different chromosome locations. It would fit excess gene copies."
+      },
+      {
+        "text": "Promoter repeat absence",
+        "isCorrect": false,
+        "rationale": "Promoter repeat absence changes a regulatory sequence rather than chromosome location. It would fit reduced ALOX5-associated leukotriene production."
+      },
+      {
+        "text": "Chromosomal translocation event",
+        "isCorrect": true,
+        "rationale": "A chromosomal translocation moves a segment to a non-homologous chromosome and can create a disease-causing fusion protein."
+      }
+    ]
+  },
+  {
+    "question": "A genetic variant changes the structure or abundance of the molecule through which a medication produces its effect. Which drug-response parameter is directly altered?",
+    "difficulty_order": "1st",
+    "cited_learning_objective": "Differentiate between pharmacogenomic polymorphisms that affect pharmacodynamic and pharmacokinetic parameters.",
+    "options": [
+      {
+        "text": "Drug absorption",
+        "isCorrect": false,
+        "rationale": "Absorption is a pharmacokinetic process governing entry of a drug into the body. It would fit a variant altering drug entry."
+      },
+      {
+        "text": "Drug pharmacodynamics",
+        "isCorrect": true,
+        "rationale": "Pharmacodynamics concerns drug targets and resulting effects, so a change in the target directly alters this parameter."
+      },
+      {
+        "text": "Drug distribution",
+        "isCorrect": false,
+        "rationale": "Distribution is a pharmacokinetic process governing movement through the body. It would fit altered delivery among tissues."
+      },
+      {
+        "text": "Drug metabolism",
+        "isCorrect": false,
+        "rationale": "Metabolism is altered when a drug-processing enzyme changes. It would fit variants involving BChE, NAT2, CYP2D6, or CYP2C9."
+      },
+      {
+        "text": "Drug excretion",
+        "isCorrect": false,
+        "rationale": "Excretion is a pharmacokinetic elimination process. It would fit a variant altering removal rather than the drug target."
+      }
+    ]
+  },
+  {
+    "question": "A variant increases the activity of an enzyme that converts an active medication into an inactive metabolite. Which change is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Lower active-drug concentration",
+        "isCorrect": false,
+        "rationale": "The concentration would decrease, but the defining effect requested is the resulting reduction in efficacy from faster inactivation."
+      },
+      {
+        "text": "Greater active-drug toxicity",
+        "isCorrect": false,
+        "rationale": "Faster inactivation reduces active-drug exposure rather than increasing toxicity. Toxicity would fit slower inactivation."
+      },
+      {
+        "text": "Higher active-drug effectiveness",
+        "isCorrect": false,
+        "rationale": "Higher effectiveness would require increased active exposure or stronger target action, not accelerated inactivation."
+      },
+      {
+        "text": "Reduced active-drug effectiveness",
+        "isCorrect": true,
+        "rationale": "More rapid inactivation lowers exposure to the active medication and therefore reduces its pharmacologic effectiveness."
+      },
+      {
+        "text": "Unchanged active-drug effectiveness",
+        "isCorrect": false,
+        "rationale": "Effectiveness would remain unchanged only if the metabolic variation did not materially change active-drug exposure."
+      }
+    ]
+  },
+  {
+    "question": "A genetic variant slows an enzyme that normally inactivates an administered active drug. Which outcome is most consistent with this change?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Increased active-drug exposure",
+        "isCorrect": true,
+        "rationale": "Slower inactivation allows the active drug to remain at higher levels, increasing both its effects and toxicity risk."
+      },
+      {
+        "text": "Decreased active-drug exposure",
+        "isCorrect": false,
+        "rationale": "Decreased exposure would result from faster inactivation, not reduced enzyme activity."
+      },
+      {
+        "text": "Increased inactive-metabolite production",
+        "isCorrect": false,
+        "rationale": "A slower inactivating enzyme produces the inactive metabolite less rapidly. Increased production would require greater enzyme activity."
+      },
+      {
+        "text": "Decreased target-drug affinity",
+        "isCorrect": false,
+        "rationale": "Target affinity is a pharmacodynamic property and is not changed by slower metabolism. It would fit a target variant."
+      },
+      {
+        "text": "Unchanged active-drug exposure",
+        "isCorrect": false,
+        "rationale": "Unchanged exposure would require normal inactivation or a variation without a meaningful metabolic effect."
+      }
+    ]
+  },
+  {
+    "question": "A variant accelerates conversion of an inactive precursor medication into its active product. Which response is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Reduced active-product concentration",
+        "isCorrect": false,
+        "rationale": "Accelerated activation increases rather than reduces active-product concentration. Reduction would follow slow precursor activation."
+      },
+      {
+        "text": "Reduced precursor-associated response",
+        "isCorrect": false,
+        "rationale": "The clinically relevant response comes from the active product, whose formation is increased. This would fit reduced activation."
+      },
+      {
+        "text": "Increased active-product effects",
+        "isCorrect": true,
+        "rationale": "Faster precursor activation produces more active drug, increasing desired effects and the risk of active-product toxicity."
+      },
+      {
+        "text": "Increased inactive-metabolite formation",
+        "isCorrect": false,
+        "rationale": "Inactive-metabolite formation is a competing pathway and does not describe accelerated production of the active product."
+      },
+      {
+        "text": "Unchanged active-product effects",
+        "isCorrect": false,
+        "rationale": "Effects would remain unchanged only if activation were unaffected or the change did not alter active-product exposure."
+      }
+    ]
+  },
+  {
+    "question": "A variant reduces conversion of an inactive precursor medication into its active product. Which response is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Greater active-product toxicity",
+        "isCorrect": false,
+        "rationale": "Greater toxicity would follow increased active-product formation. Reduced conversion lowers exposure to the active product."
+      },
+      {
+        "text": "Greater precursor activation",
+        "isCorrect": false,
+        "rationale": "The variant reduces rather than increases activation. Greater activation would fit an overactive activating enzyme."
+      },
+      {
+        "text": "Greater therapeutic response",
+        "isCorrect": false,
+        "rationale": "A greater response would require increased active-product formation or enhanced target sensitivity."
+      },
+      {
+        "text": "Unchanged therapeutic response",
+        "isCorrect": false,
+        "rationale": "The response would remain unchanged only if the activation rate were unaffected."
+      },
+      {
+        "text": "Reduced therapeutic response",
+        "isCorrect": true,
+        "rationale": "Slower activation generates less active product, reducing the effectiveness of a medication that requires metabolic activation."
+      }
+    ]
+  },
+  {
+    "question": "A drug target acquires greater affinity for its medication while drug concentration remains unchanged. Which response is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Reduced target-mediated drug effect",
+        "isCorrect": false,
+        "rationale": "Reduced effect would fit lower affinity or reduced target expression. Greater affinity strengthens the target-mediated response."
+      },
+      {
+        "text": "Enhanced target-mediated drug effect",
+        "isCorrect": true,
+        "rationale": "Higher target affinity increases the drug's pharmacodynamic effect at a given concentration and can increase adverse-effect risk."
+      },
+      {
+        "text": "Faster metabolic drug inactivation",
+        "isCorrect": false,
+        "rationale": "Metabolic inactivation is controlled by pharmacokinetic enzymes, not by target affinity."
+      },
+      {
+        "text": "Slower metabolic drug activation",
+        "isCorrect": false,
+        "rationale": "Metabolic activation concerns conversion of a precursor drug and is separate from target binding."
+      },
+      {
+        "text": "Unchanged target-mediated drug effect",
+        "isCorrect": false,
+        "rationale": "An unchanged effect would require no meaningful change in affinity or target abundance."
+      }
+    ]
+  },
+  {
+    "question": "A medication acts only on a particular tumor protein. Which finding is required before using this targeted therapy?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Reduced hepatic enzyme activity",
+        "isCorrect": false,
+        "rationale": "Hepatic enzyme activity affects pharmacokinetics but does not establish that the tumor contains the therapeutic target."
+      },
+      {
+        "text": "Increased renal drug elimination",
+        "isCorrect": false,
+        "rationale": "Renal elimination concerns drug clearance, not whether the tumor expresses the protein required for targeted action."
+      },
+      {
+        "text": "Normal host-cell target expression",
+        "isCorrect": false,
+        "rationale": "The relevant requirement is expression by the tumor itself, regardless of expression elsewhere in the patient."
+      },
+      {
+        "text": "Tumor-specific target expression",
+        "isCorrect": true,
+        "rationale": "A targeted oncology drug should be used only when the patient's tumor expresses the specific protein or mutation it targets."
+      },
+      {
+        "text": "Accelerated precursor drug activation",
+        "isCorrect": false,
+        "rationale": "Precursor activation affects pharmacokinetics and does not demonstrate the presence of the tumor target."
+      }
+    ]
+  },
+  {
+    "question": "An asthma-associated promoter variant causes reduced production of the downstream inflammatory mediators inhibited by a medication. Which drug response is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Greater zileuton effectiveness",
+        "isCorrect": false,
+        "rationale": "Greater effectiveness would require adequate production of leukotrienes for zileuton to inhibit."
+      },
+      {
+        "text": "Greater warfarin effectiveness",
+        "isCorrect": false,
+        "rationale": "Warfarin acts through VKOR and is unrelated to the ALOX5-dependent leukotriene pathway."
+      },
+      {
+        "text": "Reduced gefitinib effectiveness",
+        "isCorrect": false,
+        "rationale": "Gefitinib effectiveness depends on an appropriate tumor target rather than leukotriene production."
+      },
+      {
+        "text": "Reduced isoniazid effectiveness",
+        "isCorrect": false,
+        "rationale": "Isoniazid exposure depends on NAT2-mediated inactivation rather than ALOX5 promoter repeats."
+      },
+      {
+        "text": "Reduced zileuton effectiveness",
+        "isCorrect": true,
+        "rationale": "Reduced leukotriene production leaves less pathway product for the lipoxygenase inhibitor zileuton to suppress."
+      }
+    ]
+  },
+  {
+    "question": "Which pairing represents a pharmacogenomic change involving both drug disposition and target sensitivity?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Differentiate between pharmacogenomic polymorphisms that affect pharmacodynamic and pharmacokinetic parameters.",
+    "options": [
+      {
+        "text": "Warfarin with CYP2C9 and VKOR",
+        "isCorrect": true,
+        "rationale": "CYP2C9 changes warfarin inactivation, while VKOR variation changes target sensitivity, combining pharmacokinetic and pharmacodynamic effects."
+      },
+      {
+        "text": "Isoniazid with NAT2 and ALOX5",
+        "isCorrect": false,
+        "rationale": "NAT2 affects isoniazid metabolism, but ALOX5 concerns zileuton response. This pairing does not form one combined drug-response example."
+      },
+      {
+        "text": "Codeine with CYP3A4 and EGFR",
+        "isCorrect": false,
+        "rationale": "CYP3A4 forms inactive codeine metabolites, whereas EGFR is a cancer target unrelated to codeine response."
+      },
+      {
+        "text": "Succinylcholine with BChE and HER2",
+        "isCorrect": false,
+        "rationale": "BChE inactivates succinylcholine, whereas HER2 determines trastuzumab use and is not its pharmacodynamic target."
+      },
+      {
+        "text": "Zileuton with ALOX5 and CYP2D6",
+        "isCorrect": false,
+        "rationale": "ALOX5 affects zileuton response, but CYP2D6 activates codeine and is not part of the zileuton example."
+      }
+    ]
+  },
+  {
+    "question": "Which pairing illustrates an idiosyncratic pharmacogenomic response whose mechanism is described as unclear?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Differentiate between pharmacogenomic polymorphisms that affect pharmacodynamic and pharmacokinetic parameters.",
+    "options": [
+      {
+        "text": "BChE with succinylcholine paralysis",
+        "isCorrect": false,
+        "rationale": "This response has a defined pharmacokinetic mechanism: reduced BChE activity slows succinylcholine inactivation."
+      },
+      {
+        "text": "HLA-B5701 with abacavir hypersensitivity",
+        "isCorrect": true,
+        "rationale": "The HLA-B5701-associated abacavir response is categorized as idiosyncratic with an unclear mechanism."
+      },
+      {
+        "text": "NAT2 with isoniazid neurotoxicity",
+        "isCorrect": false,
+        "rationale": "This toxicity has a defined metabolic mechanism involving slow NAT2-mediated inactivation and high drug levels."
+      },
+      {
+        "text": "CYP2D6 with codeine suppression",
+        "isCorrect": false,
+        "rationale": "This response has a defined mechanism involving rapid codeine conversion to active morphine."
+      },
+      {
+        "text": "VKOR with warfarin hemorrhage",
+        "isCorrect": false,
+        "rationale": "This response has a defined pharmacodynamic mechanism involving increased VKOR affinity for warfarin."
+      }
+    ]
+  },
+  {
+    "question": "A drug-metabolizing enzyme variant lowers formation of inactive products from an administered active medication. Which pharmacologic parameter is altered first?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Differentiate between pharmacogenomic polymorphisms that affect pharmacodynamic and pharmacokinetic parameters.",
+    "options": [
+      {
+        "text": "Target pharmacodynamics",
+        "isCorrect": false,
+        "rationale": "Target pharmacodynamics would be primary if receptor structure, affinity, or expression changed."
+      },
+      {
+        "text": "Tumor protein expression",
+        "isCorrect": false,
+        "rationale": "Tumor protein expression determines targeted cancer therapy and does not describe metabolic inactivation."
+      },
+      {
+        "text": "Idiosyncratic drug response",
+        "isCorrect": false,
+        "rationale": "An idiosyncratic response is used when the mechanism is unclear, whereas this metabolic mechanism is specified."
+      },
+      {
+        "text": "Drug pharmacokinetics",
+        "isCorrect": true,
+        "rationale": "Formation of inactive metabolites is part of drug metabolism, so the primary altered parameter is pharmacokinetics."
+      },
+      {
+        "text": "Target protein affinity",
+        "isCorrect": false,
+        "rationale": "Target affinity is a pharmacodynamic property and would change only through a target variant."
+      }
+    ]
+  },
+  {
+    "question": "A variant decreases the amount of a protein that a drug must bind to produce its effect. Which outcome is expected?",
+    "difficulty_order": "2nd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Increased metabolic activation",
+        "isCorrect": false,
+        "rationale": "Metabolic activation involves an enzyme converting a precursor medication, not the abundance of its target."
+      },
+      {
+        "text": "Increased metabolic inactivation",
+        "isCorrect": false,
+        "rationale": "Metabolic inactivation is a pharmacokinetic process and does not follow directly from reduced target expression."
+      },
+      {
+        "text": "Increased target-mediated effect",
+        "isCorrect": false,
+        "rationale": "Increasing the effect would require greater target availability, higher affinity, or increased active-drug exposure."
+      },
+      {
+        "text": "Unchanged target-mediated effect",
+        "isCorrect": false,
+        "rationale": "The effect would remain unchanged only if target abundance were preserved or not important for the drug."
+      },
+      {
+        "text": "Reduced target-mediated effect",
+        "isCorrect": true,
+        "rationale": "A missing or under-expressed target provides fewer binding sites and reduces the drug's pharmacodynamic effectiveness."
+      }
+    ]
+  },
+  {
+    "question": "A patient scheduled for surgery has markedly reduced activity of the serum enzyme that normally converts a planned muscle relaxant into an inactive metabolite. Which preoperative action is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Avoid planned succinylcholine administration",
+        "isCorrect": true,
+        "rationale": "Reduced BChE activity slows succinylcholine inactivation and increases paralysis, so the drug should not be given after the deficiency is identified."
+      },
+      {
+        "text": "Increase planned succinylcholine dosage",
+        "isCorrect": false,
+        "rationale": "A higher dose would further increase exposure and paralysis. It would be considered only if unusually rapid inactivation reduced the drug effect."
+      },
+      {
+        "text": "Decrease planned isoniazid dosage",
+        "isCorrect": false,
+        "rationale": "Isoniazid dosing depends on NAT2 acetylation and does not address reduced BChE activity."
+      },
+      {
+        "text": "Screen planned tumor protein",
+        "isCorrect": false,
+        "rationale": "Tumor-protein screening guides targeted cancer drugs and does not manage succinylcholine metabolism."
+      },
+      {
+        "text": "Test planned CYP2C9 activity",
+        "isCorrect": false,
+        "rationale": "CYP2C9 testing guides warfarin dosing rather than succinylcholine use."
+      }
+    ]
+  },
+  {
+    "question": "A patient remains profoundly immobile after receiving a surgical muscle relaxant. Testing shows reduced conversion of the medication to its inactive product. Which inherited alteration best explains this response?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Increased NAT2 acetylation rate",
+        "isCorrect": false,
+        "rationale": "NAT2 controls isoniazid inactivation. Increased activity would lower isoniazid levels rather than prolong muscle paralysis."
+      },
+      {
+        "text": "Reduced BChE enzyme activity",
+        "isCorrect": true,
+        "rationale": "BChE normally inactivates succinylcholine, so reduced activity prolongs its muscle-relaxing action and increases paralysis."
+      },
+      {
+        "text": "Increased CYP2D6 enzyme activity",
+        "isCorrect": false,
+        "rationale": "CYP2D6 activates codeine to morphine and does not inactivate the surgical muscle relaxant."
+      },
+      {
+        "text": "Reduced CYP2C9 enzyme activity",
+        "isCorrect": false,
+        "rationale": "Reduced CYP2C9 activity slows warfarin inactivation and increases hemorrhage risk, not paralysis."
+      },
+      {
+        "text": "Increased VKOR target affinity",
+        "isCorrect": false,
+        "rationale": "Increased VKOR affinity raises sensitivity to warfarin and is unrelated to succinylcholine metabolism."
+      }
+    ]
+  },
+  {
+    "question": "A patient receiving an anti-tuberculosis medication develops toxicity. Genotyping indicates slow enzymatic inactivation of the drug. Which change most directly produced this adverse response?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Increased inactive-metabolite generation",
+        "isCorrect": false,
+        "rationale": "Slow acetylation decreases the rate of inactive-metabolite formation. Increased formation would occur in a fast acetylator."
+      },
+      {
+        "text": "Decreased active-drug concentration",
+        "isCorrect": false,
+        "rationale": "Slow inactivation raises rather than lowers active isoniazid concentration."
+      },
+      {
+        "text": "Increased active-drug concentration",
+        "isCorrect": true,
+        "rationale": "Slow NAT2-mediated acetylation reduces isoniazid inactivation, producing high blood levels and increased neurotoxicity risk."
+      },
+      {
+        "text": "Decreased target-drug affinity",
+        "isCorrect": false,
+        "rationale": "The scenario concerns altered metabolism rather than a pharmacodynamic change in target affinity."
+      },
+      {
+        "text": "Increased precursor-drug activation",
+        "isCorrect": false,
+        "rationale": "Isoniazid is described as being inactivated by NAT2, not activated from a precursor form."
+      }
+    ]
+  },
+  {
+    "question": "A patient beginning an anti-tuberculosis drug is found to have a slow-acetylator phenotype. Which management change best addresses the associated pharmacogenomic risk?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Increase the isoniazid dose",
+        "isCorrect": false,
+        "rationale": "A higher dose would worsen the elevated drug exposure caused by slow inactivation. Dose increases would better fit a fast acetylator with low levels."
+      },
+      {
+        "text": "Increase the codeine dose",
+        "isCorrect": false,
+        "rationale": "Codeine dosing depends on CYP2D6-mediated activation and does not correct slow NAT2 acetylation."
+      },
+      {
+        "text": "Administer standard warfarin dosing",
+        "isCorrect": false,
+        "rationale": "Warfarin dosing depends on VKORC1 and CYP2C9 rather than NAT2 status."
+      },
+      {
+        "text": "Reduce the isoniazid dose",
+        "isCorrect": true,
+        "rationale": "Slow NAT2-mediated inactivation produces high isoniazid levels, so dosing should be adjusted downward to reduce toxicity risk."
+      },
+      {
+        "text": "Administer standard succinylcholine dosing",
+        "isCorrect": false,
+        "rationale": "Succinylcholine use depends on BChE activity and does not manage the elevated isoniazid exposure."
+      }
+    ]
+  },
+  {
+    "question": "A patient taking an anti-tuberculosis drug has unexpectedly low blood drug levels despite adherence. Testing shows rapid acetylation. Which mechanism best explains the reduced exposure?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Slower NAT2-mediated inactivation",
+        "isCorrect": false,
+        "rationale": "Slower inactivation would raise drug levels and increase toxicity risk, as occurs in slow acetylators."
+      },
+      {
+        "text": "Faster CYP2D6-mediated activation",
+        "isCorrect": false,
+        "rationale": "CYP2D6 activates codeine and does not explain rapid isoniazid acetylation."
+      },
+      {
+        "text": "Slower CYP2C9-mediated inactivation",
+        "isCorrect": false,
+        "rationale": "CYP2C9 inactivates warfarin and is unrelated to the described anti-tuberculosis drug."
+      },
+      {
+        "text": "Greater VKOR drug affinity",
+        "isCorrect": false,
+        "rationale": "VKOR affinity changes warfarin sensitivity rather than isoniazid blood concentration."
+      },
+      {
+        "text": "Faster NAT2-mediated inactivation",
+        "isCorrect": true,
+        "rationale": "Fast acetylators inactivate isoniazid more rapidly, producing lower blood levels and potentially reduced effectiveness."
+      }
+    ]
+  },
+  {
+    "question": "A patient receives a precursor analgesic and rapidly develops excessive central drug effects. Testing shows unusually high activity of the enzyme that forms the active product. Which change occurred?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Accelerated codeine conversion to morphine",
+        "isCorrect": true,
+        "rationale": "Overactive CYP2D6 rapidly converts codeine to active morphine, increasing analgesia, respiratory suppression, and risk of death."
+      },
+      {
+        "text": "Accelerated codeine conversion to inactive metabolites",
+        "isCorrect": false,
+        "rationale": "Conversion to inactive metabolites is associated with CYP3A4 and would reduce active morphine formation rather than intensify its effects."
+      },
+      {
+        "text": "Delayed codeine conversion to morphine",
+        "isCorrect": false,
+        "rationale": "Delayed activation would reduce morphine exposure and analgesic effect rather than cause excessive central effects."
+      },
+      {
+        "text": "Delayed morphine conversion to glucuronides",
+        "isCorrect": false,
+        "rationale": "The specified variation is increased formation of the active product from codeine, not reduced downstream morphine metabolism."
+      },
+      {
+        "text": "Accelerated morphine elimination through urine",
+        "isCorrect": false,
+        "rationale": "Faster elimination would reduce morphine exposure. The excessive response results from rapid precursor activation."
+      }
+    ]
+  },
+  {
+    "question": "A patient is identified as an ultra-rapid activator of a precursor analgesic through an overactive hepatic enzyme. Which prescribing choice is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Increase the codeine dose",
+        "isCorrect": false,
+        "rationale": "Increasing the dose would generate still more active morphine and further increase respiratory suppression risk."
+      },
+      {
+        "text": "Avoid or reduce codeine",
+        "isCorrect": true,
+        "rationale": "Ultra-rapid CYP2D6 activity produces excessive morphine, so codeine should be avoided or used at a lower dose."
+      },
+      {
+        "text": "Increase the warfarin dose",
+        "isCorrect": false,
+        "rationale": "Warfarin dosing depends on CYP2C9 and VKORC1 rather than CYP2D6-mediated codeine activation."
+      },
+      {
+        "text": "Reduce the isoniazid dose",
+        "isCorrect": false,
+        "rationale": "Isoniazid dosing depends on NAT2 acetylation and does not address rapid codeine activation."
+      },
+      {
+        "text": "Administer standard succinylcholine",
+        "isCorrect": false,
+        "rationale": "Succinylcholine response depends on BChE activity and is unrelated to CYP2D6 overactivity."
+      }
+    ]
+  },
+  {
+    "question": "A patient's tumor shows uncontrolled growth driven by an altered growth-factor receptor. Before selecting a receptor-directed drug, which result must be confirmed?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Low serum BChE activity",
+        "isCorrect": false,
+        "rationale": "BChE activity predicts succinylcholine inactivation and does not determine tumor susceptibility to receptor-directed therapy."
+      },
+      {
+        "text": "Slow NAT2 acetylator status",
+        "isCorrect": false,
+        "rationale": "NAT2 status predicts isoniazid exposure and is unrelated to the tumor's growth-driving receptor."
+      },
+      {
+        "text": "Relevant tumor target presence",
+        "isCorrect": true,
+        "rationale": "The tumor must express the specific protein or mutation targeted by the drug before that therapy can be used."
+      },
+      {
+        "text": "Low CYP2C9 enzyme activity",
+        "isCorrect": false,
+        "rationale": "CYP2C9 activity guides warfarin dosing and does not establish the presence of a tumor target."
+      },
+      {
+        "text": "Rapid CYP2D6 enzyme activity",
+        "isCorrect": false,
+        "rationale": "CYP2D6 activity predicts codeine activation rather than response to a receptor-directed cancer drug."
+      }
+    ]
+  },
+  {
+    "question": "A breast tumor does not overexpress the protein targeted by a monoclonal antibody used in selected breast cancers. Which management decision follows from this result?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Begin trastuzumab treatment",
+        "isCorrect": false,
+        "rationale": "Trastuzumab requires HER2 overexpression by the tumor. Starting it without the target violates the target-presence requirement."
+      },
+      {
+        "text": "Begin tamoxifen treatment",
+        "isCorrect": false,
+        "rationale": "Tamoxifen requires estrogen-receptor positivity, which is not established by absence of HER2 overexpression."
+      },
+      {
+        "text": "Begin imatinib treatment",
+        "isCorrect": false,
+        "rationale": "Imatinib requires the relevant fusion protein, which is not established in this tumor."
+      },
+      {
+        "text": "Withhold trastuzumab treatment",
+        "isCorrect": true,
+        "rationale": "Without HER2 overexpression, the tumor lacks the required target and trastuzumab should not be used."
+      },
+      {
+        "text": "Begin gefitinib treatment",
+        "isCorrect": false,
+        "rationale": "Gefitinib requires the appropriate altered EGFR target, which is not established by the HER2 result."
+      }
+    ]
+  },
+  {
+    "question": "An asthma patient lacks the normal five-repeat promoter sequence controlling a leukotriene-producing enzyme. Which therapeutic outcome is most likely?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Enhanced response to zileuton",
+        "isCorrect": false,
+        "rationale": "Enhanced response would require sufficient leukotriene production for the inhibitor to suppress."
+      },
+      {
+        "text": "Enhanced response to gefitinib",
+        "isCorrect": false,
+        "rationale": "Gefitinib response depends on an appropriate tumor receptor alteration, not the ALOX5 promoter."
+      },
+      {
+        "text": "Reduced response to warfarin",
+        "isCorrect": false,
+        "rationale": "Warfarin response depends on VKOR and CYP2C9, not leukotriene production."
+      },
+      {
+        "text": "Reduced response to isoniazid",
+        "isCorrect": false,
+        "rationale": "Isoniazid response depends on NAT2-mediated acetylation rather than the ALOX5 promoter."
+      },
+      {
+        "text": "Reduced response to zileuton",
+        "isCorrect": true,
+        "rationale": "Loss of the five-repeat ALOX5 promoter sequence lowers leukotriene production, leaving less substrate pathway activity for zileuton to inhibit."
+      }
+    ]
+  },
+  {
+    "question": "An asthma patient is being considered for a medication that inhibits lipoxygenase. Which pharmacogenomic assessment is most relevant before treatment?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Assess ALOX5 promoter allele",
+        "isCorrect": true,
+        "rationale": "The normal five-repeat ALOX5 promoter allele supports leukotriene production and predicts a pathway that zileuton can effectively inhibit."
+      },
+      {
+        "text": "Assess BChE enzyme activity",
+        "isCorrect": false,
+        "rationale": "BChE testing predicts succinylcholine inactivation and does not determine response to a lipoxygenase inhibitor."
+      },
+      {
+        "text": "Assess NAT2 acetylation rate",
+        "isCorrect": false,
+        "rationale": "NAT2 testing predicts isoniazid levels and neurotoxicity rather than leukotriene-pathway drug response."
+      },
+      {
+        "text": "Assess CYP2D6 enzyme activity",
+        "isCorrect": false,
+        "rationale": "CYP2D6 testing predicts codeine-to-morphine conversion and does not determine zileuton effectiveness."
+      },
+      {
+        "text": "Assess CYP2C9 enzyme activity",
+        "isCorrect": false,
+        "rationale": "CYP2C9 testing guides warfarin dosing and is unrelated to ALOX5-dependent leukotriene production."
+      }
+    ]
+  },
+  {
+    "question": "A patient starting an anticoagulant has both reduced activity of its inactivating enzyme and unusually strong binding at its molecular target. Which complication is most strongly increased?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Reduced anticoagulant effectiveness",
+        "isCorrect": false,
+        "rationale": "Both variants increase rather than reduce warfarin action by raising exposure and increasing target sensitivity."
+      },
+      {
+        "text": "Increased hemorrhage risk",
+        "isCorrect": true,
+        "rationale": "Low CYP2C9 activity slows warfarin inactivation, while high-affinity VKOR increases sensitivity, producing markedly reduced clotting and hemorrhage risk."
+      },
+      {
+        "text": "Increased neurotoxicity risk",
+        "isCorrect": false,
+        "rationale": "The neurotoxicity example involves high isoniazid levels in slow NAT2 acetylators."
+      },
+      {
+        "text": "Increased paralysis risk",
+        "isCorrect": false,
+        "rationale": "Increased paralysis results from reduced BChE-mediated succinylcholine inactivation."
+      },
+      {
+        "text": "Increased bronchoconstriction risk",
+        "isCorrect": false,
+        "rationale": "Bronchoconstriction is linked to leukotriene signaling and does not describe excessive warfarin action."
+      }
+    ]
+  },
+  {
+    "question": "A patient with low activity of the enzyme that inactivates an anticoagulant is beginning therapy. Which dose-selection strategy is most appropriate?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Use a higher initial dose",
+        "isCorrect": false,
+        "rationale": "A higher dose would further increase exposure when drug inactivation is already slow."
+      },
+      {
+        "text": "Use the standard initial dose",
+        "isCorrect": false,
+        "rationale": "Standard dosing does not account for the increased exposure caused by low CYP2C9 activity."
+      },
+      {
+        "text": "Use a lower initial dose",
+        "isCorrect": true,
+        "rationale": "Low CYP2C9 activity slows warfarin inactivation, so a lower initial dose is needed to reduce excessive anticoagulation and hemorrhage risk."
+      },
+      {
+        "text": "Use a higher maintenance dose",
+        "isCorrect": false,
+        "rationale": "A higher maintenance dose would compound the elevated exposure caused by slow metabolism."
+      },
+      {
+        "text": "Use dose without testing",
+        "isCorrect": false,
+        "rationale": "CYP2C9 activity and VKORC1 status should be assessed to determine the ideal initial warfarin dose."
+      }
+    ]
+  },
+  {
+    "question": "A patient is being evaluated before beginning an anticoagulant whose response depends on both metabolism and target affinity. Which testing combination best guides the initial dose?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "BChE activity and ALOX5 allele",
+        "isCorrect": false,
+        "rationale": "BChE guides succinylcholine use, while ALOX5 predicts zileuton response; neither determines warfarin dosing."
+      },
+      {
+        "text": "NAT2 activity and EGFR status",
+        "isCorrect": false,
+        "rationale": "NAT2 guides isoniazid dosing, while EGFR status guides targeted cancer therapy."
+      },
+      {
+        "text": "CYP2D6 activity and HER2 status",
+        "isCorrect": false,
+        "rationale": "CYP2D6 predicts codeine activation, while HER2 status determines trastuzumab eligibility."
+      },
+      {
+        "text": "CYP2C9 activity and VKORC1 allele",
+        "isCorrect": true,
+        "rationale": "CYP2C9 determines warfarin inactivation, while VKORC1 variation determines target sensitivity; both guide the ideal initial dose."
+      },
+      {
+        "text": "CYP3A4 activity and ER status",
+        "isCorrect": false,
+        "rationale": "CYP3A4 participates in inactive codeine metabolite formation, while estrogen-receptor status guides tamoxifen use."
+      }
+    ]
+  },
+  {
+    "question": "A patient has normal metabolism of an anticoagulant but a target variant with unusually high drug affinity. Which mechanism explains the increased adverse-effect risk?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Reduced active-drug formation",
+        "isCorrect": false,
+        "rationale": "The anticoagulant is administered in active form, and the scenario specifies normal metabolism rather than reduced activation."
+      },
+      {
+        "text": "Increased inactive-metabolite formation",
+        "isCorrect": false,
+        "rationale": "Increased inactivation would lower exposure and reduce the drug effect rather than increase adverse effects."
+      },
+      {
+        "text": "Reduced target-drug binding",
+        "isCorrect": false,
+        "rationale": "Reduced binding would decrease target inhibition. The variant instead has higher affinity for the drug."
+      },
+      {
+        "text": "Reduced enzyme-mediated clearance",
+        "isCorrect": false,
+        "rationale": "Reduced CYP2C9-mediated clearance is a pharmacokinetic mechanism, but metabolism is normal in this patient."
+      },
+      {
+        "text": "Increased target-mediated inhibition",
+        "isCorrect": true,
+        "rationale": "High-affinity VKOR binds warfarin more strongly, increasing suppression of activated vitamin K and raising hemorrhage risk."
+      }
+    ]
+  },
+  {
+    "question": "A patient experiences an extreme adverse response to an antiretroviral medication. Testing identifies the associated HLA allele, but no altered metabolic enzyme or drug target explains the event. Which category best classifies this response?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Differentiate between pharmacogenomic polymorphisms that affect pharmacodynamic and pharmacokinetic parameters.",
+    "options": [
+      {
+        "text": "Idiosyncratic pharmacogenomic response",
+        "isCorrect": true,
+        "rationale": "HLA-B5701-associated abacavir hypersensitivity is categorized as an idiosyncratic response with an unclear mechanism."
+      },
+      {
+        "text": "Pharmacokinetic enzyme response",
+        "isCorrect": false,
+        "rationale": "A pharmacokinetic response would require altered drug processing by an enzyme such as BChE, NAT2, CYP2D6, or CYP2C9."
+      },
+      {
+        "text": "Pharmacodynamic target response",
+        "isCorrect": false,
+        "rationale": "A pharmacodynamic response would require altered target structure, affinity, or expression, which is absent here."
+      },
+      {
+        "text": "Combined PK-PD response",
+        "isCorrect": false,
+        "rationale": "A combined response requires both altered disposition and altered target action, as in the CYP2C9-VKOR warfarin example."
+      },
+      {
+        "text": "Promoter-dependent target response",
+        "isCorrect": false,
+        "rationale": "A promoter-dependent response fits the ALOX5-zileuton example rather than HLA-B5701-associated abacavir hypersensitivity."
+      }
+    ]
+  },
+  {
+    "question": "A lung tumor contains an activated growth-factor receptor that drives uncontrolled proliferation. A drug is selected to inhibit that altered receptor. Which pharmacogenomic mechanism is being used?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Differentiate between pharmacogenomic polymorphisms that affect pharmacodynamic and pharmacokinetic parameters.",
+    "options": [
+      {
+        "text": "Altered drug-metabolizing enzyme",
+        "isCorrect": false,
+        "rationale": "An altered metabolic enzyme changes drug disposition, whereas this drug acts directly on a tumor growth-driving receptor."
+      },
+      {
+        "text": "Altered drug target",
+        "isCorrect": true,
+        "rationale": "The activated receptor is the pharmacodynamic target, and its presence determines whether the targeted inhibitor can be used."
+      },
+      {
+        "text": "Altered renal elimination",
+        "isCorrect": false,
+        "rationale": "Renal elimination affects pharmacokinetics and does not explain selection based on a tumor receptor."
+      },
+      {
+        "text": "Altered precursor activation",
+        "isCorrect": false,
+        "rationale": "Precursor activation describes codeine conversion to morphine rather than inhibition of a tumor receptor."
+      },
+      {
+        "text": "Idiosyncratic drug response",
+        "isCorrect": false,
+        "rationale": "The mechanism is defined target inhibition, not an unexplained idiosyncratic response."
+      }
+    ]
+  },
+  {
+    "question": "A tumor expresses a fusion protein produced after chromosome material moved between non-homologous locations. Which targeted-treatment principle should guide management?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Treat without confirming target",
+        "isCorrect": false,
+        "rationale": "Targeted drugs should not be used without demonstrating the specific protein or mutation in the tumor."
+      },
+      {
+        "text": "Select treatment by CYP2D6",
+        "isCorrect": false,
+        "rationale": "CYP2D6 testing guides codeine use and does not establish eligibility for fusion-protein-directed therapy."
+      },
+      {
+        "text": "Confirm fusion protein presence",
+        "isCorrect": true,
+        "rationale": "A fusion-protein inhibitor should be used only when the patient's tumor demonstrates the fusion protein targeted by the drug."
+      },
+      {
+        "text": "Select treatment by NAT2",
+        "isCorrect": false,
+        "rationale": "NAT2 testing guides isoniazid dosing and does not determine whether a tumor contains a fusion protein."
+      },
+      {
+        "text": "Select treatment by BChE",
+        "isCorrect": false,
+        "rationale": "BChE testing predicts succinylcholine response and is unrelated to fusion-protein-directed cancer therapy."
+      }
+    ]
+  },
+  {
+    "question": "A patient has a genetic variation that both slows inactivation of a drug and increases the drug's affinity for its target. Which description best integrates these effects?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Differentiate between pharmacogenomic polymorphisms that affect pharmacodynamic and pharmacokinetic parameters.",
+    "options": [
+      {
+        "text": "Reduced kinetics with reduced dynamics",
+        "isCorrect": false,
+        "rationale": "Slower inactivation increases drug exposure, while higher affinity increases rather than reduces the target-mediated effect."
+      },
+      {
+        "text": "Enhanced kinetics without altered dynamics",
+        "isCorrect": false,
+        "rationale": "The target-affinity change establishes an altered pharmacodynamic component, so the response is not exclusively pharmacokinetic."
+      },
+      {
+        "text": "Enhanced dynamics without altered kinetics",
+        "isCorrect": false,
+        "rationale": "The slower inactivation establishes an altered pharmacokinetic component in addition to enhanced target sensitivity."
+      },
+      {
+        "text": "Combined pharmacokinetic-pharmacodynamic enhancement",
+        "isCorrect": true,
+        "rationale": "Slower inactivation increases exposure, and higher target affinity increases sensitivity, jointly enhancing the drug response."
+      },
+      {
+        "text": "Unexplained idiosyncratic drug response",
+        "isCorrect": false,
+        "rationale": "Both mechanisms are specified, so the response is not an unexplained idiosyncratic event."
+      }
+    ]
+  },
+  {
+    "question": "A patient has low expression of the molecular target for a medication despite normal drug absorption, metabolism, and elimination. Which adjustment best predicts the underlying response?",
+    "difficulty_order": "3rd",
+    "cited_learning_objective": "Given a scenario, identify how a pharmacogenomic variation affects the effectiveness of a drug.",
+    "options": [
+      {
+        "text": "Higher efficacy from increased exposure",
+        "isCorrect": false,
+        "rationale": "Exposure is normal, and reduced target expression limits the effect rather than increasing it."
+      },
+      {
+        "text": "Higher efficacy from stronger binding",
+        "isCorrect": false,
+        "rationale": "Stronger binding would require increased target affinity, which is not provided by reduced target expression."
+      },
+      {
+        "text": "Lower efficacy from rapid clearance",
+        "isCorrect": false,
+        "rationale": "Clearance is normal, so reduced efficacy cannot be attributed to altered pharmacokinetics."
+      },
+      {
+        "text": "Unchanged efficacy from normal kinetics",
+        "isCorrect": false,
+        "rationale": "Normal pharmacokinetics cannot overcome inadequate target expression because the pharmacodynamic binding site is reduced."
+      },
+      {
+        "text": "Lower efficacy from target scarcity",
+        "isCorrect": true,
+        "rationale": "Under-expression of the drug target reduces available binding sites and therefore lowers pharmacodynamic effectiveness despite normal exposure."
+      }
+    ]
+  }
+]
